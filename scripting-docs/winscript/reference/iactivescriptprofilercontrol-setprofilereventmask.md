@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::SetProfilerEventMask | Microsoft Docs
+title: IActiveScriptProfilerControl::SetProfilerEventMask | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,34 +16,34 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b20b5410af7e48f1b9dadb937e794c1941e74df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 45ded6caec95f5421328be09e299af535765a9c2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793554"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086785"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-Nastaví 4bajtový bitová maska, která určuje typy událostí, které by měla vyvolat skriptovacího stroje.  
+Nastaví na 4 bajty. bitová maska, která určuje typy událostí, které by měla vyvolat skriptovací stroj.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
-RESULT SetProfilerEventMask(  
+```cpp
+HRESULT SetProfilerEventMask(  
     [in] DWORD dwEventMask);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `dwEventMask`  
- [v] 4bajtový bitová maska, která určuje typy událostí. Službu bits jsou definovány v [PROFILER_EVENT_MASK – výčet](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ [in] 4bajtový bitová maska, která určuje typy událostí. Bity jsou definovány v [profiler_event_mask – výčet](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí HRESULT. Možné hodnoty jsou následující:  
+ Vrátí hodnotu HRESULT. Možné hodnoty jsou následující:  
   
 |Návratová hodnota|Význam|  
 |------------------|-------------|  
 |`S_OK`|Metoda byla úspěšná.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profilace není povoleno.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profilace není povolená.|  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptprofilercontrol – rozhraní](../../winscript/reference/iactivescriptprofilercontrol-interface.md)
+ [IActiveScriptProfilerControl – rozhraní](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
+title: IDispatchEx::DeleteMemberByDispID | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: de99e74cf12939a31c99cdc59ce8ad7fd685ae03
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794478"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086863"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
-Odstraní člen podle DISPID.  
+Odstraní člena podle DISPID.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT DeleteMemberByDispID(  
     DISPID id  
 );  
@@ -38,7 +38,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Parametry  
  `id`  
- Identifikátor členu. Používá `GetDispID` nebo `GetNextDispID` získat identifikátor odesílání.  
+ Identifikátor členu. Používá `GetDispID` nebo `GetNextDispID` získat identifikátor odeslání.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -46,16 +46,16 @@ HRESULT DeleteMemberByDispID(
 |||  
 |-|-|  
 |`S_OK`|Úspěch.|  
-|`S_FALSE`|Člen existuje, ale nelze odstranit.|  
+|`S_FALSE`|Člen existuje, ale nejde odstranit.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pokud je tento člen bude odstraněn, DISPID musí jsou dál platné pro `GetNextDispID`.  
+ Pokud je člen odstraněn, je potřeba hodnota DISPID jsou dál platné pro `GetNextDispID`.  
   
- Pokud se odstraní člena s daným názvem a později se znovu vytvoří člen se stejným názvem, musí být DISPID stejná. (Zda jsou názvy členů, které se liší pouze v případě "stejné" je závislé na objektu.)  
+ Pokud člen se zadaným názvem se odstraní a později je znovu vytvořit člena se stejným názvem, hodnota DISPID by měl být stejný. (, Jestli jsou názvy členů, které se liší pouze velikostí písma "stejné" závisí na objektu.)  
   
 ## <a name="example"></a>Příklad  
   
-```  
+```cpp
 BSTR bstrName;  
 DISPID dispid;  
 IDispatchEx *pdex;   

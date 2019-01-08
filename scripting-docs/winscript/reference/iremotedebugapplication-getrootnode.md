@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetRootNode | Microsoft Docs
+title: IRemoteDebugApplication::GetRootNode | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ef19861e0f386eb7139ec3e732068e4d2b6e7ba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 75b398ddac53f2633cbc090f5d49574bd4d94d36
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794781"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097770"
 ---
 # <a name="iremotedebugapplicationgetrootnode"></a>IRemoteDebugApplication::GetRootNode
-Vrátí uzlu aplikace, pod kterým jsou přidány všechny uzly, které jsou přidružené k aplikaci.  
+Vrátí uzel aplikace, ve které se přidají všechny uzly, které jsou přidružené k aplikaci.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetRootNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -38,17 +38,17 @@ HRESULT GetRootNode(
   
 #### <a name="parameters"></a>Parametry  
  `ppdanRoot`  
- [out] Uzel ladění aplikace, pod kterým jsou všechny uzly, které jsou přidružené k aplikaci přidat.  
+ [out] Ladění uzlu aplikace v rámci které se přidají všechny uzly, které jsou přidružené k aplikaci.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí uzlu aplikace, pod kterým jsou přidány všechny uzly, které jsou přidružené k aplikaci.  
+ Tato metoda vrátí uzlu aplikace v rámci které se přidají všechny uzly, které jsou přidružené k aplikaci.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Výčet BREAKREASON | Microsoft Docs
+title: Breakreason – výčet | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791817"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096795"
 ---
 # <a name="breakreason-enumeration"></a>Výčet BREAKREASON
 Označuje, co způsobilo přerušení.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef enum tagBREAKREASON {  
    BREAKREASON_STEP,  
    BREAKREASON_BREAKPOINT,  
@@ -47,14 +47,14 @@ typedef enum tagBREAKREASON {
   
 |Člen|Popis|  
 |------------|-----------------|  
-|BREAKREASON_STEP|Modul jazyk je v taktování režimu.|  
-|BREAKREASON_BREAKPOINT|Modul jazyka došlo explicitní zarážek.|  
-|BREAKREASON_DEBUGGER_BLOCK|Modul jazyka došlo blok ladicí program na jiné vlákno.|  
-|BREAKREASON_HOST_INITIATED|Hostitel požadovaná zalomení.|  
-|BREAKREASON_LANGUAGE_INITIATED|Modul jazyk požadovaný zalomení.|  
-|BREAKREASON_DEBUGGER_HALT|Ladicí program IDE požadovaný zalomení.|  
-|BREAKREASON_ERROR|Chyba spuštění způsobila rozdělení.|  
-|BREAKREASON_JIT|Spuštění ladění JIT způsobené.|  
+|BREAKREASON_STEP|Modul jazyka je v režimu krokování.|  
+|BREAKREASON_BREAKPOINT|Modul jazyka došlo k explicitní zarážku.|  
+|BREAKREASON_DEBUGGER_BLOCK|Modul jazyka došlo k bloku ladicí program v jiném vlákně.|  
+|BREAKREASON_HOST_INITIATED|Hostitel požadovaná přerušení.|  
+|BREAKREASON_LANGUAGE_INITIATED|Modul jazyk požadovaný přerušení.|  
+|BREAKREASON_DEBUGGER_HALT|Ladicí program integrované vývojové prostředí si vyžádal přerušení.|  
+|BREAKREASON_ERROR|Chyba spuštění způsobila přerušení.|  
+|BREAKREASON_JIT|Způsobené při spuštění ladění JIT.|  
   
 ## <a name="see-also"></a>Viz také  
- [Konstanty ladicího programu aktivních skriptů, výčty a struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Konstanty, výčty a struktury ladicího programu aktivních skriptů](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

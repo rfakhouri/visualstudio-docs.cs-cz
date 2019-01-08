@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::GetWindow | Microsoft Docs
+title: IActiveScriptSiteWindow::GetWindow | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3257ac5632a2f3d713b6329a9a1eeebc4415851
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 268a54ccdcbd70ed159758720db0735f16d81492
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793569"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097385"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Načte popisovač okna, které může fungovat jako vlastník místní okno, které musí být zobrazen skriptovacího stroje.  
+Načte popisovač okna, které může fungovat jako vlastník automaticky otevírané okno, které se musí zobrazit skriptovací stroj.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetWindow(  
     HWND *phwnd  // address of variable for window handle  
 );  
@@ -41,10 +41,10 @@ HRESULT GetWindow(
  [out] Adresa proměnné, která přijímá popisovač okna.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí `S_OK` v případě úspěchu nebo `E_FAIL` Pokud došlo k chybě.  
+ Vrátí `S_OK` v případě úspěšného ověření nebo `E_FAIL` Pokud došlo k chybě.  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda je podobná `IOleWindow::GetWindow` metoda.  
+ Tato metoda je podobný `IOleWindow::GetWindow` metody.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptsitewindow –](../../winscript/reference/iactivescriptsitewindow.md)
+ [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

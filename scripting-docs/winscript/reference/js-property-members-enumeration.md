@@ -1,5 +1,5 @@
 ---
-title: Výčet Js_property_members | Microsoft Docs
+title: Výčet JS_PROPERTY_MEMBERS | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5260c9907cd578da3da55ed4454dfee604e8d556
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 57d933a86d5ffe8d2b8aec243b5eb6bd2ae93a59
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796308"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096827"
 ---
 # <a name="jspropertymembers-enumeration"></a>Výčet JS_PROPERTY_MEMBERS
 Příznaky pro určení typu informací, které mají být vráceny v žádosti o členy objektu  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 enum JS_PROPERTY_MEMBERS{   JS_PROPERTY_MEMBERS_ALL = 0,   JS_PROPERTY_MEMBERS_ARGUMENTS = 1} JS_PROPERTY_MEMBERS;  
 ```  
   
@@ -38,8 +38,8 @@ enum JS_PROPERTY_MEMBERS{   JS_PROPERTY_MEMBERS_ALL = 0,   JS_PROPERTY_MEMBERS_A
   
 |Název|Popis|  
 |----------|-----------------|  
-|`JS_PROPERTY_MEMBERS_ALL`|Představuje žádost výčet všech členů.|  
-|`JS_PROPERTY_MEMBERS_ARGUMENTS`|Představuje žádost výčet pouze argumenty.|  
+|`JS_PROPERTY_MEMBERS_ALL`|Představuje žádost o vytvoření výčtu všech členů.|  
+|`JS_PROPERTY_MEMBERS_ARGUMENTS`|Představuje žádost o výčet pouze argumenty.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  

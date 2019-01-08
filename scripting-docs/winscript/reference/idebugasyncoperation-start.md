@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start | Microsoft Docs
+title: IDebugAsyncOperation::Start | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd39053e86dce95fa52ba8576814962d13d8b050
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 099e256496278a33ccae77351641cfdd23447b1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793935"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094780"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
 Způsobí, že na začátek asynchronní operace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugAsyncOperationCallBack*  padocb  
 );  
@@ -38,10 +38,10 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parametry  
  `padocb`  
- Rozhraní zpětné volání, která přijímá události stavu z této operace.  
+ Rozhraní zpětného volání, která bude přijímat události stavu z této operace.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -49,7 +49,7 @@ HRESULT Start(
 |`E_UNEXPECTED`|Operace již čeká na vyřízení.|  
   
 ## <a name="remarks"></a>Poznámky  
- Způsobí, že tato metoda `IDebugSyncOperation::Execute` k volání asynchronní ve vláknu získané z `IDebugSyncOperation::GetTargetThread`. Tato metoda by měla být volána pouze z vlákna ladicí program; jinak nevrátí, dokud se nedokončí operaci.  
+ Tato metoda způsobí, že `IDebugSyncOperation::Execute` asynchronně volat ve vlákně získané z `IDebugSyncOperation::GetTargetThread`. Tuto metodu lze volat pouze z vlákna ladicího programu; v opačném případě nebude vracet, dokud operace se dokončila.  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   

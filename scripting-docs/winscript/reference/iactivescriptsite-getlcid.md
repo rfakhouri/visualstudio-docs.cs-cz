@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetLCID | Microsoft Docs
+title: IActiveScriptSite::GetLCID | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6e128f5ac5de11b45af59c83750411c35e6efa7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 959989d14d2a71f9c9eab4c78ef1b1bd9078362f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793542"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095001"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-Načte identifikátor národního prostředí spojené s uživatelským rozhraním hostitele. Skriptovací stroj používá k zajištění, že chyba řetězce a další prvky uživatelského rozhraní generované modulem se objeví v příslušné jazykové identifikátor.  
+Načte identifikátor národního prostředí, které jsou spojené s uživatelským rozhraním hostitele. Skriptovací modul použije identifikátor zajistit, že chybové řetězce a další prvky uživatelského rozhraní generovaných modul zobrazí příslušný jazyk.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetLCID(  
     LCID *plcid  // address of variable for language identifier  
 );  
@@ -38,7 +38,7 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>Parametry  
  `plcid`  
- [out] Adresa proměnné, která přijímá identifikátor národního prostředí pro prvky uživatelského rozhraní zobrazuje skriptovacího stroje.  
+ [out] Adresa proměnné, která přijímá identifikátor národního prostředí pro prvky uživatelského rozhraní zobrazí skriptovacím modulem.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -46,11 +46,11 @@ HRESULT GetLCID(
 |Návratová hodnota|Význam|  
 |------------------|-------------|  
 |`S_OK`|Úspěch.|  
-|`E_NOTIMPL`|Tato metoda není implementována. Použijte národní prostředí definovaná systémem.|  
+|`E_NOTIMPL`|Tato metoda není implementována. Používají národní prostředí definované v systému.|  
 |`E_POINTER`|Byl zadán neplatný ukazatel.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pokud tato metoda vrátí hodnotu `E_NOTIMPL`, by měl použít identifikátor národního prostředí definovaná systémem.  
+ Pokud tato metoda vrátí `E_NOTIMPL`, by měla sloužit identifikátor národního prostředí definované v systému.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptsite –](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

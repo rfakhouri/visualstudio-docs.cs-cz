@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfContext | Microsoft Docs
+title: IDebugDocumentText::GetPositionOfContext | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f843d71096dea4c22eda757a4d6975dfda94180
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: adc921ab461cd0cafb144c9d54061947e160c392
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794184"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092752"
 ---
 # <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
-Vrátí pozice znaku rozsahu odpovídající kontextu dokumentu.  
+Vrátí pozici znaku oblast odpovídající kontext dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetPositionOfContext(  
    IDebugDocumentContext*  psc,  
    ULONG*                  pcCharacterPosition,  
@@ -40,23 +40,23 @@ HRESULT GetPositionOfContext(
   
 #### <a name="parameters"></a>Parametry  
  `psc`  
- [v] Objekt kontextu dokumentu.  
+ [in] Objekt kontextu dokumentu.  
   
  `pcCharacterPosition`  
- [out] Spusťte umístění pozice rozsahu znaků.  
+ [out] Počáteční umístění pozice rozsahu znaků.  
   
  `cNumChars`  
  [out] Počet znaků v rozsahu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Kontext dokument zadaný pro tuto metodu, musí být přidružený tento dokument.  
+ Kontext dokumentu, který je k dispozici v této metodě musí být přidružené s tímto dokumentem.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumenttext – rozhraní](../../winscript/reference/idebugdocumenttext-interface.md)
+ [IDebugDocumentText – rozhraní](../../winscript/reference/idebugdocumenttext-interface.md)

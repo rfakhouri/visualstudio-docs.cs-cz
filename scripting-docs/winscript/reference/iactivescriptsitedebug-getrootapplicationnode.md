@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetRootApplicationNode | Microsoft Docs
+title: IActiveScriptSiteDebug::GetRootApplicationNode | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abcb7c307513e513f3ba4d3a64d34f1e07e60d74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c837d5ee2e8b75bfe7603370d61385a67080cc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793512"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088514"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
-Získá uzlu aplikace v rámci skriptu, který má být přidána dokumenty.  
+Získá uzlu aplikace v rámci skriptu, které by se měl přidat dokumenty.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetRootApplicationNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -38,17 +38,17 @@ HRESULT GetRootApplicationNode(
   
 #### <a name="parameters"></a>Parametry  
  `ppdanRoot`  
- [out] Ladění aplikace uzlu, který obsahuje skript dokumenty. Může být `NULL`.  
+ [out] Uzel ladění aplikace, která obsahuje skript dokumenty. Může být `NULL`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí uzlu aplikace, pod kterým by se měl přidat dokumentů skriptu. Metoda může vrátit `NULL` pro `ppdanRoot` Pokud dokumentů skriptu by měla být nejvyšší úrovně.  
+ Tato metoda vrátí uzlu aplikace, ve kterém by se měl přidat dokumenty skriptu. Metoda může vrátit `NULL` pro `ppdanRoot` Pokud dokumenty skriptu by měl být na nejvyšší úrovni.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptsitedebug – rozhraní](../../winscript/reference/iactivescriptsitedebug-interface.md)
+ [IActiveScriptSiteDebug – rozhraní](../../winscript/reference/iactivescriptsitedebug-interface.md)

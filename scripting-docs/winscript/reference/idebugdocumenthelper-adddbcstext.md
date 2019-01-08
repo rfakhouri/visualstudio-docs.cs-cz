@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDBCSText | Microsoft Docs
+title: IDebugDocumentHelper::AddDBCSText | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37cd0f2953483e23636c3a17d7726bc2c438b303
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86d4ac5cb7371f35edb84a44159e589c898bfa3d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794097"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090386"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
-Přidá řetězec DBCS na konci tohoto dokumentu.  
+Připojí znaky DBCS řetězec na konci tohoto dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddDBCSText(  
    LPCSTR  pszText  
 );  
@@ -38,23 +38,23 @@ HRESULT AddDBCSText(
   
 #### <a name="parameters"></a>Parametry  
  `pszText`  
- [v] Ukazatel na řetězce ukončené hodnotou null obsahující hledaný text.  
+ [in] Ukazatel na řetězec zakončený hodnotou null obsahující text.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
-|`E_FAIL`|Metody se nepodařilo přidat znaky.|  
+|`E_FAIL`|Metodu se nepodařilo přidat znaky.|  
   
 ## <a name="remarks"></a>Poznámky  
  Tato metoda generuje `IDebugDocumentTextEvents` oznámení.  
   
 > [!NOTE]
->  Pokud tato metoda je volána po `IDebugDocumentHelper::AddDeferredText` byla volána, `E_FAIL` je vrácen.  
+>  Pokud tato metoda je volána po `IDebugDocumentHelper::AddDeferredText` zavolání `E_FAIL` je vrácena.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
- [Idebugdocumenttextevents – rozhraní](../../winscript/reference/idebugdocumenttextevents-interface.md)
+ [IDebugDocumentTextEvents – rozhraní](../../winscript/reference/idebugdocumenttextevents-interface.md)

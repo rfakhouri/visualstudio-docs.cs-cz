@@ -1,5 +1,5 @@
 ---
-title: Profiler_heap_object – struktura | Microsoft Docs
+title: Profiler_heap_object – struktura | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad50f03806cbf98450c0fc917f1a97ca7305d05c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c8682cd54b10144800f17cab3a8a03ea8169889
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796518"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093129"
 ---
 # <a name="profilerheapobject-structure"></a>PROFILER_HEAP_OBJECT – struktura
-Představuje objekty haldy získané nástrojem [iactivescriptprofilercontrol3::enumheap – metoda](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
+Shromážděné objekty halda představuje [iactivescriptprofilercontrol3::enumheap – metoda](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT  
 {  
     UINT size;    union {        PROFILER_HEAP_OBJECT_ID objectId;        PROFILER_EXTERNAL_OBJECT_ADDRESS externalObjectAddress;    };    PROFILER_HEAP_OBJECT_NAME_ID typeNameId;    USHORT flags;     USHORT optionalInfoCount;} PROFILER_HEAP_OBJECT;  
@@ -34,8 +34,8 @@ typedef struct _PROFILER_HEAP_OBJECT
   
 |Člen|Typ|Popis|  
 |------------|----------|-----------------|  
-|objectId|[Profiler_heap_object_id – typ](../../winscript/reference/profiler-heap-object-id-type.md)|ID objektu haldy.|  
-|externalObjectAddress|[Profiler_external_object_address – typ](../../winscript/reference/profiler-external-object-address-type.md)|Adresa externí objekt objektu, například objekt přidělené C++, který je mimo haldě JavaScript.|  
-|typeNameId|[Profiler_heap_object_name_id – typ](../../winscript/reference/profiler-heap-object-name-id-type.md)|ID názvu typu objektu haldy načítají [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md). Pouze jeden z `externalObjectAddress` nebo `typeName` je k dispozici v závislosti na tom `flags` hodnotu.|  
+|ID objektu|[PROFILER_HEAP_OBJECT_ID – typ](../../winscript/reference/profiler-heap-object-id-type.md)|ID objektu haldy.|  
+|externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS – typ](../../winscript/reference/profiler-external-object-address-type.md)|Adresa externí objekt objektu, například objekt přidělený C++, mimo haldu využívanou jazykem JavaScript.|  
+|typeNameId|[PROFILER_HEAP_OBJECT_NAME_ID – typ](../../winscript/reference/profiler-heap-object-name-id-type.md)|Načetlo se ID názvu typu objektu haldy, z [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md). Pouze jeden z `externalObjectAddress` nebo `typeName` je k dispozici v závislosti na tom `flags` hodnotu.|  
 |příznaky|[PROFILER_HEAP_OBJECT_FLAGS – výčet](../../winscript/reference/profiler-heap-object-flags-enumeration.md)|Příznaky, které obsahují základní informace o objektu haldy.|  
-|optionalInfoCount|USHORT –|Počet [profiler_heap_object_optional_info – struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) záznamy, které jsou k dispozici pro objekt haldy.|
+|optionalInfoCount|USHORT|Počet [profiler_heap_object_optional_info – struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) záznamy, které jsou k dispozici pro objekt haldy.|

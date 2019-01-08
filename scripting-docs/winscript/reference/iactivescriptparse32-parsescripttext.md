@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::ParseScriptText | Microsoft Docs
+title: IActiveScriptParse32::ParseScriptText | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,19 +10,19 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: af1e3b6723b402263359719695aa1f57432c76e2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 782c1d7bd2dd4c0708418ffd3e69c339dd993fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793545"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094598"
 ---
 # <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
-Analyzuje skriptlet daného kódu, přidávání deklarace do oboru názvů a vyhodnocení kódu podle potřeby.  
+Analyzuje daný skriptlet kódu, přidává deklarace do oboru názvů a hodnotí kód podle potřeby.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ParseScriptText(  
     LPCOLESTR pstrCode,              // address of scriptlet text  
     LPCOLESTR pstrItemName,          // address of item name  
@@ -40,24 +40,24 @@ HRESULT ParseScriptText(
   
 |||  
 |-|-|  
-|`pstrCode`|[v] Adresa skriptlet text k vyhodnocení. Výklad tento řetězec závisí na skriptovací jazyk.|  
-|`pstrItemName`|[v] Adresa název položky, která poskytuje kontext, ve kterém se má vyhodnotit skriptletu. Pokud tento parametr hodnotu NULL, vyhodnotí se kód v globálním kontextu skriptovacího stroje.|  
-|`punkContext`|[v] Adresa objektu kontextu. Tento objekt je vyhrazený pro použití v prostředí ladění, kde může poskytovat takový kontext ladicí program k reprezentaci active kontextu spuštění. Pokud tento parametr hodnotu NULL, použije modul `pstrItemName` k identifikaci kontextu.|  
-|`pstrDelimiter`|[v] Adresa koncového skriptlet oddělovač. Když `pstrCode` je analyzována z datového proudu textu, hostitel se většinou používá oddělovač, například dvě jednoduché uvozovky ("), ke zjištění konec skriptletu. Tento parametr určuje oddělovač, který se používá hostitele, která umožňuje skriptovací stroj zajistit některé podmíněného primitivní předběžného zpracování (například nahrazení jednoduché uvozovky ['] dvě jednoduchých uvozovek pro použití jako oddělovač). Přesně jak (a pokud) skriptovací stroj díky použití těchto informací závisí na skriptovacího stroje. Tento parametr nastavte na `NULL` Pokud hostitel nepoužili konec skriptletu oddělovač.|  
-|`dwSourceContextCookie`|[v] Soubor cookie používá pro účely ladění.|  
-|`ulStartingLineNumber`|[v] Počítaný od nuly hodnota, která určuje, které řádku analýza ve vyrovnaném bude zahájena v.|  
-|`dwFlags`|[v] Příznaky přidružené skriptletu. Může být kombinací těchto hodnot:|  
+|`pstrCode`|[in] Adresa textu skriptletu k vyhodnocení. Výklad tohoto řetězce závisí na skriptovacím jazyce.|  
+|`pstrItemName`|[in] Adresa názvu položky, která poskytuje kontext, ve kterém skriptletu k vyhodnocení. Pokud má parametr hodnotu NULL, kód je vyhodnocen v globálním kontextu skriptovacího stroje.|  
+|`punkContext`|[in] Adresa objektu kontextu. Tento objekt je vyhrazen pro použití v prostředí ladění, kde může zadat takový obsah ladicím modulem a představovat aktivní kontext běhu. Pokud tento parametr hodnotu NULL, použije modul `pstrItemName` pro rozpoznání kontextu.|  
+|`pstrDelimiter`|[in] Adresa oddělovače end skriptletu. Když `pstrCode` je analyzován z toku textu, hostitel obvykle používá oddělovač, jako jsou například dvě jednoduché uvozovky ("), k zjištění konce skriptletu. Tento parametr určuje oddělovač, který používá hostitel a který umožňuje skriptovacímu stroji poskytovat některé podmíněné primitivní předzpracování (například nahrazení jednoduchou uvozovku ['] dvěma jednoduchými uvozovkami pro použití jako oddělovače). Jak přesně (a zda) skriptovací stroj umožňuje použití těchto informací závisí na skriptovacím stroji. Nastavte tento parametr na `NULL` Pokud hostitel nepoužili oddělovač pro označení konce skriptletu.|  
+|`dwSourceContextCookie`|[in] Soubor cookie používaný pro účely ladění.|  
+|`ulStartingLineNumber`|[in] Založený na nule hodnota, která určuje, který řádek, začne analýza.|  
+|`dwFlags`|[in] Příznaky spojené se skriptletem. Může být kombinací těchto hodnot:|  
   
 |Hodnota|Význam|  
 |-----------|-------------|  
-|SCRIPTTEXT_ISEXPRESSION|Pokud mezi výpočetní výraz a příkaz rozdíl je důležitý, ale v skriptovací jazyk syntakticky nejednoznačný, tento příznak určuje, že skriptletu se budou interpretovat jako výraz, nikoli jako příkaz nebo seznam příkazů. Ve výchozím nastavení jsou příkazy předpokládá, pokud lze určit nejvhodnější syntaxe skriptlet textu.|  
-|SCRIPTTEXT_ISPERSISTENT|Označuje, že pokud skriptovací stroj je uloženo měli uložit kódu přidaném během toto volání (například prostřednictvím volání `IPersist*::Save`), nebo pokud skriptovacího stroje resetován prostřednictvím přechod zpět na inicializovaný stav.|  
-|SCRIPTTEXT_ISVISIBLE|Označuje, že by měly jít vidět text skriptu (a tedy volatelné název) jako globální metody v oboru názvů skriptu.|  
+|SCRIPTTEXT_ISEXPRESSION|Pokud rozdíl mezi výpočetním výrazem a prohlášení je důležitý, ale syntakticky dvojznačný ve skriptovacím jazyku, tento příznak určuje, že skriptlet má být interpretován jako výraz, nikoli jako příkaz nebo seznamu příkazů. Standardně se předpokládají příkazy, pokud se dá určit správnou volbu podle syntaxe textu skriptletu.|  
+|SCRIPTTEXT_ISPERSISTENT|Označuje, že by měla uložit kód přidaný během volání, pokud je uložen skriptovací stroj (například pomocí volání `IPersist*::Save`), nebo pokud skriptovací stroj obnoven pomocí přechodu zpět do stavu spuštění.|  
+|SCRIPTTEXT_ISVISIBLE|Označuje, že text skriptu by měly být viditelné (a tedy volatelný názvem) jako globální metoda v oboru názvu skriptu.|  
   
 |||  
 |-|-|  
-|`pvarResult`|[out] Adresa vyrovnávací paměti, která přijímá výsledky zpracování skriptlet nebo `NULL` Pokud volající očekává žádný výsledek (to znamená, že není nastavena hodnota SCRIPTTEXT_ISEXPRESSION).|  
-|`pexcepinfo`|[out] Adresa strukturu, která přijímá informace o výjimce. Pokud je tato struktura naplní `IActiveScriptParse::ParseScriptText` vrátí DISP_E_EXCEPTION.|  
+|`pvarResult`|[out] Adresa vyrovnávací paměti, která přijímá výsledky zpracování skriptletu, nebo `NULL` Pokud volající nepředpokládá žádný výsledek (to znamená, že není nastavena hodnota SCRIPTTEXT_ISEXPRESSION).|  
+|`pexcepinfo`|[out] Adresa struktury, která bude přijímat informace o výjimce. Tato struktura je vyplněna, pokud `IActiveScriptParse::ParseScriptText` vrátí DISP_E_EXCEPTION.|  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -65,21 +65,21 @@ HRESULT ParseScriptText(
 |Návratová hodnota|Význam|  
 |------------------|-------------|  
 |`S_OK`|Úspěch.|  
-|`DISP_E_EXCEPTION`|Došlo k výjimce při zpracování skriptletu. `pexcepinfo` Parametr obsahuje informace o výjimce.|  
+|`DISP_E_EXCEPTION`|Při zpracování skriptletu došlo k výjimce. `pexcepinfo` Parametr obsahuje informace o výjimce.|  
 |`E_INVALIDARG`|Argument byl neplatný.|  
 |`E_POINTER`|Byl zadán neplatný ukazatel.|  
-|`E_NOTIMPL`|Tato metoda není podporována. Skriptovací stroj nepodporuje spuštění vyhodnocení výrazů nebo příkazy.|  
-|`E_UNEXPECTED`|Nebyl očekáván volání (například skriptovací stroj je ve stavu Neinicializovaný nebo zavřená, nebo byl nastaven příznak SCRIPTTEXT_ISEXPRESSION a skriptovací stroj je inicializovaný stav).|  
-|`OLESCRIPT_E_SYNTAX`|V skriptletu došlo k chybě neurčené syntaxe.|  
+|`E_NOTIMPL`|Tato metoda není podporována. Skriptovací modul nepodporuje vyhodnocení výrazů nebo příkazů.|  
+|`E_UNEXPECTED`|Volání nebylo očekáváno (například skriptovací stroj je v neinicializovaném nebo uzavřeném stavu, nebo byl nastaven příznak SCRIPTTEXT_ISEXPRESSION a skriptovací stroj je v inicializovaném stavu).|  
+|`OLESCRIPT_E_SYNTAX`|Ve skriptletu došlo k nespecifikované chybě syntaxe.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pokud je skriptovací stroj inicializovaný stav, žádný kód se ve skutečnosti vyhodnotí během tohoto hovoru; Místo toho je takový kód zařazených do fronty a spustit, když skriptovacího stroje převedena do (nebo přes) spuštěného stavu. Protože provádění není povolená inicializovaný stav, jedná se o chybu mohli volat tuto metodu s příznakem SCRIPTTEXT_ISEXPRESSION v inicializovaný stav.  
+ Pokud skriptovací stroj je v inicializovaném stavu, žádný kód nebudou skutečně hodnocen během tohoto volání; Místo toho je takový kód ve frontě a spuštěn, když skriptovací nástroj je přepnuta do (nebo pomocí) počátečního stavu. Protože spuštění není povoleno v inicializovaném stavu, jedná se o chybu volání této metody s příznakem scripttext_isexpression při inicializovaném stavu.  
   
- Skriptletu může být výraz, seznam příkazů nebo nic povolenou skriptovací jazyk. Například tato metoda se používá při vyhodnocení HTML \<skriptu > značku, která umožňuje příkazy, čímž provést, protože stránky HTML je vytvářen místo jejich kompilace do stavu skriptu.  
+ Skriptletu může být výraz, seznam příkazů nebo cokoli, co povoluje skriptovací jazyk. Například tato metoda se používá v pořadí vyhodnocování HTML \<skript > značky, který umožňuje příkazy, které mají být provedeny při konstrukci stránky HTML, místo jejich kompilace do stavu skriptu.  
   
- Kód předaná této metodě musí být platný a dokončení část kódu. Například v jazyce VBScript není povolen volat tuto metodu jednou pro dílčí Function(x) a potom ještě jednou s `End Sub`. Analyzátor nesmí čekat na dokončení podprogramu druhé volání, ale spíš musíte vygenerovat Chyba analýzy protože deklaraci podprogramu se spustil, ale není dokončeno.  
+ Kód předaný této metodě musí být platnou a kompletní částí kódu. Například v jazyce VBScript je neplatné volat tuto metodu jednou se Sub Function(x) a podruhé s `End Sub`. Analyzátor nesmí čekat na dokončení podprogramu druhé volání, ale spíše musí generovat chybu analýzy, protože deklarace podprogramu byla zahájena, ale nebyla dokončena.  
   
- Další informace o skriptu stavy, najdete v části stavy modulu skriptu z [skriptovací stroje systému Windows](../../winscript/windows-script-engines.md).  
+ Další informace o stavech skriptu naleznete v části stavy se skriptovacím modulem v [Windows skriptovacích strojů](../../winscript/windows-script-engines.md).  
   
 ## <a name="see-also"></a>Viz také  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

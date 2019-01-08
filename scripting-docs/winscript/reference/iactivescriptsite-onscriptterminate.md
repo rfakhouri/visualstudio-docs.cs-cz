@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptTerminate | Microsoft Docs
+title: IActiveScriptSite::OnScriptTerminate | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eef8bd2a3f2e2a4eb4fd4b5f0e35fcd9acfe5bc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8ff7c3d531b46fa6681776e79fbb73f6d1efca2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793539"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087110"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
-Informuje hostitele, že skript dokončila spuštění.  
+Informuje o hostiteli, že skript byl dokončen.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnScriptTerminate(  
     VARIANT *pvarResult,   // address of script results  
     EXCEPINFO *pexcepinfo  // address of structure with exception information  
@@ -39,16 +39,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>Parametry  
  `pvarResult`  
- [v] Adresa proměnné, která obsahuje výsledek skriptu nebo `NULL` Pokud skript vytvořil žádný výsledek.  
+ [in] Adresa proměnné, která obsahuje výsledek skriptu nebo `NULL` Pokud skript vytvořil žádný výsledek.  
   
  `pexcepinfo`  
- [v] Adresa `EXCEPINFO` struktura, která obsahuje informace o výjimce, které jsou generovány, pokud byl ukončen skript, nebo `NULL` Pokud byla vygenerována žádná výjimka.  
+ [in] Adresa `EXCEPINFO` strukturu, která obsahuje informace o výjimkách, které jsou generovány, pokud byl ukončen skript, nebo `NULL` Pokud byla vygenerována žádná výjimka.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí `S_OK` v případě úspěchu.  
+ Vrátí `S_OK` v případě úspěšného ověření.  
   
 ## <a name="remarks"></a>Poznámky  
- Skriptovací stroj volá tuto metodu před volání [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metoda SCRIPTSTATE_INITIALIZED příznak nastaven, je dokončena. Tato metoda slouží k vrátit stav dokončení a výsledky na hostitele. Upozorňujeme ale, že mnoho skriptu jazyky, které jsou založeny na zpracování událostí z hostitele, se životnost, které jsou definovány pro hostitele. V takovém případě může nikdy volat tuto metodu.  
+ Skriptovací stroj volá tuto metodu před voláním [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) dokončení metody s příznakem SCRIPTSTATE_INITIALIZED,. Tato metoda je možné vrátit stav dokončení a výsledky na hostitele. Všimněte si, že mnoho skriptovacích jazyků, které jsou založeny na zpracování událostí z hostitele, životnosti, které jsou definovány hostitelem. V takovém případě může nikdy volat tuto metodu.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptsite –](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::CanSetNextStatement | Microsoft Docs
+title: ISetNextStatement::CanSetNextStatement | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd32ddf73076f9e29ca3377186ff64be256b8fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5288b0cffc3b8bfca0e995e67d4b3e4bf3a6b2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796275"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090126"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Tato metoda určuje, zda bod spuštění, který určuje další prohlášení o být spuštěn, můžete nastavit do zadaného umístění.  
+Tato metoda určuje, zda lze nastavit bod provádění, která určuje dalšího příkazu ke spuštění kódu, do zadaného umístění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CanSetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -37,20 +37,20 @@ HRESULT CanSetNextStatement(
   
 #### <a name="parameters"></a>Parametry  
  `pStackFrame`  
- [v] Ukazatel na objekt rámce zásobníku.  
+ [in] Ukazatel na objekt rámce zásobníku.  
   
  `pCodeContext`  
- [v] Ukazatel na objekt kontextu kódu.  
+ [in] Ukazatel na objekt kontextu kódu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
-|`S_OK`|Další příkaz mohou být aktualizovány na kontext zadaný kód.|  
-|`S_FALSE`|Další příkaz nelze použít v kontextu zadaný kód.|  
+|`S_OK`|Ke kontextu zadaný kód je možné aktualizovat následující příkaz.|  
+|`S_FALSE`|Další příkaz nejde aktualizovat na kontext zadaného kódu.|  
   
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Isetnextstatement – rozhraní](../../winscript/reference/isetnextstatement-interface.md)
+ [ISetNextStatement – rozhraní](../../winscript/reference/isetnextstatement-interface.md)

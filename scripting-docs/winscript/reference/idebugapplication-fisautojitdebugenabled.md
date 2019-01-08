@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Microsoft Docs
+title: IDebugApplication::FIsAutoJitDebugEnabled | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,30 +18,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a10cc829e2d217bb9a90b355405dd8f3b15b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b06d223d76ed741eef6b379ace6b522248ded2e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793689"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090542"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Určuje, zda ladicí program za běhu (JIT) je zaregistrován na automatické ladění vlečný hostitele.  
+Určuje, zda ladicí program just-in-time (JIT) je zaregistrován vlečný hostitelům automatického ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 BOOL FIsAutoJitDebugEnabled();  
 ```  
   
 #### <a name="parameters"></a>Parametry  
- Tato metoda nepřijímá žádné parametry.  
+ Tato metoda nemá žádné parametry.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Pokud metoda bude úspěšná a ladicí program JIT je registrovaná na automatické ladění vlečný hostitele, vrátí metoda `TRUE`. Funkce `FALSE`.  
+ Pokud metoda uspěje a JIT ladící program registrován na automatické ladění vlečný hostitele, vrátí metoda `TRUE`. V opačném případě vrátí `FALSE`.  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda určuje, zda je zaregistrován ladicí program JIT vlečný hostitelům automatické ladění.  
+ Tato metoda určuje, zda JIT ladící program registrován vlečný hostitelům automatického ladění.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)

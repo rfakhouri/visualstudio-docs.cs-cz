@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CreateInstanceAtApplication | Microsoft Docs
+title: IRemoteDebugApplication::CreateInstanceAtApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2185987f6b635dae4d537231fca3327d0aed003
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 29cbcebc5bdc51be4223b2592bbe6ac3ae76525d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794874"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086356"
 ---
 # <a name="iremotedebugapplicationcreateinstanceatapplication"></a>IRemoteDebugApplication::CreateInstanceAtApplication
-Umožňuje vytvoření objektů v procesu aplikace kódem tedy-mimoprocesová aplikace.  
+Povolí vytváření objektů v procesu aplikace pomocí kódu, který je mimo proces k aplikaci.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateInstanceAtApplication(  
    REFCLSID    rclsid,  
    IUnknown*   pUnkOuter,  
@@ -42,29 +42,29 @@ HRESULT CreateInstanceAtApplication(
   
 #### <a name="parameters"></a>Parametry  
  `rclsid`  
- [v] Identifikátor (CLSID) objekt k vytvoření třídy.  
+ [in] Identifikátor (CLSID) objekt k vytvoření třídy.  
   
  `pUnkOuter`  
- [v] Pokud `NULL`, není právě objektu vytvořeny jako součást agregace. V opačném `pUnkOuter` je ukazatel na agregovaný objekt `IUnknown` rozhraní (řízení `IUnknown`).  
+ [in] Pokud `NULL`, není objekt vytváří jako součást agregace. V opačném případě `pUnkOuter` je ukazatel na agregovaný objekt `IUnknown` rozhraní (řízení `IUnknown`).  
   
  `dwClsContext`  
- [v] Kontext pro spuštění spustitelného souboru kódu. Hodnoty jsou převzaty z výčtu `CLSCTX`.  
+ [in] Kontext spuštění spustitelného kódu. Hodnoty pocházejí z výčtu `CLSCTX`.  
   
  `riid`  
- [v] Identifikátor rozhraní používaný ke komunikaci s daným objektem.  
+ [in] Identifikátor rozhraní používaný ke komunikaci s objektem.  
   
  `ppvObject`  
- [out] Adresa proměnné ukazatele, která přijímá ukazatel rozhraní požadované v `riid`. Po úspěšné návratu *`ppvObject` obsahuje ukazatel požadované rozhraní. Při selhání \* `ppvObject` obsahuje `NULL`.  
+ [out] Adresa proměnné ukazatele, která přijímá ukazatel rozhraní požadované `riid`. Po návratu úspěšné *`ppvObject` obsahuje ukazatel požadované rozhraní. Po selhání \* `ppvObject` obsahuje `NULL`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda deleguje `CoCreateInstance`.  
+ Tato metoda delegoval vůči `CoCreateInstance`.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe::getstackrange – metoda | Microsoft Docs
+title: Ijsdebugframe::getstackrange – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cce4d4542f4f76657475636ad6d8e430e1909181
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 049be8a665dae396d4e92fe847e757b266dc6025
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794514"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090282"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>IJsDebugFrame::GetStackRange – metoda
-Vrátí absolutní adresu rozsahu logické rámce zásobníku JavaScript.  
+Vrátí absolutní adresu rozsahu logického rámce zásobníku JavaScript.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetStackRange(  
    UINT64 *pStart,  
    UINT64 *pEnd  
@@ -37,18 +37,18 @@ HRESULT GetStackRange(
   
 #### <a name="parameters"></a>Parametry  
  `pStart`  
- [out] Většina ukazatel zásobníku rámečku dolů.  
+ [out] Nejspodnější ukazatel zásobníku rámce.  
   
  `pEnd`  
- [out] Horní většina ukazatel skládání rámečku.  
+ [out] TOP nejhornější ukazatel zásobníku rámce.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda je užitečná pro piecing společně trasování prokládaná zásobníku shromážděná z více moduly runtime. Start a end ukazatel zásobníku může zahrnovat víc rámce zásobníku fyzického počítače (pro interpretovaný rámce JavaScript runtime). Spustit > ukončení s růstem zásobníku od velmi nízkou adresu.  
+ Tato metoda je užitečná pro piecing společně trasování zásobníků shromážděných z více modulů – runtime. Počáteční a koncový ukazatel zásobníku může zahrnovat více rámců zásobníku fyzického počítače (pro interpretované snímky modulu runtime jazyka JavaScript). Start > konec se vzrůstajícím zásobníkem z vysoké na nízkou adresu.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugframe – metoda](../../winscript/reference/ijsdebugframe-interface.md)
+ [IJsDebugFrame – rozhraní](../../winscript/reference/ijsdebugframe-interface.md)

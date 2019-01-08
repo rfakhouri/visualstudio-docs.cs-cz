@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
+title: IDebugApplication::AddStackFrameSniffer | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89faa6481bd5e5934ae2d3b85a0bade83949633a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fa444573e418de1a59219eb48b09e64b08d859a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793821"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089892"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
-Přidá zprostředkovatele enumerátor rámce zásobníku do této aplikace.  
+Přidá zprostředkovatele enumerátor rámec zásobníku do této aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddStackFrameSniffer(  
    IDebugStackFrameSniffer*  pdsfs,  
    DWORD*                    pdwCookie  
@@ -39,22 +39,22 @@ HRESULT AddStackFrameSniffer(
   
 #### <a name="parameters"></a>Parametry  
  `pdsfs`  
- [v] Rámce zásobníku enumerátor zprostředkovatele pro přidání do této aplikace.  
+ [in] Rámce zásobníku enumerátor zprostředkovatele pro přidání do této aplikace.  
   
  `pdwCookie`  
- [out] Soubor cookie, který se používá k odebrání tohoto zprostředkovatele enumerátor rámce zásobníku z aplikace.  
+ [out] Soubor cookie, který slouží k odebrání tohoto zprostředkovatele čítače výčtu rámce zásobníku z aplikace.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Přestože jazyk moduly obvykle volat tuto metodu ke zveřejnění jejich rámce zásobníku pro ladicí program, je možné pro ostatní entity vystavit rámce zásobníku.  
+ Přestože jazyk moduly obvykle volat tuto metodu ke zveřejnění jejich rámce zásobníku pro ladicí program, je možné pro jiné entity k vystavení rámce zásobníku.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
- [Idebugstackframesniffer – rozhraní](../../winscript/reference/idebugstackframesniffer-interface.md)
+ [IDebugStackFrameSniffer – rozhraní](../../winscript/reference/idebugstackframesniffer-interface.md)

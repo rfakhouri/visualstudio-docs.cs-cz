@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib | Microsoft Docs
+title: IActiveScript::AddTypeLib | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791772"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092537"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Knihovny typů přidá do oboru názvů pro skript. Toto je podobná `#include` direktivy v jazyce C/C++. Umožňuje sadu předdefinovaných položek, jako jsou definice tříd, `typedefs`a s názvem konstanty, který se má přidat k dispozici pro skript běhové prostředí.  
+Obor názvů pro skript přidá knihovnu typů. Podobá se to `#include` direktiva v jazyce C/C++. Umožňuje, aby sada předdefinovaných položek, jako jsou definice tříd `typedefs`a s názvem konstanty mají být přidány do běhové prostředí skriptu k dispozici.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -41,20 +41,20 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parametry  
  `guidTypeLib`  
- [v] CLSID knihovny typů pro přidání.  
+ [in] Identifikátor CLSID typu knihovny přidat.  
   
  `dwMaj`  
- [v] Hlavní číslo verze.  
+ [in] Hlavní číslo verze.  
   
  `dwMin`  
- [v] Číslo podverze.  
+ [in] Číslo podverze.  
   
  `dwFlags`  
- [v] Možnost příznaky. Může být následující:  
+ [in] Příznaky možností. Může být následující:  
   
 |Hodnota|Význam|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|Knihovny typů popisuje ovládací prvek ActiveX, používá hostitel.|  
+|SCRIPTTYPELIB_ISCONTROL|Knihovna typů popisuje ovládací prvek ActiveX používá hostitel.|  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -63,8 +63,8 @@ HRESULT AddTypeLib(
 |------------------|-------------|  
 |`S_OK`|Úspěch.|  
 |`E_INVALIDARG`|Argument byl neplatný.|  
-|`E_UNEXPECTED`|Nebyl očekáván volání (například skriptovací stroj ještě byla načtena nebo inicializovat).|  
-|`TYPE_E_CANTLOADLIBRARY`|Nelze načíst knihovny zadaného typu.|  
+|`E_UNEXPECTED`|Volání nebylo očekáváno (například skriptovací stroj má ještě nebyly načteny nebo inicializován).|  
+|`TYPE_E_CANTLOADLIBRARY`|Zadanou knihovnu typů nelze načíst.|  
   
 ## <a name="see-also"></a>Viz také  
- [IActiveScript –](../../winscript/reference/iactivescript.md)
+ [IActiveScript](../../winscript/reference/iactivescript.md)

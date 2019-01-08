@@ -1,5 +1,5 @@
 ---
-title: Výčet ERRORRESUMEACTION | Microsoft Docs
+title: Errorresumeaction – výčet | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 914c1d7aa4d2935ea94322ebd257f4135d79e9c0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d78852a05226f5112447dd142c06a2ba55ddba5a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791691"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090932"
 ---
 # <a name="errorresumeaction-enumeration"></a>Výčet ERRORRESUMEACTION
 Popisuje, jak pokračovat od chyby za běhu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef enum tagERRORRESUMEACTION {  
    ERRORRESUMEACTION_ReexecuteErrorStatement,  
    ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller,  
@@ -43,8 +43,8 @@ typedef enum tagERRORRESUMEACTION {
 |Člen|Popis|  
 |------------|-----------------|  
 |ERRORRESUMEACTION_ReexecuteErrorStatement|Znovu spustí příkaz, který vytvořil chybu.|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Umožňuje modul jazyka chybu zpracovat.|  
-|ERRORRESUMEACTION_SkipErrorStatement|Obnoví spuštění v kódu následující příkaz, který vytvořil chybu.|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Umožňuje modulu jazyka chybu zpracovat.|  
+|ERRORRESUMEACTION_SkipErrorStatement|Pokračuje v provádění kódu, příkazem, který vytvořil chybu.|  
   
 ## <a name="see-also"></a>Viz také  
- [Konstanty ladicího programu aktivních skriptů, výčty a struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Konstanty, výčty a struktury ladicího programu aktivních skriptů](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

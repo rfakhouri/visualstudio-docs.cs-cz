@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext::GetDocumentContext | Microsoft Docs
+title: IDebugCodeContext::GetDocumentContext | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 098d57a5ff0ba14b1dd493ad772eee595a10ec9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e69ecf79c369b0ac99f0a598681e1a02a5dd21b0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793848"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096535"
 ---
 # <a name="idebugcodecontextgetdocumentcontext"></a>IDebugCodeContext::GetDocumentContext
-Vrátí kontext dokumentu spojený s tímto kontextem kódu.  
+Vrátí kontext dokumentu, který je spojený s tímto kontextem kódu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppsc  
 );  
@@ -41,14 +41,14 @@ HRESULT GetDocumentContext(
  [out] Kontext dokumentu spojený s tímto kontextem kódu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Dokumenty textu pozice znaku rozsahu by měla obsahovat text pro celý příkaz. To umožňuje ladicí program IDE, abyste měli na očích aktuální příkaz zdroje.  
+ Pro textové dokumenty pozice znaku rozsah by měl obsahovat text pro celý příkaz. To umožňuje ladicímu programu IDE zvýrazněte aktuálního příkazu zdroje.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugcodecontext – rozhraní](../../winscript/reference/idebugcodecontext-interface.md)
+ [IDebugCodeContext – rozhraní](../../winscript/reference/idebugcodecontext-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetStackFrame | Microsoft Docs
+title: IActiveScriptErrorDebug::GetStackFrame | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: affb385f2c057b7ac69b56d1e8b8c22d7391e43f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9331738c52453f4ef80b70ab7eebd79907d1f54
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793314"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094130"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-Poskytuje rámce zásobníku, která je používána pro chyby za běhu.  
+Poskytuje rámce zásobníku, který je v platnosti pro chyby za běhu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetStackFrame(  
    IDebugStackFrame**  ppdsf  
 );  
@@ -38,17 +38,17 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>Parametry  
  `ppdsf`  
- [out] Rámec zásobníku chyby.  
+ [out] Rámce zásobníku pro chybu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda poskytuje rámce zásobníku, která je používána pro chyby.  
+ Tato metoda poskytuje rámce zásobníku, který je v platnosti pro chyby za běhu.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescripterrordebug – rozhraní](../../winscript/reference/iactivescripterrordebug-interface.md)
+ [IActiveScriptErrorDebug – rozhraní](../../winscript/reference/iactivescripterrordebug-interface.md)

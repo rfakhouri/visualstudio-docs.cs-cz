@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Microsoft Docs
+title: IActiveScriptAuthor::ParseScriptText | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e81d96ae817b2117f12cb56fd59759f4c2b849
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c5f9e4969795cedd7da80864c1ad69c0d68f8b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793245"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091803"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Analyzuje text skriptu, přidá text skriptu vytváření modul a vytvoří `IScriptEntry` objekt, který odpovídá blok skriptu.  
+Analyzuje text skriptu, přidá text skriptu pro vytváření modulu a vytvoří `IScriptEntry` objekt, který odpovídá bloku skriptu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ParseScriptText(  
    LPCOLESTR pszCode,  
    LPCOLESTR pszItemName,  
@@ -42,19 +42,19 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [v] Text skriptu analyzovat.  
+ [in] Text skriptu k analýze.  
   
  `pszItemName`  
- [v] Adresa vyrovnávací paměti, který obsahuje název položky přidružené k bloku skriptu.  
+ [in] Adresa vyrovnávací paměti, který obsahuje název položky přidružené k bloku skriptu.  
   
  `pszDelimiter`  
- [v] Adresa koncového ze skriptu bloku oddělovač. Když `pszCode` je analyzována z datového proudu textu, hostitele se většinou používá oddělovač (například dvě jednoduchých uvozovek), na zjištění konce bloku skriptu. Tento parametr nastavte na hodnotu NULL, pokud neexistuje žádný oddělovač pro identifikaci konec bloku skriptu.  
+ [in] Adresa koncového ze skriptu bloku oddělovač. Když `pszCode` je analyzován z toku textu, hostitel obvykle používá oddělovač (například dvěma jednoduchými uvozovkami), k zjištění konce bloku skriptu. Tento parametr nastavte na hodnotu NULL, pokud neexistuje žádný oddělovač pro určení konce bloku skriptu.  
   
  `dwCookie`  
- [v] Hodnota definované aplikací, která souvisí s novým `IScriptEntry` objektu.  
+ [in] Hodnotu definované aplikací, který je spojen s novými `IScriptEntry` objektu.  
   
  `dwFlags`  
- [v] Nepoužívá se.  
+ [in] Nepoužívá se.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -66,4 +66,4 @@ HRESULT ParseScriptText(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptauthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Microsoft Docs
+title: IActiveScriptStringCompare::StrComp | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fea6ae4d5819680f38d19f2cd6ea1cf9bf9b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793638"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090100"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-Definuje metodu porovnání řetězce skriptovacího stroje.  
+Definuje metodu porovnání řetězce pro skriptovací stroj.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT StrComp(  
 // The first string:  
     [in] BSTR bszStr1,    
@@ -46,10 +46,10 @@ HRESULT StrComp(
  První řetězec.  
   
  `bszStr2`  
- K druhému řetězci.  
+ Druhý řetězec.  
   
  `iRet`  
- Výsledek porovnání. 0, pokud `bszStr1` a `bszStr2`jsou identické; -1, pokud `bszStr1`  <  `bszStr2`; 1 v případě `bszStr1`  >  `bszStr2`.  
+ Výsledek porovnání. 0, pokud `bszStr1` a `bszStr2`jsou identické; -1, pokud `bszStr1`  <  `bszStr2`; 1, pokud `bszStr1`  >  `bszStr2`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -58,13 +58,13 @@ HRESULT StrComp(
 |------------------|-------------|  
 |`S_OK`|Úspěch.|  
 |`E_INVALIDARG`|Argument není platný.|  
-|`E_UNEXPECTED`|Nebyl očekáván volání (například skriptovací stroj ještě byla načtena nebo inicializovat).|  
+|`E_UNEXPECTED`|Volání nebylo očekáváno (například skriptovací stroj má ještě nebyly načteny nebo inicializován).|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda je volána pokaždé, když se spustí porovnání řetězců.  
+ Tato metoda je volána pokaždé, když provádí porovnání řetězců.  
   
 ## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak přetížení funkce porovnání řetězce. Přetížení je povoleno, pokud používáte [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) nastavit SCRIPTPROP_STRINGCOMPAREINSTANCE.  
+ Následující příklad ukazuje, jak přetížení funkce porovnání řetězců. Přetížení může při použití [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) nastavit SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  
@@ -102,4 +102,4 @@ interface IActiveScriptStringCompare : IUnknown
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptstringcompare – rozhraní](../../winscript/reference/iactivescriptstringcompare-interface.md)
+ [IActiveScriptStringCompare – rozhraní](../../winscript/reference/iactivescriptstringcompare-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IObjectIdentity::IsEqualObject | Microsoft Docs
+title: IObjectIdentity::IsEqualObject | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52e386055e458568f8d4076a37489b7b2397f399
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa233e478c83b723b13d19d27dc4b63ee4700bb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794733"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095053"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
-Určuje, zda objekt rovná aktuálnímu objektu.  
+Určuje, zda je objekt rovná aktuálnímu objektu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT IsEqualObject(  
   IUnknown*punk  
 );  
@@ -38,18 +38,18 @@ HRESULT IsEqualObject(
   
 #### <a name="parameters"></a>Parametry  
  `punk`  
- [v] Adresa objekt k porovnání s aktuálním objektem.  
+ [in] Adresa objektu má být porovnán s aktuální objekt.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
-|`S_OK`|Objekty jsou stejné.|  
+|`S_OK`|Objekty jsou si rovny.|  
 |`S_FALSE`|Objekty nejsou stejné.|  
   
 ## <a name="remarks"></a>Poznámky  
- Implementace `IsEqualObject` metoda by měla vrátit `S_OK` pouze v případě, že objekty jsou identické.  
+ Implementace `IsEqualObject` metoda by měla vrátit `S_OK` pouze v případě, objekty jsou identické.  
   
 ## <a name="see-also"></a>Viz také  
- [Iobjectidentity – rozhraní](../../winscript/reference/iobjectidentity-interface.md)
+ [IObjectIdentity – rozhraní](../../winscript/reference/iobjectidentity-interface.md)

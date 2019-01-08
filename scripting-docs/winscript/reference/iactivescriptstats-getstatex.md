@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStatEx | Microsoft Docs
+title: IActiveScriptStats::GetStatEx | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb8adf27811f3046de7b447e537443ef129a8c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 824546b64323f7fb88c4ec016f8420169afa665c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793650"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097328"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
-Vrátí statistiku vlastních skriptů.  
+Vrátí statistiku pro vlastní skripty.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetStatEx(  
    REFGUID  guid,  
    ULONG*   pluHi,  
@@ -40,16 +40,16 @@ HRESULT GetStatEx(
   
 #### <a name="parameters"></a>Parametry  
  `guid`  
- [v] Určuje, které statistiky vrátit. Sémantika statistiky, které odpovídá konkrétní identifikátor GUID je zcela modul definované.  
+ [in] Určuje, které statistiku k vrácení. Sémantika statistiky, které odpovídá konkrétní identifikátor GUID je zcela modul definované.  
   
  `pluHi`  
- [out] Vysoká 32bitová verze 64bitová verze celé číslo bez znaménka představující této statistiky.  
+ [out] Vysoká 32 bitů 64bitové celé číslo bez znaménka představující statistiky.  
   
  `pluLo`  
- [out] Nízkou 32bitová verze 64bitová verze celé číslo bez znaménka představující této statistiky.  
+ [out] Nízká 32 bitů 64bitové celé číslo bez znaménka představující statistiky.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -57,11 +57,11 @@ HRESULT GetStatEx(
 |`E_NOTIMPL`|Metoda není implementována.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda umožňuje vlastní skriptovací stroj se vraťte do vlastního hostitele smysluplný statistiky.  
+ Tato metoda umožňuje vlastní skriptovací stroj vrátit smysluplné statistiky pro vlastního hostitele.  
   
 > [!NOTE]
->  Tato metoda není implementována aktuálně.  
+>  Tato metoda teď není implementovaná.  
   
 ## <a name="see-also"></a>Viz také  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
- [Iactivescriptstats – rozhraní](../../winscript/reference/iactivescriptstats-interface.md)
+ [IActiveScriptStats – rozhraní](../../winscript/reference/iactivescriptstats-interface.md)

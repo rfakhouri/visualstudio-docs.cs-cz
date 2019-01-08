@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType::ChangeType | Microsoft Docs
+title: IVariantChangeType::ChangeType | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d742d1bd57c85aa75c9ccd60479d08c1a559fb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a02b8a3991ff6d20370cd4a2ea4cd87aa9a1226
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796413"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086577"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
-Přebírá hodnotu typu variant a vytvoří nový typ variant pomocí zadaného typu.  
+Vezme hodnotu typu variant a vytvoří novou variantu pomocí zadaného typu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ChangeType(  
    VARIANT*  pvarDst,  
    VARIANT*  pvarSrc,  
@@ -41,26 +41,26 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>Parametry  
  `pvarDst`  
- [ve out] Hodnotu typu variant tak, aby obsahovala hodnota reprezentována `pvarSrc`, ale v typu zadaném pomocí `vtNew`.  
+ [out v] Hodnotu typu variant obsahující Hodnota reprezentovaná `pvarSrc`, ale v typu zadaném pomocí `vtNew`.  
   
  `pvarSrc`  
- [v] Chcete-li změnit na nový typ hodnotu variant.  
+ [in] Varianty hodnota změny do nového typu.  
   
  `lcid`  
- [v] Kontext národního prostředí, který se má použít při převodu argumenty do nebo z řetězce.  
+ [in] Kontext národního prostředí, který se má použít při převodu argumentů do nebo z řetězce.  
   
  `vtNew`  
- [v] Určuje typ `pvarDst` se.  
+ [in] Určuje typ `pvarDst` stát.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- `pvarDst` a `pvarSrc` argumenty může být stejná, v takovém případě se přepíše původní hodnotu. Tato metoda předá `pvarDst` k `VariantClear` funkce a proto `pvarDst` se musí inicializovat na platnou hodnotu.  
+ `pvarDst` a `pvarSrc` argumenty mohou být stejné, v takovém případě se přepíše původní hodnotu. Tato metoda předává `pvarDst` k `VariantClear` funkce a proto `pvarDst` by se měl inicializovat na platnou hodnotu.  
   
 ## <a name="see-also"></a>Viz také  
- [Ivariantchangetype – rozhraní](../../winscript/reference/ivariantchangetype-interface.md)
+ [IVariantChangeType – rozhraní](../../winscript/reference/ivariantchangetype-interface.md)

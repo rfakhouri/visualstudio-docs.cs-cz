@@ -1,5 +1,5 @@
 ---
-title: Nelze přiřadit do výsledku funkce | Microsoft Docs
+title: Nelze přiřazovat hodnoty do výsledku funkce | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,17 +20,17 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e7ea718aa97ab7b2eb0924458826cd1eac5672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1a29c3f20392dc216c0306137c0dec6b22aaa58a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788721"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093857"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Nelze přiřazovat hodnoty do výsledku funkce
-Jste se pokusili o přiřazení hodnoty do výsledku funkce. Výsledek funkce lze přiřadit k proměnné, ale nelze zadat jako proměnnou. Pokud chcete přiřadit novou hodnotu na samotnou funkci, vynechejte závorky (operátor volání funkce). Následující příklad ukazuje situace, ve kterém se tato chyba je generována.  
+Jste se pokusili pro přiřazení hodnoty do výsledku funkce. Výsledek funkce může být přiřazen proměnné, ale nelze ji použít jako proměnná. Pokud chcete přiřadit novou hodnotu samotné funkce, vynechejte závorky (operátor volání funkce). Následující příklad ukazuje situaci, ve kterém se tato chyba je generována.  
   
-```  
+```js
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
@@ -42,7 +42,7 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     myVar = myFunction(42);  
     ```  
   
--   Funkce můžete alternativně přiřadit samostatně (a ne její návratovou hodnotu) a proměnné.  
+-   Funkce můžete alternativně přiřadit samostatně (a ne její návratová hodnota) a proměnné.  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  

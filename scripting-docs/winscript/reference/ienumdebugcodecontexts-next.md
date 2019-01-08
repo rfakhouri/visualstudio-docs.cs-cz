@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Next | Microsoft Docs
+title: IEnumDebugCodeContexts::Next | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00a3a5765f5b5a62753653d24cf27e4667a5647f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 113f5a25a4bae4279281bbfdcfacce9efee3f2b6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794700"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097237"
 ---
 # <a name="ienumdebugcodecontextsnext"></a>IEnumDebugCodeContexts::Next
 Načte zadaný počet segmentů v pořadí výčtu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                celt,  
    IDebugCodeContext**  pscc,  
@@ -40,16 +40,16 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [v] Počet segmentů k načtení.  
+ [in] Počet segmentů, pro načtení.  
   
  `pscc`  
- [out] Vrátí pole `IDebugCodeContext` rozhraní, která představuje segmenty, dojde k načtení.  
+ [out] Vrátí pole `IDebugCodeContext` rozhraní, která představuje segmenty načítají.  
   
  `pceltFetched`  
- [out] Skutečný počet segmentů načtených podle enumerátor.  
+ [out] Skutečný počet segmentů získaný enumerátor.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -59,4 +59,4 @@ HRESULT Next(
  Tato metoda načte zadaný počet segmentů v pořadí výčtu.  
   
 ## <a name="see-also"></a>Viz také  
- [Ienumdebugcodecontexts – rozhraní](../../winscript/reference/ienumdebugcodecontexts-interface.md)
+ [IEnumDebugCodeContexts – rozhraní](../../winscript/reference/ienumdebugcodecontexts-interface.md)

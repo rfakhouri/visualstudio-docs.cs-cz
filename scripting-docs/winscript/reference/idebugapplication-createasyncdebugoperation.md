@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateAsyncDebugOperation | Microsoft Docs
+title: IDebugApplication::CreateAsyncDebugOperation | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8714f4401249d73cf09d241ebf4c2b2115911d6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 30051276b682bdf906db72bc2682e1c5d58c455a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793812"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090698"
 ---
 # <a name="idebugapplicationcreateasyncdebugoperation"></a>IDebugApplication::CreateAsyncDebugOperation
 Poskytuje asynchronní přístup k dané ladění synchronní operace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateAsyncDebugOperation(  
    IDebugSyncOperation*    psdo,  
    IDebugAsyncOperation**  ppado  
@@ -39,22 +39,22 @@ HRESULT CreateAsyncDebugOperation(
   
 #### <a name="parameters"></a>Parametry  
  `psdo`  
- [v] Objekt operace synchronní ladění.  
+ [in] Objekt ladění synchronní operace.  
   
  `ppado`  
- [out] Objekt debug asynchronní operace.  
+ [out] Operace objektu asynchronní ladění.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda umožňuje strojů jazyka k vyhodnocení výrazů asynchronně bez explicitně synchronizace s vlákno ladicí program. Další informace najdete v tématu [idebugsyncoperation – rozhraní](../../winscript/reference/idebugsyncoperation-interface.md) a [idebugasyncoperation – rozhraní](../../winscript/reference/idebugasyncoperation-interface.md).  
+ Tato metoda umožňuje jazyk modulů k vyhodnocení výrazů asynchronně, ale explicitně nebyl synchronizován se vlákno ladicího programu. Další informace najdete v tématu [idebugsyncoperation – rozhraní](../../winscript/reference/idebugsyncoperation-interface.md) a [idebugasyncoperation – rozhraní](../../winscript/reference/idebugasyncoperation-interface.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)   
  [Idebugsyncoperation – rozhraní](../../winscript/reference/idebugsyncoperation-interface.md)   
- [Idebugasyncoperation – rozhraní](../../winscript/reference/idebugasyncoperation-interface.md)
+ [IDebugAsyncOperation – rozhraní](../../winscript/reference/idebugasyncoperation-interface.md)

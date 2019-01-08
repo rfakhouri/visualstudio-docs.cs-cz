@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::writememory – metoda | Microsoft Docs
+title: Ijsdebugdatatarget::writememory – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794523"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089281"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory – metoda
-Přečte paměť tento cílový proces.  
+Čtení paměti cílového procesu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -38,21 +38,21 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [v] Základní adresa, ze kterého chcete zapsat tento cílový proces paměti.  
+ [in] Základní adresa, ze které probíhá zápis paměti v cílovém procesu.  
   
  `pMemory`  
- [v] Data, která má být zapsán v adresním prostoru procesu zadaný.  
+ [in] Data, která mají být zapsána do adresního prostoru určeného procesu.  
   
  `size`  
- [v] Počet bajtů k zápisu do procesu.  
+ [in] Počet bajtů k zápisu do procesu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
 ## <a name="remarks"></a>Poznámky  
- Předtím, než dojde k přenosu dat, systém ověří, že všechna data v základní adresu a po zadanou velikost paměti je přístupný pro přístup k zápisu, a pokud není dostupný, funkce vyvolá chybu E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+ Předtím, než dojde k přenosu dat, systém ověří, že všechna data v základní adrese a paměti o zadané velikosti jsou přístupné pro zápis, a pokud není dostupný, funkce vyvolá chybu E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugdatatarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)

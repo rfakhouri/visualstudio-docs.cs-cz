@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetApplication | Microsoft Docs
+title: IRemoteDebugApplicationThread::GetApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15f503f98492606424752dff169fd4b61b6cc8b4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dc2e4d542619e214835d3be8354062733ebd5cb8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794754"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091491"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
-Vrátí objekt aplikace přidružené k této přístup z více vláken.  
+Vrátí objekt aplikace, které jsou spojené s tímto vláknem.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IRemoteDebugApplication**  pprda  
 );  
@@ -38,17 +38,17 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pprda`  
- [out] Objekt aplikace přidružené k této přístup z více vláken.  
+ [out] Objekt aplikace spojené s tímto vláknem.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí objekt aplikace přidružené k této přístup z více vláken.  
+ Tato metoda vrací objekt aplikace, které jsou spojené s tímto vláknem.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplicationthread – rozhraní](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread – rozhraní](../../winscript/reference/iremotedebugapplicationthread-interface.md)

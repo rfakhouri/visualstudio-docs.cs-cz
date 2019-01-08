@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugbreakpoint::getdocumentposition – metoda | Microsoft Docs
+title: Ijsdebugbreakpoint::getdocumentposition – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c33751b0173626814f042fdc54a7d496b644573
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2d92a58dabe76e391d55996e511409fb63c9d671
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794436"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097666"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition – metoda
-Vrátí pozici příkazu, kde byla vázána zarážku.  
+Vrátí pozici prohlášení, kde byla zarážka vázána.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentPosition(  
    UINT64 *pDocumentId,  
    DWORD *pCharacterOffset,  
@@ -38,13 +38,13 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>Parametry  
  `pDocumentId`  
- [out] Jedinečné ID pro zdrojový dokument (ukazatel idebugdocumenttext –).  
+ [out] Jedinečné ID pro zdrojový dokument (ukazatel na IDebugDocumentText).  
   
  `pCharacterOffset`  
- [out] Posun od nuly znaků od začátku skriptu.  
+ [out] Odsazení znaku od nuly od začátku skriptu.  
   
  `pStatementCharCount`  
- [out] Délka aktuální příkaz, který začíná * pCharacterOffset ve znacích.  
+ [out] Délka aktuálního příkazu, který začíná * pCharacterOffset, ve znacích.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
@@ -52,4 +52,4 @@ HRESULT GetDocumentPosition(
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugbreakpoint – rozhraní](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+ [IJsDebugBreakPoint – rozhraní](../../winscript/reference/ijsdebugbreakpoint-interface.md)

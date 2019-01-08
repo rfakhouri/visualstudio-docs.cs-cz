@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::FunctionCompiled | Microsoft Docs
+title: IActiveScriptProfilerCallback::FunctionCompiled | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 797476d4892224ad0b27c9caf579c0704693c835
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bd032914605c61b13a0a56a42e510c2af252f7e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793368"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091400"
 ---
 # <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
-Objekt, který skriptování modul zjistil funkce při kompilování skriptu oznamuje profileru.  
+Profiler upozorní, že při kompilaci skriptu, který skriptovací modul narazil na funkci.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT FunctionCompiled(  
     [in] PROFILER_TOKEN functionId,  
     [in] PROFILER_TOKEN scriptId,  
@@ -39,25 +39,25 @@ HRESULT FunctionCompiled(
   
 #### <a name="parameters"></a>Parametry  
  `functionId`  
- [v] Jedinečné ID funkce. Toto ID je přiřazena službou skriptovacího stroje.  
+ [in] Jedinečné ID funkce. Toto ID je přiřazena službou skriptovací stroj.  
   
  `scriptId`  
- [v] Jedinečné ID skript, který je součástí funkce.  
+ [in] Jedinečné ID skript, který je součástí funkce.  
   
  `pwszFunctionName`  
- [v] Název funkce nebo hodnota null pro anonymní funkce.  
+ [in] Název funkce nebo hodnota null pro anonymní funkce.  
   
  `pwszFunctionNameHint`  
- [v] Odvozené název funkce nebo hodnota null, pokud skriptovacího stroje nelze odvodit žádný název.  
+ [in] Odvozený název funkce nebo hodnota null, pokud skriptovací modul nelze odvodit libovolný název.  
   
  `pIDebugDocumentContext`  
- [v] Pokud je k dispozici, má ukazatel na `IUnknown` rozhraní, které musí vyhledat profileru [idebugdocumentcontext – rozhraní](../../winscript/reference/idebugdocumentcontext-interface.md) ukazatel. Jinak hodnota null.  
+ [in] Pokud je k dispozici, ukazatel na `IUnknown` rozhraní, které profiler se musí dotazovat pro [idebugdocumentcontext – rozhraní](../../winscript/reference/idebugdocumentcontext-interface.md) ukazatele. V opačném případě hodnota null.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Návratová hodnota tato metoda je ignorován v skriptovacího stroje.  
+ Skriptovací modul se ignoruje vrácenou hodnotu této metody.  
   
 ## <a name="remarks"></a>Poznámky  
- Skriptovací stroj může poskytnout kontext dokumentu pouze v případě, že to je podporováno pro hostitele.  
+ Skriptovací stroj může poskytnout kontext dokumentu, pouze v případě, že to je podporované hostitelem.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptprofilercallback – rozhraní](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback – rozhraní](../../winscript/reference/iactivescriptprofilercallback-interface.md)

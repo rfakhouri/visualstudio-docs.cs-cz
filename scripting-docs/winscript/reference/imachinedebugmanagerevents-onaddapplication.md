@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onAddApplication | Microsoft Docs
+title: IMachineDebugManagerEvents::onAddApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 887ce7f723713c335d72a6353c20765c7b695031
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 613461eada0113592ccb356374d70be4da626481
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794877"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086642"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-Zpracovává událost při přidání aplikace do spuštění seznam aplikací.  
+Zpracovává událost, když aplikace se přidá do běhu seznamu aplikací.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onAddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -39,20 +39,20 @@ HRESULT onAddApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [v] Aplikace, která byla přidána do spuštění seznam aplikací.  
+ [in] Aplikace, která byla přidána do běhu seznamu aplikací.  
   
  `dwAppCookie`  
- [v] Soubor cookie, který získáte při aplikaci byl přidán do seznamu aplikací.  
+ [in] Soubor cookie k dispozici při přidání aplikace do seznamu aplikací.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda určuje, že aplikace byla přidána do spuštění seznam aplikací.  
+ Tato metoda znamená, že aplikace byla přidána s běžící seznam aplikací.  
   
 ## <a name="see-also"></a>Viz také  
  [Imachinedebugmanagerevents – rozhraní](../../winscript/reference/imachinedebugmanagerevents-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse::InitNew | Microsoft Docs
+title: IActiveScriptParse::InitNew | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,27 +18,27 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e34094bcc25c0316fa670f570d8b2664acc0ba78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f0998bea50d7839f93111aa6b116934fae35bfa3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793404"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089983"
 ---
 # <a name="iactivescriptparseinitnew"></a>IActiveScriptParse::InitNew
-Inicializuje skriptovacího stroje.  
+Inicializuje skriptovací stroj.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT InitNew(void);  
 ```  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí `S_OK` v případě úspěchu nebo `E_FAIL` Pokud během inicializace došlo k chybě.  
+ Vrátí `S_OK` v případě úspěšného ověření nebo `E_FAIL` Pokud během inicializace došlo k chybě.  
   
 ## <a name="remarks"></a>Poznámky  
- Před použitím skriptovací stroje, jednu z následujících metod musí být voláno: `IPersist*::Load`, `IPersist*::InitNew`, nebo `IActiveScriptParse::InitNew`. Sémantika této metody jsou stejné jako `IPersistStreamInit::InitNew`, v tom, že tato metoda informuje skriptovacího stroje inicializovat sebe sama. Všimněte si, že není možné volat obě `IPersist*::InitNew` nebo `IActiveScriptParse::InitNew` a `IPersist*::Load`, ani je možné volat `IPersist*::InitNew`, `IActiveScriptParse::InitNew`, nebo `IPersist*::Load` více než jednou.  
+ Před použitím skriptovací stroj, jeden z následujících metod musí být volána: `IPersist*::Load`, `IPersist*::InitNew`, nebo `IActiveScriptParse::InitNew`. Sémantika této metody je stejný jako `IPersistStreamInit::InitNew`, v tom, že tato metoda říká skriptovací stroj inicializovat. Všimněte si, že není platný pro volání obou `IPersist*::InitNew` nebo `IActiveScriptParse::InitNew` a `IPersist*::Load`, ani je možné volat `IPersist*::InitNew`, `IActiveScriptParse::InitNew`, nebo `IPersist*::Load` více než jednou.  
   
 ## <a name="see-also"></a>Viz také  
- [IActiveScriptParse –](../../winscript/reference/iactivescriptparse.md)
+ [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md)

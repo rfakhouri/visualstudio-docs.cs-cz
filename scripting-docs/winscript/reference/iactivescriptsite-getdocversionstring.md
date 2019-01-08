@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString | Microsoft Docs
+title: IActiveScriptSite::GetDocVersionString | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4b009c9eb40b2935a5b1aeca0d551819462bafc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793437"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097211"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-Načte řetězec definované na hostitele, který jednoznačně identifikuje aktuální verze dokumentu. Pokud související dokument byl změněn mimo obor skriptům v systému Windows (jako v případě stránku HTML upravovaný programu Poznámkový blok), můžete to společně s jeho trvalého stavu vynucení při příštím spuštění skriptu je načtena, pak ji znovu zkompilovat uložit skriptovacího stroje.  
+Načte řetězec definované hostitele, který jednoznačně identifikuje aktuální verzi dokumentu. Pokud související dokument byl změněn mimo obor skript Windows (stejně jako v případě stránku HTML, který právě upravujete v aplikaci Poznámkový blok), můžete to spolu s jeho trvalého stavu, je vynucena Opětovná kompilace při příštím načtení skriptu uložit skriptovací stroj.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocVersionString(  
     BSTR *pbstrVersionString  // address of document version string  
 );  
@@ -38,13 +38,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>Parametry  
  `pstrVersionString`  
- [out] Adresa hostitele definované dokumentu řetězec verze.  
+ [out] Adresa řetězec verze dokumentu definované hostitele.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí `S_OK` v případě úspěchu nebo `E_NOTIMPL` Pokud tato metoda není podporována.  
+ Vrátí `S_OK` v případě úspěšného ověření nebo `E_NOTIMPL` Pokud tato metoda není podporována.  
   
 ## <a name="remarks"></a>Poznámky  
- Pokud `E_NOTIMPL` se vrátí, skriptovací stroj musí předpokládat, že skript je synchronizována s dokumentu.  
+ Pokud `E_NOTIMPL` je vrácena skriptovací modul by měl předpokládat, že skript je synchronizovaný s dokumentem.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptsite –](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

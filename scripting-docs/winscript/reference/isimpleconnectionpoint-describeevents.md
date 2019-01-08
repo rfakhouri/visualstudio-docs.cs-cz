@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents | Microsoft Docs
+title: ISimpleConnectionPoint::DescribeEvents | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42dab9558d46eae0fbb640c60264a79877708321
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 43a20a2d9580c80bc6aea5d22c6a0713f4843634
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796359"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088501"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
-Vrátí DISPID a název pro všechny události v zadaném rozsahu událostí.  
+Vrátí identifikátor DISPID a název pro každou jednotlivou událost v zadaném rozsahu událostí.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT DescribeEvents(  
    ULONG    iEvent,  
    ULONG    cEvents,  
@@ -42,31 +42,31 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>Parametry  
  `iEvent`  
- [v] Index první událost pro načtení.  
+ [in] Index první událost pro načtení.  
   
  `cEvents`  
- [v] Počet události k načtení.  
+ [in] Počet událostí k načtení.  
   
  `prgid`  
- [out] Pole hodnot DISPID událostí.  
+ [out] Pole hodnoty DISPID události.  
   
  `prgbstr`  
  [out] Pole názvy událostí.  
   
  `pcEventsFetched`  
- [out] Skutečný počet načtených události.  
+ [out] Skutečný počet načtených událostí.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
-|`S_FALSE`|Další události se požadovaly než nebyly k dispozici. Není k dispozici události jsou reprezentované pomocí DISPID_NULL a null BSTR.|  
-|`E_INVALIDARG`|Může být načteny žádné elementy.|  
+|`S_FALSE`|Další akce bylo vyžádáno, než byly k dispozici. Není k dispozici událostí jsou reprezentovány s DISPID_NULL a null BSTR.|  
+|`E_INVALIDARG`|Může se načíst žádné elementy.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí DISPID a název pro všechny události v zadaném rozsahu událostí.  
+ Tato metoda vrací identifikátor DISPID a název pro každou jednotlivou událost v zadaném rozsahu událostí.  
   
 ## <a name="see-also"></a>Viz také  
- [Isimpleconnectionpoint – rozhraní](../../winscript/reference/isimpleconnectionpoint-interface.md)
+ [ISimpleConnectionPoint – rozhraní](../../winscript/reference/isimpleconnectionpoint-interface.md)

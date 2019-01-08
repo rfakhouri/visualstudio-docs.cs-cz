@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs
+title: IDebugApplicationNodeEvents::onRemoveChild | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793950"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092196"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-Zpracovává událost, pokud podřízený uzel je odebrán z objektu uzlu ladění aplikace.  
+Zpracovává událost, když je podřízený uzel odebrán z objektu uzlu ladění aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,21 +38,21 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Parametry  
  `prddpChild`  
- [v] Podřízený uzel aplikace, která byla odebrána.  
+ [in] Podřízený uzel aplikace, které se odstranily.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda zpracovává událost, pokud podřízený uzel je odebrán z objektu uzlu ladění aplikace.  
+ Tato metoda zpracovává událost, když je podřízený uzel odebrán z objektu uzlu ladění aplikace.  
   
- Implementátory z `IDebugApplicationNode` rozhraní Vyvolejte tuto událost.  
+ Implementátorům `IDebugApplicationNode` rozhraní vyvolat tuto událost.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugapplicationnodeevents – rozhraní](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
- [Idebugapplicationnode – rozhraní](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode – rozhraní](../../winscript/reference/idebugapplicationnode-interface.md)

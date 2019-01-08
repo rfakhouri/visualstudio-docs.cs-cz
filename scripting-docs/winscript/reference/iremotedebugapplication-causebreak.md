@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CauseBreak | Microsoft Docs
+title: IRemoteDebugApplication::CauseBreak | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,34 +18,34 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04ea5303489a8c774adfaf65194237685a88a9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fc84edf16e5236f1f8a8cf679711d2ce4fe869b8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794616"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090360"
 ---
 # <a name="iremotedebugapplicationcausebreak"></a>IRemoteDebugApplication::CauseBreak
-Způsobí, že aplikace pro přerušení ladicího při nejbližší příležitosti.  
+Způsobí, že aplikace do ladicího programu při nejbližší příležitosti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CauseBreak();  
 ```  
   
 #### <a name="parameters"></a>Parametry  
- Tato metoda nepřijímá žádné parametry.  
+ Tato metoda nemá žádné parametry.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Voláním této metody nezpůsobí aplikaci rozdělit okamžitě. Pokud aplikace není aktuálně provádění kód skriptu, dlouhou dobu může uplynout, než ve skutečnosti dělí aplikace.  
+ Voláním této metody nezpůsobí okamžité přerušení aplikace. Pokud aplikace aktuálně nezpracovává kód skriptu, dlouhou dobu může uplynout, než aplikace ve skutečnosti zastaví.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md)

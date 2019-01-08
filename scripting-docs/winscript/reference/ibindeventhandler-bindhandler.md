@@ -1,5 +1,5 @@
 ---
-title: IBindEventHandler::BindHandler | Microsoft Docs
+title: IBindEventHandler::BindHandler | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66de7cba8181ce9f3d683a90e4d7dd51e63d4779
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62ac6de8342f0a436d984f4194351507fdcd5edd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793695"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090711"
 ---
 # <a name="ibindeventhandlerbindhandler"></a>IBindEventHandler::BindHandler
-Událost se váže k objektu.  
+Vytvoří vazbu události na objekt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT BindHandler(  
    LPCOLESTR   pstrEvent,  
    IDispatch*  pdisp  
@@ -39,13 +39,13 @@ HRESULT BindHandler(
   
 #### <a name="parameters"></a>Parametry  
  `pstrEvent`  
- [v] Určuje události na zpracování.  
+ [in] Určuje událost, ke zpracování.  
   
  `pdisp`  
- [v] Určuje objekt pro zpracování události.  
+ [in] Určuje objekt, který chcete zpracovat událost.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -55,4 +55,4 @@ HRESULT BindHandler(
  Tato metoda vytvoří vazbu události objektu.  
   
 ## <a name="see-also"></a>Viz také  
- [Ibindeventhandler – rozhraní](../../winscript/reference/ibindeventhandler-interface.md)
+ [IBindEventHandler – rozhraní](../../winscript/reference/ibindeventhandler-interface.md)

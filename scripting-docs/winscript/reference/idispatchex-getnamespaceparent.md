@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNameSpaceParent | Microsoft Docs
+title: IDispatchEx::GetNameSpaceParent | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12168ddb5f65c62e81a8f724cacf8b3fd4a1b3a9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 142248d4cfedb2d63025fc873c5574c163fcafd4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794601"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087500"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
 Načte rozhraní pro obor názvů nadřazeného objektu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetNameSpaceParent(  
    IUnknown **ppunk  
 );  
@@ -38,10 +38,10 @@ HRESULT GetNameSpaceParent(
   
 #### <a name="parameters"></a>Parametry  
  `ppunk`  
- Adresa `IUnknown` ukazatel rozhraní, která přijímá rozhraní nadřazeného oboru názvů.  
+ Adresa `IUnknown` ukazatel rozhraní, která bude přijímat nadřazený obor názvů rozhraní.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí `S_OK` v případě úspěchu nebo jinak definované OLE chybový kód.  
+ Vrátí `S_OK` v případě úspěchu nebo jinak kód chyby definované OLE.  
   
 ## <a name="see-also"></a>Viz také  
  [IDispatchEx – rozhraní](../../winscript/reference/idispatchex-interface.md)

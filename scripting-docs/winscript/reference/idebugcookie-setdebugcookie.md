@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie::SetDebugCookie | Microsoft Docs
+title: IDebugCookie::SetDebugCookie | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1155b00750cfe2a91625ba0f531622f381467198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d67ea7f4cc8a27364226a613c77d837f476c2530
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793899"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095040"
 ---
 # <a name="idebugcookiesetdebugcookie"></a>IDebugCookie::SetDebugCookie
 Nastaví soubor cookie ladění aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetDebugCookie(  
    DWORD  dwDebugAppCookie  
 );  
@@ -38,17 +38,17 @@ HRESULT SetDebugCookie(
   
 #### <a name="parameters"></a>Parametry  
  `dwDebugAppCookie`  
- [v] Soubor cookie, který identifikuje ladění aplikace.  
+ [in] Soubor cookie, který identifikuje ladění aplikace.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda nastaví soubor cookie aplikace ladění, která umožňuje více než jeden ladicí program připojit k procesu.  
+ Tato metoda nastaví soubor cookie aplikace ladění, což umožňuje více než jeden ladicí program připojil k procesu.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugcookie – rozhraní](../../winscript/reference/idebugcookie-interface.md)
+ [IDebugCookie – rozhraní](../../winscript/reference/idebugcookie-interface.md)

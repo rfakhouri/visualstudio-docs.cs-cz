@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars | Microsoft Docs
+title: IActiveScriptAuthor::GetChars | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc9c819c2dd4a75d6223af86b4fe89baebc186b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06e7a7cf276e589aaaa3c00ecab8cbf881942f82
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793287"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094325"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-Vrací sadu znaků dokončení pro požadovaný dokončení kontextu.  
+Vrátí sadu znaků dokončení pro dokončení požadované kontext.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetChars(  
    DWORD            fRequestedList,  
    BSTR             *pbstrChars  
@@ -39,19 +39,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>Parametry  
  `fRequestedList`  
- [v] Kontext požadovaný dokončení.  
+ [in] Kontext požadovaný dokončení.  
   
 |Konstanta|Hodnota|Popis|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Požadavky levé straně výčtu.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Kontext člen dokončení požadavků.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Požádá o dokončení kontextu člena.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Vyžádá seznam parametrů.|  
-|SCRIPT_CMPL_COMMIT|0x0004|Žádosti o dokončení seznam parametrů.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Požadavky na konce seznamu parametrů.|  
   
  `pbstrChars`  
  [out] Znaky, které odpovídají kontext požadovaný dokončení.  
   
-|`fRequestedList`Parametr|Znaky vrácené|  
+|`fRequestedList` Parametr|Vrátí znaky|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  
@@ -68,4 +68,4 @@ HRESULT GetChars(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptauthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)

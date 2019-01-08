@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs
+title: IRemoteDebugApplication::ResumeFromBreakPoint | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0603ef19426e27324daa39bf769e2c0667477be3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795111"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089073"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-Pokračuje v aplikaci, která je aktuálně v zarážky.  
+Pokračuje v aplikaci, která je aktuálně v zarážku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ResumeFromBreakPoint(  
    IRemoteDebugApplicationThread*  prptFocus,  
    BREAKRESUMEACTION               bra,  
@@ -40,25 +40,25 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Parametry  
  `prptFocus`  
- [v] Pro krokování režimy, vláken, který má být ovlivněné taktování režimu.  
+ [in] Pro krokování režimy, vlákna, který má být ovlivněn krokování režimu.  
   
  `bra`  
- [v] Akce, který se má provést při obnovení aplikace.  
+ [in] Akce, který se má provést při obnovení aplikace.  
   
  `era`  
- [v] Akce, který se má provést v případě, že aplikace je zastavena z důvodu chyby.  
+ [in] Akce provedená v případě, že aplikace zastavila z důvodu chyby.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda pokračuje aplikace, která je aktuálně v zarážky.  
+ Tato metoda pokračuje v aplikaci, která je aktuálně v zarážku.  
   
 ## <a name="see-also"></a>Viz také  
  [Iremotedebugapplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md)   
- [BREAKRESUMEACTION – výčet](../../winscript/reference/breakresumeaction-enumeration.md)   
+ [Breakresumeaction – výčet](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION – výčet](../../winscript/reference/errorresumeaction-enumeration.md)

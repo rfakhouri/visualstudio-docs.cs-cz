@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody | Microsoft Docs
+title: IScriptEntry::SetBody | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ee232aa730366e9a23e15cdc45f6734b9ef744
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 993ffe59abb9458e1b400633430f708e7520599c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794895"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088579"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-Nastaví text, který je v textu `IScriptEntry` bloku skriptu nebo `IScriptScriptlet` skriptlet.  
+Nastaví text, který je v těle `IScriptEntry` bloku skriptu nebo `IScriptScriptlet` skriptletu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetBody(  
    LPCOLESTR          psz  
 );  
@@ -38,11 +38,11 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [v] Pro `IScriptEntry` bloku skriptu `psz` je text v značek skriptu.  
+ [in] Pro `IScriptEntry` bloku skriptu `psz` je text uzavřený v značky skriptu.  
   
- Pro `IScriptEntry` funkce bloku `psz` tělo funkce.  
+ Pro `IScriptEntry` bloku funkce `psz` představuje tělo funkce.  
   
- Pro `IScriptScriptlet` objektu (která je odvozena z `IScriptEntry`), `psz` je text skriptu skriptletu.  
+ Pro `IScriptScriptlet` objektu (která je odvozena z `IScriptEntry`), `psz` je skript textu skriptletu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  

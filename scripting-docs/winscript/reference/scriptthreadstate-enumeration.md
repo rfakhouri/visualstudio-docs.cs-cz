@@ -1,5 +1,5 @@
 ---
-title: SCRIPTTHREADSTATE – výčet | Microsoft Docs
+title: Scriptthreadstate – výčet | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e18cc6f5f2afb1dcea6835983f69f6a6f7b9280
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796329"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094117"
 ---
 # <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE – výčet
-Určuje stav vlákna v skriptovacího stroje. Tento výčet je používán [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) metoda.  
+Určuje stav vlákna v skriptovací stroj. Tento výčet je používán [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) metody.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef enum tagSCRIPTTHREADSTATE {  
     SCRIPTTHREADSTATE_NOTINSCRIPT  = 0,  
     SCRIPTTHREADSTATE_RUNNING      = 1  
@@ -41,8 +41,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Zadaný vlákno je aktuálně obsluhy skriptované událostí, zpracování okamžitě spustit skript text, nebo spuštění skriptu makra.|  
-|SCRIPTTHREADSTATE_RUNNING|Zadaný vlákno je aktivně obsluhy skriptované událostí, zpracování okamžitě spustit skript text, nebo spuštění skriptu makra.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Zadané vlákno není aktuálně skriptované událostí, zpracování okamžitě provést text skriptu, nebo spuštění skriptu makra.|  
+|SCRIPTTHREADSTATE_RUNNING|Zadané vlákno je aktivně skriptované událostí, zpracování okamžitě provést text skriptu, nebo spuštění skriptu makra.|  
   
 ## <a name="see-also"></a>Viz také  
- [Aktivních skriptů konstanty, výčty a kódy chyb](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Konstanty, výčty a kódy chyb aktivních skriptů](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

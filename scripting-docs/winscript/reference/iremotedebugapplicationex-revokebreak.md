@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:RevokeBreak | Microsoft Docs
+title: IRemoteDebugApplicationEx:RevokeBreak | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8712431dd72cd25e2ba4203d2b076a163e005be6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 537fb9cba51b1a13e82ffd2321bb96514dc16337
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794778"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087617"
 ---
 # <a name="iremotedebugapplicationexrevokebreak"></a>IRemoteDebugApplicationEx:RevokeBreak
 Odvolá příkaz break.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT RevokeBreak( );  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT RevokeBreak( );
  Žádné  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -47,4 +47,4 @@ HRESULT RevokeBreak( );
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplicationex – rozhraní](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+ [IRemoteDebugApplicationEx – rozhraní](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)

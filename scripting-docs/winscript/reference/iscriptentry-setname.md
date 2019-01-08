@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetName | Microsoft Docs
+title: IScriptEntry::SetName | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43e167ce48c208b6f552984fe2db9ec9d48c72eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c7929d9d073e7b21030dcddc3db04abc977bdd3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794976"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086668"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
-Pro položky, které představují jeden objekt (například funkce) nastaví název objektu.  
+Položky, které představují jeden objekt (například funkce) nastaví název objektu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [v] Nový název `IScriptEntry` objektu.  
+ [in] Nový název `IScriptEntry` objektu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetSystemThreadId | Microsoft Docs
+title: IRemoteDebugApplicationThread::GetSystemThreadId | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0082382c5a9d6dc854ed1b7bc9f45b17041b8084
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3688ba15c61e4d2ff4c73844f9489115c9e66a7d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794787"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094728"
 ---
 # <a name="iremotedebugapplicationthreadgetsystemthreadid"></a>IRemoteDebugApplicationThread::GetSystemThreadId
-Vrátí identifikátor operačního systému závislé přidružené vlákno.  
+Vrátí identifikátor operačního systému – závislé přidružené vlákno.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetSystemThreadId(  
    DWORD*  dwThreadId  
 );  
@@ -38,10 +38,10 @@ HRESULT GetSystemThreadId(
   
 #### <a name="parameters"></a>Parametry  
  `dwThreadId`  
- [out] Operační systém – závislých identifikátor přidružený vlákno.  
+ [out] Operační systém – závislé na identifikátor přidružený k vláknu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT GetSystemThreadId(
  Hodnota `dwThreadId` nemusí být jedinečný v rámci počítače.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplicationthread – rozhraní](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread – rozhraní](../../winscript/reference/iremotedebugapplicationthread-interface.md)

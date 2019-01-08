@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe::evaluate – metoda | Microsoft Docs
+title: Ijsdebugframe::evaluate – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e826048e85456ca63e069de67701b1fc3e9f04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 574af7823add67a00fc8add922b5e352fa1b369c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794388"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091920"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate – metoda
-Vyhodnotí výraz v kontextu této rámce zásobníku.  
+Vyhodnocení výrazu v kontextu tohoto rámce zásobníku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Evaluate(  
    LPCOLESTR pExpressionText,  
    IJsDebugProperty **ppDebugProperty,  
@@ -38,10 +38,10 @@ HRESULT Evaluate(
   
 #### <a name="parameters"></a>Parametry  
  `pExpressionText`  
- [v] Výraz k vyhodnocení.  
+ [in] Výraz k vyhodnocení.  
   
  `ppDebugProperty`  
- [out] Objekt reprezentující prohlížeč vlastností.  
+ [out] Objekt reprezentující vlastnost prohlížeče.  
   
  `pError`  
  [out] Chybová zpráva, pokud dojde k chybě.  
@@ -49,10 +49,10 @@ HRESULT Evaluate(
 ## <a name="return-value"></a>Návratová hodnota  
   
 ## <a name="remarks"></a>Poznámky  
- Vrátí následující: S_OK: vyhodnocení úspěšné, * ppDebugProperty obsahuje výsledek vyhodnocení. S_FALSE: Vyhodnocení vyvolá chybu (nebo vyhodnocení operace není podporována), \*pError obsahuje chybovou zprávu.  
+ Vrátí následující: S_OK: Hodnocení úspěšné, * ppDebugProperty obsahuje výsledek hodnocení. S_FALSE: Hodnocení vyvolá chybu (nebo operace hodnocení není podporována) \*pError obsahuje chybovou zprávu.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugframe – metoda](../../winscript/reference/ijsdebugframe-interface.md)
+ [IJsDebugFrame – rozhraní](../../winscript/reference/ijsdebugframe-interface.md)

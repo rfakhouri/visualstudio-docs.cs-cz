@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:CanJITDebug | Microsoft Docs
+title: IDebugSessionProviderEx:CanJITDebug | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1dd2f9245f6691b2faaae75e064a299a22c59255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: edde03cbb72f090bf6e8432721866de06d7b439e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794214"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087461"
 ---
 # <a name="idebugsessionproviderexcanjitdebug"></a>IDebugSessionProviderEx:CanJITDebug
-Určuje, zda zadaný proces může být vyladěnou s laděním jenom v době.  
+Určuje, zda určený proces může být ladění pomocí ladění JIT.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CanJITDebug(  
    DWORD  pid  
 );  
@@ -36,10 +36,10 @@ HRESULT CanJITDebug(
   
 #### <a name="parameters"></a>Parametry  
  `pid`  
- [v] Identifikátor procesu pro proces chcete ladit.  
+ [in] Identifikátor procesu pro proces k ladění.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -48,4 +48,4 @@ HRESULT CanJITDebug(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugsessionproviderex – rozhraní](../../winscript/reference/idebugsessionproviderex-interface.md)
+ [IDebugSessionProviderEx – rozhraní](../../winscript/reference/idebugsessionproviderex-interface.md)

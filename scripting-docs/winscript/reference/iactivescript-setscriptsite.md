@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Microsoft Docs
+title: IActiveScript::SetScriptSite | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11fa9003abb03c42adcbf3a548bb5b90d763a344
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2a96732e904c7249dc5228ef414c3315012ec56
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793263"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097432"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Informuje o skriptovací stroje systému [iactivescriptsite –](../../winscript/reference/iactivescriptsite.md) rozhraní lokality od hostitele. Volat tuto metodu před všemi ostatními [IActiveScript –](../../winscript/reference/iactivescript.md) metody rozhraní se používá.  
+Informuje o tom skriptovacího stroje ze [iactivescriptsite –](../../winscript/reference/iactivescriptsite.md) lokality rozhraní, které jsou poskytovány tímto hostitelem. Volejte tuto metodu před všemi ostatními [IActiveScript –](../../winscript/reference/iactivescript.md) metody rozhraní se používá.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetScriptSite(  
     IActiveScriptSite *pScriptSite  // address of host script site  
 );  
@@ -38,7 +38,7 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Parametry  
  `pScriptSite`  
- [v] Adresa webu hostitele zadaný skript má být přidružena k této instanci skriptovacího stroje. Webu musí být jedinečně přiřazeny k této instanci skriptovací stroj; nemohou být sdíleny s další skriptovací stroje.  
+ [in] Adresa hostitele zadaný skript serveru chcete přidružit k této instanci skriptovací stroj. Lokality musí jednoznačně přiřazen k této instanci skriptovací stroj; nemůže být sdílen s další skriptovací moduly.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -46,10 +46,10 @@ HRESULT SetScriptSite(
 |Návratová hodnota|Význam|  
 |------------------|-------------|  
 |`S_OK`|Úspěch.|  
-|`E_FAIL`|Došlo k neurčené chybě; Skriptovací stroj se nepodařilo dokončit inicializace webu.|  
+|`E_FAIL`|Došlo k nespecifikované chybě; skriptovací modul se nepodařilo dokončit inicializace webu.|  
 |`E_INVALIDARG`|Argument byl neplatný.|  
 |`E_POINTER`|Byl zadán neplatný ukazatel.|  
-|`E_UNEXPECTED`|Nebyl očekáván volání (například lokality již byl nastaven).|  
+|`E_UNEXPECTED`|Volání nebylo očekáváno (například web již byl nastaven).|  
   
 ## <a name="see-also"></a>Viz také  
- [IActiveScript –](../../winscript/reference/iactivescript.md)
+ [IActiveScript](../../winscript/reference/iactivescript.md)

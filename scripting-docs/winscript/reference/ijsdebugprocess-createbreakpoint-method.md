@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugprocess::createbreakpoint – metoda | Microsoft Docs
+title: Ijsdebugprocess::createbreakpoint – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d734f32d092d341dbb1b02a5cc7a0c127223a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 661e584133f4ec3c4e571d157a63844c5b1145b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794589"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097562"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint – metoda
-Nastaví zarážce na pozici zadaný dokument.  
+Nastaví zarážku na pozici zadaného dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateBreakPoint(  
    UINT64 documentId,  
    DWORD characterOffset,  
@@ -40,19 +40,19 @@ HRESULT CreateBreakPoint(
   
 #### <a name="parameters"></a>Parametry  
  `documentId`  
- [v] Ukazatel na idebugdocumenttext –.  
+ [in] Ukazatel na IDebugDocumentText.  
   
  `characterOffset`  
- [v] Znak posun od začátku souboru.  
+ [in] Znak posun od začátku souboru.  
   
  `characterCount`  
- [v] Délka textu dokumentu v rámci kterého se mají vložit zarážku.  
+ [in] Délka textu dokumentu, ve kterém být vložena zarážka.  
   
  `isEnabled`  
- [v] Určuje, zda je povoleno zarážku.  
+ [in] Určuje, zda je povolena zarážka.  
   
  `ppDebugBreakPoint`  
- [out] Objekt reprezentující zarážek, který byl vytvořen.  
+ [out] Objekt představující zarážku, který byl vytvořen.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
@@ -60,4 +60,4 @@ HRESULT CreateBreakPoint(
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugprocess – rozhraní](../../winscript/reference/ijsdebugprocess-interface.md)
+ [IJsDebugProcess – rozhraní](../../winscript/reference/ijsdebugprocess-interface.md)

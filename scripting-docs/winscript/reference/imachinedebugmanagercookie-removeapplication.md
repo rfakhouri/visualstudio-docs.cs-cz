@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::RemoveApplication | Microsoft Docs
+title: IMachineDebugManagerCookie::RemoveApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe0849b2f580eac7759db36335823a737a198e55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9ecd3c8f5b5ebed8419e6e916334552a44646fe9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794769"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087253"
 ---
 # <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
 Odebere aplikaci ze spuštění seznam aplikací.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwDebugAppCookie,  
    DWORD  dwAppCookie  
@@ -39,20 +39,20 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parametry  
  `dwDebugAppCookie`  
- [v] Soubor cookie, který identifikuje ladění aplikace.  
+ [in] Soubor cookie, který identifikuje ladění aplikace.  
   
  `dwAppCookie`  
- [v] Soubor cookie, který získáte při aplikaci byl přidán do seznamu aplikací.  
+ [in] Soubor cookie k dispozici při přidání aplikace do seznamu aplikací.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda je volána správcem ladění procesu vždy, když `IProcessDebugManager::RemoveApplication` je volána.  
+ Tato metoda je volána metodou správce ladění procesu pokaždé, když `IProcessDebugManager::RemoveApplication` je volána.  
   
 ## <a name="see-also"></a>Viz také  
  [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   

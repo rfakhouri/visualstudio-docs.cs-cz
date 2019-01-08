@@ -1,5 +1,5 @@
 ---
-title: Profiler_heap_object_scope_list – struktura | Microsoft Docs
+title: Profiler_heap_object_scope_list – struktura | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f0972faee11e15bd5d0e9a219e439df49d9672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796443"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088566"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>PROFILER_HEAP_OBJECT_SCOPE_LIST – struktura
-Tato struktura je přidružen pouze objekty funkce. V seznamu obor představuje uzavření účtu pro funkci jako seznam obory, kde každý obor je objekt haldy s seznamem přidružené vlastnosti představující proměnné v každém daném oboru. V některých případech je k dispozici názvy objektů v oboru nebudou k dispozici a pouze jejich index do seznamu vlastností.  
+Tato struktura je přidružený jenom objekty funkce. Seznam oborů představuje uzavření pro funkci jako seznam oborů, kde každý obor je objekt haldy se seznamem přidružené vlastnosti, která představuje proměnné v každé daném oboru. V některých případech se názvy objektů v oboru nebudou k dispozici a jejich se budou indexovat jen do seznamu vlastností je k dispozici.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_ID scopes[];} PROFILER_HEAP_OBJECT_SCOPE_LIST;  
 ```  
   
@@ -32,5 +32,5 @@ typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(coun
   
 |Člen|Typ|Popis|  
 |------------|----------|-----------------|  
-|count|UINT|Počet oborů|  
-|scopes|[Profiler_heap_object_id – typ](../../winscript/reference/profiler-heap-object-id-type.md)|Pole obory.|
+|count|UINT|Počet rozsahů|  
+|scopes|[PROFILER_HEAP_OBJECT_ID – typ](../../winscript/reference/profiler-heap-object-id-type.md)|Celou řadu oborů.|

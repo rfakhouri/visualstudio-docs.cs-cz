@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Microsoft Docs
+title: IDebugApplicationNodeEvents::onAttach | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793941"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091257"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Zpracovává událost, což svědčí o tom, že objekt ladění aplikace uzlu se připojil k nadřazeného uzlu.  
+Zpracovává událost značící, že objekt uzlu ladění aplikace byl připojen k nadřazený uzel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -38,21 +38,21 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Parametry  
  `prddpParent`  
- [v] Ladění aplikace uzlu, který je nadřazený tohoto uzlu.  
+ [in] Ladění aplikace uzel, který je nadřazeného tohoto uzlu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda zpracovává událost, což svědčí o tom, že objekt ladění aplikace uzlu se připojil k nadřazeného uzlu.  
+ Tato metoda zpracovává událost značící, že objekt uzlu ladění aplikace byl připojen k nadřazený uzel.  
   
- Implementátory z `IDebugApplicationNode` rozhraní Vyvolejte tuto událost.  
+ Implementátorům `IDebugApplicationNode` rozhraní vyvolat tuto událost.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugapplicationnodeevents – rozhraní](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
- [Idebugapplicationnode – rozhraní](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode – rozhraní](../../winscript/reference/idebugapplicationnode-interface.md)

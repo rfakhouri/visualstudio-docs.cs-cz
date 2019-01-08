@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugbreakpoint – rozhraní | Microsoft Docs
+title: Ijsdebugbreakpoint – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ed749953aeffbadb450b2a21ef86ffb619eb6a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3c43d23d0ba89e6b85a3dd4da688fa89fed4dd99
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794649"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093844"
 ---
 # <a name="ijsdebugbreakpoint-interface"></a>IJsDebugBreakPoint – rozhraní
-Představuje zarážky.  
+Představuje zarážku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsDebugBreakPoint : public IUnknown;  
 ```  
   
@@ -34,11 +34,11 @@ IJsDebugBreakPoint : public IUnknown;
   
 |Název|Popis|  
 |----------|-----------------|  
-|[Ijsdebugbreakpoint::delete – metoda](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|Odstraní zarážku.|  
-|[Ijsdebugbreakpoint::Disable – metoda](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|Zakáže bod přerušení.|  
-|[Ijsdebugbreakpoint::enable – metoda](../../winscript/reference/ijsdebugbreakpoint-enable-method.md)|Umožňuje zarážku.|  
-|[Ijsdebugbreakpoint::getdocumentposition – metoda](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Vrátí pozici příkazu, kde byla vázána zarážku.|  
-|[Ijsdebugbreakpoint::IsEnabled – metoda](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|Určuje, zda je povoleno zarážku.|  
+|[IJsDebugBreakPoint::Delete – metoda](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|Odstraní zarážky.|  
+|[IJsDebugBreakPoint::Disable – metoda](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|Zakažte zarážky.|  
+|[IJsDebugBreakPoint::Enable – metoda](../../winscript/reference/ijsdebugbreakpoint-enable-method.md)|Povolí zarážku.|  
+|[IJsDebugBreakPoint::GetDocumentPosition – metoda](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Vrátí pozici prohlášení, kde byla zarážka vázána.|  
+|[IJsDebugBreakPoint::IsEnabled – metoda](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|Určuje, zda je povolena zarážka.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  

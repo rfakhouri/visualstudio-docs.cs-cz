@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateDocumentAttributes | Microsoft Docs
+title: IDebugDocumentTextEvents::onUpdateDocumentAttributes | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef9313f612d539e3068c2dd4bb20eb5d343fc53b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10a423e90733174cbc6feebae138e59145e01df3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794535"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087097"
 ---
 # <a name="idebugdocumenttexteventsonupdatedocumentattributes"></a>IDebugDocumentTextEvents::onUpdateDocumentAttributes
-Označuje, že dokument atributy změnit.  
+Označuje, že změnit atributy dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onUpdateDocumentAttributes(  
    TEXT_DOC_ATTR  textdocattr  
 );  
@@ -38,18 +38,18 @@ HRESULT onUpdateDocumentAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `textdocattr`  
- [v] Nové atributy dokumentu.  
+ [in] Nové atributy dokumentu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda určuje, že došlo ke změně atributy dokumentu.  
+ Tato metoda znamená, že se změnily atributy dokumentu.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenttextevents – rozhraní](../../winscript/reference/idebugdocumenttextevents-interface.md)   
- [Text_doc_attr – konstanty](../../winscript/reference/text-doc-attr-constants.md)
+ [TEXT_DOC_ATTR – konstanty](../../winscript/reference/text-doc-attr-constants.md)

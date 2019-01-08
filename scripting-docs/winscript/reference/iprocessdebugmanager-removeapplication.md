@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::RemoveApplication | Microsoft Docs
+title: IProcessDebugManager::RemoveApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8d95be6227f192596e174095744a4e0247e0c37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c163f756e426cab9ce36c1c8343b142bf76aafd6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794907"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086512"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
 Odebere aplikaci ze spuštění seznam aplikací.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwAppCookie  
 );  
@@ -38,10 +38,10 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parametry  
  `dwAppCookie`  
- [v] Soubor cookie poskytované `IProcessDebugManager::AddApplication` při aplikaci byl přidán do seznamu aplikací.  
+ [in] Soubor cookie poskytované `IProcessDebugManager::AddApplication` když aplikace byl přidán do seznamu aplikací.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT RemoveApplication(
   
 ## <a name="see-also"></a>Viz také  
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
- [Iprocessdebugmanager – rozhraní](../../winscript/reference/iprocessdebugmanager-interface.md)
+ [IProcessDebugManager – rozhraní](../../winscript/reference/iprocessdebugmanager-interface.md)

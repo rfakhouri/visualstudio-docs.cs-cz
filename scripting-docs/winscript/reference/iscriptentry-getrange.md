@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Microsoft Docs
+title: IScriptEntry::GetRange | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a4e053817ed4c503ebb41e2f3828da421e69ec7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794865"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088735"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Vrátí počáteční pozice a délka záznamu.  
+Vrátí počáteční pozice a délka položky.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -41,16 +41,16 @@ HRESULT GetRange(
  `pichMin`  
  [out] Pro `IScriptEntry` objekty, které určují blok skriptu, vrátí hodnotu 0.  
   
- Pro `IScriptEntry` objekty, které určují objekt funkce, vrátí počáteční pozici funkce v aktuálním bloku skriptu.  
+ Pro `IScriptEntry` objekty, které určují objektu funkce vrátí počáteční pozici funkce v aktuálním bloku skriptu.  
   
  Pro `IScriptScriptlet` objekty, vrátí hodnotu 0.  
   
  `pcch`  
  [out] Pro `IScriptEntry` objekty, které určují blok skriptu, vrátí délku textu.  
   
- Pro `IScriptEntry` objekty, které určují objekt funkce, vrátí délku v definici funkce.  
+ Pro `IScriptEntry` objekty, které určují funkce objektu, vrátí délku v definici funkce.  
   
- Pro `IScriptScriptlet` objekty, vrátí délku položky.  
+ Pro `IScriptScriptlet` objekty, vrátí délku vstupu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -62,4 +62,4 @@ HRESULT GetRange(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Iscriptentry – rozhraní](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry – rozhraní](../../winscript/reference/iscriptentry-interface.md)

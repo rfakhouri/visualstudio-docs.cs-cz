@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft Docs
+title: IDebugDocumentHelper::CreateDebugDocumentContext | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54d91c4df9d1e478d028e95e5cfc930d69355c54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d91a24a9255ff9ae558e9ff821b358331ef788b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794076"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097263"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
 Vytvoří nový kontext dokumentu ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateDebugDocumentContext(  
    ULONG                    iCharPos,  
    ULONG                    cChars,  
@@ -40,23 +40,23 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Parametry  
  `iCharPos`  
- [v] Umístění spuštění ladění obsah dokumentu.  
+ [in] Místo zahájení ladění obsah dokumentu.  
   
  `cChars`  
- [v] Počet znaků v kontextu.  
+ [in] Počet znaků v kontextu.  
   
  `ppddc`  
  [out] Nový kontext dokumentu ladění.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda umožňuje na hostiteli a poté vytvořit nový dokument kontext ladění.  
+ Tato metoda umožňuje hostiteli vytvoří nový kontext dokumentu ladění.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)

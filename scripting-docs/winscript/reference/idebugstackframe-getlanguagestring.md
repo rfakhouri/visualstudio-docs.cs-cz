@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString | Microsoft Docs
+title: IDebugStackFrame::GetLanguageString | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724ca98278eb8885d29aad1799f822ac57251597
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cc20c3ce2f5d198e167b83ffddb65cedc84402d7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794406"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087734"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-Vrátí kratší nebo dlouho textový popis jazyka.  
+Vrátí krátký nebo long textový popis jazyka.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetLanguageString(  
    BOOL   fLong,  
    BSTR*  pbstrLanguage  
@@ -39,20 +39,20 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>Parametry  
  `fLong`  
- [v] Příznak, kde `TRUE` vrátí dlouhý popis a `FALSE` vrátí krátký popis.  
+ [in] Příznak, kde `TRUE` vrátí dlouhý popis a `FALSE` vrátí krátký popis.  
   
  `pbstrLanguage`  
  [out] Popis jazyka.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Obvykle Pokud `fLong` je `FALSE`, tato metoda poskytuje jenom název jazyka, který přidružené rámce zásobníku. Když `fLong` je `TRUE`, tato metoda může zadejte popis, plnou verzi produktu.  
+ Obvykle Pokud `fLong` je `FALSE`, tato metoda poskytuje pouze název jazyk přidružený k rámce zásobníku. Když `fLong` je `TRUE`, tato metoda může také popis plné verze produktu.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugstackframe – rozhraní](../../winscript/reference/idebugstackframe-interface.md)
+ [IDebugStackFrame – rozhraní](../../winscript/reference/idebugstackframe-interface.md)

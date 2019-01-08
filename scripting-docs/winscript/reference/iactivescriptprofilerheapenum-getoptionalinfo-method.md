@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilerheapenum::getoptionalinfo – metoda | Microsoft Docs
+title: Iactivescriptprofilerheapenum::getoptionalinfo – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,33 +12,33 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6ad237f2feb173408e895984dab7e7455004d16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bcba1214a0c57e738dec41cdc4976f478802fedc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793497"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088800"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>IActiveScriptProfilerHeapEnum::GetOptionalInfo – metoda
-Získá volitelné informace na zadaný objekt (ze sady haldy objektů vrácených z [iactivescriptprofilercontrol3::enumheap – metoda](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
+Získá volitelné informace na zadaný objekt (ze sady vrácených z objektů haldy [iactivescriptprofilercontrol3::enumheap – metoda](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
   
- Neměli bez se vrácená paměť přiřazená vrácených objektů. Místo toho by měly volat [iactivescriptprofilerheapenum::freeobjectandoptionalinfo – metoda](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
+ Nesmí uvolnit vrácené paměť přiřazená vrácených objektů. Místo toho byste měli volat [iactivescriptprofilerheapenum::freeobjectandoptionalinfo – metoda](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULONG celt,    [out, size_is(celt)] PROFILER_HEAP_OBJECT_OPTIONAL_INFO* optionalInfo);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `heapObject`  
- [Profiler_heap_object – struktura](../../winscript/reference/profiler-heap-object-structure.md) pro které chcete vrátit informace.  
+ [Profiler_heap_object – struktura](../../winscript/reference/profiler-heap-object-structure.md) pro které se mají vracet informace.  
   
  `celt`  
- Počet [profiler_heap_object_optional_info – struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) struktury vrátit.  
+ Počet [profiler_heap_object_optional_info – struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) struktury vrácení.  
   
  `optionalInfo`  
  [out] Pole [profiler_heap_object_optional_info – struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md) struktury pro zadaný objekt.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- HRESULT.
+ Hodnota HRESULT.

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetFileName | Microsoft Docs
+title: IDebugDocumentHost::GetFileName | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909c431a389a2589d48b6228534b16675ea41383
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55b3518b6d73793df712ed9deccb5e27c320a9d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793992"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097146"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
-Vrací název dokumentu bez informace o cestě.  
+Vrátí název dokumentu bez informace o cestě.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetFileName(  
    BSTR*  pbstrShortName  
 );  
@@ -41,14 +41,14 @@ HRESULT GetFileName(
  [out] Řetězec, který obsahuje krátký název dokumentu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí krátký název dokumentu bez informace o cestě. Krátký název se obvykle používá v situacích, jako **uložit jako...**  dialogové okno.  
+ Tato metoda vrátí krátký název souboru bez cesty k němu. Krátký název se obvykle používá v situacích, jako **uložit jako...**  dialogové okno.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumenthost – rozhraní](../../winscript/reference/idebugdocumenthost-interface.md)
+ [IDebugDocumentHost – rozhraní](../../winscript/reference/idebugdocumenthost-interface.md)

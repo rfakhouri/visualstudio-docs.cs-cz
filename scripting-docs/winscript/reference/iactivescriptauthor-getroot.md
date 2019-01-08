@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetRoot | Microsoft Docs
+title: IActiveScriptAuthor::GetRoot | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb20a896d54c2b8e85c93014e6bd8ad3c906f55c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c19e15eb0c425be843c5487bd3128831c7578c31
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793257"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097081"
 ---
 # <a name="iactivescriptauthorgetroot"></a>IActiveScriptAuthor::GetRoot
-Vrátí `IScriptNode` kořen stromu skriptu vytvářením obsahu.  
+Vrátí `IScriptNode` kořen stromu skript autora.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetRoot(  
    IScriptNode        **ppsp  
 );  
@@ -38,7 +38,7 @@ HRESULT GetRoot(
   
 #### <a name="parameters"></a>Parametry  
  `ppsp`  
- [out] Proměnné, která přijímá ukazatel na adresu `IScriptNode` rozhraní kořenového uzlu.  
+ [out] Adresa proměnné, která přijímá ukazatel `IScriptNode` rozhraní kořenového uzlu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -51,4 +51,4 @@ HRESULT GetRoot(
   
 ## <a name="see-also"></a>Viz také  
  [Iactivescriptauthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)   
- [Iscriptnode – rozhraní](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode – rozhraní](../../winscript/reference/iscriptnode-interface.md)

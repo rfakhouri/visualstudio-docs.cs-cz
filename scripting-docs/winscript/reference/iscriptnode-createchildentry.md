@@ -1,5 +1,5 @@
 ---
-title: 'Iscriptnode –:: CreateChildEntry | Microsoft Docs'
+title: 'Iscriptnode –:: CreateChildEntry | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fcc010efe8fcf30a8f467dd94befff54bc5fac5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a8ca4ab504a9da2a63d5c70330d50e2c97e09817
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795060"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088228"
 ---
-# <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
-Přidá podřízený instanci `IScriptEntry`.  
+# <a name="iscriptnode-createchildentry"></a>Iscriptnode –:: CreateChildEntry
+Přidá instanci podřízeného `IScriptEntry`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateChildEntry(  
    ULONG              isn,  
    DWORD              dwCookie,  
@@ -41,28 +41,28 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>Parametry  
  `isn`  
- [v] Index podřízené v nadřazené.  
+ [in] Index pro podřízenou položku v nadřazeném prvku.  
   
  `dwCookie`  
- [v] Definované aplikací hodnotou použité pro přidružení ke objekt hostitele podřízené položky.  
+ [in] Definované aplikací hodnotu slouží k přidružení položce podřízené hostitelský objekt.  
   
  `pszDelimiter`  
- [v] Adresa koncového ze skriptu bloku oddělovač. Pro analýzu, hostitele většinou používá oddělovač (například dvě jednoduchých uvozovek), na zjištění konce bloku skriptu.  
+ [in] Adresa koncového ze skriptu bloku oddělovač. Pro analýzu, hostitel obvykle používá oddělovač (například dvěma jednoduchými uvozovkami), k zjištění konce bloku skriptu.  
   
- Oddělovač, který umožňuje vytváření modul zajistit předzpracování skript. Modul může například nahraďte jednoduché uvozovky dvě jednoduchých uvozovek pro použití jako oddělovač. Modul určuje, jak se používá jako oddělovač.  
+ Oddělovač umožňuje skriptu pro vytváření stroji poskytovat předběžného zpracování. Modul může například nahradit jednoduchou uvozovku s dvěma jednoduchými uvozovkami pro použití jako oddělovače. Modul zjistí, jak se používá jako oddělovač.  
   
  Pokud oddělovač neoznačí konec bloku skriptu nastavena na hodnotu NULL.  
   
  `ppse`  
- [out] Proměnné, která přijímá ukazatel na adresu `IScriptEntry` rozhraní podřízené instance.  
+ [out] Adresa proměnné, která přijímá ukazatel `IScriptEntry` rozhraní instance podřízené.  
   
- Pro `IScriptNode` objekty, které představují na webové stránce, tento parametr vrátí `IScriptEntry` instanci, která určuje blok skriptu.  
+ Pro `IScriptNode` vrátí objekty, které představují webové stránky, tento parametr `IScriptEntry` instanci, která určuje blok skriptu.  
   
- Pro `IScriptEntry` objekty, které představují blok skriptu, vrátí tento parametr `IScriptEntry` instance, který určuje objekt funkce.  
+ Pro `IScriptEntry` vrátí objekty, které představují blok skriptu, tento parametr `IScriptEntry` instance, který určuje objekt funkce.  
   
- Pro `IScriptEntry` objektu objekty, které představují funkci, tato metoda selže.  
+ Pro `IScriptEntry` objekty, které představují funkce objektu, tato metoda se nezdaří.  
   
- Pro `IScriptScriptlet` objekty, tato metoda selže.  
+ Pro `IScriptScriptlet` objekty, tato metoda se nezdaří.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -72,8 +72,8 @@ HRESULT CreateChildEntry(
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- `IScriptNode` Rozhraní představuje webovou stránku nebo jeho prvky. `IScriptEntry` Rozhraní (který je odvozen z `IScriptNode`) představuje blok skriptu nebo objekt funkce. `IScriptScriptlet` Rozhraní (který je odvozen z `IScriptEntry`) představuje obslužnou rutinu události.  
+ `IScriptNode` Rozhraní představuje webovou stránku nebo jeho elementů. `IScriptEntry` Rozhraní (který je odvozen z `IScriptNode`) představuje blok skriptu nebo objekt funkce. `IScriptScriptlet` Rozhraní (který je odvozen z `IScriptEntry`) představuje obslužnou rutinu události.  
   
 ## <a name="see-also"></a>Viz také  
  [Iscriptnode – rozhraní](../../winscript/reference/iscriptnode-interface.md)   
- [Iscriptentry – rozhraní](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry – rozhraní](../../winscript/reference/iscriptentry-interface.md)

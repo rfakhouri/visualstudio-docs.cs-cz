@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetDispID | Microsoft Docs
+title: IDispatchEx::GetDispID | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,20 +18,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93595cd2d0f88244866ab7363ecd68c6d8073b48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c466ec767be53d100b970314bf0d81d5dd9dfb20
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794868"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097536"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-Mapuje název jednoho člena na jeho odpovídající DISPID, který lze potom použít v následných volání `IDispatchEx::InvokeEx`.  
+Název jednoho člena se mapuje na jeho odpovídající identifikátor DISPID, který můžete použít v následných voláních na `IDispatchEx::InvokeEx`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
- HRESULT GetDispID(  
+```cpp
+HRESULT GetDispID(  
    BSTR bstrName,  
    DWORD grfdex,  
    DISPID *pid  
@@ -40,20 +40,20 @@ Mapuje název jednoho člena na jeho odpovídající DISPID, který lze potom po
   
 #### <a name="parameters"></a>Parametry  
  `bstrName`  
- Předaný název nejde mapovat.  
+ Předaný název má být namapována.  
   
  `grfdex`  
  Určuje možnosti pro získání identifikátor členu. To může být kombinací následujícího:  
   
 |Hodnota|Význam|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Požadavky, které vyhledání názvu provést způsobem malá a velká písmena. Může být ignorován objektem, který nepodporuje vyhledávání malá a velká písmena.|  
-|fdexNameEnsure|Požadavky, aby člen lze vytvořit, pokud ještě neexistuje. Nový člen by měl být vytvořen s hodnotou `VT_EMPTY`.|  
-|fdexNameImplicit|Označuje, že je volající hledání členem konkrétní název vybrané objekty v případě, že není explicitně zadán základní objekt.|  
-|fdexNameCaseInsensitive|Požadavky, které vyhledání názvu provést způsobem velká a malá písmena. Může být ignorován objektem, který nepodporuje vyhledávání bez rozlišování velikosti písmen.|  
+|fdexNameCaseSensitive|Požadavky, které vyhledávání názvů provést způsobem malá a velká písmena. Mohou být ignorovány objektem, který nepodporuje vyhledávání malá a velká písmena.|  
+|fdexNameEnsure|Požadavky, že člen vytvoří, pokud ještě neexistuje. Nový člen by měl být vytvořen s hodnotou `VT_EMPTY`.|  
+|fdexNameImplicit|Označuje, že je volající hledání členem konkrétní název objekty při základního objektu nebyl explicitně zadán.|  
+|fdexNameCaseInsensitive|Požadavky, které provést vyhledávání názvů písmen. Mohou být ignorovány objektem, který nepodporuje vyhledávání velká a malá písmena.|  
   
  `pid`  
- Ukazatel na přidělené volající umístění pro příjem DISPID výsledek. Pokud dojde k chybě, `pid` obsahuje DISPID_UNKNOWN.  
+ Ukazatel na volající – přidělené místo pro příjem DISPID výsledek. Pokud dojde k chybě, `pid` obsahuje DISPID_UNKNOWN.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -65,15 +65,15 @@ Mapuje název jednoho člena na jeho odpovídající DISPID, který lze potom po
 |`DISP_E_UNKNOWNNAME`|Název nebyl znám.|  
   
 ## <a name="remarks"></a>Poznámky  
- `GetDispID`můžete použít místo `GetIDsOfNames` získat DISPID je daný člen.  
+ `GetDispID` je možné místo `GetIDsOfNames` získat hodnota DISPID pro daného člena.  
   
- Protože `IDispatchEx` umožňuje přidání a odstranění členů sadu hodnoty dispID nezůstávat konstantní po dobu jeho existence objektu.  
+ Protože `IDispatchEx` umožňuje přidávání a odstraňování členů sadu hodnoty dispID není zůstal neměnný po dobu životnosti objektu.  
   
- Nepoužívané `riid` parametr v `IDispatch::GetIDsOfNames` byla odebrána.  
+ Nevyužité `riid` parametr `IDispatch::GetIDsOfNames` byla odebrána.  
   
 ## <a name="example"></a>Příklad  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   

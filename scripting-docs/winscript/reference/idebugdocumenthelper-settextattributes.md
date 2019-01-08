@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetTextAttributes | Microsoft Docs
+title: IDebugDocumentHelper::SetTextAttributes | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce837eda3a0d83a830e5d5e281b2d24cb932063a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef4ae1ccff730d6865e00174ec73e991245bd43
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794070"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096496"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-Nastaví atributy pro celou řadu text, přepsání dalších atributů v tomto textu.  
+Nastaví atributy na mnoha různých text, přepíše ostatní atributy v tomto textu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetTextAttributes(  
    ULONG              ulCharOffset,  
    ULONG              cChars,  
@@ -40,23 +40,23 @@ HRESULT SetTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `ulCharOffset`  
- [v] Umístění spuštění rozsah textu.  
+ [in] Umístění počáteční rozsah textu.  
   
  `cChars`  
- [v] Počet znaků v rozsahu.  
+ [in] Počet znaků v rozsahu.  
   
  `pstaTextAttr`  
- [v] Atributy textu zdroje pro rozsah textu.  
+ [in] Atributy textu zdroje pro rozsah textu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Jedná se o chybu volat `SetTextAttributes` na rozsah textu před přidáním tohoto textu do dokumentu. Volání `AddDBCSText`, `AddUnicodeText`, nebo `AddDeferredText` metody pro přidání textu do dokumentu.  
+ Jedná se o chybu volání `SetTextAttributes` na rozsah textu před tento text je přidán do dokumentu. Volání `AddDBCSText`, `AddUnicodeText`, nebo `AddDeferredText` metody pro přidání textu do dokumentu.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)   

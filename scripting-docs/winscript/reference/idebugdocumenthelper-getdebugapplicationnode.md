@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetDebugApplicationNode | Microsoft Docs
+title: IDebugDocumentHelper::GetDebugApplicationNode | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27d1fb09698cffa4826ab35b36e3ae315a12ba74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5af0326d4e77e6bb70e05be2609beea86cc294b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793965"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093597"
 ---
 # <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
-Vrátí uzlu ladění aplikace odpovídající do tohoto dokumentu.  
+Vrátí uzel ladění aplikace odpovídající do tohoto dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDebugApplicationNode(  
    IDebugApplicationNode**  ppdan  
 );  
@@ -38,17 +38,17 @@ HRESULT GetDebugApplicationNode(
   
 #### <a name="parameters"></a>Parametry  
  `ppdan`  
- [out] Ladění aplikace uzlu odpovídající do tohoto dokumentu.  
+ [out] K tomuto dokumentu odpovídající uzlu ladění aplikace.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Vrátí uzlu ladění aplikace odpovídající do tohoto dokumentu.  
+ Vrátí uzel aplikace ladění odpovídající do tohoto dokumentu.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)

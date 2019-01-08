@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition | Microsoft Docs
+title: IDebugDocumentText::GetLineOfPosition | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2512fa3b56a19ed7396c7a351c8d8f8323fff6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c916f0a76021afea82b4021ed1ce7d411317807
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794139"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087708"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-Vrátí číslo řádku a volitelně odsazení znaku v rámci řádku, která odpovídá dané pozice znaku.  
+Vrátí číslo řádku a volitelně odsazení znaku v rámci řádku, který odpovídá dané pozici znaku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetLineOfPosition(  
    ULONG   cCharacterPosition,  
    ULONG*  pcLineNumber,  
@@ -40,23 +40,23 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [v] Spusťte umístění pozice rozsahu znaků.  
+ [in] Počáteční umístění pozice rozsahu znaků.  
   
  `pcLineNumber`  
  [out] Číslo řádku rozsahu.  
   
  `pcCharacterOffsetInLine`  
- [ve out] Odsazení znaku rozsahu v rámci řádku `pcLineNumber`. Pokud tento parametr je `NULL`, metoda nevrací hodnotu.  
+ [out v] Odsazení znaku v rozsahu řádku `pcLineNumber`. Pokud je tento parametr `NULL`, metoda nevrací hodnotu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí číslo řádku a volitelně odsazení znaku v rámci řádku, která odpovídá dané pozice znaku.  
+ Tato metoda vrátí číslo řádku a volitelně odsazení znaku v rámci řádku, který odpovídá dané pozici znaku.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumenttext – rozhraní](../../winscript/reference/idebugdocumenttext-interface.md)
+ [IDebugDocumentText – rozhraní](../../winscript/reference/idebugdocumenttext-interface.md)

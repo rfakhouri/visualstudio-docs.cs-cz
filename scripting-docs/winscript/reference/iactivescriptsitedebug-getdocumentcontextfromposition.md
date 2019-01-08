@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetDocumentContextFromPosition | Microsoft Docs
+title: IActiveScriptSiteDebug::GetDocumentContextFromPosition | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25ce03a124f246443afd0f5a8540a93e7d474f9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1bcc7469e02ba380ebd6839e9fe55031e52ecd32
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793530"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086981"
 ---
 # <a name="iactivescriptsitedebuggetdocumentcontextfromposition"></a>IActiveScriptSiteDebug::GetDocumentContextFromPosition
-Používá stroj jazyk delegovat `IDebugCodeContext::GetSourceContext`.  
+Použít modul jazyka delegovat `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentContextFromPosition(  
    DWORD_PTR                dwSourceContext,  
    ULONG                    uCharacterOffset,  
@@ -41,26 +41,26 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parametry  
  `dwSourceContext`  
- [v] Zdrojový obsah v souladu s `ParseScriptText` nebo `AddScriptlet`.  
+ [in] Zdrojový obsah poskytnete `ParseScriptText` nebo `AddScriptlet`.  
   
  `uCharacterOffset`  
- [v] Znak posunuto vzhledem ke spuštění bloku skriptu nebo skriptlet.  
+ [in] Znak posun vzhledem k začátku bloku skriptu nebo skriptletu.  
   
  `uNumChars`  
- [v] Počet znaků v tomto kontextu.  
+ [in] Počet znaků v tomto kontextu.  
   
  `ppsc`  
- [out] Kontext dokumentu odpovídající tento rozsah pozice znaku.  
+ [out] Kontext dokumentu, který odpovídá této pozici znaku rozsahu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Moduly jazyka pomocí této metody můžete delegovat `IDebugCodeContext::GetSourceContext`.  
+ Jazyk moduly pomocí této metody můžete delegovat `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptsitedebug – rozhraní](../../winscript/reference/iactivescriptsitedebug-interface.md)
+ [IActiveScriptSiteDebug – rozhraní](../../winscript/reference/iactivescriptsitedebug-interface.md)

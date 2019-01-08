@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetCookie | Microsoft Docs
+title: IScriptNode::GetCookie | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e133afbac4b75a5b9c24ee33148edd1114b33452
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796257"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094234"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
-Vrátí hodnotu definované aplikací, který se používá pro přidružení skriptlet objekt hostitele.  
+Vrátí hodnotu, která slouží k přidružení skriptletu hostitelský objekt definovaného aplikací.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetCookie(  
    DWORD              *pdwCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT GetCookie(
   
 #### <a name="parameters"></a>Parametry  
  `pdwCookie`  
- [out] Pro `IScriptEntry` objektu, vrátí hodnotu souboru cookie definované aplikací.  
+ [out] Pro `IScriptEntry` objektu, vrátí hodnotu souboru cookie definovaného aplikací.  
   
  Pro `IScriptNode` objekt, který představuje webovou stránku, vrátí hodnotu 0.  
   
@@ -52,4 +52,4 @@ HRESULT GetCookie(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Iscriptnode – rozhraní](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode – rozhraní](../../winscript/reference/iscriptnode-interface.md)

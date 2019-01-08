@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StopProfiling | Microsoft Docs
+title: IActiveScriptProfilerControl::StopProfiling | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,34 +16,34 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63d837b0f7a59b1e3efc832c4d98cb7dcab5447c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b65c536c303a9bc0da7d0e29992315c05a61de52
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793428"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092479"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
-Zastaví profilace na skriptovacího stroje. Tato metoda volá [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) profileru objektu a pak ho.  
+Zastaví profilaci na skriptovacím stroji. Tato metoda volá [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) na objekt profileru a pak ho uvolní.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT StopProfiling(  
     [in] HRESULT hrShutdownReason);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `hrShutdownReason`  
- [v] HRESULT mají být předány jako parametr, který se [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) metodu objektu profileru.  
+ [in] Hodnota HRESULT se mají předat jako parametr [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) metodu objektu profileru.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí HRESULT. Možné hodnoty jsou následující:  
+ Vrátí hodnotu HRESULT. Možné hodnoty jsou následující:  
   
 |Návratová hodnota|Význam|  
 |------------------|-------------|  
 |`S_OK`|Metoda byla úspěšná.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profilace není povoleno.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profilace není povolená.|  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptprofilercontrol – rozhraní](../../winscript/reference/iactivescriptprofilercontrol-interface.md)
+ [IActiveScriptProfilerControl – rozhraní](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

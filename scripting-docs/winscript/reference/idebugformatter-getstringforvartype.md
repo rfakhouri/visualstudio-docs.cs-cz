@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVarType | Microsoft Docs
+title: IDebugFormatter::GetStringForVarType | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e056fa2ef9613c1af776840d1dae61078e26f83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06c4833e2d9a88b63a80b2ee9437dc5547579380
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794322"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087539"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
-Vrátí řetězec, který představuje zadaná hodnota VARTYPE.  
+Vrátí řetězec, který představuje dané hodnota VARTYPE.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetStringForVarType(  
    VARTYPE    vt,  
    TYPEDESC*  ptdescArrayType,  
@@ -40,23 +40,23 @@ HRESULT GetStringForVarType(
   
 #### <a name="parameters"></a>Parametry  
  `vt`  
- [v] VARTYPE představují jako řetězec.  
+ [in] VARTYPE k reprezentaci jako řetězec.  
   
  `ptdescArrayType`  
- [v] Pole struktur, které popisuje typy.  
+ [in] Pole struktur, které popisují typy.  
   
  `pbstr`  
  [out] Řetězec představující `vt`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Metoda vrátí řetězec, který představuje zadaná hodnota VARTYPE.  
+ Metoda vrátí řetězec, který představuje dané hodnota VARTYPE.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugformatter – rozhraní](../../winscript/reference/idebugformatter-interface.md)
+ [IDebugFormatter – rozhraní](../../winscript/reference/idebugformatter-interface.md)

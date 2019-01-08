@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Microsoft Docs
+title: IDispatchEx::GetMemberProperties | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d216bb7b21c8895337b9925007637c00d0deb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 51e01ef3fa6d5e0611875f6402b79e53f8c83cac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795051"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088189"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Načte vlastnosti člena.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetMemberProperties(  
    DISPID id,  
    DWORD grfdexFetch,  
@@ -40,37 +40,37 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Parametry  
  `id`  
- Identifikuje člena. Používá `GetDispID` nebo `GetNextDispID` získat identifikátor odesílání.  
+ Identifikuje člena. Používá `GetDispID` nebo `GetNextDispID` získat identifikátor odeslání.  
   
  `grfdexFetch`  
- Určuje vlastnosti, které chcete načíst. To může být kombinací hodnoty uvedené v `pgrfdex` nebo kombinaci těchto hodnot:  
+ Určuje vlastnosti, které chcete načíst. To může být kombinací hodnot uvedených v části `pgrfdex` a/nebo kombinaci těchto hodnot:  
   
 |Hodnota|Význam|  
 |-----------|-------------|  
 |grfdexPropCanAll|Kombinuje fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct a fdexPropCanSourceEvents.|  
 |grfdexPropCannotAll|Kombinuje fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct a fdexPropCannotSourceEvents.|  
 |grfdexPropExtraAll|Kombinuje fdexPropNoSideEffects a fdexPropDynamicType.|  
-|grfdexPropAll|Kombinuje grfdexPropCanAll, grfdexPropCannotAll a grfdexPropExtraAll.|  
+|grfdexPropAll|Kombinuje grfdexPropCanAll grfdexPropCannotAll a grfdexPropExtraAll.|  
   
  `pgrfdex`  
- Adresa `DWORD` která přijme požadované vlastnosti. To může být kombinací následujícího:  
+ Adresa `DWORD` , která obdrží požadované vlastnosti. To může být kombinací následujícího:  
   
 |Hodnota|Význam|  
 |-----------|-------------|  
-|fdexPropCanGet|Člen je možné získat pomocí DISPATCH_PROPERTYGET.|  
-|fdexPropCannotGet|Člena nelze získat pomocí DISPATCH_PROPERTYGET.|  
-|fdexPropCanPut|Člen se dá nastavit pomocí DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|Člena nelze nastavit pomocí DISPATCH_PROPERTYPUT.|  
-|fdexPropCanPutRef|Člen se dá nastavit pomocí DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|Člena nelze nastavit pomocí DISPATCH_PROPERTYPUTREF.|  
-|fdexPropNoSideEffects|Člen nemá žádné vedlejší účinky. Například ladicí program může bezpečně get/set nebo volání tento člen beze změny stavu laděné skriptu.|  
-|fdexPropDynamicType|Člen je dynamická a můžete změnit v průběhu životnosti objektu.|  
-|fdexPropCanCall|Člen je možné volat jako metodu pomocí DISPATCH_METHOD.|  
-|fdexPropCannotCall|Člena nelze volat jako metodu pomocí DISPATCH_METHOD.|  
-|fdexPropCanConstruct|Člen je možné volat jako konstruktor pomocí DISPATCH_CONSTRUCT.|  
-|fdexPropCannotConstruct|Člena nelze volat jako konstruktor pomocí DISPATCH_CONSTRUCT.|  
+|fdexPropCanGet|Člen nejde získat pomocí DISPATCH_PROPERTYGET.|  
+|fdexPropCannotGet|Člen nejde zjistit pomocí DISPATCH_PROPERTYGET.|  
+|fdexPropCanPut|Člen můžete nastavit pomocí DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|Člen nejde nastavit pomocí DISPATCH_PROPERTYPUT.|  
+|fdexPropCanPutRef|Člen můžete nastavit pomocí DISPATCH_PROPERTYPUTREF.|  
+|fdexPropCannotPutRef|Člen nejde nastavit pomocí DISPATCH_PROPERTYPUTREF.|  
+|fdexPropNoSideEffects|Člen nemá žádné vedlejší účinky. Například ladicí program může bezpečně get/set/volání tohoto členu beze změny stavu skriptu, který se právě ladí.|  
+|fdexPropDynamicType|Člen je dynamický a můžete změnit po celou dobu životnosti objektu.|  
+|fdexPropCanCall|Člen lze volat jako metodu pomocí DISPATCH_METHOD.|  
+|fdexPropCannotCall|Člen nejde volat jako metodu pomocí DISPATCH_METHOD.|  
+|fdexPropCanConstruct|Člen lze volat jako konstruktor pomocí DISPATCH_CONSTRUCT.|  
+|fdexPropCannotConstruct|Člen nejde volat jako konstruktor pomocí DISPATCH_CONSTRUCT.|  
 |fdexPropCanSourceEvents|Člen můžete aktivovat události.|  
-|fdexPropCannotSourceEvents|Člena nelze aktivovat události.|  
+|fdexPropCannotSourceEvents|Člen nejde aktivovat události.|  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -82,7 +82,7 @@ HRESULT GetMemberProperties(
   
 ## <a name="example"></a>Příklad  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   

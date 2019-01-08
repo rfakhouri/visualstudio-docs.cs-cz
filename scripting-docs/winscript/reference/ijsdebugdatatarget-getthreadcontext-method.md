@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::getthreadcontext – metoda | Microsoft Docs
+title: Ijsdebugdatatarget::getthreadcontext – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e2f858c66eda2ad09b04d7beab776c793b6f195
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 50e2bdb7b8720549aac5e5b3c4cebffc4b7ae892
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794607"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090060"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>IJsDebugDataTarget::GetThreadContext – metoda
-Načte kontext pro danou přístup z více vláken.  
+Načte kontext pro uvedená vlákna.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetThreadContext(  
    DWORD threadId,  
    ULONG32 contextFlags,  
@@ -39,16 +39,16 @@ HRESULT GetThreadContext(
   
 #### <a name="parameters"></a>Parametry  
  `threadId`  
- [v] Přístup z více vláken spuštěných v procesu cíl.  
+ [in] Vlákno spuštěné v cílovém procesu.  
   
  `contextFlags`  
- [v] Určuje příznaky kontextu. Toto je stejné jako pole ContextFlags kontextu (pro další informace naleznete v souboru winnt.h, vyhledejte CONTEXT_ALL).  
+ [in] Určuje příznaky kontextu. To je stejné jako pole ContextFlags kontextu (pro další informace viz soubor winnt.h, hledejte možnost CONTEXT_ALL).  
   
  `contextSize`  
- [v] Velikost vyrovnávací paměti určeného pContext.  
+ [in] Velikost vyrovnávací paměti určená parametrem pContext.  
   
  `pContext`  
- [out] Obdrží specifické pro platformu kontextu struktura do určeného pContext vyrovnávací paměti.  
+ [out] Do vyrovnávací paměti určená parametrem pContext přijme strukturu KONTEXT specifickou pro platformu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
@@ -56,4 +56,4 @@ HRESULT GetThreadContext(
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugdatatarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)

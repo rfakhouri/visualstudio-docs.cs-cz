@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateApplication | Microsoft Docs
+title: IProcessDebugManager::CreateApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a051462f32acae238ca5843e283fe6001ec43fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f182dd92d181067f930f415ec9332df2658c3ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794916"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088631"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
-Vytvoří nový objekt ladění aplikace pro tuto aplikaci.  
+Vytvoří nový objekt ladění aplikací pro tuto aplikaci.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateApplication(  
    IDebugApplication**  ppda  
 );  
@@ -41,14 +41,14 @@ HRESULT CreateApplication(
  [out] Objekt ladění aplikace pro tuto aplikaci.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Objekt vytvořený touto metodou nemá žádný název a není přidáno do spuštění seznam aplikací. Použití `IProcessDebugManager::AddApplication` přidání ladění aplikace do seznamu aplikací.  
+ Objekt vytvořený pomocí této metody nemá žádný název a není přidán do běhu seznamu aplikací. Použití `IProcessDebugManager::AddApplication` přidání ladění aplikace do seznamu aplikací.  
   
 ## <a name="see-also"></a>Viz také  
  [Iprocessdebugmanager – rozhraní](../../winscript/reference/iprocessdebugmanager-interface.md)   

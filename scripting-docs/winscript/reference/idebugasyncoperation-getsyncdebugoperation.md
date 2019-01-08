@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetSyncDebugOperation | Microsoft Docs
+title: IDebugAsyncOperation::GetSyncDebugOperation | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae53dde2b7e48a4bf67cbd7aa5d70904c57d90f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b66eee068bfffcc726bff60e5e469f9d7254949
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793815"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094897"
 ---
 # <a name="idebugasyncoperationgetsyncdebugoperation"></a>IDebugAsyncOperation::GetSyncDebugOperation
-Vrátí synchronní ladění operaci přidružené k tomuto objektu.  
+Vrátí synchronní ladění operace spojené s tímto objektem.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetSyncDebugOperation(  
    IDebugSyncOperation**  ppsdo  
 );  
@@ -38,17 +38,17 @@ HRESULT GetSyncDebugOperation(
   
 #### <a name="parameters"></a>Parametry  
  `ppsdo`  
- [out] Operace synchronní ladění přidružené k tomuto objektu.  
+ [out] Synchronní ladění operace spojené s tímto objektem.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí synchronní ladění operaci přidružené k tomuto objektu.  
+ Tato metoda vrátí synchronní ladění operace spojené s tímto objektem.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugasyncoperation – rozhraní](../../winscript/reference/idebugasyncoperation-interface.md)
+ [IDebugAsyncOperation – rozhraní](../../winscript/reference/idebugasyncoperation-interface.md)

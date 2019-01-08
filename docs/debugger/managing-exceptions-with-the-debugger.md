@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 408a21ef7794381d55c8ab416aee3ed104542aa6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968323"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094809"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Správa výjimek pomocí ladicího programu v sadě Visual Studio
 
@@ -216,7 +216,7 @@ Přidat podmíněné výjimky:
 
    ![Dodatečné podmínky pro výjimku](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Pro každý řádek podmínku, zadejte název modulu a změny seznamu operátor porovnání k **rovná** nebo **nerovná**. Můžete zadat zástupné znaky (**\\***) v názvu k určení více než jeden modul.
+3. Pro každý řádek podmínku, zadejte název modulu a změny seznamu operátor porovnání k **rovná** nebo **nerovná**. Můžete zadat zástupné znaky (**\\\***) v názvu k určení více než jeden modul.
 
 4. Pokud je potřeba odstranit podmínky, zvolte **X** na konci řádku podmínku.
 

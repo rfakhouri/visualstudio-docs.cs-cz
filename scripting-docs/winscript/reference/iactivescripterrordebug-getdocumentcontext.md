@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetDocumentContext | Microsoft Docs
+title: IActiveScriptErrorDebug::GetDocumentContext | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1342465ed306f43d07248f8e3c776e9e9af2c774
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 308ee38b6b4e2e63d113934dd535fa04ec576c2e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793350"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094221"
 ---
 # <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
 Poskytuje kontext dokumentu pro tuto chybu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppssc  
 );  
@@ -41,14 +41,14 @@ HRESULT GetDocumentContext(
  [out] Kontext dokumentu pro tuto chybu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pozice znaku rozsahu kontextu dokumentu by měly obsahovat všechny znaky odpovídající chyba.  
+ Pozice znaku rozsah kontext dokumentu by měl obsahovat všechny znaky odpovídající chyba.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescripterrordebug – rozhraní](../../winscript/reference/iactivescripterrordebug-interface.md)
+ [IActiveScriptErrorDebug – rozhraní](../../winscript/reference/iactivescripterrordebug-interface.md)

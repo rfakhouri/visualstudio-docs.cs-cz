@@ -1,5 +1,5 @@
 ---
-title: Ijsdebug::openvirtualprocess – metoda | Microsoft Docs
+title: Ijsdebug::openvirtualprocess – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5acb137337e46a6e84f7d68c9330a3ca847f2e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: daa5414153ee55a431294afaf7b167ee91839bfc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794361"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093987"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess – metoda
-Metoda Factory používaná k vytvoření nového objektu virtuálního procesu.  
+Metody výroby použité k vytvoření nového objektu virtuálního procesu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
- HRESULT OpenVirtualProcess(  
+```cpp
+HRESULT OpenVirtualProcess(  
    DWORD processId,  
    UINT64 runtimeJsBaseAddress,  
    IJsDebugDataTarget *pDataTarget,  
@@ -39,13 +39,13 @@ Metoda Factory používaná k vytvoření nového objektu virtuálního procesu.
   
 #### <a name="parameters"></a>Parametry  
  `processId`  
- [v] Id procesu připojit ladicí program na.  
+ [in] Id procesu připojit ladicí program.  
   
  `runtimeJsBaseAddress`  
- [v] Základní adresa, kdy prostředí JavaScript runtime načetl do tento cílový proces.  
+ [in] Základní adresa, na které modulu runtime jazyka JavaScript načítal do cílového procesu.  
   
  `pDataTarget`  
- [v] Ladicí program zadaný rozhraní pro dotaz na stav procesu.  
+ [in] Ladicí program zadané rozhraní pro dotaz na stav procesu.  
   
  `ppProcess`  
  [out] Nový objekt procesu ladění  
@@ -53,10 +53,10 @@ Metoda Factory používaná k vytvoření nového objektu virtuálního procesu.
 ## <a name="return-value"></a>Návratová hodnota  
   
 ## <a name="remarks"></a>Poznámky  
- Vrátí E_JsDEBUG_MISMATCHED_RUNTIME Pokud Jscript9diag a Jscript9 se neshodují.  
+ Vrátí E_JsDEBUG_MISMATCHED_RUNTIME, pokud Jscript9diag a Jscript9 se neshodují.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebug – rozhraní](../../winscript/reference/ijsdebug-interface.md)
+ [IJsDebug – rozhraní](../../winscript/reference/ijsdebug-interface.md)

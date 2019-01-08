@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::InterruptScriptThread | Microsoft Docs
+title: IActiveScript::InterruptScriptThread | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad717ee950dda4f0f0d7a14292f0f5f150ab4973
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d20847245e25ec6227bb043df3190a6db5f095d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792081"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088930"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
-Přerušuje provádění spuštěných vláken skriptu (jímky událostí, okamžité spuštění nebo volání makro). Tato metoda slouží k ukončení skript, který je zablokované (například v nekonečné smyčce). Může být volána z vláken není základní bez výsledkem není základní popisku na objekty hostitele nebo na [iactivescriptsite –](../../winscript/reference/iactivescriptsite.md) metoda.  
+Přeruší provádění spuštěné vlákno skriptu (jímky událostí, okamžité spuštění nebo volání makra). Tato metoda slouží k ukončení skript, který se zasekne (například v nekonečné smyčce). Může být volána z vláken znaky bez výsledkem znaky popisek hostitele objektů nebo [iactivescriptsite –](../../winscript/reference/iactivescriptsite.md) metody.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT InterruptScriptThread(  
     SCRIPTTHREADID   stidThread,  // identifier of thread  
     const EXCEPINFO *pexcepinfo,  // receives error information  
@@ -40,24 +40,24 @@ HRESULT InterruptScriptThread(
   
 #### <a name="parameters"></a>Parametry  
  `stidThread`  
- [v] Identifikátor vlákna na přerušení, nebo jeden z následujících hodnot identifikátoru speciální vláken:  
+ [in] Identifikátor vlákna k přerušení nebo jednu z následujících hodnot identifikátoru speciální vlákna:  
   
 |Hodnota|Význam|  
 |-----------|-------------|  
-|SCRIPTTHREADID_ALL|Všechna vlákna. Přerušení, které se použijí na všechny metody skriptu právě probíhá. Všimněte si, že pokud volající vyžaduje odpojení skript, další skriptované událost způsobí, že kód skriptu znovu spustit při volání [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) metoda s SCRIPTSTATE_DISCONNECTED nebo Nastaven příznak SCRIPTSTATE_INITIALIZED.|  
-|SCRIPTTHREADID_BASE|Základní podprocesu. To znamená, že byla vytvořena instance vláken, ve kterém skriptování modul.|  
-|SCRIPTTHREADID_CURRENT|Aktuálně prováděné vlákno.|  
+|SCRIPTTHREADID_ALL|Všechna vlákna. Přerušení platí pro všechny metody skriptů právě probíhá. Všimněte si, že pokud volající vyžaduje skript odpojeny, další skriptované událost způsobí, že kód skriptu znovu spustit pomocí volání [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) metodou SCRIPTSTATE_DISCONNECTED nebo SCRIPTSTATE_INITIALIZED příznak nastaven.|  
+|SCRIPTTHREADID_BASE|Základní podprocesu. To znamená, že byla vytvořena instance vláken, ve kterém skriptovací stroje.|  
+|SCRIPTTHREADID_CURRENT|Aktuálně spuštěné vlákno.|  
   
  `pexcepinfo`  
- [v] Adresa `EXCEPINFO` struktura obsahující informace o chybě, která by měla být oznámeny přerušených skriptu.  
+ [in] Adresa `EXCEPINFO` struktura obsahující informace o chybě, která by se měly hlásit přerušené skriptu.  
   
  `dwFlags`  
- [v] Možnost příznaky, které jsou přidružené k přerušení. Může být jedna z těchto hodnot:  
+ [in] Možnost příznaky, které jsou přidružené k přerušení. Může být jedna z těchto hodnot:  
   
 |Hodnota|Význam|  
 |-----------|-------------|  
-|SCRIPTINTERRUPT_DEBUG|Pokud podporován, zadejte skriptovací stroj ladicí program k aktuálnímu bodu provádění skriptu.|  
-|SCRIPTINTERRUPT_RAISEEXCEPTION|Pokud podporovaná jazyk skriptovací stroje, umožní skript ošetření výjimky. Jinak metoda skript byl přerušen a kód chyby je vrácen volajícímu; To znamená, události zdroje nebo makro původce.|  
+|SCRIPTINTERRUPT_DEBUG|Pokud se podporuje, zadejte skriptovací stroj ladicímu programu na aktuální bod provádění skriptu.|  
+|SCRIPTINTERRUPT_RAISEEXCEPTION|Pokud podporovaná skriptovacího jazyka, dejte skript zpracování výjimky. V opačném případě metoda skript byl přerušen a vrácený kód chyby volajícímu; To znamená události zdroje nebo makro původce.|  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -67,7 +67,7 @@ HRESULT InterruptScriptThread(
 |`S_OK`|Úspěch.|  
 |`E_INVALIDARG`|Argument byl neplatný.|  
 |`E_POINTER`|Byl zadán neplatný ukazatel.|  
-|`E_UNEXPECTED`|Nebyl očekáván volání (například skriptovací stroj ještě byla načtena nebo inicializovat).|  
+|`E_UNEXPECTED`|Volání nebylo očekáváno (například skriptovací stroj má ještě nebyly načteny nebo inicializován).|  
   
 ## <a name="see-also"></a>Viz také  
- [IActiveScript –](../../winscript/reference/iactivescript.md)
+ [IActiveScript](../../winscript/reference/iactivescript.md)

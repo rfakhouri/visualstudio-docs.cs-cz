@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptSite | Microsoft Docs
+title: IActiveScript::GetScriptSite | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 961483d45c72018bc216306d6c1aba0400a367ad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85b7d94ccb9e2589b10bf705721fc289df9638a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791619"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094156"
 ---
 # <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
-Načte objekt lokality, který je přidružený modul Windows Script.  
+Načte objekt lokality přidružený modul skriptu Windows.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetScriptSite(  
     REFIID iid,           // interface identifier  
     void **ppvSiteObject  // address of host site interface  
@@ -39,10 +39,10 @@ HRESULT GetScriptSite(
   
 #### <a name="parameters"></a>Parametry  
  `iid`  
- [v] Identifikátor požadované rozhraní.  
+ [in] Identifikátor požadované rozhraní.  
   
  `ppvSiteObject`  
- [out] Adresa umístění, které obdrží rozhraní ukazatel na objekt lokality hostitele.  
+ [out] Adresa umístění, která přijímá ukazatel rozhraní na objekt sítě hostiteli.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -56,4 +56,4 @@ HRESULT GetScriptSite(
 |`S_FALSE`|Žádná lokalita byla nastavena; `ppvSiteObject` parametr je nastaven na `NULL`.|  
   
 ## <a name="see-also"></a>Viz také  
- [IActiveScript –](../../winscript/reference/iactivescript.md)
+ [IActiveScript](../../winscript/reference/iactivescript.md)

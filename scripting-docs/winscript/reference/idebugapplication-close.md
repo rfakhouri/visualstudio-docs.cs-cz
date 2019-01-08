@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::Close | Microsoft Docs
+title: IDebugApplication::Close | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,36 +18,36 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a17301842cefac7c7f257a4bc0e437670e28064
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a861e2cbdfedc80747e9390316c47da43b71656
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793803"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087409"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-Způsobí, že tuto aplikaci chcete uvolnit všechny odkazy a zadejte neaktivním stavu.  
+Způsobí, že tato aplikace uvolnit všechny odkazy a zadejte neaktivním stavu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
 #### <a name="parameters"></a>Parametry  
- Tato metoda nepřijímá žádné parametry.  
+ Tato metoda nemá žádné parametry.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Vlastník aplikace obvykle volá tuto metodu při ukončení aplikace.  
+ Obvykle vlastník aplikace volá tuto metodu při ukončení aplikace.  
   
- Způsobí, že tato metoda `IApplicationDebugger::onClose` k volání.  
+ Tato metoda způsobí, že `IApplicationDebugger::onClose` volat.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)   

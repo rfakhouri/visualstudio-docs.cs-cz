@@ -1,5 +1,5 @@
 ---
-title: Struktura DebugStackFrameDescriptor | Microsoft Docs
+title: Debugstackframedescriptor – struktura | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 346f039ca96f2160d7ac28686e542b3d88a91dfb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c50c717cad626f4caf634c6a83b2af7213b78f83
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791850"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088475"
 ---
 # <a name="debugstackframedescriptor-structure"></a>Struktura DebugStackFrameDescriptor
 Vytváří výčet rámců zásobníku a slučuje výstup z několika enumerátorů ve stejném vláknu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef struct tagDebugStackFrameDescriptor {  
    IDebugStackFrame *pdsf;  
    DWORD_PTR        dwMin;  
@@ -42,22 +42,22 @@ typedef struct tagDebugStackFrameDescriptor {
   
 ## <a name="members"></a>Členové  
  `pdsf`  
- Objekt rámce zásobníku.  
+ Orámovat objekt zásobníku.  
   
  `dwMin`  
- Reprezentace závislé na počítači nižší rozsah fyzické adresy přidružené k této rámce zásobníku.  
+ Vyjádření závislé na počítači nižší řadu fyzické adresy přidružené k tento rámec zásobníku.  
   
  `dwLim`  
- Reprezentace závislé na počítač horní hranice fyzické adresy přidružené k této rámce zásobníku.  
+ Závislé na počítači reprezentuje horní hranice fyzických adres spojených s Tento rámec zásobníku.  
   
  `fFinal`  
- Příznak, který indikuje, že rámečku je zpracovávána.  
+ Příznak, který označuje, že rámec je právě zpracovává.  
   
  `punkFinal`  
- Pokud není tento parametr `NULL`novou má být spuštěn, a aktuální enumerátor slučování by se měla zastavit. Objekt určuje, jak spustit nový výčet.  
+ Pokud tento parametr není `NULL`má být spuštěn nový, a aktuální enumerátor sloučení by se měla zastavit. Objekt určuje, jak spustit nový výčet.  
   
 ## <a name="remarks"></a>Poznámky  
- Správce ladění proces používá tato struktura seřadit rámce zásobníku z více skriptovací stroje. Podle konvence zásobníky růst dolů. V důsledku toho na architektury, kde zásobníky růst nahoru, adresy musí být doplněny dvou.  
+ Správce ladění procesu používá tuto strukturu řazení zásobníku z několika skriptovacích strojů. Podle konvence zásobníky růst dolů. V důsledku toho na architekturách, kde zásobníky růst, adresy by měl být doplněny párech.  
   
 ## <a name="see-also"></a>Viz také  
- [Konstanty ladicího programu aktivních skriptů, výčty a struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Konstanty, výčty a struktury ladicího programu aktivních skriptů](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

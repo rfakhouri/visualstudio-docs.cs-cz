@@ -1,5 +1,5 @@
 ---
-title: Výčet DOCUMENTNAMETYPE | Microsoft Docs
+title: Documentnametype – výčet | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31e304cfbb0ed7cd19b832d7ed7c33ccc2c930c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791682"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094767"
 ---
 # <a name="documentnametype-enumeration"></a>Výčet DOCUMENTNAMETYPE
 Popisuje, jaký typ získat pro dokument.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef enum tagDOCUMENTNAMETYPE {  
    DOCUMENTNAMETYPE_APPNODE,  
    DOCUMENTNAMETYPE_TITLE,  
@@ -43,11 +43,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |Člen|Popis|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|Získá název, jak se zobrazuje ve stromu aplikace.|  
-|DOCUMENTNAMETYPE_TITLE|Získá název, jak se objevuje v záhlaví okna prohlížeče.|  
+|DOCUMENTNAMETYPE_APPNODE|Získává název se zobrazí ve stromu aplikace.|  
+|DOCUMENTNAMETYPE_TITLE|Získá název, jak je zobrazen v záhlaví okna prohlížeče.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Získá název souboru bez cesty.|  
 |DOCUMENTNAMETYPE_URL|Získá adresu URL dokumentu.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Získá název spolu s výčtu pro identifikaci.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Získá název s výčtu pro identifikaci.|  
   
 ## <a name="see-also"></a>Viz také  
- [Konstanty ladicího programu aktivních skriptů, výčty a struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Konstanty, výčty a struktury ladicího programu aktivních skriptů](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

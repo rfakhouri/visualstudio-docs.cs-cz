@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::EnumStackFrames | Microsoft Docs
+title: IRemoteDebugApplicationThread::EnumStackFrames | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c754ce92a342163acc07b69c097af5df4c226cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20abe2c10a0959f00e67d98ac405b74c35a0c032
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794856"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093264"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
-Vrátí enumerátor pro rámce zásobníku přidružené k této přístup z více vláken.  
+Vrátí enumerátor pro rámce zásobníku spojené s tímto vláknem.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Parametry  
  `ppedsf`  
- [out] Enumerátor pro rámce zásobníku přidružené k této přístup z více vláken.  
+ [out] Čítač pro rámce zásobníku spojené s tímto vláknem.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda musí být volána z zarážky. Enumerátor rámce zásobníku by měl vrátit rámce spouštění v horní části zásobníku, počínaje nedávno stisknutí rámečku.  
+ Tato metoda musí být volána z zarážku. Enumerátor rámce zásobníku by měl vrátit snímky spuštění v horní části zásobníku, počínaje nedávno vložené rámce.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplicationthread – rozhraní](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread – rozhraní](../../winscript/reference/iremotedebugapplicationthread-interface.md)

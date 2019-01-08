@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Next | Microsoft Docs
+title: IEnumDebugApplicationNodes::Next | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61bc2b677f12106c9bd8e6c8bec57ae1f7a09605
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07bdd008887676ef2f4cba7e1a67d96e1344f56a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794502"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091127"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
 Načte zadaný počet segmentů v pořadí výčtu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                    celt,  
    IDebugApplicationNode**  pprddp,  
@@ -40,16 +40,16 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [v] Počet segmentů k načtení.  
+ [in] Počet segmentů, pro načtení.  
   
  `pprddp`  
- [out] Vrátí pole `IDebugApplicationNode` rozhraní, která představuje segmenty, dojde k načtení.  
+ [out] Vrátí pole `IDebugApplicationNode` rozhraní, která představuje segmenty načítají.  
   
  `pceltFetched`  
- [out] Skutečný počet segmentů načtených podle enumerátor.  
+ [out] Skutečný počet segmentů získaný enumerátor.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -59,4 +59,4 @@ HRESULT Next(
  Tato metoda načte zadaný počet segmentů v pořadí výčtu.  
   
 ## <a name="see-also"></a>Viz také  
- [Ienumdebugapplicationnodes – rozhraní](../../winscript/reference/ienumdebugapplicationnodes-interface.md)
+ [IEnumDebugApplicationNodes – rozhraní](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

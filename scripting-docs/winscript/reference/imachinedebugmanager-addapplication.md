@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::AddApplication | Microsoft Docs
+title: IMachineDebugManager::AddApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77c31084ccc24a6bace18f009eb8372a4f68a428
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e056a62ac498c0b4061ed0982189de9747832ccc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794790"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087071"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
-Přidá aplikaci do spuštění seznam aplikací.  
+Přidá aplikaci do běhu seznamu aplikací.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD*                    pdwAppCookie  
@@ -39,20 +39,20 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [v] Aplikace pro spuštění seznam aplikací.  
+ [in] Aplikace s běžící seznam aplikací.  
   
  `pdwAppCookie`  
- [out] Soubor cookie, který slouží k odebrání správce počítače ladění aplikace.  
+ [out] Soubor cookie, který slouží k odebrání počítače správce ladění aplikace.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda je volána správcem ladění procesu vždy, když `IProcessDebugManager::AddApplication` je volána.  
+ Tato metoda je volána metodou správce ladění procesu pokaždé, když `IProcessDebugManager::AddApplication` je volána.  
   
 ## <a name="see-also"></a>Viz také  
  [Imachinedebugmanager – rozhraní](../../winscript/reference/imachinedebugmanager-interface.md)   

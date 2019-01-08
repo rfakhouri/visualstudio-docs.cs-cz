@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercallback3::setwebworkerid – metoda | Microsoft Docs
+title: Iactivescriptprofilercallback3::setwebworkerid – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,25 +12,25 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 426767b8d4d23964d6bfaa7102ee53b550e7ab9b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793470"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094430"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId – metoda
-Upozorní profileru o ID pracovního procesu, který má použít pro tuto relaci profilování. Pokud funkce není v kontextu stránky provádění, tato metoda není volána. Hodnota `webWorkerId` se zvýší o 1 u všech pracovníků, počínaje 1. Hodnoty ID nejsou určeny k být stabilní nad rámec relaci a odpovídat jenom na pořadí, ve kterém byly vytvořeny pracovních procesů.  
+Upozornění profileru o ID pracovního procesu má použít pro tuto relaci profilování. Pokud funkce není prováděna v kontextu stránky, není tato metoda vyvolána. Hodnota `webWorkerId` zvýší o 1 pro každý pracovního procesu začínající hodnotou 1. ID hodnoty nemají stabilní nad rámec relaci, a pouze odpovídají pořadí, ve kterém byly vytvořeny zaměstnanců.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetWebWorkerId([in] DWORD webWorkerId);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `webWorkerId`  
- ID webové pracovního procesu.  
+ ID webového pracovního procesu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Návratová hodnota tato metoda je ignorován v skriptovacího stroje.
+ Skriptovací modul se ignoruje vrácenou hodnotu této metody.

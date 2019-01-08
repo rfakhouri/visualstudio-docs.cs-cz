@@ -1,5 +1,5 @@
 ---
-title: Výčet Jsdebugreadmemoryflags | Microsoft Docs
+title: Výčet JsDebugReadMemoryFlags | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7efb5170bf0314e95b1acded39a897c2236a29ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef1f16ebcf678452f2fe4b0df3ade6350120f05
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796266"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094026"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Výčet JsDebugReadMemoryFlags
 Příznaky pro určení chování při čtení paměti  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
@@ -38,8 +38,8 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 |Název|Popis|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Označuje, že volající chce operace čtení úspěšné, pouze pokud část paměti číst úspěšně. Pokud je toto nastaveno, bude vyvolána chybu E_JsDEBUG_INVALID_MEMORY_ADDRESS pouze pokud 'Adresa' je neplatný. Pokud tento příznak není zaškrtnuto, je-li jakékoli její části velikost paměti požadované nečitelná bude vyvolána chyba E_JsDEBUG_INVALID_MEMORY_ADDRESS.|  
-|`None`|Označuje, že volající chce pro readmemory – použije se výchozí chování.|  
+|`JsDebugAllowPartialRead`|Označuje, že volající vyžaduje úspěšné pouze pokud úspěšné čtení část paměti operace čtení. Pokud je nastaveno, bude vyvolána chyba E_JsDEBUG_INVALID_MEMORY_ADDRESS pouze pokud je "Adresa" neplatná. Pokud tento příznak není zaškrtnut, bude vyvolána chyba E_JsDEBUG_INVALID_MEMORY_ADDRESS, pokud libovolnou část požadované paměti nečitelná.|  
+|`None`|Označuje, že volající vyžaduje výchozí chování pro ReadMemory.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  

@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetChild | Microsoft Docs
+title: IScriptNode::GetChild | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d127b1b8a8db0c6d272e50d33b523fbe182a9e21
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55cd6cf5233e850e4109128e322d3fc5bd0b1355
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796419"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086590"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
-Vrací podřízeného, který je v zadaném indexu v uzlu.  
+Vrací podřízeného, který je k zadanému indexu v uzlu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetChild(  
    ULONG              isn,  
    IScriptNode        **ppsn  
@@ -39,14 +39,14 @@ HRESULT GetChild(
   
 #### <a name="parameters"></a>Parametry  
  `isn`  
- [v] Index podřízené v nadřazené.  
+ [in] Index pro podřízenou položku v nadřazeném prvku.  
   
  `ppsn`  
- [out] Proměnné, která přijímá ukazatel na adresu `IScriptNode` rozhraní podřízené instance.  
+ [out] Adresa proměnné, která přijímá ukazatel `IScriptNode` rozhraní instance podřízené.  
   
- Pro `IScriptNode` objekty, které představují na webové stránce, tento parametr vrátí objekt, který obsahuje blok skriptu.  
+ Pro `IScriptNode` objekty, které představují webové stránky, tento parametr vrátí objekt, který obsahuje blok skriptu.  
   
- Pro `IScriptEntry` objekty, které určují blok skriptu, tento parametr vrátí objekt, který určuje funkci.  
+ Pro `IScriptEntry` objekty, které určují blok skriptu, vrátí objekt, který určuje funkci, která tento parametr.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -56,7 +56,7 @@ HRESULT GetChild(
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pro `IScriptEntry` objekty, které určují objekt funkce a `IScriptScriptlet` objekty, tato metoda selže, protože nejsou k dispozici žádné podřízené položky.  
+ Pro `IScriptEntry` objekty, které určují objekt funkce a `IScriptScriptlet` objekty, tato metoda se nezdaří, protože neobsahuje žádné podřízené položky.  
   
 ## <a name="see-also"></a>Viz také  
- [Iscriptnode – rozhraní](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode – rozhraní](../../winscript/reference/iscriptnode-interface.md)

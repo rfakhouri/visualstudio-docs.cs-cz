@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::GetScriptletTextAttributes | Microsoft Docs
+title: IActiveScriptDebug::GetScriptletTextAttributes | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909879030e5c6d26353d2003279d5c1ca7bacb74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 757c56750ee54e7de50f245b8b643cc5983f3149
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793389"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097549"
 ---
 # <a name="iactivescriptdebuggetscriptlettextattributes"></a>IActiveScriptDebug::GetScriptletTextAttributes
-Vrací atributy textu pro libovolný skriptlet.  
+Vrátí text atributy pro libovolného skriptletu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR          pstrCode,  
    ULONG              uNumCodeChars,  
@@ -42,37 +42,37 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `pstrCode`  
- [v] Skriptlet text. Tento řetězec nemusí mít hodnotu null byla ukončena.  
+ [in] Textu skriptletu. Tento řetězec nemusí být null byl ukončen.  
   
  `uNumCodeChars`  
- [v] Počet znaků v textu skriptlet.  
+ [in] Počet znaků v textu skriptletu.  
   
  `pstrDelimiter`  
- [v] Adresa koncového skriptlet oddělovač. Když `pstrCode` je analyzována z datového proudu textu, hostitel se většinou používá oddělovač, například dvě jednoduché uvozovky ("), ke zjištění konec skriptletu. Tento parametr určuje oddělovač, který se používá hostitele, která umožňuje skriptovací stroj zajistit některé podmíněného primitivní předběžného zpracování (například nahrazení jednoduché uvozovky ['] dvě jednoduchých uvozovek pro použití jako oddělovač). Přesně jak (a pokud) skriptovací stroj používá tyto informace závisí na skriptovacího stroje. Tento parametr nastavte na hodnotu NULL, pokud hostitel nepoužili konec skriptletu oddělovač.  
+ [in] Adresa oddělovače end skriptletu. Když `pstrCode` je analyzován z toku textu, hostitel obvykle používá oddělovač, jako jsou například dvě jednoduché uvozovky ("), k zjištění konce skriptletu. Tento parametr určuje oddělovač, který používá hostitel a který umožňuje skriptovacímu stroji poskytovat některé podmíněné primitivní předzpracování (například nahrazení jednoduchou uvozovku ['] dvěma jednoduchými uvozovkami pro použití jako oddělovače). Jak přesně (a zda) skriptovací stroj používá tyto informace závisí na skriptovacím stroji. Tento parametr nastavte na hodnotu NULL, pokud hostitel nepoužili oddělovač pro označení konce skriptletu.  
   
  `dwFlags`  
- [v] Příznaky přidružené skriptletu. Může být kombinací těchto hodnot:  
+ [in] Příznaky spojené se skriptletem. Může být kombinací těchto hodnot:  
   
 |Konstanta|Hodnota|Popis|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Označuje, že identifikátory a tečka mělo by být určené SOURCETEXT_ATTR_IDENTIFIER a SOURCETEXT_ATTR_MEMBERLOOKUP příznaků, v uvedeném pořadí.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Označuje, že identifikátory a tečka mají identifikovat SOURCETEXT_ATTR_IDENTIFIER a SOURCETEXT_ATTR_MEMBERLOOKUP příznaků, v uvedeném pořadí.|  
 |GETATTRFLAG_THIS|0x0100|Označuje, že se mají s příznakem SOURCETEXT_ATTR_THIS identifikovat identifikátor pro aktuální objekt.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Označuje, že obsah a komentář textový řetězec, mělo by být určené s příznakem SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Označuje, že se mají s příznakem SOURCETEXT_ATTR_HUMANTEXT identifikovat text řetězce obsah a komentáře.|  
   
  `pattr`  
- [ve out] Vyrovnávací paměť tak, aby obsahovala vrácený atributy.  
+ [out v] Vyrovnávací paměť pro vrácený atributy obsahují.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Inteligentního hostitele, který implementuje `IDebugDocumentText` rozhraní tuto metodu můžete použít pro delegování volání `IDebugDocumentText::GetText` metoda.  
+ Inteligentního hostitele, který implementuje `IDebugDocumentText` rozhraní tuto metodu můžete použít k volání delegáta `IDebugDocumentText::GetText` metody.  
   
- Toto volání se poskytuje, protože Skriptlety jsou obvykle výrazy a může mít různé syntaxe než blok skriptu. Pokud budou mít stejnou syntaxí, musí být stejný na implementaci implementace této metody `GetScriptTextAttributes` metoda.  
+ Toto volání je k dispozici protože skriptlety bývají výrazy a mohou mít odlišnou syntaxi než blok skriptu. Pokud mají stejnou syntaxi, implementace této metody bude identické s implementací `GetScriptTextAttributes` metody.  
   
 ## <a name="see-also"></a>Viz také  
  [Iactivescriptdebug – rozhraní](../../winscript/reference/iactivescriptdebug-interface.md)   

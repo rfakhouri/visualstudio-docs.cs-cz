@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::OnCreateDocumentContext | Microsoft Docs
+title: IDebugDocumentHost::OnCreateDocumentContext | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55598a4191d421d3aea01d27cc7991b70bd6a019
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0f8ce73e05fa8dd163564184361254fd58163ee
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794169"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096330"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Hostitel upozorní, že nový kontext dokumentu se vytváří a umožňuje Volitelně můžete vrátit řízení neznámé pro nový kontext hostitele.  
+Upozorňuje hostitele, že se vytváří nový kontext dokumentu a umožňuje hostiteli volitelně vrátit řízení pro nový kontext.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnCreateDocumentContext(  
    IUnknown**  ppunkOuter  
 );  
@@ -38,18 +38,18 @@ HRESULT OnCreateDocumentContext(
   
 #### <a name="parameters"></a>Parametry  
  `ppunkOuter`  
- [out] Objekt, který řídí nový kontext.  
+ [out] Objekt, který určuje nový kontext.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
-|`E_NOTIMPL`|Hostitel neposkytuje objekt řízení.|  
+|`E_NOTIMPL`|Hostitel neposkytuje řídící objektu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda umožňuje na hostiteli a přidat další nové funkce kontexty dokumentu zadané pomocné rutiny. Tato metoda může vrátit **E_NOTIMPL** nebo objektu null vnější, ve kterém případ volající zodpovídá za vytvoření kontextu.  
+ Tato metoda umožňuje hostiteli přidat nové funkce do zadané pomocné rutiny dokumentu kontexty. Tato metoda může vrátit **E_NOTIMPL** nebo vnější objekt s hodnotou null, ve kterém případ volající zodpovídá za vytvoření kontextu.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumenthost – rozhraní](../../winscript/reference/idebugdocumenthost-interface.md)
+ [IDebugDocumentHost – rozhraní](../../winscript/reference/idebugdocumenthost-interface.md)

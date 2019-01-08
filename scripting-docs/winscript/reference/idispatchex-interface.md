@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22ccc54dee335fd8c81343557d2f32c48eb30560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a59f30c5b42301d29b73a4a079837423614da49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837916"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087578"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx – rozhraní
 `IDispatchEx`, rozšíření `IDispatch` rozhraní, podporuje funkce vhodné pro dynamické jazyky, jako je například skriptovací jazyky. Tato část popisuje `IDispatchEx` rozhraní, rozdíly mezi `IDispatch` a `IDispatchEx`a důvody tohoto rozšíření. Očekává se, že čtečky obeznámeni s `IDispatch` a mají přístup k `IDispatch` dokumentaci.  
@@ -71,7 +71,7 @@ ms.locfileid: "49837916"
   
   Úplný kód HTML je:  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -102,7 +102,7 @@ test();
   
  Prvek řízení umístěný na tomto stejné webové stránce může získat odeslání ukazatele na skriptovacích strojů ukládaných z prohlížeče. Ovládací prvek pak může implementovat test() funkce:  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -138,7 +138,7 @@ function cat()
   
   Kód pro ovládací prvek testu:  
   
-```  
+```cpp
    BOOL test(IDispatchEx *pdexScript)  
    {  
       HRESULT hr;  

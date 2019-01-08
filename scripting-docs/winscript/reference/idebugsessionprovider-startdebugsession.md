@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProvider::StartDebugSession | Microsoft Docs
+title: IDebugSessionProvider::StartDebugSession | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e93d3bd48a544d5bb446e1bff102268a7624e85
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fe0ce2d55a945c5c35dc82700aa45e1849d6a2c0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794370"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096331"
 ---
 # <a name="idebugsessionproviderstartdebugsession"></a>IDebugSessionProvider::StartDebugSession
 Spustí relaci ladění pomocí zadané aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT StartDebugSession(  
    IRemoteDebugApplication*  pda  
 );  
@@ -38,17 +38,17 @@ HRESULT StartDebugSession(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [v] Určuje ladění aplikace.  
+ [in] Určuje ladění aplikace.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda inicializuje relaci ladění s zadané aplikace. Ladicí program by měly volat `IRemoteDebugApplication::ConnectDebugger` před návratem od toto volání.  
+ Tato metoda spustí relaci ladění pomocí zadané aplikace. Ladicí program by měly volat `IRemoteDebugApplication::ConnectDebugger` před návratem z tohoto volání.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugsessionprovider – rozhraní](../../winscript/reference/idebugsessionprovider-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilerheapenum::Next – metoda | Microsoft Docs
+title: Iactivescriptprofilerheapenum::Next – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,25 +12,25 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3927743a1de1d3048537327aebd24a847a7d22e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f1f8d709c98efba8551ffdd026b77234785c8de4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793464"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095729"
 ---
 # <a name="iactivescriptprofilerheapenumnext-method"></a>IActiveScriptProfilerHeapEnum::Next – metoda
-Získá další objekt nebo objekty v sadě haldy objekty z [iactivescriptprofilercontrol3::enumheap – metoda](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
+Získá další objekt nebo objekty v sadě objektů haldy z [iactivescriptprofilercontrol3::enumheap – metoda](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Next (    [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] PROFILER_HEAP_OBJECT** heapObjects,     [out] ULONG *pceltFetched);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- Počet objektů, který se má vrátit.  
+ Počet objektů, které se mají vrátit.  
   
  `heapObjects`  
  [out] Další [profiler_heap_object – struktura](../../winscript/reference/profiler-heap-object-structure.md) struktury.  
@@ -39,4 +39,4 @@ HRESULT Next (    [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetch
  [out] Počet objektů vrácených,  
   
 ## <a name="return-value"></a>Návratová hodnota  
- HRESULT.
+ Hodnota HRESULT.

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugprocess – rozhraní | Microsoft Docs
+title: Ijsdebugprocess – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a81104f51ca1a66c493779146b7eaa102ea300
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ecdec77a8bcb3c1fb8a1dc64c63b363b4f001fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794724"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086655"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess – rozhraní
-Poskytuje rutiny pro kontroly a řízení tento cílový proces.  
+Poskytuje rutiny pro kontrolu a řízení cílových procesů.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsDebugProcess : public IUnknown;  
 ```  
   
@@ -34,9 +34,9 @@ IJsDebugProcess : public IUnknown;
   
 |Název|Popis|  
 |----------|-----------------|  
-|[Ijsdebugprocess::createbreakpoint – metoda](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Nastaví zarážce na pozici zadaný dokument.|  
-|[Ijsdebugprocess::createstackwalker – metoda](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Metoda Factory pro walkera zásobníku.|  
-|[Ijsdebugprocess::performasyncbreak – metoda](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Skriptovací stroj převádí v režimu pozastavení způsobuje ho na přerušení na další skript instrukcí.|  
+|[IJsDebugProcess::CreateBreakPoint – metoda](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Nastaví zarážku na pozici zadaného dokumentu.|  
+|[IJsDebugProcess::CreateStackWalker – metoda](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Metoda výroby pro zásobník.|  
+|[IJsDebugProcess::PerformAsyncBreak – metoda](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Vloží skriptovací stroj do režimu přerušení způsobí jeho přerušení v další instrukci skriptu.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  

@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName | Microsoft Docs
+title: IScriptScriptlet::SetSubItemName | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0d038330d502dd9a230fdb82c14d36732fed7e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 777a69e47ed7f88851cae0d20f2eb23ee6978296
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796314"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097709"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-Nastaví identifikátor poslední ve plně kvalifikovaný název hostitele skriptlet objektu.  
+Nastaví poslední identifikátor v plně kvalifikovaný název hostitele objektů skriptletu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetSubItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- Pokud hostitel je plně kvalifikovaný název skriptlet má více než jednu úroveň `psz` je adresa vyrovnávací paměť identifikátoru na úrovni druhé.  
+ Pokud hostitel je plně kvalifikovaný název skriptlet má více než jednu úroveň `psz` je adresa vyrovnávací paměť identifikátoru na druhé úrovni.  
   
  Pokud hostitel je plně kvalifikovaný název skriptlet má jednu úroveň `psz` je adresa vyrovnávací paměť identifikátoru na první úrovni.  
   
@@ -52,4 +52,4 @@ HRESULT SetSubItemName(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Iscriptscriptlet – rozhraní](../../winscript/reference/iscriptscriptlet-interface.md)
+ [IScriptScriptlet – rozhraní](../../winscript/reference/iscriptscriptlet-interface.md)

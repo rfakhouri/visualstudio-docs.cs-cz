@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedureOld::ParseProcedureText | Microsoft Docs
+title: IActiveScriptParseProcedureOld::ParseProcedureText | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cab546deb390535fa8ff71e116a0ad42d33cc104
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ec100214a43be6e1faf5e229ce6452432065002b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793608"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093389"
 ---
 # <a name="iactivescriptparseprocedureoldparseproceduretext"></a>IActiveScriptParseProcedureOld::ParseProcedureText
-Analyzuje postup daného kódu a přidá anonymní postup obor názvů.  
+Analyzuje daný kód procedury a anonymní procedura přidá do oboru názvů.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ParseProcedureText(  
    LPCOLESTR    pstrCode,  
    LPCOLESTR    pstrFormalParams,  
@@ -46,55 +46,55 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parametry  
  `pstrCode`  
- [v] Postup text k vyhodnocení. Výklad tento řetězec závisí na skriptovací jazyk.  
+ [in] Postup text k vyhodnocení. Výklad tohoto řetězce závisí na skriptovacím jazyce.  
   
  `pstrFormalParams`  
- [v] Názvy formální parametr pro proceduru. Názvy parametrů musí být odděleny s odpovídající oddělovače pro skriptovacího stroje. Názvy nesmí být uzavřena v závorkách.  
+ [in] Názvy formálních parametrů pro proceduru. Názvy parametrů musí být odděleny příslušné oddělovače pro skriptovací stroj. Názvy nesmí být uzavřen v závorkách.  
   
  `pstrItemName`  
- [v] Název pojmenovanou položku, která poskytuje kontext, ve kterém se má vyhodnotit postup. Pokud tento parametr je `NULL`, vyhodnotí kód v globálním kontextu skriptovacího stroje.  
+ [in] Název pojmenované položky, která poskytuje kontext, ve kterém se má vyhodnotit postup. Pokud je tento parametr `NULL`, kód je vyhodnocen v globálním kontextu skriptovacího stroje.  
   
  `punkContext`  
- [v] Objekt kontextu. Tento objekt je vyhrazený pro použití v prostředí ladění, kde může poskytovat takový kontext ladicí program k reprezentaci active kontextu spuštění. Pokud tento parametr je `NULL`, modul používá `pstrItemName` k identifikaci kontextu.  
+ [in] Objekt kontextu. Tento objekt je vyhrazen pro použití v prostředí ladění, kde může zadat takový obsah ladicím modulem a představovat aktivní kontext běhu. Pokud je tento parametr `NULL`, používá modul `pstrItemName` pro rozpoznání kontextu.  
   
  `pstrDelimiter`  
- [v] Oddělovač end postupu. Když `pstrCode` je analyzována z datového proudu textu, hostitel se většinou používá oddělovač, například dvě jednoduché uvozovky ("), ke zjištění ukončení režimu. Tento parametr určuje oddělovač, který se používá hostitele, která umožňuje skriptovací stroj zajistit některé podmíněného primitivní předběžného zpracování (například dvě jednoduchých uvozovek pro použití jako oddělovač nahraďte jednoduché uvozovky [']). Přesně jak (a pokud) skriptovací stroj používá tyto informace závisí na skriptovacího stroje. Tento parametr nastavte na `NULL` Pokud hostitel nepoužili oddělovač konec procedury.  
+ [in] Oddělovač – řád. Když `pstrCode` je analyzován z toku textu, hostitel obvykle používá oddělovač, jako jsou například dvě jednoduché uvozovky ("), k zjištění konce postup. Tento parametr určuje oddělovač, který používá hostitel a který umožňuje skriptovacímu stroji poskytovat některé podmíněné primitivní předzpracování (například nahrazení jednoduchou uvozovku ['] dvěma jednoduchými uvozovkami pro použití jako oddělovače). Jak přesně (a zda) skriptovací stroj používá tyto informace závisí na skriptovacím stroji. Nastavte tento parametr na `NULL` Pokud hostitel nepoužili oddělovač pro označení konce postup.  
   
  `dwSourceContextCookie`  
- [v] Hodnota definované aplikací, který se používá pro účely ladění.  
+ [in] Hodnota definované aplikací, která se používá pro účely ladění.  
   
  `ulStartingLineNumber`  
- [v] Hodnoty s nulovým základem, který určuje, kdy řádek analýza ve vyrovnaném bude zahájena.  
+ [in] Založený na nule hodnoty, která určuje, na které řádku se začne analýza.  
   
  `dwFlags`  
- [v] Příznaky přidružený postup. Může být kombinací těchto hodnot.  
+ [in] Příznaky spojené s postupem. Může být kombinací těchto hodnot.  
   
 |Konstanta|Hodnota|Význam|  
 |--------------|-----------|-------------|  
-|SCRIPTPROC_ISEXPRESSION|0x00000020|Určuje, že kód v `pstrCode` je výraz, který reprezentuje návratovou hodnotu procedury.|  
-|SCRIPTPROC_IMPLICIT_THIS|0x00000100|Určuje, že `this` ukazatel je součástí oboru procedury.|  
-|SCRIPTPROC_IMPLICIT_PARENTS|0x00000200|Určuje, že nadřazených položek `this` ukazatel jsou zahrnuty v oboru procedury.|  
+|SCRIPTPROC_ISEXPRESSION|0x00000020|Označuje, že kód v `pstrCode` je výraz, který představuje návratová hodnota procedury.|  
+|SCRIPTPROC_IMPLICIT_THIS|0x00000100|Označuje, že `this` ukazatel je zahrnuta v rámci procedury.|  
+|SCRIPTPROC_IMPLICIT_PARENTS|0x00000200|Označuje, že nadřazených položek `this` ukazatele jsou zahrnuty v rámci procedury.|  
   
  `ppdisp`  
- [out] Vrátí obálku odesílání, kde je výchozí metodou postup analyzovat touto metodou.  
+ [out] Vrátí odeslání obálky, kde je výchozí metodou postup analyzovat touto metodou.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
 |`E_INVALIDARG`|Argument byl neplatný.|  
 |`E_POINTER`|Byl zadán neplatný ukazatel.|  
-|`E_NOTIMPL`|Tato metoda není podporována. Skriptovací stroj nepodporuje přidání běhu postupy pro obor názvů.|  
-|`E_UNEXPECTED`|Nebyl očekáván volání (například skriptovací stroj je ve stavu Neinicializovaný nebo uzavřený).|  
-|`OLESCRIPT_E_SYNTAX`|Syntaxe neurčené chybě v postupu.|  
-|`S_FALSE`|Skriptovací stroj nepodporuje objekt odesílání; `ppdisp`parametr je nastaven na `NULL`.|  
+|`E_NOTIMPL`|Tato metoda není podporována. Skriptovací modul nepodporuje přidávání za běhu postupů, obor názvů.|  
+|`E_UNEXPECTED`|Volání nebylo očekáváno (například skriptovací stroj je v neinicializovaném nebo uzavřeném stavu).|  
+|`OLESCRIPT_E_SYNTAX`|V postupu došlo k nespecifikované chybě syntaxe.|  
+|`S_FALSE`|Skriptovací modul nepodporuje odesílání objektu. `ppdisp`parametr je nastaven na `NULL`.|  
   
 ## <a name="remarks"></a>Poznámky  
- Žádný kód skriptu se vyhodnotí během toto volání; Místo toho postup zkompilován metodu na `ppdisp` kde může být volána skriptem později.  
+ Žádný kód skriptu je hodnocen během tohoto volání; Místo toho postup zkompilován metodu na `ppdisp` kde může být volán skriptem později.  
   
- Toto rozhraní je zastaralé pro `IActiveScriptParseProcedure` rozhraní. `IActiveScriptParseProcedure::ParseProcedureText` Metoda se podobá této metodě, ale umožňuje zadat název postupu. Za všech okolností `IActiveScriptParseProcedure::ParseProcedureText` by měl být použit.  
+ Toto rozhraní je zastaralé nahrazený `IActiveScriptParseProcedure` rozhraní. `IActiveScriptParseProcedure::ParseProcedureText` Způsob se podobá této metody, ale umožňuje zadat název procedury. Za všech okolností `IActiveScriptParseProcedure::ParseProcedureText` by měla sloužit.  
   
 ## <a name="see-also"></a>Viz také  
  [Iactivescriptparseprocedureold – rozhraní](../../winscript/reference/iactivescriptparseprocedureold-interface.md)   

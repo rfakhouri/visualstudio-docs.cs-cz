@@ -1,5 +1,5 @@
 ---
-title: Ijsenumdebugproperty – rozhraní | Microsoft Docs
+title: Ijsenumdebugproperty – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4dfa2fab54c4475c603c3e4cbecc046ea90ab9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e7e30580952c7086a48a148b9bff4483cba98d4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794571"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088254"
 ---
 # <a name="ijsenumdebugproperty-interface"></a>IJsEnumDebugProperty – rozhraní
-Poskytuje vlastnosti procházení.  
+Poskytuje operace pro procházení vlastností.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsEnumDebugProperty : public IUnknown;  
 ```  
   
@@ -34,8 +34,8 @@ IJsEnumDebugProperty : public IUnknown;
   
 |Název|Popis|  
 |----------|-----------------|  
-|[Ijsenumdebugproperty::GetCount – metoda](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|Získá počet vlastností objektu.|  
-|[Ijsenumdebugproperty::Next – metoda](../../winscript/reference/ijsenumdebugproperty-next-method.md)|Načte vlastnosti pro tento objekt.|  
+|[IJsEnumDebugProperty::GetCount – metoda](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|Získá počet vlastností objektu.|  
+|[IJsEnumDebugProperty::Next – metoda](../../winscript/reference/ijsenumdebugproperty-next-method.md)|Čtení vlastností tohoto objektu.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  

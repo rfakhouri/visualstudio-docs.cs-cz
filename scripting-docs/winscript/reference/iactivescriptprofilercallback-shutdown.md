@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::Shutdown | Microsoft Docs
+title: IActiveScriptProfilerCallback::Shutdown | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,29 +16,29 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec47cd5f581c36abb60b662983c6d806a4732f47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bbe5acd75ecf4f004d835490579b1f35c1bf675c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793515"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086811"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-Volá se při každém profilace zastavení na skriptovací stroj informovat objekt profileru. Tímto způsobem objekt profileru můžete volat jeho čištění rutiny, v případě potřeby. Tato metoda je volána také skriptovací stroj, když se vypíná skriptovací stroje, nebo když volání [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) selže.  
+Volá se, aby informovat objektu profileru pokaždé, když je profilování zastaveno na skriptovacím stroji. Tímto způsobem profiler objektu můžete volat jeho rutiny cleanup, podle potřeby. Tato metoda je volána také skriptovací modul, když skriptovací stroj se vypíná, nebo když volání [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) selže.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Shutdown(  
     [in] HRESULT hrReason);  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  `hrReason`  
- [v] Z důvodu ukončení aplikace. Pokud se vypíná skriptovací stroje, `S_OK` je předán. Pokud volání [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) vrátí selhání HRESULT, je předaná hodnota HRESULT. Jinak, tato hodnota je načtena z [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
+ [in] Důvod ukončení. Pokud se vypíná skriptovací stroj `S_OK` je předán. Pokud volání [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) vrátí selhání hodnoty HRESULT, je předána hodnota HRESULT. V opačném případě tuto hodnotu je načten z [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Návratová hodnota tato metoda je ignorován v skriptovacího stroje.  
+ Skriptovací modul se ignoruje vrácenou hodnotu této metody.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptprofilercallback – rozhraní](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback – rozhraní](../../winscript/reference/iactivescriptprofilercallback-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::FreeVirtualMemory – metoda | Microsoft Docs
+title: Ijsdebugdatatarget::FreeVirtualMemory – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b53d7f80227a1c4eb0ef0293093543c09c5a367
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed5fabfca8ac9b0e9fe0dfba346b0354f4c0576f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794775"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086798"
 ---
 # <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>IJsDebugDataTarget::FreeVirtualMemory – metoda
-Uvolní nebo decommits oblasti paměti ve virtuálním adresním prostoru tento cílový proces.  
+Uvolní a/nebo rozváže oblast paměti v rámci virtuálního adresového prostoru cílového procesu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT FreeVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -38,21 +38,21 @@ HRESULT FreeVirtualMemory(
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [v] Adres v rámci tento cílový proces, kde by měla být paměť uvolněna.  
+ [in] Adresa v cílovém procesu, kde by měla být paměť uvolněna.  
   
  `size`  
- [v] Počet bajtů, které se zruší. Chcete-li uvolnit oblasti paměti, tato hodnota musí být nula.  
+ [in] Počet bajtů, které mají být uvolněny. Pokud chcete uvolnit oblast paměti, tato hodnota musí být nula.  
   
  `freeType`  
- [v] Určuje typ volné operaci provést. To je obvykle MEM_RELEASE (0x8000), což uvolní zadané oblasti stránek. Po operaci jsou stránky ve volné. MEM_DECOMMIT (0x4000) umožňuje místo zruší stránky bez jejich uvolnění.  
+ [in] Označuje typ volné operace k provedení. Obvykle se jedná o MEM_RELEASE (0x8000), který uvolní zadanou oblast stránek. Po provedení této operace jsou stránky ve volném stavu. MEM_DECOMMIT (0x4000) lze použít místo toho pro zrušení stránky bez.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
 ## <a name="remarks"></a>Poznámky  
- Další informace najdete v tématu virtualfree – Win32 API.  
+ Další informace najdete v tématu ve VirtualFree Win32 API.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugdatatarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)

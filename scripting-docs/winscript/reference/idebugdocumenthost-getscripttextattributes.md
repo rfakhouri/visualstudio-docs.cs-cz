@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetScriptTextAttributes | Microsoft Docs
+title: IDebugDocumentHost::GetScriptTextAttributes | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 517b228bb46594d19ba6d2fdf41a68e22ac03c75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016073d2ce22ab814716efc204ce573ea17cd510
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794712"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092713"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
-Vrací atributy textu pro blok textu dokumentu.  
+Vrátí text atributy pro blok textu dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetScriptTextAttributes(  
    LPCOLESTR          pstrCode,  
    ULONG              uNumCodeChars,  
@@ -42,28 +42,28 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `pstrCode`  
- [v] Text, blok skriptu. Tento řetězec nemusí mít hodnotu null byla ukončena.  
+ [in] Text blok skriptu. Tento řetězec nemusí být null byl ukončen.  
   
  `uNumCodeChars`  
- [v] Počet znaků v textu blok skriptu.  
+ [in] Počet znaků v textu bloku skriptu.  
   
  `pstrDelimiter`  
- [v] Adresa koncového ze skriptu bloku oddělovač. Když `pstrCode` je analyzována z datového proudu textu, hostitel se většinou používá oddělovač, například dvě jednoduché uvozovky ("), na zjištění konce bloku skriptu. Tento parametr určuje oddělovač, který se používá hostitele, která umožňuje skriptovací stroj zajistit některé podmíněného primitivní předběžného zpracování (například nahrazení jednoduché uvozovky ['] dvě jednoduchých uvozovek pro použití jako oddělovač). Přesně jak (a pokud) skriptovací stroj používá tyto informace závisí na skriptovacího stroje. Tento parametr nastavte na hodnotu NULL, pokud hostitel nepoužili oddělovač konec bloku skriptu.  
+ [in] Adresa koncového ze skriptu bloku oddělovač. Když `pstrCode` je analyzován z toku textu, hostitel obvykle používá oddělovač, jako jsou například dvě jednoduché uvozovky ("), k zjištění konce bloku skriptu. Tento parametr určuje oddělovač, který používá hostitel a který umožňuje skriptovacímu stroji poskytovat některé podmíněné primitivní předzpracování (například nahrazení jednoduchou uvozovku ['] dvěma jednoduchými uvozovkami pro použití jako oddělovače). Jak přesně (a zda) skriptovací stroj používá tyto informace závisí na skriptovacím stroji. Tento parametr nastavte na hodnotu NULL, pokud hostitel nepoužili oddělovač pro označení konce bloku skriptu.  
   
  `dwFlags`  
- [v] Příznaky přidružené blok skriptu. Může být kombinací těchto hodnot:  
+ [in] Příznaky spojené s daným blokem skriptu. Může být kombinací těchto hodnot:  
   
 |Konstanta|Hodnota|Popis|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Označuje, že identifikátory a tečka mělo by být určené SOURCETEXT_ATTR_IDENTIFIER a SOURCETEXT_ATTR_MEMBERLOOKUP příznaků, v uvedeném pořadí.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Označuje, že identifikátory a tečka mají identifikovat SOURCETEXT_ATTR_IDENTIFIER a SOURCETEXT_ATTR_MEMBERLOOKUP příznaků, v uvedeném pořadí.|  
 |GETATTRFLAG_THIS|0x0100|Označuje, že se mají s příznakem SOURCETEXT_ATTR_THIS identifikovat identifikátor pro aktuální objekt.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Označuje, že obsah a komentář textový řetězec, mělo by být určené s příznakem SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Označuje, že se mají s příznakem SOURCETEXT_ATTR_HUMANTEXT identifikovat text řetězce obsah a komentáře.|  
   
  `pattr`  
- [ve out] Vyrovnávací paměť tak, aby obsahovala vrácený atributy.  
+ [out v] Vyrovnávací paměť pro vrácený atributy obsahují.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -71,7 +71,7 @@ HRESULT GetScriptTextAttributes(
 |`E_NOTIMPL`|Hostitel používá pouze výchozí atributy.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí atributy textu pro bloku libovolný textový dokument. Je přijatelné pro hostitele vrátit `E_NOTIMPL`, v takovém případě se používají výchozí atributy.  
+ Tato metoda vrací atributy textu pro libovolný blok textu dokumentu. Je to přijatelné pro hostitele k vrácení `E_NOTIMPL`, v takovém případě se používají výchozí atributy.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenthost – rozhraní](../../winscript/reference/idebugdocumenthost-interface.md)   

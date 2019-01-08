@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetEventHandler | Microsoft Docs
+title: IActiveScriptAuthor::GetEventHandler | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b09f900162b6dba82696c946b53ab131691530c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e7f6cc265815db4acd847270b28c3e744257fa0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793266"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086681"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-Vrátí skriptlet, který má zadané atributy.  
+Vrátí skriptletu, který má zadané atributy.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetEventHandler(  
    IDispatch          *pdisp,  
    LPCOLESTR          pszItem,  
@@ -42,19 +42,19 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Parametry  
  `pdisp`  
- [v] `IDispatch` Objekt, který odpovídá `NamedItem` skriptletu je připojen.  
+ [in] `IDispatch` Objekt, který odpovídá `NamedItem` skriptletu je připojen.  
   
  `pszItem`  
- [v] Adresa vyrovnávací paměti nejvyšší úrovně identifikátor skriptlet plně kvalifikovaný název na hostiteli.  
+ [in] Adresa vyrovnávací paměti nejvyšší úrovně identifikátor skriptletu plně kvalifikovaný název v hostiteli.  
   
  `pszSubItem`  
- [v] Adresa vyrovnávací paměti druhé úrovně identifikátor skriptlet plně kvalifikovaný název na hostiteli. Nastavte na hodnotu NULL, pokud má název pouze jedna úroveň.  
+ [in] Adresa vyrovnávací paměti druhé úrovně identifikátor skriptletu plně kvalifikovaný název v hostiteli. Pokud název obsahuje pouze jednu úroveň nastavena na hodnotu NULL.  
   
  `pszEvent`  
- [v] Adresa vyrovnávací paměť, která obsahuje název události. Skriptletu je obslužné rutiny události pro tuto událost.  
+ [in] Adresa vyrovnávací paměti, který obsahuje název události. Skriptletu je obslužnou rutinu události pro tuto událost.  
   
  `ppse`  
- [out] Proměnné, která přijímá ukazatel na adresu `IScriptEntry` rozhraní skriptlet, který má zadané atributy.  
+ [out] Adresa proměnné, která přijímá ukazatel `IScriptEntry` rozhraní, který má zadané atributy skriptletu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -67,4 +67,4 @@ HRESULT GetEventHandler(
   
 ## <a name="see-also"></a>Viz také  
  [Iactivescriptauthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)   
- [Iscriptentry – rozhraní](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry – rozhraní](../../winscript/reference/iscriptentry-interface.md)

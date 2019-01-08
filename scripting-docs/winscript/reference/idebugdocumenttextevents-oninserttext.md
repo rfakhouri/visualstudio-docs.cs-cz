@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onInsertText | Microsoft Docs
+title: IDebugDocumentTextEvents::onInsertText | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a00adb996711dc6364edd44babf0c3cde1595947
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce5cd786cead548e7a088f362930b2d27d2e8d69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794574"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089377"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
-Označuje, že byl přidán nový text v dokumentu.  
+Označuje, že byl přidán nový text do dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onInsertText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToInsert  
@@ -39,20 +39,20 @@ HRESULT onInsertText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [v] Pozice znaku vloženy nového textu.  
+ [in] Pozice znaku, kde byl vložen nový text.  
   
  `cNumToInsert`  
- [v] Počet znaků, které byly vloženy.  
+ [in] Počet znaků, které byly vloženy.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda je obvykle nazývá hostitele, který progresivně načítá obsah, jako je webový prohlížeč.  
+ Tato metoda je obvykle volána hostitele, který se postupně načte obsah, třeba webový prohlížeč.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenttextevents – rozhraní](../../winscript/reference/idebugdocumenttextevents-interface.md)   

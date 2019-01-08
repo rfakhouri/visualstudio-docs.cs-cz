@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::allocatevirtualmemory – metoda | Microsoft Docs
+title: Ijsdebugdatatarget::allocatevirtualmemory – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65b29bbf9a3405bcfab779bd877f798a863538d5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4eaf448e0be224f853674084a18f7aa2a6bd5ed7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794673"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086907"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory – metoda
-Rezerv nebo potvrdí oblasti paměti ve virtuálním adresním prostoru tento cílový proces.  
+Rezervuje a/nebo potvrdí změny v oblasti paměti v rámci virtuálního adresového prostoru cílového procesu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AllocateVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -40,16 +40,16 @@ HRESULT AllocateVirtualMemory(
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [v] Adresa v rámci tento cílový proces, kde by měla být paměť potvrzené nebo vyhrazena. Tato hodnota je obvykle nule, ve kterém případ systému zvolí adresu.  
+ [in] Adresa v cílovém procesu, ve kterém potvrzena nebo vyhrazena paměť. Tato hodnota je obvykle nula, ve kterém případě systém zvolí adresu.  
   
  `size`  
- [v] Velikost oblasti paměti k přidělení v bajtech. Systém bude automaticky zaokrouhlí na další stránce hranici.  
+ [in] Velikost oblasti paměti k přidělení v bajtech. Systém automaticky zaokrouhlí na hranici další stránky.  
   
  `allocationType`  
- [v] Určuje typ přidělení k provedení. To je obvykle MEM_COMMIT &#124; MEM_RESERVE (0x3000), která si vyhrazuje a potvrdí přidělení v jednom kroku.  
+ [in] Označuje typ přidělení k provedení. To je obvykle MEM_COMMIT &#124; MEM_RESERVE (0x3000), který rezervuje a přidělení v jednom kroku.  
   
  `pageProtection`  
- [v] Ochrana paměti pro oblast stránky, která bude přidělena. Pokud jsou přiděleny jako stránky, můžete zadat kterékoli z ochrany konstanty paměti (například PAGE_READWRITE, PAGE_EXECUTE).  
+ [in] Ochrana paměti pro oblasti stránek, které mají být přiděleny. Pokud jsou přiděleny stránky, můžete zadat některou z konstant ochrany paměti (například PAGE_READWRITE, PAGE_EXECUTE).  
   
  `pAllocatedAddress`  
  [out] Základní adresa přidělené oblasti stránek.  
@@ -57,10 +57,10 @@ HRESULT AllocateVirtualMemory(
 ## <a name="return-value"></a>Návratová hodnota  
   
 ## <a name="remarks"></a>Poznámky  
- Funkce inicializuje paměti, které přiděluje na hodnotu nula, pokud se používá MEM_RESET. Další informace najdete v tématu VirtualAlloc Win32 API.  
+ Funkce inicializuje přidělenou paměť na nulu, pokud není použit MEM_RESET. Další informace najdete v tématu VirtualAlloc Win32 API.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugdatatarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)

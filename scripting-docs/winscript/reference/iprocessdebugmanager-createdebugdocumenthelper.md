@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateDebugDocumentHelper | Microsoft Docs
+title: IProcessDebugManager::CreateDebugDocumentHelper | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b57f941017a0eef7892d43be9ed0414645e55e0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62f61f00d2b5f850848efbcf3df65c5a3b10de3c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794811"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090480"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
 Vytvoří nového pomocníka dokumentu ladění pro tuto aplikaci.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateDebugDocumentHelper(  
    IUnknown*               punkOuter,  
    IDebugDocumentHelper**  pddh  
@@ -39,20 +39,20 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>Parametry  
  `punkOuter`  
- [v] Pokud má být agregován, vráceného objektu `punkOuter` je ukazatele rozhraní pro řízení `IUnknown`. Jinak je ukazatel s hodnotou null.  
+ [in] Pokud vrácený objekt je agregován, `punkOuter` je ukazatel rozhraní k řízení `IUnknown`. V opačném případě je ukazatel s hodnotou null.  
   
  `pddh`  
  [out] Ladění objekt pomocníka dokumentu pro tuto aplikaci.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vytvoří nového pomocníka dokumentu ladění pro tuto aplikaci.  
+ Tato metoda vytvoří nový dokument pomocný ladění pro tuto aplikaci.  
   
 ## <a name="see-also"></a>Viz také  
- [Iprocessdebugmanager – rozhraní](../../winscript/reference/iprocessdebugmanager-interface.md)
+ [IProcessDebugManager – rozhraní](../../winscript/reference/iprocessdebugmanager-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebugOutput | Microsoft Docs
+title: IApplicationDebugger::onDebugOutput | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c660222ebc136c57605dd0fda2c7f5fa88c368c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed29673735038e9664324e9e342be199705348d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793725"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088358"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
-Zpracovává událost ladění výstupu.  
+Zpracovává událost výstupu ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onDebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -38,17 +38,17 @@ HRESULT onDebugOutput(
   
 #### <a name="parameters"></a>Parametry  
  `pstr`  
- [v] Řetězec k zobrazení v ladicím programu.  
+ [in] Řetězec k zobrazení v ladicím programu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Ladicí program obvykle zobrazí `pstr` v okně výstupu.  
+ Ladicí program obvykle zobrazí `pstr` v okně výstup.  
   
  Tato metoda je volána, když `IDebugApplication::DebugOutput` je volána.  
   

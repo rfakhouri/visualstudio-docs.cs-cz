@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetDocumentClassId | Microsoft Docs
+title: IDebugDocumentInfo::GetDocumentClassId | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3d29cf19752da18b76f31b4d12cecb05592c00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 65f43f3dbf76c9055bc4e521435ab56b1c7c6e40
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794223"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086759"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
-Vrátí `CLSID` identifikace typu dokumentu.  
+Vrátí `CLSID` určující typ dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentClassId(  
    CLSID*  pclsidDocument  
 );  
@@ -38,19 +38,19 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>Parametry  
  `pclsidDocument`  
- [out] A `CLSID` identifikace typu dokumentu.  
+ [out] A `CLSID` určující typ dokumentu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda umožňuje ladicí program IDE na vlastní prohlížeče hostitele k tomuto dokumentu.  
+ Tato metoda umožňuje ladicímu programu IDE vlastních prohlížečů hostitele pro tento dokument.  
   
- Pokud dokument zobrazit data, vrátí hodnotu, která nemá `pclsidDocument` je `CLSID_NULL`.  
+ Pokud dokument neobsahuje žádná data zobrazit, návratová hodnota `pclsidDocument` je `CLSID_NULL`.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumentinfo – rozhraní](../../winscript/reference/idebugdocumentinfo-interface.md)
+ [IDebugDocumentInfo – rozhraní](../../winscript/reference/idebugdocumentinfo-interface.md)

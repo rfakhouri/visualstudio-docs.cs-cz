@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Microsoft Docs
+title: IDispatchEx::GetNextDispID | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 24aa5ad2b780d5ff61efcde4d24b6700bb5b353e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794709"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092986"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
-Vytvoří výčet členů objektu.  
+Vytvoří výčet členy objektu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetNextDispID(  
    DWORD grfdex,  
    DISPID id,  
@@ -40,20 +40,20 @@ HRESULT GetNextDispID(
   
 #### <a name="parameters"></a>Parametry  
  `grfdex`  
- Určuje, které sadu položek vytvořit její výčet. To může být kombinací následujícího:  
+ Určuje, které sadu položek vytvořit výčet. To může být kombinací následujícího:  
   
 |Hodnota|Význam|  
 |-----------|-------------|  
-|fdexEnumDefault|Požadavky, že objekt vytvoří výčet výchozí prvky. Objekt je dovoleno vytvořit výčet všech sadu elementů.|  
-|fdexEnumAll|Požadavky na objekt zobrazí všechny elementy. Objekt je dovoleno vytvořit výčet všech sadu elementů.|  
+|fdexEnumDefault|Požadavky, že objekt vytvoří výčet výchozími prvky. Objekt může vytvořit výčet všech sadu elementů.|  
+|fdexEnumAll|Požadavky, že objekt vytvoří výčet všech prvků. Objekt může vytvořit výčet všech sadu elementů.|  
   
  `id`  
- Určuje aktuálního člena. Getnextdispid – načte položku ve výčtu po touto. Používá getdispid – nebo předchozí volání getnextdispid – k získání tohoto identifikátoru. Používá hodnotu DISPID_STARTENUM získat první identifikátor první položka.  
+ Identifikuje aktuálního člena. Getnextdispid – načte položku ve výčtu po tomto požadavku. Getdispid – nebo předchozí volání getnextdispid – používá k získání tento identifikátor. Použije se hodnota DISPID_STARTENUM získat první identifikátor první položky.  
   
  `pid`  
- Adresa DISPID proměnné, která přijímá identifikátor další položky ve výčtu.  
+ Adresa proměnné DISPID, která přijímá identifikátor na další položku ve výčtu.  
   
- Pokud je člen odstraní `DeleteMemberByName` nebo `DeleteMemberByDispID`, `DISPID` musí jsou dál platné pro `GetNextDispID`.  
+ Pokud je člen odstraní `DeleteMemberByName` nebo `DeleteMemberByDispID`, `DISPID` jsou dál platné pro je potřeba `GetNextDispID`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Vrátí jednu z následujících hodnot:  
@@ -61,11 +61,11 @@ HRESULT GetNextDispID(
 |||  
 |-|-|  
 |`S_OK`|Úspěch.|  
-|`S_FALSE`|Výčet provádí.|  
+|`S_FALSE`|Výčet je Hotovo.|  
   
 ## <a name="example"></a>Příklad  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

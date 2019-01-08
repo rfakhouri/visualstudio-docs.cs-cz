@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs
+title: IApplicationDebugger::CreateInstanceAtDebugger | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,22 +18,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6495c2d8782d1128700bdfb6d4081b80ffae878
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a6af315f25aa333ace4be7bb8e3584573f0cfd1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793884"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090919"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Umožňuje vytvoření objektů v procesu ladicí program kódem tedy out-of-process pro ladicí program.  
+Povolí vytváření objektů v procesu ladicího programu pomocí kódu, který je mimo proces v ladicím programu.  
   
 > [!IMPORTANT]
->  Tato metoda neměli byste je implementovat, protože umožňuje nedůvěryhodné kód k vytvoření libovolné objekty ve vláknu důvěryhodné ladicí program.  
+>  Tato metoda by neměla být implementována, protože umožňuje nedůvěryhodný kód k vytvoření libovolného objektů ve vlákně důvěryhodné ladicího programu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateInstanceAtDebugger(  
    REFCLSID    rclsid,  
    IUnknown*   pUnkOuter,  
@@ -45,31 +45,31 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Parametry  
  `rclsid`  
- [v] Identifikátor (CLSID) objekt k vytvoření třídy.  
+ [in] Identifikátor (CLSID) objekt k vytvoření třídy.  
   
  `pUnkOuter`  
- [v] Pokud `NULL`, není právě objektu vytvořeny jako součást agregace. V opačném `pUnkOuter` je ukazatel na agregovaný objekt `IUnknown` rozhraní (řízení `IUnknown`).  
+ [in] Pokud `NULL`, není objekt vytváří jako součást agregace. V opačném případě `pUnkOuter` je ukazatel na agregovaný objekt `IUnknown` rozhraní (řízení `IUnknown`).  
   
  `dwClsContext`  
- [v] Kontext pro spuštění spustitelného souboru kódu. Hodnoty jsou převzaty z výčtu `CLSCTX`.  
+ [in] Kontext spuštění spustitelného kódu. Hodnoty pocházejí z výčtu `CLSCTX`.  
   
  `riid`  
- [v] Identifikátor rozhraní používaný ke komunikaci s daným objektem.  
+ [in] Identifikátor rozhraní používaný ke komunikaci s objektem.  
   
  `ppvObject`  
- [out] Adresa proměnné ukazatele, která přijímá ukazatel rozhraní požadované v `riid`. Po úspěšné návratu *`ppvObject` obsahuje ukazatel požadované rozhraní. Při selhání \* `ppvObject` obsahuje `NULL`.  
+ [out] Adresa proměnné ukazatele, která přijímá ukazatel rozhraní požadované `riid`. Po návratu úspěšné *`ppvObject` obsahuje ukazatel požadované rozhraní. Po selhání \* `ppvObject` obsahuje `NULL`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda deleguje `CoCreateInstance`.  
+ Tato metoda delegoval vůči `CoCreateInstance`.  
   
- Metoda není implementována aktuálně.  
+ Metoda teď není implementovaná.  
   
 ## <a name="see-also"></a>Viz také  
- [Iapplicationdebugger – rozhraní](../../winscript/reference/iapplicationdebugger-interface.md)
+ [IApplicationDebugger – rozhraní](../../winscript/reference/iapplicationdebugger-interface.md)

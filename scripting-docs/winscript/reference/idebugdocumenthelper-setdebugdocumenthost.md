@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDebugDocumentHost | Microsoft Docs
+title: IDebugDocumentHelper::SetDebugDocumentHost | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d1377edaa5b10a7ebb06713e512010be010a9d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c4a935d849fed2b617abf5ee33ca2901b9c944c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794064"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088215"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-Nastaví `IDebugDocumentHost` tohoto dokumentu.  
+Nastaví `IDebugDocumentHost` pro tento dokument.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetDebugDocumentHost(  
    IDebugDocumentHost*  pddh  
 );  
@@ -38,18 +38,18 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>Parametry  
  `pddh`  
- [v] Hostitel dokumentu ladění.  
+ [in] Dokument hostitele ladění.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- `IDebugDocumentHost` Rozhraní se používá pro barevné zvýrazňování syntaxe čipové hostitele, načítání odložené text a vrácení řízení objekty pro nově vytvořený dokumentu kontexty.  
+ `IDebugDocumentHost` Rozhraní se používá pro barevné zvýrazňování syntaxe smart-host, načítání odložené text a vrátí řízení objektů pro nově vytvořený dokument kontexty.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [Idebugdocumenthost – rozhraní](../../winscript/reference/idebugdocumenthost-interface.md)
+ [IDebugDocumentHost – rozhraní](../../winscript/reference/idebugdocumenthost-interface.md)

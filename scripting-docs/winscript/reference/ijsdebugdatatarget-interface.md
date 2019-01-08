@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget – rozhraní | Microsoft Docs
+title: Ijsdebugdatatarget – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94e158ced0da6d59bfcadeb87bf206c94a6099ad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e14046443ca0560deacb6ddb6e39b1fc25d18fea
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794937"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097419"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget – rozhraní
-Implementované ladicí program nabízí funkce pro přístup k a změní stav tento cílový proces ladicího programu.  
+Implementovaný ladicí program poskytuje funkce pro přístup a změnu stavu cílového procesu ladicího programu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsDebugDataTarget : public IUnknown;  
 ```  
   
@@ -34,15 +34,15 @@ IJsDebugDataTarget : public IUnknown;
   
 |Název|Popis|  
 |----------|-----------------|  
-|[Ijsdebugdatatarget::allocatevirtualmemory – metoda](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Rezerv nebo potvrdí oblasti paměti ve virtuálním adresním prostoru tento cílový proces.|  
-|[Ijsdebugdatatarget::createstackframeenumerator – metoda](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Vytvoří enumerátor pro rámce zásobníku.|  
-|[Ijsdebugdatatarget::FreeVirtualMemory – metoda](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Uvolní nebo decommits oblasti paměti ve virtuálním adresním prostoru tento cílový proces.|  
-|[Ijsdebugdatatarget::getthreadcontext – metoda](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Načte kontext pro danou přístup z více vláken.|  
-|[Ijsdebugdatatarget::gettlsvalue – metoda](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Pro vlákno laděné načte hodnotu ve slotu přístup z více vláken místní úložiště (TLS) pro zadaný index TLS.|  
-|[Ijsdebugdatatarget::readbstr – metoda](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Čte BSTR z cíl ladění.|  
-|[Ijsdebugdatatarget::readmemory – metoda](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Přečte paměť tento cílový proces.|  
-|[Ijsdebugdatatarget::readnullterminatedstring – metoda](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Přečte zadaný počet znaků z cíle.|  
-|[Ijsdebugdatatarget::writememory – metoda](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Přečte paměť tento cílový proces.|  
+|[IJsDebugDataTarget::AllocateVirtualMemory – metoda](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Rezervuje a/nebo potvrdí změny v oblasti paměti v rámci virtuálního adresového prostoru cílového procesu.|  
+|[IJsDebugDataTarget::CreateStackFrameEnumerator – metoda](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Vytvoří čítač pro rámce zásobníku.|  
+|[IJsDebugDataTarget::FreeVirtualMemory – metoda](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Uvolní a/nebo rozváže oblast paměti v rámci virtuálního adresového prostoru cílového procesu.|  
+|[IJsDebugDataTarget::GetThreadContext – metoda](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Načte kontext pro uvedená vlákna.|  
+|[IJsDebugDataTarget::GetTlsValue – metoda](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Pro vlákno, který se právě ladí načte hodnotu ve slotu vlákno místní úložiště (TLS) pro zadaný index TLS.|  
+|[IJsDebugDataTarget::ReadBSTR – metoda](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Čtení BSTR z cíle ladění.|  
+|[IJsDebugDataTarget::ReadMemory – metoda](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Čtení paměti cílového procesu.|  
+|[IJsDebugDataTarget::ReadNullTerminatedString – metoda](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Přečte zadaný počet znaků z cíle.|  
+|[IJsDebugDataTarget::WriteMemory – metoda](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Čtení paměti cílového procesu.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  

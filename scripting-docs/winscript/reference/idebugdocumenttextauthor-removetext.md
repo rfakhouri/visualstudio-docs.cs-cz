@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::RemoveText | Microsoft Docs
+title: IDebugDocumentTextAuthor::RemoveText | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24a366b35c777d09a14a0ad96e0f6dc25c03a26b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8972c0ed03a7d926d080382a7825c295ca7c72a1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794202"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097094"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
 Odebere text z dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT RemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -39,13 +39,13 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [v] Spusťte umístění znaku oblast, kterou chcete odebrat.  
+ [in] Počáteční umístění rozsahu znaků na odebrat.  
   
  `cNumToRemove`  
- [v] Počet znaků k odebrání.  
+ [in] Počet znaků, které mají odebrat.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  

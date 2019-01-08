@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser | Microsoft Docs
+title: IDebugHelper::CreatePropertyBrowser | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f728068b6d1db6fe70a084ae680f32a78a0a2760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3eedf9d6ed07b510d7912a5b28d23e0a1f05dda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794397"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087747"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Vrátí prohlížeči vlastností, které zabaluje hodnotu typu VARIANT.  
+Vrátí prohlížeč vlastnost, která obaluje hodnotu typu VARIANT.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowser(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -41,28 +41,28 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>Parametry  
  `pvar`  
- [v] Kořenové variant Procházet.  
+ [in] Kořenový typ variant Procházet.  
   
  `bstrName`  
- [v] Název umožnit kořenu.  
+ [in] Název kořenové.  
   
  `pdat`  
- [v] Vlákna na to, aby vlastnosti. Pokud tento parametr hodnotu NULL, není zařazování probíhá.  
+ [in] Vlákno, na kterém chcete požadovat vlastnosti. Pokud tento parametr hodnotu NULL, se neprovádí žádné zařazení.  
   
  `ppdob`  
  [out] Prohlížeč vlastností.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí hodnotu vlastnosti prohlížeč, který zabalí hodnotu typu VARIANT.  
+ Tato metoda vrátí prohlížeč vlastnost, která obaluje hodnotu typu VARIANT.  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
  [Idebughelper – rozhraní](../../winscript/reference/idebughelper-interface.md)   
- [Idebugproperty – rozhraní](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty – rozhraní](../../winscript/reference/idebugproperty-interface.md)

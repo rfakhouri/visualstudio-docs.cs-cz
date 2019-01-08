@@ -1,5 +1,5 @@
 ---
-title: PROFILER_RELATIONSHIP_INFO – výčet | Microsoft Docs
+title: Profiler_relationship_info – výčet | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f01ca5e001d45907af70b46b6dc362e8ae0b2044
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e95b11537873d3bfe02bf3fa793b61ace10938aa
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796332"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095807"
 ---
 # <a name="profilerrelationshipinfo-enumeration"></a>PROFILER_RELATIONSHIP_INFO – výčet
-Představuje informace o objektu v relaci. Použít v [profiler_heap_object_relationship – struktura](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
+Představuje informace o objektu ve vztahu. Použít v [profiler_heap_object_relationship – struktura](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PROPERTY_TYPE_STRING = 0x02,    PROFILER_PROPERTY_TYPE_HEAP_OBJECT = 0x03,    PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT = 0x04,    PROFILER_PROPERTY_TYPE_BSTR = 0x05,} PROFILER_RELATIONSHIP_INFO;  
 ```  
   
@@ -35,6 +35,6 @@ typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PR
 |PROFILER_PROPERTY_TYPE_NUMBER|0x01|Objekt je číslo.|  
 |PROFILER_PROPERTY_TYPE_STRING|0x02|Objekt je řetězec.|  
 |PROFILER_PROPERTY_TYPE_HEAP_OBJECT|0x03|Objekt je objekt haldy.|  
-|PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT|0x04|Objekt není externí, který je v haldě kolekce paměti.|  
+|PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT|0x04|Objekt není externí, tedy na haldě uvolňování paměti.|  
 |PROFILER_PROPERTY_TYPE_BSTR|0x05|Objekt je BSTR.|  
 |PROFILER_PROPERTY_TYPE_SUBSTRING|0x06|Objekt je dílčí řetězec.|

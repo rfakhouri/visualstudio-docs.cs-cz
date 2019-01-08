@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Microsoft Docs
+title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a96a382c1dce73731fdd4326d8b0d1c35b7aa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c34ce267113ae5576a8b3bdca9ac34d4abc00f7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794427"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086968"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
 Vrátí enumerátor rámce zásobníku pro aktuální vlákno.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnumStackFramesEx(  
    DWORD_PTR                dwSpMin,  
    IEnumDebugStackFrames**  ppedsf  
@@ -39,20 +39,20 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>Parametry  
  `dwSpMin`  
- [v] Dolní limit adresa pro vytvoření výčtu rámce zásobníku.  
+ [in] Dolní mez adresu pro výčet rámců zásobníku.  
   
  `ppedsf`  
  [out] Enumerátor rámce zásobníku pro aktuální vlákno.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Vrátí enumerátor rámce zásobníku rámce spouštění v horní části zásobníku se nedávno stisknutí rámečku. Enumerátor obsahuje pouze rámce zásobníku s adresami větší než nebo rovna hodnotě `dwSpMin`.  
+ Enumerátor rámce zásobníku vrátí počet snímků, spouští se v horní části zásobníku s nedávno vložené rámce. Enumerátor obsahuje pouze rámce zásobníku pomocí adresy větší než nebo rovna hodnotě `dwSpMin`.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugstackframesnifferex – rozhraní](../../winscript/reference/idebugstackframesnifferex-interface.md)
+ [IDebugStackFrameSnifferEx – rozhraní](../../winscript/reference/idebugstackframesnifferex-interface.md)

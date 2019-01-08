@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::SetNextStatement | Microsoft Docs
+title: ISetNextStatement::SetNextStatement | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d21dafcd8cdb762e39f0cfcbde1162dd66c275ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2f21814d0739b304921108fcfdb3c3da80bee9b6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796317"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093116"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
-Tato metoda aktualizace další kontext kód, který se může spustit skript překladač.  
+Tato metoda aktualizuje další kontext kódu, která může spustit skript překladač.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -37,13 +37,13 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Parametry  
  `pStackFrame`  
- [v] Ukazatel na objekt rámce zásobníku.  
+ [in] Ukazatel na objekt rámce zásobníku.  
   
  `pCodeContext`  
- [v] Ukazatel na objekt kontextu kódu.  
+ [in] Ukazatel na objekt kontextu kódu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT SetNextStatement(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Isetnextstatement – rozhraní](../../winscript/reference/isetnextstatement-interface.md)
+ [ISetNextStatement – rozhraní](../../winscript/reference/isetnextstatement-interface.md)

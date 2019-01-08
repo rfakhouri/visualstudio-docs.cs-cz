@@ -1,5 +1,5 @@
 ---
-title: Ijsdebug – rozhraní | Microsoft Docs
+title: Ijsdebug – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724036182638dbe3d253730c42e835250e6eaa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 16f0da202e937a92a8e76dddc27d9da7bc61c4ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794457"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089411"
 ---
 # <a name="ijsdebug-interface"></a>IJsDebug – rozhraní
 Vstupní bod pro ladění jazyka JavaScript.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsDebug : public IUnknown;  
 ```  
   
@@ -34,7 +34,7 @@ IJsDebug : public IUnknown;
   
 |Název|Popis|  
 |----------|-----------------|  
-|[Ijsdebug::openvirtualprocess – metoda](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Metoda Factory používaná k vytvoření nového objektu virtuálního procesu.|  
+|[IJsDebug::OpenVirtualProcess – metoda](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Metody výroby použité k vytvoření nového objektu virtuálního procesu.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  

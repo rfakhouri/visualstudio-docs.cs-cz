@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetText | Microsoft Docs
+title: IScriptEntry::SetText | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62f1d113dc23dca85db02bf23b2c79551108f3b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1a100b406365590bbba392afd7558e2fb7219ccb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794850"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096353"
 ---
 # <a name="iscriptentrysettext"></a>IScriptEntry::SetText
 Nastaví text, který odpovídá `IScriptEntry` bloku skriptu nebo zdrojový kód, který je součástí `IScriptScriptlet` obslužné rutiny události.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetText(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetText(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [v] Text `IScriptEntry` bloku skriptu nebo zdrojový kód `IScriptScriptlet` obslužné rutiny události.  
+ [in] Text `IScriptEntry` bloku skriptu nebo zdrojový kód `IScriptScriptlet` obslužné rutiny události.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -50,4 +50,4 @@ HRESULT SetText(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Iscriptentry – rozhraní](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry – rozhraní](../../winscript/reference/iscriptentry-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Výčet Script_error_debug_exception_thrown_kind | Microsoft Docs
+title: Výčet SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,22 +12,22 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fe5b308ea75956d9e5826b4daadaef3a823141f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 997c5149467591a7612e6ff10b0efcc3efbc91bf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796398"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087799"
 ---
 # <a name="scripterrordebugexceptionthrownkind-enumeration"></a>Výčet SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
-Označuje druh vyvolané výjimky. Tento výčet je používán [IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) metoda.  
+Označuje druh vyvolané výjimky. Tento výčet je používán [IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) metody.  
   
 > [!IMPORTANT]
 >  Tyto konstanty jsou implementovány modulem PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND  
 ```  
   
@@ -40,4 +40,4 @@ typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
 |ETK_UNHANDLED|0x00000002|Tato výjimka není ošetřena v kódu.|  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescripterrordebug110 – rozhraní](../../winscript/reference/iactivescripterrordebug110-interface.md)
+ [IActiveScriptErrorDebug110 – rozhraní](../../winscript/reference/iactivescripterrordebug110-interface.md)

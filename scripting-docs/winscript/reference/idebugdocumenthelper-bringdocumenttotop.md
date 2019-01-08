@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentToTop | Microsoft Docs
+title: IDebugDocumentHelper::BringDocumentToTop | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,27 +18,27 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34da5d19b927bf80c05675cbc6871b0a26801247
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4992b68d0644e6183e62577bdec9be86f50df592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794094"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086954"
 ---
 # <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
-Přináší tento dokument pro horní v ladicím programu uživatelské rozhraní.  
+Přináší tento dokument nahoru v ladicím programu uživatelského rozhraní.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT BringDocumentToTop();  
 ```  
   
 #### <a name="parameters"></a>Parametry  
- Tato metoda nepřijímá žádné parametry.  
+ Tato metoda nemá žádné parametry.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -48,4 +48,4 @@ HRESULT BringDocumentToTop();
  Tato metoda spustí ladicí program, pokud ještě není spuštěný.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDeferredText | Microsoft Docs
+title: IDebugDocumentHelper::AddDeferredText | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c92909874429075bebc6a1f0a252573d049584e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba6f945e6c7fa4df83a5e301d73b3fc0bb9da92b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794715"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096080"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
-Pomocné rutiny upozorní, že zadaný text je k dispozici, ale neposkytuje znaky.  
+Pomocná rutina upozorní, že daný text je k dispozici, ale neposkytuje znaky.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddDeferredText(  
    ULONG  cChars,  
    DWORD  dwTextStartCookie  
@@ -39,26 +39,26 @@ HRESULT AddDeferredText(
   
 #### <a name="parameters"></a>Parametry  
  `cChars`  
- [v] Počet znaků (Unicode) Chcete-li přidat.  
+ [in] Počet znaků (Unicode) Chcete-li přidat.  
   
  `dwTextStartCookie`  
- [v] Definované hostitele souboru cookie, který představuje počáteční pozici textu.  
+ [in] Hostitel definované souboru cookie, který představuje počáteční pozici textu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
-|`E_FAIL`|Metoda se nezdařilo.|  
+|`E_FAIL`|Metoda se nezdařila.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda umožňuje hostiteli odložení poskytování znaků, které chcete přidat, dokud není potřeba, zatímco pomocné rutiny pro generování přesné oznámení a informace o velikosti. `dwTextStartCookie` Parametr je soubor cookie definované hostitele, který představuje počáteční pozici textu. Následující volání `IDebugDocumentText::GetText` musíte zadat Tento soubor cookie. V hostiteli, který reprezentuje text v DBCS, soubor cookie může být například posun bajtů.  
+ Tato metoda umožňuje hostiteli odložit poskytuje znaky, které chcete přidat, dokud nejsou potřeba, přičemž pomocné rutiny pro generování přesné oznámení a informace o velikosti. `dwTextStartCookie` Parametr je soubor cookie, určené hostitele, který představuje počáteční pozici textu. Následující volání `IDebugDocumentText::GetText` musíte zadat Tento soubor cookie. Například v hostiteli, který reprezentuje text v DBCS, může být soubor cookie bajtovým posunem.  
   
- Předpokládá se, který jediné volání `IDebugDocumentText::GetText` můžete získat znaky z více volání `AddDeferredText`. Pomocné třídy může také požádat o stejný rozsah odložené znaků více než jednou.  
+ Předpokládá se, že jediné volání `IDebugDocumentText::GetText` můžete získat znaky z více volání `AddDeferredText`. Pomocné třídy mohou také požádat o stejný rozsah znaků odložené více než jednou.  
   
 > [!NOTE]
->  Volání `AddDeferredText` by neměl být ve smíšeném pomocí volání `AddUnicodeText` nebo `AddDBCSText`. Pokud k tomu dojde, `E_FAIL` je vrácen.  
+>  Volání `AddDeferredText` by neměl být směšovat s voláními `AddUnicodeText` nebo `AddDBCSText`. Pokud k tomu dojde, `E_FAIL` je vrácena.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)   

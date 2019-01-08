@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe::getdebugproperty – metoda | Microsoft Docs
+title: Ijsdebugframe::getdebugproperty – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1e47a7097c302532ec06b8985b9e9318c0ad4cc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b8640eb2bad9633e77797a5ce2348833dbee80d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794619"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089905"
 ---
 # <a name="ijsdebugframegetdebugproperty-method"></a>IJsDebugFrame::GetDebugProperty – metoda
-Vrátí prohlížeči vlastnost pro tento rámce zásobníku.  
+Vrátí prohlížeč vlastnost pro tento rámec zásobníku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDebugProperty(  
    IJsDebugProperty **ppDebugProperty  
 );  
@@ -36,7 +36,7 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>Parametry  
  `ppDebugProperty`  
- [out] Objekt reprezentující prohlížeč vlastností.  
+ [out] Objekt reprezentující vlastnost prohlížeče.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
@@ -44,4 +44,4 @@ HRESULT GetDebugProperty(
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugframe – metoda](../../winscript/reference/ijsdebugframe-interface.md)
+ [IJsDebugFrame – rozhraní](../../winscript/reference/ijsdebugframe-interface.md)

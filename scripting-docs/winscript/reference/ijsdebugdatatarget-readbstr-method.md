@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::readbstr – metoda | Microsoft Docs
+title: Ijsdebugdatatarget::readbstr – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85fbdb556b59c67610ad65b7e1f056399ad6da58
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afd216c869cd88a643f68f0abd1fc095a675e24b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794613"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095794"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR – metoda
-Čte BSTR z cíl ladění.  
+Čtení BSTR z cíle ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ReadBSTR(  
    UINT64 address,  
    BSTR *pString  
@@ -37,10 +37,10 @@ HRESULT ReadBSTR(
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [v] Adresa číst z.  
+ [in] Adresa pro čtení z.  
   
  `pString`  
- [out] BSTR číst z cíl ladění.  
+ [out] Čtení BSTR z cíle ladění.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
@@ -51,4 +51,4 @@ HRESULT ReadBSTR(
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugdatatarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)

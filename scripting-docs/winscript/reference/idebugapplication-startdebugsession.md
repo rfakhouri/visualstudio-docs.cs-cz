@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StartDebugSession | Microsoft Docs
+title: IDebugApplication::StartDebugSession | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,34 +18,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aea5caead4921206428c2f1f36b74d057c8cef36
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 453286e310a6f16576d947cceb1947945f8627d3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793785"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086480"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
-Spustí výchozí ladicí program integrované vývojové prostředí (IDE) a připojí na relaci ladění aplikace, pokud již není připojen.  
+Spustí výchozí ladicí program integrovaného vývojového prostředí (IDE) a připojí ladicí relace pro tuto aplikaci, pokud už není připojen.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT StartDebugSession();  
 ```  
   
 #### <a name="parameters"></a>Parametry  
- Tato metoda nepřijímá žádné parametry.  
+ Tato metoda nemá žádné parametry.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda se používá k implementaci ladění za běhu.  
+ Tato metoda se používá k implementaci Ladění just-in-time.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)

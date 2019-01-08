@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::PrepareProfilerStop | Microsoft Docs
+title: IActiveScriptProfilerControl2::PrepareProfilerStop | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78078cd874be1d7d3d169be2d3d70e65866be3fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 086ec8b4a126c65162638afde4d8081269757e1c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793431"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089515"
 ---
 # <a name="iactivescriptprofilercontrol2prepareprofilerstop"></a>IActiveScriptProfilerControl2::PrepareProfilerStop
-Jestli chcete zastavit profilování na všechny příslušné skriptovacích strojů upozorní profileru. Pomocí této metody můžete získat zásobníku dokončení volání, pokud [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] běží při zastavení profilování.  
+Oznámí profileru, že chcete zastavit profilaci ve všech příslušných skriptovacích strojů. Tímto způsobem můžete získat úplný zásobník volání, pokud [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] běží při zastavení profilování.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT PrepareProfilerStop();  
 ```  
   
@@ -34,18 +34,18 @@ HRESULT PrepareProfilerStop();
  Metoda nepřijímá žádné parametry.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí HRESULT. Možné hodnoty jsou následující:  
+ Vrátí hodnotu HRESULT. Možné hodnoty jsou následující:  
   
 |Návratová hodnota|Význam|  
 |------------------|-------------|  
 |`S_OK`|Metoda byla úspěšná.|  
-|`E_FAIL`|Profilace se nepodařilo spustit.|  
+|`E_FAIL`|Nebylo možné spustit profilaci.|  
 |`S_FALSE`|Profilace byla zastavena, když skript nebyl spuštěn.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profilace není povoleno.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profilace není povolená.|  
   
 ## <a name="remarks"></a>Poznámky  
- Volání metody `IActiveScriptProfilerControl2::PrepareProfilerStop` zajistí, že se odesílají události pro funkce v zásobníku volání. Tato metoda je volána před provedením zastavit profilování v jakéhokoli skriptovací stroje, který je na kartě aktuální. Metodu lze volat pro všechny skriptovacího stroje.  
+ Volání `IActiveScriptProfilerControl2::PrepareProfilerStop` zajistí, že jsou odesílány události pro funkce v zásobníku volání. Tato metoda má být volána před zastavit profilaci ve všech skriptovací stroj, který je na aktuální kartě. Metodu lze volat pro jakékoli skriptovací stroj.  
   
 ## <a name="see-also"></a>Viz také  
  [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
- [Iactivescriptprofilercontrol2 – rozhraní](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)
+ [IActiveScriptProfilerControl2 – rozhraní](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

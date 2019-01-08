@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnLeaveBreakPoint | Microsoft Docs
+title: IRemoteDebugApplicationEvents::OnLeaveBreakPoint | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9afb48ceca742ef736dd8f79ba8c3d96e3a56a82
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c53f19de5fcff4160ed1255435b91c9ad320ad0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794766"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092245"
 ---
 # <a name="iremotedebugapplicationeventsonleavebreakpoint"></a>IRemoteDebugApplicationEvents::OnLeaveBreakPoint
-Zpracovává událost pro ponechat zarážky.  
+Zpracovává událost opuštění zarážku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnLeaveBreakPoint(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -38,17 +38,17 @@ HRESULT OnLeaveBreakPoint(
   
 #### <a name="parameters"></a>Parametry  
  `prdat`  
- [v] Vlákno aplikace, které zbývajících zarážku.  
+ [in] Vlákna aplikace, který zbývá zarážku.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda zpracovává událost pro ponechat zarážky.  
+ Tato metoda zpracovává událost opuštění zarážku.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplicationevents – rozhraní](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+ [IRemoteDebugApplicationEvents – rozhraní](../../winscript/reference/iremotedebugapplicationevents-interface.md)

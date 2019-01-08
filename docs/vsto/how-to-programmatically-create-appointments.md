@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 - Outlook calendars [Office development in Visual Studio], creating appointments
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ff13c3379bfdc672f467e2e0685d75afc7e387
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc3c61c8dd2314c536484ef3129b468e3378150a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959797"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089258"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>Postupy: Vytváření událostí prostřednictvím kódu programu
   Tento příklad vytvoří událost a přidá příjemce do žádostí o schůzku událost.  

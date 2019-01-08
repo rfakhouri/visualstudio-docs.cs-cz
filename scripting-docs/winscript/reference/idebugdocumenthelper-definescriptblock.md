@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::DefineScriptBlock | Microsoft Docs
+title: IDebugDocumentHelper::DefineScriptBlock | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6ec86dacc2e3a8f3d9e28a6db744b778ff01eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794253"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087994"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Signalizuje do pomocné rutiny konkrétní rozsah znaků blok skriptu, který zpracovává daný skriptovací stroj.  
+Signalizuje možnost do pomocné rutiny určitého rozsahu znaků blok skriptu, který zařizuje služba dané skriptovací stroj.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT DefineScriptBlock(  
    ULONG           ulCharOffset,  
    ULONG           cChars,  
@@ -42,33 +42,33 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>Parametry  
  `ulCharOffset`  
- [v] Umístění začátku bloku skriptu.  
+ [in] Umístění začátku bloku skriptu.  
   
  `cChars`  
- [v] Počet znaků v bloku skriptu.  
+ [in] Počet znaků v bloku skriptu.  
   
  `pas`  
- [v] Skriptovací stroj pro daný blok skriptu.  
+ [in] Skriptovací stroj pro daný blok skriptu.  
   
  `fScriptlet`  
- [v] Příznak, který označuje, zda blok skriptu skriptletu.  
+ [in] Příznak, který určuje, zda je blok skriptu skriptletu.  
   
  `pdwSourceContext`  
- [out] Kontext zdroje v bloku skriptu.  
+ [out] Místní zdroje v bloku skriptu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tuto metodu můžete použít inteligentního hostitele, když jeho dokumenty obsahují bloky vloženého skriptu. Tuto metodu můžete použít modul jazyka, když jeho kód obsahuje vložené skripty pro jiné jazyky.  
+ Inteligentního hostitele lze tuto metodu použijte, když svoje dokumenty obsahují bloků vloženého skriptu. Tuto metodu můžete použít modul jazyka, když jeho kód obsahuje vložené skripty pro jiné jazyky.  
   
- Skriptovací stroj je zodpovědná za všechny syntaxe barevné zvýrazňování a kód kontextu vyhledávání v bloku skriptu.  
+ Skriptovací stroj je zodpovědná za všechny syntaxe barevné zvýrazňování a kód místní vyhledávání v bloku skriptu.  
   
- `DefineScriptBlock` Metoda by měla být volána po přidání text (například pomocí `IDebugDocumentHelper::AddDBCSText` metoda), ale před skript bloku analýze (například pomocí `IActiveScriptParse ::ParseScriptText` metoda).  
+ `DefineScriptBlock` Metoda by měla být volána po přidání text (například pomocí `IDebugDocumentHelper::AddDBCSText` metoda), ale před skript má být blok (například pomocí `IActiveScriptParse ::ParseScriptText` – metoda).  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)   

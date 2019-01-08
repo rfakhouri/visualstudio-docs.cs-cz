@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetItemName | Microsoft Docs
+title: IScriptEntry::GetItemName | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdbb293afc6f58f8d9d9c1fe27bae467fd36792c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fc82dbd26fc2b9956b3d32596e5fa730b96f9a8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794880"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093454"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
-Vrátí název položky, které identifikují `IScriptEntry` objektu.  
+Vrátí název položky, který identifikuje `IScriptEntry` objektu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetItemName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetItemName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstr`  
- [out] Adresa vyrovnávací paměť, která obsahuje název položky. Název položky se používá pro hostitele k identifikaci položky.  
+ [out] Adresa vyrovnávací paměti, který obsahuje název položky. Název položky se hostitel používá k identifikaci položky.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -48,7 +48,7 @@ HRESULT GetItemName(
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pro `IScriptScriptlet` objekty, nastavte název položky pomocí [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Pro ostatní rozhraní nastavíte název položky pomocí [IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
+ Pro `IScriptScriptlet` objekty, nastavte název položky pomocí [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Pro jiná rozhraní, nastavte název položky pomocí [IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Iscriptentry – rozhraní](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry – rozhraní](../../winscript/reference/iscriptentry-interface.md)

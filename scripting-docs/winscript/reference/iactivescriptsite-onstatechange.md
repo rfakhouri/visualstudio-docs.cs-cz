@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnStateChange | Microsoft Docs
+title: IActiveScriptSite::OnStateChange | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae7782d713ab226e57e687cda8eb4ccdb54cf20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ee4fd06b00c674c9c50ce253186aeee3165bac66
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793479"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097406"
 ---
 # <a name="iactivescriptsiteonstatechange"></a>IActiveScriptSite::OnStateChange
-Informuje hostitele, že skriptovacího stroje se změnila stavy.  
+Informuje o hostiteli, že skriptovací stroj změnil stavy.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnStateChange(  
     SCRIPTSTATE ssScriptState  // new state of engine  
 );  
@@ -38,10 +38,10 @@ HRESULT OnStateChange(
   
 #### <a name="parameters"></a>Parametry  
  `ssScriptState`  
- [v] Hodnota určující nový stav skriptu. Najdete v článku [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) metoda popis stavy.  
+ [in] Hodnota, která označuje nové stavu skriptu. Zobrazit [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) metoda popis stavu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí `S_OK` v případě úspěchu.  
+ Vrátí `S_OK` v případě úspěšného ověření.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptsite –](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugproperty – rozhraní | Microsoft Docs
+title: Ijsdebugproperty – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 459a26f78e2dd5c2d1d85d829fd622d9d2697409
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e608da11e09020f12f6506f6830b5640f82688ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794532"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090244"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty – rozhraní
-Představuje vlastnost prohlížeče.  
+Představuje prohlížeč vlastností.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsDebugProperty : public IUnknown;  
 ```  
   
@@ -34,8 +34,8 @@ IJsDebugProperty : public IUnknown;
   
 |Název|Popis|  
 |----------|-----------------|  
-|[Ijsdebugproperty::GetMembers – metoda](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Získá členy tohoto objektu.|  
-|[Ijsdebugproperty::GetPropertyInfo – metoda](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Získá informace pro tento objekt.|  
+|[IJsDebugProperty::GetMembers – metoda](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Získá členy tohoto objektu.|  
+|[IJsDebugProperty::GetPropertyInfo – metoda](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Získá informace pro tento objekt.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  

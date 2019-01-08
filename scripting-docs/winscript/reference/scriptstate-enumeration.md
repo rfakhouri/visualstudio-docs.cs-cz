@@ -1,5 +1,5 @@
 ---
-title: SCRIPTSTATE – výčet | Microsoft Docs
+title: Scriptstate – výčet | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e062a9c2f3076144063ffb77895c8a03ecc4ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ff935e54e42eef6691948a7e0d91a495c5153adc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796464"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097796"
 ---
 # <a name="scriptstate-enumeration"></a>SCRIPTSTATE – výčet
-Určuje stav skriptovací stroje. Tento výčet je používán [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) , a [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody.  
+Určuje stav skriptovací stroj. Tento výčet je používán [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) , a [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef enum tagSCRIPTSTATE {  
     SCRIPTSTATE_UNINITIALIZED = 0,  
     SCRIPTSTATE_INITIALIZED   = 5,  
@@ -45,12 +45,12 @@ typedef enum tagSCRIPTSTATE {
   
 |||  
 |-|-|  
-|SCRIPTSTATE_UNINITIALIZED|Skript byl právě vytvořen, ale ještě nebyla inicializovaná pomocí `IPersist*` rozhraní a [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
-|SCRIPTSTATE_INITIALIZED|Skript byl inicializován, ale není používat (připojení k jiné objekty nebo zpracování událostí) nebo spuštěním jakéhokoli kódu. Kód může být dotázán na spuštění při volání [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md) metoda.|  
-|SCRIPTSTATE_STARTED|Skript může spustit kód, ale ještě není vnořování události objektů přidaných [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metoda.|  
-|SCRIPTSTATE_CONNECTED|Skript je načíst a připojení pro zpracování událostí.|  
-|SCRIPTSTATE_DISCONNECTED|Skript je načteno a má stav běhu spuštění, ale je dočasně odpojen od zpracování událostí.|  
-|SCRIPTSTATE_CLOSED|Skript byl uzavřen. Skriptovací stroje už funguje a vrátí chyby pro většinu metod.|  
+|SCRIPTSTATE_UNINITIALIZED|Skript byl právě vytvořen, ale ještě nebyl inicializován pomocí `IPersist*` rozhraní a [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
+|SCRIPTSTATE_INITIALIZED|Skript byl inicializován, ale není spuštěna (připojení k jiné objekty nebo zpracování události) nebo spuštěním jakéhokoli kódu. Může být dotázán kód pro spuštění pomocí volání [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md) metody.|  
+|SCRIPTSTATE_STARTED|Skript může spustit kód, ale není ještě zpracování událostí objektů přidal [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.|  
+|SCRIPTSTATE_CONNECTED|Skript je načten a připojen pro zpracování událostí.|  
+|SCRIPTSTATE_DISCONNECTED|Skript je načten a má stav provádění za běhu, ale je dočasně odpojen od zpracování událostí.|  
+|SCRIPTSTATE_CLOSED|Skript se zavřel. Skriptovací stroj už funguje a vrátí chyby pro většinu metod.|  
   
 ## <a name="see-also"></a>Viz také  
- [Aktivních skriptů konstanty, výčty a kódy chyb](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Konstanty, výčty a kódy chyb aktivních skriptů](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

@@ -9,12 +9,12 @@ description: Další informace o Enterprise Mobility + Security výhodu součás
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b6b4d4965ec2b7145ab388dff7df226ec16603e5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0e0af0c1f934163efeafd19110df7a30078bb23c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739594"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092063"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
@@ -62,7 +62,7 @@ Pokud chcete použít EMS, budete muset nastavit účet nebo se přihlaste pomoc
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.  Vyloučí: Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
+<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.  Vyloučí: Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *vyloučí programu Microsoft Partner Network (Professional)*
 
@@ -75,6 +75,6 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s EMS?  Podívejte se na online [dokumentace k EMS](/enterprise-mobility-security/).
--  Pro technickou podporu pro všechny součásti EMS, navštivte prosím https://support.microsoft.com/allproducts a vyberte produkt.
+-  Pro technickou podporu pro všechny součásti EMS, navštivte prosím [nejčastější dotazy podpory EMS](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq) najít správné podpory pro váš dotaz.
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

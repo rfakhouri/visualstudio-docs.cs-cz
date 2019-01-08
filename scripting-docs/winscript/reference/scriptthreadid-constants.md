@@ -1,5 +1,5 @@
 ---
-title: Scriptthreadid – konstanty | Microsoft Docs
+title: Scriptthreadid – konstanty | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc692716115ea0c205b1cfd982b189fffd54a9ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 27852f97cf0a78919b10043c64b1c5a7cc7d3ec5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796410"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097809"
 ---
 # <a name="scriptthreadid-constants"></a>SCRIPTTHREADID – konstanty
-Slouží k zadání typu přístup z více vláken.  
+Slouží k určení typu vlákna.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef DWORD SCRIPTTHREADID;  
 ```  
   
@@ -38,12 +38,12 @@ typedef DWORD SCRIPTTHREADID;
   
 |Konstanta|Hodnota|Význam|  
 |--------------|-----------|-------------|  
-|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Aktuálně prováděné vlákno.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|Základní podprocesu. To znamená, že byla vytvořena instance vláken, ve kterém skriptování modul.|  
+|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Aktuálně spuštěné vlákno.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|Základní podprocesu. To znamená, že byla vytvořena instance vláken, ve kterém skriptovací stroje.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Všechna vlákna.|  
   
 ## <a name="remarks"></a>Poznámky  
- `SCRIPTTHREADID` Typ se používá v `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, a `IActiveScript::InterruptScriptThread`, ale konstanty lze použít pouze `IActiveScript::GetScriptThreadState` a `IActiveScript::InterruptScriptThread`.  
+ `SCRIPTTHREADID` Typ se používá v `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, a `IActiveScript::InterruptScriptThread`, ale konstanty jde použít jenom ve `IActiveScript::GetScriptThreadState` a `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>Viz také  
  [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   

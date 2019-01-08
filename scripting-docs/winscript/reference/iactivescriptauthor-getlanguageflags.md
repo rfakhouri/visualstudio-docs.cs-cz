@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetLanguageFlags | Microsoft Docs
+title: IActiveScriptAuthor::GetLanguageFlags | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dca878d6d4fd15db4b516e37932fbfebd30607a2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793254"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093194"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
-Vrátí jazyk informace.  
+Vrátí informace o jazyce.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetLanguageFlags(  
    DWORD              *pgrfasa  
 );  
@@ -38,13 +38,13 @@ HRESULT GetLanguageFlags(
   
 #### <a name="parameters"></a>Parametry  
  `pgrfasa`  
- [out] Příznaky, které obsahují informace jazyk. Může být kombinací následujícího:  
+ [out] Příznaky, které obsahují informace o jazyce. Může být kombinací následujícího:  
   
 |Konstanta|Hodnota|Popis|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0x0001|Jazyk upřednostní vytvoření obslužné rutiny událostí skriptu skriptem vytváření modulu namísto aplikace.|  
-|fasaSupportInternalHandler|0x0002|Jazyk podporuje vytvořen skriptem vytváření modulu obslužné rutiny událostí skriptu.|  
-|fasaCaseSensitive|0x0004|Skriptovací jazyk je malá a velká písmena.|  
+|fasaPreferInternalHandler|0x0001|Jazyk upřednostňuje skript vytvoření obslužné rutiny událostí ve skriptu pro vytváření modulu namísto aplikace.|  
+|fasaSupportInternalHandler|0x0002|Jazyk podporuje vytvořen skriptem modul pro vytváření obslužných rutin událostí skriptu.|  
+|fasaCaseSensitive|0x0004|Skriptovací jazyk je velká a malá písmena.|  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -54,9 +54,9 @@ HRESULT GetLanguageFlags(
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pokud skript vytváření modul spravuje obslužné rutiny událostí, vaše aplikace by měly volat `CreateChildHandler` z `IScriptEntry` objektu. Tím se vytvoří `IScriptScriptlet` objekt, který odpovídá obslužné rutiny události. Obslužné rutiny události modul také přidá položku skriptu. Obslužné rutiny události je prázdný funkce, který obsahuje informace o zadané podpisu.  
+ Pokud skript pro tvorbu modul spravuje obslužné rutiny událostí, vaše aplikace měla zavolat `CreateChildHandler` ze `IScriptEntry` objektu. Tím se vytvoří `IScriptScriptlet` objekt, který odpovídá obslužné rutiny události. Modul také přidá obslužnou rutinu události k položce skriptu. Obslužná rutina události je prázdná funkce, která obsahuje informace o zadané podpisu.  
   
- Pokud vaše aplikace spravuje obslužné rutiny událostí, by měly volat `CreateChildHandler` z `IScriptNode` objekt, který reprezentuje skriptlet obslužná rutina události. Tím se vytvoří `IScriptScriptlet` objekt, který je přidružen skriptlet obslužná rutina události. Aplikace má také přidat prázdný funkce jako událost obslužné rutiny na nový nebo existující `IScriptEntry` objektu.  
+ Pokud vaše aplikace spravuje obslužné rutiny událostí, měla by volat `CreateChildHandler` ze `IScriptNode` objekt, který reprezentuje skriptletu obslužné rutiny události. Tím se vytvoří `IScriptScriptlet` objekt, který je spojen se skriptletem obslužné rutiny události. Aplikace má také přidejte prázdnou funkci jako událost obslužné rutiny na nový nebo existující `IScriptEntry` objektu.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptauthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)

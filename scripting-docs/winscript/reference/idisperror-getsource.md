@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetSource | Microsoft Docs
+title: IDispError::GetSource | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 922f95206d341773632b84c3922ea3b240d8d1ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 629ecb8427539069bb9e235e733140331875288c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794544"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091816"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
-Vrátí identifikátor programový závislých na jazyku pro třídu nebo aplikaci, která vyvolá chybu.  
+Vrátí závislá na jazyku programový identifikátor pro třídu nebo aplikace, která vyvolala chybu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetSource(  
    BSTR*  pbstrSource  
 );  
@@ -38,20 +38,20 @@ HRESULT GetSource(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrSource`  
- [out] Řetězec, který obsahuje identifikátor programový ve tvaru `progname.objectname`.  
+ [out] Řetězec obsahující programový identifikátor, ve formuláři `progname.objectname`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda se používá k určení třídy nebo aplikace, kde se vyskytla výjimka. Identifikátor programový mohou být vráceny v jazyce určeném identifikátor národního prostředí (LCID) zadaný v čase volání.  
+ Tato metoda se používá k určení třídy nebo aplikace, ve kterém k výjimce došlo. Programový identifikátor, mohou být vráceny v jazyce určeném zadat při vyvolání identifikátor národního prostředí (LCID).  
   
 > [!NOTE]
 >  Tato metoda není implementována.  
   
 ## <a name="see-also"></a>Viz také  
- [Idisperror – rozhraní](../../winscript/reference/idisperror-interface.md)
+ [IDispError – rozhraní](../../winscript/reference/idisperror-interface.md)

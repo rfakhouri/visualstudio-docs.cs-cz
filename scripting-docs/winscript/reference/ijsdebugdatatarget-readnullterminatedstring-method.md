@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::readnullterminatedstring – metoda | Microsoft Docs
+title: Ijsdebugdatatarget::readnullterminatedstring – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795003"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093324"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString – metoda
 Přečte zadaný počet znaků z cíle.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -39,24 +39,24 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [v] Adresa číst z.  
+ [in] Adresa pro čtení z.  
   
  `characterSize`  
- [velikost každého znaku v řetězci v]  
+ [in] velikost každého znaku v řetězci  
   
  `maxCharacters`  
- [v] Maximální počet znaků ke čtení. maxCharacters by měl být přiměřené. Každá žádost o více než 128MB paměti se nezdaří.  Pokud je větší než maxCharacters řetězec, řetězec výsledek bude zkrácen po maxCharacters.  
+ [in] Maximální počet znaků pro čtení. Hodnota maxCharacters by měla být přiměřená. Každá žádost o více než 128MB paměti se nezdaří.  Pokud řetězec je větší než vlastnost maxCharacters, bude výsledný řetězec zkrácen po maxCharacters.  
   
  `pString`  
- [out] BSTR číst z cíle.  
+ [out] Čtení BSTR z cíle.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
 ## <a name="remarks"></a>Poznámky  
- Vrátí S_FALSE Pokud zkrácen.  
+ Vrátí S_FALSE v případě zkrácen.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugdatatarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget – rozhraní](../../winscript/reference/ijsdebugdatatarget-interface.md)

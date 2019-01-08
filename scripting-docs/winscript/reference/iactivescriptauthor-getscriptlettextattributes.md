@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptletTextAttributes | Microsoft Docs
+title: IActiveScriptAuthor::GetScriptletTextAttributes | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b01fba7d0e8eb80fed51b1ff0ebd3a8816bacb01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0973b2943ed76a7baa231a287476b237cd45e257
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793299"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095456"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
-Vrátí text atributy skriptletu.  
+Vrací atributy textu skriptletu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR pszCode,  
    ULONG cch,  
@@ -42,25 +42,25 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [v části size_is – (`cch`)] skriptlet text. Tento řetězec nebude muset mít hodnotu null byla ukončena.  
+ [v size_is (`cch`)] textu skriptletu. Tento řetězec nemá hodnotu NULL byl ukončen.  
   
  `cch`  
- [v] Velikost použitá pro `pszCode` a `pattr` parametry.  
+ [in] Velikost použitou pro `pszCode` a `pattr` parametry.  
   
  `pszDelimiter`  
- [v] Adresa koncového skriptlet oddělovač. Když `pszCode` je analyzována z datového proudu textu, hostitel se většinou používá oddělovač (například dvě jednoduchých uvozovek), ke zjištění konec skriptletu. Tento parametr nastavte na hodnotu NULL, pokud žádný oddělovač slouží k identifikaci konec skriptletu.  
+ [in] Adresa oddělovače end skriptletu. Když `pszCode` je analyzován z toku textu, hostitel obvykle používá oddělovač (například dvěma jednoduchými uvozovkami), k zjištění konce skriptletu. Tento parametr nastavte na hodnotu NULL, pokud žádný oddělovač slouží k označení konce skriptletu.  
   
  `dwFlags`  
- [v] Příznaky, které jsou spojeny s atributy text skriptletu. Může být kombinací následující hodnoty.  
+ [in] Příznaky, které jsou spojeny s atributy textu skriptletu. Může být kombinací těchto hodnot.  
   
 |Konstanta|Hodnota|Popis|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Identifikujte identifikátory, které mají atribut SOURCETEXT_ATTR_IDENTIFIER a identifikovat tečkou operátory, které mají atribut SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Určete aktuální objekt, který má atribut SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Řetězec obsahu a komentář text, který má atribut SOURCETEXT_ATTR_HUMANTEXT Identifikujte.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Určete obsah a komentáře text řetězce, který má atribut SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [ve out size_is – (`cch`)] barva informace pro kód skriptlet.  
+ [v out size_is (`cch`)] informace o barvě skriptlet kódu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  

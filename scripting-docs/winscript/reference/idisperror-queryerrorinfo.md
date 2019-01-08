@@ -1,5 +1,5 @@
 ---
-title: IDispError::QueryErrorInfo | Microsoft Docs
+title: IDispError::QueryErrorInfo | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a165edf2d8f9a0b386daa0035ece1a722401a443
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01c33ab9ef187f5bf9d6146e23c4534a33844cec
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794247"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091777"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
-Načte konkrétní typ informace o chybě.  
+Získá konkrétní typ informace o chybě.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT QueryErrorInfo(  
    GUID  guidErrorType,  
    IDispError**  ppde  
@@ -39,13 +39,13 @@ HRESULT QueryErrorInfo(
   
 #### <a name="parameters"></a>Parametry  
  `guidErrorType`  
- [v] Typ chyby zadání identifikátoru GUID.  
+ [in] Identifikátor GUID určující typ chyby.  
   
  `ppde`  
  [out] Určuje objekt idisperror –.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -58,4 +58,4 @@ HRESULT QueryErrorInfo(
 >  Tato metoda není implementována.  
   
 ## <a name="see-also"></a>Viz také  
- [Idisperror – rozhraní](../../winscript/reference/idisperror-interface.md)
+ [IDispError – rozhraní](../../winscript/reference/idisperror-interface.md)

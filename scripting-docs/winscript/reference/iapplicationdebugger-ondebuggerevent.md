@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebuggerEvent | Microsoft Docs
+title: IApplicationDebugger::onDebuggerEvent | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 754c56b8474a5e21a05c1399540391197c373118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7dec2cea6cfcf11cc756ef730f98feee9ed9bb0e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793734"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092674"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
-Zpracovává událost vlastní aplikaci.  
+Zpracovává událost vlastní aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onDebuggerEvent(  
    REFIID     riid,  
    IUnknown*  punk  
@@ -39,23 +39,23 @@ HRESULT onDebuggerEvent(
   
 #### <a name="parameters"></a>Parametry  
  `riid`  
- [v] Identifikátor rozhraní pro objekt.  
+ [in] Identifikátor rozhraní objektu.  
   
  `punk`  
- [v] Objekt události, který implementuje rozhraní definované `riid`.  
+ [in] Objekt události, která implementuje rozhraní definované `riid`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
-|`E_NOTIMPL`|Metoda není implementována aktuálně.|  
+|`E_NOTIMPL`|Metoda teď není implementovaná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Sémantika `IUnknown` je zcela definované aplikací nebo ladicí program.  
+ Sémantika `IUnknown` je zcela definované aplikací/ladicí program.  
   
- Tato metoda umožňuje pro vlastní rozšíření ladicí program modelu; aktuálně není implementována.  
+ Tato metoda umožňuje vlastní rozšíření ladicího programu modelu; teď není implementovaná.  
   
  Tato metoda je volána, když `IDebugApplication::FireDebuggerEvent` je volána.  
   

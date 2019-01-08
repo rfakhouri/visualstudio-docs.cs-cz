@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnCreateThread | Microsoft Docs
+title: IRemoteDebugApplicationEvents::OnCreateThread | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3eb78f96d2621eac3794ba5c7c017590a775bd8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3ff45733723395dc80d85c6c3242f24ba1474060
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794658"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088917"
 ---
 # <a name="iremotedebugapplicationeventsoncreatethread"></a>IRemoteDebugApplicationEvents::OnCreateThread
-Zpracovává událost vytvořit vlákno.  
+Zpracovává událost vytvoření vlákna.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnCreateThread(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -38,17 +38,17 @@ HRESULT OnCreateThread(
   
 #### <a name="parameters"></a>Parametry  
  `prdat`  
- [v] Nově vytvořený vlákno.  
+ [in] Nově vytvořeného vlákna.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda zpracovává událost vytvořit vlákno.  
+ Tato metoda zpracovává vytvořit vlákno událost.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplicationevents – rozhraní](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+ [IRemoteDebugApplicationEvents – rozhraní](../../winscript/reference/iremotedebugapplicationevents-interface.md)

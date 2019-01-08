@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState | Microsoft Docs
+title: IActiveScript::GetScriptState | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 285a09308c7477dbeed68f9f93417b503ca4fe49
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a64067679e1c56831002494c579ffdeba84a1abe
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791562"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096574"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-Načte aktuální stav skriptovacího stroje. Tuto metodu lze volat z vlákna není základní bez výsledkem není základní popisku na objekty hostitele nebo na [iactivescriptsite –](../../winscript/reference/iactivescriptsite.md) rozhraní.  
+Načte aktuální stav skriptovací stroj. Tuto metodu lze volat z vlákna znaky bez výsledkem znaky popisek hostitele objektů nebo [iactivescriptsite –](../../winscript/reference/iactivescriptsite.md) rozhraní.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetScriptState(  
     SCRIPTSTATE *pss  // address of structure for state information  
 );  
@@ -38,10 +38,10 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>Parametry  
  `pss`  
- [out] Adresy proměnné, která přijímá hodnota definovaná v [SCRIPTSTATE – výčet](../../winscript/reference/scriptstate-enumeration.md) výčtu. Hodnota označuje aktuální stav skriptovací stroje přidružené volající vlákno.  
+ [out] Adresa proměnné, která přijímá hodnotu podle [scriptstate – výčet](../../winscript/reference/scriptstate-enumeration.md) výčtu. Hodnota označuje aktuální stav skriptovací stroj spojené s volajícím vlákně.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí `S_OK` v případě úspěchu nebo `E_POINTER` Pokud byl zadán neplatný ukazatel.  
+ Vrátí `S_OK` v případě úspěšného ověření nebo `E_POINTER` Pokud byl zadán neplatný ukazatel.  
   
 ## <a name="see-also"></a>Viz také  
- [IActiveScript –](../../winscript/reference/iactivescript.md)
+ [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetState | Microsoft Docs
+title: IRemoteDebugApplicationThread::GetState | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce34fa73f97b92d08193c697e991c9e922ac17ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 481beb69d2c4729bb2a030d257e802598131ea00
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795087"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088878"
 ---
 # <a name="iremotedebugapplicationthreadgetstate"></a>IRemoteDebugApplicationThread::GetState
-Získá stav tohoto podprocesu.  
+Získá stav tohoto vlákna.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetState(  
    DWORD*  pState  
 );  
@@ -38,24 +38,24 @@ HRESULT GetState(
   
 #### <a name="parameters"></a>Parametry  
  `pState`  
- [out] Kombinace následující příznaky stavu přístup z více vláken:  
+ [out] Kombinace následující příznaky stavu vlákna:  
   
 |Konstanta|Hodnota|Popis|  
 |--------------|-----------|-----------------|  
 |THREAD_STATE_RUNNING|0x00000001|Vlákno je spuštěno.|  
 |THREAD_STATE_SUSPENDED|0x00000002|Vlákno je pozastaveno.|  
-|THREAD_BLOCKED|0x00000004|Vlákno je blokován.|  
-|THREAD_OUT_OF_CONTEXT|0x00000008|Vlákno je mimo obsah.|  
+|THREAD_BLOCKED|0x00000004|Je vlákno blokované.|  
+|THREAD_OUT_OF_CONTEXT|0x00000008|Vlákno je obsahu.|  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda získá stav tohoto podprocesu.  
+ Tato metoda načte stav tohoto vlákna.  
   
 ## <a name="see-also"></a>Viz také  
- [Iremotedebugapplicationthread – rozhraní](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread – rozhraní](../../winscript/reference/iremotedebugapplicationthread-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetSignature | Microsoft Docs
+title: IScriptEntry::SetSignature | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9ff480f8e5c3192a7e2b355d39825cc3a084370
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 660f667d3542ff2cb9a7e96444d98b3082218a2a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794955"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089502"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
-Nastaví typ informace pro `IScriptEntry` objekt funkce.  
+Nastaví typ informace pro `IScriptEntry` objektu funkce.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetSignature(  
    ITypeInfo          *pti  
    ULONG              iMethod  
@@ -39,10 +39,10 @@ HRESULT SetSignature(
   
 #### <a name="parameters"></a>Parametry  
  `pti`  
- [v] Informace o typu.  
+ [in] Informace o typu.  
   
  `iMethod`  
- [v] Metoda indexu v `ITypeInfo` objektu.  
+ [in] Metoda index `ITypeInfo` objektu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -52,7 +52,7 @@ HRESULT SetSignature(
 |`S_OK`|Metoda byla úspěšná.|  
   
 ## <a name="remarks"></a>Poznámky  
- Nastavení informací o typu pomocí `IScriptEntry::SetSignature` nebo [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Informace o typu také může být generována položka podle reprezentace vnitřní funkce.  
+ Nastavení informací o typu s použitím `IScriptEntry::SetSignature` nebo [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Informace o typu může být také generován položku založenou na reprezentaci vnitřního funkce.  
   
 ## <a name="see-also"></a>Viz také  
- [Iscriptentry – rozhraní](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry – rozhraní](../../winscript/reference/iscriptentry-interface.md)

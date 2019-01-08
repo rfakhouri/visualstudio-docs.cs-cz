@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe::getdocumentpositionwithname – metoda | Microsoft Docs
+title: Ijsdebugframe::getdocumentpositionwithname – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49afb5903e190280d226a24b22dc389041861c52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6333f9c52c3ab4e0cd01c34f5e5228721aa55b4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794568"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093831"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName – metoda
-Vrátí aktuální pozici tento rámce zásobníku v tomto dokumentu úrovni uživatele.  
+Vrací aktuální pozici tohoto rámce zásobníku v rámci dokumentu uživatelské úrovni.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentPositionWithName(  
    BSTR *pDocumentName,  
    DWORD *pLine,  
@@ -38,13 +38,13 @@ HRESULT GetDocumentPositionWithName(
   
 #### <a name="parameters"></a>Parametry  
  `pDocumentName`  
- [out] Pro statické skripty, adresu URL dokumentu. Pro dynamické skripty je vrácen název obsahující typ skriptu (například eval kódu, funkce kódu atd.).  
+ [out] U statických skriptů adresa URL dokumentu. Pro dynamické skripty je vrácen název obsahující typ skriptu (například kód eval, kód funkce atd.).  
   
  `pLine`  
- [out] pozice 1 na základě řádku v tomto dokumentu.  
+ [out] řádek založený na 1 pozici v dokumentu.  
   
  `pColumn`  
- [out] pozice 1 na základě řádku v tomto dokumentu.  
+ [out] řádek založený na 1 pozici v dokumentu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
   
@@ -52,4 +52,4 @@ HRESULT GetDocumentPositionWithName(
  **Záhlaví:** jscript9diag.h  
   
 ## <a name="see-also"></a>Viz také  
- [Ijsdebugframe – metoda](../../winscript/reference/ijsdebugframe-interface.md)
+ [IJsDebugFrame – rozhraní](../../winscript/reference/ijsdebugframe-interface.md)

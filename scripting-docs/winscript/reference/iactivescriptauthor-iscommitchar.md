@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar | Microsoft Docs
+title: IActiveScriptAuthor::IsCommitChar | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793260"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096171"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-Vrátí hodnotu, která určuje, zda daného znaku by měly aktivovat potvrzení dokončení příkazu aplikací.  
+Vrátí hodnotu určující, zda daný znak by měly aktivovat dokončení potvrzení příkazu aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT IsCommitChar(  
    OLECHAR    ch,  
    BOOL       *pfcommit  
@@ -39,10 +39,10 @@ HRESULT IsCommitChar(
   
 #### <a name="parameters"></a>Parametry  
  `ch`  
- [v] Znak, který se má testovat.  
+ [in] Znak k testování.  
   
  `pfcommit`  
- [out] `True` Pokud znak je potvrzení znak; v opačném `False`.  
+ [out] `True` Pokud znak je potvrzení znak; v opačném případě `False`.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
@@ -54,4 +54,4 @@ HRESULT IsCommitChar(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptauthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)

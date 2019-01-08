@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty | Microsoft Docs
+title: IDebugExpression::GetResultAsDebugProperty | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ce67df5dd55bd8c1ae55bb19fe2a19aed9e40f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aebe983c33416d1c3d12d18c272fd1e4de27467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794286"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093103"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-Vrátí výsledek vyhodnocení výrazu jako vlastnost ladění a operace návratovou hodnotu.  
+Vrátí výsledek vyhodnocení výrazu jako vlastnost ladění a návratová hodnota operace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetResultAsDebugProperty(  
    HRESULT*          phrResult,  
    IDebugProperty**  ppdp  
@@ -39,13 +39,13 @@ HRESULT GetResultAsDebugProperty(
   
 #### <a name="parameters"></a>Parametry  
  `phrResult`  
- [out] Operace návratovou hodnotu.  
+ [out] Návratová hodnota operace.  
   
  `ppdp`  
- [out] Vlastnost ladění pro výraz.  
+ [out] Vlastnosti ladění pro výraz.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -53,9 +53,9 @@ HRESULT GetResultAsDebugProperty(
 |`E_PENDING`|Operace je stále čekající na vyřízení.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda vrátí výsledek vyhodnocení výrazu jako `IDebugProperty` a operace `HRESULT`.  
+ Tato metoda vrací výsledek vyhodnocení výrazu jako `IDebugProperty` a operace `HRESULT`.  
   
- Tato metoda vrátí hodnotu `S_OK` a `phrResult` vrátí `E_ABORT` Pokud `Abort` operaci zruší.  
+ Tato metoda vrátí `S_OK` a `phrResult` vrátí `E_ABORT` Pokud `Abort` operaci zruší.  
   
 ## <a name="see-also"></a>Viz také  
  [Idebugexpression – rozhraní](../../winscript/reference/idebugexpression-interface.md)   

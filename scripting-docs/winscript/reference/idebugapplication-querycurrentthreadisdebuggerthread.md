@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::QueryCurrentThreadIsDebuggerThread | Microsoft Docs
+title: IDebugApplication::QueryCurrentThreadIsDebuggerThread | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,35 +18,35 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bbd09a19212df3c91bf8222eb78b88f7c0b674fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 12febbc2cc7aeaee5113c38837e073bba10d7a17
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793755"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087630"
 ---
 # <a name="idebugapplicationquerycurrentthreadisdebuggerthread"></a>IDebugApplication::QueryCurrentThreadIsDebuggerThread
-Určuje, zda aktuální vlákno spuštěných vláken ladicí program.  
+Určuje, zda je aktuální vlákno spuštěné vlákno ladicího programu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT QueryCurrentThreadIsDebuggerThread();  
 ```  
   
 #### <a name="parameters"></a>Parametry  
- Tato metoda nepřijímá žádné parametry.  
+ Tato metoda nemá žádné parametry.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Vrátí metodu `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
+ Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
-|`S_OK`|Metoda byla úspěšná a aktuální vlákno běžící vlákna ladicí program.|  
-|`S_FALSE`|Aktuální vlákno spuštěné není vlákno ladicí program.|  
+|`S_OK`|Metoda byla úspěšná a aktuální vlákno spuštěné vlákno ladicího programu.|  
+|`S_FALSE`|Aktuální spuštěné vlákno není vlákno ladicího programu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda určuje, zda aktuální vlákno spuštěných vláken ladicí program.  
+ Tato metoda určuje, zda je aktuální vlákno spuštěné vlákno ladicího programu.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication – rozhraní](../../winscript/reference/idebugapplication-interface.md)
