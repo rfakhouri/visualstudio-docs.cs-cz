@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5416becdf4315b3b7d631675ef52cbe6f509fdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4afd2f742918ebe1badd86be0ebf4181fb2ba06
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929387"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154270"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Zobrazení událostí s IntelliTrace v sadě Visual Studio
 Nástroj IntelliTrace můžete použít ke shromažďování informací o určité události a kategorie událostí, nebo o voláních jednotlivé funkce kromě události. Následující postupy ukazují, jak to udělat.  
   
  Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition, ale ne edice Professional nebo Community.  
   
-##  <a name="GettingStarted"></a> Konfigurace technologie Intellitrace  
+##  <a name="GettingStarted"></a> Konfigurace technologie IntelliTrace  
  Můžete zkusit ladění pouze události IntelliTrace. Mezi události IntelliTrace patří události ladicího programu, výjimky, události rozhraní .NET Framework a další systémové události. By měl zapnout nebo vypnout určité události k řízení událostí, které nástroj IntelliTrace zaznamenává před zahájením ladění. Další informace najdete v tématu [funkce IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Zapněte události IntelliTrace pro přístup k souborům. Přejděte na **nástroje > Možnosti > Nástroje IntelliTrace > události IntelliTrace** stránce a rozbalte **souboru** kategorie. Zkontrolujte, **souboru** kategorie události. To způsobí, že všechny souboru události (přístup, zavřít, delete) která se má zkontrolovat.

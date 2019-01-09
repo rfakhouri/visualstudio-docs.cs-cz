@@ -43,12 +43,12 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232114"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154308"
 ---
 # <a name="clang-project-properties-android-c"></a>Vlastnosti projektu clang (Android C++)
 
@@ -67,13 +67,13 @@ Povolit výjimky jazyka C++ | Určuje model zpracování výjimek pro použití 
 Povolit propojování na úrovni funkcí | Umožňuje kompilátoru vytvořit balíček individuálních funkcí ve formě zabalených funkcí (sekvence Comdat). Vyžaduje se pro úpravy a pokračovat v práci.     (ffunction-sections).
 Povolit propojování na úrovni dat | Umožňuje, aby optimalizace linkeru odebraly nepoužívaná data generováním jednotlivých datových položek v samostatných oddílech.
 Povolit rozšíření Advanced SIMD (neon) | Umožňuje generování kódu pro bod hardware s plovoucí desetinnou čárkou NEON. To platí jenom pro architekturu arm.
-ABI s plovoucí desetinnou čárkou | Výběr možností výběru z ABI s plovoucí desetinnou. | **Obnovitelné** – "Soft způsobí, že kompilátor bude generovat výstup obsahující volání knihoven pro operace s plovoucí desetinnou čárkou.<br>**SoftFP** – 'SoftFP' umožňuje generování kódu pomocí hardwarových instrukcí s plovoucí desetinnou čárkou, ale stále používá konvence volání využitím.<br>**Pevný** – generování alows "Pevného" s plovoucí desetinnou čárkou instrukcí specifických pro FPU konvence volání.<br>
+ABI s plovoucí desetinnou čárkou | Výběr možností výběru z ABI s plovoucí desetinnou. | **Obnovitelné** – "Soft způsobí, že kompilátor bude generovat výstup obsahující volání knihoven pro operace s plovoucí desetinnou čárkou.<br>**SoftFP** – 'SoftFP' umožňuje generování kódu pomocí hardwarových instrukcí s plovoucí desetinnou čárkou, ale stále používá konvence volání využitím.<br>**Pevný** – "Hard umožňuje generování instrukcí s plovoucí desetinnou čárkou a používá konvence volání specifických pro FPU.<br>
 Kontrola zabezpečení | Kontrola zabezpečení pomáhá odhalit vyrovnávací paměti na zásobníku typu over-pass-the útoku na zabezpečení programu. (fstack-protector). | **Zakáže kontrolu zabezpečení** – zakáže kontrolu zabezpečení.<br>**Povolit kontrolu zabezpečení** -povolit kontrolu zabezpečení. (fstack-protector)<br>
 Pozičně nezávislý kód | Generovat pozice nezávislý kód (PIC) pro použití ve sdílené knihovně.
 Používat krátké výčty | Typ výčtu bude používat jenom tolik bajtů vyžaduje vstupní sada možných hodnot.
 Povolit informace běhového typu | Přidává kód pro kontrolu typů objektů jazyka C++ za běhu (informace typu za běhu).     (frtti, fno-rtti)
-Standard jazyka C | Určuje standard jazyka C. | **Default**<br>**C89** – Standard jazyka C89.<br>**C99** – Standard jazyka C99.<br>**C11** – Standard jazyka C11.<br>**C99 (dialekt GNU)** – Standard jazyka C99 (dialekt GNU).<br>**C11 (dialekt GNU)** – Standard jazyka C11 (dialekt GNU).<br>
-Standard jazyka C++ | Určuje standard jazyka C++. | **Default**<br>**C ++ 03** – Standard C ++ 03 jazyka.<br>**C ++ 11** – Standard C ++ 11 jazyka.<br>**C ++ 14** – Standard C ++ 14 jazyka.<br>**C ++ 03 (dialekt GNU)** – C ++ 03 (dialekt GNU) Standard jazyka.<br>**C ++ 11 (dialekt GNU)** – C ++ 11 (dialekt GNU) Standard jazyka.<br>**C ++ 14 (dialekt GNU)** – C ++ 14 (dialekt GNU) Standard jazyka.<br>
+Standard jazyka C | Určuje standard jazyka C. | **Výchozí**<br>**C89** – Standard jazyka C89.<br>**C99** – Standard jazyka C99.<br>**C11** – Standard jazyka C11.<br>**C99 (dialekt GNU)** – Standard jazyka C99 (dialekt GNU).<br>**C11 (dialekt GNU)** – Standard jazyka C11 (dialekt GNU).<br>
+Standard jazyka C++ | Určuje standard jazyka C++. | **Výchozí**<br>**C ++ 03** – Standard C ++ 03 jazyka.<br>**C ++ 11** – Standard C ++ 11 jazyka.<br>**C ++ 14** – Standard C ++ 14 jazyka.<br>**C ++ 03 (dialekt GNU)** – C ++ 03 (dialekt GNU) Standard jazyka.<br>**C ++ 11 (dialekt GNU)** – C ++ 11 (dialekt GNU) Standard jazyka.<br>**C ++ 14 (dialekt GNU)** – C ++ 14 (dialekt GNU) Standard jazyka.<br>
 Definice preprocesoru | Definuje symboly předzpracování pro zdrojový soubor. (-D)
 Zrušit Definice preprocesoru | Určuje že jeden nebo více nedefinovaných hodnot preprocesoru.  (-U [makro])
 Zrušit všechny definice preprocesoru | Zruší definici všech dříve definovaných hodnot preprocesoru.  (-undef)

@@ -3,7 +3,7 @@ title: Upravit a pokračovat – dialogové okno chybové zprávy | Dokumentace 
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
-- vs.debug.ENC.SupportedButNotAvaiable
+- vs.debug.ENC.SupportedButNotAvailable
 - vs.debug.ENC.CannotEditWhileException
 dev_langs:
 - CSharp
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69305bdd1791d428c11910d5fc6540f13ad6a137
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828667"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154034"
 ---
 # <a name="edit-and-continue-error-message"></a>Upravit a pokračovat chybová zpráva 
 
@@ -45,7 +45,7 @@ Mezi možné důvody pro tato chybová zpráva patří:
 -   Došlo k pokusu o úpravu kódu v sestavení, který není načtený.  
 -   Spuštění ladění starší verzi aplikace, protože na nejnovější verzi má chyby sestavení.
   
-Další informace naleznete v tématu:
+Další informace naleznete v tématu:
 - [C++ upravit a pokračovat blogový příspěvek](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
 - [Podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md)
 - [Operace Upravit a pokračovat](../debugger/edit-and-continue.md)

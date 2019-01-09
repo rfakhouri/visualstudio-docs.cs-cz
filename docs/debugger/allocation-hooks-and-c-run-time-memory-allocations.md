@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f20c71ad12a64e6d8d14b91310c870477cfc6d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a654c2d86ed0eb598a963b56cd6e3ef16ad91f19
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899623"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154092"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Háky přidělení a přidělení běhové paměti jazyka C
-Je velmi důležité omezení funkce háku přidělení, že se musí explicitně Ignorovat `_CRT_BLOCK` bloky. Tyto bloky jsou přidělení paměti provedené interně funkcemi knihovny run-time jazyka C, je-li využívají volání funkcí knihovny run-time jazyka C, které přidělit vnitřní paměti. Můžete ignorovat `_CRT_BLOCK` bloky kódu koncepty na začátku přidělení funkci připojení:  
+Je velmi důležité omezení funkce háku přidělení, že se musí explicitně Ignorovat `_CRT_BLOCK` bloky. Tyto bloky jsou přidělení paměti provedené interně funkcemi knihovny run-time jazyka C, je-li využívají volání funkcí knihovny run-time jazyka C, které přidělit vnitřní paměti. Můžete ignorovat `_CRT_BLOCK` bloky zahrnutím následujícího kódu na začátku přidělení funkci připojení:  
   
 ```cpp
 if ( nBlockUse == _CRT_BLOCK )  

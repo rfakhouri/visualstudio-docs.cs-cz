@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef5bdbd070d7be6898fa89a24af2208c2acf1ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ced7def09c9a5ba95c149f5f8507e3571d120ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880686"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154160"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Připraví data ladění uložených v souboru databáze (PDB) programu přistupovat prostřednictvím proud dat v paměti.  
@@ -40,7 +40,7 @@ HRESULT loadDataFromIStream ( 
 |Hodnota|Popis|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|Došlo k pokusu o přístup k souboru se zastaralý formát.|  
-|E_INVALIDARG|Invalidparameter.|  
+|E_INVALIDARG|Neplatný parametr.|  
 |E_UNEXPECTED, JE-|Zdroj dat je už připraven.|  
   
 ## <a name="remarks"></a>Poznámky  

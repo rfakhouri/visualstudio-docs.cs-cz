@@ -17,12 +17,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932782"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154392"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 
@@ -99,7 +99,7 @@ Sada Visual Studio generuje jazyk XAML, který provede následující akce:
 Při přetažení objektu nebo vlastnosti z **zdroje dat** do okna návrháře Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , která vytvoří ovládací prvek vázaný na data (nebo naváže existující ovládací prvek na objekt či vlastnost). Visual Studio však nevygeneruje kód pro vyplnění objektu daty. Tento kód musíte napsat sami.
 
 > [!NOTE]
-> Vlastní třídy musí být veřejný a ve výchozím nastavení, mít konstruktor bez parametrů. Jejich can'tbe vnořené třídy, které mají v syntaxi "tečku". Další informace najdete v tématu [XAML a vlastní třídy pro WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Vlastní třídy musí být veřejný a ve výchozím nastavení, mít konstruktor bez parametrů. Nemohou být vnořené třídy, které mají v syntaxi "tečku". Další informace najdete v tématu [XAML a vlastní třídy pro WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , který provede následující akce:
 

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875638"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154373"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijte k analýze a optimalizovat výkon vykreslování Direct3D hře nebo aplikaci.  
@@ -74,7 +74,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   
  Přesuňte ukazatel na pruh zobrazíte která volání draw událost odpovídá panelu. Že vybereme pruh způsobí, že seznam událostí k synchronizaci na tuto událost.  
   
-#### <a name="table"></a>Tabulka  
+#### <a name="table"></a>Table  
  Všechna čísla pod na časové ose tabulce relativní výkon jednotlivých vykreslování variant pro každé volání draw s ohledem na vaše aplikace výchozí vykreslení. Každý sloupec zobrazuje hodnotu typu variant různých vykreslování a každý řádek představuje jinou draw volání, který je identifikován v sloupci nejvíce vlevo. Odsud můžete použít odkaz na událost v okně seznam událostí grafiky.  
   
  ![V souhrnu tabulce jsou uvedeny různé varianty. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
@@ -91,7 +91,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 #### <a name="statistical-significance"></a>Statistický význam  
  Analýza snímků vám pozornost k vykreslení varianty, které mají nejvyšší relevanci Určuje statistické význam jednotlivých vykreslování variant a zobrazí ta významné jako tučné písmo. Zobrazí ty, které zlepšují výkon zeleně a ty, které sníží výkon červeně. Zobrazí výsledky, které nejsou statisticky významná jako normální typu.  
   
- ![Statistické relevence variant volání draw](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
+ ![Statistické relevance variant volání draw](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
   
  Pokud chcete zjistit statistické relevance, analýza snímků používá [Studentova t-test](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   

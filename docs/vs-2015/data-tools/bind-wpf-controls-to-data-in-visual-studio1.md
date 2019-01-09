@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60615d120935727ece2f9c291a3cf578de136daf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c93b35cb1bd6c4883934eedc5e0f79089d7c8c7b
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054846"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153984"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat na [!INCLU
  Při přetažení objektu nebo vlastnosti z **zdroje dat** do okna návrháře, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , která vytvoří ovládací prvek vázaný na data (nebo naváže existující ovládací prvek na objekt či vlastnost). Ale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] negeneruje kód pro vyplnění objektu daty. Tento kód musíte napsat sami.
 
 > [!NOTE]
->  Vlastní třídy musí být veřejný a ve výchozím nastavení, mít konstruktor bez parametrů. Jejich can'tbe vnořené třídy, které mají v syntaxi "tečku". Další informace najdete v tématu [XAML a vlastní třídy pro WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+>  Vlastní třídy musí být veřejný a ve výchozím nastavení, mít konstruktor bez parametrů. Nemohou být vnořené třídy, které mají v syntaxi "tečku". Další informace najdete v tématu [XAML a vlastní třídy pro WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , který provede následující akce:
 

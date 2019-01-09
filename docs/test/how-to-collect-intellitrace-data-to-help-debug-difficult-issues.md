@@ -1,5 +1,5 @@
 ---
-title: Intellitrace data
+title: IntelliTrace data
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952995"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154360"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: Shromažďování dat IntelliTrace pro ladění složitých problémů
 
@@ -61,7 +61,7 @@ Před provedením kroků v tomto postupu je nutné otevřít nastavení testu po
      Tento server proxy umožňuje shromažďovat informace o voláních http z klienta na webový server pro adaptéry diagnostických dat IntelliTrace a dopad testu.
 
     > [!WARNING]
-    > Pokud se rozhodnete použít vlastní účet pro identitu, která je používána pro fond aplikací na serveru služby IIS, kde máte v úmyslu shromažďovat data Intellitrace, je třeba vytvořit místní profil uživatele v počítači služby IIS pro vlastní účet, který je používán. Místní profil lze pro vlastní účet vytvořit jednorázovým přihlášením na počítači se službou IIS místně, nebo spuštěním následujícího příkazu příkazového řádku pomocí vlastních pověření účtu:
+    > Pokud se rozhodnete použít vlastní účet pro identitu, která se používá pro fond aplikací na Internet Information Server (IIS) Pokud máte v úmyslu shromažďovat IntelliTrace data, musíte vytvořit místní profil uživatele na počítači se službou IIS pro vlastní účet, který je používána. Místní profil lze pro vlastní účet vytvořit jednorázovým přihlášením na počítači se službou IIS místně, nebo spuštěním následujícího příkazu příkazového řádku pomocí vlastních pověření účtu:
     >
     > **runas /user:domain\name /profile cmd.exe**
 

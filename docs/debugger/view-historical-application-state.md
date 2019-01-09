@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 841812ac5961f30424cdb8ee95cc94fb6b5ce8ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939976"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154462"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio
 
@@ -23,10 +23,10 @@ Zpětného kroku IntelliTrace automaticky vytvoří snímek vaší aplikace v ka
 
 Zpětného kroku IntelliTrace je k dispozici od verze Visual Studio Enterprise 2017 verze 15.5 a vyšší a vyžaduje aktualizaci Windows 10 Anniversary Update nebo novější. Tato funkce je momentálně podporovaná pro ladění ASP.NET, WinForms, WPF, aplikací spravované konzoly a knihoven spravovaných tříd. Od verze Visual Studio Enterprise 2017 verze 15.7, tato funkce je také podporována pro ASP.NET Core a .NET Core. Od verze Visual Studio Enterprise 2017 verzi 15.9 ve verzi Preview 2, tato funkce je také podporována pro nativní aplikace určené pro Windows. Ladění aplikací UWP se momentálně nepodporuje.
 
-V tomto kurzu se naučíte:
+V tomto kurzu provedete následující:
 
 > [!div class="checklist"]
-> * Povolit události Intellitrace a snímky
+> * Povolit události IntelliTrace a snímky
 > * Procházet události pomocí příkazů krok zpátky a krok vpřed
 > * Zobrazit události snímky
   

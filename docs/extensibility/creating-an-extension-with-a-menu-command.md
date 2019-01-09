@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd25b7ed02cb8d45ae693eacdb397a250d2456e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847821"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154418"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Vytvoření rozšíření pomocí příkazu nabídky
 Tento návod ukazuje, jak vytvořit rozšíření pomocí příkazu nabídky, který spustí Poznámkový blok.  
@@ -121,6 +121,6 @@ Tento návod ukazuje, jak vytvořit rozšíření pomocí příkazu nabídky, kt
   
 4. Přidáte do existující editory kódu technologie IntelliSense, kód návrhy a další funkce: [Rozšíření služby jazyk a editor](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Přidání stránky možnosti a vlastnosti a nastavení uživatele do rozšíření: [Rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md) a [rozšířit uživatelská nastavení a Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. Přidání stránky možnosti a vlastnosti a nastavení uživatele do rozšíření: [Rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md) a [rozšířit možnosti a nastavení uživatele](../extensibility/extending-user-settings-and-options.md)  
   
    Jiné druhy rozšíření vyžaduje trochu více práce, jako je vytvoření nového typu projektu ([rozšíření projektů](../extensibility/extending-projects.md)), vytvoření nového typu editoru ([vytvoření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md)), nebo implementaci vašeho rozšíření izolovaného prostředí: [Prostředí sady Visual Studio izolovaný režim](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

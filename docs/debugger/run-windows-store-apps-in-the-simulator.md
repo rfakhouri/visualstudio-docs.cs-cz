@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a171c0973bdcb71ff05cff38713081acd5ffd68
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886472"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153951"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Spouštění aplikací pro UPW na simulátoru
 Simulátor aplikace Visual Studio pro aplikace pro UPW je desktopová aplikace, která simuluje aplikace pro UPW. Obvykle můžete ladit na místním počítači, připojeného zařízení nebo vzdálený počítač. Ale v některých případech můžete chtít použít simulátor aplikace Visual Studio k emulaci různých fyzických obrazovku a řešení. Můžete také simulovat běžné touch a otočení události a simulovat vlastnosti připojení k síti.
@@ -49,7 +49,7 @@ Simulátor aplikace Visual Studio pro aplikace pro UPW je desktopová aplikace, 
 ## <a name="pinch-and-zoom"></a>Ovládání stažením prstů a přiblížení
  Nastaví režim interakce pro ovládání stažením prstů a gesta dvěma prsty přiblížení.
 
--   ![Cíl prstem Siimulator dvě](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
+-   ![Cíl simulátoru dvě prstem](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
 
      Dvojité cílovou ikonu označuje umístění dvěma prsty na obrazovce zařízení.
 

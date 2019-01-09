@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986567"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154147"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Označte všechna neserializovatelná pole
 
@@ -34,11 +34,13 @@ ms.locfileid: "53986567"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Neserializovatelný typ pole instance je deklarován v serializovatelném typu.
 
 ## <a name="rule-description"></a>Popis pravidla
  Serializovatelný typ. je ten, který je označen <xref:System.SerializableAttribute?displayProperty=fullName> atribut. Když je typ serializován, <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> je vyvolána výjimka, pokud typ obsahuje pole instance typu, který není serializovatelný.
+ 
+ Jedinou výjimkou je to je, když typ používá vlastní serializace prostřednictvím <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> rozhraní. Typy implementující toto rozhraní poskytuje své vlastní logiky serializace, a proto CA2235 neaktivují pro instanci neserializovatelná pole těchto typů.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, použijte <xref:System.NonSerializedAttribute?displayProperty=fullName> atributu na pole, který není serializovatelný.

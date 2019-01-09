@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: ladění optimalizovaného kódu | Dokumentace Microsoftu'
+title: 'Postupy: Ladění optimalizovaného kódu | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -28,12 +28,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3d0e6c86c800e2ba35fdac78d6659fa2ecd7e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: ae18cda3d3cbba28c53402e7989c83c60007b2fc
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734055"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154302"
 ---
 # <a name="how-to-debug-optimized-code"></a>Postupy: Ladění optimalizovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ POZNÁMKA:]
   
 8. Pokud jste zvolili `Custom` možnost `Optimization`, teď můžete nastavit možnosti pro všechny ostatní vlastnosti zobrazené v seznamu vlastností.  
   
-9. Vyberte konfigurační vlastnosti, C/C++, uzel příkazového řádku na stránce Vlastnosti projektu a přidejte `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` k **další možnosti** textového pole.  
+9. Vyberte vlastnosti konfigurace, C/C++, uzel příkazového řádku na stránce Vlastnosti projektu a přidejte `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` k **další možnosti** textového pole.  
   
     > [!WARNING]
     >  `/Zo` vyžaduje Visual Studio 2013 Update 3 nebo novější.  

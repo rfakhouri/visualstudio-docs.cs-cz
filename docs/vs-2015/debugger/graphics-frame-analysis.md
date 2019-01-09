@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59cd0006f375335d9cf3e714689bead6615b395d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 7ac0fedd5c78af474e37079f640f74a0d5e0bf8b
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770371"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154496"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   
  Přesuňte ukazatel na pruh zobrazíte která volání draw událost odpovídá panelu. Že vybereme pruh způsobí, že seznam událostí k synchronizaci na tuto událost.  
   
-#### <a name="table"></a>Tabulka  
+#### <a name="table"></a>Table  
  Všechna čísla pod na časové ose tabulce relativní výkon jednotlivých vykreslování variant pro každé volání draw s ohledem na vaše aplikace výchozí vykreslení. Každý sloupec zobrazuje hodnotu typu variant různých vykreslování a každý řádek představuje jinou draw volání, který je identifikován v sloupci nejvíce vlevo. Odsud můžete použít odkaz na událost v okně seznam událostí grafiky.  
   
  ![V souhrnu tabulce jsou uvedeny různé varients. ](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
@@ -103,7 +103,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 #### <a name="statistical-significance"></a>Statistický význam  
  Analýza snímků vám pozornost k vykreslení varianty, které mají nejvyšší relevanci Určuje statistické význam jednotlivých vykreslování variant a zobrazí ta významné jako tučné písmo. Zobrazí ty, které zlepšují výkon zeleně a ty, které sníží výkon červeně. Zobrazí výsledky, které nejsou statisticky významná jako normální typu.  
   
- ![Statistické relevence variant volání draw](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
+ ![Statistické relevance variant volání draw](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
   
  Pokud chcete zjistit statistické relevance, analýza snímků používá [Studentova t-test](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   
@@ -206,7 +206,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 |**Rozměry textury čtvrtletí**|Snižuje rozměrů textury na všechny textury, které nejsou cíle vykreslování na čtvrtletí jejich původní velikost v každém rozměru. Například 256 x 128 textury sníží texely 64 x 32.<br /><br /> Další informace najdete v tématu [Half/Quarter textury dimenze Variant](../debugger/half-quarter-texture-dimensions-variant.md).|  
 |**Komprese textur BC**|Umožňuje zablokovat kompresi na všechny textury, které mají B8G8R8X8, B8G8R8A8 nebo R8G8B8A8 variant formát pixelu. Varianty formátu B8G8R8X8 komprimování pomocí BC1; S použitím BC3 jsou komprimované B8G8R8A8 a R8G8B8A8 formátu variant.<br /><br /> Další informace najdete v tématu [BC textury komprese Variant](../debugger/bc-texture-compression-variant.md).|  
   
- Výsledek pro většinu varianty je doporučené: "25 procent rychlejší je snížení velikosti textury na polovinu" nebo "Povolení 2 x MSAA je pouze 2 % pomaleji". Ostatní varianty může vyžadovat další výklad – například pokud variantu, která změní rozměry zobrazení 1 x 1 zobrazuje velké výkonnější, může to znamenat, že se tak s nízkou výplně mírou; bottlenecked vykreslování případně pokud neexistuje žádné významné změny ve výkonu, může to znamenat, že se zpracováním vrcholu bottlenecked vykreslování.
+ Výsledek pro většinu varianty je doporučené: "Snížení velikosti textury na polovinu je 25 procent rychleji." nebo "Povolení 2 x MSAA je pouze 2 % pomaleji". Ostatní varianty může vyžadovat další výklad – například pokud variantu, která změní rozměry zobrazení 1 x 1 zobrazuje velké výkonnější, může to znamenat, že se tak s nízkou výplně mírou; bottlenecked vykreslování případně pokud neexistuje žádné významné změny ve výkonu, může to znamenat, že se zpracováním vrcholu bottlenecked vykreslování.
 
 
 

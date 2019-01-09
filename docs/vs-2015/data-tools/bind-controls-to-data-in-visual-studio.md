@@ -16,18 +16,18 @@ helpviewer_keywords:
 - data, displaying
 - data sources, displaying data
 - Data Sources window
-- dislaying data
+- displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74eff26f424eb82b4a10377e97879e243e685fe3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cc158eefd23cc06b36749676188201d988099a6e
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062115"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154070"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat k ovládac
 
  1. Generovat pomocí modelu **modelu Entity Data Model** průvodce, potom tyto objekty přetáhnout do návrháře.
 
- 2. LINQ na třídy SQL se nezobrazí v **zdroje dat** okna. Můžete však přidat nový zdroj dat objektu, který je založen na LINQ třídy SQL a potom tyto objekty přetáhnout do návrháře k vytvoření ovládacích prvků vázaných na data. Další informace najdete v tématu [návod: vytvoření třídy LINQ to SQL (O R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. LINQ na třídy SQL se nezobrazí v **zdroje dat** okna. Můžete však přidat nový zdroj dat objektu, který je založen na LINQ třídy SQL a potom tyto objekty přetáhnout do návrháře k vytvoření ovládacích prvků vázaných na data. Další informace najdete v tématu [názorný postup: Vytvoření třídy LINQ to SQL (O R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>okno Zdroje dat
  Zdroje dat jsou k dispozici pro váš projekt jako položky **zdroje dat** okna. Toto okno je viditelný, nebo k ní z **zobrazení** nabídky, když návrhovou plochu formuláře je aktivní okno ve vašem projektu. Můžete přetáhnout položky z tohoto okna, chcete-li vytvořit ovládací prvky vázané na podkladová data a můžete taky nakonfigurovat zdroje dat kliknutím pravým tlačítkem myši.

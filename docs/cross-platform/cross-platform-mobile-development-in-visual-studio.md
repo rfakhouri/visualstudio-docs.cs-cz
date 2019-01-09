@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802797"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154047"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Vývoj multiplatformních mobilních řešení v sadě Visual Studio
 
@@ -123,7 +123,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 
  Jakmile budete připraveni ke spuštění vaší aplikace a zjistit, jak to funguje, pomocí emulátoru Androidu. Je rychlé, spolehlivé a snadné instalace a konfigurace.
 
- Můžete také vytvořit aplikaci, která se zaměřuje plnou škálu zařízení s Windows 10 s použitím jazyka C++ a šablonu projektu aplikace Windows Uiversal platformy (UPW). Další informace najdete v [zařízení s Windows 10 cílové](#WindowsHTML) oddíl, který se zobrazí dříve v tomto tématu.
+ Můžete také vytvořit aplikaci, která se zaměřuje plnou škálu zařízení s Windows 10 s použitím jazyka C++ a šablonu projektu aplikace univerzální platformy Windows (UPW). Další informace najdete v [zařízení s Windows 10 cílové](#WindowsHTML) oddíl, který se zobrazí dříve v tomto tématu.
 
  Kód jazyka C++ mezi platformami Android a Windows můžete sdílet tak, že vytvoříte statické nebo dynamické sdílené knihovny.
 

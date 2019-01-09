@@ -6,19 +6,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 12/11/2018
+ms.date: 01/09/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: f730655d1bfdab1f7cdf03be99faafeb7f2fcb65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15738554ca658a337f187f554b07786569f95ea3
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989812"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154505"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -28,9 +28,9 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.4 | Vydaná verze | 11. prosince 2018 | 15.9.28307.222 |
-| 15.0.20 | Vydaná verze | 11. prosince 2018 | 15.0.26228.64 |
-| 15.9.3 | Ve verzi Preview 1 | 28. listopadu 2018 | 15.9.28307.145 |
+| 15.9.5 | Vydat | 8. ledna 2019 | 15.9.28307.280 |
+| 15.9.4 | Vydat | 11. prosince 2018 | 15.9.28307.222 |
+| 15.0.20 | Vydat | 11. prosince 2018 | 15.0.26228.64 |
 | 15.9.3 | Vydaná verze | 28. listopadu 2018 | 15.9.28307.145 |
 | 15.9.2 | Vydaná verze | 19. listopadu 2018 | 15.9.28307.108 |
 | 15.9.1 | Vydaná verze | 15. listopadu 2018 | 15.9.28307.105 |

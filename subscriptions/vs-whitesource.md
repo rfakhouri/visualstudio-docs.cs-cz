@@ -9,12 +9,12 @@ description: Zjistěte, jak chcete předplatné aktivovat, nástroj WhiteSource 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a19c2a8882c7de27feef68416b6152e4a173ad54
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739981"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154431"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Nástroj WhiteSource Bolt v předplatných sady Visual Studio
 
@@ -41,20 +41,18 @@ Vyhledejte a opravte slabá místa opensourcového kódu a generovat komplexní 
    - [Nainstalujte](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) nástroj WhiteSource Bolt rozšíření sady Microsoft Visual Studio Marketplace. Pokud nemáte oprávnění k instalaci rozšíření, přečtěte si téma [instalovat bezplatná rozšíření pro služby Azure DevOps](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
 
-~~~
-Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+Klikněte na zelené **nainstalovat** tlačítko, pokud používáte Azure DevOps služby, nebo **Stáhnout** tlačítko pro Team Foundation Server.  V tomto příkladu budeme používat služby Azure DevOps.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
+> ![WhiteSource výhody instalace rozšíření](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
+- V dalším kroku vyberte Azure DevOps organizace, kterou chcete použít a klikněte na tlačítko **potvrdit**.  (Pokud ještě jste nenastavili DevOps služby Azure, přejděte [výhody](https://my.visualstudio.com/benefits) stránce a aktivaci vaší výhody služeb Azure DevOps.)
 
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> ![WhiteSource výhodu potvrzení účtu](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+- Se zobrazí potvrzení, že rozšíření je nainstalované a připravené k použití.  Klikněte na tlačítko **Začínáme** se vraťte na stránku nástroj WhiteSource Bolt a pokračovat.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
-~~~
+> ![WhiteSource výhody instalace dokončena](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
 5. Otevřete řídicí panel Projekt Azure DevOps, klikněte na **kanály Azure** nabídku a zvolte **nástroj WhiteSource Bolt**.
    > [!div class="mx-imgBorder"]
@@ -86,7 +84,7 @@ Click the green **Install** button if you are using Azure DevOps Services, or th
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje:    Microsoft Partner Network (Enterprise).  Vyloučí: Další není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, Microsoft Partner Network (Professional ).*
+<sup>1</sup>*zahrnuje:  Microsoft Partner Network (Enterprise).  Vyloučí: Další není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, Microsoft Partner Network (Professional ).*
 
 
 > [!NOTE]

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904176"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154060"
 ---
 # <a name="manage-external-tools"></a>Správa externích nástrojů
 
@@ -65,8 +65,8 @@ Následuje úplný seznam argumentů, které se dá použít při definování e
 |Cílový název|$(TargetName)|Název souboru položky, která má být sestavena.|
 |Cílová přípona|$(TargetExt)|Přípona názvu souboru položky, která má být sestavena.|
 |Binární složka|$(BinDir)|Konečné umístění binárního souboru, který má být sestaven (definované jako jednotka + cesta).|
-|Adresář projektu|$(ProjDir)|Adresář aktuálního projektu (jednotka + cesta).|
-|Název souboru projektu|$(ProjFileName)|Název souboru aktuálního projektu (jednotka + cesta + název souboru).|
+|Adresář projektu|$(ProjectDir)|Adresář aktuálního projektu (jednotka + cesta).|
+|Název souboru projektu|$(ProjectFileName)|Název souboru aktuálního projektu (jednotka + cesta + název souboru).|
 |Adresář řešení|$(SolutionDir)|Adresář aktuálního řešení (jednotka + cesta).|
 |Název souboru řešení|$(SolutionFileName)|Název souboru aktuálního řešení (jednotka + cesta + název souboru).|
 

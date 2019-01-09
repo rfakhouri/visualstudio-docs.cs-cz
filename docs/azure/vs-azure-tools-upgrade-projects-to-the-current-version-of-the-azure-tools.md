@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ddbc8a221cd883c3f30a583a1c1f03430c5f00ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3179dbff2e39865a706cb1e5a89c8a112de06d2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825507"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154073"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Postup upgradu projektů na aktuální verzi nástrojů Azure pro Visual Studio
 ## <a name="overview"></a>Přehled
@@ -24,7 +24,7 @@ Po instalaci aktuální verze sady nástrojů Azure (nebo předchozí verze, kte
 ## <a name="how-your-project-changes-when-you-upgrade-it"></a>Jak projektu změní, když ho upgradovat
 Pokud dojde k automatickému upgradu projektu nebo určíte, že chcete ho upgradovat, váš projekt je upravit tak, aby pracovat s aktuálními verzemi určité sestavení a některé vlastnosti jsou také změnit, protože tato část popisuje. Pokud váš projekt vyžaduje jiné změny, aby byly kompatibilní s touto novou verzí nástroje, musí tyto změny provést ručně.
 
-* Soubor web.config pro webové role a souboru app.config u rolí pracovního procesu jsou aktualizovány tak, aby odkazovaly novější verzi Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitoirTraceListener.dll.
+* Soubor web.config pro webové role a souboru app.config u rolí pracovního procesu jsou aktualizovány tak, aby odkazovaly novější verzi Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll.
 * Sestavení Microsoft.WindowsAzure.StorageClient.dll Microsoft.WindowsAzure.Diagnostics.dll a Microsoft.WindowsAzure.ServiceRuntime.dll upgradují na novou verzi.
 * Profily publikování, které byly uloženy v souboru projektu Azure (ccproj) přesunou do samostatného souboru, s .azurePubXml rozšíření v **publikovat** podadresáře.
 * Některé vlastnosti v profilu publikování jsou aktualizována o podporu nové a změněné funkce. **AllowUpgrade** nahrazuje **DeploymentReplacementMethod** protože nasazené cloudové službě můžete současně nebo přírůstkově aktualizovat.

@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 465bbd7c410617c0d8f55f60b086d6d46e139b4f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 481097a3b094f4ced4c6d7103e7513b9a3bc6e80
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064987"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154454"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Ladění Azure cloudové služby nebo virtuálního počítače v sadě Visual Studio
 
@@ -40,7 +40,7 @@ Emulátor služby Azure Compute simuluje a běží v místním prostředí, tak�
 
 3. Krok přes aplikaci tak, že vyberete příkazy na **ladění** nabídky a nastavení zarážek v kódu. Krocích v ladicím programu aplikace se zobrazí aktuální stav aplikace aktualizují podokna. Při zastavení ladění, nasazení aplikace, které se odstraní. Pokud vaše aplikace obsahuje webové role a nastavíte vlastnost po spuštění akce spuštění webového prohlížeče, Visual Studio spustí webovou aplikaci v prohlížeči. Pokud změníte počet instancí role v konfiguraci služby, musíte zastavit cloudovou službu a pak znovu spusťte ladění, takže můžete ladit tyto nové instance role.
 
-    **Poznámka:** při zastavení spuštění nebo ladění služby nejsou zastavena místním výpočetním emulátoru a emulátoru úložiště. Musíte explicitně zastavit z oznamovací oblasti.
+    **Poznámka:** Při zastavení spuštění nebo ladění služby nejsou zastavena místním výpočetním emulátoru a emulátoru úložiště. Musíte explicitně zastavit z oznamovací oblasti.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Ladění cloudové služby v Azure
 
@@ -79,7 +79,7 @@ Pokud povolíte vzdálené ladění pro cloudovou službu, není je důvodem sn�
 
     ![Vyberte typ kódu – dialogové okno](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Pokud chcete identifikovat procesy, ke kterým je připojen ladicí program, otevřete procesy dialogové okno, v řádku nabídek, výběrem ladění, Windows, procesy. (Klávesnice: Ctrl + Alt + Z) Chcete-li odpojit konkrétní proces, otevřete místní nabídku a vyberte **odpojení procesu**. Nebo, vyhledejte uzel instance v Průzkumníku serveru, vyhledejte proces, otevřete místní nabídku a vyberte **odpojení procesu**.
+4. Pokud chcete identifikovat procesy, ke kterým je připojen ladicí program, otevřete procesy dialogové okno, v řádku nabídek, výběrem ladění, Windows, procesy. (Klávesnice: Ctrl + Alt + Z) odpojit konkrétní proces, otevřete místní nabídku a pak vyberte **odpojení procesu**. Nebo, vyhledejte uzel instance v Průzkumníku serveru, vyhledejte proces, otevřete místní nabídku a vyberte **odpojení procesu**.
 
     ![Ladění procesů](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -146,7 +146,7 @@ Projekty aplikace Visual Studio ASP.NET nabízejí možnost vytvoření virtuál
 
     ![Vytvořit dialogové okno projektu ASP.NET pro web](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Poznámka:** budete vyzváni k přihlášení ke svému účtu Azure, pokud jste ještě nejste přihlášení.
+    **Poznámka:** Budete vyzváni k přihlášení ke svému účtu Azure, pokud jste ještě nejste přihlášení.
 
 3. Vyberte různá nastavení pro virtuální počítač a pak vyberte **OK**. Zobrazit [virtuálních počítačů](http://go.microsoft.com/fwlink/?LinkId=623033) Další informace.
 
@@ -166,7 +166,7 @@ Projekty aplikace Visual Studio ASP.NET nabízejí možnost vytvoření virtuál
 
     ![Protokol aktivit Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publikování projektu, jak je uvedeno v [postupy: nasazení webového projektu pomocí publikování jedním kliknutím v sadě Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Vzhledem k tomu, který chcete ladit na virtuálním počítači, na **nastavení** stránku **Publikovat Web** průvodce, vyberte **ladění** jako konfiguraci. Tím zajistíte, že kód symboly jsou k dispozici při ladění.
+6. Publikování projektu, jak je uvedeno v [jak: Nasazení webového projektu pomocí jedním kliknutím publikovat v sadě Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Vzhledem k tomu, který chcete ladit na virtuálním počítači, na **nastavení** stránku **Publikovat Web** průvodce, vyberte **ladění** jako konfiguraci. Tím zajistíte, že kód symboly jsou k dispozici při ladění.
 
     ![Nastavení publikování](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -186,6 +186,6 @@ Projekty aplikace Visual Studio ASP.NET nabízejí možnost vytvoření virtuál
 
 ## <a name="next-steps"></a>Další kroky
 
-* Použití **Intellitrace** ke shromažďování protokolů událostí a volání ze serveru verze. Zobrazit [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=623016).
+* Použití **IntelliTrace** ke shromažďování protokolů událostí a volání ze serveru verze. Zobrazit [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=623016).
 
 * Použití **Azure Diagnostics** můžete protokolovat podrobné informace z spouštění kódu v rámci rolí, zda role běží ve vývojovém prostředí nebo v Azure. Zobrazit [shromažďování dat protokolování pomocí diagnostiky Azure](http://go.microsoft.com/fwlink/p/?LinkId=400450).

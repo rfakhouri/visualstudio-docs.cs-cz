@@ -1,5 +1,5 @@
 ---
-title: Přenos, migrace a Upgrade projektů
+title: Přenos, migrace a upgrade projektů
 description: Referenční informace pro podporu projektů vytvořených v dřívějších verzích sady Visual Studio a jak Visual Studio rozhodne, když je potřeba migrovat projekt v sadě Visual Studio 2017.
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c1ceaf0fc805ce9fb2b284de203bfde6f418a4a1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
-ms.translationtype: HT
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220827"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "53067058"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2017
 
@@ -62,13 +62,13 @@ Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najde
 | SharePoint 2010 | Při otevření projektu řešení služby SharePoint pomocí sady Visual Studio 2017, dojde k upgradu na službu SharePoint 2013 nebo SharePoint 2016. Úloha ".NET Desktop Development" musí být nainstalován v sadě Visual Studio 2017 pro upgrade.<br/><br/>Další informace o tom, jak upgradovat projekty služby SharePoint, naleznete v tématu [upgradovat na službu SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx), [pracovního postupu aktualizace v SharePoint serveru 2013](https://technet.microsoft.com/library/dn133867.aspx), a [Vytvoření farmy serverů SharePoint Server 2016 pro databázi připojte upgrade](https://technet.microsoft.com/library/cc263026(v=office.16).aspx). |
 | SharePoint 2016 | SharePoint Add-In projekty vytvořené v Office Developer Tools ve verzi Preview 2 nelze otevřít v sadě Visual Studio 2017. Pokud chcete toto omezení obejít, aktualizujte `MinimumVisualStudioVersion` k 12.0 a `MinimumOfficeToolsVersion` k 12.2 v souboru csproj vbproj. |
 | Silverlight | Projekty technologie Silverlight v sadě Visual Studio 2017 není podporován. Chcete-li udržovat aplikace Silverlight, používejte nadále Visual Studio 2015. |
-| SQL Server Reporting Services a SQL Server Analysis Services (SSRS, rozšíření SSDT, SSAS, účty spravované služby) | Pro tyto typy projektů je poskytována prostřednictvím podpory dvě rozšíření v Galerii Visual Studio: [projekty modelování služby Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) a [Microsoft Reporting Services projekty](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Podpora rozšíření SSDT je také součástí úloze ukládání a zpracování v sadě Visual Studio 2017. |
+| SQL Server Reporting Services a SQL Server Analysis Services (SSRS, rozšíření SSDT, SSAS, účty spravované služby) | Podpora pro tyto typy projektů je poskytována prostřednictvím dvě rozšíření v Galerii Visual Studio:  [Microsoft Analysis Services projekty modelování](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) a [služby Microsoft Reporting Services projekty](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Podpora rozšíření SSDT je také součástí úloze ukládání a zpracování v sadě Visual Studio 2017. |
 | SQL Server Integration Services (SSIS) | Podpora pro Visual Studio 2017 je k dispozici prostřednictvím SQL Server Data Tools (SSDT). Další informace najdete v tématu [blog služby SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
 | Visual C++ | Visual Studio 2017 můžete použít pro práci v projektech, které byly vytvořeny v dřívějších verzích sady Visual Studio zpět do sady Visual Studio 2010. Při prvním otevření projektu, máte možnost upgradu na nejnovější kompilátoru a nástrojů, nebo pokračovat v používání původního. Pokud se rozhodnete používat i nadále původního, Visual Studio 2017 neprovede žádné změny souboru projektu a sady nástrojů z dřívější instalace sady Visual Studio používá k sestavení projektu. Zachovat původní možnosti prostředky můžete i nadále otevřít projekt v původní verzi sady Visual Studio v případě potřeby. Další informace najdete v tématu [pomocí nativního cílení na více platforem v sadě Visual Studio sestavení starých projektů](/cpp/porting/use-native-multi-targeting). |
-| Rozšiřitelnost sady Visual Studio/souboru VSIX | Projekty s MinimumVersion 14.0 nebo méně aktualizují deklarovat MinimumVersion 15.0, což zabrání projektu se otevře v dřívějších verzích sady Visual Studio. Povolit projekt otevřít ve starších verzích, nastavte na MinimumVersion `$(VisualStudioVersion)`. Viz také [postupy: migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
+| Rozšiřitelnost sady Visual Studio/souboru VSIX | Projekty s MinimumVersion 14.0 nebo méně aktualizují deklarovat MinimumVersion 15.0, což zabrání projektu se otevře v dřívějších verzích sady Visual Studio. Povolit projekt otevřít ve starších verzích, nastavte na MinimumVersion `$(VisualStudioVersion)`. Viz také [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Můžete použít nástroje Microsoft Test Manager nebo Visual Studio 2010 SP1 a novější k otevření prostředí, které jsou vytvořeny v některé z těchto verzí. Ale pro Visual Studio 2010 SP1 verze nástroje Microsoft Test Manager musí odpovídat verzi serveru Team Foundation Server než budete moct vytvořit prostředí. |
 | Visual Studio Tools pro Apache Cordova | Projekty lze otevřít v sadě Visual Studio 2017, ale nejsou zpětně kompatibilní. Při otevření projektu ze sady Visual Studio 2015, se zobrazí výzva k cílem umožnit úpravy do projektu. Tuto úpravu inovuje projekt na používání sady nástrojů místo `taco.json` souboru ke správě verzí Cordova knihovny, jeho platformy, jeho moduly plug-in a jeho závislosti uzlů/npm. Zobrazit [Průvodce migrací](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) Další informace. |
-| Nasazení webu (wdproj) | Podpora pro nasazení webu byla odebrána projekty v sadě Visual Studio 2012 a uveďte podpora profilů publikování. Protože neexistuje žádný ekvivalent v sadě Visual Studio 2017, neexistuje žádný způsob automatického migrace pro tyto projekty. Místo toho v textovém editoru otevřete soubor wdproj a jakékoli vlastní nastavení do pubxml kopírování a vkládání (profil publikování) souboru, jak je popsáno na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Viz také [plány týkající se webu a webové projekty nasazení (Blogy MSDN)](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Nasazení webu (wdproj) | Podpora pro nasazení webu byla odebrána projekty v sadě Visual Studio 2012 a uveďte podpora profilů publikování. Protože neexistuje žádný ekvivalent v sadě Visual Studio 2017, neexistuje žádný způsob automatického migrace pro tyto projekty. Místo toho v textovém editoru otevřete soubor wdproj a jakékoli vlastní nastavení do pubxml kopírování a vkládání (profil publikování) souboru, jak je popsáno na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Viz také [plány týkající se webu a webové projekty nasazení](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
 | Windows Communication Foundation, Windows Workflow Foundation | Tento projekt lze otevřít v sadě Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 a Visual Studio 2012 |
 | Windows Presentation Foundation | Tento projekt lze otevřít v sadě Visual Studio 2013, Visual Studio 2012 a Visual Studio 2010 SP1. |
 | Aplikace pro Windows Store a Phone | Projekty pro Windows Store 8.1 a 8.0 a Windows Phone 8.1 a 8.0 se nepodporují v sadě Visual Studio 2017. Chcete-li tyto aplikace udržovat, používejte nadále Visual Studio 2015. Chcete-li udržovat projekty pro Windows Phone 7.x, používejte Visual Studio 2012. |
@@ -95,7 +95,13 @@ Pokud chcete zachovat maximální kompatibilitu s projekty vytvořené ve starš
 
 V tomto kontextu dotaz přirozeně, zda by měl akci k ruční aktualizaci nebo migrovat projekt na novější `ToolsVersion` hodnotu. Tato změna není nutný a pravděpodobně vygeneruje všechny chyby a upozornění, které je třeba opravit a získat projekt znovu sestavit. Kromě toho pokud Visual Studio klesne podporu pro konkrétní `ToolsVersion` v budoucnu, pak otevřete projekt spustí proces migrace projektu konkrétně, protože `ToolsVersion` je třeba hodnotu změnit. V takovém případě subsystém pro konkrétní projekt typu ví, přesně co je potřeba změnit a můžete provádět tyto změny automaticky, jak je popsáno výše v tomto článku.
 
+# <a name="next-steps"></a>Další kroky
+
 Přečtěte si další informace v následujících článcích:
 
 - [Pokyny k hodnotě ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Pokyny k cílení na rozhraní Framework](../ide/visual-studio-multi-targeting-overview.md)
+
+## <a name="see-also"></a>Viz také:
+
+[Migrace a upgrade odkaz na projekt pro Visual Studio 2019 Preview](port-migrate-upgrade-visual-studio-projects-2019.md)

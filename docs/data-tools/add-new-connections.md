@@ -8,12 +8,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880595"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154215"
 ---
 # <a name="add-new-connections"></a>Přidat nové připojení
 
@@ -25,7 +25,7 @@ Můžete otestovat připojení k databázi nebo službu a prozkoumat obsah datab
 
 - Průzkumník cloudu
 
-   Ruční instalace tohoto okna jako rozšíření sady Visual Studio tak, že vyberete **nástroje** > **rozšíření a aktualizace** > **Online**  >  **Sady visual Studio Markeplace**. Poskytuje specializované funkce pro zkoumání a připojení ke službám Azure.
+   Ruční instalace tohoto okna jako rozšíření sady Visual Studio tak, že vyberete **nástroje** > **rozšíření a aktualizace** > **Online**  >  **Visual Studio Marketplace**. Poskytuje specializované funkce pro zkoumání a připojení ke službám Azure.
 
 - Průzkumník objektů systému SQL Server
 

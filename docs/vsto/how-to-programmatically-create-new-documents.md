@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Office development in Visual Studio], custom document
 - Word [Office development in Visual Studio], creating documents
 - documents [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b5b7766e58cf420d171c1390546957eba1817c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882183d1e23168e1a3a833cd7cc723f28ce1a139
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918807"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154119"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Postupy: Vytváření nových dokumentů prostřednictvím kódu programu
   Při vytváření dokumentů prostřednictvím kódu programu, nový dokument je nativní <xref:Microsoft.Office.Interop.Word.Document> objektu. Tento objekt nemá žádné další události a možnosti vázání dat z <xref:Microsoft.Office.Tools.Word.Document> hostitelský objekt. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  

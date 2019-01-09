@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: c5fb70f2dd09338dd2e2f6b01cb60bf2be0cdbdd
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b7faf80371a48ad2ddf6c13b879525b65a3eb299
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003336"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154286"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Postup upgradu projektů na aktuální verzi nástrojů Azure pro Visual Studio
 ## <a name="overview"></a>Přehled
@@ -25,7 +25,7 @@ Po instalaci aktuální verze sady nástrojů Azure (nebo předchozí verze, kte
 ## <a name="how-your-project-changes-when-you-upgrade-it"></a>Jak projektu změní, když ho upgradovat
 Pokud dojde k automatickému upgradu projektu nebo určíte, že chcete ho upgradovat, váš projekt je upravit tak, aby pracovat s aktuálními verzemi určité sestavení a některé vlastnosti jsou také změnit, protože tato část popisuje. Pokud váš projekt vyžaduje jiné změny, aby byly kompatibilní s touto novou verzí nástroje, musí tyto změny provést ručně.
 
-* Soubor web.config pro webové role a souboru app.config u rolí pracovního procesu jsou aktualizovány tak, aby odkazovaly novější verzi Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitoirTraceListener.dll.
+* Soubor web.config pro webové role a souboru app.config u rolí pracovního procesu jsou aktualizovány tak, aby odkazovaly novější verzi Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll.
 * Sestavení Microsoft.WindowsAzure.StorageClient.dll Microsoft.WindowsAzure.Diagnostics.dll a Microsoft.WindowsAzure.ServiceRuntime.dll upgradují na novou verzi.
 * Profily publikování, které byly uloženy v souboru projektu Azure (ccproj) přesunou do samostatného souboru, s .azurePubXml rozšíření v **publikovat** podadresáře.
 * Některé vlastnosti v profilu publikování jsou aktualizována o podporu nové a změněné funkce. **AllowUpgrade** nahrazuje **DeploymentReplacementMethod** protože nasazené cloudové službě můžete současně nebo přírůstkově aktualizovat.
@@ -33,7 +33,7 @@ Pokud dojde k automatickému upgradu projektu nebo určíte, že chcete ho upgra
 * Pokud ukládání do mezipaměti Azure je hostované v jedné nebo více rolí váš projekt, se některé vlastnosti v konfiguraci služby (soubor .cscfg) a definice služby (soubor .csdef) změnit při upgradu projektu. Pokud projekt používá balíček NuGet pro ukládání do mezipaměti Azure, projekt upgradovat na nejnovější verzi balíčku. By měla otevřít soubor web.config a ověřte, že byla správně Udržovat konfiguraci klienta během procesu upgradu. Pokud jste přidali odkazy na sestavení klienta ukládání do mezipaměti Azure bez použití balíčku NuGet, neaktualizuje se tato sestavení; je nutné ručně aktualizovat tyto odkazy na nové verze.
 
 > [!IMPORTANT]
-> Pro projekty F # je nutné ručně aktualizovat odkazy na sestavení v Azure, takže odkazují novější verze tato sestavení.
+> Pro F# projektů, je nutné ručně aktualizovat odkazy na sestavení Azure tak, aby odkazují novější verze tato sestavení.
 > 
 > 
 

@@ -1,5 +1,5 @@
 ---
-title: 'Chyba: SQL můžete&#39;t najít ssdebugps. | Dokumentace Microsoftu'
+title: 'Chyba: Můžete SQL&#39;t najít ssdebugps. | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -22,14 +22,14 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47e0557e3ad2022250d54b7bd45844825ff79a03
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 92e09a3dd2d1d70bd2e585e2de6b0fd1cca812b0
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757465"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154386"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>Chyba: SQL můžete&#39;t najít ssdebugps.
+# <a name="error-sql-can39t-find-ssdebugps"></a>Chyba: Můžete SQL&#39;t najít ssdebugps.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ssdebugps.dll nebyl je součást ladění hostitel systému SQL Server.  
@@ -49,7 +49,7 @@ Ssdebugps.dll nebyl je součást ladění hostitel systému SQL Server.
 2.  Zaregistrujte ho tak, že otevřete **příkazového řádku**a spuštěním následujícího příkazu:  
   
     ```  
-    regsrv32 ssdebugps.dll  
+    regsvr32 ssdebugps.dll  
     ```
 
 

@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 208a127e3b4afb791e7a61becd6ed50bbc66bc23
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775105"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154280"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Spouštění v simulátoru Windows Store apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
 ## <a name="pinch-and-zoom"></a>Ovládání stažením prstů a přiblížení  
  Nastaví režim interakce pro ovládání stažením prstů a gesta dvěma prsty přiblížení.  
   
--   ![Cíl prstem Siimulator dvě](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+-   ![Cíl simulátoru dvě prstem](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
      Dvojité cílovou ikonu označuje umístění dvěma prsty na obrazovce zařízení.  
   
@@ -117,7 +117,7 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
      ![Snímek obrazovky nastavení místní nabídka](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simulovat vlastnosti připojení k síti  
- Můžete uživatelům vaší aplikace, spravovat náklady na měřeném připojení k síti zachování povědomí o síťové připojení zdarma nebo dat plánu změny stavu a povolením aplikaci pomocí těchto informací zabránit bez dalších nákladů pro roaming nebo vyšší než pomoci omezení přenosu zadaná data. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) rozhraní API umožňuje reagovat na [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) a [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) události, které se přihlaste. Zobrazit [rychlý start: Správa sítí s měřením dat nákladů omezení](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Můžete uživatelům vaší aplikace, spravovat náklady na měřeném připojení k síti zachování povědomí o síťové připojení zdarma nebo dat plánu změny stavu a povolením aplikaci pomocí těchto informací zabránit bez dalších nákladů pro roaming nebo vyšší než pomoci omezení přenosu zadaná data. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) rozhraní API umožňuje reagovat na [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) a [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) události, které se přihlaste. Zobrazit [rychlý start: Správa omezení náklady na síť s měřením dat](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  K ladění a testování kódu s ohledem na náklady na síť, můžete simulátoru napodobují vlastnosti sítě, které jsou vystaveny prostřednictvím [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) vrácený [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
   
@@ -141,7 +141,7 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
   
    **Další informace o správě připojení k síti**  
   
-   [Rychlý start: Správa měří omezení náklady na síť](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Rychlý start: Správa omezení náklady na síť s měřením dat](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Ukázka informace o síti](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   

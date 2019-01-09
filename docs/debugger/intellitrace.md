@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d38ea825596d4edb38898b36296bde86f0f4c37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa6e838a2681bcaf89e9b5ba6eb42ad4c9e6154e
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842405"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153854"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -43,7 +43,7 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 
 |||
 |-|-|
-|**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|- [Kontrola předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Návod: Pomocí IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />- [Historické ladění](../debugger/historical-debugging.md)|
+|**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|- [Kontrola předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Návod: Použití funkce IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />- [Historické ladění](../debugger/historical-debugging.md)|
 |**Shromažďovat IntelliTrace data během testovací relace v nástroji Test Manager**|- [Shromažďování více diagnostických dat v manuálních testů](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Shromažďovat IntelliTrace data z nasazené aplikace**|- [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Spuštění ladění ze souboru protokolu IntelliTrace (soubor .iTrace).**|- [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
@@ -53,7 +53,7 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 | | |
 |---------------------| - |
 | **Plná podpora** | -Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br/>Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br/>Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
-| **Omezená podpora** | – Nativní aplikace určené pro podporu Windows zobrazení snímků pomocí zpětného kroku IntelliTrace. Podporují se jenom události ladicího programu a výjimek.<br />– .NET core a ASP.NET Core aplikace podporované pro určité události pouze (kontroler MVC, ADO.NET a HTTPClicent události) v místní ladění. Samostatný kolektor není podporována pro aplikace .NET Core nebo ASP.NET Core.<br />- F# aplikace na experimentální bázi<br />– Aplikace UWP podporované pouze pro události |
+| **Omezená podpora** | – Nativní aplikace určené pro podporu Windows zobrazení snímků pomocí zpětného kroku IntelliTrace. Podporují se jenom události ladicího programu a výjimek.<br />– .NET core a ASP.NET Core aplikace podporované pro určité události pouze (kontroler MVC, ADO.NET a HTTPClient události) v místní ladění. Samostatný kolektor není podporována pro aplikace .NET Core nebo ASP.NET Core.<br />- F# aplikace na experimentální bázi<br />– Aplikace UWP podporované pouze pro události |
 | **Nepodporuje se** | -Ostatní jazyky a skript<br />– Windows Services, Silverlight, Xbox nebo [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikace |
 
 > [!NOTE]
@@ -148,7 +148,7 @@ Ve výchozím nastavení nástroj IntelliTrace zaznamenává pouze události Int
 Můžete nakonfigurovat IntelliTrace k zachycení snímků na každé zarážce a kroku události ladicího programu. Nástroj IntelliTrace zaznamenává úplném stavu aplikace v jednotlivých snímků, které vám umožní zobrazit proměnné komplexní a vyhodnocujte výrazy.
 
 > [!NOTE]
-> [Samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) zachytávající snaphots nepodporuje.
+> [Samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) nepodporuje zachycené snímky.
 
 Zobrazit [kontrolovat předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md).
 

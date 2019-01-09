@@ -9,19 +9,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 674297bb995591a3062c81f9e760e3005a931447
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966453"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154292"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Postupy: Ladění na vysoký výkon clusteru
 Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění program ve vzdáleném počítači. Existuje ale několik dalších důležitých informací. Obecné nastavení vzdálené požadavky najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  

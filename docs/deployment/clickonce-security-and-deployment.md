@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923111"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154347"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce – zabezpečení a nasazení
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je technologie nasazení, která vám umožní vytvořit automatických aktualizací aplikace založené na Windows, které mohou být nainstalovány a spuštěny vyžadují minimální interakci uživatele. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje plnou podporu pro publikování a aktualizace aplikací nasazených pomocí technologie ClickOnce, pokud jste vytvořili projekt v jazyce Visual Basic a Visual C#. Informace o nasazení aplikací v jazyce Visual C++, naleznete v tématu [ClickOnce – nasazení pro aplikace Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -51,7 +51,7 @@ ms.locfileid: "53923111"
  Authenticode certifikáty se používají k ověření pravosti vydavatele. Pomocí technologie Authenticode pro nasazení aplikace ClickOnce pomáhá zabránit vydávání sama sebe jako legitimní program pocházejí z důvěryhodného zdroje a zavedené škodlivý program. Volitelně se certifikáty lze také použít k podepsání aplikace a manifesty nasazení prokázat, že soubory nebylo manipulováno. Další informace najdete v tématu [ClickOnce and Authenticode](../deployment/clickonce-and-authenticode.md). Certifikáty lze použít také ke konfiguraci klientských počítačů, aby seznam důvěryhodných vydavatelů. Pokud aplikace pochází z důvěryhodného vydavatele, je možné nainstalovat bez nutnosti zásahu uživatele. Další informace najdete v tématu [Přehled nasazení důvěryhodných aplikací](../deployment/trusted-application-deployment-overview.md).  
   
 ### <a name="code-access-security"></a>Zabezpečení přístupu kódu  
- Kód přístupu secrity pomáhá omezit přístupu k chráněným prostředkům. Ve většině případů můžete omezit oprávnění zón Internetu a místního intranetu. Použití **zabezpečení** stránku **ProjectDesigner** požádat o zóně vhodný pro aplikaci. Můžete také ladit aplikace s omezenými oprávněními k emulaci činnost koncového uživatele. Další informace najdete v tématu [zabezpečení přístupu ke kódu pro aplikace ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
+ Zabezpečení přístupu kódu pomáhá omezit přístup ke kódu, který má k chráněným prostředkům. Ve většině případů můžete omezit oprávnění zón Internetu a místního intranetu. Použití **zabezpečení** stránku **ProjectDesigner** požádat o zóně vhodný pro aplikaci. Můžete také ladit aplikace s omezenými oprávněními k emulaci činnost koncového uživatele. Další informace najdete v tématu [zabezpečení přístupu ke kódu pro aplikace ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>Výzvy důvěryhodnosti ClickOnce  
  Pokud aplikace požaduje více oprávnění než umožňuje zóny, koncový uživatel může vyzváni k provedení rozhodnutí důvěryhodnosti. Koncový uživatel mohl určit, pokud jsou důvěryhodné pro spuštění aplikace ClickOnce, jako je aplikace Windows Forms, aplikace Windows Presentation Foundation, konzolové aplikace, aplikace prohlížeče XAML a řešení pro systém Office. Další informace najdete v tématu [jak: Konfigurace chování výzvy důvěryhodnosti ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
