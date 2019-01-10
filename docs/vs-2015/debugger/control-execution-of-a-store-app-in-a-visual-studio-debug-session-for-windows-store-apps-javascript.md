@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d35a33fcacf57c0d88e7bd7db1112f4ec3db4204
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e2541fe5a4faafbd1ab9c165fc38a960406bd0a
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968317"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154499"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Řízení spouštění aplikace pro Store v ladicí relaci sady Visual Studio pro aplikace Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -266,15 +266,13 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
 
 6.  **Krokovat s vnořením example4_a a zkontrolujte jeho místní a obor proměnné** i nadále můžete krokovat s vnořením `example4` a do volání `example4_a`. Všimněte si, že místní proměnné se teď z `example4_a`a že **[oboru]** uzel pokračuje k uložení proměnné `module` funkce. I když proměnné `example4` jsou aktivní, nesmí být dosažitelný podle `example4_a` a nadále již nebudou součástí řetězce oboru.
 
-7.  **Krokovat s vnořením multipyByA a zkontrolujte jeho místní a obor proměnné** projít zbývající část `example4_a` a do řádku `var x = multilpyByA(b);`.
+7.  **Krokovat s vnořením multiplyByA a zkontrolujte jeho místní a obor proměnné** projít zbývající část `example4_a` a do řádku `var x = multiplyByA(b);`.
 
-     Proměnnou funkce `multipyByA` byla nastavena `multiplyClosure` funkce, která je *uzavření*. `multipyClosure` definuje a vrátí vnitřní funkce `mulitplyXby`a zachytí (zavře přes) proměnné a parametru. Vrácené vnitřní funkce v uzávěru, má přístup k datům vnější funkce a proto vytvoří vlastní úroveň oboru.
+     Proměnnou funkce `multiplyByA` byla nastavena `multiplyClosure` funkce, která je *uzavření*. `multiplyClosure` definuje a vrátí vnitřní funkce `multiplyXby`a zachytí (zavře přes) proměnné a parametru. Vrácené vnitřní funkce v uzávěru, má přístup k datům vnější funkce a proto vytvoří vlastní úroveň oboru.
 
-     Při krokování s vnořením `var x = multilpyByA(b);`, přejdete `return a * b;` řádku v `mulitplyXby` vnitřní funkce.
+     Při krokování s vnořením `var x = multiplyByA(b);`, přejdete `return a * b;` řádku v `multiplyXby` vnitřní funkce.
 
 8.  V okně místních hodnot, pouze parametr `b` je uveden jako místní proměnné v `multiplyXby`, ale nové **[oboru]** úroveň se přidala. Rozbalením tohoto uzlu, uvidíte, že obsahuje parametry, funkce a proměnné `multiplyClosure`, včetně `a` proměnná volána v prvním řádku `multiplyXby`. Rychlá kontrola druhého **[oboru]** uzel ukáže proměnné funkce modulu, který `multiplyXby` přistupuje k jeho dalším řádku.
-
-     ![Obory uzavření v okně místních hodnot](../debugger/media/dbg-jsnav-scope-mulitplyxby.png "DBG_JSNAV_scope_mulitplyXby")
 
 9. **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **SHIFT + F5**). Ukončí relaci ladění.
 
