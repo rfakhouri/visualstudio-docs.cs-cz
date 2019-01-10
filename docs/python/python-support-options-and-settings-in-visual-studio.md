@@ -110,7 +110,7 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
-| **Potvrzen zadáním následujících znaků** | **{}\[\]().,:, +-* / % &&#124;^ ~ = <> #@\\** | Tyto znaky obvykle podle identifikátor, který jeden můžou vybrat ze seznamu dokončení, proto je vhodné potvrdit dokončení jednoduše zadáním znaku. Můžete odebrat nebo přidat zvláštní znaky do seznamu podle potřeby.  |
+| **Potvrzen zadáním následujících znaků** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Tyto znaky obvykle podle identifikátor, který jeden můžou vybrat ze seznamu dokončení, proto je vhodné potvrdit dokončení jednoduše zadáním znaku. Můžete odebrat nebo přidat zvláštní znaky do seznamu podle potřeby.  |
 | **Zadejte aktuální dokončení potvrzení změn** | On | Při nastavení **Enter** klíč vybere a použije aktuálně vybraného dokončení stejně jako u výše uvedených znaků (ale samozřejmě není znak pro **Enter** proto ji nelze přímo přejít do tohoto seznamu!). |
 | **Přidat nový řádek na konec plně napsaného slova** | Off | Ve výchozím nastavení, pokud zadáte celé slovo, které se zobrazí automaticky otevírané okno dokončení a stiskněte klávesu **Enter**, potvrdíte, že dokončení. Nastavením této možnosti můžete efektivně potvrdit dokončování napsání identifikátor, tak, aby **Enter** vloží nový řádek. |
 
