@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f3659cd2a77e57f560abb18b0af83549edd0571
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938170"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204161"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Postupy: Zápis Run-Time chybách – funkce
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Postupy: Zápis Run-Time chybách – funkce (C++)
 Vlastní vytváření sestav funkce pro chyby za běhu musí mít stejné deklaraci jako `_CrtDbgReportW`. V ladicím programu, měla by vrátit hodnotu 1.  
   
  Následující příklad ukazuje, jak definovat vlastní funkci generování sestav.  

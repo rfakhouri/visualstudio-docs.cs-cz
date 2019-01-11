@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894438"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204242"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Vybrali jste databázový objekt od nepodporovaného poskytovatele databáze.
 
@@ -23,17 +23,11 @@ ms.locfileid: "53894438"
 > [!NOTE]
 > Jsou podporovány pouze datová připojení, které používají zprostředkovatele dat .NET Framework pro SQL Server.
 
-## <a name="to-correct-this-error"></a>Oprava této chyby
+## <a name="options"></a>Možnosti
 
-- Klikněte na **OK**.
+- Klikněte na tlačítko **OK** pokračujte návrhu tříd entit, které mapují na připojení, které používá nepodporovaného poskytovatele databáze. Při použití nepodporované databázové poskytovatelů, může dojít k neočekávanému chování.
 
-   Navrhování tříd entit, které mapují na připojení, které používá nepodporovaného poskytovatele databáze. můžete pokračovat. Při použití nepodporované databázové poskytovatelů, může dojít k neočekávanému chování.
-
-    -nebo-
-
-- Klikněte na tlačítko **zrušit**.
-
-   Tato akce je zastavená. Vytvořit nebo použít datové připojení, který používá zprostředkovatele .NET Framework pro SQL Server.
+- Klikněte na tlačítko **zrušit** zastavit akci. Vytvořit nebo použít odlišné datové připojení, který používá zprostředkovatele .NET Framework pro SQL Server.
 
 ## <a name="see-also"></a>Viz také:
 

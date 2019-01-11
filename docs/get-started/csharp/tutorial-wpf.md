@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41094bca1e283ab81dd293d5132997651da7496b
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: af7126910971cdf9ce583c57c1f88bb56a87f744
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443195"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204408"
 ---
-# <a name="tutorial-create-a-simple-application-with-c-or-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace s C# nebo Visual Basic
+# <a name="tutorial-create-a-simple-application-with-c"></a>Kurz: Vytvoření jednoduché aplikace sC#
 
 V tomto návodu se seznámíte s mnoha nástrojů, dialogových oknech a návrhářích, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Budete vytvářet aplikace "Hello, World", návrh uživatelského rozhraní, přidat kód a ladit chyby, zatímco informace o práci v integrovaném vývojovém prostředí ([IDE](visual-studio-ide.md)).
 

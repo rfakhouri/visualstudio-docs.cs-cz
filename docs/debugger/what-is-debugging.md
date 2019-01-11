@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830966"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204278"
 ---
 # <a name="what-is-debugging"></a>Co je ladění?
 
@@ -44,11 +44,14 @@ Po přepnutí tohoto nastavení změnit projekt z konfigurace ladění na konfig
 
 ## <a name="when-to-use-a-debugger"></a>Kdy použít ladicí program
 
-Ladicí program je to důležitý nástroj, můžete najít a opravit chyby ve svých aplikacích. Však má kontextu a je potřeba využívat všechny nástroje k vaší na jedno použití k vám pomůže rychle eliminovat chyby. Právo "nástroje" v některých případech může být způsobem lépe kódování. Podle studijního, kdy se má použít ladicí program nebo nějaký jiný nástroj, bude také zjistěte, jak použít ladicí program efektivněji. Pokud už znáte, budete potřebovat další informace o ladicím programu, přečtěte si téma [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md). V opačném případě přejděte na odkaz v **další kroky**.
+Ladicí program je to důležitý nástroj, můžete najít a opravit chyby ve svých aplikacích. Však má kontextu a je potřeba využívat všechny nástroje k vaší na jedno použití k vám pomůže rychle eliminovat chyby. Právo "nástroje" v některých případech může být způsobem lépe kódování. Podle studijního, kdy se má použít ladicí program nebo nějaký jiný nástroj, bude také zjistěte, jak použít ladicí program efektivněji.
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto článku jste se seznámili s několika koncepty obecné ladění. V dalším kroku můžete začít ladění pomocí sady Visual Studio a tom, jak psát kód s méně chyb. Tento článek ukazuje C# příklady kódu, ale konceptů platí pro všechny jazyky podporované v aplikaci Visual Studio.
+V tomto článku jste se seznámili s několika koncepty obecné ladění. V dalším kroku můžete začít ladění pomocí sady Visual Studio a tom, jak psát kód s méně chyb. Následující články Zobrazit C# příklady kódu, ale konceptů platí pro všechny jazyky podporované v aplikaci Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
 > [Oprava chyb napsáním lépe C# kódu](../debugger/write-better-code-with-visual-studio.md)

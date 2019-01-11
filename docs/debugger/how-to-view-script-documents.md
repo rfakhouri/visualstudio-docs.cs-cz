@@ -1,6 +1,6 @@
 ---
 title: 'Postupy: Zobrazení dokumentů skriptu | Dokumentace Microsoftu'
-ms.date: 11/04/2016
+ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,21 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca9eff00f76bd62abce3c3dae061958af546e483
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867722"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204132"
 ---
-# <a name="how-to-view-script-documents"></a>Postupy: Zobrazení dokumentů skriptu
-V dřívějších verzích [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], skript na straně klienta soubory vygenerované ze skriptu na straně serveru se zobrazily v okně Průzkumník skriptů. Okno Průzkumníka skriptu se často skrytý, aby dostupnosti skriptů na straně klienta nebyl vždy jasné.  
+# <a name="how-to-view-script-documents-javascript"></a>Postupy: Zobrazení dokumentů skriptu (JavaScript)
+
+Soubory skriptu na straně serveru jsou viditelné v Průzkumníku řešení. Soubory skriptu na straně klienta jsou viditelné pouze v případě, že jsou v režimu ladění nebo v režimu pozastavení. Soubory skriptu na straně klienta se zobrazí v **dokumenty skriptu** uzlu.  
   
- V [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], skript na straně klienta soubory vygenerované ze skriptu na straně serveru se zobrazí v Průzkumníku řešení, který se zobrazí ve výchozím nastavení. V okně Průzkumník skriptů se odstranilo.  
-  
- Soubory skriptu na straně klienta jsou viditelné pouze v případě, že jsou v režimu ladění nebo v režimu pozastavení. Zobrazí se v **dokumenty skriptu** uzlu.  
-  
- Soubory skriptu na straně serveru jsou vždy viditelné. Zobrazí se v  **\<webu cesta >** uzlu. Název uzlu vypadá podobně jako v tomto příkladu: `c:\...\Website2\`  
+> [!NOTE]
+> Před [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], skript na straně klienta soubory vygenerované ze skriptu na straně serveru se zobrazily v okně Průzkumník skriptů.
   
 ### <a name="to-view-a-server-side-script-document"></a>Chcete-li zobrazit dokument skriptu na straně serveru  
   

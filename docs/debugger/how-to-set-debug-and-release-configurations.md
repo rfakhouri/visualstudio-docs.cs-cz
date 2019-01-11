@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837755"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204344"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Nastavení ladění a vydání konfigurace v sadě Visual Studio
 
@@ -44,7 +44,7 @@ Projekty aplikace Visual Studio mají samostatné verze a ladění konfigurace p
 
 V konfiguraci ladění váš program zkompiluje se sestaví neoptimalizovaná a obsahující symbolické ladicí informace. Optimalizace komplikuje ladění, protože vztah mezi zdrojovým kódem a vytvořenými pokyny je složitější.
 
-Konfigurace programu pro vydání neobsahuje symbolické ladicí informace a je plně optimalizována. Ladit informace mohou být generovány v souborech PDB [v závislosti na možnostech kompilátoru](#BKMK_symbols_release) , která se používají. Vytváření souborů PDB může být užitečné, pokud budete muset později ladit vydané verze.
+Konfigurace programu pro vydání neobsahuje symbolické ladicí informace a je plně optimalizována. Pro spravovaný kód a kód jazyka C++, informace o ladění mohou být generovány v souborech pdb, [v závislosti na možnostech kompilátoru](#BKMK_symbols_release) , která se používají. Vytváření souborů PDB může být užitečné, pokud budete muset později ladit vydané verze.
 
 Další informace o konfiguracích sestavení naleznete v tématu [pochopení konfigurace sestavení](../ide/understanding-build-configurations.md).
 

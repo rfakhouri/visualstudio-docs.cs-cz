@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094809"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204415"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Správa výjimek pomocí ladicího programu v sadě Visual Studio
 
-Výjimkou je údaj o chybovém stavu, ke které dojde při spuštění programu. Ladicí program můžete zjistit, jaké výjimky nebo sady výjimky na přerušení na a kdy chcete, aby ladicí program na přerušení. Pokud ladicí program přeruší, to se dozvíte, kde byla výjimka vydána. Můžete také přidat nebo odstranit výjimky. Pomocí řešení otevřít v sadě Visual Studio, **ladit > Windows > Nastavení výjimek** otevřít **nastavení výjimek** okna.
+Výjimkou je údaj o chybovém stavu, ke které dojde při spuštění programu. Ladicí program můžete zjistit, jaké výjimky nebo sady výjimky na přerušení na a kdy chcete, aby ladicí program na přerušení (to znamená pozastavení v ladicím programu). Pokud ladicí program přeruší, to se dozvíte, kde byla výjimka vydána. Můžete také přidat nebo odstranit výjimky. Pomocí řešení otevřít v sadě Visual Studio, **ladit > Windows > Nastavení výjimek** otevřít **nastavení výjimek** okna.
 
-Poskytuje rutiny, které reagují na nejdůležitější výjimky. Naučte se konfigurovat ladicí program přeruší běh o některých výjimkách, vždy.
+Poskytuje rutiny, které reagují na nejdůležitější výjimky. Pokud je potřeba vědět, jak přidat obslužné rutiny výjimek naleznete v tématu [opravovat chyby napsáním lépe C# kód](../debugger/write-better-code-with-visual-studio.md). Také jak nakonfigurovat ladicí program přeruší běh o některých výjimkách, vždy.
 
 Když dojde k výjimce, ladicí program zapíše zprávu o výjimce do **výstup** okna. To může přerušit provádění, v následujících případech, kdy:
 

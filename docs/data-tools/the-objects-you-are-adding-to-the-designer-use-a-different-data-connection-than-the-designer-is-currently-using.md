@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935655"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204304"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Objekty, které přidáváte do návrháře použít odlišné datové připojení než návrháře
 
@@ -22,20 +22,18 @@ Objekty, které přidáváte do návrháře použijte odlišné datové připoje
 
 Při přidávání položek do **Návrhář relací objektů** (**O/R Designer**), všech položek se používají sdílené datové připojení. (Na návrhovou plochu představuje <xref:System.Data.Linq.DataContext>, který používá jedno připojení pro všechny objekty na povrchu.) Pokud chcete přidat objekt do návrháře, který používá datové připojení, které se liší od aktuálně používá v Návrháři datové připojení, tato zpráva se zobrazí. Chcete-li vyřešit tuto chybu, můžete zachovat existující připojení. Pokud tuto volbu, nebude přidán vybraný objekt. Alternativně můžete přidat objekt a obnovit <xref:System.Data.Linq.DataContext> připojení k nové připojení.
 
-> [!NOTE]
-> Vyberete-li **Ano**, tříd na všech entit **O/R Designer** jsou mapovány na nového připojení.
+## <a name="connection-options"></a>Možnosti připojení
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Chcete-li nahradit stávající připojení pomocí připojení používané objektem vybraný objekt
+- Pokud chcete nahradit stávající připojení pomocí připojení používané objektem vybraný objekt, klikněte na tlačítko **Ano**.
 
-- Klikněte na **Ano**.
+   Vybraný objekt se přidá do **O/R Designer**a *DataContext.Connection* je nastavena na nové připojení.
 
-    Vybraný objekt se přidá do **O/R Designer**a *DataContext.Connection* je nastavena na nové připojení.
+   > [!NOTE]
+   > Vyberete-li **Ano**, tříd na všech entit **O/R Designer** jsou mapovány na nového připojení.
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Chcete-li nadále používat stávající připojení a zrušit přidávání vybraný objekt
+- Chcete-li pokračovat v používání existujícího připojení a zrušit přidávání vybraný objekt, klikněte na tlačítko **ne**.
 
-- Klikněte na tlačítko **ne**.
-
-    Akce zrušena. *DataContext.Connection* zůstane nastavena na existující připojení.
+   Akce zrušena. *DataContext.Connection* zůstane nastavena na existující připojení.
 
 ## <a name="see-also"></a>Viz také:
 

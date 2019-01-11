@@ -2,7 +2,7 @@
 title: 'Kurz: Začínáme s C# konzolové aplikace'
 description: Zjistěte, jak vytvořit konzolovou aplikaci C# v sadě Visual Studio, krok za krokem.
 ms.custom: seodec18, get-started
-ms.date: 12/12/2018
+ms.date: 01/10/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 333eeb3f826663d979e1cec444ede7eda4b55b2a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562214"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204428"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Kurz: Začínáme s aplikaci konzoly C# v sadě Visual Studio
 
@@ -135,9 +135,11 @@ Jako na následujícím snímku obrazovky Pokud spustíte aplikaci a rozdělit �
 
 Opravíme kód tak, aby zpracovává desetinná čísla.
 
+1. Stisknutím klávesy **Ctrl** + **F** otevřít **najít a nahradit** ovládacího prvku.
+
 1. Změňte každou instanci `int` proměnnou `float`.
 
-   (Můžete použít [najít a nahradit](../../ide/finding-and-replacing-text.md#find-and-replace-control) ovládacího prvku můžete s touto úlohou. Chcete-li získat přístup k vyhledávání ovládacího prvku v editoru kódu, stiskněte **Crtl**+**F**. Poté vyberte položku **najít další** tlačítko nebo **najít předchozí** tlačítka na ovládacím prvku hledání. Chcete-li přistupovat k možnostem výměny, klikněte na tlačítko vedle **najít** textového pole. Chcete-li nahrazovat po jednom čas, zvolte **nahradit další** vedle **nahradit** textového pole. Chcete-li nahradit všechny shody, zvolte **Nahradit vše** tlačítko.)
+    ![Animace ovládacího prvku najít a nahradit ukazující, jak změnit proměnné int na plovoucí desetinnou čárkou](./media/find-replace-control-animation.gif)
 
 1. Znovu spusťte aplikaci kalkulačky a počet **42** číslem **119**.
 
@@ -147,9 +149,7 @@ Opravíme kód tak, aby zpracovává desetinná čísla.
 
 Aplikace vytvoří však pouze desítkové výsledek. Vytvoříme několik další vylepšení kódu, tak, aby aplikace příliš vypočítat desetinná čísla.
 
-1. Změňte každou instanci `float` proměnnou `double`.
-
-1. Změňte každou instanci `Convert.ToInt32` metodu `Convert.ToDouble`.
+1. Použití **najít a nahradit** ovládacího prvku (**Ctrl** + **F**) k změňte každou instanci `float` proměnnou `double`a každá změna instance `Convert.ToInt32` metodu `Convert.ToDouble`.
 
 1. Spusťte aplikaci kalkulačky a počet **42,5** číslem **119.75**.
 

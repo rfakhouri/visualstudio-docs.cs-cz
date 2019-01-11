@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295667"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204330"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalace sady Visual Studio pro Mac
 
@@ -34,10 +34,11 @@ Následující části poskytují informace o stahování a pomocí skriptů.
 
 Odinstalujete Visual Studio a Xamarin komponenty v jednom přejít pomocí [odinstalovat skript](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
 
-Tento skript pro odinstalaci obsahuje většinu příkazů, které najdete v článku. Existují dva hlavní opomenutí ze skriptu a nejsou zahrnuty z důvodu možných externích závislostí:
+Tento skript pro odinstalaci obsahuje většinu příkazů, které najdete v článku. Existují tři hlavní opomenutí ze skriptu a nejsou zahrnuty z důvodu možných externích závislostí. K odstranění této, přejít do příslušné části níže a je odebrat ručně:
 
-- **Odinstalace Mono**
-- **Probíhá odinstalace AVD na Androidu**
+- **[Odinstalace Mono](#uninstall-mono-sdk-mdk)**
+- **[Probíhá odinstalace AVD na Androidu](#uninstall-android-avd)**
+- **[Odinstalace Android SDK a Java SDK](#uninstall-android-sdk-and-java-sdk)**
 
 Spusťte skript, proveďte následující kroky:
 
@@ -45,13 +46,13 @@ Spusťte skript, proveďte následující kroky:
 2. Otevřete terminál a přejděte ve kterém se skript stáhl pracovní adresář:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Spustitelný soubor skriptu a spustit ji s **sudo**:
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
 4. Nakonec odstraňte skript pro odinstalaci.
 
@@ -65,13 +66,13 @@ Spusťte skript, proveďte následující kroky:
 2. Otevřete terminál a přejděte ve kterém se skript stáhl pracovní adresář:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Spustitelný soubor skriptu a spustit ji s **sudo**:
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
 4. Nakonec odstraňte skript pro odinstalaci .NET Core.
 
@@ -93,10 +94,16 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
+
+Můžete také odebrat následující adresáře, který obsahuje různé Xamarin soubory a složky. Nicméně než se pustíte do byste měli vědět, že tento adresář obsahuje Android podpisových klíčů. Další informace najdete v části  **[odinstalaci sady Android SDK a sady Java SDK](#uninstall-android-sdk-and-java-sdk)**:
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
+```
+
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Odinstalujte modul Mono SDK (MDK)
 
@@ -130,6 +137,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Odinstalace Android SDK a Java SDK
 
 Sady Android SDK je vyžadována pro vývoj aplikací pro Android. K úplnému odebrání všech součástí sady Android SDK, vyhledávat soubor za **~/Library/Developer/Xamarin/** a přesuňte ho do **koše**.
+
+> [!WARNING]
+> Je třeba si uvědomit, že Android podpisové klíče, které jsou vygenerovány sadou Visual Studio for Mac jsou umístěny v `~/Library/Developer/Xamarin/Keystore`. Ujistěte se, že tyto správně zálohovat nebo -li zabránit odebrání tohoto adresáře, pokud chcete zachovat úložiště klíčů.
 
 Java SDK (JDK) není nutné odinstalovat, protože je již předběžně zabalen jako součást systému Mac OS X / macOS.
 

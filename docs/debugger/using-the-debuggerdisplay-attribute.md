@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baa31b791b3ee76905023d32f92f774ae6c9d5f8
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951677"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204531"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>Používání atributu DebuggerDisplay
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic"></a>Používání atributu DebuggerDisplay (C#, Visual Basic)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Ovládací prvky zobrazení objektu, vlastnost nebo pole v oknech proměnných ladicího programu. Tento atribut lze použít pro typy delegátů, vlastnosti, pole a sestavení.  
   
  `DebuggerDisplay` Atribut má jeden argument, což je řetězec, který se zobrazí ve sloupci Hodnota pro instance daného typu. Tento řetězec může obsahovat složené závorky (`{` a `}`). Text v rámci dvojici závorek je vyhodnocen jako pole, vlastnosti nebo metody.  
