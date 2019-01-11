@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a2ca6cbeba30f836a4878db569db14ff2af10d
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204243"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227535"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic"></a>Používání atributu DebuggerTypeProxy (C#, Visual Basic)
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Používání atributu DebuggerTypeProxy (C#, Visual Basic, C + +/ CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> Určuje proxy server nebo stand-in pro typ a provedené změny tak, jak typ se zobrazí v oknech ladicího programu. Pokud zobrazíte proměnnou, která má proxy server, proxy zastupuje původní typ v **zobrazit**. V okně proměnné ladicího programu se zobrazí pouze veřejné členy typu proxy. Soukromé členy nejsou zobrazeny.
 
@@ -33,6 +33,9 @@ Tento atribut lze použít pro:
 - Struktury
 - Třídy
 - Sestavení
+
+> [!NOTE]
+> Pro nativní kód, tento atribut je podporován pouze v jazyce C + +/ CLI kódu.
 
 Typ třídy proxy server musí mít konstruktor, který přebírá argument typu, který nahradí proxy serveru. Ladicí program vytvoří novou instanci třídy proxy pokaždé, když je potřeba zobrazení proměnné cílového typu. To může mít vliv na výkon. V důsledku toho by neměla provést žádné další práci v konstruktoru, než je nezbytně nutné.
 

@@ -8,14 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ebc3e81852abb11a8c48c426d56eb837a19005
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227574"
 ---
-# <a name="using-the-microsoft-monitoring-agent"></a>Použití služby Microsoft Monitoring Agent
+# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Použití služby Microsoft Monitoring Agent (C#, Visual Basic)
+
 Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a službu SharePoint 2010 nebo 2013 aplikací pro chyby, problémy s výkonem nebo jiné problémy s použitím **agenta Microsoft Monitoring Agent**. Můžete uložit diagnostické události z agenta do souboru protokolu IntelliTrace (.iTrace). V protokolu pak můžete otevřít v sadě Visual Studio Enterprise (ale ne edice Professional nebo Community) pro ladění problémů s všechny diagnostické nástroje sady Visual Studio. Může také shromažďovat diagnostická data IntelliTrace a metoda dat spuštěním agenta v **trasování** režimu. Microsoft Monitoring Agent je možné integrovat s [Application Insights](/azure/application-insights/) a [System Center Operation Manageru](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Agenta Microsoft Monitoring Agent změnit prostředí cílového systému, když je nainstalovaná.  
   
 > [!NOTE]
@@ -31,7 +32,8 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
 3.  [Krok 3: Uložení zaznamenaných událostí](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a> Krok 1: Nastavení agenta Microsoft Monitoring Agent  
+##  <a name="SetUpMonitoring"></a> Krok 1: Nastavení agenta Microsoft Monitoring Agent
+
  Nastavení samostatného agenta na webovém serveru provádět místní monitorování bez změny vašich aplikací. Pokud používáte System Center 2012, přečtěte si [instalace agenta Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).  
   
 ###  <a name="SetUpStandaloneMMA"></a> Nastavte samostatného agenta  

@@ -1,16 +1,16 @@
 ---
 title: -Out (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
-- Devenv, /out switch
+- Devenv, /Out switch
 - builds [Visual Studio], logs
 - error logs [Visual Studio], command-line build errors
 - error logs [Visual Studio]
-- /out Devenv switch
-- out Devenv switch
+- /Out Devenv switch
+- Out Devenv switch
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
@@ -19,43 +19,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f240b464ddba4e0549e3faff432685201e4560f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47601500b0404e818f4137ced1f7a589608e9881
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227847"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
-Určuje soubor k uložení a zobrazení chyb při spuštění, sestavování, znovu sestavit nebo nasadit řešení.
+
+Určuje soubor k uložení a zobrazení chyby při vám [spustit](run-devenv-exe.md), [spuštění a ukončení](runexit-devenv-exe.md), [upgradovat](upgrade-devenv-exe.md), [sestavení](build-devenv-exe.md), [znovu sestavit](rebuild-devenv-exe.md), [čisté](clean-devenv-exe.md), nebo [nasazení](deploy-devenv-exe.md) řešení.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-devenv /out FileName
+```shell
+devenv /Out FileName
 ```
 
 ## <a name="arguments"></a>Arguments
- `FileName`
 
- Povinný parametr. Cesta a název souboru, který se zobrazí chyby při vytváření spustitelného souboru.
+- *FileName*
+
+  Povinný parametr. Cesta a název souboru, který se zobrazí výstup při vytváření spustitelného souboru.
 
 ## <a name="remarks"></a>Poznámky
- Pokud je zadaný název souboru, který neexistuje, vytvoří se soubor automaticky. Pokud soubor již existuje, výsledky jsou připojena k existující obsah souboru.
 
- Chyby sestavení příkazového řádku se zobrazují v **příkaz** okno a Tvůrce řešení zobrazení **výstup** okna. Tato možnost je užitečná, pokud jsou spuštěny bezobslužném sestavování a potřebujete pro zobrazení výsledků.
+Pokud je zadána neexistující soubor, soubor je vytvořen automaticky. V opačném případě soubor již existuje, a výsledky jsou připojeny k existující obsah souboru.
+
+Chyby sestavení příkazového řádku se zobrazují v **příkaz** okno a Tvůrce řešení zobrazení **výstup** okna. Tento přepínač je užitečné při prohlížení výsledků bezobslužném sestavování.
 
 ## <a name="example"></a>Příklad
- Tento příklad se spouští `MySolution` a zapíše chyby do souboru `MyErrorLog.txt`.
 
-```cmd
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
+Tento příklad se spouští `MySolution` a zapíše chyby do souboru `MyErrorLog.txt`.
+
+```shell
+devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Nebo spuštění (devenv.exe)](../../ide/reference/run-devenv-exe.md)
+- [/ RunExit (devenv.exe)](runexit-devenv-exe.md)
+- [/ Upgrade (devenv.exe)](upgrade-devenv-exe.md)
+- [/ Clean (devenv.exe)](clean-devenv-exe.md)
 - [/ Sestavení (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/ Sestavení (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ Nasazení (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

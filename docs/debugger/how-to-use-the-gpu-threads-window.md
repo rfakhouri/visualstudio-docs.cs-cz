@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3124f98855f5f7f303aff0d9e8b2608abbbeba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227340"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Postupy: Použití okna vláken GPU
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Postupy: Použití okna vláken GPU (C++)
 V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na grafickém procesoru v aplikaci, kterou ladíte. Další informace o aplikacích, které běží na GPU, naleznete v tématu [přehled modelu C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  Okna vláken GPU obsahuje tabulku, ve kterém každý řádek představuje sadu vlákna GPU, které mají stejné hodnoty ve všech sloupců. Můžete řadit, změnit pořadí, odebrat a seskupit položky, které jsou ve sloupcích. Můžete označit příznakem, odznačit, ukotvit (Pozastavit) a uvolnit vlákna (pokračovat) z okna vláken GPU. Tyto sloupce se zobrazí v okně vlákna GPU:  

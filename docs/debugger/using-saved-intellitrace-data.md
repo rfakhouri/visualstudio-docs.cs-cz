@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836907"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227782"
 ---
-# <a name="using-saved-intellitrace-data"></a>Použití dat uložených nástrojem IntelliTrace
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Použití uložených dat řešení IntelliTrace (C#, Visual Basic, C++)
+
 Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění ladění od souboru protokolu IntelliTrace (.iTrace). Tento soubor může obsahovat události související s výkonem, výjimky, vlákna, kroky testu, moduly a další systémové informace, že nástroj IntelliTrace zaznamenává za běhu aplikace.
 
  Ujistěte se, zda máte následující:

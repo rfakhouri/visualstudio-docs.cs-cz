@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 841812ac5961f30424cdb8ee95cc94fb6b5ce8ad
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: fb74e49cb72274292b56a01f0ec654ebe6e44815
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154462"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227275"
 ---
-# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio
+# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio (Visual Studio Enterprise)
 
 Zpětného kroku IntelliTrace automaticky vytvoří snímek vaší aplikace v každé zarážce a ladicí program krok události. Zaznamenané snímky umožňují snadno vrátit k předchozím zarážkám nebo krokům a zobrazit stav aplikace jako v minulosti. IntelliTrace zpětným krokem vám může ušetřit čas při chcete zobrazit předchozí stav aplikace, ale nebudete chtít znovu spusťte ladění nebo znovu vytvořit stav požadované aplikace.
 
 Zpětného kroku IntelliTrace je k dispozici od verze Visual Studio Enterprise 2017 verze 15.5 a vyšší a vyžaduje aktualizaci Windows 10 Anniversary Update nebo novější. Tato funkce je momentálně podporovaná pro ladění ASP.NET, WinForms, WPF, aplikací spravované konzoly a knihoven spravovaných tříd. Od verze Visual Studio Enterprise 2017 verze 15.7, tato funkce je také podporována pro ASP.NET Core a .NET Core. Od verze Visual Studio Enterprise 2017 verzi 15.9 ve verzi Preview 2, tato funkce je také podporována pro nativní aplikace určené pro Windows. Ladění aplikací UWP se momentálně nepodporuje.
 
-V tomto kurzu provedete následující:
+V tomto kurzu se naučíte:
 
 > [!div class="checklist"]
 > * Povolit události IntelliTrace a snímky

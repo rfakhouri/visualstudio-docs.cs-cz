@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfb95e3bc1a2a1aaf94db229d951773e97d4ef2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 957077335b8df286d6fa2fbd34b6b81874fddbaa
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227769"
 ---
-# <a name="using-the-tasks-window"></a>Používání okna úloh
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>Using the Tasks Window (C#, Visual Basic, C++)
 
 **Úlohy** okno vypadá podobně jako **vlákna** okna, s tím rozdílem, že se zobrazuje informace o <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle –](/cpp/parallel/concrt/reference/task-group-class), nebo [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) objekty namísto každé vlákno. Například vlákna úlohy představuje asynchronní operace, které můžou běžet souběžně; ale více úkolů může spustit ve stejném vlákně.
 

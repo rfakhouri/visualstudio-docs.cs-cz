@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d93dc9cf68a70977f82f29b6e5ff1ade25f47bda
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227696"
 ---
 # <a name="xaml-designer-options-page"></a>Stránka Možnosti návrháře XAML
 
@@ -65,7 +65,7 @@ Tato nastavení určují návrháře chování při úpravě dokumentu XAML.
 |||
 |-|-|
 |**Automaticky pojmenovat interaktivní prvky při vytváření**|Určuje, zda výchozí název je k dispozici pro nové interaktivní element při přidání do návrháře.|
-|**Automaticky vložit vlastnosti rozložení na vytváření elementu Automat**|Určuje, zda vlastnosti rozložení jsou k dispozici pro nový prvek při přidání do návrháře.|
+|**Automaticky vložit vlastnosti rozložení na vytváření elementu Automat**|Určuje, zda vlastnosti rozložení jsou k dispozici pro nový prvek při přidání do návrháře. Vlastnosti rozložení jsou ty, které mají vliv rozložení ovládacího prvku, například okraje a odsazení.|
 |**Použít quadrant společnosti Gartner na základě rozložení**|Určuje, jestli aktuálně vybraného ovládacího prvku zarovná na nejbližším okrajem jeho nadřazeného kontejneru. Pokud toto políčko není zaškrtnuto, zarovnání ovládacího prvku změnit v průběhu migrace ani operace vytvoření.|
 |**Automaticky naplnit panel nástrojů položkami**|Určuje, zda uživatelské ovládací prvky a vlastních ovládacích prvků v aktuálním řešení se zobrazují v panelu nástrojů automaticky.|
 

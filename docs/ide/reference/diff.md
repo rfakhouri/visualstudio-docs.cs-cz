@@ -1,43 +1,71 @@
 ---
-title: -Diff
-ms.date: 11/04/2016
+title: -Rozdíly (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
+helpviewer_keywords:
+- Devenv, /Diff switch
+- /Diff Devenv switch
+- Diff Devenv switch
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf58c25611fd52c6e8db8e8210101e1c80153275
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfe0fcdb039b4c7b234f3f43e6ce5741d96f5e9c
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227444"
 ---
-# <a name="diff"></a>/Diff
+# <a name="diff-devenvexe"></a>/ Diff (devenv.exe)
+
 Porovná dva soubory. Rozdíly jsou zobrazeny v speciální okně aplikace Visual Studio.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
+```shell
+devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 ```
 
 ## <a name="arguments"></a>Arguments
- `SourceFile`
 
- Povinný parametr. Úplná cesta a název prvního souboru, který se má porovnat.
+- *zdrojový soubor*
 
- `TargetFile`
+  Povinný parametr. Úplná cesta a název prvního souboru, který se má porovnat.
 
- Povinný parametr. Úplná cesta a název druhý soubor, který se má porovnat
+- *Cílovýsoubor*
 
- `SourceDisplayName`
+  Povinný parametr. Úplná cesta a název druhý soubor, který se má porovnat.
 
- Volitelné. Zobrazovaný název prvního souboru.
+- *SourceDisplayName*
 
- `TargetDisplayName`
+  Volitelné. Zobrazovaný název prvního souboru.
 
- Volitelné. Zobrazovaný název druhý soubor.
+- *TargetDisplayName*
+
+  Volitelné. Zobrazovaný název druhý soubor.
+    
+## <a name="remarks"></a>Poznámky
+
+Pokud instanci integrovaného vývojového prostředí je už otevřená, porovnání souboru se zobrazí na kartě v aktuálním prostředí IDE.
+
+## <a name="example"></a>Příklad
+
+První příklad porovná dva soubory beze změny zobrazovaného jména. Druhý příklad porovná soubory během změny i zobrazovaného jména. Příklady třetí a čtvrtá porovnat dva soubory, ale použít alias pouze první soubor nebo druhý soubor.
+
+```shell
+devenv /diff File1.txt File2.txt
+
+devenv /diff File1.txt File2.txt FirstAlias "Second Alias"
+
+devenv /diff File1.txt File2.txt "File One"
+
+devenv /diff File1.txt File2.txt "" FileTwo
+```
+
+## <a name="see-also"></a>Viz také:
+
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)

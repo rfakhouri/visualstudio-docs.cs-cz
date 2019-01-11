@@ -1,13 +1,13 @@
 ---
 title: -Rebuild (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
-- rebuild Devenv switch (/rebuild)
+- Rebuild Devenv switch (/Rebuild)
 - projects [Visual Studio], rebuilding
-- /rebuild Devenv switch
+- /Rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 author: gewarren
@@ -15,55 +15,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 782a0864c692d8c50932f41077762c994f24eeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b899ca08efac05bb58cc119b7e63489c6b8934d5
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227964"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
+
 Čistí a poté sestaví Zadaná konfigurace řešení.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Arguments
- `SolnConfigName`
 
- Povinný parametr. Název konfigurace řešení, která se použije k opětovnému sestavení řešení s názvem v `SolutionName`.
+- *Název řešení*
 
- `SolutionName`
+  Povinný parametr. Úplná cesta a název souboru řešení.
 
- Povinný parametr. Úplná cesta a název souboru řešení.
+- *SolnConfigName*
 
- / Project `ProjName`
+  Volitelné. Název konfigurace řešení, který se má použít k opětovnému sestavení řešení s názvem v *SolutionName*. Pokud tento argument je vynechána, nástroj použije aktivní konfigurace řešení.
 
- Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z `SolutionName` složku do souboru projektu nebo zobrazované jméno projektu, nebo úplnou cestu a název souboru projektu.
+- `/Project` *Název_projektu*
 
- / projectconfig `ProjConfigName`
+  Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat zobrazovaný název projektu nebo relativní cesta z *SolutionName* složku do souboru projektu. Můžete také zadat úplnou cestu a název souboru projektu.
 
- Volitelné. Název projektu konfigurace se použije při opětovném sestavování sestavení `/project` s názvem.
+- `/ProjectConfig` *ProjConfigName*
+
+  Volitelné. Název konfigurace sestavení projektu pro použití při opětovném sestavování `/Project` s názvem. Pokud je tento přepínač zadaný, přepíše *SolnConfigName* argument.
+
+- `/Out` *OutputFilename*
+
+  Volitelné. Název souboru, který chcete odeslat nástroj výstupního. Pokud soubor již existuje, nástroj připojil výstupu na konci souboru.
 
 ## <a name="remarks"></a>Poznámky
 
--   Tento přepínač provádí stejnou funkci jako **znovu sestavit řešení** příkazu nabídky v rámci integrovaného vývojového prostředí (IDE).
+- Tento přepínač provede totéž, jako **znovu sestavit řešení** příkazu nabídky v rámci rozhraní IDE.
 
--   Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.
+- Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.
 
--   Souhrnné informace o vyčistí a sestavení, včetně chyb, mohou být zobrazeny v **příkaz** okna, nebo do jakéhokoli souboru protokolu zadaný `/out` přepnout.
+- Souhrnné informace o čištění a sestavení, včetně chyb, lze zobrazit v **příkaz** okna, nebo do jakéhokoli souboru protokolu zadaný [/Out](out-devenv-exe.md) přepnout.
 
 ## <a name="example"></a>Příklad
- Tento příklad odstraní a znovu sestaví projekt `CSharpWinApp`, použije `Debug` konfigurace sestavení projektu v rámci `Debug` konfigurace řešení `MySolution`.
 
-```cmd
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+Tento příklad odstraní a znovu sestaví projekt `CSharpWinApp`, použije `Debug` konfigurace sestavení projektu v rámci `MySolution`.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ Sestavení (devenv.exe)](../../ide/reference/build-devenv-exe.md)

@@ -1,9 +1,9 @@
 ---
 title: Používání atributu DebuggerDisplay | Dokumentace Microsoftu
-ms.date: 08/09/2017
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baa31b791b3ee76905023d32f92f774ae6c9d5f8
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204531"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228055"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic"></a>Používání atributu DebuggerDisplay (C#, Visual Basic)
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Používání atributu DebuggerDisplay (C#, Visual Basic, C + +/ CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Ovládací prvky zobrazení objektu, vlastnost nebo pole v oknech proměnných ladicího programu. Tento atribut lze použít pro typy delegátů, vlastnosti, pole a sestavení.  
   
  `DebuggerDisplay` Atribut má jeden argument, což je řetězec, který se zobrazí ve sloupci Hodnota pro instance daného typu. Tento řetězec může obsahovat složené závorky (`{` a `}`). Text v rámci dvojici závorek je vyhodnocen jako pole, vlastnosti nebo metody.  
@@ -30,6 +30,9 @@ ms.locfileid: "54204531"
   
 > [!IMPORTANT]
 >  Pokud **zobrazit nezpracovanou strukturu objektů v oknech proměnných** zaškrtněte políčko v **nástroje/Možnosti / ladění** dialogové okno, pak bude `DebuggerDisplay` atribut se ignoruje.  
+
+> [!NOTE]
+> Pro nativní kód, tento atribut je podporován pouze v jazyce C + +/ CLI kódu.
   
  V následující tabulce jsou uvedeny některé možné způsoby použití `DebuggerDisplay` atribut a příklad výstupy.  
   

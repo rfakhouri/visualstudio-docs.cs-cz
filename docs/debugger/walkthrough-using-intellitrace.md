@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4afd2f742918ebe1badd86be0ebf4181fb2ba06
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 86410567a194753db2001fbd5fba870bb89d7930
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227990"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Zobrazení událostí s IntelliTrace v sadě Visual Studio
+# <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Zobrazit události pomocí nástroje IntelliTrace v sadě Visual Studio Enterprise (C#, Visual Basic)
+
 Nástroj IntelliTrace můžete použít ke shromažďování informací o určité události a kategorie událostí, nebo o voláních jednotlivé funkce kromě události. Následující postupy ukazují, jak to udělat.  
   
- Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition, ale ne edice Professional nebo Community.  
+Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition, ale ne edice Professional nebo Community.  
   
 ##  <a name="GettingStarted"></a> Konfigurace technologie IntelliTrace  
+
  Můžete zkusit ladění pouze události IntelliTrace. Mezi události IntelliTrace patří události ladicího programu, výjimky, události rozhraní .NET Framework a další systémové události. By měl zapnout nebo vypnout určité události k řízení událostí, které nástroj IntelliTrace zaznamenává před zahájením ladění. Další informace najdete v tématu [funkce IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Zapněte události IntelliTrace pro přístup k souborům. Přejděte na **nástroje > Možnosti > Nástroje IntelliTrace > události IntelliTrace** stránce a rozbalte **souboru** kategorie. Zkontrolujte, **souboru** kategorie události. To způsobí, že všechny souboru události (přístup, zavřít, delete) která se má zkontrolovat.

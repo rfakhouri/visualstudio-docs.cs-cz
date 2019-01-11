@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946159"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228016"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Zobrazit vlákna v ladicím programu sady Visual Studio pomocí okna vlákna
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Zobrazit vlákna v ladicím programu sady Visual Studio pomocí okna vlákna (C#, Visual Basic, C++)
 V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou ladíte. Podrobné pokyny o tom, jak používat **vlákna** okna, naleznete v tématu [názorný postup: Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Použití okna vláken 

@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d320c4cc2a224dd17ea85337e38fb43ae8aa5bd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227665"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Průvodce: Ladění vícevláknových aplikací v použití okna vláken
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Průvodce: Ladění vícevláknových aplikací pomocí okna vlákna (C#, Visual Basic, C++)
 
 Několik prvků uživatelského rozhraní sady Visual Studio můžete ladit aplikace s více vlákny. Tento článek představuje vícevláknové ladění funkcí v okně editoru kódu **umístění ladění** nástrojů a **vlákna** okna. Informace o ostatních nástrojích pro ladění vícevláknových aplikací najdete v tématu [Začínáme s laděním vícevláknových aplikací](../debugger/get-started-debugging-multithreaded-apps.md). 
   

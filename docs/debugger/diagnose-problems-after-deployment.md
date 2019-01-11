@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a11a24d92453d1d4fed0dd0ca91cf9b225f7b92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860907"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228029"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostika problémů po nasazení pomocí technologie IntelliTrace
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostika problémů po nasazení pomocí nástroje IntelliTrace (C#, Visual Basic)
 
 Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použitím technologie IntelliTrace, přidejte informace sestavení s vaší verzí umožňuje sadě Visual Studio automaticky vyhledá správné zdrojové soubory a soubory symbolů, které jsou nutné k ladění protokolu IntelliTrace.
 

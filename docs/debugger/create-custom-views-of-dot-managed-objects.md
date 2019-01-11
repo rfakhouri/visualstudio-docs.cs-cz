@@ -1,5 +1,5 @@
 ---
-title: Vytváření vlastních zobrazení spravovaných objektů | Dokumentace Microsoftu
+title: Vytváření vlastních zobrazení objektů | Dokumentace Microsoftu
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -10,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -23,25 +23,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a7ff5d534cd343f18d0cf0a841801df434c75e7
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227639"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Vytváření vlastních zobrazení objektů (C#, Visual Basic, C++)
 Můžete přizpůsobit tak, jak Visual Studio zobrazí datové typy v oknech proměnných ladicího programu.  
-  
-## <a name="attributes"></a>Atributy
-
-V jazyce C# a Visual Basic, přidáte rozšíření pro vlastní data s využitím <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, a <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
-V [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kódu Visual Basic nepodporuje atribut DebuggerBrowsable. Toto omezení neplatí v novějších verzích rozhraní .NET Framework.    
 
 ## <a name="native-code"></a>Nativní kód
 
-Pro kód jazyka C++, můžete přidat vlastní datový typ rozšíření pomocí rozhraní Natvis, jak je popsáno v [vytváření vlastních pohledů nativních objektů v ladicím programu](/visualstudio/debugger/create-custom-views-of-native-objects). Nebo můžete také přidat rozšíření pro vlastní data s využitím <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, a <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+Pro kód jazyka C++, můžete přidat vlastní datový typ rozšíření pomocí rozhraní Natvis, jak je popsáno v [vytváření vlastních pohledů nativních objektů v ladicím programu](/visualstudio/debugger/create-custom-views-of-native-objects). Pro C + +/ CLI kódu, můžete také použít atributy, které jsou zde popsané v tomto článku.
+
+## <a name="attributes"></a>Atributy
+
+V C#, Visual Basic a C++ (C + +/ CLI kódu pouze), přidáte rozšíření pro vlastní data s využitím <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, a <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
+  
+V [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kódu Visual Basic nepodporuje atribut DebuggerBrowsable. Toto omezení neplatí v novějších verzích rozhraní .NET Framework.    
 
 ## <a name="visualizers"></a>Vizualizéry
 

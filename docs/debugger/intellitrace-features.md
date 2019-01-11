@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37c90f212233936a6a260b6339effb261f91c67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227834"
 ---
-# <a name="intellitrace-features"></a>Funkce IntelliTrace
+# <a name="intellitrace-features-c-visual-basic-c"></a>Funkce IntelliTrace (C#, Visual Basic, C++)
 
 Můžete zaznamenat události IntelliTrace a volá metodu vaší aplikace, který umožňuje zkontrolovat jeho stav (zásobník volání a místní proměnné hodnoty) v různých fázích provádění. Stačí obvyklým způsobem spustit ladění – nástroj IntelliTrace je ve výchozím nastavení zapnutá a zobrazí se informace, které nástroj IntelliTrace zaznamenává v novém **diagnostické nástroje** okně **události** kartu. Vyberte událost a klikněte na tlačítko **aktivovat historické ladění** zobrazíte zásobník volání a místní hodnoty pro tuto událost.
 
@@ -40,19 +40,19 @@ Pokud chcete potvrdit, že nástroj IntelliTrace je zapnutý, otevřete **nástr
 > [!NOTE]
 > Obor všechna nastavení na **IntelliTrace** stránka možností je sada Visual Studio jako celek, nikoli jednotlivé projekty nebo řešení. Změna těchto nastavení se vztahuje na všechny instance sady Visual Studio, všechny ladicí relace a všechny projekty nebo řešení.
 
-## <a name="ChooseEvents"></a> Vyberte události, které nástroj IntelliTrace zaznamenává (pouze pro spravovaný kód)
+## <a name="ChooseEvents"></a> Zvolte nástroj IntelliTrace zaznamenává události (C#, Visual Basic)
 
 Můžete zapnout nebo vypnout zaznamenávání určitých událostí IntelliTrace.
 
 Pokud ladíte, zastavte ladění. Přejděte na **nástroje > Možnosti > Nástroje IntelliTrace > události IntelliTrace**. Zvolte událostí, které má IntelliTrace zaznamenávat.
 
-## <a name="Snapshots"></a> Shromažďovat snímky
+## <a name="Snapshots"></a> Shromažďování snímků (C#, Visual Basic, C++)
 
 Tato možnost není povolena ve výchozím nastavení, ale nástroj IntelliTrace můžete zachytit snímek vaší aplikace v každé události krok zarážky a ladicí program a tyto snímky můžete zobrazit v stará ladicí relace. Snímek poskytuje přehled stavu vaší celou aplikaci. Chcete-li povolit zachytávání snímků, přejděte na **nástroje > Možnosti > Nástroje IntelliTrace > Obecné**a vyberte **snímky IntelliTrace (spravovaný a nativní)**. Další informace najdete v tématu [kontrolovat předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md)
 
 Snímky jsou k dispozici v sadě Visual Studio Enterprise 2017 verze 15.5 nebo novější a vyžaduje aktualizaci Windows 10 Anniversary Update nebo novější.  Pro aplikace .NET Core a ASP.NET Core se vyžaduje Visual Studio Enterprise 2017 verze 15.7. Pro nativní aplikace určené pro Windows, Visual Studio Enterprise 2017 verzi 15.9 ve verzi Preview 2 je povinný.
 
-## <a name="GoingFurther"></a> Shromažďovat události IntelliTrace a informací o (pouze pro spravovaný kód) volání
+## <a name="GoingFurther"></a> Shromažďovat události IntelliTrace a informací o volání (C#, Visual Basic)
 
 Tato možnost není povolena ve výchozím nastavení, ale nástroj IntelliTrace umí zaznamenat volání metody spolu s událostmi. Povolte shromažďování metoda volání přejít na **nástroje > Možnosti > Nástroje IntelliTrace > Obecné**a vyberte **události IntelliTrace a informací o (režim pouze spravovaný) volání**.
 
@@ -92,7 +92,7 @@ Chcete-li přidat více modulů, použijte zástupný znak * na začátku nebo k
 
 Pokuste se zachovat počet modulů na minimum. Protože je méně dat, které se mají shromažďovat, dosahovat vyšších výkonů. Získáte také menší šumu v uživatelském rozhraní vzhledem k tomu je méně dat a absolvovat.
 
-## <a name="SaveSession"></a> Ukládání dat IntelliTrace do souboru
+## <a name="SaveSession"></a> Ukládání dat IntelliTrace do souboru (C#, Visual Basic, C++)
 
 Data shromážděná IntelliTrace můžete uložit na **ladit > IntelliTrace > Uložit relaci IntelliTrace** při ladění a aplikace je ve stavu přerušení. Položka nabídky je zakázaná a není možné uložit data, která nástroj IntelliTrace se budou shromažďovat v Pokud je stále spuštěná aplikace nebo zastavení ladění.
 

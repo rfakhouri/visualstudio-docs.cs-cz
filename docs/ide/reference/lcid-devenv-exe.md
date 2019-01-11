@@ -1,47 +1,54 @@
 ---
 title: -LCID (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - language default
 - locale IDs, setting for IDE
+- Devenv, /L switch
 - Devenv, /LCID switch
 - locale IDs
-- /l Devenv switch
+- L Devenv switch
+- /L Devenv switch
 - LCID devenv switch
-- /lcid Devenv switch
+- /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c3f8633721a4568b81fab31d8fe91a4c33be2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42da279a64f04bca7775440f803e7a26e6bd2dc8
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227301"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
-Nastaví výchozí jazyk používaný pro text, měny a jiné hodnoty v rámci integrovaného vývojového prostředí (IDE).
+
+Nastaví výchozí jazyk používaný pro text, měny a jiné hodnoty v rámci rozhraní IDE.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-devenv {/LCID|/l} LocaleID
+```shell
+devenv {/LCID|/L} LocaleID
 ```
 
 ## <a name="arguments"></a>Arguments
- `LocaleID` Povinné. Identifikátor LCID (ID národního prostředí) jazyka, který zadáte.
+
+- *Identifikátor národního prostředí*
+
+  Povinný parametr. Identifikátor národního prostředí (LCID) jazyk, který zadáte.
 
 ## <a name="remarks"></a>Poznámky
- Načte integrovaného vývojového prostředí a nastaví výchozí přirozeného jazyka pro prostředí. Tato změna je trvalá mezi relacemi a projeví na **mezinárodní nastavení** podokně **prostředí** možnosti **možnosti** dialogového okna v rozhraní IDE.
 
- Pokud zadaný jazyk není k dispozici v systému uživatele, přepínač/LCID je ignorován.
+Načte integrovaného vývojového prostředí a nastaví výchozí přirozeného jazyka pro prostředí. Tato změna je trvalá mezi relacemi a integrovaného vývojového prostředí se zobrazí tato změna **nástroje** > **možnosti** > **prostředí**  >  **Mezinárodní nastavení** > **jazyk** pole.
 
- V následující tabulce jsou uvedeny LCID jazyky podporovanými [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Pokud zadaný jazyk není k dispozici ve vašem systému `/LCID` přepínač je ignorován.
+
+V následující tabulce jsou uvedeny LCID jazyků podporovaných v sadě Visual Studio.
 
 |Jazyk|LCID|
 |--------------|----------|
@@ -56,13 +63,14 @@ devenv {/LCID|/l} LocaleID
 |Španělština|3082|
 
 ## <a name="example"></a>Příklad
- Tento příklad načte integrované vývojové prostředí s anglickou prostředky řetězců.
 
-```cmd
+Tento příklad načte integrované vývojové prostředí s anglickou prostředky řetězců.
+
+```shell
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Mezinárodní nastavení, Prostředí, dialogové okno Možnosti](../../ide/reference/international-settings-environment-options-dialog-box.md)

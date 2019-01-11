@@ -1,18 +1,18 @@
 ---
-title: Přepínač nástroje DevEnv ProjectConfig
-ms.date: 11/04/2016
+title: -ProjectConfig (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- /projectconfig Devenv switch
+- /ProjectConfig Devenv switch
 - configurations, rebuilding
 - deployment projects, creating
 - configurations, cleaning
 - deployment projects, specifying
 - deployment projects, adding
 - build configurations, specifying
-- Devenv, /projectconfig switch
-- projectconfig Devenv switch (/projectconfig)
+- Devenv, /ProjectConfig switch
+- ProjectConfig Devenv switch (/ProjectConfig)
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
@@ -21,50 +21,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca481d23757cc9022042db42a6d4be477880367
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18ea1c057b47a93c33efcb2106725a4124f7380b
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227262"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
-Určuje konfiguraci sestavení projektu, kterou chcete použít při sestavení, vyčištění, znovu sestavit nebo nasadit projekt s názvem v **/project** argument.
+Určuje konfiguraci sestavení projektu, kterou chcete použít při sestavení, vyčištění, znovu sestavit nebo nasadit projekt s názvem v `/Project` argument.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Arguments
 
-|||
-|-|-|
-|/ Build|Vytvoří projekt určený **/project** argument.|
-|/ clean|Vyčistí všechny zprostředkující soubory a výstupní adresáře, které jsou vytvořeny během sestavení.|
-|/ rebuild|Vyčistí pak vytvoří projekt určený **/project** argument.|
-|/ deploy|Určuje, že projekt nasadit po sestavení nebo opětovné sestavení.|
-|*SolnConfigName*|Povinný parametr. Název konfigurace řešení, která se použije k řešení s názvem v *SolutionName*. Pokud jsou k dispozici více platformy řešení, musíte zadat také platformu, například **"ladění\|Win32"**.|
-|*Název řešení*|Povinný parametr. Úplná cesta a název souboru řešení.|
-|/ project *název_projektu*|Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z *SolutionName* složku do souboru projektu nebo zobrazované jméno projektu, nebo úplnou cestu a název souboru projektu.|
-|/ projectconfig *ProjConfigName*|Volitelné. Název projektu sestavení konfigurace použít projekt určený **/project** argument. Pokud jsou k dispozici více platformy řešení, musíte zadat také platformu, například **"ladění\|Win32"**.|
+- *Název řešení*
+
+  Povinný parametr. Úplná cesta a název souboru řešení.
+
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
+
+  Povinný parametr. [Sestaví](build-devenv-exe.md), [vyčistí](clean-devenv-exe.md), [nasadí](deploy-devenv-exe.md), nebo [znovu sestaví](rebuild-devenv-exe.md) projektu.
+
+- *SolnConfigName*
+
+  Volitelné. Název konfigurace řešení se má použít pro řešení s názvem v *SolutionName*. Pokud je k dispozici více než jedné platformě řešení, musíte zadat také platformy (například `Debug|Win32`). Pokud tento argument je vynechána, nástroj použije aktivní konfigurace řešení.
+
+- `/Project` *Název_projektu*
+
+  Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat zobrazovaný název projektu nebo relativní cesta z *SolutionName* složku do souboru projektu. Můžete také zadat úplnou cestu a název souboru projektu.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Volitelné. Název konfigurace sestavení projektu použít `/Project` s názvem. Pokud je k dispozici více než jedné platformě řešení, musíte zadat také platformy (například `Debug|Win32`).
+
+- `/Out` *OutputFilename*
+
+  Volitelné. Název souboru, který chcete odeslat nástroj výstupního. Pokud soubor již existuje, nástroj připojil výstupu na konci souboru.
 
 ## <a name="remarks"></a>Poznámky
 
-**/Projectconfig** přepínač musí použít společně s **/project** přepnout jako součást **/build**, **/ clean**,  **/rebuild**, nebo **/ deploy** příkazu.
+`/ProjectConfig` Přepínač musí použít společně s `/Project` přepnout jako součást `/Build`, /`Clean`, `/Deploy`, nebo `/Rebuild` příkazu.
 
 Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.
 
-Souhrnné informace o sestavení, včetně chyb, lze zobrazit, v příkazovém okně nebo do jakéhokoli souboru protokolu zadaný **/out** přepnout.
+Souhrnné informace o sestavení, včetně chyb, lze zobrazit, v příkazovém okně nebo do jakéhokoli souboru protokolu zadaný `/Out` přepnout.
 
 ## <a name="example"></a>Příklad
 
-Následující příkaz sestaví projekt "CSharpConsoleApp", "Ladění" konfigurace sestavení projektu v rámci konfigurace "Debug" řešení "MySolution" pomocí:
+Následující příkaz sestaví projekt `CSharpWinApp`, použije `Debug` konfigurace sestavení projektu v rámci `MySolution`:
 
-```cmd
-devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Viz také:

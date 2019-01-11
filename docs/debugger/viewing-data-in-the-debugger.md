@@ -1,6 +1,6 @@
 ---
 title: Vytváření vlastních zobrazení dat v ladicím programu | Dokumentace Microsoftu
-ms.date: 11/20/2018
+ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -19,22 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234c00bcfd1b46adc260597b5ad438854c45de98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5c5466515e0e58fd94d7a949b04d060a90925d1
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227223"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Vytváření vlastních zobrazení dat v ladicím programu sady Visual Studio
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Vytváření vlastních zobrazení dat v ladicím programu sady Visual Studio (C#, Visual Basic, C++)
+
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ladicí program poskytuje celou řadu nástrojů pro prohlížení a úpravy stavu programu. Většina těchto nástrojů funguje pouze v režimu pozastavení.
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Vytváření vlastních zobrazení dat v oknech proměnných a datové tipy
- Mnoho [ladicího programu systému windows](../debugger/debugger-windows.md), například **automatické hodnoty** a **Watch** windows, můžete kontrolovat proměnné. Můžete přizpůsobit typy jak nativní, spravované objekty, a vlastních typů jsou zobrazeny v oknech proměnných ladicího programu a [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Další informace najdete v tématu [vytváření vlastních zobrazení nativních objektů](../debugger/create-custom-views-of-native-objects.md) a [vytváření vlastních zobrazení spravovaných objektů](../debugger/create-custom-views-of-dot-managed-objects.md).
+
+ Mnoho [ladicího programu systému windows](../debugger/debugger-windows.md), například **automatické hodnoty** a **Watch** windows, můžete kontrolovat proměnné. Můžete přizpůsobit typy jak nativní, spravované objekty, a vlastních typů jsou zobrazeny v oknech proměnných ladicího programu a [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Další informace najdete v tématu [vytváření vlastních zobrazení nativních objektů](../debugger/create-custom-views-of-native-objects.md) a [vytváření vlastních zobrazení objektů](../debugger/create-custom-views-of-dot-managed-objects.md).
   
-## <a name="create-custom-visualizers"></a>Vytváření vlastních vizualizérů  
+## <a name="create-custom-visualizers"></a>Vytváření vlastních vizualizérů
+
  Vizualizéry umožňují zobrazení obsahu objektu nebo proměnné srozumitelným způsobem. V ladicím programu sady Visual Studio vizualizéru odkazuje na jiný windows, které můžete otevřít pomocí na lupu ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Vizualizéru ikonu") ikonu. HTML vizualizér například ukazuje, jak by interpretován a zobrazen v prohlížeči jako řetězec HTML. K vizualizátorům můžete přistupovat z datových typů, **Watch** okně **automatické hodnoty** okně a **místní hodnoty** okna. **QuickWatch** dialogové okno obsahuje také vizualizéru. Další informace najdete v tématu [vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md).
   
-## <a name="see-also"></a>Viz také:  
+## <a name="see-also"></a>Viz také:
+
  [Nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md) [příkazové okno](../ide/reference/command-window.md)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)

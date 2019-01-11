@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863287"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227977"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>Začínáme s laděním vícevláknových aplikací
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Začínáme s laděním vícevláknových aplikací (C#, Visual Basic, C++)
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní si můžete usnadnit ladění aplikací s více vlákny. Tento kurz ukazuje, jak používat značky vlákna **paralelní zásobníky** okně **paralelní sledování** oken, podmíněné zarážky a filtr zarážek. Dokončení tohoto kurzu se můžete seznámit s funkcemi sady Visual Studio pro ladění aplikací s více vlákny.
 
 | | |

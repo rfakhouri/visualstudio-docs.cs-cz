@@ -16,14 +16,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 674297bb995591a3062c81f9e760e3005a931447
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154292"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228042"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Postupy: Ladění na vysoký výkon clusteru
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Postupy: Ladění na vysoký výkon clusteru (C#, Visual Basic, C++)
+
 Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění program ve vzdáleném počítači. Existuje ale několik dalších důležitých informací. Obecné nastavení vzdálené požadavky najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
   
  Při ladění na vysoký výkon clusteru můžete použít všechny [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladění systému windows a techniky, které jsou k dispozici pro vzdálené ladění. Vzhledem k tomu, že ladíte vzdáleně, ale okno externí konzoly není k dispozici.  
@@ -34,7 +35,7 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
   
  Při ladění paralelní aplikace můžete nastavit zarážku na konkrétní vlákno, proces nebo počítače. Můžete to provést vytvořením normální zarážky a následným přidáním filtru zarážky.  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Chcete-li otevřít dialogové okno Filtr zarážek  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Chcete-li otevřít dialogové okno Filtr zarážek
   
 1.  Klikněte pravým tlačítkem na piktogram zarážky v okně zdroje **zpětný překlad** okně **zásobník volání** okna, nebo **zarážky** okno.  
   
