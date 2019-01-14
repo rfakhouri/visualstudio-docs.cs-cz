@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1ca9466f4b70f7232cb1832fe05794b8cffd45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77ae08c713c4afb617e5626b26f0ed010d13e906
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951495"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269433"
 ---
 # <a name="com-debugging-tools"></a>Nástroje pro ladění modelu COM
 
@@ -45,6 +45,6 @@ Ukázky knihovny MFC ActiveX OCLIENT a SUPERPAD jsou také dostupných pro testo
 - [Ladění modelů COM a prvků ActiveX](../debugger/com-and-activex-debugging.md)
 - [Nástroje pro ladění modelu COM](../debugger/com-debugging-tools.md)
 - [Ladění v sadě Visual Studio](../debugger/index.md)
-- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
 - [Ukázka OCLIENT: Ukazuje aplikaci kontejneru vizuálních úprav](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
 - [Ukázka SUPERPAD: Ukazuje Server, který upravuje Text pomocí třídy CEditView úprav s náhledem](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

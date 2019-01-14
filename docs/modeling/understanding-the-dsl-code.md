@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886368"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270291"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 Řešení jazyka specifického pro doménu (DSL), vygeneruje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v sadě Visual Studio. Toto rozhraní API je definováno v kódu, který je generován z definici DSL. Toto téma popisuje generovaného rozhraní API.
@@ -191,7 +191,7 @@ ms.locfileid: "53886368"
 
  `CommandSet.cs`
 
- Příkazy místní nabídky, které jsou viditelné v diagramu. Můžete upravit nebo přidat do této sady. Tento soubor obsahuje kód pro příkazy. Určuje umístění příkazů v nabídkách Commands.vsct souboru. Další informace najdete v tématu [zápis uživatelských příkazů a akcí](../modeling/writing-user-commands-and-actions.md).
+ Klikněte pravým tlačítkem na příkazy nabídek, které jsou viditelné v diagramu. Můžete upravit nebo přidat do této sady. Tento soubor obsahuje kód pro příkazy. Určuje umístění příkazů v nabídkách Commands.vsct souboru. Další informace najdete v tématu [zápis uživatelských příkazů a akcí](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Vyhledá standardní příkazy v nabídkách, jako je například místní nabídky diagramu **upravit** nabídky a tak dále. Kód pro příkazy je v CommandSet.cs. Můžete přemístit nebo standardní příkazy upravit, a můžete přidat vlastní příkazy. Další informace najdete v tématu [zápis uživatelských příkazů a akcí](../modeling/writing-user-commands-and-actions.md).
+ Vyhledá standardní příkazy v nabídkách, jako je místní (objektu context) nabídce diagramu, **upravit** nabídky a tak dále. Kód pro příkazy je v CommandSet.cs. Můžete přemístit nebo standardní příkazy upravit, a můžete přidat vlastní příkazy. Další informace najdete v tématu [zápis uživatelských příkazů a akcí](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  Pokud chcete výběr v Průzkumníku modelů udržovat synchronizované s výběrem diagramu, můžete použít následující kód:
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

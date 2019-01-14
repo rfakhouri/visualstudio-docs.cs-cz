@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955250"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269221"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Průvodce: Analýza defektů spravovaného kódu
 
@@ -183,13 +183,11 @@ Tento názorný postup vás provede procesem pomocí analýzy kódu pro analýzu
 
 ## <a name="exclude-code-analysis-warnings"></a>Vyloučit upozornění analýzy kódu
 
-### <a name="to-exclude-code-defect-warnings"></a>Chcete-li vyloučit upozornění vad kódu
-
 1. Pro každý zbývající upozornění postupujte takto:
 
     1. Výběr varování v **seznam chyb**.
 
-    1. V nabídce klepněte pravým tlačítkem nebo kontextu zvolte **potlačit** > **v souboru potlačení**.
+    1. V místní nabídce (kontextová nabídka), zvolte **potlačit** > **v souboru potlačení**.
 
 1. Sestavte projekt znovu.
 

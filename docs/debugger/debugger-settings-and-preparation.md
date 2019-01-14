@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926838"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269771"
 ---
 # <a name="debugger-settings-and-preparation"></a>Nastavení ladicího programu a příprava
 Tato část popisuje nastavení vlastnosti související s ladicího programu a příprava potřebných pro ladění programu s [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicího programu. Pokud vytváříte program v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pomocí šablony projektu, tato nastavení jsou nastaveny správně v konfiguraci ladění.  
@@ -40,7 +40,7 @@ Tato část popisuje nastavení vlastnosti související s ladicího programu a 
  [Projekty konzoly](../debugger/debugging-preparation-console-projects.md)  
  Poskytuje pokyny o tom, jak nakonfigurovat projekty konzoly pro ladění.   
   
- [Postupy: Ladit spustitelný soubor není součástí řešení sady Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Postupy: Ladění spustitelného souboru, který není součástí řešení sady Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Vysvětluje, jak ladit spustitelný soubor, který není vytvořený jako součást projektu sady Visual Studio.  
   
  [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)  
@@ -52,4 +52,4 @@ Tato část popisuje nastavení vlastnosti související s ladicího programu a 
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)  
  [Ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

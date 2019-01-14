@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee62651d6517444eb33aef272a212e5a12f55e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b68da672fdd0986d0a0bce5c56a13683325d737
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944373"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268887"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Ladicí program nemůže zobrazit zdrojový kód nebo zpětný překlad.
 Přečte tuto chybu:  
@@ -36,6 +36,7 @@ Přečte tuto chybu:
   
 -   Důležité informace o zabezpečení může znemožnit ladicího programu ze zásobníku a vlákna, zápis a další informace o kontextu čtením program, který ladíte. Toto je nejčastěji dochází, pokud jsou ladění webové aplikace a nemáte správná oprávnění pro přístup k virtuálnímu adresáři. Nastavení zabezpečení pro virtuální adresář pro anonymní a zkuste to znovu.  
   
-## <a name="see-also"></a>Viz také  
- [Ladění v sadě Visual Studio](../debugger/index.md) [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>Viz také
+ [Ladění v sadě Visual Studio](../debugger/index.md)  
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)  
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)

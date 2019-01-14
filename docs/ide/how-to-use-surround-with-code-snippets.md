@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d306d9399ee9454d1967c24a734c5d9b9b2eb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11e31d46af00620b9e8ac9f45fe79946eea4eb1a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908801"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270148"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Postupy: Použití příkazu Obklopit s fragmenty kódu
 
-Následující postupy popisují způsob použití příkazu Obklopit s fragmenty kódu. Obklopit s fragmenty kódu jsou k dispozici tři způsoby: pomocí klávesové zkratky, prostřednictvím **upravit** nabídky a pomocí místní nabídky.
+Následující postupy popisují způsob použití příkazu Obklopit s fragmenty kódu. Obklopit s fragmenty kódu jsou k dispozici tři způsoby: pomocí klávesové zkratky, prostřednictvím **upravit** nabídky a prostřednictvím nabídky klikněte pravým tlačítkem nebo kontext.
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Použití příkazu Obklopit s fragmenty kódu pomocí klávesové zkratky
 

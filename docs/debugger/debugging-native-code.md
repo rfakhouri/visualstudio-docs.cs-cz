@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870765"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269512"
 ---
 # <a name="debugging-native-code"></a>Ladění nativního kódu
 Část popisuje některé běžné problémy ladění a techniky pro nativní aplikace. Techniky popsané v této části jsou techniky vysoké úrovně. Mechanismy pomocí ladicího programu sady Visual Studio, naleznete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md)).  
@@ -40,7 +40,7 @@ ms.locfileid: "53870765"
  [Kontrolní výrazy jazyka C/C++](../debugger/c-cpp-assertions.md)  
  Tento článek popisuje příkazy kontrolního výrazu, jak fungují, výhody používání jejich (zachycení logických chyb, Kontrola výsledků operace a testování chybové stavy), jejich interakce s `_DEBUG`a různým druhům kontrolní výrazy, které jsou podporovány v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- [Postupy: Ladění vnořeného kódu sestavení](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Postupy: Ladění vloženého kódu sestavení](../debugger/how-to-debug-inline-assembly-code.md)  
  Poskytuje obsah krátké pokyny týkající se použití okna zpětného překladu zobrazíte pokyny k sestavení a okno registrů, chcete-li zobrazit registru a obsahuje odkazy na témata týkající se těchto systému windows.  
   
  [Techniky ladění MFC](../debugger/mfc-debugging-techniques.md)  
@@ -67,9 +67,9 @@ ms.locfileid: "53870765"
 
  [Ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md) poskytuje informace o tom, jak ladit nativní a spravované knihovny DLL.
   
- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)  
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)  
  Obsahuje odkazy na větší části dokumentace ladění. Obsahuje informace, co je nového v ladicím programu, nastavení a příprava, zarážky, zpracování výjimek, upravit a pokračovat, ladění spravovaného kódu, ladění nativního kódu, ladění SQL a odkazy na uživatelské rozhraní.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)  
- [Ladění v sadě Visual Studio](../debugger/index.md) [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+ [Ladění v sadě Visual Studio](../debugger/index.md) 

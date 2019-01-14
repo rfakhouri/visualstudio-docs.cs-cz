@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2322980bcc3cc1c18052b7949cc9e4752ebfaa9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb7dfe94363d757c1ac15a8a44d21d69304c1e60
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940859"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270135"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Přidávání příkazů a gest do diagramů závislostí
 
-Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v diagramech závislostí v sadě Visual Studio. Tato rozšíření můžete zabalit do Visual Studio integrace rozšíření (VSIX), které můžete distribuovat ostatním uživatelům aplikace Visual Studio.
+Můžete definovat příkazy nabídky klikněte pravým tlačítkem a obslužné rutiny gesta v diagramech závislostí v sadě Visual Studio. Tato rozšíření můžete zabalit do Visual Studio integrace rozšíření (VSIX), které můžete distribuovat ostatním uživatelům aplikace Visual Studio.
 
 Pokud chcete, můžete definovat několik obslužných rutin příkazů a gest ve stejném projektu sady Visual Studio. Můžete také kombinovat několik takových projektů do jednoho souboru VSIX. Můžete například definovat jeden VSIX obsahující příkazy vrstvy a jazyka specifického pro doménu.
 

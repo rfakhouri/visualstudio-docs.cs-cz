@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867037"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270203"
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
 
@@ -38,7 +38,7 @@ Popisuje kontrolní výrazy ve spravovaném kódu, které testování podmínek,
 [Příkazy Stop v jazyce Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
 Popisuje `Stop` příkaz, který poskytuje alternativu k nastavením zarážky. Ukázkový kód je také k dispozici, spolu s porovnání mezi `Stop` příkazu a `End` příkaz, a také mezi `Stop` a `Assert` příkazu.
 
-[Návod: Ladění formuláře Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
+[Návod: Ladění formuláře systému Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
 Poskytuje podrobné pokyny pro vytvoření formuláře Windows a ladění, které tvoří. Formuláře Windows, standardní součástí spravované aplikace pro Windows je jedním z nejběžnějších spravovaných aplikací. Tento návod používá Visual C# a Visual Basic, ale jsou obecně podobné techniky pro vytvoření formuláře Windows pomocí C++.
 
 [Ladění metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -86,7 +86,7 @@ Obsahuje odkazy na větší části dokumentace ladění. Obsahuje informace, co
 
 ## <a name="see-also"></a>Viz také:
 
-[Návod: Ovládací prvky ladění vlastního Windows Forms v době návrhu](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[zabezpečení ladicího programu](../debugger/debugger-security.md)
-[ladění v sadě Visual Studio](../debugger/index.md) 
- [ Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+[Návod: Ovládací prvky ladění vlastního Windows Forms v době návrhu](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Zabezpečení ladicího programu](../debugger/debugger-security.md)  
+[Ladění v sadě Visual Studio](../debugger/index.md)  
+[První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9415b3cf2c777e0a99b3f24a26e56d1a1c94bf8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877429"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269940"
 ---
 # <a name="navigate-code"></a>Vyhledání kódu
 
@@ -81,7 +81,7 @@ Přejít na má následující příkazy, které jsou k dispozici v **upravit** 
 
 - **Přejít ke všem** (**Ctrl**+**T** nebo **Ctrl**+**,**): Přesunout na zadaný řádek, typ, soubor, člen nebo symbol.
 
-- **Přejděte na soubor** (**Ctrl**+**1**, **Ctrl**+**F**): Přesunout do zadaného souboru v řešení.
+- **Go To File** (**Ctrl**+**1**, **Ctrl**+**F**): Přesunout do zadaného souboru v řešení.
 
 - **Přejděte na poslední soubor** (**Ctrl**+**1**, **Ctrl**+**R**): Přesuňte do souboru zadaného, naposledy navštívené v řešení (nové v sadě Visual Studio 2017 verze 15.8).
 

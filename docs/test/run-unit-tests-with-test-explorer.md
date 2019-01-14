@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89e64c88311848d53a114a1f58f711edbe3856e7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858066"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269875"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
@@ -46,7 +46,7 @@ Spustit všechny testy v řešení, všechny testy ve skupině nebo sadu testů,
 
 - Chcete-li spustit všechny testy ve výchozí skupině, zvolte **spustit** a pak vyberte skupinu v nabídce.
 
-- Vyberte jednotlivé testy, které chcete spustit, otevřete kontextovou nabídku pro vybraný test a pak zvolte **spustit vybrané testy**.
+- Vyberte jednotlivé testy, které chcete spustit, otevřete v místní nabídce pro vybraný test a zvolte **spustit vybrané testy**.
 
 - Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.
 
@@ -84,7 +84,7 @@ Pokud se test nezdaří, zobrazí se také v podokně podrobností:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Zobrazit zdrojový kód testovací metody
 
- Chcete-li zobrazit zdrojový kód pro testovací metodu v editoru sady Visual Studio, vyberte test a zvolte **otevřít Test** v kontextové nabídce (klávesnice: **F12**).
+ Chcete-li zobrazit zdrojový kód pro testovací metodu v editoru sady Visual Studio, vyberte test a zvolte **otevřít Test** v místní nabídce (klávesnice: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Seskupit a filtrovat seznam testů
 
@@ -216,8 +216,8 @@ Testy můžete spustit z **Průzkumníka testů**, tak, že kliknete pravým tla
 
 |Časté příkazy| Klávesové zkratky|
 |-|------------------------|
-|TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
-|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
+|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
 
 > [!NOTE]
 > Nelze spustit test v abstraktní třídě, protože testy jsou definována pouze v abstraktní třídy a není vytvořena instance. Pro spouštění testů z abstraktní třídy, vytvořte třídu, která dědí z abstraktní třídy.

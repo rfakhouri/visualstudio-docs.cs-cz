@@ -8,12 +8,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: eb441d5987a4e1defde83d4ca9737cc27ab278fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff82db5a7ca5c5a18c7d89017dfae892d209fbf
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840879"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270044"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů jednotek pro C/C++ v sadě Visual Studio
 
@@ -37,7 +37,7 @@ Projekty testování částí C++ podporu [CodeLens](../ide/find-code-changes-an
 
 **Visual Studio 2017 verze 15.5**
 
-- **Google Test Adapter** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Obsahuje šablony projektů, můžete přidat do řešení prostřednictvím **přidat nový projekt** místní nabídky uzlu řešení v **Průzkumníka řešení**a možnosti, které můžete nakonfigurovat přes **nástroje**  >  **Možnosti**. Další informace najdete v tématu [postupy: použití Google testu v sadě Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google Test Adapter** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Obsahuje šablony projektů, můžete přidat do řešení prostřednictvím **přidat nový projekt** nabídky klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení**a možnosti, které můžete nakonfigurovat přes **nástroje**  >  **Možnosti**. Další informace najdete v tématu [postupy: použití Google testu v sadě Visual Studio](how-to-use-google-test-for-cpp.md).
 
 - **Boost.Test** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Je integrován s **Průzkumník testů** aktuálně nepodporuje, ale není nutné šablonu projektu, proto musí být ručně nakonfigurovat. Další informace najdete v tématu [postupy: použití testu Boost.Test v sadě Visual Studio](how-to-use-boost-test-for-cpp.md).
 

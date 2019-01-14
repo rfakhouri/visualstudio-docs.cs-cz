@@ -8,20 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929695"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269316"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Řízení barvy, stylu čáry a ostatních vlastností obrazce
-Některé vlastnosti obrazce, jako je barva by bylo možné "vystavit" – to znamená, propojený s doménovou vlastnost obrazce. Ostatní uživatelé mají přímo se dá řídit.
+
+Některé vlastnosti obrazce, jako je barva můžou "zveřejnit". To znamená vlastnosti lze propojit na doménovou vlastnost obrazce. Ostatní uživatelé mají přímo se dá řídit.
 
 ## <a name="exposing-a-property"></a>Vystavení vlastností
  Některé vlastnosti obrazce, jako je barva může být propojený hodnoty vlastnosti domény.
 
- V definici DSL vyberte obrazec, konektoru nebo diagramu třídy. V kontextové nabídce, zvolte **přidat vystavený**a klikněte na tlačítko Vlastnosti, třeba Barva výplně.
+ V definici DSL vyberte obrazec, konektoru nebo diagramu třídy. V místní nabídce, zvolte **přidat vystavený**a klikněte na tlačítko Vlastnosti, třeba Barva výplně.
 
  Doménová vlastnost, kterou můžete nastavit v kódu programu nebo jako uživatel nyní má obrazec.
 

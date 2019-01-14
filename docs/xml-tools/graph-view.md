@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826991"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269901"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 
@@ -42,7 +42,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 
  Na panelu navigace s popisem cesty v dolní části zobrazení grafu zobrazuje umístění vybraného uzlu v sadě schémat. Pokud je vybráno více položek, panelu navigace s popisem cesty bude prázdné.
 
-## <a name="context-menu"></a>Místní nabídka
+## <a name="context-right-click-menu"></a>Nabídka (kliknutí pravým tlačítkem myši)
 
  Následující tabulka popisuje možnosti, které jsou k dispozici pro všechny uzly na návrhové ploše zobrazení grafu.
 
@@ -92,7 +92,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 
 ## <a name="properties-window"></a>Vlastnosti – okno
 
- Pomocí místní nabídky k prvním spuštění **vlastnosti** okna. Ve výchozím nastavení **vlastnosti** okno se zobrazí v pravém dolním rohu sady Visual Studio. Po kliknutí na uzel, který se vykreslí v zobrazení modelu obsahu, vlastnosti uzlu se zobrazí v **vlastnosti** okna.
+ Prvním spuštění pomocí nabídky kontextu (klikněte pravým tlačítkem) **vlastnosti** okna. Ve výchozím nastavení **vlastnosti** okno se zobrazí v pravém dolním rohu sady Visual Studio. Po kliknutí na uzel, který se vykreslí v zobrazení modelu obsahu, vlastnosti uzlu se zobrazí v **vlastnosti** okna.
 
 ## <a name="xsd-toolbar"></a>Panel nástrojů XSD
 
@@ -102,9 +102,9 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 
 |Možnost|Popis|
 |-|-----------------|
-|**Ukázat počáteční zobrazení**|Přepne [počáteční zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**1**.|
-|**Ukázat zobrazení modelu obsahu**|Přepne [zobrazení modelu obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**2**.|
-|**Ukázat zobrazení grafu**|Přepne [grafu zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**3**.|
+|**Ukázat počáteční zobrazení**|Přepne [počáteční zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**1**.|
+|**Ukázat zobrazení modelu obsahu**|Přepne [zobrazení modelu obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**2**.|
+|**Ukázat zobrazení grafu**|Přepne [grafu zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**3**.|
 |**Vymazat pracovní prostor**|Vymaže pracovní prostor a návrhovou plochu.|
 |**Odebrat z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a návrhovou plochu.|
 |**Odeberte všechny kromě výběru z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu. Tato možnost je povolená v zobrazení modelu obsahu a zobrazení grafu.|
@@ -141,7 +141,7 @@ Posuvník přiblížení je neprůhledný, když vyberte ho, najeďte myší nad
 
 ## <a name="xml-editor-integration"></a>Integrace editoru XML
 
- Můžete přepínat vpřed a zpět mezi zobrazení grafu a Editor souborů XML tak, že kliknete na uzel a pomocí kontextové nabídky zobrazení kódu.
+ Můžete přepínat vpřed a zpět mezi zobrazení grafu a Editor souborů XML tak, že kliknete na uzel a z nabídky Zobrazit kód kontextu (klikněte pravým tlačítkem).
 
  Pokud provedete změny schématu, nastavte v editoru XML, změny budou synchronizovány v zobrazení grafu. Další informace najdete v tématu [integrace s editorem XML](../xml-tools/integration-with-xml-editor.md).
 

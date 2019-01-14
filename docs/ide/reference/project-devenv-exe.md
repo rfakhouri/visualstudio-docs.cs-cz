@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5ed94bfbb3bfdf0e88b0c79741d090908a9936e
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 1706d8dade02bd7f247d7f2ce163955615a3b0f3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54228003"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269183"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -36,7 +36,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="arguments"></a>Arguments
 
-- *Název řešení*
+- *SolutionName*
 
   Povinný parametr. Úplná cesta a název souboru řešení.
 
@@ -46,15 +46,15 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolnConfigName*
 
-  Volitelné. Název konfigurace řešení u řešení s názvem v *SolutionName*. Pokud tento argument je vynechána, nástroj použije aktivní konfigurace řešení.
+  Volitelné. Název konfigurace řešení (například `Debug` nebo `Release`) použít pro řešení s názvem v *SolutionName*. Pokud je k dispozici více než jedné platformě řešení, musíte zadat také platformy (například `Debug|Win32`). Pokud tento argument není zadána nebo prázdný řetězec (`""`), nástroj použije aktivní konfigurace řešení.
 
-- `/Project` *Název_projektu*
+- `/Project` *ProjName*
 
   Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat zobrazovaný název projektu nebo relativní cesta z *SolutionName* složku do souboru projektu. Můžete také zadat úplnou cestu a název souboru projektu.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Volitelné. Název konfigurace sestavení projektu použít `/Project` s názvem.
+  Volitelné. Název konfigurace sestavení projektu (například `Debug` nebo `Release`) použít `/Project` s názvem. Pokud je k dispozici více než jedné platformě řešení, musíte zadat také platformy (například `Debug|Win32`).
 
 - `/Out` *OutputFilename*
 

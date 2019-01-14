@@ -18,16 +18,16 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889225"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269403"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 
-Fragmenty kódu jsou malé bloky opakovaně použitelný kód, který může být vložen do souboru kódu pomocí příkazu kontextové nabídky nebo kombinace klávesových zkratek. Obvykle obsahují bloky kódu běžně používané jako `try-finally` nebo `if-else` blocích, ale je možné vložit celé třídy nebo metody.
+Fragmenty kódu jsou malé bloky opakovaně použitelný kód, který může být vložen do souboru kódu pomocí příkazu nabídky (kontextová nabídka) klikněte pravým tlačítkem nebo kombinace klávesových zkratek. Obvykle obsahují bloky kódu běžně používané jako `try-finally` nebo `if-else` blocích, ale je možné vložit celé třídy nebo metody.
 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [kódu fragmenty kódu (Visual Studio for Mac)](/visualstudio/mac/snippets).
@@ -61,7 +61,7 @@ finally
 }
 ```
 
-Tento fragment kódu lze vložit kliknutím **Vložit fragment** v místní nabídce okna kódu, pak **Visual C#** , zadejte `tryf`a potom stiskněte klávesu **kartu**. Nebo můžete zadat `tryf` a stiskněte klávesu **kartu** dvakrát.
+Tento fragment kódu lze vložit kliknutím **Vložit fragment** v v místní nabídce (kontextová nabídka) z okna kódu, pak **Visual C#** , zadejte `tryf`a potom stiskněte klávesu  **Karta**. Nebo můžete zadat `tryf` a stiskněte klávesu **kartu** dvakrát.
 
 Příklad obklopit fragmentem: v jazyce C++ zástupce `if` lze použít jako fragment vložení nebo jako obklopit fragmentem. Pokud vyberete řádek kódu (například `return FALSE;`) a klikněte na tlačítko **obklopit fragmentem** > **Pokud**, fragment kódu je rozbalený kolem řádku:
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b899ca08efac05bb58cc119b7e63489c6b8934d5
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 208bc533578d116fe55ad336f4aaee72eec94c3f
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227964"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268565"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -34,21 +34,21 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 ## <a name="arguments"></a>Arguments
 
-- *Název řešení*
+- *SolutionName*
 
   Povinný parametr. Úplná cesta a název souboru řešení.
 
 - *SolnConfigName*
 
-  Volitelné. Název konfigurace řešení, který se má použít k opětovnému sestavení řešení s názvem v *SolutionName*. Pokud tento argument je vynechána, nástroj použije aktivní konfigurace řešení.
+  Volitelné. Název konfigurace řešení (například `Debug` nebo `Release`) se použije k opětovnému sestavení řešení s názvem v *SolutionName*. Pokud je k dispozici více než jedné platformě řešení, musíte zadat také platformy (například `Debug|Win32`). Pokud tento argument není zadána nebo prázdný řetězec (`""`), nástroj použije aktivní konfigurace řešení.
 
-- `/Project` *Název_projektu*
+- `/Project` *ProjName*
 
   Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat zobrazovaný název projektu nebo relativní cesta z *SolutionName* složku do souboru projektu. Můžete také zadat úplnou cestu a název souboru projektu.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Volitelné. Název konfigurace sestavení projektu pro použití při opětovném sestavování `/Project` s názvem. Pokud je tento přepínač zadaný, přepíše *SolnConfigName* argument.
+  Volitelné. Název konfigurace sestavení projektu (například `Debug` nebo `Release`) má být použit při opětovném sestavování `/Project` s názvem. Pokud je k dispozici více než jedné platformě řešení, musíte zadat také platformy (například `Debug|Win32`). Pokud je tento přepínač zadaný, přepíše *SolnConfigName* argument.
 
 - `/Out` *OutputFilename*
 

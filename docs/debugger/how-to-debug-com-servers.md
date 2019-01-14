@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc8cbf7e087e2198071aef9f77c109f3a7c71640
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853928"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268566"
 ---
 # <a name="how-to-debug-com-servers"></a>Postupy: Ladění serverů modelu COM
 Ladění aplikace modelu COM serveru představuje jedinečnou sadu problémy, které nejsou vždy snadno vyřešit.  
@@ -47,4 +47,4 @@ Ladění aplikace modelu COM serveru představuje jedinečnou sadu problémy, kt
  [Postupy: Ladění modelu COM klientů a serverů pomocí ladění RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [Ladění modelu COM serveru a kontejneru](../debugger/com-server-and-container-debugging.md)   
  [Ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

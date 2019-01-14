@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1e1e01721ae261b756bd6f3567b8f06dc73f12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 143a40c1a2e3602460419465cb84d6ffa44d853c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921335"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269849"
 ---
 # <a name="find-references-in-your-code"></a>Hledání odkazů v kódu
 
@@ -40,13 +40,13 @@ Přejděte na odkazy v můžete použít následující metody **odkazy** okno:
 
 - Stisknutím klávesy **F8** přejít na další odkaz nebo **Shift + F8** přejít na předchozí odkaz.
 - Stisknutím klávesy **Enter** klíče na odkaz nebo dvojím kliknutím ho, chcete-li přejít k němu v kódu.
-- V kontextové nabídce odkaz, zvolte **přejít na předchozí umístění** nebo **přejděte do následujícího umístění** příkazy.
+- V nabídce klikněte pravým tlačítkem (kontextová nabídka) odkaz, zvolte **přejít na předchozí umístění** nebo **přejděte do následujícího umístění** příkazy.
 - Zvolte **šipka nahoru** a **šipka dolů** klíčů (pokud jsou povoleny v **možnosti** dialogové okno). Chcete-li povolit tuto funkci na řádku nabídek zvolte **nástroje** > **možnosti** > **prostředí**  >   **Karty a Windows** > **kartu náhledu**a pak vyberte **povolit otevřen v kartě preview odeslání nových souborů** a **náhled vybraných souborů v Výsledky hledání** polí.
 
 ## <a name="change-reference-groupings"></a>Seskupení změn odkazu
 Ve výchozím nastavení odkazy jsou seskupené podle projektu, pak podle definice. Toto seskupení pořadí však můžete změnit změnou nastavení v **Seskupit podle:** rozevíracího seznamu na panelu nástrojů. Například můžete změnit z výchozí nastavení **projekt a pak definice** k **definice a pak projekt**, i na další nastavení.
 
-**Definice** a **projektu** se používají dvě výchozí skupiny, ale ostatní lze přidat kliknutím **seskupení** příkazu v místní nabídce vybranou položku. Přidání další seskupení může být užitečné, pokud má vaše řešení velké množství souborů a cesty.
+**Definice** a **projektu** se používají dvě výchozí skupiny, ale ostatní lze přidat kliknutím **seskupení** příkaz v nabídce klepněte pravým tlačítkem nebo kontextu vybranou položku. Přidání další seskupení může být užitečné, pokud má vaše řešení velké množství souborů a cesty.
 
 ## <a name="see-also"></a>Viz také:
 

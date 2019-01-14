@@ -9,12 +9,12 @@ description: Informace pro poskytovatele Cloud Solution Provider, jak zakoupit a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739572"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270005"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 
@@ -46,7 +46,7 @@ Každý, kdo má [přístup přispěvatele nebo vlastníka](https://na01.safelin
 0. Zvolte **Visual Studio Marketplace**.
 0. Ujistěte se, že jste už je v pravém horním rohu název zákazníka.
 0. Zvolte **předplatná**.
-0. Zvolte Enterprise nebo Professional a zvolte měsíční nebo roční pro sadu Visual Studio.
+0. Zvolte Enterprise nebo Professional pro sadu Visual Studio.
 0. Zvolte **koupit**.
 0. Zvolte předplatné Azure pro fakturaci pro nákup.
 0. Zadejte počet uživatelů, které musí vaše zákazníky.

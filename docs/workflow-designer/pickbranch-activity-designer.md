@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860254"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269862"
 ---
 # <a name="pickbranch-activity-designer"></a>Návrhář aktivity PickBranch
 
 <xref:System.Activities.Statements.PickBranch> Poskytuje cesta provádění v rámci založené na událostech <xref:System.Activities.Statements.Pick> aktivitu, která mohou být spouštěny příchozí události.
 
-## <a name="pickbranch"></a>Operace PickBranch
+## <a name="pickbranch"></a>PickBranch
 
 <xref:System.Activities.Statements.PickBranch> objekty jsou součástí <xref:System.Activities.Statements.Pick.Branches%2A> kolekce <xref:System.Activities.Statements.Pick> aktivity. Každý <xref:System.Activities.Statements.PickBranch> nachází ve větvi <xref:System.Activities.Statements.Pick> aktivity a je možné provést kvůli některé příchozí události, která slouží jako trigger. Tímto způsobem umožňuje Návrháře pracovního postupu modelování toku řízení na základě událostí. Každý <xref:System.Activities.Statements.PickBranch> obsahuje <xref:System.Activities.Statements.PickBranch.Trigger%2A> a <xref:System.Activities.Statements.PickBranch.Action%2A>.
 

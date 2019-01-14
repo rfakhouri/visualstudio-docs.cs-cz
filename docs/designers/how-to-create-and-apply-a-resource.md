@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df8c3a225b4e8f4e65826c1db0c806c716d8fb0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a14f2d38ddbb5f24ef3906ea00f7569629b1f64
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903861"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268510"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Vytvoření a použití prostředku
 Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně použitelné entity nazývané prostředky. Styly umožňují nastavit vlastnosti elementu a použít tato nastavení pro jednotný vzhled napříč více prvků. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definuje vzhled ovládacího prvku a mohou být použity také jako prostředek. Další informace najdete v tématu [rychlý start: Používání stylů pro ovládací prvky](http://go.microsoft.com/fwlink/?LinkID=248239) a [rychlý start: Ovládací prvek šablony](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -58,10 +58,10 @@ Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně pou�
 
       Pokud nevidíte prostředek, který byste měli vidět, může to být způsobeno typ prostředku neodpovídá typu vlastnosti.
 
-   - Platí pro ovládací prvek prostředku šablony stylů nebo ovládací prvek. Otevřete místní nabídku pro ovládací prvek v okno osnovy dokumentu, zvolte **upravit šablonu** nebo **upravit další šablony**, zvolte **aplikovat zdroj**a klikněte na tlačítko Název šablony ovládací prvek ze zobrazeného seznamu.
+   - Platí pro ovládací prvek prostředku šablony stylů nebo ovládací prvek. Otevřete zvolte v místní nabídce (kontextová nabídka) pro ovládací prvek v okně Osnova dokumentu **upravit šablonu** nebo **upravit další šablony**, zvolte **aplikovat zdroj**, a pak vyberte název šablony ovládacích prvků ze seznamu, který se zobrazí.
 
      > [!NOTE]
-     >  **Úprava šablony** použije šablony ovládacího prvku. **Upravit další šablony** platí jiné typy šablon.
+     > **Úprava šablony** použije šablony ovládacího prvku. **Upravit další šablony** platí jiné typy šablon.
 
      Prostředky můžete použít bez ohledu na to jsou kompatibilní. Například můžete použít na prostředek štětce **popředí** vlastnost <xref:Windows.UI.Xaml.Controls.TextBox> ovládacího prvku.
 

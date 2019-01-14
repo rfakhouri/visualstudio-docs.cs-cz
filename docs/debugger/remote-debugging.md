@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ba15ddbfdb6e3bbcf7a9f7c3ee3dd7e0f89c9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6053c240fbdfb12840e162f70c88356918eca238
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866332"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269953"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 Můžete ladit aplikace Visual Studio, který byl nasazen na jiný počítač. K tomu použijete vzdálený ladicí program sady Visual Studio.
@@ -122,7 +122,7 @@ Pro ladění v technologii ASP.NET a jiné prostředí serveru, musíte buď spu
 
 ## <a name="see-also"></a>Viz také:
 
-- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
 - [Konfigurace brány firewall ve Windows pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md)
 - [Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

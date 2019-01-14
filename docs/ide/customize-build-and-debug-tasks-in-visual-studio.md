@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 434ba3e01313e79c734b67b65c7cff0530f4d41d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2662c09c4d131f52b0426a910d9dd4b60e6b3459
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836321"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270122"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Přizpůsobení sestavení a ladění úlohy pro vývoj "Otevřít složku"
 
@@ -32,8 +32,8 @@ Přizpůsobení vašeho projektu bez základu kódu s použitím následujícíc
 
 |Název souboru|Účel|
 |-|-|
-|*tasks.vs.json*|Určení vlastního sestavení příkazy a přepínače kompilátoru a libovolného (bez sestavení související) úlohy.<br>Přístup přes **Průzkumníka řešení** položka kontextové nabídky **nakonfigurovat úlohy**.|
-|*launch.vs.json*|Zadejte argumenty příkazového řádku pro ladění.<br>Přístup přes **Průzkumníka řešení** položka kontextové nabídky **nastavení ladění a spouštění**.|
+|*tasks.vs.json*|Určení vlastního sestavení příkazy a přepínače kompilátoru a libovolného (bez sestavení související) úlohy.<br>Přístup přes **Průzkumníka řešení** klikněte pravým tlačítkem na položku nabídky **nakonfigurovat úlohy**.|
+|*launch.vs.json*|Zadejte argumenty příkazového řádku pro ladění.<br>Přístup přes **Průzkumníka řešení** klikněte pravým tlačítkem na položku nabídky **nastavení ladění a spouštění**.|
 |*VSWorkspaceSettings.json*|Obecná nastavení, která může mít vliv na úlohy a spustit. Například definování `envVars` v *VSWorkspaceSettings.json* přidá zadané proměnné prostředí pro spuštění příkazů externě.<br>Tento soubor vytvořit ručně.|
 
 Tyto *.json* soubory jsou umístěny ve skryté složce s názvem *.vs* v kořenové složce vašeho základu kódu. *Tasks.vs.json* a *souboru launch.vs.json* soubory jsou vytvořeny pomocí sady Visual Studio na základě potřeby, po výběru některé **nakonfigurovat úlohy** nebo **ladění Nastavení a spouštění** pro soubor nebo složku v **Průzkumníka řešení**. Tyto *.json* soubory jsou skryté, protože uživatelé zbytečné vrátit je do správy zdrojového kódu. Ale pokud chcete mít možnost zkontrolovat do správy zdrojového kódu, přetáhněte soubory v kořenové složce vašeho základu kódu, kde jsou viditelné.
@@ -47,7 +47,7 @@ Můžete automatizovat skripty sestavení ani žádné jiné externí operace se
 
 ![Konfigurace nabídka úkoly](../ide/media/customize-configure-tasks-menu.png)
 
-To vytvoří (nebo se otevře) *tasks.vs.json* ve *.vs* složky. Můžete definovat úloha sestavení nebo libovolných úloh v tomto souboru a pak ho pomocí názvu, dáte mu z vyvolat **Průzkumníka řešení** kontextové nabídky.
+To vytvoří (nebo se otevře) *tasks.vs.json* ve *.vs* složky. Můžete definovat úloha sestavení nebo libovolných úloh v tomto souboru a pak ho pomocí názvu, dáte mu z vyvolat **Průzkumníka řešení** místní nabídce.
 
 Vlastní úlohy se dají přidat pro jednotlivé soubory nebo pro všechny soubory určitého typu. Například soubory balíčku NuGet lze nakonfigurovat pro úkol "Packages obnovení", nebo všechny zdrojové soubory se dají konfigurovat mít statické analýzy úloh, jako je linter pro všechny *js* soubory.
 
@@ -118,7 +118,7 @@ Pro tento *makefile* , který obsahuje sestavení, vyčištění a znovu sestavt
 }
 ```
 
-Po definování úloh sestavení v *tasks.vs.json*, další kontext položky nabídky se přidají do příslušné soubory v **Průzkumníka řešení**. V tomto příkladu "sestavení", "sestavení" a "Vyčištění" možnosti jsou přidány do kontextové nabídky žádné *makefile* soubory.
+Po definování úloh sestavení v *tasks.vs.json*, klikněte pravým tlačítkem na další položky nabídky (kontextová nabídka) jsou přidány do odpovídající soubory v **Průzkumníka řešení**. V tomto příkladu "sestavení", "sestavení" a "Vyčištění" možnosti jsou přidány do kontextové nabídky žádné *makefile* soubory.
 
 ![místní nabídka souboru pravidel se sestavením, opětovné sestavení a vyčištění](media/customize-build-rebuild-clean.png)
 

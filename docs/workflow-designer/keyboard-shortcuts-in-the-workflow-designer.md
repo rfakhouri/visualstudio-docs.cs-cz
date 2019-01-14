@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 326a377cd93e15c52a699dfb83c7ec111866cc0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c092a4bcb419039b145bccf3f6c0cd952f0ff85
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858653"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269576"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Klávesové zkratky v návrháři postupu provádění
 
@@ -36,14 +36,14 @@ Následující tabulka shrnuje výchozí klávesové zkratky, která je přiřaz
 |CTRL+E, C|Sbalí vybraný aktivity na místě.|
 |CTRL+E, E|Rozbalí vybrané aktivity na místě.|
 |CTRL + E, F|Připojí vybrané aktivity ve vývojovém diagramu.|
-|CTRL + E, MŮŽU|Zobrazí nebo skryje Návrhář importů.|
+|CTRL+E, I|Zobrazí nebo skryje Návrhář importů.|
 |CTRL + E, M|Přesune fokus klávesnice na další položku v pořadí.|
 |CTRL+E, N|Vytvoří novou proměnnou v oboru vybrané aktivity (nebo nejbližší).|
 |CTRL+E, O|Zobrazí nebo skryje přehledovou mapu.|
-|CTRL + E, P|Přejde na nadřazený vybranou aktivitou. To platí nahoru o jednu úroveň ve navigace s popisem cesty a změní kořenové aktivity na plochu návrháře.|
+|CTRL+E, P|Přejde na nadřazený vybranou aktivitou. To platí nahoru o jednu úroveň ve navigace s popisem cesty a změní kořenové aktivity na plochu návrháře.|
 |CTRL + E, S|Přidá položku s fokus klávesnice do aktuálního výběru.|
 |CTRL+E, V|Zobrazí nebo skryje Návrhář proměnných.|
-|CTRL + E, X|Rozbalí všechny aktivity v pracovním postupu.|
+|CTRL+E, X|Rozbalí všechny aktivity v pracovním postupu.|
 |CTRL+ALT+F6|Přesune fokus klávesnice z aktuální oblasti uživatelského rozhraní k další oblasti v sekvenci. Pořadí je následujícím způsobem:<br /><br /> 1.  Navigační panel s popisem cesty.<br />2.  Návrhové ploše<br />3.  Návrhář argumentů/proměnné/importů-li otevřít<br />4.  Prostředí|
 
 ### <a name="flowchart"></a>Vývojový diagram

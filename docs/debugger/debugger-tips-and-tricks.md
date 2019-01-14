@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927152"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270057"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Další tipy pro vyšší produktivitu a triky pro ladicí program v sadě Visual Studio
 
-Přečtěte si toto téma a další pár produktivitu tipy a triky pro ladicí program sady Visual Studio. Podívejte se na základní funkce ladicího programu, najdete v části [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md). V tomto tématu se budeme zabývat některé oblasti, které nejsou součástí prohlídka funkcí.
+Přečtěte si toto téma a další pár produktivitu tipy a triky pro ladicí program sady Visual Studio. Podívejte se na základní funkce ladicího programu, najdete v části [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md). V tomto tématu se budeme zabývat některé oblasti, které nejsou součástí prohlídka funkcí.
 
 ## <a name="pin-data-tips"></a>PIN kód datových tipech
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825252"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269147"
 ---
 # <a name="xml-schema-designer-workspace"></a>Pracovní prostor návrháře schémat XML
 
@@ -30,7 +30,7 @@ Můžete přidat uzly do pracovního prostoru následujícími způsoby:
 
 -   Globální uzly, soubor uzly a uzly oboru názvů z přetahovat **Průzkumníka schémat XML** do libovolné ze tří zobrazení. Další informace najdete v části "Přetahování a vyřadit uzly" v [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md).
 
--   Pomocí místní nabídky v **Průzkumníka schémat XML**. Další informace najdete v tématu [kontextové nabídky](../xml-tools/context-menus-xml-schema-explorer.md).
+-   Použít místní (klikněte pravým tlačítkem) nabídka v **Průzkumníka schémat XML**. Další informace najdete v tématu [kontextové nabídky](../xml-tools/context-menus-xml-schema-explorer.md).
 
 -   Hledání v Průzkumníkovi XSD a klikněte na tlačítko **přidá zvýrazněné uzly do pracovního prostoru** tlačítko na panelu souhrnu výsledků. Další informace najdete v tématu [hledání v sadě schémat](../xml-tools/searching-the-schema-set.md).
 
@@ -40,7 +40,7 @@ Chcete-li přepnout zobrazení, použijte jednu z následujících:
 
 -   Panel nástrojů návrháře XSD.
 
--   Kontextové nabídky zobrazení modelu obsahu a zobrazení grafu.
+-   (Klikněte pravým tlačítkem) kontextové nabídky zobrazení modelu obsahu a zobrazení grafu.
 
 -   Vodoznaky na stránce zobrazení Start nebo vodoznak na prázdné zobrazení modelu obsahu nebo zobrazení grafu.
 

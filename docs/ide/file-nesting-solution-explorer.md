@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831151"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269278"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Přizpůsobení vnořování souborů v Průzkumníku řešení
 
@@ -29,7 +29,7 @@ Vnoření sady souvisejících souborů v **Průzkumníka řešení** není nov�
 
 Dostupné možnosti pro vnořování souborů neupravené jsou:
 
-* **Vypnout**: Tato možnost poskytuje seznam bez stromové struktury souborů bez jakékoli vnoření.
+* **Off**: Tato možnost poskytuje seznam bez stromové struktury souborů bez jakékoli vnoření.
 
 * **Výchozí**: Tato možnost vám poskytne výchozí soubor vnoření chování v **Průzkumníka řešení**. Pokud neexistuje žádná nastavení pro daný projekt typu, jsou vnořené žádné soubory v projektu. Pokud nastavení existuje, například pro webový projekt, použije se vnoření.
 
@@ -131,7 +131,7 @@ Můžete spravovat všechna nastavení, včetně vlastní nastavení, pomocí st
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>Vytvoření nastavení specifická pro řešení a specifické pro projekt
 
-Můžete vytvořit nastavení specifická pro řešení a specifické pro projekt přes místní nabídku jednotlivých řešení a projektu:
+Můžete vytvořit nastavení specifická pro řešení a projektu prostřednictvím v místní nabídce (kontextová nabídka) jednotlivých řešení a projektu:
 
 ![Vnoření pravidla specifická pro projekt a řešení](media/filenesting_solutionprojectspecific.png)
 

@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbb34804e827ddd0eefdaf4585ba517034a31392
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883023"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269888"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Použití ovládacích prvků HTML5 v programových testech UI
 
@@ -31,7 +31,7 @@ Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTM
 > [!WARNING]
 > Je-li vytvořit programový test uživatelského rozhraní v Internet Exploreru 10, nemusí spouštět, pomocí aplikace Internet Explorer 9 nebo Internet Explorer 8. Je to proto, že aplikace Internet Explorer 10 obsahuje ovládací prvky HTML5, jako je zvuk, Video, indikátor průběhu a posuvník. Tyto ovládací prvky jazyka HTML5 nejsou rozpoznány aplikací Internet Explorer 9 nebo Internet Explorer 8. Podobně váš programový test UI pomocí aplikace Internet Explorer 9 může zahrnovat některé ovládací prvky jazyka HTML5, které aplikace Internet Explorer 8 nerozpozná.
 
-## <a name="audio-control"></a>Ovládací prvek zvuku
+## <a name="audio-control"></a>Audio Control
 
 **Ovládací prvek zvuku:** Akce na ovládacím prvku HTML5 Audio se správně zaznamenávají a přehrát.
 
@@ -39,11 +39,11 @@ Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTM
 
 |Akce|Záznam|Generovaný kód|
 |-|---------------|-|
-|**Přehrát zvuk**<br /><br /> Přímo z ovládacího prvku, nebo z místní nabídky ovládací prvky.|Přehrát \<name > zvuku od 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Přehrát zvuk**<br /><br /> Přímo z ovládacího prvku, nebo klikněte pravým tlačítkem na nabídce ovládacího prvku.|Přehrát \<name > zvuku od 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Hledání na určitou dobu ve zvukovém souboru**|Hledání \<name > zvuku 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Pozastavit zvuku**<br /><br /> Přímo z ovládacího prvku, nebo z místní nabídky ovládací prvky.|Pozastavit \<name > zvuku v 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Ztlumit zvuk**<br /><br /> Přímo z ovládacího prvku, nebo z místní nabídky ovládací prvky.|Ztlumit \<name > zvuku|HtmlAudio.Mute()|
-|**Zrušit ztlumení zvuk**<br /><br /> Přímo z ovládacího prvku, nebo z místní nabídky ovládací prvky.|Zrušit ztlumení \<name > zvuku|HtmlAudio.Unmute()|
+|**Pozastavit zvuku**<br /><br /> Přímo z ovládacího prvku, nebo klikněte pravým tlačítkem na nabídce ovládacího prvku.|Pozastavit \<name > zvuku v 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Ztlumit zvuk**<br /><br /> Přímo z ovládacího prvku, nebo klikněte pravým tlačítkem na nabídce ovládacího prvku.|Ztlumit \<name > zvuku|HtmlAudio.Mute()|
+|**Zrušit ztlumení zvuk**<br /><br /> Přímo z ovládacího prvku, nebo klikněte pravým tlačítkem na nabídce ovládacího prvku.|Zrušit ztlumení \<name > zvuku|HtmlAudio.Unmute()|
 |**Změnit hlasitost zvuku**|Nastavit hlasitost \<name > zvuku a 79 %|HtmlAudio.SetVolume(float)|
 
 Zobrazit [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) pro seznam vlastností, na které můžete přidat kontrolní výraz.
@@ -63,11 +63,11 @@ Zobrazit [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudio
 
 |Akce|Záznam|Generovaný kód|
 |-|---------------|-|
-|**Přehrát video**<br /><br /> Přímo z ovládacího prvku, nebo z místní nabídky ovládací prvky.|Přehrát \<name > videa od 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Přehrát video**<br /><br /> Přímo z ovládacího prvku, nebo klikněte pravým tlačítkem na nabídce ovládacího prvku.|Přehrát \<name > videa od 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Hledání na určitou dobu ve videu**|Hledání \<name > videa na 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Pozastavit video**<br /><br /> Přímo z ovládacího prvku, nebo z místní nabídky ovládací prvky.|Pozastavit \<name > videa v 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Ztlumit videa**<br /><br /> Přímo z ovládacího prvku, nebo z místní nabídky ovládací prvky.|Ztlumit \<name > videa|HtmlVideo.Mute()|
-|**Zrušit ztlumení videa**<br /><br /> Přímo z ovládacího prvku, nebo z místní nabídky ovládací prvky.|Zrušit ztlumení \<name > videa|HtmlVideo.Unmute()|
+|**Pozastavit video**<br /><br /> Přímo z ovládacího prvku, nebo klikněte pravým tlačítkem na nabídce ovládacího prvku.|Pozastavit \<name > videa v 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Ztlumit videa**<br /><br /> Přímo z ovládacího prvku, nebo klikněte pravým tlačítkem na nabídce ovládacího prvku.|Ztlumit \<name > videa|HtmlVideo.Mute()|
+|**Zrušit ztlumení videa**<br /><br /> Přímo z ovládacího prvku, nebo klikněte pravým tlačítkem na nabídce ovládacího prvku.|Zrušit ztlumení \<name > videa|HtmlVideo.Unmute()|
 |**Změna hlasitosti videa**|Nastavit hlasitost \<name > videa a 79 %||
 
 Zobrazit [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) pro seznam vlastností, na které můžete přidat kontrolní výraz.

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858993"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269810"
 ---
 # <a name="trycatch-activity-designer"></a>Návrhář aktivity TryCatch
 
@@ -34,7 +34,7 @@ Přístup **TryCatch** návrháře aktivit v **zpracování chyb** kategorii **n
 
 Klikněte na tlačítko pro rozbalení v pravém horním rohu **TryCatch** návrháře zobrazíte **zkuste**, **zachytí**, a **nakonec** polích v Rozšířené zobrazení. Chcete-li přidat bloku catch, klikněte na tlačítko **přidat novou aktivitu catch** tlačítko **TryCatch** návrháře. Tlačítko se změní na typ pole se seznamem. Vyberte typ výjimky a stisknutím klávesy ENTER přidejte catch. Po přidání **Catch**, oblast catch se rozšíří a aktivitu můžete přetáhnout do catch k definování logiky provádění pro catch. Všimněte si, že je na pravé straně rozbaleného catch oblasti textového pole. Můžete pojmenovat proměnnou výjimek pomocí tohoto textového pole. Výjimka proměnnou jde použít jenom pro aktivity v rámci stejného **Catch**.
 
-**TryCatch** návrhář nepodporuje úpravy **Catch**. Pokud chcete změnit typ výjimky, je třeba odstranit **Catch** a přidat nový. A **Catch** je možné odstranit tak, že ji vyberete a jeho odstraněním nebo s použitím **odstranit** nabídky v místní nabídce přistupovat kliknutím pravým tlačítkem.
+**TryCatch** návrhář nepodporuje úpravy **Catch**. Pokud chcete změnit typ výjimky, je třeba odstranit **Catch** a přidat nový. A **Catch** je možné odstranit tak, že ji vyberete a jeho odstraněním nebo tak, že vyberete **odstranit** v místní nabídce, která se využívají kliknutím pravým tlačítkem myši.
 
 ### <a name="the-trycatch-properties"></a>Vlastnosti TryCatch
 

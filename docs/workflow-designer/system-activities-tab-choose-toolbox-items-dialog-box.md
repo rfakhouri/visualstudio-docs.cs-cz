@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372c1c613aca71f72e57a3a5c9a5d2e82726a03b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868180"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269550"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Karta System.Activities, dialogové okno Zvolit položky panelu nástrojů
 
@@ -30,7 +30,7 @@ Tato karta **zvolit položky nástrojů** dialogové okno zobrazí seznam aktivi
 
  Filtrování se provádí na každé kartě. To znamená, že není možné přidat aktivit pracovních postupů prostřednictvím **součásti .NET** kartu. Mají být přidány prostřednictvím **System.Activities** kartě samotný.
 
- Můžete zrušit zaškrtnutí všech položek, které nechcete a podívejte se **nástrojů** z tohoto dialogového okna kartu, nebo Alternativně můžete k tomu použít **odstranit** možnost místní nabídky v **nástrojů** a zrušením odkazu na sestavení nedojde k odstranění položky z **nástrojů**.
+ Můžete zrušit zaškrtnutí všech položek, které nechcete a podívejte se **nástrojů** z tohoto dialogového okna kartu, nebo Alternativně můžete k tomu použít **odstranit** klikněte pravým tlačítkem na možnost nabídky v **nástrojů**a zrušením odkazu na sestavení nedojde k odstranění položky z **nástrojů**.
 
  Vytvoření instance aktivity, přetahováním myší v Návrháři přidá sestavení, který obsahuje položku do seznamu odkazovaných sestavení automaticky. Také pokud aktivity odkazuje na sestavení C, nepřidá C do seznamu odkazovaných sestavení. Sestavení C musí být v mezipaměti GAC nebo do stejného adresáře jako aktivita B. V případě samostatné sestavení musí být v GAC nebo cest test paměti VS. Teprve pak lze je přetáhnout myší aktivity na plochu návrháře pracovního postupu.
 

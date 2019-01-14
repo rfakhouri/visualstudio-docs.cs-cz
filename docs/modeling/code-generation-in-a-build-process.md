@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d5d4b4c50a02a92d150a87788e6dc307dd2f8e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11ff8764395f10a4937143d6f51d220f970193af
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865515"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270229"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generování kódu v procesu sestavení
 
@@ -42,15 +42,15 @@ Pokud [váš server sestavení](/azure/devops/pipelines/agents/agents) se spust�
 
     - Microsoft.TextTemplating.targets
 
-- *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0 $(ProgramFiles) \Microsoft Visual Studio
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
     - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (několik souborů)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
     - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
-- *.0\Common7\IDE\PublicAssemblies\ $(ProgramFiles) \Microsoft Visual Studio
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
     - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
@@ -58,7 +58,7 @@ Pokud [váš server sestavení](/azure/devops/pipelines/agents/agents) se spust�
 
 Budete muset úpravou souboru projektu ke konfiguraci některých funkcí v nástroji MSBuild.
 
-V **Průzkumníka řešení**, zvolte **uvolnění** v místní nabídce projektu. Tím umožníte úpravu souborů .csproj nebo .vbproj v editoru XML.
+V **Průzkumníka řešení**, zvolte **uvolnění** v místní nabídce vašeho projektu. Tím umožníte úpravu souborů .csproj nebo .vbproj v editoru XML.
 
 Po dokončení úprav, vyberte **Reload**.
 

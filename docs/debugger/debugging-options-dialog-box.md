@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9de6c966a2b58cd603094a846238f2f91c80359b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d920897c831ca1c92b1db5fe3d649ffd7ee67143
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935109"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268770"
 ---
 # <a name="debugging-options-dialog-box"></a>Ladění, dialogové okno Možnosti
 **Ladění** složky v **možnosti** dialogové okno na **nástroje** nabídky, poskytuje na následujících stránkách, které vám umožní určit ladicí program možnosti nástroje.  
@@ -41,5 +41,5 @@ ms.locfileid: "53935109"
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md) [ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)   
+ [První pohled na ladicí program](../debugger/debugger-feature-tour.md)   
  [Ladění odkazu uživatelského rozhraní](../debugger/debugging-user-interface-reference.md)

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2b5c13665de3836844b16c405bf85c56f287e39
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 30637a797d8c0845bae9548bb6a48e877d44727b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227392"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269472"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -34,21 +34,21 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="arguments"></a>Arguments
 
-- *Název řešení*
+- *SolutionName*
 
   Povinný parametr. Úplná cesta a název souboru řešení.
 
 - *SolnConfigName*
 
-  Volitelné. Název konfigurace řešení, která se použije k vytvoření řešení s názvem v *SolutionName*. Pokud jsou k dispozici více platformy řešení, musíte zadat také platformy (například `Debug|Win32`). Pokud tento argument je vynechána, nástroj použije aktivní konfigurace řešení.
+  Volitelné. Název konfigurace řešení (například `Debug` nebo `Release`) se použije k vytvoření řešení s názvem v *SolutionName*. Pokud jsou k dispozici více platformy řešení, musíte zadat také platformy (například `Debug|Win32`). Pokud tento argument není zadána nebo prázdný řetězec (`""`), nástroj použije aktivní konfigurace řešení.
 
-- `/Project` *Název_projektu*
+- `/Project` *ProjName*
 
   Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z *SolutionName* složku do souboru projektu nebo zobrazované jméno projektu, nebo úplnou cestu a název souboru projektu.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Volitelné. Název projektu sestavení konfigurace má být použit při sestavení s názvem projektu. Pokud jsou k dispozici více platforem v projektu, musíte zadat také platformu, například `Debug|Win32`. Pokud je tento přepínač zadaný, přepíše *SolnConfigName* argument.
+  Volitelné. Konfigurace sestavení název projektu (například `Debug` nebo `Release`) má být použit při sestavení s názvem projektu. Pokud je k dispozici více než jedné platformě řešení, musíte zadat také platformy (například `Debug|Win32`). Pokud je tento přepínač zadaný, přepíše *SolnConfigName* argument.
 
 - `/Out` *OutputFilename*
 

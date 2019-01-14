@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968602"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270242"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
 
@@ -64,11 +64,11 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
    }
    ```
 
-5. Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **spustit testy**. (Klávesová zkratka: **CTRL**+**R**,**T**).
+5. Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete nabídku klikněte pravým tlačítkem a zvolte **spustit testy**. (Klávesová zkratka: **Ctrl**+**R**,**T**).
 
     Zobrazí se ve výsledku testu, který ukazuje-li test úspěšný nebo neúspěšný **Průzkumníka testů** okna. Otevření okna Průzkumníka testů z **testovací** nabídce zvolte **Windows** a klikněte na tlačítko **Průzkumník testů**.
 
-6. Vzhledem k tomu, že zdroje dat lze také hodnoty parametrů kontrolní výraz – které jsou používány test ověření očekávané hodnoty – můžeme přidat kontrolní výraz se ověřit správnost součet dvou čísel. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **generovat kód pro programový Test uživatelského rozhraní**a potom **použití Tvůrce programového testu UI**.
+6. Vzhledem k tomu, že zdroje dat lze také hodnoty parametrů kontrolní výraz – které jsou používány test ověření očekávané hodnoty – můžeme přidat kontrolní výraz se ověřit správnost součet dvou čísel. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete nabídku klikněte pravým tlačítkem a zvolte **generovat kód pro programový Test uživatelského rozhraní**a potom **použití Tvůrce programového testu UI**.
 
     Mapování ovládacího prvku text v kalkulačce zobrazující součet.
 
@@ -93,7 +93,7 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
    }
    ```
 
-9. Ověřte, že test běží za použití `ValidateSum()` metody. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **spustit testy**. (Klávesová zkratka: **CTRL**+**R**,**T**).
+9. Ověřte, že test běží za použití `ValidateSum()` metody. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete nabídku klikněte pravým tlačítkem a zvolte **spustit testy**. (Klávesová zkratka: **Ctrl**+**R**,**T**).
 
      V tomto okamžiku všechny hodnoty parametrů jsou definovány v jejich metod jako konstanty. V dalším kroku vytvoříte datové sady, aby naše testovací řízené daty.
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988021"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269485"
 ---
 # <a name="debugging-user-interface-reference"></a>Ladění odkazu uživatelského rozhraní
 Jak ladit aplikaci se můžete setkat s následující dialogových oknech.  
@@ -44,5 +44,5 @@ Jak ladit aplikaci se můžete setkat s následující dialogových oknech.
   
 ## <a name="see-also"></a>Viz také  
  [Ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)   
+ [První pohled na ladicí program](../debugger/debugger-feature-tour.md)   
  [Příkazové okno](../ide/reference/command-window.md)

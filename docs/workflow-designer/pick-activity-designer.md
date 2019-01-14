@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946604"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269498"
 ---
 # <a name="pick-activity-designer"></a>Návrhář aktivity Pick
 
@@ -30,7 +30,7 @@ A <xref:System.Activities.Statements.Pick> aktivita obsahuje kolekci <xref:Syste
 
 Přístup **vyberte** návrháře aktivit v **tok řízení** kategorii **nástrojů**. **Vyberte** návrháře aktivit můžete přetáhnout z **nástrojů** a vyřadit na povrch návrháře postupu provádění bez ohledu na to návrháři aktivit jsou obvykle umístěny, například uvnitř  **Pořadí** návrháře aktivit. Po jeho umístěním do návrháře postupu provádění, vytvoří <xref:System.Activities.Statements.Pick> aktivitu, která ve výchozím nastavení obsahuje dva prázdné <xref:System.Activities.Statements.PickBranch> aktivitám v podobě elementů pomocí zobrazení názvů pobočka1 a Branch2. Tyto příslušných <xref:System.Activities.Statements.PickBranch.DisplayName%2A> hodnoty vlastností lze upravovat ve službě **PickBranch** návrháře záhlaví činnosti nebo v rámci **vlastnosti** okna pro každou větev.
 
-Existují dva způsoby, jak přidat <xref:System.Activities.Statements.PickBranch> aktivity do kolekce <xref:System.Activities.Statements.Pick> objektu: přetahování a vkládání **PickBranch** z návrháře **nástrojů** nebo pomocí místní nabídky z v rámci **vyberte** návrhovou plochu. Podrobnosti najdete v tématu [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tématu. Všimněte si, že pouze položky, které je možné použít uvnitř **vyberte** je Návrhář aktivity **PickBranch** návrháře aktivit.
+Existují dva způsoby, jak přidat <xref:System.Activities.Statements.PickBranch> aktivity do kolekce <xref:System.Activities.Statements.Pick> objektu: přetahování a vkládání **PickBranch** z návrháře **nástrojů** nebo pomocí místní nabídky v rámci **vyberte** návrhovou plochu. Podrobnosti najdete v tématu [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tématu. Všimněte si, že pouze položky, které je možné použít uvnitř **vyberte** je Návrhář aktivity **PickBranch** návrháře aktivit.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Vybrat vlastnosti aktivit v Návrháři postupu provádění
 

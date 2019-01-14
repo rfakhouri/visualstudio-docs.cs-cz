@@ -9,12 +9,12 @@ description: Pronajmout sadu Visual Studio Professional nebo Visual Studio Enter
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d045e407c030e02ef648c2594a7f2bfa5e97d40f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740218"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269745"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Nákup cloudových předplatných sady Visual Studio Professional a Visual Studio Enterprise
 
@@ -37,9 +37,7 @@ Každý, kdo má [přístup vlastníka a přispěvatelů](https://na01.safelinks
 
 1.  Přihlaste se k [Visual Studio Marketplace > předplatná](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Zvolte předplatné, které chcete přidat, například:
-    > [!div class="mx-imgBorder"]
-    > ![Kupte si předplatné sady Visual Studio](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
+2.  Zvolte předplatné, které chcete přidat například – Visual Studio Professional – měsíční předplatné.
 
 3.  Vyberte předplatné Azure pro účely fakturace. Pokud ho nemáte, můžete vytvořit nové předplatné Azure.
     > [!div class="mx-imgBorder"]

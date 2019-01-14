@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840639"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270190"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
@@ -216,7 +216,7 @@ Chcete-li generovat kód pro vaše kontrolní výrazy a přidejte ovládací prv
 
 Pokud chcete vybrat ovládací prvek ztratí fokus a zmizí při výběru **přidat kontrolní výrazy** nástroj z **Tvůrce programového testu UI**:
 
-V některých případech při přidání ovládacích prvků a ověřit jejich vlastnosti, budete nejspíš muset použít klávesnici. Například když zkusíte zaznamenat programový test UI používající ovládací prvek místní nabídky, seznam položek nabídky v ovládacím prvku se ztratí fokus a zmizí při pokusu o vyberte **přidat kontrolní výrazy** nástroj z **programový Test uživatelského rozhraní Tvůrce**. To je patrné na následujícím obrázku, kde místní nabídky v aplikaci Internet Explorer ztratí fokus a zmizí, pokud se pokusíte jej vybrat **přidat kontrolní výrazy** nástroj.
+V některých případech při přidání ovládacích prvků a ověřit jejich vlastnosti, budete nejspíš muset použít klávesnici. Například při pokusu o záznamu programový test UI používající ovládací prvek nabídky klikněte pravým tlačítkem na seznam položek nabídky v ovládacím prvku se ztratí fokus a zmizí při pokusu o vyberte **přidat kontrolní výrazy** nástroj z **programového uživatelského rozhraní Testování Tvůrce**. To je patrné na následujícím obrázku, kde místní nabídky v aplikaci Internet Explorer ztratí fokus a zmizí, pokud se pokusíte jej vybrat **přidat kontrolní výrazy** nástroj.
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 

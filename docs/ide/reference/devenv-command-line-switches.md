@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3e1e3b72d8b8dbf298035ab453ffb77ecc2b1c
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2c2ea1bfc4cc49378308933dffd5bc3873b25209
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227860"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269667"
 ---
 # <a name="devenv-command-line-switches"></a>Přepínače příkazového řádku nástroje devenv
 
@@ -71,10 +71,11 @@ Následující přepínače příkazového řádku zobrazí rozhraní IDE a prov
 |[/Edit](edit-devenv-exe.md)|Otevře dané soubory v běžící instanci této aplikace. Pokud neexistují žádné spuštěné instance, spustí novou instanci se zjednodušeným rozložením okna.<br /><br /> `devenv /edit File1 File2`|
 |[/ LCID nebo/l](lcid-devenv-exe.md)|Nastaví výchozí jazyk, rozhraní IDE. Pokud zadaný jazyk není součástí instalace sady Visual Studio, toto nastavení je ignorováno.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Spuštění sady Visual Studio a zaznamená veškerou aktivitu do souboru protokolu.<br /><br /> `devenv /log mylogfile.xml`|
-|[/ NoSplash](nosplash-devenv-exe.md)|Otevře rozhraní IDE bez toho, abych úvodní obrazovka.<br /><br /> `devenv /nosplash File1 File2`|
+|[/NoSplash](nosplash-devenv-exe.md)|Otevře rozhraní IDE bez toho, abych úvodní obrazovka.<br /><br /> `devenv /nosplash File1 File2`|
 |[/ Run nebo/r](run-devenv-exe.md)|Zkompiluje a spustí zadané řešení.<br /><br /> `devenv /run mysln.sln`|
-|[/ RunExit](runexit-devenv-exe.md)|Zkompiluje a spustí zadané řešení, minimalizuje integrovaného vývojového prostředí při spuštění řešení a ukončí rozhraní IDE po spuštění řešení.<br /><br /> `devenv /runexit mysln.sln`|
+|[/RunExit](runexit-devenv-exe.md)|Zkompiluje a spustí zadané řešení, minimalizuje integrovaného vývojového prostředí při spuštění řešení a ukončí rozhraní IDE po spuštění řešení.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Visual Studio spustí v nouzovém režimu. Tento přepínač načte dodané verzi balíčky třetích stran, výchozí služby a výchozí prostředí.<br /><br /> Tento přepínač nepřijímá žádné argumenty.|
+|[/UseEnv](useenv-devenv-exe.md)|Způsobí, že integrované vývojové prostředí pro účely CESTU, INCLUDE, LIBPATH a LIB proměnné prostředí kompilace jazyka C++. Tento přepínač je nainstalován se sadou **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Další informace najdete v tématu [nastavení cesty a proměnných prostředí pro sestavení příkazového řádku](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 Následující přepínače příkazového řádku se nezobrazí integrovaném vývojovém prostředí.
 

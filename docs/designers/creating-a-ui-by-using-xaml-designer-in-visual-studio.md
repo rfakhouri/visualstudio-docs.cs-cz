@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880402"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270018"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio
 
@@ -128,7 +128,7 @@ Určuje různé orientace aplikace: **Na šířku** nebo **na výšku**.
 
 Určuje zarovnání různých edge pro vaši aplikaci: **Obě**, **vlevo**, **vpravo**, nebo **žádný**.
 
-**Vysoký kontrast**
+**High Contrast**
 
 Zobrazte si náhled aplikace podle vybraného nastavení kontrastu. Toto nastavení, při nastavení na hodnotu jiné než **výchozí**, přepíše `RequestedTheme` nastavenou *App.xaml*.
 
@@ -162,7 +162,7 @@ Okno osnovy dokumentu v Návrháři XAML umožňuje provádět tyto úkoly:
 
 - Vytvářet a upravovat šablony pro prvky, které jsou ovládací prvky.
 
-- Pomocí místní nabídky pro vybrané elementy. Stejnou nabídku je také k dispozici pro vybrané elementy na návrhovou plochu.
+- V místní nabídce (kontextová nabídka) použijte pro vybrané elementy. Stejnou nabídku je také k dispozici pro vybrané elementy na návrhovou plochu.
 
 Chcete-li zobrazit **Osnova dokumentu** okna na řádku nabídek zvolte **zobrazení** > **ostatní Windows** > **Osnova dokumentu**.
 
@@ -178,7 +178,7 @@ Hlavní zobrazení v **Osnova dokumentu** okno zobrazuje hierarchii dokumentu ve
 
 Zobrazí nebo skryje prvky návrhové plochy, které odpovídají položkám v Osnova dokumentu. Použití **zobrazit/skrýt** tlačítka, které se zobrazí symbol oka, když se zobrazí, nebo stisknutím klávesy **Ctrl**+**H** skrýt elementy a **Shift** + **Ctrl**+**H** k jejich zobrazení.
 
-**Zamknout/odemknout**
+**Lock/unlock**
 
 Uzamyká nebo odemyká prvky návrhové plochy, které odpovídají položkám v Osnova dokumentu. Uzamčené elementy se nedá upravit. Použití **Zamknout/odemknout** tlačítka, které se zobrazí symbol visacího zámku nezobrazuje, když uzamčené, nebo stisknutím klávesy **Ctrl**+**L** prvkům zámek a **Shift** + **Ctrl**+**L** odemknout.
 

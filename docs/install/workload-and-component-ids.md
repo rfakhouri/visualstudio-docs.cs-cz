@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/13/2018
+ms.date: 01/11/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 84711c13270fea4e1b7202d1bd04c8acdde911fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6df4435cf19dc18e2c24e32207b9d3d9bce093a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932678"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269719"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>ID pracovního vytížení a komponenta Visual Studio 2017
 
@@ -37,7 +37,7 @@ Klikněte na názvy edition v následující tabulce se zobrazí dostupné úloh
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Profesionální vývojářské nástroje a služby pro malé týmy |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Bezplatné, plně vybavené integrované vývojové prostředí pro studenty, open source a individuální vývojáře |
 | [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interakce s Team Foundation Server a služby Azure DevOps bez vývojových nástrojů Visual Studio |
-| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Vytvářejte nativní a spravované aplikace jako WPF, WinForms a Win32 pomocí úprav kódu podle syntaxe, správy zdrojového kódu a správy pracovních položek. Zahrnuje podporu pro C#, Visual Basic a Visual C++. |
+| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Product.WDExpress | Vytvářejte nativní a spravované aplikace jako WPF, WinForms a Win32 pomocí úprav kódu podle syntaxe, správy zdrojového kódu a správy pracovních položek. Zahrnuje podporu pro C#, Visual Basic a Visual C++. |
 | [Vizuální&nbsp;Studio sestavení&nbsp;nástroje&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umožňuje sestavovat nativní a spravované aplikace založené na MSBuild bez potřeby Visual Studio IDE. Existují možnosti pro instalaci kompilátory jazyka Visual C++ a knihovny MFC, ATL a C + +/ CLI podpory. |
 | [Vizuální&nbsp;Studio testu&nbsp;agenta&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Podporuje vzdálené spouštění automatizovaných a zátěžových testů |
 | [Vizuální&nbsp;Studio testu&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Rozdělení automatizovaných testů mezi více počítačů |

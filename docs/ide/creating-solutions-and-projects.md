@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908889"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269823"
 ---
 # <a name="create-solutions-and-projects"></a>Vytváření řešení a projektů
 
@@ -129,7 +129,7 @@ Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje** > **m
 
 ### <a name="to-permanently-delete-a-solution"></a>Trvale odstranit řešení
 
-1. V **Průzkumníka řešení**, v kontextové nabídce řešení, které chcete odstranit, zvolte **otevřít složku v Průzkumníku souborů**.
+1. V **Průzkumníka řešení**, v místní nabídce (kontextová nabídka) řešení, které chcete odstranit, zvolte **otevřít složku v Průzkumníku souborů**.
 
 1. V Průzkumníku souborů přejděte o jednu úroveň výše.
 

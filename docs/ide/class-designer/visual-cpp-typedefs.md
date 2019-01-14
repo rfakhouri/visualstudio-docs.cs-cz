@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bca0dacf2fd649db91fb37756c1670af403b4e95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869187"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269402"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definice typedefs jazyka Visual C++ v Návrháři tříd
 
@@ -44,7 +44,7 @@ V **návrhář tříd**, C++ typedef má tvar typu určeného v typedef. Pokud z
 
 Vnořené TypeDef deklarován v nich může mít třídy a struktury. V **návrhář tříd**, třídy a struktury tvary můžete zobrazit vnořené TypeDef – deklarace jako vnořeným obrazcům.
 
-Definice TypeDef obrazce podpory **zobrazit jako přidružení** a **zobrazit jako přidružení kolekce** příkazy v místní nabídce.
+Definice TypeDef obrazce podpory **zobrazit jako přidružení** a **zobrazit jako přidružení kolekce** příkazy v místní nabídce (kontextová nabídka).
 
 ### <a name="class-typedef-example"></a>Příklad třídy definice typedef
 

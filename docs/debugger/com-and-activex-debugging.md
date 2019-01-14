@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820854"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269602"
 ---
 # <a name="com-and-activex-debugging"></a>Ladění modelů COM a prvků ActiveX
 Tento oddíl poskytuje tipy k ladění aplikace modelu COM a ovládací prvky ActiveX.  
@@ -42,7 +42,7 @@ Tento oddíl poskytuje tipy k ladění aplikace modelu COM a ovládací prvky Ac
  Zobrazí seznam prohlížečů a ukázkové aplikace, které mohou být užitečné při ladění aplikace modelu COM.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)  
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)  
  Obsahuje odkazy na větší části dokumentace ladění. Informace zahrnují: co je nového v ladicím programu, nastavení a příprava, zarážky, zpracování výjimek, upravit a pokračovat, ladění spravovaného kódu, ladění projektů Visual C++, ladění modelu COM a ActiveX, ladění knihoven DLL, ladění SQL a uživatele Reference k rozhraní.  
   
 ## <a name="see-also"></a>Viz také  

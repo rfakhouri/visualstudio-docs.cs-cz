@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890706"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269797"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Průvodce: Vytvoření fragmentu kódu
 Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je třeba provést je vytvořit soubor XML, vyplnit odpovídající prvky a přidejte svůj kód do něj. Můžete také přidat odkazy a náhradní parametry do vašeho kódu. Fragment kódu pro instalaci sady Visual Studio můžete přidat pomocí **Import** tlačítko **Správce fragmentů kódů** (**nástroje**  >   **Správce fragmentů kódu**).
@@ -79,7 +79,7 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
 
      *%USERPROFILE%\Documents\Visual studio 2017\Code Snippets\Visual Basic\My fragmenty kódu*
 
-6.  Otestujte fragment otevřením projektu jazyka Visual Basic a otevřete soubor s kódem. V souboru zvolte **fragmenty** > **Vložit fragment** v místní nabídce, pak **Moje fragmenty kódu**. Měli byste vidět fragment kódu s názvem **Můj fragment kódu jazyka Visual Basic**. Poklepejte na něj.
+6.  Otestujte fragment otevřením projektu jazyka Visual Basic a otevřete soubor s kódem. V souboru zvolte **fragmenty** > **Vložit fragment** v místní nabídce pak **Moje fragmenty kódu**. Měli byste vidět fragment kódu s názvem **Můj fragment kódu jazyka Visual Basic**. Poklepejte na něj.
 
     `Console.WriteLine("Hello, World!")` je vložen do souboru kódu.
 

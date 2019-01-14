@@ -16,12 +16,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5a44ffd5c524d1f7e410f203e17b647907e32d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925180"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269914"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 
@@ -206,7 +206,7 @@ Vytvořte ovládací prvky zobrazující záznamy o zákaznících přetažením
 
     - **RevisionNumber**
 
-    - **ROWGUID**
+    - **rowguid**
 
     Tato akce zabraňuje vytváření ovládacích prvků vázaných na data pro tyto uzly v dalším kroku sady Visual Studio. V tomto návodu se předpokládá, že koncový uživatel nemusí zobrazit tato data.
 
@@ -284,7 +284,7 @@ Sestavení a spuštění aplikace k ověření, že můžete zobrazit a aktualiz
 
 3. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **AdventureWorksSalesEditor** projektu.
 
-4. V místní nabídce v části **ladění**, klikněte na tlačítko **zahájit novou instanci**.
+4. V nabídce (kontextová nabídka), klikněte pravým tlačítkem v části **ladění**, klikněte na tlačítko **zahájit novou instanci**.
 
      Spuštění aplikace. Ověřte následující:
 

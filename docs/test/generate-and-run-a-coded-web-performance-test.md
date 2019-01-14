@@ -15,12 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21c4f8a7c1f8e5d5449f576740e8f901d25d9006
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837170"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269530"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generování a spuštění programového testu výkonnosti webu
 
@@ -86,7 +86,7 @@ Testy webového výkonu jsou zaznamenány procházením webové aplikace. Testy 
 ## <a name="qa"></a>FUNKCE Q &AMP; A
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>DOTAZ: Můžete spustit více než jeden test v čase?
- **ODPOVĚĎ:** Ano, pomocí místní nabídky v **Průzkumníka řešení**.
+ **ODPOVĚĎ:** Ano, použít místní (objektu context) nabídky v **Průzkumníka řešení**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>DOTAZ: By měl přidat zdroj dat, před nebo po generování kódovaného testu?
  **ODPOVĚĎ:** Je snazší pro přidání [zdroj dat](../test/add-a-data-source-to-a-web-performance-test.md) před generováním kódovaného testu, protože kód se automaticky vygeneruje za vás.
