@@ -83,7 +83,7 @@ Další informace:
 
 Kromě přímo Novinky v úloze datové vědy a analytické aplikace služby Azure poznámkových bloků a sady Azure SDK for Python jsou také užitečná pro datové vědy.
 
-Sada Azure SDK pro Python umožňuje snadno využívat a spravovat služby Micorosft Azure z aplikací běžících ve Windows, Mac a Linux. Další informace najdete v tématu [sady Azure SDK pro Python](../python/azure-sdk-for-python.md)
+Sada Azure SDK pro Python umožňuje snadno využívat a spravovat služby Microsoft Azure z aplikací běžících ve Windows, Mac a Linux. Další informace najdete v tématu [sady Azure SDK pro Python](../python/azure-sdk-for-python.md)
 
 Azure poznámkových bloků (aktuálně ve verzi preview) poskytuje Bezplatná online přístup k poznámkové bloky Jupyter, které běží v cloudu v Microsoft Azure. Součástí služby je v jazyce Python, R a ukázkové poznámkové bloky a F# vám pomůžou začít. Visit[notebooks.azure.com](https://notebooks.azure.com/).
 
