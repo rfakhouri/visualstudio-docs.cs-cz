@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820913"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227717"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>Použití samostatného kolektoru IntelliTrace
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Použití samostatného kolektoru IntelliTrace (C#, Visual Basic)
+
 **Samostatného kolektoru IntelliTrace** umožňuje shromažďovat diagnostická data IntelliTrace pro vaše aplikace na provozních serverech nebo v jiných prostředích, bez nutnosti instalace sady Visual Studio na cílovém počítači a beze změny cílové prostředí systému. Samostatný kolektor IntelliTrace funguje pro aplikace z webu služby SharePoint, WPF a Windows Forms. Po dokončení shromažďování dat, stačí kolektor odstraňte a odinstalujte ho.
 
  Sledujte nástroj IntelliTrace v akci: [Shromažďování a analýza dat IntelliTrace v produkčním prostředí pro ladění (video Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
