@@ -2,7 +2,7 @@
 title: Oprava sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak opravit instalaci sady Visual Studio 2017
-ms.date: 09/28/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585027b17fe5be2b86bc71c18bb33120666735ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5455dd413b00556bd6254fe134585f163e294b92
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896419"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315485"
 ---
 # <a name="repair-visual-studio-2017"></a>Opravte Visual Studio 2017
 
@@ -27,9 +27,14 @@ Někdy instalaci sady Visual Studio stává poškozené. Toto můžete opravit o
      Například v počítači se systémem Windows 10 Anniversary Update nebo novější, vyberte **Start**a poté přejděte k označení **V**, kde je hodnota uvedena jako **instalační program sady Visual Studio**.
 
    > [!NOTE]
-   >   V některých počítačích může instalační program sady Visual Studio uvedené pod písmenem **"M"** jako **instalační program Visual Studio**.<br/><br/> Alternativně můžete najít instalační program sady Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > V některých počítačích může instalační program sady Visual Studio uvedené pod písmenem **"M"** jako **instalační program Visual Studio**.<br/><br/> Alternativně můžete najít instalační program sady Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. Klikněte nebo klepněte sem a můžete spustit instalační program a potom vyberte **Další**a pak vyberte **opravit**.
+2. Klikněte nebo klepněte na spuštění instalačního programu, vyberte **Další**a pak vyberte **opravit**.
+
+    ![Opravte Visual Studio z instalačního programu sady Visual Studio](media/repair-visual-studio.png "opravte Visual Studio z instalačního programu sady Visual Studio")
+
+   > [!TIP]
+   > **Opravit** možnost se zobrazí pouze pro nainstalované instance sady Visual Studio. Pokud se nezobrazí **opravit** možnost, je pravděpodobné, že jste vybrali **Další** ve verzi, která je uvedena v instalačním programu sady Visual Studio jako "K dispozici" místo "Nainstalováno".
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

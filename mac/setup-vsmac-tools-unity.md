@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 9a661e3cae151e4d6199fd2a588ebd62e098de6c
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d490b4c1268beb4a5ad55263cb186d838005f718
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027325"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315524"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Instalace sady Visual Studio for Mac Tools for Unity
 
@@ -44,7 +44,7 @@ Pokud už máte Unity 5.6.1 nebo vyšší, ale nemáte Visual Studio pro Mac, Vi
 
 * Stáhněte si Visual Studio for Mac z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
 * Visual Studio for Mac Tools for Unity, se během procesu instalace automaticky nainstalují.
-* Postupujte podle pokynů [Průvodce instalací](installation.md) nápovědu k další instalaci.
+* Postupujte podle pokynů [Průvodce instalací](/visualstudio/mac/installation/?view=vsmac-2017) nápovědu k další instalaci.
 
 > [!NOTE]
 > Visual Studio for Mac Tools for Unity vyžaduje Unity verze 5.6.1 nebo vyšší. Chcete-li ověřit, že Visual Studio Tools for Unity jsou povoleny ve vaší verzi Unity, vyberte **o Unity** v nabídce Unity a hledejte text "Microsoft Visual Studio Tools for Unity povoleno" v levé dolní části dialogového okna.

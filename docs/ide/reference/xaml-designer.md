@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d93dc9cf68a70977f82f29b6e5ff1ade25f47bda
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227696"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315537"
 ---
 # <a name="xaml-designer-options-page"></a>Stránka Možnosti návrháře XAML
 
@@ -57,15 +57,15 @@ Pomocí tohoto nastavení můžete určit, jak funguje přiblížení při úpra
 |||
 |-|-|
 |**Kolečko myši**|Návrhář XAML přiblížit posunutím kolečko myši.|
-|**Ctrl + kolečko myši**|Lupa v Návrháři XAML stisknutím klávesy CTRL a kolečka myši.|
-|**ALT + myš kolečka**|Lupa v Návrháři XAML stisknutím klávesy ALT při posouvání kolečko myši.|
+|**Ctrl + kolečko myši**|Lupa v Návrháři XAML stisknutím kombinace kláves **Ctrl** klíče při posouvání kolečko myši.|
+|**ALT + myš kolečka**|Lupa v Návrháři XAML stisknutím kombinace kláves **Alt** klíče při posouvání kolečko myši.|
 
 Tato nastavení určují návrháře chování při úpravě dokumentu XAML.
 
 |||
 |-|-|
 |**Automaticky pojmenovat interaktivní prvky při vytváření**|Určuje, zda výchozí název je k dispozici pro nové interaktivní element při přidání do návrháře.|
-|**Automaticky vložit vlastnosti rozložení na vytváření elementu Automat**|Určuje, zda vlastnosti rozložení jsou k dispozici pro nový prvek při přidání do návrháře. Vlastnosti rozložení jsou ty, které mají vliv rozložení ovládacího prvku, například okraje a odsazení.|
+|**Automaticky vložit vlastnosti rozložení na vytváření elementu Automat**|Určuje, zda vlastnosti rozložení jsou k dispozici pro nový prvek při přidání do návrháře. Vlastnosti rozložení jsou ty, které mají vliv rozložení ovládacího prvku, například okraje a VerticalAlignment. Následující XAML ukazuje, jak tlačítko se vytvoří a nemusíte tato možnost aktivní:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Použít quadrant společnosti Gartner na základě rozložení**|Určuje, jestli aktuálně vybraného ovládacího prvku zarovná na nejbližším okrajem jeho nadřazeného kontejneru. Pokud toto políčko není zaškrtnuto, zarovnání ovládacího prvku změnit v průběhu migrace ani operace vytvoření.|
 |**Automaticky naplnit panel nástrojů položkami**|Určuje, zda uživatelské ovládací prvky a vlastních ovládacích prvků v aktuálním řešení se zobrazují v panelu nástrojů automaticky.|
 
@@ -75,7 +75,7 @@ Pomocí těchto možností k určení nastavení při úpravách souborů XAML p
 
 |||
 |-|-|
-|**Zvětšit pomocí**|Lupa v Návrháři XAML kolečka myši, nebo stisknutím klávesy CTRL a ALT při posouvání kolečko myši.|
+|**Zvětšit pomocí**|Lupa v Návrháři XAML kolečka myši, nebo stisknutím klávesy **Ctrl** nebo **Alt** klíče při posouvání kolečko myši.|
 |**Typ jednotky**|Určuje, zda měření v Návrháři jsou založeny na body nebo pixelů. Protože univerzálních aplikací pro Windows nepodporují body, jednotky se automaticky převedou na pixelech Pokud **body** zaškrtnuto.|
 
 ## <a name="artboard-blend-only"></a>Návrhové plochy (jenom v Blendu)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947836"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315628"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -127,7 +127,7 @@ Postupujte podle pokynů v této části vytvořit dva shodné projekty C++ s n�
     | | **Obecné** > **cílit na rozšíření** | **.pyd** |
     | | **Výchozí nastavení projektu** > **typ konfigurace** | **Dynamická knihovna (.dll)** |
     | **C/C++** > **obecné** | **Další adresáře souborů k zahrnutí** | Přidat Python *zahrnují* složky jako odpovídající vaší instalaci, například `c:\Python36\include`.  |
-    | **C/C++** > **preprocesoru** | **Definice preprocesoru** | Přidat `Py_LIMITED_API;` na začátku řetězce (středník). Tato definice omezuje některé funkce může volat z Pythonu a činí kód mezi různými verzemi Pythonu. |
+    | **C/C++** > **preprocesoru** | **Definice preprocesoru** | **CPython pouze**: Přidat `Py_LIMITED_API;` na začátku řetězce (středník). Tato definice omezuje některé funkce může volat z Pythonu a činí kód mezi různými verzemi Pythonu. Pokud pracujete s PyBind11, nepřidávejte tato definice, jinak se zobrazí chyby sestavení. |
     | **C/C++** > **generování kódu** | **Knihovna prostředí runtime** | **Vícevláknová DLL (/ MD)** (viz následující upozornění) |
     | **Linker** > **obecné** | **Další adresáře knihoven** | Přidat Python *knihovny* složku obsahující *lib* soubory podle potřeby pro vaši instalaci, například `c:\Python36\libs`. (Ujistěte se, aby odkazoval na *knihovny* složku, která obsahuje *lib* soubory, a *není* *Lib* složku, která obsahuje *.py*  souborů.) |
 
@@ -135,7 +135,7 @@ Postupujte podle pokynů v této části vytvořit dva shodné projekty C++ s n�
     > Pokud nevidíte kartu jazyka C/C++ ve vlastnostech projektu, je to, protože projekt neobsahuje žádné soubory, které identifikuje jako zdrojové soubory jazyka C/C++. K tomuto stavu může dojít, pokud vytvořte zdrojový soubor bez *.c* nebo *.cpp* rozšíření. Například pokud nechtěně zadáte `module.coo` místo `module.cpp` v dialogovém okně Nový položky dříve, pak Visual Studio vytvoří soubor, ale tento typ souboru není nastavena na "C / C + kódu," což je co aktivuje na kartě Vlastnosti C/C++. Takové misidentification zůstane tak i v případě, přejmenujte soubor s `.cpp`. Typ souboru nastavit správně, klikněte pravým tlačítkem na soubor v **Průzkumníku řešení**vyberte **vlastnosti**, nastavte **typ souboru** k **kódu C/C++**.
 
     > [!Warning]
-    > Vždycky nastavený **C/C++** > **generování kódu** > **knihovny prostředí Runtime** umožňuje **Multi-threaded DLL (/ MD)**, i pro konfiguraci ladění, protože toto nastavení je, co jsou vybaveny binární soubory Pythonu bez ladění. Pokud jste se nastavit **Multi-threaded ladit knihovnu DLL (/ MDd)** možnost, vytváření **ladění** konfigurace způsobil chybu **C1189: Není kompatibilní s Py_DEBUG Py_TRACE_REFS a Py_REF_DEBUG Py_LIMITED_API**. Kromě toho pokud odeberete `Py_LIMITED_API` aby se zabránilo chybě sestavení, Python, dojde k chybě při pokusu o import modulu. (Selhání dojde během volání knihovny DLL `PyModule_Create` jak je popsáno dále, výstupní zpráva z **Python závažná chyba: PyThreadState_Get: žádná aktuální vlákno**.)
+    > Vždycky nastavený **C/C++** > **generování kódu** > **knihovny prostředí Runtime** umožňuje **Multi-threaded DLL (/ MD)**, i pro konfiguraci ladění, protože toto nastavení je, co jsou vybaveny binární soubory Pythonu bez ladění. S CPython, pokud jste se nastavit **Multi-threaded ladit knihovnu DLL (/ MDd)** možnost, vytváření **ladění** konfigurace způsobil chybu **C1189: Není kompatibilní s Py_DEBUG Py_TRACE_REFS a Py_REF_DEBUG Py_LIMITED_API**. Kromě toho pokud odeberete `Py_LIMITED_API` (což je požadován spolu s CPython, ale ne PyBind11) aby se zabránilo chybě sestavení, Python, dojde k chybě při pokusu o import modulu. (Selhání dojde během volání knihovny DLL `PyModule_Create` jak je popsáno dále, výstupní zpráva z **Python závažná chyba: PyThreadState_Get: žádná aktuální vlákno**.)
     >
     > Možnost/MDd sloužící k sestavení binární soubory pro ladění Pythonu (například *python_d.exe*), ale že ji vyberete rozšiřující knihovny DLL stále způsobuje chybu sestavení s `Py_LIMITED_API`.
 

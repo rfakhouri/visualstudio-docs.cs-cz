@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864711"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315589"
 ---
 # <a name="code-snippets-schema-reference"></a>Referenční informace ke schématu fragmentů kódu
 
@@ -547,7 +547,7 @@ Určuje odkazy, direktivy import, deklarace a kód fragmentu kódu.
 |[Code – element](../ide/code-snippets-schema-reference.md#code-element)|Požadovaný element. Určuje kód, který chcete vložit do souboru dokumentace. Musí obsahovat přesně jeden `Code` prvek `Snippet` elementu.|
 |[Declarations element](../ide/code-snippets-schema-reference.md#declarations-element)|Volitelný element. Určuje literály a objekty tvořící části fragmentu kódu, které lze upravovat. Může být žádný nebo jeden `Declarations` prvky `Snippet` elementu.|
 |[Imports element](../ide/code-snippets-schema-reference.md#imports-element)|Volitelný element. Seskupuje jednotlivé `Import` elementy. Může být žádný nebo jeden `Imports` prvky `Snippet` elementu.|
-||Volitelný element. Seskupuje jednotlivé `Reference` elementy. Může být žádný nebo jeden `References` prvky `Snippet` elementu.|
+|[References – element](../ide/code-snippets-schema-reference.md#references-element)|Volitelný element. Seskupuje jednotlivé `Reference` elementy. Může být žádný nebo jeden `References` prvky `Snippet` elementu.|
 
 |Nadřazený element|Popis|
 | - |-----------------|

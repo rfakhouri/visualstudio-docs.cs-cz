@@ -5,29 +5,29 @@ author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59e349b1d784e68c3ef6842834d875ce5d1917bb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895675"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315550"
 ---
-# <a name="introducing-visual-studio-for-mac"></a>Představení sady Visual Studio pro Mac
+# <a name="visual-studio-for-mac"></a>Visual Studio for Mac
 
 Visual Studio for Mac je moderní, propracované prostředí IDE s mnoha funkcemi na vytvářet mobilní, desktopové a webové aplikace. Podporuje následující typy vývoje pro:
 
-* Mobilní zařízení s .NET: Android, iOS, tvOS, watchOS
-* Desktopové aplikace Mac
-* Aplikace .NET core
-* Webové aplikace ASP.NET Core
-* Hry Unity pro různé platformy
+- Mobilní aplikace s .NET: Android, iOS, tvOS, watchOS
+- Desktopové aplikace Mac
+- Aplikace .NET core
+- Webové aplikace ASP.NET Core
+- Hry Unity pro různé platformy
 
 Zahrnuje funkce, jako jsou bohaté editoru, ladění, platformu nativní integrace se systémem iOS, MacOS a Androidem a integrované správy zdrojového kódu.
 
 Tento článek zjišťování různých oddílů sady Visual Studio pro Mac a nabízí funkce, které usnadňují výkonný nástroj pro vytváření multiplatformních aplikací.
 
 > [!TIP]
-> 2019 Visual Studio pro Mac ve verzi preview je teď k dispozici pro testování. Postupujte podle těchto [pokyny k instalaci](install-preview.md) a podívejte se [prohlídka integrovaného vývojového prostředí](ide-tour.md).
+> **2019 Visual Studio pro Mac ve verzi preview** je nyní k dispozici pro testování. Postupujte podle těchto [pokyny k instalaci](/visualstudio/mac/installation/?view=vsmac-2019) a podívejte se [prohlídka integrovaného vývojového prostředí. 2019](/visualstudio/mac/ide-tour/?view=vsmac-2019).
 
 ## <a name="installation"></a>Instalace
 
@@ -55,16 +55,16 @@ Pro spouštění projektů .NET Core, by měla stáhnout a nainstalovat sadu .NE
 
 Podpora .NET Core zahrnuje:
 
-* C# a F# IntelliSense
-* Šablony projektu .NET Core pro konzolu, knihovnu a webové aplikace
-* Úplnou podporu ladění, včetně zarážek, zásobníku volání, okna kukátka a dalších funkcí
-* Odkazy na balíčky NuGet a obnovení založené na MSBuildu
-* Integrovaná podpora pro spouštění a ladění testů pomocí testovací platforma nástroje Visual Studio, která je součástí sady .NET Core SDK testování částí.
-* Migrace ze starého formátu project.json.
+- C# a F# IntelliSense
+- Šablony projektu .NET Core pro konzolu, knihovnu a webové aplikace
+- Úplnou podporu ladění, včetně zarážek, zásobníku volání, okna kukátka a dalších funkcí
+- Odkazy na balíčky NuGet a obnovení založené na MSBuildu
+- Integrovaná podpora pro spouštění a ladění testů pomocí testovací platforma nástroje Visual Studio, která je součástí sady .NET Core SDK testování částí.
+- Migrace ze starého formátu project.json.
 
 Abyste mohli začít, podívejte se na webové aplikace ASP.NET Core [praktických cvičení](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
-## <a name="xamarin"></a>Xamarin
+## <a name="xamarin-mobile-app-development"></a>Vývoj mobilních aplikací pro Xamarin
 
 Prvotřídní podpora [Xamarinu](https://developer.xamarin.com/) umožňuje vývoj propracovaných nativních možností pro Android, macOS, iOS, tvOS a watchOS. Multiplatformní aplikace Xamarin.Forms usnadňují sdílení kódu uživatelského rozhraní založeného na XAML mezi Androidem, iOSem a macOSem bez omezení přístupu k nativním funkcím.
 
@@ -121,8 +121,8 @@ Další informace najdete v tématu [Xamarin Inspector](https://developer.xamari
 
 ## <a name="next-steps"></a>Další kroky
 
-* **Získat ukázky** – Chcete-li získat přehled mnoha hlavní funkce v sadě Visual Studio pro Mac, najdete v sadě Visual Studio pro Mac [prohlídka integrovaného vývojového prostředí](ide-tour.md).
-* **Nastavit** – Další informace o tom, jak stáhnout a nainstalovat sadu Visual Studio, najdete v článku [instalace](installation.md) průvodce.
-* **Kurzy Xamarin** – Další informace o tom, jak vývoj kódu s využitím kódu Xamarin, přejděte na Xamarin [středisko pro vývojáře](https://developer.xamarin.com).
-* **Videa** – Chcete-li další informace o dalších funkcích a aspekty Visual Studio pro Mac, podívejte se na videa [Xamarin University](https://university.xamarin.com) webu.
-* **Praktická cvičení** – Pokud chcete začít pracovat s různými sadami funkcí zahrnuté v sadě Visual Studio pro Mac, podívejte se [praktických cvičení](https://github.com/Microsoft/vs4mac-labs).
+- **Získat ukázky** – Chcete-li získat přehled mnoha hlavní funkce v sadě Visual Studio pro Mac, najdete v sadě Visual Studio pro Mac [prohlídka integrovaného vývojového prostředí](/visualstudio/mac/ide-tour/).
+- **Nastavit** – Další informace o tom, jak stáhnout a nainstalovat Visual Studio 2017 pro Mac, najdete v článku [instalace](/visualstudio/mac/installation/?view=vsmac-2017) průvodce.
+- **Kurzy Xamarin** – Další informace o tom, jak vývoj kódu s využitím kódu Xamarin, přejděte na Xamarin [středisko pro vývojáře](https://developer.xamarin.com).
+- **Videa** – Chcete-li další informace o dalších funkcích a aspekty Visual Studio pro Mac, podívejte se na videa [Xamarin University](https://university.xamarin.com) webu.
+- **Praktická cvičení** – Pokud chcete začít pracovat s různými sadami funkcí zahrnuté v sadě Visual Studio pro Mac, podívejte se [praktických cvičení](https://github.com/Microsoft/vs4mac-labs).

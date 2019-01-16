@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f01d9d35f8b2c122fb61f4fd9b3a8a22090b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 934615be23ebb025740521d35e31fee9f0a6ec47
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918761"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315576"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 V následující tabulce je často používané seznamy vlastností, které jsou definovány v souborech projektu sady Visual Studio nebo součástí *.targets* soubory, které poskytuje nástroj MSBuild.  
@@ -39,10 +39,10 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | ALToolPath | Cesta kde *AL.exe* najdete. Tato vlastnost přepíše aktuální verzi *AL.exe* povolit používání jiné verze. |
 | ApplicationIcon | *.Ico* soubor ikony pro předání kompilátoru k vložení v podobě ikony Win32. Vlastnost je ekvivalentní `/win32icon` přepínač kompilátoru. |
 | ApplicationManifest | Určuje cestu k souboru, který se používá ke generování manifestu informace externí řízení uživatelských účtů (UAC). Platí pouze pro projekty Visual Studio, které jsou zacílené [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].<br /><br /> Ve většině případů je manifest vložený. Nicméně pokud použijete COM bez registrace nebo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení a manifest může být externí soubor, který je nainstalován společně s vaším sestavením aplikace. Další informace viz vlastnost NoWin32Manifest v tomto tématu. |
-| Neexistence souboru AssemblyOriginatorKeyFile | Určuje soubor, který se používá k podepsání sestavení (*.snk* nebo *.pfx*) a který je předán [resolvekeysource – úloha](../msbuild/resolvekeysource-task.md) k vygenerování skutečného klíče, který se používá k podepsání sestavení. |
+| AssemblyOriginatorKeyFile | Určuje soubor, který se používá k podepsání sestavení (*.snk* nebo *.pfx*) a který je předán [resolvekeysource – úloha](../msbuild/resolvekeysource-task.md) k vygenerování skutečného klíče, který se používá k podepsání sestavení. |
 | AssemblySearchPaths | Seznam umístění pro hledání sestavení referenční sestavení řešení. Pořadí, ve kterém se cesty zobrazují v tomto seznamu má smysl, protože výše uvedené cesty má přednost před pozdějšími položkami. |
 | AssemblyName | Název finálního výstupního sestavení po sestavení projektu. |
-| Vlastnost BaseAddress | Určuje základní adresu hlavního výstupního sestavení. Tato vlastnost je ekvivalentní `/baseaddress` přepínač kompilátoru. |
+| BaseAddress | Určuje základní adresu hlavního výstupního sestavení. Tato vlastnost je ekvivalentní `/baseaddress` přepínač kompilátoru. |
 | BaseOutputPath | Specifikuje základní cestu pro výstupní soubor. Pokud je nastavena, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] použije `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Příklad syntaxe: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BaseIntermediateOutputPath | Složky nejvyšší úrovně, kde jsou vytvořeny všechny složky zprostředkujících výstupů specifické konfigurace. Výchozí hodnota je `obj\`. Následující kód je příklad: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
 | BuildInParallel | Logická hodnota, která označuje, zda odkazy na projekt jsou vytvořeny nebo vyčištěny paralelně při více procesů [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se používá. Výchozí hodnota je `true`, což znamená, že projekty budou vytvořeny paralelně, pokud systém obsahuje více jader nebo procesorů. |
@@ -83,11 +83,13 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | OptionInfer | Logická hodnota, která pokud je nastavena na `true`, povolí odvozování typů proměnných. Tato vlastnost je ekvivalentní `/optioninfer` přepínač kompilátoru. |
 | OptionStrict | Logická hodnota, která pokud je nastavena na `true`, způsobí, že úkol sestavení vynutí sémantiku přísného typu pro omezení převodů implicitních typů. Tato vlastnost je ekvivalentní `/optionstrict` přepnout z *vbc.exe* kompilátoru. |
 | OutputPath | Určuje cestu k výstupnímu adresáři relativně vzhledem k adresáři projektu, například *bin\Debug*. |
-| Element OutputType | Určuje formát výstupního souboru. Tento parametr může mít jednu z následujících hodnot:<br /><br /> -Knihovny. Vytvoří knihovnu kódu. (Výchozí hodnota.)<br />-Exe. Vytvoří konzolovou aplikaci.<br />-Module. Vytvoří modul.<br />-Winexe. Vytvoří program pro systém Windows.<br /><br /> Tato vlastnost je ekvivalentní `/target` přepnout z *vbc.exe* kompilátoru. |
+| OutputType | Určuje formát výstupního souboru. Tento parametr může mít jednu z následujících hodnot:<br /><br /> -Knihovny. Vytvoří knihovnu kódu. (Výchozí hodnota.)<br />-Exe. Vytvoří konzolovou aplikaci.<br />-Module. Vytvoří modul.<br />-Winexe. Vytvoří program pro systém Windows.<br /><br /> Tato vlastnost je ekvivalentní `/target` přepnout z *vbc.exe* kompilátoru. |
 | OverwriteReadOnlyFiles | Logická hodnota, která určuje, zda chcete povolit sestavení přepsat soubory jen pro čtení nebo vyvolat chybu. |
+| PathMap | Určuje způsob mapování fyzické cesty do zdrojové cesty názvy výstupu kompilátorem. Tato vlastnost je ekvivalentní `/pathmap` přepnout z *csc.exe* kompilátoru. |
 | PdbFile | Název souboru *PDB* soubor, který emitujete. Tato vlastnost je ekvivalentní `/pdb` přepnout z *csc.exe* kompilátoru. |
 | Platforma | Operační systém, který vytváříte. Platné hodnoty jsou "Any CPU", "x 86" a "x64". |
 | ProduceReferenceAssembly | Logická hodnota, která pokud je nastavena na `true` umožňuje produkce [odkazovat na sestavení](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) pro aktuální sestavení. `Deterministic` by měl být `true` při použití této funkce. Tato vlastnost odpovídá `/refout` přepnout z *vbc.exe* a *csc.exe* kompilátory. |
+| ProduceOnlyReferenceAssembly | Logická hodnota, která dává pokyn kompilátoru generovat referenční sestavení, spíše než zkompilovaný kód. Nelze použít ve spojení s `ProduceReferenceAssembly`.  Tato vlastnost odpovídá `/refonly` přepnout z *vbc.exe* a *csc.exe* kompilátory. |
 | RemoveIntegerChecks | Logická hodnota určující, zda chcete zakázat chyby kontroly přetečení celých čísel. Výchozí hodnota je `false`. Tato vlastnost je ekvivalentní `/removeintchecks` přepnout z *vbc.exe* kompilátoru. |
 | SGenUseProxyTypes | Logická hodnota, která určuje, zda typy proxy měly být generovány pomocí *SGen.exe*.<br /><br /> Cíl SGen používá tuto vlastnost pro nastavení příznaku UseProxyTypes. Výchozí hodnota této vlastnosti na hodnotu true a neexistuje žádné uživatelské rozhraní pro toto nastavení změnit. Generovat sestavení serializace pro typy bez, přidejte do souboru projektu tuto vlastnost a nastavte ji na hodnotu false před importem *cílů Microsoft.Common.Targets* nebo *webových*. |
 | SGenToolPath | Volitelný nástroj pro cestu, která označuje, kde můžete získat *SGen.exe* při aktuální verzi *SGen.exe* je přepsána. |
@@ -115,7 +117,7 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | Satellite_Win32Resource | Vloží prostředek systému Win32 (*.res* soubor) do satelitního sestavení. |
 | SubsystemVersion | Určuje minimální verzi podsystému, který může používat vygenerovaný spustitelný soubor. Tato vlastnost je ekvivalentní `/subsystemversion` přepínač kompilátoru. Informace o výchozí hodnota této vlastnosti naleznete v tématu [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) nebo [/subsystemversion (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Verze .NET Compact Framework, která je nutná ke spuštění aplikace, kterou vytváříte. Určení tohoto umožňuje odkazovat na určitá sestavení rozhraní, které nelze odkazovat, jinak. |
-| Parametr targetFrameworkVersion | Verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , který se vyžaduje pro spuštění aplikace, kterou vytváříte. Určení tohoto umožňuje odkazovat na určitá sestavení rozhraní, které nelze odkazovat, jinak. |
+| TargetFrameworkVersion | Verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , který se vyžaduje pro spuštění aplikace, kterou vytváříte. Určení tohoto umožňuje odkazovat na určitá sestavení rozhraní, které nelze odkazovat, jinak. |
 | TreatWarningsAsErrors | Parametr logické hodnoty, pokud `true`, způsobí, že všechna upozornění budou považována za chyby. Tento parametr je ekvivalentní `/nowarn` přepínač kompilátoru. |
 | UseHostCompilerIfAvailable | Parametr logické hodnoty, pokud `true`, způsobí, že úkol sestavení použije objekt vnitroprocesového kompilátoru, pokud je k dispozici. Tento parametr je používán pouze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | Utf8Output | Parametr logické hodnoty, pokud `true`, protokoluje výstup kompilátoru pomocí kódování UTF-8. Tento parametr je ekvivalentní `/utf8Output` přepínač kompilátoru. |

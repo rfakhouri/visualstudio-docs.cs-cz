@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a834a5b4b1a380b23ad9edfda9ea42f40e20469
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7bff89e5166dc57b481fc917dc3655b1cbb62ff
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839518"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315615"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardní a vlastní konfigurace sady nástrojů
 Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které můžete použít k sestavení projektu aplikace. Nástroj MSBuild obsahuje standardní sadu nástrojů, ale můžete také vytvořit vlastní sady nástrojů. Informace o tom, jak určit sadu nástrojů najdete v tématu [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -24,11 +24,11 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
 ## <a name="standard-toolset-configurations"></a>Standardní konfigurace sady nástrojů  
  15.0 nástroje MSBuild zahrnuje následující standardní sady nástrojů:  
   
-|Atribut ToolsVersion|Cesta nástrojů (jak je uvedeno ve vlastnosti sestavení MSBuildToolsPath nebo MSBuildBinPath)|  
+|ToolsVersion|Cesta nástrojů (jak je uvedeno ve vlastnosti sestavení MSBuildToolsPath nebo MSBuildBinPath)|  
 |------------------| - |  
-|2.0|*\<Windows instalační_cesta > \Microsoft.Net\Framework\v2.0.50727\\*|  
-|3.5|*\<Windows instalační_cesta > \Microsoft.NET\Framework\v3.5\\*|  
-|4.0|*\<Windows instalační_cesta > \Microsoft.NET\Framework\v4.0.30319\\*|  
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|  
+|3.5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|  
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|  
 |15.0|*\<Visual Studio instalační_cesta > \MSBuild\15.0\bin*|  
   
  `ToolsVersion` Hodnota určuje, které používají sady nástrojů projektu, který generuje sada Visual Studio. V sadě Visual Studio 2017, výchozí hodnota je "15.0" (nezáleží na tom, jaké verze zadaná v souboru projektu), ale tento atribut lze přepsat pomocí **/toolsversion** přepínač příkazového řádku. Informace o tento atribut a další způsoby, jak určit `ToolsVersion`, naleznete v tématu [nastavení parametru ToolsVersion přepsání](../msbuild/overriding-toolsversion-settings.md).  
@@ -73,7 +73,7 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
+       Microsoft.Build, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  
