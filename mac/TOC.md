@@ -1,7 +1,7 @@
-# [Představení Visual Studia pro Mac](index.md)
-# [Prohlídka integrovaného vývojového prostředí (IDE)](ide-tour.md)
+# [Visual Studio pro Mac](index.md)
+# [Prohlídka integrovaného vývojového prostředí (IDE)](/visualstudio/mac/ide-tour/)
 
-# [Instalace](installation.md)
+# [Instalace](/visualstudio/mac/installation/)
 ## [Instalace a používání za bránou firewall nebo proxy serverem](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalace verze Preview](install-preview.md)
 ## [Aktualizace](update.md)
@@ -65,6 +65,7 @@
 ### [Používání nástrojů Unity](using-vsmac-tools-unity.md)
 ### [Používání .NET 4.x v Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Protokol Změn](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Mobilní aplikace s Xamarinem](/xamarin/)
 
 # [Usnadnění](accessibility.md)
 
