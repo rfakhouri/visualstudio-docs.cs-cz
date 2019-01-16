@@ -10,10 +10,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54154373"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
@@ -74,7 +74,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   
  Přesuňte ukazatel na pruh zobrazíte která volání draw událost odpovídá panelu. Že vybereme pruh způsobí, že seznam událostí k synchronizaci na tuto událost.  
   
-#### <a name="table"></a>Table  
+#### <a name="table"></a>Tabulka  
  Všechna čísla pod na časové ose tabulce relativní výkon jednotlivých vykreslování variant pro každé volání draw s ohledem na vaše aplikace výchozí vykreslení. Každý sloupec zobrazuje hodnotu typu variant různých vykreslování a každý řádek představuje jinou draw volání, který je identifikován v sloupci nejvíce vlevo. Odsud můžete použít odkaz na událost v okně seznam událostí grafiky.  
   
  ![V souhrnu tabulce jsou uvedeny různé varianty. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51794592"
 ---
 # <a name="historical-debugging"></a>Historické ladění
@@ -36,7 +36,7 @@ Historické ladění je režim ladění, který závisí na informace shromážd
  Můžete přesouvat kolem ve vaší aplikaci a zkontrolujte jeho stav (zásobník volání a místní proměnné) bez nutnosti nastavovat zarážky, restart ladění pomocí IntelliTrace a historické ladění a testovací kroky. To vám ušetří spoustu času, zejména při chyby se nachází hlouběji ve scénáři testu, která trvá dlouhou dobu spuštění.  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>Jak můžu začít používat historické ladění?  
- Nástroj IntelliTrace je ve výchozím. Všechno, co musíte udělat, je rozhodnout, které události nebo volání funkce jsou vás zajímají. Další informace o definování co chcete hledat, naleznete v tématu [funkce IntelliTrace](../debugger/intellitrace-features.md). Krok za krokem účet ladění pomocí nástroje IntelliTrace naleznete v tématu [návod: použití IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+ Nástroj IntelliTrace je ve výchozím. Všechno, co musíte udělat, je rozhodnout, které události nebo volání funkce jsou vás zajímají. Další informace o definování co chcete hledat, naleznete v tématu [funkce IntelliTrace](../debugger/intellitrace-features.md). Krok za krokem účet ladění pomocí nástroje IntelliTrace naleznete v tématu [názorný postup: Pomocí IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>Pohyb v kódu s historické ladění  
  Začněme jednoduchý program, který obsahuje chybu. V aplikaci konzoly C# přidejte následující kód:  

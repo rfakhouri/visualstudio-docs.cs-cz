@@ -27,13 +27,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 20a6d85fbdc7fad9077a19704b6c448c73dae787
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51739596"
 ---
-# <a name="error-aspnet-not-installed"></a>Chyba: Prostředí ASP.NET není nainstalováno.
+# <a name="error-aspnet-not-installed"></a>Chyba: Prostředí ASP.NET není nainstalováno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 K této chybě dochází při [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] není správně nainstalován v počítači, který se pokoušíte ladit. To může znamenat, že [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nebyl nikdy nainstalován nebo které [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] byla nainstalovaná jako první a služby IIS byl nainstalován později.  

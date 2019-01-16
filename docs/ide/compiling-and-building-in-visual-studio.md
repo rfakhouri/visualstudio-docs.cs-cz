@@ -14,10 +14,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53062590"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilace a sestavení v sadě Visual Studio
@@ -26,7 +26,7 @@ Při sestavování zdrojového kódu se jádro sestavení vytvoří sestavení a
 
 Podle častým sestavováním kódu, můžete rychle identifikovat chyby kompilace, jako je nesprávná syntaxe, překlepy v klíčových slovech a neshody typu. Můžete také zjistit a opravit chyby za běhu, jako jsou logické a sémantické chyby, sestavováním a spouštěním ladicí verze kódu.
 
-Úspěšné sestavení ověří, že zdrojový kód aplikace obsahuje správnou syntaxi a, umí přeložit všechny statické odkazy na knihovny, sestavení a další komponenty. Je vytvořen spustitelný soubor aplikace, které můžete testovat pro správné fungování v obou [ladicí prostředí](../debugger/index.md) a s celou řadou ručních a automatizovaných testů, které [ověření kvality kódu](../test/improve-code-quality.md). Jakmile aplikace byly plně testovány, můžete kompilaci verze vydání k nasazení na vaše zákazníky. Úvod k tomuto procesu najdete v tématu [názorný postup: Tvorba aplikace](../ide/walkthrough-building-an-application.md).
+Úspěšné sestavení ověří, že zdrojový kód aplikace obsahuje správnou syntaxi a, umí přeložit všechny statické odkazy na knihovny, sestavení a další komponenty. Je vytvořen spustitelný soubor aplikace, které můžete testovat pro správné fungování v obou [ladicí prostředí](../debugger/index.md) a s celou řadou ručních a automatizovaných testů, které [ověření kvality kódu](../test/improve-code-quality.md). Jakmile aplikace byly plně testovány, můžete kompilaci verze vydání k nasazení na vaše zákazníky. Úvod k tomuto procesu najdete v tématu [názorný postup: Sestavení aplikace](../ide/walkthrough-building-an-application.md).
 
 Pro vytvoření aplikace můžete použít některý z následujících metod: integrované vývojové prostředí sady Visual Studio, nástroje příkazového řádku MSBuild a kanály Azure:
 
@@ -45,7 +45,7 @@ Dokumentace v této části platí další podrobnosti o procesu sestavení na z
 
 Při vytváření projektu sady Visual Studio vytvoří výchozí konfigurace sestavení pro projekt a řešení, které obsahuje projekt.  Tyto konfigurace definovat, jak jsou vytvořené a nasazené řešení a projekty. Konfigurace projektu zejména jsou jedinečné pro cílovou platformu (například Windows nebo Linux) a typ (například ladění nebo vydání) sestavení. Můžete upravit tyto konfigurace však a můžete také vytvořit vlastní konfigurace, podle potřeby.
 
-První Úvod do vytváření integrovaného vývojového prostředí, najdete v části [názorný postup: Tvorba aplikace](walkthrough-building-an-application.md).
+První Úvod do vytváření integrovaného vývojového prostředí, najdete v části [názorný postup: Sestavení aplikace](walkthrough-building-an-application.md).
 
 Dál si představíme [sestavování a čištění projektů a řešení v sadě Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) Další informace o přizpůsobení různé aspekty můžete provést proces. Vlastní nastavení zahrnují [změna výstupního adresáře](how-to-change-the-build-output-directory.md), [určení vlastních událostí sestavení](specifying-custom-build-events-in-visual-studio.md), [správu závislostí projektu](how-to-create-and-remove-project-dependencies.md), [Správa protokol sestavení soubory](how-to-view-save-and-configure-build-log-files.md), a [potlačení upozornění kompilátoru](how-to-suppress-compiler-warnings.md).
 

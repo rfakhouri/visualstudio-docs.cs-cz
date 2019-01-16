@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51764075"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
@@ -47,8 +47,8 @@ Po instalaci, ujistěte se, že vzdálený ladicí program je spuštěn na cílo
 1. Vytvoření nové aplikace MVC ASP.NET. (**Soubor / nový / Project**a pak vyberte **Visual C# / Web / webové aplikace ASP.NET** . V **ASP.NET 4.5.2** části šablony vyberte **MVC**. Ujistěte se, že **hostitel v cloudu** není vybraná v části Azure. Pojmenujte projekt **MyMVC**.)
 1. Otevření souboru HomeController.cs a nastavte zarážku `About()` metody.
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **publikovat**.
-1. Pro **vybrat cíl publikování**vyberte **vlastní** a název profilu **MyMVC**. Klikněte na tlačítko **Další**.
-1. Na **připojení** kartu, nastavte **metodu publikování** pole **systému souborů** a **cílové umístění** pole do místního adresáře. Klikněte na tlačítko **Další**.
+1. Pro **vybrat cíl publikování**vyberte **vlastní** a název profilu **MyMVC**. Klikněte na **Další**.
+1. Na **připojení** kartu, nastavte **metodu publikování** pole **systému souborů** a **cílové umístění** pole do místního adresáře. Klikněte na **Další**.
 
     ![RemoteDBG_Publish_Local](../debugger/media/remotedbg-publish-local.png "RemoteDBG_Publish_Local")
 1. Nastavení konfigurace **ladění**. Klikněte na tlačítko **publikovat**.
@@ -64,7 +64,7 @@ Po instalaci, ujistěte se, že vzdálený ladicí program je spuštěn na cílo
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    V systému Windows Server 2008 R2, nainstalujte místo toho pomocí tohoto příkazu ASP.NET 4: **\v4.0.30319\aspnet_regiis.exe C:\Windows\Microsoft.NET\Framework (64) – prostředí ir**
+    V systému Windows Server 2008 R2 nainstalujte technologii ASP.NET 4 místo použití tohoto příkazu:   **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. Zkopírujte adresář projektu ASP.NET ze sady Visual Studio do místního adresáře (který nazveme **C:\Publish**) na počítač s Windows serverem. Můžete zkopírovat projektu ručně, pomocí příkazu Xcopy, nasazení webu, Robocopy, Powershellu nebo jiné možnosti.
 
     > [!CAUTION]

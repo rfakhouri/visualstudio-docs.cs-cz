@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768510"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Ukládání a export výkonu nástrojů pro Data
@@ -28,7 +28,7 @@ ms.locfileid: "51768510"
 
 Toto téma popisuje, jak uložit a exportovat datových souborů výkonu.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Postupy: uložit analyzovanou sestavu do souborů datových souborů výkonu  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Jak: Uložit analyzovanou sestavu do souborů datových souborů výkonu  
  Můžete uložit zobrazení filtrované nebo nefiltrované profilování (.vsp) datové soubory jako soubory analyzované sestav (.vsps). Soubor analyzovanou sestavu lze zobrazit v okně zobrazení sestava a je výrazně menší než původní soubor .vsp. Filtr však nelze použít pro data souboru .vsps. Můžete vytvořit soubor analyzovanou sestavu z prohlížeče výkonu bez nutnosti otevřít soubor v integrovaném vývojovém prostředí (IDE), nebo můžete otevřít a filtrovat souboru .vsp a uložte výsledky.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Chcete-li uložit zprávu o analýze výkonu z prohlížeč výkonu  
@@ -51,7 +51,7 @@ Toto téma popisuje, jak uložit a exportovat datových souborů výkonu.
   
 5.  Klikněte na tlačítko **uložit.**  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Postupy: nástrojů pro profilaci Export sestavy do. XML nebo. Soubor CSV  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Postupy: Nástroje pro profilaci export sestavy do. XML nebo. Soubor CSV  
  Jedno nebo více zobrazení sestavy můžete exportovat ze souboru .vsp nebo .vsps datového souboru profilování jako buď čárkami oddělený nebo soubor XML. Můžete filtrovat data v okně zobrazení sestava před exportem nebo mohou exportovat sestavy zobrazení celého datového souboru z **prohlížeč výkonu** okna.  
   
 > [!NOTE]

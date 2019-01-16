@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49827581"
 ---
 # <a name="trusted-application-deployment-overview"></a>Přehled nasazení důvěryhodných aplikací
@@ -88,17 +88,17 @@ Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../includ
 -   CertMgr.exe, která je součástí aplikace Internet Explorer a proto existuje ve Windows 98 a všech novějších verzích. Další informace najdete v tématu [Certmgr.exe (nástroj Certificate Manager)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Vytvoření aplikace ClickOnce  
- A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace je [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] klientská aplikace spolu se soubory manifestu, které popisují aplikace a zadat parametry instalace. Můžete zapnout program do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace s použitím **publikovat** v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Alternativně můžete generovat všechny soubory potřebné pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení pomocí nástrojů, které jsou součástí [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Podrobné pokyny o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, najdete v článku [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace je [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] klientská aplikace spolu se soubory manifestu, které popisují aplikace a zadat parametry instalace. Můžete zapnout program do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace s použitím **publikovat** v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Alternativně můžete generovat všechny soubory potřebné pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení pomocí nástrojů, které jsou součástí [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Podrobné pokyny o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, najdete v článku [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
  Nasazení důvěryhodných aplikací je specifické pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]a jde použít jenom s [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikací.  
   
 ### <a name="sign-the-deployment"></a>Podepsat nasazení  
- Po obdržení vašeho certifikátu, musíte použít ho k podepsání vašeho nasazení. Pokud nasazujete aplikaci s použitím [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Průvodce publikováním, průvodce automaticky vytvoří testovací certifikát za vás v případě špatných certifikát sami. Můžete také použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna Návrháře projektu, ale k poskytnutí certifikátu Certifikační autoritou.  Viz také [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) nebo [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
+ Po obdržení vašeho certifikátu, musíte použít ho k podepsání vašeho nasazení. Pokud nasazujete aplikaci s použitím [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Průvodce publikováním, průvodce automaticky vytvoří testovací certifikát za vás v případě špatných certifikát sami. Můžete také použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna Návrháře projektu, ale k poskytnutí certifikátu Certifikační autoritou.  Viz také [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) nebo [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
   
 > [!CAUTION]
 >  Nedoporučujeme, nasadit aplikace pomocí testovacího certifikátu.  
   
- Můžete také podepsání aplikace pomocí nástroje Mage.exe nebo MageUI.exe SDK. Další informace najdete v tématu [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Úplný seznam možností příkazového řádku související podepisování nasazení najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+ Můžete také podepsání aplikace pomocí nástroje Mage.exe nebo MageUI.exe SDK. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Úplný seznam možností příkazového řádku související podepisování nasazení najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ### <a name="publish-the-application"></a>Publikování aplikace  
  Poté, co jste se zaregistrovali vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesty, aplikace je připravena k publikování do umístění instalace. Umístění instalace může být webový server, sdílené složky nebo na místní disk. Když klient přistupuje k manifestu nasazení poprvé, musíte zvolit správce vztahu důvěryhodnosti, zda [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace získala autority nebo nespouštět na vyšší úrovni důvěryhodnosti nainstalovaného důvěryhodné vydavatele. Správce vztahu důvěryhodnosti je tato volba porovnáním certifikát používaný k podepisování nasazení pomocí certifikátů uložených v důvěryhodným vydavatelem klienta úložiště. Pokud správce vztahu důvěryhodnosti najde shodu, aplikace bude spuštěna s vysokou důvěryhodností.  

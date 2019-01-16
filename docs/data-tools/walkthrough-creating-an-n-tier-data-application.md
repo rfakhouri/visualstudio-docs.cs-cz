@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53924264"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Průvodce: Vytvoření vícevrstvé datové aplikace
@@ -155,7 +155,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 5. Na **sestavení** nabídce vyberte možnost **sestavit řešení**.
 
-   Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (`DataAccessTier`) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnosti (`DataEntityTier`) obsahuje typové datové sady: *NorthwindDataSet.Dataset.Designer.vb* (nebo *NorthwindDataSet.Dataset.Designer.cs*).
+   Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (`DataAccessTier`) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnosti (`DataEntityTier`) obsahuje typové datové sady: *NorthwindDataSet.Dataset.Designer.vb* (or *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady musí ručně přesunout do projektu datové sady.

@@ -27,10 +27,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49910924"
 ---
 # <a name="creating-bootstrapper-packages"></a>Vytváření balíčků zaváděcího nástroje
@@ -41,7 +41,7 @@ Instalační program je obecný instalační program, který můžete konfigurov
  Zaváděcí nástroj nejprve zjistí, zda některé z požadavků jsou již nainstalovány. Pokud požadavky nejsou nainstalovány, nejprve zaváděcí nástroj zobrazí licenční podmínky. Za druhé po koncový uživatel přijetí licenčních smluv, začne instalace požadavků. Jinak pokud jsou zjištěny všechny požadavky, zaváděcí nástroj pouze spustí instalační program aplikace.  
   
 ## <a name="creating-custom-packages"></a>Vytvoření vlastních balíčků  
- Můžete generovat manifesty pomocí editoru jazyka XML v sadě Visual Studio. Další informace najdete v tématu [jak: vytvořit balíček manifestu](../deployment/how-to-create-a-package-manifest.md) a [postupy: vytvoření a Manifest produktu](../deployment/how-to-create-a-product-manifest.md). Příklad vytvoření balíčku zaváděcího nástroje naleznete v tématu [návod: vytvoření vlastního Bootstrapperu k zobrazení výzvy o ochraně osobních údajů](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Můžete generovat manifesty pomocí editoru jazyka XML v sadě Visual Studio. Další informace najdete v tématu [jak: Vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md) a [jak: Vytvoření manifestu produktu](../deployment/how-to-create-a-product-manifest.md). Příklad vytvoření balíčku zaváděcího nástroje naleznete v tématu [názorný postup: Vytvoření vlastního zaváděcího nástroje k narušení důvěrnosti osobních údajů se zobrazí výzva](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Vytvoření balíčku zaváděcího nástroje musíte zadat redistribuovatelný balíček ve formě souboru EXE nebo MSI do generátoru manifestu zaváděcího nástroje. Generátor manifestu zaváděcího nástroje potom vytvoří následující soubory:  
   
@@ -75,7 +75,7 @@ Instalační program je obecný instalační program, který můžete konfigurov
   
   `package.xml`  
   
-  Nakonec zkopírujte redistribuovatelné soubory do umístění složky zaváděcího nástroje. Další informace najdete v tématu [postupy: vytvoření balíčku zaváděcího nástroje lokalizované](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Nakonec zkopírujte redistribuovatelné soubory do umístění složky zaváděcího nástroje. Další informace najdete v tématu [jak: Vytvoření lokalizovaného balíčku Bootstrapperu](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -108,7 +108,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |Vlastnost|Popis|  
 |--------------|-----------------|  
 |ApplicationName|Název aplikace.|  
-|Vlastnost ProcessorArchitecture|Procesor a bits slova spustitelný soubor zaměřený platformy. Následující hodnoty:<br /><br /> -Intel<br />-IA64<br />– AMD64|  
+|ProcessorArchitecture|Procesor a bits slova spustitelný soubor zaměřený platformy. Následující hodnoty:<br /><br /> -Intel<br />-IA64<br />– AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Číslo verze pro operační systémy Microsoft Windows 95, Windows 98 nebo Windows ME. Syntaxe verze je Major.Minor.ServicePack.|  
 |[VersionNT](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|Číslo verze pro operační systémy Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 nebo Windows 7. Syntaxe verze je Major.Minor.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Verze sestavení Instalační služby systému Windows (msi.dll) během instalace.|  
@@ -120,7 +120,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Redistribuovatelný seznam je soubor XML, který byste měli pojmenovat pomocí následujícího formátu: *název společnosti*. *Název komponenty*. RedistList.xml. Ano například pokud se komponenta nazývá Datawidgets provedená Acme, použijte Acme.DataWidgets.RedistList.xml. Příklad redistribuovatelného seznamu obsahů může vypadat takto:  
+ Redistribuovatelný seznam je soubor XML, který byste měli pojmenovat pomocí následujícího formátu: *Company Name*.*Component Name*.RedistList.xml. Ano například pokud se komponenta nazývá Datawidgets provedená Acme, použijte Acme.DataWidgets.RedistList.xml. Příklad redistribuovatelného seznamu obsahů může vypadat takto:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -130,7 +130,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Postupy: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Dialogové okno požadavky](../ide/reference/prerequisites-dialog-box.md)   
  [Referenční schéma balíčku a produktu](../deployment/product-and-package-schema-reference.md)   
  [Použijte Visual Studio Bootstrapper 2005 k zahájení instalace](http://go.microsoft.com/fwlink/?LinkId=107537)

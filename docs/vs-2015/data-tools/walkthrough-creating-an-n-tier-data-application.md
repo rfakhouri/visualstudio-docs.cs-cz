@@ -21,10 +21,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 050562a8ac0549bb36712781ba80f58aaf2fc82d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53648367"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Průvodce: Vytvoření vícevrstvé datové aplikace
@@ -154,7 +154,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
   
 5. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
-   Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (DataAccessTier) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnost (DataEntityTier) obsahuje typové datové sady: NorthwindDataSet.Dataset.Designer.vb (nebo NorthwindDataSet.Dataset.Designer.cs).  
+   Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (DataAccessTier) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnost (DataEntityTier) obsahuje typové datové sady: NorthwindDataSet.Dataset.Designer.vb (or NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady musí ručně přesunout do projektu datové sady.  

@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - uwp
 ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53843525"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
@@ -176,7 +176,7 @@ if (performance.mark && performance.measure) {
   
  Tady je vypadá časová osa diagnostiky se popisek zobrazí několik události životního cyklu aplikace:  
   
- ![Relace diagnostiky pravítka](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
+ ![Diagnostic session ruler](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
   
  Ukazuje časové osy, pokud dojde k události lifecyle aplikace, jako je aktivační událost, a zobrazí značky uživatelů (uživatele označit trojúhelníky), který můžete přidat do vašeho kódu. Můžete vybrat události, které chcete zobrazit popisy tlačítek s dalšími informacemi. Další informace o uživatelské značky, naleznete v tématu [označit kód pro analýzu](#ProfileMark) v tomto tématu.  
   

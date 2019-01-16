@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 7a6c8e4b2da87185c41157b8d03bd59b37188a43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49222687"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Postupy: Konfigurace dědičnosti pomocí Návrháře relací objektů
@@ -27,7 +27,7 @@ ms.locfileid: "49222687"
   
  Představte si třeba osoby tabulku, která obsahuje všechny uživatele náhradník společnosti. Někteří lidé jsou zaměstnanci a někteří lidé jsou správci. Osoby tabulka obsahuje sloupec s názvem `EmployeeType` , který má hodnotu 1 pro manažery a hodnota 2 pro zaměstnance; to je sloupec diskriminátoru. V tomto scénáři můžete vytvořit podtřídu zaměstnanců a naplnit třída se pouze záznamy, které mají `EmployeeType` hodnotu 2. Můžete také odebrat sloupce, které se nevztahují z každé třídy.  
   
- Vytvoření objektu modelu, který používá dědičnosti (a odpovídá relační data) může být trochu matoucí. Následující postup popisuje kroky potřebné ke konfiguraci dědičnosti pomocí Návrháře relací objektů. Podle obecných kroků bez ohledu na existující tabulky a sloupce může být obtížné, proto poskytuje návod, který používá data. Podrobné pokyny krok za krokem konfigurace dědičnosti pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], naleznete v tématu [návod: vytvoření třídy LINQ to SQL děděním pomocí jedné tabulky (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
+ Vytvoření objektu modelu, který používá dědičnosti (a odpovídá relační data) může být trochu matoucí. Následující postup popisuje kroky potřebné ke konfiguraci dědičnosti pomocí Návrháře relací objektů. Podle obecných kroků bez ohledu na existující tabulky a sloupce může být obtížné, proto poskytuje návod, který používá data. Podrobné pokyny krok za krokem konfigurace dědičnosti pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], naleznete v tématu [názorný postup: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
   
 ### <a name="to-create-inherited-data-classes"></a>Chcete-li vytvořit zděděné datových tříd  
   
@@ -42,10 +42,10 @@ ms.locfileid: "49222687"
     > [!NOTE]
     >  Klikněte na tlačítko **dědičnosti** položky v **nástrojů** a uvolněte tlačítko myši, klikněte na druhé kopie třídy, kterou jste vytvořili v kroku 3 a pak klikněte na první třídy, kterou jste vytvořili v kroku 2. První třídy bude odkazovat na šipku v linii dědičnosti.  
   
-5.  V každé třídě odstraňte všechny vlastnosti objektu, které nechcete zobrazit a které nejsou používány pro přidružení. Dojde k chybě při pokusu odstranit objekt vlastnosti používané pro přidružení: [vlastnost \<název vlastnosti > nejde odstranit, protože se účastní asociace \<název přidružení >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5.  V každé třídě odstraňte všechny vlastnosti objektu, které nechcete zobrazit a které nejsou používány pro přidružení. Pokud se pokusíte odstranit vlastnosti objektu použité pro přidružení, dojde k chybě: [Vlastnost \<název vlastnosti > nejde odstranit, protože se účastní asociace \<název přidružení >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
-    >  Protože odvozené třídy dědí vlastnosti definované v její základní třídě, stejné sloupce se nedá definovat v každé třídě. (Sloupce jsou implementovány jako vlastnosti). Vytvoření sloupce v odvozené třídě můžete povolit tak, že nastavíte modifikátor dědičnosti na vlastnost v základní třídě. Další informace najdete v tématu [NOT IN sestavení: přepsání vlastností a metod](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+    >  Protože odvozené třídy dědí vlastnosti definované v její základní třídě, stejné sloupce se nedá definovat v každé třídě. (Sloupce jsou implementovány jako vlastnosti). Vytvoření sloupce v odvozené třídě můžete povolit tak, že nastavíte modifikátor dědičnosti na vlastnost v základní třídě. Další informace najdete v tématu [NOT IN sestavení: Přepsání metod a vlastností](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
 6.  Vybrat čáru dědičnosti v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
@@ -64,6 +64,6 @@ ms.locfileid: "49222687"
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [Technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [NENÍ v sestavení: Dědičnost v jazyce Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [NENÍ V SESTAVENÍ: Dědičnost v jazyce Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
  [Dědičnost](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)
 

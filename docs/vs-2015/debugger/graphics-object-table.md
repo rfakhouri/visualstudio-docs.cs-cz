@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ba3ce8aa0727471ff4385792d85659fa2d208dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51809087"
 ---
 # <a name="graphics-object-table"></a>Tabulka grafických objektů
@@ -45,7 +45,7 @@ Tabulka grafických objektů v grafické analýzy Visual Studia vám pomůže po
 |Sloupec|Popis|  
 |------------|-----------------|  
 |**identifikátor**|ID objektu.|  
-|**Jméno**|Informace o konkrétní aplikaci, která byla nastavena na objekt pomocí funkce rozhraní Direct3D `SetPrivateData`– obvykle na další identifikační informace o objektu.|  
+|**Název**|Informace o konkrétní aplikaci, která byla nastavena na objekt pomocí funkce rozhraní Direct3D `SetPrivateData`– obvykle na další identifikační informace o objektu.|  
 |**Typ**|Typ objektu.|  
 |**Aktivní**|Zobrazí "*" pro objekt, který byl nastaven na D3D10Device nebo D3D11DeviceContext během zachyceného snímku.<br /><br /> To odpovídá na objekty, které se zobrazují jako šedý, ale poskytuje položku sloupec, který vám pomůže umožňující řazení tabulce objektů.|  
 |**Velikost**|Velikost objektu v bajtech.|  
@@ -108,16 +108,16 @@ Tabulka grafických objektů v grafické analýzy Visual Studia vám pomůže po
 |**half4**|Vektor, který obsahuje čtyři 16bitové hodnoty s plovoucí desetinnou čárkou.|  
 |**double**|Hodnota s plovoucí desetinnou čárkou 64bitové.|  
 |**int**|Hodnota 32bitové celé číslo se znaménkem. Stejné jako **4bajtové**.|  
-|**Int64**|64bitové celé číslo se znaménkem hodnoty. Stejné jako **8 bajtů**.|  
+|**int64**|64bitové celé číslo se znaménkem hodnoty. Stejné jako **8 bajtů**.|  
 |**xint**|Šestnáctková hodnota 32-bit. Stejné jako **x4byte**.|  
 |**xint64**|64-bit šestnáctková hodnota. Stejné jako **x8byte**.|  
 |**uint**|Hodnota 32bitové celé číslo bez znaménka. Stejné jako **u4byte**.|  
-|**UInt64**|Hodnota 64bitové celé číslo bez znaménka. Stejné jako **u8byte**.|  
+|**uint64**|Hodnota 64bitové celé číslo bez znaménka. Stejné jako **u8byte**.|  
 |**bool**|Logická hodnota (`true` nebo `false`) hodnotu. Každá logická hodnota je reprezentován 32bitová hodnota.|  
   
 ## <a name="see-also"></a>Viz také  
  [Diagnostika grafiky (ladění grafiky DirectX)](../debugger/visual-studio-graphics-diagnostics.md)   
- [Návod: Chybějící objekty z důvodu stavu zařízení](../debugger/walkthrough-missing-objects-due-to-device-state.md)
+ [Návod: Chybějící objekty kvůli stavu zařízení](../debugger/walkthrough-missing-objects-due-to-device-state.md)
 
 
 

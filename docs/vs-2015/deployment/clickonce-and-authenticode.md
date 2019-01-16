@@ -25,10 +25,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49289481"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce a kód Authenticode
@@ -61,7 +61,7 @@ Authenticode * je technologie společnosti Microsoft, které používá standard
 ### <a name="timestamps"></a>Časová razítka  
  Certifikáty používané k podepisování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikací vyprší po určité době obvykle dvanáct měsíců. Aby bylo možné zbavují uživatele nutnosti provádět neustále znovu podepisovat aplikace pomocí nové certifikáty [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] podporuje časové razítko. Když je aplikace podepsána s časovým razítkem, svůj certifikát bude přijata i po vypršení platnosti, za předpokladu, že je platné časové razítko. Díky tomu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] s certifikáty s vypršenou platností, ale platná časová razítka ke stažení a spuštění aplikace. Umožňuje také nainstalované aplikace s certifikáty s vypršenou platností nadále stahovat a instalovat aktualizace.  
   
- Zahrnout časové razítko aplikační server, musí být k dispozici serveru časového razítka. Informace o tom, jak vybrat časového razítka serveru najdete v tématu [postupy: přihlášení aplikace a manifesty nasazení](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Zahrnout časové razítko aplikační server, musí být k dispozici serveru časového razítka. Informace o tom, jak vybrat časového razítka serveru najdete v tématu [jak: Podepsání manifestů aplikace a nasazení](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ### <a name="updating-expired-certificates"></a>Aktualizuje se certifikáty s vypršenou platností  
  V dřívějších verzích rozhraní .NET Framework aktualizace prošlou platností certifikátu aplikace může způsobit, že aplikace přestane fungovat. Chcete-li tento problém vyřešit, použijte jednu z následujících metod:  

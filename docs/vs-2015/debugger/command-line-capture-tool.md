@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51770692"
 ---
 # <a name="command-line-capture-tool"></a>Nástroj příkazového řádku pro zachytávání
@@ -169,15 +169,15 @@ DXCap.exe –e map
  Výše uvedeného příkazu zobrazí aplikace Windows Store, které odpovídají "mapy"; Zde je výstup:  
   
  **Balíček "Microsoft.BingMaps":**  
- **InstallDirectory: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe C:\Program**  
+ **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **Jméno a příjmení: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Název: Microsoft.BingMaps**  
- **Vydavatel: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Jméno: Microsoft.BingMaps**  
+ **Vydavatel: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
  **Verze: 2.1.2914.1734**  
  **Spustitelná aplikace:**  
- **ID: AppexMaps**  
- **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Id   : AppexMaps**  
+ **Soubor EXE: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: Ne**  
  **AppSpec (ke spuštění): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** poslední řádek výstupu u každé Výčtový aplikace zobrazí příkaz vám umožní zachytit informace grafiky z něj.  
   

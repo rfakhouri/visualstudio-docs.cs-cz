@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Ladění vícevláknové aplikace | Dokumentace Microsoftu'
+title: 'Průvodce: Ladění vícevláknových aplikacích | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -23,13 +23,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51798626"
 ---
-# <a name="walkthrough-debugging-a-multithreaded-application"></a>Návod: Ladění vícevláknové aplikace
+# <a name="walkthrough-debugging-a-multithreaded-application"></a>Průvodce: Ladění vícevláknových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] poskytuje zdokonalené **vlákna** okno a jinými uživateli rozhraní vylepšení usnadňují ladění vícevláknových aplikací. Tento názorný postup trvá jenom několik minut, ale jeho dokončení se můžete seznámit s novými funkcemi rozhraní pro ladění aplikací s více vlákny.  
@@ -40,15 +40,15 @@ ms.locfileid: "51798626"
   
 1.  Na **souboru** nabídce zvolte **nový** a potom klikněte na tlačítko **projektu**.  
   
-     **Nový projekt** zobrazí se dialogové okno.  
+     Zobrazí se dialogové okno **Nový projekt**.  
   
-2.  V **typu projektu**s poli, klikněte na jazyk podle vašeho výběru: **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++**.  
+2.  V **typu projektu**s poli, klikněte na jazyk podle vašeho výběru: **Visual Basic**, **Visual C#** , nebo **Visual C++**.  
   
 3.  V **šablony** zvolte **konzolovou aplikaci** nebo **Konzolová aplikace CLR**.  
   
 4.  V **název** pole, zadejte název MyThreadWalkthroughApp.  
   
-5.  Klikněte na tlačítko **OK**.  
+5.  Klikněte na **OK**.  
   
      Zobrazí se nový projekt konzoly. Po vytvoření projektu se zobrazí zdrojový soubor. V závislosti na jazyku, kterou jste zvolili může volat zdrojový soubor Module1.vb, Program.cs nebo MyThreadWalkthroughApp.cpp  
   
@@ -129,7 +129,7 @@ Thread::Sleep(3000);
 2.  Přejděte **umístění ladění** nástrojů a klikněte na tlačítko **vlákna** seznamu.  
   
     > [!NOTE]
-    >  Tento panel nástrojů můžete rozpoznat podle tři viditelného seznamy: **procesu**, **vlákna**, a **rámec zásobníku**.  
+    >  Tento panel nástrojů můžete rozpoznat podle tří viditelného seznamů: **Proces**, **vlákna**, a **rámce zásobníku**.  
   
 3.  Všimněte si, kolik vlákna se zobrazují v seznamu.  
   
@@ -143,7 +143,7 @@ Thread::Sleep(3000);
   
 7.  Ukazatel myši na ikonu příznaku.  
   
-     Se zobrazí automaticky otevírané okno. Toto automaticky otevírané okno se dozvíte, jaké režim **vlákna** seznamu je v: **zobrazit pouze s příznakem vlákna**.  
+     Se zobrazí automaticky otevírané okno. Toto automaticky otevírané okno se dozvíte, jaké režim **vlákna** seznam: **Zobrazit pouze vlákna označená příznakem**.  
   
 8.  Klikněte na tlačítko příznak přepnete zpět do **zobrazit všechna vlákna** režimu.  
   
@@ -215,7 +215,7 @@ Thread::Sleep(3000);
   
      Zobrazí se dialogové okno upozornění. Ta vám zjistí, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nemůže zobrazit zdrojový kód pro hlavní vlákno.  
   
-     Klikněte na tlačítko **OK**.  
+     Klikněte na **OK**.  
   
 7.  Podívejte se na **zásobník volání** okno a **umístění ladění** nástrojů.  
   

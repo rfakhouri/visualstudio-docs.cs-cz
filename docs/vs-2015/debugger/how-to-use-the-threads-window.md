@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: použití okna vláken | Dokumentace Microsoftu'
+title: 'Postupy: Použití okna vláken | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -30,10 +30,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51791693"
 ---
 # <a name="how-to-use-the-threads-window"></a>Postupy: Použití okna vláken
@@ -43,7 +43,7 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
   
  **Vlákna** okno obsahuje tabulky, kde každý řádek představuje vlákno v aplikaci. Ve výchozím nastavení v tabulce jsou uvedeny všechna vlákna ve vaší aplikaci, ale můžete filtrovat seznam a zobrazit pouze vlákna, které vás zajímají. Každý sloupec obsahuje jiný typ informací. Také můžete skrýt některé sloupce. Pokud zobrazíte všechny sloupce, tyto informace se zobrazí, zleva doprava:  
   
--   Sloupec příznaku, kde lze označit vlákno, ke kterému chcete věnovat zvláštní pozornost. Informace o tom, jak označit vlákno, naleznete v tématu [jak: nastavit příznak a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md).  
+-   Sloupec příznaku, kde lze označit vlákno, ke kterému chcete věnovat zvláštní pozornost. Informace o tom, jak označit vlákno, naleznete v tématu [jak: Označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md).  
   
 -   Aktivní vlákno sloupce, ve kterém žlutá šipka označuje aktivní vlákno. Přehled šipka označuje vlákno, kde se spuštění dostalo do ladicího programu.  
   
@@ -146,7 +146,7 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
      Tato akce ovlivní pouze vlákna, které jsou vybrány v **vlákna** okna.  
   
 ## <a name="displaying-flagged-threads"></a>Zobrazení vlákna s příznakem  
- Můžete označit příznakem vlákna, které chcete věnovat zvláštní pozornost označením s ikonou v **vlákna** okna. Další informace najdete v tématu [jak: nastavit příznak a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md). V okně vlákna můžete zobrazit všechna vlákna, nebo pouze vlákna s příznakem.  
+ Můžete označit příznakem vlákna, které chcete věnovat zvláštní pozornost označením s ikonou v **vlákna** okna. Další informace najdete v tématu [jak: Označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md). V okně vlákna můžete zobrazit všechna vlákna, nebo pouze vlákna s příznakem.  
   
 #### <a name="to-display-only-flagged-threads"></a>Chcete-li zobrazit pouze vlákna označená příznakem  
   
@@ -167,7 +167,7 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Návod: Ladění vícevláknové aplikace](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+ [Návod: Ladění aplikace s více vlákny](../debugger/walkthrough-debugging-a-multithreaded-application.md)
 
 
 

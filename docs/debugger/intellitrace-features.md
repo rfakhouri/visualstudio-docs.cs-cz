@@ -21,13 +21,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54227834"
 ---
-# <a name="intellitrace-features-c-visual-basic-c"></a>Funkce IntelliTrace (C#, Visual Basic, C++)
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace Features (C#, Visual Basic, C++)
 
 Můžete zaznamenat události IntelliTrace a volá metodu vaší aplikace, který umožňuje zkontrolovat jeho stav (zásobník volání a místní proměnné hodnoty) v různých fázích provádění. Stačí obvyklým způsobem spustit ladění – nástroj IntelliTrace je ve výchozím nastavení zapnutá a zobrazí se informace, které nástroj IntelliTrace zaznamenává v novém **diagnostické nástroje** okně **události** kartu. Vyberte událost a klikněte na tlačítko **aktivovat historické ladění** zobrazíte zásobník volání a místní hodnoty pro tuto událost.
 
@@ -123,7 +123,7 @@ Při ukládání dat IntelliTrace do souboru získáte jeden soubor .itrace pro 
 
 ## <a name="forums"></a>Diskuzní fóra
 
-[Ladicí program sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ## <a name="videos"></a>Videa
 

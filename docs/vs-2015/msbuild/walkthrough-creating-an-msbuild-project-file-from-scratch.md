@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření souboru projektu MSBuild od začátku | Dokumentace Microsoftu'
+title: 'Průvodce: Vytváření souboru projektu MSBuild od začátku | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913888"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Návod: Vytvoření souboru projektu MSBuild od začátku
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Průvodce: Vytvoření souboru projektu MSBuild od začátku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +51,7 @@ Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají 
   
 - Přírůstkové sestavení.  
   
-  Tento návod ukazuje, jak sestavit projekt na příkazovém řádku a zkontrolovat výsledky. Další informace o MSBuild a o způsobu spuštění MSBuild v příkazovém řádku naleznete v tématu [návod: použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  Tento návod ukazuje, jak sestavit projekt na příkazovém řádku a zkontrolovat výsledky. Další informace o MSBuild a o způsobu spuštění MSBuild v příkazovém řádku naleznete v tématu [názorný postup: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
   Chcete-li dokončit tohoto průvodce, musíte mít rozhraní .NET Framework (verze 2.0, 3.5, 4.0 nebo 4.5) nainstalovat, protože obsahuje nástroj MSBuild a kompilátor Visual C#, které jsou požadovány v tomto návodu.  
   
@@ -146,10 +146,10 @@ Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají 
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají 
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají 
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -484,7 +484,7 @@ Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají 
 ```  
   
 ## <a name="whats-next"></a>Co se chystá?  
- Visual Studio může automaticky provést mnoho práce, která je uvedena v tomto návodu. Zjistěte, jak vytvářet, upravovat, vytvářet a testovat soubory projektu MSBuild pomocí sady Visual Studio, najdete v článku [návod: použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio může automaticky provést mnoho práce, která je uvedena v tomto návodu. Zjistěte, jak vytvářet, upravovat, vytvářet a testovat soubory projektu MSBuild pomocí sady Visual Studio, najdete v článku [názorný postup: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Viz také  
 [Přehled nástroje MSBuild](msbuild.md)  

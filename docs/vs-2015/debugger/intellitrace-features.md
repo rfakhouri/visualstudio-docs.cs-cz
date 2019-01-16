@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d1d7e949236067331408c6b9a8268891ff8b88db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51817474"
 ---
 # <a name="intellitrace-features"></a>Funkce IntelliTrace
@@ -39,7 +39,7 @@ ms.locfileid: "51817474"
 
 Můžete zaznamenat události IntelliTrace a volá metodu vaší aplikace, který umožňuje zkontrolovat jeho stav (zásobník volání a místní proměnné hodnoty) v různých fázích provádění. Stačí obvyklým způsobem spustit ladění – nástroj IntelliTrace je ve výchozím nastavení zapnutá a zobrazí se informace, které nástroj IntelliTrace zaznamenává v novém **diagnostické nástroje** okně **události** kartu. Vyberte událost a klikněte na tlačítko **aktivovat historické ladění** zobrazíte zásobník volání a místní hodnoty pro tuto událost.  
   
- Podrobný popis najdete v tématu [návod: použití IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+ Podrobný popis najdete v tématu [názorný postup: Pomocí IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
  Nástroj IntelliTrace je k dispozici v edici Visual Studio Enterprise, ale ne v edicích Visual Studio Professional nebo Community.  
   
@@ -115,7 +115,7 @@ Můžete zaznamenat události IntelliTrace a volá metodu vaší aplikace, kter�
  [Spuštění samostatného Kolektoru IntelliTrace a fondy aplikací v rámci účtů služby Active Directory](http://blogs.msdn.com/b/visualstudioalm/archive/2014/12/22/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts.aspx)  
   
 ## <a name="forums"></a>Diskuzní fóra  
- [Ladicí program sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 ## <a name="videos"></a>Videa  
  [Prostředí IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)  

@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 14389ec72094b2f6642c74b93bdd5f8a076f6387
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53842795"
 ---
 # <a name="debugger-security"></a>Zabezpečení ladicího programu
@@ -45,7 +45,7 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
 ### <a name="managed-debugging-security"></a>Spravované ladění zabezpečení  
  Tady jsou některé obecná doporučení, které se vztahují na všechny spravované ladění.  
   
-- Buďte opatrní při připojování k procesu je nedůvěryhodný uživatel: Pokud tak učiníte, můžete předpokládat, že je důvěryhodný. Při pokusu o připojení k procesu je nedůvěryhodný uživatel, se zobrazí potvrzovací dialogové okno s upozorněním zabezpečení s dotazem, jestli se má připojit k procesu. "Důvěryhodných uživatelů" zahrnout, a sadu standardních uživatelů obvykle definovány na počítače, které mají nainstalováno, například rozhraní .NET Framework **aspnet**, **localsystem**, **networkservice**, a **localservice**. Další informace najdete v tématu [upozornění zabezpečení: Připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).  
+- Buďte opatrní při připojování k procesu je nedůvěryhodný uživatel: Pokud tak učiníte, můžete předpokládat, že je důvěryhodný. Při pokusu o připojení k procesu je nedůvěryhodný uživatel, se zobrazí potvrzovací dialogové okno s upozorněním zabezpečení s dotazem, jestli se má připojit k procesu. "Důvěryhodných uživatelů" zahrnout, a sadu standardních uživatelů obvykle definovány na počítače, které mají nainstalováno, například rozhraní .NET Framework **aspnet**, **localsystem**, **networkservice**, a **localservice**. Další informace najdete v tématu [upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).  
   
 - Buďte opatrní při stahování projekt Internetu a načítají do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. To je velmi riskantní provést i bez ladění. Když toto provedete, jsou za předpokladu, že projekt a kód, který obsahuje jsou důvěryhodné.  
   
@@ -88,7 +88,7 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
 ## <a name="see-also"></a>Viz také  
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
  [Základy ladicího programu](../debugger/debugger-basics.md)   
- [Upozornění zabezpečení: Připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
+ [Upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
  [Upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz.](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
 
 

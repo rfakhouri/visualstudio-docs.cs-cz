@@ -13,10 +13,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e89ae75a3e3ea43e9354df828410a0bdb6f2e79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53902708"
 ---
 # <a name="graphics-object-table"></a>Tabulka grafických objektů
@@ -102,13 +102,13 @@ Tabulka grafických objektů v grafické analýzy Visual Studia vám pomůže po
 |**half4**|Vektor, který obsahuje čtyři 16bitové hodnoty s plovoucí desetinnou čárkou.|  
 |**double**|Hodnota s plovoucí desetinnou čárkou 64bitové.|  
 |**int**|Hodnota 32bitové celé číslo se znaménkem. Stejné jako **4bajtové**.|  
-|**Int64**|64bitové celé číslo se znaménkem hodnoty. Stejné jako **8 bajtů**.|  
+|**int64**|64bitové celé číslo se znaménkem hodnoty. Stejné jako **8 bajtů**.|  
 |**xint**|Šestnáctková hodnota 32-bit. Stejné jako **x4byte**.|  
 |**xint64**|64-bit šestnáctková hodnota. Stejné jako **x8byte**.|  
 |**uint**|Hodnota 32bitové celé číslo bez znaménka. Stejné jako **u4byte**.|  
-|**UInt64**|Hodnota 64bitové celé číslo bez znaménka. Stejné jako **u8byte**.|  
+|**uint64**|Hodnota 64bitové celé číslo bez znaménka. Stejné jako **u8byte**.|  
 |**bool**|Logická hodnota (`true` nebo `false`) hodnotu. Každá logická hodnota je reprezentován 32bitová hodnota.|  
   
 ## <a name="see-also"></a>Viz také  
  [Diagnostika grafiky (ladění grafiky DirectX)](visual-studio-graphics-diagnostics.md)   
- [Návod: Chybějící objekty z důvodu stavu zařízení](walkthrough-missing-objects-due-to-device-state.md)
+ [Návod: Chybějící objekty kvůli stavu zařízení](walkthrough-missing-objects-due-to-device-state.md)

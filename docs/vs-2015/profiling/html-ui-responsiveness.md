@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63027ccfffde0aa3b62bae6c1529826fd9b26c71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51760722"
 ---
 # <a name="html-ui-responsiveness"></a>Rychlost odezvy HTML UI
@@ -79,7 +79,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
 6.  Chcete-li zastavit profilování aplikace a zobrazení data, která shromažďují profiler, zvolte **zastavit shromažďování**.  
   
 ##  <a name="IsolateAnIssue"></a> Izolovat problém  
- V následujících částech najdete návrhy můžete izolovat problémy s výkonem. Podrobné vysvětlení toho, jak identifikovat a opravit problémy s výkonem pomocí ukázkové aplikace pro testování výkonu najdete v tématu [názorný postup: odezvy zlepšení uživatelského rozhraní (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ V následujících částech najdete návrhy můžete izolovat problémy s výkonem. Podrobné vysvětlení toho, jak identifikovat a opravit problémy s výkonem pomocí ukázkové aplikace pro testování výkonu najdete v tématu [názorný postup: Zlepšení rychlosti odezvy uživatelského rozhraní (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Izolovat problém rychlosti odezvy uživatelského rozhraní  
  Tyto kroky obsahují navrhované pracovního postupu, které můžou pomoct efektivněji využívat Profiler odezvy uživatelského rozhraní:  
@@ -187,7 +187,7 @@ if (performance.mark && performance.measure) {
   
  Tady je vypadá časová osa diagnostiky se popisek zobrazí několik události životního cyklu aplikace:  
   
- ![Relace diagnostiky pravítka](../profiling/media/js-htmlvizprof-ruler.png "JS_HTMLVizProf_Ruler")  
+ ![Diagnostic session ruler](../profiling/media/js-htmlvizprof-ruler.png "JS_HTMLVizProf_Ruler")  
   
  Ukazuje časové osy, pokud dojde k události lifecyle aplikace, jako je aktivační událost, a zobrazí značky uživatelů (uživatele označit trojúhelníky), který můžete přidat do vašeho kódu. Můžete vybrat události, které chcete zobrazit popisy tlačítek s dalšími informacemi. Další informace o uživatelské značky, naleznete v tématu [označit kód pro analýzu](#ProfileMark) v tomto tématu.  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
 -   Událost navigace, která nastane, pokud přejdete na jinou stránku. Popisek pro událost ukazuje na cílovou adresu URL stránky.  
   
 ###  <a name="CPUUtilization"></a> Zobrazení procesoru využití  
- Graf využití procesoru umožňuje určit dobu, ve kterém se aktivity nadměrnému využití procesoru. Poskytuje informace o průměr spotřeby procesoru aplikaci po určitou dobu. Informace, které jsou rozlišené představují následující konkrétní kategorie: **načítání**, **skriptování**, uvolňování paměti (**GC**), **stylu**, **Vykreslování**, a **dekódování obrázku**. Další informace o těchto kategorií naleznete v tématu [události odkaz na Profiler](#ProfilerEvents) dále v tomto tématu.  
+ Graf využití procesoru umožňuje určit dobu, ve kterém se aktivity nadměrnému využití procesoru. Poskytuje informace o průměr spotřeby procesoru aplikaci po určitou dobu. Informace, jsou rozlišené představují následující konkrétní kategorie: **Načítání**, **skriptování**, uvolňování paměti (**GC**), **stylování**, **vykreslování**, a **bitové kopie dekódování**. Další informace o těchto kategorií naleznete v tématu [události odkaz na Profiler](#ProfilerEvents) dále v tomto tématu.  
   
  Graf využití procesoru ukazuje množství čas strávený na všech vláknech aplikace kombinování hodnoty využití procesoru pro jeden nebo více procesorů do jednoho procentuální hodnotu. Hodnota využití procesoru může překročit 100 % jeho obsahu, když se používá více než jeden procesor.  
   
@@ -353,8 +353,8 @@ if (performance.mark && performance.measure) {
 |Uvolnění paměti|Uvolňování paměti|Byl stráven čas shromažďování paměti pro objekty, které již byly použity.|  
 |Výpočet šablon stylů CSS|Práce se styly|Byly provedeny změny v modelu DOM, který vyžaduje všech ovlivněných elementů proto bylo nutné přepočítat vlastnosti stylu.|  
 |Rozložení|Práce se styly|Byly provedeny změny v modelu DOM, které vyžadovaly velikost nebo pozice všech ovlivněných elementů proto bylo nutné přepočítat.|  
-|Malování|vykreslování|V modelu DOM byly provedeny vizuální změny a byl proveden pokus o opětovné vykreslování části stránky.|  
-|Vykreslit vrstvu|vykreslování|Byly provedeny vizuální změny nezávisle vykreslovaného fragmentu modelu DOM (označovaného jako vrstva) a změny potřebné část stránky k vykreslení.|  
+|Malování|Vykreslování|V modelu DOM byly provedeny vizuální změny a byl proveden pokus o opětovné vykreslování části stránky.|  
+|Vykreslit vrstvu|Vykreslování|Byly provedeny vizuální změny nezávisle vykreslovaného fragmentu modelu DOM (označovaného jako vrstva) a změny potřebné část stránky k vykreslení.|  
 |Dekódování obrázku|Dekódování obrázku|Image byla zahrnuta v modelu DOM a byl proveden pokus o pro dekompresi a dekódování obrázku z původního formátu na rastrový obrázek.|  
 |Rámec|Není k dispozici|Byly provedeny vizuální změny v modelu DOM, který stránky, které vyžadovaly překreslení všech ovlivněných částí. Toto je nástroj vygeneruje událost pro seskupení.|  
 |Uživatelské míry|Není k dispozici|Scénáři specifické pro aplikaci byl měřen pomocí metody `performance.measure` metody. Toto je událost vygenerována nástroj použít pro analýzu kódu.|  

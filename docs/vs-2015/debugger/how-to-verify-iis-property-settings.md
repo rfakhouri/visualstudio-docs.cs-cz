@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: ověření nastavení vlastnosti služby IIS | Dokumentace Microsoftu'
+title: 'Postupy: Ověření nastavení vlastnosti služby IIS | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4639055fe9320c8fd1bf1b2575bca323642dd17f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51742079"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Postupy: Ověření nastavení vlastnosti služby IIS
@@ -42,7 +42,7 @@ Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu 
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>Zkontrolujte nastavení služby IIS pro webovou aplikaci  
   
-1.  Otevřít **nástroje pro správu** okna: na **Start** nabídky, přejděte na **programy**a potom klikněte na tlačítko **nástroje pro správu**. Pokud **nástroje pro správu** se nezobrazují v **programy** nabídky a pak vyhledejte ho **ovládací panely**.  
+1.  Otevřít **nástroje pro správu** okno: Na **Start** nabídky, přejděte k **programy**a potom klikněte na tlačítko **nástroje pro správu**. Pokud **nástroje pro správu** se nezobrazují v **programy** nabídky a pak vyhledejte ho **ovládací panely**.  
   
     -   Ve Windows 2000, vyberte **Správce služeb Internetu**.  
   
@@ -66,7 +66,7 @@ Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu 
   
     3.  Klikněte na tlačítko **OK** zavřete **metody ověřování** dialogové okno.  
   
-5.  Pro aplikaci knihovny ATL Server ověřte, zda je příkaz DEBUG. přidružený rozšíření ISAPI. Další informace najdete v tématu [postupy: přidružení ladění operaci s rozšířením](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5.  Pro aplikaci knihovny ATL Server ověřte, zda je příkaz DEBUG. přidružený rozšíření ISAPI. Další informace najdete v tématu [jak: Příkaz DEBUG. přidružit rozšíření](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
 6.  Pro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace, ujistěte se, že virtuální složka pro aplikace má název aplikace v **Správce Internetové informační služby (IIS)**, **Správce služeb Internetu** nebo  **Internetová informační služba**.  
   

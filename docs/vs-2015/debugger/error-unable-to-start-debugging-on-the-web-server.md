@@ -34,16 +34,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51779291"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru.
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Při pokusu o ladění aplikace ASP.NET běžící na webovém serveru, se může zobrazit tato chybová zpráva: Nepodařilo se zahájit ladění na webovém serveru.
+Při pokusu o ladění aplikace ASP.NET běžící na webovém serveru, může zobrazit tato chybová zpráva: Nepodařilo se zahájit ladění na webovém serveru.
   
 V mnoha případech se této chybě dochází, protože IIS není správně nakonfigurovaný.
 

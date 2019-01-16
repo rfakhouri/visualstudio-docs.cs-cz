@@ -9,10 +9,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54228029"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostika problémů po nasazení pomocí nástroje IntelliTrace (C#, Visual Basic)
@@ -68,7 +68,7 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
 4.  Přidejte tento argument MSBuild, čímž zahrnout vaše TFS a umístění symbolů do souboru manifestu sestavení:
 
-     **/p:IncludeServerNameInBuildInfo = true**
+     **/p:IncludeServerNameInBuildInfo=True**
 
      Kdokoli, kdo má přístup k webový server může zobrazit tato umístění v manifestu sestavení. Ujistěte se, že je zdrojový server zabezpečený.
 
@@ -103,13 +103,13 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
 3.  Přidejte do vašeho kanálu sestavení následující argumenty nástroje MSBuild:
 
-    -   **/p:VisualStudioVersion = 12.0**
+    -   **/p:VisualStudioVersion=12.0**
 
-    -   **/p:MSBuildAssemblyVersion = 12.0**
+    -   **/p:MSBuildAssemblyVersion=12.0**
 
-    -   **/TV:12.0**
+    -   **/tv:12.0**
 
-    -   **/p:IncludeServerNameInBuildInfo = true**
+    -   **/p:IncludeServerNameInBuildInfo=True**
 
     -   **/p:BuildSymbolStorePath =**\<*cesty k symbolům*>
 
@@ -147,9 +147,9 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 ###  <a name="MSBuild"></a> Vytvoření manifestu sestavení pro ruční sestavení pomocí MSBuild.exe
  Přidejte tyto argumenty při spuštění sestavení:
 
- **/p:GenerateBuildInfoConfigFile = true**
+ **/p:GenerateBuildInfoConfigFile=True**
 
- **/p:IncludeServerNameInBuildInfo = true**
+ **/p:IncludeServerNameInBuildInfo=True**
 
  **/p:BuildSymbolStorePath =**\<*cesty k symbolům*>
 

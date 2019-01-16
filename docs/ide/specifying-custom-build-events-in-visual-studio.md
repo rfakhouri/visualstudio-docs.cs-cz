@@ -13,10 +13,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53055125"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Určení vlastních událostí sestavení v sadě Visual Studio
@@ -25,9 +25,9 @@ Zadání vlastního sestavení události, můžete automaticky spustit příkazy
 
  Konkrétní informace o programovacím jazyce, který používáte naleznete v následujících tématech:
 
--   Visual Basic –[postupy: určení události (Visual Basic) sestavení](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic –[jak: Určení událostí sestavení (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C#a F#--[postupy: určení událostí sestavení (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   C#a F#--[jak: Určení událostí sestavení (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++ –[události sestavení zadejte](/cpp/ide/specifying-build-events).
 

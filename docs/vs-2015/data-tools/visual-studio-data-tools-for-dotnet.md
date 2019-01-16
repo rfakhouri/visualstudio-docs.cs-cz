@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49859704"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools for .NET
@@ -41,7 +41,7 @@ Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhra
   
 5. Přidání vlastního kódu pro takové věci, jako jsou obchodní pravidla, vyhledávání a ověřování dat nebo využívat vlastní funkce, které zpřístupňuje základní databáze.  
   
-   Můžete přeskočit krok 3 a programu .NET aplikace vydat příkazy přímo do databáze, nikoli pomocí modelu. V takovém případě najdou relevantní dokumentaci: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Všimněte si, že jste stále můžete použít Průvodce konfigurací zdroje dat a návrhářů pro generování kódu datové vazby při naplňování vlastních objektů v paměti a potom vytvořte datovou vazbu ovládacích prvků uživatelského rozhraní na tyto objekty.  
+   Můžete přeskočit krok 3 a programu .NET aplikace vydat příkazy přímo do databáze, nikoli pomocí modelu. V takovém případě najdete příslušnou dokumentaci: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Všimněte si, že jste stále můžete použít Průvodce konfigurací zdroje dat a návrhářů pro generování kódu datové vazby při naplňování vlastních objektů v paměti a potom vytvořte datovou vazbu ovládacích prvků uživatelského rozhraní na tyto objekty.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   

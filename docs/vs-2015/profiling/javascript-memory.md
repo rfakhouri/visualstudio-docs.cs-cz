@@ -29,10 +29,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b2341e9cf0ca1494d8dad79cd521c283c2c23a06
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51798934"
 ---
 # <a name="javascript-memory"></a>Paměti jazyka JavaScript
@@ -52,7 +52,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   
    Objekty, které nejsou vytvořené přímo v kódu vaší aplikace automaticky filtrují. Data můžete také filtrovat podle názvu objektu.  
   
-  Kurz vás provede procesem identifikaci nevracení paměti v aplikaci funkční, najdete v tématu [návod: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Kurz vás provede procesem identifikaci nevracení paměti v aplikaci funkční, najdete v tématu [názorný postup: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   V tomto tématu:  
   
@@ -131,7 +131,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 -   [Zobrazit snímek diff](#SnapshotDiff). Zobrazuje rozdílové hodnoty mezi snímky. Tato zobrazení zobrazit rozdíly v objektu počty velikost a objekt.  
   
 ##  <a name="Isolate"></a> Zjištění nevracení paměti  
- Tyto kroky obsahují pracovního postupu, které můžou pomoct efektivněji používat analýzu paměti jazyka JavaScript. Tyto kroky může být užitečné, pokud se domníváte, že se vaše aplikace může nevracení paměti. Kurz vás provede procesem identifikaci nevracení paměti v aplikaci funkční, najdete v tématu [návod: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ Tyto kroky obsahují pracovního postupu, které můžou pomoct efektivněji používat analýzu paměti jazyka JavaScript. Tyto kroky může být užitečné, pokud se domníváte, že se vaše aplikace může nevracení paměti. Kurz vás provede procesem identifikaci nevracení paměti v aplikaci funkční, najdete v tématu [názorný postup: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Otevření aplikace v sadě Visual Studio.  
   
@@ -173,7 +173,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   
     - Velikost rozdílové haldy (levý odkaz pod velikost haldy). Text odkazu zobrazuje rozdíl mezi velikost haldy aktuální snímek a velikost haldy z předchozího snímku.  
   
-    - Počet rozdílové objektů (pravém odkaz pod počet objektů). Text odkazu zobrazuje dvě hodnoty (například +1858 /-1765): první hodnota je číslo nové objekty přidané od předchozího snímku, a druhá hodnota je počet objektů odebraných od předchozího snímku.  
+    - Počet rozdílové objektů (pravém odkaz pod počet objektů). Text odkazu zobrazuje dvě hodnoty (například +1858 /-1765): První hodnota je číslo nové objekty přidané od předchozího snímku, a druhá hodnota je počet objektů odebraných od předchozího snímku.  
   
       Tyto odkazy otevřít zobrazení podrobností rozdílové snímku typy v haldě, seřazené podle uchovávané velikosti nebo počet objektů, v závislosti na tom, které jste otevřeli.  
   
@@ -229,7 +229,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   
 -   Počet objektů. Tento počet se zobrazí pouze objekty vytvořené v aplikaci a filtry předdefinované objekty, které Autor modulu runtime jazyka JavaScript. Objekt počet obsahuje odkazy na typy zobrazení Podrobnosti o snímku.  
   
--   Počet rozdílové objektů. To ukazuje dvě hodnoty: první hodnota je číslo nové objekty přidány od předchozí snímek; a druhá hodnota je počet objektů odebraných od předchozího snímku. Například na ilustraci, že byly přidány 1,859 objekty a 1,733 objekty byly odebrány od snímek č. 1. Tyto informace je a červená šipka nahoru Pokud zvýšil počet celkový počet objektů nebo zelenou šipku dolů, je-li se zkrátila. Pokud nedošlo ke změně počet objektů, zobrazí se text **beze změny** místo čísla. Pro první snímkem, se zobrazí text **směrného plánu**. Počet propojení rozdílové objektů na typy zobrazení snímku rozdíl  
+-   Počet rozdílové objektů. To ukazuje dvě hodnoty: První hodnota je číslo nové objekty přidány od předchozí snímek; a druhá hodnota je počet objektů odebraných od předchozího snímku. Například na ilustraci, že byly přidány 1,859 objekty a 1,733 objekty byly odebrány od snímek č. 1. Tyto informace je a červená šipka nahoru Pokud zvýšil počet celkový počet objektů nebo zelenou šipku dolů, je-li se zkrátila. Pokud nedošlo ke změně počet objektů, zobrazí se text **beze změny** místo čísla. Pro první snímkem, se zobrazí text **směrného plánu**. Počet propojení rozdílové objektů na typy zobrazení snímku rozdíl  
   
 -   Snímek obrazovky v době pořízení snímku.  
   

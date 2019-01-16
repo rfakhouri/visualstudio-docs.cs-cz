@@ -30,10 +30,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a238da745821da5c93cf953817305703786df805
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53889238"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
@@ -69,7 +69,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 1.  Spusťte ladění. (Klávesnice: **F5**)
 
-2.  Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **CTRL** + **Shift** + **`**)
+2.  Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **Ctrl** + **Shift** + **`**)
 
      ![Vyberte mapu kódu pro spuštění mapování zásobníku volání](../debugger/media/debuggermap_choosecodemap.png)
 

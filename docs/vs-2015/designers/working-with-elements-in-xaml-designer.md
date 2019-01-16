@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49896948"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
@@ -71,9 +71,9 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 1.  Vyberte prvky, které chcete, aby bylo v souladu. Stisknutím a podržením klávesy Ctrl a vyberte prvky můžete vybrat více než jeden element.  
   
-2.  Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **vlevo**, **Center**, **Vpravo**, nebo **Stretch**.  
+2.  Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **Vlevo**, **Center**, **vpravo**, nebo **Stretch**.  
   
-3.  Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **horní**, **Center**, **Dolní**, nebo **Stretch**.  
+3.  Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **Horní**, **Center**, **dolní**, nebo **Stretch**.  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Chcete-li zarovnat dva nebo více prvků pomocí zarovnávacích čar  
   

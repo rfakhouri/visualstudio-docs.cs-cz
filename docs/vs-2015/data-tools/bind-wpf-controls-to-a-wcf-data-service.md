@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "50220375"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
@@ -72,7 +72,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 #### <a name="to-create-the-service-project"></a>Chcete-li vytvořit projekt služby  
   
-1.  Spusťte sadu Visual Studio.  
+1.  Spusťte Visual Studio.  
   
 2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
@@ -87,7 +87,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
 6.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Default.aspx** a vyberte **odstranit**. Tento soubor není nutné v tomto názorném postupu.  
   
 ## <a name="create-an-entity-data-model-for-the-service"></a>Vytvoření datového modelu Entity pro službu  
- Ke zveřejňování dat pro aplikace s využitím [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], je nutné definovat datový model pro službu. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] Podporuje dva typy datových modelů: datových modelech Entity a vlastní datové modely, které jsou definovány pomocí běžné language runtime (CLR) objekty, které implementují <xref:System.Linq.IQueryable%601> rozhraní. V tomto návodu vytvoříte pro datový model Entity Data Model.  
+ Ke zveřejňování dat pro aplikace s využitím [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], je nutné definovat datový model pro službu. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] Podporuje dva typy datových modelů: Modely Entity Data Model a vlastní datové modely, které jsou definovány pomocí běžné language runtime (CLR) objekty, které implementují <xref:System.Linq.IQueryable%601> rozhraní. V tomto návodu vytvoříte pro datový model Entity Data Model.  
   
 #### <a name="to-create-an-entity-data-model"></a>Chcete-li vytvořit Entity Data Model  
   
@@ -221,7 +221,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
    - **RevisionNumber**  
   
-   - **ROWGUID**  
+   - **rowguid**  
   
      Tato akce zabraňuje vytváření ovládacích prvků vázaných na data pro tyto uzly v dalším kroku sady Visual Studio. V tomto návodu se předpokládá, že koncový uživatel nemusí zobrazit tato data.  
   
@@ -246,7 +246,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 #### <a name="to-load-the-data-from-the-service"></a>K načtení dat ze služby  
   
-1.  V návrháři, chcete-li vytvořit `Window_Loaded` obslužná rutina události, klikněte dvakrát na text, který čte: **hlavního okna MainWindow**.  
+1.  V návrháři, chcete-li vytvořit `Window_Loaded` obslužná rutina události, klikněte dvakrát na text, který čte: **Hlavní okno MainWindow**.  
   
 2.  Obslužná rutina události nahraďte následujícím kódem. Ujistěte se, že nahradíte *localhost* adresy v tomto kódu s adresou místního hostitele ve svém vývojovém počítači.  
   
@@ -324,7 +324,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 -   Další informace o použití **zdroje dat** okna v sadě Visual Studio k vytvoření vazby WPF ovládací prvky na jiné typy datových zdrojů. Další informace najdete v tématu [WPF vytvoření vazby ovládacích prvků do datové sady](../data-tools/bind-wpf-controls-to-a-dataset.md).  
   
--   Další informace o použití **zdroje dat** okna v sadě Visual Studio pro zobrazení souvisejících dat (tj. data ve vztahu nadřazený podřízený) v ovládacích prvcích WPF. Další informace najdete v tématu [návod: zobrazování souvisejících dat v aplikaci WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
+-   Další informace o použití **zdroje dat** okna v sadě Visual Studio pro zobrazení souvisejících dat (tj. data ve vztahu nadřazený podřízený) v ovládacích prvcích WPF. Další informace najdete v tématu [názorný postup: Zobrazení souvisejících dat v aplikaci WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

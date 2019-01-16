@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49261466"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizace aplikací ClickOnce
@@ -59,7 +59,7 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
  Výhodou tohoto přístupu je, že vytváří jedno nasazení a zjednodušuje váš příběh lokalizované nasazení. V době běhu příslušného satelitního sestavení se použije, v závislosti na výchozí jazykovou verzi operačního systému uživatele Windows. Nevýhod tohoto přístupu je, že stáhne všechny satelitní sestavení pokaždé, když se aplikace instalaci nebo aktualizaci na klientském počítači. Pokud vaše aplikace má velký počet řetězců nebo vaši zákazníci mají pomalé síťové připojení, tento proces může ovlivnit výkon při aktualizaci aplikace.  
   
 > [!NOTE]
->  Tento přístup předpokládá, že aplikace nastaví výšku, šířku a umístění ovládacích prvků automaticky tak, aby vyhovovaly velikosti řetězce jiným textovým v různé jazykové verze. Windows Forms obsahuje celou řadu ovládacích prvků a technologie, které vám umožní navrhnout vaše formuláře tak, aby ji snadno lokalizovatelný, včetně <xref:System.Windows.Forms.FlowLayoutPanel> a <xref:System.Windows.Forms.TableLayoutPanel> ovládací prvky také <xref:System.Windows.Forms.Control.AutoSize%2A> vlastnost.  Viz také [postupy: Podpora lokalizace ve Windows Forms pomocí AutoSize a TableLayoutPanel – ovládací prvek](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+>  Tento přístup předpokládá, že aplikace nastaví výšku, šířku a umístění ovládacích prvků automaticky tak, aby vyhovovaly velikosti řetězce jiným textovým v různé jazykové verze. Windows Forms obsahuje celou řadu ovládacích prvků a technologie, které vám umožní navrhnout vaše formuláře tak, aby ji snadno lokalizovatelný, včetně <xref:System.Windows.Forms.FlowLayoutPanel> a <xref:System.Windows.Forms.TableLayoutPanel> ovládací prvky také <xref:System.Windows.Forms.Control.AutoSize%2A> vlastnost.  Viz také [jak: Podpora lokalizace ve formulářích Windows pomocí AutoSize a TableLayoutPanel – ovládací prvek](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generovat jedno nasazení pro každou jazykovou verzi  
  V této strategii nasazení můžete generovat více nasazení. Každé nasazení zahrnout pouze do satelitního sestavení potřebné pro konkrétní jazykovou verzi a označit nasazení jako specifické pro danou jazykovou verzi.  
@@ -73,9 +73,9 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
 ## <a name="downloading-satellite-assemblies-on-demand"></a>Stahování satelitních sestavení na vyžádání  
  Pokud se rozhodnete zahrnout všechny satelitní sestavení v jednom nasazení, můžete zlepšit výkon pomocí stažení na vyžádání, což vám umožní označit sestavení jako volitelné. Označená sestavení nebude stažen při instalaci nebo aktualizaci aplikace. Můžete nainstalovat sestavení, když je budete potřebovat voláním <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> metodu <xref:System.Deployment.Application.ApplicationDeployment> třídy.  
   
- Stahování satelitních sestavení na vyžádání se mírně liší ve stahování dalších typů sestavení na vyžádání. Pro další informace a praktické příklady o tom, jak povolit tento scénář používání [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] nástroje pro sadu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], naleznete v tématu [návod: stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
+ Stahování satelitních sestavení na vyžádání se mírně liší ve stahování dalších typů sestavení na vyžádání. Pro další informace a praktické příklady o tom, jak povolit tento scénář používání [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] nástroje pro sadu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], naleznete v tématu [názorný postup: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Můžete také povolit tento scénář v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Viz také [návod: stahování satelitních sestavení na vyžádání pomocí technologie ClickOnce pomocí rozhraní API nasazení návrháře](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) nebo [návod: stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce Pomocí návrháře](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Můžete také povolit tento scénář v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Viz také [názorný postup: Stahování satelitních sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) nebo [názorný postup: Stahování satelitních sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Testování lokalizovaných aplikací ClickOnce před nasazením  
  Satelitní sestavení se použije pro Windows Forms pouze pokud aplikaci <xref:System.Threading.Thread.CurrentUICulture%2A> pro hlavního vlákna aplikace je nastavena na jazykovou verzi satelitního sestavení. Zákazníci místního trzích, kde bude pravděpodobně už běží lokalizovanou verzi sady Windows s jejich jazyková verze nastavena na vhodné výchozí nastavení.  

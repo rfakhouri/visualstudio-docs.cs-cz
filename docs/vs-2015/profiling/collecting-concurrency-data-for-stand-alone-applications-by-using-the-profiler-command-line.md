@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e49d723db8cb444fb9e21640a2e5e9b1eecea268
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53950553"
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Shromažďování dat souběžnosti pro samostatné aplikace pomocí příkazového řádku profileru
@@ -33,10 +33,10 @@ Za použití metody souběžnosti z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Spuštění rozhraní .NET Framework aplikace a profil dat souběžnosti**|-   [Jak: Spuštění aplikace rozhraní .NET Framework ke shromažďování dat souběžnosti](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Spuštění C/C++ aplikace a profil dat souběžnosti**|-   [Jak: Spuštění nativní aplikace za účelem shromáždění dat souběžnosti](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Připojení profileru k běžící aplikaci rozhraní .NET Framework**|-   [Jak: Připojit Profiler k aplikaci .NET Framework ke shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Připojení profileru k běžící aplikaci C/C++**|-   [Jak: Připojit Profiler k nativní aplikaci a shromažďování dat souběžnosti](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
+|**Spuštění rozhraní .NET Framework aplikace a profil dat souběžnosti**|-   [Jak: Spuštění aplikace .NET Framework kvůli shromáždění dat o souběžnosti](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Spuštění C/C++ aplikace a profil dat souběžnosti**|-   [Jak: Spuštění nativní aplikace kvůli shromáždění dat o souběžnosti](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Připojení profileru k běžící aplikaci rozhraní .NET Framework**|-   [Jak: Připojení profileru k aplikaci .NET Framework kvůli shromáždění dat o souběžnosti](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Připojení profileru k běžící aplikaci C/C++**|-   [Jak: Připojení profileru k nativní aplikaci a shromáždění dat o souběžnosti](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
