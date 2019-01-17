@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b3c674abbd31435c3a39417a50e965c42519e403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53886761"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Použití samostatného kolektoru IntelliTrace
@@ -124,7 +124,7 @@ ms.locfileid: "53886761"
 
 2.  Použít Windows **icacls** příkaz serveru poskytnout úplné oprávnění správce k adresáři kolektoru. Příklad:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3.  Sběr dat pro webovou aplikaci nebo aplikaci služby SharePoint:
 
@@ -132,7 +132,7 @@ ms.locfileid: "53886761"
 
          Příklad:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Doména\ID_uživatele >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  Udělte fondu aplikací pro webovou aplikaci nebo aplikaci služby SharePoint oprávnění číst a spouštět obsah adresáře kolektoru.
 
@@ -218,7 +218,7 @@ ms.locfileid: "53886761"
 
 1.  Pokud chcete začít, shromažďování dat, otevřete příkazové okno Powershellu jako správce a spuštěním tohoto příkazu:
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  Po spuštění tohoto příkazu zadejte **Y** potvrďte, že chcete zahájit shromažďování data.
@@ -241,7 +241,7 @@ ms.locfileid: "53886761"
 
 3.  K vytvoření snímku ze souboru .iTrace, použijte následující syntaxi:
 
-     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
 4.  Pokud chcete zkontrolovat stav shromažďování, použijte následující syntaxi:
 
@@ -249,7 +249,7 @@ ms.locfileid: "53886761"
 
 5.  Chcete-li zastavit shromažďování dat, použijte následující syntaxi:
 
-     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
     >  Po spuštění tohoto příkazu zadejte **Y** potvrďte, že chcete shromažďování dat ukončit. Jinak kolektor může pokračovat ve shromažďování dat, iTrace soubor zůstane uzamčen nebo soubor nemusí obsahovat žádná užitečná data.
@@ -404,7 +404,7 @@ ms.locfileid: "53886761"
  [Visual Studio ALM + TFS Blog](http://go.microsoft.com/fwlink/?LinkID=201340)
 
 ### <a name="forums"></a>Diskuzní fóra
- [Ladicí program sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>Videa
  [Video pro kanál 9: Shromažďování a analýza dat IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)
