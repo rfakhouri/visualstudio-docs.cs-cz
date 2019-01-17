@@ -1,5 +1,5 @@
 ---
-title: Iprovideexpressioncontexts – rozhraní | Microsoft Docs
+title: Iprovideexpressioncontexts – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 402b439da6f1fa369accacb27f987ac77119e343
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91f4251fec57001ba6c7a4ea1804ec72371418bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794583"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345094"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>IProvideExpressionContexts – rozhraní
-Poskytuje způsob, jak vytvořit výčet výraz kontexty známé některých součástí. Skriptovací stroje obvykle toto rozhraní implementovat.  
+Poskytuje způsob, jak vytvořit výčet výraz kontexty známé určitá komponenta. Toto rozhraní implementují obvykle skriptovací stroje.  
   
- Správce ladění proces používá k nalezení všech kontextů globálním výrazu přidružené k dané vlákno toto rozhraní.  
+ Správce ladění procesu používá toto rozhraní najít všechny globální výraz kontexty přidružené k dané vlákno.  
   
 > [!NOTE]
->  Toto rozhraní je volat z vlákna, které vás zajímají. Je implementátorovi identifikovat aktuální vlákno a vrátí enumerátor vhodné.  
+>  Toto rozhraní je volat z vlákna, které vás zajímají. Záleží implementátora identifikovat aktuální vlákno a vrátí odpovídající enumerátor.  
   
 ## <a name="methods"></a>Metody  
- Kromě metod zděděno z `IUnknown`, `IProvideExpressionContexts` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IProvideExpressionContexts` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IProvideExpressionContexts::EnumExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-enumexpressioncontexts.md)|Vrátí enumerátor výraz kontexty známé touto součástí.|
+|[IProvideExpressionContexts::EnumExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-enumexpressioncontexts.md)|Vrátí enumerátor výraz kontexty platná pro tuto součást.|

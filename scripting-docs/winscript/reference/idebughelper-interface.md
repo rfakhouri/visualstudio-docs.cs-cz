@@ -1,5 +1,5 @@
 ---
-title: Idebughelper – rozhraní | Microsoft Docs
+title: Idebughelper – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f0f70ecb8ead264d0d4b074f8fc1d9e3a6091eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba760dc15cc0a3d3f2f0d80f3a16c5621582bc11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794346"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347473"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper – rozhraní
-Slouží jako objekt factory pro objekt prohlížečů a jednoduchý spojovací body. Správce ladění procesu (PDM) implementuje toto rozhraní, které se spotřebovávají skriptovacích strojů.  
+Slouží jako objekt pro vytváření pro objekt prohlížeče a jednoduché spojovací body. Správce ladění procesu (PDM) implementuje toto rozhraní, která je využívána skriptovací stroje.  
   
- Kromě metod zděděno z `IUnknown`, `IDebugHelper` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IDebugHelper` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Vrátí prohlížeči vlastností, které zabaluje hodnotu typu VARIANT.|  
-|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Vrátí vlastnosti prohlížeče, který zabalí hodnotu typu VARIANT a umožňuje vlastní převod hodnot typu VARIANT nebo typy VARTYPE na řetězce.|  
-|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|Vrátí rozhraní událostí, které zabalí daného `IDispatch` objektu.|
+|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Vrátí prohlížeč vlastnost, která obaluje hodnotu typu VARIANT.|  
+|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Vrátí prohlížeč vlastnost, která obtéká hodnotu typu VARIANT a umožňuje vlastní převod hodnot typu VARIANT nebo typy VARTYPE na řetězce.|  
+|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|Vrátí hodnotu, která obaluje rozhraní události danou `IDispatch` objektu.|

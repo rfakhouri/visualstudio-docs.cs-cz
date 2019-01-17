@@ -1,7 +1,7 @@
 ---
 title: Vytvoření síťové instalace
 description: Zjistěte, jak vytvořit bod instalace sítě pro nasazení sady Visual Studio v rámci organizace.
-ms.date: 10/17/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8005aaea5e799ece8a5e217ca28ecd553e6787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966729"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349917"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvoření síťové instalace sady Visual Studio 2017
 
@@ -30,7 +30,7 @@ Obvykle správce podnikové sítě vytvoří bod instalace sítě pro nasazení 
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Stažení zaváděcího nástroje Visual Studio
 
-**Stáhněte si** edici sady Visual Studio, které chcete. Ujistěte se, že klikněte na tlačítko **Uložit**a potom klikněte na tlačítko **otevřít složku**.
+Stáhněte edici sady Visual Studio, které chcete. Ujistěte se, že klikněte na tlačítko **Uložit**a potom klikněte na tlačítko **otevřít složku**.
 
 Nastavení spustitelných&mdash;nebo na konkrétnější, soubor zaváděcí nástroj&mdash;by měl odpovídat jedné z následujících akcí.
 
@@ -115,11 +115,15 @@ Pokud chcete aktualizovat existující rozložení na úplné rozložení, použ
 
 Správci můžou nasadit sady Visual Studio na klientských pracovních stanic, jako součást instalačního skriptu. Nebo uživatelé, kteří mají oprávnění správce, můžete spustit instalační program přímo ze sdílené složky pro instalaci sady Visual Studio na svém počítači.
 
-- Uživatelé mohou nainstalovat spuštěním: <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Správce můžete nainstalovat v bezobslužném režimu spuštěním: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* Uživatelé mohou nainstalovat spuštěním: <br>```\\server\products\VS2017\vs_enterprise.exe```
+* Správce můžete nainstalovat v bezobslužném režimu spuštěním: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
+> [!IMPORTANT]
+> Aby se zabránilo chybě, ujistěte se, vaše cesta úplná instalace je menší než 80 znaků.
+>
 > [!TIP]
 > Při spuštění jako součást dávkového souboru, `--wait` možnost zajišťuje, že `vs_enterprise.exe` proces čeká na dokončení instalace je dříve, než vrátí ukončovací kód. To je užitečné, pokud chce správce podnikové sítě provádět další akce instalace byla dokončena (například [použít kód product key pro úspěšnou instalaci](automatically-apply-product-keys-when-deploying-visual-studio.md)) ale musí počkat na dokončení zpracování instalace Návratový kód z této instalace.  Pokud nepoužijete `--wait`, `vs_enterprise.exe` proces ukončí před dokončením instalace a vrátí nesprávné ukončovací kód, který nepředstavuje stavu operace instalace.
+
 
 Při instalaci z rozložení, je obsah, který je nainstalován získaných z rozložení. Ale pokud vyberete součást, která se nenachází v rozložení, ji bude možné získat z Internetu.  Pokud chcete zabránit ve stahování veškerý obsah, který nebyl nalezen v rozložení, použijte instalační program sady Visual Studio `--noWeb` možnost.  Pokud `--noWeb` se používá a rozložení chybí veškerý obsah, který je se rozhodli nainstalovat, instalace selže.
 

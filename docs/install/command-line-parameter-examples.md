@@ -1,7 +1,7 @@
 ---
 title: Příklady parametrů příkazového řádku pro instalaci
 description: Přizpůsobení těchto příkladech, chcete-li vytvořit vlastní instalaci sady Visual Studio z příkazového řádku.
-ms.date: 11/14/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6584d1b1864712a1c97b8d2405e7b366c5dd69d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59dfe6ebb9518bbdea6edf11108f1cb27cd5d6a3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989984"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345515"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -28,7 +28,7 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
 > Všechny příkazy vyžadovat zvýšení oprávnění pro správu a řízení uživatelských účtů, výzva se zobrazí, pokud proces není spuštěn řádku se zvýšenými oprávněními.
 >
 > [!NOTE]
->  Můžete použít `^` znak na konci příkazového řádku ke zřetězení více řádků do jediného příkazu. Alternativně můžete umístit společně na jediném řádku tyto řádky. V prostředí PowerShell, je ekvivalentní prvními (`` ` ``) znaků.
+> Můžete použít `^` znak na konci příkazového řádku ke zřetězení více řádků do jediného příkazu. Alternativně můžete umístit společně na jediném řádku tyto řádky. V prostředí PowerShell, je ekvivalentní prvními (`` ` ``) znaků.
 
 ## <a name="using---installpath"></a>Pomocí--installPath
 
@@ -83,13 +83,15 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
    --includeRecommended
   ```
 
-## <a name="using---includerecommended"></a>Pomocí--includeRecommended
+## <a name="using---all"></a>Používání – vše
 
 * Interaktivní instalací všechny úlohy a komponenty, které jsou k dispozici v edici Visual Studio 2017 Enterprise:
 
   ```cmd
-  vs_enterprise.exe --all --includeRecommended --includeOptional
+  vs_enterprise.exe --all
   ```
+
+## <a name="using---includerecommended"></a>Pomocí--includeRecommended
 
 * Druhý, pojmenovanou instanci sady Visual Studio 2017 Professional můžete nainstalujte na počítač s Visual Studio 2017 Community edition už nainstalovaná s podporou pro vývoj v Node.js:
 

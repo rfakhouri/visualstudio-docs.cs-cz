@@ -1,5 +1,5 @@
 ---
-title: Návěstí bylo předefinováno | Microsoft Docs
+title: Návěstí bylo předefinováno | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788733"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347811"
 ---
 # <a name="label-redefined"></a>Návěstí bylo předefinováno
-Vytvoření nového štítku, ale zadali název existující štítek. Popisky lze použít k označení bloky kódu, ale v rámci zadaného oboru, musí být jedinečný.  
+Vytvořit nový popisek, ale zadali název existujícího popisku. Popisky lze použít k označení bloky kódu, ale v rámci zadaného oboru, musí být jedinečný.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Zajistěte, aby všechny popisky, které můžete použít v programy jedinečný v rámci svých příslušných oborů.  
+-   Ujistěte se, že jsou všechny popisky, které používáte ve svých programech jedinečný v rámci svých odpovídajících oborů.  
   
 ## <a name="see-also"></a>Viz také  
  [Příkaz s popiskem](../../javascript/reference/labeled-statement-javascript.md)   
  [Switch – příkaz](../../javascript/reference/switch-statement-javascript.md)   
- [Příkaz BREAK](../../javascript/reference/break-statement-javascript.md)   
- [Continue – příkaz](../../javascript/reference/continue-statement-javascript.md)
+ [BREAK – příkaz](../../javascript/reference/break-statement-javascript.md)   
+ [continue – příkaz](../../javascript/reference/continue-statement-javascript.md)

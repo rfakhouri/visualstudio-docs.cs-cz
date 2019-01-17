@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a4b5416c6e37e59a60206bd21606b5214f05a269
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096925"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347452"
 ---
 # <a name="vbarray-expected"></a>Byl očekáván objekt VBArray
 Můžete zadat objekt, který nebyl safeArray jazyka Visual Basic, když byl očekáván jeden.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnThreadRequestComplete | Microsoft Docs
+title: IDebugApplicationThreadEvents110::OnThreadRequestComplete | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4541ca6dbdb4756a5b1eee286e929385143323de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 775aa19c3343450c6f185de949cb0328f2df4b7a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793857"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347720"
 ---
 # <a name="idebugapplicationthreadevents110onthreadrequestcomplete"></a>IDebugApplicationThreadEvents110::OnThreadRequestComplete
-Volání do vlákno pomocí PDM vlákno přepínání byla dokončena.  
+Volání do vlákna použití vlákna PDM přepínání byla dokončena.  
   
 > [!IMPORTANT]
->  [Idebugapplicationthreadevents110 – rozhraní](../../winscript/reference/idebugapplicationthreadevents110-interface.md) je implementovaná pomocí PDM v11.0 a větší. Nachází se v souboru activdbg100.h.  
+>  [Idebugapplicationthreadevents110 – rozhraní](../../winscript/reference/idebugapplicationthreadevents110-interface.md) je implementováno komponentou Pdm verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,4 +37,4 @@ HRESULT OnThreadRequestComplete( void );
  Tato metoda nemá žádné parametry.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplicationthreadevents110 – rozhraní](../../winscript/reference/idebugapplicationthreadevents110-interface.md)
+ [IDebugApplicationThreadEvents110 – rozhraní](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

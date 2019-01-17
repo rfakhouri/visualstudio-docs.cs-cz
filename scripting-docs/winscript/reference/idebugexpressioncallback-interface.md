@@ -1,5 +1,5 @@
 ---
-title: Idebugexpressioncallback – rozhraní | Microsoft Docs
+title: Idebugexpressioncallback – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8ec9ca99a75b4e439cecab8ecc36193d04997b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e97b5755a8ea9fefb7456d255a2c0b417c3395cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794115"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347577"
 ---
 # <a name="idebugexpressioncallback-interface"></a>IDebugExpressionCallBack – rozhraní
-Poskytuje stav události související s průběh `IDebugExpression` vyhodnocení.  
+Poskytuje stav události související s průběh `IDebugExpression` hodnocení.  
   
 ## <a name="methods"></a>Metody  
- Kromě metod zděděno z `IUnknown`, `IDebugExpressionCallBack` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IDebugExpressionCallBack` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugExpressionCallBack::onComplete](../../winscript/reference/idebugexpressioncallback-oncomplete.md)|Označuje, že je dokončení vyhodnocení výrazu.|
+|[IDebugExpressionCallBack::onComplete](../../winscript/reference/idebugexpressioncallback-oncomplete.md)|Označuje, že je kompletní vyhodnocení výrazu.|

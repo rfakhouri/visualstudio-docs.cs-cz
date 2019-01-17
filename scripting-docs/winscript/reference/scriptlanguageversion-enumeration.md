@@ -1,5 +1,5 @@
 ---
-title: SCRIPTLANGUAGEVERSION – výčet | Microsoft Docs
+title: Scriptlanguageversion – výčet | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4cee2966b326ca7b4c258ffdb85b6fa71d90992
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 374025b7564c058ae89064b6a27384c9075a30f9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796374"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350099"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>SCRIPTLANGUAGEVERSION – výčet
 Určuje možné skriptování verze.  
@@ -33,9 +33,9 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
 |||  
 |-|-|  
 |SCRIPTLANGUAGEVERSION_DEFAULT|Výchozí verze. Celočíselná hodnota je 0.|  
-|SCRIPTLANGUAGEVERSION_5_7|Windows skriptování verzi 5.7. Celočíselná hodnota je 1.|  
-|SCRIPTLANGUAGEVERSION_5_8|Verze 5.8 skriptů systému Windows. Celočíselná hodnota je 2.|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows Scripting verzi 5.7. Celočíselná hodnota je 1.|  
+|SCRIPTLANGUAGEVERSION_5_8|Windows Scripting verze 5.8. Celočíselná hodnota je 2.|  
 |SCRIPTLANGUAGEVERSION_MAX|Maximální verze. Celočíselná hodnota je 255.|  
   
 ## <a name="see-also"></a>Viz také  
- [Aktivních skriptů konstanty, výčty a kódy chyb](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Konstanty, výčty a kódy chyb aktivních skriptů](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

@@ -1,5 +1,5 @@
 ---
-title: Ienumdebugstackframes – rozhraní | Microsoft Docs
+title: Ienumdebugstackframes – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0174839a25695e9594b4cbbf4db6a302f5a2446
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2ad0910971e96a70d894fc0e0244e8799b6c525c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794655"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349735"
 ---
 # <a name="ienumdebugstackframes-interface"></a>IEnumDebugStackFrames – rozhraní
-Vytvoří výčet rámce zásobníku odpovídající na vlákno.  
+Vytváří výčet rámců zásobníku odpovídající vlákno.  
   
 ## <a name="methods"></a>Metody  
- Kromě metod zděděno z `IUnknown`, `IEnumDebugStackFrames` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IEnumDebugStackFrames` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
 |[IEnumDebugStackFrames::Next](../../winscript/reference/ienumdebugstackframes-next.md)|Načte zadaný počet segmentů v pořadí výčtu.|  
-|[IEnumDebugStackFrames::Skip](../../winscript/reference/ienumdebugstackframes-skip.md)|Přeskočí zadaný počet segmentů v posloupnosti výčtu.|  
-|[IEnumDebugStackFrames::Reset](../../winscript/reference/ienumdebugstackframes-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[IEnumDebugStackFrames::Clone](../../winscript/reference/ienumdebugstackframes-clone.md)|Vytvoří enumerátor, který obsahuje stejného stavu jako aktuální enumerátor.|
+|[IEnumDebugStackFrames::Skip](../../winscript/reference/ienumdebugstackframes-skip.md)|Vynechá zadaný počet segmentů v sekvenci výčtu.|  
+|[IEnumDebugStackFrames::Reset](../../winscript/reference/ienumdebugstackframes-reset.md)|Návrat na začátek sekvence výčtu.|  
+|[IEnumDebugStackFrames::Clone](../../winscript/reference/ienumdebugstackframes-clone.md)|Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor.|

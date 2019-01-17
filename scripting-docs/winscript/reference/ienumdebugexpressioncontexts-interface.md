@@ -1,5 +1,5 @@
 ---
-title: Ienumdebugexpressioncontexts – rozhraní | Microsoft Docs
+title: Ienumdebugexpressioncontexts – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 691fe68e78567026bd6ad96883b59aa276481191
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794661"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347590"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>IEnumDebugExpressionContexts – rozhraní
 Vytvoří výčet kolekce `IDebugExpressionContexts` objekty.  
   
- Kromě metod zděděno z `IUnknown`, `IEnumDebugExpressionContexts` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IEnumDebugExpressionContexts` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
 |[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Načte zadaný počet segmentů v pořadí výčtu.|  
-|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Přeskočí zadaný počet segmentů v posloupnosti výčtu.|  
-|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Vytvoří enumerátor, který obsahuje stejného stavu jako aktuální enumerátor.|
+|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Vynechá zadaný počet segmentů v sekvenci výčtu.|  
+|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Návrat na začátek sekvence výčtu.|  
+|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor.|

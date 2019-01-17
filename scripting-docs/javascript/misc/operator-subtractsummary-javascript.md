@@ -1,5 +1,5 @@
 ---
-title: Souhrn operátorů (JavaScript) | Microsoft Docs
+title: Souhrn operátorů (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -18,15 +18,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 85eb607ed868d034860d44b3ecaf69a5d8d55c89
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753572"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349319"
 ---
 # <a name="operator-summary-javascript"></a>Souhrn operátorů (JavaScript)
-Následující tabulka uvádí [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operátory v jejich odpovídajících kategorií.  
+Následující tabulka uvádí [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operátory v jejich příslušných kategorií.  
   
 ## <a name="computational-operators"></a>Výpočetní operátory  
   
@@ -34,7 +34,7 @@ Následující tabulka uvádí [!INCLUDE[javascript](../../javascript/includes/j
 |--------------|------------|  
 |[Přidání](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Snížení](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
-|[dělení](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[Dělení](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[Přírůstek](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Zbývající](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Násobení](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
@@ -45,30 +45,30 @@ Následující tabulka uvádí [!INCLUDE[javascript](../../javascript/includes/j
   
 |Operátor|Symbol|  
 |--------------|------------|  
-|[Comma](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[Podmíněné (unární)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
-|[Rovnosti](../../javascript/reference/comparison-operators-javascript.md)|==|  
+|[Čárka](../../javascript/reference/comma-operator-decrement-javascript.md)|, |  
+|[Podmíněný (Ternary)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
+|[Rovnost](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Větší než](../../javascript/reference/comparison-operators-javascript.md)|>|  
 |[Větší než nebo rovno](../../javascript/reference/comparison-operators-javascript.md)|>=|  
 |[Identita](../../javascript/reference/comparison-operators-javascript.md)|===|  
-|[Nerovnosti](../../javascript/reference/comparison-operators-javascript.md)|!=|  
+|[Nerovnost](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Menší než](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[Menší než nebo rovno](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[Logické a](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
-|[Logická NEGACE](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
-|[Logické nebo](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[Nonidentity](../../javascript/reference/comparison-operators-javascript.md)|!==|  
+|[Logický operátor AND](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
+|[Logický operátor NOT](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
+|[Logická nebo](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
+|[Neidentity](../../javascript/reference/comparison-operators-javascript.md)|!==|  
   
 ## <a name="bitwise-operators"></a>Bitové operátory  
   
 |Operátor|Symbol|  
 |--------------|------------|  
 |[Bitový operátor AND](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
-|[Bitové posunutí vlevo](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
+|[Bitový Posun vlevo](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
 |[Bitový operátor NOT](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[Bitový nebo](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
+|[Bitový operátor nebo](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
 |[Bitového posunutí doprava](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
-|[Bitové operace XOR](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
+|[Bitový operátor XOR](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
 |[Posunutí doprava bez znaménka](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
   
 ## <a name="assignment-operators"></a>Operátory přiřazení  

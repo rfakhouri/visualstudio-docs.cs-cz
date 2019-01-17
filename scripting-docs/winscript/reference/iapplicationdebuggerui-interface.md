@@ -1,5 +1,5 @@
 ---
-title: Iapplicationdebuggerui – rozhraní | Microsoft Docs
+title: Iapplicationdebuggerui – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbaa04f6790ffc4d80447a6745ca82cc8dba6802
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e3c5f9e4cabeb4fba31bb039a7cf673ca1759860
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793668"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348903"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI – rozhraní
-Implementované ladicí program integrované vývojové prostředí (IDE) (kromě `IApplicationDebugger`) umožnit externí komponenta větší kontrolu nad uživatelské rozhraní (UI) ladicího programu.  
+Implementováno ladicím programu integrovaného vývojového prostředí (IDE) (kromě `IApplicationDebugger`) pro externí komponenta poskytují větší kontrolu nad uživatelského rozhraní (UI) ladicího programu.  
   
- Kromě metod zděděno z `IUnknown`, `IApplicationDebuggerUI` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IApplicationDebuggerUI` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Otevře okno obsahující zadanou ladění dokumentu, který má nejvyšší v ladicím programu uživatelské rozhraní.|  
-|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Zobrazí se okno obsahující kontext daného dokumentu, který má nejvyšší v uživatelském rozhraní ladicího programu a posune okno kontextu.|
+|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Zobrazí se okno, obsahující zadanou ladění dokument nahoru v ladicím programu uživatelského rozhraní.|  
+|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Zobrazí se okno obsahující daný dokument kontext do horní části v uživatelském rozhraní ladicího programu a posune okno kontextu.|

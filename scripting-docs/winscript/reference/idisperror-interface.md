@@ -1,5 +1,5 @@
 ---
-title: Idisperror – rozhraní | Microsoft Docs
+title: Idisperror – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f139d317db5aa00f03f8e9abd71020e5ff35b03
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b717ebfe740a9b356513bb0f15e90c629a14e147
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794586"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345835"
 ---
 # <a name="idisperror-interface"></a>IDispError – rozhraní
 Poskytuje podrobné kontextové informace o chybě.  
@@ -27,15 +27,15 @@ Poskytuje podrobné kontextové informace o chybě.
 > [!NOTE]
 >  Toto rozhraní není implementováno.  
   
- Kromě metod zděděno z `IUnknown`, `IDispError` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IDispError` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Načte konkrétní typ informace o chybě.|  
+|[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Získá konkrétní typ informace o chybě.|  
 |[IDispError::GetNext](../../winscript/reference/idisperror-getnext.md)|Načte další `IDispError` objektu.|  
-|[IDispError::GetHresult](../../winscript/reference/idisperror-gethresult.md)|Načte kód chyby z `IDispError` objektu.|  
-|[IDispError::GetSource](../../winscript/reference/idisperror-getsource.md)|Vrátí identifikátor programový závislých na jazyku pro třídu nebo aplikaci, která vyvolá chybu.|  
-|[IDispError::GetHelpInfo](../../winscript/reference/idisperror-gethelpinfo.md)|Vrátí cestu k souboru nápovědy a ID kontextu téma, které popisuje chybu, pokud je to možné.|  
+|[IDispError::GetHresult](../../winscript/reference/idisperror-gethresult.md)|Získá kód chyby z `IDispError` objektu.|  
+|[IDispError::GetSource](../../winscript/reference/idisperror-getsource.md)|Vrátí závislá na jazyku programový identifikátor pro třídu nebo aplikace, která vyvolala chybu.|  
+|[IDispError::GetHelpInfo](../../winscript/reference/idisperror-gethelpinfo.md)|Vrátí cestu k souboru nápovědy a ID kontextu témat, která popisuje chybu, pokud je to možné.|  
 |[IDispError::GetDescription](../../winscript/reference/idisperror-getdescription.md)|Vrátí textový popis chyby.|

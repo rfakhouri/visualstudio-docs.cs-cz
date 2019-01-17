@@ -1,5 +1,5 @@
 ---
-title: Chyba syntaxe (JavaScript) | Microsoft Docs
+title: Chyba syntaxe (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788715"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345367"
 ---
 # <a name="syntax-error-javascript"></a>Chyba syntaxe (JavaScript)
-Vytvořit příkaz, který porušuje jeden nebo více gramaticky pravidel [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Vytvořen příkaz, který je v rozporu jeden nebo více pravidel gramatické [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
 -   Zkontrolujte syntaxi aplikace na uvedené číslo řádku.  
   
--   Podívejte se na formát závorkách nebo složené závorky.  
+-   Vyhledejte formát kulatých závorek nebo složených závorek.  
   
 ## <a name="see-also"></a>Viz také  
  [Error – objekt](../../javascript/reference/error-object-javascript.md)

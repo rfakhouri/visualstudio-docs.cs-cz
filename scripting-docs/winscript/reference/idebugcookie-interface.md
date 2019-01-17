@@ -1,5 +1,5 @@
 ---
-title: Idebugcookie – rozhraní | Microsoft Docs
+title: Idebugcookie – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23f6796c278807951bbc7cfa37bec48e4dd73f4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d47995fbf6c713af0f1d0213dbf5c3c98d54a0e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793947"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344022"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie – rozhraní
-Umožňuje ladění soubor cookie k nastavení pro použití s `IMachineDebugManagerCookie` rozhraní. Další informace najdete v tématu [imachinedebugmanagercookie – rozhraní](../../winscript/reference/imachinedebugmanagercookie-interface.md). Toto rozhraní je implementováno ve v procesu ladění Manager (PDM) a používané ve skriptu ladicí programy.  
+Umožňuje ladění souborů cookie pro nastavení pro použití s `IMachineDebugManagerCookie` rozhraní. Další informace najdete v tématu [imachinedebugmanagercookie – rozhraní](../../winscript/reference/imachinedebugmanagercookie-interface.md). Toto rozhraní je implementováno pomocí v procesu ladění správce (PDM) a využívat ladicími skriptu.  
   
 ## <a name="methods"></a>Metody  
- Kromě metod zděděno z `IUnknown`, `IDebugCookie` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IDebugCookie` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
 |[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Nastaví soubor cookie ladění aplikace.|  
   
 ## <a name="see-also"></a>Viz také  
- [Imachinedebugmanagercookie – rozhraní](../../winscript/reference/imachinedebugmanagercookie-interface.md)
+ [IMachineDebugManagerCookie – rozhraní](../../winscript/reference/imachinedebugmanagercookie-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Imachinedebugmanager – rozhraní | Microsoft Docs
+title: Imachinedebugmanager – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c092edc4ed437926c28c19bd331b3b50f8cd4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 56f06908efd7022988b742a783cb56544bffe3ea
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794793"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347824"
 ---
 # <a name="imachinedebugmanager-interface"></a>IMachineDebugManager – rozhraní
-Primární rozhraní pro ladění správce počítače. Toto rozhraní je podobná `IMachineDebugManagerCookie` rozhraní.  
+Primární rozhraní pro ladění správce počítače. Toto rozhraní je podobný `IMachineDebugManagerCookie` rozhraní.  
   
- Kromě metod zděděno z `IUnknown`, `IMachineDebugManager` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IMachineDebugManager` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Přidá aplikaci do spuštění seznam aplikací.|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Přidá aplikaci do běhu seznamu aplikací.|  
 |[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Odebere aplikaci ze spuštění seznam aplikací.|  
-|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Vrátí enumerátor aktuálního seznamu spuštěných aplikací.|  
+|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Vrátí enumerátor aktuální seznam spuštěných aplikací.|  
   
 ## <a name="see-also"></a>Viz také  
- [Imachinedebugmanagercookie – rozhraní](../../winscript/reference/imachinedebugmanagercookie-interface.md)
+ [IMachineDebugManagerCookie – rozhraní](../../winscript/reference/imachinedebugmanagercookie-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Neplatný argument nahrazení | Microsoft Docs
+title: Neplatný argument nahrazení | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,22 +20,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788682"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346212"
 ---
 # <a name="invalid-replacer-argument"></a>Neplatný argument nahrazení
 Byl proveden pokus o vyvolání `JSON.stringify` s argumentem, který není platný. `replacer` Argument musí být funkce nebo pole.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Změna `replacer` argument funkce nebo pole.  
+-   Změnit `replacer` argumentu funkce nebo pole.  
   
 ## <a name="example"></a>Příklad  
- Kód v tomto příkladu způsobí chyba za běhu, protože `memberfilter` je objekt místo funkce nebo pole.  
+ Kód v tomto příkladu způsobí chybu modulu runtime, protože `memberfilter` je objekt namísto funkce nebo pole.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -50,6 +50,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Objekt JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON.Parse – funkce](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON – objekt](../../javascript/reference/json-object-javascript.md)   
+ [JSON.parse – funkce](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript – chyby za běhu](../../javascript/reference/javascript-run-time-errors.md)

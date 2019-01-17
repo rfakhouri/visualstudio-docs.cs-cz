@@ -1,5 +1,5 @@
 ---
-title: Nedefinovaný identifikátor | Microsoft Docs
+title: Nedefinovaný identifikátor | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788928"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346134"
 ---
 # <a name="undefined-identifier"></a>Nedefinovaný identifikátor
-Pokoušíte se o použijte identifikátor, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilátoru nebyl rozpoznán. Nedefinovaná hodnota se vrátí při každém použití:  
+Pokusili jste se použít identifikátor, který [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilátoru nebylo rozpoznáno. Nedefinovaná hodnota se vrátí při každém použití:  
   
--   proměnné, která neexistuje,  
+-   Proměnná, která neexistuje,  
   
--   proměnné, která byla deklarována, ale nikdy hodnota přiřazená,  
+-   Proměnná, která byla deklarována, ale nebyla nikdy hodnotu přiřazenou  
   
--   Vlastnost objektu, který neexistuje.  
+-   vlastnosti objektu, který neexistuje.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Deklarovat proměnnou s **var** – příkaz (jako v `var` x;).  
+-   Deklarujte proměnnou **var** – příkaz (jako v `var` x;).  
   
 ## <a name="see-also"></a>Viz také  
  [Proměnné](../../javascript/variables-javascript.md)   

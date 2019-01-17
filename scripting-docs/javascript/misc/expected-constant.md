@@ -1,5 +1,5 @@
 ---
-title: Byla očekávána konstanta | Microsoft Docs
+title: Byla očekávána konstanta | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a7cd9907da27ac07ff9e1c41157c2b2e08ef82ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788709"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344314"
 ---
 # <a name="expected-constant"></a>Byla očekávána konstanta
-Pokoušíte se o proměnnou (nikoli podmíněné kompilace) použít v příkazu testovací Podmíněná kompilace. Podmíněná kompilace testovací příkazy musí být konstanta.  
+Pokusili jste se použít ve výrazu podmíněné kompilace testovací proměnné (nikoli podmíněné kompilace). Příkazy podmíněné kompilace testu se musí vyhodnotit na konstantu.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
 -   Nahraďte proměnnou literál.  
   
--   Proměnné podmíněné kompilace nahraďte proměnnou.  
+-   Nahraďte proměnnou proměnnou podmíněné kompilace.  
   
 ## <a name="see-also"></a>Viz také  
  [Podmíněná kompilace](../../javascript/advanced/conditional-compilation-javascript.md)   

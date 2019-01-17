@@ -1,5 +1,5 @@
 ---
-title: Ienumdebugextendedpropertyinfo – rozhraní | Microsoft Docs
+title: IEnumDebugExtendedPropertyInfo Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,29 +18,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46815ff1fadd359e3200223dfe9041b6089ad3b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e8c4c7a517415497b21f80d9bf469877d7888f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794604"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346030"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>IEnumDebugExtendedPropertyInfo – rozhraní
 Vytvoří výčet `ExtendedDebugPropertyInfo` struktury.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IEnumDebugExtendedPropertyInfo`.  
+ V následující tabulce jsou uvedeny metody objektu `IEnumDebugExtendedPropertyInfo`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
+|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.|  
 |[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|Získá počet `ExtendedDebugPropertyInfo` struktury v enumerátor.|  
-|[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|Načte zadaný počet `ExtendedDebugPropertyInfo` struktury v posloupnosti výčtu.|  
-|[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Přeskočí zadaný počet `ExtendedDebugPropertyInfo` struktury v posloupnosti výčtu.|  
+|[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|Načte zadaný počet `ExtendedDebugPropertyInfo` struktury v sekvenci výčtu.|  
+|[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Vynechá zadaný počet `ExtendedDebugPropertyInfo` struktury v sekvenci výčtu.|  
 |[IEnumDebugExtendedPropertyInfo::Reset](../../winscript/reference/ienumdebugextendedpropertyinfo-reset.md)|Návrat na začátek pořadí výčtu.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: dbgprop.h  
   
 ## <a name="see-also"></a>Viz také  
- [Extendeddebugpropertyinfo – struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+ [ExtendedDebugPropertyInfo – struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

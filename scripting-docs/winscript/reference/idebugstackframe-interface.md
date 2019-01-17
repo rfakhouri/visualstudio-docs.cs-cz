@@ -1,5 +1,5 @@
 ---
-title: Idebugstackframe – rozhraní | Microsoft Docs
+title: Idebugstackframe – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36fa0ba2d1b4049ad41ff0502ed33be0a706d9f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0834abbedf88b911dd952c1f3928c5da3414abec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794412"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348539"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame – rozhraní
-Představuje logické zásobníku v zásobníku přístup z více vláken. Volání `IDebugStackFrame::QueryInterface` metoda získat `IDebugExpressionContext` rozhraní, což umožňuje výraz vyhodnocování a sledování systému windows.  
+Představuje rámec zásobníku logického zásobníku vlákna. Volání `IDebugStackFrame::QueryInterface` metodu k získání `IDebugExpressionContext` rozhraní, které umožňuje výraz hodnocení a sledovat.  
   
- Kromě metod zděděno z `IUnknown`, `IDebugStackFrame` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IDebugStackFrame` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Vrátí aktuální kontext kód přidružený rámce zásobníku.|  
-|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Vrátí kratší nebo dlouho textový popis rámce zásobníku.|  
-|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Vrátí kratší nebo dlouho textový popis jazyka.|  
-|[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Vrátí vlákno přidružené k této rámce zásobníku.|  
-|[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Vrátí prohlížeči vlastností pro aktuální rámec.|
+|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Vrátí aktuální kontext kódu přidružené k rámce zásobníku.|  
+|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Vrátí krátký nebo long textový popis rámce zásobníku.|  
+|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Vrátí krátký nebo long textový popis jazyka.|  
+|[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Vrátí vlákno přidružené k tento rámec zásobníku.|  
+|[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Vrátí prohlížeč vlastnost pro aktuální rámec.|

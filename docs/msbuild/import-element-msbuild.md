@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd8cdf4b97285b1c0793bb3e80ec85def432bdb4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900870"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348747"
 ---
 # <a name="import-element-msbuild"></a>Import – element (MSBuild)
 Importuje obsah jednoho souboru projektu do jiného souboru projektu.  
 
  \<Project>  
- \<Import >  
+ \<Import>  
 
 ## <a name="syntax"></a>Syntaxe  
 
@@ -56,7 +56,7 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 | Prvek | Popis |
 | - | - |
 | [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
-| [Importgroup –](../msbuild/importgroup-element.md) | Obsahuje kolekci `Import` prvky seskupené pod nadpisem nepovinnou podmínku. |
+| [ImportGroup](../msbuild/importgroup-element.md) | Obsahuje kolekci `Import` prvky seskupené pod nadpisem nepovinnou podmínku. |
 
 ## <a name="remarks"></a>Poznámky  
  S použitím `Import` element, můžete znovu použít kód, který je společná pro mnoho souborů projektu. Díky tomu je snazší údržbu kódu, protože všechny aktualizace, které provedete sdílený kód získat rozšíří do všech projektů, které naimportujete.  
@@ -71,10 +71,6 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 
  Schéma importovaném projektu je stejný jako u standardní projekt. I když [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] může být možné sestavit importovaném projektu, nepravděpodobné, protože importovaném projektu obvykle neobsahuje informace o vlastnosti, které k sadě nebo pořadí, ve kterém se spustí cíle. Importovaném projektu závisí na projektu, do kterého je importován předejte tyto informace.  
 
-> [!NOTE]
->  Do příkazového řádku MSBuilds práci import podmíněné příkazy, nefungují, pomocí nástroje MSBuild v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Podmíněné importy vyhodnocují se pomocí hodnoty konfigurace a platformy, které jsou nastaveny při načtení projektu. Pokud následně změn, které vyžadují přehodnocení podmíněné příkazy v souboru projektu, například změna platformu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] přehodnotí podmínky vlastností a položek, ale ne importy. Protože podmíněné import již není znovu, import se přeskočí.  
-> 
->  Chcete-li tento problém obejít, umístěte podmíněné importy *.targets* soubory nebo vložení kód s podmínkou blokovat, jako [zvolit – element (MSBuild)](../msbuild/choose-element-msbuild.md) bloku.  
 
 ## <a name="wildcards"></a>Zástupné znaky  
  V rozhraní .NET Framework 4 nástroj MSBuild umožňuje zástupné znaky v atributu projektu. Po zástupné znaky se nalezeny všechny shody jsou seřazené (pro reprodukovatelnost) a potom jejich importování v tomto pořadí jakoby pořadí měli explicitně nastavit.  

@@ -1,5 +1,5 @@
 ---
-title: Iperpropertybrowsing2 – rozhraní 1 | Microsoft Docs
+title: Iperpropertybrowsing2 – rozhraní 1 | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794670"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344021"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>Iperpropertybrowsing2 – rozhraní 1
 Přístupy nabízí informace na stránkách vlastností objektu.  
@@ -32,10 +32,10 @@ Přístupy nabízí informace na stránkách vlastností objektu.
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|`GetDisplayString`|Vrátí textový řetězec popisující zadanou vlastnost.|  
-|`MapPropertyToPage`|Vrátí CLSID vlastností stránky, která umožňuje zpracování zadanou vlastnost.|  
-|`GetPredefinedStrings`|Vrátí spočítané pole řetězců (`LPOLESTR` ukazatele) výpis popisy povolených hodnot, které může přijmout zadanou vlastnost.|  
-|`SetPredefinedValue`|Nastaví hodnotu vlastnosti na hodnotu předdefinované identifikovaný tokenu`dwCookie.`|  
+|`GetDisplayString`|Vrátí textový řetězec s popisem zadanou vlastnost.|  
+|`MapPropertyToPage`|Vrátí identifikátor CLSID stránky vlastností, který umožňuje manipulaci s zadané vlastnosti.|  
+|`GetPredefinedStrings`|Vrátí spočítaný počet pole řetězců (`LPOLESTR` ukazatele) seznam popisů povolených hodnot, které může přijmout zadanou vlastnost.|  
+|`SetPredefinedValue`|Nastaví hodnotu vlastnosti předdefinovanou hodnotu identifikovaný token `dwCookie.`|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: dbgprop.h

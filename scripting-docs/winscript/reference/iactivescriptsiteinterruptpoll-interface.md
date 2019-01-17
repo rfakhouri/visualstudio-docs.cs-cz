@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptsiteinterruptpoll – rozhraní | Microsoft Docs
+title: Iactivescriptsiteinterruptpoll – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6723d430b10d7278e47d4273ed10ae08762051e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7b93a0e353e342d805d933030b2ad4d2babb9ab9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793623"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345081"
 ---
 # <a name="iactivescriptsiteinterruptpoll-interface"></a>IActiveScriptSiteInterruptPoll – rozhraní
-`IActiveScriptSiteInterruptPoll` Rozhraní, které umožňuje hostitele k určení, že by měl skript ukončen.  
+`IActiveScriptSiteInterruptPoll` Rozhraní umožňuje hostitele k určení, zda by měla ukončit skriptu.  
   
 ## <a name="methods"></a>Metody  
- Kromě metod zděděno z `IUnknown`, `IActiveScriptSiteInterruptPoll` rozhraní zpřístupní metodu.  
+ Kromě metod zděděných z `IUnknown`, `IActiveScriptSiteInterruptPoll` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|Umožňuje hostitele k určení, že by měl skript ukončen.|
+|[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|Umožňuje hostiteli k určení, zda by měla ukončit skriptu.|

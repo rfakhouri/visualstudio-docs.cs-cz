@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855128"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345237"
 ---
 # <a name="expected-identifier-string-or-number"></a>Byl očekáván identifikátor, řetězec nebo číslo
 Nesprávná syntaxe literálu lze deklarovat objekt literálu. Vlastnosti literálu objektu musí být identifikátor, řetězec nebo číslo. Literál objektu (také nazývané "inicializátor objektu") se skládá z čárkou oddělený seznam párů: hodnota vlastnosti, všechny uzavřené v závorkách. Příklad:  

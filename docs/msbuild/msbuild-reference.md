@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f365410421f490aeac1534eebc01630849ef1195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8966512e2d2ad58edaff41ac21301dfce437152c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872262"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347694"
 ---
 # <a name="msbuild-reference"></a>Referenční dokumentace nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je systém sestavení pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Následující odkazy vás přesměrují na témata, která obsahují [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] referenční informace.  
@@ -72,9 +72,6 @@ ms.locfileid: "53872262"
  [Přehled nástroje MSBuild](../msbuild/msbuild.md)     
  Zavádí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a poskytuje odkazy na témata, která popisují, jak ho použít k sestavení projektů.  
   
- [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
- Obsahuje odkaz na obor názvů převodu.  
-  
  [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Obsahuje odkaz na obor názvů hodnocení.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "53872262"
   
  [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) obsahuje odkaz na obor názvů protokolování.  
   
- [Microsoft.Build.Task](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Obsahuje odkaz na obor názvů úlohy.  
   
  [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) obsahuje odkaz na obor názvů nástroje.

@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8ea26787427844a92417bf525dba271063cba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b273b770a1d82edbf5bbbe26c0865060234b852
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793956"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346485"
 ---
 # <a name="idebugapplicationnode100setfilterforeventsink"></a>IDebugApplicationNode100::SetFilterForEventSink
-Nastaví filtr pro určitý [idebugapplicationnodeevents – rozhraní](../../winscript/reference/idebugapplicationnodeevents-interface.md) implementace. To umožňuje skriptu ladicí filtrovat generované kompilátorem podřízené uzly aplikace tak, aby PDM budou už odesílat události, když jsou tyto vytvořen nebo odebrat programy. Ve výchozím nastavení budou odeslány všechny uzly.  
+Nastaví filtr na konkrétním [idebugapplicationnodeevents – rozhraní](../../winscript/reference/idebugapplicationnodeevents-interface.md) implementace. Umožňuje skriptu ladicí programy k filtrování vygenerovaný kompilátorem podřízené uzly aplikace tak, aby PDM už bude odesílat události, kdy tyto vytvořené nebo odebrat. Ve výchozím nastavení se pošle všem uzlům.  
   
 > [!IMPORTANT]
->  [Idebugapplicationnode100 – rozhraní](../../winscript/reference/idebugapplicationnode100-interface.md) je implementovaná pomocí PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
+>  [Idebugapplicationnode100 – rozhraní](../../winscript/reference/idebugapplicationnode100-interface.md) je implementováno pomocí PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,4 +41,4 @@ HRESULT SetFilterForEventSink(        [in] DWORD dwCookie,        [in] APPLICATI
  Filtr.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplicationnode100 – rozhraní](../../winscript/reference/idebugapplicationnode100-interface.md)
+ [IDebugApplicationNode100 – rozhraní](../../winscript/reference/idebugapplicationnode100-interface.md)

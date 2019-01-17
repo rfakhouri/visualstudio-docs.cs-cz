@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f47778075b0395e4f0791d8f485188d40fab87a4
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802589"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344171"
 ---
 # <a name="cannot-assign-to-this"></a>Nelze přiřazovat do objektu 'this'
 Pokusili jste se přiřadit hodnotu **to**. **to** je [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] – klíčové slovo, který odkazuje na buď:

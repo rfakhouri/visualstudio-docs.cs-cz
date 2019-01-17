@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9e29131c4ecf4f476a30da94ec67676d6bea347
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836174"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346043"
 ---
 # <a name="expected-hexadecimal-digit"></a>Byla očekávána šestnáctková číslice.
 Vytvořili jste nesprávný řídicí sekvence Unicode. Řídicí sekvence Unicode začněte s \u, za nímž následuje přesně čtyřmi šestnáctkovými číslicemi (ne více a méně). Šestnáctková číslice v kódování Unicode mohou obsahovat pouze číslice 0 – 9, velká písmena A – F a malá písmena – f. Následující příklad ukazuje správně vytvořená řídicí sekvence Unicode.  

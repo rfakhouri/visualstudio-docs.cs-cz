@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnResumeFromBreakPoint | Microsoft Docs
+title: IDebugApplicationThreadEvents110::OnResumeFromBreakPoint | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8e526faf8c83b8cb322d63a471aab8def063b33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 38d1a297884dd84dd5fc39f96a244787f50da115
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793806"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349930"
 ---
 # <a name="idebugapplicationthreadevents110onresumefrombreakpoint"></a>IDebugApplicationThreadEvents110::OnResumeFromBreakPoint
-Vlákno obnovuje z zarážku a bude active ještě jednou.  
+Vlákno obnovuje od bodu přerušení a bude aktivováno jednou znovu.  
   
 > [!IMPORTANT]
->  [Idebugapplicationthreadevents110 – rozhraní](../../winscript/reference/idebugapplicationthreadevents110-interface.md) je implementovaná pomocí PDM v11.0 a větší. Nachází se v souboru activdbg100.h.  
+>  [Idebugapplicationthreadevents110 – rozhraní](../../winscript/reference/idebugapplicationthreadevents110-interface.md) je implementováno komponentou Pdm verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,4 +37,4 @@ HRESULT OnResumeFromBreakPoint( void );
  Tato metoda nemá žádné parametry.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplicationthreadevents110 – rozhraní](../../winscript/reference/idebugapplicationthreadevents110-interface.md)
+ [IDebugApplicationThreadEvents110 – rozhraní](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

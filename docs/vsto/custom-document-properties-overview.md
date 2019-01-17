@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936890"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349501"
 ---
 # <a name="custom-document-properties-overview"></a>Přehled přizpůsobených vlastností dokumentu
 
@@ -38,7 +38,7 @@ Tato vlastnost obsahuje identifikátor CLSID rozhraní v součásti zavaděče �
 
 Tato vlastnost obsahuje řetězec, který obsahuje podrobné informace o manifestu nasazení pro přizpůsobení. Další informace o manifestech najdete v tématu [aplikace a manifestů nasazení v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Hodnota vlastnosti The_AssemblyLocation může mít různé formáty, v závislosti na tom, jak se řešení nasadí:
+ \_Hodnota vlastnosti AssemblyLocation může mít různé formáty, v závislosti na tom, jak se řešení nasadí:
 
 - Pokud toto řešení je publikována z webové stránky, cesta UNC nebo jednotka CD nebo USB, vlastnosti _AssemblyLocation má formát *DeploymentManifestPath*|*SolutionID*. Tento řetězec je příklad:
 

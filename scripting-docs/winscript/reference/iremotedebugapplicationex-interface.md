@@ -1,5 +1,5 @@
 ---
-title: Iremotedebugapplicationex – rozhraní | Microsoft Docs
+title: Iremotedebugapplicationex – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,26 +14,26 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3360cea0d1649348a795356ad827b32b6f8ebc19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2fd51d5bdd076199167e52f685f16572756f9740
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794973"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346550"
 ---
 # <a name="iremotedebugapplicationex-interface"></a>IRemoteDebugApplicationEx – rozhraní
-Představuje běžící aplikaci. Nemusí se tak, aby odpovídaly procesu operačního systému. Ladicí program obvykle cílí aplikace pro ladění. Správce ladění procesu obvykle implementuje objekt aplikace.  
+Představuje běžící aplikaci. Nemusí se tak, aby odpovídaly k procesu operačního systému. Ladicí program obvykle, zaměřuje na aplikace pro ladění. Správce ladění procesu obvykle implementují objektu aplikace.  
   
- Kromě metod zděděno z `IUnknown`, `IRemoteDebugApplicationEx` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IRemoteDebugApplicationEx` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Vrátí Identifikátor procesu pro hostitelskou aplikaci.|  
-|GetHostMachineName|Vrátí název počítače, který hostitelskou aplikaci běží na.|  
-|[IRemoteDebugApplicationEx:SetLocale](../../winscript/reference/iremotedebugapplicationex-setlocale.md)|Nastavuje jazyk pro lokalizaci ladicí program.|  
-|[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Ladicí program v režimu krokování vynutí.|  
+|[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Vrátí ID procesu pro hostitelskou aplikaci.|  
+|GetHostMachineName|Vrátí název počítače, na kterém běží hostitelská aplikace na.|  
+|[IRemoteDebugApplicationEx:SetLocale](../../winscript/reference/iremotedebugapplicationex-setlocale.md)|Nastaví jazyk pro lokalizaci ladicího programu.|  
+|[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Vynutí ladicí program v režimu krokování.|  
 |[IRemoteDebugApplicationEx:RevokeBreak](../../winscript/reference/iremotedebugapplicationex-revokebreak.md)|Odvolá příkaz break.|  
-|SetProxyBlanketAndAddRef|Aktualizuje informace o zabezpečení COM na proxy server pro objekt ladicí program k zajištění kompatibility s vzdáleného ladění z operačního systému Windows 95.|  
-|ReleaseFromSetProxyBlanket|Addref – vydání z SetProxyBlanketAndAddRef.|
+|SetProxyBlanketAndAddRef|Aktualizuje informace o zabezpečení COM na serveru proxy pro objekt ladicího programu k zajištění kompatibility ve vzdálené ladění z operačního systému Windows 95.|  
+|ReleaseFromSetProxyBlanket|AddRef verzí z SetProxyBlanketAndAddRef.|

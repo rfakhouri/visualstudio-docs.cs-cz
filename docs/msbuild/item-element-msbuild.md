@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab46fa67230ef4a42c6025d99a689ef37d213b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d032e16acc0b3858f81f0989442b8fcfb351047
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908277"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345614"
 ---
 # <a name="item-element-msbuild"></a>Item – element (MSBuild)
 Obsahuje uživatelem definovanou položku a jeho metadata. Všechny položky, který se používá v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musí být zadán jako podřízený objekt `ItemGroup` elementu.  
 
  \<Project>  
- \<ItemGroup >  
+ \<ItemGroup>  
  \<Položka >  
 
 ## <a name="syntax"></a>Syntaxe  
@@ -122,5 +122,5 @@ Následující příklad kódu ukazuje, jak používat `Update` atribut k úprav
 
 ## <a name="see-also"></a>Viz také:  
  [Položky](../msbuild/msbuild-items.md)   
- [Vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md)   
+ [Společné položky projektu nástroje MSBuild](../msbuild/common-msbuild-project-items.md) [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md)   
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)

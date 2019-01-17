@@ -1,5 +1,5 @@
 ---
-title: Skriptovací rozhraní systému Windows odkaz | Microsoft Docs
+title: Referenční dokumentace rozhraní Windows Script | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce1f8beb9a17d6109ec4d199393fcb3f8a8d7761
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e37c7957024a46522438e3ac625e5b14c09b178f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796341"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348019"
 ---
 # <a name="windows-script-interfaces-reference"></a>Referenční dokumentace skriptovacích rozhraní systému Windows
 Následující části se věnují rozhraní Windows skriptů.  
@@ -33,7 +33,7 @@ Následující části se věnují rozhraní Windows skriptů.
   
  [Rozhraní profileru aktivních skriptů](../../winscript/reference/active-script-profiler-interfaces.md)  
   
- [Ladění vlastnosti rozhraní](../../winscript/reference/debug-property-interfaces.md)  
+ [Rozhraní pro přístup k vlastnostem laděné aplikace](../../winscript/reference/debug-property-interfaces.md)  
   
  [Rozšíření rozhraní Dispatch](../../winscript/reference/dispatch-extension-interfaces.md)  
   

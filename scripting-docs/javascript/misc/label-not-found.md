@@ -1,5 +1,5 @@
 ---
-title: Návěstí nebylo nalezeno | Microsoft Docs
+title: Návěstí nebylo nalezeno | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,23 +21,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788751"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346969"
 ---
 # <a name="label-not-found"></a>Návěstí nebylo nalezeno
-Provedli jste odkaz na štítek, který neexistuje. Popisky slouží k označení bloky kódu, ale v rámci zadaného oboru, musí být jedinečný.  
+Provedli jste odkaz na popisek, který neexistuje. Popisky lze použít k označení bloky kódu, ale v rámci zadaného oboru, musí být jedinečný.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Zkontrolujte, ujistěte se, že napíšete není název popisku.  
+-   Zkontrolujte, že píšete není název popisku.  
   
--   Ujistěte se, jsou provedeny všechny odkazy na jmenovky popisky, které byly definovány v aktuálním oboru (to zahrnuje definice předat dál).  
+-   Zkontrolujte všechny odkazy na jmenovky se provedly popisky, které byly definovány v aktuálním oboru (to zahrnuje dopředné definic).  
   
 ## <a name="see-also"></a>Viz také  
  [Příkaz s popiskem](../../javascript/reference/labeled-statement-javascript.md)   
  [Switch – příkaz](../../javascript/reference/switch-statement-javascript.md)   
- [Příkaz BREAK](../../javascript/reference/break-statement-javascript.md)   
- [Continue – příkaz](../../javascript/reference/continue-statement-javascript.md)
+ [BREAK – příkaz](../../javascript/reference/break-statement-javascript.md)   
+ [continue – příkaz](../../javascript/reference/continue-statement-javascript.md)

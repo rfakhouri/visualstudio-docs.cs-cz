@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 70afe5a72bb30ff88e54ea20f150b57303909ef8
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088241"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349670"
 ---
 # <a name="profilerheapobjectid-type"></a>PROFILER_HEAP_OBJECT_ID – typ
 ID objektu haldy. Použít v [profiler_heap_object – struktura](../../winscript/reference/profiler-heap-object-structure.md)[profiler_heap_object_scope_list – struktura](../../winscript/reference/profiler-heap-object-scope-list-structure.md), [profiler_heap_object_optional_info – struktura](../../winscript/reference/profiler-heap-object-optional-info-structure.md)a [Profiler_heap_object_relationship – struktura](../../winscript/reference/profiler-heap-object-relationship-structure.md).  

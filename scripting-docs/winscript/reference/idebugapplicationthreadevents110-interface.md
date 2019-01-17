@@ -1,5 +1,5 @@
 ---
-title: Idebugapplicationthreadevents110 – rozhraní | Microsoft Docs
+title: Idebugapplicationthreadevents110 – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aaf312b1730696b812172aeea175619e911d03a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: db20440d4dc797ce9a0f21c3ac0c6c89c5d4e036
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794034"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348240"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 – rozhraní
-Přidá další vlákno události. Tyto události jsou pouze místní. To znamená, můžete se přihlásíte k nim pouze v procesu, ve ladit, pomocí [IConnectionPoint –](http://go.microsoft.com/fwlink/?LinkId=232738) poradit a unadvise metody na objekty vláken aplikace PDM (objekty, které implementují [idebugapplicationthread – Rozhraní](../../winscript/reference/idebugapplicationthread-interface.md)). K nim dojde na vlákno, které pocházejí z.  
+Přidá další vlákno události. Tyto události jsou jenom místní. To znamená, že k odběru je pouze v procesu se ladit, používá [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) dokáží a zrušíte avízo o metod na objekty vlákna aplikace PDM (objekty, které implementují [idebugapplicationthread – Rozhraní](../../winscript/reference/idebugapplicationthread-interface.md)). K nim dojde ve vlákně, které pocházejí z.  
   
 > [!IMPORTANT]
 >  Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
@@ -32,7 +32,7 @@ Přidá další vlákno události. Tyto události jsou pouze místní. To znamen
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idebugapplicationthreadevents110 –:: OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Volání do vlákno pomocí PDM vlákno přepínání zahájení.|  
-|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Vlákno obnovuje z zarážku a bude active ještě jednou.|  
-|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Vlákno je pozastavení pro zarážku a dokáže zpracovat volání, které vyžadují vlákno plně pozastaví.|  
-|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Volání do vlákno pomocí PDM vlákno přepínání byla dokončena.|
+|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Volání do vlákna použití vlákna PDM byl zahájen přechod.|  
+|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Vlákno obnovuje od bodu přerušení a bude aktivováno jednou znovu.|  
+|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Vlákno je pozastavení pro zarážku a dokáže zpracovat volání, které vyžadují plně pozastavit vlákna.|  
+|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Volání do vlákna použití vlákna PDM přepínání byla dokončena.|

@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097211"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349748"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 Načte řetězec definované hostitele, který jednoznačně identifikuje aktuální verzi dokumentu. Pokud související dokument byl změněn mimo obor skript Windows (stejně jako v případě stránku HTML, který právě upravujete v aplikaci Poznámkový blok), můžete to spolu s jeho trvalého stavu, je vynucena Opětovná kompilace při příštím načtení skriptu uložit skriptovací stroj.  

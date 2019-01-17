@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx – metody | Microsoft Docs
+title: IDispatchEx – metody | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,28 +14,28 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a57a983acb2d63cfe5f5b2d9b66e1cace7d98d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7abe9f1b7832706040fabb7f65754c518f2b1742
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794445"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347798"
 ---
 # <a name="idispatchex-methods"></a>IDispatchEx – metody
-Níže jsou IDispatchEx – metody.  
+Dál jsou uvedené IDispatchEx – metody.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)  
- Odstraní člen podle DISPID.  
+ Odstraní člena podle DISPID.  
   
  [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)  
- Odstraní členem podle názvu.  
+ Odstraní člena podle názvu.  
   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
- Mapuje název jednoho člena na jeho odpovídající DISPID, který lze potom použít v následných volání IDispatchEx::InvokeEx.  
+ Mapuje název jednoho člena na jeho odpovídající identifikátor DISPID, který můžete použít v následných voláních na IDispatchEx::InvokeEx.  
   
  [IDispatchEx::GetMemberName](../../winscript/reference/idispatchex-getmembername.md)  
- Načte název člena.  
+ Načte název členu.  
   
  [IDispatchEx::GetMemberProperties](../../winscript/reference/idispatchex-getmemberproperties.md)  
  Načte vlastnosti člena.  
@@ -44,10 +44,10 @@ Níže jsou IDispatchEx – metody.
  Načte rozhraní pro obor názvů nadřazeného objektu.  
   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)  
- Vytvoří výčet členů objektu.  
+ Vytvoří výčet členy objektu.  
   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)  
- Poskytuje přístup k vlastnosti a metody, které jsou vystavené IDispatchEx objekt.  
+ Poskytuje přístup k vlastnostem a metodám vystaveným objektem rozhraní IDispatchEx.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [IDispatchEx – rozhraní](../../winscript/reference/idispatchex-interface.md)

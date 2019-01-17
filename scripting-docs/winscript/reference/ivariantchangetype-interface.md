@@ -1,5 +1,5 @@
 ---
-title: Ivariantchangetype – rozhraní | Microsoft Docs
+title: IVariantChangeType Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b1b761195a3b004ddaf13d17eafd2c8fe9982b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c0bbd5ec7795498d9f04cc516a56d01c78bdb7c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796302"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349254"
 ---
 # <a name="ivariantchangetype-interface"></a>IVariantChangeType – rozhraní
-Umožňuje volajícímu převést hodnotu typu VARIANT z jednoho typu.  
+Umožňuje volajícímu převést hodnotu typu VARIANT z jednoho typu na jiný.  
   
 ## <a name="methods"></a>Metody  
- Kromě metod zděděno z `IUnknown`, `IVariantChangeType` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IVariantChangeType` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IVariantChangeType::ChangeType](../../winscript/reference/ivariantchangetype-changetype.md)|Přebírá hodnotu typu variant a vytvoří nový typ variant pomocí zadaného typu.|
+|[IVariantChangeType::ChangeType](../../winscript/reference/ivariantchangetype-changetype.md)|Vezme hodnotu typu variant a vytvoří novou variantu pomocí zadaného typu.|

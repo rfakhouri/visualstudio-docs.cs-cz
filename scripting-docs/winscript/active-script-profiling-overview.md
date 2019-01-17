@@ -1,5 +1,5 @@
 ---
-title: Přehled profilace aktivních skriptů | Microsoft Docs
+title: Přehled profilace aktivních skriptů | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9413e8b6e6db0c81eb1853c24506d20c8d06f3e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f207261af82f8f5e64710df5177e891a6a47c1a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791922"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347499"
 ---
 # <a name="active-script-profiling-overview"></a>Přehled profilace aktivních skriptů
-[Rozhraní profileru aktivních skriptů](../winscript/reference/active-script-profiler-interfaces.md) povolit profilace skriptovací stroje. Profilace aktivních skriptů se skládá z následujících částí:  
+[Aktivní rozhraní Profiler skriptů](../winscript/reference/active-script-profiler-interfaces.md) povolit profilaci skriptovací stroje. Aktivní profilace skriptu se skládá z následujících částí:  
   
 -   Modul jazyka  
   
@@ -31,18 +31,18 @@ ms.locfileid: "24791922"
 -   profiler  
   
 ## <a name="language-engine"></a>Modul jazyka  
- Modul jazyka spustí skript. Poskytuje metody, které umožní profilace kód skriptu, jako je proveden. Při vytváření profilu je povolená, modul jazyka vezme identifikátor třídy (CLSID) z profileru objektu COM jako argument. Vytvoří instanci objektu COM profileru a pak zavolá do profileru, když dojde k různé události.  
+ Modul jazyka spustí skript. Poskytuje metody, které umožní profilování kód skriptu, jak se spouští. Když je povolená profilace, jazyk modul přijímá identifikátor třídy (CLSID) profileru objekt modelu COM jako argument. Vytvoří instanci objektu COM profileru a pak zavolá do profileru, pokud dojde k různým událostem.  
   
  Implementuje modul jazyka [iactivescriptprofilercontrol – rozhraní](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
->  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Běhový kontroluje proměnné prostředí JS_PROFILER na vytvoření k určení, zda má být povolen profilace. Pokud tato proměnná je nastavená na CLSID profileru, modul runtime jazyka vytvoří instanci objektu COM profileru, pomocí hodnoty proměnné, chcete-li určit, které profileru k vytvoření.  
+>  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] CLR kontroluje JS_PROFILER proměnnou prostředí při vytváření k určení, zda by měla být povolená profilace. Pokud tato proměnná je nastavena na identifikátor CLSID profileru, modul runtime jazyka vytvoří instanci objektu COM profileru, použití hodnotu proměnné k určení, které profileru, chcete-li vytvořit.  
   
 ## <a name="host"></a>Hostitel  
- Hostitele vytvoří modul jazyka a poskytuje modul jazyka spouštět skripty. Inteligentního hostitele také poskytuje kontext dokumentu, které je možné zajistit lepší informace při ladění a profilování ladicí program nebo profileru.  
+ Hostitel vytvoří modul jazyka a poskytuje modul jazyka pomocí skriptů, které má být proveden. Inteligentního hostitele také poskytuje kontext dokumentu, který je možné poskytovat lepší informace při ladění nebo profilování pomocí ladicího programu a profileru.  
   
 ## <a name="profiler"></a>profiler  
- Pokud dojde k různé události profileru obdrží volání z modulu jazyka. Profileru musí být registrován jako objekt COM a musí implementovat [iactivescriptprofilercallback – rozhraní](../winscript/reference/iactivescriptprofilercallback-interface.md) rozhraní.  
+ Pokud dojde k různým událostem profiler obdrží volání z modulu jazyka. Profiler musí být registrován jako objekt modelu COM a musí implementovat [iactivescriptprofilercallback – rozhraní](../winscript/reference/iactivescriptprofilercallback-interface.md) rozhraní.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní profileru aktivních skriptů](../winscript/reference/active-script-profiler-interfaces.md)

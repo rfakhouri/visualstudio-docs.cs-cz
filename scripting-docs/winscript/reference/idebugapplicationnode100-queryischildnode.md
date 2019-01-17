@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea31bbf4efbe6f47a3d2b7e97e001999fc692d7a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f8e3b722952ea2ab219ac513ed46d7753eaeb16
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793833"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349176"
 ---
 # <a name="idebugapplicationnode100queryischildnode"></a>IDebugApplicationNode100::QueryIsChildNode
 Určuje, zda zadaný dokument patří do jedné z podřízených uzlů tohoto uzlu.  
   
 > [!IMPORTANT]
->  [Idebugapplicationnode100 – rozhraní](../../winscript/reference/idebugapplicationnode100-interface.md) je implementovaná pomocí PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
+>  [Idebugapplicationnode100 – rozhraní](../../winscript/reference/idebugapplicationnode100-interface.md) je implementováno pomocí PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,4 +38,4 @@ HRESULT QueryIsChildNode(        [in] IDebugDocument* pSearchKey        );
  Klíč hledání.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplicationnode100 – rozhraní](../../winscript/reference/idebugapplicationnode100-interface.md)
+ [IDebugApplicationNode100 – rozhraní](../../winscript/reference/idebugapplicationnode100-interface.md)

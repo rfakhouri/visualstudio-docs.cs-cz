@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::GetCurrentDebuggerOptions | Microsoft Docs
+title: IRemoteDebugApplication110::GetCurrentDebuggerOptions | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89223cb283a31ea01610bd70a8f64187947cacc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74ea3b3dbfa15dabdc57dffe85693c3b5fdf5a3b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794664"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344860"
 ---
 # <a name="iremotedebugapplication110getcurrentdebuggeroptions"></a>IRemoteDebugApplication110::GetCurrentDebuggerOptions
-Vrací sadu možností, které jsou nyní zapnuta.  
+Vrátí sadu možností, které jsou aktuálně povoleny.  
   
 > [!IMPORTANT]
->  [Iremotedebugapplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md) je implementovaná pomocí PDM v11.0 a větší. Nachází se v souboru activdbg100.h.  
+>  [Iremotedebugapplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md) je implementováno komponentou Pdm verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,4 +39,4 @@ HRESULT GetCurrentDebuggerOptions([out] enum SCRIPT_DEBUGGER_OPTIONS* pCurrentOp
   
 ## <a name="see-also"></a>Viz také  
  [Iremotedebugapplication – rozhraní](../../winscript/reference/iremotedebugapplication-interface.md)   
- [Iremotedebugapplication110 – rozhraní](../../winscript/reference/iremotedebugapplication110-interface.md)
+ [IRemoteDebugApplication110 – rozhraní](../../winscript/reference/iremotedebugapplication110-interface.md)

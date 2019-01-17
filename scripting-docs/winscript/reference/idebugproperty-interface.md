@@ -1,5 +1,5 @@
 ---
-title: Idebugproperty – rozhraní | Microsoft Docs
+title: Idebugproperty – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2888a6d781ecd501128545e483971a47859d9cda
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e5e5274e8a3d1c81ce010afc3893b27510a0fad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794271"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348357"
 ---
 # <a name="idebugproperty-interface"></a>IDebugProperty – rozhraní
-Používají k popisu hierarchické vlastnost laděné entity, který má název, typ a hodnotu. Nejčastěji `IDebugProperty` se používá k popisu výsledkem vyhodnocení výrazu, vyhodnocení prohlášení nebo vyhodnocení registrace.  
+Použít k popisu hierarchické vlastnosti entity, který se právě ladí, který má název, typ a hodnotu. Nejčastěji `IDebugProperty` se používá k popisu výsledek vyhodnocení výrazu, příkaz hodnocení nebo vyhodnocení registru.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugProperty` rozhraní.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugProperty` rozhraní.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugProperty::GetPropertyInfo](../../winscript/reference/idebugproperty-getpropertyinfo.md)|Získat `DebugPropertyInfo` , který to popisuje`IDebugProperty``.`|  
+|[IDebugProperty::GetPropertyInfo](../../winscript/reference/idebugproperty-getpropertyinfo.md)|Získejte `DebugPropertyInfo` , který popisuje toto `IDebugProperty``.`|  
 |[IDebugProperty::GetExtendedInfo](../../winscript/reference/idebugproperty-getextendedinfo.md)|Získá rozšířené informace o vlastnosti.|  
 |[IDebugProperty::SetValueAsString](../../winscript/reference/idebugproperty-setvalueasstring.md)|Nastaví hodnotu vlastnosti z řetězce.|  
 |[IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)|Vytvoří výčet členů vlastnost.|  

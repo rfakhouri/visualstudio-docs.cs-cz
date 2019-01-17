@@ -1,5 +1,5 @@
 ---
-title: Byl očekáván objekt | Microsoft Docs
+title: Byl očekáván objekt | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,25 +20,25 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6add25325653627d23eb699ab53c0f2799c8322f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d66c82081af06bf23a43922629a579a6d6f590
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788658"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345783"
 ---
 # <a name="object-expected"></a>Očekáván objekt
-Pokoušíte se o vyvolání metody nebo vlastnosti objektu typu jiné než `Object`, nebo jiné než předaný argument typu `Object` při `Object` nebyla nutná.  
+Pokusili jste se vyvolat metodu nebo vlastnost na objekt typu jiného než `Object`, nebo předaný argument typu jiného než `Object` při `Object` nebyla nutná.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Pouze vyvolání metody nebo vlastnosti u objektů typu `Object`.  
+-   Pouze vyvolat metodu nebo vlastnost u objektů typu `Object`.  
   
--   Pokud dojde k chybě pro argument jiný objekt, předat objekt typu `Object`.  
+-   Pokud argument není objekt dojde k chybě, předat objekt typu `Object`.  
   
--   Zkontrolujte, zda získávání vyvolání odkaz na nedefinovaný nebo hodnotu null. namísto objekt typu `Object`.  
+-   Zkontrolujte, zda je získávání undefined nebo null reference vyvolána místo objektu typu `Object`.  
   
-     Například, pokud se tato chyba na MojeProm v následujícím kódu:  
+     Například, pokud dojde k této chybě na myVar v následujícím kódu:  
   
     ```JavaScript  
     var str = myVar.toString();  

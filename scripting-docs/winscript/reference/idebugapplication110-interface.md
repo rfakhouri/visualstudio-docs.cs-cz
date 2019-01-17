@@ -1,5 +1,5 @@
 ---
-title: Idebugapplication110 – rozhraní | Microsoft Docs
+title: Idebugapplication110 – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7c283e925db5b42b4d04bfc42ea087ecc22b6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b13208d6a507ea4ed3157606f358b6b0168180cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793971"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349553"
 ---
 # <a name="idebugapplication110-interface"></a>IDebugApplication110 – rozhraní
-`IDebugApplication110` Rozhraní rozšiřuje funkce [idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md). Instance tohoto rozhraní můžete získat voláním QueryInterface na implementaci pro [idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md).  
+`IDebugApplication110` Rozhraní rozšiřuje funkce [idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md). Instance tohoto rozhraní můžete získat pomocí volání QueryInterface u implementace [idebugapplication – rozhraní](../../winscript/reference/idebugapplication-interface.md).  
   
 > [!IMPORTANT]
 >  Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
@@ -32,6 +32,6 @@ ms.locfileid: "24793971"
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Synchronní zavolá na hlavní vlákno.|  
-|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Provede asynchronní volání na hlavní vlákno.|  
-|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|Počká pro žádné zadaného popisovače signál současně volání mezi vlákny odeslání tohoto podprocesu. Tato metoda musí volat z vlákna ladicí program.|
+|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Díky synchronní volání v hlavním vlákně.|  
+|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Provede asynchronní volání v hlavním vlákně.|  
+|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|Čeká na kterýkoli z úchytů zadané má být signalizován zároveň umožní volání mezi vlákny který se má publikovat pro toto vlákno. Tato metoda musí volat z vlákna ladicího programu.|

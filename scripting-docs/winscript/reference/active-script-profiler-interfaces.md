@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8532c5f7c490237994332e38b8f6fe97a8235bad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832807"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346095"
 ---
 # <a name="active-script-profiler-interfaces"></a>Rozhraní profileru aktivních skriptů
 Aktivní rozhraní Profiler skriptů umožňují přijímat profilování události z [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] modul.  

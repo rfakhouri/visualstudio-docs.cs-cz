@@ -1,5 +1,5 @@
 ---
-title: Scriptprop_hostkeepalive – vlastnost | Dokumentace Microsoftu
+title: SCRIPTPROP_HOSTKEEPALIVE Property | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0c8918e277fa9c7183e6d46a4853824a74fa4548
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087370"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346836"
 ---
 # <a name="scriptprophostkeepalive-property"></a>SCRIPTPROP_HOSTKEEPALIVE – vlastnost
 Slouží k určení, zda skriptovací stroj nutné udržovat plně funkční, pokud existují zbývající odkazy.  

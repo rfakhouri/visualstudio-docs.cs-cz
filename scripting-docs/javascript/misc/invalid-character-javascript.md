@@ -1,5 +1,5 @@
 ---
-title: Neplatný znak (JavaScript) | Microsoft Docs
+title: Neplatný znak (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788976"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348474"
 ---
 # <a name="invalid-character-javascript"></a>Neplatný znak (JavaScript)
-Složené identifikátor pomocí znak (nebo znaků) není rozpoznán jako platná pomocí [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilátoru. Platné znaky pomocí následujících pravidel:  
+Složený identifikátor pomocí znak (nebo znaky) nebyl rozpoznán jako platný podle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilátoru. Platné znaky se používají následující pravidla:  
   
--   První znak musí být k písmenu ASCII (velká nebo malá písmena) nebo podtržítko (_).  
+-   První znak musí být písmeno ASCII (velká nebo malá písmena) nebo podtržítko (_).  
   
 -   Následující znaky mohou být písmena, čísla nebo podtržítka ASCII.  
   
--   Identifikátor název nesmí být vyhrazené slovo.  
+-   Název identifikátoru nemůže být vyhrazené slovo.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Nepoužívejte znaky, které nejsou součástí [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definice jazyka.  
+-   Vyhněte se použití znaky, které nejsou součástí [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definice jazyka.  
   
 ## <a name="see-also"></a>Viz také  
  [Proměnné](../../javascript/variables-javascript.md)   

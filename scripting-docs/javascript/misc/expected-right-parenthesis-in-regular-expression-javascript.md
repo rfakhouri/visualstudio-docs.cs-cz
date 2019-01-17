@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802339"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347421"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>V regulárním výrazu byl očekáván znak ')' (JavaScript)
 Proběhl pokus o vytvoření zachycení regulárních výrazů, kontrolní výraz nebo skupiny, ale neobsahuje pravou závorku. Závorky mají několik účely v regulárních výrazech. Především se používají k zachycení dílčí výrazy, zadejte kontrolních výrazů nebo seskupení vzory tak, aby položky lze považovat za jednu jednotku podle *, +,?, a tak dále.  

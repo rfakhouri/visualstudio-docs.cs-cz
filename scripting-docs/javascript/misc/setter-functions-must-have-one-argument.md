@@ -1,5 +1,5 @@
 ---
-title: Metody setter musí mít jeden argument | Microsoft Docs
+title: Metody setter musí mít jeden argument. | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,13 +21,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6e2a84ce078abfc053ed190f53c9ccbed3277928
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788568"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346641"
 ---
 # <a name="setter-functions-must-have-one-argument"></a>Metody Setter musí mít jeden parametr
-. 1051: setter musí mít jeden argument  
+1051: Metody Setter musí mít jeden parametr  
   
- Musíte mít jenom jeden argument pro funkci setter.
+ Musí mít pouze jeden argument pro funkci setter.

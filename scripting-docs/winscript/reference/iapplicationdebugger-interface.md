@@ -1,5 +1,5 @@
 ---
-title: Iapplicationdebugger – rozhraní | Microsoft Docs
+title: Iapplicationdebugger – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16cd1bc891c7d682cc1097cd1b6cb5efd5438db
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b364422afcdf72deaee3d56123a71672769ed61
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793776"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348318"
 ---
 # <a name="iapplicationdebugger-interface"></a>IApplicationDebugger – rozhraní
-Primární rozhraní vystavené ladicí program. Kromě metod zděděno z `IUnknown`, `IApplicationDebugger` rozhraní poskytuje následující metody.  
+Primární rozhraní vystavené ladicího programu. Kromě metod zděděných z `IUnknown`, `IApplicationDebugger` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IApplicationDebugger::QueryAlive](../../winscript/reference/iapplicationdebugger-queryalive.md)|Určuje, zda reaguje ladicího programu.|  
-|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Umožňuje vytvoření objektů v procesu ladicí program kódem tedy out-of-process pro ladicí program.|  
-|[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Zpracovává událost ladění výstupu.|  
-|[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|Zpracovává událost zarážek.|  
+|[IApplicationDebugger::QueryAlive](../../winscript/reference/iapplicationdebugger-queryalive.md)|Určuje, zda ladicí program je responzivní.|  
+|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Povolí vytváření objektů v procesu ladicího programu pomocí kódu, který je mimo proces v ladicím programu.|  
+|[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Zpracovává událost výstupu ladění.|  
+|[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|Zpracovává událost zarážky.|  
 |[IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)|Zpracovává událost zavřít ladění aplikace.|  
-|[IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)|Zpracovává událost vlastní aplikaci.|
+|[IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)|Zpracovává událost vlastní aplikace.|

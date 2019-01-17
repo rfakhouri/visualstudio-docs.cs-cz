@@ -1,5 +1,5 @@
 ---
-title: Neplatné přiřazení (JavaScript) | Microsoft Docs
+title: Neplatné přiřazení (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788694"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350151"
 ---
 # <a name="illegal-assignment-javascript"></a>Neplatné přiřazení (JavaScript)
-Jste se pokusili o přiřazení hodnoty k identifikátor jen pro čtení. Identifikátor jen pro čtení nelze přiřadit hodnotu. Například hostitele definované objekty a externí objekty COM.  
+Jste se pokusili přiřadit hodnotu identifikátoru jen pro čtení. Identifikátor jen pro čtení nelze přiřadit hodnotu. Například hostitel definované objekty a externí objekty modelu COM.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Nepřiřazujte hodnoty pro identifikátory jen pro čtení.  
+-   Nepřiřazujte hodnoty na identifikátory jen pro čtení.  
   
 ## <a name="see-also"></a>Viz také  
  [Operátor přiřazení (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

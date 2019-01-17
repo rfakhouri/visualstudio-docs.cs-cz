@@ -1,5 +1,5 @@
 ---
-title: Idebugapplicationnode100 – rozhraní | Microsoft Docs
+title: Idebugapplicationnode100 – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af79614d38ef55776b660329f51931be70b7f52e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a6cbe92c6789b702adc69f598a995f84c01ef86
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793896"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347448"
 ---
 # <a name="idebugapplicationnode100-interface"></a>IDebugApplicationNode100 – rozhraní
-`IDebugApplicationNode100` Rozhraní rozšiřuje funkce [idebugapplicationnode – rozhraní](../../winscript/reference/idebugapplicationnode-interface.md). Instance tohoto rozhraní můžete získat voláním QueryInterface na implementaci pro [idebugapplicationnode – rozhraní](../../winscript/reference/idebugapplicationnode-interface.md).  
+`IDebugApplicationNode100` Rozhraní rozšiřuje funkce [idebugapplicationnode – rozhraní](../../winscript/reference/idebugapplicationnode-interface.md). Instance tohoto rozhraní můžete získat pomocí volání QueryInterface u implementace [idebugapplicationnode – rozhraní](../../winscript/reference/idebugapplicationnode-interface.md).  
   
 > [!IMPORTANT]
 >  Toto rozhraní je implementováno PDM v10.0 a větší. Nachází se v souboru activdbg100.h.  
@@ -32,6 +32,6 @@ ms.locfileid: "24793896"
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)|Získá text dokumenty, které jsou skrytý na základě zadaného filtru.|  
+|[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)|Získá textové dokumenty, které jsou skryty pomocí zadaného filtru.|  
 |[IDebugApplicationNode100::QueryIsChildNode](../../winscript/reference/idebugapplicationnode100-queryischildnode.md)|Určuje, zda zadaný dokument patří do jedné z podřízených uzlů tohoto uzlu.|  
-|[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)|Nastaví filtr pro určitý [idebugapplicationnodeevents – rozhraní](../../winscript/reference/idebugapplicationnodeevents-interface.md) implementace. To umožňuje ladicí programy skriptu filtrovat generované kompilátorem podřízené uzly aplikace tak, aby PDM budou už odesílat události při vytváření nebo odebrat uzly. Ve výchozím nastavení budou odeslány všechny uzly.|
+|[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)|Nastaví filtr na konkrétním [idebugapplicationnodeevents – rozhraní](../../winscript/reference/idebugapplicationnodeevents-interface.md) implementace. Umožňuje skriptu ladicí programy k filtrování vygenerovaný kompilátorem podřízené uzly aplikace tak, aby PDM už bude odesílat události při vytvoření nebo odebrání uzlů. Ve výchozím nastavení se pošle všem uzlům.|

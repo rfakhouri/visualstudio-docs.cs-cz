@@ -1,5 +1,5 @@
 ---
-title: Iremotedebugapplication110 – rozhraní | Microsoft Docs
+title: IRemoteDebugApplication110 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d384cea22b79b2a7ca9af3424d053fb3062d79a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f280e2b869a3046ecb2d3fac37facdcc1bfeb7fb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795015"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349878"
 ---
 # <a name="iremotedebugapplication110-interface"></a>IRemoteDebugApplication110 – rozhraní
-Používá k zajištění nové funkce, které je možné volat v skriptu ladicí programy a volající v procesu.  
+Používají k zajištění nové možnosti, které mohou být volány skript ladicí programy a volající v procesu.  
   
 > [!IMPORTANT]
 >  Toto rozhraní je implementováno komponentou PDM verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
@@ -32,6 +32,6 @@ Používá k zajištění nové funkce, které je možné volat v skriptu ladic�
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IRemoteDebugApplication110::SetDebuggerOptions](../../winscript/reference/iremotedebugapplication110-setdebuggeroptions.md)|Voláno k aktualizaci možností ladicího programu. Výchozí možnosti na hodnotu 0 (SDO_NONE).|  
+|[IRemoteDebugApplication110::SetDebuggerOptions](../../winscript/reference/iremotedebugapplication110-setdebuggeroptions.md)|Volá se, aby aktualizovat možnosti ladicího programu. Možnosti výchozí na hodnotu 0 (SDO_NONE).|  
 |[IRemoteDebugApplication110::GetCurrentDebuggerOptions](../../winscript/reference/iremotedebugapplication110-getcurrentdebuggeroptions.md)|Vrátí aktuální sadu možností, které jsou povolené.|  
 |[IRemoteDebugApplication110::GetMainThread](../../winscript/reference/iremotedebugapplication110-getmainthread.md)|Pro hostitele, které volají setsite – vrátí hlavního vlákna.|

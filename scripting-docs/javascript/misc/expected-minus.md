@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d1c0891065569a1f43777f87692568af26323924
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804757"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348942"
 ---
 # <a name="expected--"></a>Byl očekáván '-'
 Proběhl pokus o vytvoření literálu regulární výraz, ale neobsahuje jednu lomítka (/). Stejně jako řetězcové literály jsou zapsány jako znaků v páru uvozovky, literály regulárních výrazů jsou vyjádřeny jako znaků v páru znaky lomítka (/).  

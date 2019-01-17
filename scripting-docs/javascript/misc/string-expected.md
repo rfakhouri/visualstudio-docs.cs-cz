@@ -1,5 +1,5 @@
 ---
-title: Očekáván řetězec | Microsoft Docs
+title: Očekáván řetězec | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2dabf754b2bfb4b20555b41457df04d54a5c31c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788655"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346797"
 ---
 # <a name="string-expected"></a>Očekáván řetězec
-Pokoušíte se o vyvolání **String.prototype.toString** nebo **String.prototype.valueOf** metoda na objekt typu jinak než `String`. Objekt typu volání musí být typu `String`.  
+Pokusili jste se vyvolat **String.prototype.toString** nebo **String.prototype.valueOf** metodu na objekt typu než `String`. Objekt tohoto typu volání musí být typu `String`.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Vyvolat jenom **String.prototype.toString** nebo **String.prototype.valueOf** metody pro objekty typu `String`.  
+-   Vyvolat pouze **String.prototype.toString** nebo **String.prototype.valueOf** metod u objektů typu `String`.  
   
 ## <a name="see-also"></a>Viz také  
  [String – objekt](../../javascript/reference/string-object-javascript.md)   

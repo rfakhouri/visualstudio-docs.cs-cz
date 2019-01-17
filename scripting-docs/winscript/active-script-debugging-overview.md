@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220219"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345484"
 ---
 # <a name="active-script-debugging-overview"></a>Přehled ladění aktivních skriptů
 Rozhraními aktivního ladění skriptu povolit ladění jazykově neutrální, nezávislá na hostitele a podporují širokou škálu vývojových prostředích.  
   
- ![Skript hostitelský proces](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Script Host Process](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Obrázek 1  
   
  Ladění prostředí neutrální jazyk podporuje libovolný programovací jazyk nebo směs programovacích jazyků, aniž by bylo specifické znalosti některý z těchto jazyků. Ladicí prostředí podporuje také krokování mezi jazyky a zarážky. (Tento přehled se zaměřují hlavně na podporu skriptovacích jazyků, jako jsou VBScript a [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].)  
@@ -39,7 +39,7 @@ Obrázek 1
  **modul jazyka**  
  Komponenta, která poskytuje analýzu, spuštění a ladění abstrakce pro konkrétní jazyk.  
   
- **ladicí program integrovaného vývojového prostředí**  
+ **Ladicí program integrovaného vývojového prostředí**  
  Aplikace, která poskytuje ladění uživatelského rozhraní tím, že komunikuje s hostiteli aplikace a jazyk moduly.  
   
  **Správce ladění počítač** komponenty, která udržuje registr laditelné aplikace zpracovává.  

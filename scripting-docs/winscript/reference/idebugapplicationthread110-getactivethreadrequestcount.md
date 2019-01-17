@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::GetActiveThreadRequestCount | Microsoft Docs
+title: IDebugApplicationThread110::GetActiveThreadRequestCount | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4d19bb77a4380c3c0a04f7e7808b82ca3f6ae4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bd776aedd4df61797419795afb8dcc8afeb9318
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794037"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348180"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
-Vrátí počet vláken požadavků z vlákna PDM přepínání mechanismy, které se právě zpracovává. Toto číslo je obvykle 0 nebo 1. Však číslo může být vyšší, pokud jedno vlákno volání spustí zpracování, ale které jsou aktivuje synchronní volání mimo přístup z více vláken, nebo v opačném případě se pozastaví vlákno a umožňuje opětovné zpracování příchozí volání (třeba podle aktivován [ Iremotedebugapplicationevents – rozhraní](../../winscript/reference/iremotedebugapplicationevents-interface.md) událost, která se objeví ve vlákně ladicí program).  
+Vrátí počet vláken požadavků z vlákna PDM přepínání mechanismy, které jsou právě zpracovávána. Toto číslo je obvykle 0 nebo 1. Nicméně číslo může být vyšší, pokud jedno vlákno volání spustil zpracování, ale které jsou aktivuje synchronní volání z vlákna, nebo v opačném případě se pozastaví vlákna a umožňuje příchozí volání na opětovné zpracování (například, že se budou spouštět [ Iremotedebugapplicationevents – rozhraní](../../winscript/reference/iremotedebugapplicationevents-interface.md) událost, která je vydané pro vlákno ladicího programu).  
   
 > [!IMPORTANT]
->  [Idebugapplicationthread110 – rozhraní](../../winscript/reference/idebugapplicationthread110-interface.md) je implementovaná pomocí PDM v11.0 a větší. Nachází se v souboru activdbg100.h.  
+>  [Idebugapplicationthread110 – rozhraní](../../winscript/reference/idebugapplicationthread110-interface.md) je implementováno komponentou Pdm verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,7 +35,7 @@ HRESULT GetActiveThreadRequestCount([out, annotation("_Out_")] UINT * puiThreadR
   
 #### <a name="parameters"></a>Parametry  
  `puiThreadRequests`  
- [out] Počet požadavků přístup z více vláken.  
+ [out] Počet požadavků vlákna.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplicationthread110 – rozhraní](../../winscript/reference/idebugapplicationthread110-interface.md)
+ [IDebugApplicationThread110 – rozhraní](../../winscript/reference/idebugapplicationthread110-interface.md)

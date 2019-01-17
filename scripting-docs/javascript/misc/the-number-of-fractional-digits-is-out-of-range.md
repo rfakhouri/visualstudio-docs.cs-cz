@@ -1,5 +1,5 @@
 ---
-title: Počet míst za desetinnou čárkou je mimo rozsah. | Microsoft Docs
+title: Počet míst za desetinnou čárkou je mimo rozsah. | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 17ffec5e6b4cfff85b49f61e7105ca8ce3d75c78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788790"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348461"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>Počet míst za desetinnou čárkou je mimo rozsah
-Pokoušíte se o předat neplatný argument funkce **Number.prototype.toExponential**. Argument funkce **toExponential()** musí být mezi 0 a 20 (včetně).  
+Pokusili jste se neplatný argument předat do funkce **Number.prototype.toExponential**. Argument pro funkci **toExponential()** musí být mezi 0 a 20 (včetně).  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Ujistěte se, že argument **toExponential()** není příliš velký či příliš malý.  
+-   Zkontrolujte, že argument **toExponential()** není příliš velký či příliš malý.  
   
 ## <a name="see-also"></a>Viz také  
  [toExponential – metoda (Number)](../../javascript/reference/toexponential-method-number-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: Očekáván identifikátor (JavaScript) | Microsoft Docs
+title: Byl očekáván identifikátor (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788688"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349228"
 ---
 # <a name="expected-identifier-javascript"></a>Byl očekáván identifikátor (JavaScript)
-Můžete použít něco jiného než identifikátorem v kontextu tam, kde je požadovaná. Identifikátor může být:  
+Můžete použít něco jiného než identifikátor v kontextu byl požadován. Identifikátor může být:  
   
--   proměnnou,  
+-   Proměnná  
   
--   vlastnost,  
+-   Vlastnost  
   
 -   pole,  
   
@@ -40,7 +40,7 @@ Můžete použít něco jiného než identifikátorem v kontextu tam, kde je po�
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Změňte výraz tak identifikátor se zobrazí vlevo od znaménkem rovnosti.  
+-   Změňte výraz tak, že identifikátor se zobrazí nalevo od znaménka rovnosti.  
   
 ## <a name="see-also"></a>Viz také  
- [Použití polí](../../javascript/advanced/using-arrays-javascript.md)
+ [Používání polí](../../javascript/advanced/using-arrays-javascript.md)

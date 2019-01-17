@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Microsoft Docs
+title: IDebugApplication110::CallableWaitForHandles | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b259f5296f8e0b32def793a81e4c2e1069643306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31802d8b86f007139959f3ece3bd1a0260599181
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793758"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350021"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Počká pro žádné zadaného popisovače signál současně volání mezi vlákny odeslání tohoto podprocesu. Tato metoda musí volat z vlákna ladicí program.  
+Čeká na kterýkoli z úchytů zadané má být signalizován zároveň umožní volání mezi vlákny který se má publikovat pro toto vlákno. Tato metoda musí volat z vlákna ladicího programu.  
   
 > [!IMPORTANT]
->  [Idebugapplication110 – rozhraní](../../winscript/reference/idebugapplication110-interface.md) je implementovaná pomocí PDM v11.0 a větší. Nachází se v souboru activdbg100.h.  
+>  [Idebugapplication110 – rozhraní](../../winscript/reference/idebugapplication110-interface.md) je implementováno komponentou Pdm verze 11.0 nebo novější. Nachází se v souboru activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,13 +35,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>Parametry  
  `handleCount`  
- Počet obslužných rutin čekání.  
+ Počet popisovačů čekání.  
   
  `pHandles`  
- Sada obslužných rutin čekání.  
+ Sada popisovače čekání.  
   
  `pIndex`  
- Pokud je hodnota HRESULT S_OK, index do `pHandles` pro popisovač, který byl signál.  
+ Pokud je hodnota HRESULT S_OK, budou indexovat `pHandles` pro popisovač, který byl signalizován.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugapplication110 – rozhraní](../../winscript/reference/idebugapplication110-interface.md)
+ [IDebugApplication110 – rozhraní](../../winscript/reference/idebugapplication110-interface.md)

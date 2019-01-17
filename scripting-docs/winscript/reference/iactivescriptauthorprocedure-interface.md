@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptauthorprocedure – rozhraní | Microsoft Docs
+title: Iactivescriptauthorprocedure – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5676044e9adb17e0c477c40f9045c4a2bb656b89
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bec6696a40868ad3cc64cf41efe5ab6bfc9d95ec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793281"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349618"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>IActiveScriptAuthorProcedure – rozhraní
-Kromě metod zděděno z `IUnknown`, `IScriptAuthorProcedure` rozhraní zpřístupní metodu.  
+Kromě metod zděděných z `IUnknown`, `IScriptAuthorProcedure` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Analyzuje procedury kódu, přidá text postup kód skriptu, vytváření modul a vytvoří `IScriptEntry` objekt, který odpovídá kódu postupu.|  
+|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Analyzuje kód procedury, přidá kód procedury text skriptu pro vytváření modulu a vytvoří `IScriptEntry` objekt, který odpovídá kódu procedury.|  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní pro vytváření aktivních skriptů](../../winscript/reference/active-script-authoring-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: Idebugdocumenttextauthor – rozhraní | Microsoft Docs
+title: IDebugDocumentTextAuthor Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794118"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344067"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>IDebugDocumentTextAuthor – rozhraní
-Poskytovaný dokumenty text tohoto podpora úpravy.  
+Poskytuje textové dokumenty tuto podporu úpravy.  
   
- Kromě metod zděděno z `IDebugDocumentText`, `IDebugDocumentTextAuthor` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IDebugDocumentText`, `IDebugDocumentTextAuthor` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Vloží nového textu do dokumentu.|  
+|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Vloží nový text do dokumentu.|  
 |[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|Odebere text z dokumentu.|  
 |[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Nahradí text v dokumentu.|

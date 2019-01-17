@@ -1,5 +1,5 @@
 ---
-title: APPBREAKFLAGS – výčet | Microsoft Docs
+title: Appbreakflags – výčet | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792027"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349020"
 ---
 # <a name="appbreakflags-enumeration"></a>APPBREAKFLAGS – výčet
 Udávají aktuální stav ladění pro aplikace a vlákna.  
@@ -38,18 +38,18 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |Člen|Hodnota|Popis|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Jazyk modul by měl okamžitě rozdělit na všechna vlákna s BREAKREASON_DEBUGGER_BLOCK.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Jazyk modul by měl s BREAKREASON_DEBUGGER_HALT rozdělit okamžitě.|  
-|APPBREAKFLAG_STEP|0x00010000|Jazyk modul by měl proniknout okamžitě taktování vlákno s BREAKREASON_STEP.|  
-|APPBREAKFLAG_NESTED|0x00020000|Aplikace je v vnořené provádění na zarážky.|  
-|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Ladicí program je krokování na úrovni zdroje.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Ladicí program je krokování na úrovni kódu bajtů.|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Ladicí program je krokování na úrovni počítače.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maska řešení si krok typu.|  
-|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Probíhá zarážky.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Modul jazyka by mělo dojít okamžitě na všech vláknech s BREAKREASON_DEBUGGER_BLOCK.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Jazyk modul by měl s BREAKREASON_DEBUGGER_HALT okamžité přerušení.|  
+|APPBREAKFLAG_STEP|0x00010000|Jazyk modul by měl v krokování vlákno s BREAKREASON_STEP okamžité přerušení.|  
+|APPBREAKFLAG_NESTED|0x00020000|Aplikace je ve vnořených spuštění na zarážce.|  
+|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Ladicí program se krokování na úrovni zdroje.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Ladicí program se krokování na úrovni kódu bajtů.|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Ladicí program se krokování na úrovni počítače.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maska pro které budou zohledňovat si typy kroku.|  
+|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Probíhá zarážku.|  
   
 ## <a name="remarks"></a>Poznámky  
- Některé příznaky zadejte, že jazyk moduly by mělo dojít při nejbližší příležitosti, při nastavení další příznaky zadejte taktování režimu ladicího programu.  
+ Některé příznaky určit, že jazyk moduly by mělo dojít při nejbližší příležitosti, při nastavení další příznaky určení režimu krokování ladicího programu.  
   
 ## <a name="see-also"></a>Viz také  
  [Konstanty ladicího programu aktivních skriptů, výčty a struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   

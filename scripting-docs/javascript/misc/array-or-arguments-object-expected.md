@@ -1,5 +1,5 @@
 ---
-title: Array nebo arguments objektu očekávání | Microsoft Docs
+title: Array nebo arguments objekt, očekáván | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0bc287026c88687274ad63cc6c1cd03309af8b93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788619"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345354"
 ---
 # <a name="array-or-arguments-object-expected"></a>Je očekáván objekt Array nebo arguments
-Pole není poskytnut jako argument. Tato chyba se týká **Function.prototype.apply** pouze metoda. -Li zadána, aby druhý argument funkce musí být buď `Array` objekt nebo **argumenty** objektu.  
+Jste nezadali pole jako argument. Tato chyba se vztahuje na **Function.prototype.apply** pouze metody. Je-li zadána, druhý argument pro tuto funkci musí být buď `Array` objektu nebo **argumenty** objektu.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   

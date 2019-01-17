@@ -1,5 +1,5 @@
 ---
-title: Idebugdocument – rozhraní | Microsoft Docs
+title: Idebugdocument – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 207dc0166cb9d0a59e99c03c511ec9bd75ea4bf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 75b70ef255b5f1e5eed4d36373274bc05cf92e67
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793878"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344288"
 ---
 # <a name="idebugdocument-interface"></a>IDebugDocument – rozhraní
 Základní rozhraní pro všechny dokumenty ladění.  
   
 ## <a name="remarks"></a>Poznámky  
- `IDebugDocument` Rozhraní poskytuje jenom metody zděděno z [idebugdocumentinfo – rozhraní](../../winscript/reference/idebugdocumentinfo-interface.md). Nevystavuje žádné další metody.
+ `IDebugDocument` Rozhraní poskytuje pouze metody zděděné z [idebugdocumentinfo – rozhraní](../../winscript/reference/idebugdocumentinfo-interface.md). Nevystavuje žádné další metody.

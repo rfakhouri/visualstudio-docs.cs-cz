@@ -1,5 +1,5 @@
 ---
-title: Byl očekáván člen objektu | Microsoft Docs
+title: Byl očekáván člen objektu | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 84ab153985935bcdf85aed205516610c04dea83f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788805"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344158"
 ---
 # <a name="object-member-expected"></a>Byl očekáván člen objektu
-Pokusili jste se provést operaci na objektu – datový člen, ale člen neexistuje.  
+Pokoušíte se o provádění operací na datový člen objektu, ale člen neexistuje.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Zkontrolujte, zda že jste správně zadali název datového člena.  
+-   Zkontrolujte, jestli že jste správně zadali název datového členu.  
   
 ## <a name="see-also"></a>Viz také  
  [Object – objekt](../../javascript/reference/object-object-javascript.md)   

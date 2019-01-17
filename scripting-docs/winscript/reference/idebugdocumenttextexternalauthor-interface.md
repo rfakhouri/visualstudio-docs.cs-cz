@@ -1,5 +1,5 @@
 ---
-title: Idebugdocumenttextexternalauthor – rozhraní | Microsoft Docs
+title: IDebugDocumentTextExternalAuthor Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f85ef798a6507c92130cbddae98de87a9924415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eb7b09beb38fcdfb2a139fa385119cf9f76d77ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794262"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344198"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>IDebugDocumentTextExternalAuthor – rozhraní
-Umožňuje externí editory bezpečně úpravám dokumentů na základě souborů ladicí program oznámením dokumentu při změně zdrojového souboru.  
+Umožňuje editorům externí bezpečně upravovat dokumenty založená na souborech ladicí program oznámením dokument při změně zdrojového souboru.  
   
- Kromě metod zděděno z `IUnknown`, `IDebugDocumentTextExternalAuthor` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IDebugDocumentTextExternalAuthor` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugDocumentTextExternalAuthor::GetPathName](../../winscript/reference/idebugdocumenttextexternalauthor-getpathname.md)|Vrátí úplný název a cesta k souboru dokumentu.|  
-|[IDebugDocumentTextExternalAuthor::GetFileName](../../winscript/reference/idebugdocumenttextexternalauthor-getfilename.md)|Vrací název dokumentu bez informace o cestě.|  
-|[IDebugDocumentTextExternalAuthor::NotifyChanged](../../winscript/reference/idebugdocumenttextexternalauthor-notifychanged.md)|Upozorní hostitele, že se změnila zdrojový dokument.|
+|[IDebugDocumentTextExternalAuthor::GetPathName](../../winscript/reference/idebugdocumenttextexternalauthor-getpathname.md)|Vrátí úplnou cestu a název souboru dokumentu.|  
+|[IDebugDocumentTextExternalAuthor::GetFileName](../../winscript/reference/idebugdocumenttextexternalauthor-getfilename.md)|Vrátí název dokumentu bez informace o cestě.|  
+|[IDebugDocumentTextExternalAuthor::NotifyChanged](../../winscript/reference/idebugdocumenttextexternalauthor-notifychanged.md)|Upozorňuje hostitele, že došlo ke změně zdrojový dokument.|

@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0ba826bdc4af9e4c87c0e5a85d47caffc187f00
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dfdc5856eecf6eef0e2308d4ce20734fbb47bb12
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802261"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348604"
 ---
 # <a name="expected--javascript"></a>Byl očekáván znak '=' (JavaScript)
 Došlo k pokusu o vytvoření proměnné pro použití s příkazy podmíněné kompilace, ale není umístit znaménko rovná se mezi proměnné a hodnotu, kterou chcete přiřadit k ní.  

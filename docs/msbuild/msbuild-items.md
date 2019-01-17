@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898683"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345601"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle představují soubory (soubory jsou určené v `Include` atributu). Položky jsou seskupeny do typů položek podle jejich názvy elementů. Seznam položek, které lze použít jako parametry pro úkoly jsou pojmenované typy položek. Úkoly pomocí hodnoty položek k provedení kroků procesu sestavení.  
@@ -321,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>Viz také:  
+## <a name="see-also"></a>Viz také:
+ [Item – element (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [Společné položky projektu nástroje MSBuild](../msbuild/common-msbuild-project-items.md)  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)  
- [Nástroj MSBuild](../msbuild/msbuild.md)   
+ [MSBuild](../msbuild/msbuild.md)   
  [Postupy: Výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md)   
  [Postupy: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Postupy: Zobrazení seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definice položek](../msbuild/item-definitions.md)   
- [Dávkové zpracování](../msbuild/msbuild-batching.md)   
- [Item – element (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Dávkování](../msbuild/msbuild-batching.md)

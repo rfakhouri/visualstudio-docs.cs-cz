@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5706d868f0096d486629c18c3d700349af92cc92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: df9296ac251d93105229fc0af365f6797a413f2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796347"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349683"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
-Určuje, zda jsou podporovány diagnostics do této aplikace. Pokud [setsite –](http://go.microsoft.com/fwlink/?LinkId=232439) byla volána v objektu implementace tohoto rozhraní s hodnotou nesmí být NULOVÁ [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) vrátí `true`. Pokud ne, vrátí hodnotu `false` a volá, aby se [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) nezdaří.  
+Určuje, zda jsou podporovány diagnostiky pro tuto aplikaci. Pokud [setsite –](http://go.microsoft.com/fwlink/?LinkId=232439) byla volána pro objekt implementace tohoto rozhraní s NENULOVOU hodnotu, [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) vrátí `true`. Pokud ne, vrátí `false` a volání [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) nezdaří.  
   
 > [!IMPORTANT]
->  [Iwebappdiagnosticssetup – rozhraní](../../winscript/reference/iwebappdiagnosticssetup-interface.md) je implementovaná pomocí PDM v11.0 a větší. V activdbg100 nalezena.  
+>  [Iwebappdiagnosticssetup – rozhraní](../../winscript/reference/iwebappdiagnosticssetup-interface.md) je implementováno komponentou Pdm verze 11.0 nebo novější. Součástí activdbg100.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,4 +35,4 @@ HRESULT DiagnosticsSupported(        [out, retval] VARIANT_BOOL* pRetVal        
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- Pokud [setsite –](http://go.microsoft.com/fwlink/?LinkId=232439) byla volána v objektu implementace tohoto rozhraní s hodnotou nesmí být NULOVÁ [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) vrátí `true`. Pokud ne, vrátí hodnotu `false`a volá, aby se [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) nezdaří.
+ Pokud [setsite –](http://go.microsoft.com/fwlink/?LinkId=232439) byla volána pro objekt implementace tohoto rozhraní s NENULOVOU hodnotu, [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) vrátí `true`. Pokud ne, vrátí `false`a volání [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) nezdaří.

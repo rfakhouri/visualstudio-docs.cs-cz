@@ -1,5 +1,5 @@
 ---
-title: Idebugasyncoperation – rozhraní | Microsoft Docs
+title: IDebugAsyncOperation Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 157ed1248535855fcb53ca2eb6f49427fea94149
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0088fddd2661d6711c9a18495f4b8704f782b3c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793983"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349985"
 ---
 # <a name="idebugasyncoperation-interface"></a>IDebugAsyncOperation – rozhraní
-Implementuje správce ladění procesu `IDebugAsyncOperation` rozhraní. Volá modul jazyka `IDebugApplication::CreateAsyncDebugOperation` metoda získat odkaz na tomto rozhraní. Můžete použít modul jazyka `IDebugAsyncOperation` rozhraní k poskytování přístupu asynchronní operaci synchronní ladění.  
+Správce ladění procesu implementuje `IDebugAsyncOperation` rozhraní. Zavolá jazyk modul `IDebugApplication::CreateAsyncDebugOperation` metodu k získání odkazu na toto rozhraní. Můžete použít modul jazyka `IDebugAsyncOperation` rozhraní k poskytování asynchronní přístup k ladění synchronní operace.  
   
- Kromě metod zděděno z `IUnknown`, `IDebugAsyncOperation` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IDebugAsyncOperation` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|Vrátí synchronní ladění operaci přidružené k tomuto objektu.|  
+|[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|Vrátí synchronní ladění operace spojené s tímto objektem.|  
 |[IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)|Způsobí, že na začátek asynchronní operace.|  
-|[IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)|Zruší operace.|  
-|[IDebugAsyncOperation::QueryIsComplete](../../winscript/reference/idebugasyncoperation-queryiscomplete.md)|Určuje, pokud ladění operace byla dokončena.|  
-|[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|Poskytuje návratovou hodnotu a parametr návratové objektu z operace synchronní ladění.|
+|[IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)|Slouží ke zrušení operace.|  
+|[IDebugAsyncOperation::QueryIsComplete](../../winscript/reference/idebugasyncoperation-queryiscomplete.md)|Určuje, pokud byla dokončena operace ladění.|  
+|[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|Poskytuje návratovou hodnotu a parametr vrácený objekt z ladění synchronní operace.|

@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercontrol2 – rozhraní | Microsoft Docs
+title: Iactivescriptprofilercontrol2 – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bc0dfa31b37a6bf99427c8eddfe2bd038da9b9d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9dad5d4a90eecdc6c93d86df9f9b18273bc471a4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793521"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349761"
 ---
 # <a name="iactivescriptprofilercontrol2-interface"></a>IActiveScriptProfilerControl2 – rozhraní
-Poskytuje metody, které přidávají možnost spuštění nebo zastavení profilování po spuštění skriptu.  
+Poskytuje metody, které přidáte možnost spuštění nebo zastavení profilování při spuštění skriptu.  
   
 ## <a name="methods"></a>Metody  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Jestli jste spustili profilace na všechny příslušné skriptovacích strojů upozorní profileru. To umožňuje získat zásobníku dokončení volání, pokud [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] běží při spuštění profilace.|  
-|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Jestli chcete zastavit profilování na všechny příslušné skriptovacích strojů upozorní profileru. To umožňuje získat zásobníku dokončení volání, pokud [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] běží při zastavení profilování.|  
+|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Oznámí profileru, které jste spustili profilaci na všechny příslušné skriptovacích strojů. To umožňuje získat úplný zásobník volání, pokud [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] je spuštěna při spuštění profilace.|  
+|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Oznámí profileru, že chcete zastavit profilaci ve všech příslušných skriptovacích strojů. To umožňuje získat úplný zásobník volání, pokud [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] běží při zastavení profilování.|  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptprofilercontrol – rozhraní](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   
+ [IActiveScriptProfilerControl Interface](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   
  [Rozhraní profileru aktivních skriptů](../../winscript/reference/active-script-profiler-interfaces.md)

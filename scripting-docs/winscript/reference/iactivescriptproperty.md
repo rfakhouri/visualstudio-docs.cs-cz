@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptproperty – | Microsoft Docs
+title: Iactivescriptproperty – | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13603bf00d758a99ba421c4ed2ef23ed30f3c25b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d0ddf54fe19ec2b9fd682aab939380411e008d1f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793455"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349267"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-`IActiveScriptProperty` Rozhraní slouží k získání a nastavení vlastnosti konfigurace.  
+`IActiveScriptProperty` Rozhraní se používá k získání a nastavení vlastnosti konfigurace.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetProperty –](../../winscript/reference/iactivescriptproperty-getproperty.md)|Získá vlastnost, která je určena parametrem.|  
-|[SetProperty –](../../winscript/reference/iactivescriptproperty-setproperty.md)|Nastaví vlastnost, která je určena parametrem.|  
+|[Metoda GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Získá vlastnost, která je určená parametru.|  
+|[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|Nastaví vlastnost, která je určená parametru.|  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní aktivních skriptů](../../winscript/reference/active-script-interfaces.md)

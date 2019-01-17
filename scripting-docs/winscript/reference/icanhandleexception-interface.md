@@ -1,5 +1,5 @@
 ---
-title: Icanhandleexception – rozhraní | Microsoft Docs
+title: Icanhandleexception – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfd9fe2c766d3c390382ccfbcf2a8fd2319e48f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b886b9960742abf94cc44c3631a1123fc0e83d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793707"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349969"
 ---
 # <a name="icanhandleexception-interface"></a>ICanHandleException – rozhraní
-Volající modul skriptu k určení výjimek, které umožňuje volajícímu obslužné rutiny.  
+Umožňuje volajícímu modulu skriptu k určení výjimek, které volající obslužné rutiny.  
   
 ## <a name="methods"></a>Metody  
- Kromě metod zděděno z `IUnknown`, `ICanHandleException` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `ICanHandleException` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|Určuje, pokud má volající skriptovací stroj může zpracovat zadanou výjimkou.|
+|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|Určuje, pokud volající skriptovací stroj dokáže zpracovat zadané výjimky.|

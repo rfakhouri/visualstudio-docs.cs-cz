@@ -1,5 +1,5 @@
 ---
-title: Ladění rozhraní vlastnost | Microsoft Docs
+title: K vlastnostem laděné | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,34 +15,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b45800a1c8fa570299dc8950b3e8979fe949faaf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64e2aa684862d6b05b1a4051c31d23656a741c37
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791865"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344600"
 ---
 # <a name="debug-property-interfaces"></a>Rozhraní pro přístup k vlastnostem laděné aplikace
 Soubor hlaviček DbgProp.h poskytuje rozhraní uvedená v této části.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- Následující rozhraní, struktur a výčty popisují hierarchické vlastnosti laděné aplikace:  
+ Následující rozhraní, struktury a výčty popisují hierarchické vlastnosti právě laděné aplikace:  
   
--   [Idebugproperty – rozhraní](../../winscript/reference/idebugproperty-interface.md)  
+-   [IDebugProperty – rozhraní](../../winscript/reference/idebugproperty-interface.md)  
   
--   [Idebugextendedproperty – rozhraní](../../winscript/reference/idebugextendedproperty-interface.md)  
+-   [IDebugExtendedProperty – rozhraní](../../winscript/reference/idebugextendedproperty-interface.md)  
   
--   [Ienumdebugpropertyinfo – rozhraní](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
+-   [IEnumDebugPropertyInfo – rozhraní](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
   
--   [Ienumdebugextendedpropertyinfo – rozhraní](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
+-   [IEnumDebugExtendedPropertyInfo – rozhraní](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
   
--   [Iperpropertybrowsing2 – rozhraní 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
+-   [IPerPropertyBrowsing2 – rozhraní 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
   
--   [Idebugpropertyenumtype_all – rozhraní](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
+-   [IDebugPropertyEnumType_All – rozhraní](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
   
--   [Debugpropertyinfo – struktura](../../winscript/reference/debugpropertyinfo-structure.md)  
+-   [DebugPropertyInfo – struktura](../../winscript/reference/debugpropertyinfo-structure.md)  
   
--   [Extendeddebugpropertyinfo – struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
+-   [ExtendedDebugPropertyInfo – struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
   
 -   [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptsitedebug – rozhraní | Microsoft Docs
+title: Iactivescriptsitedebug – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9b36054deeceb0528fb7ea399cc41d8edbbb47e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 339325686d2a98e34c6e9f96056612769a9e110e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793518"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348305"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug – rozhraní
-Implementace inteligentního hostitele `IActiveScriptSiteDebug` rozhraní provádět správu dokumentu a zapojit ladění. `IActiveScriptSite` Objekt obvykle představuje implementaci objektu `IActiveScriptSiteDebug` rozhraní. Pokud to uděláte, zavolejte `IActiveScriptSite::QueryInterface` metoda získat `IActiveScriptSiteDebug` rozhraní.  
+Implementace hostitelů `IActiveScriptSiteDebug` rozhraní provádět správu dokumentů a k účasti v ladění. `IActiveScriptSite` Objekt obvykle poskytuje implementaci `IActiveScriptSiteDebug` rozhraní. Pokud to uděláte, zavolejte `IActiveScriptSite::QueryInterface` metodu k získání `IActiveScriptSiteDebug` rozhraní.  
   
- Kromě metod zděděno z `IUnknown`, `IActiveScriptSiteDebug` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IActiveScriptSiteDebug` rozhraní poskytuje následující metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Používá stroj jazyk delegovat `IDebugCodeContext::GetSourceContext`.|  
-|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Vrátí objekt ladění aplikace přidružené k této lokalitě skriptu.|  
-|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Získá uzlu aplikace v rámci skriptu, který má být přidána dokumenty.|  
-|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Umožňuje určit, jak se budou zpracovávat chyby spuštění inteligentního hostitele.|
+|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Použít modul jazyka delegovat `IDebugCodeContext::GetSourceContext`.|  
+|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Vrátí objekt ladění aplikace související s touto lokalitou skriptu.|  
+|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Získá uzlu aplikace v rámci skriptu, které by se měl přidat dokumenty.|  
+|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Umožňuje inteligentního hostitele pro určení způsobu zpracování chyb za běhu.|

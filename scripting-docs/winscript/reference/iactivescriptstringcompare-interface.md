@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptstringcompare – rozhraní | Microsoft Docs
+title: Iactivescriptstringcompare – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,21 +18,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9aed02fc797317d6231f2192841afd0ad7771ea
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53d395ae2b7528e2e4983dc625ca98405d2b3bed
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793566"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344873"
 ---
 # <a name="iactivescriptstringcompare-interface"></a>IActiveScriptStringCompare – rozhraní
-`IActiveScriptCompare` Rozhraní se používá k definování metoda porovnání řetězce pro skriptovacího stroje.  
+`IActiveScriptCompare` Rozhraní se používá k definování metodu porovnání řetězce pro skriptovací stroj.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IActiveScriptStringCompare::StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)|Definuje metodu porovnání řetězce skriptovacího stroje.|  
+|[IActiveScriptStringCompare::StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)|Definuje metodu porovnání řetězce pro skriptovací stroj.|  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní aktivních skriptů](../../winscript/reference/active-script-interfaces.md)

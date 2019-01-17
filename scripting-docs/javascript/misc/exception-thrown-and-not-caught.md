@@ -1,5 +1,5 @@
 ---
-title: Vyvolána výjimka která nebyla zachycena | Microsoft Docs
+title: Vyvolána výjimka, která nebyla zachycena | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 839ff08da4d26406b508a206c809b0813d2b32e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788766"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349033"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Byla vyvolána výjimka, která nebyla zachycena
-Můžete zahrnout `throw` příkaz v kódu, ale nebyla uzavřena v rámci **zkuste** bloku, nebo se žádné související **catch** blok k zachycení chyby. Jsou výjimky vyvolány v rámci **zkuste** blokovat, s využitím **throw** příkaz a zachycení mimo **zkuste** blokovat s **catch** příkaz.  
+Můžete zahrnout `throw` příkaz v kódu, ale nebyl uzavřený do složených závorek **zkuste** bloku, nebo byla již přidružené **catch** bloku zachytávat chyby. Jsou výjimky vyvolány v rámci **zkuste** blokovat, s využitím **throw** příkaz a zachycené mimo **zkuste** blokovat s **catch** příkaz.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Uzavřete kód, který může vyvolat výjimku v **zkuste** blokovat a zajistěte odpovídající **catch** bloku.  
+-   Vložte kód, který může vyvolat výjimku v **zkuste** blokovat a zkontrolujte je odpovídající **catch** bloku.  
   
--   Ujistěte se, že váš příkaz catch očekává správném tvaru výjimky.  
+-   Ujistěte se, že se že váš příkaz catch očekává správnou formu výjimky.  
   
--   Pokud výjimka je znovu vyvolány, ujistěte se, že existuje jiný odpovídající příkaz catch.  
+-   Pokud je znovu vyvolána výjimka, ujistěte se, že existuje jiný odpovídajícího příkazu catch.  
   
 ## <a name="see-also"></a>Viz také  
  [Error – objekt](../../javascript/reference/error-object-javascript.md)   
- [throw – příkaz](../../javascript/reference/throw-statement-javascript.md)   
- [Try... catch... finally – příkaz](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+ [Throw – příkaz](../../javascript/reference/throw-statement-javascript.md)   
+ [try...catch...finally – příkaz](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

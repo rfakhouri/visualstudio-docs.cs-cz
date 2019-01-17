@@ -1,5 +1,5 @@
 ---
-title: Idebugstackframesniffer – rozhraní | Microsoft Docs
+title: Idebugstackframesniffer – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c104d24f27900a6ff0eb8e8f72644f820bf5a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41fff384bc9075d94fcfa84d94350fec72ebc64a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794193"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348877"
 ---
 # <a name="idebugstackframesniffer-interface"></a>IDebugStackFrameSniffer – rozhraní
-Poskytuje způsob, jak vytvořit výčet rámce zásobníku logické známé součástí. Skriptovací stroje obvykle toto rozhraní implementovat. Používá správce ladění procesu toto rozhraní najít všechny rámce zásobníku přidružené dané vlákno.  
+Poskytuje způsob, jak vytvořit výčet logického zásobníku známé komponenta. Toto rozhraní implementují obvykle skriptovací stroje. Použití Správce ladění procesu toto rozhraní najít všechny rámce zásobníku přidružené k dané vlákno.  
   
 > [!NOTE]
->  Ladicí program volá toto rozhraní z vlákna, které vás zajímají. Skriptovací stroj musí identifikovat aktuální vlákno a vrátí enumerátor vhodné.  
+>  Ladicí program volá tato rozhraní z vlákna, které vás zajímají. Skriptovací stroj musí identifikovat aktuální vlákno a vrátí odpovídající enumerátor.  
   
 ## <a name="methods"></a>Metody  
- Kromě metod zděděno z `IUnknown`, `IDebugStackFrameSniffer` rozhraní poskytuje následující metody.  
+ Kromě metod zděděných z `IUnknown`, `IDebugStackFrameSniffer` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
