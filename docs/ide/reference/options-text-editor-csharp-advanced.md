@@ -1,6 +1,6 @@
 ---
 title: Možnosti, textový editor, C#, upřesnit
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887903"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398296"
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
 
@@ -109,13 +109,17 @@ Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení editoru
 
 - Zobrazit oddělovače řádků procedury
 
-   Textový editor označuje visual oboru postupy. Řádek je vykreslen v *.vb* zdrojové soubory vašeho projektu v umístěních uvedených v následující tabulce:
+   Textový editor označuje visual oboru postupy. Řádek je vykreslen v *.cs* zdrojové soubory vašeho projektu v umístěních uvedených v následující tabulce:
 
-   |Umístění ve zdrojovém souboru .vb|Příklad umístění řádku|
+   |Umístění ve zdrojovém souboru .cs|Příklad umístění řádku|
    |---------------------------------|------------------------------|
    |Po uzavření bloku deklarace konstruktoru|– Na konci třída, struktura, modul, rozhraní nebo výčet<br />-After vlastnost, funkce nebo procedury sub<br />-Není mezi get a set klauzule ve vlastnosti|
    |Po sadu konstrukce jeden řádek|-After příkazy pro import, před definici typu v souboru třídy<br />-After proměnné deklarované ve třídě, před všechny postupy|
    |Po jeden řádek deklarací (deklarace mimo blok úrovně)|-Následující příkazy pro import, dědí příkazy deklarace proměnných, deklarace události, delegát deklarace a příkazy deklarovat knihovny DLL|
+
+## <a name="block-structure-guides"></a>Vodítka pro strukturu bloku
+
+Pomocí těchto zaškrtávacích políček zobrazíte tečkovaná svislé čáry mezi složené závorky (**{}**) ve vašem kódu. Můžete snadno zobrazí jednotlivé bloky kódu pro deklaraci úroveň a úroveň kód konstrukce.
 
 ## <a name="editor-help"></a>Nápověda k editoru
 

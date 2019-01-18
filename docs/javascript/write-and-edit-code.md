@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967424"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398283"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
@@ -26,9 +26,6 @@ V tomto stručný úvod do editoru kódu v sadě Visual Studio podíváme na ně
 > Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
 
 Tento článek předpokládá, že jste již obeznámeni s vývojem pro JavaScript. Pokud si nejste, doporučujeme vám podívejte se na kurz jako [vytvoření aplikace Node.js a Express](../javascript/tutorial-nodejs.md) první.
-
-> [!TIP]
-> Pokud chcete postupovat podle tohoto článku, ujistěte se, že máte JavaScript nastavení vybraných pro Visual Studio. Informace o výběru nastavení pro integrované vývojové prostředí (IDE) najdete v tématu [nastavení prostředí](../ide/environment-settings.md). Při importu nastavení importovat **JavaScript** nastavení.
 
 ## <a name="add-a-new-project-file"></a>Přidejte nový soubor projektu
 
@@ -96,7 +93,7 @@ Klikněte pravým tlačítkem na `render` a zvolte **definice operace Peek** z n
 
    ![Okno definice operace Peek](../javascript/media/write-code-peek-definition.png)
 
-1. Zavřete okno Definice nahlédnout do malé pole "x" v pravé horní části v automaticky otevíraném okně výběrem.
+Zavřete okno Definice nahlédnout do malé pole "x" v pravé horní části v automaticky otevíraném okně výběrem.
 
 ## <a name="use-code-snippets"></a>Používání fragmentů kódu
 

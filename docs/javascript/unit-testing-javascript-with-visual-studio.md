@@ -1,6 +1,6 @@
 ---
-title: Testování jednotek v Node.js
-description: Visual Studio poskytuje podporu testování kódu jazyka JavaScript pomocí Node.js Tools for Visual Studio
+title: Testování jazyka JavaScript a TypeScript
+description: Visual Studio poskytuje podporu testování kódu jazyka JavaScript a TypeScript pomocí Node.js Tools for Visual Studio
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,14 +11,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f40dc5abe10f75dccad91fa96d7e149267dc47
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952761"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398218"
 ---
-# <a name="unit-testing-in-nodejs"></a>Testování jednotek v Node.js
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testování jazyka JavaScript a TypeScript v sadě Visual Studio
 
 Node.js Tools For Visual Studio umožňují psání a spouštění testování částí pomocí některé další oblíbené architektury JavaScriptu bez nutnosti přepínat do příkazového řádku.
 

@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 06cd85291b63ddd7c31136e24cf622f510849775
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98e3de01bd5a12c842298ef6b923c232c0660977
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961897"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398270"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím *s příponou .runsettings* souboru
 
@@ -77,7 +77,7 @@ Následující kód XML zobrazuje obsah typické *s příponou .runsettings* sou
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from menu Test > Test Settings > Default Processor Architecture -->
+    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -165,7 +165,7 @@ Následující části podrobně popisují prvky *s příponou .runsettings* sou
 |Uzel|Výchozí|Hodnoty|
 |-|-|-|
 |**ResultsDirectory**||Adresář, kde jsou umístěny výsledky testů.|
-|**Parametr targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje verzi rozhraní testování částí pro zjištění a provedení testů. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
+|**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje verzi rozhraní testování částí pro zjištění a provedení testů. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Jednu nebo více cest k adresáři, kde se nachází TestAdapters|
@@ -243,7 +243,7 @@ Tato nastavení jsou specifická pro testovací adaptér, který spouští testo
 |-|-|-|
 |**ForcedLegacyMode**|false|V sadě Visual Studio 2012 se k němu rychlejší a lépe škálovatelný optimalizované adaptér MSTest. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu na **true** aby používala starší testovací adaptér.<br /><br />Například můžete použít toto nastavení, pokud máte *app.config* souboru určeného pro testování částí.<br /><br />Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|
 |**IgnoreTestImpact**|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [které testy je třeba spustit od předchozího sestavení](https://msdn.microsoft.com/library/dd286589).|
-|**Soubor_nastavení**||Můžete určit soubor nastavení testu pro použití s zde adaptér MSTest. Můžete také určit soubor nastavení testu tak, že vyberete **testování** > **nastavení testu** > **vybrat soubor nastavení testu**.<br /><br />Pokud chcete zadat tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||Můžete určit soubor nastavení testu pro použití s zde adaptér MSTest. Můžete také určit soubor nastavení testu tak, že vyberete **testování** > **nastavení testu** > **vybrat soubor nastavení testu**.<br /><br />Pokud chcete zadat tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Po dokončení běhu testu je adaptér MSTest vypnut. Jakýkoli proces, který je spuštěn jako část testu je také ukončen. Pokud chcete zachovat prováděcí modul testování aktivní, nastavte hodnotu na **true**. Toto nastavení můžete například použít pro zachování chodu mezi programové testy uživatelského rozhraní prohlížeče.|
 |**DeploymentEnabled**|true|Pokud nastavíte hodnotu na **false**, položky nasazení, které jste určili v testovací metodě nejsou zkopírovány do adresáře nasazení.|
 |**CaptureTraceOutput**|true|Můžete zapisovat do trasování ladění z testovací metody pomocí <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|

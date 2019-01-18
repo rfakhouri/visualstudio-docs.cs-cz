@@ -1,6 +1,6 @@
 ---
-title: Ladění aplikací v Node.js
-description: Visual Studio poskytuje podporu pro ladění aplikací Node.js v sadě Visual Studio
+title: Ladění aplikace v jazyce JavaScript nebo TypeScript
+description: Visual Studio poskytuje podporu pro ladění aplikací jazyka JavaScript a TypeScript v sadě Visual Studio
 ms.date: 12/03/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,16 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6e0ba454a00fb2cebdfaa8ba5fdba63ef3ed2748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29b58d588a07be8ba25ab844da171222c57df545
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955890"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398231"
 ---
-# <a name="debug-a-nodejs-app-in-visual-studio"></a>Ladění aplikací v Node.js v sadě Visual Studio
+# <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Ladění aplikací v jazyce JavaScript nebo TypeScript v sadě Visual Studio
 
 Můžete ladit JavaScript a TypeScript kódu pomocí sady Visual Studio. Můžete nastavit a dosažení zarážky, připojení ladicího programu, kontrolovat proměnné, zobrazení zásobníku volání a používat další funkce ladění.
+
+> [!TIP]
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Ladění skriptů na straně serveru
 
@@ -138,7 +141,7 @@ Pokud chcete přidat *tsconfig.json* soubor do projektu sady Visual Studio pova�
 * **inlineSourceMap**: Vygeneruje jediný soubor se zdrojovými mapováními namísto vytvoření samostatného zdrojového mapování pro každý zdrojový soubor.
 * **inlineSources**: Vygeneruje zdroj spolu zdrojových mapování v rámci jednoho souboru; vyžaduje *inlineSourceMap* nebo *zdrojového mapování* nastavit.
 * **mapRoot**: Určuje umístění, kde by měl ladicí program najít zdrojové mapovámí (*.map*) místo výchozího umístění souborů. Pomocí tohoto příznaku, pokud doba běhu *.map* soubory musí mít v jiném umístění než *js* soubory. Zadané umístění je součástí mapování zdroje pro přesměrování ladicí program na umístění *.map* soubory.
-* **zdrojového mapování**: Generuje odpovídající *.map* souboru.
+* **sourceMap**: Generuje odpovídající *.map* souboru.
 * **sourceRoot**: Určuje umístění, kde by měl ladicí program najít soubory TypeScript namísto umístění zdroje. Tento příznak použijte, pokud za běhu zdroje musí být v jiném umístění než umístění v době návrhu. Zadané umístění se vloží do zdrojové mapovámí ke směrování ladicího programu k umístění zdrojových souborů.
 
 Další informace o možnostech kompilátoru, najdete na stránce [– možnosti kompilátoru](https://www.typescriptlang.org/docs/handbook/compiler-options.html) na příručka TypeScript.
