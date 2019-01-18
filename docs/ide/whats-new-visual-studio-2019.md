@@ -16,18 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e387485d2a11867944e980a9bad26261fd4a707c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdf75278ea1b048ca7663876f626ec5b3358a9d9
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848545"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380332"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Co&#39;s novinkou ve verzi Preview. 2019 Visual Studio
 
 **Aktualizováno pro [16.0 1 verze Preview](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
 Visual Studio 2019 Preview zahrnuje mnoho Obecná vylepšení spolu s novými funkcemi, které optimalizovat produktivitu a spolupráci mezi týmy. Ať už používáte Visual Studio poprvé nebo jste dosud používali ho let, budete moct využívat jeho funkce pro všechny aspekty životního cyklu vývoje&mdash;z zjednodušené vytváření a kód stavu řízení projektů, tým – a spolupráci pracovní postupy open source.
+
+>[!div class="button"]
+>[Stáhněte si verzi Preview](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?ch=pre&sku=Enterprise&rel=16)
 
 Tady je podrobný rekapitulace toho, co má Visual Studio nabízí:
 

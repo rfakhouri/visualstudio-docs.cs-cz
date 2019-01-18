@@ -1,7 +1,7 @@
 ---
 title: Příklady parametrů příkazového řádku pro instalaci
 description: Přizpůsobení těchto příkladech, chcete-li vytvořit vlastní instalaci sady Visual Studio z příkazového řádku.
-ms.date: 01/15/2019
+ms.date: 01/16/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59dfe6ebb9518bbdea6edf11108f1cb27cd5d6a3
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7ba829976e699f9087f9833f5578e80037f999c8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345515"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380161"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -29,6 +29,8 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
 >
 > [!NOTE]
 > Můžete použít `^` znak na konci příkazového řádku ke zřetězení více řádků do jediného příkazu. Alternativně můžete umístit společně na jediném řádku tyto řádky. V prostředí PowerShell, je ekvivalentní prvními (`` ` ``) znaků.
+
+Seznam úloh a součástí, které můžete nainstalovat pomocí příkazového řádku, najdete v článku [ID pracovního vytížení a komponenta Visual Studio](workload-and-component-ids.md) stránky.
 
 ## <a name="using---installpath"></a>Pomocí--installPath
 
@@ -171,3 +173,4 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 * [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

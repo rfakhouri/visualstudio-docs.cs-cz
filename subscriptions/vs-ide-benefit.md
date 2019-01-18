@@ -9,12 +9,12 @@ description: Zjistěte, jak stáhnout a nainstalovat Visual Studio IDE, které j
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2e721c8c944bec0741f55c05a510ef02628c6b97
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739796"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380071"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Používání benefitu Visual Studio 2017
 
@@ -69,7 +69,7 @@ Chcete-li stáhnout integrovaném vývojovém prostředí:
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
 | Visual Studio Dev Essentials | Není k dispozici  | Visual Studio Community |Ano |
 
-<sup>1</sup>*zahrnuje:    Neprodejné (NFR) Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  Vyloučí: MCT Software & Services.*
+<sup>1</sup>*zahrnuje:  Neprodejné (NFR) Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, nejcennější Professional (MVP) Regional Director (RD).  Vyloučí: MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.

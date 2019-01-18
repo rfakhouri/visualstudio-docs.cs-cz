@@ -9,12 +9,12 @@ description: Další informace o benefitech služeb Office 365 součástí někt
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968388"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380146"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus v předplatných sady Visual Studio
 
@@ -63,7 +63,7 @@ Pokud máte v plánu pro vývoj aplikací pro Office, bude potřeba aktivovat v�
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře BizSpark, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network.*
+<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře BizSpark, nejcennější Professional (MVP), Regional Director (RD), MCT Software & Services, představte si, Microsoft Partner Network.*
 
 
 > [!NOTE]

@@ -9,12 +9,12 @@ description: Zjistěte, jak chcete předplatné aktivovat, Test Professional Par
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 654a3f357f6bc8d6caf3dbaa551c7856a2154fd2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739666"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379947"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop v předplatných sady Visual Studio
 
@@ -31,7 +31,7 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 
 3. Budete přesměrováni na web Parasoft, kde vytvoříte účet.  Stačí zadat kontaktní informace a klikněte na tlačítko **odeslat**.
    > [!div class="mx-imgBorder"]
-   > ![Parasoft výhody vytvoření účtu](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Parasoft Benefit Create Account](_img/vs-parasoft/vs-parasoft-account-cropped.png)
 
 
 4. Po vytvoření účtu, zobrazí se oznámení, že jste poslal e-mail s pokyny ke stažení.  (Nezapomeňte zkontrolovat spamech nebo nevyžádané poště, pokud se e-mailu v doručené poště).
@@ -83,7 +83,7 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici|Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje:   Microsoft Partner Network (Enterprise).  Vyloučí:  Neprodejné (NFR) Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí:  Neprodejné (NFR) Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, nejcennější Professional (MVP) Regional Director (RD).  MCT Software & Services.*
 
 
 > [!NOTE]

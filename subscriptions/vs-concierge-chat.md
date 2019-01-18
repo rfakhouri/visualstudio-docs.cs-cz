@@ -9,12 +9,12 @@ description: Další informace o benefitech specialistou součástí předplatn�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740231"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380006"
 ---
 # <a name="concierge-chat"></a>Komunikace se specialistou
 
@@ -49,7 +49,7 @@ Získání nápovědy prostřednictvím specialistou služby jsou velmi snadné.
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje:    Neprodejné (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Vyloučí:  FTE, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>*zahrnuje:  Neprodejné (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Vyloučí:  FTE Imagine nejcennější Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN).*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.

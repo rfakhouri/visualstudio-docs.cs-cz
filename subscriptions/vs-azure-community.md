@@ -9,20 +9,20 @@ description: Další informace o benefitech komunity Azure zahrnuté ve vybraný
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ab3b750395fc09b52cf1d6ab290e21cfdbb7d3d8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739376"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380345"
 ---
-# <a name="azure-community"></a>Komunita Azure
+# <a name="azure-community"></a>Azure Community
 
 Získat pomoc přímo od týmu Azure v rámci vyberte fóra podpory prostřednictvím komunity Azure.  Komunita Azure benefit vám poskytne přístup ke kolekci z fór, zaměřuje na témata související s Azure.
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
-| [Cloud Services (webové a pracovní role)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc) | [Sítě (DNS, Traffic Manager, VPN, VNET) Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc) | [Azure App Service – Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)         |
+| [Cloud Services (webové a pracovní role)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc) | [Azure Networking (DNS, Traffic Manager, VPN, VNET)](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc) | [Azure App Service – Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)         |
 | [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)                    | [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)                             | [Azure Service Bus](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)                    |
 | [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
 | [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)                       | [Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)                                     | [Azure Mobile Apps](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)                    |
@@ -38,7 +38,7 @@ Začínáme s komunitou Azure je snadné.
 
 2. Vyhledejte dlaždici komunity Azure v části Podpora a klepněte **získání nápovědy** odkaz.
     > [!div class="mx-imgBorder"]
-    >![Dlaždice komunity Azure](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![Azure Community Tile](_img/vs-azure-community/vs-azure-community-tile.png)
 
 3. Zobrazí seznam dostupných fóra.  Stačí klikněte na fóru podle vašeho výběru.
     > [!div class="mx-imgBorder"]
@@ -62,7 +62,7 @@ Dostupnost ve prospěch komunity Azure závisí na vaší úrovně předplatnéh
 |                                     Visual Studio Dev Essentials                                      |        Není k dispozici        | Není k dispozici |     Ne     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup>*zahrnuje:    Neprodejné (NFR) Microsoft FTE, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup>*zahrnuje:  Neprodejné (NFR) Microsoft FTE, nejcennější Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.

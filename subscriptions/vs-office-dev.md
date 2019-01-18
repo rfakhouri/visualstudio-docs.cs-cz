@@ -9,12 +9,12 @@ description: Další informace o benefitech Office 365 pro vývojáře, které j
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 47444b8c234f0f5bb3b67a04b63b233d2c4e73e1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739718"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379761"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné Office 365 pro vývojáře v předplatných sady Visual Studio
 
@@ -75,7 +75,7 @@ Další informace o předplatné Office 365 pro vývojáře, podívejte se [k pr
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services pro vývojáře, MCT Software & Services.  Vyloučí:  Microsoft Partner Network (MPN), představte si, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).*
+<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services pro vývojáře, MCT Software & Services.  Vyloučí:  Microsoft Partner Network (MPN), představte si, nejcennější Professional (MVP) Regional Director (RD).*
 
 
 > [!NOTE]

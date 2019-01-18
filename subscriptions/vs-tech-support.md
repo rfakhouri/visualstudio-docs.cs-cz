@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody technické podpory součástí va�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315511"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380252"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivovat výhody technické podpory v předplatných sady Visual Studio
 
@@ -99,7 +99,7 @@ Pokud chcete používat vaše výhoda Visual Studio předplatné technickou podp
 | Visual Studio Dev Essentials | Není k dispozici | Není k dispozici |Není k dispozici|
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup> *zahrnuje: Imagine Premium. Vyloučí: Neprodejné (NFR) Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, představte si Standard, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services.*
+<sup>1</sup> *zahrnuje: Imagine Premium. Vyloučí: Neprodejné (NFR) Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, představte si standardní, nejcennější Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 <sup>2</sup> *zahrnuje: Imagine Standard.*
 

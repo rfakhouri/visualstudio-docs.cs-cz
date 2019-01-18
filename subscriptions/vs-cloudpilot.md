@@ -9,12 +9,12 @@ description: Další informace o benefitech CloudPilot k dispozici ve vybraných
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740033"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380119"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot výhoda v předplatných sady Visual Studio
 
@@ -56,7 +56,7 @@ CloudPilot, podle UnifyCloud, slouží k což vývojářům umožňuje rychle a 
 0.  Poté, co váš účet je úspěšně vytvořen, obdržíte e-mailu z podpory služby VSS UnifyCloud potvrzení úspěšné vytvoření vašeho účtu. 
 
     > [!div class="mx-imgBorder"]
-    > ![CloudPilot potvrzení e-mailu](_img/vs-cloudpilot/vs-cloudpilot-email.png)
+    > ![CloudPilot Confirmation Email](_img/vs-cloudpilot/vs-cloudpilot-email.png)
 
 
 ## <a name="eligibility"></a>Způsobilost
@@ -68,12 +68,12 @@ CloudPilot, podle UnifyCloud, slouží k což vývojářům umožňuje rychle a 
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici           |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici | Není k dispozici |
-| Visual Studio Enterprise (standardní a roční cloudové)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 
 
 
-<sup>1</sup>*zahrnuje:    Není pro prodej (NFR) FTE, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>*zahrnuje:  Není pro prodej (NFR) FTE, nejcennější Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
 > [!NOTE]

@@ -9,12 +9,12 @@ description: Další informace o benefitech Visual Studio App Center, které jso
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0a1a50888666f1597da008cec5a13c86a23a805e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738635"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380099"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center v předplatných sady Visual Studio
 
@@ -51,7 +51,7 @@ Začínáme se službou Visual Studio App Center je snadný.
 | Visual Studio Dev Essentials | Není k dispozici  | Zahrnuje                                                            |Ano |
 
 
-<sup>1</sup>*zahrnuje:    Neprodejné (NFR), Imagine FTE, Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), MCT Software & Services, MCT Software a služby pro vývojáře, BizSpark, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).*
+<sup>1</sup>*zahrnuje:  Neprodejné (NFR), Imagine FTE, Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), MCT Software & Services, MCT Software a služby pro vývojáře, BizSpark, nejcennější Professional (MVP), Regional Director (RD).*
 
 
 > [!NOTE]

@@ -17,18 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac2597b5b87f75402dcc6553096c0bfcf3d30cf1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881020"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380088"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
 **Aktualizováno pro [verzi 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Pokud chcete upgradovat z předchozí verze sady Visual Studio? Zde je, co Visual Studio 2017 můžete nabídnout: Nebývalá produktivita pro všechny vývojáře, aplikace a jakoukoli platformu. Pomocí sady Visual Studio 2017 můžete vyvíjet aplikace pro Android, iOS, Windows, Linux, web a cloud. Svůj kód můžete rychle psát, snadno ladit a diagnostikovat, často testovat a bez obav vydávat. Navíc si můžete sadu Visual Studio rozšířit a přizpůsobit pomocí svých vlastních rozšíření. Používejte správu verzí, agilita a efektivní spolupráce v této vydané verzi!
+
+>[!div class="button"]
+>[Stáhněte si Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Tady je podrobný rekapitulace toho, změny provedené od předchozích verzí sady Visual Studio 2015:
 
@@ -50,11 +53,9 @@ Tady je podrobnější informace o některých nejvíce významná vylepšení a
 
 ### <a name="a-new-setup-experience"></a>Nové prostředí instalace
 
-[Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo [Visual Studio Zkontrolujte požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
+Visual Studio umožňuje jednodušší a rychlejší instalace jen těch funkcí, které potřebujete, když je potřebujete. A odinstalace proběhne čistě, příliš.
 
- Visual Studio umožňuje jednodušší a rychlejší instalace jen těch funkcí, které potřebujete, když je potřebujete. A odinstalace proběhne čistě, příliš.
-
- Nejdůležitější změny mějte na paměti při instalaci sady Visual Studio je její nové prostředí instalace. Na **úlohy** kartě, zobrazí se vám možnosti instalace, které jsou seskupeny představující běžných architektur, jazyků a platforem. Zahrnuje všechno od vývoj desktopových aplikací .NET do C++ vývoj aplikací pro iOS, Windows a Linux.
+Nejdůležitější změny mějte na paměti při instalaci sady Visual Studio je její nové prostředí instalace. Na **úlohy** kartě, zobrazí se vám možnosti instalace, které jsou seskupeny představující běžných architektur, jazyků a platforem. Zahrnuje všechno od vývoj desktopových aplikací .NET do C++ vývoj aplikací pro iOS, Windows a Linux.
 
 Vyberte úlohy, které potřebujete a změnit, pokud je potřeba.
 

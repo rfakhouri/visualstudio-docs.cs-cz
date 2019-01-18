@@ -9,12 +9,12 @@ description: Přihlaste se k odběru předplatného MSDN Magazine součástí va
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d108fa34faec04ce2f09e8ab5b55dfe19f0d61d5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3c57bd85f6570eea5f73409cf6eb9d4cbdc033c1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739588"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379989"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio
 
@@ -58,9 +58,9 @@ Digitální edice je k dispozici pro členy programu Visual Studio Dev Essential
 |Visual Studio Enterprise, Visual Studio Professional (měsíční cloud)   | Azure |Není k dispozici      |  Není k dispozici         |
 |Visual Studio Dev Essentials| Není k dispozici |Digitální vydání       |  Ano|
 
-<sup>1</sup>*vytištěná edice:    Neprodejné (NFR), Visual Studio Industry Partner (VSIP), Imagine FTE, Microsoft Partner Network (organizace), (Premium).*
+<sup>1</sup>*vytištěná edice:  Neprodejné (NFR), Visual Studio Industry Partner (VSIP), Imagine FTE, Microsoft Partner Network (organizace), (Premium).*
 
-*Digitální edice: MCT Software & Services, Microsoft Vážíme si toho Professional (Professional), ředitel pro oblast (RD).*
+*Digitální edice: MCT Software & Services nejcennější Professional (MVP) Regional Director (RD).*
 
 *Vyloučí:  Představte si (Standard), BizSpark, MCT Software & Services pro vývojáře*
 

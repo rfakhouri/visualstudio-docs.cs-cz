@@ -9,12 +9,12 @@ description: Další informace o sadě ModernRequirements produktů, které jsou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fd7aed3acd11b0d9e5ce05784619c34a97e726a8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740257"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380234"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhoda MODERNRequirements4TFS v předplatných sady Visual Studio
 
@@ -95,7 +95,7 @@ Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro
 | Visual Studio Dev Essentials | Není k dispozici  |Není k dispozici                                                          |Není k dispozici     |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), FTE.  Vyloučí:  Microsoft Partner Network (Professional), MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), FTE.  Vyloučí:  Microsoft Partner Network (Professional), MCT Software & Services pro vývojáře, BizSpark, Imagine, nejcennější Professional (MVP) Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.

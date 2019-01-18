@@ -9,12 +9,12 @@ description: Zjistěte, jak můžete Azure DevOps jako předplatitel sady Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 17210efba6e4505bbf4dc46fcd779be407f0c27e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 631683b48faed4e5b967e060b66123aaf685889b
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740202"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380015"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps výhody pro předplatitele sady Visual Studio
 
@@ -33,7 +33,7 @@ Při přihlášení k Azure DevOps pomocí identity, který jste použili pro ak
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
 
-<sup>1</sup>*zahrnuje:    Neprodejné (NFR) s hodnotou Microsoft Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & služby pro vývojáře. Vyloučí: MCT Software & Services, Imagine.*
+<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), nejcennější Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), BizSpark, MCT Software & služby pro vývojáře. Vyloučí: MCT Software & Services, Imagine.*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.

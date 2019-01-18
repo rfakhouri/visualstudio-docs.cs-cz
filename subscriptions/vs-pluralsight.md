@@ -9,12 +9,12 @@ description: Další informace o předplatné školení Pluralsight, který je s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b30096d3c0217c169d107dc882103f0468e57278
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 8e077db1aa369198f015f68e0e61efbc30697659
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740335"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380313"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -79,7 +79,7 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) |       Azure       | Není k dispozici |       Není k dispozici       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Není k dispozici |       Není k dispozici       |
 
-<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft Vážíme si toho Professional (MVP), oblast ředitel (RD), Microsoft Partner Network (MPN), FTE Imagine.*
+<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & služby pro vývojáře, MCT Software a služby, nejcennější Professional (MVP) Regional Director (RD), Microsoft Partner Network (MPN), FTE Imagine.*
 
 <sup>2</sup>*výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit.*
 

@@ -9,12 +9,12 @@ description: Naučte se, abyste mohli využívat výhody Azure Advisory Chat sou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2c70ddda4e65eb67c89539b16b0322c890f4060f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739410"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380042"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -46,7 +46,7 @@ Použití poradce Azure konverzace je jednoduché.
 |                                                  Předplatné MSDN Platforms (Standard)                                                   |        Všechny        | Není k dispozici |     Ne     |
 |                                                 Visual Studio Dev Essentials                                                 |        Není k dispozici        | Není k dispozici |     Ne     |
 
-<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD) Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
+<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), nejcennější Professional (MVP), Regional Director (RD) Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.

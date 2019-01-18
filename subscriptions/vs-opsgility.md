@@ -9,12 +9,12 @@ description: Další informace o dovedností mě nahoru – používá technolog
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: f69caa191a824f4f97ab3604b799e2b2b624f28e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739705"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380204"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Dovednosti mě až – používá technologii výhoda školení Opsgility v předplatných sady Visual Studio
 
@@ -46,7 +46,7 @@ Vybraná předplatná sady Visual Studio zahrnují přístup k odborné školen�
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici | Není k dispozici  |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-*Vyloučí:  Microsoft Partner Network (MPN), Microsoft Vážíme si toho Professional (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+*Vyloučí:  Microsoft Partner Network (MPN), nejcennější Professional (MVP), Regional Director (RD), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.

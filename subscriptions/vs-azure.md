@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739809"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380130"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -43,7 +43,7 @@ Jako předplatitel sady Visual Studio můžete použít Microsoft Azure bez dal�
 |      Visual Studio Enterprise – MCT Software & Services      |     měsíční kredit 100 USD     |                             Ano                             |
 | Visual Studio Enterprise – MCT Software & Services pro vývojáře |     měsíční kredit 150 USD     |                             Ano                             |
 
-* Zahrnuje není pro prodej (NFR), Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP)
+* Zahrnuje není pro prodej (NFR), nejcennější Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
 
 
 > [!NOTE]
@@ -58,7 +58,7 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 2. Vyhledejte dlaždici Azure v části nástroje na výhody stránky a klikněte na tlačítko **aktivovat** odkaz v dolní části dlaždice výhodu.
    > [!div class="mx-imgBorder"]
-   > ![Dlaždice Azure](_img/vs-azure/vs-azure-tile.png)
+   > ![Azure Tile](_img/vs-azure/vs-azure-tile.png)
 
 3. Vyplňte požadované informace pro vytvoření vašeho předplatného Azure, klikněte na zaškrtávací políčko a přijměte podmínky a ujednání, klikněte na tlačítko **zaregistrovat**:
    > [!div class="mx-imgBorder"]
