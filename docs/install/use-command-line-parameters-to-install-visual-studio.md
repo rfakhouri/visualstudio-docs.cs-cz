@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869658"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403964"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -77,7 +77,8 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `--help, --?, -h, -?` | Zobrazte offline verzi této stránky. |
 | `--config <path>` | **Volitelné** a **novinkou 15.9**: Při instalaci nebo upravte činnost, určuje, úlohy a komponenty pro přidání založeny na konfigurační soubor instalace předtím uložili. Tato operace je additive a nedojde k odebrání jakékoli úlohy nebo komponenty, pokud nejsou k dispozici v souboru. Navíc nepřidá položky, které se nevztahují na produkt. Během operace exportu určuje umístění pro uložení konfigurační soubor instalace. |
 
-> Poznámka: Při zadávání více úloh a součástí, je nutné opakovat `--add` nebo `--remove` přepínač příkazového řádku pro každou položku.
+> [!IMPORTANT]
+> Při zadávání více úloh a součástí, je nutné opakovat `--add` nebo `--remove` přepínač příkazového řádku pro každou položku.
 
 | **Možnosti rozložení** | **Popis** |
 | ----------------------- | --------------- |
