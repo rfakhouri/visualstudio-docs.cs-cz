@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 6a946689b7561345360afd1fe39623174d47f6c3
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 4d671cb8077c6d2608d02eede477c57cd765a528
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398062"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417756"
 documentType: LandingData
 title: Visual Studio | JavaScript a TypeScript
 metadata:
@@ -33,7 +33,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_setup.svg
       title: Instalace sady Visual Studio
-    - href: ../ide/quickstart-ide-orientation?toc=/visualstudio/javascript/toc.json
+    - href: ../ide/quickstart-ide-orientation.md
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
@@ -58,7 +58,7 @@ sections:
       image:
         src: ../javascript/media/logo-vuejs.png
     - href: publish-nodejs-app-azure.md
-      html: <p>Publikování aplikace v Node.js do služby App Service pro Linux</p>
+      html: <p>Publikování aplikace v Node.js do služby App Service v Linuxu</p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_linux-color.svg
 - title: Vývoj aplikací
@@ -75,7 +75,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_code-edit.svg
     - href: nodejs-interactive-repl.md
-      html: <p>Použití Node.js interaktivní okno REPL</p>
+      html: <p>Použití interaktivního okna REPL v Node.js</p>
       image:
         src: https://docs.microsoft.com/media/common/i_cligeneric.svg
     - href: npm-package-management.md

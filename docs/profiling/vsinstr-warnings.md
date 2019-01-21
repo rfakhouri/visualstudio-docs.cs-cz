@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d0b201d22b93b7c023627887f0fc033da360fe9
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888592"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417860"
 ---
 # <a name="vsinstr-warnings"></a>Upozornění VSInstr
 Následující tabulka obsahuje seznam upozornění vydané *VSInstr.exe* nástroj. Možnost NOWARN spolu s čísla upozornění můžete potlačit upozornění nezobrazovalo.  
   
 |Číslo upozornění|Popis|  
 |--------------------|-----------------|  
+|**VSP1026**|Pokrytí není podporované u knihoven, které neodkazují na MSCorLib. To je často případ přenosných knihoven.|  
 |**VSP2000**|Vnitřní chyba Nelze získat název souboru modulu tohoto spustitelného souboru.|  
 |**VSP2001**|\<název sestavení > je sestavení se silným názvem. Musí být znovu podepsat předtím, než mohou být provedeny.<br /><br /> K tomuto upozornění dochází, když je instrumentováno podepsané sestavení. Můžete použít *sn.exe* nástroj pro binární soubor znovu podepsat nebo dočasné vypnutí požadavek silným názvem. Další informace najdete v tématu [Sn.exe (nástroj pro silný název)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|Nelze nalézt funkci \<funcname > v souboru \<název souboru ><br /><br /> K tomuto upozornění dochází, pokud funkci nelze umístit do zadaného souboru.|  

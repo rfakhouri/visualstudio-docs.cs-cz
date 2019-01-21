@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb006506b479b98710059e8c4d40f0b1af4682c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fab9dc76bf47dbe03388aaef56c85ca2fa5a7bf
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911088"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417899"
 ---
 # <a name="property-functions"></a>Funkce vlastností
 
@@ -89,7 +89,7 @@ Statická vlastnost funkcí můžete použít všechny statické metody nebo vla
 - System.Single
 - System.String
 - System.StringComparer
-- Hodnota System.TimeSpan
+- System.TimeSpan
 - System.Text.RegularExpressions.Regex
 - System.UriBuilder
 - System.Version
@@ -128,7 +128,7 @@ Název třídy musí být plně kvalifikovaný s oborem názvů.
 Například můžete použít následující kód pro nastavení vlastnosti sestavení na aktuální datum ještě dnes.
 
 ```xml
-<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+<Today>$([System.DateTime]::Now.ToString('yyyy.MM.dd'))</Today>
 ```
 
 ### <a name="msbuild-property-functions"></a>Funkce vlastností MSBuild

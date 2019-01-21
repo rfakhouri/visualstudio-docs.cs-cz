@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960836"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417925"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Vytvoření vizuální mapy zásobníku volání při ladění 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Vytvoření vizuální mapy zásobníku volání při ladění (C#, Visual Basic, C++, JavaScript)
 
 Vytvořte mapu kódu pro vizuální sledování zásobníku volání během ladění. Můžete si dělat poznámky na mapě můžete sledovat, co kód dělá, abyste se mohli soustředit na hledání chyb.
 
@@ -53,7 +53,7 @@ Tady je rychlý pohled na mapě kódu:
 
 ##  <a name="MapStack"></a> Mapování zásobníku volání
 
-1. V sadě Visual Studio Enterprise C#, Visual Basic, C++, JavaScript nebo X ++ projektu, spustit ladění tak, že vyberete **ladění** > **spustit ladění** nebo stiskněte **F5**.
+1. V sadě Visual Studio Enterprise C#, Visual Basic, C++ nebo JavaScript project, spustit ladění tak, že vyberete **ladění** > **spustit ladění** nebo stiskněte **F5**.
    
 1. Poté, co vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, vyberte **ladění** > **mapy kódu**, nebo stiskněte klávesu **Ctrl**+**Shift** +**`**.
 
