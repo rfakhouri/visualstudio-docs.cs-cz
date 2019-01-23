@@ -1,4 +1,3 @@
----
 # [Visual Studio pro Mac](index.md)
 # [Prohlídka integrovaného vývojového prostředí (IDE)](/visualstudio/mac/ide-tour/)
 

@@ -1,4 +1,3 @@
----
 # [Skriptovací rozhraní systému Windows](windows-script-interfaces.md)
 # [Moduly Windows Script Host](windows-script-hosts.md)
 # [Skriptovací stroje systému Windows](windows-script-engines.md)

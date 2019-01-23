@@ -1,4 +1,3 @@
----
 # [Byl očekáván znak {](expected-left-curly-brace.md)
 # [Byl očekáván identifikátor, řetězec nebo číslo](expected-identifier-string-or-number.md)
 # [Byla očekávána funkce](function-expected.md)

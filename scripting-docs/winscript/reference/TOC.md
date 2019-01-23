@@ -1,4 +1,3 @@
----
 # [Referenční dokumentace skriptovacích rozhraní systému Windows](windows-script-interfaces-reference.md)
 ## [Rozhraní aktivních skriptů](active-script-interfaces.md)
 ### [Konstanty, výčty a kódy chyb aktivních skriptů](active-script-constants-enumerations-and-error-codes.md)
