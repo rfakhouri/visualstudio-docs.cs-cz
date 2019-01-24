@@ -1,14 +1,9 @@
 ---
 title: 'CA2238: Implementujte správně metody serializace | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
 - CA2238
@@ -20,17 +15,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c23402571cf8b35598d9da2601c3415c3768b862
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776868"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementujte správně metody serializace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA2238: implementujte správně metody serializace](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA2238: Implementujte správně metody serializace](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -39,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA2238:
 |Kategorie|Microsoft.Usage|  
 |Narušující změna|Rozdělení - metoda je viditelná mimo sestavení.<br /><br /> Pevné – Pokud metoda není viditelná mimo sestavení.|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Metoda, která zpracovává událost serializace, nemá správný podpis, návratový typ nebo viditelnost.  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -68,11 +63,11 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA2238:
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/vb/FxCop.Usage.SerializationEventHandlers.vb#1)]  
   
 ## <a name="related-rules"></a>Související pravidla  
- [CA2236: Volejte metody třídy Base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
+ [CA2236: Volání metody třídy base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
   
  [CA2240: Implementujte správně ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)  
   
- [CA2229: Implementovat serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)  
+ [CA2229: Implementovat Serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)  
   
  [CA2235: Označte všechna neserializovatelná pole](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
   
@@ -80,5 +75,4 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA2238:
   
  [CA2239: Poskytujte metody deserializace pro nepovinné pole](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
   
- [CA2120: Zabezpečte serializační konstruktory](../code-quality/ca2120-secure-serialization-constructors.md)
-
+ [CA2120: Zabezpečte Serializační konstruktory](../code-quality/ca2120-secure-serialization-constructors.md)

@@ -1,13 +1,9 @@
 ---
-title: 'CA1401: VOLÁNÍ NESPRAVOVANÝCH KÓDŮ. Vyvolá P by neměly být viditelné | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'CA1401: Vyvolá P by neměly být viditelné | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PInvokesShouldNotBeVisible
 - CA1401
@@ -19,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6077ddd56328c1c35c9dd9e049eb472bde0d1799
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee4afd777f46087a7497dbdf4734e4ced52f47d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761893"
 ---
-# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: VOLÁNÍ NESPRAVOVANÝCH KÓDŮ. Volání nespravovaných kódů by neměly být viditelné
+# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: Volání nespravovaných kódů by neměla být viditelná
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53872272"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejná nebo chráněná metoda veřejného typu má <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atribut (také implementováno pomocí `Declare` – klíčové slovo v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
 
 ## <a name="rule-description"></a>Popis pravidla

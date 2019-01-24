@@ -1,11 +1,8 @@
 ---
-title: 'Postupy: vytvoření knihovny aktivit pracovních postupů (starší verze) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření knihovny aktivit pracovních postupů (starší verze) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activity library projects
@@ -15,20 +12,20 @@ ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: daed51a1cb5ba6eb3d4e0d7748993027686d5b7e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 622b4376ef90863697e13ae32005a9ad890ce2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767539"
 ---
-# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Postupy: vytvoření knihovny aktivit pracovních postupů (starší verze)
+# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Postupy: Vytvoření knihovny aktivit pracovních postupů (starší verze)
 Postupujte podle těchto kroků a vytvořte projekt knihovny aktivit pracovních postupů pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library-project"></a>Vytvoření projektu knihovny aktivit pracovního postupu  
   
-1.  Spusťte sadu Visual Studio.  
+1.  Spusťte Visual Studio.  
   
 2.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.  
   
@@ -49,11 +46,11 @@ Postupujte podle těchto kroků a vytvořte projekt knihovny aktivit pracovních
   
      Pokud chcete řešení adresář vytvořený pro projekt, vyberte **vytvořit adresář pro řešení** zaškrtněte políčko a zadejte název do pole **název řešení** pole.  
   
-8.  Klikněte na tlačítko **OK**.  
+8.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)   
  [Používání starší verze návrháře aktivit](../workflow-designer/using-the-legacy-activity-designer.md)   
  [Aktivity starších verzí pracovních postupů](../workflow-designer/legacy-workflow-activities.md)   
- [Vývoj aktivit pracovního postupu](http://msdn.microsoft.com/en-us/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Aktivity Windows Workflow Foundation](http://msdn.microsoft.com/en-us/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [Vývoj aktivit pracovního postupu](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Aktivity Windows Workflow Foundation](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

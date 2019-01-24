@@ -1,25 +1,22 @@
 ---
 title: Zobrazení modelu UML v diagramech | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757312"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770664"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Zobrazení modelu UML v diagramech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,8 +41,8 @@ V programovém kódu pro rozšíření pro Visual Studio můžete řídit způso
   
 |Typ prvku|Příklad|Chcete-li zobrazit tuto aplikaci, musí váš kód|  
 |---------------------|-----------------|-------------------------------------|  
-|Třídění|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Vytvoření přidružené tvary v diagramech zadané. Můžete vytvořit libovolný počet obrazce pro každý třídění.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Nastavte `parentShape` k `null` obrazce na nejvyšší úrovni diagramu.<br /><br /> Chcete-li zobrazit jeden prvek uvnitř jiného:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Poznámka:** provést zobrazení uvnitř **ILinkedUndo** transakce, někdy vrátí metoda ne `IShape`. Ale tvar správně vytvořeny a je přístupný pomocí `IElement.Shapes().`|  
-|Podřízené třídění|Atribut, operace,<br /><br /> Část, Port|Automaticky – bez potřeby jakéhokoli kódu.<br /><br /> Zobrazí se v rámci nadřazeného elementu.|  
+|Třídění|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Vytvoření přidružené tvary v diagramech zadané. Můžete vytvořit libovolný počet obrazce pro každý třídění.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Nastavte `parentShape` k `null` obrazce na nejvyšší úrovni diagramu.<br /><br /> Chcete-li zobrazit jeden prvek uvnitř jiného:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Poznámka:**  Pokud provádíte zobrazení uvnitř **ILinkedUndo** transakce, někdy vrátí metoda ne `IShape`. Ale tvar správně vytvořeny a je přístupný pomocí `IElement.Shapes().`|  
+|Podřízené třídění|Atribut, operace,<br /><br /> Part, Port|Automaticky – bez potřeby jakéhokoli kódu.<br /><br /> Zobrazí se v rámci nadřazeného elementu.|  
 |Chování|Interakce (pořadí)<br /><br /> Aktivita|Chování vazby odpovídající diagramu.<br /><br /> Každý chování můžete najednou vázaný na maximálně jeden diagram.<br /><br /> Příklad:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |Podřízené chování|Životností, zpráv, akce, uzly objektu|Automaticky – bez potřeby jakéhokoli kódu.<br /><br /> Pokud nadřazená je vázán na diagramu se zobrazí.|  
 |Relace|Asociace, generalizace, tok, závislost|Automaticky – bez potřeby jakéhokoli kódu.<br /><br /> Zobrazí se na každý diagram, ve kterém se zobrazí oba konce.|  
@@ -385,7 +382,4 @@ namespace AlignCommand
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Procházení modelu UML](../modeling/navigate-the-uml-model.md)   
  [Ukázka: Zarovnání tvarů v diagramu příkazu nabídky](http://go.microsoft.com/fwlink/?LinkId=213809)   
- [Ukázka: Vytvoření prvky, tvary a stereotypy](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-
+ [Ukázka: Vytváření prvky, tvary a stereotypy](http://go.microsoft.com/fwlink/?LinkId=213811)

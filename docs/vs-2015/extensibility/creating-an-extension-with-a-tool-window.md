@@ -1,24 +1,19 @@
 ---
 title: Vytváření rozšíření pomocí panelu nástrojů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 79ba397bf2dee5ae18b727830af87ae57415d885
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f07cb45d6b77fc554475558fddba34792c0d8a55
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738338"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774147"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Vytváření rozšíření pomocí panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ V tomto postupu se dozvíte, jak použít šablonu projektu VSIX a **vlastního 
      Měli byste vidět položku nabídky pro **FirstWindow**. Klikněte na něj.  
   
      Měli byste vidět okno nástroje s názvem **FirstWindow** a slavným výrokem tlačítko **klikněte na mě!.**
-

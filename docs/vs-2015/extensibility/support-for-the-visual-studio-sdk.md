@@ -1,14 +1,9 @@
 ---
 title: Podpora pro sadu Visual Studio SDK | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, support options
 - support, Visual Studio SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ebc4b31d054bc78b9bb9c74dc9da2423ff5acc55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0f937434cbad27a2268b0d8f0360d2db606f5d38
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760282"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Podpora sady Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy 
 ### <a name="msdn-development-center"></a>Centrum MSDN pro vývoj  
  [Středisko pro vývojáře rozšiřitelnosti Visual Studio](http://go.microsoft.com/fwlink/?LinkID=84381) na webové stránce MSDN obsahuje prostředky, které pomohou zodpovědět otázky týkající se rozšíření sady Visual Studio. Například se několik odkazů na blogy o vývojářských VSIP.  
   
-### <a name="microsoft-newsgroups"></a>Diskusní skupiny společnosti Microsoft  
+### <a name="microsoft-newsgroups"></a>Microsoft Newsgroups  
  Členové týmu vývoje Visual Studia a jinými vývojáři, kteří často rozšíření sady Visual Studio účastnit microsoft.public.vstudio.extensibility diskusní skupiny. Této diskusní skupiny je spravovaný diskusní skupiny. Pokud jste předplatitelem MSDN univerzální, ujistěte se, že zaregistrujete vyžádanou aliasu, aby bylo možné pro Microsoft reagovat.  
   
 ### <a name="msdn-forums"></a>Fóra na webu MSDN  
@@ -50,7 +45,7 @@ Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy 
   
 ## <a name="included-support"></a>Podpory  
   
-### <a name="visual-studio-product-support"></a>Podpora produktu Visual Studio  
+### <a name="visual-studio-product-support"></a>Visual Studio Product Support  
  Některé podpora je součástí nákupu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produktů. Další informace najdete v tématu [Visual Studio – podpora](http://msdn.microsoft.com/vstudio/cc136615.aspx). Společnost Microsoft udržuje podporu vyhrazeného týmu odpovědi na otázky o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšiřitelnosti.  
   
 ### <a name="msdn-subscription-support"></a>Podpora pro předplatná MSDN  
@@ -72,4 +67,3 @@ Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy 
   
 ## <a name="see-also"></a>Viz také  
  [Kontaktujte nás](../ide/talk-to-us.md)
-
