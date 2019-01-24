@@ -1,27 +1,22 @@
 ---
 title: Nástroje pro profilaci | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780841"
 ---
 # <a name="profiling-tools"></a>Nástroje pro profilaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +79,22 @@ Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití 
  [IntelliTrace](../debugger/intellitrace.md) umožňuje zaznamenat konkrétní události, zkontrolujte data v **lokální** okno během událostí ladicího programu a volání funkce a debug – chyby, které je těžké reprodukovat.  Nástroj IntelliTrace je primárně ladicí nástroj, ale také poskytuje informace, které lze použít pro vyšetřování výkonu. Tento nástroj v sadě Visual Studio Enterprise, můžete použít s plochy, Windows Universal a aplikace C# ASP.NET. Můžete najít v IntelliTrace **diagnostické nástroje** okno při ladění (**ladění / Windows / zobrazit diagnostické nástroje**).  
   
 ## <a name="profiling-in-production"></a>Profilace v produkčním prostředí  
- Doporučený postup pro profilování v produkčním prostředí, je provádět profilaci z [příkazového řádku pomocí vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) shromažďovat profil využití procesoru. Podpora vzdáleného profilování ve službě Azure App Service, můžete provádět profilaci prostřednictvím [Průzkumníku serveru nebo webu Kudu Portal](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ Doporučený postup pro profilování v produkčním prostředí, je provádět profilaci z [příkazového řádku pomocí vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) shromažďovat profil využití procesoru. Podpora vzdáleného profilování ve službě Azure App Service, můžete provádět profilaci prostřednictvím [Průzkumníku serveru nebo webu Kudu Portal](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Jaké nástroje můžu použít?  
  Tady je tabulka, která obsahuje seznam různých nástrojů, které nabízí Visual Studio a různých typech projektů je můžete využít s:  
   
 |Nástroje výkonu|Plocha Windows|Windows Universal/Store|ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
-|[Využití paměti](../profiling/memory-usage.md)|Ano|Ano|Ne|  
-|[Využití procesoru](../profiling/cpu-usage.md)|Ano|Ano|Pouze Azure App Service|  
-|[Využití GPU](../debugger/gpu-usage.md)|Ano|Ano|Ne|  
-|[Časová osa aplikace](../profiling/application-timeline.md)|Ano|Ano|Ne|  
-|[Tipy pro výkon](../profiling/perftips.md)|Ano|Ano pro XAML, ne pro kód HTML|Ne|  
-|[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ano|Ne|Ano|  
+|[Využití paměti](../profiling/memory-usage.md)|ano|ano|Ne|  
+|[Využití procesoru](../profiling/cpu-usage.md)|ano|ano|Pouze Azure App Service|  
+|[Využití GPU](../debugger/gpu-usage.md)|ano|ano|Ne|  
+|[Časová osa aplikace](../profiling/application-timeline.md)|ano|ano|Ne|  
+|[Tipy pro výkon](../profiling/perftips.md)|ano|Ano pro XAML, ne pro kód HTML|Ne|  
+|[Prohlížeč výkonu](../profiling/performance-explorer.md)|ano|Ne|ano|  
 |[IntelliTrace](../debugger/intellitrace.md)|Pouze .NET Enterprise|Pouze .NET Enterprise|Pouze .NET Enterprise|  
 |[Rychlost odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|  
 |[Paměť JavaScriptu](../profiling/javascript-memory.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|  
   
 ## <a name="see-also"></a>Viz také  
  [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
-
-
-

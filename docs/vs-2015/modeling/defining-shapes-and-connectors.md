@@ -1,23 +1,20 @@
 ---
 title: Definování obrazců a konektorů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775997"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definování obrazců a konektorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +47,3 @@ Existuje několik typů základní tvary, které můžete použít k zobrazení 
   
 ##  <a name="shapeInheritance"></a> Tvar dědičnosti  
  Obrazce mohou dědit z jiného obrazce. Tvary však musí být stejného druhu. Například může dědit pouze obrazec geometrie z obrazec geometrie. Zděděné tvary mít oddíly a dekorátory jejich základní obrazec. Konektory mohou dědit z konektorů.
-
-
-

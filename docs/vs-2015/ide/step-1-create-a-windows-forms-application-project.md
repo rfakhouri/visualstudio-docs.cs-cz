@@ -1,32 +1,27 @@
 ---
-title: 'Krok 1: Vytvoření projektu aplikace Windows Forms | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Krok 1: Vytvořte projekt Formulářové aplikace Windows | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd6c7f5398575f70da4414cfd529dbd6a67f5c6f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: add477fd77731f81da4cc0ee94f7f7d0c7a09cb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780466"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1: Vytvořte projekt formulářové aplikace Windows
+# <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1: Vytvoření projektu formulářové aplikace Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Při vytváření prohlížeče obrázků, prvním krokem je vytvoření projektu aplikace Windows Forms.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+ ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) nebo [kurz 1: Vytvoření prohlížeče obrázků v C# -Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-create-a-windows-forms-application-project"></a>Vytvoření projektu aplikace Windows Forms  
   
@@ -77,7 +72,4 @@ Uložit všechny tlačítka panelu nástrojů
   
 -   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 2: Spusťte svůj Program](../ide/step-2-run-your-program.md).  
   
--   K návratu na téma přehledu přejděte [kurz 1: vytvoření prohlížeče obrázků](../ide/tutorial-1-create-a-picture-viewer.md).
-
-
-
+-   K návratu na téma přehledu přejděte [kurz 1: Vytvoření prohlížeče obrázků](../ide/tutorial-1-create-a-picture-viewer.md).

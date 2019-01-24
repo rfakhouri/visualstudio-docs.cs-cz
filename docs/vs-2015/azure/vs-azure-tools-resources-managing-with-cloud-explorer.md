@@ -2,7 +2,7 @@
 title: Správa prostředků Azure pomocí Průzkumníka cloudu | Dokumentace Microsoftu
 description: Zjistěte, jak pomocí Průzkumníka cloudu k procházení a správě prostředků Azure v rámci sady Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: f387a4a0bb8c9555bc1ca1f8b3cc800cecd7637d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 25995eacc961474fcb6486668c918d2e5be5ba76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779702"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Správa prostředků přidružených k účtům Azure v Průzkumníkovi cloudu sady Visual Studio
 
@@ -26,7 +26,7 @@ Podobně jako [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=52504
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Visual Studio 2015 se sadou [Microsoft Azure SDK pro .NET 2.9](https://www.microsoft.com/en-us/download/details.aspx?id=51657).
+* Visual Studio 2015 se sadou [Microsoft Azure SDK pro .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Účet Microsoft Azure – Pokud nemáte účet, můžete si [zaregistrujte si bezplatnou zkušební verzi](http://go.microsoft.com/fwlink/?LinkId=623901) nebo [aktivovat výhody pro předplatitele sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

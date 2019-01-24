@@ -1,25 +1,22 @@
 ---
 title: Procházení modelu UML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774608"
 ---
 # <a name="navigate-the-uml-model"></a>Procházení modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Toto téma uvádí hlavní typy modelu UML.
   
  Pokud odstraníte z modelu prvek, každá relace, ve kterém se účastní se odstraní automaticky a vlastnost na druhém konci je aktualizována.  
   
- Pokud specifikace UML přiřadí vlastnosti násobnost 0.. 1, může mít hodnotu `null`. Násobnost s maximem větším než 1 znamená, že má vlastnost .NET typ: `IEnumerable<` *typ*`>`.  
+ Pokud specifikace UML přiřadí vlastnosti násobnost 0.. 1, může mít hodnotu `null`. Násobnost s maximem větším než 1 znamená, že má vlastnost .NET typ: `IEnumerable<`*Typ*`>`.  
   
  Další informace o překračování vztahů naleznete v tématu [procházení vztahů pomocí rozhraní API UML](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -77,8 +74,8 @@ Toto téma uvádí hlavní typy modelu UML.
   
 |Typ atributu|Získáte přístup k|Další informace|  
 |--------------------|----------------------------------|----------------------|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (v Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Aktuální diagram výběru.|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
-|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> . ILinkedUndoContext<br /><br /> (v Microsoft.VisualStudio.Modeling.Sdk. [version] .dll)|Umožňuje seskupení změn do transakce.|[Propojení aktualizací modelu UML pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md)|  
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (in Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Aktuální diagram výběru.|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
+|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (v Microsoft.VisualStudio.Modeling.Sdk. [version] .dll)|Umožňuje seskupení změn do transakce.|[Propojení aktualizací modelu UML pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md)|  
 |Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (v Microsoft.VisualStudio.Shell.Immutable. [version] .dll)|Hostitel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Odtud můžete přístup k souborům, projektům a další aspekty.|[Otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
   
 ### <a name="to-get-the-context"></a>Získání kontextu  
@@ -123,7 +120,7 @@ foreach (IShape<IInterface> in
 ```  
   
 ## <a name="accessing-another-model-or-diagrams"></a>Přístup k jiným modelům nebo diagramům  
- Můžeš:  
+ Můžete:  
   
 -   Použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] model Service bus k vytvoření odkazů mezi prvky v různých modelech. Další informace najdete v tématu [modely UML integrovat s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>Viz také  
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

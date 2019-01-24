@@ -1,33 +1,28 @@
 ---
 title: 'Krok 3: Přidejte časovač odpočítávání | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5bbbc5e7de56e3ab03976b1933895035913bb7d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4440370453db96fa207c283e9c4a03b28d7ef6b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228147"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775965"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>Krok 3: Přidejte časovač odpočítávání
+# <a name="step-3-add-a-countdown-timer"></a>Krok 3: Přidání časovače odpočítávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ve třetí části tohoto kurzu přidáte časovač odpočítávání ke sledování počtu sekund pro dokončení kvízu.  
   
 > [!NOTE]
->  Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: vytvoření a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-add-a-countdown-timer"></a>Chcete-li přidat časovač odpočítávání  
   
@@ -114,7 +109,4 @@ Probíhající matematický kvíz
   
 -   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: Přidejte metodu CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Vytvořte náhodný problém s přidáním](../ide/step-2-create-a-random-addition-problem.md).
-
-
-
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Vytvořit náhodnou úlohu sčítání](../ide/step-2-create-a-random-addition-problem.md).

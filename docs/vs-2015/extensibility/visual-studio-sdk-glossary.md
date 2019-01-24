@@ -1,26 +1,21 @@
 ---
 title: Glosář sady Visual Studio SDK | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ec2300e8bf700deacd50a4a980e02aa4b903bae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c189c4c9e06d224d7cef296a2c39e732cbc29f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785736"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glosář sady Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,4 +186,3 @@ Tento glosář obsahuje definice podmínek, které se používají v [!INCLUDE[v
   
   VSPackage  
   Instalovatelné část software, který je rozšířením rozhraní IDE sady Visual Studio přispívá jeden nebo více z následujících akcí: uživatelské rozhraní, služby, typy projektů nebo editoru nebo návrháře. VSPackage se skládá z objektu modelu COM, který implementuje `IVsPackage` rozhraní a jeden nebo více jiných objektů COM, které implementují jiných rozhraní pro podporu výběru a další funkce. Kromě toho VSPackage má požadavky na konkrétní registraci.
-

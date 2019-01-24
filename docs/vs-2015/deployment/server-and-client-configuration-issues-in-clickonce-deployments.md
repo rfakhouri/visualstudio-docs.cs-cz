@@ -1,14 +1,9 @@
 ---
 title: Problémy s konfigurací klienta v nasazeních ClickOnce a server | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948938"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776384"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
 - .deploy  
   
-  Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.  
+  Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.  
   
   Budete muset nakonfigurovat .manifest .application a .deploy, například pokud používáte IIS, kde jste dosud nenainstalovali [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], nebo pokud používáte jiný webový server (např. Apache).  
   
@@ -104,12 +99,12 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
 |Typ adresy URL|Popis|  
 |--------------|-----------------|  
-|FTP: / /|Můžete publikovat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace pomocí tohoto protokolu.|  
+|ftp://|Můžete publikovat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace pomocí tohoto protokolu.|  
 |http://|Můžete nainstalovat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace pomocí tohoto protokolu.|  
 |https://|Můžete nainstalovat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace pomocí tohoto protokolu.|  
 |File://|Můžete nainstalovat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace pomocí tohoto protokolu.|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Brány Windows Firewall  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Brána Windows Firewall  
  Ve výchozím nastavení povoluje bránu Windows Firewall Windows XP s aktualizací SP2. Pokud vyvíjíte aplikace na počítači s nainstalovaným Windows XP, budete stále moct publikovat a spustit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace z místního serveru, na kterém běží služby IIS. Však nelze přistupovat k serveru, na kterém běží služby IIS z jiného počítače, není-li otevřít bránu Windows Firewall. Pokyny pro správu brány Windows Firewall, naleznete v nápovědě Windows.  
   
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Povolte rozšíření serveru FrontPage  
@@ -117,7 +112,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
  Ve výchozím nastavení Windows Server nemá nainstalované rozšíření serveru FrontPage. Pokud chcete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] publikovat na Windows serveru webový server, který používá protokol HTTP pomocí rozšíření serveru FrontPage, je nutné nainstalovat rozšíření serveru FrontPage nejprve. Instalaci můžete provést pomocí nástroje Správa serveru pro správu ve Windows serveru.  
   
-## <a name="windows-server-locked-down-content-types"></a>Systému Windows Server: Typy obsahu uzamknuté  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Typy obsahu uzamčené  
  Služba IIS na [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] uzamyká všechny typy souborů s výjimkou určitých známých typů obsahu (například htm, HTML, txt a tak dále). Chcete-li povolit nasazení [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace pomocí tohoto serveru, budete muset změnit nastavení služby IIS umožňující stahování souborů .application typu, .manifest a jakékoli jiné typy vlastního souboru používaný vaší aplikací.  
   
  Pokud nasadíte pomocí serveru služby IIS, spusťte inetmgr.exe a přidat nové typy souborů pro výchozí webové stránky:  
@@ -144,6 +139,3 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
  [Řešení potíží s nasazením ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Výběr strategie nasazení ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md)
-
-
-

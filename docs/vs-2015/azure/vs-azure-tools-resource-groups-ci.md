@@ -2,19 +2,19 @@
 title: Průběžná integrace služby Azure DevOps pomocí projekty skupiny prostředků Azure | Dokumentace Microsoftu
 description: Popisuje, jak nastavit průběžnou integraci služby Azure DevOps s využitím projekty nasazení skupiny prostředků Azure v sadě Visual Studio.
 author: mlearned
-manager: douge
+manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
 ms.service: azure-resource-manager
 ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: 03be89d9de68d3d0ced5252582a2bce05fb08b8f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 01793705d5d89d31b82a84d1ccca192d043db5a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775562"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Průběžná integrace služby Azure DevOps pomocí projekty nasazení skupiny prostředků Azure
 K nasazení šablony Azure, můžete provádět úlohy v různých fázích: Kopírovat sestavení, testování, do Azure (tzv. "Přípravného") a nasaďte šablonu. Existují dva různé způsoby nasazování šablon ke službám Azure DevOps. Obě metody poskytují stejné výsledky, proto zvolte ten, který nejlépe vyhovuje požadavkům vašeho pracovního postupu.

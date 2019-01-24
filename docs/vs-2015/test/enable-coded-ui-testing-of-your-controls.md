@@ -1,24 +1,19 @@
 ---
 title: Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1e24e9e405dfeab18ca0e55a617857d73ba4234e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848537"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766968"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Ovládací prvek lze snadněji testovat, pokud se rozhodnete implementovat podpo
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Pro podporu záznam a přehrávání a ověření vlastností navigace pro ovládací prvek Windows forms  
  Implementace usnadnění pro ovládací prvek, jak je uvedeno v následujícím postupu a podrobně popsaný v části <xref:System.Windows.Forms.AccessibleObject>.  
   
- ![CUIT&#95;přístupné](../test/media/cuit-accessible.png "CUIT_Accessible")  
+ ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")  
   
 1.  Implementace, která je odvozena z třídy <xref:System.Windows.Forms.Control.ControlAccessibleObject>a přepsat <xref:System.Windows.Forms.Control.AccessibilityObject%2A> vlastnost k vrácení objektu vaší třídy.  
   
@@ -415,7 +410,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
  Když Visual Studio zaznamenává testu, zachytí každou událost myši a klávesnice. V některých případech však můžete záměr akce ztraceno v řadu událostí myši a klávesnice. Například pokud váš ovládací prvek podporuje automatické dokončování, stejnou sadu událostí myši a klávesnice může vést k jinou hodnotu při testu je přehrávání v jiném prostředí. Můžete přidat filtr akce modulu plug-in, který nahrazuje řadu událostí klávesnice a myši pomocí jedné akce. Tímto způsobem můžete nahradit série události myši a klávesnice, což vede k výběru hodnoty pomocí jedné akce, která nastaví hodnotu. Programové testy UI způsobem, který chrání před rozdíly v automatickém dokončování z jednoho prostředí do druhého.  
   
 ### <a name="to-support-intent-aware-actions"></a>Pro podporu akce podporující záměr  
- ![CUIT&#95;akce](../test/media/cuit-actions.png "CUIT_Actions")  
+ ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")  
   
 1.  Implementovat třídu filtru akce, která je odvozena od <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, přepisování vlastnosti <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
   
@@ -541,11 +536,8 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>Externí zdroje  
   
 ### <a name="guidance"></a>Doprovodné materiály  
- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: testování částí: testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Windows.Forms.AccessibleObject>   
  [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
-
-
-

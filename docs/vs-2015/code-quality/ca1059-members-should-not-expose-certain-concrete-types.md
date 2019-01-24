@@ -1,13 +1,9 @@
 ---
 title: 'CA1059: Členy by neměly zveřejňovat určité konkrétní typy | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1059
 - MembersShouldNotExposeCertainConcreteTypes
@@ -19,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3bc5fce0285ab4fe0da9211eb27f89bc1fc38bfb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46e3941e1aab0e2f6f532a7a394437a0613b8d8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944688"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772555"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Členy by neměly zveřejňovat určité konkrétní typy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ ms.locfileid: "53944688"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Externě viditelného členu je některé konkrétní typ nebo zpřístupňuje určité konkrétní typy prostřednictvím jednoho z jeho parametry nebo návratovou hodnotu. Toto pravidlo v současné době sestavy vystavení následující konkrétní typy:
 
 -   Typ odvozený od <xref:System.Xml.XmlNode?displayProperty=fullName>.

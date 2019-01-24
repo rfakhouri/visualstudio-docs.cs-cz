@@ -1,14 +1,9 @@
 ---
 title: Transformace nástroje MSBuild | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
@@ -16,13 +11,13 @@ ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce1d0b63518fb48636fca38b2788eea2d0c189a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223694"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773082"
 ---
 # <a name="msbuild-transforms"></a>Transformace nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ Transformace je 1: 1 převod jednu položku seznamu do jiného. Kromě povolení
 ## <a name="dependency-analysis"></a>Analýza závislosti  
  Transformace zaručit mapování 1: 1 mezi transformovaný položky seznamu a původní seznam položek. Proto, pokud cíl vytvoří výstupy, které jsou transformací vstupních hodnot, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] můžete analyzovat časová razítka vstupy a výstupy a rozhodnout, jestli se má přeskočit, sestavení nebo částečně znovu sestavit cíl.  
   
- V [úlohu kopírování](../msbuild/copy-task.md) v následujícím příkladu každý soubor v `BuiltAssemblies` seznamu položek se mapuje na soubor v cílové složce úkolů, zadat pomocí transformace `Outputs` atribut. Pokud soubor v `BuiltAssemblies` položky seznamu změny `Copy` úkol se spustí pouze pro změněný soubor a všechny ostatní soubory se přeskočí. Další informace o analýzu závislostí a jak pomocí transformace, najdete v části [postupy: přírůstkové sestavení](../msbuild/how-to-build-incrementally.md).  
+ V [úlohu kopírování](../msbuild/copy-task.md) v následujícím příkladu každý soubor v `BuiltAssemblies` seznamu položek se mapuje na soubor v cílové složce úkolů, zadat pomocí transformace `Outputs` atribut. Pokud soubor v `BuiltAssemblies` položky seznamu změny `Copy` úkol se spustí pouze pro změněný soubor a všechny ostatní soubory se přeskočí. Další informace o analýzu závislostí a jak pomocí transformace, najdete v části [jak: Přírůstkové sestavování](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -118,6 +113,3 @@ extension: .xsd
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
  [Postupy: Přírůstkové sestavování](../msbuild/how-to-build-incrementally.md)
-
-
-

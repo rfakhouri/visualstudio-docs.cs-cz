@@ -1,25 +1,20 @@
 ---
 title: Sada pravidel smíšená minimální pravidla | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 203422047ec1293e109a34699953897000893902
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 1db971743e34a533cac1ada9e3f7a71fb3755aea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772668"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Sada pravidel Smíšená minimální pravidla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Smíšená minimální pravidla společnosti Microsoft se soustředí na nejdůl
 |                              [C6504](../code-quality/c6504.md)                              |                                              Null na typech bez ukazatele                                              |
 |                              [C6505](../code-quality/c6505.md)                              |                                               Vlastnost MustCheck na typ Void                                               |
 |                              [C6506](../code-quality/c6506.md)                              |                                      Velikost vyrovnávací paměti na typech bez ukazatele nebo pole                                      |
-|        [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Null Neshoda v přístupu přes ukazatel nula                                       |
+|        [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Null Neshoda v přístupu přes ukazatel nula                                       |
 |                              [C6508](../code-quality/c6508.md)                              |                                           K zápisu na konstantě                                            |
 |                              [C6509](../code-quality/c6509.md)                              |                                          Návratová hodnota použita na předpokladu                                          |
 |                              [C6510](../code-quality/c6510.md)                              |                                        NULL byl ukončen na typech bez ukazatele                                         |
@@ -76,13 +71,13 @@ Smíšená minimální pravidla společnosti Microsoft se soustředí na nejdůl
 |                              [C6516](../code-quality/c6516.md)                              |                                          Atribut nemá žádné vlastnosti                                           |
 |                              [C6517](../code-quality/c6517.md)                              |                                       Platná velikost pro vyrovnávací paměť bez možnosti čtení                                       |
 |                              [C6518](../code-quality/c6518.md)                              |                                     Zapisovatelná velikost pro vyrovnávací paměť, Nezapisovatelný                                      |
-|        [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)        |                  Neplatná Poznámka: hodnota vlastnosti 'NeedsRelease' musí být Ano nebo ne                   |
-|        [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
+|        [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)        |                  Neplatná Poznámka: hodnota vlastnosti 'NeedsRelease' musí být Ano nebo ne                   |
+|        [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
 |                              [C6522](../code-quality/c6522.md)                              |                                           Typ řetězec neplatné velikosti                                            |
-|        [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Neplatná velikost parametru řetězce                                         |
+|        [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Neplatná velikost parametru řetězce                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   Neplatná velikost řetězce-nedosažitelná oblast                                    |
-|        [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              Neplatná Poznámka: vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void               |
+|        [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
+|                              [C6527](../code-quality/c6527.md)                              |              Neplatná Poznámka: Vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       Nerozpoznaný styl řetězce formátu                                        |
 |                              [C6540](../code-quality/c6540.md)                              | Použití poznámek atributu na této funkci způsobí neplatnost všech existujících poznámek __declspec  |
 |                              [C6551](../code-quality/c6551.md)                              |                              Neplatná specifikace velikosti: výraz není analyzovatelný                              |
@@ -142,7 +137,7 @@ Smíšená minimální pravidla společnosti Microsoft se soustředí na nejdůl
 |                             [C28254](../code-quality/c28254.md)                             |                               (dynamic_cast <>) není v anotacích podporována                                |
 |                             [C28262](../code-quality/c28262.md)                             |                    Chyba syntaxe v poznámce byl nalezen ve funkci pro anotaci                     |
 |                             [C28263](../code-quality/c28263.md)                             |                 Byla nalezena chyba syntaxe v podmíněné poznámce pro vnitřní anotaci                 |
-|       [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)        |                                    Výsledné hodnoty seznamů musí být konstanty.                                     |
+|       [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c)        |                                    Výsledné hodnoty seznamů musí být konstanty.                                     |
 |                             [C28267](../code-quality/c28267.md)                             |                    Poznámky v funkce byla nalezena chyba syntaxe v poznámkách.                    |
 |                             [C28272](../code-quality/c28272.md)                             |      Poznámka pro funkci, je parametr při zkoumání nekonzistentní s deklarací funkce      |
 |                             [C28273](../code-quality/c28273.md)                             |                    Pro funkci nejsou konzistentní s deklarací funkce                     |
@@ -154,7 +149,7 @@ Smíšená minimální pravidla společnosti Microsoft se soustředí na nejdůl
 |                             [C28286](../code-quality/c28286.md)                             |                                    Pro funkci. syntaktická chyba poblíž konce                                    |
 |                             [C28287](../code-quality/c28287.md)                             |                Pro funkci. Chyba syntaxe v \_na\_poznámky () (nerozeznaný název parametru)                |
 |                             [C28288](../code-quality/c28288.md)                             |                  Pro funkci. Chyba syntaxe v \_na\_poznámky () (neplatný název parametru)                   |
-|                             [C28289](../code-quality/c28289.md)                             |                Pro funkci: ReadableTo nebo writableto nebyl neměl limit specifikace jako parametr                |
+|                             [C28289](../code-quality/c28289.md)                             |                Pro funkci: ReadableTo nebo writableto nebyl neměl limit-spec jako parametr                |
 |                             [C28290](../code-quality/c28290.md)                             |           Poznámka pro funkci obsahuje více typů External než je skutečný počet parametrů            |
 |                             [C28291](../code-quality/c28291.md)                             |                        Po null/notnull deref úroveň 0 je pro funkci bezvýznamné.                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            Operandy výrazu nekompatibilních typů pro operátor                             |
@@ -165,8 +160,7 @@ Smíšená minimální pravidla společnosti Microsoft se soustředí na nejdůl
 |                             [C28305](../code-quality/c28305.md)                             |                                Zjistila se chyba při analýze tokenu.                                 |
 |                             [C28350](../code-quality/c28350.md)                             |                  Poznámka popisuje situaci, která není podmíněně použitelná.                   |
 |                             [C28351](../code-quality/c28351.md)                             |         Poznámka popisuje, kde dynamickou hodnotu (proměnnou) nelze použít v podmínce.          |
-|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             Typy, které vlastní uvolnitelné pole by měly být uvolnitelné                             |
-|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            Odstraňte prázdné finalizační metody                                            |
-|          [CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)           |                                     Uvolnitelné pole by mělo být uvolněno                                      |
-| [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            Přetižte operátor equals při přepsání ValueType.Equals                            |
-
+|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             Typy, které vlastní uvolnitelné pole, by měly být uvolnitelné                             |
+|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            Odeberte prázdné finalizační metody                                            |
+|          [CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)           |                                     Uvolnitelná pole by měla být uvolněna                                      |
+| [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            Přetižte operátor rovnosti při přetížení ValueType.Equals                            |

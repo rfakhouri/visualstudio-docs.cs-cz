@@ -1,26 +1,21 @@
 ---
 title: Jazyky obsažené | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - contained languages
 ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c4ff50fe0fe156c548351c378ba3a256e230ec43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 670c1b751e5f1023530fe1f0c73ab16d24fd5328
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766644"
 ---
 # <a name="contained-languages"></a>Omezením jazyky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
@@ -44,4 +39,3 @@ ms.locfileid: "51772015"
      Jazyk předá pole <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> strukturou, který aktuálně obsahuje pouze primární a sekundární rozpětí.  
   
 5.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> Metoda a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> metoda poskytuje mapování z primární na sekundární vyrovnávací paměti a naopak.
-

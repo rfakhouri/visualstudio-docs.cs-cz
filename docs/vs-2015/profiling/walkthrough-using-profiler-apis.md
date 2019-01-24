@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Použití rozhraní API Profiler | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Pomocí rozhraní API Profiler | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -16,15 +11,15 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3ab545d338defb3876145c8ac648574484fbf89a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769632"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
+# <a name="walkthrough-using-profiler-apis"></a>Průvodce: Pomocí rozhraní API Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profilování rozhraní API nástroje. Chcete-li omezit množství dat shromážděných během profilace instrumentace použijete rozhraní API profileru.  
@@ -46,7 +41,7 @@ Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vspr
   
  [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
   
- [Postupy: Odkazování na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Postupy: Odkazování na informace o symbolu Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Ve výchozím nastavení při spuštění profilování, profiler shromáždí data na globální úrovni. Následující kód při spuštění programu se změní na globální profilace vypnout.  
   
@@ -171,6 +166,3 @@ DataCollection.CurrentId);
  [Reference k rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Začínáme se službou](../profiling/getting-started-with-performance-tools.md)   
  [Profilace prostřednictvím příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

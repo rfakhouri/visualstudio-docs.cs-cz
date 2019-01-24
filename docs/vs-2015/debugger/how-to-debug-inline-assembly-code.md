@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: ladění vnořeného kódu sestavení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění vnořeného kódu sestavení | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.inline
 dev_langs:
@@ -25,19 +20,19 @@ ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 208d0166ad5d6197b63630fc9499dde1d2b3fb3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 55ccb6ffd319f725fade42a6e8490f0b0dc22b0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766641"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Postupy: Ladění vnořeného kódu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
->  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Ladicí program poskytuje dvě okna pro ladění kódu vnořeného sestavení **zpětný překlad** okno a **zaregistruje** okna.  
   
@@ -52,6 +47,3 @@ POZNÁMKA:]
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Ladění nativního kódu](../debugger/debugging-native-code.md)
-
-
-

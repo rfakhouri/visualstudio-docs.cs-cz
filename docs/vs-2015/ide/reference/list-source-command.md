@@ -1,14 +1,9 @@
 ---
 title: Příkaz zdroj seznamu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Debug.ListSource
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ff216ddd8943ea971669c6ebb1c7c0306b02160f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ae2ed3e8a9c07d59f5b1c2fe2350956a54dfaa66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761504"
 ---
 # <a name="list-source-command"></a>Listovat zdroj – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
  / Řádek:`number`  
  Volitelné. Zobrazí konkrétní řádek určený číslem.  
   
- / Showlinenumberszobrazitčíslařádků:`yes|no`  
+ /ShowLineNumbers:`yes|no`  
  Volitelné. Určuje, jestli se mají zobrazovat čísla řádků.  
   
 ## <a name="remarks"></a>Poznámky  
@@ -66,8 +61,5 @@ Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNum
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Příkazové okno](../../ide/reference/command-window.md)
-
-
-

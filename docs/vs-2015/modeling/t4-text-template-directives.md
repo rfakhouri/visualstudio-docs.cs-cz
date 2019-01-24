@@ -1,12 +1,9 @@
 ---
 title: T4 Direktivy textové šablony | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, import directive
 - text templates, include directive
@@ -18,13 +15,13 @@ ms.assetid: 6898ee02-ebb2-4635-a4e9-350774c13cf2
 caps.latest.revision: 83
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 00853b21ec077825337c2c360cac33775189dfdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ce0acf7c1c63f0d1c05d1e1d3b59dc7a5d28862a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770646"
 ---
 # <a name="t4-text-template-directives"></a>T4 – direktivy textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,6 +74,3 @@ Direktivy poskytují pokyny stroji, který provádí transformace textových ša
 ```  
   
  Navíc můžete vytvářet své vlastní direktivy. Další informace najdete v tématu [vytváření vlastních procesorů textových šablon T4 – direktiva](../modeling/creating-custom-t4-text-template-directive-processors.md). Pokud pomocí sady Visualization and Modeling SDK vytvoříte jazyk domény (DSL), vygeneruje se procesor direktiv jako součást tohoto kódu DSL.
-
-
-

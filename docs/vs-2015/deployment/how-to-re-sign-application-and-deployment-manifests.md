@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Opětovné podepisování manifestů aplikace a nasazení | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784886"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Postupy: Opětovné podepisování manifestů aplikace a nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Wi
  Jiný scénář, kde může být znovu podepište manifesty je, pokud zákazníci chtějí k podepsání aplikace a manifesty nasazení vlastním certifikátem.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Aplikace a nasazení opětovné podepisování manifestů  
- Tento postup předpokládá, že jste už provedli změny do souboru manifestu aplikace (.manifest). Další informace najdete v tématu [postupy: Změna vlastností nasazení](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Tento postup předpokládá, že jste už provedli změny do souboru manifestu aplikace (.manifest). Další informace najdete v tématu [jak: Změnit vlastnosti nasazení](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>K opětovnému podepsání aplikace a nasazení manifestů s Mage.exe  
   
@@ -125,12 +120,9 @@ Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Wi
  [Zabezpečení přístupu ke kódu pro aplikace ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce a kód Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Přehled nasazení důvěryhodných aplikací](../deployment/trusted-application-deployment-overview.md)   
- [Postupy: povolení nastavení zabezpečení ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Postupy: nastavení zóny zabezpečení pro aplikaci ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Postupy: nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Postupy: ladění aplikace ClickOnce s omezenými oprávněními](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Postupy: Povolení nastavení zabezpečení ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Postupy: Nastavení zóny zabezpečení pro aplikaci ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Postupy: Nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Postupy: Ladění aplikace ClickOnce s omezenými oprávněními](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Postupy: Přidání důvěryhodného vydavatele na klientský počítač pro aplikace ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Postupy: Konfigurace chování výzvy důvěryhodnosti ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
-
-
-

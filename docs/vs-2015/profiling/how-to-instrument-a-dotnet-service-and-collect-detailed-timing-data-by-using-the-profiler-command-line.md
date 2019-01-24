@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: instrumentace služby rozhraní .NET a shromažďování podrobných dat časování pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Instrumentace služby rozhraní .NET a shromažďování podrobných dat časování pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 9f73593a-69a7-41b7-a21c-81d3ab0eb8fe
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc95a776713876f559bf3d72b50dc6f24e055dc8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766429"
 ---
-# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace služby rozhraní .NET a shromažďování podrobných dat časování pomocí příkazového řádku profileru
+# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace služby rozhraní .NET a shromažďování podrobných dat časování pomocí příkazového řádku Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje způsob použití [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] služby a shromažďování podrobných dat časování.  
@@ -49,17 +44,17 @@ Toto téma popisuje způsob použití [!INCLUDE[vsPreShort](../includes/vspresho
 
 3. Nahraďte původní binární soubor instrumentovanou verzí. Ve Windows správce řízení služeb, ujistěte se, že služby Typ spouštění je nastaven na ručně.  
 
-4. Inicializovat [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] proměnných prostředí profilování. Typ:  
+4. Inicializovat [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] proměnných prostředí profilování. Zadejte:  
 
-    **Vsperfclrenv – /globaltraceon**  
+    **VSPerfClrEnv /globaltraceon**  
 
 5. Restartujte počítač.  
 
 6. Otevřete okno příkazového řádku.  
 
-7. Spusťte profiler. Typ:  
+7. Spusťte profiler. Zadejte:  
 
-    **/Start:trace VSPerfCmd/output:** `OutputFile` [`Options`]  
+    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
 
    - [/Start](../profiling/start.md)**: trasování** možnost inicializuje profiler.  
 
@@ -110,7 +105,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsPreShort](../includes/vspresho
 
      **/ Shutdown VSPerfCmd**  
 
-3.  Po dokončení veškerého profilování vyčistěte proměnné prostředí profilování. Typ:  
+3.  Po dokončení veškerého profilování vyčistěte proměnné prostředí profilování. Zadejte:  
 
      **Vsperfclrenv – /globaloff**  
 
@@ -121,6 +116,3 @@ Toto téma popisuje způsob použití [!INCLUDE[vsPreShort](../includes/vspresho
 ## <a name="see-also"></a>Viz také  
  [Profilace služeb](../profiling/command-line-profiling-of-services.md)   
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)
-
-
-

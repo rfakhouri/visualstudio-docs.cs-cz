@@ -1,14 +1,9 @@
 ---
 title: Nahradit – příkaz | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.replace
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83281a656d553dfa677d7ae25bf043fc0b588978
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f230a2270274f85fd799f86caa278bb98cb5fd46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772232"
 ---
 # <a name="replace-command"></a>Nahradit – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,10 +37,10 @@ Edit.Replace findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>Arguments  
  `findwhat`  
- Požadováno. Text tak, aby odpovídaly.  
+ Povinný parametr. Text tak, aby odpovídaly.  
   
  `replacewith`  
- Požadováno. Text, který nahradí odpovídající text.  
+ Povinný parametr. Text, který nahradí odpovídající text.  
   
 ## <a name="switches"></a>Přepínače  
  / all nebo /  
@@ -98,8 +93,5 @@ Edit.Replace findwhat replacewith [/all] [/case]
  [Hledání a nahrazení textu](../../ide/finding-and-replacing-text.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
- [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

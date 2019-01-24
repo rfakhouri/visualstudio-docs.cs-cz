@@ -1,14 +1,9 @@
 ---
 title: '&lt;fileAssociation&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e827f0829cfe0436f491196b7f1dab99ac87c4fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773966"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; – Element (aplikace ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +45,10 @@ Určuje příponu souboru, který se má přidružit aplikaci.
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`extension`|Požadováno. Přípona souboru, který má být přidružena k aplikaci.|  
-|`description`|Požadováno. Popis typu souboru pro použití v prostředí.|  
-|`progid`|Požadováno. Název jednoznačně identifikující tento typ souboru.|  
-|`defaultIcon`|Požadováno. Určuje ikonu pro soubory s touto příponou. Soubor ikony musí být zadaný pomocí [ \<soubor > – Element](../deployment/file-element-clickonce-application.md) v rámci [ \<sestavení > Element](../deployment/assembly-element-clickonce-application.md) , který obsahuje tento element.|  
+|`extension`|Povinný parametr. Přípona souboru, který má být přidružena k aplikaci.|  
+|`description`|Povinný parametr. Popis typu souboru pro použití v prostředí.|  
+|`progid`|Povinný parametr. Název jednoznačně identifikující tento typ souboru.|  
+|`defaultIcon`|Povinný parametr. Určuje ikonu pro soubory s touto příponou. Soubor ikony musí být zadaný pomocí [ \<soubor > – Element](../deployment/file-element-clickonce-application.md) v rámci [ \<sestavení > Element](../deployment/assembly-element-clickonce-application.md) , který obsahuje tento element.|  
   
 ## <a name="remarks"></a>Poznámky  
  Tento element musí obsahovat odkaz na obor názvů XML "urn: schémata-microsoft-com:clickonce.v1". Pokud `<fileAssociation>` element se používá, musí být pozdější než `<application>` v nadřazeném prvku [ \<sestavení > Element](../deployment/assembly-element-clickonce-application.md).  
@@ -88,6 +83,3 @@ Určuje příponu souboru, který se má přidružit aplikaci.
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – manifest aplikace ](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: ladění zdroje rozhraní .NET Framework | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění zdroje rozhraní .NET Framework | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cbc6ed2ff77a971962fa73b15d5b7aafb9ef02b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725424"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777903"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Postupy: Ladění zdroje rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ Překopírujte nejnovější verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 
   
 3.  V **Obecné** pole, nastavte **povolit rozhraní .NET Framework** krokování zdrojových kódů.  
   
-    1.  Pokud jste měli povoleným kódem Just My, dialogové okno upozornění zjistíte, že funkce pouze můj kód je nyní zakázána. Klikněte na tlačítko **OK**.  
+    1.  Pokud jste měli povoleným kódem Just My, dialogové okno upozornění zjistíte, že funkce pouze můj kód je nyní zakázána. Klikněte na **OK**.  
   
-    2.  Pokud nastaveno umístění mezipaměti symbolů, jiné dialogové okno upozornění informuje, že výchozí umístění mezipaměti symbolů je nyní nastaveno. Klikněte na tlačítko **OK**.  
+    2.  Pokud nastaveno umístění mezipaměti symbolů, jiné dialogové okno upozornění informuje, že výchozí umístění mezipaměti symbolů je nyní nastaveno. Klikněte na **OK**.  
   
 4.  V části **ladění** kategorii, klikněte na tlačítko **symboly**.  
   
@@ -80,6 +75,3 @@ Překopírujte nejnovější verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 
 ## <a name="see-also"></a>Viz také  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
  [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

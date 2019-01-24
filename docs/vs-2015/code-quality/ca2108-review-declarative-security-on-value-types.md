@@ -1,13 +1,9 @@
 ---
 title: 'CA2108: Revize deklarativních zabezpečení na hodnotách | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
 - CA2108
@@ -19,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 471766de167ac4d01d99dbb223828234abefaa34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b8bafb021e2a73b0a5bed7feba21fbb38fff8ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783936"
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Revize deklarativních zabezpečení na hodnotách
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Zkontrolujte deklarativní zabezpečení u typů hodnot
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53989222"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný hodnotový typ je zabezpečen pomocí [Data a modelování](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) nebo [požadavky propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
 
 ## <a name="rule-description"></a>Popis pravidla

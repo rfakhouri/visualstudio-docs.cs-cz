@@ -1,27 +1,22 @@
 ---
 title: Příklady vývoj mobilních řešení napříč platformami | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795268"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783759"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Příklady vývoje multiplatformních mobilních řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Několik šablon nainstaloval Visual C++ pro vývoj mobilních řešení napří
   Chcete-li spustit některý z příkladů v sadě Visual Studio, stáhněte soubor zip a otevřete **vlastnosti** stránky staženého souboru v Průzkumníku. Zvolte **Odblokovat** tlačítko a pak zvolte **OK**. Extrahujte obsah komprimovaného souboru do vhodného umístění, poté otevřete složku jazyka C++ v ukázce extrahované a otevřete soubor řešení.  
   
   Chcete-li ukázku sestavit, stisknutím klávesy F7 nebo na panelu nabídek zvolte **sestavení**, **sestavit řešení**.
-
