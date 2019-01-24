@@ -1,27 +1,22 @@
 ---
 title: Zobrazení stromu volání – Data kolizí | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 003e25121b3761a6e9440dcd4f0885975e0d98c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791650"
 ---
 # <a name="call-tree-view---contention-data"></a>Zobrazení stromu volání – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Proch�
 |**% Celkového času zablokování**|Procento všech času zablokování při spuštění, který profilace byla celkový čas zablokování pro instance této funkce v této cestě spuštění.|  
 |**Celkově sporů**|Celkový počet sporů, zablokované instance této funkce v této cestě spuštění. Číslo obsahuje tento počet sporů: podřízené funkcí volaných funkcí.|  
 |**% Celkových sporů**|Procento všech sporů při spuštění, který profilace se celkově sporů instancí této funkce v této cestě spuštění.|  
-|**úroveň**|Úroveň funkce ve stromu volání. Pouze v sestavách VSReport příkazového řádku. Další informace najdete v tématu v [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Úroveň**|Úroveň funkce ve stromu volání. Pouze v sestavách VSReport příkazového řádku. Další informace najdete v tématu v [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
 |**Název modulu**|Název modulu, který obsahuje funkci.|  
 |**Cesta modulu**|Cesta k napadenému modulu, který obsahuje funkci.|  
@@ -61,12 +56,9 @@ Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Proch�
 |**Zdrojový soubor**|Zdrojový soubor, který obsahuje definici pro tuto funkci.|  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view.md)   
  [Zobrazení stromu volání – instrumentace](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Zobrazení stromu volání – vzorkování](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view-instrumentation-data.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view-sampling-data.md)
-
-
-

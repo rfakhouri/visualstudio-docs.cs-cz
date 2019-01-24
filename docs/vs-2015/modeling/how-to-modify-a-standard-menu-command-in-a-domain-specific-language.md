@@ -1,12 +1,9 @@
 ---
-title: 'Postupy: úprava příkazu standardní nabídky v jazyka specifického pro doménu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Úprava příkazu standardní nabídky v jazyka specifického pro doménu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,13 +11,13 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776038"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
    Toto téma vysvětluje postup.  
   
 > [!NOTE]
->  Pokud chcete vytvořit vlastní příkazy nabídek, přečtěte si téma [postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+>  Pokud chcete vytvořit vlastní příkazy nabídek, přečtěte si téma [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ##  <a name="what"></a> Jaké příkazy lze upravit?  
   
@@ -83,7 +80,7 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
      **Poznámka:** Pokud jste použili k vytvoření nového souboru. soubor šablony třídy, je nutné opravit obor názvů a název třídy.  
   
 ##  <a name="override"></a> Přepište metody příkaz  
- Většina příkazů mít přidružené dvě metody: metodu s názvem, jako jsou `ProcessOnStatus`... Určuje, zda má být příkaz viditelný a povolený. Je volána, když uživatel klepne pravým tlačítkem myši diagram a by měl rychle spustit a neprovádějte žádné změny. `ProcessOnMenu`... se volá, když uživatel klepne na příkaz a by měl provádět funkce příkazu. Můžete chtít přepsat jeden nebo oba z těchto metod.  
+ Většina příkazů mít přidružené dvě metody: Metodu s názvem, jako jsou `ProcessOnStatus`... Určuje, zda má být příkaz viditelný a povolený. Je volána, když uživatel klepne pravým tlačítkem myši diagram a by měl rychle spustit a neprovádějte žádné změny. `ProcessOnMenu`... se volá, když uživatel klepne na příkaz a by měl provádět funkce příkazu. Můžete chtít přepsat jeden nebo oba z těchto metod.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Chcete-li změnit při příkazu se zobrazí v nabídce  
  Přepsat ProcessOnStatus... metody. Tato metoda by měla nastavit viditelné a povolené vlastnosti parametru nabídka – příkaz. Obvykle příkaz vypadá na to. CurrentSelection k určení, zda příkaz se vztahuje na vybrané elementy a se také podívat na jejich vlastnosti k určení, zda příkaz lze použít v jeho aktuálním stavu.  
@@ -156,13 +153,10 @@ protected override void ProcessOnMenuDeleteCommand()
 ## <a name="see-also"></a>Viz také  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [Psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [Postupy: Získávání informací z vybraného odkazu](../misc/walkthrough-getting-information-from-a-selected-link.md)   
+ [Postupy: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [Návod: Získávání informací z vybraného odkazu](../misc/walkthrough-getting-information-from-a-selected-link.md)   
  [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Tabulky příkazů sady Visual Studio (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Referenční dokumentace schématu VSCT XML](../extensibility/vsct-xml-schema-reference.md)   
  [Vmsdk následující položky – ukázka okruhů. Přizpůsobení rozsáhlé DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [Ukázkový kód: diagramy okruh](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Ukázkový kód: Diagramy okruh](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

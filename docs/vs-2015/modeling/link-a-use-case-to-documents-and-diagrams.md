@@ -1,12 +1,9 @@
 ---
 title: Propojení případu použití s dokumenty a diagramy | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.usecasediagram.artifact.properties.artifactlink
 - vs.teamarch.usecasediagram.artifact
@@ -16,13 +13,13 @@ ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5b4ef580825115a1d44c3abb39404332a4277ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795227"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Propojení případu použití s dokumenty a diagramy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,10 +84,7 @@ Propojení případu použití v diagramu případu použití do jiného diagram
     >  Pokud chcete zadat cestu k souboru, je nejlepší zvolte soubor, buď v běžné pracovní prostor (počínaje "\\\\"), nebo soubor v rámci řešení sady Visual Studio. Tím se zajistí, že cesta k souboru zůstane v platnosti v počítači jiného člena týmu, nebo pokud se přesune řešení. Chcete-li dokument jako dokument aplikace Word je přidat do vašeho řešení, klikněte pravým tlačítkem na řešení v Průzkumníku řešení, přejděte na **přidat** a potom klikněte na tlačítko **existující položku**.  
   
 ## <a name="see-also"></a>Viz také  
- [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)   
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)
-
-
-

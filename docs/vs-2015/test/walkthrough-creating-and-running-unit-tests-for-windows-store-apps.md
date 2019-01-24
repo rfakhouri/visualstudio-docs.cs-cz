@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Vytváření a spouštění testů jednotek pro aplikace Windows Store | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytváření a spouštění testů jednotek pro aplikace Windows Store | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754871"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Postupy: Vytváření a spouštění testů jednotek pro aplikace pro web Windows Store
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Průvodce: Vytváření a spouštění testů jednotek pro aplikace Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace a obsahuje šablony knihoven testování jednotek pro jazyk Visual C#, Visual Basic a Visual C++.  
@@ -93,7 +88,7 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
   
      Další informace o návrháři manifestu naleznete v tématu [nakonfigurovat balíček aplikace pro Windows 8.1 pomocí návrháře manifestu](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
-     ![Manifest testu jednotek](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
+     ![Unit Test Manifest](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> Programování testu jednotek  
   
@@ -119,7 +114,7 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
     >  Třeba vytvořit řešení Chcete-li aktualizovat seznam testů jednotek v Průzkumníku testů.  
   
     > [!WARNING]
-    >  Visual Studio známý problém: Průzkumník testu je nutné otevřít před sestavením zkušebního projektu.  
+    >  Visual Studio známý problém: Průzkumník testů je nutné otevřít před sestavením zkušebního projektu.  
   
 3.  V Průzkumníku testů vyberte test jednotky, kterou jste vytvořili.  
   
@@ -144,10 +139,10 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
 ## <a name="external-resources"></a>Externí zdroje  
   
 ### <a name="videos"></a>Videa  
- [Kanál 9: Testování vašich aplikací Windows Store vyvíjené v XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Kanál 9: Testování částí aplikací Windows Store vyvíjené v XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Diskuzní fóra  
- [Testování částí sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
+ [Visual Studio Unit Testing](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
 ### <a name="msdn-library"></a>Knihovna MSDN  
  [Knihovna MSDN – vytváření a spouštění testů jednotek pro existující kód (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
@@ -155,6 +150,3 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
 ## <a name="see-also"></a>Viz také  
  [Testování aplikací pro Store pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Sestavení a testování aplikací pro Windows Store pomocí Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

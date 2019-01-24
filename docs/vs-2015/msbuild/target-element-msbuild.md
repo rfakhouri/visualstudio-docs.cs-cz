@@ -1,14 +1,9 @@
 ---
 title: Cíl – Element (MSBuild) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc4224930782e24b20d3e9720c517304b0153f2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6e763c0a39e3785e91733105f8fc18eae324e958
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758287"
 ---
 # <a name="target-element-msbuild"></a>Target – element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,8 +64,8 @@ Obsahuje sadu úkolů pro [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md
 |---------------|-----------------|  
 |`Name`|Požadovaný atribut.<br /><br /> Název cíle|  
 |`Condition`|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Pokud je podmínka vyhodnocena jako `false`, cíl neprovede tělo cíl nebo veškerých cílů, které jsou nastaveny v `DependsOnTargets` atribut. Další informace o podmínkách najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Nepovinný atribut.<br /><br /> Soubory, které tvoří vstupy do tohoto cíle. Více souborů jsou odděleny středníky. Časová razítka souborů bude porovnána s časovými razítky souborů v `Outputs` k určení, zda `Target` je aktuální. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md), [postupy: přírůstkové sestavení](../msbuild/how-to-build-incrementally.md), a [transformuje](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Nepovinný atribut.<br /><br /> Soubory, které výstupy do tohoto cíle. Více souborů jsou odděleny středníky. Časová razítka souborů bude porovnána s časovými razítky souborů v `Inputs` k určení, zda `Target` je aktuální. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md), [postupy: přírůstkové sestavení](../msbuild/how-to-build-incrementally.md), a [transformuje](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|Nepovinný atribut.<br /><br /> Soubory, které tvoří vstupy do tohoto cíle. Více souborů jsou odděleny středníky. Časová razítka souborů bude porovnána s časovými razítky souborů v `Outputs` k určení, zda `Target` je aktuální. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md), [jak: Přírůstkové sestavování](../msbuild/how-to-build-incrementally.md), a [transformuje](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Nepovinný atribut.<br /><br /> Soubory, které výstupy do tohoto cíle. Více souborů jsou odděleny středníky. Časová razítka souborů bude porovnána s časovými razítky souborů v `Inputs` k určení, zda `Target` je aktuální. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md), [jak: Přírůstkové sestavování](../msbuild/how-to-build-incrementally.md), a [transformuje](../msbuild/msbuild-transforms.md).|  
 |`Returns`|Nepovinný atribut.<br /><br /> Sadu položek, které bude k dispozici pro úlohy, které vyvolávají tento cíl, například úlohy nástroje MSBuild. Několik cílů jsou odděleny středníky. Pokud nemají cíle v souboru `Returns` atributy, výstupy atributy se používají místo pro tento účel.|  
 |`KeepDuplicateOutputs`|Volitelný logický atribut.<br /><br /> Pokud `true`, se zaznamenávají více odkazů na stejné položky v návratových hodnotách elementu target.  Ve výchozím nastavení, tento atribut je `false`.|  
 |`BeforeTargets`|Nepovinný atribut.<br /><br /> Středníkem oddělený seznam cílových názvů.  Při zadán, znamená to, že před zadaného cíle nebo cílů by měl být spuštěn tento cíl. Díky tomu Autor projektu rozšíření existující sady cílů beze jejich změny přímo. Další informace najdete v tématu [pořadí sestavení cílů](../msbuild/target-build-order.md).|  
@@ -128,6 +123,3 @@ Obsahuje sadu úkolů pro [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md
 ## <a name="see-also"></a>Viz také  
  [Cíle](../msbuild/msbuild-targets.md)   
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

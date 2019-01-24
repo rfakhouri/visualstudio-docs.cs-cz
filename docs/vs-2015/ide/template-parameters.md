@@ -1,14 +1,9 @@
 ---
 title: Parametry šablony | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787089"
 ---
 # <a name="template-parameters"></a>Parametry šablony
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +88,7 @@ Pomocí parametrů v šablonách lze při vytváření instance šablony nahradi
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>Příklad: Použití názvu projektu jako název oboru názvů  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>Příklad: Použití názvu projektu jako název Namespace  
  Použití názvu projektu pro obor názvů v jazyce Visual C# třídy souboru Class1.cs, použijte následující syntaxi:  
   
 ```  
@@ -130,6 +125,3 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)
-
-
-

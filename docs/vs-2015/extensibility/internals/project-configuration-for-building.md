@@ -1,27 +1,22 @@
 ---
 title: Konfigurace pro sestavení projektu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 99d9e20799f3747def12be6a40ae3b1f8269e666
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725520"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760983"
 ---
 # <a name="project-configuration-for-building"></a>Konfigurace projektu pro sestavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Seznam konfigurací řešení pro dané řešení se spravuje přes dialogové o
   
  Když uživatel vybere **vícenásobný výběr** položek v rozevíracím seznamu konfigurace prostředí se zobrazí dialogové okno, které poskytuje seznam dostupných konfigurací.  
   
- ![Více konfigurací](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
+ ![Multiple Configurations](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
 Více konfigurací  
   
  V tomto dialogovém okně může uživatel vybrat jednu nebo více konfigurací. Po výběru odrážejí hodnoty vlastností zobrazí v dialogovém okně stránky vlastností průnik hodnot pro zvolené konfigurace.  
@@ -46,7 +41,7 @@ Více konfigurací
   
  Závislosti projektu a pořadí sestavení jsou nezávislá konfigurace řešení: to znamená, které můžete nastavit jenom jednu závislost strom pro všechny projekty v řešení. Pravým tlačítkem myši na projekt nebo řešení a vyberete buď **závislosti projektu** nebo **pořadí sestavení projektu** možnost otevře **závislosti projektu** dialogové okno. Můžete otevřít také z **projektu** nabídky.  
   
- ![Závislosti projektu](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Project Dependencies](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Závislosti projektu  
   
  Závislosti projektu určení pořadí, ve kterém sestavení projektů. Na kartě pořadí sestavení v dialogovém okně můžete zobrazit přesný pořadí, ve kterém se projekty v rámci řešení sestavení a chcete-li změnit pořadí sestavení, použijte kartu závislosti.  
@@ -68,4 +63,3 @@ Závislosti projektu
  [Správa možností konfigurace](../../extensibility/internals/managing-configuration-options.md)   
  [Konfigurace projektu pro správu nasazení](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [Konfigurace projektu pro výstup](../../extensibility/internals/project-configuration-for-output.md)
-

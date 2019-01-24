@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: zobrazení informací trasování WPF | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zobrazení informací trasování WPF | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0a91d9f1f58a6905d50e14351bbbaf6fe732c60f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7a25d2bf4c814bf946aa64cfb126e119f50913d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777858"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Postupy: Zobrazení informací trasování grafického subsystému WPF
+# <a name="how-to-display-wpf-trace-information"></a>Postupy: Zobrazení informací trasování WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] může přijímat informace o trasování ladění z aplikace WPF a zobrazení těchto informací v **výstup** okna. Chcete-li zobrazit informace o trasování ladění, musí být povoleno trasování WPF.  
@@ -54,7 +49,7 @@ ms.locfileid: "51771251"
   
      Ovládací prvek rozevíracího seznamu se zobrazí ve sloupci nastavení vedle možnosti **datové vazby** nebo libovolné kategorie jste klikli.  
   
-8.  Klikněte na rozevírací seznam a vyberte typ trasování informací, které chcete zobrazit: **všechny**, **kritický**, **chyba**, **upozornění**,  **Informace o**, **podrobné**, nebo **ActivityTracing**.  
+8.  Klikněte na rozevírací seznam a vyberte typ trasování informací, které chcete zobrazit: **Všechny**, **kritické**, **chyba**, **upozornění**, **informace**, **podrobné**, nebo **ActivityTracing**.  
   
      **Kritické** Zapíná trasování pouze kritické události.  
   
@@ -70,7 +65,7 @@ ms.locfileid: "51771251"
   
      Další informace o těchto úrovní trasování informací význam, naleznete v tématu <xref:System.Diagnostics.SourceLevels>.  
   
-9. Klikněte na tlačítko **OK**.  
+9. Klikněte na **OK**.  
   
 ### <a name="to-disable-wpf-trace-information"></a>Chcete-li zakázat informace o trasování WPF  
   
@@ -90,10 +85,7 @@ ms.locfileid: "51771251"
   
 7.  Klikněte na rozevírací seznam a vyberte **vypnout**.  
   
-8.  Klikněte na tlačítko **OK**.  
+8.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění WPF](../debugger/debugging-wpf.md)
-
-
-

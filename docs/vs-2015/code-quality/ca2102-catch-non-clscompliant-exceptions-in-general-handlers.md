@@ -1,13 +1,9 @@
 ---
 title: 'CA2102: Zachycujte výjimky bez CLSCompliant v obecné obslužné rutině | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
@@ -18,14 +14,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1f2413e16a6469be332d57c0be5e350b49d26154
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd018c927981c4a067e4dd0d52ef699490caa3fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988547"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767010"
 ---
-# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Zachycujte výjimky bez CLSCompliant v obecné obslužné rutině
+# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Zachycujte výjimky bez CLSCompliant v obecných obslužných rutinách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -35,7 +31,7 @@ ms.locfileid: "53988547"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Člen v sestavení, který není označen atributem <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> nebo je označeno `RuntimeCompatibility(WrapNonExceptionThrows = false)` obsahuje zachytávací blok, který zpracovává <xref:System.Exception?displayProperty=fullName> a neobsahuje bezprostředně následující obecný zachytávací blok. Toto pravidlo ignoruje [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sestavení.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -86,4 +82,4 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
  [CA1031: Nezachycujte výjimky obecného typu](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>Viz také
- [Výjimky a jejich zpracování](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (nástroj IL Assembler)](http://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [přepsání kontrol zabezpečení](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28) [jazyková nezávislost a jazykově nezávislé komponenty](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Výjimky a jejich zpracování](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (nástroj IL Assembler)](http://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [přepsání kontrol zabezpečení](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [jazyková nezávislost a jazykově nezávislé komponenty](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

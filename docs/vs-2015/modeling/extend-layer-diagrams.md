@@ -1,14 +1,9 @@
 ---
 title: Rozšíření diagramů vrstev | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, creating extensions
 - layer models
@@ -16,13 +11,13 @@ ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 28712373b527f2605c47e9038ed169f0217636bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796807"
 ---
 # <a name="extend-layer-diagrams"></a>Rozšíření diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,12 +62,9 @@ Můžete napsat kód k vytvoření a aktualizaci diagramy vrstev a k ověření 
   
 ## <a name="see-also"></a>Viz také  
  [Definování a instalace rozšíření modelování](../modeling/define-and-install-a-modeling-extension.md)   
- [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)   
- [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)   
+ [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)   
  [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)   
  [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)   
  [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)   
  [Otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
-
-
-

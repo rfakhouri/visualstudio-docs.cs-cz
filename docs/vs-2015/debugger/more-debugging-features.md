@@ -1,14 +1,9 @@
 ---
 title: Funkce více ladění | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: a41166d7-e03e-42ef-862e-dd025ef600b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9b3375e97aa356b9c22f29bcf7bf696607cd30de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2e6140b10b9f0c9a540144ca70bb081ac2d3e7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776627"
 ---
 # <a name="more-debugging-features"></a>Další funkce ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Tato část obsahuje další funkce, které můžete použít v ladicím program
  [Ladění za běhu](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Tento článek popisuje Just-In-Time ladění, které umožňuje spustit ladicí program automaticky při programu dojde k chybě při spuštění mimo sadu Visual Studio.  
   
- [Návod: Ladění v době návrhu](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Návod: Ladění v průběhu návrhu](../debugger/walkthrough-debugging-at-design-time.md)  
  Ukazuje způsob použití příkazové okno Visual Studio ke spuštění funkce nebo podprogramu, zatímco aplikace není spuštěna. 
   
  [Operace Upravit a pokračovat](../debugger/edit-and-continue.md)  
@@ -56,6 +51,3 @@ Tato část obsahuje další funkce, které můžete použít v ladicím program
   
  [Postupy: Obnovení skrytých příkazů ladicího programu](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Popisuje, jak zviditelnit příkazy ladícího programu, které byly skryté pomocí výchozího nastavení IDE.
-
-
-

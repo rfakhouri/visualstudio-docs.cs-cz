@@ -1,27 +1,22 @@
 ---
 title: Nástroj příkazového řádku ve Vizualizéru souběžnosti (CVCollectionCmd) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752910"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CV
   
 |Možnost|Popis|Parametry|Vrácené hodnoty|  
 |------------|-----------------|----------------|-------------------|  
-|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádné|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) relace je již povolen.|  
+|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádná|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) relace je již povolen.|  
 |Spuštění|Spustí zadaný procesu v rámci Vizualizátor souběžnosti.|Cesta ke spustitelnému souboru.|0, pokud spuštění úspěšné.<br /><br /> 1, pokud spuštění selhalo, protože nebylo možné spustit cílovou aplikaci.<br /><br /> 13, pokud spuštění selhalo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře.|  
 |Připojit|Začne sběr trasování celého systému; v opačném případě připojí k procesu, pokud je zadaná.|Žádné|0, pokud byla úspěšná přílohy.<br /><br /> 1 pro přílohy se nezdařilo, protože určený proces je neplatný nebo nejednoznačný.<br /><br /> 13 Pokud přílohy se nezdařilo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře:.|  
 |Odpojit|Zastaví shromažďování.|Žádné|0, pokud bylo úspěšné odpojení.<br /><br /> 1 pro odpojení se nezdařilo, protože kolekce není právě probíhá.<br /><br /> 2, pokud odpojení se nezdařilo, protože kolekce se nepovedlo zastavit.|  
@@ -71,16 +66,16 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CV
   
 |Značka|Popis|Hodnoty|  
 |---------|-----------------|------------|  
-|Konfigurace|Vymezuje pásma celkové konfiguračního souboru.|Musí obsahovat tyto prvky:<br /><br /> -Podverze<br />-Hlavní verze|  
+|Konfigurace|Vymezuje pásma celkové konfiguračního souboru.|Musí obsahovat tyto prvky:<br /><br /> -Podverze<br />-   MajorVersion|  
 |Hlavní verze|Určuje hlavní verzi konfiguračního souboru.|Musí být 1 pro [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projekty. Pokud ne 1, nástroj nebude fungovat.|  
 |Podverze|Určuje dílčí verze konfiguračního souboru.|Musí být 0 pro [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projekty. Pokud není 0, nástroj nebude fungovat.|  
 |IncludeEnvSymbolPath|Nastaví hodnotu, která určuje, zda se používá cestu k symbolu prostředí (_NT_SYMBOL_PATH).|-True<br />-False|  
 |DeleteEtlsAfterAnalysis|Nastaví hodnotu, která určuje, jestli se po dokončení analýzy odstranit soubory ETL.|-True<br />-False|  
-|Symbolpath –|Určuje cestu k serveru symbolů. Další informace najdete v tématu [použijte Microsoft Symbol Server k získání souborů se symboly ladění](http://go.microsoft.com/fwlink/?LinkID=149389).|Název adresáře nebo adresu URL.|  
+|SymbolPath|Určuje cestu k serveru symbolů. Další informace najdete v tématu [použijte Microsoft Symbol Server k získání souborů se symboly ladění](http://go.microsoft.com/fwlink/?LinkID=149389).|Název adresáře nebo adresu URL.|  
 |Značky|Obsahuje seznam zprostředkovatelů značky.|Může obsahovat nula nebo více prvků MarkerProvider.|  
 |MarkerProvider|Určuje zprostředkovatele jednu značku.|Musí obsahovat tyto prvky:<br /><br /> -Úroveň<br />-IDENTIFIKÁTOR GUID<br />– Název<br /><br /> Může obsahovat tyto prvky:<br /><br /> -Kategorie<br />-IsEnabled|  
 |úroveň|Nastaví úroveň důležitosti MarkerProvider.|– Nízká<br />-Normální<br />– Vysoká<br />– Kritické<br />-Vše|  
-|identifikátor GUID|Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek.|IDENTIFIKÁTOR GUID.|  
+|Guid|Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek.|A GUID.|  
 |Název|Určuje popis poskytovatele značek.|Řetězec.|  
 |Kategorie|Určuje kategorie shromážděných pro poskytovatele značek.|Řetězec oddělených čárkou čísla nebo rozsahy čísel.|  
 |hodnotu isEnabled|Nastaví hodnotu, která určuje, zda je povoleno poskytovatele značek pro kolekci.|-True<br />-False|  
@@ -158,6 +153,3 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CV
 </LocalConfig>  
   
 ```
-
-
-

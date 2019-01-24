@@ -1,14 +1,9 @@
 ---
 title: Požadavky na nasazení aplikací | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776232"
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,10 +47,10 @@ K zajištění, že vaše aplikace se nainstaluje a úspěšně spuštěn, je nu
   
 - Minimální verze všech sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC), jak jsou určené deklarace závislost sestavení v manifestu sestavení.  
   
-  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] rozpozná chybějící požadované součásti a požadavky můžete nainstalovat pomocí zaváděcí nástroj. Další informace najdete v tématu [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] rozpozná chybějící požadované součásti a požadavky můžete nainstalovat pomocí zaváděcí nástroj. Další informace najdete v tématu [jak: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Chcete-li změnit hodnoty v manifestech vygenerovat pomocí nástrojů, jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a MageUI.exe, budete muset upravit manifest aplikace v textovém editoru a nové podepsání manifestů aplikace a nasazení. Další informace najdete v tématu [postupy: opětovné podepsání aplikace a manifesty nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Chcete-li změnit hodnoty v manifestech vygenerovat pomocí nástrojů, jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a MageUI.exe, budete muset upravit manifest aplikace v textovém editoru a nové podepsání manifestů aplikace a nasazení. Další informace najdete v tématu [jak: Opětovné podepisování manifestů aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Pokud používáte Visual Studio a ClickOnce k nasazení vaší aplikace, balíčky zaváděcího nástroje, které jsou vybrány ve výchozím nastavení závisí na verzi rozhraní .NET Framework v řešení. Nicméně pokud změníte cílovou verzi rozhraní .NET Framework, je nutné aktualizovat možnosti v **dialogové okno požadavky** ručně.  
   
@@ -80,11 +75,11 @@ K zajištění, že vaše aplikace se nainstaluje a úspěšně spuštěn, je nu
   
 |Argument příkazového řádku|Popis|  
 |---------------------------|-----------------|  
-|**-?, -h, – Nápověda**|Zobrazí dialogové okno nápovědy.|  
-|**– Adresa url, - componentsurl**|Zobrazí uloženou adresu URL a adresu url komponent pro toto nastavení.|  
-|**-url =** `location`|Nastaví adresu URL, kde bude hledat Setup.exe [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace.|  
-|**-componentsurl =** `location`|Nastaví adresu URL, kde Setup.exe bude hledat závislosti, jako [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
-|**-homesite =** `true`**&#124;** `false`|Když `true`, stahuje závislosti z preferované umístění na webu dodavatele. Přepíše se tím požadavek **- componentsurl** nastavení. Když `false`, soubory ke stažení závislostí v adrese URL zadané hodnotou **- componentsurl**.|  
+|**-?, -h, -help**|Zobrazí dialogové okno nápovědy.|  
+|**-url, -componentsurl**|Zobrazí uloženou adresu URL a adresu url komponent pro toto nastavení.|  
+|**-url=** `location`|Nastaví adresu URL, kde bude hledat Setup.exe [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace.|  
+|**-componentsurl=** `location`|Nastaví adresu URL, kde Setup.exe bude hledat závislosti, jako [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
+|**-homesite=** `true` **&#124;** `false`|Když `true`, stahuje závislosti z preferované umístění na webu dodavatele. Přepíše se tím požadavek **- componentsurl** nastavení. Když `false`, soubory ke stažení závislostí v adrese URL zadané hodnotou **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Podpora operačního systému  
  Zaváděcí nástroj Visual Studio není podporována v systému Windows Server 2008 Server Core nebo Windows Server 2008 R2 Server Core, který bude poskytovat prostředí nízká údržba serveru s omezenou funkčností. Možnost instalace jádra serveru podporuje například pouze profilu rozhraní .NET Framework 3.5 Server Core, takže funkcemi sady Visual Studio, které jsou závislé na úplné rozhraní .NET Framework nelze spustit.  
@@ -92,6 +87,3 @@ K zajištění, že vaše aplikace se nainstaluje a úspěšně spuštěn, je nu
 ## <a name="see-also"></a>Viz také  
  [Výběr strategie nasazení ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)
-
-
-

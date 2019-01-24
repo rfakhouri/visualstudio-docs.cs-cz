@@ -17,14 +17,14 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9ab08479485769121de276b5889603b984e39ef8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54399971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786968"
 ---
-# <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
+# <a name="javascript-in-visual-studio-2017"></a>JavaScript v sadě Visual Studio 2017
 
 JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jazyce JavaScript v sadě Visual Studio IDE můžete použít téměř všechny standardní editační pomůcky (fragmenty kódu, funkci IntelliSense atd.). Můžete napsat kód jazyka JavaScript pro mnoho typů aplikací a služeb.
 
@@ -206,7 +206,8 @@ Můžete použít následující `tsconfig.json` k Ujistěte se, že jazyk služ
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Řešení potíží s JavaScript language service je zakázané pro následující projekty
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Řešení potíží s JavaScript language service je zakázané pro následující projekty
 Když otevřete projekt jazyka JavaScript, která má velmi velké množství obsahu, může se zobrazit zpráva "služba jazyka JavaScript je zakázané pro následující projekty". Nejčastější příčinou nutnosti velmi velký objem zdrojového jazyka JavaScript je z důvodu včetně knihovny se zmírněními hrozeb zdrojový kód, který překračuje limit projektu 20 MB.
 
 Jednoduchý způsob, jak optimalizovat váš projekt je přidat `tsconfig.json` soubor v kořenovém adresáři projektu, aby služba jazyka zjistit, které soubory jsou bezpečně ignorovat. Podle následující ukázky vyloučit nejběžnější adresáře, kde jsou uloženy knihovny:
@@ -231,7 +232,7 @@ Jednoduchý způsob, jak optimalizovat váš projekt je přidat `tsconfig.json` 
 }
 ```
 
-Přidáte další adresáře podle svých potřeb. Příklady zahrnují "dodavatele" nebo "wwwroot/lib" adresáře. 
+Přidáte další adresáře podle svých potřeb. Příklady zahrnují "dodavatele" nebo "wwwroot/lib" adresáře.
 
 > [!NOTE]
 > Vlastnost kompilátoru `disableSizeLimit` lze také zakázat kontrolu limit 20 MB. Opatření speciální při použití této vlastnosti, protože limit zakázat, mohou selhat, služba jazyka.

@@ -1,14 +1,9 @@
 ---
 title: 'CA1801: Revize nepoužitých parametrů | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
 - CA1801
@@ -21,17 +16,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0946e315aef0c333207d49eb14820d287a9b361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64352d47d0a71454828cafa2c0ac48b9b92c1b36
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269682"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765979"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: Revize nepoužitých parametrů
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Zkontrolujte nepoužité parametry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1801: revize nepoužitých parametrů](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1801: Revize nepoužitých parametrů](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -40,7 +35,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1801:
 |Kategorie|Microsoft.Usage|  
 |Narušující změna|Pevné – Pokud člen není viditelný mimo sestavení, bez ohledu na to, které provedete změnu.<br /><br /> Pevné – Pokud změníte členu, který chcete použít parametr v rámci svého těla.<br /><br /> Rozdělení – odeberte parametr a je viditelný mimo sestavení.|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Podpis metody obsahuje parametr, který není použit v těle metody. Toto pravidlo nezkoumá následujících metod:  
   
 -   Metody odkazuje delegáta.  
@@ -77,4 +72,3 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1801:
  [CA1812: Vyhněte se nevytvořeným instancím vnitřních tříd](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
  [CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)
-

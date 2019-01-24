@@ -3,7 +3,7 @@ title: Přidání Mobile Services pomocí připojených služeb
 description: Přidání Mobile Services pomocí dialogovém okně Visual Studio přidání připojené služby
 documentationcenter: na
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 75c3cb93-88e1-476d-a416-f34caa3608e3
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 5192dcd2a19904db1c97136f41e1e6a1af112a95
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 4bfda342952820b4472a1f826273a7b9075faa9a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307652"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756077"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Přidání Mobile Services pomocí připojených služeb sady Visual Studio
 Pomocí sady Visual Studio 2015, můžete připojit pomocí Azure Mobile Services **přidat připojenou službu** dialogového okna. Můžete připojit z jakékoli klientské aplikace C#, všechny Javascriptové aplikace nebo aplikace Cordova pro různé platformy. Když se připojíte, můžete vytvořit a přístup k datům, vytvořte vlastní rozhraní API a naplánované úlohy nebo přidat podporu pro nabízená oznámení.  Operace připojené služby přidá všechny příslušné odkazy a připojovací kód. Můžete také využít výhody integrované podpory pro ověřování s řadou oblíbených schémat identity, jako je Azure AD, Facebook, Twitter a Microsoft Accounts.

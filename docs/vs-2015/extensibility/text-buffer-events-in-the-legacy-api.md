@@ -1,35 +1,30 @@
 ---
 title: Události vyrovnávací paměti textu v rozhraní API pro starší verze | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 677824142f2e7e497888627041cfe7a82487d342
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790892"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Události vyrovnávací paměti textu v rozhraní API pro starší verze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Objekt vyrovnávací paměti textu vysílá několik různých událostí, které umožní reagovat na různé situace.  
   
- Pokud používáte starší verzi rozhraní API, měli byste implementovat následující rozhraní za účelem přijímání oznámení změn do vyrovnávací paměti textu. Zveřejňují rozhraní vyrovnávací paměti na text pomocí `IConnectionPointContainer` rozhraní na textovou vyrovnávací paměť pro příjem oznámení o řádek se změní z vyrovnávací paměti. Další informace najdete v tématu [postupy: registrace pro textové vyrovnávací paměti události s rozhraním API starší verze](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). V případě třídy `IVsTextStreamEvents` nebo `IVsTextLinesEvents` rozhraní, změny se vrátí v buď jeden nebo two trojrozměrným souřadnice, v uvedeném pořadí.  
+ Pokud používáte starší verzi rozhraní API, měli byste implementovat následující rozhraní za účelem přijímání oznámení změn do vyrovnávací paměti textu. Zveřejňují rozhraní vyrovnávací paměti na text pomocí `IConnectionPointContainer` rozhraní na textovou vyrovnávací paměť pro příjem oznámení o řádek se změní z vyrovnávací paměti. Další informace najdete v tématu [jak: Zaregistrujte se na textové vyrovnávací paměti události s rozhraním API starší verze](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). V případě třídy `IVsTextStreamEvents` nebo `IVsTextLinesEvents` rozhraní, změny se vrátí v buď jeden nebo two trojrozměrným souřadnice, v uvedeném pořadí.  
   
-## <a name="text-buffer-interfaces"></a>Rozhraní vyrovnávací paměti textu  
+## <a name="text-buffer-interfaces"></a>Text Buffer Interfaces  
  Následující části jsou rozhraní implementované objekt vyrovnávací paměti textu.  
   
 |Rozhraní|Popis|  
@@ -58,5 +53,4 @@ Objekt vyrovnávací paměti textu vysílá několik různých událostí, kter�
   
 ## <a name="see-also"></a>Viz také  
  [Přístup k vyrovnávací paměti textu s použitím rozhraní API pro starší verze](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Postupy: Registrace událostí vyrovnávací paměti textu pomocí zastaralého rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
-
+ [Postupy: Zaregistrujte se na textové vyrovnávací paměti události s rozhraním API starší verze](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -1,25 +1,22 @@
 ---
-title: 'Postupy: vytvoření knihovny návrhářů aktivit | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření knihovny návrhářů aktivit | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258268"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795608"
 ---
-# <a name="how-to-create-an-activity-designer-library"></a>Postupy: vytvoření knihovny návrhářů aktivit
+# <a name="how-to-create-an-activity-designer-library"></a>Postupy: Vytvoření knihovny návrhářů aktivit
 Vlastní návrháři aktivit umožňují vytvářet uživatelské rozhraní pro standardní nebo vlastní aktivity. Řízení složitosti uživatelského rozhraní, aby bylo možné vytvořit více než jeden návrháře aktivit pro aktivitu. Tento scénář umožňuje vytvořit designery, které jsou přizpůsobené pro více cílových skupin.  
   
 ### <a name="to-create-an-activity-designer-library"></a>Chcete-li vytvořit knihovny návrháře aktivit  
@@ -43,7 +40,7 @@ Vlastní návrháři aktivit umožňují vytvářet uživatelské rozhraní pro 
   
 8.  Šablona projektu vytvoří definici návrháře aktivit v XAML a soubor implementace použití modelu code-behind ve zdrojovém kódu. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otevře a zobrazí na plátně návrháře aktivit.  
   
-9. Přetáhněte [!INCLUDE[avalon1](../includes/avalon1-md.md)] ovládacích prvků z **nástrojů** na návrhovou plochu pro použití v Návrháři vaše vlastní aktivity.  Příklad implementace vlastního návrháře aktivit najdete v tématu [postupy: vytvoření vlastního návrháře aktivit](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Přetáhněte [!INCLUDE[avalon1](../includes/avalon1-md.md)] ovládacích prvků z **nástrojů** na návrhovou plochu pro použití v Návrháři vaše vlastní aktivity.  Příklad implementace vlastního návrháře aktivit najdete v tématu [jak: Vytvoření vlastního návrháře aktivit](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     >  Vlastní návrháři aktivit lze použít pro vlastní aktivit, stejně jako u výchozí [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]aktivity.  

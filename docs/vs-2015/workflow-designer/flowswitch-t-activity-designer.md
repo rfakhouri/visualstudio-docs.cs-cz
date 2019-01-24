@@ -1,11 +1,8 @@
 ---
 title: FlowSwitch&lt;T&gt; Návrhář aktivity | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Core.Presentation.FlowSwitchLink.UI
@@ -16,13 +13,13 @@ ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: ed39806fdca8eec3deccf5383c2386d07f0af929
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ccd3e328a904540dd03c85f53634dc1eaab96c6e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791939"
 ---
 # <a name="flowswitchlttgt-activity-designer"></a>FlowSwitch&lt;T&gt; návrháře aktivit
 <xref:System.Activities.Statements.FlowSwitch%601> Aktivita je podmíněné uzel, který poskytuje větvení pro tok řízení založené na shodu kritériu, když se vyžadují více než dvě alternativní větve. Pokud tok větvení vyžaduje pouze dvě cesty, použijte <xref:System.Activities.Statements.FlowDecision> aktivity místo.  
@@ -42,9 +39,9 @@ ms.locfileid: "49254748"
   
 |Název vlastnosti|Požadováno|Použití|  
 |-------------------|--------------|-----------|  
-|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Hodnota TRUE|Určuje výraz, který je vyhodnocován pro určení, které <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> přejděte do cesty spuštění.|  
+|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Pravda|Určuje výraz, který je vyhodnocován pro určení, které <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> přejděte do cesty spuštění.|  
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Určuje jedinečný mapování z možných výsledků získaných z vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> na sadu <xref:System.Activities.Statements.FlowNode> objekty.|  
-|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Hodnota TRUE|Určuje mapování při vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> se neshoduje s některou z hodnot součástí <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> objektu.|  
+|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Pravda|Určuje mapování při vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> se neshoduje s některou z hodnot součástí <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> objektu.|  
   
 ## <a name="see-also"></a>Viz také  
  [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)   

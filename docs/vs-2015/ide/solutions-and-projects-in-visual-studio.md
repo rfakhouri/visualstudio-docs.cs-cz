@@ -1,13 +1,9 @@
 ---
 title: Řešení a projekty
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.savedeferredsaveprojectonclose
 - vs.untrustedtemplateopeningdocuments
@@ -53,13 +49,13 @@ ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a4e50e386be097338207a2ef66904347f9170d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795249"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projekty v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +75,7 @@ Při vytváření aplikace, aplikace, webu, webové aplikace, script, modulu plu
  Můžete také vytvořit vlastní šablony projektů a položek. Další informace najdete v tématu [vytváření projektů a šablon položek](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Vytváření nových projektů
- Nejjednodušší způsob, jak vytvořit nový projekt, je začít s předem definovaných projektové šablony, která obsahuje základní sadu souborů předem generovaného kódu, konfigurační soubory, prostředky, a nastavení, které vám pomůžou začít vytvářet konkrétní typ aplikace nebo webu konkrétní programovací jazyk. Tyto šablony se zobrazí v **dialogové okno nového projektu** při výběru **souboru &#124; nový &#124; projektu** nebo **souboru &#124; nový &#124; webu** z hlavní nabídky a potom přejděte. Další informace najdete v tématu [vytváření řešení a projekty](../ide/creating-solutions-and-projects.md) a [NIB vytváření projektů ze šablon](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Nejjednodušší způsob, jak vytvořit nový projekt, je začít s předem definovaných projektové šablony, která obsahuje základní sadu souborů předem generovaného kódu, konfigurační soubory, prostředky, a nastavení, které vám pomůžou začít vytvářet konkrétní typ aplikace nebo webu konkrétní programovací jazyk. Tyto šablony se zobrazí v **dialogové okno nového projektu** při výběru **souboru &#124; nový &#124; projektu** nebo **souboru &#124; nový &#124; webu** z hlavní nabídky a potom přejděte. Další informace najdete v tématu [vytváření řešení a projekty](../ide/creating-solutions-and-projects.md) a [NIB vytváření projektů ze šablon](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Správa projektů v Průzkumníku řešení
  Po vytvoření nového projektu použijete **Průzkumníka řešení** zobrazení a správa projektů a řešení a jejich přidružené položky. Následující obrázek znázorňuje řešení C#, které obsahuje dva projekty Průzkumníka serveru.

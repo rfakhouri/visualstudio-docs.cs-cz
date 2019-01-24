@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Zobrazení vyhrazené nápovědy | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zobrazení vyhrazené nápovědy | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a3b902c32563da6bc21778a09b4aeaebaeabeaa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a5f62ace3126ee35f47a90c15e6183690786954
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781221"
 ---
-# <a name="walkthrough-displaying-signature-help"></a>Návod: Zobrazení vyhrazené nápovědy
+# <a name="walkthrough-displaying-signature-help"></a>Průvodce: Zobrazení vyhrazené nápovědy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Signaturám (označované také jako *informace o parametru*) zobrazí v popisku podpis metody, když uživatel zadá znak start seznamu parametrů (obvykle Levá závorka). Jako parametr a oddělovač parametr (obvykle čárku) jsou zadány, popisek se aktualizuje a zobrazí další parametr tučným písmem. Pomoc při podpisu můžete definovat v rámci služby jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a zobrazit nápovědu k podpisu pro právě tento typ, nebo můžete zobrazit pomoc při podpisu pro existující typ obsahu (například "text"). Tento návod ukazuje, jak zobrazit nápovědu k podpisu pro typ obsahu "text".  
@@ -50,7 +45,7 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Sestavení Microsoft.VisualStudio.OLE.Interop  
+     Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   
@@ -252,5 +247,4 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
 4.  Po zadání levou závorku, měli byste vidět popisu, který se zobrazí seznam dvou podpisy `add()` metody.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,25 +1,22 @@
 ---
 title: Vývoj testů z modelu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799282"
 ---
 # <a name="develop-tests-from-a-model"></a>Vývoj testů z modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ Požadavky a architektury modely můžete pomoci vám organizovat testy systému
  Můžete vytvořit a Udržovat vztah mezi testy systému a model požadavků. K navázání tohoto vztahu, psaní testů, které odpovídají hlavních prvků model požadavků. Visual Studio pomáhá udržovat relace umožňují vytvářet propojení mezi testy a součástí modelu. Další informace o modelech požadavky najdete v části [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
 ### <a name="write-tests-for-each-use-case"></a>Zápis testů pro každý případ použití  
- Pokud používáte [!INCLUDE[TCMext](../includes/tcmext-md.md)], můžete vytvořit skupinu testů pro každý případ použití, který jste definovali ve vašem modelu požadavky. Například pokud máte případu použití objednávka jídla, která zahrnuje vytvoření objednávky a přidat položku pořadí, můžete vytvořit testy pro obě celkové a podrobnější tyto případy použití. Další informace o případech použití naleznete v tématu [diagramy případu použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Pokud používáte [!INCLUDE[TCMext](../includes/tcmext-md.md)], můžete vytvořit skupinu testů pro každý případ použití, který jste definovali ve vašem modelu požadavky. Například pokud máte případu použití objednávka jídla, která zahrnuje vytvoření objednávky a přidat položku pořadí, můžete vytvořit testy pro obě celkové a podrobnější tyto případy použití. Další informace o případech použití naleznete v tématu [diagramy případu použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md).  
   
  Tyto pokyny mohou být užitečné:  
   
@@ -59,7 +56,7 @@ Požadavky a architektury modely můžete pomoci vám organizovat testy systému
   
     -   Pokud plán vývoje implementuje jeden aspekt jejich případu použití dříve než jiné, můžete povolit testy samostatně v průběhu vývoje.  
   
--   Při návrhu testy oddělte od kódu nebo skript, který určuje, zda bylo dosaženo neplatná následná volba testovací data. Například může být zkoušku jednoduchou funkci aritmetické: vstup 4; Ověřte, zda výstup je 2. Místo toho navrhnout skript jako: Zvolte vstupní; vynásobit výstup samostatně a ověřte, že výsledek je původní vstup. Tento styl umožňuje měnit testovací vstupy beze změny hlavní části testu.  
+-   Při návrhu testy oddělte od kódu nebo skript, který určuje, zda bylo dosaženo neplatná následná volba testovací data. Například může být testovací jednoduché aritmetické funkce: Vstup 4; Ověřte, zda výstup je 2. Místo toho navrhněte skript jako: Zvolte vstupní; vynásobit výstup samostatně a ověřte, že výsledek je původní vstup. Tento styl umožňuje měnit testovací vstupy beze změny hlavní části testu.  
   
 #### <a name="linking-tests-to-use-cases"></a>Propojení testy s případy použití  
  Pokud používáte [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] k navrhování a spuštění testů, můžete uspořádat testy v rámci požadavků, případu použití nebo uživatelské scénáře pracovních položek. Můžete propojit tyto pracovní položky s případy použití v modelu. To vám umožní rychle trasování požadavky na změny na testy a umožňuje sledovat průběh každého případu použití.  
@@ -116,7 +113,7 @@ Assert (countAfter == countBefore = 1);
   
  Výchozí pravidlo tohoto druhu se řídí nejen všechny případy použití, které jsou aktuálně definován, ale také všechny ostatní případy použití, které bude obsahovat definici později. Proto je užitečné pro zápis odděleně od případ použití a otestovat samostatně z případů využití.  
   
- Invariantní obchodní pravidlo můžete psát jako komentář v diagramu tříd. Další informace najdete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).  
+ Invariantní obchodní pravidlo můžete psát jako komentář v diagramu tříd. Další informace najdete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md).  
   
  Můžete propojit s testy obchodní pravidlo propojením komentář s požadavkem nebo uživatelské scénáře pracovní položky, které lze propojit na testovací sady v [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]. Další informace najdete v tématu [připojení testovací případy k prvkům modelu](#Attaching).  
   
@@ -130,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  Došlo k pokusu o ověření stavu systému po každé zprávy nebo akce. To může vyžadovat další instrumentaci.  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>Odvozování testy subsystému z modelů  
- V návrhu vysoké úrovně v rozsáhlém systému je určit, komponenty nebo subsystémů. Představují části, které může být navržena samostatně, nebo jsou umístěné na různých počítačích nebo jsou opakovaně použitelné moduly, které mohou být rekombinované mnoha způsoby. Další informace najdete v tématu [diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md).  
+ V návrhu vysoké úrovně v rozsáhlém systému je určit, komponenty nebo subsystémů. Představují části, které může být navržena samostatně, nebo jsou umístěné na různých počítačích nebo jsou opakovaně použitelné moduly, které mohou být rekombinované mnoha způsoby. Další informace najdete v tématu [diagramy komponent UML: Pokyny pro](../modeling/uml-component-diagrams-guidelines.md).  
   
  Můžete použít pro každou hlavní součást stejné zásady používání pro celý systém. Ve velkých projektech Každá komponenta může mít svůj vlastní model požadavků. V projektech pro menší Architektonický model nebo hlavnímu návrhu vytvořit zobrazíte hlavní součásti a jejich interakce. Další informace najdete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
   
@@ -182,6 +179,3 @@ Assert (countAfter == countBefore = 1);
  [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)   
  [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)   
  [Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)
-
-
-

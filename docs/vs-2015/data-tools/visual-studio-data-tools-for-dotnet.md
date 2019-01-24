@@ -1,29 +1,27 @@
 ---
 title: Visual Studio data tools pro rozhraní .NET | Dokumentace Microsoftu
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 6fd1d55b74997e855cbbc4a3cdfe9288f19806a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "49859704"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799407"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools for .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhraní API a podpora nástrojů pro připojení k databázím, modelování dat v paměti a zobrazení dat v uživatelském rozhraní.  Tříd rozhraní .NET Framework, které poskytují přístup k datům funkce jsou označovány jako [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, spolu s daty nástroje v sadě Visual Studio byla původně určena především pro podporu relačních databází a XML. V dnešních dnech mnoho dodavatelů databáze typu NoSQL nebo třetími stranami, nabízejí poskytovatele ADO.NET.  
   
- Visual Studio 2015 Update 2 zahrnuje nejnovější aktualizace [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), které zajišťují podporu pro nejnovější funkce v Azure [SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) a [SQL serveru 2016](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) podporuje technologie ADO.NET, s výjimkou datové sady a souvisejících typů. Pokud se zaměřujete na .NET Core a vyžadují vrstvu objektově relační mapování (ORM), použijte [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 Update 2 zahrnuje nejnovější aktualizace [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), které zajišťují podporu pro nejnovější funkce v Azure [SQL Database](https://azure.microsoft.com/services/sql-database/) a [SQL serveru 2016](https://www.microsoft.com/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) podporuje technologie ADO.NET, s výjimkou datové sady a souvisejících typů. Pokud se zaměřujete na .NET Core a vyžadují vrstvu objektově relační mapování (ORM), použijte [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  Následující diagram znázorňuje zjednodušenou zobrazení základní architektury:  
   
@@ -69,10 +67,3 @@ Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhra
   
 ## <a name="see-also"></a>Viz také  
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-
-
-
-
-
-

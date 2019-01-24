@@ -1,14 +1,9 @@
 ---
 title: Upravit a pokračovat (Visual C#) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fff791d948d12d88b5e4813d106baa21740b0269
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 027e713ccb966528d0468050df30e4265b574198
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751117"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752422"
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +37,8 @@ Pomocí funkce upravit a pokračovat pro jazyk C# můžete provést změny kódu
   
  Když upravit a pokračovat je povolená, podporované změny jsou automaticky použity, když použijete příkaz spuštění ladicího programu, jako například **pokračovat**, **krok**, **nastavit další příkaz**, nebo provést vyhodnocení funkce v okně ladicího programu.  
   
- Další informace najdete v tématu [postupy: použití upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
+ Další informace najdete v tématu [jak: Použití operace upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití operace upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [Postupy: Použití operace upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
  [Podporované změny kódu (C++)](../debugger/supported-code-changes-csharp.md)
-
-
-

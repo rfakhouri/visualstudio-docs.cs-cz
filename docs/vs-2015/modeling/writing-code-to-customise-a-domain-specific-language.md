@@ -1,25 +1,22 @@
 ---
 title: Psaní kódu pro úpravu jazyka specifického pro doménu specifického | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 ms.assetid: a4a17f5b-9c97-4575-b2d1-3182c1896b72
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: affa3db292ed23ca52b0cca810daf5ca70ad0fd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770649"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Zápis kódu pro úpravu jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ Tato část ukazuje, jak použít vlastní kód pro přístup, upravit nebo vytv
   
  Existuje několik kontextech, ve kterých můžete napsat kód, který funguje s DSL:  
   
-- **Vlastní příkazy.** Můžete vytvořit příkaz, že uživatelé můžete vyvolat kliknutím pravým tlačítkem myši v diagramu a které můžete měnit model. Další informace najdete v tématu [postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+- **Vlastní příkazy.** Můžete vytvořit příkaz, že uživatelé můžete vyvolat kliknutím pravým tlačítkem myši v diagramu a které můžete měnit model. Další informace najdete v tématu [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 - **Ověření.** Můžete napsat kód, který ověřuje, že model je ve správném stavu. Další informace najdete v tématu [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).  
   
@@ -36,7 +33,7 @@ Tato část ukazuje, jak použít vlastní kód pro přístup, upravit nebo vytv
   
 - **Transformace textu.** Můžete napsat textových šablon, které obsahují kód, který má přístup k modelu a vytváří textový soubor, třeba když chcete generovat kód programu. Další informace najdete v tématu [generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-- **Další rozšíření sady Visual Studio.** Můžete napsat samostatné rozšíření VSIX, které čtení a úpravy modelů. Další informace najdete v tématu [postupy: otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- **Další rozšíření sady Visual Studio.** Můžete napsat samostatné rozšíření VSIX, které čtení a úpravy modelů. Další informace najdete v tématu [jak: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   Instance tříd, které definujete v DslDefinition.dsl uchovávají do datové struktury, volá se, *Store v paměti* (IMS) nebo *Store*. Třídy, které definujete DSL, vždy provést Store jako argument konstruktoru. Pokud například vaše DSL definuje třídu s názvem příkladu:  
   
@@ -80,6 +77,3 @@ Tato část ukazuje, jak použít vlastní kód pro přístup, upravit nebo vytv
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
-
-

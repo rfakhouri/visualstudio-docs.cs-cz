@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: cílení na určitou verzi rozhraní .NET Framework | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Cílení na určitou verzi rozhraní .NET Framework | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -16,21 +11,21 @@ ms.assetid: dea62d25-3d1b-492e-a6cc-b5154489800a
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3370c62535f2bb915115533ea79f4b913c3ac347
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ee322255cbb737aa4503517c599c62c9151937ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782304"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: Cílení na verzi rozhraní .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: Cílení na určitou verzi rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento dokument popisuje, jak při vytvoření projektu cílit na určitou verzi rozhraní .NET Framework a jak změnit cílenou verzi v existujícím projektu v jazyce Visual Basic, Visual C# nebo Visual F#.  
   
 > [!IMPORTANT]
->  Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [postupy: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+>  Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **V tomto tématu**  
   
@@ -58,7 +53,7 @@ Tento dokument popisuje, jak při vytvoření projektu cílit na určitou verzi 
      V seznamu šablon jsou uvedeny pouze projekty, které jsou podporovány vámi vybranou verzí rozhraní .NET Framework.  
   
 ##  <a name="bkmk_existing"></a> Změna cílové verze  
- Pomocí tohoto postupu můžete změnit cílovou verzi rozhraní .NET Framework v projektu jazyka Visual Basic, Visual C# nebo Visual F #.  
+ Můžete změnit cílovou verzi rozhraní .NET Framework v jazyce Visual Basic, Visual C#, nebo Visual F# projekt pomocí tohoto postupu.  
   
 #### <a name="to-change-the-targeted-version"></a>Změna cílené verze  
   
@@ -67,7 +62,7 @@ Tento dokument popisuje, jak při vytvoření projektu cílit na určitou verzi 
      ![Visual Studio Solution Explorer Properties](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    >  Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [postupy: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    >  Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2.  V levém sloupci okna vlastností zvolte **aplikace** kartu.  
   
@@ -93,6 +88,3 @@ Tento dokument popisuje, jak při vytvoření projektu cílit na určitou verzi 
  [Stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Konfigurace projektů](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
  [Postupy: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
-
-
-

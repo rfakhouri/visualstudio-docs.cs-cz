@@ -1,28 +1,23 @@
 ---
-title: 'Postupy: implementace označování chyb | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Implementace označování chyb | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e4dd15f4cbb36ef1f81d3b7ca345a6a06bdaff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9d0836d9633b070a9f48a6bd2b80d1f012f52cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779653"
 ---
-# <a name="how-to-implement-error-markers"></a>Postupy: implementace označování chyb
+# <a name="how-to-implement-error-markers"></a>Postupy: Implementace označování chyb
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější přizpůsobení editoru textu k implementaci. Však výhody, které nabízejí uživatelům vaší VSPackage můžete mnohem převažují nad náklady a umožnit jim. Označování chyb myš označit text, který předpokládá, že nesprávné s podtržení nebo podtrženo červenou čáru vaše analyzátoru jazyka. Tento ukazatel pomáhá programátoři vizuálně zobrazením nesprávný kód.  
@@ -33,11 +28,11 @@ Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější
   
 1. Vyberte text, u které chcete umístit červenou vlnovkou.  
   
-2. Vytvořit značku typu `MARKER_CODESENSE_ERROR`. Další informace najdete v tématu [postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md).  
+2. Vytvořit značku typu `MARKER_CODESENSE_ERROR`. Další informace najdete v tématu [jak: Přidejte značky standardního textového](../extensibility/how-to-add-standard-text-markers.md).  
   
 3. Potom předejte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ukazatel rozhraní.  
   
-   Tento proces také umožňuje vytvořit text tipu nebo speciální kontextové nabídky přes danou značku. Další informace najdete v tématu [postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md).  
+   Tento proces také umožňuje vytvořit text tipu nebo speciální kontextové nabídky přes danou značku. Další informace najdete v tématu [jak: Přidejte značky standardního textového](../extensibility/how-to-add-standard-text-markers.md).  
   
    Následující objekty jsou požadovány, než lze zobrazit označování chyb.  
   
@@ -63,6 +58,5 @@ Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější
 ## <a name="see-also"></a>Viz také  
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)   
- [Postupy: vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
- [Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md)
-
+ [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
+ [Postupy: Použití značek Text](../extensibility/how-to-use-text-markers.md)

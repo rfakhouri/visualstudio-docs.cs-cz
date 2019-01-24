@@ -1,25 +1,20 @@
 ---
 title: Práce s texturami a obrázky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bdee0fadfb1101d7087b7154f231958615aee227
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795929"
 ---
 # <a name="working-with-textures-and-images"></a>Práce s texturami a obrázky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ Můžete použít Editor obrázků v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
 |-----------|-----------------|  
 |[Editor obrázků](../designers/image-editor.md)|Popisuje, jak použít Editor obrázků pro práci s texturami a obrázky.|  
 |[Příklady editoru obrázků](../designers/image-editor-examples.md)|Obsahuje odkazy na témata, která ukazují, jak provádět běžné úlohy pro zpracování obrázků pomocí editoru obrázků.|
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: 'Postupy: Přidání standardní Text značky | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 54dcfc9a1952dc0cd816c2ce7ad83cd8355f0066
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7e771acfa44c1b32dfcc33b2ef1cbcaef879b9f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779473"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805522"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Postupy: Přidání standardní Text značky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,6 @@ Pomocí následujícího postupu vytvořte jeden výchozí typ značky text, opa
   
 ## <a name="see-also"></a>Viz také  
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Postupy: implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
- [Postupy: vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
- [Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md)
-
+ [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
+ [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
+ [Postupy: Použití značek Text](../extensibility/how-to-use-text-markers.md)

@@ -1,14 +1,9 @@
 ---
 title: Standardní a vlastní konfigurace sady nástrojů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
@@ -16,13 +11,13 @@ ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a1d57903ec2a8c3afb439f27433898467028eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801671"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardní a vlastní konfigurace sady nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +29,11 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
  Nástroj MSBuild 12.0 zahrnuje následující standardní sady nástrojů:  
 
 
-| Atribut ToolsVersion | Cesta nástrojů (jak je uvedeno ve vlastnosti sestavení MSBuildToolsPath nebo MSBuildBinPath) |
+| ToolsVersion | Cesta nástrojů (jak je uvedeno ve vlastnosti sestavení MSBuildToolsPath nebo MSBuildBinPath) |
 |--------------|--------------------------------------------------------------------------------------|
 |     2.0      |           *Instalační cesta Windows*\Microsoft.Net\Framework\v2.0.50727\            |
-|     3.5      |              *Instalační cesta Windows*\Microsoft.NET\Framework\v3.5\               |
-|     4.0      |           *Instalační cesta Windows*\Microsoft.NET\Framework\v4.0.30319\            |
+|     3.5      |              *Windows installation path*\Microsoft.NET\Framework\v3.5\               |
+|     4.0      |           *Windows installation path*\Microsoft.NET\Framework\v4.0.30319\            |
 |     12.0     |                          *%ProgramFiles%* \MSBuild\12.0\bin                           |
 
  `ToolsVersion` Hodnota určuje, které používají sady nástrojů projektu, který generuje sada Visual Studio. V [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] výchozí hodnota je "12.0" (nezáleží na tom, jaké verze zadaná v souboru projektu), ale tento atribut lze přepsat pomocí **/toolsversion** přepínač příkazového řádku. Informace o tento atribut a další způsoby, jak určit `ToolsVersion`, naleznete v tématu [přepsání nastavení ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
@@ -110,6 +105,3 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
 
 ## <a name="see-also"></a>Viz také  
  [Sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
-
-
-

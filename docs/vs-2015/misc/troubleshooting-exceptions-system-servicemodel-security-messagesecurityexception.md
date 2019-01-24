@@ -1,14 +1,9 @@
 ---
-title: 'Řešení potíží s výjimkami: System.ServiceModel.Security.MessageSecurityException | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Řešení potíží s výjimkami: System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,15 +11,15 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794004"
 ---
-# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Řešení potíží s výjimkami: System.ServiceModel.Security.MessageSecurityException
+# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Řešení potíží s výjimkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvolána, když [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Určuje, že zpráva není správně zabezpečené nebo nebude bylo manipulováno. Dojde k chybě nejčastěji Pokud jsou splněny všechny následující podmínky:  
   
 -   Pomocí odkazu na službu WCF prostřednictvím vzdáleného připojení, jako je připojení ke vzdálené ploše nebo Terminálovými službami komunikovat se službou WCF (.svc) v projektu webové stránky nebo webové aplikace.  
@@ -87,7 +82,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvol
   
 2.  Vyberte **možnosti spuštění**a poté zrušte zaškrtnutí **ověřování protokolem NTLM** zaškrtávací políčko.  
   
-3.  Klikněte na tlačítko **OK**.  
+3.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

@@ -1,14 +1,9 @@
 ---
 title: Tipy pro fulltextové vyhledávání | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_search
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791705"
 ---
 # <a name="full-text-search-tips"></a>Tipy pro fulltextové vyhledávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Jedním ze užitečnější metody v nápovědě k vyhledání informací o je p
 >    2.  Použijte logické operátory Pokud chcete určit vztah mezi slovy ve vaší vyhledávací fráze. Můžete zahrnout logické operátory, jako je například AND, OR, NOT a TÉMĚŘ, pro další upřesněte hledání. Například pokud hledáte "deklarace TÉMĚŘ sjednocení", budou výsledky hledání obsahují témata obsahující slova "deklarace" a "sjednocení" více než pár slov od sebe navzájem. Další informace najdete v tématu [logické operátory ve vyhledávacích výrazech](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtry  
- Výsledky hledání můžete omezit pomocí operátorů rozšířené vyhledávání. Nápověda obsahuje tři kategorie, které můžete použít pro filtrování výsledků fulltextové vyhledávání: název, kód a – klíčové slovo. Další informace najdete v tématu [Pokročilí operátoři vyhledávání ve vyhledávacích výrazech](../ide/advanced-search-operators-in-search-expressions.md).  
+ Výsledky hledání můžete omezit pomocí operátorů rozšířené vyhledávání. Nápověda obsahuje tři kategorie, které můžete použít pro filtrování výsledků fulltextové vyhledávání: Název, kód a – klíčové slovo. Další informace najdete v tématu [Pokročilí operátoři vyhledávání ve vyhledávacích výrazech](../ide/advanced-search-operators-in-search-expressions.md).  
   
 ### <a name="ranking-of-search-results"></a>Řazení výsledků hledání  
  Vyhledávací algoritmus platí určitá kritéria umožňující řazení výsledků vyšší nebo nižší v seznamu výsledků hledání. Obecně platí:  
@@ -68,6 +63,3 @@ Jedním ze užitečnější metody v nápovědě k vyhledání informací o je p
 ## <a name="see-also"></a>Viz také  
  [Vyhledejte informace](../ide/locate-information.md)   
  [Logické operátory ve vyhledávacích výrazech](../ide/logical-operators-in-search-expressions.md)
-
-
-

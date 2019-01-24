@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,15 +22,15 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756983"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkazy na součásti, které jste společnosti Microsoft, nebo jiné firmy vyvíjí. Pokud vyvíjíte aplikace Universal Windows, váš projekt automaticky odkazuje na všechny správné DLL knihovny Windows SDK. Pokud vyvíjíte aplikaci .NET, váš projekt se automaticky odkazuje na knihovnu mscorlib.dll. Některá rozhraní API .NET jsou přístupné na součásti, které je nutné přidat ručně. Odkazy na součásti modelu COM nebo vlastní součásti nutné přidat ručně.  
@@ -73,7 +68,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
   
    -   Inzerovaná sestavení se nacházejí v plné verzi rozhraní a jejich výčet je uveden v seznamu rozhraní, jestliže váš projekt cílí na profil cíleného rozhraní. Inzerovaná sestavení jsou zobrazena šedou barvou z důvodu odlišení od sestavení, která existují v cíleném profilu Rozhraní daného projektu. Pokud například projekt cílí na rozhraní .NET Framework 4 Client, seznam rozhraní obsahuje inzerovaná sestavení z rozhraní .NET Framework 4. Při přidání inzerovaného sestavení, je mu oznámeno, že po **správce odkazů** zavření okna, projekt se změní cílení na rozhraní .NET Framework 4 a přidá dané inzerované sestavení.  
   
-   -   Projekty pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace obsahují odkazy na všechna sestavení v cíleném [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení ve složce odkazy v **Průzkumníka řešení** označuje odkaz na celé rozhraní. Proto tedy karta Rozhraní nezobrazí žádná sestavení z rozhraní a namísto toto se zobrazí následující zpráva: „Na všechna sestavení rozhraní je již odkazováno. Použijte prohlížeč objektů pro prozkoumání odkazů rozhraní Framework." Pro desktopové projekty karta rozhraní zobrazuje sestavení z cíleného rozhraní a uživatel musí přidat odkazy, které aplikace vyžaduje.  
+   -   Projekty pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace obsahují odkazy na všechna sestavení v cíleném [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení ve složce odkazy v **Průzkumníka řešení** označuje odkaz na celé rozhraní. Karta rozhraní proto nebude žádná sestavení z rozhraní a místo toho zobrazí následující zpráva: "Všechna sestavení rozhraní je již odkazováno. Použijte prohlížeč objektů pro prozkoumání odkazů rozhraní Framework." Pro desktopové projekty karta rozhraní zobrazuje sestavení z cíleného rozhraní a uživatel musí přidat odkazy, které aplikace vyžaduje.  
   
 2. Karta Rozšíření obsahuje seznam všech sestavení, která vyvinuli externí dodavatelé součástí a ovládacích prvků za účelem rozšíření cíleného rozhraní. Podle účelu dané aplikace mohou být tato sestavení potřebná.  
   
@@ -95,7 +90,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
   
 -   Komponenta, která používá nejnovější verzi rozhraní .NET Framework je nekompatibilní s projektem, který se zaměřuje na starší verzi rozhraní .NET Framework.  
   
-     Informace o tom, jak změnit cílovou verzi rozhraní .NET Framework pro projekt, naleznete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Informace o tom, jak změnit cílovou verzi rozhraní .NET Framework pro projekt, naleznete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 -   Komponenty, která používá [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] je nekompatibilní s projektem, který se zaměřuje [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
@@ -161,7 +156,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
   
 - **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] spravované projekty aplikací**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projekty aplikací můžete výstup binární soubory WinMD nastavením vlastnosti projektu &#124; typ výstupu na soubor WinMD. Název souboru WinMD musí představovat nadřazený obor názvů všech oborů názvů, které existují jeho v rámci. Pokud například projekt obsahuje obory názvů A.B a A.B.C, možné názvy pro soubory WinMD na jeho výstupu jsou A.winmd a A.B.winmd. Pokud uživatel zadá vlastnosti projektu &#124; název sestavení nebo vlastnosti projektu &#124; Namespace hodnotu, která je mimo sadu oborů názvů v projektu nebo není žádný nadřazený obor názvů v rámci projektu, vygeneruje se upozornění sestavení: "A.winmd není platný název souboru .winmd pro toto sestavení. Všechny typy v rámci souboru metadat systému Windows musejí existovat v podřízeném oboru názvů daného názvu souboru. Typy, které neexistují v podřízeném oboru daného názvu souboru, nebude možné za běhu nalézt. V tomto sestavení je nejmenší společný obor názvů CSWSClassLibrary1“. Desktopový projekt jazyka Visual Basic nebo Visual C# může využívat pouze soubory Winmd vygenerované pomocí [!INCLUDE[win8](../includes/win8-md.md)] sad SDK, které jsou známy jako soubory Winmd první strany a nemůže generovat soubory Winmd.  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Nativní projekty aplikací**: nativní soubor WinMD obsahuje pouze metadata. Jeho implementace se nachází v samostatném souboru knihovny DLL. Výběrem šablonu projektu součásti prostředí Windows Runtime v je možné vytvořit nativní binární soubory **nový projekt** dialogové okno nebo spuštěním prázdným projektem a upravíte vlastnosti projektu pro vytvoření souboru WinMD. Pokud projekt obsahuje nesouvislé obory názvů, chyba sestavení oznámí uživateli, aby sloučit své obory názvů nebo spustit nástroj MSMerge.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Nativní projekty aplikací**: Nativní soubor WinMD obsahuje pouze metadata. Jeho implementace se nachází v samostatném souboru knihovny DLL. Výběrem šablonu projektu součásti prostředí Windows Runtime v je možné vytvořit nativní binární soubory **nový projekt** dialogové okno nebo spuštěním prázdným projektem a upravíte vlastnosti projektu pro vytvoření souboru WinMD. Pokud projekt obsahuje nesouvislé obory názvů, chyba sestavení oznámí uživateli, aby sloučit své obory názvů nebo spustit nástroj MSMerge.  
   
   Karta Windows se skládá ze dvou podskupin.  
   
@@ -221,8 +216,5 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
  Na panelu hledání v **správce odkazů** dialogové okno funguje na kartě, která je aktivní. Například, pokud uživatel zadá panelu hledání text "Systém" **řešení** má fokus karta, vyhledávání nevrátí žádné výsledky, pokud řešení obsahuje název projektu, který obsahuje "slovo systém".  
   
 ## <a name="see-also"></a>Viz také  
- [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
-
-
-

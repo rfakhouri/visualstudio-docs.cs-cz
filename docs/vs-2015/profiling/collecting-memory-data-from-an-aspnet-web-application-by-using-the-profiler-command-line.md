@@ -1,14 +1,9 @@
 ---
 title: Shromažďování dat paměti pomocí příkazového řádku Profiler z webové aplikace ASP.NET | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - profiling tools,.NET memory method
@@ -16,13 +11,13 @@ ms.assetid: 57acf2b0-327a-4c0e-8078-ac2f6d99457d
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bbe52509eb298c33077c81a69e02a813c29b7ce0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 373e20ba3130cc5b5c633ef58f104d8cb8112ae3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959732"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758528"
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Shromažďování dat paměti z webové aplikace ASP.NET pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ Tato část popisuje postupy a možnosti pro shromažďování paměť přiděle
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Připojení profileru k běžící aplikaci ASP.NET**|-   [Jak: Připojit Profiler k webové aplikaci ASP.NET ke shromažďování dat paměti](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrumentace staticky kompilaci binárních souborů**|-   [Jak: Nástroj staticky kompilované aplikace ASP.NET a shromažďovat paměťová Data](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|**Dynamicky kompilovaných instrumentace binárních souborů**|-   [Jak: Nástroje dynamicky kompilované aplikace ASP.NET a shromažďovat paměťová Data](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Připojení profileru k běžící aplikaci ASP.NET**|-   [Jak: Připojení profileru k webové aplikaci ASP.NET kvůli shromáždění dat o paměti](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrumentace staticky kompilaci binárních souborů**|-   [Jak: Instrumentace staticky kompilované aplikace ASP.NET a shromáždění dat o paměti](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Dynamicky kompilovaných instrumentace binárních souborů**|-   [Jak: Instrumentace dynamicky kompilované aplikace ASP.NET a shromáždění dat o paměti](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
@@ -62,6 +57,3 @@ Tato část popisuje postupy a možnosti pro shromažďování paměť přiděle
   
 ## <a name="reference"></a>Odkaz  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)
-
-
-

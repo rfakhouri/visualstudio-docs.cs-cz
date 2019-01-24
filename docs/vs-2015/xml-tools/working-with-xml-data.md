@@ -1,25 +1,20 @@
 ---
 title: Práce s daty XML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 465cd132-2e36-435d-920b-50b767c2217c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ab21fa0616b26aeb41f16a911d5834f40479b09d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787697"
 ---
 # <a name="working-with-xml-data"></a>Práce s daty XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,10 +59,10 @@ XML a jeho souvisejících technologiích hrát velké roli ve způsobu zpracov�
  [Ladění XSLT](../xml-tools/debugging-xslt.md)  
  Popisuje, jak ladit pomocí ladicího programu sady Visual Studio šablony stylů.  
   
- [Reference na standardy XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ [Reference na standardy XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  Poskytuje informace o XML technologií, včetně XML, dokumentu typ definice (DTD), schéma XML definice jazyk (XSD) a XSLT.
   
- [Webové služby XML ve spravovaném kódu](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [Webové služby XML ve spravovaném kódu](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Tento článek popisuje postup vytvoření a nasazení webové služby XML a jak získat přístup k webové služby XML.  
   
 ## <a name="see-also"></a>Viz také  

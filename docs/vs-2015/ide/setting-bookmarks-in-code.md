@@ -1,27 +1,22 @@
 ---
 title: Nastavení záložek v kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219749"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769301"
 ---
 # <a name="setting-bookmarks-in-code"></a>Nastavení záložek v kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Záložky můžete označit řádky v kódu tak, aby mohli rychle vrátit na ur�
  Záložky lze uspořádat do virtuálních složek kliknutím **novou složku** v okně záložek a následným přetažením vybraných záložek do nové složky.  
   
  Můžete záložky můžete vypnout (aniž byste je odebrali) kliknutím **zakázat všechny záložky** tlačítka v okně záložek. Můžete je znovu povolit pomocí stejného tlačítka (která se nyní nazývá **povolit všechny záložky**).
-
-
-

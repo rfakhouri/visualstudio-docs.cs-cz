@@ -1,31 +1,26 @@
 ---
 title: Ukázka rozhraní Komunikátoru Excel | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 1dbf1090-762c-4824-82dd-2d7c2c6f00b6
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1ffbfe7c8d69ecca2ff90dc1d01af2eb15d7d277
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 42da15899bb9bab6388d32c87132796eff768d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800014"
 ---
 # <a name="sample-excel-communicator-interface"></a>Ukázka rozhraní komunikátoru Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ukázka `IExcelUICommunication` rozhraní se používá v `ExcelUICommunicator` objekt `ExcelAddIn` projektu.  
   
-## <a name="iexceluicommunication-interface"></a>IExcelUICommunication rozhraní  
+## <a name="iexceluicommunication-interface"></a>IExcelUICommunication Interface  
  Toto rozhraní definuje body komunikace mezi `CodedUIExtension`, která se spouští v procesu programový Test uživatelského rozhraní a `ExcelCodedUIAddIn`, která se spouští v [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] procesu.  
   
  `ExcelCodedUIAddinHelper` Obsahuje sestavení `ExcelUICommunicator` třídu, která je odvozena z tohoto rozhraní a používá model objektů aplikace Excel ke zpracování metody.  
@@ -43,6 +38,3 @@ Ukázka `IExcelUICommunication` rozhraní se používá v `ExcelUICommunicator` 
  [Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
  [Ukázka doplňku Excel pro programové testování uživatelského rozhraní](../test/sample-excel-add-in-for-coded-ui-testing.md)   
  [Ukázka rozšíření programového testu UI pro Excel](../test/sample-coded-ui-test-extension-for-excel.md)
-
-
-

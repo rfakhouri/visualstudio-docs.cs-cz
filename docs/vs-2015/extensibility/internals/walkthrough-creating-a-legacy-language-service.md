@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Vytvoření služby starší verze jazyka | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření služby starší verze jazyka | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d80b40aa1db779c233dea846b49dbbc66084015
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 044e9d1102ac5e7415eafdead35c834296621bcb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788984"
 ---
-# <a name="walkthrough-creating-a-legacy-language-service"></a>Návod: Vytvoření služby starší verze jazyka
+# <a name="walkthrough-creating-a-legacy-language-service"></a>Průvodce: Vytvoření služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Použití tříd jazyka spravovaného balíčku framework (MPF) k implementaci služba jazyka v [!INCLUDE[csprcs](../../includes/csprcs-md.md)] je jednoduché. Je třeba VSPackage pro hostování jazyková služba, samotné služby jazyka a analyzátor pro daný jazyk.  
@@ -49,11 +44,11 @@ Použití tříd jazyka spravovaného balíčku framework (MPF) k implementaci s
   
      Můžete použít jakýkoli název, který chcete. Tyto postupy, pomocí zde podrobně předpokládají MyLanguagePackage jako název.  
   
-3.  Vyberte [!INCLUDE[csprcs](../../includes/csprcs-md.md)] jako jazyk a možnost vygenerovat nový soubor klíče. Klikněte na tlačítko **Další**.  
+3.  Vyberte [!INCLUDE[csprcs](../../includes/csprcs-md.md)] jako jazyk a možnost vygenerovat nový soubor klíče. Klikněte na **Další**.  
   
-4.  Zadejte příslušné informace společnosti a balíčku. Klikněte na tlačítko **Další**.  
+4.  Zadejte příslušné informace společnosti a balíčku. Klikněte na **Další**.  
   
-5.  Vyberte **příkazu nabídky**. Klikněte na tlačítko **Další**.  
+5.  Vyberte **příkazu nabídky**. Klikněte na **Další**.  
   
      Pokud není pro podporu fragmenty kódu, stačí kliknutím na tlačítko Dokončit a další krok ignorovat.  
   
@@ -139,4 +134,3 @@ Použití tříd jazyka spravovaného balíčku framework (MPF) k implementaci s
   
 ## <a name="see-also"></a>Viz také  
  [Implementace služby starší verze jazyka](../../extensibility/internals/implementing-a-legacy-language-service1.md)
-

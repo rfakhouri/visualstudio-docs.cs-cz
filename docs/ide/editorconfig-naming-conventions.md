@@ -11,12 +11,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60e7a94acd9fb758c722374b4ef2317cd2043c03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790043"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
@@ -85,7 +85,7 @@ K popisu modifikátory symboly chcete pravidlo pro pojmenování použít, zadej
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot oddělených čárkami.
+Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot oddělených čárkami. Pravidlo pro pojmenování bude porovnávat pouze podpisy, které mají všechny zadané v modifikátory `required_modifiers`. Pokud ji vynecháte, je použita výchozí hodnota je seznam prázdný, to znamená, jsou požadovány pro shodu bez konkrétních parametrů. To znamená, že symbolu modifikátory nemají žádný vliv na tom, zda toto pravidlo se použije.
 
 - `abstract` Nebo `must_inherit`
 - `async`
@@ -134,7 +134,7 @@ Povolené hodnoty této vlastnosti jsou:
 
 - pascal_case
 - camel_case
-- první\_word_upper
+- first\_word_upper
 - všechny\_horní
 - all_lower
 

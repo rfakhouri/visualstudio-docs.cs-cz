@@ -1,14 +1,9 @@
 ---
 title: Upravit a pokračovat | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.enc
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 2cdd4531-7117-4221-a809-8447812de2a1
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a82d3e22eec449e499f845965ad8c838600d9ea3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760687"
 ---
 # <a name="edit-and-continue"></a>Upravit a pokračovat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +37,13 @@ Upravit a pokračovat, je funkce ušetří čas, který umožní vám provádět
   
  Tento oddíl obsahuje následující témata:  
   
- [Postupy: explicitní použití změn kódu](http://msdn.microsoft.com/en-us/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Postupy: Explicitní použití změn kódu](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
- [Postupy: Povolení a zákaz operace Upravit a pokračovat](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Postupy: Povolení a zakázání operace Upravit a pokračovat](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Postupy: Zastavení změn kódu](../debugger/how-to-stop-code-changes.md)  
   
- [Bod provádění](http://msdn.microsoft.com/en-us/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Bod provádění](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -62,6 +57,3 @@ Upravit a pokračovat, je funkce ušetří čas, který umožní vám provádět
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Upravit a pokračovat, ladění, dialogové okno Možnosti](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Základy ladicího programu](../debugger/debugger-basics.md)
-
-
-

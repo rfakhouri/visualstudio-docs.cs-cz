@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Přístup k objektu DTE z rozšíření editoru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Přístup k objektu DTE z rozšíření editoru | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b86f33390068b04d9e54c0022e8adeb77ed4700f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 656ca1e4bfaa37afa3a8da8516e67c33bf315dc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776481"
 ---
-# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Návod: Přístup k objektu DTE z rozšíření editoru
+# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Průvodce: Přístup k objektu DTE z rozšíření editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V balíčcích VSPackage, můžete získat objekt DTE zavoláním <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metoda s typem objektu DTE. V rozšíření Managed Extensibility Framework (MEF), můžete importovat <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> a následně zavolat <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metoda s typem <xref:EnvDTE.DTE>.  
@@ -72,4 +67,3 @@ V balíčcích VSPackage, můžete získat objekt DTE zavoláním <xref:Microsof
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Určení, kdy a kde se má poznámka použít | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Group_
 - _At_
@@ -18,13 +13,13 @@ ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: f149f483f29f4dafb29d0f7fed16a9bf93a59b78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba14fdbc23968fcaf10355f73517ab6cd54f8797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764674"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Určení, kdy a kde se má poznámka použít
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Po podmíněné Poznámka se může vyžadovat další poznámky a určit, že a
 |`_At_(expr, anno-list)`|`expr` je výraz, jehož výsledkem jsou l-hodnota. Poznámky v `anno-list` aplikují i na objekt, který je pojmenován podle `expr`. Pro jednotlivé poznámky v `anno-list`, `expr` interpretována v předběžné podmínce, pokud anotace je interpretován v předběžné podmínce, a pokud podmínka po Poznámka je interpretován po stavu.|  
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` je výraz, jehož výsledkem jsou l-hodnota. Poznámky v `anno-list` aplikují i na objekt, který je pojmenován podle `expr`. Pro jednotlivé poznámky v `anno-list`, `expr` interpretována v předběžné podmínce, pokud anotace je interpretován v předběžné podmínce, a pokud podmínka po Poznámka je interpretován po stavu.<br /><br /> `iter` je název proměnné, která působí na poznámku (inclusive z `anno-list`). `iter` má implicitní typ `long`. Ze zkušební verze jsou skryté identicky pojmenovanou proměnné v ohraničujícím oboru.<br /><br /> `elem-count` je výraz vyhodnocen jako celé číslo.|  
 |`_Group_(anno-list)`|Poznámky v `anno-list` jsou všechny považovány za jakékoli kvalifikátor, které platí pro skupiny anotace, které platí pro jednotlivé poznámky.|  
-|`_When_(expr, anno-list)`|`expr` je výraz, který lze převést na `bool`. Když je nenulová (`true`), poznámky, které jsou určené v `anno-list` jsou považovány za použít.<br /><br /> Ve výchozím nastavení pro jednotlivé poznámky v `anno-list`, `expr` je interpretován jako pomocí vstupní hodnoty, pokud anotace je předpokladem a Poznámka pomocí výstupní hodnoty, pokud je po podmínku. Chcete-li přepsat výchozí nastavení, můžete použít `_Old_` vnitřní při vyhodnocení po podmínky k označení, že má být použit vstupní hodnoty. **Poznámka:** různých poznámek může povolit následkem pomocí `_When_` Pokud proměnlivé hodnoty – například `*pLength`– je zahrnuta, protože Vyhodnocená výsledek `expr` v předběžné podmínce může lišit od jeho Vyhodnocená Výsledkem po podmínku.|  
+|`_When_(expr, anno-list)`|`expr` je výraz, který lze převést na `bool`. Když je nenulová (`true`), poznámky, které jsou určené v `anno-list` jsou považovány za použít.<br /><br /> Ve výchozím nastavení pro jednotlivé poznámky v `anno-list`, `expr` je interpretován jako pomocí vstupní hodnoty, pokud anotace je předpokladem a Poznámka pomocí výstupní hodnoty, pokud je po podmínku. Chcete-li přepsat výchozí nastavení, můžete použít `_Old_` vnitřní při vyhodnocení po podmínky k označení, že má být použit vstupní hodnoty. **Poznámka:**  Různé poznámek může povolit následkem pomocí `_When_` Pokud proměnlivé hodnoty – například `*pLength`– je zahrnuta, protože Vyhodnocená výsledek `expr` v předběžné podmínce může lišit od jeho Vyhodnocená výsledek v podmínce po.|  
   
 ## <a name="see-also"></a>Viz také  
  [Použití poznámek SAL k omezení defektů kódu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
@@ -50,6 +45,3 @@ Po podmíněné Poznámka se může vyžadovat další poznámky a určit, že a
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Vnitřní funkce](../code-quality/intrinsic-functions.md)   
  [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
-
-
-

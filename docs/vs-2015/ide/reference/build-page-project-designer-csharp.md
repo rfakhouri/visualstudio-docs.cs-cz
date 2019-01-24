@@ -1,14 +1,9 @@
 ---
 title: Stránka sestavení, Návrhář projektu (C#) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837176"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805318"
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,13 +35,13 @@ Použití **sestavení** stránku **Návrháře projektu** k určení vlastnost�
  Tyto možnosti umožňují vybrat konfigurace a platformy k zobrazení a úpravě.  
   
 > [!NOTE]
->  Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Proto nejsou tyto možnosti zobrazeny. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+>  Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Proto nejsou tyto možnosti zobrazeny. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Konfigurace**  
  Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Toto nastavení může být **aktivní (ladění)** (Toto je výchozí), **ladění**, **vydání**, nebo **všechny konfigurace**.  
   
  **Platforma**  
- Určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)**. Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [postupy: vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).  
+ Určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)**. Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>Obecné  
  Tyto možnosti umožňují konfigurovat několik nastavení kompilátoru jazyka C#.  
@@ -96,22 +91,22 @@ Použití **sestavení** stránku **Návrháře projektu** k určení vlastnost�
 ## <a name="treat-warnings-as-errors"></a>Zpracovávat upozornění jako chyby  
  Tato nastavení slouží k určení, která upozornění jsou považována za chyby. Vyberte jednu z následujících možností pro označení podmínek pro vrácení chyby, když sestavení narazí na upozornění. Další informace najdete v tématu [/warnaserror (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).  
   
- **None**  
+ **Žádné**  
  Nezpracovává žádná upozornění jako chyby.  
   
  **Specifická upozornění**  
  Zachází s určenými varováními jako s chybami. Více čísel upozornění oddělte čárkou nebo středníkem.  
   
- **Všechny**  
+ **Vše**  
  Zpracuje všechna upozornění jako chyby.  
   
 ## <a name="output"></a>Výstup  
  Následující nastavení se používají ke konfiguraci možností výstupu pro proces sestavení.  
   
  **Výstupní cesta**  
- Určuje umístění výstupních souborů pro tuto konfiguraci projektu. Zadejte cestu k výstupu sestavení v tomto poli, nebo zvolte **Procházet** tlačítko a zadejte cestu. Všimněte si, že cesta je relativní; Pokud zadáte absolutní cestu, bude uložena jako relativní. Výchozí cesta je bin\Debug nebo bin\Release\\. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje umístění výstupních souborů pro tuto konfiguraci projektu. Zadejte cestu k výstupu sestavení v tomto poli, nebo zvolte **Procházet** tlačítko a zadejte cestu. Všimněte si, že cesta je relativní; Pokud zadáte absolutní cestu, bude uložena jako relativní. Výchozí cesta je bin\Debug nebo bin\Release\\. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) vloží sestavení do místa ladění bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky se vloží do umístění, které zadáte. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) vloží sestavení do místa ladění bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky se vloží do umístění, které zadáte. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Soubor dokumentace XML**  
  Určuje název souboru, do které dokumentace se zpracuje komentáře. Další informace najdete v tématu [/DOC (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
@@ -128,6 +123,3 @@ Použití **sestavení** stránku **Návrháře projektu** k určení vlastnost�
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   
  [Možnosti kompilátoru jazyka C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
-
-
-

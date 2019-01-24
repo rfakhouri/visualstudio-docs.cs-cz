@@ -2,7 +2,7 @@
 title: Chyby aplikace Analýzy kódu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -13,13 +13,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0be2af5ccfac6e4bf4c3464abd19405e0daf837a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786537"
 ---
 # <a name="code-analysis-application-errors"></a>Chyby aplikace Analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +59,6 @@ Tato část se odkaz chybové zprávy, které jsou generovány nástroj pro anal
 
 ## <a name="related-sections"></a>Související oddíly
 
-- [Pokyny pro psaní bezpečného kódu](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [Pokyny pro psaní bezpečného kódu](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
 - [Prostředky pro řešení potíží s chybami v nástrojích pro správu životního cyklu aplikací](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: omezení instrumentace na konkrétní knihovny DLL | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Omezení instrumentace na konkrétní knihovny DLL | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
 ms.assetid: 17c5996f-e3d0-4e44-b175-52b401b0f2d5
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 054a281d445f5910e9a2d635bb453dd283425453
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93d2e85455544a52d7ed6e9d49c5e93b5c771a3f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779492"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Postupy: Omezení instrumentace na konkrétní knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Pomocí metody profilace instrumentace můžete omezit shromažďování dat pro
   
     -   Volitelné. Zadejte jakékoli argumenty příkazového řádku, které chcete předat do spustitelného souboru v **argumenty příkazového řádku**. V případě potřeby zadejte pracovní adresář pro aplikaci v **pracovní adresář**.  
   
-    -   Klikněte na tlačítko **Další**.  
+    -   Klikněte na **Další**.  
   
 5.  Zvolte **instrumentace** jako metodu profilace a pak klikněte na tlačítko **Další**.  
   
@@ -77,7 +72,4 @@ Pomocí metody profilace instrumentace můžete omezit shromažďování dat pro
   
 ## <a name="see-also"></a>Viz také  
  [Řízení sběru dat](../profiling/controlling-data-collection.md)   
- [Postupy: Omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
-
-
-
+ [Postupy: Omezení instrumentace na určité funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

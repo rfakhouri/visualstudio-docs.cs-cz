@@ -1,25 +1,20 @@
 ---
 title: Shromažďování dat souběžnosti pro službu pomocí příkazového řádku Profiler | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: afa82e7fab97e4f10ac1080d4ffd8ae77d2e5b71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2764116c6e502af76b9577cf4752a6d3b19f0986
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760109"
 ---
 # <a name="collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Shromažďování dat souběžnosti pro službu pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ Za použití metody souběžnosti z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Připojit ke spuštěné službě rozhraní .NET**|-   [Postupy: připojení Profiler ke službě .NET ke shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Připojit ke spuštěné službě rozhraní .NET**|-   [Jak: Připojení profileru ke službě .NET kvůli shromáždění dat o souběžnosti](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
 |**Přidání dat interakce vrstev**|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Připojit ke spuštěné službě jazyka C/C++**|-   [Postupy: připojení Profiler k nativní službě ke shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Připojit ke spuštěné službě jazyka C/C++**|-   [Jak: Připojení profileru k nativní službě kvůli shromáždění dat o souběžnosti](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
@@ -61,6 +56,3 @@ Za použití metody souběžnosti z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
   
 ## <a name="reference"></a>Odkaz  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)
-
-
-

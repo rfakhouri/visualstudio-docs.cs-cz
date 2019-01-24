@@ -1,14 +1,9 @@
 ---
 title: Propojení úkolů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
 - VC.Project.VCLinkerTool.LinkStatus
@@ -35,13 +30,13 @@ ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f2ca9c721567d89bddad4a9ee61639bd3a82f10d
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+manager: jillfra
+ms.openlocfilehash: 4575516304862b4d50060a101a08a74f88db4597
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768511"
 ---
 # <a name="link-task"></a>Úloha odkazu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +117,7 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
    Povolí podrobnější souborů sledování k zachycení odkazu přírůstkové od chování. Vždy vrátí `true`.  
   
-- **Vlastnost BaseAddress**  
+- **BaseAddress**  
   
    Volitelné **řetězec** parametru.  
   
@@ -182,7 +177,7 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
   - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: žádné**  
   
-  - **MTAThreadingAttribute** - **: MTA**  
+  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
   - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
@@ -600,7 +595,7 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
    Další informace najdete v tématu `REF` argument v [/OPT (optimalizace)](http://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
   
-- **Výstupní soubor**  
+- **OutputFile**  
   
    Volitelné **řetězec** parametru.  
   
@@ -628,7 +623,7 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
    Další informace najdete v tématu [/ALLOWBIND (zabránit DLL vazby)](http://msdn.microsoft.com/library/30e37e24-12e4-407e-988a-39d357403598).  
   
-- **Profil**  
+- **Profile**  
   
    Volitelné **logická** parametru.  
   
@@ -674,7 +669,7 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
    Další informace najdete v tématu [/align (zarovnání oddílů)](http://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
   
-- **Setchecksum –**  
+- **SetChecksum**  
   
    Volitelné **logická** parametru.  
   
@@ -756,17 +751,17 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
   - **Konzola** -   **/Subsystem: Console**  
   
-  - **Windows** -   **/Subsystem: Windows**  
+  - **Windows** - **/SUBSYSTEM:WINDOWS**  
   
   - **Nativní** - **souboru**  
   
   - **Aplikace EFI** - **/SUBSYSTEM:EFI_APPLICATION**  
   
-  - **Ovladač spouštěcí služby EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
   - **PAMĚŤ ROM EFI** - **/SUBSYSTEM:EFI_ROM**  
   
-  - **Modul Runtime EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
   - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   
@@ -934,6 +929,3 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
-
-
-

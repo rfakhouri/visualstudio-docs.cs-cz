@@ -1,14 +1,9 @@
 ---
 title: Seznam úkolů, prostředí, dialogové okno Možnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
 - VS.ToolsOptionsPag.Environment.Task_List
@@ -28,13 +23,13 @@ ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 17404838fc567d37f23c683f6b8f83b7529a3dc8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 94f0fc19c84a5e86dbfff27a88b179f6a9bfb566
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252535"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795481"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Seznam úloh, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -83,6 +78,3 @@ Tato stránka možností umožňuje přidat, odstranit a změnit tokeny komentá
  [Pomocí seznamu úkolů](../../ide/using-the-task-list.md)   
  [Nastavení záložek v kódu](../../ide/setting-bookmarks-in-code.md)   
  [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
-
-
-

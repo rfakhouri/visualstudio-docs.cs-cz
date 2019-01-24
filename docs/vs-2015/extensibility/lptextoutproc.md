@@ -1,14 +1,9 @@
 ---
 title: LPTEXTOUTPROC | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28a48c0d2dbc89295d6c1f8e900ce6219e2c9313
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5006fb95b2afbe67fd4420caff5885322067eacd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779431"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|Odeslat s řetězec žádné zprávy.|  
 |`SCC_MSG_STARTCANCEL`|Začne, zobrazení **zrušit** tlačítko.|  
 |`SCC_MSG_STOPCANCEL`|Zastaví zobrazování **zrušit** tlačítko.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Požádá integrovaného vývojového prostředí, pokud je operace na pozadí zruší: IDE vrátí `SCC_MSG_RTN_CANCEL` Pokud byla operace zrušena; v opačném případě vrátí `SCC_MSG_RTN_OK`. `display_string` Parametr je typovaná jako [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pokud je operace na pozadí zruší požádá integrované vývojové prostředí: Vrátí IDE `SCC_MSG_RTN_CANCEL` Pokud byla operace zrušena; v opačném případě vrátí `SCC_MSG_RTN_OK`. `display_string` Parametr je typovaná jako [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Poskytuje integrované vývojové prostředí o souboru před načtením ze správy verzí. `display_string` Parametr je typovaná jako [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Poskytuje integrované vývojové prostředí o souboru po jeho načtení ze správy verzí. `display_string` Parametr je typovaná jako [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Instruuje integrované vývojové prostředí aktuálního stavu operaci na pozadí. `display_string` Parametr je typovaná jako [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
@@ -147,4 +142,3 @@ LONG SendStatusMessage(
 ## <a name="see-also"></a>Viz také  
  [Funkce zpětného volání implementované integrovaným vývojovým prostředím](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)
-

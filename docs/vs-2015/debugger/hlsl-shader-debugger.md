@@ -1,27 +1,22 @@
 ---
 title: Ladicí program shaderu HLSL | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.shaderviewer
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2c79491703ba2e20ae7bbb8c1303cfd5496a686
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aebe99754b19579bbc3475e0eb9a6941da43e558
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763948"
 ---
 # <a name="hlsl-shader-debugger"></a>Ladicí program shaderu HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže por
   
   Nicméně ladicí program HLSL poskytuje lepší ladění více odpovídající CPU, které by jinak nebylo možné.  
   
-## <a name="hlsl-shader-edit--apply"></a>Použít & Upravit HLSL Shader  
+## <a name="hlsl-shader-edit--apply"></a>HLSL Shader Edit & Apply  
  Ladicí program shaderu HLSL nepodporuje Upravit & pokračovat stejným způsobem, který provede ladicí program procesoru, protože spouštěcí model GPU neumožňuje shaderu stavu vrátit. Místo toho podporuje ladicí program HLSL & použít, což vám umožní upravit HLSL zdrojové soubory a klikněte na tlačítko Upravit **použít** se znova vygenerovat snímek projevily provedené změny. Kód shaderu. změny se ukládají do samostatného souboru zachovat integritu vašeho projektu původní zdrojový soubor HLSL, ale jakmile budete spokojeni se změnami můžete **zkopírovat do...** pro kopírování změny do svého projektu. Pomocí této funkce můžete rychle iterovat kód shaderu, který obsahuje chyby a eliminovat opětovné nákladnou sestavení a zachycení kroky z vaší HLSL ladění pracovního postupu.  
   
 ## <a name="hlsl-disassembly"></a>Převod do strojového jazyka HLSL  
@@ -84,6 +79,3 @@ Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže por
  [Návod: Chybějící objekty z důvodu použití funkce Vertex Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Návod: Ladění chyb stínováním při vykreslování](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
  [Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
-title: 'Postupy: vytvoření shaderu textury stupňů šedé | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření shaderu textury stupňů šedé | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 046ae16670edaebb44986dee34ea086b4129a0a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7d35347a4b656f9610097bc8dfe03e7c8488c01
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922338"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779604"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Postupy: Vytvoření shaderu textury stupňů šedé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
   
 #### <a name="to-create-a-grayscale-texture-shader"></a>K vytvoření shaderu textury stupňů šedé  
   
-1. Vytvoření shaderu základní textury, jak je popsáno v [postupy: vytvoření shaderu základní textury](../designers/how-to-create-a-basic-texture-shader.md).  
+1. Vytvoření shaderu základní textury, jak je popsáno v [jak: Vytvoření základní textury shaderu](../designers/how-to-create-a-basic-texture-shader.md).  
   
 2. Odpojit **RGB** z terminálu **vzorek textury** uzlu z **RGB** z terminálu **konečnou barvu** uzlu. V **vyberte** režimu, zvolte **RGB** z terminálu **vzorek textury** uzel a klikněte na tlačítko **přerušit odkazy**. Díky tomu místo pro uzel, který je přidán v dalším kroku.  
   
@@ -56,11 +51,8 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
  Určité tvary můžou poskytovat lepší verze Preview pro některé shadery. Další informace o zobrazení náhledu shadery v Návrháři shaderu naleznete v tématu [návrháře shaderu](../designers/shader-designer.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Postupy: exportování shaderu](../designers/how-to-export-a-shader.md)   
+ [Postupy: Použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)   
  [Editor obrázků](../designers/image-editor.md)   
  [Návrhář shaderů](../designers/shader-designer.md)   
  [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)
-
-
-

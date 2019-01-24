@@ -1,28 +1,23 @@
 ---
-title: 'Postupy: připojení zobrazení k datům dokumentů | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Připojení zobrazení k datům dokumentů | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - attach views to document data
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a872cf3ebfebf68c01256a0a8c42ebfcfeb02dd5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 671a243f65c68660c98c3730ca90568882a824d6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781540"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755608"
 ---
-# <a name="how-to-attach-views-to-document-data"></a>Postupy: připojení zobrazení k datům dokumentů
+# <a name="how-to-attach-views-to-document-data"></a>Postupy: Připojení zobrazení k datům dokumentů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud máte nové zobrazení dokumentů, je možné připojit k existující objekt dat dokumentu.  
@@ -52,4 +47,3 @@ Pokud máte nové zobrazení dokumentů, je možné připojit k existující obj
 ## <a name="see-also"></a>Viz také  
  [Podpora více zobrazení dokumentů](../extensibility/supporting-multiple-document-views.md)   
  [Data dokumentu a zobrazení dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md)
-

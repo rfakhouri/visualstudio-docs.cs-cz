@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Použití diagnostiky grafiky k ladění výpočetního shaderu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 55f0b9de879011110d8df46c0e4d738265b0fa34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 001827c1b37596228221d6b4285abb2915ec5b8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788714"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Průvodce: Použití diagnostiky grafiky k ladění výpočetního shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak použít nástrojů Diagnostika grafiky sady Visual Studio k vyšetření výpočetního shaderu, který generuje nesprávné výsledky.  
@@ -96,7 +91,7 @@ Tento návod ukazuje, jak použít nástrojů Diagnostika grafiky sady Visual St
   
     ![Ladění výpočetního shaderu IntegrateCS. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Chcete zastavit ladění výpočetního shaderu na **ladění** nástrojů, zvolte **Zastavit ladění** (klávesnice: Shift + F5).  
+4. Chcete zastavit ladění výpočetního shaderu na **ladění** nástrojů, zvolte **Zastavit ladění** (klávesnice: SHIFT + F5).  
   
 5. Dále vyberte druhou `Dispatch` události a spusťte ladění výpočetního shaderu, stejně jako v předchozím kroku.  
   
@@ -115,6 +110,3 @@ Tento návod ukazuje, jak použít nástrojů Diagnostika grafiky sady Visual St
    V tomto scénáři protože jsou výpočetní shadery kompilovány za běhu, je možné pouze restartovat aplikaci po provedení změn, abyste viděli, jak ovlivňují simulaci. Nemusíte aplikaci znovu vytvořit. Při spuštění aplikace zjistíte, že simulace nyní pracuje správně.  
   
    ![Simulované fluid pracuje správně. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
-
-
-

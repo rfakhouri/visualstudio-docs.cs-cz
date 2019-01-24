@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Úprava hodnoty registru | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c41b54ea075415dac7114413f9cdc15cc6a07a12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798337"
 ---
 # <a name="how-to-edit-a-register-value"></a>Postupy: Úprava hodnoty registru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,8 +49,3 @@ Okno registrů je k dispozici pouze v případě, že je povoleno ladění úrov
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-

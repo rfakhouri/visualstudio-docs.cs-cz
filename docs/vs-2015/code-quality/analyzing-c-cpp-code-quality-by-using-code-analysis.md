@@ -1,14 +1,9 @@
 ---
 title: Analýza kvality kódu C / C++ pomocí nástroje Analýza kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, running
@@ -21,13 +16,13 @@ ms.assetid: 03b8b47a-e9d8-4692-835f-2d22ec6c76a4
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 130bd8f4507e59ec9a5b86352877f8e000745492
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7820947921e584d96d7f9e7299b70410b3d0587
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780136"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764434"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Analýza kvality kódu C/C++ pomocí nástroje Analýza kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Váš kód C/C++ lze zvýšit pomocí analýzy kódu v sadě Visual Studio můž
 |||  
 |-|-|  
 |[Přehled Analýzy kódu pro C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)|Další informace o funkcích nástroje Analýza kódu.|  
-|[Rychlé zahájení: Analýza kódu pro C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Naučte se základy analýzy kódu pro C/C++.|  
+|[Rychlý Start: Analýza kódu pro C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Naučte se základy analýzy kódu pro C/C++.|  
 |[Použití sad pravidel k určování pravidel C++ pro spuštění](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)|Zadejte pravidla pro spuštění v projektu nebo řešení.|  
 |[Použití kontrolních mechanismů C++ Core Guidelines](../code-quality/using-the-cpp-core-guidelines-checkers.md)|Do projektu přidejte tyto moduly pro kontrolu podle dokumentu C++ Core Guidelines.|  
 |[Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|Popisuje konfiguraci nastavení pro analýzu kódu.|  
@@ -51,6 +46,3 @@ Váš kód C/C++ lze zvýšit pomocí analýzy kódu v sadě Visual Studio můž
 ## <a name="see-also"></a>Viz také  
  [Analýza kvality aplikace](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: ProjectItem – Element (šablony sady Visual Studio položku) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798284"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem – element (šablony položek sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Určuje soubor, který je součástí šablony položky.
 >  `ProjectItem` Element přijímá různé atributy v závislosti na tom, jestli je šablona pro projekt nebo položku. Toto téma vysvětluje, `ProjectItem` – element pro položku. Pro vysvětlení, `ProjectItem` – element pro šablony projektů, naleznete v tématu [ProjectItem – Element (šablony projektů Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
  \<Vstemplate – >  
- \<TemplateContent – >  
+ \<TemplateContent>  
  \<ProjectItem – >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -70,7 +65,7 @@ Určuje soubor, který je součástí šablony položky.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateContent –](../extensibility/templatecontent-element-visual-studio-templates.md)|Určuje obsah značek šablony.|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Určuje obsah značek šablony.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  
@@ -86,7 +81,7 @@ Určuje soubor, který je součástí šablony položky.
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Když je vytvořena položka z této šablony, názvu souboru se podle zadaný název uživatele v **přidat novou položku** dialogové okno. To je užitečné při vytváření šablon položek s více soubory. Další informace najdete v tématu [postupy: vytváření šablon položek vícesouborové](../ide/how-to-create-multi-file-item-templates.md) a [parametry šablony](../ide/template-parameters.md).  
+ Když je vytvořena položka z této šablony, názvu souboru se podle zadaný název uživatele v **přidat novou položku** dialogové okno. To je užitečné při vytváření šablon položek s více soubory. Další informace najdete v tématu [jak: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md) a [parametry šablony](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje metadata pro šablony pro standardní položky [!INCLUDE[csprcs](../includes/csprcs-md.md)] třídy.  
@@ -110,6 +105,5 @@ Určuje soubor, který je součástí šablony položky.
 ## <a name="see-also"></a>Viz také  
  [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)   
- [Postupy: vytváření šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md)   
+ [Postupy: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md)   
  [Parametry šablony](../ide/template-parameters.md)
-

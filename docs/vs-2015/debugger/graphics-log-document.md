@@ -1,14 +1,9 @@
 ---
 title: Dokumentu protokolu grafiky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.vsglog.error
 - vs.graphics.experiment
@@ -17,13 +12,13 @@ ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 097f431446ed2148e2a61c6f85266843fe7ada44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f1d5d706bb3ce738fc8c820e6ffd0600b9a98ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797791"
 ---
 # <a name="graphics-log-document"></a>Dokument grafických protokolů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Dokumentu protokol grafiky je záznam událostí grafiky, ke kterým došlo, kdy
 ## <a name="playback-machine"></a>Počítač pro přehrávání  
  Zobrazí také v pravém horním rohu **seznam snímků** je **počítač pro přehrávání**. Počítač pro přehrávání je počítač nebo zařízení, které slouží k přehrání událostí grafiky z grafického protokolu souboru během novější relace diagnostiky grafiky. Pomocí jiného zařízení místo svého vývojového počítače k přehrání zachycené události může přesněji reprodukovat spouštěcí prostředí, ve kterém dochází k problému – například můžete použít počítač, který má jiný grafický hardware nebo ovladače než ty, které používá vývojovém počítači, nebo jiných typů zařízení, například tablety Windows RT založené na ARM nebo zařízení Windows Phone.  
   
- Informace o tom, jak určit počítač pro přehrávání, naleznete v tématu [postupy: Změna počítače pro přehrávání diagnostiky grafiky](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Informace o tom, jak určit počítač pro přehrávání, naleznete v tématu [jak: Změnit počítač pro přehrávání diagnostiky grafiky](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="graphics-log-summary-information"></a>Souhrnné informace protokolu grafiky  
  Když soubor protokolu grafiky je aktivní dokument **vlastnosti** okno zobrazuje informace o prostředí, jehož hostitelem relace zachycení diagnostiky grafiky. Zobrazí se několik kategorií informací.  
@@ -77,14 +72,14 @@ Dokumentu protokol grafiky je záznam událostí grafiky, ke kterým došlo, kdy
 |**Zobrazení paměti**|Velikost paměti, která je nainstalovaná na grafický adaptér.|  
 |**Název ovladače**|Název ovladače grafického adaptéru.|  
 |**Verze ovladače**|Verze ovladače grafického adaptéru.|  
-|**Jméno**|Název grafického adaptéru.|  
+|**Název**|Název grafického adaptéru.|  
   
  **Soubor experimentu**  
  Obsahuje informace o souboru experiment, který je spojen s relace zachytávání.  
   
 |Vlastnost|Popis|  
 |--------------|-----------------|  
-|**Cesta**|Cestu k souboru .vsglog. **Poznámka:** pod starší verze zachycení, tato vlastnost se nepoužívá.|  
+|**Cesta**|Cestu k souboru .vsglog. **Poznámka:**  V rámci starší verze zachycení tato vlastnost se nepoužívá.|  
   
  **Informace o modulu**  
  Zobrazuje název a verze dynamické knihovny (DLL), která byla načtena aplikace během relace zachycení.  
@@ -121,7 +116,4 @@ Dokumentu protokol grafiky je záznam událostí grafiky, ke kterým došlo, kdy
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Chybějící objekty z důvodu použití funkce Vertex Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Návod: Ladění chyb při vykreslování způsobených stínováním](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)
-
-
-
+ [Návod: Ladění chyb při vykreslování, které jsou způsobené stínováním](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

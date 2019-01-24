@@ -1,14 +1,9 @@
 ---
 title: Fragmenty kódu jazyka Visual C# | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787102"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kódu v jazyce Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Fragmenty kódu jsou předdefinované fragmenty kódu, které můžete rychle vk
 |checked|Vytvoří [zaškrtnutí](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) bloku.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
 |třída|Vytvoří deklaraci třídy.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|  
 |konstruktoru|Vytvoří konstruktor pro třídu obsahující.|Uvnitř třídy.|  
-|SH|Vytvoření volání <xref:System.Console.WriteLine%2A>.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
+|cw|Vytvoření volání <xref:System.Console.WriteLine%2A>.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
 |do|Vytvoří [proveďte](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` smyčky.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
 |else|Vytvoří [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2) bloku.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
 |enum|Vytvoří [výčtu](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c) deklarace.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|  
@@ -58,7 +53,7 @@ Fragmenty kódu jsou předdefinované fragmenty kódu, které můžete rychle vk
 |foreach|Vytvoří [foreach](http://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec) smyčky.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
 |Díky|Vytvoří [pro](http://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8) smyčky této dekrementuje proměnnou smyčky po každé iteraci.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
 |if|Vytvoří [Pokud](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2) bloku.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
-|Indexer|Vytvoří deklaraci indexeru.|Uvnitř třídy nebo struktury.|  
+|indexer|Vytvoří deklaraci indexeru.|Uvnitř třídy nebo struktury.|  
 |rozhraní|Vytvoří [rozhraní](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) deklarace.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|  
 |vyvolání|Vytvoří blok, který bezpečně vyvolá událost.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
 |iterátor|Vytvoří iterátor.|Uvnitř třídy nebo struktury.|  
@@ -83,10 +78,7 @@ Fragmenty kódu jsou předdefinované fragmenty kódu, které můžete rychle vk
 ## <a name="see-also"></a>Viz také  
  [Funkce fragmentu kódu](../ide/code-snippet-functions.md)   
  [Fragmenty kódu](../ide/code-snippets.md)   
- [Postupy: vytvoření nové fragment kódu s náhradou](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Postupy: Vytvoření nové fragment kódu s náhradou](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Parametry šablony](../ide/template-parameters.md)   
- [Postupy: použití příkazu Obklopit s fragmenty kódu](../ide/how-to-use-surround-with-code-snippets.md)   
- [Postupy: Obnovení fragmentů kódu refaktoringu jazyka C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Postupy: Použití příkazu Obklopit s fragmenty kódu](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Postupy: Obnovení C# fragmentů kódu refaktoringu](../ide/how-to-restore-csharp-refactoring-snippets.md)

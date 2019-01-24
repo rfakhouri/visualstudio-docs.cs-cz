@@ -1,29 +1,24 @@
 ---
-title: 'Návod: Použití nástroje MSBuild | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Použití nástroje MSBuild | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792217"
 ---
-# <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
+# <a name="walkthrough-using-msbuild"></a>Průvodce: Použití nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -247,10 +242,10 @@ $(PropertyName)
  Téměř všechny elementy MSBuild může mít atribut podmínku. Další informace o použití atributu podmínky najdete v článku [podmínky](../msbuild/msbuild-conditions.md).  
   
 ### <a name="reserved-properties"></a>Rezervované vlastnosti  
- Nástroj MSBuild rezervuje některé názvy vlastností k ukládání informací o souboru projektu a binární soubory nástroje MSBuild. MSBuildToolsPath je příkladem rezervované vlastnosti. Rezervované vlastnosti je odkazováno pomocí zápisu $ jakékoli jiné vlastnosti. Další informace najdete v tématu [postupy: odkazování na název nebo umístění souboru projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) a [MSBuild vyhrazené a známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Nástroj MSBuild rezervuje některé názvy vlastností k ukládání informací o souboru projektu a binární soubory nástroje MSBuild. MSBuildToolsPath je příkladem rezervované vlastnosti. Rezervované vlastnosti je odkazováno pomocí zápisu $ jakékoli jiné vlastnosti. Další informace najdete v tématu [jak: Odkazování na název nebo umístění souboru projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) a [MSBuild vyhrazené a známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Proměnné prostředí  
- Proměnné prostředí v souborech projektu může odkazovat stejným způsobem, jak vlastnosti sestavení. Například použít proměnné prostředí PATH v souboru projektu, použijte příkaz $(Path). Obsahuje-li projekt definici vlastnosti, který má stejný název jako proměnné prostředí, přepíše vlastnost v projektu hodnotu proměnné prostředí. Další informace najdete v tématu [postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Proměnné prostředí v souborech projektu může odkazovat stejným způsobem, jak vlastnosti sestavení. Například použít proměnné prostředí PATH v souboru projektu, použijte příkaz $(Path). Obsahuje-li projekt definici vlastnosti, který má stejný název jako proměnné prostředí, přepíše vlastnost v projektu hodnotu proměnné prostředí. Další informace najdete v tématu [jak: Použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="setting-properties-from-the-command-line"></a>Nastavení vlastností z příkazového řádku  
  Vlastnosti mohou být definovány v příkazovém řádku pomocí přepínače příkazového řádku /property nebo /p. Vlastnost hodnoty přijatých z příkazového řádku přepisují hodnoty vlastností nastavené v proměnné prostředí a souboru projektu.  
@@ -408,7 +403,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- Přidá všechny soubory s příponou "JPEG" ve složce Image a všechny její podsložky do typu položky fotografie. Další příklady najdete v tématu [postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
+ Přidá všechny soubory s příponou "JPEG" ve složce Image a všechny její podsložky do typu položky fotografie. Další příklady najdete v tématu [jak: Výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
   
  Všimněte si, jak jsou deklarovány položky se přidají do typu položky. Například  
   
@@ -429,7 +424,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- Přidá všechny soubory s příponou"cs" položku kompilace typu s výjimkou souborů, jejichž názvy obsahují řetězec "Designer". Další příklady najdete v tématu [postupy: vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Přidá všechny soubory s příponou"cs" položku kompilace typu s výjimkou souborů, jejichž názvy obsahují řetězec "Designer". Další příklady najdete v tématu [jak: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  Atribut vyloučení ovlivňuje pouze položky přidané v atributu Include v prvku položky, která obsahuje oba. Například  
   
@@ -582,10 +577,8 @@ $(PropertyName)
    Všimněte si, že se tato metadata v této syntaxe nezpůsobí dávkování.  
   
 ## <a name="whats-next"></a>Co se chystá?  
- Zjistěte, jak vytvořit jednoduchý projekt jeden krok souborů najednou, vyzkoušejte si [návod: vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Zjistěte, jak vytvořit jednoduchý projekt jeden krok souborů najednou, vyzkoušejte si [názorný postup: Vytváření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ## <a name="see-also"></a>Viz také
 [Přehled nástroje MSBuild](msbuild.md)  
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)
-
-

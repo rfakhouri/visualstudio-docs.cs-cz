@@ -1,14 +1,9 @@
 ---
 title: '&lt;Řetězce&gt; – Element (zaváděcí nástroj) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
 - MSBuild.GenerateBootstrapper.ProductCultureNotFound
@@ -23,13 +18,13 @@ ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 3bd559054202d59fd4ca035b7d72cd89a872c544
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177356"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793312"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Řetězce&gt; – Element (zaváděcí nástroj)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Definuje lokalizované řetězce pro názvy produktů, názvů balíčků a chyb
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Název řetězce.|  
+|`Name`|Povinný parametr. Název řetězce.|  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu určuje všechny anglické řetězce pro [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Instalační služby.  
@@ -83,6 +78,3 @@ Definuje lokalizované řetězce pro názvy produktů, názvů balíčků a chyb
   
 ## <a name="see-also"></a>Viz také  
  [\<Balíček > – Element](../deployment/package-element-bootstrapper.md)
-
-
-

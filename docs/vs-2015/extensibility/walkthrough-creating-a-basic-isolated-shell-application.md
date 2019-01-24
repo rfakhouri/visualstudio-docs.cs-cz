@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Vytvoření základní izolované aplikace prostředí | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření základní aplikace prostředí izolované | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777315"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776206"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Návod: Vytvoření základní aplikace izolovaného prostředí
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Průvodce: Vytváření základní aplikace izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak vytvořit řešení izolovaného prostředí, přizpůsobit panel nástrojů nápovědy a vytvořit instalační program, který nainstaluje izolovaného prostředí.  
@@ -120,7 +115,7 @@ Tento návod ukazuje, jak vytvořit řešení izolovaného prostředí, přizpů
   
 2.  Zrušte komentář u následujícího řádku:  
   
-     [$RootKey$ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3.  Znovu sestavte řešení a spustit ladění izolovaného prostředí. Otevřete soubor XML, třeba \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Ověřte, že nejsou barevně zvýrazněné klíčová slova jazyka XML v souboru a zadejte tento text "<" na řádku nelze vyvolat popisy XML.  
   
@@ -211,7 +206,7 @@ Tento návod ukazuje, jak vytvořit řešení izolovaného prostředí, přizpů
   
     2.  DebuggerProxy.dll  
   
-    3.  Debuggerproxy.dll.manifest měly  
+    3.  DebuggerProxy.dll.manifest  
   
     4.  MyVSShellStub.pkgdef  
   
@@ -221,7 +216,7 @@ Tento návod ukazuje, jak vytvořit řešení izolovaného prostředí, přizpů
   
     7.  Splash.bmp  
   
-5.  Klikněte na tlačítko **přidat výstupy projektu** tlačítko a přidejte **MyVSShellStub/primární výstup**. Klikněte na tlačítko **OK**.  
+5.  Klikněte na tlačítko **přidat výstupy projektu** tlačítko a přidejte **MyVSShellStub/primární výstup**. Klikněte na **OK**.  
   
 6.  V levém podokně v části **cílový počítač**, klikněte pravým tlačítkem na **Fabrikam Hudba Editor [INSTALLDIR]** uzlu a přidejte **novou složku** s názvem **rozšíření** .  
   
@@ -253,7 +248,7 @@ Tento návod ukazuje, jak vytvořit řešení izolovaného prostředí, přizpů
   
 18. V **co chcete najít?** podokně zvolte **záznam v registru** v rozevíracím seznamu a klikněte na **Další**.  
   
-19. V **jak chcete hledat?** vyberte **HKEY_LOCAL_MACHINE** jako kořenový klíč registru. Zadejte **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pro 64bitové systémy nebo **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pro 32bitové systémy a zadejte  **Nainstalujte** jako hodnotu registru. Klikněte na tlačítko **Další**.  
+19. V **jak chcete hledat?** vyberte **HKEY_LOCAL_MACHINE** jako kořenový klíč registru. Zadejte **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pro 64bitové systémy nebo **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pro 32bitové systémy a zadejte  **Nainstalujte** jako hodnotu registru. Klikněte na **Další**.  
   
 20. V **co chcete udělat s hodnotou?** podokně zadejte **vyžaduje Visual Studio 2015 izolovaného prostředí Redistributable k instalaci tohoto produktu.** zobrazení textu a klikněte na **Dokončit**.  
   
@@ -265,4 +260,3 @@ Tento návod ukazuje, jak vytvořit řešení izolovaného prostředí, přizpů
   
 ## <a name="testing-the-installation-program"></a>Testování instalačního programu  
  Pokud chcete otestovat nastavení, zkopírujte soubor setup.exe na jiný počítač a spusťte spustitelný soubor instalace. Je třeba možné spouštět aplikace izolovaného prostředí.
-

@@ -1,25 +1,20 @@
 ---
 title: Ladicí program Windows | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9a49df0f355672a3e49a61c0cfe51c02ba96e4be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795055"
 ---
 # <a name="debugger-windows"></a>Ladicí program Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Můžete otevřít většinu oknech ladicího programu během ladění programu.
 |Dynamický vizuální strom|-|[Kontrola vlastností XAML při ladění](../debugger/inspect-xaml-properties-while-debugging.md)|  
 |Live Property Explorer|-|[Kontrola vlastností XAML při ladění](../debugger/inspect-xaml-properties-while-debugging.md)|  
 |Zásobníky volání|CTRL + ALT + C|[Postupy: Použití okna Zásobník volání](../debugger/how-to-use-the-call-stack-window.md)|  
-|Vlákna|CTRL + ALT + H|[Postupy: Použití okna vláken](../debugger/how-to-use-the-threads-window.md)|  
+|Vlákna|CTRL + ALT + H|[Postupy: Použití okna Vlákna](../debugger/how-to-use-the-threads-window.md)|  
 |Moduly|CTRL + ALT + U|[Postupy: Použití okna Moduly](../debugger/how-to-use-the-modules-window.md)|  
 |Procesy|CTRL + ALT + Z|[Ladění vláken a procesů](../debugger/debug-threads-and-processes.md)|  
 |Paměť|CTRL + ALT + M, (1, 2, 3, 4)|[Okna paměti](../debugger/memory-windows.md)|  
@@ -56,8 +51,3 @@ Můžete otevřít většinu oknech ladicího programu během ladění programu.
   
 ## <a name="see-also"></a>Viz také  
  [Základy ladicího programu](../debugger/debugger-basics.md)
-
-
-
-
-

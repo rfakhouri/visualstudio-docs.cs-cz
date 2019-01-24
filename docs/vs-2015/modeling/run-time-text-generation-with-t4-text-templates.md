@@ -1,12 +1,9 @@
 ---
 title: Generování textu za běhu pomocí textových šablon T4 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9fabefec48ee44e58754f360364491df1a14961d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777424"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Dědičnost mezi návrhových textových šablon  
  Můžete sdílet obsah mezi šablonami běhu napsáním základní třídy šablony, která můžou být abstraktní. Použití `inherits` parametr `<@#template#>` směrnice odkazovat na jiné šablony třídy modulu runtime.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Model dědičnosti: fragmenty v základní metody  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Model dědičnosti: Fragmenty v základních metod  
  Ve vzoru použít v následujícím příkladu Všimněte si, že následující body:  
   
 - Základní třída `SharedFragments` metod v rámci bloky s funkcí třídy definuje `<#+ ... #>`.  
@@ -348,7 +345,7 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>Model dědičnosti: Základní textu  
+#### <a name="inheritance-pattern-text-in-base-body"></a>Model dědičnosti: Text v základní text  
  V tomto alternativním přístupem k použití šablony dědičnosti je definován hromadné text do základní šablony. Odvozené šablony poskytují data a fragmenty textu, který se vejde do základního obsahu.  
   
  **AbstractBaseTemplate1.tt:**  
@@ -424,14 +421,11 @@ End material for DerivedTemplate1.
 ```  
   
 ## <a name="related-topics"></a>Související témata  
- Šablony doby návrhu: Pokud chcete použít šablonu pro generování kódu, který se stane součástí aplikace, najdete v článku [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+ Šablony doby návrhu: Pokud chcete použít šablonu pro generování kódu, který bude součástí vaší aplikace, najdete v článku [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
  Modul runtime šablony lze použít v jakékoli aplikaci kde určit tyto šablony a jejich obsah v době kompilace. Ale v případě, že chcete napsat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která generuje text z šablon, které změnit za běhu, naleznete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md)   
- [T4 principy: Předzpracované textové šablony podle Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Principy T4: Oleg Sych Předzpracované textové šablony](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)

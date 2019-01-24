@@ -1,22 +1,20 @@
 ---
 title: Typové a netypové datové sady | Dokumentace Microsoftu
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790815"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typové a netypové datové sady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +40,3 @@ Typové datové sady je datová sada, která je nejprve odvozené od základní 
  I když typové datové sady mají celou řadu výhod, je užitečné v mnoha případech netypovou datovou sadu. Nejobvyklejšími scénář je, pokud není k dispozici pro datovou sadu bez schématu. Tato situace může nastat, například pokud vaše aplikace pracuje s komponenty, která vrací třídu dataset, ale neznáte předem co je jeho strukturu. Podobně jsou časy při práci s daty, která nemá žádné statické a předvídatelná struktura. V takovém případě je nepraktické používat typové datové sady, protože je potřeba znovu generovat třídy typové datové sady s každou změnou datové struktury.  
   
  Obecně platí mnohokrát se vám při můžete vytvořit datové sady dynamicky bez nutnosti schéma k dispozici. V takovém případě datová sada je jednoduše vhodnou strukturu ve kterém můžete zachovat informace, jako data může být reprezentována způsobem, relační. Ve stejnou dobu můžete využít výhod funkcí datové sady, například možnost serializace informací o předat jiným procesem nebo vypsat soubor XML.
-

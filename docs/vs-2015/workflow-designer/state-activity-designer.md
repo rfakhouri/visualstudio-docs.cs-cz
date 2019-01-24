@@ -1,11 +1,8 @@
 ---
 title: Návrhář aktivity stavu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.State.UI
@@ -13,13 +10,13 @@ ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cc6d0d13b1bb924847c52ae8e41e2b859d2e7b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9cb5185bdef35d383e92082160e9f4b1dda5451f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184012"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786079"
 ---
 # <a name="state-activity-designer"></a>Návrhář aktivity State
 A <xref:System.Activities.Statements.State> představuje stavu, ve kterém může být stavového stroje v.  
@@ -38,6 +35,6 @@ A <xref:System.Activities.Statements.State> představuje stavu, ve kterém můž
 |<xref:System.Activities.Statements.State.Transitions%2A>|False|Obsahuje seznam možných přechodů, které pocházejí z <xref:System.Activities.Statements.State>. Každá položka v seznamu obsahuje odkaz na přidruženou <xref:System.Activities.Statements.Transition> a cíl <xref:System.Activities.Statements.State>. Kliknutím na odkaz se přepnout návrháře na rozbalené zobrazení <xref:System.Activities.Statements.Transition> nebo <xref:System.Activities.Statements.State>.|  
   
 ## <a name="see-also"></a>Viz také  
- [Stavový stroj StateMachine](../workflow-designer/statemachine-activity-designer.md)   
+ [StateMachine](../workflow-designer/statemachine-activity-designer.md)   
  [FinalState](../workflow-designer/finalstate-activity-designer.md)   
  [Transition](../workflow-designer/transition-activity-designer.md)

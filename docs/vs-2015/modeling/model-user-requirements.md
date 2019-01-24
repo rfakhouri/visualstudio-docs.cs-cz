@@ -1,12 +1,9 @@
 ---
 title: Modelování uživatelských požadavků | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,18 +12,18 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03f1fe9f2cb159e4a6d6db5ded46907b5944471e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758435"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživatelů ve vytvoření diagramů o svých aktivit a části systému hraje v usnadňuje dosáhli svých cílů. Model požadavků je sada tyto diagramy, z nichž každý se zaměřuje na různé aspekty potřebám uživatelů. Video ukázku naleznete v tématu: [modelování obchodní domény](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
+Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživatelů ve vytvoření diagramů o svých aktivit a části systému hraje v usnadňuje dosáhli svých cílů. Model požadavků je sada tyto diagramy, z nichž každý se zaměřuje na různé aspekty potřebám uživatelů. Video ukázku naleznete v tématu: [Modelování obchodní domény](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Které verze sady Visual Studio podporovat každý typ modelu najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -54,7 +51,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 ## <a name="common-tasks"></a>Obecné úlohy  
  Můžete vytvořit několik různých zobrazení podle požadavků uživatelů.  Každé zobrazení obsahuje konkrétního typu informací.  Při vytváření těchto zobrazení je nejvhodnější často přesunout na další. Můžete spustit z jakékoli zobrazení.  
   
-|Diagram nebo dokumentu|Co se popisuje v modelu požadavky|Oddíl|  
+|Diagram nebo dokumentu|Co se popisuje v modelu požadavky|Sekce|  
 |-------------------------|-----------------------------------------------|-------------|  
 |Použití diagramu případu|Kdo používá systém a co dělají s ním.|[Popisující, jak se váš systém používá](#UseCases)|  
 |Třída koncepční diagram|Glosář typů, které se používají k popisu požadavků; typy viditelný na rozhraní v systému.|[Definuje termíny používané k popisu požadavků](#RequirementsClasses)|  
@@ -141,7 +138,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 |Elementy diagramu koncepční tříd|[Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)|  
 |Postupy při vývoji kódu z koncepční tříd|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
- V diagramu tříd koncepční není obvykle vhodné umístit šipky na přidružení relevantní. Je to proto diagramu nepředstavuje implementace. Asociace reprezentují vztahy mezi objekty reálného světa. Následující [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření nastavit jiné směrové šipky jako výchozí: [vzorku: modelování UML domény funkce](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ V diagramu tříd koncepční není obvykle vhodné umístit šipky na přidružení relevantní. Je to proto diagramu nepředstavuje implementace. Asociace reprezentují vztahy mezi objekty reálného světa. Následující [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření nastavit jiné směrové šipky jako výchozí: [Ukázka: Funkce modelování UML domény](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
 ##  <a name="BusinessRules"></a> Zobrazení obchodních pravidel  
  Obchodní pravidlo je požadavek, který není spojen s případem použití konkrétní a by měl v celém systému.  
@@ -185,7 +182,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
 |Další informace o|Číst|  
 |--------------------|----------|  
-|Podrobnější informace o nahrávání kvality požadavků na služby|[Pokyny pro definování kvality požadavků na služby](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
+|Podrobnější informace o nahrávání kvality požadavků na služby|[Pokyny pro definování kvality požadavků na služby](http://msdn.microsoft.com/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Připojení dalších dokumentů s případy použití|[Propojení případu použití s dokumenty a diagramy](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Postupy při vývoji kódu, který dodržuje kvality požadavků na služby|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
@@ -247,11 +244,8 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
  [Vývoj testů z modelu](../modeling/develop-tests-from-a-model.md)   
  [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)   
  [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)   
- [Ukázkové rozšíření VS: Funkce modelování UML domény](http://go.microsoft.com/fwlink/?LinkId=213849)   
+ [Ukázka rozšíření VS: Funkce modelování UML domény](http://go.microsoft.com/fwlink/?LinkId=213849)   
  [Ukázka rozšíření VS: Barevné prvky UML podle stereotypu](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Ukázka rozšíření VS: Propojení elementů UML diagramů, soubory a další prvky](http://go.microsoft.com/fwlink/?LinkID=213813)   
  [Ukázka rozšíření VS: Zarovnání tvarů v diagramu UML](http://go.microsoft.com/fwlink/?LinkID=213809)   
  [Video: Modelování obchodní domény](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Přizpůsobení vytvoření a přesunutí elementu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853828"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768101"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +51,7 @@ Můžete povolit element, který má přetahovat do jiného, z panelu nástrojů
 ## <a name="defining-an-element-merge-directive"></a>Definování direktivě sloučení elementů  
  Direktivy sloučení elementů můžete přidat doménové třídy, vztahy domén, tvary, konektory a diagramy. Můžete přidat nebo je vyhledat v Průzkumník DSL pod přijímající doménové třídy. Přijímací třída je doménová třída elementu, který je už v modelu a do které se sloučí element nové nebo zkopírovaný.  
   
- ![DSL&#45;EMD&#95;podrobnosti](../modeling/media/dsl-emd-details.png "DSL EMD_Details")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")  
   
  **Indexování třídy** je doménová třída prvky, které mohou být sloučeny do členy přijímající třídy. Instance podtřídy třídy indexování bude také sloučeno uživatelem EMD, pokud nenastavíte **atí pro podtřídy** na hodnotu False.  
   
@@ -94,7 +91,7 @@ Můžete povolit element, který má přetahovat do jiného, z panelu nástrojů
   
    1.  V **Průzkumník DSL**, rozbalte **doménovými třídami**. Klikněte pravým tlačítkem na `ExampleElement` a potom klikněte na tlačítko **přidat nové direktiva sloučení elementů**.  
   
-   2.  Ujistěte se, že **podrobnosti DSL** tak, aby si můžete zobrazit podrobnosti nové EMD je otevřeno, okno. (Nabídka: **zobrazení**, **jiných Windows**, **podrobnosti DSL**.)  
+   2.  Ujistěte se, že **podrobnosti DSL** tak, aby si můžete zobrazit podrobnosti nové EMD je otevřeno, okno. (Nabídka: **Zobrazit**, **jiných Windows**, **podrobnosti DSL**.)  
   
 3. Nastavte **indexování třídy** v okně podrobností DSL, chcete-li definovat, jaké třídy prvků může být sloučeny do `ExampleElement` objekty.  
   
@@ -148,7 +145,7 @@ Můžete povolit element, který má přetahovat do jiného, z panelu nástrojů
   
      Můžete psát vlastní kód, který vytvoří nové prvky, můžete explicitně vyvolat EMD pomocí `ElementOperations.Merge` metody. Tím zajistíte, že váš kód odkazuje nové prvky do modelu stejným způsobem jako jiné operace. Další informace najdete v tématu [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).  
   
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Příklad: Přidání vlastní přijetí kódu do EMD  
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Příklad: Přidání kódu EMD vlastní přijetí  
  Do EMD přidáte vlastní kód, můžete definovat složitější chování sloučení. Tento jednoduchý příklad zabrání uživateli v přidávání více než pevný počet elementů do diagramu. V příkladu změní výchozí EMD, který doprovází vztah obsažení.  
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Vytvoření vlastní přijetí kódu pro omezení toho, co můžete přidat uživatele  
@@ -324,6 +321,3 @@ Můžete povolit element, který má přetahovat do jiného, z panelu nástrojů
  [Procházení a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Přizpůsobení nástrojů a panelu nástrojů](../modeling/customizing-tools-and-the-toolbox.md)   
  [Ukázka diagramy okruh DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

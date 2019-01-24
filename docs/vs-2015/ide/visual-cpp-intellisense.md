@@ -1,25 +1,20 @@
 ---
 title: Visual C++ Intellisense | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881674"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802626"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ V sadě Visual Studio 2015 je k dispozici pro jeden kód soubory stejně jako so
   
  Pro přístup k IntelliSense můžete použít položky nabídky a klávesové zkratky je znázorněno na následujícím obrázku.  
   
- ![Visual C&#43; &#43; nabídky technologie IntelliSense](../ide/media/vs2015-cpp-intellisense-menu.png "vs2015_cpp_intellisense_menu")  
+ ![Visual C&#43;&#43; IntelliSense Menu](../ide/media/vs2015-cpp-intellisense-menu.png "vs2015_cpp_intellisense_menu")  
   
 ### <a name="statement-completion-and-member-list"></a>Příkaz dokončení a člena seznamu  
  Když začnete psát klíčové slovo, typ, funkce, název proměnné nebo jiný prvek programu, který kompilátor rozpozná, editor nabízí dokončit slovo můžete  
@@ -92,7 +87,7 @@ V sadě Visual Studio 2015 je k dispozici pro jeden kód soubory stejně jako so
 - Řádek 12 má nachová vlnovku na identifikátor BYE; Tento identifikátor není definován v aktuálně neaktivní Android.NativeActivity projektu.  
   
 ## <a name="single-file-intellisense"></a>Jeden soubor IntelliSense  
- Při otevření jednoho souboru mimo jakýkoli projekt stále získání funkce IntelliSense. Můžete povolit nebo zakázat konkrétní funkce tak, že přejdete do **textový Editor, C/C++, Upřesnit** můžete zapnout nebo vypnout funkce technologie IntelliSense. Chcete-li nakonfigurovat technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **technologie IntelliSense a procházení pro neprojektové soubory** v **Upřesnit** oddílu. Zobrazit [průvodce Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Při otevření jednoho souboru mimo jakýkoli projekt stále získání funkce IntelliSense. Můžete povolit nebo zakázat konkrétní funkce tak, že přejdete do **textový Editor, C/C++, Upřesnit** můžete zapnout nebo vypnout funkce technologie IntelliSense. Chcete-li nakonfigurovat technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **technologie IntelliSense a procházení pro neprojektové soubory** v **Upřesnit** oddílu. Zobrazit [průvodce Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![Visual C&#43; &#43; jednoho souboru intellisense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -102,6 +97,3 @@ V sadě Visual Studio 2015 je k dispozici pro jeden kód soubory stejně jako so
   
 ## <a name="see-also"></a>Viz také  
  [Používání atributu IntelliSense](../ide/using-intellisense.md)
-
-
-

@@ -1,24 +1,19 @@
 ---
 title: Analyzátory Roslyn a knihovny pro řešení ImmutableArrays | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4c5b7f145438d6c61ae58a18176d2dae579b128
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+manager: jillfra
+ms.openlocfilehash: ec3304ca0da49e5a72d97e4b04b3fd4aff6b13dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799645"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny rozlišující kódy pro řešení ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -307,7 +302,7 @@ V dalším kroku metodu načte kořen dokumentu, a protože to může zahrnovat 
 ## <a name="trying-your-code-fix"></a>Při operaci opravy kódu
 Nyní můžete stisknout **F5** pro spuštění vašeho analyzátor ve druhé instanci aplikace Visual Studio. Otevřete konzoly projekt, který jste použili dříve. Teď byste měli vidět žárovky objevit, ve kterém je váš nový výraz vytvoření objektu pro `ImmutableArray<int>`. Pokud stisknete **CTRL +.** (interval) pak se zobrazí váš kód opravit, a zobrazí se v verzi preview rozdíl automaticky generovaného kódu v žárovky uživatelského rozhraní. To vytvoří Roslyn.
 
-Tipu pro: Pokud spustíte druhou instanci aplikace Visual Studio a nevidíte žárovka s kód opravit, budete muset vymazat mezipaměť komponenty Visual Studio. Vymazání mezipaměti vynutí Visual Studio a znovu zkontrolujte součásti, takže sady Visual Studio by měl pak nejnovější komponenty. Nejdřív vypněte druhou instanci aplikace Visual Studio. V Průzkumníku Windows přejděte do adresáře uživatele (c:\users\\< userid\>) a najděte AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\. V tomto adresáři odstraňte podadresáře ComponentModelCache. "14" změny na verzi pomocí sady Visual Studio.
+Pro Tip: Pokud spustíte druhou instanci aplikace Visual Studio a nevidíte žárovka s kód opravit, budete muset vymazat mezipaměť komponenty Visual Studio. Vymazání mezipaměti vynutí Visual Studio a znovu zkontrolujte součásti, takže sady Visual Studio by měl pak nejnovější komponenty. Nejdřív vypněte druhou instanci aplikace Visual Studio. V Průzkumníku Windows přejděte do adresáře uživatele (c:\users\\< userid\>) a najděte AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\. V tomto adresáři odstraňte podadresáře ComponentModelCache. "14" změny na verzi pomocí sady Visual Studio.
 
 ## <a name="talk-video-and-finish-code-project"></a>Přednáška Video a dokončení kódu projektu
 Zobrazí se v tomto příkladu vyvinul a popsané dále v [předváděcí](http://channel9.msdn.com/events/Build/2015/3-725). Posluchačů ukazuje analyzátor pracovní a provede vás jeho sestavení.
@@ -320,4 +315,3 @@ Zobrazí všechny dokončené kód [tady](https://github.com/DustinCampbell/Core
 [několik příkladů na Githubu, seskupených do tři druhy analyzátory](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)  
  [Další dokumenty na webu GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers) 
 [pravidel FxCop implementovaných s analyzátory Roslyn na Githubu](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
-

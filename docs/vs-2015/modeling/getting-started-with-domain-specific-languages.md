@@ -1,30 +1,27 @@
 ---
 title: Začínáme s jazyky specifickými pro doménu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac9b92921ba180c3f986a28d9fc47ee9acfdeb78
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752901"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma vysvětluje základní koncepty při definování a používání jazyka specifického pro doménu (DSL) vytvořené pomocí sady SDK modelování pro sadu Visual Studio.  
   
- Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co můžete dělat s jazyka specifického pro doménu?  
  Jazyka specifického pro doménu je zápis, obvykle grafické, který se používá pro určitý účel. Naopak jazyků, jako je UML jsou pro obecné účely. V DSL můžete definovat typy prvku modelu a jejich vztahy a jak se zobrazí na obrazovce.  
@@ -61,7 +58,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
     ![Vytvoření dialogového okna DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-4. V **název** zadejte **FamilyTree**. Klikněte na tlačítko **OK**.  
+4. V **název** zadejte **FamilyTree**. Klikněte na **OK**.  
   
     **Průvodce jazyka specifického pro doménu** se otevře a zobrazí seznam šablon řešení DSL.  
   
@@ -86,7 +83,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
   
    Uživatelské rozhraní teď vypadá podobně jako na následujícím obrázku.  
   
-   ![Návrhář DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![dsl designer](../modeling/media/dsl-designer.png "dsl_designer")  
   
    Definuje toto řešení jazyka specifického pro doménu. Další informace najdete v tématu [přehled uživatelského rozhraní nástrojů jazyka specifického pro doménu](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
@@ -107,7 +104,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
 1. Klikněte na tlačítko **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení. To obnoví většinu zdrojový kód z DslDefinition.dsl.  
   
    > [!NOTE]
-   >  Pokaždé, když změníte DslDefinition.dsl, musíte kliknout na **Transformovat všechny šablony** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   >  Pokaždé, když změníte DslDefinition.dsl, musíte kliknout na **Transformovat všechny šablony** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Stiskněte klávesu F5 nebo na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
@@ -377,7 +374,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
 ## <a name="validation-and-commands"></a>Ověření a příkazy  
  Dál tento DSL může vyvíjet přidáním omezení ověření. Tato omezení jsou metody, které můžete definovat, které Ujistěte se, že model je ve správném stavu. Například můžete definovat omezení a ujistěte se, která je novější než u jejích nadřazených tříd datum narození dítěte. Funkce ověření zobrazí upozornění, pokud uživatel DSL pokusí uložit model, který přeruší žádné omezení. Další informace najdete v tématu [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).  
   
- Můžete také definujte příkazy nabídek, které může uživatel vyvolat. Příkazy můžete měnit model. Můžete také pracovat s jinými modely v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a s externím prostředkům. Další informace najdete v tématu [postupy: úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Můžete také definujte příkazy nabídek, které může uživatel vyvolat. Příkazy můžete měnit model. Můžete také pracovat s jinými modely v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a s externím prostředkům. Další informace najdete v tématu [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Nasazení DSL  
  Chcete-li umožnit dalším uživatelům používat jazyka specifického pro doménu, distribuovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soubor Extension (VSIX). To je vytvořen při sestavení řešení DSL.  
@@ -405,6 +402,3 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
  [Porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md)   
  [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)   
  [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-

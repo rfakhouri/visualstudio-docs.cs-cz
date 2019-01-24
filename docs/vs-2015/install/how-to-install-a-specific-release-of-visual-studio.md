@@ -1,26 +1,22 @@
 ---
 title: 'Postupy: Instalace konkrétní verze | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - install a specific release, Visual Studio
 ms.assetid: d69ad0f8-f0a0-438e-a0ef-777c4868f139
 caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 42776c20cd6634903344569f9ce1f35a776c5f86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756357"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Postupy: Instalace konkrétní verze sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +39,7 @@ ms.locfileid: "53959889"
 |Visual Studio Enterprise (původní Update 2 bez jakékoli další aktualizace Update 2 období)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, která byla k dispozici po vydání aktualizace 2|
 |Visual Studio Enterprise Update 1 (původní aktualizace 1, ale s aktualizacemi tuto předem aktuální aktualizaci Update 2)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, který byl aktuální před Update 2 všeobecně dostupné|
 |Visual Studio Enterprise Update 1 (původní Update 1 bez jakékoli další aktualizace Update 1 období)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, která byla k dispozici po vydání aktualizace 1|
-|Visual Studio Enterprise (původní verzi RTM, ale s aktualizace, který předem aktuální aktualizace 1)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/en-us/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, který byl aktuální než Update 1 vydané|
+|Visual Studio Enterprise (původní verzi RTM, ale s aktualizace, který předem aktuální aktualizace 1)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, který byl aktuální než Update 1 vydané|
 |Visual Studio Enterprise (původní RTM s žádné aktualizace)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, která byla k dispozici po vydání RTM|
 
 > [!IMPORTANT]

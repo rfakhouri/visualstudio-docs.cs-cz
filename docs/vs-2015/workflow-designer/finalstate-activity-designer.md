@@ -1,23 +1,20 @@
 ---
 title: Návrhář aktivity Finalstate | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 48c44dc585ce1c9cf4e7b29970b4014f128b873d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0a969b81e3291191cf42df4e1775c4212f54e4cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803615"
 ---
 # <a name="finalstate-activity-designer"></a>Návrhář aktivity FinalState
 <xref:System.Activities.Core.Presentation.FinalState> Návrhář slouží k vytvoření <xref:System.Activities.Statements.State> , která ukončí instance počítače stavu.  
@@ -34,6 +31,6 @@ ms.locfileid: "49209167"
 |<xref:System.Activities.Statements.State.Entry%2A>|False|Určuje akci, která nastane, pokud se tento stav je převeden na. Tuto hodnotu můžete nastavit tak, že přetáhnete aktivity z **nástrojů** a vyřadit ho do <xref:System.Activities.Statements.State.Entry%2A> oddíl stavu.|  
   
 ## <a name="see-also"></a>Viz také  
- [Stavový stroj StateMachine](../workflow-designer/statemachine-activity-designer.md)   
+ [StateMachine](../workflow-designer/statemachine-activity-designer.md)   
  [Stav](../workflow-designer/state-activity-designer.md)   
  [Transition](../workflow-designer/transition-activity-designer.md)

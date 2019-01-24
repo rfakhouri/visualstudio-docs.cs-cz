@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Podpora včasného testování s funkcí generování před využitím | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Podpora včasného testování funkcí generování před využitím | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
@@ -16,15 +11,15 @@ ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2308be73eb7b483168544dc706a9b682af7eca35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755135"
 ---
-# <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Návod: Podpora včasného testování s funkcí Generování před využitím
+# <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Průvodce: Podpora včasného testování funkcí generování před využitím
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje způsob použití [Generovat z využití](../misc/generate-from-usage.md) funkci, která podporuje vývoj s včasným testu.  
@@ -60,7 +55,7 @@ Dialogové okno Nový projekt
 
     * V jazyce Visual Basic přidejte `Using UnitTestProject1`
     
-    * V jazyce C# přidat `using UnitTestProject1;`
+    * In C#, add `using UnitTestProject1;`
     
 9.  Uložení vašeho řešení. Nyní jste připraveni začít psaní testů  
   
@@ -118,7 +113,7 @@ Generovat dialogové okno Nový typ
      ![Generovat vlastnost místní nabídky v jazyce Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
 Visual Basic  
   
-     ![Generovat vlastnost místní nabídky v jazyce C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
+     ![Generate Property context menu in C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
 Visual C#  
   
 ### <a name="to-locate-the-source-code"></a>Vyhledejte zdrojový kód  
@@ -196,6 +191,3 @@ okno výsledků testu
  [Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Používání atributu IntelliSense](../ide/using-intellisense.md)   
  [Testování částí kódu](../test/unit-test-your-code.md)
-
-
-

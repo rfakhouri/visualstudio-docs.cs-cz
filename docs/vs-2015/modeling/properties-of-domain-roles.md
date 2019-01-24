@@ -1,23 +1,20 @@
 ---
 title: Vlastnosti rolí domény | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: 5a7bb18c-638e-45e8-9d79-9aa6a9e14b0e
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244085"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755103"
 ---
 # <a name="properties-of-domain-roles"></a>Vlastnosti rolí domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +47,3 @@ Vlastnosti v následující tabulce jsou spojeny s rolí domény. Informace o ro
   
 ## <a name="see-also"></a>Viz také  
  [Vlastnosti vztahů domény](../modeling/properties-of-domain-relationships.md)
-
-
-

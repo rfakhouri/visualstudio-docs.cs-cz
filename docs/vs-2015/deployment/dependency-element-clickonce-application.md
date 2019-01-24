@@ -1,14 +1,9 @@
 ---
 title: '&lt;závislost&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -31,13 +26,13 @@ ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765178"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – Element (aplikace ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,17 +105,17 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 |`description`|Volitelné. Popisuje operační systém popsané v čitelné formě, `dependentOS` elementu.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Požadováno. Tento element je podřízeným prvkem `dependentOS` elementu a obsahuje `os` elementu. Tento element nemá žádné atributy.  
+ Povinný parametr. Tento element je podřízeným prvkem `dependentOS` elementu a obsahuje `os` elementu. Tento element nemá žádné atributy.  
   
-### <a name="os"></a>operační systém  
- Požadováno. Tento element je podřízeným prvkem `osVersionInfo` elementu. Tento element má následující atributy.  
+### <a name="os"></a>os  
+ Povinný parametr. Tento element je podřízeným prvkem `osVersionInfo` elementu. Tento element má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`majorVersion`|Požadováno. Určuje číslo hlavní verze operačního systému.|  
-|`minorVersion`|Požadováno. Určuje číslo podverze operačního systému.|  
-|`buildNumber`|Požadováno. Určuje číslo sestavení operačního systému.|  
-|`servicePackMajor`|Požadováno. Určuje hlavní číslo aktualizace service pack operačního systému.|  
+|`majorVersion`|Povinný parametr. Určuje číslo hlavní verze operačního systému.|  
+|`minorVersion`|Povinný parametr. Určuje číslo podverze operačního systému.|  
+|`buildNumber`|Povinný parametr. Určuje číslo sestavení operačního systému.|  
+|`servicePackMajor`|Povinný parametr. Určuje hlavní číslo aktualizace service pack operačního systému.|  
 |`servicePackMinor`|Volitelné. Určuje dílčí číslo aktualizace service pack operačního systému.|  
 |`productType`|Volitelné. Určuje hodnotu typu produktu. Platné hodnoty jsou `server`, `workstation`, a `domainController`. Například pro Windows 2000 Professional, je hodnota tohoto atributu `workstation`.|  
 |`suiteType`|Volitelné. Identifikuje sadu produktů, která je k dispozici v systému nebo typ konfigurace systému. Platné hodnoty jsou `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, a `terminal`. Například pro Windows 2000 Professional, je hodnota tohoto atributu `professional`.|  
@@ -132,19 +127,19 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`dependencyType`|Požadováno. Určuje typ závislosti. Platné hodnoty jsou `preprequisite` a `install`. `install` Sestavení je nainstalován jako součást [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. A `prerequisite` sestavení musí být k dispozici v globální mezipaměti sestavení (GAC) před [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci jde nainstalovat.|  
-|`allowDelayedBinding`|Požadováno. Určuje, zda sestavení lze načíst prostřednictvím kódu programu za běhu.|  
-|`group`|Volitelné. Pokud `dependencyType` atribut je nastaven na `install`, určuje skupinu s názvem sestavení tohoto nainstalují jenom na vyžádání. Další informace najdete v tématu [návod: stahování sestavení na vyžádání pomocí technologie ClickOnce pomocí rozhraní API nasazení návrháře](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Pokud nastavit `framework` a `dependencyType` atribut je nastaven na `prerequisite`, označí sestavení jako součást rozhraní .NET Framework. Pro toto sestavení nepovolenou mezipaměti globálního sestavení (GAC) při instalaci [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] a novějších verzích.|  
+|`dependencyType`|Povinný parametr. Určuje typ závislosti. Platné hodnoty jsou `preprequisite` a `install`. `install` Sestavení je nainstalován jako součást [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. A `prerequisite` sestavení musí být k dispozici v globální mezipaměti sestavení (GAC) před [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci jde nainstalovat.|  
+|`allowDelayedBinding`|Povinný parametr. Určuje, zda sestavení lze načíst prostřednictvím kódu programu za běhu.|  
+|`group`|Volitelné. Pokud `dependencyType` atribut je nastaven na `install`, určuje skupinu s názvem sestavení tohoto nainstalují jenom na vyžádání. Další informace najdete v tématu [názorný postup: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Pokud nastavit `framework` a `dependencyType` atribut je nastaven na `prerequisite`, označí sestavení jako součást rozhraní .NET Framework. Pro toto sestavení nepovolenou mezipaměti globálního sestavení (GAC) při instalaci [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] a novějších verzích.|  
 |`codeBase`|Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Cesta k závislého sestavení. Může být absolutní cesta nebo cesta relativní k kódu manifestu základní. Tato cesta musí být platný identifikátor URI platný v pořadí pro manifest sestavení.|  
 |`size`|Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Velikost závislého sestavení, v bajtech.|  
   
-### <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
- Požadováno. Tento element je podřízeným prvkem `dependentAssembly` prvek a má následující atributy.  
+### <a name="assemblyidentity"></a>assemblyIdentity  
+ Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` prvek a má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`name`|Požadováno. Určuje název aplikace.|  
-|`version`|Požadováno. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|  
+|`name`|Povinný parametr. Určuje název aplikace.|  
+|`version`|Povinný parametr. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|  
 |`publicKeyToken`|Volitelné. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů `SHA-1` hash hodnoty veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč používaný k podepisování katalogu musí být 2 048 bitů nebo více.|  
 |`processorArchitecture`|Volitelné. Určuje procesor. Platné hodnoty jsou `x86` pro 32bitová verze Windows a `I64` pro 64bitová verze Windows.|  
 |`language`|Volitelné. Určuje jazyk kódy dvě části, třeba cs-cz, sestavení.|  
@@ -171,7 +166,7 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 |---------------|-----------------|  
 |`Algorithm`|Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] je `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-### <a name="dsigdigestvalue"></a>dsig: DigestValue  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Je požadovaný podřízený element `hash` elementu. `dsig:DigestValue` Prvek nemá žádné atributy. Jeho textová hodnota je vypočítaný algoritmus hash pro zadaný soubor.  
   
 ## <a name="remarks"></a>Poznámky  
@@ -227,6 +222,3 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – Manifest aplikace](../deployment/clickonce-application-manifest.md)   
  [\<závislost > – Element](../deployment/dependency-element-clickonce-deployment.md)
-
-
-

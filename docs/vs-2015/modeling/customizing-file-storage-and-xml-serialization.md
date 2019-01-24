@@ -1,12 +1,9 @@
 ---
 title: Přizpůsobení souborového úložiště a serializace XML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867441"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760799"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Přizpůsobení souborového úložiště a serializace XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -277,10 +274,10 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
 |Vlastnost|Popis|  
 |Obsahuje vlastní schéma elementů|Při hodnotě True označuje, jestli má doménová třída vlastní schéma elementů|  
 |Vlastní|Nastavte na **True** Pokud budete chtít napsat vlastní kód serializace a deserializace pro tuto doménovou třídu.<br /><br /> Sestavte řešení a zjistěte chyby zjistit podrobné pokyny.|  
-|Doménová třída|Doménová třída, ke kterému se vztahuje tento datový uzel třídy. Jen pro čtení.|  
+|Domain Class|Doménová třída, ke kterému se vztahuje tento datový uzel třídy. Jen pro čtení.|  
 |Název elementu|Název uzlu XML pro elementy této třídy. Výchozí hodnota je malá verzi třídy název domény.|  
 |Název atributu monikeru|Název atributu použitého v elementech monikeru, obsahují odkaz. Pokud je pole prázdné, název vlastnosti klíče nebo ID. se používá.<br /><br /> V tomto příkladu je "name":  `<personMoniker name="/Mike Nash"/>`|  
-|Název elementu monikeru|Název elementu xml použitého pro monikery v, které odkazují na prvky této třídy.<br /><br /> Výchozí hodnota je malá verzi příponu "Moniker" název třídy. Například `personMoniker`.|  
+|Název elementu monikeru|Název elementu xml použitého pro monikery v, které odkazují na prvky této třídy.<br /><br /> Výchozí hodnota je malá verzi příponu "Moniker" název třídy. Například, `personMoniker`.|  
 |Zástupný název typu|Název typu xsd vygenerovaného pro monikery v elementech této třídy. XSD je v **Dsl\Generated kód\\\*Schema.xsd**|  
 |Serializace Id|Při hodnotě True se element identifikátoru GUID je součástí souboru. Toto musí být true, pokud není žádná vlastnost, která je označena **je klíčem Monikeru** a DSL definuje vztahy odkazu do této třídy.|  
 |Název typu|Název typu xml vygenerovaného v xsd z určené doménové třídy.|  
@@ -313,6 +310,3 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
 ## <a name="see-also"></a>Viz také  
  [Procházení a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

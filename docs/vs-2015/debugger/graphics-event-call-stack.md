@@ -1,27 +1,22 @@
 ---
 title: Zásobník volání událostí grafiky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c6ac7860fe846c86d846fd668c4647cd4145756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762855"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785176"
 ---
 # <a name="graphics-event-call-stack"></a>Zásobník volání událostí grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +37,12 @@ Zásobníku volání události grafiky v analyzátoru grafiky sady Visual Studio
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Jméno**|Symbol, který jednoznačně identifikuje funkce, která obsahuje lokalitu volání. Symbol ladění pro funkce se zobrazí, když je k dispozici. v opačném případě se zobrazí funkce Posun.|  
-|**Soubor**|Název souboru souboru se zdrojovým kódem nebo soubor knihovny, která obsahuje lokalitu volání.|  
+|**Název**|Symbol, který jednoznačně identifikuje funkce, která obsahuje lokalitu volání. Symbol ladění pro funkce se zobrazí, když je k dispozici. v opačném případě se zobrazí funkce Posun.|  
+|**File**|Název souboru souboru se zdrojovým kódem nebo soubor knihovny, která obsahuje lokalitu volání.|  
 |**Poloha**|Číslo řádku lokalitu volání.|  
   
 ### <a name="links-to-graphics-objects"></a>Odkazy na grafických objektů  
  Porozumění události vybrané grafiky, budete pravděpodobně potřebovat informace o Direct3D objekty, které jsou k ní přidružena. **Zásobník volání událostí grafiky** okno obsahuje odkazy na tyto informace.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Chybějící objekty z důvodu použití funkce vertex shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)
-
-
-
+ [Návod: Chybějící objekty kvůli vertex shaderu](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)

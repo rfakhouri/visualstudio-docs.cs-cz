@@ -1,13 +1,9 @@
 ---
 title: Použití vývojového prostředí pro C# | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.startpage.usingcsharp
 dev_langs:
@@ -20,13 +16,13 @@ ms.assetid: e10e2cba-641f-47a3-88a3-6748965254d7
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 9cd456bf03b3c5037c21845c082ca60ef563e8df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: bffc4c5740ad006ca851f56cd2db8fcfdfc21294
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938806"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752955"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>Použití vývojového prostředí sady Visual Studio pro jazyk C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +35,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio je kolekce výv
 |-----------|-----------------|
 |[Návod: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Poskytuje přehled mnoha funkcí a nástrojů, které jsou součástí sady Visual Studio pro vývoj aplikací.|
 |[Vytváření řešení a projektů](../ide/creating-solutions-and-projects.md)|Popisuje způsob vytvoření projektu, který obsahuje všechny soubory zdrojového kódu, soubory prostředků, jako jsou ikony, odkazy na externí soubory, a data konfigurace, jako například nastavení kompilátoru.|
-|[Úvod do Návrháře projektu](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Poskytuje přehled pro Návrháře projektu, který nabízí centralizované umístění pro správu vlastností, nastavení a prostředků projektu.|
+|[Úvod do Návrháře projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Poskytuje přehled pro Návrháře projektu, který nabízí centralizované umístění pro správu vlastností, nastavení a prostředků projektu.|
 |[Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)|Popisuje nástroje sady Visual Studio, které vám pomohou s úpravami a prací s textem a kódem, s označováním, vkládáním a konfigurací ovládacích prvků a dalších objektů a oborů názvů, a dále s přidáváním odkazů na externí komponenty a prostředky.|
 |[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)|Poskytuje odkazy na témata, která popisují funkce typické pro jazyk Visual C#, jako je například automatické generování kódu a technologie IntelliSense pro naposledy použité členy.|
 |[Fragmenty kódu v jazyce Visual C#](../ide/visual-csharp-code-snippets.md)|Poskytuje přehled používání fragmentů kódu v jazyce Visual C#, které vám umožňují automaticky přidat do aplikace běžné konstrukce kódu.|

@@ -1,14 +1,9 @@
 ---
 title: Určení, které Editor otevře soubor v projektu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 832fd838246c075087700494b09757184be687a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741607"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798191"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Určení editoru, který otevře soubor v projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Když uživatel otevře soubor v projektu, prostředí prochází proces dotazov
   
  Projekt ostatní soubory deklarací všechny soubory, které nejsou převzatá podle jiných projektů. Tímto způsobem vlastních editorech můžete otevřít dokumenty, než standardní editory je otevřít. Pokud projekt ostatní soubory deklarací souboru, prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metody k otevření souboru s standardní editor. Prostředí ověří jeho vnitřní seznam registrovaných editory pro takový, který zpracovává soubory RTF. Tento seznam se nachází v registru v klíči následující:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
   
  Prostředí také zkontroluje identifikátory třída v klíči HKEY_CLASSES_ROOT\CLSID pro všechny objekty, které mají dílčí klíče DocObject. Pokud přípona souboru je zde nalezen, embedded verzi aplikace, jako je například Microsoft Word, se vytvoří v místě v sadě Visual Studio. Tyto objekty dokumentu musí být složené soubory, které implementují <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> musí implementovat rozhraní, nebo objekt <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> rozhraní.  
   
@@ -53,4 +48,3 @@ Když uživatel otevře soubor v projektu, prostředí prochází proces dotazov
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>
-

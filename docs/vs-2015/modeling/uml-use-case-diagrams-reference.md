@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy případů použití UML: Referenční | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Diagramy případů použití UML: Referenční dokumentace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.usecasediagram.toolbox
 - vs.teamarch.usecasediagram.diagram
@@ -21,15 +18,15 @@ ms.assetid: aa15772b-eb67-4366-b145-b559112817df
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 64eece28fc46fce799eff01e7ed1e7302e939dbc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791759"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777452"
 ---
-# <a name="uml-use-case-diagrams-reference"></a>Diagramy případů použití UML: Referenční dokumentace
+# <a name="uml-use-case-diagrams-reference"></a>Diagramy případů použití UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V sadě Visual Studio *diagramu případu použití* shrnuje, kdo používá vaše aplikace nebo systému, a co mohou provádět s ním. Chcete-li vytvořit diagram případu použití UML, na **architektury** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
@@ -39,7 +36,7 @@ V sadě Visual Studio *diagramu případu použití* shrnuje, kdo používá va�
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Toto téma popisuje elementy, které jsou k dispozici v diagramech případů použití. Další informace o tom, jak nakreslit diagramy případů použití, naleznete v tématu [diagramy případu použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md). Další informace o tom, jak vytvořit a kreslit diagramy modelování najdete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+>  Toto téma popisuje elementy, které jsou k dispozici v diagramech případů použití. Další informace o tom, jak nakreslit diagramy případů použití, naleznete v tématu [diagramy případu použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md). Další informace o tom, jak vytvořit a kreslit diagramy modelování najdete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Diagramy případů použití čtení  
  Tabulky v následujících částech popisují prvky, které jsou k dispozici na diagram případu použití, spolu s jejich hlavní vlastnosti. Úplný seznam vlastností, naleznete v tématu [diagramy případů použití vlastnosti elementů v UML](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  
@@ -68,12 +65,9 @@ V sadě Visual Studio *diagramu případu použití* shrnuje, kdo používá va�
 |11 (není vidět)|**Balíčky**|Případy použití, objekty actor a subsystémy mohou být obsaženy v rámci balíčky. Balíček tvary v diagramu nezobrazí, ale můžete nastavit **LinkedPackage** vlastnosti diagramu. Prvky, které následně vytvořit v diagramu jsou umístěny v rámci balíčku. Další informace najdete v tématu [definování balíčků a oborů názvů](../modeling/define-packages-and-namespaces.md).|  
   
 ## <a name="see-also"></a>Viz také  
- [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)   
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
  [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)
-
-
-

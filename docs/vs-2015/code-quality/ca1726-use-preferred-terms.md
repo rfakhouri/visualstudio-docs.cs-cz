@@ -1,14 +1,9 @@
 ---
 title: 'CA1726: Použijte upřednostňované výrazy | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf1050716bb38f8b43aa8be7d88c474960544b2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770538"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Použijte upřednostňované výrazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1726: použijte upřednostňované výrazy](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1726: Použijte upřednostňované výrazy](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -38,7 +33,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1726:
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní - při vyvolání na sestavení<br /><br /> Bez konce – při vyvolání na parametry typu|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Název externě viditelného identifikátoru zahrnuje výraz, pro který existuje alternativní upřednostňovaný výraz. Název případně obsahuje také výraz příznak nebo příznaky.  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -48,26 +43,26 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1726:
 |-------------------|--------------------|  
 |nejsou|AreNot|  
 |Zrušeno|Zrušeno|  
-|Nemůžu|Nelze|  
+|Nemůžu|Cannot|  
 |ComPlus|EnterpriseServices|  
 |Nepovedlo|CouldNot|  
 |Didnt|DidNot|  
-|Doesnt|Které přísluší|  
-|Není|Nepřipojovat|  
+|Doesnt|DoesNot|  
+|Dont|DoNot|  
 |Příznak nebo příznaky|Neexistuje žádné nahrazující výraz. Nepoužívejte.|  
-|kdyby|HadNot|  
+|Hadnt|HadNot|  
 |Nebyl|HasNot|  
 |nebyly|HaveNot|  
 |Indexy|Indexy|  
 |není|IsNot|  
 |Přihlášení|Přihlášení|  
-|Odhlášení|Odhlášení|  
+|Odhlášení|LogOff|  
 |Shouldnt|ShouldNot|  
-|Přihlášení|Přihlášení|  
+|Přihlášení|SignIn|  
 |Schvalování|Odhlášení|  
 |Wasnt|WasNot|  
 |nebyly|WereNot|  
-|Nefunguje|WillNot|  
+|Wont|WillNot|  
 |Wouldnt|WouldNot|  
 |Zapisovatelný|Zápis|  
   
@@ -79,4 +74,3 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1726:
   
 ## <a name="related-rules"></a>Související pravidla  
  [Upozornění na pojmenování](../code-quality/naming-warnings.md)
-

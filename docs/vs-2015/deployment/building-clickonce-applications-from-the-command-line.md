@@ -1,14 +1,9 @@
 ---
 title: Vytváření aplikací ClickOnce z příkazového řádku | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777708"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Vytváření aplikací ClickOnce z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +38,13 @@ V [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], můžete ses
   
  `/target:publish` Příkaz sděluje MSBuild, který má být vyvolán cíl publikování. Cíl publikování závisí na cíl sestavení. To znamená, že operace publikování je nadstavbou jazyka operace sestavení. Například pokud jste provedli změnu do jedné zdrojové soubory jazyka Visual Basic nebo C#, odpovídající sestavení by automaticky znovu sestavit pomocí operace publikování.  
   
- Informace o generování úplného [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení pomocí nástroje příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu naleznete v tématu [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Informace o generování úplného [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení pomocí nástroje příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu naleznete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="creating-and-building-a-basic-clickonce-application-using-msbuild"></a>Vytvoření a vytvoření základní aplikace ClickOnce pomocí nástroje MSBuild  
   
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Vytvoření a publikování ClickOnce projektu  
   
-1. Klikněte na tlačítko **nový projekt** z **souboru** nabídky. **Nový projekt** zobrazí se dialogové okno.  
+1. Klikněte na tlačítko **nový projekt** z **souboru** nabídky. Zobrazí se dialogové okno **Nový projekt**.  
   
 2. Vyberte **aplikace Windows** a pojmenujte ho `CmdLineDemo`.  
   
@@ -73,7 +68,7 @@ V [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], můžete ses
   
 2. Z Windows **Start** nabídky, klikněte na tlačítko **všechny programy**, pak **sady Microsoft Visual Studio**, pak **Visual Studio Tools**, pak **Příkazový řádek sady visual Studio**. To by měl otevřete příkazový řádek v kořenové složce aktuálního uživatele.  
   
-3. V **příkazový řádek sady Visual Studio**, změňte aktuální adresář na umístění projektu, který jste právě vytvořili. Zadejte například `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3. V **příkazový řádek sady Visual Studio**, změňte aktuální adresář na umístění projektu, který jste právě vytvořili. Zadejte například příkaz `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
 4. Chcete-li odebrat existující soubory vytvořené v "Vytvoření a publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projektu," typ `rmdir /s publish`.  
   
@@ -178,6 +173,3 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   
  [Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-
-
-

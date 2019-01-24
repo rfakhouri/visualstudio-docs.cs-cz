@@ -1,25 +1,20 @@
 ---
 title: Animace objektů v Návrháři XAML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805506"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animace objektů v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Můžete vytvořit krátké animace, které přesunout objekty nebo má dovnitř
   
  Zjistěte, jak vytvořit animace v těchto videích.  
   
-|Podívejte se na krátké video:|Zjistěte, jak:|  
+|Podívejte se na krátké video:|Naučte se:|  
 |--------------------------|-------------------|  
 |![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytvořit časové osy](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Vytvořit časové osy a práci s objekty na časové ose.|  
 |![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [přidat klíčové snímky a opakování animace](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Přidat klíčové snímky a nastavte vlastnosti na každý klíčový snímek. Potom spusťte objekty animace a sledujte hladký přechod mezi nimi.|  
@@ -47,6 +42,3 @@ Můžete vytvořit krátké animace, které přesunout objekty nebo má dovnitř
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

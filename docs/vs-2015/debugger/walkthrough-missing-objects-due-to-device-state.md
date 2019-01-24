@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Chybějící objekty z důvodu stavu zařízení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Chybějící objekty z důvodu stavu zařízení | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795901"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Návod: Chybějící objekty z důvodu stavu zařízení
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Průvodce: Chybějící objekty z důvodu stavu zařízení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafiky k prozkoumání objekt, který je z důvodu chybějící správně nakonfigurovaný. stav zařízení.  
@@ -113,6 +108,3 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
    Pokud zjistíte, že příčinu problému vykreslování může být nesprávně nakonfigurované hloubka funkce, můžete tyto informace slouží společně s svoje znalosti v oblasti kódu najít, kde byl nesprávně nastaveny hloubka funkce a pak tento problém vyřešit. Pokud nejste obeznámeni s kódem, můžete pro problém vyhledat pomocí příčiny, které jste shromáždili během kdybyste ladili – například na základě **popis vzorníku hloubky** v tomto scénáři můžete vyhledat kód slova například "hloubky" nebo "Vyšší". Po opravě kód její opětovné sestavení a spuštění aplikace znovu a zjistit, že je vyřešen problém vykreslování:  
   
    ![Aplikace, po vyřešení problému](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

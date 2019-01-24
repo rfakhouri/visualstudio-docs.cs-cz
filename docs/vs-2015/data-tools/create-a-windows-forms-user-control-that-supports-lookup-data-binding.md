@@ -1,12 +1,9 @@
 ---
 title: Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje vazbu vyhledávacích dat | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +17,13 @@ ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 786895d045b4ee43d9fbb8cb519fdd47d76b057a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792616"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje vazbu vyhledávacích dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,7 +152,7 @@ Při zobrazování dat ve Windows Forms, můžete vybrat z existujících ovlád
   
 6.  Vyberte **LookupBox** ze seznamu **přidružené ovládací prvky** v **možnosti přizpůsobení uživatelského rozhraní dat** dialogové okno.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
 8.  Klikněte na šipku rozevíracího seznamu **CustomerID** sloupce a zvolte **LookupBox**.  
   
@@ -184,4 +181,3 @@ Při zobrazování dat ve Windows Forms, můžete vybrat z existujících ovlád
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

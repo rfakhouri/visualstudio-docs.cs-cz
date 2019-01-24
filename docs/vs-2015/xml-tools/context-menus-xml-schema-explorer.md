@@ -1,25 +1,20 @@
 ---
 title: Kontextové nabídky (Průzkumník schémat XML) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756792"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextové nabídky (Průzkumník schémat XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Následující položky místní nabídky jsou používány k provádění speci
 |**Zobrazit globální prvky**|Vyhledá a zvýrazní všechny globální prvky v sadě schémat.|  
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|  
   
-## <a name="node-type-namespace"></a>Typ uzlu: Namespace  
+## <a name="node-type-namespace"></a>Typ uzlu: Obor názvů  
  Následující tabulka popisuje možnosti, které jsou k dispozici pro uzel oboru názvů.  
   
 |Možnost|Popis|  
@@ -48,7 +43,7 @@ Následující položky místní nabídky jsou používány k provádění speci
 |**Zobrazit globální prvky**|Vyhledá a zvýrazní všechny globální prvky ve vybraném oboru názvů.|  
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|  
   
-## <a name="node-type-file"></a>Typ uzlu: soubor  
+## <a name="node-type-file"></a>Typ uzlu: Soubor  
  Následující tabulka popisuje možnosti, které jsou k dispozici pro uzel souboru.  
   
 |Možnost|Popis|  
@@ -70,7 +65,7 @@ Následující položky místní nabídky jsou používány k provádění speci
 |**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v Průzkumník schémat XML bude také vybrána v editoru XML.|  
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|  
   
-## <a name="node-type-element"></a>Typ uzlu: Element  
+## <a name="node-type-element"></a>Typ uzlu: Prvek  
  Kromě možností globální uzlu je popsáno výše kontextovou nabídku pro uzly element má následující možnosti:  
   
 |Možnost|Popis|  
@@ -92,7 +87,7 @@ Následující položky místní nabídky jsou používány k provádění speci
 |**Zobrazit všechny odvozené typy**|Vyhledá a zvýrazní všechny typy, které jsou přímo i nepřímo odvozeny z vybraného typu.|  
 |**Zobrazení všech nadřazených**|Zobrazit všechny typy nadřazené (základní).|  
   
-## <a name="node-type-attribute"></a>Typ uzlu: atribut  
+## <a name="node-type-attribute"></a>Typ uzlu: Atribut  
  Kromě možností globální uzlu je popsáno výše kontextovou nabídku pro uzlů atributů obsahuje následující možnosti:  
   
 |Možnost|Popis|  
@@ -101,7 +96,7 @@ Následující položky místní nabídky jsou používány k provádění speci
 |**Přejít na původní atribut**|Pro atribut odkazy přejde na skutečné definice atributu.|  
 |**Zobrazit všechny odkazy**|Globální atributy, najde a zvýrazní všechny odkazy (jiné atributy, které mají `ref="selectedAttribute"`) pro vybraný atribut.|  
   
-## <a name="node-type-attribute-group"></a>Typ uzlu: Skupina atributů  
+## <a name="node-type-attribute-group"></a>Typ uzlu: Skupinu atributů  
  Kromě možností globální uzlu je popsáno výše obsahuje místní nabídku pro atribut skupiny uzlů následující možnosti:  
   
 |Možnost|Popis|  
@@ -122,6 +117,3 @@ Následující položky místní nabídky jsou používány k provádění speci
 ## <a name="see-also"></a>Viz také  
  [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md)   
  [Hledání v sadě schémat](../xml-tools/searching-the-schema-set.md)
-
-
-

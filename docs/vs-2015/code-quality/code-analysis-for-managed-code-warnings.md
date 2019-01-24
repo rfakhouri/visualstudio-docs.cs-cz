@@ -1,14 +1,9 @@
 ---
 title: Analýza kódu pro spravovaný kód upozornění | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vc.project.vcfxcoptool.enablefxcop
 helpviewer_keywords:
@@ -21,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776929"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Upozornění Analýzy kódu pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Nástroj pro analýzu spravovaného kódu poskytuje upozornění, které označu
 |CheckId|Jedinečný identifikátor pro pravidlo. ID kontroly a kategorie se používají pro-source potlačení upozornění.|  
 |Kategorie|Kategorie upozornění.|  
 |Narušující změna|Určuje, zda oprava porušení tohoto pravidla je zásadní změnu. Zásadní změna znamená, že sestavení, které obsahuje závislost na cíl, který způsobil porušení nebude znovu zkompilovat pomocí nové verze nelze upravovat nebo může v době běhu selhat z důvodu této změny. Při více opravy jsou k dispozici a alespoň jednu opravu je zásadní změnu a jednu opravu není, jsou určeny "Přerušení" i "Bez přerušení".|  
-|příčina|Konkrétní spravovaný kód, který způsobí, že pravidlo generování upozornění.|  
+|Příčina|Konkrétní spravovaný kód, který způsobí, že pravidlo generování upozornění.|  
 |Popis|Tento článek popisuje problémy, které jsou za upozornění.|  
 |Jak vyřešit porušení|Vysvětluje, jak změnit zdrojový kód a splňovat pravidla zabránit generování upozornění.|  
 |Kdy potlačit upozornění|Popisuje, když je bezpečný pro potlačení upozornění z pravidla.|  
@@ -66,6 +61,3 @@ Nástroj pro analýzu spravovaného kódu poskytuje upozornění, které označu
 |[Upozornění zabezpečení](../code-quality/security-warnings.md)|Upozornění, které podporují bezpečnější knihovny a aplikace.|  
 |[Upozornění využití](../code-quality/usage-warnings.md)|Upozornění, které podporují příslušný využití [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
 |[Chyby zásad Analýzy kódu](../code-quality/code-analysis-policy-errors.md)|Chyby, ke kterým dochází při splnění zásad analýzy kódu nejsou při vrácení se změnami.|
-
-
-

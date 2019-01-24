@@ -1,25 +1,20 @@
 ---
 title: Mezipaměť | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 071ae9f75ab48a2fbabba7c272ad542f59e9e8be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795552"
 ---
 # <a name="schema-cache"></a>Mezipaměť schémat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +30,19 @@ XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallRoot%\X
 |     Název souboru      |                                                      Popis                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 |    CATALOG.xsd    |             Schéma pro soubory katalogu schémat XML editor. Informace o katalogů schémat najdete níže.             |
-| Soubor DotNetConfig.xsd  |                 Schéma pro soubory Web.Config "<http://schemas.microsoft.com/.NETConfiguration/v2.0>".                 |
-|    MSBuild.xsd    |              Schéma pro soubory MSBuild Ujistěte se, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
-|    MSDATA.xsd     | Schéma XSD poznámky přidal <xref:System.Data.DataSet> třídy, "urn: schémata-microsoft-schemas-msdata". |
+| DotNetConfig.xsd  |                 Schéma pro soubory Web.Config "<http://schemas.microsoft.com/.NETConfiguration/v2.0>".                 |
+|    msbuild.xsd    |              Schéma pro soubory MSBuild Ujistěte se, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
+|    msdata.xsd     | Schéma XSD poznámky přidal <xref:System.Data.DataSet> třídy, "urn: schémata-microsoft-schemas-msdata". |
 |     msxsl.xsd     |                  Schéma pro rozšíření bloku skriptu Microsoft XSLT, urn: schémata-microsoft-com:xslt.                   |
 | SnippetFormat.xsd |                 Schéma pro soubory XML fragmentu kódu. Příklady najdete v tématu % InstallDir%\VC#\Expansions.                 |
 |    Soap1.1.xsd    |            Schéma pro Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.            |
 |    Soap1.2.xsd    |                                     Schéma pro Simple Object Access Protocol 1.2.                                     |
 | SiteMapSchema.xsd |            Schéma pro soubor XML mapy webu technologie ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>".             |
-|     WSDL.xsd      |                    Schéma pro Web Service Description Language http://schemas.xmlsoap.org/wsdl/.                     |
+|     wsdl.xsd      |                    Schéma pro Web Service Description Language http://schemas.xmlsoap.org/wsdl/.                     |
 |     xenc.xsd      |                            Schéma pro šifrování XML http://www.w3.org/2000/09/xmldsig#.                             |
-|     XHTML.xsd     |                                    Schéma pro XHTML http://www.w3.org/1999/xhtml.                                     |
+|     xhtml.xsd     |                                    Schéma pro XHTML http://www.w3.org/1999/xhtml.                                     |
 |     XLINK.xsd     |                                  Schéma pro XLink1.0, http://www.w3.org/1999/xlink.                                   |
-|      XML.xsd      |              Schéma popisující XML: Space a XML: lang – atributy, http://www.w3.org/XML/1998/namespace.               |
+|      xml.xsd      |              Schéma popisující XML: Space a XML: lang – atributy, http://www.w3.org/XML/1998/namespace.               |
 |    xmlsig.xsd     |                        Schéma XML – digitální podpisy, http://www.w3.org/2000/09/xmldsig#.                         |
 |   xsdschema.xsd   |                            Schéma XSD, popisující http://www.w3.org/2001/XMLSchema.                            |
 |     XSLT.xsd      |                           Transformuje se schéma pro formát XML, http://www.w3.org/1999/XSL/Transform.                            |
@@ -136,6 +131,3 @@ XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallRoot%\X
 
 ## <a name="see-also"></a>Viz také  
  [Editor XML](../xml-tools/xml-editor.md)
-
-
-

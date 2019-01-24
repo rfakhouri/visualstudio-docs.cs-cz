@@ -1,25 +1,20 @@
 ---
 title: Vizualizace událostí EventSource v podobě značek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801489"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky
   
 ### <a name="marker-type"></a>Typ značky  
   
-1.  Události, které mají [operační kód](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win: spuštění nebo win: zastavení jsou považovány za začátku nebo konci rozsahu, v uvedeném pořadí.  Vnořený nebo překrývající se rozsahy nelze zobrazit. Nelze zobrazit páry událostí, které v jednom vlákně začínají i končí na další.  
+1.  Události, které mají [operační kód](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: spuštění nebo win: zastavení jsou považovány za začátku nebo konci rozsahu, v uvedeném pořadí.  Vnořený nebo překrývající se rozsahy nelze zobrazit. Nelze zobrazit páry událostí, které v jednom vlákně začínají i končí na další.  
   
-2.  Událost, jejichž operační kód není win: Start ani win: zastavení je považováno za příznak značky, pokud jeho [úroveň](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) je win: podrobné nebo vyšší.  
+2.  Událost, jejichž operační kód není win: Start ani win: zastavení je považováno za příznak značky, pokud jeho [úroveň](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) je win: podrobné nebo vyšší.  
   
 3.  Ve všech ostatních případech je událost považována za zprávu.  
   
@@ -42,12 +37,12 @@ Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky
   
 |Úroveň trasování událostí pro Windows|Důležitost Vizualizéru souběžnosti|  
 |---------------|---------------------------------------|  
-|Windows: LogAlways|Normální|  
+|win:LogAlways|Normální|  
 |Vyhrajte: kritické|Kritická|  
 |Windows: Chyba|Kritická|  
 |Windows: upozornění|Vysoká|  
 |Vyhrajte: informativní|Normální|  
-|Vyhrajte: podrobné|Nízká|  
+|win:Verbose|Nízká|  
 |Větší než win: podrobné|Nízká|  
   
 ### <a name="series-name"></a>Název řady  
@@ -103,6 +98,3 @@ Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky
   
 ## <a name="see-also"></a>Viz také  
  [Značky Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md)
-
-
-

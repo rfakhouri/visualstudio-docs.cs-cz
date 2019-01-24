@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Vytvoření vlastního zaváděcího nástroje k narušení důvěrnosti osobních údajů se zobrazí výzva | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vlastního zaváděcího nástroje k narušení důvěrnosti osobních údajů se zobrazí výzva | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893387"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781336"
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Návod: Vytvoření vlastního zaváděcího nástroje pro zobrazení dotazu na osobní údaje
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Průvodce: Vytvoření vlastního Bootstrapperu pro zobrazena výzva týkající se ochrany osobních údajů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestavení pomocí novější verze souboru a verze sestavení k dispozici. Pokud chcete mít jistotu, že vaši zákazníci souhlas pro toto chování, můžete zobrazit soukromím k nim. Potom se můžete zvolit, jestli chcete udělit oprávnění k aplikaci automaticky aktualizovat. Pokud aplikace nemá povolný automaticky aktualizovat, ji není možné nainstalovat.  
@@ -154,7 +149,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 -   Dokument pro licenční podmínky pro software.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Krok 1: Vytvoření adresáře zaváděcího nástroje  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Krok 1: K vytvoření složky zaváděcího nástroje  
   
 1.  Vytvořte adresář **UpdateConsentDialog** v %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
@@ -166,7 +161,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
     > [!NOTE]
     >  Vytvořte nový adresář pro každé národní prostředí. Například můžete přidat podadresáře pro národní prostředí cs a Německo. Tyto adresáře by obsahoval francouzštinu a češtinu řetězce a jazykových sad v případě potřeby.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2: Vytvoření souboru manifestu product.xml  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2: Chcete-li vytvořit soubor manifestu product.xml  
   
 1.  Vytvořte textový soubor s názvem `product.xml`.  
   
@@ -198,7 +193,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 3.  Uložte soubor do adresáře UpdateConsentDialog zaváděcího nástroje.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Krok 3: Vytvoření manifestu package.xml souborů a softwaru licenční podmínky  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Krok 3: Chcete-li vytvořit soubor manifestu package.xml a licenční podmínky pro software  
   
 1.  Vytvořte textový soubor s názvem `package.xml`.  
   
@@ -251,7 +246,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
     > [!NOTE]
     >  Budete muset zavřít a znovu otevřete Visual Studio zobrazíte dialogové okno aktualizace souhlas v dialogovém okně požadavky.  
   
-5.  Klikněte na tlačítko **OK**.  
+5.  Klikněte na **OK**.  
   
 ## <a name="creating-and-testing-the-setup-program"></a>Vytvoření a otestování instalačního programu  
  Po nastavení aplikace souhlasu aktualizace jako předpoklad pro vaši aplikaci můžete vygenerovat instalační program a zaváděcího nástroje.  
@@ -272,15 +267,15 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 6.  Přečtěte si licenční smlouvu k softwaru a potom klikněte na **přijmout**.  
   
-     Zobrazí se dialogové okno souhlasu aktualizace aplikace a následující text: aplikace, který se chystáte nainstalovat zkontroluje nejnovější aktualizace na webu. Kliknutím na souhlasím autorizujete aplikaci vyhledat aktualizace automaticky na Internetu.  
+     Dialogové okno souhlasu aktualizace aplikace se zobrazí a zobrazí následující text: Aplikace, která se chystáte nainstalovat zkontroluje nejnovější aktualizace na webu. Kliknutím na souhlasím autorizujete aplikaci vyhledat aktualizace automaticky na Internetu.  
   
 7.  Ukončete aplikaci nebo klikněte na tlačítko Storno.  
   
-     Aplikace zobrazí chybu: došlo k chybě při instalaci součástí systému pro *ApplicationName*. Instalace nemůže pokračovat, dokud nebudou všechny součásti systému úspěšně nainstalovány.  
+     Aplikace zobrazí chybu: Došlo k chybě při instalaci součástí systému pro *ApplicationName*. Instalace nemůže pokračovat, dokud nebudou všechny součásti systému úspěšně nainstalovány.  
   
-8.  Klikněte na tlačítko Podrobnosti a zobrazit tato chybová zpráva: komponenty aktualizace dialogové okno souhlasu se nepodařilo nainstalovat se následující chybová zpráva: "Automatické aktualizace nejsou povoleny." Následující součásti se nepodařilo nainstalovat: – dialogové okno souhlasu aktualizace  
+8.  Klikněte na tlačítko Podrobnosti a zobrazit tato chybová zpráva: Dialogové okno souhlasu na komponenty aktualizace se nezdařila instalace se následující chybová zpráva: "Automatické aktualizace nejsou povoleny." Následující součásti se nepodařilo nainstalovat: – dialogové okno souhlasu aktualizace  
   
-9. Klikněte na tlačítko **Zavřít**.  
+9. Klikněte na **Zavřít**.  
   
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Vytvořit a otestovat instalační program kliknutím na souhlasím  
   
@@ -298,7 +293,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 6.  Přečtěte si licenční smlouvu k softwaru a potom klikněte na **přijmout**.  
   
-     Zobrazí se dialogové okno souhlasu aktualizace aplikace a následující text: aplikace, který se chystáte nainstalovat zkontroluje nejnovější aktualizace na webu. Kliknutím na souhlasím autorizujete aplikaci vyhledat aktualizace automaticky na Internetu.  
+     Dialogové okno souhlasu aktualizace aplikace se zobrazí a zobrazí následující text: Aplikace, která se chystáte nainstalovat zkontroluje nejnovější aktualizace na webu. Kliknutím na souhlasím autorizujete aplikaci vyhledat aktualizace automaticky na Internetu.  
   
 7.  Klikněte na tlačítko **souhlasím**a potom klikněte na tlačítko **pokračovat**.  
   
@@ -309,9 +304,6 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
 ## <a name="see-also"></a>Viz také  
  [Nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md)   
  [Vytváření balíčků Bootstrapperu](../deployment/creating-bootstrapper-packages.md)   
- [Postupy: vytvoření manifestu produktu](../deployment/how-to-create-a-product-manifest.md)   
- [Postupy: vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md)   
+ [Postupy: Vytvoření manifestu produktu](../deployment/how-to-create-a-product-manifest.md)   
+ [Postupy: Vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md)   
  [Referenční schéma balíčku a produktu](../deployment/product-and-package-schema-reference.md)
-
-
-

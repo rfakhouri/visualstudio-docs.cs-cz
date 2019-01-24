@@ -1,26 +1,21 @@
 ---
 title: Architektura modulu Plug-in správy zdrojového | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c7ded33f6296d9ddb0b87a3d2916a95249169f82
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 370f88ce4d8fc372ce31e1e85e88d5379f4e1ba5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794559"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architektura modulu plug-in správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Můžete přidat podporu zdrojového ovládacího prvku [!INCLUDE[vsprvs](../../
   
  Specifikace rozhraní API modulu Plug-in zdroje ovládacího prvku umožňuje využívat všechny systému správy zdrojového kódu podle vašeho výběru, vytváření knihovny DLL správy zdrojového kódu s požadovanou sadu funkcí, které jsou implementovány v souladu s rozhraní API modulu Plug-in zdroje ovládacího prvku.  
   
-## <a name="components"></a>Součásti  
+## <a name="components"></a>Komponenty  
  Zdrojový balíček adaptér ovládacího prvku v diagramu je součástí integrovaného vývojového prostředí, který překládá uživatelského požadavku pro operaci správy zdrojových kódů do volání funkce podporuje modul plug-in správy zdrojového kódu. K tomu dojde rozhraní IDE a modulu plug-in správy zdrojového kódu musí mít platné dialogového okna, který předává informace vpřed a zpět mezi integrovaného vývojového prostředí a modulu plug-in. Pro toto dialogové okno uskutečnit musí oba mluvit stejný jazyk. Rozhraní API modulu Plug-in zdroje ovládacího prvku uvedených v této dokumentaci je běžné slovník pro tuto výměnu.  
   
  ![Zdrojový kód Diagram architektury správy](../../extensibility/internals/media/vs-sccsdk-plug-in-arch.gif "vs_sccsdk_plug_in_arch")  
@@ -48,4 +43,3 @@ Diagram architektury znázorňující interakce mezi VS a Správa zdrojového k�
  [Ovládací prvek moduly plug-in zdrojového kódu](../../extensibility/source-control-plug-ins.md)   
  [Glosář](../../extensibility/source-control-plug-in-glossary.md)   
  [Vytvoření modulu plug-in správy zdrojového kódu](../../extensibility/internals/creating-a-source-control-plug-in.md)
-

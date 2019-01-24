@@ -1,27 +1,22 @@
 ---
 title: Nasazení vlastních úvodních stránek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 32527208fc33f1868ff13e7fda84bc4082126c00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795109"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781496"
 ---
 # <a name="deploying-custom-start-pages"></a>Nasazení vlastních úvodních stránek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Vlastní úvodní stránky můžete nasadit pomocí nasazení VSIX nebo kopírov
   
 - Přidáním vlastní úvodní stránku soubory do prázdný projekt VSIX. Další informace najdete v tématu [šablonou projektu VSIX](../extensibility/vsix-project-template.md).  
   
-- Tím, že ručně vytvoříte soubor VSIX. Další informace najdete v tématu [postupy: ruční balíček rozšíření (nasazení VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Tím, že ručně vytvoříte soubor VSIX. Další informace najdete v tématu [jak: Ručně balíček rozšíření (nasazení VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Pro Visual Studio k rozpoznání úvodní stránku `Content Element` musí obsahovat manifestu VSIX `CustomExtension Element` , který má `Type` atribut nastaven na `"StartPage"`. Úvodní stránka rozšíření, nainstalované prostřednictvím VSIX nasazení se zobrazí v **přizpůsobit úvodní stránku** seznamu **spuštění** možnosti stránce jako **[nainstalované rozšíření]** *Název rozšíření*.  
   
@@ -76,9 +71,9 @@ Vlastní úvodní stránky můžete nasadit pomocí nasazení VSIX nebo kopírov
   
 4.  Upravit .pkgdef nastavit výchozí úvodní stránky v části HKLM přidáním následujícího kódu, kde *MyStartPage.xaml* je název souboru XAML, který obsahuje úvodní stránku.  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
-     "Uri"="$ $PackageFolder\\*MyStartPage.xaml*"  
+     "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
      Říká Visual jednoduchému vás pod rouškou v novém umístění úvodní stránku.  
   
@@ -98,4 +93,3 @@ Vlastní úvodní stránky můžete nasadit pomocí nasazení VSIX nebo kopírov
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Přidání uživatelského ovládacího prvku na úvodní stránku](../extensibility/adding-user-control-to-the-start-page.md)
-

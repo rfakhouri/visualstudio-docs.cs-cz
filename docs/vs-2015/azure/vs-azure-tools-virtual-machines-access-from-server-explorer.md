@@ -2,7 +2,7 @@
 title: Přístup k Azure Virtual Machines z Průzkumníka serveru | Dokumentace Microsoftu
 description: Získat přehled o tom, jak zobrazit, vytvářet a spravovat virtuální počítače Azure (VM) v Průzkumníku serveru v sadě Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: e1410b3dc60ec9689b6582e794aaf10cd13092aa
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 6d6b35218355db686a4154928e5529d213e733d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779696"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Přístup ke službě Azure Virtual Machines z Průzkumníka serveru
 
@@ -41,5 +41,5 @@ Pokud máte virtuální počítače hostované v Azure, můžete k nim přistupo
    | --- | --- |
    | Název |Identifikátor pro koncový bod. |
    | Privátní Port |Port pro přístup k síti, interním do vaší aplikace. |
-   | Protokol |Protokol, který používá přenosové vrstvy pro tento koncový bod TCP nebo UDP. |
+   | Protocol (Protokol) |Protokol, který používá přenosové vrstvy pro tento koncový bod TCP nebo UDP. |
    | Veřejný Port |Port, který se používá pro veřejný přístup k aplikaci. |

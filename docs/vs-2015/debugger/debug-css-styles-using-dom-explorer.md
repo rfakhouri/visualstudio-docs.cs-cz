@@ -1,14 +1,9 @@
 ---
 title: Ladění stylů CSS pomocí Průzkumníka modelu DOM | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780001"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Ladění stylů CSS pomocí průzkumníka modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +103,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 6.  Přepněte do aplikace Visual Studio a klikněte na tlačítko **vybrat Element** v Průzkumníku modelu DOM (nebo stiskněte kombinaci kláves Ctrl + B). Změní se režim výběru, takže budete moci kliknutím vybrat položku a aplikace se zobrazí v popředí. Po kliknutí se režim přepne zpět. Tady je **vybrat Element** tlačítko. ![Vybrat Element v Průzkumníku modelu DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  Můžete také vybrat elementy HTML přímo v průzkumníku modelu DOM. Další informace o výběru elementů naleznete v tématu [rychlý start: ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Můžete také vybrat elementy HTML přímo v průzkumníku modelu DOM. Další informace o výběru elementů naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 7.  V simulátoru, umístěte kurzor na název první položky v seznamu **název skupiny: 1**, v levém panelu domovské stránky. Název je zvýrazněn, jak je znázorněno zde:  
   
@@ -166,6 +161,3 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  [Ladění rozložení pomocí Průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Zobrazení naslouchacích procesů událostí DOM](../debugger/view-dom-event-listeners.md)   
  [Technická podpora a usnadnění přístupu](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

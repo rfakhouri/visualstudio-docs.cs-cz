@@ -1,12 +1,9 @@
 ---
 title: Řešení potíží s odkazy na služby | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804666"
 ---
 # <a name="troubleshooting-service-references"></a>Řešení potíží s odkazy na služby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Toto téma obsahuje seznam běžných problémů, které mohou nastat při prác
 -   V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt knihovny služby WCF a klikněte na tlačítko **sestavení**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Chyba při přístupu ke službě přes vzdálenou plochu
- Když uživatel pracuje s WCF hostované webové služby přes připojení ke vzdálené ploše a uživatel nemá oprávnění správce, bude použito ověřování NTLM. Pokud uživatel nemá oprávnění správce, uživatel může zobrazit následující chybová zpráva: "požadavek HTTP Neoprávněný se schématem autorizace klienta"Anonymní". Záhlaví ověření přijaté ze serveru byla: NTLM"."
+ Když uživatel pracuje s WCF hostované webové služby přes připojení ke vzdálené ploše a uživatel nemá oprávnění správce, bude použito ověřování NTLM. Pokud uživatel nemá oprávnění správce, uživatel může zobrazit následující chybová zpráva: "Požadavek HTTP Neoprávněný se schématem autorizace klienta"Anonymní". Záhlaví ověření přijaté ze serveru byla: NTLM"."
 
  Chcete-li vyřešit tuto chybu:
 
@@ -79,9 +76,9 @@ Toto téma obsahuje seznam běžných problémů, které mohou nastat při prác
 
 3.  Ujistěte se, že **zobrazit pokročilé konfigurace sestavení** zaškrtávací políčko zaškrtnuto a pak klikněte na **OK**.
 
-4.  Načtěte projekt služby WCF. Další informace najdete v tématu [NIB postupy: vytváření řešení vícenásobného projektu](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4.  Načtěte projekt služby WCF. Další informace najdete v tématu [NIB jak: Vytváření řešení vícenásobného projektu](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
+5.  V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
 
 6.  V **Průzkumníka řešení**, vyberte projekt služby WCF.
 

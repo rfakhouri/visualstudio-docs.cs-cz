@@ -1,23 +1,19 @@
 ---
 title: Slovník vizuálního jazyka
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 498c653800618a5f7a41f68df92e7345ea04cd8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dc64cd1d1a4fae8703f95aa4c2da9b2bb5b363cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839395"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796589"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Slovník vizuálního jazyka pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -244,9 +240,9 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 |**Manifest**|![Ikona manifestu](../../extensibility/ux-guidelines/media/vld-c-manifest.png "VLD_C_Manifest")|![Ikona pro úpravy manifestu](../../extensibility/ux-guidelines/media/vld-c-manifest-editmanifest.png "VLD_C_Manifest_EditManifest") úpravy manifestu ![ikonu manifest rozšíření správce](../../extensibility/ux-guidelines/media/vld-c-manifest-extensionmanagermanifest.png "VLD_C_Manifest_ExtensionManagerManifest")Manifest rozšíření správce ![novou ikonu manifest aplikace](../../extensibility/ux-guidelines/media/vld-c-manifest-newapplicationmanifest.png "VLD_C_Manifest_NewApplicationManifest") nový manifest aplikace|
 |**Značky**|![Ikona značky](../../extensibility/ux-guidelines/media/vld-c-markup.png "VLD_C_Markup")|![Ikona chyby značky](../../extensibility/ux-guidelines/media/vld-c-markup-markuperror.png "VLD_C_Markup_MarkupError") značky chyba ![ikona značky značek](../../extensibility/ux-guidelines/media/vld-c-markup-tag.png "VLD_C_Markup_Tag") značek značka ![značku nebo událost Ikona fragment](../../extensibility/ux-guidelines/media/vld-c-markup-tagoreventsnippet.png "VLD_C_Markup_TagOrEventSnippet") fragment značky nebo událost ![ikona značky shoda](../../extensibility/ux-guidelines/media/vld-c-markup-matchtag.png "VLD_C_Markup_MatchTag") odpovídat značky ![ Upravit ikonu značky](../../extensibility/ux-guidelines/media/vld-c-markup-edittag.png "VLD_C_Markup_EditTag") upravit značku|
 |**Značek** koncept slouží také jako prvek v několika složené koncepty.|||
-|**Značky: HTML (web)**|![Značky: HTML &#40;webové&#41; ikonu](../../extensibility/ux-guidelines/media/vld-c-markuphtml-web.png "VLD_C_MarkupHTML_web")|![Ikona souboru HTML](../../extensibility/ux-guidelines/media/vld-c-markuphtml-web-htmlfile.png "VLD_C_MarkupHTML_web_HTMLFile") soubor HTML|
+|**Značky: HTML (web)**|![Značky: HTML &#40;web&#41; icon](../../extensibility/ux-guidelines/media/vld-c-markuphtml-web.png "VLD_C_MarkupHTML_web")|![Ikona souboru HTML](../../extensibility/ux-guidelines/media/vld-c-markuphtml-web-htmlfile.png "VLD_C_MarkupHTML_web_HTMLFile") soubor HTML|
 |**Značky: XAML (WPF)**|![Značky: XAML &#40;WPF&#41; ikonu](../../extensibility/ux-guidelines/media/vld-c-markupxaml-wpf.png "VLD_C_MarkupXAML_wpf")|![Ikona aplikace WPF](../../extensibility/ux-guidelines/media/vld-c-markupxaml-wpf-wpfapplication.png "VLD_C_MarkupXAML_wpf_WPFApplication") aplikace WPF ![ikona VB aplikace prohlížeče WPF](../../extensibility/ux-guidelines/media/vld-c-markupxaml-wpf-wpfbrowserapplicationvb.png "VLD_C_MarkupXAML_wpf_WPFBrowserApplicationVB ") Aplikace WPF pro prohlížeč VB ![ikonu Knihovna ovládacího prvku WPF](../../extensibility/ux-guidelines/media/vld-c-markupxaml-wpf-wpfcontrollibrary.png "VLD_C_MarkupXAML_wpf_WPFControlLibrary") Knihovna ovládacích prvků WPF|
-|**Značky: XML**|![Značky: – Značka XML](../../extensibility/ux-guidelines/media/vld-c-markupxml.png "VLD_C_MarkupXML")|![Znovu načíst XML ikonu](../../extensibility/ux-guidelines/media/vld-c-markupxml-reloadxml.png "VLD_C_MarkupXML_ReloadXML") znovu načíst XML ![ikonu souboru XML](../../extensibility/ux-guidelines/media/vld-c-markupxml-xmlfile.png "VLD_C_MarkupXML_XMLFile") souboru XML|
+|**Značky: XML**|![Značky: XML tag](../../extensibility/ux-guidelines/media/vld-c-markupxml.png "VLD_C_MarkupXML")|![Znovu načíst XML ikonu](../../extensibility/ux-guidelines/media/vld-c-markupxml-reloadxml.png "VLD_C_MarkupXML_ReloadXML") znovu načíst XML ![ikonu souboru XML](../../extensibility/ux-guidelines/media/vld-c-markupxml-xmlfile.png "VLD_C_MarkupXML_XMLFile") souboru XML|
 |**Stránky předlohy**|![Hlavní stránce ikonu](../../extensibility/ux-guidelines/media/vld-c-masterpage.png "VLD_C_MasterPage")|![Soubor z nové hlavní ikony](../../extensibility/ux-guidelines/media/vld-c-masterpage-filefromnewmaster.png "VLD_C_MasterPage_FileFromNewMaster") souborů z nové hlavní větve|
 |**Míra**|![Ikona rozměru](../../extensibility/ux-guidelines/media/vld-c-measure.png "VLD_C_Measure")|![Ikona počítané míry](../../extensibility/ux-guidelines/media/vld-c-measure-measurecalculated.png "VLD_C_Measure_MeasureCalculated") míra počítá ![ikonu výraz míry](../../extensibility/ux-guidelines/media/vld-c-measure-measureexpression.png "VLD_C_Measure_MeasureExpression") Výraz míry|
 |**Média** Film|![Ikona média](../../extensibility/ux-guidelines/media/vld-c-media.png "VLD_C_Media")|![Ikona Moje kolekce filmů](../../extensibility/ux-guidelines/media/vld-c-media-mymoviecollection.png "VLD_C_Media_MyMovieCollection") Moje kolekce filmů|
