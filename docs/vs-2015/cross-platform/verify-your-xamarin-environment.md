@@ -1,21 +1,17 @@
 ---
 title: Ověření prostředí Xamarinu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fa7495673b1c063c210a86734811a34af8855740
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 220931b3c00087b778b4c886046795b3f83acaa0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794345"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766994"
 ---
 # <a name="verify-your-xamarin-environment"></a>Ověření prostředí Xamarinu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +61,7 @@ Po dokončení instalační programy (viz [nastavení a instalaci](../cross-plat
   
 > [!NOTE]
 >  V sadě Visual Studio můžete si všimnout přítomnost Android Emulator Manager (AVD) tlačítko na panelu nástrojů (Zobrazit níže), které se otevře Správce zařízení, které se konkrétně používá ke konfiguraci emulátor Google Android.  To nemá žádný vliv na buď emulátor Visual Studia pro Android nebo Xamarin Playeru, z nichž každý má své vlastní Správce zařízení pro konfiguraci profilů.  Zobrazit [představení sady Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blogu Visual Studio ALM) a [přehrávač Xamarin Android](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) podrobnosti.  
-> ![CrossPlat Xamarin ověřte 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin ověřte 7")  
+> ![CrossPlat Xamarin Verify 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  
   
@@ -105,7 +101,7 @@ Po dokončení instalační programy (viz [nastavení a instalaci](../cross-plat
   
         -   Zkontrolujte, že váš účet Apple Id, které se přidá v Xcode na počítači Mac, jak je popsáno v [přidávání účtu do Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Po přidání vašeho účtu, je potřeba restartovat Visual Studio a Xcode.  
   
-             ![CrossPlat Xamarin ověřte 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin ověřte 8")  
+             ![CrossPlat Xamarin Verify 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin Verify 8")  
   
         -   Ověřte v iOS sadu vlastností projektu v systému iOS podpisový kartu, nic pole vlastní oprávnění pro ladění aktivní konfiguraci.  Poznámka: pouze snažte odebrání toto nastavení, pokud jste se setkali výše chybová zpráva.  
   
@@ -117,4 +113,3 @@ Po dokončení instalační programy (viz [nastavení a instalaci](../cross-plat
 2.  V Průvodci instalací pro Xamarin, které se zobrazí, klikněte na tlačítko **Další** a potom **změnu**.  
   
 3.  V seznamu volitelných funkcí pro instalaci, rozbalte **Xamarin pro Visual Studio 2015**, zvolte **nainstaluje na místní disk**a klikněte na tlačítko **Další** přidávání funkce.
-

@@ -1,14 +1,9 @@
 ---
 title: Dialogové okno Příkazový řádek události po sestavení události před sestavením | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
 - vb.ProjectPropertiesBuildEventsBuilder
@@ -38,13 +33,13 @@ ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4c2f0297195dc1a9be23a1dd8aca980a6e32958
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202511"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753375"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Dialogové okno Příkazový řádek události před sestavením/po sestavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -99,8 +94,5 @@ Můžete zadat před nebo po sestavení událostí [stránka události sestaven�
 ## <a name="see-also"></a>Viz také  
  [Specifikace vlastních událostí sestavení v sadě Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [Stránka události sestavení, Návrhář projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
- [Postupy: určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Postupy: Specifikace událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)
-
-
-
+ [Postupy: Určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Postupy: Určení událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)

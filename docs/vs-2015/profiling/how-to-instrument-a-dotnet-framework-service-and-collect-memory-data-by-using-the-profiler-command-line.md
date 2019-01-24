@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: instrumentace rozhraní .NET Framework služby a shromažďování dat paměti pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Instrumentace služby rozhraní .NET Framework a shromažďovat paměťová Data pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 489ca430aa6f2bf510ab8cebb375146502deedef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 45904463abf5d7cd420c938f58eed6f35a2831eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766445"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace služby rozhraní .NET Framework a shromažďování dat paměti pomocí příkazového řádku profileru
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace služby rozhraní .NET Framework a shromažďovat paměťová Data pomocí příkazového řádku Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] služby a shromažďování dat o využití paměti. Můžete shromažďovat data o přidělování paměti, nebo můžete shromažďovat přidělení paměti a životnosti objektů.  
@@ -51,9 +46,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 3. Pomocí Správce řízení služeb nahraďte původní binární soubor instrumentovanou verzí. Ujistěte se, že služby Typ spouštění je nastaven na ručně.  
 
-4. Inicializujte proměnné prostředí profilování. Typ:  
+4. Inicializujte proměnné prostředí profilování. Zadejte:  
 
-    **Vsperfclrenv –** {**/globaltracegc** &#124; **/globaltracegclife**}  
+    **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
    -   **/globaltracegc** a **/globaltracegclife** Povolit shromažďování dat paměti přidělení a objekt životnosti.  
 
@@ -66,7 +61,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 6. Otevřete okno příkazového řádku.  
 
-7. Spusťte profiler. Typ:  
+7. Spusťte profiler. Zadejte:  
 
     **Nástroj VSPerfCmd**[/start](../profiling/start.md) **: trasování**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]      
 
@@ -93,7 +88,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 8. V případě potřeby spusťte službu.  
 
-9. Připojení profileru ke službě. Typ:  
+9. Připojení profileru ke službě. Zadejte:  
 
      **Nástroj VSPerfCmd / připojit:**`PID`&#124;`ProcessName`  
 
@@ -123,7 +118,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
      **/ Shutdown VSPerfCmd**  
 
-3.  Po dokončení veškerého profilování vyčistěte proměnné prostředí profilování. Typ:  
+3.  Po dokončení veškerého profilování vyčistěte proměnné prostředí profilování. Zadejte:  
 
      **Vsperfclrenv – /globaloff**  
 
@@ -134,6 +129,3 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 ## <a name="see-also"></a>Viz také  
  [Profilace služeb](../profiling/command-line-profiling-of-services.md)   
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)
-
-
-

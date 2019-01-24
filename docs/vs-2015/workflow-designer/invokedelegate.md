@@ -1,11 +1,8 @@
 ---
 title: InvokeDelegate | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - InvokeDelegate Designer
@@ -14,13 +11,13 @@ ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3b47a975c12cfcfd02b01925685b47cba47cc1fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 30281d8cd5d5ed94ed89a980006f9618292a778d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798911"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -43,9 +40,9 @@ Následující tabulka ukazuje <xref:System.Activities.Statements.InvokeDelegate
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.Activities.Statements.InvokeDelegate> aktivity. Výchozí hodnota je InvokeDelegate.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> není bezpodmínečně nutné, je osvědčeným postupem je použití jednoho.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Hodnota TRUE|Název <xref:System.Activities.ActivityDelegate> se volá, když tato aktivity spustí. Tato vlastnost se dá upravit na plochu návrháře. Toto je povinná.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Pravda|Název <xref:System.Activities.ActivityDelegate> se volá, když tato aktivity spustí. Tato vlastnost se dá upravit na plochu návrháře. Toto je povinná.|
 |<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Argument kolekce volaný delegát. Klíče jsou názvy <xref:System.Activities.DelegateArgument> objektů <xref:System.Activities.ActivityDelegate> a hodnoty jsou argumenty, jejíž výrazy jsou vyhodnoceny a přiřadili odpovídající <xref:System.Activities.DelegateArgument> objekty. V mřížce vlastností klikněte na tlačítko se třemi tečkami v **DelegateArguments** pole, zobrazí **DelegateArguments** dialogové okno umožňuje tuto vlastnost nastavit. Klikněte na tlačítko **vytvořit Argument** pole, které chcete přidat argumenty.|
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Definování a použití delegátů aktivit v návrháři postupu provádění](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [Postupy: Definice a používání delegátů aktivit v Návrháři postupu provádění](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

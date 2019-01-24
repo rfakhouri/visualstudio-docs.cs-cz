@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: povolení ladění pro aplikace ASP.NET | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Povolit ladění pro aplikace ASP.NET | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749120"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757545"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Postupy: Povolení ladění pro aplikace ASP.NET
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Postupy: Povolit ladění pro aplikace ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud chcete povolit ladění, je nutné ho povolit jak **vlastnosti projektu** stránky a v souboru web.config aplikace.  
@@ -94,8 +89,3 @@ Povolení ladění výrazně ovlivní výkon aplikace [!INCLUDE[vstecasp](../inc
   
 ## <a name="see-also"></a>Viz také  
 [Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
-  
-
-
-
-

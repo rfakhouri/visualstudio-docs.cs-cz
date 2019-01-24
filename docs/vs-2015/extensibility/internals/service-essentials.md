@@ -1,33 +1,28 @@
 ---
-title: Služba Essentials | Dokumentace Microsoftu
-ms.custom: ''
+title: Service Essentials | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90cec13c403194c70b9d44cff349b53495a0e160
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763989"
 ---
 # <a name="service-essentials"></a>Základy služeb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage poskytuje určitou sadu rozhraní pro jiné VSPackage využívat. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je kolekce rozšíření VSPackages, která poskytuje služby do jiné balíků VSPackages.  
   
- Můžete například použít službu SVsActivityLog získat IVsActivityLog rozhraní, který můžete použít k zápisu do protokolu aktivit. Další informace najdete v tématu [postupy: použití protokolu aktivit](../../extensibility/how-to-use-the-activity-log.md).  
+ Můžete například použít službu SVsActivityLog získat IVsActivityLog rozhraní, který můžete použít k zápisu do protokolu aktivit. Další informace najdete v tématu [jak: Použití protokolu aktivit](../../extensibility/how-to-use-the-activity-log.md).  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje také některé integrované služby, které nejsou registrovány. Rozšíření VSPackages můžete nahradit integrované nebo jiných služeb tím, že poskytuje přepsání služby. Smí obsahovat jenom jednu službu přepsání pro libovolnou službu.  
   
@@ -62,11 +57,10 @@ Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage poskyt
   
 -   Rozšíření VSPackages může být poskytovatelů služeb pro objekty, které vytvářejí. Například může formuláře odeslat žádost o službu barva jeho snímek, který může předat požadavky na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Spravované objekty, které jsou vnořeny hluboko, nebo není umístěna vůbec, může volat <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> pro přímý přístup ke službám global services. Další informace najdete v tématu [postupy: použití GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
+-   Spravované objekty, které jsou vnořeny hluboko, nebo není umístěna vůbec, může volat <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> pro přímý přístup ke službám global services. Další informace najdete v tématu [jak: Použít GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Seznam dostupných služeb](../../extensibility/internals/list-of-available-services.md)   
  [Používání a poskytování služeb](../../extensibility/using-and-providing-services.md)   
  [Přetypování a převody typů](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
  [Přetypování](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
-

@@ -1,27 +1,22 @@
 ---
 title: 'Postupy: Export textury s Přednásobeným alfa | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a68f6c58ad7e497dfc0e91e92f2cf40e4bd8d992
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7a06c1bfac60daabb9768b20b6047e99b3df3727
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897532"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757318"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Postupy: Export textury s přednásobeným alfa
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Postupy: Export textury s Přednásobeným alfa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kanál s obsahem obrazu může generovat vynásobené alfa textury ze zdrojového obrazu. To může být jednodušší použít a robustnější než textury, které neobsahují předem vynásobené hodnoty alfa.  
@@ -45,7 +40,7 @@ Kanál s obsahem obrazu může generovat vynásobené alfa textury ze zdrojovéh
   
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Vytvoření textury, která používá předem vynásobené hodnoty alfa  
   
-1. Začněte základní texturou. Načtěte stávající obrazový soubor nebo jej vytvořte podle pokynů v [postupy: vytvoření základní textury](../designers/how-to-create-a-basic-texture.md).  
+1. Začněte základní texturou. Načtěte stávající obrazový soubor nebo jej vytvořte podle pokynů v [jak: Vytvoření základní textury](../designers/how-to-create-a-basic-texture.md).  
   
 2. Nakonfigurujte soubor textury tak, aby byl zpracován kanálem obsahu obrázku. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor textury a klikněte na tlačítko **vlastnosti**. Na **vlastnosti konfigurace**, **Obecné** nastavte **typ položky** vlastnost **kanál obsahu obrazu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastavena na **ne**a klikněte na tlačítko  **Použít** tlačítko. **Kanál obsahu obrazu** se zobrazí stránka pro konfiguraci vlastností.  
   
@@ -54,6 +49,3 @@ Kanál s obsahem obrazu může generovat vynásobené alfa textury ze zdrojovéh
 4. Zvolte **OK** tlačítko.  
   
    Při sestavování projektu kanál obsahu obrazu převede zdrojový obraz z pracovního formátu na výstupní formát, který jste zadali – patří sem převod obrázku na předem vynásobený formát alfa – a výsledek je zkopírován do výstupu projektu adresář.
-
-
-

@@ -1,26 +1,21 @@
 ---
-title: 'Návod: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření sady SDK pomocí C# nebo Visual Basic | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f6ee9bb57b99978e720cc3fa0ab8a647f675a4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763146"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic
+# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Průvodce: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu SDK jednoduché matematické knihovny a pak balíček sady SDK jako Visual Studio Extension (VSIX). Dokončíte následující postupy:  
@@ -120,7 +115,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
   
 22. V **Průzkumníka řešení**, zvolte **SimpleMath.winmd**.  
   
-23. V panelu nabídky zvolte **zobrazení**, **vlastnosti** (klávesnice: klávesou F4).  
+23. V panelu nabídky zvolte **zobrazení**, **vlastnosti** (klávesnice: Stisknutím klávesy F4).  
   
 24. V **vlastnosti** okno Změnit **akce sestavení** vlastnost **obsahu**a potom změňte **zahrnout do VSIX** vlastnost  **Hodnota TRUE**.  
   
@@ -180,6 +175,5 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření sady SDK pomocí jazyka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Návod: Vytvoření sady SDK pomocí jazyka JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Návod: Vytvoření sady SDK pomocí jazyka JavaScript](http://msdn.microsoft.com/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
  [Vytvoření sady SDK (Software Development Kit)](../extensibility/creating-a-software-development-kit.md)
-

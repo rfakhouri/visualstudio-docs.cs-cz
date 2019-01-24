@@ -1,27 +1,22 @@
 ---
 title: Definice položek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796670"
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "49866568"
   
 -   Typy položek může mít několik definic. Při přidání dalších metadat specifikace typu, poslední specifikace přednost. \(Metadata se řídí stejným pořadím importu následujícím způsobem vlastnosti.\)  
   
--   Může být metadata sčítání. Například jsou hodnoty CDefines shromážděna podmíněně, v závislosti na vlastnosti, které jsou nastavena. Například `MT;STD_CALL;DEBUG;UNICODE`.  
+-   Může být metadata sčítání. Například jsou hodnoty CDefines shromážděna podmíněně, v závislosti na vlastnosti, které jsou nastavena. Například, `MT;STD_CALL;DEBUG;UNICODE`.  
   
 -   Metadata se dá odebrat.  
   
@@ -72,7 +67,7 @@ ms.locfileid: "49866568"
 ## <a name="value-sources"></a>Hodnota zdroje  
  Hodnoty pro metadata, která je definována v ItemDefinitionGroup – mohou pocházet z mnoha různých zdrojů, následujícím způsobem:  
   
--   PropertyGroup – vlastnost  
+-   PropertyGroup Property  
   
 -   Položku ze ItemDefinitionGroup –  
   
@@ -247,6 +242,3 @@ ms.locfileid: "49866568"
   
 ## <a name="see-also"></a>Viz také  
  [Dávkování](../msbuild/msbuild-batching.md)
-
-
-

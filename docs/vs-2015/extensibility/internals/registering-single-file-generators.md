@@ -1,27 +1,22 @@
 ---
 title: Registrace generátorů tvořených jedním souborem | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804935"
 ---
 # <a name="registering-single-file-generators"></a>Registrace generátorů tvořených jedním souborem
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,11 +46,11 @@ Zpřístupnit ve vlastní nástroj [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
   
     -   IDENTIFIKÁTOR CLSID  
   
-         Požadováno. Určuje identifikátor knihovně tříd rozhraní komponenty modelu COM, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Povinný parametr. Určuje identifikátor knihovně tříd rozhraní komponenty modelu COM, který implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
     -   GeneratesDesignTimeSource  
   
-         Požadováno. Určuje, zda typy z soubory vytvořené jazykem tohoto vlastního nástroje jsou k dispozici pro vizuální návrháře. Hodnota tohoto parametru musí být 0 (nula) typy nejsou k dispozici pro vizuální návrháře nebo 1 (jeden) pro typy, které jsou k dispozici pro vizuální návrháře.  
+         Povinný parametr. Určuje, zda typy z soubory vytvořené jazykem tohoto vlastního nástroje jsou k dispozici pro vizuální návrháře. Hodnota tohoto parametru musí být 0 (nula) typy nejsou k dispozici pro vizuální návrháře nebo 1 (jeden) pro typy, které jsou k dispozici pro vizuální návrháře.  
   
     > [!NOTE]
     >  Je nutné zaregistrovat vlastní nástroj samostatně pro každý jazyk, pro které chcete vlastní nástroj být k dispozici.  
@@ -84,5 +79,4 @@ Zpřístupnit ve vlastní nástroj [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
  [Implementace generátorů tvořených jedním souborem](../../extensibility/internals/implementing-single-file-generators.md)   
  [Určení výchozí Namespace projektu](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Zveřejnění typů pro vizuální návrhářské nástroje](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Představení objektu BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [Představení objektu BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

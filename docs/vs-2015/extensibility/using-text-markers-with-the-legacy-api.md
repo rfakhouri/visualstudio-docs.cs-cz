@@ -1,26 +1,21 @@
 ---
 title: Text značky pomocí starší verze rozhraní API | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761492"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Text značky pomocí starší verze rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +31,12 @@ Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vli
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: Přidání standardních textových značek](../extensibility/how-to-add-standard-text-markers.md)|Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor k zobrazení textu.|  
-|[Postupy: Implementace chybových značek](../extensibility/how-to-implement-error-markers.md)|Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou.|  
-|[Postupy: Vytvoření vlastních textových značek](../extensibility/how-to-create-custom-text-markers.md)|Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu.|  
-|[Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md)|Vysvětluje, jak přidat text značky.|  
+|[Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)|Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor k zobrazení textu.|  
+|[Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)|Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou.|  
+|[Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)|Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu.|  
+|[Postupy: Použití značek Text](../extensibility/how-to-use-text-markers.md)|Vysvětluje, jak přidat text značky.|  
 |[Práce v základní editoru](../extensibility/inside-the-core-editor.md)|Popisuje funkce základní editor a poskytuje podrobné informace o tom, jak přizpůsobit základní editor.|  
-|[Funkce editoru](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Popisuje funkce dostupné v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor.|  
+|[Funkce editoru](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Popisuje funkce dostupné v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor.|  
   
 ## <a name="reference"></a>Odkaz  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vli
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  Poskytuje přístup k a nastaví pozici textu značky ve vyrovnávací paměti textu pomocí jednorozměrné souřadnice. Pokud je to možné, nepoužívejte toto rozhraní.
-

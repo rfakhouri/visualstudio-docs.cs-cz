@@ -2,7 +2,7 @@
 title: Jak migrovat a publikovat webovou aplikaci do cloudové služby Azure
 description: Další informace o migraci a publikování vašich webových aplikací na cloudové služby Azure pomocí sady Visual Studio
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: dd81e33d34cd3e61c01e62f941edd074304499be
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 90e98f22cabcc15287a5bfffc07ff1a3538835b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53072789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805541"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: migrace a publikovat webovou aplikaci do cloudové služby Azure ze sady Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: Migrace a publikování webové aplikace do cloudové služby Azure ze sady Visual Studio
 
 Pokud chcete využít výhod hostitelských služeb a schopnost škálování Azure, může být vhodné k migraci a nasazení vaší webové aplikace do cloudové služby Azure. Je nutné provést jenom minimální změny. Tento článek se týká nasazení do cloudové služby. App Service, najdete v části [nasazení webové aplikace ve službě Azure App Service](/azure/app-service/app-service-deploy-local-git).
 

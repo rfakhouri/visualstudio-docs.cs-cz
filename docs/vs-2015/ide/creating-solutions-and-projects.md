@@ -1,14 +1,9 @@
 ---
 title: Vytváření projektů a řešení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -22,13 +17,13 @@ ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763111"
 ---
 # <a name="creating-solutions-and-projects"></a>Vytváření řešení a projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49893699"
 Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení aplikace. Při vytváření projektu výběrem **souboru &#124; nový &#124; projektu** v hlavní nabídce [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vytvoří řešení, které ho obsahuje. Potom přidáte další nové nebo existující projekty do řešení v případě potřeby. Můžete vytvářet projekty z existujících souborů kódu a můžete vytvořit dočasné projekty (pouze .NET), který bude odstraněn, až budete hotovi s nimi.  
   
 > [!NOTE]
->  Popisy v tomto tématu jsou založeny na Visual Studio Community edition. Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch zde popsaných v závislosti na vašem nastavení nebo verzi systému Visual Studio. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Popisy v tomto tématu jsou založeny na Visual Studio Community edition. Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch zde popsaných v závislosti na vašem nastavení nebo verzi systému Visual Studio. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Vytvoření projektu ze šablony projektu nainstalované  
  **Soubor &#124; nový &#124; projektu** v hlavní nabídce zobrazíte dialogové okno Nový projekt. V levém podokně v části **Intalled &#124; šablony** zvolili programovací jazyk a platformu nebo technologii, a potom vyberte z dostupných šablon v prostředním podokně.  
@@ -100,7 +95,4 @@ Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení apl
   
 ## <a name="see-also"></a>Viz také  
  [Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB postupy: vytváření řešení vícenásobného projektu](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
-
-
-
+ [NIB jak: Vytváření řešení vícenásobného projektu](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

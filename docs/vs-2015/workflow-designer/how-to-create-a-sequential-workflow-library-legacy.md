@@ -1,11 +1,8 @@
 ---
-title: 'Postupy: vytvoření knihovny sekvenčního pracovního postupu (starší verze) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření knihovny sekvenčního pracovního postupu (starší verze) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - sequential workflows, creating library
@@ -16,20 +13,20 @@ ms.assetid: 9433ccf3-1eab-4d53-90ff-2e7b2341676c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1a2f1801392c1edecec2fa26ec35c9d1728bc1c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1f70fc8e9e1c139226dd90ce9d63abae38b9397e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759849"
 ---
-# <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Postupy: vytvoření knihovny sekvenčního pracovního postupu (starší verze)
+# <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Postupy: Vytvoření knihovny sekvenčních pracovních postupů (starší verze)
 Postupujte podle těchto kroků a vytvořte projekt knihovny sekvenčních pracovních postupů pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-sequential-workflow-library-project"></a>Vytvoření projektu knihovny sekvenčního pracovního postupu  
   
-1.  Spusťte sadu Visual Studio.  
+1.  Spusťte Visual Studio.  
   
 2.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.  
   
@@ -50,8 +47,8 @@ Postupujte podle těchto kroků a vytvořte projekt knihovny sekvenčních praco
   
      Pokud chcete řešení adresář vytvořený pro projekt, vyberte **vytvořit adresář pro řešení** zaškrtněte políčko a zadejte název do pole **název řešení** pole.  
   
-8.  Klikněte na tlačítko **OK**.  
+8.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Styly pro tvorbu pracovního postupu](http://msdn.microsoft.com/en-us/aacf4ec6-da05-4974-958a-974769dda739)
+ [Styly pro tvorbu pracovního postupu](http://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)

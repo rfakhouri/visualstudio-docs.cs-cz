@@ -1,25 +1,22 @@
 ---
 title: Výběr šablony řešení jazyka specifického pro doménu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 ms.assetid: 9c05955f-1548-4df6-b09b-4b348823c237
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803550"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Výběr šablony řešení jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ K vytváření řešení jazyka specifického pro doménu, vyberte jednu z šabl
 > [!NOTE]
 >  Účel šablony je poskytnout výchozí DSL. Šablony s názvem třídy a komponenty diagramy nejsou úplné diagramy UML. Pokud chcete vytvořit UML model, vezměte v úvahu nástroje, které poskytují sadu diagramy, které jsou integrované jednoho modelu pomocí modelování UML. Jsou rozšiřitelný a je možné integrovat se službou vašeho DSL pomocí ModelBus. Další informace najdete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).  
   
-|Šablony|Funkce|Popis|  
+|Šablona|Funkce|Popis|  
 |--------------|--------------|-----------------|  
 |Diagramy tříd|-Oddíl obrazce<br />– Dědičnost třída<br />-Vztah dědičnosti<br />– Obrazec dědičnosti<br />– Vlastnosti relace|Pomocí této šablony řešení jazyka specifického pro doménu obsahuje entity a vztahy, které mají vlastnosti. Tato šablona vytvoří jazyka specifického pro doménu, která se podobá diagramů tříd UML. Hlavní entity jsou třídy a rozhraní, společně s relací asociace, generalizace a implementaci. Třídy nebo rozhraní se zobrazí jako pole, která obsahuje seznam atributů.|  
 |Diagramy komponent|-Porty|Pomocí této šablony řešení jazyka specifického pro doménu obsahuje součásti, tedy součástí softwaru system. Tato šablona vytvoří jazyka specifického pro doménu, která se podobá diagramy komponent UML. Hlavní entity jsou komponenty a porty, které se zobrazí jako malá tvary na povrchu komponenty.|  
@@ -43,6 +40,3 @@ K vytváření řešení jazyka specifického pro doménu, vyberte jednu z šabl
   
 ## <a name="see-also"></a>Viz také  
  [Přehled Nástrojů DSL](../modeling/overview-of-domain-specific-language-tools.md)
-
-
-

@@ -1,11 +1,8 @@
 ---
 title: ParallelForEach&lt;T&gt; Návrhář aktivity | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
@@ -13,13 +10,13 @@ ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: eb97ba6abb40c34d03e612c346e2c721719024de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 825906f3de1b2d40d96dc19ed45d2a368d889994
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216395"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803653"
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; návrháře aktivit
 <xref:System.Activities.Statements.ParallelForEach%601> Aktivita vytváří výčet prvků kolekce a provede vloženým příkazem pro každý prvek kolekce paralelně, který je asynchronně ve stejném vlákně. Tuto aktivitu toku řízení místo použijte <xref:System.Activities.Statements.Sequence> aktivitu, pokud se očekává, že podřízené aktivity této aktivity přejít nečinnosti.  
@@ -45,8 +42,8 @@ ms.locfileid: "49216395"
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje popisný Zobrazovaný název návrháře aktivit v záhlaví. Výchozí hodnota je **ParallelForEach\<Int32 >**. Hodnota může volitelně můžete upravit v **vlastnosti** mřížky nebo přímo v hlavičce návrháře aktivit.|  
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Aktivity ke spuštění pro každou položku v kolekci. Chcete-li přidat <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> aktivity, rozevírací aktivitu z panelu nástrojů do **tělo** pole na **ParallelForEach\<T >** Návrhář aktivity s text nápovědy "Aktivity Sem přetáhněte".|  
-|**TypeArgument**|Hodnota TRUE|Typ položky v <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> kolekci specifikované souborem obecný parametr *T*. Ve výchozím nastavení **TypeArgument** je nastavena na **Int32**. Chcete-li změnit typ T v **ParallelForEach\<T >** Návrhář aktivity, změňte hodnotu **TypeArgument** – pole se seznamem v mřížce vlastností.|  
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Hodnota TRUE|Kolekce položek, které chcete iterovat. Chcete-li nastavit <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, zadejte [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] výrazu v **hodnoty** pole na **ForEach\<T >** návrháře aktivit v poli s text nápovědy "Zadejte výraz jazyka" nebo v **Hodnoty** pole na **vlastnosti** okna.|  
+|**TypeArgument**|Pravda|Typ položky v <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> kolekci specifikované souborem obecný parametr *T*. Ve výchozím nastavení **TypeArgument** je nastavena na **Int32**. Chcete-li změnit typ T v **ParallelForEach\<T >** Návrhář aktivity, změňte hodnotu **TypeArgument** – pole se seznamem v mřížce vlastností.|  
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Pravda|Kolekce položek, které chcete iterovat. Chcete-li nastavit <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, zadejte [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] výrazu v **hodnoty** pole na **ForEach\<T >** návrháře aktivit v poli s text nápovědy "Zadejte výraz jazyka" nebo v **Hodnoty** pole na **vlastnosti** okna.|  
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Vyhodnocuje po každé iteraci dokončí. Pokud je vyhodnocen jako true, pak plánované čekající na zrušení iterací. Pokud není tato vlastnost nastavena, všechny plánované příkazy spustit až do dokončení.|  
   
  Ve výchozím nastavení iterace smyčky je název položky. Můžete změnit název proměnné iterátoru v **ForEach** pole **ParallelForEach\<T >** návrháře aktivit. Iterace smyčky můžete použít ve výrazech v podřízených položek <xref:System.Activities.Statements.ParallelForEach%601> aktivity.  

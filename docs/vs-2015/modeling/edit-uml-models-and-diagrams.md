@@ -1,12 +1,9 @@
 ---
 title: Úpravy modelů a diagramů UML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777449"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Úpravy modelů a diagramů UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ Můžete vytvořit a upravit model UML prostřednictvím zobrazení poskytuje n�
   
  **Každý projekt modelování nemá jedné sadě změn.** Všechny změny provedené modelu a diagramy jsou uloženy v tomto zásobníku. Zásobník obsahuje také změny fokus z jednoho diagramu do druhého. Příkaz Undo obrátí změny v tomto zásobníku.  
   
- Například Řekněme, že můžete provádět tyto operace: proveďte změnu Diagram1; Změňte fokus na Diagram 2; Změňte Diagram2. Při vrácení změn zpět první vrátíte zpět poslední změny; Další vrácení zpět se zpět do diagramu 1; přesunout fokus a třetí zpět vrátíte zpět změnu na hodnotu 1 diagramu.  
+ Například Řekněme, že můžete provádět tyto operace: Proveďte změnu Diagram1; Změňte fokus na Diagram 2; Změňte Diagram2. Při vrácení změn zpět první vrátíte zpět poslední změny; Další vrácení zpět se zpět do diagramu 1; přesunout fokus a třetí zpět vrátíte zpět změnu na hodnotu 1 diagramu.  
   
  **Zavření diagramu zkrátí sady změn.** Pokud zavřete diagram nelze vrátit zpět změny, které jste provedli v tomto diagramu a modelu nebo některý z jeho diagramy dřívější změny nejde vrátit zpět.  
   
@@ -219,7 +216,7 @@ Můžete vytvořit a upravit model UML prostřednictvím zobrazení poskytuje n�
      Obrazec za předpokladu, že se zobrazení prvku modelu, které mohou být kromě zobrazení na jiných diagramů nebo na stejném diagramu.  
   
     > [!NOTE]
-    >  Účinek se liší, když přetahujete třídy nebo komponenty do sekvenčního diagramu. V takovém případě se vytvoří nové životnosti, jehož typ je této třídě nebo komponenty. Další informace najdete v tématu [sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md).  
+    >  Účinek se liší, když přetahujete třídy nebo komponenty do sekvenčního diagramu. V takovém případě se vytvoří nové životnosti, jehož typ je této třídě nebo komponenty. Další informace najdete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Přidat nové zobrazení prvku modelu s použitím Vložit odkaz  
   
@@ -274,7 +271,7 @@ Můžete vytvořit a upravit model UML prostřednictvím zobrazení poskytuje n�
    Diagram nelze replikovat zkopírováním a vložením v Průzkumníku řešení.  
   
 ##  <a name="Deleting"></a> Odstranění prvku modelu a jeho zobrazení  
- Některé typy prvků, konkrétně třídění, můžete odebrat z diagramu bez jejich odstranění z modelu. Třídění jsou hlavní prvky, které jsou zobrazeny v diagramech tříd, diagramů komponent a diagramy případů použití. Můžete se zobrazí na více než jeden diagram. Pro tyto typy elementů jsou dva různé příkazy: **odebrat z diagramu** a **odstranit z modelu**.  
+ Některé typy prvků, konkrétně třídění, můžete odebrat z diagramu bez jejich odstranění z modelu. Třídění jsou hlavní prvky, které jsou zobrazeny v diagramech tříd, diagramů komponent a diagramy případů použití. Můžete se zobrazí na více než jeden diagram. Pro tyto typy elementů jsou dva různé příkazy: **Odebrat z diagramu** a **odstranit z modelu**.  
   
  Naopak když odstraníte relaci z diagramu, vždy odstraňujete ho z modelu.  
   
@@ -323,7 +320,7 @@ Můžete vytvořit a upravit model UML prostřednictvím zobrazení poskytuje n�
   
 -   Přidat poznámky a vysvětlení k prvkům modelu, můžete vytvořit poznámky a propojit je s prvky.  
   
--   Chcete-li elegantně zarovnat sloupec nebo řádek tvary v diagramu, můžete nainstalovat příkazu Zarovnat obrazce. Tato možnost je dostupná jako ukázka rozšíření UML: [UML: příkaz pro zarovnání tvarů](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   Chcete-li elegantně zarovnat sloupec nebo řádek tvary v diagramu, můžete nainstalovat příkazu Zarovnat obrazce. Toto je k dispozici jako ukázka rozšíření UML:  [UML: Příkaz pro zarovnání tvarů](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>Chcete-li exportovat diagram jako obrázek  
  Další informace najdete v tématu [exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md).  
@@ -345,6 +342,3 @@ Můžete vytvořit a upravit model UML prostřednictvím zobrazení poskytuje n�
  [Vytvoření modelování projektů a diagramů UML](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)   
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)
-
-
-

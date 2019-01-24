@@ -1,13 +1,8 @@
 ---
 title: V jazyce C++ specifikátory formátu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769675"
 ---
 # <a name="format-specifiers-in-c"></a>Specifikátory formátu v jazyce C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,8 +69,8 @@ int main() {
 |Specifikátor|Formát|Původní hodnota Watch|Zobrazená hodnota|  
 |---------------|------------|--------------------------|---------------------|  
 |d|Desítkové celé číslo|0x00000066|102|  
-|O|osmičkové celé číslo bez znaménka|0x00000066|000000000146|  
-|x<br /><br /> **h**|Šestnáctkové celé číslo|102|0xCCCCCCCC|  
+|o|osmičkové celé číslo bez znaménka|0x00000066|000000000146|  
+|x<br /><br /> **h**|Šestnáctkové celé číslo|102|0xcccccccc|  
 |X<br /><br /> **H**|Šestnáctkové celé číslo|102|0xCCCCCCCC|  
 |c|jeden znak|0x0065, c|101 "e"|  
 |s|const char * řetězec|\<umístění > "hello world"|"hello world"|  
@@ -92,7 +87,7 @@ int main() {
 |**na**|Potlačí adresa paměti ukazatele na objekt.|\<umístění >, {člen = hodnota...}|{člen = hodnota...}|  
 |**ND.**|Zobrazí pouze základní informace o třídě, ignoruje odvozené třídy|`(Shape*) square` zahrnuje základní třída a odvozené informace o třídě|Zobrazí pouze základní informace o třídě|  
 |hr|Kód chyby HRESULT nebo Win32. (Ladicí program nyní dekóduje hodnoty HRESULT automaticky, takže v těchto případech není tento specifikátor vyžadován.|S_OK|S_OK|  
-|RC|Příznak třídy okna|0x0010|WC_DEFAULTCHAR|  
+|wc|Příznak třídy okna|0x0010|WC_DEFAULTCHAR|  
 |wm|Čísla zpráv Windows|16|WM_CLOSE|  
 |!|Formát RAW ignorující přizpůsobení zobrazení typu všech dat|\<přizpůsobit reprezentace >|4|  
   
@@ -104,7 +99,7 @@ int main() {
   
 |Specifikátor|Formát|Původní hodnotaN Watch|Zobrazená hodnota|  
 |---------------|------------|---------------------------|---------------------|  
-|n|Desetinné nebo **šestnáctkové** celé číslo|pBuffer [32]<br /><br /> pBuffer,**[0x20]**|Zobrazí `pBuffer` jako 32 prvek pole.|  
+|n|Desetinné nebo **šestnáctkové** celé číslo|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Zobrazí `pBuffer` jako 32 prvek pole.|  
 |**[exp]**|Platný výraz jazyka C++, který je vyhodnocen jako celé číslo.|pBuffer [bufferSize]|Zobrazí pBuffer jako pole `bufferSize` elementy.|  
 |**expand(n)**|Platný výraz jazyka C++, který je vyhodnocen jako celé číslo|pBuffer, expand(2)|Zobrazí třetího prvku pole  `pBuffer`|  
   
@@ -115,19 +110,19 @@ int main() {
 |---------------|------------|--------------------------|---------------------|  
 |**d, můžu**|desítkové celé číslo se znaménkem|0xF000F065|-268373915|  
 |**u**|desítkové celé číslo bez znaménka|0x0065|101|  
-|O|osmičkové celé číslo bez znaménka|0xF065|0170145|  
+|o|osmičkové celé číslo bez znaménka|0xF065|0170145|  
 |x,X|Šestnáctkové celé číslo|61541|0x0000f065|  
 |**l,h**|dlouhé nebo krátké předpony pro: d, i, u, e, x, X|00406042|0x0c22|  
-|**f**|podepsané s plovoucí desetinnou čárkou|(3. / 2.), f|1.500000|  
+|**f**|podepsané s plovoucí desetinnou čárkou|(3./2.), f|1.500000|  
 |**e**|matematický zápis se znaménkem|(3.0/2.0)|1.500000e + 000|  
-|**g**|přihlášen s plovoucí desetinnou čárkou nebo matematický zápis se znaménkem, podle toho, co je kratší|(3.0/2.0)|1.5|  
+|**g**|přihlášen s plovoucí desetinnou čárkou nebo matematický zápis se znaménkem, podle toho, co je kratší|(3.0/2.0)|1,5|  
 |c|jeden znak|\<umístění >|101 "e"|  
 |s|const char *|\<umístění >|"hello world"|  
 |su|konstantní wchar_t *<br /><br /> Const char16_t\*|\<umístění >|L "hello world"|  
 |Sub|konstantní wchar_t *<br /><br /> Const char16_t\*|\<umístění >|Ahoj světe|  
 |s8|const char *|\<umístění >|"hello world"|  
 |hr|Kód chyby HRESULT nebo Win32. (Ladicí program nyní dekóduje hodnoty HRESULT automaticky, takže v těchto případech není tento specifikátor vyžadován.|S_OK|S_OK|  
-|RC|Příznak třídy okna.|0x00000040,|WC_DEFAULTCHAR|  
+|wc|Příznak třídy okna.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Čísla zpráv Windows|0x0010|WM_CLOSE|  
 |!|Formát RAW ignorující přizpůsobení zobrazení typu všech dat|\<přizpůsobit reprezentace >|4|  
   
@@ -138,7 +133,7 @@ int main() {
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 znaků ASCII|0x0012ffac|0x0012ffac. 4... 0... ". 0W &... 1T &.0.:W... 1... ". 1. JO &.1.2.. ".. 1... 0y... 1|  
 |**m**|16 bajtů v šestnáctkovém formátu, následovaný 16 znaky ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
-|**MB**|16 bajtů v šestnáctkovém formátu, následovaný 16 znaky ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
+|**mb**|16 bajtů v šestnáctkovém formátu, následovaný 16 znaky ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
 |**mw**|8 slova|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 x doubleword|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 x quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
@@ -149,9 +144,4 @@ int main() {
   
 |Specifikátor|Formát|Výraz|Zobrazená hodnota|  
 |---------------|------------|----------------|---------------------|  
-|n|Desítkové celé číslo|pBuffer [32]|Zobrazí `pBuffer` jako 32 prvek pole.|
-
-
-
-
-
+|n|Desítkové celé číslo|pBuffer[32]|Zobrazí `pBuffer` jako 32 prvek pole.|

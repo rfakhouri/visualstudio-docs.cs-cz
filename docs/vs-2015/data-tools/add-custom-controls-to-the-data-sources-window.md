@@ -1,12 +1,9 @@
 ---
 title: Přidání vlastních ovládacích prvků do okna zdroje dat | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 dev_langs:
@@ -25,13 +22,13 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183635"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765964"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Přidání vlastních ovládacích prvků do okna zdrojů dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +39,7 @@ Při přetažení položky z **zdroje dat** okno na návrhovou plochu vytvořít
  Další informace o výběru ovládacích prvků vázaných na data pro vytvoření pro položky v **zdroje dat** okna, naleznete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="customizinglist"></a> Přizpůsobení seznamu s možností vazby ovládacích prvků pro datový typ  
  Přidání nebo odebrání ze seznamu dostupných ovládacích prvků pro položky v ovládacích prvcích **zdroje dat** okno, které mají určitý datový typ, proveďte následující kroky.  
@@ -72,7 +69,7 @@ Při přetažení položky z **zdroje dat** okno na návrhovou plochu vytvořít
     > [!NOTE]
     >  Pokud ovládací prvek, který chcete vybrat nezobrazí v **související ovládací prvky** pole, je nutné přidat do seznamu ovládacího prvku. Další informace najdete v tématu [přidání ovládacích prvků do seznamu z přidružené ovládací prvky pro datový typ](#addingcontrols).  
   
-6.  Klikněte na tlačítko **OK**.  
+6.  Klikněte na **OK**.  
   
 7.  V **zdroje dat** okna, klikněte na položku dat zadejte související jenom jeden nebo více ovládacích prvků a potom klikněte na rozevírací nabídku pro položku.  
   
@@ -102,4 +99,3 @@ Při přetažení položky z **zdroje dat** okno na návrhovou plochu vytvořít
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-

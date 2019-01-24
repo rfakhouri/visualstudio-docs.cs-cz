@@ -1,26 +1,21 @@
 ---
 title: Vlastnosti pole a rozhraní okna | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b9e7705af131bdc8c81b6cbeeac3ed4dda80aa4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 515540eee455fcf22151e336897dd5f586867a82
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761934"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Pole a rozhraní okna Vlastnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Model pro výběr k určení, které informace se zobrazují v **vlastnosti** ok
   
 3. Volání <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> a předají se jí položky vybrané hierarchie `VSHPROPID_BrowseObject` naplní parametr <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> objektu.  
   
-4. Objekt odvozený od [rozhraní IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) se vrátí <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> pro požadované položky a prostředí zabalí jej do <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (viz následující krok). Pokud selže volání prostředí volá druhé `IVsHierarchy::GetProperty`, předají se jí zásobník pro výběr <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> , zadejte hierarchie položky nebo položek.  
+4. Objekt odvozený od [rozhraní IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) se vrátí <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> pro požadované položky a prostředí zabalí jej do <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (viz následující krok). Pokud selže volání prostředí volá druhé `IVsHierarchy::GetProperty`, předají se jí zásobník pro výběr <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> , zadejte hierarchie položky nebo položek.  
   
     Váš projekt se nevytvoří VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> vzhledem k tomu, že v okně prostředí poskytované VSPackage, která ho implementuje (například **Průzkumníka řešení**) vytvoří <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> svým jménem.  
   
@@ -52,4 +47,3 @@ Model pro výběr k určení, které informace se zobrazují v **vlastnosti** ok
   
 ## <a name="see-also"></a>Viz také  
  [Rozšíření vlastností](../../extensibility/internals/extending-properties.md)
-

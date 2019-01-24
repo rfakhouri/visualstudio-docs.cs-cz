@@ -1,26 +1,21 @@
 ---
 title: Migrace služby starší verze jazyka | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 826a27fd3e3041e99f34acce0474a8e71837c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4739565408a16ecaeee668264595ec48620ec847
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807605"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761012"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrace služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Služby starší verze jazyka můžete migrovat na novější verzi sady Visual 
   
 4.  Otevřete řešení RegExLangServ.sln.  
   
-5.  **Jednosměrnou aktualizaci** zobrazí se okno. Klikněte na tlačítko **OK**.  
+5.  **Jednosměrnou aktualizaci** zobrazí se okno. Klikněte na **OK**.  
   
 6.  Aktualizujte vlastnosti projektu. Otevřít **vlastnosti projektu** tak, že vyberete uzel projektu v okně **Průzkumníku řešení**, pravým tlačítkem myši a vyberete **vlastnosti**.  
   
@@ -104,7 +99,7 @@ Služby starší verze jazyka můžete migrovat na novější verzi sady Visual 
   
     -   **Název produktu**: RegExLangServ  
   
-    -   **Popis**: služba jazyka regulárních výrazů.  
+    -   **Popis**: Služba jazyka regulárních výrazů.  
   
     -   V části **prostředky**, klikněte na tlačítko **nový**, vyberte **typ** k **Microsoft.VisualStudio.VsPackage**, nastavte **zdroj** k **projekt v aktuálním řešení**a pak nastavte **projektu** k **RegExLangServ**.  
   
@@ -116,4 +111,3 @@ Služby starší verze jazyka můžete migrovat na novější verzi sady Visual 
   
 ## <a name="see-also"></a>Viz také  
  [Rozšíření služeb starší verze jazyka](../../extensibility/internals/legacy-language-service-extensibility.md)
-

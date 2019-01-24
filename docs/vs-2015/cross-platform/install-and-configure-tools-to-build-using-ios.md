@@ -1,27 +1,22 @@
 ---
 title: Instalace a konfigurace nástrojů pro vytváření pomocí iOS | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 6a5d5543ace2087db4ed5349e72fcaf53228d8ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787806"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792859"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástrojů pro vytváření pomocí iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +25,11 @@ ms.locfileid: "51787806"
 Visual C++ pro vývoj mobilních řešení napříč platformami můžete použít pro úpravy, ladění a nasazení iOS kódu do simulátoru iOS nebo zařízení s Iosem, ale z důvodu licenčních omezení, kód musí být vytvořená a vzdálené spouštění v počítačích Mac. Pokud chcete sestavovat a spouštět aplikace pro iOS pomocí sady Visual Studio, budete muset nastavit a nakonfigurovat vzdálený agent [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), na vašem počítači Mac. Vzdálený agent obslužné rutiny žádosti o sestavení ze sady Visual Studio aplikace a spustí se na zařízení s iOS připojené k počítači Mac, nebo simulátor iOS na macu  
   
 > [!NOTE]
->  Informace o používání služeb hostovaných v cloudu Mac místo Mac najdete v tématu [vytváření a simulace iOS v cloudu](https://taco.visualstudio.com/en-us/docs/build_ios_cloud/). Pokyny jsou určené pro sestavení pomocí nástrojů Visual Studio pro Apache Cordova. Chcete-li postupujte podle pokynů pro sestavení pomocí jazyka Visual C++ pro vývoj mobilních řešení napříč platformami, nahraďte vcremote pro vs-mda-remote.  
+>  Informace o používání služeb hostovaných v cloudu Mac místo Mac najdete v tématu [vytváření a simulace iOS v cloudu](https://taco.visualstudio.com/docs/build_ios_cloud/). Pokyny jsou určené pro sestavení pomocí nástrojů Visual Studio pro Apache Cordova. Chcete-li postupujte podle pokynů pro sestavení pomocí jazyka Visual C++ pro vývoj mobilních řešení napříč platformami, nahraďte vcremote pro vs-mda-remote.  
   
  Jakmile nainstalujete nástroje pro vytváření pomocí iOS, přečtěte si toto téma způsoby, jak rychle nakonfigurovat a aktualizovat vzdálený agent pro vývoj pro iOS v sadě Visual Studio a na vašem počítači Mac.  
   
- [Požadované součásti](#Prerequisites)  
+ [Požadavky](#Prerequisites)  
   
  [Instalace vzdáleného agenta pro iOS](#Install)  
   
@@ -247,4 +242,3 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
 ## <a name="see-also"></a>Viz také  
  [Instalace komponenty Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
-

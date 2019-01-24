@@ -1,13 +1,9 @@
 ---
 title: 'CA2142: Transparentní kód nemůže být chráněn pomocí LinkDemands | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2142
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
@@ -15,14 +11,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6079e901f04fa936fa1df7782a34ffaaa09c09e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11bd1668e4ab599461d3619c63cd3c9732a05b4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761344"
 ---
-# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Transparentní kód nemůže být chráněn pomocí LinkDemands
+# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Transparentní kód by neměl být chráněn pomocí LinkDemands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -32,7 +28,7 @@ ms.locfileid: "53967194"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Transparentní metoda vyžaduje, <xref:System.Security.Permissions.SecurityAction> nebo další požadavek zabezpečení.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -3,21 +3,18 @@ title: Visual Studio 2015 | Dokumentace Microsoftu
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780676"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio – sada IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +111,7 @@ Pokud chcete zjistit, o nových funkcích v sadě Visual Studio 2015, najdete v 
 
  ![V editoru kódu GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
 
- Textový editor, je vysoce interaktivní (Pokud chcete, aby se) s mnoha produktivitu funkcí, které vám pomůžou pište lepší kód rychleji. Funkce se liší podle jazyka a není nutné použít některý z nich (typu "Editor" v Snadné spuštění) k zapnutí nebo vypnutí funkce: některé běžné pro zvýšení produktivity jsou:
+ Textový editor, je vysoce interaktivní (Pokud chcete, aby se) s mnoha produktivitu funkcí, které vám pomůžou pište lepší kód rychleji. Funkce se liší podle jazyka a není nutné použít některý z nich (typu "Editor" v Snadné spuštění) k zapnutí nebo vypnutí funkce: Zde jsou některé běžné pro zvýšení produktivity:
 
 1. [Refaktoring](../ide/refactoring-in-visual-studio.md) zahrnuje operace, jako jsou inteligentní přejmenováním proměnné, Přesun vybrané řádky kódu do samostatné funkce, přesunutí kódu do jiných umístění, redordering parametry funkce a další.
 
@@ -136,7 +133,7 @@ Pokud chcete zjistit, o nových funkcích v sadě Visual Studio 2015, najdete v 
 
 8. **Přejít k definici** možnost místní nabídky přejít přímo na místě, kde je definována funkce nebo objektu. Další příkazy pro navigaci jsou k dispozici také kliknutím pravým tlačítkem myši v editoru.
 
-9. Související nástroje [prohlížeče objektů](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), umožňuje vám umožní zkontrolovat .NET nebo prostředí Windows Runtime sestavení ve vašem systému chcete podívat, jaké jsou typy obsahují a jaké metody a vlastnosti obsahují tyto typy.
+9. Související nástroje [prohlížeče objektů](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), umožňuje vám umožní zkontrolovat .NET nebo prostředí Windows Runtime sestavení ve vašem systému chcete podívat, jaké jsou typy obsahují a jaké metody a vlastnosti obsahují tyto typy.
 
      ![Prohlížeč objektů prohlížeči a zobrazí objekt System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -157,7 +154,7 @@ Výstup sestavení, včetně úspěch nebo chyba zprávy, se zobrazí v **výstu
 
  [Podokna](../ide/reference/immediate-window.md) umožňuje zadejte ve výrazu a ihned sledujte jeho výsledek.
 
- [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) okno zaznamenává každé volání metody a další události v běžící aplikaci rozhraní .NET a může pomoct vám umožňuje rychle vyhledávat, kde problém vznikl.
+ [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) okno zaznamenává každé volání metody a další události v běžící aplikaci rozhraní .NET a může pomoct vám umožňuje rychle vyhledávat, kde problém vznikl.
 
  Další informace najdete v tématu [ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -196,7 +193,7 @@ Výstup sestavení, včetně úspěch nebo chyba zprávy, se zobrazí v **výstu
 |||
 |-|-|
 |[Uživatelské účty a aktualizace](../ide/user-accounts-and-updates.md)|[Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)|
-|[Návody: Pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Začínáme s vývojem pomocí jazyka Visual C++](../ide/get-started-developing-with-visual-studio.md)|
+|[Postupy: Pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Začínáme s vývojem pomocí jazyka Visual C++](../ide/get-started-developing-with-visual-studio.md)|
 |[Hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)|[Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Nástroje pro profilaci](../profiling/profiling-tools.md)|[Zlepšení kvality kódu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|

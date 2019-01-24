@@ -1,25 +1,20 @@
 ---
-title: 'Začínáme s PTVS: úpravy kódu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Začínáme s PTVS: Úprava kódu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: b412c87c-2f09-4e25-9cc8-ab54f4c44412
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: ef0a84523a2d828e696fb50f641f392ab7bbd39f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758397"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Začínáme s PTVS: Úpravy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,4 +69,3 @@ def main ():
 ## <a name="see-also"></a>Viz také  
  [Dokumentace ke službě Wiki](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [Videa můžete začít a Deep Dive PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

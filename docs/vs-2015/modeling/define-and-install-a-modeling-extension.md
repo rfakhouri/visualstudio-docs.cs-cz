@@ -1,12 +1,9 @@
 ---
 title: Definování a instalace rozšíření modelování | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805564"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770689"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definování a instalace rozšíření modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +76,7 @@ V sadě Visual Studio můžete definovat rozšíření pro modelování diagram�
         |-|-|  
         |**Typ** =|**Microsoft.VisualStudio.MefComponent**|  
         |**Zdroj** =|**Projekt v aktuálním řešení**|  
-        |**Projekt** =|*Váš projekt knihovny tříd*|  
+        |**Project** =|*Váš projekt knihovny tříd*|  
         |**Vložit do této složky** =|*(prázdné)*|  
   
          Jiné typy komponenty najdete na odkazech v další části.  
@@ -141,13 +138,10 @@ V sadě Visual Studio můžete definovat rozšíření pro modelování diagram�
   
    Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z následujícího umístění kde *% LocalAppData %* je obvykle *DriveName*: \Users\\*uživatelskéjméno*\AppData\Local:  
   
-   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [verze]**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ## <a name="see-also"></a>Viz také  
  [Definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definování vlastní položky sady nástrojů pro modelování](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

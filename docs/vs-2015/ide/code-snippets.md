@@ -1,14 +1,9 @@
 ---
 title: Fragmenty kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -23,13 +18,13 @@ ms.assetid: 85976ad9-4c9a-4e7b-896e-66ec6f955199
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242166"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774870"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,12 +87,9 @@ End Property
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md)   
- [Postupy: distribuce fragmentů kódu](../ide/how-to-distribute-code-snippets.md)   
+ [Postupy: Distribuce fragmentů kódu](../ide/how-to-distribute-code-snippets.md)   
  [Osvědčené postupy pro používání fragmentů kódu](../ide/best-practices-for-using-code-snippets.md)   
  [Řešení potíží s fragmenty kódu](../ide/troubleshooting-snippets.md)   
  [Fragmenty kódu jazyka Visual C#](../ide/visual-csharp-code-snippets.md)   
  [Fragmenty kódu Visual C++](../ide/visual-cpp-code-snippets.md)   
  [Fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md)
-
-
-

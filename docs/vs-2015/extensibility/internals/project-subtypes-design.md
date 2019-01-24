@@ -1,26 +1,21 @@
 ---
 title: Podtypy projektů návrhu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78b768ae63fcf03912d4f81820e80706f8a46a98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776466"
 ---
 # <a name="project-subtypes-design"></a>Návrh podtypů projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Podtypy projektů umožní rozšířením VSPackages rozšířit projekty založ
   
  Následující obrázek znázorňuje schématem agregace podtyp víceúrovňových projektu.  
   
- ![Visual Studio víceúrovňové projectflavor grafika](../../extensibility/internals/media/vs-multilevelprojectflavor.gif "VS_MultilevelProjectFlavor")  
+ ![Visual Studio multilevel projectflavor graphic](../../extensibility/internals/media/vs-multilevelprojectflavor.gif "VS_MultilevelProjectFlavor")  
 Podtyp víceúrovňové projektu  
   
  Agregace podtyp víceúrovňových projekt se skládá ze tří úrovní základní projekt, který je agregované podle podtyp projektu a další agregované podle podtyp pokročilé projektu. Na obrázku se zaměřuje na některé podpůrné rozhraní, které jsou k dispozici jako součást [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] architektura podtyp projektu.  
@@ -97,4 +92,3 @@ Zařízení Extender automatizace podtyp projektu.
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>
-

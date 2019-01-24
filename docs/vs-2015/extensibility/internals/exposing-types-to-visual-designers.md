@@ -1,14 +1,9 @@
 ---
 title: Zveřejnění typů pro vizuální návrhářské nástroje | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c19fe00713bd328574e5a05cc6f6f3a60f18ddf9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766799"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Zveřejnění typů pro vizuální návrháře
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,8 +46,7 @@ ms.locfileid: "51791550"
      Při kompilaci dočasné přenositelné Spustitelné pouze zdrojový soubor k dispozici pro kompilátor je výstup vlastního nástroje. Vlastní nástroj, který používá dočasné přenositelné Spustitelné proto musí vygenerovat výstupní soubory, které mohou být zkompilovány nezávisle na jiné soubory v projektu.  
   
 ## <a name="see-also"></a>Viz také  
- [Představení objektu BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Představení objektu BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Implementace generátorů tvořených jedním souborem](../../extensibility/internals/implementing-single-file-generators.md)   
  [Určení výchozí Namespace projektu](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Registrace generátorů tvořených jedním souborem](../../extensibility/internals/registering-single-file-generators.md)
-

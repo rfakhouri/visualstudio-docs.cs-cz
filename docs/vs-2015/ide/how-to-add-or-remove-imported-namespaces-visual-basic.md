@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Přidání nebo odebrání importovaných oborů názvů (Visual Basic) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
 - removing imported namespaces
@@ -19,13 +14,13 @@ ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c24f9cec4a599a8131ad41cdadb6d00946921922
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196395"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798956"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Postupy: Přidání nebo odebrání importovaných oborů názvů (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Import oboru názvů umožňuje použít elementy z daného oboru názvů ve va�
 3.  V **importované obory názvů** seznam, zaškrtněte políčko pro obor názvů, který chcete přidat.  
   
     > [!NOTE]
-    >  Aby bylo možné importovat, musí být obor názvů v odkazované součásti. Pokud obor názvů se nezobrazí v seznamu, musíte přidat odkaz na komponentu, která ji obsahuje. Další informace najdete v tématu [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    >  Aby bylo možné importovat, musí být obor názvů v odkazované součásti. Pokud obor názvů se nezobrazí v seznamu, musíte přidat odkaz na komponentu, která ji obsahuje. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Chcete-li odebrat importované oboru názvů  
   
@@ -85,6 +80,3 @@ Import oboru názvů umožňuje použít elementy z daného oboru názvů ve va�
   
 ## <a name="see-also"></a>Viz také  
  [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
-
-
-

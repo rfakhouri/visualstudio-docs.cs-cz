@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: určení modulu Runtime rozhraní .NET Framework | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Určení modulu Runtime rozhraní .NET Framework | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
 - .NET Framework versions,profililng
@@ -16,15 +11,15 @@ ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c62b70816ac17789a4aa236e5abcca6832f7359
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5ce968e53dc00cd46d27154f4c6217fcc815ade1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749300"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771904"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Postupy: určení modulu Runtime rozhraní .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Postupy: Určení modulu Runtime rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S vydáním [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], aplikace se může skládat z modulů, které byly vytvořeny pomocí různých verzí [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] za běhu. Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro profilaci sady Profilovat první modulu runtime, který je načten aplikací. Můžete zadat za běhu, která má být profilována při spuštění aplikace s profilerem a při připojení profileru k již běžícímu aplikace.  
@@ -58,6 +53,3 @@ S vydáním [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], aplikace s
     -   Klikněte na verzi CLR, který chcete Profilovat.  
   
     -   Klikněte na tlačítko **automatické** Profilovat verze, která jsou načtená při připojí profiler k aplikaci.
-
-
-

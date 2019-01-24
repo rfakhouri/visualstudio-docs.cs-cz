@@ -1,25 +1,22 @@
 ---
-title: 'Postupy: přidání obslužné rutiny operace přetažení myší | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Přidání obslužné rutiny operace přetažení myší | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775837"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace přetažení myší
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace podporující přetahování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL, můžete přidat obslužné rutiny události přetažení myší, tak, aby uživatelé můžete přetáhnout položky do diagramu z jiných diagramů nebo z jiných částí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Můžete také přidat obslužné rutiny pro události, jako poklikáním. Společně se nazývají přetahování myší a dvakrát klikněte na obslužné rutiny *obslužné rutiny gesta*.  
@@ -87,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Tato metoda je volána, když uživatel pokliká na tvar nebo diagram.  
   
-   Další informace najdete v tématu [postupy: zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Další informace najdete v tématu [jak: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
   Definování `IsAcceptableDropItem(e)` k určení, zda je přijatelné přetaženou položku a ProcessDragDropItem(e) aktualizovat váš model, když položka byla vynechána. Tyto metody musí nejprve extrahovat položky z argumentů událostí. Informace o tom, jak to udělat, najdete v části [jak získat odkaz na přetaženou položku](#extracting).  
   
@@ -175,7 +172,7 @@ using System.Linq;
   
     1.  Stáhněte a nainstalujte rozšíření sběrnice modelu Visual Studio, pokud ještě není nainstalovaná. Další informace najdete v tématu [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
-    2.  Otevřete soubor definice DSL zdroje DSL v návrháře DSL. Klikněte pravým tlačítkem na návrhové ploše a potom klikněte na tlačítko **povolit Modelbus**. V dialogovém okně zvolte jednu nebo obě možnosti.  Klikněte na tlačítko **OK**. Nový projekt "ModelBus" je přidán do řešení DSL.  
+    2.  Otevřete soubor definice DSL zdroje DSL v návrháře DSL. Klikněte pravým tlačítkem na návrhové ploše a potom klikněte na tlačítko **povolit Modelbus**. V dialogovém okně zvolte jednu nebo obě možnosti.  Klikněte na **OK**. Nový projekt "ModelBus" je přidán do řešení DSL.  
   
     3.  Klikněte na tlačítko **Transformovat všechny šablony** a znovu sestavte řešení.  
   
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md)   
  [Nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

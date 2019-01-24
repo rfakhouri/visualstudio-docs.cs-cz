@@ -1,23 +1,19 @@
 ---
 title: Sdílené barvy
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 401ad47c6b265e005d36cad7d3cf2ae13d7f4f1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780064"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -1638,7 +1634,7 @@ kdekoli vytváření prozatímní ve verzi preview a má nějaký element tak, a
 
   Nastavte stejnou barvu jako pozadí.
 
-  **Karta náhled na pozadí: Při najetí myší**
+  **Karta náhled na pozadí: Hover**
 
   Součást
 

@@ -1,14 +1,9 @@
 ---
 title: Použití uložených dat řešení IntelliTrace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f10878e9717ca90725455d5c66f6f9a015040dc1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eef8a11f21464ea58aec8b6fb239df3ff28a40b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777568"
 ---
 # <a name="using-saved-intellitrace-data"></a>Použití dat uložených nástrojem IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +190,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
     |**Pole IntelliTrace**|**Pole SharePoint ULS**|  
     |----------------------------|------------------------------|  
     |**ID**|**ID události**|  
-    |**úroveň**|**úroveň**|  
+    |**Úroveň**|**Úroveň**|  
     |**Id kategorie**|**Id kategorie**|  
     |**Kategorie**|**Kategorie**|  
     |**Oblast**|**Produkt**|  
@@ -212,7 +207,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
   
     ![Protokol IntelliTrace &#45; SharePoint neošetřené výjimky](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Návod, naleznete v tématu [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Pro různé druhy dat, která najdete v článku záznamy agenta [funkce IntelliTrace](../debugger/intellitrace-features.md).  
+   Návod, naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Pro různé druhy dat, která najdete v článku záznamy agenta [funkce IntelliTrace](../debugger/intellitrace-features.md).  
   
 ###  <a name="ThreadsList"></a> Seznam vláken  
  Prozkoumejte zaznamenaná vlákna spuštěná v cílovém procesu. Můžete spustit ladění od první platné události IntelliTrace ve zvoleném vlákně.  
@@ -230,7 +225,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 |**Sloupec**|**Ukazuje,**|  
 |----------------|-------------------|  
 |**ID**|Číslo ID vlákna|  
-|**Jméno**|Název vlákna. Nepojmenovaná vlákna se zobrazují jako "\<bez názvu >".|  
+|**Název**|Název vlákna. Nepojmenovaná vlákna se zobrazují jako "\<bez názvu >".|  
 |**Čas spuštění**|Čas vytvoření vlákna|  
 |**Koncový čas**|Čas, kdy vlákno bylo dokončeno.|  
   
@@ -263,7 +258,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 |----------------|-------------------|  
 |**Název modulu**|Název souboru modulu|  
 |**Cesta modulu**|Umístění disku, kde byl modul načten|  
-|**ID modulu**|Jedinečný identifikátor modulu, který je specifický pro verzi a přispívá k odpovídající soubory symbolů (PDB). Zobrazit [hledání souborů symbolů (PDB) a zdrojové soubory](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**ID modulu**|Jedinečný identifikátor modulu, který je specifický pro verzi a přispívá k odpovídající soubory symbolů (PDB). Zobrazit [hledání souborů symbolů (PDB) a zdrojové soubory](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Kde lze získat další informace?  
  [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
@@ -275,14 +270,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Diskuzní fóra  
- [Ladicí program sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>Doprovodné materiály  
- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 6: testovací sady nástrojů](http://go.microsoft.com/fwlink/?LinkID=255203)
-
-
-
-
-
-
-
+ [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 6: Testování sady nástrojů](http://go.microsoft.com/fwlink/?LinkID=255203)

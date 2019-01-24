@@ -1,27 +1,22 @@
 ---
 title: Vytváření instancí projektu pomocí objektů pro vytváření projektů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772625"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Vytváření instancí projektu pomocí objektů pro vytváření projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Typů projektů v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] použít *obje
   
  Můžete implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> rozhraní ve třídě ve vašem projektu. Obvykle se nachází v jeho vlastní modul.  
   
- Příklad implementace `IVsProjectFactory` rozhraní najdete v tématu PrjFac.cpp, která je součástí [základního projektu](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) ukázka adresáře.  
+ Příklad implementace `IVsProjectFactory` rozhraní najdete v tématu PrjFac.cpp, která je součástí [základního projektu](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) ukázka adresáře.  
   
  Projekty, které podporují agregaci vlastník musí zachovat klíčem vlastníka v jejich souboru projektu. Když <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metoda je volána v projektu s klíčem vlastníka, vlastnictví projektu převede na objekt pro vytváření projektu GUID pak zavolá jeho vlastníka klíč `CreateProject` metody v této výrobě projektu provedete skutečné vytváření.  
   
@@ -58,4 +53,3 @@ Typů projektů v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] použít *obje
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
  [Kontrolní seznam: Vytvoření nových typů projektů](../../extensibility/internals/checklist-creating-new-project-types.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Pouze můj kód | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777897"
 ---
 # <a name="just-my-code"></a>Pouze můj kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,10 +56,10 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   Veškerý kód, se považuje za uživatelského kódu.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Chování  
- Když je **Krokovat s vnořením** (Klávesová zkratka: F11) neuživatelský kód, ladicí program přes kód do dalšího příkazu uživatele. Pokud jste **Krokovat s Vystoupením** (klávesnice: Shift + F11), ladicí program se spustí na další řádek kódu uživatele. Pokud nebude nalezen žádný uživatelský kód, provádění pokračuje, dokud aplikace ukončí, dosaženo zarážky nebo dojde k výjimce.  
+ Pokud jste **Krokovat s vnořením** (Klávesová zkratka: F11) neuživatelský kód, ladicí program přes kód do dalšího příkazu uživatele. Pokud jste **Krokovat s Vystoupením** (klávesnice: SHIFT + F11), ladicí program se spustí na další řádek kódu uživatele. Pokud nebude nalezen žádný uživatelský kód, provádění pokračuje, dokud aplikace ukončí, dosaženo zarážky nebo dojde k výjimce.  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Chování zarážky  
- Pokud je povolena funkce pouze můj kód, můžete použít **příkaz Pozastavit vše** (klávesnice: Ctrl + Alt + Break) a zastavit provádění v místě, kde neexistuje žádný uživatelský kód pro zobrazení. Pokud k tomu dojde, zobrazí se okno žádný zdroj. Pokud vyberte příkaz kroku ladicí program přejde na další řádek kódu uživatele.  
+ Pokud je povolena funkce pouze můj kód, můžete zvolit **příkaz Pozastavit vše** (klávesnice: Ctrl + Alt + Break) a zastavit provádění v místě, kde není žádný uživatelský kód pro zobrazení. Pokud k tomu dojde, zobrazí se okno žádný zdroj. Pokud vyberte příkaz kroku ladicí program přejde na další řádek kódu uživatele.  
   
 ###  <a name="BKMK_NET_Exception_behavior"></a> Výjimka chování  
  Pokud dojde k neošetřené výjimce v neuživatelském kódu, ladicí program přeruší na řádku v uživatelském kódu, ve kterém se vygeneroval výjimku.  
@@ -93,7 +88,7 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   Můžete vytvořit svoje vlastní `.natstepfilter` a `.natjmc` přizpůsobit posílení a chování okna zásobník volání `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Chování  
- Když je **Krokovat s vnořením** (Klávesová zkratka: F11) neuživatelský kód z uživatelského kódu, ladicí program při krokování kódu na další řádek kódu uživatele. Pokud jste **Krokovat s Vystoupením** (klávesnice: Shift + F11), ladicí program se spustí na další řádek kódu uživatele. Pokud nebude nalezen žádný uživatelský kód, provádění pokračuje, dokud aplikace ukončí, dosaženo zarážky nebo dojde k výjimce.  
+ Pokud jste **Krokovat s vnořením** (Klávesová zkratka: Neuživatelský kód F11) z uživatelského kódu, ladicí program při krokování kódu na další řádek kódu uživatele. Pokud jste **Krokovat s Vystoupením** (klávesnice: SHIFT + F11), ladicí program se spustí na další řádek kódu uživatele. Pokud nebude nalezen žádný uživatelský kód, provádění pokračuje, dokud aplikace ukončí, dosaženo zarážky nebo dojde k výjimce.  
   
  Pokud ladicí program přeruší v neuživatelském kódu (například, pokud příkaz Pozastavit vše zastaví v neuživatelském kódu), krokování pokračuje v neuživatelském kódu.  
   
@@ -127,10 +122,10 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|Funkce|Požadováno. Určuje jednu nebo více funkcí jako funkcí nedefinovaných uživatelem.|  
-|`Name`|Požadováno. ECMA 262 ve formátu regulárních výrazů zadáním názvu plná funkčnost tak, aby odpovídaly. Příklad:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> sdělí ladicímu programu, že všechny metody v `MyNS::MyClass` mají být považovány za neuživatelský kód. Shoda rozlišuje velká a malá písmena.|  
+|Funkce|Povinný parametr. Určuje jednu nebo více funkcí jako funkcí nedefinovaných uživatelem.|  
+|`Name`|Povinný parametr. ECMA 262 ve formátu regulárních výrazů zadáním názvu plná funkčnost tak, aby odpovídaly. Příklad:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> sdělí ladicímu programu, že všechny metody v `MyNS::MyClass` mají být považovány za neuživatelský kód. Shoda rozlišuje velká a malá písmena.|  
 |`Module`|Volitelné. ECMA 262 ve formátu regulárních výrazů zadáním úplná cesta k modulu, který obsahuje funkci. Shoda nerozlišuje malá a velká písmena.|  
-|`Action`|Požadováno. Jedna z těchto hodnot malá a velká písmena:<br /><br /> -   `NoStepInto`  – sdělí ladicímu programu, aby přešel přes odpovídající funkce.<br />-   `StepInto`  – dává pokyn ladicímu programu vstup do funkce odpovídající přepsání jiného `NoStepInto` pro odpovídající funkce.|  
+|`Action`|Povinný parametr. Jedna z těchto hodnot malá a velká písmena:<br /><br /> -   `NoStepInto`  – sdělí ladicímu programu, aby přešel přes odpovídající funkce.<br />-   `StepInto`  – dává pokyn ladicímu programu vstup do funkce odpovídající přepsání jiného `NoStepInto` pro odpovídající funkce.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Přizpůsobení chování zásobníku volání  
  Můžete zadat moduly, zdrojové soubory a funkce považovat za neuživatelský kód v zásobnících volání zadáním v `*.natjmc` soubory.  
@@ -165,20 +160,20 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Úplná cesta modulu nebo modulech. Můžete použít zástupné znaky Windows `?` (žádný nebo jeden znak) a `*` (nula nebo více znaků). Například<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> sdělí ladicímu programu, aby považoval všechny moduly v `\3rdParty\UtilLibs` v jakékoli jednotce jako externí kód.|  
+|`Name`|Povinný parametr. Úplná cesta modulu nebo modulech. Můžete použít zástupné znaky Windows `?` (žádný nebo jeden znak) a `*` (nula nebo více znaků). Například<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> sdělí ladicímu programu, aby považoval všechny moduly v `\3rdParty\UtilLibs` v jakékoli jednotce jako externí kód.|  
 |`Company`|Volitelné. Název společnosti, která publikuje modul, který je vložen do spustitelného souboru. Tento atribut slouží k rozlišení moduly.|  
   
  **Atributy souboru**  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Úplná cesta ke zdrojovému souboru nebo souborů považovat za externí kód. Můžete použít zástupné znaky Windows `?` a `*` při zadání cesty.|  
+|`Name`|Povinný parametr. Úplná cesta ke zdrojovému souboru nebo souborů považovat za externí kód. Můžete použít zástupné znaky Windows `?` a `*` při zadání cesty.|  
   
  **Atributy prvků – funkce**  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Plně kvalifikovaný název funkce, který má zpracovávat jako externí kód.|  
+|`Name`|Povinný parametr. Plně kvalifikovaný název funkce, který má zpracovávat jako externí kód.|  
 |`Module`|Volitelné. Název nebo úplná cesta k modulu, který obsahuje funkci. Tento atribut slouží k rozlišení funkce se stejným názvem.|  
 |`ExceptionImplementation`|Pokud je nastavena na `true`, zásobník volání se zobrazí funkce, která vyvolala výjimku, spíše než tuto funkci.|  
   
@@ -219,7 +214,7 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   
 -   Když některý krok výsledky uživatelského kódu v byste museli opustit aktuální kontext spuštění (jako je vytváření kroku na posledním řádku obslužné rutiny události), ladicí program se zastaví na další spuštěných řádků kódu uživatele. Například, pokud se provede zpětné volání v **LibraryCode** kód, ladicí program bude pokračovat, dokud provede další řádek kódu uživatele.  
   
--   **Krokovat s Vystoupením** (klávesnice: Shift + F11) zastaví na další řádek kódu uživatele. Pokud nebude nalezen žádný uživatelský kód, provádění pokračuje, dokud aplikace ukončí, dosaženo zarážky nebo dojde k výjimce.  
+-   **Krokovat s Vystoupením** (klávesnice: SHIFT + F11) zastaví na další řádek kódu uživatele. Pokud nebude nalezen žádný uživatelský kód, provádění pokračuje, dokud aplikace ukončí, dosaženo zarážky nebo dojde k výjimce.  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Chování zarážky  
   
@@ -312,8 +307,3 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
 |**Nesouvisejících**|Pole adresy URL nebo soubory, které jsou klasifikovány jako **UnrelatedCode**.|  
   
  Řetězec adresy url nebo soubor může obsahovat jeden nebo více `*` znaků, které odpovídají nula nebo více znaků. `*` odpovídá regulárnímu výrazu `.*`.
-
-
-
-
-

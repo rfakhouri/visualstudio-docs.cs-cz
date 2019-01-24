@@ -1,24 +1,19 @@
 ---
 title: Správa životního cyklu aplikací (ALM) s aplikacemi Xamarin | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793808"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Správa životního cyklu aplikací s aplikacemi Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
  V tabulce dole najdete identifikuje funkcí, které Visual Studio ALM můžete očekávat fungovat dobře si projekt Xamarin a ty, které mají omezení. Naleznete v dokumentaci propojené informace o funkcích, sami.  
   
 ## <a name="agile-tools"></a>Agilní nástroje  
- Referenční odkaz: **[pracovní](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (pomocí Visual Studio Team Services nebo TFS, včetně Team Explorer Everywhere)  
+ Referenční odkaz: **[Pracovní](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (pomocí Visual Studio Team Services nebo TFS, včetně Team Explorer Everywhere)  
   
  Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé na typu projektu a kódování jazyky.  
   
@@ -48,7 +43,7 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
 |Sestavy a vizualizace průběhu|Ano||  
   
 ## <a name="modeling"></a>Modelování  
- Referenční odkaz:  **[analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)**  
+ Referenční odkaz: **[Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)**  
   
  Funkce pro návrh platí bez ohledu na programovací jazyk, nebo pracovat s jazyky .NET, jako je C#. Zobrazit [role architektury a modelování diagramů při vývoji softwaru](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) pro jaké aspekty se vztahují ke kódu.  
   
@@ -74,18 +69,18 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
 |[Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)|Ano||  
   
 ## <a name="build"></a>Sestavení  
- Referenční odkaz:  **[sestavení](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Referenční odkaz: **[Sestavení](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
 |Na místním serveru TFS|Ano|Počítače sestavení musí mít nainstalovaný Xamarin a lze propojit na OSX počítač pro vývoj pro iOS. Zobrazit [konfigurace serveru TFS pro Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (webu Xamarin)|  
 |Místní server sestavení propojené s Visual Studio Team Services|Ano|Zobrazit [server sestavení](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pokyny.|  
-|Hostovaný kontroler služby Visual Studio Team Services|Ano|Zobrazit [sestavení vaší aplikace Xamarin](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin).|  
+|Hostovaný kontroler služby Visual Studio Team Services|Ano|Zobrazit [sestavení vaší aplikace Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Vytvoření definice s předběžné a pozálohovacích skriptů|Ano||  
 |Průběžná integrace, včetně hlídané vrácení se změnami se|Ano|Ověřované vrácení se změnami se pro TFVC pouze, jak Git funguje na modelu žádosti o přijetí změn spíše než vrácení se změnami.|  
   
 ## <a name="testing"></a>Testování  
- Referenční odkaz:  **[testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Referenční odkaz: **[Testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
@@ -97,7 +92,7 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
 |[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)|Pouze Windows|Rekordér testu uživatelského rozhraní sady Visual Studio je jenom pro Windows. Pro všechny platformy, najdete v článku [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Zlepšení kvality kódu  
- Referenční odkaz:  **[zlepšení kvality kódu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Referenční odkaz: **[Zlepšení kvality kódu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
@@ -108,7 +103,7 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
 |[Analýza problémů paměti rozhraní .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework pro profilování.|  
   
 ## <a name="release-management"></a>Správa vydaných verzí  
- Referenční odkaz:  **[automatizovat nasazení pomocí správy vydaných verzí](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Referenční odkaz: **[Automatizovat nasazení pomocí správy vydaných verzí](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
@@ -117,9 +112,8 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
 |Nahrát do app storu|Částečné|Rozšíření jsou k dispozici, který tento proces pro některé obchody automatizovat.  Zobrazit [rozšíření pro Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), například [rozšíření pro Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Monitorování pomocí aplikace HockeyApp  
- Referenční odkaz:  **[monitorování pomocí aplikace HockeyApp](https://www.hockeyapp.net/features/)**  
+ Referenční odkaz: **[Monitorování pomocí aplikace HockeyApp](https://www.hockeyapp.net/features/)**  
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
 |K chybě analýzy, telemetrie a beta rozdělení|Ano||
-

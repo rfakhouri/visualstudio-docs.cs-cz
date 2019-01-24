@@ -1,11 +1,7 @@
 ---
 title: Přidání podpory editoru pro jiné jazyky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -18,13 +14,13 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa622ddb6d840698d1134e0fec1540d99b44f5e2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758812"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Přidání podpory editoru sady Visual Studio pro ostatní jazyky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +80,7 @@ Další informace o způsob, jakým editor sady Visual Studio podporuje čtení 
 
  Ve Windows, % userprofile % překládá na cestu: c:\Users\\*\<uživatelské jméno >*. Pokud složka rozšíření neexistuje ve vašem systému, musíte ji vytvořit. Pokud složka již existuje, bude skrytá.
 
- Podrobnosti o tom, jak vytvořit Gramatik TextMate najdete v tématu [TextMate – Úvod do jazyka gramatiky: Přidání zvýrazňování syntaxe kódu zdroje vložený ve formátu HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) a [poznámky o tom, jak vytvořit jazyk gramatiky a vlastní Motiv pro sady Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+ Podrobnosti o tom, jak vytvořit Gramatik TextMate najdete v tématu [TextMate – Úvod do jazyka gramatiky: Přidání zvýrazňování syntaxe kódu zdroje vložený ve formátu HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) a [poznámky o tom, jak vytvořit jazyk gramatiky a vlastní motiv pro sady Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Viz také
- [Visual Studio 2013 přejděte k vylepšení](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md) [návod: zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 přejděte k vylepšení](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md) [názorný postup: Zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md)

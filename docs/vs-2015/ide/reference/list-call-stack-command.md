@@ -1,14 +1,9 @@
 ---
 title: Zásobník volání – příkaz seznamu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listcallstack
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 69c3708960f5b1ddaf0ff6620b8d90eb64cd86d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1fbd5fa522753f813d6987734de80bb7fc05593
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194373"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756370"
 ---
 # <a name="list-call-stack-command"></a>Listovat zásobník volání – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,10 +59,10 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  / Showmodulezobrazitmoduly:`yes` &#124; `no` [nebo] / m:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se mají zobrazovat název modulu. Výchozí hodnota je `yes`.  
   
- / Showlineoffsetzobrazitodsazenířádku:`yes` &#124; `no` [nebo] které:`yes`&#124;`no`  
+ /ShowLineOffset:`yes`&#124;`no` [or] /#:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se mají zobrazovat posun řádku. Výchozí hodnota je `no`.  
   
- / Showbyteoffsetzobrazitodsazeníbajtu:`yes` &#124; `no` [nebo] / b:`yes`&#124;`no`  
+ /ShowByteOffset:`yes`&#124;`no` [or] /B:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit bajtovým posunem. Výchozí hodnota je `no`.  
   
  / Showlanguagezobrazitjazyk:`yes` &#124; `no` [nebo] l:`yes`&#124;`no`  
@@ -76,7 +71,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  / Includecallsacrossthreadszahrnoutvolánínapříčvlákny:`yes` &#124; `no` [nebo] / i:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se mají zahrnout volání do nebo z jiných vláken. Výchozí hodnota je `no`.  
   
- / Showexternalcodezobrazitexterníkód:`yes`&#124;`no`  
+ /ShowExternalCode:`yes`&#124;`no`  
  Volitelné. Určuje, zda má být zobrazen pouze můj kód pro zásobník volání. Když funkce pouze můj kód je vypnuté, zobrazí se všechny neuživatelský kód. Po zapnutí funkce pouze můj kód neuživatelském kódu se zobrazí jako `[external]` ve výstupu zásobník volání.  
   
  Vlákna:`n`  
@@ -108,10 +103,7 @@ kb 2
 ## <a name="see-also"></a>Viz také  
  [Příkaz Zobrazit zpětný překlad](../../ide/reference/list-disassembly-command.md)   
  [Listovat vlákna – příkaz](../../ide/reference/list-threads-command.md)   
- [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

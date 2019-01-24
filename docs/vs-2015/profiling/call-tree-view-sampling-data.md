@@ -1,14 +1,9 @@
 ---
 title: Zobrazení stromu volání – Data vzorkování | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
 - Call Tree view
@@ -16,13 +11,13 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc324b621bfc3e472d6eb86227a6081e3384d2af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e5b15badb7b5e98c73ccadab41f67c64d60cb05e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779223"
 ---
 # <a name="call-tree-view---sampling-data"></a>Zobrazení stromu volání – vzorkování dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,18 +49,15 @@ Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Proch�
 |**Název funkce**|Plně kvalifikovaný název funkce.|  
 |**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
 |**Adresa funkce**|Adresa funkce.|  
-|**úroveň**|Hloubka tuto funkci ve stromu volání. Pouze v [VSPerfReport](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
+|**Úroveň**|Hloubka tuto funkci ve stromu volání. Pouze v [VSPerfReport](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
 |**Výhradní vzorky**|Počet vzorků, které byly shromážděny v této funkci, když se jmenovala nadřazené funkce ve stromu volání. Toto číslo nezahrnuje ukázky, které byly shromážděny v funkce, které byly volány funkce.|  
 |**% Výhradních vzorků**|Procento všechny ukázky během spuštění profilování, které byly výhradních vzorků této funkce, když se jmenovala nadřazené funkce ve stromu volání.|  
 |**Celkových vzorků**|Počet vzorků, které byly shromážděny v této funkci, když se jmenovala nadřazené funkce ve stromu volání. Toto číslo zahrnuje ukázky, které byly shromážděny ve funkcích, které byly volány funkce.|  
 |**% Celkových vzorků**|Procento všechny ukázky během spuštění profilování, které byly celkových vzorků této funkce, když se jmenovala nadřazené funkce ve stromu volání.|  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení stromu volání – Data vzorkování Profiler](../profiling/call-tree-view-sampling-data.md)   
  [Zobrazení stromu volání – vzorkování](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Zobrazení stromu volání – instrumentace](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view-instrumentation-data.md)
-
-
-

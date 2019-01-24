@@ -2,7 +2,7 @@
 title: Aplikace Store analýza statického kódu C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
@@ -10,13 +10,13 @@ ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805563"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,7 +134,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Neplatná velikost parametru řetězce                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Neplatná velikost řetězce-nedosažitelná oblast                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Neplatná Poznámka: vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Neplatná Poznámka: Vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Nerozpoznaný styl řetězce formátu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Použití poznámek atributu na této funkci způsobí neplatnost všech existujících poznámek __declspec  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Neplatná specifikace velikosti: výraz není analyzovatelný                              |
@@ -206,7 +206,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                      [C28286](../code-quality/c28286.md)                       |                                    Pro funkci. syntaktická chyba poblíž konce                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Pro funkci. Chyba syntaxe v \_na\_poznámky () (nerozeznaný název parametru)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Pro funkci. Chyba syntaxe v \_na\_poznámky () (neplatný název parametru)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Pro funkci: ReadableTo nebo writableto nebyl neměl limit specifikace jako parametr                |
+|                      [C28289](../code-quality/c28289.md)                       |                Pro funkci: ReadableTo nebo writableto nebyl neměl limit-spec jako parametr                |
 |                      [C28290](../code-quality/c28290.md)                       |           Poznámka pro funkci obsahuje více typů External než je skutečný počet parametrů            |
 |                      [C28291](../code-quality/c28291.md)                       |                        Po null/notnull deref úroveň 0 je pro funkci bezvýznamné.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Operandy výrazu nekompatibilních typů pro operátor                             |

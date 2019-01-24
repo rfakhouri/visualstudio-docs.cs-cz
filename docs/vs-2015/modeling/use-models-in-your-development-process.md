@@ -1,13 +1,8 @@
 ---
 title: Použití modelů ve vývojových procesech | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,18 +10,18 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 618978d56a6d8a06d2ed2258f1d0bae93a125bab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757705"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768076"
 ---
 # <a name="use-models-in-your-development-process"></a>Použití modelů ve vývojových procesech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-V sadě Visual Studio vám pomůže modelu vám pomůžou pochopit a změnit systému, aplikace nebo komponenty. Model můžete vizualizovat na světě, ve kterém je váš systém funguje, vysvětlení požadavky uživatelů, definovat architektuře systému, analýza kódu a ujistěte se, že váš kód splňuje požadavky. Zobrazit [Video pro kanál 9: zlepšení architektury prostřednictvím modelování](http://go.microsoft.com/fwlink/?LinkID=252078).  
+V sadě Visual Studio vám pomůže modelu vám pomůžou pochopit a změnit systému, aplikace nebo komponenty. Model můžete vizualizovat na světě, ve kterém je váš systém funguje, vysvětlení požadavky uživatelů, definovat architektuře systému, analýza kódu a ujistěte se, že váš kód splňuje požadavky. Zobrazit [Video pro kanál 9: Zlepšení architektury prostřednictvím modelování](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Které verze sady Visual Studio podporovat každý typ modelu najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -104,7 +99,7 @@ V sadě Visual Studio vám pomůže modelu vám pomůžou pochopit a změnit sys
   
 -   Případy použití. Propojení případu použití pro vývoj pro úkoly, které provede.  
   
--   Použití rozšíření případu. Pokud pouze jeden aspekt jejich případu použití se provádí v iteraci, můžete ho rozdělte do případu základní použití spolu s jedno nebo více rozšíření. Rozšíření jsou případy použití, které jsou připojeny na základní případ "rozšíření" vztah. Další informace o rozšíření případu použití, naleznete v tématu [diagramy případu použití UML: referenční](../modeling/uml-use-case-diagrams-reference.md).  
+-   Použití rozšíření případu. Pokud pouze jeden aspekt jejich případu použití se provádí v iteraci, můžete ho rozdělte do případu základní použití spolu s jedno nebo více rozšíření. Rozšíření jsou případy použití, které jsou připojeny na základní případ "rozšíření" vztah. Další informace o rozšíření případu použití, naleznete v tématu [diagramy případu použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md).  
   
 -   Komentář popisující obchodních pravidel nebo kvality požadavků na služby. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
@@ -137,18 +132,15 @@ V sadě Visual Studio vám pomůže modelu vám pomůžou pochopit a změnit sys
   
 |**Kategorie**|**Odkazy**|  
 |------------------|---------------|  
-|**Videa**|![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How do I video: postup vytvoření a použití modelů a diagramů UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML sadou Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How do I řadu: nástroje UML a rozšíření (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**Videa**|![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How do I videa: Vytvoření a použití modelů a diagramů UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML sadou Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [řady MSDN jak: Nástroje UML a rozšíření (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Fóra**|-   [Visual Studio Visualization & Modeling nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogy**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
-|**Technické články a deníky**|[Centrum architektury MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Pokyny k nástrojům architektury sady Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
+|**Technické články a deníky**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Pokyny k nástrojům architektury sady Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Viz také  
- [Použití modelů v Agilním vývoji](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Použití modelů v Agilním vývoji](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)   
  [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)   
  [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)   
  [Vývoj testů z modelu](../modeling/develop-tests-from-a-model.md)   
  [Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)
-
-
-

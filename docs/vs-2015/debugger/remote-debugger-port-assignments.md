@@ -1,36 +1,31 @@
 ---
 title: Přiřazení portů vzdáleného ladicího programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 47a2b212ce3e98588a5dcf6ee75a479b01b5b302
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c1e70ec3ba50e5be1ed532bb4a88cbdd500af09c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769896"
 ---
 # <a name="remote-debugger-port-assignments"></a>Přiřazení portů vzdáleného ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Remote Debugger může běžet jako aplikace nebo jako službu na pozadí. Při spuštění jako aplikace, používá port, který je přiřazen ve výchozím nastavení následujícím způsobem:  
   
-- Visual Studio 2015:4020  
+- Visual Studio 2015: 4020  
   
-- Visual Studio 2013:4018  
+- Visual Studio 2013: 4018  
   
-- Visual Studio 2012:4016  
+- Visual Studio 2012: 4016  
   
   Jinými slovy číslo portu přiřazené vzdálený ladicí program je zvýšen o 2 pro každou vydanou verzí. Můžete nastavit jiné číslo portu, jako je. Vysvětlíme, jak nastavit čísla portů v další části.  
   
@@ -51,7 +46,7 @@ Visual Studio Remote Debugger může běžet jako aplikace nebo jako službu na 
 ## <a name="the-discovery-port"></a>Port zjišťování  
  UDP 3702 slouží k vyhledání spuštěné instance vzdáleného ladícího programu v síti (například **najít** dialogového okna v **připojit k procesu** dialogového okna). Používá se pouze pro zjišťování počítači se systémem vzdálený ladicí program, takže je volitelný, pokud máte nějaké další způsob, jak zjistit název počítače nebo IP adresu cílového počítače. Jedná se standardním portem pro zjišťování, proto není možné nakonfigurovat číslo portu.  
   
- Pokud nechcete povolit zjišťování, můžete spustit msvsmon z příkazového řádku se zjišťováním zakázané: **Msvsmon /nodiscovery**.  
+ Pokud nechcete povolit zjišťování, můžete spustit msvsmon z příkazového řádku se zjišťováním zakázané:  **Msvsmon /nodiscovery**.  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Porty vzdálené ladicí program v Azure  
  Vzdálený ladicí program v Azure používá následující porty. Porty v cloudové službě jsou mapovány na porty konkrétního virtuálního počítače. Jsou všechny porty TCP.  
@@ -65,6 +60,3 @@ Visual Studio Remote Debugger může běžet jako aplikace nebo jako službu na 
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění](../debugger/remote-debugging.md)
-
-
-

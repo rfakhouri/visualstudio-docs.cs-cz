@@ -1,25 +1,20 @@
 ---
 title: Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku Profiler | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 396fe5511e1ef027b8dff1af350e2fa5b883e980
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8946d57b2aecaeef167579275ccedd6ce984e2f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805442"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +25,9 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu p
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profil služby rozhraní .NET**|-   [Jak: Instrumentace služby rozhraní .NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Profil služby rozhraní .NET**|-   [Jak: Instrumentace služby .NET a shromáždění podrobných dat o časování](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
 |**Přidání dat interakce vrstev**|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Profilovat C/C++**|-   [Jak: Instrumentace nativní služby a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Profilovat C/C++**|-   [Jak: Instrumentace nativní služby a shromáždění podrobných dat o časování](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
@@ -53,6 +48,3 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu p
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analýza dat instrumentace zobrazeních a sestavách  
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)
-
-
-

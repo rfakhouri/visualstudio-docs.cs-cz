@@ -1,14 +1,9 @@
 ---
 title: Principy konfigurace sestavení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - SolutionProperties.ActiveConfig
 - vs.build.newprojectconfiguration
@@ -30,13 +25,13 @@ ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799307"
 ---
 # <a name="understanding-build-configurations"></a>Principy konfigurací sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +39,9 @@ ms.locfileid: "49304132"
 Můžete ukládat různé konfigurace vlastností řešení a projektu pro použití v různé druhy sestavení. Chcete-li vytvořit, vyberte, upravit nebo odstranit konfiguraci, můžete použít **nástroje Configuration Manager**. Pokud chcete soubor otevřít, v řádku nabídek, zvolte **sestavení**, **nástroje Configuration Manager**, nebo zadejte **konfigurace** v **Snadné spuštění** pole. Můžete také použít **konfigurace řešení** seznamu **standardní** panelu nástrojů vyberte konfiguraci nebo otevřít **nástroje Configuration Manager**.  
   
 > [!NOTE]
->  Pokud nemůže najít řešení, konfigurace nastavení na panelu nástrojů a nemůžou přistupovat **nástroje Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] můžou vztahovat. vývojové nastavení. Další informace najdete v tématu [postupy: Správa konfigurací s použít nastavení pro vývojáře jazyka Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+>  Pokud nemůže najít řešení, konfigurace nastavení na panelu nástrojů a nemůžou přistupovat **nástroje Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] můžou vztahovat. vývojové nastavení. Další informace najdete v tématu [jak: Správa konfigurací s použitými nastaveními vývojáře jazyka Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
- Ve výchozím nastavení, ladění a konfiguraci vydání jsou zahrnuté v projektech, které jsou vytvářeny instalační sadou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony. Konfigurace ladění podporuje ladění aplikace a konfiguraci vydané verze sestavení na verzi aplikace, který je možné nasadit. Další informace najdete v tématu [postupy: nastavení ladění a konfiguraci vydání](../debugger/how-to-set-debug-and-release-configurations.md). Můžete také vytvořit vlastní řešení konfigurace a konfigurace projektu. Další informace najdete v tématu [postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).  
+ Ve výchozím nastavení, ladění a konfiguraci vydání jsou zahrnuté v projektech, které jsou vytvářeny instalační sadou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony. Konfigurace ladění podporuje ladění aplikace a konfiguraci vydané verze sestavení na verzi aplikace, který je možné nasadit. Další informace najdete v tématu [jak: Konfigurace nastavení ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Můžete také vytvořit vlastní řešení konfigurace a konfigurace projektu. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="solution-configurations"></a>Konfigurace řešení  
  Konfigurace řešení určuje, jak jsou projekty v řešení sestaveny a nasazeny. K úpravě konfigurace řešení nebo definovat novou, v **nástroje Configuration Manager**v části **konfigurace aktivního řešení**, zvolte **upravit** nebo **nový** .  
@@ -95,6 +90,3 @@ Můžete ukládat různé konfigurace vlastností řešení a projektu pro použ
  [Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)   
  [Reference sestavení C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Devenv – přepínače příkazového řádku](../ide/reference/devenv-command-line-switches.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'DA0018: 32bitová aplikace spuštěná v procesu limitech paměti spravovaného | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,18 +12,18 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722262"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773284"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32bitová aplikace spuštěná v limitech paměti spravovaného procesu
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: limitech paměti spravovaného 32bitová aplikace spuštěná v procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id pravidla | DA0018 |  
+Rule Id|DA0018|  
 | Kategorie | Použití nástroje pro profilaci |  
 | Metoda profilace | Vzorkování |  
 | Zpráva | Spravované přidělení paměti se blíží se limit počtu výchozí pro 32bitový proces. Vaše aplikace může být vázána na paměť. |  
@@ -36,7 +31,7 @@ Id pravidla | DA0018 |
   
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Systém data shromážděná během spuštění profilování označuje, že rozhraní .NET Framework paměti haldy dosaženy maximální velikost, se kterým dosáhnete spravované haldy v 32bitový proces. Maximální velikost je výchozí hodnota. Je založen na celkové množství adresní prostor procesu je možné přidělit pro Nesdílené bajty. Hlášená hodnota je maximum pozorované hodnotu haldy zatímco byla aktivní profilovaný proces. Vezměte v úvahu profilaci znovu pomocí metody profilování paměti .NET a optimalizaci aplikací pomocí spravované prostředky.  
   
  Při velikosti spravované haldy přístup výchozí omezení, proces automatického uvolňování paměti kolekce pravděpodobně mají být vyvolány častěji. Tím se zvyšuje nároky na správu paměti.  
@@ -74,6 +69,3 @@ Id pravidla | DA0018 |
   K získání architektury osvobození od omezení virtuální paměti na velikosti části privátní adresní prostor procesu, zkuste spustit tento 32bitový proces na 64bitovém počítači.  32bitový proces na 64bitovém počítači můžete získat až 4 GB přidělené virtuální paměti.  
   
   64-bit proces běží na 64bitovém počítači můžete získat až do 8 TB virtuální paměti. Vezměte v úvahu opětovné kompilaci aplikací ke spuštění jako nativní 64bitové aplikace. Toto pravidlo je pouze pro informaci a nemusí potřebovat nápravné opatření.
-
-
-

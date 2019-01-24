@@ -1,14 +1,9 @@
 ---
 title: 'Rychlý start: Ladění kódu HTML a CSS | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 50c6899699bc8186c3cc1979b86d6659d9e3f13d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777686"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Rychlý start: Ladění kódu HTML a CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 - [Ladění ovládacího prvku WebView](../debugger/debug-a-webview-control.md)  
   
-  Informace o dalších funkcí, jako je například používání okna konzoly jazyka JavaScript a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md) a [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+  Informace o dalších funkcí, jako je například používání okna konzoly jazyka JavaScript a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md) a [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Kontrola live DOM  
  Průzkumník modelu DOM se dozvíte, zobrazení vykreslené stránky a Průzkumníka modelu DOM můžete změnit hodnoty a hned vidět výsledky. To umožňuje testovat změny bez zastavení a restartování ladicího programu. Zdrojový kód v projektu nemění, když pracujete s stránce tímto způsobem, takže když najdete odpovídající kód opravy provedete změny zdrojového kódu.  
@@ -76,7 +71,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 - Zkontrolujte použití stylů CSS pro elementy stránek a trasování, které se použily pravidla.  
   
-  Při ladění aplikací často potřebujete k výběru elementů v Průzkumníku modelu DOM. Při výběru prvku hodnoty zobrazené na kartách na pravé straně Průzkumníka modelu DOM automaticky aktualizovat tak, aby odrážely vybraný element v Průzkumníku modelu DOM. Jedná se o karty: **styly**, **vypočítané**, **rozložení**. Windows Store apps podporuje také **události** a **změny** karty. Další informace o výběru elementů naleznete v tématu [výběru elementů](#SelectingElements).  
+  Při ladění aplikací často potřebujete k výběru elementů v Průzkumníku modelu DOM. Při výběru prvku hodnoty zobrazené na kartách na pravé straně Průzkumníka modelu DOM automaticky aktualizovat tak, aby odrážely vybraný element v Průzkumníku modelu DOM. Jde o karty: **Styly**, **vypočítané**, **rozložení**. Windows Store apps podporuje také **události** a **změny** karty. Další informace o výběru elementů naleznete v tématu [výběru elementů](#SelectingElements).  
   
 > [!TIP]
 >  Pokud se zavře okno Průzkumníka modelu DOM, zvolte **ladění**>**Windows** > **Průzkumníka modelu DOM** znovu otevřít. V okně se zobrazí jenom při relaci ladění skriptu.  
@@ -192,7 +187,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 11. V okně Průzkumníka modelu DOM, vyberte požadovaný prvek DIV oddílu, který má ID `"fView"`. Chcete-li zobrazit a vybrat správný prvek DIV pomocí kláves se šipkami. (Klávesy se šipkou doprava umožňuje zobrazit podřízené položky elementu.)  
   
-     ![Průzkumník modelu DOM](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  Můžete také vybrat DIV element v levém dolním rohu okna konzoly jazyka JavaScript tak, že zadáte `select(fView)` na >> vstupní řádek a pak stiskněte klávesu Enter.  
@@ -258,7 +253,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 2.  Otevřete soubor default.html a upravit zdrojový kód tak, že změníte výšku a šířku `"fView"` elementu DIV na 100 %.  
   
-3.  Zvolte **aktualizovat Windows app** tlačítko na panelu nástrojů ladění (nebo stisknutím klávesy F4). Tlačítko vypadá takto: ![tlačítko Aktualizovat Windows app](../debugger/media/js-refresh.png "JS_Refresh").  
+3.  Zvolte **aktualizovat Windows app** tlačítko na panelu nástrojů ladění (nebo stisknutím klávesy F4). Tlačítko vypadá takto: ![Aktualizovat aplikaci Windows](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Znovu načíst stránky aplikace a simulátor nebo emulátor telefonu vrátí do popředí.  
   
@@ -312,6 +307,3 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  [Příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md)   
  [Ladění ukázkový kód HTML, CSS a JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Technická podpora a usnadnění přístupu](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

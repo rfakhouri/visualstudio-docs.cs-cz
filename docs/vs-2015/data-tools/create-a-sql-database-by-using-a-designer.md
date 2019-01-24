@@ -1,12 +1,9 @@
 ---
 title: Vytvoření databáze SQL pomocí návrháře | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 54
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765549"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Vytvoření databáze SQL pomocí návrháře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,4 +192,3 @@ Můžete zkoumat základní úkoly, jako je například přidávání tabulek a 
   
 ## <a name="next-steps"></a>Další kroky  
  Teď, když máte místní databázový soubor s ukázkovými daty, můžete dokončit některé názorné postupy, které popisují databázové úlohy.
-

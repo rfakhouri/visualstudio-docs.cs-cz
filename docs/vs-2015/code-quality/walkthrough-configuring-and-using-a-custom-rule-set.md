@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Konfigurace a používání vlastní sady pravidel | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Konfigurace a používání vlastní sady pravidel | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,14 +12,14 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780102"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Návod: Konfigurace a používání vlastní sady pravidel
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Průvodce: Konfigurace a používání vlastní sady pravidel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nakonfigurované na použití vlastní *sada pravidel, která* na knihovny tříd. Můžete vybrat sadu pravidel, která má vztah k typu projektu, který jste zadali pro vaše řešení, nebo můžete vybrat alternativní pravidlo sady ke splnění se specifickými požadavky, jako je skenování starší verzi kódu pro problémy, které lze napravit pevná způsobem. V obou případech sady pravidel se taky dají upravit a vyladit je požadavky projektu.  
@@ -77,7 +72,7 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nak
    > [!TIP]
    >  V reálné situaci, je vhodné použít pro určení priority problémy, které chcete cílit s analýzou kódu začínat **Minimální doporučená pravidla** sada pravidel a opravit problémy požadované a postupně přidat Další pravidla nebo pravidlo se nastaví na Najít a opravit další problémy.  
   
-   V dalším kroku přidáte nějaký kód do knihovny tříd, který se použije k předvedení porušení CA1704 "Identifikátory by měly být zadány správně" pravidel nástroje Analýza kódu. Další informace najdete v tématu [CA1704: identifikátory by měly být zadány správně](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+   V dalším kroku přidáte nějaký kód do knihovny tříd, který se použije k předvedení porušení CA1704 "Identifikátory by měly být zadány správně" pravidel nástroje Analýza kódu. Další informace najdete v tématu [CA1704: Identifikátory by měly být zadány správně](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
 #### <a name="add-your-own-code"></a>Přidejte vlastní kód  
   
@@ -160,6 +155,3 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nak
 ## <a name="see-also"></a>Viz také  
  [Postupy: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Referenční dokumentace sady pravidel nástroje Analýza kódu](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

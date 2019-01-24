@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: použití průvodců se šablonami projektů | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití průvodců se šablonami projektů | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97e3d2fb69da4019a11b2297f6d66cac70a6b0ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760980"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Postupy: Použití průvodců se šablonami projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
   
 3. Přidáte sestavení jako prostředek do projektu VSIX. Otevřete soubor source.extension.vsixmanifest a vyberte **prostředky** kartu. V **přidat nové aktivum** okně pro **typ** vyberte **Microsoft.VisualStudio.Assembly**, pro **zdroj** vyberte **A projekt v aktuálním řešení**a pro **projektu** vyberte **MyTemplateWizard**.  
   
-4. Přidejte následující odkazy do projektu VSIX. (V **Průzkumníka řešení**, v části VSIX projekt vyberte uzel **odkazy**, klikněte pravým tlačítkem a vyberte **přidat odkaz**.) V **přidat odkaz** dialogového okna v **Framework** kartu, najdete **System.Windows formuláře** sestavení a vyberte ji. Teď vyberte **rozšíření** najít kartu **EnvDTE** sestavení a vyberte ji. Také najít **Microsoft.VisualStudio.TemplateWizardInterface** sestavení a vyberte ji. Klikněte na tlačítko **OK**.  
+4. Přidejte následující odkazy do projektu VSIX. (V **Průzkumníka řešení**, v části VSIX projekt vyberte uzel **odkazy**, klikněte pravým tlačítkem a vyberte **přidat odkaz**.) V **přidat odkaz** dialogového okna v **Framework** kartu, najdete **System.Windows formuláře** sestavení a vyberte ji. Teď vyberte **rozšíření** najít kartu **EnvDTE** sestavení a vyberte ji. Také najít **Microsoft.VisualStudio.TemplateWizardInterface** sestavení a vyberte ji. Klikněte na **OK**.  
   
 5. Přidejte třídu pro implementaci průvodce do projektu VSIX. (V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel projektu VSIX a vyberte **přidat**, pak **nová položka**, pak **třídy**.) Název třídy **WizardImplementation**.  
   
@@ -228,7 +223,7 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
   
 9. Najít **sn.exe** nástroj pro podepisování. Například v operačním systému Windows 10 64-bit, typické cesta by být následující:  
   
-     **C:\Program soubory (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 nástroje**  
+     **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
   
      Pokud nemůžete najít nástroj, zkuste spustit **kde/r.  sn.exe** v příkazovém okně. Poznamenejte si cestu.  
   

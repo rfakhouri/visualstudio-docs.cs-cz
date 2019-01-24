@@ -2,7 +2,7 @@
 title: Možnosti pro ladění Azure cloud services | Dokumentace Microsoftu
 description: Ladění cloudové služby Azure
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -10,12 +10,12 @@ ms.date: 03/18/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: bd2608371871b7adc925fc11927fe061b00a1ec6
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 3b489b97551e5b5522cb58868b34dee4d9e5fb7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776788"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Různé způsoby ladění cloudové služby Azure
 Tento článek obsahuje odkazy na různé způsoby ladění cloudové služby Azure. 

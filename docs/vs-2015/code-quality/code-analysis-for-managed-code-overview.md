@@ -1,14 +1,9 @@
 ---
 title: Analýza kódu pro spravovaný kód přehled | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: overview
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -19,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5024e03fc48a4055cabba1e91dac42d61d6de805
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389089"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755972"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Přehled Analýzy kódu pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí i
 ## <a name="ide-integrated-development-environment-integration"></a>Integrace integrovaného vývojového prostředí (IDE)  
  Jako vývojář můžete spustit analýzu kódu na projektu automaticky nebo ji můžete spustit ručně.  
   
- Chcete-li spustit analýzu kódu při každém sestavení projektu, je vybrat **povolit analýzu kódu na sestavení (definuje konstantu CODE_ANALYSIS)** na stránce vlastností projektu. Další informace najdete v tématu [postupy: povolení a zakázání automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Chcete-li spustit analýzu kódu při každém sestavení projektu, je vybrat **povolit analýzu kódu na sestavení (definuje konstantu CODE_ANALYSIS)** na stránce vlastností projektu. Další informace najdete v tématu [jak: Povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
- Pro ruční spuštění analýzy kódu na projektu, na **analyzovat** nabídky, klikněte na tlačítko **spustit analýzu kódu na**_ProjectName_. Další informace najdete v tématu [postupy: povolení a zakázání automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Pro ruční spuštění analýzy kódu na projektu, na **analyzovat** nabídky, klikněte na tlačítko **spustit analýzu kódu na**_ProjectName_. Další informace najdete v tématu [jak: Povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
 ## <a name="rule-sets"></a>Sady pravidel  
  Pravidla analýzy kódu pro spravovaný kód jsou seskupena do *sad pravidel*. Můžete použít jednu ze sad standardních pravidel společnosti Microsoft, nebo můžete vytvořit vlastní sadu pravidel, která za určitým účelem. Další informace najdete v tématu [pomocí sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
@@ -67,12 +62,9 @@ Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí i
   
   Toho lze dosáhnout zadáním zásad vrácení se změnami. Další informace najdete v tématu [zlepšení kvality kódu pomocí zásady vrácení se změnami týmového projektu](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
-## <a name="team-build-integration"></a>Integrace týmového sestavení  
+## <a name="team-build-integration"></a>Team Build Integration  
  Chcete-li spustit nástroj pro analýzu jako součást procesu sestavení můžete použít integrované funkce systému sestavení. Další informace najdete v tématu [sestavte aplikaci](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
 ## <a name="see-also"></a>Viz také  
  [Použití sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
- [Postupy: Povolení a zakázání automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
-
-
-
+ [Postupy: Povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

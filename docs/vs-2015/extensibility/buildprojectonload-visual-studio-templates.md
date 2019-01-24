@@ -1,14 +1,9 @@
 ---
 title: BuildProjectOnLoad (šablony sady Visual Studio) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5883eebec4ad5266258de2c0db456ea516c5b53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 209f015103a291940f2d43ccdbfd140d71c9e8ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756934"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51809958"
 Určuje, jestli se projekt sestavil ihned po jeho vytvoření.  
   
  \<Vstemplate – >  
- \<TemplateData >  
+ \<TemplateData>  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -53,7 +48,7 @@ Určuje, jestli se projekt sestavil ihned po jeho vytvoření.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  
@@ -95,4 +90,3 @@ Určuje, jestli se projekt sestavil ihned po jeho vytvoření.
  [TemplateContent – Element (šablony sady Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)   
  [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
