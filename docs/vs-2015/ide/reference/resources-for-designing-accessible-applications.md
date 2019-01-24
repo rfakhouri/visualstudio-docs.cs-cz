@@ -1,14 +1,9 @@
 ---
 title: Prostředky pro navržení aplikací usnadňujících přístup | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761669"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Prostředky pro navržení aplikací usnadňujících přístup
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,9 +43,9 @@ Použijte na následujících odkazech najdete informace o technologiích, kter�
   
 -   **Konzole usnadnění** Tento technický článek popisuje rozhraní API a události použité k vystavení konzoly ve Windows XP pro usnadnění. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).  
   
-## <a name="web-sites"></a>Webové servery  
+## <a name="web-sites"></a>Weby  
   
--   [Návod: Přístupnosti pomocí ovládacích prvků obrázek, ovládací prvky nabídky a AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Toto téma obsahuje podrobné pokyny, včetně dostupné ovládací prvky v ukázkové webové stránky, jakož i některé tipy k usnadnění návrhu na webu.  
+-   [Návod: Pokyny pro usnadnění přístupu pomocí ovládacích prvků obrázek, ovládací prvky nabídky a AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Toto téma obsahuje podrobné pokyny, včetně dostupné ovládací prvky v ukázkové webové stránky, jakož i některé tipy k usnadnění přístupu návrhu pro Web.  
   
 -   **Zpřístupnění webové stránky více** Tento technický článek obsahuje seznam prvků jazyka HTML 3.2, které jsou k dispozici a prvky, které můžou být přístupné pro použití při vývoji webu. Další informace najdete na webu [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   
@@ -64,6 +59,3 @@ Použijte na následujících odkazech najdete informace o technologiích, kter�
   
 ## <a name="see-also"></a>Viz také  
  [Funkce sady Visual Studio pro usnadnění přístupu](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

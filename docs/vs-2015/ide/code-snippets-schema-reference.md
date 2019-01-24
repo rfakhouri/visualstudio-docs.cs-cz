@@ -1,14 +1,9 @@
 ---
 title: Referenční dokumentace schématu fragmentů kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
 - snippets [Visual Studio], schema reference
@@ -18,13 +13,13 @@ ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753560"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kódu – odkaz schématu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -280,7 +275,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[Element Autor](../ide/code-snippets-schema-reference.md#author)|Volitelný element. Jméno osoby nebo společnosti, která fragment kódu vytvořila. Může být žádný nebo jeden `Author` prvky `Header` elementu.|  
 |[Description – Element](../ide/code-snippets-schema-reference.md#description)|Volitelný element. Popis fragmentu kódu. Může být žádný nebo jeden `Description` prvky `Header` elementu.|  
-|[Helpurl – Element](../ide/code-snippets-schema-reference.md#helpurl)|Volitelný element. Adresa URL s dalšími informacemi o fragmentu kódu. Může být žádný nebo jeden `HelpURL` prvků v záhlaví elementu. **Poznámka:** nepoužívá sady Visual Studio `HelpUrl` elementu. Tento element je součástí schématu XML fragmentu kódu technologie IntelliSense a jakékoli fragmenty kódu, které tento element obsahují, budou úspěšně ověřeny, ale hodnota elementu nebude nikdy použita.|  
+|[Helpurl – Element](../ide/code-snippets-schema-reference.md#helpurl)|Volitelný element. Adresa URL s dalšími informacemi o fragmentu kódu. Může být žádný nebo jeden `HelpURL` prvků v záhlaví elementu. **Poznámka:**  Visual Studio nebude používat `HelpUrl` elementu. Tento element je součástí schématu XML fragmentu kódu technologie IntelliSense a jakékoli fragmenty kódu, které tento element obsahují, budou úspěšně ověřeny, ale hodnota elementu nebude nikdy použita.|  
 |[Element Keyword](../ide/code-snippets-schema-reference.md#keywords)|Volitelný element. Skupiny `Keyword` elementy. Může být žádný nebo jeden `Keywords` prvky `Header` elementu.|  
 |[Shortcut Element](../ide/code-snippets-schema-reference.md#shortcut)|Volitelný element. Určuje textovou zkratku, pomocí níž lze fragment kódu vložit. Může být žádný nebo jeden `Shortcut` prvky `Header` elementu.|  
 |[Snippettypes – Element](../ide/code-snippets-schema-reference.md#snippettypes)|Volitelný element. Skupiny `SnippetType` elementy. Může být žádný nebo jeden `SnippetTypes` prvky `Header` elementu. Pokud neexistují žádné `SnippetTypes` prvky, fragment kódu je vždy platný.|  
@@ -666,6 +661,3 @@ is a great color. I love Blue.
 ## <a name="see-also"></a>Viz také  
  [Fragmenty kódu](../ide/code-snippets.md)   
  [Návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Upřesnit nastavení zabezpečení – dialogové okno | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.err.debug_in_zone_no_hostproc
 - vs.err.debug_in_zone_no_hostproc:11310
@@ -22,13 +17,13 @@ ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ff49418b23317b590776c0f81d334480f460780a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 283428e4d4b2c81179d8dbd8ff6200c1d7140eae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758723"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Dialogové okno Upřesnit nastavení zabezpečení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,6 +49,3 @@ Toto dialogové okno umožňuje zadat nastavení zabezpečení související s l
   
 ## <a name="see-also"></a>Viz také  
  [Stránka Zabezpečení, Návrhář projektu](../../ide/reference/security-page-project-designer.md)
-
-
-

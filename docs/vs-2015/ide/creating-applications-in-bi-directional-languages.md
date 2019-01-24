@@ -1,14 +1,9 @@
 ---
 title: Vytváření aplikací v obousměrných jazycích | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
 - bi-directional language support, about bi-directional language support
@@ -17,13 +12,13 @@ ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32acd2a58c2482de6fdd7ed10c99a023d41a8cb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 340dc798cdff3276df78b6cbf13065f7e769cb23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763450"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Vytváření aplikací v obousměrných jazycích
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazy
   
 -   **Názvy objektů** obousměrných jazycích můžete přiřadit názvy řešení, projekty, soubory, složky a tak dále. V kódu můžete použít obousměrných jazycích pro názvy proměnných, tříd, objektů, atributy, metadata a další prvky.  
   
--   **Kódování souboru** můžete ukládání a otevírání souborů s konkrétní jazyk nebo kódování Unicode. Další informace najdete v tématu [postupy: ukládání a otevřených souborů s kódováním](../ide/how-to-save-and-open-files-with-encoding.md).  
+-   **Kódování souboru** můžete ukládání a otevírání souborů s konkrétní jazyk nebo kódování Unicode. Další informace najdete v tématu [jak: Ukládání a otevírání souborů s kódováním](../ide/how-to-save-and-open-files-with-encoding.md).  
   
 ## <a name="features-with-limited-or-no-support"></a>Funkce s omezením nebo bez podpory  
  Další funkce, které jsou společné pro obousměrných jazyků aplikací nejsou plně podporovány v sadě Visual Studio nebo v některých případech se vůbec ne. Zde jsou některé z nich:  
@@ -84,7 +79,7 @@ Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazy
 -   Kód a text literálu. V editoru kódu (což je také textového editoru) vám pomůže arabské nebo hebrejské název třídy, funkce, proměnné, vlastnosti, řetězcové literály, atributy a tak dále. Editor ale nepodporuje pořadí čtení zprava doleva. text vždy začíná na levém okraji.  
   
     > [!TIP]
-    >  Doporučujeme, umístěte řetězcové literály do souborů prostředků místo pevného kódování je do vašich aplikací. Další informace najdete v tématu [návod: lokalizace Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    >  Doporučujeme, umístěte řetězcové literály do souborů prostředků místo pevného kódování je do vašich aplikací. Další informace najdete v tématu [názorný postup: Lokalizace formulářů Windows](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
     >  Musíte být konzistentní vzhledem k aplikacím v jak odkazovat na objekty s názvem v těchto jazycích. Pokud používáte kašidy názvů Arabské proměnné, musíte vždycky použít kašida k odkazování na tuto proměnnou nebo způsobí chyby.  
@@ -96,4 +91,3 @@ Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazy
  [Obousměrná podpora pro webové aplikace ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [Globalizace aplikací](../ide/globalizing-applications.md)   
  [Lokalizace aplikací](../ide/localizing-applications.md)
-

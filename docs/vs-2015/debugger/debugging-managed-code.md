@@ -1,14 +1,9 @@
 ---
 title: Ladění spravovaného kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: fa3aff01-c271-4aa7-b5b1-def560471c84
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 84e41d06fb490cf3528f19eade08000f1ae27587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f65b0308729e19cd43f0c01b9ce6856a3b4d54ea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760501"
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
  [Příkazy Stop v jazyce Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
  Popisuje `Stop` příkaz, který poskytuje alternativu k nastavením zarážky. Ukázkový kód je také k dispozici, spolu s porovnání mezi `Stop` příkazu a `End` příkaz, a také mezi `Stop` a `Assert` příkazu.  
   
- [Návod: Ladění formuláře Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [Návod: Ladění formuláře systému Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
  Poskytuje podrobné pokyny pro vytvoření formuláře Windows a ladění, které tvoří. Formuláře Windows, standardní součástí spravované aplikace pro Windows je jedním z nejběžnějších spravovaných aplikací. Tento návod používá Visual C# a Visual Basic, ale jsou obecně podobné techniky pro vytvoření formuláře Windows pomocí C++.  
   
  [Ladění metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -98,6 +93,3 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
  [Návod: Ovládací prvky ladění vlastního Windows Forms v době návrhu](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

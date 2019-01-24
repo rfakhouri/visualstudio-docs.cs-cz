@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: zápis Vizualizéru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zápis Vizualizéru | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766458"
 ---
-# <a name="how-to-write-a-visualizer"></a>Postupy: Zápis vizualizéru
+# <a name="how-to-write-a-visualizer"></a>Postupy: Zápis Vizualizéru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete napsat vlastní vizualizér pro všechny spravované třídy s výjimkou objektu <xref:System.Object> nebo <xref:System.Array>.  
@@ -63,7 +58,7 @@ Můžete napsat vlastní vizualizér pro všechny spravované třídy s výjimko
   
   Důležité informace o zabezpečení může mít vlastní vizualizéry. Zobrazit [hlediska zabezpečení Vizualizéru](../debugger/visualizer-security-considerations.md).  
   
-  Následující postupy poskytnout souhrnný přehled, co je potřeba provést k vytvoření vizualizéru. Podrobnější vysvětlení najdete v tématu [návod: zápis Vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Následující postupy poskytnout souhrnný přehled, co je potřeba provést k vytvoření vizualizéru. Podrobnější vysvětlení najdete v tématu [názorný postup: Zápis Vizualizéru v C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Chcete-li vytvořit vedlejší ladicího programu  
   
@@ -83,9 +78,6 @@ Můžete napsat vlastní vizualizér pro všechny spravované třídy s výjimko
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření vlastních Vizualizérů](../debugger/create-custom-visualizers-of-data.md)   
- [Postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)   
- [Postupy: testování a ladění Vizualizéru](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [Postupy: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)   
+ [Postupy: Testování a ladění Vizualizéru](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [Informace o zabezpečení vizualizéru](../debugger/visualizer-security-considerations.md)
-
-
-

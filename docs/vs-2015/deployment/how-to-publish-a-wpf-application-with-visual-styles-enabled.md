@@ -1,30 +1,25 @@
 ---
-title: 'Postupy: publikování aplikace WPF s povolenými vizuálními styly | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Publikování aplikace WPF s povolenými vizuálními styly | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8f35b050b38013d57d347e10d1dcfd374a44d6d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779859"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: Publikování aplikace WPF s povolenými vizuálními styly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závislosti na motiv uživatelem. Ve výchozím nastavení nejsou povoleny vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je potřeba povolit ručně. Povolení vizuálních stylů pro aplikace WPF a pak tuto aplikaci publikovat řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuálních stylů, najdete v části [vizuální styly přehled](http://msdn.microsoft.com/en-us/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Další informace o chybové zprávě naleznete v tématu [řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
+Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závislosti na motiv uživatelem. Ve výchozím nastavení nejsou povoleny vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je potřeba povolit ručně. Povolení vizuálních stylů pro aplikace WPF a pak tuto aplikaci publikovat řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuálních stylů, najdete v části [vizuální styly přehled](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Další informace o chybové zprávě naleznete v tématu [řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Chcete-li vyřešit chybu a publikovat řešení, je třeba provést následující úkoly:  
   
@@ -75,7 +70,7 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
   
          Toto tlačítko zobrazí všechny položky projektu, včetně těch, které byly vyloučeny a ty, které jsou obvykle skryta. Soubor manifestu se zobrazí jako položku projektu.  
   
-2.  Vytvářejte a publikujte vaše řešení. Další informace o tom, jak publikovat řešení, najdete v části [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+2.  Vytvářejte a publikujte vaše řešení. Další informace o tom, jak publikovat řešení, najdete v části [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ##  <a name="BKMK_CreateManifest"></a> Vytvořit soubor manifestu  
   
@@ -169,8 +164,5 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
   
 ## <a name="see-also"></a>Viz také  
  [Řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Vizuální styly – přehled](http://msdn.microsoft.com/en-us/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
+ [Vizuální styly – přehled](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
  [Příkazové řádky](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
-
-
-

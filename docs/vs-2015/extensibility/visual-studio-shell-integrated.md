@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Shell (integrovaný režim) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, integrated mode features
 - Shell [Visual Studio], integrated mode features
 ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3eb0c8dd0588e1af9b3aad500c8bc9f899b44513
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 321135c8b6a0d560ed04dabf57bde5a525e16430
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766096"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrovaný režim)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +41,8 @@ Prostředí sady Visual Studio integrované zahrnuje integrované vývojové pro
 |Sestavení|– Vlastní kroky sestavení v integrovaném vývojovém prostředí<br />-Předkompilace pro ochranu duševního vlastnictví (IP)<br />-Podepisování kódu<br />     MSBuild|  
 |Editor|-Procházení kódu nástroje (jednotné hledání, definici zdroje, dědičnost)<br />-Navigace v kódu<br />-IntelliSense<br />– Inteligentní značky<br />-Refaktoring<br />-Přehlednou výpis<br />-Filtrování IntelliSense<br />-   **Code Definition** okna|  
 |Návrhář|– Windows Presentation Foundation návrháře<br />– Windows Forms Designer<br />-Webové návrháře a editoru HTML|  
-|Data|-   **Průzkumník serveru** (zjednodušené: jenom data). Viz poznámka 1.<br />-   **Zdroje dat** okna<br />-Úplnou sadu ovládací prvky dat<br />-XML Editor<br />-Datové připojení k místní zdroj dat (. MDF nebo. MDB)<br />-Datové připojení k objektu<br />-Datové připojení k webové službě<br />-Datové připojení k místní databázi serveru<br />-Data svázat vzdálený databázový server<br />-DDL nástroje pro vzdálených dat<br />-   **Průzkumník serveru** rozšíření ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ukázky)|  
-|Ladicí program|– Místní ladění. Viz poznámka 2.<br />-Spravovaného ladění<br />– Místní ladění<br />-Připojit k místní procesu<br />-Připojit ke vzdálenému procesu<br />-Anonymního delegáta<br />-Aplikační domény<br />– ASPX ladění<br />– Atributy<br />-Přerušení během vyhodnocení funkce<br />-Zarážky<br />– Zarážky omezení<br />-Zásobník volání<br />-   **Příkaz** okna<br />– Ladění mezi vlákny<br />-Datových tipech<br />-Data visualizer<br />-Ladicí program podpora asistentů spravovaného ladění (mda)<br />– Ladicí program podpora pro předávání typů<br />– Podpora dteevents spouští OTB<br />-JMC krokovač<br />-Ladicí program AppID testu (DBGCLR)<br />– Profil ladicí program<br />-Ladicího programu nástroje a možnosti<br />– Iterator ladění<br />-Vyhodnocení výrazu design-time<br />– Vyhodnocovací filtr výrazů C#<br />– Převod do strojového jazyka<br />-Upravit a pokračovat<br />– Chyba při vyhodnocování windows výraz (kukátko, místní hodnoty, automatické hodnoty)<br />– Pomocné rutiny výjimka<br />– Výjimky<br />– Spouštění<br />– Obecné typy<br />– Získání správné zdroje<br />-Cluster prostředí HPC a ladění<br />– Integrované ladění Vícejazyčná verze<br />-InterOp ladění<br />-Ladění just-in-time<br />– Místní ladění<br />-Spravovaného ladění<br />-Ruční kontrola (procesy – okno)<br />– Paměť<br />– S minimálním výpisem podpora<br />– Moduly<br />-Ladění více procesů<br />– Nativní ladění<br />– Podpora modulu nové ladění<br />-Ladění optimalizovaného kódu<br />-Filtrování windows output<br />-Zpracování hostování pro spravované ladění<br />-Procesy<br />– Rychlé kukátko<br />-Registry<br />-Registry v zásobníku<br />-Vzdáleného ladění<br />– Návratové hodnoty<br />-Ladění script<br />-Podpora služby source<br />-Zabezpečení<br />Side-by-side<br />-SQL<br />– Server symbol<br />-Body trasování<br />-Vlákna<br />-Vizualizace<br />-Ladicí program extensible šablony stylů transformace XSLT (Language)|  
+|Data|-   **Průzkumník serveru** (zjednodušené: jenom data). Viz poznámka 1.<br />-   **Zdroje dat** okna<br />-Úplnou sadu ovládací prvky dat<br />-   XML Editor<br />-Datové připojení k místní zdroj dat (. MDF nebo. MDB)<br />-Datové připojení k objektu<br />-Datové připojení k webové službě<br />-Datové připojení k místní databázi serveru<br />-Data svázat vzdálený databázový server<br />-DDL nástroje pro vzdálených dat<br />-   **Průzkumník serveru** rozšíření ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ukázky)|  
+|Ladicí program|– Místní ladění. Viz poznámka 2.<br />-Spravovaného ladění<br />– Místní ladění<br />-Připojit k místní procesu<br />-Připojit ke vzdálenému procesu<br />-Anonymního delegáta<br />-Aplikační domény<br />– ASPX ladění<br />– Atributy<br />-Přerušení během vyhodnocení funkce<br />-Zarážky<br />– Zarážky omezení<br />-Zásobník volání<br />-   **Příkaz** okna<br />– Ladění mezi vlákny<br />-Datových tipech<br />-Data visualizer<br />-Ladicí program podpora asistentů spravovaného ladění (mda)<br />– Ladicí program podpora pro předávání typů<br />– Podpora dteevents spouští OTB<br />-JMC krokovač<br />-Ladicí program AppID testu (DBGCLR)<br />– Profil ladicí program<br />-Ladicího programu nástroje a možnosti<br />– Iterator ladění<br />-Vyhodnocení výrazu design-time<br />– Vyhodnocovací filtr výrazů C#<br />– Převod do strojového jazyka<br />-Upravit a pokračovat<br />– Chyba při vyhodnocování windows výraz (kukátko, místní hodnoty, automatické hodnoty)<br />– Pomocné rutiny výjimka<br />– Výjimky<br />– Spouštění<br />– Obecné typy<br />– Získání správné zdroje<br />-Cluster prostředí HPC a ladění<br />– Integrované ladění Vícejazyčná verze<br />-InterOp ladění<br />-Ladění just-in-time<br />– Místní ladění<br />-Spravovaného ladění<br />-Ruční kontrola (procesy – okno)<br />– Paměť<br />– S minimálním výpisem podpora<br />– Moduly<br />-Ladění více procesů<br />– Nativní ladění<br />– Podpora modulu nové ladění<br />-Ladění optimalizovaného kódu<br />-Filtrování windows output<br />-Zpracování hostování pro spravované ladění<br />-Procesy<br />– Rychlé kukátko<br />-Registry<br />-Registry v zásobníku<br />-Vzdáleného ladění<br />– Návratové hodnoty<br />-Ladění script<br />-Podpora služby source<br />-Zabezpečení<br />Side-by-side<br />-   SQL<br />– Server symbol<br />-Body trasování<br />-Vlákna<br />-Vizualizace<br />-Ladicí program extensible šablony stylů transformace XSLT (Language)|  
 |64bitová podpora|-64-bit ladění pro spravovaný i nativní kód, všechny jazyky<br />-x64 nativní podporu|  
 |Správa zdrojového kódu (SCC)|– Integrace SCC úrovně basic. Viz poznámka 3.<br />-Nástroje a možnosti ověřování|  
 |Rozšiřitelnost|-Zpracování součástí rozšíření VSPackages a rozhraní MEF|  

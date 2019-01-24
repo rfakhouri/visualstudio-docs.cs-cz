@@ -1,27 +1,22 @@
 ---
 title: Zobrazení stromu volání – Data instrumentace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 630f75468adf5995eb887ac5f73d82462bfe32a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 385d12550692f5f27521afe4dea12e5bdb0aa9d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782385"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Zobrazení stromu volání – data instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Hodnoty pro funkci ve stromu volání označuje datum a čas pro instance funkce
 |**Název procesu**|Název, který je přiřazen k procesu.|  
 |**Výhradní čas režie**|Časová náročnost této funkce, která způsobila instrumentace. Režie byla odečtena od vylučuje všechny časy.|  
 |**Celkový čas režie**|Časová náročnost této funkce a její podřízené funkce, která způsobila instrumentace. Test zatížení byla odečtena od fiskálního (včetně).|  
-|**úroveň**|Hloubka funkce ve stromu volání. Pouze v [VSPerfReport](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
+|**Úroveň**|Hloubka funkce ve stromu volání. Pouze v [VSPerfReport](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
   
 ## <a name="elapsed-inclusive-values"></a>Uplynulý včetně hodnoty  
  Uplynulý včetně hodnoty označuje datum a čas v zásobníku volání instance funkce, které byly volány nadřazené funkce ve stromu volání. Čas obsahuje čas, který byl stráven v podřízené funkce, které volal funkci a ve volání do operačního systému, například vstupně výstupní operace a přepnutí kontextu.  
@@ -91,10 +86,7 @@ Hodnoty pro funkci ve stromu volání označuje datum a čas pro instance funkce
 |**Minimální výhradní čas aplikace**|Výhradní čas aplikace minimální volání této funkce v tomto kontextu.|  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view-sampling-data.md)   
  [Zobrazení stromu volání – instrumentace](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Zobrazení stromu volání – Vzorkování](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
-
-
-

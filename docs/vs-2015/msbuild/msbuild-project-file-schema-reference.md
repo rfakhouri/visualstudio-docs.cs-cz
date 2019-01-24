@@ -1,14 +1,9 @@
 ---
 title: Referenční dokumentace schématu souboru projektu nástroje MSBuild | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd1add4f68bb2e0648cf3cf08b72b1bc6f592595
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772583"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenční dokumentace schématu souboru projektu nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +38,17 @@ Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md
 |-------------|--------------------|----------------|  
 |[Choose – element (MSBuild)](../msbuild/choose-element-msbuild.md)|jinak<br /><br /> Kdy|--|  
 |[Import – element (MSBuild)](../msbuild/import-element-msbuild.md)|--|Podmínka<br /><br /> Projekt|  
-|[ImportGroup – element](../msbuild/importgroup-element.md)|Importovat|Podmínka|  
-|[Item – element (MSBuild)](../msbuild/item-element-msbuild.md)|*Itemmetadata –*|Podmínka<br /><br /> Vyloučení<br /><br /> Zařadit členy<br /><br /> odebrat|  
+|[ImportGroup – element](../msbuild/importgroup-element.md)|Import|Podmínka|  
+|[Item – element (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|Podmínka<br /><br /> Vyloučení<br /><br /> Zařadit členy<br /><br /> odebrat|  
 |[ItemDefinitionGroup – element (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Položka*|Podmínka|  
 |[ItemGroup – element (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Položka*|Podmínka|  
 |[ItemMetadata – element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Položka*|Podmínka|  
 |[OnError – element (MSBuild)](../msbuild/onerror-element-msbuild.md)|--|Podmínka<br /><br /> ExecuteTargets|  
 |[Otherwise – element (MSBuild)](../msbuild/otherwise-element-msbuild.md)|Zvolte<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|  
-|[Output – element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Podmínka<br /><br /> Název položky<br /><br /> Vlastnost PropertyName<br /><br /> Parametr úkolu|  
+|[Output – element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Podmínka<br /><br /> ItemName<br /><br /> Vlastnost PropertyName<br /><br /> Parametr úkolu|  
 |[Parameter – element](../msbuild/parameter-element.md)|--|Výstup<br /><br /> Zda položka ParameterType<br /><br /> Požadováno|  
 |[ParameterGroup – element](../msbuild/parametergroup-element.md)|*Parametr*|--|  
-|[Project – element (MSBuild)](../msbuild/project-element-msbuild.md)|Zvolte<br /><br /> Importovat<br /><br /> ItemGroup<br /><br /> Projectextensions –<br /><br /> PropertyGroup<br /><br /> Cíl<br /><br /> Usingtask –|Defaulttargets –<br /><br /> InitialTargets<br /><br /> Atribut ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> atribut xmlns|  
+|[Project – element (MSBuild)](../msbuild/project-element-msbuild.md)|Zvolte<br /><br /> Import<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> Usingtask –|Defaulttargets –<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> atribut xmlns|  
 |[ProjectExtensions – element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Property – element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Podmínka|  
 |[PropertyGroup – element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Vlastnost*|Podmínka|  
@@ -68,5 +63,3 @@ Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md
  [Podmínky](../msbuild/msbuild-conditions.md)   
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)
-
-

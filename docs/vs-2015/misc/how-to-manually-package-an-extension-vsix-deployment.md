@@ -1,25 +1,20 @@
 ---
-title: 'Postupy: ruční balíček rozšíření (nasazení VSIX) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ručně balíček rozšíření (nasazení VSIX) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
-manager: douge
-ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773587"
 ---
-# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Postupy: ruční balíček rozšíření (VSIX nasazení)
+# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Postupy: Ručně balíček rozšíření (VSIX nasazení)
 Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření pro nasazení. Existují tři způsoby, jak vytvořit balíček:  
   
 - Vytvořte projekt VSIX balíček pomocí jedné z, které jsou součástí šablony pro rozšiřující [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Toto je nejjednodušší způsob pro většinu scénářů.  
@@ -31,7 +26,7 @@ Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-m
   Tento dokument popisuje třetí možnost.  
   
 ## <a name="creating-a-vsix-package"></a>Vytvoření balíčku VSIX  
- Chcete-li ručně balíček rozšíření, přidat soubor s příponou extension.manifest a souboru [Content_Types] .xml do projektu rozšíření, vytvořte z nich v komprimovaném souboru spolu s výstupu sestavení a přejmenujte komprimovaný soubor tak, aby měl příponu názvu souboru .vsix. Rozšíření zabalit, musí být typu, který je podporován [VSIX schématu](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Chcete-li ručně balíček rozšíření, přidat soubor s příponou extension.manifest a souboru [Content_Types] .xml do projektu rozšíření, vytvořte z nich v komprimovaném souboru spolu s výstupu sestavení a přejmenujte komprimovaný soubor tak, aby měl příponu názvu souboru .vsix. Rozšíření zabalit, musí být typu, který je podporován [VSIX schématu](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 >  Názvy souborů v balíčků VSIX nesmí obsahovat mezery ani znaky, které jsou vyhrazené v identifikátory URI (Uniform Resource), jako jsou definované v části [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -42,7 +37,7 @@ Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 2.  Vytvořte soubor XML s názvem `extension.vsixmanifest`.  
   
-3.  Zadejte soubor extension.vsixmanifest podle schématu VSIX. Manifest příklad naleznete v tématu [PackageManifest – Element (kořenový Element, schéma VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3.  Zadejte soubor extension.vsixmanifest podle schématu VSIX. Manifest příklad naleznete v tématu [PackageManifest – Element (kořenový Element, schéma VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4.  Vytvořte druhý soubor XML s názvem `[Content_Types].xml`.  
   
@@ -61,4 +56,4 @@ Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-m
 ## <a name="see-also"></a>Viz také  
  [Přesouvání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Element PackageManifest (kořenový Element, schéma VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Element PackageManifest (kořenový Element, schéma VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

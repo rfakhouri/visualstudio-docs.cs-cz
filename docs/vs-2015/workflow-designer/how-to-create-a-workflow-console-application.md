@@ -1,25 +1,22 @@
 ---
-title: 'Postupy: vytvoření konzolové aplikace pracovního postupu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření konzolové aplikace pracovního postupu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: ad509e0e57f2c8996c13ffbe1d8f8890d2954dec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 285c19e7814c369866fe70fa6f13e48efb6da359
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773743"
 ---
-# <a name="how-to-create-a-workflow-console-application"></a>Postupy: vytvoření konzolové aplikace pracovního postupu
+# <a name="how-to-create-a-workflow-console-application"></a>Postupy: Vytvoření konzolové aplikace pracovního postupu
 [!INCLUDE[wf](../includes/wf-md.md)] umožňuje vytvářet pracovní postupy pro spouštění systému nebo lidské procesy. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Poskytuje na návrhovou plochu pro vytváření těchto pracovních postupů. [!INCLUDE[wfd2](../includes/wfd2-md.md)] Slouží k vytváření pracovních postupů v rámci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo je možné integrovat do jiných aplikací, které změna hostitele návrháře.  
   
  Toto téma popisuje způsob použití [!INCLUDE[wfd2](../includes/wfd2-md.md)] v [!INCLUDE[vs2010](../includes/vs2010-md.md)] vytvoření pracovního postupu v konzolové aplikaci.  

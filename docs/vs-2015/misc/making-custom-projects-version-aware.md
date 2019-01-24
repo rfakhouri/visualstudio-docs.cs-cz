@@ -1,23 +1,18 @@
 ---
 title: Vytváření vlastních projektů s ohledem na verzi | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833002"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768042"
 ---
 # <a name="making-custom-projects-version-aware"></a>Vytváření vlastních projektů s ohledem na verzi
 Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu se načíst ve více verzích sady Visual Studio. Můžete také zabránit projektech tohoto typu načítání v dřívější verzi sady Visual Studio. Můžete také povolit tento projekt v případě, že projekt vyžaduje opravu, převod nebo vyřazení identifikovat na novější verzi.  
@@ -31,11 +26,11 @@ Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu s
   
 1.  `SPUVF_PROJECT_NOREPAIR`: Vyžaduje žádná oprava.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Vytvoří projekt kompatibilní s dřívější verzí bez problémů, které bude pravděpodobně dojde v předchozích verzích produktu.  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`: Díky projektu kompatibilní s dřívější verzí bez problémů, které bude pravděpodobně dojde v předchozích verzích produktu.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Vytvoří projekt zpětně kompatibilní, ale může představovat riziko problémy, které se pravděpodobně setkali s předchozími verzemi tohoto produktu. Například projekt nebudou kompatibilní, pokud závisí na různé verze sady SDK.  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Projekt je zpětně kompatibilní, ale může představovat riziko problémy, které se pravděpodobně setkali s předchozími verzemi tohoto produktu. Například projekt nebudou kompatibilní, pokud závisí na různé verze sady SDK.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Projekt je nekompatibilní s předchozí verzí.  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Vytvoří projekt není kompatibilní s dřívější verzí.  
   
 5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Označuje, že aktuální verze nepodporuje tento projekt.  
   

@@ -1,13 +1,9 @@
 ---
 title: 'CA1021: Vyhněte se výstupním parametrům | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1021
 - AvoidOutParameters
@@ -19,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e68f092212f8a2514d81cf22d88f8f8289e4173
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784172"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: Vyhněte se výstupním parametrům
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ ms.locfileid: "53907953"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejná nebo chráněná metoda veřejného typu má `out` parametru.
 
 ## <a name="rule-description"></a>Popis pravidla

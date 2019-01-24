@@ -1,14 +1,9 @@
 ---
 title: Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761777"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
 >  Když [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se odinstaluje, odebere se také jeho Data adresáře. Nikdy nepoužívejte datový adresář k uložení dat spravované end uživatele, jako jsou například dokumenty.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Označení datové soubory v distribuci ClickOnce  
- Umístit existující soubor do adresáře dat, je třeba označit existující soubor jako datový soubor v vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] souboru manifestu aplikace vaší aplikace. Další informace najdete v tématu [postupy: zahrnutí datového souboru do aplikace ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Umístit existující soubor do adresáře dat, je třeba označit existující soubor jako datový soubor v vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] souboru manifestu aplikace vaší aplikace. Další informace najdete v tématu [jak: Zahrnutí datového souboru do aplikace ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>Čtení a zápis dat adresáře  
  Čtení z adresáře dat vyžaduje, aby vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] žádosti o oprávnění ke čtení; podobně zápisu do adresáře, vyžaduje oprávnění k zápisu. Vaše aplikace nebude mít toto oprávnění automaticky, pokud je nakonfigurován na spuštění s úplnou důvěryhodností. Další informace o zvyšování oprávnění pro vaši aplikaci pomocí rozhraní zvýšení úrovně oprávnění nebo Trusted Application Deployment najdete v tématu [zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md).  
@@ -64,7 +59,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
  [!code-csharp[ClickOnce.OpenDataFile#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs#1)]
  [!code-vb[ClickOnce.OpenDataFile#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb#1)]  
   
- Další informace o označení souborů ve vašem nasazení jako datové soubory, naleznete v tématu [postupy: zahrnutí datového souboru do aplikace ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Další informace o označení souborů ve vašem nasazení jako datové soubory, naleznete v tématu [jak: Zahrnutí datového souboru do aplikace ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  Můžete také získat cestu k adresáři data pomocí příslušných proměnných na <xref:System.Windows.Forms.Application> třídy, jako například <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
@@ -117,6 +112,3 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Zahrnutí datového souboru do aplikace ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Zpracování výjimky souběžnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c784bbcb73190abd2b12bf6cc7768d27087b2e14
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647710"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758049"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 4.  Vyplnit data z datové sady `Customers` tabulky v databázi Northwind.  
   
-5.  Použití [nástroje Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) v sadě Visual Studio pro přímý přístup k `Customers` tabulka dat a změňte záznam.  
+5.  Použití [nástroje Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) v sadě Visual Studio pro přímý přístup k `Customers` tabulka dat a změňte záznam.  
   
 6.  Změnit stejného záznamu na jinou hodnotu, aktualizovat datovou sadu a pokusí se zapsat změny do databáze, což vede k chybě souběžnosti vyvolaných.  
   
@@ -59,7 +56,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
 -   Přístup k ukázkové databázi Northwind pomocí oprávnění k provedení aktualizace.
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu  
  Začnete vašeho návodu tak, že vytvoříte novou aplikaci pro Windows.  

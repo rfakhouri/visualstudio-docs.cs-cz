@@ -1,11 +1,8 @@
 ---
-title: 'Postupy: vytvoření projektu prázdný pracovního postupu (starší verze) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření projektu prázdný pracovního postupu (starší verze) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - projects, empty workflow
@@ -15,20 +12,20 @@ ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5a64506fd5d634b140c6e27916ea873afbef1c08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 72614233a0b01f263201670d0f9f70c96559e40c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767752"
 ---
-# <a name="how-to-create-an-empty-workflow-project-legacy"></a>Postupy: vytvoření projektu prázdný pracovního postupu (starší verze)
+# <a name="how-to-create-an-empty-workflow-project-legacy"></a>Postupy: Vytvoření prázdného projektu pracovního postupu (starší verze)
 Postupujte podle těchto kroků můžete vytvořit prázdný projekt pracovního postupu pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-an-empty-workflow-project"></a>Vytvoření projektu prázdný pracovního postupu  
   
-1.  Spusťte sadu Visual Studio.  
+1.  Spusťte Visual Studio.  
   
 2.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.  
   
@@ -49,7 +46,7 @@ Postupujte podle těchto kroků můžete vytvořit prázdný projekt pracovního
   
      Pokud chcete řešení adresář vytvořený pro projekt, vyberte **vytvořit adresář pro řešení** zaškrtněte políčko a zadejte název do pole **název řešení** pole.  
   
-8.  Klikněte na tlačítko **OK**.  
+8.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)

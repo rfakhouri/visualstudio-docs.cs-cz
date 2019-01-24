@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: podepsání souborů instalace pomocí SignTool.exe (ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Podepsání souborů instalace pomocí SignTool.exe (ClickOnce) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773321"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Postupy: Podepsání souborů instalace pomocí SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,6 +81,3 @@ SignTool.exe může použít k podepisování instalačního programu (setup.exe
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Opětovné podepisování manifestů aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-

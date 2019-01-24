@@ -1,24 +1,19 @@
 ---
 title: Správa projektů univerzálních Windows | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c10232b917e8343ace8d1a31fcd3609ecdfb95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771268"
 ---
 # <a name="managing-universal-windows-projects"></a>Správa projektů univerzálních aplikací pro Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -578,4 +573,3 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
     ```  
   
 13. Sestavte a spusťte projekt. Vytvořte univerzální projekt C# v experimentální instanci aplikace, přejděte na **nástroje** nabídky a klikněte na tlačítko **vyvolat TestUniversalProject**a zkontrolujte text v podokně výstupů Obecné. Po přejmenování souboru v projektu platformy, měli byste vidět i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> událostí a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> událostí. Protože změna souboru způsobila žádné další soubory změnit a od změny položek projektu pro platformy není získat rozšíří kdekoli, je pouze jeden každý z těchto událostí.
-

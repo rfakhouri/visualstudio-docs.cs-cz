@@ -1,14 +1,9 @@
 ---
 title: Stránka služby, Návrhář projektu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 6dd9e0fa-acba-4d7d-b081-705b0fc86ff5
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3a968283a8836c9a31c1d7f1e6552c8302d87140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 412dc2adaa168cce8d11e4181537a7ccf3908e8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243695"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756421"
 ---
 # <a name="services-page-project-designer"></a>Stránka Služby, návrhář projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,12 +51,12 @@ Klientské aplikační služby nabízejí zjednodušený přístup ke [!INCLUDE[
  Označuje, že zprostředkovatel ověřování bude používat ověřování založené na Windows, to znamená, identity, které jsou součástí operačního systému Windows.  
   
  **Ověřování pomocí formulářů**  
- Označuje, že zprostředkovatel ověřování bude používat ověřování pomocí formulářů. To znamená, že vaše aplikace musí poskytovat uživatelského rozhraní pro přihlášení. Další informace najdete v tématu [postupy: implementace přihlášení uživatele u klientských aplikačních služeb](http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).  
+ Označuje, že zprostředkovatel ověřování bude používat ověřování pomocí formulářů. To znamená, že vaše aplikace musí poskytovat uživatelského rozhraní pro přihlášení. Další informace najdete v tématu [jak: Implementace přihlášení uživatele u klientských aplikačních služeb](http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).  
   
  **Umístění služby ověřování**  
  Použít pouze s ověřování pomocí formulářů. Určuje umístění ověřovací služby.  
   
- **Volitelné: Přihlašovací údaje poskytovatele**  
+ **Volitelné: Poskytovatel přihlašovacích údajů**  
  Použít pouze s ověřování pomocí formulářů. Označuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementace, která se má zobrazit dialogové okno přihlášení, když vaše aplikace volá bude používat službu ověřování `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metoda a předá prázdné řetězce nebo `null` parametrů. Když toto pole ponecháte prázdné, je nutné předat platné uživatelské jméno a heslo <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody. Jako název typu kvalifikovaného pro sestavení, je nutné zadat poskytovatele přihlašovacích údajů. Další informace najdete v tématu <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> a [názvy sestavení](http://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). Ve své nejjednodušší podobě vypadá podobně jako v následujícím příkladu představuje název typu kvalifikovaného pro sestavení: `MyNamespace.MyLoginClass, MyAssembly`  
   
  **Umístění služby role**  
@@ -79,7 +74,4 @@ Klientské aplikační služby nabízejí zjednodušený přístup ke [!INCLUDE[
  [Postupy: Konfigurace klientských aplikačních služeb](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
  [Stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Stránka sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
- [Úvod do Návrháře projektu](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)
-
-
-
+ [Úvod do Návrháře projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

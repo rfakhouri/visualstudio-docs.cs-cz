@@ -1,14 +1,9 @@
 ---
 title: Ladění ovládacího prvku WebView | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f8a4dcc64903b97e3b469fb962777e3b90f84ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 69c7aa5e83da4ec829b439940d4affcd536bc128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729067"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760430"
 ---
 # <a name="debug-a-webview-control"></a>Ladění ovládacího prvku WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,10 +84,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
     > [!NOTE]
     >  Pomocí konzoly můžete pracovat s jedním `WebView`, `iFrame`, sdílet smlouvy nebo webového pracovního procesu v čase. Každý prvek vyžaduje samostatnou instanci hostitele webové platformy (WWAHost.exe). Najednou můžete pracovat s jednoho hostitele.  
   
-6.  Zobrazení a úpravám proměnných ve vaší aplikaci nebo pomocí příkazů konzole, jak je popsáno v [rychlý start: ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md) a [příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md).  
+6.  Zobrazení a úpravám proměnných ve vaší aplikaci nebo pomocí příkazů konzole, jak je popsáno v [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md) a [příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-

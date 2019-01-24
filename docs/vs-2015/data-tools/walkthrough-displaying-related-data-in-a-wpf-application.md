@@ -1,12 +1,9 @@
 ---
-title: 'Návod: Zobrazování souvisejících dat v aplikaci WPF | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zobrazení souvisejících dat v aplikaci WPF | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763901"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Návod: Zobrazování souvisejících dat v aplikaci WPF
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Průvodce: Zobrazení souvisejících dat v aplikaci WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databáze, které mají vztah nadřízenosti /. Data zapouzdřena v entitách v modelu Entity Data Model. Nadřazená entita obsahuje přehled informací o sadu objednávky. Tato entita se jednotlivé vlastnosti je vázána na jiný ovládací prvek v aplikaci. Podřízené entity obsahuje podrobnosti pro jednotlivé objednávky. Tuto sadu dat je vázán na <xref:System.Windows.Controls.DataGrid> ovládacího prvku.  
@@ -55,7 +52,7 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
 - Datových modelech entity a ADO.NET Entity Framework. Další informace najdete v tématu [přehled Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Práce s WPF Designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Práce s WPF Designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 - Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
@@ -64,7 +61,7 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
 #### <a name="to-create-a-new-wpf-project"></a>Chcete-li vytvořit nový projekt WPF  
   
-1.  Spusťte sadu Visual Studio.  
+1.  Spusťte Visual Studio.  
   
 2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
@@ -76,7 +73,7 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
 6.  V **název** zadejte `AdventureWorksOrdersViewer`.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      Visual Studio vytvoří `AdventureWorksOrdersViewer` projektu.  
   
@@ -148,7 +145,7 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
    - **Dopravné**  
   
-   - **ROWGUID**  
+   - **rowguid**  
   
    - **ModifiedDate**  
   
@@ -180,7 +177,7 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
    - **SalesOrderDetailID**  
   
-   - **ROWGUID**  
+   - **rowguid**  
   
    - **ModifiedDate**  
   

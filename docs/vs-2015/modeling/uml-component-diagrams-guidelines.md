@@ -1,12 +1,9 @@
 ---
 title: 'Diagramy komponent UML: Pokyny | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,13 +14,13 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787387"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy komponent UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +46,13 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 |Jiný diagram|Umožňuje diskutovat a sdělovat tyto aspekty návrhu|  
 |-------------------|--------------------------------------------------------------------|  
-|Sekvenční diagram UML|-Interakcí mezi komponentami systému<br />-Interakcí mezi částmi uvnitř komponenty.<br /><br /> Další informace najdete v tématu [sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|Diagram tříd UML|-Rozhraní komponenty. Diagram tříd nabízí podrobné informace o metodách rozhraní.<br />-Data odeslaná v parametrech napříč rozhraními komponent.<br /><br /> Další informace najdete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).|  
-|Diagramy činností|-Vnitřní zpracování provádějí komponenty jako odpověď na příchozí zprávy.<br /><br /> Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).|  
-|Diagramy vrstev|– Logické vrstvy architektury pro vaše komponenty.<br /><br /> Další informace najdete v tématu [diagramy vrstev: referenční](../modeling/layer-diagrams-reference.md).|  
+|Sekvenční diagram UML|-Interakcí mezi komponentami systému<br />-Interakcí mezi částmi uvnitř komponenty.<br /><br /> Další informace najdete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|Diagram tříd UML|-Rozhraní komponenty. Diagram tříd nabízí podrobné informace o metodách rozhraní.<br />-Data odeslaná v parametrech napříč rozhraními komponent.<br /><br /> Další informace najdete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md).|  
+|Diagramy činností|-Vnitřní zpracování provádějí komponenty jako odpověď na příchozí zprávy.<br /><br /> Další informace najdete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).|  
+|Diagramy vrstev|– Logické vrstvy architektury pro vaše komponenty.<br /><br /> Další informace najdete v tématu [diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md).|  
   
 ##  <a name="Basics"></a> Základní kroky pro vytvoření diagramů komponent  
- Referenční informace o elementů v diagramech komponent, naleznete v tématu [diagramy komponent UML: referenční](../modeling/uml-component-diagrams-reference.md).  
+ Referenční informace o elementů v diagramech komponent, naleznete v tématu [diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md).  
   
  Další informace o tom, jak pomocí diagramů komponent při navrhování naleznete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
   
@@ -279,7 +276,7 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 1.  Vytvořte nový sekvenční diagram.  
   
-     Další informace najdete v tématu [sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Další informace najdete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 2.  Vytvořte životnost pro externí komponentu, uživatele, zařízení nebo jiný objekt aktor (1), který odesílá zprávy této komponentě.  
   
@@ -301,7 +298,7 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
  To lze naznačit v modelu nastavením **instance je vytvořena nepřímo** vlastnost komponenty. V tomto případě by měla být všechna rozhraní komponenty na portech, s delegací do vnitřních částí.  
   
 ### <a name="describing-the-process-inside-each-part"></a>Popis procesu uvnitř jednotlivých částí  
- Diagramy aktivit slouží k zobrazení způsobu, jakým komponenta zpracovává příchozí zprávy. Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+ Diagramy aktivit slouží k zobrazení způsobu, jakým komponenta zpracovává příchozí zprávy. Další informace najdete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Diagram činnosti s vyrovnávací paměť dat](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -337,12 +334,9 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
- [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
  [Video: Návrh fyzické struktury pomocí diagramů komponent](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-

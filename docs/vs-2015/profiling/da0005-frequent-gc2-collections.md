@@ -1,14 +1,9 @@
 ---
-title: 'DA0005: Časté kolekce GC2 | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'DA0005: Časté shromažďování gc2 | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0005
 - vs.performance.rules.DAManyGC2Collections
@@ -18,13 +13,13 @@ ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80b3f769a151974559f70d247696fd7abb794731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5817943ebca51433e64ae3b549af76522992f018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794100"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Časté kolekce GC2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ RuleId | DA0005 |
 | Zpráva | Mnoho objektů je shromažďováno v 2. generace uvolňování paměti. |  
 | Typ zprávy | Upozornění |  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Velké množství paměti objektů .NET jsou právě uvolněny v procesu uvolnění paměti generace 2.  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -49,6 +44,3 @@ RuleId | DA0005 |
  Zkontrolujte [zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md) sestav k pochopení způsobu přidělení paměti aplikace. Použití [zobrazení doby života objektu](../profiling/object-lifetime-view.md) pro určení, které programových datech objekty jsou zbývajících do 2. generace a potom uvolnit z něj. Použití [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md) k určení postupu provádění, jejímž výsledkem těchto přidělení.  
   
  Informace o tom, jak zlepšit výkon kolekce uvolnění paměti, naleznete v tématu [základní informace o uvolňování paměti a typech výkonu](http://go.microsoft.com/fwlink/?LinkId=148226) na webu společnosti Microsoft. Informace o režii související se automatické uvolňování paměti naleznete v tématu [velký objekt haldy Nepokrytý](http://go.microsoft.com/fwlink/?LinkId=177836).
-
-
-

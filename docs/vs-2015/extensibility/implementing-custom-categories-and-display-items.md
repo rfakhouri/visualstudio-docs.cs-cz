@@ -1,27 +1,22 @@
 ---
 title: Implementace vlastních kategorií a zobrazovat položky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 040c2408f8b0e120996f95e31afdf188d123f76a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769114"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766837"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementace vlastní kategorie a zobrazit položky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,6 +133,5 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  [Písma a barvy informace pro barevné zvýraznění textu](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Přístup k uložené písma a barev](../extensibility/accessing-stored-font-and-color-settings.md)   
- [Postupy: přístup k vestavěné písma a barvy schéma](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
+ [Postupy: Přístup k vestavěné písma a barvy schéma](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [Přehled písem a barev](../extensibility/font-and-color-overview.md)
-

@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Profiler XSLT | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Profiler XSLT | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757210"
 ---
-# <a name="walkthrough-xslt-profiler"></a>Návod: Profiler XSLT
+# <a name="walkthrough-xslt-profiler"></a>Průvodce: Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -82,11 +77,11 @@ Profiler XSLT chyb vytváří detailní zprávy XSLT výkonu, které pomůže m�
   
 2.  **Volající/volaný** zobrazení má následující tři samostatné části:  
   
-    -   **Funkce, které volaly**: všechny funkce, které volaly konkrétní funkce je uvedený na horní část zobrazení.  
+    -   **Funkce, které volaly**: Všechny funkce, které volaly konkrétní funkce jsou uvedené na horní část zobrazení.  
   
-    -   **Aktuální funkce**: určitou funkci, která byla volána je uveden v prostřední části zobrazení.  
+    -   **Aktuální funkce**: Konkrétní funkce, která byla volána je uveden v prostřední části zobrazení.  
   
-    -   **Funkce, které byly volány** : všechny funkce, které byly volány konkrétní funkce jsou uvedeny v dolní části zobrazení.  
+    -   **Funkce, které byly volány** : Všechny funkce, které byly volány konkrétní funkce jsou uvedeny v dolní části zobrazení.  
   
 3.  Pokud funkci s názvem `SyncToNavigator` se zobrazí v prostřední části zobrazíte všechny funkce, které volá `SyncToNavigator` funkce se zobrazí v horní části zobrazení a všechny funkce, které byly volány `SyncToNavigator` se zobrazí v dolní části zobrazení.  
   
@@ -116,6 +111,3 @@ Profiler XSLT chyb vytváří detailní zprávy XSLT výkonu, které pomůže m�
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Používání hierarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-

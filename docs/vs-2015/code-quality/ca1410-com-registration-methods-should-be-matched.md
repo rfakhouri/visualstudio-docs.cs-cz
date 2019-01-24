@@ -1,13 +1,9 @@
 ---
 title: 'CA1410: Metody registrace modelu COM by si měly odpovídat | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1410
 - ComRegistrationMethodsShouldBeMatched
@@ -19,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0b6948af276f017e5c1143775decdaf1fd0fae3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8784ef27eaf4217633c8bd52a49c9f79562e424a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770550"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Metody registrace modelu COM by si měly odpovídat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ ms.locfileid: "53879563"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ deklaruje metodu, která je označena <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atribut, ale nedeklaruje metodu označenou atributem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atribut, nebo naopak.
 
 ## <a name="rule-description"></a>Popis pravidla

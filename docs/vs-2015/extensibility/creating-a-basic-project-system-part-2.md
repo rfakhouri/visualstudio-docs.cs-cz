@@ -1,14 +1,9 @@
 ---
 title: Vytvoření systému základního projektu, část 2 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753967"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755519"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,7 +158,7 @@ První názorný postup v této sérii [vytvoření základního systému projek
   
 2. Rozbalte **projekty a řešení** uzlu a pak vyberte **sestavíte a spustíte**.  
   
-3. Nastavte **podrobnosti výstupu sestavení projektu nástroje MSBuild** k **normální**. Klikněte na tlačítko **OK**.  
+3. Nastavte **podrobnosti výstupu sestavení projektu nástroje MSBuild** k **normální**. Klikněte na **OK**.  
   
 4. Znovu sestavte projekt SimpleProject.  
   
@@ -193,7 +188,7 @@ ZipProjects:
   
     Na [!INCLUDE[win7](../includes/win7-md.md)]: V nabídce Start, vyhledejte **Microsoft Visual Studio nebo Microsoft Visual Studio SDK/Tools** složku a pak vyberte **resetování Microsoft Visual Studio experimentální instanci**.  
   
-    V novějších verzích Windows: na úvodní obrazovku, typ **resetování Microsoft Visual Studio \<verze > experimentální instanci**.  
+    V novějších verzích Windows: Na úvodní obrazovce zadejte **resetování Microsoft Visual Studio \<verze > experimentální instanci**.  
   
 2. Zobrazí se okno příkazového řádku. Pokud vidíte text `Press any key to continue`, klikněte na ENTER. Jakmile okno se zavře, otevřete sadu Visual Studio.  
   
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ je zadaný uživatelem na název **nový projekt** dialogovém okně Upravit a odebrat všechny problematické znaky a mezery.  
   
-  Úplný seznam parametrů šablony, najdete v části [parametry šablony](../ide/template-parameters.md).  Pokud chcete vytvořit vlastní šablony parametr, přečtěte si téma [NIB: postupy: předání vlastní parametry šablon](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Úplný seznam parametrů šablony, najdete v části [parametry šablony](../ide/template-parameters.md).  Pokud chcete vytvořit vlastní šablony parametr, přečtěte si téma [NIB: Postupy: Vlastní parametry předat šablony](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>K nahrazení parametrů šablony projektu  
   
@@ -355,7 +350,7 @@ ZipProjects:
   
 -   AssemblyName  
   
--   Element OutputType  
+-   OutputType  
   
 -   RootNamespace.  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Ukončete experimentální instanci sady Visual Studio.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

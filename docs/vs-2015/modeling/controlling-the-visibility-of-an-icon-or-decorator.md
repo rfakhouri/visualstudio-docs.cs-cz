@@ -1,23 +1,20 @@
 ---
 title: Řízení viditelnosti ikony nebo Dekorátoru | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766279"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony či dekorátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
   
 4.  Klikněte na tlačítko **sestavit řešení** na **sestavení** nabídky.  
   
-5.  Dvakrát klikněte na panel zprávy o chybách, které se má zobrazovalo: "*YourClass* neobsahuje definici pro GetDecoratorControlValue...".  
+5.  Klikněte dvakrát na zprávy o chybách, které se má zobrazovalo: "*YourClass* neobsahuje definici pro GetDecoratorControlValue...".  
   
      Do textového editoru se otevře na Dsl\GeneratedCode\DomainClasses.cs. Nad zvýrazněnou chybu je komentář, který budete vyzváni k přidání metody.  
   
@@ -115,6 +112,3 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
  [Nastavení obrázku pozadí v diagramu](../modeling/setting-a-background-image-on-a-diagram.md)   
  [Procházení a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

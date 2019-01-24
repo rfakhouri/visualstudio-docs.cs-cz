@@ -1,25 +1,22 @@
 ---
 title: Přehled nástrojů jazyka specifického pro doménu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: overview
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 50d93ea2-8c88-4522-853b-40ab194953db
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839320"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802979"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Přehled Jazykových nástrojů specifických pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +68,7 @@ Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostované v
 ## <a name="validation-in-dsl-tools"></a>Ověřování v nástroje DSL  
  DSL poskytuje jednu úroveň ověření, že splňuje model domény základní požadavky pro generování kódu. Obvykle při vytváření jazyka specifického pro doménu přidáte vlastní ověření vyjádřit vaše obchodní logiky pravidla. Další informace o vlastních ověřovacích, naleznete v tématu [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).  
   
- Doporučujeme, abyste ověřili svůj jazyk specifický pro doménu často při jeho návrhu. Pokud doménově specifického jazyka došlo k chybám ověřování, nelze generovat zdrojový kód. Generování zdrojového kódu z šablon procesu se provádí kliknutím **Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení. Pokaždé, když změníte definice jazyka, nezapomeňte také **Transformovat všechny šablony**. Další informace najdete v tématu [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+ Doporučujeme, abyste ověřili svůj jazyk specifický pro doménu často při jeho návrhu. Pokud doménově specifického jazyka došlo k chybám ověřování, nelze generovat zdrojový kód. Generování zdrojového kódu z šablon procesu se provádí kliknutím **Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení. Pokaždé, když změníte definice jazyka, nezapomeňte také **Transformovat všechny šablony**. Další informace najdete v tématu [jak: Vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="customization-of-dsl-tools"></a>Přizpůsobení nástrojů DSL  
  Můžete zadat další kód Upřesnit chování modelu a definování omezení přes svůj jazyk. V případě potřeby můžete provádět významné změny tak, že upravíte textových šablon.  
@@ -83,7 +80,4 @@ Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostované v
   
 ## <a name="see-also"></a>Viz také  
  [Experimentální Instance](../extensibility/the-experimental-instance.md)   
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

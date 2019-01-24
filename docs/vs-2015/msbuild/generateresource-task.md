@@ -1,14 +1,9 @@
 ---
 title: Generateresource – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796903"
 ---
 # <a name="generateresource-task"></a>GenerateResource – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Převede mezi txt a souborů .resx (formát založený na formátu XML prostřed
 |`Sources`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Určuje položky, které chcete převést. Položek předaných tomuto parametru musí mít jednu z následujících přípon:<br /><br /> -   `.txt`: Určuje příponu textový soubor převést. Textové soubory mohou obsahovat pouze řetězcové prostředky.<br />-   `.resx`: Určuje rozšíření pro soubor prostředků založený na formátu XML pro převod.<br />-   `.restext`: Určuje stejný formát jako .txt. Toto různých rozšíření je užitečné, pokud budete chtít jasně odlišit zdrojové soubory, které obsahují prostředky z jiných zdrojových souborech v procesu sestavení.<br />-   `.resources`: Určuje rozšíření souboru prostředků pro převod.|  
 |`StateFile`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje cestu k souboru volitelné mezipaměti, který se používá ke zrychlení závislost kontroly odkazů na vstupní soubory .resx.|  
 |`StronglyTypedClassName`|Volitelné `String` parametru.<br /><br /> Určuje název třídy pro třídu prostředků se silnými typy. Pokud není tento parametr zadán, je použít základní název souboru prostředků.|  
-|`StronglyTypedFilename`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje název souboru pro zdrojový soubor. Pokud tento parametr nezadáte, název třídy se používá jako základní název souboru s příponou závisí na jazyku. Příklad: `MyClass.cs`.|  
+|`StronglyTypedFilename`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje název souboru pro zdrojový soubor. Pokud tento parametr nezadáte, název třídy se používá jako základní název souboru s příponou závisí na jazyku. Například: `MyClass.cs`.|  
 |`StronglyTypedLanguage`|Volitelné `String` parametru.<br /><br /> Určuje jazyk, který má použít při generování třídy zdroje pro prostředek silného typu. Tento parametr musí odpovídat přesně jeden z těchto jazyků používané CodeDomProvider. Příklad: `VB` nebo `C#`.<br /><br /> Předejte hodnotu pro tento parametr, dáte pokyn úkolů ke generování prostředky se silnými typy.|  
 |`StronglyTypedManifestPrefix`|Volitelné `String` parametru.<br /><br /> Určuje předponu oboru názvů nebo manifest prostředků pro účely prostředků se silnými typy ve vygenerované třídě zdroje.|  
 |`StronglyTypedNamespace`|Volitelné `String` parametru.<br /><br /> Určuje obor názvů pro zdroj generovaná třída prostředků se silnými typy. Pokud není tento parametr zadán, jsou všechny prostředky se silnými typy v globálním oboru názvů.|  
@@ -94,7 +89,7 @@ Převede mezi txt a souborů .resx (formát založený na formátu XML prostřed
  Za předpokladu, že sestavení má název myAssembly, následující kód vygeneruje vložený prostředek s názvem someQualifier.someResource.resources:  
   
 ```  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Bez \<LogicalName > metadata prostředku by se pojmenoval myAssembly.myResource.resources.  Tento příklad se týká jenom procesem sestavení jazyka Visual Basic a Visual C#.  
@@ -102,6 +97,3 @@ Převede mezi txt a souborů .resx (formát založený na formátu XML prostřed
 ## <a name="see-also"></a>Viz také  
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Sccsetoption – funkce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b4a6c746ca1c824738c0c8cf7df23e78b0d94d7d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7f2660ca99d8704f5dd8e7b9aa66c9c8fc5bdbb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748802"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765172"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,9 +84,8 @@ SCCRTN SccSetOption(
   
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
- [Sccinitialize –](../extensibility/sccinitialize-function.md)   
- [Sccopenproject –](../extensibility/sccopenproject-function.md)   
- [Sccaddfromscc –](../extensibility/sccaddfromscc-function.md)   
+ [SccInitialize](../extensibility/sccinitialize-function.md)   
+ [SccOpenProject](../extensibility/sccopenproject-function.md)   
+ [SccAddFromScc](../extensibility/sccaddfromscc-function.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)   
  [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)
-

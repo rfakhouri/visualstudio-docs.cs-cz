@@ -1,27 +1,22 @@
 ---
 title: 'Krok 2: Přidejte náhodný objekt a seznam ikon | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2740e61de964f3b0c72f44e9a5c11018894c4fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bfdedd3c6666ca6535237de11eb08a9b013fe8c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226652"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766338"
 ---
-# <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2: Přidejte náhodný objekt a seznam ikon
+# <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2: Přidání objektu Random a seznamu ikon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto kroku vytvoříte sadu odpovídajících symbolů pro hru. Každý symbol je přidán do dvou náhodných buněk v kontejneru TableLayoutPanel ve formuláři. Chcete-li to provést pomocí dvou `new` příkazy k vytvoření dvou objektů. První je `Random` objektů, jako je ten, který jste použili ve hře matematický kvíz. V tomto kódu slouží k náhodnému výběru buněk v kontejneru TableLayoutPanel. Druhý objekt, který může být pro vás nová, se `List` objekt, který se používá k ukládání náhodně zvolených symbolů.  
@@ -49,7 +44,7 @@ Okno IntelliSense
   
      Prohlédnete-li si kód (a poznámky) v malých oddílech, snadněji jim porozumíte. Programy mohou používat `List` objekty ke sledování mnoho různých typů položek. Seznam může obsahovat čísla, hodnoty pravda/nepravda, text nebo jiné objekty. Může probíhat dokonce `List` objekt, který obsahuje jiné `List` objekty. Položky v seznamu se nazývají *prvky*, a každý seznam obsahuje pouze jeden typ prvku. Takže seznam čísel může obsahovat pouze čísla – nelze na něj přidat text. Podobně nelze přidat čísla na seznam hodnot pravda/nepravda.  
   
-     Při vytváření `List` pomocí `new` příkaz, musíte určit druh dat chcete do ní uložte. To je důvod, proč popis tlačítka v horní části **IntelliSense** okno zobrazí typy prvků v seznamu. Kromě toho, co je `List<string>` (v jazyce Visual C#) a `List(Of String)` (v jazyce Visual Basic) znamená, že: je `List` objekt, který obsahuje prvky `string` datového typu. Řetězec je program používá k uložení textu, který je co popis tlačítka vpravo **IntelliSense** vám sděluje okno.  
+     Při vytváření `List` pomocí `new` příkaz, musíte určit druh dat chcete do ní uložte. To je důvod, proč popis tlačítka v horní části **IntelliSense** okno zobrazí typy prvků v seznamu. Kromě toho, co je `List<string>` (ve Vizuálu C#) a `List(Of String)` (v jazyce Visual Basic) znamená, že: Jde `List` objekt, který obsahuje prvky `string` datového typu. Řetězec je program používá k uložení textu, který je co popis tlačítka vpravo **IntelliSense** vám sděluje okno.  
   
 4.  Zamyslete se nad tím, proč je nutné v jazyce Visual Basic nejprve vytvořit dočasné pole, ale v jazyce Visual C# lze seznam vytvořit pomocí jednoho příkazu. Důvodem je, že jazyk Visual C# má *inicializátory kolekce*, které připraví seznam na přijetí hodnot. V jazyce Visual Basic můžete použít inicializátor kolekce. Avšak z důvodu kompatibility s předchozí verzí jazyka Visual Basic doporučujeme použít předchozí kód.  
   
@@ -60,9 +55,6 @@ Okno IntelliSense
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 3: přiřazení náhodné ikony pro každý popisek](../ide/step-3-assign-a-random-icon-to-each-label.md).  
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony](../ide/step-3-assign-a-random-icon-to-each-label.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 1: Vytvořte projekt a přidat tabulku do vašeho formuláře](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).
-
-
-
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 1: Vytvořte projekt a přidejte do svého formuláře tabulku](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).

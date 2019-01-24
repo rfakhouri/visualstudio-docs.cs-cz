@@ -1,13 +1,8 @@
 ---
 title: Procházení kódu s ladicím programem | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771514"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Procházení kódu s ladicím programem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +106,7 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
   
 -   **Ručně proniknout do kódu**  
   
-     Chcete-li rozdělit na další dostupný řádek kódu ve spuštěné aplikaci, zvolte **ladění**, **přerušit vše** (klávesnice: **Ctrl + Alt + Break**).  
+     Chcete-li rozdělit na další dostupný řádek kódu ve spuštěné aplikaci, zvolte **ladění**, **přerušit vše** (klávesnice: **Ctrl+Alt+Break**).  
   
      Pokud můžete přerušit provádění kódu bez odpovídajícího zdroje nebo symbolu (.pdb) soubory), ladicí program zobrazí **zdrojové soubory nebyly nalezeny** nebo **symboly nebyly nalezeny** stránky, které vám pomohou najít příslušné soubory. Zobrazit [zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Pokud nelze získat přístup k podpůrným souborům, budete moci stále ladit instrukce sestavení v okně zpětný překlad.  
   
@@ -181,7 +176,7 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
   
  Načtení symbolů pro určité součásti systému při ladění:  
   
-1.  Otevřete okno moduly (klávesnice: **Ctrl + Alt + U**).  
+1.  Otevřete okno moduly (klávesnice: **Ctrl+Alt+U**).  
   
 2.  Vyberte modul, který chcete načíst symboly.  
   
@@ -191,8 +186,3 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Krokovat přes vlastnosti a operátory ve spravovaném kódu  
  Ladicí program přes vlastnosti a operátory ve spravovaném kódu ve výchozím nastavení. Ve většině případů to poskytuje lepší možnosti ladění. Chcete-li povolit krokování s vnořením do vlastností nebo operátorů, zvolte **ladění** / **možnosti**. Na **ladění** / **Obecné** zrušte **Krokovat přes vlastnosti a operátory (pouze spravované)** zaškrtávací políčko
-
-
-
-
-

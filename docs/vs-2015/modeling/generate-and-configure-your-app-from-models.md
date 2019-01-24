@@ -1,23 +1,20 @@
 ---
 title: Generování a konfigurace aplikace z modelů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758339"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generování a konfigurace aplikace z modelů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,8 +82,5 @@ Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu. Model může 
  [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)   
  [Čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md)   
  [Generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Postupy: otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
+ [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-
-
-

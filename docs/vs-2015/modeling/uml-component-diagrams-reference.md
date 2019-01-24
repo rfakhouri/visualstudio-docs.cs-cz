@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy komponent UML: Referenční | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Diagramy komponent UML: Referenční dokumentace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.componentdiagram.diagram
 - vs.teamarch.componentdiagram.toolbox
@@ -21,15 +18,15 @@ ms.assetid: 5eddff6a-892a-4c3c-9278-687ac1eccc50
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e77008d59543b0001f97b37933ff1073e488a33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728122"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798777"
 ---
-# <a name="uml-component-diagrams-reference"></a>Diagramy komponent UML: Referenční dokumentace
+# <a name="uml-component-diagrams-reference"></a>Diagramy komponent UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V sadě Visual Studio *diagram komponent* ukazuje části návrhu pro softwarový systém. Pomáhá diagram součásti vizualizovat strukturu vysoké úrovně systému a chování služby, který tyto části poskytují a spotřebovávají prostřednictvím rozhraní. Chcete-li vytvořit diagram komponent UML, na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
@@ -41,7 +38,7 @@ V sadě Visual Studio *diagram komponent* ukazuje části návrhu pro softwarov�
  Další informace o tom, jak pomocí diagramů komponent při navrhování naleznete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Toto téma popisuje elementy, které můžete použít v diagramech komponent. Podrobnější informace o tom, jak nakreslit diagramy komponent naleznete v tématu [diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md). Další informace o tom, jak nakreslit diagramy modelování obecně naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+>  Toto téma popisuje elementy, které můžete použít v diagramech komponent. Podrobnější informace o tom, jak nakreslit diagramy komponent naleznete v tématu [diagramy komponent UML: Pokyny pro](../modeling/uml-component-diagrams-guidelines.md). Další informace o tom, jak nakreslit diagramy modelování obecně naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Čtení diagramů komponent  
  Následující tabulka popisuje prvky, které můžete použít v diagramu komponent spolu s jejich hlavní vlastnosti. Úplný seznam vlastnosti prvků, naleznete v tématu [vlastnosti elementů v diagramech komponent UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  
@@ -64,12 +61,9 @@ V sadě Visual Studio *diagram komponent* ukazuje části návrhu pro softwarov�
 
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)   
+ [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)   
  [Ověřování systému během vývoje.](../modeling/validate-your-system-during-development.md)   
- [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)   
  [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)
-
-
-

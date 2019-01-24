@@ -1,14 +1,9 @@
 ---
 title: 'CA1702: Složených slov by měla být správně formátováno | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1702
 - CompoundWordsShouldBeCasedCorrectly
@@ -20,17 +15,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cfc723e94b8be2f427be7b42d676218b0d9aa68d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab14293960173e35c9bb00a9784356c3e63c6e36
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201125"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772454"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Malá a velká písmena složených slov by měla být použita správně
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1702: složených slov by měla být správně formátováno](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1702: Složených slov by měla být správně formátováno](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -39,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1702:
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Při ukončování pro sestavení vyvolala.<br /><br /> Bez konce – při vyvolání na parametry typu.|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Název identifikátoru obsahuje více slov a alespoň jedno ze slov se zdá být složené slovo, které není správně formátováno.  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -54,13 +49,12 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1702:
  Je bezpečné potlačit upozornění tohoto pravidla, je-li obě části složené slovo, které jsou rozpoznány modulem slovníku a cílem je používat dvě slova.  
   
 ## <a name="related-rules"></a>Související pravidla  
- [CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+ [CA1701: Složených slov prostředku řetězců by měla správně formátováno.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
- [CA1709: Malá a velká písmena identifikátorů by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+ [CA1709: Identifikátory by měly správně formátováno.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
+ [CA1708: Identifikátory by se měly lišit o více než velikostí písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Pokyny pro pojmenování](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
  [Konvence pro malá a velká písmena](http://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
-

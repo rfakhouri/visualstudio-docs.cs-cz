@@ -1,27 +1,22 @@
 ---
 title: Dialogové okno Vlastnosti okna | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b10fb130e5f2f584369a363491c5317e83aaf80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9eb07b20c08945b6a9f253d0ab634dca1c767d59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773961"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771271"
 ---
 # <a name="window-properties-dialog-box"></a>Dialogové okno vlastností oken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,6 +60,3 @@ Použijte toto dialogové okno pro další informace o konkrétní okno. Zobraz�
   
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Seznámíte se nástroje Spy ++, jak je možné.
-
-
-

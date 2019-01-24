@@ -1,27 +1,22 @@
 ---
 title: Parametr spolupracujícího sestavení sady Visual Studio zařazování | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195011"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755222"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parametr spolupracujícího sestavení sady Visual Studio zařazování
 Volání nebo volat nespravovaný kód com. pravděpodobně rozšíření VSPackages, která jsou napsána ve spravovaném kódu. Argumenty metody jsou obvykle, transformovat nebo zařadit automaticky interoperační zařazovač. Ale někdy argumenty nelze transformovat v přímočarým způsobem. V těchto případech parametry prototyp metody sestavení vzájemné spolupráce se používají tak, aby odpovídaly parametrům funkcí modelu COM co nejpřesněji. Další informace najdete v tématu [zařazování Interop](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -128,7 +123,7 @@ else
  Spravované metody, které volají rozhraní tohoto typu by měl vyžádání prvního prvku mimo [out] pole. Tento element lze zacházet, jako by šlo `retval` návratová hodnota z odpovídající rozhraní modelu COM.  
   
 ## <a name="see-also"></a>Viz také  
- [Zařazování spolupráce](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Zařazování spolupráce](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Zařazování spolupráce](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Řešení potíží s interoperabilitou](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Spravovaná rozšíření VSPackages](../misc/managed-vspackages.md)

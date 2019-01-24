@@ -1,27 +1,22 @@
 ---
-title: 'Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázku tlačítka | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 301147bffb67aed337a416fd0be19c5b407ca085
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771146"
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Zapište kód pro obslužnou rutinu události zobrazení tlačítka s obrázkem
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Napsání kódu pro obslužnou rutinu události zobrazení tlačítka s obrázkem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následujícím způsobem:  
@@ -32,7 +27,7 @@ V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následu
   
   Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vám pomůže psát kód. Při zadávání kódu, rozhraní IDE otevře pole s navrhovaným dokončením pro částečná slova, která zadáte. Pokusí se zjistit, co chcete udělat dále a automaticky přejde na poslední položku, kterou si vybrat ze seznamu. Můžete použít nahoru nebo dolů šipkami přesunout v seznamu, nebo můžete pokračovat v psaní písmen k zúžení voleb. Když se zobrazí možnosti, kterou chcete, zvolte klávesu TAB a vyberte ji. Nebo můžete návrhy ignorovat, pokud nejsou potřebné.  
   
-  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) nebo [kurz 1: Vytvoření prohlížeče obrázků v C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Psaní kódu pro zobrazení obslužné rutiny události obrázku tlačítka  
   
@@ -74,7 +69,7 @@ Ikona události
   
          Další informace o `ShowDialog()` metodu, najdete v článku [metody ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
   
-    5.  Při použití metody u ovládacího prvku nebo komponenty (označované jako *volání metody*), je třeba přidat závorky. Zadejte proto počáteční a ihned po "g" v `ShowDialog`: `()` by měl nyní vypadat takto: "openFileDialog1.ShowDialog()".  
+    5.  Při použití metody u ovládacího prvku nebo komponenty (označované jako *volání metody*), je třeba přidat závorky. Zadejte proto počáteční a ihned po "g" v `ShowDialog`: `()` To by teď měl vypadat takto: "openFileDialog1.ShowDialog()".  
   
         > [!NOTE]
         >  Metody jsou důležitou součástí každého programu a tento kurz ukázal několik způsobů, jak používat metody. Můžete volat metodu komponenty, které sděluje, má něco udělat, jako jste volali **OpenFileDialog** komponenty `ShowDialog()` metody. Můžete vytvořit vlastní metody, aby váš program prováděl akce, jako vytváříte nyní, volá se, `showButton_Click()` metodu, která otevře dialogové okno a obrázek, když uživatel vybere tlačítko.  
@@ -106,9 +101,6 @@ Ikona události
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 9: revize, komentáře a Test kódu](../ide/step-9-review-comment-and-test-your-code.md).  
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 9: Zkontrolujte, komentáře a testují vytvořený kód](../ide/step-9-review-comment-and-test-your-code.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: komponenty dialogového okna Přidat na svůj formulář](../ide/step-7-add-dialog-components-to-your-form.md).
-
-
-
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: Přidejte do svého formuláře komponenty dialogových oken](../ide/step-7-add-dialog-components-to-your-form.md).
