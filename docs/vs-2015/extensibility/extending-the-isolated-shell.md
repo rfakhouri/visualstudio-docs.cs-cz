@@ -1,26 +1,21 @@
 ---
 title: Rozšíření izolovaného prostředí | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dc700e0a1b8753a26067eff90df9ff58765de8d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af64fa948754350eb1beb0f70dbac33981b595f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790743"
 ---
 # <a name="extending-the-isolated-shell"></a>Rozšíření izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51792018"
 Prostředí sady Visual Studio, samostatný můžete rozšířit přidáním VSPackage, součást Managed Extensibility Framework (MEF) nebo projektu s obecným VSIX do vaší aplikace izolovaného prostředí.  
   
 > [!NOTE]
->  Následující kroky předpokládají, že jste vytvořili základní aplikace izolovaného prostředí pomocí Visual Studio Shell izolované šablony projektu. Další informace o této šabloně projektu naleznete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+>  Následující kroky předpokládají, že jste vytvořili základní aplikace izolovaného prostředí pomocí Visual Studio Shell izolované šablony projektu. Další informace o této šabloně projektu naleznete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Umístění pro šablony sady Visual Studio balíčku projektu  
  Šablona projektu balíček Visual Studio najdete ve třech různých umístěních v **nový projekt** dialogové okno:  
@@ -126,5 +121,4 @@ Prostředí sady Visual Studio, samostatný můžete rozšířit přidáním VSP
 8.  Sestavte a spusťte řešení.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [Návod: Vytváření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

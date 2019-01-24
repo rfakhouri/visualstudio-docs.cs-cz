@@ -1,13 +1,9 @@
 ---
 title: 'CA1814: Preferujte Vícenásobná pole více než multidimenzionální | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PreferJaggedArraysOverMultidimensional
 - CA1814
@@ -19,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bacf1352949b96be67ed2297d45b33928679d31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794945"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferujte Vícenásobná pole více než multidimenzionální
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Upřednostněte vícenásobná pole před multidimenzionálními
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53889021"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Člen je deklarovaný jako multidimenzionálního pole.
 
 ## <a name="rule-description"></a>Popis pravidla

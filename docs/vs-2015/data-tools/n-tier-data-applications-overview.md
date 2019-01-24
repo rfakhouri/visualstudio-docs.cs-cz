@@ -1,12 +1,9 @@
 ---
 title: Přehled vícevrstvých datových aplikací | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 01e1c86e7cd601bad22f3e23fd65c4e2b260fa58
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801824"
 ---
 # <a name="n-tier-data-applications-overview"></a>Přehled vícevrstvých datových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

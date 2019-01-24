@@ -1,25 +1,22 @@
 ---
 title: Integrace modelů UML s jinými modely a nástroji | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795325"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrace modelů UML s jinými modely a nástroji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ Modely UML je možné integrovat s jinými modely a jazyky specifickými pro dom
   
    Další informace najdete v tématu [definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-   Ukázkový projekt, ve kterém je nasazený profil společně s příkazy a obslužnými rutinami gest, naleznete v tématu [vzorku: profilů UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
+   Ukázkový projekt, ve kterém je nasazený profil společně s příkazy a obslužnými rutinami gest, naleznete v tématu [vzorku: Profily UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
   
 - **Odkazy.** Sada řetězců můžete připojit k libovolnému prvku UML. Můžete napsat kód, který ukládá informace, jako je název souboru nebo identifikátor GUID jiného elementu. To můžete udělat bez zadání dalších definic. Odkazy nejsou přímo viditelná pro uživatele.  
   
@@ -68,12 +65,12 @@ Modely UML je možné integrovat s jinými modely a jazyky specifickými pro dom
   
 2. **Události vmsdk následující položky** je možné šířící změny mimo model – třeba, změňte název souboru dokumentu, propojené nebo změně prvku v jiném modelu.  
   
-   Informace o obou těchto mechanismů najdete v tématu [postupy: reakce na změny v modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+   Informace o obou těchto mechanismů najdete v tématu [jak: Reakce na změny v modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
    Přetáhněte prvků, které se zkopírují z jednoho modelu na jiný  
    Můžete nechat uživatele vytvořit prvky přetažením položky do diagramu UML. Vytvořený element nemá být kopii původní. Například můžete umožnit uživateli přetáhnout diagram aktivity z Průzkumníka řešení do jiného diagramu činnosti, vytvořte novou akci.  
   
-   Další informace najdete v části [definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) a [postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+   Další informace najdete v části [definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) a [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="samples"></a>Ukázky kódu  
  Podrobnosti najdete v ukázce kódu [propojení elementů UML diagramů nebo jiných souborů](http://go.microsoft.com/fwlink/?LinkId=213813). Ukázka umožňuje uživatelům přetažením souboru na libovolný prvek UML a později otevřít dvojitým kliknutím element. Diagram aktivity může například odkaz na prvek případu použití. Zobrazuje ikona, u které prvky mají odkazy.  
@@ -88,7 +85,7 @@ Modely UML je možné integrovat s jinými modely a jazyky specifickými pro dom
   
    Ukázka přidá dekoratér bitové kopie, aby vytvořené tvary UML.  
   
-- [Postupy: reakce na změny v modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
+- [Postupy: Reakce na změny v modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
   
    Vzorek ukazuje, jak definovat pravidlo, které jsou reaguje na nové obrazce v diagramu.  
   
@@ -98,15 +95,12 @@ Modely UML je možné integrovat s jinými modely a jazyky specifickými pro dom
   
    Vzorek ukazuje, jak zpracovávat položky přetažen z Průzkumníka Windows (nebo Průzkumníka souborů), Průzkumník řešení a další prvky UML.  
   
-  Příklad, ve kterém je UML model číst DSL, najdete v části [postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+  Příklad, ve kterém je UML model číst DSL, najdete v části [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
- [Postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Postupy: reakce na změny v modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
- [Ukázka: Profilů UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
+ [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Postupy: Reakce na změny v modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [Ukázka: Profily UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [Propojení elementů UML diagramů nebo jiných souborů](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

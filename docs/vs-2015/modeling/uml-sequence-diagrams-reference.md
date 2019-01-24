@@ -1,12 +1,9 @@
 ---
-title: 'Sekvenční diagramy UML: Referenční | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Sekvenční diagramy UML: Referenční dokumentace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,15 +18,15 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755158"
 ---
-# <a name="uml-sequence-diagrams-reference"></a>Sekvenční diagramy UML: Referenční dokumentace
+# <a name="uml-sequence-diagrams-reference"></a>Sekvenční diagramy UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V sadě Visual Studio *sekvenční diagram* ukazuje interakce, která představuje pořadí zpráv mezi instance tříd, komponenty, subsystémy nebo objekty actor. Čas toky dolů diagramu a zobrazuje tok řízení z jeden účastník do jiného. Pomocí sekvenčních diagramů můžete vizualizovat instancí a událostech namísto třídy a metody. Více než jednu instanci stejného typu může zobrazit v diagramu. Více než jeden výskytu stejná zpráva se může zobrazit i.  
@@ -61,15 +58,12 @@ V sadě Visual Studio *sekvenční diagram* ukazuje interakce, která představu
 |14|**Fragment Guard**|Je možné stanovit příslušné Určuje, zda dojde k fragment podmínku.<br /><br /> Pro nastavení ochranného zařízení, vyberte fragment, pak vyberte ochranného zařízení a zadejte hodnotu.|  
 |**X**|**Událost zničení**|Reprezentuje bod, ve kterém je objekt odstraněný nebo nedostupný. Zobrazí se na konci každé životnosti.|  
 ||**Interakce**|Kolekce zpráv a životnosti, který se zobrazí v sekvenčním diagramu. Chcete-li zobrazit vlastnosti interakci, musíte vybrat v **Průzkumníku modelů UML**.|  
-||**Sekvenční Diagram**|Diagram zobrazující interakci. Chcete-li zobrazit její vlastnosti, klikněte na prázdnou část diagramu. **Poznámka:** názvy sekvenčního diagramu interakce, že se zobrazí, a soubor, který obsahuje diagram může být jiný.|  
+||**Sekvenční Diagram**|Diagram zobrazující interakci. Chcete-li zobrazit její vlastnosti, klikněte na prázdnou část diagramu. **Poznámka:**  Názvy sekvenčního diagramu interakce, že se zobrazí, a soubor, který obsahuje diagram může být jiný.|  
   
 ## <a name="see-also"></a>Viz také  
- [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
  [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)
-
-
-

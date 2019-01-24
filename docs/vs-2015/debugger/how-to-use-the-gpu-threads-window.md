@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: použití okna vláken GPU | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití okna vláken GPU | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -23,13 +18,13 @@ ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8afd9cd09cf5977f58ee3a48b891f5291869b49c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee086109faa43976c9c8172cbc3af677ac140b5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799168"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796097"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Postupy: Použití okna vláken GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,8 +107,5 @@ V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na gr
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Postupy: použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)   
+ [Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)   
  [Návod: Ladění aplikace C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
-
-
-

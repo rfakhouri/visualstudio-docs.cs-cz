@@ -1,33 +1,28 @@
 ---
 title: 'Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6332659307f10b5cf7f4f224c8a99456de03d81a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b29944ac31498710b1d97f75d96d3bc3cbbca696
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786054"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Vytvoření projektu a přidání popisků do formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky, tlačítka a další ovládací prvky do formuláře. Můžete také nastavit vlastnosti pro každý ovládací prvek, který přidáte. Projekt bude obsahovat formulář, ovládací prvky a (později v tomto návodu) kód. Tlačítko spustí kvíz, popisky zobrazí problémy kvízu a další ovládací prvky zobrazí odpovědi kvízu a čas, který zbývá do dokončení kvízu.  
   
 > [!NOTE]
->  Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: vytvoření a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Chcete-li vytvořit projekt a nastavit vlastnosti pro formulář  
   
@@ -180,9 +175,6 @@ Počáteční formulář matematického kvízu
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 2: Vytvořte náhodný problém s přidáním](../ide/step-2-create-a-random-addition-problem.md).  
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 2: Vytvořit náhodnou úlohu sčítání](../ide/step-2-create-a-random-addition-problem.md).  
   
--   K návratu na téma přehledu přejděte [kurz 2: vytvoření a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).
-
-
-
+-   K návratu na téma přehledu přejděte [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).

@@ -1,25 +1,20 @@
 ---
 title: Spuštění nástroje pro profilaci s nebo bez ladicího programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb36ad055f126ce034fbb7323877b65aa8e3105c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783387"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Spuštění nástroje pro profilaci s nebo bez ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +106,7 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
 |![3. krok](../profiling/media/procguid-3.png "ProcGuid_3")|Nástroj zobrazí jeden nebo více hlavní grafy. Pokud diagnostické relace je vytvořena pomocí různých nástrojů, jsou zobrazeny všechny hlavní grafy.|  
 |![4. krok](../profiling/media/procguid-4.png "ProcGuid_4")|Můžete rozbalovat a sbalovat jednotlivé grafy.|  
 |![Krok 5](../profiling/media/procguid-6.png "ProcGuid_6")|Pokud data obsahují informace z různých nástrojů, podrobnosti o nástroj je shromažďovat v rámci karty.|  
-|![Krok 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Nástroj může mít jeden nebo více zobrazení podrobností. Zobrazení se filtruje podle vybrané oblasti na časové ose.|  
+|![Step 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Nástroj může mít jeden nebo více zobrazení podrobností. Zobrazení se filtruje podle vybrané oblasti na časové ose.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Nastavení cílové analýzy na jiném zařízení  
  Kromě spuštění vaší aplikace z projektu sady Visual Studio, můžete také spustit diagnostické relace na alternativní cíle. Můžete například chtít diagnostikovat problémy s výkonem na verzi aplikace, která byla nainstalovaná z App Store Windows.  
@@ -140,11 +135,8 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
   
  [Video: Ladění problémů s výkonem pomocí sady Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [Tipy pro výkon: Informace o výkonu v přehledem při ladění se sadou Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [Tipy pro výkon: Výkon informace na přehledem při ladění se sadou Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Ladicí program okně diagnostické nástroje v sadě Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [Nástroj IntelliTrace v sadě Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-
-
-

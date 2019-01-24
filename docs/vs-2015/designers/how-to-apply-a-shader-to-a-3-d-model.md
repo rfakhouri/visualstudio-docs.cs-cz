@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: použití shaderu na 3D Model | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití shaderu na 3D Model | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 804e7c0a2e7a9a710071cc6050249bf408bc8230
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793462"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Postupy: Použití shaderu na 3D model
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Postupy: Použití shaderu na 3D Model
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento dokument popisuje způsob použití Editoru modelů pro použití orientovaného grafu Shader Language (DGSL) shaderu na 3D model.  
@@ -37,7 +32,7 @@ Tento dokument popisuje způsob použití Editoru modelů pro použití orientov
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>K použití shaderu na 3D model  
   
-1. Začněte s 3D scény, který obsahuje jeden nebo více modelů. Pokud nemáte k dispozici vhodný 3D scény, vytvořit jak je popsáno v [postupy: vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md). Také musíte mít DGSL shader, který můžete použít pro model. Pokud nemáte k dispozici vhodný shaderu, vytvořit jak je popsáno v [postupy: vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md) a ujistěte se, že jste jste ho uložili do souboru předtím, než budete pokračovat.  
+1. Začněte s 3D scény, který obsahuje jeden nebo více modelů. Pokud nemáte k dispozici vhodný 3D scény, vytvořit jak je popsáno v [jak: Vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md). Také musíte mít DGSL shader, který můžete použít pro model. Pokud nemáte k dispozici vhodný shaderu, vytvořit jak je popsáno v [jak: Vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md) a ujistěte se, že jste jste ho uložili do souboru předtím, než budete pokračovat.  
   
 2. V **vyberte** režimu, vybrat model, který chcete použít shaderu na a pak v **vlastnosti** okno v **Filename** vlastnost **efekt**  skupiny vlastností zadejte DGSL shader, který má být použita k modelu.  
   
@@ -48,10 +43,7 @@ Tento dokument popisuje způsob použití Editoru modelů pro použití orientov
    Po použití shaderu na model, lze jej otevřít v Návrháři shaderu tak, že vyberete model a pak v **vlastnosti** okno v **(rozšířené)** vlastnost **efekt**skupiny vlastností, vyberete symbol tří teček (**...** ) tlačítko.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)   
- [Postupy: vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md)   
- [Editor modelů](../designers/model-editor.md)   
+ [Postupy: Vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)   
+ [Postupy: Vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md)   
+ [Model Editor](../designers/model-editor.md)   
  [Návrhář shaderů](../designers/shader-designer.md)
-
-
-

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967771"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800045"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 První názorný postup v této sérii [vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md), ukazuje postup vytvoření systému základního projektu. Tento návod vychází systému základního projektu tak, že přidáte šablony sady Visual Studio, stránky vlastností a další funkce. Prvního průvodce musíte dokončit před zahájením tohoto objektu.  
@@ -85,7 +85,7 @@ První názorný postup v této sérii [vytvoření systému základního projek
   
 5. V **vlastnosti** okna, vyberte všechny pět souborů *\\Templates\Projects\SimpleProject\\* složky a nastavení **akce sestavení** k **ZipProject**.  
   
-   ![Jednoduchý projekt složky](../extensibility/media/simpproj2.png "SimpProj2")  
+   ![Simple Project Folder](../extensibility/media/simpproj2.png "SimpProj2")  
   
    \<TemplateData > část určuje umístění a vzhled SimpleProject typů projektů v **nový projekt** dialogové okno, následujícím způsobem:  
   
@@ -198,7 +198,7 @@ ZipProjects:
   
    ![Jednoduchý projekt novou instanci](../extensibility/media/simpproj2_newproj.png "SimpProj2_NewProj")  
   
-   ![Můj projekt novou instanci](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")  
+   ![My Project New Instance](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")  
   
 ## <a name="create-a-project-type-child-node"></a>Vytvořit podřízený uzel typu projektu  
  Můžete přidat podřízený uzel typu uzlu projektu v **nový projekt** dialogové okno.  Například pro typ projektu SimpleProject může mít podřízené uzly pro konzolové aplikace, okno aplikace, webové aplikace a tak dále.  
@@ -266,7 +266,7 @@ ZipProjects:
   
 5. Klikněte na tlačítko **zrušit** a Zastavit ladění.  
   
-   ![Jednoduchý projekt kumulativní](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")  
+   ![Simple Project Rollup](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")  
   
    ![Jednoduchý projekt konzoly uzlu](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")  
   
@@ -339,7 +339,7 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creatr-a-project-property-page"></a>Creatr stránky vlastností projektu  
+## <a name="create-a-project-property-page"></a>Vytvoření stránky vlastností projektu  
  Stránky vlastností pro váš typ projektu můžete vytvořit tak, aby uživatelé mohou zobrazit a změnit vlastnosti v projektech, které jsou založeny na šabloně. Tato část ukazuje, jak vytvořit stránku vlastností nezávislé na konfiguraci. Tuto stránku vlastností základní mřížku vlastností používá k zobrazení veřejné vlastnosti, které vystavíte v vaší třídy stránky vlastností.  
   
  Odvození vaší třídy stránky vlastností z `SettingsPage` základní třídy. Mřížky vlastností poskytované `SettingsPage` třídy je seznámen nejvíce primitivní datové typy a ví, jak jejich zobrazení.  Kromě toho `SettingsPage` třídy ví, jak zachovat hodnoty vlastností do souboru projektu.  
@@ -348,7 +348,7 @@ ZipProjects:
   
 -   AssemblyName  
   
--   Element OutputType  
+-   OutputType  
   
 -   RootNamespace.  
   
@@ -471,7 +471,7 @@ ZipProjects:
   
 8. Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení**a potom klikněte na tlačítko **vlastnosti**. **Stránky vlastností** se zobrazí dialogové okno.  
   
-   ![Stránka vlastností pro Jednoduchý projekt](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")  
+   ![Simple Project Property Page](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")  
   
 ## <a name="test-the-project-property-page"></a>Testování stránky vlastností projektu
  Nyní můžete zkontrolovat, jestli můžete upravit a změnit hodnoty vlastností.  

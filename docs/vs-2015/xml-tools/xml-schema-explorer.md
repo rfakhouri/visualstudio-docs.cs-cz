@@ -1,25 +1,20 @@
 ---
 title: Průzkumník schémat XML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803280"
 ---
 # <a name="xml-schema-explorer"></a>Průzkumník schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ Průzkumníka schémat XML je součástí sady Microsoft Visual Studio a Editor 
   
   Následuje příklad stromové struktury:  
   
-  ![Průzkumník schémat XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
+  ![XML Schema Explorer](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
   
 ## <a name="selection-and-activation"></a>Výběr a aktivace  
  Pokud chcete zvýraznit a vyberte uzel, klikněte na jednou Průzkumník schémat.  
@@ -98,10 +93,3 @@ Průzkumníka schémat XML je součástí sady Microsoft Visual Studio a Editor 
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Přidání uzlů do pracovního prostoru z Průzkumníka schémat XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
-
-
-
-
-
-
-

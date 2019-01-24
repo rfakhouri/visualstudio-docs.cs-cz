@@ -1,14 +1,9 @@
 ---
 title: Dialogové okno textový Editor možnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Miscellaneous
@@ -25,13 +20,13 @@ ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 939438c2506a95c98005144dde395028d18cc481
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788096"
 ---
 # <a name="text-editor-options-dialog-box"></a>Dialogové okno Možnosti textového editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49260231"
 Možnosti editoru **možnosti** dialogové okno poskytují způsoby, jak upravit vzhled a chování editoru.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: Změna písma a barev v editoru](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Postupy: Změna písma a barev v editoru](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Vysvětluje, jak změnit editor písma a barvy.  
   
  [Postupy: Správa zalamování řádků v editoru](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
@@ -97,6 +92,3 @@ Možnosti editoru **možnosti** dialogové okno poskytují způsoby, jak upravit
 ## <a name="related-sections"></a>Související oddíly  
  [Psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md)  
  Popisuje různé způsoby použití editoru kódu.
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Proces transformace textových šablon | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796990"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformace textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ Proces transformace textových šablon přijímá jako vstupní soubor textové 
   
  Proces transformace textových šablon se provádí ve dvou krocích. Modul nejprve vytvoří dočasnou třídu, která se nazývá vygenerované třídy transformace. Tato třída obsahuje kód, který je generován direktivy a řídicí bloky. Potom modul zkompiluje a spustí vygenerované třídy transformace pro vytvoření výstupního souboru.  
   
-## <a name="components"></a>Součásti  
+## <a name="components"></a>Komponenty  
   
 |Součást|Popis|Přizpůsobitelné (Ano/Ne)|  
 |---------------|-----------------|------------------------------|  
@@ -41,7 +38,7 @@ Proces transformace textových šablon přijímá jako vstupní soubor textové 
 ## <a name="the-engine"></a>Modul  
  Modul přijímá jako řetězec z hostitele, která zpracovává všechny soubory, které se používají v transformace procesu šablony. Modul následně požádá hostitele najít všechny vlastní procesory direktiv a další aspekty životního prostředí. Modul se potom zkompiluje a spustí vygenerované třídy transformace. Modul vrátí generovaný text na hostitele, který obvykle uloží text do souboru.  
   
-## <a name="the-host"></a>Hostitel  
+## <a name="the-host"></a>The Host  
  Hostitel je zodpovědná za nic, které se týkají prostředí mimo proces transformace, včetně následujících:  
   
 -   Hledání textu a binárních souborů požadoval modul nebo procesor direktiv. Hostitel může prohledáním adresáře a globální mezipaměti sestavení k vyhledání sestavení. Hostitele můžete vyhledat kód vlastního procesoru direktiv pro tento motor. Hostitel můžete také najít a čtení textových souborů a vrátí jejich obsah jako řetězce.  
@@ -68,6 +65,3 @@ Proces transformace textových šablon přijímá jako vstupní soubor textové 
  `<#@ import namespace="System.Text" #>`  
   
  Převede standardní procesoru direktiv pro `using` prohlášení do vygenerované třídy transformace. Pak můžete použít `StringBuilder` třídy ve zbytku kódu bez kvalifikace ho jako šablonu `System.Text.StringBuilder`.
-
-
-

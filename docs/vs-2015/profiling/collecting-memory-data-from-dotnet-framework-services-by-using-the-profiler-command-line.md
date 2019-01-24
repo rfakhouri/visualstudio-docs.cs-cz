@@ -1,25 +1,20 @@
 ---
 title: Shromažďování dat paměti ze služeb rozhraní .NET Framework pomocí příkazového řádku Profiler | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a12add91b1062b109d392d130b625cdd7f4c873
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 67184daeae3b2a50da266e2eb420d5a2ae9896db
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794263"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Shromažďování dat paměti ze služeb rozhraní .NET Framework pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,8 +25,8 @@ Tato část popisuje postupy a možnosti pro shromažďování paměť přiděle
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Připojení profileru ke službě .NET**|-   [Postupy: připojení Profiler ke službě .NET ke shromažďování dat paměti](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrumentace služby rozhraní .NET a shromažďování dat paměti .NET**|-   [Postupy: instrumentace rozhraní .NET Framework služby a shromažďování dat paměti](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Připojení profileru ke službě .NET**|-   [Jak: Připojení profileru ke službě .NET kvůli shromáždění dat o paměti](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrumentace služby rozhraní .NET a shromažďování dat paměti .NET**|-   [Jak: Instrumentace služby .NET Framework a shromáždění dat o paměti](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**Přidání dat interakce vrstev**|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
@@ -56,6 +51,3 @@ Tato část popisuje postupy a možnosti pro shromažďování paměť přiděle
   
 ## <a name="reference"></a>Odkaz  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)
-
-
-

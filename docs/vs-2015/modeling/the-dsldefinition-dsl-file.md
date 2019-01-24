@@ -1,25 +1,22 @@
 ---
 title: Soubor DslDefinition.dsl | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800499"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +87,7 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
   
  Moniker systému vyžaduje na stejné úrovni ve stromové struktuře XML odlišné názvy. Z tohoto důvodu se vyskytnou chyby, pokud se pokusíte uložit definice jazyka specifického pro doménu, která má například dvě třídy se stejným názvem. Tyto chyby duplicitní název byste měli napravit a vždy před uložením soubor DslDefinition.dsl, takže je možné jej znovu načíst správně později.  
   
- Každý typ má svůj vlastní typ moniker: DomainClassMoniker, DomainRelationshipMoniker, a tak dále.  
+ Každý typ má svůj vlastní typ zástupného názvu: DomainClassMoniker DomainRelationshipMoniker a tak dále.  
   
 ## <a name="types"></a>Typy  
  V části typy Určuje všechny typy, které obsahuje soubor DslDefinition.dsl jako typy vlastností. Tyto typy spadají do dvou typů: externí typy, jako je například System.String a výčtové typy.  
@@ -157,7 +154,7 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
   
  Každá třída domény (včetně relací, tvary, konektory a diagramy) může mít tyto atributy a podřízené uzly:  
   
--   **ID.** Tento atribut je identifikátor GUID. Pokud nezadáte hodnotu v souboru, návrháře jazyka specifického pro doménu vytvoří hodnotu. (V obrázcích v tomto dokumentu, tento atribut je obvykle vynechána, pro úsporu místa.)  
+-   **Id.** Tento atribut je identifikátor GUID. Pokud nezadáte hodnotu v souboru, návrháře jazyka specifického pro doménu vytvoří hodnotu. (V obrázcích v tomto dokumentu, tento atribut je obvykle vynechána, pro úsporu místa.)  
   
 -   **Název a Namespace.** Tyto atributy zadejte název a obor názvů, třídy v generovaném kódu. Společně musí být jedinečný v rámci jazyka specifického pro doménu.  
   
@@ -214,7 +211,7 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
 ### <a name="source-and-target-roles"></a>Zdrojové a cílové role  
  Každý vztah obsahuje zdrojové a cílové role, které mají následující atributy:  
   
--   `RolePlayer` Atribut odkazuje na třídu domény propojených instancí: OutPort pro zdroj, InPort pro cíl.  
+-   `RolePlayer` Atribut odkazuje na třídu domény propojených instancí: OutPort zdroje InPort pro cíl.  
   
 -   `Multiplicity` Atribut má čtyři možných hodnot (hodnotu ZeroMany, ZeroOne, jeden a OneMany). Tento atribut odkazuje na počet odkazy tohoto vztahu, který může být přidružený jeden aktéra role.  
   
@@ -281,7 +278,7 @@ Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[
  Při zápisu jazyka C# pro tento model, můžete přejít přes odkaz v jednom kroku pomocí vlastnost, která generuje relace na každém tříd, které se týká:  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  Ale je potřeba udělat i směrování explicitně v cestě syntaxi. Kvůli tomuto požadavku můžete snadněji přistupovat zprostředkující odkaz. Následující kód provede směrování z odkazu na komponentu:  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Mapy konektorů může také obsahovat mapy dekoratérů.  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)   
  [Porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

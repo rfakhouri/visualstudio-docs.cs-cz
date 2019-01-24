@@ -1,26 +1,21 @@
 ---
 title: 'Postupy: Otevření editorů pro otevřené dokumenty | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8238ce632f8552b36ccb259af683636732b469
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750984"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788749"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Postupy: Otevření editorů pro otevřené dokumenty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,10 +52,9 @@ Předtím, než projekt se otevře okno dokumentu, projekt nejprve musíte urči
   
      Tato metoda nejprve ověří, že dokument ještě není otevřené voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Pokud už je dokument otevřete, pak resurfaced jeho okno editoru.  
   
-2.  Pokud dokument není otevřen, potom postupujte podle pokynů v [postupy: otevření standardních editorů](../extensibility/how-to-open-standard-editors.md).  
+2.  Pokud dokument není otevřen, potom postupujte podle pokynů v [jak: Otevření standardních editorů](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Otevření a uložení položek projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Postupy: otevření editoru pro konkrétní projekt](../extensibility/how-to-open-project-specific-editors.md)   
- [Postupy: Otevření standardních editorů](../extensibility/how-to-open-standard-editors.md)
-
+ [Postupy: Otevřít editoru pro konkrétní projekt](../extensibility/how-to-open-project-specific-editors.md)   
+ [Postupy: Otevřít standardních editorů](../extensibility/how-to-open-standard-editors.md)

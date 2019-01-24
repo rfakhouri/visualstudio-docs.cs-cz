@@ -1,25 +1,20 @@
 ---
 title: Vytvoření komentářů JSDoc pro JavaScript IntelliSense | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a0dadc81-3755-4a47-bcee-c1010819ff2a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d338b2bece99f720670871a1b92c6b2a57c4280
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758507"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Vytvoření komentářů JSDoc pro JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ Technologie IntelliSense v sadě Visual Studio zobrazí informace, které přid�
 | @deprecated  |              @deprecated *Popis*              |                                   Určuje zastaralé funkce nebo metody.                                   |
 | @description |             @description *Popis*              |                              Určuje popis pro funkci nebo metodu.                               |
 |    @param    | @param {*typ*} *parameterName*<em>popis</em> | Určuje informace o parametru ve funkci nebo metodu.<br /><br /> TypeScript podporuje také @paramTag. |
-|  @property   |          @property {*typ*} *propertyName*          |   Určuje informace, včetně popisu, pole nebo člena, který je definován na objekt.    |
+|  @property   |          @property {*type*} *propertyName*          |   Určuje informace, včetně popisu, pole nebo člena, který je definován na objekt.    |
 |   @returns   |                  @returns {*typ*}                  |           Určuje návratovou hodnotu.<br /><br /> TypeScript, použijte @returnType místo @returns.           |
 |   @summary   |               @summary *Popis*                |                   Určuje popis pro funkci nebo metodu (stejné jako @description).                   |
 |    @type     |                   @type {*typ*}                    |                                Určuje typ konstanty nebo proměnné.                                |
-|   @typedef   |         @typedef {*typ*} *customTypeName*          |                                            Určuje vlastního typu.                                            |
+|   @typedef   |         @typedef {*type*} *customTypeName*          |                                            Určuje vlastního typu.                                            |
 
 ### <a name="examples"></a>Příklady  
  Následující příklad ukazuje použití @description, @param, a @return JSDoc značky pro funkci s názvem `getArea`.  
@@ -92,6 +87,3 @@ const RED = 'FF0000';
 function old() {  
 }  
 ```
-
-
-

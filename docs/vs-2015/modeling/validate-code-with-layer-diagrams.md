@@ -1,12 +1,9 @@
 ---
 title: Ověřování kódu pomocí diagramů vrstev | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792896"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Ověřování kódu pomocí diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
   
   Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-  Kód lze ověřit manuálně z otevřeného diagramu vrstev v systému Visual Studio nebo z příkazového řádku. Kód lze rovněž automaticky ověřit při spuštění místních sestavení nebo procesu Team Foundation Build. Zobrazit [Video pro kanál 9: návrh a ověření architektury pomocí diagramů vrstev](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  Kód lze ověřit manuálně z otevřeného diagramu vrstev v systému Visual Studio nebo z příkazového řádku. Kód lze rovněž automaticky ověřit při spuštění místních sestavení nebo procesu Team Foundation Build. Zobrazit [Video pro kanál 9: Návrh a ověření architektury pomocí diagramů vrstev](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Pokud chcete spustit ověření vrstvy pomocí procesu Team Foundation Build, je rovněž nutné nainstalovat stejnou verzi sady Visual Studio na svém serveru sestavení.  
@@ -156,7 +153,7 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
   
   Tyto úlohy slouží ke správě chyb ověřování v **seznam chyb** okno:  
   
-|**k**|**Postupujte podle těchto kroků**|  
+|**Komu**|**Postupujte podle těchto kroků**|  
 |------------|----------------------------|  
 |Potlačení vybraných chyb během ověřování|Klikněte pravým tlačítkem na jeden nebo více vybraných chyb, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **potlačit chyby**.<br /><br /> Potlačené chyby se zobrazují s přeškrtnutím. Při příštím spuštění ověřování se tyto chyby nezobrazí.<br /><br /> Potlačené chyby jsou sledovány v souboru .suppressions pro odpovídající soubor diagramu vrstev.|  
 |Ukončení potlačování vybraných chyb|Klikněte pravým tlačítkem na Potlačené chyby nebo chyby, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **ukončit potlačování chyb**.<br /><br /> Vybrané potlačené chyby se při příštím spuštění ověřování zobrazí.|  
@@ -237,17 +234,14 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
   
 |**Chyba syntaxe**|**Popis chyby**|  
 |----------------------|---------------------------|  
-|AV0001: Neplatná závislost: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> Vrstvy: *LayerName1*, *LayerName2* &#124; závislosti: *DependencyType*|*Artifact1* v *LayerName1* by neměl být závislý na *Artifact2* v *LayerName2* protože *LayerName1* nemá přímou závislost na *LayerName2*.|  
-|AV1001: Neplatný Namespace: *artefaktu*<br /><br /> Vrstva: *LayerName* &#124; vyžaduje Namespace: *NamespaceName1* &#124; aktuální Namespace: *NamespaceName2*|*LayerName* vyžaduje, aby přidružené artefakty patřily do *NamespaceName1*. *Artefakt* probíhá *NamespaceName2*, nikoli *NamespaceName1*.|  
+|AV0001: Neplatná závislost: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Vrstvy: *LayerName1*, *LayerName2* &#124; závislosti: *DependencyType*|*Artifact1* v *LayerName1* by neměl být závislý na *Artifact2* v *LayerName2* protože *LayerName1* nemá přímou závislost na *LayerName2*.|  
+|AV1001: Neplatný Namespace: *Artefakt*<br /><br /> Vrstva: *LayerName* &#124; vyžaduje Namespace: *NamespaceName1* &#124; aktuální Namespace: *NamespaceName2*|*LayerName* vyžaduje, aby přidružené artefakty patřily do *NamespaceName1*. *Artefakt* probíhá *NamespaceName2*, nikoli *NamespaceName1*.|  
 |AV1002: Závisí na zakázaném Namespace: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Vrstva: *LayerName* &#124; zakázáno Namespace: *NamespaceName* &#124; závislosti: *DependencyType*|*LayerName* vyžaduje, aby přidružené artefakty nebyly závislé na *NamespaceName*. *Artifact1* nemůže záviset na *Artifact2* protože *Artifact2* probíhá *NamespaceName*.|  
-|AV1003: V zakázaném Namespace: *artefaktů*(*ArtifactType*)<br /><br /> Vrstva: *LayerName* &#124; zakázáno Namespace: *NamespaceName*|*LayerName* vyžaduje, aby přidružené artefakty nepatřily do *NamespaceName*. *Artefakt* patří *NamespaceName*.|  
-|AV3001: Chybějící vazba: vrstva "*LayerName*"odkazuje na"*artefaktů*" který nebyl nalezen. Nechybí odkaz na sestavení?|*LayerName* odkazuje na artefakt, který nebyl nalezen. Odkaz na třídu může chybět například proto, že projekt modelování nemá odkaz na sestavení obsahující třídu.|  
+|AV1003: V zakázané Namespace: *Artifact*(*ArtifactType*)<br /><br /> Vrstva: *LayerName* &#124; zakázáno Namespace: *NamespaceName*|*LayerName* vyžaduje, aby přidružené artefakty nepatřily do *NamespaceName*. *Artefakt* patří *NamespaceName*.|  
+|AV3001: Chybějící vazba: Vrstva "*LayerName*"odkazuje na"*artefaktů*" který nebyl nalezen. Nechybí odkaz na sestavení?|*LayerName* odkazuje na artefakt, který nebyl nalezen. Odkaz na třídu může chybět například proto, že projekt modelování nemá odkaz na sestavení obsahující třídu.|  
 |AV9001: Strukturální analýza nalezla vnitřní chyby. Výsledky nemusí být úplné. Další informace lze nalézt v podrobném protokolu událostí sestavení nebo ve výstupním okně.|Více podrobností lze nalézt v protokolu událostí sestavení nebo ve výstupním okně.|  
   
 ## <a name="security"></a>Zabezpečení  
   
 ## <a name="see-also"></a>Viz také  
  [Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)
-
-
-

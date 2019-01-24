@@ -1,12 +1,9 @@
 ---
 title: Přizpůsobení modelu pomocí profilů a stereotypů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, profiles
 - UML model, stereotypes
@@ -15,13 +12,13 @@ ms.assetid: fd607157-0d3a-4583-a84e-427a4b2a5acb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 33e887764c535083c2449a7d333868b2ccd9c4c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763024"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Přizpůsobení modelu pomocí profilů a stereotypů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +46,3 @@ V sadě Visual Studio můžete přizpůsobit standardní prvky modelu UML, jako 
 |[Instalace profilu UML](../modeling/install-a-uml-profile.md)|Pokud někdo udělil profilu UML, můžete ho nainstalovat ve vašem počítači.|  
 |[Definování vlastní položky sady nástrojů pro modelování](../modeling/define-a-custom-modeling-toolbox-item.md)|Vlastní položku sady nástrojů není nutné opakovaně nastavení stereotypu pro nové prvky.|  
 |[Barva tříd UML podle stereotypu](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Tento ukázkový kód rozšiřuje diagramy UML. Automaticky nastaví barvu tvaru UML podle stereotypu elementu.|
-
-
-

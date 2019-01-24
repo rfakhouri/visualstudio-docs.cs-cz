@@ -1,11 +1,8 @@
 ---
 title: Návrhář aktivity TransactedReceiveScope | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.TransactedReceiveScope.UI
@@ -13,13 +10,13 @@ ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e718aaf754e9b4617aeb733196a73aa1bc125a9e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f4864a19cf48b468abed90e120e4924237653cec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245242"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799329"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Návrhář aktivity TransactedReceiveScope
 **TransactedReceiveScope** Návrhář slouží k vytvoření a konfigurace <xref:System.ServiceModel.Activities.TransactedReceiveScope> aktivity.  
@@ -40,7 +37,7 @@ ms.locfileid: "49245242"
 |Název vlastnosti|Požadováno|Použití|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Volitelné jméno <xref:System.ServiceModel.Activities.TransactedReceiveScope> aktivity. Výchozí hodnota je rozsahu TransactedReceiveScope.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> název není bezpodmínečně nutné, je osvědčeným postupem použít zobrazovaný název.|  
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Hodnota TRUE|Drops <xref:System.ServiceModel.Activities.Receive> aktivitu **žádosti** bloku na plochu návrháře aktivit.|  
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Pravda|Drops <xref:System.ServiceModel.Activities.Receive> aktivitu **žádosti** bloku na plochu návrháře aktivit.|  
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Drops <xref:System.Activities.Activity> do **tělo** bloku na plochu návrháře aktivit.|  
   
 ## <a name="see-also"></a>Viz také  

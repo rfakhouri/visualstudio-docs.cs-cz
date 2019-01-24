@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: ladění serverů modelu COM | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění serverů modelu COM | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 527356ba788e7e69ba3e1542e3b98ead8efbf331
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727187"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786128"
 ---
 # <a name="how-to-debug-com-servers"></a>Postupy: Ladění serverů modelu COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +47,6 @@ Ladění aplikace modelu COM serveru představuje jedinečnou sadu problémy, kt
   
 ## <a name="see-also"></a>Viz také  
  [COM a ActiveX ladění](../debugger/com-and-activex-debugging.md)   
- [Postupy: ladění klientů modelu COM a serverů pomocí ladění RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Postupy: Ladění modelu COM klientů a serverů pomocí ladění RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [Ladění modelu COM serveru a kontejneru](../debugger/com-server-and-container-debugging.md)   
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

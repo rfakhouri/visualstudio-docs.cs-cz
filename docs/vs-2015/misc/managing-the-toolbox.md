@@ -1,31 +1,26 @@
 ---
 title: Správa sady nástrojů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873419"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772111"
 ---
 # <a name="managing-the-toolbox"></a>Správa sady nástrojů
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Umožňuje VSPackage, například návrháři nebo editoru pro správu členství a vzhled **nástrojů**.  
   
- Kromě toho **nástrojů** samotný můžete spravovat pomocí služby automation. Další informace o správě nástrojů díky automatizaci, naleznete v tématu [postupy: řízení panelu nástrojů](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Kromě toho **nástrojů** samotný můžete spravovat pomocí služby automation. Další informace o správě nástrojů díky automatizaci, naleznete v tématu [jak: Řízení panelu nástrojů](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Výběr karty automatické sady nástrojů  
  Konkrétní **nástrojů** kartu nebo kategorie automaticky provádět aktivní na základě toho, jaké editoru nebo návrháře aktuálně aktivní. Například pokud je aktivovaná Návrháře formulářů, můžete **všechny formuláře Windows** vybraná karta.  

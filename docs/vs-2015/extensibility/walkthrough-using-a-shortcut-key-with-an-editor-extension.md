@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Použití klávesové zkratky s rozšířením editoru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Pomocí klávesové zkratky s rozšířením editoru | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763019"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Návod: Použití klávesové zkratky s rozšířením editoru
+# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Průvodce: Použití klávesové zkratky s rozšířením editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Klávesové zkratky můžete reagovat v rozšíření editoru. Následující návod ukazuje, jak přidat grafického doplňku zobrazení k zobrazení textu s použitím klávesovou zkratku. Tento názorný postup je založen na šabloně editor grafického doplňku zobrazení, a umožňuje vám přidat dalších úprav s použitím na znak +.  
@@ -40,7 +35,7 @@ Klávesové zkratky můžete reagovat v rozšíření editoru. Následující n�
   
     Microsoft.VisualStudio.Editor  
   
-    Sestavení Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
     Microsoft.VisualStudio.Shell.14.0  
   
@@ -248,4 +243,3 @@ private void CreateVisuals(ITextViewLine line)
 2.  Vytvořte nebo otevřete textový soubor. Zadejte slova, některé obsahující znak "a" a pak zadejte + kdekoli v zobrazení textu.  
   
      Na každý "a" znak v souboru by se zobrazit fialový čtverec.
-

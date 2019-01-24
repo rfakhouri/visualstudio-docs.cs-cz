@@ -1,14 +1,9 @@
 ---
 title: Správa prostředků aplikace (.NET) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
 - msvse_settingsdesigner.err.formatvalue
@@ -26,13 +21,13 @@ ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29f32fa59f719af3efab6901596b682c95a5d57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8319e4e71b313e0c4614f720cb371b339c09d391
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784772"
 ---
 # <a name="managing-application-resources-net"></a>Správa prostředků aplikace (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +41,4 @@ Zdrojové soubory jsou soubory, které jsou součástí aplikace, ale nejsou zko
 ## <a name="working-with-resources"></a>Práce s prostředky  
  V spravovaný projekt kódu, otevřete okno s vlastnostmi projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo typ **vlastnostiprojektu**v **Snadné spuštění** okna, nebo zadejte ALT + ENTER v **Průzkumníka řešení** okno). Vyberte **prostředky** kartu. Pokud váš projekt není již obsahovat jednu, přidat a odstraňovat různé druhy prostředků a úpravám stávajících prostředků, můžete přidat soubor .resx.  
   
- Chcete-li zjistit, jak pracovat s prostředky v projektech C++, přečtěte si téma [postupy: vytvoření prostředku](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716).
-
+ Chcete-li zjistit, jak pracovat s prostředky v projektech C++, přečtěte si téma [jak: Vytvořit prostředek](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716).

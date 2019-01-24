@@ -1,27 +1,22 @@
 ---
 title: Zobrazení procesů – Data kolizí | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process view
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46bd3506744d37d3f203215cd9c152cef20142f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796775"
 ---
 # <a name="process-view---contention-data"></a>Zobrazení procesů – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +38,9 @@ Proces zobrazení dat kolizí pro procesy a vlákna, které byly spuštěny běh
 |**ID**|Systémem generovaných identifikátor procesu nebo vlákna.|  
 |**Doba životnosti**|Počet milisekund nebo cyklů procesoru od samého začátku procesu nebo vlákna na konci procesu nebo vlákna nebo konce profilace.|  
 |**Typ**|Typ řádku, procesu nebo vlákna.<br /><br /> Pouze v **VSReport** příkazového řádku sestavy. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Jméno**|Název procesu nebo vlákna.|  
+|**Název**|Název procesu nebo vlákna.|  
 |**Jedinečné ID**|Profiler vygenerovat identifikátor, který je jedinečný na příslušný proces nebo vlákno.|  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení procesů](../profiling/process-view.md)
-
-
-

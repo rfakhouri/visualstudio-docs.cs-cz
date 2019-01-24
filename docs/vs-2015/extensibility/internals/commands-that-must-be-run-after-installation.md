@@ -1,26 +1,21 @@
 ---
 title: Příkazy, které musí spustit po instalaci | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90ce272270ffd511ee3b0efe8a711730ccdb92b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794817"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Příkazy, které se musí spustit po instalaci
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,12 +59,12 @@ Pokud nasazení vašeho rozšíření pomocí souboru MSI, je nutné spustit `de
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Řádky tabulky CustomAction ke spuštění devenv.exe  
   
-|Akce|Typ|Zdroj|Cíl|  
+|Akce|Typ|Zdroj|Target|  
 |------------|----------|------------|------------|  
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/ Setup|  
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/ Setup|  
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/ Setup|  
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/ Setup|  
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
  Vlastní akce musí být vytvořen do tabulky InstallExecuteSequence naplánovat pro provedení během instalace. Použijte odpovídající vlastnost v jednotlivých řádcích sloupce podmínka zabráníte tak případnému vlastní akci spuštění jestli verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] není nainstalovaná v systému.  
   
@@ -89,4 +84,3 @@ Pokud nasazení vašeho rozšíření pomocí souboru MSI, je nutné spustit `de
   
 ## <a name="see-also"></a>Viz také  
  [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

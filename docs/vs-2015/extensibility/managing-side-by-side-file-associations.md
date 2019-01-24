@@ -1,26 +1,21 @@
 ---
 title: Správa přidružení souborů vedle sebe | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 171342bf920c2cf1e56da78f5cc7a4bb6d87ea0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90ad0d8713c2e53e51dde15c0d18c031b22a5dbf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764771"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786088"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Správa přidružení souborů vedle sebe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Pokud vaše VSPackage poskytuje přidružení souborů, musíte rozhodnout, jak 
   
   ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>CustomAction řádky tabulky, které určují nejnovější verzi sady Visual Studio  
   
-  |Akce|Typ|Zdroj|Cíl|  
+  |Akce|Typ|Zdroj|Target|  
   |------------|----------|------------|------------|  
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
@@ -67,7 +62,7 @@ Pokud vaše VSPackage poskytuje přidružení souborů, musíte rozhodnout, jak 
   |Akce|Podmínka|Pořadí|  
   |------------|---------------|--------------|  
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 A NENÍ (DEVENV_EXE_2003 NEBO DEVENV_EXE_2005)|410|  
-  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 A NE DEVENV_EXE_2005|420|  
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 AND NOT DEVENV_EXE_2005|420|  
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
   
    Vlastnost DEVENV_EXE_LATEST v tabulce registru balíček Instalační služby systému Windows můžete použít k zápisu HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand klíč výchozí hodnotu [DEVENV_EXE_LATEST] "%1"  
@@ -92,4 +87,3 @@ Pokud vaše VSPackage poskytuje přidružení souborů, musíte rozhodnout, jak 
 ## <a name="see-also"></a>Viz také  
  [Registrace přípony názvů souborů pro nasazení vedle sebe](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [Registrace operací pro přípony názvů souborů](../extensibility/registering-verbs-for-file-name-extensions.md)
-

@@ -1,30 +1,27 @@
 ---
-title: 'Postupy: přidání aktivit do panelu nástrojů | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Přidání aktivit do panelu nástrojů | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7fc523cd032863498cdefac1e12f0653a57ab7cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799980"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: přidání aktivit do panelu nástrojů
+# <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: Přidání aktivit do panelu nástrojů
 Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika různými způsoby. Můžete přidat z v rámci aktuálního projektu, odkazovat z jiného projektu nebo na ně odkazovat z jiného sestavení.  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Chcete-li přidat aktivitu z v rámci aktuálního projektu  
   
-1.  Přidáte novou vlastní aktivitu do aktuálního projektu pracovního postupu. [!INCLUDE[crabout](../includes/crabout-md.md)] Přidání nové vlastní aktivity do projektu, viz [postupy: Přidání nové položky do projektu pracovního postupu](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
+1.  Přidáte novou vlastní aktivitu do aktuálního projektu pracovního postupu. [!INCLUDE[crabout](../includes/crabout-md.md)] Přidání nové vlastní aktivity do projektu, viz [jak: Přidat novou položku do projektu pracovního postupu](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
   
 2.  Přidáte vlastní logiku aktivity.  
   

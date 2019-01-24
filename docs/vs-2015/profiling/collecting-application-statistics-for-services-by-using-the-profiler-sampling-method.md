@@ -1,25 +1,20 @@
 ---
 title: Shromažďování statistik aplikace pro službu pomocí metody vzorkování Profiler | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37e08c4b9af5c4d870be1ddf7bac0cba677f5cf3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 076a8f5fb376914998030c194d55bf505a5ed953
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947732"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794170"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Shromažďování statistik aplikace pro službu pomocí metody vzorkování profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Připojení profileru ke službě .NET**|-   [Jak: Připojit Profiler ke službě .NET ke shromažďování statistik aplikace](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Připojení profileru ke službě .NET**|-   [Jak: Připojení profileru ke službě .NET kvůli shromáždění statistik aplikace](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
 |**Přidání dat interakce vrstev**|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Připojení profileru ke službě jazyka C/C++**|-   [Jak: Připojit Profiler k nativní službě ke shromažďování statistik aplikace](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Připojení profileru ke službě jazyka C/C++**|-   [Jak: Připojení profileru k nativní službě kvůli shromáždění statistik aplikace](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
@@ -56,6 +51,3 @@ Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analýza dat vzorkování zobrazeních a sestavách  
  [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)
-
-
-

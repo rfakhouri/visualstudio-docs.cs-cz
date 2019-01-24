@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Použití příkazů prostředí s rozšířením editoru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Použití příkazů prostředí s rozšířením editoru | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b898273defe7da4cf8d082b01089c8d6476e8357
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754070"
 ---
-# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Návod: Použití příkazů prostředí s rozšířením editoru
+# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Průvodce: Použití příkazů prostředí s rozšířením editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Z balíčku VSPackage můžete přidat funkce, jako jsou příkazy do editoru. Tento návod ukazuje, jak přidat dalších úprav k zobrazení textu v editoru tak, že vyvolá příkaz nabídky.  
@@ -724,10 +719,9 @@ Z balíčku VSPackage můžete přidat funkce, jako jsou příkazy do editoru. T
   
 3.  Na **nástroje** nabídky, klikněte na tlačítko **vyvolat přidání dalších úprav**. Bublina má být zobrazena na pravé straně textového okna a měl by obsahovat text, který vypadá podobně jako následující text.  
   
-     Uživatelské_jméno  
+     YourUserName  
   
      Fourscore...  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

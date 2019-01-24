@@ -1,14 +1,9 @@
 ---
 title: Ladění kódu GPU | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: c7e77a5a-cb57-4b11-9187-ecc89acc8775
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ccad74608cc2332317a9a0c3081ef022b13a202d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f48baa33577bc383e48b6535fef0a8448836609e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765389"
 ---
 # <a name="debugging-gpu-code"></a>Ladění kódu GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
   
 -   [Použití okna úloh](../debugger/using-the-tasks-window.md)  
   
--   [Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)  
+-   [Postupy: Použití okna Paralelní sledování](../debugger/how-to-use-the-parallel-watch-window.md)  
   
 -   [Ladění vláken a procesů](../debugger/debug-threads-and-processes.md) (panelu nástrojů umístění ladění)  
   
@@ -81,7 +76,7 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Chyba: Existuje problém konfigurace u vybraný typ akcelerátoru ladění.  
  K této chybě dochází, když existuje nekonzistence mezi nastavení projektu a konfigurace, který právě ladíte na počítač. Další informace najdete v tématu [nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
-### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Chyba: V cílovém počítači není nainstalován ovladač ladicího programu pro vybraný typ akcelerátoru ladění.  
+### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Chyba: Na cílovém počítači není nainstalován ovladač ladicího programu pro vybraný typ akcelerátoru ladění.  
  K této chybě dochází, když provádíte ladění na vzdáleném počítači. Ladicí program nemůže určit až do doby běhu, zda jsou ovladače nainstalované ve vzdáleném počítači. Jsou k dispozici u výrobce grafickou kartu ovladače.  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Chyba: Časový limit zjišťování a obnovení (TDR) musí být zakázáno ve vzdálené lokalitě.  
@@ -91,6 +86,3 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
  [Návod: Ladění aplikace C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Spustit ladění GPU v sadě Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)
-
-
-

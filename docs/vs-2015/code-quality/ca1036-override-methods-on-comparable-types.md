@@ -1,13 +1,9 @@
 ---
 title: 'CA1036: Přepište metody srovnatelných typů | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1036
 - OverrideMethodsOnComparableTypes
@@ -19,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b6526a2bb4c2dda828255fd1ee4c9ef94efea741
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 127bb322a9dd5c841f71a5da49b0d9a6fceaf5e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950547"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779687"
 ---
-# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Přepište metody srovnatelných typů
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Přepište metody u srovnatelných typů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53950547"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný typ implementuje <xref:System.IComparable?displayProperty=fullName> rozhraní, nedojde k přepsání <xref:System.Object.Equals%2A?displayProperty=fullName> nebo nepřetěžuje specifické pro jazyk operátor rovnosti, nerovnosti, menší nebo větší. Pravidlo nevytváří sestavu porušení, pokud typ dědí pouze implementace rozhraní.
 
 ## <a name="rule-description"></a>Popis pravidla

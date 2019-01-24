@@ -1,23 +1,20 @@
 ---
 title: Strukturování řešení modelování | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2ba70ba4-2cea-4e01-93c2-055903d59470
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 995192b372b9c1909ad3a7f164474cfaf63f07bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 04a06b1b78c89538ec62957d1b7503f5fb96b4a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787529"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturujte svá řešení modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ V projektu vývoje modelů efektivně používat, musí být členy týmu moct p
   
 2. Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, který budeme nazývat architekturu řešení. Toto řešení se použije k vytvoření celkového návrhu systému. Bude obsahovat modely, ale žádný kód.  
   
-    Přidejte diagram vrstev s tímto řešením. V diagramu vrstev nakreslete architektura, kterou jste zvolili pro vaši aplikaci. Například může zobrazit diagram těchto vrstev a závislostí mezi nimi: prezentaci. Obchodní logika; a Data.  
+    Přidejte diagram vrstev s tímto řešením. V diagramu vrstev nakreslete architektura, kterou jste zvolili pro vaši aplikaci. Diagram může například zobrazit těchto vrstev a závislostí mezi nimi: Prezentaci. Obchodní logika; a Data.  
   
     Diagram vrstev a nové řešení sady Visual Studio můžete vytvořit ve stejnou dobu pomocí **nové UML nebo diagramu vrstev** příkaz **architektura** nabídky.  
   
@@ -83,7 +80,7 @@ V projektu vývoje modelů efektivně používat, musí být členy týmu moct p
   
    1. V řešení pro každou vrstvu přidejte projekt modelování architektury. V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel řešení, přejděte na **přidat**a potom klikněte na tlačítko **existující projekt**. Jeden modelování projektu je teď přístupná z každé řešení určené pro: architektura projektu a projekt vývoje pro každou vrstvu.  
   
-   2. Ve sdíleném modelu UML, vytvořit balíček pro každou vrstvu: V Průzkumníku řešení vyberte projekt modelování. V Průzkumníku modelů UML, klikněte pravým tlačítkem na kořenový uzel modelu, přejděte na **přidat**a potom klikněte na tlačítko **balíčku**.  
+   2. Ve sdíleném modelu UML vytvořte balíček pro jednotlivé úrovně: V Průzkumníku řešení vyberte projekt modelování. V Průzkumníku modelů UML, klikněte pravým tlačítkem na kořenový uzel modelu, přejděte na **přidat**a potom klikněte na tlačítko **balíčku**.  
   
        Každý balíček bude obsahovat diagramy UML, které popisují požadavky a návrhu odpovídající vrstvy.  
   
@@ -119,6 +116,3 @@ V projektu vývoje modelů efektivně používat, musí být členy týmu moct p
 ## <a name="see-also"></a>Viz také  
  [Správa modelů a diagramů pomocí správy verzí](../modeling/manage-models-and-diagrams-under-version-control.md)   
  [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)
-
-
-

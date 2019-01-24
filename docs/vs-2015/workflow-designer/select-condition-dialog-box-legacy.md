@@ -1,11 +1,8 @@
 ---
 title: Vyberte dialogové okno podmínku (starší verze) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
@@ -15,20 +12,20 @@ ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790494"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Dialogové okno Vybrat podmínku (starší verze)
 Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  **Vyberte podmínku** dialogovému oknu slouží k výběru podmínky deklarativního pravidla pro přiřazení vlastnosti stavu aktivity. Tyto podmínky pravidla jsou vystaveny jako vlastnosti na těchto aktivitách out-of-box Windows Workflow Foundation:  
   
-- [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
 - [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
@@ -36,7 +33,7 @@ Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v star
   
 - [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
-  Informace o tom, jak získat přístup **vyberte podmínku** dialogovém okně naleznete v tématu [postupy: vytvoření podmínky deklarativního pravidla (starší verze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Informace o tom, jak získat přístup **vyberte podmínku** dialogovém okně naleznete v tématu [jak: Vytvoření podmínky deklarativního pravidla (starší verze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
   Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte podmínku** dialogové okno.  
   
@@ -55,7 +52,7 @@ Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v star
   
 ## <a name="see-also"></a>Viz také  
  [Editor podmínek pravidla dialogové okno (starší verze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Postupy: vytvoření podmínky deklarativního pravidla (starší verze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
+ [Postupy: Vytvoření podmínky deklarativního pravidla (starší verze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
  [Pomocí podmínek v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009)   
  [Pomocí skupiny ConditionedActivityGroup aktivity](http://go.microsoft.com/fwlink?LinkID=65066)   
  [Použití aktivity IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   

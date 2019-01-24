@@ -1,14 +1,9 @@
 ---
 title: Aplikace serveru SDI | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 09713718-1376-4753-b119-26f36639693e
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea0497c7d20c0102aff3bc77cdecf87d1525a82c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777616"
 ---
 # <a name="sdi-server-applications"></a>Aplikace serveru SDI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +37,3 @@ Pokud ladíte aplikace serveru SDI, je nutné zadat `/Embedding` nebo `/Automati
 ## <a name="see-also"></a>Viz také  
  [COM a ActiveX ladění](../debugger/com-and-activex-debugging.md)   
  [Postupy: Ladění serverů modelu COM](../debugger/how-to-debug-com-servers.md)
-
-
-

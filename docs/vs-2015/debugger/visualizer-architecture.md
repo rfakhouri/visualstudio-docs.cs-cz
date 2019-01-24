@@ -1,14 +1,9 @@
 ---
 title: Architektura vizualizéru | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b7a3255b8e8b91f074308a0238719f26af6cf665
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 82dd990a44984d2e3cc1c84244fbe07ea519fdfc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789209"
 ---
 # <a name="visualizer-architecture"></a>Architektura vizualizéru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,20 +44,20 @@ Architektura vizualizéru ladicí program má dvě části:
   
 |Na straně ladicího programu|Na straně laděného procesu|  
 |-------------------|-------------------|  
-|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService rozhraní|Datový objekt|  
+|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService Interface|Datový objekt|  
   
  Uživatelské rozhraní načte data, která má být zobrazen od poskytovatele objektu, která existuje na straně ladicího programu:  
   
 |Na straně ladicího programu|Na straně laděného procesu|  
 |-------------------|-------------------|  
-|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService rozhraní|Datový objekt|  
+|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService Interface|Datový objekt|  
 |Objekt zprostředkovatele (implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)||  
   
  Na straně laděného procesu volat zdroj objektu je odpovídající objekt:  
   
 |Na straně ladicího programu|Na straně laděného procesu|  
 |-------------------|-------------------|  
-|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService rozhraní|Datový objekt|  
+|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService Interface|Datový objekt|  
 |Objekt zprostředkovatele (implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)|Objekt zdroje (odvozený od <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)|  
   
  Objekt zprostředkovatele poskytuje data objektu, která má být zobrazen na vizualizátor uživatelského rozhraní. Objekt zprostředkovatel získá dat objektů ze zdroje objektu. Objekt zprostředkovatele a objekt zdroje poskytují rozhraní API pro komunikaci data objektu mezi straně ladicího programu a na straně laděného objektu.  
@@ -94,11 +89,8 @@ Architektura vizualizéru ladicí program má dvě části:
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> —nebo—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: zápis Vizualizéru](../debugger/how-to-write-a-visualizer.md)   
+ [Postupy: Zápis Vizualizéru](../debugger/how-to-write-a-visualizer.md)   
  [Návod: Zápis Vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Návod: Zápis Vizualizéru v jazyce Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Návod: Zápis Vizualizéru v jazyce Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Informace o zabezpečení vizualizéru](../debugger/visualizer-security-considerations.md)
-
-
-

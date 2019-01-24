@@ -1,12 +1,9 @@
 ---
 title: Procházení a aktualizace modelů vrstev v programovém kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805337"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Procházení a aktualizace modelů vrstev v programovém kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Toto téma popisuje prvky a vztahy v modelech vrstvy, které můžete přejít a aktualizovat pomocí kódu programu. Další informace o diagramech vrstev z pohledu uživatele najdete v tématu [diagramy vrstev: referenční](../modeling/layer-diagrams-reference.md) a [diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md).  
+Toto téma popisuje prvky a vztahy v modelech vrstvy, které můžete přejít a aktualizovat pomocí kódu programu. Další informace o diagramech vrstev z pohledu uživatele najdete v tématu [diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md) a [diagramy vrstev: Pokyny pro](../modeling/layer-diagrams-guidelines.md).  
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Modelu popsaného v tomto tématu je fasáda na obecnějšího <xref:Microsoft.VisualStudio.GraphModel> modelu. Při psaní [rozšíření příkazu nebo gesta nabídky](../modeling/add-commands-and-gestures-to-layer-diagrams.md), použijte `Layer` modelu. Pokud píšete [rozšíření ověření vrstvy](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), je jednodušší použít `GraphModel`.  
   
@@ -134,9 +131,6 @@ public void ... (...)
  [Přidávání příkazů a gest do diagramů vrstev](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [Přidání ověřování vlastní architektury do diagramů vrstev](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Přidání vlastních vlastností do diagramů vrstev](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)   
- [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)   
+ [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)   
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

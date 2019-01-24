@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: vytvoření manifestu balíčku | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření manifestu balíčku | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800076"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Postupy: Vytvoření manifestu balíčku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nasazení nezbytných součástí pro vaši aplikaci, můžete balíček zaváděcího nástroje. Balíček zaváděcího nástroje obsahuje jeden produkt soubor manifestu ale manifest balíčku pro každé národní prostředí. Sdílené funkce přes různé lokalizované verze by měly patřit do manifestu produktu.  
   
- Další informace o manifestech balíčku najdete v tématu [postupy: vytvoření a Manifest produktu](../deployment/how-to-create-a-product-manifest.md).  
+ Další informace o manifestech balíčku najdete v tématu [jak: Vytvoření manifestu produktu](../deployment/how-to-create-a-product-manifest.md).  
   
 ## <a name="creating-the-package-manifest"></a>Vytvoření manifestu balíčku  
   
@@ -108,6 +103,3 @@ installing this package.</String>
   
 ## <a name="see-also"></a>Viz také  
  [Referenční schéma balíčku a produktu](../deployment/product-and-package-schema-reference.md)
-
-
-

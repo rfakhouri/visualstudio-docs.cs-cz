@@ -1,11 +1,8 @@
 ---
 title: Sada pravidel dialogové okno Editor (starší verze) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797486"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogové okno Editor sad pravidel (starší verze)
 Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -31,7 +28,7 @@ Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okn
 > [!NOTE]
 >  Pokud chcete otevřít soubor .rules s **Editor XML s kódováním**, je zapotřebí nejdříve zavřít okno přidružené Návrháře pracovního postupu nebo aktivity.  
   
- Informace o tom, jak získat přístup k **editoru nastavte pravidlo** dialogovém okně naleznete v tématu [postupy: vytvoření aktivitě PolicyActivity sada pravidel (starší verze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
+ Informace o tom, jak získat přístup **editoru nastavte pravidlo** dialogovém okně naleznete v tématu [jak: Vytvoření sady pravidel aktivit zásad (starší verze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
 >  Editor pravidel starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] cílit na platformu, která se používá [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] není podporováno cílení na více verzí.  
@@ -43,7 +40,7 @@ Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okn
 |**Přidat pravidlo**|Přidá novou definici pravidlo do sady pravidel.|  
 |**Delete**|Odstraní vybrané pravidlo ze sady pravidel.|  
 |**Řetězení**|Určuje, jaký typ vpřed řetězení pomocí sady pravidel. Dostupné jsou následující možnosti:<br /><br /> -   **Úplné zřetězení**, která určuje použít všechny dopředné řetězení mechanismy: implicitní, metoda přidělování a explicitní použití **aktualizace** funkce.<br />-   **Sekvenční**, která určuje nepoužívat dopředné řetězení.<br />-   **Pouze explicitní aktualizace**, která určuje provádět jenom vpřed řetězení na **aktualizace** akce.<br /><br /> Další informace o přesměrování řetězení najdete v tématu [pomocí aktivity aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|  
-|**Jméno**|Sada pravidel seznamu záhlaví sloupce. Kliknutím seřadíte seznam pravidel podle názvu.|  
+|**Název**|Sada pravidel seznamu záhlaví sloupce. Kliknutím seřadíte seznam pravidel podle názvu.|  
 |**Priorita**|Sada pravidel seznamu záhlaví sloupce. Kliknutím seřadíte seznam pravidel podle priority.|  
 |**Přehodnocení**|Sada pravidel seznamu záhlaví sloupce. Kliknutím seřadíte seznam podle typu opětovného hodnocení.|  
 |**Náhled pravidla**|Sada pravidel seznamu záhlaví sloupce. Kliknutím seřadíte seznam pravidel ve verzi preview pravidlo podmínku a akce.|  
@@ -73,13 +70,13 @@ Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okn
   
 - Aritmetické operátory: +, -, *, /, MOD  
   
-- Logické operátory: A, & &, OR, &#124; &#124;, ne,!  
+- Logické operátory: A &AMP; &AMP;, OR, &AMP;#124; &AMP;#124;, NE,!  
   
 - Bitové operátory: &&#124;  
   
   Priorita operátorů výraz následuje pravidla priorit operátor C#.  
   
-  Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Zastavení a aktualizace funkcí  
  **Potom akce:** a **Else akce:** výrazy podporují **zastaví** a **aktualizace** funkce. Použít **zastaví** funkci, zadejte **Zastavit** do **pak akce:** nebo **Else akce:** textového pole. **Zastaví** akce způsobí spuštění sady pravidel se okamžitě zastavit a ovládací prvek vrátí volajícímu kódu. Můžete použít **aktualizace** funkce s vpřed řetězení.  

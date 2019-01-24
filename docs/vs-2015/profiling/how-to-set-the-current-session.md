@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: nastavení aktuální relace | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Nastavení aktuální relace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
 - Performance Explorer, selecting sessions
@@ -21,15 +16,15 @@ ms.assetid: a593e551-18ec-46fd-bfd5-8a045165a334
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7bb3913ce8fe7903f6da19b76bbc1a808372c86d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726420"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760389"
 ---
-# <a name="how-to-set-the-current-session"></a>Postupy: nastavení aktuální relace
+# <a name="how-to-set-the-current-session"></a>Postupy: Nastavení aktuální relace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete otevřít více výkonnostních relací v **prohlížeč výkonu**a pak můžete vybrat jednu z vidět výkonnostní relace nastavit jako aktuální relaci.  
@@ -51,6 +46,3 @@ Můžete otevřít více výkonnostních relací v **prohlížeč výkonu**a pak
  [Okno Prohlížeč výkonu](../profiling/performance-explorer-window.md)   
  [Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)   
  [Přehled výkonnostní relace](../profiling/performance-session-overview.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Vytváření vlastních zobrazení nativních objektů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756402"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Vytváření vlastních zobrazení nativních objektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  Například následující obrázek ukazuje proměnné typu [Windows::UI::Xaml::Controls::TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) , která se zobrazí v ladicím programu bez jakékoli vlastní vizualizace.  
 
- ![Textové pole Výchozí vizualizace](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
+ ![TextBox default visualization](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
  Zvýrazněný řádek ukazuje `Text` vlastnost `TextBox` třídy. Komplexní hierarchii tříd ztěžuje vyhledání tuto hodnotu; ladicí program navíc neví, jak interpretovat typ vlastního řetězce používané tímto objektem, takže nevidíme řetězec uvnitř textového pole nelze zobrazit.  
 
  Stejné `TextBox` vypadá mnohem jednodušší n v okně proměnné, když se použijí vlastní pravidla vizualizace. Současně lze zobrazit důležité členy třídy a ladicí program ukazuje základní hodnotu řetězce typu vlastního řetězce.  
 
- ![Textové pole dat pomocí vizualizéru](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
+ ![TextBox data using visualizer](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
 
 ##  <a name="BKMK_Using_Natvis_files"></a> Použití souborů Natvis  
  .natvis soubory jsou soubory XML s příponou .natvis. Schéma je definována v **%VSINSTALLDIR%\Xml\Schemas\natvis.xsd**.  
@@ -323,7 +318,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  `CStringT` Objektu bude vypadat takto:  
 
- ![Element CStringT DisplayString](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
+ ![CStringT DisplayString element](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
 
  Zobrazí vizualizaci `CStringT` objekt v okně proměnné následujícím způsobem:  
 
@@ -338,7 +333,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
  Všimněte si ikony lupy vedle hodnoty níže. Kliknete na ikonu se spustí vizualizátor textu, který zobrazí řetězec, který `m_pszData` odkazuje na.  
 
- ![CStringT dat se vizualizér StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
+ ![CStringT data with StringView visualizer](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
 >  Všimněte si, že výraz `{m_pszData,su}` obsahuje specifikátor formátu jazyka C++ `su` k zobrazení hodnoty jako řetězce Unicode. Zobrazit [specifikátory formátu v jazyce C++](../debugger/format-specifiers-in-cpp.md) Další informace.  
@@ -537,7 +532,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Rozšíření ExpandedItem  
  `ExpandedItem` Elementu lze použít ke generování agregovaných podřízených zobrazení zobrazením vlastností základních tříd nebo datových členů, jako kdyby byly podřízené prvky typu visualized. Zadaný výraz je vyhodnocen a podřízené uzly výsledku jsou připojeny k seznamu podřízených vizualizovaného typu. Předpokládejme například, že máme typ inteligentního ukazatele `auto_ptr<vector<int>>` což obvykle se zobrazí jako:  
 
- ![Automatické&#95;ptr&#60;vektoru&#60;int&#62; &#62; výchozí rozšíření](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![auto&#95;ptr&#60;vector&#60;int&#62;&#62; default expansion](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
 
  Chcete-li zobrazit hodnoty vektoru, máte dvě úrovně v okně proměnných prostřednictvím člena _Myptr. Tak, že přidáte `ExpandedItem` element, můžete eliminovat `_Myptr` proměnné z hierarchie a přímo zobrazit prvky vektoru::  
 
@@ -551,7 +546,7 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 
 ```  
 
- ![Automatické&#95;ptr&#60;vektoru&#60;int&#62; &#62; rozšíření ExpandedItem](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![auto&#95;ptr&#60;vector&#60;int&#62;&#62; ExpandedItem expansion](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
 
  Následující příklad ukazuje, jak se spojují vlastnosti ze základní třídy v odvozené třídě. Předpokládejme, `CPanel` třída odvozena z `CFrameworkElement`. Namísto opakování vlastností, které pocházejí ze základní `CFrameworkElement` třídy, `ExpandedItem` uzel umožňuje tyto vlastnosti, které se mají připojit k seznamu podřízených třídy `CPanel` třídy. **Nd** formátovací řetězec, který vypne odpovídající vizualizace pro odvozenou třídu, je nutný zde. V opačném případě výraz `*(CFrameworkElement*)this` způsobí, že `CPanel` vizualizaci. tím bude znovu použita, protože typ odpovídajících pravidel vizualizace výchozí považuje za nejvhodnější. Použití **nd** specifikátor formátu dává pokyn ladicímu programu používat vizualizaci základní třídy nebo rozšíření výchozí základní třídy, pokud výchozí třída neobsahuje vizualizaci.  
 
@@ -632,12 +627,9 @@ Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual S
 </Type>  
 ```  
 
- Vidíte příklad UIVisualizer v rozšíření Image Watch použít k zobrazení rastrové obrázky v paměti: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Můžete zobrazit příklad UIVisualizer v rozšíření Image Watch použít k zobrazení rastrové obrázky v paměti: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>CustomVisualizer – element  
  `CustomVisualizer` je bod rozšíření, která určuje příponu VSIX, který píšete pro řízení vizualizaci v kódu, který běží v sadě Visual Studio. Další informace o psaní rozšíření VSIX, naleznete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Zápis vlastního vizualizéru je mnohem více práce než psaní definice natvis XML, ale můžete libovolně z omezení, o jaké natvis podporuje nebo nepodporuje. Vlastní vizualizátory mají přístup k úplné sadě rozšiřitelností ladicího programu rozhraní API, která slouží k dotazování a upravit laděném procesu nebo komunikaci s jinými částmi sady Visual Studio.  
 
  Můžete použít `Condition`, `IncludeView`, a `ExcludeView` atributy u elementů CustomVisualizer.
-
-
-

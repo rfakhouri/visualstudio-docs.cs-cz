@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Ladění webového formuláře | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Ladění webového formuláře | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7024a9abc58117bf28ed78de107b1c17ddad601f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee796418658ec0825a76d60607b77813f84e4144
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747260"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777894"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>Návod: Ladění webového formuláře
+# <a name="walkthrough-debugging-a-web-form"></a>Průvodce: Ladění webového formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, označované také jako webového formuláře. To ukazuje, jak spustit a zastavit provádění, nastavit zarážky a zkontrolovat proměnné v **Watch** okna.  
@@ -43,7 +38,7 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
 > [!NOTE]
 >  K dokončení tohoto návodu, musí mít oprávnění správce na počítači serveru. Ve výchozím nastavení [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu, aspnet_wp.exe nebo w3wp.exe, spouští jako [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Chcete-li ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], musí mít oprávnění správce na počítači kde [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ji spustí. Další informace najdete v tématu [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).  
   
- Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-create-the-web-form"></a>Chcete-li vytvořit webový formulář  
   
@@ -105,7 +100,7 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     Zobrazí se červená tečka a text řádku se zvýrazní červeně. Tato červená tečka představuje zarážku. Při spuštění aplikace pomocí ladicího programu v tomto místě ladicí program přeruší provádění, když je tento řádek kódu dosažen. Poté lze zobrazit stav aplikace a ladit ji. Další informace najdete v tématu [zarážky](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Zobrazí se červená tečka a text řádku se zvýrazní červeně. Tato červená tečka představuje zarážku. Při spuštění aplikace pomocí ladicího programu v tomto místě ladicí program přeruší provádění, když je tento řádek kódu dosažen. Poté lze zobrazit stav aplikace a ladit ji. Další informace najdete v tématu [zarážky](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
@@ -175,6 +170,3 @@ Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../incl
   
 ## <a name="see-also"></a>Viz také  
  [Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)
-
-
-

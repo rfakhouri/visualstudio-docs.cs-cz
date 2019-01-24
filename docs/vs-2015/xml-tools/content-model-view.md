@@ -1,25 +1,20 @@
 ---
 title: Zobrazení modelu obsahu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790598"
 ---
 # <a name="content-model-view"></a>Zobrazení modelu obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Zobrazení modelu obsahu poskytuje grafické znázornění schématu místní a 
   
  Model obsahu uzlu je reprezentován rozšíření grafické stromu s prvky a atributy vyskytující se jako uzly stromu. Ve výchozím nastavení je rozšířit jenom jedna úroveň. Další informace, jako je například tvůrce, názvy typů, skupiny a další kontejnery jsou umístěny v svislá čára (při rozbalení) podél elementy a atributy, které jsou uzavřete. Když dvakrát kliknete na svislý pruh, stane se vodorovný a sbalí stromu. Když dvakrát kliknete na vodorovný pruh, stane se svislé a strom roste směrem. Výběr svislá čára vybere všechny uzly v kontejneru. Rozšíření se zobrazí na pravé straně uzlu, pokud element můžete rozbalit nebo sbalit.  
   
- Pokud návrhové ploše je prázdné, jsou uvedeny editoru XML, Průzkumníka schémat XML a vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení návrháře XSD. Pokud sadě schémat obsahuje chyby, na konci seznamu se zobrazí následující text: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."  
+ Pokud návrhové ploše je prázdné, jsou uvedeny editoru XML, Průzkumníka schémat XML a vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení návrháře XSD. Pokud sadě schémat obsahuje chyby, zobrazí se na konci seznamu následující text: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."  
   
 ## <a name="breadcrumb-bar"></a>Navigační panel  
  Na panelu navigace s popisem cesty v dolní části zobrazení modelu obsahu zobrazuje umístění vybraného uzlu v sadě schémat.  
@@ -79,7 +74,7 @@ Zobrazení modelu obsahu poskytuje grafické znázornění schématu místní a 
 ## <a name="xsd-designer-toolbar"></a>Panel nástrojů návrháře XSD  
  Při aktivním zobrazení modelu obsahu jsou povoleny následující tlačítka panelu nástrojů návrháře XSD.  
   
- ![Panel nástrojů návrháře schémat XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")  
+ ![XML Schema Designer Toolbar](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")  
   
 |Možnost|Popis|  
 |------------|-----------------|  
@@ -123,6 +118,3 @@ Zobrazení modelu obsahu poskytuje grafické znázornění schématu místní a 
   
 ## <a name="see-also"></a>Viz také  
  [Pracovní prostor Návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

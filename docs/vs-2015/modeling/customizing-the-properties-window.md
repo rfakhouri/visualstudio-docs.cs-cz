@@ -1,25 +1,22 @@
 ---
 title: Přizpůsobení okna Vlastnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845742"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782259"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
 ## <a name="names-descriptions-and-categories"></a>Názvy, popisy a kategorie  
  **Název a zobrazovaný název**. Zobrazovaný název vlastnosti v definici vlastnosti domény je název, který se zobrazí za běhu v okně Vlastnosti. Naopak název se používá při psaní kódu programu aktualizovat vlastnost. Název musí být správná alfanumerický název CLR, ale zobrazovaný název nemůže obsahovat mezery.  
   
- Pokud název vlastnosti v definici DSL, své zobrazované jméno se automaticky nastaví na kopii tohoto názvu. Pokud píšete cased název Pascal, například "FuelGauge", zobrazovaný název bude automaticky obsahovat mezeru: "Posílit měřidla". Nicméně zobrazovaný název explicitně nastavena na jinou hodnotu.  
+ Pokud název vlastnosti v definici DSL, své zobrazované jméno se automaticky nastaví na kopii tohoto názvu. Pokud píšete cased název Pascal, například "FuelGauge", zobrazovaný název bude automaticky obsahovat mezery: "Posílit měřidla". Nicméně zobrazovaný název explicitně nastavena na jinou hodnotu.  
   
  **Popis**. Popis doménová vlastnost, která se zobrazí na dvou místech:  
   
@@ -46,7 +43,7 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
   
  Ve tvarech můžete zveřejnit **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** a **FillGradientMode** vlastnosti. Na konektory můžete zveřejnit **barva**`,`**TextColor**, **DashStyle**, a **tloušťka** vlastnosti. V diagramech můžete zveřejnit **FillColor** a **TextColor** vlastnosti.  
   
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Předávání: Zobrazení vlastností souvisejících elementů  
+## <a name="forwarding-displaying-properties-of-related-elements"></a>Předávání dál: Zobrazování vlastností souvisejících elementů  
  Když uživatel tohoto kódu DSL vybere elementu v modelu, zobrazí se tento prvek vlastnosti v okně Vlastnosti. Můžete však také zobrazit vlastnosti zadané elementy související. To je užitečné, pokud jste definovali skupiny prvků, které spolupracují. Například můžete třeba definovat main element a volitelný prvek modulu plug-in. Pokud hlavní prvek je namapovaná na obrazec a druhý není, je vhodné zobrazíte jeho vlastnosti, jako by byly na jeden element.  
   
  Tento efekt je s názvem *vlastnost předávání*, a to se stane automaticky v několika případech. V jiných případech může dosáhnout vlastnost předávání definováním popisovač typu domény.  
@@ -323,6 +320,3 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ## <a name="see-also"></a>Viz také  
  [Navigace v modelu a aktualizace modelu v kódu programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

@@ -1,21 +1,17 @@
 ---
 title: Manifest do kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758215"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788172"
 ---
 # <a name="manifest-to-code"></a>Manifest do kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +28,13 @@ Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .im
 ||||  
 |-|-|-|  
 |**Název přepínače**|**Poznámky**|**Požadované nebo volitelné**|  
-|Volba/manifest|Cesta k manifestu image chcete použít k vytvoření nebo aktualizaci kódu obálky.|Požadováno|  
+|/manifest|Cesta k manifestu image chcete použít k vytvoření nebo aktualizaci kódu obálky.|Požadováno|  
 |/Language|Jazyk, ve které se mají vygenerovat obálku kódu.<br /><br /> Platné hodnoty: CPP, C++, CS, CSharp, C#, VB nebo VSCT hodnoty jsou malá a velká písmena.<br /><br /> Pro jazyk VSCT možnost /monikerClass, /classAccess a/Namespace možnosti jsou ignorovány.|Požadováno|  
-|/imageIdClass|Název imageIdClass a přidružený soubor vytvořené nástrojem. Pro možnost jazyka C++ jsou generovány pouze soubory hlaviček.<br /><br /> Výchozí hodnota: \<cesta k manifestu > \MyImageIds.\< Lang ext, přípona >|volitelná,|  
-|/monikerClass|Název monikerClass a přidružený soubor vytvořené nástrojem. Pro možnost jazyka C++ jsou generovány pouze soubory hlaviček. To se ignoruje pro VSCT jazyk.<br /><br /> Výchozí hodnota: \<cesta k manifestu > \MyMonikers.\< Lang ext, přípona >|volitelná,|  
-|/classAccess|Modifikátor přístupu pro imageIdClass a monikerClass. Ujistěte se, že modifikátor přístupu je platná pro daný jazyk. To se ignoruje pro možnost VSCT jazyka.<br /><br /> Výchozí: veřejné|volitelná,|  
-|/ Namespace|Obor názvů definovaný v obálku kódu. To se ignoruje pro možnost VSCT jazyka. Buď "." nebo '::' je platný obor názvů oddělovače, bez ohledu na to možnost zvoleném jazyce.<br /><br /> Výchozí: MyImages|volitelná,|  
-|/ nologo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
+|/imageIdClass|Název imageIdClass a přidružený soubor vytvořené nástrojem. Pro možnost jazyka C++ jsou generovány pouze soubory hlaviček.<br /><br /> Výchozí hodnota: \<Cesta k manifestu > \MyImageIds. \<Lang ext, přípona >|volitelná,|  
+|/monikerClass|Název monikerClass a přidružený soubor vytvořené nástrojem. Pro možnost jazyka C++ jsou generovány pouze soubory hlaviček. To se ignoruje pro VSCT jazyk.<br /><br /> Výchozí hodnota: \<Cesta k manifestu > \MyMonikers. \<Lang ext, přípona >|volitelná,|  
+|/classAccess|Modifikátor přístupu pro imageIdClass a monikerClass. Ujistěte se, že modifikátor přístupu je platná pro daný jazyk. To se ignoruje pro možnost VSCT jazyka.<br /><br /> Výchozí hodnota: Public|volitelná,|  
+|/ Namespace|Obor názvů definovaný v obálku kódu. To se ignoruje pro možnost VSCT jazyka. Buď "." nebo '::' je platný obor názvů oddělovače, bez ohledu na to možnost zvoleném jazyce.<br /><br /> Výchozí hodnota: MyImages|volitelná,|  
+|/noLogo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
 |/?|Vytiskne informace nápovědy.|volitelná,|  
 |/help|Vytiskne informace nápovědy.|volitelná,|  
   
@@ -48,7 +44,7 @@ Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .im
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/namespace: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Poznámky  
   
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

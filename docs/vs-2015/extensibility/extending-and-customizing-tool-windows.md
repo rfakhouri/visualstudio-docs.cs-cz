@@ -1,27 +1,22 @@
 ---
 title: Rozšíření a přizpůsobení nástrojů Windows | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7aac774f64d79d2d28cc690550abb7a84b7d3674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797716"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Rozšíření a přizpůsobení panelů nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ Visual Studio poskytuje několik různých typů systému windows, například o
   
  Nástroj podokna můžete hostovat uživatelské ovládací prvky WPF a podporovat panely nástrojů. Je možné přepsat <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> vlastnost vrátí popisovač hostovaného ovládacího prvku.  
   
- Do okna nástrojů můžete přidat řadu různých funkcí. Například můžete přidat panel nástrojů: [přidání panelu nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md) nebo z místní nabídky: [Přidání místní nabídky v okně nástroje](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Můžete přidat ovládací prvek pro hledání, který umožňuje vyhledávat položky uvnitř okna nástroje: [přidání vyhledávání do panelu nástrojů](../extensibility/adding-search-to-a-tool-window.md).  
+ Do okna nástrojů můžete přidat řadu různých funkcí. Můžete například přidat panel nástrojů: [Přidání panelu nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md) nebo z místní nabídky: [Přidání místní nabídky v okně nástroje](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Můžete přidat ovládací prvek pro hledání, který umožňuje vyhledávat položky uvnitř okna nástroje: [Přidání vyhledávání do panelu nástrojů](../extensibility/adding-search-to-a-tool-window.md).  
   
- Můžete odebírat události okna nástroje: [přihlášení k odběru události](../extensibility/subscribing-to-an-event.md).  
+ Vám může přihlásit k odběru událostí okna nástroje: [Přihlášení k odběru události](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extending-existing-tool-windows"></a>Rozšíření existující nástroje Windows  
  Můžete přidat informace o okno nástroje na novou **možnosti** stránky a nové nastavení na **vlastnosti** stránky, zapisovat **seznamu úkolů** a **výstup**  systému windows. Další informace najdete v tématu [rozšíření vlastností, seznamu úloh, výstup a možnosti Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) a [rozšíření vlastností, seznamu úloh, výstup a možnosti Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
@@ -55,4 +50,3 @@ Visual Studio poskytuje několik různých typů systému windows, například o
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md)
-

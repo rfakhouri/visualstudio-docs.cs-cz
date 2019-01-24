@@ -1,13 +1,9 @@
 ---
 title: 'CA1013: Přetižte operátor rovnosti při přetížení operátorů sčítání a odečítání | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OverrideOperatorEqualsOnOverridingAddAndSubtract
 - OverrideOperatorEqualsOnOverloadingAddAndSubtract
@@ -23,14 +19,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9958a853c6b463283d9e917256613ce7b58b6f95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da909b6c9917793ef958ec88f208054e6499577b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784129"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Přetižte operátor rovnosti při přetížení operátorů sčítání a odečítání
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Přetižte operátor rovnosti společně s přetížením operátorů sčítání a odečítání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,7 +36,7 @@ ms.locfileid: "53948921"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný typ implementuje operátory sčítání a odčítání, aniž by implementoval operátor rovnosti.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -1,14 +1,9 @@
 ---
 title: Visual Studio SDK | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64506ca544dd3811864358f9c928f6893dc8448
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5ae83be9e2013a8aef1f9e17f4ba35cde4f7d9bb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753735"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,8 +77,8 @@ Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo syst
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Postupy: migrace projektů rozšíření do sady Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
- [Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Postupy: Migrace projektů rozšíření do sady Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
+ [NEJČASTĚJŠÍ DOTAZY: Převádění doplňků na rozšíření VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Správa více vláken ve spravovaném kódu](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)   
  [Přidání příkazů na panely nástrojů](../extensibility/adding-commands-to-toolbars.md)   
@@ -103,4 +98,3 @@ Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo syst
  [Podpora pro sadu Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Archiv](../extensibility/archive.md)   
  [Referenční dokumentace sady Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)
-

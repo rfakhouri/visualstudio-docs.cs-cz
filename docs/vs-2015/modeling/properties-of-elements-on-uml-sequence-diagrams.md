@@ -1,12 +1,9 @@
 ---
 title: Vlastnosti elementů v UML sekvenční diagramy | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.properties
 - vs.teamarch.sequencediagram.shapes.properties
@@ -17,13 +14,13 @@ ms.assetid: 475c10f3-a2d2-4a1e-b366-dc28997d437e
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 01d63e39967df361d87ff0182b1c85b6ecd2fdb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6de88572b685b5a432b4f73b125a464f125218b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802109"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>Vlastnosti elementů v sekvenčních diagramech UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +28,14 @@ ms.locfileid: "51793890"
 Každý prvek v diagramu v sekvenčním diagramu UML, má vlastnosti. Pokud chcete zobrazit vlastnosti elementu, klikněte pravým tlačítkem na elementu v diagramu nebo v **Průzkumníku modelů UML** a potom klikněte na tlačítko **vlastnosti**. Vlastnosti se zobrazí v **vlastnosti** okna.  
   
 > [!NOTE]
->  Toto téma se věnuje vlastnosti elementů v sekvenčních diagramech UML. Další informace o tom, jak číst sekvenčních diagramech UML, naleznete v tématu [sekvenční diagramy UML: referenční](../modeling/uml-sequence-diagrams-reference.md). Další informace o tom, jak nakreslit sekvenční diagramy UML, naleznete v tématu [sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Toto téma se věnuje vlastnosti elementů v sekvenčních diagramech UML. Další informace o tom, jak číst sekvenčních diagramech UML, naleznete v tématu [UML Sequence Diagrams: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md). Další informace o tom, jak nakreslit sekvenční diagramy UML, naleznete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Vlastnosti elementů  
   
 |Vlastnost|Výchozí|Prvek|Popis|  
 |--------------|-------------|-------------|-----------------|  
-|**Jméno**|Výchozí název|Všechny|Určuje element.|  
-|**Kvalifikovaný název**|Balíček:: název|Všechny|Jednoznačně identifikuje elementu. Předponu úplný název balíčku, který jej obsahuje.|  
+|**Název**|Výchozí název|Všechny|Určuje element.|  
+|**Kvalifikovaný název**|Balíček:: Název|Všechny|Jednoznačně identifikuje elementu. Předponu úplný název balíčku, který jej obsahuje.|  
 |**Pracovní položky**|související 0|Všechny|Počet pracovních položek, které jsou spojené s tímto prvkem. Přidružení pracovních položek, naleznete v tématu [propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md).|  
 |**Popis**|(prázdné)|Všechny|Můžete nastavit obecné poznámky o položce tady.|  
 |**Barva**|(výchozí nastavení pro typ prvku)|Životnosti, zprávy|Barva obrazce. Toto je vlastnost obrazce, místo elementu se zobrazí.|  
@@ -54,9 +51,6 @@ Každý prvek v diagramu v sekvenčním diagramu UML, má vlastnosti. Pokud chce
 |**Zprávy**|(prázdné)|Vezměte v úvahu a<br /><br /> Ignorovat kombinované fragmenty|Zprávy, které jsou považovány za nebo ignorovat v tomto fragmentu.|  
   
 ## <a name="see-also"></a>Viz také  
- [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
- [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
+ [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Popis toku řízení pomocí fragmentů v sekvenčních diagramech UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)
-
-
-

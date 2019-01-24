@@ -1,27 +1,22 @@
 ---
 title: Referenční dokumentace schématu VSCT XML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755868"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797301"
 ---
 # <a name="vsct-xml-schema-reference"></a>XML schéma VSCT – referenční informace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +37,11 @@ Poskytuje tabulku elementy schématu tabulky kompilátoru příkaz, povolené po
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
-- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xCB, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }  
   
   Komentáře XML mohou být použity, ale operace round-trip grafické uživatelské rozhraní (GUI) nástroje může zrušit je. Obsah \<Poznámka > elementy zaručeno udržovat bez ohledu na formát.  
   
-## <a name="schema-hierarchy"></a>Hierarchie schémat  
+## <a name="schema-hierarchy"></a>Schema Hierarchy  
  Souboru .vsct má následující hlavní prvky.  
   
  [CommandTable – element](../extensibility/commandtable-element.md)  
@@ -82,4 +77,3 @@ Poskytuje tabulku elementy schématu tabulky kompilátoru příkaz, povolené po
 ## <a name="see-also"></a>Viz také  
  [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Směrování příkazů v balíčcích VSPackage](../extensibility/internals/command-routing-in-vspackages.md)
-

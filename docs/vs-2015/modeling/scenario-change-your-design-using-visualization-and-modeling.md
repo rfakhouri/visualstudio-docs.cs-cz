@@ -1,13 +1,8 @@
 ---
 title: 'Scénář: Změna návrhu pomocí vizualizace a modelování | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
 ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
@@ -21,13 +16,13 @@ ms.assetid: ccc80825-a4a0-44fa-a0bb-f95254785a3b
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4dface8e157e44aa09b271446dba68b2779d0a6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5392548e094edbdc5c946c1b0389de697216b9eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745761"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804254"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 - [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)  
   
 ##  <a name="ScenarioOverview"></a> Přehled scénářů  
- Tento scénář popisuje epizody z životního cyklu vývoje softwaru dvou fiktivních společností: večeře nyní a Lucerne Publishing. Společnost dinner Now poskytuje služby pro doručování webového pokrmů v Seattlu. Zákazníci mohou objednat jídlo a zaplatit za ně na webu Dinner Now Web. Objednávky jsou potom odeslány příslušné místní restauraci pro dodání. Společnost Lucerne Publishing, společnost působící v New Yorku, provozuje několik podniků, vypnout a na webu. Například spuštění webové stránky kde můžou zákazníci posílat své recenze na restauraci.  
+ Tento scénář popisuje epizody z životního cyklu vývoje softwaru dvou fiktivních společností: Společnost dinner Now a Lucerne publikování. Společnost dinner Now poskytuje služby pro doručování webového pokrmů v Seattlu. Zákazníci mohou objednat jídlo a zaplatit za ně na webu Dinner Now Web. Objednávky jsou potom odeslány příslušné místní restauraci pro dodání. Společnost Lucerne Publishing, společnost působící v New Yorku, provozuje několik podniků, vypnout a na webu. Například spuštění webové stránky kde můžou zákazníci posílat své recenze na restauraci.  
   
  Společnost Lucerne nedávno odkoupila web Dinner Now a chce provést následující změny:  
   
@@ -108,7 +103,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
   
-- [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 - [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
@@ -120,7 +115,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Udržování kódu v souladu s návrhem](#ValidatingCode)  
   
-- [Popište logickou architekturu: diagramy vrstev](#DescribeLayers)  
+- [Popište logickou architekturu: Diagramy vrstev](#DescribeLayers)  
   
 - [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)  
   
@@ -175,9 +170,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagram**|**Popisuje**|  
 |-----------------|-------------------|  
-|*Použijte diagram případu (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|– Aktivity, které podporuje systém Dinner Now<br />-Osoby a externí systémy, které provádějí činnosti<br />-Hlavní součásti systému, které podporují jednotlivé aktivity<br />-Části obchodních procesů, které jsou mimo rozsah aktuálního systému, například dodávky potravin|  
-|*Diagram činnosti (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)|Tok kroků, ke kterým dochází, když zákazník vytvoří objednávku|  
-|*Diagram tříd (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|Obchodní entity a termíny, které se používají v diskusi a vztazích mezi těmito entitami. Například objednávka a položka nabídky jsou součástí slovníku v tomto scénáři.|  
+|*Použijte diagram případu (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|– Aktivity, které podporuje systém Dinner Now<br />-Osoby a externí systémy, které provádějí činnosti<br />-Hlavní součásti systému, které podporují jednotlivé aktivity<br />-Části obchodních procesů, které jsou mimo rozsah aktuálního systému, například dodávky potravin|  
+|*Diagram činnosti (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)|Tok kroků, ke kterým dochází, když zákazník vytvoří objednávku|  
+|*Diagram tříd (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|Obchodní entity a termíny, které se používají v diskusi a vztazích mezi těmito entitami. Například objednávka a položka nabídky jsou součástí slovníku v tomto scénáři.|  
   
  Společnost Lucerne například vytvoří následující diagram případu použití k porozumění úloh prováděných na webu Dinner Now Web a kdo je provede:  
   
@@ -202,13 +197,13 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagram**|**Popisuje**|  
 |-----------------|-------------------|  
-|*Použijte diagram případu (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|Nový případ použití pro "Napsat recenzi restaurace"|  
-|*Diagram činnosti (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)|Kroky, které nastanou, pokud zákazník chce napsat recenzi restaurace|  
-|*Diagram tříd (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|Data, která je požadována k uložení recenze|  
+|*Použijte diagram případu (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|Nový případ použití pro "Napsat recenzi restaurace"|  
+|*Diagram činnosti (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)|Kroky, které nastanou, pokud zákazník chce napsat recenzi restaurace|  
+|*Diagram tříd (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|Data, která je požadována k uložení recenze|  
   
  Například následující diagram případu použití zahrnuje nový případ použití "Napsat recenzi" k reprezentaci nový požadavek. Je zvýrazněn oranžově v diagramu pro snazší identifikaci:  
   
- ![Diagram případu použití UML](../modeling/media/uml-writerev.png "UML_WriteRev")  
+ ![UML Use Case Diagram](../modeling/media/uml-writerev.png "UML_WriteRev")  
   
  **Diagram případu použití UML**  
   
@@ -244,10 +239,10 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 ###  <a name="DeterminingChanges"></a> Určení změn ve stávajícím systému  
  Společnost dinner Now musí odhadnout náklady na splnění nového požadavku. To zčásti závisí na tom, jak moc tato změna ovlivní ostatní části systému. Aby pomohl ostatním pochopit, jeden z vývojářů aplikace večeře nyní z existujícího kódu vytvoří tyto mapy a diagramy:  
   
-|**Mapování nebo diagramu**|**Ukazuje**|  
+|**Mapování nebo diagramu**|**Shows**|  
 |------------------------|---------------|  
 |*Mapy kódu*<br /><br /> Další informace:<br /><br /> -   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Závislosti a jiné vztahy v kódu.<br /><br /> Například web Dinner Now může začít kontrolou map kódu sestavení přehledné informace o sestavení a jejich závislosti. Mohou se ponořit do mapy pro prozkoumání oborů názvů a třídy v těchto sestaveních.<br /><br /> Společnost dinner Now může také vytváření map prozkoumat určité oblasti a další druhy vztahů v kódu. Používají Průzkumníka řešení najít a vybrat oblasti a vztahy, které je zajímají.|  
-|*Diagram třídy založený na kódu*<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu|  
+|*Diagram třídy založený na kódu*<br /><br /> Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu|  
   
  Například vývojář vytvoří mapu kódu. Nastaví oblast pro zaměření na oblasti, které budou ovlivněny novým scénářem. Tyto oblasti jsou vybrané a zvýrazněné v mapě:  
   
@@ -267,11 +262,11 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagramy**|**Popisuje**|  
 |------------------|-------------------|  
-|*Diagram činnosti (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)|Tok kroků, ke kterým dochází, když systém zjistí, že zákazník zadá objednávku vytvoří v restauraci znovu, výzvou zákazníka, aby napsal recenzi.|  
-|*Diagram tříd (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|Logické třídy a jejich vztahy. Například je přidána nová třída popisující **revize** a jeho vztahy s ostatními entitami, jako například **restaurace**, **nabídky**, a **zákazníka**.<br /><br /> Pokud chcete přidružit recenze k zákazníkovi, systém musí ukládat informace o zákazníkovi. Diagram tříd UML může pomoci objasnit tyto podrobnosti.|  
-|*Diagram třídy založený na kódu*<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu.|  
-|*Diagram součásti (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)|Základní částí systému, například webu Dinner Now a jejich rozhraní. Tato rozhraní definují, jak komponenty interagují navzájem pomocí metod nebo služeb, které poskytují a spotřebovávají.|  
-|*Sekvenční diagram (UML)*<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|Sekvence interakcí mezi instancemi.|  
+|*Diagram činnosti (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)|Tok kroků, ke kterým dochází, když systém zjistí, že zákazník zadá objednávku vytvoří v restauraci znovu, výzvou zákazníka, aby napsal recenzi.|  
+|*Diagram tříd (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|Logické třídy a jejich vztahy. Například je přidána nová třída popisující **revize** a jeho vztahy s ostatními entitami, jako například **restaurace**, **nabídky**, a **zákazníka**.<br /><br /> Pokud chcete přidružit recenze k zákazníkovi, systém musí ukládat informace o zákazníkovi. Diagram tříd UML může pomoci objasnit tyto podrobnosti.|  
+|*Diagram třídy založený na kódu*<br /><br /> Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu.|  
+|*Diagram součásti (UML)*<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)|Základní částí systému, například webu Dinner Now a jejich rozhraní. Tato rozhraní definují, jak komponenty interagují navzájem pomocí metod nebo služeb, které poskytují a spotřebovávají.|  
+|*Sekvenční diagram (UML)*<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|Sekvence interakcí mezi instancemi.|  
   
  Například následující diagram komponent ukazuje novou komponentu, která je součástí součásti webu Dinner Now. Komponenta ReviewProcessing zpracovává funkce vytváření recenzí a je zvýrazněna oranžově:  
   
@@ -290,7 +285,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagram**|**Popisuje**|  
 |-----------------|-------------------|  
-|*Diagram vrstvy*<br /><br /> Další informace:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|Logická architektura kódu.<br /><br /> Vrstva diagram organizuje a mapuje artefakty v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení účelem abstrahování skupin nazvaných *vrstvy*. Tyto vrstvy určují role, úlohy nebo funkce, které tyto artefakty provádějí v systému.<br /><br /> Diagramy vrstev jsou užitečné pro popis zamýšleného návrhu systému a ověřování vyvíjeného kódu ve srovnání s tímto návrhem.<br /><br /> Chcete-li vytvořit vrstvy, přetáhněte položky z Průzkumníku řešení, map kódu, zobrazení tříd a prohlížeče objektů. Chcete-li nakreslit nové vrstvy, použijte panel nástrojů nebo kliknutím pravým tlačítkem na plochu diagramu.<br /><br /> Chcete-li zobrazit existující závislosti, klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **generovat závislosti**. K určení zamýšlených závislostí, nakreslete nové závislosti.|  
+|*Diagram vrstvy*<br /><br /> Další informace:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|Logická architektura kódu.<br /><br /> Vrstva diagram organizuje a mapuje artefakty v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení účelem abstrahování skupin nazvaných *vrstvy*. Tyto vrstvy určují role, úlohy nebo funkce, které tyto artefakty provádějí v systému.<br /><br /> Diagramy vrstev jsou užitečné pro popis zamýšleného návrhu systému a ověřování vyvíjeného kódu ve srovnání s tímto návrhem.<br /><br /> Chcete-li vytvořit vrstvy, přetáhněte položky z Průzkumníku řešení, map kódu, zobrazení tříd a prohlížeče objektů. Chcete-li nakreslit nové vrstvy, použijte panel nástrojů nebo kliknutím pravým tlačítkem na plochu diagramu.<br /><br /> Chcete-li zobrazit existující závislosti, klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **generovat závislosti**. K určení zamýšlených závislostí, nakreslete nové závislosti.|  
   
  Například následující diagram vrstvy popisuje závislosti mezi vrstvami a počet artefaktů, které jsou spojené s každou vrstvou:  
   
@@ -375,19 +370,19 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 ##  <a name="UpdatingSystem"></a> Aktualizace systému pomocí vizualizace a modelování  
  Společnost Lucerne a Dinner Now musí integrovat své platební systémy. Následující oddíly zobrazují že diagramy modelování v sadě Visual Studio pomáhat při provedení této úlohy:  
   
-- [Pochopte požadavky uživatelů: diagramy případů použití](#UnderstandUseCases)  
+- [Pochopte požadavky uživatelů: Diagramy případů použití](#UnderstandUseCases)  
   
-- [Pochopte obchodní proces: diagramy činnosti](#UnderstandActivities)  
+- [Pochopte obchodní proces: Diagramy činnosti](#UnderstandActivities)  
   
-- [Popište strukturu systému: diagramy komponent](#DescribeComponents)  
+- [Popište strukturu systému: Diagramy komponent](#DescribeComponents)  
   
-- [Popište interakce: sekvenční diagramy](#DescribeSequence)  
+- [Popište interakce: Sekvenční diagramy](#DescribeSequence)  
   
-- [Vizualizujte existující kód: Kódových map](#VisualizeCode)  
+- [Vizualizujte existující kód: Mapy kódu](#VisualizeCode)  
   
-- [Definice glosáře typů: diagramy třídy](#DefineClasses)  
+- [Definice glosáře typů: Diagramy tříd](#DefineClasses)  
   
-- [Popište logickou architekturu: diagramy vrstev](#DescribeLayers)  
+- [Popište logickou architekturu: Diagramy vrstev](#DescribeLayers)  
   
   Další informace:  
   
@@ -401,7 +396,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> Pochopte požadavky uživatelů: diagramy případů použití  
+###  <a name="UnderstandUseCases"></a> Pochopte požadavky uživatelů: Diagramy případů použití  
  Použijte diagramy případu pro shrnutí činností, že systém podporuje, a kdo provádí tyto činnosti. Společnost Lucerne používá diagram případu použití ke zjištění následujících o systému Dinner Now:  
   
 - Zákazníci vytváří objednávky.  
@@ -449,7 +444,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)  
   
-#### <a name="summary-strengths-of-use-case-diagrams"></a>Shrnutí: Silné stránky diagramů případů použití  
+#### <a name="summary-strengths-of-use-case-diagrams"></a>Shrnutí: Silné stránky diagramů případů používání  
  Použijte diagramy případu pro lepší vizualizaci:  
   
 -   Aktivity, které systém podporuje nebo nepodporuje  
@@ -464,11 +459,11 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagram**|**Popisuje**|  
 |-----------------|-------------------|  
-|Diagram činnosti|Tok kroků případu použití a těch, kteří vykonávají tyto kroky v případu použití.<br /><br /> Názvy použití případů často zrcadlí kroky v diagramu činnosti. Diagramy činnosti podporují prvky, jako jsou rozhodnutí, sloučení, vstupy a výstupy, souběžné toků a tak dále.<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Sekvenční diagram|Sekvence interakcí mezi účastníky v případu použití.<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Diagram tříd (UML)|Subjekty nebo typy, které se účastní případu použití.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
+|Diagram činnosti|Tok kroků případu použití a těch, kteří vykonávají tyto kroky v případu použití.<br /><br /> Názvy použití případů často zrcadlí kroky v diagramu činnosti. Diagramy činnosti podporují prvky, jako jsou rozhodnutí, sloučení, vstupy a výstupy, souběžné toků a tak dále.<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Sekvenční diagram|Sekvence interakcí mezi účastníky v případu použití.<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Diagram tříd (UML)|Subjekty nebo typy, které se účastní případu použití.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
   
-###  <a name="UnderstandActivities"></a> Pochopte obchodní proces: diagramy činnosti  
+###  <a name="UnderstandActivities"></a> Pochopte obchodní proces: Diagramy činností  
  Diagramy činnosti popisují tok kroků v procesu podnikání a poskytují jednoduchý způsob, jak komunikovat pracovní postup. Projekt vývoje může mít více diagramů činnosti. Činnost obvykle zahrnuje všechny akce, které vyplývají z jedné externí akce, jako je například pokrmu, aktualizace menu nebo přidání nové restaurace do podnikání. Aktivita může také popisovat podrobnosti složité akce.  
   
  Společnost Lucerne aktualizuje následující diagram činnosti aby, že společnost Lucerne zpracuje platbu a zaplatí restauraci. Nahraďte, systém platby Lucerne, jak je zdůrazněno platební systém Dinner Now:  
@@ -521,10 +516,10 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagram**|**Popis**|  
 |-----------------|---------------------|  
-|Použití diagramu případu|Souhrn činností, které provádí každý objekt actor.<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Diagram součásti|Vizualizujte systém jako kolekci znovu použitelných částí, které poskytují nebo využívají chování prostřednictvím kvalitně definované sady rozhraní.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
+|Použití diagramu případu|Souhrn činností, které provádí každý objekt actor.<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Diagram součásti|Vizualizujte systém jako kolekci znovu použitelných částí, které poskytují nebo využívají chování prostřednictvím kvalitně definované sady rozhraní.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
   
-###  <a name="DescribeComponents"></a> Popište strukturu systému: diagramy komponent  
+###  <a name="DescribeComponents"></a> Popište strukturu systému: Diagramy komponent  
  Diagramy součástí popisují systém jako kolekci oddělitelných částí, které poskytují nebo využívají chování prostřednictvím kvalitně definované sady rozhraní. Části mohou být v libovolném měřítku a lze připojit libovolným způsobem.  
   
  Aby pomohli aplikacím Lucerne a večeře nyní vizualizovat a projednat systémové součásti a jejich rozhraní, vytvářejí následující diagramy komponent:  
@@ -596,12 +591,12 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 |**Diagram**|**Popis**|  
 |-----------------|---------------------|  
 |Mapy kódu|Vizualizujte organizaci a vztahy v existujícím kódu.<br /><br /> Chcete-li identifikovat kandidáty na součásti, vytvořte kód mapy a seskupte položky podle jejich funkce v systému.<br /><br /> Další informace:<br /><br /> -   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)|  
-|Sekvenční diagram|Vizualizujte řadu interakcí mezi komponentami nebo částmi uvnitř komponenty.<br /><br /> Pokud chcete vytvořit životnosti v sekvenčním diagramu z komponentu, klikněte pravým tlačítkem na komponentu a potom klikněte na **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Diagram tříd (UML)|Definujte rozhraní poskytnutých nebo požadovaných portů a tříd, které implementují funkce součástí.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
-|Diagram vrstvy|Popište logickou architekturu systému, protože se týká komponent. Abyste měli jistotu, že kód zůstane konzistentní s návrhem použijte ověření vrstev.<br /><br /> Další informace:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|  
-|Diagram činnosti|Vizualizujte vnitřní zpracování, které provedou komponenty jako odpověď na příchozí zprávy.<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Sekvenční diagram|Vizualizujte řadu interakcí mezi komponentami nebo částmi uvnitř komponenty.<br /><br /> Pokud chcete vytvořit životnosti v sekvenčním diagramu z komponentu, klikněte pravým tlačítkem na komponentu a potom klikněte na **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Diagram tříd (UML)|Definujte rozhraní poskytnutých nebo požadovaných portů a tříd, které implementují funkce součástí.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
+|Diagram vrstvy|Popište logickou architekturu systému, protože se týká komponent. Abyste měli jistotu, že kód zůstane konzistentní s návrhem použijte ověření vrstev.<br /><br /> Další informace:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|  
+|Diagram činnosti|Vizualizujte vnitřní zpracování, které provedou komponenty jako odpověď na příchozí zprávy.<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-###  <a name="VisualizeCode"></a> Vizualizujte existující kód: Kódových map  
+###  <a name="VisualizeCode"></a> Vizualizujte existující kód: Mapy kódu  
  Mapy kódu zobrazit aktuální organizaci a vztahy v kódu. Položky jsou představovány *uzly* na mapě, a vztahy jsou reprezentovány *odkazy*. Mapy kódu vám může pomoct provádět následující druhy úloh:  
   
 - Prozkoumejte neznámý kód.  
@@ -654,7 +649,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
      Například pro vizualizaci rozvrstvení v kódu, vyberte rozložení stromové struktury. Zobrazit [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).  
   
-#### <a name="summary-strengths-of-code-maps"></a>Shrnutí: Silné stránky map kódu  
+#### <a name="summary-strengths-of-code-maps"></a>Shrnutí: Silné map kódu  
  Mapy kódu vám pomůže:  
   
 -   Další informace o organizaci a vztahy v existujícím kódu.  
@@ -667,12 +662,12 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagram**|**Popisuje**|  
 |-----------------|-------------------|  
-|Diagram vrstvy|Logická architektura systému. Abyste měli jistotu, že kód zůstane konzistentní s návrhem použijte ověření vrstev.<br /><br /> Chcete-li usnadnit identifikaci existujících vrstev nebo zamýšlených vrstev, vytvořte si mapu kódu a seskupte související položky. Chcete-li vytvořit diagram vrstev, naleznete v tématu:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)|  
-|Diagram součásti|Součásti, jejich rozhraní a jejich vztahy.<br /><br /> Chcete-li usnadnit identifikaci součástí, vytvořte kód mapy a seskupte položky podle jejich funkce v systému.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
-|Diagram tříd (UML)|Třídy, jejich atributy a operace a jejich vztahy.<br /><br /> Chcete-li usnadnit identifikaci těchto prvků, vytvoření diagramu tříd UML, který obsahuje tyto prvky.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
-|Diagram tříd (založený na kódu)|Existující třídy v kódu pro konkrétní projekt.<br /><br /> Chcete-li vizualizovat a upravit existující třídu v kódu, použijte nástroj Návrhář tříd.<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
+|Diagram vrstvy|Logická architektura systému. Abyste měli jistotu, že kód zůstane konzistentní s návrhem použijte ověření vrstev.<br /><br /> Chcete-li usnadnit identifikaci existujících vrstev nebo zamýšlených vrstev, vytvořte si mapu kódu a seskupte související položky. Chcete-li vytvořit diagram vrstev, naleznete v tématu:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)|  
+|Diagram součásti|Součásti, jejich rozhraní a jejich vztahy.<br /><br /> Chcete-li usnadnit identifikaci součástí, vytvořte kód mapy a seskupte položky podle jejich funkce v systému.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
+|Diagram tříd (UML)|Třídy, jejich atributy a operace a jejich vztahy.<br /><br /> Chcete-li usnadnit identifikaci těchto prvků, vytvoření diagramu tříd UML, který obsahuje tyto prvky.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
+|Diagram tříd (založený na kódu)|Existující třídy v kódu pro konkrétní projekt.<br /><br /> Chcete-li vizualizovat a upravit existující třídu v kódu, použijte nástroj Návrhář tříd.<br /><br /> Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
-###  <a name="DescribeSequence"></a> Popište interakce: sekvenční diagramy  
+###  <a name="DescribeSequence"></a> Popište interakce: Sekvenční diagramy  
  Sekvenční diagramy popisují řadu interakcí mezi částmi systému. Části mohou být libovolného rozsahu. Například se můžete v rozsahu od jednotlivých objektů v programu velké podsystémy nebo externí aktéry. Interakce může být libovolného rozsahu a typu. Například může být v rozsahu od jednotlivých zpráv po rozšířené operace a může být volání funkce nebo zprávami webové služby.  
   
  Aby pomohli aplikacím Lucerne a Večeř nyní popsat a projednat kroky v případu použití zpracování platby, vytvářejí následující sekvenční diagram z diagramu komponent. Životnosti zrcadlení součásti webu Dinner Now a jejích částí. Zprávy, které se objeví mezi životnosti následujícího připojení v diagramech komponent:  
@@ -723,11 +718,11 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagram**|**Popis**|  
 |-----------------|---------------------|  
-|Diagram tříd (UML)|Definice třídy, které představují životnost a parametry a návratové hodnoty, které se používají ve zprávách odesílaných životností.<br /><br /> Pro vytvoření třídy ze životnosti, klepněte pravým tlačítkem myši životnost a potom klikněte na tlačítko **vytvořit třídu** nebo **vytvořit rozhraní**. Vytvořte životnost z typu v diagramu tříd, klikněte pravým tlačítkem na typ a potom klikněte na tlačítko **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
-|Diagram součásti|Popište komponenty, které představují životnost a rozhraní, které poskytuje a využívá chování reprezentované zprávami.<br /><br /> Vytvořit životnosti z diagramu komponent, klikněte pravým tlačítkem na komponentu a potom klikněte na tlačítko **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
-|Použití diagramu případu|Interakce mezi uživateli a komponenty v sekvenčním diagramu Shrňte jako případ použití, který představuje cíl uživatele.<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Diagram tříd (UML)|Definice třídy, které představují životnost a parametry a návratové hodnoty, které se používají ve zprávách odesílaných životností.<br /><br /> Pro vytvoření třídy ze životnosti, klepněte pravým tlačítkem myši životnost a potom klikněte na tlačítko **vytvořit třídu** nebo **vytvořit rozhraní**. Vytvořte životnost z typu v diagramu tříd, klikněte pravým tlačítkem na typ a potom klikněte na tlačítko **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
+|Diagram součásti|Popište komponenty, které představují životnost a rozhraní, které poskytuje a využívá chování reprezentované zprávami.<br /><br /> Vytvořit životnosti z diagramu komponent, klikněte pravým tlačítkem na komponentu a potom klikněte na tlačítko **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
+|Použití diagramu případu|Interakce mezi uživateli a komponenty v sekvenčním diagramu Shrňte jako případ použití, který představuje cíl uživatele.<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-###  <a name="DefineClasses"></a> Definice glosáře typů: diagramy třídy  
+###  <a name="DefineClasses"></a> Definice glosáře typů: Diagramy tříd  
  Diagramy tříd definují entity, podmínky nebo koncepty, které jsou součástí systému a jejich vztahy mezi sebou. Tyto diagramy můžete použít například během vývoje pro popis atributů a operací pro každou třídu, bez ohledu na jejich implementaci jazyka nebo stylu.  
   
  Aby usnadnili aplikaci Lucerne popsat a diskutovat subjekty, které se účastní případu použití zpracování platby, nakreslí následující diagram tříd:  
@@ -789,7 +784,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 - [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)  
   
-- [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Shrnutí: Silné stránky diagramů tříd  
  Diagramy tříd umožňují definovat:  
@@ -804,14 +799,14 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 |**Diagram**|**Popis**|  
 |-----------------|---------------------|  
-|Použití diagramu případu|Definování typů, které se používají k popisu cílů a kroky v případy použití.<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Diagram činnosti|Definujte typy dat, která prochází uzly objektu, vstupní spojky, výstupní spojky a uzly parametru činností.<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Diagram součásti|Popište komponenty, jejich rozhraní a jejich vztahy. Třída může také popisovat kompletní komponentu.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
-|Diagram vrstvy|Definujte logickou architekturu systému souvislosti se třídami.<br /><br /> Abyste měli jistotu, že kód zůstane konzistentní s návrhem použijte ověření vrstev.<br /><br /> Další informace:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|  
-|Sekvenční diagram|Definujte typy životnosti a operace, parametry a návratové hodnoty pro všechny zprávy, které můžou přijímat životnost.<br /><br /> Vytvořte životnost z typu v diagramu tříd, klikněte pravým tlačítkem na typ a potom klikněte na tlačítko **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Použití diagramu případu|Definování typů, které se používají k popisu cílů a kroky v případy použití.<br /><br /> Další informace:<br /><br /> -   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Diagram činnosti|Definujte typy dat, která prochází uzly objektu, vstupní spojky, výstupní spojky a uzly parametru činností.<br /><br /> Další informace:<br /><br /> -   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Diagram součásti|Popište komponenty, jejich rozhraní a jejich vztahy. Třída může také popisovat kompletní komponentu.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
+|Diagram vrstvy|Definujte logickou architekturu systému souvislosti se třídami.<br /><br /> Abyste měli jistotu, že kód zůstane konzistentní s návrhem použijte ověření vrstev.<br /><br /> Další informace:<br /><br /> -   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|  
+|Sekvenční diagram|Definujte typy životnosti a operace, parametry a návratové hodnoty pro všechny zprávy, které můžou přijímat životnost.<br /><br /> Vytvořte životnost z typu v diagramu tříd, klikněte pravým tlačítkem na typ a potom klikněte na tlačítko **vytvořit životnost**.<br /><br /> Další informace:<br /><br /> -   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Mapy kódu|Vizualizujte organizaci a vztahy v existujícím kódu.<br /><br /> K identifikaci tříd, jejich vztahy a jejich metod, vytvořte mapu kódu, který obsahuje tyto prvky.<br /><br /> Další informace:<br /><br /> -   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="DescribeLayers"></a> Popište logickou architekturu: diagramy vrstev  
+###  <a name="DescribeLayers"></a> Popište logickou architekturu: Diagramy vrstev  
  Diagramy vrstev popisují logickou architekturu systému organizací artefaktů ve vašem řešení do abstraktních skupin nebo *vrstvy*. Artefakty mohou být mnoho věcí, například obory názvů, projekty, třídy, metody a tak dále. Vrstvy představují a popisují role a úlohy, které tyto artefakty provádějí v systému. Můžete také zahrnout ověřování vrstvy v sestavení a operace vrácení se změnami zajistit, že kód zůstane konzistentní s návrhem.  
   
  Chcete-li byl kód zachován konzistentní s návrhem, použijte web Dinner Now a Lucerne následující diagram vrstvy k ověřování svého kódu, jak se vyvíjí:  
@@ -881,7 +876,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
 |**Diagram**|**Popis**|  
 |-----------------|---------------------|  
 |Mapy kódu|Vizualizujte organizaci a vztahy v existujícím kódu.<br /><br /> Chcete-li vytvořit vrstvy, Generovat mapu kódu a potom seskupte položky na mapě jako potenciální vrstvy. Přetáhněte skupiny z mapy do diagramu vrstev.<br /><br /> Další informace:<br /><br /> -   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)|  
-|Diagram součásti|Popište komponenty, jejich rozhraní a jejich vztahy.<br /><br /> Vizualizace vrstev, vytvoření diagramu komponent, který popisuje funkce různých složek v systému.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
+|Diagram součásti|Popište komponenty, jejich rozhraní a jejich vztahy.<br /><br /> Vizualizace vrstev, vytvoření diagramu komponent, který popisuje funkce různých složek v systému.<br /><br /> Další informace:<br /><br /> -   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)|  
   
 ## <a name="external-resources"></a>Externí zdroje  
   
@@ -893,9 +888,6 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
  [Vizualizace kódu](../modeling/visualize-code.md)   
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)   
  [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)   
- [Použití modelů v Agilním vývoji](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Použití modelů v Agilním vývoji](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Ověřování systému během vývoje.](../modeling/validate-your-system-during-development.md)   
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

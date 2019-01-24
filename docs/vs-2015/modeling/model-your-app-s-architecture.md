@@ -1,25 +1,22 @@
 ---
 title: Modelování aplikace&#39;architekturu s | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800416"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,8 +104,8 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
   Tyto body jsou rozpracovaného ve zbytku této části.  
   
-### <a name="components"></a>Součásti  
- Střed zobrazení modelu architektury jsou diagramů komponent, které zobrazení hlavních částí systému a jak jsou závislé na sebe navzájem. Další informace o diagramech komponent najdete v tématu [diagramy komponent UML: referenční](../modeling/uml-component-diagrams-reference.md).  
+### <a name="components"></a>Komponenty  
+ Střed zobrazení modelu architektury jsou diagramů komponent, které zobrazení hlavních částí systému a jak jsou závislé na sebe navzájem. Další informace o diagramech komponent najdete v tématu [diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md).  
   
  ![Diagram komponenty UML zobrazující částí](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
   
@@ -137,7 +134,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
   Můžete zobrazit závislosti mezi komponentami přímo, nebo můžete zobrazit závislosti mezi povinné a k dispozici rozhraní, které jsou připojené k součástem. To s využitím rozhraní, můžete definovat, jaké operace se používají v jednotlivých závislostí. Obvykle jsou uvedeny závislosti mezi komponentami, když jsou nejprve vykreslit diagramy a pak nahrazuje závislosti mezi rozhraními, jak přidat další informace. Obě verze jsou popsaná níž správný software, ale verze rozhraní poskytuje podrobnější než u předchozí verze.  
   
-  Správa závislostí je nejdůležitější pro provozní údržby software. Diagramy součástí by měly odrážet všechny závislosti ve vašem kódu. Pokud kód již existuje, ujistěte se, že všechny závislosti jsou zobrazeny v diagramech. Pokud kód je vyvíjena, ujistěte se, že v diagramu komponent neobsahuje závislosti, které nejsou plánované. Vám pomůžou zjistit závislosti v kódu, můžete vygenerovat diagramy vrstev. Vám pomohou zajistit, že jsou splněné omezení plánované závislosti, můžete ověření kódu oproti diagramům vrstev. Další informace najdete v tématu [diagramy vrstev: referenční](../modeling/layer-diagrams-reference.md).  
+  Správa závislostí je nejdůležitější pro provozní údržby software. Diagramy součástí by měly odrážet všechny závislosti ve vašem kódu. Pokud kód již existuje, ujistěte se, že všechny závislosti jsou zobrazeny v diagramech. Pokud kód je vyvíjena, ujistěte se, že v diagramu komponent neobsahuje závislosti, které nejsou plánované. Vám pomůžou zjistit závislosti v kódu, můžete vygenerovat diagramy vrstev. Vám pomohou zajistit, že jsou splněné omezení plánované závislosti, můžete ověření kódu oproti diagramům vrstev. Další informace najdete v tématu [diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Rozhraní  
  Umístěním rozhraní na vaše komponenty můžete oddělit a pojmenujte hlavních skupin operací, které jsou poskytovány jednotlivých komponent. Součástí webové prodejní systém může mít například rozhraní, přes které zákazníci zakoupit zboží, rozhraní, přes který dodavatelé aktualizaci jejich katalogy a třetí rozhraní prostřednictvím systému spravuje.  
@@ -161,7 +158,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 ### <a name="decomposing-a-component-into-parts"></a>Rozložení komponentu do částí  
  Můžete použít postup popsaný v předchozích částech pro jednotlivé komponenty.  
   
- V rámci jednotlivých komponent můžete zobrazit jeho dílčí komponenty jako částí. Součást je v podstatě atribut své nadřazené komponentě, což je typ třídy. Každá část má svůj vlastní typ, který může být součást. Můžete umístit tuto komponentu v diagramu a zobrazit její části. Další informace najdete v tématu [diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md).  
+ V rámci jednotlivých komponent můžete zobrazit jeho dílčí komponenty jako částí. Součást je v podstatě atribut své nadřazené komponentě, což je typ třídy. Každá část má svůj vlastní typ, který může být součást. Můžete umístit tuto komponentu v diagramu a zobrazit její části. Další informace najdete v tématu [diagramy komponent UML: Pokyny pro](../modeling/uml-component-diagrams-guidelines.md).  
   
  Je vhodné použít tuto techniku pro celý systém. Vykreslení jako jedinou komponentu a zobrazit jeho hlavní komponenty jako částí. Toto pomáhá identifikovat jasně rozhraní systému s externí světem.  
   
@@ -199,7 +196,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 ### <a name="identifying-the-initiating-events"></a>Identifikace zahájení události  
  Práci prováděnou Většina softwarových systémů můžete pohodlně rozdělit podle odpovědi, které poskytuje různé vstupy nebo události. Zahájení události může být jeden z následujících událostí:  
   
--   První akcí v případu použití. Může zobrazit v modelu požadavky jako krok v případu použití nebo akce v diagramu činnosti. Další informace najdete [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md) a [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+-   První akcí v případu použití. Může zobrazit v modelu požadavky jako krok v případu použití nebo akce v diagramu činnosti. Další informace najdete [diagramy případů použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md) a [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
 -   Zpráva v programové rozhraní. Pokud systém, který vyvíjíte je součástí větší systému, musí být popsány jako operaci v jednom z rozhraní komponenty. Zobrazit [komponent a jejich rozhraní](#Components).  
   
@@ -210,9 +207,9 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Nakreslete životnost pro každou instanci komponenty, která přebírá části typickou postupně. V některých případech může být více než jednu instanci každého typu. Pokud máte popsané celého systému jako jedinou komponentu, musí být jedna životnost pro každou část, kterou obsahuje.  
   
- Další informace najdete v tématu [sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Další informace najdete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
   
- Diagramy činnosti jsou také užitečné v některých případech. Například pokud vaše komponenty průběžné toku dat, můžete ho popisují jako tok, který objekt. Pokud vaše komponenta obsahuje komplexní algoritmus, můžete ho popsat jako tok řízení. Ujistěte se, abyste vytvořili bylo jasné, jaká součást provádí každou akci, například s použitím komentářů. Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+ Diagramy činnosti jsou také užitečné v některých případech. Například pokud vaše komponenty průběžné toku dat, můžete ho popisují jako tok, který objekt. Pokud vaše komponenta obsahuje komplexní algoritmus, můžete ho popsat jako tok řízení. Ujistěte se, abyste vytvořili bylo jasné, jaká součást provádí každou akci, například s použitím komentářů. Další informace najdete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ### <a name="specify-the-operations"></a>Určení operací  
  Diagramy popisují operace, které provádí každou komponentu buď reprezentována jako zprávy na akce v diagramu činnosti nebo sekvenčního diagramu.  
@@ -247,7 +244,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
 -   Model hlavních částí a jejich vztahy. Může se jednat třídy nebo součásti a rozhraní se přidružení a závislostí mezi nimi. Elementy obvykle spadají do dvou kategorií:  
   
-    -   Elementy, které vývojář musí replikovat v každé části kódu, kde se používá vzor. Typy šablon můžete použít k popisu tyto. Další informace najdete v tématu [diagramy případů použití UML: referenční](../modeling/uml-use-case-diagrams-reference.md).  
+    -   Elementy, které vývojář musí replikovat v každé části kódu, kde se používá vzor. Typy šablon můžete použít k popisu tyto. Další informace najdete v tématu [diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md).  
   
     -   Prvky, který popisuje třídy rozhraní framework, které vývojář by měl používat.  
   
@@ -265,6 +262,3 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
  [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)   
  [Vývoj testů z modelu](../modeling/develop-tests-from-a-model.md)   
  [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)
-
-
-

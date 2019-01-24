@@ -1,23 +1,20 @@
 ---
 title: Návrháři aktivit vývojového diagramu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fb74c7db38cc57d337cec649ad683ab4761552f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752099"
 ---
 # <a name="flowchart-activity-designers"></a>Návrháři aktivit vývojového diagramu
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] obsahuje několik poskytované systémem aktivit, které můžete použít při vytváření pracovního postupu. Tato část obsahuje poskytované systémem aktivity používat ke správě vývojových v rámci pracovního postupu. Následující témata obsahují jejich popis a pokyny, jak je používat.  
@@ -27,7 +24,7 @@ ms.locfileid: "49189212"
  **Umožňuje vytvořit pracovní postupy, které definovat a spravovat komplexní tok řízení.**  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)  
  Poskytuje větev pro tok řízení do jedné ze dvou alternativních závislosti na tom, zda je zadaná podmínka splněna.  
   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)  
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)  
  Poskytuje větvení v toku řízení založené na shodu kritériu, když se vyžadují více než dvě alternativní větve.  
   
 ## <a name="reference"></a>Odkaz  

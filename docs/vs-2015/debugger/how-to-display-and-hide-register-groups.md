@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: zobrazení a skrytí nabídky registrovat skupiny | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zobrazení a skrytí nabídky registrovat skupiny | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.registergroups
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: 6be5dfb4-4cfe-4daf-b538-60405640857d
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 63c23193dd0ef3d697a2346bb61bbc0b1f686e76
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 088313e4452e2606b1908430c81c69446346775c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739893"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763909"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Postupy: Zobrazení a skrytí nabídky Registrovat skupiny
+# <a name="how-to-display-and-hide-register-groups"></a>Postupy: Zobrazení a skrytí nabídky registrovat skupiny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Zaregistruje** není k dispozici pouze v případě, že je povoleno ladění úrovni adres v interval **možnosti** dialogovém okně **ladění** uzlu **Obecné**kategorie.  
@@ -43,7 +38,7 @@ ms.locfileid: "51739893"
  Pro přehlednost, **zaregistruje** okno uspořádá registry do skupiny. Pokud kliknete pravým tlačítkem **zaregistruje** okně se zobrazí místní nabídku, která obsahuje tyto skupiny, které můžete zobrazit nebo skrýt podle svých potřeb následující níže uvedeného postupu.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-or-hide-register-groups"></a>K zobrazení nebo skrytí nabídky registrovat skupiny  
   
@@ -55,8 +50,3 @@ ms.locfileid: "51739893"
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-

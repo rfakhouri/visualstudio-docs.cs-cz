@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: určení příkazů k provedení před instrumentací a po instrumentaci | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Určení příkazů k provedení před instrumentací a po instrumentaci | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b88d49be8ee4651d82135b3e8d27bef8218ffd43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792828"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Postupy: Určení příkazů k provedení před instrumentací a po instrumentaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +45,11 @@ Můžete zadat příkazy, které spustit před nebo po jsou instrumentované bin
   
 - Pro 32bitové aplikace je výchozí adresář nástrojů profilování:  
   
-   *Jednotka*\Program soubory (x86) \Microsoft Visual Studio 10.0\Team nástroje nástroje  
+   *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
 - Pro 64bitové aplikace je výchozí adresář nástrojů profilování:  
   
-   *Jednotka*\Program soubory (x86) \Microsoft Visual Studio 10.0\Team nástroje Tools\x64  
+   *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>Chcete-li určit příkazy před instrumentací  
   
@@ -71,7 +66,7 @@ Můžete zadat příkazy, které spustit před nebo po jsou instrumentované bin
     > [!NOTE]
     >  Můžete kliknout na tlačítko se třemi tečkami **(...)**  , který je vedle **příkazového řádku** pole vyhledejte a vyberte příslušný soubor .exe, .cmd nebo. bat.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
      Chcete-li zakázat spouštění příkazu ale neodebrali, vyberte **vyloučit z instrumentace** zaškrtávací políčko. Pokud chcete upravit kompilátoru nebo linkeru, nastavení, použijte stránky vlastností projektu.  
   
@@ -90,12 +85,9 @@ Můžete zadat příkazy, které spustit před nebo po jsou instrumentované bin
     > [!NOTE]
     >  Můžete kliknout na tlačítko se třemi tečkami **(...)**  , který je vedle **příkazového řádku** pole vyhledejte a vyberte příslušný soubor .exe, .cmd nebo. bat.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
      Chcete-li zakázat spouštění příkazu ale neodebrali, vyberte **vyloučit z instrumentace** zaškrtávací políčko. Pokud chcete upravit kompilátoru nebo linkeru, nastavení, použijte stránky vlastností projektu.  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)
-
-
-

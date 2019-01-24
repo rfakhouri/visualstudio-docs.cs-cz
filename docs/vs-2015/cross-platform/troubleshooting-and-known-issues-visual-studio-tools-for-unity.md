@@ -1,25 +1,20 @@
 ---
 title: Řešení potíží a známé problémy (Visual Studio Tools for Unity) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: troubleshooting
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 94240d5af43944b23890a32b757fe1b4f14b77ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f614188d6a4a9855af072b200c71633ef7a2bd57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755519"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776839"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,4 +76,3 @@ V této části vám najít řešení běžných potíží s nástroji Visual St
     Možná budete muset provést **příkaz** okno viditelné první. V sadě Visual Studio, zvolte v hlavní nabídce **zobrazení**, **ostatní Windows**, **příkazové okno**.  
   
 6. Nakonec odešlete výpisu vlákna do [ vstusp@microsoft.com ](mailto:vstusp@microsoft.com), spolu s popis co jste dělali při začal být zmrazené sady Visual Studio.
-

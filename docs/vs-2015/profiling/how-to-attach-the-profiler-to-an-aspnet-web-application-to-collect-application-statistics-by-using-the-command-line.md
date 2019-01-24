@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: připojení Profiler k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Připojit Profiler k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8bed31651ca52097675c9584091b618ea8757192
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 82d873d166e2275e68231dfd0e7f6edbffd04ab1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781098"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojení profileru k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojit Profiler k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k webové aplikaci ASP.NET a shromáždit statistiky výkonu pomocí metody vzorkování.  
@@ -134,6 +129,3 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 ## <a name="see-also"></a>Viz také  
  [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)
-
-
-

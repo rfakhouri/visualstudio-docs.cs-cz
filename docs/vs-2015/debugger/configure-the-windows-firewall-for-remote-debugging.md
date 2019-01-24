@@ -1,25 +1,20 @@
 ---
 title: Konfigurace brány Windows Firewall pro vzdálené ladění | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734587"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753043"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurace brány Windows Firewall pro vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ Toto téma popisuje postup konfigurace brány firewall pro povolení vzdálenéh
   
 - Windows 7  
   
-- Windows 8 nebo 8.1  
+- Windows 8/8.1  
   
 - Windows 10  
   
@@ -94,7 +89,7 @@ Toto téma popisuje postup konfigurace brány firewall pro povolení vzdálenéh
 |-|-|-|-|  
 |**Porty**|**Příchozí/odchozí**|**Protokol**|**Popis**|  
 |135, 139, 445|Odchozí|TCP|Požadováno.|  
-|137, 138|Odchozí|UDP|Požadováno.|  
+|137, 138|Odchozí|UDP|Povinný parametr.|  
 |500, 4500|Odchozí|UDP|Povinné, pokud zásady vaší domény vyžadují síťové komunikace, která se má provést prostřednictvím protokolu IPSec.|  
 |80|Odchozí|TCP|Vyžaduje se pro ladění webového serveru.|  
   
@@ -118,6 +113,3 @@ Toto téma popisuje postup konfigurace brány firewall pro povolení vzdálenéh
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění](../debugger/remote-debugging.md)
-
-
-

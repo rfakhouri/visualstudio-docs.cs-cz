@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Vytvoření realistické 3D kulečníkové koule | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření realistické 3D kulečníkové koule | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793302"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Postupy: Vytvoření realistické trojrozměrné kulečníkové koule
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Průvodce: Vytvoření realistické 3D kulečníkové koule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí shaderu Designer a editoru obrázků v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vzhled 3D kulečníkové koule je dosaženo kombinací několika technik shaderu se vhodnými prostředky textur.  
@@ -92,7 +87,7 @@ Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí
   
 3. Použijte texturu, kterou jste vytvořili v předchozím postupu konfigurací vlastností textury. Nastavte hodnotu **textury** vlastnost **vzorek textury** uzlu **Texture1**a poté určete soubor textury s použitím **Filename**vlastnost **Texture1** skupinu vlastností ve stejném okně s vlastnostmi.  
   
-   Další informace o tom, jak aplikovat texturu na shader, naleznete v tématu [postupy: vytvoření shaderu základní textury](../designers/how-to-create-a-basic-texture-shader.md).  
+   Další informace o tom, jak aplikovat texturu na shader, naleznete v tématu [jak: Vytvoření základní textury shaderu](../designers/how-to-create-a-basic-texture-shader.md).  
   
    Vaše kulečníková koule by teď měl vypadat nějak takto:  
   
@@ -113,7 +108,7 @@ Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí
   
 - Volitelně můžete upravit, jak se osvětlení chová odlesk, konfigurací **MaterialDiffuse** vlastnost grafu shaderu. Přístup k vlastnostem grafu shader zvolte na prázdnou oblast návrhové plochy a potom vyhledejte vlastnost, ke které chcete získat přístup v **vlastnosti** okna.  
   
-  Další informace o tom, jak aplikovat Lambert osvětlení na shader, naleznete v tématu [postupy: vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).  
+  Další informace o tom, jak aplikovat Lambert osvětlení na shader, naleznete v tématu [jak: Vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).  
   
   S použitím osvětlení Lambert by měla vaše kulečníková koule vypadat nějak takto:  
   
@@ -134,7 +129,7 @@ Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí
   
 2. Volitelně můžete upravit způsob, jakým chová odlesk, konfigurací vlastností odlesků (**MaterialSpecular** a **MaterialSpecularPower**) grafu shaderu. Chcete-li získat přístup k vlastnostem grafu shader zvolte na prázdnou oblast návrhové plochy a pak v **vlastnosti** okna, vyhledejte vlastnost, ke které chcete získat přístup.  
   
-   Další informace o tom, jak aplikovat Zrcadlové osvětlení na shader, naleznete v tématu [postupy: vytvoření základního Phongova shaderu](../designers/how-to-create-a-basic-phong-shader.md).  
+   Další informace o tom, jak aplikovat Zrcadlové osvětlení na shader, naleznete v tématu [jak: Vytvoření základního Phongova shaderu](../designers/how-to-create-a-basic-phong-shader.md).  
   
    S zvýrazňujících vaše kulečníková koule by měl vypadat nějak takto:  
   
@@ -220,11 +215,8 @@ Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí
    V tomto konečném obrazu si všimněte si, jak efekty, které jste přidali setkávají, aby se vytvoření velmi přesvědčivou kulečníkovou kouli. Tvar, textury a osvětlení tvoří základní vzhled 3D objektů a zrcadlové odlesky nebo odrazy zkontrolujte kulečníkovou kouli zajímavější a začleňují svého prostředí.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: exportování shaderu](../designers/how-to-export-a-shader.md)   
- [Postupy: použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)   
+ [Postupy: Použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Návrhář shaderů](../designers/shader-designer.md)   
  [Editor obrázků](../designers/image-editor.md)   
  [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)
-
-
-

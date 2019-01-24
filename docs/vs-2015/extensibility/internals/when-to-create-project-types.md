@@ -1,26 +1,21 @@
 ---
 title: Kdy vytvořit typy projektů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755682"
 ---
 # <a name="when-to-create-project-types"></a>Kdy vytvořit typy projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Vytváří se nový typ projektu poskytuje základ pro přizpůsobení [!INCLUDE
 |Úloha|Popis|  
 |----------|-----------------|  
 |Zpracování příkazů|Žádné VSPackage dokáže zpracovat příkazy.|  
-|Vytváření editoru|Lze registrovat vlastních editorech. Další informace najdete v tématu [dokumentu Windows a editory](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Vytváření editoru|Lze registrovat vlastních editorech. Další informace najdete v tématu [dokumentu Windows a editory](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Vlastnící systému windows|Můžete vytvořit oken nástrojů a dokumentu bez přidání nového typu projektu.|  
 |Vystavení vlastností v okně Vlastnosti|Všechny objekty mohou vystavit vlastnosti.|  
   
@@ -65,7 +60,6 @@ Vytváří se nový typ projektu poskytuje základ pro přizpůsobení [!INCLUDE
  Podtypy projektů můžete použít k rozšíření typu spravovaný projekt bez nutnosti vytvářet nový typ projektu. Podtypy projektů použití agregace modelu COM pro rozšíření spravovaných projektů, které jsou napsané v Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] nebo [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. S průběhem modelu COM můžete znovu použít řadu implementace systému spravovaný projekt a však přizpůsobit pro konkrétní scénář prostřednictvím shromažďování a použití podporující rozhraní. Další informace o podtypů projektů, naleznete v tématu [podtypů projektů](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Dokument Windows a editory](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Dokument Windows a editory](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [Kontrolní seznam: Vytvoření nových typů projektů](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Hierarchie v sadě Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
-

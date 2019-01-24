@@ -1,14 +1,9 @@
 ---
 title: Najít – příkaz | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.find
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cf2ef55aa291016719c5f481d70dadd09f4403d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ffa71b12a0cbe72b2c4fae479990e112fc75940
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790311"
 ---
 # <a name="find-command"></a>Najít – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
   
 ## <a name="arguments"></a>Arguments  
  `findwhat`  
- Požadováno. Text tak, aby odpovídaly.  
+ Povinný parametr. Text tak, aby odpovídaly.  
   
 ## <a name="switches"></a>Přepínače  
  /Case nebo /c  
@@ -90,8 +85,5 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="see-also"></a>Viz také  
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
- [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

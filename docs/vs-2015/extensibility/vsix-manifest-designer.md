@@ -1,14 +1,9 @@
 ---
 title: Návrhář manifestů VSIX | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752328"
 ---
 # <a name="vsix-manifest-designer"></a>Návrhář manifestu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +92,7 @@ Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalac
   **Typ instalace**  
   Obsahuje seznam **rozšíření sady Visual Studio** a **rozšíření SDK** tak, jak cílit na typech instalace. Možnosti se liší v závislosti na typu, který zvolíte.  
   
-  **Rozšíření sady Visual Studio**  
+  **Visual Studio Extension**  
   Obsahuje seznam **InstallationTarget** prvky, které popisují, jak lze nainstalovat balíček a do které produkty sady Visual Studio můžou toto rozšíření nainstalovat. Každý produkt se identifikují samostatně, lepší výkon díky název a verzi nebo verzi.  Produkty lze přidávat do seznamu, upravit a odstranit. Název a verzi produktu odpovídá **Id** a **verze** atributy přidruženého **InstallationTarget** elementu.  
   
   **Rozsah verzí** je [12,0, 14,0] a používá následující zápis:  
@@ -158,4 +153,3 @@ Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalac
 ## <a name="see-also"></a>Viz také  
  [VSIX Extension Schema 2.0 – referenční informace](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-

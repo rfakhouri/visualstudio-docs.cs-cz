@@ -1,13 +1,9 @@
 ---
 title: 'CA1415: Deklarujte správně | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1415
 - DeclarePInvokesCorrectly
@@ -19,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f79029f1962a56f333d0c64492457adb82bd1797
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fa1473d96d8b74b07497ef72a0a92bcf80e1fe3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770586"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Deklarujte správně volání nespravovaných kódů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ ms.locfileid: "53871457"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Bez konce – Pokud P/Invoke, který deklaruje parametr je nemohou vidět mimo sestavení. Rozdělení - P/Invoke, který deklaruje parametr viditelné mimo sestavení.|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Metoda vyvolání platformy je deklarován nesprávně.
 
 ## <a name="rule-description"></a>Popis pravidla

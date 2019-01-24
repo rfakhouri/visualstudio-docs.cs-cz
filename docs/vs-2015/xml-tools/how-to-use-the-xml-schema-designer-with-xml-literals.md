@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: používání návrháře schémat XML s literály XML | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Používání návrháře schémat XML s literály XML | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 592886a1cfe9d0ffc9c7165729cede3340bc65c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218364"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794715"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Postupy: používání návrháře schémat XML s literály XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Postupy: Používání Návrháře schémat XML s literály XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -29,9 +24,9 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>Chcete-li vytvořit nový projekt konzolové aplikace v jazyce Visual Basic  
   
-1.  Spusťte sadu Visual Studio 2010.  
+1.  Start Visual Studio 2010.  
   
-2.  Z **souboru** nabídce vyberte možnost **nový**a pak vyberte **projektu**. **Nový projekt** zobrazí se dialogové okno. Pro **typy projektů**vyberte **jiné jazyky,** a pak vyberte **jazyka Visual Basic**. Pro **šablony**, vyberte konzolové aplikace. Zadejte `XMLLiterals` v **název** pole a umístění projektu v **umístění** pole. Klikněte na tlačítko **OK**.  
+2.  Z **souboru** nabídce vyberte možnost **nový**a pak vyberte **projektu**. Zobrazí se dialogové okno **Nový projekt**. Pro **typy projektů**vyberte **jiné jazyky,** a pak vyberte **jazyka Visual Basic**. Pro **šablony**, vyberte konzolové aplikace. Zadejte `XMLLiterals` v **název** pole a umístění projektu v **umístění** pole. Klikněte na **OK**.  
   
      Vytvoření nového projektu. Projekt XMLLiterals obsahuje jeden zdrojový soubor Visual Basic, Module1.vb.  
   
@@ -79,6 +74,3 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
 2.  Klikněte pravým tlačítkem na libovolný uzel XML literál XML nebo import oboru názvů XML a vyberte **zobrazit v Průzkumníkovi schémat**.  
   
      Průzkumníka schémat XML se zobrazí vedle souboru jazyka Visual Basic, který má XML literál assotiated se schématem XML nastaven.
-
-
-

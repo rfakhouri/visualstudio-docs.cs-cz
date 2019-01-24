@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Profilace z příkazového řádku pomocí instrumentace | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Profilace z příkazového řádku pomocí instrumentace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -17,15 +12,15 @@ ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1b670ef29ca2edcc96ed8886b82dd5d7c6cb416b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755430"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Návod: Profilace z příkazového řádku s použitím instrumentace
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Průvodce: Příkazový řádek, profilace s použitím instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento názorný postup vás provede profilace [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] samostatnou aplikaci pro shromáždění podrobných časových a údaje o počtu volání pomocí metody instrumentace z nástrojů pro profilaci. V tomto návodu provedete následující úlohy:  
@@ -48,7 +43,7 @@ Tento názorný postup vás provede profilace [!INCLUDE[dnprdnshort](../includes
   
 -   Kopie [peopletrax – ukázka](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech. Další informace najdete v tématu [postupy: odkaz na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+-   Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech. Další informace najdete v tématu [jak: Informace o symbolech Windows odkaz](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Příkazového řádku pro profilaci pomocí metody instrumentace  
  Instrumentace je metodu profilace, podle kterého obsahují speciálně vytvořených verze profilovaných binárních souborů testu funkce, které shromažďovat informace o časování na vstupu a výstupu funkcí v instrumentovaném modulu. Vzhledem k tomu, že tato metoda profilování invazivnější než vzorkování, budou vám účtovány větší množství režie. Instrumentované binární soubory jsou také větší než ladění nebo vydání binární soubory a nejsou určeny pro nasazení.  
@@ -120,7 +115,7 @@ Tento názorný postup vás provede profilace [!INCLUDE[dnprdnshort](../includes
     VSPerfCLREnv /off  
     ```  
   
-14. Použijte vsperfreport – nástroj pro generování nebo soubory sestavy hodnot oddělených čárkami (CSV). Typ:  
+14. Použijte vsperfreport – nástroj pro generování nebo soubory sestavy hodnot oddělených čárkami (CSV). Zadejte:  
   
     ```  
     VSPerfReport Reports\Report.vsp /output:Reports /summary:all  
@@ -131,9 +126,6 @@ Tento názorný postup vás provede profilace [!INCLUDE[dnprdnshort](../includes
 ## <a name="see-also"></a>Viz také  
  [Přehled výkonnostní relace](../profiling/performance-session-overview.md)   
  [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)   
  [Zobrazení sestav výkonu](../profiling/performance-report-views.md)
-
-
-

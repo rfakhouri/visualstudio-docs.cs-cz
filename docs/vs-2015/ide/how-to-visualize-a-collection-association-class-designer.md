@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: vizualizace asociace kolekce (návrhář tříd) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vizualizace asociace kolekce (návrhář tříd) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
 - vs.classdesigner.ShowAssociationException
@@ -20,13 +15,13 @@ ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a8e997cf30e4fe8508dd8e1fa8049bdc83e93d53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6fb0fc574af033f34afb3995edeaffe5e408d740
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197688"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799727"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Postupy: Vizualizace asociace kolekce (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +39,6 @@ Vlastnosti a pole, které jsou kolekce jiných typů lze zobrazit v diagramu tř
      Vlastnost nebo pole se zobrazí jako Asociační čára na shromážděný typ propojení.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření asociací mezi typy (návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Postupy: Vytvoření asociací mezi typy (návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Navrhování tříd a typů (návrhář tříd)](../ide/designing-classes-and-types-class-designer.md)   
  [Zobrazování typů a vztahů (Návrhář tříd)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

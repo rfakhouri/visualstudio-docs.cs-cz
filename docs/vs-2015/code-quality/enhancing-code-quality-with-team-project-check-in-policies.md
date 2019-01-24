@@ -1,14 +1,9 @@
 ---
 title: Zlepšení kvality kódu pomocí zásady vracení se změnami projektu týmu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code quality, using check-in policies
 - team-based development, enhancing code quality
@@ -17,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c48a4e9cb68997903eed017637c9f00db88261a5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753184"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +26,13 @@ Při použití Team Foundation verze ovládacího prvku (TFVC), můžete vytvoř
   
  Můžete zadat tyto týmového projektu vrácení se změnami zásady:  
   
--   **Sestaví**: vyžaduje, poškození sestavení, které byly vytvořeny během sestavení musí být opravena dříve než nové vrácení se změnami.  
+-   **Sestaví**: Vyžaduje, poškození sestavení, které byly vytvořeny během sestavení musí být opravena dříve než nové vrácení se změnami.  
   
--   **Komentáře sady změn**: vyžaduje, aby uživatelé zadat komentáře při vrácení se změnami.  
+-   **Komentáře sady změn**: Vyžaduje, aby uživatelé zadat komentáře při vrácení se změnami.  
   
--   **Analýza kódu**: vyžaduje spuštění analýzy kódu před vrácení se změnami.  
+-   **Analýza kódu**: Vyžaduje spuštění analýzy kódu před vrácení se změnami.  
   
--   **Pracovní položky**: vyžaduje, aby jeden nebo více pracovních položek přidružené vložením změn.  
+-   **Pracovní položky**: Vyžaduje, aby jeden nebo více pracovních položek přidružené vložením změn.  
   
 > [!IMPORTANT]
 >  Použití zásad vrácení se změnami, musíte být připojeni k [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  
@@ -46,22 +41,19 @@ Při použití Team Foundation verze ovládacího prvku (TFVC), můžete vytvoř
   
 |Úloha|Podpůrný obsah|  
 |----------|------------------------|  
-|**Vytvoření a použití zásad vrácení se změnami:** můžete vytvořit zásady vrácení se změnami s použitím nastavení týmového projektu [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Nastavení a vynucení bran kvality](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
-|**Vytváření a používání zásad vrácení se změnami analýzy kódu:** můžete vybrat z standardní sadu pravidel analýzy kódu, nebo můžete vytvořit vlastní sadu.|[Vytváření a používání zásad vrácení se změnami Analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
+|**Vytvoření a použití zásad vrácení se změnami:** Můžete vytvořit zásady vrácení se změnami s použitím nastavení týmového projektu [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Nastavení a vynucení bran kvality](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Vytvoření a použití zásad vrácení se změnami analýzy kódu:** Můžete si vybrat z standardní sadu pravidel analýzy kódu, nebo můžete vytvořit vlastní sadu.|[Vytváření a používání zásad vrácení se změnami Analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
 |Úloha|Podpůrný obsah|  
 |----------|------------------------|  
-|**Nastavení vývojového prostředí:** předtím, než můžete vytvářet nebo upravovat kód, musíte nastavit vývojová a testovací prostředí s použitím příslušného zdrojového kódu. Při práci s databázemi, musí mít také přístup k jejich offline verzi.|[Nastavení vývojových prostředích](http://msdn.microsoft.com/en-us/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
-|**Použití analýzy kódu v procesu vývoje:** členové týmu spouštějí analýzu kódu na svých vývojových prostředích. V sadě Visual Studio, vývojáři nakonfigurovat a spustit nastavují spuštění analýzu kódu pro projekty s odděleným kódem, zobrazit a analyzovat problémy nalezené spuštěními a vytvářejí pracovní položky pro upozornění.|[Analýza kvality aplikace](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
-|**Vytváření a spouštění testování částí:** testování částí poskytuje vývojářům a testerům rychlý způsob vyhledávání logických chyb v rámci metod tříd v projektech C#, Visual Basic .NET a C++. Test jednotky můžete vytvořit jen jednou a spustit každé změně zdrojového kódu je zajistit, že k zavedení žádných chyb.|[Testování částí kódu](../test/unit-test-your-code.md)|  
-|**Sledování pracovních položek a vad:** pracovní položky můžete použít ke sledování a spravování práce a informace o týmovém projektu. Pracovní položka je databáze záznam, který [!INCLUDE[esprfound](../includes/esprfound-md.md)] používá ke sledování přiřazení a postupu práce. Můžete použít různé typy pracovních položek pro sledování různých typů činnosti, jako jsou požadavky zákazníka, chyb produktů a vývojářských úloh.|[Sledování práce a správa pracovního postupu &#91;Přesměrováno&#93;](http://msdn.microsoft.com/en-us/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
+|**Nastavení vývojového prostředí:** Předtím, než můžete vytvářet nebo upravovat kód, musíte nastavit vaše vývojová a testovací prostředí s použitím příslušného zdrojového kódu. Při práci s databázemi, musí mít také přístup k jejich offline verzi.|[Nastavení vývojových prostředích](http://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
+|**Použití analýzy kódu v procesu vývoje:** Členové týmu spouštějí analýzu kódu na svých vývojových prostředích. V sadě Visual Studio, vývojáři nakonfigurovat a spustit nastavují spuštění analýzu kódu pro projekty s odděleným kódem, zobrazit a analyzovat problémy nalezené spuštěními a vytvářejí pracovní položky pro upozornění.|[Analýza kvality aplikace](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
+|**Vytvoření a spuštění testování částí:** Testování částí poskytuje vývojářům a testerům rychlý způsob vyhledávání logických chyb v rámci metod tříd v C#, Visual Basic .NET a projekty v jazyce C++. Test jednotky můžete vytvořit jen jednou a spustit každé změně zdrojového kódu je zajistit, že k zavedení žádných chyb.|[Testování částí kódu](../test/unit-test-your-code.md)|  
+|**Sledování pracovních položek a vad:** Pracovní položky můžete použít ke sledování a spravování práce a informace o týmovém projektu. Pracovní položka je databáze záznam, který [!INCLUDE[esprfound](../includes/esprfound-md.md)] používá ke sledování přiřazení a postupu práce. Můžete použít různé typy pracovních položek pro sledování různých typů činnosti, jako jsou požadavky zákazníka, chyb produktů a vývojářských úloh.|[Sledování práce a správa pracovního postupu &#91;Přesměrováno&#93;](http://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>Externí zdroje  
   
 ### <a name="guidance"></a>Doprovodné materiály  
- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: testování částí: testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)
-
-
-
+ [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)

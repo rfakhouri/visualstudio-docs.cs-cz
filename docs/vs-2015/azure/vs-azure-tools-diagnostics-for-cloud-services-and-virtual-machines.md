@@ -2,7 +2,7 @@
 title: Nastavení diagnostiky pro Azure Cloud Services a virtual machines | Dokumentace Microsoftu
 description: Zjistěte, jak nastavení diagnostiky pro ladění Azure cloud services a virtuální počítače (VM) v sadě Visual Studio.
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: f767d293d2b50dff1cdbe6fb92ee20a89798432e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 049d8500f9f3f2a8695d686484ea48f84f2e034b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777550"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Nastavení diagnostiky pro službu Azure Cloud Services a virtuální počítače
 Když budete potřebovat k řešení cloudové služby Azure nebo na virtuálním počítači, můžete použít Visual Studio snadněji nastavení Azure Diagnostics. Diagnostika zaznamená systémová data a data protokolování na virtuální počítače a instance virtuálních počítačů, na kterých běží vaše Cloudová služba. Diagnostická data se přenesou do účtu úložiště, kterou zvolíte. Další informace o diagnostice protokolování v Azure, najdete v článku [povolit protokolování diagnostiky pro webové aplikace ve službě Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).

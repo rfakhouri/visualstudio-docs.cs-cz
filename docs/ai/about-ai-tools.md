@@ -1,5 +1,6 @@
 ---
-title: Nástroje AI pro sadu Visual Studio
+title: AI Tools for Visual Studio
+titleSuffix: ''
 description: Přehled nástroje AI pro sadu Visual Studio
 keywords: AI, visual studio
 author: lisawong19
@@ -11,12 +12,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ee7cb2ea1e90a749fe8f2409125b42b02970c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800926"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -46,5 +47,5 @@ Toto rozšíření usnadňuje trénování modelů v místním počítači nebo 
 ## <a name="supported-operating-systems"></a>Podporované operační systémy
 V současné době toto rozšíření podporuje operační systémy Windows 64-bit
 
-# <a name="support"></a>Podpora
+## <a name="support"></a>Podpora
 Podpora pro toto rozšíření je k dispozici na naše [sledování problémů Githubu](http://github.com/Microsoft/vs-tools-for-ai/issues). Můžete odeslat zprávu o chybě, návrh funkce nebo účastnit diskusí ve.

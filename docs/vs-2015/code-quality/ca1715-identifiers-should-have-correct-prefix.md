@@ -1,14 +1,9 @@
 ---
 title: 'CA1715: Identifikátory by měly mít správnou předponu | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1715
 - IdentifiersShouldHaveCorrectPrefix
@@ -20,17 +15,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0e3d1290f95872c176447fb834c09bef036e784
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f91571cc1830efb9ea5e644444ae856162f854e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205904"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772866"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identifikátory by měly mít správnou předponu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1715: identifikátory by měly mít správnou předponu](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1715: Identifikátory by měly mít správnou předponu](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -39,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1715:
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní - při vyvolání na rozhraních.<br /><br /> Bez konce – při aktivaci pro parametry obecného typu.|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Název externě viditelného rozhraní nezačíná velké písmeno "I".  
   
  -nebo-  
@@ -91,4 +86,3 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1715:
   
 ## <a name="related-rules"></a>Související pravidla  
  [CA1722: Identifikátory by neměly mít nesprávnou předponu](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
-

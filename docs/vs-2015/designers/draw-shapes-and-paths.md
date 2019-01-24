@@ -1,25 +1,20 @@
 ---
 title: Kreslení tvarů a cest | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188185"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775350"
 ---
 # <a name="draw-shapes-and-paths"></a>Kreslení tvarů a cest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,12 +99,12 @@ V Návrháři XAML *tvar* je přesně to, co byste očekávali. Příklad: obdé
 ##  <a name="Convert"></a> Převod tvaru na cestu  
  Pokud chcete změnit tvar stejným způsobem, že změníte cestu, převod tvaru na cestu.  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práci s cestami: převod tvaru na cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práci s cestami: Převod tvaru na cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
 ##  <a name="Combine"></a> Spojit cesty  
  Cesty a tvary můžete zkombinovat do jedné cesty.  
   
- ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-A338-4ef4-96c5-dae51cc1ca8a")  
+ ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
   
 |||||  
 |-|-|-|-|  
@@ -117,26 +112,23 @@ V Návrháři XAML *tvar* je přesně to, co byste očekávali. Příklad: obdé
 |![](../designers/media/b1-2.png "B1_2")|Sjednocení|![](../designers/media/b1-5.png "B1_5")|Vyloučit překryv|  
 |![](../designers/media/b1-3.png "B1_3")|Dělení|![](../designers/media/b1-6.png "B1_6")|Odečíst|  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práci s cestami: Kombinovat cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práci s cestami: Kombinace cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
 ##  <a name="Compound"></a> Vytvořit složenou cestu  
  Při vytváření složené cesty protínající části cesty jsou odečtena od výsledku a výslednou cestu převezme visual vlastnosti nejspodnějších cesty.  
   
  Můžete přerušit od sebe složené cesty kdykoli po jeho vytvoření.  
   
- ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8DE5-b10d28f08a84")  
+ ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práci s cestami: vytvořit složenou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práci s cestami: Vytvořit složenou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
 ##  <a name="Clipping"></a> Vytvořit ořezovou cestu  
  Ořezové cesty je cesta nebo tvar, který se použije na jiný objekt skrytí částí maskované objektu, které spadají mimo ořezové cesty.  
   
- ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-A841-4f39-a3ef-36090cf5a625")  
+ ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práci s cestami: Vytvořit ořezovou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práci s cestami: Vytvořit ořezovou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

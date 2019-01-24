@@ -1,12 +1,9 @@
 ---
 title: Vytvoření jednoduché datové aplikace pomocí ADO.NET | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805516"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,9 +216,9 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
   
     |Komentář|Popis|  
     |-------------|-----------------|  
-    |Util.-1|Přidat `System.Configuration` oboru názvů.|  
-    |Util.-2|Definujte proměnnou, `returnValue`a inicializujte ji na `null` (C#) nebo `Nothing` (Visual Basic).|  
-    |Util.-3|I když jste zadali `connString` jako název připojovacího řetězce v **vlastnosti** okna, je nutné zadat `"SimpleDataApp.Properties.Settings.connString"` (C#) nebo `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) v kódu.|  
+    |Util-1|Přidat `System.Configuration` oboru názvů.|  
+    |Util-2|Definujte proměnnou, `returnValue`a inicializujte ji na `null` (C#) nebo `Nothing` (Visual Basic).|  
+    |Util-3|I když jste zadali `connString` jako název připojovacího řetězce v **vlastnosti** okna, je nutné zadat `"SimpleDataApp.Properties.Settings.connString"` (C#) nebo `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) v kódu.|  
   
 ##  <a name="BKMK_writethecodefortheforms"></a> Napište kód pro formuláře  
  Tato část obsahuje stručný přehled, co každá forma provádí a zobrazuje kód, který vytváří formy. Očíslované poznámky určují oddíly kódu.  
@@ -721,7 +718,7 @@ End Namespace
 |NC-3|Volání `GetConnectionString` metodu k získání připojovacího řetězce z konfiguračního souboru aplikace a uložte hodnotu `connstr` proměnné řetězce.|  
 |NC-4|Přidejte kód pro obslužnou rutinu události kliknutí `btnCreateAccount` tlačítko.|  
 |NC-5|Zabalte volání do `isCustomerName` okolo kódu události Click tak, aby `uspNewCustomer` spustí pouze v případě, že je k dispozici název zákazníka.|  
-|NC 6|Vytvoření `SqlConnection` objektu (`conn`) a předejte mu připojovací řetězec v `connstr`.|  
+|NC-6|Vytvoření `SqlConnection` objektu (`conn`) a předejte mu připojovací řetězec v `connstr`.|  
 |NC-7|Vytvoření `SqlCommand` objektu, `cmdNewCustomer`.<br /><br /> -Zadat `Sales.uspNewCustomer` jako uloženou proceduru pro spuštění.<br />– Použijte `CommandType` vlastnosti a určit tak, že příkaz je uložená procedura.|  
 |NC-8|Přidat `@CustomerName` vstupní parametr z uložené procedury.<br /><br /> -Přidat parametr `Parameters` kolekce.<br />– Použijte `SqlDbType` výčet k určení typu parametru jako nvarchar(40).<br />-Zadat `txtCustomerName.Text` jako zdroj.|  
 |NC-9|Přidejte výstupní parametr z uložené procedury.<br /><br /> -Přidat parametr `Parameters` kolekce.<br />– Použijte `ParameterDirection.Output` k identifikaci parametru jako výstupního.|  
@@ -734,9 +731,9 @@ End Namespace
 |NC-16|Definujte metodu k ověření, že je k dispozici název zákazníka.<br /><br /> – Pokud textové pole je prázdné, zobrazí zprávu a vrátí `false`, protože název se vyžaduje k vytvoření účtu.<br />-Pokud textové pole není prázdný, vrátí `true`.|  
 |NC-17|Přidejte kód pro obslužnou rutinu události kliknutí `btnPlaceOrder` tlačítko.|  
 |NC-18|Zabalte volání do `isPlaceOrderReady` kolem `btnPlaceOrder_Click` kód události tak, aby `uspPlaceNewOrder` nespustil, pokud požadovaný vstup není přítomen.|  
-|NC-19 až NC 25|Tyto části kódu se podobají kódu, který jste přidali pro `btnCreateAccount_Click` obslužné rutiny události.<br /><br /> -NC-19. Vytvořte `SqlCommand` objektu, `cmdNewOrder`a určete `Sales.uspPlaceOrder` jako uloženou proceduru.<br />-NC-20 až NC 23 jsou vstupní parametry pro uloženou proceduru.<br />NC-24. `@RC` bude obsahovat vrácenou hodnotu, která je vygenerovaným ID objednávky z databáze. Směr tohoto parametru je zadán jako `ReturnValue`.<br />NC 25. Hodnotu ID objednávky v Store `orderID` proměnné, která je deklarována v rámci NC-2 a hodnotu zobrazte v okně se zprávou.|  
+|NC-19 až NC 25|Tyto části kódu se podobají kódu, který jste přidali pro `btnCreateAccount_Click` obslužné rutiny události.<br /><br /> -   NC-19. Vytvořte `SqlCommand` objektu, `cmdNewOrder`a určete `Sales.uspPlaceOrder` jako uloženou proceduru.<br />-NC-20 až NC 23 jsou vstupní parametry pro uloženou proceduru.<br />-   NC-24. `@RC` bude obsahovat vrácenou hodnotu, která je vygenerovaným ID objednávky z databáze. Směr tohoto parametru je zadán jako `ReturnValue`.<br />-   NC-25. Hodnotu ID objednávky v Store `orderID` proměnné, která je deklarována v rámci NC-2 a hodnotu zobrazte v okně se zprávou.|  
 |NC-26|Definujte metodu k ověření, že ID zákazníka existuje a že dobu, jakou se v zadané `numOrderAmount`.|  
-|27. SÍŤOVÝ ADAPTÉR.|Volání `ClearForm` metodu `btnAddAnotherAccount` obslužné rutiny kliknutí.|  
+|NC-27|Volání `ClearForm` metodu `btnAddAnotherAccount` obslužné rutiny kliknutí.|  
 |NC-28|Vytvořte `ClearForm` metodu pro mazání hodnot z formuláře, pokud chcete přidat dalšího zákazníka.|  
 |NC29|Zavřete formulář NewCustomer a vraťte se do navigačního formuláře.|  
   
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> Testování aplikace  
  Vyberte klávesu F5 k sestavení a testování vaší aplikace po kódu každé obslužné rutiny události kliknutí a potom můžete po dokončení kódování.
-

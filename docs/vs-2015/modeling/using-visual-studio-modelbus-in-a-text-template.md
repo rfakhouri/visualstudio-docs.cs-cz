@@ -1,23 +1,20 @@
 ---
 title: Pomocí ModelBus v textové šabloně | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 5ed3e5c2-f60f-43c7-8ef4-754f511339c5
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1516d7fb282766adb96c3a67f5a86361e68c1f38
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: cd5963b47a2e2e13cdf71edec4108062b50da66b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800431"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Použití prvku Visual Studio ModelBus v textové šabloně
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +163,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 -   Použití `this.ModelBus` získat přístup k ModelBus.
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Návod: Testování textové šablony, která používá ModelBus
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Průvodce: Testování textové šablony, která používá ModelBus
  V tomto podrobném návodu postupujte takto:
 
 1.  Vytvoření dvou DSL. Jednom DSL *příjemce*, má `ModelBusReference` vlastnost, která mohou odkazovat na jiné DSL *poskytovatele*.

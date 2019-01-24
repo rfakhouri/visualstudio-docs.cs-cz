@@ -1,13 +1,9 @@
 ---
 title: 'CA2223: Členy by se měly lišit o více než návratový typ | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MembersShouldDifferByMoreThanReturnType
 - CA2223
@@ -19,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b143c8bc532d9fa0967034a5dbf6c5cc86841f1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a460cd01d671d347e1cd126d009fe19e140cc69
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786585"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Členy by se měly lišit o více než návratový typ
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Členy by se měly lišit více než návratovým typem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53922118"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Dvě veřejné nebo chráněné členy mají podpisy, které jsou stejné s výjimkou návratovým typem.
 
 ## <a name="rule-description"></a>Popis pravidla

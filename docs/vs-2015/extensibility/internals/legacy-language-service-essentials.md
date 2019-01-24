@@ -1,14 +1,9 @@
 ---
 title: Základy služby starší verze jazyka | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
 - language services, integrating programming languages
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c878c4fe124d0443ab5f926a03a378b5b4af014
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 88e2b07fe640c2b9c69259cfc9ec48d98594bd6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795636"
 ---
 # <a name="legacy-language-service-essentials"></a>Základy služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ Služba jazyka pro integraci programovací jazyk do sady Visual Studio je nutné
 |-------------|-----------------|  
 |Vyhodnocovače výrazů|Podporuje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladicí program ověřování zarážek a poskytnutím seznam výrazů, který se má zobrazit v **automatické hodnoty** okno ladění.<br /><br /> Další informace najdete v tématu [podpora služby jazyka pro ladění](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Nástroje procházení symbolů|Podporuje **Prohlížeč objektů**, **zobrazení tříd**, **prohlížeč volání**, a **výsledky hledání symbolu**.|
-

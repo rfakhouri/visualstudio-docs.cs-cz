@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: výhradní používání klávesnice | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Výhradní používání klávesnice | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782618"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Postupy: Výhradní používání klávesnice
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "49862161"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje mnoho výchozí kombinace klávesových zkratek, které k tomu, aby k procházení a kódu v rámci integrovaného vývojového prostředí (IDE). Úplný seznam klávesových zkratek v sadě Visual Studio najdete v tématu [výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informace o klávesových zkratek, které jsou k dispozici pro ostatní produkty Microsoftu, najdete v části [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Ovládací prvky panelu nástrojů  
  Můžete přidat ovládací prvek na panelu nástrojů do formuláře nebo klávesnice pomocí návrháře.  
@@ -106,6 +101,3 @@ ms.locfileid: "49862161"
  [Identifikování a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [A tipy k přístupnosti](../../ide/reference/accessibility-tips-and-tricks.md)   
  [Výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
-
-
-

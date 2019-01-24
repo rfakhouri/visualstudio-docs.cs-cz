@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796967"
 ---
 # <a name="set-up-a-git-repository"></a>Nastavení úložiště Git
 
@@ -68,7 +68,10 @@ Pokud už máte existující projekt, který _není_ již ve správě verzí, n�
 
 6. Klikněte na tlačítko **dobře**a potom **publikovat** z dialogového okna výstrah.
 
-7. Pokud jste již nebyly zadány svých přihlašovacích údajů Git v sadě Visual Studio pro Mac předvolby, zadejte je. Nejprve musíte vytvořit přístupový Token, který se používá místo hesla. Pokud jste ještě nevytvořili přístupového tokenu, postupujte podle kroků v Gitu [přístupový Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentaci.
+7. V **přihlašovacích údajů Git** okno, zadejte svoje uživatelské jméno v Githubu a heslo. 
+
+> [!NOTE]
+> Pokud má váš účet povolené dvoufaktorové ověřování (2FA), je potřeba vytvořit přístupový Token, který se používá místo hesla. Pokud jste ještě nevytvořili přístupového tokenu, postupujte podle kroků v Gitu [přístupový Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentaci.
 
 8. Zadejte uživatelské jméno a osobní přístupový Token a stiskněte klávesu **dobře**:
 

@@ -1,25 +1,20 @@
 ---
 title: Rychlé akce pomocí žárovek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 990ee487-cf9a-4b89-9784-e7b47c220e8c
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3eff05df37dd1d15774fb059396f3f94b0fff2a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 74237b42ebafb82e82705d42174efb6f6a4d3661
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758639"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Rychlé akce pomocí žárovek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ Ikony žárovky jsou novou funkcí produktivitu v sadě Visual Studio 2015. Jsou
  Refaktoring může stále zlepšovat kliknutím pravým tlačítkem na vyvolali místní nabídku, ale můžete také stisknout kombinaci kláves Ctrl +. Chcete-li zobrazit možnosti refaktorování. Na následujícím obrázku se refaktoring extrahovat metodu nabízí po stisknutí klávesy Ctrl +. někam na řádek, který obsahuje `Math.Abs` volání:  
   
  ![Žárovka zobrazující možnosti refaktorování](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
-
-
-

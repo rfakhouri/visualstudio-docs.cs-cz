@@ -4,18 +4,18 @@ ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.FSharp.Advanced
+- VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b58f22983d11e44a863c834188cc938282c2626
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9f3831581aa81e12a5d7ff0cbe6dbdcd6a29bc98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54399965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759642"
 ---
 # <a name="options-text-editor-f-advanced"></a>Options, Text Editor, F#, Advanced
 
@@ -23,7 +23,7 @@ Použití **Upřesnit** změnit některá nastavení textového editoru pro str�
 
 ## <a name="block-structure-guides"></a>Vodítka pro strukturu bloku
 
-Zaškrtněte toto políčko Zobrazit tečkovaná svislé čáry mezi složené závorky (**{}**) ve vašem kódu. To vám umožní snadno identifikovat vaše jednotlivé bloky kódu.
+Pokud je vybráno, svislé čáry zobrazí v editoru tento řádek nahoru strukturovaný kód bloky, které vám umožní snadno identifikovat jednotlivé bloky kódu.
   
 ## <a name="outlining"></a>Sbalování
 

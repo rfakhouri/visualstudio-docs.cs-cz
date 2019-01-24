@@ -1,12 +1,9 @@
 ---
 title: Přidání kódu do datových sad v n vrstvé aplikace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 16b932a316557a64259d10c89613fcca8ff4fead
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646858"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762146"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Přidávání kódu do datových sad ve vícevrstvých aplikacích
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +69,7 @@ Ve výchozím nastavení po oddělíte datové sady a `TableAdapter` kód, výsl
 
 - [Přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md)
 - [Přidávání kódu do objektů TableAdapter ve vícevrstvých aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [Objekty TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
-- [TableAdapterManager – přehled](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
+- [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
+- [TableAdapterManager Overview](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
 - [Přehled hierarchické aktualizace](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
 - [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

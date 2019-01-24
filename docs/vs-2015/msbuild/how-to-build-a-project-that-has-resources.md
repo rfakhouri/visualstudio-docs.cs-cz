@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: sestavení projektu, který má prostředky | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Sestavení projektu, který má prostředky | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
 - resources [Visual Studio], compiling with MSBuild
@@ -18,15 +13,15 @@ ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2383f563b8f6e80111d382c9abe96a66efadd69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b45d2dfedcc020a5b6206e4c419c0e4b7f9b0f02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803998"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Postupy: Sestavení projektu, který má prostředky
+# <a name="how-to-build-a-project-that-has-resources"></a>Postupy: Sestavení projektu s prostředky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -90,5 +85,3 @@ Pokud vytváříte lokalizované verze projektu, musí se oddělit všechny prvk
  [Generateresource – úloha](../msbuild/generateresource-task.md)   
  [CSC – úloha](../msbuild/csc-task.md)   
  [Resgen.exe (generátor zdrojových souborů)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
-
-

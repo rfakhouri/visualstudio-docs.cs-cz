@@ -1,14 +1,9 @@
 ---
 title: Přehled potlačování ve zdroji | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793665"
 ---
 # <a name="in-source-suppression-overview"></a>Přehled potlačování ve zdroji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Potlačení v zdroje je možnost potlačit nebo ignorovat porušení zásad anal
  Zabránit potlačení v zdroje metadat přesouvání omylem byste neměli používat potlačení v zdroje u sestavení pro vydání. Vzhledem k zpracování potlačení-source může být také snížený výkon vaší aplikace zahrnutím potlačení v zdroje metadat.  
   
 > [!NOTE]
->  Není nutné ručně kód tyto atributy sami. Další informace najdete v tématu [postupy: potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Položka nabídky není k dispozici pro kód C++.  
+>  Není nutné ručně kód tyto atributy sami. Další informace najdete v tématu [jak: Potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Položka nabídky není k dispozici pro kód C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atributu SuppressMessage  
  Když kliknete pravým tlačítkem na upozornění analýzy kódu v **seznam chyb** a potom klikněte na tlačítko **potlačení zpráv**, **SuppressMessage** je ve vašem kódu nebo na Přidat atribut projektový soubor globálního potlačení.  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>Generovaný kód  
  Spravovaný kód kompilátory a některé nástroje třetích stran generování kódu pro usnadnění vývoje rychlý kód. Kód generovaný kompilátorem, který se zobrazí ve zdrojových souborech obvykle označené **GeneratedCodeAttribute** atribut.  
   
- Můžete zvolit, jestli se má potlačit upozornění analýzy kódu a chyby pro vygenerovaný kód. Informace o tom, jak potlačit takové upozornění a chyby najdete v tématu [postupy: potlačení upozornění pro kód generovaný](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
+ Můžete zvolit, jestli se má potlačit upozornění analýzy kódu a chyby pro vygenerovaný kód. Informace o tom, jak potlačit takové upozornění a chyby najdete v tématu [jak: Potlačení upozornění pro vygenerovaný kód](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
   
  Všimněte si, že analýza kódu ignoruje **GeneratedCodeAttribute** při použití na celé sestavení nebo jeden parametr. Těmito situacemi dojít jen zřídka.  
   
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  Target vždy obsahuje plně kvalifikovaný název.  
   
 ## <a name="global-suppression-file"></a>Soubor globálního potlačení  
- Soubor globálního potlačení udržuje potlačení, které jsou potlačení na globální úrovni nebo potlačení, u kterých není cíl. Například pro porušení úrovně sestavení jsou uložena v tomto souboru. Kromě toho některé technologie ASP.NET jsou uložena v tomto souboru vzhledem k tomu, že nastavení na úrovni projektu nejsou k dispozici pro kódu na pozadí formuláře. Globální potlačení je vytvořen a přidán do projektu poprvé, kterou jste vybrali **v souboru potlačení projektu** možnost **potlačení zpráv** příkazu v okně Seznam chyb. Další informace najdete v tématu [postupy: potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+ Soubor globálního potlačení udržuje potlačení, které jsou potlačení na globální úrovni nebo potlačení, u kterých není cíl. Například pro porušení úrovně sestavení jsou uložena v tomto souboru. Kromě toho některé technologie ASP.NET jsou uložena v tomto souboru vzhledem k tomu, že nastavení na úrovni projektu nejsou k dispozici pro kódu na pozadí formuláře. Globální potlačení je vytvořen a přidán do projektu poprvé, kterou jste vybrali **v souboru potlačení projektu** možnost **potlačení zpráv** příkazu v okně Seznam chyb. Další informace najdete v tématu [jak: Potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

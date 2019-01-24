@@ -1,25 +1,20 @@
 ---
 title: Práce s několika uživatelskými účty | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176264"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802639"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +64,7 @@ Pokud máte více účtů Microsoft a/nebo pracovní nebo školní účty, můž
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Přidejte druhý uživatelský účet do sady Visual Studio  
  Klikněte na šipku dolů vedle své uživatelské jméno v pravém horním rohu sady Visual Studio. Potom klikněte na **nastavení účtu** položky nabídky. **Account manažera** zobrazí se dialogové okno a účet přihlášení. Klikněte na tlačítko **přidat účet** odkaz v levé dolní části dialogového okna Přidat nový účet Microsoft nebo nový pracovní nebo školní účet.  
   
- ![Nástroj pro výběr účtu Visual Studio](../ide/media/vs2015-acct-picker.png "VS2015_acct_picker")  
+ ![Visual Studio account picker](../ide/media/vs2015-acct-picker.png "VS2015_acct_picker")  
   
  Postupujte podle zobrazených výzev a zadejte nové přihlašovací údaje účtu. Následující obrázek znázorňuje Account manažera po přidání jeho Contoso.com pracovní účet uživatele.  
   
@@ -77,6 +72,3 @@ Pokud máte více účtů Microsoft a/nebo pracovní nebo školní účty, můž
   
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Návštěvě Průvodce přidáním připojené služby a Průzkumník serveru  
  Teď přejděte na **Průzkumníka serveru** znovu, klikněte pravým tlačítkem na uzel Azure a zvolte **spravovat a filtrovat předplatná**. Zvolte nový účet kliknutím šipku rozevíracího seznamu vedle aktuálního účtu a zvolte předplatné, které chcete zobrazit v Průzkumníku serveru. Měli byste vidět všechny služby, které jsou přidružené k zadanému odběru. I když nejste přihlášení aktuálně pomocí druhého účtu Visual Studio IDE, jste přihlášeni k tomuto účtu služby a prostředky. Totéž platí pro **Projekt > Přidat připojenou službu** a **týmu > připojit k Team Foundation Server**.
-
-
-

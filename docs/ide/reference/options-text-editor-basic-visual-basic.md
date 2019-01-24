@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 206a6ecf028497e63a7fe3e0d6bb320febd8bde5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764664"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Rozšířené možnosti, textový Editor, Basic (Visual Basic)
 **VB konkrétní** stránce vlastností **základní** složky **textový Editor** složky **možnosti** (**nástroje** nabídky) dialogové okno obsahuje následující vlastnosti:
@@ -77,7 +77,7 @@ Textový editor označuje visual oboru postupy. Řádek je vykreslen v *.vb* zdr
 
 ## <a name="block-structure-guides"></a>Vodítka pro strukturu bloku
 
-Pomocí těchto zaškrtávacích políček zobrazíte tečkovaná svislé čáry mezi složené závorky (**{}**) ve vašem kódu. To vám umožní snadno zobrazit jednotlivé bloky kódu pro deklaraci úroveň a úroveň kódu vytvoří.
+Pokud je vybráno, svislé čáry zobrazí v editoru tento řádek nahoru strukturovaný kód bloky, které vám umožní snadno identifikovat jednotlivé bloky kódu. Například zobrazí čáry mezi `Sub` a `EndSub` v `Sub` příkazu.
 
 ## <a name="editor-help"></a>Nápověda k editoru
 

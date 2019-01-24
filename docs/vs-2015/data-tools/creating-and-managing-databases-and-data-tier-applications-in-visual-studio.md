@@ -1,12 +1,9 @@
 ---
 title: Vytváření a Správa databází a aplikací datové vrstvy
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - managing change, databases
 - database features of Visual Studio, managing change
@@ -16,13 +13,13 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ed31f442a1ca30c34554549e1d186cb2c320ee
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4c3a8a1f4b0c6e242e3999d870fdfcdc764d8336
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061246"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766896"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Vytváření a Správa databází a aplikací datové vrstvy v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ ms.locfileid: "53061246"
 
 |Základní úlohy|Podpůrný obsah|
 |----------------------|------------------------|
-|**Spuštění vývoje aplikace datové vrstvy:** A DAC je nový koncept nepředchází [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] , který obsahuje definici pro [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] databázi a podpůrné instance objektů, které jsou používány klient server nebo vrstvy 3 aplikace. DAC obsahuje databázové objekty, jako jsou tabulky a zobrazení, společně s instanci entity, jako jsou přihlášení. Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pro vytvoření projektu DAC DAC soubor balíčku, ale taky popustit odeslat tento soubor balíčku DAC správce databáze pro nasazení do instance [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] databázového stroje.|-   [Vytváření a Správa aplikace datové vrstvy](http://go.microsoft.com/fwlink/?LinkId=160741) (web společnosti Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Provádění databáze iterativní vývoj:** Pokud jste vývojář nebo tester, projděte si části projektu a potom je aktualizovat v izolované vývojové prostředí. Pomocí tohoto typu prostředí můžete otestovat provedené změny aniž by to ovlivnilo ostatní členové týmu. Po dokončení se změny, zkontrolujte soubory zpět do správy verzí, kde můžete získat provedené změny a sestavení a nasazení testovacího serveru ostatním členům týmu.|-   [Dotaz a textových editorů (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (web společnosti Microsoft)<br />-   [Ladicí program Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (web společnosti Microsoft)|
-|**Vytváření prototypů, ověření výsledcích testu a změny databáze skripty a objekty:** můžete použít [!INCLUDE[tsql](../includes/tsql-md.md)] editor k provádění kterékoli z těchto běžných úkolů.|-   [Dotaz a textových editorů (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (web společnosti Microsoft)|
+|**Zahájení vývoje aplikace datové vrstvy:** DAC je nový koncept nepředchází [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] , který obsahuje definici pro [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] databázi a podpůrné instance objektů, které jsou používány klient server nebo 3vrstvé aplikace. DAC obsahuje databázové objekty, jako jsou tabulky a zobrazení, společně s instanci entity, jako jsou přihlášení. Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pro vytvoření projektu DAC DAC soubor balíčku, ale taky popustit odeslat tento soubor balíčku DAC správce databáze pro nasazení do instance [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] databázového stroje.|-   [Vytváření a Správa aplikace datové vrstvy](http://go.microsoft.com/fwlink/?LinkId=160741) (web společnosti Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Provádění vývoj iterativní databází:** Pokud jste vývojář nebo tester, projděte si části projektu a potom je aktualizovat v izolované vývojové prostředí. Pomocí tohoto typu prostředí můžete otestovat provedené změny aniž by to ovlivnilo ostatní členové týmu. Po dokončení se změny, zkontrolujte soubory zpět do správy verzí, kde můžete získat provedené změny a sestavení a nasazení testovacího serveru ostatním členům týmu.|-   [Dotaz a textových editorů (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (web společnosti Microsoft)<br />-   [Ladicí program Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (web společnosti Microsoft)|
+|**Vytváření prototypů ověřování výsledků testů a úpravy databázové skripty a objekty:** Můžete použít [!INCLUDE[tsql](../includes/tsql-md.md)] editor k provádění kterékoli z těchto běžných úkolů.|-   [Dotaz a textových editorů (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (web společnosti Microsoft)|
 
 ## <a name="see-also"></a>Viz také
  [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,23 +1,20 @@
 ---
 title: Integrace modelů pomocí Modelbus | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2ff722f3-21d6-44e2-9efd-f6694aee9987
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 14b41124b98f04945dcbd1784743e854c5d69dab
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: da9041c4fb54b37bfe585d2bbf0b88fdfe9264c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784429"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -513,4 +510,4 @@ private const string INVALID_REF_FORMAT =
 - V **DslPackage\source.extention.tt**, `|ModelBusAdapter|` se přidá jako komponentu MEF.
 
 ## <a name="see-also"></a>Viz také
- [Postupy: otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md) [modely UML integrovat s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md) [postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md) [pomocí Visual Studio ModelBus v Textové šablony](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md) [modely UML integrovat s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md) [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md) [pomocí sady Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Zápis Vizualizéru v jazyce Visual Basic | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zápis Vizualizéru v jazyce Visual Basic | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,21 +16,21 @@ ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 549e1ce240808a3947b2780f5c96485439e44ecc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794879"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786338"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Návod: Zápis vizualizéru v jazyce Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Průvodce: Zápis Vizualizéru v jazyce Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Vizualizaci, kterou vytvoříte v tomto názorném postupu se zobrazí obsah řetězce pomocí Windows Forms okno se zprávou. Tento vizualizér jednoduchým řetězcem je základní příklad, který znázorňuje, jak můžete vytvořit vizualizéry pro ostatní typy dat pro více projektů.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, přejděte **nástroje** nabídky a zvolte **Import a Export** . Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, přejděte **nástroje** nabídky a zvolte **Import a Export** . Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Kód vizualizéru musí být umístěn v knihovně DLL, který bude číst ladicím programem. Prvním krokem je vytvoření projektu knihovny tříd pro knihovnu DLL.  
   
@@ -230,12 +225,9 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
    Blahopřejeme. Stačí mít vytvořené a testovat vaše první vizualizéru.  
   
-   Pokud chcete používat vaše vizualizéru v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] místo jen volání z testovací prostředí, je nutné ji nainstalovat. Další informace najdete v tématu [postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md).  
+   Pokud chcete používat vaše vizualizéru v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] místo jen volání z testovací prostředí, je nutné ji nainstalovat. Další informace najdete v tématu [jak: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Architektura vizualizéru](../debugger/visualizer-architecture.md)   
- [Postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)   
+ [Postupy: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)   
  [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)
-
-
-

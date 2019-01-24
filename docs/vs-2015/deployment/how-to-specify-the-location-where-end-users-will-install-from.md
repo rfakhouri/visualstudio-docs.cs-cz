@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: určení umístění, kde budou koncoví uživatelé instalovat z | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zadejte umístění, kde budou koncoví uživatelé instalovat z | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,15 +17,15 @@ ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 113356a664d94fdd2e8d3e53fae6025d8ef22e60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c5dd42c4753bdea11c32f6de06c6386320aa2a2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213002"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789221"
 ---
-# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Postupy: Určení umístění, z něhož mohou instalovat koncoví uživatelé
+# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Postupy: Určení umístění, z něhož budou instalovat koncoví uživatelé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, umístění, kde uživatelé ke stažení a instalaci aplikace není nutně umístění, kde nejprve publikovat aplikace. Například v některých organizacích může vývojář publikování aplikace na testovacím serveru a pak by správce přesunout aplikaci na webový server.  
@@ -39,7 +34,7 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplika
   
  `Installation URL` Vlastnost lze nastavit na **publikovat** stránku **Návrháře projektu**.  
   
- **Poznámka:** `Installation URL` vlastnost můžete nastavit také pomocí **PublishWizard**. Další informace najdete v tématu [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ **Poznámka:** `Installation URL` vlastnost můžete nastavit také pomocí **PublishWizard**. Další informace najdete v tématu [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ### <a name="to-specify-an-installation-url"></a>Chcete zadat adresu URL instalace  
   
@@ -50,9 +45,6 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplika
 3.  Do pole Adresa URL instalace, zadejte umístění instalace pomocí plně kvalifikovanou adresu URL pomocí formátu http://www.microsoft.com/ApplicationName, nebo cestu UNC ve formátu \\\Server\ApplicationName.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: určení, kde sada Visual Studio zkopíruje soubory](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+ [Postupy: Zadejte, kde sada Visual Studio zkopíruje soubory](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Postupy: Publikování aplikace ClickOnce pomocí průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

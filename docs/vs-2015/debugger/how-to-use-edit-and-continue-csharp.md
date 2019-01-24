@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: použití operace upravit a pokračovat (C#) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití operace upravit a pokračovat (C#) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4106a8bcaec8890192fdc33b9db0d66c12d8b07d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775000"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Postupy: Použití operace Upravit a pokračovat (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +55,3 @@ Pomocí funkce upravit a pokračovat pro jazyk C# můžete provést změny kódu
  [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [Podporované změny kódu (C#)](../debugger/supported-code-changes-csharp.md)   
  [Upravit a pokračovat chyby a upozornění (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: ShowByDefault (šablony sady Visual Studio) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6cd368d33e218d0f240a8f6272cfbfba846f04e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781800"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785817"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51781800"
 Pokud `false`, určuje, že se zobrazí pouze šablony podle zadaného [templategroupid –](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
  \<Vstemplate – >  
- \<TemplateData >  
+ \<TemplateData>  
  \<ShowByDefault >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -53,7 +48,7 @@ Pokud `false`, určuje, že se zobrazí pouze šablony podle zadaného [template
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  
@@ -95,4 +90,3 @@ Pokud `false`, určuje, že se zobrazí pouze šablony podle zadaného [template
  [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)   
  [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [TemplateGroupID – element (šablony sady Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)
-

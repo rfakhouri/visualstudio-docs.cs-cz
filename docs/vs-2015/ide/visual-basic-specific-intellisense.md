@@ -1,14 +1,9 @@
 ---
 title: Specifické pro jazyk Visual Basic IntelliSense | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
@@ -16,13 +11,13 @@ ms.assetid: 4dec8753-05e5-4f74-b304-5f8c4ed8723b
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fbeae534915863ec8a49e529bef4f6eb0c0fcb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ce0d1f2fd5c4ea8549f638f97846fdf7a1726b90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796890"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Specifické pro jazyk Visual Basic IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Editor zdrojového kódu jazyka Visual Basic nabízí následující funkce Inte
   
   Dokončení lze vyvolat ručně vyvoláním seznam členů, úplné slovo nebo ALT + Šipka vpravo. Další informace najdete v tématu [pomocí technologie IntelliSense](../ide/using-intellisense.md).  
   
-## <a name="intellisense-in-zone"></a>Technologie IntelliSense v zóně  
+## <a name="intellisense-in-zone"></a>IntelliSense in Zone  
  Technologie IntelliSense v zóně pomáhá vývojáře jazyka Visual Basic, kteří potřebují nasazovat aplikace prostřednictvím [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a jsou omezeny na nastavení částečným vztahem důvěryhodnosti. Tuto funkci:  
   
 - Umožní vám vybrat oprávnění, která bude aplikace spuštěna s.  
@@ -58,6 +53,3 @@ Editor zdrojového kódu jazyka Visual Basic nabízí následující funkce Inte
   
 ## <a name="see-also"></a>Viz také  
  [Používání atributu IntelliSense](../ide/using-intellisense.md)
-
-
-

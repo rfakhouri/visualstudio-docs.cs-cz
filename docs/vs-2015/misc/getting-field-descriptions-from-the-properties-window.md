@@ -1,25 +1,20 @@
 ---
 title: Získávání popisy pole v okně Vlastnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, field descriptions
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797219"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Získávání popisy pole z okna Vlastnosti
 V dolní části **vlastnosti** okně oblasti popisu zobrazí informace související s vybranou vlastnost pole. Tato funkce je ve výchozím nastavení zapnutá. Pokud chcete skrýt pole Popis, klikněte pravým tlačítkem myši **vlastnosti** okno a klikněte na tlačítko **popis**. Tím také odstraněn znak zaškrtnutí vedle položky **popis** title v nabídce okno. Pole lze zobrazit znovu pomocí stejných kroků, chcete-li přepnout **popis** zpět na.  
@@ -68,9 +63,9 @@ STDAPI DLLGetDocumentation
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   
  [Vlastnosti pole a rozhraní okna](../extensibility/internals/properties-window-fields-and-interfaces.md)   
  [Rozšíření vlastností](../extensibility/internals/extending-properties.md)   
- [helpstringdll –](http://msdn.microsoft.com/library/121271fa-f061-492b-b87f-bbfcf4b02e7b)   
+ [helpstringdll](http://msdn.microsoft.com/library/121271fa-f061-492b-b87f-bbfcf4b02e7b)   
  [helpstring](http://msdn.microsoft.com/library/0401e905-a63e-4fad-98d0-d1efea111966)   
- [helpstringcontext –](http://msdn.microsoft.com/library/d4cd135e-d91c-4aa3-9353-8aeb096f52cf)   
- [HelpContext](http://msdn.microsoft.com/library/6fbb022d-a4b7-4989-a02f-7f18a9b0ad96)   
+ [helpstringcontext](http://msdn.microsoft.com/library/d4cd135e-d91c-4aa3-9353-8aeb096f52cf)   
+ [helpcontext](http://msdn.microsoft.com/library/6fbb022d-a4b7-4989-a02f-7f18a9b0ad96)   
  [Soubor nápovědy](http://msdn.microsoft.com/library/d75161c1-1363-4019-ae09-e7e3b8a3971e)   
  [lcid](http://msdn.microsoft.com/library/7f248c69-ee1c-42c3-9411-39cf27c9f43d)

@@ -1,11 +1,8 @@
 ---
 title: Použití map kódu k ladění aplikací | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
@@ -20,13 +17,13 @@ ms.assetid: 9fd0c9a2-d351-40c8-be88-0749788264bf
 caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: af5f34b307f94f1bae4c913421acbe0a934ed113
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802125"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Použití map kódu k ladění aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,6 +143,3 @@ Mapy kódu vám umožňují předcházet ztrátě orientace v rozsáhlých kóde
 ## <a name="see-also"></a>Viz také  
  [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)   
  [Vizualizace kódu](../modeling/visualize-code.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: vytvoření. Vsct soubor z existující. Soubor CTC | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření. Vsct soubor z existující. Soubor CTC | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating based on a .ctc file
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797099"
 ---
-# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Postupy: vytvoření. Vsct soubor z existující. Soubor CTC
+# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Postupy: Vytvoření. Vsct soubor z existující. Soubor CTC
 Můžete vytvořit souboru .vsct založený na formátu XML z existujícího souboru zdrojové tabulky .ctc příkazu. Díky tomu mohou využít výhod nového založený na formátu XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] formátu kompilátoru příkaz tabulky (VSCT).  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Vytvoření souboru .vsct ze souboru .ctc  
@@ -50,5 +45,5 @@ Můžete vytvořit souboru .vsct založený na formátu XML z existujícího sou
     >  Přeformátování komentáře XML, lze vylepšit čitelnost souboru .vsct.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření. Soubor Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
+ [Postupy: Vytvoření. Soubor Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
  [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,14 +1,9 @@
 ---
 title: Resolvecomreference – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf70e5c2fe77f275f31ed9966df262d64ed2c23d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9f535c1d79b1a37a5a25ff3e6f6d424eb4bc631d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801424"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,14 +66,14 @@ Přebírá seznam názvů knihoven typů nebo souborů .tlb a řeší tyto kniho
 |`VersionMajor`|Požadovaná položka metadat.<br /><br /> Hlavní verze knihovny typů. Pokud se tato metadata položky nezadá, úloha se nezdaří.|  
 |`VersionMinor`|Požadovaná položka metadat.<br /><br /> Dílčí verze knihovny typů. Pokud se tato metadata položky nezadá, úloha se nezdaří.|  
 |`LocaleIdentifier`|Nepovinná položka metadat.<br /><br /> Identifikátor národního prostředí (nebo LCID) pro knihovnu typů. Tento parametr je zadán jako hodnotu 32-bit, který identifikuje lidské jazyk upřednostňuje uživatelů, oblast nebo aplikaci. Pokud se tato metadata položky nezadá, použije úloha výchozí identifikátor národního prostředí "0".|  
-|`WrapperTool`|Nepovinná položka metadat.<br /><br /> Určuje, že nástrojem obálky, který se používá ke generování sestavení obálky pro tuto knihovnu typů. Pokud není zadána tato metadata položky, úkol používá výchozí nástroj obálky "tlbimp". Jsou k dispozici, malá a velká písmena výběr typelibs:<br /><br /> -   `Primary`: Tento nástroj obálky použijte, pokud chcete použít již generované primární spolupracující sestavení pro komponenty modelu COM. Použijete-li tento nástroj obálky, nezadávejte obálky výstupní adresář, protože, které způsobí selhání úlohy.<br />-   `TLBImp`: Použijte tento nástroj obálky, když potřebujete ke generování sestavení vzájemné spolupráce pro komponenty modelu COM.<br />-   `AXImp`: Použijte tento nástroj obálky, když potřebujete ke generování sestavení vzájemné spolupráce pro ovládací prvek ActiveX.|  
+|`WrapperTool`|Nepovinná položka metadat.<br /><br /> Určuje, že nástrojem obálky, který se používá ke generování sestavení obálky pro tuto knihovnu typů. Pokud není zadána tato metadata položky, úkol používá výchozí nástroj obálky "tlbimp". Jsou k dispozici, malá a velká písmena výběr typelibs:<br /><br /> -   `Primary`: Nástroj obálky, když chcete použít pro komponenty modelu COM již generované primární definiční sestavení. Použijete-li tento nástroj obálky, nezadávejte obálky výstupní adresář, protože, které způsobí selhání úlohy.<br />-   `TLBImp`: Při generování sestavení vzájemné spolupráce pro komponenty modelu COM, použijte tento nástroj obálky.<br />-   `AXImp`: Použijte tento nástroj obálky, když potřebujete ke generování sestavení vzájemné spolupráce pro ovládací prvek ActiveX.|  
   
 ## <a name="typelibfiles-item-metadata"></a>Metadata položky TypeLibFiles  
  Následující tabulka popisuje dostupná metadata položky pro položky předán `TypeLibFiles` parametru.  
   
 |Metadata|Popis|  
 |--------------|-----------------|  
-|`WrapperTool`|Nepovinná položka metadat.<br /><br /> Určuje, že nástrojem obálky, který se používá ke generování sestavení obálky pro tuto knihovnu typů. Pokud není zadána tato metadata položky, úkol používá výchozí nástroj obálky "tlbimp". Jsou k dispozici, malá a velká písmena výběr typelibs:<br /><br /> -   `Primary`: Tento nástroj obálky použijte, pokud chcete použít již generované primární spolupracující sestavení pro komponenty modelu COM. Použijete-li tento nástroj obálky, nezadávejte obálky výstupní adresář, protože, které způsobí selhání úlohy.<br />-   `TLBImp`: Použijte tento nástroj obálky, když potřebujete ke generování sestavení vzájemné spolupráce pro komponenty modelu COM.<br />-   `AXImp`: Použijte tento nástroj obálky, když potřebujete ke generování sestavení vzájemné spolupráce pro ovládací prvek ActiveX.|  
+|`WrapperTool`|Nepovinná položka metadat.<br /><br /> Určuje, že nástrojem obálky, který se používá ke generování sestavení obálky pro tuto knihovnu typů. Pokud není zadána tato metadata položky, úkol používá výchozí nástroj obálky "tlbimp". Jsou k dispozici, malá a velká písmena výběr typelibs:<br /><br /> -   `Primary`: Nástroj obálky, když chcete použít pro komponenty modelu COM již generované primární definiční sestavení. Použijete-li tento nástroj obálky, nezadávejte obálky výstupní adresář, protože, které způsobí selhání úlohy.<br />-   `TLBImp`: Při generování sestavení vzájemné spolupráce pro komponenty modelu COM, použijte tento nástroj obálky.<br />-   `AXImp`: Nástroj obálky, když chcete generování sestavení vzájemné spolupráce pro ovládací prvek ActiveX.|  
   
 > [!NOTE]
 >  Další informace, které poskytnete k jednoznačné identifikaci knihovny typů, větší možnost, že úloha se přeloží správný soubor na disku.  
@@ -89,6 +84,3 @@ Přebírá seznam názvů knihoven typů nebo souborů .tlb a řeší tyto kniho
 ## <a name="see-also"></a>Viz také  
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
-
-
-

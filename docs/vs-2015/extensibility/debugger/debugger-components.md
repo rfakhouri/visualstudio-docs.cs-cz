@@ -1,14 +1,9 @@
 ---
 title: Komponenty ladicího programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], components
 - components [Visual Studio SDK], debugging
@@ -16,30 +11,30 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aabd6311212b866b9171758c8bec39e3beebbfea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12f865e7d4c44cfa4002b330ed85ec95f95a8ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797908"
 ---
 # <a name="debugger-components"></a>Komponenty ladicího programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Ladicí program je implementovaný jako VSPackage a spravuje celou ladicí relaci. Relace ladění se skládá z následujících elementů:  
   
-- **Ladění balíčku:** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladicí program poskytuje stejné uživatelské rozhraní bez ohledu na to, co je právě laděna.  
+- **Ladění balíčku:** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Ladicí program poskytuje stejné uživatelské rozhraní bez ohledu na to, co je právě laděna.  
   
-- **Správce ladění relace (SDM):** poskytuje konzistentní programové rozhraní do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladicí program pro správu různých ladicí stroj. Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Správce ladění relace (SDM):** Poskytuje konzistentní programové rozhraní do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladicí program pro správu různých ladicí stroj. Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-- **Správce ladění procesu (PDM):** spravuje u všech spuštěných instancích [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], seznam všech programů, které mohou být nebo jsou právě laděny. Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Správce ladění procesu (PDM):** Pro všechny spuštěné instance spravuje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], seznam všech programů, které mohou být nebo jsou právě laděny. Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-- **Ladicí stroj (DE):** je zodpovědný za monitorování program laděn, stav běžící program SDM a PDM komunikaci a interakci s vyhodnocovací filtr výrazů a poskytovatel symbolů poskytují analýzu v reálném čase Stav paměti programu a proměnné. Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pro jazyky podporuje) a externích dodavatelů, kteří chtějí podporují vlastní běhu.  
+- **Ladicí stroj (DE):** Je zodpovědný za monitorování program laděn, stav běžící program SDM a PDM komunikaci a interakci s vyhodnocovací filtr výrazů a poskytovatel symbolů poskytnout analýza v reálném čase stavu paměti programu a proměnné. Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pro jazyky podporuje) a externích dodavatelů, kteří chtějí podporují vlastní běhu.  
   
-- **Chyba při vyhodnocování výrazu (EE):** poskytuje podporu pro dynamicky vyhodnocovat proměnné a výrazy zadaný uživatelem, když program se zastavil v určitém místě. Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pro jazyky podporuje) a jiných dodavatelů, kteří požadují pro podporu jejich jazycích.  
+- **Vyhodnocovací filtr výrazů (EE):** Poskytuje podporu pro dynamicky vyhodnocovat proměnné a výrazy zadaný uživatelem, když program se zastavil v určitém místě. Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pro jazyky podporuje) a jiných dodavatelů, kteří požadují pro podporu jejich jazycích.  
   
-- **Poskytovatel symbolů (SP):** tzv obslužnou rutinu symbolů, mapuje symboly pro ladění programu na běžící instance programu tak, aby smysluplné informace lze zadat (jako je ladění a výraz hodnocení úroveň zdrojového kódu). Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pro modul Common Language Runtime [CLR] symboly a databáze programu [PDB] symbol formátu souboru) a jiných dodavatelů, kteří mají své vlastní proprietární metodou ukládání informací o ladění.  
+- **Poskytovatel symbolů (SP):** Zkratka obslužnou rutinu symbolů, mapuje symboly pro ladění programu spuštěné instance programu tak, aby smysluplné informace lze zadat (například úroveň zdrojového kódu, ladění a vyhodnocení výrazu). Je implementováno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pro modul Common Language Runtime [CLR] symboly a databáze programu [PDB] symbol formátu souboru) a jiných dodavatelů, kteří mají své vlastní proprietární metodou ukládání informací o ladění.  
   
   Následující diagram znázorňuje vztah mezi těmito elementy ladicího programu sady Visual Studio.  
   
@@ -82,4 +77,3 @@ ms.locfileid: "51797491"
   
 ## <a name="see-also"></a>Viz také  
  [Začínáme](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
-

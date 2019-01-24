@@ -1,13 +1,9 @@
 ---
 title: 'CA1305: Zadejte možnosti IFormatProvider | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
 - CA1305
@@ -19,14 +15,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cfb3a3d8dcd08b80144de8e5c416cecfb5f3990c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a31dfbae3ca07f913a5ddad3cf0a788cd9c62b73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762502"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: Zadejte možnosti IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: Určete IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53929013"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Metoda nebo konstruktor volá jeden nebo více členů, které mají přetížení <xref:System.IFormatProvider?displayProperty=fullName> parametr a tato metoda nebo konstruktor nevolá přetížení přebírající <xref:System.IFormatProvider> parametru. Toto pravidlo ignoruje volání [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] metody, které jsou popsány jako ignoruje <xref:System.IFormatProvider> parametr a také následující metody:
 
 -   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
@@ -82,4 +78,4 @@ ms.locfileid: "53929013"
  [CA1304: Zadejte možnosti CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Viz také
- [NIB: Pomocí třídy CultureInfo](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
+ [NIB: Pomocí třídy CultureInfo](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

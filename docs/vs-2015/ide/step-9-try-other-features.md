@@ -1,27 +1,22 @@
 ---
-title: 'Krok 9: Vyzkoušejte jiné funkce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Krok 9: Vyzkoušejte další funkce | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4e0eefc947f71da5332ac3ef248cc73a41818880
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f8e205ff8e6659ee1f0200e1e2ddc4363d10539
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255122"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759999"
 ---
-# <a name="step-9-try-other-features"></a>Krok 9: Vyzkoušejte jiné funkce
+# <a name="step-9-try-other-features"></a>Krok 9: Vyzkoušení dalších funkcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Chcete-li získat další informace, zkuste změnit ikony a barvy, přidat časovač hry a zvuky. Chcete-li, aby hra byla náročnější, zkuste zvětšit hrací plochu a upravte časovač.  
@@ -56,9 +51,6 @@ Chcete-li získat další informace, zkuste změnit ikony a barvy, přidat časo
   
 -   Pokud si nevíte rady nebo máte otázky k programování, můžete zveřejnit svůj dotaz na jednom z diskuzních fór MSDN. Zobrazit [fórum Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) a [fórum Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral).  
   
--   K dispozici jsou užitečné bezplatné video výukové materiály. Další informace o programování v jazyce Visual Basic najdete v tématu [Visual Basic Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Další informace o programování v jazyce Visual C# najdete v tématu [jazyka C# Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
+-   K dispozici jsou užitečné bezplatné video výukové materiály. Další informace o programování v jazyce Visual Basic najdete v tématu [základy jazyka Visual Basic: Vývoj pro naprosté začátečníky](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Další informace o programování v jazyce Visual C#, naleznete v tématu [ C# základní informace: Vývoj pro naprosté začátečníky](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Přidejte metodu k ověření, zda the hráč zvítězil](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
-
-
-
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Přidejte metodu k ověření, zda hráč zvítězil](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

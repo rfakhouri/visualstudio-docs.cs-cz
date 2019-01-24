@@ -1,12 +1,9 @@
 ---
 title: Služby Windows Communication Foundation a služby WCF Data Services
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - services, WCF Data
 - WCF services, binding to
@@ -35,13 +32,13 @@ ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3cabee0dce9120dcfcc6d31e6f1541eaca72b5ea
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4176e01d4419dc777e8381ebcd7dcef0b2c77b14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786837"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +83,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
  [!code-vb[WCFWalkthrough#3](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb#3)]
 
 ## <a name="wcf-tools-in-visual-studio"></a>WCF nástroje v sadě Visual Studio
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poskytuje nástroje, které vám pomůžou vytvořit WCF services a klienti WCF. Návod, který ukazuje nástroje najdete v tématu [návod: vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poskytuje nástroje, které vám pomůžou vytvořit WCF services a klienti WCF. Návod, který ukazuje nástroje najdete v tématu [názorný postup: Vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
 
 ### <a name="creating-and-testing-wcf-services"></a>Vytváření a testování služeb WCF
  Můžete použít WCF [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony jako základ rychle vytvářet vlastní služby. Pak můžete automaticky hostitel služby WCF a testovacího klienta WCF pro ladění a otestování služby. Tyto nástroje společně poskytují rychlý a pohodlný ladění a testovací cyklus a eliminuje požadavek na potvrzení na model hostingu v rané fázi.
@@ -106,7 +103,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
  Další informace o hostiteli služby WCF najdete v tématu [hostitel služby WCF (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>Testovací klient WCF
- Nástroj testovacího klienta WCF umožňuje vstupní parametry testu, odeslat tento vstup na službu WCF a zobrazovat odpovědi, které služba odesílá zpět. Poskytuje pohodlné službu testování prostředí, když ho spojovat se hostitel služby WCF. Nástroj nachází ve složce \Common7\IDE, která pro Visual Studio 2015 nainstalované na jednotce C: je tady: **C:\Program Files (x86) \Microsoft Visual Studio 14.0\Common7\IDE\\**.
+ Nástroj testovacího klienta WCF umožňuje vstupní parametry testu, odeslat tento vstup na službu WCF a zobrazovat odpovědi, které služba odesílá zpět. Poskytuje pohodlné službu testování prostředí, když ho spojovat se hostitel služby WCF. Nástroj najdete ve složce \Common7\IDE, která pro Visual Studio 2015 nainstalované v jednotce C: je tady: **C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.
 
  Po stisknutí klávesy F5 začít ladit projekt služby WCF, Testovací klient WCF se otevře a zobrazí seznam koncových bodů služby, které jsou definovány v konfiguračním souboru. Můžete testovat parametry a spustit službu a opakujte tento postup a průběžné testování a ověřování služby.
 
@@ -119,7 +116,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 
  **Nakonfigurovat odkazy na služby** dialogové okno umožňuje upravit konfiguraci pro službu. Můžete změnit adresu pro službu, zadat úroveň přístupu, asynchronní chování a typy kontraktů zpráv a nakonfigurovat znovuvyužití typů.
 
-## <a name="how-to-select-a-service-endpoint"></a>Postupy: Výběr koncového bodu služby
+## <a name="how-to-select-a-service-endpoint"></a>Postupy: Vyberte koncový bod služby
  Některé služby Windows Communication Foundation (WCF) vystavit několik koncových bodů, pomocí kterých může klient komunikovat se službou. Služba může například vystavit jeden koncový bod, který používá HTTP vazby a uživatelské jméno / heslo zabezpečení a druhý koncového bodu, který používá ověřování Windows a protokolu FTP. První koncový bod můžou používat aplikace, které přístup ke službě z mimo bránu firewall, zatímco druhá mohou být použity v síti intranet.
 
  V takovém případě můžete zadat `endpointConfigurationName` jako parametr do konstruktoru pro odkaz na službu.
@@ -162,7 +159,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 
 4.  Uvnitř `<EndPoint>` značky vás bude `name="` *SomeService* `"` parametr (kde *SomeService* představuje název koncového bodu). Toto je název koncového bodu, který lze předat `endpointConfigurationName As String` přetížení konstruktoru pro odkaz na službu.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Postupy: asynchronní volání metody služby
+## <a name="how-to-call-a-service-method-asynchronously"></a>Postupy: Asynchronní volání metody služby
  Většina metod služby Windows Communication Foundation (WCF) může volat synchronně nebo asynchronně. Asynchronní volání metody umožňuje vaší aplikaci a pokračujte v práci, zatímco metoda je volána při práci s pomalým připojením.
 
  Ve výchozím nastavení když se přidá odkaz na službu do projektu je nakonfigurován k volání metody synchronně. Můžete změnit chování při volání metody asynchronně změnou nastavení v **nastavit odkaz na službu** dialogové okno.
@@ -180,7 +177,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 
 3.  V **nastavit odkaz na službu** dialogové okno, vyberte **Generovat asynchronní operace** zaškrtávací políčko.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Postupy: vytvoření vazby dat vrácených službou
+## <a name="how-to-bind-data-returned-by-a-service"></a>Postupy: Vytvoření vazby dat vrácených službou
  Můžete vytvořit vazbu dat vrácené službou Windows Communication Foundation (WCF) na ovládací prvek, stejně jako kterýkoli jiný zdroj dat. můžete svázat do ovládacího prvku. Když přidáte odkaz na službu WCF, pokud služba obsahuje složené typy, které nevracejí data, se automaticky přidají do **zdroje dat** okna.
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>K vytvoření vazby ovládacího prvku do jednoho datového pole vrácené službou WCF
@@ -211,7 +208,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 
 5.  Přetáhněte uzel na formuláři. Přidá se ovládací prvky na formuláři spolu s <xref:System.Windows.Forms.BindingSource> komponenty a <xref:System.Windows.Forms.BindingNavigator> komponenty.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Postupy: konfigurace ve službě znovu použít existující typy
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Postupy: Nakonfigurujte službu znovu použít existující typy
  Při odkazu na službu se přidá do projektu, jsou generovány všechny typy definované v rámci služby v místním projektu. V mnoha případech to vytvoří duplicitní typy, když služba používá běžné [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] typy nebo když jsou definovány typy ve sdílené knihovně.
 
  K tomuto problému vyhnout, typy v odkazovaných sestaveních jsou sdílené ve výchozím nastavení. Pokud chcete zakázat sdílení typu pro jeden nebo více sestavení, můžete provést, **nakonfigurovat odkazy na služby** dialogové okno.

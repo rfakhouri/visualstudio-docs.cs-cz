@@ -1,14 +1,9 @@
 ---
-title: 'DA0001: Pro zřetězování používejte StringBuilder | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'DA0001: Použít StringBuilder pro zřetězení | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0001
 - vs.performance.rules.DAUseStringBuilder
@@ -18,18 +13,18 @@ ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cbfbabc96273f6a39a69888025b80d12103dd4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da0de740155936497c2e21213d7e063fa761aade
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803315"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804898"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Pro zřetězování používejte StringBuilder
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0001: pro zřetězování používejte StringBuilder](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0001: Použít StringBuilder pro zřetězení](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -39,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0001:
 |Zpráva|Zvažte možnost použít StringBuilder pro zřetězení řetězců|  
 |Typ zprávy|Upozornění|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Volání System.String.Concat jsou podstatnou část dat profilování. Zvažte použití <xref:System.Text.StringBuilder> třídy k vytvoření řetězce z více segmentů.  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -51,4 +46,3 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0001:
  Dvakrát klikněte na zprávu v okně Seznam chyb, přejděte [zobrazení podrobností funkce](../profiling/function-details-view.md) odběru vzorků data profilu. Najdete v částech programu, které se používají nejvíce často zřetězení řetězců. Pomocí třídy StringBuilder pro manipulace s řetězci komplexní, včetně operace sřetězení časté řetězec.  
   
  Další informace o tom, jak pracovat s řetězci [operace s řetězci](http://go.microsoft.com/fwlink/?LinkId=177816) část [kapitola 5 - zlepšení výkonu kódu spravované](http://go.microsoft.com/fwlink/?LinkId=177817) v knihovně Microsoft Patterns and Practices.
-

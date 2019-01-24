@@ -1,26 +1,21 @@
 ---
-title: 'Návod: Vytváření, úpravy a údržba programového testu UI | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytváření, úpravy a údržba programového testu UI | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: aff0363b1fe554e55cae7b58d79cd8f765e76d68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c110ace4eba116c578d9d675eeafe4f678ac9d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792230"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Návod: Vytváření, upravování a údržba programového testu UI
+# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Průvodce: Vytváření, úpravy a údržba programového testu UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation (WPF) pro demonstraci vytvoření, úpravy a správy programového testu uživatelského rozhraní. Návod poskytuje řešení pro opravu testů, které byly poškozeny různými chybami časování a refaktoringem ovládacích prvků.  
@@ -34,7 +29,7 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
   
 1.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.  
   
-     **Nový projekt** zobrazí se dialogové okno.  
+     Zobrazí se dialogové okno **Nový projekt**.  
   
 2.  V **nainstalováno** podokně rozbalte **Visual C#** a pak vyberte **Windows Desktop**.  
   
@@ -381,7 +376,7 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [kódované UI testy – podrobné informace – část 3 – ruční kódování](http://go.microsoft.com/fwlink/?LinkID=230575)  
   
 ### <a name="hands-on-lab"></a>Praktické cvičení  
- [Virtuální laboratoř na webu MSDN: Úvod do vytváření programových testů uživatelského rozhraní pomocí sady Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
+ [MSDN Virtual Lab: Úvod do vytváření programových testů uživatelského rozhraní pomocí sady Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
   
 ### <a name="faq"></a>Nejčastější dotazy  
  [Programové testy UI – nejčastější dotazy – 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -393,9 +388,6 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
   
 ## <a name="see-also"></a>Viz také  
  [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Začínáme s WPF Designer](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [Začínáme s WPF Designer](http://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Úpravy programových testů uživatelského rozhraní pomocí Editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
-
-
-

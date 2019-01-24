@@ -1,14 +1,9 @@
 ---
 title: Práce v pravidel nástroje Analýza kódu s editorem sad | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269643"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755880"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Práce s Editorem sad pravidel nástroje Analýza kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Editor sad pravidel analýzy kódu umožňuje určit pravidla, které jsou souč
 |------------|-----------------|  
 |**Upozornění**|Vygeneruje upozornění v **seznam chyb** okna.|  
 |**Chyba**|Dojde k chybě v **seznam chyb** okna.|  
-|**None**|Zakáže pravidlo.|  
+|**Žádné**|Zakáže pravidlo.|  
   
  Editor zobrazí pravidla ve stromové struktuře, která skupiny pravidla pomocí pravidla nastavena pole, které určíte. Chcete-li přidat nebo odebrat pravidla sadu pravidel, proveďte jeden nebo více z následujících kroků:  
   
@@ -69,7 +64,7 @@ Editor sad pravidel analýzy kódu umožňuje určit pravidla, které jsou souč
 |-----------|-----------------|  
 |**ID**|Identifikátor pravidla.|  
 |**Kategorie**|Kromě jejich členství v sadách pravidel pravidel analýzy kódu také jsou seskupené podle kategorie. Další informace najdete v tématu [spravovaného kódu upozornění analýzy kódu pro](../code-quality/code-analysis-for-managed-code-warnings.md).|  
-|**Jméno**|Název pravidla.|  
+|**Název**|Název pravidla.|  
 |**Namespace**|Obor názvů pravidla.|  
 |**Cílový typ**|Označuje, zda pravidlo je pro nativní, spravované nebo databáze kódu.|  
 |**Akce**|Akce provedená v případě porušení pravidla analýzy kódu, spusťte.<br /><br /> **Upozornění** – vygeneruje upozornění.<br /><br /> **Chyba** – vygeneruje chybu.<br /><br /> **Žádný** – zakáže pravidlo.<br /><br /> Můžete upravit pole akce. Nastavením této hodnoty na žádný je stejný jako zrušením zaškrtnutí políčka pro pravidlo.|  
@@ -81,6 +76,3 @@ Editor sad pravidel analýzy kódu umožňuje určit pravidla, které jsou souč
 -   Seřadit seznamy sadu pravidel, klikněte na záhlaví sloupce pole, podle kterého chcete řadit. Pokud jsou seskupené sady pravidel, každou skupinu je seřazen jednotlivě.  
   
 -   Sady pravidel filtrování podle hodnoty pole, klikněte na tlačítko filtru na záhlaví sloupce pole, podle kterého chcete filtrovat. Vyberte zaškrtávací pole hodnot, které chcete zobrazit a zrušte zaškrtnutí políček hodnot, které chcete skrýt.
-
-
-

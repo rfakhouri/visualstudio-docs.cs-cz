@@ -1,25 +1,20 @@
 ---
 title: Uvolňování paměti (VSPerfCmd) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3c9a57a8fa4b0610cc3cceb00e09749a2e5b077e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2bdb28f74dd305dc497521e95d38e00192c21c54
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769058"
 ---
 # <a name="gc-vsperfcmd"></a>Uvolňování paměti (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
   
 #### <a name="parameters"></a>Parametry  
  **přidělení**  
- Ve výchozím nastavení. Shromažďuje data o přidělování paměti rozhraní .NET Framework.  
+ Default (Výchozí). Shromažďuje data o přidělování paměti rozhraní .NET Framework.  
   
  **Doba platnosti**  
  Shromažďuje data o přidělování paměti rozhraní .NET Framework a .NET Framework data o životním cyklu objektu.  
@@ -57,10 +52,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /gc
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profilace služeb](../profiling/command-line-profiling-of-services.md)
-
-
-

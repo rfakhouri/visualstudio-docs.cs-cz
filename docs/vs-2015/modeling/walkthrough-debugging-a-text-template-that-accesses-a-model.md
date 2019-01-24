@@ -1,44 +1,41 @@
 ---
-title: 'Návod: Ladění textové šablony přistupující k modelu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Ladění textové šablony přistupující k modelu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792127"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Návod: Ladění textové šablony přistupující k modelu
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Průvodce: Ladění textové šablony přistupující k modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Při úpravě nebo přidat textové šablony řešení jazyka specifického pro doménu, může docházet k chybám při modul transformace šablony zdrojový kód nebo při kompilaci vygenerovaného kódu. Následující návod znázorňuje některé z akcí, které vám pomůžou ladění textové šablony.  
   
 > [!NOTE]
->  Další informace o textu šablony, najdete v článku [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Další informace o ladění textové šablony najdete v tématu [návod: ladění textové šablony](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+>  Další informace o textu šablony, najdete v článku [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Další informace o ladění textové šablony najdete v tématu [názorný postup: Ladění textové šablony](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Vytváření řešení jazyka specifického pro doménu  
  V tomto postupu vytvoříte řešení jazyka specifického pro doménu, která má následující vlastnosti:  
   
-- Název: DebuggingTestLanguage  
+- Jméno: DebuggingTestLanguage  
   
-- Šablona řešení: minimální jazykový  
+- Šablona řešení: Minimální jazykový  
   
 - Přípona souboru: .ddd  
   
-- Název společnosti: Fabrikam  
+- Název společnosti: Společnost Fabrikam  
   
-  Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [jak: Vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Vytvoření textové šablony  
  Přidejte textové šablony do vašeho řešení.  
@@ -164,7 +161,7 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
   
      (C#)  
   
-     **Kompilování transformace: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' neobsahuje definici pro 'ExampleModel.**  
+     **Kompilování transformace: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' neobsahuje definici pro 'ExampleModel.**  
   
      (Visual Basic)  
   
@@ -216,6 +213,3 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
 5.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na DebugTest.tt a potom klikněte na tlačítko **spustit vlastní nástroj**.  
   
      Systém nyní transformace textové šablony a generuje odpovídající soubor výstup. Neuvidíte všechny chyby **seznam chyb** okna.
-
-
-

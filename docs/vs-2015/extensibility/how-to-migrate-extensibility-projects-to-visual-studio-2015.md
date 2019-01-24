@@ -1,28 +1,23 @@
 ---
-title: 'Postupy: migrace projektů rozšíření do sady Visual Studio 2015 | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Migrace projektů rozšíření do sady Visual Studio 2015 | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 564e279d259cae879ca2925eed3309c30d7513db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9715a71869ebb24e2631fa962f7078cd7044b0cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793552"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Postupy: migrace projektů rozšíření do sady Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Postupy: Migrace projektů rozšíření do sady Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tady je postup upgradu rozšíření.  
@@ -36,7 +31,7 @@ Tady je postup upgradu rozšíření.
   
 2.  Po dokončení upgradu, změňte cestu k externí program na novou verzi devenv.exe. Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení**, klikněte na tlačítko **vlastnosti**. V **ladění** kartu, najít textového pole ve **externí program Start** a změňte cestu devenv.exe na cestu systému Visual Studio 2015, která by měl vypadat asi takhle nějak.:  
   
-     **%ProgramFiles%\Microsoft visual Studio 14.0\Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
 3.  Přidejte odkaz na Microsoft.VisualStudio.Shell.14.0.dll. (Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a klikněte na tlačítko **přidat / Reference**. Vyberte **rozšíření** kartu a potom zkontrolujte **Microsoft.VisualStudio.Shell.14.0**.)  
   
@@ -52,7 +47,7 @@ Tady je postup upgradu rozšíření.
   
 3.  Přidání verze NuGet referenčních sestavení sady SDK pro VS.  Pokud máte **odkazy Průzkumníka řešení** uzel, otevřete **spravovat balíčky NuGet...** Dialogové okno.  Pokud chcete získat další informace o tomto dialogovém okně, přečtěte si téma [spravovat NuGet balíčky pomocí dialogového okna](http://docs.nuget.org/Consume/Package-Manager-Dialog). Referenční sestavení sady SDK pro VS jsou publikovány v [nuget.org](http://www.nuget.org) podle [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
-4.  Pomocí **nuget.org** jako vaše **zdroj balíčku**, vyhledejte název balíčku NuGet, který by odpovídal požadovaný odkaz na sestavení (například: Microsoft.VisualStudio.Shell.14.0) a nainstalujte ho v vaší projekt.  NuGet může přidání více odkazů na sestavení splníte závislosti počáteční sestavení.  
+4.  Pomocí **nuget.org** jako vaše **zdroj balíčku**, vyhledejte název balíčku NuGet, který by odpovídal požadovaný odkaz na sestavení (například: Microsoft.VisualStudio.Shell.14.0) a nainstalujte ho do projektu.  NuGet může přidání více odkazů na sestavení splníte závislosti počáteční sestavení.  
   
      Pokud dáváte přednost, můžete přidat všechny referenční sestavení sady SDK pro VS najednou nainstalováním sady SDK pro VS [Meta balíčku](http://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
   
@@ -60,4 +55,3 @@ Tady je postup upgradu rozšíření.
   
 > [!NOTE]
 >  Není vyžadováno, že aktualizujete existující projekty rozšiřitelnosti použít NuGet referenčních sestavení a nástroje.  Může i nadále sestavení pomocí referenčních sestavení a nástroje, které jsou nainstalovány se sadou SDK pro VS.
-

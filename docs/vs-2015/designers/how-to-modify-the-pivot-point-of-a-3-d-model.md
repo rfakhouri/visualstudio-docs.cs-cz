@@ -1,25 +1,20 @@
 ---
 title: 'Postupy: Změna bodu otáčení 3D modelu | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774098"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Postupy: Změna bodu otáčení 3D modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Tento dokument popisuje způsob použití Editoru modelů změnit *bodu otáčen
   
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>Chcete-li změna bodu otáčení 3D modelu  
   
-1. Začátek s existující 3D modelu, jako je ten, který je popsaný v [postupy: vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md).  
+1. Začátek s existující 3D modelu, jako je ten, který je popsaný v [jak: Vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md).  
   
 2. Zadejte režim pivotu. Na **režim editoru modelů** nástrojů, zvolte **režim Pivotu** tlačítko aktivovat režim pivotu. Pole se zobrazí kolem **režim Pivotu** tlačítko k označení, že Editor modelů je nyní v režim pivotu. V režim pivotu ovlivňují operace, jako jsou překladu bodu otáčení objektu namísto strukturu objektů v prostoru světa.  
   
@@ -55,8 +50,5 @@ Tento dokument popisuje způsob použití Editoru modelů změnit *bodu otáčen
    ![Model, který má bod upravené otáčení domu](../designers/media/digit-modified-model.png "číslice upravit Model")  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)   
+ [Postupy: Vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)   
  [Editor modelů](../designers/model-editor.md)
-
-
-

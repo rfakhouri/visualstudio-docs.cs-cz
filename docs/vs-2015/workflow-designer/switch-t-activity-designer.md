@@ -1,11 +1,8 @@
 ---
 title: Přepínač&lt;T&gt; Návrhář aktivity | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
@@ -14,13 +11,13 @@ ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7e2baacdfb35e2360a0e9dcc56891cadbe7d3ff3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788417"
 ---
 # <a name="switchlttgt-activity-designer"></a>Přepínač&lt;T&gt; návrháře aktivit
 <xref:System.Activities.Statements.Switch%601> Aktivita vyhodnotí zadaný výraz a spustí aktivita z kolekce aktivit, jejichž přidružené klíč odpovídá hodnotě získané z vyhodnocení.  
@@ -40,7 +37,7 @@ ms.locfileid: "49844702"
 |Název vlastnosti|Požadováno|Použití|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje popisný název <xref:System.Activities.Statements.Switch%601> návrháře aktivit. Výchozí hodnota je přepínač\<Int32 >. Hodnotu lze upravit v **vlastnosti** okno nebo přímo v hlavičce návrháře.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> není bezpodmínečně nutné, je osvědčeným postupem je použití jednoho.|  
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Hodnota TRUE|Určuje výraz určený k porovnání s klíči v kolekci případy k určení takovém ke spuštění.|  
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Pravda|Určuje výraz určený k porovnání s klíči v kolekci případy k určení takovém ke spuštění.|  
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Určuje aktivita spustí, pokud není nalezena žádná shoda. Klikněte na tlačítko **přidat aktivitu** tlačítko v Návrháři můžete otevřít **výchozí** pole, ve kterém můžete vyřadit aktivity.|  
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Určuje případy, který se má vyhodnotit. Chcete-li přidat případ, klikněte na tlačítko **přidat nový případ** tlačítko v dolní části **přepínač\<T >** návrháře. Tlačítko se změní na textové pole (– pole se seznamem při výběru obecného typu při přidávání přepínač\<T > je řetězec nebo výčet). Po přidání klíče **malá a velká hodnota** pole oblasti případu rozšiřuje a aktivitu můžete vyřadit, kde text nápovědy "Sem přetáhněte aktivitu" k definování logiky provádění pro případ.|  
   

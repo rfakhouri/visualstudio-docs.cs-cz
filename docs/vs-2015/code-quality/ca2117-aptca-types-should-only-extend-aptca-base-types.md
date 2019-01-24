@@ -1,13 +1,9 @@
 ---
 title: 'CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2117
 - AptcaTypesShouldOnlyExtendAptcaBaseTypes
@@ -19,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5a8400e99d7b45a20021880628cb5152b6cef3a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786525"
 ---
-# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA
+# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy APTCA by měl rozšiřovat pouze základní typy APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,11 +32,11 @@ ms.locfileid: "53913317"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný typ v sestavení <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atribut je odvozen z typu deklarované v sestavení, který nemá atribut.
 
 ## <a name="rule-description"></a>Popis pravidla
- Ve výchozím nastavení, veřejné nebo chráněné typy v sestavení se silnými názvy jsou implicitně chráněné [požadavky na dědičnost](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pro úplný vztah důvěryhodnosti. Sestavení se silným názvem označené <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atribut (APTCA) nemají tuto ochranu. Atribut zakáže vyžádané dědičnosti. Díky tomu vystavené typy deklarované v sestavení odvoditelný typy, které nemají úplný vztah důvěryhodnosti.
+ Ve výchozím nastavení, veřejné nebo chráněné typy v sestavení se silnými názvy jsou implicitně chráněné [požadavky na dědičnost](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pro úplný vztah důvěryhodnosti. Sestavení se silným názvem označené <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atribut (APTCA) nemají tuto ochranu. Atribut zakáže vyžádané dědičnosti. Díky tomu vystavené typy deklarované v sestavení odvoditelný typy, které nemají úplný vztah důvěryhodnosti.
 
  Když je atribut APTCA uveden pro plně důvěryhodná sestavení a typ v sestavení je odvozen z typu, který neumožňuje volání částečně důvěryhodným volajícím, je možné zneužití zabezpečení. Pokud dva typy `T1` a `T2` splňovat následující podmínky, škodlivý volající použít typ `T1` obejít požadavek dědičnosti implicitní úplný vztah důvěryhodnosti, který chrání `T2`:
 
@@ -88,4 +84,4 @@ ms.locfileid: "53913317"
  [CA2116: Metody APTCA by měly volat pouze metody APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Viz také
- [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [sestavení rozhraní .NET Framework skriptem částečně důvěryhodný kód](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [používání knihoven z částečně důvěryhodného kódu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [požadavky na dědičnost](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [sestavení rozhraní .NET Framework skriptem částečně důvěryhodný kód](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [používání knihoven z částečně důvěryhodného kódu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [požadavky na dědičnost](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

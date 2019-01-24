@@ -1,14 +1,9 @@
 ---
-title: 'Rychlý Start: Analýza kódu pro C / C++ | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Rychlý start: Analýza kódu pro C / C++ | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,15 +11,15 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758197"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789865"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Rychlé zahájení: Analýza kódu pro C/C++
+# <a name="quick-start-code-analysis-for-cc"></a>Rychlý start: Analýza kódu pro C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zlepšit kvalitu vaší aplikace při spuštění analýzy kódu pravidelně na kód jazyka C nebo C++. To může pomoct najít běžné problémy, porušování programovacím vhodné nebo chyb, které je obtížné vyhledat pomocí testování. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože analýza kódu hledá vzory v konkrétním kódu, které jsou platné, ale přesto vytvořit problémy pro vy nebo ostatní uživatelé, kteří používají váš kód.  
@@ -132,9 +127,6 @@ Zlepšit kvalitu vaší aplikace při spuštění analýzy kódu pravidelně na 
   
 1.  **Filtr upozornění podle názvu nebo id upozornění**: Zadejte klíčové slovo v **filtr** textového pole.  
   
-2.  **Filtr upozornění projektem**: V řešení vícenásobného projektu, vyberte jeden nebo více projektů v seznamu v horní části napravo od v okně analýzy kódu. Zvolte název řešení Chcete-li zobrazit všechna upozornění.  
+2.  **Filtr upozornění projektem**: V řešení vícenásobného projektu, zvolte jeden nebo více projektů v seznamu nahoře napravo v okně analýzy kódu. Zvolte název řešení Chcete-li zobrazit všechna upozornění.  
   
-3.  **Filtr upozornění podle závažnosti**: ve výchozím nastavení, zprávy analýzy kódu jsou přiřazeny závažnost **upozornění**. Můžete přiřadit závažnost jednu nebo více zpráv jako **chyba** sada vlastních pravidel. Zvolte buď **upozornění** nebo **chyba** zobrazíte jen zprávy, které jsou přiřazeny příslušných závažnosti. Zvolte **všechny** zobrazíte všechny zprávy.
-
-
-
+3.  **Filtr upozornění podle závažnosti**: Ve výchozím nastavení, zprávy analýzy kódu jsou přiřazeny závažnost **upozornění**. Můžete přiřadit závažnost jednu nebo více zpráv jako **chyba** sada vlastních pravidel. Zvolte buď **upozornění** nebo **chyba** zobrazíte jen zprávy, které jsou přiřazeny příslušných závažnosti. Zvolte **všechny** zobrazíte všechny zprávy.

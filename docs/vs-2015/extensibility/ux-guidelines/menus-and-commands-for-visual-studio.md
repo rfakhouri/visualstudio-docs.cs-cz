@@ -1,23 +1,19 @@
 ---
 title: Nabídky a příkazy
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 270ea37a7e16934452b2a6598fc213fd628bcbbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3bb9a1d6fca5d68b9841d252b62af0db9dedd143
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943373"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802100"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Nabídek a příkazů pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -235,7 +231,7 @@ ms.locfileid: "53943373"
 
 #### <a name="when-naming-commands"></a>Pojmenování příkazy, pokud:
 
--   Vytvořte text tak, aby se snadno lokalizovatelný. Další informace o lokalizaci textu, naleznete v tématu [World připravenosti pro sadu Visual Studio](http://msdn.microsoft.com/en-us/1cc35051-8126-441f-bea9-059245a47b1d).
+-   Vytvořte text tak, aby se snadno lokalizovatelný. Další informace o lokalizaci textu, naleznete v tématu [World připravenosti pro sadu Visual Studio](http://msdn.microsoft.com/1cc35051-8126-441f-bea9-059245a47b1d).
 
 -   Být stručné. Příkazy by měl používat více než tří slov.
 

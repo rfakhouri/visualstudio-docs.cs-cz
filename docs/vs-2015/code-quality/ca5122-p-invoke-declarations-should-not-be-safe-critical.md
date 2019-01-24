@@ -1,24 +1,20 @@
 ---
 title: Deklarace CA5122 nespravovaného kódu nesmí být bezpečné kritické | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: f2581a6d-2a0e-40c1-b600-f5dc70909200
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 53cde17a66c72b1d2251ab513033589ac39ff068
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff316ac6f5d73e157e3dbef5126195bd0d62878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786543"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122: Deklarace volání nespravovaného kódu nesmí být kritické pro zabezpečení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +26,7 @@ ms.locfileid: "53857699"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Deklarace P/Invoke byla označena atributem <xref:System.Security.SecuritySafeCriticalAttribute>:
 
 ```csharp

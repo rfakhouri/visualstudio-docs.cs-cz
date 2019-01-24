@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.openlocfilehash: a7f3cd8d039f8ba313b32d74555fb61945042503
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403964"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786949"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -46,7 +46,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 (Nahradit `vs_enterprise.exe` odpovídajícím způsobem pro edici produktu instalujete.)
 
 >[!TIP]
-> Další příklady použití příkazového řádku pro instalaci sady Visual Studio 2017, najdete v článku [příklady parametrů příkazového řádku](command-line-parameter-examples.md) stránky.)
+> Další příklady použití příkazového řádku pro instalaci sady Visual Studio 2017, najdete v článku [příklady parametrů příkazového řádku](command-line-parameter-examples.md) stránky.
 
 | **Příkaz** | **Popis** |
 | ----------------------- | --------------- |
@@ -56,6 +56,8 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `repair` | Opraví zobrazí nainstalovaný produkt. |
 | `uninstall` | Odinstaluje zobrazí nainstalovaný produkt. |
 | `export` | **Novinka v 15.9**: Exportuje výběr instalace na konfigurační soubor instalace. **Poznámka:**: Jde použít jenom s vs_installer.exe. |
+
+### <a name="install-options"></a>Možnosti instalace
 
 | **Možnost instalace** | **Popis** |
 | ----------------------- | --------------- |
@@ -79,6 +81,8 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 
 > [!IMPORTANT]
 > Při zadávání více úloh a součástí, je nutné opakovat `--add` nebo `--remove` přepínač příkazového řádku pro každou položku.
+
+### <a name="layout-options"></a>Možnosti rozložení
 
 | **Možnosti rozložení** | **Popis** |
 | ----------------------- | --------------- |

@@ -1,11 +1,8 @@
 ---
-title: 'Postupy: vytvoření konzolových aplikací pracovních postupů stavového stroje (starší verze) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytváření konzolových aplikací pracovních postupů stavového stroje (starší verze) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - console applications, state machine workflows
@@ -15,20 +12,20 @@ ms.assetid: d6170b5d-5d4f-48e1-8257-c78604f27eac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a879838cceecc5229abf2c09b76208e4f42c5db8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bb6026def60be27535843a51d78c4c05657d385f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767746"
 ---
-# <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Postupy: vytvoření konzolových aplikací pracovních postupů stavového stroje (starší verze)
+# <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Postupy: Vytvoření konzolových aplikací pracovních postupů stavového stroje (starší verze)
 Postupujte podle těchto kroků a vytvořte projekt Konzolová aplikace pracovního postupu stavu počítače pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-state-machine-application-project"></a>Vytvoření projektu aplikace stav počítače  
   
-1.  Spusťte sadu Visual Studio.  
+1.  Spusťte Visual Studio.  
   
 2.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.  
   
@@ -49,7 +46,7 @@ Postupujte podle těchto kroků a vytvořte projekt Konzolová aplikace pracovn�
   
      Pokud chcete řešení adresář vytvořený pro projekt, vyberte **vytvořit adresář pro řešení** zaškrtněte políčko a zadejte název do pole **název řešení** pole.  
   
-8.  Klikněte na tlačítko **OK**.  
+8.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)   

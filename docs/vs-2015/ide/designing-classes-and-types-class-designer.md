@@ -1,14 +1,9 @@
 ---
 title: Navrhování tříd a typů (návrhář tříd) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio], designing
 - classes [Visual Studio], designing
@@ -16,13 +11,13 @@ ms.assetid: 381481a2-87f4-475b-a780-18e85c8af350
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e7fbefeef4a5993daeaf79088da7bd861505421c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795509"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Navrhování tříd a typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +28,19 @@ Pomocí **návrhář tříd**, nejde vizualizovat pouze tříd a typů, ale je t
 >  Při práci s návrhář tříd, měli byste zkontrolovat kód, který vysílá před spouští aby bylo možné ověřit, zda kód je vhodný pro kontext zabezpečení.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: Vytváření typů pomocí Návrháře tříd](../ide/how-to-create-types-by-using-class-designer.md)  
+ [Postupy: Vytváření typů pomocí návrháře tříd](../ide/how-to-create-types-by-using-class-designer.md)  
   
  Popisuje, jak můžete vytvořit typ diagramu tříd.  
   
- [Postupy: Definice dědičnosti mezi typy (Návrhář tříd)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Postupy: Vytvoření dědičnosti mezi typy (návrhář tříd)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
  Vysvětluje, jak definovat vztah dědičnosti mezi typy.  
   
- [Postupy: Vytvoření asociací mezi typy (Návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Postupy: Vytvoření asociací mezi typy (návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)  
   
  Popisuje, jak definovat asociace v diagramu tříd.  
   
- [Postupy: Vizualizace asociace kolekce (Návrhář tříd)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [Postupy: Vizualizace asociace kolekce (návrhář tříd)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  Vysvětluje, jak definovat asociace kolekce v Návrháři tříd.  
   
@@ -60,6 +55,3 @@ Pomocí **návrhář tříd**, nejde vizualizovat pouze tříd a typů, ale je t
   
 ## <a name="see-also"></a>Viz také  
  [Práce s diagramy tříd (Návrhář tříd)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Použití paralelních zásobníků okno | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 602fdd683ecb1b3244289c305e4fc850d337b03e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795667"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Použití okna Paralelní zásobníky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51792031"
 |Popisek písmeno|Název elementu|Popis|  
 |--------------------|------------------|-----------------|  
 |OBJEKT|Segment zásobník volání nebo uzlu|Obsahuje řadu metoda kontexty pro jedno nebo více vláken. Pokud uzel nemá žádné řádky šipky k ní připojená, to představuje cestu celý volání pro podprocesy.|  
-|B|Modré zvýraznění|Označuje volání cestu aktuální vlákno.|  
+|B|Blue Highlight|Označuje volání cestu aktuální vlákno.|  
 |C|Šipka řádky|Připojte uzly k vytvoření volání celou cestu pro podprocesy.|  
 |D|Popisek tlačítka na záhlaví uzlu|Zobrazí ID a uživatelem definovaný název každé vlákno, jehož cesta volání sdílí tento uzel.|  
 |E|Kontext – metoda|Představuje jeden nebo více rámců zásobníku v stejným způsobem.|  
@@ -130,6 +125,3 @@ ms.locfileid: "51792031"
  [Používání okna úloh](../debugger/using-the-tasks-window.md)   
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task – třída](../extensibility/debugger/task-class-internal-members.md)
-
-
-

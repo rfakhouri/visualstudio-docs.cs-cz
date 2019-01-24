@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy činnosti UML: Referenční | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Diagramy činnosti UML: Referenční dokumentace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.diagram
 - vs.teamarch.activitydiagram.toolbox
@@ -22,15 +19,15 @@ ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803370"
 ---
-# <a name="uml-activity-diagrams-reference"></a>Diagramy činnosti UML: referenční dokumentace
+# <a name="uml-activity-diagrams-reference"></a>Diagramy činnosti UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *Diagram činnosti* ukazuje obchodní proces nebo proces softwaru jako tok práci prostřednictvím obnáší sérii akcí. Lidé, softwarové součásti nebo počítače mohou provádět tyto akce.  
@@ -39,13 +36,13 @@ ms.locfileid: "51810465"
   
 - Obchodních procesů nebo toku práce mezi uživateli a systému. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
-- Provést kroky v případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Provést kroky v případu použití. Další informace najdete v tématu [diagramy případů použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - Protokol software, tedy povolených sekvence interakcí mezi komponentami.  
   
 - Algoritmus softwaru.  
   
-  Toto téma popisuje elementy, které můžete použít v diagramech aktivit. Podrobnější informace o vykreslování aktivit najdete v článku diagramy [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md). Chcete-li vytvořit diagram činností UML, na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**. Další informace o tom, jak nakreslit diagramy modelování obecně naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+  Toto téma popisuje elementy, které můžete použít v diagramech aktivit. Podrobnější informace o vykreslování aktivit najdete v článku diagramy [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md). Chcete-li vytvořit diagram činností UML, na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**. Další informace o tom, jak nakreslit diagramy modelování obecně naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Čtení diagramy činnosti  
  Tabulky v následujících částech popisují prvky, které můžete použít v diagramu činnosti a jejich hlavní vlastnosti. Úplný seznam vlastnosti prvků, naleznete v tématu [vlastnosti elementů v diagramech činnosti UML](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  
@@ -55,7 +52,7 @@ ms.locfileid: "51810465"
  Další diagram, představte si, že token, nebo vlákna ovládací prvek, předá konektory ze jednu akci na další.  
   
 ### <a name="simple-control-flows"></a>Jednoduché řízení toků  
- Můžete zobrazit posloupnost akcí se větve a smyčky. Další informace o tom, jak používat zde popsané prvky naleznete v části popisující tok řízení tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+ Můžete zobrazit posloupnost akcí se větve a smyčky. Další informace o tom, jak používat zde popsané prvky naleznete v části popisující tok řízení tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Jednoduchý tok řízení](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")  
   
@@ -73,7 +70,7 @@ ms.locfileid: "51810465"
 |9|**Volat akci chování**|Akce, která je definována v další podrobnosti o jiného diagramu činnosti.<br /><br /> -   **IsSynchronous** – Pokud je nastavena hodnota true a akce počká, až do doby ukončení aktivity.<br />-   **Chování** -vyvolaná aktivita.|  
 |(není vidět)|**Volání operace akce**|Akce, která volá operace v instanci třídy.|  
 ||**Aktivita**|Postup, který je znázorněný v diagramu činnosti. Pokud chcete zobrazit vlastnosti aktivity, musíte vybrat v **Průzkumníku modelů UML**.<br /><br /> -   **Je jen pro čtení** – Pokud je nastavena hodnota true, aktivita by neměly měnit stav libovolného objektu.<br />-   **Je jedno provedení** – Pokud je nastavena hodnota true a bylo nanejvýš jedno provedení tohoto diagramu současně.|  
-||**Diagram činností UML**|Diagram zobrazující aktivity. Pokud chcete zobrazit její vlastnosti, klikněte na prázdnou část diagramu. **Poznámka:** názvy diagramu činnosti, soubor, který obsahuje diagram a zobrazuje diagram aktivity mohou být jiný.|  
+||**Diagram činností UML**|Diagram zobrazující aktivity. Pokud chcete zobrazit její vlastnosti, klikněte na prázdnou část diagramu. **Poznámka:**  Názvy diagramu činnosti, soubor, který obsahuje diagram a aktivity ve diagramu zobrazí můžou být jiné.|  
   
 ### <a name="concurrent-flows"></a>Souběžné toků  
  Můžete popsat pořadí akcí, které jsou spouštěny ve stejnou dobu. Další informace najdete v tématu kreslení souběžných toků.  
@@ -105,6 +102,3 @@ ms.locfileid: "51810465"
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Položky nástroje MSBuild | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770847"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
   
     -   [Atribut KeepMetadata](#BKMK_KeepMetadata)  
   
-    -   [Atribut RemoveMetadata](#BKMK_RemoveMetadata)  
+    -   [RemoveMetadata Attribute](#BKMK_RemoveMetadata)  
   
     -   [Atribut KeepDuplicates](#BKMK_KeepDuplicates)  
   
@@ -93,9 +88,9 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
 -   Od verze rozhraní .NET Framework 3.5 `Target` prvky mohou obsahovat [ItemGroup](../msbuild/itemgroup-element-msbuild.md) prvky, které mohou obsahovat položky elementy.  
   
 ##  <a name="BKMK_ReferencingItems"></a> Odkazování na položky v souboru projektu  
- Chcete-li odkazovat na typy položek v celém souboru projektu, použijte syntaxi @(`ItemType`). Například typ položky v předchozím příkladu by odkazovat pomocí `@(Compile)`. Pomocí následující syntaxe můžete předat položek úkolů zadáním položky jako parametr dané úlohy. Další informace najdete v tématu [postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
+ Chcete-li odkazovat na typy položek v celém souboru projektu, použijte syntaxi @(`ItemType`). Například typ položky v předchozím příkladu by odkazovat pomocí `@(Compile)`. Pomocí následující syntaxe můžete předat položek úkolů zadáním položky jako parametr dané úlohy. Další informace najdete v tématu [jak: Výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
   
- Ve výchozím nastavení jsou položky Typ položky oddělené středníkem (;) při je rozbalený. Pomocí syntaxe @(*ItemType*, "*oddělovač*") Chcete-li určit oddělovač jiné než výchozí. Další informace najdete v tématu [postupy: zobrazení položce seznamu oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Ve výchozím nastavení jsou položky Typ položky oddělené středníkem (;) při je rozbalený. Pomocí syntaxe @(*ItemType*, "*oddělovač*") Chcete-li určit oddělovač jiné než výchozí. Další informace najdete v tématu [jak: Zobrazení seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="BKMK_Wildcards"></a> Použití zástupných znaků k určení položek  
  Můžete použít **, \*, a? zástupné znaky jako vstupy pro sestavení namísto vypisování každého souboru zvlášť zadat skupiny souborů.  
@@ -118,7 +113,7 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- Další informace o zástupných znacích naleznete v tématu [postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
+ Další informace o zástupných znacích naleznete v tématu [jak: Výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
   
 ##  <a name="BKMK_ExcludeAttribute"></a> Pomocí atributu vyloučení  
  Může obsahovat prvky položky `Exclude` atribut, který vyloučí konkrétní položky (soubory) z tohoto typu položky. `Exclude` Atribut se obvykle používá spolu s zástupné znaky. Například následující kód XML přidá každý .cs soubor v adresáři CSFile typu položky, s výjimkou `DoNotBuild.cs` souboru.  
@@ -136,7 +131,7 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Další informace najdete v tématu [postupy: vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Další informace najdete v tématu [jak: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="BKMK_ItemMetadata"></a> Metadata položky  
  Položky mohou obsahovat metadata spolu s informacemi v `Include` a `Exclude` atributy. Tato metadata je možné podle úlohy, které vyžadují další informace o položkách nebo dávkové úlohy a cíle. Další informace najdete v tématu [dávkování](../msbuild/msbuild-batching.md).  
@@ -362,12 +357,10 @@ Output:
   
 ## <a name="see-also"></a>Viz také  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)  
- [Nástroj MSBuild](msbuild.md)   
- [Postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md)   
- [Postupy: vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Postupy: zobrazování seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [MSBuild](msbuild.md)   
+ [Postupy: Výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md)   
+ [Postupy: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Postupy: Zobrazení seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definice položek](../msbuild/item-definitions.md)   
  [Dávkové zpracování](../msbuild/msbuild-batching.md)   
  [Item – element (MSBuild)](../msbuild/item-element-msbuild.md)
-
-

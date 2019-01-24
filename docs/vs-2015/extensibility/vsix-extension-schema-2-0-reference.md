@@ -1,27 +1,22 @@
 ---
 title: VSIX Extension Schema 2.0 – referenční informace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785928"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753580"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Extension Schema 2.0 – referenční informace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru s
   
 -   `<Identity>` -Toto definuje identifikační informace pro tento balíček a zahrnuje následující atributy:  
   
-    -   `Id` – Tento atribut musí být jedinečné ID pro balíček zvolí jeho autor. Název musí být kvalifikovány stejným způsobem, jako jsou typy CLR namespaced: Company.Product.Feature.Name. `Id` Atribut je maximálně 100 znaků.  
+    -   `Id` – Tento atribut musí být jedinečné ID pro balíček zvolí jeho autor. Název musí být kvalifikovány stejným způsobem jako typy CLR jsou namespaced: Company.Product.Feature.Name. `Id` Atribut je maximálně 100 znaků.  
   
     -   `Version` – Ten definuje verze tento balíček a jeho obsah. Tento atribut řídí formát Správa verzí sestavení CLR: Hlavníverze.podverze.Build.revize (1.2.40308.00). Balíček s vyšší číslo verze je považován za aktualizace balíčku a je možné nainstalovat přes existující nainstalovanou verzi.  
   
@@ -101,7 +96,7 @@ Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru s
   
 -   `<InstallationTarget>` – Tento prvek určuje umístění, kde instalátor VSIX nainstaluje balíček. Pokud hodnota `Scope` atribut je "ProductExtension" balíček, musí jako cíl skladové položky, který má nainstalovaný soubor manifestu jako součást svůj obsah rozbalí do inzerovat její dostupnost pro rozšíření. `<InstallationTarget>` Element má následující atributy, kdy `Scope` atribut má explicitní nebo výchozí hodnotu "ProductExtension":  
   
-    -   `Id` – Tento atribut určuje balíček.  Atribut konvenci, obor názvů: Company.Product.Feature.Name. `Id` Atribut může obsahovat jenom alfanumerické znaky a je maximálně 100 znaků. Očekávané hodnoty:  
+    -   `Id` – Tento atribut určuje balíček.  Atribut následující konvence oboru názvů: Company.Product.Feature.Name. `Id` Atribut může obsahovat jenom alfanumerické znaky a je maximálně 100 znaků. Očekávané hodnoty:  
   
         -   Microsoft.VisualStudio.IntegratedShell  
   
@@ -222,4 +217,3 @@ Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru s
   
 ## <a name="see-also"></a>Viz také  
  [Odesílání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Profilace z příkazového řádku pomocí vzorkování | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Profilace z příkazového řádku pomocí vzorkování | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -17,15 +12,15 @@ ms.assetid: 1d53972f-6f35-4842-8c74-1b627f18c70a
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b46af3a5485f896e1a5014c094646f364876d0d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783531"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Návod: Profilace z příkazového řádku s použitím vzorkování
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Průvodce: Příkazový řádek profilování pomocí vzorkování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje příkazového řádku a vzorkování identifikovat problémy s výkonem.  
@@ -113,9 +108,6 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje přík
 ## <a name="see-also"></a>Viz také  
  [Přehled výkonnostní relace](../profiling/performance-session-overview.md)   
  [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)   
  [Zobrazení sestav výkonu](../profiling/performance-report-views.md)
-
-
-

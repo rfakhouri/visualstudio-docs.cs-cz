@@ -1,24 +1,19 @@
 ---
 title: Konfigurace testů jednotek s použitím souboru .runsettings | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8d9b03c3b3e418a59c5cea40d61c1ad4c5024d1d
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 12acdaa6884a657782aa1e61e0a02f7118a59392
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154486"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792151"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím souboru .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,7 +128,7 @@ Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru
 |`ResultsDirectory`||Adresář, kde budou umístěny výsledky testů.|  
 |`TargetFrameworkVersion`|Framework40|Framework35, Framework40, Framework45<br /><br /> Toto určuje, která verze rozhraní pro testování částí slouží k zjištění a provedení testů. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|  
 |`TargetPlatform`|x86|x86, x64|  
-|`TreatTestAdapterErrorsAsWarnings`|false (nepravda)|false, true|  
+|`TreatTestAdapterErrorsAsWarnings`|false|false, true|  
 |`TestAdaptersPaths`||Jeden nebo více cest k adresáři, kde se nachází TestAdapters|  
 |`MaxCpuCount`|1|Tento ovládací prvky stupeň paralelní provádění testů při spuštění jednotky testů, pomocí dostupných jader v počítači.  Prováděcí modul testu spouští jako samostatného procesu na každém z dostupných jader a poskytuje každé jádro kontejner s testy ke spuštění, jako jsou sestavení, knihovna DLL nebo relevantní artefakt.  Jednotkou plánování je kontejnerem testu.  V jednotlivých kontejnerech spuštění testů podle rozhraní pro testování.  Pokud existuje spousta kontejnerů, pak jako zpracovává dokončení provádění testů v kontejneru, jsou uvedeny k dalšímu dostupnému kontejneru.<br /><br /> Může být MaxCpuCount:<br /><br /> n, kde 1 < = n < = počet jader: až n procesů se spustí<br /><br /> n, kde n = libovolné jiné hodnoty: počet procesů spuštěných bude až až dostupných jader v počítači|  
   
@@ -156,20 +151,17 @@ Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru
   
 |Konfigurace|Výchozí|Hodnoty|  
 |-------------------|-------------|------------|  
-|ForcedLegacyMode|false (nepravda)|V sadě Visual Studio 2012 byl optimalizován adaptér MSTest tak, aby byl rychlejší a lépe škálovatelný. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu `true` aby používala starší testovací adaptér.<br /><br /> Toto nastavení můžete například použít, pokud máte pro testování částí určen soubor app.config.<br /><br /> Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|  
-|IgnoreTestImpact|false (nepravda)|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [jak: Shromáždění dat pro zkontrolovat, které testy mají být spuštěny po změně kódu](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|ForcedLegacyMode|false|V sadě Visual Studio 2012 byl optimalizován adaptér MSTest tak, aby byl rychlejší a lépe škálovatelný. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu `true` aby používala starší testovací adaptér.<br /><br /> Toto nastavení můžete například použít, pokud máte pro testování částí určen soubor app.config.<br /><br /> Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|  
+|IgnoreTestImpact|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [jak: Shromáždění dat pro zkontrolovat, které testy mají být spuštěny po změně kódu](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||Zde můžete určit soubor s nastavením testu, který chcete použít v adaptéru MSTest. Můžete také určit soubor nastavení testu pomocí nabídky **testování**, **nastavení testu**, **vybrat soubor nastavení testu**.<br /><br /> Pokud chcete zadat tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
-|KeepExecutorAliveAfterLegacyRun|false (nepravda)|Po dokončení běhu testu je adaptér MSTest vypnut. Jakýkoli proces, který je spuštěn jako část testu, bude v tuto chvíli také ukončen. Pokud chcete zachovat prováděcí modul testování v provozu, přepněte tuto konfiguraci na hodnotu true.<br /><br /> Toto nastavení můžete například použít pro zachování chodu prohlížeče mezi programovými testy uživatelského rozhraní.|  
-|DeploymentEnabled|true (pravda)|Pokud nastavíte hodnotu false, nezkopírují se položky nasazení, které jste určili v testovací metodě, do adresáře nasazení.|  
-|CaptureTraceOutput|true (pravda)|Pomocí příkazu Trace.WriteLine můžete zapisovat do trasování ladění z testovací metody. Pomocí této konfigurace můžete vypnout tato trasování ladění.|  
-|DeleteDeploymentDirectoryAfterTestRunIsComplete|true (pravda)|Nastavením této hodnoty na false můžete po testovacím běhu zachovat adresář nasazení.|  
-|MapInconclusiveToFailed|false (nepravda)|Pokud se test vrátí v neprůkazném stavu, je obvykle v aplikaci Průzkumník testů mapován na stav Vynecháno. Pokud chcete, aby se neprůkazné testy zobrazovaly ve stavu Selhalo, je třeba použít tuto konfiguraci.|  
-|InProcMode|false (nepravda)|Pokud chcete testy spouštět ve stejném procesu jako adaptér MSTest, nastavte tuto hodnotu na true. Toto nastavení poskytuje malé zvýšení výkonu. Pokud je však test ukončen výjimkou, nebudou ostatní testy pokračovat.|  
-|AssemblyResolution|false (nepravda)|Při hledání a spouštění testů jednotek, můžete určit cest na další sestavení.  Například pomocí těchto cest pro závislosti sestavení, která není se nacházejí ve stejném adresáři jako testovací sestavení.  Pokud chcete zadat cestu, použijte prvek "Cesta k adresáři".  Cesty mohou obsahovat proměnné prostředí.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
+|KeepExecutorAliveAfterLegacyRun|false|Po dokončení běhu testu je adaptér MSTest vypnut. Jakýkoli proces, který je spuštěn jako část testu, bude v tuto chvíli také ukončen. Pokud chcete zachovat prováděcí modul testování v provozu, přepněte tuto konfiguraci na hodnotu true.<br /><br /> Toto nastavení můžete například použít pro zachování chodu prohlížeče mezi programovými testy uživatelského rozhraní.|  
+|DeploymentEnabled|true|Pokud nastavíte hodnotu false, nezkopírují se položky nasazení, které jste určili v testovací metodě, do adresáře nasazení.|  
+|CaptureTraceOutput|true|Pomocí příkazu Trace.WriteLine můžete zapisovat do trasování ladění z testovací metody. Pomocí této konfigurace můžete vypnout tato trasování ladění.|  
+|DeleteDeploymentDirectoryAfterTestRunIsComplete|true|Nastavením této hodnoty na false můžete po testovacím běhu zachovat adresář nasazení.|  
+|MapInconclusiveToFailed|false|Pokud se test vrátí v neprůkazném stavu, je obvykle v aplikaci Průzkumník testů mapován na stav Vynecháno. Pokud chcete, aby se neprůkazné testy zobrazovaly ve stavu Selhalo, je třeba použít tuto konfiguraci.|  
+|InProcMode|false|Pokud chcete testy spouštět ve stejném procesu jako adaptér MSTest, nastavte tuto hodnotu na true. Toto nastavení poskytuje malé zvýšení výkonu. Pokud je však test ukončen výjimkou, nebudou ostatní testy pokračovat.|  
+|AssemblyResolution|false|Při hledání a spouštění testů jednotek, můžete určit cest na další sestavení.  Například pomocí těchto cest pro závislosti sestavení, která není se nacházejí ve stejném adresáři jako testovací sestavení.  Pokud chcete zadat cestu, použijte prvek "Cesta k adresáři".  Cesty mohou obsahovat proměnné prostředí.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md)   
  [Zadání nastavení testu pro testy Visual Studia](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Cílové pořadí sestavení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764858"
 ---
 # <a name="target-build-order"></a>Pořadí sestavení cílů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřaze
   
  Importované projekty mohou mít své vlastní `InitialTargets` atributy. Všechny počáteční cíle jsou agregovány dohromady a spusťte v uvedeném pořadí.  
   
- Další informace najdete v tématu [jak: Určete který cíl sestavení první](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Další informace najdete v tématu [jak: Určení prvního cíle k sestavení](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Výchozí cíle  
  `DefaultTargets` Atribut [projektu](../msbuild/project-element-msbuild.md) element určuje, které cíl nebo cíle jsou sestaveny Pokud cíl není explicitně zadán v příkazovém řádku.  
@@ -71,7 +66,7 @@ Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřaze
   
  Importované projekty mohou mít své vlastní `DefaultTargets` atributy. První `DefaultTargets` atribut určí výchozí cíle se spustí.  
   
- Další informace najdete v tématu [jak: Určete který cíl sestavení první](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Další informace najdete v tématu [jak: Určení prvního cíle k sestavení](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>První cíl  
  Pokud nástroj MSBuild spustí první cíl neexistují žádné počáteční cíle, výchozí cíle nebo cílů příkazového řádku, zjistí v souboru projektu nebo libovolný importovaný projekt soubory.  
@@ -129,6 +124,3 @@ Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřaze
   
 ## <a name="see-also"></a>Viz také  
  [Cíle](../msbuild/msbuild-targets.md)
-
-
-

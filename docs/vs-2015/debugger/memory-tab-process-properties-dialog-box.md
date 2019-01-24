@@ -1,27 +1,22 @@
 ---
 title: Karta paměť, dialogové okno vlastností procesu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 92718a20f5deb19890a58d68af85e7f897f2440a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b70c5a982da866cbeb9e9907859ad4d270d79bd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772086"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Karta Paměť, dialogové okno vlastností procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,6 +38,3 @@ Použití **paměti** zobrazte použití paměti v procesu. Pro zobrazení [dial
 |**Vyhrazené bajty**|Celková velikost virtuální paměti vyhrazená pro budoucí použití tímto procesem.|  
 |**Volné bajty bitové kopie**|Velikost virtuálního adresového prostoru, který se nepoužívá nebo vyhrazený pro obrázky v rámci tohoto procesu.|  
 |**Vyhrazené bajty bitové kopie**|Součet všech virtuální paměti vyhrazená imagí spuštění v rámci tohoto procesu.|
-
-
-

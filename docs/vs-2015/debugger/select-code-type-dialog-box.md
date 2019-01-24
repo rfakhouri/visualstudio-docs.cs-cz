@@ -1,14 +1,9 @@
 ---
 title: Kód typu dialogové okno Vybrat | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.selectengines
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d24f20741ee3934a5835aeac852a279ac6cb2e77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21e678df1fa3dc9ca237e9a8cb4e377fb27b0aaf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801807"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791824"
 ---
 # <a name="select-code-type-dialog-box"></a>Dialogové okno Vybrat typ kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ Chcete-li otevřít toto dialogové okno, otevřete **připojit k procesu** dial
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-
-
-

@@ -1,13 +1,9 @@
 ---
 title: 'CA2116: Metody APTCA by měly volat pouze metody APTCA | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -19,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 79ba80dc732b407cf32ec388583734fa0fd7a4f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761289"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA by měly volat pouze metody APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ ms.locfileid: "53905894"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Metodu v sestavení <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atribut volá metodu v sestavení, který nemá atribut.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -53,7 +49,7 @@ ms.locfileid: "53905894"
   Částečně důvěryhodné volající `X` lze zavolat metodu `M1`, způsobující `M1` volat `M2`. Protože `M2` nemá atribut APTCA, jeho bezprostředního volajícího (`M1`) musí uspokojit požadavky propojení pro úplnou důvěryhodnost; `M1` má úplný vztah důvěryhodnosti a proto splňuje tato kontrola. Je bezpečnostní riziko, protože `X` není součástí uspokojit poptávku odkaz, který chrání `M2` z nedůvěryhodných volajících. Metody s atributem APTCA proto nesmějí volat metody, které nemají atribut.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Pokud je vyžadován atribut APTCA, použijte k ochraně metodu, která volá do sestavení úplné důvěryhodnosti vyžádání. Vyžádání vás bude záviset na konkrétní oprávnění funkce vystavené metodu. Pokud je to možné, Chraňte metody s požadavky pro úplný vztah důvěryhodnosti k zajištění toho, že základní funkce není vystaven částečně důvěryhodné volající. Pokud to není možné, vyberte sadu oprávnění, která efektivně chrání vystavené funkce. Další informace o požadavky najdete v tématu [požadavky](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
+ Pokud je vyžadován atribut APTCA, použijte k ochraně metodu, která volá do sestavení úplné důvěryhodnosti vyžádání. Vyžádání vás bude záviset na konkrétní oprávnění funkce vystavené metodu. Pokud je to možné, Chraňte metody s požadavky pro úplný vztah důvěryhodnosti k zajištění toho, že základní funkce není vystaven částečně důvěryhodné volající. Pokud to není možné, vyberte sadu oprávnění, která efektivně chrání vystavené funkce. Další informace o požadavky najdete v tématu [požadavky](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Můžete bezpečně potlačit upozornění tohoto pravidla, ujistěte se, že funkce vystavené metodu přímo nebo nepřímo nepovoluje volající pro přístup k citlivé informace, operace nebo prostředky použité destruktivním způsobem.
@@ -81,4 +77,4 @@ ms.locfileid: "53905894"
  [CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Viz také
- [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [sestavení rozhraní .NET Framework skriptem částečně důvěryhodný kód](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [používání knihoven z částečně důvěryhodného kódu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [požadavky](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Data a modelování](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [sestavení rozhraní .NET Framework skriptem částečně důvěryhodný kód](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [používání knihoven z částečně důvěryhodného kódu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [požadavky](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Data a modelování](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

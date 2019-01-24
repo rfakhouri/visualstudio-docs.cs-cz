@@ -1,14 +1,9 @@
 ---
 title: Dokumenty, prostředí, dialogové okno Možnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -37,13 +32,13 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778575"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49246204"
 Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování dokumentů v integrovaném vývojovém prostředí (IDE) a spravovat externí změny dokumentů a souborů. Toto dialogové okno se zpřístupní po kliknutí **možnosti** na **nástroje** nabídky a následným výběrem **dokumenty** v **prostředí** uzlu. Pokud **dokumenty** se nezobrazují v seznamu vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]
->  Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Znovu použít aktuální okno dokumentu, je-li uložit**  
  Pokud je vybráno, zavře aktuální dokument, pokud byla uložena a ve stejném okně se otevře nový dokument. Pokud vaše aktuální dokument nebyl uložen, zůstane otevřený a je otevřen nový dokument v samostatném okně. Tato možnost vybrána, nové dokumenty vždy otevře v samostatném systému windows.  
@@ -95,6 +90,3 @@ Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování
  [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)   
  [Různé soubory](../../ide/reference/miscellaneous-files.md)   
  [Hledání a nahrazení textu](../../ide/finding-and-replacing-text.md)
-
-
-

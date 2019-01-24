@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1a380d549fa10c3229601a1a9541679c7e3ac1e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ac7a5665b287f51e59d99d21802acc252a55a99a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793228"
 ---
-# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Postupy: Programová kontrola aktualizací aplikace pomocí rozhraní API nasazení ClickOnce
+# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Postupy: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ClickOnce poskytuje dva způsoby, jak je nasadíte aktualizaci aplikace. V první metodě můžete nakonfigurovat nasazení ClickOnce, aby automaticky vyhledávat aktualizace v určitých intervalech. Ve druhé metodě můžete napsat kód, který používá <xref:System.Deployment.Application.ApplicationDeployment> třída aktualizace na základě události, jako je například požadavek uživatele.  
@@ -38,7 +33,7 @@ ClickOnce poskytuje dva způsoby, jak je nasadíte aktualizaci aplikace. V prvn�
  Aby bylo možné prostřednictvím kódu programu aktualizuje synchronně aplikaci ClickOnce, je nutné zadat umístění pro aktualizace. To se někdy označuje jako zprostředkovatel nasazení. Další informace o nastavení této vlastnosti naleznete v tématu [Výběr strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 > [!NOTE]
->  Můžete také použít techniky popsané níže, aby při nasazování aplikace z jednoho místa, ale její aktualizace z jiného. Další informace najdete v tématu [postupy: určení alternativního umístění pro aktualizace nasazení](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
+>  Můžete také použít techniky popsané níže, aby při nasazování aplikace z jednoho místa, ale její aktualizace z jiného. Další informace najdete v tématu [jak: Zadejte alternativní umístění pro aktualizace nasazení](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
   
 ### <a name="to-check-for-updates-programmatically"></a>Kontrolu aktualizací prostřednictvím kódu programu  
   
@@ -54,7 +49,7 @@ ClickOnce poskytuje dva způsoby, jak je nasadíte aktualizaci aplikace. V prvn�
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Použití Mage.exe k nasazení aplikace, která zjišťuje dostupnost aktualizací prostřednictvím kódu programu  
   
--   Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je vysvětleno v [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Při volání metody Mage.exe ke generování manifestu nasazení, je nutné použít přepínač příkazového řádku `providerUrl`a chcete zadat adresu URL, kde má technologie ClickOnce aktualizace. Pokud vaše aplikace bude aktualizovat z [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), například volání ke generování manifestu nasazení může vypadat takto:  
+-   Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je vysvětleno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Při volání metody Mage.exe ke generování manifestu nasazení, je nutné použít přepínač příkazového řádku `providerUrl`a chcete zadat adresu URL, kde má technologie ClickOnce aktualizace. Pokud vaše aplikace bude aktualizovat z [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), například volání ke generování manifestu nasazení může vypadat takto:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -62,15 +57,12 @@ ClickOnce poskytuje dva způsoby, jak je nasadíte aktualizaci aplikace. V prvn�
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Použití MageUI.exe pro nasazení aplikace, která zjišťuje dostupnost aktualizací prostřednictvím kódu programu  
   
--   Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je vysvětleno v [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Na **možnosti nasazení** kartu, nastavte **počáteční umístění** pole do manifestu aplikace ClickOnce by měla vyhledávat aktualizace. Na **možnosti aktualizace** kartu, zrušte **tato aplikace by měla vyhledávat aktualizace** zaškrtávací políčko.  
+-   Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je vysvětleno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Na **možnosti nasazení** kartu, nastavte **počáteční umístění** pole do manifestu aplikace ClickOnce by měla vyhledávat aktualizace. Na **možnosti aktualizace** kartu, zrušte **tato aplikace by měla vyhledávat aktualizace** zaškrtávací políčko.  
   
 ## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework  
  Vaše aplikace musí mít oprávnění plné důvěryhodnosti pro použití programových aktualizací.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: určení alternativního umístění pro aktualizace nasazení](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
+ [Postupy: Zadejte alternativní umístění pro aktualizace nasazení](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
  [Výběr strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)
-
-
-

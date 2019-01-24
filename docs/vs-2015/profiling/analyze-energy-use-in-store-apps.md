@@ -1,14 +1,9 @@
 ---
 title: Analýza spotřeby energie v aplikacích pro Store | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 102302a1c14f379745007135593cc039aa9f8836
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790350"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analýza spotřeby energie v aplikacích pro Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,7 +129,7 @@ if (performance && performance.mark) {
 |![3. krok](../profiling/media/procguid-3.png "ProcGuid_3")|Přetažením modrých panelů můžete vybrat určitou oblast časové osy a omezit tak sestavu jen na tuto část časové osy.|  
 |![4. krok](../profiling/media/procguid-4.png "ProcGuid_4")|**Spotřeby energie** graf je Víceřádkový graf, který zobrazuje změnu ve výstupu napájení, jež je způsobena prostředkem zařízení během relace profilování. Profiler Spotřeba energie sleduje výkon využívaný procesorem, síťovou aktivitou a displejem.|  
 |![Krok 5](../profiling/media/procguid-6.png "ProcGuid_6")|**Prostředky (zapnuto/vypnuto)** graph poskytuje podrobné informace o síti náklady na energii. **Sítě** panelu představuje čas, který bylo otevřeno síťové připojení. **Přenosu dat** podřízený řádek je čas, aby byla aplikace přijímala nebo odesílala data přes síť.|  
-|![Krok 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|**Souhrn využití energie** ukazuje poměrné množství celkového množství energie použité ve vybrané časové osy podle Procesorem, síťovou aktivitou a displejem.|  
+|![Step 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|**Souhrn využití energie** ukazuje poměrné množství celkového množství energie použité ve vybrané časové osy podle Procesorem, síťovou aktivitou a displejem.|  
   
  **Analýza dat energetického profilu**  
   
@@ -153,11 +148,8 @@ if (performance && performance.mark) {
   
 ##  <a name="BKMK_Other_resources"></a> Další prostředky  
   
--   **Stav připojení a správa spotřeby** oddíly pro [jazyka C# / VB/C++ a XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) a [jazyka JavaScript a HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) Windows Dev Center popisují rozhraní Windows API, které poskytují informace o síťovém připojení, které vaše aplikace může používat minimalizovat náklady na síťový provoz.  
+-   **Stav připojení a správa spotřeby** oddíly pro [jazyka C# / VB/C++ a XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) a [jazyka JavaScript a HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) Windows Dev Center popisují rozhraní Windows API, které poskytují informace o síťovém připojení, které vaše aplikace může používat minimalizovat náklady na síťový provoz.  
   
      Simulátor aplikace Visual Studio pro aplikace pro Windows Store umožňuje simulovat vlastnosti datového připojení rozhraní API pro síťové informace. Zobrazit [aplikace spustit Windows Store v simulátoru](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
 -   **Časování funkcí jazyka JavaScript** a **využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [analýza využití procesoru](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
-
-
-

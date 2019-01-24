@@ -1,14 +1,9 @@
 ---
 title: -LCID (devenv.exe) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - language default
 - locale IDs, setting for IDE
@@ -21,13 +16,13 @@ ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 242e0055e59312cba616859e08a2a61a45064e66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: def8ce2a40e068c602b0182b4580f5e3b524d222
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782220"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ devenv {/LCID|/l} LocaleID
   
 ## <a name="arguments"></a>Arguments  
  `LocaleID`  
- Požadováno. Identifikátor LCID (ID národního prostředí) jazyka, který zadáte.  
+ Povinný parametr. Identifikátor LCID (ID národního prostředí) jazyka, který zadáte.  
   
 ## <a name="remarks"></a>Poznámky  
  Načte integrovaného vývojového prostředí a nastaví výchozí přirozeného jazyka pro prostředí. Tato změna je trvalá mezi relacemi a projeví na **mezinárodní nastavení** podokně **prostředí** možnosti **možnosti** dialogového okna v rozhraní IDE.  
@@ -75,6 +70,3 @@ devenv /LCID 1033
  [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)   
  [Mezinárodní nastavení, prostředí, dialogové okno Možnosti](../../ide/reference/international-settings-environment-options-dialog-box.md)   
  [Přizpůsobení rozložení oken](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

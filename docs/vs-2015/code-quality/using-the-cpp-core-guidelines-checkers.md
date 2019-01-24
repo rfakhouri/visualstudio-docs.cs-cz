@@ -1,24 +1,22 @@
 ---
 title: Pomocí tyto moduly pro kontrolu podle dokumentu C++ Core Guidelines | Dokumentace Microsoftu
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791227"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Pomocí podle dokumentu C++ Core Guidelines šachovnice
+# <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podle dokumentu C++ Core Guidelines jsou přenosná sadu pokynů, pravidla a osvědčenými postupy psaní kódu v jazyce C++ vytvořených odborníky C++ a návrháři.  Visual Studio teď podporuje balíčky, které nástroji pro analýzu kódu pro dodržování předpisů s podle dokumentu C++ Core Guidelines zkontrolujte a navrhněte vylepšení vytvořit další pravidla pro kód.  
@@ -81,32 +79,29 @@ int main()
   
  Tento příklad ukazuje několik upozornění, která pravidla C++ Core Check najdete:  
   
-- C26494 je pravidlo Type.5: objekt vždy inicializujte.  
+- C26494 je pravidlo Type.5: Vždy objekt inicializujte.  
   
-- C26485 je pravidlo Bounds.3: žádné decay pole na ukazatel.  
+- C26485 je pravidlo Bounds.3: Decay žádné pole na ukazatel.  
   
 - C26481 je pravidlo Bounds.1: Nepoužívejte aritmetiku ukazatele. Místo nich se používá `span`.  
   
   Pokud je nainstalované a povolené při kompilaci tohoto kódu, jsou první dva upozornění výstup, ale je potlačeno třetí pravidel C++ Core Check analýzy kódu. Zde je výstup sestavení z ukázkového kódu:  
   
-  **1 >---Sestavení začalo: projekt: CoreCheckExample, konfigurace: ladění Win32--**  
+  **1 >---Sestavení začalo: Projekt: CoreCheckExample, konfigurace: Ladění Win32--**  
 **----**  
-**1 > CoreCheckExample.cpp**  
-**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1>  CoreCheckExample.cpp**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (úplný soubor PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): upozornění C26494: uninitializ je proměnná "směrování žádostí na aplikace.**  
+**ckexample\corecheckexample.cpp(6): upozornění C26494: Uninitializ je proměnná "směrování žádostí na aplikace.**  
 **vydání bude vždy inicializovat objekt. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
-**ID = 620421)**  
+**ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): upozornění C26485: výraz "směrování žádostí na aplikace": rozklad pole na**  
+**ckexample\corecheckexample.cpp(7): warning C26485: Výraz "směrování žádostí na aplikace": Rozklad pole na**  
  **decay ukazatele. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
 **=== Sestavení: 1 úspěšné, 0 selhalo, 0 aktuálních, 0 vynecháno ===** The C++ Core Guidelines existují k pomoci psát lepší a bezpečnější kódu. Pokud máte instanci, kde by neměl použít pravidlo, nebo profil, je však snadné potlačit přímo v kódu. Můžete použít `gsl::suppress` atribut zabránit C++ Core Check zjišťování a vytváření sestav nedodržení pravidla v následující bloku kódu. Můžete označit jednotlivé příkazy můžete potlačit specifická pravidla. Můžete dokonce potlačit celý profil napsáním `[[gsl::suppress(bounds)]]` bez zahrnutí příslušné pravidlo číslo.  
   
 ## <a name="use-the-guideline-support-library"></a>Použití podpory knihovny obecných zásad  
  Balíček Microsoft.CppCoreCheck NuGet také nainstaluje balíček, který obsahuje implementaci společnosti Microsoft o podporu knihovny obecných zásad (GSL). Je také k dispozici v podobě samostatné na GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Tato knihovna je užitečné, pokud chcete postupovat podle pokynů Core. GSL obsahuje definice, které umožňují náchylné konstrukce nahraďte bezpečnějších alternativ. Například můžete nahradit `T*, length` dvojice parametrů s `span<T>` typu. GSL je open source, takže pokud se chcete podívat na komentář zdroje knihovny, nebo přispívat, projektu lze nalézt v [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
-
-
-

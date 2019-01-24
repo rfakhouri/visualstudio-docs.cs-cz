@@ -1,12 +1,9 @@
 ---
 title: Přístup k datům
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - "80025080"
 dev_langs:
@@ -23,14 +20,14 @@ ms.assetid: 9812a6d5-23d2-4427-8b98-70a2abfec3bc
 caps.latest.revision: 103
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 20efcabb39049f1cfced3b6f941bc7e5bbd984d5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8647817df0a63d42a126123e8654b9a277ae8e05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067348"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757555"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
 
  Pro aplikace v jazyce JavaScript, Python, PHP, Ruby nebo C++ můžete připojit k datům stejným způsobem jako cokoli jiného, získání knihovny a psaní kódu. Pro aplikace .NET Visual Studio poskytuje nástroje, které vám umožní prozkoumat zdroje dat, vytvářet modely objektů k ukládání a manipulaci s daty v paměti a vytvoření vazby dat na uživatelské rozhraní.     Microsoft Azure poskytuje sady SDK pro .NET, Java, Node.js, PHP, Python, Ruby a mobilní aplikace a nástroje v sadě Visual Studio pro připojení k Azure Storage.
 
- Následující seznamy shrnují jenom některé z mnoha systémů databáze a úložišť, se dají ze sady Visual Studio. [Microsoft Azure](https://azure.microsoft.com/en-us/) nabídky jsou datové služby, které zahrnují zřizování a správu podkladové úložiště.  [Nástroje Azure pro Visual Studio](https://www.visualstudio.com/en-us/features/azure-tools-vs.aspx) je volitelná součást, která umožňuje pracovat s úložišti dat Azure přímo ze sady Visual Studio. Většinu ostatních SQL a NoSQL databáze produktů, které jsou zde uvedeny, je možné hostovat na místním počítači, v místní síti nebo v Microsoft Azure na virtuálním počítači. V tomto scénáři jste odpovědní za správu samotná databáze.
+ Následující seznamy shrnují jenom některé z mnoha systémů databáze a úložišť, se dají ze sady Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) nabídky jsou datové služby, které zahrnují zřizování a správu podkladové úložiště.  [Nástroje Azure pro Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) je volitelná součást, která umožňuje pracovat s úložišti dat Azure přímo ze sady Visual Studio. Většinu ostatních SQL a NoSQL databáze produktů, které jsou zde uvedeny, je možné hostovat na místním počítači, v místní síti nebo v Microsoft Azure na virtuálním počítači. V tomto scénáři jste odpovědní za správu samotná databáze.
 
  **Microsoft Azure**
 
@@ -74,7 +71,7 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
  Mnoho dodavatelů databáze a třetí strany nepodporují integraci s Visual Studio pomocí balíčků NuGet. Můžete prozkoumat nabídky na nuget.org nebo prostřednictvím aplikaci Správce balíčků NuGet v sadě Visual Studio (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet Balíčky pro řešení**). Produkty databáze můžete integrovat s aplikací Visual Studio jako rozšíření.   Tyto nabídky v Galerii Visual Studio můžete procházet tak, že přejdete do **nástroje** > **rozšíření a aktualizace** a následným výběrem **Online** vlevo podokně dialogového okna.  Další informace najdete v tématu [instalace systémů databází, nástroje a ukázky](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
->  Rozšířená podpora pro SQL Server 2005 skončila 12. dubna 2016.   Neexistuje žádná záruka, že data tools v sadě Visual Studio 2015 a novější budou fungovat s SQL Server 2005 po tomto datu. Další informace najdete v tématu [oznámení ukončení podpory pro SQL Server 2005](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2005/).
+>  Rozšířená podpora pro SQL Server 2005 skončila 12. dubna 2016.   Neexistuje žádná záruka, že data tools v sadě Visual Studio 2015 a novější budou fungovat s SQL Server 2005 po tomto datu. Další informace najdete v tématu [oznámení ukončení podpory pro SQL Server 2005](https://www.microsoft.com/server-cloud/products/sql-server-2005/).
 
 ### <a name="net-languages"></a>Jazyky rozhraní .NET
  Všechny .NET přístup k datům, včetně v .NET Core, vychází z technologie ADO.NET, sadu tříd, který definuje rozhraní pro přístup k jakýkoli druh zdroje dat, relačních i nerelačních. Visual Studio obsahuje několik nástrojů a návrhářů, které pracují s ADO.NET připojení k databázím, vám usnadní pracuje s daty a prezentovat uživateli. Dokumentace v této části popisuje, jak pomocí těchto nástrojů. Také můžete programovat přímo proti objekty příkazů ADO.NET. Další informace o přímé volání rozhraní API technologie ADO.NET naleznete v tématu [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) v knihovně MSDN.
@@ -85,7 +82,7 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
 
  Doporučený postup pro ukládání dat v místním počítači, je použít SQLite, která běží ve stejném procesu jako aplikace. Pokud vrstvu objektově relační mapování (ORM) je potřeba, můžete použít Entity Framework. Další informace najdete v tématu [přístup k datům](https://msdn.microsoft.com/windows/uwp/data-access/index) v Centru pro vývojáře Windows.
 
- Pokud se připojujete ke službám Azure, je nutné stáhnout nejnovější [sady Azure SDK tools](https://azure.microsoft.com/en-us/downloads/).
+ Pokud se připojujete ke službám Azure, je nutné stáhnout nejnovější [sady Azure SDK tools](https://azure.microsoft.com/downloads/).
 
 #### <a name="data-providers"></a>Zprostředkovatelé dat
  Aby databáze mohla být použitelné v ADO.NET, musí mít vlastní *zprostředkovatele dat ADO.NET* nebo jinak musí vystavit rozhraní ODBC nebo Oledb. Společnost Microsoft poskytuje [seznam zprostředkovatele dat ADO.NET](https://msdn.microsoft.com/data/dd363565) pro produkty SQL Server, jakož i rozhraní ODBC a OLE DB poskytovatele.
@@ -122,14 +119,14 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
 ## <a name="in-this-section"></a>V tomto oddílu
  [Instalace systémů databází, nástroje a ukázky](../data-tools/installing-database-systems-tools-and-samples.md) pojednává o tom, jak získat databáze produkty a rozšíření sady Visual Studio nebo ovladače, které je podporují a kde najít ukázkové databáze pro služby experimentování ve službě a výukové účely.
 
- [Visual Studio data tools pro .NET](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) popisuje způsob použití okna nástrojů sady Visual Studio k připojení ke zdrojům dat, vytvoření datových sad a modelů Entity Framework a data svázat ovládací prvky uživatelského rozhraní.
+ [Visual Studio data tools pro .NET](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) popisuje způsob použití okna nástrojů sady Visual Studio k připojení ke zdrojům dat, vytvoření datových sad a modelů Entity Framework a data svázat ovládací prvky uživatelského rozhraní.
 
 ## <a name="related-topics"></a>Související témata
  [Data, zařízení a Analytics](https://msdn.microsoft.com/data-and-devices) obsahuje úvod k inteligentnímu cloudu Microsoft, včetně sady Cortana Analytics Suite a podpory pro Internet věcí.
 
- [Microsoft Azure Storage](https://azure.microCsoft.com/en-us/documentation/services/storage/) popisuje Azure Storage a jak vytvářet aplikace pomocí Azure BLOB, tabulky, fronty a soubory.
+ [Microsoft Azure Storage](https://azure.microCsoft.com/documentation/services/storage/) popisuje Azure Storage a jak vytvářet aplikace pomocí Azure BLOB, tabulky, fronty a soubory.
 
- [Azure SQL Database](https://azure.microsoft.com/en-us/documentation/services/sql-database/) popisuje, jak se připojit ke službě Azure SQL Database, relační databáze jako služba.
+ [Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/) popisuje, jak se připojit ke službě Azure SQL Database, relační databáze jako služba.
 
  [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) popisuje nástroje, které usnadňují návrh, průzkum, testování a nasazení aplikace připojené ke data a databáze.
 

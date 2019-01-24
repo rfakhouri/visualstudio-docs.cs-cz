@@ -1,25 +1,22 @@
 ---
 title: Porozumění modelům, třídám a vztahům | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271788"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805452"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL
 ## <a name="the-dsl-definition"></a>Definice DSL  
  Když otevřete `Dsl\DslDefinition.dsl`, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno vypadá podobně jako na následujícím obrázku.  
   
- ![Návrhář DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+ ![dsl designer](../modeling/media/dsl-designer.png "dsl_designer")  
   
  V definici DSL diagramu se zobrazí nejdůležitější informace v definici DSL. Další informace, které je také součástí DslDefinition.dsl, se zobrazí v Průzkumníku DSL, který je obvykle v části diagramu. Pracujete s diagram pro nejčastěji používané úkoly a Průzkumník DSL pokročilejší úpravy.  
   
@@ -59,9 +56,9 @@ Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL
   
  ![Vkládání a odkaz na vztahy](../modeling/media/music-classes.png "Music_Classes")  
   
- Na obrázku znázorňuje čtyři doménovými třídami: Hudba, fotoalba, interpreta a skladby. Doménové třídy definují vlastnosti domény, například název, nadpis a tak dále. Instance modelu jsou hodnoty některých z těchto vlastností zobrazí v diagramu.  
+ Na obrázku znázorňuje čtyři doménové třídy: Hudba, fotoalba, interpreta a skladby. Doménové třídy definují vlastnosti domény, například název, nadpis a tak dále. Instance modelu jsou hodnoty některých z těchto vlastností zobrazí v diagramu.  
   
- Třídy, aby se vztahy domén: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs a ArtistAppearedOnAlbums. Vztahy mít například 1..1, násobnosti 0.. *. Například každý skladby musí mít relaci ke přesně jeden alba prostřednictvím AlbumHasSongs vztahu. Každý alba může mít libovolný počet skladeb.  
+ Třídy, aby se vztahy domén: MusicHasAlbums MusicHasArtists, AlbumbHasSongs a ArtistAppearedOnAlbums. Vztahy mít například 1..1, násobnosti 0.. *. Například každý skladby musí mít relaci ke přesně jeden alba prostřednictvím AlbumHasSongs vztahu. Každý alba může mít libovolný počet skladeb.  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Změna uspořádání diagramem definice DSL  
  Všimněte si, že doménová třída může zobrazit několikrát v definici DSL diagramu, alba stejně jako na tomto obrázku. Je vždy jeden hlavní zobrazení a můžou být některé *odkaz* zobrazení.  
@@ -157,7 +154,4 @@ Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL
   
 ## <a name="see-also"></a>Viz také  
  [Doménové vztahy v generovaného rozhraní API](../misc/domain-relationships-in-the-generated-api.md)   
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

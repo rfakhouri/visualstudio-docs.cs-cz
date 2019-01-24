@@ -1,29 +1,24 @@
 ---
-title: 'Postupy: vytvoření Atom pro privátní galerii | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření Atom pro privátní galerii | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f720c4297ab2ff31abe90365b0e25209762dba1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796241"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Postupy: vytvoření Atom pro privátní galerii
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Postupy: Vytvoření informačního kanálu Atom pro privátní galerii
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete vytvořit kanál Atom (RSS) do umístění v intranetu, která obsahuje rozšíření a přidání informačního kanálu do **rozšíření a aktualizace** jako privátní galerie. Další informace najdete v tématu [privátní Galerie](../extensibility/private-galleries.md).  
@@ -82,4 +77,3 @@ Můžete vytvořit kanál Atom (RSS) do umístění v intranetu, která obsahuje
   
 ## <a name="see-also"></a>Viz také  
  [Privátní galerie](../extensibility/private-galleries.md)
-

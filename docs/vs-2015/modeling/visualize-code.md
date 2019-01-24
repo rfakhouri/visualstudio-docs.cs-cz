@@ -1,14 +1,9 @@
 ---
 title: Vizualizace kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 helpviewer_keywords:
 - code, understanding
 - code, visualizing
@@ -17,13 +12,13 @@ ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 071048fba8d3663639747ea35dbae4375d101c26
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 841e2f1324fa5519937cf40b977eebf7d48b65ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758297"
 ---
 # <a name="visualize-code"></a>Vizualizace kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ Vizualizace a modelování nástroje v sadě Visual Studio můžete použít k v
   
 |||  
 |-|-|  
-|**Pochopení kódu a jejích vztahů:**<br /><br /> Mapovat vztahy mezi konkrétní části kódu.<br /><br /> Zobrazit přehled vztahů v kódu pro celé řešení.<br /><br /> **Poznámka:**: V této verzi sady Visual Studio, termín *mapy kódu* je použito místo *graf závislosti*.|-   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Principy struktur třídy:**<br /><br /> Vizualizujte strukturu tříd v projektu tak, že vytvoříte diagramů tříd z kódu.|[Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**Popis návrhu systému vysoké úrovně a ověření kódu proti tohoto návrhu:**<br /><br /> Vytvořením diagramy vrstev popisují návrh vysoké úrovně systému a jeho zamýšlených závislostí. Ověření kódu proti tohoto návrhu zajistit, aby zůstaly konzistentní s návrhem závislosti v kódu.|-   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|  
+|**Pochopení kódu a jejích vztahů:**<br /><br /> Mapovat vztahy mezi konkrétní části kódu.<br /><br /> Zobrazit přehled vztahů v kódu pro celé řešení.<br /><br /> **Poznámka:**: V této verzi sady Visual Studio termín *mapy kódu* je použito místo *graf závislosti*.|-   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
+|**Principy struktur třídy:**<br /><br /> Vizualizujte strukturu tříd v projektu tak, že vytvoříte diagramů tříd z kódu.|[Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
+|**Popis návrhu systému vysoké úrovně a ověření kódu proti tohoto návrhu:**<br /><br /> Vytvořením diagramy vrstev popisují návrh vysoké úrovně systému a jeho zamýšlených závislostí. Ověření kódu proti tohoto návrhu zajistit, aby zůstaly konzistentní s návrhem závislosti v kódu.|-   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|  
 |**Komunikaci uživatelských požadavků a architektury:**<br /><br /> Modelování uživatelských požadavků a architektury softwarového systému kreslením následující diagramy UML: aktivita, komponenty, třídy, pořadí a případ použití.|-   [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)<br />-   [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)<br />-   [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="external-resources"></a>Externí zdroje  
@@ -66,6 +61,3 @@ Vizualizace a modelování nástroje v sadě Visual Studio můžete použít k v
  [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)   
  [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)   
  [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)
-
-
-

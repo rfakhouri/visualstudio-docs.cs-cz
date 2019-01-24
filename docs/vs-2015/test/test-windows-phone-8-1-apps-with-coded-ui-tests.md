@@ -1,24 +1,19 @@
 ---
 title: Testování Windows UWP a aplikací pro Phone 8.1 pomocí programových testů uživatelského rozhraní | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765096"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testování aplikací pro UPW a aplikací pro Windows Phone 8.1 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -319,26 +314,26 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 ## <a name="q--a"></a>Dotazy a odpovědi  
   
-### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>Otázka: mám k nasazení aplikace pro Windows Phone v emulátoru účely mapování ovládacích prvků uživatelského rozhraní?  
+### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>DOTAZ: Je nutné nasadit aplikace pro Windows Phone v emulátoru, aby mapování ovládacích prvků uživatelského rozhraní?  
  **A**: Ano, Tvůrce programového testu uživatelského rozhraní vyžaduje, aby emulátor používat, a do zařízení nasadit aplikaci. V opačném případě vyvolá chybová zpráva s oznámením, že nebyly nalezeny žádné běžící emulátor.  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Dotaz: lze testy spustit v emulátoru pouze nebo můžu také použít fyzické zařízení?  
- **A**: jednu z možností je podporována. Cíl pro spuštění testu se vybírá změnou typu emulátor nebo výběru zařízení na panelu nástrojů zařízení. Pokud je vybrané zařízení, telefonní modré zařízení musí být připojené k některé z portu USB počítače.  
+###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> DOTAZ: Můžete testy spouštět pouze emulátor nebo můžu také použít fyzické zařízení?  
+ **A**: Jednu z možností je podporována. Cíl pro spuštění testu se vybírá změnou typu emulátor nebo výběru zařízení na panelu nástrojů zařízení. Pokud je vybrané zařízení, telefonní modré zařízení musí být připojené k některé z portu USB počítače.  
   
  ![Vyberte verzi emulátoru nebo fyzická zařízení](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  
   
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Otázka: Proč nevidím možnost zaznamenat Moje programový test uživatelského rozhraní v generování kódu pro dialogové okno programový Test uživatelského rozhraní?  
- **A**: pro aplikace Windows Phone není podporována možnost záznamu.  
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>DOTAZ: Proč nevidím možnost zaznamenat Moje programový test uživatelského rozhraní v generování kódu pro dialogové okno programový Test uživatelského rozhraní?  
+ **A**: Pro aplikace Windows Phone není podporována možnost záznamu.  
   
-### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>Dotaz: lze vytvořit kódovaný test uživatelského rozhraní pro mé aplikace Windows Phone založené na WinJS, Silverlight nebo HTML5?  
+### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>DOTAZ: Můžete vytvořit programový test uživatelského rozhraní pro mé aplikace Windows Phone založené na WinJS, Silverlight nebo HTML5?  
  **A**: Ne, jsou podporovány pouze XAML na základě aplikace.  
   
-### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Dotaz: lze vytvořit kódované testy uživatelského rozhraní pro mé aplikace Windows Phone v systému, na kterém neběží Windows 8.1 nebo Windows 10?  
- **A**: Ne, šablon projekt programového testu uživatelského rozhraní jsou dostupné jenom pro Windows 8.1 a Windows 10. Pokud chcete vytvořit automatizace pro aplikace univerzální platformy Windows (UPW), budete potřebovat Windows 10.  
+### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>DOTAZ: Můžete vytvořit kódované testy uživatelského rozhraní pro mé aplikace Windows Phone v systému, na kterém neběží Windows 8.1 nebo Windows 10?  
+ **A**: Ne, šablon projekt programového testu uživatelského rozhraní jsou dostupné jenom na Windows 8.1 a Windows 10. Pokud chcete vytvořit automatizace pro aplikace univerzální platformy Windows (UPW), budete potřebovat Windows 10.  
 
 <a name="uwpapps"></a>  
-### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Otázka: Jak vytvořím programové testy uživatelského rozhraní pro aplikace univerzální platformy Windows (UPW)  
- **A**: v závislosti na platformě, kde testování vaší aplikace pro UPW, vytvořte projekt programového testu uživatelského rozhraní v jednom z těchto způsobů:  
+### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>DOTAZ: Jak vytvořit kódované testy uživatelského rozhraní pro aplikace univerzální platformy Windows (UPW)?  
+ **A**: V závislosti na platformě, kde testování vaší aplikace pro UPW vytvořte projekt programového testu uživatelského rozhraní v jednom z těchto způsobů:  
   
 - Aplikace pro UPW spuštěné na místním počítači se spustí jako Store app. Abyste to mohli otestovat, je nutné použít **projekt programového uživatelského rozhraní testu (Windows)** šablony. Vyhledejte tuto šablonu, když vytvoříte nový projekt, přejděte **Windows**, **univerzální** uzlu. Nebo můžete přejít na **Windows**, **Windows 8**, **Windows** uzlu.  
   
@@ -346,19 +341,19 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
   Po vytvoření projektu pro vytváření testu zůstává stejná jako předtím.  
   
-### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Dotaz: lze vybrat ovládací prvky, které jsou mimo emulátor?  
- **A**: Ne, Tvůrce nebude rozpoznat.  
+### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>DOTAZ: Můžete vybrat ovládací prvky, které jsou mimo emulátor?  
+ **A**: Ne, nebudou zjištěny Tvůrce je.  
   
-### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>Otázka: Mohu použít Tvůrce programového testu uživatelského rozhraní pro mapování ovládacích prvků pomocí fyzických telefon?  
+### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>DOTAZ: Můžete použít Tvůrce programového testu uživatelského rozhraní pro mapování ovládacích prvků pomocí fyzických telefon?  
  **A**: Ne, Tvůrce mapují prvky uživatelského rozhraní Pokud vaše aplikace byla nasazena do emulátoru.  
   
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Otázka: Proč nelze upravit kód v souboru UIMap.Designer?  
- **A**: žádné změny kódu v souboru UIMapDesigner.cs bude přepsán při každém vytvoření kódu pomocí UIMap – Tvůrce programového testu uživatelského rozhraní. Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.  
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>DOTAZ: Proč nelze upravit kód v souboru UIMap.Designer?  
+ **A**: Jakékoli změny kódu v souboru UIMapDesigner.cs budou při každém vytvoření kódu pomocí nástroje UIMap – Tvůrce programového testu UI přepsány. Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.  
   
-### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>Dotaz: lze spustit programový test UI v aplikaci Windows Phone z příkazového řádku?  
- **A**: Ano, určete cílovému zařízení pro provádění testů pomocí souboru runsettings. Příklad:  
+### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>DOTAZ: Můžu spustit programový test UI v aplikaci Windows Phone z příkazového řádku?  
+ **A**: Ano, použít soubor runsettings k určení cílové zařízení pro spuštění testu. Příklad:  
   
- **vstest.Console.exe "pathToYourCodedUITestDll" /settings:devicetarget.runsettings**  
+ **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**  
   
  Ukázkový soubor runsettings:  
   
@@ -366,7 +361,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 <?xml version="1.0" encoding="utf-8"?>  
 <RunSettings>  
 <MSPhoneTest>  
-<!--to specify test execution on device, use a TargetDevice option as follows-->  
+<!--to specify test execution on device, use a TargetDevice option as follows-->  
 <TargetDevice>Device</TargetDevice>  
 <!--to specify an emulator instead, use a TargetDevice option like below-->  
 <!--<TargetDevice>Emulator 8.1 WVGA 4 inch 512MB</TargetDevice>-->  
@@ -374,12 +369,12 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 </RunSettings>  
 ```  
   
-### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>Otázka: jaké jsou rozdíly mezi programové testy uživatelského rozhraní pro aplikace Windows Store založených na XAML a aplikací Windows Phone?  
+### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>DOTAZ: Jaké jsou rozdíly mezi programové testy uživatelského rozhraní pro aplikace Windows Store založených na XAML a aplikací Windows Phone?  
  **A**: Toto jsou některé hlavní rozdíly:  
   
 |Funkce|Aplikace pro Windows Store|Aplikace Windows Phone|  
 |-------------|------------------------|------------------------|  
-|Cíl pro spouštění testů|Místním nebo vzdáleném počítači. Vzdálené počítače je možné zadat při spuštění testů pomocí automatizovaného testového případu. Zobrazit [automatizovaný testovací proces v nástroji Microsoft Test Manager](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulátor nebo zařízení. Zobrazit, [dotaz: lze testy spouštět v emulátoru pouze nebo můžu také použít fyzické zařízení?](#TestingPhoneAppsCodedUI_EmulatorDevice) v tomto tématu.|  
+|Cíl pro spouštění testů|Místním nebo vzdáleném počítači. Vzdálené počítače je možné zadat při spuštění testů pomocí automatizovaného testového případu. Zobrazit [automatizovaný testovací proces v nástroji Microsoft Test Manager](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulátor nebo zařízení. Zobrazit, [dotaz: Můžete testy spouštět pouze emulátor nebo můžu také použít fyzické zařízení? ](#TestingPhoneAppsCodedUI_EmulatorDevice) v tomto tématu.|  
 |Spusťte z příkazového řádku|Není nutné určit cílový soubor s nastavením.|Chcete-li zadat cíl je vyžadován soubor Runsettings.|  
 |Specializované třídy pro ovládací prvky prostředí|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |Ovládací prvek WebView v aplikace v jazyce XAML|Podporováno, pokud použijete Html * specializované třídy pro interakci s prvky jazyka HTML. Viz <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Není podporováno.|  
@@ -387,10 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Testy řízené daty|Zobrazit [daty řízené testy](../test/creating-a-data-driven-coded-ui-test.md) informace o používání externí zdroje dat a zdroj dat atribut v testovací metodě.|Data jsou zadány jako vložené, pomocí atributu DataRow v testovací metodě. Zobrazit [řízené daty pomocí programových testů UI pro aplikace z Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) v tomto tématu.|  
   
 ## <a name="external-resources"></a>Externí zdroje  
- Blog Microsoft Visual Studio Application Lifecycle Management: [pomocí programového uživatelského rozhraní k testování aplikací pro Windows Phone založené na XAML](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
+ Blog Microsoft Visual Studio Application Lifecycle Management: [Pomocí programového uživatelského rozhraní k testování aplikací pro Windows Phone založené na XAML](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
 ## <a name="see-also"></a>Viz také  
  [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
-
-
-

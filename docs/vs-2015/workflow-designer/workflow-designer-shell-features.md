@@ -1,11 +1,8 @@
 ---
 title: Funkce prostředí návrháře postupu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDShellFeatures.UI
@@ -13,16 +10,16 @@ ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6b432dd6dd0a19f6509ad1ff133424fcbc387fb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790544"
 ---
 # <a name="workflow-designer-shell-features"></a>Funkce prostředí návrháře postupu provádění
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] se skládá ze tří hlavních oblastech uživatelského rozhraní: na plochu návrháře, panelu navigace s popisem cesty nad ním a pod ním prostředí. Na panelu navigace s popisem cesty umístěný v horní části obrazovky, slouží k zobrazení seznamu nadřazených členů aktuální kořenovou aktivitu. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Postupy: použití navigace s popisem cesty](../workflow-designer/how-to-use-breadcrumb-navigation.md). Na plochu návrháře umístěn ve středu obrazovky, slouží k vytváření pracovních postupů. Prostředí, které jsou umístěné v dolní části obrazovky obsahuje řadu tlačítek pro Správa aktuálního zobrazení.  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] se skládá ze tří hlavních oblastech uživatelského rozhraní: na plochu návrháře, panelu navigace s popisem cesty nad ním a pod ním prostředí. Na panelu navigace s popisem cesty umístěný v horní části obrazovky, slouží k zobrazení seznamu nadřazených členů aktuální kořenovou aktivitu. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Jak: Pomocí navigace s popisem cesty](../workflow-designer/how-to-use-breadcrumb-navigation.md). Na plochu návrháře umístěn ve středu obrazovky, slouží k vytváření pracovních postupů. Prostředí, které jsou umístěné v dolní části obrazovky obsahuje řadu tlačítek pro Správa aktuálního zobrazení.  
   
 ## <a name="shell-features"></a>Prostředí funkce  
  Prostředí má tlačítka na pravé straně panelu, který vám umožní zvětšit nebo zmenšit pracovního postupu, přizpůsobit obsah pracovního postupu na velikost obrazovky a zobrazit nebo skrýt přehledovou mapu. Můžete také přiblížit nebo oddálit pracovního postupu pomocí klávesové zkratky CTRL ++ a CTRL +-.  

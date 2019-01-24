@@ -1,14 +1,9 @@
 ---
 title: Kontrolní výrazy C / C++ | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -33,13 +28,13 @@ ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dc4c2a6c4f5b9d4a0e4e1cf0fd0a4a6c9928de6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e130bac0a20d2f1e4421b6c8bd34ac2b211c55f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781716"
 ---
 # <a name="cc-assertions"></a>Kontrolní výrazy jazyka C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -165,7 +160,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 
  [V tomto tématu](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_MFC_assertions"></a> Kontrolní výrazy s MFC  
+##  <a name="BKMK_MFC_assertions"></a> MFC assertions  
  Definuje MFC [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) – makro kontroly kontrolní výraz. Definuje také `MFC ASSERT_VALID` a `CObject::AssertValid` metody kontroly vnitřní stav `CObject`-odvozenému objektu.  
 
  Pokud argument MFC `ASSERT` – makro vyhodnocen jako nula nebo hodnotu NEPRAVDA, makro zastaví provádění programu a zobrazí uživateli výstrahu; v opačném případě pokračuje.  
@@ -356,6 +351,3 @@ _ASSERT(!myErr); // Don't do this, either!
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Ladění nativního kódu](../debugger/debugging-native-code.md)   
  [Kontrolní výrazy ve spravovaném kódu](../debugger/assertions-in-managed-code.md)
-
-
-

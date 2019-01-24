@@ -1,14 +1,9 @@
 ---
 title: VSPerfReport | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
 - performance tools, VSPerfReport tool
@@ -20,13 +15,13 @@ ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 12b76923a0687125643f95228397d3051cb08c5b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806825"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788878"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` musí být platný soubor .vsp nebo .vsps soubory.  
   
 ## <a name="symbol-files"></a>Soubory symbolů  
- Chcete-li zobrazit informace o symbolech, jako jsou názvy funkcí a čísla řádků, VSPerfReport vyžaduje přístup k symbolu (. Soubory symbolů soubory PDB) PROFILOVANÉHO komponent a Windows. Další informace najdete v tématu [postupy: určení umístění souboru se symboly z příkazového řádku](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Chcete-li zobrazit informace o symbolech, jako jsou názvy funkcí a čísla řádků, VSPerfReport vyžaduje přístup k symbolu (. Soubory symbolů soubory PDB) PROFILOVANÉHO komponent a Windows. Další informace najdete v tématu [jak: Zadejte umístění souborů se symboly z příkazového řádku](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Obecná sestava možnosti  
  Následující tabulka popisuje obecnou zprávu formátování možnosti a možnosti, které vyberte data, která mají být uvedeny.  
@@ -77,8 +72,8 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Možnosti|Popis|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`] [,`callee`]]|Zobrazit pouze uživatele volání funkcí aplikace; Skryjte systémových volání.<br /><br /> -Žádné parametry - skrýt všechny systémové funkce.<br />-   `caller` -Zobrazit jednu úroveň funkce systému, které volají funkce aplikace.<br />-   `callee` -Zobrazit jednu úroveň funkce systému, které jsou volány pomocí funkcí aplikace uživatele.|  
-|**StartTime:**[*hodnotu*]|Zobrazit pouze data shromážděná za hodnotou (v milisekundách).|  
+|**JustMyCode**[**:**[`caller`][,`callee`]]|Zobrazit pouze uživatele volání funkcí aplikace; Skryjte systémových volání.<br /><br /> -Žádné parametry - skrýt všechny systémové funkce.<br />-   `caller` -Zobrazit jednu úroveň funkce systému, které volají funkce aplikace.<br />-   `callee` -Zobrazit jednu úroveň funkce systému, které jsou volány pomocí funkcí aplikace uživatele.|  
+|**StartTime:**[*value*]|Zobrazit pouze data shromážděná za hodnotou (v milisekundách).|  
 |**EndTime:**[*hodnotu*]|Zobrazit pouze data shromážděná před hodnotou (v milisekundách).|  
 |**FilterFile:** `VSPFFile`|Určuje umístění souboru filtru, která byla vygenerována z okna sestavy výkonu Visual Studio.|  
 |**MsFilter:**[*časzahájeni, trvání*]|Zobrazit pouze data od `starttime` až do délky `duration` (v milisekundách).|  
@@ -99,6 +94,3 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení sestav výkonu](../profiling/performance-report-views.md)
-
-
-

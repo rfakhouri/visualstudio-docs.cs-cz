@@ -1,14 +1,9 @@
 ---
 title: Ladění 64bitové aplikace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e4d195c3f0b07636f0a131cc4dca0298deef1041
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 600166699a40ac91d403d7b76948ac924b4a35c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789811"
 ---
 # <a name="debug-64-bit-applications"></a>Ladění 64bitové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,14 @@ Můžete ladit 64bitovou aplikaci, na kterém běží na místním počítači n
   
 1.  Vytvoření řešení sady Visual Studio, například C# konzolové aplikace.  
   
-2.  Nastavte konfiguraci do 64-bit pomocí nástroje Configuration Manager. Další informace najdete v tématu [postupy: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md).  
+2.  Nastavte konfiguraci do 64-bit pomocí nástroje Configuration Manager. Další informace najdete v tématu [jak: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3.  V tomto okamžiku začne 64bitovou verzi vzdáleného ladicího programu (msvsmon.exe). Spuštění, dokud je otevřené řešení pomocí konfigurace 64bitové.  
   
 4.  Spusťte ladění. Stejně jako u 32-bit konfigurace byste měli mít stejné prostředí. Pokud dojde k chybám, najdete v článku níže v části řešení potíží.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Řešení potíží s 64bitové ladění  
- Může se zobrazit chyba: "operaci ladicí 64bitových trvá déle, než se očekávalo." V takovém případě sada Visual Studio odeslal žádost o 64bitové verze msvsmon.exe a vždycky trvalo dlouhou dobu pro výsledek žádosti k téhle akci vrátit.  
+ Může se zobrazit chyba: "Operaci ladicí 64bitových trvá déle, než se očekávalo." V takovém případě sada Visual Studio odeslal žádost o 64bitové verze msvsmon.exe a vždycky trvalo dlouhou dobu pro výsledek žádosti k téhle akci vrátit.  
   
  Existují dva hlavní příčiny této chyby:  
   
@@ -68,9 +63,3 @@ Můžete ladit 64bitovou aplikaci, na kterém běží na místním počítači n
  [Podpora 64bitové integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Použití souborů výpisu paměti](../debugger/using-dump-files.md)   
  [Vzdálené ladění](../debugger/remote-debugging.md)
-
-
-
-
-
-

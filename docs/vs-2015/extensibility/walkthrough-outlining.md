@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Sbalení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Sbalování | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a5d54bdd3d2b7fad348df195560ad5b3cc461f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798362"
 ---
-# <a name="walkthrough-outlining"></a>Návod: Sbalení
+# <a name="walkthrough-outlining"></a>Průvodce: Sbalování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Budete moct implementovat založený na jazyce funkce, jako je například sbalování tak, že definujete druhy textu oblastí, které chcete rozbalit nebo sbalit. Můžete definovat oblastí v rámci služby jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a použít definici oblasti s pouze tímto typem nebo oblasti definice můžete použít k existujícímu typu obsahu (jako je například "text"). Tento návod ukazuje, jak definovat a zobrazení sbalování oblastí.  
@@ -139,5 +134,4 @@ Budete moct implementovat založený na jazyce funkce, jako je například sbalo
 4.  Měla by existovat sbalování oblastí, obsahující oba složené závorky. Byste měli být schopni klepněte na znaménko MINUS nalevo od levou složenou závorku sbalte sbalování oblastí. Když sbalen oblast, na symbol tří teček (...) by se měla zobrazit nalevo od sbaleného regionu a automaticky otevíraného okna obsahující text **najetí na text** by se měla zobrazit při přesunutí ukazatele myši na tři tečky.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

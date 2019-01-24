@@ -1,14 +1,9 @@
 ---
 title: Ladění nativního kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a8c81efece10fe55dc1cf228a3d0c23e7f5a64af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773593"
 ---
 # <a name="debugging-native-code"></a>Ladění nativního kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51730559"
  [Kontrolní výrazy jazyka C/C++](../debugger/c-cpp-assertions.md)  
  Tento článek popisuje příkazy kontrolního výrazu, jak fungují, výhody používání jejich (zachycení logických chyb, Kontrola výsledků operace a testování chybové stavy), jejich interakce s `_DEBUG`a různým druhům kontrolní výrazy, které jsou podporovány v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Postupy: Ladění vnořeného kódu sestavení](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Postupy: Ladění vloženého kódu sestavení](../debugger/how-to-debug-inline-assembly-code.md)  
  Poskytuje obsah krátké pokyny týkající se použití okna zpětného překladu zobrazíte pokyny k sestavení a okno registrů, chcete-li zobrazit registru a obsahuje odkazy na témata týkající se těchto systému windows.  
   
  [Techniky ladění MFC](../debugger/mfc-debugging-techniques.md)  
@@ -83,6 +78,3 @@ ms.locfileid: "51730559"
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

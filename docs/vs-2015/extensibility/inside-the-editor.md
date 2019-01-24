@@ -1,26 +1,21 @@
 ---
 title: V editoru | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ddca5ab4b0d7dc6aa43f3db8c641ad5fc9e583b2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776433"
 ---
 # <a name="inside-the-editor"></a>Práce v editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -176,7 +171,7 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> Rozhraní se stará o vytvoření a umístění rozpětí. Okraje lze provést řazení s ohledem na ostatní okraje. Okraj s vyšší prioritou jsou umístěno blíž k zobrazení textu. Například pokud existují dvě levý okraj, A okraj a okraj B a má s nižší prioritou než okraj A okraj B, okraj B, které se zobrazí nalevo od okraj A.  
   
-#### <a name="the-text-view-host"></a>Hostitel zobrazení textu  
+#### <a name="the-text-view-host"></a>The Text View Host  
  <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Rozhraní obsahuje zobrazení textu a všechny sousedící dekorace doprovázejících zobrazení, například posuvníky. Zobrazení hostitele text obsahuje také okraje, které jsou připojeny k ohraničení zobrazení.  
   
 #### <a name="formatted-text"></a>Formátovaný Text  
@@ -287,7 +282,7 @@ P: ABCDEvwxyz
 ###  <a name="editoroperations"></a> Editor operace  
  Editor operací můžete použít k automatizaci interakci s editoru pro skriptování nebo z jiných důvodů. Můžete importovat <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> přístup k operacím na daný <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Pak můžete tyto objekty k úpravě výběru, posuňte zobrazení nebo přesune blikající kurzor do různých částí zobrazení.  
   
-###  <a name="intellisense"></a> Technologie IntelliSense  
+###  <a name="intellisense"></a> IntelliSense  
  Technologie IntelliSense podporuje doplňování výrazů, signaturám (označované také jako informace o parametrech), rychlé informace a návrhy.  
   
  Dokončování příkazů obsahuje místní seznam potenciální dokončování pro názvy metod, prvky XML a další prvky kódu nebo značky. Obecně platí gesto uživatele vyvolá relace dokončení. Relace zobrazí seznam možných dokončení, a uživatel může vybrat jednu nebo zavřít seznamu. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> Zodpovídá za vytvoření a aktivace <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> Vypočítá <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> položek dokončení pro relaci.  
@@ -295,4 +290,3 @@ P: ABCDEvwxyz
 ## <a name="see-also"></a>Viz také  
  [Služba jazyka a editoru Rozšiřovací body](../extensibility/language-service-and-editor-extension-points.md)   
  [Importy do editoru](../extensibility/editor-imports.md)
-

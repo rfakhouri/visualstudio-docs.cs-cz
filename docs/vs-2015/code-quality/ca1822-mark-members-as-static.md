@@ -1,14 +1,9 @@
 ---
 title: 'CA1822: Označte členy jako statické | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7b85d12038d4c505f912dd2f9440829f2c80679c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cac22ddf4d1f0b61ae176649d562306a4343df7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774354"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Označte členy jako statické
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1822: označte členy jako statické](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1822: Označte členy jako statické](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -39,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1822:
 |Kategorie|Microsoft.Performance|  
 |Narušující změna|Bez konce – Pokud člen není viditelný mimo sestavení, bez ohledu na změnu provedete. Pevné – Pokud stačí změnit na instanci členu s člena `this` – klíčové slovo.<br /><br /> Zásadní - li změnit člena z člena instance statického členu a je viditelný mimo sestavení.|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Člen, který není přístup k datům instance není označen jako statické (sdílené v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -57,4 +52,3 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1822:
  [CA1812: Vyhněte se nevytvořeným instancím vnitřních tříd](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
  [CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)
-

@@ -1,21 +1,17 @@
 ---
 title: Manifest z prostředků | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798232"
 ---
 # <a name="manifest-from-resources"></a>Manifest z prostředků
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,16 +28,16 @@ Manifest z prostředků nástroje je konzolová aplikace, která přebírá sezn
 ||||  
 |-|-|-|  
 |**Název přepínače**|**Poznámky**|**Požadované nebo volitelné**|  
-|/Resources|Středníkem oddělený seznam imagí nebo adresáře. Tento seznam by měl vždy obsahovat seznam všech imagí, které budou v manifestu. -Li zadána je částečný seznam, jen položky nejsou zahrnuty budou ztraceny.<br /><br /> Pokud je soubor daný prostředek obrázku, nástroj bude ho rozdělte do samostatné obrázky před přidáním každý subimage do manifestu.<br /><br /> Pokud na obrázku je soubor ve formátu PNG, doporučujeme formát názvu tímto způsobem tak, aby nástroj můžete přejít k vyplnění správné atributy pro image: \<název >.\< Šířka >. \<Výška > PNG.|Požadováno|  
+|/Resources|Středníkem oddělený seznam imagí nebo adresáře. Tento seznam by měl vždy obsahovat seznam všech imagí, které budou v manifestu. -Li zadána je částečný seznam, jen položky nejsou zahrnuty budou ztraceny.<br /><br /> Pokud je soubor daný prostředek obrázku, nástroj bude ho rozdělte do samostatné obrázky před přidáním každý subimage do manifestu.<br /><br /> Pokud na obrázku je soubor ve formátu PNG, doporučujeme že formát názvu tímto způsobem tak, aby nástroj můžete přejít k vyplnění správné atributy obrázku: \<Název >. \<Šířka >. \<Výška > PNG.|Požadováno|  
 |/ Assembly|Název spravovaného sestavení (nikoli včetně přípony) nebo cesta k modulu runtime nativní sestavení, který je hostitelem zdroje (relativní k umístění manifestu modulu runtime).|Požadováno|  
-|Volba/manifest|Název souboru generovaného .imagemanifest. To může zahrnovat absolutní nebo relativní cestu k vytvoření souboru v jiném umístění. Výchozí název odpovídá názvu sestavení.<br /><br /> Výchozí hodnota: \<aktuální adresář >\\< sestavení\>.imagemanifest|volitelná,|  
-|/guidName|Název symbolu identifikátor GUID pro všechny Image v generovaném manifestu.<br /><br /> Výchozí: AssetsGuid|volitelná,|  
-|/rootPath|Kořenová cesta, kterou je potřeba se odstraní před vytvořením spravovaného prostředku identifikátorů URI. (Tento příznak je pomoct s případy, kde nástroj získá relativní cestou URI chybný, způsobí prostředky na nepodaří zavést.)<br /><br /> Výchozí hodnota: \<aktuální adresář >|volitelná,|  
+|/manifest|Název souboru generovaného .imagemanifest. To může zahrnovat absolutní nebo relativní cestu k vytvoření souboru v jiném umístění. Výchozí název odpovídá názvu sestavení.<br /><br /> Výchozí hodnota: \<Aktuální adresář >\\< sestavení\>.imagemanifest|volitelná,|  
+|/guidName|Název symbolu identifikátor GUID pro všechny Image v generovaném manifestu.<br /><br /> Výchozí hodnota: AssetsGuid|volitelná,|  
+|/rootPath|Kořenová cesta, kterou je potřeba se odstraní před vytvořením spravovaného prostředku identifikátorů URI. (Tento příznak je pomoct s případy, kde nástroj získá relativní cestou URI chybný, způsobí prostředky na nepodaří zavést.)<br /><br /> Výchozí hodnota: \<Aktuální adresář >|volitelná,|  
 |/ Recursive|Nastavení tohoto příznaku instruuje nástroj rekurzivně prohledávat všechny adresáře v argumentu /resources. Tento příznak vynechání způsobí top-úrovně pouze pro vyhledávání adresářů.|volitelná,|  
 |/isNative|Tento příznak nastavte, když je argumentem sestavení cestu pro nativní sestavení. Název spravovaného sestavení po sestavení argument vynechat, nechte tento příznak. (Viz část poznámky pro další informace o tento příznak.)|volitelná,|  
 |/newGuids|Nastavení tohoto příznaku instruuje nástroj pro vytvoření nové hodnoty pro symbol GUID obrázky místo sloučení z existujícího manifestu.|volitelná,|  
 |/newIds|Nastavení tohoto příznaku dává pokyn k vytvoření nové hodnoty symbolů ID pro každý obrázek namísto sloučení hodnoty z existujícího manifestu nástroj.|volitelná,|  
-|/ nologo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
+|/noLogo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
 |/?|Vytiskne informace nápovědy.|volitelná,|  
 |/help|Vytiskne informace nápovědy.|volitelná,|  
   
@@ -163,4 +159,3 @@ Manifest z prostředků nástroje je konzolová aplikace, která přebírá sezn
   <ImageLists />  
 </ImageManifest>  
 ```
-

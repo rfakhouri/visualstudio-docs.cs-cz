@@ -1,11 +1,8 @@
 ---
 title: Karta System.Activities, zvolit položky panelu nástrojů – dialogové okno | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
@@ -14,13 +11,13 @@ ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785001"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Karta System.Activities, dialogové okno Zvolit položky panelu nástrojů
 Této karty **zvolit položky nástrojů** dialogové okno zobrazí seznam [!INCLUDE[wf](../includes/wf-md.md)] aktivity, šablony a položky, které jsou k dispozici. Chcete-li zobrazit tento seznam, vyberte **zvolit položky nástrojů** z **nástroje** nabídky nebo kliknutím pravým tlačítkem myši **nástrojů** a vyberete **zvolit položky**zobrazíte **zvolit položky nástrojů** dialogové okno a pak vyberte jeho **System.Activities** kartu. Hned po spuštění obsahuje seznam aktivit pracovního postupu z System.Activities, System.ServiceModel.Activities a System.Activities.Core.Presentation sestavení; ale jenom poskytnuté systémem aktivity zobrazené a přidávají další sestavení zobrazí v **nástrojů** jsou ve výchozím nastavení zaškrtnuto. Naposledy přidané aktivity jsou automaticky zaškrtnuto a zobrazí se v **nástrojů** po kliknutí na **OK** v dialogovém okně. Navíc tyto položky se zobrazí v **nástrojů** pod novou kategorii, která odpovídá na obor názvů, ve které se nachází aktivity či položky nebo šablonu.  

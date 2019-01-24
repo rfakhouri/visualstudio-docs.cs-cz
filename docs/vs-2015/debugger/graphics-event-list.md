@@ -1,27 +1,22 @@
 ---
 title: Seznam událostí grafiky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 497ee3fe1c588c84195a544179d0d2955b1932b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93054404894ab21522728d00d33f2c862ed127b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768014"
 ---
 # <a name="graphics-event-list"></a>Seznam událostí grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,10 +85,10 @@ Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zk
   
 |Popis rozhraní API|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|Zkontrolovat dostupnost uživatelem definovanou událost|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
-|Začít skupinu událostí|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
-|Ukončit skupinu událostí|[PIXEndEvent](http://msdn.microsoft.com/en-us/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/en-us/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
-|Vytvoření značky události|[PIXSetMarker](http://msdn.microsoft.com/en-us/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/en-us/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
+|Zkontrolovat dostupnost uživatelem definovanou událost|[PIXGetStatus](http://msdn.microsoft.com/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
+|Začít skupinu událostí|[PIXBeginEvent](http://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
+|Ukončit skupinu událostí|[PIXEndEvent](http://msdn.microsoft.com/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
+|Vytvoření značky události|[PIXSetMarker](http://msdn.microsoft.com/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
   
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Uživatelem definované události v Direct3D 11 a starší  
  Pokud chcete vytvořit skupiny a značky v Direct3D 11 nebo starší, pomocí rozhraní API popsané v této části. Následující tabulka shrnuje rozhraní API, která můžete použít pro různé verze rozhraní Direct3D 11 a dřívějších verzích rozhraní Direct3D.  
@@ -107,7 +102,4 @@ Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zk
  Můžete použít některý z těchto rozhraní API, které podporuje vaše verze rozhraní Direct3D – například pokud se zaměřujete na rozhraní API Direct3D 11.1, můžete použít buď `SetMarker` nebo `D3DPerf_SetMarker` vytvořit značku události, ale ne `SetMarkerInt` protože jeho k dispozici pouze v Direct3D 11.2 – a dokonce i těch, které společně podporují různé verze rozhraní Direct3D ve stejné aplikaci můžete kombinovat.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Chybějící objekty z důvodu stavu zařízení](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-
+ [Návod: Chybějící objekty kvůli stavu zařízení](../debugger/walkthrough-missing-objects-due-to-device-state.md)

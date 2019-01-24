@@ -1,25 +1,20 @@
 ---
 title: Ladicí program uživatelského rozhraní (XSLT) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891846"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804914"
 ---
 # <a name="debugger-user-interface-xslt"></a>Uživatelské rozhraní ladicího programu (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Toto téma popisuje oknech ladicího programu a dialogových oknech. Popisuje po
 ## <a name="locals-window"></a>Okno místních hodnot  
  V okně místních hodnot zobrazí informace o všechny proměnné definované v šabloně stylů. V okně místních hodnot obsahuje tři sloupce informací:  
   
- **Jméno**  
+ **Název**  
  Tento sloupec obsahuje názvy všech místních proměnných v aktuálním oboru. Uzel sady mají ovládacím prvkem strom, který je můžete přejít na najdete v jejích podsložkách.  
   
  **Hodnota**  
@@ -48,7 +43,7 @@ Toto téma popisuje oknech ladicího programu a dialogových oknech. Popisuje po
 |`position()`|Pozici nebo číslo indexu, vzhledem k velikosti kontextu kontextu uzlu.|  
 |`self::node()`|Hodnota kontextu uzlu.|  
   
- Další informace najdete v tématu [postupy: Změna kontextu ladicího programu](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
+ Další informace najdete v tématu [jak: Změna kontextu ladicího programu](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
   
 ## <a name="output-window"></a>Okno Výstup  
  V okně výstupu se zobrazí všechny chybové zprávy nebo zabezpečení, ke kterým dochází během ladění.  
@@ -96,15 +91,14 @@ Toto téma popisuje oknech ladicího programu a dialogových oknech. Popisuje po
   
 - Uživatelem definované funkce nejsou povoleny.  
   
-  Další informace najdete v tématu [postupy: vyhodnocení výrazu XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Další informace najdete v tématu [jak: Vyhodnocení výrazu XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Okno zpětného překladu  
  V okně zpětný překlad zobrazí kód sestavení generovaný kompilátorem XSLT. Toto okno lze použít stejně jako všechny ostatní okna zpětného překladu sady Visual Studio.  
   
- Další informace najdete [postupy: použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md).  
+ Další informace najdete [jak: Použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění XSLT](../xml-tools/debugging-xslt.md)   
  [Základy ladicího programu](../debugger/debugger-basics.md)   
  [Proměnné Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-

@@ -1,14 +1,9 @@
 ---
 title: ClickOnce – zabezpečení a nasazení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753929"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce – zabezpečení a nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,13 +57,13 @@ ms.locfileid: "49898171"
  Zabezpečení přístupu kódu pomáhá omezit přístup ke kódu, který má k chráněným prostředkům. Ve většině případů můžete omezit oprávnění zón Internetu a místního intranetu. Použití **zabezpečení** stránku **ProjectDesigner** požádat o zóně vhodný pro aplikaci. Můžete také ladit aplikace s omezenými oprávněními k emulaci činnost koncového uživatele. Další informace najdete v tématu [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>Výzvy důvěryhodnosti ClickOnce  
- Pokud aplikace požaduje více oprávnění než umožňuje zóny, koncový uživatel může vyzváni k provedení rozhodnutí důvěryhodnosti. Koncový uživatel mohl určit, pokud jsou důvěryhodné pro spuštění aplikace ClickOnce, jako je aplikace Windows Forms, aplikace Windows Presentation Foundation, konzolové aplikace, aplikace prohlížeče XAML a řešení pro systém Office. Další informace najdete v tématu [postupy: konfigurace ClickOnce důvěřovat chování výzvy](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
+ Pokud aplikace požaduje více oprávnění než umožňuje zóny, koncový uživatel může vyzváni k provedení rozhodnutí důvěryhodnosti. Koncový uživatel mohl určit, pokud jsou důvěryhodné pro spuštění aplikace ClickOnce, jako je aplikace Windows Forms, aplikace Windows Presentation Foundation, konzolové aplikace, aplikace prohlížeče XAML a řešení pro systém Office. Další informace najdete v tématu [jak: Konfigurace chování výzvy důvěryhodnosti ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
   
 ## <a name="how-clickonce-deployment-works"></a>Jak funguje nasazení ClickOnce  
  Základní [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení architektura je založená na dvou souborů manifestu XML: manifest aplikace a manifest nasazení. Soubory se používají k popisu nainstalovanou aplikací ClickOnce z způsob, jakým se aktualizuje a kdy jsou aktualizovány.  
   
 ### <a name="publishing-clickonce-applications"></a>Publikování aplikací ClickOnce  
- Popisuje manifest aplikace samotná aplikace. To zahrnuje sestavení, závislosti a soubory, které tvoří aplikaci, požadovaná oprávnění a umístění, kde budou k dispozici aktualizace. Vývojář aplikace autory pomocí Průvodce publikováním v sadě Visual Studio nebo Manifest Generation and Editing Tool (Mage.exe) v manifestu aplikace [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Další informace najdete v tématu [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ Popisuje manifest aplikace samotná aplikace. To zahrnuje sestavení, závislosti a soubory, které tvoří aplikaci, požadovaná oprávnění a umístění, kde budou k dispozici aktualizace. Vývojář aplikace autory pomocí Průvodce publikováním v sadě Visual Studio nebo Manifest Generation and Editing Tool (Mage.exe) v manifestu aplikace [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Další informace najdete v tématu [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
  Manifest nasazení popisuje, jak je aplikace nasazená. To zahrnuje umístění manifestu aplikace a verze aplikace, které by klienti měli spouštět.  
   
@@ -114,8 +109,8 @@ ms.locfileid: "49898171"
   
 |Prohlížeč|Verze rozhraní .NET Framework|  
 |-------------|----------------------------|  
-|Internet Explorer|2.0, 3.0, 3.5, VERZE 3.5 SP1, 4|  
-|Firefox|2.0 SP1, VERZE 3.5 SP1, 4|  
+|Internet Explorer|2.0, 3.0, 3.5, 3.5 SP1, 4|  
+|Firefox|2.0 SP1, 3.5 SP1, 4|  
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – nasazení v systému Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)   
@@ -124,6 +119,3 @@ ms.locfileid: "49898171"
  [Nasazování komponent COM s ClickOnce](../deployment/deploying-com-components-with-clickonce.md)   
  [Vytváření aplikací ClickOnce z příkazového řádku](../deployment/building-clickonce-applications-from-the-command-line.md)   
  [Ladění aplikací ClickOnce používajících System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
-
-
-

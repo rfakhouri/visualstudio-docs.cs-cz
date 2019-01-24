@@ -1,23 +1,19 @@
 ---
 title: Poradce při potížích s emulátorem pro Android | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: troubleshooting
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01c73e4701d98422323b92918bd96d0d09bf2dfb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754935"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,7 +174,7 @@ Toto téma obsahuje informace, které pomáhají při řešení problémů, kter
 
      - Zakázat Trusted Execution
 
-       Další informace najdete v článku: TechNet: Hyper-V: K vyřešení chyby systému BIOS povolení technologie Hyper-V
+       Další informace najdete v článku: Technet: Hyper-V: K vyřešení chyby systému BIOS povolení technologie Hyper-V
 
   5. Ujistěte se, že máte alespoň 4 GB systémové paměti a že není právě využívat v jiných prostředků náročné aplikace a procesy.
 
@@ -259,7 +255,7 @@ Toto téma obsahuje informace, které pomáhají při řešení problémů, kter
 
   Chcete-li tento problém vyřešit, zakažte USB3 v nastavení systému BIOS základní desky a restartujte počítač. Zkontrolujte, zda GB vydala aktualizace systému BIOS základní desky.
 
-  Další informace najdete v následujícím článku znalostní báze Knowledge Base: [Selhání spuštění po instalaci role Hyper-V v systémech GB](https://support.microsoft.com/en-us/kb/2693144).
+  Další informace najdete v následujícím článku znalostní báze Knowledge Base: [Selhání spuštění po instalaci role Hyper-V v systémech GB](https://support.microsoft.com/kb/2693144).
 
 ##  <a name="ADB"></a> Visual Studio zasekne při pokusu o nasazení aplikace na emulátoru nebo emulátor se nezobrazí jako cíl ladění ve jiná Integrovaná vývojová prostředí
  Pokud je spuštěný emulátor, ale nezobrazí se chcete připojit k ADB (Android Debug Bridge) nebo se nezobrazují v nástroje pro Android, která využívají ADB (Android Studio nebo Eclipse), budete muset upravit, kde emulátor hledá ADB. Emulátor používá klíč registru pro určení základní umístění sady Android SDK a hledá soubor \platform-tools\adb.exe v tomto adresáři. Chcete-li změnit cesta sady Android SDK používaná emulátorem:

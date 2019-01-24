@@ -1,14 +1,9 @@
 ---
 title: Vytváření šablon projektů a položek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], projects
 - item templates, about item templates
@@ -22,13 +17,13 @@ ms.assetid: a6ce501a-699b-4e3e-ade8-c81895645c20
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763358"
 ---
 # <a name="creating-project-and-item-templates"></a>Vytváření šablon projektů a položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49851657"
   
  Tyto šablony představují výchozí bod pro uživatele, aby mohli začít projekty vytvářet nebo rozšířit projekty stávající. Šablony projektů poskytují soubory, které jsou požadovány pro konkrétní typ projektu, zahrnují standardní odkazy na sestavení a nastavují výchozí vlastnosti projektu a možnosti kompilátoru. Šablony položek mohou mít různou strukturu od jednoho prázdného souboru, který má správnou příponu, až k vícesouborové položce, která například obsahuje zdrojové soubory se základním kódem, informační soubory pro návrháře a vložené prostředky.  
   
- Vedle nainstalovaných šablon v **nový projekt** a **přidat novou položku** dialogová okna, můžete vytvářet svoje vlastní šablony nebo stáhnout a použít šablonu vytvořenou komunitou. Další informace najdete v tématu [postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md) a [postupy: vytváření šablon položek](../ide/how-to-create-item-templates.md).  
+ Vedle nainstalovaných šablon v **nový projekt** a **přidat novou položku** dialogová okna, můžete vytvářet svoje vlastní šablony nebo stáhnout a použít šablonu vytvořenou komunitou. Další informace najdete v tématu [jak: Vytváření šablon projektu](../ide/how-to-create-project-templates.md) a [jak: Vytváření šablon položek](../ide/how-to-create-item-templates.md).  
   
 ## <a name="contents-of-a-template"></a>Obsah šablony  
  Všechny šablony projektů a položek, ať už instalované spolu s aplikací [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo vytvořené vámi, fungují na stejných principech a mají podobný obsah. Všechny šablony obsahují následující položky:  
@@ -49,17 +44,14 @@ ms.locfileid: "49851657"
   
 - Jeden soubor .vstemplate. Tento soubor obsahuje metadata, která poskytuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] informace potřebné k zobrazení šablony **nový projekt** a **přidat novou položku** dialogová okna a vytvořte projekt nebo položku z Šablona. Další informace o souborech .vstemplate naleznete v tématu [parametry šablony](../ide/template-parameters.md).  
   
-  Když jsou tyto soubory zkomprimovány do souboru .zip a vloženy do správné složky, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky zobrazí je. Šablony projektu se zobrazí v **šablony** část **nový projekt** dialogová okna a šablon položek se zobrazí v **přidat novou položku** dialogových oknech. Další informace o adresářích pro šablony najdete v tématu [postupy: vyhledání a uspořádat šablony](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+  Když jsou tyto soubory zkomprimovány do souboru .zip a vloženy do správné složky, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky zobrazí je. Šablony projektu se zobrazí v **šablony** část **nový projekt** dialogová okna a šablon položek se zobrazí v **přidat novou položku** dialogových oknech. Další informace o adresářích pro šablony najdete v tématu [jak: Hledání a organizace šablon](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>startovní sady  
- Startovní sady jsou zdokonalené šablony, které lze veřejně sdílet s ostatními členy komunity. Startovní sada obsahuje ukázky kódu s kompilací, dokumentaci a další prostředky, které mají za úkol pomoci uživatelům naučit se nové nástroje a programovací techniky, aby mohli tvořit užitečné a opravdové aplikace. Základní obsah a postupy pro startovní sady jsou stejné jako pro šablony. Další informace najdete v tématu [postupy: vytváření Startovních sad](../ide/how-to-create-starter-kits.md).  
+ Startovní sady jsou zdokonalené šablony, které lze veřejně sdílet s ostatními členy komunity. Startovní sada obsahuje ukázky kódu s kompilací, dokumentaci a další prostředky, které mají za úkol pomoci uživatelům naučit se nové nástroje a programovací techniky, aby mohli tvořit užitečné a opravdové aplikace. Základní obsah a postupy pro startovní sady jsou stejné jako pro šablony. Další informace najdete v tématu [jak: Vytváření úvodních sad](../ide/how-to-create-starter-kits.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)   
- [Postupy: vytváření šablon položek](../ide/how-to-create-item-templates.md)   
+ [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)   
+ [Postupy: Vytváření šablon položek](../ide/how-to-create-item-templates.md)   
  [Parametry šablony](../ide/template-parameters.md)   
  [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)   
- [Postupy: Vytváření startovních sad](../ide/how-to-create-starter-kits.md)
-
-
-
+ [Postupy: Vytváření úvodních sad](../ide/how-to-create-starter-kits.md)

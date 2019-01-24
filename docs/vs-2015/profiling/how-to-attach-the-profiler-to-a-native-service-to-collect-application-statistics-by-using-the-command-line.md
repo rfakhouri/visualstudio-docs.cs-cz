@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: připojení Profiler k nativní službě ke shromažďování statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Připojit Profiler k nativní službě ke shromažďování statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3677f252fc4c7b415173bf7e1c39c459b7c00b9c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6382d4e674640426d2676531f06dc720b3c7eb4b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793155"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojení profileru k nativní službě ke shromažďování statistik aplikace pomocí příkazového řádku
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojit Profiler k nativní službě ke shromažďování statistik aplikace pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k nativní službě a shromáždit statistiky výkonu pomocí metody vzorkování.  
@@ -45,7 +40,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 2. Otevřete okno příkazového řádku.  
 
-3. Spusťte profiler. Typ:  
+3. Spusťte profiler. Zadejte:  
 
     **Nástroj VSPerfCmd /start:sample**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]    
 
@@ -67,7 +62,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |       [/Events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              Určuje událost trasování událostí pro Windows (ETW) má být shromážděn během profilování. Události trasování událostí pro Windows jsou shromážděny v samostatném (ETL) soubor.                                                                              |
 
 
-4. Připojení profileru ke službě. Typ:  
+4. Připojení profileru ke službě. Zadejte:  
 
     **Nástroj VSPerfCmd / připojit:** `PID` [`Sample Event`]  
 
@@ -115,6 +110,3 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 ## <a name="see-also"></a>Viz také  
  [Profilace služeb](../profiling/command-line-profiling-of-services.md)   
  [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)
-
-
-

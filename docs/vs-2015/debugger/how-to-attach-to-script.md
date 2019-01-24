@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Připojení ke skriptu | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 82013e9a-ef53-4fd2-b451-a6891cdc6307
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e0fbdbf31c4ff504011a4ab80d50746d87ac3dac
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 84f2ad17a2dd97683ec01d3d97b5d28ddb883f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53858030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790788"
 ---
 # <a name="how-to-attach-to-script"></a>Postupy: Připojení ke skriptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Toto téma vysvětluje, jak ručně připojit ladicí program sady Visual Studio
   
 2. V **připojit k procesu** dialogové okno, podívejte se **procesy k dispozici** seznam a vyhledejte zpracovat skript, můžete ke kterému chcete připojit k. Procesy skriptu můžete identifikovat pohledem **typ** sloupce.  
   
-   1.  Pokud je proces, který chcete ladit spuštěn na jiném počítači, musíte nejprve vybrat vzdálený počítač. Další informace najdete v tématu [jak: Výběr vzdáleného počítače](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1.  Pokud je proces, který chcete ladit spuštěn na jiném počítači, musíte nejprve vybrat vzdálený počítač. Další informace najdete v tématu [jak: Výběr vzdáleného počítače](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
    2.  Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.  
   
@@ -64,7 +59,7 @@ Toto téma vysvětluje, jak ručně připojit ladicí program sady Visual Studio
   
    **Procesy k dispozici** seznam se automaticky zobrazí při otevření **procesy** dialogové okno. Procesy můžete spouštět a zastavovat na pozadí při otevřeném dialogovém okně. Proto obsah nemusí být vždy aktuální. Můžete aktualizovat seznam kdykoli zobrazit aktuální seznam procesů stisknutím kombinace kláves **aktualizovat** tlačítko.  
   
-   Můžete být připojení k více programům při ladění, ale pouze jeden program je v každém okamžiku aktivní v ladicím programu. Nastavit aktivní program na panelu nástrojů umístění ladění. Další informace najdete v tématu [jak: Nastavit aktuální proces](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Můžete být připojení k více programům při ladění, ale pouze jeden program je v každém okamžiku aktivní v ladicím programu. Nastavit aktivní program na panelu nástrojů umístění ladění. Další informace najdete v tématu [jak: Nastavit aktuální proces](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
    Všechny **ladění** provádění příkazy vliv na aktivní program. V dialogovém okně procesy můžete přerušit všechny ladícího programu. Zobrazit [pomocí zarážek](../debugger/using-breakpoints.md).  
   
@@ -78,6 +73,3 @@ Toto téma vysvětluje, jak ručně připojit ladicí program sady Visual Studio
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)
-
-
-
