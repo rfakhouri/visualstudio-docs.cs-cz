@@ -1,14 +1,9 @@
 ---
 title: Just-In-Time, ladění, dialogové okno Možnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
 - vs.debug.options.JIT
@@ -28,13 +23,13 @@ ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 06fdd9d12003053ea6d992aa1d7d0fe9ed7144d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788627"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Za běhu, ladění, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +38,11 @@ Pro přístup **Just-In-Time** stránky, přejděte na **nástroje** nabídky a 
   
  Můžete povolit Just-In-Time ladění pro tyto typy programu:  
   
-- Spravované  
+- Spravovaní  
   
 - Nativní  
   
-- skript  
+- Skript  
   
   Ladění Just-In-Time je postup pro ladění programu, který je spuštěn mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Můžete spustit aplikaci vytvořen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prostředí. Pokud jste povolili Just-in-time ladění, chyby se zobrazí dialogové okno s dotazem, zda chcete ladit.  
   
@@ -69,6 +64,3 @@ Pro přístup **Just-In-Time** stránky, přejděte na **nástroje** nabídky a 
 ## <a name="see-also"></a>Viz také  
  [Ladění, dialogové okno Možnosti](../debugger/debugging-options-dialog-box.md)   
  [Postupy: Určení nastavení ladicího programu](../debugger/how-to-specify-debugger-settings.md)
-
-
-

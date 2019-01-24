@@ -2,7 +2,7 @@
 title: Publikování cloudové služby pomocí nástroje Azure | Dokumentace Microsoftu
 description: Další informace o tom, jak publikovat projekty služeb v cloudu Azure pomocí sady Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: cf29e1cdde71d2e8ef7caa9bc91bc31c30c7bc41
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c13d2e2a8f0ec06cdec26763e3492bfce7acfad0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781606"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publikování cloudové služby pomocí sady Visual Studio
 
@@ -33,9 +33,9 @@ Aplikaci Azure publikovat a aktualizovat webové role pomocí nasazení webu pom
 
 Když publikujete aplikaci Azure, je provést jednu z následujících úloh:
 
-- Vytvořit balíček služby: Tento balíček a konfigurační soubor služby můžete použít k publikování aplikace do prostředí nasazení z [webu Azure portal](https://portal.azure.com).
+- Vytvořte balíček služby: Tento balíček a konfigurační soubor služby můžete použít k publikování aplikace do prostředí nasazení z [webu Azure portal](https://portal.azure.com).
 
-- Publikování projektu Azure v sadě Visual Studio: můžete publikovat svoji aplikaci přímo do Azure, můžete použít Průvodce publikováním. Informace najdete v tématu [Průvodce publikováním aplikace Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Publikování projektu Azure v sadě Visual Studio: Můžete publikovat svoji aplikaci přímo do Azure, můžete použít Průvodce publikováním. Informace najdete v tématu [Průvodce publikováním aplikace Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Chcete-li vytvořit balíček služby ze sady Visual Studio
 
@@ -69,11 +69,11 @@ Pokud je vaše aplikace back-end infrastrukturu stabilní, ale webové role vyž
 
 ### <a name="requirements-for-using-web-deploy"></a>Požadavky pro pomocí nasazení webu
 
-- **Pouze pro vývoj a testování účely**: změny probíhají přímo k virtuálnímu počítači se spuštěným ve webové roli. Pokud tento virtuální počítač má k provedení recyklace, změny budou ztraceny, protože původní balíček, kterou jste publikovali se používá pro opětovné vytvoření virtuálního počítače pro roli. Znovu publikujte aplikaci pro získání nejnovějších změn pro webovou roli.
+- **Pouze pro vývoj a testování účely**: Změny jsou provedeny přímo k virtuálnímu počítači se spuštěným ve webové roli. Pokud tento virtuální počítač má k provedení recyklace, změny budou ztraceny, protože původní balíček, kterou jste publikovali se používá pro opětovné vytvoření virtuálního počítače pro roli. Znovu publikujte aplikaci pro získání nejnovějších změn pro webovou roli.
 
-- **Je možné aktualizovat jenom webové role**: role pracovního procesu se nedá aktualizovat. Kromě toho nelze aktualizovat `RoleEntryPoint` v `web role.cs`.
+- **Je možné aktualizovat jenom webové role**: Role pracovního procesu se nedá aktualizovat. Kromě toho nelze aktualizovat `RoleEntryPoint` v `web role.cs`.
 
-- **Jedna instance webové role podporují jenom**: nelze mít více instancí žádné webové role v prostředí pro nasazení. Více webových rolí každý jenom s jednou instancí jsou však podporovány.
+- **Jedna instance webové role podporují jenom**: V prostředí pro nasazení nemůže mít více instancí žádné webové role. Více webových rolí každý jenom s jednou instancí jsou však podporovány.
 
 - **Povolit připojení ke vzdálené ploše**: Tento požadavek umožňuje Web Deploy používat uživatele a heslo pro připojení k virtuálnímu počítači, který chcete nasadit změny na server, na kterém běží Internetové informační služby (IIS). Kromě toho můžete potřebovat pro připojení k virtuálnímu počítači přidat důvěryhodný certifikát do služby IIS na tomto virtuálním počítači. (Tento certifikát zajišťuje, že vzdáleného připojení pro službu IIS, který používá Webdeploy zabezpečené.)
 

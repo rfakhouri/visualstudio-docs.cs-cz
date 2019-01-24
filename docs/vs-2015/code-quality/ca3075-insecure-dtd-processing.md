@@ -1,23 +1,19 @@
 ---
 title: 'CA3075: Zpracování nezabezpečené specifikace DTD | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 37aeec3ffc0505ee37e1658d01912837f06096d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785119"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Zpracování nezabezpečené specifikace DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +25,7 @@ ms.locfileid: "53953430"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Pokud používáte nezabezpečené <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instance nebo odkaz na externí entity zdroje, analyzátor může přijmout nedůvěryhodné vstupní tak zveřejnit citlivé informace, které útočníci.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -63,7 +59,7 @@ ms.locfileid: "53953430"
 
 - Zakázat zpracování DTD, pokud pracujete se sekvenčním nedůvěryhodných zdrojů tak, že nastavíte <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> vlastnost **true** .
 
-- Pomocí třídy XmlTextReader má vyžádané dědičnosti úplný vztah důvěryhodnosti. Zobrazit [požadavky na dědičnost](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Další informace.
+- Pomocí třídy XmlTextReader má vyžádané dědičnosti úplný vztah důvěryhodnosti. Zobrazit [požadavky na dědičnost](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Další informace.
 
   Rozhraní .NET 4 a novější
 

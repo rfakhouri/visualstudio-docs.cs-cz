@@ -1,25 +1,20 @@
 ---
 title: Uzly návrháře shaderů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793261"
 ---
 # <a name="shader-designer-nodes"></a>Uzly návrháře shaderů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ ms.locfileid: "49293498"
 |[Matematické uzly](../designers/math-nodes.md)|Popisuje uzly, které můžete použít k provedení algebraických, logika, trigonometrických a jiných matematických operací, které se mapují přímo na HLSL pokyny.|  
 |[Uzly nástroje](../designers/utility-nodes.md)|Popisuje uzly, které můžete použít k provádění běžných výpočtů osvětlení a dalších běžných operací, které se nemapují přímo na HLSL pokyny.|  
 |[Uzly filtru](../designers/filter-nodes.md)|Popisuje uzly, které můžete použít k provedení filtrování textur a filtrování barvu.|
-
-
-

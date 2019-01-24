@@ -1,24 +1,19 @@
 ---
 title: Zápis do Store nastavení uživatele | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70522d8a291cad559a042dab7f4eeb3c3c4684ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14438e23e73e6c69ecfe94ee7ada379b0d2fad15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779720"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783378"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zápis do úložiště uživatelských nastavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,4 +130,3 @@ Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje /
 8.  Na **nástroje** nabídky, klikněte na tlačítko **vyvolat UserSettingsStoreCommand**. Tato možnost přidá Poznámkový blok a **nástroje** nabídky.  
   
 9. Teď byste měli vidět Poznámkový blok v nabídce Nástroje / možnosti nabídky a kliknutím na **Poznámkový blok** by měl vyvolat instance poznámkového bloku.
-

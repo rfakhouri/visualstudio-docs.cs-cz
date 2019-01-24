@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: určení stránky publikování pro aplikaci ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Určení stránky publikování pro aplikaci ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,20 +17,20 @@ ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c10033f7e3f3a4336177c8c66721bd6b79ba4c71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e739edf3d32b011f915ca0aad69e5148104afc05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786378"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Postupy: Určení stránky publikování pro aplikaci ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace vygeneruje a publikovat aplikace spolu se výchozí webová stránka (publish.htm). Tato stránka obsahuje název aplikace, odkaz na instalaci aplikace a všechny požadované součásti a odkaz na nápovědu s popisem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. **Publikovat stránku** vlastností projektu můžete zadat název pro webovou stránku pro vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace.  
   
- Jakmile stránka publikování nebyl zadán, při příštím publikování, bude zkopírován do umístění pro publikování; nesmí být přepsány, pokud znovu publikovat. Pokud chcete přizpůsobit vzhled stránky, činíte tak nemusíme se starat o ztrátu změn. Další informace najdete v tématu [postupy: Úprava výchozí webové stránky ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
+ Jakmile stránka publikování nebyl zadán, při příštím publikování, bude zkopírován do umístění pro publikování; nesmí být přepsány, pokud znovu publikovat. Pokud chcete přizpůsobit vzhled stránky, činíte tak nemusíme se starat o ztrátu změn. Další informace najdete v tématu [jak: Úprava webové stránky ClickOnce výchozí](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
   
  **Publikovat stránku** vlastnost lze nastavit **možnosti publikování** dialogové okno, přístupné **publikovat** podokně **Návrháře projektu**.  
   
@@ -67,8 +62,5 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplika
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Postupy: Přizpůsobení výchozí webové stránky ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)
-
-
-

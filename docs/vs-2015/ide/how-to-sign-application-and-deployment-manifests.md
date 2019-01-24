@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: podepsání manifestů aplikace a nasazení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Podepsání manifestů aplikace a nasazení | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - code signing [Visual Studio], Authenticode
@@ -22,15 +17,15 @@ ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3162d65f8712c7db55be1bced9f815ecfaa866f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0ccd3d6b6f9c1d995a0aebb4bc1e3007e025ca5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299720"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784181"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: Podepsání manifestů aplikace a nasazení
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: Přihlášení aplikace a manifestů nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace a nasazení musí být podepsány párem veřejného a privátního klíče a pomocí technologie Authenticode. Manifesty můžete podepsat pomocí certifikátu z úložiště certifikátů Windows nebo soubor klíče.  
@@ -39,7 +34,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
   
  Podepisování manifestů ClickOnce je nepovinné pro aplikace založené na .exe. Další informace najdete v části "Generování nepodepsaných manifestů" tohoto dokumentu.  
   
- Informace o vytváření souborů klíčů naleznete v tématu [postupy: vytvoření páru veřejného a privátního klíče](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Informace o vytváření souborů klíčů naleznete v tématu [jak: Vytvoření páru veřejného a privátního klíče](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají .pfx příponu. Ale můžete vybrat jiné typy certifikátů z úložiště certifikátů Windows aktuálního uživatele klepnutím **vybírat Store** na **podepisování** stránky vlastností projektu.  
@@ -98,7 +93,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
   
 2.  Na **podepisování** zrušte **podepsat manifesty ClickOnce** zaškrtávací políčko.  
   
-3.  Resetujte verzi publikování, takže je k dispozici pouze jedna verze vaší aplikace. Ve výchozím nastavení Visual Studio automaticky zvýší číslo revize verze publikování pokaždé, když se publikování aplikace. Další informace najdete v tématu [postupy: nastavení verze publikování ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3.  Resetujte verzi publikování, takže je k dispozici pouze jedna verze vaší aplikace. Ve výchozím nastavení Visual Studio automaticky zvýší číslo revize verze publikování pokaždé, když se publikování aplikace. Další informace najdete v tématu [jak: Nastavení publikování ClickOnce verze](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
 4.  Publikování aplikace.  
   
@@ -115,9 +110,6 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
   
 ## <a name="see-also"></a>Viz také  
  [Sestavení se silným názvem](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Postupy: vytvoření páru veřejného a privátního klíče](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Postupy: Vytvoření páru veřejného a privátního klíče](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Stránka podepisování, Návrhář projektu](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)
-
-
-

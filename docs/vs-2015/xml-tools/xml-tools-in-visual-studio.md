@@ -1,13 +1,9 @@
 ---
 title: Nástroje XML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
 helpviewer_keywords:
@@ -36,13 +32,13 @@ ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d67412130bfe28b2d344634493f70f4136d060d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 2812e45460778a3527f55522c6d3fc98285a548d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786304"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Nástroje XML v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +60,7 @@ Kód XML (Extensible Language) * je značkovací jazyk, který poskytuje formát
 ## <a name="reference"></a>Odkaz
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) zpřístupňuje [editoru XML](http://go.microsoft.com/fwlink/?LinkId=228249) strom prostřednictvím analýzy [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) pro všechny dokumenty XML.
 
- [Reference na standardy XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401) poskytuje informace o XML technologií, včetně XML, dokumentu typ definice (DTD), schéma XML definice jazyk (XSD) a XSLT.
+ [Reference na standardy XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) poskytuje informace o XML technologií, včetně XML, dokumentu typ definice (DTD), schéma XML definice jazyk (XSD) a XSLT.
 
  <xref:System.Xml?displayProperty=fullName> Popisuje třídy a další prvky, které tvoří <xref:System.Xml> obor názvů a obsahuje odkazy na podrobnější informace o každé položky.
 
@@ -73,9 +69,9 @@ Kód XML (Extensible Language) * je značkovací jazyk, který poskytuje formát
 ## <a name="related-sections"></a>Související oddíly
  [XML Document Object Model (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) popisuje jak <xref:System.Xml.XmlDocument> a jeho přidružených tříd v souladu s modelu objektu dokumentu W3C (Core) úrovně 1 a 2 úroveň oboru názvů podporu specifikace.
 
- [Čtení XML s objekt XmlReader](http://msdn.microsoft.com/en-us/3029834c-a27e-4331-b7aa-711924062182) popisuje jak <xref:System.Xml.XmlReader> poskytuje mapovaný, přesměrování pouze, jen pro čtení přístup k datům XML datový proud XML.
+ [Čtení XML s objekt XmlReader](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) popisuje jak <xref:System.Xml.XmlReader> poskytuje mapovaný, přesměrování pouze, jen pro čtení přístup k datům XML datový proud XML.
 
- [Zápis XML pomocí funkce XmlWriter](http://msdn.microsoft.com/en-us/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) popisuje jak <xref:System.Xml.XmlWriter> poskytuje mapovaný, předávat pouze způsob, jak generovat datové proudy XML a pomáhá vytvářet dokumenty XML, které jsou v souladu se standardem W3C.
+ [Zápis XML pomocí funkce XmlWriter](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) popisuje jak <xref:System.Xml.XmlWriter> poskytuje mapovaný, předávat pouze způsob, jak generovat datové proudy XML a pomáhá vytvářet dokumenty XML, které jsou v souladu se standardem W3C.
 
  [Transformace XSLT](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) popisuje jak <xref:System.Xml.Xsl.XslCompiledTransform> třída implementuje XSLT 1.0 doporučení.
 

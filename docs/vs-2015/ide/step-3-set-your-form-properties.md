@@ -1,32 +1,27 @@
 ---
 title: 'Krok 3: Nastavte vlastnosti svého formuláře | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 64e197e3f6f34cc46d91c330b4d5f80b3c6ce578
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782246"
 ---
-# <a name="step-3-set-your-form-properties"></a>Krok 3: Nastavte vlastnosti svého formuláře
+# <a name="step-3-set-your-form-properties"></a>Krok 3: Nastavení vlastností formuláře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dále použijete **vlastnosti** okno a změně vzhledu formuláře.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+ ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) nebo [kurz 1: Vytvoření prohlížeče obrázků v C# -Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Chcete-li nastavit vlastnosti svého formuláře  
   
@@ -39,7 +34,7 @@ Dále použijete **vlastnosti** okno a změně vzhledu formuláře.
   
 3. Po výběru formuláře vyhledejte **Text** vlastnost **vlastnosti** okna. V závislosti na tom, jak je seznam seřazen může být potřeba posuňte se dolů. Zvolte **Text**, typ **prohlížeče obrázků**a stiskněte klávesu ENTER.  Formulář by měl mít nyní text **prohlížeče obrázků** v jeho záhlaví a **vlastnosti** okno by mělo vypadat jako na následujícím obrázku.  
   
-    ![Okno vlastností](../ide/media/express-edittextproperty.png "Express_EditTextProperty")  
+    ![Properties window](../ide/media/express-edittextproperty.png "Express_EditTextProperty")  
    Vlastnosti – okno  
   
    > [!NOTE]
@@ -77,9 +72,6 @@ Dále použijete **vlastnosti** okno a změně vzhledu formuláře.
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: rozložení na svůj formulář pomocí ovládacího prvku TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
 -   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 2: Spusťte svůj Program](../ide/step-2-run-your-program.md).
-
-
-

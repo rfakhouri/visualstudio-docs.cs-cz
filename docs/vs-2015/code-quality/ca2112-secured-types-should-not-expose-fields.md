@@ -1,13 +1,9 @@
 ---
 title: 'CA2112: Zabezpečené typy by neměly vystavovat pole | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2112
 - SecuredTypesShouldNotExposeFields
@@ -19,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d49c860735fc65655a958c39bc237defdbc0acc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0ac554ebee7188e0826de9e5c1852cf3bcc33cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913336"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786486"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Zabezpečené typy by neměly vystavovat pole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ ms.locfileid: "53913336"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný typ obsahuje veřejná pole a je zabezpečen pomocí [požadavky propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
 
 ## <a name="rule-description"></a>Popis pravidla

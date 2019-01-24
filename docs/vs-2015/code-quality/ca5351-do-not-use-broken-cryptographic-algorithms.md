@@ -1,24 +1,19 @@
 ---
 title: 'Ca5351: Nepoužívejte poškozené kryptografické algoritmy | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786588"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Nepoužívejte poškozené kryptografické algoritmy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49889812"
 > [!NOTE]
 >  Toto upozornění byl naposledy aktualizován. listopadu 2015.  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Funkce, jako hashování <xref:System.Security.Cryptography.MD5> a šifrovacích algoritmů, jako <xref:System.Security.Cryptography.DES> a <xref:System.Security.Cryptography.RC2> můžete zveřejnit významné riziko a může vést k úniku citlivých informací pomocí technik triviální útoků, jako jsou například útoky hrubou silou a kolize hodnot hash.  
   
  Níže uvedeného seznamu kryptografických algoritmů, které se vztahují známé kryptografického útoku. Kryptografická hodnota hash algoritmu <xref:System.Security.Cryptography.MD5> terčem útoků kolize hodnot hash.  V závislosti na využití může vést ke kolizi hash k zosobnění, manipulaci nebo jiné typy útoků na systémech, které závisí na jedinečných kryptografických výstup hashovací funkce. Algoritmy šifrování <xref:System.Security.Cryptography.DES> a <xref:System.Security.Cryptography.RC2> jsou v souladu s kryptografického útoku, které může vést k neúmyslnému zveřejnění šifrovaná data.  
@@ -52,7 +47,7 @@ ms.locfileid: "49889812"
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Použijte kryptograficky silnější možnosti:  
   
--   MD5, použijte hodnoty hash v [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) řady (třeba <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+-   MD5, použijte hodnoty hash v [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) řady (třeba <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 -   DES a RC2 <xref:System.Security.Cryptography.Aes> šifrování.  
   

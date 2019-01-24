@@ -1,24 +1,19 @@
 ---
 title: Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791989"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Testovací rozhraní pro programové testy uživatelského rozhraní a zaznamen�
   ![Architektura uživatelského rozhraní testu](../test/media/ui-testarch.png "UI_TestArch")  
   Přehled architektury  
   
-## <a name="download-the-sample"></a>Stáhněte si ukázku  
+## <a name="download-the-sample"></a>Stažení ukázky  
  Ukázka se skládá ze čtyř projekty v `CodedUIExtensibilitySample.sln` řešení:  
   
 - CodedUIextensibilitySample  
@@ -53,15 +48,15 @@ Testovací rozhraní pro programové testy uživatelského rozhraní a zaznamen�
 ## <a name="details-about-the-sample"></a>Podrobnosti o ukázku  
  Následující části obsahují informace o ukázce a jeho strukturu.  
   
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Doplněk pro aplikaci Microsoft Excel: ExcelCodedUIAddinHelper  
+### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft doplněk Excelu: ExcelCodedUIAddinHelper  
  Tento projekt obsahuje doplněk, který běží v procesu Excelu. Zobrazit [doplňku ukázkové aplikace Excel pro programové testování uživatelského rozhraní](../test/sample-excel-add-in-for-coded-ui-testing.md) stručný přehled projektu doplňku.  
   
- Další informace najdete v tématu [názorný postup: Add-in vytvořit svůj první VSTO pro Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Další informace najdete v tématu [názorný postup: Vytvoření vašeho prvního doplňku VSTO pro Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Uživatelské rozhraní Excelu komunikace: ExcelUIcommunicationHelper  
  Tento projekt obsahuje `IExcelUICommunication` rozhraní a třídy informace, které se používají k předávání dat mezi kódované UI Testing Framework a Excel. Další informace najdete v tématu [ukázka rozhraní Komunikátoru Excel](../test/sample-excel-communicator-interface.md).  
   
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Rozšíření programového testu UI: CodedUIExentsibilitySample  
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Rozšíření programového uživatelského rozhraní testu: CodedUIExentsibilitySample  
  Tento projekt obsahuje vlastní třídy, které se používají v testech z Excelového listu. Kód pro každý z těchto tříd je poměrně zřejmých. Však poskytujeme krátký popis každé vlastní třídy. Další informace najdete v tématu [ukázka programového uživatelského rozhraní testu rozšíření pro aplikaci Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
   
 ### <a name="deploying-your-add-in-and-extension"></a>Nasazování doplňky a rozšíření  
@@ -84,6 +79,3 @@ Testovací rozhraní pro programové testy uživatelského rozhraní a zaznamen�
  [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
  [Osvědčené postupy pro programové testy UI](../test/best-practices-for-coded-ui-tests.md)   
  [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

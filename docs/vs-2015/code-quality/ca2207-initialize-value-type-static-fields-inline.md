@@ -1,13 +1,9 @@
 ---
 title: 'CA2207: Inicializujte vloženou hodnotu statických polí | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeValueTypeStaticFieldsInline
 - CA2207
@@ -19,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8c2f4f8cf1981956b86b67638f66bca82a0628c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f8bc843dc20df03ddf38a7506342addb6477297
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786502"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inicializujte vloženou hodnotu statických polí
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inicializujte statická pole s typem hodnoty vloženě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53865920"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Hodnotový typ deklaruje explicitní statický konstruktor.
 
 ## <a name="rule-description"></a>Popis pravidla
