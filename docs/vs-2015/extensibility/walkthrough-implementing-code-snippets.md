@@ -1,26 +1,21 @@
 ---
-title: 'Návod: Implementace fragmentů kódu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Implementace fragmentů kódu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763336"
 ---
-# <a name="walkthrough-implementing-code-snippets"></a>Návod: Implementace fragmentů kódu
+# <a name="walkthrough-implementing-code-snippets"></a>Průvodce: Implementace fragmentů kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete vytvořit fragmenty kódu a zahrnout je do editoru rozšíření tak, aby uživatelé rozšíření můžete přidat do vlastní kód.  
@@ -37,7 +32,7 @@ Můžete vytvořit fragmenty kódu a zahrnout je do editoru rozšíření tak, a
   
 3. Implementace fragment kódu rozšíření.  
   
-   Tento názorný postup je založen na [návod: zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Tento názorný postup je založen na [názorný postup: Zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -116,7 +111,7 @@ Můžete vytvořit fragmenty kódu a zahrnout je do editoru rozšíření tak, a
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>K registraci fragmenty kódu pro konkrétní identifikátor GUID  
   
-1.  Otevřít **CompletionTest** projektu. Informace o tom, jak vytvořit tento projekt, naleznete v tématu [návod: zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Otevřít **CompletionTest** projektu. Informace o tom, jak vytvořit tento projekt, naleznete v tématu [názorný postup: Zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  V projektu přidejte odkazy na následující sestavení:  
   
@@ -124,7 +119,7 @@ Můžete vytvořit fragmenty kódu a zahrnout je do editoru rozšíření tak, a
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  V projektu otevřete soubor source.extension.vsixmanifest.  
   
@@ -254,4 +249,3 @@ Můžete vytvořit fragmenty kódu a zahrnout je do editoru rozšíření tak, a
 7.  V jiné části textu zadejte "test" a potom stiskněte klávesu TAB. Protože "test" místní fragment kódu je fragment kódu musí být znovu zařazen.  
   
 ## <a name="next-steps"></a>Další kroky
-

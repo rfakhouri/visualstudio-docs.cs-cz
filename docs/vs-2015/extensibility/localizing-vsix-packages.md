@@ -1,14 +1,9 @@
 ---
 title: Lokalizace balíčků VSIX | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize package
 - localize extension
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2f6bc666e244fed2bc2922ce4878434730a643e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760209"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizace balíčků VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Je možné lokalizovat VSIX balíček vytvořením souboru Extension.vsixlangpac
   
  Extension.vsixmanifest  
   
- [Content_Types] .xml  
+ [Content_Types].xml  
   
  es-ES  
   
@@ -52,7 +47,7 @@ Je možné lokalizovat VSIX balíček vytvořením souboru Extension.vsixlangpac
 >  Šablony projektů VSIX podporované v [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generování manifestu VSIX a pojmenujte ho source.extension.vsixmanifest. Když Visual Studio vytvoří projekt, zkopíruje obsah tohoto souboru do Extension.VsixManifest v balíčku souboru VSIX.  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Soubor Extension.vsixlangpack  
- Následující soubor Extension.vsixlangpack [VSIX Language Pack Schema](../extensibility/vsx-language-pack-schema-reference.md). Toto schéma je [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md) kořenový element a tyto čtyři podřízených elementů: [LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md), [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md), [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md), a [licence](../extensibility/license-element-vsix-language-pack-schema.md). Tyto podřízené prvky odpovídají `Name`, `Description`, `MoreInfoURL`, a `License` podřízených elementů `Identifier` element soubor Extension.vsixmanifest.  
+ Následující soubor Extension.vsixlangpack [VSIX Language Pack Schema](../extensibility/vsx-language-pack-schema-reference.md). Toto schéma je [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md) kořenový element a těchto čtyřech podřízených prvků: [LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md), [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md), [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md), a [licence](../extensibility/license-element-vsix-language-pack-schema.md). Tyto podřízené prvky odpovídají `Name`, `Description`, `MoreInfoURL`, a `License` podřízených elementů `Identifier` element soubor Extension.vsixmanifest.  
   
  Když vytvoříte soubor vsixlangpack, je nutné nastavit `Include in Vsix` vlastnost `true`. V opačném případě lokalizovaného instalačního text se bude ignorovat.  
   
@@ -101,4 +96,3 @@ Je možné lokalizovat VSIX balíček vytvořením souboru Extension.vsixlangpac
  [VSIX LanguagePack Element](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)   
  [Anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Šablona projektu VSIX](../extensibility/vsix-project-template.md)
-

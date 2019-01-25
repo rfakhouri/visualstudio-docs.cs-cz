@@ -1,14 +1,9 @@
 ---
 title: Microsoft Help Viewer | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755035"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v mís
 |-|-|  
 |Navigace|S použitím **obsah** kartu, můžete zobrazit nainstalovaný obsah jako hierarchie a určit kritéria filtru zobrazených názvů.<br /><br /> S použitím **hledání** kartu, můžete vyhledat výrazy kdekoli v obsahu, včetně kódu a v názvech témat.<br /><br /> S použitím **Index** kartu, můžete vyhledat index, určit kritéria filtru položek a vyžadují tento index položky obsahovaly nebo začínaly textem, který zadáte.<br /><br /> S použitím **Oblíbené** kartu, můžete uložit odkazy na témata, které často používáte, a můžete zobrazit seznam témat, která jste nedávno navštívili.|  
 |Zobrazení tématu|Každé téma se zobrazí na kartě a můžete otevřít více témat najednou.|  
-|Správa obsahu|Můžete nainstalovat, aktualizovat, přesunout a odstranit obsah pomocí **spravovat obsah** kartu. V horní části karty, můžete použít **zdrojová data instalace** ovládacího prvku určit, zda chcete instalovat knihy z umístění v síti nebo z disku nebo identifikátor URI. **Cesta k místnímu úložišti** ukazuje, kde jsou knihy nainstalovány v místním počítači, a můžete je přesunout do jiného umístění výběrem pole **přesunout** tlačítko.<br /><br /> Seznam obsahu zobrazuje, které knihy lze nainstalovat nebo jste již nainstalovali, zda je k dispozici aktualizace a jak velké jsou jednotlivé knihy. Může instalovat nebo odebírat jednu nebo více knih výběrem příslušné **přidat** nebo **odebrat** odkazy a potom kliknete **aktualizace** tlačítko **čekající na vyřízení změny** podokně. Pokud jsou aktualizace dostupné pro některé knihy, které jste již nainstalovali, můžete tento obsah aktualizovat kliknutím **pro stažení klikněte zde** odkaz v dolní části okna. Všechny nainstalované knihy navíc budou aktualizovány, pokud při instalaci dalších knih jsou k dispozici aktualizace. **Poznámka:** funkce **spravovat obsah** kartu se můžou lišit, pokud správce aplikace Help Viewer konkrétní funkce deaktivuje nebo pokud je k dispozici bez připojení k Internetu.|  
+|Správa obsahu|Můžete nainstalovat, aktualizovat, přesunout a odstranit obsah pomocí **spravovat obsah** kartu. V horní části karty, můžete použít **zdrojová data instalace** ovládacího prvku určit, zda chcete instalovat knihy z umístění v síti nebo z disku nebo identifikátor URI. **Cesta k místnímu úložišti** ukazuje, kde jsou knihy nainstalovány v místním počítači, a můžete je přesunout do jiného umístění výběrem pole **přesunout** tlačítko.<br /><br /> Seznam obsahu zobrazuje, které knihy lze nainstalovat nebo jste již nainstalovali, zda je k dispozici aktualizace a jak velké jsou jednotlivé knihy. Může instalovat nebo odebírat jednu nebo více knih výběrem příslušné **přidat** nebo **odebrat** odkazy a potom kliknete **aktualizace** tlačítko **čekající na vyřízení změny** podokně. Pokud jsou aktualizace dostupné pro některé knihy, které jste již nainstalovali, můžete tento obsah aktualizovat kliknutím **pro stažení klikněte zde** odkaz v dolní části okna. Všechny nainstalované knihy navíc budou aktualizovány, pokud při instalaci dalších knih jsou k dispozici aktualizace. **Poznámka:**  Funkce **spravovat obsah** kartu se můžou lišit, pokud správce aplikace Help Viewer konkrétní funkce deaktivuje nebo pokud je k dispozici bez připojení k Internetu.|  
   
  Panel nástrojů v okně aplikace Help Viewer obsahuje následující tlačítka:  
   
@@ -84,6 +79,3 @@ Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v mís
  [Instalace a Správa místního obsahu](../ide/install-and-manage-local-content.md)   
  [Vyhledejte informace](../ide/locate-information.md)   
  [Řešení potíží s programem Help Viewer](../ide/troubleshooting-the-help-viewer.md)
-
-
-

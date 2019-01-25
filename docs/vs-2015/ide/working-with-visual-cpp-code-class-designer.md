@@ -1,14 +1,9 @@
 ---
 title: Práce s kódem jazyka Visual C++ (návrhář tříd) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765009"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Práce s kódem jazyka Visual C++ (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tří
 -   Definice TypeDef  
   
 > [!NOTE]
->  To však není stejný jako diagram tříd UML, který vytvoříte v projektu modelování. Další informace najdete v tématu [diagramů tříd UML: referenční](../modeling/uml-class-diagrams-reference.md).  
+>  To však není stejný jako diagram tříd UML, který vytvoříte v projektu modelování. Další informace najdete v tématu [diagramů tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md).  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Řešení potíží typu řešení a problémů zobrazení  
   
@@ -68,7 +63,7 @@ Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tří
 ### <a name="type-resolution-issues"></a>Typ řešení problémů  
  Návrhář tříd nemusí být možné přeložit typy z následujících důvodů:  
   
-- Typ není v projektu nebo sestavení, který neodkazuje projekt, který obsahuje diagram třídy. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení obsahující typ. Další informace najdete v tématu [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Typ není v projektu nebo sestavení, který neodkazuje projekt, který obsahuje diagram třídy. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení obsahující typ. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Typ není ve správném oboru, takže ho nejde najít návrhář tříd. Ujistěte se, že kód není chybí `using`, `imports`, nebo `#include` příkazu. Ujistěte se také, že nebyly vyjme typ (nebo související typ) z oboru názvů, ve kterém bylo původně umístěná.  
   
@@ -82,7 +77,7 @@ Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tří
   
 - Ujistěte se, že návrhář tříd podporuje typ, který jste zadali. Zobrazit [omezení pro prvky kódu C++](#limitations).  
   
-- Došlo k pokusu o přeložení typu. Typ může být v projektu nebo sestavení, který neodkazuje projekt, který obsahuje diagram třídy. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení obsahující typ. Další informace najdete v tématu [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Došlo k pokusu o přeložení typu. Typ může být v projektu nebo sestavení, který neodkazuje projekt, který obsahuje diagram třídy. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení obsahující typ. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Ujistěte se, že typ je ve správném oboru tak, aby ji mohli najít návrhář tříd. Ujistěte se, že kód není chybí `using`, `imports`, nebo `#include` příkazu. Ujistěte se také, že nebyly vyjme typ (nebo související typ) z oboru názvů, ve kterém bylo původně umístěná.  
   
@@ -121,6 +116,3 @@ Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tří
  [Struktury jazyka Visual C++ v Návrháři tříd](../ide/visual-cpp-structures-in-class-designer.md)   
  [Výčty jazyka Visual C++ v Návrháři tříd](../ide/visual-cpp-enumerations-in-class-designer.md)   
  [Definice Typedefs jazyka Visual C++ v Návrháři tříd](../ide/visual-cpp-typedefs-in-class-designer.md)
-
-
-

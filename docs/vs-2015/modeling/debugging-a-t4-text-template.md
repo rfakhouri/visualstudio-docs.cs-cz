@@ -1,12 +1,9 @@
 ---
 title: Ladění textové šablony T4 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770736"
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +47,7 @@ Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové
 |Sestavení '{0}"pro procesor direktiv"{1}"neudělila sada oprávnění FullTrust. Jenom důvěryhodná sestavení můžou poskytovat procesory direktiv. Tento procesor direktiv se nenačte.|Vyvolá se v případě systému nejsou udělena oprávnění FullTrust k sestavení obsahujícímu procesor direktiv. Zpráva obsahuje název sestavení a název procesor direktiv.|Ujistěte se, že používáte jenom důvěryhodná sestavení v místním počítači.|  
 |Cesta "{0}' musí být místní na tomto počítači nebo součástí zóny důvěryhodných serverů.|Vyvolá se v případě direktiva nebo – direktiva assembly odkazuje na soubor, který není na místním počítači nebo na vaší síti důvěryhodné zóny.|Ujistěte se, že je adresář, kde se nacházejí direktiva nebo direktivy sestavení do zóny důvěryhodných serverů. Síťovému adresáři můžete přidat do zóny důvěryhodných serverů pomocí aplikace Internet Explorer.|  
 |Více chyby syntaxe, například "Neplatný token ' catch'" nebo "obor názvů nemůže přímo obsahovat členy"|Příliš mnoho uzavírací složené závorky v kódu šablony. Kompilátor je matoucí ho pomocí standardní generování kódu.|Zkontrolujte číslo ukončení složené závorky a hranaté závorky v kódu oddělovače.|  
-|Smyčky nebo podmínky nejsou zkompilovat nebo provést správně. Příklad: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Tento kód vracel vždy hodnotu jsem. Pouze "číslo je:" je podmíněný.|V jazyce C# vždy používejte složené závorky ohraničit textové bloky, které jsou vložené řídicí příkazy.|Přidat složené závorky: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
+|Smyčky nebo podmínky nejsou zkompilovat nebo provést správně. Například: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Tento kód vracel vždy hodnotu jsem. Pouze "číslo je:" je podmíněný.|V jazyce C# vždy používejte složené závorky ohraničit textové bloky, které jsou vložené řídicí příkazy.|Přidat složené závorky: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
 |"Výraz je příliš složitý" při zpracování šablony návrhu nebo kompilaci (předzpracovaná) šablona modulu runtime.<br /><br /> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] přestává pracovat, při pokusu o zkontrolovat kód vygenerovaný šablonu modulu runtime.|Textový blok je příliš dlouhý. Bloky textu T4 převede na výraz zřetězení řetězců s jeden řetězcový literál pro každý řádek šablony. Bloky velmi dlouhý text můžete překročení omezení velikosti kompilátoru.|Rozdělte dlouhé textový blok s blok výrazu jako:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Popis upozornění a opravy  
@@ -84,6 +81,3 @@ Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové
 |Došlo k výjimce při zpracovávání direktivy s názvem "{0}".|Nastane, pokud procesor direktiv vyvolá výjimku při zpracovávání direktivy.|Ujistěte se, že jsou správné parametry, které mají procesor direktiv.|  
 |Hostitel vyvolal výjimku při pokusu o přeložení odkazu na sestavení '{0}".|Nastane, pokud hostitel vyvolá výjimku, když se ho pokusí přeložit odkaz na sestavení. Zpráva obsahuje sestavení odkazují na řetězce.|Sestavení pocházet odkazy \<@# assembly #> direktivy a z procesorů pro direktivy. Ujistěte se, že parametr "name" zadané v parametru sestavení je správná.|  
 |Pokus o určení nepodporované {1} hodnotu "{0}" pro – direktiva {2}|Nastává při RequiresProvidesDirectiveProcessor (všechny naše vygenerované procesory direktiv jsou odvozeny z něj), když zadáte nepodporované vyžadovaný nebo poskytovaný argument.|Ujistěte se, že názvy v name = "" páry hodnot součástí vyžaduje a poskytuje parametry jsou správné.|
-
-
-

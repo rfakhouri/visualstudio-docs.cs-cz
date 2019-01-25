@@ -1,25 +1,22 @@
 ---
-title: 'Postupy: rozšíření návrháře jazyka specifického pro doménu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Rozšíření návrháře jazyka specifického pro doménu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766159"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření návrháře jazyka specifického pro doménu
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření Návrháře DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete provést rozšíření návrháře, který použijete k úpravám definic DSL. Typy rozšíření, které můžete provést zahrnují přidání příkazy nabídek, přidání obslužné rutiny pro přetažení a dvakrát klikněte na panel gesta a pravidla, která se spustí při změně konkrétních typů hodnot nebo vztahy. Rozšíření můžete zabalit jako Visual Studio integrace rozšíření (VSIX) a distribuovat ostatním uživatelům.  
@@ -317,4 +314,3 @@ namespace Fabrikam.SimpleDslDesignerExtension
     }  
 }  
 ```
-

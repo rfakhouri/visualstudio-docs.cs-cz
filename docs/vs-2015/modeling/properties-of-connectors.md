@@ -1,25 +1,22 @@
 ---
 title: Vlastnosti konektorů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, connectors
 ms.assetid: b1f24e8d-cdd7-4a5d-af37-1038f43b45c7
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b78858b14674eafeb044b168a8bb8927af9f5769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 50e88a37e9d22fa99752864d1acbbeb4d15e6dab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758407"
 ---
 # <a name="properties-of-connectors"></a>Vlastnosti konektorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +29,11 @@ Konektory představují vztahy domén ve vygenerovaném návrháři.
   
 |Vlastnost|Popis|Výchozí|  
 |--------------|-----------------|-------------|  
-|Barva|Barva této spojnice.|Černá|  
+|Barva|Barva této spojnice.|Black|  
 |Styl přerušování|Styl přerušování čáry této spojnice (plný, Dash, tečka, DashDot, DashDotDot nebo vlastní).|Plná|  
-|Styl počátku|Styl počátku této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádné|  
-|Styl konce|Styl konce této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádné|  
-|Barva textu|Barva, která je použitá pro dekoratéry textu, které jsou spojeny s tímto konektorem.|Černá|  
+|Styl počátku|Styl počátku této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádná|  
+|Styl konce|Styl konce této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádná|  
+|Barva textu|Barva, která je použitá pro dekoratéry textu, které jsou spojeny s tímto konektorem.|Black|  
 |Tloušťka|Tloušťka čáry této spojnice v palcích.|0.03125|  
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|  
 |Vlastní atributy|Použít k přidání atributů do třídy zdrojový kód, který je generován z tohoto konektoru.|\<žádné >|  
@@ -56,7 +53,4 @@ Konektory představují vztahy domén ve vygenerovaném návrháři.
 |Klíčové slovo nápovědy|Klíčové slovo, je použít k indexování nápovědy klávesy F1 pro tento element.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

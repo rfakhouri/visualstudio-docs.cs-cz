@@ -1,12 +1,9 @@
 ---
 title: Vytváření diagramů vrstev z kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,13 +13,13 @@ ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
 caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0a1c5af9394f36f7f89a20b711657a3ca76e8d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762341"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Vytváření diagramů vrstev z kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +64,11 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
   
  Chcete-li zobrazit, pokud propojená položka podporuje ověřování, otevřete **Průzkumník vrstev** a prozkoumejte **podporuje ověřování** vlastnosti položky. Zobrazit [Správa odkazy na artefakty](#Managing).  
   
-|**k**|**Postupujte podle těchto kroků**|  
+|**Komu**|**Postupujte podle těchto kroků**|  
 |------------|----------------------------|  
-|Vytvoření vrstvy pro jeden artefakt|<ol><li>Přetáhněte položku na diagram vrstev z těchto zdrojů:<br /><br /> <ul><li>**Průzkumník řešení**<br /><br />         Přetáhnout můžete například soubory nebo projekty.</li><li>Mapy kódu<br /><br />         Zobrazit [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md) a [mapy kódu použít k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Zobrazení tříd** nebo **Prohlížeč objektů**</li></ul><br />     Vrstva se zobrazí v diagramu a je propojena s artefaktem.</li><li>Přejmenujte vrstvu tak, aby odrážela odpovědnosti přidruženého kódu nebo artefaktů.</li></ol> **Důležité:** přetažením binárních souborů do vrstvy diagramu automaticky nedojde k přidání jejich odkazů do projektu modelování. Binární soubory, které chcete ověřit, je třeba ručně přidat do projektu modelování. **Přidání binárních souborů do projektu modelování** <ol><li>V **Průzkumníka řešení**, otevřete místní nabídku pro projekt modelování a klikněte na tlačítko **přidat existující položku**.</li><li>V **přidat existující položku** dialogové okno, přejděte na binární soubory, vyberte je a klikněte na tlačítko **OK**.     Binární soubory se zobrazí v projektu modelování.</li><li>V **Průzkumníka řešení**, vyberte binární soubor, který jste přidali a potom stiskněte klávesu **F4** otevřít **vlastnosti** okna.</li><li>U každého binárního souboru nastavte **akce sestavení** vlastnost **ověřit**.</li></ol>|  
+|Vytvoření vrstvy pro jeden artefakt|<ol><li>Přetáhněte položku na diagram vrstev z těchto zdrojů:<br /><br /> <ul><li>**Průzkumník řešení**<br /><br />         Přetáhnout můžete například soubory nebo projekty.</li><li>Mapy kódu<br /><br />         Zobrazit [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md) a [mapy kódu použít k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Zobrazení tříd** nebo **Prohlížeč objektů**</li></ul><br />     Vrstva se zobrazí v diagramu a je propojena s artefaktem.</li><li>Přejmenujte vrstvu tak, aby odrážela odpovědnosti přidruženého kódu nebo artefaktů.</li></ol> **Důležité:**  Přetažením binárních souborů do vrstvy diagramu automaticky nedojde k přidání jejich odkazů do projektu modelování. Binární soubory, které chcete ověřit, je třeba ručně přidat do projektu modelování. **Přidání binárních souborů do projektu modelování** <ol><li>V **Průzkumníka řešení**, otevřete místní nabídku pro projekt modelování a klikněte na tlačítko **přidat existující položku**.</li><li>V **přidat existující položku** dialogové okno, přejděte na binární soubory, vyberte je a klikněte na tlačítko **OK**.     Binární soubory se zobrazí v projektu modelování.</li><li>V **Průzkumníka řešení**, vyberte binární soubor, který jste přidali a potom stiskněte klávesu **F4** otevřít **vlastnosti** okna.</li><li>U každého binárního souboru nastavte **akce sestavení** vlastnost **ověřit**.</li></ol>|  
 |Vytvoření jedné vrstvy pro všechny vybrané artefakty|Přetáhněte všechny artefakty do diagramu vrstev současně.<br /><br /> Vrstva se zobrazí v diagramu a je propojena se všemi artefakty.|  
-|Vytvoření vrstvy pro každý vybraný artefakt|Stiskněte a podržte **SHIFT** klávesu přetáhněte všechny artefakty do diagramu vrstev současně. **Poznámka:** používáte **SHIFT** klíč k výběru oblasti položek, po výběru artefaktů klávesu uvolněte. Stiskněte a podržte ji znovu, když přetahujete artefakty do diagramu. <br /><br /> Vrstva pro každý artefakt se zobrazí v diagramu a je propojena se všemi artefakty.|  
+|Vytvoření vrstvy pro každý vybraný artefakt|Stiskněte a podržte **SHIFT** klávesu přetáhněte všechny artefakty do diagramu vrstev současně. **Poznámka:**  Pokud používáte **SHIFT** klíč k výběru oblasti položek, po výběru artefaktů klávesu uvolněte. Stiskněte a podržte ji znovu, když přetahujete artefakty do diagramu. <br /><br /> Vrstva pro každý artefakt se zobrazí v diagramu a je propojena se všemi artefakty.|  
 |Přidání artefaktu do vrstvy|Přetáhněte artefakt do vrstvy.|  
 |Vytvoření nové nepropojené vrstvy|V **nástrojů**, rozbalte **Diagram vrstev** části a pak přetáhněte **vrstvy** do diagramu vrstev.<br /><br /> Chcete-li přidat více vrstev, dvakrát na nástroj klikněte. Až budete hotovi, zvolte **ukazatel** nástrojů nebo stisknete klávesu **ESC** klíč.<br /><br /> - nebo -<br /><br /> Otevřete místní nabídku diagramu vrstev, zvolte **přidat**a klikněte na tlačítko **vrstvy**.|  
 |Vytvoření vnořených vrstev|Přetáhněte existující vrstvu na jinou vrstvu.<br /><br /> - nebo -<br /><br /> Otevřete místní nabídku vrstvy, zvolte **přidat**a klikněte na tlačítko **vrstvy**.|  
@@ -97,7 +94,7 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
   
 2.  Ke správě těchto propojení použijte následující úlohy:  
   
-|**k**|**V Průzkumníku vrstev**|  
+|**Komu**|**V Průzkumníku vrstev**|  
 |------------|---------------------------|  
 |Odstranění propojení mezi vrstvou a artefaktem|Otevřete místní nabídku propojení artefaktu a následně zvolte **odstranit**.|  
 |Přesunutí propojení z jedné vrstvy do druhé|Přetáhněte do diagramu propojení artefaktu s existující vrstvou.<br /><br /> - nebo -<br /><br /> 1.  Otevřete místní nabídku propojení artefaktu a následně zvolte **Vyjmout**.<br />2.  V diagramu vrstev otevřete místní nabídku vrstvy a klikněte na tlačítko **vložit**.|  
@@ -118,7 +115,7 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
 ##  <a name="EditDependencies"></a> Úprava vrstev a závislostí za účelem zobrazení zamýšleného návrhu  
  Chcete-li zobrazit popis změn, které máte v plánu provést v systému nebo v požadované architektuře, upravte diagram vrstev:  
   
-|**k**|**Proveďte tyto kroky**|  
+|**Komu**|**Proveďte tyto kroky**|  
 |------------|-----------------------------|  
 |Změna nebo omezení směru závislosti|Nastavte jeho **směr** vlastnost.|  
 |Vytvoření nových závislostí|Použití **závislost** a **obousměrná závislost** nástroje.<br /><br /> Chcete-li nakreslit více závislostí, klikněte na nástroj dvakrát. Až budete hotovi, zvolte **ukazatel** nástrojů nebo stisknete klávesu **ESC** klíč.|  
@@ -140,7 +137,7 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
   
 ## <a name="see-also"></a>Viz také  
  [Video pro kanál 9: Návrh a ověření architektury pomocí diagramů vrstev](http://go.microsoft.com/fwlink/?LinkID=252073)   
- [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)   
- [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)   
+ [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)   
  [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)   
  [Vizualizace kódu](../modeling/visualize-code.md)

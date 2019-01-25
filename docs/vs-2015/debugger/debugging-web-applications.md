@@ -1,14 +1,9 @@
 ---
 title: Ladění webových aplikací | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4a20b83c5470f5184ab85f76904bd66756cf6ea2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d11969ecfbe9a7e3fd02ad289b0de95512b0b8f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763915"
 ---
 # <a name="debugging-web-applications"></a>Ladění webových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ Tato část vysvětluje, jak ladit několika typy webových aplikací.
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
  [Základy ladicího programu](../debugger/debugger-basics.md)   
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

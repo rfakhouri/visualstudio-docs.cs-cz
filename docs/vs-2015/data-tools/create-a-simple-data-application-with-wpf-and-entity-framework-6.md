@@ -1,23 +1,20 @@
 ---
 title: Vytvoření jednoduché datové aplikace s použitím WPF a Entity Framework 6 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0237555a3e1aceb6a444300c5470f1c83a52d94
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774468"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace s použitím WPF a Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +27,9 @@ Tento názorný ukazuje, jak vytvořit základní "formy nad daty" aplikace v sa
 ## <a name="install-and-connect-to-northwind"></a>Nainstalujte a připojte se k Northwind  
  Tento příklad používá SQL Server Express LocalDB a ukázkové databáze Northwind. Ji by měl fungovat s jinými produkty SQL database stejně, pokud zprostředkovatel dat ADO.NET pro tento produkt podporuje rozhraní Entity Framework.  
   
-1.  Pokud jste tak dosud neučinili, nainstalujte SQL Server 2014 LocalDB Express 32 bit z [stránce pro stažení SQL serveru edice](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Pokud jste tak dosud neučinili, nainstalujte SQL Server 2014 LocalDB Express 32 bit z [stránce pro stažení SQL serveru edice](https://www.microsoft.com/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
   
-2.  Instalace ukázkové databáze Northwind podle pokynů uvedených zde: [instalace SQL serveru, ukázkové databáze](../data-tools/install-sql-server-sample-databases.md).  
+2.  Instalace ukázkové databáze Northwind podle zde uvedených pokynů: [Instalace ukázkových databází systému SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Přidat nové připojení](../data-tools/add-new-connections.md) pro databáze Northwind.  
   
@@ -393,7 +390,7 @@ Tento názorný ukazuje, jak vytvořit základní "formy nad daty" aplikace v sa
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Přidat tlačítka Procházet, přidávat, aktualizovat a odstraňovat  
  V aplikacích Windows Forms získejte objekt BindingNavigator pomocí tlačítek pro procházení řádků v databázi a provádění základních operací CRUD. WPF neposkytuje objektu BindingNavigator, ale jsou to docela jednoduché, aby. Můžeme to udělat pomocí tlačítek uvnitř vodorovné StackPanel v dolním řádku stránku mřížky a přidružené příkazy, které jsou vázány na metody v kódu budete k tlačítka.  
   
- Existují fours části příkazu logiku: (1) příkazy, (2) vazby, (3) tlačítka a (4) obslužné rutiny příkazů v kódu.  
+ Existují fours části logiku příkaz: (1) příkazy, (2) vazby, (3) tlačítka a (4) obslužné rutiny příkazů v kódu.  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Přidání příkazů, vazby a tlačítka v XAML  
   
@@ -709,4 +706,3 @@ Tento názorný ukazuje, jak vytvořit základní "formy nad daty" aplikace v sa
   
 ## <a name="see-also"></a>Viz také  
  [Visual Studio data tools pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [dokumentace Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)
-

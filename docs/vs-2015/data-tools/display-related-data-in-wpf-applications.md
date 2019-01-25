@@ -1,12 +1,9 @@
 ---
 title: Zobrazení souvisejících dat v aplikacích WPF | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762070"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Zobrazení souvisejících dat v aplikacích WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,5 +67,4 @@ V některých aplikacích můžete chtít pracovat s daty, která pochází z v�
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Vytváření vyhledávacích tabulek v aplikacích WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [Návod: Zobrazování souvisejících dat v aplikaci WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Návod: Zobrazení souvisejících dat v aplikaci WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

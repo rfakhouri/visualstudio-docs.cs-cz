@@ -538,7 +538,7 @@ items:
         href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
       - name: 'CA2134: Metody musí při přepisování základních metod zachovávat konzistentní transparentnost'
         href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-      - name: 'CA2135: Sestavení úrovně 2 by neměly obsahovat LinkDemands'
+      - name: 'CA2135: Sestavení úrovně 2 by neměla obsahovat LinkDemands'
         href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
       - name: 'CA2136: Členy by neměly mít konfliktní poznámky transparentnosti'
         href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
@@ -639,7 +639,7 @@ items:
         href: ca2227-collection-properties-should-be-read-only.md
       - name: 'CA2228: Nedodávejte nevydané formáty prostředku'
         href: ca2228-do-not-ship-unreleased-resource-formats.md
-      - name: 'CA2229: Implementovat serializační konstruktory'
+      - name: 'CA2229: Implementujte serializační konstruktory'
         href: ca2229-implement-serialization-constructors.md
       - name: 'CA2230: Použijte parametry pro proměnné argumenty'
         href: ca2230-use-params-for-variable-arguments.md
@@ -1165,6 +1165,8 @@ items:
       href: c26130.md
     - name: C26135
       href: c26135.md
+    - name: C26138
+      href: c26138.md
     - name: C26140
       href: c26140.md
     - name: C26160
@@ -1175,6 +1177,12 @@ items:
       href: c26166.md
     - name: C26167
       href: c26167.md
+    - name: C26800
+      href: c26800.md
+    - name: C26810
+      href: c26810.md
+    - name: C26811
+      href: c26811.md
     - name: C28020
       href: c28020.md
     - name: C28021
@@ -1460,9 +1468,9 @@ items:
       href: ca0505.md
     - name: Chyby jazyka FxCopCmd
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 3b48cf2bd9f292a379eee34e3928698e33145893
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648175"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835147"

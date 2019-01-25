@@ -1,26 +1,21 @@
 ---
 title: Návrh tabulky příkazů XML (. Soubory Vsct) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762807"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764010"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Návrh tabulky příkazů XML (. Soubory Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Soubor XML příkaz tabulky (.vsct) popisuje rozložení a vzhled příkaz polo�
   
  Při vytváření nového balíčku VSPackage spuštěním [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] balíček šablony, tato šablona vygeneruje souboru .vsct nezbytné prvky pro příkaz nabídky, okna nástroje nebo vlastní editor, v závislosti na zvolené položky. Tohoto souboru .vsct je pak upravit pro splnění požadavků na konkrétní VSPackage. Pro příklady k úpravě souboru .vsct, podívejte se na příklady v [rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md).  
   
- Vytvoření souboru .vsct nový, prázdný, najdete v tématu [postupy: vytvoření. Soubor Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Po vytvoření přidat prvky, atributy a hodnoty XML do souboru k popisu rozložení položky příkazu. Podrobné schématu XML, najdete v článku [VSCT – referenční dokumentace schématu XML](../../extensibility/vsct-xml-schema-reference.md).  
+ Vytvoření souboru .vsct nový, prázdný, najdete v tématu [jak: Vytvoření. Soubor Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Po vytvoření přidat prvky, atributy a hodnoty XML do souboru k popisu rozložení položky příkazu. Podrobné schématu XML, najdete v článku [VSCT – referenční dokumentace schématu XML](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>Rozdíly mezi soubory .ctc a .vsct  
  Význam za značky XML v souboru .vsct jsou stejné jako ty v aktuální zastaralý formát souboru .ctc, jejich implementace je trochu jiná.  
@@ -71,7 +66,7 @@ Soubor XML příkaz tabulky (.vsct) popisuje rozložení a vzhled příkaz polo�
   
   Nový kompilátor, vsct.exe, zkompiluje .ctc a .vsct soubory. Staré ctc.exe kompilátoru, ale bude rozpoznat ani kompilaci souborů .vsct.  
   
-  Můžete převést existující soubor .cto do souboru .vsct vsct.exe kompilátoru. Další informace o tom, naleznete v tématu [postupy: vytvoření. Vsct soubor z existující. Technologický ředitel souboru](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Můžete převést existující soubor .cto do souboru .vsct vsct.exe kompilátoru. Další informace o tom, naleznete v tématu [jak: Vytvoření. Vsct soubor z existující. Technologický ředitel souboru](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Prvky souborů .vsct  
  Příkaz Tabulka obsahuje následující hierarchie a prvky:  
@@ -130,4 +125,3 @@ Soubor XML příkaz tabulky (.vsct) popisuje rozložení a vzhled příkaz polo�
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)
-

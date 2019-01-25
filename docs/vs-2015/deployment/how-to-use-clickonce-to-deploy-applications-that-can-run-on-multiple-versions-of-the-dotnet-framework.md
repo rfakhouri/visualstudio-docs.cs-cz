@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: použití ClickOnce k nasazení aplikací, které můžou běžet na více verzích rozhraní .NET Framework | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití ClickOnce k nasazení aplikací, které můžou běžet na více verzích rozhraní .NET Framework | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 7731526b09ab3014b9f3256ee1f4e4d0dd653a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803675"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Postupy: Použití ClickOnce k nasazení aplikací, jež lze provozovat na více verzích rozhraní .NET Framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Postupy: Použití ClickOnce k nasazení aplikací, které můžou běžet na více verzích rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET Framework pomocí nasazení technologie ClickOnce. To vyžaduje generovat a aktualizujte manifesty aplikace a nasazení.  
@@ -53,7 +48,7 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Pro generování manifestů aplikace a nasazení  
   
--   Publikování aplikace a vytvářet aplikace a soubory manifestu nasazení pomocí Průvodce publikováním nebo publikovat stránku Návrháře projektu. Další informace najdete v tématu [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) nebo [publikovat stránku, Návrhář projektu](../ide/reference/publish-page-project-designer.md).  
+-   Publikování aplikace a vytvářet aplikace a soubory manifestu nasazení pomocí Průvodce publikováním nebo publikovat stránku Návrháře projektu. Další informace najdete v tématu [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) nebo [publikovat stránku, Návrhář projektu](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Chcete-li změnit manifestu nasazení, aby obsahoval více verzí rozhraní .NET Framework  
   
@@ -65,11 +60,11 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
   
     |Verze rozhraní .NET Framework|XML|  
     |----------------------------|---------|  
-    |4 klienta|\<Framework targetVersion = "4.0" profile = supportedRuntime "Client" = "4.0.30319" / >|  
-    |4 full|\<Framework targetVersion = "4.0" profile = "Úplné" supportedRuntime = "4.0.30319" / >|  
-    |3.5 klienta|\<Framework targetVersion = "3.5" profile = supportedRuntime "Client" = "2.0.50727" / >|  
-    |3.5 úplné|\<Framework targetVersion = "3.5" profile = "Úplné" supportedRuntime = "2.0.50727" / >|  
-    |3.0|\<Framework targetVersion = "3.0" supportedRuntime = "2.0.50727" / >|  
+    |4 klienta|\<framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />|  
+    |4 full|\<framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />|  
+    |3.5 klienta|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|  
+    |3.5 úplné|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|  
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Chcete-li změnit soubor app.config seznam kompatibilní verze modulu runtime rozhraní .NET Framework  
   
@@ -81,10 +76,10 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
   
     |Verze modulu runtime rozhraní .NET framework|XML|  
     |------------------------------------|---------|  
-    |4 klienta|\<supportedRuntime verze = sku "v4.0.30319" = ". NETFramework, verze = v4.0 profilu klienta = "/ >|  
-    |4 full|\<supportedRuntime verze = sku "v4.0.30319" = ". NETFramework, verze = v4.0 "/ >|  
-    |3.5 úplné|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 klienta|\<supportedRuntime verze = sku "v2.0.50727" = "Client" / >|  
+    |4 klienta|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|  
+    |4 full|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|  
+    |3.5 úplné|\<supportedRuntime version="v2.0.50727"/>|  
+    |3.5 klienta|\<supportedRuntime version="v2.0.50727" sku="Client"/>|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Chcete-li změnit manifestu aplikace k označení závislé sestavení jako sestavení rozhraní .NET Framework  
   
@@ -108,14 +103,11 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualizace a opětovné podepisování aplikace a nasazení manifestů  
   
--   Aktualizace a opětovné podepisování manifestů aplikace a nasazení. Další informace najdete v tématu [postupy: opětovné podepsání aplikace a manifesty nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Aktualizace a opětovné podepisování manifestů aplikace a nasazení. Další informace najdete v tématu [jak: Opětovné podepisování manifestů aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [\<compatibleFrameworks > – Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
+ [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<závislost > – Element](../deployment/dependency-element-clickonce-application.md)   
  [ClickOnce – Manifest nasazení](../deployment/clickonce-deployment-manifest.md)   
  [Schéma konfiguračního souboru](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
-
-
-

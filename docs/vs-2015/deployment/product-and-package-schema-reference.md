@@ -1,14 +1,9 @@
 ---
 title: Referenční schéma balíčku a produktu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775309"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenční schéma balíčku a produktu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ A *souboru produktu* je souborů manifestu XML, který popisuje všechny extern�
   
 |Prvek|Popis|Atributy|  
 |-------------|-----------------|----------------|  
-|[\<Produkt > – Element](../deployment/product-element-bootstrapper.md)|Požadovaný element nejvyšší úrovně pro soubory produktu.|Žádné|  
+|[\<Produkt > – Element](../deployment/product-element-bootstrapper.md)|Požadovaný element nejvyšší úrovně pro soubory produktu.|Žádná|  
 |[\<Balíček > – Element](../deployment/package-element-bootstrapper.md)|Požadovaný element nejvyšší úrovně pro soubory balíčku.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > – Element](../deployment/relatedproducts-element-bootstrapper.md)|Volitelný element pro soubory produktu. Tyto další produkty, které tento produkt instaluje nebo závisí.|Žádné|  
-|[\<InstallChecks > – Element](../deployment/installchecks-element-bootstrapper.md)|Požadovaný element. Seznamy kontroluje závislost provádět na místním počítači během instalace.|Žádné|  
-|[\<Příkazy > – Element](../deployment/commands-element-bootstrapper.md)|Požadovaný element.  Spustí jeden nebo více kontroly instalace, jak je popsáno v `InstallChecks`a označuje balíčky, které k instalaci by se neměla kontrola selže.|Žádné|  
-|[\<PackageFiles > – Element](../deployment/packagefiles-element-bootstrapper.md)|Požadovaný element. Zobrazí seznam balíčků, které by mohl být nainstalován tímto procesem instalace.|Žádné|  
-|[\<Řetězce > – Element](../deployment/strings-element-bootstrapper.md)|Požadovaný element. Ukládá lokalizované verze produktu název a chybové řetězce.|Žádné|  
+|[\<RelatedProducts > – Element](../deployment/relatedproducts-element-bootstrapper.md)|Volitelný element pro soubory produktu. Tyto další produkty, které tento produkt instaluje nebo závisí.|Žádná|  
+|[\<InstallChecks > – Element](../deployment/installchecks-element-bootstrapper.md)|Požadovaný element. Seznamy kontroluje závislost provádět na místním počítači během instalace.|Žádná|  
+|[\<Příkazy > – Element](../deployment/commands-element-bootstrapper.md)|Požadovaný element.  Spustí jeden nebo více kontroly instalace, jak je popsáno v `InstallChecks`a označuje balíčky, které k instalaci by se neměla kontrola selže.|Žádná|  
+|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Požadovaný element. Zobrazí seznam balíčků, které by mohl být nainstalován tímto procesem instalace.|Žádná|  
+|[\<Řetězce > – Element](../deployment/strings-element-bootstrapper.md)|Požadovaný element. Ukládá lokalizované verze produktu název a chybové řetězce.|Žádná|  
   
 ## <a name="remarks"></a>Poznámky  
  Schéma balíčku je využívána Setup.exe, program se zakázaným inzerováním generovaných bootstrapping task MS Build, obsahující trochu pevně zakódované logiky své vlastní. Schéma řídí všechny aspekty procesu instalace.  
@@ -168,6 +163,3 @@ A *souboru produktu* je souborů manifestu XML, který popisuje všechny extern�
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – Manifest nasazení](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce – manifest aplikace ](../deployment/clickonce-application-manifest.md)
-
-
-

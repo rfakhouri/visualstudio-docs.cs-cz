@@ -1,14 +1,9 @@
 ---
 title: Copy – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Copy
 - MSBuild.Copy.SourceFileNotFound
@@ -26,13 +21,13 @@ ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 44136d52c1fd33d3f4dac225c6e8d83a0c9569f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8f6e1bf48d80362a4f51e10583c5827eff8fe932
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758316"
 ---
 # <a name="copy-task"></a>Copy – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +44,9 @@ Zkopíruje soubory do nového umístění v systému souborů.
 |`DestinationFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje seznam souborů, do kterého se mají kopírovat zdrojové soubory. Tento seznam by měl být se seznamem uvedeným v parametru `SourceFiles` v relaci 1 : 1. To znamená, že první soubor zadaný v části `SourceFiles` bude zkopírován na první místo zadané v části `DestinationFiles` a tak dále.|  
 |`DestinationFolder`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje adresář, do kterého se mají soubory kopírovat. Musí se jednat o adresář, nikoli o soubor. Pokud adresář neexistuje, je automaticky vytvořen.|  
 |`OverwriteReadOnlyFiles`|Volitelné `Boolean` parametru.<br /><br /> Přepsat soubory i v případě, že jsou označeny jako soubory určené pouze pro čtení|  
-|`Retries`|Volitelné `Int32` parametru.<br /><br /> Určuje počet pokusů o kopírování, pokud se všechny předchozí pokusy nezdařily. Výchozím nastavením je nula.<br /><br /> **Poznámka:** použití opakování může zastínit problém se synchronizací v procesu sestavení.|  
+|`Retries`|Volitelné `Int32` parametru.<br /><br /> Určuje počet pokusů o kopírování, pokud se všechny předchozí pokusy nezdařily. Výchozím nastavením je nula.<br /><br /> **Poznámka:** Použití opakování může zastínit problém se synchronizací v procesu sestavení.|  
 |`RetryDelayMilliseconds`|Volitelné `Int32` parametru.<br /><br /> Určuje zpoždění mezi nezbytnými pokusy o opakování. Výchozí hodnotou je argument RetryDelayMillisecondsDefault, který je předán konstruktoru CopyTask.|  
-|`SkipUnchangedFiles`|Volitelné `Boolean` parametru.<br /><br /> Je-li hodnota `true`, přeskočí se kopírování souborů, u kterých mezi zdrojem a cílem nedošlo ke změně. Úloha `Copy` považuje soubory za nezměněné, pokud mají stejnou velikost a je uveden stejný čas poslední aktualizace. **Poznámka:** Pokud tento parametr nastavíte na `true`, byste neměli používat analýzu závislostí pro obsažený cíl, protože, který spouští úlohu pouze v případě last-modified časy zdrojové soubory jsou novější než poslední změny času cílové soubory.|  
+|`SkipUnchangedFiles`|Volitelné `Boolean` parametru.<br /><br /> Je-li hodnota `true`, přeskočí se kopírování souborů, u kterých mezi zdrojem a cílem nedošlo ke změně. Úloha `Copy` považuje soubory za nezměněné, pokud mají stejnou velikost a je uveden stejný čas poslední aktualizace. **Poznámka:**  Při nastavení tohoto parametru na hodnotu `true` by pro obsažený cíl neměla být použita analýza závislosti, protože spouští úlohu pouze v případě, že čas poslední aktualizace zdrojových souborů je novější než čas poslední aktualizace cílových souborů.|  
 |`SourceFiles`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Určuje soubory ke kopírování.|  
 |`UseHardlinksIfPossible`|Volitelné `Boolean` parametru.<br /><br /> Je-li hodnota `true`, pak namísto kopírování souborů vytvoří pevné odkazy na zkopírované soubory.|  
   
@@ -122,6 +117,3 @@ Zkopíruje soubory do nového umístění v systému souborů.
 ## <a name="see-also"></a>Viz také  
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
-
-
-

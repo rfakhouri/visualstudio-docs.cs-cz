@@ -1,14 +1,9 @@
 ---
 title: Obecná zobrazení dat | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,views
 - Profiling Tools,reports
@@ -16,13 +11,13 @@ ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 120e4ba8b05af3998fd75d973a4cfdb4a662630f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 708bb96beab51fa69910deef40dc468a1fd21058
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758274"
 ---
 # <a name="common-data-views"></a>Obecná zobrazení dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,6 +61,3 @@ Tato část obsahuje referenční informace o zobrazeních a sestavách souborů
   
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  
  Referenční informace o zobrazeních a sestavách souborů dat profileru, které byly generovány použitím kolekce paměti rozhraní .NET.
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: 'Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774990"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**xmlns.**|**název urn: schémata-microsoft-com:asm.v1**|  
+    |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
 4.  Přidat **dependentAssembly** prvek jako podřízený prvek **assemblyBinding** elementu.  
   
@@ -115,7 +110,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter Microsoft.VisualStudio.Enterprise.ASPNetHelper, verze = 10.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a**|  
+    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|  
   
 ```  
     <configuration>  
@@ -146,7 +141,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\VSInstr.exe**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Přidejte další **přidat** element jako podřízený objekt **appSettings** elementu.  
   
@@ -228,7 +223,4 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Nástroje dynamicky kompilované aplikace ASP.NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Postupy: Nástroje dynamicky kompilované aplikace ASP.NET a shromažďovat paměťová Data](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
-
-
-
+ [Postupy: Instrumentace dynamicky kompilované aplikace ASP.NET a shromáždění dat o paměti](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)

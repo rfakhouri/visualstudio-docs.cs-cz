@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: stránku nahoru nebo dolů v paměti | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Stránku nahoru nebo dolů v paměti | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d20c22e366736711f16fc17f56b2e81eea558948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8859bac6f2cfe992c3c0d8005830985598934b88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752476"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Postupy: O stránku nahoru nebo dolů v paměti
+# <a name="how-to-page-up-or-down-in-memory"></a>Postupy: Stránku nahoru nebo dolů v paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Při prohlížení obsah paměti **paměti** okno nebo **zpětný překlad** můžete použít svislý posuvník přesunout nahoru nebo dolů v paměti prostoru.  
@@ -58,10 +53,5 @@ Při prohlížení obsah paměti **paměti** okno nebo **zpětný překlad** mů
   
 ## <a name="see-also"></a>Viz také  
  [Paměť Windows](../debugger/memory-windows.md)   
- [Postupy: použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md)   
+ [Postupy: Použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md)   
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 'Kontrolní seznam: Vytvoření služby starší verze jazyka | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757115"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Kontrolní seznam: Vytvoření služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
   
 ## <a name="steps-for-creating-a-language-service"></a>Kroky pro vytvoření služby jazyka  
   
-1.  Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> rozhraní.  
+1.  Implementujte rozhraní <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
   
     -   V VSPackage, implementovat <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní k zajištění služeb jazyka.  
   
@@ -45,7 +40,7 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
   
 - Barevné zvýrazňování syntaxe  
   
-   Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> rozhraní. Implementace tohoto rozhraní by měl analyzátor informace mají vracet informace o příslušné barvu.  
+   Implementujte rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>. Implementace tohoto rozhraní by měl analyzátor informace mají vracet informace o příslušné barvu.  
   
    <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Vrátí metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> rozhraní. Vytvoří instanci samostatné colorizer pro každou textovou vyrovnávací paměť, takže by měla implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> rozhraní samostatně. Další informace najdete v tématu [barevné zvýraznění syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
   
@@ -72,7 +67,7 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
   
 - Dokončování příkazů  
   
-   Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> rozhraní.  
+   Implementujte rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>.  
   
    Podporují dokončení příkaz – příkaz (to znamená, <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>) a volat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metoda ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní předání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> rozhraní. Další informace najdete v tématu [dokončování příkazů ve službě starší verze jazyka](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).  
   
@@ -84,7 +79,7 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
   
 - Označování chyb  
   
-   Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní.  
+   Implementujte rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>.  
   
    Vytvořit chybu značky objekty, které implementují <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní a volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metodu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní objektu značky chyb.  
   
@@ -116,7 +111,7 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
   
 - Sbalování  
   
-   Existuje několik možností pro podporu osnovy. Například můžete podporovat **sbalit do definic** příkazu, řídit editor osnovy oblastí ani nepodporuje spravovanými klientské oblasti. Další informace najdete v tématu [jak: Zadejte rozšířit sbalování podporu ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Existuje několik možností pro podporu osnovy. Například můžete podporovat **sbalit do definic** příkazu, řídit editor osnovy oblastí ani nepodporuje spravovanými klientské oblasti. Další informace najdete v tématu [jak: Rozšířená podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Registrace služby jazyka  
   
@@ -133,4 +128,3 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
 ## <a name="see-also"></a>Viz také  
  [Vývoj služby starší verze jazyka](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Zápis pro vyhodnocovač výrazů modulu CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

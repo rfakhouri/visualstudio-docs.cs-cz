@@ -1,14 +1,9 @@
 ---
 title: 'Chyba: Webový Server byl uzamčen a blokuje příkaz DEBUG. | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 9c8c4812-17db-484d-9c1b-ffd9e3bfef5a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60fffd146516bca57497bfdaaabe0f51407063b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771637"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Chyba: Webový server byl uzamčen a blokuje příkaz DEBUG.
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Chyba: Webový Server byl uzamčen a blokuje příkaz DEBUG.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Krokování s vnořením do webové aplikace nebo webové služby XML se nezdařila, protože byl spuštěn nástroj lockdown služby IIS a nainstalovaných a aktivovaných URLScan. K tomuto stavu služby IIS blokuje příjem příkaz DEBUG.  
@@ -59,7 +54,4 @@ Krokování s vnořením do webové aplikace nebo webové služby XML se nezdař
   
 ## <a name="see-also"></a>Viz také  
  [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Chyba: Webový server nenašel požadovaný prostředek.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
-
-
-
+ [Chyba: Webový server nemohl najít požadovaný prostředek.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

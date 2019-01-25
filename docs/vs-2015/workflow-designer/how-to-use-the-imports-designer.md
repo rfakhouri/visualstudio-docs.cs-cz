@@ -1,11 +1,8 @@
 ---
-title: 'Postupy: používání návrháře importů | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Používání návrháře importů | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
@@ -13,15 +10,15 @@ ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6eed27b9bfef272035f299af1a68a3788587f3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759925"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Postupy: používání návrháře importů
+# <a name="how-to-use-the-imports-designer"></a>Postupy: Používání návrháře importů
 Návrhář importů umožňuje zadejte obory názvů pro typy, které budete používat ve výrazech. Podobně jako **importuje** nebo **pomocí** klíčových slov v jazyce Visual Basic .NET a C#, určení obory názvů v Návrhář importů umožňují jednoduše zadejte v výraz a ne plně kvalifikovaný název typu Název typu verze.  
   
  Návrhář importů jsou reaguje na obě změny v uživatelském rozhraní a změny provedené při uložení pracovního postupu. Při uložení pracovního postupu, obory názvů může být automaticky přidán do návrháře importů. Patří mezi ně například:  

@@ -1,11 +1,8 @@
 ---
-title: 'Postupy: vytvoření sady pravidel aktivit zásad (starší verze) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření sady pravidel aktivit zásad (starší verze) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
@@ -17,15 +14,15 @@ ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7ab49957d830bf558a9dddf55cdc5e8c2f3f75d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194620"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766607"
 ---
-# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Postupy: vytvoření sady pravidel aktivit zásad (starší verze)
+# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Postupy: Vytvoření sady pravidel aktivit zásad (starší verze)
 Toto téma popisuje, jak vytvořit pravidlo zásad aktivity, nastavte pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] , který cílí [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Po přetažení **zásady** aktivity položku z **nástrojů** na plochu návrháře pracovního postupu můžete vybrat existující pravidlo nebo vytvořit novou sadu pravidel pro [aktivit zásad ](http://go.microsoft.com/fwlink?LinkID=65019) aktivity. Vyberte existující sadu pomocí pravidel [vyberte pravidlo nastavte dialogové okno (starší verze)](../workflow-designer/select-rule-set-dialog-box-legacy.md) a vytvoříte pomocí sady pravidel [pravidlo nastavte dialogové okno editoru (starší verze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  

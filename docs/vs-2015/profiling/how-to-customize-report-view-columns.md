@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: přizpůsobení sloupců zobrazení sestavy | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Přizpůsobení sloupců zobrazení sestavy | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bfa51d15145606b7f17dc21d91e240ec006826bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aec26c293c0603196613a325c48946f124573cbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738796"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769276"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Postupy: Přizpůsobení sloupců zobrazení sestavy
+# <a name="how-to-customize-report-view-columns"></a>Postupy: Přizpůsobení sloupců zobrazení sestav
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nástroje pro sledování výkonu v aplikaci Visual Studio Team System Development Edition jsou plně integrované do integrovaného vývojového prostředí (IDE) pro zajištění integrované uživatelské prostředí. V následujícím seznamu je zástupce zobrazení, které je možné přizpůsobit pomocí přidání, odebrání a změna uspořádání sloupců:  
@@ -63,7 +58,4 @@ Nástroje pro sledování výkonu v aplikaci Visual Studio Team System Developme
   
 4.  Klikněte na tlačítko se šipkou můžete změnit pořadí sloupců.  
   
-5.  Klikněte na tlačítko **OK**.
-
-
-
+5.  Klikněte na **OK**.

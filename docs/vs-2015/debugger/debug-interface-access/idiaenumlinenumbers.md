@@ -1,14 +1,9 @@
 ---
 title: Idiaenumlinenumbers – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: cdf07b4f-19e4-4dcd-8af8-c2dbca586a7c
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 087ebeee78d6b88ab1e3de20bc2553e6cfca749a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d37f0ed1dedbd5d4ca893e99465c79c31e453f2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765615"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaEnumLineNumbers : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Načte [rozhraní IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) verzi výčet.|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Načte [rozhraní IEnumVARIANT](http://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) verzi výčet.|  
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Získá počet čísel řádků.|  
 |[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Získá číslo řádku pomocí indexu.|  
 |[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Načte zadaný počet čísel řádků v pořadí výčtu.|  
@@ -98,16 +93,13 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession –](../../debugger/debug-interface-access/idiasession.md)   
  [Idiasession::findlinesbylinenum –](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Idiasession::findlinesbyrva –](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
- [Idiasession::findlinesbyva –](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
+ [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
+ [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
  [Idiasession::findlines –](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)
-
-
-

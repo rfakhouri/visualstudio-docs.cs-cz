@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: vytvoření a úprava konfigurací | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření a úprava konfigurací | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -23,13 +18,13 @@ ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767328"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Postupy: Vytvoření a úprava konfigurací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Můžete vytvořit několik konfigurací sestavení řešení. Například můž
   
      **Stránky vlastností** otevře se okno.  
   
-     Můžete nastavit vlastnosti pro konkrétní konfiguraci. Například pro konfiguraci vydané verze, můžete zadat, že je kód zoptimalizovaný při řešení je sestaveno a pro konfiguraci ladění, můžete určit, že `DEBUG` symbol podmíněné kompilace je součástí. Další informace o nastavení stránky vlastností naleznete v tématu [Úvod do Návrháře projektu](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Můžete nastavit vlastnosti pro konkrétní konfiguraci. Například pro konfiguraci vydané verze, můžete zadat, že je kód zoptimalizovaný při řešení je sestaveno a pro konfiguraci ladění, můžete určit, že `DEBUG` symbol podmíněné kompilace je součástí. Další informace o nastavení stránky vlastností naleznete v tématu [Úvod do Návrháře projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Vytvoření a úprava konfigurace projektu  
   
@@ -131,7 +126,4 @@ Můžete vytvořit několik konfigurací sestavení řešení. Například můž
 ## <a name="see-also"></a>Viz také  
  [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   
  [Sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB postupy: Změna vlastností projektu a nastavení konfigurace](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [NIB jak: Změna vlastností projektu a nastavení konfigurace](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

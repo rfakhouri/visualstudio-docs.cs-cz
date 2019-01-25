@@ -1,14 +1,9 @@
 ---
 title: Ladění rozložení pomocí Průzkumníka modelu DOM | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763912"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Ladění rozložení pomocí průzkumníka modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 > [!TIP]
 >  Změny provedené v **rozložení** kartě nejsou trvalé. Můžete dělat trvalé změny zdrojového kódu a pak aktualizujte aplikaci pomocí **aktualizovat Windows app** tlačítko (pouze aplikace Windows Store a Windows Phone Store) na panelu nástrojů ladění. Díky tomu se můžete vyhnout restartování ladicího programu.  
   
- Úprava stránky rozložení, které nejsou zobrazeny v modelu pole pomocí Průzkumníka modelu DOM, naleznete v tématu [rychlý start: ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) a [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Úprava stránky rozložení, které nejsou zobrazeny v modelu pole pomocí Průzkumníka modelu DOM, naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) a [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Příklad opravy problému rozložení  
  Tento příklad ukazuje, jak vybrat seznam element v šabloně Centrum/Pivot, interpretovat pole hodnoty modelu, které jsou na **rozložení** kartu a potom změňte jednu z hodnot vlastností rozložení problém vyřešit.  
@@ -88,7 +83,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 8.  Přepněte do aplikace Visual Studio a zvolte **vybrat Element** v Průzkumníku modelu DOM (nebo stiskněte kombinaci kláves Ctrl + B). Změní se režim výběru, takže budete moci kliknutím vybrat položku a aplikace se zobrazí v popředí. Po kliknutí se režim přepne zpět.  
   
     > [!TIP]
-    >  Vybrat elementy HTML přímo v Průzkumníku modelu DOM můžete také použít klávesy se šipkami nebo jiné metody. Další informace o výběru elementů naleznete v tématu [rychlý start: ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Vybrat elementy HTML přímo v Průzkumníku modelu DOM můžete také použít klávesy se šipkami nebo jiné metody. Další informace o výběru elementů naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. V emulátoru telefonu nebo simulátoru vyberte šedou pravé polovině některou k imagí, které se odstraní v polovině. Zvýraznění se objeví kolem vybraný prvek, jak je vidět v emulátoru Windows Phone:  
   
@@ -135,6 +130,3 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Ladění stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Zobrazení naslouchacích procesů událostí DOM](../debugger/view-dom-event-listeners.md)
-
-
-
