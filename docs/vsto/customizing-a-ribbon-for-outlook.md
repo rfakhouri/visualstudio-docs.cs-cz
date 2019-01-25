@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], Outlook
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d1acb1c62e4a79226eb3ab5da0b95ccc2156e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e7b99272e4ef7ca59566c3de0ab9f89804d4cbd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932363"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863627"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Přizpůsobte pás karet pro aplikaci Outlook
   Při vlastním nastavení pásu karet v aplikaci Microsoft Office Outlook, musíte zvážit, kde se zobrazí váš vlastní pás karet v aplikaci. Aplikace Outlook zobrazí na pásu karet v hlavní aplikaci uživatelské rozhraní (UI) a v systému windows, které se otevřou při uživatelům provádět určité úlohy, jako je například vytváření e-mailové zprávy. Tyto aplikace pro windows jsou pojmenovány kontroly.  

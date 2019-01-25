@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Identifikace problémů s výkonem | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Identifikace problémů s výkonem | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: 36f6f123-0c14-4763-99c3-bd60ecb95b87
 caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d26e6ccabcdff12b8f4d9839888e17dc1ab3ce4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f903ddbf82686846298e21765e405d939f11e1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754815"
 ---
-# <a name="walkthrough-identifying-performance-problems"></a>Návod: Identifikace problémů s výkonem
+# <a name="walkthrough-identifying-performance-problems"></a>Průvodce: Identifikace problémů s výkonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy s výkonem.  
@@ -167,6 +162,3 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy 
  [Přehledy](../profiling/overviews-performance-tools.md)   
  [Začínáme se službou](../profiling/getting-started-with-performance-tools.md)   
  [/Z7, /Zi, /ZI (formát informací o ladění)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
-
-
-

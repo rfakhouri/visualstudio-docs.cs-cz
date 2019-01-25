@@ -1,14 +1,9 @@
 ---
 title: Spouštění aplikací pro Windows Phone v emulátoru | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761768"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Spouštění aplikací pro Windows Phone v emulátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Emulátor Windows Phone poskytuje virtualizované prostředí, ve kterém můžete ladění a testování aplikací pro Windows Phone v počítači bez fyzického zařízení. Můžete simulovat běžné touch a otočení události a zvolte velikost fyzické obrazovky a rozlišení, kterou chcete emulovat. Můžete také otestovat mnoho běžně používaných funkcí, jako je například umístění, sítí, oznámení, senzory, akcelerometr a volitelné SD karty.  
   
- Další informace o funkcích, které můžete testovat se spustila v emulátoru najdete v tématu [testování funkcí aplikace v emulátoru Windows Phone](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Další informace o funkcích, které můžete testovat se spustila v emulátoru najdete v tématu [testování funkcí aplikace v emulátoru Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Emulátor spolu s Visual Studio, poskytuje kompletní prostředí, ve kterém můžete návrh, vývoj, ladění a testování aplikací pro Windows Phone.  
   
@@ -154,11 +149,11 @@ Emulátor Windows Phone poskytuje virtualizované prostředí, ve kterém může
 |Hardwarový klíč počítače|Windows Phone hardwarové tlačítko.|Poznámky|  
 |---------------------------|-----------------------------------|-----------|  
 |F1|ZPĚT|Dlouhé stisknutí fungovat podle očekávání.|  
-|F2|SPUŠTĚNÍ|Dlouhé stisknutí fungovat podle očekávání.|  
+|F2|START|Dlouhé stisknutí fungovat podle očekávání.|  
 |F3|HLEDÁNÍ||  
 |F4|V emulátoru Windows 10 Přepne mezi pomocí klávesnice v místním počítači a ne pomocí klávesnice v místním počítači.|Není k dispozici v emulátoru systému Windows 8 nebo 8.1.|  
 |F5|Nelze použít.||  
-|F6|FOTOAPARÁTU POLOVINĚ|Vyhrazené fotoaparát tlačítko, které se stiskne urazili polovinu cesty.|  
+|F6|CAMERA HALF|Vyhrazené fotoaparát tlačítko, které se stiskne urazili polovinu cesty.|  
 |F7|ÚPLNÉ FOTOAPARÁTU|Tlačítko vyhrazené fotoaparátu.|  
 |F8|Nelze použít.||  
 |F9|SVAZEK NAHORU||  
@@ -225,6 +220,3 @@ Emulátor Windows Phone poskytuje virtualizované prostředí, ve kterém může
 -   Určení verze sestavení v sadě Visual Studio. Po zadání sestavení pro vydání, spusťte aplikaci tak, že vyberete **nasadit _[název aplikace]_**  odkaz na **sestavení** nabídky.  
   
 -   Alternativně můžete Zakomentovat řádek kódu v souboru app.xaml.cs nebo app.xaml.vb, která nastaví hodnotu `EnableFrameRateCounter` k `true`.
-
-
-

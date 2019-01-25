@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: vytváření fragmentů XML | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytváření fragmentů XML | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4c676032c2d0bc6c47023c5fd43bc759cccff8de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773226"
 ---
-# <a name="how-to-create-xml-snippets"></a>Postupy: vytváření fragmentů XML
+# <a name="how-to-create-xml-snippets"></a>Postupy: Vytváření fragmentů XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -120,8 +115,5 @@ XML Editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
   
 ## <a name="see-also"></a>Viz také  
  [Fragmentů XML](../xml-tools/xml-snippets.md)   
- [Postupy: použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)   
+ [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)   
  [Postupy: Generování fragmentu XML ze schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-
-
-

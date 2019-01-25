@@ -21,17 +21,17 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928864"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867257"
 ---
 # <a name="ribbon-designer"></a>Návrhář pásu karet
   Návrhář pásu karet je vizuální návrhové plátno. Chcete-li přidat vlastní karty, skupiny a ovládací prvky na pásu karet aplikace Microsoft Office pomocí Návrháře pásu karet.
@@ -145,8 +145,8 @@ ms.locfileid: "53928864"
 |**ButtonGroup**|Skupina, která obsahuje jeden nebo více tlačítek, přepínacích tlačítek, nabídek, tlačítek rozdělení a galerií. Můžete přidat skupinu tlačítek ke skupině nebo nabídce.|
 |**CheckBox**|Pole, které zaškrtnutím nebo zrušením zaškrtnutí Zapne nebo vypne možnost.|
 |**ComboBox**|Pole úprav s připojeným seznamem. Uživatelům můžete zadat nebo vybírat své volby. V poli se zobrazí aktuální výběr. Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> vlastnost přidávat a odebírat položky v době běhu, před nebo po načtení pásu do aplikace sady Office.|
-|**Rozevírací seznam**|Seznam položek, které může uživatel vybrat. Uživatele nelze zadat nové položky v rozevíracím seznamu.<br /><br /> Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> vlastnost přidání položek do seznamu. Můžete přidávat a odebírat položky v době běhu.<br /><br /> Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> vlastnost k přidání tlačítek do seznamu. Nelze však přidat a odebrat tlačítka v době spuštění po načtení pásu do aplikace sady Office.|
-|**Textové pole**|Pole, do kterého může uživatel zadat text.|
+|**DropDown**|Seznam položek, které může uživatel vybrat. Uživatele nelze zadat nové položky v rozevíracím seznamu.<br /><br /> Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> vlastnost přidání položek do seznamu. Můžete přidávat a odebírat položky v době běhu.<br /><br /> Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> vlastnost k přidání tlačítek do seznamu. Nelze však přidat a odebrat tlačítka v době spuštění po načtení pásu do aplikace sady Office.|
+|**EditBox**|Pole, do kterého může uživatel zadat text.|
 |**Galerie**|Nabídka, která představuje pole nebo mřížku vizuálních voleb, ze kterých mohou uživatelé vybrat. Můžete řídit rozložení výběrů v nabídce. Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> a <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> vlastnosti k určení počtu řádků a sloupců, které zobrazí položky a tlačítka v galerii.|
 |**Popisek**|Text, který můžete použít k identifikaci ovládacích prvků na pásu karet.|
 |**Nabídka**|Rozevírací seznam, který může obsahovat následující ovládací prvky:<br /><br /> – Tlačítko<br />– Zaškrtávací políčko<br />-Galerie<br />– Nabídka<br />– Tlačítko rozdělení<br />-Přepínací tlačítko<br />-Oddělovač<br /><br /> Chcete-li přidat ovládací prvek do nabídky v Návrháři pásu karet, klikněte na šipku dolů v nabídce k vystavení návrhové plochy nabídky. Potom můžete přetáhnout ovládací prvky pásu karet z **nástrojů** do nabídky. Chcete-li uspořádat ovládací prvky, přetáhněte je do požadované polohy.<br /><br /> Přidání ovládacích prvků <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po načtení pásu do aplikace sady Office, je nutné nastavit <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> vlastnost **true** před načtením pásu karet. Informace o tom, jak to provést, najdete v tématu [přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md).|
@@ -180,15 +180,15 @@ ms.locfileid: "53928864"
 |Akce|Klávesová zkratka|
 |------------|-----------------------|
 |Přesuňte ovládací prvek před předchozí ovládací prvek v seznamu.|**CTRL**+**nahoru**<br /><br /> **CTRL**+**doleva**|
-|Přesuňte ovládací prvek za další ovládací prvek v seznamu.|**CTRL**+**dolů**<br /><br /> **CTRL**+**doprava**|
-|Přesuňte výběr z jednoho ovládacího prvku na jiný ve stejné skupině. Rozbalovací panel přesouvání mezi nadřazeným ovládacím prvkem a ovládací prvky na panelu rozevíracího seznamu.|**Nahoru**<br /><br /> **Dolů**|
+|Přesuňte ovládací prvek za další ovládací prvek v seznamu.|**Ctrl**+**Down**<br /><br /> **Ctrl**+**Right**|
+|Přesuňte výběr z jednoho ovládacího prvku na jiný ve stejné skupině. Rozbalovací panel přesouvání mezi nadřazeným ovládacím prvkem a ovládací prvky na panelu rozevíracího seznamu.|**Nahoru**<br /><br /> **Down**|
 |Iterujte vpřed přes všechny ovládací prvky.|**Karta**|
 |Iterujte vzad přes všechny ovládací prvky.|**SHIFT**+**kartu**|
 |Odstraňte vybraný ovládací prvek nebo sadu ovládacích prvků.|**Delete**|
-|Kopírovat vybrané ovládací prvky.|**CTRL**+**C**|
-|Vyjměte vybrané ovládací prvky.|**CTRL**+**X**|
-|Vložit ovládací prvky ze schránky.|**CTRL**+**V**|
-|Vyberte **nástrojů**.|**CTRL**+**Alt**+**X**|
+|Kopírovat vybrané ovládací prvky.|**Ctrl**+**C**|
+|Vyjměte vybrané ovládací prvky.|**Ctrl**+**X**|
+|Vložit ovládací prvky ze schránky.|**Ctrl**+**V**|
+|Vyberte **nástrojů**.|**Ctrl**+**Alt**+**X**|
 |Vyberte nadřazenou součást.|**ESC**|
 
  Klávesové zkratky, které se vztahují pouze k nabídce Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, a <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> jsou uvedeny v následující tabulce.

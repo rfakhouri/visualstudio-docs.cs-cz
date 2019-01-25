@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Přidání diagramů tříd do projektů (návrhář tříd) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
@@ -16,13 +11,13 @@ ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3ab062ea6f7dfac6001d016704d627c716079989
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271385"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760263"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Postupy: Přidání diagramů tříd do projektů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,11 +51,8 @@ Přidání diagramu tříd do projektu Visual C# .NET, Visual Basic .NET nebo C+
      Vytvoří se automaticky vyplněný diagram tříd.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytváření typů pomocí návrháře tříd](../ide/how-to-create-types-by-using-class-designer.md)   
- [Postupy: zobrazení existujících typů (návrhář tříd)](../ide/how-to-view-existing-types-class-designer.md)   
+ [Postupy: Vytváření typů pomocí návrháře tříd](../ide/how-to-create-types-by-using-class-designer.md)   
+ [Postupy: Zobrazení existujících typů (návrhář tříd)](../ide/how-to-view-existing-types-class-designer.md)   
  [Navrhování tříd a typů (návrhář tříd)](../ide/designing-classes-and-types-class-designer.md)   
  [Zobrazování typů a vztahů (návrhář tříd)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Práce s diagramy tříd (Návrhář tříd)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

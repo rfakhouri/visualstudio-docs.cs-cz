@@ -1,13 +1,9 @@
 ---
 title: 'CA2109: Zkontrolujte viditelných obslužných rutin událostí | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2109
 - ReviewVisibleEventHandlers
@@ -19,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b3efcf6e9c4de99a442329c76c1f4c20c7a80505
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45e741882e8da2b5ed419540e40f3be40278d540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833864"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779717"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Zkontrolujte viditelných obslužných rutin událostí
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Zkontrolujte viditelné obslužné rutiny událostí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53833864"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Byla zjištěna veřejná nebo chráněná metoda zpracování událostí.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -69,4 +65,4 @@ ms.locfileid: "53833864"
 
 ## <a name="see-also"></a>Viz také
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName><xref:System.EventArgs?displayProperty=fullName>
- [Požadavky na zabezpečení](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ [Požadavky na zabezpečení](http://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e72b1f8a7ca76aa2b3afd68041c500b24efd8db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957959"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870620"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Řešení potíží s řešeními služby SharePoint
   S těmito problémy nebo výstrah může dojít při ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu. Další informace najdete v tématu [ladění řešení pracovního postupu služby SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -174,7 +174,7 @@ ms.locfileid: "53957959"
 
 -   Centrální správy služby SharePoint 2010. Další informace najdete v tématu [správy modelu služby BDC](http://go.microsoft.com/fwlink/?LinkID=181472) na webové stránce Microsoft TechNet.
 
--   Prostředí Windows PowerShell. Model můžete odstranit tak, že na příkazovém řádku zadáte tento příkaz: **Odebrat SPBusinessDataCatalogModel**. Další informace najdete v tématu [obecné rutiny (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) na webové stránce Microsoft TechNet.
+-   Windows PowerShell. Model můžete odstranit tak, že na příkazovém řádku zadáte tento příkaz: **Remove-SPBusinessDataCatalogModel**. Další informace najdete v tématu [obecné rutiny (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) na webové stránce Microsoft TechNet.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Objeví se chyba při pokusu o zobrazení vizuální webové části služby SharePoint
  K tomuto problému dochází při **cesta** vlastnosti uživatelského ovládacího prvku nezačíná řetězcem "CONTROLTEMPLATES\\".

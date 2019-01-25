@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4384396781172c73056de27fd3c674535571d591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871054"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869015"
 ---
 # <a name="develop-sharepoint-solutions"></a>Vývoj řešení služby SharePoint
   Několik šablon typu projektu služby SharePoint jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytváření webů služby SharePoint a prvků na webu. Seznam dostupných typů projektu naleznete v tématu [SharePoint šablony položek projektu a projekt](../sharepoint/sharepoint-project-and-project-item-templates.md). Následuje popis prvků a vlastností projektu služby SharePoint.  
@@ -101,7 +101,7 @@ ms.locfileid: "53871054"
 |Umístění nasazení|Plně kvalifikovanou cestu souboru na Sharepointovém serveru. Tato cesta se skládá z kořene nasazení a cesty nasazení podvlastností.|  
 |Cesta nasazení|Relativní cesta souboru v souboru SharePoint Server, jako je například Workflow1\\. Plně kvalifikovanou cestu k souboru se vytváří zřetězením *cesty nasazení* hodnotu na konec objektu *kořen nasazení* hodnotu.<br /><br /> Výběrem hodnoty z *RootFile* pro *typ nasazení* změny vlastností *kořen nasazení* vlastnost \<SharePointRoot >\\výsledkem plně kvalifikovanou cestu z \<SharePointRoot > \Workflow1\\. Další informace najdete v tématu [balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Kořen nasazení|řetězec. Kořenové složky, kde je soubor nasazen na serveru SharePoint. Například \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Hodnota *kořen nasazení* vlastnost je určena *typ nasazení* nastavení.|  
-|Typ nasazení|Typ nasazení souboru, který určuje jeho *kořen nasazení* hodnotu. Může být jedna z následujících hodnot:<br /><br /> NoDeployment:  *\<žádná hodnota >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Další informace naleznete v tématu <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Typ nasazení|Typ nasazení souboru, který určuje jeho *kořen nasazení* hodnotu. Může být jedna z následujících hodnot:<br /><br /> NoDeployment:  *\<žádná hodnota >*<br /><br /> ElementManifest: *\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile: *\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile: *\<SharePointRoot>\Template\\*<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot>\Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Další informace naleznete v tématu <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Název souboru|Název souboru nebo složky pro soubor položky.|  
 |Úplná cesta|Umístění souboru pro položku. (Jen pro čtení.)|  
   

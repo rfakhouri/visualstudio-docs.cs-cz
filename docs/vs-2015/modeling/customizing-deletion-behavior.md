@@ -1,12 +1,9 @@
 ---
 title: Přizpůsobení chování odstranění | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 252892286cf181c9d91e3bec842aa1e90d483b22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767999"
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +143,7 @@ partial class MusicLibDeleteClosure
   
 2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> je volána, když se odstranil elementu. Zůstane v haldě modulu CLR, aby vrácení zpět lze provést, pokud je to nutné, ale je byl odpojen od jiných prvků a odebrána z `store.ElementDirectory`. U relací role stále odkazují na staré aktérů role.`IsDeleted` má hodnotu true.  
   
-3. Když uživatel vyvolá zpět po vytvoření elementu a starší odstranění se opakuje v znovu, se nazývají OnDeleting a OnDeleted. Použití `this.Store.InUndoRedoOrRollback` , aby aktualizace úložiště prvky v těchto případech. Další informace najdete v tématu [postupy: používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. Když uživatel vyvolá zpět po vytvoření elementu a starší odstranění se opakuje v znovu, se nazývají OnDeleting a OnDeleted. Použití `this.Store.InUndoRedoOrRollback` , aby aktualizace úložiště prvky v těchto případech. Další informace najdete v tématu [jak: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
    Následující kód například odstraní při odstranění jeho posledního podřízeného skladby alba:  
   
@@ -303,6 +300,3 @@ partial class NestedShapesSampleDocData
  [Přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md)   
  [Přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md)   
  [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 202ddd802978c54c7ba773919ed3fd66a406cc05
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8e300307405f30e812067144fd5293411889743
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987243"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866763"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Reference k rozhraní API (rozšíření nástrojů služby SharePoint)
   Tato část obsahuje referenční dokumentaci rozhraní API pro rozšíření nástrojů SharePoint v sadě Visual Studio.  

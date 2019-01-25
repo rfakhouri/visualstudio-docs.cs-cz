@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: řídicí speciální znaky v nástroji MSBuild | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Řídicí znaky v nástroji MSBuild | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - special characters, escaping
 - characters, escapes
@@ -18,15 +13,15 @@ ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8346d44b16e9ada275541a23c4bf080ef1f0f54a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 291b8a33b5cf8777259be6325be9596bd9dc95e2
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230168"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834597"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Postupy: Zápis speciálních znaků pomocí escape sekvence v nástroji MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Postupy: Zápis speciálních znaků pomocí escape sekvence v MSBuildu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -54,5 +49,3 @@ Některé znaky mají speciální význam v [!INCLUDE[vstecmsbuild](../includes/
 ## <a name="see-also"></a>Viz také  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
  [Nástroj MSBuild](msbuild.md) [položky](../msbuild/msbuild-items.md)
-
-

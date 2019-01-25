@@ -1,27 +1,22 @@
 ---
 title: Commandplacement – Element | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53a60949cdda6d026525dcc8be5bab8f82a0fb73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741537"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758993"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,16 +40,16 @@ Commandplacement – element umožňuje tlačítka, skupiny a nabídek, které m
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Požadováno. Identifikátor guid sady příkazů, jak jsou definovány v [Symbols – Element](../extensibility/symbols-element.md).|  
-|id|Požadováno. Id nabídky, skupiny nebo příkaz, který byl umístěn, jak jsou definovány v `Symbols Element`.|  
-|Priorita|Požadováno. Určuje vizuální umístění položky v svého nadřízeného elementu.|  
+|identifikátor GUID|Povinný parametr. Identifikátor guid sady příkazů, jak jsou definovány v [Symbols – Element](../extensibility/symbols-element.md).|  
+|id|Povinný parametr. Id nabídky, skupiny nebo příkaz, který byl umístěn, jak jsou definovány v `Symbols Element`.|  
+|priorita|Povinný parametr. Určuje vizuální umístění položky v svého nadřízeného elementu.|  
 |Podmínka|Volitelné. Zobrazit [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|Nadřazené|Požadováno. Nabídky nebo skupiny, který je hostitelem položka, která má být umístěn.|  
+|Nadřazené|Povinný parametr. Nabídky nebo skupiny, který je hostitelem položka, která má být umístěn.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
@@ -76,4 +71,3 @@ Commandplacement – element umožňuje tlačítka, skupiny a nabídek, které m
 ## <a name="see-also"></a>Viz také  
  [Commandplacements – Element](../extensibility/commandplacements-element.md)   
  [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

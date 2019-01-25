@@ -1,14 +1,9 @@
 ---
 title: Ladění vláken a procesů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d0a42ed90275bb8988bb6bedc0b707aec21ab3b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df9bc7cdb185edd27d7572c1436db442514d38e4
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802613"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835036"
 ---
 # <a name="debug-threads-and-processes"></a>Ladění vláken a procesů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,6 +63,3 @@ Vlákna * a *procesy* jsou v informatice související koncepty. Obě představu
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Ladění kódu GPU](../debugger/debugging-gpu-code.md)
-
-
-

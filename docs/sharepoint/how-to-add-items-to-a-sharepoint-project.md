@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b10277945feb638764162d523066d49b9c6c7215
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7279631b84e67e8b95b56f4bc04a4d77ca3ebb0d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949677"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867933"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Postupy: Přidání položek do projektu služby SharePoint
   Řešení služby SharePoint obsahuje jeden nebo více projektů, z nichž každý obsahuje několik položek projektu služby SharePoint. Po otevření nebo vytvoření řešení služby SharePoint, můžete přidat nové nebo existující položky do těchto projektů. Například nové projekty pracovního postupu, které jsou součástí výchozí formulář, který je pojmenován default.aspx, ale můžete nahradit, které tvoří nového nebo jiného formuláře nebo přidat další ASPX formulář.  

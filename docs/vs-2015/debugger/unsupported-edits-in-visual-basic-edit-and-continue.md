@@ -1,14 +1,9 @@
 ---
 title: Nepodporované úpravy v jazyce Visual Basic operaci upravit a pokračovat | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787897"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834292"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Nepodporované úpravy v operaci Upravit a pokračovat jazyka Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ Upravit a pokračovat les zastaví spuštění programu v režimu pozastavení, 
  Pokud je potřeba provést změnu, která není podporována, musíte Zastavit ladění, proveďte požadované změny a spuštění nové ladicí relace.  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Metody a vlastnosti úpravy textu  
- **Nepodporované změny statické lokální proměnné**: Přidání nebo aktualizace místní proměnné nebo odebrání statické místní proměnné, pokud by to způsobilo chybu kompilace.  
+ **Nepodporované změny statické lokální proměnné**: Přidání nebo aktualizace místní proměnné nebo odebrání statické místní proměnné, pokud to způsobí chybu kompilace.  
   
- **Nepodporované změny do obecných typů**: změny obecný samotnou metodu nebo obecné metody textu nejsou podporovány. Vytváření instancí obecného typu nebo volání na existující obecné metody lze přidat, odstranit nebo změnit.  
+ **Nepodporované změny do obecných typů**: Změny obecný samotnou metodu nebo obecné metody textu nejsou podporovány. Vytváření instancí obecného typu nebo volání na existující obecné metody lze přidat, odstranit nebo změnit.  
   
  **Ostatní nepodporované změny**  
   
@@ -223,8 +218,5 @@ Upravit a pokračovat les zastaví spuštění programu v režimu pozastavení, 
 -   Změna typu pole.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití úprav v režimu pozastavení pomocí operace upravit a pokračovat](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Postupy: Použití úprav v režimu pozastavení pomocí operace upravit a pokračovat](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Upravit a pokračovat (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

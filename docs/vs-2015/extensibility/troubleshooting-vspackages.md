@@ -1,27 +1,22 @@
 ---
 title: Řešení potíží s rozšířením VSPackages | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a19962a3e403246d2c68648c3be20a4a0b126a61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761399"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 3.  Zkontrolujte položky registru VSPackage.  
   
-     Další informace najdete v tématu [registrace rozšíření VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) a [Správa balíčky VSPackages](../extensibility/managing-vspackages.md).  
+     Další informace najdete v tématu [registrace rozšíření VSPackages](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd) a [Správa balíčky VSPackages](../extensibility/managing-vspackages.md).  
   
 4.  Otevřít **výstup** okno instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , které se nedaří načíst sady VSPackage. Informace o proč sady VSPackage nedaří se načíst může být zobrazen v tomto okně.  
   
@@ -57,7 +52,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 5.  Vyhledejte v protokolu aktivit.  
   
-     Další informace najdete v tématu [postupy: použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
+     Další informace najdete v tématu [jak: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
   
 6.  Další informace o výjimky vyvolané z integrovaného vývojového prostředí, klikněte na tlačítko **výjimky** na **ladění** nabídka umožňující výjimky. V **výjimky** dialogové okno Vybrat typy výjimek, které chcete získat další informace.  
   
@@ -73,7 +68,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
     1.  Identifikátor CLSID sady VSPackage najdete v části balíčků z registru:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<verze >* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
     2.  Ověřte správnost cesty Dal podklíč SatelliteDll.  
   
@@ -96,7 +91,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 2.  Použití protokolu aktivit.  
   
-     Sledujte chování balíčku VSPackage pomocí zápisu informací do protokolu aktivit se zapsaly klíčové body. Tato technika je užitečná při spuštění v prostředí maloobchodu VSPackage. Další informace najdete v tématu [postupy: použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
+     Sledujte chování balíčku VSPackage pomocí zápisu informací do protokolu aktivit se zapsaly klíčové body. Tato technika je užitečná při spuštění v prostředí maloobchodu VSPackage. Další informace najdete v tématu [jak: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Použití veřejných symbolů.  
   
@@ -126,10 +121,9 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 2. Nespravovaný kód, najít identifikátor CLSID VSPackage v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzlu registru CLSID:  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<verze >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    Ujistěte se, že položka InprocServer32 má správnou cestu knihovny dll balíčku VSPackage.  
   
 ## <a name="see-also"></a>Viz také  
  [Balíčky VSPackage](../extensibility/internals/vspackages.md)
-

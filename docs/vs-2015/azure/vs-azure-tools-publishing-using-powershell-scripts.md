@@ -2,7 +2,7 @@
 title: Pomocí skriptů Windows Powershellu k publikování do vývojových a testovacích prostředí | Dokumentace Microsoftu
 description: Další informace o použití skriptů Windows Powershellu ze sady Visual Studio k publikování vývojové a testovací prostředí.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 9d0142c52fbe40256fc0ab6ec0d5d9fdade243b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 63334168625e0f864206d5e2662ed9b58b7c3f1f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761896"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Použití skriptů PowerShellu k publikování do vývojových a testovacích prostředí
 
@@ -150,13 +150,13 @@ Pokud máte web, který má více prostředí pro nasazení (označuje se jako s
 
 Pokud jste nikdy spustit skript prostředí Windows PowerShell před, musíte nejprve nastavte zásady spouštění umožňující spouštění skriptů. Zásady je funkce zabezpečení, která zabránit uživatelům ve spouštění skriptů prostředí Windows PowerShell v případě, že jsou citlivé na malwaru a virů, které se týkají spouštění skriptů.
 
-### <a name="run-the-script"></a>Spusťte skript
+### <a name="run-the-script"></a>Spuštění skriptu
 
 1. Vytvořte balíček nasazení webu pro váš projekt. Balíček nasazení webu je komprimovaný archiv (soubor .zip), které obsahují soubory, které chcete zkopírovat do svého webu nebo virtuálního počítače. Balíčky nasazení webu v sadě Visual Studio můžete vytvořit pro jakékoli webové aplikaci.
 
    ![Vytvoření webové nasazení balíčku](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Další informace najdete v tématu [postupy: vytvoření balíčku pro nasazení webu v sadě Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Můžete také automatizovat vytváření balíčku Webdeploy, jak je popsáno v [přizpůsobení a rozšíření skriptů publikování](#customizing-and-extending-publish-scripts).
+   Další informace najdete v tématu [jak: Vytvoření balíčku pro nasazení webu v sadě Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Můžete také automatizovat vytváření balíčku Webdeploy, jak je popsáno v [přizpůsobení a rozšíření skriptů publikování](#customizing-and-extending-publish-scripts).
 
 1. V **Průzkumníka řešení**, otevřete kontextovou nabídku pro skript a klikněte na tlačítko **otevřít v PowerShell ISE**.
 1. Pokud se spouštění skriptů prostředí Windows PowerShell na tomto počítači poprvé, otevřete okno příkazového řádku s oprávněními správce a zadejte následující příkaz:
@@ -343,9 +343,9 @@ Chcete-li získat nápovědu pro funkce, které můžete použít na příkazov�
 
 | Název funkce | Popis |
 | --- | --- |
-| Nové AzureWebApplicationEnvironment |Vytváří prostředky Azure, jako je například webu nebo virtuálního počítače. |
+| New-AzureWebApplicationEnvironment |Vytváří prostředky Azure, jako je například webu nebo virtuálního počítače. |
 | New-WebDeployPackage |Tato funkce není implementována. Přidání příkazů v této funkci chcete projekt sestavit. |
-| Publikování AzureWebApplication |Publikuje webovou aplikaci do Azure. |
+| Publish-AzureWebApplication |Publikuje webovou aplikaci do Azure. |
 | Publikovat webovou aplikaci |Vytvoří a nasadí Web Apps, virtuálních počítačů, databází SQL a účtů úložiště pro webový projekt sady Visual Studio. |
 | Test-WebApplication |Tato funkce není implementována. Přidání příkazů v této funkci pro testování vaší aplikace. |
 

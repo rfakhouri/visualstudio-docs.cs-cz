@@ -1,14 +1,9 @@
 ---
 title: Příručka správce sady Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,13 +12,13 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722822"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834874"
 ---
 # <a name="visual-studio-administrator-guide"></a>Příručka administrátora sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Visual Studio 2015 můžete nasadit v síti, tak dlouho, dokud každý cílový 
 ## <a name="controlling-what-is-installed"></a>Řízení, co je nainstalována  
  Pokud chcete řídit, co koncový uživatel může nainstalovat, existují dvě možnosti: Správce souborů instalaci a možnosti příkazového řádku. Vyberte souboru instalace správce, pokud je vaším cílem je omezit, co koncový uživatel můžete vybrat z jejich prostředí instalačního programu sady Visual Studio. Pokud chcete vytvořit počáteční konfiguraci, ale povolit váš koncový uživatel vybrat své vlastní prostředí instalačního programu sady Visual Studio, vyberte parametry příkazového řádku.  
   
- Další informace o souboru prostředí správce, naleznete v tématu [postupy: vytvoření a spuštění bezobslužné instalace sady Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) a [postupy: automatické použití kódů product key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Další informace o řízení příkazového řádku, najdete v článku [použití parametrů příkazového řádku instalace sady Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) stránky.  
+ Další informace o souboru prostředí správce, naleznete v tématu [jak: Vytvoření a spuštění bezobslužné instalace sady Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) a [jak: Automatické použití kódů product key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Další informace o řízení příkazového řádku, najdete v článku [použití parametrů příkazového řádku instalace sady Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) stránky.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Určení nastavení zpětné vazby zákazníka  
  Ve výchozím nastavení instalaci sady Visual Studio umožňuje zpětné vazby od zákazníků. Visual Studio a zakázání zpětné vazby od zákazníků v jednotlivých počítačích změnou hodnoty následujícího klíče registru na řetězec "0", můžete nakonfigurovat:  
@@ -75,6 +70,6 @@ Visual Studio 2015 můžete nasadit v síti, tak dlouho, dokud každý cílový 
 |-----------|-----------------|  
 |[Postupy: Instalace konkrétní verze sady Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Popisuje postup instalace konkrétní konfigurace k aktuální verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Postupy: Vytvoření a spuštění bezobslužné instalace sady Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Popisuje postup instalace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v bezobslužném režimu.|  
-|[Postupy: Automatické použití kódů Product Key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Popisuje způsob použití kódů product key při nasazení do více počítačů.|  
+|[Postupy: Automatické použití kódů product key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Popisuje způsob použití kódů product key při nasazení do více počítačů.|  
 |[Příručka správce Help Vieweru](../ide/help-viewer-administrator-guide.md)|Poskytuje informace o tom, jak spravovat místní instalace nápovědy pro síťové prostředí, které mají nebo nemají přístup k Internetu.|  
 |[Instalace sady Visual Studio](../install/install-visual-studio-2015.md)|Poskytuje pokyny a odkazy na témata, která popisují, jak nainstalovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

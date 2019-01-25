@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950813"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875716"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio
   Můžete ladit rozšíření nástrojů SharePoint v experimentální instanci nebo pravidelné instanci aplikace Visual Studio. Pokud je potřeba Poradce při potížích s chováním rozšíření, můžete také změnit hodnoty registru, chcete-li zobrazit další informace o chybě a nakonfigurujte, jak Visual Studio provede příkazy serveru SharePoint.
@@ -124,7 +124,7 @@ ms.locfileid: "53950813"
 |AttachDebuggerToHostProcess|REG_DWORD, která určuje, jestli se má zobrazit dialogové okno, která umožňuje připojit ladicí program k *vssphost4.exe* ihned po jeho spuštění. To je užitečné, pokud příkaz, který chcete ladit, je spuštěn ve vssphost.exe ihned po svém spuštění a není k dispozici dostatek času ručně připojit ladicí program před provedením příkazu. Chcete-li zobrazit dialogové okno, *vssphost4.exe* volání <xref:System.Diagnostics.Debugger.Break%2A> při spuštění metodu.<br /><br /> Pokud chcete povolit toto chování, nastavte tuto hodnotu na 1. Chcete-li toto chování vypnout, nastavte tuto hodnotu na 0 nebo tuto hodnotu odstraňte.<br /><br /> Pokud nastavíte tuto hodnotu na 1, můžete také chtít zvýšit hodnotu HostProcessStartupTimeout, abyste měli dostatek času na připojení ladicího programu, než se očekává, že Visual Studio *vssphost4.exe* signál, že je úspěšně spuštěn.|
 |ChannelOperationTimeout|REG_DWORD, která určuje dobu v sekundách, po který Visual Studio čeká na provedení příkazu SharePoint. Pokud příkaz nespustí včas, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> je vyvolána výjimka.<br /><br /> Výchozí hodnota je 120 sekund.|
 |HostProcessStartupTimeout|REG_DWORD, která určuje dobu v sekundách, že Visual Studio čeká *vssphost4.exe* signál, že je úspěšně spuštěn. Pokud *vssphost4.exe* nevydá signál úspěšné spuštění v čase, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> je vyvolána výjimka.<br /><br /> Výchozí hodnota je 60 sekund.|
-|maxReceivedMessageSize|REG_DWORD, která určuje maximální povolenou velikost v bajtech zpráv WCF, které jsou předávány mezi Visual Studio a *vssphost4.exe*.<br /><br /> Výchozí hodnota je 1 048 576 bajtů (1 MB).|
+|MaxReceivedMessageSize|REG_DWORD, která určuje maximální povolenou velikost v bajtech zpráv WCF, které jsou předávány mezi Visual Studio a *vssphost4.exe*.<br /><br /> Výchozí hodnota je 1 048 576 bajtů (1 MB).|
 |MaxStringContentLength|REG_DWORD, která určuje maximální povolenou velikost v bajtech řetězců, které jsou předávány mezi Visual Studio a *vssphost4.exe*.<br /><br /> Výchozí hodnota je 1 048 576 bajtů (1 MB).|
 
 ## <a name="see-also"></a>Viz také:

@@ -3,10 +3,7 @@ title: Vítá vás Visual Studio 2015 | Dokumentace Microsoftu
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msdnstart
 helpviewer_keywords:
@@ -15,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
-manager: crdun
-ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805143"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835083"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Vítá vás Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -53,11 +50,11 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 ## <a name="build-apps-for-android-ios-and-windows"></a>Vytvářejte aplikace pro Android, iOS a Windows
  Visual Studio můžete použít k vytváření aplikací pro zařízení s Androidem, iOS a Windows. Další informace najdete v [Cross-Platform Mobile Development](./cross-platform/cross-platform-mobile-development-in-visual-studio.md).
 
- Informace o univerzální aplikace Windows (UPW) najdete v tématu [univerzálních aplikací pro Windows](https://dev.windows.com/en-us/windows-apps).
+ Informace o univerzální aplikace Windows (UPW) najdete v tématu [univerzálních aplikací pro Windows](https://dev.windows.com/windows-apps).
 
  Zvolte nástroje, které potřebujete podle požadavků vaší aplikace a jazyk, který chcete použít.
 
-1.  [Xamarin pro Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Společný kód v základní C# pro všechna zařízení
+1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Společný kód v základní C# pro všechna zařízení
 
 2.  [Apache Cordova pomocí sady Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Společný kód základní pro HTML, CSS a JavaScript nebo Typescript
 
@@ -99,7 +96,7 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 
 |||||
 |-|-|-|-|
-|[Co je nového v sadě Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Co je nového v jazyce Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Co je nového v rozhraní .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Co je nového pro ALM](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Co je nového v sadě Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Co je nového v jazyce Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Co je nového v rozhraní .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Co je nového pro ALM](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
 |[Co je nového pro C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Co je nového v jazyce Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Co je nového v jazyce JavaScript](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

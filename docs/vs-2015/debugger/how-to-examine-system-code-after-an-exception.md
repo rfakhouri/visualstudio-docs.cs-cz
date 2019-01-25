@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Kontrola systémového kódu po výjimce | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8cbaff38cdd6d769140f135d319a88d6098f294b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 289ef1825e8034566e2a9595a46919a3c498108d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755947"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Postupy: Kontrola systémového kódu po výjimce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,3 @@ Když dojde k výjimce, bude pravděpodobně pro zkoumání kódu uvnitř do sys
   
 ## <a name="see-also"></a>Viz také  
  [Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - primary interop assemblies
 - assemblies [Office development in Visual Studio], primary interop assemblies
 - Office primary interop assemblies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79651c3404256b3abd7750cdfc20b33abe44c477
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926727"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876106"
 ---
 # <a name="office-primary-interop-assemblies"></a>primární spolupracující sestavení sady Office
 
@@ -59,11 +59,11 @@ Tyto kopie PIA pomáhají aplikaci Visual Studio zabránit několika vývojovým
   
 Visual Studio nainstaluje tyto kopie PIA do následujících umístění na vývojovém počítači:  
   
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14*  
+- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*  
   
   (nebo *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14* v 64bitových operačních systémech)  
   
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15*  
+- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*  
   
   (nebo *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15* v 64bitových operačních systémech)  
   
@@ -102,7 +102,7 @@ V následující tabulce jsou uvedeny sestavení primární spolupráce, které 
 |Microsoft Graph 14.0 objekt knihovny (používané aplikace PowerPoint, Access a Word pro grafy)<br /><br /> Knihovna objektů Microsoft Graph 15.0|Microsoft.Office.Interop.Graph.dll|  
 |Knihovna typů Microsoft InfoPath 2.0 (pouze pro InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|  
 |Definiční sestavení Microsoft InfoPath XML (pouze pro InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|  
-|Knihovna objektů Microsoft Office 14.0 (sdílená funkce aplikace Office)<br /><br /> Knihovna objektů Microsoft Office 15.0 (sdílená funkce aplikace Office)|sestavení Office.dll|  
+|Knihovna objektů Microsoft Office 14.0 (sdílená funkce aplikace Office)<br /><br /> Knihovna objektů Microsoft Office 15.0 (sdílená funkce aplikace Office)|office.dll|  
 |Ovládací prvek zobrazení aplikace Microsoft Office Outlook (lze použít do webových stránek a aplikací pro přístup k vaší doručené pošty)|Microsoft.Office.Interop.OutlookViewCtl.dll|  
 |Knihovna objektů Microsoft Outlook 14.0<br /><br /> Knihovna objektů Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|  
 |Knihovna objektů Microsoft PowerPoint 14.0<br /><br /> Knihovna objektů Microsoft PowerPoint 15.0|Microsoft.Office.Interop.PowerPoint.dll|  

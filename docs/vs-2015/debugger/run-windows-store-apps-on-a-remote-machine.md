@@ -1,14 +1,9 @@
 ---
 title: Aplikace Windows Store spustit ve vzdáleném počítači | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784543"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756912"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Spouštění aplikací pro Windows Store ve vzdáleném počítači
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
  Další:  
   
- [Požadované součásti](#BKMK_Prerequisites)  
+ [Požadavky](#BKMK_Prerequisites)  
   
  [Zabezpečení](#BKMK_Security)  
   
@@ -96,7 +91,7 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
 |Version|Odkaz|Poznámky|
 |-|-|-|
 |Visual Studio 2015 Update 3|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, připojte se k bezplatné Visual Studio Dev Essentials skupiny nebo jenom se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pak znovu otevřete odkaz v případě potřeby. Kdykoli stáhněte verzi, která odpovídá operačního systému zařízení (x 86, x64 nebo verzi ARM)|
-|Visual Studio 2015 (starší)|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, připojte se k bezplatné Visual Studio Dev Essentials skupiny nebo jenom se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pak znovu otevřete odkaz v případě potřeby. Kdykoli stáhněte verzi, která odpovídá operačního systému zařízení (x 86, x64 nebo verzi ARM)|
+|Visual Studio 2015 (older)|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, připojte se k bezplatné Visual Studio Dev Essentials skupiny nebo jenom se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pak znovu otevřete odkaz v případě potřeby. Kdykoli stáhněte verzi, která odpovídá operačního systému zařízení (x 86, x64 nebo verzi ARM)|
 |Visual Studio 2013|[Vzdálené nástroje](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci k sadě Visual Studio 2013|
   
  Můžete zvolit, zda chcete stáhnout instalační program nebo ho chcete ihned spustit. Když spustíte instalační program, přijměte uživatelskou smlouvu a klikněte na tlačítko **nainstalovat**.  
@@ -178,6 +173,3 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
 ## <a name="see-also"></a>Viz také  
  [Testování aplikací pro Store pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-

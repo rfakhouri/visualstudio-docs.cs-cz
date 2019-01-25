@@ -1,22 +1,18 @@
 ---
-title: 'Postupy: použití kontextu uživatelského rozhraní založeného na pravidlo pro rozšíření | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití kontextu uživatelského rozhraní založeného na pravidlo pro rozšíření | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: 431f9b53fd9b678e16e7fddeeb997ddfcfea6f11
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759797"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: použití kontextu uživatelského rozhraní založeného na pravidlo pro rozšíření sady Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: Použití kontextu uživatelského rozhraní založeného na pravidlech pro rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio umožňuje načítání rozšíření VSPackages při některých dobře známé <xref:Microsoft.VisualStudio.Shell.UIContext>s aktivují. Ale kontexty uživatelského rozhraní nejsou velmi dobře grained, byste museli opustit autoři rozšíření žádná volba, ale k výběru dostupná kontextu uživatelského rozhraní, který se aktivuje před bodem VSPackage načíst opravdu chtěli. Seznam dobře známé uživatelské rozhraní kontextech najdete v tématu <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.
@@ -47,7 +43,7 @@ Visual Studio umožňuje načítání rozšíření VSPackages při některých 
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    Atributy, přidejte následující: (podrobnosti o těchto atributů budou vysvětlena dále)
+    Pro atributy přidejte následující: (Podrobnosti o těchto atributů budou vysvětlena dále)
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]

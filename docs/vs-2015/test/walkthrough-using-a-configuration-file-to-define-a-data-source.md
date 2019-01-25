@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Použití konfiguračního souboru k definování zdroje dat | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Použití konfiguračního souboru k definování zdroje dat | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843038"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835118"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Průvodce: Použití konfiguračního souboru k definování zdroje dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config pro testování částí. Se dozvíte, jak vytvořit soubor app.config, který definuje zdroje dat, který mohou využívat <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> třídy. Úkoly uvedené v tomto návodu zahrnují následující:  
@@ -224,7 +219,7 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
   
 1.  Testování částí přidejte do projektu testů.  
   
-     Další informace najdete v tématu [vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+     Další informace najdete v tématu [vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
 2.  Nahraďte obsah automaticky generovaný sady testování částí s následujícím kódem:  
   
@@ -275,9 +270,6 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
   
 ## <a name="see-also"></a>Viz také  
  [Testování částí kódu](../test/unit-test-your-code.md)   
- [Vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Postupy: Testy částí řízené daty](../test/how-to-create-a-data-driven-unit-test.md)
-
-
-
+ [Postupy: Vytvoření testu jednotek řízené daty](../test/how-to-create-a-data-driven-unit-test.md)

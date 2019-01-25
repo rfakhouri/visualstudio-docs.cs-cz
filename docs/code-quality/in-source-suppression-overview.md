@@ -1,6 +1,6 @@
 ---
 title: Potlačení upozornění analýzy kódu
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932870"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835055"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
 
@@ -66,17 +66,19 @@ Vlastnosti atributu:
 
 - **ID zprávy** – jedinečný identifikátor pro každou zprávu problém.
 
-- **Obor** – cíl, na kterém je potlačeno upozornění. Pokud cíl není zadán, je nastavena na cíl atributu. Podporované obory, patří:
+- **Obor** – cíl, na kterém je potlačeno upozornění. Pokud cíl není zadán, je nastavena na cíl atributu. Podporované [obory](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) patří následující:
 
-    - Modul
+   - `module`
 
-    - Obor názvů
+   - `resource`
 
-    - Prostředek
+   - `type`
 
-    - Typ
+   - `member`
 
-    - Člen
+   - `namespace` – Tento obor potlačí upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.
+
+   - `namespaceanddescendants` – Tento obor (Nový pro Visual Studio 2019) potlačí upozornění v oboru názvů a všechny jeho odvozené symboly. `namespaceanddescendants` Hodnota je platná pouze pro analyzátory Roslyn a je ignorován binární, na základě FxCop statické analýzy.
 
 - **Cíl** – identifikátor, který se používá k určení cíle, na kterém je potlačeno upozornění. Musí obsahovat položky plně kvalifikovaný název.
 
@@ -151,7 +153,7 @@ Nástroj pro analýzu spravovaného kódu prozkoumá `SuppressMessage` atributy,
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Při potlačení upozornění se obor názvů, potlačí případná upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.
+> Kdy potlačit upozornění se `namespace` oboru, potlačí upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.
 
 Žádné potlačení lze vyjádřit zadáním výslovného oboru. Tyto potlačení musí být aktivní na globální úrovni. Potlačení na úrovni člena nelze zadat pomocí upravení typu.
 
@@ -168,5 +170,6 @@ Soubor globálního potlačení udržuje potlačení, které jsou potlačení na
 
 ## <a name="see-also"></a>Viz také:
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Používání analyzátorů Roslyn](../code-quality/use-roslyn-analyzers.md)

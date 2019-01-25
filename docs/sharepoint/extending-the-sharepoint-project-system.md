@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending projects
 - SharePoint development in Visual Studio, extending project items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51449003457ecd09e7dca7bc579d652c94a592e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f461cae21dfd43bb8fb1d78af65e0ea234d0100
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891109"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869262"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Rozšíření systému projektu služby SharePoint
   Řešení služby SharePoint můžete vytvořit pomocí sady šablon projektů a šablon položek v sadě Visual Studio. Tyto šablony požadavkům mnoho vývojové scénáře, ale můžete narazit na některých případech, kde není poskytují funkce, které potřebujete. V těchto případech můžete rozšířit systém projektu služby SharePoint.  

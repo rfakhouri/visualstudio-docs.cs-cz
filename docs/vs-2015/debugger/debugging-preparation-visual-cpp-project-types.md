@@ -1,14 +1,9 @@
 ---
-title: 'Příprava ladění: Typy projektů Visual C++ | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Příprava ladění: Typy projektu Visual C++ | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 802b34d47501d3538008838f9bb6ddec93ac827a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59c7e42e005e423a27adc7676a05ebc03cd068d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761109"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Příprava ladění: typy projektů jazyka Visual C++
+# <a name="debugging-preparation-visual-c-project-types"></a>Příprava ladění: Typy projektů Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] šablony projektu.  
@@ -105,7 +100,7 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
    [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikace Windows Forms (.NET)  
- **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplikace Windows Forms. Další informace najdete v tématu [postupy: vytvoření projektu aplikace Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplikace Windows Forms. Další informace najdete v tématu [jak: Vytvoření projektu aplikace Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je podobná ve spravovaných aplikacích Windows Forms.  
   
@@ -122,7 +117,4 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
  [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Připojení více programů nebo spuštění programu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Postupy: vytvoření projektu aplikace Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)
-
-
-
+ [Postupy: Vytvoření projektu aplikace Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Vytváření více počítačů vytvořit prostředí | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření více počítačů vytvořit prostředí | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
@@ -16,15 +11,15 @@ ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769071"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Postup: Vytvoření prostředí pro sestavení s použitím více počítačů
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Průvodce: Vytvoření prostředí více počítačů sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním sady Visual Studio v hostitelském počítači a následným kopírováním různých souborů a nastavení do jiného počítače tak, aby se mohl podílet na sestavení. Není nutné k instalaci sady Visual Studio na jiném počítači.  
@@ -132,17 +127,17 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
    -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
   
-   -   %ProgramFiles%\Common Files\Common Files\Merge Modules\  
+   -   %ProgramFiles%\Common Files\Merge Modules\  
   
-   -   11.0\VC\ %ProgramFiles%\Microsoft visual Studio  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
   
    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
   
    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETCore\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETFramework\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
   
 3. Zkopírujte tyto soubory z hostitelského počítače do počítače sestavení:  
   
@@ -246,27 +241,27 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
    - % RegistryRoot %\VisualStudio\11.0@Source adresáře  
   
-   - % RegistryRoot %\VisualStudio\11.0\Setup\VC@ProductDir  
+   - %RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir  
   
-   - % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir32  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32  
   
-   - % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir64  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64  
   
-   - % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer32  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32  
   
-   - % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer64  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64  
   
-   - % RegistryRoot %\VisualStudio\SxS\VC7@11.0  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@11.0  
   
-   - % RegistryRoot %\VisualStudio\SxS\VS7@11.0  
+   - %RegistryRoot%\VisualStudio\SxS\VS7@11.0  
   
    - %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot  
   
-   - % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
   
-   - % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
   
-   - % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
      Počítač sestavení x x64, také vytvořte následující položku registru a odkazovat na hostitelském počítači zjistěte, jak ji nastavit.  
   
@@ -294,7 +289,7 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
     |Vcvarsall.bat argument|Kompilátor|Architektura sestavovacího počítače|Architektura výstupu sestavení|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (výchozí)|32bitová nativní|x86, x64|x86|  
-    |x86_amd64|x64 křížové|x86, x64|x64|  
+    |x86_amd64|x64 Cross|x86, x64|x64|  
     |amd64|x64 nativní|x64|x64|  
   
      Pokud bude úspěšně spuštěn vcvarsall.bat – tedy žádná chybová zpráva se zobrazí – můžete následující krok přeskočit a pokračovat na [MSBuild instalace sestavení do globální mezipaměti sestavení (GAC) v počítači sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) část tohoto dokumentu .  
@@ -309,13 +304,13 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
     Pokud chcete použít nativní 32bitový MSBuild, přidejte tyto cesty do proměnné PATH:  
   
-   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 nástroje  
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools  
   
    - %windir%\Microsoft.NET\Framework\v4.0.30319  
   
      Pokud chcete použít nativní 64bitový MSBuild, přidejte tyto cesty do proměnné PATH:  
   
-   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
   
    - %windir%\Microsoft.NET\Framework64\v4.0.30319  
   
@@ -346,7 +341,7 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
  Chcete-li použít msbuild.exe na příkazovém řádku, spusťte následující příkaz, ve kterém *solution.sln* je zástupný symbol pro název vašeho řešení.  
   
- **Nástroj MSBuild** *solution.sln*  
+ **msbuild** *solution.sln*  
   
  Další informace o tom, jak používat MSBuild na příkazovém řádku naleznete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  
   
@@ -375,21 +370,21 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
     -   V % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\a \Microsoft.CppCommon.targets\\, změňte každou instanci z  
   
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, verze = 4.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a"  
+         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
          až  
   
-         AssemblyFile = "$(VCTargetsPath11) Microsoft.Build.CppTasks.Common.v110.dll".  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
   
          Dřívější pojmenování je založena na sestavení GAC.  
   
     -   V % Depot % \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets změňte každou instanci  
   
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, verze = 4.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a"  
+         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
          až  
   
-         AssemblyFile = "$(VCTargetsPath11) Microsoft.Build.CppTasks.Common.v110.dll".  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
   
 4.  Vytvořte soubor PROPS – například partner.autoimports.props – ho do kořenové složky, která obsahuje vaše projekty. Tento soubor slouží k nastavení proměnné, které jsou používány nástrojem MSBuild k vyhledávání různých zdrojů. Pokud proměnné nejsou nastaveny tímto souborem, jsou nastaveny v jiných souborech .props a souborech .targets, které spoléhají na hodnoty registru. Protože nenastavujeme žádné hodnoty registru, tyto proměnné budou prázdné a sestavení selže. Místo toho to přidejte do Partner.AutoImports.props:  
   
@@ -431,6 +426,3 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
 ## <a name="see-also"></a>Viz také  
  [Příprava testovacího počítače ke spuštění ladicího spustitelného souboru](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Referenční dokumentace k příkazovému řádku](../msbuild/msbuild-command-line-reference.md)
-
-
-

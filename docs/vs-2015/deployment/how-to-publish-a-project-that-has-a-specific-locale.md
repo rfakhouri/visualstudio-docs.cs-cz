@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: publikování projektu s konkrétním národním | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Publikování projektu s konkrétním národním | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +20,13 @@ ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: a08c7cc22129a783e692c437724114b3f44888a3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+manager: jillfra
+ms.openlocfilehash: 5f090fef8fd4a146cf036ebbb5f8d06b120afb3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753768"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: Publikování projektu s konkrétním národním prostředím
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,9 +166,6 @@ Není, že aplikace obsahuje součásti, které mají různá národní prostře
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Makra vývojové prostředí](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Okno Průzkumníka – makro](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Postupy: úpravy a vytváření makra prostřednictvím kódu programu](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
-
-
-
+ [Makra vývojové prostředí](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Okno Průzkumníka – makro](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [Postupy: Úpravy a vytváření makra prostřednictvím kódu programu](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

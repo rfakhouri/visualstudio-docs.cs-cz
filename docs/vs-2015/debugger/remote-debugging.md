@@ -1,13 +1,8 @@
 ---
 title: Vzdálené ladění | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,13 +18,13 @@ ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de09da6a68e00ee66e04ae9523729c88232e78a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779816"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Můžete buď stáhnout nástroje remote tools přímo v zařízení nebo na ser
     |Version|Odkaz|Poznámky|
     |-|-|-|
     |Visual Studio 2015 Update 3|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, připojte se k bezplatné Visual Studio Dev Essentials skupiny nebo jenom se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pak znovu otevřete odkaz v případě potřeby. Kdykoli stáhněte verzi, která odpovídá operačního systému zařízení (x 86, x64 nebo verzi ARM)|
-    |Visual Studio 2015 (starší)|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, připojte se k bezplatné Visual Studio Dev Essentials skupiny nebo jenom se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pak znovu otevřete odkaz v případě potřeby.|
+    |Visual Studio 2015 (older)|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, připojte se k bezplatné Visual Studio Dev Essentials skupiny nebo jenom se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pak znovu otevřete odkaz v případě potřeby.|
     |Visual Studio 2013|[Vzdálené nástroje](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci k sadě Visual Studio 2013|
     |Visual Studio 2012|[Vzdálené nástroje](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci k sadě Visual Studio 2012|
   
@@ -67,7 +62,7 @@ Pokud se pokusíte zkopírovat vzdálený ladící program (msvsmon.exe) ke vzd�
 
 Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači s Visual Studio 2015 Community, Professional nebo Enterprise už nainstalovaná. Pro většinu scénářů je nejjednodušší způsob, jak nastavit vzdálené ladění spusťte vzdálený ladící program (msvsmon.exe) ze sdílené složky. Omezení využití najdete na stránce nápovědy vzdáleného ladicího programu (**Nápověda / využití** v vzdálený ladicí program).
 
-1. Najít **msvsmon.exe** v adresáři odpovídající verzi sady Visual Studio. Pro Visual Studio 2015:
+1. Najít **msvsmon.exe** v adresáři odpovídající verzi sady Visual Studio. For Visual Studio 2015:
 
       **Program Files\Microsoft Visual Studio 14.0\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
@@ -203,7 +198,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
    |Vzdálený příkaz|C:\remotetemp\mymfc.exe|  
    |Pracovní adresář|C:\remotetemp|  
    |Název vzdáleného serveru|MJO DL:*číslo_portu*|  
-   |připojení|Vzdálený s ověřováním Windows|  
+   |Připojení|Vzdálený s ověřováním Windows|  
    |Typ ladicího programu|Pouze nativní|  
    |Adresář nasazení|C:\remotetemp.|  
    |Další soubory k nasazení|C:\data\mymfcdata.txt.|  
@@ -305,6 +300,3 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
  [Přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md)   
  [Vzdálené ladění ASP.NET na vzdáleném počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

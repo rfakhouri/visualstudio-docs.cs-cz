@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Database field [Office development in Visual Studio]
 - data [Office development in Visual Studio], binding data
 - simple data binding [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ae634a87e8b105df88fed4168b6a70909efbc7f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895490"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868992"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Průvodce: Jednoduché datové vazby v projektech na úrovni dokumentu
   Tento návod ukazuje základní informace o datové vazby v projektech úrovni dokumentu. Jedno datové pole v databázi serveru SQL Server je vázán na pojmenované oblasti v aplikaci Microsoft Office Excel. Návod také ukazuje, jak přidat ovládací prvky, které vám umožní procházet všechny záznamy v tabulce.  

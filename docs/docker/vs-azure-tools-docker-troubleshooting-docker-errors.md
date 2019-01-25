@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: devinb
-ms.openlocfilehash: 987efcb2d45253326ec2744776c304376cd3bc67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0551c67ee86f0d63655c584905a5a6280f450901
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865852"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868502"
 ---
 # <a name="troubleshoot-visual-studio-2017-development-with-docker"></a>Řešení potíží při vývoji v sadě Visual Studio 2017 pomocí Dockeru
 
@@ -34,6 +34,13 @@ K vyřešení tohoto problému:
 > Pokud se zdá, že sdílené soubory, můžete stále chcete-li znovu povolit sdílení svazků, klikněte na odkaz "Resetovat přihlašovací údaje …" v dolní části dialogového okna. Chcete-li pokračovat po resetování přihlašovacích údajů, budete muset restartovat Visual Studio.
 
 ![sdílené jednotky](media/vs-azure-tools-docker-troubleshooting-docker-errors/shareddrives.png)
+
+> [!TIP]
+> Visual Studio 2017 verze 15.6 a vyšší výzvu, při **sdílené jednotky** nejsou nakonfigurované.
+
+### <a name="container-type"></a>Typ kontejneru
+
+Při přidávání podpory Docker do projektu, zvolte Windows nebo Linuxem kontejneru. Hostitele Docker musí běžet stejný typ kontejneru. Chcete-li změnit typ kontejneru v běžící instanci Dockeru, klikněte pravým tlačítkem na ikonu Dockeru na hlavním panelu a vyberte **přepnout na kontejnery Windows...**  nebo **přepnout na kontejnery Linuxu...** .
 
 ## <a name="unable-to-start-debugging"></a>Nelze spustit ladění
 

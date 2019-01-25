@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe692f7f9cc00fa90d15ccf43b2526becc24b24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821189"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864420"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Vytváření vlastních zobrazení nativních objektů v ladicím programu
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* framework přizpůsobí tak, jak zobrazit nativní typy v
 
 Nahradí Natvis *autoexp.dat –* soubor v dřívějších verzích sady Visual Studio pomocí syntaxe jazyka XML, lepší diagnostiku, správu verzí a podpoře více souborů.  
 
-Natvis nefunguje pro:
-
-- Projekty C++ Windows desktop s **typ ladicího programu** nastavena na **smíšený** pod **vlastnosti konfigurace** > **ladění**. 
-- [Ladění ve smíšeném režimu](how-to-debug-in-mixed-mode.md) pro desktopové aplikace Windows na spravovaný režim kompatibility (**nástroje** > **možnosti** > **ladění**  >  **Obecné** > **použít spravovaný režim kompatibility**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Vizualizace Natvis
 

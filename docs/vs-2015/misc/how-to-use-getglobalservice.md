@@ -1,28 +1,23 @@
 ---
-title: 'Postupy: použití GetGlobalService | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použít GetGlobalService | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, GetGlobalService
 ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
-manager: douge
-ms.openlocfilehash: 5ce0d5657fa65cd727da2b97b3dd24735a81937a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0161b3e44b44567166a337d94101778074561e80
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276120"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833750"
 ---
-# <a name="how-to-use-getglobalservice"></a>Postupy: použití GetGlobalService
-V některých případech budete muset získat službu z panelu nástrojů nebo ovládací prvek kontejneru, který nebyl byl umístěn, jinak byl umístěn u poskytovatele služeb, které neví o službu, kterou chcete. Můžete například chtít zapisovat do protokolu aktivit z v rámci ovládacího prvku. Další informace o těchto a dalších scénářů najdete v tématu [postupy: řešení potíží s služby](../extensibility/how-to-troubleshoot-services.md).  
+# <a name="how-to-use-getglobalservice"></a>Postupy: Use GetGlobalService
+V některých případech budete muset získat službu z panelu nástrojů nebo ovládací prvek kontejneru, který nebyl byl umístěn, jinak byl umístěn u poskytovatele služeb, které neví o službu, kterou chcete. Můžete například chtít zapisovat do protokolu aktivit z v rámci ovládacího prvku. Další informace o těchto a dalších scénářů najdete v tématu [jak: Odstraňování potíží se službami](../extensibility/how-to-troubleshoot-services.md).  
   
  Můžete získat většinu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] služby voláním statické <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metody.  
   
@@ -43,9 +38,9 @@ V některých případech budete muset získat službu z panelu nástrojů nebo 
      [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
      [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  
   
-     Tento kód získá služby SVsActivityLog a přetypování na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> rozhraní, které lze použít k zápisu do protokolu aktivit. Příklad najdete v tématu [postupy: použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
+     Tento kód získá služby SVsActivityLog a přetypování na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> rozhraní, které lze použít k zápisu do protokolu aktivit. Příklad najdete v tématu [jak: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: odstraňování potíží se službami](../extensibility/how-to-troubleshoot-services.md)   
+ [Postupy: Odstraňování potíží se službami](../extensibility/how-to-troubleshoot-services.md)   
  [Používání a poskytování služeb](../extensibility/using-and-providing-services.md)   
  [Základy služeb](../extensibility/internals/service-essentials.md)

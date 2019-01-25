@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b2709426cca892e60d864fa62695b2eef8c776b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868323"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874039"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Vytváření definic webu pro službu SharePoint
   Do projektu definice webu služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umožňuje vytvářet *definice webu*, který slouží jako základ pro nový web Sharepointu. Tyto definice nejen určit vzhled a chování webu služby SharePoint, ale jeho výchozí obsah a funkce. V definici můžete umístit předkonfigurované seznamy, typy obsahu, přijímače událostí, obrázky a další položky. SharePoint obsahuje několik definic webu například BLOGU, třeba. Při vytváření webu na základě definice webu BLOGU webu obsahuje seznamy, webové části a další položky, které vyžaduje blogovací web.  
@@ -36,8 +36,8 @@ ms.locfileid: "53868323"
   
 |Název souboru|Popis|  
 |---------------|-----------------|  
-|*Default.aspx*|ASPX výchozí domovskou stránku pro nový web služby SharePoint.|  
-|*Onet.XML*|Určuje konfiguraci nového webu, součástí definice šablony webu a výchozí chování. Tato nastavení můžou patřit atributy jako typy obsahu, které jsou povolené, výchozí zobrazení seznamu souborů šablon dokumentů a webové části, které jsou součástí lokality. Ve výchozím nastavení `Modules` části jsou uvedené soubory, které chcete přidat do webu služby SharePoint a jak jsou sady nakonfigurované.|  
+|*default.aspx*|ASPX výchozí domovskou stránku pro nový web služby SharePoint.|  
+|*onet.xml*|Určuje konfiguraci nového webu, součástí definice šablony webu a výchozí chování. Tato nastavení můžou patřit atributy jako typy obsahu, které jsou povolené, výchozí zobrazení seznamu souborů šablon dokumentů a webové části, které jsou součástí lokality. Ve výchozím nastavení `Modules` části jsou uvedené soubory, které chcete přidat do webu služby SharePoint a jak jsou sady nakonfigurované.|  
 |*webtemp_\<SiteDefinitionName > .xml*|Určuje definici konfigurace lokality, které se zobrazí v **výběr šablony** část **novému Sharepointovému webu** stránky.|  
   
  Ve výchozím nastavení, všechny definice lokality jsou uloženy v  *\<jednotky: > \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* složky. Každá definice lokality má své vlastní podsložce.  

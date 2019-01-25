@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], content controls
 - DropDownListContentControl, binding items to a custom XML part
 - DatePickerContentControl, binding to a custom XML part
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 123282862f8ab6e7400f14a1aa07942885257e17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899649"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864732"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Průvodce: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML
   Tento návod ukazuje, jak svázat ovládací prvky obsahu v přizpůsobení na úrovni dokumentu pro Word XML data, která je uložena v dokumentu.  
@@ -52,7 +52,7 @@ ms.locfileid: "53899649"
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Aplikace Microsoft Word.  
+-   Microsoft Word.  
   
 ## <a name="create-a-new-word-document-project"></a>Vytvoření nového projektu dokumentu aplikace Word  
  Vytvořte dokument aplikace Word, který budete používat v tomto návodu.  
@@ -277,7 +277,7 @@ ms.locfileid: "53899649"
     |-|-|  
     |**Jméno zaměstnance**|**Karina Leal**|  
     |**Datum přijetí**|**1. dubna 1999**|  
-    |**Název**|**Správce**|  
+    |**Název**|**Manager**|  
   
 3.  Vyberte buňku napravo od **jméno zaměstnance** buňky a zadejte jiný název.  
   

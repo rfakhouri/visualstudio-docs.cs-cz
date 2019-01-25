@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Použití IntelliTrace | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Pomocí IntelliTrace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760732"
 ---
-# <a name="walkthrough-using-intellitrace"></a>Postup: Použití IntelliTrace
+# <a name="walkthrough-using-intellitrace"></a>Průvodce: Používání IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nástroj IntelliTrace můžete použít ke shromažďování informací o určité události a kategorie událostí, nebo o voláních jednotlivé funkce kromě události. Následující postupy ukazují, jak to udělat.  
@@ -106,9 +101,3 @@ Nástroj IntelliTrace můžete použít ke shromažďování informací o určit
     >  Uvidíte, že některá volání jsou neaktivní. Je to proto, že nástroj IntelliTrace nezaznamenal data z odpovídajících modulů. Pro zobrazení těchto dat, nástroj IntelliTrace na shromažďování dat z těchto modulů. Informace o zadávání moduly, naleznete v tématu [funkce IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Další kroky
-
-
-
-
-
-

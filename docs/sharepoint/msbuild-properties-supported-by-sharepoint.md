@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, MSBuild properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cb56698d01739f632f56da061f447ace1153212
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 242412c5cf29a39294c7f223d5ebf34b56b6ea82
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900961"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866750"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Vlastnosti nástroje MsBuild podporované službou SharePoint
   Žádné [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] vlastnosti definované v souboru Microsoft.VisualStudio.SharePoint.targets, soubor projektu nebo uživatelský soubor projektu je možné v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektů služby SharePoint. Kromě společné [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] vlastnosti zadaný v projektu služby SharePoint definuje další vlastnosti, které jsou specifické pro projekty SharePoint.  
@@ -41,7 +41,7 @@ ms.locfileid: "53900961"
 |BasePackagePath|Řetězec, který představuje složku, ve kterém je umístí balíček. Tato hodnota používá výstupního adresáře projektu, například Bin\Debug.|  
 |PackageExtension|Řetězec, který představuje příponu názvu souboru připojit k balíčku. Výchozí hodnota je soubor wsp.|  
 |AssemblyDeploymentTarget|Řetězec, který představuje umístění, které se nasadí sestavení projektu na serveru SharePoint. Jeho hodnota je GlobalAssemblyCache (výchozí) nebo webovou aplikaci. Tuto vlastnost můžete nastavit také v okně Vlastnosti.|  
-|Packagewithvalidation Msbuildu|Logická hodnota určující, zda ověření je provedeno před balení. Tato vlastnost umožňuje ignorovat chyby ověřování při vytváření balíčků.|  
+|PackageWithValidation|Logická hodnota určující, zda ověření je provedeno před balení. Tato vlastnost umožňuje ignorovat chyby ověřování při vytváření balíčků.|  
 |ValidatePackageDependsOn|Řetězec, který definuje další cílů ke spuštění před cílem ValidatePackage.|  
 |TokenReplacementFileExensions|Řetězec, který definuje soubory, které mají jejich tokeny nahrazena v průběhu balení.|  
   

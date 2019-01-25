@@ -10,17 +10,17 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 - multiple column data binding [Office development in Visual Studio]
 - data binding [Office development in Visual Studio], multiple columns
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5da24d43173a0124849855bf9184f3a823230d3a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964049"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865005"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Průvodce: Rozšířené datové vazby v projektech na úrovni dokumentu
   Tento návod ukazuje základní informace o rozšířené datové vazby v projektech na úrovni dokumentu. Více buněk v listu aplikace Microsoft Office Excel můžete vázat na pole v databázi Northwind SQL serveru.  
@@ -180,7 +180,7 @@ ms.locfileid: "53964049"
   
    |EmployeeID|LastName|FirstName|Název|  
    |----------------|--------------|---------------|-----------|  
-   |10|Šmídová|Šu|Prodejní manažer|  
+   |10|Ito|Šu|Prodejní manažer|  
   
 ### <a name="to-delete-rows"></a>Chcete-li odstranit řádky  
   

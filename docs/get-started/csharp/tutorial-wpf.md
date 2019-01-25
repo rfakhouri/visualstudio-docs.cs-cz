@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: af7126910971cdf9ce583c57c1f88bb56a87f744
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 895e71616ad992fb1a25bd5f2b5e44c1438c100a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204408"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834632"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Kurz: Vytvoření jednoduché aplikace sC#
 
@@ -274,5 +274,5 @@ Blahopřejeme k dokončení tohoto kurzu! Můžete najít *.exe* vytvořeným v 
 
 ## <a name="see-also"></a>Viz také:
 
-- [Co je nového v sadě Visual Studio 2017](../../ide/whats-new-in-visual-studio.md)
+- [Co je nového v sadě Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Tipy pro vyšší produktivitu](../../ide/productivity-tips-for-visual-studio.md)

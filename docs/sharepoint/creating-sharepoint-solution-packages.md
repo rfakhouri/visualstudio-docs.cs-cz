@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 - packages [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059bf8068ad3a14d01f0a8167900563eebdff215
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966661"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867985"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Vytváření balíčků řešení služby SharePoint
   Pomocí návrháře balíčků, můžete vytvořit a přizpůsobit balíčky pro nasazení. Například můžete přidat položky Sharepointového projektu a funkce, obnovit server služby IIS, nastavit obory aktivace funkce a určit funkce závislostí. Návrhář také vygeneruje manifest, soubor XML, který popisuje každý balíček.  
@@ -36,7 +36,7 @@ ms.locfileid: "53966661"
 |Vlastnost návrháře balíčku|Popis výchozí nastavení|  
 |-------------------------------|------------------------------------|  
 |Název|Povinný parametr. Výchozí název balíčku je nastavený na *ProjectName*.|  
-|Resetování webového serveru|Volitelné. Vyberte, pokud chcete restartovat server po *.wsp* soubor je nainstalován na serveru SharePoint.|  
+|Reset WebServer|Volitelné. Vyberte, pokud chcete restartovat server po *.wsp* soubor je nainstalován na serveru SharePoint.|  
 |Typ serveru nasazení|Povinný parametr. Ve výchozím oboru nastavena na ApplicationServer.<br /><br /> ApplicationServer: Popisuje, který je hostitelem služby server.<br /><br /> WebFrontEnd: Popisuje server, který je hostitelem webové stránky.|  
 |Položky v řešení|Všechny položky Sharepointového projektu a funkce, které lze přidat do balíčku.|  
 |Položky v balíčku|Volitelné. Všechny položky služby SharePoint a funkce, které chcete nasadit do balíčku.|  

@@ -1,14 +1,9 @@
 ---
 title: 'CA1903: Použijte pouze API z cíleného rozhraní | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,17 +15,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f0b2849c6ac10be6663628ca1964eaa490e0d78
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759900"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Použijte pouze API z cílového rozhraní .NET Framework
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Používejte jen rozhraní API z cílové architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1903: použijte pouze API z cíleného rozhraní](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1903: Použijte pouze API z cíleného rozhraní](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -39,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1903:
 |Kategorie|Microsoft.Portability|  
 |Narušující změna|Zásadní - při vyvolání s podpisem externě viditelného členu nebo typu.<br /><br /> Pevné - při vyvolání v těle metody.|  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Člen nebo typ používá člen nebo typ, který byl zaveden v aktualizaci service pack, která není součástí cílové rozhraní projektu.  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -76,4 +71,3 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1903:
 ## <a name="see-also"></a>Viz také  
  [Upozornění přenositelnosti](../code-quality/portability-warnings.md)   
  [Cílení na konkrétní verzi rozhraní .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
-

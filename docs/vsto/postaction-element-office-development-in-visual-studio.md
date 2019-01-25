@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <postAction> element
 - <postAction> element
 - postAction element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1886a1c0be486cfae8e85d0accd0fb42dc5d5353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958797"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867105"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; – element (vývoj pro Office v sadě Visual Studio)
   `postAction` Elementu `vstav3` obsahuje obor názvů `entrypoint` elementy a všechny `postActionData` prvky, které souvisejí s akcemi po nasazení, které se spustí po dokončení instalace řešení pro systém Office.
@@ -42,10 +42,10 @@ ms.locfileid: "53958797"
 
  `postAction` obsahuje následující prvky.
 
-### <a name="entrypoint"></a>Vstupní bod
+### <a name="entrypoint"></a>entryPoint
  Volitelné. Role `entryPoint` prvek `vstav3` obor názvů je definovaný v [ &#60;entryPoints&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
-### <a name="postactiondata"></a>postactiondata –
+### <a name="postactiondata"></a>postActionData
  Volitelné. Role `postActionData` prvek `vstav3` obor názvů je definovaný v [ &#60;postactiondata –&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Příklad akci po nasazení

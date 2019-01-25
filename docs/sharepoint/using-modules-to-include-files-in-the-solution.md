@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment modules
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9d8cf0da022c038c0e15e6b00f0bea0cdc3cef4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe8572ea5ac6f2c100d203063dd43b02c78749b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921546"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864186"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Vložení souborů do řešení pomocí modulů
   Může nastat situace, kdy můžete chtít nasadit soubory k Sharepointovému serveru bez ohledu na jejich typ souboru, jako je například nové stránky předlohy. K tomuto účelu můžete použít *moduly* (Nezaměňovat s [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduly kódu). Moduly jsou kontejnery pro soubory v řešení služby SharePoint. Když se řešení nasadí, soubory v modulu se zkopírují do zadaných složek na serveru SharePoint.  
@@ -52,7 +52,7 @@ ms.locfileid: "53921546"
 |------------------|-----------------|  
 |Elementy|Obsahuje všechny prvky definované v modulu.|  
 |Modul|Element modulu obsahuje atribut jednu *název*, který určuje název modulu ve formátu `<Module Name="Module1">`.<br /><br /> Všimněte si, že pokud změníte název modulu (nebo jeho *název složky* vlastnost), je nutné ručně aktualizovat název v elementu modulu.<br /><br /> Pokud zadáte podadresář pro soubory v elementu modulu [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) se automaticky vytvoří odpovídající adresářovou strukturu pro ně.|  
-|Soubor|Prvek souboru má dva parametry *cesta* a *Url*.<br /><br /> -Path: Název a umístění souboru v řešení služby SharePoint. Formát je, `Path="Module1\Sample.txt"`.<br /><br /> – Adresa Url: Umístění, kam se soubor nasadí na SharePoint server. Formát je, `Url="Module1/Sample.txt"`.<br /><br /> -Typu: Volitelný atribut, který má dvě nastavení: *GhostableInLibrary* a *Ghostable*. Formát je, `Type="GhostableInLibrary"`. Určení *GhostableInLibrary* znamená, že soubor bude přidán do knihovny dokumentů sharepointu spolu s položku seznamu vyvíjený soubor, když se přidá do knihovny. Určení *Ghostable* způsobí, že soubor, který má být přidán do služby SharePoint mimo knihovnu dokumentů.|  
+|Soubor|Prvek souboru má dva parametry *cesta* a *Url*.<br /><br /> -Path: Název a umístění souboru v řešení služby SharePoint. Formát je, `Path="Module1\Sample.txt"`.<br /><br /> - Url: Umístění, kam se soubor nasadí na SharePoint server. Formát je, `Url="Module1/Sample.txt"`.<br /><br /> -Typu: Volitelný atribut, který má dvě nastavení: *GhostableInLibrary* a *Ghostable*. Formát je, `Type="GhostableInLibrary"`. Určení *GhostableInLibrary* znamená, že soubor bude přidán do knihovny dokumentů sharepointu spolu s položku seznamu vyvíjený soubor, když se přidá do knihovny. Určení *Ghostable* způsobí, že soubor, který má být přidán do služby SharePoint mimo knihovnu dokumentů.|  
   
  Každý soubor, který chcete nasadit vyžaduje samostatnou `<File>` elementu vstupu v *Elements.xml*.  
   

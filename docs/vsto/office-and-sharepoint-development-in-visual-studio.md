@@ -16,17 +16,17 @@ helpviewer_keywords:
 - programming [Office development in Visual Studio]
 - VSTO, see Office development in Visual Studio
 - Office, development with Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76043da9815becd6b5cb25a2117b4ff746d6d242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9757593040ca440fdaafc59409b0f4eb68846248
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898645"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872837"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Vývoj pro Office a SharePoint v sadě Visual Studio
   Můžete rozšířit vytvořením jednoduché aplikace Microsoft Office a SharePoint nebo doplněk, že uživatelé stahovat z [Office Store](https://store.office.com/) nebo organizace katalogu nebo vytvořením řešení založené na rozhraní .NET Framework, které uživatelé nainstalovat počítač.  

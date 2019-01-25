@@ -3,10 +3,8 @@ title: Přizpůsobit způsob, jak vytvořit titulky pro ovládací prvky vázan�
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,13 @@ ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 38d2e1241c3b16e5bb5cc66531515688d75d52d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065384"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834959"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +57,7 @@ Při přetažení položky z [okna zdroje dat](http://msdn.microsoft.com/library
 > [!CAUTION]
 >  Měli byste být opatrní při teď zrovna nic nedělá v editoru registru. Registr zálohovali začnete upravovat. Pokud Editor registru používán správně, můžete způsobit vážné problémy, které mohou vyžadovat přeinstalaci operačního systému. Microsoft nezaručuje, že lze vyřešit problémy způsobující pomocí Editoru registru nesprávně. Pomocí Editoru registru na vlastní nebezpečí.
 >
->  Obsahuje pokyny pro zálohování, úpravy a obnovení registru následujícím článku znalostní báze: [Popis registru Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+>  Následujícím článku znalostní báze obsahuje pokyny pro zálohování, úpravy a obnovení registru: [Popis registru Windows Microsoft](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Chcete-li změnit inteligentní titulků chování okna zdroje dat
 

@@ -1,14 +1,9 @@
 ---
 title: Používání tříd Assert | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6775f7ea22bab5d210eb4e2993e81bd4a9587560
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9b44932d9c9cd1defb691527fea40c4cf39d2fe5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208309"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834619"
 ---
 # <a name="using-the-assert-classes"></a>Používání tříd Assert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,4 @@ Používání tříd Assert oboru názvů UnitTestingFramework ověření konkr�
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [Vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
-
-
-
+ [Vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

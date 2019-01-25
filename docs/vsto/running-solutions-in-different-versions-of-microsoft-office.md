@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, multiple Office versions
 - Office solutions [Office development in Visual Studio]
 - multiple Office versions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66199dd8bd5462eff40a0b8fdbdbbe8cbbc13234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b21acc0122a3cdbbcfe208c5e0f9886bb05d116
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843395"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875976"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Spouštění řešení v různých verzích systému Microsoft Office
     
@@ -46,8 +46,8 @@ ms.locfileid: "53843395"
 |Edice sady Visual Studio používá k vytvoření řešení|Verze systému Office cílí šablony projektu|Verze systému Office, který umožňuje spouštět řešení|Požadované modulu runtime v počítači koncového uživatele|Požadovaná verze rozhraní .NET Framework v počítači koncového uživatele|  
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|  
 |Visual Studio 2008 Professional<br /><br /> or<br /><br /> Visual Studio Team System 2008|2007 – systém Microsoft Office|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> 2007 – systém Microsoft Office|Visual Studio 2010 Tools for Office Runtime<sup>1</sup><br /><br /> or<br /><br /> Visual Studio Tools pro systém Microsoft Office (verze 3.0 Runtime)|.NET Framework 3.5|  
-|Jeden z následujících edicí sady Visual Studio 2005 s VSTO 2005 SE<sup>2</sup> nainstalovaný:<br /><br /> – Visual Studio 2005 Tools for Office<br />– Visual Studio Team System 2005<br />– Visual Studio 2005 Professional|2007 – systém Microsoft Office|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32bitová verze pouze<sup>3</sup>)<br /><br /> 2007 – systém Microsoft Office|Visual Studio 2005 Tools for Office Druhé vydání modulu Runtime|Rozhraní .NET framework 2.0, rozhraní .NET Framework 3.0 nebo .NET Framework 3.5|  
-|Některé z následujících edicí sady Visual Studio:<br /><br /> – Visual Studio 2008 Professional<br />– Visual Studio Team System 2008<br />– Visual Studio 2005 Tools for Office (s nebo bez něj VSTO 2005 SE<sup>2</sup> nainstalovaná)<br />– Visual Studio Team System 2005 (s nebo bez něj VSTO 2005 SE<sup>2</sup> nainstalovaná)<br />– 2005 visual Studio Professional with VSTO 2005 SE<sup>2</sup> nainstalovaná|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32bitová verze pouze<sup>3</sup>)<br /><br /> 2007 – systém Microsoft Office<br /><br /> Microsoft Office 2003|Visual Studio 2005 Tools for Office Druhé vydání modulu Runtime|Rozhraní .NET framework 2.0, rozhraní .NET Framework 3.0 nebo .NET Framework 3.5|  
+|Jeden z následujících edicí sady Visual Studio 2005 s VSTO 2005 SE<sup>2</sup> nainstalovaný:<br /><br /> – Visual Studio 2005 Tools for Office<br />– Visual Studio Team System 2005<br />-   Visual Studio 2005 Professional|2007 – systém Microsoft Office|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32bitová verze pouze<sup>3</sup>)<br /><br /> 2007 – systém Microsoft Office|Visual Studio 2005 Tools for Office Druhé vydání modulu Runtime|Rozhraní .NET framework 2.0, rozhraní .NET Framework 3.0 nebo .NET Framework 3.5|  
+|Některé z následujících edicí sady Visual Studio:<br /><br /> -   Visual Studio 2008 Professional<br />-   Visual Studio Team System 2008<br />– Visual Studio 2005 Tools for Office (s nebo bez něj VSTO 2005 SE<sup>2</sup> nainstalovaná)<br />– Visual Studio Team System 2005 (s nebo bez něj VSTO 2005 SE<sup>2</sup> nainstalovaná)<br />– 2005 visual Studio Professional with VSTO 2005 SE<sup>2</sup> nainstalovaná|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32bitová verze pouze<sup>3</sup>)<br /><br /> 2007 – systém Microsoft Office<br /><br /> Microsoft Office 2003|Visual Studio 2005 Tools for Office Druhé vydání modulu Runtime|Rozhraní .NET framework 2.0, rozhraní .NET Framework 3.0 nebo .NET Framework 3.5|  
   
  1. [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikace zahrnují Visual Studio 2010 Tools for Office runtime. Proto tyto aplikace vždycky používat Visual Studio 2010 Tools for Office runtime spíše než Visual Studio Tools pro systém Microsoft Office (verze 3.0 Runtime) v tomto scénáři. Aplikace v systému Microsoft Office 2007, můžete použít Visual Studio 2010 Tools pro systém Office Runtime nebo Visual Studio Tools pro Microsoft Office system (verze 3.0 Runtime).  
   

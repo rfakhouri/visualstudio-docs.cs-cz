@@ -17,15 +17,15 @@ helpviewer_keywords:
 - extensibility interfaces [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52da4aa630ef5cf6357b38aeb79ac78f882077e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a41a60b13601240910c78db5101e6b683f8bc00d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866657"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863315"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní
   Vývojářské nástroje balíku Office v sadě Visual Studio poskytuje třídy a návrhářů, které zpracovávají mnoho podrobností implementace při použití k vytvoření vlastních podoken úloh, vlastních nastavení pásu karet a oblastí formulářů aplikace Outlook v doplňku VSTO. Ale můžete taky implementovat *rozšiřitelnost rozhraní* pro každou funkci sami, pokud máte zvláštní požadavky.  

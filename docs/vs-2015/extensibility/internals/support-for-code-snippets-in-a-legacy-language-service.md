@@ -1,14 +1,9 @@
 ---
 title: Podpora pro fragmenty kódu ve službě starší verze jazyka | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
 - code snippets, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf26d48c541806a1dd65a0ffb4a8e3e974b11db4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0ca68c9d95f0b2b511ece0ecafbd9bdcacf328d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759818"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Podpora pro fragmenty kódu ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
   
  Fragment kódu je vložen do režimu úpravy zvláštní pole fragment kódu pro navigaci pomocí klávesy TAB. Pole může podporovat stylu funkce IntelliSense rozevírací nabídky. Uživatel potvrdí fragmentu kódu ke zdrojovému souboru tak, že zadáte ENTER nebo ESC klíč. Další informace o fragmenty kódu, najdete v tématu [fragmenty kódu](../../ide/code-snippets.md).  
   
- Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [návod: implementace fragmentů kódu](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [názorný postup: Implementace fragmentů kódu](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
 >  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
@@ -55,7 +50,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 ### <a name="installing-the-snippet-files"></a>Instalují se soubory fragmentu kódu  
  Všechny fragmenty kódu pro jazyk se ukládají jako šablony v souboru XML, obvykle jedna šablona fragmentu na soubor. Informace o schématu XML pro šablony fragmentu kódu, naleznete v tématu [fragmenty kódu – odkaz schématu](../../ide/code-snippets-schema-reference.md). Každá šablona fragmentu kódu se určuje podle ID jazyka. Tento jazyk ID je uvedený v registru a přejde do `Language` atribut \<kód > značky v šabloně.  
   
- Jsou obvykle dvou umístěních, kde jsou uložené soubory šablony fragmentu kódu: 1) Pokud byl nainstalován jazyk a (2) ve složce daného uživatele. Tato místa jsou přidány do registru tak, která sadě Visual Studio **Správce fragmentů kódů** můžete najít fragmenty kódu. Složky uživatele je, kde jsou uložené fragmenty vytvořených uživatelem.  
+ Jsou obvykle dvou umístěních, kde jsou uložené soubory šablony fragmentu kódu: (1), kam se nainstaloval svůj jazyk a 2) ve složce daného uživatele. Tato místa jsou přidány do registru tak, která sadě Visual Studio **Správce fragmentů kódů** můžete najít fragmenty kódu. Složky uživatele je, kde jsou uložené fragmenty vytvořených uživatelem.  
   
  Typické složku rozložení pro soubory šablon nainstalovaných fragment kódu vypadá takto: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
@@ -92,11 +87,11 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|LCID %|ID národního prostředí.|  
-|InstallRoot %|Kořenová složka instalace pro Visual Studio, například C:\Program Files\Microsoft Visual Studio 8.|  
-|ProjDir %|Složka obsahující aktuální projekt.|  
+|%LCID%|ID národního prostředí.|  
+|%InstallRoot%|Kořenová složka instalace pro Visual Studio, například C:\Program Files\Microsoft Visual Studio 8.|  
+|%ProjDir%|Složka obsahující aktuální projekt.|  
 |ProjItem %|Složka obsahující aktuální položky projektu.|  
-|TestDocs %|Složky ve složce nastavení uživatele, například C:\Documents and nastavení\\ *[username]* Documents\Visual Studio\8.|  
+|%TestDocs%|Složky ve složce nastavení uživatele, například C:\Documents and nastavení\\ *[username]* Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Povolení fragmenty kódu pro vaši službu jazyka  
  Fragmenty kódu pro vaši službu jazyka můžete povolit přidáním <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atribut vašeho balíčku VSPackage (naleznete v tématu [registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service1.md) podrobnosti). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> a <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametry jsou volitelné, ale měli byste zahrnout `SearchPaths` s názvem parametru, aby bylo možné informovat **Správce fragmentů kódů** umístění vašeho fragmenty kódu.  
@@ -122,7 +117,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Vložení fragmentu kódu s použitím příkazu nabídky  
  Pomocí příkazu nabídky zobrazit v prohlížeči fragment, přidání příkazu nabídky a pak zavolat <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metodu <xref:Microsoft.VisualStudio.Package.ExpansionProvider> rozhraní v reakci na příkaz nabídky.  
   
-1.  Přidejte do souboru .vsct příkazu a tlačítko. Proto v postupu můžete najít [návod: vytvoření nabídky pomocí příkazu Using Visual Studio balíček šablony](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1.  Přidejte do souboru .vsct příkazu a tlačítko. Proto v postupu můžete najít [názorný postup: Vytvoření příkazu nabídky s použitím šablony sady Visual Studio balíček](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2.  Odvodit třídu z <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy a přepsat <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> indikace podporu pro nový příkaz nabídky. Tento příklad povolí vždy příkazu nabídky.  
   
@@ -227,7 +222,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Vložení fragmentu kódu pomocí zástupce  
  Implementace zástupce seznamu dokončení je mnohem složitější než implementace příkazu nabídky. Zkratky fragmentu kódu je nutné nejprve přidat do seznamu doplňování technologie IntelliSense aplikace word. Potom musí rozpoznat, kdy místní název fragmentu kódu byla vložena jako výsledek dokončení. Nakonec musíte získat název fragmentu kódu a cesty pomocí názvu odkazu a předejte tyto informace <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodu na <xref:Microsoft.VisualStudio.Package.ExpansionProvider> metody.  
   
- Chcete-li přidat zástupce fragment kódu pro seznam pro doplňování slov, přidejte je do <xref:Microsoft.VisualStudio.Package.Declarations> objektu ve vaší <xref:Microsoft.VisualStudio.Package.AuthoringScope> třídy. Musíte zkontrolovat, že identifikujete místní jako název fragmentu kódu. Příklad najdete v tématu [návod: získání seznam z nainstalované fragmenty kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Chcete-li přidat zástupce fragment kódu pro seznam pro doplňování slov, přidejte je do <xref:Microsoft.VisualStudio.Package.Declarations> objektu ve vaší <xref:Microsoft.VisualStudio.Package.AuthoringScope> třídy. Musíte zkontrolovat, že identifikujete místní jako název fragmentu kódu. Příklad najdete v tématu [názorný postup: Seznam instaluje fragmenty kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
  Vložení zástupce fragmentu kódu, můžete zjistit <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> metodu <xref:Microsoft.VisualStudio.Package.Declarations> třídy. Protože název fragmentu kódu již byl vložen do zdrojového souboru, musí být odebrána po vložení rozšíření. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Metoda přijímá rozsahu, který popisuje bodu vložení fragmentu; rozpětí zahrnuje název celý fragment kódu ve zdrojovém souboru, tento název se nahradí fragmentem.  
   
@@ -343,7 +338,7 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   Další informace o získání seznamu nainstalovaných fragmentů kódu pro vaši službu jazyka najdete v tématu [návod: získání seznam z nainstalované fragmenty kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Další informace o získání seznamu nainstalovaných fragmentů kódu pro vaši službu jazyka najdete v tématu [názorný postup: Seznam instaluje fragmenty kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implementující třída ExpansionFunction  
  Rozšíření funkce je pojmenované funkce, která je součástí šablony fragmentu kódu a vrátí jednu nebo více hodnot, které se mají umístit na pole. Za účelem podpory funkcí rozšíření ve vaší službě jazyka, musí být odvozen ze třídy <xref:Microsoft.VisualStudio.Package.ExpansionFunction> třídy a implementovat <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> metody. Pak je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> metoda ve <xref:Microsoft.VisualStudio.Package.LanguageService> třídy k vrácení nové instance vaší verzi <xref:Microsoft.VisualStudio.Package.ExpansionFunction> třídy pro každou funkci rozšíření, které podporujete. Pokud podporujete seznam možných hodnot z funkce rozšíření, musí také přepsat <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> metodu <xref:Microsoft.VisualStudio.Package.ExpansionFunction> třídy se seznam těchto hodnot.  
@@ -401,4 +396,3 @@ namespace TestLanguagePackage
  [Registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Fragmenty kódu](../../ide/code-snippets.md)   
  [Návod: Získání seznamu nainstalovaných fragmentů kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
-

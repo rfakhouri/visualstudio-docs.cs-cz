@@ -1,14 +1,9 @@
 ---
 title: Zobrazení doby života objektu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -21,20 +16,20 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cc2e17084809e691838ea0e681e3d2b766d0769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756434"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833684"
 ---
 # <a name="object-lifetime-view"></a>Zobrazení doby života objektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zobrazení doby života objektu je k dispozici, když **také shromažďovat data o životním cyklu objektu .NET** proběhne na stránkách vlastností relace výkonu.  
   
- Ze systému uvolňování paměti [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] spravuje přidělování a uvolňování paměti pro vaši aplikaci. Za účelem optimalizace výkonu systému uvolňování paměti spravované haldy je rozdělen na tři generace: 0, 1 a 2. Uvolňování paměti modulu runtime uloží nové objekty 0. generace. Objekty, které byly zachovány při kolekce jsou povýšeny a uloženy v generace 1 a 2.  
+ Ze systému uvolňování paměti [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] spravuje přidělování a uvolňování paměti pro vaši aplikaci. Za účelem optimalizace výkonu systému uvolňování paměti spravované haldy rozdělen na tři generace: 0, 1 a 2. Uvolňování paměti modulu runtime uloží nové objekty 0. generace. Objekty, které byly zachovány při kolekce jsou povýšeny a uloženy v generace 1 a 2.  
   
  Získá systém uvolňování paměti podle rušení přidělení celé generace objektů. Pro objekty, které byly vytvořeny profilované aplikace zobrazení doba života objektu zobrazí počet a velikost objektů a generování, ve kterém se uvolní.  
   
@@ -81,6 +76,3 @@ Zobrazení doby života objektu je k dispozici, když **také shromažďovat dat
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)
-
-
-

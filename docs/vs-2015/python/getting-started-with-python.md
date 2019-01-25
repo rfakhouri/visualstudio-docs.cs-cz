@@ -1,25 +1,20 @@
 ---
 title: Začínáme s Pythonem | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275285"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833940"
 ---
 # <a name="getting-started-with-python"></a>Začínáme s Pythonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ K instalaci Pythonu, sama, navštivte [ https://www.python.org/download/ ](https
   
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-Nástroje Pythonu pro Visual Studio, které si můžete nainstalovat z [visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs), poskytují následující funkce:  
+Nástroje Pythonu pro Visual Studio, které si můžete nainstalovat z [visualstudio.com](https://www.visualstudio.com/explore/python-vs), poskytují následující funkce:  
   
 - Podpora pro více interpretů: různé verze CPython, IronPython a IPython  
 - Systém projektu, který implicitně vybere strukturu složek kódu v Pythonu a také umožňuje explicitní kontrolu, abyste mohli identifikovat kód aplikace, kód testu, webové stránky, JavaScript, skripty sestavení a tak dále.  
@@ -98,10 +93,9 @@ Doporučujeme, abyste získání IPython a vědecké výpočetní knihovny (matp
   
 ## <a name="see-also"></a>Viz také  
 
-[Začínáme s PTVS: nastavení Visual Studia](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Začínáme s PTVS: začít kódovat (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[Začínáme s PTVS: úpravy kódu](../python/getting-started-with-ptvs-editing-code.md) 
- [Začínáme s PTVS: ladění](../python/getting-started-with-ptvs-debugging.md)
-[Začínáme s PTVS: interaktivní Python](../python/getting-started-with-ptvs-interactive-python.md)
-[Začínáme Práce s PTVS: vytváření webu v Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[Začínáme s PTVS: Nastavení sady Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[Začínáme s PTVS: Začínáme kódovat (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[Začínáme s PTVS: Úprava kódu](../python/getting-started-with-ptvs-editing-code.md)
+[Začínáme s PTVS: Ladění](../python/getting-started-with-ptvs-debugging.md)
+[Začínáme s PTVS: Interaktivní Python](../python/getting-started-with-ptvs-interactive-python.md)
+[Začínáme s PTVS: Vytvoření webu v Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

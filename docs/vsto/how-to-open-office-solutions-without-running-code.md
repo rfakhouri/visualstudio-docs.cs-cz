@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c6d80a6d2d9c9ee63d13eca6bcb8a479ea2aad
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930097"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867748"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Postupy: Otevření řešení pro systém Office bez spuštění kódu
   Řešení Microsoft Office vytvořené pomocí rozšíření spravovaného kódu spustí i v případě, že nastavení zabezpečení aplikace Office koncového uživatele je nastavena na hodnotu Vysoká. Je to proto, že spravuje zabezpečení kódu .NET sestavení rozhraní Microsoft .NET Framework, ne společnost Microsoft Office.  

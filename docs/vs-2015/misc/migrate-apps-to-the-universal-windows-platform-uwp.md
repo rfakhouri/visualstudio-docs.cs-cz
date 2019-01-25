@@ -1,25 +1,20 @@
 ---
 title: Migrace aplikací na platformu Universal Windows (UPW) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766369"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrace aplikací do Univerzální platformy Windows (UWP)
 Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pro Windows Store 8.1, aplikace pro Windows Phone 8.1 nebo Windows Universal aplikací vytvořených pomocí sady Visual Studio 2015 RC, tak, aby bylo možné s Visual Studio 2015 RTM. (Pokud máte projekt aplikace pro Windows i Windows Phone projektu univerzální aplikace Windows 8.1, musíte provést kroky k migraci každého projektu.)  
@@ -337,7 +332,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 2. Je potřeba aktualizovat \<balíčku > element s nová schémata podle vaší existující typ projektu. Nejprve odeberte následující schémata závislosti na tom, jestli máte projekt Windows Store nebo Windows Phone.  
   
-    **STARÉ pro projekt Windows Store:** vaše \<balíčku > element bude vypadat podobně jako tento.  
+    **STARÝ pro projekt Windows Store:** Vaše \<balíčku > element bude vypadat podobně jako tento.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
    ```  
   
-    **STARÉ pro projekt Windows Phone:** vaše \<balíčku > element bude vypadat podobně jako tento.  
+    **STARÝ pro projekt Windows Phone:** Vaše \<balíčku > element bude vypadat podobně jako tento.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **NOVÉ pro univerzální platformu Windows:** přidat schémata níže na vaše \<balíčku > element. Odeberte všechny přidružené obor názvů předpony identifikátoru z elementů schémat, které jste právě odebrali. Umožňuje aktualizovat vlastnost IgnorableNamespaces k: uap sady Management Pack. Vaše nová \<balíčku > prvek by měl vypadat podobně jako tento.  
+    **Nový pro Universal Windows Platform:** Přidání schémat níže na vaše \<balíčku > element. Odeberte všechny přidružené obor názvů předpony identifikátoru z elementů schémat, které jste právě odebrali. Umožňuje aktualizovat vlastnost IgnorableNamespaces k: uap sady Management Pack. Vaše nová \<balíčku > prvek by měl vypadat podobně jako tento.  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
    ```  
   
-3. Přidat \<závislosti > podřízený element pro \<balíčku > element. Pak přidejte \<TargetDeviceFamily > podřízený element tohoto \<závislosti > element s názvem, MinVersion a MaxVersionTested atributy. Zadejte název atributu hodnota: závislosti Windows.Universal. Poskytněte MinVersion a MaxVersionTested hodnota verze univerzální platformu Windows, který jste si nainstalovali. Tento prvek by měl vypadat nějak takto:  
+3. Přidat \<závislosti > podřízený element pro \<balíčku > element. Pak přidejte \<TargetDeviceFamily > podřízený element tohoto \<závislosti > element s názvem, MinVersion a MaxVersionTested atributy. Zadejte název atributu hodnota: Windows.Universal. Poskytněte MinVersion a MaxVersionTested hodnota verze univerzální platformu Windows, který jste si nainstalovali. Tento prvek by měl vypadat nějak takto:  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
    </Dependencies>  
    ```  
   
-4. **Pro Windows Store pouze:** je třeba přidat \<mp:PhoneIdentity > podřízený element pro \<balíčku > element. Přidáte atribut PhoneProductId a PhonePublisherId atribut. Nastavte PhoneProductId mít stejnou hodnotu jako atribut Name \<Identity > element. Nastavte na hodnotu PhonePublishedId: 00000000-0000-0000-0000-000000000000. Nějak tak:  
+4. **Pro Windows Store pouze:** Je třeba přidat \<mp:PhoneIdentity > podřízený element pro \<balíčku > element. Přidáte atribut PhoneProductId a PhonePublisherId atribut. Nastavte PhoneProductId mít stejnou hodnotu jako atribut Name \<Identity > element. Nastavte hodnotu PhonePublishedId: 00000000-0000-0000-0000-000000000000. Nějak tak:  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 5. Najít \<požadavky > element a odstranit tento element a všechny podřízené prvky, které obsahuje.  
   
-6. Přidat **uap** obor názvů následující \<prostředků > elementy: škálování, DXFeatureLevel. Příklad:  
+6. Přidat **uap** obor názvů následující \<prostředků > prvky: Škálování, DXFeatureLevel. Příklad:  
   
    ```xml  
    <Resources>  
@@ -419,7 +414,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
    ```  
   
-    **Platí jenom pro Windows Store:** názvy velikost dlaždice změnily. Změna atributů \<VisualElements > element tak, aby odrážela nové konvergované velikosti dlaždic. 70 × 70 stane 71 × 71, a 30 × 30 stane 44 × 44.  
+    **Platí jenom pro Windows Store:** Změnily se názvy velikost dlaždice. Změna atributů \<VisualElements > element tak, aby odrážela nové konvergované velikosti dlaždic. 70 × 70 stane 71 × 71, a 30 × 30 stane 44 × 44.  
   
     **STARÝ:** dlaždici velikost názvy  
   
@@ -487,7 +482,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 12. Změňte závislosti rozhraní. Přidat název vydavatele do všech \<PackageDependency > elementy, a pokud ještě není zadán, zadejte MinVersion.  
   
-     **STARÝ:** \<PackageDependency > – element  
+     **STARÉ:** \<PackageDependency > – element  
   
     ```xml  
     <Dependencies>  
@@ -523,7 +518,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
     </Extension>  
     ```  
   
-     **NOVÉ:** s úlohou typ Bluetooth.  
+     **NOVÉ:** Typ úlohy Bluetooth.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -552,7 +547,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
     </Capabilities>  
     ```  
   
-     **NOVÉ:** nahrazena obecné funkce Bluetooth.  
+     **NOVÉ:** Nahradí obecné funkce Bluetooth.  
   
     ```xml  
     <Capabilities>  

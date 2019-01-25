@@ -1,14 +1,9 @@
 ---
 title: Prohlížeč výkonu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance
 - vs.performance.wizard.website
@@ -18,13 +13,13 @@ ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad140fcb81215a27381a75f051f07ca231f3deae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784097"
 ---
 # <a name="performance-explorer"></a>Prohlížeč výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +37,16 @@ ms.locfileid: "51786103"
 |Úloha|Související obsah|  
 |----------|---------------------|  
 |**Nové techniky pro Windows 8**|[Nástroje pro měření výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
-|**Koncepce profilování:** další koncepcemi a termíny, které bude využívat ke shromažďování, zobrazit a analyzovat výkon kódu pomocí nástrojů pro profilaci.|[Přehledy](../profiling/overviews-performance-tools.md)|  
-|**Přidejte se k nám a proveďte to:** zjistěte, ale základní postupy, které budete používat při shromažďování, zobrazit a analyzovat výkon kódu pomocí nástrojů pro profilaci. Vyzkoušejte si návod, praktické.|[Začínáme](../profiling/getting-started-with-performance-tools.md)|  
-|**Konfigurace relace profilování:** další rozšířené metody zadejte projekty nebo binární soubory do profilu, vyberte metodu profilace, zvolte možnost data o výkonu pro shromažďování a nastavit možnosti relace profilování.|[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)|  
-|**Určit data, která shromažďuje profileru:** zjistěte, jak používat vlastnosti relace výkonu a interaktivní postupy pro spuštění a zastavení profilování a omezení, která shromažďujete jen informace, které chcete, aby data o výkonu.|[Řízení shromažďování dat](../profiling/controlling-data-collection.md)|  
-|**Najít problémy s výkonem:** zjistěte, jak zobrazit a analyzovat data o výkonu shromážděných v okně zobrazení sestavy nástrojů pro profilaci.|[Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)|  
-|**Analyzovat změny ve výkonu:** zjistěte, jak k porovnání dvou souborů dat profileru analyzovat změny ve výkonu.|[Porovnání souborů s údaji o výkonu](../profiling/comparing-performance-data-files.md)|  
-|**Uložit a sdílet výsledky:** zjistěte, jak uložit data profilování pro archivaci nebo sdílení.|[Uložení a export dat nástrojů pro měření výkonu](../profiling/saving-and-exporting-performance-tools-data.md)|  
-|**Automatizace vytváření profilů:** zjistěte, jak pomocí nástrojů pro profilaci z příkazového řádku.|[Profilace prostřednictvím příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
-|**Řízení profilace programově:** zjistěte, jak pomocí spravovaný a nativní profilace nástroje rozhraní API kolekce dat ovládacích prvků přímo ze zdrojového kódu.|[Rozhraní API nástrojů pro profilaci](../profiling/profiling-tools-apis.md)|  
+|**Koncepce profilování:** Přečtěte si koncepcemi a termíny, které budete používat shromažďovat, zobrazení a analýza výkonu kód pomocí nástrojů pro profilaci.|[Přehledy](../profiling/overviews-performance-tools.md)|  
+|**Přidejte se k nám a udělat:** Přečtěte si, ale základní postupy, které budete používat při shromažďování, zobrazit a analyzovat výkon kódu pomocí nástrojů pro profilaci. Vyzkoušejte si návod, praktické.|[Začínáme](../profiling/getting-started-with-performance-tools.md)|  
+|**Konfigurace relace profilování:** Přečtěte si další způsoby jak určit projekty nebo binární soubory do profilu, vyberte metodu profilace, zvolte shromažďovat data o výkonu a nastavit možnosti relace profilování.|[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)|  
+|**Ovládací prvek, profiler shromáždí data:** Zjistěte, jak používat vlastnosti relace výkonu a interaktivní postupy pro spuštění a zastavení profilování a omezení, která shromažďujete jen informace, které chcete, aby data o výkonu.|[Řízení shromažďování dat](../profiling/controlling-data-collection.md)|  
+|**Najděte problémy s výkonem:** Zjistěte, jak zobrazit a analyzovat data o výkonu shromážděných v okně zobrazení sestavy nástrojů pro profilaci.|[Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)|  
+|**Analyzujte změny ve výkonu:** Zjistěte, jak k porovnání dvou souborů dat profileru analyzovat změny ve výkonu.|[Porovnání souborů s údaji o výkonu](../profiling/comparing-performance-data-files.md)|  
+|**Uložit a sdílet výsledky:** Zjistěte, jak uložit data profilování pro archivaci nebo sdílení.|[Uložení a export dat nástrojů pro měření výkonu](../profiling/saving-and-exporting-performance-tools-data.md)|  
+|**Automatizace vytváření profilů:** Zjistěte, jak pomocí nástrojů pro profilaci z příkazového řádku.|[Profilace prostřednictvím příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
+|**Ovládací prvek programově profilování:** Zjistěte, jak pomocí spravovaný a nativní profilace nástroje rozhraní API pro řízení shromažďování dat přímo ze zdrojového kódu.|[Rozhraní API nástrojů pro profilaci](../profiling/profiling-tools-apis.md)|  
 |**Řešení potíží s profilování**|[Řešení potíží s nástroji pro měření výkonu](../profiling/troubleshooting-performance-tools-issues.md)|  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje pro profilaci](../profiling/profiling-tools.md)
-
-
-

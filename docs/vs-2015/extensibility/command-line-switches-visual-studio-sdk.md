@@ -1,14 +1,9 @@
 ---
 title: Přepínače příkazového řádku (Visual Studio SDK) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, command-line switches
 - command-line switches
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1cfe08769f6b7734ba6fdd87cd010726cbcc3d9a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ea37c105114e915e812a470474ccd8f52609056f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758975"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Přepínače příkazového řádku (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +34,3 @@ Devenv.exe, spustitelný soubor, který se spustí [!INCLUDE[vsprvs](../includes
 ## <a name="related-sections"></a>Související oddíly  
  [Devenv – přepínače příkazového řádku](../ide/reference/devenv-command-line-switches.md)  
  Vysvětluje, jak Devenv umožňuje nastavit možnosti integrovaného vývojového prostředí a jak můžete zkompilovat, sestavení a ladění projektů z příkazového řádku. Kromě toho je informace o syntaxi nástroje Devenv přepínačů a tabulku přepínače.
-

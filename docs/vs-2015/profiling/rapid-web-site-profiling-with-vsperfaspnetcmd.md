@@ -1,14 +1,9 @@
 ---
 title: Profilace pohotová webových stránek pomocí VSPerfASPNETCmd | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
@@ -16,18 +11,18 @@ ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80acb5030c61bd986bfbd2a5f2b383ac37a25a0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760294"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotová profilace webových stránek pomocí VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**VSPerfASPNETCmd** nástroj příkazového řádku vám umožní snadno profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, možnosti jsou zmenšeny, musí být nastaveny žádné proměnné prostředí a restartování počítače se nevyžaduje. Pomocí **VSPerfASPNETCmd** upřednostňovanou metodou pro profilaci s samostatný profiler. Další informace najdete v tématu [postupy: Instalace samostatného Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
+**VSPerfASPNETCmd** nástroj příkazového řádku vám umožní snadno profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, možnosti jsou zmenšeny, musí být nastaveny žádné proměnné prostředí a restartování počítače se nevyžaduje. Pomocí **VSPerfASPNETCmd** upřednostňovanou metodou pro profilaci s samostatný profiler. Další informace najdete v tématu [jak: Instalovat samostatný Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
 >  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -51,7 +46,7 @@ ms.locfileid: "51760017"
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Shromažďování podrobných dat časování pomocí metody instrumentace  
  Použijte následující příkazový řádek ke shromažďování podrobných dat časování z dynamicky kompilovaných [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace:  
   
- **příkaz vsperfaspnetcmd/trace***websiteUrl*  
+ **vsperfaspnetcmd /trace**  *websiteUrl*  
   
  Pokud chcete Profilovat soubory .dll staticky kompilované webové aplikace, musí instrumentovat soubory s použitím [VSInstr](../profiling/vsinstr.md) nástroj příkazového řádku. Příkaz vsperfaspnetcmd/trace bude obsahovat data z instrumentované souborů.  
   
@@ -77,11 +72,11 @@ ms.locfileid: "51760017"
   
  Shromažďování dat interakce vrstev s vzorkování dat:  
   
- **Tip vsperfaspnetcmd** `websiteUrl`  
+ **vsperfaspnetcmd /tip** `websiteUrl`  
   
  Shromažďování dat interakce vrstev se data instrumentace:  
   
- **příkaz vsperfaspnetcmd/trace tip** *websiteUrl*  
+ **vsperfaspnetcmd /trace /tip** *websiteUrl*  
   
  Shromažďování dat interakce vrstev s dat paměti .NET:  
   
@@ -104,7 +99,4 @@ ms.locfileid: "51760017"
 |Možnost|Popis|  
 |------------|-----------------|  
 |**/ Output:** `VspFile`|Ve výchozím nastavení je souboru dat profilování (.vsp) vytvoří v aktuálním adresáři s názvem souboru **souboru PerformanceReport.vsp**. Pomocí možnosti/Output můžete zadat jiné umístění a název souboru.|  
-|**/ PackSymbols: vypnuto**|Ve výchozím nastavení vloží VsPerfASPNETCmd symboly (funkce a názvy parametrů, atd.) do souboru .vsp. Vkládání symbolů můžete nastavit, soubor dat profilování velmi velká. Pokud budete mít přístup k soubory s příponou .pdb, které obsahují symboly při analýze dat, použijte / packsymbols: možnost zakázat, vkládání symboly vypnuté.|
-
-
-
+|**/PackSymbols:Off**|Ve výchozím nastavení vloží VsPerfASPNETCmd symboly (funkce a názvy parametrů, atd.) do souboru .vsp. Vkládání symbolů můžete nastavit, soubor dat profilování velmi velká. Pokud budete mít přístup k soubory s příponou .pdb, které obsahují symboly při analýze dat, použijte / packsymbols: možnost zakázat, vkládání symboly vypnuté.|

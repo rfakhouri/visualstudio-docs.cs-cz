@@ -1,23 +1,20 @@
 ---
 title: MSI a VSIX nasazení DSL | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6ce16f06-1978-4e19-8cdc-441ee65a3fb2
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf826a45fbb7f5fc23ffad36dc2adba0442cd3a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774643"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Nasazení DSL v MSI a VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači 
   
 |Metoda|Výhody|  
 |------------|--------------|  
-|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření)|Velmi snadno se nasazuje: kopírování a spustit **VSIX** soubor z projektu DslPackage.<br /><br /> Další informace najdete v části [instalace a odinstalace DSL pomocí VSX](#Installing).|  
+|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření)|Velmi snadno nasadit: Kopírovat a spouštět **VSIX** soubor z projektu DslPackage.<br /><br /> Další informace najdete v části [instalace a odinstalace DSL pomocí VSX](#Installing).|  
 |MSI (instalačního programu soubor)|– Umožňuje uživateli otevřít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poklepáním na soubor DSL.<br />-Přidruží ikony typu souboru DSL v cílovém počítači.<br />– Tento typ souboru DSL přidruží XSD (XML schema). Tím se vyhnete upozornění při načítání souboru do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Nastavení projektu musíte přidat do svého řešení Chcete-li vytvořit instalační služba MSI.<br /><br /> Další informace najdete v tématu [nasazení DSL s použitím souboru MSI](#msi).|  
   
 ##  <a name="Installing"></a> Instalace a odinstalace DSL pomocí VSX  
@@ -141,6 +138,3 @@ Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači 
 2.  Odinstalujte DSL.  
   
 3.  Restartujte sadu Visual Studio.
-
-
-

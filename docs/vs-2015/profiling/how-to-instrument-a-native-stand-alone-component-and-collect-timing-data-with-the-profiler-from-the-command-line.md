@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: instrumentace nativní samostatné součásti a shromažďování dat Profiler z příkazového řádku časování | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Instrumentace nativní samostatné součásti a shromažďování dat Profiler z příkazového řádku časování | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 075d493b87203f3aacf8afb8811e3f8544882d25
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757105"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Postupy: Instrumentace nativní samostatné součásti a shromažďování dat časování z příkazového řádku profileru
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Postupy: Instrumentace nativní samostatné součásti a shromažďování dat Profiler z příkazového řádku časování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci instrumentace nativní součásti, jako je například souboru .exe nebo .dll jazyka C++ a shromažďování podrobných dat časování.  
@@ -41,9 +36,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 2. Použití **VSInstr** Nástroj generuje instrumentovanou verzi cílové aplikace.  
 
-3. Spusťte profiler. Typ:  
+3. Spusťte profiler. Zadejte:  
 
-    **/Start:trace VSPerfCmd/output:** `OutputFile` [`Options`]  
+    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
 
    - [/Start](../profiling/start.md)**: trasování** možnost inicializuje profiler.  
 
@@ -91,6 +86,3 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 ## <a name="see-also"></a>Viz také  
  [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)
-
-
-

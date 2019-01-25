@@ -12,17 +12,17 @@ helpviewer_keywords:
 - document protection, removing from workbooks
 - document protection, adding to workbooks
 - workbooks, protecting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5333504ed534373b6bb65902edb2566953de7a59
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900768"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863679"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Postupy: Zamykání sešitů
   Sešit Microsoft Office Excelu můžete chránit tak, aby uživatelé nelze přidat nebo odstraňování listů a také programově odemknutí sešitu. Volitelně můžete zadat heslo, uvádí, zda má být struktura chráněných (takže uživatele nelze přesunout seznamy) a určit, jestli chcete v sešitu windows chráněné.  

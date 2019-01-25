@@ -1,25 +1,20 @@
 ---
 title: Shromažďování dat paměti .NET Framework pro samostatné aplikace pomocí příkazového řádku Profiler | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fc3a109f66a7f761cf31dc6892207a00cc484148
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 37609a2ee4b52931c8df1a95af9d494e64bb473e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866358"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834126"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Shromažďování dat o paměti rozhraní .NET Framework pro samostatné aplikace pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +25,9 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o přidělo
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Spuštění aplikace a služby profilu paměti .NET**|-   [Jak: Spuštění aplikace rozhraní .NET Framework s Profiler ke shromažďování dat paměti](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Připojení profileru k aplikaci .NET**|-   [Jak: Připojit Profiler k aplikaci .NET Framework ke shromažďování dat paměti](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrumentujte aplikaci ke shromažďování dat paměti .NET**|-   [Jak: Instrumentaci komponenty samostatné rozhraní .NET Framework a shromažďovat paměťová Data s Profiler](/visualstudio/profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data?view=vs-2015)|  
+|**Spuštění aplikace a služby profilu paměti .NET**|-   [Jak: Spuštění aplikace .NET Framework profilerem kvůli shromáždění dat o paměti](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Připojení profileru k aplikaci .NET**|-   [Jak: Připojení profileru k aplikaci .NET Framework kvůli shromáždění dat o paměti](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrumentujte aplikaci ke shromažďování dat paměti .NET**|-   [Jak: Instrumentace samostatné součásti .NET Framework a shromáždění dat o paměti profilerem](/visualstudio/profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
@@ -57,6 +52,3 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o přidělo
   
 ## <a name="reference"></a>Odkaz  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)
-
-
-

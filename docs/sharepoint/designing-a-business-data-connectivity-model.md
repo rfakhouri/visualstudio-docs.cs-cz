@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designing a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97172f0b3a03d015c087a58077696ceff2b4369d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d44654e223c24d3040997bdbd7b7bb0e193263a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858380"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865161"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Navrhování modelu připojení obchodních dat
   Vývoj modelu služby připojení dat obchodní (BDC) přidáním entit a metody do souboru modelu. Popisuje, entita kolekce datových polí. Entity mohou například představovat tabulky v databázi. Metoda provede úlohu například přidávání, odstraňování nebo aktualizace dat reprezentovaný entity. Další informace najdete v tématu [integraci obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  

@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: vytvoření typu s možnou hodnotou Null (návrhář tříd) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření typu s možnou hodnotou Null (návrhář tříd) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -16,15 +11,15 @@ ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941942"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834914"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Postupy: Vytváření typů s povolenou hodnotou Null (návrhář tříd)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Postupy: Vytvoření typu s možnou hodnotou Null (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Některé typy hodnot ne vždy mají (nebo potřebujete) definovanou hodnotu. To je běžný postup v databázích, ve kterém některá pole nemůže být přiřazen žádnou hodnotu. Můžete například přiřadit hodnotu null do pole databáze místo, že ho nebyl dosud byla přiřazena hodnota.  
@@ -90,8 +85,5 @@ Některé typy hodnot ne vždy mají (nebo potřebujete) definovanou hodnotu. To
  <xref:System.Nullable%601>   
  [Typy s možnou hodnotou Null](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
  [Použití typů s povolenou hodnotou Null](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Postupy: identifikace typu s možnou hodnotou Null](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Postupy: Identifikace typu s možnou hodnotou Null](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
  [Typy hodnot s povolenou hodnotou Null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
-
-
-

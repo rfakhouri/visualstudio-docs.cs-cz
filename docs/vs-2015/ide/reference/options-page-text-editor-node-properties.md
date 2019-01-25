@@ -1,14 +1,9 @@
 ---
 title: Stránka Možnosti, vlastnosti uzlu textový Editor | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,13 +11,13 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241901"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767989"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
 |VerticalScrollBar|Get/Set (Boolean)|Určuje, zda se v oknech editoru zobrazuje svislý posuvník.|  
 |SelectionMargin|Get/Set (Boolean)|Určuje, zda je na levé straně podokna textu místo pro speciální operace výběru, ikony pro kreslení zarážek atd.|  
 |MarginIndicatorBar|Get/Set (Boolean)|Určuje, zda se zobrazuje svislá čára, která odděluje levý okraj podokna textu od hlavní části tohoto podokna.|  
-|UndoCaretActions|Get/Set (Boolean)|Pokud `True`. operace vrácení zpět zahrnují přesunutí kurzoru, výběrové příkazy a tak dále, kromě editačních akcí, které mění vyrovnávací paměť.|  
+|UndoCaretActions|Get/Set (Boolean)|If `True`. operace vrácení zpět zahrnují přesunutí kurzoru, výběrové příkazy a tak dále, kromě editačních akcí, které mění vyrovnávací paměť.|  
 |AutoDelimiterHighlighting|Get/Set (Boolean)|Určuje, zda při zadání koncového oddělovače zvýrazní editor počáteční oddělovač. Editor vždy zobrazí počáteční oddělovač tučně bez ohledu na hodnotu této vlastnosti.|  
 |EditorEmulation|Get/Set (Enum)||  
 |DetectUTF8WithoutSignature|Get/Set (Boolean)|Zjistí, zda soubor používá kódování UTF-8, pokud nemá signaturu kódování.|  
@@ -63,7 +58,7 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
 |WordWrap|Get/Set (Boolean)|Určuje, zda se dlouhé řádky v tomto zobrazení zalamují na hranicích slov. Nastavení na `true` způsobí, že `VirtualSpace` vlastnost položky (v tomto seznamu) nastavit `false`.|  
 |WordWrapGlyphs|Get/Set (Boolean)|Zobrazí piktogram na konci řádku; označuje, že se tento řádek zalamuje na další řádek.|  
 |EnableLeftClickForURLs|Get/Set (Boolean)|Určuje, zda editor podtrhuje adresy URL a umožňuje v systémem zaregistrovaném webovém prohlížeči přejít na tuto adresu URL jedním kliknutím.|  
-|IndentStyle|Získá nebo nastaví (<xref:EnvDTE.vsIndentStyle>)|Určuje styl odsazení: výchozí, inteligentní nebo žádné.|  
+|IndentStyle|Získá nebo nastaví (<xref:EnvDTE.vsIndentStyle>)|Určuje styl odsazení: Výchozí, inteligentní nebo žádné.|  
 |TabSize|Get/Set (Long)|Představuje počet mezer pro tabulátor. Nastavení celého čísla mimo rozsah 1–60 (včetně) se nezdaří.|  
 |InsertTabs|Get/Set (Boolean)|Pokud `True`, při odsazení použijí znaky TABULÁTORU.|  
 |IndentSize|Get/Set (Long)|Představuje počet mezer pro jednu úroveň odsazení. Nastavení celočíselné hodnoty mimo rozsah 1–60 (včetně) se nezdaří.|  
@@ -76,6 +71,3 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
  [Určování názvů položky vlastností na stránkách možností](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Stránka Možnosti, vlastnosti uzlu prostředí](../../ide/reference/options-page-environment-node-properties.md)   
  [Stránka Možnosti, vlastnosti uzlu Písma a barvy](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

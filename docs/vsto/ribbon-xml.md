@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929572"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869434"
 ---
 # <a name="ribbon-xml"></a>Pás karet – XML
   Položky pásu karet (XML) umožňuje přizpůsobit pás karet pomocí XML. Pomocí položky pásu karet (XML), pokud chcete přizpůsobit pás karet tak, aby položky pásu karet (vizuální návrhář) nepodporuje. Porovnání můžete dělat s každou položku najdete v tématu [přehled pásu karet](../vsto/Ribbon-overview.md).  
@@ -116,19 +116,19 @@ ms.locfileid: "53929572"
 |Prvek|Popis|  
 |-------------|-----------------|  
 |**customUI**|Představuje vlastní pás karet v projektu doplňku VSTO.|  
-|**Pás karet**|Představuje na pásu karet.|  
+|**ribbon**|Představuje na pásu karet.|  
 |**Karty**|Představuje sadu pás karet.|  
-|**Karta**|Představuje do jedné karty na pásu karet.|  
-|**Skupiny**|Představuje skupinu ovládacích prvků na kartu pásu karet.|  
+|**tab**|Představuje do jedné karty na pásu karet.|  
+|**group**|Představuje skupinu ovládacích prvků na kartu pásu karet.|  
   
  Tyto prvky mají atributy, které určují vzhled a chování vlastní pás karet. Následující tabulka popisuje atributy výchozí v souboru XML pásu karet.  
   
 |Atribut|Nadřazený element|Popis|  
 |---------------|--------------------|-----------------|  
 |**Při načtení**|**customUI**|Určuje metodu, která je volána při načtení aplikace pásu karet.|  
-|**idMso**|**Karta**|Identifikuje předdefinované karty zobrazit na pásu karet.|  
-|**id**|**Skupiny**|Tento parametr identifikuje skupinu.|  
-|**Popisek**|**Skupiny**|Určuje text, který se zobrazí ve skupině.|  
+|**idMso**|**tab**|Identifikuje předdefinované karty zobrazit na pásu karet.|  
+|**id**|**group**|Tento parametr identifikuje skupinu.|  
+|**label**|**group**|Určuje text, který se zobrazí ve skupině.|  
   
  Výchozí prvky a atributy v souboru XML pásu karet jsou malou podmnožinu prvky a atributy, které jsou k dispozici. Úplný seznam dostupných prvky a atributy, naleznete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 2 ze 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).  
   

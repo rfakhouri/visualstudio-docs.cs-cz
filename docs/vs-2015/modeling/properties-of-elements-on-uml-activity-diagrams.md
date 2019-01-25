@@ -1,12 +1,9 @@
 ---
 title: Vlastnosti elementů v diagramech činnosti UML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.shapes.properties
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 9849d45e-65d5-46bd-a319-757e90b7c748
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5a3233d073a4b54c7c52b4b725f0d15833f5a51f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b8106fde63769d40f220165a072fff137da353f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803055"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760642"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Vlastnosti elementů v diagramech činnosti UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +27,14 @@ ms.locfileid: "51803055"
 Každý prvek v diagramu na diagram činností UML, má vlastnosti. Pokud chcete zobrazit vlastnosti elementu, klikněte pravým tlačítkem na elementu v diagramu nebo v **Průzkumníku modelů UML** a potom klikněte na tlačítko **vlastnosti**. Vlastnosti se zobrazí v **vlastnosti** okna.  
   
 > [!NOTE]
->  Toto téma se věnuje vlastnosti elementů v diagramech činnosti UML. Informace o tom, jak přečíst diagramy činnosti UML, naleznete v tématu [diagramy činnosti UML: referenční](../modeling/uml-activity-diagrams-reference.md). Další informace o tom, jak nakreslit diagramy činnosti UML, naleznete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+>  Toto téma se věnuje vlastnosti elementů v diagramech činnosti UML. Informace o tom, jak přečíst diagramy činnosti UML, naleznete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md). Další informace o tom, jak nakreslit diagramy činnosti UML, naleznete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Vlastnosti elementů  
   
 |         Vlastnost         |        Výchozí         |                               Prvek                               |                                                                                                                                                                Popis                                                                                                                                                                 |
 |--------------------------|------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         **Jméno**         |     Výchozí název     |                                 Všechny                                 |                                                                                                                                                          Určuje element.                                                                                                                                                           |
-|    **Kvalifikovaný název**    |    Balíček:: název     |                                 Všechny                                 |                                                                                                                     Jednoznačně identifikuje elementu. Předponu úplný název balíčku, který jej obsahuje.                                                                                                                     |
+|         **Název**         |     Výchozí název     |                                 Všechny                                 |                                                                                                                                                          Určuje element.                                                                                                                                                           |
+|    **Kvalifikovaný název**    |    Balíček:: Název     |                                 Všechny                                 |                                                                                                                     Jednoznačně identifikuje elementu. Předponu úplný název balíčku, který jej obsahuje.                                                                                                                     |
 |      **Pracovní položky**      |      související 0      |                                 Všechny                                 |                                                                                Počet pracovních položek, které jsou spojené s tímto prvkem. Přidružení pracovních položek, naleznete v tématu [propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md).                                                                                |
 |     **Popis**      |         (žádné)         |                                 Všechny                                 |                                                                                                                                             Můžete nastavit obecné poznámky o prvku tady.                                                                                                                                             |
 |        **Barva**         | (výchozí nastavení pro typ) |                                 Všechny                                 |                                                                                                                                                          Barva obrazce.                                                                                                                                                           |
@@ -45,7 +42,7 @@ Každý prvek v diagramu na diagram činností UML, má vlastnosti. Pokud chcete
 |       **Jazyk**       |         (žádné)         |                               Akce                                |                                                                                                                                                  Jazyk výrazů v těle.                                                                                                                                                   |
 | **Místní vstupních** |         (žádné)         |         Akce, odeslat, přijmout, volání chování, volání operace         |                                                                                                                          Omezení, které musí být splněny, při ukončení provádění. Cílem dosáhnout akce.                                                                                                                          |
 | **Místní předběžné podmínky**  |         (žádné)         |         Akce, odeslat, přijmout, volání chování, volání operace         |                                                                                                                                        Omezení, které musí být splněny, než začne provádění.                                                                                                                                         |
-|    **Je synchronní**    |          Hodnota TRUE          |                    Volání chování, zavolejte operaci                    |                                                                                                                                        – Pokud je hodnota true, akce počká, až do doby ukončení aktivity.                                                                                                                                        |
+|    **Je synchronní**    |          Pravda          |                    Volání chování, zavolejte operaci                    |                                                                                                                                        – Pokud je hodnota true, akce počká, až do doby ukončení aktivity.                                                                                                                                        |
 |       **Chování**       |         (žádné)         |                            Volání chování                            |                                                                                                                                                         – Aktivity vyvolání.                                                                                                                                                          |
 |      **Operace**       |         (žádné)         |                           Volání operace                            |                                                                                                                                                         -Operace se vyvolala.                                                                                                                                                         |
 |    **Je vyřadit**     |         False          |                            Přijímat události                             |                                                                                                       – Pokud je hodnota true, může být několik typem výstupní spojky a data jsou zařazeny do nich. Pokud má hodnotu false, se zobrazí všechna data na jeden pin.                                                                                                        |
@@ -57,12 +54,9 @@ Každý prvek v diagramu na diagram činností UML, má vlastnosti. Pokud chcete
 |     **Násobnost**     |           1            |                        Vstupní kód Pin, výstupní spojky                        | -Může být jedna hodnota nebo rozsah `[n..m]`.<br />-Dolní mez `n` – akce nelze spustit (pro vstupní kód pin) nebo zastavení (pro výstupní spojky), dokud nejsou `n` objekty čeká se na kód pin.<br />-Horní mez `m` – akce nemůže využívat nebo vytvářet více než `m` objektů v jedno provedení. \* znamená to, že není nijak omezený. |
 |    **Transformace**    |         (žádné)         |                             Objekt toku                             |                                                                                                                      -Spustí proces, který transformuje data. Tento proces lze definovat do jiného diagramu.                                                                                                                       |
 |     **Je vícesměrového vysílání**     |         False          |                             Objekt toku                             |                                                                                                                                 -Označuje, že může existovat několik příjemců objekty nebo komponenty.                                                                                                                                 |
-|   **Je MultiReceive**    |         False          |                             Objekt toku                             |                                                                                                                                 -Označuje, že může existovat několik příjemců objekty nebo komponenty.                                                                                                                                 |
+|   **Is MultiReceive**    |         False          |                             Objekt toku                             |                                                                                                                                 -Označuje, že může existovat několik příjemců objekty nebo komponenty.                                                                                                                                 |
 | **Je jedno provedení**  |         False          |                          Diagram činnosti                           |                                                                                                                                   -If nastaven, bylo nanejvýš jedno provedení tohoto diagramu současně.                                                                                                                                    |
   
 ## <a name="see-also"></a>Viz také  
- [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)   
  [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-

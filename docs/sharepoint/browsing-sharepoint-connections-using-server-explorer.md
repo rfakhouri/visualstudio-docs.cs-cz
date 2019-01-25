@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, browsing SharePoint sites
 - SharePoint development in Visual Studio, SharePoint Connections
 - SharePoint Connections [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3804b97967cffb299393e7e3a8866e51a2e3224
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 825bf975d877cd6b0844e86aabff605daa30a900
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931356"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875482"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Procházet připojení služby SharePoint pomocí Průzkumníka serveru
   Nyní můžete procházet místní připojení služby SharePoint v **Průzkumníka serveru**. Tímto způsobem můžete procházet součásti webu služby SharePoint ve vašem systému. Součásti webu služby SharePoint, jako je například seznam definic a typy obsahu, se zobrazí v uzlu, který je pojmenován **připojení služby SharePoint** ve stromovém zobrazení **Průzkumníka serveru**. Chcete-li zobrazit **Průzkumníka serveru**, na panelu nabídek zvolte **zobrazení** > **Průzkumníka serveru**. Kromě zobrazení součásti webu služby SharePoint, můžete odebrat položky, zobrazení jejich vlastností nebo aktualizujte zobrazení stromové struktury pomocí příkazů v místní nabídce.  

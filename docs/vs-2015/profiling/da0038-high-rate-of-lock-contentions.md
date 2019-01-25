@@ -1,14 +1,9 @@
 ---
 title: 'DA0038: Vysoká míra kolizí zámků | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.38
 - vs.performance.rules.DA0038
@@ -17,18 +12,18 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c160ff4a61e8a0e2879cc0cacc59aae9e951361b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766199"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Vysoká míra kolizí zámků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0038: vysoká míra kolizí zámků](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0038: Vysoká míra kolizí zámků](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -40,7 +35,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0038:
   
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit alespoň 25 vzorky k aktivaci tohoto pravidla.  
   
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Systém údaje o výkonu, která se shromažďují se data profilace označuje, že výrazně vysoké míře sporů zámků došlo k chybě při spuštění aplikace. Vezměte v úvahu profilaci znovu pomocí metody profilace souběžného zpracování najít příčinu sporů.  
   
 ## <a name="rule-description"></a>Popis pravidla  
@@ -55,10 +50,9 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0038:
  Toto pravidlo je vyvoláno při měření pořízených během spuštění profilování znamenat, že je příliš vysoké množství kolize zámků. Zámků zpoždění spuštění vlákna, která čekají na zámek. Dokonce i poměrně malý objem kolize zámků při testech jednotek nebo v zátěžových testech, které běží na hardwaru nižší by mělo být vypátráno.  
   
 > [!NOTE]
->  Jestliže je míra ohlášené zámků v Profilování dat příliš vysoké [DA0039: velmi vysoká míra kolizí zámků](../profiling/da0039-very-high-rate-of-lock-contentions.md) místo tuto zprávu s informacemi o se aktivuje upozornění.  
+>  Jestliže je míra ohlášené zámků v Profilování dat příliš vysoké, [DA0039: Velmi vysoká míra kolizí zámků](../profiling/da0039-very-high-rate-of-lock-contentions.md) místo tuto zprávu s informacemi o se aktivuje upozornění.  
   
 ## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění  
  Dvakrát klikněte na zprávu, přejděte [značky](../profiling/marks-view.md) zobrazení dat profilování.  Najít **.NET CLR LocksAndThreads\Contention sazba za sekundu** sloupce. Zjistěte, jestli konkrétní fázích provádění programu kde je těžší než ostatní fáze kolize zámků.  
   
  Toto pravidlo je vyvoláno pouze v případě, že nepoužíváte metoda profilace souběžného zpracování. Metoda profilace souběžného zpracování je vždycky ten nejlepší nástroj určený pro diagnostiku problémů s výkonem související s kolize zámků ve vaší aplikaci. Shromažďování dat o chování aplikace při zamykání profilace souběžného zpracování. Jedná se o zámky, které jsou často ve sporných principy, jak dlouho doba provádění vlákna je zpožděno. čekání na zámků sporných a podílející jaký specifický kód. Souběžnost profily shromáždí data na všech zamknout sporů, včetně chování při zamykání nativní zařízení Windows, tříd rozhraní .NET Framework a další knihovny třetích stran aplikace odkazy. Informace o profilace souběžnosti z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí, najdete v článku [shromažďování vlákna a dat o souběžnosti procesu](../profiling/collecting-thread-and-process-concurrency-data.md). Odkazy na informace o souběžnosti profilace z příkazového řádku, najdete v článku **použití metody souběžnosti shromažďovat kolize prostředků a vlákna Data aktivit** část [pomocí Profilování metody z Příkazový řádek](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
-

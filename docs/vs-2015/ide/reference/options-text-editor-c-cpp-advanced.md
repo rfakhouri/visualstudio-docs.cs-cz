@@ -1,14 +1,9 @@
 ---
 title: Možnosti, textový Editor, C / C++, Upřesnit | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Advanced
@@ -19,13 +14,13 @@ ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aafa46e62af6eadb56d8cf53cb2190bc7403358b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790094"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Možnosti, textový editor, C/C++, upřesnit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Změnou tyto možnosti můžete změnit chování související se technologie I
  Pro přístup k této stránce v **možnosti** dialogové okno, v levém podokně rozbalte **textový Editor**, rozbalte **C/C++** a klikněte na tlačítko **Upřesnit**.  
   
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Procházení a navigace  
  Tyto možnosti s výjimkou případů, měli byste zvolit nikdy ve výjimečných případech, kde je tak velká, že aktivita databáze používá nepřijatelné množství systémových prostředků řešení.  
@@ -157,13 +152,10 @@ Změnou tyto možnosti můžete změnit chování související se technologie I
  **Zakázat řešení**  
  Z důvodů výkonu "Najít všechny odkazy" zobrazí nezpracované textové výsledky hledání ve výchozím nastavení namísto použití IntelliSense k ověření každého kandidáta. Pro přesnější výsledky pro všechny operace hledání můžete zrušte zaškrtnutí tohoto políčka. Filtrovat na základě za vyhledávání, otevřete místní nabídku pro seznam výsledků a klikněte na tlačítko "Vyřešit výsledky."  
   
- **Skrýt nepotvrzené**  
+ **Hide Unconfirmed**  
  Skryjte nepotvrzené položky ve výsledcích najít všechny odkazy. Pokud jste možnost zrušit nastavení "Zakázat řešení", můžete použít tuto možnost skryjete nepotvrzené položky ve výsledcích.  
   
  **Zakázat zvýraznění odkazů**  
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení možností editoru pro konkrétní jazyk](../../ide/reference/setting-language-specific-editor-options.md)
-
-
-

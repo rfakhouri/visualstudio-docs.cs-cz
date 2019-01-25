@@ -10,17 +10,17 @@ helpviewer_keywords:
 - IntelliTrace [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, IntelliTrace
 - SharePoint development in Visual Studio, unit testing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1705e77472ba9b8fa7a01d047c0aadaf342b7932
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916832"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869486"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Ověřte a ladění kódu pro SharePoint
 Pomocí IntelliTrace a testování částí lze snadněji ladit řešení služby SharePoint a zajistit správnou funkčnost každé metody. Tyto funkce můžete použít pro projekty služby SharePoint v sadě Visual Studio podle stejného postupu jako u ostatních typů projektů.

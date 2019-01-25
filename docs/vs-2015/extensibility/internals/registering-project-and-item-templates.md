@@ -1,14 +1,9 @@
 ---
 title: Registrace šablon projektů a položek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771386"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrace šablon projektů a položek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 ### <a name="registering-file-filters"></a>Registrace filtry souborů  
  Volitelně můžete zaregistrovat filtry, které [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] používá, když ho vyzve k zadání názvů souborů. Například [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrovat **otevřít soubor** dialogové okno je:  
   
- **Soubory Visual C# (\*.cs,\*.resx,\*.settings,\*XSD,\*WSDL);\*. cs,\*.resx,\*.settings,\*XSD,\*WSDL)**  
+ **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
   
  Pro podporu registrace více filtrů, každý filtr je zaregistrován ve vlastní podklíč pod HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*verze*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*podklíč*>. Název podklíče je libovolný. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignoruje v podklíči název a používá jenom jeho hodnoty.  
   
@@ -117,7 +112,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
   
  \Form  
   
- \Web stránky  
+ \Web Page  
   
  \HelperFiles (obsahuje soubory používané v položkách projektu více soubory)  
   
@@ -128,4 +123,3 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
  [Průvodce](../../extensibility/internals/wizards.md)   
  [Lokalizace aplikací](../../ide/localizing-applications.md)   
  [Identifikátory CATID pro objekty používané obvykle k rozšíření projektů](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

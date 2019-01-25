@@ -1,13 +1,8 @@
 ---
 title: Příručka pro začátečníky profilací výkonu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -19,13 +14,13 @@ ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4a1b8fbc31bb05f69a1f9e30960106c08df5eb6f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2e243c1202ffbc9bd61f42073d6e464de858ff87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761526"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Průvodce začátečníka profilací výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +31,10 @@ Profilace nástroje sady Visual Studio můžete použít k analýze problémů v
   
  V určených intervalech metoda **Vzorkování** shromažďuje informace o funkcích, které se spouštějí ve vaší aplikaci. Po skončení běhu profilace se v zobrazení **Souhrn** objeví strom volání nejaktivnějších funkcí označovaný jako **Kritická cesta**, kde se prováděla většina práce v aplikaci. Zobrazení také uvádí seznam funkcí, které provedly nejvíce individuální práce, a poskytuje graf s časovou osou, který můžete použít k řešení konkrétních segmentů relace vzorkování.  
   
- Pokud potřebná data nezískáte pomocí **vzorkování**, můžete v nástrojích pro profilaci použít jiné metody shromažďování, které poskytují různé druhy užitečných informací. Další informace o těchto dalších metodách, naleznete v tématu [jak: Zvolte metody kolekce](../profiling/how-to-choose-collection-methods.md).  
+ Pokud potřebná data nezískáte pomocí **vzorkování**, můžete v nástrojích pro profilaci použít jiné metody shromažďování, které poskytují různé druhy užitečných informací. Další informace o těchto dalších metodách, naleznete v tématu [jak: Výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Při profilování kódu, který volá funkce Windows, zkontrolujte, že používáte nejaktuálnější soubory .pdb. Bez těchto souborů se v zobrazeních sestav zobrazí seznam funkcí Windows, jejichž názvy jsou nesrozumitelné a obtížně pochopitelné. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [postupy: odkaz na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Při profilování kódu, který volá funkce Windows, zkontrolujte, že používáte nejaktuálnější soubory .pdb. Bez těchto souborů se v zobrazeních sestav zobrazí seznam funkcí Windows, jejichž názvy jsou nesrozumitelné a obtížně pochopitelné. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [jak: Informace o symbolech Windows odkaz](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ##  <a name="Step1"></a> Vytvoření a spuštění výkonnostní relace  
  Abyste získali data potřebná k analýze, musíte nejprve vytvořit výkonnostní relaci a potom ji spustit. S oběma úlohami vám pomůže **Průvodce výkonu**.  
@@ -72,7 +67,7 @@ Profilace nástroje sady Visual Studio můžete použít k analýze problémů v
   
  Doporučujeme začít analýzu dat tím, že pomocí **časové osy v souhrnu** zkontrolujete **kritickou cestu**, potom seznam nejvytíženějších funkcí a nakonec se zaměříte na ostatní funkce. V okně **Seznam chyb** se můžete podívat také na návrhy a upozornění týkající se profilace.  
   
- Nezapomeňte, že metoda vzorkování vám nemusí poskytnout informace, které potřebujete. Vzorky se například shromažďují pouze v případě, že aplikace spouští kód uživatelského režimu. Z tohoto důvodu vzorkování nezachytává některé funkce, jako jsou operace vstupu a výstupu. Nástroje pro profilaci poskytují několik metod shromažďování, které vám umožňují zaměřit se na důležitá data. Další informace o dalších metodách, naleznete v tématu [jak: Zvolte metody kolekce](../profiling/how-to-choose-collection-methods.md).  
+ Nezapomeňte, že metoda vzorkování vám nemusí poskytnout informace, které potřebujete. Vzorky se například shromažďují pouze v případě, že aplikace spouští kód uživatelského režimu. Z tohoto důvodu vzorkování nezachytává některé funkce, jako jsou operace vstupu a výstupu. Nástroje pro profilaci poskytují několik metod shromažďování, které vám umožňují zaměřit se na důležitá data. Další informace o dalších metodách, naleznete v tématu [jak: Výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md).  
   
  Každé číslo na následujícím obrázku odpovídá některému kroku v postupu.  
   
@@ -112,7 +107,7 @@ Profilace nástroje sady Visual Studio můžete použít k analýze problémů v
   
     -   Podrobné informace o upozornění zobrazíte kliknutím pravého tlačítka myši na chybu a potom kliknutím na **Zobrazit nápovědu chyby**.  
   
-##  <a name="Step3"></a> Krok 3: Revize kódu a opakované spuštění relace  
+##  <a name="Step3"></a> Krok 3: Kontrola kódu a opětovné spuštění relace  
  Po vyhledání a optimalizaci jedné nebo více funkcí můžete běh profilace zopakovat a porovnat data, abyste zjistili, jaký vliv měly změny na výkon aplikace.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Revize kódu a opakované spuštění profileru  
@@ -125,12 +120,9 @@ Profilace nástroje sady Visual Studio můžete použít k analýze problémů v
   
 4.  Po dokončení opakovaného běhu relace se v **Prohlížeči výkonu** do složky **Sestavy** přidá další datový soubor pro danou relaci. Vyberte původní i nová data profilace, klikněte pravým tlačítkem myši na výběr a potom klikněte na **Porovnat sestavy výkonu**.  
   
-     Otevře se nové okno sestavy s výsledky porovnání. Další informace o použití pohledu porovnání naleznete v tématu [postupy: porovnání datových souborů výkonu](../profiling/how-to-compare-performance-data-files.md).  
+     Otevře se nové okno sestavy s výsledky porovnání. Další informace o použití pohledu porovnání naleznete v tématu [jak: Porovnání datových souborů výkonu](../profiling/how-to-compare-performance-data-files.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Prohlížeč výkonu](../profiling/performance-explorer.md)   
  [Začínáme se službou](../profiling/getting-started-with-performance-tools.md)   
  [Přehledy](../profiling/overviews-performance-tools.md)
-
-
-

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942369"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867361"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Průvodce: Návrh oblasti formuláře Outlooku
   Vlastní formulář oblastech rozšířit standardní nebo vlastní formuláře aplikace Microsoft Office Outlook. V tomto návodu bude navrhovat vlastní formulář regionu, který se zobrazí v okně Inspektor kontaktní položky na novou stránku. Tato oblast formuláře zobrazí se mapa s každou adresu, která je uvedena u kontaktu, posíláním informací o adresy na Windows Live místní vyhledávací web. Informace o oblasti formuláře, naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
@@ -154,7 +154,7 @@ ms.locfileid: "53942369"
     |Typ adresy|Adresa|  
     |------------------|-------------|  
     |**firmy**|**Svatý hlavní 4567 Buffalo, NY**|  
-    |**Domovská stránka**|**Svatý severní 1234 Buffalo, NY**|  
+    |**Domovská stránka**|**1234 North St. Buffalo, NY**|  
     |**Jiné**|**3456 hlavní St. Seattle, WA**|  
   
 4.  Uložte a zavřete položky kontaktu.  

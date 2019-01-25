@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd88f7978e7c848d925f21bae6a0a3ad27792e67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9c15d7435fa6f5267e413e3afd0fd6e4c7ea17c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950631"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873701"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesty aplikace pro řešení pro systém Office
   Manifest aplikace je soubor XML, který popisuje sestavení, která jsou načtena do jediného řešení Microsoft Office. Pomocí nástroje pro vývoj aplikace Microsoft Office v sadě Visual Studio [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplikace definované v manifestu schéma [ClickOnce – manifest aplikace](../deployment/clickonce-application-manifest.md) odkaz.
@@ -27,8 +27,8 @@ ms.locfileid: "53950631"
 
 |Prvek|Popis|Atributy|
 |-------------|-----------------|----------------|
-|[&#60;sestavení&#62; Element &#40;aplikace ClickOnce&#41;](../deployment/assembly-element-clickonce-deployment.md)|Povinný parametr. Element nejvyšší úrovně.|**ManifestVersion**|
-|[&#60;Vlastnost assemblyIdentity&#62; Element &#40;aplikace ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Povinný parametr. Identifikuje [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] primární sestavení aplikace.|**Jméno**<br /><br /> **version**<br /><br /> **PublicKeyToken**<br /><br /> **Vlastnost ProcessorArchitecture**<br /><br /> **Jazyk**|
+|[&#60;sestavení&#62; Element &#40;aplikace ClickOnce&#41;](../deployment/assembly-element-clickonce-deployment.md)|Povinný parametr. Element nejvyšší úrovně.|**manifestVersion**|
+|[&#60;Vlastnost assemblyIdentity&#62; Element &#40;aplikace ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Povinný parametr. Identifikuje [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] primární sestavení aplikace.|**Jméno**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **Jazyk**|
 |[&#60;trustInfo&#62; Element &#40;aplikace ClickOnce&#41;](../deployment/trustinfo-element-clickonce-application.md)|Identifikuje požadavky na zabezpečení aplikace.|Žádná|
 |[&#60;vstupní bod&#62; Element &#40;aplikace ClickOnce&#41;](../deployment/entrypoint-element-clickonce-application.md)|Povinný parametr. Určuje vstupní bod aplikace kód pro spuštění.|**Jméno**<br /><br /> **dependencyName**<br /><br /> **customHostSpecified**|
 |[&#60;závislost&#62; Element &#40;aplikace ClickOnce&#41;](../deployment/dependency-element-clickonce-deployment.md)|Povinný parametr. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést.|Žádná|
@@ -74,16 +74,16 @@ ms.locfileid: "53950631"
 |[&#60;doplněk&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|Povinný parametr. Vstupní body úložišť do jednoho oboru názvů.|Žádná|
 |[&#60;entrypointscollection –&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypointscollection-element-office-development-in-visual-studio.md)|Povinný parametr. Seskupí všechna sestavení pro jeden nebo více řešení Office.|**id**|
 |[&#60;entryPoints&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)|Povinný parametr. Skupiny všechna sestavení ke spuštění řešení pro Office.|Žádná|
-|[&#60;vstupní bod&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Povinný parametr. Určuje sestavení ke spuštění v řešení pro Office.|**class**<br /><br /> **kontrakt**|
+|[&#60;vstupní bod&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Povinný parametr. Určuje sestavení ke spuštění v řešení pro Office.|**class**<br /><br /> **contract**|
 |[&#60;Aktualizovat&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)|Povinný parametr. Nakonfiguruje aktualizace pro příslušné řešení.|**Povoleno**<br /><br /> **vypršení platnosti**|
 |[&#60;postactions –&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|Volitelné. Seskupí všechny po nasazení akce, které se spustí po dokončení instalace řešení pro systém Office.|Žádná|
 |[&#60;postAction&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|Volitelné. Určuje akci po nasazení.|Žádná|
 |[&#60;postactiondata –&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|Volitelné. Nastaví data pro akci po nasazení.|Žádná|
 |[&#60;aplikace&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md)|Povinný parametr. Zabalí informace specifické pro aplikaci do jednoho uzlu.|Žádná|
 |[&#60;přizpůsobení&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/customizations-element-office-development-in-visual-studio.md)|Povinný parametr. Ukládá všechny informace specifické pro hostitele aplikace v samostatných oborech názvů.|Žádná|
-|[&#60;přizpůsobení&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|Povinný parametr. Ukládá informace specifické pro hostitele aplikace v samostatných oborech názvů.|**xmlns.**|
+|[&#60;přizpůsobení&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|Povinný parametr. Ukládá informace specifické pro hostitele aplikace v samostatných oborech názvů.|**xmlns**|
 |[&#60;dokument&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md)|Vyžaduje se jenom pro řešení na úrovni dokumentu. Ukládá informace specifické pro přizpůsobení.|**solutionId**|
-|[&#60;appAddin&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Vyžaduje se jenom pro řešení na úrovni aplikace. Ukládá informace specifické pro přizpůsobení.|**Aplikace**<br /><br /> **LoadBehavior**<br /><br /> **Název klíče**|
+|[&#60;appAddin&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Vyžaduje se jenom pro řešení na úrovni aplikace. Ukládá informace specifické pro přizpůsobení.|**Aplikace**<br /><br /> **loadBehavior**<br /><br /> **keyName**|
 |[&#60;friendlyName&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|Volitelné. Ukládá název VSTO doplněk, který se zobrazí v seznamu nainstalovaných doplňků VSTO.|Žádná|
 |[&#60;Popis&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Vyžaduje se jenom pro doplňky VSTO. Ukládá popis, který se zobrazí v seznamu nainstalovaných programů.|Žádná|
 |[&#60;formRegions&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|Vyžaduje se jenom pro aplikaci Outlook doplňků VSTO, které zahrnují oblasti formuláře.|Žádná|

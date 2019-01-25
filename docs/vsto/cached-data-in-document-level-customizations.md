@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964647"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868271"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Data uložená v mezipaměti v přizpůsobeních na úrovni dokumentu
   Primární cílem přizpůsobení na úrovni dokumentu je oddělení dat ze zobrazení v dokumentech systému Office. Data představují informace, které jsou uloženy v dokumentu, včetně čísel a text. Zobrazení odkazuje na uživatelské rozhraní a objektový model Microsoft Office Word a Microsoft Office Excel.  
@@ -56,7 +56,7 @@ ms.locfileid: "53964647"
   
 ||Mezipaměť dat|Vlastní části XML|  
 |-|----------------|----------------------|  
-|Aplikace Office, které mohou využívat?|Přizpůsobení na úrovni dokumentu v následujících aplikacích:<br /><br /> – Excel<br />-Aplikace Word|Řešení na úrovni dokumentu a úrovni aplikace v následujících aplikacích:<br /><br /> – Excel<br />-PowerPoint<br />-Aplikace Word|  
+|Aplikace Office, které mohou využívat?|Přizpůsobení na úrovni dokumentu v následujících aplikacích:<br /><br /> -   Excel<br />-   Word|Řešení na úrovni dokumentu a úrovni aplikace v následujících aplikacích:<br /><br /> -   Excel<br />-PowerPoint<br />-   Word|  
 |Jaké typy dat můžete ukládat?|Všechny veřejné objektu vlastního nastavení sestavení, který splňuje určité požadavky. Další informace najdete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md).|Žádná data XML.|  
 |Může přistupovat k datům bez spuštění aplikace Microsoft Office?|Ano, s použitím <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|Ano, s využitím tříd v <xref:System.IO.Packaging> obor názvů, nebo pomocí sady SDK formát Open XML.|  
   

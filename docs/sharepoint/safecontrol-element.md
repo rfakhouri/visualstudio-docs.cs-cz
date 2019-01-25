@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SafeControl element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a56936ed867cdadfb938b9804fbcaeb2560e6d86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a05fe8be5097933351eec4816ee3faa0f92a3e37
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864135"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869515"
 ---
 # <a name="safecontrol-element"></a>SafeControl – element
   Představuje prvek ASPX nebo webovou část, která je označena jako bezpečná pro všechny uživatele pro přístup na libovolné stránce ASPX na webu služby SharePoint.  
@@ -45,7 +45,7 @@ ms.locfileid: "53864135"
 |**IsSafeAgainstScript**|Volitelné **xs:boolean** atribut.<br /><br /> Určuje, zda nedůvěryhodným uživatelům můžete zobrazit nebo upravit vlastnosti ovládacího prvku ASPX nebo webovou část.|  
 |**Název**|Volitelné **xs:string** atribut.<br /><br /> Název této položky bezpečný ovládací prvek v kolekci.|  
 |**Namespace**|Volitelné **xs:string** atribut.<br /><br /> Obor názvů ovládacího prvku ASPX nebo webovou část.|  
-|**Název typu**|Volitelné **xs:string** atribut.<br /><br /> Název typu ovládacího prvku ASPX nebo webovou část.|  
+|**TypeName**|Volitelné **xs:string** atribut.<br /><br /> Název typu ovládacího prvku ASPX nebo webovou část.|  
   
 ### <a name="child-elements"></a>Podřízené prvky
  Žádné  
@@ -63,7 +63,7 @@ ms.locfileid: "53864135"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu služby SharePoint|  
 |**Soubor ověření**|ProjectItemModelSchema.xsd|  
 |**Může být prázdný**|Ne|  

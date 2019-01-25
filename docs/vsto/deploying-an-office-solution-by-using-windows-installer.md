@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 946a8dc884db4492e9bb557fa6000059d9912fd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91349edaeb864e913351e79846825fb67f2d7d97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966048"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864082"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Nasazení řešení Office s použitím Instalační služby systému Windows
 Zjistěte, jak vytvořit instalační program Windows pro řešení Office s použitím [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -35,7 +35,7 @@ Pomocí sady Visual Studio k vytvoření Windows Installer můžete nasadit ře�
 
 - [Stáhněte si ukázky doplňku VSTO](#Download)  
 
-- [Získejte InstallShield Limited Edition](#Obtain)  
+- [Get InstallShield Limited Edition](#Obtain)  
 
 - [Rozhodování o způsobu zajištění důvěryhodnosti řešení](#ApplySecurity)  
 
@@ -82,11 +82,11 @@ Předtím, než můžete řešení spustit v počítačích uživatelů, je nutn
 > Přizpůsobení na úrovni dokumentu umístění dokumentu musí také být důvěryhodný. Další informace najdete v tématu [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).  
 
 
-## <a name="Obtain"></a>Získejte InstallShield Limited Edition  
+## <a name="Obtain"></a>Get InstallShield Limited Edition  
 Vytvořit soubor Instalační služby systému Windows pomocí programu InstallShield Limited Edition (ISLE), které je zdarma, pokud jste nainstalovali aplikaci Visual Studio. Program ISLE nahrazuje funkce šablon projektů instalace a nasazení, které nabízí předchozí verze sady Visual Studio.  
 
 
-### <a name="to-get-installshield-limited-edition"></a>Chcete-li získat program InstallShield Limited Edition  
+### <a name="to-get-installshield-limited-edition"></a>To get InstallShield Limited Edition  
 
 1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.  
 
@@ -326,8 +326,8 @@ Uživatelské instalace vyžadují pouze jeden instalační program bez ohledu n
 
 | Verze Office<br /><br /> | Cesta konfigurace InstallShield<br /><br /> |
 |----------------------------| - |
-| 32bitová<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64bitových<br /><br /> | **HKEY_LOCAL_MACHINE\Software(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32bitová<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64bitových<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Instalační programy pro jednotlivé počítače založené na verzi Windows**  
 
@@ -335,8 +335,8 @@ Uživatelské instalace vyžadují pouze jeden instalační program bez ohledu n
 
 | Verze Windows<br /><br /> | Cesta konfigurace InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32bitová<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64bitových<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\Software(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32bitová<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64bitových<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]  
    >    Instalační program pro 64bitová verze Windows vyžaduje dvě cesty registru, protože je přípustný uživatelé budou spouštět 32bitové a 64bitové verze Office na počítači, na kterém běží 64bitová verze Windows.  

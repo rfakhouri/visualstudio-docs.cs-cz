@@ -1,11 +1,8 @@
 ---
 title: Editor podmínek pravidla dialogové okno (starší verze) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
@@ -15,20 +12,20 @@ ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8237c8e29007d010cd99e4323bf8e88a23b7e9fb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838540"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834465"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Dialogové okno Editor podmínek pravidla (starší verze)
 Toto téma popisuje, jak používat **Editor podmínek pravidla** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Vytvoření a úprava podmínky deklarativního pravidla pomocí **Editor podmínek pravidla** dialogové okno. Tyto podmínky pravidla jsou vystaveny jako vlastnosti na těchto aktivitách out-of-box Windows Workflow Foundation:  
   
-- [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
 - [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
@@ -62,7 +59,7 @@ Toto téma popisuje, jak používat **Editor podmínek pravidla** dialogové okn
   
 - Aritmetické operátory: +, -, *, /, MOD  
   
-- Logické operátory: A, & &, OR, &#124; &#124;, ne,!  
+- Logické operátory: A &AMP; &AMP;, OR, &AMP;#124; &AMP;#124;, NE,!  
   
 - Bitové operátory: &&#124;  
   
@@ -86,7 +83,7 @@ Toto téma popisuje, jak používat **Editor podmínek pravidla** dialogové okn
   
 ## <a name="see-also"></a>Viz také  
  [Aktivita typu IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   
- [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)   
+ [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)   
  [Aktivitou typu ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)   
  [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)   
  [Dialogové okno Vybrat podmínku (starší verze)](../workflow-designer/select-condition-dialog-box-legacy.md)   

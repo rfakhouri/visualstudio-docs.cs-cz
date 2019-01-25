@@ -1,14 +1,9 @@
 ---
 title: Aktivita GPU (stránkování) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuactivity
 - vs.cv.threads.timeline.gpupaging
@@ -16,13 +11,13 @@ ms.assetid: 95284ac5-3492-4f7b-a79f-7d2840a07679
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cba0335a7090bc8f7308d5a64e8fedebedd99a6e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5979ccf8cafedb849b7ae9f7af6b0b35096e624f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789925"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769087"
 ---
 # <a name="gpu-activity-paging"></a>Aktivita GPU (stránkování)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,6 +28,3 @@ ms.locfileid: "51789925"
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení využití](../profiling/utilization-view.md)
-
-
-

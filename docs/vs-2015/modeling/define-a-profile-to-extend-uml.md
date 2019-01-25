@@ -1,12 +1,9 @@
 ---
 title: Definování profilu pro rozšíření UML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730330"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770761"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definování profilu pro rozšíření UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
   
 5. Na **prostředky** stránce, přidejte řádek s popisem profilu:  
   
-   -   Klikněte na tlačítko **nové**. Nastavte pole v **přidat nové aktivum** dialogové okno následujícím způsobem.  
+   -   Klikněte na možnost **Nové**. Nastavte pole v **přidat nové aktivum** dialogové okno následujícím způsobem.  
   
    -   Nastavte **typ** do `Microsoft.VisualStudio.UmlProfile`  
   
@@ -223,9 +220,9 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
 7.  Vytváření rozšíření sady Visual Studio sestavením rozšíření projektu nebo zkomprimováním všech souborů, jak je popsáno v předchozích částech.  
   
 ##  <a name="Schema"></a> Struktura profilu  
- Soubor XSD profilů UML lze najít v následující ukázce: [nastavení stereotypů a profilů XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Při upravování souborů profilů snazší, nainstalujte `.xsd` v souboru:  
+ Soubor XSD profilů UML lze najít v následující ukázce: [Nastavení stereotypů a profilů XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Při upravování souborů profilů snazší, nainstalujte `.xsd` v souboru:  
   
- **%ProgramFiles%\Microsoft visual Studio [verze] \Xml\Schemas**  
+ **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**  
   
  Tato část používá profil C# jako příklad. Definici kompletního profilu si můžete prohlédnout ve:  
   
@@ -280,7 +277,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
 </enumerationType>  
 ```  
   
-#### <a name="metaclasses"></a>Metatřídy  
+#### <a name="metaclasses"></a>Metaclasses  
  `<metaclasses>` Části je uveden seznam typů prvků modelu, na které lze definovat stereotypy v tomto profilu:  
   
 ```  
@@ -345,7 +342,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
  Moje Stereotypy se nezobrazují mých modelech UML.  
  Musíte vybrat profil v balíčku nebo modelu. Stereotypy se pak objeví na prvcích uvnitř manifestu nebo modelu. Další informace najdete v tématu [elementům modelu UML Stereotypy přidat](../modeling/add-stereotypes-to-uml-model-elements.md).  
   
- Při otevření modelu UML se zobrazí následující chyba: **VS1707: následující profily nelze načíst, protože došlo k chybě serializace: MyProfile.profile**  
+ Při otevření modelu UML se zobrazí následující chyba: **VS1707: Následující profily nelze načíst, protože došlo k chybě serializace: MyProfile.profile**  
  1.  Ověřte správnost základní syntaxe XML souboru .profile.  
   
 2. Zajistěte, aby byl každý název Monikeru v/ProfileName/nodename formuláři. ProfileName je hodnota atributu name v kořenovém uzlu profilu. NodeName je hodnota atributu name metatřídy, externalType nebo enumerationType.  
@@ -358,7 +355,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
   
 5. Znovu soubor VSIX a otevřete ho v Průzkumníku Windows opětovně nainstalovat. Restartujte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-   Rozšíření se nezobrazí ve Správci rozšíření, ale když se pokusíte znovu nainstalovat, zobrazí se následující zpráva: **rozšíření je již nainstalován na všech podporovaných produktů.**  
+   Rozšíření se nezobrazí ve Správci rozšíření, ale když se pokusíte znovu nainstalovat, zobrazí se následující zpráva: **Rozšíření je již nainstalován na všech podporovaných produktů.**  
    1.  Odeberte soubor rozšíření z podsložky *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [verze]  
   
    -   Chcete-li zobrazit *LocalAppData*, je nutné nastavit zobrazit skryté soubory a složky v kartě Zobrazení možností složky Windows Explorer.  
@@ -373,6 +370,3 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
  [Standardní Stereotypy pro modely UML](../modeling/standard-stereotypes-for-uml-models.md)   
  [Ukázka: Barevné prvky UML podle stereotypu](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Ukázka: Nastavení stereotypů, profily XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2451339b7291cba6bff8cebcc60358c84f018d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82424a62afa474d6db4df6933071523ce61343a5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884016"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873949"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Programování konceptů a funkcí pro rozšíření nástrojů SharePoint
   Existuje několik důležité koncepty programování a funkce, které se týkají nástroje služby SharePoint v sadě Visual Studio. Tyto koncepty a funkce hraje důležitou roli v většina rozšíření nástrojů služby SharePoint.  

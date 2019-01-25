@@ -1,33 +1,28 @@
 ---
 title: Trvalá Data v souboru projektu nástroje MSBuild | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 059ddc7b9b8fe0de06530af704bb5f7e271f6744
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d6c4318ff23fecdaf312533c7b92712db291fee8
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749642"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835157"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Trvalá data v souboru projektu nástroje MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Podtyp projektu může být nutné zachovat data specifická pro podtyp do souboru projektu pro pozdější použití. Podtyp projektu používá trvalost souborů projektu pro splnění následujících požadavků:  
   
-1.  Zachovat data použít při vytváření projektu. (Další informace o procesu Microsoft Build Engine, naleznete v tématu [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informace týkající se sestavení můžou buď:  
+1.  Zachovat data použít při vytváření projektu. (Další informace o procesu Microsoft Build Engine, naleznete v tématu [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informace týkající se sestavení můžou buď:  
   
     1.  Nezávislé na konfigurační data. To znamená, že data uložená v MSBuild prvky s podmínkami, prázdný nebo chybí.  
   
@@ -85,4 +80,3 @@ Podtyp projektu může být nutné zachovat data specifická pro podtyp do soubo
   
 ## <a name="see-also"></a>Viz také  
  [Podtypy projektů](../../extensibility/internals/project-subtypes.md)
-

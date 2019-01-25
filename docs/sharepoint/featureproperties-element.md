@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - FeatureProperties element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7843d8a8ee9fc21c546c8cfca57cfef63cd4015
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb345e66a53f9816281df6e948a8961252c0fcea
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955669"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862586"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties – element
   Kolekce hodnot vlastností, které jsou součástí funkce, když se nasadí do služby SharePoint. Po nasazení funkce můžete přistupovat hodnoty vlastností v kódu.  
@@ -40,13 +40,13 @@ ms.locfileid: "53955669"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[FeatureProperty –](../sharepoint/featureproperty-element.md)|Volitelný element.<br /><br /> Představuje vlastní vlastnosti ve formátu klíč/hodnota.|  
+|[FeatureProperty](../sharepoint/featureproperty-element.md)|Volitelný element.<br /><br /> Představuje vlastní vlastnosti ve formátu klíč/hodnota.|  
   
 ### <a name="parent-elements"></a>Nadřazené prvky
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položku Sharepointového projektu. Tento prvek požadovaný kořenový element z `.spdata` souboru.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Představuje položku Sharepointového projektu. Tento prvek požadovaný kořenový element z `.spdata` souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
  Další informace o vlastnosti funkce, najdete v části [poskytují informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
@@ -55,7 +55,7 @@ ms.locfileid: "53955669"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu služby SharePoint|  
 |**Soubor ověření**|ProjectItemModelSchema.xsd|  
 |**Může být prázdný**|Ne|  

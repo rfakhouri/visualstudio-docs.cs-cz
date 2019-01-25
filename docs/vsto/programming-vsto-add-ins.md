@@ -27,17 +27,17 @@ helpviewer_keywords:
 - ThisAddIn_Startup
 - application-level add-ins [Office development in Visual Studio], programming
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef06079322b521abca2aa1fb6becf720c4ad86c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830648"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867244"
 ---
 # <a name="program-vsto-add-ins"></a>Programování doplňků VSTO
   Při vytvoření doplňku VSTO můžete rozšířit aplikace Microsoft Office, můžete psát kód přímo `ThisAddIn` třídu ve vašem projektu. Tato třída slouží k provádění úloh, jako je například přístup k modelu objektu hostitelské aplikace Microsoft Office, přizpůsobení uživatelského rozhraní (UI) aplikace a zveřejnění objekty v doplňku VSTO pro ostatní řešení pro Office.  
@@ -61,13 +61,13 @@ ms.locfileid: "53830648"
   
 |Hostitelské aplikace|Návratový typ hodnoty|  
 |----------------------|-----------------------|  
-|Aplikace Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|  
-|Aplikace Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|  
-|Aplikace Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|  
+|Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|  
+|Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|  
+|Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|  
 |Aplikace Microsoft Office PowerPoint|<xref:Microsoft.Office.Interop.PowerPoint.Application>|  
 |Aplikace Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|  
-|Aplikace Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|  
-|Aplikace Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|  
+|Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|  
+|Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|  
   
  Následující příklad kódu ukazuje, jak používat `Application` pole, které chcete vytvořit nový sešit v doplňku VSTO pro aplikaci Microsoft Office Excel. Tento příklad je určen ke spuštění z `ThisAddIn` třídy.  
   

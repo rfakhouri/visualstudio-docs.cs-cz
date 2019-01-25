@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d2736dbcde8708589b4918979acacfdafa34cc4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890099"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864278"
 ---
 # <a name="projectitem-element"></a>ProjectItem – element
   Představuje položku Sharepointového projektu. Tento prvek požadovaný kořenový element z *.spdata* souboru.  
@@ -57,10 +57,10 @@ ms.locfileid: "53890099"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ExtensionData –](../sharepoint/extensiondata-element.md)|Volitelný element.<br /><br /> Představuje kolekci vlastních datových položek, které jsou spojeny s položku Sharepointového projektu.<br /><br /> Může obsahovat pouze jednu **ExtensionData** elementu.|  
-|[FeatureProperties –](../sharepoint/featureproperties-element.md)|Volitelný element.<br /><br /> Reprezentuje kolekci hodnot vlastností, které jsou součástí funkce, když se nasadí do služby SharePoint.<br /><br /> Může obsahovat pouze jednu **FeatureProperties** elementu.|  
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Volitelný element.<br /><br /> Představuje kolekci vlastních datových položek, které jsou spojeny s položku Sharepointového projektu.<br /><br /> Může obsahovat pouze jednu **ExtensionData** elementu.|  
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|Volitelný element.<br /><br /> Reprezentuje kolekci hodnot vlastností, které jsou součástí funkce, když se nasadí do služby SharePoint.<br /><br /> Může obsahovat pouze jednu **FeatureProperties** elementu.|  
 |[Soubory](../sharepoint/files-element.md)|Volitelné **FileCollectionType** elementu.<br /><br /> Určuje soubory, které chcete nasadit položky projektu služby SharePoint, jako je například souborů elementu funkce a výstupu závislé jiné-projektů služby SharePoint.<br /><br /> Zahrňte **soubory** nebo **ProjectItemFolder** elementu, ale ne obojí.|  
-|[ProjectItemFolder –](../sharepoint/projectitemfolder-element.md)|Volitelné **ProjectItemFolderType** elementu.<br /><br /> Představuje mapované složky.<br /><br /> Zahrňte **soubory** nebo **ProjectItemFolder** elementu, ale ne obojí.|  
+|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Volitelné **ProjectItemFolderType** elementu.<br /><br /> Představuje mapované složky.<br /><br /> Zahrňte **soubory** nebo **ProjectItemFolder** elementu, ale ne obojí.|  
 |[SafeControls –](../sharepoint/safecontrols-element.md)|Volitelný element.<br /><br /> Představuje kolekci ovládacích prvcích ASPX a webových částech, které jsou označeny jako bezpečné pro všechny uživatele pro přístup na libovolné stránce ASPX na webu služby SharePoint.<br /><br /> Může obsahovat pouze jednu **SafeControls** elementu.|  
   
 ### <a name="parent-elements"></a>Nadřazené prvky
@@ -70,7 +70,7 @@ ms.locfileid: "53890099"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu služby SharePoint|  
 |**Soubor ověření**|ProjectItemModelSchema.xsd|  
 |**Může být prázdný**|Ne|  

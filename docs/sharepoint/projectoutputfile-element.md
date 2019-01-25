@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectOutputFile element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea476c2d2b73ec9c59f7d3f7cfbc9a0b0cab5bd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69af1992ba07fb75859a8f71bd0ee3eecadeaa0d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948612"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865330"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile – element
   Představuje výstupní samostatný projekt obsahující položku projektu při nasazení do služby SharePoint.  
@@ -41,7 +41,7 @@ ms.locfileid: "53948612"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|**ProjectId.**|Vyžaduje **xs:string** atribut.<br /><br /> Identifikátor GUID závislého projektu, který má výstup, který chcete zahrnout. To odpovídá **ProjectGuid** element v souboru závislý projekt.|  
+|**ProjectId**|Vyžaduje **xs:string** atribut.<br /><br /> Identifikátor GUID závislého projektu, který má výstup, který chcete zahrnout. To odpovídá **ProjectGuid** element v souboru závislý projekt.|  
 |**ProjectPath**|Vyžaduje **xs:string** atribut.<br /><br /> Relativní cesta, včetně názvu souboru projektu, závislého projektu, který má výstup, který chcete zahrnout. Tato cesta je relativní vzhledem ke kořenové složce Sharepointového projektu, který obsahuje položku Sharepointového projektu.|  
 |**Cíl**|Volitelné **xs:string** atribut.<br /><br /> Cesta, kam se výstup závislého projektu k nasazení na serveru SharePoint server vzhledem ke kořenové složky nasazení. Kořenové složky nasazení se určuje podle typ nasazení určený **typ** atribut.<br /><br /> Další informace najdete v popisech pro **cesty nasazení** a **kořen nasazení** položky v projektu služby SharePoint [řešení pro vývoj SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Typ**|Vyžaduje **xs:string** atribut.<br /><br /> Typ nasazení určený pro výstup závislého projektu. Další informace o možných hodnot, viz popis **typ nasazení** vlastnosti položky projektu služby SharePoint v [řešení vývoj služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
@@ -62,7 +62,7 @@ ms.locfileid: "53948612"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu služby SharePoint|  
 |**Soubor ověření**|ProjectItemModelSchema.xsd|  
 |**Může být prázdný**|Ne|  

@@ -1,27 +1,22 @@
 ---
 title: Vytvoření vlastní úvodní stránku | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Create start page
 - custom start page
 - customize start page
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
-manager: douge
-ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dc01d4d635d297f1597d900687673dd4d35d049f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815036"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761549"
 ---
 # <a name="creating-your-own-start-page"></a>Vytvoření vlastní úvodní stránky
 Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou stránku spuštění můžete vytvořit vlastní úvodní stránky.  
@@ -36,7 +31,7 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
 1.  Stáhněte a nainstalujte [šablonu projektu úvodní stránka](http://go.microsoft.com/fwlink/?LinkId=186204) z Galerie sady Visual Studio.  
   
     > [!WARNING]
-    >  V tuto chvíli se neupgradovala šablony projektů Visual Studio 2010 úvodní stránku. Informace o tom, jak upgradovat tuto šablonu naleznete v tématu [postupy: Upgrade Visual Studio vlastní úvodní stránku](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    >  V tuto chvíli se neupgradovala šablony projektů Visual Studio 2010 úvodní stránku. Informace o tom, jak upgradovat tuto šablonu naleznete v tématu [jak: Vlastní úvodní stránku sady Visual Studio upgradovat](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2.  Po instalaci šablony, vytvořte nový projekt úvodní stránka s ním.  
   
@@ -48,7 +43,7 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
   
 5.  Z **Průzkumníka řešení**, otevřete **StartPage.xaml**.  
   
-6.  Upravte StartPage.xaml.  
+6.  Edit StartPage.xaml.  
   
      Práci můžete zobrazit stisknutím klávesy F5 spustíte experimentální instanci sady Visual Studio s vlastní úvodní stránky nainstalované.  
   
@@ -59,7 +54,7 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
   
 1. Vytvořte projekt úvodní stránky pomocí šablony projektu úvodní stránku, jak je popsáno v předchozím postupu.  
   
-2. Otevřete StartPage.xaml.  
+2. Open StartPage.xaml.  
   
 3. Odebere veškerý obsah stránky, byste museli opustit jenom vnější xml elementů a obsahující mřížky <xref:System.Windows.Controls.Grid> elementu, tak, aby váš soubor .xaml vypadá podobně jako v následujícím příkladu.  
   
@@ -106,4 +101,4 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Návody: Přidání vlastního souboru XAML na úvodní stránku](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Návod: Přidání XAML vlastní úvodní stránku](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, samples
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 441137d7da74e6fb9b0b53370e012bbacb859087
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964530"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873285"
 ---
 # <a name="office-development-samples"></a>Ukázky vývoje pro Office
   Visual Studio obsahuje ukázkové aplikace, které ukazují, jak vytvořit řešení pro systém Office pomocí aplikace Microsoft Office developer tools. Kód v těchto ukázkách ukazuje syntaxi, struktury a techniky použít k vytváření řešení pro systém Office.  
