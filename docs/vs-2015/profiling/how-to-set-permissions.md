@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: nastavení oprávnění | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Nastavení oprávnění | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -19,15 +14,15 @@ ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2bfbcb15d9dae16dd7d65ac00ad7c5b17600fa9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792881"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833833"
 ---
-# <a name="how-to-set-permissions"></a>Postupy: nastavení oprávnění
+# <a name="how-to-set-permissions"></a>Postupy: Nastavení oprávnění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje, jak správce počítače uděluje oprávněních zabezpečení pro profilaci a uživatele nebo skupiny, který nemá oprávnění správce na tomto počítači.  
@@ -83,7 +78,7 @@ Toto téma popisuje, jak správce počítače uděluje oprávněních zabezpeče
   
 5.  V **oprávnění pro \<uživatelské jméno >** , vyberte zaškrtávací políčko pro **úplné řízení**.  
   
-6.  Klikněte na tlačítko **OK**.  
+6.  Klikněte na **OK**.  
   
      Tím udělíte oprávnění pro uživatele pro sdílené složky strom, který začíná složce vybrali v kroku 5.  
   
@@ -133,8 +128,5 @@ Toto téma popisuje, jak správce počítače uděluje oprávněních zabezpeče
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
- [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilace a zabezpečení systému Windows Vista](../profiling/profiling-and-windows-vista-security.md)
-
-
-
