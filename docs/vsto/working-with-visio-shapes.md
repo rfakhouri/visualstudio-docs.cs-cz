@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], common tasks with Visio shapes
 - shapes [Office development in Visual Studio], common tasks with Visio shapes
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa78a0b8956b390e48221f7a516c7a41e6f5ced9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a05e009d35facbcab960c6550e7619b643fc7c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942317"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872102"
 ---
 # <a name="work-with-visio-shapes"></a>Práce s obrazci aplikace Visio
   Témata v této části poskytují podrobné postupy a příklady kódu pro použití objektového modelu aplikace Microsoft Office Visio pro práci s tvary v projektech pro systém Office.  

@@ -1,14 +1,9 @@
 ---
 title: Kanály (zobrazení vláken) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feebccb0905a4e3161484b5c1fe9f0142fa41d53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794199"
 ---
 # <a name="channels-threads-view"></a>Kanály (Zobrazení vláken)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ Vizualizátor souběžnosti zobrazí čtyři typy kanálů: vláken kanály, dis
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)
-
-
-

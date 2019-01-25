@@ -1,14 +1,9 @@
 ---
 title: '&lt;vstupní bod&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
 - urn:schemas-microsoft-com:asm.v2#entryPoint
@@ -23,13 +18,13 @@ ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790964"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;vstupní bod&gt; – Element (aplikace ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,18 +64,18 @@ Určuje sestavení, které by měla být spuštěna při to [!INCLUDE[ndptecclic
   
  `entryPoint` obsahuje následující prvky.  
   
-## <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
- Požadováno. Role `assemblyIdentity` a jeho atributy jsou definovány v [ \<assemblyIdentity > Element](../deployment/assemblyidentity-element-clickonce-application.md).  
+## <a name="assemblyidentity"></a>assemblyIdentity  
+ Povinný parametr. Role `assemblyIdentity` a jeho atributy jsou definovány v [ \<assemblyIdentity > Element](../deployment/assemblyidentity-element-clickonce-application.md).  
   
  `processorArchitecture` Atribut tohoto elementu a `processorArchitecture` atributu definovanému v `assemblyIdentity` jinde v aplikaci musí odpovídat manifestu.  
   
 ## <a name="commandline"></a>příkazový řádek  
- Požadováno. Musí být podřízeným `entryPoint` elementu. Nemá žádný podřízený element a má následující atributy.  
+ Povinný parametr. Musí být podřízeným `entryPoint` elementu. Nemá žádný podřízený element a má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`file`|Požadováno. Místní reference na sestavení po spuštění pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. Tato hodnota nemůže obsahovat lomítko (/) nebo zpětné lomítko (\\) oddělovače cest.|  
-|`parameters`|Požadováno. Popisuje akce má být provedena se vstupním bodem. Jediná platná hodnota je `run`; Pokud je zadán prázdný řetězec, `run` se předpokládá, že.|  
+|`file`|Povinný parametr. Místní reference na sestavení po spuštění pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. Tato hodnota nemůže obsahovat lomítko (/) nebo zpětné lomítko (\\) oddělovače cest.|  
+|`parameters`|Povinný parametr. Popisuje akce má být provedena se vstupním bodem. Jediná platná hodnota je `run`; Pokud je zadán prázdný řetězec, `run` se předpokládá, že.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
  Volitelné. Pokud zahrnuty, určuje, zda toto nasazení obsahuje komponenty, která se nasadí v rámci vlastního hostitele a není samostatné aplikace.  
@@ -96,12 +91,12 @@ Určuje sestavení, které by měla být spuštěna při to [!INCLUDE[ndptecclic
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
   
- Aplikace, která obsahuje customUX element musí poskytnout vlastní instalační program, který používá <xref:System.Deployment.Application.InPlaceHostingManager> instalace pro provádění operací. Aplikace s tímto elementem není nainstalovat poklepáním na jeho zaváděcí manifestu nebo setup.exe. Vlastní instalační program můžete vytvořit položky nabídky Start, zástupce a položky panelu Přidat nebo odebrat programy. Pokud vlastní instalační program nevytvoří záznam přidat nebo odebrat programy, musí ukládat identifikátor předplatného poskytované <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> vlastnost a povolit uživatele pro odinstalaci aplikace později voláním <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> metody. Další informace najdete v tématu [návod: vytvoření vlastního instalátoru pro aplikaci ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
+ Aplikace, která obsahuje customUX element musí poskytnout vlastní instalační program, který používá <xref:System.Deployment.Application.InPlaceHostingManager> instalace pro provádění operací. Aplikace s tímto elementem není nainstalovat poklepáním na jeho zaváděcí manifestu nebo setup.exe. Vlastní instalační program můžete vytvořit položky nabídky Start, zástupce a položky panelu Přidat nebo odebrat programy. Pokud vlastní instalační program nevytvoří záznam přidat nebo odebrat programy, musí ukládat identifikátor předplatného poskytované <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> vlastnost a povolit uživatele pro odinstalaci aplikace později voláním <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> metody. Další informace najdete v tématu [názorný postup: Vytvoření vlastního instalátoru pro aplikaci ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
   
 ## <a name="remarks"></a>Poznámky  
  Tento prvek určuje sestavení a vstupní bod pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace.  
   
- Nemůžete použít `commandLine` pro předání parametrů do vaší aplikace v době běhu. Parametry řetězce dotazu pro dostanete [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení z vaší aplikace <xref:System.AppDomain>. Další informace najdete v tématu [postupy: načtení informací řetězce dotazu do Online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Nemůžete použít `commandLine` pro předání parametrů do vaší aplikace v době běhu. Parametry řetězce dotazu pro dostanete [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení z vaší aplikace <xref:System.AppDomain>. Další informace najdete v tématu [jak: Načtení informací řetězce dotazu do Online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje `entryPoint` elementu v manifestu aplikace pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. Tento příklad kódu je součástí většího příkladu určeného pro [Manifest aplikace ClickOnce](../deployment/clickonce-application-manifest.md) tématu.  
@@ -121,6 +116,3 @@ Určuje sestavení, které by měla být spuštěna při to [!INCLUDE[ndptecclic
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – manifest aplikace ](../deployment/clickonce-application-manifest.md)
-
-
-

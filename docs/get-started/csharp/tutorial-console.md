@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 71a465b80f56cba56d0c20d3484765ca1837b167
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204428"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872505"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Kurz: Začínáme s aplikaci konzoly C# v sadě Visual Studio
 
@@ -46,15 +46,38 @@ Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můž
 
 ## <a name="create-the-app"></a>Vytvoření aplikace
 
-Nejprve přidáme kód pro vytvoření základní kalkulačky. Dále jsme budete upravit kód pro přidání funkce. Potom jsme budeme ladit aplikaci vyhledat a opravit chyby. Nakonec jsme upřesníte kód, který efektivnější.
+Nejprve se podíváme procvičili matematiku základními celočíselnými v C#. Potom přidáme kód pro vytvoření základní kalkulačky. Dále jsme budete upravit kód pro přidání funkce. Potom jsme budeme ladit aplikaci vyhledat a opravit chyby. A nakonec jsme upřesníte kód, který efektivnější.
 
-Začněme přidáním kódu základní kalkulačky k projektu.
+Začněme procvičili matematiku celé číslo v C#.
 
 1. V editoru kódu odstraňte výchozí kód "Hello World".
 
     ![Odstranit výchozí kódu Hello World z nové kalkulačky aplikace](./media/csharp-console-calculator-deletehelloworld.png)
 
-   Konkrétně odstraňte veškerý kód, který se zobrazí v editoru kódu.
+   Konkrétně odstranit řádek, který říká, `Console.WriteLine("Hello World!");`.
+
+1. Místo toho zadejte Tenhle kód:
+
+    ```csharp
+            int a = 42;
+            int b = 119;
+            int c = a + b;
+            Console.WriteLine(c);
+            Console.ReadKey();
+    ```
+1. Zvolte **Kalkulačka** ke spuštění programu, nebo stiskněte klávesu **F5**.
+
+   ![Klikněte na tlačítko kalkulačky ke spuštění aplikace z panelu nástrojů](./media/csharp-console-calculator-button.png)
+
+   Otevře se okno konzoly, který zjistí součet 42 + 119.  
+
+1. Nyní, zkuste změnit `int c = a + b;` řádek kódu pomocí jiný operátor `-` pro odčítání, `*` pro násobení, nebo */* pro dělení.
+
+    Všimněte si, že pokud změníte operátor a spusťte program, výsledek se změní, příliš.
+
+Můžeme pokračovat přidáním složitější sadu Kalkulačka kódu do projektu.
+
+1. Odstraňte veškerý kód, který se zobrazí v editoru kódu.
 
 1. Zadejte nebo vložte následující nový kód do editoru kódu:
 
@@ -509,7 +532,7 @@ Konzolová aplikace přijímá vstupní a zobrazí výstup v okně příkazovéh
 
 Úlohy v sadě Visual Studio představuje sadu programovací možnosti a šablony, které můžete použít k přizpůsobení instalace sady Visual Studio. Úloha se nainstaluje pouze těch nástrojů, které potřebujete pro programovací jazyk a platformu podle vašeho výběru. Tady je postup k instalaci.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Pomocí dialogového okna Nový projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Pomocí dialogového okna Nový projekt
 
 1. Zvolte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
 
@@ -519,7 +542,7 @@ Konzolová aplikace přijímá vstupní a zobrazí výstup v okně příkazovéh
 
    ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Pomocí nabídky panelu nástrojů
 
 1. Zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
 

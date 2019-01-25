@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989160"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871946"
 ---
 # <a name="replaceable-parameters"></a>Nahraditelné parametry
   Nahraditelné parametry, nebo *tokeny*, je možné zadat hodnoty pro položky řešení služby SharePoint, skutečné hodnoty nejsou známá v době návrhu v souborech projektu. Jsou to funkce podobná standardní [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokeny šablony. Další informace najdete v tématu [parametry šablony](../ide/template-parameters.md).  
@@ -65,8 +65,8 @@ ms.locfileid: "53989160"
 |$SharePoint.Feature.DeploymentPath$|Název složky, která obsahuje funkci v balíčku. Tento token odpovídá vlastnosti "Cesta nasazení" v Návrháři funkce. Příkladem hodnoty je "Project1_Feature1".|  
 |$SharePoint.Feature.Id$|Sharepointové ID funkce obsahující. Tento token, protože všechny tokeny úroveň funkcí, mohou být používány pouze soubory obsažené v balíčku prostřednictvím funkce, ne přímo do balíčku přidat mimo funkci.|  
 |$SharePoint.ProjectItem.Name$|Název položky projektu (nikoli jeho název souboru), jako získané z **ISharePointProjectItem.Name**.|  
-|$SharePoint.Type. \<GUID >. AssemblyQualifiedName$|Kvalifikovaný název sestavení odpovídající typ [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] tokenu. Formát [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] je malá písmena a odpovídá Guid.ToString("D") formátu (to znamená, že tomuto: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
-|$SharePoint.Type. \<GUID >. Jméno a příjmení$|Úplný název typu odpovídající identifikátor GUID v tokenu. Formát čísla GUID je malá písmena a odpovídá Guid.ToString("D") formátu (to znamená, že tomuto: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|Kvalifikovaný název sestavení odpovídající typ [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] tokenu. Formát [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] je malá písmena a odpovídá Guid.ToString("D") formátu (to znamená, že tomuto: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.FullName$|Úplný název typu odpovídající identifikátor GUID v tokenu. Formát čísla GUID je malá písmena a odpovídá Guid.ToString("D") formátu (to znamená, že tomuto: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
   
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Přidejte rozšíření do seznamu přípon souborů náhradních tokenů
  Tokeny lze teoreticky podle všech souborů, které patří do projektu služby SharePoint položky obsažené v balíčku, ve výchozím nastavení, ale [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vyhledá tokeny pouze v balíčku soubory, soubory manifestu a soubory, které mají následující přípony:  

@@ -1,25 +1,20 @@
 ---
 title: 'Krok 8: Přizpůsobení kvízu | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 559bd2a1b908ab5b1590a2ec2dd71225020db79a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 413a0cb2f1445f166f1a5c9e541b2a4268ff2e31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776082"
 ---
 # <a name="step-8-customize-the-quiz"></a>Krok 8: Přizpůsobení kvízu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,6 @@ V poslední části tutoriálu prozkoumáte několik způsobů, jak kvíz přizp
   
 -   Chcete-li stáhnout úplnou verzi kvízu, přečtěte si téma [ukázkový kurz pro dokončení matematického kvízu](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
--   Chcete-li přejít k dalšímu kurzu, přečtěte si téma [Tutorial 3: Create a Matching Game](../ide/tutorial-3-create-a-matching-game.md).  
+-   Chcete-li přejít k dalšímu kurzu, přečtěte si téma [Tutorial 3: Vytvořit odpovídající her](../ide/tutorial-3-create-a-matching-game.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: Přidat úlohy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md).
-
-
-
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: Přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md).

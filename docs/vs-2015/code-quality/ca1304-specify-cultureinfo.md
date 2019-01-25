@@ -1,13 +1,9 @@
 ---
 title: 'CA1304: Zadejte možnosti CultureInfo | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
 - CA1304
@@ -19,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec29cb6c0a7d00ca067ababf6634304f4b2fe8ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 173ab11e85853324089f1dee66cd047e0afb7f13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767373"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: Zadejte možnosti CultureInfo
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: Určete CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,7 +32,7 @@ ms.locfileid: "53966444"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Metoda nebo konstruktor volá člen, který má přetížení přijímající <xref:System.Globalization.CultureInfo?displayProperty=fullName> parametr a tato metoda nebo konstruktor nevolá přetížení přebírající <xref:System.Globalization.CultureInfo> parametru. Toto pravidlo ignoruje volání těchto metod:
 
 -   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
@@ -82,4 +78,4 @@ ms.locfileid: "53966444"
  [CA1305: Zadejte možnosti IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Viz také
- [NIB: Pomocí třídy CultureInfo](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
+ [NIB: Pomocí třídy CultureInfo](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

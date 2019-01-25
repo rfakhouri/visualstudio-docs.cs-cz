@@ -1,14 +1,9 @@
 ---
 title: Upravit a pokračovat – dialogové okno chybové zprávy | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvailable
 - vs.debug.ENC.CannotEditWhileException
@@ -23,13 +18,13 @@ ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d1407b782e767ca06ce5dbd07d8a088c72f7002f
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 73018dcdc34d3a824ff13da13fc12d03b8d13a7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54153991"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788600"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Dialogové okno chybových zpráv operace Upravit a pokračovat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,6 +61,3 @@ Toto dialogové okno se zobrazí při ladění v jazyce, který podporuje funkce
   
 ## <a name="see-also"></a>Viz také  
  [Podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md)
-
-
-

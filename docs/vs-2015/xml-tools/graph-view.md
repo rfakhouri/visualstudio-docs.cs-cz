@@ -1,25 +1,20 @@
 ---
 title: Zobrazení grafu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813619"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764915"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
   
  Následující obrázek ukazuje zobrazení grafu se šesti globální uzly na jeho návrhové ploše.  
   
- ![Schéma XML-zobrazení návrháře grafu](../xml-tools/media/xsddesigner-graphview.gif "XSDDesigner_GraphView")  
+ ![XML Schema Designer Graph View](../xml-tools/media/xsddesigner-graphview.gif "XSDDesigner_GraphView")  
   
 ## <a name="design-surface"></a>Návrhová plocha  
  Na návrhovou plochu zobrazení grafu zobrazí obsah [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md). Pokud pracovní prostor obsahuje všechny globální uzly v sadě schémat, uzly se zobrazují na návrhové ploše zobrazení grafu a šipky se vykreslují mezi uzly, které mají relace.  
@@ -42,12 +37,12 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
   
  ![XSD návrháře; Zobrazení grafu](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
   
- Pokud sadě schémat obsahuje chyby, na konci seznamu se zobrazí následující text: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."  
+ Pokud sadě schémat obsahuje chyby, zobrazí se na konci seznamu následující text: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."  
   
 ## <a name="breadcrumb-bar"></a>Navigační panel  
  Na panelu navigace s popisem cesty v dolní části zobrazení grafu zobrazuje umístění vybraného uzlu v sadě schémat. Pokud je vybráno více položek, panelu navigace s popisem cesty bude prázdné.  
   
-## <a name="context-menu"></a>Místní nabídka  
+## <a name="context-menu"></a>Kontextová nabídka  
  Následující tabulka popisuje možnosti, které jsou k dispozici pro všechny uzly na návrhové ploše zobrazení grafu.  
   
 |Možnost|Popis|  
@@ -100,7 +95,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 ## <a name="xsd-toolbar"></a>Panel nástrojů XSD  
  Při aktivním zobrazení grafu jsou povoleny následující tlačítka panelu nástrojů XSD.  
   
- ![Panel nástrojů návrháře schémat XML](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")  
+ ![XML Schema Designer Toolbar](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")  
   
 |Možnost|Popis|  
 |------------|-----------------|  
@@ -110,10 +105,10 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 |**Vymazat pracovní prostor**|Vymaže pracovní prostor a návrhovou plochu.|  
 |**Odebrat z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a serface návrhu.|  
 |**Odeberte všechny kromě výběru z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a serface návrhu. Tato možnost je povolená v zobrazení modelu obsahu a zobrazení grafu.|  
-|**Zleva doprava**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace zleva doprava. Tuto možnost lze přistupovat pomocí klávesové zkratky: **Alt + šipka vpravo**.|  
-|**Zprava doleva**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace zprava doleva. Tuto možnost lze přistupovat pomocí klávesové zkratky: **Alt + šipka vlevo**.|  
-|**Shora dolů**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace shora dolů. Tuto možnost lze přistupovat pomocí klávesové zkratky: **Alt + Šipka dolů**.|  
-|**Zdola nahoru**|Změní rozložení v zobrazení grafu do dolní části horní Hierarchická reprezentace uzly. Tuto možnost lze přistupovat pomocí klávesové zkratky: **Alt + šipka nahoru**.|  
+|**Zleva doprava**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace zleva doprava. Tuto možnost lze přistupovat pomocí klávesové zkratky: **ALT + Šipka doprava**.|  
+|**Zprava doleva**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace zprava doleva. Tuto možnost lze přistupovat pomocí klávesové zkratky: **ALT + Šipka doleva**.|  
+|**Shora dolů**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace shora dolů. Tuto možnost lze přistupovat pomocí klávesové zkratky: **ALT + Šipka dolů**.|  
+|**Zdola nahoru**|Změní rozložení v zobrazení grafu do dolní části horní Hierarchická reprezentace uzly. Tuto možnost lze přistupovat pomocí klávesové zkratky: **ALT + Šipka nahoru**.|  
   
 ## <a name="panscroll"></a>Posun/posuvníku  
  Návrhovou plochu se můžete pohybovat pomocí posuvníky nebo tím, že podržíte klávesu CTRL při klikněte a přetáhněte myší. Při posouvání návrhové plochy, klikněte na tlačítko a přetáhněte kurzoru se změní na čtyři překřížené šipky směřující do čtyř směrů.  
@@ -145,6 +140,3 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
   
 ## <a name="see-also"></a>Viz také  
  [Návrhová plocha](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

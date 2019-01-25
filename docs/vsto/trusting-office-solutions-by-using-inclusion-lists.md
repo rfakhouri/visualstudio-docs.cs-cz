@@ -10,17 +10,17 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - security [Office development in Visual Studio], inclusion lists
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 819225c152c4436340714dd2f5ecb31f5ec6b2f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b0e3df3562fe9a7bcbf2ca9cdc899b9303eb19a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857663"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868608"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Vztah důvěryhodnosti řešení pro systém Office s použitím seznamů povolených položek
   Seznamy povolených položek povolit uživatelům, aby měli vztah důvěryhodnosti pro řešení pro Office, které jsou podepsané certifikátem, který identifikuje vydavatele. Seznamy povolených položek jsou specifické pro uživatele a mohou být použity pro přizpůsobení na úrovni dokumentu a doplňky VSTO.  

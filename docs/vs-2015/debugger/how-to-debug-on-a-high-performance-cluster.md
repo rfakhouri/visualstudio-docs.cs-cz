@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Ladění na vysoký výkon clusteru | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2c17e66bdb8df087e4c8085a835686027f23bae
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: a283cfd34d0990a59bc5d8ce1109f2c0ae6b38bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54154383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801052"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Postupy: Ladění na vysoký výkon clusteru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
   
  Při ladění na vysoký výkon clusteru můžete použít všechny [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ladění systému windows a techniky, které jsou k dispozici pro vzdálené ladění. Vzhledem k tomu, že ladíte vzdáleně, ale okno externí konzoly není k dispozici.  
   
- **Vlákna** okno a **procesy** jsou obzvláště užitečné pro ladění paralelních aplikací. Tipy k používání těchto oken naleznete v tématu [jak: Použití okna procesy](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) a [jak: Použití okna vláken](../debugger/how-to-use-the-threads-window.md).  
+ **Vlákna** okno a **procesy** jsou obzvláště užitečné pro ladění paralelních aplikací. Tipy k používání těchto oken naleznete v tématu [jak: Použití okna procesy](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) a [jak: Použití okna vláken](../debugger/how-to-use-the-threads-window.md).  
   
  Následující postupy ukazují některé techniky, které jsou obzvláště užitečné pro ladění na vysoký výkon clusteru.  
   
@@ -108,10 +103,7 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Vzdálené ladění](../debugger/remote-debugging.md)   
- [Postupy: Použití okna procesy](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Postupy: Použití okna procesy](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [Postupy: Použití okna vláken](../debugger/how-to-use-the-threads-window.md)   
- [Vláken a procesů](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Vláken a procesů](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Použití zarážek](../debugger/using-breakpoints.md)
-
-
-

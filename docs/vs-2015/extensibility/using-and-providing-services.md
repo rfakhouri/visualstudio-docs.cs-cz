@@ -1,14 +1,9 @@
 ---
 title: Používání a poskytování služeb | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - examples [Visual Studio SDK], services
 - Visual Studio, services
@@ -16,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 caps.latest.revision: 42
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 189ff14c566c3007810ef35cd63ec03a5958e07c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763074"
 ---
 # <a name="using-and-providing-services"></a>Používání a poskytování služeb
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage nabízí konkrétní sadu rozhraní pro jiné VSPackage využívat. Například [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabízí <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> služby žádné VSPackage jeho zatížení. Tato služba poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> rozhraní, které lze použít k zápisu do protokolu aktivit. Další informace najdete v tématu [postupy: použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
+Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage nabízí konkrétní sadu rozhraní pro jiné VSPackage využívat. Například [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabízí <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> služby žádné VSPackage jeho zatížení. Tato služba poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> rozhraní, které lze použít k zápisu do protokolu aktivit. Další informace najdete v tématu [jak: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
   
  Rozšíření VSPackages můžete nabízet služby jejich vlastní použití <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> rozhraní...  
   
@@ -46,15 +41,14 @@ Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage nabíz
  [Postupy: Získání služby](../extensibility/how-to-get-a-service.md)  
  Popisuje, jak požádat o (spotřebovávat) služby.  
   
- [Postupy: Poskytování služby](../extensibility/how-to-provide-a-service.md)  
+ [Postupy: Poskytování služeb](../extensibility/how-to-provide-a-service.md)  
  Popisuje, jak poskytovat služby.  
   
- [Postupy: Poskytování asynchronní služby sady Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Postupy: Zadejte službu asynchronní aplikace Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Popisuje, jak k poskytování asynchronní služby.  
   
- [Postupy: Řešení problémů se službami](../extensibility/how-to-troubleshoot-services.md)  
+ [Postupy: Odstraňování potíží se službami](../extensibility/how-to-troubleshoot-services.md)  
  Tento článek popisuje běžné problémy a nabídne řešení k nim.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
-

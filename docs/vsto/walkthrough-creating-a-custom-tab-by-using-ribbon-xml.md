@@ -12,17 +12,17 @@ helpviewer_keywords:
 - XML [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], customizing
 - Custom tab [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b92c3ff12ab284ac208b012f3e03975b4eddd7c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955224"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871985"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Průvodce: Vytvoření vlastní karty pomocí kódu XML pásu karet
   Tento návod ukazuje, jak vytvořit vlastní kartu pásu karet pomocí **pásu karet (XML)** položky.  
@@ -43,7 +43,7 @@ ms.locfileid: "53955224"
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Aplikace Microsoft Word.  
+-   Microsoft Word.  
   
 ## <a name="create-the-project"></a>Vytvoření projektu  
  Prvním krokem je vytvoření projektu doplňku VSTO pro Word. Můžete se později ji přizpůsobíme, **Add-Ins** kartu tohoto dokumentu.  

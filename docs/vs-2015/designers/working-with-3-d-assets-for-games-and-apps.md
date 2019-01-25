@@ -1,27 +1,22 @@
 ---
 title: Práce s 3D prostředky pro hry a aplikace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797592"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Práce s 3D prostředky pro hry a aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ Tento dokument popisuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroje, 
 |[Práce se 3D modely](../designers/working-with-3-d-models.md)|Popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pro práci s 3D modely.|  
 |[Práce se shadery](../designers/working-with-shaders.md)|Popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] návrháře shaderu vytvořit a upravit vlastní shaderu účinky.|  
 |[Používání 3D prostředků ve hře nebo aplikaci](../designers/using-3-d-assets-in-your-game-or-app.md)|Popisuje postup používání prostředků, které jste vytvořili pomocí editoru obrázků, editoru modelů nebo návrháře shaderu ve hře nebo aplikaci.|
-
-
-

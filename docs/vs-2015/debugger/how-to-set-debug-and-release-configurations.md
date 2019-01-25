@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Konfigurace nastavení ladění a verzí | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -39,15 +34,15 @@ ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba827fda69b1dc455df4efe9c9f6eb83687780f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756940"
 ---
-# <a name="how-to-set-debug-and-release-configurations"></a>Postupy: Nastavení konfigurace ladění a verzí
+# <a name="how-to-set-debug-and-release-configurations"></a>Postupy: Konfigurace nastavení ladění a verzí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Projekty aplikace Visual Studio mají samostatné verze a ladění konfigurace pro váš program. Jak naznačují názvy, sestavení verze ladění pro ladění a verze vydání pro konečnou distribuci vydání.  
@@ -75,8 +70,5 @@ Projekty aplikace Visual Studio mají samostatné verze a ladění konfigurace p
  [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Nastavení projektu pro jazyk C# konfiguraci ladění](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Konfigurace ladění projektu v jazyce Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)   
- [Konfigurace ladění a verzí projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)
-
-
-
+ [Postupy: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)   
+ [Konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

@@ -1,14 +1,9 @@
 ---
 title: Formát specifikátorů v jazyce C# | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -31,13 +26,13 @@ ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 330a32b20eeab172ebf36e49f16e79aa936a1bdc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af24417bccd91bb55112d4da5e7896809169b9c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794727"
 ---
 # <a name="format-specifiers-in-c"></a>Specifikátory formátu v jazyce C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +65,7 @@ Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomoc�
 |d|Desítkové celé číslo|0x0065|101|  
 |dynamické odkazy|Zobrazí zadaný objekt pomocí dynamického zobrazení|Zobrazí všechny členy objektu, včetně dynamického zobrazení|Zobrazí pouze dynamické zobrazení|  
 |h|Šestnáctkové celé číslo|61541|0x0000F065|  
-|NQ|řetězec s žádné uvozovky|"String"|Moje řetězec|  
+|nq|řetězec s žádné uvozovky|"String"|Moje řetězec|  
 |hidden|Zobrazí všechny veřejné a neveřejné členy|Zobrazí veřejné členy|Zobrazí všechny členy|  
 |nezpracované|Zobrazí položky, jak se zobrazí v uzlu nezpracovaná položka. Platí pouze pro objekty proxy.|Slovník\<T >|Nezpracované zobrazení, slovníku\<T >|  
 |výsledky|Použít s proměnnou typu, který implementuje rozhraní IEnumerable nebo IEnumerable\<T >, obvykle výsledek výrazu dotazu. Zobrazí pouze členy, které obsahují výsledku dotazu.|Zobrazí všechny členy.|Zobrazí členy, splňují podmínky dotazu.|  
@@ -78,8 +73,3 @@ Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomoc�
 ## <a name="see-also"></a>Viz také  
  [Kukátko a Rychlé kukátko Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Proměnné Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
-
-
-
-

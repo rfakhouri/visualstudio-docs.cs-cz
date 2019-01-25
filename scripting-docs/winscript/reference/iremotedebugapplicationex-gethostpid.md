@@ -18,37 +18,43 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7570abb8436a49fb80f548d1a7136bf0fe7e0814
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 62033169e10585015b5f1439067aa0cbc42447a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754637"
 ---
 # <a name="iremotedebugapplicationexgethostpid"></a>IRemoteDebugApplicationEx:GetHostPid
-Vrátí ID procesu pro hostitelskou aplikaci.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
+
+Vrátí ID procesu pro hostitelskou aplikaci.
+
+## <a name="syntax"></a>Syntaxe
+
 ```cpp
-HRESULT GetHostPid(  
-   DWORD*  dwHostPid  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `dwHostPid`  
- [out] Identifikátor procesu hostitele.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
-  
-|Hodnota|Popis|  
-|-----------|-----------------|  
-|`S_OK`|Metoda byla úspěšná.|  
-  
-## <a name="remarks"></a>Poznámky  
- Použít integrovaného vývojového prostředí.  
-  
-## <a name="see-also"></a>Viz také  
- [IRemoteDebugApplicationEx – rozhraní](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+HRESULT GetHostPid(
+   DWORD*  dwHostPid
+);
+```
+
+### <a name="parameters"></a>Parametry
+
+`dwHostPid`
+
+[out] Identifikátor procesu hostitele.
+
+## <a name="return-value"></a>Návratová hodnota
+
+Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.
+
+|Hodnota|Popis|
+|-----------|-----------------|
+|`S_OK`|Metoda byla úspěšná.|
+
+## <a name="remarks"></a>Poznámky
+
+Použít integrovaného vývojového prostředí.
+
+## <a name="see-also"></a>Viz také:
+
+- [IRemoteDebugApplicationEx – rozhraní](iremotedebugapplicationex-interface.md)

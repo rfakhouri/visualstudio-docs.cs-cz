@@ -1,14 +1,9 @@
 ---
-title: Nástroj MSBuild | Dokumentace Microsoftu
-ms.custom: ''
+title: MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
@@ -16,13 +11,13 @@ ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c7e5a5a02f2ef5c114665d358e86d768a24a44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756568"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ ms.locfileid: "49837760"
 > [!NOTE]
 >  Team Foundation Build můžete použít k automatické kompilaci, testování, nasazení aplikace. Systém sestavení může automaticky spouštět sestavení, pokud vývojáři vrácení kódu se změnami (například jako součást strategie Nepřetržitá integrace) nebo podle plánu (například noční sestavení ověřovacího testu sestavení). Team Foundation Build kompiluje kód pomocí nástroje MSBuild. Další informace najdete v tématu [sestavte aplikaci](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
- Toto téma obsahuje přehled MSBuild. Úvodní tutoriál naleznete v tématu [návod: použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Toto téma obsahuje přehled MSBuild. Úvodní tutoriál naleznete v tématu [názorný postup: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
  **V tomto tématu**  
   
@@ -93,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ##  <a name="BKMK_ProjectFile"></a> Soubor projektu  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] používá formát souboru projektu založeného na XML, který je jednoduchý a rozšiřitelný. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Formát souboru projektu umožňuje vývojářům popsat položky, které mají být vytvořeny, a také jak mají být sestaveny pro různé operační systémy a konfigurace. Kromě toho formát souboru projektu umožňuje vývojářům vytvářet opakovaná pravidla sestavení, které můžete promítnout do samostatných souborů tak, aby sestavení mohou být provedena konzistentně v různých projektech v rámci produktu.  
   
- Následující části popisují některé základní elementy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] formát souboru projektu. Kurz o tom, jak vytvořit soubor základního projektu, najdete v tématu [návod: vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Následující části popisují některé základní elementy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] formát souboru projektu. Kurz o tom, jak vytvořit soubor základního projektu, najdete v tématu [názorný postup: Vytváření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ###  <a name="BKMK_Properties"></a> Vlastnosti  
  Vlastnosti představují páry klíč/hodnota, které můžete použít ke konfiguraci sestavení. Vlastnosti jsou deklarovány vytvořením prvku, který má název vlastnosti jako podřízený objekt [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) elementu. Například následující kód vytvoří vlastnost s názvem `BuildDir` , který má hodnotu `Build`.  
@@ -175,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ##  <a name="BKMK_VisualStudio"></a> Použití nástroje MSBuild v sadě Visual Studio  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] používá [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] formát souboru projektu k ukládání informací o sestavení o spravovaných projektech. Nastavení projektu, které je přidáno nebo změněno pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozhraní se projeví v. * proj soubor, který je generován pro každý projekt. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] používá hostované instance [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pro sestavení spravovaných projektů. To znamená, že spravovaný projekt může být součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo z příkazového řádku (i v případě [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] není nainstalována), a výsledky budou stejné.  
   
- Kurz o tom, jak používat MSBuild v sadě Visual Studio, najdete v tématu [návod: použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Kurz o tom, jak používat MSBuild v sadě Visual Studio, najdete v tématu [názorný postup: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ##  <a name="BKMK_Multitargeting"></a> Cílení na více verzí  
  Pomocí sady Visual Studio můžete zkompilovat aplikaci pro spuštění v jedné z několika verzí rozhraní .NET Framework. Například můžete zkompilovat aplikaci pro spuštění v rozhraní .NET Framework 2.0 na 32bitové platformě a můžete zkompilovat stejnou aplikaci pro spuštění v rozhraní .NET Framework 4.5 na 64bitové platformě. Schopnosti kompilace pro více než jedno rozhraní jmenuje cílení na více verzí.  
@@ -198,7 +193,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Návod: Vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Ukazuje, jak vytvořit soubor základního projektu postupně pouze text pomocí editoru.|  
+|[Návod: Vytváření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Ukazuje, jak vytvořit soubor základního projektu postupně pouze text pomocí editoru.|  
 |[Návod: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md)|Představuje stavebními bloky nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild bez zavření Visual Studio IDE.|  
 |[Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)|Nabízí čtyři stavební kameny nástroje MSBuild: vlastnosti, položky, cíle a úkoly.|  
 |[Položky](../msbuild/msbuild-items.md)|Popisuje obecné principy za [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] souboru formátu a jak přizpůsobit kusy dohromady.|  
@@ -216,8 +211,3 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Slovníček  
  Definuje společné termíny MSBuild.
-
-
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: shromažďování dat o výkonu pro web | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Shromažďování dat o výkonu pro web | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -23,15 +18,15 @@ ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 646d5a59dee68123e478da074901c9d6f98c2763
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766149"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: shromažďování dat výkonu pro webovou stránku
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: Shromažďování dat výkonu pro webovou stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci. Můžete profilovat webové aplikace, která je otevřen v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo můžete Profilovat [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] web, který je umístěn v místním počítači a ne otevřít v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí.  
@@ -112,6 +107,3 @@ Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
  [Porozumění hodnotám dat instrumentace](../profiling/understanding-instrumentation-data-values.md)   
  [Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)
-
-
-

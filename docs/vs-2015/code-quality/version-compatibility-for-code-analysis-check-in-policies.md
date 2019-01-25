@@ -1,14 +1,9 @@
 ---
 title: Kompatibilita verzí pro Zásady vracení se změnami analýzy kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
@@ -17,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cd449446c66b2f37df9993786477734a78e10a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756098"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Kompatibilita verzí pro zásady vracení se změnami Analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ Pokud se musí vyhodnotit a vytváření zásad analýzy kódu vrácení se změ
 -   Chcete-li vytvořit zásady analýzy kódu vrácení se změnami pomocí nastavení pravidel, které platí pro obě [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] a [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], musíte vytvořit zásady [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], proveďte všechny potřebné změny a uložte zásadu. Pokud existují změny pravidel pouze v [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], upravte a uložte zásadu v [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].  
   
      Po uložení zásady v [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], už můžete změnit nastavení pro pravidla, které existují v [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] pouze.
-
-
-

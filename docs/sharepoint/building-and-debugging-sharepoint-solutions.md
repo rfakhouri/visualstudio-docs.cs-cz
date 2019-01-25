@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building and debugging
 - SharePoint development in Visual Studio, debugging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1cdcf71821bd0f7e9739bc194834500c2dfc6fd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987191"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871557"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Sestavování a ladění řešení služby SharePoint
   Obecně platí, sestavování a ladění řešení služby SharePoint je shodný sestavování a ladění ostatních typů projektů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Témata v této části popisují, které existují rozdíly.  

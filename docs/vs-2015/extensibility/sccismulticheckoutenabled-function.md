@@ -1,14 +1,9 @@
 ---
 title: Sccismulticheckoutenabled – funkce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccIsMultiCheckoutEnabled
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e449ab110b4087f2c7e997b92d66f62f7bd780f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 65641803c1fdcb4645bbc20f6cbc845e5d326689
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763725"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +53,3 @@ SCCRTN SccIsMultiCheckoutEnabled(
   
 ## <a name="see-also"></a>Viz také  
  [Funkce modulu plug-in správy zdrojového kódu v rozhraní API](../extensibility/source-control-plug-in-api-functions.md)
-

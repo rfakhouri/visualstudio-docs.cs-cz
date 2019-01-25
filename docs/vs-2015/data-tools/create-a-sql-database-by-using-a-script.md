@@ -1,12 +1,9 @@
 ---
 title: Vytvoření databáze SQL pomocí skriptu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266588"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773891"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Vytvoření databáze SQL pomocí skriptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -233,7 +230,7 @@ V tomto názorném postupu použijete k vytvoření malé databáze, která obsa
   
 1.  Na panelu nabídek vyberte **souboru** > **nový** > **projektu**.  
   
-     **Nový projekt** zobrazí se dialogové okno.  
+     Zobrazí se dialogové okno **Nový projekt**.  
   
 2.  V části **nainstalováno**, rozbalte **šablony** uzlu, rozbalte **jiné jazyky** uzlu, vyberte **systému SQL Server** kategorie a pak Vyberte **databázový projekt SQL Server** šablony.  
   
@@ -276,4 +273,3 @@ V tomto názorném postupu použijete k vytvoření malé databáze, která obsa
   
 ##  <a name="DeployDatabase"></a> Nasazení databáze  
  Po stisknutí klávesy **F5** klíč, nasadit (nebo publikovat) databázi na databázi LocalDB ve výchozím nastavení. Můžete nasadit databázi do jiného umístění otevřením stránky vlastností pro projekt, vyberte **ladění** kartu a potom změnou propojovacího řetězce.
-

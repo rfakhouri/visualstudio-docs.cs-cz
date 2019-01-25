@@ -2,7 +2,7 @@
 title: Vytváření řetězce filtru pro návrháře tabulky | Dokumentace Microsoftu
 description: Vytváření řetězce filtru pro Návrhář tabulky
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ff8c3dd927e81b9e131242a9a6631a8297046a6e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779720"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Vytváření filtračních řetězců pro Návrháře tabulky
 ## <a name="overview"></a>Přehled
@@ -35,7 +35,7 @@ Pro všechny typy vlastností jsou podporovány následující logické operáto
 | lt |Menší než |Cena lt 20 |
 | Le |Menší nebo rovno |Cena le 100 |
 | Ne |Nerovná se |Ne City "Londýn" |
-| and |a |Cena le 200 a cena gt 3.5 |
+| and |A |Cena le 200 a cena gt 3.5 |
 | or |Nebo |Cena le 3.5 nebo cena gt 200 |
 | not |Not |není isAvailable |
 

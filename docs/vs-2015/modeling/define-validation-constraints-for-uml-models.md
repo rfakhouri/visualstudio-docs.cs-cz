@@ -1,25 +1,22 @@
 ---
 title: Definování omezení ověření pro modely UML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780602"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definování omezení ověřování pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -397,7 +394,7 @@ context.LogError(... , usecase);
   
    Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z následujícího umístění kde *% LocalAppData %* je obvykle *DriveName*: \Users\\*uživatelskéjméno*\AppData\Local:  
   
-   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [verze]**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="Example"></a> Příklad  
  Tento příklad vyhledá smyčky ve vztahu závislosti mezi prvky.  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>Viz také  
  [Definování a instalace rozšíření modelování](../modeling/define-and-install-a-modeling-extension.md)   
  [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,23 +1,20 @@
 ---
-title: 'Postupy: migrace jazyka specifického pro doménu na novou verzi | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Migrace jazyka specifického pro doménu na novou verzi | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784197"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Postupy: Migrace jazyka specifického pro doménu na novou verzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +78,7 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
    2.  Klikněte na tlačítko **Transformovat všechny šablony** tlačítko v hlavičce Průzkumníku řešení.  
   
        > [!NOTE]
-       >  Tento krok můžete provést zbytečné. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       >  Tento krok můžete provést zbytečné. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Aktualizujte váš vlastní kód v projektech převedený.  
   
@@ -91,6 +88,3 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
   
 ## <a name="see-also"></a>Viz také  
  [Co je nového v produktu Visualization and Modeling SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-

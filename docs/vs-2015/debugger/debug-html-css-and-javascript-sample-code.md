@@ -1,14 +1,9 @@
 ---
 title: Ladění ukázkový kód HTML, CSS a JavaScript | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,22 +13,22 @@ ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c4793747e85435b63361df03cdb011d38b214e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752080"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Ladění ukázkový kód HTML, CSS a JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Kód v tomto tématu se ukázkový soubor pro [rychlý start: ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md). Chyby podle návrhu k dispozici v tomto rychlém startu jsou opravené v této verzi kódu.  
+ Kód v tomto tématu se ukázkový soubor pro [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md). Chyby podle návrhu k dispozici v tomto rychlém startu jsou opravené v této verzi kódu.  
   
-## <a name="sample-code"></a>Ukázkový kód  
+## <a name="sample-code"></a>Vzorový kód  
  Následující kód HTML je používán \<text > značky v tomto rychlém startu.  
   
 ```html  
@@ -111,6 +106,3 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 ## <a name="see-also"></a>Viz také  
  [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-

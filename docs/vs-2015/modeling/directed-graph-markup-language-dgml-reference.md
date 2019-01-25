@@ -1,23 +1,20 @@
 ---
 title: Řízené reference jazyka přímého značení grafů (DGML) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f352d87975bf2c9705b348b465215a0a9fe72f2a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790887"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756783"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenční dokumentace jazyka přímého značení grafů (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -329,6 +326,3 @@ Orientovaný jazyka přímého značení grafů (DGML) popisuje informace, kter�
  [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)   
  [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)
-
-
-

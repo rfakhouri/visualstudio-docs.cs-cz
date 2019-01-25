@@ -1,25 +1,20 @@
 ---
 title: Modifikační klávesy nástroje v Blendu pera | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4fd240ffae322d21e37049b5ec0a862515b00f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fc4f5e798e5ae675a04e7df701d08210a83062d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764181"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Modifikační klávesy nástroje pero v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +23,8 @@ V následující tabulce jsou uvedeny klávesových zkratek, které můžete pou
   
 |Pro tuto akci|Postup|Ukazatel|  
 |-----------------------|-------------|-------------|  
-|Vytvořit bod spuštění segment rovné čáry|Klikněte na tlačítko Vytvořit nový bod|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Ukazatel pera|  
-|Vytvořit bod spuštění segment křivku|Kliknout pro vytvoření nového bodu a pak přetáhněte upravit tečný popisovače před uvolněním tlačítka myši|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Ukazatel pera|  
+|Vytvořit bod spuštění segment rovné čáry|Klikněte na tlačítko Vytvořit nový bod|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Ukazatel pera|  
+|Vytvořit bod spuštění segment křivku|Kliknout pro vytvoření nového bodu a pak přetáhněte upravit tečný popisovače před uvolněním tlačítka myši|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Ukazatel pera|  
 |Upravit poslední tečnu bez smooth omezení, které umožňují ostrý roh|Klikněte na tlačítko Vytvořit nový bod a potom stiskněte klávesu ALT před uvolněním tlačítka myši|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Psaní perem ukazatel|  
 |Rozdělit poslední tangens tak, aby tečný koncový bod pracovat nezávisle na sobě, díky tomu můžete dělat ostrý roh|Klikněte na tlačítko pro vytvoření nového bodu a pak podržte klávesu ALT a před uvolněním tlačítka myši přetáhnout|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Psaní perem ukazatel|  
 |Přesunutí tangenty koncový bod, okolo nový bod v 15 stupňů|Klikněte na tlačítko Vytvořit nový bod a pak podržte klávesu SHIFT + ALT a před uvolněním tlačítka myši přetáhnout|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Psaní perem ukazatel|  
@@ -47,6 +42,3 @@ V následující tabulce jsou uvedeny klávesových zkratek, které můžete pou
  [Modifikační klávesy návrhové plochy](../designers/artboard-modifier-keys-in-blend.md)   
  [Modifikační klávesy nástroje přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)   
  [Kreslení tvarů a cest](../designers/draw-shapes-and-paths.md)
-
-
-

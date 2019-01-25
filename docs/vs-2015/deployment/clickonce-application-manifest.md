@@ -1,14 +1,9 @@
 ---
 title: ClickOnce – Manifest aplikace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 57e48816ede7210a268cc465da1eee3b6ff43d02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289585"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795096"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce – manifest aplikace 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +32,13 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikace je s
   
 |Prvek|Popis|Atributy|  
 |-------------|-----------------|----------------|  
-|[\<sestavení > – Element](../deployment/assembly-element-clickonce-application.md)|Požadováno. Element nejvyšší úrovně.|`manifestVersion`|  
-|[\<Vlastnost assemblyIdentity > – Element](../deployment/assemblyidentity-element-clickonce-application.md)|Požadováno. Určuje primární sestavení [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md)|Identifikuje požadavky na zabezpečení aplikace.|Žádné|  
-|[\<entryPoint > – Element](../deployment/entrypoint-element-clickonce-application.md)|Požadováno. Určuje vstupní bod pro kód aplikace.|`name`|  
-|[\<závislost > – Element](../deployment/dependency-element-clickonce-application.md)|Požadováno. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést.|Žádné|  
+|[\<sestavení > – Element](../deployment/assembly-element-clickonce-application.md)|Povinný parametr. Element nejvyšší úrovně.|`manifestVersion`|  
+|[\<Vlastnost assemblyIdentity > – Element](../deployment/assemblyidentity-element-clickonce-application.md)|Povinný parametr. Určuje primární sestavení [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md)|Identifikuje požadavky na zabezpečení aplikace.|Žádná|  
+|[\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md)|Povinný parametr. Určuje vstupní bod pro kód aplikace.|`name`|  
+|[\<závislost > – Element](../deployment/dependency-element-clickonce-application.md)|Povinný parametr. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést.|Žádná|  
 |[\<Soubor > – Element](../deployment/file-element-clickonce-application.md)|Volitelné. Identifikuje každý nonassembly soubor, který používá aplikace. Izolace dat modelu COM (Component Object) přidružené k souboru může obsahovat.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
-|[\<fileAssociation > – Element](../deployment/fileassociation-element-clickonce-application.md)|Volitelné. Určuje příponu souboru, který se má přidružit aplikaci.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
+|[\<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md)|Volitelné. Určuje příponu souboru, který se má přidružit aplikaci.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Poznámky  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Soubor manifestu aplikace identifikuje aplikace nasazené pomocí [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Další informace o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], naleznete v tématu [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).  
@@ -51,7 +46,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikace je s
 ## <a name="file-location"></a>Umístění souboru  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikace je specifická pro jednu verzi nasazení. Z tohoto důvodu mají být uloženy odděleně od manifesty nasazení. Běžné konvence je umístit je v podadresáři pojmenovaném přidružené verze.  
   
- Manifest aplikace musí být podepsané vždy před jejich nasazením. Pokud změníte manifest aplikace ručně, musíte použít mage.exe znovu podepsat manifest aplikace, manifest nasazení aktualizovat a znovu podepsat manifest nasazení. Další informace najdete v tématu [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Manifest aplikace musí být podepsané vždy před jejich nasazením. Pokud změníte manifest aplikace ručně, musíte použít mage.exe znovu podepsat manifest aplikace, manifest nasazení aktualizovat a znovu podepsat manifest nasazení. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="file-name-syntax"></a>Syntaxe názvu souboru  
  Název [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] soubor manifestu aplikace musí být úplný název a příponu aplikace jsme uvedli v `assemblyIdentity` element, za nímž následuje příponu .manifest. Manifest aplikace, který odkazuje na aplikaci Example.exe třeba, použijte následující syntaxe názvu souboru.  
@@ -124,6 +119,3 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikace je s
   
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)
-
-
-

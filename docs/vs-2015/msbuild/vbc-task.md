@@ -1,14 +1,9 @@
 ---
 title: Vbc – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ed9563f4149b550e123cf74a09f19245514fe97
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802186"
 ---
 # <a name="vbc-task"></a>Vbc – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Zabalí vbc.exe, která vytváří spustitelné soubory (.exe), dynamické kniho
 |`BaseAddress`|Volitelné `String` parametru.<br /><br /> Určuje základní adresu knihovny DLL. Tento parametr [/BaseAddress](http://msdn.microsoft.com/library/c982bcf2-46e5-47a2-bc8f-a5cc32b7dc47) přepínače kompilátoru vbc.exe.|  
 |`CodePage`|Volitelné `Int32` parametru.<br /><br /> Určuje znakovou stránku pro všechny soubory zdrojového kódu dané kompilace. Tento parametr [/CODEPAGE](http://msdn.microsoft.com/library/be36ec33-6800-4505-838c-4124564f5cc9) přepínače kompilátoru vbc.exe.|  
 |`DebugType`|Volitelné `String[]` parametru.<br /><br /> Způsobí, že kompilátor generovat ladicí informace. Tento parametr může mít následující hodnoty:<br /><br /> -   `full`<br />-   `pdbonly`<br /><br /> Výchozí hodnota je `full`, což umožňuje připojení ladicího programu ke spuštěnému programu. Hodnota `pdbonly` umožňuje ladění kódu zdroj, když program je spuštěn v ladicím programu, ale jenom v případě, že je spuštěný program je připojen k ladicímu programu se zobrazí kód jazyka sestavení. Další informace najdete v tématu [/Debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).|  
-|`DefineConstants`|Volitelné `String[]` parametru.<br /><br /> Definuje podmíněné konstanty kompilátoru. Dvojice symbol/hodnota jsou odděleny středníkem a jsou zadány pomocí následující syntaxe:<br /><br /> *symbol1* `=` *hodnota1* `;` *symbol2* `=` *hodnota2*<br /><br /> Tento parametr [/ define](http://msdn.microsoft.com/library/f735c57d-1cf9-4f2f-a26f-0de630fd4077) přepínače kompilátoru vbc.exe.|  
+|`DefineConstants`|Volitelné `String[]` parametru.<br /><br /> Definuje podmíněné konstanty kompilátoru. Dvojice symbol/hodnota jsou odděleny středníkem a jsou zadány pomocí následující syntaxe:<br /><br /> *symbol1* `=` *value1* `;` *symbol2* `=` *value2*<br /><br /> Tento parametr [/ define](http://msdn.microsoft.com/library/f735c57d-1cf9-4f2f-a26f-0de630fd4077) přepínače kompilátoru vbc.exe.|  
 |`DelaySign`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, úloha umístí veřejný klíč v sestavení. Pokud `false`, úloha plně podepíše sestavení. Výchozí hodnota je `false`. Tento parametr nemá žádný vliv, pokud nejsou použity s `KeyFile` parametr nebo `KeyContainer` parametru. Tento parametr [/delaysign](http://msdn.microsoft.com/library/c76e61a4-1884-4252-9fb2-377f99caa690) přepínače kompilátoru vbc.exe.|  
 |`DisabledWarnings`|Volitelné `String` parametru.<br /><br /> Potlačí zadaná upozornění. Stačí zadat číselnou část identifikátoru upozornění. Více varování je odděleno středníky. Tento parametr [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) přepínače kompilátoru vbc.exe.|  
 |`DocumentationFile`|Volitelné `String` parametru.<br /><br /> Zpracuje komentáře dokumentace do zadaného souboru XML. Přepíše tento parametr `GenerateDocumentation` atribut. Další informace najdete v tématu [/doc](http://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65).|  
@@ -110,9 +105,6 @@ Zabalí vbc.exe, která vytváří spustitelné soubory (.exe), dynamické kniho
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Kompilátor příkazového řádku jazyka Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
-
-
-

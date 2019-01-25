@@ -10,17 +10,17 @@ helpviewer_keywords:
 - types [Office development in Visual Studio], casting
 - automation [Office development in Visual Studio], casting objects
 - casting, object to specific type
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c886305b3cfe63ef2d2821752d97099d93689891
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 520ad17bf96f4a6c657a8bd48ac0fdd29b52e1b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847253"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873168"
 ---
 # <a name="late-binding-in-office-solutions"></a>Pozdní vazba v řešeních pro systém Office
   Některé typy v objektové modely aplikací sady Office poskytují funkce, které jsou k dispozici prostřednictvím funkce pozdní vazbu. Například některé metody a vlastnosti může vrátit různé typy objektů v závislosti na kontextu aplikace Office a některé typy můžete zveřejnit různé metody nebo vlastnosti v různých kontextech.  

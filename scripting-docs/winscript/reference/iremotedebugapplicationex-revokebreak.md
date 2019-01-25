@@ -18,33 +18,35 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 537fb9cba51b1a13e82ffd2321bb96514dc16337
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: dd014defff65ee4b29566219ea3bc04ce0cc3a4e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754556"
 ---
 # <a name="iremotedebugapplicationexrevokebreak"></a>IRemoteDebugApplicationEx:RevokeBreak
-Odvolá příkaz break.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
+
+Odvolá příkaz break.
+
+## <a name="syntax"></a>Syntaxe
+
 ```cpp
-HRESULT RevokeBreak( );  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- Žádné  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
-  
-|Hodnota|Popis|  
-|-----------|-----------------|  
-|`S_OK`|Metoda byla úspěšná.|  
-  
-## <a name="remarks"></a>Poznámky  
-  
-## <a name="see-also"></a>Viz také  
- [IRemoteDebugApplicationEx – rozhraní](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+HRESULT RevokeBreak( );
+```
+
+### <a name="parameters"></a>Parametry
+
+Žádné
+
+## <a name="return-value"></a>Návratová hodnota
+
+Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.
+
+|Hodnota|Popis|
+|-----------|-----------------|
+|`S_OK`|Metoda byla úspěšná.|
+
+## <a name="see-also"></a>Viz také:
+
+- [IRemoteDebugApplicationEx – rozhraní](iremotedebugapplicationex-interface.md)

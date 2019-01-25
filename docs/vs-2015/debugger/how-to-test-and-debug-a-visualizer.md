@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: testování a ladění Vizualizéru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Testování a ladění Vizualizéru | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,20 +17,20 @@ ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 00fb749505f8bfe16c353552aa3afcb9eaaefc2d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d19fa9b1859e97b115ca0799520456c102fecac9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723281"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797519"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Postupy: Testování a ladění vizualizéru
+# <a name="how-to-test-and-debug-a-visualizer"></a>Postupy: Testování a ladění Vizualizéru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jakmile jste napsali vizualizéru, budete muset ladění a testování.  
   
- Jedním ze způsobů k otestování vizualizéru je z hlediska instalace v sadě Visual Studio a jeho volání z okna ladicího programu. (Viz [postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md).) Pokud to uděláte, musíte použít druhou instanci aplikace Visual Studio k připojení a ladění vizualizéru, který je spuštěn v první instanci ladicího programu.  
+ Jedním ze způsobů k otestování vizualizéru je z hlediska instalace v sadě Visual Studio a jeho volání z okna ladicího programu. (Viz [jak: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md).) Pokud to uděláte, musíte použít druhou instanci aplikace Visual Studio k připojení a ladění vizualizéru, který je spuštěn v první instanci ladicího programu.  
   
  Snadný způsob, jak ladit vizualizéru je spustit vizualizéru z testu ovladače. Rozhraní API vizualizéru usnadňují vytváření tento ovladač, která je volána *vizualizéru vývoj hostitele*.  
   
@@ -59,12 +54,9 @@ Jakmile jste napsali vizualizéru, budete muset ladění a testování.
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     Podrobnější příklad naleznete v tématu [návod: zápis Vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+     Podrobnější příklad naleznete v tématu [názorný postup: Zápis Vizualizéru v C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Zápis Vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)   
+ [Postupy: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)   
  [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)
-
-
-

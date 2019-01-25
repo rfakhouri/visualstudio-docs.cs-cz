@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: určení umístění souboru se symboly z příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zadejte umístění souborů se symboly z příkazového řádku | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3d138166bc0dfdf93df5d4e340fc0d0a62d1828b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d4cb6fcfac8e9f619ab99e1d96472824d6c98e51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721187"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776175"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Určení umístění souboru se symboly z příkazového řádku
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Zadejte umístění souborů se symboly z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbolu, jako jsou názvy funkcí a čísla řádků, vyžaduje přístup k soubory symbolů (PDB) PROFILOVANÉHO komponent a souborů systému Windows. Soubory symbolů se vytvoří při kompilaci komponentu. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automaticky vyhledá soubory symbolů v následujících umístěních:  
@@ -43,7 +38,7 @@ Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbo
   Můžete také použít obě tyto metody.  
   
 > [!NOTE]
->  Pokud [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je nainstalována na místním počítači, do umístění pro soubory symbolů Windows pravděpodobně nebyl zadán již. Další informace najdete v tématu [postupy: odkaz na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md). Stále musíte nakonfigurovat nastavení nástroje VSPerfReport pro umístění a serveru, jak je popsáno dále v tomto tématu.  
+>  Pokud [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je nainstalována na místním počítači, do umístění pro soubory symbolů Windows pravděpodobně nebyl zadán již. Další informace najdete v tématu [jak: Informace o symbolech Windows odkaz](../profiling/how-to-reference-windows-symbol-information.md). Stále musíte nakonfigurovat nastavení nástroje VSPerfReport pro umístění a serveru, jak je popsáno dále v tomto tématu.  
   
 ## <a name="specifying-windows-symbol-files"></a>Zadat soubory symbolů Windows  
   
@@ -53,7 +48,7 @@ Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbo
   
 2. Použijte následující syntax k nastavení **_NT_SYMBOL_PATH** proměnné prostředí nebo možnost VSPerfReport/symbolpath:  
   
-    **SRV\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     kde *LocalStore* je cesta k místnímu adresáři, který jste vytvořili.  
   
@@ -63,11 +58,8 @@ Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbo
 ## <a name="example"></a>Příklad  
  Následující příkazový řádek sady **_NT_SYMBOL_PATH** proměnnou prostředí pro Windows server symbolů a místní adresář, do **C:\Symbols**.  
   
- **Nastavte _NT_SYMBOL_PATH = srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
+ **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
   
  Následující příkaz VSPerfReport přidá C:\Projects\Symbols adresář do cesty pro hledání pomocí **/symbolpath** možnost.  
   
- **VSPerfReport***MyApp* **Summary /SymbolPath:C:\Projects\Symbols .exe**
-
-
-
+ **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

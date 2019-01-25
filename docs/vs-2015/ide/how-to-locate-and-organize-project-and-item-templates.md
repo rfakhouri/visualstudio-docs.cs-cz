@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: hledání a organizace projektů a šablon položek | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Hledání a organizace projektů a šablon položek | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778523"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Postupy: Hledání a organizace projektů a šablon položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
   
 - \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*jazyk*\\*národního prostředí*\  
   
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*jazyk*\\*národního prostředí\\*  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Language*\\*Locale\\*  
   
   Například následující adresář obsahuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony projektů pro angličtinu:  
   
@@ -50,7 +45,7 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
 ### <a name="custom-templates"></a>Vlastní šablony  
  Ve výchozím nastavení vlastní šablony se nacházejí v:  
   
-- Documents\Visual studio *verze*\Templates\ProjectTemplates\\*jazyka*\  
+- \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\*Language*\  
   
 - Documents\Visual studio *verze*\Templates\ItemTemplates\\*jazyka*\  
   
@@ -85,7 +80,7 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
   
 5. Na příkazovém řádku vyhledejte adresář, který obsahuje devenv.exe a typ **devenv/installvstemplates**.  
   
-6. Spustit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Spusťte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 7. Na **souboru** nabídky, klikněte na tlačítko **nový**a potom klikněte na tlačítko **projektu**.  
   
@@ -107,7 +102,7 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
   
 5.  Na příkazovém řádku vyhledejte adresář, který obsahuje devenv.exe a typ **devenv/Setup**.  
   
-6.  Spustit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6.  Spusťte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 7.  Vytvoření projektu nebo otevřete existující projekt.  
   
@@ -181,8 +176,5 @@ Soubory šablony musí být umístěn do umístění, které Visual Studio rozpo
  [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)   
  [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (šablony sady Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
- [Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)   
+ [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)   
  [Postupy: Vytváření šablon položek](../ide/how-to-create-item-templates.md)
-
-
-

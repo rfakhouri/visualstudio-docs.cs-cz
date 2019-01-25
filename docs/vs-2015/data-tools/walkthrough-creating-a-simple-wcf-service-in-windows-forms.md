@@ -1,12 +1,9 @@
 ---
-title: 'Návod: Vytvoření jednoduché služby WCF v modelu Windows Forms | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření jednoduché služby WCF ve Windows Forms | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - WCF, walkthrough [Visual Studio]
 - WCF, Visual Studio tools for
@@ -16,15 +13,15 @@ ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6e73659c2d28cf97a8a7136ed8232cfbc5f0b77c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a87c88aba4b0a622dd66440fca33ab99fd028d51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775780"
 ---
-# <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Návod: Vytvoření jednoduché služby WCF v modelu Windows Forms
+# <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Průvodce: Vytvoření jednoduché služby WCF ve Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -130,4 +127,3 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[vsindigo](../includes/
   
 ## <a name="see-also"></a>Viz také  
  [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-

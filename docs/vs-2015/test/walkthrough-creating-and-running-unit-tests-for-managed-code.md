@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Vytváření a spouštění testů jednotek pro spravovaný kód | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytváření a spouštění testů jednotek pro spravovaný kód | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784657"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Postupy: Vytváření a spouštění testů jednotek pro spravovaný kód
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Průvodce: Vytváření a spouštění testů jednotek pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod vás postupně provede vytváření, spouštění a přizpůsobením série jednotkových testů pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód a Visual Studio Test Explorer. Spustit u projektu C#, která je ve vývoji, vytvoříte testy, které testují jeho kód, spusťte testy a podívejte se na výsledky. Můžete změnit kód projektu a znovu spusťte testy.  
@@ -67,7 +62,7 @@ Tento návod vás postupně provede vytváření, spouštění a přizpůsobení
   
 2. Na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.  
   
-    **Nový projekt** zobrazí se dialogové okno.  
+    Zobrazí se dialogové okno **Nový projekt**.  
   
 3. V části **nainstalované šablony**, klikněte na tlačítko **Visual C#**.  
   
@@ -113,7 +108,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> Vytvořte projekt testu jednotek  
- **Požadovaný**: postupujte podle kroků v postupu [Příprava návodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+ **Požadovaný**: Postupujte podle kroků v postupu [Příprava návodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Chcete-li vytvořit projekt testování částí  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  V této závěrečné sekci vedlo pracovní, vylepšení testovacího kódu k robustnějším a informativnějším testovací metody. Ale důležitější je, že další analýza také vedla k vylepšení kódu testovaného projektu.
-
-
-

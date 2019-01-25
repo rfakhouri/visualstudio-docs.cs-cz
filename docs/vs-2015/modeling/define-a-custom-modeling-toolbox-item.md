@@ -1,25 +1,22 @@
 ---
 title: Definování vlastní položky sady nástrojů pro modelování | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770755"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definování vlastní položky sady nástrojů pro modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
   
 4.  Vaše definice panelu nástrojů přidejte do projektu. Zahrnout **.tbxinfo** souborů, souborů diagramu, rastrové soubory a soubory prostředků a ujistěte se, že jsou obsažené ve VSIX.  
   
-    -   V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **přidat**, **existující položku**. V dialogovém okně nastavte **objekty typu: všechny soubory**. Vyhledejte soubory, vyberte je všechny a zvolte **přidat**.  
+    -   V Průzkumníku řešení v místní nabídce projektu VSIX zvolte **přidat**, **existující položku**. V dialogovém okně nastavte **objekty typu: Všechny soubory**. Vyhledejte soubory, vyberte je všechny a zvolte **přidat**.  
   
         > [!NOTE]
         >  V tomto projektu nemůže otevřít soubory diagramu v editoru modelů.  
@@ -200,7 +197,7 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
   
      V experimentální instanci aplikace vytvořte nebo otevřete diagram UML odpovídající typu. Ověřte, že se zobrazí nový nástroj v soupravě nástrojů, a to, že vytvoří prvky správně.  
   
-10. **Chcete získat soubor VSIX pro nasazení:** v Průzkumníku Windows otevřete složku **.\bin\Debug** nebo **.\bin\Release** najít **VSIX** souboru. Jedná se [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] souboru rozšíření. Může být nainstalován v počítači a také odeslán ostatním uživatelům aplikace Visual Studio.  
+10. **Chcete získat soubor VSIX pro nasazení:** V Průzkumníku Windows otevřete složku **.\bin\Debug** nebo **.\bin\Release** najít **VSIX** souboru. Jedná se [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] souboru rozšíření. Může být nainstalován v počítači a také odeslán ostatním uživatelům aplikace Visual Studio.  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Instalace vlastních nástrojů z rozšíření sady Visual Studio  
   
@@ -241,6 +238,3 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
  [Definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definování omezení ověřování pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

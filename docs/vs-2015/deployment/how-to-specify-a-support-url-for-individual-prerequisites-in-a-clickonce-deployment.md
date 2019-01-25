@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: určení adresu URL podpory pro jednotlivé předpoklady v nasazení ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zadejte adresu URL podpory pro jednotlivé předpoklady v nasazení ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772740"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Postupy: Určení adresy URL webu s podporou pro jednotlivé předpoklady v nasazení ClickOnce
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Postupy: Zadejte adresu URL podpory pro jednotlivé předpoklady v nasazení ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] otestovat nasazení pro celou řadou požadavky, které musí být k dispozici v klientském počítači pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] spuštění aplikace. Patří mezi ně požadovanou minimální verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], verzi operačního systému a všechna sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], však nemůže nainstalovat některý z těchto nezbytných podmínkách; Pokud není nalezen předpoklad, jednoduše zastaví instalaci a zobrazí dialogové okno s vysvětlením, proč se instalace nepovedla.  
@@ -67,7 +62,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] otestovat nasazení pro
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
@@ -84,7 +79,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] otestovat nasazení pro
     </compatibleFrameworks>  
     ```  
   
-7.  Jakmile jste ručně změnili manifest aplikace, musíte znovu podepsat manifest aplikace pomocí digitálního certifikátu, a aktualizovat a znovu podepsat manifest nasazení. Je nutné použít Mage.exe nebo MageUI.exe SDK nástrojů k provedení této úlohy, jako obnovení těchto souborů pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vymaže ručně provedené změny. Další informace o použití Mage.exe k opětovnému podepsání manifestů naleznete v tématu [postupy: opětovné podepsání aplikace a manifesty nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  Jakmile jste ručně změnili manifest aplikace, musíte znovu podepsat manifest aplikace pomocí digitálního certifikátu, a aktualizovat a znovu podepsat manifest nasazení. Je nutné použít Mage.exe nebo MageUI.exe SDK nástrojů k provedení této úlohy, jako obnovení těchto souborů pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vymaže ručně provedené změny. Další informace o použití Mage.exe k opětovnému podepsání manifestů naleznete v tématu [jak: Opětovné podepisování manifestů aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework  
  Adresa URL podpory se nezobrazí v dialogovém okně, pokud aplikace je označen ke spuštění v částečném vztahu důvěryhodnosti.  
@@ -92,9 +87,6 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] otestovat nasazení pro
 ## <a name="see-also"></a>Viz také  
  [Mage.exe (generování manifestu a nástroj pro úpravy)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [\<compatibleFrameworks > – Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
+ [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce a kód Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md)
-
-
-

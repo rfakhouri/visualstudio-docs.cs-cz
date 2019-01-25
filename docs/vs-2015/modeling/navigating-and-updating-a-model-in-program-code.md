@@ -1,25 +1,22 @@
 ---
 title: Procházení a aktualizace modelu v kódu programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756527"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigace v modelu a aktualizace modelu v kódu programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ Můžete napsat kód, vytvářet a odstraňovat prvky modelu, nastavit jejich vl
   
  [DocView a DocData](#docdata)  
   
- Obrazce, konektory a diagramy a jejich vztahů s prvky modelu jsou popsány v samostatném tématu. Další informace najdete v tématu [postupy: procházení a aktualizace diagramu](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Obrazce, konektory a diagramy a jejich vztahů s prvky modelu jsou popsány v samostatném tématu. Další informace najdete v tématu [jak: Procházení a aktualizace diagramu](../misc/how-to-navigate-and-update-a-diagram.md).  
   
 ##  <a name="example"></a> Příklad definice DSL  
  Toto je hlavní část DslDefinition.dsl příklady v tomto tématu:  
@@ -229,7 +226,7 @@ using (Transaction t =
   
 - Nastavení vlastností nového elementu, zejména vlastnost, pro kterou `IsName` DslDefinition platí. Tento příznak označí vlastnost, která slouží k identifikaci elementu jedinečné v rámci jeho vlastníka. V tomto případě vlastnost Name má tento příznak.  
   
-- Definice DSL tento DSL musí byla načtena do Store. Pokud píšete rozšíření například příkaz nabídky, bude obvykle jednat již hodnotu true. V ostatních případech můžete explicitně načíst model do Store, nebo použít <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> se jej načíst. Další informace najdete v tématu [postupy: otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- Definice DSL tento DSL musí byla načtena do Store. Pokud píšete rozšíření například příkaz nabídky, bude obvykle jednat již hodnotu true. V ostatních případech můžete explicitně načíst model do Store, nebo použít <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> se jej načíst. Další informace najdete v tématu [jak: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
   Při vytváření elementu tímto způsobem obrazce se automaticky vytvoří (Pokud DSL neobsahuje diagram). Zobrazí se v umístění služby automaticky přiřazený, výchozí tvar, barvu a další funkce. Pokud chcete určit, kde a jak se zobrazí související tvar, přečtěte si téma [vytváření elementu a jeho tvar](#merge).  
   
@@ -513,7 +510,7 @@ partial class MyDiagram
  Můžete také nastavit barvu a další vlastnosti zveřejněné konektorů pomocí této metody.  
   
 ### <a name="use-transactions"></a>Použití transakcí  
- Tvary, konektory a diagramy jsou podtypy <xref:Microsoft.VisualStudio.Modeling.ModelElement> tak pro živé v Store. Proto je třeba provést změny k nim jen v transakci. Další informace najdete v tématu [postupy: používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
+ Tvary, konektory a diagramy jsou podtypy <xref:Microsoft.VisualStudio.Modeling.ModelElement> tak pro živé v Store. Proto je třeba provést změny k nim jen v transakci. Další informace najdete v tématu [jak: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
 ##  <a name="docdata"></a> Zobrazení dokumentů a dat dokumentu  
  ![Diagram tříd typů standardní diagramu](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
@@ -525,9 +522,6 @@ partial class MyDiagram
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [Ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md)   
  [Generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Postupy: používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [Postupy: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Reagování na změny a šíření změn](../modeling/responding-to-and-propagating-changes.md)
-
-
-

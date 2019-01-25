@@ -1,11 +1,8 @@
 ---
-title: 'Postupy: nastavení zarážek v pracovních postupech (starší verze) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Nastavení zarážek v pracovních postupech (starší verze) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - breakpoints, setting in workflows
@@ -16,20 +13,20 @@ ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803575"
 ---
-# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Postupy: nastavení zarážek v pracovních postupech (starší verze)
+# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Postupy: Nastavení zarážek v pracovních postupech (starší verze)
 Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../includes/wf-md.md)] sestavení aplikace pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] při vaší [!INCLUDE[wf2](../includes/wf2-md.md)] aplikace musí cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Když použijete starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] v [!INCLUDE[vs2010](../includes/vs2010-md.md)] k sestavení [!INCLUDE[wf2](../includes/wf2-md.md)] aplikace, můžete nastavit zarážky v kódu jazyka C# a Visual Basic stejně jako v sadě Visual Studio. Podle očekávání, zastaví provádění pracovního postupu u každé zarážky, které jste nastavili.  
   
- Zarážka má tři stavy: *čekající*, *vázán*, a *chyba*. Pokud nastavíte zarážku, čeká na vyřízení a je reprezentován ikonou červené prázdný. Při načítání pracovního postupu typu modulu runtime vázán a je reprezentována solid červenou ikonu. Pokud chcete zadat nesprávný formát pro zarážku, jako s názvem aktivita, která není platná, zobrazí se okno aplikace chyba. Zarážka je přidána do okna zarážky, ale je označena s malým "x".  
+ Zarážka má tři stavy: *Čekající*, *vázán*, a *chyba*. Pokud nastavíte zarážku, čeká na vyřízení a je reprezentován ikonou červené prázdný. Při načítání pracovního postupu typu modulu runtime vázán a je reprezentována solid červenou ikonu. Pokud chcete zadat nesprávný formát pro zarážku, jako s názvem aktivita, která není platná, zobrazí se okno aplikace chyba. Zarážka je přidána do okna zarážky, ale je označena s malým "x".  
   
  Pro aktivitu na povrchu návrhu pracovního postupu můžete nastavit zarážky následujícími způsoby:  
   
@@ -63,7 +60,7 @@ Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../includes/wf-md.md)]
   
 5.  Vyberte **pracovního postupu** z **jazyk** seznamu.  
   
-6.  Klikněte na tlačítko **OK**.  
+6.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění starších verzí pracovních postupů](../workflow-designer/debugging-legacy-workflows.md)   

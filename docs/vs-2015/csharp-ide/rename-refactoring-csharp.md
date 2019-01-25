@@ -1,14 +1,9 @@
 ---
 title: Refaktoring pro přejmenování (C#) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274960"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783290"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoring pro přejmenování (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49274960"
 |zobrazení tříd|Když vyberete identifikátor v zobrazení tříd, refaktoring pro přejmenování je k dispozici v místní nabídce a **Refaktorovat** nabídky.|  
 |prohlížeč objektů|Když vyberete identifikátor v prohlížeči objektů, refaktoring pro přejmenování je k dispozici jen **Refaktorovat** nabídky.|  
 |Mřížky vlastností návrháře formulářů Windows|V **mřížky vlastností** Návrháře formulářů Windows, mění se název ovládacího prvku opraví, zahájí se operace přejmenování pro tento ovládací prvek. **Přejmenovat** dialogové okno se nezobrazí.|  
-|Průzkumník řešení|V **Průzkumníka řešení**, **přejmenovat** příkaz je k dispozici v místní nabídce. Vybraný zdrojový soubor obsahuje třídy, jejíž název třídy je stejný jako název souboru, můžete tento příkaz současně přejmenování zdrojového souboru a provést refaktoring pro přejmenování.<br /><br /> Například pokud vytvoříte výchozí aplikace založené na Windows a potom přejmenujte soubor Form1.cs na TestForm.cs, název zdrojového souboru Form1.cs se změní na TestForm.cs a class Form1 a všechny odkazy na třídu, se přejmenují na TestForm. **Poznámka:** **zpět** pouze zruší, refaktoring pro přejmenování v kódu a se nezměnil název souboru zpět na původní název příkazu (CTRL + Z). <br /><br /> Pokud vybraný zdrojový soubor neobsahuje třídu, jejíž název je stejný jako název souboru **přejmenovat** v **Průzkumníka řešení** pouze přejmenuje zdrojový soubor a přejmenování nebude spuštěno. refaktoring.|  
+|Průzkumník řešení|V **Průzkumníka řešení**, **přejmenovat** příkaz je k dispozici v místní nabídce. Vybraný zdrojový soubor obsahuje třídy, jejíž název třídy je stejný jako název souboru, můžete tento příkaz současně přejmenování zdrojového souboru a provést refaktoring pro přejmenování.<br /><br /> Například pokud vytvoříte výchozí aplikace založené na Windows a potom přejmenujte soubor Form1.cs na TestForm.cs, název zdrojového souboru Form1.cs se změní na TestForm.cs a class Form1 a všechny odkazy na třídu, se přejmenují na TestForm. **Poznámka:**  **Zpět** pouze zruší, refaktoring pro přejmenování v kódu a se nezměnil název souboru zpět na původní název příkazu (CTRL + Z). <br /><br /> Pokud vybraný zdrojový soubor neobsahuje třídu, jejíž název je stejný jako název souboru **přejmenovat** v **Průzkumníka řešení** pouze přejmenuje zdrojový soubor a přejmenování nebude spuštěno. refaktoring.|  
   
 ## <a name="rename-operations"></a>Operace přejmenování  
  Při spuštění **přejmenovat**, refaktoringu modul provádí konkrétní operace přejmenování pro každý kód symbol, jak je popsáno v následující tabulce.  
@@ -53,8 +48,8 @@ ms.locfileid: "49274960"
 |-----------------|----------------------|  
 |Pole|Deklarace a použití tohoto pole se změní na nový název.|  
 |Lokální proměnná|Deklarace a použití proměnné se změní na nový název.|  
-|Metoda|Název metody a všechny odkazy na metody změní na nový název. **Poznámka:** při přejmenování rozšiřující metoda operaci přejmenování šíří do všech instancí metody, které jsou v oboru, bez ohledu na to, zda rozšiřující metoda se používá jako statickou metodu nebo metodu instance. Další informace najdete v tématu [rozšiřující metody](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Obor názvů|Název oboru názvů se změní na nový název v deklaraci všech `using` příkazy a plně kvalifikované názvy. **Poznámka:** při přejmenování obor názvů, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rovněž aktualizuje **výchozí Namespace** vlastnost **aplikace** stránku **Návrháře projektu**. Tuto vlastnost nelze obnovit tak, že vyberete **zpět** z **upravit** nabídky. Chcete-li obnovit **výchozí Namespace** hodnotu vlastnosti, je třeba upravit vlastnosti v **Návrháře projektu**. Další informace najdete v tématu [stránky aplikace](../ide/reference/application-page-project-designer-csharp.md).|  
+|Metoda|Název metody a všechny odkazy na metody změní na nový název. **Poznámka:**  Pokud přejmenujete metodu rozšíření, operace přejmenování rozšíří do všech instancí metody, které jsou v oboru, bez ohledu na to, zda rozšiřující metoda se používá jako statickou metodu nebo metodu instance. Další informace najdete v tématu [rozšiřující metody](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Obor názvů|Název oboru názvů se změní na nový název v deklaraci všech `using` příkazy a plně kvalifikované názvy. **Poznámka:**  Při přejmenování obor názvů, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rovněž aktualizuje **výchozí Namespace** vlastnost **aplikace** stránku **Návrháře projektu**. Tuto vlastnost nelze obnovit tak, že vyberete **zpět** z **upravit** nabídky. Chcete-li obnovit **výchozí Namespace** hodnotu vlastnosti, je třeba upravit vlastnosti v **Návrháře projektu**. Další informace najdete v tématu [stránky aplikace](../ide/reference/application-page-project-designer-csharp.md).|  
 |Vlastnost|Deklarace a použití vlastnost se změní na nový název.|  
 |Typ|Všechny deklarace a použití všech typu se změní na nový název, včetně konstruktorů a destruktorů. Pro částečné typy operace přejmenování rozšíří do všech částí.|  
   
@@ -91,7 +86,7 @@ ms.locfileid: "49274960"
   
 5.  Vyberte **vyhledávání v komentářích** zaškrtávací políčko.  
   
-6.  Klikněte na tlačítko **OK**.  
+6.  Klikněte na **OK**.  
   
 7.  V **náhled změn** dialogové okno, klikněte na tlačítko **použít**.  
   

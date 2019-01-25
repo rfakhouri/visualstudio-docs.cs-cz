@@ -1,14 +1,9 @@
 ---
 title: Aplikace Windows Store spustit na místním počítači | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766843"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753741"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Spusťte Windows Store apps na místním počítači
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
  **Chcete-li přepnout z běžící instance aplikace pro Windows Store se sadou Visual Studio**  
   
  Při spuštění aplikace Windows Store v místním počítači a používat pouze jednoho monitoru, můžete chtít přepněte zpět do sady Visual Studio a ponechání spuštěné aplikace. Například aplikace může být ve stavu, který nelze dosáhnout, zarážky, jako je například čekání na událost nebo zachycena v dlouhé nebo nekonečné smyčce. Pokud chcete vrátit do sady Visual Studio, stiskněte ALT + TAB.
-
-
-

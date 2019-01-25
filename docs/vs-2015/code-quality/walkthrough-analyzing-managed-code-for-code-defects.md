@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Analýza spravovaného kódu na výskyt závad kódu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Analýza spravovaného kódu na výskyt závad kódu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912887"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791199"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Návod: Analýza spravovaného kódu na výskyt závad v kódu
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Průvodce: Analýza defektů ve spravovaném kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí nástroje Analýza kódu.  
@@ -98,7 +93,7 @@ V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí
   
 4.  Chcete-li opravit upozornění použijte následující:  
   
-- [CA1014: Označte sestavení pomocí atributu CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'ukázka' by měla být označena CLSCompliantAttribute a jeho hodnota by měla mít hodnotu true.  
+- [CA1014: Označte sestavení pomocí atributu CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'ukázka' by měla být označena pomocí CLSCompliantAttribute a jeho hodnota by měla mít hodnotu true.  
   
   -   Přidejte kód `using``System;` soubor AssemblyInfo.cs.  
   
@@ -106,15 +101,15 @@ V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí
   
        Sestavte projekt znovu.  
   
-- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné demo(String)  
+- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Přidejte následující konstruktor k této třídě: veřejné demo(String)  
   
   -   Přidejte konstruktor `public demo (String s) : base(s) { }` do třídy `demo`.  
   
-- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné ukázkové (String, výjimka)  
+- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Přidejte následující konstruktor k této třídě: veřejné ukázkové (String, výjimka)  
   
   -   Přidejte konstruktor `public demo (String s, Exception e) : base(s, e) { }` do třídy `demo`.  
   
-- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: chráněné ukázka (SerializationInfo, StreamingContext)  
+- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Přidejte následující konstruktor k této třídě: chráněné ukázka (SerializationInfo, StreamingContext)  
   
   -   Přidejte kód `using System.Runtime.Serialization;` na začátek souboru Class1.cs.  
   
@@ -122,7 +117,7 @@ V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí
   
        Sestavte projekt znovu.  
   
-- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné demo()  
+- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Přidejte následující konstruktor k této třídě: veřejné demo()  
   
   -   Přidejte konstruktor `public demo () : base() { }` do třídy `demo` **.**  
   
@@ -140,11 +135,11 @@ V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí
   
   -   Název členu, který chcete změnit `Item`.  
   
-- [CA1710: Identifikátory by měly mít správnou příponu](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: přejmenování 'testCode.demo"tak, že končí 'Exception'.  
+- [CA1710: Identifikátory by měly mít správnou příponu](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Přejmenujte "testCode.demo" za účelem v 'Exception'.  
   
   -   Změnit název třídy a jejích konstruktorů k `DemoException`.  
   
-- [CA2210: Sestavení by měly mít platné silné názvy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): "ManagedDemo" podepsat klíče silného názvu.  
+- [CA2210: Sestavení by měly mít platné silné názvy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): "ManagedDemo" podepište klíče silného názvu.  
   
   -   Na **projektu** nabídky, klikněte na tlačítko **ManagedDemo vlastnosti**.  
   
@@ -208,11 +203,8 @@ namespace TestCode
   
    2. Zvolte **akce**, klikněte na tlačítko **potlačit zprávu**a klikněte na tlačítko **v souboru potlačení projektu**.  
   
-      Další informace najdete v tématu [postupy: potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Další informace najdete v tématu [jak: Potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
 2. Sestavte projekt znovu.  
   
     Projekt se sestaví bez žádná upozornění ani chyby.
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Začínáme s Visual Studio Tools for Unity | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
+ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 9ed6cb4127ba57c6b9b84a32996968dbf9fac4fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b3c1d384ea42f4a1cdc864c261586ff1ee2e384
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764606"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Začínáme s nástroji Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a na
   
      [Stáhněte si Visual Studio 2015 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   Pro Visual Studio 2013 Community, Visual Studio 2013 Professional nebo Visual Studio 2013 Premium:  
+-   For Visual Studio 2013 Community, Visual Studio 2013 Professional, or Visual Studio 2013 Premium:  
   
      [Stáhněte si Visual Studio 2013 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
@@ -119,4 +114,3 @@ V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a na
   
 ## <a name="see-also"></a>Viz také  
  [Domovská stránka Unity](http://unity3d.com)
-

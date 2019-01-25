@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], creating
 - SharePoint development in Visual Studio, user controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d042c42bae59c6dbf92f0e381444cc011b40db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b1605705b161dfdb8b5857dcab6075d9a997a55
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842816"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874568"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Vytvoření opakovaně použitelné ovládací prvky webové části nebo stránky aplikace
   V sadě Visual Studio můžete vytvořit vlastní, opakovaně použitelné ovládací prvky, které mohou být spotřebovány stránkami aplikace a webové části, která spustí v Sharepointu. Tyto ovládací prvky, se nazývají uživatelské ovládací prvky. Uživatelský ovládací prvek je druh složeného ovládacího prvku, který funguje podobně jako webová stránka ASP.NET – můžete přidat existující ovládací prvky webového serveru a značky uživatelského ovládacího prvku a definovat vlastnosti a metody ovládacího prvku. Potom je můžete vložit v ASP.NET Web pages, kde působí jako celek.  

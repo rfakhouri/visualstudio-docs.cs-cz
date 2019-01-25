@@ -8,15 +8,15 @@ helpviewer_keywords:
 - ''
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e08dcc5b34fb90992e44bfee10e8bbfba9ee47b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e91cd3e976f2ce4a32b2657d7e3667dae4d80d7b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871541"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875781"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Osvědčené postupy při vývoji pro modelu COM, VSTO a VBA doplňky sady Office
   Pokud vyvíjíte modelu COM, VSTO nebo VBA doplňky pro Office, dodržujte doporučené postupy vývoje popsaných v tomto článku.   To vám pomůže zajistit:

@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Sestavení aplikace | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření aplikace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220199"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799152"
 ---
-# <a name="walkthrough-building-an-application"></a>Postupy: Sestavení aplikace
+# <a name="walkthrough-building-an-application"></a>Průvodce: Sestavení aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto návodu se seznámíte se podrobněji seznamujete s několik možností, které můžete konfigurovat při sestavování aplikací pomocí sady Visual Studio. Budete vytvářet vlastní proces sestavení, skryjete některé varovné zprávy a zvýšíte výstupní informace sestavení, stejně jako další úkoly pro ukázkovou aplikaci.  
@@ -80,7 +75,7 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
 4.  Zvolte **OK** tlačítko.  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Vytvořit vlastní proces sestavení  
- Když vytvoříte řešení, konfigurace sestavení pro ladění a vydání a jejich výchozí cíle platformy jsou definovány pro řešení automaticky. Můžete poté přizpůsobit tyto konfigurace nebo vytvořit vlastní. Konfigurace sestavení určují typ sestavení. Platformy sestavení určují operační systém, který aplikace cílí pro danou konfiguraci. Další informace najdete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md), [Principy platforem sestavení](../ide/understanding-build-platforms.md), a [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Když vytvoříte řešení, konfigurace sestavení pro ladění a vydání a jejich výchozí cíle platformy jsou definovány pro řešení automaticky. Můžete poté přizpůsobit tyto konfigurace nebo vytvořit vlastní. Konfigurace sestavení určují typ sestavení. Platformy sestavení určují operační systém, který aplikace cílí pro danou konfiguraci. Další informace najdete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md), [Principy platforem sestavení](../ide/understanding-build-platforms.md), a [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  Můžete změnit nebo vytvořit konfigurace a nastavení platformy pomocí **nástroje Configuration Manager** dialogové okno. V tomto postupu vytvoříte konfiguraci sestavení pro testování.  
   
@@ -121,11 +116,11 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
   
   **Výstup** okně se zobrazí výsledky sestavení. Sestavení bylo úspěšné, ale byly vygenerovány několik upozornění.  
   
-  Obrázek 1: upozornění aplikace Visual Basic  
+  Obrázek 1: Upozornění aplikace Visual Basic  
   
   ![Výstupní okno Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Obrázek 2: Visual C# upozornění  
+  Obrázek 2: Vizuální C# upozornění  
   
   ![Výstupní okno aplikace Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -172,7 +167,7 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
   
    ![Okno výstup, Visual Basic vytvářet upozornění](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
   
-   Další informace najdete v tématu [postupy: potlačení upozornění kompilátoru](../ide/how-to-suppress-compiler-warnings.md).  
+   Další informace najdete v tématu [jak: Potlačení upozornění kompilátoru](../ide/how-to-suppress-compiler-warnings.md).  
   
 ##  <a name="BKMK_outputdetails"></a> Zobrazení dalších podrobností o sestavení v okně Výstup  
  Můžete změnit, se zobrazí v tom, kolik informací o procesu sestavení **výstup** okna. Podrobnost sestavení je obvykle nastavena na minimální, což znamená, že **výstup** okně zobrazí pouze souhrnné informace o procesu sestavení spolu se všechna upozornění s vysokou prioritou a chyby. Můžete zobrazit další informace o sestavení pomocí [dialogové okno Možnosti, projekty a řešení, sestavení a spuštění](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).  
@@ -203,12 +198,12 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
    > [!TIP]
    >  Můžete prohledávat obsah **výstup** okna, je-li je zobrazit **najít** dialogové okno výběrem klávesy Ctrl + F.  
   
-   Další informace najdete v tématu [postupy: zobrazení, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).  
+   Další informace najdete v tématu [jak: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ##  <a name="BKMK_releasebuild"></a> Vytváření sestavení pro vydání  
  Můžete vytvořit verzi ukázkovou aplikaci, která je optimalizována pro jeho dodání. Pro sestavení vydání zadáte, že spustitelný soubor je zkopírován do sdílené síťové složky, předtím, než se sestavování.  
   
- Další informace najdete v tématu [postupy: Změna výstupního adresáře sestavení](../ide/how-to-change-the-build-output-directory.md) a [sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
+ Další informace najdete v tématu [jak: Změna výstupního adresáře sestavení](../ide/how-to-change-the-build-output-directory.md) a [sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>K určení verze sestavení v jazyce Visual Basic  
   
@@ -229,7 +224,7 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
     > [!IMPORTANT]
     >  Okno se zprávou se může zobrazit upozornění, že sdílené síťové složky, které jste zadali nemusí být důvěryhodným umístěním. Pokud důvěřujete umístění, které jste zadali, zvolte **OK** tlačítka v okně se zprávou.  
   
-6.  Sestavení aplikace.  
+6.  Sestavte aplikaci.  
   
      ![Sestavit řešení – příkaz v nabídce sestavení](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
   
@@ -252,7 +247,7 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
    > [!IMPORTANT]
    >  Okno se zprávou se může zobrazit upozornění, že sdílené síťové složky, které jste zadali nemusí být důvěryhodným umístěním. Pokud důvěřujete umístění, které jste zadali, zvolte **OK** tlačítka v okně se zprávou.  
   
-6. Sestavení aplikace.  
+6. Sestavte aplikaci.  
   
     ![Sestavit řešení – příkaz v nabídce sestavení](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
   
@@ -262,8 +257,5 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Sestavení projektu (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [Předkompilace přehled rozhraní ASP.NET Web Application Project](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
+ [Předkompilace přehled rozhraní ASP.NET Web Application Project](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [Návod: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-

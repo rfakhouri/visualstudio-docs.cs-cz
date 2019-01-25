@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], resource file
 - BDC [SharePoint development in Visual Studio], resource strings
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c61e996380ff2cca6ddc3c60ad4c6d13d10c93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e128a3d6f0dca07f9f2092af882532f7e07cd7eb
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819459"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873532"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Postupy: Určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru
   S použitím souboru prostředků, můžete zadat lokalizované názvy, definovat vlastnosti a použít oprávnění tor objekty, které jsou definovány v modelu služby Připojení obchodních dat (BDC). Zadat tyto informace, přidejte **prostředku připojení obchodních dat** položky do projektu, který obsahuje **Model Připojení obchodních dat** položky. Pak zadejte jména, vlastností a oprávnění pomocí úpravy souboru XML pro soubor prostředků.  

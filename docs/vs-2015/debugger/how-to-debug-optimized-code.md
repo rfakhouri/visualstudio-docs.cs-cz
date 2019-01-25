@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Ladění optimalizovaného kódu | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ae18cda3d3cbba28c53402e7989c83c60007b2fc
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790747"
 ---
 # <a name="how-to-debug-optimized-code"></a>Postupy: Ladění optimalizovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
 >  [/Zo (vylepšit optimalizované ladění)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)– možnost kompilátoru (představíme v sadě Visual Studio Update 3) generuje rozsáhlejší informace ladění pro optimalizovaný kód (projekty, které nejsou sestaveny s **/Od** – možnost kompilátoru. Zobrazit [/O možnosti (Optimalizace kódu)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). To zahrnuje Vylepšená podpora ladění lokálních proměnných a vložené funkce.  
@@ -95,11 +90,8 @@ POZNÁMKA:]
 for (x=0; x<10; x++)  
 ```  
   
- Předpokládejme, že jste nastavili zarážku na tomto řádku. Očekáváte zarážce 10krát, ale pokud je optimalizovaný kód, zarážka se projeví pouze jednou. Důvodem je, že první instrukce nastaví hodnotu `x` na hodnotu 0. Kompilátor rozpozná, že to jenom je třeba provést jednou a přesouvá ji ze smyčky. Zarážka se přesune s ním. Pokyny, které porovnání a zvýší `x` zůstávají uvnitř smyčky. Při prohlížení **zpětný překlad** okně [jednotku kroku](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) se automaticky nastaví na instrukci pro větší kontrolu, což je užitečné, když krokovat optimalizovaný kód.  
+ Předpokládejme, že jste nastavili zarážku na tomto řádku. Očekáváte zarážce 10krát, ale pokud je optimalizovaný kód, zarážka se projeví pouze jednou. Důvodem je, že první instrukce nastaví hodnotu `x` na hodnotu 0. Kompilátor rozpozná, že to jenom je třeba provést jednou a přesouvá ji ze smyčky. Zarážka se přesune s ním. Pokyny, které porovnání a zvýší `x` zůstávají uvnitř smyčky. Při prohlížení **zpětný překlad** okně [jednotku kroku](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) se automaticky nastaví na instrukci pro větší kontrolu, což je užitečné, když krokovat optimalizovaný kód.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Ladění nativního kódu](../debugger/debugging-native-code.md)
-
-
-

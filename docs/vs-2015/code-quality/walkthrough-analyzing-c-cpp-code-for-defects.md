@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Analýza kódu C / C++ na výskyt závad | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Analýza kódu C / C++ na výskyt závad | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754896"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Návod: Analýza kódu C/C++ na výskyt závad
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Průvodce: Analýza defektů v kódu C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak analýza kódu C/C++ pro potenciální závady kódu pomocí nástroje Analýza kódu pro kód C/C++.  
@@ -83,7 +78,7 @@ Tento návod ukazuje, jak analýza kódu C/C++ pro potenciální závady kódu p
   
 2.  V **seznam chyb**, dvakrát klikněte na následující upozornění:  
   
-     upozornění C6230: implicitní přetypování mezi sémanticky odlišnými typy: použití HRESULT v kontextu logické hodnoty.  
+     upozornění C6230: Implicitní přetypování mezi sémanticky odlišnými typy: použití HRESULT v kontextu logické hodnoty.  
   
      Editor kódu zobrazí řádek, který způsobil toto upozornění ve funkci `bool``ProcessDomain()`. Toto upozornění signalizuje, že hodnotu HRESULT se používá v příkazu "if" kde se očekává výsledek s logickou hodnotu.  
   
@@ -95,7 +90,7 @@ Tento návod ukazuje, jak analýza kódu C/C++ pro potenciální závady kódu p
   
 4.  V **seznam chyb**, dvakrát klikněte na následující upozornění:  
   
-     upozornění C6282: nesprávný operátor: přiřazení konstanty v kontextu testu. Byl == očekávání?  
+     upozornění C6282: Nesprávný operátor: přiřazení konstanty v kontextu testu. Byl == očekávání?  
   
 5.  Opravte toto upozornění při testování rovnosti. Váš kód by měl vypadat podobně jako následující kód:  
   
@@ -137,7 +132,7 @@ Tento návod ukazuje, jak analýza kódu C/C++ pro potenciální závady kódu p
   
 6.  V **seznam chyb**, dvakrát klikněte na následující upozornění:  
   
-     upozornění C6011: přesměrování ukazatele NULL "newNode".  
+     upozornění C6011: Přesměrování ukazatele NULL "newNode".  
   
      Toto upozornění znamená selhání volajícího zkontrolovat návratovou hodnotu. V tomto případě volání **AllocateNode** může vrátit hodnotu NULL (viz annotations.h hlavičkový soubor pro deklaraci funkce pro AllocateNode).  
   
@@ -179,7 +174,7 @@ Tento návod ukazuje, jak analýza kódu C/C++ pro potenciální závady kódu p
   
 3.  V **seznam chyb**, dvakrát klikněte na následující upozornění:  
   
-     upozornění C6011: přesměrování ukazatele NULL "uzel".  
+     upozornění C6011: Přesměrování ukazatele NULL "uzel".  
   
      Toto upozornění označuje, že uzel předaného do funkce může mít hodnotu null a označuje číslo řádku, které upozornění vygenerovalo.  
   
@@ -200,7 +195,4 @@ Tento návod ukazuje, jak analýza kódu C/C++ pro potenciální závady kódu p
      Projekt se sestaví bez žádná upozornění ani chyby.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Analýza spravovaného kódu na výskyt závad v kódu](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [Návod: Analýza defektů spravovaného kódu](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

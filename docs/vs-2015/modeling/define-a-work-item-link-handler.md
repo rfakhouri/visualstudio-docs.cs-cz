@@ -1,25 +1,22 @@
 ---
 title: Definování obslužné rutiny odkazu pracovní položky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767962"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definování obslužné rutiny odkazu pracovní položky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,7 +180,7 @@ namespace WorkItems
   
 7.  Ověřte, že je pracovní položka nyní zbarvena červeně. Tento příklad ukazuje `OnWorkItemLinked()` ve vzorovém kódu.  
   
-     **Řešení potíží s**: Pokud se metody obslužné rutiny nespustily, zkontrolujte, zda:  
+     **Řešení potíží s**: Pokud metody obslužné rutiny nespustily, zkontrolujte, zda:  
   
     -   Projekt knihovny tříd je uveden jako Komponenta MEF na **obsahu** seznamu v **source.extensions.manifest** v projektu VSIX.  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Připojení referenčních řetězců k prvkům modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Definování a instalace rozšíření modelování](../modeling/define-and-install-a-modeling-extension.md)   
  [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

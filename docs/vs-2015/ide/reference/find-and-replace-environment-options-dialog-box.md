@@ -1,14 +1,9 @@
 ---
 title: Najít a nahradit, prostředí, dialogové okno Možnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.FindReplace
 - VS.ToolsOptionsPages.Environment.FindandReplace
@@ -19,13 +14,13 @@ ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4c60e89624c1245415ee887e44ad8d7df24bf8d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cc374d536997c05aed644a80fe3826283d208569
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758179"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Najít a nahradit, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49250618"
 Pomocí této stránky **možnosti** dialogové okno pro řízení okna se zprávou a další aspekty najít a nahradit operace. Můžete přistupovat k dialogovému oknu z **nástroje** nabídky kliknutím **možnosti**, rozšiřující **prostředí**a pak levým na **najít a nahradit**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]
->  Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **Zobrazit informační zprávy**  
@@ -62,6 +57,3 @@ Pomocí této stránky **možnosti** dialogové okno pro řízení okna se zprá
   
 ## <a name="see-also"></a>Viz také  
  [Hledání a nahrazení textu](../../ide/finding-and-replacing-text.md)
-
-
-

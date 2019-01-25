@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: registrace služby | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zaregistrovat službu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 14124e84ad7f49326bb9e5346868c177e9d32087
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206255"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761618"
 ---
-# <a name="how-to-register-a-service"></a>Postupy: registrace služby
+# <a name="how-to-register-a-service"></a>Postupy: Registrace služby
 Rozhraní spravovaného balíčku (MPF) poskytuje atributy pro řízení registrace spravovaných služeb. Nástroj RegPkg používá tyto atributy pro registraci služby s [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="example"></a>Příklad  
@@ -46,5 +41,5 @@ Rozhraní spravovaného balíčku (MPF) poskytuje atributy pro řízení registr
 >  I když můžete použít stejný typ nebo identifikátor GUID pro služby a rozhraní, doporučujeme oddělit dva, protože služba může vystavit různá rozhraní.  
   
 ## <a name="see-also"></a>Viz také  
- [Registrace balíčků VSPackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Registrace balíčků VSPackage](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd)   
  [Základy služeb](../extensibility/internals/service-essentials.md)

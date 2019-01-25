@@ -1,26 +1,21 @@
 ---
 title: Nové nebo změněné chování editoru adaptéry | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cac26a6aeca6985546bcd21aec6cf45d72164e8a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758948"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Nové nebo změněné chování editoru adaptéry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual St
  Režim WPF se liší od režimu Win32 dvěma způsoby. Nejprve je možné hostovat zobrazení textu v kontextu WPF. V podokně WPF se zpřístupní po přetypování <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> k <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> a volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>. Druhý, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> stále vrací HWND, ale tento HWND lze použít pouze ke kontrole jeho pozice a zaměřit se na něj. Tento HWND nesmí používat reagovat na zprávu WM_PAINT, protože to nebude mít vliv na to, jak editoru jsou vykreslovány v okně. Tato HWND je k dispozici pouze pro usnadnění přechodu na Nový editor kódu prostřednictvím adaptérů. Důrazně doporučujeme, že byste neměli používat `VIF_NO_HWND_SUPPORT` Pokud vaše komponenta vyžaduje HWND pracovat z důvodu omezení v HWND vrácená `GetWindowHandle` během činnosti v tomto režimu.  
   
 #### <a name="passing-arrays-as-parameters-in-native-code"></a>Předávání polí jako parametrů v nativním kódu  
- Existuje mnoho metod v editoru starší verze rozhraní API, které mají parametry, které zahrnují pole a její vlastnosti count. Mezi příklady patří:  
+ Existuje mnoho metod v editoru starší verze rozhraní API, které mají parametry, které zahrnují pole a její vlastnosti count. Můžete například:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -62,7 +57,7 @@ Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual St
  Adaptér vyrovnávací paměti musí vždy volat z vlákna uživatelského rozhraní. Adaptér vyrovnávací paměti je spravovaný objekt, což znamená, že volání do něj ze spravovaného kódu obejde zařazování COM a volání nebude automaticky zařadit do vlákna uživatelského rozhraní.  Pokud adaptér vyrovnávací paměti při volání z vlákna na pozadí, je nutné použít <xref:System.Windows.Threading.Dispatcher.Invoke%2A> nebo podobné metody.  
   
 #### <a name="lockbuffer-methods"></a>LockBuffer metody  
- Všechny metody LockBuffer() jsou zastaralé. Mezi příklady patří:  
+ Všechny metody LockBuffer() jsou zastaralé. Můžete například:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   
@@ -127,7 +122,7 @@ Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual St
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Metoda selže, pokud předáte do třídy, která buď neimplementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Vlastní Win32 vykreslovaných vlastníkem automaticky otevíraná okna již nejsou podporovány.  
   
-#### <a name="smarttags"></a>Inteligentní značky  
+#### <a name="smarttags"></a>SmartTags  
  Není dostupná podpora adaptér pro inteligentní značky, které jsou vytvořené pomocí, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> rozhraní.  
   
 #### <a name="dte"></a>DTE  
@@ -150,4 +145,3 @@ Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual St
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> je implementován v adaptéry ale sbalování uživatelského rozhraní se ignoruje.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> je implementován v adaptéry ale sbalování uživatelského rozhraní se ignoruje.|
-

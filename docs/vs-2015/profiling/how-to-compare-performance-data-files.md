@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: porovnání datových souborů výkonu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Porovnání datových souborů výkonu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.choosediffbinaries
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf80c86f233a40ba0d65d239ae1668d575a66bb2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee0da10a6ac8786666aaf9dc041f6f198cff2d10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799561"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Postupy: porovnání datových souborů výkonu
+# <a name="how-to-compare-performance-data-files"></a>Postupy: Porovnání datových souborů výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Porovnejte výsledky dva datové soubory jiný profiler (.vsp nebo .vsps) vytvořením sestavy porovnání ("Diff") nebo zobrazení. Srovnání ukazuje rozdíly, regrese výkonu a vylepšení, ke kterým došlo v jedné relaci profilace na druhý.  
@@ -55,7 +50,7 @@ Porovnejte výsledky dva datové soubory jiný profiler (.vsp nebo .vsps) vytvo�
   
 4.  (volitelné) Zadejte hodnotu pro **prahová hodnota**.  
   
-5.  Klikněte na tlačítko **použít**.  
+5.  Klikněte na tlačítko **Použít**.  
   
 ### <a name="to-compare-report-files"></a>Chcete-li porovnat soubory sestav  
   
@@ -63,7 +58,4 @@ Porovnejte výsledky dva datové soubory jiný profiler (.vsp nebo .vsps) vytvo�
   
 2.  V **vybrat soubory analýzy k porovnání** , procházet a vyberte **referenční soubor** souboru analýzy (.vsp nebo .vsps) a **porovnávaný soubor** (.vsp nebo .vsps).  
   
-3.  Klikněte na tlačítko **OK**.
-
-
-
+3.  Klikněte na **OK**.

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00d92665fd34dda82e521cb8459b71412a6edc9e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818859"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865265"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Postupy: Vytvoření přijímače událostí pro specifickou instanci seznamu
   Příjemce událostí instance seznamu jsou reaguje na události, ke kterým dochází v žádné instanci definice seznamu. I když šablony příjemce události není povoleno zaměření na specifickou instanci seznamu, můžete upravit přijímače událostí, které působí na definici seznamu pro reakci na události v specifickou instanci seznamu.  

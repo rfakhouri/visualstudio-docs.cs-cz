@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy vrstev: Referenční | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Diagramy vrstev: Referenční dokumentace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -24,15 +21,15 @@ ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 904b92a058b8fb50f3f2e53f093f4add3730dfbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803836"
 ---
-# <a name="layer-diagrams-reference"></a>Diagramy vrstev: Referenční dokumentace
+# <a name="layer-diagrams-reference"></a>Diagramy vrstev: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat vysoké úrovně, logickou architekturu systému. Diagram vrstev slouží k uspořádání fyzické artefaktů ve vašem systému do logických, abstraktních skupin nazvaných *vrstvy*. Tyto vrstvy popsat hlavní úlohy, které tyto artefakty provádějí nebo hlavní součásti systému. Každá vrstva může také obsahovat vnořené vrstvy, které popisují podrobnější úlohy.  
@@ -51,7 +48,7 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
   
 - Posílení zamýšlenou architekturu během vývoje a údržba kódu včetně ověření pomocí vrácení se změnami a operací sestavení.  
   
-  Toto téma popisuje elementy, které můžete použít na diagramu vrstvy. Podrobné informace o tom, jak vytvořit a kreslit diagramy vrstev, přečtěte si [diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md). Další informace o vzorech vrstev najdete [vzory a postupy site](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  Toto téma popisuje elementy, které můžete použít na diagramu vrstvy. Podrobné informace o tom, jak vytvořit a kreslit diagramy vrstev, přečtěte si [diagramy vrstev: Pokyny pro](../modeling/layer-diagrams-guidelines.md). Další informace o vzorech vrstev najdete [vzory a postupy site](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Diagramy vrstev čtení  
  ![Elementů v diagramech vrstev](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -94,11 +91,8 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
     |----------------------------------|---------------------|  
     |**Kategorie**|Druh artefaktu, jako jsou třídy, oboru názvů, zdrojový soubor a tak dále|  
     |**Vrstvy**|Vrstva, která odkazuje na artefakt|  
-    |**Podporuje ověřování**|Pokud **True**, pak do procesu ověření vrstev můžete ověřit, že projekt odpovídá závislostí do nebo z tohoto elementu.<br /><br /> Pokud **False**, potom na odkaz není součástí procesu ověření vrstev.<br /><br /> Další informace najdete v tématu [diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md).|  
+    |**Podporuje ověřování**|Pokud **True**, pak do procesu ověření vrstev můžete ověřit, že projekt odpovídá závislostí do nebo z tohoto elementu.<br /><br /> Pokud **False**, potom na odkaz není součástí procesu ověření vrstev.<br /><br /> Další informace najdete v tématu [diagramy vrstev: Pokyny pro](../modeling/layer-diagrams-guidelines.md).|  
     |**identifikátor**|Odkaz na propojeného artefaktu|  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)
-
-
-

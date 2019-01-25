@@ -1,28 +1,23 @@
 ---
-title: 'Postupy: použití značek Text | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití značek Text | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - using text markers
 ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4fea8e6d5774e8991cf70cbc84e6b713d59f199f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f0c6109f965f78a3c03b0de8fecf63f702ddb3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810196"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772145"
 ---
-# <a name="how-to-use-text-markers"></a>Postupy: použití značek Text
+# <a name="how-to-use-text-markers"></a>Postupy: Použití značek Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Textu značky lze použít k úpravě <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objektu.  
@@ -62,6 +57,5 @@ Textu značky lze použít k úpravě <xref:Microsoft.VisualStudio.TextManager.I
 ## <a name="see-also"></a>Viz také  
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)   
- [Postupy: vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
- [Postupy: Implementace chybových značek](../extensibility/how-to-implement-error-markers.md)
-
+ [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
+ [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)

@@ -1,13 +1,8 @@
 ---
 title: Použití zarážek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805500"
 ---
 # <a name="using-breakpoints"></a>Použití zarážek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Můžete nastavit zarážky, pokud chcete zastavit spuštění ladicího program
   
  V tomto okamžiku hodnotu `testInt` je stále 1.  
   
- Můžete si prohlédnout aktuální stav aplikace, včetně hodnot proměnných a zásobníku volání. Další informace o zásobníku volání, naleznete v tématu [postupy: použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md).  
+ Můžete si prohlédnout aktuální stav aplikace, včetně hodnot proměnných a zásobníku volání. Další informace o zásobníku volání, naleznete v tématu [jak: Použijte okno zásobníku volání](../debugger/how-to-use-the-call-stack-window.md).  
   
  Můžete nastavit zarážku na kterýkoli řádek spustitelného kódu. Například v jazyce C# kód výše si můžete můžete nastavit zarážku na deklaraci proměnné `for` smyčku, nebo žádný kód uvnitř `for` smyčky, ale nelze nastavit zarážku v podpisu metody nebo deklarace oboru názvů nebo třídy.  
   
@@ -76,7 +71,7 @@ Můžete nastavit zarážky, pokud chcete zastavit spuštění ladicího program
  Můžete také nastavit zarážky v zásobníku volání, v okně zpětný překlad a, v nativním kódu C++, podmínky dat nebo adresu paměti.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Nastavením zarážky v okně zásobník volání  
- Můžete přerušit běh na pokynu nebo řádku, který se funkce volání vrací, nastavením zarážky **zásobník volání** okna. Další informace o zásobníku volání, naleznete v tématu [postupy: použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md). Ladicí program musí mít byl zastaven při provádění.  
+ Můžete přerušit běh na pokynu nebo řádku, který se funkce volání vrací, nastavením zarážky **zásobník volání** okna. Další informace o zásobníku volání, naleznete v tématu [jak: Použijte okno zásobníku volání](../debugger/how-to-use-the-call-stack-window.md). Ladicí program musí mít byl zastaven při provádění.  
   
 1. Spusťte ladění aplikace a zastavením spuštění čekání (například na zarážce). Otevřít **zásobník volání** okno (**ladění / Windows / zásobník volání**, nebo **CTRL + ALT + C**).  
   
@@ -155,7 +150,7 @@ Můžete nastavit zarážky, pokud chcete zastavit spuštění ladicího program
   
    Když zkontrolujete **podmínky** dialogovém okně se rozbalí a zobrazí různé druhy podmínky.  
   
-   **Podmíněný výraz:** při výběru podmíněného výrazu, pak můžete použít dvě podmínky: **platí** a **při změně**. Zvolte **platí** Pokud chcete přerušit při výraz je spokojeni, nebo zvolte **při změně** Pokud chcete přerušit, pokud je hodnota výrazu se změnila.  
+   **Podmíněný výraz:** Když vyberete podmíněného výrazu, můžete následně dvě podmínky: **Má hodnotu true** a **při změně**. Zvolte **platí** Pokud chcete přerušit při výraz je spokojeni, nebo zvolte **při změně** Pokud chcete přerušit, pokud je hodnota výrazu se změnila.  
   
    V následujícím příkladu jsme nastavili zarážku zadat pouze tehdy, když hodnota `testInt` je **4**:  
   
@@ -259,6 +254,3 @@ Můžete nastavit zarážky, pokud chcete zastavit spuštění ladicího program
   
 ## <a name="see-also"></a>Viz také  
  [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-

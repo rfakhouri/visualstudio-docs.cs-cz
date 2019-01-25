@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc3acaf90f646529da00a89aec6db860c3711fc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cde43b5e04b870ec4264d28ee6a33b56d5571d0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959898"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873324"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Postupy: Přidání položky místní nabídky do vlastního typu položky projektu SharePoint
   Při definování vlastního typu položky projektu služby SharePoint, můžete přidat položky místní nabídky do položky projektu. Položka nabídky se zobrazí, když uživatel klepne pravým tlačítkem myši na položku projektu v **Průzkumníka řešení**.  

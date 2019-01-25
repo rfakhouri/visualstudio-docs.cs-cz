@@ -1,11 +1,8 @@
 ---
 title: Návrhář postupu provádění starší verze stavu počítače | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752684"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Používání starší verze návrháře postupu provádění stavového stroje
-Při vytváření nového projektu pracovního postupu stavu počítače v [!INCLUDE[vs2010](../includes/vs2010-md.md)] , zaměřuje na buď [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], můžete použít buď **Konzolová aplikace pracovního postupu stavu počítače** nebo  **Stav počítače pracovního postupu knihovny** šablony starší verzi projektu. Pokud zvolíte některou z těchto šablon projektů stavu počítače, zobrazí se jako starší verzi pracovního postupu návrháře uživatelské rozhraní návrháře stav počítače. Informace o šablonách projektů starší verze stavu počítače najdete v tématu [postupy: vytvoření stavu počítače konzolových aplikací pracovních postupů (starší verze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) a [postupy: vytvoření knihovny stavu počítače pracovního postupu (starší verze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+Při vytváření nového projektu pracovního postupu stavu počítače v [!INCLUDE[vs2010](../includes/vs2010-md.md)] , zaměřuje na buď [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], můžete použít buď **Konzolová aplikace pracovního postupu stavu počítače** nebo  **Stav počítače pracovního postupu knihovny** šablony starší verzi projektu. Pokud zvolíte některou z těchto šablon projektů stavu počítače, zobrazí se jako starší verzi pracovního postupu návrháře uživatelské rozhraní návrháře stav počítače. Informace o šablonách projektů starší verze stavu počítače najdete v tématu [jak: Vytváření konzolových aplikací pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) a [jak: Vytvoření knihovny pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Pracovní postup stavového stroje se skládá ze sady stavy. Jeden stav je označena jako počáteční stav. Každý stav můžou získat sadu událostí. Na základě události, lze se přechod do jiného stavu. Pracovní postup stavového stroje může mít koncový stav. Při přechodu do konečného stavu, dokončení pracovního postupu.  
   
@@ -45,7 +42,7 @@ Při vytváření nového projektu pracovního postupu stavu počítače v [!INC
   
 |Název panelu nástrojů|Aktivita|Popis|  
 |------------------|--------------|-----------------|  
-|**Stav**|[Umístit aktivitu StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Představuje stav stavového stroje může obsahovat další **umístit aktivitu StateActivity** aktivity. Další informace najdete v tématu [pomocí aktivity umístit aktivitu StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
+|**Stav**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Představuje stav stavového stroje může obsahovat další **umístit aktivitu StateActivity** aktivity. Další informace najdete v tématu [pomocí aktivity umístit aktivitu StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Určuje přechod na nový stav. Další informace najdete v tématu [pomocí aktivity SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|  
 |**Aktivitu typu StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Provede, když se zadá do stavu; může obsahovat jiné aktivity. Další informace najdete v tématu [pomocí aktivity aktivitu typu StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006).|  
 |**Aktivitu typu StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Provede obsažené aktivity při opuštění [umístit aktivitu StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) aktivity. Další informace najdete v tématu [pomocí aktivity StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008).|  
@@ -61,8 +58,8 @@ Při vytváření nového projektu pracovního postupu stavu počítače v [!INC
 >  Chcete-li otevřít **Osnova dokumentu** okno na **zobrazení** nabídky, přejděte **ostatní Windows**a pak vyberte **Osnova dokumentu**.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření konzolových aplikací pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Postupy: vytvoření knihovny pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Postupy: Vytváření konzolových aplikací pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [Postupy: Vytvoření knihovny pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [Pracovní postupy stavového stroje](http://go.microsoft.com/fwlink?LinkID=65016)   
  [Použití aktivity umístit aktivitu StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
  [Použití aktivity StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   

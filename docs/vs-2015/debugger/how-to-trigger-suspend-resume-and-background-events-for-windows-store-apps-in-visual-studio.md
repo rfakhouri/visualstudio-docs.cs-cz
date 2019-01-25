@@ -1,13 +1,9 @@
 ---
 title: Jak aktivovat pozastavení, obnovení a událostí na pozadí pro aplikace Windows Store
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -19,13 +15,13 @@ ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e4a2c090bc399a578a1c607ab5923345fedffcea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 58280cda7f9556596de84d144602c97cc1f59bb9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772344"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Jak aktivovat události pozastavení a obnovení a události na pozadí pro aplikace pro Windows Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +30,7 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
 
  Toto téma také popisuje, jak ladit **úloh na pozadí**. Úlohy na pozadí umožňují provádět určité operace v procesech na pozadí, i když je aplikace neběží. Ladicí program můžete umístit vaše aplikace v režimu ladění a pak – bez spuštění uživatelského rozhraní – spuštění a ladění úloh na pozadí.
 
- Další informace o úlohách proces správy životního cyklu a na pozadí v tématu [spouštění, obnovení a multitaskingu](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Další informace o úlohách proces správy životního cyklu a na pozadí v tématu [spouštění, obnovení a multitaskingu](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu
  [Aktivační proces správy životního cyklu události](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -67,7 +63,7 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
      Všimněte si, že **pozastavit a ukončit** aplikace se zavře a ukončení relace ladění.
 
 ##  <a name="BKMK_Trigger_background_tasks"></a> Úlohy na pozadí trigger
- Libovolná aplikace můžete zaregistrovat úlohu na pozadí na určité události systému, i když není aplikace spuštěna. Úlohy na pozadí nelze spustit kód, který přímo aktualizací uživatelského rozhraní; Místo toho zobrazí informace o uživateli s aktualizace dlaždice, oznámení "BADGE" aktualizace a informační zprávy. Další informace najdete v tématu [podpoře vaší aplikace v rámci úlohy na pozadí](http://msdn.microsoft.com/en-us/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Libovolná aplikace můžete zaregistrovat úlohu na pozadí na určité události systému, i když není aplikace spuštěna. Úlohy na pozadí nelze spustit kód, který přímo aktualizací uživatelského rozhraní; Místo toho zobrazí informace o uživateli s aktualizace dlaždice, oznámení "BADGE" aktualizace a informační zprávy. Další informace najdete v tématu [podpoře vaší aplikace v rámci úlohy na pozadí](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Můžete aktivovat události, které spustí úlohy na pozadí pro aplikaci z ladicího programu.
 
@@ -129,4 +125,4 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
 4.  Zvolte **diagnostických** protokolu.
 
 ## <a name="see-also"></a>Viz také
- [Testování aplikací pro Store pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md) [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [životního cyklu aplikací](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [spouštění, obnovení a multitaskingu](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Testování aplikací pro Store pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md) [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [životního cyklu aplikací](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [spouštění, obnovení a multitaskingu](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

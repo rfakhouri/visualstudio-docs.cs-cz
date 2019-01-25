@@ -1,14 +1,9 @@
 ---
 title: Implementace vlastních zásad analýzy kódu vrácení se změnami pro spravovaný kód | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268967"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752787"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementace vlastních zásad vrácení se změnami Analýzy kódu pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Určuje sadu pravidel, které členy týmového projektu musí běžet na zdrojo
  Pokud chcete vytvořit vlastní sadu pravidel pro týmový projekt, nejprve vytvoříte speciální složky pro pravidlo zásad vrácení se změnami v **Průzkumníka správy zdrojového kódu**. Vytvoření souboru sady pravidel a přidejte soubor do správy verzí. Nakonec zadejte pravidlo nastavit jako zásady analýzy kódu vrácení se změnami pro týmový projekt.  
   
 > [!NOTE]
->  K vytvoření složky v týmovém projektu, je nejprve nutné mapovat kořen projektu týmu do umístění na místním počítači. Další informace najdete v tématu [vytváření a práci s pracovními prostory (staré)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  K vytvoření složky v týmovém projektu, je nejprve nutné mapovat kořen projektu týmu do umístění na místním počítači. Další informace najdete v tématu [vytváření a práci s pracovními prostory (staré)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Chcete-li vytvořit složku správy verzí pro Zásady vracení se změnami sadu pravidel  
   
@@ -124,6 +119,3 @@ Určuje sadu pravidel, které členy týmového projektu musí běžet na zdrojo
 7.  V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >**.  
   
 8.  Zadejte místní verzi souboru sady pravidel zásad vrácení se změnami.
-
-
-

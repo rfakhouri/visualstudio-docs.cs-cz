@@ -1,23 +1,20 @@
 ---
 title: Definování zásady zamykání pro vytváření segmentů jen pro čtení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773208"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,13 +79,13 @@ partition.SetLocks(Locks.Delete);
   
 |Hodnota|To znamená pokud `IsLocked(Value)` má hodnotu true|  
 |-----------|------------------------------------------|  
-|Žádné|Bez omezení.|  
+|Žádná|Bez omezení.|  
 |Vlastnost|Vlastnosti domény prvků nelze změnit. To se nevztahuje na vlastnosti, které jsou generovány podle role doménové třídy v relaci.|  
 |Přidejte|Nelze vytvořit nové prvky a odkazy v oddílu nebo úložiště.<br /><br /> Nevztahuje se na `ModelElement`.|  
-|Přesunutí|Element nelze přesouvat mezi oddíly, pokud `element.IsLocked(Move)` má hodnotu true, nebo pokud `targetPartition.IsLocked(Move)` má hodnotu true.|  
+|Přesunout|Element nelze přesouvat mezi oddíly, pokud `element.IsLocked(Move)` má hodnotu true, nebo pokud `targetPartition.IsLocked(Move)` má hodnotu true.|  
 |Odstranit|Element nelze odstranit, pokud je nastavení tohoto uzamknout elementu samotného nebo na některý z prvků, do které by odstranění rozšíření, jako je například vložené prvky a tvary.<br /><br /> Můžete použít `element.CanDelete()` ke zjištění, zda elementu je možné odstranit.|  
 |Změna pořadí|Řazení odkazy na roleplayer nelze změnit.|  
-|Aktér role pro doménovou|Sada odkazů, které jsou zdrojem na tento element nejde změnit. Například nové prvky nemůže být vložený, v rámci tohoto elementu. Odkazy, pro které tento element je cílem to nemá vliv.<br /><br /> Pokud tento prvek je odkaz, nejsou ovlivněny její zdroj a cíl.|  
+|RolePlayer|Sada odkazů, které jsou zdrojem na tento element nejde změnit. Například nové prvky nemůže být vložený, v rámci tohoto elementu. Odkazy, pro které tento element je cílem to nemá vliv.<br /><br /> Pokud tento prvek je odkaz, nejsou ovlivněny její zdroj a cíl.|  
 |Všechny|Bitový operátor OR ostatní hodnoty.|  
   
 ## <a name="locking-policies"></a>Zásady uzamčení  
@@ -193,6 +190,3 @@ namespace Company.YourDsl.DslPackage // Change
     }  
 }  
 ```
-
-
-

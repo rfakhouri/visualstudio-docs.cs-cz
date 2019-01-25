@@ -9,26 +9,26 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764845"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Začínáme s laděním v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2015 poskytuje výkonné integrované sady sestavení projektu a nástroje pro ladění. V tomto tématu zjistěte, jak chcete začít používat nejzákladnější nastavení ladění funkcí uživatelského rozhraní.
 
- Poznámka: Jsou odkazy na další pokročilé funkce a témata konkrétní platformy nebo funkce v dolní části této stránky.
+ Poznámka: V dolní části této stránky jsou odkazy na další pokročilé funkce a témata konkrétní platformy nebo funkce.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>Můj kód nebude fungovat. Pomozte mi, sadě Visual Studio 2015.
  Takže stanovíte editoru a vytvoříte nějaký kód. Teď budete chtít spustit ladění kódu. V sadě Visual Studio 2015, stejně jako u většiny prostředí IDE, jsou dvě fáze až po ladění: sestavování kódu zachytit a řešení chyb při projektu a kompilátoru; a spuštění kódu v prostředí k zachycení a řešení chyb za běhu a dynamické.
 
 ### <a name="configuring-a-build"></a>Konfigurace sestavení
- Existují dva základní druhy konfigurace sestavení: **ladění** a **vydání**. První konfigurace vytvoří pomalejší, větší spustitelný soubor, který umožňuje pohodlnější a pestřejší interaktivní ladění prostředí za běhu, ale nikdy dodání. Druhá sestavení rychlejší, více optimalizované spustitelný soubor, který je vhodný k odeslání (alespoň z hlediska kompilátor).
+ Existují dva základní druhy konfigurace sestavení: **Ladění** a **vydání**. První konfigurace vytvoří pomalejší, větší spustitelný soubor, který umožňuje pohodlnější a pestřejší interaktivní ladění prostředí za běhu, ale nikdy dodání. Druhá sestavení rychlejší, více optimalizované spustitelný soubor, který je vhodný k odeslání (alespoň z hlediska kompilátor).
 
  Výchozí konfigurace sestavení **ladění**.
 
@@ -44,7 +44,7 @@ Visual Studio 2015 poskytuje výkonné integrované sady sestavení projektu a n
 
  Právě začínáte, použijte **ladění** a **x86** jako konfiguraci sestavení a platformy, v uvedeném pořadí. Jakmile budete hotovi, kódování a ladění, změňte konfiguraci tak, aby **vydání** a cílit na konkrétní platformu. (Starší verze sady Visual Studio k dispozici **AnyCPU** výchozí platformu pro projekty .net kód.)
 
- Poznámka: Při sestavování projektu hodnoty konfigurace a platforma se také používají k určení, jaké cesta k adresáři projektu se vytvoří spustitelný soubor. Obvykle je to  **\<cestu projektu >\\< název projektu >\\< konfigurace\>\\< platforma\>**. Například projekt s konfigurací `Debug` a jinou platformu `x86` by se nepodařilo najít `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. To může být užitečné, pokud máte vlastní nástroje nebo skripty, které Správa těchto sestavené spustitelné soubory.
+ Poznámka: Při sestavování projektu hodnoty konfigurace a platforma jsou také umožňuje určit, jaké cesta k adresáři projektu se vytvoří spustitelný soubor. Obvykle je to  **\<cestu projektu >\\< název projektu >\\< konfigurace\>\\< platforma\>**. Například projekt s konfigurací `Debug` a jinou platformu `x86` by se nepodařilo najít `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. To může být užitečné, pokud máte vlastní nástroje nebo skripty, které Správa těchto sestavené spustitelné soubory.
 
 ### <a name="building-your-code"></a>Vytváření kódu
  Ve vašem sestavení nakonfigurované je čas vytvořit projekt. Nejjednodušší způsob, jak to stisknutím klávesy F7, ale můžete také spustit sestavení tak, že vyberete **sestavení -> Sestavit řešení** z hlavní nabídky.

@@ -1,14 +1,9 @@
 ---
 title: Taskextension – základní třída | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 15c5882b66a56b01e27501168aba285dfb89bea3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0771a2a360078d23ecf1dfd774d4dc08b1de6108
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790200"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension – základní třída
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ Dědí celou řadu úloh <xref:Microsoft.Build.Tasks.TaskExtension> třída, kte
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
  [Úlohy](../msbuild/msbuild-tasks.md)
-
-
-

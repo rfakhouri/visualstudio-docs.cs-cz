@@ -1,27 +1,22 @@
 ---
 title: Zobrazení funkcí – Data instrumentace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Function view
 ms.assetid: 595d91c8-a42b-4644-85b8-39e8140a5dfe
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c19175af6af583120c9fd648328ecf90deaeb3a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef2375fc4132e0274e7cded6daf5bdd0a58891c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769026"
 ---
 # <a name="functions-view---instrumentation-data"></a>Zobrazení funkcí – data instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,10 +85,7 @@ Zobrazení sestav funkce uvádí data profilování podle názvu funkce.
 |**Minimální výhradní čas aplikace**|Výhradní čas aplikace minimální volání této funkce.|  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení funkcí](../profiling/functions-view-sampling-data.md)   
  [Zobrazení funkcí – vzorkování](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Zobrazení funkcí – Instrumentace](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Výběr instalačního adresáře pro balíček VSPackage | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 385877b8a682574946bfd43e1e51acd771d00a2b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d8812ce6eef882f4f1b4effe97320492a34e0f2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755564"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Výběr instalačního adresáře pro balíček VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +25,17 @@ V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. U
 ## <a name="unmanaged-vspackages"></a>Nespravované rozšíření VSPackages  
  Nespravované VSPackage je server COM, který můžete nainstalovat do libovolného umístění. Registrační informace musí přesně odráží jeho umístění. Instalační program uživatelského rozhraní (UI) by měly poskytnout výchozí umístění jako podadresář vlastnosti Instalační služby systému Windows ProgramFilesFolder. Příklad:  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\  
   
  Uživatel by měl být může změnit výchozí adresář, aby uživatelé, kteří ponechat malý spouštěcí oddíl a instalaci aplikace a nástroje na jiný svazek.  
   
  Pokud schéma vedle sebe používá VSPackage označené verzí, můžete ukládat různé verze podadresářů. Příklad:  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2002\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2002\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2003\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2003\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2005\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2005\  
   
 ## <a name="managed-vspackages"></a>Spravovaná rozšíření VSPackages  
  Spravovaná rozšíření VSPackages můžete také nainstalovat do libovolného umístění. Nicméně měli byste zvážit, vždy je nainstalovat do globální mezipaměti sestavení (GAC), abyste zkrátili dobu načítání sestavení. Protože spravovaných rozšíření VSPackages jsou vždy sestavení se silným názvem, je instalovat do mezipaměti GAC znamená, že jejich ověření podpisu se silným názvem trvá pouze v době instalace. Sestavení se silným názvem nainstalované jinde v systému souborů musí mít jejich podpisy ověřit pokaždé, když jsou načteny. Pokud provádíte instalaci spravované rozšíření VSPackages v mezipaměti GAC, použijte nástroj regpkg **/Assembly** přepínač tak, aby zapisovat položky registru odkazuje na sestavení silným názvem.  
@@ -69,5 +64,4 @@ V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. U
 ## <a name="see-also"></a>Viz také  
  [Volba mezi sdíleným a Verzovaným rozšířením VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Správa rozšíření VSPackages](../../extensibility/managing-vspackages.md)   
- [Registrace spravovaného balíčku](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
-
+ [Registrace spravovaného balíčku](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

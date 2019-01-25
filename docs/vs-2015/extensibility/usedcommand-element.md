@@ -1,27 +1,22 @@
 ---
 title: Usedcommand – Element | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b34c2dbafe9126339638691bc345cab1d347924
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778349"
 ---
 # <a name="usedcommand-element"></a>UsedCommand – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +36,15 @@ Umožňuje pro přístup k příkazu, který je definován v jiném souboru .vsc
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Požadováno. Identifikátor GUID, které odpovídá páru ID identifikátoru GUID identifikující příkazu.|  
-|id|Požadováno. ID, které odpovídá páru ID identifikátoru GUID identifikující příkazu.|  
+|identifikátor GUID|Povinný parametr. Identifikátor GUID, které odpovídá páru ID identifikátoru GUID identifikující příkazu.|  
+|id|Povinný parametr. ID, které odpovídá páru ID identifikátoru GUID identifikující příkazu.|  
 |Podmínka|Volitelné. Zobrazit [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|Žádné||  
+|Žádná||  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
@@ -73,4 +68,3 @@ Umožňuje pro přístup k příkazu, který je definován v jiném souboru .vsc
 ## <a name="see-also"></a>Viz také  
  [Usedcommands – Element](../extensibility/usedcommands-element.md)   
  [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

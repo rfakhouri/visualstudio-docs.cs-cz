@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9a2de59d0cdb9cd1114375d4327ab3e3a6b5af7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10594bb52ca8bfad14acb162b46d86b3b80fdd31
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873675"
 ---
 # <a name="bookmark-control"></a>Bookmark – ovládací prvek
   <xref:Microsoft.Office.Tools.Word.Bookmark> Ovládací prvek je záložku, která má jedinečný název, zpřístupní události a může být vázaný na data. Záložka může sloužit jako zástupný symbol pro označení položku nebo místo v dokumentu aplikace Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Ovládací prvek je kombinací identifikátoru <xref:Microsoft.Office.Interop.Word.Bookmark> objektu a <xref:Microsoft.Office.Interop.Word.Range> objektu.

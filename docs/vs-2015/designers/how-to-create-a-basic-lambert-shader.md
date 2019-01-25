@@ -1,25 +1,20 @@
 ---
-title: 'Postupy: vytvoření základního Lambertova shaderu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření základního Lambertova shaderu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792005"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Postupy: Vytvoření základního Lambertova shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +59,11 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
   
  ![Osvětlení Lambert k modelu. ](../designers/media/digit-lambert-effect-result.png "Číslice Lambertova efekt výsledků")  
   
- Další informace o tom, jak použití shaderu na 3D model, najdete v části [postupy: použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Další informace o tom, jak použití shaderu na 3D model, najdete v části [jak: Použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Postupy: exportování shaderu](../designers/how-to-export-a-shader.md)   
- [Postupy: vytvoření základního Phongova shaderu](../designers/how-to-create-a-basic-phong-shader.md)   
+ [Postupy: Použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)   
+ [Postupy: Vytvoření základního Phongova shaderu](../designers/how-to-create-a-basic-phong-shader.md)   
  [Návrhář shaderů](../designers/shader-designer.md)   
  [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)
-
-
-

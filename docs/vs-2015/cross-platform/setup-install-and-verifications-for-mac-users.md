@@ -1,21 +1,17 @@
 ---
 title: Instalační program, instalace a ověření pro uživatele počítačů Mac | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fca4f8ef2d3fb1272dc835b4bedd7dcdcc83725f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772032"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Nastavení, instalace a ověření pro uživatele počítačů Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +27,7 @@ Toto téma je určená pro vývojáře, kteří pracují hlavně na počítači 
   
 - Jeden z následujících konfigurací:  
   
-  -   **Pro spouštění Xamarin Studio přímo na Macu:** Xamarin Studio je Xamarin vývojové prostředí, která podporuje vytváření aplikace pro Android, iOS a Windows pomocí jazyka C#.  Chcete-li získat rychlý přehled toho, Xamarin Studio, přečtěte si [Xamarin Studio – přehled](https://xamarin.com/studio) (xamarin.com).  
+  -   **Pro spuštěné Xamarin Studio přímo na počítači Mac:** Xamarin Studio je Xamarin vývojové prostředí, která podporuje vytváření aplikace pro Android, iOS a Windows pomocí C#.  Chcete-li získat rychlý přehled toho, Xamarin Studio, přečtěte si [Xamarin Studio – přehled](https://xamarin.com/studio) (xamarin.com).  
   
   -   **Pokud už máte Parallels nebo VMWare nakonfigurovaná na počítači Mac:** spustit Windows s Visual Studio 2015 a Xamarin 4 uvnitř Parallels nebo VMWare.  S touto konfigurací Xamarin je rozšíření, které se instaluje se sadou Visual Studio, která poskytuje schopnost používat Visual Studio jako vývojové prostředí pro vytváření aplikací pro Android, iOS a WinPhone pomocí jazyka C#.  Všimněte si, že můžete získat bezplatné předplatné Parallels 3měsíční jako součást Essentials programu sady Visual Studio pro vývojáře. Zobrazit [Microsoft Visual Studio Dev Essentials bude zahrnovat Parallels Desktop Pro a přístup Parallels](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Parallels blog).  
   
@@ -57,7 +53,7 @@ Toto téma je určená pro vývojáře, kteří pracují hlavně na počítači 
   
 ##  <a name="windows"></a> Instalační program Windows v Parallels (Visual Studio a Xamarin)  
   
-1.  Použití plochy Windows, kterou jste nakonfigurovali v Parallels VMWare, [stáhněte a spusťte instalační program pro všechny edice sady Visual Studio 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional nebo Enterprise). Visual Studio 2015 Community je bezplatné edice; edice Professional a Enterprise je možné na základě zkušební verze po dobu 30 dnů.  
+1.  Použití plochy Windows, kterou jste nakonfigurovali v Parallels VMWare, [stáhněte a spusťte instalační program pro všechny edice sady Visual Studio 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional nebo Enterprise). Visual Studio 2015 Community je bezplatné edice; edice Professional a Enterprise je možné na základě zkušební verze po dobu 30 dnů.  
   
 2.  V rámci instalačního programu, vyberte **vlastní** nainstalovat:  
   
@@ -138,4 +134,3 @@ Toto téma je určená pro vývojáře, kteří pracují hlavně na počítači 
    3.  Vyberte cíl iPhone ladění sady Visual Studio rozevíracím seznamu, jak je znázorněno níže a stisknutím klávesy F5 spusťte ladicí program. Tím se spustí simulátor na Macu, kde budete pracovat s aplikací během ladění se stane v sadě Visual Studio.  
   
         ![Vyberte cíl ladění iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "6 ověřte CrossPlat Xamarin")
-

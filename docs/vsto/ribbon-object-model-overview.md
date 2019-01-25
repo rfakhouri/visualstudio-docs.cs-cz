@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a97bcd23bd4ac3f69ab39a31a48dabc62e00a3a1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961306"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876028"
 ---
 # <a name="ribbon-object-model-overview"></a>Přehled modelu objektů pásu karet
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Poskytuje model silně typovaných objektů, které můžete použít k získání a nastavení vlastností ovládacích prvků pásu karet za běhu. Například můžete dynamicky naplnit ovládací prvky nabídky nebo zobrazení a skrytí ovládacích prvků kontextově. Také můžete přidat karty, skupiny a ovládací prvky na pás karet, ale pouze před načtení aplikací Office. Informace najdete v tématu [nastavit vlastnosti, které budou jen pro čtení](#SettingReadOnlyProperties).  
@@ -52,8 +52,8 @@ ms.locfileid: "53961306"
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
-|**Rozevírací seznam**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
-|**Textové pole**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
+|**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Galerie**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Skupina**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Popisek**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
@@ -135,7 +135,7 @@ ms.locfileid: "53961306"
 |Vlastnost|Třída ovládacích prvků pásu karet|  
 |--------------|--------------------------|  
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
-|**Má vlastnost ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
+|**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**počet sloupců**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
@@ -144,7 +144,7 @@ ms.locfileid: "53961306"
 |**Skupiny**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Název**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Pozice**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
@@ -181,7 +181,7 @@ ms.locfileid: "53961306"
   
 |Parametr|Popis|  
 |---------------|-----------------|  
-|*Odesílatel*|<xref:System.Object> , Která představuje ovládací prvek, který vyvolal událost.|  
+|*sender*|<xref:System.Object> , Která představuje ovládací prvek, který vyvolal událost.|  
 |*e*|A <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> , která obsahuje <xref:Microsoft.Office.Core.IRibbonControl>. Jakákoli vlastnost, která není k dispozici v modelu objektů pásu karet poskytuje přístup k použití tohoto ovládacího prvku [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Viz také:  

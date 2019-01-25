@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Ladění paralelní aplikace | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Ladění paralelní aplikace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f7c580ed07198f47776ee1edbad23918c03d564
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d499cbf20fe60540329b51fb5b0f8565022b199b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776717"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771316"
 ---
-# <a name="walkthrough-debugging-a-parallel-application"></a>Návod: Ladění paralelní aplikace
+# <a name="walkthrough-debugging-a-parallel-application"></a>Průvodce: Ladění paralelní aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásobníky** ladění paralelní aplikace systému windows. Tato okna vám pomůžou pochopit a chování za běhu kódu, který se používá ověření [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) nebo [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Poté, co kód přestane fungovat, návodu ukazuje způsob použití **paralelní úlohy** a **paralelní zásobníky** windows jej prozkoumat.  
@@ -88,7 +83,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
     Všimněte si, že existují čtyři volání `Debugger.Break` (`DebugBreak` v C++ ukázce) proto není potřeba vložit zarážky; jednoduše spuštěním aplikace způsobí jeho přerušení v ladicím programu až čtyřikrát.  
   
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Použití paralelních zásobníků okna: zobrazení vlákna  
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Použití okna paralelní zásobníky: Zobrazení vláken  
  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**. Počkejte první zarážce.  
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Chcete-li zobrazit zásobník volání z jednoho vlákna  
@@ -317,6 +312,3 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
  [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Použití okna paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)   
  [Použití okna úloh](../debugger/using-the-tasks-window.md)
-
-
-

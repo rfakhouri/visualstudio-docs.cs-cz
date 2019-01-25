@@ -1,13 +1,9 @@
 ---
 title: Identifikátory GUID a ID příkazů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - commands
 - id
@@ -17,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 04d79b78642310b636c6f9e7dd90f86d4f43e1ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798514"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identifikátory GUID a ID příkazů sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +33,7 @@ Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí
 
 #### <a name="to-locate-a-command-definition"></a>Vyhledejte definici příkazu
 
-1. V sadě Visual Studio, otevřete následující soubory v seznamu *cestu instalace sady Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ složky: SharedCmdDef.vsct ShellCmdDef.vsct, VsDbgCmdUsed.vsct Venusmenu.vsct.
+1. V sadě Visual Studio, otevřete následující soubory v seznamu *cestu instalace sady Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ složky: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.
 
     Většina příkazů sady Visual Studio jsou definovány v SharedCmdDef.vsct a ShellCmdDef.vsct. VsDbgCmdUsed.vsct definuje příkazy, které se vztahují k ladicímu programu a Venusmenu.vsct definuje příkazy, které jsou specifické pro vývoj pro Web.
 

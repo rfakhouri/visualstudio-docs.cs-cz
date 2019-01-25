@@ -1,23 +1,19 @@
 ---
 title: Microsoft Help Viewer SDK | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7014e59b41ff4d8e75fd5f983e6bf07c1e11378d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764692"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,13 +61,13 @@ Tento článek obsahuje následující úkoly pro Visual Studio Help Viewer inte
 
   Podporovaných řetězců jazyka (nerozlišuje velikost písmen):
 
-- JavaScript
+- javascript
 
 - CSharp nebo c#
 
 - cplusplus nebo visualc ++ nebo c ++
 
-- jazyk JScript
+- jscript
 
 - VisualBasic nebo VB.
 
@@ -304,25 +300,25 @@ some F# code
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        "VendorContent" = dword: 00000001
+        "VendorContent"=dword:00000001
 
    -   Pro 64bitové operační systémy:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        "VendorContent" = dword: 00000001
+        "VendorContent"=dword:00000001
 
 2. Obor názvů partnera v klíči registru Help 2.1 registrace:
 
    - Pro 32bitové operační systémy:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< obor názvů\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "umístění"="do režimu offline"
 
    - Pro 64bitové operační systémy:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< obor názvů\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "umístění"="do režimu offline"
 
@@ -436,7 +432,7 @@ some F# code
 
   Poznámka: proměnné, které jsou označeny "{n}" mít závislostí kódu – odebrání nebo změny těchto hodnot způsobí chyby a případně selhání aplikace. Lokalizace identifikátory (například _locID="codesnippet.n") jsou obsažené v balíčku Branding Visual Studio.
 
-  **Branding.XML**
+  **Branding.xml**
 
 |||
 |-|-|
@@ -460,8 +456,8 @@ some F# code
 |SendFeedback|\<href = "{0}" {1}> Odeslat názor\</a > k tomuto tématu společnosti Microsoft.|
 |FeedbackLink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
-|LogoFileName|vs_logo_bk.GIF|
-|LogoFileNameHC|vs_logo_wh.GIF|
+|LogoFileName|vs_logo_bk.gif|
+|LogoFileNameHC|vs_logo_wh.gif|
 |Funkce:|**Právní omezení**|
 |Použití:|Obsah přeložený sadu právní omezení velikosti písmen specifické pro počítač.|
 |**Element**|**Hodnota**|
@@ -514,9 +510,9 @@ some F# code
 |HomePageNoBooksInstalled|V počítači nebyl nalezen žádný obsah.|
 |HomePageHelpSettings|Nastavení obsahu nápovědy|
 |HomePageHelpSettingsText|\<p > vaše aktuální nastavení je místní nápovědy. Aplikace Help Viewer zobrazí obsah, který jste nainstalovali ve vašem počítači. \<br / > Chcete-li změnit zdroj obsahu nápovědy na panelu nabídek sady Visual Studio zvolte \<span style = "{0}" > Nápověda, nastavení předvoleb nápovědy\</span >.\< br / >\</p >|
-|MB|MB|
+|MegaByte|MB|
 
- **Branding.js**
+ **branding.js**
 
  Soubor branding.js obsahuje JavaScript používá značky elementů Visual Studio Help Viewer.  Níže je seznam značky elementů a podpůrné funkce jazyka JavaScript.  Všechny řetězce lokalizované pro tento soubor jsou definovány v sekci "Lokalizovatelných řetězců" v horní části tohoto souboru.  Pro umístění řetězců v rámci branding.js soubor byl vytvořen soubor ICL.
 
@@ -560,7 +556,7 @@ some F# code
 ||||
 |-|-|-|
 |**File**|**Použití**|**Zobrazit zdroj obsahu**|
-|domovskastranka.htm|Toto je stránka, která zobrazuje aktuálně nainstalovaný obsah a jakékoli jiné zprávy, které jsou vhodné pro konkrétního uživatele o jejich obsahu.  Tento soubor obsahuje další obsah "Microsoft.Help.Id" data atributu meta = "-1" který nahradí to obsahu v horní části místního obsahu obsahu.||
+|homepage.htm|Toto je stránka, která zobrazuje aktuálně nainstalovaný obsah a jakékoli jiné zprávy, které jsou vhodné pro konkrétního uživatele o jejich obsahu.  Tento soubor obsahuje další obsah "Microsoft.Help.Id" data atributu meta = "-1" který nahradí to obsahu v horní části místního obsahu obsahu.||
 ||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, značka \<HomePageTitle >|
 ||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, značka \<HomePageIntroduction >|
 ||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, značka \<HomePageContentInstallText >|
@@ -570,12 +566,12 @@ some F# code
 ||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, značka \<TopicCorruptedTitle >|
 ||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, značka \<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|Když téma nebyl nalezen v místní obsah ani nastavení není k dispozici online||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, značka \<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, značka \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, značka \<TopicNotFoundText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.XML, značka \<TopicNotFoundTitle >|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.XML, značka \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.XML, značka \<TopicNotFoundText >|
 |contentnotinstalled.htm|Pokud není žádný místní obsah instalaci produktu.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, značka \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, značka \<ContentNotInstalledDownloadContentText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.XML, značka \<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.XML, značka \<ContentNotInstalledDownloadContentText >|
 ||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, značka \<ContentNotInstalledText >|
 
  **Soubory šablon stylů CSS**
@@ -596,13 +592,13 @@ some F# code
 |-|-|-|
 |**File**|**Použití**|**Příklady**|
 |Clear.GIF|Použije k vykreslení sbalitelné oblasti||
-|footer_slice.GIF|Prezentace zápatí||
-|info_icon.GIF|Při zobrazení informací o|Právní omezení|
-|online_icon.GIF|Tato ikona se k online odkazy||
+|footer_slice.gif|Prezentace zápatí||
+|info_icon.gif|Při zobrazení informací o|Právní omezení|
+|online_icon.gif|Tato ikona se k online odkazy||
 |tabLeftBD.gif|Použije k vykreslení kontejneru fragmentu kódu||
 |tabRightBD.gif|Použije k vykreslení kontejneru fragmentu kódu||
-|vs_logo_bk.GIF|Používá pro normální kontrast logo odkazy, jak je definováno ve značce Branding.xml \<LogoFileName >.  Pro produkty Visual Studio je název logo vs_logo_bk.gif.||
-|vs_logo_wh.GIF|Používá pro normální vysokou logo odkazy definované ve značce Branding.xml \<LogoFileNameHC >.  Pro produkty Visual Studio je název logo vs_logo_wh.gif.||
+|vs_logo_bk.gif|Používá pro normální kontrast logo odkazy, jak je definováno ve značce Branding.xml \<LogoFileName >.  Pro produkty Visual Studio je název logo vs_logo_bk.gif.||
+|vs_logo_wh.gif|Používá pro normální vysokou logo odkazy definované ve značce Branding.xml \<LogoFileNameHC >.  Pro produkty Visual Studio je název logo vs_logo_wh.gif.||
 |ccOff.png|Titulky grafiky||
 |ccOn.png|Titulky grafiky||
 |ImageSprite.png|Použije k vykreslení sbalitelné oblasti|Rozbalit nebo sbalit grafiky|
@@ -729,7 +725,7 @@ some F# code
 
    Klíč: Hodnota řetězce LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
 
-- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-us
+- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US
 
    Klíč: Hodnota řetězce CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Dokumentace ke službě
 
@@ -806,7 +802,7 @@ some F# code
 
      [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Integrované prostředí:
 
-     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-USA
+     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 
      Klíč: Hodnota řetězce CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Dokumentace ke službě. Pro prostředí ISO jde o název katalogu.
 
@@ -814,7 +810,7 @@ some F# code
 
 16. Příklad integrované prostředí příkazového řádku pro testování úložiště obsahu. ISO prostředí změňte hodnoty katalogu a launchingApp podle potřeby tak, aby odpovídaly produktu.
 
-      Metoda /helpQuery/catalogname VisualStudio12 "C:\Program soubory (x86) \Microsoft Help Viewer\v2.1\HlpViewer.exe" = "Stránka & id = ContosoTopic0" /launchingApp Microsoft VisualStudio, 12.0
+      "C:\Program Files (x86)\Microsoft Help Viewer\v2.1\HlpViewer.exe" /catalogName VisualStudio12 /helpQuery method=”page&id=ContosoTopic0” /launchingApp Microsoft,VisualStudio,12.0
 
 17. Spusťte aplikaci Contoso (z kořenového adresáře aplikace Contoso). V rámci prostředí ISO, zvolte **pomáhají** položky nabídky a změnit **nastavení předvoleb nápovědy** k **místní Nápověda**.
 

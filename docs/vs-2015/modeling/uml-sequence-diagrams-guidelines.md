@@ -1,12 +1,9 @@
 ---
 title: 'Sekvenční diagramy UML: Pokyny | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.linktosequencediagram
 - vs.teamarch.logicalclassdiagram.createlifeline
@@ -25,13 +22,13 @@ ms.assetid: 5990ef7c-ba60-4e20-a36d-e29c1fa6c8bb
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56ecc5c54611f94cdbfb0f08ec54a4e0722f0cbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: efdb6b30785820ae7bef852988628efde5b517b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774652"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Sekvenční diagramy UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +57,9 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 ##  <a name="Using"></a> Pomocí sekvenčních diagramech UML  
  Sekvenční diagramy můžete použít pro různé účely na různých úrovních podrobností programu. Typické situace pro nakreslení sekvenčního diagramu jsou následující:  
   
-- Pokud máte diagram případu použití, který shrnuje uživatelé vašeho systému a své cíle, můžete nakreslit sekvenční diagramy k popisu interakci hlavní součásti systému pro splnění cíle každému případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Pokud máte diagram případu použití, který shrnuje uživatelé vašeho systému a své cíle, můžete nakreslit sekvenční diagramy k popisu interakci hlavní součásti systému pro splnění cíle každému případu použití. Další informace najdete v tématu [diagramy případů použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-- Pokud jste našli zprávy odeslané na rozhraní komponenty, můžete nakreslit sekvenční diagramy k popisu interakci vnitřních částí komponenty k dosažení výsledku, vyžaduje se pro příchozí zprávy. Další informace najdete v tématu [diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md).  
+- Pokud jste našli zprávy odeslané na rozhraní komponenty, můžete nakreslit sekvenční diagramy k popisu interakci vnitřních částí komponenty k dosažení výsledku, vyžaduje se pro příchozí zprávy. Další informace najdete v tématu [diagramy komponent UML: Pokyny pro](../modeling/uml-component-diagrams-guidelines.md).  
   
   Vytvoření diagramů pořadí má několik výhod:  
   
@@ -80,10 +77,10 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
  Můžete také popisují v diagramu tříd UML typy parametrů a vrátí hodnoty, které byly použity ve zprávách odesílaných mezi životnosti.  
   
 #### <a name="use-case-details"></a>Podrobnosti o případu použití  
- Případ použití představuje cíl uživatele, společně s posloupnost kroků k dosažení cíle. Postupně jednotlivé kroky můžete popsané v několika způsoby. Jednou z možností je nakreslit sekvenční diagram, který ukazuje interakce mezi uživateli a hlavní součásti systému. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Případ použití představuje cíl uživatele, společně s posloupnost kroků k dosažení cíle. Postupně jednotlivé kroky můžete popsané v několika způsoby. Jednou z možností je nakreslit sekvenční diagram, který ukazuje interakce mezi uživateli a hlavní součásti systému. Další informace najdete v tématu [diagramy případů použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Základní postup pro vytvoření sekvenčních diagramů  
- Úplný seznam elementů v sekvenčních diagramech, naleznete v tématu [sekvenční diagramy UML: referenční](../modeling/uml-sequence-diagrams-reference.md).  
+ Úplný seznam elementů v sekvenčních diagramech, naleznete v tématu [UML Sequence Diagrams: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
 >  Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
@@ -118,7 +115,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 3.  Chcete-li zobrazit zprávu, která pochází z neznámého zdroje událostí (9) nebo vysílá Neznámý příjemcům (10), nakreslete asynchronních zpráv z nebo na prázdné místo v diagramu. Tyto zprávy se nazývají *nalezenými zprávami* (9) a *ztracené zprávy* (10).  
   
     > [!NOTE]
-    >  Chcete-li přesunout skupinu životností se ztracenými či nalezenými zprávami, postupujte podle následujícího postupu vyberte životnosti předtím, než je přesunete: nakreslete okolo těchto životnosti, nebo když stisknete a podržíte obdélník **CTRL** klíče při výběru každé životnosti. Pokud používáte **Vybrat vše** nebo **CTRL**+**A** vyberete všechny životnosti a následně je přesunete, ztracené nebo nalezené zprávy připojené k těmto životnostem nepřesune. Pokud k této situaci dojde, můžete tyto zprávy přesunout samostatně.  
+    >  Chcete-li přesunout skupinu životností se ztracenými či nalezenými zprávami, podle následujícího postupu vyberte životnosti předtím, než je přesunete: Nakreslit obdélník kolem těchto životnosti, nebo když stisknete a podržíte **CTRL** klíče při výběru každé životnosti. Pokud používáte **Vybrat vše** nebo **CTRL**+**A** vyberete všechny životnosti a následně je přesunete, ztracené nebo nalezené zprávy připojené k těmto životnostem nepřesune. Pokud k této situaci dojde, můžete tyto zprávy přesunout samostatně.  
   
 4.  Nakreslete sekvenční diagramy pro každou hlavní zprávu do stejné součásti nebo systému.  
   
@@ -446,13 +443,10 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 5.  Přidat nové zprávy k fragmentům, pomocí nástroje zprávy, nebo zkopírujte a vložte.  
   
 ## <a name="see-also"></a>Viz také  
- [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
+ [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
- [Video: Navrhování interakce s použitím sekvenčních diagramů](http://go.microsoft.com/fwlink/?LinkId=201113)
-
-
-
+ [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Video: Zobrazení interakce s použitím sekvenčních diagramů](http://go.microsoft.com/fwlink/?LinkId=201113)

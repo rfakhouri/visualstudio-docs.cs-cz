@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: zobrazení dědičnosti mezi typy (návrhář tříd) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zobrazení dědičnosti mezi typy (návrhář tříd) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
@@ -19,18 +14,18 @@ ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 95fc42cd3d13a0613e865b8a0294c74ca016155c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782233"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Postupy: Zobrazení dědičnosti mezi typy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pokud existuje mezi základního typu a jeho odvozeným typům v diagramu tříd v Návrháři tříd můžete najít vztah dědičnosti. Chcete-li vytvořit vztah dědičnosti, pokud žádný neexistuje, mezi dvěma typy, přečtěte si téma [postupy: vytvoření dědičnosti mezi typy (návrhář tříd)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+Pokud existuje mezi základního typu a jeho odvozeným typům v diagramu tříd v Návrháři tříd můžete najít vztah dědičnosti. Chcete-li vytvořit vztah dědičnosti, pokud žádný neexistuje, mezi dvěma typy, přečtěte si téma [jak: Vytvoření dědičnosti mezi typy (návrhář tříd)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-find-the-base-type"></a>Najít základní typ  
   
@@ -53,8 +48,5 @@ Pokud existuje mezi základního typu a jeho odvozeným typům v diagramu tříd
    Můžete také kliknout pravým tlačítkem na typ, pro kterou chcete zobrazit jeho odvozených typů a zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření asociací mezi typy (návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Postupy: Vytvoření asociací mezi typy (návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Zobrazování typů a vztahů (Návrhář tříd)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

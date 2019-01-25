@@ -1,32 +1,27 @@
 ---
 title: Testování částí pro obecné metody | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914395"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771462"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednotek pro obecné metody
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Testování částí pro obecné metody můžete generovat stejným způsobem jako vy, další způsoby, jak je popsáno v [postupy: vytváření a spouštění testování částí](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Následující části obsahují informace a příklady vytváření testů jednotek pro obecné metody.  
+Testování částí pro obecné metody můžete generovat stejným způsobem jako vy, další způsoby, jak je popsáno v [jak: Vytváření a spouštění testování částí](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Následující části obsahují informace a příklady vytváření testů jednotek pro obecné metody.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Argumenty typu a omezení typu.  
  Když [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje testování částí pro obecné třídy, jako například `MyList<T>`, generuje dvě metody: Obecný pomocné rutiny a testovací metodu. Pokud `MyList<T>` obsahuje jeden nebo více omezení typu, typ argumentu musí splňovat všechna omezení typu. Ujistěte se, že obecný kód v rámci testu funguje podle očekávání pro všechny přípustné vstupů, volání testovací metody obecný pomocnou metodu s všechna omezení, které chcete testovat.  
@@ -38,7 +33,7 @@ Testování částí pro obecné metody můžete generovat stejným způsobem ja
   
 -   [Pomocí omezení typu](#TypeConstraintNotSatisfied). Tento příklad ukazuje testování částí pro obecné metody, která používá omezení typu. V tomto příkladu není splněná omezení typu.  
   
-###  <a name="EditingGeneratedTestCode"></a> Příklad 1: Úpravy kódu vygenerovaného testu  
+###  <a name="EditingGeneratedTestCode"></a> Příklad 1: Úprava kódu vygenerovaného testu  
  Testuje testovací kód v této části kódu v rámci testovací metodu s názvem `SizeOfLinkedList()`. Tato metoda vrátí celé číslo určující počet uzlů v propojeném seznamu.  
   
  První ukázce kódu, v části vygenerované testovací kód ukazuje neupravenou testovací kód jako byla generována pomocí sady Visual Studio Enterprise. Druhý příklad, v části upravovaný testovací kód ukazuje, jak vám může usnadnit otestovat fungování SizeOfLinkedList metodu pro dvě různé datové typy, `int` a `char`.  
@@ -116,15 +111,15 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
   
 > [!NOTE]
->  Pokaždé, když SizeOfLinkedListTest testovací běhy, jeho TestHelper metoda je volána dvakrát. Příkaz kontrolní výraz se musí vyhodnotit na hodnotu true. pokaždé, když pro test proběhl úspěšně. Pokud se test nezdaří, nemusí být jasné, jestli volání, které zadané `<int>` nebo volání, které zadaná `<char>` způsobil, že k selhání. Odpovědi, může prozkoumat zásobník volání, nebo můžete nastavit zarážky v testovací metodě a ladění při spouštění testu. Další informace najdete v tématu [postupy: ladění během zpracování testu v řešení technologie ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+>  Pokaždé, když SizeOfLinkedListTest testovací běhy, jeho TestHelper metoda je volána dvakrát. Příkaz kontrolní výraz se musí vyhodnotit na hodnotu true. pokaždé, když pro test proběhl úspěšně. Pokud se test nezdaří, nemusí být jasné, jestli volání, které zadané `<int>` nebo volání, které zadaná `<char>` způsobil, že k selhání. Odpovědi, může prozkoumat zásobník volání, nebo můžete nastavit zarážky v testovací metodě a ladění při spouštění testu. Další informace najdete v tématu [jak: Ladění během zpracování testu v řešení technologie ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
-###  <a name="TypeConstraintNotSatisfied"></a> Příklad 2: Použití omezení typu  
+###  <a name="TypeConstraintNotSatisfied"></a> Příklad 2: Pomocí omezení typu  
  Tento příklad ukazuje testování částí pro obecné metody, která používá omezení typu, který není splněná. První část ukazuje kód z kódu v rámci testovacího projektu. Omezení typu je zvýrazněn.  
   
  Druhá část zobrazuje kód z testovacího projektu.  
@@ -203,8 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Anatomie testování částí](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Anatomie testování částí](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Testování částí kódu](../test/unit-test-your-code.md)
-
-
-

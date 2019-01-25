@@ -1,14 +1,9 @@
 ---
 title: Používání atributu IntelliSense | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
@@ -29,18 +24,18 @@ ms.assetid: 9fdb489b-8b46-4b92-9ccc-c8f8cc184081
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586a0b31166f3b7696865e54f7d2df9c415315f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197187"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758825"
 ---
 # <a name="using-intellisense"></a>Používání atributu IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliSense je obecný termín pro několik funkcí: seznamy členů, informace o parametrech, rychlé informace a dokončování slov. Tyto funkce umožňují získat další informace o kódu, který používáte, zachovat si přehled o parametrech, které píšete, a přidávat volání vlastností a metod s pomocí několika klávesových úhozů.  
+Technologie IntelliSense je obecný termín pro celou řadu funkcí: Seznam členů, informace o parametrech, rychlé informace a dokončit slovo. Tyto funkce umožňují získat další informace o kódu, který používáte, zachovat si přehled o parametrech, které píšete, a přidávat volání vlastností a metod s pomocí několika klávesových úhozů.  
   
  Mnoho aspektů technologie IntelliSense je specifických pro jazyk. Další informace o technologii IntelliSense pro různé jazyky naleznete v tématech uvedených v části Viz také.  
   
@@ -109,8 +104,5 @@ MessageBox( hWnd, "String literal|") )
 ## <a name="see-also"></a>Viz také  
  [Specifické pro jazyk Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)   
  [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)   
- [Technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md)   
+ [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [Zadávání komentářů ke kódu XML](../ide/supplying-xml-code-comments.md)
-
-
-

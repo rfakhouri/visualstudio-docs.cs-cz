@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], unread mail
 - unread e-mail
 - mail items [Office development in Visual Studio], unread mail
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89354170aeb312442c9db1ae993954fb2e4f0bde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bfacd89330b7f32cecf3670afe7184104e1e7f5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935473"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876158"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Postupy: Načítání nepřečtených zpráv ze složky Doručená pošta prostřednictvím kódu programu
   Tento příklad načte nepřečtených e-mailové zprávy z aplikace Outlook **doručené pošty** a zobrazuje počet položek.  

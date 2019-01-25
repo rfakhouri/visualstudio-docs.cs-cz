@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: vytvoření a úprava souboru schématu XSD | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření a úprava souboru schématu XSD | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d843f9bf40b0cfee0d643a28a6757d9a491f0e8c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f5654b994eb8b6a2e8409688e30155952b6eeb59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787182"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Postupy: vytvoření a úprava souboru schématu XSD
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Postupy: Vytvoření a úprava souboru schématu XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -48,6 +43,3 @@ Toto téma popisuje, jak vytvořit nový soubor schématu XML (XSD) a pak přide
 ## <a name="see-also"></a>Viz také  
  [Práce s daty XML](../xml-tools/working-with-xml-data.md)   
  [Úlohy v Návrháři schémat XML](../xml-tools/xml-schema-designer-tasks.md)
-
-
-

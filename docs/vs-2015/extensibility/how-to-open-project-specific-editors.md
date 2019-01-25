@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: otevření editoru pro konkrétní projekt | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Otevření editoru pro konkrétní projekt | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbafb5938f26b4cdb702168ee2f3500def7ac9c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790767"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Postupy: otevření editoru pro konkrétní projekt
+# <a name="how-to-open-project-specific-editors"></a>Postupy: Otevření editorů pro konkrétní projekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud je soubor položky jsou otevírány projekt vnitřně vázán na konkrétní editor pro tento projekt, musí projekt otevřete soubor pomocí editoru specifické pro projekt. Soubor není možné delegovat na rozhraní IDE mechanismus zvolení editoru. Například namísto použití editoru standardního rastrových obrázků, můžete použít tuto možnost editoru pro konkrétní projekt k určení editoru konkrétní rastrový obrázek, který rozpoznává informace v souboru, který je jedinečný pro váš projekt.  
@@ -60,6 +55,5 @@ Pokud je soubor položky jsou otevírány projekt vnitřně vázán na konkrétn
   
 ## <a name="see-also"></a>Viz také  
  [Otevření a uložení položek projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Postupy: otevření standardních editorů](../extensibility/how-to-open-standard-editors.md)   
- [Postupy: Otevření editorů pro otevřené dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)
-
+ [Postupy: Otevřít standardních editorů](../extensibility/how-to-open-standard-editors.md)   
+ [Postupy: Otevřít editorů pro otevřené dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)

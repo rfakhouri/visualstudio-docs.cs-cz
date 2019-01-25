@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8787e79744dc52d3907f502b5696f4ca91522e01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86db84122876603ccea44be5fc1cd65b47263a92
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921783"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867478"
 ---
 # <a name="create-sharepoint-solutions"></a>Vytvoření řešení služby SharePoint
   Můžete vytvořit aplikace služby SharePoint v sadě Visual Studio jako alternativu k jejich vytváření v SharePoint designeru. Visual Studio podporuje rychlý vývoj služby SharePoint poskytnutím funkcí, jako jsou Rozšířené ladicí nástroje, technologie IntelliSense, dokončování příkazů a šablony projektů. Visual Studio také využívá výhod rozšířených nástrojů založené na rozhraní .NET Framework a jazyků. Projekty SharePoint můžete vytvořit pomocí jazyka Visual Basic nebo Visual C# a můžete vyvíjet aplikace pro SharePoint projekty pomocí jazyka JavaScript.  
@@ -39,4 +39,4 @@ ms.locfileid: "53921783"
 |![Jak na to? Videa](../sharepoint/media/vs-icon-howdoivideos.gif "jak na to? Videa")|**Jak na to? Videa**<br /><br /> -   [Postup: Vytvoření vizuální webové části pro SharePoint 2010 v sadě Visual Studio 2010?](https://visualstudio.microsoft.com/)<br />-   [Postup: Vytvořit typy obsahu pro SharePoint 2010 v sadě Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Postup: Vytváření definic webu pro SharePoint 2010 v sadě Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Postup: Vytvoření modelu připojení obchodních dat pro SharePoint 2010 pomocí Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|  
 |![Videa Channel 9](../sharepoint/media/vs-icon-channel9videos.gif "videa Channel 9")|**Videa Channel 9**<br /><br /> -   [Přehled vývoje SharePoint v sadě Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/overview-of-sharepoint-development-in-visual-studio-2010)<br />-   [Osvědčené postupy při vytváření webových částí služby SharePoint 2010 s Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/best-practices-on-building-sharepoint-2010-web-parts-with-visual-studio-2010)<br />-   [Funkce služby SharePoint a návrháři balíčku v sadě Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/sharepoint-feature-and-package-designers-in-visual-studio-2010)|  
 |![Středisko pro vývojáře](../sharepoint/media/vs-icon-msdndevcenter.gif "středisko pro vývojáře")|**Centra pro vývojáře**<br /><br /> -   [Centrum pro vývoj Visual Studio](https://visualstudio.microsoft.com/)<br />-   [Středisko pro vývojáře služby SharePoint](/sharepoint/dev/)<br />-   [Středisko pro vývojáře serveru SharePoint](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Středisko pro vývojáře aplikace SharePoint Designer](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Středisko pro vývojáře ASP.NET](https://msdn.microsoft.com/aa336522.aspx)|  
-|![Poskytování zpětné vazby](../sharepoint/media/vs-icon-feedback.gif "poskytování zpětné vazby")|**Poskytování zpětné vazby**<br /><br /> Poskytnout zpětnou vazbu k Visual Studio:<br /><br /> -   [Microsoft Connect.](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Poskytnout názor na dokumentaci pro sadu Visual Studio:<br /><br /> -   **Zjednodušené zobrazení.** Pokud jste v horní části libovolného tématu, můžete **ohodnotit Toto téma** odkaz můžete přejít k dolní části tohoto tématu, kde můžete určit **Ano** nebo **ne** v reakci na **Našli jste to užitečné?** Pak můžete vybrat jeden nebo více políček, která se zobrazí, pokud jste zvolili **ne**, poskytují další informace najdete v textovém poli, nebo obojí. Až skončíte, zvolte **odeslat** tlačítko.<br />-   **Zobrazení nevyužívající skripty.** V horní části tohoto tématu, zvolte **zpětnou vazbu** odkaz umožňující zadat zpětnou vazbu ve fóru TechNet a Expression Library Feedback.<br />-   **Klasické zobrazení.** V horní části tohoto tématu, zvolte **kliknutím hodnotit a zaslat názor** ikony k poskytnutí zpětné vazby k tématu dokumentačnímu týmu.|  
+|![Poskytování zpětné vazby](../sharepoint/media/vs-icon-feedback.gif "poskytování zpětné vazby")|**Poskytování zpětné vazby**<br /><br /> Poskytnout zpětnou vazbu k Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Poskytnout názor na dokumentaci pro sadu Visual Studio:<br /><br /> -   **Zjednodušené zobrazení.** Pokud jste v horní části libovolného tématu, můžete **ohodnotit Toto téma** odkaz můžete přejít k dolní části tohoto tématu, kde můžete určit **Ano** nebo **ne** v reakci na **Našli jste to užitečné?** Pak můžete vybrat jeden nebo více políček, která se zobrazí, pokud jste zvolili **ne**, poskytují další informace najdete v textovém poli, nebo obojí. Až skončíte, zvolte **odeslat** tlačítko.<br />-   **Zobrazení nevyužívající skripty.** V horní části tohoto tématu, zvolte **zpětnou vazbu** odkaz umožňující zadat zpětnou vazbu ve fóru TechNet a Expression Library Feedback.<br />-   **Klasické zobrazení.** V horní části tohoto tématu, zvolte **kliknutím hodnotit a zaslat názor** ikony k poskytnutí zpětné vazby k tématu dokumentačnímu týmu.|  

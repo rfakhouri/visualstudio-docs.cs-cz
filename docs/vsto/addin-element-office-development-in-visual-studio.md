@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90ad45aa77ce5e383f258c0fcaa10030b46dd1c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867723"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864316"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;doplněk&gt; – element (vývoj pro Office v sadě Visual Studio)
   **Doplněk** elementu `vstav3` obor názvů obsahuje informace, které jsou specifické pro Microsoft Office, VSTO doplňků a přizpůsobení na úrovni dokumentu byly vyvinuty v sadě Visual Studio.
@@ -60,10 +60,10 @@ ms.locfileid: "53867723"
 ### <a name="entrypoints"></a>entryPoints
  Povinný parametr. **EntryPoints** element je popsána v [ &#60;entryPoints&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
-### <a name="update"></a>Aktualizace
+### <a name="update"></a>update
  Povinný parametr. **Aktualizovat** element je popsána v [ &#60;aktualizovat&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
 
-### <a name="postactions"></a>postactions –
+### <a name="postactions"></a>postActions
  Volitelné. **Postactions –** element je popsána v [ &#60;postactions –&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
 
 ### <a name="application"></a>aplikace

@@ -1,14 +1,9 @@
 ---
 title: Omezení ladění WCF | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c1d569712547144067cbfcfd894e31e1b41964e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777912"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Omezení ladění WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +77,7 @@ Existují tři způsoby, můžete začít ladění služby WCF:
     ```  
   
 ## <a name="self-hosting"></a>S vlastním hostováním  
- A *služby v místním prostředí* je služba WCF, která není spuštěna služba IIS, hostitel služby WCF nebo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] vývojový Server. Informace o tom, jak ladit v místním prostředí služby najdete v tématu [postupy: ladění služby WCF s místním](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+ A *služby v místním prostředí* je služba WCF, která není spuštěna služba IIS, hostitel služby WCF nebo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] vývojový Server. Informace o tom, jak ladit v místním prostředí služby najdete v tématu [jak: Ladění služby WCF v místním prostředí](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
 ## <a name="self-hosting"></a>S vlastním hostováním  
  Chcete povolit ladění [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace 3.0 nebo 3.5, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 nebo 3.5, musí být nainstalována před [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] je nainstalována. Pokud [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] je nainstalována před [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 nebo 3.5, dojde k chybě při pokusu o ladění [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace 3.0 nebo 3.5. Je chybová zpráva "nelze automaticky krokovat do serveru." Chcete-li tento problém vyřešit, použijte Windows **ovládací panely**, **programy a funkce** opravit vaše [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] instalace.  
@@ -90,6 +85,3 @@ Existují tři způsoby, můžete začít ladění služby WCF:
 ## <a name="see-also"></a>Viz také  
  [Ladění služeb WCF](../debugger/debugging-wcf-services.md)   
  [Postupy: Ladění služby WCF s vlastním hostováním](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
-
-
-

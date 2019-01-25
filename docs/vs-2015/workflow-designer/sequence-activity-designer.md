@@ -1,11 +1,8 @@
 ---
 title: Návrhář aktivity pořadí | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Sequence.UI
@@ -13,13 +10,13 @@ ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: d676c4270d636d0869d5b2f95f7a265bf0a085ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 47743feae8c256aa0ddb4e3270aca32b108aa5d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799118"
 ---
 # <a name="sequence-activity-designer"></a>Návrhář aktivity Sequence
 <xref:System.Activities.Statements.Sequence> Aktivita obsahuje uspořádanou kolekci podřízené aktivity, které se provede v pořadí.  

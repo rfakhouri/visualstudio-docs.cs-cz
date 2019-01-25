@@ -12,15 +12,15 @@ helpviewer_keywords:
 - RibbonManager class
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e408b475b4ba7ac912826af3021c371b3af57f4c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989487"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876223"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Přístup k pásu karet za běhu
   Můžete napsat kód k zobrazení, skrytí a změnám pásu karet a povolit uživatelům spouštět kód z ovládacích prvků v vlastního podokna úloh, podokna akcí nebo oblasti formuláře aplikace Outlook.  

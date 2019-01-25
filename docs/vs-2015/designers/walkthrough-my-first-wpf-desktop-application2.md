@@ -1,30 +1,25 @@
 ---
-title: 'Návod: Moje první WPF plochy Application2 | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Můj první WPF plochy Application2 | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795942"
 ---
-# <a name="walkthrough-my-first-wpf-desktop-application"></a>Návod: Moje první Desktopová aplikace WPF
+# <a name="walkthrough-my-first-wpf-desktop-application"></a>Průvodce: Moje první Desktopová aplikace WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name = "Úvod" ></a> Tento názorný postup obsahuje úvod do vývoje Windows Presentation Foundation (WPF). Vytvoříte základní aplikaci, která obsahuje elementy, které jsou společné pro většinu aplikací klasické pracovní plochy WPF: XAML značky, použití modelu code-behind, definice aplikací, ovládací prvky, rozložení, datové vazby a styly.  
+name = "Úvod" ></a> Tento názorný postup obsahuje úvod do vývoje Windows Presentation Foundation (WPF). Vytvoříte základní aplikaci, která obsahuje elementy, které jsou společné pro většinu aplikací klasické pracovní plochy WPF: Značky XAML, použití modelu code-behind, definice aplikace, ovládací prvky, rozložení, datové vazby a styly.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Vytvoření projektu aplikace  
  V této části vytvoříte aplikační infrastruktury, které obsahuje projekt a hlavního okna nebo formuláře.  
@@ -647,7 +642,7 @@ name = "Úvod" ></a> Tento názorný postup obsahuje úvod do vývoje Windows Pr
   
      Tento XAML přidá následující styly:  
   
-    -   `headerTextStyle`: K formátování se název stránky `Label`.  
+    -   `headerTextStyle`: Formátování názvu stránky `Label`.  
   
     -   `labelStyle`: K formátování `Label` ovládacích prvků.  
   
@@ -983,6 +978,3 @@ name = "Úvod" ></a> Tento názorný postup obsahuje úvod do vývoje Windows Pr
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření aplikace WPF plochy připojené k mobilní službě Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Vytvoření moderních desktopových aplikací pomocí Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Používání funkcí editoru XML | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Používání funkcí editoru XML | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252281"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777665"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Návod: Používání funkcí editoru XML
+# <a name="walkthrough-using-xml-editor-features"></a>Průvodce: Používání funkcí editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Průvodce také používá některé funkce v editoru XML, které jí umožňují velmi cennou pomůckou pro vytváření XML.  
@@ -41,13 +36,13 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
   
      **Schémata XSD** se zobrazí dialogové okno.  
   
-4.  Klikněte na tlačítko **přidat**.  
+4.  Klikněte na **Přidat**.  
   
      **Otevřít schéma XSD** se zobrazí dialogové okno.  
   
 5.  Vyberte soubor hireDate.xsd a klikněte na tlačítko **otevřít**.  
   
-6.  Klikněte na tlačítko **OK**.  
+6.  Klikněte na **OK**.  
   
      Schéma XML je teď přidružený k dokumentu XML. Schématu XML se používá k ověření dokumentu. Také se používá technologii IntelliSense k naplnění seznamu členů platné prvky.  
   
@@ -77,7 +72,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
   
 5.  Typ `>` zavřete značky.  
   
-6.  Editor přidá koncová značka. Koncová značka se přidá s podtržení vlnovkou udávající chybu ověřování. Popisek zobrazí zprávu: element 'zaměstnance' má neúplný obsah. Byl očekáván 'ID'.  
+6.  Editor přidá koncová značka. Koncová značka se přidá s podtržení vlnovkou udávající chybu ověřování. Popisek zobrazí zprávu: Element 'zaměstnance' má neúplný obsah. Byl očekáván 'ID'.  
   
 7.  Typ `<` a vyberte **ID** ze seznamu členů. Zadejte `>`.  
   
@@ -85,7 +80,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
   
 8.  Typ **abc**.  
   
-     **Abc** text obsahuje podtržení vlnovkou. Popisek zobrazí zprávu: element 'ID' má neplatnou hodnotu podle jeho datového typu.  
+     **Abc** text obsahuje podtržení vlnovkou. Popisek zobrazí zprávu: Element 'ID' má neplatnou hodnotu podle jeho datového typu.  
   
 9. Klikněte pravým tlačítkem na ID elementu a vyberte **přejít k definici**.  
   
@@ -93,7 +88,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
   
 10. Vraťte se do souboru XML a nahraďte **abc** text s **123**.  
   
-     V části hodnotu elementu ID jsou vymazány podtržení vlnovkou a popisu. Popis pro koncovou značku zaměstnance nyní zobrazí zprávu: element 'zaměstnance' má neúplný obsah. Očekávané "přijetím datum".  
+     V části hodnotu elementu ID jsou vymazány podtržení vlnovkou a popisu. Popis pro koncovou značku zaměstnance nyní zobrazí zprávu: Element 'zaměstnance' má neúplný obsah. Očekávané "přijetím datum".  
   
 11. Umístěte kurzor po ID koncovou značku, zadejte v `<`, vyberte datum přijetí ze seznamu členů a poté zadejte `>`.  
   
@@ -115,7 +110,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
   
 2.  Zadejte název souboru a umístění dokumentu XML a klikněte na tlačítko **Uložit**.  
   
-## <a name="hiredatexsd-file"></a>hireDate.xsd souboru  
+## <a name="hiredatexsd-file"></a>hireDate.xsd File  
  Následující soubor schématu je používán návodu.  
   
 ```  
@@ -136,4 +131,3 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
   
 ## <a name="see-also"></a>Viz také  
  [Editor XML](../xml-tools/xml-editor.md)
-

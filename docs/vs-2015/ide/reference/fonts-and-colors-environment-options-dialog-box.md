@@ -1,14 +1,9 @@
 ---
 title: Písma a barvy, prostředí, dialogové okno Možnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -31,13 +26,13 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220232"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761624"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "50220232"
 **Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **Nástroje / možnosti**a pak vyberete **prostředí / písma a barvy**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Barevné schéma změny se projeví během relace, ve kterém je provedete. Změny barev můžete vyhodnotit otevřením jiná instance sady Visual Studio a vytváření podmínky, za kterých očekáváte, že vaše změny se můžou použít.  
   
@@ -57,7 +52,7 @@ ms.locfileid: "50220232"
   
    Změny styl písma, velikosti a zobrazení nastavení barev pro textový Editor vliv na vzhled textu v textovém editoru výchozí. Tato nastavení se nevztahuje dokumenty otevřené v textovém editoru mimo rozhraní IDE.  
   
-- **Tiskárny**  
+- **Printer**  
   
    Změny styl písma, velikosti a zobrazení nastavení barev pro tiskárnu vliv na vzhled textu v dokumentu.  
   
@@ -166,7 +161,7 @@ ms.locfileid: "50220232"
 |**Data v registru**|Barva textu slouží k zobrazení dat uvnitř **zaregistruje** okna.|  
 |**Registrovat NAT**|Barva textu slouží k zobrazení nerozpoznatelná data a objekty uvnitř **zaregistruje** okna.|  
 |**Inteligentní značky**|Používá k označení obrys, když jsou vyvolány inteligentních značek.|  
-|**SQL DML značka**|Platí pro editor jazyka Transact-SQL. Příkazy DML v tomto editoru jsou označené ohraničujícího rámečku modrá ve výchozím nastavení.|  
+|**SQL DML Marker**|Platí pro editor jazyka Transact-SQL. Příkazy DML v tomto editoru jsou označené ohraničujícího rámečku modrá ve výchozím nastavení.|  
 |**Zastaralý kód**|Nahrazené kód čeká na aktualizace. V některých případech funkce upravit a pokračovat nemůže použít změny kódu okamžitě, ale je použít později v průběhu ladění. K tomu dochází při úpravě funkce, která se musí volat funkci právě probíhá, nebo pokud chcete přidat více než 64 bajtů nové proměnné čekání v zásobníku volání funkce. Pokud k tomu dojde, ladicí program zobrazí dialogové okno "Upozornění na starý kód", a kód nahrazené pokračuje v provádění, dokud dotyčný funkce dokončí a je volána znovu. Upravit a pokračovat platí v daném čase změny kódu.|  
 |**řetězec**|Řetězcových literálů.|  
 |**Řetězce (C# @ Verbatim)**|Textové literály v jazyce C#, které dokáže interpretovat znění. Příklad:<br /><br /> @"x"|  
@@ -197,12 +192,12 @@ ms.locfileid: "50220232"
 |**Atribut XML**|Názvy atributů.|  
 |**Uvozovky atributu XML**|Znaky uvozovek pro atributy ve formátu XML.|  
 |**Hodnota atributu XML**|Obsah atributy ve formátu XML.|  
-|**Sekce XML Cdata**|Obsah \<! [ CDATA [...]] >.|  
+|**XML Cdata Section**|Obsah \<! [ CDATA [...]] >.|  
 |**Komentář XML**|Obsah \<!---->.|  
-|**Oddělovač XML**|Syntaxe jazyka XML oddělovače, včetně <, <?, <!, \<!-,-->,?\>, \<! [,]] > a [,].|  
+|**XML Delimiter**|Syntaxe jazyka XML oddělovače, včetně <, <?, <!, \<!-,-->,?\>, \<! [,]] > a [,].|  
 |**Atribut XML Doc**|Hodnota dokumentaci xml atribut, například \<param name = "I" > "I", kde je obarveny.|  
 |**Komentář XML**|Komentáře v dokumentační komentáře xml.|  
-|**– Značka XML Doc**|Značky v dokumentu XML jako komentáře<br /><br /> /// \<Souhrn >.|  
+|**– Značka XML Doc**|Značky v dokumentu XML jako komentáře<br /><br /> /// \<summary>.|  
 |**XML – klíčové slovo**|DTD klíčová slova jako CDATA, IDREF a NDATA.|  
 |**Název XML**|Názvy prvků a název cílové zpracování pokyny.|  
 |**Instrukce pro zpracování XML**|Obsah zpracování instrukcí nezahrnuje název cíle.|  
@@ -241,7 +236,4 @@ ms.locfileid: "50220232"
 ## <a name="see-also"></a>Viz také  
  [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)   
  [Dialogové okno Možnosti](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-
+ [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

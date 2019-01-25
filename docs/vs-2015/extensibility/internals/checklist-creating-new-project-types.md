@@ -1,27 +1,22 @@
 ---
 title: 'Kontrolní seznam: Vytvoření nových typů projektů | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90b48f5969a422ab9d211bb56900cf1b3b41a78b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 863889ef339aef8bb5f14555d83cacaf4d3d7c50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757356"
 ---
 # <a name="checklist-creating-new-project-types"></a>Kontrolní seznam: Vytvoření nových typů projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Násl
   
 1.  Navrhněte funkci pro nový typ projektu. Další informace najdete v tématu [rozhodnutí o návrhu typu projektu](../../extensibility/internals/project-type-design-decisions.md).  
   
-2.  Určí, editory, které se používají pro kód a další prvky projektu. Můžete použít základní nebo standardní editory, nebo můžete vytvořit a použít editoru pro konkrétní projekt. Další informace najdete v tématu [vytváření vlastních editorů a návrhářů](../../extensibility/creating-custom-editors-and-designers.md) a [jak: otevřít editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md).  
+2.  Určí, editory, které se používají pro kód a další prvky projektu. Můžete použít základní nebo standardní editory, nebo můžete vytvořit a použít editoru pro konkrétní projekt. Další informace najdete v tématu [vytváření vlastních editorů a návrhářů](../../extensibility/creating-custom-editors-and-designers.md) a [jak: Otevření editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md).  
   
 3.  Určete úroveň vaší položky projektu budou mít v účasti **zobrazení tříd** a **prohlížeče objektů**. Další informace najdete v tématu [nástroje procházení symbolů podpora](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
   
@@ -40,7 +35,7 @@ Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Násl
   
     -   Objekt factory projektu, ke správě vytváření nových projektů a otevření stávajících projektů. Další informace najdete v tématu [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    -   Zpracování příkazu a hierarchie projektu. Další informace najdete v tématu [není v sestavení: použití třídy HierUtil7 projektu k implementaci typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346), [prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [základní komponenty modelu projektu](../../extensibility/internals/project-model-core-components.md)a [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+    -   Zpracování příkazu a hierarchie projektu. Další informace najdete v tématu [není v sestavení: Použití HierUtil7 projektu třídy k implementaci typu projektu (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [základní komponenty modelu projektu](../../extensibility/internals/project-model-core-components.md) a [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
     -   Správa položek projektů, včetně přidání projekt tak, aby **nový projekt** dialogové okno. Další informace najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md) a [registrace projektů a šablon položek](../../extensibility/internals/registering-project-and-item-templates.md).  
   
@@ -68,4 +63,3 @@ Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Násl
  [Hierarchie v sadě Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Kdy vytvořit typy projektů](../../extensibility/internals/when-to-create-project-types.md)   
  [Vytváření typů projektů](../../extensibility/internals/creating-project-types.md)
-

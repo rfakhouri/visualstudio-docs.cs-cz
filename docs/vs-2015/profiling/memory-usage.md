@@ -1,25 +1,20 @@
 ---
 title: Využití paměti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f62137fcbc71df87fb0569ed0516a7ae36d8a30a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766108"
 ---
 # <a name="memory-usage"></a>Využití paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Vyhledání nevrácené paměti a neefektivní paměti během ladění s integro
 >   
 >  ![Povolit snímky](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  Zastavit (Klávesová zkratka: **Shift + F5**) a znovu spusťte ladění.  
+>  Zastavit (Klávesová zkratka: **SHIFT + F5**) a znovu spusťte ladění.  
   
  Pokaždé, když chcete zaznamenat stav paměti, vyberte **pořídit snímek** na **využití paměti** souhrnný panel nástrojů.  
   
@@ -141,7 +136,3 @@ Vyhledání nevrácené paměti a neefektivní paměti během ladění s integro
  [Visual C++ Blog: Nativní Diagnostika paměti ve verzi Preview VS2015](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
  [Visual C++ Blog: Nativní paměť diagnostické nástroje pro Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
-
-
-
-

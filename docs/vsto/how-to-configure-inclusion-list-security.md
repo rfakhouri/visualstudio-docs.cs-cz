@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895570"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868677"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Postupy: Konfigurace zabezpečení se seznamem povolených položek
   Pokud máte oprávnění správce, můžete nakonfigurovat [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] důvěryhodný dotaz na ovládací prvek, zda koncovým uživatelům se zobrazí možnost instalace řešení pro systém Office uložením rozhodnutí o důvěryhodnosti na seznam povolených položek. Informace o seznamech povolených položek najdete v tématu [řešení důvěřovat Office s použitím seznamů povolených položek](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -46,7 +46,7 @@ ms.locfileid: "53895570"
   
 2.  Vyhledejte následující klíč registru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Pokud klíč neexistuje, vytvořte ho.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "53895570"
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**Disabled** (Zakázáno)|  
-    |**Tento počítač**|**Povoleno**|  
+    |**MyComputer**|**Povoleno**|  
     |**LocalIntranet**|**Povoleno**|  
     |**TrustedSites**|**Povoleno**|  
   
@@ -105,7 +105,7 @@ ms.locfileid: "53895570"
   
 2.  Vyhledejte následující klíč registru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Pokud klíč neexistuje, vytvořte ho.  
   
@@ -115,7 +115,7 @@ ms.locfileid: "53895570"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled** (Zakázáno)|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**Tento počítač**|**AuthenticodeRequired**|  
+    |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
@@ -164,7 +164,7 @@ ms.locfileid: "53895570"
   
 2.  Pokud to ještě neexistuje, vytvořte následující klíč registru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  Přidejte následující podklíče jako **řetězcovou hodnotu**, pokud ještě neexistují, s přiřazenými hodnotami.  
   
@@ -172,7 +172,7 @@ ms.locfileid: "53895570"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled** (Zakázáno)|  
     |**Internet**|**Disabled** (Zakázáno)|  
-    |**Tento počítač**|**Disabled** (Zakázáno)|  
+    |**MyComputer**|**Disabled** (Zakázáno)|  
     |**LocalIntranet**|**Disabled** (Zakázáno)|  
     |**TrustedSites**|**Disabled** (Zakázáno)|  
   

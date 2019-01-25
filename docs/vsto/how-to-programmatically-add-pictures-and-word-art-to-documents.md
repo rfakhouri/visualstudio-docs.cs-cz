@@ -13,15 +13,15 @@ helpviewer_keywords:
 - WordArt, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac57f54d7ba925a7189dfa0bf94e1b951c5ba7fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57c4dec539fc8c1943a78b543b02a12664bfd30a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854192"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875872"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Postupy: Programové přidání obrázků a objektů WordArt do dokumentů
   Obrázky a kresby můžete přidat do dokumentů v době návrhu nebo za běhu. WordArt umožňuje přidat dekorativní textu do dokumentů aplikace Microsoft Office Word. Tyto speciální textových efektů kreslení objekty, které můžete přizpůsobit a vložit do dokumentu.  

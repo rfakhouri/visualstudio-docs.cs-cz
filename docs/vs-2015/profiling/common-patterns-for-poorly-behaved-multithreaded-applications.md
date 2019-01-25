@@ -1,14 +1,9 @@
 ---
 title: Obecné vzory pro vícevláknové aplikace s nevhodným chováním | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 00d10629-e20f-4d6d-8643-c59a3879812e
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1e0dfcb9408c67acc754f687903b4be2d13f9ff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778951"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ Vizualizátor souběžnosti pomáhá vývojářům k vizualizaci chování aplik
   
  Jak je znázorněno na následujícím obrázku, Concurrency Visualizer můžete také zveřejnit tento příznak v zobrazení využití procesoru, kde, bez ohledu na přítomnost více vláken aplikace spotřebuje pouze jednoho logického jádra.  
   
- Další informace najdete v tématu "Výkonu vzor 1: identifikace kolize zámků" v Hazim Shafi [paralelní výkon nástroje pro Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu na webu MSDN blogu.  
+ Další informace najdete v tématu "výkonu vzor 1: Identifikace kolize zámků"v Hazim Shafi [paralelní výkon nástroje pro Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu na webu MSDN blogu.  
   
- ![Zamknout kolize](../profiling/media/lockcontention-2.png "LockContention_2")  
+ ![Lock Contention](../profiling/media/lockcontention-2.png "LockContention_2")  
   
 ## <a name="uneven-workload-distribution"></a>Rozdělení nerovnoměrné pracovního vytížení  
  ![Nerovnoměrné úlohy](../profiling/media/unevenworkload-1.png "UnevenWorkLoad_1")  
@@ -73,6 +68,3 @@ Vizualizátor souběžnosti pomáhá vývojářům k vizualizaci chování aplik
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)
-
-
-

@@ -1,21 +1,17 @@
 ---
 title: Adresování DPI Problémy2 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752524"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759788"
 ---
 # <a name="addressing-dpi-issues"></a>Řešení problémů s nastavením DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Chcete-li povolit možnost použít tento škálování double, značky XAML pro zobrazování jednotlivých prvků Image uživatelského rozhraní bude potřeba upravit. Následující příklady ukazují, jak používat double škálování v subsystému WPF v sadě Visual Studio pomocí knihovny DpiHelper a Shell.12/14.  
   
- Krok 1: Prescale bitové kopie % 200, 300 % a pomocí NearestNeighbor.  
+ Krok 1: Obrázek, který se 200 %, 300 % a tak dále používat NearestNeighbor prescale.  
   
  Prescale image pomocí obou převaděč, použitý u vazby nebo pomocí rozšíření značek XAML. Příklad:  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-

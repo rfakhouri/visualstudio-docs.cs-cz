@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - text [Office development in Visual Studio], adding to worksheets
 - worksheets, displaying text in cells
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 021fe02e501fc5a8921ec8f2a50329653ca45401
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d97e57f35298a14da5c4098b464f8248b93a0592
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849765"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871803"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Postupy: Zobrazování řetězec v buňkách listů prostřednictvím kódu programu
   Tento příklad ukazuje, jak zobrazit text v buňce prostřednictvím kódu programu. K zobrazení textu v buňkách, použijte buď <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek nebo rozsah objekt nativní aplikace Excel.  

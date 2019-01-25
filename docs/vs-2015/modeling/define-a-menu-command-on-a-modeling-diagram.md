@@ -1,25 +1,22 @@
 ---
 title: Definování příkazu nabídky v diagramu modelování | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753451"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definování příkazu nabídky v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -276,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z:  
 
-   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [verze]**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
 ##  <a name="MenuExample"></a> Příklad  
  Následující příklad ukazuje kód pro příkaz nabídky, který bude Zamění názvy dvou prvků v diagramu tříd. Tento kód musí být součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření projektu a nainstalovat, jak je popsáno v předchozích částech.  
@@ -376,6 +373,3 @@ namespace SwapClassNames
  [Úpravy sekvenčních diagramů UML pomocí rozhraní API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Programování s rozhraním API UML](../modeling/programming-with-the-uml-api.md)   
  [Ukázka: Příkaz pro zarovnání tvarů v diagramu UML](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-

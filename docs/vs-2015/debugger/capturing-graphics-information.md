@@ -1,14 +1,9 @@
 ---
 title: Zaznamenání grafických informací | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frame
 - vs.graphics.capturewindow
@@ -17,13 +12,13 @@ ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a099254acd572b3fcbb437f8933c81f3d6bd45b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764752"
 ---
 # <a name="capturing-graphics-information"></a>Zaznamenání grafických informací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual 
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Spuštění aplikace v rámci Diagnostiky grafiky  
   
-- V panelu nabídky zvolte **ladění**, **grafiky**, **spustit diagnostiku**. (Klávesnice: stiskněte klávesy Alt + F5)  
+- V panelu nabídky zvolte **ladění**, **grafiky**, **spustit diagnostiku**. (Klávesnice: Stisknutím klávesy Alt + F5)  
   
 - Na **grafiky** nástrojů, zvolte **spustit diagnostiku** tlačítko.  
   
@@ -86,13 +81,10 @@ Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual 
   
  Konfigurace projektu pro vzdálené ladění závisí na typu aplikace, kterou vyvíjíte, a používaném programovacím jazyku. Informace o tom, jak konfigurovat vzdálené ladění pro aplikace Windows Store naleznete v tématu [aplikace Windows Store spustit ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md). Informace o tom, jak konfigurovat vzdálené ladění pro aplikace klasické pracovní plochy Windows najdete v tématu [nastavte si vzdálené ladění pro projekt sady Visual Studio](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
- Později lze vzdálený počítač nebo zařízení použít k přehrání informací grafiky bez ohledu na to, odkud byly informace zachyceny. Další informace najdete v tématu [postupy: Změna počítače pro přehrávání diagnostiky grafiky](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Později lze vzdálený počítač nebo zařízení použít k přehrání informací grafiky bez ohledu na to, odkud byly informace zachyceny. Další informace najdete v tématu [jak: Změnit počítač pro přehrávání diagnostiky grafiky](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Zaznamenání grafických informací z příkazového řádku  
  Informace grafiky lze zaznamenat z aplikace pomocí nástroje příkazového řádku. Tento nástroj DXCap.exe, můžete rychle zachytávání a přehrávání grafické informace bez použití sady Visual Studio nebo zachytávání prostřednictvím kódu programu. DXCap.exe zejména, můžete pro službu automation, nebo v testovacím prostředí. Další informace o DXCap.exe najdete v tématu [zachycení nástroj příkazového řádku](../debugger/command-line-capture-tool.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Zaznamenání grafických informací](../debugger/walkthrough-capturing-graphics-information.md)
-
-
-
+ [Návod: Záznam grafických informací](../debugger/walkthrough-capturing-graphics-information.md)

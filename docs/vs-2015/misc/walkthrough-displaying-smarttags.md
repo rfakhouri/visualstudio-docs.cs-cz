@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Zobrazení inteligentní značky | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zobrazení inteligentní značky | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939095"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783359"
 ---
-# <a name="walkthrough-displaying-smarttags"></a>Návod: Zobrazení inteligentní značky
-Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazit [návod: zobrazení návrhů](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+# <a name="walkthrough-displaying-smarttags"></a>Průvodce: Zobrazení inteligentní značky
+Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazit [názorný postup: Zobrazování návrhů](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Inteligentní značky jsou pro text značky, které se rozbalí a zobrazí sadu akcí. Například v projektu jazyka Visual Basic nebo Visual C#, červenou čáru se zobrazí v části slovo při přejmenování identifikátor jako název proměnné. Při přesunutí ukazatele myši podtržení, zobrazí se tlačítko téměř ukazatel. Pokud kliknete na tlačítko, navrhované akce se zobrazí, například **přejmenovat IsRead IsReady**. Pokud kliknete akce, všechny odkazy na **IsRead** v projektu jsou přejmenované **IsReady**.  
   
@@ -31,7 +26,7 @@ Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazi
 > [!NOTE]
 >  Podobným způsobem je možné implementovat další druhy značky.  
   
- Následující návod ukazuje, jak vytvořit inteligentní značky, které se zobrazí na aktuální slovo a má dvě navrhovaných akcí: **převést na velká písmena** a **převést na malá písmena**.  
+ Následující návod ukazuje, jak vytvořit inteligentní značku, která se zobrazí na aktuální slovo a má dvě doporučené akce: **Převést na velká písmena** a **převést na malá písmena**.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li postupovat podle tohoto návodu, je nutné nainstalovat sadu Visual Studio SDK. Další informace najdete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -185,7 +180,7 @@ Inteligentní značky jsou zastaralé a místo toho použití žárovky. Zobrazi
   
      Tlačítko má být zobrazena téměř ukazatel.  
   
-5.  Když kliknete na tlačítko, dva navrhované akce má být zobrazena: **převést na velká písmena** a **převést na malá písmena**. Pokud kliknete na první akci, veškerý text v aktuálního slova mají být převedeny na velká písmena. Pokud kliknete na druhou akci, veškerý text mají být převedeny na malá písmena.  
+5.  Když kliknete na tlačítko, mají být zobrazeny dva doporučené akce: **Převést na velká písmena** a **převést na malá písmena**. Pokud kliknete na první akci, veškerý text v aktuálního slova mají být převedeny na velká písmena. Pokud kliknete na druhou akci, veškerý text mají být převedeny na malá písmena.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49a570a68d2ce301ff103c3587e3246a725a1f42
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943087"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866273"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Průvodce: Vkládání textu do dokumentu z podokna akcí
   Tento návod ukazuje, jak vytvořit podokna akcí v dokumentu aplikace Microsoft Office Word. V podokně Akce obsahuje dva ovládací prvky, shromažďovat vstup a odešlete textu do dokumentu.  
@@ -111,7 +111,7 @@ ms.locfileid: "53943087"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Název**|**GetName –**|  
+    |**Název**|**getName**|  
     |**Velikost**|**130, 20**|  
   
 5.  Přidejte druhý **popisek** ovládací prvek ovládacího prvku podokna akcí a změnit **Text** vlastnost **adresu**.  
@@ -120,7 +120,7 @@ ms.locfileid: "53943087"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Název**|**GetAddress**|  
+    |**Název**|**getAddress**|  
     |**Přijímá Return**|**Hodnota TRUE**|  
     |**Multiline**|**Hodnota TRUE**|  
     |**Velikost**|**130, 40**|  

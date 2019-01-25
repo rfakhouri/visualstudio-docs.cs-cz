@@ -1,13 +1,9 @@
 ---
 title: 'CA1056: Vlastnosti identifikátoru URI by neměly být řetězce | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UriPropertiesShouldNotBeStrings
 - CA1056
@@ -19,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cbae3f526acbc948d11a7510a70c03be76ff20b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2515c88204369a96a48496e0692190e264e0eadd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772494"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: Vlastnosti identifikátoru URI by neměly být řetězce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ ms.locfileid: "53916446"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ deklaruje vlastnosti typu string, jejichž název obsahuje "uri", "Uri", "urn", "Urn", "url" nebo "Url".
 
 ## <a name="rule-description"></a>Popis pravidla

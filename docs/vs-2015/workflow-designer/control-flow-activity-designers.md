@@ -1,23 +1,20 @@
 ---
 title: Návrháři aktivit toku řízení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3db0a9d4457fce6f170b2a58733ca0bf0da678cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796634"
 ---
 # <a name="control-flow-activity-designers"></a>Návrháři aktivit toku řízení
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] obsahuje několik poskytované systémem aktivit, které můžete použít při vytváření pracovního postupu. Tato část obsahuje poskytované systémem aktivit používaných pro řízení toku v rámci pracovního postupu. Následující témata obsahují jejich popis a pokyny, jak je používat.  
@@ -26,7 +23,7 @@ ms.locfileid: "49303612"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Spustí aktivitu obsažené v těle alespoň jednou, dokud je zadaná podmínka vyhodnocena jako **true**.  
   
- [ForEach\<T >](http://msdn.microsoft.com/en-us/a680cddd-2760-497a-b27b-c023fcbc6f33)  
+ [ForEach\<T >](http://msdn.microsoft.com/a680cddd-2760-497a-b27b-c023fcbc6f33)  
  Spustí aktivitu obsažené v těle pro každou položku v zadané kolekci.  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -47,7 +44,7 @@ ms.locfileid: "49303612"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Obsahuje uspořádanou kolekci podřízené aktivity, které se provede v pořadí.  
   
- [Přepínač\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
+ [Přepínač\<T >](http://msdn.microsoft.com/ce1aa634-c4db-4475-a1c8-a88478a57212)  
  Vyhodnotí zadaný výraz a spustí aktivity z kolekce aktivit, jejichž přidružené klíč odpovídá hodnotě získané z hodnocení.  
   
  [While](../workflow-designer/while-activity-designer.md)  

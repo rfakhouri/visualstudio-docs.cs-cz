@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reusable workflows
 - importing items [SharePoint development in Visual Studio]
 - reusable workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05ef3a0a4b1fe95396966b083b457e0970ebda48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 329d38e8c258148830347a506ceef5845c1cf268
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916611"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874273"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Pokyny pro import opakovaně použitelných pracovních postupů
   Pro import opakovaně použitelných pracovních postupů, které jsou vytvořeny v aplikaci SharePoint Designer, použijte šablonu projektu Import opakovaně použitelného Sharepointu 2010 pracovního postupu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Importuje šabloně *deklarativní* *pracovního postupu* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]– pouze) a převede ho na *kód pracovního postupu*, což je pracovní postup, který můžete zvýšit s oběma [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] nebo [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] kódu. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Návod: Import opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).  

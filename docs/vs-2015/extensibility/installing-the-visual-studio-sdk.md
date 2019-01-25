@@ -1,24 +1,19 @@
 ---
 title: Instalace sady Visual Studio SDK | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- visual-studio-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: visual-studio-sdk
+ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9e5546b07ef9917590daa573efd99377339412c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786264"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Instalace sady Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
   
 1.  Spusťte instalaci sady Visual Studio 2015. Můžete instalaci libovolné edice sady Visual Studio s výjimkou Express.  
   
-2.  Na první obrazovce vyberte **vlastní**, nikoli **výchozí**. Klikněte na tlačítko **Další**.  
+2.  Na první obrazovce vyberte **vlastní**, nikoli **výchozí**. Klikněte na **Další**.  
   
 3.  Měli byste vidět stromové zobrazení vlastní funkce. Otevřít **běžné nástroje**. Měli byste vidět **Visual Studio Extensibility Tools** .  
   
@@ -67,10 +62,3 @@ vs_community.exe /s /installSelectableItems VS_SDK_GROUPV1
 ```  
   
  Všimněte si, že je nutné použít instalační program sady Visual Studio, který odpovídá vaší nainstalované verzi sady Visual Studio. Například pokud máte v počítači nainstalovaný Visual Studio Enterprise, musíte spustit instalační program sady Visual Studio Enterprise (vs_enterprise.exe).
-
-
-
-
-
-
-
