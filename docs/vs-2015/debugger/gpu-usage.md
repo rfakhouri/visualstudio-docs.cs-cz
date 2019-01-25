@@ -1,25 +1,20 @@
 ---
 title: Využití GPU | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771647"
 ---
 # <a name="gpu-usage"></a>Využití GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Chcete-li spustit nástroj využití GPU:  
   
-1. V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: stiskněte kombinaci kláves Alt + F2).  
+1. V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: Stisknutím klávesy Alt + F2).  
   
 2. V Centru pro výkon a diagnostiku, zaškrtněte políčko vedle položky **využití GPU**. Volitelně můžete zaškrtnutím políčka vedle jiné nástroje, které vás zajímají. Můžete spustit několik výkonu a diagnostické nástroje souběžně, což umožňuje získat komplexnější přehled o výkonu vaší aplikace.  
   
@@ -99,9 +94,9 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
 |--------------------|-----------------|  
 |**Proces**|Název procesu, které vás zajímají. V tomto rozevíracím seznamu jsou zahrnuté všechny procesy, které používá GPU během diagnostické relace. Barva spojených s procesem v této rozevírací seznam je barva aktivity vlákna ve níže časové osy.|  
 |**vlákno**|ID vlákna, které vás zajímají. Ve vícevláknové aplikaci pomůže vám izolovat konkrétní vlákna, které patří k procesu, který vás zajímá. Události související s vybranou vlákna jsou vyznačené na každé časové osy.|  
-|**Zobrazení**|Počet zobrazení se zobrazí jehož obnovovací frekvence **Poznámka:** některé ovladače lze nastavit zobrazíte více fyzických zobrazí jako jeden, velké virtuální zobrazení. Jediné zobrazení uvedené, může se zobrazit i v případě, že tento počítač má připojené více monitorů.|  
+|**Zobrazení**|Počet zobrazení se zobrazí jehož obnovovací frekvence **Poznámka:**  Některé ovladače lze nastavit zobrazíte více fyzických zobrazí jako jeden, velké virtuální zobrazení. Jediné zobrazení uvedené, může se zobrazit i v případě, že tento počítač má připojené více monitorů.|  
 |**Filtr**|Klíčová slova, které vás zajímají. Události v dolní části sestavy bude obsahovat pouze ty, které odpovídají klíčové slovo, ať už zcela nebo zčásti. Více klíčových slov můžete určit jejich oddělením středníkem (;).|  
-|**Hierarchie řazení**|Zaškrtávací políčko, která označuje, zda události – definice prostřednictvím uživatelské značky--hierarchií jsou zachovány nebo ignorovat.|  
+|**Hierarchy Sort**|Zaškrtávací políčko, která označuje, zda události – definice prostřednictvím uživatelské značky--hierarchií jsou zachovány nebo ignorovat.|  
   
  Seznam událostí v dolní části sestavy využití GPU zobrazují podrobnosti o každé události.  
   
@@ -122,7 +117,7 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Chcete-li odložit, profilace od začátku aplikace:  
   
-1.  V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: stiskněte kombinaci kláves Alt + F2).  
+1.  V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: Stisknutím klávesy Alt + F2).  
   
 2.  V Centru pro výkon a diagnostiku, postupujte **nastavení** odkaz **využití GPU**.  
   
@@ -155,6 +150,3 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
 -   [Nástroj využití GPU ve Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
 -   [Využití GPU pro DirectX v sadě Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-

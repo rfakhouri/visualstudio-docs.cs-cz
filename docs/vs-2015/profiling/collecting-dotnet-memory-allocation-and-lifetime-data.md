@@ -1,14 +1,9 @@
 ---
 title: Shromažďuje alokaci paměti .NET a Data o životním cyklu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools,.NET memory method
@@ -16,13 +11,13 @@ ms.assetid: 62a6dd5f-db66-4456-9d57-f8913dbfe4d5
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b31f4cfce52c60e4b8f65758fc56e16e29bef6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 232707cd8fa51b8b69c67e1e66cb0790f4938031
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761575"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794212"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat o alokaci paměti a době platnosti objektů .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,27 +65,24 @@ ms.locfileid: "51761575"
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|Na **Obecné** stránce, pojmenování detailů generovaného souboru dat profilování (.vsp).|-   [Shromažďuje alokaci paměti .NET a Data o životním cyklu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Postupy: nastavení možností názvu datového souboru výkonu](../profiling/how-to-set-performance-data-file-name-options.md)|  
+|Na **Obecné** stránce, pojmenování detailů generovaného souboru dat profilování (.vsp).|-   [Shromažďuje alokaci paměti .NET a Data o životním cyklu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Jak: Nastavení možností názvu datového souboru výkonu](../profiling/how-to-set-performance-data-file-name-options.md)|  
 |Na **spuštění** stránce, zvolte aplikaci, která spustit, pokud máte několik projektů .exe ve vašem kódu řešení.|-   [Shromažďování dat interakce vrstev](../profiling/collecting-tier-interaction-data.md)|  
 |Na **interakce vrstev** stránce, přidejte data pro volání ADO.NET pro spuštění profilování.|-   [Shromažďování dat interakce vrstev](../profiling/collecting-tier-interaction-data.md)|  
-|Na **události Windows** stránky, zadejte jeden nebo více událostí trasování událostí pro Windows (ETW) pro shromažďování dat prostřednictvím data vzorkování.|-   [Postupy: shromažďování trasování událostí pro Windows (ETW) dat.](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
-|Na **čítače Windows** stránky, zadejte jeden nebo více čítačů výkonu operačního systému pro přidání do profilových dat. jako značky.|-   [Postupy: shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)|  
-|Na **Upřesnit** stránky, zadejte verzi modulu runtime rozhraní .NET Framework do profilu, pokud vaše aplikace moduly používat více verzí. Standardně je první verze načíst profilována.|-   [Postupy: určení modulu Runtime rozhraní .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|  
+|Na **události Windows** stránky, zadejte jeden nebo více událostí trasování událostí pro Windows (ETW) pro shromažďování dat prostřednictvím data vzorkování.|-   [Jak: Shromažďování dat o trasování událostí pro Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
+|Na **čítače Windows** stránky, zadejte jeden nebo více čítačů výkonu operačního systému pro přidání do profilových dat. jako značky.|-   [Jak: Shromažďování dat z čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)|  
+|Na **Upřesnit** stránky, zadejte verzi modulu runtime rozhraní .NET Framework do profilu, pokud vaše aplikace moduly používat více verzí. Standardně je první verze načíst profilována.|-   [Jak: Určení modulu runtime rozhraní .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|  
   
 ## <a name="instrumentation-tasks"></a>Instrumentace úlohy  
  Úkoly v následující tabulce jsou možnosti **stránky vlastností** dialogové okno, které jsou specifické pro profilování pomocí metody instrumentace.  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|Na **binární soubory** stránky, zadejte umístění pro instrumentované kopie modulů. Ve výchozím nastavení původní binární soubory přesunou do složky pro zálohy.|-   [Postupy: přemístění instrumentovaných binárních souborů](../profiling/how-to-relocate-instrumented-binaries.md)|  
-|Na **instrumentace** stránce, malé funkce vyloučit z profilace ke snížení profilace režie, profil kódu jazyka JavaScript na webových stránkách ASP.NET a zadat příkazy před a po spuštění z příkazového řádku proces instrumentace.|-   [Postupy: vyloučení nebo zahrnutí krátkých funkcí z instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [Postupy: profilování kódu JavaScript ve webových stránkách](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Postupy: určení příkazů k provedení před instrumentací a po instrumentaci](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
-|Na **čítače CPU** stránky, zadejte jeden nebo více čítačů výkonu procesoru pro přidání do profilových dat.|-   [Postupy: shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)|  
-|Na **Upřesnit** stránky, zadejte jakékoli další VSInstr.exe požadované možnosti, jako je například možnost zahrnout nebo vyloučit určité funkce. Další informace o možnosti VSInstr najdete v tématu [VSInstr](../profiling/vsinstr.md)|-   [Postupy: určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [Postupy: omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
+|Na **binární soubory** stránky, zadejte umístění pro instrumentované kopie modulů. Ve výchozím nastavení původní binární soubory přesunou do složky pro zálohy.|-   [Jak: Přemístění instrumentovaných binárních souborů](../profiling/how-to-relocate-instrumented-binaries.md)|  
+|Na **instrumentace** stránce, malé funkce vyloučit z profilace ke snížení profilace režie, profil kódu jazyka JavaScript na webových stránkách ASP.NET a zadat příkazy před a po spuštění z příkazového řádku proces instrumentace.|-   [Jak: Vyloučení krátkých funkcí z instrumentace nebo jejich zahrnutí do instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [Jak: Profilování kódu JavaScript ve webových stránkách](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Jak: Zadání příkazů k provedení před instrumentací a po instrumentaci](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
+|Na **čítače CPU** stránky, zadejte jeden nebo více čítačů výkonu procesoru pro přidání do profilových dat.|-   [Jak: Shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)|  
+|Na **Upřesnit** stránky, zadejte jakékoli další VSInstr.exe požadované možnosti, jako je například možnost zahrnout nebo vyloučit určité funkce. Další informace o možnosti VSInstr najdete v tématu [VSInstr](../profiling/vsinstr.md)|-   [Jak: Zadání dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [Jak: Omezení instrumentace na určité funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
- [Postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)   
+ [Postupy: Výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)   
  [Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)
-
-
-

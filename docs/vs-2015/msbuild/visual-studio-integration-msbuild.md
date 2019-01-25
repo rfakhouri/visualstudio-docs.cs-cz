@@ -1,14 +1,9 @@
 ---
 title: Integrace se sadou Visual Studio (MSBuild) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -23,13 +18,13 @@ ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294850"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763307"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ Visual Studio hostuje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] k
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zkontroluje podmínky `PropertyGroup`, `ItemGroup`, `Import`, vlastnost a prvky položek pro tento účel.  
   
 ## <a name="additional-build-actions"></a>Další akce sestavení  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umožňuje změnit název položky typu souboru v projektu s **akce sestavení** vlastnost [vlastnosti souboru](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, a `None` názvy typů položek jsou vždy uvedeny v této nabídce a všechny další názvy typů položek již ve vašem projektu. Aby všechny vlastní názvy typů položek jsou vždy k dispozici v této nabídce můžete přidat názvy typů položek s názvem `AvailableItemName`. Například přidáním následujícího do vašeho souboru projektu bude přidán vlastní typ `JScript` k této nabídce pro všechny projekty, které importuje:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umožňuje změnit název položky typu souboru v projektu s **akce sestavení** vlastnost [vlastnosti souboru](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, a `None` názvy typů položek jsou vždy uvedeny v této nabídce a všechny další názvy typů položek již ve vašem projektu. Aby všechny vlastní názvy typů položek jsou vždy k dispozici v této nabídce můžete přidat názvy typů položek s názvem `AvailableItemName`. Například přidáním následujícího do vašeho souboru projektu bude přidán vlastní typ `JScript` k této nabídce pro všechny projekty, které importuje:  
   
 ```  
 <ItemGroup>  
@@ -188,7 +183,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Pro pravidelná sestavení v sadě Visual Studio se nevztahuje kontrola rychlé aktualizace a projekt bude sestaven jako kdyby jste vyvolali sestavení z příkazového řádku.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: rozšíření procesu sestavení sady Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [Postupy: Rozšíření procesu sestavení sady Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Spuštění sestavení z integrovaného vývojového prostředí](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Registrace rozšíření rozhraní .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
@@ -197,6 +192,3 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [Target – Element (MSBuild)](../msbuild/target-element-msbuild.md)   
  [CSC – úloha](../msbuild/csc-task.md)   
  [Vbc – úloha](../msbuild/vbc-task.md)
-
-
-

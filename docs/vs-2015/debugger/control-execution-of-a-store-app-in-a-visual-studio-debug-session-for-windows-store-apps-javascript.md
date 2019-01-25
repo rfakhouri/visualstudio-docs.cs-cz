@@ -1,13 +1,9 @@
 ---
 title: Řízení spouštění aplikace pro Store v ladicí relace pro aplikace Windows Store (JavaScript) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -17,13 +13,13 @@ ms.assetid: 60159535-61ec-466a-a4a6-115ec72a8af5
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4e2541fe5a4faafbd1ab9c165fc38a960406bd0a
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 0b4c994544472269463388f1aa0544fecbbdce39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777945"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Řízení spouštění aplikace pro Store v ladicí relaci sady Visual Studio pro aplikace Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +121,7 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
 
     Podívejte se na více proměnných v okně kukátko. Hodnoty proměnných sledovaných, jako je hodnot v oknech tip dat, se aktualizují pokaždé, když je spuštění pozastaveno. Sledované proměnné jsou uloženy napříč relacemi ladění.
 
-7. **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **SHIFT + F5**). Ukončí relaci ladění.
+7. **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **Shift+F5**). Ukončí relaci ladění.
 
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> Krokovat do, nad a z funkce
  Na rozdíl od krokování s vnořením do funkcí volaných funkcí nadřazené, krokování přes funkci provede podřízené funkce a následně pozastaví provádění kódu ve funkci volání jako obnoví nadřazený. Pokud jste obeznámeni s způsob, jak funkce funguje a si jisti, že jeho spuštění nebude mít vliv na problém, který se objeví prošetřovaná může Krokovat přes funkci.
@@ -155,9 +151,9 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
 
 5.  **Krokovat přes funkci.** Všimněte si, že se na další řádek v `example2`, `var y = example2_a();` je v podstatě stejný jako předchozí řádek. Můžete bezpečně Krokovat přes tento řádek. Zvolte **F10** klíč k přesunutí z opětovné `example2` do této druhé volání `example2_a`. Všimněte si, že `callTrack` řetězec označuje `example2_a` funkce byla spuštěna dvakrát.
 
-6.  **Krok z funkce.** Zvolte **F11** klíče krokování s vnořením `example2_b` funkce. Všimněte si, že `example2_b` není příliš neliší od `example2_a`. Chcete-li mimo funkci, zvolte **Krokovat s Vystoupením** na **ladění** nabídce (klávesnice: **SHIFT + F11**). Všimněte si, že `callTrack` proměnné označuje, že `example2_b` se provedl a, který ladicí program vrátil do bodu kde `example2` obnoví.
+6.  **Krok z funkce.** Zvolte **F11** klíče krokování s vnořením `example2_b` funkce. Všimněte si, že `example2_b` není příliš neliší od `example2_a`. Chcete-li mimo funkci, zvolte **Krokovat s Vystoupením** na **ladění** nabídce (klávesnice: **Shift+F11**). Všimněte si, že `callTrack` proměnné označuje, že `example2_b` se provedl a, který ladicí program vrátil do bodu kde `example2` obnoví.
 
-7.  **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **SHIFT + F5**). Ukončí relaci ladění.
+7.  **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **Shift+F5**). Ukončí relaci ladění.
 
 ##  <a name="BKMK_Set_a_conditional_breakpoint__run_to_the_cursor__and_visualize_a_variable"></a> Nastavení podmíněné zarážky, přechod ke kurzoru a vizualizovat proměnné
  Podmíněné zarážky Určuje podmínku, která způsobí, že ladicí program k pozastavení provádění. Podmínka je zadaný libovolný výraz kód, který může být vyhodnocen jako true nebo false. Můžete například použít podmíněné zarážky prozkoumat stav programu v často volaných funkcí pouze v případě, že proměnné dosáhne určité hodnoty.
@@ -193,7 +189,7 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
 
 7.  **Přechod ke kurzoru.** Vyberte řádek `callTrack += "->example3";` a klikněte na tlačítko **spustit ke kurzoru** v místní nabídce (klávesnice: **CTRL + F10**). Ladicí program dokončí iterací smyčky a následně pozastaví provádění kódu na řádku.
 
-8.  **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **SHIFT + F5**). Ukončí relaci ladění.
+8.  **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **Shift+F5**). Ukončí relaci ladění.
 
 ###  <a name="BKMK_Use_Run_to_Cursor_to_return_to_your_code_and_delete_a_breakpoint"></a> Použití spustit ke kurzoru se vraťte do vašeho kódu a odstranění zarážky
  Provést do pozice kurzoru může být velmi užitečné, když jste vkročili knihovny kódu od společnosti Microsoft nebo třetích stran. Krokování kódem knihovny mohou být informativní, často může trvat dlouhou dobu. A obvykle jsou mnohem více zajímá váš vlastní kód. V tomto cvičení se dozvíte, jak na to.
@@ -219,7 +215,7 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
 
 2.  **Spusťte zarážku.** Spuštění relace ladění zvolením **spustit ladění** na **ladění** nabídce (klávesnice: **F5**). Ladicí program pozastaví provádění kódu na zarážce. Krokovat s vnořením do řádku.
 
-3.  **Otevřete v okně místních hodnot.** Na **ladění** nabídky, přejděte k **Windows**a klikněte na tlačítko **lokální**. (Klávesnice: ALT+ 4).
+3.  **Otevřete v okně místních hodnot.** Na **ladění** nabídky, přejděte k **Windows**a klikněte na tlačítko **lokální**. (Klávesnice: Alt+4).
 
 4.  **Zkontrolujte místní proměnné ve funkci modulu** The lokální systém windows zobrazí proměnné aktuálně prováděné funkci ( `module` funkce) jako na nejvyšší úrovni uzly stromu. Při zadání funkce jazyka JavaScript vytvoří všechny proměnné a poskytne jim hodnotu `undefined`. Funkce, které jsou definovány ve funkci mají jejich text jako hodnotu.
 
@@ -274,7 +270,7 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
 
 8.  V okně místních hodnot, pouze parametr `b` je uveden jako místní proměnné v `multiplyXby`, ale nové **[oboru]** úroveň se přidala. Rozbalením tohoto uzlu, uvidíte, že obsahuje parametry, funkce a proměnné `multiplyClosure`, včetně `a` proměnná volána v prvním řádku `multiplyXby`. Rychlá kontrola druhého **[oboru]** uzel ukáže proměnné funkce modulu, který `multiplyXby` přistupuje k jeho dalším řádku.
 
-9. **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **SHIFT + F5**). Ukončí relaci ladění.
+9. **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **Shift+F5**). Ukončí relaci ladění.
 
 ##  <a name="BKMK_Navigate_to_code_by_using_the_Call_Stack_window"></a> Přejít ke kódu pomocí okna zásobník volání
  Zásobník volání je datová struktura, která obsahuje informace o funkcích, které jsou spuštěny v aktuálním vlákně aplikace. Při dosažení zarážky v okně zásobník volání zobrazí seznam všech funkcí, které jsou aktivní v zásobníku. Aktuálně prováděné funkce je v horní části seznamu okna zásobník volání. Funkce, která inicializuje vlákno je v dolní části seznamu. Funkce mezi zobrazit cestu volání z inicializační funkce na aktuální funkci.
@@ -290,7 +286,7 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
 
 2.  **Spusťte zarážku.** Spuštění relace ladění zvolením **spustit ladění** na **ladění** nabídce (klávesnice: **F5**). Ladicí program pozastaví provádění na zarážku ve funkci modulu.
 
-3.  **Otevření okna zásobník volání.** Na **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **zásobník volání** (klávesnice: ALT+ 7). Všimněte si, že v okně zásobník volání se zobrazí dvě funkce:
+3.  **Otevření okna zásobník volání.** Na **ladění** nabídce zvolte **Windows**a klikněte na tlačítko **zásobník volání** (klávesnice: Alt+7). Všimněte si, že v okně zásobník volání se zobrazí dvě funkce:
 
     -   **Globální kódu** je vstupním bodem `module` funkce v dolní části zásobníku volání.
 
@@ -304,7 +300,7 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
 
 6.  **Krokovat s vnořením funkce a spusťte zarážku.** Pokračujte v krokování s vnořením do `example5_d`. Všimněte si, že při návratu z funkce se odebírá ze zásobníku volání. Stisknutím klávesy **F5** pro pokračování ve spouštění programu. Zastavení na zarážce vytvořili v předchozím kroku.
 
-7.  **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **SHIFT + F5**). Ukončí relaci ladění.
+7.  **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: **Shift+F5**). Ukončí relaci ladění.
 
 ## <a name="see-also"></a>Viz také
  [Spuštění ladicí relace (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md) [rychlý start: Ladicí program navigace (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) [aktivační události pozastavení, obnovení a událostí na pozadí pro Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

@@ -2,7 +2,7 @@
 title: Procházet a spravovat prostředky úložiště pomocí Průzkumníku serveru | Dokumentace Microsoftu
 description: Procházení a Správa prostředků úložiště pomocí Průzkumníka serveru
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 00229cd88ddcab4d2d59ae40202620c374415e4b
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 522acb66d5a5bd727ab7d8a0a95bc0d3c929d358
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003364"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768978"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procházení a správa prostředků úložiště pomocí Průzkumníka serveru
 

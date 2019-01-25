@@ -1,12 +1,9 @@
 ---
 title: Vyplnění datové sady s použitím objektů TableAdapter | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251846"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790088"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +60,7 @@ Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě je
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>Přidružené schéma objektu DataTable  
- Při vytváření objektu typu TableAdapter, použijte počáteční dotaz nebo uloženou proceduru pro definování schématu objektu TableAdapter přidružené k <xref:System.Data.DataTable>. Spustit tento počáteční dotaz nebo uloženou proceduru voláním objektu TableAdapter `Fill` – metoda (která naplní TableAdapter přidružené k <xref:System.Data.DataTable>). Všechny změny provedené v hlavním dotazu objektu TableAdapter se projeví ve schématu přidružené tabulky dat. Také například odebráním sloupce z hlavního dotazu odeberete sloupec z přidružené tabulky dat. Pokud jakékoliv další dotazy na TableAdapter používají příkazy SQL vracející sloupce, které nejsou v hlavním dotazu, pokusí se Návrhář synchronizovat změny ve sloupcích mezi hlavním dotazem a dalších dotazů. Další informace najdete v tématu [jak: Edit TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Při vytváření objektu typu TableAdapter, použijte počáteční dotaz nebo uloženou proceduru pro definování schématu objektu TableAdapter přidružené k <xref:System.Data.DataTable>. Spustit tento počáteční dotaz nebo uloženou proceduru voláním objektu TableAdapter `Fill` – metoda (která naplní TableAdapter přidružené k <xref:System.Data.DataTable>). Všechny změny provedené v hlavním dotazu objektu TableAdapter se projeví ve schématu přidružené tabulky dat. Také například odebráním sloupce z hlavního dotazu odeberete sloupec z přidružené tabulky dat. Pokud jakékoliv další dotazy na TableAdapter používají příkazy SQL vracející sloupce, které nejsou v hlavním dotazu, pokusí se Návrhář synchronizovat změny ve sloupcích mezi hlavním dotazem a dalších dotazů. Další informace najdete v tématu [jak: Upravování TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Příkazy aktualizace objektu TableAdapter  
  Funkce aktualizace objektu TableAdapter je závislá na tom, kolik informací je k dispozici v hlavním dotazu v Průvodci vytvořením objektu TableAdapter. Například objekty TableAdapter, které jsou nakonfigurovány k načtení hodnot z více tabulek (spojení JOIN), skalárních hodnot, zobrazení nebo výsledků agregačních funkcí, nejsou původně vytvořeny s možností odesílat aktualizace zpět do databáze. Ale můžete nakonfigurovat ručně v příkazy INSERT, UPDATE a DELETE **vlastnosti** okna.  
@@ -117,4 +114,3 @@ Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě je
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-

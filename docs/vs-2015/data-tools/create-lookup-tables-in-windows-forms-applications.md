@@ -1,12 +1,9 @@
 ---
 title: Vytváření vyhledávacích tabulek v aplikacích Windows Forms | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 966e85c1cede3d7dacf23d960909a8cb4aa05185
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773801"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Vytváření vyhledávacích tabulek v aplikacích Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +60,7 @@ Termín *vyhledávací tabulka* popisuje ovládací prvky, které jsou vázány 
   
     |Vlastnost|Vysvětlivky k nastavení|  
     |--------------|----------------------------|  
-    |**Zdroj dat**|Aplikace Visual Studio nastaví tuto vlastnost na zdroj <xref:System.Windows.Forms.BindingSource> vytvořený pro tabulku, která byla přetažena na ovládací prvek (na rozdíl od zdroje <xref:System.Windows.Forms.BindingSource> vytvořeného při vytvoření ovládacího prvku).<br /><br /> Pokud je nutné provést úpravu, nastavte ji na zdroj <xref:System.Windows.Forms.BindingSource> tabulky se sloupcem, který chcete zobrazit.|  
+    |**DataSource**|Aplikace Visual Studio nastaví tuto vlastnost na zdroj <xref:System.Windows.Forms.BindingSource> vytvořený pro tabulku, která byla přetažena na ovládací prvek (na rozdíl od zdroje <xref:System.Windows.Forms.BindingSource> vytvořeného při vytvoření ovládacího prvku).<br /><br /> Pokud je nutné provést úpravu, nastavte ji na zdroj <xref:System.Windows.Forms.BindingSource> tabulky se sloupcem, který chcete zobrazit.|  
     |**DisplayMember**|Aplikace Visual Studio nastaví tuto vlastnost na první sloupec po primárním klíči, který má datový typ řetězec, u tabulky, která je přetažena na ovládací prvek.<br /><br /> Pokud je nutné provést úpravu, nastavte tuto vlastnost na název sloupce, který chcete zobrazit.|  
     |**ValueMember**|Aplikace Visual Studio nastaví tuto vlastnost na první sloupec, který je součástí primárního klíče, nebo na první sloupec v tabulce, pokud není definován žádný klíč.<br /><br /> Pokud je nutné provést úpravu, nastavte tuto vlastnost na primární klíč u tabulky se sloupcem, který chcete zobrazit.|  
     |**SelectedValue**|Visual Studio nastaví tuto vlastnost na původní sloupec vyřadit z **zdroje dat** okna.<br /><br /> Pokud je nutné provést úpravu, proveďte nastavení na sloupec cizího klíče v související tabulce.|  

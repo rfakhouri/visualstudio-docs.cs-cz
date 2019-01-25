@@ -1,12 +1,9 @@
 ---
 title: Vytvářet projekty modelování UML a diagramy | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764817"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Vytváření projektů a diagramů pomocí modelování UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual S
   
 |**Problém**|**Způsobí, že**|**Řešení**|  
 |---------------|----------------|--------------------|  
-|Nejde otevřít nebo načtena do řešení projekt modelování.<br /><br /> Zobrazí se následující zpráva:<br /><br /> "Jeden nebo více projektů v řešení nebylo správně načteno. Podrobnosti najdete ve výstupním okně Podrobnosti."<br /><br /> V okně výstupu se zobrazí následující zpráva:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: Chyba: Neznámý identifikátor Guid formátu."|Projekt modelování obsahuje odkazy na projekty, které mají stejný název a jsou ve stejném řešení.<br /><br /> Například vrstva je propojen s projekty, které mají stejný název a jsou ve stejném řešení.|Pomocí textového editoru otevřete projekt modelování soubor, odeberte odkazy a pak zkuste znovu otevřít projekt modelování.<br /><br /> K tomuto problému vyhnout, nepřidávejte odkazy na projekty, které mají stejný název. Ujistěte se, že projekty mají jedinečné názvy.|  
+|Nejde otevřít nebo načtena do řešení projekt modelování.<br /><br /> Zobrazí se následující zpráva:<br /><br /> "Jeden nebo více projektů v řešení nebylo správně načteno. Podrobnosti najdete ve výstupním okně Podrobnosti."<br /><br /> V okně výstupu se zobrazí následující zpráva:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: Chyba: Nerozpoznaný formát Guid"|Projekt modelování obsahuje odkazy na projekty, které mají stejný název a jsou ve stejném řešení.<br /><br /> Například vrstva je propojen s projekty, které mají stejný název a jsou ve stejném řešení.|Pomocí textového editoru otevřete projekt modelování soubor, odeberte odkazy a pak zkuste znovu otevřít projekt modelování.<br /><br /> K tomuto problému vyhnout, nepřidávejte odkazy na projekty, které mají stejný název. Ujistěte se, že projekty mají jedinečné názvy.|  
 |Prvky jsou chybí diagramy, které jsou přidány, zkopírovat nebo přetáhnout na jiné projekty modelování nebo na jiná místa v řešení.<br /><br /> - nebo -<br /><br /> Při pokusu o otevření diagramu se zobrazí následující zprávy:<br /><br /> -"Nějaké obrazce konektorů v diagramu chybí nebo protože jejich definice neexistuje v tomto projektu. Buď definice byly odstraněny z modelu bylo ukončeno diagramu nebo diagramu byl zkopírován do jiného projektu, který neobsahuje tyto definice."<br /><br /> - nebo -<br /><br /> -"Tento dokument je otevřen v jiném projektu."|Soubor diagramu byl přidán, kvůli usnadnění použití vypsány nebo zkopírován z projektu modelování do jiného projektu modelování nebo do jiného umístění v řešení.|Zkopírujte soubor diagramu, vytvoření nového diagramu a potom zkopírujte prvky ze zdrojového diagramu do nového diagramu.|  
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)
-
-
-
