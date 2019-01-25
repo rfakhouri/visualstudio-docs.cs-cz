@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: sestavení stejných zdrojových souborů s různými možnostmi | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Sestavení stejných zdrojových souborů s různými možnostmi | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
@@ -18,13 +13,13 @@ ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800418"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Postupy: Sestavení stejných zdrojových souborů s různými možnostmi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ Při sestavování projektů často kompilaci stejné komponenty s možnostmi ji
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  Proměnné prostředí jsou také považovány za vlastnosti a jsou automaticky součástí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Další informace o použití proměnných prostředí najdete v tématu [postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Proměnné prostředí jsou také považovány za vlastnosti a jsou automaticky součástí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Další informace o použití proměnných prostředí najdete v tématu [jak: Použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
   Hodnota vlastnosti, který je zadán v příkazovém řádku má přednost před jakoukoli hodnotu, která je nastavena pro stejnou vlastnost v souboru projektu, a hodnota v souboru projektu má přednost před hodnota v proměnné prostředí.  
   
@@ -196,5 +191,3 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
  [Project – element (MSBuild)](../msbuild/project-element-msbuild.md)
-
-

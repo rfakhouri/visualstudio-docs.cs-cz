@@ -1,11 +1,8 @@
 ---
 title: Mapování závislostí napříč vaším řešením | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792198"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapování závislostí napříč vaším řešením
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +69,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
 - Projekty X ++ a sestavení z modulů .NET pro aplikace Microsoft Dynamics AX  
   
-  **Poznámka:** pro projekty než C# nebo Visual Basic .NET, jsou méně možností pro spuštění mapy kódu nebo při přidávání položek do existující mapy kódu. Nelze například klikněte pravým tlačítkem na objekt v textovém editoru projekt jazyka C++ a přidejte ho do mapy kódu. Můžete však přetáhněte a umístěte kód jednotlivé prvky nebo soubory z Průzkumníka řešení, zobrazení tříd a prohlížeče objektů.  
+  **Poznámka:** Pro projekty jiné než C# nebo Visual Basic .NET, jsou méně možností pro spuštění mapy kódu nebo při přidávání položek do existující mapy kódu. Nelze například klikněte pravým tlačítkem na objekt v textovém editoru projekt jazyka C++ a přidejte ho do mapy kódu. Můžete však přetáhněte a umístěte kód jednotlivé prvky nebo soubory z Průzkumníka řešení, zobrazení tříd a prohlížeče objektů.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>K zobrazení celkové závislostí ve vašem řešení  
   
@@ -389,6 +386,3 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
 -   [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

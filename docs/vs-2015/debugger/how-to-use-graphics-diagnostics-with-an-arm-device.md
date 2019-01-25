@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: použití diagnostiky grafiky se zařízením ARM | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití diagnostiky grafiky se zařízením ARM | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 346fd3c0-9e92-4ab8-bb3b-1aa9000a2483
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 003f17ad34219a21b69578902e5f48716c917789
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728682"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797782"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Postupy: použití diagnostiky grafiky se zařízením ARM
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Postupy: Použití diagnostiky grafiky se zařízením ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diagnostika grafiky podporuje vzdálené ladění aplikací rozhraní Direct3D na založené na ARM zařízení se systémem Windows RT 8.1 nebo Windows Phone 8.1. Můžete zachytit informace grafiky z aplikace Direct3D při spuštění na zařízení nebo zařízení použít jako stroj přehrávání pro dříve zachycené informace grafiky.  
@@ -48,11 +43,8 @@ Diagnostika grafiky podporuje vzdálené ladění aplikací rozhraní Direct3D n
   
 2.  Na **cíl ladění** rozevíracího seznamu vyberte zařízení ARM.  
   
-3.  V nabídce zvolte **ladění**, **grafiky**, **spustit diagnostiku**. (Klávesnice: Alt + F5)  
+3.  V nabídce zvolte **ladění**, **grafiky**, **spustit diagnostiku**. (Klávesnice: Alt+F5)  
   
 ## <a name="see-also"></a>Viz také  
  [Spustit Windows Store apps na vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
  [Postupy: Změna počítače pro přehrávání diagnostiky grafiky](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)
-
-
-

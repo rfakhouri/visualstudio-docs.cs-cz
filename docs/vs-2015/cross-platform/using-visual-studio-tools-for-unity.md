@@ -1,25 +1,20 @@
 ---
 title: Používání sady Visual Studio Tools for Unity | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777378"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Používání sady Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
 |Spustit Průvodce účtem MonoBehavior|**Ctrl + Shift + M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|  
 |Spustit Rychlé Průvodce MonoBehavior|**Ctrl+Shift+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
 |Otevřete Průzkumníka projektů Unity|**Alt + Shift + E**|**View.UnityProjectExplorer**|  
-|Přístup k dokumentaci k Unity|**Ctrl + Alt + M, Ctrl + H**|**Help.UnityAPIReference**|  
+|Přístup k dokumentaci k Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|  
 |Připojit ladicí program Unity (přehrávač nebo editor)|**_žádná výchozí hodnota_**|**Debug.AttachUnityDebugger**|  
   
  Kombinace klávesových zkratek můžete změnit, pokud se vám výchozí nastavení. Informace o tom, jak ho změnit, naleznete v tématu [určení a přizpůsobení klávesových zkratek v sadě Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx).  
@@ -174,7 +169,7 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
   
 ##### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Chcete-li ladit spravovaný projekt knihovny DLL použít ve vašem Unity projektu  
   
-1. Přidáte do existujícího projektu knihovny DLL do řešení sady Visual Studio vygenerovaná aplikace Visual Studio Tools for Unity. Ne tak často může být spuštění nového spravovaného projektu knihovny DLL tak, aby obsahovala kód komponent ve vašem Unity projektu; Pokud je to tento případ, můžete přidat nový projekt spravované knihovny DLL do řešení sady Visual Studio místo. Další informace o přidání nového nebo existujícího projektu k řešení najdete v tématu [postupy: Přidání projektů do řešení](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
+1. Přidáte do existujícího projektu knihovny DLL do řešení sady Visual Studio vygenerovaná aplikace Visual Studio Tools for Unity. Ne tak často může být spuštění nového spravovaného projektu knihovny DLL tak, aby obsahovala kód komponent ve vašem Unity projektu; Pokud je to tento případ, můžete přidat nový projekt spravované knihovny DLL do řešení sady Visual Studio místo. Další informace o přidání nového nebo existujícího projektu k řešení najdete v tématu [jak: Přidat projekty do řešení](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
   
     ![Přidáte do existujícího projektu knihovny DLL do řešení. ](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   
@@ -193,4 +188,3 @@ V této části se dozvíte, jak používat Visual Studio Tools pro Unity a inte
      Soubory PDB jsou potřeba pro ladění, protože mohou obsahovat symboly pro ladění knihovny DLL a mapování kód knihovny DLL na jeho formě zdrojového kódu. Visual Studio Tools for Unity pomocí informací z knihovny DLL a soubor PDB vytvořit knihovnu DLL. Soubor MDB, což je formát symbolů ladění používat skriptovací modul Unity.  
   
 4. Ladění kódu. Teď můžete ladit knihovnu DLL zdrojový kód společně se svým projektem Unity zdrojový kód a použít všechny ladění funkcí, které jste zvyklí, jako například zarážky a krokování kódu.
-

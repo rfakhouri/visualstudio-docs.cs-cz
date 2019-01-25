@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Zobrazení odpovídající složené závorky | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zobrazení odpovídající složené závorky | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795534"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Návod: Zobrazení párových složených závorek
+# <a name="walkthrough-displaying-matching-braces"></a>Průvodce: Zobrazení párových složených závorek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Budete moct implementovat založený na jazyce funkce, jako je například závorky definováním složené závorky, kterou chcete porovnat, a následným přidáním značky text značky do odpovídající složené závorky po blikající kurzor na jednom z složené závorky. Složené závorky můžete definovat v rámci jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a použít značky jenom typu nebo můžete použít značky k existujícímu typu obsahu (jako je například "text"). Následující návod ukazuje, jak použít závorky značky "text" typu obsahu.  
@@ -130,5 +125,4 @@ Budete moct implementovat založený na jazyce funkce, jako je například závo
 4.  Když umístíte blikající kurzor před levou složenou závorku, by měl být zvýrazněn této složenou závorku a odpovídající závorce zavřít. Když umístěte kurzor bezprostředně po pravé lomené závorky, by měl být zvýrazněn této složenou závorku a odpovídající levou složenou závorku.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

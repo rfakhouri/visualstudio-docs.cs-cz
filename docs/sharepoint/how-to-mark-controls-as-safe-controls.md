@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989371"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875454"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Postupy: Označení ovládacích prvků jako bezpečných
   Pro zabezpečení SharePoint rozlišuje mezi webové ovládací prvky, které jsou chráněné proti injektáži skriptu a webové ovládací prvky, které nejsou. Ovládací prvky, chráněné nebo *bezpečné ovládací prvky*, je přístupný nedůvěryhodným uživatelům. Můžete označit ovládacích prvků jako bezpečných ve vlastnosti položky bezpečných ovládacích prvků položky Sharepointového projektu nebo v **návrháři balíčku** při přidávání sestavení do balíčku. Další informace naleznete v tématu  
@@ -89,7 +89,7 @@ ms.locfileid: "53989371"
     |-------------------|-----------|  
     |Obor názvů|Plně kvalifikovaný obor názvů pro ovládací prvek, jako například **BdcModelProject1.VisualWebPart1**.|  
     |Název typu|Button1|  
-    |Název sestavení|Na sestavení se silným názvem, jako: Microsoft.Office.SharePoint.ClientExtensions, verze = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Název sestavení|Na sestavení se silným názvem, jako: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Bezpečné|Zrušte **bezpečné** zaškrtávací políčko.|  
     |Zabezpečeno proti skriptům|Nechte **bezpečné skriptu proti** zrušte zaškrtnutí políčka.|  
   
@@ -106,7 +106,7 @@ ms.locfileid: "53989371"
     |-------------------|-----------|  
     |Obor názvů|Plně kvalifikovaný obor názvů pro ovládací prvek, jako například **BdcModelProject1.VisualWebPart1**.|  
     |Název typu|TextBox1|  
-    |Název sestavení|Na sestavení se silným názvem, jako: Microsoft.Office.SharePoint.ClientExtensions, verze = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Název sestavení|Na sestavení se silným názvem, jako: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Bezpečné|Vyberte **bezpečné** zaškrtávací políčko.|  
     |Zabezpečeno proti skriptům|Vyberte **bezpečné skriptu proti** zaškrtávací políčko.|  
   

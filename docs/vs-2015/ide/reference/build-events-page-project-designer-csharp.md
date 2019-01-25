@@ -1,14 +1,9 @@
 ---
 title: Stránka události sestavení, Návrhář projektu (C#) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEvents
 helpviewer_keywords:
@@ -20,19 +15,19 @@ ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a73978bf78c26914e7ee6b21c27f1eb2e7682ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e55d9d34a4837e2c01d78cc1f52ae2a25f28da8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223075"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785781"
 ---
 # <a name="build-events-page-project-designer-c"></a>Stránka Události sestavení, návrhář projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-Použití **události sestavení** stránku **Návrháře projektu** k určení pokyny ke konfiguraci sestavení. Můžete také zadat podmínky, za kterých jsou spuštěny žádné události po sestavení. Další informace najdete v tématu [jak: Specify Build Events (C#)](../../ide/how-to-specify-build-events-csharp.md)a [jak: Specify Build Events (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
+Použití **události sestavení** stránku **Návrháře projektu** k určení pokyny ke konfiguraci sestavení. Můžete také zadat podmínky, za kterých jsou spuštěny žádné události po sestavení. Další informace najdete v tématu [jak: Určení událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)a [jak: Určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **Konfigurace**  
@@ -63,10 +58,7 @@ Použití **události sestavení** stránku **Návrháře projektu** k určení 
 |**Když sestavení aktualizuje výstup projektu**|Událost po sestavení poběží pouze po kompilátoru výstupního souboru (.exe nebo .dll) se liší od předchozí výstupní soubor kompilátoru. Událost po sestavení se díky tomu se nespustil, když je aktuální projekt.|  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Postupy: určení událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)   
+ [Postupy: Určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Postupy: Určení událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)   
  [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   
  [Kompilace a sestavení](../../ide/compiling-and-building-in-visual-studio.md)
-
-
-

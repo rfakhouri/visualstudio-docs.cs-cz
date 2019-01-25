@@ -1,25 +1,22 @@
 ---
 title: Nasazení vlastního procesoru direktiv | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836395"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795319"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Nastavení vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   
  Alternativní metody jsou následující:  
   
-- [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Tato metoda poskytuje způsob, jak nainstalovat a odinstalovat procesor direktiv ve vašem vlastním počítači i v jiných počítačích. Zpravidla můžete do stejného rozšíření VSIX zabalit jiné funkce.  
+- [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Tato metoda poskytuje způsob, jak nainstalovat a odinstalovat procesor direktiv ve vašem vlastním počítači i v jiných počítačích. Zpravidla můžete do stejného rozšíření VSIX zabalit jiné funkce.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Pokud definujete VSPackage obsahující kromě procesoru direktiv i jiné funkce, lze procesor direktiv pohodlně zaregistrovat.  
   
@@ -37,7 +34,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   Je třeba použít jednu z těchto metod pouze v případě, že chcete transformovat textovou šablony v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pokud ve své aplikaci používáte vlastního hostitele, je tento vlastní hostitel odpovědný za vyhledání procesoru direktiv pro jednotlivé direktivy.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Nasazení procesoru direktiv v rozšíření VSIX  
- Můžete přidat vlastní procesor směrnice do [rozšíření aplikace Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Můžete přidat vlastní procesor směrnice do [rozšíření aplikace Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Přitom musíte zajistit, aby v souboru .vsix byly obsaženy následující dvě položky:  
   
@@ -167,7 +164,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Registrace procesoru direktiv nastavením klíče registru  
   
-1. Spustit `regedit`.  
+1. Spusťte `regedit`.  
   
 2. V editoru registru přejděte na  
   
@@ -205,6 +202,3 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření vlastních procesorů pro direktivy textových šablon T4](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

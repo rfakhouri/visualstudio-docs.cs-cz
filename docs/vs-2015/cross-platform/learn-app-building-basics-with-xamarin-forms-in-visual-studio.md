@@ -1,21 +1,17 @@
 ---
 title: Základy vytváření aplikací s Xamarin.Forms
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 0cbc20bd714cabf9747145c114abfaa58a2e52a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6d10240383ddaf4ec2eb242dfc180c59ff084f1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780259"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -385,7 +381,7 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
    </ContentPage>
    ```
 
-    Všimněte si, **OnPlatform** značky v Xamarin.Forms. **OnPlatform** vybere hodnotu vlastnosti, která je specifická pro aktuální platformu, na kterém běží aplikace (viz [externí syntaxe XAML](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com). Tady používáme nastavit různé barvy pro datová pole: bílá na zařízení s Androidem a Windows Phone, Black v systému iOS. Můžete použít **OnPlatform** pro všechny vlastnosti a všechny datové typy s úpravami specifické pro platformu kdekoli ve vaší XAML. V souboru kódu na pozadí, můžete použít [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) ke stejnému účelu.
+    Všimněte si, **OnPlatform** značky v Xamarin.Forms. **OnPlatform** vybere hodnotu vlastnosti, která je specifická pro aktuální platformu, na kterém běží aplikace (viz [externí syntaxe XAML](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com). Tady používáme nastavit různé barvy pro datová pole: Bílé na zařízení s Androidem a Windows Phone, Black v systému iOS. Můžete použít **OnPlatform** pro všechny vlastnosti a všechny datové typy s úpravami specifické pro platformu kdekoli ve vaší XAML. V souboru kódu na pozadí, můžete použít [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) ke stejnému účelu.
 
 2. V **WeatherPage.xaml.cs**, nahraďte **GetWeatherBtn_Clicked** obslužné rutiny události pomocí kódu níže. Tento kód ověří, že je PSČ polem pro zadání, načte data pro tento kód zip, nastaví kontext vazby celou obrazovku na výsledný instanci počasí a pak nastaví text tlačítka na "Vyhledávání znovu." Všimněte si, že každému popisku v uživatelském rozhraní vytvoří vazbu na vlastnost třídy počasí, tak při nastavíte, kontextu vazby na obrazovce a **počasí** instance, tyto popisky automaticky aktualizovat.
 

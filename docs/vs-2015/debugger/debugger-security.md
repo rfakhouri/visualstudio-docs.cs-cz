@@ -1,14 +1,9 @@
 ---
 title: Zabezpečení ladicího programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14389ec72094b2f6642c74b93bdd5f8a076f6387
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: bfb6270f4b6e5a0c4f65f5490def24c03cad6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53842795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790916"
 ---
 # <a name="debugger-security"></a>Zabezpečení ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
  Další informace najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Ladění zabezpečení webových služeb  
- Je bezpečnější, chcete-li ladit místně, ale od té doby budete pravděpodobně nemají [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nainstalovaný na webovém serveru, místní ladění nemusí být praktické. Obecně platí ladění webových služeb se prováděla vzdáleně, s výjimkou během vývoje, tak doporučení pro zabezpečení vzdálené ladění také použít k ladění webových služeb. Tady jsou některé další osvědčené postupy. Další informace najdete v tématu [ladění webových služeb XML](http://msdn.microsoft.com/en-us/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Je bezpečnější, chcete-li ladit místně, ale od té doby budete pravděpodobně nemají [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nainstalovaný na webovém serveru, místní ladění nemusí být praktické. Obecně platí ladění webových služeb se prováděla vzdáleně, s výjimkou během vývoje, tak doporučení pro zabezpečení vzdálené ladění také použít k ladění webových služeb. Tady jsou některé další osvědčené postupy. Další informace najdete v tématu [ladění webových služeb XML](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 -   Nepovolujte ladění na webovém serveru, který byl napaden.  
   
@@ -90,8 +85,3 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
  [Základy ladicího programu](../debugger/debugger-basics.md)   
  [Upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
  [Upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz.](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
-
-
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Zobrazení interakce vrstvy | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b69144569738dc09368453faef13f5f38428df2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726159"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791932"
 ---
 # <a name="tier-interactions-view"></a>Zobrazení interakcí vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +41,8 @@ Profilování interakce vrstev poskytuje další informace o časy spuštění f
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Jméno**|-Pro řádek nejvyšší úrovně, název profilovaný proces nebo webové stránky.<br />-Pro řádek připojení databáze, název serveru, který je hostitelem databáze.|  
-|**Databáze**|Název databáze (pouze řádky připojení databáze).|  
+|**Název**|-Pro řádek nejvyšší úrovně, název profilovaný proces nebo webové stránky.<br />-Pro řádek připojení databáze, název serveru, který je hostitelem databáze.|  
+|**Database**|Název databáze (pouze řádky připojení databáze).|  
 |**Počet**|Celkový počet požadavků, které jsou generovány podle procesu, webové stránky nebo připojení k databázi.|  
 |**Celkový uplynulý čas**|Celkový čas strávený spouštěním jakékoli jeden požadavek z procesu, webové stránky nebo připojení k databázi.|  
 |**Maximální uplynulý čas**|Maximální doba trvání provádění jedné žádosti z procesu, webové stránky nebo připojení k databázi.|  
@@ -64,6 +59,3 @@ Profilování interakce vrstev poskytuje další informace o časy spuštění f
 |**Maximální uplynulý čas**|Maximální čas, který byl stráven spouštěním jakoukoli jednu instanci dotazu.|  
 |**Minimální uplynulý čas**|Minimální čas, který byl stráven spouštěním jakoukoli jednu instanci dotazu.|  
 |**Průměrný uplynulý čas**|Průměrný čas strávený spouštěním instanci dotazu.|
-
-
-

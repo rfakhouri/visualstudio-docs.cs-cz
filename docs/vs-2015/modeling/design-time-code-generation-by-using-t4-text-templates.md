@@ -1,12 +1,9 @@
 ---
 title: Vytvoření kódu v době návrhu pomocí textových šablon T4 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,13 +16,13 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777461"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +69,7 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
   
 5.  Uložte soubor.  
   
-     Můžete se setkat **upozornění zabezpečení** okno se zprávou s žádostí o potvrzení, že chcete danou šablonou spustit. Klikněte na tlačítko **OK**.  
+     Můžete se setkat **upozornění zabezpečení** okno se zprávou s žádostí o potvrzení, že chcete danou šablonou spustit. Klikněte na **OK**.  
   
 6.  V **Průzkumníka řešení**, rozbalte uzel soubor šablony a zjistíte, který má příponu souboru **.txt**. Tento soubor obsahuje text vytvořený ze šablony.  
   
@@ -339,7 +336,7 @@ Warning("A warning message");
     |||  
     |-|-|  
     |**Vlastní nástroj =**|**TextTemplatingFileGenerator**|  
-    |**Akce sestavení =**|**None**|  
+    |**Akce sestavení =**|**Žádné**|  
   
 5.  Na začátek souboru vložte následující řádky:  
   
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>Viz také  
  [Pokyny pro zápis textových šablon T4](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

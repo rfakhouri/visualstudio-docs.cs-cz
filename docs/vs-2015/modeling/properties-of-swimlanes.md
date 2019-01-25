@@ -1,12 +1,9 @@
 ---
 title: Vlastnosti plaveckých drah | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 47edbc2d-09e4-48ac-b4d1-5268a06a27e6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c914703d4cbe48e516d1d4e1aa48afb20c9e1cfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 04dee7bad28b6176ffb9499bfcdb5ff2dddc3e8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804141"
 ---
 # <a name="properties-of-swimlanes"></a>Vlastnosti drah
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +29,12 @@ Plaveckých drah můžete přidat do diagramu. Plaveckých drah rozdělit svisl�
   
 |Vlastnost|Popis|Výchozí|  
 |--------------|-----------------|-------------|  
-|Barva výplně těla|Barva výplně těla plavecké.|Prázdné|  
+|Barva výplně těla|Barva výplně těla plavecké.|White|  
 |Barva výplně záhlaví|Barva výplně záhlaví plavecké.|DarkGray|  
 |Barva oddělovače|Barva oddělovací čáry.|LightGray|  
 |Styl oddělovací čáry|Styl oddělovací čáry (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, nebo `Custom`).|`Dash`|  
 |Tloušťka oddělovací|Tloušťka oddělovací čáry v palcích.|0.03125|  
-|Barva textu|Barva, která je použitá pro dekoratéry textu přidružené k této plavecké dráhy.|Černá|  
+|Barva textu|Barva, která je použitá pro dekoratéry textu přidružené k této plavecké dráhy.|Black|  
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|  
 |Vlastní atributy|Použít k přidání atributů do třídy kód, který je generován z této plavecké dráhy.|\<žádné >|  
 |Generuje Double odvozené|Pokud `True`, se vygeneruje základní třídu a částečné třídy (pro podporu přizpůsobení pomocí přepisů). Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
@@ -58,7 +55,4 @@ Plaveckých drah můžete přidat do diagramu. Plaveckých drah rozdělit svisl�
 |Klíčové slovo nápovědy|Klíčové slovo, je použít k indexování nápovědy klávesy F1 pro této plavecké dráhy.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

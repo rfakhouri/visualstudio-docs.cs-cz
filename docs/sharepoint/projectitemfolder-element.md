@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItemFolder element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdecca0b987efd22d4ddd9d3555ede2601b8205e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a4a0f60afb35a3e52e3e7b8f00afaef29cf409e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855618"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875586"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder – element
   Představuje mapované složky.  
@@ -49,7 +49,7 @@ ms.locfileid: "53855618"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položku Sharepointového projektu. Tento element je požadovaný kořenový element *.spdata* souboru.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Představuje položku Sharepointového projektu. Tento element je požadovaný kořenový element *.spdata* souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
  Další informace o mapované složky najdete v tématu [postupy: Přidání a odebrání mapovaných složek](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
@@ -58,7 +58,7 @@ ms.locfileid: "53855618"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu služby SharePoint|  
 |**Soubor ověření**|ProjectItemModelSchema.xsd|  
 |**Může být prázdný**|Ne|  

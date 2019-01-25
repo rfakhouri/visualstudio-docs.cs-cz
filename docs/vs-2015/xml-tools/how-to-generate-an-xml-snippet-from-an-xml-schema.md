@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: generování fragmentu XML ze schématu XML | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Generování fragmentu XML ze schématu XML | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753753"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: generování fragmentu XML ze schématu XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: Generování fragmentu XML ze schématu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -67,13 +62,13 @@ XML Editor má schopnost generovat fragmentů XML ze schématu XML definice jazy
   
      **Schémata XSD** se zobrazí dialogové okno.  
   
-4.  Klikněte na tlačítko **přidat**.  
+4.  Klikněte na **Přidat**.  
   
      **Otevřít schéma XSD** se zobrazí dialogové okno.  
   
 5.  Vyberte soubor schématu a klikněte na tlačítko **otevřít**.  
   
-6.  Klikněte na tlačítko **OK**.  
+6.  Klikněte na **OK**.  
   
      Schéma XML je teď přidružený k dokumentu XML.  
   
@@ -162,6 +157,3 @@ XML Editor má schopnost generovat fragmentů XML ze schématu XML definice jazy
 ## <a name="see-also"></a>Viz také  
  [Fragmentů XML](../xml-tools/xml-snippets.md)   
  [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: obnovení skrytých příkazů ladicího programu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Obnovení skrytých příkazů ladicího programu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,13 +21,13 @@ ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5edc195397b9652d790620b8281100cc7651a02d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83a685b0dfc9b4f260d082230a5b58dcb025eff4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802301"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779508"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Postupy: Obnovení skrytých příkazů ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ Při nastavování aplikace Visual Studio, zobrazí se výzva k výběru sada v�
   
 4.  Na **zvolte kolekce nastavení chcete importovat** stránce v části **výchozí nastavení** složky, zvolte kolekci nastavení pro vývoj, který obsahuje příkazy, které chcete použít. Pokud si nejste jisti kterou kolekci zvolte, zkuste **obecným vývojovým nastavením** nebo **Visual C++ – vývojové nastavení**, které poskytují největší příkazy ladicího programu.  
   
-5.  Klikněte na tlačítko **Další**.  
+5.  Klikněte na **Další**.  
   
 6.  Na **zvolte nastavení pro import** stránce v části **možnosti**, ujistěte se, že **ladění** zaškrtnuto. Zrušte zaškrtnutí ostatních políček, pokud chcete importovat tato nastavení také.  
   
@@ -81,11 +76,8 @@ Při nastavování aplikace Visual Studio, zobrazí se výzva k výběru sada v�
   
 8.  Na **úplný Import** stránky, zkontrolujte všechny chyby spojené s obnovením vašeho nastavení v části **podrobnosti**.  
   
-9. Klikněte na tlačítko **Zavřít**.  
+9. Klikněte na **Zavřít**.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Základy ladicího programu](../debugger/debugger-basics.md)
-
-
-

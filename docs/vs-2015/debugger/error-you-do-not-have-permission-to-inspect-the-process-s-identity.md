@@ -1,14 +1,9 @@
 ---
 title: 'Chyba: Nemáte oprávnění ke kontrole procesu&#39;s identity | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0974e38f9a0a901c97ca5dc3c9473d027095d67c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776215"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Chyba: Nemáte oprávnění ke kontrole procesu&#39;s identity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Nemáte oprávnění ke kontrole identity procesu. To může být způsobeno kon
   
 7.  V **Terminálové služby vlastnosti** okno, přejděte na **Obecné** kartě a nastavte **typ spouštění** k **ruční**.  
   
-8.  Klikněte na tlačítko **OK**.  
+8.  Klikněte na **OK**.  
   
 9. Restartujte počítač.  
   
@@ -69,10 +64,7 @@ Nemáte oprávnění ke kontrole identity procesu. To může být způsobeno kon
   
 4.  V části **vzdálené plochy**vyberte **umožňují uživatelům vzdálené připojení k tomuto počítači**.  
   
-5.  Klikněte na tlačítko **OK**.  
+5.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

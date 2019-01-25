@@ -1,24 +1,19 @@
 ---
 title: 'Průvodce: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 501d5c9991aaef090c061e396eaa147dba1f53f1
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+manager: jillfra
+ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788581"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Průvodce: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -327,7 +322,7 @@ namespace ColumnGuides
 
 ```
 
-Většina tento kód jenom vytvoří a analyzuje formát nastavení: "RGB (\<int >,\<int >,\<int >) \<int >, \<int >;...". Celých čísel na konci je založen na jedničce sloupce, ve kterém chcete vodítka sloupců. Rozšíření vodítka sloupců zachytí všechna nastavení v řetězci hodnotu jedno nastavení.
+Většina tento kód jenom vytvoří a analyzuje formát nastavení: "RGB(\<int>,\<int>,\<int>) \<int>, \<int>, …". Celých čísel na konci je založen na jedničce sloupce, ve kterém chcete vodítka sloupců. Rozšíření vodítka sloupců zachytí všechna nastavení v řetězci hodnotu jedno nastavení.
 
 Existují některé části kódu, které stojí za to, zvýraznění. Následující řádek kódu získá spravovaná obálka sady Visual Studio pro nastavení úložiště. Ve většině případů to abstrahuje přes registru Windows, ale toto rozhraní API je nezávislý na mechanismus úložiště.
 
@@ -1354,4 +1349,3 @@ Budete moct vyzkoušet verzi funkce vodítka sloupců s této galerie sady Visua
  [Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)
 [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md)
 [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md)
-

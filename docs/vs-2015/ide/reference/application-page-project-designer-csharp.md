@@ -1,14 +1,9 @@
 ---
 title: Stránka aplikace, Návrhář projektu (C#) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778643"
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Použití **aplikace** stránku **Návrháře projektu** k určení nastavení a
 > [!NOTE]
 >  Požadované balíčky uvedené v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky při prvním otevření dialogu. Pokud později změníte cílový rámec projektu, budete muset vybrat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.  
   
- Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [Visual Studio přehled multiplatformního zacílení](../../ide/visual-studio-multi-targeting-overview.md).  
+ Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [cílení na více verzí sady Visual Studio přehled](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Typ aplikace**  
  Určuje typ aplikace k sestavení. Pro [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikace, můžete zadat **aplikace Windows Store**, **knihovny tříd**, nebo **soubor WinMD**. Pro většinu ostatních typů aplikací, můžete zadat **aplikace Windows**, **konzolovou aplikaci**, **knihovny tříd**, **Windows Service**, nebo **Knihovna webových prvků**.  
@@ -108,6 +103,3 @@ Použití **aplikace** stránku **Návrháře projektu** k určení nastavení a
 ## <a name="see-also"></a>Viz také  
 [Správa vlastností aplikace](../../ide/application-properties.md)  
  [Psaní kódu v řešeních pro systém Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

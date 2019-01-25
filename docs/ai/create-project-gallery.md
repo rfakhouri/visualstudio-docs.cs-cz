@@ -1,5 +1,5 @@
 ---
-title: Vytvoření projektu v nástroje AI pro sadu Visual studio
+title: Vytvoření projektu
 description: Vytvořte projekt pomocí ukázky z Galerie azure machine learning
 keywords: AI, visual studio, azure machine learning
 author: lisawong19
@@ -11,14 +11,14 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e44624b5aa6fc5bbb518b5c15798daeca6361680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797460"
 ---
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Vytvoření projektu aplikace AI z Galerie Azure Machine Learning v sadě Visual Studio
+# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Vytvoření projektu aplikace AI z Galerie Azure Machine Learning v sadě Visual Studio
 
 Azure Machine Learning je integrovaná se službou Visual Studio Tools pro AI. Slouží k odesílání úloh machine learning do cílových výpočetních prostředí vzdálené jako virtuální počítače Azure, clusterů Spark a dalších. Další informace o [experimentování ve službě Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 
@@ -47,7 +47,7 @@ Jakmile [nainstalované Visual Studio Tools pro AI](installation.md), je snadné
    - **Typ projektu**: Rozhraní machine learning. V tomto případě zvolte **TensorFlow**
    - **Přidat do řešení**: Určuje, jestli se má přidat do aktuálního řešení Visual Studio nebo použít příkaz pro vytvoření a otevření nového řešení
    - **Cesta k projektu**: Umístění pro uložení kódu
-   - **Název projektu**: Typ **TensorFlowMNIST**
+   - **Název projektu**: Type **TensorFlowMNIST**
 
    ![Výsledný projekt při použití šablony aplikace v Pythonu](media/create-project-gallery/new-AzureSampleProject.png)
 

@@ -1,24 +1,19 @@
 ---
 title: 'Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817344"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796048"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio
   
      Zobrazí se druhé instanci aplikace Visual Studio. Této druhé instance se nazývá experimentální instanci a nemusí mít stejné nastavení jako instanci aplikace Visual Studio, které používáte k psaní kódu. Při prvním spuštění experimentální instance, zobrazí se výzva k přihlášení k VS Online a určit motivu a profilu.  
   
-     Na **nástroje** nabídky (v experimentální instanci) byste měli vidět tlačítko s názvem **název mé příkazu**. Když vyberete toto tlačítko, by měla zobrazit zpráva: **uvnitř TestVSPackagePackage.MenuItemCallback()**.  
+     Na **nástroje** nabídky (v experimentální instanci) byste měli vidět tlačítko s názvem **název mé příkazu**. Když vyberete toto tlačítko, by měla zobrazit zpráva: **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> Jak mohu spustit kód doplňku v sadě VSPackage?  
  Přidejte kód se obvykle běží v jednom ze dvou způsobů:  
@@ -111,7 +106,7 @@ Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio
   
 1. Vytvořte projekt VSIX s položkou projektu balíček Visual Studio. (Pokyny k tomu najdete v článku [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Stačí přidat elementy **balíček Visual Studio** místo položky projektu.) Pojmenujte projekt VSIX **TestAutoload**.  
   
-2. Otevřete TestAutoloadPackage.cs. Vyhledejte řádek, ve kterém je deklarována třída balíčku:  
+2. Open TestAutoloadPackage.cs. Vyhledejte řádek, ve kterém je deklarována třída balíčku:  
   
    ```csharp  
    public sealed class <name of your package>Package : Package  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

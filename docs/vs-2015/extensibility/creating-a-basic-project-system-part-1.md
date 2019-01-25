@@ -1,14 +1,9 @@
 ---
 title: Vytvoření systému základního projektu, část 1 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791861"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Vytvoření systému základního projektu, část 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -477,7 +472,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
   
 2. V **vlastnosti** windows, snižte rastrového obrázku nastaven na 16 × 16 pixelů. Zkontrolujte rozlišovací rastrového obrázku.  
   
-    ![Jednoduchý projekt – příkaz](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. V **vlastnosti** okno Změnit **akce sestavení** rastrového obrázku na **integrovaný prostředek**.  
   
@@ -577,7 +572,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
      Všimněte si, že parametry šablony $nameSpace$ a $className$ nemají nové hodnoty. Se dozvíte, jak implementovat nahrazení parametru šablony v další části.  
   
 ## <a name="substituting-template-parameters"></a>Nahraďte parametry šablony  
- V předchozí části jste zaregistrovali šablona projektu pomocí sady Visual Studio pomocí `ProvideProjectFactory` atribut. Registrace cestu ke složce šablon tímto způsobem umožňuje povolit nahrazení parametru základní šablony pomocí přepisování a rozšiřování `ProjectNode.AddFileFromTemplate` třídy. Další informace najdete v tématu [nová generace projektů: pod pokličkou, část dvě](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ V předchozí části jste zaregistrovali šablona projektu pomocí sady Visual Studio pomocí `ProvideProjectFactory` atribut. Registrace cestu ke složce šablon tímto způsobem umožňuje povolit nahrazení parametru základní šablony pomocí přepisování a rozšiřování `ProjectNode.AddFileFromTemplate` třídy. Další informace najdete v tématu [nová generace projektů: Pod pokličkou, část 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Teď přidejte kód nahrazení, který `AddFileFromTemplate` třídy.  
   
@@ -658,4 +653,3 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
     ![Příkaz Jednoduchý projekt](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    Blahopřejeme! Jste implementovali systému základního spravovaného projektu.
-

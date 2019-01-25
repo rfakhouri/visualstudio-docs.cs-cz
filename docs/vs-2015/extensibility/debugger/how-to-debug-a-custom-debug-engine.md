@@ -1,27 +1,22 @@
 ---
 title: 'Postupy: Ladění vlastního ladicího stroje | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d293011a3865b4fb9c31349240c520e56f5a9e39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5292d2cde8a75a239f7a905d8cf5d80b09a8f61e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753907"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Postupy: Ladění vlastního ladicího stroje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51756765"
 Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. To znamená, že je DE spuštění pod kontrolou instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] řízení typ projektu. Ale tuto instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nelze ladit DE. Následují kroky, aby bylo možné ladit vaše vlastní DE.  
   
 > [!NOTE]
->  : V postupu "Ladění vlastní Debug Engine" je nutné počkat DE spuštění než budete moct připojit k němu. Pokud jste na začátku vaše DE, který se zobrazí při spuštění DE okno se zprávou, můžete připojit v daném okamžiku a zrušte zaškrtnutí pole zprávy pokračujte. Tímto způsobem můžete zachytit všechny DE události.  
+>  :     V postupu "Ladění vlastní Debug Engine" je nutné počkat DE spuštění než budete moct připojit k němu. Pokud jste na začátku vaše DE, který se zobrazí při spuštění DE okno se zprávou, můžete připojit v daném okamžiku a zrušte zaškrtnutí pole zprávy pokračujte. Tímto způsobem můžete zachytit všechny DE události.  
   
 > [!WARNING]
 >  Musíte mít nainstalován předtím, než se pokusíte následující postupy vzdálené ladění. Zobrazit [vzdálené ladění](../../debugger/remote-debugging.md) podrobnosti.  
@@ -82,4 +77,3 @@ Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Int
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

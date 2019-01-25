@@ -1,14 +1,9 @@
 ---
 title: Idiasession – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2baa4b026fd9856625ce25be283c2c969f79a99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 002e7198210e123fc2461f712bb8db442b9f25c8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781986"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ IDiaSession : IUnknown
 |Metoda|Popis|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Načte adresu zatížení pro spustitelný soubor, který odpovídá symboly v tomto úložišti symbolů. Jedná se o stejnou hodnotu, která byla předána `put_loadAddress` metody.|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Nastaví adresu zatížení pro spustitelný soubor, který odpovídá na symboly v tomto úložišti symbolů. **Poznámka:** je potřeba volat tuto metodu, když dojde `IDiaSession` objektu a před zahájením používání objektu.|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Nastaví adresu zatížení pro spustitelný soubor, který odpovídá na symboly v tomto úložišti symbolů. **Poznámka:**  Je potřeba volat tuto metodu, když dojde `IDiaSession` objektu a před zahájením používání objektu.|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Získá odkaz na globální obor.|  
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Získá enumerátor pro všechny tabulky, které jsou obsaženy v úložišti symbolů.|  
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Získá enumerátor pro všechny pojmenované symboly ve statické umístěních.|  
@@ -122,17 +117,14 @@ void InitializeDIA(const char *szFilename)
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Přehled](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [soubor EXE](../../debugger/debug-interface-access/exe.md)   
- [Idiaaddressmap –](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiadatasource –](../../debugger/debug-interface-access/idiadatasource.md)   
+ [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
+ [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Idiadatasource::opensession –](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
  [Idiasymbol::findchildren –](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [Dotazování na soubor .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Vytvoření ovládacího prvku panel nástrojů WPF | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4f98a58d78adc081ba574cab05edb29e1f42eabb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798328"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku panelu nástrojů WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,4 +100,3 @@ ms.locfileid: "51786025"
 3.  Nahrajte soubor .vsix k síti nebo na web.  
   
      Pokud nahrajete soubor, který má [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webové stránky, další uživatelé můžou používat **nástrojů / rozšíření a aktualizace** v sadě Visual Studio online ovládacího prvku najít a nainstalovat ho.
-

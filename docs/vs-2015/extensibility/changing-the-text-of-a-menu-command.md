@@ -1,14 +1,9 @@
 ---
 title: Změna textu příkazu nabídky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus, changing text
 - text, menus
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52e0319edd7d8f9563998adc18e3b00f7c12713b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dabe414fffe77d79981fa5f5b4af08b2ce32cca0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776618"
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>Změna textu příkazu nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,4 +88,3 @@ Následující kroky ukazují, jak změnit textový popisek příkazu nabídky p
 6.  Na **nástroje** nabídky by se měla zobrazit příkaz s názvem **vyvolat ChangeMenuText**.  
   
 7.  Klikněte na příkaz. Měli byste vidět zprávu pole oznamujeme, že MenuItemCallback byla volána. Při zavírání okna se zprávou, byste měli vidět, že název příkazu v nabídce Nástroje nyní **nový Text**.
-

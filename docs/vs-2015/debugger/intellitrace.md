@@ -1,14 +1,9 @@
 ---
 title: IntelliTrace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.overview
 helpviewer_keywords:
@@ -26,13 +21,13 @@ ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a2b3e8aa60304589d4ed04826441a7cc09c7f290
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794748"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
   
 |||  
 |-|-|  
-|**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|-   [Návod: Použití IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Konfigurace technologie IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Historické ladění](../debugger/historical-debugging.md)|  
+|**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|-   [Návod: Použití funkce IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Konfigurace technologie IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Historické ladění](../debugger/historical-debugging.md)|  
 |**Shromažďovat IntelliTrace data během testovací relace v nástroji Test Manager**|-   [Shromažďování více diagnostických dat v manuálních testů](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**Shromažďovat IntelliTrace data z nasazené aplikace**|-   [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Spuštění ladění ze souboru protokolu IntelliTrace (soubor .iTrace).**|-   [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
@@ -62,7 +57,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
   
 |||  
 |-|-|  
-|**Podporované**|-Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br />     Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br />     Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).|  
+|**Podporuje se**|-Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br />     Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br />     Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).|  
 |**Omezená podpora**|- F# aplikace na experimentální bázi<br />– Aplikace Windows Store podporované pouze pro události|  
 |**Nepodporuje se**|-C++, ostatní jazyky a skript<br />– Windows Services, Silverlight, Xbox nebo [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplikace|  
   
@@ -109,7 +104,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
 ##  <a name="WhatData"></a> Jaká data shromažďuje nástroj IntelliTrace?  
  **Shromažďování informací o událostech**  
   
- Ve výchozím nastavení nástroj IntelliTrace zaznamenává pouze události IntelliTrace: ladicí program událostmi, výjimkami, události rozhraní .NET Framework a další systémové události, které mohou pomoci s laděním. Můžete zvolit druhy událostí IntelliTrace, které chcete shromažďovat. Události ladicího programu a výjimky jsou shromažďovány vždy. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Ve výchozím nastavení nástroj IntelliTrace zaznamenává pouze události IntelliTrace: ladicí program událostmi, výjimkami, události rozhraní .NET Framework a další systémové události, které mohou pomoci s laděním. Můžete zvolit druhy událostí IntelliTrace, které chcete shromažďovat. Události ladicího programu a výjimky jsou shromažďovány vždy. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 - **Události ladicího programu**  
   
@@ -151,7 +146,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
   
   -   [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  -   [Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Shromažďují se informace o voláních funkcí**  
   
@@ -168,21 +163,21 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
 > [!NOTE]
 >  IntelliTrace shromažďuje pouze prvních 256 objektů v polích a prvních 256 znaků v řetězcích.  
   
- Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
  **Shromažďování informací o modulech**  
   
- Pro řízení množství informací o voláních shromažďovaných nástrojem IntelliTrace zadejte pouze ty moduly, které vás zajímají. To může pomoci zvýšit výkon vaší aplikace během shromažďování. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Pro řízení množství informací o voláních shromažďovaných nástrojem IntelliTrace zadejte pouze ty moduly, které vás zajímají. To může pomoci zvýšit výkon vaší aplikace během shromažďování. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ##  <a name="AffectPerformance"></a> Moje aplikace zpomalí nástroj IntelliTrace?  
  Nástroj IntelliTrace standardně shromažďuje pouze data pro vybrané události IntelliTrace. To může nebo nemusí zpomalit aplikaci v závislosti na struktuře a organizaci kódu. Například pokud nástroj IntelliTrace zaznamenává událost často, může to zpomalit vaši aplikaci. Může mít také můžete zvážení refaktoringu vaší aplikace.  
   
- Shromažďování informací o voláních může aplikaci výrazně zpomalit. Může také dojít ke zvětšení všech souborů protokolu IntelliTrace (.iTrace) ukládaných na disk. Pro minimalizaci negativních dopadů shromažďujte informace o volání pouze u modulů, které vás zajímají.  Chcete-li změnit maximální velikost souborů .iTrace, přejděte na **nástroje**, **možnosti**, **IntelliTrace**, **Upřesnit**. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Shromažďování informací o voláních může aplikaci výrazně zpomalit. Může také dojít ke zvětšení všech souborů protokolu IntelliTrace (.iTrace) ukládaných na disk. Pro minimalizaci negativních dopadů shromažďujte informace o volání pouze u modulů, které vás zajímají.  Chcete-li změnit maximální velikost souborů .iTrace, přejděte na **nástroje**, **možnosti**, **IntelliTrace**, **Upřesnit**. Zobrazit [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Funkce IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Konfigurace technologie IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)  
+ [Konfigurace technologie IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
  [Včetně diagnostických dat trasování s obtížně reprodukovatelnými chybami](http://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
@@ -195,8 +190,3 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
   
 ### <a name="forums"></a>Diskuzní fóra  
  [Diagnostika sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
-
-
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Konfigurace projektů pro více cílových platforem | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -16,13 +11,13 @@ ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e67d4a5df03f128285de45473c933761d6c7eb04
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785823"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Postupy: Konfigurace projektů pro více cílových platforem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,9 +64,6 @@ ms.locfileid: "49921831"
    Je možné mít nastaveno na hodnotu, například platformu úrovni řešení [!INCLUDE[vcprx64](../includes/vcprx64-md.md)], a mít žádné projekty v rámci tohoto řešení, které cílí na stejnou platformu. Také je možné mít více projektů v řešení, každý cílí na různé platformy. Doporučuje se, že pokud některou z těchto situací, můžete vytvořit novou konfiguraci pomocí popisný název, aby nedocházelo k záměně.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)   
+ [Postupy: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)   
  [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   
  [Sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-
-
-

@@ -1,23 +1,20 @@
 ---
-title: 'Postupy: Přidání nové položky do projektu pracovního postupu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Přidat novou položku do projektu pracovního postupu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f9dd186c4f9b319b5c4c60fa48d3a32e16c673f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210936"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776212"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Postupy: Přidání nové položky do projektu pracovního postupu
 Po vytvoření projektu pracovního postupu můžete přidat aktivit pracovního postupu, návrháře a další známé [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] položky do projektu.  
@@ -26,10 +23,10 @@ Po vytvoření projektu pracovního postupu můžete přidat aktivit pracovního
   
 |Název|Popis|  
 |----------|-----------------|  
-|Aktivita|Aktivitu se skládá z jiné aktivity. Výběrem této položky přidá stejný soubor XAML do projektu, jak lze získat při výběru **knihovny aktivit** šablonu pro nový projekt. [!INCLUDE[crabout](../includes/crabout-md.md)] v tomto postupu najdete v článku [postupy: vytvoření knihovny aktivit](../workflow-designer/how-to-create-an-activity-library.md).|  
-|Návrhář aktivity|Návrhář pro přizpůsobení prostředí doby návrhu aktivity. Stejné soubory, které vyberete tuto položku přidá do projektu, jak lze získat při výběru **knihovny návrháře aktivit** šablonu pro nový projekt. [!INCLUDE[crabout](../includes/crabout-md.md)] v tomto postupu najdete v článku [postupy: vytvoření knihovny návrháře aktivit](../workflow-designer/how-to-create-an-activity-designer-library.md).|  
+|Aktivita|Aktivitu se skládá z jiné aktivity. Výběrem této položky přidá stejný soubor XAML do projektu, jak lze získat při výběru **knihovny aktivit** šablonu pro nový projekt. [!INCLUDE[crabout](../includes/crabout-md.md)] v tomto postupu najdete v článku [jak: Vytvoření knihovny aktivit](../workflow-designer/how-to-create-an-activity-library.md).|  
+|Návrhář aktivity|Návrhář pro přizpůsobení prostředí doby návrhu aktivity. Stejné soubory, které vyberete tuto položku přidá do projektu, jak lze získat při výběru **knihovny návrháře aktivit** šablonu pro nový projekt. [!INCLUDE[crabout](../includes/crabout-md.md)] v tomto postupu najdete v článku [jak: Vytvoření knihovny návrhářů aktivit](../workflow-designer/how-to-create-an-activity-designer-library.md).|  
 |Aktivita s kódem|Aktivita s logikou provádění zapsanou v kódu. Soubor zdrojového kódu pomocí přepsání <xref:System.Activities.CodeActivity.Execute%2A> metoda byl již vygenerován za vás.|  
-|Služba pracovního postupu WCF|A [!INCLUDE[indigo2](../includes/indigo2-md.md)] služby vytvořené pomocí aktivit pracovního postupu. Stejné soubory, které vyberete tuto položku přidá do projektu, jak lze získat při výběru **aplikace služeb pracovního postupu WCF** šablonu pro nový projekt. [!INCLUDE[crabout](../includes/crabout-md.md)] v tomto postupu najdete v článku [postupy: vytvoření aplikace služeb pracovního postupu WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|  
+|Služba pracovního postupu WCF|A [!INCLUDE[indigo2](../includes/indigo2-md.md)] služby vytvořené pomocí aktivit pracovního postupu. Stejné soubory, které vyberete tuto položku přidá do projektu, jak lze získat při výběru **aplikace služeb pracovního postupu WCF** šablonu pro nový projekt. [!INCLUDE[crabout](../includes/crabout-md.md)] v tomto postupu najdete v článku [jak: Vytvoření aplikace služeb pracovního postupu WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|  
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Chcete-li přidat novou položku do projektu pracovního postupu  
   

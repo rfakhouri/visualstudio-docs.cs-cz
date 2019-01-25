@@ -1,12 +1,9 @@
 ---
 title: Další zdroje informací pro řešení potíží s dat přístup chyby | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -232,14 +229,14 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a71d18beaf1c77c16479c914a43cdf45793b685
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775233"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Další prostředky pro odstraňování chyb přístupu k datům
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -272,4 +269,3 @@ Pomoc při řešení problémů s chybami a upozorněními můžete najít na ve
   
 ## <a name="see-also"></a>Viz také  
  [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

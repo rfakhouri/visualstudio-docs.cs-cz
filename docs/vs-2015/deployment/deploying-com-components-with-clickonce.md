@@ -1,14 +1,9 @@
 ---
 title: Nasazování komponent COM s ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9422d1c2a185e223b35bc16ad892282ca1c2a420
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786161"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +166,7 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
 - Komponenta slouží ke správě fyzických nebo virtuálních zařízení pro systém, například ovladače zařízení pro zařazování tisku.  
   
-- Součást je Data Access redistributable. Data aplikace obvykle vyžadují samostatné datové distribuovatelné součásti k instalaci, než budou moci spustit. By se neměly pokoušet izolovat komponenty, například ovládací prvek dat rozhraní ADO Microsoft, Microsoft OLE DB nebo Microsoft Data Access Components (MDAC). Místo toho pokud vaše aplikace používá MDAC nebo SQL Server Express, měli byste nastavit je jako požadavky; Zobrazit [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Součást je Data Access redistributable. Data aplikace obvykle vyžadují samostatné datové distribuovatelné součásti k instalaci, než budou moci spustit. By se neměly pokoušet izolovat komponenty, například ovládací prvek dat rozhraní ADO Microsoft, Microsoft OLE DB nebo Microsoft Data Access Components (MDAC). Místo toho pokud vaše aplikace používá MDAC nebo SQL Server Express, měli byste nastavit je jako požadavky; Zobrazit [jak: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   V některých případech může být možné vývojář komponenty přepracovat pro modelu COM bez registrace Pokud to není možné, můžete pořád vytvářet a publikovat aplikace, které jsou na nich závislé prostřednictvím schématu standardní registrace pomocí zaváděcí nástroj. Další informace najdete v tématu [vytváření balíčků Bootstrapperu](../deployment/creating-bootstrapper-packages.md).  
   
@@ -181,6 +176,3 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)
-
-
-

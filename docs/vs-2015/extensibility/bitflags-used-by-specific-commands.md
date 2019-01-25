@@ -1,26 +1,21 @@
 ---
 title: Příznaky Bitflag používané konkrétními příkazy | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798180"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781302"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Příznaky bitflag používané konkrétními příkazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 |Příznak|Hodnota|Popis|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignorujte velká rozdíly.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorujte prázdné znaky rozdíly. **Poznámka:** `SCC_DIFF_IGNORECASE` a `SCC_DIFF_IGNORESPACE` příznaky jsou volitelné příznaky bitflag.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorujte prázdné znaky rozdíly. **Poznámka:**  `SCC_DIFF_IGNORECASE` a `SCC_DIFF_IGNORESPACE` příznaky jsou volitelné příznaky bitflag.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|Hloubka fronty porovnáním obsah celý soubor.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|HF podle kontrolního součtu.|  
 |`SCC_DIFF_QD_TIME`|0x0040|HF podle razítko data a času souboru.|  
@@ -85,7 +80,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
   
 |Příznak|Hodnota|Popis|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|Rozhraní IDE prochází adresáře, nikoli soubory: získání všech souborů v těchto adresářích.|  
+|`SCC_GET_ALL`|0x00000001L|Rozhraní IDE je předání adresáře, nikoli soubory: Získáte všechny soubory v těchto adresářích.|  
 |`SCC_GET_RECURSIVE`|0x00000002L|Rozhraní IDE je předání adresáře: Získejte tyto adresáře a jejich podsložky.|  
   
 ## <a name="noption-values"></a>nOption hodnoty  
@@ -114,4 +109,3 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
   
 ## <a name="see-also"></a>Viz také  
  [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)
-

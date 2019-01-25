@@ -1,29 +1,24 @@
 ---
-title: 'Postupy: hledání vlákna v zobrazení vláken | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Hledání vlákna v zobrazení vláken | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fb1c3979b0505305fd4f6a600e3352c0d08955de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7987b4da158572d22d609b095877f6d125512c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776224"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Postupy: Hledání vlákna v zobrazení vláken
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Postupy: Hledání vlákna v zobrazení vláken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete vyhledat konkrétního vlákna v zobrazení vláken pomocí jeho ID nebo modul řetězec vlákna jako kritéria hledání. Můžete také zadat počáteční směr hledání. Pole v dialogovém okně zobrazí atributy zvoleném vlákně ve stromové struktuře vlákna.  
@@ -45,9 +40,6 @@ Můžete vyhledat konkrétního vlákna v zobrazení vláken pomocí jeho ID neb
   
 5. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   
-6. Klikněte na tlačítko **OK**.  
+6. Klikněte na **OK**.  
   
    Pokud se najde odpovídající vlákno je zvýrazněn v okně zobrazení vláken.
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Vytváření obsahu. Soubory Vsct | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b9500aa0d35c0bf74e63c50d84d2e4aae4dfd543
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776439"
 ---
 # <a name="authoring-vsct-files"></a>Vytváření obsahu. Soubory Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,14 +25,14 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
  Pro nové projekty doporučujeme použít Visual Studio balíček šablony, protože generuje souboru .vsct, který v závislosti na výběrech, již obsahuje požadované elementy pro příkaz nabídky, okna nástroje nebo vlastní editor. Můžete upravit tento soubor .vsct podle požadavků vašeho balíčku VSPackage. Další informace o tom, jak upravit souboru .vsct, podívejte se na příklady v [rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="authoring-the-file"></a>Vytváření souboru  
- Vytvoření souboru .vsct v těchto fází: vytvořte strukturu souborů a prostředků, deklarace prvků uživatelského rozhraní, vložit prvky uživatelského rozhraní v rozhraní IDE a přidejte specializované neovlivní žádné chování.  
+ Vytvoření souboru .vsct v těchto fází: Vytvořte strukturu souborů a prostředků, deklarace prvků uživatelského rozhraní, vložit prvky uživatelského rozhraní v rozhraní IDE a přidejte specializované neovlivní žádné chování.  
   
 ### <a name="file-structure"></a>Struktura souborů  
  Základní struktura souboru .vsct je [commandtable –](../../extensibility/commandtable-element.md) kořenový element, který obsahuje [příkazy](../../extensibility/commands-element.md) elementu a [symboly](../../extensibility/symbols-element.md) elementu.  
   
 ##### <a name="to-create-the-file-structure"></a>Chcete-li vytvořit strukturu souborů  
   
-1.  Přidání souboru .vsct do svého projektu pomocí následujících kroků v [postupy: vytvoření. Soubor Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Přidání souboru .vsct do svého projektu pomocí následujících kroků v [jak: Vytvoření. Soubor Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2.  Přidejte požadované obory názvů `CommandTable` elementu, jak je znázorněno v následujícím příkladu.  
   
@@ -196,7 +191,7 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
   
    - TextChanges  
   
-   - Typu TextOnly  
+   - TextOnly  
   
      Další informace najdete v tématu [Command Flag – Element](../../extensibility/command-flag-element.md).  
   
@@ -208,7 +203,7 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
   
    - CommandWellOnly  
   
-   - Kláves  
+   - FilterKeys  
   
    - NoAutoComplete  
   
@@ -244,4 +239,3 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
  [Rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)   
  [Tabulky příkazů sady Visual Studio (. Soubory Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [XML schéma VSCT – referenční informace](../../extensibility/vsct-xml-schema-reference.md)
-

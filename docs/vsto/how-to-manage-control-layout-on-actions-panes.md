@@ -11,15 +11,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87ec74628bad3d4c0e2031b8399e279bc9b5229d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991172"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873116"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Postupy: Správa rozložení ovládacích prvků v podoknech akcí
   Podokna akcí je ukotven na pravém rohu dokumentu nebo sešitu ve výchozím nastavení; ale ho lze ukotvit vlevo, horní nebo dolní. Pokud používáte více uživatelských ovládacích prvků, můžete napsat kód správně zásobníku uživatelské ovládací prvky v podokně Akce. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).  

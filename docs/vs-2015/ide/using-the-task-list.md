@@ -1,14 +1,9 @@
 ---
 title: Pomocí seznamu úkolů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -20,13 +15,13 @@ ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801167"
 ---
 # <a name="using-the-task-list"></a>Používání seznamu úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
   
 #### <a name="to-open-the-task-list"></a>Otevření seznamu úkolů  
   
--   Na **zobrazení** nabídce zvolte **seznamu úkolů** (klávesnice: Ctrl +\\, T).  
+-   Na **zobrazení** nabídce zvolte **seznamu úkolů** (klávesnice: Ctrl+\\,T).  
   
      ![Okno seznam úkolů](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -91,7 +86,7 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
  Protože `TODO` je i předdefinovanou token, tento komentář se zobrazí jako `TODO` úkol v seznamu.  
   
 ###  <a name="customTokens"></a> Vlastní tokeny  
- Ve výchozím nastavení, Visual Studio obsahuje následující tokeny: TODO, HACK VRÁCENO, Poznámka. Ty nejsou velká a malá písmena.  
+ Ve výchozím nastavení sada Visual Studio obsahuje následující tokeny: HACK TODO, VRÁTIT ZPĚT, POZNÁMKA. Ty nejsou velká a malá písmena.  
   
  Nebo lze také vytvořit vlastní tokeny.  
   
@@ -103,7 +98,7 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
   
      [Seznamu úloh, prostředí, dialogové okno Možnosti](../ide/reference/task-list-environment-options-dialog-box.md) se zobrazí.  
   
-     ![Seznam úkolů sady Visual Studio](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
+     ![Visual Studio Task List](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
   
 3.  V **tokeny** kategorie v **název** textového pole zadejte název tokenu, například "Chyba".  
   
@@ -127,12 +122,9 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
   
 #### <a name="to-create-a-shortcut"></a>Vytvoření zástupce  
   
--   Umístěte ukazatel myši do kódu tam, kde chcete zástupce vložit. Zvolte **upravit &#124; záložky &#124; přidat zástupce seznamu úkolů** nebo stiskněte klávesu (klávesnice: Ctrl + K, Ctrl + H).  
+-   Umístěte ukazatel myši do kódu tam, kde chcete zástupce vložit. Zvolte **upravit &#124; záložky &#124; přidat zástupce seznamu úkolů** nebo stiskněte klávesu (klávesnice: Ctrl+K, Ctrl+H).  
   
      Procházet zástupce v kódu, zvolit zástupce v seznamu a klikněte na tlačítko **dalším úkolem** nebo **předchozího úkolu** z místní nabídky.  
   
 ## <a name="see-also"></a>Viz také  
  [Seznam úkolů, Prostředí, dialogové okno Možnosti](../ide/reference/task-list-environment-options-dialog-box.md)
-
-
-

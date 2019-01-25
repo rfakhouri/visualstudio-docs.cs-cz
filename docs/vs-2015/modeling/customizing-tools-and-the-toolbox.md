@@ -1,12 +1,9 @@
 ---
 title: Přizpůsobení nástrojů a panelu nástrojů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790595"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +84,11 @@ Editor
   
 3.  Nastavte **panelu nástrojů ikonu** vlastnost k odkazování na rastrový obrázek 16 x 16.  
   
-     Pokud chcete definovat nová ikona, vytvořit soubor rastrového obrázku v Průzkumníku řešení v **Dsl\Resources** složky. Soubor by měl mít následující hodnoty vlastností: **akce sestavení** = **obsahu**; **Kopírovat do výstupního adresáře** = **nekopírovat**.  
+     Pokud chcete definovat nová ikona, vytvořit soubor rastrového obrázku v Průzkumníku řešení v **Dsl\Resources** složky. Soubor by měl mít následující hodnoty vlastností: **Akce sestavení** = **obsahu**; **Kopírovat do výstupního adresáře** = **nekopírovat**.  
   
-4.  **Pro element nástroj:** nastavit **třídy** vlastnost nástroje k odkazování na konkrétní doménovou třídou, která je namapovaná na obrazec.  
+4.  **Pro nástroj element:** Nastavte **třídy** vlastnost nástroje k odkazování na konkrétní doménovou třídou, která je namapovaná na obrazec.  
   
-     **Pro nástroj konektor:** nastavit **Tvůrce připojení** vlastnost nástroje pro jednu z položek, které nabízí v rozevíracím seznamu. Tvůrci připojení se automaticky vytvoří při mapování spojnici na doménový vztah. Pokud jste nedávno vytvořili konektor, obvykle vyberete Tvůrce asociované připojení.  
+     **Konektor nástroje:** Nastavte **Tvůrce připojení** vlastnost nástroje pro jednu z položek, které nabízí v rozevíracím seznamu. Tvůrci připojení se automaticky vytvoří při mapování spojnici na doménový vztah. Pokud jste nedávno vytvořili konektor, obvykle vyberete Tvůrce asociované připojení.  
   
 5.  Chcete-li otestovat DSL, stiskněte klávesu F5 nebo CTRL + F5 a v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete ukázkový soubor modelu. Nový nástroj by se zobrazit na panelu nástrojů. Přetáhněte do diagramu, ověřte, že vytvoří nový prvek.  
   
@@ -233,7 +230,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md)   
  [Přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md)   
- [Postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Procházení a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Ukázka diagramy okruh DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

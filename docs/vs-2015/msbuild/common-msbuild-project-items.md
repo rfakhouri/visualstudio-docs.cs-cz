@@ -1,14 +1,9 @@
 ---
 title: Běžné projektu nástroje MSBuild položky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796874"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
   
 |Název položky|Popis|  
 |---------------|-----------------|  
-|Cestu k nápovědě|Volitelný řetězec. Relativní nebo absolutní cesta k sestavení.|  
+|HintPath|Volitelný řetězec. Relativní nebo absolutní cesta k sestavení.|  
 |Název|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|  
 |FusionName|Volitelný řetězec. Určuje jednoduchý nebo silné sloučeném názvu pro položku.<br /><br /> Když tento atribut je k dispozici, můžete ušetřit čas, protože není potřeba otevřít získat sloučeném názvu souboru sestavení.|  
 |SpecificVersion|Nepovinný datový typ boolean. Určuje, zda by se měla odkazovat pouze verze ve sloučeném názvu.|  
@@ -55,7 +50,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 |Název položky|Popis|  
 |---------------|-----------------|  
 |Název|Volitelný řetězec. Zobrazovaný název součásti.|  
-|identifikátor GUID|Volitelný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|  
+|Guid|Volitelný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Volitelný řetězec. Hlavní část čísla verze komponenty. Například "5" Pokud celé číslo verze je "5.46."|  
 |VersionMinor|Volitelný řetězec. Dílčí část čísla verze komponenty. Například "46" Pokud celé číslo verze je "5.46."|  
 |LCID|Volitelný řetězec. Identifikátor národního prostředí pro komponentu.|  
@@ -75,7 +70,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 |Název položky|Popis|  
 |---------------|-----------------|  
 |Název|Povinný řetězec. Základní název souboru manifestu.|  
-|Cestu k nápovědě|Povinný řetězec. Relativní cesta souboru manifestu.|  
+|HintPath|Povinný řetězec. Relativní cesta souboru manifestu.|  
   
 ### <a name="projectreference"></a>ProjectReference  
  Představuje odkaz na jiný projekt.  
@@ -126,7 +121,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 |Viditelné|Nepovinný datový typ boolean. Určuje, zda se zobrazí soubor v **Průzkumníka řešení** v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Volitelný řetězec. Určuje, jestli se má zkopírovat soubor do výstupního adresáře. Hodnoty jsou:<br /><br /> 1.  Nikdy<br />2.  Vždy<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Žádné  
+### <a name="none"></a>Žádná  
  Představuje soubory, které by se neměly nijak podílet v procesu sestavení.  
   
 |Název položky|Popis|  
@@ -145,11 +140,8 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport  
  Představuje projekt FxCop pro import.  
   
-### <a name="import"></a>Importovat  
+### <a name="import"></a>Import  
  Představuje sestavení, jejichž jmenné prostory by měly být naimportovány podle [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilátoru.  
   
 ## <a name="see-also"></a>Viz také  
  [Obecné vlastnosti projektu nástroje MSBuild](../msbuild/common-msbuild-project-properties.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Přizpůsobení izolovaného prostředí | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786690"
 ---
 # <a name="customizing-the-isolated-shell"></a>Přizpůsobení izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ Aplikace Visual Studio izolované prostředí můžete přizpůsobit tak, že zm
  Šablona řešení izolovaného prostředí zahrnuje *SolutionName*. Application.pkgdef soubor, který umožňuje změnit následující funkce:  
   
 ##### <a name="the-application-title"></a>Název aplikace  
- Můžete přizpůsobit název aplikace, což je název, který se zobrazí v záhlaví okna aplikace, můžete změnit hodnotu na řádek "AppName" *SolutionName*. Application.pkgdef souboru. Další podrobnosti najdete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Můžete přizpůsobit název aplikace, což je název, který se zobrazí v záhlaví okna aplikace, můžete změnit hodnotu na řádek "AppName" *SolutionName*. Application.pkgdef souboru. Další podrobnosti najdete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
  Pokud nechcete, aby název aplikace, chcete-li zobrazit projekt, který je aktuálně načtená, změňte hodnotu na řádek "ShowHierarchyRootInTitle" *SolutionName*. Application.pkgdef souboru z DWORD: 00000001 DWORD: 00000000.  
   
 ##### <a name="the-application-icon"></a>Ikona aplikace  
- Můžete přizpůsobit ikonu aplikace, což je ikona, která se zobrazí podle názvu aplikace v záhlaví okna aplikace. K adresáři ikonu zkopírujte jinou ikonu. V **Průzkumníka řešení**, přidejte ikonu složky souborů prostředků. Pak otevřete soubor VSShellStub.rc a nahraďte hodnotu IDI_STUBPROGRAM s názvem na ikonu nový. Další podrobnosti najdete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Můžete přizpůsobit ikonu aplikace, což je ikona, která se zobrazí podle názvu aplikace v záhlaví okna aplikace. K adresáři ikonu zkopírujte jinou ikonu. V **Průzkumníka řešení**, přidejte ikonu složky souborů prostředků. Pak otevřete soubor VSShellStub.rc a nahraďte hodnotu IDI_STUBPROGRAM s názvem na ikonu nový. Další podrobnosti najdete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>Logo příkazového řádku  
- Můžete přizpůsobit logo příkazového řádku, což je text, který se zobrazí při spuštění aplikace z příkazového řádku, můžete změnit hodnotu na řádek "CommandLineLogo" *SolutionName*. Application.pkgdef souboru. Další podrobnosti najdete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Můžete přizpůsobit logo příkazového řádku, což je text, který se zobrazí při spuštění aplikace z příkazového řádku, můžete změnit hodnotu na řádek "CommandLineLogo" *SolutionName*. Application.pkgdef souboru. Další podrobnosti najdete v tématu [názorný postup: Vytváření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>Název podsložky soubory uživatele  
  Můžete změnit název složky, které vaše aplikace udržuje pro soubory uživatele tak, že změníte hodnotu "UserFilesSubFolderName" řádku v *SolutionName*. Application.pkgdef souboru.  
@@ -63,7 +58,7 @@ Aplikace Visual Studio izolované prostředí můžete přizpůsobit tak, že zm
  Stránka webového prohlížeče, což je stránka, která se zobrazí při otevření okna webového prohlížeče, můžete změnit hodnotu na řádek "DefaultSearchPage" můžete přizpůsobit *SolutionName*. Application.pkgdef souboru.  
   
 ##### <a name="the-default-home-page"></a>Výchozí domovskou stránku  
- Na domovskou stránku můžete přizpůsobit tak, že změníte hodnotu "DefaultHomePage" řádku v *SolutionName*. Application.pkgdef souboru. Další podrobnosti najdete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Na domovskou stránku můžete přizpůsobit tak, že změníte hodnotu "DefaultHomePage" řádku v *SolutionName*. Application.pkgdef souboru. Další podrobnosti najdete v tématu [názorný postup: Vytváření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Jestli se mají skrýt koncept řešení  
  Můžete určit, jestli se mají skrýt řešení ve vaší aplikaci můžete změnit hodnotu na řádek "HideSolutionConcept" *SolutionName*. Application.pkgdef souboru. Chcete-li skrýt toto řešení, nastavte hodnotu `dword:00000001`a pokud chcete zobrazit řešení, nastavte hodnotu `dword:00000000`.  
@@ -123,14 +118,13 @@ DisableStartPage=dword:00000000
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- Odebere ze sady šablon projektů, které jsou zobrazeny v ostatních souborech projektu **nový projekt** dialogového okna. Další podrobnosti najdete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Odebere ze sady šablon projektů, které jsou zobrazeny v ostatních souborech projektu **nový projekt** dialogového okna. Další podrobnosti najdete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="enabledisable-menu-commands"></a>Povolit nebo zakázat příkazy nabídky  
- *SolutionName*UI.vsct soubor obsahuje seznam všech příkazů nabídky k dispozici pro izolovaného prostředí komentovaná. Chcete-li zakázat zadaný příkaz, Odkomentujte odpovídající řádek. Například pokud chcete zakázat komentáře/rozdělení okna, zrušte komentář `<Define name="No_SplitCommand"/>` řádek. Další podrobnosti najdete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ *SolutionName*UI.vsct soubor obsahuje seznam všech příkazů nabídky k dispozici pro izolovaného prostředí komentovaná. Chcete-li zakázat zadaný příkaz, Odkomentujte odpovídající řádek. Například pokud chcete zakázat komentáře/rozdělení okna, zrušte komentář `<Define name="No_SplitCommand"/>` řádek. Další podrobnosti najdete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-bitmap-used-on-the-splash-screen"></a>Rastrový obrázek používá na úvodní obrazovce  
- Můžete přizpůsobit rastrový obrázek používá na úvodní obrazovce, která je okno, které se zobrazí, když je aplikace spuštěna, můžete změnit hodnotu na řádek "SplashScreenBitmap" *SolutionName*. Application.pkgdef souboru. Další podrobnosti najdete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Můžete přizpůsobit rastrový obrázek používá na úvodní obrazovce, která je okno, které se zobrazí, když je aplikace spuštěna, můžete změnit hodnotu na řádek "SplashScreenBitmap" *SolutionName*. Application.pkgdef souboru. Další podrobnosti najdete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-helpabout-window"></a>Nápověda/o okně  
- V šabloně izolovaného prostředí je samostatný projekt, můžete použít k přizpůsobení Nápověda/o pole pro vaši aplikaci. Další podrobnosti najdete v tématu [návod: vytvoření základní aplikace izolovaného prostředí](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).
-
+ V šabloně izolovaného prostředí je samostatný projekt, můžete použít k přizpůsobení Nápověda/o pole pro vaši aplikaci. Další podrobnosti najdete v tématu [názorný postup: Vytvoření základní aplikace prostředí izolované](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).

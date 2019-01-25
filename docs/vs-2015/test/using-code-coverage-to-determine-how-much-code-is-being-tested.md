@@ -1,26 +1,21 @@
 ---
 title: Použití pokrytí kódu k určení jak mnohem kódu je testována | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834055"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782656"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Použití pokrytí kódu k určení rozsahu testovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Funkci pokrytí kódu sady Visual Studio lze použít ke zjištění toho, jaký
   
 2.  Chcete-li zobrazit řádky, které byly spuštěny, zvolte ![zobrazit barevné označení ikona pokrytí kódu](../test/media/codecoverage-showcoloringicon.png "CodeCoverage ShowColoringIcon")**zobrazit barevné označení pokrytí kódu**.  
   
-     Pro změnu barvy nebo použití tučného písma zvolte **nástroje**, **možnosti**, **prostředí**, **písma a barvy**, **zobrazit nastavení pro: textový Editor**. V části **zobrazit položky**, nastavte položky pokrytí.  
+     Pro změnu barvy nebo použití tučného písma zvolte **nástroje**, **možnosti**, **prostředí**, **písma a barvy**, **zobrazit nastavení pro: Textový Editor**. V části **zobrazit položky**, nastavte položky pokrytí.  
   
 3.  Pokud výsledky zobrazují nízké pokrytí, prozkoumejte, které části kódu nejsou testovány, a vytvořte pro ně další testy. Vývojové týmy obvykle usilují o 80% pokrytí kódu. V některých situacích je přijatelné i nižší pokrytí. Nižší pokrytí je například přijatelné tehdy, pokud je část kódu generována ze standardní šablony.  
   
@@ -228,7 +223,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
  `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`  
   
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *cestakezdrojovemusouboru* `");`  
+ `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`  
   
 -   *ExclusionName* je libovolný jedinečný název.  
   
@@ -286,12 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Externí zdroje  
   
 ### <a name="guidance"></a>Doprovodné materiály  
- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: testování částí: testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md)   
  [Poradce při potížích s pokrytím kódu](../test/troubleshooting-code-coverage.md)   
  [Testování částí kódu](../test/unit-test-your-code.md)
-
-
-

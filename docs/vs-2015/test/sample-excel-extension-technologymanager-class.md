@@ -1,26 +1,21 @@
 ---
 title: 'Ukázka rozšíření Excel: Třída TechnologyManager | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779567"
 ---
-# <a name="sample-excel-extension-technologymanager-class"></a>Ukázka rozšíření aplikace Excel: třída TechnologyManager
+# <a name="sample-excel-extension-technologymanager-class"></a>Ukázka rozšíření Excel: TechnologyManager – třída
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tato třída rozšiřuje <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> třídy a je odpovědný za poskytnutí základních služeb pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] rozšíření. Přestože základní třídy obsahuje mnoho metod, pouze jen některé z nich se používá v této ukázce.  
@@ -34,7 +29,7 @@ Tato třída rozšiřuje <xref:Microsoft.VisualStudio.TestTools.UITest.Extension
 ## <a name="com-visibility"></a>Viditelnost modelu COM.  
  Všimněte si, že tato třída a každý element třídy, které rozšiřují <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> třídy mají <xref:System.Runtime.InteropServices.ComVisibleAttribute> s hodnotou `true` k Ujistěte se, že třídy jsou viditelné v modelu COM.  
   
-## <a name="technologyname-property"></a>Vlastnost TechnologyName  
+## <a name="technologyname-property"></a>TechnologyName Property  
  Toto přepsání <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.TechnologyName%2A?displayProperty=fullName> vlastnost musíte zadat jedinečný a smysluplný název, který identifikuje základní technologie pro všechny ostatní komponenty rozšíření. Pro toto rozšíření je hodnota "Excel".  
   
 ## <a name="getcontrolsupportlevel-method"></a>GetControlSupportLevel – metoda  
@@ -72,6 +67,3 @@ Tato třída rozšiřuje <xref:Microsoft.VisualStudio.TestTools.UITest.Extension
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>   
  [Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

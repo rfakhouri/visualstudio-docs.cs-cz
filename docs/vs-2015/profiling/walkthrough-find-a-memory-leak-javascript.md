@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Vyhledání nevrácené paměti (JavaScript) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vyhledání nevrácené paměti (JavaScript) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780931"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Návod: Vyhledání nevrácené paměti (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Průvodce: Vyhledání nevrácené paměti (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
@@ -224,7 +219,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
     - Tento objekt je objekt zbylé ze snímku č. 2 a představuje potenciální nevrácená paměť.  
   
-      Základní znalost aplikace pomáhá v tomto okamžiku: výběr **nevracení paměti** tlačítko by odeberte DIV element a přidat prvek, takže kód vypadá, že nepodporuje pracovat přímo (to znamená, že nevrací paměť). V další části vysvětluje, jak to opravit.  
+      V tuto chvíli vám pomůže určitá znalost aplikace: Výběr **nevracení paměti** tlačítko by odeberte DIV element a přidat prvek, takže kód vypadá, že nepodporuje pracovat přímo (to znamená, že nevrací paměť). V další části vysvětluje, jak to opravit.  
   
     > [!TIP]
     >  V některých případech vyhledání objektu ve vztahu k `Global` objekt vám mohou pomoci identifikovat tohoto objektu. Chcete-li to provést, otevřete místní nabídku pro identifikátor a klikněte na tlačítko **zobrazit v zobrazení kořenů**.  
@@ -293,6 +288,3 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 ## <a name="see-also"></a>Viz také  
  [Paměť JavaScriptu](../profiling/javascript-memory.md)
-
-
-

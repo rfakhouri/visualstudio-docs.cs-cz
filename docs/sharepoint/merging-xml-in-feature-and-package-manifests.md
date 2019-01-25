@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3697fe85d13e1131c58f28d572e443affa77a81
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914433"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875560"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Sloučení XML do manifestů funkce a balíku
   Součásti a balíčky jsou definovány [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] soubory manifestu. Tyto zabalených manifestů jsou kombinací dat vygenerovaných z návrháře a vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] zadané v šabloně manifestu uživateli. Během vytváření balíčků [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sloučí vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] příkazy s poskytnutou návrháře [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] k balení [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] soubor manifestu. Podobné prvky, s výjimkami uvedenými později v sloučit výjimky jsou sloučeny, aby [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] chyby ověření po nasazení souborů do služby SharePoint a chcete-li manifest soubory menší a efektivnější.  
@@ -39,7 +39,7 @@ ms.locfileid: "53914433"
 |--------------|-----------------|  
 |Funkce návrháře|ActivationDependency|  
 |Funkce návrháře|UpgradeAction|  
-|Návrháři balíčku|SafeControl –|  
+|Návrháři balíčku|SafeControl|  
 |Návrháři balíčku|CodeAccessSecurity|  
   
 ## <a name="feature-manifest-elements"></a>Elementy manifestu funkce
@@ -66,7 +66,7 @@ ms.locfileid: "53914433"
 |ApplicationResourceFiles/ApplicationResourceFile|Umístění|  
 |Sestavení a sestavení|Umístění|  
 |ClassResources/ClassResource|Umístění|  
-|DwpFiles/soubor DWP|Umístění|  
+|DwpFiles/DwpFile|Umístění|  
 |FeatureManifests/FeatureManifest|Umístění|  
 |/ Prostředků|Umístění|  
 |RootFiles/RootFile|Umístění|  

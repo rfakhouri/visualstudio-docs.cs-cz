@@ -1,25 +1,20 @@
 ---
 title: Uzly konstanty | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d38a4f8a182562c11dbb742cb26392218edfd981
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788454"
 ---
 # <a name="constant-nodes"></a>Uzly konstanty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,22 +30,19 @@ Uzly konstanty v Návrháři shaderu představují hodnoty literálu a interpolo
   
 |Uzel|Podrobnosti|Vlastnosti|  
 |----------|-------------|----------------|  
-|**Vektor kamery**|Vektor, který se táhne od aktuálního pixelu až po kameru v prostoru světa.<br /><br /> Vám může být využit k výpočtu odrazů v prostoru světa.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vektor od aktuálního pixelu až po kameru.|Žádné|  
+|**Vektor kamery**|Vektor, který se táhne od aktuálního pixelu až po kameru v prostoru světa.<br /><br /> Vám může být využit k výpočtu odrazů v prostoru světa.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vektor od aktuálního pixelu až po kameru.|Žádná|  
 |**Barevná konstanta**|Hodnota konstanty barvy.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Hodnota barvy.|**Output**<br /> Hodnota barvy.|  
 |**Konstanty**|Konstantní skalární hodnota.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Skalární hodnota.|**Output**<br /> Skalární hodnota.|  
-|**2D konstanta**|Konstantu dvousložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Hodnota vektoru.|**Output**<br /> Hodnota vektoru.|  
-|**3D konstanta**|Konstantu třísložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Hodnota vektoru.|**Output**<br /> Hodnota vektoru.|  
-|**4D konstanta**|Konstantu čtyřsložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Hodnota barvy.|**Output**<br /> Hodnota vektoru.|  
-|**Normalizované umístění**|Pozice aktuálního pixelu vyjádřena v souřadnicích normalizované zařízení.<br /><br /> Souřadnice x a osy y mají hodnoty v rozsahu [-1, 1], souřadnice z má hodnotu v rozsahu [0, 1], a w komponenta obsahuje hodnotu hloubka bodu v prostoru zobrazení; w není normalizovaná.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozice aktuálního pixelu.|Žádné|  
-|**Barva bodu**|Rozptýlení barvy aktuálního pixelu, což je kombinací materiálu rozptýlení barvy a vrcholu barevnými atributy.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Rozptýlení barvy aktuálního pixelu.|Žádné|  
-|**Hloubka bodu**|Hloubka aktuálního pixelu v prostoru zobrazení.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Hloubka aktuálního pixelu.|Žádné|  
-|**Normalizovaná hloubka bodu**|Hloubka aktuálního pixelu vyjádřena v souřadnicích normalizované zařízení.<br /><br /> Výsledek obsahuje hodnotu v rozsahu [0, 1].<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Hloubka aktuálního pixelu.|Žádné|  
-|**Umístění obrazovky**|Pozice aktuálního pixelu vyjádřena v souřadnicovém systému obrazovky.<br /><br /> Souřadnice obrazovky jsou založeny na aktuální zobrazení. X a y součásti obsahují souřadnice obrazovky, z komponenty obsahuje hloubky normalizovány na rozsah [0, 1], a w komponenta obsahuje hodnotu hloubky v prostoru zobrazení.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozice aktuálního pixelu.|Žádné|  
-|**Normála povrchu**|Normála povrchu aktuálního pixelu v prostoru objektu.<br /><br /> To můžete použít pro výpočet přínosů světla a odrazů v prostoru objektu.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normála povrchu aktuálního pixelu.|Žádné|  
-|**Vektor kamery prostoru tečny**|Vektor, který se táhne od aktuálního pixelu až po kameru v tečném prostoru.<br /><br /> Vám může být využit k výpočtu odrazů v tečném prostoru.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vektor od aktuálního pixelu až po kameru.|Žádné|  
-|**Směr světla prostoru tečny**|Vektor definující směr, ve kterém dopadá světlo ze světelného zdroje v tečném prostoru aktuálního pixelu.<br /><br /> To slouží k výpočtu osvětlení a množství odrazů v tečném prostoru.<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Vektor od aktuálního pixelu ke zdroji světla.|Žádné|  
-|**Normála ve světových souřadnicích**|Normála povrchu aktuálního pixelu v prostoru světa.<br /><br /> To můžete použít pro výpočet přínosů světla a odrazů v prostoru světa.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normála povrchu aktuálního pixelu.|Žádné|  
-|**Pozice světa**|Pozice aktuálního pixelu v prostoru světa.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozice aktuálního pixelu.|Žádné|
-
-
-
+|**2D Constant**|Konstantu dvousložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Hodnota vektoru.|**Output**<br /> Hodnota vektoru.|  
+|**3D Constant**|Konstantu třísložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Hodnota vektoru.|**Output**<br /> Hodnota vektoru.|  
+|**4D Constant**|Konstantu čtyřsložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Hodnota barvy.|**Output**<br /> Hodnota vektoru.|  
+|**Normalizované umístění**|Pozice aktuálního pixelu vyjádřena v souřadnicích normalizované zařízení.<br /><br /> Souřadnice x a osy y mají hodnoty v rozsahu [-1, 1], souřadnice z má hodnotu v rozsahu [0, 1], a w komponenta obsahuje hodnotu hloubka bodu v prostoru zobrazení; w není normalizovaná.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozice aktuálního pixelu.|Žádná|  
+|**Barva bodu**|Rozptýlení barvy aktuálního pixelu, což je kombinací materiálu rozptýlení barvy a vrcholu barevnými atributy.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Rozptýlení barvy aktuálního pixelu.|Žádná|  
+|**Hloubka bodu**|Hloubka aktuálního pixelu v prostoru zobrazení.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Hloubka aktuálního pixelu.|Žádná|  
+|**Normalizovaná hloubka bodu**|Hloubka aktuálního pixelu vyjádřena v souřadnicích normalizované zařízení.<br /><br /> Výsledek obsahuje hodnotu v rozsahu [0, 1].<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Hloubka aktuálního pixelu.|Žádná|  
+|**Umístění obrazovky**|Pozice aktuálního pixelu vyjádřena v souřadnicovém systému obrazovky.<br /><br /> Souřadnice obrazovky jsou založeny na aktuální zobrazení. X a y součásti obsahují souřadnice obrazovky, z komponenty obsahuje hloubky normalizovány na rozsah [0, 1], a w komponenta obsahuje hodnotu hloubky v prostoru zobrazení.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozice aktuálního pixelu.|Žádná|  
+|**Normála povrchu**|Normála povrchu aktuálního pixelu v prostoru objektu.<br /><br /> To můžete použít pro výpočet přínosů světla a odrazů v prostoru objektu.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normála povrchu aktuálního pixelu.|Žádná|  
+|**Vektor kamery prostoru tečny**|Vektor, který se táhne od aktuálního pixelu až po kameru v tečném prostoru.<br /><br /> Vám může být využit k výpočtu odrazů v tečném prostoru.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vektor od aktuálního pixelu až po kameru.|Žádná|  
+|**Směr světla prostoru tečny**|Vektor definující směr, ve kterém dopadá světlo ze světelného zdroje v tečném prostoru aktuálního pixelu.<br /><br /> To slouží k výpočtu osvětlení a množství odrazů v tečném prostoru.<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Vektor od aktuálního pixelu ke zdroji světla.|Žádná|  
+|**Normála ve světových souřadnicích**|Normála povrchu aktuálního pixelu v prostoru světa.<br /><br /> To můžete použít pro výpočet přínosů světla a odrazů v prostoru světa.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normála povrchu aktuálního pixelu.|Žádná|  
+|**Pozice světa**|Pozice aktuálního pixelu v prostoru světa.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozice aktuálního pixelu.|Žádná|

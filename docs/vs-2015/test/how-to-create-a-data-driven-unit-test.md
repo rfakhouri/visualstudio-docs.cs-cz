@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Vytvoření testu jednotek řízené daty | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -19,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 02f55f39a045dcc0cc0b8eddf46134d4a380c9f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779159"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Testy jednotek řízené daty
+# <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Vytvoření testu částí řízeného daty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód, můžete nastavit metodu testovací jednotky tak, k načtení hodnoty použité v testovací metodě ze zdroje dat. Metoda se spouští postupně pro každý řádek ve zdroji dat, která usnadňuje testování celé škály vstup pomocí jedné metody.  
@@ -151,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Konstruktor s jedním parametrem používá informace o připojení, která je uložena v souboru app.config pro řešení. *DataSourceSettingsName* je název elementu Xml v konfiguračním souboru, který určuje informace o připojení.  
   
- Pomocí souboru app.config umožňuje změnit umístění zdroje dat bez změn samotného testu. Informace o tom, jak vytvořit a použít soubor app.config, naleznete v tématu [návod: použití konfiguračního souboru k definování zdroje dat](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
+ Pomocí souboru app.config umožňuje změnit umístění zdroje dat bez změn samotného testu. Informace o tom, jak vytvořit a použít soubor app.config, naleznete v tématu [názorný postup: Použití konfiguračního souboru k definování zdroje dat](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
   
 ```  
 [DataSource(connectionString, tableName)]  
@@ -192,10 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Postupy: vytváření a spouštění testování částí](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [Postupy: Vytváření a spouštění testování částí](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Testování částí kódu](../test/unit-test-your-code.md)   
  [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)   
  [Zápis testů částí pro rozhraní .NET Framework s infrastrukturou pro testování částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-
-
-

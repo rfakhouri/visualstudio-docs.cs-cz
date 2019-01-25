@@ -1,14 +1,9 @@
 ---
 title: Generatedeploymentmanifest – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 0734ebda-734d-49c4-9642-8d9d919d45fd
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8ad0b9919c5c567662d78573573f1bf046c93552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792939"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu nasaze
 |`DeploymentUrl`|Volitelné `String` parametru.<br /><br /> Určuje umístění aktualizace pro aplikaci. Pokud není tento parametr zadán, je definován žádné umístění aktualizace pro aplikaci. Nicméně pokud `UpdateEnabled` parametr je `true`, umístění aktualizace musí být zadán. Zadaná hodnota musí být plně kvalifikovaná cesta URL nebo cestu UNC.|  
 |`Description`|Volitelné `String` parametru.<br /><br /> Určuje volitelný popis pro aplikaci.|  
 |`DisallowUrlActivation`|Volitelné `Boolean` parametru.<br /><br /> Určuje, zda aplikace spouštěna automaticky při otevření prostřednictvím adresy URL. Pokud je tento parametr `true`, aplikaci lze spustit pouze z nabídky Start. Výchozí hodnota tohoto parametru je `false`. Tento vstup platí pouze tehdy, když `Install` je hodnota parametru `true`.|  
-|`EntryPoint`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Označuje položku zadání pro generované sestavení manifestu. Pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest nasazení, tento vstup Určuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace.<br /><br /> V [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], [generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md) vyžaduje `EntryPoint` ke generování manifestu aplikace. (Sestavení nebo nativní manifesty nevyžadují, aby `EntryPoint`.) Tento požadavek byl vynuceno chybou sestavení: "MSB3185: EntryPoint pro manifest není zadán."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nevydává tuto chybu při `EntryPoint` není zadán parametr úlohy. Místo toho \<customHostSpecified > jako podřízený objekt je vložena značka \<entryPoint > značku, například:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Závislosti mezi knihovnami DLL k manifestu aplikace můžete přidat pomocí následujících kroků:<br /><br /> 1.  Přeložit odkazy na sestavení pomocí volání <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Předejte výstup předchozího úkolu a samotného sestavení do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Předejte závislosti pomocí `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
+|`EntryPoint`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Označuje položku zadání pro generované sestavení manifestu. Pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest nasazení, tento vstup Určuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace.<br /><br /> V [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], [generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md) vyžaduje `EntryPoint` ke generování manifestu aplikace. (Sestavení nebo nativní manifesty nevyžadují, aby `EntryPoint`.) Tento požadavek byl vynuceno chybou sestavení: "MSB3185: Nebyl zadán parametr EntryPoint pro manifest."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nevydává tuto chybu při `EntryPoint` není zadán parametr úlohy. Místo toho \<customHostSpecified > jako podřízený objekt je vložena značka \<entryPoint > značku, například:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Závislosti mezi knihovnami DLL k manifestu aplikace můžete přidat pomocí následujících kroků:<br /><br /> 1.  Přeložit odkazy na sestavení pomocí volání <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Předejte výstup předchozího úkolu a samotného sestavení do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Předejte závislosti pomocí `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
 |`ErrorReportUrl`|Volitelné [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametru.<br /><br /> Určuje adresu URL webové stránky, který se zobrazí v dialogových oknech během instalace ClickOnce.|  
 |`InputManifest`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Označuje vstupní dokument XML, který bude sloužit jako základ pro generátor manifestu. To umožňuje strukturovaným datům, například definicím vlastního manifestu, se projevovat ve výstupním manifestu. Kořenový element v dokumentu XML musí být uzel sestavení v oboru názvů asmv1.|  
 |`Install`|Volitelné `Boolean` parametru.<br /><br /> Určuje, zda je aplikace nainstalovaná aplikace nebo aplikace pouze online. Pokud je tento parametr `true`, aplikace se nainstaluje v nabídce Start uživatele a můžete ji odstranit pomocí dialogu přidat nebo odebrat programy. Pokud je tento parametr `false`, aplikace je určena pro použití online z webové stránky. Výchozí hodnota tohoto parametru je `true`.|  
@@ -76,6 +71,3 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu nasaze
  [Generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md)   
  [Signfile – úloha](../msbuild/signfile-task.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
-
-
-

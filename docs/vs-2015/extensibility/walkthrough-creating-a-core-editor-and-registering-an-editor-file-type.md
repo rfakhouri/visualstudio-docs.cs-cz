@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Vytvoření základní Editor a registrace typu souboru Editor | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Základní Editor vytváří a registruje typem souboru Editor | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778491"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Návod: Vytvoření základní Editor a registraci typu souboru editoru
+# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Průvodce: Vytvoření základní Editor a registrace typu souboru editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor nějaký soubor, který má příponu názvu souboru .myext je načteno.  
@@ -41,7 +36,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
   
 ### <a name="to-create-the-vspackage"></a>Vytvoření sady VSPackage  
   
--   Spustit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a vytvořit [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage s názvem `MyPackage`, jak je uvedeno v [návod: vytvoření příkazu nabídky VSPackage](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+-   Spustit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a vytvořit [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage s názvem `MyPackage`, jak je uvedeno v [názorný postup: Vytvoření příkazu nabídky VSPackage](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Chcete-li přidat objekt factory editoru  
   
@@ -403,4 +398,3 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
 ## <a name="see-also"></a>Viz také  
  [Uvnitř základní Editor](../extensibility/inside-the-core-editor.md)   
  [Vytvoření instance základního editoru pomocí zastaralého rozhraní API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
-

@@ -1,12 +1,9 @@
 ---
 title: 'Diagramy případů použití UML: Pokyny | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams - modeling, use case
 - UML, use case diagrams
@@ -17,13 +14,13 @@ ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780699"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy případů použití UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
   Diagram případu použití nezobrazuje podrobnosti o použití: pouze shrnuje některé z relací mezi případy použití, objekty actor a systémy. Zejména diagram nezobrazuje pořadí, ve kterém jsou kroky provést k dosažení cílů každému případu použití. Popíšete tyto podrobnosti v jiných diagramů a dokumenty, které můžete propojit s každému případu použití. Další informace najdete v tématu [popisující případy použití podrobně](#Details) v tomto tématu.  
   
-  Popisy, které zadáte pro případy použití použije několik výrazů souvisejících k doméně, ve kterém funguje v systému, jako jsou prodej, nabídky, zákazníků a tak dále. Je důležité, abyste jasně definovat tyto podmínky a jejich vztahy a můžete to udělat pomocí diagramu tříd UML. Další informace najdete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).  
+  Popisy, které zadáte pro případy použití použije několik výrazů souvisejících k doméně, ve kterém funguje v systému, jako jsou prodej, nabídky, zákazníků a tak dále. Je důležité, abyste jasně definovat tyto podmínky a jejich vztahy a můžete to udělat pomocí diagramu tříd UML. Další informace najdete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md).  
   
   Případy použití řešení pouze v funkční požadavky na systém. Další požadavky, jako je například obchodní pravidla, kvalitu služby požadavky a omezení implementace musí reprezentovat samostatně. Architektura a interních detailů musí být také popsána samostatně. Další informace o tom, jak definovat požadavky uživatelů najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
@@ -91,13 +88,13 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
     -   Objekty actor představují třídy uživatelů, organizace a externí systémy, které pracují ve vašem systému.  
   
-    -   Přejmenujte. Příklad: **agentura zákazník, restaurace, platební karty.**  
+    -   Přejmenujte. Příklad: **Zákazník, restaurace, agentura platební karty.**  
   
 3.  Přetáhněte **případy použití** z panelu nástrojů na příslušné systémy.  
   
     -   Případy použití představují aktivity, které objekty actor provádět pomocí systému.  
   
-    -   Přejmenujte pomocí titulů, které by pochopit objektů actor samy. Nepoužívejte názvy, které se vztahují na váš kód. Příklad: **objednávka jídla, platby jenom za jídla, poskytovat jídla**.  
+    -   Přejmenujte pomocí titulů, které by pochopit objektů actor samy. Nepoužívejte názvy, které se vztahují na váš kód. Příklad: **Objednávka jídla, platíte za jídlo, poskytovat jídla**.  
   
     -   Začněte s hlavní transakce, jako **objednávka jídla**, dokud novější menší interakcí, jako odejít ze **vyberte položku nabídky**.  
   
@@ -233,9 +230,9 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
 - Propojení případu použití s jiný diagram nebo diagramy v projektu.  
   
-  -   Diagram činnosti pomáhá vysvětlit složitější procesu tam, kde jsou smyčky a větve paralelních vláken. Můžete také zobrazit tok dat mezi částmi tohoto procesu. Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+  -   Diagram činnosti pomáhá vysvětlit složitější procesu tam, kde jsou smyčky a větve paralelních vláken. Můžete také zobrazit tok dat mezi částmi tohoto procesu. Další informace najdete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
-  -   Sekvenční diagram vám vysvětlují komplexní řadu interakcí mezi různé objekty actor. Také vám pomůže ho zobrazit, co se stane v systému v reakci na každý případ použití. Další informace najdete v tématu [sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md).  
+  -   Sekvenční diagram vám vysvětlují komplexní řadu interakcí mezi různé objekty actor. Také vám pomůže ho zobrazit, co se stane v systému v reakci na každý případ použití. Další informace najdete v tématu [UML Sequence Diagrams: Pokyny pro](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 - Propojení případu použití stránky Onenotu, části nebo odstavce, která případ použití podrobně popisuje.  
   
@@ -337,7 +334,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
 - Akce v diagramu činnosti mají stejné názvy jako zahrnutou případy použití.  
   
-  Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+  Další informace najdete v tématu [diagramy činnosti UML: Pokyny pro](../modeling/uml-activity-diagrams-guidelines.md).  
   
   ![Použijte kroky v případu ukazuje diagram propojenou aktivitu](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
@@ -445,13 +442,10 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
 ## <a name="see-also"></a>Viz také  
  [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)   
- [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)   
+ [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)   
  [Video: Funkce pro organizaci na případy použití](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
-
-
-

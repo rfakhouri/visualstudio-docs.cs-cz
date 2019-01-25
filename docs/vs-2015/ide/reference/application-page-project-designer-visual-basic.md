@@ -1,14 +1,9 @@
 ---
 title: Stránka aplikace, Návrhář (Visual Basic) projektu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774857"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Stránka Aplikace, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
 > [!NOTE]
 >  Požadované balíčky, které jsou uvedeny v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky, když otevřete dialogové okno poprvé. Pokud později změníte cílový rámec projektu, je nutné zadat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.  
   
- Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [Visual Studio přehled multiplatformního zacílení](../../ide/visual-studio-multi-targeting-overview.md).  
+ Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [cílení na více verzí sady Visual Studio přehled](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Typ aplikace**  
  Určuje typ aplikace k sestavení. Pro [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikace, můžete zadat **aplikace Windows Store**, **knihovny tříd**, nebo **soubor WinMD**. Pro většinu ostatních typů aplikací, můžete zadat **aplikace Windows**, **konzolovou aplikaci**, **knihovny tříd**, **Windows Service**, nebo **Knihovna webových prvků**.  
@@ -116,7 +111,7 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
  Následující nastavení jsou dostupná **vlastnosti rozhraní framework aplikace Windows** oddílu. Tyto možnosti jsou dostupné pouze tehdy, pokud **Povolit aplikační framework** je zaškrtnuto políčko. Popisuje části následující za touto možností **vlastnosti rozhraní framework aplikace Windows** nastavení pro aplikace Windows Presentation Foundation (WPF).  
   
  **Povolení vizuálních stylů XP**  
- Povolí nebo zakáže vizuálních stylů Windows XP, označované také jako *Windows XP motivy*. Vizuální styly Windows XP povolit, například ovládací prvky s oblých rohů a dynamické barvy. Výchozí hodnota je povolená. Další informace o vizuálních stylů Windows XP, naleznete v tématu [funkce Windows XP a ovládací prvky Windows Forms](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Povolí nebo zakáže vizuálních stylů Windows XP, označované také jako *Windows XP motivy*. Vizuální styly Windows XP povolit, například ovládací prvky s oblých rohů a dynamické barvy. Výchozí hodnota je povolená. Další informace o vizuálních stylů Windows XP, naleznete v tématu [funkce Windows XP a ovládací prvky Windows Forms](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Ujistěte se, jedna instance aplikace**  
  Zaškrtněte toto políčko, pokud chcete zabránit uživatelům ve spouštění více instancí aplikace. Ve výchozím nastavení toto políčko není zaškrtnuto. Toto nastavení umožňuje několik instancí aplikace ke spuštění.  
@@ -166,6 +161,3 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
   
 ## <a name="see-also"></a>Viz také  
 [Správa vlastností aplikace](../../ide/application-properties.md) [psaní kódu v řešeních pro systém Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

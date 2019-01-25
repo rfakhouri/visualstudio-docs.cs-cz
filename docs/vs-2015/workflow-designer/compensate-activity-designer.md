@@ -1,11 +1,8 @@
 ---
 title: Návrhář aktivity compensate | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
@@ -13,13 +10,13 @@ ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: ae01f59e6d1b1c9d9e0baa4214a693b3e6d390d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0f643770482c2d01f3f091157e63f8e987853da5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791491"
 ---
 # <a name="compensate-activity-designer"></a>Návrhář aktivity Compensate
 **Kompenzace** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Compensate> aktivity.  
@@ -40,7 +37,7 @@ ms.locfileid: "49245931"
 |Název vlastnosti|Požadováno|Použití|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje volitelný popisný název <xref:System.Activities.Statements.Compensate> aktivity. Výchozí hodnota je kompenzace.|  
-|<xref:System.Activities.Statements.Compensate.Target%2A>|Hodnota TRUE|Určuje <xref:System.Activities.InArgument%601> , který obsahuje <xref:System.Activities.Statements.CompensationToken> to <xref:System.Activities.Statements.Compensate> aktivity.|  
+|<xref:System.Activities.Statements.Compensate.Target%2A>|Pravda|Určuje <xref:System.Activities.InArgument%601> , který obsahuje <xref:System.Activities.Statements.CompensationToken> to <xref:System.Activities.Statements.Compensate> aktivity.|  
   
 ## <a name="see-also"></a>Viz také  
  [Transakce](../workflow-designer/transaction-activity-designers.md)   

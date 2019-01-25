@@ -1,12 +1,9 @@
 ---
 title: 'Diagramy činnosti UML: Pokyny | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, activity
 - diagrams - modeling, activity
@@ -17,18 +14,18 @@ ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722680"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784448"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy činnosti UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodních procesů nebo algoritmu softwaru jako tok práci prostřednictvím obnáší sérii akcí. Lidé, softwarové komponenty nebo zařízení můžete provádět tyto akce. Video ukázku naleznete v tématu: [zachycení obchodní pracovní postupy pomocí diagramů aktivit](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
+V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodních procesů nebo algoritmu softwaru jako tok práci prostřednictvím obnáší sérii akcí. Lidé, softwarové komponenty nebo zařízení můžete provádět tyto akce. Video ukázku naleznete v tématu: [Zaznamenání obchodních pracovních postupů pomocí diagramy činnosti](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -38,13 +35,13 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
 - K popisu obchodních procesů nebo toku práce mezi uživateli a systému. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
-- K popisu kroky v případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
+- K popisu kroky v případu použití. Další informace najdete v tématu [diagramy případů použití UML: Pokyny pro](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - K popisu metody, funkce nebo operace v softwaru. Další informace najdete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
   
   Náčrt diagramu aktivit vám může pomoct vylepšit proces. Pokud bude velmi složité ukáže jako diagram existujícímu procesu, můžete zvážit, jak může zjednodušit proces.  
   
-  Referenční informace o prvcích v diagramech aktivit najdete v tématu [diagramy činnosti UML: referenční](../modeling/uml-activity-diagrams-reference.md).  
+  Referenční informace o prvcích v diagramech aktivit najdete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md).  
   
 ##  <a name="Relationships"></a> Vztah k jiným diagramům  
  Pokud si nakreslíte diagramu činnosti popisující obchodních procesů nebo způsobem, ve kterém uživatelé vašeho systému, lze nakreslit diagram případu použití a různých zobrazení stejné informace. V diagramu případu použití nakreslete akcí, které případy použití. Poskytněte stejné názvy jako odpovídající akce případy použití. Přináší výhody zobrazení případu použití, můžete:  
@@ -57,7 +54,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
   Můžete také nakreslit diagram aktivity k popisu podrobný návrh softwaru operace.  
   
-  V diagramu činnosti můžete zobrazit tok dat předávaných mezi akcemi. Naleznete v části [popisující toku dat](#DataFlows). Ale diagramu činnosti nepopisuje struktury data. K tomuto účelu můžete nakreslit diagram tříd UML. Informace naleznete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).  
+  V diagramu činnosti můžete zobrazit tok dat předávaných mezi akcemi. Naleznete v části [popisující toku dat](#DataFlows). Ale diagramu činnosti nepopisuje struktury data. K tomuto účelu můžete nakreslit diagram tříd UML. Informace naleznete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Základní postup pro vytvoření diagramů aktivit  
  Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
@@ -185,7 +182,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 -   Použití **výstupní kód Pin** a **zadání kódu Pin**. Tato metoda umožňuje samostatně popisují výstup z jednu akci a vstupy do jiného. PIN kódy jsou stejné jako parametry v aplikaci. PIN kódy představují porty, které objekty může vstupu a opuštění akce.  
   
     > [!NOTE]
-    >  Přehled prvků, které slouží v této části najdete v tématu Data proudí části tohoto tématu naleznete v tématu [diagramy činnosti UML: referenční](../modeling/uml-activity-diagrams-reference.md).  
+    >  Přehled prvků, které slouží v této části najdete v tématu Data proudí části tohoto tématu naleznete v tématu [diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Popis toku dat s uzly objektu  
  Většina toků řízení přenášejí data. Například tok výstupu z akce "Zákazník poskytuje podrobnosti o" představuje odkaz na dodací adresu.  
@@ -198,7 +195,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
  Pojmenujte uzel objektu, která odráží role uzlu jako přenos nebo vyrovnávací paměti objektů, které tok mezi akcemi.  
   
- Můžete nastavit **typ** z objektu uzlu v okně Vlastnosti. Typ může být primitivní typ jako celé číslo, nebo je třída, rozhraní nebo výčet, který jste definovali v diagramu tříd. Například můžete vytvořit třídu adresu dodávky, s atributy ulice, Město a tak dále, společně s přidružení k jiné třídy, která má název zákazníka. Další informace najdete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).  
+ Můžete nastavit **typ** z objektu uzlu v okně Vlastnosti. Typ může být primitivní typ jako celé číslo, nebo je třída, rozhraní nebo výčet, který jste definovali v diagramu tříd. Například můžete vytvořit třídu adresu dodávky, s atributy ulice, Město a tak dále, společně s přidružení k jiné třídy, která má název zákazníka. Další informace najdete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
 >  Pokud zadáte název typu, který ještě nebyl definován, položky budou přidány pod **nespecifikované typy** v Průzkumníku modelů UML. Pokud následně definovat typ s tímto názvem v diagramu tříd, byste měli obnovit typ uzlu objektu tak, aby odkazoval na nový typ.  
@@ -363,7 +360,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
  ![Paralelní toky objektů](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
   
- Po dokončení akce "Zákazník poskytuje podrobnosti" vytvoří dva objekty: "Dodávky adresu" a "údajů z platební karty." Dva objekty pro zpracování různých akcí dopředu.  
+ Po dokončení akce "Zákazník poskytuje podrobnosti" vytvoří dva objekty: "Dodávka adresu" a "údajů z platební karty." Dva objekty pro zpracování různých akcí dopředu.  
   
  Protože akce vyžaduje jeho vstupů být k dispozici, aby mohla začít, od poslední akce se nespustí, dokud nebudou dokončeny všechny akce, které vedou k němu.  
   
@@ -411,7 +408,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
 1. Vytvořte nový Diagram aktivity, ve které chcete popisovat tok transformace nebo výběru.  
   
-   -   V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, přejděte na **přidat**, klikněte na tlačítko **nová položka**a potom klikněte na tlačítko **Diagram činnosti**. Poskytnout vhodný název pro tok transformace nebo výběr diagramu. Klikněte na tlačítko **přidat**.  
+   -   V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, přejděte na **přidat**, klikněte na tlačítko **nová položka**a potom klikněte na tlačítko **Diagram činnosti**. Poskytnout vhodný název pro tok transformace nebo výběr diagramu. Klikněte na **Přidat**.  
   
 2. V novém diagramu:  
   
@@ -431,12 +428,9 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
  [Video: Zaznamenání obchodních pracovních postupů pomocí diagramy činnosti](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
-
-
-

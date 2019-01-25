@@ -1,14 +1,9 @@
 ---
 title: Ladění více procesů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752691"
 ---
 # <a name="debug-multiple-processes"></a>Ladění více procesů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ Tady je postup spuštění procesů ladění, přepínání mezi procesy, přeru
 ##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Hledání zdroje a symbolů (PDB) souborů  
  Chcete-li procházet zdrojový kód procesu, ladicí program potřebuje přístup ke zdrojové soubory a soubory symbolů procesu. Zobrazit [zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- Pokud nelze získat přístup k souborům pro proces, můžete procházet pomocí okno zpětný překlad. Zobrazit [postupy: použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md)  
+ Pokud nelze získat přístup k souborům pro proces, můžete procházet pomocí okno zpětný překlad. Zobrazit [jak: Použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
@@ -158,7 +153,7 @@ Tady je postup spuštění procesů ladění, přepínání mezi procesy, přeru
   
 - Otevřít **procesy** okno (místní **Ctrl + Alt + Z**), vyhledejte proces, který chcete nastavit jako aktuální proces a poklepejte na něj.  
   
-   ![Procesy – okno](../debugger/media/dbg-processeswindow.png "DBG_ProcessesWindow")  
+   ![Processes window](../debugger/media/dbg-processeswindow.png "DBG_ProcessesWindow")  
   
    Aktuální proces je označen žlutou šipkou.  
   
@@ -230,6 +225,3 @@ Tady je postup spuštění procesů ladění, přepínání mezi procesy, přeru
  [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)   
  [Ladění Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

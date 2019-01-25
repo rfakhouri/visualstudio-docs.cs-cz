@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, security
 - Office applications [Office development in Visual Studio], security
 - ClickOnce deployment [Office development in Visual Studio], security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40428d36648e159bd8fa90c2680b660b2112ef5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a334b9eab9fb9b859d45eda4419cdfdcde4b44fc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827924"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875638"
 ---
 # <a name="secure-deployment"></a>Bezpečné nasazení
   Při vytváření řešení pro Office se automaticky aktualizuje vývojovém počítači povolíte kód v projektu pro spuštění. Ale když nasadíte řešení, je nutné zadat důkazy, na kterém chcete založit rozhodnutí o důvěryhodnosti řešení s certifikátem podepisování, nebo pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] výzvy klíč vztah důvěryhodnosti. Další informace najdete v tématu [zajištění důvěryhodnosti řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md).  
@@ -34,7 +34,7 @@ ms.locfileid: "53827924"
   
 - **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
-- **Nenachází**  
+- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**  
   
   Chcete-li zabránit spuštění kódu řešení pro systém Office, vytvořte `Disabled` položku jeden nebo oba z těchto klíčů registru a zadejte jednu z následujících datových typů a hodnot pro `Disabled`:  
   

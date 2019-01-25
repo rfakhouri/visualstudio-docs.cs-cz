@@ -1,25 +1,20 @@
 ---
 title: Nástroj MSBuild Cílová architektura a cílová platforma | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 44ca85ad785c0a2ef634a989ca5289ab368f0316
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796608"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Cílová architektura a cílová platforma nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verz
   
   Verze rozhraní .NET Framework v seznamu sestavení, že každý zpřístupní odkazovat navzájem liší. Například nelze sestavit aplikace Windows Presentation Foundation (WPF), pokud váš projekt cílí na rozhraní .NET Framework verze 3.0 nebo vyšší.  
   
-  Cílová architektura, která je zadána v `TargetFrameworkVersion` vlastnost v souboru projektu. Pomocí stránky vlastností projektu v sadě Visual Studio integrované vývojové prostředí (IDE) můžete změnit cílový rámec pro projekt. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostupné hodnoty pro `TargetFrameworkVersion` jsou `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, a `v4.6`.  
+  Cílová architektura, která je zadána v `TargetFrameworkVersion` vlastnost v souboru projektu. Pomocí stránky vlastností projektu v sadě Visual Studio integrované vývojové prostředí (IDE) můžete změnit cílový rámec pro projekt. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostupné hodnoty pro `TargetFrameworkVersion` jsou `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, a `v4.6`.  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -58,7 +53,7 @@ Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verz
   
  A *cílový profil* je podmnožinou rozhraní .NET framework. Profil klienta .NET Framework 4 například nezahrnuje odkazy na sestavení nástroje MSBuild.  
   
- Cílový profil určen ve `TargetFrameworkProfile` vlastnost v souboru projektu. Cílový profil můžete změnit pomocí ovládacího prvku cílovou architekturu na stránkách vlastností projektu v integrovaném vývojovém prostředí. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+ Cílový profil určen ve `TargetFrameworkProfile` vlastnost v souboru projektu. Cílový profil můžete změnit pomocí ovládacího prvku cílovou architekturu na stránkách vlastností projektu v integrovaném vývojovém prostředí. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -93,6 +88,3 @@ Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verz
   
 ## <a name="see-also"></a>Viz také  
  [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

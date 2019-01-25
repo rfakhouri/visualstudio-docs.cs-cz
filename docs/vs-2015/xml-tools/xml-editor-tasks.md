@@ -1,25 +1,20 @@
 ---
 title: Úlohy v editoru XML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d069ba3a-266c-45ac-8f9f-7833a72c5a27
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+manager: jillfra
+ms.openlocfilehash: 276667993fa1c3448af3168403d18c2e55a118af
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244434"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781468"
 ---
 # <a name="xml-editor-tasks"></a>Úlohy v editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,26 +35,23 @@ Tato část popisuje běžné úkoly pomocí editoru XML.
  [Postupy: Provedení transformace XSLT z editoru XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)  
  Popisuje postup provedení transformace XSLT.  
   
- [Postupy: Úpravy souborů XML](../xml-tools/how-to-edit-xml-files.md)  
+ [Postupy: Úprava souborů XML](../xml-tools/how-to-edit-xml-files.md)  
  Popisuje, jak můžete začít upravovat soubory XML.  
   
- [Postupy: použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md).  
+ [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md).  
  Popisuje způsob použití fragmentů XML, které jsou zahrnuty pomocí editoru XML.  
   
  [Postupy: Generování fragmentu XML ze schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)  
  Ukazuje, jak se generování fragmentu XML ze schématu XML.  
   
- [Postupy: vytváření fragmentů XML](../xml-tools/how-to-create-xml-snippets.md).  
+ [Postupy: Vytváření fragmentů XML](../xml-tools/how-to-create-xml-snippets.md).  
  Popisuje způsob vytvoření nových fragmentů kódu XML.  
   
- [Návod: Používání IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)  
+ [Návod: Používání XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)  
  Ukazuje, jak použít funkci XSLT IntelliSense.  
   
  [Návod: Používání hierarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Ukazuje, jak ladit odkazované šablony stylů.  
   
- [Návod: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)  
+ [Návod: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)  
  Ukazuje, jak vytváření sestav výkonnosti pro kód XSLT.
-
-
-

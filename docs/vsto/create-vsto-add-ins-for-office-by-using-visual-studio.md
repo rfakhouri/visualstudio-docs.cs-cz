@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7708bc32e240f5976f1a7b6b9f9a1afb4c950743
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6dfbd0ed4ae41942f3c587d490a4dafaa1f93a7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942655"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875885"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Vytváření doplňků VSTO pro Office s použitím sady Visual Studio
   Nástroje Microsoft Office developer tools v sadě Visual Studio můžete použít k vytvoření aplikací rozhraní .NET Framework, které rozšiřují Office. Tyto aplikace se také nazývají *řešení pro systém Office*.  
@@ -98,7 +98,7 @@ ms.locfileid: "53942655"
  [Vývoj pro Office s portálem pro vývojáře Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844)  
  Poskytuje další zdroje informací, jako je například technické články, videa a blogy.  
   
- [Středisko pro vývojáře Visual Studio](http://go.microsoft.com/fwlink/?LinkID=99124)  
+ [Visual Studio developer center](http://go.microsoft.com/fwlink/?LinkID=99124)  
  Poskytuje další materiály pro Visual Studio jako jsou technické články, videa a blogy.  
   
  [Portál pro vývojáře obchodní aplikace Office](http://go.microsoft.com/fwlink/?LinkId=99125)  
