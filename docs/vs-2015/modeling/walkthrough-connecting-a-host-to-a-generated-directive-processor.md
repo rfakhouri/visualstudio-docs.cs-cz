@@ -1,12 +1,9 @@
 ---
-title: 'Návod: Připojení hostitele k procesoru vygenerovaných direktiv | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Připojení hostitele k procesoru vygenerovaných direktiv | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -14,23 +11,23 @@ ms.assetid: 254540d9-90d6-42de-8c1c-068affd56e83
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817870"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834308"
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Návod: Připojení hostitele k procesoru vygenerovaných direktiv
+# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Průvodce: Připojení hostitele k procesoru vygenerovaných direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Můžete napsat vlastního hostitele, který zpracovává textových šablon. Základní vlastního hostitele je ukázáno v [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md). Můžete rozšířit, které hostují přidat funkce, například generování víc výstupních souborů.  
+Můžete napsat vlastního hostitele, který zpracovává textových šablon. Základní vlastního hostitele je ukázáno v [názorný postup: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md). Můžete rozšířit, které hostují přidat funkce, například generování víc výstupních souborů.  
   
  V tomto podrobném návodu rozbalte vlastního hostitele tak, aby podporoval textové šablony, které volají procesory direktiv. Při definování jazyka specifického pro doménu, generuje *procesor direktiv* pro doménový model. Procesor direktiv usnadňuje uživatelům zapisovat šablony, které přístup k modelu, přičemž redukuje nutnost psaní sestavení a importovat direktivy v šablonách.  
   
 > [!WARNING]
->  Tento návod vychází [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md). Tento návod proveďte jako první.  
+>  Tento návod vychází [názorný postup: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md). Tento návod proveďte jako první.  
   
  Tento návod zahrnuje následující úlohy:  
   
@@ -49,7 +46,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
   
- Kromě toho musí mít vlastní textovou šablonu můžete vytvořit v [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+ Kromě toho musí mít vlastní textovou šablonu můžete vytvořit v [názorný postup: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
   
 ## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Použití nástroje jazyka specifického pro doménu k vygenerování procesoru direktiv  
  V tomto názorném postupu použijete k vytvoření jazyka specifického pro doménu pro řešení DSLMinimalTest Průvodce návrháře jazyka specifického pro doménu.  
@@ -58,15 +55,15 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
   
 1. Vytváření řešení jazyka specifického pro doménu, která má následující vlastnosti:  
   
-   - Název: DSLMinimalTest  
+   - Jméno: DSLMinimalTest  
   
-   - Šablona řešení: minimální jazykový  
+   - Šablona řešení: Minimální jazykový  
   
    - Přípona souboru: min  
   
-   - Název společnosti: Fabrikam  
+   - Název společnosti: Společnost Fabrikam  
   
-     Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+     Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [jak: Vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 2. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
@@ -86,7 +83,7 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
 6. Uložte řešení a pak zavřete návrháře jazyka specifického pro doménu.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Připojení vlastního hostitele textových šablon k procesoru direktiv  
- Jakmile vygenerujete procesor direktiv, připojíte procesoru direktiv a vlastního hostitele textových šablon, které jste vytvořili [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+ Jakmile vygenerujete procesor direktiv, připojíte procesoru direktiv a vlastního hostitele textových šablon, které jste vytvořili [názorný postup: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>K připojení vlastního hostitele textových šablon k procesoru vygenerovaných direktiv  
   
@@ -362,7 +359,4 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
     ```  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md)
-
-
-
+ [Návod: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md)

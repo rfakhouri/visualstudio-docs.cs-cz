@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c9d1dd1b17c9e3c301822a2c4a3b5eaae037d2f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 298661ba49e1fc86f62d2fec212dba701bcb5068
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204541"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834279"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka Visual Basic
 
@@ -270,5 +270,5 @@ Blahopřejeme k dokončení tohoto návodu! Můžete najít *.exe* vytvořeným
 
 ## <a name="see-also"></a>Viz také:
 
-- [Co je nového v sadě Visual Studio 2017](../../ide/whats-new-in-visual-studio.md)
+- [Co je nového v sadě Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Tipy pro vyšší produktivitu](../../ide/productivity-tips-for-visual-studio.md)

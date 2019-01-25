@@ -9,17 +9,17 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], document protection
 - Office applications [Office development in Visual Studio]
 - Office functionality inside Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1bcb827f068dd8c6577fed50e67d866ebba4886
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31f15242196949f953b851017b0b70f9ed1d8e2e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934619"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862223"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Použití funkcí systému Office v sadě Visual Studio
   Při vytváření projektu úrovni dokumentu dokument a přidružené aplikace jsou hostované v sadě Visual Studio vám umožní navrhnout a pracovat přímo s dokumentem. Pokud máte v sadě Visual Studio otevřete aplikaci Microsoft Office, obecně funguje podle očekávání. Některé z funkcí aplikace je však jinou nebo nedostupný.  

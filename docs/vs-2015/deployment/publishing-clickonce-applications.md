@@ -1,14 +1,9 @@
 ---
 title: Publikování aplikací ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Options
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.PublishWizard.Help
@@ -25,13 +20,13 @@ ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 52a6e91783a66adc09046ef6f193074e22c8dc6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823491"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834817"
 ---
 # <a name="publishing-clickonce-applications"></a>Publikování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +53,11 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vlastn
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: Zadejte, kde sada Visual Studio zkopíruje soubory](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Popisuje, jak nastavit, kdy sady Visual Studio vloží soubory aplikace a manifesty.|  
-|[Postupy: Zadejte umístění, kde budou koncoví uživatelé instalovat z](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Popisuje, jak nastavit umístění, kde uživatelé ke stažení a instalaci aplikace.|  
-|[Postupy: Určení ClickOnce v režimu Offline nebo Online režimu instalace](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Popisuje, jak nastavit, zda aplikace bude k dispozici online nebo offline.|  
-|[Postupy: Nastavení publikování ClickOnce verze](../deployment/how-to-set-the-clickonce-publish-version.md)|Popisuje, jak nastavit ClickOnce **publikovat verzi** vlastnost, která určuje, zda aplikace, které publikujete bude považována za aktualizace.|  
-|[Postupy: Automaticky ClickOnce Inkrementace verze publikování](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Popisuje, jak automaticky zvýší číslo revize **PublishVersion** pokaždé, když publikujete aplikaci.|  
+|[Postupy: Určení cíle kopírování souborů sadou Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Popisuje, jak nastavit, kdy sady Visual Studio vloží soubory aplikace a manifesty.|  
+|[Postupy: Určení umístění, odkud budou koncoví uživatelé instalovat](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Popisuje, jak nastavit umístění, kde uživatelé ke stažení a instalaci aplikace.|  
+|[Postupy: Určení offline nebo online režimu instalace ClickOnce](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Popisuje, jak nastavit, zda aplikace bude k dispozici online nebo offline.|  
+|[Postupy: Nastavení verze publikování ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)|Popisuje, jak nastavit ClickOnce **publikovat verzi** vlastnost, která určuje, zda aplikace, které publikujete bude považována za aktualizace.|  
+|[Postupy: Automatická inkrementace verze publikování ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Popisuje, jak automaticky zvýší číslo revize **PublishVersion** pokaždé, když publikujete aplikaci.|  
   
  Další informace najdete v tématu [publikovat stránku, Návrhář projektu](../ide/reference/publish-page-project-designer.md)  
   
@@ -82,35 +77,32 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vlastn
   
 |||  
 |-|-|  
-|[Postupy: Změnit jazyka publikování pro aplikaci ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Popisuje, jak určit jazyk a jazykovou verzi tak, aby odpovídaly lokalizovanou verzi.|  
-|[Postupy: Určení názvu úvodní nabídky pro aplikaci ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Popisuje, jak změnit zobrazovaný název pro aplikaci ClickOnce.|  
-|[Postupy: Určení obsahu pro technickou podporu](../deployment/how-to-specify-a-link-for-technical-support.md)|Popisuje, jak nastavit **adresu URL podpory** vlastnost, která identifikuje webové stránky nebo sdílené složky, kde mohou uživatelé získat informace o aplikaci.|  
-|[Postupy: Zadejte adresu URL podpory pro jednotlivé předpoklady v nasazení ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Jsme vám ukázali, jak ručně upravit manifest aplikace zahrnout jednotlivých adres URL podpory pro každý požadavek.|  
-|[Postupy: Určení stránky publikování pro aplikaci ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Popisuje, jak vygeneruje a publikuje výchozí webovou stránku (publish.htm) spolu s aplikace|  
-|[Postupy: Úprava ClickOnce výchozí webové stránky](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Popisuje, jak přizpůsobit webovou stránku, která je automaticky generována a publikovat spolu s aplikace.|  
-|[Postupy: Povolení funkce AutoStart pro instalace z disku CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|Popisuje postup povolení funkce AutoStart tak, aby aplikace ClickOnce se automaticky spustí, když je médium je vloženo.|  
+|[Postupy: Změna jazyka publikované aplikace ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Popisuje, jak určit jazyk a jazykovou verzi tak, aby odpovídaly lokalizovanou verzi.|  
+|[Postupy: Zadání názvu úvodní nabídky aplikace ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Popisuje, jak změnit zobrazovaný název pro aplikaci ClickOnce.|  
+|[Postupy: Zadání odkazu na technickou podporu](../deployment/how-to-specify-a-link-for-technical-support.md)|Popisuje, jak nastavit **adresu URL podpory** vlastnost, která identifikuje webové stránky nebo sdílené složky, kde mohou uživatelé získat informace o aplikaci.|  
+|[Postupy: Zadání adresy URL podpory jednotlivých součástí nezbytných k nasazení ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Jsme vám ukázali, jak ručně upravit manifest aplikace zahrnout jednotlivých adres URL podpory pro každý požadavek.|  
+|[Postupy: Zadání stránky pro publikování aplikace ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Popisuje, jak vygeneruje a publikuje výchozí webovou stránku (publish.htm) spolu s aplikace|  
+|[Postupy: Přizpůsobení výchozí webové stránky ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Popisuje, jak přizpůsobit webovou stránku, která je automaticky generována a publikovat spolu s aplikace.|  
+|[Postupy: Povolení funkce AutoStart při instalaci z disku CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|Popisuje postup povolení funkce AutoStart tak, aby aplikace ClickOnce se automaticky spustí, když je médium je vloženo.|  
   
 ## <a name="related-topics"></a>Související témata  
   
 |Název|Popis|  
 |-----------|-----------------|  
 |[Postupy: Vytváření přidružení souborů pro aplikaci ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Popisuje postup přidání podpory přípony názvu souboru do aplikace ClickOnce.|  
-|[Postupy: Načtení informací řetězce dotazu do Online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Ukazuje, jak načíst parametry předané v adrese URL používá ke spuštění aplikace ClickOnce.|  
-|[Postupy: Zákaz aktivace adresy URL aplikací ClickOnce pomocí návrháře](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Popisuje, jak přinutit uživatele a spusťte tak aplikaci z **Start** nabídky pomocí návrháře.|  
+|[Postupy: Načtení informací řetězce dotazu do online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Ukazuje, jak načíst parametry předané v adrese URL používá ke spuštění aplikace ClickOnce.|  
+|[Postupy: Zákaz aktivace adresy URL aplikací ClickOnce pomocí Návrháře](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Popisuje, jak přinutit uživatele a spusťte tak aplikaci z **Start** nabídky pomocí návrháře.|  
 |[Postupy: Zákaz aktivace adresy URL aplikací ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|Popisuje, jak přinutit uživatele a spusťte tak aplikaci z **Start** nabídky.|  
-|[Návod: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Vysvětluje, jak stáhnout aplikaci sestavení pouze při prvním použití aplikací pomocí návrháře.|  
-|[Návod: Stahování sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Vysvětluje, jak stáhnout aplikaci sestavení pouze při prvním použití aplikace.|  
-|[Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Popisuje, jak označit vaše satelitní sestavení jako volitelné a stáhnout pouze sestavení klientský počítač, musí mít nastavení aktuální jazykové verze.|  
+|[Návod: Stahování sestavení na vyžádání rozhraním API pro nasazení ClickOnce pomocí Návrháře](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Vysvětluje, jak stáhnout aplikaci sestavení pouze při prvním použití aplikací pomocí návrháře.|  
+|[Návod: Stahování sestavení na vyžádání rozhraním API pro nasazení ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Vysvětluje, jak stáhnout aplikaci sestavení pouze při prvním použití aplikace.|  
+|[Návod: Stahování satelitních sestavení na vyžádání rozhraním API pro nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Popisuje, jak označit vaše satelitní sestavení jako volitelné a stáhnout pouze sestavení klientský počítač, musí mít nastavení aktuální jazykové verze.|  
 |[Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Vysvětluje způsob používání nástrojů rozhraní .NET Framework pro nasazení aplikace ClickOnce.|  
-|[Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|Vysvětluje způsob používání nástrojů rozhraní .NET Framework pro nasazení aplikace ClickOnce bez opětovné podepisování manifestů.|  
-|[NIB: Postupy: Optimalizovat aplikace pro konkrétní typ procesoru](http://msdn.microsoft.com/en-us/294a75d2-4279-4b72-8298-2bea05be907a)|Vysvětluje, jak publikovat pro 64bitový procesor tak, že změníte **cílový procesor** nebo **Cílová platforma** vlastnosti ve vašem projektu.|  
-|[Návod: Povolení aplikace ClickOnce spouštět na více verzí rozhraní .NET Framework](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Vysvětluje, jak povolit aplikace ClickOnce k instalaci a spuštění na více verzích rozhraní .NET Framework.|  
-|[Návod: Vytvoření vlastního instalátoru pro aplikaci ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Vysvětluje, jak vytvořit vlastní instalační program pro instalaci aplikace ClickOnce.|  
+|[Návod: Ruční nasazení aplikace ClickOnce, které nevyžaduje opětovné podepsání a zachovává údaje o poskytovateli](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|Vysvětluje způsob používání nástrojů rozhraní .NET Framework pro nasazení aplikace ClickOnce bez opětovné podepisování manifestů.|  
+|[NIB: Postupy: Optimalizovat aplikace pro konkrétní typ procesoru](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Vysvětluje, jak publikovat pro 64bitový procesor tak, že změníte **cílový procesor** nebo **Cílová platforma** vlastnosti ve vašem projektu.|  
+|[Návod: Povolení aplikace ClickOnce spouštět na více verzí rozhraní .NET Framework](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Vysvětluje, jak povolit aplikace ClickOnce k instalaci a spuštění na více verzích rozhraní .NET Framework.|  
+|[Návod: Vytvoření vlastního instalátoru aplikace ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Vysvětluje, jak vytvořit vlastní instalační program pro instalaci aplikace ClickOnce.|  
 |[Postupy: Publikování aplikace WPF s povolenými vizuálními styly](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Obsahuje podrobné pokyny pro řešení chyby, jež se zobrazí při pokusu o publikování aplikace WPF, která má povoleny vizuální styly.|  
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   
  [Referenční dokumentace technologie ClickOnce](../deployment/clickonce-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Paměť Windows | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -31,13 +26,13 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724243"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834085"
 ---
 # <a name="memory-windows"></a>Okna paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,8 +123,3 @@ ms.locfileid: "51724243"
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

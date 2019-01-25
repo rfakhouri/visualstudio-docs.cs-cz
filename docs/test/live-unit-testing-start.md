@@ -10,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942184"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834250"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live Unit Testing v sadě Visual Studio
 
@@ -25,7 +25,7 @@ Live Unit Testing je možné pro testování řešení, které jsou cíleny rozh
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 Kompletní řešení C# si můžete stáhnout z [MicrosoftDocs/Visual Studio docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) úložišti na Githubu.
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 Kompletní řešení jazyka Visual Basic si můžete stáhnout z [MicrosoftDocs/Visual Studio docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) úložišti na Githubu.
 
 ---
@@ -78,7 +78,7 @@ Teď, když jsme vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 
 1.  Vyberte **sestavení** > **sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio. Visual Studio by měl úspěšným sestavením své knihovny.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
 1. V **přidat nový projekt** dialogového okna, vyberte uzel Visual Basic a pak vyberte **.NET Standard**.
@@ -153,7 +153,7 @@ Dalším krokem je vytvoření projektu testování částí pro testování `St
 
 1. Zkompilujte projekt jednotkového testu výběrem **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
@@ -210,7 +210,7 @@ Po dokončení spouštění vašich testů **Průzkumník testů** zobrazí celk
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![Okna Průzkumníka testů a kódu po spuštění Live Unit testing](media/lut-start/lut-results-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 ![Okna Průzkumníka testů a kódu po spuštění Live Unit testing](media/lut-start/lut-results-vb.png)
 
 ---
@@ -226,7 +226,7 @@ Můžete také získáte podrobnější informace o testovací pokrytí a výsle
 
    ![Pokrytí kódu pro příkaz return](media/lut-start/code-coverage-cs2.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Klikněte na zelené zaškrtnutí na řádku, který čte `If (String.IsNullOrWhiteSpace(s)) Then` v `StartsWithUpper` metody. Jak ukazuje následující obrázek, Live Unit Testing označuje, že tři testy zahrnují tento řádek kódu a, že všechny uzavřeli dohodu o úspěšně.
 
    ![Pokrytí kódu pro podmíněný příkaz "If"](media/lut-start/code-coverage-vb1.png)
@@ -262,7 +262,7 @@ K rozšíření pokrytí kódu `StartsWithLower` metodu, postupujte takto:
 
     ![Pokrytí kódu pro metodu StartsWithLower](media/lut-start/lut-extended-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Přidejte následující `TestStartsWithLower` a `TestDoesNotStartWithLower` metody do souboru se zdrojovým kódem projektu testu:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -322,7 +322,7 @@ V této části budete prozkoumávat, jak vám pomůže Live Unit Testing identi
 
 1. Vyberte **ladění** > **pokračovat**, stiskněte klávesu **F5**, nebo klikněte na tlačítko **pokračovat** tlačítko na panelu nástrojů má pokračovat provedením Otestujte aplikaci. Protože došlo k neošetřené výjimce, test se ukončí.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Přidejte následující metodu do souboru testu:
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -370,7 +370,7 @@ To poskytuje dostatek informací pro předběžné šetření chyby. Buď `TestH
 
     ![Úspěšné testovací HasEmbeddedSpaces.](media/lut-start/test-success-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Podívejte se na porovnání v `HasEmbeddedSpaces` metody. Vložené místo jako U + 0020 vyhodnotí. Unicode Standard však zahrnuje celou řadou dalších znaky. To naznačuje, že kód knihovny obsahuje nesprávně testovány z hlediska prázdným znakem.
 
 1. Porovnání rovnosti nahraďte volání <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> metody:
