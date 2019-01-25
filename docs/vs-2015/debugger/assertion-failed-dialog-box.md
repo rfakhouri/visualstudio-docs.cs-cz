@@ -1,14 +1,9 @@
 ---
 title: Dialogové okno selhání kontrolního výrazu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.assertions
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14a5179a88587f85784a2e16425c246a9cbfe497
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d665f51f2ec5d825dbac1533c82e3d15bf419ff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791205"
 ---
 # <a name="assertion-failed-dialog-box"></a>Dialogové okno Kontrolní výraz je neplatný
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +35,9 @@ Příkaz kontrolní výraz určuje podmínku, která očekávat k uložení true
   
 |Klikněte na...|Chcete-li|  
 |-----------|--------|  
-|Zkuste to znovu|Kontrolní výraz ladění nebo získat nápovědu k nepodmíněné výrazy.|  
+|Retry|Kontrolní výraz ladění nebo získat nápovědu k nepodmíněné výrazy.|  
 |Ignorovat|Ignorovat kontrolního výrazu a pokračování ve spouštění programu.|  
 |Přerušení|Zastavit provádění programu a ukončení relace ladění.|  
   
 ## <a name="see-also"></a>Viz také  
  [Kontrolní výrazy jazyka C/C++](../debugger/c-cpp-assertions.md)
-
-
-

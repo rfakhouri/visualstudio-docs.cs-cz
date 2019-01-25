@@ -1,28 +1,23 @@
 ---
-title: 'Postupy: vytvoření vlastního textu značky | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření vlastního textu značky | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b0a280b44ad468ba44baf81efcc4e4569638e8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd79d91dbf9705bf0faf743e66b4da40008307ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783081"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799270"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Postupy: vytvoření vlastního textu značky
+# <a name="how-to-create-custom-text-markers"></a>Postupy: Vytvoření vlastního textu značky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu, je nutné provést následující kroky:  
@@ -33,13 +28,13 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
   
 - Vytvoření služby, které lze použít s jinými procesy, aby pomocí textu značky  
   
-  Podrobnosti o tom, jak použít text značky do oblasti kódu najdete v tématu [postupy: použití Text značky](../extensibility/how-to-use-text-markers.md).  
+  Podrobnosti o tom, jak použít text značky do oblasti kódu najdete v tématu [jak: Použití značek Text](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Chcete-li zaregistrovat vlastní značky  
   
 1. Vytvořte položku registru následujícím způsobem:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* \Text Editor\External značky\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>je `GUID` slouží k identifikaci značky přidávaný  
   
@@ -70,7 +65,7 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
   
 ### <a name="to-create-a-custom-text-marker"></a>Chcete-li vytvořit vlastní text značky  
   
-1.  Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> rozhraní.  
+1.  Implementujte rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
   
      Implementace tohoto rozhraní definuje chování a vzhled typu vlastní značky.  
   
@@ -97,6 +92,5 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
 ## <a name="see-also"></a>Viz také  
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)   
- [Postupy: implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
- [Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md)
-
+ [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
+ [Postupy: Použití značek Text](../extensibility/how-to-use-text-markers.md)

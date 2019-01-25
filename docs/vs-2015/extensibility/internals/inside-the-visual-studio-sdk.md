@@ -1,14 +1,9 @@
 ---
 title: V sadě Visual Studio SDK | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49ec5ab372b5b7117dcab374c3420b1e76112825
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757099"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Zobecněný zobrazení architektury v sadě Visual Studio
  Prostředí sady Visual Studio poskytuje základní funkce a podporují různé komunikaci mezi jeho součást rozšíření VSPackages a rozhraní MEF. Další informace najdete v tématu [prostředí sady Visual Studio](../../extensibility/internals/visual-studio-shell.md).  
   
 ## <a name="user-experience-guidelines"></a>Pravidla pro práci s uživatelským prostředím  
- Pokud máte v úmyslu návrh nových funkcí pro Visual Studio, byste měli podniknout podívejte se na tyto pokyny pro návrh a použitelnost tipy: [Visual Studio zkušenosti uživatelů](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
+ Pokud máte v úmyslu návrh nových funkcí pro Visual Studio, byste měli provést, podívejte se na tyto pokyny pro návrh a použitelnost tipy: [Pokyny pro práci uživatelů sady Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Příkazy  
  Příkazy jsou funkce, které provádět úlohy, jako je například tisk dokumentu, aktualizuje zobrazení nebo vytvoření nového souboru.  
@@ -108,9 +103,9 @@ Zobecněný zobrazení architektury v sadě Visual Studio
  Další informace najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Vlastnosti a možnosti  
- **Vlastnosti** okně zobrazí vlastnosti jednoho nebo více vybraných položek: [vlastnosti rozšíření](../../extensibility/internals/extending-properties.md) možnosti stránky obsahují sadu možností, které se týkají konkrétní součástí, například programovací jazyk nebo VSPackage: [možnosti a stránky možnosti](../../extensibility/internals/options-and-options-pages.md). Nastavení jsou obecně související s Uživatelským rozhraním funkce, které můžete importovat a exportovat: [podpora pro uživatelská nastavení](../../extensibility/internals/support-for-user-settings.md).  
+ **Vlastnosti** okně zobrazí vlastnosti jednoho nebo více vybraných položek: [Rozšíření vlastností](../../extensibility/internals/extending-properties.md) možnosti stránky obsahují sadu možností, které se týkají konkrétní součástí, například programovacím jazyce nebo VSPackage: [Možnosti a stránky možnosti](../../extensibility/internals/options-and-options-pages.md). Nastavení jsou obecně související s Uživatelským rozhraním funkce, které můžete importovat a exportovat: [Podpora pro uživatelská nastavení](../../extensibility/internals/support-for-user-settings.md).  
   
-## <a name="visual-studio-services"></a>Služby Visual Studio  
+## <a name="visual-studio-services"></a>Visual Studio Services  
  Služba obsahuje konkrétní sadu rozhraní pro součásti využívají. Visual Studio poskytuje sada služeb, které mohou využívat všechny komponenty, včetně rozšíření. Například služby Visual Studio umožňují okna nástrojů zobrazený nebo skrytý dynamicky, povolení přístupu k nápovědě, stavový řádek nebo události uživatelského rozhraní. Editor sady Visual Studio také poskytuje služby, které lze importovat rozšířeními editoru. Další informace najdete v tématu [Using a poskytování služeb](../../extensibility/using-and-providing-services.md).  
   
 ## <a name="debugger"></a>Ladicí program  
@@ -133,4 +128,3 @@ Zobecněný zobrazení architektury v sadě Visual Studio
   
 ## <a name="help-viewer"></a>Aplikaci Help Viewer  
  Vlastní Nápověda a F1 stránky můžete integrovat do aplikace Help Viewer. Další informace najdete v tématu [Microsoft Help Viewer SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).
-

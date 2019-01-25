@@ -1,14 +1,9 @@
 ---
 title: Psaní kódu v editoru kódu a textový Editor | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.texteditor
 dev_langs:
@@ -64,13 +59,13 @@ ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794238"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Psaní kódu v editoru kódu a textovém editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,17 +122,17 @@ Editor sady Visual Studio poskytuje mnoho funkcí, které usnadňují zápis a s
 
  ![Navigační tlačítka vpřed a zpět](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Můžete také použít rozšířený posuvník v okně s kódem získat reálné zobrazení kódu. V režimu mapy, můžete zobrazit náhledy kódu, když vrátíte kurzor myši a dolů posuvníku, další informace naleznete v tématu [postupy: sledování kódu přizpůsobením posuvníku](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ Můžete také použít rozšířený posuvník v okně s kódem získat reálné zobrazení kódu. V režimu mapy, můžete zobrazit náhledy kódu, když vrátíte kurzor myši a dolů posuvníku, další informace naleznete v tématu [jak: Sledování kódu přizpůsobením posuvníku](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
  Následující příkazy jsou navigační metody specifické pro kód:  
 
 |||  
 |-|-|  
-|Přejít na \<číslo řádku >|(**Úpravy/přejít na** nebo CTRL + G): přesunout na číslo určitého řádku v aktivním dokumentu.|  
-|Přejděte na|(**Úpravy/Navigovat do** nebo CTRL +,): Vyhledá symbol nebo soubor v aktivním řešení. Umožňuje vybrat správnou sadu odpovídajících výsledků z dotazu. Můžete hledat klíčová slova, které jsou obsaženy v symbolu pomocí velbloudí notace a podtržených znaků k rozdělení symbolu na klíčová slova.|  
+|Přejít na \<číslo řádku >|(**Úpravy/přejít na** nebo CTRL + G): Přesunout na číslo určitého řádku v aktivním dokumentu.|  
+|Přejděte na|(**Úpravy/přejít na** nebo CTRL +,): Vyhledá symbol nebo soubor v aktivním řešení. Umožňuje vybrat správnou sadu odpovídajících výsledků z dotazu. Můžete hledat klíčová slova, které jsou obsaženy v symbolu pomocí velbloudí notace a podtržených znaků k rozdělení symbolu na klíčová slova.|  
 |Najít všechny odkazy|(kontextová nabídka): Vyhledá všechny odkazy na vybraný prvek v řešení.|  
 |Přejít k definici|(kontextová nabídka nebo F12): Najde definici vybraného prvku.|  
-|Náhled definice|(kontextová nabídka nebo Alt + F12): Najde definici vybraného prvku a zobrazí ho v místním okně. Další informace najdete v tématu [postupy: zobrazení a úpravy kódu pomocí náhled definice (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
+|Náhled definice|(kontextová nabídka nebo Alt + F12): Najde definici vybraného prvku a zobrazí ho v místním okně. Další informace najdete v tématu [jak: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Další metoda, předchozí metoda|(**Úpravy/další metoda, předchozí metoda**) soubory kódu v jazyce Visual Basic, pomocí těchto příkazů můžete přesunout kurzor bodu do různých metod.|  
 |Zvýraznění odkazů|Po kliknutí na symbol ve zdrojovém kódu se zvýrazní všechny výskyty symbolu v dokumentu. Zvýrazněné symboly mohou obsahovat prohlášení a odkazy a mnoho dalších symbolů, které **najít všechny odkazy** vrátí. Patří sem názvy tříd, objektů, proměnných, metod a vlastností. V kódu jazyka Visual Basic jsou také zvýrazněna klíčová slova pro mnoho řídících struktur. Přesunout na další nebo předchozí zvýrazněný symbol, stiskněte kombinaci kláves CTRL + SHIFT + šipka dolů nebo CTRL + SHIFT + šipka nahoru. Můžete změnit barvu zvýraznění v **Nástroje/možnosti/prostředí/písma a barvy/zvýrazněný odkaz.**|  
 |Najít informace týkající se kódu|Můžete najít informace o konkrétním kódu, jako jsou změny a kdo provedl tyto změny, odkazy, chyby, pracovní položky, revize kódu a stav jednotky testování, při použití CodeLens v editoru kódu. CodeLens funguje jako pohotové zobrazení při použití sady Visual Studio Enterprise s Team Foundation Server. Zobrazit [nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md).|  
@@ -188,9 +183,9 @@ Pokud používáte camelCase ve vašem kódu, najdete prvky kódu rychleji tak, 
 Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 ## <a name="customize-the-editor"></a>Přizpůsobení editoru  
- **Nastavení importu a exportu**: můžete sdílet nastavení s jiným vývojářem, aby vaše nastavení bylo v souladu s normou nebo pomocí vraťte do výchozího nastavení sady Visual Studio **Průvodce importem a exportem nastavení** na **Nástroje** nabídky. Můžete změnit obecné nastavení nebo jazyk a nastavení specifická pro projekt.  
+ **Nastavení importu a exportu**: Můžete sdílet nastavení s jiným vývojářem, aby vaše nastavení bylo v souladu s normou nebo pomocí vraťte do výchozího nastavení sady Visual Studio **Průvodce importem a exportem nastavení** na **nástroje** nabídky. Můžete změnit obecné nastavení nebo jazyk a nastavení specifická pro projekt.  
 
- **Mapování klávesnice**: můžete definovat nové klávesové zkratky nebo změnit existující v nastavení nástroje/Možnosti/prostředí/klávesnice. Další informace o klávesových zkratkách naleznete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+ **Mapování klávesnice**: Můžete definovat nové klávesové zkratky nebo změnit existující v nastavení nástroje/Možnosti/prostředí/klávesnice. Další informace o klávesových zkratkách naleznete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
 
  Informace o možnosti editoru pro konkrétní jazyk naleznete v následujících tématech:  
 
@@ -218,7 +213,7 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 -   [Postupy: Sledování kódu přizpůsobením posuvníku](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Rychlé akce pomocí žárovek](../ide/perform-quick-actions-with-light-bulbs.md)  
 
@@ -236,5 +231,3 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 ## <a name="see-also"></a>Viz také  
  [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
-
-

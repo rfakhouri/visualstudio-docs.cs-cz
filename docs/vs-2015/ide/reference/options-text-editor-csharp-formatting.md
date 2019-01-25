@@ -1,14 +1,9 @@
 ---
 title: Možnosti, textový Editor, C#, formátování vzorků | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.NewLines
@@ -30,13 +25,13 @@ ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9acd9d882fb2cf0decff4c9f4ab657cf831e74ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800762"
 ---
 # <a name="options-text-editor-c-formatting"></a>Možnosti, textový editor, C#, formátování
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "49281252"
 Použití **formátování** dialogové okno stránky vlastností pro nastavení možností pro formátování kódu v editoru kódu. Toto dialogové okno, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textový Editor**, rozbalte **jazyka C#** a potom klikněte na tlačítko  **Formátování**.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="general-settings"></a>Obecné nastavení  
  Obecné nastavení vliv na použití možností formátování kódu v editoru kódu.  
@@ -66,6 +61,3 @@ Použití **formátování** dialogové okno stránky vlastností pro nastavení
   
 ## <a name="see-also"></a>Viz také  
  [Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Diagnostika problémů po nasazení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 caps.latest.revision: 66
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6c4c60265fda66f7506fe6d886fa671527c1587
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 50db0acab74df71be7185acc076724837d41512a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51785453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805525"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostika problémů po nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -375,8 +370,3 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
  ![Ladit s cestou nedůvěryhodných symbolech? ](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
   
  **ODPOVĚĎ:** Tato zpráva se zobrazí, když cesta symbolů v souboru manifestu sestavení (\<*ProjectName*>. BuildInfo.config) není součástí seznamu důvěryhodných cest symbolů. Cestu můžete přidat do seznamu cest symbolů v možnostech ladicího programu.
-
-
-
-
-

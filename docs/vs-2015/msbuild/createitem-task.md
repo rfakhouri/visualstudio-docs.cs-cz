@@ -1,14 +1,9 @@
 ---
 title: Createitem – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7db76f3ec603c493cef38536b6fb54b74ac6c43b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 936ab49a07da5065b14b4a56325607001352f747
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802157"
 ---
 # <a name="createitem-task"></a>CreateItem – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +40,8 @@ Naplní položku kolekce s vstupních položek. To umožňuje položky, které s
   
 |Parametr|Popis|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|Volitelné `String` parametr pole.<br /><br /> Určuje další metadata se připojit k výstupní položky.  Zadejte název metadat a hodnotu pro položku s následující syntaxí:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> Více dvojice název/hodnota metadat by měla být oddělena oddělte středníkem. Pokud název nebo hodnota obsahuje středníkem ani jiné speciální znaky, musejí být uvozeny. Další informace najdete v tématu [postup: speciální řídicí znaky v nástroji MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
-|`Exclude`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Určuje položky, které chcete vyloučit z kolekce položek výstup. Tento parametr může obsahovat specifikaci zástupných znaků. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md) a [postupy: vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).|  
+|`AdditionalMetadata`|Volitelné `String` parametr pole.<br /><br /> Určuje další metadata se připojit k výstupní položky.  Zadejte název metadat a hodnotu pro položku s následující syntaxí:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> Více dvojice název/hodnota metadat by měla být oddělena oddělte středníkem. Pokud název nebo hodnota obsahuje středníkem ani jiné speciální znaky, musejí být uvozeny. Další informace najdete v tématu [jak: Řídicí znaky v nástroji MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
+|`Exclude`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Určuje položky, které chcete vyloučit z kolekce položek výstup. Tento parametr může obsahovat specifikaci zástupných znaků. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md) a [jak: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).|  
 |`Include`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametru.<br /><br /> Určuje položky, které chcete zahrnout do výstupu položku kolekce. Tento parametr může obsahovat specifikaci zástupných znaků.|  
 |`PreserveExistingMetadata`|Volitelné `Boolean` parametru.<br /><br /> Pokud `True`, platí pouze pro další metadata již neexistují.|  
   
@@ -88,6 +83,3 @@ Naplní položku kolekce s vstupních položek. To umožňuje položky, které s
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
  [Úlohy](../msbuild/msbuild-tasks.md)
-
-
-

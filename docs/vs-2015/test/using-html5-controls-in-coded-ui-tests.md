@@ -1,24 +1,19 @@
 ---
 title: Použití ovládacích prvků HTML5 v programových testů UI | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805073"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Použití ovládacích prvků HTML5 v programových testech UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +33,16 @@ Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTM
 ## <a name="supported-html5-controls"></a>Ovládací prvky jazyka HTML5 podporované  
  Programové testy UI podporují záznam, přehrávání a ověřování následující ovládací prvky jazyka HTML5 následující možnosti:  
   
--   [Ovládací prvek zvuku](#UsingHTML5ControlsCodedUITestsAudio)  
+-   [Audio Control](#UsingHTML5ControlsCodedUITestsAudio)  
   
--   [Ovládacího prvku video](#UsingHTML5ControlsCodedUITestsVideo)  
+-   [Video Control](#UsingHTML5ControlsCodedUITestsVideo)  
   
 -   [Posuvník](#UsingHTML5ControlsCodedUITestsSlider)  
   
 -   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Ovládací prvek zvuku  
- **Ovládací prvek zvuku:** akce na ovládacím prvku Audio HTML5 se správně se zaznamenávají a přehrát.  
+###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio Control  
+ **Ovládací prvek zvuku:** Akce na ovládacím prvku HTML5 Audio se správně zaznamenávají a přehrát.  
   
  ![Audio HTML5 se ovládací prvek](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
   
@@ -82,15 +77,15 @@ string Volume
   
 ```  
   
- **Prohledat vlastnosti:** vlastnosti hledání pro `HtmlAudio` jsou `Id`, `Name` a `Title`.  
+ **Vlastnosti hledání:** Vlastnosti hledání pro `HtmlAudio` jsou `Id`, `Name` a `Title`.  
   
- **Vlastnosti filtru:** vlastnosti filtru pro `HtmlAudio` jsou `Src`, `Class`, `ControlDefinition` a `TagInstance`.  
+ **Vlastnosti filtru:** Vlastnosti filtru pro `HtmlAudio` jsou `Src`, `Class`, `ControlDefinition` a `TagInstance`.  
   
 > [!NOTE]
 >  Můžou být významné množství času pro hledání a pozastavit. Během přehrávání programového testu uživatelského rozhraní počká, až do zadaného času v `(TimeSpan)` před pozastavením zvuku. Pokud pomocí některé zvláštní okolnosti, určený čas uplynul před tím příkazu k pozastavení, bude vyvolána výjimka.  
   
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Ovládacího prvku video  
- **Ovládacího prvku Video:** akce na ovládacím prvku jako videa HTML5 správně se zaznamenávají a přehrát.  
+ **Ovládacího prvku Video:** Akce na ovládacím prvku jako videa HTML5 správně se zaznamenávají a přehrát.  
   
  ![Ovládací prvek jako videa HTML5](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
   
@@ -112,15 +107,15 @@ string VideoWidth
   
 ```  
   
- **Prohledat vlastnosti:** vlastnosti hledání pro `HtmlVideo` jsou `Id`, `Name` a `Title`.  
+ **Vlastnosti hledání:** Vlastnosti hledání pro `HtmlVideo` jsou `Id`, `Name` a `Title`.  
   
- **Vlastnosti filtru:** vlastnosti filtru pro `HtmlVideo` jsou `Src`, `Poster`, `Class`, `ControlDefinition` a `TagInstance`.  
+ **Vlastnosti filtru:** Vlastnosti filtru pro `HtmlVideo` jsou `Src`, `Poster`, `Class`, `ControlDefinition` a `TagInstance`.  
   
 > [!NOTE]
 >  Pokud rewind nebo rychlé převinutí vpřed videa pomocí-30s nebo +30s popisky, se budou agregovat hledání správný čas.  
   
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Posuvník  
- **Ovládací prvek posuvník:** akcí v ovládacím prvku posuvník HTML5 správně se zaznamenávají a přehrát.  
+ **Ovládací prvek posuvník:** Akce na ovládacím prvku posuvník HTML5 správně se zaznamenávají a přehrát.  
   
  ![Ovládací prvek posuvník HTML5](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
   
@@ -140,7 +135,7 @@ string ValueAsNumber
 ```  
   
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> Ovládací prvek ProgressBar  
- **Ovládací prvek ProgreesBar:** The ProgressBar je – interactable ovládací prvek. Můžete přidat kontrolní výrazy na `Value` a `Max` vlastnosti tohoto ovládacího prvku.  
+ **Ovládací prvek ProgreesBar:** Ovládací prvek ProgressBar je – interactable ovládací prvek. Můžete přidat kontrolní výrazy na `Value` a `Max` vlastnosti tohoto ovládacího prvku.  
   
  ![Ovládací prvek HTML5 ProgressBar](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
   
@@ -150,6 +145,3 @@ string ValueAsNumber
  [Vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Přizpůsobení programového testu UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
  [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

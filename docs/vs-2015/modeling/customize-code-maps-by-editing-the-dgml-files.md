@@ -1,12 +1,9 @@
 ---
 title: Přizpůsobení map kódu úpravou souborů DGML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -24,13 +21,13 @@ ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
 caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e370e805df8e3a6ee253e3560738e882a247d2de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af7778bc3f760c7a656522db50c14aea14abb905
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766366"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -306,7 +303,7 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-    <PropertyGet> :: = Identifikátor  
+    <PropertyGet> ::= Identifier  
   
     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   

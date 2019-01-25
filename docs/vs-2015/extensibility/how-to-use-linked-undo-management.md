@@ -1,28 +1,23 @@
 ---
-title: 'Postupy: použití správy propojená operace vrácení zpět | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použijte správu propojená operace vrácení zpět | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - linked undo management
 ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2a5da4b7c25ab97356798fe8c2db184982fc885d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 36eac328a711456d70f9656f7f021e3cb91c486e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764349"
 ---
-# <a name="how-to-use-linked-undo-management"></a>Postupy: použití správy propojená operace vrácení zpět
+# <a name="how-to-use-linked-undo-management"></a>Postupy: Použijte správu propojená operace vrácení zpět
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Propojená operace vrácení zpět mu umožní současně zpět stejné úpravy ve více souborech. Například změny souběžných textu do více souborů programu, jako je například soubor hlaviček a soubor jazyka Visual C++ je propojená operace vrácení zpět transakcí. Propojená operace vrácení zpět funkce je integrovaná do prostředí provádění správce akcí zpět a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> umožňuje manipulaci s tuto funkci. Propojená operace vrácení zpět je implementováno nadřazenou jednotku, která můžete propojit samostatné zpět zásobníky dohromady a považovány za celek jedno vrácení zpět. Postup pro používání propojená operace vrácení zpět je podrobně popsán v následující části.  
@@ -36,11 +31,10 @@ Propojená operace vrácení zpět mu umožní současně zpět stejné úpravy 
 3.  Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> vrátit zpět všechny jednotky propojená operace vrácení zpět jako jeden.  
   
     > [!NOTE]
-    >  Implementace správy propojená operace vrácení zpět v editoru, přidáte zpět správy. Další informace o implementaci správy propojená operace vrácení zpět, najdete v části [postupy: implementace zpět správu](../extensibility/how-to-implement-undo-management.md).  
+    >  Implementace správy propojená operace vrácení zpět v editoru, přidáte zpět správy. Další informace o implementaci správy propojená operace vrácení zpět, najdete v části [jak: Implementace správy zpět](../extensibility/how-to-implement-undo-management.md).  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms682151)   
  [IOleUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms678476)   
- [Postupy: Implementace správy příkazu Zpět](../extensibility/how-to-implement-undo-management.md)
-
+ [Postupy: Implementace správy zpět](../extensibility/how-to-implement-undo-management.md)

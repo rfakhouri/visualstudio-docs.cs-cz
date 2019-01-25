@@ -1,14 +1,9 @@
 ---
 title: Implementace barevného zvýrazňování syntaxe | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765329"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementace barevného zvýrazňování syntaxe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Když služba jazyka nabízí barevné zvýrazňování syntaxe, analyzátor př
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] analyzátor rozhraní, neurčuje a implementaci analyzátoru je zcela na vás. Výchozí implementace analyzátor však je součástí projektu Visual Studio jazykový balíček. Pro spravovaný kód framework spravovaného balíčku (MPF) poskytuje úplnou podporu pro barevné zvýrazňování textu.  
   
- Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace barevné zvýrazňování syntaxe, naleznete v tématu [návod: zvýraznění textu](../../extensibility/walkthrough-highlighting-text.md).  
+ Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace barevné zvýrazňování syntaxe, naleznete v tématu [názorný postup: Zvýraznění textu](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
 >  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
@@ -70,8 +65,7 @@ Když služba jazyka nabízí barevné zvýrazňování syntaxe, analyzátor př
  Rozhraní spravovaného balíčku (MPF) poskytuje všechny třídy, které jsou nutné k implementaci colorizer. Vaše třída jazyka služby by měla dědit <xref:Microsoft.VisualStudio.Package.LanguageService> třídy a implementuje požadované metody. Musíte zadat analyzátor a skener implementací <xref:Microsoft.VisualStudio.Package.IScanner> rozhraní a vracet instanci rozhraní z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> – metoda (jedné z metod, které je třeba implementovat v <xref:Microsoft.VisualStudio.Package.LanguageService> třídy). Další informace najdete v tématu [barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [Postupy: Použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [Vlastní položky které lze zabarvit](../../extensibility/internals/custom-colorable-items.md)   
  [Vývoj služby starší verze jazyka](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

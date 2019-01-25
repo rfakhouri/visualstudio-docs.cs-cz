@@ -11,17 +11,17 @@ helpviewer_keywords:
 - registry keys [Office development in Visual Studio]
 - application-level add-ins [Office development in Visual Studio], registry entries
 - registry entries [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8360194e9efc59634162781fd3b4e0787c1c3260
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909109"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870162"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Položky registru pro doplňky VSTO
   Při nasazení doplňků VSTO, které jsou vytvořené pomocí sady Visual Studio, musíte vytvořit konkrétní sady položek registru. Tyto položky registru poskytují informace, které umožní aplikaci Microsoft Office zjišťovat a načíst doplňku VSTO.  
@@ -62,7 +62,7 @@ ms.locfileid: "53909109"
 |32bitová|*Kořenové*\Software\Microsoft\Office\\*název_aplikace*\Addins\\*ID doplňku*|  
 |64bitových|*Kořenové*\Software\Wow6432Node\Microsoft\Office\\*název_aplikace*\Addins\\*ID doplňku*|  
   
- **Aplikace Visio**  
+ **Visio**  
   
 |Verze Office|Konfigurační cesta|  
 |--------------------|------------------------|  

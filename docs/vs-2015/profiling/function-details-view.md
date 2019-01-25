@@ -1,14 +1,9 @@
 ---
 title: Zobrazení podrobností funkce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6f2246cfe9eb2ae9ae6641ca316db440f153f92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784467"
 ---
 # <a name="function-details-view"></a>Zobrazení podrobností funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,6 +114,3 @@ ms.locfileid: "51799584"
 |-|-|  
 |**Celkově sporů (sporů)**|-U **volání funkce**, počet prostředků kolizní události, ke kterým došlo v instancích vybrané funkce, která volá funkci. Číslo obsahuje kolizní události ve funkcích, které vybrané funkce volána.<br />– **Tělo funkce**, celkový počet kolizní události, ke kterým došlo při provádění vlastní kód funkce. Kolizí, ke kterým dochází ve funkcích, které byly volány vybranou funkcí nejsou zahrnuty.<br />-Pro volaná funkce číslo kolizní události, ke kterým došlo v instanci funkce, které byly volány vybranou funkcí. Číslo obsahuje kolizní události, ke kterým došlo ve funkcích, které funkce volána.|  
 |**Celkový čas (čas zablokování) zablokování**|-Pro volání funkce čas, který byl stráven v prostředku kolize, že události pro instance vybrané funkce, které funkce volána. Čas obsahuje čas zablokování ve funkcích, které vybraná funkce volána.<br />– **Tělo funkce**, celkový čas, který byl stráven v kolizní události, ke kterým došlo při provádění vlastní kód funkce. Kolizí, ke kterým dochází v funkce, které volaly vybrané funkce nejsou zahrnuty.<br />-Pro volaná funkce čas, který se využilo na události kolize prostředků pro instance funkce, která vybrané funkce volána. Čas obsahuje čas zablokování, ke které došlo ve funkcích, které funkce volána.|
-
-
-

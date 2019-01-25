@@ -1,27 +1,22 @@
 ---
 title: Zjištění požadavků na systém | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ba755fc43fa3db634209b5c3e405dc6794c26ded
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798684"
 ---
 # <a name="detecting-system-requirements"></a>Zjištění požadavků na systém
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,8 +45,7 @@ VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Kdy
 |Visual Studio 2015 Shell (integrovaný režim a izolovaný režim)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detecting-when-visual-studio-is-running"></a>Zjištění, kdy je spuštěná sada Visual Studio  
- Vaše VSPackage nelze správně zaregistrovány, pokud je spuštěná sada Visual Studio při instalaci sady VSPackage. Instalační program musí rozpoznat, kdy je spuštěná sada Visual Studio a pak odmítnout instalaci programu. Instalační služby systému Windows neumožňuje použití položky tabulky k povolení takovéto zjišťování. Místo toho musíte vytvořit vlastní akci, následujícím způsobem: použití `EnumProcesses` funkce pro detekci proces devenv.exe a potom buď nastavit vlastnost Instalační program, který se používá v podmínce spuštění nebo podmíněně zobrazit dialogové okno, které se zobrazí výzva k zavření Visual Studio.  
+ Vaše VSPackage nelze správně zaregistrovány, pokud je spuštěná sada Visual Studio při instalaci sady VSPackage. Instalační program musí rozpoznat, kdy je spuštěná sada Visual Studio a pak odmítnout instalaci programu. Instalační služby systému Windows neumožňuje použití položky tabulky k povolení takovéto zjišťování. Místo toho musíte vytvořit vlastní akci, následujícím způsobem: Použití `EnumProcesses` funkce pro detekci proces devenv.exe a potom buď nastavit vlastnost Instalační program, který se používá v podmínce spuštění nebo podmíněně zobrazit dialogové okno, které se zobrazí výzva k zavřete sadu Visual Studio.  
   
 ## <a name="see-also"></a>Viz také  
  [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

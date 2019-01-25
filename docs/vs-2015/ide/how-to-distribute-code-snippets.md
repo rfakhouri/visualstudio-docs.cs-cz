@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: distribuce fragmentů kódu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Distribuce fragmentů kódu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799029"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Postupy: Distribuce fragmentů kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Můžete jednoduše poskytnout fragmenty svého kódu přátelům a nechat nains
  Chcete-li vytvořit rozšíření sady Visual Studio je nutné nainstalovat sadu Visual Studio SDK. Najít verzi nástroje VSSDK, který odpovídá vaší instalaci sady Visual Studio na [Visual Studio 2015 ke stažení](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  
   
 ## <a name="setting-up-the-extension"></a>Nastavení rozšíření  
- V tomto postupu použijeme stejný fragmentu kódu Hello World vytvořené v [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Jsme dodá .snippet text, takže není nutné vrátit zpět a si ho.  
+ V tomto postupu použijeme stejný fragmentu kódu Hello World vytvořené v [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Jsme dodá .snippet text, takže není nutné vrátit zpět a si ho.  
   
 1.  Vytvořte nový projekt VSIX s názvem **TestSnippet**. (**Soubor / nový / Project / Visual C# (nebo Visual Basic / rozšíření**)  
   
@@ -109,6 +104,3 @@ Můžete jednoduše poskytnout fragmenty svého kódu přátelům a nechat nains
   
 ## <a name="see-also"></a>Viz také  
  [Fragmenty kódu](../ide/code-snippets.md)
-
-
-

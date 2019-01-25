@@ -1,31 +1,26 @@
 ---
-title: 'Návod: Ukládání uživatelských nastavení na úvodní stránce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Ukládání uživatelských nastavení na úvodní stránce | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763295"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799130"
 ---
-# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Návod: Ukládání uživatelských nastavení na úvodní stránce
+# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Průvodce: Ukládání uživatelských nastavení na úvodní stránce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zachování uživatelského nastavení pro úvodní stránku. Podle tohoto postupu můžete vytvořit ovládací prvek, který se nastavení uloží do registru, když uživatel klikne na tlačítko a pak načte nastavení pokaždé, když se načte úvodní stránky. Vzhledem k tomu, že šablona projektu úvodní stránka obsahuje přizpůsobitelný uživatelského ovládacího prvku a výchozí spuštění stránky XAML volá tento ovládací prvek, není nutné upravit vlastní úvodní stránky.  
   
- Nastavení úložiště, která je vytvořena instance v tomto návodu je instance <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> rozhraní, která čte a zapisuje do následujícího umístění registru, když je volána: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  
+ Nastavení úložiště, která je vytvořena instance v tomto návodu je instance <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> rozhraní, která čte a zapisuje do následujícího umístění registru, když je volána: HKCU\Software\Microsoft\VisualStudio\14.0\\*CollectionName*  
   
  Když je spuštěn v experimentální instanci sady Visual Studio, úložiště nastavení čte a zapisuje do HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName.*  
   
@@ -50,11 +45,11 @@ Zachování uživatelského nastavení pro úvodní stránku. Podle tohoto postu
   
     -   EnvDTE80  
   
-    -   Sestavení Microsoft.VisualStudio.OLE.Interop  
+    -   Microsoft.VisualStudio.OLE.Interop  
   
     -   Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  Otevřete MyControl.xaml.  
+3.  Open MyControl.xaml.  
   
 4.  Z podokna XAML na nejvyšší úrovni <xref:System.Windows.Controls.UserControl> definice prvku, přidejte následující deklarace události po deklarace oboru názvů.  
   
@@ -165,7 +160,7 @@ Zachování uživatelského nastavení pro úvodní stránku. Podle tohoto postu
   
      Tím se nastaví na název úvodní stránky jak se má zobrazit v **přizpůsobit úvodní stránku** v seznamu **možnosti** dialogové okno.  
   
-9. Vytvářejte StartPage.xaml.  
+9. Build StartPage.xaml.  
   
 ## <a name="testing-the-control"></a>Testování ovládacího prvku  
   
@@ -179,7 +174,7 @@ Zachování uživatelského nastavení pro úvodní stránku. Podle tohoto postu
   
 3.  V **prostředí** uzel, klikněte na tlačítko **spuštění**a pak na **přizpůsobit úvodní stránku** seznamu vyberte **[nainstalované rozšíření] uložit Moje nastavení úvodní stránka** .  
   
-     Klikněte na tlačítko **OK**.  
+     Klikněte na **OK**.  
   
 4.  Zavřít úvodní stránku, pokud je otevřený a potom na **zobrazení** nabídky, klikněte na tlačítko **úvodní stránka**.  
   
@@ -210,4 +205,3 @@ Zachování uživatelského nastavení pro úvodní stránku. Podle tohoto postu
  <xref:EnvDTE80.DTE2?displayProperty=fullName>   
  [Vytvoření vlastní úvodní stránky](../misc/creating-your-own-start-page.md)   
  [Přidání příkazů sady Visual Studio na úvodní stránku](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
-

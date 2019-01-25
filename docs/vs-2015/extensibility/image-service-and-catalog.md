@@ -1,21 +1,17 @@
 ---
 title: Služba vyhledávání a katalog obrázků | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0e01d60bd7fab0b435f1b10ae744c3454aa0e44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1cd4b752bff98555159a751a04c1afbbd12a4bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774364"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768704"
 ---
 # <a name="image-service-and-catalog"></a>Služba vyhledávání a katalog obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,8 +105,8 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Dílčí element**|**Definice**|  
-|Importovat|Importuje symboly daný soubor manifestu pro použití v aktuální manifestu|  
-|identifikátor GUID|Symbol představuje identifikátor GUID a musí odpovídat identifikátoru GUID formátování|  
+|Import|Importuje symboly daný soubor manifestu pro použití v aktuální manifestu|  
+|Guid|Symbol představuje identifikátor GUID a musí odpovídat identifikátoru GUID formátování|  
 |ID|Symbol představuje ID a musí být nezáporné celé číslo|  
 |String|Symbol představuje hodnotu libovolný řetězec|  
 
@@ -151,7 +147,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|identifikátor GUID|[Povinné] Část GUID moniker obrázku.|  
+|Guid|[Povinné] Část GUID moniker obrázku.|  
 |ID|[Povinné] ID část moniker obrázku.|  
 |AllowColorInversion|[Volitelné, výchozí hodnota true] Určuje, jestli obrázek může mít jeho barvy programově obrácený v tmavém pozadí.|  
 
@@ -169,8 +165,8 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Atribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definice**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      Identifikátor URI      |                                                                                                                                                                                                                                                                                                               [Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) používání aplikace pro: / / / / / autority<br />Odkaz na prostředek – absolutní komponenty<br />– Cesta k souboru, který obsahuje nativní prostředky                                                                                                                                                                                                                                                                                                               |
-|  Pozadí   | [Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> *Světle:* zdroj jde použít na světla na pozadí.<br /><br /> <em>Tmavý:</em>zdroj je možné v tmavém pozadí.<br /><br /> *Funkce Vysoký kontrast:* zdroj jde použít na jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastLight:* zdroj je možné na pozadí světla v režimu vysokého kontrastu.<br /><br /> *HighContrastDark:* zdroj je možné v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud je atribut pozadí vynechán, zdroj je možné na jakékoli na pozadí.<br /><br /> Pokud je na pozadí *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, se nikdy převrátí zdroje na barvy. Pokud je vynechán nebo nastaven na pozadí *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut. |
+|      Uri      |                                                                                                                                                                                                                                                                                                               [Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) používání aplikace pro: / / / / / autority<br />Odkaz na prostředek – absolutní komponenty<br />– Cesta k souboru, který obsahuje nativní prostředky                                                                                                                                                                                                                                                                                                               |
+|  Pozadí   | [Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> *Světle:* Zdroj lze použít v světla na pozadí.<br /><br /> <em>Tmavý:</em>zdroj je možné v tmavém pozadí.<br /><br /> *Funkce Vysoký kontrast:* Zdroj lze použít v jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastLight:* Zdroj lze použít v světla na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastDark:* Zdroj lze použít v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud je atribut pozadí vynechán, zdroj je možné na jakékoli na pozadí.<br /><br /> Pokud je na pozadí *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, se nikdy převrátí zdroje na barvy. Pokud je vynechán nebo nastaven na pozadí *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  A \<zdroj > prvek může mít nastavený právě jeden z následující volitelné dílčí prvky:  
@@ -209,7 +205,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|identifikátor GUID|[Povinné] Část GUID moniker obrázku.|  
+|Guid|[Povinné] Část GUID moniker obrázku.|  
 |ID|[Povinné] ID část moniker obrázku.|  
 |Externí|[Volitelné, výchozí hodnota je false] Určuje, zda moniker bitové kopie odkazuje na obrázek v aktuální manifestu.|  
 
@@ -244,7 +240,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 
     -   Povinné, pokud používáte **BrushToColorConverter** pro ImageThemingUtilities. **ImageBackgroundColor** v uživatelském rozhraní WPF  
 
--   **Microsoft.VisualStudio.Shell. \<VSVersion >.0**  
+-   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
     -   Povinné, pokud používáte **IVsUIObject** typu  
 
@@ -404,7 +400,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 ```  
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Jak použít obraz monikery v novém okně nástroje?  
- Šablona projektu VSIX balíček byl aktualizovaný pro Visual Studio 2015. K vytvoření nového okna nástroje, klikněte pravým tlačítkem na projekt VSIX a vyberte "Přidat novou položku..." (Ctrl + Shift + A). V uzlu rozšíření pro jazyk projektu, vyberte "Vlastního panelu nástrojů," panel nástrojů pojmenujte a klikněte na tlačítko "Přidat".  
+ Šablona projektu VSIX balíček byl aktualizovaný pro Visual Studio 2015. K vytvoření nového okna nástroje, klikněte pravým tlačítkem na projekt VSIX a vyberte "Přidat novou položku..." (Ctrl+Shift+A). V uzlu rozšíření pro jazyk projektu, vyberte "Vlastního panelu nástrojů," panel nástrojů pojmenujte a klikněte na tlačítko "Přidat".  
 
  Jedná se o klíčových místa k použití zástupných názvů v panelu nástrojů. Postupujte podle pokynů pro každou:  
 
@@ -961,7 +957,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphDialogId||Dialogové okno|  
         |GlyphOpenFolder||FolderOpened|  
         |GlyphClosedFolder||FolderClosed|  
-        |GlyphArrow||Přejít na další|  
+        |GlyphArrow||GoToNext|  
         |GlyphCSharpFile||CSFileNode|  
         |GlyphCSharpExpansion||Fragment kódu|  
         |GlyphKeyword||IntellisenseKeyword|  
@@ -971,7 +967,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlItem||Značka|  
         |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||Dokument|  
-        |GlyphForwardType||Přejít na další|  
+        |GlyphForwardType||GoToNext|  
         |GlyphCallersGraph||CallTo|  
         |GlyphCallGraph||CallFrom|  
         |GlyphWarning||StatusWarning|  
@@ -984,7 +980,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphExtensionMethodProtected||ExtensionMethod|  
         |GlyphExtensionMethodPrivate||ExtensionMethod|  
         |GlyphExtensionMethodShortcut||ExtensionMethod|  
-        |GlyphXmlAttribute||Atributy XmlAttribute|  
+        |GlyphXmlAttribute||XmlAttribute|  
         |GlyphXmlChild||Třída XmlElement|  
         |GlyphXmlDescendant||XmlDescendant|  
         |GlyphXmlNamespace||XmlNamespace|  
@@ -995,4 +991,3 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
         |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
         |GlyphCompletionWarning||IntellisenseWarning|
-

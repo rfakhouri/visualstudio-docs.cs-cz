@@ -1,26 +1,21 @@
 ---
 title: Základy typů projektů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5a719ea26473874cb0d771b46ee05ea15092fb17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdb6aabe2e7379c063e7347389deb467d724be3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794577"
 ---
 # <a name="project-type-essentials"></a>Základy typů projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51746459"
   
 - Typy projektů jsou objekty v sadě VSPackage, implementující sadu rozhraní [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] očekává. Pokud používáte C# na vývoj typu projektu, projektu třídy Managed Package Framework implementovat rozhraní potřebná pro vás a umožňují dědit tuto implementaci. Další informace najdete v tématu [pomocí Managed Package Framework pro implementaci typu projektu (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
-- Pro vývojáře v jazyce C++ tříd v knihovně HierUtil pracovní podobným způsobem. Další informace najdete v tématu [není v sestavení: použití třídy HierUtil7 projektu k implementaci typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- Pro vývojáře v jazyce C++ tříd v knihovně HierUtil pracovní podobným způsobem. Další informace najdete v tématu [není v sestavení: Použití HierUtil7 projektu třídy k implementaci typu projektu (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
 - Typy projektů může podporovat dat než typické zdrojové soubory sestavení do sestavení .exe nebo .dll. Například [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] databázové projekty obsahují odkazy na skript a dotaz soubory uložené na disku a přidání příkazů pro **Průzkumníka řešení** ke spuštění skriptů a dotazy na databázi, ale projektů nepodporují chování sestavení. Další informace najdete v tématu [otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
   
@@ -73,4 +68,3 @@ ms.locfileid: "51746459"
   
 ## <a name="see-also"></a>Viz také  
  [Nasazování typů projektů](../../extensibility/internals/deploying-project-types.md)
-

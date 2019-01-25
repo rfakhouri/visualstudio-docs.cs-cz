@@ -1,13 +1,8 @@
 ---
 title: Začínáme s ladicím programem | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -18,13 +13,13 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763921"
 ---
 # <a name="getting-started-with-the-debugger"></a>Začínáme s ladicím programem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51771612"
 Ladicí program sady Visual Studio je snadno použitelné v jakémkoli jazyce. Tady vám ukážeme, jak ladit jednoduchý program C#, ale stejný postup můžete použít ke kódu v jiných jazycích, jako je například C++ a JavaScript.  
   
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a> Ladění projektu základního jazyka C#  
- Začněme jednoduchou aplikaci konzoly C# (**soubor / nový / Project**a pak vyberte **Visual C#** a pak vyberte **konzolovou aplikaci**). Pokud jste nikdy nepracovali s Visual Studio před, naleznete v tématu [návod: vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Hlavní** metoda právě přičte 1 k celočíselná proměnná 10krát a vytiskne výsledek do konzoly:  
+ Začněme jednoduchou aplikaci konzoly C# (**soubor / nový / Project**a pak vyberte **Visual C#** a pak vyberte **konzolovou aplikaci**). Pokud jste nikdy nepracovali s Visual Studio před, naleznete v tématu [názorný postup: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Hlavní** metoda právě přičte 1 k celočíselná proměnná 10krát a vytiskne výsledek do konzoly:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -98,8 +93,3 @@ private static void Method1()
  Zastavit ladění a začít znovu a při provádění zastaví u zarážky, klikněte na tlačítko **ladění / krok přes** (nebo **Krokovat s přeskočením** na panelu nástrojů nebo **F10**). Spuštění znovu zasekne při `Console.WriteLine("end");`.  
   
  Pokud chcete získat další informace o navigace v kódu s ladicím programem, najdete v článku [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
-
-
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Spouštění testů jednotek pomocí Průzkumníka testů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805105"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,8 +130,8 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
   
 |Skupina|Popis|  
 |-----------|-----------------|  
-|**Doba trvání**|Seskupí testy podle času spuštění: **rychlé**, **střední**, a **pomalá**.|  
-|**Výsledek**|Seskupí testy podle výsledků spuštění: **neúspěšné testy**, **přeskočené testy**, **úspěšné testy**.|  
+|**Doba trvání**|Seskupí testy podle času spuštění: **Rychlé**, **střední**, a **pomalé**.|  
+|**Výsledek**|Skupiny testy podle výsledků spuštění: **Neúspěšné testy**, **přeskočeno testy**, **prošel testy**.|  
 |**Osobnostní rysy**|Seskupí testy podle kategorie nebo párových hodnot, které definujete. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|  
 |**Projekt**|Seskupí testy podle názvů projektů.|  
   
@@ -216,7 +211,7 @@ TEST_METHOD(Method1)
 |**Cesta k souboru**|Hledá plně kvalifikovaný název zdrojové soubory testů pro shody.|  
 |**Plně kvalifikovaný název**|Hledá plně kvalifikovaný název testovací obory názvů, tříd a metod pro shody.|  
 |**Output**|Prohledá uživatelem definované chybové zprávy, které jsou zapsány do standardního výstupního (stdout) nebo standardní chyby (stderr). Syntaxe pro určení výstupních zpráv je definována v rámci testovacího rozhraní jednotky.|  
-|**Výsledek**|Vyhledá názvy kategorií Průzkumníka testů pro shody: **neúspěšné testy**, **přeskočené testy**, **úspěšné testy**.|  
+|**Výsledek**|Vyhledá názvy kategorií Průzkumníka testů pro shody: **Neúspěšné testy**, **přeskočeno testy**, **prošel testy**.|  
   
  K vyloučení části výsledků filtru, použijte následující syntaxi:  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Externí prostředky  
   
 ###  <a name="BKMK_Guidance"></a> Doprovodné materiály  
- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: testování částí: testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Viz také  
  [Testování částí kódu](../test/unit-test-your-code.md)   
  [Spuštění testování částí v podobě 64bitového procesu](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Výběr strategie nasazení ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 54bf4f58a4cfe8622e12b3808ea9f36c8cf1ee49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 619d70b79d75cc45add0d541cd081d9ac0f258d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774040"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Výběr strategie nasazení ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../include
   
  Vzhledem k tomu, že tato strategie závisí na možnosti připojení k síti, je nejvhodnější pro aplikace, které budou nasazeny pro uživatele s přístupem k místní síti nebo s vysokorychlostním připojením k internetu.  
   
- Pokud nasazujete aplikace z webu, můžete předat argumenty do aplikace při aktivaci pomocí adresy URL. Další informace najdete v tématu [postupy: načtení informací řetězce dotazu do Online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Argumenty nelze předávat do aplikace, která se aktivuje pomocí jakýchkoli jiných metod popsaných v tomto dokumentu.  
+ Pokud nasazujete aplikace z webu, můžete předat argumenty do aplikace při aktivaci pomocí adresy URL. Další informace najdete v tématu [jak: Načtení informací řetězce dotazu do Online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Argumenty nelze předávat do aplikace, která se aktivuje pomocí jakýchkoli jiných metod popsaných v tomto dokumentu.  
   
  Chcete-li povolit tuto strategii nasazení v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], klikněte na tlačítko **z webu** nebo **ze sdílené složky UNC cestu nebo sdílená složka** na **způsob instalace** stránky v Průvodci publikováním.  
   
@@ -82,8 +77,5 @@ Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../include
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   
  [Výběr strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Zabezpečování aplikací ClickOnce](../deployment/securing-clickonce-applications.md)
-
-
-

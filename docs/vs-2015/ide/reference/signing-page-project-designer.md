@@ -1,14 +1,9 @@
 ---
 title: Stránka podepisování, Návrhář projektu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
 - ResolveKeySource.KeyFileForSignAssemblyNotImported
@@ -24,13 +19,13 @@ ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4aa8ee86032c4cadf9cbfa59d3db840102be669
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263937"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788723"
 ---
 # <a name="signing-page-project-designer"></a>Stránka Podepisování, návrhář projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
   
 ## <a name="application-and-deployment-manifest-signing"></a>Podepisování manifestů aplikace a nasazení  
  **Podepsání manifestů ClickOnce** zaškrtávací políčko  
- Vyberte toto zaškrtávací políčko k podepsání manifestů aplikace a nasazení pomocí dvojice veřejného/soukromého klíče. Další informace o tom, jak to provést, najdete v části [postupy: přihlášení aplikace a manifesty nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Vyberte toto zaškrtávací políčko k podepsání manifestů aplikace a nasazení pomocí dvojice veřejného/soukromého klíče. Další informace o tom, jak to provést, najdete v části [jak: Podepsání manifestů aplikace a nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md).  
   
  **Vybrat Store** tlačítko  
  Můžete vybrat existující certifikát z úložiště osobních certifikátů aktuálního uživatele. Můžete vybrat jednu z těchto certifikátů k podepsání manifestů vaší aplikace a nasazení.  
@@ -72,9 +67,9 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
   
 ## <a name="assembly-signing"></a>Podepisování sestavení  
  **Podepsat sestavení** zaškrtávací políčko  
- Vyberte toto zaškrtávací políčko k podepsání sestavení a vytvoření silným názvem souboru klíče. Další informace o podepisování sestavení s použitím **Návrháře projektu**, naleznete v tématu [postupy: podepsání sestavení (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Vyberte toto zaškrtávací políčko k podepsání sestavení a vytvoření silným názvem souboru klíče. Další informace o podepisování sestavení s použitím **Návrháře projektu**, naleznete v tématu [jak: Podepsání sestavení (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Tato volba používá nástroj Al.exe poskytované [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] k podepsání sestavení. Další informace o Al.exe najdete v tématu [postupy: podepsání sestavení silným názvem](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Tato volba používá nástroj Al.exe poskytované [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] k podepsání sestavení. Další informace o Al.exe najdete v tématu [jak: Podepsání sestavení silným názvem](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  **Vyberte soubor klíče se silným názvem** seznamu  
  Umožňuje zadat nový nebo existující silným názvem soubor s klíčem, který se používá k podepsání sestavení. Vyberte  **\<Procházet... >** a vyberte existující soubor klíče.  
@@ -97,11 +92,8 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   
  [Správa sestavení a podepsání manifestu](../../ide/managing-assembly-and-manifest-signing.md)   
- [Podepisování pro spravované aplikace silným názvem](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Postupy: podepsání manifestů aplikace a nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Postupy: podepsání sestavení (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Postupy: podepsání sestavení silným názvem](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Podepisování pro spravované aplikace silným názvem](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Postupy: Přihlášení aplikace a manifestů nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)   
+ [Postupy: Podepsání sestavení (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Postupy: Podepsání sestavení silným názvem](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [Sestavení se silným názvem](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
-
-
-

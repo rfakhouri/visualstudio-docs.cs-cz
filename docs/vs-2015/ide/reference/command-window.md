@@ -1,14 +1,9 @@
 ---
 title: Příkaz okno | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788344"
 ---
 # <a name="command-window"></a>Příkazové okno
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -128,11 +123,8 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  Stříška funguje stejně, ať už se jedná o vnitřní nebo vnější uvozovky. Pokud poslední znak na řádku stříška, je ignorován. Z příkladu ukazuje, jak vyhledat vzor "^ t".  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Nabídky použijte pro názvy cesty obsahující mezery  
- Pokud například chcete otevřít soubor, který obsahuje cestu obsahující mezery, je nutné umístit dvojité uvozovky kolem cestu nebo segment cesty, který obsahuje mezery: **C:\\"Program Files"** nebo **"C:\Program Files"**.  
+ Pokud například chcete otevřít soubor, který obsahuje cestu obsahující mezery, je nutné umístit dvojité uvozovky kolem cestu nebo segment cesty, který obsahuje mezery: **C:\\"Nainstalovány soubory programu"** nebo **"C:\Program Files"**.  
   
 ## <a name="see-also"></a>Viz také  
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
-
-
-

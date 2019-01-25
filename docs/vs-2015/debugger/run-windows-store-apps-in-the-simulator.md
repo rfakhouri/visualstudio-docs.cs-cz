@@ -1,14 +1,9 @@
 ---
 title: Aplikace Windows Store spustit v simulátoru | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 208a127e3b4afb791e7a61becd6ed50bbc66bc23
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766538"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Spouštění v simulátoru Windows Store apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -149,7 +144,7 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [Jak reagovat na události systému s úlohami na pozadí](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Jak reagovat na události systému s úlohami na pozadí](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
    [Jak aktivovat pozastavení, obnovení a události na pozadí v aplikacích Windows Store](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
@@ -160,6 +155,3 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
   
 ## <a name="see-also"></a>Viz také  
  [Spouštění aplikací ze sady Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
-
-
-

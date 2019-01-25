@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: vyhodnocení výrazu XPath | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vyhodnocení výrazu XPath | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210428"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804476"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Postupy: vyhodnocení výrazu XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Postupy: Vyhodnocení výrazu XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete si vyzkoušet výrazy XPath s **QuickWatch** dialogové okno. Výraz XPath musí být platný podle doporučení W3C XPath 1.0. Aktuální kontext XSLT – to znamená, `self::node()` uzlu v **lokální** okno – poskytuje kontext vyhodnocení výrazu XPath.  
@@ -35,7 +30,7 @@ Můžete si vyzkoušet výrazy XPath s **QuickWatch** dialogové okno. Výraz XP
 -   Uživatelem definované funkce nejsou podporovány.  
   
 > [!NOTE]
->  Následující postup používá belowAvg.xsl a books.xml soubory z [návod: ladění šablony stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tématu.  
+>  Následující postup používá belowAvg.xsl a books.xml soubory z [názorný postup: Ladění stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tématu.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Vyhodnocení výrazu XPath  
   
@@ -59,4 +54,3 @@ Můžete si vyzkoušet výrazy XPath s **QuickWatch** dialogové okno. Výraz XP
   
 ## <a name="see-also"></a>Viz také  
  [Ladění XSLT](../xml-tools/debugging-xslt.md)
-

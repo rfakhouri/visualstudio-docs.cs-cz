@@ -1,28 +1,23 @@
 ---
-title: 'Postupy: hostování editoru v jiném editoru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Hostování editoru v jiném editoru | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
 ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fead1aa7b1094fe5bcd1cac989b6853d3564b00b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38e47e918683d375f6a6baded2bf946a60020e64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803159"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776390"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>Postupy: hostování editoru v jiném editoru
+# <a name="how-to-host-an-editor-in-another-editor"></a>Postupy: Hostitel editoru v jiném editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V sadě Visual Studio, můžete hostovat jeden editor uvnitř jiného tak, že zadáte jako nadřazené okno hostitelského okna. Uděláte to tak, nastavte parametry <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> a <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> na podřízené okno rámce.  
@@ -45,4 +40,3 @@ V sadě Visual Studio, můžete hostovat jeden editor uvnitř jiného tak, že z
   
 ## <a name="robust-programming"></a>Robustní programování  
  **Návrháře aplikaci** v edici Visual Studio Team pro architekty je příkladem rám okna editoru hostování jiném editoru. **Návrháře aplikaci** hostitelem jiné návrháře v jeho pravého podokna. Panel návrháře (nebo **vlastnosti** stránky) pro každý z obsažených návrháře se přidá do nadřazeného rámu okna.
-

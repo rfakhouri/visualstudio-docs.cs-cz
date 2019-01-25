@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: použití okna zpětného překladu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití okna zpětného překladu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803329"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Postupy: Použití okna zpětného překladu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Tato funkce je dostupná jenom v případě, že je povoleno ladění na úrovni
   Pravděpodobně se nikdy máte touha nebo potřebujete zobrazíte pokyny strojového kódu v jejich a číselné formuláře, nikoli jazyk sestavení. Ale pokud chcete udělat, je použití okna paměť pro tento účel nebo zvolte kód bajtů z místní nabídky v okně zpětný překlad.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Chcete-li zobrazit okno zpětného překladu  
   
@@ -84,8 +79,3 @@ Tato funkce je dostupná jenom v případě, že je povoleno ladění na úrovni
 ## <a name="see-also"></a>Viz také  
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)   
  [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-

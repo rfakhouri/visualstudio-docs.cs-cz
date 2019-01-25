@@ -1,23 +1,21 @@
 ---
 title: Visual Studio data tools pro C++ | Dokumentace Microsoftu
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3a3849d9-1bc7-47d1-805e-1755223ccba2
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802369"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools pro C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +25,7 @@ Nativní kód C++ často poskytují nejrychlejší výkon při přístupu k zdro
   
  Pro připojení k SQL Database, můžete použít nativní aplikace C++ ovladače rozhraní ODBC a OLE DB a ADO poskytovatele, které jsou součástí Windows.     Ty můžete připojit k libovolné databázi, která podporuje těchto rozhraní. Ovladač ODBC je standardem. OLE DB je k dispozici z důvodu zpětné kompatibility. Další informace o těchto technologií ještě používáte dat najdete v tématu [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  
   
- Využijte vlastní funkce v systému SQL Server 2005 a novější, použijte [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733). Nativní klient také obsahuje ovladač ODBC systému SQL Server a SQL Server zprostředkovatele OLE DB v jedné nativní dynamické knihovny (DLL). Tato podpora aplikací rozhraní API nativního kódu (ODBC, Oledb a ADO) pro Microsoft SQL Server.  Nativní klient systému SQL Server nainstaluje SQL Server Data Tools. Průvodce programováním je tady: [SQL Server nativního klienta programování](https://msdn.microsoft.com/library/ms130892.aspx).  
+ Využijte vlastní funkce v systému SQL Server 2005 a novější, použijte [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733). Nativní klient také obsahuje ovladač ODBC systému SQL Server a SQL Server zprostředkovatele OLE DB v jedné nativní dynamické knihovny (DLL). Tato podpora aplikací rozhraní API nativního kódu (ODBC, Oledb a ADO) pro Microsoft SQL Server.  Nativní klient systému SQL Server nainstaluje SQL Server Data Tools. Průvodce programováním, je zde: [Programování serveru SQL Server Native Client](https://msdn.microsoft.com/library/ms130892.aspx).  
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Pro připojení na instanci localDB prostřednictvím rozhraní ODBC a jazyku SQL Native Client z aplikace v jazyce C++  
   
@@ -43,7 +41,7 @@ Nativní kód C++ často poskytují nejrychlejší výkon při přístupu k zdro
   
     ![SSMS připojit databáze](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS připojit databáze")  
   
-4. Stáhněte si ukázku Windows SDK rozhraní ODBC a rozbalte ho do nového umístění. Tento příklad ukazuje základní příkazy rozhraní ODBC, které se používají pro připojení k databázi a problém dotazy a příkazy. Další informace o těchto funkcích v [Microsoft připojení ODBC (Open Database)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Při prvním načtení řešení (je ve složce C++), Visual Studio nabídne upgrade řešení na aktuální verzi sady Visual Studio. Klikněte na tlačítko **Ano**.  
+4. Stáhněte si ukázku Windows SDK rozhraní ODBC a rozbalte ho do nového umístění. Tento příklad ukazuje základní příkazy rozhraní ODBC, které se používají pro připojení k databázi a problém dotazy a příkazy. Další informace o těchto funkcích v [Microsoft připojení ODBC (Open Database)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Při prvním načtení řešení (je ve složce C++), Visual Studio nabídne upgrade řešení na aktuální verzi sady Visual Studio. Klikněte na **Ano**.  
   
 5. Použití nativního klienta, budete potřebovat jeho hlavičkový soubor a soubor lib. Tyto soubory obsahují funkce a definice specifické pro SQL Server, nad rámec funkcí ODBC definované v sql.h. V **projektu** > **vlastnosti** > **adresáře VC ++**, přidejte adresář include následující:  
   
@@ -72,5 +70,3 @@ Nativní kód C++ často poskytují nejrychlejší výkon při přístupu k zdro
   
 ## <a name="see-also"></a>Viz také  
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-

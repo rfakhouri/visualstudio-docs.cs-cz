@@ -1,14 +1,9 @@
 ---
 title: Návrhář shaderů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805458"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |-----------------|--------------------|-------------------------------------------------|  
 |Orientovaný graf shaderu jazyka|.dgsl|Zobrazení pro úpravy|  
 |Shader HLSL (zdrojového kódu)|.hlsl|Export|  
-|Shader HLSL (bajtového kódu)|.CSO|Export|  
+|Shader HLSL (bajtového kódu)|.cso|Export|  
 |Hlaviček jazyka C++ (pole bajtového kódu HLSL)|.h|Export|  
   
 ## <a name="getting-started"></a>Začínáme  
@@ -73,7 +68,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 |Položka na panelu nástrojů|Popis|  
 |------------------|-----------------|  
-|**Vyberte**|Umožňuje interakci s uzly a hran do grafu. V tomto režimu můžete vybrat uzly a přesunout nebo odstranit, a můžete vytvořit okraje nebo rozdělit je.|  
+|**Výběr**|Umožňuje interakci s uzly a hran do grafu. V tomto režimu můžete vybrat uzly a přesunout nebo odstranit, a můžete vytvořit okraje nebo rozdělit je.|  
 |**Posouvání**|Umožňuje pohyb graf shaderu relativně k rámu okna. K posouvání vyberte bod na návrhové ploše a pohybujte jím.<br /><br /> V **vyberte** režimu, můžete stisknutím a podržením klávesy Ctrl aktivovat **Pan** dočasně režimu.|  
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů graf shaderu relativně k rámu okna. V **přiblížení** režimu, vyberte bod na návrhové ploše a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> V **vyberte** režimu, můžete stisknutím a podržením klávesy Ctrl přiblížení nebo oddálení použít kolečko myši.|  
 |**Přizpůsobit zobrazení**|Zobrazí graf úplné shaderu v rámci okna.|  
@@ -86,7 +81,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |**Náhled pomocí roviny**|Při povolení modelu rovinou slouží náhled shaderu. Je možné povolit tvar náhled pouze jeden po druhém.|  
 |**Panel nástrojů**|Střídavě zobrazí a skryje **nástrojů**.|  
 |**Vlastnosti**|Můžete také zobrazí nebo skryje **vlastnosti** okna.|  
-|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Exportovat**: umožňuje exportovat shader v různých formátech.<br /><br /> **Exportovat jako**: Exportuje shaderu jako zdrojový kód buď HLSL nebo jako hodnota bytecode funkce shader kompilované. Další informace o tom, jak exportovat shader, naleznete v tématu [postupy: exportování shaderu](../designers/how-to-export-a-shader.md).<br /><br /> **Grafické moduly**: umožňuje výběr renderer, který se používá k zobrazení návrhové ploše.<br /><br /> **Vykreslení s D3D11**: používá rozhraní Direct3D 11 k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Zobrazení**: umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Frekvence snímků**: Pokud povolená, zobrazí aktuální frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.  Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.|  
+|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Export**: Umožňuje exportovat shader v různých formátech.<br /><br /> **Exportovat jako**: Shader exportuje jako zdrojový kód buď HLSL nebo jako hodnota bytecode funkce shader kompilované. Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Exportovat Shader](../designers/how-to-export-a-shader.md).<br /><br /> **Grafické moduly**: Umožňuje výběr renderer, který se používá k zobrazení návrhové ploše.<br /><br /> **Vykreslení s D3D11**: Používá rozhraní Direct3D 11 k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: Používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Zobrazení**: Umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Frekvence snímků**: Pokud povolená, zobrazí aktuální frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.  Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.|  
   
 > [!TIP]
 >  Můžete použít **Upřesnit** tlačítko poslední příkaz spustit znovu.  
@@ -133,12 +128,12 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 |Parametr|Vlastnosti|  
 |---------------|----------------|  
-|**Textura 1** – **Texture – 8**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Název souboru**: úplná cesta soubor textury, který je spojen s registrem textur.|  
-|**Materiál okolí**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: rozptýlení barvy aktuálního pixelu kvůli nepřímé – nebo okolí – osvětlení.|  
-|**Materiál rozptýlení**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: barva, která popisuje, jak aktuální pixel rozptýlí přímé osvětlení.|  
-|**Vyzařující materiál**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: podíl barvy aktuálního pixelu kvůli svým zadaná osvětlení.|  
-|**Reflexní materiál**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: barva, která popisuje, jak aktuální pixel odráží přímé osvětlení.|  
-|**Materiál síla odlesku**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: exponent, který udává intenzitu zrcadlových odlesků na aktuální pixel.|  
+|**Textura 1** – **Texture – 8**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Název souboru**: Úplná cesta soubor textury, který je spojen s registrem textur.|  
+|**Materiál okolí**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Rozptýlení barvy aktuálního pixelu kvůli nepřímé – nebo okolí – osvětlení.|  
+|**Materiál rozptýlení**|**Přístup**: **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**:  Barva, která popisuje, jak aktuální pixel rozptýlí přímé osvětlení.|  
+|**Vyzařující materiál**|**Přístup**:                              **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Podíl barvy aktuálního pixelu kvůli svým zadaná osvětlení.|  
+|**Reflexní materiál**|**Přístup**:                              **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Barva, která popisuje, jak aktuální pixel odráží přímé osvětlení.|  
+|**Materiál síla odlesku**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Exponent, který udává intenzitu zrcadlových odlesků na aktuální pixel.|  
   
 #### <a name="time-based-effects"></a>Účinky podle času  
  Některé shadery mít komponentu podle času, která animuje efekt. Chcete-li zobrazit, jak účinek vypadá v praxi, verze preview musí být aktualizovány několikrát za sekundu. Ve výchozím nastavení ve verzi preview se aktualizují při změně shaderu; ke změně tohoto chování tak, aby se zobrazí podle času efekty, budete muset povolit vykreslování v reálném čase.  
@@ -159,7 +154,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
  Jako zdrojový kód HLSL nebo jako hodnota bytecode funkce shader kompilované můžete exportovat shadery. HLSL zdrojový kód je exportovat do textového souboru, který má příponu názvu souboru .hlsl. Hodnota bytecode funkce shader můžete exportovat Nezpracovaná binární soubor, který má příponu názvu souboru .cso nebo soubor hlaviček (.h) jazyka C++, který kóduje hodnota bytecode funkce shader do pole.  
   
- Další informace o tom, jak exportovat shader, naleznete v tématu [postupy: exportování shaderu](../designers/how-to-export-a-shader.md).  
+ Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Exportovat Shader](../designers/how-to-export-a-shader.md).  
   
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky  
   
@@ -175,8 +170,8 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |Oddálit|Ctrl kolečko myši dozadu<br /><br /> Znaménko minus (-)|  
 |Posunout nahoru na návrhovou plochu|Kolečko myši dozadu<br /><br /> PageDown|  
 |Posunout návrhové ploše dolů|Kolečko myši dopředu<br /><br /> PageUp|  
-|Posunout doleva návrhové ploše|Shift + kolečko myši dozadu<br /><br /> Kolečko myši doleva<br /><br /> Shift + PageDown|  
-|Posunout doprava návrhové ploše|Shift + kolečko myši dopředu<br /><br /> Kolečko myši doprava<br /><br /> SHIFT + PAGE UP|  
+|Posunout doleva návrhové ploše|Shift + kolečko myši dozadu<br /><br /> Kolečko myši doleva<br /><br /> Shift+PageDown|  
+|Posunout doprava návrhové ploše|Shift + kolečko myši dopředu<br /><br /> Kolečko myši doprava<br /><br /> Shift+PageUp|  
 |Přesunout fokus klávesnice pro jiný uzel|Klávesy se šipkami|  
 |Vyberte uzel, který má fokus klávesnice (přidá uzel do výběru skupiny)|SHIFT + MEZERNÍK|  
 |Přepnout výběr uzlu, který má fokus klávesnice|Ctrl + mezerník|  
@@ -193,6 +188,3 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Najdete zde přehled [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroje, které můžete použít pro práci s texturami a obrazy, 3D modely a efekty shaderu.|  
 |[Editor obrázků](../designers/image-editor.md)|Popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor obrázků pro práci s texturami a obrázky.|  
 |[Editor modelů](../designers/model-editor.md)|Popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru modelů pro práci s 3D modely.|
-
-
-

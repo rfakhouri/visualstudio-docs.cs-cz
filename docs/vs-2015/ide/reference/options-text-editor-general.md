@@ -1,14 +1,9 @@
 ---
 title: Možnosti, textový Editor, obecné | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
@@ -52,13 +47,13 @@ ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 47fb93aebeecf50ae20616fc47033be60724cd45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5ac63b183493b378fc0e1df454bc94a56722224f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794454"
 ---
 # <a name="options-text-editor-general"></a>Možnosti, textový editor, obecné
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ ms.locfileid: "49257826"
 Toto dialogové okno umožňuje měnit globální nastavení pro [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kódu a textovém editoru. Chcete-li zobrazit toto dialogové okno, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textový Editor** složku a pak klikněte na tlačítko **Obecné**.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Nastavení  
  Přetáhnout myší úpravy textu  
@@ -88,7 +83,7 @@ Toto dialogové okno umožňuje měnit globální nastavení pro [!INCLUDE[vsprv
   
 |Okraj výběru|Okraj výběru vypnuto|  
 |-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn screenshot](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![Snímek obrazovky HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
+|![HTMLpageSelectionMarginOn screenshot](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff screenshot](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
   
  Okraj indikátoru  
  Pokud je vybráno, zobrazí svislý okraj mimo levého okraje editoru textová oblast. Po kliknutí na toto rozpětí, zobrazí ikonu a popis, který se vztahují na text. Zarážky nebo úloha klávesové zkratky seznamu se zobrazí v okraj indikátoru. Informace o okraj indikátoru nevytiskne.  
@@ -109,6 +104,3 @@ Toto dialogové okno umožňuje měnit globální nastavení pro [!INCLUDE[vsprv
  [Identifikování a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)   
  [Používání atributu IntelliSense](../../ide/using-intellisense.md)
-
-
-

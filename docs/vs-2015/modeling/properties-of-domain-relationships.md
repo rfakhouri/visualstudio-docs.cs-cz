@@ -1,25 +1,22 @@
 ---
 title: Vlastnosti vztahů domény | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 ms.assetid: 9ccb3dc2-b80c-4585-932f-3c5f87bafbcd
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 48af74aa470f195c1cfbd49ffbabb37e2461251d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 56deef795d1b48dc1b49d8ab255fc7a4fbf7379e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767323"
 ---
 # <a name="properties-of-domain-relationships"></a>Vlastnosti vztahů domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,4 @@ Vlastnosti v následující tabulce jsou spojeny s doménovým vztahem. Informac
 |Klíčové slovo nápovědy|Nepovinné klíčové slovo, je použít k indexování nápovědy klávesy F1 pro doménový vztah.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

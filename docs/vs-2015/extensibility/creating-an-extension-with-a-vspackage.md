@@ -1,24 +1,19 @@
 ---
 title: Vytváření rozšíření pomocí VSPackage | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0077c891a300d81f05aec32930cb1ffda82c8d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774185"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Vytváření rozšíření pomocí VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Tento návod ukazuje, jak vytvořit projekt VSIX a přidejte položku projektu V
     public sealed class FirstPackage : Package  
     ```  
   
-2.  Přidejme zpráva, že získáme tak jistotu, že byl načten sady VSPackage. Metodu Initialize() sady VSPackage používáme k tomu, protože služby Visual Studio můžete získat až poté, co byly umístěny balíčku VSPackage. (Další informace o tom, jak služby najdete v tématu [postupy: získání služby](../extensibility/how-to-get-a-service.md).) Nahraďte metodu Initialize() FirstPackage kód, který získá <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> služby, získá <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> rozhraní a volání jeho <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> metoda.  
+2.  Přidejme zpráva, že získáme tak jistotu, že byl načten sady VSPackage. Metodu Initialize() sady VSPackage používáme k tomu, protože služby Visual Studio můžete získat až poté, co byly umístěny balíčku VSPackage. (Další informace o tom, jak služby najdete v tématu [jak: Získání služby](../extensibility/how-to-get-a-service.md).) Nahraďte metodu Initialize() FirstPackage kód, který získá <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> služby, získá <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> rozhraní a volání jeho <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> metoda.  
   
     ```csharp  
     protected override void Initialize()  
@@ -81,4 +76,3 @@ Tento návod ukazuje, jak vytvořit projekt VSIX a přidejte položku projektu V
 3.  Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.  
   
 4.  Otevřete řešení v experimentální instanci aplikace. Měli byste vidět okno se zprávou, že **první balíček uvnitř Initialize()**.
-

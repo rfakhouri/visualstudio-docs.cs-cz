@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a992621bc3311fa6dd9ca2703c00aa06d5998494
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d636b81c1080c9439f37fe6e53f7cfbff170ad93
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838856"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864017"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Sestavení v nástrojích Visual Studio Tools pro systém Office runtime
   Když vytvoříte projekt sady Office, Visual Studio automaticky přidá odkazy na [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sestavení, které se používají pro zvolený typ projektu a cílové rozhraní .NET Framework projektu. Existují různých sestaveních v rozšířeních Office pro rozhraní .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Další informace o rozšířeních sady Office naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).  

@@ -1,14 +1,9 @@
 ---
 title: Vytvoření a konfigurace členů typů (návrhář tříd) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,13 +29,13 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795300"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Vytváření a konfigurace členů typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +59,11 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
 |Úloha|Podpůrný obsah|  
 |----------|------------------------|  
-|**Začínáme:** předtím, než vytvoříte a nakonfigurujete členy typů, je nutné otevřít okno podrobností třídy.|-   [Otevření okna podrobností třídy](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [Poznámky k použití okna podrobností třídy](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [Zobrazení informací jen pro čtení](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [Klávesové zkratky a zkratky myši v diagramu tříd a okně podrobností třídy (návrhář tříd)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|  
-|**Vytvoření a úpravy členů typů:** můžete vytvořit nové členy, měnit členy a přidání parametrů do metody pomocí okna podrobností třídy.|-   [Vytváření členů](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Změna členů typů](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Přidávání parametrů k metodám](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
+|**Začínáme:** Než vytvoříte a nakonfigurujete členy typů, je nutné otevřít okno podrobností třídy.|-   [Otevření okna podrobností třídy](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [Poznámky k použití okna podrobností třídy](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [Zobrazení informací jen pro čtení](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [Klávesové zkratky a zkratky myši v diagramu tříd a okně podrobností třídy (návrhář tříd)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|  
+|**Vytvoření a úpravy členů typů:** Můžete vytvořit nové členy, měnit členy a přidání parametrů do metody pomocí okna podrobností třídy.|-   [Vytváření členů](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Změna členů typů](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Přidávání parametrů k metodám](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
   
 ##  <a name="OpenClassDetails"></a> Otevření okna podrobností třídy  
- Ve výchozím nastavení, v okně podrobností třídy zobrazí automaticky při otevření nový diagram tříd (viz [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Okno podrobností třídy můžete také otevřít explicitně následujícími způsoby.  
+ Ve výchozím nastavení, v okně podrobností třídy zobrazí automaticky při otevření nový diagram tříd (viz [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Okno podrobností třídy můžete také otevřít explicitně následujícími způsoby.  
   
 #### <a name="to-open-the-class-details-window"></a>Otevření okna podrobností třídy  
   
@@ -133,10 +128,10 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
 4.  Volitelně můžete určit další detaily členu, například jeho typ.  
   
-     **Poznámka:** klávesové zkratky můžete také použít k vytváření členů. Další informace najdete v tématu [klávesové zkratky a zkratky myši v diagramu tříd a okně podrobností třídy (návrhář tříd)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
+     **Poznámka:** Klávesové zkratky můžete také použít k vytváření členů. Další informace najdete v tématu [klávesové zkratky a zkratky myši v diagramu tříd a okně podrobností třídy (návrhář tříd)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ##  <a name="ModifyTypeMembers"></a> Změna členů typů  
- V Návrháři tříd můžete upravit členy typů, které se zobrazí v diagramu. Můžete upravit členy libovolného typu, které se zobrazí v diagramu třídy a nejsou jen pro čtení. (Viz [zobrazení informací jen pro čtení (návrhář tříd)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Členy typu změníte úpravou na místě na návrhové ploše, v okně Vlastnosti a v okně podrobností třídy  
+ V Návrháři tříd můžete upravit členy typů, které se zobrazí v diagramu. Můžete upravit členy libovolného typu, které se zobrazí v diagramu třídy a nejsou jen pro čtení. (Viz [zobrazení informací jen pro čtení (návrhář tříd)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Členy typu změníte úpravou na místě na návrhové ploše, v okně Vlastnosti a v okně podrobností třídy  
   
  Všechny členy zobrazené v okně podrobností třídy představují členy typů v diagramu třídy. Existují čtyři typy členů: metody, vlastnosti, pole a události.  
   
@@ -194,7 +189,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
  Řádky parametru obsahují následující položky:  
   
-- **Jméno**  
+- **Název**  
   
    **Název** sloupců na řádku parametru zobrazí název parametru. Tento název se také zobrazí v **název** vlastností v okně Vlastnosti. Tuto buňku můžete použít ke změně názvu jakéhokoli parametru, který má oprávnění pro čtení i zápis.  
   
@@ -204,7 +199,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
    **Typ parametru** buňky používá technologii Intellisense, která vám umožní vybrat si ze seznamu všech typů dostupných v aktuálním projektu nebo v odkazovaných projektech.  
   
-- **Modifikátor**  
+- **Modifier**  
   
    **Modifikátor** buňku na řádku parametru přijímá a zobrazuje nový modifikátor parametru. Pokud chcete zadat nový parametr modifikátoru, pomocí rozevíracího seznamu vyberte z **žádný**, **ref**, **si**, nebo **params** v C# a **ByVal**, **ByRef**, nebo **ParamArray** v jazyce VB.  
   
@@ -218,7 +213,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
   **Vlastnosti parametru v okně Vlastnosti**  
   
-  V okně Vlastnosti zobrazí stejné vlastnosti parametru v okně podrobností třídy: **název**, **typ**, **modifikátor**, **Souhrn**, jakož i **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.  
+  V okně Vlastnosti zobrazí stejné vlastnosti parametru v okně podrobností třídy: **Název**, **typ**, **modifikátor**, **Souhrn**, jakož i **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.  
   
 > [!NOTE]
 >  Chcete-li přidat parametr do delegáta, přečtěte si téma [vytváření členů](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,7 +263,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
  Všechny buňky v okně podrobností třídy jsou editovatelné, s několika výjimkami:  
   
-- Celý typ je jen pro čtení, když, například se nachází v odkazovaném sestavení (viz [zobrazení jen pro čtení informací (návrhář tříd)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Při výběru tvaru v Návrháři tříd, okno podrobností třídy zobrazí jeho detaily ve stavu jen pro čtení.  
+- Celý typ je jen pro čtení, když, například se nachází v odkazovaném sestavení (viz [zobrazení jen pro čtení informací (návrhář tříd)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Při výběru tvaru v Návrháři tříd, okno podrobností třídy zobrazí jeho detaily ve stavu jen pro čtení.  
   
 - V případě indexerů je název jen pro čtení a zbytek (typ, modifikátor, shrnutí) je editovatelný.  
   

@@ -1,25 +1,22 @@
 ---
 title: O jazycích specifických pro domény | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796884"
 ---
 # <a name="about-domain-specific-languages"></a>O jazycích specifických pro konkrétní domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +75,7 @@ Na rozdíl od pro obecné účely jazyka, jako je C# nebo UML jazyka specifické
 ### <a name="notation"></a>Zápis  
  Jazyka specifického pro doménu, musí mít poměrně malého počtu prvků, které lze snadno definované a rozšířená tak, aby představují konstrukce jazyka specifického pro doménu. Zápis se skládá z tvary, které zastupují elementy, a konektorů, které představují vztahy mezi elementy, na ploše Grafický diagram. V [!INCLUDE[dsl](../includes/dsl-md.md)], tvary můžou být dále rozšiřována a vylepšili o představují prvky jazyka specifického pro doménu.  
   
-### <a name="domain-model"></a>Doménový Model  
+### <a name="domain-model"></a>Domain Model  
  Jazyka specifického pro doménu obsahující kombinaci sadu elementů a vztahů mezi nimi do koherentního gramatiky. Musíte také definovat, zda kombinace různých typů elementů a vztahů jsou platné. Například programovacích jazyků obvykle zakázat Cyklické dědění, ve které jedna třída je odvozena z třídy sekundu a druhá třída je odvozena od třídy první. Omezení je také možné vyjádřit obchodní logiky, například jedna osoba nemůže být závislá aplikace sám. [!INCLUDE[dsl](../includes/dsl-md.md)] pomocí omezení express typy omezení, které vyžadují nejvíc jazyky specifickými pro doménu.  
   
 ### <a name="artifact-generation"></a>Generování artefaktu  
@@ -119,6 +116,3 @@ Na rozdíl od pro obecné účely jazyka, jako je C# nebo UML jazyka specifické
 -   Vedoucí softwarový vývojář nebo architekt nasadí vývojářům různé aplikace, které vytvoří tým jazyka specifického pro doménu.  
   
 -   Každý vývojář vytvoří model, který platí pro konkrétní aplikaci.
-
-
-

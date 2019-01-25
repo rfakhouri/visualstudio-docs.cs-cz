@@ -1,14 +1,9 @@
 ---
 title: Profilace v prostředí HPC (High Performance Computing) clusterů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802311"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilace v klastrech HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,17 +46,17 @@ Můžete provádět profilaci na výpočetních uzlech clusterů Microsoft Windo
   
 2.  Samostatné příkazového řádku zadejte následující příkazy:  
   
-    1.  `clusrun /all /scheduler:` *Hlavní uzel % % FxPath %* `/q /norestart`  
+    1.  `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
   
-    2.  `clusrun /all /scheduler:` *% Hlavního uzlu* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2.  `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
-    3.  `clusrun /all /scheduler:` *Hlavní uzel % % ProfilerPath %* `/q /norestart`  
+    3.  `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
 |||  
 |-|-|  
-|*% Hlavního uzlu*|Název hlavního uzlu clusteru.|  
+|*%HeadNode%*|Název hlavního uzlu clusteru.|  
 |*%FxPath%*|Cesta k [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] Instalační služby. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] instalačním médiu je cesta: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Cesta k verzi samostatného instalačního programu nástrojů pro profilaci sady. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] instalačním médiu je cesta: samostatná Profiler\x64\vs_profiler.exe|  
+|*%ProfilerPath%*|Cesta k verzi samostatného instalačního programu nástrojů pro profilaci sady. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] instalačním médiu je cesta: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilace do výpočetního uzlu HPC  
  Konfigurace relace profilování pomocí Průvodce výkonem HPC můžete určit informace o pro cluster a cílové prostředí HPC. Můžete nastavit další možnosti na stránkách vlastností relace výkonu. Nástroje pro profilaci automaticky nasadit binární soubory nezbytné cíl a spustit profiler a aplikací HPC.  
@@ -78,7 +73,7 @@ Můžete provádět profilaci na výpočetních uzlech clusterů Microsoft Windo
   
     -   Chcete-li Profilovat binární soubor, který není v otevřeném projektu vyberte **spustitelný soubor (. Soubor EXE)** možnost.  
   
-4.  Klikněte na tlačítko **Další**.  
+4.  Klikněte na **Další**.  
   
 5.  Na třetí stránce průvodce:  
   
@@ -90,7 +85,7 @@ Můžete provádět profilaci na výpočetních uzlech clusterů Microsoft Windo
   
     -   V **umístění nasazení**, zadejte cestu k adresáři, který používá HPC server do fáze imagí pro nasazení.  
   
-6.  Klikněte na tlačítko **Další**.  
+6.  Klikněte na **Další**.  
   
 7.  Na čtvrté stránce průvodce:  
   
@@ -104,7 +99,7 @@ Můžete provádět profilaci na výpočetních uzlech clusterů Microsoft Windo
   
          Chcete-li Profilovat proces nebo procesy, které běží na konkrétním uzlu v clusteru HPC, vyberte **profilu na uzlu** možnosti a pak vyberte uzel z rozevíracího seznamu.  
   
-8.  Klikněte na tlačítko **Další**.  
+8.  Klikněte na **Další**.  
   
 9. Na páté stránce průvodce můžete k okamžitému spuštění profileru a profilování procesu nebo spuštění profilování později pomocí prohlížeče výkonu.  
   
@@ -155,6 +150,3 @@ Můžete provádět profilaci na výpočetních uzlech clusterů Microsoft Windo
 |**Předem profilu argumenty skriptu**|Určuje argumenty předané skriptu předběžné profilu.|  
 |**Skript po profilu**|Určuje cestu a název souboru skriptu ke spuštění v místním vývojovém počítači po ukončení relace profilování.|  
 |**Argumenty skriptu po profilu**|Určuje argumenty předané skriptu po profilu.|
-
-
-

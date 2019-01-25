@@ -1,14 +1,9 @@
 ---
 title: Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku Profiler | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method
 - instrumentation profiling method
@@ -16,13 +11,13 @@ ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 89ca6cfb99fad4364c8e6a1e180821d5d547b7ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925794"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803946"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +28,8 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu p
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profilovat aplikaci rozhraní .NET Framework pomocí instrumentace**|-   [Jak: Instrumentace součásti .NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Profil aplikace v jazyce C/C++ pomocí instrumentace**|-   [Jak: Instrumentace nativní součásti a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profilovat aplikaci rozhraní .NET Framework pomocí instrumentace**|-   [Jak: Instrumentace součásti .NET a shromáždění podrobných dat časování](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profil aplikace v jazyce C/C++ pomocí instrumentace**|-   [Jak: Instrumentace součásti .NET a shromáždění podrobných dat časování](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Přidání dat interakce vrstev**|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
@@ -59,6 +54,3 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu p
   
 ## <a name="reference"></a>Odkaz  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Prostředí (izolované nebo integrované) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792571"
 ---
 # <a name="shell-isolated-or-integrated"></a>Prostředí (izolované nebo integrované)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Vytvoření sady Visual Studio na základě aplikace v režimu integrované nebo
  Integrované nebo izolované prostředí se aplikace dala distribuovat, budete muset zahrnout aplikace, speciální integrované nebo izolované prostředí distribuovatelné součásti a instalační program. Další informace o distribuci a instalaci najdete v tématu [distribuce aplikací izolovaného prostředí](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  [Licenční smlouvy koncovým uživatelem (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) pro Visual Studio integrované a izolované prostředí obsahuje oddíl na shromažďování dat (**části 3. Data**).  Popisuje zákaznická data využití, které může společnost Microsoft shromažďovat od uživatelů buď integrované nebo izolované prostředí softwaru, který jste vytvořili do vaší aplikace. Další informace najdete v tématu [prohlášení společnosti Microsoft Visual Studio Product řady](https://www.visualstudio.com/en-us/dn948229).  
+>  [Licenční smlouvy koncovým uživatelem (EULA)](https://www.visualstudio.com/support/legal/mt171552) pro Visual Studio integrované a izolované prostředí obsahuje oddíl na shromažďování dat (**části 3. Data**).  Popisuje zákaznická data využití, které může společnost Microsoft shromažďovat od uživatelů buď integrované nebo izolované prostředí softwaru, který jste vytvořili do vaší aplikace. Další informace najdete v tématu [prohlášení společnosti Microsoft Visual Studio Product řady](https://www.visualstudio.com/dn948229).  
 > 
 >  Budete-li shromažďovat data o využití samostatné od svých zákazníků prostřednictvím vaší aplikace, musíte zadat příslušné oznámení pro uživatele vaší aplikace můžete shromažďovat.  Při distribuci softwaru izolované nebo integrované prostředí v rámci vaší aplikace, podle této licence Visual Studio Software Development Kit, musí obsahovat jednu z následujících akcí:  
 > 
@@ -64,4 +59,3 @@ Vytvoření sady Visual Studio na základě aplikace v režimu integrované nebo
   
 ## <a name="see-also"></a>Viz také  
  [Odesílání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

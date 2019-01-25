@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: určení souborů k publikování aplikací ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Určení souborů k publikování aplikací ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776323"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Postupy: Určení souborů k publikování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] spolu 
   
 -   Datové soubory, jako je SQL databáze (MDF a MDB) a soubory XML se označí jako data souborů ve výchozím nastavení.  
   
--   Odkazy na sestavení (soubory .dll), jsou určené následujícím způsobem, když přidáte odkaz na: Pokud **Kopírovat místně** je **False**, je označena ve výchozím nastavení jako požadované sestavení (**požadovaných součástí ( Automaticky)**), který musí být k dispozici v mezipaměti GAC, předtím, než se aplikace nainstaluje. Pokud **Kopírovat místně** je **True**, je sestavení označeno ve výchozím nastavení jako sestavení aplikace (**Include (Auto)**) a budou zkopírovány do složky aplikace během instalace. Odkaz modelu COM se zobrazí v **soubory aplikace** dialogové okno pole (jako soubor .ocx) pouze v případě jeho **izolované** je nastavena na **True**. Ve výchozím nastavení bude součástí.  
+-   Když přidáte odkaz na, jsou odkazy na sestavení (soubory .dll) určené následujícím způsobem: Pokud **Kopírovat místně** je **False**, je označena ve výchozím nastavení jako požadované sestavení (**předpoklad (automaticky)**), který musí být k dispozici v mezipaměti GAC, předtím, než se aplikace nainstaluje. Pokud **Kopírovat místně** je **True**, je sestavení označeno ve výchozím nastavení jako sestavení aplikace (**Include (Auto)**) a budou zkopírovány do složky aplikace během instalace. Odkaz modelu COM se zobrazí v **soubory aplikace** dialogové okno pole (jako soubor .ocx) pouze v případě jeho **izolované** je nastavena na **True**. Ve výchozím nastavení bude součástí.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Chcete-li přidat soubory do dialogového okna aplikace soubory  
   
@@ -124,6 +119,3 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] spolu 
 ## <a name="see-also"></a>Viz také  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Postupy: Publikování aplikace ClickOnce pomocí průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

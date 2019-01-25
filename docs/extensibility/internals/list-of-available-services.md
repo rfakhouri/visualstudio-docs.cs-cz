@@ -11,20 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964634"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800953"
 ---
 # <a name="list-of-available-services"></a>Seznam dostupných služeb
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a Visual Studio SDK podporují tyto služby. Některé balíčky nabízí vlastní služby, které zde nejsou uvedeny – například jazykových služeb nemají jedinou službou identifikátor GUID. Název jazyka, musíte použít k vyhledání identifikátoru GUID služby jazyka v registru.  
-  
- Použijte identifikátory GUID služby uvedené nebo získané z nějakého jiného zdroje (například jazykových služeb) k získání primární rozhraní nebo rozhraní zobrazené u jednotlivých služeb.  
-  
-## <a name="the-services"></a>Služby  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a Visual Studio SDK podporují tyto služby. Některé balíčky nabízí vlastní služby, které zde nejsou uvedeny – například jazykových služeb nemají jedinou službou identifikátor GUID. Název jazyka, musíte použít k vyhledání identifikátoru GUID služby jazyka v registru.
+
+Použijte identifikátory GUID služby uvedené nebo získané z nějakého jiného zdroje (například jazykových služeb) k získání primární rozhraní nebo rozhraní zobrazené u jednotlivých služeb.
+
+## <a name="the-services"></a>Služby
+
 | Služba | Rozhraní | Visual Studio | Visual Studio 2005 | Popis |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Ano | Ano | Používá k získání pomocí rozšíření VSPackages <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> rozhraní z ovládacího prvku ActiveX k usnadnění asynchronní datové přenosy. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964634"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Ano | Ano | Umožňuje VSPackage můžete přidat adresu URL do seznamu naposledy (použitých) adresy URL a k získání seznamu všech adres URL do seznamu naposledy použitých. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Ano | Ano | Umožňuje získat snímek okna, ve kterém se může nacházet balíčků nebo součástí balíčku VSPackage. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Ano | Ano | Poskytuje přístup k souborům ve formátu XML dokumentace přidružené k určité metadata souboru. |
-  
-## <a name="see-also"></a>Viz také  
- [COM a spravované služby](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Používání a poskytování služeb](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>Viz také:
+
+- [Používání a poskytování služeb](../../extensibility/using-and-providing-services.md)

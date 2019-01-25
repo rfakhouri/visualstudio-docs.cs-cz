@@ -1,27 +1,22 @@
 ---
-title: 'Postupy: připojení Profiler ke službě .NET ke shromažďování dat souběžnosti pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Připojit Profiler ke službě .NET ke shromažďování dat souběžnosti pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ffbdfe37-8325-44be-bd36-2c8aab2dec7b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b4f4d940f2bb65fe27c826e4ce06d1ead6626d37
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 34db2b987f64329ead90ab6570fd98b78eb4934f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756431"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799683"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Připojení profileru ke službě .NET ke shromažďování dat souběžnosti pomocí příkazového řádku
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Připojit Profiler ke službě .NET ke shromažďování dat souběžnosti pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci připojit Profiler k [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] služby a shromažďování dat souběžnosti pro procesů a vláken pomocí metody vzorkování.  
@@ -112,6 +107,3 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 2.  Vypněte profiler. Typ:  
   
      **Nástroj VSPerfCmd**[vypnutí](../profiling/shutdown.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Techniky ladění MFC | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 950252347de78839e7d0db979179de3a0818857f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745112"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781354"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniky ladění MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51745112"
 Pokud ladíte aplikace knihovny MFC, může být užitečné tyto techniky ladění.  
   
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
- [Afxdebugbreak –](#BKMK_AfxDebugBreak)  
+ [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [TRACE – makro](#BKMK_The_TRACE_macro)  
   
@@ -153,7 +148,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
   |Hodnota|Popis|  
   |-----------|-----------------|  
-  |**allocmemdf –**|Zapněte diagnostiku paměti alokátoru (výchozí).|  
+  |**allocMemDF**|Zapněte diagnostiku paměti alokátoru (výchozí).|  
   |**delayFreeMemDF**|Zpoždění uvolnění paměti při volání metody `delete` nebo `free` až do ukončení programu. To způsobí, že program k přidělení maximální množství paměti.|  
   |**checkAlwaysMemDF**|Volání [afxcheckmemory –](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) pokaždé, když je paměť přidělena nebo uvolněna.|  
   
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Pořizování snímků paměti  
   
-1. Vytvoření [cmemorystate –](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objektu a volání [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) členskou funkci. Tím se vytvoří první snímek paměti.  
+1. Vytvoření [cmemorystate –](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objektu a volání [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) členskou funkci. Tím se vytvoří první snímek paměti.  
   
 2. Poté, co váš program provede jeho operace přidělování a navracení zpět paměti, vytvořte další `CMemoryState` objektu a volání `Checkpoint` pro daný objekt. Načte druhý snímek využití paměti.  
   
@@ -443,9 +438,9 @@ pMyPerson->Dump( afxDump );
   
    1.  V  **\<Projekt > stránky vlastností** dialogové okno, klikněte na tlačítko **nástroje Configuration Manager** tlačítko.  
   
-   2.  V [dialogové okno nástroje Configuration Manager](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), vyhledejte svůj projekt v mřížce. V **konfigurace** sloupci vyberte  **\<nový … >**.  
+   2.  V [dialogové okno nástroje Configuration Manager](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), vyhledejte svůj projekt v mřížce. V **konfigurace** sloupci vyberte  **\<nový … >**.  
   
-   3.  V [dialogové okno Nový projekt konfigurace](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), zadejte název pro novou konfiguraci, jako je například "Částečné Debug", **název konfigurace projektu** pole.  
+   3.  V [dialogové okno Nový projekt konfigurace](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), zadejte název pro novou konfiguraci, jako je například "Částečné Debug", **název konfigurace projektu** pole.  
   
    4.  V **Kopírovat nastavení z** klikněte na položku **vydání**.  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>Viz také  
  [Ladění jazyka Visual C++](../debugger/debugging-native-code.md)
-
-
-

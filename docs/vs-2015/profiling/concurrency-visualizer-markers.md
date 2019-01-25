@@ -1,27 +1,22 @@
 ---
 title: Značky Vizualizéru souběžnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4fa2a57d08f2b86fec573f02129a326907e3e3a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790445"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795344"
 ---
 # <a name="concurrency-visualizer-markers"></a>Značky Vizualizéru souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Ve Vizualizátor souběžnosti značky jsou ikony, které představují událost
   
 - [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
-- [Podpora značek scénáře](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Podpora značek scénáře](http://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
 - [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
@@ -69,10 +64,7 @@ Ve Vizualizátor souběžnosti značky jsou ikony, které představují událost
  Vizualizátor souběžnosti můžete také zobrazit událostí EventSource.  Další informace najdete v tématu [vizualizace událostí EventSource v podobě značek](../profiling/visualizing-eventsource-events-as-markers.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Značky příznaků](../profiling/flag-markers.md)   
+ [Flag Markers](../profiling/flag-markers.md)   
  [Značky zpráv](../profiling/message-markers.md)   
- [Značky rozpětí](../profiling/span-markers.md)   
+ [Span Markers](../profiling/span-markers.md)   
  [Vizualizace událostí EventSource v podobě značek](../profiling/visualizing-eventsource-events-as-markers.md)
-
-
-

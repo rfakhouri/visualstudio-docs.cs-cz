@@ -1,29 +1,24 @@
 ---
-title: 'Postupy: vytvoření ovládacího prvku panel nástrojů, který používá Windows Forms | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření ovládacího prvku panel nástrojů, který používá Windows Forms | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1a303e18f573ab806687bf238fa5557ecd6e91fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787492"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Postupy: vytvoření ovládacího prvku panel nástrojů, který používá Windows Forms
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Postupy: Vytvoření ovládacího prvku panel nástrojů, který používá Windows Forms
 Šablony ovládacího prvku Windows Forms panel nástrojů, který je součástí [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umožňuje vytvořit ovládací prvky Windows Forms, které jsou automaticky přidány do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření **nástrojů** ovládacího prvku, které můžete distribuovat ostatním uživatelům...  
   
 > [!NOTE]
@@ -38,7 +33,7 @@ ms.locfileid: "49263715"
   
 2.  V **nový projekt** dialogovém okně **nainstalované šablony**, klikněte na uzel Upřednostňovaný programovací jazyk a potom klikněte na tlačítko **rozšiřitelnost**. V seznamu typů projektů, vyberte **ovládacího prvku Windows Forms panel nástrojů**.  
   
-3.  V **název** zadejte název, kterou chcete použít pro projekt. Klikněte na tlačítko **OK**.  
+3.  V **název** zadejte název, kterou chcete použít pro projekt. Klikněte na **OK**.  
   
      Visual Studio vytvoří řešení, která obsahuje uživatelského ovládacího prvku, atributu vložit ovládací prvek **nástrojů**, a manifest VSIX pro nasazení.  
   

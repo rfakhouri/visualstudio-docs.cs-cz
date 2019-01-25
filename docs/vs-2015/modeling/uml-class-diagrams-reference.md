@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy tříd UML: Referenční | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Diagramy tříd UML: Referenční dokumentace | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,15 +23,15 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796750"
 ---
-# <a name="uml-class-diagrams-reference"></a>Diagramy tříd UML: Referenční dokumentace
+# <a name="uml-class-diagrams-reference"></a>Diagramy tříd UML: Odkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diagram tříd UML popisuje objektu a informace o strukturách používané aplikace, interně i v komunikaci se svým uživatelům. Popisuje informace, bez ohledu na žádnou konkrétní implementaci. Jeho tříd a vztahů je možné implementovat mnoha způsoby, například databázové tabulky, z uzlů XML nebo sestavení objektů softwaru.  
@@ -42,7 +39,7 @@ Diagram tříd UML popisuje objektu a informace o strukturách používané apli
 > [!NOTE]
 >  Toto téma se zabývá diagramy tříd UML. Existuje jiný typ diagramu tříd, diagram tříd .NET, který slouží k vizualizaci kódu programu. Další informace najdete v tématu [navrhování a zobrazování tříd a typů](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
- Chcete-li vytvořit diagram tříd UML, na **architektury** nabídce zvolte **nové UML nebo diagramu vrstev**. Další informace o tom, jak nakreslit diagramy tříd UML, naleznete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md). Další informace o tom, jak vytvořit a kreslit diagramy modelování najdete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+ Chcete-li vytvořit diagram tříd UML, na **architektury** nabídce zvolte **nové UML nebo diagramu vrstev**. Další informace o tom, jak nakreslit diagramy tříd UML, naleznete v tématu [diagramů tříd UML: Pokyny pro](../modeling/uml-class-diagrams-guidelines.md). Další informace o tom, jak vytvořit a kreslit diagramy modelování najdete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -93,11 +90,8 @@ Diagram tříd UML popisuje objektu a informace o strukturách používané apli
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)   
  [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-

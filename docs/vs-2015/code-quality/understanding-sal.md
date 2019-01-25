@@ -1,25 +1,20 @@
 ---
 title: Porozumění SAL | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804707"
 ---
 # <a name="understanding-sal"></a>Porozumění SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  Zjistit, co tato funkce dělá? Pokud funkce je implementovaná nebo názvem, se musí zajistit správnost program udržovat určité vlastnosti. Právě pohledem na deklarace, jako je například v příkladu, nevíte, co jsou. Bez poznámek SAL je nutné spoléhají na dokumentaci nebo komentáře ke kódu. Tady je dokumentaci MSDN pro `memcpy` říká:  
   
 > "Kopie počet bajtů src na cíl. Pokud se zdrojový a cílový překrývají, chování memcpy není definováno. Memmove použijte ke zpracování překrývající se oblasti.   
-> **Poznámka k zabezpečení:** Ujistěte se, že cílová vyrovnávací paměť je stejný velké nebo větší než zdrojové vyrovnávací paměti. Další informace najdete v tématu předcházení přetečení vyrovnávací paměti."  
+> **Poznámka k zabezpečení:** Ujistěte se, že cílová vyrovnávací paměť je stejný velké nebo větší než zdrojová vyrovnávací paměť. Další informace najdete v tématu předcházení přetečení vyrovnávací paměti."  
   
  Dokumentace obsahuje několik bitů informace, které naznačují, že váš kód musí udržovat určité vlastnosti zajistit správnost programu:  
   
@@ -192,7 +187,7 @@ void InOptCaller()
   
  Analýzy kódu sady Visual Studio ověří, že funkce zjišťuje NULL dříve, než přistupuje k vyrovnávací paměti.  
   
-### <a name="example-the-out-annotation"></a>Příklad: \_si\_ poznámky  
+### <a name="example-the-out-annotation"></a>Příklad: \_Si\_ poznámky  
  `_Out_` podporuje běžný scénář, ve kterém je předáno NENULOVÝ ukazatel, který odkazuje na vyrovnávací paměť elementu a funkce inicializuje přidělenou elementu. Volající nemá inicializace vyrovnávací paměti před voláním; Volaná funkce, že inicializovat ji ještě před jeho vrácením.  
   
 ```cpp  
@@ -247,7 +242,7 @@ void OutOptCaller()
   
  Analýzy kódu sady Visual Studio ověří, že tato funkce zkontroluje NULL před `pInt` se přistoupit přes ukazatel a pokud `pInt` nemá hodnotu NULL, že vyrovnávací paměť je inicializován pomocí funkce ještě před jeho vrácením.  
   
-### <a name="example-the-inout-annotation"></a>Příklad: \_vstup\_ poznámky  
+### <a name="example-the-inout-annotation"></a>Příklad: \_Vstup\_ poznámky  
  `_Inout_` je používaná k anotaci ukazatel parametrem, který může změnit funkci. Ukazatel musí odkazovat na platný inicializovaná data před voláním, a i v případě, že se změní, musí mít platnou hodnotu stále při návratu. Poznámka Určuje, že funkce mohou volně číst a zapisovat do vyrovnávací paměti na jeden element. Volající musí poskytnout vyrovnávací paměti a inicializujte ji.  
   
 > [!NOTE]
@@ -373,7 +368,7 @@ void OutPtrOptCaller()
   
  Analýzy kódu sady Visual Studio ověří, že tato funkce zkontroluje NULL před `*pInt` se přistoupit přes ukazatel, a že vyrovnávací paměť je inicializován pomocí funkce ještě před jeho vrácením.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Příklad: \_úspěch\_ poznámky v kombinaci s \_navýšení kapacity\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Příklad: \_Úspěch\_ poznámky v kombinaci s \_navýšení kapacity\_  
  Poznámky můžete použít pro většinu objektů.  Zejména může opatřit poznámkami celé funkce.  Jednou z vlastnosti Nejobvyklejšími funkce je, že ho úspěch nebo neúspěch. Ale stejně jako přidružení mezi vyrovnávací paměť a velikost, nelze C/C++ express funkce úspěch nebo neúspěch. S použitím `_Success_` poznámky, můžete napsat, jaké úspěch pro funkci bude vypadat takto.  Parametr `_Success_` poznámky je právě výraz, že pokud je hodnota true označuje, že funkce byla úspěšná. Výraz může být cokoli, co dokáže zpracovat analyzátor poznámky. Účinky poznámky po vrácení funkce se vztahují jenom když funkce úspěšná. Tento příklad ukazuje, jak `_Success_` komunikuje s `_Out_` udělat správné věci. Můžete použít klíčové slovo `return` představující vrácenou hodnotu.  
   
 ```cpp  
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
-
-
-

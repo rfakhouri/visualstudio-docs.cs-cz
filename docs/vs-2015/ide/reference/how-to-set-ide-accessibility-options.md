@@ -1,29 +1,24 @@
 ---
-title: 'Postupy: nastavení možností usnadnění přístupu IDE | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Nastavení možností usnadnění přístupu IDE | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867283"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803220"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Postupy: nastavení možnosti usnadnění přístupu IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -32,12 +27,12 @@ ms.locfileid: "49867283"
  Kromě toho [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podporuje typech klávesnic, které nejčastěji zadávané znaky přístupnější. Můžete také přizpůsobit výchozí klávesové zkratky, který je k dispozici [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Další informace najdete v tématu [určení a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Editorech, dialogových oken a nástroj pro Windows  
  Ve výchozím nastavení, dialogová okna a okna nástrojů v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] použít stejnou velikost písma a barvy jako operační systém. Nastavení barev pro rámce IDE, dialogová okna, panely nástrojů a okna nástrojů jsou založeny barevném schématu: světlý nebo tmavý. Můžete změnit aktuální barvu motivu v [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md).  
   
- Automaticky otevíraná okna můžete také zobrazit v zobrazení kódu z editoru. Tato okna můžete vyzvat vás Dostupní členové na aktuální objekt a parametry pro dokončení funkce nebo příkaz. Tato okna, může být užitečné, pokud máte potíže s psaním. Ale narušují fokus v editoru kódu, který může být problematické pro některé uživatele. Můžete vypnout tato okna tak, že otevřete dialogové okno Možnosti a vymazání **automatický seznam členů** a **informace o parametrech** v **textový Editor**, **všechny Jazyky**, **Obecné** stránku **možnosti** dialogové okno. Další informace najdete v tématu [postupy: nastavení možností editoru Obecné](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Automaticky otevíraná okna můžete také zobrazit v zobrazení kódu z editoru. Tato okna můžete vyzvat vás Dostupní členové na aktuální objekt a parametry pro dokončení funkce nebo příkaz. Tato okna, může být užitečné, pokud máte potíže s psaním. Ale narušují fokus v editoru kódu, který může být problematické pro některé uživatele. Můžete vypnout tato okna tak, že otevřete dialogové okno Možnosti a vymazání **automatický seznam členů** a **informace o parametrech** v **textový Editor**, **všechny Jazyky**, **Obecné** stránku **možnosti** dialogové okno. Další informace najdete v tématu [jak: Nastavení možností editoru Obecné](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
  Můžete změnit uspořádání oken v integrovaném vývojovém prostředí (IDE) aby co nejlépe vyhovovalo způsob, jakým pracujete. Můžete ukotvit, float, skrýt nebo automaticky skrýt každé okno nástroje.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49867283"
   
 4.  Z **zobrazení položek**, vyberte nějakou položku, jejichž zobrazení je potřeba změnit, jako například **prostý Text**, **okraj indikátoru**, **viditelné prázdné znaky**, **Atributu HTML Name**, nebo **atribut XML**.  
   
-5.  Vyberte zobrazení nastavení z následujících možností: **popředí položky**, **položky pozadí**, a **tučné**.  
+5.  Zobrazení nastavení vyberte z následujících možností: **Popředí položky**, **položky pozadí**, a **tučné**.  
   
 6.  Zvolte **OK**.  
   
@@ -119,6 +114,3 @@ ms.locfileid: "49867283"
 ## <a name="see-also"></a>Viz také  
  [Funkce pro usnadnění přístupu sady Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   
  [Zdroje pro navrhování aplikací usnadňujících přístup](../../ide/reference/resources-for-designing-accessible-applications.md)
-
-
-

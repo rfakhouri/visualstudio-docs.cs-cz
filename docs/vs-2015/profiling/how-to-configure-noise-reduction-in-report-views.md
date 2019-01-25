@@ -1,14 +1,9 @@
 ---
 title: 'Postupy: Konfigurace snížení šumu v zobrazeních sestav | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e85e765ed80b37c7c688f9c0f25e3b7e8782a42f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a532a4ddf877e49a6cf355d182d41ed723b2f5d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800326"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Postupy: Konfigurace snížení šumu v zobrazeních sestav
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte mno
   
 3.  Zakázat ořezávání, zrušte **povolení ořezávání**.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
 ### <a name="to-configure-folding-for-a-performance-report"></a>Ke konfiguraci skládání pro sestavu výkonu  
   
@@ -82,13 +77,10 @@ Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte mno
   
 3.  Chcete-li zakázat skládání, zrušte **Povolit skládání**.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Zobrazení sestav nástrojů pro přizpůsobení výkonu](../profiling/customizing-performance-tools-report-views.md)   
- [Postupy: vyloučení nebo zahrnutí krátkých funkcí z instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [Postupy: Vyloučení nebo zahrnutí krátkých funkcí z instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view.md)   
  [Zobrazení přidělení](../profiling/dotnet-memory-allocations-view.md)
-
-
-

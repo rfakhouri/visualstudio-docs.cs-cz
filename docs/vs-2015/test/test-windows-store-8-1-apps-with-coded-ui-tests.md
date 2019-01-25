@@ -1,24 +1,19 @@
 ---
 title: Testování aplikace 8.1 Store a Windows UWP pomocí programových testů uživatelského rozhraní | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 70973305764319ecb8ebf902945c92eb4723af7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799294"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testování aplikace 8.1 Store a Windows UWP pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -299,22 +294,22 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
 ## <a name="q--a"></a>Dotazy a odpovědi  
   
--   **Otázka: Proč nevidím možnost zaznamenat Moje programový test uživatelského rozhraní v generování kódu pro dialogové okno programový Test uživatelského rozhraní?**  
+-   **DOTAZ: Proč nevidím možnost zaznamenat Moje programový test uživatelského rozhraní v generování kódu pro dialogové okno programový Test uživatelského rozhraní?**  
   
-     **A**: pro aplikace Windows Store není podporována možnost záznamu.  
+     **A**: Pro aplikace Windows Store není podporována možnost záznamu.  
   
--   **Dotaz: lze vytvořit kódovaný test uživatelského rozhraní pro mé aplikace Windows Store založené na WinJS?**  
+-   **DOTAZ: Můžete vytvořit programový test uživatelského rozhraní pro mé aplikace Windows Store založené na WinJS?**  
   
      **A**: Ne, jsou podporovány pouze XAML na základě aplikace.  
   
--   **Dotaz: lze vytvořit kódované testy uživatelského rozhraní pro mé aplikace Windows Store v systému, na kterém neběží Windows 8.1 nebo Windows 10?**  
+-   **DOTAZ: Můžete vytvořit kódované testy uživatelského rozhraní pro mé aplikace Windows Store v systému, na kterém neběží Windows 8.1 nebo Windows 10?**  
   
-     **A**: Ne, šablon projekt programového testu uživatelského rozhraní jsou dostupné jenom pro Windows 8.1 a Windows 10. Pokud chcete vytvořit automatizace pro aplikace univerzální platformy Windows (UPW), budete potřebovat Windows 10.  
+     **A**: Ne, šablon projekt programového testu uživatelského rozhraní jsou dostupné jenom na Windows 8.1 a Windows 10. Pokud chcete vytvořit automatizace pro aplikace univerzální platformy Windows (UPW), budete potřebovat Windows 10.  
 
 <a name="uwpapps"></a>
-- **Otázka: Jak vytvořím programové testy uživatelského rozhraní pro aplikace univerzální platformy Windows (UPW)**  
+- **DOTAZ: Jak vytvořit kódované testy uživatelského rozhraní pro aplikace univerzální platformy Windows (UPW)?**  
   
-   **A**: v závislosti na platformě, kde testování vaší aplikace pro UPW, vytvořte projekt programového testu uživatelského rozhraní v jednom z těchto způsobů:  
+   **A**: V závislosti na platformě, kde testování vaší aplikace pro UPW vytvořte projekt programového testu uživatelského rozhraní v jednom z těchto způsobů:  
   
   - Aplikace pro UPW spuštěné na místním počítači se spustí jako Store app. Abyste to mohli otestovat, je nutné použít **projekt programového uživatelského rozhraní testu (Windows)** šablony. Vyhledejte tuto šablonu, když vytvoříte nový projekt, přejděte **Windows**, **univerzální** uzlu. Nebo můžete přejít na **Windows**, **Windows 8**, **Windows** uzlu.  
   
@@ -322,13 +317,10 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
     Po vytvoření projektu pro vytváření testu zůstává stejná jako předtím.  
   
-- **Otázka: Proč nelze upravit kód v souboru UIMap.Designer?**  
+- **DOTAZ: Proč nelze upravit kód v souboru UIMap.Designer?**  
   
-   **A**: žádné změny kódu v souboru UIMapDesigner.cs bude přepsán při každém vytvoření kódu pomocí UIMap – Tvůrce programového testu uživatelského rozhraní. Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.  
+   **A**: Jakékoli změny kódu v souboru UIMapDesigner.cs budou při každém vytvoření kódu pomocí nástroje UIMap – Tvůrce programového testu UI přepsány. Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.  
   
 ## <a name="see-also"></a>Viz také  
  [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
  [Nastavení jedinečné vlastnosti automatizace pro ovládací prvky pro Windows Store za účelem testování](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
-
-
-

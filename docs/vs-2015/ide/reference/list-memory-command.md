@@ -1,14 +1,9 @@
 ---
 title: Paměť – příkaz seznamu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listmemory
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 25be71041f0ab127037a25a03cff1d6ffe42ac97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 057099c2ce1c4832c48d2eeac8774a36c5fad7b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804292"
 ---
 # <a name="list-memory-command"></a>Listovat paměť – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,12 +71,12 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |-----------|--------------------------|  
 |**d**|Debug.listmemory –|  
 |**da**|Debug.listmemory – /Ansi|  
-|**DB**|Debug.listmemory – /Format:OneByte|  
-|**řadič domény**|Debug.listmemory – /Format:FourBytes /Ansi|  
+|**db**|Debug.listmemory – /Format:OneByte|  
+|**dc**|Debug.listmemory – /Format:FourBytes /Ansi|  
 |**dd**|Debug.listmemory – /Format:FourBytes|  
-|**DF**|Debug.listmemory – /Format:Float|  
+|**df**|Debug.listmemory – /Format:Float|  
 |**dq**|Debug.listmemory – /Format:EightBytes|  
-|**rozlišované sjednocení typu**|Debug.listmemory – Unicode|  
+|**du**|Debug.listmemory – Unicode|  
   
 ## <a name="example"></a>Příklad  
   
@@ -92,11 +87,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="see-also"></a>Viz také  
  [Příkaz listovat zásobník volání](../../ide/reference/list-call-stack-command.md)   
  [Listovat vlákna – příkaz](../../ide/reference/list-threads-command.md)   
- [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-
-

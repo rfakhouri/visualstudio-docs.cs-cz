@@ -1,13 +1,9 @@
 ---
 title: Přenosy, migrace a upgrade projektů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -22,13 +18,13 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 6c73910b3866546ae0b8c169bfab489dfc3d55f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805550"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Přenosy, migrace a upgrade projektů sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +82,7 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
 |Ostatní|Můžete otevřít většinu ostatních typů projektů v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]a Visual Studio 2010 SP1.|
 |Webové servery FrontPage|Tento projekt nelze otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] vzhledem k tomu, že typ projektu nepodporuje.|
 |Přenosná knihovna tříd|Pokud umožníte softwaru Visual Studio automaticky aktualizovat projekt, můžete ji otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo Visual Studio 2010 SP1.<br /><br /> -Projekty, které jsou cíleny na technologii Silverlight 4 budou cíleny na technologii Silverlight 5.<br />-Projekty, které jsou cíleny na Windows Phone 7.0 nebo Windows Phone 7.5 budou cíleny na Windows Phone 8.<br />-Projekty, které jsou cíleny na Xbox 360 nebudou cíleny na Xbox 360.|
-|Projekty Azure, jako je například cloudové služby s příponou .deployproj projekty (ccproj rozšíření) a Azure Resource Manageru projekty (projekty cloudových nasazení)|Chcete-li otevřít tyto typy projektů, nejdřív nainstalovat [sady Azure SDK for .NET](http://azure.microsoft.com/en-us/downloads/), pak otevřete projekt.|
+|Projekty Azure, jako je například cloudové služby s příponou .deployproj projekty (ccproj rozšíření) a Azure Resource Manageru projekty (projekty cloudových nasazení)|Chcete-li otevřít tyto typy projektů, nejdřív nainstalovat [sady Azure SDK for .NET](http://azure.microsoft.com/downloads/), pak otevřete projekt.|
 
 ## <a name="troubleshooting-project-compatibility-issues"></a>Řešení potíží s kompatibilitou projektu
  Zde jsou některé kroky, které můžete dělat, když projekt nelze otevřít v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:

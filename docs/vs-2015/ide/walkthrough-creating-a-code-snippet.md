@@ -1,14 +1,9 @@
 ---
-title: 'Návod: Vytvoření fragmentu kódu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření fragmentu kódu | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,15 +15,15 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790110"
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>Návod: Vytvoření fragmentu kódu
+# <a name="walkthrough-creating-a-code-snippet"></a>Průvodce: Vytvoření fragmentu kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je třeba provést je vytvořit soubor XML, vyplnit odpovídající prvky a přidejte svůj kód do něj. Můžete také přidat odkazy a náhradní parametry do vašeho kódu. Fragment kódu můžete přidat k instalaci sady Visual Studio pomocí tlačítka importovat ve Správce fragmentů kódů (**nástroje/Správce fragmentů kódů**).  
@@ -268,6 +263,3 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
   
 ## <a name="see-also"></a>Viz také  
  [Fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md)
-
-
-

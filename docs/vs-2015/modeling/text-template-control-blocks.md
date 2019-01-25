@@ -1,25 +1,22 @@
 ---
 title: Řídicí bloky textových šablon | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
 ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7531e0ace7a6e2b40d8d17555a9b34cfa0e174fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6fb532c122bec0ff56c00a261ca464daba0a464f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784397"
 ---
 # <a name="text-template-control-blocks"></a>Řídicí bloky textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -176,6 +173,3 @@ Some text.
     ```  
   
 -   **Refaktoring.** Aby bylo možné zachovat textové šablony krátký a pochopitelnější, důrazně doporučujeme zabránit opakování kódu, které budou zohledňovat opakovaně použitelný kód do pomocné funkce v bloky s funkcí třídy nebo tak, že vytvoříte vlastní textové šablony třídy, která dědí ze třídy Microsoft.VisualStudio.TextTemplating.TextTransformation.
-
-
-

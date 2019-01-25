@@ -1,14 +1,9 @@
 ---
 title: Položka – Element (MSBuild) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1dfec558a9958d980d25d4160c4b7f2ce269cbb5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b45d0e9494700d03c0e96ccd0708e2754b4f7a2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797022"
 ---
 # <a name="item-element-msbuild"></a>Item – prvek (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49270024"
 Obsahuje uživatelem definovanou položku a jeho metadata. Všechny položky, který se používá v [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projektu musí být zadán jako podřízený objekt `ItemGroup` elementu.  
   
  \<Project>  
- \<ItemGroup >  
+ \<ItemGroup>  
  \<Položka >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -99,8 +94,5 @@ Obsahuje uživatelem definovanou položku a jeho metadata. Všechny položky, kt
   
 ## <a name="see-also"></a>Viz také  
  [Položky](../msbuild/msbuild-items.md)   
- [Vlastnosti nástroje MSBuild](msbuild-properties1.md)   
+ [MSBuild Properties](msbuild-properties1.md)   
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

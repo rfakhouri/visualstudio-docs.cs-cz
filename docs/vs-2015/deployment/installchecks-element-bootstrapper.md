@@ -1,14 +1,9 @@
 ---
 title: '&lt;InstallChecks&gt; – Element (zaváděcí nástroj) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 03f489c22c8912e332f7d01e6ec4ac48aacda30b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891066"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776365"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; – Element (zaváděcí nástroj)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,10 +77,10 @@ ms.locfileid: "49891066"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Property`|Požadováno. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
-|`Name`|Požadováno. Plně kvalifikovaný název sestavení ke kontrole.|  
-|`PublicKeyToken`|Požadováno. Zkrácené formě veřejný klíč přidružený k tomuto silný název sestavení. Všechna sestavení, které jsou uložené v mezipaměti GAC musí mít název, verzi a veřejný klíč.|  
-|`Version`|Požadováno. Verze sestavení.<br /><br /> Číslo verze má formát \< *hlavní verze*>.\< *podverze*>.\< *verze buildu*>.\< *verze revize*>.|  
+|`Property`|Povinný parametr. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Povinný parametr. Plně kvalifikovaný název sestavení ke kontrole.|  
+|`PublicKeyToken`|Povinný parametr. Zkrácené formě veřejný klíč přidružený k tomuto silný název sestavení. Všechna sestavení, které jsou uložené v mezipaměti GAC musí mít název, verzi a veřejný klíč.|  
+|`Version`|Povinný parametr. Verze sestavení.<br /><br /> Číslo verze má formát \< *hlavní verze*>.\< *podverze*>.\< *verze buildu*>.\< *verze revize*>.|  
 |`Language`|Volitelné. Jazyk lokalizované sestavení. Výchozí hodnota je `neutral`.|  
 |`ProcessorArchitecture`|Volitelné. Procesor počítače, který je cílem této instalace. Výchozí hodnota je `msil`.|  
   
@@ -96,8 +91,8 @@ ms.locfileid: "49891066"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Property`|Požadováno. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
-|`PackageFile`|Požadováno. Externí program spustí. Program musí být součástí instalačního balíčku pro distribuci.|  
+|`Property`|Povinný parametr. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
+|`PackageFile`|Povinný parametr. Externí program spustí. Program musí být součástí instalačního balíčku pro distribuci.|  
 |`Arguments`|Volitelné. Zadává argumenty příkazového řádku pro spustitelný soubor s názvem podle `PackageFile`.|  
   
 ## <a name="filecheck"></a>FileCheck  
@@ -107,9 +102,9 @@ ms.locfileid: "49891066"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Property`|Požadováno. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
-|`FileName`|Požadováno. Název souboru, který má najít.|  
-|`SearchPath`|Požadováno. Disk nebo složku, do které má soubor hledat. Pokud to musí být relativní cesta `SpecialFolder` je přiřazena; v opačném případě musí být absolutní cesta.|  
+|`Property`|Povinný parametr. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
+|`FileName`|Povinný parametr. Název souboru, který má najít.|  
+|`SearchPath`|Povinný parametr. Disk nebo složku, do které má soubor hledat. Pokud to musí být relativní cesta `SpecialFolder` je přiřazena; v opačném případě musí být absolutní cesta.|  
 |`SpecialFolder`|Volitelné. Složka, která má zvláštní význam pro Windows nebo na [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Výchozí hodnota je k interpretaci `SearchPath` jako absolutní cesta. Platné hodnoty patří:<br /><br /> `AppDataFolder`. Složku application data pro to [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace; specifické pro aktuálního uživatele.<br /><br /> `CommonAppDataFolder`. Složce data aplikací všech uživatelů.<br /><br /> `CommonFilesFolder`. Složka Common Files pro aktuálního uživatele.<br /><br /> `LocalDataAppFolder`. Složka dat nepřenosných aplikací.<br /><br /> `ProgramFilesFolder`. Standardní složka Program Files pro 32bitové aplikace.<br /><br /> `StartUpFolder`. Tato složka obsahuje všechny aplikace, které jsou spuštěny při spuštění systému.<br /><br /> `SystemFolder`. Tato složka obsahuje 32bitové systémové knihovny DLL.<br /><br /> `WindowsFolder`. Tato složka obsahuje instalace systému Windows.<br /><br /> `WindowsVolume`. Disk nebo oddíl, který obsahuje instalace systému Windows.|  
 |`SearchDepth`|Volitelné. Hloubka, na který chcete vyhledat podsložky s názvem souboru. Hledání je hloubka první. Výchozí hodnota je 0, což omezuje vyhledávání na složku nejvyšší úrovně, určené `SpecialFolder` a **SearchPath**.|  
   
@@ -120,8 +115,8 @@ ms.locfileid: "49891066"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Property`|Požadováno. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
-|`Product`|Požadováno. Identifikátor GUID pro u nainstalovaného produktu.|  
+|`Property`|Povinný parametr. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
+|`Product`|Povinný parametr. Identifikátor GUID pro u nainstalovaného produktu.|  
 |`Feature`|Volitelné. Identifikátor GUID pro konkrétní funkci nainstalované aplikace.|  
   
 ## <a name="registrycheck"></a>RegistryCheck  
@@ -131,8 +126,8 @@ ms.locfileid: "49891066"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Property`|Požadováno. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
-|`Key`|Požadováno. Název klíče registru.|  
+|`Property`|Povinný parametr. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
+|`Key`|Povinný parametr. Název klíče registru.|  
 |`Value`|Volitelné. Název hodnoty registru pro načtení. Ve výchozím nastavení je návratový text výchozí hodnotu. `Value` musí být řetězec nebo hodnota DWORD.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
@@ -142,8 +137,8 @@ ms.locfileid: "49891066"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Property`|Požadováno. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
-|`Key`|Požadováno. Název klíče registru. Jeho hodnota interpretována jako cesta k souboru, pokud `File` atribut je nastaven. Pokud tento klíč neexistuje, `Property` není nastaven.|  
+|`Property`|Povinný parametr. Název vlastnosti, která se uloží výsledek. Tato vlastnost může odkazovat z testu pod `InstallConditions` element, který je podřízeným prvkem z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
+|`Key`|Povinný parametr. Název klíče registru. Jeho hodnota interpretována jako cesta k souboru, pokud `File` atribut je nastaven. Pokud tento klíč neexistuje, `Property` není nastaven.|  
 |`Value`|Volitelné. Název hodnoty registru pro načtení. Ve výchozím nastavení je návratový text výchozí hodnotu. `Value` musí být řetězec.|  
 |`FileName`|Volitelné. Název souboru. Je-li zadána, hodnota získaná z klíče registru se předpokládá se, že cestu k adresáři a tento název se připojí k němu. Pokud není zadán, předpokládá se, že hodnota vrácená z registru se být úplná cesta k souboru.|  
 |`SearchDepth`|Volitelné. Hloubka, na který chcete vyhledat podsložky s názvem souboru. Hledání je hloubka první. Výchozí hodnota je 0, což omezuje vyhledávání na složku nejvyšší úrovně, určené hodnoty klíče registru.|  
@@ -190,6 +185,3 @@ ms.locfileid: "49891066"
 ## <a name="see-also"></a>Viz také  
  [\<Příkazy > – Element](../deployment/commands-element-bootstrapper.md)   
  [Referenční schéma balíčku a produktu](../deployment/product-and-package-schema-reference.md)
-
-
-

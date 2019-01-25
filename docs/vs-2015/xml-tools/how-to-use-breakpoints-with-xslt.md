@@ -1,32 +1,27 @@
 ---
-title: 'Postupy: používání zarážek v XSLT | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Používání zarážek v XSLT | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bf7bbc2c-71dc-4cac-a6fc-add6b27d92ed
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b01553075115ce953b499f722a254b5a2b9f20ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233451"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773272"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Postupy: používání zarážek v XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Postupy: Používání zarážek v XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete nastavit zarážky v šabloně stylů XSLT, nebo ve zdrojovém dokumentu XML. Pokud nastavíte zarážku na značku, při spuštění zarážce přejde k další příkaz, který obsahuje informace o řádku zdroje.  
   
- Další informace najdete v tématu [základní informace o ladění: zarážky](http://msdn.microsoft.com/en-us/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
+ Další informace najdete v tématu [základní informace o ladění: Zarážky](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Nastavte zarážku v šabloně stylů  
  Zarážky lze nastavit na počáteční značky, koncovými značkami a textové uzly šablony stylů XSLT. Zarážky můžete také nastavit na kód v bloku skriptu.  
@@ -63,5 +58,4 @@ Můžete nastavit zarážky v šabloně stylů XSLT, nebo ve zdrojovém dokument
 5.  Klikněte na tlačítko **ladění XSL** tlačítko na panelu nástrojů editoru XML.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Ladění šablony stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-
+ [Návod: Ladění stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

@@ -1,12 +1,9 @@
 ---
 title: Pravidla šířící změny v modelu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800415"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,10 +134,10 @@ namespace ExampleNamespace
 - Třída pravidla odvození od některého z následujících základních tříd:  
 
 
-  |                             Základní třída                              |                                                                                                                                                                                                                                                                                                                                                                              Aktivační událost                                                                                                                                                                                                                                                                                                                                                                              |
+  |                             Základní třída                              |                                                                                                                                                                                                                                                                                                                                                                              Trigger                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Přidání elementu, odkaz nebo tvar.<br /><br /> To lze použijte k detekci nové relace, kromě nových elementů.                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Hodnota vlastnosti domény se změní. Argument metody obsahuje staré a nové hodnoty.<br /><br /> Obrazce, toto pravidlo aktivováno, když předdefinované `AbsoluteBounds` změny vlastností, pokud se přesune na obrazec.<br /><br /> V mnoha případech je snazší přepsat `OnValueChanged` nebo `OnValueChanging` v obslužné rutině vlastnost. Tyto metody jsou volány bezprostředně před a po provedení změny. Naopak se pravidlo spustí obvykle na konci transakce. Další informace najdete v tématu [obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md). **Poznámka:** toto pravidlo není aktivováno, když vytvoříte nebo odstraníte odkaz. Místo toho zápis `AddRule` a `DeleteRule` pro doménový vztah. |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Hodnota vlastnosti domény se změní. Argument metody obsahuje staré a nové hodnoty.<br /><br /> Obrazce, toto pravidlo aktivováno, když předdefinované `AbsoluteBounds` změny vlastností, pokud se přesune na obrazec.<br /><br /> V mnoha případech je snazší přepsat `OnValueChanged` nebo `OnValueChanging` v obslužné rutině vlastnost. Tyto metody jsou volány bezprostředně před a po provedení změny. Naopak se pravidlo spustí obvykle na konci transakce. Další informace najdete v tématu [obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md). **Poznámka:**  Toto pravidlo není aktivováno, když vytvoříte nebo odstraníte odkaz. Místo toho zápis `AddRule` a `DeleteRule` pro doménový vztah. |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Aktivováno, když elementu nebo propojení je odstranit. Vlastnost ModelElement.IsDeleting platí až do konce transakce.                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Provádí při elementu nebo propojení se odstranil. Toto pravidlo se spustí po byly provedeny všechny ostatní pravidla, včetně DeletingRules. ModelElement.IsDeleting má hodnotu false a ModelElement.IsDeleted má hodnotu true. Povolit pro následné vrácení zpět, se ve skutečnosti neodebere element z paměti, ale je odebrán z Store.ElementDirectory.                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Element je přesouvat z jednoho úložiště pro oddíl do druhého.<br /><br /> (Všimněte si, že to se nevztahuje na pozici grafické obrazce.)                                                                                                                                                                                                                                                                                                            |
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Viz také  
  [Obslužné rutiny události šířící změny mimo Model](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [Umístění a velikost obrazce omezení BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

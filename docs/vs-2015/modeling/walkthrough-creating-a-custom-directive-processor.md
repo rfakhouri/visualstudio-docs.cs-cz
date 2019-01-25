@@ -1,12 +1,9 @@
 ---
-title: 'Návod: Vytvoření vlastního procesoru direktiv | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vlastního procesoru direktiv | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,15 +11,15 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833418"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798798"
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Návod: Vytvoření vlastního procesoru direktiv
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Průvodce: Vytvoření vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Procesory direktiv * fungovat tak, že přidáte kód, který *vygenerované třídy transformace*. Při volání *směrnice* z *textové šablony*, zbytek kódu, který napíšete do textové šablony může záviset na funkčnosti, která poskytuje tato direktiva.  
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Chcete-li zobrazit ve výstupu v prohlížeči v **Průzkumníka řešení**, klikněte pravým tlačítkem na soubor TestDP.htm a klikněte na tlačítko **zobrazit v prohlížeči**.  
 
      Výstup by měl být stejný jako původní text až na to, že by měl používat formát HTML. Název každé položky by se měl zobrazit tučně.
-
-
-

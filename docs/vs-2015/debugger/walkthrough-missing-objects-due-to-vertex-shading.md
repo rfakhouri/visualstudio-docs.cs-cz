@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Chybějící objekty z důvodu použití funkce Vertex Shading | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Chybějící objekty z důvodu použití funkce Vertex Shading | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ecff22d99eb995f0dbe70e93783460f4343d74f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795160"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Návod: Chybějící objekty z důvodu použití funkce vertex shading
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Průvodce: Chybějící objekty z důvodu použití funkce Vertex Shading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů diagnostiky grafiky k prozkoumání objekt, který nebyl nalezen z důvodu chyby, ke které dojde během fáze vertex shader.  
@@ -128,11 +123,8 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
   
    Chcete-li problém vyřešit, je přesunout řádek kódu, který nastaví hodnotu `m_marbleConstantBufferData.projection` po řádek, který inicializuje hodnotu místní proměnné `projection`.  
   
-   ![Opravené C&#43; &#43; zdrojový kód](../debugger/media/gfx-diag-demo-missing-object-shader-step-10.png "gfx_diag_demo_missing_object_shader_step_10")  
+   ![The corrected C&#43;&#43; source code](../debugger/media/gfx-diag-demo-missing-object-shader-step-10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
    Po opravě kód, můžete její opětovné sestavení a spuštění aplikace znovu a zjistit, že je vyřešen problém vykreslování:  
   
    ![Objekt v nyní zobrazen. ](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
-
-
-

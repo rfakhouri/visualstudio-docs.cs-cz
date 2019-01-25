@@ -1,28 +1,24 @@
 ---
-title: 'Postupy: poskytování asynchronní služby | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Poskytování asynchronní služby | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e57de7ca683678441b4e0908110e8e651930b64
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 3a0bae91d5525de54c967c09e8c4ef130cb85cab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779892"
 ---
-# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: poskytovat služby asynchronní aplikace Visual Studio
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: Poskytování asynchronní služby sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, by měl vytvořit asynchronní služby a načíst balíček ve vlákně na pozadí. K tomuto účelu můžete použít <xref:Microsoft.VisualStudio.Shell.AsyncPackage> spíše než <xref:Microsoft.VisualStudio.Shell.Package>a přidejte službu s asynchronní balíček speciální asynchronní metody
 
- Informace o poskytování služeb synchronní sady Visual Studio najdete v tématu [postupy: poskytování služby](../extensibility/how-to-provide-a-service.md).
+ Informace o poskytování služeb synchronní sady Visual Studio najdete v tématu [jak: Poskytování služeb](../extensibility/how-to-provide-a-service.md).
 
 ## <a name="implementing-an-asynchronous-service"></a>Implementace asynchronní služby
 

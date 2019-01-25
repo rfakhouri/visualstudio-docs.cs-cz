@@ -1,14 +1,9 @@
 ---
 title: Vnitřní funkce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _String_length_
 - _Param_
@@ -20,20 +15,20 @@ ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 7258092b79ca0c10079a986e2a80b34c25660054
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759440"
 ---
 # <a name="intrinsic-functions"></a>Vnitřní funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Výraz v SAL může být výraz jazyka C/C++, za předpokladu, že je výraz, který nemá žádné vedlejší účinky, například ++,--a všechny vedlejší účinky mají v tomto kontextu volání funkce.  Poznámky SAL však poskytuje některé funkce jako objekty a některé rezervované symboly, které můžete použít ve výrazech SAL. Tyto jsou označovány jako *vnitřní funkce*.  
   
-## <a name="general-purpose"></a>Obecné účely  
+## <a name="general-purpose"></a>Obecné použití  
  Následující poznámky instrinsic funkce poskytují obecné nástroje pro poznámky SAL.  
   
 |Poznámka|Popis|  
@@ -63,6 +58,3 @@ Výraz v SAL může být výraz jazyka C/C++, za předpokladu, že je výraz, kt
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
-
-
-

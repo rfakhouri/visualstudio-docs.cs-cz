@@ -1,26 +1,21 @@
 ---
-title: 'Rychlý Start: Testovací vývoj řízený testy s použitím Průzkumníka testů | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Rychlý start: Testu řízeného rozvoje pomocí Průzkumníka testů | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797962"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý začátek: Vývoj řízený testy s použitím Průzkumníka testů
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý start: Vývoj řízený testy s použitím Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně funguje napříč mnoha inkrementálními kroky vývoje. Existuje několik architektur, které můžete použít pro psaní jednotkových testů, včetně některých vyvinutých třetími stranami. Některá testovací rozhraní jsou zaměřena na testování v jiných jazycích či platformách. Průzkumník testů poskytuje tak jednotné rozhraní pro testování částí v některém z těchto rozhraní. Adaptéry jsou k dispozici pro nejčastěji používaná rozhraní a můžete napsat vlastní adaptér pro jiná rozhraní.  
@@ -58,13 +53,13 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
     Průzkumník testů otevře a zobrazí souhrn výsledků.  
   
-   **Pokud chcete zobrazit úplný seznam testů:** zvolit **Zobrazit vše** v každé kategorii.  
+   **Pokud chcete zobrazit úplný seznam testů:** Zvolte **Zobrazit vše** v každé kategorii.  
   
-   **Pokud chcete zobrazit podrobnosti výsledku testu:** vyberte test v Průzkumníku testů, chcete-li zobrazit podrobnosti, jako jsou zprávy o výjimkách v podokně podrobností.  
+   **Pokud chcete zobrazit podrobnosti výsledku testu:** Vyberte test v Průzkumníku testů, chcete-li zobrazit podrobnosti, jako jsou zprávy o výjimkách v podokně podrobností.  
   
-   **Přejít na kód testu:** klikněte dvakrát na test v Průzkumníku testů nebo zvolte **otevřít Test** v místní nabídce.  
+   **Přejít na kód testu:** Klikněte dvakrát na test v Průzkumníku testů nebo zvolte **otevřít Test** v místní nabídce.  
   
-   **Ladění testu:** otevřete místní nabídku pro jeden nebo více testů a klikněte na tlačítko **ladit vybrané testy**.  
+   **Ladění testu:** Otevřete místní nabídku pro jeden nebo více testů a klikněte na tlačítko **ladit vybrané testy**.  
   
 > [!IMPORTANT]
 >  Výsledky, které se zobrazují se poslední spuštění. Obarvený panel výsledků zobrazuje pouze výsledky testů, které byly spuštěny. Například pokud spuštění více testů a některé z nich selhání a poté spustíte pouze úspěšné testy, pak na panelu výsledků bude celý zelený.  
@@ -109,7 +104,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
    1.  Umístěte kurzor na `Rooter`a pak v místní nabídce zvolte **generovat**, **nový typ**.  
   
-   2.  V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je `MyMath`.  
+   2.  V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je to `MyMath`.  
   
    3.  Umístěte kurzor na `SquareRoot`a pak v místní nabídce zvolte **generovat**, **Pahýl metody**.  
   
@@ -293,6 +288,3 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
      Všechny testy jsou stále úspěšné.  
   
      ![Úspěšné testy 3 zobrazuje Průzkumník testu jednotek. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
-
-
-

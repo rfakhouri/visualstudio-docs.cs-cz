@@ -1,36 +1,31 @@
 ---
 title: Filtrování zobrazení sestav | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b5ce703fdc3b0d20feda83b59706e7c4792d2ade
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753436"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793084"
 ---
 # <a name="filtering-report-views"></a>Filtrování zobrazení sestav
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Filtry můžete použít profilování datové soubory pro omezení, která se zobrazí v zobrazení sestav výkonu a exportovat soubory sestav modulu dat profilování. Můžete omezit sestavu pro data mezi hodnot časového razítka a můžete omezit data, která mají konkrétní procesy a vlákna. Můžete uložit filtry do souboru a pak vytvořit filtr na jiný soubor dat profilování importováním uložený filtr.  
   
- Sestavy do časového úseku lze také omezit pomocí grafického časové osy na souhrnné zobrazení. Zobrazit [postupy: filtrování zobrazení sestav ze souhrnné časové osy](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Sestavy do časového úseku lze také omezit pomocí grafického časové osy na souhrnné zobrazení. Zobrazit [jak: Filtrování zobrazení sestav ze souhrnné časové osy](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Vyloučení systému a kód třetích stran ze sestavy, naleznete v tématu [postupy: filtrování profilování nástroje zobrazení sestav k zobrazení pouze můj kód](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ Vyloučení ze zprávy systému a kód třetích stran, najdete v článku [jak: Filtrování zobrazení sestav nástrojem pro profilaci, aby bylo možné zobrazit jenom vlastní kód](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Procedury  
   
@@ -101,6 +96,3 @@ Filtry můžete použít profilování datové soubory pro omezení, která se z
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení zobrazení sestav nástrojů pro měření výkonu](../profiling/customizing-performance-tools-report-views.md)
-
-
-

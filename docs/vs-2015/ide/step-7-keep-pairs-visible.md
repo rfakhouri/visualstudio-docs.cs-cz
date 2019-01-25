@@ -1,27 +1,22 @@
 ---
-title: 'Krok 7: Páry ve viditelném stavu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Krok 7: Zachování dvojic viditelných | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cb65f5b45c34672679f88c7f6ba12f972f0e0388
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766310"
 ---
-# <a name="step-7-keep-pairs-visible"></a>Krok 7: Uchovejte páry ve viditelném stavu
+# <a name="step-7-keep-pairs-visible"></a>Krok 7: Zachování dvojic ve viditelném stavu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hra funguje dobře tak dlouho, dokud hráč vybírá pouze dvojice ikon, které neodpovídají. Ale zvažte, co by mělo nastat, pokud hráč vybere shodnou dvojici. Namísto nastavení zmizení ikon zapnutím časovače (pomocí `Start()` metoda), hra měla resetovat sama tak, aby ho je už neudržují přehled o popisky pomocí `firstClicked` a `secondClicked` referenční proměnné bez resetování barev dvou popisků, které byly vybrány.  
@@ -66,9 +61,6 @@ Porovnávací hra se zobrazenými dvojicemi ikon
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 8: Přidejte metodu k ověření, zda the hráč zvítězil](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 8: Přidejte metodu k ověření, zda hráč zvítězil](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 6: přidejte časovač](../ide/step-6-add-a-timer.md).
-
-
-
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 6: Přidejte časovač](../ide/step-6-add-a-timer.md).

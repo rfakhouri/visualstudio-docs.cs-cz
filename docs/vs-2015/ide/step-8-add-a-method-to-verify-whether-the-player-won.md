@@ -1,27 +1,22 @@
 ---
 title: 'Krok 8: Přidejte metodu k ověření, zda hráč zvítězil | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 278d8d71378c0d14047fe8e012fed21951101548
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 18f234f5b283c20db730b241d6dd73c3524f430e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792777"
 ---
-# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8: Přidejte metodu k ověření, zda hráč vyhrál
+# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8: Přidání metody k ověření, jestli hráč vyhrál
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vytvořili jste zábavnou hru, která však potřebuje ještě něco. Hra by měla skončit vítězstvím hráče, takže budete muset přidat `CheckForWinner()` metodu k ověření, zda hráč zvítězil.  
@@ -47,9 +42,6 @@ Porovnávací hra s ovládacím prvkem MessageBox
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 9: Vyzkoušejte jiné funkce](../ide/step-9-try-other-features.md).  
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 9: Vyzkoušejte další funkce](../ide/step-9-try-other-features.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: Keep Pairs Visible](../ide/step-7-keep-pairs-visible.md).
-
-
-
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: Zachování dvojic viditelných](../ide/step-7-keep-pairs-visible.md).

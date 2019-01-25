@@ -1,13 +1,9 @@
 ---
 title: 'CA2225: Přetížení operátoru mají pojmenované alternativy | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
 - CA2225
@@ -19,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6500c43ff735d9249501ec63c0cb16f3a4c4c2db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895997"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786582"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Přetížení operátoru mají pojmenované alternativy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ ms.locfileid: "53895997"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Bylo zjištěno přetížení operátoru a alternativní metoda s očekávaným názvem nebyla nalezena.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -51,7 +47,7 @@ ms.locfileid: "53895997"
 |&|A|&|BitwiseAnd|
 |&=|A =|&=|BitwiseAnd|
 |&#124;|Nebo|&#124;|BitwiseOr|
-|&#124;=|Nebo =|&#124;=|BitwiseOr|
+|&#124;=|Or=|&#124;=|BitwiseOr|
 |--|Není k dispozici|--|Snížení|
 |/|/|/|Dělení|
 |/=|/=|/=|Dělení|

@@ -1,12 +1,9 @@
 ---
 title: Vlastnosti typů v UML diagramech tříd | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803405"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Vlastnosti typů v diagramech tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ V diagramu tříd UML *typ* třída, rozhraní nebo výčet.
   
 |**Vlastnost**|**Default**|Zobrazí se v|Popis|  
 |------------------|-----------------|----------------|-----------------|  
-|**Jméno**|Výchozí název|Všechny elementy|Určuje element.|  
+|**Název**|Výchozí název|Všechny elementy|Určuje element.|  
 |**Kvalifikovaný název**|Balíček obsahující:: Název typu|Všechny elementy|Jednoznačně identifikuje elementu. Předponu úplný název balíčku, který jej obsahuje.|  
 |**Barva**|Výchozí hodnota pro druh typu.|Všechny elementy|Barva obrazce. Na rozdíl od dalších vlastností to není vlastnost základního prvku modelu. Různá zobrazení stejného typu může mít různé barvy.|  
 |**Je abstraktní**|False|Třída|Při hodnotě true se třídu nelze vytvořit instanci a je určena pro použití jako základní třídu.|  
@@ -65,6 +62,3 @@ V diagramu tříd UML *typ* třída, rozhraní nebo výčet.
  [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
  [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

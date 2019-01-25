@@ -1,14 +1,9 @@
 ---
 title: Řešení potíží s cílením na rozhraní .NET Framework | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
 - MSBuild.ResolveAssemblyReference.FailedToResolveReferenceBecausePrimaryAssemblyInExclusionList
@@ -22,13 +17,13 @@ ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: acadd858a1327380fc606bed36994ba0dda47169
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9c7854e982a369816a9dac2c54df48e98ec6d3b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804231"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Řešení potíží s cílením na rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,10 +58,7 @@ Toto téma popisuje chyby nástroje MSBuild, kterým by mohlo dojít z důvodu o
 >  Po zavření a znovu otevřít projekt, měli byste také znovu vytvořit jej pro zajištění správně přeložit všechny odkazy.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Postupy: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [Profil klienta .NET framework](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [Cílení na konkrétní rozhraní .NET Framework verze](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

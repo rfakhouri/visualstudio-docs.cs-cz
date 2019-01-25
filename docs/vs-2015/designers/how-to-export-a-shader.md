@@ -1,25 +1,20 @@
 ---
-title: 'Postupy: exportování shaderu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Exportovat Shader | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e8c3a6ea90b43caeb1140cbb9ab7c699bdb09c3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802790"
 ---
 # <a name="how-to-export-a-shader"></a>Postupy: Exportování shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Tento dokument popisuje způsob použití návrháře shaderu exportovat shader 
   
 1.  V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete **vizuální graf shaderu (.dgsl)** souboru.  
   
-     Pokud nemáte k dispozici **vizuální graf shaderu (.dgsl)** soubor otevřít, jej vytvořte podle pokynů v [postupy: vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md).  
+     Pokud nemáte k dispozici **vizuální graf shaderu (.dgsl)** soubor otevřít, jej vytvořte podle pokynů v [jak: Vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md).  
   
 2.  Na **návrháře shaderu** nástrojů, zvolte **Upřesnit**, **exportovat**, **exportovat jako**. **Exportovat Shader** se zobrazí dialogové okno.  
   
@@ -57,8 +52,5 @@ Tento dokument popisuje způsob použití návrháře shaderu exportovat shader 
 4.  V **název_souboru** – pole se seznamem, zadejte název pro exportované shaderu a klikněte na tlačítko **Uložit** tlačítko.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md)   
+ [Postupy: Vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md)   
  [Návrhář shaderů](../designers/shader-designer.md)
-
-
-

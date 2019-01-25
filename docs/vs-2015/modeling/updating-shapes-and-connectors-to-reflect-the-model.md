@@ -1,23 +1,20 @@
 ---
 title: Aktualizace obrazců a konektorů k vyjádření modelu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192449"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798866"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualizace obrazců a konektorů k vyjádření modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Nastavit vlastnosti Mapa obrazce pro řízení viditelnosti dekorátoru  
  Můžete řídit viditelnosti dekorátoru bez psaní kódu programu, tím, že nakonfigurujete mapování mezi obrazcem a doménová třída v definici DSL. Další informace naleznete v následujících tématech:  
   
--   [Postupy: řízení viditelnosti dekorátoru – přesměrování](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+-   [Postupy: Řízení viditelnosti dekorátoru – přesměrování](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
 -   [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)  
   
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` by měla být volána jednou pro každou doménovou vlastnost, kterou chcete zaregistrovat. Poté, co byla volána, bude volat jakékoli změny pro zadanou vlastnost `OnAssociatedPropertyChanged()` v obrazce, které se prvek vlastnosti modelu.  
   
  Není nutné volat `AssociateValueWith()` pro každou instanci. I když InitializeResources je metoda instance, je vyvolána pouze jednou pro každou třídu tvaru.
-
-
-

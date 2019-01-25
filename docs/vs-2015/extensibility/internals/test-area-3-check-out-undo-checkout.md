@@ -1,14 +1,9 @@
 ---
 title: 'Testovací oblast 3: Rezervace a zrušení rezervace | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, checkout
 - source control plug-ins, undo checkout
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: adc6a84dbdc4fb182dd589c54527f02a1aa90d99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4f0fa6e59b8baa32fefffea7aa4810d688340467
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722992"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796744"
 ---
-# <a name="test-area-3-check-outundo-checkout"></a>Testovací oblast 3: Přečtěte si / zrušit rezervaci
+# <a name="test-area-3-check-outundo-checkout"></a>Testovací oblast 3: Podívejte se na / Zrušit rezervaci
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav a vrací položky z úložiště verzí prostřednictvím **rezervovat** a **vrátit zpět rezervaci** příkazy.  
   
- **Rezervovat**: značky položky v úložišti verzí jako rezervované, upraví místní kopii pro čtení a zápisu.  
+ **Podívejte se na**: Značky položky v úložišti verzí jako rezervován, upraví místní kopii pro čtení a zápisu.  
   
- **Vrátit zpět rezervaci**: označí položku v úložišti verzí, jak se změnami, vrátí místní kopii do stavu před rezervaci (v závislosti na možnostech).  
+ **Vrátit zpět rezervaci**: Značky položky v úložišti verzí jako vráceny se změnami, se vrátí místní kopii do stavu před rezervaci (v závislosti na možnostech).  
   
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky  
  Následující [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrované vývojové prostředí nabídky cesty se používají v testovacích procesech.  
@@ -45,7 +40,7 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
   
 -   Místní nabídka **rezervovat**.  
   
--   Zrušení rezervace: **souboru**, **správy zdrojového kódu**, **rezervace**.  
+-   Vrátit zpět rezervaci: **Soubor**, **správy zdrojového kódu**, **rezervace**.  
   
 ## <a name="common-expected-behavior"></a>Běžné očekávané chování  
   
@@ -58,7 +53,7 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
 ## <a name="test-cases"></a>Testovací případy  
  Tady jsou konkrétní testovací případy pro testovací oblast rezervace a zrušení rezervace.  
   
-### <a name="case-3a-check-out"></a>Malá a velká 3a: Podívejte se na  
+### <a name="case-3a-check-out"></a>Případu 3a: Rezervovat  
  Tato část se zaměřuje na operaci vrácení se změnami příkazu.  
   
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
@@ -66,9 +61,9 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
 |Zkontrolujte si výhradní (COE) klientský projekt|1.  Vytvoření projektu klienta.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Projděte si celý projekt výhradně (**souboru**, **rezervovat**).|Podívejte se na vyvolá.|  
 |Podívejte se na exkluzivní (COE) systému souborů nebo místní projekt webové služby IIS|1.  Nastavení webového serveru připojení ke sdílené složce v **nástroje**, **možnosti**, **projekty**, **nastavení webu**.<br />2.  Vytvoření webového projektu.<br />3.  Přidáte řešení do správy zdrojového kódu.<br />4.  Projděte si celý projekt výhradně (**souboru**, **správy zdrojových kódů**, **rezervovat**).|Podívejte se na vyvolá.|  
 |Podívejte se na položky řešení v řešení (nové metody pro zpracování další soubory)|1.  Vytvořte prázdné řešení.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Podívejte se řešení.<br />4.  Přidejte několik položek řešení.<br />5.  Všechny nově přidané položky se změnami.<br />6.  Vyberte více položek řešení.<br />7.  Projděte si vybrané položky (nabídku, **rezervovat**).|Vybrané soubory jsou rezervovány.|  
-|Zkontrolujte si místní verzi (Pokud tuto funkci podporuje modul plug-in v rámci testu)|1.  Uživatel 1: Vytvoření projektu klienta.<br />2.  Uživatel 1: Přidejte řešení do správy zdrojového kódu.<br />3.  Uživatel 2: Otevřete řešení ze správy zdrojového kódu do jiného umístění.<br />4.  Uživatel 2: Projděte si soubor.<br />5.  Uživatel 2: Upravte soubor.<br />6.  Uživatel 2: Kontrola v souboru.<br />7.  Uživatel 1: Podívejte se na místní verzi souboru (zkontrolujte **zkontrolujte si místní verze** rozšířených možností v **rezervovat** dialogové okno).|Místní verzi souboru je rezervován.<br /><br /> Úpravy uživatelem 2 nejsou použity pro uživatele 1 soubor.|  
+|Zkontrolujte si místní verzi (Pokud tuto funkci podporuje modul plug-in v rámci testu)|1.  Uživatel 1: Vytvoření projektu klienta.<br />2.  Uživatel 1: Přidáte řešení do správy zdrojového kódu.<br />3.  Uživatel 2: Otevřete řešení ze správy zdrojového kódu do jiného umístění.<br />4.  Uživatel 2: Projděte si soubor.<br />5.  Uživatel 2: Upravte soubor.<br />6.  Uživatel 2: Soubor se změnami.<br />7.  Uživatel 1: Podívejte se na místní verzi souboru (zkontrolujte **zkontrolujte si místní verze** rozšířených možností v **rezervovat** dialogové okno).|Místní verzi souboru je rezervován.<br /><br /> Úpravy uživatelem 2 nejsou použity pro uživatele 1 soubor.|  
   
-### <a name="case-3b-disconnected-check-out"></a>Malá a velká 3b: odpojení rezervaci  
+### <a name="case-3b-disconnected-check-out"></a>Případu 3b: Podívejte se odpojené  
  V odpojeném režimu umožňuje uživatelům určitou úroveň podporu pokračování zdrojového ovládacího prvku při nejsou připojené přímo k úložišti verzí. To se provádí místně ukládání do mezipaměti všechny relevantní informace o zařazených řešení a projektů.  
   
  Výhradní rezervaci operací může dojít pouze během připojení k úložišti správy zdrojů. Sdílené rezervaci operací může dojít v okamžiku, zda připojení nebo odpojení. Proto pokud připojený k úložišti verzí, pouze **zkontrolujte si sdílené** (COS) je příkaz povolen. Při odpojení, **vrátit zpět rezervaci** je zakázaná, protože nebylo možné načíst předchozí verzi aplikace nahradit změny provedené uživatelem.  
@@ -87,7 +82,7 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
 |------------|----------------|--------------------------------|  
 |Při odpojení, podívejte se na soubor, pak se připojte pro synchronizaci|1.  Odpojit spravovaným projektem pomocí dialogového okna změnit správu zdrojových kódů (**souboru**, **správy zdrojových kódů**, **ivní změnit zdroj ovládání**l).<br />2.  Podívejte se do souboru.<br />3.  Klikněte na rezervaci (odpojeno) v dialogovém okně upozornění.<br />4.  Upravte soubor.<br />5.  Připojte se pomocí dialogového okna změnit správu zdrojových kódů.<br />6.  Získáte nejnovější verzi upravený soubor.|Běžné očekávané chování|  
   
-### <a name="case-3c-query-editquery-save-qeqs"></a>Případ 3c: dotaz upravit a dotaz uložte (QEQS)  
+### <a name="case-3c-query-editquery-save-qeqs"></a>Případ 3c: Query Edit/Query Save (QEQS)  
  Položky pod správou zdrojových kódů jsou sledována pro úpravy, změny, a uloží to pomohlo uživatelům snadno spravovat svoje soubory. Při úpravě řízené položku, která je "přihlásila" QEQS zachycuje pokus o úpravu a žádá uživatele, pokud chce rezervovat soubor pro úpravu. V závislosti na **nástroje**, **možnosti** nastavení, uživatel je musí zkontrolovat dolů, aby bylo možné upravit soubor nebo může být povoleno upravit kopii v paměti a prohlédnout později. Pokud uživatele **nástroje**, **možnosti** není nastavení k zobrazení rezervaci dialogové okno a jednoduše zaškrtněte ji a potom jako uživatel učiní jeho úprav, soubor automaticky rezervuje, kdykoli je to možné.  
   
 #### <a name="expected-behavior"></a>Očekávané chování  
@@ -106,7 +101,7 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
 |Upravit soubor řešení, která je vrácena se změnami|Opakujte kroky, jak je popsáno v předchozí test, ale místo úpravy textového souboru, upravte řešení tak, že změna vlastností řešení.|Stejné jako předchozí test|  
 |Upravit soubor projektu, která je vrácena se změnami|Opakujte kroky, jak je popsáno v předchozím testu, ale místo úpravy textového souboru, upravte projekt tak, že změna vlastností projektu.|Stejné jako předchozí test.|  
   
-### <a name="case-3d-silent-check-out"></a>Malá a velká 3d: Tiché podívejte se na  
+### <a name="case-3d-silent-check-out"></a>Malá a velká 3d: Podívejte se tiché  
  Tato kontrola zahrnuje podoblasti scénáře kde **rezervovat** dialogové okno nezobrazí za uživatele **nástroje**, **možnosti**, **nastavení správy zdrojového kódu** .  
   
 #### <a name="expected-behavior"></a>Očekávané chování  
@@ -124,7 +119,7 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
 |Bezobslužné ověření souboru|1.  Nastavte **nástroje**, **možnosti**, **správy zdrojových kódů** k **checkout soubory automaticky na Upravit**.<br />2.  Vytvoření nového projektu se souborem.<br />3.  Přidáte řešení do správy zdrojového kódu.<br />4.  Rezervujte soubor.|Soubor je rezervován tiše (bez uživatelského rozhraní).|  
 |Tiché rezervace projektu|1.  Nastavte **nástroje**, **možnosti**, **správy zdrojových kódů** k **checkout soubory automaticky na Upravit**.<br />2.  Vytvořte nový projekt.<br />3.  Přidáte řešení do správy zdrojového kódu.<br />4.  Podívejte se projektu.|Soubor je rezervován tiše (bez uživatelského rozhraní).|  
   
-### <a name="case-3e-undo-check-out"></a>Malá a velká 3e: vrátit zpět rezervaci  
+### <a name="case-3e-undo-check-out"></a>Případu 3e: Vrátit zpět rezervaci  
  **Vrátit zpět rezervaci** slouží ke zrušení soubor rezervován stav a vyhněte se vracení změny provedené v souboru.  
   
 #### <a name="expected-behavior"></a>Očekávané chování  
@@ -142,4 +137,3 @@ Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav 
   
 ## <a name="see-also"></a>Viz také  
  [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

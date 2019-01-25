@@ -1,14 +1,9 @@
 ---
 title: Vytváření modelů pro aplikaci | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
 - vs.teamarch.UMLModelExplorer.dependency
@@ -41,24 +36,24 @@ ms.assetid: b69d9d91-c7e7-4dee-8eb6-706076eecb85
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9e3aa389441914121493148ecb8fa45b9f86beed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0cfa8a63d480dfb04fcc3c675955f44297933520
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761688"
 ---
 # <a name="create-models-for-your-app"></a>Vytváření modelů pro aplikaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diagramy modelování vám pochopit, objasnit a sdělovat nápady týkající se kódu a požadavky uživatelů, které váš softwarový systém musí podporovat. K popisu a sdělovat požadavky uživatelů, můžete například použít případ použití jazyka UML (Unified Modeling), aktivita, třídy a sekvenční diagramy. K popsání a prezentování funkčnosti vašeho systému, můžete použít komponentu, třídy, aktivity a sekvenční diagramy UML.  
   
- Zobrazit [Video pro kanál 9: zlepšení architektury prostřednictvím modelování](http://go.microsoft.com/fwlink/?LinkID=252078).  
+ Zobrazit [Video pro kanál 9: Zlepšení architektury prostřednictvím modelování](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Následující diagramy UML lze vytvořit v této verzi:  
   
-|**Diagram**|**Ukazuje**|  
+|**Diagram**|**Shows**|  
 |-----------------|---------------|  
 |[Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)|Tok mezi akcemi a účastníků v procesu podnikání práce|  
 |[Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)|Součásti systému, jejich rozhraní, porty a relace|  
@@ -70,7 +65,7 @@ Diagramy modelování vám pochopit, objasnit a sdělovat nápady týkající se
   
  K vizualizaci architektury systému nebo existující kód, vytvořte následující diagramy:  
   
-|**Diagram**|**Ukazuje**|  
+|**Diagram**|**Shows**|  
 |-----------------|---------------|  
 |[Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)|Základní architektura systému|  
 |Mapy kódu<br /><br /> [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Závislosti a jiné vztahy v existujícím kódu|  
@@ -96,7 +91,7 @@ Diagramy modelování vám pochopit, objasnit a sdělovat nápady týkající se
 |[Modelování uživatelských požadavků](../modeling/model-user-requirements.md)|Použití modelů a komunikaci potřebám uživatelů.|  
 |[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|Použijte modely k popisu celkovou strukturu a chování vašeho systému a ujistěte se, že bude vyhovovat potřebám uživatelů.|  
 |[Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)|Ujistěte se, že software zůstane konzistentní s požadavky uživatelů a architektury systému.|  
-|[Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)<br /><br /> [Použití modelů v Agilním vývoji](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Použití modelů pro vám pomůže pochopit a změnit systému během vývoje.|  
+|[Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)<br /><br /> [Použití modelů v Agilním vývoji](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Použití modelů pro vám pomůže pochopit a změnit systému během vývoje.|  
 |[Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)|Uspořádejte modely ve velkém nebo středním projektu.|  
   
 ## <a name="external-resources"></a>Externí zdroje  
@@ -104,6 +99,3 @@ Diagramy modelování vám pochopit, objasnit a sdělovat nápady týkající se
 |**Kategorie**|**Odkazy**|  
 |------------------|---------------|  
 |**Fóra**|-   [Visual Studio Visualization & Modeling nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Technologie LINQ to XML dynamické vlastnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 59eece0ffae18b72504c258fd3134c7dc8e952d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6fce9bca76b604413dc5bd4962760ee4ce08a6ea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894427"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790610"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>Technologie LINQ to XML dynamické vlastnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,6 +49,3 @@ Tato část obsahuje referenční informace o dynamické vlastnosti LINQ to XML.
  [Datová vazba WPF s LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [Datová vazba WPF s LINQ to XML přehled](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
  [Úvod do dotazů LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)
-
-
-

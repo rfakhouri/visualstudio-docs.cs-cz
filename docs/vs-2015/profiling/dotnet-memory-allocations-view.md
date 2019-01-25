@@ -1,14 +1,9 @@
 ---
 title: Zobrazení přidělení paměti .NET | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760348"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798804"
 ---
 # <a name="net-memory-allocations-view"></a>Přidělení paměti .NET – zobrazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,14 +43,14 @@ Zobrazení přidělení jsou uvedeny typy, které byly vytvořeny během spušt�
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Jméno**|Název přiděleného typu nebo funkce.|  
+|**Název**|Název přiděleného typu nebo funkce.|  
 |**ID procesu**|ID procesu (PID) běhu profilování.|  
 |**Název procesu**|Název procesu.|  
 |**Název modulu**|Název modulu, který obsahuje tento typ nebo funkce.|  
 |**Cesta modulu**|Cesta k napadenému modulu, který obsahuje tento typ nebo funkce.|  
 |**Zdrojový soubor**|Zdrojový soubor, který obsahuje definici pro typ nebo funkce.|  
 |**Číslo řádku funkce**|Číslo řádku začátku této definice typu nebo funkce ve zdrojovém souboru.|  
-|**úroveň**|Označuje, zda data pro typ nebo funkce.|  
+|**Úroveň**|Označuje, zda data pro typ nebo funkce.|  
 |**Celkově přidělení**|-Pro funkci, celkový počet objektů nadřazeného typu, které byly vytvořeny pomocí funkce. Toto číslo zahrnuje objekty vytvořené v podřízených funkce.<br />-Pro typ, celkový počet instancí tohoto typu, které byly vytvořeny.|  
 |**% Celkových přidělení**|-Pro funkci, procento všechny objekty vytvořené během spuštění profilování, které byly celkových přidělení nadřazený typ funkce.<br />-Pro typ procento z celkového počtu objektů, které byly vytvořeny v profilování, která se instance daného typu.|  
 |**Výhradní přidělení**|-Pro funkci, počet objektů, které se vytvořily při provádění funkce přímo v horní části zásobníku volání. Toto číslo nezahrnuje objekty vytvořené v podřízených funkce.<br />-Pro typ, celkový počet instancí tohoto typu, které byly vytvořeny.|  
@@ -64,6 +59,3 @@ Zobrazení přidělení jsou uvedeny typy, které byly vytvořeny během spušt�
 |**% Celkových bajtů**|-Pro určitou funkci procento všech paměti přidělené v profilování, která se celkově přidělení nadřazený typ funkce.<br />-Pro typ, procento všech paměti přidělené v profilování, která byla přidělena pro instance daného typu.|  
 |**Výhradní bajty**|-Pro funkci, počet bajtů paměti, které byly přiděleny pomocí funkce pro objekty tohoto nadřazeného typu. Toto číslo nezahrnuje paměti, která byla přidělena pomocí její podřízené funkce.<br />-Pro typ celkový počet bajtů, které byly přiděleny v profilaci spouštět pro instance daného typu.|  
 |**% Výhradních bajtů**|-Pro určitou funkci procento všech paměti přidělené v profilování, která byla výhradních přidělení nadřazený typ funkce.<br />-Pro typ, procento všech paměti přidělené v profilování, která byla přidělena pro instance daného typu.|
-
-
-

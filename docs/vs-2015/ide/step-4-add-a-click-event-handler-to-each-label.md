@@ -1,27 +1,22 @@
 ---
 title: 'Krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události Click | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9af0d60e9321baa9f4d2ffc4944d939e6398dcf7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775927"
 ---
-# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události kliknutí
+# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4: Přidání obslužné rutiny události Click ke každému popisku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Porovnávací hra probíhá takto:  
@@ -56,17 +51,14 @@ Okno Vlastnosti zobrazující událost Click
     >  Pokud zkopírujete a vložíte `label_Click()` blok kódu, spíše než ručního zadání kódu, nezapomeňte nahradit stávající `label_Click()` kódu. Jinak budete mít duplicitní kód bloku.  
   
     > [!NOTE]
-    >  Si možná pamatujete `object sender` v horní části obslužné rutiny události jako stejný jako ten používané [kurz 2: vytvoření a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) kurzu. Protože jste připojili různé události Click ovládacího prvku popisku k jedné metodě obslužné rutiny události, volá se stejná metoda bez ohledu na to, který popisek uživatel zvolil. Metoda obslužné rutiny události potřebuje vědět, který popisek byl vybrán, takže použije jméno **odesílatele** k identifikaci ovládacího prvku popisku. První řádek metody dává pokyn programu, že není pouze obecný objekt, ale specificky ovládací prvek popisku a používá název **clickedLabel** pro přístup k vlastnostem a metodám popisku.  
+    >  Můžete rozpoznat `object sender` v horní části obslužné rutiny události jako stejný jako ten používané [kurz 2: Vytvoření a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) kurzu. Protože jste připojili různé události Click ovládacího prvku popisku k jedné metodě obslužné rutiny události, volá se stejná metoda bez ohledu na to, který popisek uživatel zvolil. Metoda obslužné rutiny události potřebuje vědět, který popisek byl vybrán, takže použije jméno **odesílatele** k identifikaci ovládacího prvku popisku. První řádek metody dává pokyn programu, že není pouze obecný objekt, ale specificky ovládací prvek popisku a používá název **clickedLabel** pro přístup k vlastnostem a metodám popisku.  
   
-     Tato metoda nejprve zkontroluje, jestli **clickedLabel** byl úspěšně převeden (přetypován) z objektu do ovládacího prvku popisku. Pokud neúspěšný, má hodnotu `null` (C#) nebo `Nothing` (Visual Basic), a nechcete provést zbytek kódu v metodě. Dále metoda zkontroluje barvu textu vybraného popisku pomocí popisku **ForeColor** vlastnost. Pokud je barva textu popisku černá, znamená to, že ikona již byla vybrána a metoda je provedena. (To `return` provádí příkaz: říká programu, že má zastavit spouštění metody.) V opačném případě ikona nebyla vybrána, takže program změní barvu textu popisku na černou.  
+     Tato metoda nejprve zkontroluje, jestli **clickedLabel** byl úspěšně převeden (přetypován) z objektu do ovládacího prvku popisku. Pokud neúspěšný, má hodnotu `null` (C#) nebo `Nothing` (Visual Basic), a nechcete provést zbytek kódu v metodě. Dále metoda zkontroluje barvu textu vybraného popisku pomocí popisku **ForeColor** vlastnost. Pokud je barva textu popisku černá, znamená to, že ikona již byla vybrána a metoda je provedena. (To `return` provádí příkaz: Říká programu, že má zastavit spouštění metody.) V opačném případě ikona nebyla vybrána, takže program změní barvu textu popisku na černou.  
   
 6.  V panelu nabídky zvolte **souboru**, **Uložit vše** rozdělanou práci uložit, a pak na panelu nabídek zvolte **ladění**, **spustit ladění** ke spuštění váš program. Měl by se zobrazit prázdný formulář s modrým pozadím. Vyberte jakékoli buňky ve formuláři. Měla by se zobrazit jedna z ikon. Pokračujte ve výběru různých míst ve formuláři. Ikony by se měly výběrem postupně zobrazovat.  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 5: Add Label References](../ide/step-5-add-label-references.md).  
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 5: Přidejte odkazy na jmenovky](../ide/step-5-add-label-references.md).  
   
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 3: přiřazení náhodné ikony pro každý popisek](../ide/step-3-assign-a-random-icon-to-each-label.md).
-
-
-
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony](../ide/step-3-assign-a-random-icon-to-each-label.md).

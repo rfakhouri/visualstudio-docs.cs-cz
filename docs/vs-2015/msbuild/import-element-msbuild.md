@@ -1,14 +1,9 @@
 ---
 title: Import – Element (MSBuild) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 575fd2e83abd309b67e6e1684fd38b8d5c9953ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804037"
 ---
 # <a name="import-element-msbuild"></a>Import – element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49248466"
 Importuje obsah jednoho souboru projektu do jiného souboru projektu.  
   
  \<Project>  
- \<Import >  
+ \<Import>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -58,14 +53,14 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 |`Condition`|Nepovinný atribut.<br /><br /> Stav, který se má vyhodnotit. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
- Žádné  
+ Žádná  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] souboru projektu.|  
-|[Importgroup –](../msbuild/importgroup-element.md)|Obsahuje kolekci `Import` prvky seskupené pod nadpisem nepovinnou podmínku.|  
+|[ImportGroup](../msbuild/importgroup-element.md)|Obsahuje kolekci `Import` prvky seskupené pod nadpisem nepovinnou podmínku.|  
   
 ## <a name="remarks"></a>Poznámky  
  S použitím `Import` element, můžete znovu použít kód, který je společná pro mnoho souborů projektu. Díky tomu je snazší údržbu kódu, protože všechny aktualizace, které provedete sdílený kód získat rozšíří do všech projektů, které naimportujete.  
@@ -123,6 +118,3 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Postupy: Použití stejného cíle ve více souborech projektu](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-
-
-

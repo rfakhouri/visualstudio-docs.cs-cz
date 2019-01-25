@@ -1,27 +1,22 @@
 ---
-title: 'Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Chybějící objekty z důvodu nesprávné konfigurace zřetězení | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd28886695e3234240de5675e5e2b19972b105fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805497"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Průvodce: Chybějící objekty z důvodu nesprávné konfigurace zřetězení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů diagnostiky grafiky k prozkoumání objekt, který nebyl nalezen kvůli nenastavené pixel shader.  
@@ -105,11 +100,8 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
   
    Chcete-li vyřešit tento problém, přiřaďte správné pixel shader pomocí první parametr `ID3D11DeviceContext::PSSetShader` volání rozhraní API.  
   
-   ![Opravené C&#43; &#43; zdrojový kód](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![The corrected C&#43;&#43; source code](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
    Po opravě kód, můžete její opětovné sestavení a spuštění aplikace znovu k ověření, že je vyřešen problém vykreslování:  
   
    ![Objekt se nyní zobrazí](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
-
-
-

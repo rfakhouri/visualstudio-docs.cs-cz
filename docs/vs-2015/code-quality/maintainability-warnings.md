@@ -1,14 +1,9 @@
 ---
 title: Upozornění udržovatelnosti | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
@@ -20,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f709a7bb2d433ab86b5088349f1977a66c9a4c42
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb59a99057895859ebb38027f66e33dd5161486d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794964"
 ---
 # <a name="maintainability-warnings"></a>Upozornění udržovatelnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ Upozornění udržovatelnosti podporují údržby knihovny a aplikace.
   
 ## <a name="see-also"></a>Viz také  
  [Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

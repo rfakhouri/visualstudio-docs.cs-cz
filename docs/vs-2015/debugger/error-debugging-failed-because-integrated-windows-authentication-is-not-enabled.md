@@ -1,14 +1,9 @@
 ---
 title: 'Chyba: Ladění se nezdařilo, protože ověření integrované Windows není povoleno. | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
@@ -23,15 +18,15 @@ ms.assetid: 6027cd94-74cf-470f-b7ce-6f6b68bc56ba
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b922e8e8fde8b185207810d107afb9a9c5a6e05
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 11b4834cfe6c87f3d6093a38c7a97fe0da67aab4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757264"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797495"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Chyba: Ladění se nezdařilo, protože integrované ověřování systému Windows není povoleno.
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Chyba: Ladění se nezdařilo, protože ověření integrované Windows není povoleno.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ověření uživatele, který požaduje ladění nebylo možné kvůli chybě ověřování. Tato situace může nastat, když zkusíte Krokovat s vnořením webovou aplikaci nebo webové služby XML. Jednou z příčin této chyby je, že integrované ověřování Windows není povoleno. Ho Pokud chcete povolit, postupujte podle kroků v "K povolení integrované ověřování Windows."  
@@ -82,7 +77,7 @@ Ověření uživatele, který požaduje ladění nebylo možné kvůli chybě ov
   
          Zobrazí se dialogové okno Řízení uživatelských účtů a vás vyzve k zadání oprávnění, abyste mohli pokračovat.  
   
-    3.  Klikněte na tlačítko **pokračovat**.  
+    3.  Klikněte na **Pokračovat**.  
   
          Zobrazí se dialogové okno funkcí Windows.  
   
@@ -124,8 +119,5 @@ Ověření uživatele, který požaduje ladění nebylo možné kvůli chybě ov
   
 ## <a name="see-also"></a>Viz také  
  [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Ověřování algoritmem Digest Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Microsoft Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=77938)   
  [Spouštění webových aplikací v systému Windows Vista se službou IIS 7.0 a Visual Studio](http://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
-
-
-

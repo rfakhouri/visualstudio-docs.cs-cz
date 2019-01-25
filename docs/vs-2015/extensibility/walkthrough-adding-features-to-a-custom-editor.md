@@ -1,28 +1,23 @@
 ---
-title: 'Návod: Přidání funkcí do vlastního editoru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Přidávání funkcí do vlastního editoru | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737044"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805334"
 ---
-# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Návod: Přidání funkcí do vlastního editoru
+# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Průvodce: Přidání funkcí do vlastního editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po vytvoření vlastního editoru můžete k němu přidat další funkce.  
@@ -31,7 +26,7 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
   
 1.  Vytvoření vlastního editoru pomocí šablony projektu balíček Visual Studio.  
   
-     Další informace najdete v tématu [návod: vytvoření vlastního editoru](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Další informace najdete v tématu [názorný postup: Vytvoření vlastního editoru](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Rozhodněte, jestli chcete editor pro podporu zobrazení jedné nebo více zobrazení.  
   
@@ -58,7 +53,7 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
         > [!NOTE]
         >  Volání `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> k získání ukazatele na `IVsFileChangeEx`.  
   
-7.  Koordinovat událostí úpravy dokumentu pomocí správy zdrojového kódu. To uděláte takto:  
+7.  Koordinovat událostí úpravy dokumentu pomocí správy zdrojového kódu. Použijte následující postup:  
   
     1.  Ukazatel na `IVsQueryEditQuerySave2` voláním `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.  
   
@@ -70,13 +65,13 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
   
          Tato metoda se zobrazí výzva k uložení souboru, pokud nebyla uložena, nebo pokud se změnil od posledního uložení.  
   
-8.  Povolit **vlastnosti** okno k zobrazení vlastností vybraného textu v editoru. To uděláte takto:  
+8.  Povolit **vlastnosti** okno k zobrazení vlastností vybraného textu v editoru. Použijte následující postup:  
   
     1.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> výběr textu každý čas změny předáním hodnoty ve vaší implementaci <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
   
     2.  Volání `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> služby k získání ukazatele na <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
   
-9. Povolit uživatelům přetahování položek mezi editoru a **nástrojů**, nebo mezi externích editorech (například Microsoft Word) a **nástrojů**. To uděláte takto:  
+9. Povolit uživatelům přetahování položek mezi editoru a **nástrojů**, nebo mezi externích editorech (například Microsoft Word) a **nástrojů**. Použijte následující postup:  
   
     1.  Implementace `IDropTarget` na editor k upozornění rozhraní IDE, editor je cíl přetažení.  
   
@@ -122,7 +117,7 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
   
 12. Implementace podpora kontextové nápovědy.  
   
-     To umožňuje poskytovat podporu pro položky v editoru Nápověda F1 a okna dynamické nápovědy. Další informace najdete v části [jak: poskytuje kontext pro editory](../extensibility/how-to-provide-context-for-editors.md).  
+     To umožňuje poskytovat podporu pro položky v editoru Nápověda F1 a okna dynamické nápovědy. Další informace najdete v části [jak: Poskytuje kontext pro editory](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Vystavení modelu automatizačních objektů z editoru implementací `IDispatch` rozhraní.  
   
@@ -161,5 +156,4 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
   
 ## <a name="see-also"></a>Viz také  
  [Přispívání do modelu automatizace](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Postupy: Poskytnutí kontextu pro editory](../extensibility/how-to-provide-context-for-editors.md)
-
+ [Postupy: Poskytuje kontext pro editory](../extensibility/how-to-provide-context-for-editors.md)

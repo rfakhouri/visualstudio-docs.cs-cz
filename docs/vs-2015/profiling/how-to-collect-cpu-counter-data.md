@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: shromažďování dat čítačů procesoru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Shromažďování dat čítačů procesoru | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46ade222b6032baca17afe37d72dd6e5657ae1c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2a774ce8b36ceddb4d4b53f90c63bec30acc0273
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762929"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Postupy: Shromažďování dat čítačů procesoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "51763404"
   
 - Shromažďování dat z jednoho nebo více čítačů při profilování instrumentace.  
   
-- Při profilování pomocí vzorkování, zadáte jako interval vzorkování čítače událostí. Další informace najdete v tématu [jak: Zvolte událostí vzorkování](../profiling/how-to-choose-sampling-events.md).  
+- Při profilování pomocí vzorkování, zadáte jako interval vzorkování čítače událostí. Další informace najdete v tématu [jak: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Ke shromažďování dat čítače výkonu procesoru při profilování instrumentace  
   
@@ -75,6 +70,3 @@ ms.locfileid: "51763404"
  [Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)   
  [Využití procesoru a čítače Windows](../profiling/cpu-and-windows-counters.md)   
  [Postupy: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)
-
-
-

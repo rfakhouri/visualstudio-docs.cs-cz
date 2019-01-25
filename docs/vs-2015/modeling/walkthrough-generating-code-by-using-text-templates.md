@@ -1,12 +1,9 @@
 ---
-title: 'Návod: Vytvoření kódu pomocí textových šablon | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Generování kódu pomocí textových šablon | Dokumentace Microsoftu'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,15 +11,15 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932547"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782482"
 ---
-# <a name="walkthrough-generating-code-by-using-text-templates"></a>Návod: Vytvoření kódu pomocí textových šablon
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>Průvodce: Generování kódu pomocí textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Generování kódu umožňuje vytvářet programový kód, který je silně typované a ještě můžete snadno změnit při změně modelu zdroje. Tento rozdíl oproti alternativní postup psaní naprosto obecné program, který přijímá konfigurační soubor, který je flexibilnější, ale výsledky v kódu, který není ani tak snadno přečíst a změnit, ani tyto dobrého výkonu. Tento návod ukazuje tuto výhodu.  
@@ -426,6 +423,3 @@ namespace MyProject
 ## <a name="see-also"></a>Viz také  
  [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)
-
-
-

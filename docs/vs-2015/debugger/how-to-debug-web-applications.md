@@ -1,14 +1,9 @@
 ---
-title: 'Postupy: ladění webových aplikací | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění webových aplikací | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2a5110a6801aafb6eaf98cb4fb4164b045b2408
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805042"
 ---
 # <a name="how-to-debug-web-applications"></a>Postupy: Ladění webových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "51793630"
   
 -   Konfigurační soubor aplikace (Web.config) musí být nastaven na režim ladění. Ladění způsobí, že režim [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] generuje dynamicky generované soubory a umožňují připojení k ladicímu programu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tuto hodnotu nastaví automaticky při spuštění ladění, pokud jste vytvořili projekt ze šablony webových projektů.  
   
--   Další informace najdete v tématu [postupy: povolení ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+-   Další informace najdete v tématu [jak: Povolit ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Chcete-li ladit webové aplikace během vývoje  
   
@@ -62,6 +57,3 @@ ms.locfileid: "51793630"
  [Ladění webových aplikací a skriptu](../debugger/debugging-web-applications-and-script.md)   
  [Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Postupy: Povolení ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-
-
-

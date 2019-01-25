@@ -1,14 +1,9 @@
 ---
 title: Windows čítače procesoru a | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f79eeae8539657f6556b87d917f991113c5de807
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800437"
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +83,7 @@ Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vyge
 ## <a name="viewing-available-counters"></a>Zobrazení dostupné čítače  
  V okně příkazového řádku, můžete vytvořit seznam na dostupné čítače CPU v integrovaném vývojovém prostředí sady Visual Studio.  
   
-### <a name="visual-studio-ui"></a>Uživatelské rozhraní sady Visual Studio  
+### <a name="visual-studio-ui"></a>Visual Studio UI  
  Seznam dostupných čítačů na počítač v integrovaném vývojovém prostředí sady Visual Studio, musí mít relaci profileru výkonu, otevřete v prohlížeči výkonu.  
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Chcete-li zobrazit seznam seznam všech čítačů využití procesoru, které jsou podporovány na aktuální platformě  
@@ -117,7 +112,7 @@ Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vyge
   
 4.  Z **kategorie čítače** vyberte čítačů skupiny. Čítače Windows pro skupiny se zobrazí v seznamu.  
   
-     **Poznámka:** klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci kolekce čítačů.  
+     **Poznámka:** Klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci kolekce čítačů.  
   
 ### <a name="command-line"></a>Příkazový řádek  
  Použití [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, můžete vytvořit seznam čítačů využití procesoru, které jsou dostupné v počítači z příkazového řádku.  
@@ -132,13 +127,10 @@ Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vyge
   
      kde  **\<adresář nástrojů výkonu služby Visual Studio >** obvykle představuje cestu k adresáři nástroje pro měření výkonu instalaci sady Visual Studio  
   
-     C:\Program Files\Microsoft Visual Studio 10.0\Team nástroje nástroje  
+     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
 ## <a name="see-also"></a>Viz také  
  [Přehledy](../profiling/overviews-performance-tools.md)   
- [Postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)   
- [Postupy: shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)   
- [Postupy: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)
-
-
-
+ [Postupy: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)   
+ [Postupy: Shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Postupy: Shromažďování dat z čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)

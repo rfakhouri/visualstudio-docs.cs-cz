@@ -3,10 +3,7 @@ title: Nainstalovat sadu Visual Studio 2015 | Dokumentace Microsoftu
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -21,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799174"
 ---
 # <a name="install-visual-studio-2015"></a>Nainstalovat sadu Visual Studio 2015
 
@@ -83,7 +80,7 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 |Ladění programů|SeDebugPrivilege|
 |Správa protokolu auditování a zabezpečení|SeSecurityPrivilege|
 
- Další informace o tomto požadavku účet místního správce, najdete v článku znalostní báze Knowledge Base, [instalace systému SQL Server selže, pokud účet použitý k instalaci nemá určitá uživatelská oprávnění](https://support.microsoft.com/en-us/kb/2000257).
+ Další informace o tomto požadavku účet místního správce, najdete v článku znalostní báze Knowledge Base, [instalace systému SQL Server selže, pokud účet použitý k instalaci nemá určitá uživatelská oprávnění](https://support.microsoft.com/kb/2000257).
 
 ###  <a name="BKMK_Media"></a> Pomocí instalačního média
  Chcete-li nainstalovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], v kořenovém adresáři [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalačním médiu, spusťte instalační soubor pro vydání chcete:

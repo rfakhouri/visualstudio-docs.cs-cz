@@ -1,14 +1,9 @@
 ---
 title: Jak zjistím, kdo předává nesprávnou hodnotu parametru? | Dokumenty Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parameters
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 1f1ae455-0e25-4e9d-b33f-53908f5bd6ce
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2505d8f733554e90c14a46deafd0936682d38d66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 89ef2aabd03316f34280e75dc30da2189629b2f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794628"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Jak zjistím, kdo předává nesprávnou hodnotu parametru?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,12 +52,9 @@ Popis problému
   
 6.  Nyní spusťte program znovu. Zarážka způsobí zastavení na začátku funkce programu při `Var` parametr má hodnotu `3`.  
   
-7.  Použití okna zásobník volání najděte volající funkci a přejděte k jejímu zdrojovému kódu. Další informace najdete v tématu [postupy: použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md).  
+7.  Použití okna zásobník volání najděte volající funkci a přejděte k jejímu zdrojovému kódu. Další informace najdete v tématu [jak: Použijte okno zásobníku volání](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění nativního kódu nejčastější dotazy](../debugger/debugging-native-code-faqs.md)   
- [Zarážky](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Zarážky](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Ladění nativního kódu](../debugger/debugging-native-code.md)
-
-
-

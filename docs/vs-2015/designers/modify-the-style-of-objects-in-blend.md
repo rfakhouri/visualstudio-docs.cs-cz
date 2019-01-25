@@ -1,25 +1,20 @@
 ---
 title: Úpravy stylu objektů v Blendu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 31192d2c-5b84-41bc-94c0-898638c170bd
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781372"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Úpravy stylu objektů v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,16 +27,16 @@ Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastno
   
 -   [Štětce: Upravení vzhledu objektu](#Brushes)  
   
--   [Styly a šablony: vytvoření konzistentního vzhledu a chování napříč ovládacích prvků](#Styles)  
+-   [Styly a šablony: Vytvoření konzistentního vzhledu a chování napříč ovládacích prvků](#Styles)  
   
--   [Vizuální stavy: Změna vzhledu ovládacího prvku na základě stavu](#Visual)  
+-   [Vizuální stavy: Změna vzhledu ovládacího prvku na základě jeho stavu](#Visual)  
   
 -   [Prostředky: Vytvoření barvy, styly a šablony a pozdější použití](#Resources)  
   
 ##  <a name="Brushes"></a> Štětce: Upravení vzhledu objektu  
  Použití štětce k objektu, pokud chcete změnit její vzhled.  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Editor štětců](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [stopy Editor](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Malování s opakováním image nebo vzor pro objekt  
  Vykreslení s použitím image nebo vzor pro objekt s opakováním *dlaždicového štětce*.  
@@ -50,19 +45,19 @@ Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastno
   
  Vytvoření obrázkový štětec pomocí obrázku. Na následujících obrázcích obrázkový štětec, obrázkový štětec vedle sebe a obrázkový štětec obráceně.  
   
- ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png " 38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
+ ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
   
  Vytvořením kreslicího štětce vektorové kreslení například cestu nebo tvar. Na následujících obrázcích kreslicího štětce, kreslicího štětce vedle sebe a kreslicího štětce obráceně.  
   
- ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png " 15bf6021-620c-4490-9eae-086153d3f14f")  
+ ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")  
   
  Vytvoření vizuální štětec pomocí ovládacího prvku, jako je například tlačítko. Na následujících obrázcích je vizuální štětec a vizuální štětec vedle sebe.  
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [dlaždice štětce](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [dlaždici štětce](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
-##  <a name="Styles"></a> Styly a šablony: vytvoření konzistentního vzhledu a chování napříč ovládacích prvků  
+##  <a name="Styles"></a> Styly a šablony: Vytvoření konzistentního vzhledu a chování napříč ovládacích prvků  
  Můžete navrhnout vzhled a chování ovládacího prvku jednou a použití tohoto návrhu pro ostatní ovládací prvky, takže není nutné udržovat je jednotlivě.  
   
  **Byste měli použít styl?** : Pokud chcete nastavit výchozí vlastnosti (například barva tlačítka), použijte *styl*. Ovládací prvek můžete upravit, i když jste použili k němu stylu.  
@@ -97,34 +92,31 @@ Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastno
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytvoření stylu](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytvoření stylu](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytváření šablony ovládacího prvku v aplikaci Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytváření šablony ovládacího prvku v aplikaci Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Platí pro ovládací prvek stylu nebo šablony  
- Klikněte pravým tlačítkem na objekt [objekty a časová osa](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyberte **upravit šablonu**a klikněte na tlačítko **aplikovat zdroj**.  
+ Klikněte pravým tlačítkem na objekt [objekty a časová osa](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyberte **upravit šablonu**a klikněte na tlačítko **aplikovat zdroj**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Obnovit výchozí styl nebo šablonu ovládacího prvku  
- Vyberte ovládací prvek a [vlastnosti](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyhledejte **styl** nebo **šablony** vlastnost. Potom klikněte na **pokročilé možnosti** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")a potom klikněte na tlačítko **resetování** v místní nabídce.  
+ Vyberte ovládací prvek a [vlastnosti](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyhledejte **styl** nebo **šablony** vlastnost. Potom klikněte na **pokročilé možnosti** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")a potom klikněte na tlačítko **resetování** v místní nabídce.  
   
-##  <a name="Visual"></a> Vizuální stavy: Změna vzhledu ovládacího prvku na základě stavu  
+##  <a name="Visual"></a> Vizuální stavy: Změna vzhledu ovládacího prvku na základě jeho stavu  
  Ovládací prvky mohou mít různé vizuální vzhled na základě interakcí uživatele. Například můžete provést na tlačítko se změní na zelenou když na něj uživatel klikne nebo můžete spustit animaci. Zkraťte nebo prodloužit doba mezi vizuálních stavů pomocí přechodů.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Správa stavu ovládacích prvků WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Správa stavu ovládacích prvků WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
 ##  <a name="Resources"></a> Prostředky: Vytvoření barvy, styly a šablony a pozdější použití  
  Můžete převést prakticky cokoliv ve vašem projektu a prostředek. Prostředek je právě objekt, který můžete ve své aplikaci využít v různých místech. Můžete například vytvořit jednou barvu, usnadňují prostředek a potom použít na několik objektů. Chcete-li změnit barvu všech těchto objektů, stačí změňte barvu prostředků.  
   
- ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-B153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
+ ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [stručný dotykové ovládání s prostředky](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [stručný dotykové ovládání s prostředky](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

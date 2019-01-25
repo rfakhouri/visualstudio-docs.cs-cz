@@ -1,27 +1,22 @@
 ---
-title: 'Testovací oblast 8: Přepínání modulu Plug-in | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Testovací oblast 8: Přepínání modulu plug-in | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 103946f29cb893672b29d7671a74acf1c26bc50e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763515"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Testovací oblast 8: Přepínání modulu plug-in
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ ms.locfileid: "51793812"
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky  
  Následující [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrované vývojové prostředí nabídky cesty se používají v testovacích procesech.  
   
--   Aktuální modul plug-in správy zdrojů: **nástroje** -> **možnosti** -> **správy zdrojových kódů** -> **výběr modulu Plug-in** .  
+-   Aktuální modul plug-in správy zdrojů: **Nástroje** -> **možnosti** -> **správy zdrojového kódu** -> **výběr modulu Plug-in**.  
   
--   Změnit zdroj ovládací prvek vazby: **souboru** -> **správy zdrojových kódů** -> **změnit správu zdrojových kódů**...  
+-   Změnit zdroj ovládací prvek vazby: **Soubor** -> **správy zdrojového kódu** -> **Změna správy zdrojového kódu**...  
   
 ## <a name="common-expected-behavior"></a>Běžné očekávané chování  
  Změna modulu plug-in pro řešení správy zdrojového kódu je možné bez ukončení sady Visual Studio a znovu načíst řešení. Kromě toho aktuální modul plug-in správy zdrojového automaticky změní na použitému řešení při načtení tohoto řešení.  
@@ -41,7 +36,7 @@ ms.locfileid: "51793812"
 ## <a name="test-cases"></a>Testovací případy  
  Tady jsou konkrétní testovací případy pro modul plug-in přepínání testovací oblast.  
   
-### <a name="case-8a-automatic-change"></a>Malá a velká 8a: Automatická změna  
+### <a name="case-8a-automatic-change"></a>Případu 8a: Automaticky změnit  
   
 #### <a name="expected-behavior"></a>Očekávané chování  
  Pokud uživatel načte řešení, které je pod správou zdrojových kódů, řešení se automaticky načtou a vhodné plug-in správy zdrojových kódů je vybrán jako aktuální.  
@@ -50,7 +45,7 @@ ms.locfileid: "51793812"
 |------------|----------------|--------------------------------|  
 |Změnit modul plug-in automatické zdroje ovládacího prvku|1.  Výběr modulu plug-in v rámci testovacích jako aktuální (**nástroje** -> **možnosti** -> **správy zdrojových kódů** -> **modulu Plug-in Výběr**.)<br />2.  Vytvořte nový projekt.<br />3.  Přidáte řešení do správy zdrojového kódu.<br />4.  Vyberte jiný modul plug-in (například [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />5.  Potvrďte výzvu uvolnění řešení.<br />6.  Znovu otevřete řešení z disku.|Otevření řešení.<br /><br /> Modul plug-in v rámci testu je aktuální plug-in správy zdrojových kódů.|  
   
-### <a name="case-8b-solution-based-change"></a>Malá a velká 8b: Změna založené na řešení  
+### <a name="case-8b-solution-based-change"></a>Případu 8b: Řešení na základě změn  
   
 #### <a name="expected-behavior"></a>Očekávané chování  
  Řešení může mít jeho přidružené plug-in správy zdrojových kódů změnit.  
@@ -61,4 +56,3 @@ ms.locfileid: "51793812"
   
 ## <a name="see-also"></a>Viz také  
  [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

@@ -1,13 +1,9 @@
 ---
 title: Přizpůsobení rozložení oken
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.windows
 - vs.environment
@@ -27,13 +23,13 @@ ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934372"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802026"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +77,7 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
   Okna nástroje dokument lze uspořádat přetažením pomocí příkazů na **okno** nabídky a kliknutím pravým tlačítkem myši záhlaví okna, které uspořádáváte.
 
 > [!NOTE]
->  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+>  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ukotvení Windows
  Když klikněte a přetáhněte záhlaví panelu nástrojů nebo okna dokumentu na kartě, zobrazí se kosočtverce vodítka. Během operace přetažení když ukazatel myši je nad jednu ze šipek v kosočtverec, na vystínovanou oblast se zobrazí, který ukazuje, kde Ukotvit okno Pokud nyní uvolněte tlačítko myši.
@@ -186,4 +182,4 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 |[Druhy Windows](../misc/kinds-of-windows.md)|Tento článek popisuje rozdíly mezi okny nástrojů a okny dokumentů v prostředí IDE.|
 |[Postupy: Rozvržení a dokování Windows](../misc/how-to-arrange-and-dock-windows.md)|Popisuje, jak lze okna ukotvit, automatický skrývat a zobrazit vedle sebe a také jak rozložení oken obnovit.|
 |[Postupy: Pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Popisuje, jak lze cyklicky přepínat mezi otevřenými okny v integrovaném vývojovém prostředí (IDE) v pořadí podle používání. Také popisuje, jak můžete přejít na konkrétní dokumenty.|
-|[Přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Obsahuje informace o kombinacích nastavení a o tom, jaký vliv mají nastavení na rozložení oken, klávesové zkratky a další prvky v prostředí IDE.|
+|[Přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Obsahuje informace o kombinacích nastavení a o tom, jaký vliv mají nastavení na rozložení oken, klávesové zkratky a další prvky v prostředí IDE.|

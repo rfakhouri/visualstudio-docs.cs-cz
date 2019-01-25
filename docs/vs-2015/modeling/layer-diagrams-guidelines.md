@@ -1,12 +1,9 @@
 ---
 title: 'Diagramy vrstev: Pokyny | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,23 +13,23 @@ ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad85ccb9e58b45b1e6354c7abf0cb5651aa6d92e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803578"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy vrstev: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy vrstev* v sadě Visual Studio. Ujistěte se, že váš kód zůstane konzistentní s tímto návrhem tím, že ověří kód proti diagramu vrstev. Můžete také zahrnout ověřování vrstvy v procesu sestavení. Zobrazit [Video pro kanál 9: návrh a ověření architektury pomocí diagramů vrstev](http://go.microsoft.com/fwlink/?LinkID=252073).  
+Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy vrstev* v sadě Visual Studio. Ujistěte se, že váš kód zůstane konzistentní s tímto návrhem tím, že ověří kód proti diagramu vrstev. Můžete také zahrnout ověřování vrstvy v procesu sestavení. Zobrazit [Video pro kanál 9: Návrh a ověření architektury pomocí diagramů vrstev](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="what-is-a-layer-diagram"></a>Co je diagram vrstev?  
- Stejně jako diagramu tradiční architektura diagramu vrstev identifikuje hlavní součásti nebo funkční jednotky a jejich vzájemných závislostí. Volá se, každý uzel v diagramu *vrstvy*, představuje logické skupiny obory názvů, projekty nebo jiné artefakty. Nakreslení závislosti, které by měly existovat v návrhu. Na rozdíl od tradiční architektura diagramu můžete ověřit, že skutečné závislosti ve zdrojovém kódu odpovídají zamýšlených závislostí, které jste zadali. Tím, že část ověření regulárního sestavení na [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], můžete zajistit, že kód programu pořád dodržovat architektury systému prostřednictvím budoucí změny. Zobrazit [diagramy vrstev: referenční](../modeling/layer-diagrams-reference.md).  
+ Stejně jako diagramu tradiční architektura diagramu vrstev identifikuje hlavní součásti nebo funkční jednotky a jejich vzájemných závislostí. Volá se, každý uzel v diagramu *vrstvy*, představuje logické skupiny obory názvů, projekty nebo jiné artefakty. Nakreslení závislosti, které by měly existovat v návrhu. Na rozdíl od tradiční architektura diagramu můžete ověřit, že skutečné závislosti ve zdrojovém kódu odpovídají zamýšlených závislostí, které jste zadali. Tím, že část ověření regulárního sestavení na [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], můžete zajistit, že kód programu pořád dodržovat architektury systému prostřednictvím budoucí změny. Zobrazit [diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md).  
   
 ##  <a name="Update"></a> Jak návrh nebo aktualizaci vaší aplikace pomocí diagramů vrstev  
  Následující kroky poskytují přehled o tom, jak pomocí diagramů vrstev v procesu vývoje. Pozdější části tohoto tématu popisují další podrobnosti o každém kroku. Pokud vyvíjíte novou návrhu, vynechejte kroky, které odkazují na existující kód.  
@@ -99,7 +96,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
 ##  <a name="EditArchitecture"></a> Úprava vrstev a závislostí za účelem zobrazení zamýšleného návrhu  
  K popisu změn, které máte v plánu provést vašeho systému nebo v požadované architektuře, postupujte následovně Chcete-li upravit diagram vrstev. Můžete také zvážit provádíme některé změny refaktoringu pro zlepšení strukturu kódu před jeho rozšíření. Zobrazit [zlepšení strukturu kódu](#Improving).  
   
-|**k**|**Proveďte tyto kroky**|  
+|**Komu**|**Proveďte tyto kroky**|  
 |------------|-----------------------------|  
 |Odstranit závislost, která by neměla existovat|Klepněte na závislost a stiskněte klávesu **odstranit**.|  
 |Změna nebo omezení směru závislosti|Nastavte jeho **směr** vlastnost.|  
@@ -166,8 +163,5 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
  Pokud chcete mít jistotu, že budoucí změny v kódu je v souladu s diagramy vrstev, zahrňte ověřování vrstvy do vašeho řešení standardní proces sestavení. Pokaždé, když se ostatní členové týmu mohli sestavit řešení, případné rozdíly mezi závislostmi v kódu a diagram vrstev se ohlásí jako chyby sestavení. Další informace týkající se ověřování vrstvy v procesu sestavení naleznete v tématu [ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)   
+ [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)   
  [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)
-
-
-

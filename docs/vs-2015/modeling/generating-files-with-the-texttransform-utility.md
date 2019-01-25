@@ -1,12 +1,9 @@
 ---
 title: Generování souborů pomocí nástroje TextTransform | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
@@ -14,13 +11,13 @@ ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 75438b5a2ffa5917f667ab3fdc3a9bd3528f0e55
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227445"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802106"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generování souborů pomocí nástroje TextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ TextTransform.exe je nástroj příkazového řádku, který vám pomůže trans
   
  TextTransform.exe se nachází v následujícím adresáři:  
   
- **\Program Files\Microsoft Shared\TextTemplating\11.0**  
+ **\Program Files\Common Files\Microsoft Shared\TextTemplating\11.0**  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -64,6 +61,3 @@ TextTransform [<options>] <templateName>
 |Generování souborů v řešení systému [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
 |Procesory direktiv pro transformaci zdrojích dat zápisu.|[Přizpůsobení transformace textu T4](../modeling/customizing-t4-text-transformation.md)|  
 |Zápis hostitele šablonování textu, který umožňuje vyvolat textových šablon z vaší aplikace.|[Zpracování textových šablon pomocí vlastního hostitele](../modeling/processing-text-templates-by-using-a-custom-host.md)|
-
-
-

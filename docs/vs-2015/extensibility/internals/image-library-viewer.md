@@ -1,21 +1,17 @@
 ---
 title: Prohlížeč knihovny obrázků | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788053"
 ---
 # <a name="image-library-viewer"></a>Prohlížeč knihovny obrázků
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,8 +71,8 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 |||  
 |-|-|  
 |**Dílčí element**|**Definice**|  
-|Importovat|Importuje symboly daný soubor manifestu pro použití v aktuální manifestu.|  
-|identifikátor GUID|Symbol představuje identifikátor GUID a GUID formátování se musí shodovat.|  
+|Import|Importuje symboly daný soubor manifestu pro použití v aktuální manifestu.|  
+|Guid|Symbol představuje identifikátor GUID a GUID formátování se musí shodovat.|  
 |ID|Symbol představuje ID a musí být nezáporné celé číslo.|  
 |String|Symbol představuje libovolný řetězcovou hodnotu.|  
   
@@ -117,7 +113,7 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|identifikátor GUID|[Povinné] Část GUID moniker obrázku.|  
+|Guid|[Povinné] Část GUID moniker obrázku.|  
 |ID|[Povinné] ID část moniker obrázku.|  
 |AllowColorInversion|[Volitelné, výchozí hodnota true] Určuje, jestli obrázek může mít jeho barvy programově obrácený v tmavém pozadí.|  
   
@@ -134,8 +130,8 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Identifikátor URI|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) používání aplikace pro: / / / / / autority<br /><br /> Odkaz na prostředek – absolutní komponenty<br /><br /> – Cesta k souboru, který obsahuje nativní prostředky|  
-|Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> - *Světlý*: zdroj jde použít na světla na pozadí.<br /><br /> - *Tmavě*: zdroj je možné v tmavém pozadí.<br /><br /> - *Funkce Vysoký kontrast*: zdroj jde použít na jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> - *HighContrastLight*: zdroj je možné na pozadí světla v režimu vysokého kontrastu.<br /><br /> -*HighContrastDark*: zdroj je možné v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud **pozadí** atribut je vynechán, zdroj je použít na jakékoli pozadí.<br /><br /> Pokud **pozadí** je *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, Nikdy se převrátí zdroje barvy. Pokud **pozadí** je vynechán nebo nastaven na *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
+|Uri|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) používání aplikace pro: / / / / / autority<br /><br /> Odkaz na prostředek – absolutní komponenty<br /><br /> – Cesta k souboru, který obsahuje nativní prostředky|  
+|Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> - *Světlý*: Zdroj lze použít v světla na pozadí.<br /><br /> - *Tmavě*: Zdroj lze použít v tmavém pozadí.<br /><br /> - *HighContrast*: Zdroj lze použít v jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> - *HighContrastLight*: Zdroj lze použít v světla na pozadí v režimu vysokého kontrastu.<br /><br /> -*HighContrastDark*: Zdroj lze použít v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud **pozadí** atribut je vynechán, zdroj je použít na jakékoli pozadí.<br /><br /> Pokud **pozadí** je *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, Nikdy se převrátí zdroje barvy. Pokud **pozadí** je vynechán nebo nastaven na *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
   
  A \<zdroj > prvek může mít nastavený právě jeden z následující volitelné dílčí prvky:  
   
@@ -173,7 +169,7 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|identifikátor GUID|[Povinné] Část GUID moniker obrázku.|  
+|Guid|[Povinné] Část GUID moniker obrázku.|  
 |ID|[Povinné] ID část moniker obrázku.|  
 |Externí|[Volitelné, výchozí hodnota je false] Určuje, zda moniker bitové kopie odkazuje na obrázek v aktuální manifestu.|  
   
@@ -234,4 +230,3 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
   
 ## <a name="sample-output"></a>Vzorový výstup  
  Tento nástroj negeneruje žádný výstup.
-

@@ -2,7 +2,7 @@
 title: Postup při upgradu projektů na aktuální verzi nástroje Azure | Dokumentace Microsoftu
 description: Zjistěte, jak upgradovat projekt Azure v sadě Visual Studio na aktuální verzi nástroje Azure
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: b7faf80371a48ad2ddf6c13b879525b65a3eb299
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 27ab6619a4d36fc105a3b8a668a31a33ae4c2a43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781556"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Postup upgradu projektů na aktuální verzi nástrojů Azure pro Visual Studio
 ## <a name="overview"></a>Přehled
@@ -44,4 +44,3 @@ Pokud dojde k automatickému upgradu projektu nebo určíte, že chcete ho upgra
     **Aplikace** karta zobrazuje verze nástrojů, který je spojen s projektem. Pokud se zobrazí aktuální verze nástrojů Azure, projekt již byla upgradována. Pokud si nainstalujete novější verzi nástroje, než jaké kartě se zobrazí, **upgradovat** se zobrazí tlačítko.
 3. Zvolte **upgradovat** tlačítko Upgradovat projekt na aktuální verzi nástroje.
 4. Sestavte projekt a pak řešit všechny chyby, které jsou výsledkem změny rozhraní API. Informace o tom, jak upravit kód pro novou verzi naleznete v dokumentaci pro konkrétní rozhraní API.
-
