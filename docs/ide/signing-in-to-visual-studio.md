@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dccb2fb9c4fce456055b136dace7e95d02647a94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2ebcfa51dc04408a5cea334d7d62f457dcc3ae7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840788"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948307"
 ---
 # <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
@@ -72,4 +72,4 @@ Pokud se vyskytnou potíže při přihlašování, najdete [účtů podpory](htt
 * [Jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)
 * [Přihlaste se (Visual Studio for Mac)](/visualstudio/mac/signing-in)
-* [Aktivace (Visual Studio for Mac)](/visualstudio/mac/activation)
+* [Activation (Visual Studio for Mac)](/visualstudio/mac/activation)

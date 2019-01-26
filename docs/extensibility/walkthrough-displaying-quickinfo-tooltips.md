@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 674135c80f871babeb8ad2a3246f9b849a75f371
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965801"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939527"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Průvodce: Zobrazit popisky rychlé informace
 Rychlé informace je funkce technologie IntelliSense, která zobrazuje podpisy metod a popisy, když se uživatel přesune ukazatel myši název metody. Založený na jazyce funkce, jako je rychlé informace lze implementovat definováním identifikátory, pro které chcete poskytnout QuickInfo popisy a následného vytvoření popisu, ve kterém chcete zobrazit obsah. Rychlé informace lze definovat v kontextu jazykové služby, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a zobrazit rychlé informace pro právě tento typ nebo můžete zobrazit rychlé informace pro existující typ obsahu (jako je například "text"). Tento návod ukazuje, jak zobrazit rychlé informace pro typ obsahu "text".  

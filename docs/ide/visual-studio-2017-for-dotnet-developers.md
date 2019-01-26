@@ -3,7 +3,7 @@ title: Pokud chcete zvýšit produktivitu pro vývoj v .NET
 description: Přehled analýzy kódu, navigace jednotky testování a další funkce, které vám usnadní vytváření kódu .NET lepší rychleji.
 author: kuhlenh
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.date: 06/14/2018
 ms.topic: conceptual
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 300754cd975f16419d3e6faebc2074ed3eacb727
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926028"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941389"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
@@ -30,7 +30,7 @@ Zjistěte, jak [Visual Studio 2017](https://visualstudio.microsoft.com/downloads
 
 Některá rozšíření nabízí také schémata klávesnice:
 
-- [Klávesové zkratky pro Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [HotKeys for Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [Emulace (emacs)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
@@ -41,7 +41,7 @@ Tady jsou oblíbené klávesové zkratky sady Visual Studio:
 | **Ctrl**+**T** | Přejít na vše | Přejděte do souboru/typu/členu/symbolu deklaraci |
 | **F12** (také **Ctrl**+**klikněte na tlačítko**) | Přejít k definici | Přejděte na kterém je definován symbol |
 | **Ctrl**+**F12** | Přejít k implementaci | Přejděte do jeho různé implementace ze základní typ nebo člena |
-| **SHIFT**+**F12** | Najít všechny odkazy | Zobrazí všechny symbol nebo literál odkazy |
+| **Shift**+**F12** | Najít všechny odkazy | Zobrazí všechny symbol nebo literál odkazy |
 | **CTRL**+**.** (také **Alt**+**zadejte** v profil jazyka C#) | Rychlé akce a refaktoringy | Zobrazit, jaký kód opravy, jsou k dispozici na ukazatel pozice nebo kód výběr akce pro generování kódu, refaktoring nebo jiných rychlé akce |
 | **Ctrl**+**D** | Duplicitní řádek | Duplikuje řádku kódu, který se kurzor nachází (k dispozici v **Visual Studio 2017 verze 15.6** a novější) |
 | **SHIFT**+**Alt**+**+**/**-** | Rozbalit/Sbalit výběr | Rozbalíte nebo sbalíte aktuální výběr v editoru (k dispozici v **Visual Studio 2017 verze 15.5** a novější) |
@@ -109,7 +109,7 @@ Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a navigaci v
 
 | Funkce | Zástupce | Podrobnosti a vylepšení |
 |- | - | -|
-| Najít všechny odkazy | **SHIFT**+**F12**| Výsledky jsou zabarvené a lze seskupovat podle projektu, definice, atd. Je také možné "zamknout" výsledky. |
+| Najít všechny odkazy | **Shift**+**F12**| Výsledky jsou zabarvené a lze seskupovat podle projektu, definice, atd. Je také možné "zamknout" výsledky. |
 | Přejít k implementaci | **Ctrl**+**F12** | Chcete-li přejít na přepsaného člena, můžete použít klíčové slovo `override` k přechodu na klíč |
 | Přejít k definici | **F12** nebo **Ctrl**+**Klikni**| Může obsahovat **Ctrl** při kliknutí na navgiate k definici |
 | Náhled definice | **Alt**+**F12** | Zobrazit vložené definice |

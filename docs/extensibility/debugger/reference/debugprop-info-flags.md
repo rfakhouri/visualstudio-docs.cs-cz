@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9046ab771ab4b0c2734c125f2ba17b86f57a09f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa229c88ff62d96ee1e91e503dcbdd7c35c1cfc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987463"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944589"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Určuje, jaké informace se mají načíst informace o objektu vlastnosti ladění.  
@@ -124,7 +124,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
 ## <a name="see-also"></a>Viz také  
  [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [GetPropertyInfo –](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
+ [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
- [Enumproperties –](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)   
+ [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

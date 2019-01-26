@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: fc0f6e3fe8078675792109c41ee75272b44ca714
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cc30e43ea10a0b206351df9722d813b565b78a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942175"
 ---
 # <a name="properties-of-decorators"></a>Vlastnosti dekorátorů
 Dekorátory jsou ikony, text nebo Rozbalit/sbalit dvojité šipky, které se mohou objevit na obrazců a konektorů v diagramu. Následující tabulky popisují vlastnosti pro tři druhy dekoratér. Některé vlastnosti se zobrazí pouze na obrazec dekoratéry nebo pouze na konektor dekorátory.
@@ -56,7 +56,7 @@ Dekorátory jsou ikony, text nebo Rozbalit/sbalit dvojité šipky, které se moh
 |DefaultText|Výchozí text, který se má zobrazit.|Popisek|
 |displayName|Název dekoratér, který se zobrazí ve vygenerovaném návrháři.|Popisek|
 |Velikost písma|Velikost písma textu zobrazeného v dekoratéru.|8|
-|fontStyle|Styl písma textu zobrazeného v dekoratéru.|Pravidelné|
+|FontStyle|Styl písma textu zobrazeného v dekoratéru.|Pravidelné|
 |Název|Název dekoratéru|Popisek|
 |Poznámky|Neformální poznámky, které jsou spojeny s dekoratér.|\<žádné >|
 |HorizontalOffset|Vodorovný posun vzhledem k výchozí pozici dekoratéru, v palcích. (Ve tvarech pouze.)|0|

@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
 - VC.Project.VCConfiguration.IntermediateDirectory
@@ -22,12 +22,12 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b72cbb0d2660507a0578781c79a7cbdf60be7d8b
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949906"
 ---
 # <a name="general-project-properties-android-c"></a>Obecné vlastnosti projektů (Android C++)
 
@@ -43,4 +43,4 @@ Sada nástrojů platformy | Určuje, nástrojů pro sestavení aktuální konfig
 Typ konfigurace | Určuje typ výstupu generovaného touto konfigurací. | **Dynamická knihovna (.so)** – dynamická knihovna (*.so*)<br>**Statická knihovna (.a)** – statická knihovna (*.a*)<br>**Nástroj** – nástroj<br>**Soubor pravidel** -souboru pravidel<br>
 Cílová úroveň rozhraní API | Android NDK rozhraní API: úroveň kterou míří tato konfigurace.
 Použití STL | Určuje, která standardní knihovna C++ použít pro tuto konfiguraci. | **Minimální knihovny prostředí runtime jazyka C++ (systém)**<br>**Statická knihovna runtime jazyka C++ (gabi ++ _static)**<br>**Sdílená knihovna runtime jazyka C++ (gabi ++ _shared)**<br>**Sdílená knihovna běhového prostředí stlport (stlport_static)**<br>**Sdílená knihovna běhového prostředí (stlport stlport_shared)**<br>**Statická knihovna GNU STL (gnustl_static)**<br>**Sdílená knihovna GNU STL (gnustl_shared)**<br>**Knihovna LLVM libc ++ statické (c ++ _static)**<br>**Knihovna LLVM libc ++ sdílené (c ++ _shared)**<br>
-Režim thumb | Generovat kód, který spouští pro mikroarchitekturu thumb. To platí jenom pro architekturu arm. | **Miniatury**<br>**Arm**<br>**Zakázané**<br>
+Režim thumb | Generovat kód, který spouští pro mikroarchitekturu thumb. To platí jenom pro architekturu arm. | **Miniatury**<br>**Arm**<br>**Disabled** (Zakázáno)<br>

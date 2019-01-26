@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14cb0572124f5b832ac0b98326bdf5e0c3d89af4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb038c614766408e460f9c7367781d4411609c80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926200"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Metoda vloží hodnoty časového razítka, číselné značku a řetězec komentáře v. *Vsp* souboru. Hodnota časového razítka je možné synchronizovat vnější události. Značky a komentáře, které má být vložen profilování pro vlákna, které obsahuje funkci CommentMarkAtProfile musí být dále.  
@@ -69,7 +69,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
 |||  
 |-|-|  
-|**Záhlaví**|Zahrnout *VSPerf.h*|  
+|**Header**|Zahrnout *VSPerf.h*|  
 |**Knihovna**|Použití *VSPerf.lib*|  
 |**Unicode**|Implementovat jako CommentMarkAtProfileW (Unicode) a CommentMarkAtProfileA (ANSI).|  
   

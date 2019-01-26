@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 531e1cbf3e8489fd68d2bbd94c9a66af3c817a00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929936"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Vytvoření nadřazené složky kontejneru pro řešení
 Ve verzi 1.2 zdrojového ovládacího prvku modulu Plug-in rozhraní API můžete uživatele zadejte cílovou složku jeden kořenový zdrojového ovládacího prvku pro všechny webové projekty v řešení. Tento jeden kořenový se nazývá Super Unified Root (SUR).  
@@ -56,14 +56,14 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], doporučuje se, 
   
 |Řešení obsahuje|Na umístění disku|Struktury výchozí databáze|  
 |-----------------------|-----------------------|--------------------------------|  
-|*sln1.sln*<br /><br /> Server web1<br /><br /> Web2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/C/serveru Web1<br /><br /> $/ < user_choice > / Web2|  
-|*sln1.sln*<br /><br /> Server web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/D/serveru web1<br /><br /> $/ < user_choice >/sln1/win1|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Web2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/<user_choice>/sln1<br /><br /> $/<user_choice>/C/Web1<br /><br /> $/<user_choice>/Web2|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/<user_choice>/sln1<br /><br /> $/<user_choice>/D/web1<br /><br /> $/<user_choice>/sln1/win1|  
   
  Bez ohledu na to, zda operace je zrušená nebo se nepovedlo kvůli chybě se vytvoří SUR složce a jejích podsložkách. Nejsou odebrány automaticky v zrušit nebo chybové podmínky.  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] použije výchozí chování verze 1.1, pokud modul plug-in správy zdrojového kódu nevrací `SCC_CAP_CREATESUBPROJECT` a `SCC_CAP_GETPARENTPROJECT` příznaky funkcí. Kromě toho uživatelům [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] můžete vrátit k verzi 1.1 chování tak, že nastavíte hodnotu následující klíč do *DWORD: 00000001*:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *dword:00000001*
   
 ## <a name="see-also"></a>Viz také:  
  [Co je nového v zdrojový ovládací prvek modulu Plug-in API verze 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

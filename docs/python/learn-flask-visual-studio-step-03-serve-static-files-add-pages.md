@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15c336a0f026211f37c2435586e0e18df96ecf0f
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 1b6464e48441f436b4f93fc8747972e334e768b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918535"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti
 
@@ -289,4 +289,4 @@ Následující kroky ukazují dědičnosti:
 - [Nasazení webové aplikace do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Další možnosti šablon šablonovacím systémem, jako je například tok řízení, najdete v části [šablonovacím systémem šablona návrháře dokumentaci](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Podrobnosti o použití `url_for`, naleznete v tématu [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) v dokumentaci k objektu aplikace Flask (flask.pocoo.org)
-- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

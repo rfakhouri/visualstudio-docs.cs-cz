@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 020d8dee31fbb2b1358ecefceef4859db93ecd3d
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 49177cf534c99d955474abbd9586effd33bf1cb9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443193"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943939"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Kurz: Začínáme s C# a ASP.NET Core v sadě Visual Studio
 
@@ -47,7 +47,7 @@ Nejprve vytvoříte projekt ASP.NET Core. Typ projektu obsahuje všechny soubory
 
 1. Otevřete Visual Studio 2017.
 
-2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. 
+2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
 3. V **nový projekt** dialogové okno v levém podokně rozbalte **Visual C#**, rozbalte **webové**a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**. Pojmenujte jej *MyCoreApp* a zvolte **OK**.
 
@@ -57,7 +57,7 @@ Nejprve vytvoříte projekt ASP.NET Core. Typ projektu obsahuje všechny soubory
 
 Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony projektu, můžete ho získat tak, že přidáte **vývoj pro ASP.NET a web** pracovního vytížení. Přidejte tuto úlohu v jednom z následujících způsobů, v závislosti na tom, které jsou na vašem počítači nainstalovaná aktualizace sady Visual Studio 2017.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Pomocí dialogového okna Nový projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Pomocí dialogového okna Nový projekt
 
 1. Vyberte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. (V závislosti na nastavení zobrazení může být potřeba stránku posunout, aby ji.)
 
@@ -69,7 +69,7 @@ Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony projektu, můžet
 
    (Může mít ukončit sadu Visual Studio, abyste mohli pokračovat v instalaci nové úlohy.)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Pomocí nabídky panelu nástrojů
 
 1. Zrušit z celkového počtu **nový projekt** dialogové okno. Potom v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
 

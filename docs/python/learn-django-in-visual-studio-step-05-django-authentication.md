@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 26a8268508f4d53a488d2c9d5fd54ef9330b2fc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f90612c93ee2530f24f7ebb0a019d5ea3704f5d0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820303"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927409"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Krok 5: Ověřování uživatelů v Django
 
@@ -217,4 +217,4 @@ Odpověď: `{% csrf_token %}` Značka zahrnuje integrované v Django [webů ochr
 ## <a name="go-deeper"></a>Seznamte se blíž
 
 - [Ověřování uživatelů v Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
-- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857720"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947020"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Vytvoření aplikace Vue.js pomocí Node.js Tools for Visual Studio
 
@@ -176,6 +176,7 @@ Neznámý problém s vue cli 3.0 brání automatizace procesu sestavení. Pokaž
 * Spuštění příkazu `npm run build` jako událost před sestavením ve vlastnostech projektu nefunguje při použití vue – rozhraní příkazového řádku 3.0.
 
 ## <a name="see-also"></a>Viz také:
-https://vuejs.org/v2/guide – Vue Příručka Začínáme.  
-https://github.com/vuejs/vue-cli – Projekt Vue rozhraní příkazového řádku.  
-https://webpack.js.org/configuration/ -Dokumentace ke službě Webpacku konfigurace.
+
+- https://vuejs.org/v2/guide – Vue Příručka Začínáme.
+- https://github.com/vuejs/vue-cli – Projekt Vue rozhraní příkazového řádku.
+- https://webpack.js.org/configuration/ -Dokumentace ke službě Webpacku konfigurace.

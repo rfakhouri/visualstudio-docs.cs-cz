@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a18ee19755e79c03bb24104cb444af8168307d17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 709a56aa2ece2fbc21076f35181970dd51697b67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826569"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939504"
 ---
 # <a name="web-project-essentials"></a>Základy webového projektu
 Webové projekty vytvářet webové aplikace. Webový projekt můžete použít k vytvoření webové aplikace, která obsahuje inteligentní webové stránky. Inteligentní webová stránka obsahuje kód na straně serveru, který vykreslí webovou stránku na vyžádání.  

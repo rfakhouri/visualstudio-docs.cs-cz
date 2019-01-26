@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a322d201310121a843fd1fe805d502b5aa9364b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834162"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941298"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;závislost&gt; – element (nasazení ClickOnce)
 Určuje verzi aplikace k instalaci a umístění manifestu aplikace.  
@@ -87,7 +87,7 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
 | `codebase` | Volitelné. Úplná cesta k manifestu aplikace. |
 | `size` | Volitelné. Velikost manifest aplikace v bajtech. |
 
-## <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
+## <a name="assemblyidentity"></a>assemblyIdentity  
  Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` elementu. Obsah `assemblyIdentity` musí být stejné jako nastavení popsané v [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace. V následující tabulce jsou uvedeny atributy `assemblyIdentity` elementu.  
 
 |Atribut|Popis|  
@@ -123,7 +123,7 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
 |-------------| - |
 | `Algorithm` | Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Je požadovaný podřízený element `hash` elementu. `dsig:DigestValue` Prvek nemá žádné atributy. Jeho textová hodnota je vypočítaný algoritmus hash pro zadaný soubor.  
 
 ## <a name="remarks"></a>Poznámky  
