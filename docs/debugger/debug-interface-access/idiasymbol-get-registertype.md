@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_registerType | Dokumentace Microsoftu
+title: IDiaSymbol::get_registerType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: f1c98ab0-8aef-4a07-a686-28b8a54418ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65fee40bd7dd5b279a17de32e3ff9cb532e880a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7dfe85b4e4903aa00521c8188a48a026b949565
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997530"
 ---
 # <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
 Načte typ registru.  

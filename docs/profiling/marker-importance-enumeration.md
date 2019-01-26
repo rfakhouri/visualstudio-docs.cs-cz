@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 330ba15fa62272bd2c2f7ea7b40d6b527ab237c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d4049a3792fcc529352baef3e4649c6157aa7f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841687"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992149"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance – výčet
 Představuje úroveň důležitosti značek Vizualizátor souběžnosti.  
@@ -42,7 +42,7 @@ enum marker_importance;
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkersobj.h*  
   
- **Namespace:** Concurrency::Diagnostic –  
+ **Namespace:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Viz také:  
  [Diagnostic – obor názvů](../profiling/diagnostic-namespace.md)

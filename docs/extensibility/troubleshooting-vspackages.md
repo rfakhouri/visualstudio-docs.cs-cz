@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9e8b271f98774e8bda0121b94b37e0266bf028
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982465"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s rozšířením VSPackages
 Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro řešení problémů.  
@@ -66,7 +66,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
    1.  Identifikátor CLSID sady VSPackage najdete v části balíčků z registru:  
   
-        HKLM\Software\Microsoft\Visual Studio\\*\<verze >* \Packages  
+        HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
    2.  Ověřte správnost cesty Dal podklíč SatelliteDll.  
   
@@ -119,7 +119,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 2. Nespravovaný kód, najít identifikátor CLSID VSPackage v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzlu registru CLSID:  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<verze >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    Ujistěte se, že položka InprocServer32 má správnou cestu knihovny dll balíčku VSPackage.  
   

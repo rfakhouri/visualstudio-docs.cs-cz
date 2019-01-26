@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14dfc5237f505306c28954a93eb848673f0d3387
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956573"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936096"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Průvodce: Zobrazení párových složených závorek
 Implementuje funkce založený na jazyce, jako je například závorky definováním složené závorky, kterou chcete porovnat a přidání značky značky textu k odpovídající složené závorky po blikající kurzor na jednom z složené závorky. Můžete definovat složené závorky v rámci jazyka, definovat vlastní příponu názvu souboru a typu obsahu a použít jenom značky, které typ nebo použít značky k existujícímu typu obsahu (jako je například "text"). Následující návod ukazuje, jak použít závorky značky "text" typu obsahu.  

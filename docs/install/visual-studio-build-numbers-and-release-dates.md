@@ -5,20 +5,20 @@ description: Seznam vydané verze a čísla sestavení pro Visual Studio 2017 a 
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.date: 01/23/2019
+manager: jillfra
+ms.date: 01/24/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d6fa60b79cb1fe035b6011350b4dbd6e480ff56
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 886dcff968f5fcb25a3c7c69808b2811fffa6f5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834943"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929033"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -28,6 +28,7 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.6 | Vydaná verze | 24. ledna 2019 | 15.9.28307.344 |
 | 15.9.5 | Vydaná verze | 8. ledna 2019 | 15.9.28307.280 |
 | 15.9.4 | Vydaná verze | 11. prosince 2018 | 15.9.28307.222 |
 | 15.0.20 | Vydaná verze | 11. prosince 2018 | 15.0.26228.64 |

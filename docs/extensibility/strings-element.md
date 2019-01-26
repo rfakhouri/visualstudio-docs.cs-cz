@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a57fa611f157fa588158225cece8d38da2babd0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b62df361a965028240316c14da4c8c9ee8e578c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967878"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997699"
 ---
 # <a name="strings-element"></a>Strings – element
 Řetězce element musí obsahovat alespoň **ButtonText** podřízený element. Všechny ostatní podřízené prvky jsou volitelné. Neplatný kód XML znaky, jako 'a' a ' <' musí být zakódovaný jako entity ("&amp;"a"&lt;" a tak dále).  
@@ -46,7 +46,7 @@ ms.locfileid: "53967878"
 |Prvek|Popis|  
 |-------------|-----------------|  
 |ButtonText –|Toto pole a pět následujících textová pole v definici příkazu umožňují zadat text, který se zobrazí v různých nabídkách. Ve výchozím nastavení `ButtonText` pole se zobrazí v nabídce řadiče. `ButtonText` Pole stane výchozí hodnota je-li další textová pole jsou prázdné. `ButtonText` Pole nemůže být prázdný, i když nejsou určeny další textová pole.|  
-|ToolTipText –|`ToolTipText` Pole určuje text zobrazený v popisku tooltip položky nabídky.<br /><br /> Pokud `ToolTipText` je pole prázdné, `ButtonText` pole se používá.|  
+|ToolTipText|`ToolTipText` Pole určuje text zobrazený v popisku tooltip položky nabídky.<br /><br /> Pokud `ToolTipText` je pole prázdné, `ButtonText` pole se používá.|  
 |MenuText|`MenuText` Pole určuje text, který se zobrazí pro příkaz, pokud je v hlavní nabídce nástrojů, v místní nabídce nebo podnabídky. Pokud `MenuText` je pole prázdné, integrované vývojové prostředí (IDE) používá `ButtonText` pole. `MenuText` Pole můžete také použít pro lokalizaci.<br /><br /> Pro místní nabídky `MenuText` pole je název, který se zobrazí na panelu nástrojů místní nabídky, který umožňuje vlastní nastavení z místní nabídky v integrovaném vývojovém prostředí. Proto se konkrétní v pojmenujete vaší nabídky; například použijte "Widget balíček místní nabídka" místo "Místní".<br /><br /> Pokud `MenuText` pole není zadán, `ButtonText` pole se používá.|  
 |commandName|`CommandName` Pole určuje text, který se zobrazí v kategorii klávesnice v **příkazy** kartu **vlastní** dialogové okno (k dispozici kliknutím **vlastní**na **nástroje** nabídky).|  
 |CanonicalName|Angličtina `CanonicalName` pole určuje název příkazu v anglický text, který je možné zadat v **příkaz** okna k provedení položky nabídky. Integrované vývojové prostředí odstraní všechny znaky, které nejsou písmena, číslice, podtržítka nebo vložený období. Tento text je pak zřetězeny do `ButtonText` pole k definování příkazu. Například **nový projekt** na **souboru** nabídce stane příkaz File.NewProject.<br /><br /> Pokud Angličtina `CanonicalName` pole není zadaný, použije integrovaného vývojového prostředí `ButtonText` pole a všechny s výjimkou písmena, číslice, podtržítka a tečky vložené pásky. Například Text tlačítka "& definovat příkazy..." stane DefineCommands, kde se odeberou ampersand, prostor a na tři tečky.<br /><br /> Pokud `TextChanges` označen příznakem a text příkazu se změní, odpovídající příkaz rozpoznávaných **příkaz** okno nemění; zůstane kanonický tvar původní `ButtonText` nebo Angličtina `CanonicalName` pole.|  

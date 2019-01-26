@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a28d0a7f621315926b04b359527b1d072cc040
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eda49b64e07df606d8fbe9284e634b3164c2ce80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975319"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Vytváření sestav profileru z příkazového řádku
 **VSPerfReport** nástroj příkazového řádku vám umožní vytvořit. *XML* nebo hodnot oddělených čárkami (. *sdílený svazek clusteru*) sestavy z dat profilování (. *Vsp*) soubory. Typy sestav nástroje VSPerfReport přesně odpovídají zobrazením založeným na tabulkách rozhraní pro sadu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sestavu můžete filtrovat a zobrazit pouze váš kód a také zobrazit pouze část souboru dat profilování. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md).  

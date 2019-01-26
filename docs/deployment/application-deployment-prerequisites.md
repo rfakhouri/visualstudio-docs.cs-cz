@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941070"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995684"
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 
@@ -74,11 +74,11 @@ Pokud chcete, aby vaše aplikace k instalaci a spuštění úspěšně, nejprve 
 
 | argument příkazového řádku | Popis |
 | - | - |
-| **-?, -h, – Nápověda** | Zobrazí dialogové okno nápovědy. |
-| **– Adresa url, - componentsurl** | Zobrazí uloženou adresu URL a adresu url komponent pro toto nastavení. |
-| **-url =** `location` | Nastaví adresu URL kde *Setup.exe* bude hledat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. |
-| **-componentsurl =** `location` | Nastaví adresu URL kde *Setup.exe* bude hledat závislosti, jako [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
-| **-homesite =** `true`**&#124;** `false` | Když `true`, stahuje závislosti z preferované umístění na webu dodavatele. Toto nastavení potlačí **- componentsurl** nastavení. Když `false`, soubory ke stažení závislostí v adrese URL zadané hodnotou **- componentsurl**. |
+| **-?, -h, -help** | Zobrazí dialogové okno nápovědy. |
+| **-url, -componentsurl** | Zobrazí uloženou adresu URL a adresu url komponent pro toto nastavení. |
+| **-url=** `location` | Nastaví adresu URL kde *Setup.exe* bude hledat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. |
+| **-componentsurl=** `location` | Nastaví adresu URL kde *Setup.exe* bude hledat závislosti, jako [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-homesite=** `true` **&#124;** `false` | Když `true`, stahuje závislosti z preferované umístění na webu dodavatele. Toto nastavení potlačí **- componentsurl** nastavení. Když `false`, soubory ke stažení závislostí v adrese URL zadané hodnotou **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Podpora operačního systému  
  Zaváděcí nástroj Visual Studio se nepodporuje v systému Windows Server 2008 Server Core nebo Windows Server 2008 R2 Server Core, protože poskytují nízká údržba serveru prostředí s omezenou funkčností. Například možnost instalace jádra serveru podporuje pouze rozhraní .NET Framework 3.5 Server Core profil, který nelze spustit aplikaci Visual Studio funkce, které závisí na úplné rozhraní .NET Framework.  

@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a378efd38a4ccd415276cb1a10f24ff39600894f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935138"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988672"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2: Psání a spouštění kódu
 
@@ -46,7 +46,7 @@ I když **Průzkumníku řešení** je, kde budete spravovat soubory projektu, *
     ![Barevné zvýrazňování syntaxe technologie IntelliSense a zvýrazňování chyb](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Protože jeden z vývojového prostředí je velmi osobní řádu, sada Visual Studio poskytuje úplnou kontrolu nad vzhled a chování aplikace Visual Studio. Vyberte **nástroje** > **možnosti** nabídky příkazů a prozkoumejte nastavení v části **prostředí** a **textový Editor** karty. Ve výchozím nastavení se zobrazí pouze omezený počet možností. Pokud chcete zobrazit všechny dostupné možnosti pro každý programovací jazyk, vyberte **zobrazit všechna nastavení** v dolní části dialogového okna. 
+    > Protože jeden z vývojového prostředí je velmi osobní řádu, sada Visual Studio poskytuje úplnou kontrolu nad vzhled a chování aplikace Visual Studio. Vyberte **nástroje** > **možnosti** nabídky příkazů a prozkoumejte nastavení v části **prostředí** a **textový Editor** karty. Ve výchozím nastavení se zobrazí pouze omezený počet možností. Pokud chcete zobrazit všechny dostupné možnosti pro každý programovací jazyk, vyberte **zobrazit všechna nastavení** v dolní části dialogového okna.
 
 1. Spustit kód, který jste zadali do této chvíle stisknutím kombinace kláves **Ctrl**+**F5** nebo jeho výběru **ladění** > **spustit bez ladění**  položky nabídky. Visual Studio vás upozorní, pokud máte stále chyby v kódu.
 

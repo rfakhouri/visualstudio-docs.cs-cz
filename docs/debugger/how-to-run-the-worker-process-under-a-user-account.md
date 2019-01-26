@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5162d06f54e65dc35fef9e623d1730b66813c0f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffa05e3333d2fba1a1ac8a454b3a6e890ad8b605
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893248"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985614"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Postupy: Spuštění pracovního procesu v rámci uživatelského účtu
 Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovního procesu (aspnet_wp.exe nebo w3wp.exe) v rámci uživatelského účtu, postupujte podle těchto kroků.  
@@ -77,7 +77,7 @@ Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../code-qualit
   
     **Dialogové okno Vybrat uživatele, počítač nebo skupinu** se zobrazí.  
   
-10. Zadejte uživatelské jméno v **zadejte název objektu k výběru** pole a potom klikněte na tlačítko **OK**. Uživatelské jméno musí mít tento formát: Název_domény\uživatelské_jméno.  
+10. Zadejte uživatelské jméno v **zadejte název objektu k výběru** pole a potom klikněte na tlačítko **OK**. Uživatelské jméno musí mít tento formát: DomainName\UserName.  
   
 11. V **položka oprávnění pro dočasné soubory ASP.NET** dialogové okno pole a sdělte mu **úplné řízení**a potom klikněte na tlačítko **OK** zavřete **položku pro dočasné ASP Soubory služby .NET** dialogové okno.  
   

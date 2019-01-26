@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78c284e4dd38b551cc575b20da84152470462fd3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e87fe52e1bdf3fda37f9eda964364e7b5cc13dec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942461"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Přepište Equals() pro hodnoty
 
@@ -30,7 +30,7 @@ ms.locfileid: "53876006"
 |Zpráva|Přepište Equals a operátory rovnosti na hodnotových typech.|  
 |Typ Messge|Upozornění|  
 
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Volání metody Equals a operátory rovnosti veřejné hodnotového typu je podstatnou část dat profilování. Zvažte implementaci metodu efektivnější.  
 
 ## <a name="rule-description"></a>Popis pravidla  

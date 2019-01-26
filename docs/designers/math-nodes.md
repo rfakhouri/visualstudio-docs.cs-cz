@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 820853d92507cf650ea7988ef2405e3948f7ed13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6120975febd9dae5f7cb21e3ab425b1a2389c30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866813"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984805"
 ---
 # <a name="math-nodes"></a>Matematické uzly
 
@@ -37,7 +37,7 @@ V Návrháři shaderu provést matematické uzly algebraických, logiku, trigono
 |**Dělení**|Vypočítá podíl zadané vstupy podle komponent.<br /><br /> Pro každou komponentu výsledku platí, odpovídající komponenta vstupu `X` je podělena odpovídající komponenta vstupu `Y`.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Podíl hodnot.<br /><br /> `Y`: stejné jako vstup `X`<br /> Dělitel hodnoty.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Podíl za součást.|Žádná|
 |**Tečka**|Vypočítá součin zadané vektorů.<br /><br /> Výsledkem je skalární hodnota. Součin můžete použít pro určení úhlu mezi dvěma vektory.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Jedna z podmínek.<br /><br /> `Y`: stejné jako vstup `X`<br /> Jedna z podmínek.<br /><br /> **Výstup:**<br /><br /> `Output`: `float`<br /> Součin.|Žádná|
 |**Dolní mez**|Vypočítá dolní mez zadaný vstup na komponentu.<br /><br /> Pro každou komponentu výsledku platí jeho hodnota je největší celé číslo, které je menší než nebo rovno odpovídající komponentě vstupu. Všechny komponenty jsou ve výsledku je celé číslo.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty, pro kterou chcete vypočítat dolní mez.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Dolní mez, jednotlivé komponenty.|Žádná|
-|**Fmod –**|Vypočítá podle komponent zbytku (modulo) zadané vstupy.<br /><br /> Pro každou komponentu výsledku, některé integrální více (celé číslo), m, odpovídající komponenty vstupu `Y` je odečtena od odpovídající komponenty vstupu `X`, ponechání zbytek. Násobek, m, je vybrán tak, aby zbývající je menší než odpovídající komponenta vstupu `Y` a má stejné znaménko jako odpovídající komponenta vstupu `X`. Fmod (-3,14, 1.5) je například-0.14.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Podíl hodnot.<br /><br /> `Y`: stejné jako vstup `X`<br /> Dělitel hodnoty.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Modulus za součást.|Žádná|
+|**Fmod**|Vypočítá podle komponent zbytku (modulo) zadané vstupy.<br /><br /> Pro každou komponentu výsledku, některé integrální více (celé číslo), m, odpovídající komponenty vstupu `Y` je odečtena od odpovídající komponenty vstupu `X`, ponechání zbytek. Násobek, m, je vybrán tak, aby zbývající je menší než odpovídající komponenta vstupu `Y` a má stejné znaménko jako odpovídající komponenta vstupu `X`. Fmod (-3,14, 1.5) je například-0.14.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Podíl hodnot.<br /><br /> `Y`: stejné jako vstup `X`<br /> Dělitel hodnoty.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Modulus za součást.|Žádná|
 |**Frac**|Odebere zadaný vstup za součást součást (celé číslo).<br /><br /> Pro každou komponentu výsledku platí nedílnou součástí odpovídající komponenty vstupu bude odebrána, ale desetinná část a znaménko budou ponechány. Desetinná hodnota spadá do rozsahu [0, 1). Například hodnoty -3,14 se stane hodnotou-0.14.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty, pro kterou chcete vypočítat zlomkové části.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Zlomkové části jednotlivé komponenty.|Žádná|
 |**Lerp**|Lineární interpolace. Výpočetní prostředí podle komponent vážený průměr zadané vstupy.<br /><br /> Pro každou komponentu výsledku platí, vážený průměr odpovídajících komponent vstupy `X` a `Y`. Váha poskytuje `Percent`,-skalárem a je jednotně aplikována na všechny komponenty. Můžete to lze interpolovat mezi body, barvami, atributy a jiné hodnoty.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Původní hodnota. Když `Percent` je nula, výsledkem je rovna tento vstup.<br /><br /> `Y`: stejné jako vstup `X`<br /> Hodnota, kterou terminálu. Když `Percent` je 1, výsledkem je rovna tento vstup.<br /><br /> `Percent`: `float`<br /> Váhy skalární, vyjádřený jako procentní podíl vzdálenost od vstup `X` směrem k zadání `Y`.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Hodnota, která je závěry se zadané vstupy.|Žádná|
 |**Vynásobit Sčítanec**|Vypočítá podle komponent přičti zadané vstupy.<br /><br /> Pro každou komponentu výsledku platí, produkt odpovídající komponenty vstupů `M` a `A` se přidá k odpovídající komponentě vstupu `B`. Sekvence této operace se vyskytuje v běžných vzorcích – např. v rovnici přímky ve bod sklon a ve vzorcích pro škálování a pak usměrňovat vstup.<br /><br /> **Vstup:**<br /><br /> `M`: `float`, `float2`, `float3`, nebo `float4`<br /> Jedna z hodnot se má vynásobit společně.<br /><br /> `A`: stejné jako vstup `M`<br /> Jedna z hodnot se má vynásobit společně.<br /><br /> `B`: stejné jako vstup `M`<br /> Hodnoty pro přidání do součin dvou vstupů.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `M`<br /> Výsledek přičti, jednotlivé komponenty.|Žádná|

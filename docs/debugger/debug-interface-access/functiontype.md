@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 646a07e7-9d4f-4e21-95e3-3e403cdd4843
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aba81b4557bf91c2d50e5267fc6af69c3e84edf5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d7542b2d0fb291af57de5596bbeb2320d28db4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970835"
 ---
 # <a name="functiontype"></a>FunctionType
 Každý podpis jedinečné funkce je identifikovaná `SymTagFunctionType` symbol. Každý parametr je označen jako symbol podřízené třídy `SymTagFunctionArgType` značky.  
@@ -46,5 +46,5 @@ Každý podpis jedinečné funkce je identifikovaná `SymTagFunctionType` symbol
   
 ## <a name="see-also"></a>Viz také  
  [Hierarchie tříd typů symbolů](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [Cv_access_e – výčet](../../debugger/debug-interface-access/cv-access-e.md)   
+ [CV_access_e Enumeration](../../debugger/debug-interface-access/cv-access-e.md)   
  [FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)

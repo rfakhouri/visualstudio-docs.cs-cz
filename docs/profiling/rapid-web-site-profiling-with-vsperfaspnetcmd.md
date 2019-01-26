@@ -7,15 +7,15 @@ helpviewer_keywords:
 - VSPerfASPNETCmd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8ec48f7e860d4588a1d133792ceeb1c26add45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 617e032805f0074b813bc3a7dc5a66047186861b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849642"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989715"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotová profilace stránek pomocí VSPerfASPNETCmd webových
 
@@ -45,7 +45,7 @@ Do profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou
 
 Použijte následující příkazový řádek ke shromažďování podrobných dat časování z dynamicky kompilovaných [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace:
 
-**příkaz vsperfaspnetcmd/trace***websiteUrl*
+**vsperfaspnetcmd /trace**  *websiteUrl*
 
 Pokud chcete Profilovat staticky zkompilovány. *dll* soubory ve webové aplikaci, musíte pomocí instrumentace soubory [VSInstr](../profiling/vsinstr.md) nástroj příkazového řádku. Příkaz vsperfaspnetcmd/trace bude obsahovat data z instrumentované souborů.
 
@@ -72,11 +72,11 @@ Pokud chcete Profilovat staticky zkompilovány. *dll* soubory ve webové aplikac
 
 Shromažďování dat interakce vrstev s vzorkování dat:
 
-**Tip vsperfaspnetcmd** `websiteUrl`
+**vsperfaspnetcmd /tip** `websiteUrl`
 
 Shromažďování dat interakce vrstev se data instrumentace:
 
-**příkaz vsperfaspnetcmd/trace tip** *websiteUrl*
+**vsperfaspnetcmd /trace /tip** *websiteUrl*
 
 Shromažďování dat interakce vrstev s dat paměti .NET:
 
@@ -101,4 +101,4 @@ Lze přidat kterýkoliv z následujících možností pro příkazy uvedené dř
 |Možnost|Popis|
 |------------|-----------------|
 |**/ Output:** `VspFile`|Ve výchozím nastavení dat profilování (. *Vsp*) vytvoří soubor v aktuálním adresáři s názvem souboru **souboru PerformanceReport.vsp**. Pomocí možnosti/Output můžete zadat jiné umístění a název souboru.|
-|**/ PackSymbols: vypnuto**|Ve výchozím nastavení, VsPerfASPNETCmd vloží symboly (a funkce a parametr názvů atd.). *vsp* souboru. Vkládání symbolů můžete nastavit, soubor dat profilování velmi velká. Pokud budete mít přístup k. *pdb* soubory, které obsahují symboly při analýze dat, použijte / packsymbols: možnost zakázat, vkládání symboly vypnuté.|
+|**/PackSymbols:Off**|Ve výchozím nastavení, VsPerfASPNETCmd vloží symboly (a funkce a parametr názvů atd.). *vsp* souboru. Vkládání symbolů můžete nastavit, soubor dat profilování velmi velká. Pokud budete mít přístup k. *pdb* soubory, které obsahují symboly při analýze dat, použijte / packsymbols: možnost zakázat, vkládání symboly vypnuté.|
