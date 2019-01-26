@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e8df1972-913c-446c-9779-775575b0caa9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf18ed2bb25ab2632c471c0da7d19ea54239c70d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f309b0e3651f3832eba905cd17a5de9bebd5df40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019707"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Získá příznak, který určuje, zda systém zpracování výjimek je v platnosti.  
@@ -43,5 +43,5 @@ HRESULT get_systemExceptionHandling ( 
  Chcete-li zjistit, zda zpracování výjimek jazyka C++ je v platnosti, zavolejte [idiaframedata::get_cplusplusexceptionhandling –](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) metody.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)

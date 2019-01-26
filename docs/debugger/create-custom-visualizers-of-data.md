@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 8649e862a20e6f6c854a2bbe67b756103c5e68dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54204385"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009040"
 ---
 # <a name="create-custom-data-visualizers"></a>Vytvoření vlastních dat vizualizéry
  A *vizualizéru* je součástí [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] uživatelské rozhraní ladicího programu, který se zobrazí proměnné nebo objektu způsobem odpovídajícím k jeho datovému typu. Například HTML vizualizér interpretuje řetězec ve formátu HTML a výsledek zobrazí, jak se bude zobrazovat v okně prohlížeče. Rastrový obrázek vizualizéru interpretuje struktura rastrový obrázek a zobrazí obrázek, který představuje. Některé vizualizéry umožňují měnit také zobrazit data.

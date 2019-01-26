@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 260fab33f8303ddc00b3d80b776786239746ba4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227379"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005654"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Ladění více procesů (C#, Visual Basic, C++)
 
@@ -140,7 +140,7 @@ Můžete se připojit k více procesům při ladění, ale pouze jeden proces je
 
 1. V **procesy** okna aktuální proces je označen žlutou šipkou. Dvakrát klikněte na proces, který chcete nastavit jako aktuální proces.  
   
-   ![Procesy – okno](../debugger/media/dbg_processeswindow.png "DBG_ProcessesWindow")  
+   ![Processes window](../debugger/media/dbg_processeswindow.png "DBG_ProcessesWindow")  
 
 Přepínání procesu nastaví jako aktuální proces pro účely ladění. Ladicí program systému windows zobrazit stav pro aktuální proces a příkazy krokování ovlivní pouze aktuální proces.  
   

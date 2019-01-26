@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa257de86367f2531cce5c57080cd059856fa82a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66bada6b1c1f0a925277fcc1716659ba431c35d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902851"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039959"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarchie tříd typů symbolů
 Následující tabulka popisuje typy symbolu v hierarchii tříd.  
@@ -46,6 +46,6 @@ Následující tabulka popisuje typy symbolu v hierarchii tříd.
 >  Každý symbol může mít vlastnosti, které obsahují informace o symbolu, jakož i odkazy na jiné symboly. Tyto vlastnosti jsou uvedeny v tématech pro jednotlivé symbol.  
   
 ## <a name="see-also"></a>Viz také  
- [Cv_access_e – výčet](../../debugger/debug-interface-access/cv-access-e.md)   
+ [CV_access_e Enumeration](../../debugger/debug-interface-access/cv-access-e.md)   
  [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Symboly a značky symbolů](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

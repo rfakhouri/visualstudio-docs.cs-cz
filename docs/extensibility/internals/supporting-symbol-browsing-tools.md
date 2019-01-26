@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ba75a0b62f2b0cbac1d7c60875dd322d0feaf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d051809d02624f686f3ffc5408441d18e890854
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001482"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Podpůrné nástroje procházení symbolů
 **Prohlížeč objektů**, **zobrazení tříd**, **volání prohlížeče** a **výsledky hledáni symbolu** nástroje poskytují možnosti v sadě Visual Studio procházení symbolů. Tyto nástroje hierarchické stromové zobrazení symbolů a zobrazení vztahů mezi symboly ve stromové struktuře. Symboly mohou představovat obory názvů, objektů, tříd, členů třídy a další prvky jazyka, které jsou obsažené v různých komponent. Součásti zahrnují projektů sady Visual Studio, externí [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] komponenty a knihovny typů (.tlb). Další informace najdete v tématu [zobrazení struktury kódu](../../ide/viewing-the-structure-of-code.md).  

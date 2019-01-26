@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5d4294e5d8b466f6f6eaba47196f4e92d573b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 770d5653cb1249a0eab2d3a7bdca6ff1e87c8801
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010360"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Createnewfolder – element (šablony sady Visual Studio)
 Určuje, jestli se má zkontrolovat, že cílový adresář, ve kterém se má vytvořit projekt neexistuje. Pokud adresář neexistuje, lze vytvořit nový adresář pro projekt. Toto nastavení je obvykle přepsat `NewProjectRequiresNewFolder(VsTemplate)` příznak registru (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), že všechny běžné typy projektů použít k určení, zda chcete vytvořit nový projekt v novém adresáři.  
   
  \<Vstemplate – >  
- \<TemplateData >  
- \<Createnewfolder – >  
+ \<TemplateData>  
+ \<CreateNewFolder>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,7 +51,7 @@ Určuje, jestli se má zkontrolovat, že cílový adresář, ve kterém se má v
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  

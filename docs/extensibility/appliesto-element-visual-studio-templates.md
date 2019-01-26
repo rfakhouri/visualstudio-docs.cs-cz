@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c760c4a66a3f1d4bc9e3956d2d7dc824145d7cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8616d2cf922f1522f44470bc76ed3b80e3ef9ceb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912779"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008891"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo – element (šablony sady Visual Studio)
 Určuje volitelný výraz, který musí odpovídat jedné nebo více možnostem (viz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Možnosti jsou vystavené typy projektů hierarchie jako vlastnost <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. Tímto způsobem může šablony sdílet více typů projektů, které mají společné příslušné schopnosti.  
@@ -24,7 +24,7 @@ Určuje volitelný výraz, který musí odpovídat jedné nebo více možnostem 
  Zavedena v aplikaci Visual Studio 2013 Update 2. Tak, aby odkazovaly na správné verzi, najdete v článku [odkazování na sestavení doručit v aktualizaci 2 pro Visual Studio 2013 SDK](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<Vstemplate – >  
- \<TemplateData >  
+ \<TemplateData>  
  \<AppliesTo – >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -46,7 +46,7 @@ Určuje volitelný výraz, který musí odpovídat jedné nebo více možnostem 
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Určuje kategorii šablony.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Určuje kategorii šablony.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota. Tento text určuje schopnosti projektu.  

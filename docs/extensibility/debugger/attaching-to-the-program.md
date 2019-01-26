@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50c9ce5079f15c945c963f530997d9bbc333bc42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 631ccf0b9bd48278318c857e5b6011898bac72ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832606"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014598"
 ---
 # <a name="attach-to-the-program"></a>Připojit k programu
 Po registraci svých programů s příslušný port je nutné připojit ladicí program k program, který chcete ladit.  
@@ -35,7 +35,7 @@ Po registraci svých programů s příslušný port je nutné připojit ladicí 
   
    Pokud spuštění vašeho DE ve stejném procesu jako aplikace k ladění, pak musíte implementovat tyto metody [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
-- [Gethostname –](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
   
 - [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   

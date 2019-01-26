@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce819f5d0a7167c4fce2871894df7c6edd26e6a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871700"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020562"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony
 
@@ -280,4 +280,4 @@ Odpověď: Když Django hledá šablonu podle `render` funkce, používá jakýk
 - [Zápis svoji první aplikaci Django, část 1 – zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Další možnosti Django šablony, jako například zahrnuje a dědičnosti, naleznete v tématu [jazyk šablony Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - [Regulární výraz školení inLearning](https://www.linkedin.com/learning/topics/regular-expressions) (LinkedIn)
-- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: bef799b564c4d7bc7eada541bf0c88067403738e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f50c805aa0086a575b9a1dafcc590a42ddd319c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940811"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978201"
 ---
 # <a name="about-domain-specific-languages"></a>O jazycích specifických pro konkrétní domény
 
@@ -77,7 +77,7 @@ Grafické jazyka specifického pro doménu, musí obsahovat následující funkc
 
 Jazyka specifického pro doménu, musí mít poměrně malého počtu prvků, které lze snadno definované a rozšířená tak, aby představují konstrukce jazyka specifického pro doménu. Zápis se skládá z tvary, které zastupují elementy, a konektorů, které představují vztahy mezi elementy, na ploše Grafický diagram. V [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], tvary můžou být dále rozšiřována a vylepšili o představují prvky jazyka specifického pro doménu.
 
-### <a name="domain-model"></a>Doménový Model
+### <a name="domain-model"></a>Domain Model
 
 Jazyka specifického pro doménu obsahující kombinaci sadu elementů a vztahů mezi nimi do koherentního gramatiky. Musíte také definovat, zda kombinace různých typů elementů a vztahů jsou platné. Například programovacích jazyků obvykle zakázat Cyklické dědění, ve které jedna třída je odvozena z třídy sekundu a druhá třída je odvozena od třídy první. Omezení je také možné vyjádřit obchodní logiky, například jedna osoba nemůže být závislá aplikace sám. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pomocí omezení express typy omezení, které vyžadují nejvíc jazyky specifickými pro doménu.
 

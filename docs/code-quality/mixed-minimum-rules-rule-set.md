@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4cc4ddb6a8d6ceb7fd6d7f0874f9f0fdfd66981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32592ce00088e4072ed6fc614c5af44004e7a2c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830385"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009710"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Sada pravidel Smíšená minimální pravidla
 Smíšená minimální pravidla společnosti Microsoft se soustředí na nejdůležitější problémy v projektech C++, které podporují modul Common Language Runtime, včetně možných bezpečnostních děr a selhání aplikace. Měli byste zahrnout tuto sadu pravidel v jakékoli vlastní sadě pravidel, že kterou vytvoříte pro vaše projekty C++, které podporují modul Common Language Runtime.
@@ -151,7 +151,7 @@ Smíšená minimální pravidla společnosti Microsoft se soustředí na nejdůl
 |[C28305](../code-quality/c28305.md)|Zjistila se chyba při analýze tokenu.|
 |[C28350](../code-quality/c28350.md)|Poznámka popisuje situaci, která není podmíněně použitelná.|
 |[C28351](../code-quality/c28351.md)|Poznámka popisuje, kde dynamickou hodnotu (proměnnou) nelze použít v podmínce.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, které vlastní uvolnitelné pole by měly být uvolnitelné|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Odstraňte prázdné finalizační metody|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Uvolnitelné pole by mělo být uvolněno|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Přetižte operátor equals při přepsání ValueType.Equals|
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, které vlastní uvolnitelné pole, by měly být uvolnitelné|
+|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Odeberte prázdné finalizační metody|
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Uvolnitelná pole by měla být uvolněna|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Přetižte operátor rovnosti při přetížení ValueType.Equals|

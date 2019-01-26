@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 711b81fd-9549-44dc-9761-5eb862ed64c0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab73bfbfb859967d9df4f27d6d254334a27e53ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6b92bc36a18125322ea105a7c99fb8b586f54cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879394"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020123"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Získá příznak označující, zda modul byl převeden z modulu Common Intermediate Language (CIL) do nativního modulu.  
@@ -51,5 +51,5 @@ HRESULT get_isCVTCIL(
 |Verze:|Ve verzi 8.0 DIA SDK|  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

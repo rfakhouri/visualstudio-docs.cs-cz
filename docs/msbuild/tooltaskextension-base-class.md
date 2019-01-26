@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07728e5f978fce519fa0acdff28d38b987621593
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885676"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010347"
 ---
 # <a name="tooltaskextension-base-class"></a>Tooltaskextension – základní třída
 Dědí celou řadu úloh <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která dědí z <xref:Microsoft.Build.Utilities.ToolTask> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Tento řetězec dědičnosti přidá několik parametrů do úlohy, které jsou odvozeny z nich. Tyto parametry jsou uvedeny v tomto dokumentu.  

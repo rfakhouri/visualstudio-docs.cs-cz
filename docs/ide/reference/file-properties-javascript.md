@@ -23,15 +23,15 @@ f1_keywords:
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8706264733faf147c2f53ffceff401ca42432d6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9fc9832ba7774f58d5f1826e633dfd9bf24ce205
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946539"
 ---
 # <a name="file-properties-javascript"></a>Vlastnosti souboru, JavaScript
 Vlastnosti souboru můžete použít k označení jaké akce systém projektu by měl provádět na souborech. Můžete třeba nastavit vlastnosti souboru k označení, zda má soubor přidat do balíčku jako soubor prostředků.
@@ -87,7 +87,7 @@ Výchozí hodnota pro **akce balíčku** závisí na příponu souboru, který p
 ### <a name="sdk-path"></a>Cestu k sadě SDK
  Zobrazuje cestu k odkazovanému souboru sady SDK.
 
-### <a name="uri"></a>Identifikátor URI
+### <a name="uri"></a>Uri
  Zobrazuje identifikátor URI, který musí být součástí projektu HTML nebo JavaScript soubory k zahrnutí souboru jako zdrojový soubor.
 
 ### <a name="version"></a>Version

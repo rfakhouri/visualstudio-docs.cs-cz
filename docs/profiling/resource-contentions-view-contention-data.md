@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57fc5075ee375ed73b448e8a90e8bb2c3e22e7bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870505"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970809"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Zobrazení kolizí prostředku – data kolizí
 Zobrazení kolizí prostředku obsahuje data kolize prostředků, které byly zdroj kolizní události. Kolize událost nastane, pokud funkce ve vlákně je nuceni čekat přístup k prostředku, protože funkce v jiném vlákně má získat výhradní přístup k prostředku. Každý prostředek je kořenový uzel stromu volání, která zobrazuje cesty spuštění funkce, jejichž výsledkem kolizní události.  

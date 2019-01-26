@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3129fe384dc434f10024336a3e53864babcd5eb4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d001e324352c566d71e66ae26d769cc8f3c2f644
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917407"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011514"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Události QEQS (Query Edit Query Save) (balíček VSPackage správy zdrojového kódu)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editory můžete vysílat události dotazu upravit dotaz uložit (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zdrojový ovládací prvek se zakázaným inzerováním implementuje QEQS služby tak, aby se příjemce události QEQS. Tyto události jsou pak přeneseny na aktuálně aktivní zdrojového balíčku VSPackage. Ovládací prvek active zdroje balíčku VSPackage implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> a její metody. Metody `IVsQueryEditQuerySave2` rozhraní se běžně označují jako okamžitě předtím, než se dokument upravovat poprvé a bezprostředně před uložení dokumentu.  
   
-## <a name="queryeditquerysave-events"></a>QueryEditQuerySave události  
+## <a name="queryeditquerysave-events"></a>QueryEditQuerySave Events  
  Ovládací prvek zdroje balíčku VSPackage musí zpracovávat události QEQS implementací `IVsQueryEditQuerySave2` rozhraní a metody potřebné. Níže je uveden stručný popis dvě metody, které sady VSPackage musí implementovat minimálně. Skutečná implementace musí být v souladu s logiky model správy zdrojového kódu.  
   
 ### <a name="queryeditfiles-method"></a>QueryEditFiles – metoda  

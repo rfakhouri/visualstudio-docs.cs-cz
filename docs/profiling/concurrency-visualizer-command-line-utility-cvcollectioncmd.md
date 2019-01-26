@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3627398d4a0b7d069b626ee8dc2b9e95ab81d10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986840"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013064"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku ve Vizualizéru souběžnosti (CVCollectionCmd)
 Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*CVCollectionCmd.exe*) Chcete-li shromažďovat trasování z příkazového řádku, takže můžete je zobrazit v Concurrency Visualizer pro sadu Visual Studio. Nástroje lze použít na počítačích, které nemají nainstalovanou sadu Visual Studio.  
@@ -64,16 +64,16 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*C
 
 | Značka | Popis | Hodnoty |
 |-------------------------| - | - |
-| Konfigurace | Vymezuje pásma celkové konfiguračního souboru. | Musí obsahovat tyto prvky:<br /><br /> -Podverze<br />-Hlavní verze |
+| Konfigurace | Vymezuje pásma celkové konfiguračního souboru. | Musí obsahovat tyto prvky:<br /><br /> -Podverze<br />-   MajorVersion |
 | Hlavní verze | Určuje hlavní verzi konfiguračního souboru. | Musí být 1 pro [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projekty. Pokud ne 1, nástroj nebude fungovat. |
 | Podverze | Určuje dílčí verze konfiguračního souboru. | Musí být 0 pro [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projekty. Pokud není 0, nástroj nebude fungovat. |
 | IncludeEnvSymbolPath | Nastaví hodnotu, která určuje, zda se používá cestu k symbolu prostředí (_NT_SYMBOL_PATH). | -True<br />-False |
 | DeleteEtlsAfterAnalysis | Nastaví hodnotu, která určuje, jestli se po dokončení analýzy odstranit soubory ETL. | -True<br />-False |
-| Symbolpath – | Určuje cestu k serveru symbolů. Další informace najdete v tématu [použijte Microsoft Symbol Server k získání souborů se symboly ladění](http://go.microsoft.com/fwlink/?LinkID=149389). | Název adresáře nebo adresu URL. |
+| SymbolPath | Určuje cestu k serveru symbolů. Další informace najdete v tématu [použijte Microsoft Symbol Server k získání souborů se symboly ladění](http://go.microsoft.com/fwlink/?LinkID=149389). | Název adresáře nebo adresu URL. |
 | Značky | Obsahuje seznam zprostředkovatelů značky. | Může obsahovat nula nebo více prvků MarkerProvider. |
 | MarkerProvider | Určuje zprostředkovatele jednu značku. | Musí obsahovat tyto prvky:<br /><br /> -Úroveň<br />-IDENTIFIKÁTOR GUID<br />– Název<br /><br /> Může obsahovat tyto prvky:<br /><br /> -Kategorie<br />-IsEnabled |
 | úroveň | Nastaví úroveň důležitosti MarkerProvider. | – Nízká<br />-Normální<br />– Vysoká<br />– Kritické<br />-Vše |
-| Guid | Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek. | IDENTIFIKÁTOR GUID. |
+| Guid | Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek. | A GUID. |
 | Název | Určuje popis poskytovatele značek. | Řetězec. |
 | Kategorie | Určuje kategorie shromážděných pro poskytovatele značek. | Řetězec oddělených čárkou čísla nebo rozsahy čísel. |
 | hodnotu isEnabled | Nastaví hodnotu, která určuje, zda je povoleno poskytovatele značek pro kolekci. | -True<br />-False |

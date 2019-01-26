@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9d478aa328337d3a2b08c74fcbbf7166580962
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828352"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018342"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpečení přístupu ke kódu pro aplikace ClickOnce
 Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s omezením zabezpečení přístupu kódu. Z tohoto důvodu je důležité, že rozumíte důsledkům kód přistupovat k zabezpečení a zapisovat vaše aplikace ClickOnce odpovídajícím způsobem.  

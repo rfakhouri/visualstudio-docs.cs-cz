@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Vynucování Udržovatelného kódu pomocí zásady vracení se změnami kód analýzy'
+title: 'Postupy: Vynucení udržovatelného kódu pomocí zásad vracení zpět se změnami analýzy kódu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9b868054813f65e15c3dfd422be7240df09e284
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825710"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956750"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Postupy: Vynucování udržovatelného kódu pomocí zásady vracení se změnami kód analýzy
 

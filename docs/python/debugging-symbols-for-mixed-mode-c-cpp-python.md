@@ -6,16 +6,16 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d61c3bcf9e7d403a73c78700257f1ecfe8a70fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885965"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010152"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalace interpretů Pythonu symboly pro ladění
 
@@ -51,7 +51,7 @@ Pokud jste si stáhli samostatně symboly, podle následujících pokynů sada V
 
 1. Vyberte **nástroje** > **možnosti** nabídky a přejděte do **ladění** > **symboly**.
 
-1. Vyberte **přidat** tlačítko na panelu nástrojů (popsaných níže), zadejte složku, kam jste rozbalili stažené symboly (což je tam, kde *python.pdb* nachází, jako například *c:\python34\Symbols* , jak je znázorněno níže) a vyberte **OK**. 
+1. Vyberte **přidat** tlačítko na panelu nástrojů (popsaných níže), zadejte složku, kam jste rozbalili stažené symboly (což je tam, kde *python.pdb* nachází, jako například *c:\python34\Symbols* , jak je znázorněno níže) a vyberte **OK**.
 
     ![Možnosti symbolů ladění ve smíšeném režimu](media/mixed-mode-debugging-symbols.png)
 
@@ -62,9 +62,9 @@ Pokud jste si stáhli samostatně symboly, podle následujících pokynů sada V
 
 ## <a name="official-distributions"></a>Oficiální distribuce
 
-| Verze Pythonu | Soubory ke stažení | 
-| --- | --- | 
-| 3.5 a novější | Nainstalujte symboly přes instalační program Pythonu. | 
+| Verze Pythonu | Soubory ke stažení |
+| --- | --- |
+| 3.5 a novější | Nainstalujte symboly přes instalační program Pythonu. |
 | 3.4.4 | [32-bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

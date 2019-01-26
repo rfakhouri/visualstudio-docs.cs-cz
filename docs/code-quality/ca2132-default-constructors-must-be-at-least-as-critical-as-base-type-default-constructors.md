@@ -1,5 +1,5 @@
 ---
-title: 'CA2132: Výchozí konstruktory nesmějí být kritické jako výchozí konstruktory základního typu'
+title: 'CA2132: Výchozí konstruktory musí být alespoň tak kritické, jako výchozí konstruktory základního typu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: e758afa1-8bde-442a-8a0a-bd1ea7b0ce4d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68dd8093d279ae1a2651bc04845b2459b9fb3808
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfe6e4f3ce896e5ae3d728a002bf2caf9f1948ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912792"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013532"
 ---
-# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: Výchozí konstruktory nesmějí být kritické jako výchozí konstruktory základního typu
+# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: Výchozí konstruktory musí být alespoň tak kritické, jako výchozí konstruktory základního typu
 
 |||
 |-|-|
@@ -30,7 +30,7 @@ ms.locfileid: "53912792"
 > [!NOTE]
 > Toto upozornění se použije pouze na kód, který je spuštěn CoreCLR (verze CLR, který je specifický pro webové aplikace Silverlight).
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Atribut transparentnosti výchozího konstruktoru odvozené třídy není tak kritický jako transparentnosti základní třídy.
 

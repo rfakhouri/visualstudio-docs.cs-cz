@@ -9,17 +9,17 @@ ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c41aac277136de164ba7148e26fc9c0f422b2eef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853915"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014611"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Rychlý start: Pomocí sady Visual Studio k vytvoření vaší první C# Konzolová aplikace
 
@@ -49,7 +49,7 @@ Nejprve vytvoříte aplikaci projektu jazyka C#. Typ projektu obsahuje všechny 
 
 ## <a name="create-the-application"></a>Vytvoření aplikace
 
-Po výběru šablony projektu C# a pojmenujte svůj projekt, Visual Studio vytvoří jednoduchou aplikaci "Hello World". 
+Po výběru šablony projektu C# a pojmenujte svůj projekt, Visual Studio vytvoří jednoduchou aplikaci "Hello World".
 
 (K tomu, které volá <xref:System.Console.WriteLine%2A> metodu pro zobrazení řetězcový literál "Hello World!" v okně konzoly.)
 

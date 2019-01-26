@@ -16,15 +16,15 @@ helpviewer_keywords:
 - HPC profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df5a05b3ffe4a8ab05fb548a8ca41b6a61f747d5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856654"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963486"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Clustery profilu v prostředí HPC (vysokovýkonné výpočetní prostředí)
 
@@ -44,17 +44,17 @@ Chcete-li Profilovat na výpočetním uzlu HPC, postupujte takto:
 
 2. Samostatné příkazového řádku zadejte následující příkazy:
 
-    1. `clusrun /all /scheduler:` *Hlavní uzel % % FxPath %* `/q /norestart`
+    1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:` *% Hlavního uzlu* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
-    3. `clusrun /all /scheduler:` *Hlavní uzel % % ProfilerPath %* `/q /norestart`
+    3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
 | | |
 |------------------| - |
-| *% Hlavního uzlu* | Název hlavního uzlu clusteru. |
+| *%HeadNode%* | Název hlavního uzlu clusteru. |
 | *%FxPath%* | Cesta k [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalační služby. Na instalačním médiu nástroje Visual Studio je cesta: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Cesta k verzi samostatného instalačního programu nástrojů pro profilaci sady. Na instalačním médiu nástroje Visual Studio je cesta: Samostatné Profiler\x64\vs_profiler.exe |
+| *%ProfilerPath%* | Cesta k verzi samostatného instalačního programu nástrojů pro profilaci sady. Na instalačním médiu nástroje Visual Studio je cesta: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Provádějte profilaci na výpočetním uzlu HPC
 
