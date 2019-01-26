@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2050b3014030cc7fe8687e46a6260e6147440a4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844666"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953104"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenční dokumentace schématu produktů a balíčků
 A *souboru produktu* je souborů manifestu XML, který popisuje všechny externí závislosti vyžadované [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Příklady externích závislostí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a Microsoft Data Access Components (MDAC). Soubor balíčku se podobá souboru produktu, ale se používá k instalaci součásti závislých na jazykové verzi závislosti, jako je například lokalizované sestavení, licenční smlouvy a dokumentace.  
@@ -44,7 +44,7 @@ A *souboru produktu* je souborů manifestu XML, který popisuje všechny extern�
 |[\<RelatedProducts > – Element](../deployment/relatedproducts-element-bootstrapper.md)|Volitelný element pro soubory produktu. Tyto další produkty, které tento produkt instaluje nebo závisí.|Žádná|  
 |[\<InstallChecks > – Element](../deployment/installchecks-element-bootstrapper.md)|Požadovaný element. Seznamy kontroluje závislost provádět na místním počítači během instalace.|Žádná|  
 |[\<Příkazy > – Element](../deployment/commands-element-bootstrapper.md)|Požadovaný element.  Spustí jeden nebo více kontroly instalace, jak je popsáno v `InstallChecks`a označuje balíčky, které k instalaci by se neměla kontrola selže.|Žádná|  
-|[\<PackageFiles > – Element](../deployment/packagefiles-element-bootstrapper.md)|Požadovaný element. Zobrazí seznam balíčků, které by mohl být nainstalován tímto procesem instalace.|Žádná|  
+|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Požadovaný element. Zobrazí seznam balíčků, které by mohl být nainstalován tímto procesem instalace.|Žádná|  
 |[\<Řetězce > – Element](../deployment/strings-element-bootstrapper.md)|Požadovaný element. Ukládá lokalizované verze produktu název a chybové řetězce.|Žádná|  
   
 ## <a name="remarks"></a>Poznámky  

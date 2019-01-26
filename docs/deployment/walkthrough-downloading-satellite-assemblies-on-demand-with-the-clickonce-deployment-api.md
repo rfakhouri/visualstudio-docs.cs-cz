@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fd91b5aae7df4f29ca91ef6e94e7da1803481a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 774e4b3691a21350a5a8b7118072957e80b5e44e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919171"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Průvodce: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
 Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelitních sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikací pro jazykovou verzi, než je výchozí jazykovou verzi aplikace.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 64d17c8a375a5e579c6c2720afb118f1940c4a0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925206"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935030"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Soubory popisu adresáře šablon (.Vsdir)
 Soubor popisu adresáře šablon (.vsdir) je textový soubor, který umožňuje integrované vývojové prostředí (IDE) pro zobrazení složek, souborů průvodce .vsz a souborů šablon, které jsou spojené s projektem v dialogových oknech. Obsah zahrnuje jeden záznam na souboru nebo složky. Všechny soubory .vsdir v odkazované umístění jsou sloučeny, i když jediný projektový soubor je obvykle zadáváno popisující více složek, průvodců nebo soubory šablon.  

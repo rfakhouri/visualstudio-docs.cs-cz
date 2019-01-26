@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dfc83477c8d77788ce35dc9e4f543344f611cf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8df7dc811a9e4115998e3d423d749edfbdb62278
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902529"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943770"
 ---
 # <a name="add-search-to-a-tool-window"></a>Přidání vyhledávání do panelu nástrojů
 Při vytváření nebo aktualizace panelu nástrojů v rozšíření, můžete přidat stejný integraci vyhledávacích funkcí, které se zobrazí jinde v sadě Visual Studio. Tato funkce zahrnuje následující funkce:  

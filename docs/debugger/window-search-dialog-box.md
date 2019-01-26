@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a57e0bacdbe12b889879eaca417127953f90beb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc95b38e755ec9d8e1b14be3c1045d5be0f0bd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826267"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951492"
 ---
 # <a name="window-search-dialog-box"></a>Dialogové okno hledání oken
 Pomocí tohoto dialogového najděte a vyberte uzel pro konkrétní okno v [zobrazení Windows](../debugger/windows-view.md). Chcete-li zobrazit toto dialogové okno, přesunutí výběru na okno zobrazení Windows. Klikněte na tlačítko **najít okno** z **hledání** nabídky.  

@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845951"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948199"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Správa balíčků npm v sadě Visual Studio
 
@@ -36,7 +36,7 @@ Nejjednodušší způsob, jak nainstalovat balíčky npm se prostřednictvím ok
 
 ![Nainstalujte nový balíček npm z Průzkumníka řešení](../javascript/media/solution-explorer-install-package.png)
 
-V tomto okně můžete vyhledat balíček, zadejte možnosti a nainstalovat. 
+V tomto okně můžete vyhledat balíček, zadejte možnosti a nainstalovat.
 
 ![Hledání balíčku npm](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ Můžete také použít `.npm` v interaktivním okně Node.js příkazy npm. Pok
 V okně slouží k instalaci balíčku příkazech, jako je následující:
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > Ve výchozím nastavení spustí npm v domovském adresáři vašeho projektu. Pokud máte více projektů v řešení zadejte název nebo cestu k projektu v závorkách. 
+ > Ve výchozím nastavení spustí npm v domovském adresáři vašeho projektu. Pokud máte více projektů v řešení zadejte název nebo cestu k projektu v závorkách.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Pokud projekt neobsahuje soubor package.json, použijte `.npm init -y` vytvořte nový soubor package.json pomocí výchozí položky. 
+ > Pokud projekt neobsahuje soubor package.json, použijte `.npm init -y` vytvořte nový soubor package.json pomocí výchozí položky.

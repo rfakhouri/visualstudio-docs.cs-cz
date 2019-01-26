@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48a500323185466b1fa5ffaedeff750de31e04d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919427"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924081"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Získání informací o písma a barvy pro barevné zvýraznění textu
 Proces, který vykreslí nebo barevně zvýrazněné text se zobrazí prvky uživatelského rozhraní (UI) závisí na typu projektu, technologie a developer předvolby. **Písma a barvy** stránku vlastností ukládá nastavení.

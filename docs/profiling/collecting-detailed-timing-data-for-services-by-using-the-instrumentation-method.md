@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 693bd44fe9945d5f86ea405fbc8c2ccbd3e15560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6050ff47168d1102d8e6d115f2a3abd140196b8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946341"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948321"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku profileru
 Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu podrobná data služby Windows pomocí metody instrumentace z příkazového řádku.  

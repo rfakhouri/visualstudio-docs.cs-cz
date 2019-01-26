@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a22978ee432f4de261932808589e92c9738a8b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6776df2bd0edf6fc639604e6b00502dbf83f657
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880478"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925545"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Čísla verzí pro hlavní a lokalizované satelitní sestavení
 <xref:System.Resources.SatelliteContractVersionAttribute> Třída poskytuje podporu správy verzí pro hlavní sestavení, které používá lokalizované prostředky prostřednictvím Resource Manageru. Použití <xref:System.Resources.SatelliteContractVersionAttribute> k aplikaci hlavní sestavení umožňuje aktualizace a opětovné nasazení sestavení bez aktualizace jeho satelitních sestavení. Například můžete použít <xref:System.Resources.SatelliteContractVersionAttribute> třídy s aktualizací service pack, který nemá zavést nové prostředky bez znovu sestavovat a nasazovat satelitních sestavení. Pro lokalizované prostředky k dispozici, musí odpovídat verze satelitního kontraktu sestavení hlavní <xref:System.Reflection.AssemblyVersionAttribute> třídy satelitních sestavení. Zadejte číslo verze přesně v <xref:System.Resources.SatelliteContractVersionAttribute>; zástupné znaky, jako "*" nejsou povoleny. Další informace najdete v tématu [načíst prostředky](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).

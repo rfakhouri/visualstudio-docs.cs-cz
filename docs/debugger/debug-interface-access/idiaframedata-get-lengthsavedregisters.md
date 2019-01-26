@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_lengthsavedregisters – | Dokumentace Microsoftu
+title: IDiaFrameData::get_lengthSavedRegisters | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfda4e91-9bfa-4b9d-9133-b73015bfa4d5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bb5fc5469aecdfbfee9a7f24586c384013f89f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a4b85c3f98d80039b6d490ccf690b10682f5d04
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950491"
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
 Získá počet bajtů uložených registrů posunuto v zásobníku.  
@@ -41,5 +41,5 @@ HRESULT get_lengthSavedRegisters ( 
  Hodnota vrácená touto metodou se obvykle používá při interpretaci řetězec programu (najdete v článku [idiaframedata::get_program –](../../debugger/debug-interface-access/idiaframedata-get-program.md) metodu pro definici řetězce program).  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

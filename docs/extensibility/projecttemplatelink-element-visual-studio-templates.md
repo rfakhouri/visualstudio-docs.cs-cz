@@ -11,29 +11,29 @@ helpviewer_keywords:
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 356c9d50ebdac052efdb622e26d22e97542a0d03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ce474c0896d5f9a72c3c09253bef8ca1a5c4a4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885978"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947046"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink – element (šablony sady Visual Studio)
 Určuje cestu k *.vstemplate* souboru jednoho projektu ve víceprojektové šabloně.  
   
  \<Vstemplate – >  
- \<TemplateContent – >  
- \<Projectcollection – >  
- \<ProjectTemplateLink – >  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<ProjectTemplateLink>  
 -nebo-  
 \<Vstemplate – >  
- \<TemplateContent – >  
- \<Projectcollection – >  
- \<SolutionFolder >  
- \<ProjectTemplateLink – >  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<SolutionFolder>  
+ \<ProjectTemplateLink>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -60,8 +60,8 @@ Určuje cestu k *.vstemplate* souboru jednoho projektu ve víceprojektové šabl
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Projectcollection –](../extensibility/projectcollection-element-visual-studio-templates.md)|Určuje uspořádání a obsah víceprojektových šablon.|  
-|[SolutionFolder –](../extensibility/solutionfolder-element-visual-studio-templates.md)|Seskupuje projekty do víceprojektových šablon.|  
+|[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Určuje uspořádání a obsah víceprojektových šablon.|  
+|[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|Seskupuje projekty do víceprojektových šablon.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942408"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951729"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocníci sad SDK pro ladění
 Tyto funkce a deklarace jsou globální pomocných funkcí pro provádění ladicími stroji vyhodnocovače výrazů a poskytovatelé symbol v jazyce C++.  

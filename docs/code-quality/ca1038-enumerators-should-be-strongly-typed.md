@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8919f526-d487-42a4-87dc-2b2ee25260c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 426dbcd4116ee4ff52befbcbd8e9beea62e8cb72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f103a100474a1c52a5dd5da2f0403d160df37e46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932919"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Enumerátory by měly být silného typu
 
@@ -31,7 +31,7 @@ ms.locfileid: "53954001"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný typ implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> neposkytuje verzi silného typu, ale <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> vlastnost. Z tohoto pravidla vyjmuty jsou typy, které jsou odvozeny z následujících typů:
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>

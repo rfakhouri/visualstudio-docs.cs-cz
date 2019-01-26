@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbe3d8ac-319a-40ac-bc3e-4eb81b2d7807
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bb8f3a10bebbdaff489b2b628af2e1228fdf40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52967a96cccc1d02f6361cccc00b06a391f06427
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985797"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935563"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
 Načte hodnotu zadaného registru uložené v bloku zásobníku.  
@@ -42,5 +42,5 @@ HRESULT get_registerValue(
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiastackframe –](../../debugger/debug-interface-access/idiastackframe.md)   
+ [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
  [CV_HREG_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md)

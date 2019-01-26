@@ -4,15 +4,15 @@ ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 893383d8260a3b7904921e12175f81741a7978b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941083"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948905"
 ---
 # <a name="gpu-usage"></a>Využití GPU
 
@@ -104,7 +104,7 @@ To vám umožní najít, co hledáte, filtr sestava využití GPU na základě p
 |**vlákno**|ID vlákna, které vás zajímají. Ve vícevláknové aplikaci tyto informace můžete izolovat konkrétní vlákna, které patří k procesu, který vás zajímá. Události související s vybranou vlákna jsou vyznačené na každé časové osy.|
 |**Zobrazení**|Počet zobrazení se zobrazí jehož obnovovací frekvence **Poznámka:**  Některé ovladače lze nastavit zobrazíte více fyzických zobrazí jako jeden, velké virtuální zobrazení. Jediné zobrazení uvedené, může se zobrazit i v případě, že tento počítač má připojené více monitorů.|
 |**Filtr**|Klíčová slova, které vás zajímají. Události v dolní části sestavy bude obsahovat pouze ty, které odpovídají klíčové slovo, ať už zcela nebo zčásti. Více klíčových slov můžete určit jejich oddělením středníkem (;).|
-|**Hierarchie řazení**|Zaškrtávací políčko, která označuje, zda události – definice prostřednictvím uživatelské značky--hierarchií jsou zachovány nebo ignorovat.|
+|**Hierarchy Sort**|Zaškrtávací políčko, která označuje, zda události – definice prostřednictvím uživatelské značky--hierarchií jsou zachovány nebo ignorovat.|
 
  Seznam událostí v dolní části sestavy využití GPU zobrazují podrobnosti o každé události.
 

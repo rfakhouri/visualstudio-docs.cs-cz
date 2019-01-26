@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1ae5ae9b0bd751deca5e26ac4ea09e884e5db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b57e3494a4d9ed1461f9efa53ad97642e745b06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940541"
 ---
 # <a name="manage-project-and-solution-properties"></a>Správa vlastností projektu a řešení
 
@@ -36,7 +36,7 @@ Vlastnosti projektu jsou uspořádány do skupin a každá skupina má svou vlas
 
 V C#, Visual Basic a F# projekty, jsou přístupné vlastnosti **Návrháře projektu**. Je vidět na následujícím obrázku **sestavení** stránku vlastností pro projekt WPF v C#:
 
-![Návrhář projektu sady Visual Studio](../ide/media/vs2015_proppage_build.png)
+![Visual Studio Project Designer](../ide/media/vs2015_proppage_build.png)
 
 Informace o jednotlivých stránek vlastností v **Návrháře projektu**, naleznete v tématu [referenční dokumentace k vlastnostem projektu](../ide/reference/project-properties-reference.md).
 

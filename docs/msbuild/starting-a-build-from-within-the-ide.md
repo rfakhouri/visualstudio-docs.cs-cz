@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d5d9022362b39dea4e9a36155c4c1b3b056c6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10f97a5cbc51e2f42af1601e8abd43d1e3529e9d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940570"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942188"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Spuštění sestavení z integrovaného vývojového prostředí
 Musíte použít vlastní systémy <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> ke spuštění sestavení. Tento článek popisuje důvody pro tento požadavek a popisuje proceduru.  
@@ -25,7 +25,7 @@ Musíte použít vlastní systémy <xref:Microsoft.VisualStudio.Shell.Interop.IV
 
  Pokud systém projektu změní proměnné prostředí, je nutné nastavit NodeAffinity sestavení na OutOfProc. Tento požadavek znamená, že nemůžete použít objekty hostitel, protože vyžadují uzel uvnitř procesu.  
 
-## <a name="use-ivsbuildmanageraccessor"></a>Pomocí IVSBuildManagerAccessor  
+## <a name="use-ivsbuildmanageraccessor"></a>Use IVSBuildManagerAccessor  
  Následující kód obsahuje metodu, která bude systém projektu můžete použít ke spuštění sestavení:  
 
 ```csharp

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isMatrixRowMajor | Dokumentace Microsoftu
+title: IDiaSymbol::get_isMatrixRowMajor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 36b1e881-ea76-48b0-b67f-e9eb0d19bec7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c6a149b342c55ea59036edb21a2ea51ba8ebb35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c532f38fcdcd5a41cfa188c0dc175a8293548442
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927090"
 ---
 # <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
 Určuje, zda matice hlavní řádek.  

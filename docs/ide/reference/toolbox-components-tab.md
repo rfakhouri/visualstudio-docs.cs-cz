@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3324063e80bdb33ec928135ef8760c5e15c7a8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00417b853fbaac9e57d93553974cab786dce5aad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967067"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949126"
 ---
 # <a name="toolbox-components-tab"></a>Panel nástrojů, karta součásti
 
@@ -29,11 +29,11 @@ Pokud chcete zobrazit na této kartě, otevřete návrhář formulářů Windows
 
 ## <a name="components"></a>Komponenty
 
-**Podproces BackgroundWorker**
+**BackgroundWorker**
 
 Vytvoří <xref:System.ComponentModel.BackgroundWorker> instance komponenty, který může spouštět operace na oddělené, vyhrazené vlákno. Další informace najdete v tématu [BackgroundWorker – komponenta](/dotnet/framework/winforms/controls/backgroundworker-component).
 
-**Třída DirectoryEntry**
+**DirectoryEntry**
 
 Vytvoří <xref:System.DirectoryServices.DirectoryEntry> instance komponenty, který zapouzdřuje uzel nebo objekt v hierarchii služby Active Directory a umožňuje pracovat s poskytovateli služeb Active Directory.
 

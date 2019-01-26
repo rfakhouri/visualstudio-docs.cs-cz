@@ -2,7 +2,7 @@
 title: Konfigurace projektu Azure použití několika konfigurací služby | Dokumentace Microsoftu
 description: Zjistěte, jak nakonfigurovat projekt cloudové služby Azure tak, že změníte soubor ServiceDefinition.csdef ServiceConfiguration.Local.cscfg a ServiceConfiguration.Cloud.cscfg soubory.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 1df5ce686fef0a48f9bd58cb966332d7d8c00d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e12c7c321022672283c2e202829d53fcebacfe02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959701"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924169"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurace projektu Azure v sadě Visual Studio za účelem použití více konfigurací služby
 
@@ -88,7 +88,7 @@ Další informace o tom, jak aktualizovat konfigurace služby, najdete v části
 Webová role obvykle obsahuje jeden koncový bod protokolu HTTP na portu 80. Role pracovního procesu, na druhé straně může mít libovolný počet koncových bodů HTTP, HTTPS nebo TCP. Koncové body můžou být vstupní koncové body, které jsou k dispozici do externích klientů, nebo vnitřní koncové body, které jsou k dispozici pro jiné role, na kterých běží ve službě.
 
 - Pro zpřístupnění koncový bod HTTP do externích klientů a webové prohlížeče, změňte typ koncových bodů na vstup a zadejte název a číslo veřejného portu.
-- Pokud chcete zpřístupnit koncového bodu HTTPS do externích klientů a webové prohlížeče, změňte typ koncových bodů na **vstupní**a zadejte název, číslo veřejného portu a název certifikátu správy. Certifikátu musíte také definovat v **certifikáty** stránky vlastností, abyste mohli zadat certifikát pro správu. 
+- Pokud chcete zpřístupnit koncového bodu HTTPS do externích klientů a webové prohlížeče, změňte typ koncových bodů na **vstupní**a zadejte název, číslo veřejného portu a název certifikátu správy. Certifikátu musíte také definovat v **certifikáty** stránky vlastností, abyste mohli zadat certifikát pro správu.
 - Aby bylo koncový bod interního přístupu pomocí jiné role v cloudové službě, změňte typ koncových bodů na interní a zadejte název a je to možné privátních portů pro tento koncový bod.
 
 ## <a name="local-storage-page"></a>Stránka Místní úložiště

@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 360d3da6d88d053b24c11591e55c218bf3e5563b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f8e80fa9568bf418b972a3e2dd77d9141ba829f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932724"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro model aktivity virtuálního uživatele
 
@@ -61,7 +61,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
 - **Maximální počet uživatelů**: 2 000
 
-- **Doba trvání kroku (sekundy)**: víc než 1 800
+- **Doba trvání kroku (sekundy)**: 1,800
 
 - **Doba (v sekundách) doběhu kroku**: 20
 
@@ -81,7 +81,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
   V následující tabulce ukazuje příklad cílově zaměřeného vzoru s následujícím nastavením vlastnosti:
 
-|Skupina vlastností|Vlastnost|Hodnota|
+|Property Group|Vlastnost|Hodnota|
 |-|--------------|-|
 |Čítač výkonu|Kategorie|Procesor|
 |Čítač výkonu|Počítač|ContosoServer1|

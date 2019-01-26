@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07ab3bc10bd755a768c80e53c96ad133ecce08a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2b3611245b796cc42f6ef1dcf951d2961510b3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847539"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953482"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku panel nástrojů WPF
 Šablony ovládacího prvku panelu nástrojů WPF (Windows Presentation Framework) umožňuje vytvořit ovládací prvky WPF, které jsou automaticky přidány do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření **nástrojů** ovládacího prvku, které můžete distribuovat ostatním uživatelům.  

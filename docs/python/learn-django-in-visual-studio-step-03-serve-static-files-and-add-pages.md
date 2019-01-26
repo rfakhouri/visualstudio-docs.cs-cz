@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c53001d31e6ef4ee32aaef2093e04be6fcaac29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd226257b8af989ff336b518a6666d1aad3156ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829586"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947579"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti
 
@@ -284,4 +284,4 @@ Následující kroky ukazují dědičnosti:
 - [Zápis svoji první aplikaci Django, část 3 (zobrazení)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Další možnosti šablon Django, jako je například tok řízení, najdete v části [jazyk šablony Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Úplné podrobnosti o použití `{% url %}` značku, přečtěte si téma [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) v rámci [značky integrované šablony a filtry pro referenční dokumentace k šablonám Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)
-- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

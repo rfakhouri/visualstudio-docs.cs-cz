@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 701bb929bae7b5103e274810cf0ad3a222118781
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862811"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951271"
 ---
 # <a name="elimination-of-sak-files"></a>Odstranění ~ SAK soubory
 Zdrojový ovládací prvek modulu Plug-in API 1.2 *~ SAK* soubory byly nahrazeny příznaky funkcí a nových funkcí, které zjišťují, zda zdroj modulu plug-in podporuje ovládací prvek *MSSCCPRJ* Souborová služba a sdílenými registracemi.  
@@ -45,7 +45,7 @@ Pro moduly plug-in, které podporují pokročilé funkce, které jsou k dispozic
   
  Pokud modul plug-in správy zdrojového kódu podporuje vytváření a využívání *MSSCCPRJ.SCC* souboru, deklaruje `SCC_CAP_SCCFILE` funkce a implementuje [sccwillcreatesccfile –](../../extensibility/sccwillcreatesccfile-function.md). Tato funkce je volána s seznam souborů. Funkce vrátí `TRUE' or 'FALSE` pro každý soubor k označení, zda by měl používat Visual Studio *MSSCCPRJ.SCC* souboru k němu. Pokud se rozhodne modul plug-in správy zdrojového kódu není pro podporu těchto nových funkcí a funkcí, ho můžete použít následující klíč registru zakázat vytvoření těchto souborů:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *DWORD: 00000001*  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*  
   
 > [!NOTE]
 >  Pokud tento klíč registru je nastavena na *DWORD: 00000000*odpovídá klíči se neexistující a sady Visual Studio dál pokoušet o vytvoření dočasné soubory. Nicméně pokud nastavení klíče registru *DWORD: 00000001*, Visual Studio nebude pokoušet o vytvoření dočasné soubory. Místo toho předpokládá, že modul plug-in správy zdrojového kódu není podporováno *MSSCCPRJ.SCC* souboru a sdílenými registracemi nepodporuje.  

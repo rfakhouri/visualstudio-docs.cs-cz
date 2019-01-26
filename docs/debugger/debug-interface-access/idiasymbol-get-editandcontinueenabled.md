@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd703c64-9ff8-4654-8493-8cde9309cb22
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e918c13002fc6ae171122a4ebcc642e9cb9c5824
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16e22de399d69c2e22cb4c24e12504786a28df74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863942"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951609"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Získá příznak označující, zda modul byl kompilován s [/Z7, / zi, /ZI (formát informací o ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format) přepínač kompilátoru.  
@@ -48,5 +48,5 @@ HRESULT get_editAndContinueEnabled ( 
 |Verze:|V7.0 DIA SDK|  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [/Z7, /Zi, /ZI (formát informací o ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format)

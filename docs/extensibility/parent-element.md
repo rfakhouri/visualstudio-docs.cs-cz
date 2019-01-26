@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbfb014e57f793bb39d696ac311c4f27884500f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902434"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949714"
 ---
 # <a name="parent-element"></a>Nadřazený element
 Nadřazené tlačítko nebo pole se seznamem pole může být pouze skupinu. Nadřazené nabídky nebo skupina může být jiné nabídky nebo skupiny. V [commandplacement – element](../extensibility/commandplacement-element.md), tento element je povinná hodnota. v ostatních instancích je volitelný. Pokud tento prvek je vynechán, nadřazený `Group_Undefined:0` bude implicitní.  

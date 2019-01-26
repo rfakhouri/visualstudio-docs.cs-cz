@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66456257e72609183feb5f331c6d5d384c040a61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822175"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948723"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Průvodce: Ladění webového formuláře
 Kroky v tomto názorném postupu ukazují, jak ladit [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, označované také jako webového formuláře. To ukazuje, jak spustit a zastavit provádění, nastavit zarážky a zkontrolovat proměnné v **Watch** okna.

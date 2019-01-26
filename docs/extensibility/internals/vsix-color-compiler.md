@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5055da98dd13c5f9f97a28bb420b5ee28d52c10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990854"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948398"
 ---
 # <a name="vsix-color-compiler"></a>Kompilátor barev VSIX
 Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, která přebírá soubor XML představující barvy pro existující motivů aplikace Visual Studio a převede jej .pkgdef souboru tak, aby tyto barvy, je možné v sadě Visual Studio. Protože jde snadno porovnat rozdíly mezi soubory .xml, tento nástroj je užitečný pro správu vlastních barev ve správě zdrojového kódu. Je také může využívat do prostředí sestavení tak, aby výstupy sestavení soubor .pkgdef platný.  
@@ -143,7 +143,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |**Název přepínače**|**Poznámky**|**Požadované nebo volitelné**|  
 |Nepojmenované (soubor XML)|Toto je první nepojmenovaný parametr a cesta k souboru XML pro převod.|Požadováno|  
 |Nepojmenované (soubor .pkgdef)|Toto je druhá nepojmenovaný parametr a výstupní cesta k souboru generovaného .pkgdef.<br /><br /> Výchozí hodnota: \<Název souboru XML > .pkgdef|volitelná,|  
-|/ nologo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
+|/noLogo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
 |/?|Vytiskne informace nápovědy.|volitelná,|  
 |/help|Vytiskne informace nápovědy.|volitelná,|  
   
@@ -151,7 +151,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
   
 -   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   / Nologo VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Poznámky  
   

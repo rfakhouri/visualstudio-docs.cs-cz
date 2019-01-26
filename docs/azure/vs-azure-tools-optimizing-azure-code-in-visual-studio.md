@@ -2,7 +2,7 @@
 title: Optimalizace kódu Azure
 description: Zjistěte, o tom, jak Azure kódu pomocí nástroje optimalizace v sadě Visual Studio byl kód, robustní a lepší výkon.
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
 ms.custom: seodec18
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6f9f43174a0d66a463b96955dbc2e6d57780a143
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a85a74907f36057d52257688960b897724a06502
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968518"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924023"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimalizace kódu Azure
 Pokud programujete aplikace, které využívají Microsoft Azure, existují některé postupy psaní kódu, které byste měli postupovat, která pomáhá zabránit problémům s aplikací škálovatelnost, chování a výkon v cloudovém prostředí. Společnost Microsoft poskytuje nástroj Azure analýzy kódu, který rozpozná a některé z těchto problémů obvykle zjistil identifikuje a pomáhá vám je vyřešit. Můžete stáhnout nástroj v sadě Visual Studio prostřednictvím balíčku NuGet.
@@ -157,22 +157,22 @@ void ReceiveMessages()
 Následuje příklad použití **Receive** doba čekání výchozí server.
 
 ```csharp
-string connectionString =  
+string connectionString =
 CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
 
-QueueClient Client =  
+QueueClient Client =
     QueueClient.CreateFromConnectionString(connectionString, "TestQueue");
 
-while (true)  
-{   
+while (true)
+{
    BrokeredMessage message = Client.Receive();
    if (message != null)
    {
-      try  
+      try
       {
          Console.WriteLine("Body: " + message.GetBody<string>());
          Console.WriteLine("MessageID: " + message.MessageId);
-         Console.WriteLine("Test Property: " +  
+         Console.WriteLine("Test Property: " +
             message.Properties["TestProperty"]);
 
          // Remove message from queue
@@ -190,17 +190,17 @@ while (true)
 Následuje příklad použití **Receive** doba čekání na jiné než výchozí server.
 
 ```csharp
-while (true)  
-{   
+while (true)
+{
    BrokeredMessage message = Client.Receive(new TimeSpan(0,1,0));
 
    if (message != null)
    {
-      try  
+      try
       {
          Console.WriteLine("Body: " + message.GetBody<string>());
          Console.WriteLine("MessageID: " + message.MessageId);
-         Console.WriteLine("Test Property: " +  
+         Console.WriteLine("Test Property: " +
             message.Properties["TestProperty"]);
 
          // Remove message from queue
@@ -277,7 +277,7 @@ Odeberte příkaz, který nastaví počáteční čas zásady sdíleného přís
 Následující fragment kódu ukazuje kód opravu tohoto problému.
 
 ```csharp
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
@@ -309,7 +309,7 @@ Další informace o správě zabezpečení najdete v článku vzor návrhu [osob
 Následuje příklad nezadáte čas spuštění zásady sdíleného přístupu.
 
 ```csharp
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
@@ -324,13 +324,13 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Následuje příklad určující čas spuštění zásady sdíleného přístupu s doba vypršení platnosti zásada, která je větší než pět minut.
 
 ```csharp
-// The shared access policy provides  
+// The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
 {
    // To ensure SAS is valid immediately, don’t set start time.
    // This way, you can avoid failures caused by small clock differences.
-  SharedAccessStartTime = new DateTime(2014,1,20),   
+  SharedAccessStartTime = new DateTime(2014,1,20),
  SharedAccessExpiryTime = new DateTime(2014, 1, 21),
    Permissions = SharedAccessBlobPermissions.Write |
       SharedAccessBlobPermissions.Read
@@ -373,7 +373,7 @@ Tady je příklad toho, jak uložit nastavení konfigurace v souboru App.config 
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     <add key="mySettings" value="[put_your_setting_here]"/>
-  </appSettings>  
+  </appSettings>
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Vyhněte se používání pevně zakódovaných propojovacích řetězců
@@ -442,7 +442,7 @@ V následujícím příkladu třída kontroleru MVC ukazuje, jak použít objekt
 ```csharp
 public class BlogsController : Controller
     {
-        //BloggingContext is a subclass to DbContext        
+        //BloggingContext is a subclass to DbContext
         private BloggingContext db = new BloggingContext();
         // GET: Blogs
         public ActionResult Index()

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852948"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948983"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Podpora pro fragmenty kódu ve službě starší verze jazyka
 Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotný fragment kódu je šablonu založený na formátu XML s sadu polí. Tato pole jsou zvýrazněny po vložení fragmentu kódu a může mít různé hodnoty v závislosti na kontextu, ve kterém se tento fragment vloží. Okamžitě po vložení fragmentu kódu můžete naformátovat služba jazyka fragmentu kódu.  
@@ -85,11 +85,11 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|LCID %|ID národního prostředí.|  
-|InstallRoot %|Kořenová složka instalace pro Visual Studio, například C:\Program Files\Microsoft Visual Studio 8.|  
-|ProjDir %|Složka obsahující aktuální projekt.|  
+|%LCID%|ID národního prostředí.|  
+|%InstallRoot%|Kořenová složka instalace pro Visual Studio, například C:\Program Files\Microsoft Visual Studio 8.|  
+|%ProjDir%|Složka obsahující aktuální projekt.|  
 |ProjItem %|Složka obsahující aktuální položky projektu.|  
-|TestDocs %|Složky ve složce nastavení uživatele, například C:\Documents and nastavení\\ *[username]* Documents\Visual Studio\8.|  
+|%TestDocs%|Složky ve složce nastavení uživatele, například C:\Documents and nastavení\\ *[username]* Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Povolení fragmenty kódu pro vaši službu jazyka  
  Fragmenty kódu pro vaši službu jazyka můžete povolit přidáním <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atribut vašeho balíčku VSPackage (naleznete v tématu [registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service1.md) podrobnosti). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> a <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametry jsou volitelné, ale měli byste zahrnout `SearchPaths` s názvem parametru, aby bylo možné informovat **Správce fragmentů kódů** umístění vašeho fragmenty kódu.  

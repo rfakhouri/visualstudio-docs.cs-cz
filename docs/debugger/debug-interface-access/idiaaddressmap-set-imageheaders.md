@@ -1,5 +1,5 @@
 ---
-title: Idiaaddressmap::set_imageheaders – | Dokumentace Microsoftu
+title: IDiaAddressMap::set_imageHeaders | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a46b9d0e-43e6-433f-b2c7-aa203981e4e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6593092fc155a375480f082a1f82dc53a1d851fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2435d009197c77945476fbc173b1b74e33a9be9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834136"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943640"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 Nastaví obrázek záhlaví povolit překlad relativní virtuální adresu.  
@@ -36,7 +36,7 @@ HRESULT set_imageHeaders ( 
  cbData  
  [in] Počet bajtů dat záhlaví. Musí být `n*sizeof(IMAGE_SECTION_HEADER)` kde `n` je číslo oddílu záhlaví ve spustitelném souboru.  
   
- data]  
+ data[]  
  [in] Pole `IMAGE_SECTION_HEADER` struktury má být použit jako hlavičky bitové kopie.  
   
  originalHeaders  
@@ -51,7 +51,7 @@ HRESULT set_imageHeaders ( 
  Relativní virtuální adresu výpočty závisí na `IMAGE_SECTION_HEADER` hodnoty. Obvykle DIA načte z soubor databáze (PDB) programu. Pokud tyto hodnoty chybí, je DIA nelze vypočítat relativních virtuálních adres a [idiaaddressmap::get_relativevirtualaddressenabled –](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) vrátí metoda `FALSE`. Klient musíte pak zavolat [idiaaddressmap::put_relativevirtualaddressenabled –](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) metoda umožňuje relativní virtuální adresu výpočty po zadání chybějící hlavičky bitové kopie ze samotné.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaaddressmap –](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiaaddressmap::set_addressmap –](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [Idiaaddressmap::get_relativevirtualaddressenabled –](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
+ [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce84105fa1a3d7bf5c6f949421b306b5147368a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18485d94aaedcb1f41c0ed747dc6af0be7f7e276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892352"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952870"
 ---
 # <a name="report-hook-functions"></a>Sestava funkcí háku
 Funkce háku sestavy, nainstalovat pomocí [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), je volána pokaždé, když [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) generuje sestavu ladění. Můžete použít, mimo jiné pro filtrování sestav a zaměřte se na konkrétní typy přidělení. Funkce háku sestavy by měl mít prototyp vypadat asi takto:  

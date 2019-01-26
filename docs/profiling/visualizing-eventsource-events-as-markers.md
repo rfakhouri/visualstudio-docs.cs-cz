@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a0edf549686d8b984d937b5970f429fe29f931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8db20a51872af37ce9f7ee655a365efb98d2f687
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840695"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938617"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
 Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky a můžete řídit způsob zobrazení značek. Chcete-li zobrazit značky EventSource, zaregistrujte identifikátor GUID zprostředkovatele trasování událostí pro Windows s použitím [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno. Vizualizátor souběžnosti nemá výchozí konvence pro reprezentaci událostí EventSource jako [značky příznaků](../profiling/flag-markers.md), [značky Span](../profiling/span-markers.md), a [značky zpráv](../profiling/message-markers.md). Můžete upravit způsob zobrazení událostí EventSource tak, že přidáte vlastní pole k událostem. Další informace o značkách najdete v tématu [značek Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md). Další informace o událostí EventSource, naleznete v tématu <xref:System.Diagnostics.Tracing>.  
@@ -34,12 +34,12 @@ Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky
   
 |Úroveň trasování událostí pro Windows|Důležitost Vizualizéru souběžnosti|  
 |---------------|---------------------------------------|  
-|Windows: LogAlways|Normální|  
+|win:LogAlways|Normální|  
 |Vyhrajte: kritické|Kritická|  
 |Windows: Chyba|Kritická|  
 |Windows: upozornění|Vysoká|  
 |Vyhrajte: informativní|Normální|  
-|Vyhrajte: podrobné|Nízká|  
+|win:Verbose|Nízká|  
 |Větší než win: podrobné|Nízká|  
   
 ### <a name="series-name"></a>Název řady  

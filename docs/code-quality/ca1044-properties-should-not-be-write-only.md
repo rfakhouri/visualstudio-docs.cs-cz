@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 8386bf3a-b161-4841-bf8b-92591595aea9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e9d543c915cecbaa4f37a694786e80876bdf06cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5053946cf658d15575ada1bd7025d3413d1b4677
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959089"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957543"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Vlastnosti by neměly být pouze pro zápis
 
@@ -34,7 +34,7 @@ ms.locfileid: "53959089"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejné nebo chráněné vlastnosti má přistupující objekt set, ale nemá přistupující objekt get.
 
 ## <a name="rule-description"></a>Popis pravidla

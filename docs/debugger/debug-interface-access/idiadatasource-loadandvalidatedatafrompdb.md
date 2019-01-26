@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88bb10e46d9007878282338aff0379c57eca2aba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4961895ab75a8989646a1fde1afa853df8e5b386
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943627"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Otevře a ověřuje, že soubor databáze (PDB) programu odpovídá podpis informací uvedených a připraví soubor typu .pdb jako zdroj dat ladění.  
@@ -88,7 +88,7 @@ if (FAILED(hr))
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Idiadatasource –](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiadatasource::loaddatafrompdb –](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
+ [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

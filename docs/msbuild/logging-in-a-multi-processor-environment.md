@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aad9079322dcc561922e37ffa8b56f417d9b932b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33aec1a999f7f37457340789fe96d1886488bb3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927265"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokolování v prostředí s více procesory
 Schopnost nástroje MSBuild používat více procesorů může výrazně zkrátit čas sestavení projektu, ale bude mít také za následek složitější protokolování. V prostředí s jedním procesorem může protokolovací nástroj zpracovat příchozí události, zprávy, upozornění a chyby předvídatelným, sekvenčním způsobem. Avšak v prostředí s více procesory mohou události přicházet z různých zdrojů zároveň nebo mimo pořadí. Nástroj MSBuild poskytuje nový protokolovací nástroj více-procesorů s ohledem na a povolí vytváření vlastních "předávajících protokolovacích nástrojů."  

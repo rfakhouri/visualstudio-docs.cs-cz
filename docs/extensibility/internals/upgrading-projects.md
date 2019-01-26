@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a02bdd92211003388ecd21e370a7a5f64da6227
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a6f1d12e5735a0c285918c4621083bf6c1b6769
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918635"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949792"
 ---
 # <a name="upgrading-projects"></a>Upgrade projektů
 
@@ -96,7 +96,7 @@ Následujících scénářích vznikají s upgradem projektu:
 
 6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> rozhraní se používá k implementaci jakýkoli druh upgradu souboru, který potřebuje provést jako součást upgradu projektu. Toto rozhraní není volána z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ale je poskytnut jako mechanismus pro upgradování souborů, které jsou součástí systém projektu, ale systém hlavní projekt nemusí být přímo vědět. Například této situaci může dojít, pokud nejsou stejné vývojovým týmem, který zpracovává rest systém projektu zpracovává soubory a vlastnosti související s kompilátor.
 
-### <a name="ivsprojectupgrade-implementation"></a>Implementace IVsProjectUpgrade
+### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade Implementation
 
 Pokud váš systém projektu implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> pouze, se nemůže účastnit **Průvodce převodu Visual Studio**. Nicméně i v případě, že implementujete <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> rozhraní, můžete stále delegovat upgrade souboru na <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implementace.
 

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ad611c2f8dc04eb92ba4be112d32d49808f3c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f6bbaf9a387a43accfd779c9583687ec98b1813
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838148"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952428"
 ---
 # <a name="capturing-graphics-information"></a>Zaznamenání grafických informací
 Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual Studio můžete použít k diagnostice problémů s vykreslováním a problémy s výkonem.  
@@ -84,4 +84,4 @@ Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual 
  Informace grafiky lze zaznamenat z aplikace pomocí nástroje příkazového řádku. Tento nástroj DXCap.exe, můžete rychle zachytávání a přehrávání grafické informace bez použití sady Visual Studio nebo zachytávání prostřednictvím kódu programu. DXCap.exe zejména, můžete pro službu automation, nebo v testovacím prostředí. Další informace o DXCap.exe najdete v tématu [zachycení nástroj příkazového řádku](command-line-capture-tool.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Zaznamenání grafických informací](walkthrough-capturing-graphics-information.md)
+ [Návod: Záznam grafických informací](walkthrough-capturing-graphics-information.md)

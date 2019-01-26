@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_maxstack – | Dokumentace Microsoftu
+title: IDiaFrameData::get_maxStack | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2585e13c-c0f3-49fe-9a84-08adb0dbeaa4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8f258dfa240fe1f0e659eebd6b1f4397956e12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c99501568a9d3a9d50a7059b74efa7aa1d6287b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951466"
 ---
 # <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
 Získá maximální počet bajtů posunuto v zásobníku v rámci.  
@@ -41,5 +41,5 @@ HRESULT get_maxStack ( 
  Hodnota vrácená touto metodou se obvykle používá při interpretaci řetězec programu (najdete v článku [idiaframedata::get_program –](../../debugger/debug-interface-access/idiaframedata-get-program.md) metodu pro definici řetězce program).  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

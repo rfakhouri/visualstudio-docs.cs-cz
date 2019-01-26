@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c8da8d661dcb0a8096576617403209a0a70c56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfcdf7e4509e5e06bd5c39ecbb5f538f7d2d01a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872788"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952324"
 ---
 # <a name="task-class---internal-members"></a>Třída úlohy – vnitřní členy
 Tento článek popisuje interní členy <xref:System.Threading.Tasks.Task?displayProperty=fullName> třída, která vám pomůže implementovat vlastní ladicího programu. Obecné informace o této třídy, najdete v článku <xref:System.Threading.Tasks.Task> článku.  
@@ -51,13 +51,13 @@ Tento článek popisuje interní členy <xref:System.Threading.Tasks.Task?displa
   
 |Název|Popis|  
 |----------|-----------------|  
-|[m_action –](../../extensibility/debugger/m-action-field.md)|Delegát, který představuje kód pro spuštění v <xref:System.Threading.Tasks.Task> objektu.|  
-|[m_contingentproperties –](../../extensibility/debugger/m-contingentproperties-field.md)|Ukládá další vlastnosti <xref:System.Threading.Tasks.Task> objektu.|  
-|[m_parent –](../../extensibility/debugger/m-parent-field.md)|Pomocné pole <xref:System.Threading.Tasks.Task?displayProperty=fullName> nadřazená vlastnost.|  
-|[m_stateflags –](../../extensibility/debugger/m-stateflags-field.md)|Ukládá informace o aktuálním stavu <xref:System.Threading.Tasks.Task> objektu.|  
-|[m_stateobject –](../../extensibility/debugger/m-stateobject-field.md)|Objekt představující data, která se použije akci.|  
-|[m_taskid –](../../extensibility/debugger/m-taskid-field.md)|Pomocné pole <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> vlastnost.|  
-|[s_taskidcounter –](../../extensibility/debugger/s-taskidcounter-field.md)|Další dostupné identifikátorem <xref:System.Threading.Tasks.Task> objektu.|  
+|[m_action](../../extensibility/debugger/m-action-field.md)|Delegát, který představuje kód pro spuštění v <xref:System.Threading.Tasks.Task> objektu.|  
+|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Ukládá další vlastnosti <xref:System.Threading.Tasks.Task> objektu.|  
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|Pomocné pole <xref:System.Threading.Tasks.Task?displayProperty=fullName> nadřazená vlastnost.|  
+|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Ukládá informace o aktuálním stavu <xref:System.Threading.Tasks.Task> objektu.|  
+|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Objekt představující data, která se použije akci.|  
+|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Pomocné pole <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> vlastnost.|  
+|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|Další dostupné identifikátorem <xref:System.Threading.Tasks.Task> objektu.|  
 |[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Označuje, že úloha zrušena dříve, než se dosáhlo do stavu spuštěno, nebo že úloha potvrzené jeho zrušení a dokončit bez výjimky.|  
 |[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|Určuje, zda je spuštěn úkol.|  
 |[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|Označuje, že úloha byla dokončena kvůli neošetřené výjimce.|  
