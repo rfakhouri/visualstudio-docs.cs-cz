@@ -7,15 +7,15 @@ helpviewer_keywords:
 - UML, using models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 123d34383f1dace7d7c6d12d41bfc1122ae521c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832815"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071082"
 ---
 # <a name="use-models-in-your-development-process"></a>Použití modelů ve vývojových procesech
 
@@ -135,7 +135,7 @@ Různé druhy diagramu jsou užitečné pro popis návrhu na různých úrovníc
 |**Videa**|![odkaz na video](../data-tools/media/playvideo.gif) [MSDN How do I videa: Vytvoření a použití modelů a diagramů UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [Channel 9: UML sadou Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [řady MSDN jak: Nástroje UML a rozšíření (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Fóra**|- [Visual Studio Visualization & Modeling nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogy**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
-|**Technické články a deníky**|[Centrum architektury MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Pokyny k nástrojům architektury sady Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Technické články a deníky**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Pokyny k nástrojům architektury sady Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Viz také:
 

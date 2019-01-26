@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83dc69bb3856a7fe98e35cf66b0a6325c97a0651
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6ac21b5a10f45d6f105e02517a15a5b6c4b2368
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930137"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956594"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogové okno Upřesnit nastavení sestavení (C#)
 
@@ -76,7 +76,7 @@ Určuje typ ladicích informací generovaných kompilátorem. Informace o tom, j
 
    Umožňuje zdrojového kódu, ladění, když program se spustí v ladicím programu, ale zobrazí jenom assembler když spuštěný program je připojen k ladicímu programu.
 
--  **Přenosná**
+-  **portable**
 
    Vytvoří. Soubor PDB, soubor se symboly bez specifický pro platformu, přenosná, která poskytuje další nástroje, zejména ladicí programy, informace o tom, co je v hlavní spustitelný soubor a jak byl vytvořen. Zobrazit [souboru PDB typu Portable](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Další informace.
 

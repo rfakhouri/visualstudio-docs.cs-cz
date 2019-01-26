@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69305bdd1791d428c11910d5fc6540f13ad6a137
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: d42362a7eb6a61540ef2dbcf56d957e71639296f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154034"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070406"
 ---
 # <a name="edit-and-continue-error-message"></a>Upravit a pokračovat chybová zpráva 
 
@@ -45,7 +45,7 @@ Mezi možné důvody pro tato chybová zpráva patří:
 -   Došlo k pokusu o úpravu kódu v sestavení, který není načtený.  
 -   Spuštění ladění starší verzi aplikace, protože na nejnovější verzi má chyby sestavení.
   
-Další informace naleznete v tématu:
+Další informace naleznete v tématu:
 - [C++ upravit a pokračovat blogový příspěvek](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
 - [Podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md)
 - [Operace Upravit a pokračovat](../debugger/edit-and-continue.md)

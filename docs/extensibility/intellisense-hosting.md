@@ -1,5 +1,5 @@
 ---
-title: Hostování IntelliSense | Dokumentace Microsoftu
+title: IntelliSense Hosting | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ba74b54e074a7522783e63c367586a943607857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cf55e2cf88b8cf6f92145ea7a75aa35a5f56486
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838174"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958586"
 ---
-# <a name="intellisense-hosting"></a>Hostování technologie IntelliSense
+# <a name="intellisense-hosting"></a>IntelliSense hosting
 Visual Studio umožňuje hostování technologie IntelliSense. IntellSense hostování umožňuje poskytovat technologii IntelliSense pro kód, který není hostitelem textový editor sady Visual Studio.  
   
 ## <a name="intellisense-hosting-usage"></a>Hostování využití technologie IntelliSense  
@@ -33,7 +33,7 @@ Visual Studio umožňuje hostování technologie IntelliSense. IntellSense hosto
   
  Příznaky hostitele, definované v [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), jsou shrnuté níž.  
   
-|Příznak hostitele technologie IntelliSense|Popis|  
+|IntelliSense Host Flag|Popis|  
 |----------------------------|-----------------|  
 |IHF_READONLYCONTEXT|Nastavení tohoto příznaku znamená, že vyrovnávací paměti kontextu je jen pro čtení a úpravy dojde pouze v textu, předmětu.|  
 |IHF_NOSEPERATESUBJECT|Nastavení to znamená, že příznak, který existuje se žádný samostatný předmět technologie IntelliSense. Předmět existuje ve vyrovnávací paměti kontextu, například v tradiční <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> technologie IntelliSense.|  

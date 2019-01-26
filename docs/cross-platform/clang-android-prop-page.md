@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCClangCompilerTool.DebugInformationFormat
@@ -43,12 +43,12 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956230"
 ---
 # <a name="clang-project-properties-android-c"></a>Vlastnosti projektu clang (Android C++)
 
@@ -72,17 +72,17 @@ Kontrola zabezpečení | Kontrola zabezpečení pomáhá odhalit vyrovnávací p
 Pozičně nezávislý kód | Generovat pozice nezávislý kód (PIC) pro použití ve sdílené knihovně.
 Používat krátké výčty | Typ výčtu bude používat jenom tolik bajtů vyžaduje vstupní sada možných hodnot.
 Povolit informace běhového typu | Přidává kód pro kontrolu typů objektů jazyka C++ za běhu (informace typu za běhu).     (frtti, fno-rtti)
-Standard jazyka C | Určuje standard jazyka C. | **Výchozí**<br>**C89** – Standard jazyka C89.<br>**C99** – Standard jazyka C99.<br>**C11** – Standard jazyka C11.<br>**C99 (dialekt GNU)** – Standard jazyka C99 (dialekt GNU).<br>**C11 (dialekt GNU)** – Standard jazyka C11 (dialekt GNU).<br>
-Standard jazyka C++ | Určuje standard jazyka C++. | **Výchozí**<br>**C ++ 03** – Standard C ++ 03 jazyka.<br>**C ++ 11** – Standard C ++ 11 jazyka.<br>**C ++ 14** – Standard C ++ 14 jazyka.<br>**C ++ 03 (dialekt GNU)** – C ++ 03 (dialekt GNU) Standard jazyka.<br>**C ++ 11 (dialekt GNU)** – C ++ 11 (dialekt GNU) Standard jazyka.<br>**C ++ 14 (dialekt GNU)** – C ++ 14 (dialekt GNU) Standard jazyka.<br>
+Standard jazyka C | Určuje standard jazyka C. | **Default**<br>**C89** – Standard jazyka C89.<br>**C99** – Standard jazyka C99.<br>**C11** – Standard jazyka C11.<br>**C99 (dialekt GNU)** – Standard jazyka C99 (dialekt GNU).<br>**C11 (dialekt GNU)** – Standard jazyka C11 (dialekt GNU).<br>
+Standard jazyka C++ | Určuje standard jazyka C++. | **Default**<br>**C ++ 03** – Standard C ++ 03 jazyka.<br>**C ++ 11** – Standard C ++ 11 jazyka.<br>**C ++ 14** – Standard C ++ 14 jazyka.<br>**C ++ 03 (dialekt GNU)** – C ++ 03 (dialekt GNU) Standard jazyka.<br>**C ++ 11 (dialekt GNU)** – C ++ 11 (dialekt GNU) Standard jazyka.<br>**C ++ 14 (dialekt GNU)** – C ++ 14 (dialekt GNU) Standard jazyka.<br>
 Definice preprocesoru | Definuje symboly předzpracování pro zdrojový soubor. (-D)
 Zrušit Definice preprocesoru | Určuje že jeden nebo více nedefinovaných hodnot preprocesoru.  (-U [makro])
 Zrušit všechny definice preprocesoru | Zruší definici všech dříve definovaných hodnot preprocesoru.  (-undef)
-Zobrazit soubory k zahrnutí | Generuje seznam vložených souborů s výstupem kompilátoru.  (-H).
+Zobrazit soubory k zahrnutí | Generuje seznam vložených souborů s výstupem kompilátoru.  (-H)
 Předkompilované hlavičky | Vytvořit/použít předkompilovanou hlavičku: umožňuje nebo použít předkompilovanou hlavičku během sestavení. | **Použití** -použít předkompilovanou hlavičku.<br>**Bez použití předkompilovaných hlaviček** – bez použití předkompilovaných hlaviček.<br>
 Soubor předkompilované hlavičky | Určuje název hlavičkového souboru pro soubor předkompilované hlavičky. Tento soubor se také přidají do 'vynucené vložených souborů během sestavování
 Adresář výstupního souboru předkompilované hlavičky | Určuje adresář pro vygenerované předkompilované hlavičky. Tento adresář se také přidají do 'Další adresáře k zahrnutí' během sestavení
 Kompilovat předkompilovanou hlavičku jako | Vyberte možnost jazyka kompilace pro soubor předkompilované hlavičky (- x c-header, - x c ++ - záhlaví). | **Kompilovat jako kód jazyka C** -kompilovat jako kód jazyka C.<br>**Kompilovat jako kód jazyka C++** -kompilovat jako kód jazyka C++.<br>
-Kompilovat jako | Vyberte možnost jazyka kompilace pro soubory .c a .cpp.  "Výchozí" rozpozná na základě přípony .c nebo .cpp rozšíření. (-x c, - x c ++) | **Výchozí** – výchozí.<br>**Kompilovat jako kód jazyka C** -kompilovat jako kód jazyka C.<br>**Kompilovat jako kód jazyka C++** -kompilovat jako kód jazyka C++.<br>
+Kompilovat jako | Vyberte možnost jazyka kompilace pro soubory .c a .cpp.  "Výchozí" rozpozná na základě přípony .c nebo .cpp rozšíření. (-x c, -x c++) | **Výchozí** – výchozí.<br>**Kompilovat jako kód jazyka C** -kompilovat jako kód jazyka C.<br>**Kompilovat jako kód jazyka C++** -kompilovat jako kód jazyka C++.<br>
 Nuceně zahrnuté soubory | jeden nebo více vynucených k zahrnutí souborů.     (-include [název])
 Kompilace s využitím více procesorů | Kompilace s využitím více procesorů.
 Další možnosti | Další možnosti.

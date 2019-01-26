@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7530f875b3eb14766e32b1237871e6ec48d4bb85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 450c69ccffaa35b9dbe519782b28067e6f2beb8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954082"
 ---
 # <a name="native-run-time-checks-customization"></a>Přizpůsobení nativních kontrol za běhu
 Pokud kompilujete s **/RTC** (kontroly za běhu) nebo použít `runtime_checks` – Direktiva pragma, knihovny run-time jazyka C poskytuje nativní kontroly za běhu. V některých případech můžete chtít přizpůsobit kontrolu za běhu:  
@@ -56,5 +56,5 @@ Pokud kompilujete s **/RTC** (kontroly za běhu) nebo použít `runtime_checks` 
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Použití nativních kontrol za běhu](../debugger/how-to-use-native-run-time-checks.md)   
- [runtime_checks –](/cpp/preprocessor/runtime-checks)   
+ [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

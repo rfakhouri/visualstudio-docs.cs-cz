@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398296"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959720"
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
 
@@ -47,7 +47,7 @@ Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení editoru
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Po seřazení:
 
    ```csharp
@@ -58,7 +58,7 @@ Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení editoru
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Oddělovat skupiny direktiv using
 
    Pokud je vybráno, **odebrat a seřadit direktivy using** odděluje příkazu v místní nabídce `using` direktivy vložením prázdný řádek mezi skupinami direktivy, které mají stejný obor názvů root.
@@ -73,28 +73,28 @@ Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení editoru
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Po seřazení:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Navrhnout použití typů v sestaveních reference 
-- Navrhnout použití typů v balíčcích NuGet 
+
+- Navrhnout použití typů v sestaveních reference
+- Navrhnout použití typů v balíčcích NuGet
 
    Když tyto možnosti jsou vybrané, [rychlá akce](../quick-actions.md) je k dispozici pro instalaci balíčku NuGet a přidejte `using` směrnice pro neodkazovaný typy.
 
    ![Rychlé akce pro instalaci balíčku NuGet v sadě Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Zvýraznění
 
 - Zvýrazňovat odkazy na _symbol pod kurzorem

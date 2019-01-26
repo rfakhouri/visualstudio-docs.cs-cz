@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a05da24165a574d8743c78f9d07c513d72b5434
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1612353a1b278cb8bd81894bdec262308c241214
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904072"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069327"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funkce (Přístup k rozhraní ladění SDK)
 Každá funkce je identifikovaná `SymTagFunction` symbol.  
@@ -74,7 +74,7 @@ Každá funkce je identifikovaná `SymTagFunction` symbol.
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Pokud je funkce označena jako volatile.|  
   
 ## <a name="see-also"></a>Viz také  
- [Cv_access_e – výčet](../../debugger/debug-interface-access/cv-access-e.md)   
+ [CV_access_e Enumeration](../../debugger/debug-interface-access/cv-access-e.md)   
  [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Locationtype – výčet](../../debugger/debug-interface-access/locationtype.md)   
  [Umístění symbolů](../../debugger/debug-interface-access/symbol-locations.md)

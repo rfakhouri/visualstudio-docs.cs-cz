@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab432c5dfe316dc540fdfe6937263bc12abc967c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb43d8378a884631a487259c9c5e4d9384194258
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990422"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070835"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* nástroj se používá ke spuštění a zastavení shromažďování dat o výkonu. Používá následující syntaxi:  
@@ -44,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[AutoMark](../profiling/automark.md) **:** *n*|Určuje časový interval (v milisekundách) mezi událostmi sběru dat čítače výkonu Windows. Použití s **WinCounter**.|  
 |[Události](../profiling/events-vsperfcmd.md) **:** `option`|Kolekci ovládacích prvků konkrétní události trasování událostí pro Windows (ETW). Shromažďovaných dat trasování událostí pro Windows do. *itl* soubor, který není dat profilování (. *Vsp*) soubor.|  
 |[Status](../profiling/status.md)|Zobrazí stav profileru, informace o procesy, které jsou právě profilována a účty, které mají oprávnění k řízení profileru.|  
-|[Vypnutí](../profiling/shutdown.md)[**:**`n`]|Zavření souboru dat profilování a profiler vypne.|  
+|[Shutdown](../profiling/shutdown.md)[**:**`n`]|Zavření souboru dat profilování a profiler vypne.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Obnoví shromažďování dat po volání **VSPerfCmdGlobalOff**.|  
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|Zastaví shromažďování všech dat, ale nemá na konci relace profilování.|  
 |[ProcessOn](../profiling/processon-and-processoff.md) **:** `pid`|Obnoví shromažďování dat pro zadaný proces po profilace byla pozastavena voláním **VSPerfCmdProcessOff**.|  
@@ -61,9 +61,9 @@ VSPerfCmd [/U] [/options]
 |[Spuštění](../profiling/launch.md) **:** *spustitelný soubor*|Zadaná aplikace spustí a začne profilace.|  
 |[Args](../profiling/args.md) **:** *argumenty*|Určuje argumenty příkazového řádku k předání do aplikace.|  
 |[Console](../profiling/console.md)|V novém okně Příkazový řádek spustí zadaný příkaz.|  
-|[Připojit](../profiling/attach.md) **:** *IDENTIFIKÁTOR PID*[**,**_PID_]|Zahájení profilace konkrétních procesů. Procesy lze identifikovat podle ID procesu nebo název procesu.|  
+|[Připojit](../profiling/attach.md) **:** *PID*[**,**_PID_]|Zahájení profilace konkrétních procesů. Procesy lze identifikovat podle ID procesu nebo název procesu.|  
 |[Odpojit](../profiling/detach.md)[**:**_PID_[,_PID_]]|Zastaví profilaci konkrétních procesů. Procesy lze identifikovat podle ID procesu nebo název procesu. Pokud není zadán žádný proces, profilace je zastaveno pro všechny procesy.|  
-|[Uvolňování paměti](../profiling/gc-vsperfcmd.md)[**:**{**přidělení**`&#124;`**životnost**}]|Shromažďuje data paměti .NET přidělení a objekt životnost. Použít pouze **VSPerfCmdLaunch** možnost.|  
+|[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Shromažďuje data paměti .NET přidělení a objekt životnost. Použít pouze **VSPerfCmdLaunch** možnost.|  
   
 ### <a name="sample-interval-options"></a>Možnosti intervalu vzorku  
  Následující možnosti určit typ a doba trvání vzorkování intervalech. Výchozí hodnota je **časovače**. Čítače CPU může také zadáte jako interval pomocí **čítač** možnost. Tyto možnosti lze zadat pouze s **spuštění** nebo s prvním **připojit** z relace profilování.  
@@ -72,7 +72,7 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[**:**_n_]|Vzorkuje při každé n tém stránkování (výchozí = 10).|  
 |[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Ukázky při každém n tém systému volání (výchozí = 10).|  
-|[Časovač](../profiling/timer.md)[**:**_n_]|Cyklus vzorkuje při každém n tém procesoru (výchozí = 10000000).|  
+|[Timer](../profiling/timer.md)[**:**_n_]|Cyklus vzorkuje při každém n tém procesoru (výchozí = 10000000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Možnosti zařízení režimu služby pro komponenty a jádra  
  Následující možnosti správy podporovat profilování součásti služby nebo ovladače zařízení režimu jádra. Možnosti Správce nastavení oprávnění profilace a řídit profilované služby nebo ovladače zařízení.  
@@ -82,14 +82,14 @@ VSPerfCmd [/U] [/options]
 |Možnost|Popis|  
 |------------|-----------------|  
 |**Admin:Security**, \< **povolit&#124;ODEPŘÍT**>, *vpravo*[ *vpravo*], \< *uživatele* &#124; *Skupiny*>|Povoluje nebo zakazuje zadaného uživatele nebo skupiny přístup k profilovací služby.<br /><br /> `Right` může být:<br /><br /> CrossSession – umožní uživateli přístup ke službě pro různé relace profilování.<br /><br /> SampleProfiling – umožní uživateli přístup k ovladači povolit profilaci vzorkování. Také umožňuje přístup k informacím o přechodu jádra během profilace trasování.<br /><br /> FullAccess – umožňuje uživateli CrossSession a SampleProfiling přístup.|  
-|**Admin:Security seznamu**|Zobrazí aktuální stav služeb profilace a zobrazí seznam oprávnění uživatele.|  
+|**Admin:Security, List**|Zobrazí aktuální stav služeb profilace a zobrazí seznam oprávnění uživatele.|  
 |**Správce:** \<*Služba*&#124;*ovladač*>\<**START**&#124;**Zastavit**&#124;**instalace** &#124; **Odinstalace**>|Spustí, zastaví, nainstaluje nebo odinstaluje komponentu služeb profilace (service) nebo ovladač zařízení režimu jádra (driver).|  
-|**Správce:** \<*Služba*&#124;*ovladač*>**AutoStart**\<**ON**&#124;**vypnuto**>|Povolí nebo zakáže automatické spuštění služby profilace (service) nebo ovladač zařízení režimu jádra (driver) po restartu.|  
+|**Správce:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Povolí nebo zakáže automatické spuštění služby profilace (service) nebo ovladač zařízení režimu jádra (driver) po restartu.|  
   
 ## <a name="vsperfcmd-driver"></a>Nástroj VSPerfCmd Driver/Driver  
  **Driver/Driver VSPerfCmd** možnost je nyní zastaralá. Použití **VsPerfCmd správce** možnosti pro tuto funkci.  
   
 ## <a name="see-also"></a>Viz také:  
- [Nástroj VSInstr](../profiling/vsinstr.md)   
- [Vsperfmon –](../profiling/vsperfmon.md)   
+ [VSInstr](../profiling/vsinstr.md)   
+ [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

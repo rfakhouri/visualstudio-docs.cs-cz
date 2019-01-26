@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b703e220a0eaff175a08c884e309c49982fc795a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa71b9397a1f8af11f65558e024d2611d96aa47e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961267"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption – funkce
 Tato funkce nastaví možnosti, které řídí chování modulu plug-in správy zdrojového kódu.  
@@ -82,8 +82,8 @@ SCCRTN SccSetOption(
   
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
- [Sccinitialize –](../extensibility/sccinitialize-function.md)   
- [Sccopenproject –](../extensibility/sccopenproject-function.md)   
- [Sccaddfromscc –](../extensibility/sccaddfromscc-function.md)   
+ [SccInitialize](../extensibility/sccinitialize-function.md)   
+ [SccOpenProject](../extensibility/sccopenproject-function.md)   
+ [SccAddFromScc](../extensibility/sccaddfromscc-function.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)   
  [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0a9439150602bdb3f84f9a82aacac39dc2e9517
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 947b22929c58ce962861c65946941513d7845152
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881228"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957779"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementujte standardní konstruktory výjimky
 
@@ -31,7 +31,7 @@ ms.locfileid: "53881228"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Typ rozšiřuje <xref:System.Exception?displayProperty=fullName> ale nebude deklarovat všechny požadované konstruktory.
 
@@ -39,7 +39,7 @@ Typ rozšiřuje <xref:System.Exception?displayProperty=fullName> ale nebude dekl
 
 Typy výjimek musí implementovat následující tři konstruktory:
 
-- veřejné NewException()
+- public NewException()
 
 - veřejné NewException(string)
 

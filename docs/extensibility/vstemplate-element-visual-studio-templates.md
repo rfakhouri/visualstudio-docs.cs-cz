@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899a8ac07d8e5b578c7619cceff173608b15792a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d2ea57e16876d550694fb378a853b10d8f0af29
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947020"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069314"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Vstemplate – element (šablony sady Visual Studio)
 Obsahuje všechna metadata o šablony projektu, šablonu položky nebo starter kit.  
@@ -47,10 +47,10 @@ Obsahuje všechna metadata o šablony projektu, šablonu položky nebo starter k
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje data, která rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
-|[TemplateContent –](../extensibility/templatecontent-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje obsah značek šablony.|  
-|[WizardExtension –](../extensibility/wizardextension-element-visual-studio-templates.md)|Volitelný element.|  
-|[WizardData –](../extensibility/wizarddata-element-visual-studio-templates.md)|Volitelný element.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje data, která rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje obsah značek šablony.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Volitelný element.|  
+|[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Volitelný element.|  
   
 ### <a name="parent-elements"></a>Nadřazené prvky  
  Žádné  

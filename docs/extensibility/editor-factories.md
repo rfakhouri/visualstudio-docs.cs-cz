@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 998aae3efed362e07c07ae1933f2a6858b4f54b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 961b71d7bf5a28eb91bef24b84c13f72de424628
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958027"
 ---
 # <a name="editor-factories"></a>Objekty pro vytváření editoru
 Objekt pro vytváření editoru vytvoří objekty editoru a umístí je do okna rámce, označované jako fyzické zobrazení. Vytvoří data dokumentu a dokument zobrazit objekty, které jsou potřebné k vytvoření editorech a návrhářích. Objekt pro vytváření editoru je potřeba vytvořit základní editor sady Visual Studio a všechny standardní editor. Vlastní editor lze vytvořit také v případě potřeby pomocí objektu pro vytváření editoru.  

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3a4424394a98e9a4c4fb1d023f26ff2f1ce722e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65ee298aab44613f87764bc66d901476e6ccbfd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881273"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070380"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32bitová aplikace spuštěná v limitech paměti spravovaného procesu
 
@@ -31,7 +31,7 @@ ms.locfileid: "53881273"
 
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.  
 
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Systém data shromážděná během spuštění profilování označuje, že rozhraní .NET Framework paměti haldy dosaženy maximální velikost, se kterým dosáhnete spravované haldy v 32bitový proces. Maximální velikost je výchozí hodnota. Je založen na celkové množství adresní prostor procesu je možné přidělit pro Nesdílené bajty. Hlášená hodnota je maximum pozorované hodnotu haldy zatímco byla aktivní profilovaný proces. Vezměte v úvahu profilaci znovu pomocí metody profilování paměti .NET a optimalizaci aplikací pomocí spravované prostředky.  
 
  Při velikosti spravované haldy přístup výchozí omezení, proces automatického uvolňování paměti kolekce pravděpodobně mají být vyvolány častěji. Tím se zvyšuje nároky na správu paměti.  

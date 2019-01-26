@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 724c4de3ca582a98d22eaf1bcb3a8761bb4eff55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b848abf6003bab5e021722548c7c323272e324b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860829"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069964"
 ---
 # <a name="midl-task"></a>MIDL – úloha
 Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *midl.exe*. Další informace najdete v tématu [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
@@ -91,7 +91,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
     |-----------|--------------------------|  
     |**podepsané**|**/ Char podepsané**|  
     |**bez znaménka**|**/ Char unsigned**|  
-    |**ASCII**|**/char ascii7**|  
+    |**Ascii**|**/char ascii7**|  
   
      Další informace najdete v tématu **/char** možnost [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
@@ -114,7 +114,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
     |**Žádné**|**/ Error none**|  
-    |**EnableCustom**|**/ Error**|  
+    |**EnableCustom**|**/error**|  
     |**Vše**|**/ Error všechny**|  
   
      Další informace najdete v tématu **/Error** možnost [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
@@ -229,7 +229,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
   
      Další informace najdete v tématu **/iid** možnost [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
--   **Identifikátor národního prostředí**  
+-   **LocaleID**  
   
      Volitelné **int** parametru.  
   
@@ -301,7 +301,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**Nenastaveno**|*\<žádné >*|  
+    |**NotSet**|*\<žádné >*|  
     |**1**|**/Zp1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
@@ -335,7 +335,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**Nenastaveno**|*\<žádné >*|  
+    |**NotSet**|*\<žádné >*|  
     |**Win32**|**/ env win32**|  
     |**Itanium**|**/ env ia64**|  
     |**X64**|**/env x64**|  

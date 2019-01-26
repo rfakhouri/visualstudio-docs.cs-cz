@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 243202b116af63a7d14672cd33d30030e8e987b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959080"
 ---
 # <a name="inside-the-core-editor"></a>V editoru core
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core editor je sada několik komponent, které vám umožní změnit a dotazování textové informace. Pokud jste upravili základní editor pomocí starší verze rozhraní API, můžou dál používat tyto úpravy, které se budou směrovat přes adaptéry editoru. Doporučujeme však, že můžete přizpůsobit vlastní nastavení do nového editoru rozhraní API.  

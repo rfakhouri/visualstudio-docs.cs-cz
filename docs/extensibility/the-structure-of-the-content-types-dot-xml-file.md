@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80013faf174900c4e94bf452f6f19c0ac9bfbeba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956490"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struktura souboru [Content_types].xml
 Obsahuje informace o druzích obsah v balíčku souboru VSIX. Visual Studio používá k instalaci balíčku souboru [Content_Types] .xml, ale nenainstaluje samotný soubor.  
@@ -64,20 +64,20 @@ Obsahuje informace o druzích obsah v balíčku souboru VSIX. Visual Studio pou�
 ### <a name="attribute-name-attribute"></a>{Atribut name} Atribut  
  Visual Studio rozpoznává následující `ContentType` hodnoty pro přidružený `Extension` typy.  
   
-|Linka|contentType|  
+|Linka|ContentType|  
 |---------------|-----------------|  
 |TXT|text/plain|  
 |pkgdef|text/plain|  
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
 |htm nebo html|text/html|  
-|RTF|aplikace/rtf|  
-|soubor PDF|aplikace/pdf|  
+|rtf|aplikace/rtf|  
+|pdf|aplikace/pdf|  
 |GIF|image/gif|  
-|JPG nebo jpeg|obrázek nebo jpg|  
+|JPG nebo jpeg|image/jpg|  
 |TIFF|Image/tiff|  
 |vsix|aplikace/zip|  
-|PSČ|aplikace/zip|  
+|zip|aplikace/zip|  
 |knihovny DLL|application/octet-stream|  
 |všechny ostatní typy souborů|application/octet-stream|  
   

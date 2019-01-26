@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateStringObjectWithLength | Dokumentace Microsoftu
+title: IDebugFunctionObject2::CreateStringObjectWithLength | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b43bf35b916616524c45847e378e1f63752cda1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38ed28b28e38c3e855661c4d3941738f3cced28a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843879"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954459"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 Vytvoří objekt string, který má zadanou délku.  

@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2491ba0968f60f5e67e9829a19994b7d4cbe7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19284bb1b8a96443411226343bfd5ec08f0cff7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877442"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955736"
 ---
 # <a name="common-quick-actions"></a>Běžné rychlé akce
 
@@ -90,7 +90,7 @@ private void MyMethod()
 
 | ID chyby | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ---------------- |
-| CS8300, BC37284 | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
+| CS8300, BC37284 | C# a Visual Basic | Visual Studio 2017 version 15.3 |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Akce, které odeberte nepotřebný kód
 
@@ -155,7 +155,7 @@ public MyMethod()
 
 | ID diagnostiky | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ---------------- |
-| CS0219, BC42024 | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
+| CS0219, BC42024 | C# a Visual Basic | Visual Studio 2017 version 15.3 |
 
 ### <a name="remove-type-from-default-value-expression"></a>Odebrání výchozí hodnota výrazu typu
 
@@ -173,7 +173,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | ID diagnostiky | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C# 7.1 + | Visual Studio 2017 verze 15.3 |
+| IDE0034 | C# 7.1 + | Visual Studio 2017 version 15.3 |
 
 ## <a name="actions-that-add-missing-code"></a>Akce, které aplikacím dodávají chybí kód
 
@@ -281,7 +281,7 @@ End Select
 
 | ID diagnostiky | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ---------------- |
-| IDE0010 | C# a Visual Basic| Visual Studio 2017 verze 15.3 |
+| IDE0010 | C# a Visual Basic| Visual Studio 2017 version 15.3 |
 
 ### <a name="add-null-checks-for-parameters"></a>Přidat kontroly hodnot null pro parametry
 
@@ -315,7 +315,7 @@ class MyClass
 
 | Použitelné jazyky | Podporovaná verze |
 | -------------------- | ---------------- |
-| C# a Visual Basic| Visual Studio 2017 verze 15.3 |
+| C# a Visual Basic| Visual Studio 2017 version 15.3 |
 
 ### <a name="add-argument-name"></a>Přidat název argumentu
 
@@ -331,7 +331,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 
 | Použitelné jazyky | Podporovaná verze |
 | -------------------- | ---------------- |
-| C# a Visual Basic| Visual Studio 2017 verze 15.3 |
+| C# a Visual Basic| Visual Studio 2017 version 15.3 |
 
 ### <a name="add-braces"></a>Přidat složené závorky
 
@@ -445,7 +445,7 @@ End Select
 
 | Použitelné jazyky | Podporovaná verze |
 | -------------------- | ---------------- |
-| C# a Visual Basic| Visual Studio 2017 verze 15.3 |
+| C# a Visual Basic| Visual Studio 2017 version 15.3 |
 
 ### <a name="convert-to-interpolated-string"></a>Převést na interpolovaný řetězec
 
@@ -757,7 +757,7 @@ Dim countdown As Integer = &H200000
 
 | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ---------------- |
-| C# 7.0 + a Visual Basic 14 + | Visual Studio 2017 verze 15.3 |
+| C# 7.0 + a Visual Basic 14 + | Visual Studio 2017 version 15.3 |
 
 ### <a name="insert-digit-separators-into-literals"></a>Oddělovače číslic: příkaz Insert literály
 
@@ -785,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 
 | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ---------------- |
-| C# 7.0 + a Visual Basic 14 + | Visual Studio 2017 verze 15.3 |
+| C# 7.0 + a Visual Basic 14 + | Visual Studio 2017 version 15.3 |
 
 ### <a name="use-explicit-tuple-names"></a>Použít názvy explicitní řazené kolekce členů
 
@@ -845,8 +845,8 @@ var tuple = (age, name);
 
 | ID diagnostiky | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ---------------- |
-| IDE0037 | C# | V aplikaci Visual Studio 2017. 15.5 |
-| IDE0037 | C# 7.1 + | V aplikaci Visual Studio 2017. 15.5 |
+| IDE0037 | C# | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# 7.1 + | Visual Studio 2017 v. 15.5 |
 
 ### <a name="deconstruct-tuple-declaration"></a>Dekonstruovat deklaraci řazené kolekce členů
 
@@ -872,7 +872,7 @@ Console.WriteLine($"{x} {y}");
 
 | ID diagnostiky | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ---------------- |
-| IDE0042 | C# 7.0 + | V aplikaci Visual Studio 2017. 15.5 |
+| IDE0042 | C# 7.0 + | Visual Studio 2017 v. 15.5 |
 
 ### <a name="make-method-synchronous"></a>Nastavit metodu jako synchronní
 

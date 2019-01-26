@@ -1,5 +1,5 @@
 ---
-title: 'CA2224: Přepište equals při přetížení operátoru rovnosti'
+title: 'CA2224: Přepište Equals při přetížení operátoru rovnosti'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af2b1af90620fa595d85f7c26d7e5e2c96041dfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eac7f403cd0e115a01252537ade45e6a1bc0aaad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826085"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957881"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Přepište equals při přetížení operátoru rovnosti
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Přepište Equals při přetížení operátoru rovnosti
 
 |||
 |-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "53826085"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Veřejný typ implementuje operátor rovnosti, ale nepřepisuje <xref:System.Object.Equals%2A?displayProperty=fullName>.
 

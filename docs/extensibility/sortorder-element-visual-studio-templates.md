@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811df3ed361a104ad3ca935307e337a291cbf01e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6af40c2af3a16f313ea9eac496198562c7678165
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963293"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960006"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder – element (šablony sady Visual Studio)
 Určuje hodnotu, která slouží k uspořádání šablony, mezi další šablony ve stejné kategorii, jak se zobrazí v buď **nový projekt** nebo **přidat novou položku** dialogové okno.  
   
  \<Vstemplate – >  
- \<TemplateData >  
+ \<TemplateData>  
  \<SortOrder – >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -47,7 +47,7 @@ Určuje hodnotu, která slouží k uspořádání šablony, mezi další šablon
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  

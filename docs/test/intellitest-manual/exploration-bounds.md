@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935460"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069912"
 ---
 # <a name="exploration-bounds"></a>Hranice průzkumu
 
@@ -106,7 +106,7 @@ Například každá cesta v následujícím kódu využívá n + 1 podmínky:
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +144,10 @@ Maximální počet jedinečné cesty, které IntelliTest se vezměte v úvahu p�
 
 Motivace za tento průzkum vázán je, že libovolný kód, který obsahuje smyčky nebo rekurzi může mít libovolný počet cesty spuštění a proto musí být omezený během IntelliTest [vstup generování](input-generation.md).
 
-Dvě nastavení **MaxRuns** a **MaxRunsWithUniquePaths** souvisejí následujícím způsobem: 
+Dvě nastavení **MaxRuns** a **MaxRunsWithUniquePaths** souvisejí následujícím způsobem:
 
 * IntelliTest se volání metody parametrizovaný test až **MaxRuns** časy s různými testovacími vstupy.
-* Pokud je spuštěný kód je deterministická, bude se IntelliTest trvat cestu různých pracovních pokaždé, když. Ale za určitých podmínek spuštěný kód může díky tomuhle cestu k provádění učinil už dřív, a s různými vstupy. 
+* Pokud je spuštěný kód je deterministická, bude se IntelliTest trvat cestu různých pracovních pokaždé, když. Ale za určitých podmínek spuštěný kód může díky tomuhle cestu k provádění učinil už dřív, a s různými vstupy.
 * IntelliTest se počítá počet cesty jedinečný spuštění, které nalezne; Toto číslo je omezena **MaxRunsWithUniquePaths** možnost.
 
 <a name="maxexceptions"></a>

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1c366e740b5633e6bcd1db142930a710af4cdff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56588ef029e71bcd8e860dff5bf86bc2e87000a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858088"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956815"
 ---
 # <a name="multiple-categories-are-present"></a>Je přítomno více kategorií
 Je vybraný oddíl, který obsahuje více než jeden typ aktivity pro danou časový rozsah. Všimněte si, že se zobrazují dvě barvy, jeden svisle nad sebou na druhé. Tyto barvy představují hlavní dvě nejčastěji se vyskytujících činnosti v daném časovém rozsahu. Frekvence obě aktivity se zobrazí relativně k navzájem jako třetiny nebo polovinami svislá čára. Pokud chcete zobrazit více podrobností, zkuste přiblížit v této části zobrazení vlákna.  
