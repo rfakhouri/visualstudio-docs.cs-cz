@@ -7,22 +7,22 @@ helpviewer_keywords:
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e6e2a1258c698aeb10da95719034f705d0b685
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901607"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987321"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Nové nebo změněné chování editoru adaptéry
 Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual Studio core editor a plánujete používat editor adaptéry (nebo překrytí) místo použití nového rozhraní API, byste měli vědět následující rozdíly v chování editoru adaptéry s ohledem na předchozí základní editor.  
   
 ## <a name="features"></a>Funkce  
   
-### <a name="use-setsite"></a>Použití SetSite()  
+### <a name="use-setsite"></a>Use SetSite()  
  Je nutné volat <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> při souběžné vytvoření součásti vyrovnávací paměti textu, zobrazení textu a kódu windows před provedením jakékoli další operace, které jsou na nich. Ale to není nezbytné, pokud použijete <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> vytvořit, protože tato služba `Create()` volání metody sami <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>.  
   
 ### <a name="host-ivscodewindow-and-ivstextview-in-your-own-content"></a>Hostování IVsCodeWindow a IVsTextView ve vlastní obsah  
@@ -120,7 +120,7 @@ Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual St
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Metoda selže, pokud předáte do třídy, která buď nemá implementaci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Vlastní Win32 vykreslovaných vlastníkem automaticky otevíraná okna již nejsou podporovány.  
   
-#### <a name="smarttags"></a>Inteligentní značky  
+#### <a name="smarttags"></a>SmartTags  
  Není dostupná podpora adaptér pro inteligentní značky, které jsou vytvořené pomocí, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> rozhraní.  
   
 #### <a name="dte"></a>DTE  

@@ -8,16 +8,16 @@ dev_langs:
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf99d44e25bf33a773865e0bcf2084d3ac0bbe10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9eecbd9c02d2df1c6355ea47f4c63ad6317ae40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888618"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920800"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typové a netypové datové sady
 Typové datové sady je datová sada, která je nejprve odvozené od základní třídy <xref:System.Data.DataSet> třídy a potom pomocí informací z **Návrhář Dataset**, které je uložený v souboru XSD pro generování nového silně typované třídy datové sady. Informace ze schématu (tabulky, sloupce a tak dále) je generována a zkompilovány do této třídy novou datovou sadu jako sada první třídy objektů a vlastností. Protože typové datové sady se dědí ze základní <xref:System.Data.DataSet> třídy, typovaná třída předpokládá, všechny funkce <xref:System.Data.DataSet> třídy a je možné pomocí metod, které berou instance <xref:System.Data.DataSet> jako parametr předávat třídu.

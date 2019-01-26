@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8b6ea7865bdf9a6fcf3b57f7a463fab83cbbf75b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cc5cf725b47c740bc14a57870e589c5de4e8c1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934567"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980424"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Přehled uživatelského rozhraní Jazykových nástrojů specifických pro doménu
 Při prvním otevření nástroje jazyka specifického pro doménu (DSL Tools) řešení v sadě Visual Studio, uživatelské rozhraní bude vypadat podobně jako na následujícím obrázku.
@@ -42,7 +42,7 @@ Při prvním otevření nástroje jazyka specifického pro doménu (DSL Tools) �
 
 |**Termín**|**Definice**|
 |-|-|
-|Doménová třída|Doménové třídy jsou typy prvků ve vašich modelech.<br /><br /> Doménová třída může objevit více než jednou v diagramu, pokud je cílem více než jedna relace.<br /><br /> Chcete-li přidat doménovou třídou, přetáhněte nástroj třídy domény z **nástrojů** k **třídám a vztahům** diagramu vedle sebe.|
+|Domain Class|Doménové třídy jsou typy prvků ve vašich modelech.<br /><br /> Doménová třída může objevit více než jednou v diagramu, pokud je cílem více než jedna relace.<br /><br /> Chcete-li přidat doménovou třídou, přetáhněte nástroj třídy domény z **nástrojů** k **třídám a vztahům** diagramu vedle sebe.|
 |Doménový vztah|Doménové vztahy jsou typy odkazů mezi prvky ve vašich modelů.<br /><br /> *Vztah obsažení* označuje, že cílový element je ve vlastnictví nebo obsažená v tomto elementu zdroje a zobrazí se jako plná čára. Každý prvek v modelu by měla být cílem jeden vztah obsažení, tak, aby model tvoří strom. A *odkazovat na relaci* označuje obecné propojení prvků modelu a zobrazí se bude zobrazovat jako přerušovaná čára. Libovolný prvek může mít libovolný počet referenční odkazy.<br /><br /> Vytvoření relace po kliknutí na nástroj **nástrojů**, kliknutím na zdrojové doménové třídy a pak levým na cílové třídy.|
 |Obrazců a konektorů|Tvary určit, jak mají být zobrazeny prvky modelu na diagram DSL., konektory určit řádky v diagramu DSL, který slouží k zobrazení relací.<br /><br /> Chcete-li vytvořit obrazec nebo spojnici, přetáhněte nástroj, který **elementů diagramu** diagramu vedle sebe.|
 |Mapy obrazců|Mapa obrazce se zobrazí jako řádek na diagram modelu domény propojení doménová třída, která se zobrazí obrazec nebo spojnici na doménový vztah, který se zobrazí.|

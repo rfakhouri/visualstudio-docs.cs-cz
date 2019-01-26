@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33c6aaea4cdc7de1c81338eb4861d56d73cb5909
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 757378a7bcf421cb8d895357628b511ea749f38b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999792"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečce textu XML
 
@@ -25,7 +25,7 @@ ms.locfileid: "53841275"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Při navrhování rozhraní API odvozený od XMLDocument a XMLTextReader, mějte na paměti z <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Použití nezabezpečené DTDProcessing instancí, při odkazování na řešení externí entity zdroje nebo nastavení nezabezpečené hodnot v souboru XML může způsobit zpřístupnění informací.
 
 ## <a name="rule-description"></a>Popis pravidla

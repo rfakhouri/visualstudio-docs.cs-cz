@@ -1,5 +1,5 @@
 ---
-title: 'CA2147: Transparentní metody nemusejí podporovat použití zabezpečení nepodmíněné výrazy'
+title: 'CA2147: Transparentní metody nemusí používat kontrolní příkazy zabezpečení'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4daf5d4183c8226a0bed613c5e175ddbd620f43a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 057a4eb504a6b8d3eaf559b8ff370712db5e8f91
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912490"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932140"
 ---
-# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Transparentní metody nemusejí podporovat použití zabezpečení nepodmíněné výrazy
+# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Transparentní metody nemusí používat kontrolní příkazy zabezpečení
 
 |||
 |-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "53912490"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Kód, který je označen jako <xref:System.Security.SecurityTransparentAttribute> není uděleno dostatečné oprávnění k vyhodnocení.
 
 ## <a name="rule-description"></a>Popis pravidla

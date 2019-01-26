@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d1a08ba56c9b8fb80182d2b02b12fb6a560b09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b67fb585c6e006b76417fec91d5eaf80288ba9a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001849"
 ---
 # <a name="assignculture-task"></a>AssignCulture – úloha
 Tento úkol přijímá seznam položek, které mohou obsahovat platný řetězec identifikátor jazykové verze .NET jako součást názvu souboru a vytvoří položky, které mají metadat s názvem `Culture` obsahuje odpovídající jazykovou verzi identifikátor. Například název souboru *Form1.fr-fr.resx* neobsahuje vložený jazykovou verzi identifikátor "fr-fr", proto tento úkol vytvoří položka, která má stejný název souboru s metadaty `Culture` rovna `fr-fr`. Úloha také vytvoří seznam názvů souborů pomocí jazykové verze odebrána z názvu souboru.  

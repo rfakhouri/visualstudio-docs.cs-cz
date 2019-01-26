@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da94ae10da4632eafda48f145d9bb099d4c3207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954802"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965130"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Přetížení operátoru mají pojmenované alternativy
 
@@ -31,7 +31,7 @@ ms.locfileid: "53954802"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Bylo zjištěno přetížení operátoru a alternativní metoda s očekávaným názvem nebyla nalezena.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -46,7 +46,7 @@ ms.locfileid: "53954802"
 |&|A|&|BitwiseAnd|
 |&=|A =|&=|BitwiseAnd|
 |&#124;|Nebo|&#124;|BitwiseOr|
-|&#124;=|Nebo =|&#124;=|BitwiseOr|
+|&#124;=|Or=|&#124;=|BitwiseOr|
 |--|Není k dispozici|--|Snížení|
 |/|/|/|Dělení|
 |/=|/=|/=|Dělení|

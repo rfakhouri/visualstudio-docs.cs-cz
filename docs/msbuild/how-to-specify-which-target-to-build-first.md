@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ba67ee5a4ea6831d21163b467f5d638a6f16c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc6e8ec70c941035caa0e4b3569f82013a829f15
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967028"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970575"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Zadejte cíl, které nejdřív sestavit
 Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definují, jak je sestaven projekt. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modulu sestavení první ho najde a projektu všechny závislosti, pokud soubor projektu obsahuje `DefaultTargets` atribut, `InitialTargets` atribut nebo cíl je zadán v příkazovém řádku pomocí **– Cíl** přepnout.  

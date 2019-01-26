@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b789a4580c3787a4504d730e694308341657eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b2e1c42bcfad95ca9778a0eeb8ba062c4be2162
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967677"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Vyhněte se zpracování výjimek v poškozeném stavu
 
@@ -24,7 +24,7 @@ ms.locfileid: "53821857"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 [Poškozený stav výjimek (rozšíření na straně klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Toto zachycení nepovolí selhání procesu může vést k ohrožení zabezpečení, pokud útočník lze umístit do oblasti paměti poškozená zneužití.
 

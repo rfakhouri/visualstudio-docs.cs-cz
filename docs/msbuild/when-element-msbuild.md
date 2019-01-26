@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6ab2d9520e915993fce877d9c3055972c5ab8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a10831690dec436c284ff265f4402fa1e2a0ca5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981230"
 ---
 # <a name="when-element-msbuild"></a>Když – element (MSBuild)
 Určuje možné blok kódu `Choose` vybrat element.  
@@ -60,7 +60,7 @@ Určuje možné blok kódu `Choose` vybrat element.
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Zvolte](../msbuild/choose-element-msbuild.md)|Volitelný element.<br /><br /> Vyhodnotí jako podřízené prvky a vyberte jednu část kódu ke spuštění. Může být nula nebo více `Choose` prvky `When` elementu.|  
+|[Choose](../msbuild/choose-element-msbuild.md)|Volitelný element.<br /><br /> Vyhodnotí jako podřízené prvky a vyberte jednu část kódu ke spuštění. Může být nula nebo více `Choose` prvky `When` elementu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu uživatelem definované [položky](../msbuild/item-element-msbuild.md) elementy. Může být nula nebo více `ItemGroup` prvky `When` elementu.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Může být nula nebo více `PropertyGroup` prvky `When` elementu.|  
 

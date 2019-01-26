@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c3f8ef1e8016fd1ab46cb61f5e076afdd4190a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 93cbde61c4030a53819f42c65fca386174ac57d0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562279"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036027"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp – element (šablony sady Visual Studio)
 Určuje počet nadřazených kategoriích, které se zobrazí v šabloně **nový projekt** dialogové okno.  
   
  \<Vstemplate – >  
- \<TemplateData >  
- \<NumberOfParentCategoriesToRollUp >  
+ \<TemplateData>  
+ \<NumberOfParentCategoriesToRollUp>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,7 +49,7 @@ Určuje počet nadřazených kategoriích, které se zobrazí v šabloně **nov�
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  `integer` Hodnota je povinná.  

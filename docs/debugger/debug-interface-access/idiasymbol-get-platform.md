@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dff1c1eb-bcb2-4275-bb07-f2fdc076d6fb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e36f51dd977971c78c3ca7593c98dc00831ef2aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdb4ee71c05cf065f6a76ddb1ab3c2a0eddd42f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875135"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009125"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 Načte typ platformy, pro který byl zkompilován kompilace.  
@@ -41,5 +41,5 @@ HRESULT get_platform ( 
 >  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CV_CPU_TYPE_e – výčet](../../debugger/debug-interface-access/cv-cpu-type-e.md)

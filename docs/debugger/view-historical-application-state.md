@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74e49cb72274292b56a01f0ec654ebe6e44815
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: f8d1026ca2ac677a98d36dbf4fffe12428151885
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992695"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio (Visual Studio Enterprise)
 
@@ -111,7 +111,7 @@ Dopad na celkový výkon taktování závisí na vaší aplikace. Nároky na po�
   * Další možností: 
     1. Nainstalujte z instalačního programu Visual studio sadu nástrojů VC++ 2015.3 v140 pro desktop (x86, x64).
     2. Sestavte cílovou aplikaci.
-    3. Z příkazového řádku, použijte nástroj editbin a pro nastavení `Largeaddressaware` příznak pro cílový spustitelný soubor. Například můžete použít tento příkaz (po aktualizaci cesty): "C:\Program soubory (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / LARGEADDRESSAWARE "C:\Path\To\Application\app.exe".
+    3. Z příkazového řádku, použijte nástroj editbin a pro nastavení `Largeaddressaware` příznak pro cílový spustitelný soubor. Například můžete použít tento příkaz (po aktualizaci cesty): "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. Chcete-li spustit ladění, stiskněte **F5**. Nyní snímky se přesunete na ladicí program kroků a zarážek.
 
        > [!Note]

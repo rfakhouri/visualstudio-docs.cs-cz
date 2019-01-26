@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956150"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969665"
 ---
 # <a name="vbc-task"></a>Vbc – úloha
 Zabalí *vbc.exe*, která vytváří spustitelné soubory (*.exe*), dynamické knihovny (*.dll*), nebo moduly kódu (*.netmodule*). Další informace o *vbc.exe*, naleznete v tématu [příkazového řádku kompilátoru jazyka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -39,7 +39,7 @@ Zabalí *vbc.exe*, která vytváří spustitelné soubory (*.exe*), dynamické k
 | `BaseAddress` | Volitelné `String` parametru.<br /><br /> Určuje základní adresu knihovny DLL. Tento parametr [- baseaddress](/dotnet/visual-basic/reference/command-line-compiler/baseaddress) přepnout z *vbc.exe* kompilátoru. |
 | `CodePage` | Volitelné `Int32` parametru.<br /><br /> Určuje znakovou stránku pro všechny soubory zdrojového kódu dané kompilace. Tento parametr [- znaková stránka](/dotnet/visual-basic/reference/command-line-compiler/codepage) přepnout z *vbc.exe* kompilátoru. |
 | `DebugType` | Volitelné `String[]` parametru.<br /><br /> Způsobí, že kompilátor generovat ladicí informace. Tento parametr může mít následující hodnoty:<br /><br /> -   `full`<br />-   `pdbonly`<br /><br /> Výchozí hodnota je `full`, což umožňuje připojení ladicího programu ke spuštěnému programu. Hodnota `pdbonly` umožňuje ladění kódu zdroj, když program je spuštěn v ladicím programu, ale jenom v případě, že je spuštěný program je připojen k ladicímu programu se zobrazí kód jazyka sestavení. Další informace najdete v tématu [-debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug). |
-| `DefineConstants` | Volitelné `String[]` parametru.<br /><br /> Definuje podmíněné konstanty kompilátoru. Dvojice symbol/hodnota jsou odděleny středníkem a jsou zadány pomocí následující syntaxe:<br /><br /> *symbol1* `=` *hodnota1* `;` *symbol2* `=` *hodnota2*<br /><br /> Tento parametr [-definovat](/dotnet/visual-basic/reference/command-line-compiler/define) přepnout z *vbc.exe* kompilátoru. |
+| `DefineConstants` | Volitelné `String[]` parametru.<br /><br /> Definuje podmíněné konstanty kompilátoru. Dvojice symbol/hodnota jsou odděleny středníkem a jsou zadány pomocí následující syntaxe:<br /><br /> *symbol1* `=` *value1* `;` *symbol2* `=` *value2*<br /><br /> Tento parametr [-definovat](/dotnet/visual-basic/reference/command-line-compiler/define) přepnout z *vbc.exe* kompilátoru. |
 | `DelaySign` | Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, úloha umístí veřejný klíč v sestavení. Pokud `false`, úloha plně podepíše sestavení. Výchozí hodnota je `false`. Tento parametr nemá žádný vliv, pokud nejsou použity s `KeyFile` parametr nebo `KeyContainer` parametru. Tento parametr [- delaysign](/dotnet/visual-basic/reference/command-line-compiler/delaysign) přepnout z *vbc.exe* kompilátoru. |
 | `Deterministic` | Volitelné `Boolean` parametru.<br/><br/> Pokud `true`, způsobí, že kompilátor do výstupního sestavení, jejichž binární obsah je identické napříč kompilace Pokud vstupů jsou stejné.<br/><br/>Další informace najdete v tématu [-deterministické](/dotnet/visual-basic/reference/command-line-compiler/deterministic). |
 | `DisabledWarnings` | Volitelné `String` parametru.<br /><br /> Potlačí zadaná upozornění. Stačí zadat číselnou část identifikátoru upozornění. Více varování je odděleno středníky. Tento parametr [- nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) přepnout z *vbc.exe* kompilátoru. |

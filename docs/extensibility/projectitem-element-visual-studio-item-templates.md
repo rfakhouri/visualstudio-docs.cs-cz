@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a27c297dd9b33bbbe02b7addb827323505a7156d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de479c78d5699fc904174368044a82af5dd64103
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956059"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980723"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem – element (šablony sady Visual Studio položky)
 Určuje soubor, který je součástí šablony položky.  
@@ -28,7 +28,7 @@ Určuje soubor, který je součástí šablony položky.
 >  `ProjectItem` Element přijímá různé atributy v závislosti na tom, jestli je šablona pro projekt nebo položku. Toto téma vysvětluje, `ProjectItem` – element pro položku. Pro vysvětlení, `ProjectItem` – element pro šablony projektů, naleznete v tématu [ProjectItem – element (šablony projektů Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
  \<Vstemplate – >  
- \<TemplateContent – >  
+ \<TemplateContent>  
  \<ProjectItem – >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -64,7 +64,7 @@ Určuje soubor, který je součástí šablony položky.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateContent –](../extensibility/templatecontent-element-visual-studio-templates.md)|Určuje obsah značek šablony.|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Určuje obsah značek šablony.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  

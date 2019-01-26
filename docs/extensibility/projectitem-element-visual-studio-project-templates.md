@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2290b8a95bbb2e53ae14f410f77109394528b138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b618d79b858f9ed6b770f31d7a55550b8e590300
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927360"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009541"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem – element (šablony projektů Visual Studio)
 Určuje soubor, který je součástí šablony projektu.  
@@ -28,7 +28,7 @@ Určuje soubor, který je součástí šablony projektu.
 >  `ProjectItem` Element přijímá různé atributy v závislosti na tom, jestli je šablona pro projekt nebo položku. Toto téma vysvětluje, `ProjectItem` – element pro šablony projektů. Pro vysvětlení, `ProjectItem` – element pro šablony položek, naleznete v tématu [ProjectItem – Element (šablony položek aplikace Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
   
  \<Vstemplate – >  
- \<TemplateContent – >  
+ \<TemplateContent>  
  \<Project>  
  \<ProjectItem – >  
   

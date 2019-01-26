@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f1245818ef964a49aafdec3e25b67fddbfac40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdf98d64b5896d0827d39983a812b80500ff9515
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007994"
 ---
 # <a name="source-control"></a>Správa zdrojového kódu
 Tato část popisuje možnosti pro implementaci správy zdrojového kódu jako integrovaná funkce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], buď pomocí modulu plug-in správy zdrojového kódu nebo balíčku VSPackage správy zdrojového kódu.  

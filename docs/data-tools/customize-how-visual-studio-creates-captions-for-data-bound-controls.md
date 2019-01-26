@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 838e35c0be5ed9cc0e8e7cb34e118b1f57da4689
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847956"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961907"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty
 
@@ -42,7 +42,7 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 
 |Položky registru|Výchozí hodnota|Vysvětlení|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Odpovídá znak malého písmene, za nímž následuje velkým písmenem nebo podtržítkem.|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Odpovídá znak malého písmene, za nímž následuje velkým písmenem nebo podtržítkem.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** představuje libovolné znaky se shodou v první závorky výrazu a **$2** představuje libovolné znaky shoda v druhé závorky. Nahrazení je první shodu, mezeru a druhý shoda.|
 |**SmartCaptionSuffix**|**:**|Hodnota představuje znak připojenou k vráceného řetězce. Například, pokud je popisek `Company Name`, přípona umožňuje `Company Name:`|
 

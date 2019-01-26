@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cf094535471c0cc5b3bc512aa095387e1529afd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 274027f1877c5274e0f78da7634c7ac5109380ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829345"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990066"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Vysoké využití procesoru
 
@@ -32,7 +32,7 @@ ms.locfileid: "53829345"
 
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.  
 
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Využití procesoru (CPU) je vysoká v profilaci dat, která byla shromážděna pomocí metody instrumentace. Zvažte použití při profilování Procesorem vázán aplikace metoda profilování vzorkování.  
 
 ## <a name="rule-description"></a>Popis pravidla  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e825ba66-1383-46ad-8712-396bc9c14036
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9450254620fff8981aa9330dc41535ec69c0d842
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0e1870870301b4f9812ea9a16fe6089fd72028b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944136"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987424"
 ---
 # <a name="console"></a>Konzola
 VSPerfCmd.exe **konzoly** možnost spustí aplikaci, která zadané v novém okně příkazového řádku. **Konzola** jde použít jenom s příkazu vsperfcmd proveďte **spuštění** možnost. Pokud aplikace není aplikace pomocí příkazového řádku **konzoly** nemá žádný vliv.  
@@ -34,7 +34,7 @@ VSPerfCmd.exe /Launch:AppName /Console
  Spuštění profileru a aplikace určené `AppName`.  
   
 ## <a name="see-also"></a>Viz také:  
- [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil služby](../profiling/command-line-profiling-of-services.md)

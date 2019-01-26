@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aff681c72b17882db8f7e97daae45bb5da69347
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995866"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 
@@ -167,7 +167,7 @@ Každá třída má sadu vlastností a může mít základní třídu. V příkl
 
 Každá třída domény (včetně relací, tvary, konektory a diagramy) může mít tyto atributy a podřízené uzly:
 
--   **ID.** Tento atribut je identifikátor GUID. Pokud nezadáte hodnotu v souboru, návrháře jazyka specifického pro doménu vytvoří hodnotu. (V obrázcích v tomto dokumentu, tento atribut je obvykle vynechána, pro úsporu místa.)
+-   **Id.** Tento atribut je identifikátor GUID. Pokud nezadáte hodnotu v souboru, návrháře jazyka specifického pro doménu vytvoří hodnotu. (V obrázcích v tomto dokumentu, tento atribut je obvykle vynechána, pro úsporu místa.)
 
 -   **Název a Namespace.** Tyto atributy zadejte název a obor názvů, třídy v generovaném kódu. Společně musí být jedinečný v rámci jazyka specifického pro doménu.
 

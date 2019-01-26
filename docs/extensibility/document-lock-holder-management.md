@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 320f394aa08a3be7f1dfc571b3aa80aaecadead6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986437"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983897"
 ---
 # <a name="document-lock-holder-management"></a>Správa vlastník zámku dokumentu
 Spuštění tabulky dokumentů (r...) udržuje počet otevřených dokumentů a zámky jakékoli úpravy, které mají. Zámek upravit můžete umístit na dokumentu rámcový při programově úpravách na pozadí bez uživatele zobrazuje dokument otevřít v okně dokumentu. Tato funkce se často používá v návrháři, které mění více souborů přes grafické uživatelské rozhraní.

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0415836ea4bf0c6544de95ebe0b6e4b9679d16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8ef69d4830e413fe225841941778ad8e62897f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941333"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000585"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` Funkce vloží značku číselné a textový řetězec v. *Vsp* souboru. Pro značky a komentáře, které má být vložen, profilování pro vlákna, které obsahuje `CommentMarkProfile` funkce musí být dále.  
@@ -66,7 +66,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
   
 |||  
 |-|-|  
-|**Záhlaví**|Zahrnout VSPerf.h|  
+|**Header**|Zahrnout VSPerf.h|  
 |**Knihovna**|Použití VSPerf.lib|  
 |**Unicode**|Implementováno jako `CommentMarkProfileW` (Unicode) a `CommentMarkProfileA` (ANSI).|  
   

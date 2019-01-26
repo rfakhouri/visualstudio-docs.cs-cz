@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 52ae9eff-50f9-4b2f-8039-ca7e49fba88e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ae16f99aefe4411b345a1b135c7f014a1061911
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eec2a29f3d1e967d946488043882e96eb4f081de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970926"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Volejte GetLastError ihned po volání nespravovaného kódu
 
@@ -34,7 +34,7 @@ ms.locfileid: "53963107"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Je provedeno volání <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> metody nebo ekvivalentní Win32 `GetLastError` funkce a volání, která se dodává bezprostředně před není na platformu vyvolání metody.
 
@@ -68,7 +68,7 @@ Je provedeno volání <xref:System.Runtime.InteropServices.Marshal.GetLastWin32E
 
  [CA1400: Vstupní body volání nespravovaného by měly existovat](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: VOLÁNÍ NESPRAVOVANÝCH KÓDŮ. Volání nespravovaných kódů by neměly být viditelné](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: Volání nespravovaných kódů by neměly být viditelné](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
  [CA2101: Určete zařazování pro argumenty řetězce volání nespravovaného](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 

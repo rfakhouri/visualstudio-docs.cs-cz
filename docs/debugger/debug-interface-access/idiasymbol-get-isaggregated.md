@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_isaggregated – | Dokumentace Microsoftu
+title: IDiaSymbol::get_isAggregated | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24d280ef-6ea3-4958-9418-4ad3ca7c67c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e288c0bf36b3899ec6398187f87af3a366083da6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3026dc8b228d16ecdd5b41379c180a2a3a5f0502
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957417"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986719"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Získá příznak, který určuje, zda datový symbol je součástí agregace nebo kolekce symbolů; Kompilátor bude považovat za agregované symboly samostatné entity, ale ve skutečnosti jsou součástí jedné větší symbol.  
@@ -51,5 +51,5 @@ HRESULT get_isAggregated(
 |Verze:|Ve verzi 8.0 DIA SDK|  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)

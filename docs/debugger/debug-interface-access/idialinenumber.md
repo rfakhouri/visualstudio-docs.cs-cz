@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1071f7d0-1f8c-4384-933f-c49c7eb930bd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5cc240b6818e3d020b018546f801a3ca890a287
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6329819456f90e1ee6ae3fefebd5a0acc3dbd642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982726"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Přístupy informace, které popisují proces mapování z bloku bajty bitové kopie textu na číslo řádku zdrojového souboru.  
@@ -135,11 +135,11 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 263e339fa4ab8001fcd542f7dcedd10b5a24659a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e1f2e0d1964f742a7dba9ff2dfc7576d86a1a21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971085"
 ---
 # <a name="bind-breakpoints"></a>Vytvořit vazbu zarážky
 Pokud uživatel nastaví zarážku, například stisknutím klávesy **F9**, rozhraní IDE výrobky zpracovává žádost a vyzve k zadání ladicí relaci vytvořit zarážku.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66428fa389b3adc152524d3d17ce7dd8135b1dbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7986a05ed090141734948404cb8580633c50e74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940677"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004354"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Průvodce: Chybějící objekty z důvodu použití funkce Vertex Shading
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nástrojů diagnostiky grafiky k prozkoumání objekt, který nebyl nalezen z důvodu chyby, ke které dojde během fáze vertex shader.  
@@ -120,7 +120,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
   
    Chcete-li problém vyřešit, je přesunout řádek kódu, který nastaví hodnotu `m_marbleConstantBufferData.projection` po řádek, který inicializuje hodnotu místní proměnné `projection`.  
   
-   ![Opravené C&#43; &#43; zdrojový kód](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+   ![The corrected C&#43;&#43; source code](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
    Po opravě kód, můžete její opětovné sestavení a spuštění aplikace znovu a zjistit, že je vyřešen problém vykreslování:  
   

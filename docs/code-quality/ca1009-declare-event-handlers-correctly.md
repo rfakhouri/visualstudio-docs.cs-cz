@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b56f93a1ea4afbe3c9fd590df937fe56a155b044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 900eca590a87cc45a2859becd4a6a70c09d57bc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987651"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990911"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Deklarujte správně obslužné rutiny událostí
 
@@ -35,7 +35,7 @@ ms.locfileid: "53987651"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Delegát, který zpracovává událost veřejná nebo chráněná nemá správný podpis, návratový typ nebo názvy parametrů.
 
 ## <a name="rule-description"></a>Popis pravidla

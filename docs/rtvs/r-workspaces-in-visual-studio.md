@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a72784b0ab265c090f2efd9c5949698118b559ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897b5b82b00235404c599f77b8909b007fc80bb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857011"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987684"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Ovládací prvek, kde běží kód R s pracovními prostory
 
@@ -34,7 +34,7 @@ Ve výchozím nastavení RTVS neukládá stav pracovního prostoru po zavření 
 
 ## <a name="local-workspaces"></a>Místní pracovní prostory
 
-Zobrazí se seznam místních pracovních prostorech všechny překladače r. nainstalované v počítači. 
+Zobrazí se seznam místních pracovních prostorech všechny překladače r. nainstalované v počítači.
 
 Při spuštění sady Visual Studio se pokusí automaticky zjistit všechny verze prostředí R, který jste nainstalovali projitím **HKEY_LOCAL_MACHINE\Software\R Core\\**  klíč registru. Protože tato kontrola se provádí pouze při spuštění, budete muset restartovat Visual Studio, pokud instalujete novou interpreta jazyka R.
 
@@ -129,7 +129,7 @@ Soubory se zkopírují na vzdálený server následujícím způsobem:
 
 ![Vlastnosti projektu kartu s přenosem souboru nastavení spuštění](media/workspaces-remote-file-transfer-filter-settings.png)
 
-Tady **přenos souborů při spuštění** vlastnost určuje, zda RTVS automaticky zkopíruje soubory projektu. **Soubory k přesunu** hodnotu pak přesně které soubory se přenášejí filtry. Ve výchozím nastavení je zkopírovat pouze *. R*, *. RMD*, *.sql*, *.md*, a *.cpp* soubory. Toto chování se vyhnete neúmyslně kopírování velkých datových souborů na server se každé spuštění. 
+Tady **přenos souborů při spuštění** vlastnost určuje, zda RTVS automaticky zkopíruje soubory projektu. **Soubory k přesunu** hodnotu pak přesně které soubory se přenášejí filtry. Ve výchozím nastavení je zkopírovat pouze *. R*, *. RMD*, *.sql*, *.md*, a *.cpp* soubory. Toto chování se vyhnete neúmyslně kopírování velkých datových souborů na server se každé spuštění.
 
 ## <a name="copy-files-from-a-remote-workspace"></a>Kopírování souborů z vzdálený pracovní prostor
 

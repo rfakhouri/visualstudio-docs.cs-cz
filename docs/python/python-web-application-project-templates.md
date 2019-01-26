@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29730f6dfa2d220759a5e563305e4e0cbb9675c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13f4d81243ce657b2766aa197d9ef5a74ffb63e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976297"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
@@ -123,7 +123,7 @@ Jakákoli proměnná vlastnost nebo prostředí projektu je možné zadat při M
 Jehlanový aplikace aktuálně nejlépe vytvářejí pomocí `pcreate` nástroj příkazového řádku. Po vytvoření aplikace, může být importován pomocí [ **z existující Pythonu kódu** ](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) šablony. Až to uděláte, vyberte **obecný webový projekt** vlastní nastavení pro konfiguraci možností. Tato nastavení se předpokládá, že pyramidového diagramu je nainstalovat do virtuálního prostředí v `..\env`.
 
 - **Ladění** skupiny:
-  - **Port serveru**: 6543 (nebo cokoli, co je nakonfigurováno v *.ini* soubory)
+  - **Server Port**: 6543 (nebo cokoli, co je nakonfigurováno v *.ini* soubory)
 
 - **Příkaz Spustit Server** skupiny:
   - Příkaz: `..\env\scripts\pserve-script.py` (skript)

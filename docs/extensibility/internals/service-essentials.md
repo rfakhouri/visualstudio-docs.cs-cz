@@ -1,5 +1,5 @@
 ---
-title: Služba Essentials | Dokumentace Microsoftu
+title: Service Essentials | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a72dfb519e35cb0bec94fb73d112e0bff27b0b14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027955"
 ---
 # <a name="service-essentials"></a>Základy služeb
 Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage poskytuje určitou sadu rozhraní pro jiné VSPackage využívat. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je kolekce rozšíření VSPackages, která poskytuje služby do jiné balíků VSPackages.  
@@ -58,7 +58,7 @@ Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage poskyt
   
 <a name="how-to-use-getglobalservice"></a>  
   
-## <a name="use-getglobalservice"></a>Použití GetGlobalService  
+## <a name="use-getglobalservice"></a>Use GetGlobalService  
   
 V některých případech budete muset získat službu z panelu nástrojů nebo ovládací prvek kontejneru, který nebyl byl umístěn, jinak byl umístěn u poskytovatele služeb, které neví o službu, kterou chcete. Můžete například chtít zapisovat do protokolu aktivit z v rámci ovládacího prvku. Další informace o těchto a dalších scénářů najdete v tématu [jak: Odstraňování potíží se službami](../../extensibility/how-to-troubleshoot-services.md).  
   

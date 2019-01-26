@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a84cd75dd6ae6ecd2e62bd41ed384cd03305bbf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57ab8c2d173d5a5799d20bf50e0fd26716d163af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963446"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992747"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Postupy: Úprava hodnoty registru (C#, C++, Visual Basic, F#)
 
@@ -43,4 +43,4 @@ Okno registrů je k dispozici pouze v případě, že je povoleno ladění úrov
     >  Úpravy hodnot s plovoucí desetinnou čárkou mohou díky převodu komponenty zlomku z desítkové do binární soustavy způsobit drobné nepřesnosti. I zdánlivě neškodné úpravy mohou způsobit změny některých nejméně významných bitů v registru s plovoucí desetinnou čárkou.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: Použití okna registry](../debugger/how-to-use-the-registers-window.md)
+ [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)

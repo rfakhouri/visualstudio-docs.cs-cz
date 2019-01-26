@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef91cc3d3bcec479fd6619662d40fbfeffb82131
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956046"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989949"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Přidání položek do dialogových oken přidat novou položku
 Proces přidávání položek do **přidat novou položku** spustí dialogové okno s klíči registru. Jak je znázorněno v následující položky registru **AddItemTemplates** oddíl obsahuje cestu a název adresáře, ve které položky k dispozici v **přidat novou položku** jsou umístěny dialogové okno.  
@@ -27,7 +27,7 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
 
  První identifikátor GUID je identifikátor CLSID projektech tohoto typu; druhý identifikátor GUID označuje typ registrované projektu pro přidání položek šablony:  
 
- **\\{C061DB26-5833-11D2-96F5-000000000000} \\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
+ **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
 
  **@** = #6 
 

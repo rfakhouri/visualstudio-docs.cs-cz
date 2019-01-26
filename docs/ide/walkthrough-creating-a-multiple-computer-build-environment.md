@@ -8,15 +8,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 104584f415e3b4167206632e75e1c7b6d29bb6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d6aea526494e2adfd8151497f8b8b01f3f5c07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038380"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Průvodce: Vytvoření prostředí pro sestavení s použitím více počítačů
 
@@ -100,17 +100,17 @@ Všimněte si, že název *Program Files* složky závisí na operačním systé
 
     - %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\
 
-    - %ProgramFiles%\Common Files\Common Files\Merge Modules\
+    - %ProgramFiles%\Common Files\Merge Modules\
 
-    - 11.0\VC\ %ProgramFiles%\Microsoft visual Studio
+    - %ProgramFiles%\Microsoft Visual Studio 11.0\VC\
 
     - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\
 
-    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETCore\v4.5\
+    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\
 
-    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETFramework\v4.5\
+    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\
 
 3. Zkopírujte tyto soubory z hostitelského počítače do počítače sestavení:
 
@@ -211,29 +211,29 @@ Je nutné vytvořit položky registru ke konfiguraci nastavení pro MSBuild.
 
    - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-   - **% RegistryRoot %\VisualStudio\11.0@Source adresáře**
+   - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
 
-   - <strong>% RegistryRoot %\VisualStudio\11.0\Setup\VC@ProductDir</strong>
+   - <strong>%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir32</strong>
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir64</strong>
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer32</strong>
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer64</strong>
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-   - **% RegistryRoot %\VisualStudio\SxS\VC7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-   - **% RegistryRoot %\VisualStudio\SxS\VS7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
    - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
    Počítač sestavení x x64, také vytvořte následující položku registru a odkazovat na hostitelském počítači zjistěte, jak ji nastavit.
 
@@ -262,7 +262,7 @@ V této tabulce jsou uvedeny podporované argumenty pro *vcvarsall.bat*:
 |Vcvarsall.bat argument|Kompilátor|Architektura sestavovacího počítače|Architektura výstupu sestavení|
 | - |--------------| - | - |
 |x86 (výchozí)|32bitová nativní|x86, x64|x86|
-|x86_amd64|x64 křížové|x86, x64|x64|
+|x86_amd64|x64 Cross|x86, x64|x64|
 |amd64|x64 nativní|x64|x64|
 
 Pokud *vcvarsall.bat* proběhne úspěšně – tedy žádná chybová zpráva se zobrazí – můžete následující krok přeskočit a pokračovat na [sestavení nainstalovat nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)část tohoto dokumentu.
@@ -277,13 +277,13 @@ Pokud *vcvarsall.bat* proběhne úspěšně – tedy žádná chybová zpráva s
 
    Pokud chcete použít nativní 32bitový MSBuild, přidejte tyto cesty do proměnné PATH:
 
-   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 nástroje
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
    - %windir%\Microsoft.NET\Framework\v4.0.30319
 
    Pokud chcete použít nativní 64bitový MSBuild, přidejte tyto cesty do proměnné PATH:
 
-   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
@@ -314,7 +314,7 @@ Kanály Azure můžete použít k sestavení řešení a projektů sady Visual S
 
 Chcete-li použít *msbuild.exe* na příkazovém řádku spusťte následující příkaz, ve kterém *solution.sln* je zástupný symbol pro název vašeho řešení.
 
-**Nástroj MSBuild** *solution.sln*
+**msbuild** *solution.sln*
 
 Další informace o tom, jak používat MSBuild na příkazovém řádku naleznete v tématu [odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md).
 
@@ -337,7 +337,7 @@ Můžete vytvořit prostředí sestavení, který je možné nasadit na různýc
 
     - V % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\a \Microsoft.CppCommon.targets\\, změňte každou instanci z
 
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, verze = 4.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a"
+         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
          až
 
@@ -347,7 +347,7 @@ Můžete vytvořit prostředí sestavení, který je možné nasadit na různýc
 
     - V % Depot % \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets změňte každou instanci
 
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, verze = 4.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a"
+         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
          až
 

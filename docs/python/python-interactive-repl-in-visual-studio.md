@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835643"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992383"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Práce s interaktivní okno Pythonu
 
@@ -31,11 +31,11 @@ Visual Studio má několik režimů REPL Pythonu na výběr:
 | Standard | Výchozí REPL, přednášky na Python přímo | Standardní editační (multiline atd.). | Ano, prostřednictvím `$attach` | Ne |
 | Ladit | Výchozí REPL, přednášky na laděném procesu Pythonu | Standardní úpravy | Ladění | Ne |
 | IPython | Přednášky REPL, IPython back-endu | Příkazy IPython, Pylab usnadnění | Ne | Ano, vložený v REPL |
-| IPython bez Pylab | Přednášky REPL, IPython back-endu | Standardní IPython | Ne | Ano, oddělte okna | 
+| IPython bez Pylab | Přednášky REPL, IPython back-endu | Standardní IPython | Ne | Ano, oddělte okna |
 
 Tento článek popisuje **standardní** a **ladění** REPL režimy. Informace o režimech IPython, naleznete v tématu [použití Ipythonu REPL](interactive-repl-ipython.md).
 
-Podrobný návod s příklady, včetně interakcí s editoru **Ctrl**+**Enter**, naleznete v tématu [kurzu krok 3: Použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
+Podrobný návod s příklady, včetně interakcí s editoru **Ctrl**+**Enter**, naleznete v tématu [kurzu krok 3: Použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 |   |   |
 |---|---|

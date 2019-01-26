@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75529a2baebc6a5f488122106f47e512a4b9ac0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3a637608c8da5d7c5c5e0d857520a08ffae494a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962153"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944863"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Přečte zadaný počet bajtů počínaje od určeného posunutí ze spustitelného souboru.  
@@ -43,12 +43,12 @@ HRESULT ReadExecutableAt ( 
  pcbData  
  [out] Vrátí počet přečtených bajtů.  
   
- data]  
+ data[]  
  [out v] Pole, které se vyplní přečtených ze souboru bajtů.  
   
 ## <a name="remarks"></a>Poznámky  
  Tato metoda je volána kód podpory, který DIA načtení bajtů dat ze spustitelného souboru pomocí posun absolutní. Tato metoda je volána z podporu [idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiareadexeatoffsetcallback –](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
+ [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

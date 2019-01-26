@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe98206e5183cbfbcacfe0a2849d09308bc7dba2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24138337ab5adbbcabb9b0ab03cc411392565622
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951994"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988360"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Průvodce: Zápis Vizualizéru v jazyce Visual Basic
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Vizualizaci, kterou vytvoříte v tomto názorném postupu se zobrazí obsah řetězce pomocí Windows Forms okno se zprávou. Tento vizualizér jednoduchým řetězcem je základní příklad, který znázorňuje, jak můžete vytvořit vizualizéry pro ostatní typy dat pro více projektů.
@@ -228,5 +228,5 @@ Kód vizualizéru musí být umístěn v knihovně DLL, který bude číst ladic
 ## <a name="see-also"></a>Viz také:
 
 - [Architektura vizualizéru](../debugger/visualizer-architecture.md)
-- [Postupy: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)
+- [Postupy: Instalace vizualizéru](../debugger/how-to-install-a-visualizer.md)
 - [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)

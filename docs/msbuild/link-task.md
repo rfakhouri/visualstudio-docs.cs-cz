@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d21e6cc4c3701716c72ad3e62dc75e2df383da0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 789a830b281d7905d8b067c1d69665cc6de3c610
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857037"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001784"
 ---
 # <a name="link-task"></a>odkaz – úloha
 Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objektových souborů Common Object File Format (COFF) a knihovny, které chcete vytvořit spustitelný soubor (*.exe*) soubor nebo dynamická knihovna (DLL). Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).  
@@ -113,7 +113,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
   
      Povolí podrobnější souborů sledování k zachycení odkazu přírůstkové od chování. Vždy vrátí `true`.  
   
--   **Vlastnost BaseAddress**  
+-   **BaseAddress**  
   
      Volitelné **řetězec** parametru.  
   
@@ -173,7 +173,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
   
     -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: žádné**  
   
-    -   **MTAThreadingAttribute** - **: MTA**  
+    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
     -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
@@ -591,7 +591,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
   
      Další informace najdete v tématu `REF` argument v [/OPT (optimalizace)](/cpp/build/reference/opt-optimizations).  
   
--   **Výstupní soubor**  
+-   **OutputFile**  
   
      Volitelné **řetězec** parametru.  
   
@@ -619,7 +619,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
   
      Další informace najdete v tématu [/ALLOWBIND (zabránit vazbě knihoven DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).  
   
--   **Profil**  
+-   **Profile**  
   
      Volitelné **logická** parametru.  
   
@@ -665,7 +665,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
   
      Další informace najdete v tématu [/align (zarovnání oddílů)](/cpp/build/reference/align-section-alignment).  
   
--   **Setchecksum –**  
+-   **SetChecksum**  
   
      Volitelné **logická** parametru.  
   
@@ -747,17 +747,17 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
   
     -   **Konzola** -   **/Subsystem: Console**  
   
-    -   **Windows** -   **/Subsystem: Windows**  
+    -   **Windows** - **/SUBSYSTEM:WINDOWS**  
   
     -   **Nativní** - **souboru**  
   
     -   **Aplikace EFI** - **/SUBSYSTEM:EFI_APPLICATION**  
   
-    -   **Ovladač spouštěcí služby EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
     -   **PAMĚŤ ROM EFI** - **/SUBSYSTEM:EFI_ROM**  
   
-    -   **Modul Runtime EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
     -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   

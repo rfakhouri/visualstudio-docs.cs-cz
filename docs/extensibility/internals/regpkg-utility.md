@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3f9eecfaeffd19ece7e0ca2fe14e3f95556503d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc1e818e576c4593eb890f1f31b4d67d4c7c4488
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904874"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979423"
 ---
 # <a name="regpkg-utility"></a>Nástroj RegPkg
 > [!NOTE]
@@ -37,19 +37,19 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kořenový adresář.  
   
- /RegFile:filename  
+ /regfile:FileName  
  Vytvoří soubor .reg spíše než aktualizaci registru.  Nelze použít s /vrgfile nebo /rgsfile nebo /wixfile.  
   
- /rgsfile:filename  
+ /rgsfile:FileName  
  Vytvoří soubor .rgs spíše než aktualizaci registru.  Nelze použít s/RegFile /vrgfile nebo /wixfile.  
   
- /vrgfile:filename  
+ /vrgfile:FileName  
  Vytvoří soubor .vrg spíše než aktualizaci registru.  Nelze použít s/RegFile nebo /rgsfile nebo /wixfile.  
   
  /rgm  
  Vytvoří soubor .rgm kromě souboru rgs.  Musí být kombinován se /rgsfile.  
   
- /wixfile:filename  
+ /wixfile:FileName  
  Vytvoří soubor kompatibilní s sada nástrojů XML Instalační služby systému Windows spíše než aktualizaci registru.  Nelze použít s/RegFile nebo /rgsfile nebo /vrgfile.  
   
  /codebase  
@@ -58,7 +58,7 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  / Assembly  
  Vynutí registraci sestavení spíše než základ kódu.  
   
- / unregister  
+ /unregister  
  Zruší registraci tohoto balíčku.  Nelze použít  
   
  / RegFile nebo /vrgfile nebo /rgsfile nebo /wixfile.  

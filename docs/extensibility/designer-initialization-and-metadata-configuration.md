@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dae44a2fced40894003d2f739af1147b293494a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0996176afa735d415c5ea546772aa33b87d38e68
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885395"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009801"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Návrháře konfigurace inicializace a metadat
 Manipulace s metadata a filtrování atributů přiřazených pomocí návrháře nebo součástí návrháře poskytuje mechanismus pro aplikace definovat, jaké nástroje jsou používány konkrétní návrháře pro zpracování různých <xref:System.Type> objektů (například datové struktury třídy, nebo grafické entity), když je k dispozici návrháře a konfigurace integrovaném vývojovém prostředí sady Visual Studio pro podporu návrháře (pro instanci, která **nástrojů** kategorie nebo karta je k dispozici).  

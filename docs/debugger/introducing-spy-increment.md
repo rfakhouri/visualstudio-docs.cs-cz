@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4126f4fde8109b9d67b3ad6a69c97395ddf1ef40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371e707dae11dacbbcc9ec590e908cd66f6189ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027981"
 ---
 # <a name="introducing-spy"></a>Představení nástroje Spy++
 Spy ++ umožňuje provádět následující úlohy:  
@@ -44,7 +44,7 @@ Spy ++ umožňuje provádět následující úlohy:
   
  Druhá verze, s názvem nástroje Spy ++ (64-bit) (spyxx_amd64.exe), je navržená pro zobrazení zprávy odeslané do okna, na kterém běží v 64bitové proces. Na 64bitový operační systém, například Poznámkový blok spustí v 64bitového procesu. Proto můžete nástroje Spy ++ (64-bit) k zobrazení zprávy odeslané do poznámkového bloku. Spy ++ (64-bit) se obvykle nachází v  
   
- .. \\ *Instalační složky sady visual Studio*\Common7\Tools\spyxx_amd64.exe.  
+ ..\\*Visual Studio installation folder*\Common7\Tools\spyxx_amd64.exe.  
   
  Buď verzi nástroje Spy ++ lze spustit přímo z příkazového řádku.  
   

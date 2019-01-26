@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d13fe40866f8c3baf7d47e17a98515ea8197dfe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9bf23375f4be979c8cd5ea5dd44913746840ce6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962646"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972885"
 ---
 # <a name="list-modules-command"></a>Listovat moduly – příkaz
 Seznam modulů pro aktuální proces.
@@ -58,7 +58,7 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 
  Volitelné. Určuje, jestli se má zobrazit soubory symbolů z modulů. Výchozí hodnota je `no`.
 
- / SymbolStatus:`yes|no`
+ /SymbolStatus:`yes|no`
 
  Volitelné. Určuje, jestli se má zobrazit symbol stavy modulů. Výchozí hodnota je `yes`.
 
@@ -81,4 +81,4 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Postupy: Použití okna moduly](../../debugger/how-to-use-the-modules-window.md)
+- [Postupy: Použití okna Moduly](../../debugger/how-to-use-the-modules-window.md)

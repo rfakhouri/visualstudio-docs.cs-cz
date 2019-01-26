@@ -1,5 +1,5 @@
 ---
-title: 'CA2241: Poskytněte správné argumenty metodě formátování'
+title: 'CA2241: Zadejte správné argumenty pro metody formátování'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: 83639bc4-4c91-4a07-a40e-dc5e49a84494
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: df71a51336f559f293faad86c161b9939a3a8014
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f723e9c3a6f204b1a19648b121637f42d1fb4017
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920833"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Poskytněte správné argumenty metodě formátování
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Zadejte správné argumenty pro metody formátování
 
 |||
 |-|-|
@@ -35,7 +35,7 @@ ms.locfileid: "53912974"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  `format` Řetězcový argument předaný metodě například <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, nebo <xref:System.String.Format%2A?displayProperty=fullName> neobsahuje položky formátu, který odpovídá každému argumentu objektu nebo naopak.
 
 ## <a name="rule-description"></a>Popis pravidla

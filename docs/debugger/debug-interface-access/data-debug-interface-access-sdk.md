@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0f17e96a-2e06-42c9-a877-3e5e670ee0ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d52ee800d048ea9973fd6a26bdc0836c58a722
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa3191533bb28071f4161017e35f91a5a9c4b3e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999259"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Data (Přístup k rozhraní ladění SDK)
 Všechny proměnné, jako jsou parametry, místní proměnné, globální proměnné a členy třídy, jsou identifikované `SymTagData` symboly. Konstantní hodnoty (`LocIsConstant`) se také identifikují s tímto typem.  
@@ -62,7 +62,7 @@ Všechny proměnné, jako jsou parametry, místní proměnné, globální promě
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Pokud data je označená jako volatile.|  
   
 ## <a name="see-also"></a>Viz také  
- [Cv_access_e – výčet](../../debugger/debug-interface-access/cv-access-e.md)   
+ [CV_access_e Enumeration](../../debugger/debug-interface-access/cv-access-e.md)   
  [Datakind – výčet](../../debugger/debug-interface-access/datakind.md)   
  [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Locationtype – výčet](../../debugger/debug-interface-access/locationtype.md)   

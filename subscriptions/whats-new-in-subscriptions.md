@@ -9,13 +9,13 @@ searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.openlocfilehash: 414a7a9ef25740505e08da74cd4dcfce0fe11ce9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927226"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003409"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s novou v předplatných sady Visual Studio
 
@@ -29,16 +29,16 @@ Tady je rychlá rekapitulace toho, co je nového v 2. čtvrtletí.
 
 Přidali jsme nové funkce pro správce cloudu, umožňující snadnější správa cloudových předplatných:
 
-* [**Hromadné přiřazení**](/visualstudio/subscriptions/assign-license#bulk-assignments): Přidání a načíst několik předplatitelů hromadně.
+* [**Hromadné přiřazení**](/visualstudio/subscriptions/assign-license#bulk-assignments): Přidat a načíst několik předplatitelů hromadně.
 
   ![Přidávání více uživatelů pomocí hromadné přidání tlačítka](media/bulk-add-multiple-subscribers.png)
 
-* [**Export**](/visualstudio/subscriptions/exporting-subscriptions): Exportovat seznam uživatelů a podrobnosti o jejich přiřazení. Seznam například to může být velmi užitečné, pokud chcete ke sledování přiřazení a datum vypršení platnosti.
+* [**Export**](/visualstudio/subscriptions/exporting-subscriptions): Exportujte seznam uživatelů a podrobnosti o jejich přiřazení. Seznam například to může být velmi užitečné, pokud chcete ke sledování přiřazení a datum vypršení platnosti.
 
    ![Exportovat seznam předplatitelů do aplikace Excel s použitím tlačítko pro Export](media/export-subscriber-list-to-csv.png)
 
 
-* [**Hromadná úprava**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): Upravte informace o předplatném několik předplatitelů hromadně.
+* [**Hromadná úprava**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): Informace o předplatném několik předplatitelů hromadných úprav
 
   ![Úprava více uživatelů pomocí tlačítka hromadných úprav](media/bulk-edit-multiple-subscribers.png)
 
@@ -52,15 +52,15 @@ Přidali jsme nové funkce pro správce cloudu, umožňující snadnější spr�
 
     ![Změnit jazyk, který chcete použít při odesílání oznámení e-mailů](media/change-subscriber-communication-preference.png)
 
-  * **Přidat odkaz na**: Přidání odkazu poznámky pro předplatná, která spravujete.
+  * **Přidat odkaz na**: Přidáte odkaz na poznámky pro předplatná, která spravujete.
 
     ![Přidat poznámky odkaz na předplatné](media/add-subscriber-reference-notes.png)
 
-* [**Znovu poslat e-mail s přiřazením**](resend-assignment-email.md): znovu odeslat e-mailové oznámení všem uživatelům ve vašem seznamu odběratele a pro libovolný počet, kolikrát chcete.
+* [**Znovu poslat e-mail s přiřazením**](resend-assignment-email.md): Znovu posílejte e-mailové oznámení všem uživatelům ve vašem seznamu odběratele a pro libovolný počet, kolikrát chcete.
 
   ![Znovu poslat aktivační e-mail pro všechny uživatele nebo více uživatelů, pokaždé, když chcete](media/resend-subscriber-activation-emails.png)
 
-* [**Filtr**](search-license.md): uspořádání a filtrování vaše předplatitelská data do nejlépe vyhovovat vašim potřebám.
+* [**Filtr**](search-license.md): Uspořádání a filtrování vaše předplatitelská data do nejlépe vyhovovat vašim potřebám.
 
   ![Filtrovat předplatitele data, jak na základě dostupných polí](media/filter-subscriber-data.png)
 

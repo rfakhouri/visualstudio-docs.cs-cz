@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0761956cd18945a50bdb45fa7624a72f645683e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b18e3b52105679f9b6a82083d6ffd7fe9268d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831781"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969808"
 ---
-# <a name="scccreatesubproject-function"></a>Scccreatesubproject – funkce
+# <a name="scccreatesubproject-function"></a>SccCreateSubProject function
 Tato funkce vytvoří dílčí projekt s daným názvem. v rámci existující projekt nadřazené určené `lpParentProjPath` argument.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -85,7 +85,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Scccreatesubproject – a sccgetparentprojectpath – technické poznámky  
  Přidávání řešení a projektů do správy zdrojových kódů zjednodušili jsme v sadě Visual Studio, chcete-li minimalizovat počet pokusů, které je uživatel vyzván k výběru umístění v systému správy zdrojového kódu. Tyto změny jsou aktivované pomocí sady Visual Studio, pokud obě nové funkce, podporuje modul plug-in správy zdrojového kódu `SccCreateSubProject` a `SccGetParentProjectPath`. Následující položku registru je však možné zakázat tyto změny a obnovit předchozí chování sady Visual Studio (zdrojový ovládací prvek modulu Plug-in API verze 1.1):  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**  
   
  Pokud tato položka registru neexistuje nebo je nastavena na hodnotu DWORD: 00000000, Visual Studio se pokusí použití těchto nových funkcí `SccCreateSubProject` a `SccGetParentProjectPath`.  
   
@@ -93,5 +93,5 @@ SCCRTN SccCreateSubProject(
   
 ## <a name="see-also"></a>Viz také:  
  [Funkce modulu plug-in API zdrojového ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
- [Sccgetparentprojectpath –](../extensibility/sccgetparentprojectpath-function.md)   
+ [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

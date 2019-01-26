@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6addfb72ae1e67b846433c9762163138523df68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6254ce933ccfc54f28e8e0e893932a5fbda27a0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872408"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981243"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Ladění aplikací ClickOnce používajících System.Deployment.Application
 V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení můžete konfigurovat, jak se aplikace aktualizuje. Nicméně, pokud je potřeba použít a přizpůsobit advanced [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] potřebuje pro funkce nasazení, musíte pro přístup k modelu objektu nasazení poskytované <xref:System.Deployment.Application>. Můžete použít <xref:System.Deployment.Application> rozhraní API pro pokročilé úlohy jako například:  

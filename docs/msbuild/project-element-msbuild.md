@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f04a3d8e960b63dec4771c749ab6404cf1c01d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 598e802f9868399073bba7a6f1bc1f2278af83f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841366"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921043"
 ---
 # <a name="project-element-msbuild"></a>Project – element (MSBuild)
 Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.  
@@ -67,12 +67,12 @@ Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/interna
 
 | Prvek | Popis |
 | - | - |
-| [Zvolte](../msbuild/choose-element-msbuild.md) | Volitelný element.<br /><br /> Vyhodnotí jako podřízené prvky k výběru jedné sadě `ItemGroup` elementy a/nebo `PropertyGroup` prvky k vyhodnocení. |
+| [Choose](../msbuild/choose-element-msbuild.md) | Volitelný element.<br /><br /> Vyhodnotí jako podřízené prvky k výběru jedné sadě `ItemGroup` elementy a/nebo `PropertyGroup` prvky k vyhodnocení. |
 | [Import](../msbuild/import-element-msbuild.md) | Volitelný element.<br /><br /> Umožňuje projektu soubor k importu jiný soubor projektu. Může být nula nebo více `Import` prvky v projektu. |
-| [Importgroup –](../msbuild/importgroup-element.md) | Volitelný element.<br /><br /> Obsahuje kolekci `Import` prvky, které jsou seskupeny podle nepovinnou podmínku. |
+| [ImportGroup](../msbuild/importgroup-element.md) | Volitelný element.<br /><br /> Obsahuje kolekci `Import` prvky, které jsou seskupeny podle nepovinnou podmínku. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Volitelný element.<br /><br /> Element grouping pro jednotlivé položky. Položkami zadávají pomocí [položky](../msbuild/item-element-msbuild.md) elementu. Může být nula nebo více `ItemGroup` prvky v projektu. |
-| [ItemDefinitionGroup –](../msbuild/itemdefinitiongroup-element-msbuild.md) | Volitelný element.<br /><br /> Umožňuje definovat sadu definice položek, které jsou hodnoty metadat, které se použijí u všech položek v projektu, ve výchozím nastavení. ItemDefinitionGroup – nahrazuje nutnost používat `CreateItem` úloh a `CreateProperty` úloh. |
-| [Projectextensions –](../msbuild/projectextensions-element-msbuild.md) | Volitelný element.<br /><br /> Poskytuje způsob, jak zachovat jinou hodnotu než[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informace [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. Může být žádný nebo jeden `ProjectExtensions` prvky v projektu. |
+| [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) | Volitelný element.<br /><br /> Umožňuje definovat sadu definice položek, které jsou hodnoty metadat, které se použijí u všech položek v projektu, ve výchozím nastavení. ItemDefinitionGroup – nahrazuje nutnost používat `CreateItem` úloh a `CreateProperty` úloh. |
+| [ProjectExtensions](../msbuild/projectextensions-element-msbuild.md) | Volitelný element.<br /><br /> Poskytuje způsob, jak zachovat jinou hodnotu než[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informace [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. Může být žádný nebo jeden `ProjectExtensions` prvky v projektu. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Volitelný element.<br /><br /> Element grouping pro jednotlivé vlastnosti. Vlastnosti jsou určeny pomocí [vlastnost](../msbuild/property-element-msbuild.md) elementu. Může být nula nebo více `PropertyGroup` prvky v projektu. |
 | [Sdk](../msbuild/sdk-element-msbuild.md) | Volitelný element.<br /><br /> Odkazy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu sady SDK.  Tento element lze použít jako alternativu k atributu Sdk. |
 | [Cíl](../msbuild/target-element-msbuild.md) | Volitelný element.<br /><br /> Obsahuje sadu úkolů pro [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] postupně provést. Úlohy je určené vlastností [úloh](../msbuild/task-element-msbuild.md) elementu. Může být nula nebo více `Target` prvky v projektu. |

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84a27e392552a7194fc4aced6f2ba4a985968c87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034152"
 ---
 # <a name="command-flag-eelement"></a>Příkaz příznak Eelement
 Upraví svého nadřízeného elementu.  
@@ -47,7 +47,7 @@ Upraví svého nadřízeného elementu.
 |DontCache|Vývojové prostředí neukládá do mezipaměti `QueryStatus` výsledky metody pro tento příkaz.<br /><br /> Pro nabídku znamená to kontroleru nabídky nemají ukládat do mezipaměti text položky nabídky. Tento příznak použijte, pokud nabídka obsahuje dynamické položky nebo položky, které mají dynamický text.<br /><br /> Platné pro: `Button`, `Menu`|  
 |DynamicItemStart|Označuje začátek dynamického seznamu. To umožňuje prostředí tak, aby sestavení seznamu postupně voláním `QueryStatus` metodu na položky seznamu, dokud se nevrátí OLECMDERR_E_UNSUPPORTED příznak. Tento postup funguje dobře pro položky, jako je naposledy použité Naposledy použitých seznamech a seznamů oken.<br /><br /> Platí pro: `Button`|  
 |DynamicVisibility|Viditelnost příkaz lze změnit prostřednictvím `QueryStatus` metoda nebo prostřednictvím kontextu identifikátor GUID, který je součástí `VisibilityConstraints` části.<br /><br /> Platí pro příkazy, které se zobrazují v nabídkách a panelech nástrojů, ale ne na nejvyšší úrovni panely nástrojů, které se zobrazí v hlavním okně. Položky panelu nástrojů nejvyšší úrovně mohou být zakázané, ale není skrytý, pokud je příznak OLECMDF_INVISIBLE vrácen z `QueryStatus` metody. Příkazy nástrojů, které se zobrazují na panelech nástrojů lze skrýt.<br /><br /> V nabídce tento příznak také určuje, že ho automaticky skryt, pokud její členové budou skryti. Tento příznak se obvykle přiřadí podnabídek vzhledem k tomu, že už máte toto chování nabídek nejvyšší úrovně.<br /><br /> Tento příznak by měly být kombinované pomocí `DefaultInvisible` příznak.<br /><br /> Platné pro: `Button`, `Combo`, `Menu`|  
-|Kláves|Filtrování klíče tématu v části [prvek pole se seznamem](../extensibility/combo-element.md).<br /><br /> Platí pro: `Combo`|  
+|FilterKeys|Filtrování klíče tématu v části [prvek pole se seznamem](../extensibility/combo-element.md).<br /><br /> Platí pro: `Combo`|  
 |FixMenuController|Pokud tento příkaz je umístěn na kontroleru nabídky, příkaz je vždy výchozí; To znamená příkaz se vybere pokaždé, když se vybere tlačítko kontroleru nabídky, samotného. Pokud má kontroleru nabídky `TextIsAnchorCommand` příznak nastaven, pak kontroleru nabídky přijímá také jeho text příkazu, který má `FixMenuController` příznak.<br /><br /> By měl mít jenom jeden příkaz na kontroleru nabídky `FixMenuController` příznak. Pokud je označeno tak více než jednoho příkazu, poslední příkaz v nabídce stane výchozí příkaz.<br /><br /> Platí pro: `Button`|  
 |IconAndText|Zobrazte ikonu a text nabídky a panelu nástrojů.<br /><br /> Platné pro: `Button`, `Combo`, `Menu`|  
 |NoAutoComplete|Funkce automatického dokončování je zakázaná.<br /><br /> Platí pro: `Combo`|  
@@ -66,7 +66,7 @@ Upraví svého nadřízeného elementu.
 |TextIsAnchorCommand|U kontroleru nabídky je text nabídky provedou z příkazu výchozí (ukotvení). Příkaz ukotvení je poslední příkaz vybrané nebo stisknutého. Pokud není tento příznak nastaven, používá kontroleru nabídky vlastní `MenuText` pole. Ale kliknete na kontroleru nabídky umožňuje stále poslední vybraný příkaz z tohoto kontroléru.<br /><br /> Doporučujeme vám, že zkombinujete tento příznak se `TextChanges` příznak.<br /><br /> Tento příznak platí pouze pro nabídky typu MenuController nebo MenuControllerLatched.<br /><br /> Platí pro: `Menu`|  
 |TextMenuCtrlUseMenu|Použití `MenuText` pole na řadičích nabídky. Je výchozí pole `ButtonText`.<br /><br /> Platí pro: `Button`|  
 |TextMenuUseButton|Použití `ButtonText` pole pro nabídky. Je výchozí pole `MenuText` Pokud je zadán.<br /><br /> Platí pro: `Button`|  
-|Typu TextOnly|Zobrazit pouze text na panelu nástrojů nebo nabídky, ale žádná ikona, i když je zadaný na ikonu.<br /><br /> Platí pro: `Button`|  
+|TextOnly|Zobrazit pouze text na panelu nástrojů nebo nabídky, ale žádná ikona, i když je zadaný na ikonu.<br /><br /> Platí pro: `Button`|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   

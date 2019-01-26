@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0559f003ec09b6f3b0a12fd8f429f5dc83e6322d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993559"
 ---
 # <a name="vsix-manifest-designer"></a>Návrhář manifestu VSIX
 Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalaci rozšíření sady Visual Studio.  
@@ -90,7 +90,7 @@ Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalac
   **Typ instalace**  
   Obsahuje seznam **rozšíření sady Visual Studio** a **rozšíření SDK** tak, jak cílit na typech instalace. Možnosti se liší v závislosti na typu, který zvolíte.  
   
-  **Rozšíření sady Visual Studio**  
+  **Visual Studio Extension**  
   Obsahuje seznam **InstallationTarget** prvky, které popisují, jak lze nainstalovat balíček a do které produkty sady Visual Studio můžou toto rozšíření nainstalovat. Každý produkt se identifikují samostatně, lepší výkon díky název a verzi nebo verzi. Produkty lze přidávat do seznamu, upravit a odstranit. Název a verzi produktu odpovídá **Id** a **verze** atributy přidruženého **InstallationTarget** elementu.  
   
   **Rozsah verzí** je [12,0, 14,0] a používá následující zápis:  

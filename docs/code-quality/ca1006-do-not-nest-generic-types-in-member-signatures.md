@@ -1,5 +1,5 @@
 ---
-title: 'CA1006: Nevnořujte obecné typy v signaturách členu'
+title: 'CA1006: Nevnořujte obecné typy do signatur členu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: dfc867bc-f4af-45d7-b071-db04a248f9fc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cb71f6ccfeca25af54eab023b8ef077d758890d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fa7213b2d2cab4f02e2b7f8e2be7682f1fd65e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856836"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042592"
 ---
-# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Nevnořujte obecné typy v signaturách členu
+# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Nevnořujte obecné typy do signatur členu
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "53856836"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Externě viditelného členu obsahuje podpis, který obsahuje vnořený argument typu.
 
 ## <a name="rule-description"></a>Popis pravidla

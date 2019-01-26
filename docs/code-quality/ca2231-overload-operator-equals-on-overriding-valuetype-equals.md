@@ -1,5 +1,5 @@
 ---
-title: 'CA2231: Přetižte operátor equals při přepsání ValueType.Equals'
+title: 'CA2231: Přetižte operátor rovnosti při přetížení ValueType.Equals'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: 114c0161-261a-40ad-8b2c-0932d6909d2a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f005f62f5bf45ce29db41b29650f1d0cc5e4e25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2f0abe2607160f052a3908f88b97946e004d67a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958615"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005316"
 ---
-# <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Přetižte operátor equals při přepsání ValueType.Equals
+# <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Přetižte operátor rovnosti při přetížení ValueType.Equals
 
 |||
 |-|-|
@@ -35,7 +35,7 @@ ms.locfileid: "53958615"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Hodnotový typ přepisuje <xref:System.Object.Equals%2A?displayProperty=fullName> , ale neimplementuje operátor rovnosti.
 
 ## <a name="rule-description"></a>Popis pravidla

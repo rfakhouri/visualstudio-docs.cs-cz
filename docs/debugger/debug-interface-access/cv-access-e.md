@@ -1,5 +1,5 @@
 ---
-title: Cv_access_e – | Dokumentace Microsoftu
+title: CV_access_e | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33c05d65-abb4-4800-a382-54a3805ea7b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 373149884078b58926493fd7f37756ddb4eb8829
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c77135fe5ab8e6971bac7cb17d8fa98e5c20577a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986563"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 Určuje obor viditelnost (úroveň přístupu) členské funkce a proměnné.  
@@ -50,5 +50,5 @@ typedef enum CV_access_e { 
   
 ## <a name="see-also"></a>Viz také  
  [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol::get_access –](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
+ [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

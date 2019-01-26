@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dbf98cf8fd6ae7990440e820febd860138b9162
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009853"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Výrazy v ladicím programu sady Visual Studio
 Ladicího programu sady Visual Studio obsahuje hodnotitele výrazu, které pracují při zadání výrazu v **QuickWatch** dialogovém okně **Watch** okna, nebo **okamžité** okna. Vyhodnocení výrazu jsou také v práci **zarážky** okno a mnoha dalších místech v ladicím programu.
@@ -102,8 +102,8 @@ int main()
 |**Délka řetězce**|strlen, wcslen –, strnlen –, wcsnlen –|  
 |**Porovnání řetězců**|strcmp –, wcscmp –, stricmp –, _stricmp –, _strcmpi –, wcsicmp –, _wcscmpi, _wcsnicmp –, strncmp –, wcsncmp –, strnicmp –, wcsnicmp –|  
 |**Hledání řetězce**|strchr –, wcschr –, strstr –, wcsstr –|  
-|**Win32**|Funkce GetLastError() TlsGetValue()|  
-|**Windows 8**|WindowsGetStringLen() WindowsGetStringRawBuffer()<br /><br /> Tyto funkce vyžadují proces, který je právě laděna, aby byla spuštěna v systému Windows 8. Ladění s výpisem paměti soubory vygenerované ze zařízení s Windows 8 také vyžaduje, aby Visual Studio počítače s Windows 8. Nicméně pokud zařízení s Windows 8 ladíte vzdáleně, počítač Visual Studio může běžet Windows 7.|  
+|**Win32**|GetLastError(), TlsGetValue()|  
+|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Tyto funkce vyžadují proces, který je právě laděna, aby byla spuštěna v systému Windows 8. Ladění s výpisem paměti soubory vygenerované ze zařízení s Windows 8 také vyžaduje, aby Visual Studio počítače s Windows 8. Nicméně pokud zařízení s Windows 8 ladíte vzdáleně, počítač Visual Studio může běžet Windows 7.|  
 |**Různé**|__log2<br /><br /> Vrátí základní 2 zadané celé číslo, zaokrouhlí na nejbližší menší celé číslo v protokolu.|  
   
 ## <a name="ccli---unsupported-expressions"></a>C + +/ CLI - nepodporované výrazy  

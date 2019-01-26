@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07b01c993bb9a20dcb836a67bc2a9e8d78135adb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55cbc596824e0a02398ee1ad0ff420db0746089a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828183"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010246"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly – element (rozšíření Průvodce pro šablony sady Visual Studio)
 Určuje název nebo silný název sestavení, který implementuje `IWizard` rozhraní.  
   
  \<Vstemplate – >  
-\<WizardExtension – >  
+\<WizardExtension>  
 \<Sestavení >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -47,7 +47,7 @@ Určuje název nebo silný název sestavení, který implementuje `IWizard` rozh
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[WizardExtension –](../extensibility/wizardextension-element-visual-studio-templates.md)|Obsahuje elementy registrace pro přizpůsobení Průvodce šablonou.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Obsahuje elementy registrace pro přizpůsobení Průvodce šablonou.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  

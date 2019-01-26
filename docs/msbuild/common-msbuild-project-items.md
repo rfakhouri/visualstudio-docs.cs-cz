@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15d2a2a51297fd10388b89a2fbe1220ccd327231
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bd4f2676c9d696ecf7a59fa327a7c3f35eb2a4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951703"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035416"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], položka je pojmenovaný odkaz na jeden nebo více souborů. Položky obsahují metadat – například názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru *Microsoft.Build.CommonTypes.xsd*.  
@@ -33,7 +33,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 |Název metadat položky|Popis|  
 |---------------|-----------------|  
-|Cestu k nápovědě|Volitelný řetězec. Relativní nebo absolutní cesta k sestavení.|  
+|HintPath|Volitelný řetězec. Relativní nebo absolutní cesta k sestavení.|  
 |Název|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|  
 |FusionName|Volitelný řetězec. Určuje jednoduchý nebo silné sloučeném názvu pro položku.<br /><br /> Když tento atribut je k dispozici, můžete ušetřit čas, protože není potřeba otevřít získat sloučeném názvu souboru sestavení.|  
 |SpecificVersion|Nepovinný datový typ boolean. Určuje, zda by se měla odkazovat pouze verze ve sloučeném názvu.|  
@@ -66,7 +66,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |Název metadat položky|Popis|  
 |---------------|-----------------|  
 |Název|Povinný řetězec. Základní název souboru manifestu.|  
-|Cestu k nápovědě|Povinný řetězec. Relativní cesta souboru manifestu.|  
+|HintPath|Povinný řetězec. Relativní cesta souboru manifestu.|  
 
 ### <a name="projectreference"></a>ProjectReference  
  Představuje odkaz na jiný projekt.  

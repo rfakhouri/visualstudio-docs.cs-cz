@@ -6,23 +6,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c8db2e17f18d96f8d8b6c9eee3261c9329ece0b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2123ca4367feaf43603a25b4497e23886605bc4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926917"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968340"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest referenčním manuálu
 
 ## <a name="contents"></a>Obsah
 
 * **[Přehled funkce IntelliTest](introduction.md)**
-  - [Hello World intellitestu](introduction.md#the-hello-world-of-intellitest)
+  - [The Hello World of IntelliTest](introduction.md#the-hello-world-of-intellitest)
   - [Omezení](introduction.md#limitations)
     * [Nondeterminism](introduction.md#nondeterminism)
     * [Souběžnost](introduction.md#concurrency)
@@ -104,7 +104,7 @@ ms.locfileid: "53926917"
 
 * **[Upozornění a chyby](warnings-and-errors.md)**
   - [MaxBranches překročena](warnings-and-errors.md#maxbranches-exceeded)
-  - [MaxConstraintSolverTime překročena](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
+  - [MaxConstraintSolverTime exceeded](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
   - [MaxConditions překročena](warnings-and-errors.md#maxconditions-exceeded)
   - [MaxCalls překročena](warnings-and-errors.md#maxcalls-exceeded)
   - [MaxStack překročena](warnings-and-errors.md#maxstack-exceeded)
@@ -115,7 +115,7 @@ ms.locfileid: "53926917"
   - [Potřebujete najít typy](warnings-and-errors.md#help-types)
   - [Použitelný typ uhodnout](warnings-and-errors.md#usable-type-guessed)
   - [Neočekávaná chyba při průzkumu](warnings-and-errors.md#unexpected-exploration)
-  - [Targetinvocationexception –](warnings-and-errors.md#targetinvocationexception)
+  - [TargetInvocationException](warnings-and-errors.md#targetinvocationexception)
   - [Neinstrumentované metody, které volá](warnings-and-errors.md#uninstrumented-method-called)
   - [Externí metodu s názvem](warnings-and-errors.md#external-method-called)
   - [Neinstrumentovatelné metody, které volá](warnings-and-errors.md#uninstrumentable-method-called)

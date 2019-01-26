@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11a3b8fb91c068475c82d8352b9a8a66439ece72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958232"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975020"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Použití rozšíření Cookiecutter
 
@@ -60,7 +60,7 @@ Po instalaci šablony místně Cookiecutter zobrazí stránku možnosti, kde mů
 
 ![Stránka Možnosti Cookiecutter](media/cookiecutter-template-options.png)
 
-Každé šablony Cookiecutter definuje vlastní sadu možností a určí výchozí hodnotu pro každé z nich (zobrazené jako navrhovaný text do každého vstupního pole). Výchozí hodnota může být fragment kódu, často, pokud je dynamické hodnoty, která používá další možnosti. 
+Každé šablony Cookiecutter definuje vlastní sadu možností a určí výchozí hodnotu pro každé z nich (zobrazené jako navrhovaný text do každého vstupního pole). Výchozí hodnota může být fragment kódu, často, pokud je dynamické hodnoty, která používá další možnosti.
 
 Je možné přizpůsobit výchozí hodnoty pro konkrétní možnosti pomocí konfiguračního souboru uživatele. Když rozšíření Cookiecutter zjistí konfigurační soubor uživatele, přepíše výchozí hodnoty šablony s výchozími hodnotami cestujícího uživatele. Toto chování je podrobněji popsána [cestujícího uživatele](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) část dokumentace Cookiecutter.
 

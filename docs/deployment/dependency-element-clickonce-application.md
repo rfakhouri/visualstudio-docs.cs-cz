@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920653"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – element (aplikace ClickOnce)
 Určuje závislost platformy nebo sestavení, která je požadována pro aplikaci.  
@@ -104,7 +104,7 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 ### <a name="osversioninfo"></a>osVersionInfo  
  Povinný parametr. Tento element je podřízeným prvkem `dependentOS` elementu a obsahuje `os` elementu. Tento element nemá žádné atributy.  
 
-### <a name="os"></a>operační systém  
+### <a name="os"></a>os  
  Povinný parametr. Tento element je podřízeným prvkem `osVersionInfo` elementu. Tento element má následující atributy.  
 
 |Atribut|Popis|  
@@ -131,7 +131,7 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 | `codeBase` | Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Cesta k závislého sestavení. Může být absolutní cesta nebo cesta relativní k kódu manifestu základní. Tato cesta musí být platný identifikátor URI platný v pořadí pro manifest sestavení. |
 | `size` | Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Velikost závislého sestavení, v bajtech. |
 
-### <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
+### <a name="assemblyidentity"></a>assemblyIdentity  
  Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` prvek a má následující atributy.  
 
 |Atribut|Popis|  
@@ -166,7 +166,7 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 |-------------| - |
 | `Algorithm` | Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-### <a name="dsigdigestvalue"></a>dsig: DigestValue  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Je požadovaný podřízený element `hash` elementu. `dsig:DigestValue` Prvek nemá žádné atributy. Jeho textová hodnota je vypočítaný algoritmus hash pro zadaný soubor.  
 
 ## <a name="remarks"></a>Poznámky  

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984714"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;soubor&gt; – element (aplikace ClickOnce)
 Identifikuje všechny soubory nonassembly stáhli a použili aplikací.  
@@ -179,7 +179,7 @@ Identifikuje všechny soubory nonassembly stáhli a použili aplikací.
 |-------------| - |
 | `Algorithm` | Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Je požadovaný podřízený element `hash` elementu. `dsig:DigestValue` Prvek nemá žádné atributy. Jeho textová hodnota je vypočítaný algoritmus hash pro zadaný soubor.  
 
 ## <a name="remarks"></a>Poznámky  

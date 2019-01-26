@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96131b2847b59632212c26bf5fa77fbe6b88960
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ef72695afba37a8a044418ad1dbd49ea6867226
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956593"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000338"
 ---
 # <a name="interoperability-warnings"></a>Upozornění interoperability
 
@@ -31,7 +31,7 @@ Upozornění interoperability podporují u klientů modelu COM interakci.
 | Pravidlo | Popis |
 | - | - |
 | [CA1400: Vstupní body volání nespravovaného by měly existovat](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Veřejná nebo chráněná metoda je označena pomocí atributu System.Runtime.InteropServices.DllImportAttribute. Nespravovanou knihovnu nelze nalézt nebo nelze metodu porovnat s funkcí v knihovně. |
-| [CA1401: VOLÁNÍ NESPRAVOVANÝCH KÓDŮ. Volání nespravovaných kódů by neměly být viditelné](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Veřejná nebo chráněná metoda veřejného typu má nastaven atribut System.Runtime.InteropServices.DllImportAttribute (také implementováno pomocí klíčového slova Declare v jazyce Visual Basic). Tyto metody by neměly být vystaveny. |
+| [CA1401: Volání nespravovaných kódů by neměly být viditelné](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Veřejná nebo chráněná metoda veřejného typu má nastaven atribut System.Runtime.InteropServices.DllImportAttribute (také implementováno pomocí klíčového slova Declare v jazyce Visual Basic). Tyto metody by neměly být vystaveny. |
 | [CA1402: Vyhněte se přetížení ve viditelných rozhraních modelu COM](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | Když jsou přetížené metody vystaveny klientům modulu COM, zachová svůj název pouze první přetížení metody. Následná přetížení jsou jednoznačně přejmenována přidáním podtržítka (_) a celého čísla odpovídajícího pořadí deklarace tohoto přetížení. |
 | [CA1403: Typy automatického rozložení by neměly být viditelné modelu COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Hodnotový typ viditelný modulem COM je označen pomocí atributu System.Runtime.InteropServices.StructLayoutAttribute, nastaveného na hodnotu LayoutKind.Auto. Mezi verzemi rozhraní .NET Framework, což naruší klienty modulu COM, které očekávají specifické rozložení můžete změnit rozložení těchto typů. |
 | [CA1404: Volejte GetLastError ihned po volání nespravovaného kódu](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Je provedeno volání metody Marshal.GetLastWin32Error nebo ekvivalentní [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] Funkce GetLastError a bezprostředně předchozí volání není na platformu vyvolání metody. |

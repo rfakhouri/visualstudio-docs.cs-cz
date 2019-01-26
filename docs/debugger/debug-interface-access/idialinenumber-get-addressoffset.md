@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_addressoffset – | Dokumentace Microsoftu
+title: IDiaLineNumber::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3bcb5500-b26c-4d3c-9d81-0a389a3715c3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2485c77313376b6f4a9a1e7dcbc28165302d41ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2742cb5cd69529896fdbf39ac0d51ac9b3fbf941
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924662"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
 Načte posunu součástí adresa paměti, kde začíná bloku.  
@@ -46,5 +46,5 @@ pLine->get_addressOffset( &offset);
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Idialinenumber –](../../debugger/debug-interface-access/idialinenumber.md)   
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)

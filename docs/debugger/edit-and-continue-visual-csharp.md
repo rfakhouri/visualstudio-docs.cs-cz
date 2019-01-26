@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7be386a7d792c99ba361d70af1f8aac34c809cf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88689df3b1dad671f56b42e9c8523c6f85169c9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930970"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976430"
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C#)
  Pomocí funkce upravit a pokračovat pro jazyk C# můžete provést změny kódu v režimu pozastavení během ladění. Změny lze použít bez nutnosti zastavit a restartovat ladicí relaci. Editor zdrojového kódu v režimu spuštění, je jen pro čtení.  
