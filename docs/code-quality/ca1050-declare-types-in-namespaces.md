@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cb2000249e7e809f4570d93703c0c15093ec2cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97cc36e7b454484f4fcdfb3d3be499e48af9c407
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845230"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018836"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Deklarujte typy v oborech názvů
 
@@ -34,7 +34,7 @@ ms.locfileid: "53845230"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný typ definovaný vně rozsahu pojmenovaného oboru názvů.
 
 ## <a name="rule-description"></a>Popis pravidla

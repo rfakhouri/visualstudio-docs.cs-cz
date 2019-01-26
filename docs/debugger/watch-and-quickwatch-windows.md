@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204466"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002511"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Podívejte se na proměnných s oknech kukátka a Rychlé kukátko 
 
@@ -30,7 +30,7 @@ Při ladění, můžete použít **Watch** windows a **QuickWatch** sledovat pro
 
 **Sledování** windows můžete zobrazit několika proměnných v době během ladění. **QuickWatch** dialogové okno zobrazí jednu proměnnou najednou a musí být uzavřeny předtím, než můžete pokračovat v ladění.
 
-Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) a [opravovat chyby napsáním lépe C# kód](../debugger/write-better-code-with-visual-studio.md) před provedením tohoto článku.
+Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) a [nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md) před provedením tohoto článku.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Sledujte proměnné okno kukátka
 
@@ -280,5 +280,5 @@ Sledovat `a` proměnné
 
 ## <a name="see-also"></a>Viz také:
  [Co je ladění?](../debugger/what-is-debugging.md)  
- [Oprava chyb napsáním lépe C# kódu](../debugger/write-better-code-with-visual-studio.md)  
+ [Nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md)  
  [Nejdřív se podívejte na ladění](../debugger/debugger-feature-tour.md) [ladicího programu systému windows](../debugger/debugger-windows.md)

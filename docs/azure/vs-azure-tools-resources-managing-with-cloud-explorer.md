@@ -2,7 +2,7 @@
 title: Správa prostředků Azure pomocí Průzkumníka cloudu | Dokumentace Microsoftu
 description: Zjistěte, jak pomocí Průzkumníka cloudu k procházení a správě prostředků Azure v rámci sady Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,18 +10,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 443e2ac54782dd3807f6b165757cf231ebea6bae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa424c54ee9aaa0ba32dedc0bc49ee870095661a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950505"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031261"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Správa prostředků přidružených k účtům Azure v Průzkumníkovi cloudu sady Visual Studio
 
-Průzkumník cloudu umožňuje zobrazit vaše prostředky Azure a skupiny prostředků, zkoumání jejich vlastností a provádění klíčových vývojářských diagnostiky úkonů ze sady Visual Studio. 
+Průzkumník cloudu umožňuje zobrazit vaše prostředky Azure a skupiny prostředků, zkoumání jejich vlastností a provádění klíčových vývojářských diagnostiky úkonů ze sady Visual Studio.
 
-Podobně jako [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), Průzkumníka cloudu je založený na zásobníku správce prostředků Azure. Proto se Průzkumník cloudu rozumí prostředky, jako jsou skupiny prostředků Azure a služeb Azure, například Logic apps a API apps, a podporuje [řízení přístupu na základě rolí](/azure/role-based-access-control/role-assignments-portal) (RBAC). 
+Podobně jako [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), Průzkumníka cloudu je založený na zásobníku správce prostředků Azure. Proto se Průzkumník cloudu rozumí prostředky, jako jsou skupiny prostředků Azure a služeb Azure, například Logic apps a API apps, a podporuje [řízení přístupu na základě rolí](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -33,19 +33,19 @@ Podobně jako [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=52504
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Azure přidat účet Průzkumník cloudu
 
-Chcete-li zobrazit prostředky přidružené k účtu Azure, musíte nejprve přidat účet do Průzkumníka cloudu. 
+Chcete-li zobrazit prostředky přidružené k účtu Azure, musíte nejprve přidat účet do Průzkumníka cloudu.
 
 1. V **Průzkumníka cloudu**vyberte **nastavení účtu Azure**.
 
    ![Ikona nastavení účtu Explorer Azure cloudu](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. Vyberte **spravovat účty**. 
+1. Vyberte **spravovat účty**.
 
    ![Odkaz Přidat účet Průzkumník cloudu](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
-1. Přihlaste se k účtu Azure jehož prostředky, které chcete procházet. 
+1. Přihlaste se k účtu Azure jehož prostředky, které chcete procházet.
 
-1. Po přihlášení k účtu Azure, zobrazují se předplatná přidružená k tomuto účtu. Zaškrtněte políčka pro předplatná účtu chcete procházet a vyberte **použít**. 
+1. Po přihlášení k účtu Azure, zobrazují se předplatná přidružená k tomuto účtu. Zaškrtněte políčka pro předplatná účtu chcete procházet a vyberte **použít**.
 
    ![Průzkumníka cloudu: Vyberte předplatná Azure k zobrazení](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
@@ -53,7 +53,7 @@ Chcete-li zobrazit prostředky přidružené k účtu Azure, musíte nejprve př
 
    ![Cloud Explorer prostředků pro účet Azure](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
-## <a name="remove-an-azure-account-from-cloud-explorer"></a>Odebrat účet Azure z Průzkumníka cloudu 
+## <a name="remove-an-azure-account-from-cloud-explorer"></a>Odebrat účet Azure z Průzkumníka cloudu
 
 1. V **Průzkumníka cloudu**vyberte **správu účtů**.
 
@@ -75,9 +75,9 @@ Chcete-li zobrazit vaše prostředky Azure, můžete použít buď **typy prost�
 
    ![Cloud Explorer rozevírací seznam a vyberte zobrazení požadované prostředky](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
-1. V místní nabídce vyberte požadované zobrazení: 
+1. V místní nabídce vyberte požadované zobrazení:
 
-   * **Typy prostředků** view - běžné zobrazení použité na [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), ukazuje prostředky Azure zařazených do kategorií podle typu, jako jsou webové aplikace, účty úložiště a virtuální počítače. 
+   * **Typy prostředků** view - běžné zobrazení použité na [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), ukazuje prostředky Azure zařazených do kategorií podle typu, jako jsou webové aplikace, účty úložiště a virtuální počítače.
    * **Skupiny prostředků** zobrazit – prostředky Azure slouží ke kategorizaci podle skupiny prostředků Azure, které jsou přidružené. Skupina prostředků je sadu prostředků Azure, obvykle používají konkrétní aplikaci. Další informace o skupinách prostředků Azure najdete v tématu [přehled Azure Resource Manageru](/azure/azure-resource-manager/resource-group-overview).
 
    Následující obrázek znázorňuje srovnání zobrazení dvou zdrojů:

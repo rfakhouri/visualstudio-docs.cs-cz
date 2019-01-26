@@ -10,15 +10,15 @@ helpviewer_keywords:
 - C#, code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: be3af132a84b37043cf185beb26293ef5618439b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38794c3a81d98b245102f48b0c99319f6e9571b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021387"
 ---
 # <a name="c-code-snippets"></a>C#fragmenty kódu
 
@@ -41,7 +41,7 @@ Ve výchozím nastavení jsou zahrnuty následující fragmenty kódu v sadě Vi
 |checked|Vytvoří [zaškrtnutí](/dotnet/csharp/language-reference/keywords/checked) bloku.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
 |třída|Vytvoří deklaraci třídy.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|
 |konstruktoru|Vytvoří konstruktor pro třídu obsahující.|Uvnitř třídy.|
-|SH|Vytvoření volání <xref:System.Console.WriteLine%2A>.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
+|cw|Vytvoření volání <xref:System.Console.WriteLine%2A>.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
 |do|Vytvoří [proveďte](/dotnet/csharp/language-reference/keywords/do) `while` smyčky.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
 |else|Vytvoří [else](/dotnet/csharp/language-reference/keywords/if-else) bloku.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
 |enum|Vytvoří [výčtu](/dotnet/csharp/language-reference/keywords/enum) deklarace.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|
@@ -51,7 +51,7 @@ Ve výchozím nastavení jsou zahrnuty následující fragmenty kódu v sadě Vi
 |foreach|Vytvoří [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) smyčky.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
 |Díky|Vytvoří [pro](/dotnet/csharp/language-reference/keywords/for) smyčky této dekrementuje proměnnou smyčky po každé iteraci.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
 |if|Vytvoří [Pokud](/dotnet/csharp/language-reference/keywords/if-else) bloku.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
-|Indexer|Vytvoří deklaraci indexeru.|Uvnitř třídy nebo struktury.|
+|indexer|Vytvoří deklaraci indexeru.|Uvnitř třídy nebo struktury.|
 |rozhraní|Vytvoří [rozhraní](/dotnet/csharp/language-reference/keywords/interface) deklarace.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|
 |vyvolání|Vytvoří blok, který bezpečně vyvolá událost.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
 |iterátor|Vytvoří iterátor.|Uvnitř třídy nebo struktury.|

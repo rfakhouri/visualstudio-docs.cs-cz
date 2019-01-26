@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 25d9f278ab63ddfa4ffbbf72a4899ce99828b720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349267"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942750"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Sestavení a vyčištění projektů a řešení v sadě Visual Studio
 
-Pomocí postupů v tomto tématu můžete vytvářet, znovu sestavit nebo vyčistit všechny nebo některé projekty nebo položky projektu v řešení. Podrobný návod najdete v části [názorný postup: Tvorba aplikace](../ide/walkthrough-building-an-application.md).
+Pomocí postupů v tomto tématu můžete vytvářet, znovu sestavit nebo vyčistit všechny nebo některé projekty nebo položky projektu v řešení. Podrobný návod najdete v části [názorný postup: Sestavení aplikace](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [sestavení a vyčištění projektů a řešení v sadě Visual Studio pro Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -114,11 +114,11 @@ Proveďte některý z následujících kroků:
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: zobrazení, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Kompilování a sestavování](../ide/compiling-and-building-in-visual-studio.md)
 - [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)
-- [Postupy: Nastavení konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Postupy: Nastavení ladění a verze konfigurace](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Reference sestavení C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Přepínače příkazového řádku nástroje devenv](../ide/reference/devenv-command-line-switches.md)
 - [Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)

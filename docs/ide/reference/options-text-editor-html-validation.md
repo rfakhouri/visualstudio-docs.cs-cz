@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad568f43e1064fe264c528d68a39b072bf905db
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 7f629a0b8d9f149ee10f7a35c75e351a6c3abfd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417821"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031770"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Možnosti, textový Editor, ve formátu HTML (webové formuláře), ověření
 
@@ -27,7 +27,7 @@ Použití **ověření** možnosti stránky můžete nastavit předvolby jak edi
 - **Pro zjištění schématu ověření použít typ dokumentu**
 
    Schéma určuje, které elementů, atributů a malá a velká písmena jsou platné v tomto schématu. Také určuje tagy a atributy, které jsou k dispozici v technologii IntelliSense.
-  
+
    Tuto možnost vyberte, pokud chcete Visual Studio k používání obsahu na stránce **<! DOCTYPE >** prohlášení a **html** element určit schéma. Například pokud vyberete tuto možnost a na stránce má deklaraci `<!DOCTYPE html>`, Visual Studio používá schéma HTML5. Ale pokud **html** značka nemá **xmlns** atribut, například `<html xmlns="http://www.w3.org/1999/xhtml">`, Visual Studio používá schéma XHTML5.
 
 - **Cíl, když typ dokumentu**
@@ -37,7 +37,7 @@ Použití **ověření** možnosti stránky můžete nastavit předvolby jak edi
   - **Zobrazit chyby**
 
      Zaškrtněte políčko Povolit ověřování. Pokud políčko není zaškrtnuto, nebude editoru označte chyby ověření.
-    
+
      Zaškrtávací políčka umožní doladit tak, že zadáte jednotlivé typy chyb, které chcete, aby editor k označení ověřování.
 
      > [!NOTE]

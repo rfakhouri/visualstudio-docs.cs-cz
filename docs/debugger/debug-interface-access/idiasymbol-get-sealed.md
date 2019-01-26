@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd1fef1f-47de-47c7-885f-f6f0a9a07d8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffb4e6e82b3c34b8186bbee2a42fba8a1f6a8b68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2acc4aa3d488a98990e6e822e0c55f3f5fff416
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026616"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 Získá příznak, který určuje, zda je třída nebo metoda je zapečetěná.  
@@ -44,11 +44,11 @@ HRESULT get_sealed( 
  Zapečetěnou třídu nelze použít jako základní třídu. Zapečetěné metody nemůže být overidden.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

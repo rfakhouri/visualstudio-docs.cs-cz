@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd41bb8fd0e35ee13815b11941950d9031f824a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041786"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nová generace projektů: Pod pokličkou část 1
 Někdy mluvit o tom, jak vytvořit vlastní typ projektu? Zajímat, co přesně se stane při vytvoření nového projektu? Pojďme provést náhled pod pokličkou a zjistěte, co se skutečně děje.  
@@ -83,7 +83,7 @@ devenv /installvstemplates
 ##### <a name="sortpriority"></a>SortPriority  
  Určuje pozici kořenový uzel ve **typy projektů** stromu.  
   
- REG_DWORD SortPriority 0x00000014 (20)  
+ SortPriority REG_DWORD 0x00000014 (20)  
   
  Čím nižší je číslo prioritu, tím vyšší pozici ve stromu.  
   

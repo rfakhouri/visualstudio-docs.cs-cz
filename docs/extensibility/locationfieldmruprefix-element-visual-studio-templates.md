@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ece3ed2671a24c60a59adaae33871cda975c517
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83c44104c6bed3e864f373fda197166e2cc8e54e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887049"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029320"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Locationfieldmruprefix – element (šablony sady Visual Studio)
 Určuje cesty (MRU) nedávno použité v **nový projekt** a **přidat novou položku** dialogové okno.  
@@ -43,7 +43,7 @@ Určuje cesty (MRU) nedávno použité v **nový projekt** a **přidat novou pol
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="remarks"></a>Poznámky  
  Tento element lze používat pouze pro šablony vytvořené prostřednictvím [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)].  

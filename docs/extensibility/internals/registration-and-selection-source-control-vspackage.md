@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e86b6163a581a2bd7233596b3871a82f356b3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930710"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988763"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrace a výběr (balíček VSPackage správy zdrojového kódu)
 Ovládací prvek zdroje balíčku VSPackage musí být zaregistrovaný k vystavení tak, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pokud se více než jeden ovládací prvek zdroje balíčku VSPackage zaregistruje, může uživatel vybrat které VSPackage načíst ve vhodných chvílích. Zobrazit [rozšíření VSPackages](../../extensibility/internals/vspackages.md) podrobné informace o rozšíření VSPackages a jak se zaregistrovat.  

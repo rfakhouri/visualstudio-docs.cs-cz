@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 59f61f52-8d6c-49cb-aefb-191910523a3c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0462317ff273b2cb7a967c7e093b16a695e547e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5317f290fc2acd116496d82e4fca1fb36aba8faa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018501"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Členy by neměly zveřejňovat určité konkrétní typy
 
@@ -31,7 +31,7 @@ ms.locfileid: "53825276"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Externě viditelného členu je některé konkrétní typ nebo zpřístupňuje určité konkrétní typy prostřednictvím jednoho z jeho parametry nebo návratovou hodnotu. Toto pravidlo v současné době sestavy vystavení následující konkrétní typy:
 
 - Typ odvozený od <xref:System.Xml.XmlNode?displayProperty=fullName>.

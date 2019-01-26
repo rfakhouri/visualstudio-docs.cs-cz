@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 708f8aeff15511a7c1ab877391e0f4ee8449480e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94c672ddbd134f978e91bf6df06a902ca8a3fa4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009944"
 ---
-# <a name="sccenumchangedfiles-function"></a>Sccenumchangedfiles – funkce
+# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles function
 V daném seznamu místních souborů, tato funkce určuje soubory, které se liší od odpovídající verze v databázi správy zdrojového kódu.  
   
 ## <a name="syntax"></a>Syntaxe  

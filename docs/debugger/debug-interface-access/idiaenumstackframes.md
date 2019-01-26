@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3d1e8403-c9fc-42ff-ae35-0ab9a5ed2ad7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aef0291b4048cf7b673ec9b2791b3b6b6c00846
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9fcba4fccbcae06005950bccfcac61fd4aba0684
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977613"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Provede výčet různých rámce zásobníku, která je k dispozici.  
@@ -63,11 +63,11 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

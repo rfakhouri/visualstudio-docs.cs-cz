@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af83b0998afa92fc59203fefa4b9d6d21635e642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947072"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921180"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Práce s interaktivním okně jazyka r.
 
@@ -51,24 +51,24 @@ Tady je interaktivní okno s jeho nástrojů:
 
 Příkazy nástrojů jsou následující, z nichž většina ekvivalenty klávesnice a jsou také k dispozici na **nástroje R** > **relace** a **nástroje R**  >  **Pracovní adresář** nabídek (nebo jak je uvedeno):
 
-| Tlačítko | Příkaz | Kombinace kláves | Popis | 
+| Tlačítko | Příkaz | Kombinace kláves | Popis |
 | --- | --- | --- | --- |
 | ![Tlačítko Obnovit.](media/repl-toolbar-01-reset.png) | Resetovat | **CTRL**+**Shift**+**F10** | Interaktivní okno relace, zrušíte všechny proměnné a historii obnoví. |
-| ![Tlačítko Vymazat](media/repl-toolbar-02-clear.png) | Vymazat | **CTRL**+**L** | Vymaže výstupu v interaktivním okně; nemá vliv na relace proměnné nebo historie. |
+| ![Tlačítko Vymazat](media/repl-toolbar-02-clear.png) | Vymazat | **Ctrl**+**L** | Vymaže výstupu v interaktivním okně; nemá vliv na relace proměnné nebo historie. |
 | ![Historie tlačítka](media/repl-toolbar-03-history.png) | Předchozí příkaz historie<br/>Další příkaz historie | **Až**, **dolů**<br/>**ALT**+**nahoru**, **Alt**+**dolů** | Posune historii, pomocí určitého chování kódu víceřádkových bloků. Zobrazit [historie](#history). |
 | ![Tlačítko Načíst pracovní prostor](media/repl-toolbar-04-load-workspace.png) | Načíst pracovní prostor | není k dispozici | Načte předchozí uložit pracovní prostor (viz [pracovních prostorů a relace](#workspaces-and-sessions). |
 | ![Uložit pracovní prostor jako tlačítko](media/repl-toolbar-05-save-workspace-as.png)| Uložit pracovní prostor jako | není k dispozici | Uloží aktuální stav relace jako pracovní prostor (viz [pracovních prostorů a relace](#workspaces-and-sessions). |
-| ![Tlačítko skript r.](media/repl-toolbar-06-source-r-script.png) | Source skript R | **CTRL**+**Shift**+**S** | Volání `source` s aktuálně aktivních skriptů R v editoru sady Visual Studio, která se spouští kód.  Toto tlačítko se zobrazí pouze v případě, že soubor R je otevřen v editoru sady Visual Studio. | 
-| ![Source skript R s echo tlačítko](media/repl-toolbar-07-source-r-script-with-echo.png) | Source skript R s Echo | **CTRL**+**Shift**+**zadejte** | Stejné jako Source skript R se ale zobrazí obsah skriptu v interaktivním okně. |
+| ![Tlačítko skript r.](media/repl-toolbar-06-source-r-script.png) | Source skript R | **Ctrl**+**Shift**+**S** | Volání `source` s aktuálně aktivních skriptů R v editoru sady Visual Studio, která se spouští kód.  Toto tlačítko se zobrazí pouze v případě, že soubor R je otevřen v editoru sady Visual Studio. |
+| ![Source skript R s echo tlačítko](media/repl-toolbar-07-source-r-script-with-echo.png) | Source skript R s Echo | **Ctrl**+**Shift**+**Enter** | Stejné jako Source skript R se ale zobrazí obsah skriptu v interaktivním okně. |
 | ![Přerušit R tlačítko](media/repl-toolbar-08-interrupt-r.png)| Přerušit R | **ESC** | Zastaví všechny spuštěním kódu v interaktivním okně, jako `while` smyčky na snímku obrazovky se zobrazí na začátku této části. |
-| ![Připojit ladicí program tlačítko](media/repl-toolbar-09b-attach-debugger.png)| Připojit ladicí program | není k dispozici | Rovněž k dispozici na **ladění** > **připojit k interaktivní R** příkazu. | 
-| ![Nastavte pracovní adresář pro tlačítko umístění zdrojového souboru](media/repl-toolbar-10-set-working-directory-source.png)| Nastavit pracovní adresář na umístění zdrojových souborů | **CTRL**+**Shift**+**E** | Nastaví pracovní adresář, který naposledy Source soubor načíst do interaktivního okna (pomocí `source`). Zobrazit [pracovní adresář](#working-directory). |
-| ![Nastavte pracovní adresář pro tlačítko umístění projektu](media/repl-toolbar-11-set-working-directory-to-project.png) | Nastavit pracovní adresář na umístění projektu | **CTRL**+**Shift**+**P** | Nastaví pracovní adresář kořenového adresáře aktuálně načtený projekt v sadě Visual Studio. Zobrazit [pracovní adresář](#working-directory). |
+| ![Připojit ladicí program tlačítko](media/repl-toolbar-09b-attach-debugger.png)| Připojit ladicí program | není k dispozici | Rovněž k dispozici na **ladění** > **připojit k interaktivní R** příkazu. |
+| ![Nastavte pracovní adresář pro tlačítko umístění zdrojového souboru](media/repl-toolbar-10-set-working-directory-source.png)| Nastavit pracovní adresář na umístění zdrojových souborů | **Ctrl**+**Shift**+**E** | Nastaví pracovní adresář, který naposledy Source soubor načíst do interaktivního okna (pomocí `source`). Zobrazit [pracovní adresář](#working-directory). |
+| ![Nastavte pracovní adresář pro tlačítko umístění projektu](media/repl-toolbar-11-set-working-directory-to-project.png) | Nastavit pracovní adresář na umístění projektu | **Ctrl**+**Shift**+**P** | Nastaví pracovní adresář kořenového adresáře aktuálně načtený projekt v sadě Visual Studio. Zobrazit [pracovní adresář](#working-directory). |
 | (Textové pole) | Vybrat pracovní adresář | není k dispozici | Přímé vstupní pole pro pracovní adresář. Zobrazit [pracovní adresář](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Pracovní prostory a relace
 
-Spouštění kódu v interaktivním okně vytvoří kontext v aktuální relaci. Kontext se skládá z globálních proměnných, definic funkcí, načtení knihovny a tak dále. Tento kontext se nazývají *pracovní prostor*, a můžete uložit a načíst pracovní prostory v každém okamžiku. 
+Spouštění kódu v interaktivním okně vytvoří kontext v aktuální relaci. Kontext se skládá z globálních proměnných, definic funkcí, načtení knihovny a tak dále. Tento kontext se nazývají *pracovní prostor*, a můžete uložit a načíst pracovní prostory v každém okamžiku.
 
 Výběr **uložit pracovní prostor jako** tlačítko nebo pomocí **nástroje R** > **relace** > **uložit pracovní prostor jako**příkaz vás vyzve k zadání umístění a název souboru (výchozí příponou je *. RData*).
 

@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c38c9263792cb62e60b13e0671c943435320436b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43032d5a898348c32b605139eea9fde7edc886ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821988"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038003"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Použití Ipythonu v interaktivním okně
 
@@ -42,7 +42,7 @@ V tomto návodu, byste měli mít [Anaconda](https://www.continuum.io) prostřed
    ```python
    import matplotlib.pyplot as plt
    import numpy as np
-  
+
    x = np.linspace(0, 5, 10)
    y = x ** 2
    plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
