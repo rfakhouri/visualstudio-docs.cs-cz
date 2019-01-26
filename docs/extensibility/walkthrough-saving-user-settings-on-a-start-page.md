@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c385c7abda5ccf45914cf990770704156dd701a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000806"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Průvodce: Ukládat nastavení uživatele na úvodní stránce
 Je možné zachovat uživatelská nastavení pro úvodní stránku. Podle tohoto postupu můžete vytvořit ovládací prvek, který se nastavení uloží do registru, když uživatel klikne na tlačítko a pak načte nastavení pokaždé, když se načte úvodní stránky. Vzhledem k tomu, že šablona projektu úvodní stránka obsahuje přizpůsobitelný uživatelského ovládacího prvku a výchozí spuštění stránky XAML volá tento ovládací prvek, není nutné upravit vlastní úvodní stránky.  
   
- Nastavení úložiště, která je vytvořena instance v tomto návodu je instance <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> rozhraní, která čte a zapisuje do následujícího umístění registru, když je volána: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<Název_kolekce >**  
+ Nastavení úložiště, která je vytvořena instance v tomto návodu je instance <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> rozhraní, která čte a zapisuje do následujícího umístění registru, když je volána: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<CollectionName>**  
   
  Když je spuštěn v experimentální instanci sady Visual Studio, úložiště nastavení čte a zapisuje do **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<Název_kolekce >.**  
   
@@ -43,7 +43,7 @@ Je možné zachovat uživatelská nastavení pro úvodní stránku. Podle tohoto
   
     -   EnvDTE80  
   
-    -   Sestavení Microsoft.VisualStudio.OLE.Interop  
+    -   Microsoft.VisualStudio.OLE.Interop  
   
     -   Microsoft.VisualStudio.Shell.Interop.11.0  
   

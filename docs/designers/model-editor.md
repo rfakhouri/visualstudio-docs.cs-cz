@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf26cf8f8d0e47c257d35acbe6e7af29e1416a69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 686d5a52b7cbf3a442d2ec330089331018a9716d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966030"
 ---
 # <a name="model-editor"></a>Editor modelů
 
@@ -32,7 +32,7 @@ Můžete použít **editoru modelů** k vytvoření základních 3D modelů od z
 |Název formátu|Přípona souboru|Podporované operace (zobrazení, úpravy, vytváření)|
 |-----------------| - | - |
 |Soubor AutoDesk FBX Interchange|*.fbx*|Zobrazení, úpravy, vytváření|
-|Soubor DAE standardu Collada|*.DAE*|Zobrazení, úpravy (změny DAE standardu Collada jsou uloženy ve formátu FBX.)|
+|Soubor DAE standardu Collada|*.dae*|Zobrazení, úpravy (změny DAE standardu Collada jsou uloženy ve formátu FBX.)|
 |OBJ|*.obj*|Zobrazení, úpravy (změny souborů OBJ jsou uloženy ve formátu FBX.)|
 
 ## <a name="get-started"></a>Začínáme
@@ -92,7 +92,7 @@ Tato tabulka popisuje položky panelu **režim editoru modelů** nástrojů, kte
 |**Výběr**|Umožňuje výběr bodů, okrajů, ploch nebo objektů ve scéně podle aktivního režimu výběru.|
 |**Posouvání**|Umožňuje pohyb 3D scény relativně k rámu okna. K posouvání vyberte bod ve scéně a pohybujte jím.<br /><br /> V **vyberte** režimu, můžete stisknutím a podržením **Ctrl** aktivovat **Pan** dočasně režimu.|
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů scény relativně k rámu okna. V **přiblížení** režimu, vyberte bod ve scéně a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> V **vyberte** režimu, provést přiblížení nebo oddálení pomocí kolečka myši při stisknuté klávese **Ctrl**.|
-|**Obíhání**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:**  Tento režim nemá žádný vliv při **pravoúhle** projekce je povolená.|
+|**Orbit**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:**  Tento režim nemá žádný vliv při **pravoúhle** projekce je povolená.|
 |**Globální místní**|Pokud je tato položka povolena, transformace na vybraném objektu pobíhají v globálním prostoru. Jinak transformace na vybraném objektu probíhají v místním prostoru.|
 |**Režim pivotu**|Pokud je tato položka povolena, transformace ovlivní umístění a orientaci ovládacího prvku *bodu otáčení* vybraného objektu (bod otáčení definuje střed operací překladu, měřítko a otočení). Transformace jinak ovlivní umístění a orientaci geometrie objektu ve vztahu k bodu otáčení.|
 |**Uzamknout osu X**|Omezuje manipulaci s objekty na ose x. Platí pouze při použití prostřední části pomůcky manipulátoru.|
@@ -117,14 +117,14 @@ Následující tabulka popisuje položky panelu **editoru modelů** nástrojů, 
 
 |Položka na panelu nástrojů|Popis|
 |------------------|-----------------|
-|**Překlad**|Posune výběr.|
+|**Translate**|Posune výběr.|
 |**Škálování**|Změní velikost výběru.|
 |**Otočit o**|Otočí výběr.|
 |**Vybrat bod**|Nastaví **režim výběru** k výběru jednotlivých bodů objektu.|
 |**Vybrat hranu**|Nastaví **režim výběru** k výběru hrany (čáry mezi dvěma vrcholy) na objekt.|
 |**Vybrat plochu**|Nastaví **režim výběru** k výběru plochy objektu.|
 |**Vyberte objekt**|Nastaví **režim výběru** k výběru celého objektu.|
-|**Vyloučit**|Vytvoří další plochu a připojí ji k vybrané ploše.|
+|**Extrude**|Vytvoří další plochu a připojí ji k vybrané ploše.|
 |**Rozdělit**|Rozdělí každou vybranou plochu na více ploch. Pro vytvoření nových ploch se přidají nové vrcholy – jeden uprostřed původní plochy a jeden uprostřed každé hrany – které jsou poté spojeny s původními vrcholy. Počet přidaných ploch se rovná počtu hran původní plochy.|
 
 ### <a name="control-the-view"></a>Ovládací prvek zobrazení
@@ -137,7 +137,7 @@ Následující tabulka popisuje primární ovládací prvky zobrazení.
 |------------------|-----------------|
 |**Posouvání**|Umožňuje pohyb 3D scény relativně k rámu okna. K posouvání vyberte bod ve scéně a pohybujte jím.<br /><br /> V **vyberte** režimu, můžete stisknutím a podržením **Ctrl** aktivovat **Pan** dočasně režimu.|
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů scény relativně k rámu okna. V **přiblížení** režimu, vyberte bod ve scéně a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> V **vyberte** režimu, provést přiblížení nebo oddálení pomocí kolečka myši při stisknuté klávese **Ctrl**.|
-|**Obíhání**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:**  Tento režim nemá žádný vliv při **pravoúhle** projekce je povolená.|
+|**Orbit**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:**  Tento režim nemá žádný vliv při **pravoúhle** projekce je povolená.|
 |**Orámovat objekt**|Orámuje vybraný objekt, aby se nacházel ve středu zobrazení.|
 
 Zobrazení je vytvořeno virtuálním fotoaparátem, ale je také definováno projekcí. Projekce definuje, jaké tvary a objekty v zobrazení jsou přeloženy do pixelů na povrchu návrhu. Na **editoru modelů** nástrojů, můžete použít buď **perspektivy** nebo **pravoúhle** projekce.
@@ -246,7 +246,7 @@ Editor modelů poskytuje tyto výchozí materiály:
 |--------------|-----------------|
 |**Nesvítí**|Vykreslí povrch bez jakéhokoli simulovaného světla.|
 |**Lambertova**|Vykreslí povrch se simulovaným osvětlením okolí a difúzním světlem.|
-|**Phongova**|Vykreslí povrch se simulovaným osvětlením okolí, difúzním světlem a se zrcadlovými světly.|
+|**Phong**|Vykreslí povrch se simulovaným osvětlením okolí, difúzním světlem a se zrcadlovými světly.|
 
 Každý z těchto materiálů použije jednu texturu na povrch objektu. Můžete nastavit různé textury pro každý objekt, který používá materiál.
 
@@ -257,7 +257,7 @@ Pokud chcete upravit, jak daný objekt reaguje na různé zdroje světla ve scé
 |**Okolí**|Popisuje, jakým způsobem je povrch ovlivněn okolním osvětlením.|
 |**Rozptýlit**|Popisuje, jakým způsobem je povrch ovlivněn směrovými a bodovými světly.|
 |**Vyzařující**|Popisuje, jak povrch vyzařuje světlo, nezávisle na ostatním osvětlení.|
-|**Odlesku**|Popisuje, jakým způsobem povrch odráží směrová a bodová světla.|
+|**Specular**|Popisuje, jakým způsobem povrch odráží směrová a bodová světla.|
 |**Síla odlesku**|Popisuje šířku a intenzitu odlesků.|
 
 V závislosti na tom, co materiál podporuje, můžete změnit jeho vlastnosti osvětlení, textury a další data. V **vyberte** režimu, vyberte objekt, jehož materiál chcete změnit, a pak v **vlastnosti** okno Změnit **MaterialAmbient**,  **MaterialDiffuse**, **MaterialEmissive**, **MaterialSpecular**, **MaterialSpecularPower**, nebo jinou dostupnou vlastnost. Materiál může vystavit až osm textur, jejichž vlastnosti jsou postupně pojmenované od **Texture1** k **textura8**.
@@ -294,39 +294,39 @@ Odebrat přidružení nadřazený podřízený mezi dvěma objekty, vyberte pod�
 
 |Příkaz|Klávesové zkratky|
 |-------------| - |
-|Přepnout na **vyberte** režimu|**CTRL**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
-|Přepnout na **přiblížení** režimu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
-|Přepnout na **Pan** režimu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
-|Vybrat vše|**CTRL**+**A**|
+|Přepnout na **vyberte** režimu|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Přepnout na **přiblížení** režimu|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Přepnout na **Pan** režimu|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Vybrat vše|**Ctrl**+**A**|
 |Odstranit aktuální výběr|**Delete**|
 |Zrušit aktuální výběr|**Řídicí** (**Esc**)|
-|Přiblížit|**Kolečko myši dopředu**<br /><br /> **CTRL**+**kolečko myši dopředu**<br /><br /> **SHIFT**+**kolečko myši dopředu**<br /><br /> **CTRL**+**PageUp**<br /><br /> Znaménko plus (**+**)|
-|Oddálit|**Kolečko myši dozadu**<br /><br /> **CTRL**+**kolečko myši dozadu**<br /><br /> **SHIFT**+**kolečko myši dozadu**<br /><br /> **CTRL**+**PageDown**<br /><br /> Znaménko minus (**-**)|
+|Přiblížit|**Kolečko myši dopředu**<br /><br /> **CTRL**+**kolečko myši dopředu**<br /><br /> **SHIFT**+**kolečko myši dopředu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znaménko plus (**+**)|
+|Oddálit|**Kolečko myši dozadu**<br /><br /> **CTRL**+**kolečko myši dozadu**<br /><br /> **SHIFT**+**kolečko myši dozadu**<br /><br /> **Ctrl**+**PageDown**<br /><br /> Znaménko minus (**-**)|
 |Posunout kameru nahoru|**PageDown**|
-|Posunout kameru dolů|**Page Up**|
-|Posunout kameru vlevo|**Kolečko myši doleva**<br /><br /> **CTRL**+**PageDown**|
-|Posunout kameru vpravo|**Kolečko myši doprava**<br /><br /> **CTRL**+**PageDown**|
-|Zobrazit horní stranu modelu|**CTRL**+**L**, **Ctrl**+**T**<br /><br /> **T**|
-|Zobrazit spodní stranu modelu|**CTRL**+**L**, **Ctrl**+**U**|
-|Zobrazit levou stranu modelu|**CTRL**+**L**, **Ctrl**+**L**|
-|Zobrazit pravou stranu modelu|**CTRL**+**L**, **Ctrl**+**R**|
-|Zobrazit čelní stranu modelu|**CTRL**+**L**, **Ctrl**+**F**|
-|Zobrazit zadní stranu modelu|**CTRL**+**L**, **Ctrl**+**B**|
+|Posunout kameru dolů|**PageUp**|
+|Posunout kameru vlevo|**Kolečko myši doleva**<br /><br /> **Ctrl**+**PageDown**|
+|Posunout kameru vpravo|**Kolečko myši doprava**<br /><br /> **Ctrl**+**PageDown**|
+|Zobrazit horní stranu modelu|**Ctrl**+**L**, **Ctrl**+**T**<br /><br /> **T**|
+|Zobrazit spodní stranu modelu|**Ctrl**+**L**, **Ctrl**+**U**|
+|Zobrazit levou stranu modelu|**Ctrl**+**L**, **Ctrl**+**L**|
+|Zobrazit pravou stranu modelu|**Ctrl**+**L**, **Ctrl**+**R**|
+|Zobrazit čelní stranu modelu|**Ctrl**+**L**, **Ctrl**+**F**|
+|Zobrazit zadní stranu modelu|**Ctrl**+**L**, **Ctrl**+**B**|
 |Orámovat objekt v okně|**F**|
-|Přepnout režim wireframe|**CTRL**+**L**, **Ctrl**+**W**|
-|Přepnout přichycení k mřížce|**CTRL**+**G**, **Ctrl**+**N**|
-|Přepnout režim pivotu|**CTRL**+**G**, **Ctrl**+**V**|
-|Přepnout omezení osy x|**CTRL**+**L**, **Ctrl**+**X**|
-|Přepnout omezení osy y|**CTRL**+**L**, **Ctrl**+**Y**|
-|Přepnout omezení osy z|**CTRL**+**L**, **Ctrl**+**Z**|
-|Přepnout do režimu posunutí|**CTRL**+**G**, **Ctrl**+**W**<br /><br /> **W**|
-|Přepnout do režimu měřítka|**CTRL**+**G**, **Ctrl**+**E**<br /><br /> **E**|
-|Přepnout do režimu otočení|**CTRL**+**G**, **Ctrl**+**R**<br /><br /> **R**|
-|Přepnout do režimu výběru bodu|**CTRL**+**L**, **Ctrl**+**1**|
-|Přepnout do režimu výběru okrajů|**CTRL**+**L**, **Ctrl**+**2**|
-|Přepnout do režimu výběru ploch|**CTRL**+**L**, **Ctrl**+**3**|
-|Přepnout do režimu výběru objektů|**CTRL**+**L**, **Ctrl**+**4**|
-|Přepnout do režimu (kamera) orbit|**CTRL**+**G**, **Ctrl**+**O**|
+|Přepnout režim wireframe|**Ctrl**+**L**, **Ctrl**+**W**|
+|Přepnout přichycení k mřížce|**Ctrl**+**G**, **Ctrl**+**N**|
+|Přepnout režim pivotu|**Ctrl**+**G**, **Ctrl**+**V**|
+|Přepnout omezení osy x|**Ctrl**+**L**, **Ctrl**+**X**|
+|Přepnout omezení osy y|**Ctrl**+**L**, **Ctrl**+**Y**|
+|Přepnout omezení osy z|**Ctrl**+**L**, **Ctrl**+**Z**|
+|Přepnout do režimu posunutí|**Ctrl**+**G**, **Ctrl**+**W**<br /><br /> **W**|
+|Přepnout do režimu měřítka|**Ctrl**+**G**, **Ctrl**+**E**<br /><br /> **E**|
+|Přepnout do režimu otočení|**Ctrl**+**G**, **Ctrl**+**R**<br /><br /> **R**|
+|Přepnout do režimu výběru bodu|**Ctrl**+**L**, **Ctrl**+**1**|
+|Přepnout do režimu výběru okrajů|**Ctrl**+**L**, **Ctrl**+**2**|
+|Přepnout do režimu výběru ploch|**Ctrl**+**L**, **Ctrl**+**3**|
+|Přepnout do režimu výběru objektů|**Ctrl**+**L**, **Ctrl**+**4**|
+|Přepnout do režimu (kamera) orbit|**Ctrl**+**G**, **Ctrl**+**O**|
 |Vybrat další objekt na scéně|**Karta**|
 |Vybrat předchozí objekt na scéně|**SHIFT**+**kartu**|
 |Manipulovat s vybraným objektem na základě aktuálního nástroje|**Šipku** klíče|

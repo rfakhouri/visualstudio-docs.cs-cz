@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8158a8eaf4b0ee85858cc81e93fbb7e4fa0b9f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8143ab83e2d166ac4d9ad49b27934ff425d371ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005199"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementace služby starší verze jazyka
 Pro implementaci jazyka služby pomocí rozhraní spravovaného balíčku (MPF), musí být odvozen ze třídy <xref:Microsoft.VisualStudio.Package.LanguageService> třídy a implementovat následující abstraktní metody a vlastnosti:  

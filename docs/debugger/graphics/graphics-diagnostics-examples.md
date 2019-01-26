@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8419ea4f653d870802fd104da2824952b422ab6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2509b7e3c373cecfe5cd1554805554afbedd2b3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867024"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999311"
 ---
 # <a name="graphics-diagnostics-examples"></a>Příklady diagnostiky grafiky
 Tyto příklady ukazují, jak k ladění problémů s vykreslováním v aplikacích založených na rozhraní DirectX pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky.  
@@ -21,9 +21,9 @@ Tyto příklady ukazují, jak k ladění problémů s vykreslováním v aplikac�
 ## <a name="capturing-graphics-information"></a>Zachycení informací grafiky  
  Před diagnostiky grafiky můžete použít k diagnostice problémů s vykreslováním v aplikaci, budete muset zachytit informace grafiky z aplikace během jejího běhu. Dají zachytit informace grafiky z aplikace, na kterém běží místně, nebo z aplikace, na kterém běží na vzdáleném počítači nebo jiném zařízení. Tyto postupy ukazují, jak můžete zachytit informace grafiky z aplikace ručně nebo prostřednictvím kódu programu:  
   
--   [Návod: Zaznamenání grafických informací](walkthrough-capturing-graphics-information.md)  
+-   [Návod: Záznam grafických informací](walkthrough-capturing-graphics-information.md)  
   
--   [Návod: Zaznamenání grafických informací prostřednictvím kódu programu](walkthrough-capturing-graphics-information-programmatically.md)  
+-   [Návod: Záznam grafických informací prostřednictvím kódu programu](walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>Použití diagnostiky grafiky se zařízením založené na ARM  
  Diagnostika grafiky můžete použít k ladění aplikace rozhraní Direct3D zařízení založené na ARM pomocí vzdáleného ladění. Další informace najdete v části [jak: Použití diagnostiky grafiky se zařízením ARM](/visualstudio/debugger/graphics/graphics-diagnostics-examples).  
@@ -36,18 +36,18 @@ Tyto příklady ukazují, jak k ladění problémů s vykreslováním v aplikac�
   
  Tyto scénáře ukazují použití diagnostiky grafiky a zjistit, proč je objekt chybí kód, který je zodpovědný.  
   
--   [Návod: Chybějící objekty z důvodu stavu zařízení](walkthrough-missing-objects-due-to-device-state.md)  
+-   [Návod: Chybějící objekty kvůli stavu zařízení](walkthrough-missing-objects-due-to-device-state.md)  
   
--   [Návod: Chybějící objekty z důvodu použití funkce Vertex Shading](walkthrough-missing-objects-due-to-vertex-shading.md)  
+-   [Návod: Chybějící objekty kvůli vertex shaderu](walkthrough-missing-objects-due-to-vertex-shading.md)  
   
--   [Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
+-   [Návod: Chybějící objekty kvůli nesprávně nakonfigurovanému kanálu](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
   
 ## <a name="debugging-rendering-errors"></a>Ladění chyb při vykreslování  
  Objekt (nebo objekty) nemají správné vzhled je jiný běžný problém, který vývojářům grafické prostředí. Tento druh problému může být obtížné diagnostikovat, protože nesprávný vzhled a jeho příčinu, může být v rozsahu od velmi zřejmé – vazby nesprávné textury – velmi malé – chyby v kódu shaderu nebo neočekávané interakce mezi shadery. Některé problémy mohou způsobovat kombinaci chyb.  
   
  Tady je scénář, který ukazuje použití diagnostiky grafiky k vysledování není tak drobným vykreslování problém, který způsobuje chybu menší shaderu:  
   
--   [Návod: Ladění chyb stínováním při vykreslování](walkthrough-debugging-rendering-errors-due-to-shading.md)  
+-   [Návod: Ladění chyb při vykreslování, které jsou způsobené stínováním](walkthrough-debugging-rendering-errors-due-to-shading.md)  
   
 ## <a name="debugging-compute-shaders"></a>Ladění výpočetních shaderů  
  Diagnostika grafiky můžete použít k ladění jádra výpočetního shaderu DirectCompute, které generují nesprávné výsledky. S DirectCompute slouží k provádění výpočtů na velký počet datových elementů paralelně výpočetní výkon GPU. Pro některé druhy problémů, využití GPU můžete provést tolikrát, kolikrát rychleji než i dobře optimalizovaný kód procesoru. Tradiční ladicí programy však nelze zjistit kód, který běží na GPU. Tento druh kódu ladění vyžaduje specializované nástroje, které jsou často specifického pro dodavatele a nemusí se integrují s Visual Studio. Chcete-li ladění výpočetního shaderu konzistentnější v rozsahu GPU, diagnostiky grafiky jsou zaznamenané události DirectCompute odeslání – kromě události vykreslování Direct3D – tak, že můžete používat známé nástroje pro ladění problémů v kódu výpočetního shaderu.  

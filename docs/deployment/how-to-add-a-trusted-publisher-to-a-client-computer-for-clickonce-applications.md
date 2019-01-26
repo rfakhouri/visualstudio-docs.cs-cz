@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd4e953c0a2ecee17c167fbcdda529d7607b9cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 295e2e774d2f6221b9064449e33c6777072aa4d2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014572"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Postupy: Přidání důvěryhodného vydavatele na klientský počítač pro aplikace ClickOnce
 Pomocí nasazení důvěryhodné aplikace, můžete nakonfigurovat klientské počítače tak, aby vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace spouštět s vyšší úroveň důvěryhodnosti bez výzvy pro uživatele. Následující postupy ukazují, jak používat nástroj příkazového řádku CertMgr.exe přidání vydavatele certifikátu do úložiště důvěryhodných vydavatelů v klientském počítači.  
@@ -42,7 +42,7 @@ Pomocí nasazení důvěryhodné aplikace, můžete nakonfigurovat klientské po
   
 3.  Z příkazového řádku na klientské počítače spusťte následující příkaz:  
   
-     **certmgr.exe-přidat certificate.cer - c -s - r localMachine TrustedPublisher**  
+     **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Přidání certifikátu do úložiště důvěryhodných vydavatelů v rámci různých kořenové  
   
@@ -52,9 +52,9 @@ Pomocí nasazení důvěryhodné aplikace, můžete nakonfigurovat klientské po
   
 3.  Z příkazového řádku na klientské počítače spusťte následující příkaz:  
   
-     **certmgr.exe-přidat good.cer - c -s - r localMachine kořenové**  
+     **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   
-     **certmgr.exe-přidat good.cer - c -s - r localMachine TrustedPublisher**  
+     **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**  
   
 ## <a name="see-also"></a>Viz také:  
  [Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   

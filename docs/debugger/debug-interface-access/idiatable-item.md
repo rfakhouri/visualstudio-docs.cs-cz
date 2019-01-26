@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eae11b26-4807-400c-be25-e85bbc0c6b20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8ba825c0dba1b0218e53f9ad66f6958602d0c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bf9ad425b703cbaa15378200260061304223607
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040174"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 Získá odkaz na zadané položce v tabulce.  
@@ -48,6 +48,6 @@ HRESULT Item ( 
   
 ## <a name="see-also"></a>Viz také  
  [Idiatable –](../../debugger/debug-interface-access/idiatable.md)   
- [Idiatable::get_count –](../../debugger/debug-interface-access/idiatable-get-count.md)   
- [Idiasegment –](../../debugger/debug-interface-access/idiasegment.md)   
+ [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7063b536c50cff39bfeb3adabe989b3cd9a56ddf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ba5c26ece60c6689509054b733109ee11799ccd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010074"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Vytvoření a konfigurace členů typů v Návrháři tříd
 
@@ -196,7 +196,7 @@ Přidání parametrů do metody pomocí **podrobností třídy** okna. Parametry
 
      **Typ parametru** buňky používá technologii IntelliSense, která vám umožní vybrat si ze seznamu všech typů dostupných v aktuálním projektu nebo v odkazovaných projektech.
 
-- **Modifikátor**
+- **Modifier**
 
      **Modifikátor** buňku na řádku parametru přijímá a zobrazuje nový modifikátor parametru. Pokud chcete zadat nový parametr modifikátoru, pomocí rozevíracího seznamu vyberte z **žádný**, **ref**, **si**, nebo **params** v C# a **ByVal**, **ByRef**, nebo **ParamArray** v jazyce VB.
 

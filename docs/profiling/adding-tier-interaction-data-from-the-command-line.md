@@ -7,15 +7,15 @@ helpviewer_keywords:
 - profiling tools,tier interaction method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b8c5e04baad8083c2794cc6dbed8a08408a8da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50e6af91a542c105704a7237d5cd1dcbf8efa2a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878676"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015807"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Přidání dat interakce vrstev z příkazového řádku
 
@@ -25,7 +25,7 @@ Profilování interakce vrstev poskytuje další informace o spuštění s úsp�
 
 Ke shromažďování dat interakce vrstev pro aplikace klasické pracovní plochy systému Windows 8 a Windows Server 2012 aplikací musí použít metody instrumentace. Shromažďování dat interakce vrstev v aplikacích pro UWP se nepodporuje.
 
-**Edice sady Visual Studio**
+**Visual Studio editions**
 
 Profilování interakce vrstev lze shromažďovat pomocí libovolné edice sady Visual Studio. Nicméně data profilace interakce vrstev lze zobrazit pouze v sadě Visual Studio Enterprise.
 

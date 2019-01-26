@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706e591a96cf5bdd1c13fb0775c8a91e3995cb66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5efe080dcb5134dc36fddfe220323e237768e683
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871254"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000845"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku profileru
 Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu pro klientskou aplikaci (samostatný) pomocí metody vzorkování z příkazového řádku.  

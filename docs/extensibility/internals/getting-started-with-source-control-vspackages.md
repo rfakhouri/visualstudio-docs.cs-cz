@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897e12608e0ca91e6ae8b6b58d703616b42be10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849723"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017798"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Začínáme se správou zdrojového kódu rozšíření VSPackages
 VSPackage správy zdrojového kódu je pokročilejší alternativou k modulu plug-in správy zdrojového kódu. Další informace o řízení moduly plug-in zdrojového kódu, naleznete v tématu [vytvořit modul plug-in správy zdrojového kódu](../../extensibility/internals/creating-a-source-control-plug-in.md). VSPackage správy zdrojového kódu umožňuje úplnou kontrolu nad model správy zdrojového kódu, funkce a uživatelské rozhraní (UI) a integruje do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí jako VSPackage.  

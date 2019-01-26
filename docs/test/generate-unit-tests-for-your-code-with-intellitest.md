@@ -6,16 +6,16 @@ ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1d7c7886e407ab7f8151ecb8f79a7eb4090aed89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a9f13493b93dde73726253edf43d66f41bd2ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958823"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006031"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generování testů jednotek pro kód pomocí funkce IntelliTest
 
@@ -27,7 +27,7 @@ Při spuštění IntelliTest můžete snadno zobrazit, jaké testy se nedaří a
 
 **Vytvořit IntelliTest** a **spustit inteligentní testování** příkazů nabídky:
 
-* Jsou k dispozici v pouze Enterprise edici sady Visual Studio 2015 a novější.
+* Jsou k dispozici pouze v sady Enterprise edici sady Visual Studio 2015 a novější.
 
 * Podporuje pouze kód jazyka C#, který cílí na .NET Framework.
 

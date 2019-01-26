@@ -7,15 +7,15 @@ helpviewer_keywords:
 - dependency diagrams
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abdb1d23598c0a103b706781b41fa0a59e6e6ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869317"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977993"
 ---
 # <a name="validate-your-system-during-development"></a>Ověřování systému během vývoje
 Visual Studio vám může pomoci udržovat konzistentní s požadavky uživatelů a architektuře systému vašeho softwaru.
@@ -37,7 +37,7 @@ Visual Studio vám může pomoci udržovat konzistentní s požadavky uživatel�
 |**Videa**|![odkaz na video](../data-tools/media/playvideo.gif) [Channel 9: Doug sedm: Porozumění kódu a návrhu systému sadou Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [Channel 9: Aplikační architektura založená na aplikaci pomocí Diagram závislostí](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [řady MSDN jak: Postup ověření kódu pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Fóra**|-   [Visual Studio Visualization & Modeling nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogy**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
-|**Technické články a deníky**|[Centrum architektury MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Technické články a deníky**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Viz také:
 

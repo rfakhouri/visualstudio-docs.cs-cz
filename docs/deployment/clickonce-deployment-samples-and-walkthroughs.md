@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fd8376cbadd2cc576e0ef3d86c25c53ad98530
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850634"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018368"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ukázky nasazení ClickOnce a podrobné návody
 Tato část obsahuje ukázkové aplikace, ukázkový kód a podrobné návody, které ukazují syntaxi, struktury a techniky, které jsou používány k nasazení Windows Forms, WPF a konzolové aplikace.

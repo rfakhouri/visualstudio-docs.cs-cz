@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb1c2d460e0b70621924df4d7c32e478aa8a2e86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003146"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Kurz: Práce s využitím Pythonu v sadě Visual Studio
 
@@ -61,7 +61,7 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující jeden prázdný soubor
 
     (1) je zvýrazněný tučným písmem je váš projekt, pomocí názvu, který jste zadali v **nový projekt** dialogového okna. Na disku, je reprezentována tento projekt *.pyproj* souboru ve složce vašeho projektu.
 
-    (2) na nejvyšší úrovni je *řešení*, která ve výchozím nastavení má stejný název jako projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů. Například pokud píšete rozšíření C++ pro aplikaci v Pythonu, tento projekt C++ může nacházet ve stejném řešení. Řešení může obsahovat také projekt pro webové služby, spolu s projekty pro programy vyhrazené testu. 
+    (2) na nejvyšší úrovni je *řešení*, která ve výchozím nastavení má stejný název jako projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů. Například pokud píšete rozšíření C++ pro aplikaci v Pythonu, tento projekt C++ může nacházet ve stejném řešení. Řešení může obsahovat také projekt pro webové služby, spolu s projekty pro programy vyhrazené testu.
 
     (3) v rámci projektu naleznete v tématu zdrojových souborů, v tomto případě jedné *.py* souboru. Výběr souboru zobrazí její vlastnosti v **vlastnosti** okna. Poklepáním na soubor otevře v dle svého je vhodný pro tento soubor.
 

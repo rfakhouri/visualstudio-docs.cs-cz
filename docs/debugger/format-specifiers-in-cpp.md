@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968336"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009892"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specifikátory formátu pro C++ v ladicím programu sady Visual Studio
 Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomocí specifikátorů formátu.  
@@ -63,8 +63,8 @@ int main() {
 |Specifikátor|Formát|Původní hodnota Watch|Zobrazená hodnota|  
 |---------------|------------|--------------------------|---------------------|  
 |d|Desítkové celé číslo|0x00000066|102|  
-|O|osmičkové celé číslo bez znaménka|0x00000066|000000000146|  
-|x<br /><br /> **h**|Šestnáctkové celé číslo|102|0xCCCCCCCC|  
+|o|osmičkové celé číslo bez znaménka|0x00000066|000000000146|  
+|x<br /><br /> **h**|Šestnáctkové celé číslo|102|0xcccccccc|  
 |X<br /><br /> **H**|Šestnáctkové celé číslo|102|0xCCCCCCCC|  
 |c|jeden znak|0x0065, c|101 "e"|  
 |s|const char * string (v uvozovkách)|\<umístění > "hello world"|"hello world"|  
@@ -74,7 +74,7 @@ int main() {
 |su|Řetězec znaků Unicode (UTF-16 kódování) (v uvozovkách)|\<umístění > L "hello world"|L "hello world"<br /><br /> u "hello world"|  
 |Sub|Řetězec znaků Unicode (UTF-16 kódování) (bez uvozovek)|\<umístění > L "hello world"|Ahoj světe|  
 |bstr|Řetězec BSTR binární (v uvozovkách)|\<umístění > L "hello world"|L "hello world"|  
-|env|Blok prostředí (double null ukončenou string)|\<umístění > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Blok prostředí (double null ukončenou string)|\<location> L"=::=::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|Řetězec UTF-32 (v uvozovkách)|\<umístění > U "hello world"|u "hello world"|  
 |**s32b**|Řetězec UTF-32 (bez uvozovek)|\<umístění > U "hello world"|Ahoj světe|  
 |**cs**|enum|Saturday(6)|Sobota|  
@@ -82,7 +82,7 @@ int main() {
 |**na**|Potlačí adresa paměti ukazatele na objekt.|\<umístění >, {člen = hodnota...}|{člen = hodnota...}|  
 |**ND.**|Zobrazí pouze základní informace o třídě, ignoruje odvozené třídy|`(Shape*) square` zahrnuje základní třída a odvozené informace o třídě|Zobrazí pouze základní informace o třídě|  
 |hr|Kód chyby HRESULT nebo Win32. Tento specifikátor je už je nepotřebujete pro HRESULT jako ladicí program dekóduje je automaticky.|S_OK|S_OK|  
-|RC|Příznak třídy okna|0x0010|WC_DEFAULTCHAR|  
+|wc|Příznak třídy okna|0x0010|WC_DEFAULTCHAR|  
 |wm|Čísla zpráv Windows|16|WM_CLOSE|  
 |!|Formát RAW ignorující přizpůsobení zobrazení typu všech dat|\<přizpůsobit reprezentace >|4|  
   
@@ -94,7 +94,7 @@ int main() {
   
 |Specifikátor|Formát|Původní hodnota Watch|Zobrazená hodnota|  
 |---------------|------------|---------------------------|---------------------|  
-|n|Desetinné nebo **šestnáctkové** celé číslo|pBuffer [32]<br /><br /> pBuffer,**[0x20]**|Zobrazí `pBuffer` jako 32 prvek pole.|  
+|n|Desetinné nebo **šestnáctkové** celé číslo|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Zobrazí `pBuffer` jako 32 prvek pole.|  
 |**[exp]**|Platný výraz jazyka C++, který je vyhodnocen jako celé číslo.|pBuffer [bufferSize]|Zobrazí pBuffer jako pole `bufferSize` elementy.|  
 |**expand(n)**|Platný výraz jazyka C++, který je vyhodnocen jako celé číslo|pBuffer, expand(2)|Zobrazí třetího prvku pole  `pBuffer`|  
   
@@ -105,10 +105,10 @@ int main() {
 |---------------|------------|--------------------------|---------------------|  
 |**d**<br /><br />**i**|desítkové celé číslo se znaménkem|0xF000F065|-268373915|  
 |**u**|desítkové celé číslo bez znaménka|0x0065|101|  
-|O|osmičkové celé číslo bez znaménka|0xF065|0170145|  
+|o|osmičkové celé číslo bez znaménka|0xF065|0170145|  
 |x<br /><br />X|Šestnáctkové celé číslo|61541|0x0000f065|  
 |**l**<br /><br />**h**|dlouhé nebo krátké předpony pro: d, i, u, e, x, X|00406042|0x0c22|  
-|**f**|podepsané s plovoucí desetinnou čárkou|(3. / 2.), f|1.500000|  
+|**f**|podepsané s plovoucí desetinnou čárkou|(3./2.), f|1.500000|  
 |**e**|matematický zápis se znaménkem|(3.0/2.0)|1.500000e + 000|  
 |**g**|plovoucí desetinná čárka nebo matematický zápis se znaménkem<br/> podle toho, co je kratší|(3.0/2.0)|1,5|  
 |c|jeden znak|\<umístění >|101 "e"|  
@@ -117,7 +117,7 @@ int main() {
 |Sub|konstantní wchar_t *<br /><br /> Const char16_t\*|\<umístění >|Ahoj světe|  
 |s8|const char * (v uvozovkách)|\<umístění >|"hello world"|  
 |hr|Kód chyby HRESULT nebo Win32.<br/>Tento specifikátor je už je nepotřebujete pro HRESULT jako ladicí program dekóduje je automaticky.|S_OK|S_OK|  
-|RC|Příznak třídy okna|0x00000040,|WC_DEFAULTCHAR|  
+|wc|Příznak třídy okna|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Čísla zpráv Windows|0x0010|WM_CLOSE|  
 |!|Formát RAW ignorující veškerá přizpůsobení zobrazení typu dat|\<přizpůsobit reprezentace >|4|  
   
@@ -128,7 +128,7 @@ int main() {
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 znaků ASCII|0x0012ffac|0x0012ffac. 4... 0... ". 0W &... 1T &.0.:W... 1... ". 1. JO &.1.2.. ".. 1... 0y... 1|  
 |**m**|16 bajtů v šestnáctkovém formátu, následovaný 16 znaky ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
-|**MB**|16 bajtů v šestnáctkovém formátu, následovaný 16 znaky ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
+|**mb**|16 bajtů v šestnáctkovém formátu, následovaný 16 znaky ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
 |**mw**|8 slova|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 x doubleword|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 x quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
@@ -139,4 +139,4 @@ int main() {
   
 |Specifikátor|Formát|Výraz|Zobrazená hodnota|  
 |---------------|------------|----------------|---------------------|  
-|n|Desítkové celé číslo|pBuffer [32]|Zobrazí `pBuffer` jako 32 prvek pole.|
+|n|Desítkové celé číslo|pBuffer[32]|Zobrazí `pBuffer` jako 32 prvek pole.|

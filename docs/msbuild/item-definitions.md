@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc550d91c1cccbbc5417300da3618aa52afa69b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef39b6a3b1a5700f8d6699b411020b2c05238381
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990802"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994092"
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 umožňuje statických deklarací položky v souborech projektu pomocí [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Však může být přidají metadata pouze na úrovni položek, i v případě, že metadata jsou stejné pro všechny položky. Počínaje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, prvek projektu s názvem [ItemDefinitionGroup –](../msbuild/itemdefinitiongroup-element-msbuild.md) překonává toto omezení. *ItemDefinitionGroup –* umožňuje definovat sadu definice položek, které přidávají výchozí hodnoty metadat pro všechny položky v typu s názvem položky.  
@@ -63,7 +63,7 @@ ms.locfileid: "53990802"
 ## <a name="value-sources"></a>Hodnota zdroje  
  Hodnoty pro metadata, která je definována v ItemDefinitionGroup – mohou pocházet z mnoha různých zdrojů, následujícím způsobem:  
   
--   PropertyGroup – vlastnost  
+-   PropertyGroup Property  
   
 -   Položku ze ItemDefinitionGroup –  
   

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1a5c3fd3e4960381edc390ba473c53b9e4b62d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fd0c71e9f426c5591f9ac3ecd135c1b230ca5e20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771440"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986056"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Naklonujte úložiště kódu v Pythonu v sadě Visual Studio
 
@@ -25,16 +25,16 @@ Jakmile [nainstalované Visual Studio Tools pro AI](installation.md), můžete s
 
 2. Spusťte sadu Visual Studio.
 
-3. Vyberte **zobrazení > Průzkumník týmových projektů...**  otevřít **Team Exploreru** okno, ve kterém můžete připojit ke Githubu nebo Azure DevOps nebo klonování úložiště.
+3. Vyberte **zobrazení > Průzkumník týmových projektů** otevřít **Team Exploreru** okno, ve kterém můžete připojit ke Githubu nebo Azure DevOps nebo klonování úložiště.
 
-    ![Okno Průzkumníka týmu zobrazující Azure DevOps, Githubu a klonování úložiště](media/create-project-repo/team-explorer.png)
+    ![Okno Průzkumníka týmu zobrazující Azure DevOps, Githubu a klonování úložiště](media/create-project-repo/team-explorer-devops.png)
 
 4. Do pole Adresa URL v části **místní úložiště Git**, zadejte `https://github.com/Microsoft/samples-for-ai`zadejte složky pro klonované soubory a vyberte **klonování**.
 
     > [!Tip]
     > Složka, kterou zadáte v Průzkumníku týmových projektů je konkrétní složky pro klonované soubory příjem. Na rozdíl od `git clone` příkazu, vytváření v Team Exploreru klonu neprovádí automatické vytváření podsložku s názvem úložiště.
 
-5. Při klonování je hotové, klikněte dvakrát na složku úložiště v dolní části Průzkumníku týmových projektů přejděte na řídicí panel úložiště. V části **řešení**vyberte **nový...** .
+5. Při klonování je hotové, klikněte dvakrát na složku úložiště v dolní části Průzkumníku týmových projektů přejděte na řídicí panel úložiště. V části **řešení**vyberte **nový**.
 
     ![Okno Průzkumníka týmu, vytvoření nového projektu z klonu](media/create-project-repo/team-explorer-new-project.png)
 
@@ -44,7 +44,7 @@ Jakmile [nainstalované Visual Studio Tools pro AI](installation.md), můžete s
 
 8. V Průzkumníku řešení rozbalte `TensorFlow Examples> MNIST` uzel, klikněte pravým tlačítkem na `convolutional.py`a vyberte **nastavit jako spouštěcí soubor**. Tento krok informuje soubor, který by měl použít při spuštění projektu sady Visual Studio.
 
-9. Stisknutím klávesy **Ctrl**+**F5** nebo vyberte **ladit > Spustit bez ladění** ke spuštění programu. Pokud se zobrazí ", znovu zkontrolujte pracovní adresář nastavení v předchozím kroku.
+9. Stisknutím klávesy **Ctrl**+**F5** nebo vyberte **ladit > Spustit bez ladění** ke spuštění programu. Pokud se zobrazí chyba, zkontrolujte nastavení pracovního adresáře v předchozím kroku.
 
 10. Když se program spustí úspěšně, uvidíte ho spustit ke stažení trénování a testování datovou sadu, pak trénování modelu a vaše míra výstupních chyb. Chcete, míra chyb snížení v čase
 
@@ -57,6 +57,6 @@ Jakmile [nainstalované Visual Studio Tools pro AI](installation.md), můžete s
 
    ![Spustit tensorboard](media/create-project-repo/run-tensorboard.png)
 
-12. Všimněte si, že chyba snížení přesčas, což znamená, že je zlepšit kvalitu
+12. Všimněte si, že chyba snížení přesčas, což znamená, že zlepšení kvality.
 
    ![Spustit tensorboard](media/create-project-repo/tensorboard.png)

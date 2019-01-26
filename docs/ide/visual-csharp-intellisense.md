@@ -8,15 +8,15 @@ helpviewer_keywords:
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf15c8015eb1a26cc418bcf11d9e189eb3875585
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885793"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979059"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -85,7 +85,7 @@ Technologie IntelliSense si pamatuje členy, které jste zvolili nedávno v mís
 
 Po zadání [přepsat](/dotnet/csharp/language-reference/keywords/override) a potom stiskněte klávesu **místo**, technologie IntelliSense zobrazí všechny členy platný základní třídy, které můžete přepsat v rozevíracím seznamu místní nabídky. Zadáte návratový typ metody za `override` vyzve technologie IntelliSense, aby se zobrazily pouze metody, které vracejí stejného typu. Pokud technologie IntelliSense nemůže najít žádná shoda, zobrazí všechny členy základní třídy.
 
-### <a name="ai-enhanced-intellisense"></a>AI Vylepšená technologie IntelliSense
+### <a name="ai-enhanced-intellisense"></a>AI-enhanced IntelliSense
 
 Můžete nainstalovat experimentální [IntelliCode rozšíření](/visualstudio/intellicode/intellicode-visual-studio) pro Visual Studio, která poskytuje rozšířené umělé inteligence seznamy doplňování technologie IntelliSense. Toto rozšíření předpovídá největší pravděpodobností správné rozhraní API pro použití, ne jenom nabízí ten samý abecední seznam členů. Používá aktuální kontext kódu a vzory pro poskytování dynamického seznamu.
 

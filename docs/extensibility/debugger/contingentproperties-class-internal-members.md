@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa554cc3740819d892ca1c3a60028be97928b51e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26f672a9d18e4963dba47b46a12e113e0a25a618
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001547"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Třída ContingentProperties – vnitřní členy
 Obsahuje další vlastnosti <xref:System.Threading.Tasks.Task> objektu.  
@@ -40,7 +40,7 @@ Obsahuje další vlastnosti <xref:System.Threading.Tasks.Task> objektu.
   
 |Název|Popis|  
 |----------|-----------------|  
-|[m_children –](../../extensibility/debugger/m-children-field.md)|Seznam podřízených úloh, které jsou registrované s touto úlohou.|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|Seznam podřízených úloh, které jsou registrované s touto úlohou.|  
   
 ## <a name="remarks"></a>Poznámky  
  Rozhraní .NET Framework inicializuje pole této třídy, jenom když jsou potřeba.  

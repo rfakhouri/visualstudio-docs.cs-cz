@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::Execute – | Dokumentace Microsoftu
+title: IDiaFrameData::execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be6c631f9ea0db47829f305f90bd1c296de2f28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b8a301bd4f16cd3fb6f1b6fcec90e0f1cf3f47c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958736"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992019"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Provádí odvíjení zásobníku a vrátí výsledky v rozhraní rámce zásobníku funkce walk.  
@@ -48,5 +48,5 @@ HRESULT execute ( 
  Tato metoda je volána při ladění k provedení operace unwind zásobníku. [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md) objektu je implementováno klientské aplikace pro příjem aktualizací registry a poskytovat metody používané `execute` metody.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

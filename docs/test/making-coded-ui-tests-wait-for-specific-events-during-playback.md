@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db68827b94deb461fe812e333d3fcbb44afc4f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29176082a91ca5a66b44d2a30318f0b53452bad4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988204"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Ujistěte se, programové testy UI čekání na konkrétní události při přehrávání
 
@@ -28,7 +28,7 @@ Visual Studio Enterprise
 > [!TIP]
 > Můžete také přidat zpoždění před akcí pomocí editoru programového testu UI. Další informace najdete v tématu [jak: Vložení prodlevy před akci uživatelského rozhraní pomocí editoru programového testu UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
-**UITestControl.WaitForControlXXX() metody**
+**UITestControl.WaitForControlXXX() Methods**
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 

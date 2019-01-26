@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b7dcc27b-45c6-4302-9552-6fa5b1e94b56
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8aa9e998be5f4a888428f19db7951f9ab7e2e972
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c3dcc3895e8d5e8b75881808d445692a5134dbf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841843"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987489"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Postupy: Instrumentace samostatné součásti rozhraní .NET Framework a shromažďování dat časování s profilerem z příkazového řádku
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci komponenty rozhraní .NET Framework, jako. *soubor exe* nebo. *Knihovna DLL* souboru a shromažďování podrobných dat časování.  
@@ -41,11 +41,11 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 3. Inicializace proměnných prostředí profilování rozhraní .NET Framework. Zadejte:  
 
-    **Vsperfclrenv – /traceon**  
+    **VSPerfClrEnv /traceon**  
 
 4. Spusťte profiler. Zadejte:  
 
-    **/Start:trace VSPerfCmd/output:** `OutputFile` [`Options`]  
+    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
 
    - [/Start](../profiling/start.md)**: trasování** možnost inicializuje profiler.  
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4182af1731dec583a555031b90be1315e6a5d9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09456c67eea98947f182e5ab3b3c90fd21a7a7c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927477"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011062"
 ---
 # <a name="editor-and-language-service-extensions"></a>Jazyk a Editor rozšíření služeb
 Většina funkcí editoru kódu sady Visual Studio můžete rozšířit. Editor je založená na Windows Presentation Foundation (WPF) a je zapsaný ve spravovaném kódu. Přestože tento přístup se liší od návrhů v dřívějších verzích sady Visual Studio, poskytuje většinu stejné funkce. Rozšíření editoru, pomocí Managed Extensibility Framework (MEF).  

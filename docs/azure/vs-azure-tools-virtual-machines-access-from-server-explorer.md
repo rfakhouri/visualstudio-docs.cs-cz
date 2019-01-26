@@ -2,7 +2,7 @@
 title: Přístup k Azure Virtual Machines z Průzkumníka serveru | Dokumentace Microsoftu
 description: Získat přehled o tom, jak zobrazit, vytvářet a spravovat virtuální počítače Azure (VM) v Průzkumníku serveru v sadě Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 317103b1367f5181f8a806925df67b88215ce6a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 996950b2ed7a6281f489a6842b2472fee1039f64
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003010"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Přístup ke službě Azure Virtual Machines z Průzkumníka serveru
 
@@ -34,7 +34,7 @@ Pokud máte virtuální počítače hostované v Azure, můžete k nim přistupo
    | Stav |Mezi hodnoty patří spouštění, spuštěno, zastavení, zastaveno a stav načítání. Pokud se zobrazí stav načítání, aktuální stav neznámý. Hodnoty této vlastnosti se liší od hodnoty, které se používají na [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
    | ID předplatného |ID předplatného pro váš účet Azure. Tyto informace můžete zobrazit na [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) zobrazením vlastností pro odběr. |
 2. Zvolte některý uzel koncového bodu a následně zobrazit **vlastnosti** okna.
-3. Následující tabulka popisuje dostupné vlastnosti koncových bodů, ale jsou jen pro čtení. Chcete-li přidat nebo upravit koncových bodů pro virtuální počítač, použijte [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. Následující tabulka popisuje dostupné vlastnosti koncových bodů, ale jsou jen pro čtení. Chcete-li přidat nebo upravit koncových bodů pro virtuální počítač, použijte [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040).
 
    | Vlastnost | Popis |
    | --- | --- |

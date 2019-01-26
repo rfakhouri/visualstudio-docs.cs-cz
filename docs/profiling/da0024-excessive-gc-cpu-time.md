@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 228872da-77d0-4da5-b455-ac57fb1867c9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e058748c1614641fd831f7c159d3cf7e2ac59d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05e07e9a003004bfb091215b954ccf2f61f41fb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881338"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007106"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadměrný čas procesoru uvolňování paměti
 
@@ -31,7 +31,7 @@ ms.locfileid: "53881338"
 
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.  
 
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Údaje o výkonu systému, která byla shromážděna během profilování označuje, že množství času stráveného při uvolňování paměti je příliš vysoká ve srovnání s časem zpracování celkový počet aplikací.  
 
 ## <a name="rule-description"></a>Popis pravidla  

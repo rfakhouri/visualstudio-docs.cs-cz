@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206a6ecf028497e63a7fe3e0d6bb320febd8bde5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998258"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Rozšířené možnosti, textový Editor, Basic (Visual Basic)
 **VB konkrétní** stránce vlastností **základní** složky **textový Editor** složky **možnosti** (**nástroje** nabídky) dialogové okno obsahuje následující vlastnosti:
@@ -40,18 +40,18 @@ ms.locfileid: "54764664"
 - Umístit nejdřív direktivy "System", při řazení direktiv Using
 
    Pokud je vybráno, **odebrat a seřadit direktivy using** příkaz v nabídce seřadí klikněte pravým tlačítkem `using` direktivy a místa obory názvů "Systém" v horní části seznamu.
-   
+
 - Oddělovat skupiny direktiv using
 
    Pokud je vybráno, **odebrat a seřadit direktivy using** odděluje příkazu v místní nabídce `using` direktivy vložením prázdný řádek mezi skupinami direktivy, které mají stejný obor názvů root.
-   
-- Navrhnout použití typů v sestaveních reference 
-- Navrhnout použití typů v balíčcích NuGet 
+
+- Navrhnout použití typů v sestaveních reference
+- Navrhnout použití typů v balíčcích NuGet
 
    Když tyto možnosti jsou vybrané, [rychlá akce](../quick-actions.md) je k dispozici pro instalaci balíčku NuGet a přidejte `using` směrnice pro neodkazovaný typy.
 
    ![Rychlé akce pro instalaci balíčku NuGet v sadě Visual Studio](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>Zvýraznění
 

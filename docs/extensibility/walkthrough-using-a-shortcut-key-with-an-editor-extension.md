@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988568"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Průvodce: Pomocí klávesové zkratky s rozšířením editoru
 Klávesové zkratky můžete reagovat v rozšíření editoru. Následující návod ukazuje, jak přidat grafického doplňku zobrazení k zobrazení textu s použitím klávesovou zkratku. Tento názorný postup je založen na šabloně editor grafického doplňku zobrazení, a umožňuje vám přidat dalších úprav s použitím na znak +.  
@@ -33,7 +33,7 @@ Klávesové zkratky můžete reagovat v rozšíření editoru. Následující n�
   
     Microsoft.VisualStudio.Editor  
   
-    Sestavení Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
     Microsoft.VisualStudio.Shell.14.0  
   

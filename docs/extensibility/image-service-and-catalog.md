@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3113280b7a32d9323f1b5a1638123dca8163528f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899701"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018810"
 ---
 # <a name="image-service-and-catalog"></a>Služba bitových kopií a katalog
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Visual Studio Image a Image katalog zavedena v sadě Visual Studio 2015.  
@@ -164,7 +164,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Identifikátor URI|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) používání aplikace pro: / / / / / autority<br />Odkaz na prostředek – absolutní komponenty<br />– Cesta k souboru, který obsahuje nativní prostředky|  
+|Uri|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) používání aplikace pro: / / / / / autority<br />Odkaz na prostředek – absolutní komponenty<br />– Cesta k souboru, který obsahuje nativní prostředky|  
 |Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> *Světle:* Zdroj lze použít v světla na pozadí.<br /><br /> *Tmavě:* Zdroj lze použít v tmavém pozadí.<br /><br /> *Funkce Vysoký kontrast:* Zdroj lze použít v jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastLight:* Zdroj lze použít v světla na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastDark:* Zdroj lze použít v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud je atribut pozadí vynechán, zdroj je možné na jakékoli na pozadí.<br /><br /> Pokud je na pozadí *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, se nikdy převrátí zdroje na barvy. Pokud je vynechán nebo nastaven na pozadí *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
 
 |||  
@@ -240,7 +240,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
   
     -   Povinné, pokud používáte **BrushToColorConverter** pro **ImageThemingUtilities.ImageBackgroundColor** v uživatelském rozhraní WPF.  
   
--   *Microsoft.VisualStudio.Shell. \<VSVersion >.0*  
+-   *Microsoft.VisualStudio.Shell.\<VSVersion>.0*  
   
     -   Povinné, pokud používáte **IVsUIObject** typu.  
   
@@ -957,7 +957,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphDialogId||Dialogové okno|  
         |GlyphOpenFolder||FolderOpened|  
         |GlyphClosedFolder||FolderClosed|  
-        |GlyphArrow||Přejít na další|  
+        |GlyphArrow||GoToNext|  
         |GlyphCSharpFile||CSFileNode|  
         |GlyphCSharpExpansion||Fragment kódu|  
         |GlyphKeyword||IntellisenseKeyword|  
@@ -967,7 +967,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlItem||Značka|  
         |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||Dokument|  
-        |GlyphForwardType||Přejít na další|  
+        |GlyphForwardType||GoToNext|  
         |GlyphCallersGraph||CallTo|  
         |GlyphCallGraph||CallFrom|  
         |GlyphWarning||StatusWarning|  
@@ -980,7 +980,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphExtensionMethodProtected||ExtensionMethod|  
         |GlyphExtensionMethodPrivate||ExtensionMethod|  
         |GlyphExtensionMethodShortcut||ExtensionMethod|  
-        |GlyphXmlAttribute||Atributy XmlAttribute|  
+        |GlyphXmlAttribute||XmlAttribute|  
         |GlyphXmlChild||Třída XmlElement|  
         |GlyphXmlDescendant||XmlDescendant|  
         |GlyphXmlNamespace||XmlNamespace|  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 858d28ac2fdc6cab32e537e86f84771e0fb53f90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f09e5c32bd18213969481ab214fa7873f4f69c48
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982153"
 ---
 # <a name="customize-your-build-c-visual-basic"></a>Přizpůsobení sestavení (C#, Visual Basic)
 
@@ -51,7 +51,7 @@ Například Kdybyste chtěli povolit všechny projekty pro přístup k nového R
     </PropertyGroup>
    </Project>
    ```
-3. Spusťte nástroj MSBuild. Váš projekt importů existující *Microsoft.Common.props* a *cílů Microsoft.Common.targets* najít soubor a naimportujte ho.
+3. Run MSBuild. Váš projekt importů existující *Microsoft.Common.props* a *cílů Microsoft.Common.targets* najít soubor a naimportujte ho.
 
 ### <a name="search-scope"></a>Obor vyhledávání
 
@@ -120,7 +120,7 @@ Tento mechanismus rozšíření můžete zakázat nastavením vlastnosti `Import
 
 *Microsoft.Common.CurrentVersion.targets* importuje `$(MSBuildProjectFullPath).user` pokud existuje, takže si můžete vytvořit soubor vedle svého projektu pomocí rozšíření, další. Pro dlouhodobé změny, které máte v plánu vrácení se změnami do správy zdrojového kódu dáváte přednost projektu se mění, aby budoucí programu nemusíte vědět o tento mechanismus rozšíření.
 
-## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>MSBuildExtensionsPath a MSBuildUserExtensionsPath
+## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>MSBuildExtensionsPath and MSBuildUserExtensionsPath
 
 > [!WARNING]
 > Pomocí těchto mechanismů rozšíření učiní obtížnější získat opakovatelných sestavení napříč počítači. Zkuste použít konfigurace, která může být zapsány do systému správy zdrojů a sdílí všichni vývojáři vašeho základu kódu.

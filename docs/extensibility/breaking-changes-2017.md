@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012271"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Změny v rozšíření sady Visual Studio 2017
 
@@ -92,9 +92,9 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
 ### <a name="visual-studio-registry"></a>Visual Studio registru
 
 * Dříve nainstalované sady Visual Studio mnoho klíče registru do systému **HKEY_LOCAL_MACHINE** a **HKEY_CURRENT_USER** podregistry v rámci Visual Studio konkrétní klíče:
-  * **HKLM\Software\Microsoft\VisualStudio\{verze}**: Klíče registru vytvořené pomocí Instalační služby MSI a rozšíření vázaná na počítač.
-  * **HKCU\Software\Microsoft\VisualStudio\{verze}**: Klíče registru vytvořené pomocí sady Visual Studio k ukládání nastavení specifických pro uživatele.
-  * **HKCU\Software\Microsoft\VisualStudio\{verze} _Config**: Kopii aplikace Visual Studio HKLM klávesy výše a klíče registru sloučením *.pkgdef* souborů podle přípony.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Klíče registru vytvořené pomocí Instalační služby MSI a rozšíření vázaná na počítač.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Klíče registru vytvořené pomocí sady Visual Studio k ukládání nastavení specifických pro uživatele.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Kopii aplikace Visual Studio HKLM klávesy výše a klíče registru sloučením *.pkgdef* souborů podle přípony.
 * Pokud chcete snížit dopad na registru, Visual Studio nyní používá [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) funkce pro ukládání klíčů registru v privátní binárního souboru v rámci *[VSAPPDATA]\privateregistry.bin*. Velmi malý počet Visual Studio zkratky specifické pro zůstat v systémovém registru.
 
 * Stávající kód spuštěný v procesu sady Visual Studio to neovlivní. Visual Studio přesměruje do privátního registru, všechny operace registru pod klíčem konkrétní HKCU Visual Studio. Čtení a zápis do jiných umístění registru bude nadále používat systémového registru.

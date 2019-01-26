@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dec051aae8c5693d18a5cab302714fdf152f8a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67524a694b45343eba14f07b387ba1551bba1a80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945863"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Postupy: Poskytuje kontext pro editory
 Pro editor kontext je aktivní, pouze v případě, že je editor má právě fokus, nebo má fokus, bezprostředně před byl přesunut fokus panelu nástrojů. Můžete zadat kontextu editoru provedením následujících úloh:  

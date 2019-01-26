@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 312bbab46cfb7dec85e42f425b2363c2442e576b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016223"
 ---
 # <a name="createpkgdef-utility"></a>Nástroj CreatePkgDef
 Vezme soubor .dll pro rozšíření sady Visual Studio jako parametr a vytvoří *.pkgdef* souboru vyvíjený *.dll* souboru. *.Pkgdef* soubor obsahuje všechny informace, které by jinak zapsat do systémového registru po instalaci rozšíření.  
@@ -33,13 +33,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```  
   
 ## <a name="arguments"></a>Arguments  
- **/ out =&lt;název souboru&gt;**  
+ **/out=&lt;FileName&gt;**  
  Povinný parametr. Nastaví název *.pkgdef* výstupní soubor &lt;FileName&gt;.  
   
  **/ codebase**  
  Volitelné. Vynutí registraci **CodeBase** nástroj.  
   
- **/ Assembly**  
+ **/assembly**  
  Vynutí registraci **sestavení** nástroj.  
   
  **&lt;AssemblyPath&gt;**  
@@ -52,7 +52,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
-- *%VSInstallDir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
     
   Pokud je instalační složky sady *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, rozšíření rozpozná pomocí sady Visual Studio, ale bude ve výchozím nastavení zakázán. Uživatel můžete povolit rozšíření pomocí **rozšíření a aktualizace**. 
    

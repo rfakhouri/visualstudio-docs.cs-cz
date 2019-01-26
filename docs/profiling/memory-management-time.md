@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67af3509-3a7d-435d-bc37-5262448da915
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6741aa96941e9265ab414ea7d73bb614ace6f9b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e16378663dd07bb9810661ad50d3f1c011dfdd80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913954"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000365"
 ---
 # <a name="memory-management-time"></a>Čas správy paměti
 Tyto segmenty na časové ose jsou přidruženy k blokování časy, které jsou klasifikovány jako správa paměti. Tento scénář znamená, že událost, ke které je přidružený k operaci správy paměti, jako je například stránkování blokuje vlákno. Během této doby je zablokovaný vlákno ve stavu rozhraní API nebo jádra, která Vizualizátor souběžnosti se počítá jako správa paměti. Mezi ně patří události, například stránkování a přidělování paměti.  

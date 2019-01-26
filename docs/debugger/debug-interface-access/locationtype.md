@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3e1eedc-bfd3-4c91-881b-d69565138d0f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8765f6671914d145600be925cacadc87d51387
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e844438f5262b6a218a5feb355e78fc8a2cd1da
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859799"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005355"
 ---
 # <a name="locationtype"></a>LocationType
 Označuje druh informace o poloze, které jsou obsaženy v symbolu.  
@@ -88,6 +88,6 @@ enum LocationType { 
   
 ## <a name="see-also"></a>Viz také  
  [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol::get_locationtype –](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [Umístění symbolů](../../debugger/debug-interface-access/symbol-locations.md)

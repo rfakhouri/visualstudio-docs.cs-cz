@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9f4c568722700ab4521f8a34a0639e78b9f550b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1aec5fb925fbf7140786880db69d5be535abd5ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004510"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Důležité příkazy pro filtry služby jazyka
 Pokud chcete vytvořit filtr služby plnohodnotný jazyk, vezměte v úvahu následující příkazy pro zpracování. Úplný seznam identifikátorů příkaz je definován v <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> výčtu pro spravovaný kód a záhlaví Stdidcmd.h soubor pro nespravované [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kódu. Můžete najít soubor Stdidcmd.h v *cestu instalace sady Visual Studio SDK*\VisualStudioIntegration\Common\Inc.  

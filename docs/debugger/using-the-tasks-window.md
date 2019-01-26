@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957077335b8df286d6fa2fbd34b6b81874fddbaa
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227769"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993007"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Using the Tasks Window (C#, Visual Basic, C++)
 
@@ -56,7 +56,7 @@ Sloupce v **úlohy** v okně zobrazí následující informace.
 |**Čas dokončení**|Čas, kdy úloha dokončena.|
 |**Poloha**|Aktuální umístění v zásobníku volání úlohy. Najeďte myší tuto buňku, chcete-li zobrazit celý zásobník volání pro úlohu. Naplánované úlohy nemají hodnotu v tomto sloupci.|
 |**Úloha**|Metoda počáteční a všechny argumenty, které byly předány pro úkol při vytvoření rovnou uložil.|
-|**Stav AsyncState**|Pro spravovaný kód, stav úlohy. Ve výchozím nastavení je tento sloupec skrytý. Chcete-li zobrazit tento sloupec, otevřete kontextovou nabídku pro jednu z záhlaví sloupců. Zvolte **sloupce**, **AsyncState**.|
+|**AsyncState**|Pro spravovaný kód, stav úlohy. Ve výchozím nastavení je tento sloupec skrytý. Chcete-li zobrazit tento sloupec, otevřete kontextovou nabídku pro jednu z záhlaví sloupců. Zvolte **sloupce**, **AsyncState**.|
 |**Nadřazené**|ID úkolu, který vytvořil tuto úlohu. Pokud je toto pole prázdné, úloha nemá žádný nadřazený objekt. To platí pouze pro spravované aplikace.|
 |**Přiřazení vlákna**|ID a název vlákna, na kterém je spuštěn úkol.|
 |**AppDomain**|Pro spravovaný kód domény aplikace, ve kterém je spuštěn úkol.|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f42b1f999b2f73d6ef534dddd9cfd907ac34f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ade7c30ec3cc67af28f3f609d91ccb0a3a8d289
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919609"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993725"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 Získá základní typ pro tento symbol<em>.</em>  
@@ -66,6 +66,6 @@ if (pType->get_type( &pBaseType ) == S_OK)
 |Verze:|V7.0 DIA SDK|  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Basictype – výčet](../../debugger/debug-interface-access/basictype.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

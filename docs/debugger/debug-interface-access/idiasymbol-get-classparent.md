@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99db875a-caae-4d60-ae70-64bc8a9f6fba
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38f91ff64337fd9a1d18fa9ae63743437fa1287b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b224b0311da78b709f7782f4f66e02869c595d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864813"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992838"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 Získá odkaz na nadřazené třídu symbolu.  
@@ -51,5 +51,5 @@ HRESULT get_classParent ( 
  Druhy symbolů, které mohou být nadřazené třídu jsou dokumentovány v článku [hierarchie typů symbolů tříd](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Hierarchie tříd typů symbolů](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

@@ -2,19 +2,19 @@
 title: Testování výkonu cloudové služby | Dokumentace Microsoftu
 description: Testování výkonu cloudové služby pomocí profileru sady Visual Studio
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 05af766e3e138c8dd83978d5ae359b6662ba73bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e58548bddfbb9426b459fe3260129a14b6eba87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866940"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976239"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testování výkonu cloudové služby
 ## <a name="overview"></a>Přehled
@@ -59,8 +59,8 @@ Další informace o výkonu profilace v sadě Visual Studio najdete v tématu [P
 
 > [!NOTE]
 > Můžete povolit IntelliTrace nebo profilování při publikování vaší cloudové služby. Nelze povolit obojí.
-> 
-> 
+>
+>
 
 ### <a name="profiler-collection-methods"></a>Metody kolekce Profiler
 Můžete použít jinou kolekci metody profilace, podle vašeho problémy s výkonem:
@@ -78,8 +78,8 @@ Následující obrázek ukazuje, jak konfigurovat nastavení profilování v dia
 
 > [!NOTE]
 > Povolit **povolit profilaci** zaškrtávací políčko, musí mít profiler nainstalované na místním počítači, který používáte k publikování cloudové služby. Profiler je ve výchozím nastavení nainstalován při instalaci sady Visual Studio.
-> 
-> 
+>
+>
 
 ### <a name="to-configure-profiling-settings"></a>Chcete-li konfigurovat nastavení profilování
 1. V Průzkumníku řešení otevřete místní nabídku pro projekt Azure a klikněte na tlačítko **publikovat**. Podrobné pokyny o tom, jak publikovat cloudovou službu, naleznete v tématu [publikování cloudové služby pomocí nástroje Azure](http://go.microsoft.com/fwlink/p?LinkId=623012).
@@ -89,7 +89,7 @@ Následující obrázek ukazuje, jak konfigurovat nastavení profilování v dia
 5. Z **jakou metodu profilace chcete použít** přepínačů, zvolte typ profilace, že potřebujete.
 6. Chcete-li shromažďovat data profilace interakce vrstev, vyberte **povolit profilaci interakce vrstev** zaškrtávací políčko.
 7. Chcete-li uložit nastavení, zvolte **OK** tlačítko.
-   
+
     Při publikování této aplikace, tato nastavení slouží k vytvoření relace profilování pro každou roli.
 
 ## <a name="viewing-profiling-reports"></a>Zobrazení zprávy o profilování
@@ -101,7 +101,7 @@ Relace profilování se vytvoří pro každou instanci role v cloudové službě
 1. Chcete-li zobrazit okno Průzkumníka serveru v sadě Visual Studio, zvolte v panelu nabídky zobrazení Průzkumníka serveru.
 2. Vyberte uzel Azure Compute a pak vyberte uzel Azure nasazení pro cloudovou službu, kterou jste vybrali profil při publikování ze sady Visual Studio.
 3. Chcete-li zobrazit sestavy profilování pro instanci, zvolte roli ve službě, otevřete místní nabídku pro konkrétní instanci a klikněte na tlačítko **zobrazit sestavu profilace**.
-   
+
     Sestavu souboru .vsp se teď stáhne z Azure a stav souboru ke stažení se zobrazí v protokolu aktivit Azure. Po dokončení stahování sestavy profilování se zobrazí na kartě v editoru sady Visual Studio s názvem <Role name> *<Instance Number>* <identifier>.vsp. Souhrnná data pro sestavy se zobrazí.
 4. K zobrazení různých zobrazení sestavy v seznamu aktuální zobrazení, zvolte typ zobrazení, které chcete. Další informace najdete v tématu [zobrazeních sestav nástrojů pro profilaci](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 

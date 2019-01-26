@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc568c6e2e28d27516ac5a92d7ccd01d3704bb7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859078"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009931"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Vytvoření vykreslení vizuálních dat pomocí jazyka R
 
@@ -38,7 +38,7 @@ Okna diagramů platí bez ohledu na projekty aplikace Visual Studio a zůstanou 
 
 Generuje se graf používá okna diagramů "aktivní", ukládají se všechny předchozí jeho vykreslení historie diagramů (naleznete v tématu [grafu historie](#plot-history)). Zadejte například `plot(100:1)` a první graf je nahrazen klesající řádku.
 
-Stejně jako všechny ostatní okna sady Visual Studio. podporuje vlastní rozložení okna diagramů (viz [přizpůsobení rozložení oken v sadě Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Okna diagramů můžete ukotven na různých místech v rámci sady Visual Studio, v rámci tohoto rámce se změněnou velikostí nebo získaná mimo rámec výhradně pro změnu velikosti nezávislé. 
+Stejně jako všechny ostatní okna sady Visual Studio. podporuje vlastní rozložení okna diagramů (viz [přizpůsobení rozložení oken v sadě Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Okna diagramů můžete ukotven na různých místech v rámci sady Visual Studio, v rámci tohoto rámce se změněnou velikostí nebo získaná mimo rámec výhradně pro změnu velikosti nezávislé.
 
 Změna velikosti okno diagramů vždy znovu vykreslí vykreslení zajistit nejlepší kvalitu obrazu. Obvykle budete chtít změnit velikost vykreslení před exportem vykreslení do souboru nebo do schránky pomocí příkazů popsaných v další části.
 
@@ -46,7 +46,7 @@ Změna velikosti okno diagramů vždy znovu vykreslí vykreslení zajistit nejle
 
 Panel nástrojů okna diagramů obsahuje použitelných příkazů, většina z nich jsou také k dispozici prostřednictvím **nástroje R** > **vykreslení** nabídky.
 
-| Tlačítko | Příkaz | Popis | 
+| Tlačítko | Příkaz | Popis |
 | --- | --- | --- |
 | ![Tlačítko Nová okna diagramů](media/plotting-toolbar-01-new-plot-window.png) | Nové okno diagramů | Vytvoří okno samostatné diagramů se svou vlastní historii. Zobrazit [více okna diagramů](#multiple-plot-windows). |
 | ![Aktivací tlačítka okna diagramů](media/plotting-toolbar-02-activate-plot-window.png) | Aktivovat okno diagramů | Nastaví aktuální okno diagramů jako aktivní okno, takže to následné `plot` příkazy jsou předány do tohoto okna. Zobrazit [více okna diagramů](#multiple-plot-windows). Zobrazit [více okna diagramů](#multiple-plot-windows). |
@@ -54,8 +54,8 @@ Panel nástrojů okna diagramů obsahuje použitelných příkazů, většina z 
 | ![Tlačítka historie diagramů](media/plotting-toolbar-04-plot-history-arrows.png) | Předchozí nebo další diagram |  Přejde na další nebo předchozí diagram v historii. Můžete také přejít historie pomocí kombinace kláves Ctrl + Alt + F11 (předchozí) a Ctrl + Alt + F12 (Další). Zobrazit [grafu historie](#plot-history). |
 | ![Uložit jako obrázek tlačítka](media/plotting-toolbar-05-save-as-image.png)| Uložit jako obrázek | Zobrazí výzvu k zadání názvu souboru a uloží aktuální diagram (okno obsah, na velikost okna) souboru obrázku. Dostupné formáty jsou `.png`, `.jpg`, `.bmp`, a `.tif`. |
 | ![Uložit jako PDF tlačítko](media/plotting-toolbar-06-save-as-pdf.png)| Uložit jako PDF | Uloží aktuální diagram do souboru PDF, použijte aktuální velikost okna. Vykreslení se při změně měřítka PDF znovu zpracovat. |
-| ![Kopírovat jako rastrový obrázek tlačítka](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopírovat jako rastrový obrázek | Vykreslení zkopíruje do schránky jako rastrový obrázek rastrové, pomocí aktuální velikost okna. | 
-| ![Kopírovat jako metasoubor tlačítko](media/plotting-toolbar-08-copy-as-metafile.png)| Kopírovat jako metasoubor | Zkopíruje do schránky jako vykreslení [Windows metafile](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Kopírovat jako rastrový obrázek tlačítka](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopírovat jako rastrový obrázek | Vykreslení zkopíruje do schránky jako rastrový obrázek rastrové, pomocí aktuální velikost okna. |
+| ![Kopírovat jako metasoubor tlačítko](media/plotting-toolbar-08-copy-as-metafile.png)| Kopírovat jako metasoubor | Zkopíruje do schránky jako vykreslení [Windows metafile](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). |
 | ![Diagram tlačítko Odebrat](media/plotting-toolbar-09-remove-plot.png)| Odebrat diagram | Odstraní aktuální diagram z historie. |
 | ![Vykreslení tlačítko pro vymazání výběru](media/plotting-toolbar-10-clear-all-plots.png) | Vymazat všechna vykreslení | Odebere všechna vykreslení z historie (výzvy k potvrzení). |
 
@@ -84,7 +84,7 @@ Doba života napříč všechna okna Historie diagramů je vázán na životnost
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Programově manipulovat s okna diagramů
 
-Můžete programově měnit okna diagramů z kódu jazyka R pomocí čísla zařízení k identifikaci okna konkrétní diagramů. 
+Můžete programově měnit okna diagramů z kódu jazyka R pomocí čísla zařízení k identifikaci okna konkrétní diagramů.
 
 - `dev.list()`: Seznam všech zařízení grafiky v rámci aktuální relace jazyka R.
 - `dev.new()`: Vytvoření nového zařízení grafiky (nové okno diagramů).

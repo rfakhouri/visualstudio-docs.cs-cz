@@ -6,15 +6,15 @@ helpviewer_keywords:
 - remote debugging, unblock download
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988139"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Postupy: Odblokování stáhnout nástroje remote tools v systému Windows Server
 
@@ -41,15 +41,15 @@ Pokud chcete stáhnout nástroje pro Windows Server, doporučujeme jednu z násl
   * microsoft.com
   * go.microsoft.com
   * download.microsoft.com
-  * My.VisualStudio.com
+  * my.visualstudio.com
   * login.microsoftonline.com
-  * Login.live.com
+  * login.live.com
   * secure.aadcdn.microsoftonline-p.com
-  * MSFT.STS.microsoft.com
-  * auth.gfx.MS
+  * msft.sts.microsoft.com
+  * auth.gfx.ms
   * app.vssps.visualstudio.com
   * vlscppe.microsoft.com
-  * Query.prod.CMS.RT.microsoft.com
+  * query.prod.cms.rt.microsoft.com
 
     Pokud budete chtít přidat tyto domény při stahování nástroje remote tools a pak zvolte **přidat** po zobrazení výzvy.
 

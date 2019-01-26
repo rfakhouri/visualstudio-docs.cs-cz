@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f67a8e354addef7aca298ebac3740702951a17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db1b4ec3c2ae5fa0b24c3981e2b0296b54aec3cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869879"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016357"
 ---
 # <a name="messages-view"></a>Zobrazení zpráv
 Každé okno má datové proudy přidružené zpráv. Zobrazí okno pro zobrazení zprávy tohoto datového proudu zpráv. Popisovač okna, kód zprávy a zpráva se zobrazí. Můžete vytvořit zobrazení zprávy pro vlákna nebo procesu stejně. To umožňuje zobrazit zprávy, pošle se všem oknům vlastní konkrétní proces nebo vlákno, které je zvláště užitečné pro zaznamenání inicializace zprávy okna.  

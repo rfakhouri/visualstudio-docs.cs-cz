@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 784d4b6df24a5f4327a87c638b9624a0e4cec46c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 3c7ef2073afe7321bfee6d100e7df644bc9b3eed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53893594"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005212"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou verzi. Tento proces zahrnuje text uživatelského rozhraní (UI) pro jazyk specifický pro oblast, pomocí správné datum a formátování měny, nastavení velikosti ovládacích prvků ve formuláři, překlad a zrcadlení ovládací prvky zprava doleva v případě potřeby.  

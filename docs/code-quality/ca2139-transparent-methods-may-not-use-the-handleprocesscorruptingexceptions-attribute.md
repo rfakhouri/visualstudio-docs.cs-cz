@@ -1,5 +1,5 @@
 ---
-title: 'CA2139: Transparentní metody nemusejí podporovat použití atributu HandleProcessCorruptingExceptions'
+title: 'CA2139: Transparentní metody nemusí používat atribut HandleProcessCorruptingExceptions'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: 45a0328a-add7-40f9-8934-dff59beb02b3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f5e0649b9d59994098622d00c3cf23772a9d81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dae0d33bc1dd2ae826d4c8a301287f09f05f17cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987742"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003394"
 ---
-# <a name="ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute"></a>CA2139: Transparentní metody nemusejí podporovat použití atributu HandleProcessCorruptingExceptions
+# <a name="ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute"></a>CA2139: Transparentní metody nemusí používat atribut HandleProcessCorruptingExceptions
 
 |||
 |-|-|
@@ -27,7 +27,7 @@ ms.locfileid: "53987742"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Transparentní metoda je označena <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atribut.
 
 ## <a name="rule-description"></a>Popis pravidla

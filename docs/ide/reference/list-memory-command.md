@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0c2512bd6b446c35aa01e9f56711bb39cd85b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6dca4d55d58f6fe4c2238fe881440f1bdd9e6661
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846084"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007487"
 ---
 # <a name="list-memory-command"></a>Listovat paměť – příkaz
 Zobrazí obsah určeného rozsahu paměti.
@@ -73,12 +73,12 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |-----------| - |
 |**d**|Debug.listmemory –|
 |**da**|Debug.listmemory – /Ansi|
-|**DB**|Debug.listmemory – /Format:OneByte|
-|**řadič domény**|Debug.listmemory – /Format:FourBytes /Ansi|
+|**db**|Debug.listmemory – /Format:OneByte|
+|**dc**|Debug.listmemory – /Format:FourBytes /Ansi|
 |**dd**|Debug.listmemory – /Format:FourBytes|
-|**DF**|Debug.listmemory – /Format:Float|
+|**df**|Debug.listmemory – /Format:Float|
 |**dq**|Debug.listmemory – /Format:EightBytes|
-|**rozlišované sjednocení typu**|Debug.listmemory – Unicode|
+|**du**|Debug.listmemory – Unicode|
 
 ## <a name="example"></a>Příklad
 

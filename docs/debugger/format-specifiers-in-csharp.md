@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe922960b0571593cc15581c29244798fd0f671e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899009"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018732"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory ve formátu C# v ladicím programu sady Visual Studio
 Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomocí specifikátorů formátu. Můžete také použít specifikátory formátu v **okamžité** okně **příkaz** okno v [zarážky s trasováním](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)a ve zdrojových oknech. Pokud pozastavíte výraz v těchto oknech, výsledek se zobrazí v [datového tipu](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) v zadaném formátu zobrazení.  
@@ -61,7 +61,7 @@ Použijeme následující příklad kódu:
 |d|Desítkové celé číslo|0x0065|101|  
 |dynamické odkazy|Zobrazí zadaný objekt pomocí dynamického zobrazení|Zobrazí všechny členy objektu, včetně dynamického zobrazení|Zobrazí pouze dynamické zobrazení|  
 |h|Šestnáctkové celé číslo|61541|0x0000F065|  
-|NQ|řetězec s žádné uvozovky|"String"|Moje řetězec|  
+|nq|řetězec s žádné uvozovky|"String"|Moje řetězec|  
 |nse|Určuje chování, není formát. Vyhodnotí výraz s "Žádné vedlejší účinky". Pokud výraz se nedá interpretovat a lze vyřešit pouze zkušební verzi (jako je například volání funkce), zobrazí se chyba místo.|Není k dispozici|Není k dispozici|
 |hidden|Zobrazí všechny veřejné a neveřejné členy|Zobrazí veřejné členy|Zobrazí všechny členy|  
 |nezpracované|Zobrazí položky, jak se zobrazí v uzlu nezpracovaná položka. Platí pouze pro objekty proxy.|Slovník\<T >|Nezpracované zobrazení, slovníku\<T >|  

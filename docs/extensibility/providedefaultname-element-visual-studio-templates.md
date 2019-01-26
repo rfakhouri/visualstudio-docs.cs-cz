@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9c9c7180b4da2d2d43523a278a3ce803ca37584
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54f55731cd76fdeb1090eacfa42d3433ec5b323b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841921"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010022"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Providedefaultname – element (šablony sady Visual Studio)
 Určuje, zda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] systém projektu bude generovat výchozí název šablony do **přidat novou položku** nebo **nový projekt** dialogové okno.  
   
  \<Vstemplate – >  
- \<TemplateData >  
+ \<TemplateData>  
  \<Providedefaultname – >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -46,7 +46,7 @@ Určuje, zda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] systém p
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  

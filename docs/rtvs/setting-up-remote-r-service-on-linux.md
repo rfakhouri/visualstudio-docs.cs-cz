@@ -7,15 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d73f6df65c1ce1b78448a7582330741c887f7768
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835942"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020201"
 ---
 # <a name="remote-r-service-for-linux"></a>Vzdálená služba R pro Linux
 
@@ -91,7 +91,7 @@ V obou případech vzdálený počítač musí mít jednu z těchto balíčků p
 1. Přihlaste se k webu [Azure Portal](https://portal.azure.com).
 1. Přejděte na virtuální počítače a pak vyberte **přidat**.
 1. V seznamu dostupných imagí virtuálních počítačů vyhledejte a vyberte jednu z následujících akcí:
-    - Server se systémem Ubuntu: `Ubuntu Server 16.04 LTS`
+    - Ubuntu Server: `Ubuntu Server 16.04 LTS`
     - Virtuální počítač pro datové vědy: `Linux Data Science` (viz [virtuální počítače pro datové vědy](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) podrobnosti)
 1. Nastavte na model nasazení `Resource manager` a vyberte **vytvořit**.
 1. Zvolte název pro virtuální počítač, zadejte uživatelské jméno a heslo (heslo je povinné, jako SSH veřejného klíče přihlašovací jméno není podporováno).

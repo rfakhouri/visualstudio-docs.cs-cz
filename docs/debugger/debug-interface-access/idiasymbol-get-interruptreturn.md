@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_interruptreturn – | Dokumentace Microsoftu
+title: IDiaSymbol::get_interruptReturn | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9665da6c-4cc0-41d7-b2e2-0d9e50174cf8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2725c9311d741f50bc3055d9e82ff8c09eaf9153
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08595c6f28edc1feae8ef7313187bc3855ce20f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863547"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000286"
 ---
 # <a name="idiasymbolgetinterruptreturn"></a>IDiaSymbol::get_interruptReturn
 Získá příznak, který určuje, zda obsahuje funkce vrácení z přerušení instrukcí (například X86 kódu sestavení `iret`).  

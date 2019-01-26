@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b86ac1ba81a7d203177afdde302e8f32599ea698
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: edbd781fbaba285b56afca027aed657ee7585f3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003139"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 Toto rozhraní je odesílat pomocí ladicího stroje (DE) Správce ladění relace (SDM) při vytváření vlastnost, která souvisí s určitým dokumentem.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c02e529740bdfe5e2b0ed9bdfecd077ee05f4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaa02f87a0bb9737112121343226c2dc0e45937a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824324"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015469"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Karta Třída, dialogové okno vlastnosti okna
 Použití **třídy** karta zobrazuje informace ve třídě vybrané okno. Zobrazíte [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md), přesuňte fokus [zobrazení Windows](../debugger/windows-view.md) okna. Vyberte jakékoli okno uzel ve stromu a pak zvolte **vlastnosti** z **zobrazení** nabídky.  
@@ -34,4 +34,4 @@ Použití **třídy** karta zobrazuje informace ve třídě vybrané okno. Zobra
 |**Název nabídky**|Název hlavní nabídky, která souvisí s windows z této třídy ("none" Pokud neexistuje žádná nabídka).|  
 |**Popisovač ikony**|Popisovač ikony, která souvisí s windows z této třídy ("none" Pokud neexistuje žádná ikona).|  
 |**Popisovač ukazatele**|Popisovač pro kurzor, který je přidružený k windows této třídy ("none" Pokud neexistuje žádný kurzor).|  
-|**Štětec pozadí**|Popisovač pro štětec pozadí, která souvisí s windows z této třídy, nebo jednu z předdefinovaných COLOR_ * barev pro vykreslování pozadí okna ("none" Pokud neexistuje žádný štětec).|
+|**Bkgnd Brush**|Popisovač pro štětec pozadí, která souvisí s windows z této třídy, nebo jednu z předdefinovaných COLOR_ * barev pro vykreslování pozadí okna ("none" Pokud neexistuje žádný štětec).|

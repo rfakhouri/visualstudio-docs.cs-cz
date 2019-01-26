@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f6b8b9b220a9fa81ea8cf43de18bcf3820f5336
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968667"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016678"
 ---
 # <a name="image-library-viewer"></a>Prohlížeč knihovny obrázků
 Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhledávat image manifestů, které uživateli umožňují s nimi manipulovat stejným způsobem, který by sady Visual Studio. Uživatel může změnit na pozadí, velikosti, DPI, vysoký kontrast a další nastavení. Tento nástroj také zobrazuje informace o načítání pro každou manifestu obrázků a zobrazí informace o zdroji pro každý obrázek v manifestu obrázků. Tento nástroj je užitečný pro:  
@@ -130,8 +130,8 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Identifikátor URI|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) používání aplikace pro: / / / / / autority<br /><br /> Odkaz na prostředek – absolutní komponenty<br /><br /> – Cesta k souboru, který obsahuje nativní prostředky|  
-|Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> - *Světlý*: Zdroj lze použít v světla na pozadí.<br /><br /> - *Tmavě*: Zdroj lze použít v tmavém pozadí.<br /><br /> - *Funkce Vysoký kontrast*: Zdroj lze použít v jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> - *HighContrastLight*: Zdroj lze použít v světla na pozadí v režimu vysokého kontrastu.<br /><br /> -*HighContrastDark*: Zdroj lze použít v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud **pozadí** atribut je vynechán, zdroj je použít na jakékoli pozadí.<br /><br /> Pokud **pozadí** je *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, Nikdy se převrátí zdroje barvy. Pokud **pozadí** je vynechán nebo nastaven na *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
+|Uri|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) používání aplikace pro: / / / / / autority<br /><br /> Odkaz na prostředek – absolutní komponenty<br /><br /> – Cesta k souboru, který obsahuje nativní prostředky|  
+|Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> - *Světlý*: Zdroj lze použít v světla na pozadí.<br /><br /> - *Tmavě*: Zdroj lze použít v tmavém pozadí.<br /><br /> - *HighContrast*: Zdroj lze použít v jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> - *HighContrastLight*: Zdroj lze použít v světla na pozadí v režimu vysokého kontrastu.<br /><br /> -*HighContrastDark*: Zdroj lze použít v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud **pozadí** atribut je vynechán, zdroj je použít na jakékoli pozadí.<br /><br /> Pokud **pozadí** je *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, Nikdy se převrátí zdroje barvy. Pokud **pozadí** je vynechán nebo nastaven na *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
   
  A \<zdroj > prvek může mít nastavený právě jeden z následující volitelné dílčí prvky:  
   

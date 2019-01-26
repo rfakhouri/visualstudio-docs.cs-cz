@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c472830f-c3eb-46ab-9498-cd637763d241
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09eb9d41a4b5a1034b3b6ab82259c8ce5c0cd38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 725d7a403292c4aafb487fc4840f1c54137dd1bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911403"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004380"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 Načte hodnotu ID výrobce OEM (OEM) tohoto symbolu.  
@@ -44,5 +44,5 @@ HRESULT get_oemId ( 
  Tato vlastnost se týká jenom pro symboly s [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) typ `SymTagCustomType`.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)

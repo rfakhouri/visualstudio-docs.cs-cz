@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4d1b3b1dca44acc092cb3a9a639c196ce8e50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831755"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010061"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Začínáme s rozšířeními service a editoru jazyka
 Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnující například sbalování, párování složených závorek, technologie IntelliSense a návrhy, programovacího jazyka nebo jakýkoli typ obsahu. Můžete také přizpůsobit vzhled a chování editoru sady Visual Studio, například text barevné zvýrazňování, okrajů, vylepšení a další vizuální prvky. Můžete také definovat vlastní typ obsahu a definujte vzhled a chování textové zobrazení, ve kterých se zobrazí váš obsah.  
@@ -64,7 +64,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
 ## <a name="run-extensions-in-the-experimental-instance"></a>Spusťte rozšíření v experimentální instanci  
  Vaše pracovní verze sady Visual Studio můžete izolovat, zatímco vyvíjíte rozšíření nasazením v následující složce experimentální (ve Windows Vista a Windows 7):  
   
- *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{společnosti}\\{ExtensionID}.*  
+ *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{Company}\\{ExtensionID}*  
   
  kde *% LOCALAPPDATA %* je jméno přihlášeného uživatele, *společnosti* je název společnosti, který vlastní rozšíření, a *ExtensionID* je ID rozšíření.  
   

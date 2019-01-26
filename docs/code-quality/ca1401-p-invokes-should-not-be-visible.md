@@ -1,5 +1,5 @@
 ---
-title: 'CA1401: VOLÁNÍ NESPRAVOVANÝCH KÓDŮ. Vyvolá P by neměly být viditelné'
+title: 'CA1401: Volání nespravovaných kódů by neměla být viditelná'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 0f4d96c1-f9de-414e-b223-4dc7f691bee3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e52140f07cb72eca62a1a52a01ae37e3e6a53382
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a139dd44c470422554dd2d5ccb42ab61a9d84637
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930306"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021400"
 ---
-# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: VOLÁNÍ NESPRAVOVANÝCH KÓDŮ. Volání nespravovaných kódů by neměly být viditelné
+# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: Volání nespravovaných kódů by neměla být viditelná
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "53930306"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejná nebo chráněná metoda veřejného typu má <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atribut (také implementováno pomocí `Declare` – klíčové slovo v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>Popis pravidla

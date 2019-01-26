@@ -1,5 +1,5 @@
 ---
-title: 'CA2146: Typy musí být alespoň tak kritický jako jeho základní typy a rozhraní'
+title: 'CA2146: Typy musí být alespoň tak kritické, jako jejich základní typy a rozhraní'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: 241fb784-1f6b-46e5-8ceb-c438e341d38e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 785c31d3d6d58215936e69d0c8034be955c9afd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8bfc3cebb0d90d0400f1b5dbd1c9ba6bab266563
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899886"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014091"
 ---
-# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy musí být alespoň tak kritický jako jeho základní typy a rozhraní
+# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy musí být alespoň tak kritické, jako jejich základní typy a rozhraní
 
 |||
 |-|-|
@@ -27,7 +27,7 @@ ms.locfileid: "53899886"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Transparentní typ je odvozen od typu, který je označen <xref:System.Security.SecuritySafeCriticalAttribute> nebo <xref:System.Security.SecurityCriticalAttribute>, nebo typ, který je označen <xref:System.Security.SecuritySafeCriticalAttribute> atribut je odvozen z typu, který je označen pomocí <xref:System.Security.SecurityCriticalAttribute> atribut.
 
 ## <a name="rule-description"></a>Popis pravidla

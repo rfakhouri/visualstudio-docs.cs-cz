@@ -1,5 +1,5 @@
 ---
-title: 'CA2213: Uvolnitelné pole by mělo být uvolněno'
+title: 'CA2213: Uvolnitelná pole by měla být uvolněna'
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: e99442c9-70e2-47f3-b61a-d8ac003bc6e5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8df7e124cd8dd8ba9764add4006f7244155de8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a57b3f094449665ec49688b21ebf89dc8b7a1669
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882075"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998232"
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Uvolnitelné pole by mělo být uvolněno
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Uvolnitelná pole by měla být uvolněna
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53882075"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Typ, který implementuje <xref:System.IDisposable?displayProperty=fullName> deklaruje pole, která jsou typy, které také implementují <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Není volána metoda pole <xref:System.IDisposable.Dispose%2A> metoda deklarujícího typu.
 

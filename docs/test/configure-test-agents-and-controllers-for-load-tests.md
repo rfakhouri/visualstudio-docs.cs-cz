@@ -6,14 +6,14 @@ helpviewer_keywords:
 - load tests, test agents and controllers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c4462c97febc7f1075080bf659a679647bc7bbe5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f32048501fe36bead87eb0fcec9891621eacc482
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899834"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969233"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurace testovacích agentů a testovací kontrolery pro spouštění zátěžových testů
 
@@ -42,7 +42,7 @@ Tato architektura přináší následující výhody:
 
    **Místní konfigurace:**
 
-  - Počítač 1: Visual Studio, kontrolér, agent.
+  - Machine1: Visual Studio, kontrolér, agent.
 
     ![Místní počítače pomocí řadiče a agentů](./media/load-test-configa.png)
 
@@ -50,9 +50,9 @@ Tato architektura přináší následující výhody:
 
   - Počítač 1 a 2: Visual Studio (více testerů může používat stejný kontrolér).
 
-  - Počítač 3: Kontrolér (může mít nainstalovány také agenty).
+  - Machine3: Kontrolér (může mít nainstalovány také agenty).
 
-  - Počítač 4 n: Agent nebo agenty přidružené ke kontroleru na počítač 3.
+  - Machine4-n: Agent nebo agenty přidružené ke kontroleru na počítač 3.
 
     ![Vzdálené počítače pomocí řadiče a agentů](./media/load-test-configb.png)
 

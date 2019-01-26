@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fb3b32d2154c85ccf127dc6329980d387f49fa8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa7d6cc2a38248cf97045f450cc30cdc1572105
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948258"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004614"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 Představuje zprostředkovatele symbol modelu COM + s metodami, které jsou specifické pro spravovaný kód a rozšiřuje **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md).  
@@ -40,7 +40,7 @@ IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
 |[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Načtení ladění symboly uvedené **ICorDebugModule** objektu.|  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: SH.h  
+ Záhlaví: Sh.h  
   
  Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   

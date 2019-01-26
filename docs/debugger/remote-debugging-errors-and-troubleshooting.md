@@ -17,26 +17,26 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89898e5f25c552987ee2d3df1c413c608323c2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e83ce7c067f056e6bb22b6476de5696005359d61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001800"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Chyby a řešení potíží se vzdáleným laděním
 Těmto chybám může dojít při pokusu o vzdálené ladění.  
   
--   [Chyba: Nelze automaticky krokování s vnořením do serveru](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Chyba: Automatické krokování s vnořením do serveru se nezdařilo.](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [Chyba: Microsoft Visual Studio sledování vzdáleného ladění (MSVSMON. (EXE) zřejmě není spuštěn ve vzdáleném počítači.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)  
+-   [Chyba: Na vzdáleném počítači pravděpodobně neběží sledování vzdáleného ladění sady Microsoft Visual Studio (MSVSMON.EXE).](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)  
   
 -   [Nepodařilo se připojit ke sledování vzdáleného ladění sady Microsoft Visual Studio.](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [Chyba: Vzdálený počítač se nezobrazí v dialogovém okně Vzdálená připojení](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
+-   [Chyba: Vzdálený počítač se nezobrazuje v dialogovém okně Vzdálená připojení.](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění](../debugger/remote-debugging.md)

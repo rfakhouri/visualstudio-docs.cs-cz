@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 066bf09da72f0f0bee91057c9547e5d3b2daf774
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4442b5c7275bd7733f4d5a49c4ac3baf0b92c1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007461"
 ---
 # <a name="list-call-stack-command"></a>Listovat zásobník volání – příkaz
 Zobrazí aktuální zásobník volání.
@@ -60,11 +60,11 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  Volitelné. Určuje, jestli se mají zobrazovat název modulu. Výchozí hodnota je `yes`.
 
- / Showlineoffsetzobrazitodsazenířádku:`yes` &#124; `no` [nebo] které:`yes`&#124;`no`
+ /ShowLineOffset:`yes`&#124;`no` [or] /#:`yes`&#124;`no`
 
  Volitelné. Určuje, jestli se mají zobrazovat posun řádku. Výchozí hodnota je `no`.
 
- / Showbyteoffsetzobrazitodsazeníbajtu:`yes` &#124; `no` [nebo] / b:`yes`&#124;`no`
+ /ShowByteOffset:`yes`&#124;`no` [or] /B:`yes`&#124;`no`
 
  Volitelné. Určuje, jestli se má zobrazit bajtovým posunem. Výchozí hodnota je `no`.
 
@@ -76,7 +76,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  Volitelné. Určuje, jestli se mají zahrnout volání do nebo z jiných vláken. Výchozí hodnota je `no`.
 
- / Showexternalcodezobrazitexterníkód:`yes`&#124;`no`
+ /ShowExternalCode:`yes`&#124;`no`
 
  Volitelné. Určuje, zda má být zobrazen pouze můj kód pro zásobník volání. Když funkce pouze můj kód je vypnuté, zobrazí se všechny neuživatelský kód. Po zapnutí funkce pouze můj kód neuživatelském kódu se zobrazí jako `[external]` ve výstupu zásobník volání.
 

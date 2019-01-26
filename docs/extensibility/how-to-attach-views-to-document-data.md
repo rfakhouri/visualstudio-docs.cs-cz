@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38818faa83f1fe901c5c3b19786aff8b3935f3b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e9aa7b4a36f1d3a073bb13188954a1159012797
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870096"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010035"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Postupy: Připojení zobrazení k datům dokumentu
 Pokud máte nové zobrazení dokumentů, je možné připojit k existující objekt dat dokumentu.  

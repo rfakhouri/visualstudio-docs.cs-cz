@@ -5,27 +5,27 @@ ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
 author: gregg-miskelly
 ms.author: greggm
-manager: douge
+manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 0b81d0dc38e4fb6c6bb14860634d41d85aa4dee9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91c834e61452667a0af236eddb65355f23234715
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892115"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990534"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrace 64bitové ladicí program registrace třídy modelu COM
 
 Pro rozšíření ladicího programu, které registrace modelu COM třídy v registru HKEY_CLASSES_ROOT pomocí regasm regsvr32, nebo přímo na zápis do registru a načtena do *msvsmon.exe* (vzdálený ladicí program), je teď možné poskytnout to se aniž byste museli napsat HKEY_CLASSES_ROOT msvsmon registrace. To má vliv na starší verze vyhodnocovače výrazů ladicího programu .NET nebo ladicí stroj, které jsou nakonfigurovány k načtení v *msvsmon.exe* procesu.
 
-## <a name="msvsmon-comclass-def"></a>msvsmon. comclass def
+## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
 
 Chcete-li použít tuto techniku, přidejte  **.msvsmon. comclass def.json* souboru vedle msvsmon (InstallDir:* \Common7\IDE\Remote Debugger\x64*).
 
 Tady je příklad souboru msvsmon. comclass def, která se registruje spravuje a jeden nativních tříd:
 
-Název souboru: *MyCompany.MyExample.msvsmon. comclass def.json*
+Název souboru: *MyCompany.MyExample.msvsmon-comclass-def.json*
 
 ```json
 {

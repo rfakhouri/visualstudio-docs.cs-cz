@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b12ee149fbf092d16b53a79419969e8c8a96ea51
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986827"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997855"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Použití okna interaktivní okno REPL
 
@@ -74,7 +74,7 @@ Visual Studio **interaktivní** okna pro jazyk Python poskytuje bohaté čtení 
     ![Úpravy předchozí příkaz v interaktivním okně](media/vs-getting-started-python-16-interactive6.png)
 
 1. Postupujte stejně jako můžete experimentovat s nastavením jiné kroku až do nalezení hodnoty, které vám nejvíc vyhovuje. Můžete provést také vlny opakování prodlužte rozsahu, například `range(0, 1800, 12)`.
- 
+
 1. Až budete spokojeni s tím jsou napsaná v kódu **interaktivní** okna, vyberte ho, klikněte pravým tlačítkem a vyberte **kopírování kódu** (**Ctrl** + **Shift**+**C**) a vložte do editoru. Všimněte si, jak tato speciální funkce sady Visual Studio automaticky vynechá jakýkoli výstup, jakož i `>>>` a `...` zobrazí výzvu. Například následující obrázek ukazuje použití **kopírování kódu** na výběr, který zahrnuje výzvy a výstup příkazu:
 
     ![Interaktivní okno kopírování kódu příkaz na výběru s výzvami a výstup](media/vs-getting-started-python-17-interactive7.png)

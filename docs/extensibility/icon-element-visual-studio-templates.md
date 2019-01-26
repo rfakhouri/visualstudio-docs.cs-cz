@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db50dd4fa62bb1d6a3947d0c7091c94b2138efff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 145974e3e9eefd92f052940834079ad05f3d3849
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868076"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013928"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon – element (šablony sady Visual Studio)
 Určuje cestu a název souboru, který slouží jako ikona, která se zobrazí v jednom souboru obrázku **nový projekt** nebo **přidat novou položku** dialogovém okně pro šablonu.  
   
  \<Vstemplate – >  
- \<TemplateData >  
- \<Ikona >  
+ \<TemplateData>  
+ \<Icon>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +56,7 @@ Určuje cestu a název souboru, který slouží jako ikona, která se zobrazí v
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Pokud je vyžadována textová hodnota `Package` a `ID` atributy se používají.  

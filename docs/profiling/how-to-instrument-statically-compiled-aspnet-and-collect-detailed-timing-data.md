@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b260ce68-76e6-4c3b-8062-3c00bd5cf7b8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41afd25ba67fcac89ebe577636f6dec9915af389
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cfe855d9e2c9a8e5c2ff69ca0cc234d49214249
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960875"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015404"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Postupy: Instrumentace staticky kompilované webové aplikace ASP.NET a shromažďování podrobných dat časování pomocí příkazového řádku profileru
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci předkompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové komponenty nebo webu a shromažďování podrobných dat časování.  
@@ -39,7 +39,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 3. Inicializujte proměnné prostředí profilování rozhraní .NET. V okně příkazového řádku zadejte:  
 
-    **Vsperfclrenv – /globaltraceon**  
+    **VSPerfClrEnv /globaltraceon**  
 
 4. Restartujte počítač.  
 
@@ -47,7 +47,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 6. Spusťte profiler. Zadejte:  
 
-    **/Start:trace VSPerfCmd/output:** `OutputFile` [`Options`]  
+    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
 
    - [/Start](../profiling/start.md)**: trasování** možnost inicializuje profiler.  
 

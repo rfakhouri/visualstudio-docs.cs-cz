@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a3fc46a60ee004ae102cade120f1ab54149416
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52dd90f12a367b0f555b16cdee74ee0ff62342dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013934"
 ---
 # <a name="constant-nodes"></a>Uzly konstanty
 
@@ -33,9 +33,9 @@ I když každá instance pixel shader přijímá pouze jednu sadu hodnot konstan
 |**Vektor kamery**|Vektor, který se táhne od aktuálního pixelu až po kameru v prostoru světa.<br /><br /> Vám může být využit k výpočtu odrazů v prostoru světa.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vektor od aktuálního pixelu až po kameru.|Žádná|
 |**Barevná konstanta**|Hodnota konstanty barvy.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Hodnota barvy.|**Output**<br /> Hodnota barvy.|
 |**Konstanty**|Konstantní skalární hodnota.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Skalární hodnota.|**Output**<br /> Skalární hodnota.|
-|**2D konstanta**|Konstantu dvousložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Hodnota vektoru.|**Output**<br /> Hodnota vektoru.|
-|**3D konstanta**|Konstantu třísložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Hodnota vektoru.|**Output**<br /> Hodnota vektoru.|
-|**4D konstanta**|Konstantu čtyřsložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Hodnota barvy.|**Output**<br /> Hodnota vektoru.|
+|**2D Constant**|Konstantu dvousložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Hodnota vektoru.|**Output**<br /> Hodnota vektoru.|
+|**3D Constant**|Konstantu třísložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Hodnota vektoru.|**Output**<br /> Hodnota vektoru.|
+|**4D Constant**|Konstantu čtyřsložkového vektoru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Hodnota barvy.|**Output**<br /> Hodnota vektoru.|
 |**Normalizované umístění**|Pozice aktuálního pixelu vyjádřena v souřadnicích normalizované zařízení.<br /><br /> Souřadnice x a osy y mají hodnoty v rozsahu [-1, 1], souřadnice z má hodnotu v rozsahu [0, 1], a w komponenta obsahuje hodnotu hloubka bodu v prostoru zobrazení; w není normalizovaná.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozice aktuálního pixelu.|Žádná|
 |**Barva bodu**|Rozptýlení barvy aktuálního pixelu, což je kombinací materiálu rozptýlení barvy a vrcholu barevnými atributy.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Rozptýlení barvy aktuálního pixelu.|Žádná|
 |**Hloubka bodu**|Hloubka aktuálního pixelu v prostoru zobrazení.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Hloubka aktuálního pixelu.|Žádná|

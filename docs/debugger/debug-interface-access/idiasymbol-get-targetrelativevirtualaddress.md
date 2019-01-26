@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_targetrelativevirtualaddress – | Dokumentace Microsoftu
+title: IDiaSymbol::get_targetRelativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 49a159f3-6943-44d3-90a3-0dba51e8a7ec
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbed2157968606ea251527ce78e9860d68710c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6f38b983945b7182f0e0822133f6542922dc1f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848600"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016286"
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 Načte relativní virtuální adresu (RVA) cíle.  
@@ -46,5 +46,5 @@ HRESULT get_targetRelativeVirtualAddress ( 
  "Převodní rutina" je část kódu, který převede mezi 32-bit paměti adresní prostor (označované také jako plochý adresní prostor) a 16bitových adresní prostor, (označované jako segmentovaným adresní prostor).  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)

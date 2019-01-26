@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 724c78ab566e56dd8d6281819a58fa4baf00563c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921481"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971232"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie balíčku VSIX
 Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření sady Visual Studio spolu s metadaty sady Visual Studio používá ke klasifikaci a nainstalovat rozšíření. Tato metadata jsou obsaženy v manifestu VSIX a *[Content_Types] .xml* souboru. Balíčku VSIX může obsahovat také jeden nebo více *Extension.vsixlangpack* soubory k poskytování lokalizované textu instalace a může obsahovat další balíčky VSIX nainstalovat závislosti.  
@@ -54,7 +54,7 @@ Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření 
   
  Ve výchozím nastavení, instalaci platí pouze pro aktuálního uživatele, protože *% LocalAppData %* je adresář specifické pro uživatele. Ale pokud nastavíte [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elementu v manifestu do `True`, nainstaluje rozšíření v rámci <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> a bude k dispozici pro všechny uživatele počítače.  
   
-## <a name="contenttypesxml"></a>[Content_Types] .xml  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  *[Content_Types] .xml* souboru Určuje typy souborů v rozbalených *VSIX* souboru. Tento soubor používá při instalaci balíčku Visual Studio, ale není možné nainstalovat samotný soubor. Další informace o tomto souboru najdete v tématu [struktura souboru [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  
   
  A *[Content_Types] .xml* vyžaduje soubor standardu Open Packaging konvence OPC (). Další informace o OPC, naleznete v tématu [OPC: Nový standard balení data](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) na webové stránce MSDN.

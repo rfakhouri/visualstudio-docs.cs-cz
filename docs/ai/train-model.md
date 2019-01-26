@@ -11,12 +11,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - azure
-ms.openlocfilehash: 937f5f1606e24a40c0c5ffe90f739cc68df7e4b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6a8592950fafa1d0ffc564aafaab4371b315088
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041630"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trénování modelů AI v Azure Batch AI
 
@@ -34,7 +34,7 @@ To je integrovaná s Visual Studio Tools pro AI tak můžete dynamicky horizont�
 
 3. Vyberte **zobrazení > Průzkumník týmových projektů...**  otevřít **Team Exploreru** okno, ve kterém můžete připojit ke Githubu nebo Azure DevOps nebo klonování úložiště.
 
-    ![Okno Průzkumníka týmu zobrazující Azure DevOps, Githubu a klonování úložiště](media/train-model/team-explorer.png)
+    ![Okno Průzkumníka týmu zobrazující Azure DevOps, Githubu a klonování úložiště](media/train-model/team-explorer-devops.png)
 
 4. Do pole Adresa URL v části **místní úložiště Git**, zadejte `https://github.com/Microsoft/samples-for-ai`zadejte složky pro klonované soubory a vyberte **klonování**.
 

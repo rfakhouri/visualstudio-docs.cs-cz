@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19f868089c5f8a6187d1bdd36adaf22162b8e2b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a76efd6ef799bbaa25c4e4d40ef2ab10a3569fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878741"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000910"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 
@@ -32,7 +32,7 @@ Jak je znázorněno na následujícím obrázku, Concurrency Visualizer můžete
 
 Další informace najdete v tématu "výkonu vzor 1: Identifikace kolize zámků"v Hazim Shafi [paralelní nástroje pro měření výkonu pro Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu na webu MSDN blogu.
 
-![Zamknout kolize](../profiling/media/lockcontention_2.png "LockContention_2")
+![Lock Contention](../profiling/media/lockcontention_2.png "LockContention_2")
 
 ## <a name="uneven-workload-distribution"></a>Rozdělení nerovnoměrné pracovního vytížení
 

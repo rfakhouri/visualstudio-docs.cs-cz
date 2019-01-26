@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c265591d1836594b9190e031c1bfe3ab5a93813
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 367d75280418e090a9fd483932d7ee8e9158bca9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966917"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Představuje instanci pole pro obecný typ spravovaného kódu.  
@@ -35,7 +35,7 @@ IDebugGenericFieldInstance : IUnknown
 |[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Vrátí číslo typu parametru argumenty pro tuto instanci.|  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: SH.h  
+ Záhlaví: Sh.h  
   
  Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   

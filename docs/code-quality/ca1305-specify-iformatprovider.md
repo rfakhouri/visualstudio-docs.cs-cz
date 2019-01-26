@@ -1,5 +1,5 @@
 ---
-title: 'CA1305: Zadejte možnosti IFormatProvider'
+title: 'CA1305: Určete IFormatProvider'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: fea236a51b8bde5171c91ad1935d4168dfabd94a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55ecfa146958819092c51055e039f57e8c1b3f6e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018706"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: Zadejte možnosti IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: Určete IFormatProvider
 
 |||
 |-|-|
@@ -33,7 +33,7 @@ ms.locfileid: "53954234"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Metoda nebo konstruktor volá jeden nebo více členů, které mají přetížení <xref:System.IFormatProvider?displayProperty=fullName> parametr a tato metoda nebo konstruktor nevolá přetížení přebírající <xref:System.IFormatProvider> parametru.
 

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7016b7674814c56aa7255419f993ca617872cb97
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5723552a7716e7bfc846e209baa3a6f4001cf49b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956504"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013910"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Modifikační klávesy návrhové plochy v Blendu
 Některé klávesové zkratky nejsou přidruženy položek nabídky, což znamená, že nemůžete použít [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] uživatelské rozhraní pro jejich zjišťování. V následující tabulce jsou uvedeny klávesové zkratky, které mění akce, jako je například změna velikosti objektu.

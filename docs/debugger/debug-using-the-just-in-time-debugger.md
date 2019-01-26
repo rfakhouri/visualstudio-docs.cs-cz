@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e9a85afd2024cb2ec723df053ebeca89ff52822
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831547"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020610"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu za běhu v sadě Visual Studio
 
@@ -56,7 +56,7 @@ Ladění Just-In-Time může být stále povoleno i v případě, že ve vašem 
 
 2.  V **Editor registru** okna, vyhledejte a odstraňte následující položky registru:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -64,7 +64,7 @@ Ladění Just-In-Time může být stále povoleno i v případě, že ve vašem 
 
 3.  Pokud počítač používá 64bitový operační systém, odstraňte také následující položky registru:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -157,9 +157,9 @@ Pokud Just-In-Time ladění nelze spustit Pokud dojde k chybě aplikace, i když
   
   
 
-  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows zasílání zpráv o chybách**
+  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
     
-  - (Pro 64bitové počítače): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows zasílání zpráv o chybách**
+  - (Pro 64bitové počítače): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
   
   Další informace najdete v tématu [. Nastavení zasílání](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
   
@@ -196,4 +196,4 @@ Může se zobrazit následující chybové zprávy během Just-In-Time ladění:
 - [Zabezpečení ladicího programu](../debugger/debugger-security.md)
 - [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
 - [Možnosti, ladění Just-In-Time dialogové okno](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Upozornění zabezpečení: Připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
