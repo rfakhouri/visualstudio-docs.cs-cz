@@ -1,23 +1,23 @@
 ---
-title: 'CA3147: Označit obslužné rutiny operace s ValidateAntiForgeryToken'
+title: 'CA3147: Označte obslužné rutiny příkazů pomocí ValidateAntiForgeryToken'
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 author: dotpaul
 ms.author: paulming
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 96660dfe1de6b4fb2490bd00b7ce408d0548ba67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 630d16b17f687842574348d86c1591a5433d9bfa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954695"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037141"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Označit obslužné rutiny operace s ValidateAntiForgeryToken
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Označte obslužné rutiny příkazů pomocí ValidateAntiForgeryToken
 
 |||
 |-|-|
@@ -26,7 +26,7 @@ ms.locfileid: "53954695"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Metody akce kontroleru ASP.NET MVC není označen atributem [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)), nebo atribut určení příkaz protokolu HTTP, jako například [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118)) nebo [ AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29).
 

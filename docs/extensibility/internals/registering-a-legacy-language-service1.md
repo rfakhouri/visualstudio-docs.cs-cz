@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e4920844bee7c242d4c260070a50416621708e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5348b1903c16d8b46c0960bb5812fb78455dfbe9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837313"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986524"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrace služby starší verze jazyka
 V rámci spravovaného balíčku (MPF) je služba jazyka proffered pomocí VSPackage (viz [rozšíření VSPackages](../../extensibility/internals/vspackages.md)) a je registrovaný pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] přidáním klíče registru a položky. Tento proces registrace se provádí v částečně během instalace a částečně v době běhu.  

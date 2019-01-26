@@ -1,5 +1,5 @@
 ---
-title: 'CA1413: Vyhněte se neveřejným polím v hodnotách viditelných modelu COM'
+title: 'CA1413: Vyhněte se neveřejným polím v typech hodnot viditelných modulem COM'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dab50ec607e92222e0d14ed8f6afeeeb1515e61b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78152c3ee5825c34ea47e2267370720e698212dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912007"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996464"
 ---
-# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Vyhněte se neveřejným polím v hodnotách viditelných modelu COM
+# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Vyhněte se neveřejným polím v typech hodnot viditelných modulem COM
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "53912007"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Hodnotový typ, který je označen jako viditelný pro Model COM (Component Object) deklaruje instanci neveřejné pole.
 
 ## <a name="rule-description"></a>Popis pravidla

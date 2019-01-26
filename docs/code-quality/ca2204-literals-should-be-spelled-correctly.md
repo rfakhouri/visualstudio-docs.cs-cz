@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b0bbcbb6-c92d-4c14-8ef7-9c8b38c791a6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e23ab1c1c245a03e88b05fb15259193bb508b69a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62ad30516720a843d519a9e514cd325a957b3cff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017120"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literály by měly být zadány správně
 
@@ -31,7 +31,7 @@ ms.locfileid: "53944308"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Řetězcový literál je předán jako argument pro parametr lokalizovatelné nebo lokalizovatelné vlastnosti a řetězec obsahuje jedno nebo více slov, která knihovna kontroly pravopisu společnosti Microsoft nerozpoznala.
 

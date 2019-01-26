@@ -1,5 +1,5 @@
 ---
-title: 'CA2215: Metody Dispose by měly volat uvolnění třídy base'
+title: 'CA2215: Metody Dispose by měly volat uvolnění základní třídy'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8531bfd8407415aa1868fb5e1f633be442ce9bc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84e1ef38627d0e0ec06085f062dc59b97fb52dbc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032202"
 ---
-# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Metody Dispose by měly volat uvolnění třídy base
+# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Metody Dispose by měly volat uvolnění základní třídy
 
 |||
 |-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "53844220"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ, který implementuje <xref:System.IDisposable?displayProperty=fullName> je odvozen z typu, který také implementuje <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Nevolá metodu ze dědičné typu <xref:System.IDisposable.Dispose%2A> metoda nadřazeného typu.
 
 ## <a name="rule-description"></a>Popis pravidla

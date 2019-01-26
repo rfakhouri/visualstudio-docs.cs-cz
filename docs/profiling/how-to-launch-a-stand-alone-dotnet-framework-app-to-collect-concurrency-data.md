@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1525b7f1c8a69c7bf50aa1cf7caefa52f955a748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60f98f1f31bdc50c17fdf4bda3a856bfa0bab843
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953131"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023925"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem ke shromažďování dat souběžnosti pomocí příkazového řádku
 Toto téma popisuje způsob používání nástrojů příkazového řádku balíku nástrojů pro profilaci sady [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ke spuštění samostatné (klientské) aplikace rozhraní .NET Framework a shromažďování dat procesu a souběžnosti vláken.  
@@ -40,8 +40,8 @@ Toto téma popisuje způsob používání nástrojů příkazového řádku bal�
      | | |
      |-------------------------------------| - |
      | **/Start:Concurrency** | Umožňuje shromažďovat kolize prostředků a data spouštění vlákna. |
-     | **/Start:Concurrency resourceonly** | Umožňuje shromažďovat pouze data kolize prostředků. |
-     | **/Start:Concurrency threadonly** | Umožňuje shromažďovat pouze data spouštění vlákna. |
+     | **/start:concurrency,resourceonly** | Umožňuje shromažďovat pouze data kolize prostředků. |
+     | **/start:concurrency,threadonly** | Umožňuje shromažďovat pouze data spouštění vlákna. |
 
 
    - [/Output](../profiling/output.md)**:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění souboru dat profilování (.vsp).  

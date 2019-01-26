@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23e57e8bbd87f365ce1c8dcaf1d420059e16cf21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922017"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027916"
 ---
 # <a name="lib-task"></a>LIB – úloha
 Zabalí nástroj Správce 32bitové Microsoft knihovny *lib.exe*. Správce knihovny vytváří a spravuje knihovnu objektových souborů Common Object File Format (COFF). Správce knihovny můžete vytvořit soubory exportu a importu knihovny odkaz exportovat definice. Další informace najdete v tématu [LIB odkaz](/cpp/build/reference/lib-reference) a [spuštění knihovny LIB](/cpp/build/reference/running-lib).  
@@ -54,10 +54,10 @@ Zabalí nástroj Správce 32bitové Microsoft knihovny *lib.exe*. Správce kniho
 |**MinimumRequiredVersion**|Volitelné **řetězec** parametru.<br /><br /> Určuje minimální požadovanou verzi subsystému. Zadejte čárkami oddělený seznam desetinná čísla v rozsahu 0 až 65535.|  
 |**ModuleDefinitionFile**|Volitelné **řetězec** parametru.<br /><br /> Určuje název souboru definice modulu (*.def*).<br /><br /> Tento parametr **def** možnost *lib.exe* , která přijímá `filename` argument.|  
 |**Název**|Volitelné **řetězec** parametru.<br /><br /> Při vytváření knihovny importu, určuje název knihovny DLL pro kterou má být sestaven knihovny importu.<br /><br /> Tento parametr **/NAME** možnost *lib.exe* , která přijímá `filename` argument.|  
-|**Výstupní soubor**|Volitelné **řetězec** parametru.<br /><br /> Přepíše výchozí název a umístění programu, který *lib.exe* vytvoří.<br /><br /> Tento parametr **/OUT** možnost *lib.exe* , která přijímá `filename` argument.|  
+|**OutputFile**|Volitelné **řetězec** parametru.<br /><br /> Přepíše výchozí název a umístění programu, který *lib.exe* vytvoří.<br /><br /> Tento parametr **/OUT** možnost *lib.exe* , která přijímá `filename` argument.|  
 |**RemoveObjects**|Volitelné **String []** parametru.<br /><br /> Vynechá zadaný objekt z výstupní knihovně. *Lib.exe* vytvoří výstupní knihovnu tak, že zkombinuje všechny objekty (ať už v souborech objektů nebo knihoven) a poté odstraní všechny objekty, které jsou určeny tuto možnost.<br /><br /> Tento parametr **/REMOVE** možnost *lib.exe* , která přijímá `membername` argument.|  
 |**Zdroje**|Vyžaduje `ITaskItem[]` parametru.<br /><br /> Určuje seznam zdrojových souborů, oddělené mezerami.|  
-|**Subsystém**|Volitelné **řetězec** parametru.<br /><br /> Určuje prostředí pro spustitelný soubor. Volba subsystému ovlivňuje symbol vstupního bodu nebo funkci vstupního bodu.<br /><br /> Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.<br /><br /> -   **Konzola** -   **/Subsystem: Console**<br />-   **Windows** -   **/Subsystem: Windows**<br />-   **Nativní** - **souboru**<br />-   **Aplikace EFI** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **Ovladač spouštěcí služby EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **PAMĚŤ ROM EFI** - **/SUBSYSTEM:EFI_ROM**<br />-   **Modul Runtime EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Další informace najdete v tématu [/Subsystem (určení subsystému)](/cpp/build/reference/subsystem-specify-subsystem).|  
+|**Subsystém**|Volitelné **řetězec** parametru.<br /><br /> Určuje prostředí pro spustitelný soubor. Volba subsystému ovlivňuje symbol vstupního bodu nebo funkci vstupního bodu.<br /><br /> Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.<br /><br /> -   **Console** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Nativní** - **souboru**<br />-   **Aplikace EFI** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **PAMĚŤ ROM EFI** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Další informace najdete v tématu [/Subsystem (určení subsystému)](/cpp/build/reference/subsystem-specify-subsystem).|  
 |**SuppressStartupBanner**|Volitelné **logická** parametru.<br /><br /> Pokud `true`, zabraňuje zobrazování čísel zprávu o autorských právech a verze při spuštění úlohy.<br /><br /> Další informace najdete v tématu **/nologo** možnost v [spuštění knihovny LIB](/cpp/build/reference/running-lib).|  
 |**TargetMachine**|Volitelné **řetězec** parametru.<br /><br /> Určuje cílovou platformu pro program nebo knihovnu DLL.<br /><br /> Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X 64**<br />-   **MachineX86** - **/MACHINE:X 86**<br /><br /> Další informace najdete v tématu [/Machine (zadání cílové platformy)](/cpp/build/reference/machine-specify-target-platform).|  
 |**TrackerLogDirectory**|Volitelné **řetězec** parametru.<br /><br /> Určuje adresář protokolu sledovacího modulu.|  

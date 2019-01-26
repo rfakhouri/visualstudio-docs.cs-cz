@@ -9,15 +9,15 @@ dev_langs:
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021985"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalace multiplatformní vývoj mobilních aplikací pomocí C++
 
@@ -128,7 +128,7 @@ Přečtěte si následující informace a tyto odkazy použít ruční instalace
 
    Pokud chcete používat některé z emulátorů Androidu, které jsou součástí sady Android SDK, musíte nainstalovat volitelné ovladače Intel HAXM. Budete muset odebrat funkce technologie Hyper-V z Windows úspěšně instalace ovladače Intel HAXM. Je nutné obnovit funkci Hyper-V použít emulátory Windows Phone a Microsoft Visual Studio Emulator for Android. Další informace najdete v tématu [hardwarovou akceleraci emulátoru Androidu](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
-- [Sada Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)
 
    Ve výchozím nastavení, instalační program umístí sady Android NDK *C:\ProgramData\Microsoft\AndroidNDK*. Můžete stáhnout a nainstalovat sadu Android NDK znovu a aktualizujte instalační sada NDK.
 

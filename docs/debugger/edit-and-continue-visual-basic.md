@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3e1305a67fa4347a8b39b677c5be31ada257b65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d36ab4ed41b790fd43cfe97c67f39b07782ab0ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838018"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016505"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Upravit a pokračovat (Visual Basic)
 Upravit a pokračovat je funkce pro [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] ladění, která umožňuje změnit kód, zatímco je spuštěn v režimu pozastavení. Po použití úprav kódu, můžete pokračovat v provádění kódu pomocí nové úpravy na místě a vidět její účinek.  
@@ -45,7 +45,7 @@ Upravit a pokračovat je funkce pro [!INCLUDE [vbprvb](../code-quality/includes/
  Témata v této části poskytují další podrobnosti o tom, jak používat tuto funkci a jaké druhy změny nejsou povoleny.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: Použití úprav v režimu pozastavení pomocí operace upravit a pokračovat](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Postupy: Použití úprav v režimu pozastavení operace Upravit a pokračovat](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Vysvětluje, jak použít kód úprav v režimu pozastavení.  
   
  [Podporované změny kódu (C# a Visual Basic)](../debugger/supported-code-changes-csharp.md)   

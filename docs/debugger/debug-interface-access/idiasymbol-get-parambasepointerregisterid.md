@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_parambasepointerregisterid – | Dokumentace Microsoftu
+title: IDiaSymbol::get_paramBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f5caeb4-5c88-4054-bf8b-50d34bbbf8c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd02fde67db2b72d34df9d04a16ebc9c80d197e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4e9ef45c3b376aac3252e35bfb3e6c95eac62a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014900"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 Načte ID do registru, který obsahuje základní ukazatele na parametry. Použít, když [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) je nastavena na `SymTagFunction`.  
@@ -43,11 +43,11 @@ HRESULT get_paramBasePointerRegisterId ( 
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

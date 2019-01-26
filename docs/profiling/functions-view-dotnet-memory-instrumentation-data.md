@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b578fd091b0b7473eb9e09e8c1eb13510c9e1b84
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: b00b9f8b455e12a3a851e82b40ef614ed44146f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53962331"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030090"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Zobrazení funkcí – data instrumentace paměti .NET
 Zobrazení funkcí .NET profilování data o přidělování paměti, která byla shromážděna pomocí metody instrumentace seznam funkcí, které přidělené paměti během spuštění profilování. Řádek funkce sestav, velikost a počet přidělení a dat časování pro funkci.  

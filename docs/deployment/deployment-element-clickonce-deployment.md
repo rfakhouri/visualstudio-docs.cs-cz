@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3165337a7386d90d674b42e7fd7e6f29822b284
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55035a214d98abd262f85c29c55bd633c0b35505
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906927"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023717"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;nasazení&gt; – element (nasazení ClickOnce)
 Určuje atributy použité pro nasazení aktualizací a vystavení systému.  
@@ -74,7 +74,7 @@ Určuje atributy použité pro nasazení aktualizací a vystavení systému.
 ## <a name="subscription"></a>předplatné  
  Volitelné. Obsahuje `update` elementu. `subscription` Prvek nemá žádné atributy. Pokud `subscription` element neexistuje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se nikdy vyhledat aktualizace. Pokud `install` atribut `deployment` element je `false`, `subscription` prvek je ignorován, protože [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci, která se spustí ze sítě, vždy používá nejnovější verzi.  
 
-## <a name="update"></a>Aktualizace  
+## <a name="update"></a>update  
  Povinný parametr. Tento element je podřízeným prvkem `subscription` elementu a obsahuje buď `beforeApplicationStartup` nebo `expiration` elementu. `beforeApplicationStartup` a `expiration` nelze zadat současně ve stejném manifestu nasazení.  
 
  `update` Prvek nemá žádné atributy.  

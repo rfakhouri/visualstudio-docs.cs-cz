@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ba1314f23ecc2d9166aac6fdc5d722a4fefe95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5628c535e14cc610b8408f7f79a468816f89ec59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866566"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991798"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurace upozornění v jazyce Visual Basic
 
@@ -123,6 +123,6 @@ ms.locfileid: "53866566"
 - [Typy chyb](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Try... Catch... Finally – příkaz](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
-- [/ warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
+- [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
 - [Stránka kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Upozornění kompilátoru, které jsou ve výchozím nastavení vypnuta](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

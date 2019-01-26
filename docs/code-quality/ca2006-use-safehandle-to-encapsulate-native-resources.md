@@ -1,5 +1,5 @@
 ---
-title: 'CA2006: Použijte SafeHandle pro zapouzdření nativních prostředků'
+title: 'CA2006: Použijte SafeHandle k zapouzdření nativních prostředků'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a522168250d1b62f93222201f440f53efd992f16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9940d200c2b1c78df7a8ce69393f077b282de84a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912351"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986446"
 ---
-# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Použijte SafeHandle pro zapouzdření nativních prostředků
+# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Použijte SafeHandle k zapouzdření nativních prostředků
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53912351"
 |Kategorie|Microsoft.Reliability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Spravovat kód používá <xref:System.IntPtr> pro přístup k nativní prostředky.
 
 ## <a name="rule-description"></a>Popis pravidla

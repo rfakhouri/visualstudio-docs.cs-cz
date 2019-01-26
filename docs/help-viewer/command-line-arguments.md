@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e25e213f168739f6fe98d60a6ffbf00237a970b6
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 83482a7bd3529d6efc4fed1f738f7e11205707cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378122"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023821"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty příkazového řádku pro Help Content Manager
 
@@ -50,11 +50,11 @@ Následující tabulka definuje přepínače a argumenty, které můžete použ�
 |/ catalogname|Ano|Určuje název katalogu obsahu.|
 |/ Locale|Ne|Určuje národní prostředí produktu, který slouží k zobrazení a správě obsahu pro aktuální instanci Help viewer. Například zadejte `EN-US` pro americkou angličtinu.<br /><br /> Pokud nezadáte národní prostředí, se používá národní prostředí operačního systému. Pokud nelze určit toto národní prostředí, `EN-US` se používá.<br /><br /> Pokud zadáte národní prostředí, která není platná, je zaznamenána chybová zpráva v protokolu událostí.|
 |/e|Ne|Zvýší oprávnění správce obsahu nápovědy k oprávnění pro správu, pokud má aktuální uživatel přihlašovací údaje pro správu.|
-|/ sourceuri|Ne|Určuje adresu URL, ze kterého je obsah nainstalován (API služby) nebo cesta k souboru instalace obsahu (*.msha*). Adresa URL může odkazovat do skupiny produktů (uzel nejvyšší úrovně) nebo na produktové knihy (uzel úrovně listu) v koncovém bodu ve stylu Visual Studio 2010. Nemusíte zahrnovat lomítko (/) na konci adresy URL. Pokud zahrnete koncové lomítko, bude zpracováno odpovídajícím způsobem.<br /><br /> Zaznamenána chybová zpráva se v případě protokolu Pokud zadáte soubor, který není nalezen, není platný nebo není přístupný, nebo pokud není k dispozici připojení k Internetu, nebo je přerušeno během správy obsahu.|
+|/sourceURI|Ne|Určuje adresu URL, ze kterého je obsah nainstalován (API služby) nebo cesta k souboru instalace obsahu (*.msha*). Adresa URL může odkazovat do skupiny produktů (uzel nejvyšší úrovně) nebo na produktové knihy (uzel úrovně listu) v koncovém bodu ve stylu Visual Studio 2010. Nemusíte zahrnovat lomítko (/) na konci adresy URL. Pokud zahrnete koncové lomítko, bude zpracováno odpovídajícím způsobem.<br /><br /> Zaznamenána chybová zpráva se v případě protokolu Pokud zadáte soubor, který není nalezen, není platný nebo není přístupný, nebo pokud není k dispozici připojení k Internetu, nebo je přerušeno během správy obsahu.|
 |/ Vendor|Ne|Určuje dodavatele obsahu produktu, který bude odebrán (například `Microsoft`). Výchozí argument pro tento přepínač je Microsoft.|
 |argumentů|Ne|Určuje produktový název knih, které se odeberou. Název produktu je identifikován v *helpcontentsetup.msha* nebo *books.html* soubory, které byly dodány s obsahem. Najednou můžete odebrat knihy pouze z jednoho produktu. Chcete-li odebrání knihy z více produktů, je nutné provést více instalací.|
 |/ booklist|Ne|Určuje názvy knih, které mají být spravovány, oddělené mezerami. Hodnoty musí odpovídat formálním názvům, jak je uvedeno na instalačním médiu.<br /><br /> Pokud nezadáte tento argument, jsou nainstalované všechny doporučené knihy pro daný produkt v/sourceuri.<br /><br /> Obsahuje-li název knihy jednu nebo více mezer, uzavřete jej mezi dvojité uvozovky (") tak, aby seznam správně oddělován.<br /><br /> Pokud zadáte parametr/sourceuri, který není platný nebo není dostupný, budou zaznamenány chybové zprávy.|
-|/ skuid|Ne|Určuje, skladovou jednotku (SKU) produktu ze zdroje instalace, filtrů a knih, které identifikuje přepínač/sourceuri.|
+|/skuId|Ne|Určuje, skladovou jednotku (SKU) produktu ze zdroje instalace, filtrů a knih, které identifikuje přepínač/sourceuri.|
 |/Membership|Ne|-   **Minimální**– nainstaluje minimální sadu obsahu nápovědy na základě jednotky SKU, určíte pomocí přepínače/skuid. Mapování mezi SKU a sadou obsahu je přístupný v rozhraní API služby.<br />-   **Doporučené**– nainstaluje sadu Doporučené knihy pro skladovou Položku, kterou můžete určit pomocí argumentu/skuid. Zdroj instalace je rozhraní API služby nebo *. MSHA*.<br />-   **Úplné**– nainstaluje celou sadu knih pro skladovou Položku, kterou můžete určit pomocí argumentu/skuid. Zdroj instalace je rozhraní API služby nebo *. MSHA*.|
 |/ locationpath|Ne|Určuje výchozí složku pro místní obsah nápovědy. Tento přepínač musí používat jenom k instalaci nebo přesunutí obsahu. Pokud zadáte tento přepínač, musíte zadat také/silent přepnout.|
 |/silent|Ne|Nainstaluje nebo odebere obsah nápovědy bez výzvy pro uživatele nebo bez zobrazení uživatelského rozhraní, včetně ikonu v oznamovací oblasti. Výstup je zaznamenán v souboru *% Temp %* adresáře. **Důležité:**  Pro tichou instalaci obsahu, je nutné použít digitálně podepsané *.cab* soubory není *.mshc* soubory.|

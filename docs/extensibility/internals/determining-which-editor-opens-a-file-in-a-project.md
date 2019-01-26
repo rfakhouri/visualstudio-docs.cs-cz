@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b61aa726a7088d08db6d759a9835816dcaf826a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea1e91ef3f3ea7bdbefaf0cd13f9cac742b17701
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941057"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014936"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Určení, které editor otevře soubor v projektu
 Když uživatel otevře soubor v projektu, prostředí prochází proces dotazování, nakonec otevřete příslušné editoru nebo návrháře pro tento soubor. Počáteční postup náhradník prostředí je stejný pro standardních a vlastních editorů. Prostředí používá celou řadu kritéria při dotazování které editor k použití pro otevření souboru a sady VSPackage se muset domluvit se prostředí během tohoto procesu.  

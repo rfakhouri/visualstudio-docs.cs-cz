@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9893ad01-54af-499f-85a6-9d1cfe6eb640
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f361369aef97aaa894a1a1929149356d3177cc3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d82ee388ff6325a92b8e82a385ace727a754ad2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890732"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017107"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Postupy: Krokování s vnořením služeb WCF
 V [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], můžete krokovat s vnořením služeb WCF. Pokud je služba WCF v rámci stejného [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení jako klient, může dosažení zarážky ve službě WCF.  
@@ -43,4 +43,4 @@ V [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], můžet
 ## <a name="see-also"></a>Viz také  
  [Ladění služeb WCF](../debugger/debugging-wcf-services.md)   
  [Omezení ladění WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Postupy: Ladění služby WCF v místním prostředí](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+ [Postupy: Ladění služby WCF s vlastním hostováním](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
