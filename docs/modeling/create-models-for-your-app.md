@@ -19,15 +19,15 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5a562b267b630e2a0c53b90072c2dfde62f085b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942681"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978877"
 ---
 # <a name="create-models-for-your-app"></a>Vytváření modelů pro aplikaci
 
@@ -37,7 +37,7 @@ Které verze sady Visual Studio podporovat každý typ diagramu najdete v témat
 
 K vizualizaci architektury systému nebo existující kód, vytvořte následující diagramy:
 
-|**Diagram**|**Ukazuje**|
+|**Diagram**|**Shows**|
 |-|-|
 |[Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)|Základní architektura systému|
 |Mapy kódu<br /><br /> [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Závislosti a jiné vztahy v existujícím kódu|

@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f36a4a7019b0332845073c8c3e8e962dc23e2f83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949466"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034633"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Klávesové zkratky (HTML a JavaScript)
   
@@ -41,7 +41,7 @@ ms.locfileid: "53949466"
 |------------|--------------|  
 |Spuštění příkazu konzoly|Enter|  
 |Vymazat konzolu|Esc|  
-|Přepínání mezi režimem jedním řádkem a více řádky|Ctrl + Alt + M|  
+|Přepínání mezi režimem jedním řádkem a více řádky|Ctrl+Alt+M|  
   
 ## <a name="dom-explorer-shortcuts"></a>Klávesové zkratky Průzkumníka modelu DOM  
  V Průzkumníku modelu DOM použijte tyto klávesové zkratky.  

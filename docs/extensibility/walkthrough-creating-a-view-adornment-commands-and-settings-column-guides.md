@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958735"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947403"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Průvodce: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)
 Můžete rozšířit editoru textu nebo kódu sady Visual Studio s příkazy a zobrazit důsledky. V tomto článku se dozvíte, jak začít pracovat s funkcí oblíbené rozšíření, vodítka sloupců. Vodítka sloupců jsou vizuálně světla čáry dekorace pro zobrazení textového editoru vám pomohou při správě kód do určitého sloupce šířky. Konkrétně formátovaný kódu může být důležité pro ukázky zahrnout do dokumentů, blogy, nebo zpráv o chybách.
@@ -318,7 +318,7 @@ namespace ColumnGuides
 
 ```
 
-Většina tento kód vytvoří a analyzuje formát nastavení: "RGB (\<int >,\<int >,\<int >) \<int >, \<int >;...".  Celých čísel na konci je založen na jedničce sloupce, ve kterém chcete vodítka sloupců. Rozšíření vodítka sloupců zachytí všechna nastavení v řetězci hodnotu jedno nastavení.
+Většina tento kód vytvoří a analyzuje formát nastavení: "RGB(\<int>,\<int>,\<int>) \<int>, \<int>, ...".  Celých čísel na konci je založen na jedničce sloupce, ve kterém chcete vodítka sloupců. Rozšíření vodítka sloupců zachytí všechna nastavení v řetězci hodnotu jedno nastavení.
 
 Existují některé části kódu, které stojí za to, zvýraznění. Následující řádek kódu získá spravovaná obálka sady Visual Studio pro nastavení úložiště. Ve většině případů to abstrahuje přes registru Windows, ale toto rozhraní API je nezávislý na mechanismus úložiště.
 

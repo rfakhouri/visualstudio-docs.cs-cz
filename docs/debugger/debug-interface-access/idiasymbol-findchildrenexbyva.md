@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 29080009-36e4-4697-acd7-50f2e3e1bf1b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b9a3f790acd7a285468810f981fd7e0210563eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b5dd6ab6df05d4b7e119e4b1ab6f27a93e5e981
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931139"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920758"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 Načte podřízené objekty daného symbolu, které jsou platné v zadané virtuální adresy.  
@@ -57,15 +57,15 @@ HRESULT findChildrenExByVA ( 
  Lokální symboly, které jsou vráceny zahrnovat informace o rozsahu za provozu.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md)   
- [Idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md)   
+ [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [Idiasession::findchildren –](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions – výčet](../../debugger/debug-interface-access/namesearchoptions.md)

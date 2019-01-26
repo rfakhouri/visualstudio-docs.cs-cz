@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 844d5d7f2dce19af29afb2d30daa9ee0290115f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 774ea527cb34b1be1a27bed2904788498390ec10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832710"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968879"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 Vrátí délku objektu rozsah adres, ve kterém je platná místního symbolu.  
@@ -43,11 +43,11 @@ HRESULT get_liveRangeLength ( 
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

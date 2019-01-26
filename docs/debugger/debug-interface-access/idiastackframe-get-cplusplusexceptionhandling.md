@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f2631820-c986-40ca-b61e-230d7a9c426c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98047835046342731d5c04f0370b5b1be37ac8c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a342fc0c6b63cd518a41210f46dc8c893f36b2eb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889499"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938286"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 Získá příznak, který určuje, zda zpracování výjimek jazyka C++ je v platnosti.  
@@ -43,5 +43,5 @@ HRESULT get_cplusplusExceptionHandling ( 
  Chcete-li zjistit, zda strukturované zpracování výjimek je v platnosti, zavolejte [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) metody.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiastackframe –](../../debugger/debug-interface-access/idiastackframe.md)   
+ [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
  [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)

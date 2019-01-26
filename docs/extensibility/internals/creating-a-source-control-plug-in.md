@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8b6578923134d1aaaeb2c60eb118ab66e71d27e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03b8f7a02c0332a3f75131ddfaf2e021f4a0c65c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888085"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035364"
 ---
 # <a name="create-a-source-control-plug-in"></a>Vytvoření modulu plug-in správy zdrojového kódu
 Visual Studio SDK poskytuje prostředky, které vám umožní přidat možnost zdrojového ovládacího prvku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). To vám umožní používat jakékoli knihovnu DLL modulu plug-in, který splňuje pomocí rozhraní API modulu Plug-in zdroje ovládacího prvku uvedených v této dokumentaci.  

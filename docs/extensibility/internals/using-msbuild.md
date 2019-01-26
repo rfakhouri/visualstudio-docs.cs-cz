@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9ab4a6a6591c4a45755b0a9f3682ac5e40c676
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fc28f539f6240ad8b5f2da5c356fcc244ac6f61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836764"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042267"
 ---
 # <a name="using-msbuild"></a>Použití nástroje MSBuild
 Nástroj MSBuild poskytuje dobře definovaný a rozšiřitelné formátu XML pro vytvoření souborů projektu, která plně popisují položky projektu sestavit úlohy sestavení a konfigurace sestavení.  
@@ -55,5 +55,5 @@ Nástroj MSBuild poskytuje dobře definovaný a rozšiřitelné formátu XML pro
   
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace nástroje MSBuild](../../msbuild/msbuild-reference.md)   
- [Nástroj MSBuild](../../msbuild/msbuild.md)   
+ [MSBuild](../../msbuild/msbuild.md)   
  [Vlastní nástroje](../../extensibility/internals/custom-tools.md)

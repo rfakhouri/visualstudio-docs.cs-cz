@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 45005ad0-8b29-4cde-9d33-6bef72f6e463
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfcf57c7bba3774e97990703384b6d4c04694b74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 997d330cc6ba2084ea01e9b661a3daac9497a2d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879595"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925134"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 Načte proměnné klasifikace dat symbolu.  
@@ -48,5 +48,5 @@ HRESULT get_dataKind ( 
 |Verze:|V7.0 DIA SDK|  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [DataKind – výčet](../../debugger/debug-interface-access/datakind.md)

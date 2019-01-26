@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5923efe859f6fe04468e6659d8df46b8b3d2a1cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986723"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981126"
 ---
 # <a name="walkthrough-display-signature-help"></a>Průvodce: Zobrazení vyhrazené nápovědy
 Signaturám (označované také jako *informace o parametru*) zobrazí v popisku podpis metody, když uživatel zadá znak start seznamu parametrů (obvykle Levá závorka). Jako parametr a oddělovač parametr (obvykle čárku) jsou zadány, popisek se aktualizuje a zobrazí další parametr tučným písmem. Pomoc při podpisu můžete definovat takto: v rámci služby jazyka, definovat vlastní příponu názvu souboru a typu obsahu a zobrazení pomoc při podpisu pro právě tento typ nebo zobrazit pomoc při podpisu pro existující typ obsahu (například "text"). Tento návod ukazuje, jak zobrazit nápovědu k podpisu pro typ obsahu "text".  
@@ -43,7 +43,7 @@ Signaturám (označované také jako *informace o parametru*) zobrazí v popisku
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Sestavení Microsoft.VisualStudio.OLE.Interop  
+     Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   

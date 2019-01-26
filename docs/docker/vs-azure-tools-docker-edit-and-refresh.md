@@ -3,19 +3,19 @@ title: Ladění aplikací v místním kontejneru Dockeru | Dokumentace Microsoft
 description: Zjistěte, jak upravit aplikaci, která běží v místním kontejneru Dockeru, aktualizujte kontejneru prostřednictvím operace Edit and aktualizace a nastavení ladění zarážky
 services: container-service
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.service: multiple
 ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: 784fd5fd4459c77e757cc501ff5f62bce13d5282
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3f78476cc97cad90460d535f04759211540fc8aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739845"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962973"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Ladění aplikací v místním kontejneru Dockeru
 ## <a name="overview"></a>Přehled

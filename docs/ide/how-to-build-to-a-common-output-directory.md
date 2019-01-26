@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: sestavení do běžného výstupního adresáře'
+title: 'Postupy: Sestavení do společného výstupního adresáře'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -11,31 +11,31 @@ helpviewer_keywords:
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f45890224684ff2e4c411875ab61bdfb698cfb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea36368a60fc08d6a818d1ca1e66cfb92d814478
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942042"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030766"
 ---
-# <a name="how-to-build-to-a-common-output-directory"></a>Postupy: sestavení do běžného výstupního adresáře
+# <a name="how-to-build-to-a-common-output-directory"></a>Postupy: Sestavení do společného výstupního adresáře
 
-Ve výchozím nastavení [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sestavení jednotlivých projektů v řešení ve vlastní složce uvnitř řešení. Výstupní cesta sestavení projektů vynutit všechny výstupy umístit do stejné složky, můžete změnit.
+Ve výchozím nastavení [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sestavení jednotlivých projektů v řešení ve vlastní složce v řešení. Můžete změnit výstupní cesta sestavení projektů přinutit všechny výstupy budou umístěny ve stejné složce.
 
-## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Umístit všechna řešení výstupy v společný adresář
+## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Umístit všechna řešení výstupy společný adresář
 
 1.  Klikněte na jeden projekt v řešení.
 
 2.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-3.  V závislosti na typu projektu, klikněte na buď **zkompilovat** kartě nebo **sestavení** kartě a nastavte **výstupní cesta** do složky chcete použít pro všechny projekty v řešení.
+3.  V závislosti na typu projektu, klikněte na buď **kompilaci** kartu nebo **sestavení** kartu a nastavit **výstupní cesta** do složky pro všechny projekty v řešení.
 
-4.  Opakujte kroky 1 – 3 pro všechny projekty v řešení.
+4.  Opakujte kroky 1-3 pro všechny projekty v řešení.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)
 - [Postupy: Změna výstupního adresáře sestavení](../ide/how-to-change-the-build-output-directory.md)

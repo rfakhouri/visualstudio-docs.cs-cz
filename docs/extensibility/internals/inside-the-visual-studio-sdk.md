@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821142"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978266"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
 Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, včetně architektury sady Visual Studio, komponenty, služby, schémata, nástroje a podobně.
@@ -102,7 +102,7 @@ Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, vč
 ## <a name="properties-and-options"></a>Vlastnosti a možnosti
  **Vlastnosti** okně zobrazí vlastnosti jednoho nebo více vybraných položek: [Rozšíření vlastností](../../extensibility/internals/extending-properties.md) možnosti stránky obsahují sadu možností, které se týkají konkrétní součástí, například programovacím jazyce nebo VSPackage: [Možnosti a stránky možnosti](../../extensibility/internals/options-and-options-pages.md). Nastavení jsou obecně související s Uživatelským rozhraním funkce, které můžete importovat a exportovat: [Podpora pro uživatelská nastavení](../../extensibility/internals/support-for-user-settings.md).
 
-## <a name="visual-studio-services"></a>Služby Visual Studio
+## <a name="visual-studio-services"></a>Visual Studio Services
  Služba obsahuje konkrétní sadu rozhraní pro součásti využívají. Visual Studio poskytuje sada služeb, které mohou využívat všechny komponenty, včetně rozšíření. Například služby Visual Studio umožňují okna nástrojů zobrazený nebo skrytý dynamicky, povolení přístupu k nápovědě, stavový řádek nebo události uživatelského rozhraní. Editor sady Visual Studio také poskytuje služby, které lze importovat rozšířeními editoru. Další informace najdete v tématu [Using a poskytování služeb](../../extensibility/using-and-providing-services.md).
 
 ## <a name="debugger"></a>Ladicí program

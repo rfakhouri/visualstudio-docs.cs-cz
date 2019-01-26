@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974250"
 ---
 # <a name="t4-template-directive"></a>T4 – direktiva Template
 
@@ -36,7 +36,7 @@ Příklad:
 `compilerOptions="optimize+"`
 
 Platné hodnoty:
- 
+
 Všechny platné parametry kompilátoru.
 
 U šablon běhu (předzpracovaných) se ignoruje.
@@ -46,11 +46,11 @@ Tyto možnosti se použijí v případě, šablona byla převedena do [!INCLUDE[
 ## <a name="culture-attribute"></a>Atribut culture
 
 Příklad:
- 
+
 `culture="de-CH"`
 
 Platné hodnoty:
- 
+
 "", invariantní jazyková verze, která je výchozí hodnotou.
 
 Jazyková verze vyjádřená jako řetězec ve formátu xx-XX. Příklad: en US, ja-JP, de-CH, de-DE. Další informace naleznete v tématu <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 Platné hodnoty:
- 
+
 `true`
- 
+
 `false` (výchozí)
- 
+
 Pokud `debug` atribut je `true`, bude soubor mezikódu obsahovat informace, které umožňují ladicímu programu přesněji určit pozici v šabloně, kde došlo k přerušení nebo výjimek.
 
 U šablon návrhu bude soubor mezikódu zapsán do vaší **% TEMP %** adresáře.
@@ -88,9 +88,9 @@ hostspecific="true"
 Platné hodnoty:
 
 `true`
- 
+
 `false` (výchozí)
- 
+
 `trueFromBase`
 
 Pokud nastavíte hodnotu tohoto atributu na `true`, vlastnost s názvem `Host` se přidá do třídy vygenerované textové šablony. Vlastnost je odkazem na hostitelský modul transformace a je deklarován jako <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Pokud jste definovali vlastního hostitele, lze jej přetypovat na typ vlastního hostitele.

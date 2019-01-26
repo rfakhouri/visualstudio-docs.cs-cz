@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f97e2392-22e1-48da-b7ce-ad94c8b684b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a5dfc19844ee084a03ecbf07070e7ba78fd8220
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7482481c2a57127c89e6313cf4dace855aabb18f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966635"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039784"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Zobrazení výčtu různých vloženého zdroje obsažené ve zdroji dat.  
@@ -106,15 +106,15 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::findinjectedsource –](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
  [Idiasession::getenumtables –](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [Idiapropertystorage –](../../debugger/debug-interface-access/idiapropertystorage.md)   
+ [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

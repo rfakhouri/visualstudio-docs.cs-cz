@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca2e1c99a8897dc80b30d8e91e48554ddce7451b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5cdb38211cb41722feb4a63d5038647b8a245643
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947891"
 ---
 # <a name="msbuild-conditional-constructs"></a>Podmíněné konstrukty nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje mechanismus pro buď / nebo zpracování s [zvolit](../msbuild/choose-element-msbuild.md), [při](../msbuild/when-element-msbuild.md), a [jinak](../msbuild/otherwise-element-msbuild.md) elementy.  

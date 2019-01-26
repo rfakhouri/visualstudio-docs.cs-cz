@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895438"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967544"
 ---
 # <a name="manifest-to-code"></a>Manifest do kódu
 Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .imagemanifest Image služby Visual Studio a generuje soubory pro odkazování na image manifest hodnoty v jazyce C++, nebo soubor souhrnného C#, VB nebo .vsct soubory pro sadu Visual Studio rozšíření. Tento nástroj generuje obálky soubory, které lze použít pro žádost o Image z Image ve službě Visual Studio přímo, nebo pro předávání manifestu hodnot prostřednictvím rozhraní API, pokud kód zpracovává všechny své vlastní uživatelské rozhraní a vykreslování.  
@@ -28,13 +28,13 @@ Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .im
 ||||  
 |-|-|-|  
 |**Název přepínače**|**Poznámky**|**Požadované nebo volitelné**|  
-|Volba/manifest|Cesta k manifestu image chcete použít k vytvoření nebo aktualizaci kódu obálky.|Požadováno|  
+|/manifest|Cesta k manifestu image chcete použít k vytvoření nebo aktualizaci kódu obálky.|Požadováno|  
 |/Language|Jazyk, ve které se mají vygenerovat obálku kódu.<br /><br /> Platné hodnoty: CPP, C++, CS, CSharp, C#, VB nebo VSCT hodnoty jsou malá a velká písmena.<br /><br /> Pro jazyk VSCT možnost /monikerClass, /classAccess a/Namespace možnosti jsou ignorovány.|Požadováno|  
 |/imageIdClass|Název imageIdClass a přidružený soubor vytvořené nástrojem. Pro možnost jazyka C++ jsou generovány pouze soubory hlaviček.<br /><br /> Výchozí hodnota: \<Cesta k manifestu > \MyImageIds. \<Lang ext, přípona >|volitelná,|  
 |/monikerClass|Název monikerClass a přidružený soubor vytvořené nástrojem. Pro možnost jazyka C++ jsou generovány pouze soubory hlaviček. To se ignoruje pro VSCT jazyk.<br /><br /> Výchozí hodnota: \<Cesta k manifestu > \MyMonikers. \<Lang ext, přípona >|volitelná,|  
 |/classAccess|Modifikátor přístupu pro imageIdClass a monikerClass. Ujistěte se, že modifikátor přístupu je platná pro daný jazyk. To se ignoruje pro možnost VSCT jazyka.<br /><br /> Výchozí hodnota: Public|volitelná,|  
 |/ Namespace|Obor názvů definovaný v obálku kódu. To se ignoruje pro možnost VSCT jazyka. Buď '. 'nebo'::' je platný obor názvů oddělovače, bez ohledu na to možnost zvoleném jazyce.<br /><br /> Výchozí hodnota: MyImages|volitelná,|  
-|/ nologo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
+|/noLogo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
 |/?|Vytiskne informace nápovědy.|volitelná,|  
 |/help|Vytiskne informace nápovědy.|volitelná,|  
   
@@ -44,7 +44,7 @@ Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .im
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/namespace: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Poznámky  
   

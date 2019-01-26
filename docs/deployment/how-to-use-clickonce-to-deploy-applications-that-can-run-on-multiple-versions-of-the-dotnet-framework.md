@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 790864b44725287774b4ed3d0eefe2cfa9821179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943113"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975436"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Postupy: Použití ClickOnce k nasazení aplikací, které můžou běžet na více verzích rozhraní .NET framework
 Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET Framework pomocí nasazení technologie ClickOnce. To vyžaduje generovat a aktualizujte manifesty aplikace a nasazení.  
@@ -57,11 +57,11 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
   
     |Verze rozhraní .NET Framework|XML|  
     |----------------------------|---------|  
-    |4 klienta|\<Framework targetVersion = "4.0" profile = supportedRuntime "Client" = "4.0.30319" / >|  
-    |4 full|\<Framework targetVersion = "4.0" profile = "Úplné" supportedRuntime = "4.0.30319" / >|  
-    |3.5 klienta|\<Framework targetVersion = "3.5" profile = supportedRuntime "Client" = "2.0.50727" / >|  
-    |3.5 úplné|\<Framework targetVersion = "3.5" profile = "Úplné" supportedRuntime = "2.0.50727" / >|  
-    |3.0|\<Framework targetVersion = "3.0" supportedRuntime = "2.0.50727" / >|  
+    |4 klienta|\<framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />|  
+    |4 full|\<framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />|  
+    |3.5 klienta|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|  
+    |3.5 úplné|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|  
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Chcete-li změnit soubor app.config seznam kompatibilní verze modulu runtime rozhraní .NET Framework  
   
@@ -73,10 +73,10 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
   
     |Verze modulu runtime rozhraní .NET framework|XML|  
     |------------------------------------|---------|  
-    |4 klienta|\<supportedRuntime verze = sku "v4.0.30319" = ". NETFramework, verze = v4.0 profilu klienta = "/ >|  
-    |4 full|\<supportedRuntime verze = sku "v4.0.30319" = ". NETFramework, verze = v4.0 "/ >|  
-    |3.5 úplné|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 klienta|\<supportedRuntime verze = sku "v2.0.50727" = "Client" / >|  
+    |4 klienta|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|  
+    |4 full|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|  
+    |3.5 úplné|\<supportedRuntime version="v2.0.50727"/>|  
+    |3.5 klienta|\<supportedRuntime version="v2.0.50727" sku="Client"/>|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Chcete-li změnit manifestu aplikace k označení závislé sestavení jako sestavení rozhraní .NET Framework  
   

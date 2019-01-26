@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156a0614ad47839187056e4e0a24b5ee2f7ae2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3777be5701e9876352db41a5454d5e12668f6f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932114"
 ---
 # <a name="msbuild-response-files"></a>Soubory odezvy nástroje MSBuild
 Odpověď (*.rsp*) soubory jsou textové soubory, které obsahují *MSBuild.exe* přepínače příkazového řádku. Každý přepínač může být na samostatném řádku nebo všechny přepínače může být na jednom řádku. Komentář řádky jsou uvedena **#** symbol. **@** Přepínač slouží k předání jiný soubor odezvy *MSBuild.exe*.  

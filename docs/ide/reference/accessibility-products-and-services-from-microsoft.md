@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5eb85431916a844724e7bfd4b69a6d269045db5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886316"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034554"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby pro usnadnění přístupu od Microsoftu
 
@@ -69,7 +69,7 @@ Kromě toho můžete opatřit další publikace Microsoft od společnosti Learni
 
 |Sdružení Learning Ally|
 | - |
-|Silniční Roszel 20<br /><br /> Princetonské, NJ 08540<br /><br /> Learning Ally webu: [ http://www.learningally.org ](http://www.learningally.org/).|
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally webu: [ http://www.learningally.org ](http://www.learningally.org/).|
 
 Webové adresy se mohou měnit, takže je možné, že se nemůže připojit k stránkám nebo serverům.
 

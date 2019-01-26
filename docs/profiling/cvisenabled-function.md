@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c35fc883e53e1b1cc430724d87d8bcbd1bb32ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8af4da802ef0ad87831f2f67f47e8ffb66a969e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990040"
 ---
 # <a name="cvisenabled-function"></a>Cvisenabled – funkce
 Určuje, zda všechny relace má povoleno zadaného zprostředkovatele trasování událostí pro Windows.  
@@ -51,7 +51,7 @@ HRESULT CvIsEnabledEx(
  S_OK, pokud zprostředkovatel je aktuálně povoleno. S_FALSE, pokud zprostředkovatel je momentálně zakázané. Kód chyby v případě, že došlo k chybám. Použijte makro se nezdařilo pro kontrolu chybovou podmínku a pak vyhledejte hodnotu S_OK/S_FALSE.  
   
 ## <a name="requirements"></a>Požadavky  
- **Záhlaví:** *cvmarkers.h*  
+ **Header:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

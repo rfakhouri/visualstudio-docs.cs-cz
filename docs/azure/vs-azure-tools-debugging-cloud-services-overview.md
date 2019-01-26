@@ -2,7 +2,7 @@
 title: Možnosti pro ladění Azure cloud services | Dokumentace Microsoftu
 description: Ladění cloudové služby Azure
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -10,23 +10,23 @@ ms.date: 03/18/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 6f5676cb72e0d8f2c5c0b759270ba4cd1b104f46
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 43e866a6ee1a9d7e63d6e9fa85374d7efb972f9f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977844"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Různé způsoby ladění cloudové služby Azure
-Tento článek obsahuje odkazy na různé způsoby ladění cloudové služby Azure. 
+Tento článek obsahuje odkazy na různé způsoby ladění cloudové služby Azure.
 
 ## <a name="debugging-an-azure-cloud-service-in-visual-studio"></a>Ladění cloudové služby Azure v sadě Visual Studio
 Můžete ušetřit čas a peníze pomocí webu Azure compute emulátoru k ladění cloudové služby na místním počítači. Ladění služby místně, než ho nasadíte, můžete zlepšit výkon a spolehlivost bez nutnosti platit za výpočetní čas. Nicméně některé může dojít k chybám pouze v případě, že provozujete cloudovou službu v Azure. Povolením vzdáleného ladění při publikování služby a potom připojování ladicího programu k instanci role můžete ladit chyby, ke kterým dochází pouze v případě, že provozujete cloudovou službu v Azure. Další informace najdete v tématu [ladění cloudové služby na místním počítači](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer).
 
-## <a name="using-intellitrace"></a>Používání IntelliTrace 
+## <a name="using-intellitrace"></a>Používání IntelliTrace
 Pokud používáte Visual Studio Enterprise pro zápis role cílových rozhraní .NET Framework 4.5, můžete povolit IntelliTrace v době nasazení cloudové služby Azure ze sady Visual Studio. IntelliTrace poskytuje protokol, který vám pomůže s Visual Studio pro ladění vaší aplikace, jako kdyby byly spuštěné v Azure. Další informace najdete v tématu [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=623016).
 
-## <a name="remote-debugging"></a>Vzdálené ladění 
+## <a name="remote-debugging"></a>Vzdálené ladění
 Můžete povolit vzdálené ladění cloudových služeb v době, kdy nasadit cloudovou službu v sadě Visual Studio. Pokud budete chtít povolit vzdálené ladění pro nasazení, nainstaluje se na virtuálních počítačích, na kterých běží instance každé role vzdálené ladění. Tyto služby – například `msvsmon.exe` – nebudou mít vliv na výkon nebo způsobit dodatečné náklady. Další informace najdete v tématu [ladění cloudové služby v Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).
 
 ## <a name="next-steps"></a>Další kroky

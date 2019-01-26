@@ -13,15 +13,15 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89f39fd11e5f42a61fa322edddf83afef1d2fc4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7937ad591435c1b6b83e779abdddd995ee198a2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943075"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -143,7 +143,7 @@ Než týmy vrátí změny, ověří kód proti testům a návrhu spuštěním se
 
 Společnost dinner Now musí odhadnout náklady na splnění nového požadavku. To zčásti závisí na tom, jak moc tato změna ovlivní ostatní části systému. Aby pomohl ostatním pochopit, jeden z vývojářů aplikace večeře nyní z existujícího kódu vytvoří tyto mapy a diagramy:
 
-|**Mapování nebo diagramu**|**Ukazuje**|
+|**Mapování nebo diagramu**|**Shows**|
 |-|-|
 |*Mapy kódu*<br /><br /> Další informace:<br /><br /> - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />- [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)<br />- [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Závislosti a jiné vztahy v kódu.<br /><br /> Například web Dinner Now může začít kontrolou map kódu sestavení přehledné informace o sestavení a jejich závislosti. Mohou se ponořit do mapy pro prozkoumání oborů názvů a třídy v těchto sestaveních.<br /><br /> Společnost dinner Now může také vytváření map prozkoumat určité oblasti a další druhy vztahů v kódu. Používají Průzkumníka řešení najít a vybrat oblasti a vztahy, které je zajímají.|
 |*Diagram třídy založený na kódu*<br /><br /> Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Existující třídy v kódu|

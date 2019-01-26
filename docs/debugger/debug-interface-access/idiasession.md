@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d469ea89b7ef5f09296fce03fa10c47a7500e52e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7257301616c40735f31df3cd777e16e8cf0bd71c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923832"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026356"
 ---
 # <a name="idiasession"></a>IDiaSession
 Poskytuje kontext dotazu pro symboly ladění.  
@@ -110,18 +110,18 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Přehled](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [soubor EXE](../../debugger/debug-interface-access/exe.md)   
- [Idiaaddressmap –](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiadatasource –](../../debugger/debug-interface-access/idiadatasource.md)   
+ [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
+ [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Idiadatasource::opensession –](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
  [Idiasymbol::findchildren –](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [Dotazování na soubor .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

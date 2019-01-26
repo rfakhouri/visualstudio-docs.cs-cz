@@ -2,19 +2,19 @@
 title: Přiřazení licencí pro předplatná sady Visual Studio | Dokumentace Microsoftu
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Zjistěte, jak správci mohou přiřadit licence pro předplatitele
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dfec16161f6cd6b875b38738a9340e12d62f975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931230"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970120"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Přiřazení licencí na portálu správce předplatných sady Visual Studio
 
@@ -46,7 +46,7 @@ Tady je postup, chcete-li přiřadit licenci předplatného sady Visual Studio s
 
     Pokud chcete přidat odkaz poznámek k předplatnému, můžete k tomu, **přidat odkaz na** oddílu.
    > [!div class="mx-imgBorder"]
-   > ![Přidat poznámky odkaz na předplatné](media/add-subscriber-reference-notes.png) 
+   > ![Přidat poznámky odkaz na předplatné](media/add-subscriber-reference-notes.png)
 
     Když budete mít vyberou možnosti a zadávání dat pro odběratele, zvolte **přidat** v dolní části **přidat předplatitele** nabídka.
    > [!div class="mx-imgBorder"]
@@ -54,7 +54,7 @@ Tady je postup, chcete-li přiřadit licenci předplatného sady Visual Studio s
 
 4. Po přidání odběratele, E-mail s přiřazením automaticky se pošle na nový odběratel se další pokyny. Můžete kdykoli znovu odeslat E-mail s přiřazením tak odběratele vyberete a kliknete na **znovu odeslal** tlačítko v horní nabídce.
    > [!div class="mx-imgBorder"]
-   > ![Znovu poslat aktivační e-mail pro všechny uživatele nebo více uživatelů, pokaždé, když chcete](media/resend-subscriber-activation-emails.png) 
+   > ![Znovu poslat aktivační e-mail pro všechny uživatele nebo více uživatelů, pokaždé, když chcete](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Hromadné přiřazení
 
@@ -65,7 +65,7 @@ Tady je postup, chcete-li přiřadit licenci předplatného sady Visual Studio s
 2. Hromadné přiřazení používá šablonu aplikace Microsoft Excel k odeslání odběratele. V dialogovém okně nahrát několik předplatitelů klikněte na tlačítko **Stáhnout** stáhnout šablonu.
    > [!div class="mx-imgBorder"]
    > ![Stáhněte si šablonu v Excelu na načíst několik předplatitelů](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Kdykoli stáhněte nejnovější verzi této šablony. Pokud používáte starší verzi, hromadné načtení může selhat.
 

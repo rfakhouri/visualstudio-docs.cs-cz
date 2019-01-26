@@ -19,16 +19,16 @@ helpviewer_keywords:
 ms.assetid: 97cdd2a8-02a9-4a06-a5b1-c92b1e431979
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2759df7cc59f4d0167e1ef44dfb9cc65d16ba815
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867433"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043022"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Postupy: Vystoupení ze spravovaného kódu, pokud v okně zásobník volání chybějí nativní rámce
 
@@ -47,4 +47,4 @@ Pokud má váš kód nativní rámce, které jsou viditelné ve **zásobník vol
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Použijte okno zásobníku volání](../debugger/how-to-use-the-call-stack-window.md)
+- [Postupy: Použití okna Zásobník volání](../debugger/how-to-use-the-call-stack-window.md)

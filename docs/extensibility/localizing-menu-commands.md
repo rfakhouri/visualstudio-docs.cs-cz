@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27c12228de5a49d0b61cc61e5c1233343430b686
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 393cc1ea5835b66c18a9f4ca46b9f2ac0a88860a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031822"
 ---
 # <a name="localize-menu-commands"></a>Lokalizace příkazů nabídky
 Lokalizovaný text příkazů nabídky a panelu nástrojů můžete zadat tak, že vytvoříte lokalizované *.vsct* soubory a lokalizované *RESX* soubory vašeho balíčku VSPackage a pak aktualizuje soubory projektu začlenit změny.  
@@ -46,7 +46,7 @@ Lokalizovaný text příkazů nabídky a panelu nástrojů můžete zadat tak, �
   
       Následující příklad ukazuje angličtinu a slovenštinu text tlačítka pro příkaz pro otevření panelu nástrojů Průzkumník řady stromu.  
   
-      [*FamilyTree.en US.vsct*]  
+      [*FamilyTree.en-US.vsct*]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -59,7 +59,7 @@ Lokalizovaný text příkazů nabídky a panelu nástrojů můžete zadat tak, �
    </Button>  
    ```  
   
-    [*FamilyTree.es ES.vsct*]  
+    [*FamilyTree.es-ES.vsct*]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -90,7 +90,7 @@ Lokalizovaný text příkazů nabídky a panelu nástrojů můžete zadat tak, �
   
 5.  Otevřete každý *RESX* soubor upravit řetězec hodnoty podle potřeby pro konkrétní jazyk a jazykovou verzi. Následující příklad ukazuje definici lokalizovaný prostředek pro záhlaví panelu nástrojů.  
   
-     [*Názvy Resources.en US.resx*]  
+     [*Resources.en-US.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -98,7 +98,7 @@ Lokalizovaný text příkazů nabídky a panelu nástrojů můžete zadat tak, �
     </data>  
     ```  
   
-     [*Resources.es ES.resx*]  
+     [*Resources.es-ES.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  

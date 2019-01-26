@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e6af51127548b59646ec7243863491115b77e08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a1188d202fd38ce0f14c5792ba6976b424d0d8c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854617"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937350"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Postupy: Speciální řídicí znaky v nástroji MSBuild
 
@@ -53,5 +53,5 @@ Použijte notaci `%<xx>` místo speciální znaky, kde `<xx>` představuje šest
  
 ## <a name="see-also"></a>Viz také:  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [Nástroj MSBuild](../msbuild/msbuild.md)   
+ [MSBuild](../msbuild/msbuild.md)   
  [Položky](../msbuild/msbuild-items.md)   

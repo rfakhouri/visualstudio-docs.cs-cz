@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043710"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Vývoj kódu jazyka JavaScript a TypeScript v sadě Visual Studio bez řešení nebo projektů
 
@@ -32,9 +32,9 @@ Abyste mohli začít, vyberte **otevřít složku** z úvodní stránky, která 
 
 ## <a name="npm-integration"></a>integrace npm
 
-Pokud obsahuje otevřené složce *package.json* souborů, které můžete kliknout pravým tlačítkem *package.json* k zobrazení místní nabídky (nabídku) specifické pro npm. 
+Pokud obsahuje otevřené složce *package.json* souborů, které můžete kliknout pravým tlačítkem *package.json* k zobrazení místní nabídky (nabídku) specifické pro npm.
 
-![npm nabídky v Průzkumníku řešení](../javascript/media/solution-explorer-npm-ctx.png) 
+![npm nabídky v Průzkumníku řešení](../javascript/media/solution-explorer-npm-ctx.png)
 
 V místní nabídce můžete spravovat balíčky nainstalované nástroj npm ve stejném způsobem, jakým [spravovat balíčky npm](npm-package-management.md) při použití souboru projektu.
 
@@ -43,7 +43,8 @@ Kromě toho v nabídce také umožňuje spouštět skripty, které jsou definov�
 ## <a name="build-and-debug"></a>Sestavení a ladění
 
 ### <a name="packagejson"></a>Soubor Package.JSON
-Pokud *package.json* ve složce určuje `main` elementu, **ladění** příkaz bude k dispozici v místní nabídce klepněte pravým tlačítkem myši pro *package.json*. Kliknutím na ni se spustí *node.exe* se zadaným skriptem jako svůj argument.
+Pokud *package.json* ve složce určuje `main` elementu, **ladění** příkaz bude k dispozici v místní nabídce klepněte pravým tlačítkem myši pro *package.json*.
+Kliknutím na ni se spustí *node.exe* se zadaným skriptem jako svůj argument.
 
 ### <a name="javascript-files"></a>Soubory jazyka JavaScript
 Můžete ladit soubory JavaScriptu tak, že kliknete pravým tlačítkem soubor a vyberete **ladění** z místní nabídky. Tím se spustí *node.exe* se tento soubor JavaScript jako svůj argument.

@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 345d2c744aeffe84517377ed99f486ab02d5e00c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9421df86166c76bda22bdecf166969e4a2142a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860856"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995658"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UWP
 Visual Studio **spotřeba energie** profileru pomáhá analyzovat spotřebu energie v aplikacích pro UWP v s nízkou spotřebou, na kterých běží všechny nebo část času, na vlastní baterie. Na zařízení napájeném z baterie může aplikace s příliš vysokou spotřebou energie způsobit tak velkou nespokojenost zákazníka, že ji může dokonce i odinstalovat. Optimalizace využití energie můžete rozšířit uživatelskou základnu vaší aplikace a používat zákazníky.  
@@ -126,7 +126,7 @@ if (performance && performance.mark) {
 |![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Přetažením modrých panelů můžete vybrat určitou oblast časové osy a omezit tak sestavu jen na tuto část časové osy.|  
 |![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|**Spotřeby energie** graf je Víceřádkový graf, který zobrazuje změnu ve výstupu napájení, jež je způsobena prostředkem zařízení během relace profilování. Profiler Spotřeba energie sleduje výkon využívaný procesorem, síťovou aktivitou a displejem.|  
 |![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|**Prostředky (zapnuto/vypnuto)** graph poskytuje podrobné informace o síti náklady na energii. **Sítě** panelu představuje čas, který bylo otevřeno síťové připojení. **Přenosu dat** podřízený řádek je čas, aby byla aplikace přijímala nebo odesílala data přes síť.|  
-|![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|**Souhrn využití energie** ukazuje poměrné množství celkového množství energie použité ve vybrané časové osy podle Procesorem, síťovou aktivitou a displejem.|  
+|![Step 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|**Souhrn využití energie** ukazuje poměrné množství celkového množství energie použité ve vybrané časové osy podle Procesorem, síťovou aktivitou a displejem.|  
   
  **Analýza dat energetického profilu**  
   

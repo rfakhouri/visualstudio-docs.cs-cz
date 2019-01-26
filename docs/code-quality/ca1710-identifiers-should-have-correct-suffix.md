@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fa39e361d7659e4508c916fc7681ac3b0c5fdd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944707"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029853"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identifikátory by měly mít správnou příponu
 
@@ -31,7 +31,7 @@ ms.locfileid: "53944707"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Identifikátor nemá správnou příponu.
 
@@ -60,7 +60,7 @@ V následující tabulce jsou uvedeny základní typy a rozhraní, které mají 
 |<xref:System.IO.Stream?displayProperty=fullName>|Stream|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Oprávnění|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Podmínka|
-|Delegát obslužné rutiny události.|Obslužná rutina události|
+|Delegát obslužné rutiny události.|EventHandler|
 
 Typy, které implementují <xref:System.Collections.ICollection> a jsou zobecněného typu datové struktury, jako například slovníku, zásobníku nebo fronty, jsou povolené názvy, které poskytují smysluplné informace o zamýšlené použití typu.
 

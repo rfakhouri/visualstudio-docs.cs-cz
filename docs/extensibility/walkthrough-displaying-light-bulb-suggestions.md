@@ -5,24 +5,24 @@ ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a1f54efc4b61decd88c9cc322597bcc0be513ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935005"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027747"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Průvodce: Zobrazení návrhů
 Ikony žárovky jsou ikony v editoru sady Visual Studio, které se rozbalí a zobrazí sadu akcí, například opravy problémů, které jsou identifikované analyzátorů integrované kódu a refaktoring kódu.  
   
  V editoru Visual C# a Visual Basic také můžete platformě kompilátoru .NET ("Roslyn") pro zápis a balíček vlastních analyzátorů kódu s akcemi, které se automaticky zobrazí návrhy. Další informace naleznete v tématu:  
   
-- [Jak: Zápis C# diagnostiky a oprava kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Postupy: Zápis C# diagnostiky a oprava kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [Jak: Zápis Visual Basic diagnostiku a opravy kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Postupy: Zápis Visual Basic diagnostiku a opravy kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   Dalších jazycích, například C++ také poskytují návrhy pro některé rychlé akce, jako jsou návrh na vytvoření zástupné procedury implementace této funkce.  
   

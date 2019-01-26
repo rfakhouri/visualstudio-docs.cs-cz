@@ -11,17 +11,17 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6e7f5e09a1352ee1fdcb6247920c12990c2df19
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862923"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966108"
 ---
-# <a name="toolbox-html-tab"></a>Panel nástrojů, Karta HTML
+# <a name="toolbox-html-tab"></a>Toolbox, HTML tab
 
 **HTML** součásti, které jsou užitečné pro webové stránky a webové formuláře poskytuje kartu na panelu nástrojů. Chcete-li zobrazit na této kartě, nejprve otevřete dokument pro úpravy v Návrháři HTML. Na **zobrazení** nabídky, klikněte na tlačítko **nástrojů**a potom klikněte na tlačítko **HTML** kartu na panelu nástrojů.
 
@@ -31,7 +31,7 @@ ms.locfileid: "53862923"
 
 Tyto nástroje jsou k dispozici ve výchozím nastavení na kartě HTML.
 
-**Ukazatel**
+**Pointer**
 
 ![Ukazatel návrháře HTMLpage technologie ASP.NET Mobile](../../ide/reference/media/vxpointer.gif)
 

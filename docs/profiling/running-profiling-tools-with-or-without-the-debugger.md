@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f80f6018583194e352210057f31b741ae1b6ac2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e96341ada2485654f5553b7b862c84dd03b8b4a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941411"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979488"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj
 
@@ -99,7 +99,7 @@ Můžete uložit sestavy a otevřete je z **naposledy otevřené relace** seznam
 |![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Každý nástroj pro diagnostiku zobrazuje jeden nebo více hlavní grafy. Pokud diagnostické relace má více než jeden nástroj, jsou zobrazeny všechny jejich hlavní grafy.|  
 |![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|Můžete rozbalovat a sbalovat jednotlivých nástrojích jednotlivé grafy.|  
 |![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Pokud data obsahují více než jeden nástroj, jsou podrobnosti k nástroji shromažďovat v rámci karty.|  
-|![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Dolní polovinu sestavy zobrazuje podrobná zobrazení pro jednotlivé nástroje. Zobrazení můžete filtrovat výběrem oblastí na časové ose.|  
+|![Step 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Dolní polovinu sestavy zobrazuje podrobná zobrazení pro jednotlivé nástroje. Zobrazení můžete filtrovat výběrem oblastí na časové ose.|  
   
 ## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Spouštět aplikace nainstalována nebo spuštěna relace diagnostiky 
 

@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8425857b6774d9a880c769ea3b46943686f3deb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c2f2bf3ad40d464919e36658785dfdddffbed7d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832434"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034510"
 ---
 # <a name="hlsl-shader-debugger"></a>Ladicí program shaderu HLSL
 Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže porozumět fungování kódu shaderu HLSL aplikace skutečný podmínek.  
@@ -39,7 +39,7 @@ Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže por
   
   Nicméně ladicí program HLSL poskytuje lepší ladění více odpovídající CPU, které by jinak nebylo možné.  
   
-## <a name="hlsl-shader-edit--apply"></a>Použít & Upravit HLSL Shader  
+## <a name="hlsl-shader-edit--apply"></a>HLSL Shader Edit & Apply  
  Ladicí program shaderu HLSL nepodporuje Upravit & pokračovat stejným způsobem, který provede ladicí program procesoru, protože spouštěcí model GPU neumožňuje shaderu stavu vrátit. Místo toho podporuje ladicí program HLSL & použít, což vám umožní upravit HLSL zdrojové soubory a klikněte na tlačítko Upravit **použít** se znova vygenerovat snímek projevily provedené změny. Kód shaderu. změny se ukládají do samostatného souboru zachovat integritu vašeho projektu původní zdrojový soubor HLSL, ale jakmile budete spokojeni se změnami můžete **zkopírovat do...**  kopírování změny do svého projektu. Pomocí této funkce můžete rychle iterovat kód shaderu, který obsahuje chyby a eliminovat opětovné nákladnou sestavení a zachycení kroky z vaší HLSL ladění pracovního postupu.  
   
 ## <a name="hlsl-disassembly"></a>Převod do strojového jazyka HLSL  

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e8de1edc266489a6260176e0b9e8aec8df62ba2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912766"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956698"
 ---
 # <a name="cl-task"></a>CL – úloha
 Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustitelný soubor (*.exe*) soubory, dynamická knihovna (*.dll*) soubory nebo modul s kódem (*.netmodule*) soubory. Další informace najdete v tématu [– možnosti kompilátoru](/cpp/build/reference/compiler-options).  
@@ -102,7 +102,7 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
   - **StackFrameRuntimeCheck** - **/RTCs**  
   
-  - **UninitializedLocalUsageCheck** - **za**  
+  - **UninitializedLocalUsageCheck** - **/RTCu**  
   
   - **EnableFastChecks** -                          **/RTC1**  
   
@@ -186,7 +186,7 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
   - **Bezpečné** -   **/CLR: safe**  
   
-  - **OldSyntax** - **oldSyntax**  
+  - **OldSyntax** - **/clr:oldSyntax**  
   
     Další informace najdete v tématu [/CLR (kompilace Common language runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
@@ -206,7 +206,7 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
    Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-  - **Minuskové** -   **/Z7**  
+  - **OldStyle** - **/Z7**  
   
   - **ProgramDatabase** - **/Zi**  
   
@@ -270,11 +270,11 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
   - **Žádný** -   **/errorreport: žádné**  
   
-  - **Řádek** - **/errorReport:prompt**  
+  - **Prompt** - **/errorReport:prompt**  
   
   - **Fronty** - **/errorReport:queue**  
   
-  - **Odeslat** -   **/errorreport: Send**  
+  - **Send** - **/errorReport:send**  
   
     Další informace najdete v tématu [/errorreport (sestava interními chybami kompilátoru)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
   
@@ -288,7 +288,7 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
   - **false** - *\<žádné >*  
   
-  - **Asynchronní** -   **/EHa**  
+  - **Async** - **/EHa**  
   
   - **Sync** - **/EHsc**  
   
@@ -484,7 +484,7 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
   - **MinSpace** -   **/O1**  
   
-  - **MaxSpeed** -   **/O2**  
+  - **MaxSpeed** - **/O2**  
   
   - **Úplné** - **/Ox**  
   
@@ -500,7 +500,7 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
   - **NotUsing** - *\<žádné >*  
   
-  - **Vytvoření** - **/Yc**  
+  - **Create** - **/Yc**  
   
   - **Použití** - **/Yu**  
   
@@ -590,13 +590,13 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
    Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-  - **Vícevláknové** -   **/MT**  
+  - **MultiThreaded** - **/MT**  
   
   - **MultiThreadedDebug** - **/MTd**  
   
   - **MultiThreadedDLL** - **/MD**  
   
-  - **MultiThreadedDebugDLL** -   **/MDd**  
+  - **MultiThreadedDebugDLL** - **/MDd**  
   
     Další informace najdete v tématu [/ / MD, / MT, /LD (použití knihovny run-time)](/cpp/build/reference/md-mt-ld-use-run-time-library).  
   

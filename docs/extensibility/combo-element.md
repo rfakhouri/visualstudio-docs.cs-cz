@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43a7799c1c2b6d3fed965f6039aa01b7fd29e937
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9759acc597d9a13ed084bdb8111cdd268a80bbc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926249"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965650"
 ---
 # <a name="combo-element"></a>Combo – element
 Definuje příkazy, které se zobrazí v poli se seznamem. Existují čtyři typy polí se seznamem, následujícím způsobem: DropDownCombo DynamicCombo, IndexCombo a MRUCombo.  
@@ -51,7 +51,7 @@ Definuje příkazy, které se zobrazí v poli se seznamem. Existují čtyři typ
 |Prvek|Popis|  
 |-------------|-----------------|  
 |Nadřazené|Volitelné. Nadřazený prvek tlačítko.|  
-|CommandFlag|Povinný parametr. Zobrazit [Command flag – element](../extensibility/command-flag-element.md). Platné hodnoty CommandFlag pro tlačítka jsou následujícím způsobem.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Kláves<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|CommandFlag|Povinný parametr. Zobrazit [Command flag – element](../extensibility/command-flag-element.md). Platné hodnoty CommandFlag pro tlačítka jsou následujícím způsobem.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Kláves<br /><br /> - IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |Řetězce|Povinný parametr. Zobrazit [Strings – element](../extensibility/strings-element.md). ButtonText – element podřízený, musí být definovaný.|  
 |Poznámka|Volitelný komentář.|  
   

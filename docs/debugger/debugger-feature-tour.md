@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227886"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042059"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>První pohled na ladicí program sady Visual Studio
 
@@ -185,7 +185,7 @@ V tomto příkladu **pomocníka výjimky** se dozvíte `System.Argument` výjimk
 
 V tomto příkladu `DirectoryInfo` volání přiřadil chyby na prázdný řetězec uložený v `value` proměnné.
 
-Pomocníka výjimky je skvělé funkce, která vám může pomoci ladit chyby. Můžete také provádět akce podobně jako zobrazení Podrobnosti o chybě a přidat kukátko z pomocníka výjimky. Nebo v případě potřeby můžete změnit podmínky pro vyvolání konkrétní výjimky. Další informace o tom, jak zpracování výjimek v kódu, naleznete v tématu [opravovat chyby napsáním lépe C# kód](../debugger/write-better-code-with-visual-studio.md).
+Pomocníka výjimky je skvělé funkce, která vám může pomoci ladit chyby. Můžete také provádět akce podobně jako zobrazení Podrobnosti o chybě a přidat kukátko z pomocníka výjimky. Nebo v případě potřeby můžete změnit podmínky pro vyvolání konkrétní výjimky. Další informace o tom, jak zpracování výjimek v kódu, naleznete v tématu [nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
 > Nahrazuje Pomocníka pro výjimky v Pomocníkovi výjimky [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

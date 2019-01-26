@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8ce5bb964b3d774a7030bfeb1909d8e9042de69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968537"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043554"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 
@@ -33,7 +33,7 @@ Můžete použít **návrháře shaderu** k vytvoření vlastní vizuálních ef
 |-----------------| - | - |
 |Orientovaný graf shaderu jazyka|*.dgsl*|Zobrazení pro úpravy|
 |Shader HLSL (zdrojového kódu)|*.hlsl*|Export|
-|Shader HLSL (bajtového kódu)|*.CSO*|Export|
+|Shader HLSL (bajtového kódu)|*.cso*|Export|
 |Hlaviček jazyka C++ (pole bajtového kódu HLSL)|*.h*|Export|
 
 ## <a name="get-started"></a>Začínáme
@@ -97,7 +97,7 @@ Tato tabulka popisuje položky panelu **režim návrháře shaderu** nástrojů,
 |**Náhled pomocí roviny**|Při povolení modelu rovinou slouží náhled shaderu. Je možné povolit tvar náhled pouze jeden po druhém.|
 |**Panel nástrojů**|Střídavě zobrazí a skryje **nástrojů**.|
 |**Vlastnosti**|Můžete také zobrazí nebo skryje **vlastnosti** okna.|
-|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Exportovat**: Umožňuje exportovat shader v různých formátech.<br /><br /> **Exportovat jako**: Shader exportuje jako zdrojový kód buď HLSL nebo jako hodnota bytecode funkce shader kompilované. Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Exportovat shader](../designers/how-to-export-a-shader.md).<br /><br /> **Grafické moduly**: Umožňuje výběr renderer, který se používá k zobrazení návrhové ploše.<br /><br /> **Vykreslení s D3D11**: Používá rozhraní Direct3D 11 k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: Používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Zobrazení**: Umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Frekvence snímků**: Pokud povolená, zobrazí aktuální frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu. Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.|
+|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Export**: Umožňuje exportovat shader v různých formátech.<br /><br /> **Exportovat jako**: Shader exportuje jako zdrojový kód buď HLSL nebo jako hodnota bytecode funkce shader kompilované. Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Exportovat shader](../designers/how-to-export-a-shader.md).<br /><br /> **Grafické moduly**: Umožňuje výběr renderer, který se používá k zobrazení návrhové ploše.<br /><br /> **Vykreslení s D3D11**: Používá rozhraní Direct3D 11 k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: Používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Zobrazení**: Umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Frekvence snímků**: Pokud povolená, zobrazí aktuální frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu. Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.|
 
 > [!TIP]
 > Můžete použít **Upřesnit** tlačítko poslední příkaz spustit znovu.
@@ -146,7 +146,7 @@ V následující tabulce jsou uvedeny shaderu parametry, které můžete upravit
 
 |Parametr|Vlastnosti|
 |---------------|----------------|
-|**Textura 1** - **Texture – 8**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Název souboru**: Úplná cesta soubor textury, který je spojen s registrem textur.|
+|**Texture 1** - **Texture 8**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Název souboru**: Úplná cesta soubor textury, který je spojen s registrem textur.|
 |**Materiál okolí**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Rozptýlení barvy aktuálního pixelu kvůli nepřímé - nebo okolí - osvětlení.|
 |**Materiál rozptýlení**|**Přístup**: **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**:  Barva, která popisuje, jak aktuální pixel rozptýlí přímé osvětlení.|
 |**Vyzařující materiál**|**Přístup**:                              **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Podíl barvy aktuálního pixelu kvůli svým zadaná osvětlení.|
@@ -177,22 +177,22 @@ Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Export
 
 |Příkaz|Klávesové zkratky|
 |-------------| - |
-|Přepnout na **vyberte** režimu|**CTRL**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
-|Přepnout na **přiblížení** režimu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
-|Přepnout na **Pan** režimu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
-|Vybrat vše|**CTRL**+**A**|
+|Přepnout na **vyberte** režimu|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Přepnout na **přiblížení** režimu|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Přepnout na **Pan** režimu|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Vybrat vše|**Ctrl**+**A**|
 |Odstranit aktuální výběr|**Delete**|
 |Zrušit aktuální výběr|**Řídicí** (**Esc**)|
 |Přiblížit|**CTRL**+**kolečko myši dopředu**<br /><br /> Znaménko plus (**+**)|
 |Oddálit|**CTRL**+**kolečko myši dozadu**<br /><br /> Znaménko minus (**-**)|
 |Posunout nahoru na návrhovou plochu|**Kolečko myši dozadu**<br /><br /> **PageDown**|
-|Posunout návrhové ploše dolů|**Kolečko myši dopředu**<br /><br /> **Page Up**|
-|Posunout doleva návrhové ploše|**SHIFT**+**kolečko myši dozadu**<br /><br /> **Kolečko myši doleva**<br /><br /> **SHIFT**+**PageDown**|
-|Posunout doprava návrhové ploše|**SHIFT**+**kolečko myši dopředu**<br /><br /> **Kolečko myši doprava**<br /><br /> **SHIFT**+**PageUp**|
+|Posunout návrhové ploše dolů|**Kolečko myši dopředu**<br /><br /> **PageUp**|
+|Posunout doleva návrhové ploše|**SHIFT**+**kolečko myši dozadu**<br /><br /> **Kolečko myši doleva**<br /><br /> **Shift**+**PageDown**|
+|Posunout doprava návrhové ploše|**SHIFT**+**kolečko myši dopředu**<br /><br /> **Kolečko myši doprava**<br /><br /> **Shift**+**PageUp**|
 |Přesunout fokus klávesnice pro jiný uzel|**Šipku** klíče|
-|Vyberte uzel, který má fokus klávesnice (přidá uzel do výběru skupiny)|**SHIFT**+**MEZERNÍK**|
-|Přepnout výběr uzlu, který má fokus klávesnice|**CTRL**+**MEZERNÍK**|
-|Přepne aktuální výběr (Pokud je vybráno žádné uzly, vyberte uzel, který má klávesnice fokus)|**MEZERNÍK**|
+|Vyberte uzel, který má fokus klávesnice (přidá uzel do výběru skupiny)|**Shift**+**Spacebar**|
+|Přepnout výběr uzlu, který má fokus klávesnice|**Ctrl**+**Spacebar**|
+|Přepne aktuální výběr (Pokud je vybráno žádné uzly, vyberte uzel, který má klávesnice fokus)|**Spacebar**|
 |Aktuální výběr nahoru|**SHIFT**+**šipka nahoru**|
 |Aktuální výběr dolů|**SHIFT**+**šipka dolů**|
 |Aktuální výběr doleva|**SHIFT**+**šipka vlevo**|

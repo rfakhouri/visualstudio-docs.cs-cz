@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccb698083b6c24f0f7deed70e17f6a1e6b1f5b95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935668"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977054"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
 Tento dokument popisuje některé stránky (nebo kolekce vlastností), které jsou přidruženy **textový Editor** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu `Properties` kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
@@ -35,7 +35,7 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
 |VerticalScrollBar|Get/Set (Boolean)|Určuje, zda se v oknech editoru zobrazuje svislý posuvník.|
 |SelectionMargin|Get/Set (Boolean)|Určuje, zda je na levé straně podokna textu místo pro speciální operace výběru, ikony pro kreslení zarážek atd.|
 |MarginIndicatorBar|Get/Set (Boolean)|Určuje, zda se zobrazuje svislá čára, která odděluje levý okraj podokna textu od hlavní části tohoto podokna.|
-|UndoCaretActions|Get/Set (Boolean)|Pokud `True`. operace vrácení zpět zahrnují přesunutí kurzoru, výběrové příkazy a tak dále, kromě editačních akcí, které mění vyrovnávací paměť.|
+|UndoCaretActions|Get/Set (Boolean)|If `True`. operace vrácení zpět zahrnují přesunutí kurzoru, výběrové příkazy a tak dále, kromě editačních akcí, které mění vyrovnávací paměť.|
 |AutoDelimiterHighlighting|Get/Set (Boolean)|Určuje, zda při zadání koncového oddělovače zvýrazní editor počáteční oddělovač. Editor vždy zobrazí počáteční oddělovač tučně bez ohledu na hodnotu této vlastnosti.|
 |EditorEmulation|Get/Set (Enum)||
 |DetectUTF8WithoutSignature|Get/Set (Boolean)|Zjistí, zda soubor používá kódování UTF-8, pokud nemá signaturu kódování.|

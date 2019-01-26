@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 363d5b40-1316-4ab8-836f-63637f619e0a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6f84d7d428e00aa161efc6f04c11811b1890ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de3d82f31ab8226fbdf29dbf7b154d12da93cacd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855059"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935836"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 Načte zadaný počet čísel řádků v pořadí výčtu.  
@@ -47,5 +47,5 @@ HRESULT Next ( 
   
 ## <a name="see-also"></a>Viz také  
  [Idiaenumlinenumbers –](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [Idialinenumber –](../../debugger/debug-interface-access/idialinenumber.md)   
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

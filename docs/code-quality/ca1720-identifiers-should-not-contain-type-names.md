@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06d56b2d3ae58a3cb24042c4bd4befdd2b92bae3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037210"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identifikátory by neměly obsahovat názvy typů
 
@@ -31,7 +31,7 @@ ms.locfileid: "53912266"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Název parametru v externě viditelném členu obsahuje název datového typu.
 
  -nebo-
@@ -61,7 +61,7 @@ ms.locfileid: "53912266"
 
 - Integer
 
-- Uinteger –
+- UInteger
 
 - Dlouhé
 
@@ -73,15 +73,15 @@ ms.locfileid: "53912266"
 
 - Float
 
-- float32
+- Float32
 
-- float64
+- Float64
 
 Kromě toho názvy parametru jsou zkontrolovány také proti následující názvy typů dat nezávislým na jazyku písmen:
 
 - Objekt
 
-- obj
+- Obj
 
 - Boolean
 
@@ -109,7 +109,7 @@ Kromě toho názvy parametru jsou zkontrolovány také proti následující náz
 
 - IntPtr
 
-- PTR
+- Ptr
 
 - Ukazatel
 

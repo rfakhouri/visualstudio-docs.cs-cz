@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 490356eae7467eded983b117a88c35c9785f3f93
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 9a3386647edeb9af7fa8d6d0e97e142f7cf6ef60
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060761"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990482"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Kurz: Začínáme s architektury Flask webů v sadě Visual Studio
 
@@ -255,4 +255,4 @@ V tomto okamžiku základního projektu Flask obsahuje spuštění kódu a kódu
 ## <a name="go-deeper"></a>Seznamte se blíž
 
 - [Rychlý start Flask](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
-- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

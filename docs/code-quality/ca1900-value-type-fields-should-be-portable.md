@@ -1,5 +1,5 @@
 ---
-title: 'CA1900: Pole hodnot by měla být přenosná'
+title: 'CA1900: Pole typů hodnot by měla být přenosná'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffac1cca87f3b1cbed23e2bbc8a9b463cd4adc6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84861aa1d17f041061d1666d6f78c9d273b948b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987846"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037769"
 ---
-# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Pole hodnot by měla být přenosná
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Pole typů hodnot by měla být přenosná
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53987846"
 |Kategorie|Microsoft.Portability|
 |Narušující změna|Zásadní – Pokud je pole viditelné mimo sestavení.<br /><br /> Bez konce – Pokud pole není viditelné mimo sestavení.|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Toto pravidlo zkontroluje, že budou při zařazení na nespravovaný kód v 64bitových operačních systémech správně zarovnány struktury, které jsou deklarovány pomocí explicitního rozložení. Nezarovnané přístupy a proces se chybově ukončit, pokud toto porušení nebyl vyřešen IA-64 není povolena.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71205231e3734fd5df876501f3880afa8b0779c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74ef70228979d1d302a644cda022d086e710b7c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921017"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio programu zlepšování zkušeností zákazníků
 
@@ -61,5 +61,5 @@ Další informace o údajích shromažďovaných, zpracovávaných a přenášen
 * [Diagnostické informace shromážděné funkcí sady Visual Studio](diagnostic-data-collection.md)
 * [Kontaktujte nás](../ide/talk-to-us.md)
 * [Postup ohlášení problému se sadou Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-* [Komunity vývojářů v sadě Visual Studio](https://developercommunity.visualstudio.com/)
+* [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
 * [Prohlášení o ochraně osobních údajů společnosti Microsoft](https://privacy.microsoft.com/privacystatement)

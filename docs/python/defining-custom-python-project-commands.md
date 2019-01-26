@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3cf0e0984c8051c0301ccb20c5f8dce2850c1514
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5ef751610510e6b167d2aa7975196d17cb1b72b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820989"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965559"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definovat vlastní příkazy pro projekty v Pythonu
 
@@ -144,7 +144,7 @@ Všechny hodnoty atributů jsou malá a velká písmena.
 
 | Atribut | Požadováno | Popis |
 | --- | --- | --- |
-| TargetType | Ano | Určuje, co obsahuje atribut Target a způsobu jejich použití spolu s argumenty atributu:<ul><li>**Spustitelný soubor**: Spusťte spustitelný soubor s názvem v cíli, připojením hodnoty v argumentech, jako kdyby zadali přímo na příkazovém řádku. Hodnota musí obsahovat pouze název programu bez argumentů.</li><li>**skript**: Spustit *python.exe* s názvem souboru v cíli, a potom s hodnotou v argumentech.</li><li>**modul**: Spustit `python -m` za nímž následuje název modulu v cíli, a potom s hodnotou v argumentech.</li><li>**kód**: Spusťte kód vloženého obsažených v cíli. Hodnota argumenty se ignoruje.</li><li>**PIP**: Spustit `pip` pomocí příkazu v cíli, za nímž následuje argumenty; je ExecuteIn nastavená na "výstupní", ale předpokládá pip `install` příkazů a používá cíl jako název balíčku.</li></ul> |
+| TargetType | Ano | Určuje, co obsahuje atribut Target a způsobu jejich použití spolu s argumenty atributu:<ul><li>**Spustitelný soubor**: Spusťte spustitelný soubor s názvem v cíli, připojením hodnoty v argumentech, jako kdyby zadali přímo na příkazovém řádku. Hodnota musí obsahovat pouze název programu bez argumentů.</li><li>**skript**: Spustit *python.exe* s názvem souboru v cíli, a potom s hodnotou v argumentech.</li><li>**modul**: Spustit `python -m` za nímž následuje název modulu v cíli, a potom s hodnotou v argumentech.</li><li>**kód**: Spusťte kód vloženého obsažených v cíli. Hodnota argumenty se ignoruje.</li><li>**pip**: Spustit `pip` pomocí příkazu v cíli, za nímž následuje argumenty; je ExecuteIn nastavená na "výstupní", ale předpokládá pip `install` příkazů a používá cíl jako název balíčku.</li></ul> |
 | Target | Ano | Název souboru, název modulu, kód nebo příkazu pip používat, v závislosti na TargetType. |
 | Arguments | volitelná, | Určuje řetězec argumentů (pokud existuje) pro cíl. Všimněte si, že pokud TargetType je `script`, argumenty uvedeny v programu Python, ne *python.exe*. Ignorovat `code` TargetType. |
 | ExecuteIn | Ano | Určuje prostředí, ve kterém chcete spustit příkaz:<ul><li>**Konzola**: (Výchozí) Spustí cíl a argumenty jako v případě, že se zadají přímo na příkazovém řádku. Okno příkazového řádku se zobrazí, zatímco cílem běží, pak je automaticky uzavřeny.</li><li>**consolepause**: Stejně jako konzola, ale čeká keypress před zavřením okna.</li><li>**Výstup**: Spustí cíl a zobrazí výsledky v **výstup** okna v sadě Visual Studio. Pokud TargetType je "pip", Visual Studio používá cíl jako název balíčku a připojí argumenty.</li><li>**REPL**: Spustí v cílovém [interaktivní Python](python-interactive-repl-in-visual-studio.md) okno; volitelný zobrazovaný název se používá pro záhlaví okna.</li><li>**žádný**: chová se stejně jako konzola.</li></ul>|

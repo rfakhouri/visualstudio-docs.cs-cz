@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Dokumentace Microsoftu
+title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ccc2fb2bb6c998ed73bf2d834c28cb34babbafa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4ddf93be6779dc0fa2faf61d485e83b14f071e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837859"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034343"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 Vrátí začátek rozsahu adres, ve kterém je platná místního symbolu.  
@@ -43,11 +43,11 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

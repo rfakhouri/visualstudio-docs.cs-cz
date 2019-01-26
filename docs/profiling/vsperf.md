@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7293914d2969e3e697ee7137256692270ac16f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70a31e5efca4fe2c8b81e3f8653422ed3311a0ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946669"
 ---
 # <a name="vsperf"></a>VSPerf
 Použití **VsPerf** nástroj příkazového řádku:  
@@ -29,9 +29,9 @@ Použití **VsPerf** nástroj příkazového řádku:
   
 |||  
 |-|-|  
-|**/App: {AppName}**|Spuštění profileru a čeká na konkrétní aplikaci, která se má spustit z nabídky Start.<br /><br /> Spustit `vsperf /listapps` Chcete-li zobrazit aplikaci název a PackageFullName nainstalovaných aplikací.|  
-|**/ balíčku: {PackageFullName}**|Spuštění profileru a čeká na konkrétní aplikaci, která se má spustit z nabídky Start.<br /><br /> Spustit `vsperf /listapps` Chcete-li zobrazit aplikaci název a PackageFullName nainstalovaných aplikací.|  
-|**/JS**|Vyžaduje se pro profilování aplikací jazyka JavaScript.<br /><br /> Shromažďování dat výkonu z aplikací jazyka JavaScript.<br /><br /> Pouze pomocí/Package nebo / připojit.|  
+|**/app:{AppName}**|Spuštění profileru a čeká na konkrétní aplikaci, která se má spustit z nabídky Start.<br /><br /> Spustit `vsperf /listapps` Chcete-li zobrazit aplikaci název a PackageFullName nainstalovaných aplikací.|  
+|**/package:{PackageFullName}**|Spuštění profileru a čeká na konkrétní aplikaci, která se má spustit z nabídky Start.<br /><br /> Spustit `vsperf /listapps` Chcete-li zobrazit aplikaci název a PackageFullName nainstalovaných aplikací.|  
+|**/js**|Vyžaduje se pro profilování aplikací jazyka JavaScript.<br /><br /> Shromažďování dat výkonu z aplikací jazyka JavaScript.<br /><br /> Pouze pomocí/Package nebo / připojit.|  
 |**/noclr**|Volitelné. Neshromažďují dat CLR.<br /><br /> Pouze pomocí/Package nebo / připojit.<br /><br /> Optimalizace, se vyřeší žádné spravované symboly.|  
 |**/listapps**|Vypsání seznamu instalovaných názvů aplikací a PackageFullNames.|  
   
@@ -51,11 +51,11 @@ Použití **VsPerf** nástroj příkazového řádku:
 |-|-|  
 |**/ připojit: {PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Shromažďuje data z konkrétních procesů.<br /><br /> Pomocí Správce úloh můžete zobrazit id procesu (PID) a názvy spuštěných aplikací procesu.|  
 |**/ file:{ReportName}**|Volitelné. Určuje výstupní soubor (přepíše existující soubor).<br /><br /> Pouze pomocí/Package nebo / připojit.|  
-|**/ Pause**|Shromažďování dat pozastavit.|  
+|**/pause**|Shromažďování dat pozastavit.|  
 |**/Resume**|Opět spustit shromažďování data.|  
-|**/ stop**|Zastavit shromažďování dat a ukončit cílových procesů.|  
+|**/stop**|Zastavit shromažďování dat a ukončit cílových procesů.|  
 |**/ detach**|Zastavit shromažďování dat, ale nechat pokračovat ke spuštění cílových procesů.|  
-|**/ Status**|Zobrazit stav profileru.|  
+|**/status**|Zobrazit stav profileru.|  
   
 ## <a name="see-also"></a>Viz také:  
  [Nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   

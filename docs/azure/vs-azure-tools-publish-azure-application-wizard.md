@@ -2,7 +2,7 @@
 title: Publikování cloudové služby Azure
 description: Zjistěte, jak nakonfigurovat různá nastavení v Visual Studio Průvodci publikováním aplikace Azure
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 7eee9eacd9703daf39bbd8a0eda3e1024c8cc0b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce552acb0a261bcd5e21f4c09d4f58047bc8b1ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962147"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934777"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Použití průvodce publikováním aplikace Azure v sadě Visual Studio
 
@@ -38,7 +38,7 @@ Průvodce publikování aplikaci Azure v závislosti na typu projektu sady Visua
 
 1. Vytvořte nebo otevřete v sadě Visual Studio projekt cloudové služby Azure.
 
-1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a v místní nabídce vyberte **převést** > **převést na projekt cloudové služby Azure**. 
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a v místní nabídce vyberte **převést** > **převést na projekt cloudové služby Azure**.
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na nově vytvořený projekt Azure a v místní nabídce vyberte **publikovat**.
 
@@ -56,7 +56,7 @@ Průvodce publikování aplikaci Azure v závislosti na typu projektu sady Visua
 
 **Cloudová služba** – pomocí rozevíracího seznamu vyberte existující cloud service, nebo vyberte  **&lt;vytvořit nový >** a vytvořit cloudovou službu. Datové centrum zobrazuje v závorkách pro každou cloudovou službu. Doporučuje se, že data center umístění pro cloudovou službu být stejné jako umístění centra dat pro účet úložiště (rozšířené nastavení).
 
-**Prostředí** – vyberte buď **produkční** nebo **pracovní**. Zvolte testovací prostředí, pokud chcete nasadit aplikaci v testovacím prostředí. 
+**Prostředí** – vyberte buď **produkční** nebo **pracovní**. Zvolte testovací prostředí, pokud chcete nasadit aplikaci v testovacím prostředí.
 
 **Konfigurace sestavení** – vyberte buď **ladění** nebo **vydání**.
 
@@ -70,7 +70,7 @@ Průvodce publikování aplikaci Azure v závislosti na typu projektu sady Visua
 
 ![Pokročilá nastavení](./media/vs-azure-tools-publish-azure-application-wizard/settings-advanced-settings.png)
 
-**Popisek nasazení** – buď přijměte výchozí název nebo zadejte název podle vašeho výběru. Chcete-li připojí data k označení nasazení, ponechte políčko zaškrtnuté. 
+**Popisek nasazení** – buď přijměte výchozí název nebo zadejte název podle vašeho výběru. Chcete-li připojí data k označení nasazení, ponechte políčko zaškrtnuté.
 
 **Účet úložiště** – vyberte účet úložiště pro toto nasazení **&lt;vytvořit nový > vytvořit účet úložiště. Datové centrum zobrazuje v závorkách pro každý účet úložiště. Doporučuje se, že pro účet úložiště s umístěním datového centra je stejné jako umístění pro System center data pro cloudovou službu (nastavení).
 
@@ -78,7 +78,7 @@ Průvodce publikování aplikaci Azure v závislosti na typu projektu sady Visua
 
 **Odstranit nasazení při selhání** – tuto možnost použijte k nasazení odstranit, pokud při publikování došlo k chybám. To mělo být zaškrtnuté políčko, pokud chcete udržovat konstantní virtuální IP adresu pro cloudovou službu.
 
-**Aktualizace nasazení** – tuto možnost vyberte, pokud chcete nasadit pouze aktualizované součásti. Tento typ nasazení může být rychlejší než úplné nasazení. To by měly být porovnány, pokud chcete udržovat konstantní virtuální IP adresu pro cloudovou službu. 
+**Aktualizace nasazení** – tuto možnost vyberte, pokud chcete nasadit pouze aktualizované součásti. Tento typ nasazení může být rychlejší než úplné nasazení. To by měly být porovnány, pokud chcete udržovat konstantní virtuální IP adresu pro cloudovou službu.
 
 **Nasazení aktualizace - nastavení** -tento dialog umožňuje dále určit, jak chcete, aby role, které chcete aktualizovat. Pokud se rozhodnete **přírůstkové aktualizace**, každou instanci vaší aplikace se aktualizuje jednu po druhé, tak, aby aplikace byla vždy dostupná. Pokud se rozhodnete **Souběžná aktualizace**, všechny instance aplikace jsou aktualizovány ve stejnou dobu. Aktualizuje se současně je rychlejší, ale vaše služba nemusí být k dispozici během procesu aktualizace.
 

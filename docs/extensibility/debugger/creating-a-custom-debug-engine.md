@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aff0f3ba1bef25c7754f80dcbb6fb04e2e7da60e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852700"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029905"
 ---
 # <a name="create-a-custom-debug-engine"></a>Vytvoření vlastního ladicího stroje
 Ladicí stroj (DE) je komponenta, která umožňuje ladění konkrétní za běhu architektury. Obvykle existuje pouze jedna implementace DE pro každé prostředí za běhu.  
@@ -58,7 +58,7 @@ Ladicí stroj (DE) je komponenta, která umožňuje ladění konkrétní za běh
  [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)  
  Dokumenty volání pořadí událostí, ke kterým dochází v relaci ladění.  
   
- [Jak: Ladění vlastního ladicího stroje](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Postupy: Ladění vlastního ladicího stroje](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Vysvětluje, jak ladit vlastní DE.  
   
 ## <a name="see-also"></a>Viz také:  

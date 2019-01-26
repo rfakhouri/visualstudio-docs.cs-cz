@@ -1,49 +1,176 @@
 ---
-title: Méně chyb díky psaní lepšího kódu v C#
-description: Naučte se psát lepší kód s méně chyb
+title: Nástroje a techniky ladění
+description: Vytvářejte lepší kód s využitím méně chyb pomocí sady Visual Studio Pokud chcete vyřešit výjimky, opravte chyby a zlepšování kódu
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 11/20/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967573"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961712"
 ---
-# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Oprava chyb napsáním lépe C# kódu pomocí sady Visual Studio
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Ladění technik a nástrojů, který pomáhá psát lepší kód
 
-Ladění kódu může být časově – a někdy náročný – úloh. Může zabrat určitý čas zjistěte, jak efektivně ladit, ale výkonné prostředí IDE, jako je Visual Studio může být vaše úloha mnohem snazší. Integrované vývojové prostředí můžou pomoct při ladění kódu rychleji a nejen toto, ale to můžete také psát lepší kód s menším počtem chyb nápovědy. Naše cíle v tomto článku je poskytnout získat holistický pohled ladění procesu, tak budete vědět, kdy použít analyzátor kódu a kdy se má použít ladicí program a kdy se má použít jiné nástroje.
+Oprava chyby a chyby v kódu může být časově – a někdy náročný – úkol. Může zabrat určitý čas zjistěte, jak efektivně ladit, ale výkonné prostředí IDE, jako je Visual Studio může být vaše úloha mnohem snazší. Integrované vývojové prostředí můžou pomoct, opravte chyby a ladit kód rychleji a nejen toto, ale to můžete také psát lepší kód s menším počtem chyb nápovědy. Naše cíle v tomto článku je poskytnout komplexní pohled na "Opravit chybu" procesu, tak budete vědět, kdy použít nástroje code analyzer, kdy použít ladicí program, jak vyřešit výjimky a tom, jak kód záměr. Pokud už znáte, budete muset ladicího programu, najdete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
 
-V tomto článku se budeme mluvit o využívání rozhraní IDE pro produktivitu vaší relace ladění. Jsme dotykového ovládání na několik úloh, jako například:
+V tomto článku mluvíme o využití integrovaného vývojového prostředí pro psaní kódu relace produktivnější. Jsme dotykového ovládání na několik úloh, jako například:
 
 * Připravte váš kód pro ladění s využitím analyzátor kódu rozhraní IDE
 
 * Jak vyřešit výjimky (– chyby za běhu)
 
-* Jak chcete-li minimalizovat chyby kódu pro záměr
+* Jak chcete-li minimalizovat chyby v kódování pro záměr (použití metody assert)
 
 * Kdy použít ladicí program
 
 Abychom si předvedli tyto úlohy, vám ukážeme některé z nejběžnějších typů chyb a chyb, ke které dojde při pokusu o ladění aplikací. I když ukázkový kód je C#koncepční informace je obecně platný pro jazyk JavaScript, C++, Visual Basic, a podporuje další jazyky sady Visual Studio (Pokud není uvedeno jinak). Snímky obrazovky jsou v jazyce C#.
 
-## <a name="follow-along-using-the-sample-app"></a>Postupovat s námi pomocí ukázkové aplikace
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Vytvořte ukázkovou aplikaci s určitými chyby a chyby v ní
 
-Pokud dáváte přednost, můžete vytvořit konzolovou aplikaci .NET Framework nebo .NET Core, který obsahuje přesně chyb a chyb, které jsou zde popsané, a můžete postupovat s námi a opravit sami sebe.
+Následující kód obsahuje chyby, které můžete vyřešit pomocí integrovaného vývojového prostředí sady Visual Studio. Tady aplikace je jednoduchá aplikace, která simuluje získávání dat JSON z některé operace, deserializaci datového objektu a jednoduchý seznam se aktualizuje s novými daty.
 
-Pokud chcete vytvořit aplikaci, otevřete sadu Visual Studio a zvolte **soubor > Nový projekt**. V části **Visual C#** , zvolte **Windows Desktop** nebo **.NET Core**a potom v prostředním podokně vyberte **konzolovou aplikaci**. Zadejte název, například **Console_Parse_JSON** a klikněte na tlačítko **OK**. Visual Studio vytvoří projekt. Vložit [ukázkový kód](#sample-code) do projektu *Program.cs* souboru.
+Pokud chcete vytvořit aplikaci:
 
-> [!NOTE]
-> Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** nebo **vývoj pro různé platformy .NET Core** úloh, klikněte na tlačítko **změnit**.
+1. Otevřít Visual Studio a zvolte **soubor > Nový projekt**. V části **Visual C#** , zvolte **Windows Desktop** nebo **.NET Core**a potom v prostředním podokně vyberte **konzolovou aplikaci**.
+
+    > [!NOTE]
+    > Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** nebo **vývoj pro různé platformy .NET Core** úloh, klikněte na tlačítko **změnit**.
+
+2. V **název** zadejte **Console_Parse_JSON** a klikněte na tlačítko **OK**. Visual Studio vytvoří projekt.
+
+3. Nahraďte kód v projektu *Program.cs* soubor s níže uvedený ukázkový kód.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
+using System.IO;
+
+namespace Console_Parse_JSON
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var localDB = LoadRecords();
+            string data = GetJsonData();
+
+            User[] users = ReadToObject(data);
+
+            UpdateRecords(localDB, users);
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                List<User> result = localDB.FindAll(delegate (User u) {
+                    return u.lastname == users[i].lastname;
+                    });
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
+                }
+            }
+
+            Console.ReadKey();
+        }
+
+        // Deserialize a JSON stream to a User object.
+        public static User[] ReadToObject(string json)
+        {
+            User deserializedUser = new User();
+            User[] users = { };
+            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
+
+            users = ser.ReadObject(ms) as User[];
+
+            ms.Close();
+            return users;
+        }
+
+        // Simulated operation that returns JSON data.
+        public static string GetJsonData()
+        {
+            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
+            return str;
+        }
+
+        public static List<User> LoadRecords()
+        {
+            var db = new List<User> { };
+            User user1 = new User();
+            user1.firstname = "Joe";
+            user1.lastname = "Smith";
+            user1.totalpoints = 41;
+
+            db.Add(user1);
+
+            User user2 = new User();
+            user2.firstname = "Pete";
+            user2.lastname = "Peterson";
+            user2.totalpoints = 30;
+
+            db.Add(user2);
+
+            return db;
+        }
+        public static void UpdateRecords(List<User> db, User[] users)
+        {
+            bool existingUser = false;
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                foreach (var item in db)
+                {
+                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
+                    {
+                        existingUser = true;
+                        item.totalpoints += users[i].points;
+
+                    }
+                }
+                if (existingUser == false)
+                {
+                    User user = new User();
+                    user.firstname = users[i].firstname;
+                    user.lastname = users[i].lastname;
+                    user.totalpoints = users[i].points;
+
+                    db.Add(user);
+                }
+            }
+        }
+    }
+
+    [DataContract]
+    internal class User
+    {
+        [DataMember]
+        internal string firstname;
+
+        [DataMember]
+        internal string lastname;
+
+        [DataMember]
+        // internal double points;
+        internal string points;
+
+        [DataMember]
+        internal int totalpoints;
+    }
+}
+```
 
 ## <a name="find-the-red-and-green-squiggles"></a>Najdete červenou a zelenou vlnovkou!
 
@@ -65,9 +192,9 @@ Všimněte si, že tato chyba zobrazuje ikonou žárovky do levé dolní části
 
 Po kliknutí na tuto položku, sada Visual Studio přidá `using System.Text` příkazu v horní části *Program.cs* souboru a červená vlnovka zmizí. (Pokud si nejste jistí, jakou navrhované opravy funkci, zvolte **náhled změn** odkaz na pravé straně před použitím opravy.)
 
-Předchozí chybu je běžné, která obvykle opravit tak, že přidáte nový `using` příkaz do vašeho kódu. Existuje několik běžných, podobně jako chyby k tomuto jako ```The type or namespace `Name` cannot be found.``` tyto druhy chyb může znamenat chybějící odkaz na sestavení (klikněte pravým tlačítkem na projekt, zvolte **přidat** > **odkaz**), názvu překlepy nebo chybějící knihovnu, která je třeba přidat pomocí nástroje NuGet (klikněte pravým tlačítkem na projekt a zvolte **spravovat balíčky NuGet**).
+Předchozí chybu je běžné, která obvykle opravit tak, že přidáte nový `using` příkaz do vašeho kódu. Existuje několik běžných, podobně jako chyby k tomuto jako ```The type or namespace `Name` cannot be found.``` tyto druhy chyb může znamenat chybějící odkaz na sestavení (klikněte pravým tlačítkem na projekt, zvolte **přidat** > **odkaz**), názvu překlepy nebo chybějící knihovnu, která je potřeba přidat (pro C#, klikněte pravým tlačítkem na projekt a zvolte **spravovat balíčky NuGet**).
 
-## <a name="fix-the-errors-and-warnings"></a>Opravte chyby a upozornění
+## <a name="fix-the-remaining-errors-and-warnings"></a>Oprava zbývající chyby a upozornění
 
 Existuje několik další podtržení vlnovkou podívat se na tento kód. Tady vidíte běžné Chyba převodu typu. Když najedete myší vlnovka, uvidíte, že se kód pokouší o převedení řetězce na typ int, což není podporováno, není-li přidat explicitní kódu k provedení převodu.
 
@@ -128,7 +255,7 @@ Až se dostanete k výjimce, potřebujete (a odpovědí) několik otázek:
 
 * Je tato výjimka něco, co vaši uživatelé setkat?
 
-Pokud je první, opravte chyby. (V ukázkové aplikaci, která znamená, že oprava chybná data.) Pokud je ten, můžete potřebovat pro zpracování výjimek v kódu pomocí `try/catch` blok (podíváme na další možné opravy v další části). V ukázkové aplikaci nahraďte následujícím kódem:
+Pokud je první, opravte chyby. (V ukázkové aplikaci, která znamená, že oprava chybná data.) Pokud je ten, můžete potřebovat pro zpracování výjimek v kódu pomocí `try/catch` blok (podíváme na další možné strategie v další části). V ukázkové aplikaci nahraďte následujícím kódem:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -277,131 +404,6 @@ Naučte se používat základní funkce ladicího programu, najdete v článku [
 ## <a name="fix-performance-issues"></a>Řešení problémů s výkonem
 
 Chyby jiného druhu zahrnují neefektivní kód, který způsobí, že vaše aplikace běží pomalu nebo používá příliš mnoho paměti. Obecně platí optimalizace výkonu je něco, co můžete udělat později v vývoje aplikací. Však můžete spustit do problémy s výkonem již v rané fázi (například vidíte, že některá část aplikace běží pomalu), a možná budete muset raném stádiu testováním aplikace s nástroji pro profilaci. Další informace o profilování nástroje, jako je nástroj využití CPU a kontejner analyzátoru paměti najdete v tématu [nejdřív se podívejte na nástrojů pro profilaci](../profiling/profiling-feature-tour.md).
-
-## <a name="sample-code"></a> Ukázkový kód
-
-Následující kód obsahuje chyby, které můžete vyřešit pomocí integrovaného vývojového prostředí sady Visual Studio. Tady aplikace je jednoduchá aplikace, která simuluje získávání dat JSON z některé operace, deserializaci datového objektu a jednoduchý seznam se aktualizuje s novými daty.
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization;
-using System.IO;
-
-namespace Console_Parse_JSON_DotNetCore
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var localDB = LoadRecords();
-            string data = GetJsonData();
-
-            User[] users = ReadToObject(data);
-
-            UpdateRecords(localDB, users);
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                List<User> result = localDB.FindAll(delegate (User u) {
-                    return u.lastname == users[i].lastname;
-                    });
-                foreach (var item in result)
-                {
-                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
-                }
-            }
-
-            Console.ReadKey();
-        }
-
-        // Deserialize a JSON stream to a User object.
-        public static User[] ReadToObject(string json)
-        {
-            User deserializedUser = new User();
-            User[] users = { };
-            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
-            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
-
-            users = ser.ReadObject(ms) as User[];
-
-            ms.Close();
-            return users;
-        }
-
-        // Simulated operation that returns JSON data.
-        public static string GetJsonData()
-        {
-            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
-            return str;
-        }
-
-        public static List<User> LoadRecords()
-        {
-            var db = new List<User> { };
-            User user1 = new User();
-            user1.firstname = "Joe";
-            user1.lastname = "Smith";
-            user1.totalpoints = 41;
-
-            db.Add(user1);
-
-            User user2 = new User();
-            user2.firstname = "Pete";
-            user2.lastname = "Peterson";
-            user2.totalpoints = 30;
-
-            db.Add(user2);
-
-            return db;
-        }
-        public static void UpdateRecords(List<User> db, User[] users)
-        {
-            bool existingUser = false;
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                foreach (var item in db)
-                {
-                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
-                    {
-                        existingUser = true;
-                        item.totalpoints += users[i].points;
-
-                    }
-                }
-                if (existingUser == false)
-                {
-                    User user = new User();
-                    user.firstname = users[i].firstname;
-                    user.lastname = users[i].lastname;
-                    user.totalpoints = users[i].points;
-
-                    db.Add(user);
-                }
-            }
-        }
-    }
-
-    [DataContract]
-    internal class User
-    {
-        [DataMember]
-        internal string firstname;
-
-        [DataMember]
-        internal string lastname;
-
-        [DataMember]
-        // internal double points;
-        internal string points;
-
-        [DataMember]
-        internal int totalpoints;
-    }
-}
-```
 
 ## <a name="next-steps"></a>Další kroky
 

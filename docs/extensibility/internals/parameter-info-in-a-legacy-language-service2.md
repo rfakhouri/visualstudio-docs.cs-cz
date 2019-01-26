@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a11f7416f77aa997d6874457cc3af83ebb761bb4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a6720eb2c7b624b9e440469853328c3e0505bb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936252"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informace o parametrech ve službě starší verze jazyka
 Informace o parametru technologie IntelliSense je popisek, který zobrazuje podpis metody, když uživatel zadá seznamu parametrů počáteční znak (obvykle otevřena závorka) pro seznam parametrů metody. Každý parametr je zadána a je zadán parametr oddělovač (obvykle čárku), popisek se aktualizuje a zobrazí další parametr tučným písmem.  

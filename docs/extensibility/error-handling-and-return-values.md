@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87ec370ce857345923d7c8deab0d61b8df1c0dde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e524939e6fe17dfdaafc4ad4f26d5978174f3352
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898846"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921918"
 ---
 # <a name="error-handling-and-return-values"></a>Zpracování chyb a návratových hodnot
 Rozšíření VSPackages a modelu COM použít stejnou architekturu pro chyby. `SetErrorInfo` a `GetErrorInfo` funkce jsou součástí rozhraní (API) systému Win32. Žádné VSPackage v integrovaném vývojovém prostředí (IDE) můžete volat tyto globální rozhraní API Win32 pro bohaté chybové informace záznamu při přijetí oznámení o chybě. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Poskytuje sestavení vzájemné spolupráce pro správu informací o chybě.  
@@ -56,5 +56,5 @@ Rozšíření VSPackages a modelu COM použít stejnou architekturu pro chyby. `
 ## <a name="see-also"></a>Viz také:  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [SetErrorInfo (Automatizace součástí)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)   
- [GetErrorInfo –](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)   
+ [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)   
  [ISupportErrorInfo rozhraní](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bfe3773032ff29fce831f675921289ed7a825ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fb0887802d6995e790ec0e61629b478b7b26ccc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828105"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042514"
 ---
 # <a name="how-to-set-permissions"></a>Postupy: Nastavení oprávnění
 
@@ -63,7 +63,7 @@ Princip základní zabezpečení hlásí, že aplikace má běžet s více než 
 
 2. Klikněte pravým tlačítkem na složku a potom klikněte na tlačítko **vlastnosti**.
 
-      **\<Název složky > vlastnosti** zobrazí se dialogové okno.
+     **\<Název složky > vlastnosti** zobrazí se dialogové okno.
 
 3. Klikněte na tlačítko **zabezpečení** kartu.
 

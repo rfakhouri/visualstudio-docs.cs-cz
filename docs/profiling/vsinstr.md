@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1c5d548ae8e197523fb92ed130ebeebb04af3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ccb25955a7ecb1ed37a69434e695a7417ea308
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945766"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039030"
 ---
 # <a name="vsinstr"></a>VSInstr
 Nástroj VSInstr se používá k instrumentaci binárních souborů. Vyvolá se pomocí následující syntaxe:  
@@ -56,8 +56,8 @@ VSInstr [/U] filename [/options]
 |**ResumeOnly:**{**před**`&#124;`**po**`&#124;`**horní**`&#124;`**dolní**}`,funcname`|Spustí nebo obnoví shromažďování dat během spuštění profilování.<br /><br /> Obvykle se používá k zahájení profilace, až **SuspendOnly** možnost zastavil profilace. V zadaném umístění vloží ResumeProfile API.<br /><br /> **Před** – bezprostředně před cílovou položkou funkce.<br /><br /> **Po** – ihned po ukončení funkce cíl.<br /><br /> **Horní** – okamžitě za cílovou položkou funkce.<br /><br /> **Dolní** – bezprostředně před každou vrácení cílová funkce.<br /><br /> `funcname` -Název cílová funkce.<br /><br /> Pokud cílová funkce obsahuje StopProfile funkce, funkce ResumeProfile vložena za ním.|  
   
 ## <a name="see-also"></a>Viz také:  
- [Vsperfmon –](../profiling/vsperfmon.md)   
- [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfMon](../profiling/vsperfmon.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Upozornění VSInstr](../profiling/vsinstr-warnings.md)   
  [Zobrazení sestav výkonu](../profiling/performance-report-views.md)

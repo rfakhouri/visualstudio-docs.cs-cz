@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd60db1a18280d616d06a5f37bc5a7fc446bc7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f89027e69c319c74e9c61ceb053edd9c2428548d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929329"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040801"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Dokončování slov ve službě starší verze jazyka
 Dokončování slov vyplní chybějící znaky na částečně napsaného slova. Pokud existuje jenom jeden možných dokončení, slovo dokončení po zadání znaku dokončení. Pokud částečné slovo odpovídá více než jednu možnost, zobrazí se seznam možných dokončení. Dokončení znak může být libovolný znak, který se nepoužívá pro identifikátory.  

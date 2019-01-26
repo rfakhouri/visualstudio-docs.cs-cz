@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 2515e4cd-9e61-486d-b067-58ba1a743ce4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f86e19bc055a95b79f119f834d1d23d4f3a4e2c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1229763c5522fe027b2a5c5890723aeb0045bc9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921715"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967375"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Použijte literály, kde je to vhodné
 
@@ -34,7 +34,7 @@ ms.locfileid: "53921715"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Pole je deklarován `static` a `readonly` (`Shared` a `ReadOnly` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) a je inicializován s hodnotou, kterou lze vypočítat v době kompilace.
 
 ## <a name="rule-description"></a>Popis pravidla

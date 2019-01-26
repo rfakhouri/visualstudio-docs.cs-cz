@@ -1,5 +1,5 @@
 ---
-title: 'CA1052: Statický vlastník typů by měl být zapečetěný'
+title: 'CA1052: Statické typy vlastníků by měly být zapečetěné'
 ms.date: 11/09/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ec090fd11c122699bafb3d72ca1eeab13ecb830
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8743dc617a7749a81528c8ef5c570f7d52b4a06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825942"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937084"
 ---
-# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Statický vlastník typů by měl být zapečetěný
+# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Statické typy vlastníků by měly být zapečetěné
 
 |||
 |-|-|
@@ -35,7 +35,7 @@ ms.locfileid: "53825942"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Veřejný nebo chráněný, není abstraktní typ obsahuje pouze statické členy a není deklarován [zapečetěné](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modifikátor.
 

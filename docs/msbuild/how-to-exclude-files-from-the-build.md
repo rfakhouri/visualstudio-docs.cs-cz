@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4ce4b7108a62e7f16c83d6cdcb637470fb94656
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937191"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Postupy: Vyloučení souborů ze sestavení
 V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení zahrnout všechny soubory v jednom adresáři nebo vnořenou sadu adresáře. Ale může být jeden soubor v adresáři nebo jednoho adresáře v vnořenou sadu adresáře, které nechcete zahrnout jako vstupy pro sestavení. Tento soubor nebo adresář můžete explicitně vyloučit z seznam vstupů. V projektu, který chcete zahrnout za určitých podmínek může být také soubor. Můžete explicitně deklarovat podmínky, za kterých je soubor součástí sestavení.  
@@ -124,5 +124,5 @@ V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení
   
 ## <a name="see-also"></a>Viz také:  
  [Položky](../msbuild/msbuild-items.md)   
- [Nástroj MSBuild](../msbuild/msbuild.md)   
+ [MSBuild](../msbuild/msbuild.md)   
  [Postupy: Výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md)   

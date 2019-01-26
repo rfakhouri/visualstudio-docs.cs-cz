@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6370b15d1530a924396b72cbefabd782094e2b91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34640a06fb231aad0cf0a48ebc001ef7e1b597a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979098"
 ---
 # <a name="modules-view"></a>Zobrazení modulů
 Zobrazení modulů seznam modulů dat profilování. Každý modul je kořenový uzel hierarchického stromu. Profilované funkce modulu jsou uvedeny pod uzlem modulu. Pokud data profilace byla shromážděna pomocí metody odběru vzorků, informace o řádku je uvedena pod uzel funkce a data ukazatel instrukce je uvedena pod uzlem řádku.  

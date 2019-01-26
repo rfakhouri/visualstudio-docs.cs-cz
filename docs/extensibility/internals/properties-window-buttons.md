@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3229f95f81fe839b0dd84cd7d1294600c21bbc0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d21e8d13ef8af83b12d30b6c78c253f371a11c30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933995"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973860"
 ---
 # <a name="properties-window-buttons"></a>Tlačítka okna Vlastnosti
 V závislosti na vývojový jazyk a typ produktu, jsou některá tlačítka zobrazí ve výchozím nastavení na panelu nástrojů **vlastnosti** okna. Ve všech případech **Categorized**, **Alphabetized**, **vlastnosti**, a **stránky vlastností** tlačítek se zobrazí. V jazyce Visual C# a Visual Basic **události** je zobrazeno tlačítko. V některých projektů Visual C++ **VC ++ zprávy** a **VC přepíše** tlačítek se zobrazí. Pro ostatní typy projektů, může se zobrazit další tlačítka. Další informace o tlačítka v **vlastnosti** okna, naleznete v tématu [okno vlastností](../../ide/reference/properties-window.md).  

@@ -30,15 +30,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54d70789fd603f66bdf60af7bb0198030be6b524
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ec0121f9048151ae91bd21d9ede1528f6e48f812
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786920"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945109"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Možnosti, textový Editor, všechny jazyky, posuvníky
 Toto dialogové okno umožňuje změnit výchozí chování posuvníku editoru kódu. Chcete-li zobrazit tyto možnosti, vyberte **možnosti** z **nástroje** nabídky. V rámci **textový Editor** složky, rozbalte **všechny jazyky** podsložku a klikněte na tlačítko **posuvníky**.

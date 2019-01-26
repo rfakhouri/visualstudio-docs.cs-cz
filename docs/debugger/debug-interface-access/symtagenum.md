@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 528a50cf-e13d-46ec-a98c-323d5d047de9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ea533cc9388d16de0c9c8bc632d60ef2c9c228
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 948fb65e3d98ddf1e821c67cc72c065c946a6e34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942460"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036144"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Určuje typ symbolu.  
@@ -211,7 +211,7 @@ enum SymTagEnum { 
  [Idiasession::findsymbolbyrva –](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)   
  [Idiasession::findsymbolbyrvaex –](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)   
  [Idiasession::findsymbolbytoken –](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)   
- [Idiasession::findsymbolbyva –](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
+ [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
  [Idiasession::findsymbolbyvaex –](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)   
  [Idiasession::findchildren –](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

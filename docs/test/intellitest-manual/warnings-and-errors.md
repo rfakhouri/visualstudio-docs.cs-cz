@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe52e31c7401acd6bc10d469d98eabf2916f84be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6c58aa23e4b5c3133de2bee8f29b3205cf7aff9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899022"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942629"
 ---
 # <a name="warnings-and-errors"></a>Upozornění a chyby
 
@@ -23,7 +23,7 @@ ms.locfileid: "53899022"
 
 * **Hranice**
   * [MaxBranches překročena](#maxbranches-exceeded)
-  * [MaxConstraintSolverTime překročena](#maxconstraintsolvertime-exceeded)
+  * [MaxConstraintSolverTime exceeded](#maxconstraintsolvertime-exceeded)
   * [MaxConditions překročena](#maxconditions-exceeded)
   * [MaxCalls překročena](#maxcalls-exceeded)
   * [MaxStack překročena](#maxstack-exceeded)
@@ -40,7 +40,7 @@ ms.locfileid: "53899022"
 
 * **Spuštění**
   * [Neočekávaná chyba při průzkumu](#unexpected-exploration)
-  * [Targetinvocationexception –](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)<p />
 
 * **Instrumentace**
   * [Neinstrumentované metody, které volá](#uninstrumented-method-called)
@@ -87,7 +87,7 @@ for (int i=0;
 ```
 
 <a name="maxconstraintsolvertime-exceeded"></a>
-## <a name="maxconstraintsolvertime-exceeded"></a>MaxConstraintSolverTime překročena
+## <a name="maxconstraintsolvertime-exceeded"></a>MaxConstraintSolverTime exceeded
 
 Používá Intellitestu [Řešitel omezení](input-generation.md#constraint-solver) vypočítat nové vstupů testu. Řešení omezení může být velmi časově náročný proces, takže IntelliTest umožňuje nakonfigurovat hranice – zejména **MaxConstraintSolverTime**.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4d119965-33a8-474c-9c64-95c5218c389c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8388e2f59935b5a0603d6cd31b3417d8578b39ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e0ab5a576a81414afe682e750930e7bfb4b57b4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820381"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033437"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 Získá odkaz na lexikální nadřazené symbolu.  
@@ -46,5 +46,5 @@ HRESULT get_lexicalParent ( 
  Je to možné symboly, které jsou popsané lexikální rodiče v se může objevit [lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

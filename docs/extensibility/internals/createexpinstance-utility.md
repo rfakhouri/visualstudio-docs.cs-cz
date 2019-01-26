@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1a9f73f396fffe93903f4295428a011c5b5e8d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961099"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042540"
 ---
 # <a name="createexpinstance-utility"></a>Nástroj CreateExpInstance
 Použití **CreateExpInstance** nástroj k vytvoření, obnovit nebo odstranit experimentální instanci sady Visual Studio. Experimentální instanci slouží k ladění a testování rozšíření sady Visual Studio beze změny základní produkt.  
@@ -39,10 +39,10 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  **/Clean**  
  Odstraní experimentální instanci aplikace.  
   
- **/ VSInstance**  
+ **/VSInstance**  
  Název adresáře, který obsahuje základní instance sady Visual Studio ke kopírování.  
   
- **/ RootSuffix**  
+ **/RootSuffix**  
  Přípona pro připojení k názvu adresáře experimentální instanci aplikace.  
   
 ## <a name="remarks"></a>Poznámky  
@@ -56,7 +56,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  Následující příklad Resetuje výchozí experimentální instanci sady Visual Studio:  
   
- **/ Reset CreateExpInstance.exe /VSInstance = 14.0 /RootSuffix = Exp**  
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
   
 ## <a name="see-also"></a>Viz také:  
  [Balíčky VSPackage](../../extensibility/internals/vspackages.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227782"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969717"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Použití uložených dat řešení IntelliTrace (C#, Visual Basic, C++)
 
@@ -269,7 +269,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
  [IntelliTrace](../debugger/intellitrace.md)
 
 #### <a name="forums"></a>Diskuzní fóra
- [Ladicí program sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Doprovodné materiály
  [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 6: Testování sady nástrojů](http://go.microsoft.com/fwlink/?LinkID=255203)

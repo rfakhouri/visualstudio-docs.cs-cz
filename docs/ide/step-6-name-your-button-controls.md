@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ded8694e5ec4b071193f74aa5fded5ddb54560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ae13c13ce4f8574df8a6a5ffbf432fab555810
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820355"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043593"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6: Pojmenujte své ovládací prvky tlačítek
 Existuje pouze jeden <xref:System.Windows.Forms.PictureBox> na formuláři. Při přidávání jej rozhraní IDE automaticky pojmenuje **pictureBox1**. Existuje pouze jeden <xref:System.Windows.Forms.CheckBox>, který se nazývá **checkBox1**. Brzy napíšete kód a tento kód bude odkazovat na ovládací prvek CheckBox a PictureBox. Protože se nachází pouze jednu roli od každého z těchto ovládacích prvků, budete vědět, co znamenají, až se zobrazí **pictureBox1** nebo **checkBox1** ve vašem kódu.

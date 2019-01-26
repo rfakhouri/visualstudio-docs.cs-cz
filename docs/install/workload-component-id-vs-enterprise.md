@@ -5,7 +5,7 @@ description: Použití pracovního vytížení a komponenta ID pro instalaci sad
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: e84aaad94916687a34179677cb569595746d86e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 820ee01cf77ec3db3c74d224a6a5b5c30b947995
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964569"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977158"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Složka komponenty Visual Studio Enterprise 2017
 
@@ -753,7 +753,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Popis:** Sestavte škálovatelné síťové aplikace využívající Node.js, asynchronního runtime JavaScriptu založený na událostech. 
+**Popis:** Sestavte škálovatelné síťové aplikace využívající Node.js, asynchronního runtime JavaScriptu založený na událostech.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 

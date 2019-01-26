@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 030d1d520ef2feb1f7b530c55c609a1cd951893b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d011faba5c8dc423ec3127563ea001a689d92098
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861066"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022882"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Vyhněte se nadměrné dědičnosti
 
@@ -34,7 +34,7 @@ ms.locfileid: "53861066"
 |Kategorie|Microsoft.Maintainability|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ je více než čtyři úrovně hluboko v hierarchii dědičnosti.
 
 ## <a name="rule-description"></a>Popis pravidla

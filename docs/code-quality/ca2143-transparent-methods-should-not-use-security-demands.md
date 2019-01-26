@@ -1,5 +1,5 @@
 ---
-title: 'CA2143: Transparentní metody nemohou používat požadavky zabezpečení'
+title: 'CA2143: Transparentní metody by neměly používat požadavky zabezpečení'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff92d7ed697db2f692ed17426bdb5dad38164cf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08a7c4d6d7c71954869311b402eed65492391432
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954562"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043074"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Transparentní metody nemohou používat požadavky zabezpečení
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Transparentní metody by neměly používat požadavky zabezpečení
 
 |||
 |-|-|
@@ -27,7 +27,7 @@ ms.locfileid: "53954562"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Které má průhledné typ nebo metoda je označena pomocí deklarace s <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` vyžádání nebo volání metody <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> metody.
 
 ## <a name="rule-description"></a>Popis pravidla

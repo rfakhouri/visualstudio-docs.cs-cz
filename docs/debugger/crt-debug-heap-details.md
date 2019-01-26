@@ -70,15 +70,15 @@ helpviewer_keywords:
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900672b7b335880df9c5a17c8b15a8c6394ae67e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95d69b89dd9b0d3b3aa37187ce69cc57c303cd53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949479"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934741"
 ---
 # <a name="crt-debug-heap-details"></a>Podrobnosti haldy ladění CRT
 Toto téma obsahuje podrobný pohled na haldu ladění CRT.  
@@ -148,7 +148,7 @@ typedef struct _CrtMemBlockHeader
 ##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Typy bloků na haldě ladění  
  Každý blok paměti v haldě ladění je přiřazen k jednomu z pěti typů rozdělení. Tyto typy jsou sledovány a jinak hlášeny pro účely detekce nevrácení a vykazování stavu. Můžete zadat typ bloku přidělením pomocí přímého volání jedné z funkcí přidělení haldy ladění, jako [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Pět typů bloků paměti v haldě ladění (nastavit **nBlockUse** člena **_CrtMemBlockHeader** struktura) jsou následující:  
   
- **_NORMAL_BLOCK –**  
+ **_NORMAL_BLOCK**  
  Volání [malloc](/cpp/c-runtime-library/reference/malloc) nebo [calloc](/cpp/c-runtime-library/reference/calloc) vytvoří blok Normal. Pokud máte v úmyslu používat pouze normální bloky a nepotřebujete bloky klienta, můžete definovat [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), což způsobí, že všechny přidělení haldy namapována na své ekvivalenty ladění v sestaveních ladění volá. To vám umožní soubor název a informace čísla řádku o každého volání přidělení v odpovídajícím záhlaví bloku.  
   
  `_CRT_BLOCK`  
@@ -167,7 +167,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_FREE_BLOCK**  
  Za normálních okolností jsou bloky, které jsou uvolněny odebrán ze seznamu. Zkontroluje, jestli uvolněné paměti není stále zapisováno, nebo simulovat podmínky nedostatku paměti, můžete zachovat uvolněné bloky v propojeném seznamu, označeny jako volné a se známou bajtovou hodnotou (nyní 0xDD).  
   
- **_IGNORE_BLOCK –**  
+ **_IGNORE_BLOCK**  
  Je možné vypnout operace haldy ladění pro určitou dobu. Během této doby se bloky paměti jsou uloženy v seznamu, ale jsou označeny jako bloky ignorovat.  
   
  Pokud chcete zjistit typ a podtyp daného bloku, použijte funkci [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) a makra **_BLOCK_TYPE** a **_BLOCK_SUBTYPE**. Makra jsou definovány (v crtdbg.h) následovně:  

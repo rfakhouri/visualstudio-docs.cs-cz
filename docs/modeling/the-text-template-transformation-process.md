@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, transformation process
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1f4cadbbf9de2f9f02a8bc95a4f436f399e2052b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91e698f5b033629b688bb1aa82de019fb9fbf199
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908654"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966410"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformace textových šablon
 Proces transformace textových šablon přijímá jako vstupní soubor textové šablony a vygeneruje nový textový soubor jako výstup. Například textové šablony můžete použít ke generování kódu jazyka Visual Basic nebo C#, nebo můžete vygenerovat zprávu ve formátu HTML.
@@ -35,7 +35,7 @@ Proces transformace textových šablon přijímá jako vstupní soubor textové 
 ## <a name="the-engine"></a>Modul
  Modul přijímá jako řetězec z hostitele, která zpracovává všechny soubory, které se používají v transformace procesu šablony. Modul následně požádá hostitele najít všechny vlastní procesory direktiv a další aspekty životního prostředí. Modul se potom zkompiluje a spustí vygenerované třídy transformace. Modul vrátí generovaný text na hostitele, který obvykle uloží text do souboru.
 
-## <a name="the-host"></a>Hostitel
+## <a name="the-host"></a>The Host
  Hostitel je zodpovědná za nic, které se týkají prostředí mimo proces transformace, včetně následujících:
 
 -   Hledání textu a binárních souborů požadoval modul nebo procesor direktiv. Hostitel může prohledáním adresáře a globální mezipaměti sestavení k vyhledání sestavení. Hostitele můžete vyhledat kód vlastního procesoru direktiv pro tento motor. Hostitel můžete také najít a čtení textových souborů a vrátí jejich obsah jako řetězce.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b175c6b7e0fcd145d58318d89707cfd907acb2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab169dba1ab6692c0a6df8665e20d2695c7ac2c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913369"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028745"
 ---
 # <a name="list-disassembly-command"></a>Zobrazit zpětný překlad – příkaz
 Spustí proces ladění a umožňuje určit způsob zpracování chyb.
@@ -55,7 +55,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
  Volitelné. Označuje, zda chcete-li zobrazit názvy symbolů. Výchozí hodnota je `yes`.
 
- [/ linenumbers:`yes`&#124;`no`]
+ [/linenumbers:`yes`&#124;`no`]
 
  Volitelné. Umožňuje zobrazení čísla řádků související se zdrojovým kódem. Přepínač/Source musí mít hodnotu `yes` /linenumbers přepínač.
 

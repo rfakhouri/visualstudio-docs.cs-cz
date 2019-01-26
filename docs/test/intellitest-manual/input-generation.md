@@ -6,24 +6,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936616"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Vstupní generování pomocí dynamické symbolické spuštění
 
-IntelliTest generuje vstupy pro [parametrizované testy částí](test-generation.md#parameterized-unit-testing) díky analýze podmíněného vytváření větve v programu. Testovací vstupy jsou zvolili podle toho, jestli můžete aktivovat nové chování větvení programu. Analýza je přírůstkové proces. Zpřesnění predikát **dotaz: Můžu -> {true, false}** přes formální vstupní parametry testu **můžu**. **q** představuje sadu chování, které již IntelliTest sledoval. Na začátku **q: = false**, protože nic ještě pozorováno.
+IntelliTest generuje vstupy pro [parametrizované testy částí](test-generation.md#parameterized-unit-testing) díky analýze podmíněného vytváření větve v programu.
+Testovací vstupy jsou zvolili podle toho, jestli můžete aktivovat nové chování větvení programu.
+Analýza je přírůstkové proces. Zpřesnění predikát **dotaz: Můžu -> {true, false}** přes formální vstupní parametry testu **můžu**. **q** představuje sadu chování, které již IntelliTest sledoval.
+Na začátku **q: = false**, protože nic ještě pozorováno.
 
 Kroky smyčky jsou:
 
-1. IntelliTest určuje vstupy **můžu** tak, aby **q (i) = false** pomocí [Řešitel omezení](#constraint-solver). 
+1. IntelliTest určuje vstupy **můžu** tak, aby **q (i) = false** pomocí [Řešitel omezení](#constraint-solver).
    Pomocí vytváření, vstup **můžu** bude trvat cestu k provádění není online. Zpočátku to znamená, že **můžu** může být jakýkoli vstup, protože žádná cesta provedení ještě nebyla zjištěná.
 
 1. IntelliTest spustí test s vybraným vstup **můžu**a sleduje spuštění testu a testovaném programu.
@@ -55,7 +58,8 @@ IntelliTest používá [Z3](https://github.com/Z3Prover/z3/wiki) Řešitel omeze
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Dynamický kód pokrytí
 
-IntelliTest jako vedlejší efekt modulu runtime, monitorování, shromažďuje data o pokrytí kódu dynamické. Tento postup se nazývá *dynamické* protože IntelliTest ví pouze o kód, který byl proveden, proto ji nelze udělit absolutní hodnoty pro pokrytí stejným způsobem jako jiný nástroj pokrytí obvykle. 
+IntelliTest jako vedlejší efekt modulu runtime, monitorování, shromažďuje data o pokrytí kódu dynamické.
+Tento postup se nazývá *dynamické* protože IntelliTest ví pouze o kód, který byl proveden, proto ji nelze udělit absolutní hodnoty pro pokrytí stejným způsobem jako jiný nástroj pokrytí obvykle.
 
 Například když IntelliTest hlásí dynamické pokrytí jako základní bloky 5/10, to znamená, že pět bloků mimo deset byly pokryty, kde celkový počet bloků v všechny metody, které jste zatím přejít pomocí analýzy (na rozdíl od všech metod, které existují v sestavení v rámci testu) je deset.
 Dále v analýzu, jako jsou dostupné další metody zjištění obou čítači (5 v tomto příkladu) a může zvýšit jmenovatel (10).
@@ -80,8 +84,7 @@ IntelliTest monitoruje prováděnou pokyny při spuštění testu a testovaném 
 To znamená, že IntelliTest musí k vytvoření určité typy objektů a nastavení jejich hodnot pole. Pokud je třída [viditelné](#visibility) a má [viditelné](#visibility) výchozí konstruktor, inteligentní testování můžete vytvořit instanci třídy.
 Pokud jsou všechna pole třídy [viditelné](#visibility), Intellitestu automaticky nastavit pole.
 
-Pokud typ není viditelný, nebo pole nejsou [viditelné](#visibility), Intellitestu potřebuje nápovědu k vytvoření objektů a přiřaďte je do zajímavého stavů, abyste dosáhli pokrytí kódu maximální. IntelliTest použít k vytváření a inicializace instancí libovolně reflexe, ale to většinou není  
-žádoucí, protože to může být přenese objekt do stavu, ve kterém může nikdy dojít během provádění programu normální. IntelliTest se místo toho spoléhá na pomocné parametry od uživatele.
+Pokud typ není viditelný, nebo pole nejsou [viditelné](#visibility), Intellitestu potřebuje nápovědu k vytvoření objektů a přiřaďte je do zajímavého stavů, abyste dosáhli pokrytí kódu maximální. IntelliTest použít k vytváření a inicializace instancí libovolně reflexe, ale to není obvykle žádoucí, protože to může být přenese objekt do stavu, ve kterém může nikdy dojít během provádění programu normální. IntelliTest se místo toho spoléhá na pomocné parametry od uživatele.
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>Viditelnost
@@ -108,7 +111,7 @@ Pravidla jsou následující:
 
 Jak se testovací metoda, která má parametr typu rozhraní? Nebo nezapečetěné třídy? IntelliTest neví, implementace, které se později použije, když tato metoda je volána. A možná není k dispozici i skutečné implementaci k dispozici v době testu.
 
-Konvenční odpovědí je použití *napodobení objekty* s explicitní chování. 
+Konvenční odpovědí je použití *napodobení objekty* s explicitní chování.
 
 Mock objektu implementuje rozhraní (nebo rozšiřuje nezapečetěná třída). To však nepředstavuje skutečné implementaci, ale jenom zástupce, který umožňuje spuštění testů pomocí mock objektu. Její chování je ručně definovali jako součást každý testovací případ, ve kterém se používá. Existuje mnoho nástrojů, které usnadňují definování mock objektů a jejich očekávané chování, ale toto chování musí stále definovat manuálně.
 
@@ -129,7 +132,8 @@ IntelliTest v důvody o **struktura** hodnoty je podobným způsobem, jakým se 
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Pole a řetězce
 
-IntelliTest monitoruje prováděnou pokyny při spuštění testu a testovaném programu. Zejména dodržuje, když program závisí na délce řetězce nebo pole (a dolní meze a délek vícerozměrné pole). Také sleduje, jak program používá různé prvky řetězce nebo pole. Poté použije [Řešitel omezení](#constraint-solver) k určení, které délky a hodnoty prvků může způsobit testu a chovat v mnoha zajímavými způsoby v testovaném programu.
+IntelliTest monitoruje prováděnou pokyny při spuštění testu a testovaném programu. Zejména dodržuje, když program závisí na délce řetězce nebo pole (a dolní meze a délek vícerozměrné pole).
+Také sleduje, jak program používá různé prvky řetězce nebo pole. Poté použije [Řešitel omezení](#constraint-solver) k určení, které délky a hodnoty prvků může způsobit testu a chovat v mnoha zajímavými způsoby v testovaném programu.
 
 IntelliTest se pokusí pro minimalizaci velikosti pole a řetězců, které jsou potřebné k aktivaci zajímavé chování programu.
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1309: Použijte Řadový StringComparison'
+title: 'CA1309: Použijte řadový StringComparison'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e36b199a3447ff3d38266adc723caf229973c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 677ade8a179974b2984827e9752b9783489187a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043268"
 ---
-# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Použijte Řadový StringComparison
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Použijte řadový StringComparison
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53838664"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Který je nelingvistická operace porovnání řetězců nemá nastaven <xref:System.StringComparison> buď parametr **pořadí** nebo **OrdinalIgnoreCase**.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e6f2216d26315491e7e187acdd31530c0bcf013
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3dc7763b8c9dd303ec154dae02db3fb5aa677782
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829073"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971163"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nedodávejte nevydané formáty prostředku
 
@@ -31,7 +31,7 @@ ms.locfileid: "53829073"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Soubor prostředků bylo vytvořeno pomocí verze rozhraní .NET Framework, která se momentálně nepodporuje.
 
 ## <a name="rule-description"></a>Popis pravidla

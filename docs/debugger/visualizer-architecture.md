@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a4ac05283b010ca7a549c9bc6829061e420e30
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 895b8b0b77504c6fe76295d7d95114249bf69b83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922127"
 ---
 # <a name="visualizer-architecture"></a>Architektura vizualizéru
 Architektura vizualizéru ladicí program má dvě části:  
@@ -41,20 +41,20 @@ Architektura vizualizéru ladicí program má dvě části:
   
 |Na straně ladicího programu|Na straně laděného procesu|  
 |-------------------|-------------------|  
-|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService rozhraní|Datový objekt|  
+|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService Interface|Datový objekt|  
   
  Uživatelské rozhraní načte data, která má být zobrazen od poskytovatele objektu, která existuje na straně ladicího programu:  
   
 |Na straně ladicího programu|Na straně laděného procesu|  
 |-------------------|-------------------|  
-|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService rozhraní|Datový objekt|  
+|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService Interface|Datový objekt|  
 |Objekt zprostředkovatele (implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)||  
   
  Na straně laděného procesu volat zdroj objektu je odpovídající objekt:  
   
 |Na straně ladicího programu|Na straně laděného procesu|  
 |-------------------|-------------------|  
-|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService rozhraní|Datový objekt|  
+|Třída DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService Interface|Datový objekt|  
 |Objekt zprostředkovatele (implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)|Objekt zdroje (odvozený od <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)|  
   
  Objekt zprostředkovatele poskytuje data objektu, která má být zobrazen na vizualizátor uživatelského rozhraní. Objekt zprostředkovatel získá dat objektů ze zdroje objektu. Objekt zprostředkovatele a objekt zdroje poskytují rozhraní API pro komunikaci data objektu mezi straně ladicího programu a na straně laděného objektu.  

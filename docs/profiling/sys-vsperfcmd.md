@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a2fb99a6b43328fcc31a5cba0b1d4f0c3df168
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8197ef7c0bf8ba7b38302e5596966328687abc0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908802"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973691"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 *VSPerfCmd.exe* **Sys** parametr nastaví profilování události, ke které se definuje tak, aby událostí volání systému (volání funkcí v profilované aplikace v operačním systému) a volitelně se mění číslo volání systému v intervalu vzorkování z výchozí hodnoty 10.  
@@ -49,13 +49,13 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
  **PF**[**:**`Events`]  
  Nastaví událost odběru vzorků na chyby stránek a volitelně nastaví interval vzorkování na `Events`. Výchozí interval PF je 10.  
   
- **Časovač**[**:**`Cycles`]  
+ **Timer**[**:**`Cycles`]  
  Nastaví událost odběru vzorků na hodin procesoru cykly a volitelně nastaví interval vzorkování na `Cycles`. Výchozí interval časovače je 10 000 000.  
   
  **Čítač:** `Name`[`,Reload`[`,FriendlyName`]]  
  Nastaví událost odběru vzorků na výkon procesoru čítač určené `Name` a nastaví interval vzorkování na `Reload`.  
   
- **Uvolňování paměti**[**:**{**přidělení**&#124;**životnost**}]  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
  Shromažďuje data paměti .NET. Ve výchozím nastavení (**přidělení**), data se shromažďují v každé události přidělení paměti. Když **životnost** parametr zadán, data se shromažďují také na všechny události uvolňování paměti kolekce.  
   
 ## <a name="example"></a>Příklad  
@@ -67,7 +67,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /Sys:20
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil služby](../profiling/command-line-profiling-of-services.md)

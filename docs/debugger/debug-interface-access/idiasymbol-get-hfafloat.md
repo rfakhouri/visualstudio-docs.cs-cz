@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_hfafloat – | Dokumentace Microsoftu
+title: IDiaSymbol::get_hfaFloat | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73ddcffe-cdac-4b03-be42-82ef985d17ee
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e2ba5bc1059e0e3650329b48681687652ae143
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95454741aa20b083c768f0df9678e47b471f6fe3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965879"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043125"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 Získá příznak, který určuje, zda uživatelem definovaný typ (UDT) obsahuje homogenní s plovoucí desetinnou čárkou agregace (HFA) data typ float.  
@@ -43,12 +43,12 @@ HRESULT get_hfaFloat( 
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

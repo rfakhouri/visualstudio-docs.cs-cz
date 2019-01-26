@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 865b5c220a410c9b0d744263820a50dd1bb9395a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878624"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945057"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Podporované změny kódu (C# a Visual Basic)
 Upravit a pokračovat zpracovává většinu typů změn kódu uvnitř těla metody. Během ladění, ale nejde použít většinu změn mimo těl metod a několik změn v rámci těla metod. Nepodporované změny použít, musíte Zastavit ladění a znovu s novou verzi kódu.
@@ -59,7 +59,7 @@ Následující tabulka uvádí změny, které mohou být provedeny C# a kód jaz
 |Jmenné prostory|Přidejte|
 |Obory názvů, typy, členy|Odstranit|
 |Obecné typy|Přidat nebo upravit|
-|Rozhraní|Upravit|
+|Rozhraní|Modify|
 |Typy|Přidat člena abstraktní nebo virtuální, přidejte přepsání (viz [podrobnosti](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |Typy|Přidat destruktor|
 |Členové|Upravte člen odkazující na vloženém typu spolupráce|
@@ -106,4 +106,4 @@ Nepodporované aplikace a platformy obsahují ASP.NET 5, Silverlight 5 a Windows
   
 ## <a name="see-also"></a>Viz také  
  [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Postupy: Použití operace upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [Postupy: Použití operace Upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

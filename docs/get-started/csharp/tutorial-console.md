@@ -1,32 +1,32 @@
 ---
-title: 'Kurz: Začínáme s C# konzolové aplikace'
+title: 'Kurz: Vytvořit jednoduchou C# Konzolová aplikace'
 description: Zjistěte, jak vytvořit konzolovou aplikaci C# v sadě Visual Studio, krok za krokem.
 ms.custom: seodec18, get-started
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 71a465b80f56cba56d0c20d3484765ca1837b167
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872505"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936954"
 ---
-# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Kurz: Začínáme s aplikaci konzoly C# v sadě Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Kurz: Vytvořit jednoduchou C# konzolovou aplikaci v sadě Visual Studio
 
-V tomto kurzu pro jazyk C#, budete používat Visual Studio k vytváření a spustíte aplikaci konzoly a prozkoumat některé funkce [sady Visual Studio integrované vývojové prostředí (IDE)](../visual-studio-ide.md) při uděláte.
+V tomto kurzu pro C#, Visual Studio budete používat k vytváření a spustíte aplikaci konzoly a prozkoumat některé funkce integrovaného vývojového prostředí (IDE) sady Visual Studio, když uděláte.
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -42,7 +42,23 @@ Pokud chcete začít, vytvoříme C# projekt aplikace. Typ projektu obsahuje vš
 
 ### <a name="add-a-workgroup-optional"></a>Přidat do pracovní skupiny (nepovinné)
 
-Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můžete ho získat tak, že přidáte **vývoj pro různé platformy .NET Core** pracovního vytížení. Zjistěte, jak to udělat, najdete v článku "[co je zatížení a jak jeden přidat?](#workload)" části v části Nejčastější dotazy.
+Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můžete ho získat tak, že přidáte **vývoj pro různé platformy .NET Core** pracovního vytížení. Tady je způsob.
+
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Pomocí dialogového okna Nový projekt
+
+1. Zvolte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
+
+   ![Zvolte odkaz otevřít instalační program Visual Studio z dialogového okna Nový projekt](./media/csharp-open-visual-studio-installer-generic-dark.png)
+
+1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro různé platformy .NET Core** úlohy a klikněte na tlačítko **změnit**.
+
+   ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Pomocí nabídky panelu nástrojů
+
+1. Zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
+
+1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro různé platformy .NET Core** úlohy a klikněte na tlačítko **změnit**.
 
 ## <a name="create-the-app"></a>Vytvoření aplikace
 
@@ -69,7 +85,7 @@ Začněme procvičili matematiku celé číslo v C#.
 
    ![Klikněte na tlačítko kalkulačky ke spuštění aplikace z panelu nástrojů](./media/csharp-console-calculator-button.png)
 
-   Otevře se okno konzoly, který zjistí součet 42 + 119.  
+   Otevře se okno konzoly, který zjistí součet 42 + 119.
 
 1. Nyní, zkuste změnit `int c = a + b;` řádek kódu pomocí jiný operátor `-` pro odčítání, `*` pro násobení, nebo */* pro dělení.
 
@@ -188,7 +204,10 @@ Vylepšili jsme v naší aplikaci základní kalkulačky, ale ještě nemá fail
 
 Například, pokud se pokusíte dělení čísla nulou nebo zadejte alfanumerického znaku při aplikace očekává, že číselný znak (nebo naopak), aplikace přestane fungovat a vrátí chybu.
 
-Pojďme si několik běžných chyby vstupu uživatele, vyhledejte je v [ladicí program](../../debugger/debugger-feature-tour.md)a opravte v kódu.
+Pojďme provede několik běžných chyby vstupu uživatele, vyhledejte v ladicím programu a opravte v kódu.
+
+>[!TIP]
+>Další informace o ladicím programu a jak to funguje, najdete v článku [první seznámení s ladicím programu sady Visual Studio](../../debugger/debugger-feature-tour.md) stránky.
 
 ### <a name="fix-the-divide-by-zero-error"></a>Opravte chybu "dělení nulou"
 
@@ -232,7 +251,7 @@ Chcete-li vyřešit tuto chybu, jsme musí Refaktorovat kód, který jste dřív
 
 #### <a name="revise-the-code"></a>Revizi kódu
 
-Místo využívají `program` třídy pro zpracování veškerý kód, naší aplikace budeme budete rozdělit do dvou tříd: `calculator` a `program`.  
+Místo využívají `program` třídy pro zpracování veškerý kód, naší aplikace budeme budete rozdělit do dvou tříd: `calculator` a `program`.
 
 `calculator` Třídy bude zpracovávat hromadné výpočtu práci a `program` třídy bude zpracovávat uživatelské rozhraní a zaznamenávání chyb práce.
 
@@ -506,48 +525,6 @@ namespace Calculator
 
 ```
 
-## <a name="quick-answers-faq"></a>Rychlé odpovědi – nejčastější dotazy
-
-Tady je rychlý – nejčastější dotazy ke zvýraznění některých klíčových koncepcí. V části Nejčastější dotazy také odpovědi na otázky, ke kterým může při postupujte podle pokynů v tomto kurzu.
-
-### <a name="what-is-c"></a>Co je C#?
-
-C# je programovací jazyk zajišťující bezpečnost typů, která běží na rozhraní .NET Framework a .NET Core. Pomocí jazyka C# můžete vytvořit Windows aplikace, klient-server, databázové aplikace, XML webové služby, distribuované součásti a další.
-
-### <a name="what-is-visual-studio"></a>Co je sada Visual Studio?
-
-Visual Studio je integrované vývojové sady nástrojů podporujících produktivitu pro vývojáře. Si ho představit jako program, který můžete použít k vytvoření aplikací a aplikací.
-
-### <a name="what-is-a-console-app"></a>Co je konzolová aplikace?
-
-Konzolová aplikace přijímá vstupní a zobrazí výstup v okně příkazového řádku, označovaný také jako do konzoly.
-
-### <a name="what-is-net-core"></a>Co je .NET Core?
-
-.NET core je dalším krokem evoluční rozhraní .NET Framework. Pokud rozhraní .NET Framework umožňují sdílení kódu napříč programovacími jazyky, .NET Core přidává možnost sdílení kódu napříč platformami. Ještě lepší je open source.
-
-(Rozhraní .NET Framework a .NET Core zahrnují knihovny předem připravených funkce. Zahrnují taky, že common language runtime (CLR), který se chová jako virtuální počítač, ve kterém se spustí váš kód.)
-
-### <a id="workload"></a>Co je zatížení a jak jeden přidat?
-
-Úlohy v sadě Visual Studio představuje sadu programovací možnosti a šablony, které můžete použít k přizpůsobení instalace sady Visual Studio. Úloha se nainstaluje pouze těch nástrojů, které potřebujete pro programovací jazyk a platformu podle vašeho výběru. Tady je postup k instalaci.
-
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Pomocí dialogového okna Nový projekt
-
-1. Zvolte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
-
-   ![Zvolte odkaz otevřít instalační program Visual Studio z dialogového okna Nový projekt](./media/csharp-open-visual-studio-installer-generic-dark.png)
-
-1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro různé platformy .NET Core** úlohy a klikněte na tlačítko **změnit**.
-
-   ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
-
-#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Pomocí nabídky panelu nástrojů
-
-1. Zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
-
-1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro různé platformy .NET Core** úlohy a klikněte na tlačítko **změnit**.
-
 ## <a name="next-steps"></a>Další kroky
 
 Blahopřejeme k dokončení tohoto kurzu! Další ještě více, pokračujte v následujících kurzech.
@@ -557,4 +534,5 @@ Blahopřejeme k dokončení tohoto kurzu! Další ještě více, pokračujte v n
 
 ## <a name="see-also"></a>Viz také:
 
-* [Základy C# pro naprosté začátečníky videokurz](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Videokurz: C#Základy pro naprosté začátečníky](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Další informace k ladění C# kódu v sadě Visual Studio](tutorial-debugger.md)

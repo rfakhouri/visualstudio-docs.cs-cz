@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: caca7622d2634a6da08d0d09aaef5b0a8634180e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54204398"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986550"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Zobrazení hodnot dat v datových tipech v editoru kódu
 
-DataTips poskytují pohodlný způsob, jak zobrazit informace o proměnných ve svém programu během ladění. DataTips fungovat pouze v režimu pozastavení a pouze s proměnnými, které jsou v aktuálním oboru spuštění. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) a [opravovat chyby napsáním lépe C# kód](../debugger/write-better-code-with-visual-studio.md) před provedením tohoto článku.
+DataTips poskytují pohodlný způsob, jak zobrazit informace o proměnných ve svém programu během ladění. DataTips fungovat pouze v režimu pozastavení a pouze s proměnnými, které jsou v aktuálním oboru spuštění. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) a [nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md) před provedením tohoto článku.
   
 ## <a name="work-with-datatips"></a>Práce s DataTips
 
@@ -124,7 +124,7 @@ Exportovat DataTips do souboru XML, který můžete sdílet nebo upravovat pomoc
 
 ## <a name="see-also"></a>Viz také:  
  [Co je ladění?](../debugger/what-is-debugging.md)  
- [Oprava chyb napsáním lépe C# kódu](../debugger/write-better-code-with-visual-studio.md)  
+ [Nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md)  
  [Nejdřív se podívejte na ladění](../debugger/debugger-feature-tour.md) [zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)   
  [Kukátko a Rychlé kukátko Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)   

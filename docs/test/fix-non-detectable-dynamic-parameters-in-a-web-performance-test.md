@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1639128be249c6ca91b611819a8a09394fad499d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab786beecd27eff20f3b71570facb8859d7b9918
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848477"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970094"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Oprava nedetekovatelných dynamických parametrů v testu výkonnosti webu
 
@@ -238,7 +238,7 @@ Abychom si předvedli zjistitelný a nezjistitelný dynamický parametr, vytvoř
 
      ![Pomocí parametru nahradit text](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Parametr QueryString *JScriptQuery.aspx* požadavku se aktualizuje s použitím nového parametru kontextu:  CustomQueryString = jScriptQueryString___ {{Param0}}.
+     Parametr QueryString *JScriptQuery.aspx* požadavku se aktualizuje s použitím nového parametru kontextu:  CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Parametr použitý pro řetězce dotazu](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 

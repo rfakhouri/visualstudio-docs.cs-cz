@@ -1,5 +1,5 @@
 ---
-title: 'CA1036: Přepište metody srovnatelných typů'
+title: 'CA1036: Přepište metody u srovnatelných typů'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05f4bd750f1ec2ad4d336acb1a00b8848de389bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd87e75134494ef928708e64015f413bc85878c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825578"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980684"
 ---
-# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Přepište metody srovnatelných typů
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Přepište metody u srovnatelných typů
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53825578"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný typ implementuje <xref:System.IComparable?displayProperty=fullName> rozhraní, nedojde k přepsání <xref:System.Object.Equals%2A?displayProperty=fullName> nebo nepřetěžuje specifické pro jazyk operátor rovnosti, nerovnosti, menší – než, nebo větší-než. Pravidlo nevytváří sestavu porušení, pokud typ dědí pouze implementace rozhraní.
 
 ## <a name="rule-description"></a>Popis pravidla

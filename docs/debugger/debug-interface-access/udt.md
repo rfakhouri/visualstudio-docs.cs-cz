@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a220125b22fd60b6547418a976f00e2ddd6b49aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7ae70fae7299bb12f5fcf401f4a9ba386fe7204
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942106"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987541"
 ---
 # <a name="udt"></a>UDT
 Každé třídy, struktury a sjednocení je identifikován `SymTagUDT` symbol. Každý člen, funkce, data, nebo vnořeného typu a každou ze základních tříd, zobrazí se jako podřízený objekt třídy uživatelem definovaný typ (UDT).  

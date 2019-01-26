@@ -10,15 +10,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio], Visual Basic
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01c255a7e89298a2a4bd7548bab0b548520ceed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9654d952d0d9ef7166c4a4f05930e91f4e8d9632
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877887"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978695"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Technologie IntelliSense pro soubory kódu jazyka Visual Basic
 
@@ -42,7 +42,7 @@ Dokončení může být ve výchozím nastavení vypnuta odznačením **automati
 
 Dokončení lze vyvolat ručně vyvoláním seznam členů, úplné slovo nebo **Alt**+**šipka vpravo**. Další informace najdete v tématu [použití IntelliSense](../ide/using-intellisense.md).
 
-## <a name="intellisense-in-zone"></a>Technologie IntelliSense v zóně
+## <a name="intellisense-in-zone"></a>IntelliSense in Zone
 
 Technologie IntelliSense v zóně pomáhá vývojáře jazyka Visual Basic, kteří potřebují nasazovat aplikace prostřednictvím [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a jsou omezeny na nastavení částečným vztahem důvěryhodnosti. Tuto funkci:
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 690770c2091d3c0a983b91b9a25afc3d3eb4b348
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974016"
 ---
 # <a name="custom-colorable-items"></a>Vlastní položky které lze zabarvit
 Seznam typů můžete přepsat pro barevné označování, jako jsou klíčová slova a komentáře, díky implementaci vlastní, které lze zabarvit položky jako součást služby jazyka.  
@@ -30,7 +30,7 @@ Seznam typů můžete přepsat pro barevné označování, jako jsou klíčová 
 > [!CAUTION]
 >  V které lze zabarvit název pro zabránění kolizím s existující názvy, které lze zabarvit položky, měli byste zahrnout název jazyka. Pokud změníte název jedné z položek aplikace které lze zabarvit během vývoje, je nutné obnovit, který byl vytvořen při prvním získal přístup k které lze zabarvit položky mezipaměti. Můžete resetovat experimentální mezipaměť **CreateExpInstance** nástroj, který se instaluje se sadou Visual Studio SDK, obvykle v adresáři:  
 >   
->  *C:\Program soubory (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+>  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
 >  Chcete-li obnovit mezipaměť, zadejte **/reset CreateExpInstance**. Další informace o **CreateExpInstance**, naleznete v tématu [nástroj CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   

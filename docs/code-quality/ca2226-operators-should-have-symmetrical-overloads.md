@@ -1,5 +1,5 @@
 ---
-title: 'CA2226: Operátory by měly mít symetrické přetížení'
+title: 'CA2226: Operátory by měly mít symetrická přetížení'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3322f4ca9c2e6bcfbd6ff80843a48b01e030f4d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6a38f6f4e76f5195e042b0ede2b2a8a5384a1cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938013"
 ---
-# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operátory by měly mít symetrické přetížení
+# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operátory by měly mít symetrická přetížení
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53921027"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ implementuje operátor rovnosti nebo nerovnosti a neimplementuje opačný operátor.
 
 ## <a name="rule-description"></a>Popis pravidla

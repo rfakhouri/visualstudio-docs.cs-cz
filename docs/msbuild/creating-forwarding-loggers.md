@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7bb2519389503be10bbab57a3ea97fb3b0609d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c9157b09773a99d66ee4fa431482b64fc7528e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936552"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936499"
 ---
 # <a name="create-forwarding-loggers"></a>Vytvořit předávající Protokolovací nástroje
 Předávající Protokolovací nástroje zvýšit efektivitu protokolování tím, že umožňuje zvolit události, které chcete monitorovat při sestavování projektů v systému s více procesory. Tím, že předávající Protokolovací nástroje, je možné zabránit nežádoucí události od zahlcení centrálním protokolovacím zpomalení doby sestavení a nebudou zbytečně zabírat protokol.  

@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e6ed5396a58bb6f3c39f9addbcd36b8dfaa7e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c5d867bd6a3b6ce30d7a4913469f695df11faca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948573"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942357"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Časté kolekce GC2
 
@@ -30,7 +30,7 @@ ms.locfileid: "53948573"
 |Zpráva|Mnoho objektů je shromažďováno v uvolnění paměti generace 2.|  
 |Typ zprávy|Upozornění|  
 
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Velké množství paměti objektů .NET jsou právě uvolněny v procesu uvolnění paměti generace 2.  
 
 ## <a name="rule-description"></a>Popis pravidla  

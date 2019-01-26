@@ -4,7 +4,7 @@ description: Zjistěte, jak nasadit webovou aplikaci ASP.NET Core do registru ko
 services: azure-container-service
 documentationcenter: .net
 author: mlearned
-manager: douge
+manager: jillfra
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.service: azure-container-service
 ms.devlang: dotnet
@@ -13,12 +13,12 @@ ms.tgt_pltfrm: NA
 ms.workload: NA
 ms.date: 05/21/2018
 ms.author: mlearned
-ms.openlocfilehash: d759e1fbdb6f5e0aaf68f867e35d5e7531502c40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ba7244ffc482c33409bc280617b60ce1e85b504
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971200"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Nasazení kontejneru ASP.NET do registru kontejneru pomocí sady Visual Studio
 
@@ -49,7 +49,7 @@ Následující kroky vás provedou vytvořením základní aplikaci ASP.NET Core
 
     | Nastavení      | Navrhovaná hodnota  | Popis                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Předpona DNS** | Globálně jedinečný název | Název, který jednoznačně identifikuje vašeho registru kontejneru. |
+    | **DNS Prefix** | Globálně jedinečný název | Název, který jednoznačně identifikuje vašeho registru kontejneru. |
     | **Předplatné** | Vaše předplatné | Předplatné Azure používat. |
     | **[Skupina prostředků](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Název skupiny prostředků, ve kterém chcete vytvořit registr kontejnerů. Zvolte **nový** vytvořit novou skupinu prostředků.|
     | **[SKLADOVÁ POLOŽKA](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Úrovně služby do registru kontejneru  |

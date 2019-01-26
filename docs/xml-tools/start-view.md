@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c97bd62f6a197d5aac64423002580c8ed05d34b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042244"
 ---
 # <a name="start-view"></a>Počáteční zobrazení
 
@@ -42,9 +42,9 @@ Následující tlačítka jsou povolené v panelu nástrojů návrháře XSD př
 
 |Možnost|Popis|
 |-|-----------------|
-|**Ukázat počáteční zobrazení**|Přepne do zobrazení Start. Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**1**.|
-|**Ukázat zobrazení modelu obsahu**|Přepne do zobrazení modelu obsahu. Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**2**.|
-|**Ukázat zobrazení grafu**|Přepne do zobrazení grafu. Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**3**.|
+|**Ukázat počáteční zobrazení**|Přepne do zobrazení Start. Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**1**.|
+|**Ukázat zobrazení modelu obsahu**|Přepne do zobrazení modelu obsahu. Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**2**.|
+|**Ukázat zobrazení grafu**|Přepne do zobrazení grafu. Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Viz také:
 

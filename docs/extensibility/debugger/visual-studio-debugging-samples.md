@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb2fd3e5e2c6c7e2c3e43a8caaf52fa6e4cc7d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c084c9c31b024f5ff15b561c04a0c0603633b7b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960401"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980203"
 ---
 # <a name="visual-studio-debugging-samples"></a>Ukázky ladění sady Visual Studio
 Dvě ukázky ukazují, jak rozšířit pomocí ladicího programu sady Visual Studio [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  

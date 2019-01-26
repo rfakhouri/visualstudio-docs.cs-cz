@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965689"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Přidat příponu protokol jazyka serveru
 
@@ -52,12 +52,12 @@ ukončení | ano
 $/ cancelRequest | ano
 okno/Zobrazitzpravu | ano
 okno/showMessageRequest | ano
-okno/logMessage | ano
+window/logMessage | ano
 telemetrie a událostí |
-Klient/registerCapability |
-Klient/unregisterCapability |
-pracovní prostor/didChangeConfiguration | ano
-pracovní prostor/didChangeWatchedFiles | ano
+client/registerCapability |
+client/unregisterCapability |
+workspace/didChangeConfiguration | ano
+workspace/didChangeWatchedFiles | ano
 pracovní prostor/symbol | ano
 pracovní prostor/executeCommand | ano
 pracovní prostor/applyEdit | ano
@@ -70,7 +70,7 @@ textDocument/didSave | ano
 textDocument/didClose | ano
 textDocument/dokončení | ano
 dokončení nebo řešení | ano
-textDocument/při najetí myší | ano
+textDocument/hover | ano
 textDocument/signatureHelp | ano
 textDocument/odkazy | ano
 textDocument/documentHighlight | ano
@@ -81,9 +81,9 @@ textDocument/onTypeFormatting |
 textDocument/definici | ano
 textDocument/codeAction | ano
 textDocument/codeLens |
-codeLens nebo řešení |
+codeLens/resolve |
 textDocument/documentLink |
-documentLink nebo řešení |
+documentLink/resolve |
 textDocument/přejmenování | ano
 
 ## <a name="getting-started"></a>Začínáme
