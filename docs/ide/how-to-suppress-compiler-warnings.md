@@ -6,19 +6,19 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 353cd36f1a45f1d9d63319b4cc951d3033137ac7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926485"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Postupy: potlačení upozornění kompilátoru
+# <a name="how-to-suppress-compiler-warnings"></a>Postupy: Potlačení upozornění kompilátoru
 
-Pomocí filtrování jedné nebo více druhů upozornění kompilátoru můžete declutter protokolu sestavení. Například můžete chtít zkontrolovat jenom některé z výstupu, který se vygeneruje, když nastavíte úroveň podrobností protokolu sestavení na **normální**, **podrobné**, nebo **diagnostických**. Další informace o podrobnosti najdete v tématu [postupy: zobrazení, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
+Pomocí filtrování jedné nebo více druhů upozornění kompilátoru můžete declutter protokolu sestavení. Například můžete chtít zkontrolovat jenom některé z výstupu, který se vygeneruje, když nastavíte úroveň podrobností protokolu sestavení na **normální**, **podrobné**, nebo **diagnostických**. Další informace o podrobnosti najdete v tématu [jak: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Potlačit specifická upozornění pro vizuál C# neboF# #
 
@@ -134,5 +134,5 @@ V některých případech můžete chtít potlačit upozornění kompilátoru Nu
 ## <a name="see-also"></a>Viz také:
 
 - [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md)
-- [Postupy: zobrazení, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

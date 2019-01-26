@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821034"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933023"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 
@@ -39,7 +39,7 @@ I když operace vytváření se může zdát, že se liší od operace kopírov�
 
 Odpovědnost EMD se rozhodnout, jak objekt nebo skupinu objektů by měly být sloučeny do konkrétních místech v modelu. Konkrétně se rozhodne, jaký relace by měl vytvořit instanci propojení skupině sloučené do modelu. Můžete také upravit, můžete nastavit vlastnosti a vytvořit další objekty.
 
-![DSL&#45;EMD&#95;sloučení](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Při definování vztah obsažení, vygenerovaný automaticky EMD. Toto výchozí nastavení EMD vytvoří instanci relace, když uživatelé přidají nové podřízené instance pro nadřazenou. Tyto výchozí EMDs, můžete upravit třeba tak, že přidáte vlastní kód.
 

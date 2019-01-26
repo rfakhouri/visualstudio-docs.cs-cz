@@ -13,15 +13,15 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836621"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926745"
 ---
 # <a id="top"> </a> Visual Studio Image v Azure
 
@@ -35,11 +35,11 @@ Image pro aktuální hlavní verze, Visual Studio 2017 a Visual Studio 2015, naj
 
 | Prodejní verze                                              | Edice                     |     Verze produktu      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: Ve verzi Preview (ve verzi Preview 1)                   |           Enterprise         | Verze 16.0.0 Preview 1 |
+|    Visual Studio 2019: Ve verzi Preview (ve verzi Preview 2)                   |           Enterprise         | Verze 16.0.0 Preview 2 |
 | Visual Studio 2017: Nejnovější (verzi 15.9)                    |    Organizace, Community     |      Verze 15.9.4      |
-|         Visual Studio 2017: VE VERZI RTW                              |    Organizace, Community     |      Verze 15.0.20     |
+|         Visual Studio 2017: RTW                              |    Organizace, Community     |      Verze 15.0.20     |
 |   Visual Studio 2015: Nejnovější (aktualizace 3)                      |    Organizace, Community     |  Verze 14.0.25431.01   |
-|         Visual Studio 2015: VE VERZI RTW                              |             Žádná             | (Platnost pro obsluhu)  |
+|         Visual Studio 2015: RTW                              |             Žádná             | (Platnost pro obsluhu)  |
 
 > [!NOTE]
 > V souladu s Microsoft zásady obsluhy původně vydaná verze (RTW) sady Visual Studio 2015 vypršela pro obsluhu. Visual Studio 2015 Update 3 je jediný zbývající verze nabízí pro produktovou řadu Visual Studio 2015.

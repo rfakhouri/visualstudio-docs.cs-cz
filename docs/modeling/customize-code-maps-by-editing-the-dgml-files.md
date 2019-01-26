@@ -17,16 +17,16 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: bb354e3cd9f418b9a4a93d1cb9781a372dc9fa72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 903471fe5ab22613b39e8d6d0a921a687779ba46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886082"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933890"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 
@@ -301,7 +301,7 @@ Přizpůsobení map kódu, můžete upravit jeho soubor Directed Graph Markup La
 
     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
 
-    <PropertyGet> :: = Identifikátor
+    <PropertyGet> ::= Identifier
 
     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
 

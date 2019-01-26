@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77635f360b2602bc2d75d672b26d770877422c02
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff8cc5e25355758312227687f4319bfa95eb1c7d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959839"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929754"
 ---
 # <a name="source-control-vspackage-features"></a>Funkce balíčku VSPackage správy zdrojového kódu
 Tato část popisuje různé funkce balíčku VSPackage správy zdrojového kódu. Popisuje registraci a výběr podrobností pro tyto VSPackage a popisuje tři hlavní zdroje funkce související s ovládacími: zpracování událostí dotazu upravit dotaz uložit (QEQS), nahrazení piktogram a vlastní uživatelské rozhraní (UI) pro správu zdrojového kódu funkce.  

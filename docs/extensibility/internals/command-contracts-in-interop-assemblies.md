@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3c6aea16308c39679c9e31043998b0c6c5558cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9daadac56fd74fe78cc5606f94927d1057496dd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892988"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949932"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Kontrakty příkazů ve spolupracujícím sestavení
 Základní kontrakt pro zpracování příkazů pomocí <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní je, že prostředí volá <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody k určení, zda příkaz je podporován, a pokud je podporována, chcete-li zjistit jeho stav a text. Potom volá prostředí <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody k provedení příkazu.  

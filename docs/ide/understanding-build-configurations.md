@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 84a2b89bb6479c88de61ec0a0071858522a34e82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349046"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927903"
 ---
 # <a name="understand-build-configurations"></a>Principy konfigurací sestavení
 
@@ -42,9 +42,9 @@ Můžete ukládat různé konfigurace vlastností řešení a projektu pro použ
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [konfigurace v sadě Visual Studio pro Mac sestavení](/visualstudio/mac/configurations).
 
 > [!NOTE]
-> Pokud nemůže najít řešení, konfigurace nastavení na panelu nástrojů a nemůžou přistupovat **nástroje Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] můžou vztahovat. vývojové nastavení. Další informace najdete v tématu [postupy: Správa konfigurací s použitými nastaveními vývojáře jazyka Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Pokud nemůže najít řešení, konfigurace nastavení na panelu nástrojů a nemůžou přistupovat **nástroje Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] můžou vztahovat. vývojové nastavení. Další informace najdete v tématu [jak: Správa konfigurací s použitými nastaveními vývojáře jazyka Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Ve výchozím nastavení, ladění a konfiguraci vydání jsou zahrnuté v projektech, které jsou vytvářeny instalační sadou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony. Konfigurace ladění podporuje ladění aplikace a konfiguraci vydané verze sestavení na verzi aplikace, který je možné nasadit. Další informace najdete v tématu [postupy: nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md). Můžete také vytvořit vlastní řešení konfigurace a konfigurace projektu. Další informace najdete v tématu [postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
+Ve výchozím nastavení, ladění a konfiguraci vydání jsou zahrnuté v projektech, které jsou vytvářeny instalační sadou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony. Konfigurace ladění podporuje ladění aplikace a konfiguraci vydané verze sestavení na verzi aplikace, který je možné nasadit. Další informace najdete v tématu [jak: Nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md). Můžete také vytvořit vlastní řešení konfigurace a konfigurace projektu. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Konfigurace řešení
 

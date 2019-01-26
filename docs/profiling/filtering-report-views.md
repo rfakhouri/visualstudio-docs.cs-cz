@@ -7,22 +7,22 @@ helpviewer_keywords:
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f64789bafa8fe5077678715a7439cbd1c1bf03b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986372"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927200"
 ---
 # <a name="filter-report-views"></a>Filtrování zobrazení sestav
 Filtry můžete použít profilování datové soubory pro omezení, která se zobrazí v zobrazení sestav výkonu a exportovat soubory sestav modulu dat profilování. Můžete omezit sestavu pro data mezi hodnot časového razítka a můžete omezit data, která mají konkrétní procesy a vlákna. Můžete uložit filtry do souboru a pak vytvořit filtr na jiný soubor dat profilování importováním uložený filtr.  
   
  Sestavy do časového úseku lze také omezit pomocí grafického časové osy na souhrnné zobrazení. Zobrazit [jak: Filtrování zobrazení sestav ze souhrnné časové osy](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Vyloučení ze zprávy systému a kód třetích stran, najdete v článku [jak: Filtrování zobrazení sestav nástrojů pro zobrazení pouze vlastního kódu pro profilaci](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ Vyloučení ze zprávy systému a kód třetích stran, najdete v článku [jak: Filtrování zobrazení sestav nástrojem pro profilaci, aby bylo možné zobrazit jenom vlastní kód](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Procedury  
   

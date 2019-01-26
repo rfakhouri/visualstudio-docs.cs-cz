@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 304cc9b65ed876e2348a6b96dc1f50e9a6934a4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20b7c92c8cbbf500b44816fbb0f34e0df6f04720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950972"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940931"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Postupy: Vytvoření sestavy Trasování událostí pro Windows nástrojů pro profilaci
 Sestava trasování událostí pro Windows (ETW) obsahuje události trasování událostí pro Windows, které jsou zaznamenány v relaci výkonu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci. Data trasování událostí pro Windows se shromažďují v binárním (. *ETL*) soubor. Další informace o této sestavě najdete v tématu [sestavy trasování událostí pro Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).  
@@ -31,7 +31,7 @@ Sestava trasování událostí pro Windows (ETW) obsahuje události trasování 
   
 -   V **příkazového řádku** okno, zadejte na příkazovém řádku následující:  
   
-     *ToolsPath* **VSPerfReport** *VSPFile* **/Summary: ETW [/ XML]**  
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**  
   
     |||  
     |-|-|  

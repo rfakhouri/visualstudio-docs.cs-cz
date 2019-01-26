@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5152dfc0ed6ef043fe80a060643c660c0f1ec343
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 604b35e61f0ee020512a020c28e5451aa9a9fb5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948443"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924623"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Poskytuje podrobnosti o rámec zásobníku.  
@@ -113,14 +113,14 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumframedata –](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [Idiaenumframedata::Item –](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
+ [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
+ [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
  [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

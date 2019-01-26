@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc2cfc74b192be01b9b5ce258d2686dda1b8ccc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832551"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930001"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Vytvoření systému základního projektu, část 1
 Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k uspořádání souborů se zdrojovým kódem a dalších zdrojů. Projekty se zobrazují jako podřízené objekty daného řešení **Průzkumníka řešení**. Projekty umožňují organizovat, sestavovat, ladit a nasadit zdrojový kód a vytvořit odkazy na webové služby, databáze a další prostředky.  
@@ -456,7 +456,7 @@ Templates
   
 2. V **vlastnosti** windows, snižte rastrového obrázku nastaven na 16 × 16 pixelů. Zkontrolujte rozlišovací rastrového obrázku.  
   
-    ![Jednoduchý projekt – příkaz](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. V **vlastnosti** okno Změnit **akce sestavení** rastrového obrázku na **integrovaný prostředek**.  
   

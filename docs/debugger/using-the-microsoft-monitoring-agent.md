@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 0e62c662a9936467f2a434c48e1c588e7dd5c9cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227574"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923776"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Použití služby Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -118,7 +118,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
      Tady je krátkou syntaxi:  
   
-     **Start-WebApplicationMonitoring** *"\<název_aplikace >"*  *\<monitoringMode >* *"\<outputPath >"*  *\<UInt32 >* *"\<collectionPlanPathAndFileName >"*  
+     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
   
      Tady je příklad, který používá jenom název webové aplikace a zjednodušené **monitorování** režimu:  
   
@@ -126,7 +126,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
      Tady je příklad, který používá cesta služby IIS a zjednodušené **monitorování** režimu:  
   
-     **PS C: > Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" sledovat "C:IntelliTraceLogs"**  
+     **PS C:>Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**  
   
      Jakmile bude monitorování zahájeno, se může zobrazit pozastavení agenta sledování Microsoft během restartování aplikace.  
   
@@ -134,11 +134,11 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
     |||  
     |-|-|  
-    |*"\<název_aplikace >"*|Zadejte cestu k názvu webu a webové aplikace ve službě IIS. Můžete také zahrnout cestu ke službě IIS, pokud dáváte přednost.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -nebo-<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Tuto cestu můžete najít ve Správci služby IIS. Příklad:<br /><br /> ![Cesta k webu služby IIS a web app](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Můžete také použít [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) a [získat WebApplication](http://technet.microsoft.com/library/ee790554.aspx) příkazy.|  
-    |*\<monitoringMode >*|Zadejte režim monitorování:<br /><br /> <ul><li>**Monitorování**: Záznam minimální podrobnosti o událostech výjimky a události související s výkonem. Tento režim použije výchozí plán kolekce.</li><li>**Trasování**: Zaznamenejte podrobnosti na úrovni funkce nebo monitorování aplikací služby SharePoint 2010 a SharePoint 2013 s použitím zadaný plán shromažďování. V tomto režimu by mohlo způsobit nepoužitelnost vaše aplikace spouštět pomaleji.<br /><br /> <ul><li>[DOTAZ: Jak můžu nastavit oprávnění pro fond aplikací?](#FullPermissionsITLog)</li><li>[DOTAZ: Jak lze získat většinu dat bez zpomalení aplikace?](#Minimizing)</li></ul><br />     V tomto příkladu zaznamenává události Sharepointu aplikace hostované na webu služby SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" trasování C:\IntelliTraceLogs""C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""**</li><li>**Vlastní**: Podrobnosti záznamu vlastní s využitím zadat vlastní plán. Budete muset restartovat monitorování při úpravě plánu kolekce po monitorování je již spuštěna.</li></ul>|  
-    |*"\<outputPath >"*|Zadejte úplné adresář pro ukládání protokolů IntelliTrace. Ujistěte se, že tento adresář vytvořit před zahájením monitorování.|  
-    |*\<UInt32 >*|Zadejte maximální velikost pro protokol nástroje IntelliTrace. Výchozí maximální velikost protokolu IntelliTrace je 250 MB.<br /><br /> Když se dosáhne tohoto limitu, agent přepíše nejstarší položky, abyste udělali místo pro další položky. Chcete-li tento limit změnit, použijte **- MaximumFileSizeInMegabytes** možnost nebo upravit `MaximumLogFileSize` atribut v plánu shromažďování.|  
-    |*"\<collectionPlanPathAndFileName >"*|Zadejte úplnou cestu nebo relativní cestu a název souboru v plánu shromažďování. Tento plán je soubor XML, který konfiguruje nastavení pro agenta.<br /><br /> Tyto plány jsou součástí agenta a pracovat s web apps a aplikací služby SharePoint:<br /><br /> -   **plán collection_plan.ASP.NET.default.XML**<br />     Shromažďuje pouze události, jako je například výjimky, události výkonu, volání databáze a požadavky na webový server.<br />-   **collection_plan.ASP.NET.Trace.XML**<br />     Shromažďuje volání úrovni funkcí a všechna data ve výchozí plán kolekce. Tento plán je vhodný pro podrobnou analýzu, ale může zpomalit vaši aplikaci.<br /><br /> Lokalizované verze těchto plánů můžete najít v podsložkách agenta. Můžete také [přizpůsobte tyto plány nebo vytvořte vlastní plány](http://go.microsoft.com/fwlink/?LinkId=227871) k nedocházelo ke zpomalování vaší aplikace. Umístěte vlastní plány do stejného zabezpečeného umístění jako agenta.<br /><br /> [DOTAZ: Jak lze získat většinu dat bez zpomalení aplikace?](#Minimizing)|  
+    |*"\<appName>"*|Zadejte cestu k názvu webu a webové aplikace ve službě IIS. Můžete také zahrnout cestu ke službě IIS, pokud dáváte přednost.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -nebo-<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Tuto cestu můžete najít ve Správci služby IIS. Příklad:<br /><br /> ![Cesta k webu služby IIS a web app](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Můžete také použít [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) a [získat WebApplication](http://technet.microsoft.com/library/ee790554.aspx) příkazy.|  
+    |*\<monitoringMode>*|Zadejte režim monitorování:<br /><br /> <ul><li>**Monitorování**: Záznam minimální podrobnosti o událostech výjimky a události související s výkonem. Tento režim použije výchozí plán kolekce.</li><li>**Trasování**: Zaznamenejte podrobnosti na úrovni funkce nebo monitorování aplikací služby SharePoint 2010 a SharePoint 2013 s použitím zadaný plán shromažďování. V tomto režimu by mohlo způsobit nepoužitelnost vaše aplikace spouštět pomaleji.<br /><br /> <ul><li>[DOTAZ: Jak můžu nastavit oprávnění pro fond aplikací?](#FullPermissionsITLog)</li><li>[DOTAZ: Jak lze získat většinu dat bez zpomalení aplikace?](#Minimizing)</li></ul><br />     V tomto příkladu zaznamenává události Sharepointu aplikace hostované na webu služby SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" trasování C:\IntelliTraceLogs""C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""**</li><li>**Vlastní**: Podrobnosti záznamu vlastní s využitím zadat vlastní plán. Budete muset restartovat monitorování při úpravě plánu kolekce po monitorování je již spuštěna.</li></ul>|  
+    |*"\<outputPath>"*|Zadejte úplné adresář pro ukládání protokolů IntelliTrace. Ujistěte se, že tento adresář vytvořit před zahájením monitorování.|  
+    |*\<UInt32>*|Zadejte maximální velikost pro protokol nástroje IntelliTrace. Výchozí maximální velikost protokolu IntelliTrace je 250 MB.<br /><br /> Když se dosáhne tohoto limitu, agent přepíše nejstarší položky, abyste udělali místo pro další položky. Chcete-li tento limit změnit, použijte **- MaximumFileSizeInMegabytes** možnost nebo upravit `MaximumLogFileSize` atribut v plánu shromažďování.|  
+    |*"\<collectionPlanPathAndFileName>"*|Zadejte úplnou cestu nebo relativní cestu a název souboru v plánu shromažďování. Tento plán je soubor XML, který konfiguruje nastavení pro agenta.<br /><br /> Tyto plány jsou součástí agenta a pracovat s web apps a aplikací služby SharePoint:<br /><br /> -   **plán collection_plan.ASP.NET.default.XML**<br />     Shromažďuje pouze události, jako je například výjimky, události výkonu, volání databáze a požadavky na webový server.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Shromažďuje volání úrovni funkcí a všechna data ve výchozí plán kolekce. Tento plán je vhodný pro podrobnou analýzu, ale může zpomalit vaši aplikaci.<br /><br /> Lokalizované verze těchto plánů můžete najít v podsložkách agenta. Můžete také [přizpůsobte tyto plány nebo vytvořte vlastní plány](http://go.microsoft.com/fwlink/?LinkId=227871) k nedocházelo ke zpomalování vaší aplikace. Umístěte vlastní plány do stejného zabezpečeného umístění jako agenta.<br /><br /> [DOTAZ: Jak lze získat většinu dat bez zpomalení aplikace?](#Minimizing)|  
   
      Další informace o úplnou syntaxi a další příklady, spusťte **get-help Start-WebApplicationMonitoring-podrobné** příkazu nebo **get-help Start-WebApplicationMonitoring-příklady** příkaz.  
   
@@ -237,11 +237,11 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
 2. Spustit [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) příkazu uložte snímek protokolu IntelliTrace:  
   
-    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \- nebo –  
   
-    **Checkpoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
     Příklad:  
   
@@ -249,7 +249,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
     -nebo-  
   
-    **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
     Další informace získáte spuštěním **get-help Checkpoint-WebApplicationMonitoring-podrobné** příkazu nebo **get-help Checkpoint-WebApplicationMonitoring-příklady** příkazu.  
   
@@ -267,11 +267,11 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
 2. Spustit [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) příkaz k vytvoření protokolu IntelliTrace a zastavte sledování konkrétní webové aplikace:  
   
-    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \- nebo –  
   
-    **Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
     Nebo se zastavit monitorování všech webových aplikací:  
   
@@ -279,11 +279,11 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
     Příklad:  
   
-    **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
+    **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
     \- nebo –  
   
-    **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\>Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
     Další informace získáte spuštěním **get-help Stop-WebApplicationMonitoring-podrobné** příkazu nebo **get-help Stop-WebApplicationMonitoring-příklady** příkazu.  
   

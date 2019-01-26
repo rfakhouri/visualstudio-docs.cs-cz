@@ -1,22 +1,22 @@
 ---
-title: 'Návod: Sestavení aplikace'
+title: 'Průvodce: Vytvoření aplikace'
 ms.date: 09/25/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: adf3ef6be32b36d0bb033486dfb846c55c1fad34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672779"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926670"
 ---
-# <a name="walkthrough-build-an-application"></a>Návod: Sestavení aplikace
+# <a name="walkthrough-build-an-application"></a>Průvodce: Vytvoření aplikace
 
 V tomto návodu se seznámíte se podrobněji seznamujete s několik možností, které můžete konfigurovat při sestavování aplikací pomocí sady Visual Studio. Budete vytvářet vlastní proces sestavení, skryjete některé varovné zprávy a zvýšíte výstupní informace sestavení pro ukázkovou aplikaci.
 
@@ -26,7 +26,7 @@ Stáhněte si [Úvod do vytváření aplikací WPF](https://code.msdn.microsoft.
 
 ## <a name="create-a-custom-build-configuration"></a>Vytvořit vlastní proces sestavení
 
-Když vytvoříte řešení, konfigurace sestavení pro ladění a vydání a jejich výchozí cíle platformy jsou definovány pro řešení automaticky. Můžete poté přizpůsobit tyto konfigurace nebo vytvořit vlastní. Konfigurace sestavení určují typ sestavení. Platformy sestavení určují operační systém, který aplikace cílí pro danou konfiguraci. Další informace najdete v tématu [pochopení konfigurace sestavení](../ide/understanding-build-configurations.md), [platformy sestavení porozumění](../ide/understanding-build-platforms.md), a [postupy: nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md).
+Když vytvoříte řešení, konfigurace sestavení pro ladění a vydání a jejich výchozí cíle platformy jsou definovány pro řešení automaticky. Můžete poté přizpůsobit tyto konfigurace nebo vytvořit vlastní. Konfigurace sestavení určují typ sestavení. Platformy sestavení určují operační systém, který aplikace cílí pro danou konfiguraci. Další informace najdete v tématu [pochopení konfigurace sestavení](../ide/understanding-build-configurations.md), [platformy sestavení porozumění](../ide/understanding-build-platforms.md), a [jak: Nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Můžete změnit nebo vytvořit konfigurace a nastavení platformy pomocí **nástroje Configuration Manager** dialogové okno. V tomto postupu vytvoříte konfiguraci sestavení pro testování.
 
@@ -130,7 +130,7 @@ Je můžete dočasně skrýt některé varovné zprávy během sestavení a nene
 
    ![Upozornění sestavení okno výstup, Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Další informace najdete v tématu [postupy: potlačení upozornění kompilátoru](../ide/how-to-suppress-compiler-warnings.md).
+   Další informace najdete v tématu [jak: Potlačení upozornění kompilátoru](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Zobrazit další podrobnosti v okně výstupu sestavení
 
@@ -162,13 +162,13 @@ Můžete změnit, se zobrazí v tom, kolik informací o procesu sestavení **vý
     > [!TIP]
     > Můžete vyhledávat obsah **výstup** okna, je-li je zobrazit **najít** dialogové okno kliknutím **Ctrl**+**F** klíče.
 
-Další informace najdete v tématu [postupy: zobrazení, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
+Další informace najdete v tématu [jak: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Vytváření sestavení pro vydání
 
 Můžete vytvořit verzi ukázkovou aplikaci, která je optimalizována pro jeho dodání. Pro sestavení vydání zadáte, že spustitelný soubor je zkopírován do sdílené síťové složky, předtím, než se sestavování.
 
-Další informace najdete v tématu [postupy: Změna výstupního adresáře sestavení](../ide/how-to-change-the-build-output-directory.md) a [sestavení a vyčištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Další informace najdete v tématu [jak: Změna výstupního adresáře sestavení](../ide/how-to-change-the-build-output-directory.md) a [sestavení a vyčištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Určení verze sestavení v jazyce Visual Basic
 
@@ -189,7 +189,7 @@ Další informace najdete v tématu [postupy: Změna výstupního adresáře ses
     > [!IMPORTANT]
     > Okno se zprávou se může zobrazit upozornění, že sdílené síťové složky, které jste zadali nemusí být důvěryhodným umístěním. Pokud důvěřujete umístění, které jste zadali, zvolte **OK** tlačítka v okně se zprávou.
 
-1. Sestavení aplikace.
+1. Sestavte aplikaci.
 
      ![V nabídce sestavení sestavit řešení – příkaz](../ide/media/exploreide-buildsolution.png)
 
@@ -214,7 +214,7 @@ Další informace najdete v tématu [postupy: Změna výstupního adresáře ses
 
 1. Na **standardním panelu nástrojů**, nastavena konfigurace řešení na **vydání** a platformy řešení na **x86**.
 
-1. Sestavení aplikace.
+1. Sestavte aplikaci.
 
      ![V nabídce sestavení sestavit řešení – příkaz](../ide/media/exploreide-buildsolution.png)
 

@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f75cf227826ec0f9d35d9a7564bbdc25a3cd0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c7bf00946542b8cb29354f7e03688baaac33fb7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890901"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941876"
 ---
 # <a name="crt-debug-library-use"></a>Použití knihovny ladění CRT
 Knihovny run-time jazyka C poskytuje rozsáhlou podporu ladění. Chcete-li použít jeden z knihovny ladění CRT, je nutné propojit s [/DEBUG](/cpp/build/reference/debug-generate-debug-info) a proveďte kompilaci s **/MDd**, **/MTD**, nebo **/LDd**.  

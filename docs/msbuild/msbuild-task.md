@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f6ab2b5656d70c455f9ea67fe13d463ddcb85c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aea567014e32930e25960b069d2b755e2c0212b2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923052"
 ---
 # <a name="msbuild-task"></a>MSBuild – úloha
 Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty z jiného [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
@@ -47,7 +47,7 @@ Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 | `Targets` | Volitelné `String` parametru.<br /><br /> Určuje cíl nebo cíle sestavení v souborech projektu. K oddělení seznam cílových názvů použijte středník. Pokud nejsou zadány žádné cíle v `MSBuild` úkolu, jsou integrované výchozí cíle zadané v souborech projektu. **Poznámka:**  Cíle, které musí být stejné ve všech souborech projektu. Pokud tomu tak není, dojde k chybě sestavení. |
 | `ToolsVersion` | Volitelné `String` parametru.<br /><br /> Určuje, `ToolsVersion` pro použití při sestavování projektů předaný k tomuto úkolu.<br /><br /> Umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úkolů k sestavení projektu, který se zaměřuje na jinou verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] než verze zadaná v projektu. Platné hodnoty jsou `2.0`, `3.0` a `3.5`. Výchozí hodnota je `3.5`. |
 | `UnloadProjectsOnCompletion` | Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, projekt bude zrušeno po dokončení operace. |
-| `UseResultsCache` | Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, výsledky uložené v mezipaměti bude vrácen, pokud jsou k dispozici.<br /><br />  Pokud je spuštěn úkol MSBuild, bude do mezipaměti výsledek v oboru <br /><br /> (ProjectFileName GlobalProperties) [TargetNames]<br /><br /> jako seznam položek sestavení |
+| `UseResultsCache` | Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, výsledky uložené v mezipaměti bude vrácen, pokud jsou k dispozici.<br /><br />  Pokud je spuštěn úkol MSBuild, bude do mezipaměti výsledek v oboru <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> jako seznam položek sestavení |
 
 ## <a name="remarks"></a>Poznámky  
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  

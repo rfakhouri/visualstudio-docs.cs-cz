@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1db73787a8d593b0d48b438d08d083c623c18bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 129212c690a9cf35b5c8a26893c366a79e58e39c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934085"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Enablelocationbrowsebutton – element (šablony sady Visual Studio)
 Určuje, zda **Procházet** tlačítko je k dispozici v **nový projekt** dialogovém okně tak, aby uživatelé mohli snadno upravovat výchozí adresář, ve kterém je uložený nový projekt.  
   
  \<Vstemplate – >  
- \<TemplateData >  
- \<Enablelocationbrowsebutton – >  
+ \<TemplateData>  
+ \<EnableLocationBrowseButton>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,7 +46,7 @@ Určuje, zda **Procházet** tlačítko je k dispozici v **nový projekt** dialog
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a3ecd9d4b7e1dc8cffc3a11a8b58c0812a1a36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0697507b9df10ac1f39108581a651c5290ad6b78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829641"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919549"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Určuje cílový registru.  
@@ -409,37 +409,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>Elementy  
- CV_REG_ *  
+ CV_REG_*  
  Registry používají Intel 80 x 86 a ix86 procesory a p-code.  
   
- CV_R68_ *  
+ CV_R68_*  
  Registry používané 68K procesoru.  
   
- CV_M4_ *  
+ CV_M4_*  
  Registry používá řadu procesorem MIPS 4000.  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  Použít procesorem řady Digital Equipment Corporation alfa AXP registrů.  
   
- CV_PPC_ *  
+ CV_PPC_*  
  Registry používané procesoru Motorola/IBM PowerPC.  
   
  CV_SH3_ * a CV_SH_\*  
  Použít procesorem řady Hitachi SH3 a Hitachi SH registrů.  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Registry používané procesory Advanced RISC Machine (ARM).  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Registry používá řadu procesorů Intel IA64.  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Registry používané technologie TriCore Infineon procesoru.  
   
- CV_AM33_ *  
+ CV_AM33_*  
  Registry používat jednotky/Panasonic AM33 a související s procesory.  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Registry používané Mitsubishi M32R procesoru.  
   
 ## <a name="remarks"></a>Poznámky  
@@ -462,8 +462,8 @@ enum CV_HREG_e { 
   
 ## <a name="see-also"></a>Viz také  
  [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiastackwalkframe::get_registervalue –](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [Idiastackwalkframe::put_registervalue –](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
  [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

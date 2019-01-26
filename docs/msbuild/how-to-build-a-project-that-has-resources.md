@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8886f4970a4888d72f0c0f919069c10658e92332
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948957"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Postupy: Sestavení projektu, který má prostředky
 Pokud vytváříte lokalizované verze projektu, musí se oddělit všechny prvky uživatelského rozhraní do souborů prostředků pro různé jazyky. Pokud projekt používá pouze řetězce, soubory prostředků pomocí textových souborů. Alternativně můžete použít *RESX* soubory jako soubory prostředků.  

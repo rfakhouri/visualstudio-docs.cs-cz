@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c86b71e836c49d12c0ec0aceb3a20bf0b38e367a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1801bc087311170169c752af8b50de4cd4e01da6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853876"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926836"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Třída TaskScheduler – vnitřní členy
 Tento článek popisuje interní členy <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> třída, která vám pomůže implementovat vlastní ladicího programu. Obecné informace o této třídy, najdete v článku <xref:System.Threading.Tasks.TaskScheduler> článku.  
@@ -40,8 +40,8 @@ Tento článek popisuje interní členy <xref:System.Threading.Tasks.TaskSchedul
   
 |Název|Popis|  
 |----------|-----------------|  
-|[Getscheduledtasksfordebugger –](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Načte pole všech naplánovaných úloh.|  
-|[Gettaskschedulersfordebugger –](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Pole všech <xref:System.Threading.Tasks.TaskScheduler> objekty, které jsou momentálně aktivní.|  
+|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Načte pole všech naplánovaných úloh.|  
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Pole všech <xref:System.Threading.Tasks.TaskScheduler> objekty, které jsou momentálně aktivní.|  
   
 ## <a name="remarks"></a>Poznámky  
   

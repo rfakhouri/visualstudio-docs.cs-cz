@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f320a23fa75dccdb4c273bc851832f3b762696d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01f22e6f01ded792a450c7b69b5dd36e36066821
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910214"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927590"
 ---
 # <a name="project-configuration-for-building"></a>Konfigurace projektu pro sestavení
 Seznam konfigurací řešení pro dané řešení se spravuje přes dialogové okno konfigurace řešení.  
@@ -30,7 +30,7 @@ Seznam konfigurací řešení pro dané řešení se spravuje přes dialogové o
   
  Když uživatel vybere **vícenásobný výběr** položek v rozevíracím seznamu konfigurace prostředí se zobrazí dialogové okno, které poskytuje seznam dostupných konfigurací.  
   
- ![Více konfigurací](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
+ ![Multiple Configurations](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
 Více konfigurací  
   
  V tomto dialogovém okně může uživatel vybrat jednu nebo více konfigurací. Po výběru odrážejí hodnoty vlastností zobrazí v dialogovém okně stránky vlastností průnik hodnot pro zvolené konfigurace.  
@@ -39,7 +39,7 @@ Více konfigurací
   
  Závislosti projektu a pořadí sestavení jsou nezávislá konfigurace řešení: to znamená, které můžete nastavit jenom jednu závislost strom pro všechny projekty v řešení. Pravým tlačítkem myši na projekt nebo řešení a vyberete buď **závislosti projektu** nebo **pořadí sestavení projektu** možnost otevře **závislosti projektu** dialogové okno. Můžete otevřít také z **projektu** nabídky.  
   
- ![Závislosti projektu](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Project Dependencies](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Závislosti projektu  
   
  Závislosti projektu určení pořadí, ve kterém sestavení projektů. Na kartě pořadí sestavení v dialogovém okně můžete zobrazit přesný pořadí, ve kterém se projekty v rámci řešení sestavení a chcete-li změnit pořadí sestavení, použijte kartu závislosti.  

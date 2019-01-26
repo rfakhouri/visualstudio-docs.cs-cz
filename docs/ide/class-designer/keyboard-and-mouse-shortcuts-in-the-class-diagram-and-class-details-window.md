@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2541847c82a14099df703e0842e706a1e913315f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928201"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Klávesové zkratky klávesnice a myši v diagramu tříd a podrobností třídy okna
 
@@ -79,7 +79,7 @@ Podporovány jsou následující akce klávesnice v diagramech tříd:
 |**CTRL**+**odstranit**|Všechny kontexty|Vyvolá **odstranit z kódu** příkaz na výběr.|
 |**Karta**|Všechny kontexty|Přejde na další podřízenou položku v rámci stejnou nadřazenou položku (zabalení podporuje).|
 |**SHIFT**+**kartu**|Všechny kontexty|Přejde na předchozí podřízenou položku v rámci stejnou nadřazenou položku (zabalení podporuje).|
-|**MEZERNÍK**|Všechny kontexty|Přepne výběr u aktuálního elementu.|
+|**Spacebar**|Všechny kontexty|Přepne výběr u aktuálního elementu.|
 
 ## <a name="use-the-keyboard-in-the-class-details-window"></a>Použití klávesnice v okně podrobností třídy
 
@@ -94,8 +94,8 @@ Pomocí těchto klíčů přejděte **podrobností třídy** okno:
 |**,** (čárka)|Pokud je kurzor na řádku parametru, zadáním čárku přesune kurzor do pole Název parametru Další. Pokud je kurzor na poslední řádek parametru metody, přesune kurzor \<přidat parametr > pole, které můžete použít k vytvoření nového parametru.<br /><br /> Pokud je kurzor v jiném místě **podrobností třídy** okna, zadáním čárku doslova přidá čárku v aktuálním poli.|
 |**;**  (středník) nebo **)** (ukončovací závorka)|Přesuňte kurzor do pole název v dalším řádku člena **podrobností třídy** mřížky okna okno.|
 |**Karta**|Přesune kurzor na další pole, první přesun klikněte shora dolů a zleva doprava. Pokud je kurzor přesouvá z pole, ve které jste zadali text, **podrobností třídy** zpracovává text a uloží je v případě nevytváří chybu.<br /><br /> Jestli je ukazatel na prázdné pole, jako \<přidat parametr >, přejde se na první pole na další řádek.|
-|**MEZERNÍK**|Přesune kurzor na další pole, první přesun klikněte shora dolů a zleva doprava. Jestli je ukazatel na prázdné pole, jako \<přidat parametr >, přejde do prvního pole na další řádek. Všimněte si, že \<místo > zadali ihned poté, co je ignorován čárkou.<br /><br /> Pokud je kurzor v poli Summary, zadáním mezery přidá znak mezery.<br /><br /> Pokud je kurzor v skrýt sloupce daného řádku, zadáte mezeru přepne hodnotu zaškrtávací políčko Skrýt.|
-|**CTRL**+**kartu**|Přepnout na další okno dokumentu. Například přejít z **podrobností třídy** okna do souboru otevřete kód.|
+|**Spacebar**|Přesune kurzor na další pole, první přesun klikněte shora dolů a zleva doprava. Jestli je ukazatel na prázdné pole, jako \<přidat parametr >, přejde do prvního pole na další řádek. Všimněte si, že \<místo > zadali ihned poté, co je ignorován čárkou.<br /><br /> Pokud je kurzor v poli Summary, zadáním mezery přidá znak mezery.<br /><br /> Pokud je kurzor v skrýt sloupce daného řádku, zadáte mezeru přepne hodnotu zaškrtávací políčko Skrýt.|
+|**Ctrl**+**Tab**|Přepnout na další okno dokumentu. Například přejít z **podrobností třídy** okna do souboru otevřete kód.|
 |**ESC**|Pokud jste začali můžete napsat text v poli, stiskněte klávesu ESC funguje jako klíč vrácení zpět, vrácení zpět pole obsah na původní hodnotu. Pokud okno podrobností třídy obecné fokus, ale žádné konkrétní buňky má fokus, stiskněte klávesu ESC přesune fokus klávesou **podrobností třídy** okna.|
 |**Šipka nahoru** a **šipka dolů**|Tyto klíče přesuňte kurzor na řádek řádku svisle v **podrobností třídy** mřížky okna okno.|
 |**Šipka doleva**|Pokud je kurzor ve sloupci Název, stisknete šipku vlevo sbalí aktuální uzel v hierarchii (je-li otevřít).|

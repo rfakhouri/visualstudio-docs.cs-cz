@@ -8,15 +8,15 @@ helpviewer_keywords:
 - command-line tests
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c185622baeb3ad00bf5139190fe5c4fe627ba5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bd901ad2a57570a11f7a4a9995c30b44d476d3c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924013"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe – možnosti příkazového řádku
 
@@ -39,24 +39,24 @@ V následující tabulce jsou uvedeny všechny možnosti pro *VSTest.Console.exe
 |**/ Parallel**|Určuje, že se testy spouští paralelně. Ve výchozím nastavení až všechna dostupná jádra v počítači může být použit. Počet jader, která se pomocí můžete konfigurovat pomocí souboru nastavení.|
 |**/ Enablecodecoverage**|Umožňuje spustit diagnostický adaptér CodeCoverage v testovací data.<br />Výchozí nastavení jsou použita, pokud nejsou zadány pomocí souboru nastavení.|
 |**/ InIsolation**|Spustí testy v izolovaném procesu.<br />Díky této izolaci *vstest.console.exe* méně pravděpodobné, že proces zastavení v případě chyby v testech, ale testy mohou probíhat pomaleji.|
-|**/ UseVsixExtensions**|Tato volba způsobí, *vstest.console.exe* použití procesu nebo přeskočí rozšíření VSIX nainstalovaná do testovacího běhu (pokud existuje).<br />Tato možnost je zastaralý. Počínaje příští hlavní verze sady Visual Studio tato možnost může být odebrán. Přesunout na použití rozšíření k dispozici jako balíček NuGet.<br />Příklad: `/UseVsixExtensions:true`|
-|**/ TestAdapterPath: [*cesta*]**|Vynutí *vstest.console.exe* procesu použít vlastní adaptéry testu ze zadané cesty (pokud existuje) v testovacím běhu.<br />Příklad: `/TestAdapterPath:[pathToCustomAdapters]`|
+|**/UseVsixExtensions**|Tato volba způsobí, *vstest.console.exe* použití procesu nebo přeskočí rozšíření VSIX nainstalovaná do testovacího běhu (pokud existuje).<br />Tato možnost je zastaralý. Počínaje příští hlavní verze sady Visual Studio tato možnost může být odebrán. Přesunout na použití rozšíření k dispozici jako balíček NuGet.<br />Příklad: `/UseVsixExtensions:true`|
+|**/TestAdapterPath:[*path*]**|Vynutí *vstest.console.exe* procesu použít vlastní adaptéry testu ze zadané cesty (pokud existuje) v testovacím běhu.<br />Příklad: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/ Platform: [*typ platformy*]**|Cílová architektura platformy, které má být použit pro provádění testů.<br />Platné hodnoty jsou x86 x64 a ARM.|
 |**/ Framework: [*verzi rozhraní framework*]**|Cílová verze rozhraní .NET Framework má být použit pro provádění testů.<br />Platné hodnoty jsou Framework35, Framework40, Framework45 a FrameworkUap10.<br />Pokud cílová architektura, která je zadána jako **Framework35**, testy spustit v modulu CLR 4.0 "compatibly režim".<br />Příklad: `/Framework:framework40`|
-|**/ TestCaseFilter: [*výraz*]**|Spusťte testy, které odpovídají danému výrazu.<br />< výraz\> je ve formátu < vlastnost\>= < hodnota\>[\|< výraz\>].<br />Příklad: `/TestCaseFilter:"Priority=1"`<br />Příklad: "/ TestCaseFilter:" TestCategory = Nightly|FullyQualifiedName=Namespace.ClassName.MethodName".<br />**/Testcasefilter** nemohou být součástí možnost příkazového řádku **/testy** možnost příkazového řádku. <br />Informace o vytváření a používání výrazů naleznete v tématu [testovací případ filtr](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/TestCaseFilter:[*expression*]**|Spusťte testy, které odpovídají danému výrazu.<br />< výraz\> je ve formátu < vlastnost\>= < hodnota\>[\|< výraz\>].<br />Příklad: `/TestCaseFilter:"Priority=1"`<br />Příklad: "/ TestCaseFilter:" TestCategory = Nightly|FullyQualifiedName=Namespace.ClassName.MethodName".<br />**/Testcasefilter** nemohou být součástí možnost příkazového řádku **/testy** možnost příkazového řádku. <br />Informace o vytváření a používání výrazů naleznete v tématu [testovací případ filtr](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zobrazí informace o použití.|
-|**/ Logger: [*uri/friendlyname*]**|Zadejte protokolovací nástroj pro výsledky testů.<br />Příklad: Pro protokolování výsledků do Visual Studio Test výsledky souboru (TRX), použijte **/Logger:trx**.<br />Příklad: Pokud chcete publikovat výsledky testů do sady Team Foundation Server, použijte TfsPublisher:<br />**/Logger:TfsPublisher;**<br />**Kolekce = < adresa url projektu\>;**<br />**BuildName = < název sestavení\>;**<br />**TeamProject = < název projektu\>;**<br />**[; Platform = < výchozí hodnota je "Jakékoli CPU" >]**<br />**[; Flavor = < výchozí hodnota je "Debug" >]**<br />**[; RunTitle = < název\>]**|
+|**/Logger:[*uri/friendlyname*]**|Zadejte protokolovací nástroj pro výsledky testů.<br />Příklad: Pro protokolování výsledků do Visual Studio Test výsledky souboru (TRX), použijte **/Logger:trx**.<br />Příklad: Pokud chcete publikovat výsledky testů do sady Team Foundation Server, použijte TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Kolekce = < adresa url projektu\>;**<br />**BuildName = < název sestavení\>;**<br />**TeamProject = < název projektu\>;**<br />**[; Platform = < výchozí hodnota je "Jakékoli CPU" >]**<br />**[; Flavor = < výchozí hodnota je "Debug" >]**<br />**[; RunTitle = < název\>]**|
 |**/ ListTests: [*název_souboru*]**|Zobrazí seznam testů v daném kontejneru testů zjištěných.|
-|**/ Listdiscoverers zobrazí**|Zobrazí seznam nainstalovaných nástrojů zjišťování testu.|
+|**/ListDiscoverers**|Zobrazí seznam nainstalovaných nástrojů zjišťování testu.|
 |**/ ListExecutors**|Zobrazí seznam nainstalovaných modulů provádění testu.|
-|**/ ListLoggers**|Zobrazí seznam nainstalovaných nástrojů protokolování testu.|
-|**/ Listsettingsproviders zobrazí**|Zobrazí seznam nainstalovaných poskytovatelů nastavení testu.|
-|**/ Příčiny**|Sleduje testy jako při spuštění a, pokud proces hostitele testu dojde k chybě, až vysílá názvy testů v jejich pořadí spuštění a včetně konkrétní test, který byl spuštěn v době selhání. Tímto výstupem je snazší izolovat problematický testu a dále je diagnostikovat. [Další informace o](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/ListLoggers**|Zobrazí seznam nainstalovaných nástrojů protokolování testu.|
+|**/ListSettingsProviders**|Zobrazí seznam nainstalovaných poskytovatelů nastavení testu.|
+|**/Blame**|Sleduje testy jako při spuštění a, pokud proces hostitele testu dojde k chybě, až vysílá názvy testů v jejich pořadí spuštění a včetně konkrétní test, který byl spuštěn v době selhání. Tímto výstupem je snazší izolovat problematický testu a dále je diagnostikovat. [Další informace o](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/ Diag: [*název_souboru*]**|Protokoly diagnostické trasování zapíše do zadaného souboru.|
-|**/ ResultsDirectory: [*cesta*]**|Adresář výsledků testu se vytvoří v zadané cestě, pokud neexistuje.<br />Příklad: `/ResultsDirectory:<pathToResultsDirectory>`|
-|**/ ParentProcessId: [*parentProcessId*]**|Proces Id nadřazeného procesu, který je zodpovědný za spouštění aktuální proces.|
-|**/ Port: [*port*]**|Port pro připojení soketu a přijímání zpráv událostí.|
-|**/ Shromažďování: [*dataCollector friendlyName*]**|Povolí shromažďování dat pro testovací běh. [Další informace o](https://aka.ms/vstest-collect).|
+|**/ResultsDirectory:[*path*]**|Adresář výsledků testu se vytvoří v zadané cestě, pokud neexistuje.<br />Příklad: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*parentProcessId*]**|Proces Id nadřazeného procesu, který je zodpovědný za spouštění aktuální proces.|
+|**/Port:[*port*]**|Port pro připojení soketu a přijímání zpráv událostí.|
+|**/Collect:[*dataCollector friendlyName*]**|Povolí shromažďování dat pro testovací běh. [Další informace o](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Možnosti a hodnoty nejsou malá a velká písmena.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c6c8c543-253e-4c23-a939-3e66f3db0ee2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bef3d87c745beaf7374cdfdc4abfa9ede8f2bfa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 206abebe13a6295a387208bb50461ffed4f30b25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867485"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926031"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
 Získá příznak, který určuje, zda je typem ukazatele odkaz rvalue. Použít, když [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) nastavená na typ ukazatele.  
@@ -43,11 +43,11 @@ HRESULT get_RValueReference (
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

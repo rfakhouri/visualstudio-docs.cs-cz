@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86bcd9373fda82c1f650da88a87d905a7ba1e6a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a612aa39899336eda4802e849529ae61faf192be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920430"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935641"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identifikátory by neměly mít nesprávnou příponu
 
@@ -31,7 +31,7 @@ ms.locfileid: "53920430"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Identifikátor nemá správnou příponu.
 
@@ -47,7 +47,7 @@ Následující tabulka uvádí vyhrazené přípony a základní typy a rozhra
 |Kolekce|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |Slovník|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
-|Obslužná rutina události|Delegát obslužné rutiny události|
+|EventHandler|Delegát obslužné rutiny události|
 |Výjimka|<xref:System.Exception?displayProperty=fullName>|
 |Oprávnění|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Fronta|<xref:System.Collections.Queue?displayProperty=fullName>|

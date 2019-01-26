@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, swimlane
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f89dd915498d2528a0a40a3e7a0af8b5d65a5b4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38bb141c6011739e56c5e7fee0fe77729f472232
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900623"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933359"
 ---
 # <a name="properties-of-swimlanes"></a>Vlastnosti drah
 Plaveckých drah můžete přidat do diagramu. Plaveckých drah rozdělit svislý nebo vodorovný oblasti diagramu. Můžete definovat další obrazce, která se zobrazí uvnitř plaveckých drah. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c3ca0877500e8242e7fb96ba15b19c9d8a6e13
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929225"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916987"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce – manifest aplikace
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikace je soubor XML, který popisuje aplikace, která se nasadí pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -32,11 +32,11 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu ap
 | - | - | - |
 | [\<sestavení > – Element](../deployment/assembly-element-clickonce-application.md) | Povinný parametr. Element nejvyšší úrovně. | `manifestVersion` |
 | [\<Vlastnost assemblyIdentity > – Element](../deployment/assemblyidentity-element-clickonce-application.md) | Povinný parametr. Určuje primární sestavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md) | Identifikuje požadavky na zabezpečení aplikace. | Žádná |
-| [\<entryPoint > – Element](../deployment/entrypoint-element-clickonce-application.md) | Povinný parametr. Určuje vstupní bod pro kód aplikace. | `name` |
+| [\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md) | Identifikuje požadavky na zabezpečení aplikace. | Žádná |
+| [\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md) | Povinný parametr. Určuje vstupní bod pro kód aplikace. | `name` |
 | [\<závislost > – Element](../deployment/dependency-element-clickonce-application.md) | Povinný parametr. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést. | Žádná |
 | [\<Soubor > – Element](../deployment/file-element-clickonce-application.md) | Volitelné. Identifikuje každý nonassembly soubor, který používá aplikace. Izolace dat modelu COM (Component Object) přidružené k souboru může obsahovat. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation > – Element](../deployment/fileassociation-element-clickonce-application.md) | Volitelné. Určuje příponu souboru, který se má přidružit aplikaci. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md) | Volitelné. Určuje příponu souboru, který se má přidružit aplikaci. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
 ## <a name="remarks"></a>Poznámky  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Soubor manifestu aplikace identifikuje aplikace nasazené pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Další informace o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], naleznete v tématu [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).  

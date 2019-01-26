@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09926abb9118a4116ae826607d5a741b3872ffb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ba516701ec232cb49edfee9888625789b544d62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948645"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Barevné zvýrazňování syntaxe ve službě starší verze jazyka
 Barevné zvýrazňování syntaxe je funkce, která způsobí, že různé prvky programovací jazyk, který se má zobrazit ve zdrojovém souboru v různé barvy a styly. Chcete-li tuto funkci podporují, budete muset zadat analyzátor a skener, který může identifikovat typy Lexikální prvky nebo tokenů v souboru. Řadu jiných jazyků rozlišit klíčová slova, oddělovače (jako je například kulatých závorek nebo složených závorek) a komentáře podle jejich barevné zvýrazňování různými způsoby.  

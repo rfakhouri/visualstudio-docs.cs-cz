@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbe9e98d4a30def296f395b7175e871a71383437
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a83c56adaec939c5244afff44cb5ff6823a6a713
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960469"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923279"
 ---
 # <a name="vsix-color-editor"></a>Editor barev VSIX
 Nástroj editoru barev rozšíření sady Visual Studio můžete vytvářet a upravovat vlastní barvy pro sadu Visual Studio. Nástroj může také generovat klíče motivů prostředků tak, aby barvy můžete použít v kódu. Tento nástroj je užitečný pro provádění barvy pro rozšíření sady Visual Studio, který podporuje motivů. Tento nástroj můžete otevřít soubory .pkgdef a XML. Visual Studio motivů (.vstheme soubory) je možné rozšíření barva Editor sady Visual Studio tak, že změníte příponu .xml. Kromě toho lze importovat .vstheme soubory do aktuálního souboru .xml.  
   
- ![Hero Editor barev VSIX](../../extensibility/internals/media/vsix-color-editor-hero.png "Hero Editor barev VSIX")  
+ ![VSIX Color Editor Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX Color Editor Hero")  
   
  **Definičních souborech balíčku**  
   
@@ -119,7 +119,7 @@ Nástroj editoru barev rozšíření sady Visual Studio můžete vytvářet a up
   
   Upravit token barvy, vyberte položku barvu motivu (sloupec) tohoto tokenu. Hodnota barvy přidáte buď zadáním barvu hexadecimálně hodnotu ve formátu číslice 8 ARGB, do buňky zadávat název barvy systému nebo pomocí rozevírací nabídky vyberte požadovanou barvu přes sadu posuvníky nebo seznam systémových barev.  
   
-  ![Barva úpravy Editor barev VSIX](../../extensibility/internals/media/vsix-color-editor-edit-color.png "barva úpravy Editor barev VSIX")  
+  ![VSIX Color Editor Edit Color](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX Color Editor Edit Color")  
   
   ![Pozadí Editor barev VSIX](../../extensibility/internals/media/vsix-color-editor-background.png "pozadí Editor barev VSIX")  
   

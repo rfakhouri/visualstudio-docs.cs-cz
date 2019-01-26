@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76b782b3abaf92eedccb43104987d16668794d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e54f3e485425b90a8ff0b6b0dbbca63d02574dc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940242"
 ---
 # <a name="graphics-pipeline-stages"></a>Fáze zřetězení grafiky
 V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volání draw jednotlivé každá fáze zřetězení grafiky Direct3D.  
@@ -109,7 +109,7 @@ V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volá
   
  V okně fáze zřetězení je výstup pixel shaderu vizualizovat jako barevné rastrového obrázku. Chcete-li podrobněji podíváme na výsledek, vyberte **Pixel Shader** v **fáze zřetězení grafiky** okně zpracovaných primitiv v editoru obrázků.  
   
- **Slučovací modul výstupu**  
+ **Output Merger**  
  Fáze fúze výstup kombinuje efekt pixelů nově vykresleny spolu s existující obsah své vyrovnávací paměti odpovídající – barva hloubky a vzorníku – k vytvoření nové hodnoty v těchto vyrovnávací paměti.  
   
  V okně fáze zřetězení je výstup spojení výstup vizualizuje jako barevné rastrového obrázku. Abyste mohli na ně podívat výsledky, vyberte **slučovací modul výstupu** v **fáze zřetězení grafiky** okně sloučené framebuffer.  
@@ -125,4 +125,4 @@ V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volá
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Chybějící objekty z důvodu použití funkce Vertex Shading](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Návod: Ladění chyb stínováním při vykreslování](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [Návod: Ladění chyb při vykreslování, které jsou způsobené stínováním](walkthrough-debugging-rendering-errors-due-to-shading.md)

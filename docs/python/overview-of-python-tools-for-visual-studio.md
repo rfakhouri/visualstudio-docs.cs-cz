@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ffcf9f1af4e6b23f0d2469d757eeb9ab95f2b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927334"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927851"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -40,11 +40,11 @@ Visual Studio **prostředí Pythonu** okno (viz následující obrázek v širok
 
 ![Rozšířené zobrazení okno prostředí Pythonu](media/environments-expanded-view.png)
 
-Použití **otevřít interaktivní okno** příkaz interaktivní spuštění Pythonu v rámci sady Visual Studio. Použití **otevřít v PowerShell** příkaz pro otevření okna samostatný příkaz ve složce vybraného prostředí. Z tohoto okna Příkazový skript můžete spustit všechny python. 
+Použití **otevřít interaktivní okno** příkaz interaktivní spuštění Pythonu v rámci sady Visual Studio. Použití **otevřít v PowerShell** příkaz pro otevření okna samostatný příkaz ve složce vybraného prostředí. Z tohoto okna Příkazový skript můžete spustit všechny python.
 
 Další informace:
 
-- Video (2 miliony 35s): [Správa prostředí Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Video (2m 35s): [Správa prostředí Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
 - Dokumentace: [Správa prostředí Pythonu](managing-python-environments-in-visual-studio.md)
 - Dokumentace: [Odkaz na prostředí Pythonu](python-environments-window-tab-reference.md)
 
@@ -56,7 +56,7 @@ Visual Studio poskytuje prvotřídní editor Pythonu, včetně barevné zvýraz�
 
 Další informace:
 
-- Video (2 miliony 30 s): [Úpravy kódu v Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Video (2m 30s): [Úpravy kódu v Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Dokumentace: [Úpravy kódu v Pythonu](editing-python-code-in-visual-studio.md)
 - Dokumentace: [Formátovat kód](formatting-python-code.md)
 - Dokumentace: [Refaktorování kódu](refactoring-python-code.md)
@@ -75,9 +75,9 @@ Visual Studio také podporuje IPython/Jupyter v REPL, včetně vložené grafy, 
 
 Další informace:
 
-- Video (2 miliony 22s: [Interaktivní okno Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Video (2m 22s: [Interaktivní okno Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
 - Dokumentace: [Interaktivní okno](python-interactive-repl-in-visual-studio.md)
-- Dokumentace: [IPython v sadě Visual Studio](interactive-repl-ipython.md)
+- Dokumentace: [IPython in Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Systém projektů a šablon projektů a položek
 
@@ -132,7 +132,7 @@ Zjišťování, spouštět a spravovat testy v sadě Visual Studio **Průzkumní
 
 Další informace:
 
-- Video: [Testování Python 2 miliony 31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- Video: [Testing Python 2m 31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
 - Dokumentace: [Nástroje testování částí pro Python](unit-testing-python-in-visual-studio.md)
 - Visual Studio – Obecné funkce dokumentace: [Testování částí kódu](../test/unit-test-your-code.md).
 

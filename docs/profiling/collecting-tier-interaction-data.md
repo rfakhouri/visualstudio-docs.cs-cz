@@ -11,21 +11,21 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2c18ba6cb7360be904d491f29195eea7add6c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 453dd2d93b8ac3c1a9ba2d194f20ee14897d6fa3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918651"
 ---
 # <a name="collect-tier-interaction-data"></a>Shromažďování dat interakce vrstev
 
 Profilování interakce vrstev poskytuje další informace o spuštění s úspěšností funkce víceúrovňových aplikací, které komunikují s databázemi prostřednictvím služeb ADO.NET. Data se shromažďují pouze pro synchronní volání.
 
-**Edice sady Visual Studio**
+**Visual Studio editions**
 
 Data profilace interakce vrstev lze shromažďovat pomocí libovolné edice sady Visual Studio. Nicméně data profilace interakce vrstev lze zobrazit pouze v sadě Visual Studio Enterprise.
 

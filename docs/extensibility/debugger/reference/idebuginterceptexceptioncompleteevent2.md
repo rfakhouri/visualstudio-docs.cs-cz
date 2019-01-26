@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8ebc256b-5428-4ed6-a505-6aedc8242b8e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910c8d3fe94d047eb2323a2e1d9f309875bc1a88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a54ea7c9745eedf2fe86aed2df29a380447e154
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932776"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 Toto rozhraní je odeslaný ladicího stroje (DE) pro správce ladění relace (SDM) při DE dokončil zpracování zachycené události.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42e6a7d0ddd00fefa071f18ef4d7ee0d508a06da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5f9872b66bdb22a53f7c8f6b774bec389e2eaa7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857838"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933708"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem ke shromažďování dat paměti pomocí příkazového řádku
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci spuštění samostatné (klientské) aplikaci rozhraní .NET Framework a shromažďování dat paměti.  
@@ -56,14 +56,14 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 3. Spusťte cílovou aplikaci. Zadejte:  
 
-    **Nástroj VSPerfCmd**[/spuštění](../profiling/launch.md) **:** `appName` **/GC –:**{**přidělení**&#124;**doba života** }[`Options`]    
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]  
 
    - [/GC –](../profiling/gc-vsperfcmd.md)**:** `Keyword` možnost je vyžadována ke shromažďování dat paměti .NET Framework. Parametr – klíčové slovo určuje, zda chcete shromažďovat data o přidělování paměti nebo získat informace o přidělování paměti a životnosti objektů.  
 
      |Klíčové slovo|Popis|  
      |-------------|-----------------|  
      |**přidělení**|Shromážděte data o přidělování paměti pouze.|  
-     |**Doba života**|Shromážděte o přidělování paměti a životnosti objektů.|  
+     |**lifetime**|Shromážděte o přidělování paměti a životnosti objektů.|  
 
      Můžete použít některý z těchto možností s **/spuštění** možnost.  
 

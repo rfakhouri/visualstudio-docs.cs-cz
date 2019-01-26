@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: be5bee69-d2d2-44e1-be2e-3ea451969003
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e8986b2f480b461487d520f59245b80d289dcfc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3931501d913a8518f80deccdf9ebe1667e51b661
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882218"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923711"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Poskytněte zprávu ObsoleteAttribute
 
@@ -35,7 +35,7 @@ ms.locfileid: "53882218"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ nebo člen je označen pomocí <xref:System.ObsoleteAttribute?displayProperty=fullName> atribut, který nemá jeho <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> zadanou vlastnost.
 
 ## <a name="rule-description"></a>Popis pravidla

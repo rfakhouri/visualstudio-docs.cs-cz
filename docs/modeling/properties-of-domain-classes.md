@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, domain class
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 799b5d2feafbf4a0e7b6ff54673983a585b0d2fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfa9ba27a338f52e40d063a4c8ceb9774bd9244b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876887"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942448"
 ---
 # <a name="properties-of-domain-classes"></a>Vlastnosti tříd domény
 Doménové třídy mají vlastnosti v následující tabulce. Informace o třídách domény najdete v tématu [porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).

@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 076d8ed69e742ccb228af26a10ec5f9e76767a70
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: e4fcd76cb535fdf7f043189720f291393e4ed9d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443230"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919067"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Kurz: Začínáme s jazykem Visual Basic v sadě Visual Studio
 
@@ -43,7 +43,7 @@ Nejprve vytvoříme aplikaci projektu jazyka Visual Basic. Typ projektu obsahuje
 
 Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můžete ho získat tak, že přidáte **vývoj pro různé platformy .NET Core** pracovního vytížení. Přidejte tuto úlohu v jednom z následujících způsobů, v závislosti na tom, které jsou na vašem počítači nainstalovaná aktualizace sady Visual Studio 2017.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Pomocí dialogového okna Nový projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Pomocí dialogového okna Nový projekt
 
 1. Klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
 
@@ -53,7 +53,7 @@ Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můž
 
    ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](../media/tutorial-aspnet-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Pomocí nabídky panelu nástrojů
 
 1. Zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
 

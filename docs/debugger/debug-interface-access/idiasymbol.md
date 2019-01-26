@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47d898e9a0fb40347b2463cfa8ecccb1e58f896
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c0f8241bfb4ba4d6eee228dd3563209a4c4afae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906706"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920120"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Popisuje vlastnosti instance symbolu.  
@@ -336,16 +336,16 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- `Header:` dia2.h  
+ `Header:` Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumsymbolsbyaddr –](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [Idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md)   
+ [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
+ [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [Idiasession –](../../debugger/debug-interface-access/idiasession.md)   
  [Hierarchie tříd typů symbolů](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Symboly a značky symbolů](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   

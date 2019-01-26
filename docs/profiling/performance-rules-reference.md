@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d947dbc3fae436fa64d3effa963df5445991be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13bcc997f57695c0c8f6e50c755cd485be91c663
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924201"
 ---
 # <a name="performance-rules-reference"></a>Referenční dokumentace pravidel výkonu
 Pravidla výkonu nástrojů pro profilaci poskytují další upozornění a informace o výkonu vaší aplikace. Pravidla výkonu, analýza dat během spuštění profilování, která se shromažďují ze zdrojů, jako jsou Windows a čítače výkonu procesoru. Pravidlo zprávy se zobrazují v okně chybový výstup [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] integrovaného vývojového prostředí. Zprávy jsou uvedeny pomocí jednoho z následujících úrovní pravidlo:  

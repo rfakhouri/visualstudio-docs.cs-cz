@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 697685ea3cf39cf1aede3d2a475d3d3bb39c587f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ccc96d92e83ea42c6921abd2159499c1e9c42c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930352"
 ---
 # <a name="usedcommand-element"></a>UsedCommand – element
 Umožňuje pro přístup k příkazu, který je definován v jiném souboru .vsct VSPackage. Například, pokud vaše VSPackage používá standardní **kopírování** příkaz, který je definovaný [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prostředí, můžete přidat příkaz nabídky nebo panelu nástrojů bez znova implementovány.  

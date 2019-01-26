@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae7b890e12d56e61571ecbf72dc1b0cd39567a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 844705e5c6e014050b931a0410c6b0b51c2149ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898200"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953770"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Vyhněte se použití výjimek pro tok řízení
 
@@ -32,7 +32,7 @@ ms.locfileid: "53898200"
 
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit alespoň 25 vzorky k aktivaci tohoto pravidla.  
 
-## <a name="cause"></a>příčina  
+## <a name="cause"></a>Příčina  
  Vysoký počet obslužných rutin výjimek rozhraní .NET Framework byly volány v dat profilování. Zvažte použití další logiku toku řízení k omezení počtu výjimek, které jsou vyvolány.  
 
 ## <a name="rule-description"></a>Popis pravidla  

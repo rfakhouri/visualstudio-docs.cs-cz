@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a8fc55493aab5a19a175b75b7b1d808e9fa156e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 731ca1a7091af81abb5b9ed2521cc41f575747cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877559"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933747"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony či dekorátoru
 A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka specifického pro doménu (DSL). Můžete provést dekoratéru zobrazují a zmizí v závislosti na stavu vlastnosti v modelu. Například pro obrazec představující osoby, může mít jiné ikony, které se zobrazí v závislosti na osoby pohlaví, počet podřízených a tak dále.

@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5c1c81abbbc2f252744c465adf1cb99b3396d54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba6fe7ff9df93c2f8e1b482d903199a01ed56094
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873764"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960981"
 ---
 # <a name="xml-editor"></a>XML editor
 
@@ -41,7 +41,7 @@ XML editor je založený na textový editor sady Visual Studio a obsahuje dalš�
 
 XML editor je vyvoláno pro dobře známé přípony, například *.xml*, *XSD*, *XSL*, a *.config*. Také vyvolá se v jakékoli neznámé příponu Pokud soubor je pravděpodobně obsahuje kód XML. Můžete také otevřít libovolný soubor v editoru XML pomocí **otevřít v programu** možnost a editor souborů XML výběrem ze seznamu.
 
-## <a name="xslt-intellisense"></a>Technologie IntelliSense XSLT
+## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
 [Technologie IntelliSense XSLT](../xml-tools/xml-editor-intellisense-features.md) vám umožní názvy sad atribut automatického dokončování, šablony režimech a názvy a názvy parametrů pro zadaný režim nebo zadané s názvem šablony.
 

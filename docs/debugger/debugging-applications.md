@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5273a80864af9253414e37df0ff290fbb374bbaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f974ebc0953331a3564c5b4632a55a40c999c61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939067"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920068"
 ---
 # <a name="debugging-applications"></a>Ladicí aplikace
 Následující části se zabývají ladění pro konkrétní typy aplikací. Typy různých aplikací a různé jazyky vyžadují jiná nastavení a techniky a k dispozici různé problémy, které je potřeba ladit.  

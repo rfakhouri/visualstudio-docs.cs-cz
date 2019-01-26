@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd9ee5e1d86982b2e1b0a8495c9b43a14f43988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 612fa233ceaa2fdee16a75b25f15576d631bd30b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917530"
 ---
 # <a name="debugger-user-interface-xslt"></a>Uživatelské rozhraní ladicího programu (XSLT)
 
@@ -101,5 +101,5 @@ Další informace najdete v tématu [jak: Vyhodnocení výrazu XPath](../xml-too
 ## <a name="see-also"></a>Viz také:
 
 - [Ladění XSLT](../xml-tools/debugging-xslt.md)
-- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)   
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
 - [Kontrolovat proměnné v okně Automatické hodnoty a místní hodnoty v sadě Visual Studio](../debugger/autos-and-locals-windows.md)

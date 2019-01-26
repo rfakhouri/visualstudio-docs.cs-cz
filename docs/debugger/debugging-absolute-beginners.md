@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15facda7bcb2b07dd071aaf0e40c44d265a01826
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 1ff3f2552f2334d87bc329bab41501570bd67864
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204505"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918200"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -64,7 +64,7 @@ Když normálně spustí aplikaci, se zobrazí chyby a nesprávné výsledky pou
 
 Spuštění aplikace v rámci ladicího programu, také nazývané *režim ladění*, znamená to, že ladicí program aktivně sleduje vše, co se děje jako program se spustí. Také umožňuje pozastavení aplikace kdykoli zkontrolovat jeho stav a poté krokovat kód řádek po řádku a sledujte všechny podrobnosti o jejím průběhu.
 
-V sadě Visual Studio, zadejte režim ladění pomocí **F5** (nebo **ladění** > **spustit ladění** příkaz nabídky nebo **spustit ladění**  tlačítko ![spustit ladění](../debugger/media/dbg-tour-start-debugging.png "spustit ladění") v panelu nástrojů ladění). Pokud dojde k jakékoli výjimky, pomocníka výjimky v sadě Visual Studio přejde na přesný okamžik, kdy výjimky došlo k a poskytuje další užitečné informace. Další informace o tom, jak zpracování výjimek v kódu, naleznete v tématu [opravovat chyby napsáním lépe C# kód](../debugger/write-better-code-with-visual-studio.md).
+V sadě Visual Studio, zadejte režim ladění pomocí **F5** (nebo **ladění** > **spustit ladění** příkaz nabídky nebo **spustit ladění**  tlačítko ![spustit ladění](../debugger/media/dbg-tour-start-debugging.png "spustit ladění") v panelu nástrojů ladění). Pokud dojde k jakékoli výjimky, pomocníka výjimky v sadě Visual Studio přejde na přesný okamžik, kdy výjimky došlo k a poskytuje další užitečné informace. Další informace o tom, jak zpracování výjimek v kódu, naleznete v tématu [nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md).
 
 Pokud jste nedostali výjimku, je pravděpodobně vhodné, kde hledat problému v kódu. To je, kde používáte *zarážky* pomocí ladicího programu, abyste měli příležitost dobře se více pečlivě prozkoumat kód. Zarážky jsou základní a nejjednodušší funkcí spolehlivého ladění. Zarážky označuje, kde by měl Visual Studio pozastavit spuštěním kódu, se můžete podívat na hodnoty proměnných, nebo chování paměti nebo pořadí, ve kterém kód běží.
 

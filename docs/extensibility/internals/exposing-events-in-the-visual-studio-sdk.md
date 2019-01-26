@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2eeb155212f7e065febb68b58b31879b5d5a7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c08af11ce08cf86948655d01dc5468a3d70ae2fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924299"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Vystavení události v sadě Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umožňuje zdroje událostí pomocí služby automation. Doporučujeme vám, že zdroj události pro projekty a položky projektu.  
@@ -46,7 +46,7 @@ ms.locfileid: "53853093"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Položky registru z ukázky základního projektu  
  V této části ukazuje, kde chcete-li přidat hodnoty událostí automatizace do registru.  
   
- **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]**
   
  **AutomationProjectEvents** = vrátí `AutomationProjectEvents` objektu.  
   

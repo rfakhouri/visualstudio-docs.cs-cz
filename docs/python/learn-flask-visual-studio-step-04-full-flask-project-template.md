@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060826"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927512"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Použití úplné šablony webového projektu Flask
 
@@ -163,7 +163,7 @@ def about():
 
 Jak je uvedeno na začátku tohoto článku, Visual Studio poskytují šablonu "Webový projekt Flask/Jade", která vytvoří aplikaci, která je vizuálně shodná s co vytvořil "Webový projekt Flask". Hlavní rozdíl je, že používá modul Jade šablon, což je rozšíření šablonovacím systémem, která implementuje stejné koncepty stručnější jazyk. Konkrétně Jade používá klíčová slova namísto značky, které jsou uzavřeny v {% oddělovače, například a umožňuje odkazovat na prvky HTML pomocí klíčových slov a stylů CSS.
 
-Umožňující Jade zahrnuje šablony projektu nejprve pyjade balíčku v *souboru requirements.txt*. 
+Umožňující Jade zahrnuje šablony projektu nejprve pyjade balíčku v *souboru requirements.txt*.
 
 Aplikace  *\_ \_init\_\_.py* souboru obsahuje řádek do
 
@@ -236,4 +236,4 @@ Bez obav experimentovat s šablonovacím systémem i Jade syntaxí zobrazíte, k
 
 - [Zápis svoji první aplikaci Flask, část 4 – formulářů a obecného zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [Jade na GitHib (dokumentace)](https://github.com/liuliqiang/pyjade) (webu github.com)
-- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

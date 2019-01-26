@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a7fdf9b0ead79e63cb9f9715a995edda9889ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ced9377d017bfbbcb4a200c004f8223a5636f39
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919002"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925577"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 Získá příznak, který určuje, zda funkce obsahuje některý [strukturovaného zpracování výjimek (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (například __try /\__except bloků).  
@@ -48,5 +48,5 @@ HRESULT get_hasSEH(
 |Verze:|Ve verzi 8.0 DIA SDK|  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Strukturované zpracování výjimek (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

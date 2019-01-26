@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce83c69893e4623dc5989561d0edfb6415708d56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5ec881d8704558ec023aa0562cb7d9ca831c6f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880176"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935330"
 ---
 # <a name="assertions-in-managed-code"></a>Kontrolní výrazy ve spravovaném kódu
 Příslušný kontrolní výraz nebo `Assert` prohlášení, testuje podmínku, který zadáte jako argument `Assert` příkazu. Pokud je podmínka vyhodnocena jako true, nedojde k žádné akci. Pokud je podmínka vyhodnocena jako NEPRAVDA, výraz se nezdaří. Používáte-li sestavení pro ladění, váš program přejde do režimu přerušení.  

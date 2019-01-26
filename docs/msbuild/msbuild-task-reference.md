@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77473f001d3d363309f1ac2403a146d0aa8124cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884721"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951284"
 ---
 # <a name="msbuild-task-reference"></a>Referenční dokumentace úlohy nástroje MSBuild
 Úlohy poskytují kód, který se spustí během procesu sestavení. Úkoly v následujícím seznamu jsou součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Když [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] je nainstalovaný, další úkoly jsou k dispozici, které se používají k vytváření [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty. Další informace najdete v tématu [Visual C++ – úkoly](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -70,7 +70,7 @@ ms.locfileid: "53884721"
  [Copy – úloha](../msbuild/copy-task.md)  
  Zkopíruje soubory do nového umístění.  
 
- [Createcsharpmanifestresourcename – úloha](../msbuild/createcsharpmanifestresourcename-task.md)  
+ [CreateCSharpManifestResourceName task](../msbuild/createcsharpmanifestresourcename-task.md)  
  Vytvoří [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-manifestu název stylu z danou *RESX* název souboru nebo jiného prostředku.  
 
  [Createitem – úloha](../msbuild/createitem-task.md)  
@@ -79,7 +79,7 @@ ms.locfileid: "53884721"
  [CreateProperty – úloha](../msbuild/createproperty-task.md)  
  Naplní vlastnosti ze vstupních hodnot, což hodnoty zkopírovány z jedné vlastnosti nebo řetězec do druhého.  
 
- [Createvisualbasicmanifestresourcename – úloha](../msbuild/createvisualbasicmanifestresourcename-task.md)  
+ [CreateVisualBasicManifestResourceName task](../msbuild/createvisualbasicmanifestresourcename-task.md)  
  Vytvoří [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-manifestu název stylu z danou *RESX* název souboru nebo jiného prostředku.  
 
  [CSC – úloha](../msbuild/csc-task.md)  
@@ -133,7 +133,7 @@ ms.locfileid: "53884721"
  [Getframeworkpath – úloha](../msbuild/getframeworkpath-task.md)  
  Načte cestu k [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sestavení.  
 
- [Getframeworksdkpath – úloha](../msbuild/getframeworksdkpath-task.md)  
+ [GetFrameworkSdkPath task](../msbuild/getframeworksdkpath-task.md)  
  Načte cestu k [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
 
  [Getreferenceassemblypaths – úloha](../msbuild/getreferenceassemblypaths-task.md)  
@@ -205,7 +205,7 @@ ms.locfileid: "53884721"
  [Rozbalte úloh](../msbuild/unzip-task.md)  
  Unzips *ZIP* archivní úrovně do zadaného umístění.
 
- [Updatemanifest – úloha](../msbuild/updatemanifest-task.md)  
+ [UpdateManifest task](../msbuild/updatemanifest-task.md)  
  Aktualizace vybraných vlastností v manifestu a vzdává.  
 
  [Vbc – úloha](../msbuild/vbc-task.md)  
