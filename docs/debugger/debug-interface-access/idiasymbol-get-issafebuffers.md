@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_issafebuffers – | Dokumentace Microsoftu
+title: IDiaSymbol::get_isSafeBuffers | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f29e373d-e7bb-4181-ab9f-bf708d401d83
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8ff4b0477a4d70cebc42fb99e17c09ac37e062
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 623163353f0e1c95c073eeef91518617ba68c658
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946367"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922636"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Získá příznak, který určuje, jestli je použít direktivy preprocesoru bezpečné vyrovnávací paměti. Použít, když [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) je nastavena na `SymTagFunction`.  
@@ -43,12 +43,12 @@ HRESULT get_isSafeBuffers( 
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [strict_gs_check](/cpp/preprocessor/strict-gs-check)

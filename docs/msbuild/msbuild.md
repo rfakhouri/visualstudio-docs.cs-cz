@@ -1,5 +1,5 @@
 ---
-title: Nástroj MSBuild | Dokumentace Microsoftu
+title: MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3ea25520428783aaedc12e1666475feb104b583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928799"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069860"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Je platforma pro vytváření aplikací. Tento modul, který se také nazývá MSBuild, obsahuje schéma XML souboru projektu, který určuje, jak platforma sestavení zpracuje a vytvoří software. Visual Studio používá MSBuild, ale není závislé na Visual Studio. Vyvoláním *msbuild.exe* v souboru projektu nebo řešení můžete organizovat a vytvářet produkty v prostředích, kde není nainstalovaná sada Visual Studio.

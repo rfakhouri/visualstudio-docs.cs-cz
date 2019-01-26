@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 642b2acd-3a33-4d1f-b0a7-67073ae73be2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c31838f8dcfdcb8c98d7cfdd94eb2743f6e7d90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81364979092d2964c006aaefd29a5a3749565807
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931073"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Použijte upřednostňované výrazy
 
@@ -30,7 +30,7 @@ ms.locfileid: "53909008"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Zásadní - při vyvolání na sestavení<br /><br /> Bez konce – při vyvolání na parametry typu|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Název externě viditelného identifikátoru zahrnuje výraz, pro který existuje alternativní upřednostňovaný výraz. Nebo název obsahuje také výraz příznak nebo příznaky.
 

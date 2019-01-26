@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30953bb5cd41722ff99e37a0820a67aba77f3eef
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 7b73feb967e340f66eb243013add0b650916c956
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378131"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961423"
 ---
 # <a name="help-content-manager-overrides"></a>Přepíše Help Content Manager
 
@@ -35,11 +35,11 @@ Můžete změnit výchozí chování aplikace Help Viewer a funkcí souvisejíc�
 |Hodnota klíče registru|Typ|Data|Popis|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|odkazy řetězců|\<Adresa URL protokolu HTTP pro koncový bod služby\>|Definování koncového bodu služby jedinečný|
-|UseOnlineHelp|DWORD|`0` Chcete-li určit místní nápovědy `1` k určení online nápovědy|Definovat výchozí nápovědy online nebo offline|
+|UseOnlineHelp|dword|`0` Chcete-li určit místní nápovědy `1` k určení online nápovědy|Definovat výchozí nápovědy online nebo offline|
 |OnlineBaseUrl|odkazy řetězců|\<Adresa URL protokolu HTTP pro koncový bod služby\>|Definovat koncový bod jedinečný F1|
-|OnlineHelpPreferenceDisabled|DWORD|`0` Chcete-li povolit nebo `1` zakázat možnost předvoleb online nápovědy|Zakázat možnost předvoleb online nápovědy|
-|DisableManageContent|DWORD|`0` Chcete-li povolit nebo `1` zakázat **spravovat obsah** kartě v aplikaci Help Viewer|Zakažte **spravovat obsah** kartu|
-|DisableFirstRunHelpSelection|DWORD|`0` Chcete-li povolit nebo `1` zakázat funkce nápovědy, které jsou konfigurovány při prvním spuštění sady Visual Studio|Zakázat instalaci obsahu při prvním spuštění sady Visual Studio|
+|OnlineHelpPreferenceDisabled|dword|`0` Chcete-li povolit nebo `1` zakázat možnost předvoleb online nápovědy|Zakázat možnost předvoleb online nápovědy|
+|DisableManageContent|dword|`0` Chcete-li povolit nebo `1` zakázat **spravovat obsah** kartě v aplikaci Help Viewer|Zakažte **spravovat obsah** kartu|
+|DisableFirstRunHelpSelection|dword|`0` Chcete-li povolit nebo `1` zakázat funkce nápovědy, které jsou konfigurovány při prvním spuštění sady Visual Studio|Zakázat instalaci obsahu při prvním spuštění sady Visual Studio|
 
 ### <a name="example-pkgdef-file-contents"></a>Příklad obsahu souboru .pkgdef
 

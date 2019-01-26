@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e7cb983ec850c0efc9d22f1dd6458c71bcdcb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a84b59085e2850a7c889e3468788fb8ef23414ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824766"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959904"
 ---
 # <a name="web-site-support"></a>Podpora webu
 Systém projektu webu se bude systém projektu, který vytvoří webové projekty. Webové projekty zase vytvářet webové aplikace. Webový projekt vytvoří jeden spustitelný soubor pro každou webovou stránku, který je spojen kódu. Další spustitelné soubory jsou generovány v souborech zdrojového kódu ve složce /App_Code.  

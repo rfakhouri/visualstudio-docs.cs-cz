@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3840fc6ee7a5ef0075463462062f78c1a3d2a0c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8c86728488d74e5eebc277e87e87c96098915f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876137"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957933"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Upozornění Analýzy kódu pro spravovaný kód
 Nástroj pro analýzu spravovaného kódu poskytuje upozornění, které označují porušení pravidel v knihovnách spravovaného kódu. Upozornění jsou uspořádány do pravidla oblasti, jako jsou návrh, lokalizaci, výkonu a zabezpečení. Každému varování oznamuje porušení pravidla analýzy spravovaného kódu. Tato část poskytuje podrobné diskuze a příklady pro každé upozornění analýzy spravovaného kódu.
@@ -34,7 +34,7 @@ Nástroj pro analýzu spravovaného kódu poskytuje upozornění, které označu
 |CheckId|Jedinečný identifikátor pro pravidlo. ID kontroly a kategorie se používají pro-source potlačení upozornění.|
 |Kategorie|Kategorie upozornění.|
 |Narušující změna|Určuje, zda oprava porušení tohoto pravidla je zásadní změnu. Zásadní změna znamená, že sestavení, které obsahuje závislost na cíl, který způsobil porušení nebude znovu zkompilovat pomocí nové verze nelze upravovat nebo může v době běhu selhat z důvodu této změny. Při více opravy jsou k dispozici a alespoň jednu opravu je zásadní změnu a jednu opravu není, jsou určeny "Přerušení" i "Bez přerušení".|
-|příčina|Konkrétní spravovaný kód, který způsobí, že pravidlo generování upozornění.|
+|Příčina|Konkrétní spravovaný kód, který způsobí, že pravidlo generování upozornění.|
 |Popis|Tento článek popisuje problémy, které jsou za upozornění.|
 |Jak vyřešit porušení|Vysvětluje, jak změnit zdrojový kód a splňovat pravidla zabránit generování upozornění.|
 |Kdy potlačit upozornění|Popisuje, když je bezpečný pro potlačení upozornění z pravidla.|

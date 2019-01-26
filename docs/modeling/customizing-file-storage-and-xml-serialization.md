@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42e82d95f855cfa444c30c61a9f2a03cc79ec4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918575"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Přizpůsobení úložiště souborů a serializace XML
 
@@ -272,7 +272,7 @@ Tyto prvky se nacházejí v Průzkumník DSL pod **Data Behavior\Class serializa
 |Vlastnost|Popis|
 |Obsahuje vlastní schéma elementů|Při hodnotě True označuje, jestli má doménová třída vlastní schéma elementů|
 |Vlastní|Nastavte na **True** Pokud budete chtít napsat vlastní kód serializace a deserializace pro tuto doménovou třídu.<br /><br /> Sestavte řešení a zjistěte chyby zjistit podrobné pokyny.|
-|Doménová třída|Doménová třída, ke kterému se vztahuje tento datový uzel třídy. Jen pro čtení.|
+|Domain Class|Doménová třída, ke kterému se vztahuje tento datový uzel třídy. Jen pro čtení.|
 |Název elementu|Název uzlu XML pro elementy této třídy. Výchozí hodnota je malá verzi třídy název domény.|
 |Název atributu monikeru|Název atributu použitého v elementech monikeru, obsahují odkaz. Pokud je pole prázdné, název vlastnosti klíče nebo ID. se používá.<br /><br /> V tomto příkladu je "name":  `<personMoniker name="/Mike Nash"/>`|
 |Název elementu monikeru|Název elementu xml použitého pro monikery v, které odkazují na prvky této třídy.<br /><br /> Výchozí hodnota je malá verzi příponu "Moniker" název třídy. Například, `personMoniker`.|

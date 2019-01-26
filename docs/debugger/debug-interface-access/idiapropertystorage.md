@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b896cf54f06e84316f67a32c10f66dda21c2cd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e50952247d441b9fbc3132074b9b17c201d34dad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931387"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Umožňuje číst trvalou vlastnosti sady DIA vlastností.  
@@ -120,20 +120,20 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: dia2.h  
+ Záhlaví: Dia2.h  
   
  Knihovna: diaguids.lib  
   
- Knihovny DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::getenumtables –](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [Idiasectioncontrib –](../../debugger/debug-interface-access/idiasectioncontrib.md)   
- [Idiasegment –](../../debugger/debug-interface-access/idiasegment.md)   
+ [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
+ [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [Idiainjectedsource –](../../debugger/debug-interface-access/idiainjectedsource.md)   
- [Idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md)   
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Idiasourcefile –](../../debugger/debug-interface-access/idiasourcefile.md)   
- [Idialinenumber –](../../debugger/debug-interface-access/idialinenumber.md)   
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

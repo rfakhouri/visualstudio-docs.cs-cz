@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195ec36affc9ede9efc61ead2cdede8233ebb65a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928903"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro Visual Studio
 Když vytváříte uživatelské rozhraní, které používá běžné prvky prostředí Visual Studio nebo prvek rozhraní konzistentní s podobnými funkcemi, například, vybrat a přiřadit barvy pomocí existující token názvy v souborech s definicí balíčku. Tím se zajistí, že vaše uživatelské rozhraní zůstane konzistentní s celkové prostředí sady Visual Studio a že se automaticky aktualizuje při přidávání nebo aktualizaci motivy.  
@@ -160,7 +160,7 @@ Použijete-li ve své funkci standardní panel příkazů sady Visual Studio, bu
 | Piktogram | `CommonControls.CheckBoxGlyphFocused` |
 
 ### <a name="drop-downs-and-combo-boxes"></a>Rozevírací seznamy a pole se seznamem polí
-![Přetažení seznamu nebo pole se seznamem (červená značka)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")<br />Drop-down/pole se seznamem (červená linka)  
+![Drop-down/combo box (redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Drop-down/pole se seznamem (červená linka)  
 
 | Použití... | Nepoužívejte... |
 | --- | --- |
@@ -370,7 +370,7 @@ Text nápovědy se zobrazí v ovládacím prvku prázdné pod ovládací prvek n
 ### <a name="hyperlink"></a>Hypertextový odkaz  
 Hypertextový odkaz je jeden ovládací prvek, který nemá páru pozadí a popředí. Ve všech případech použijte barvu popředí hypertextový odkaz, který se zobrazí správně v tmavě šedé a bílé pozadí. Pokud nepoužíváte barevné tokenu pro ovládací prvek hypertextový odkaz, zobrazí se výchozí systém barvu "stisknutí", který bude červeně blikat. To je signál, že ovládací prvek není pomocí tokenu barva správné prostředí.  
 
-![Hypertextový odkaz (červená značka)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303 133_HyperlinkRedline")<br />Hypertextový odkaz (červená linka)
+![Hyperlink (redline)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Hypertextový odkaz (červená linka)
 
 | Použití... | Nepoužívejte... |
 | --- | --- |

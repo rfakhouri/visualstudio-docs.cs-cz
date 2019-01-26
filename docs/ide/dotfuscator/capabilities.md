@@ -4,7 +4,7 @@ ms.date: 10/10/2017
 ms.devlang: dotnet
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-keywords: Nástroj Dotfuscator, řešení Dotfuscator CE, PreEmptive, společnosti PreEmptive Solutions PreEmptive ochrany, ochranu, community edition, obfuskace, .NET, bezplatný, Visual Studio 2017
+keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, obfuscation, .NET, free, Visual Studio 2017
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -16,13 +16,13 @@ description: Další možností bezplatný nástroj Dotfuscator Community Editio
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f7054eabf20da08bb22df080b0c737222b556483
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b532bed6a20bd0fe79d4cdb820e9bcd5f15d1d8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963894"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935627"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funkce Dotfuscatoru
 

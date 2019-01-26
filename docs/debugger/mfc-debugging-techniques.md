@@ -22,21 +22,21 @@ helpviewer_keywords:
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2bfc9e9c45e7bf3413c1733dd57534f3675a2f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20e39a356b678d498b97f3fbcaca85b713399e83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832214"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954056"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniky ladění MFC
 Pokud ladíte aplikace knihovny MFC, může být užitečné tyto techniky ladění.  
 
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
- [Afxdebugbreak –](#BKMK_AfxDebugBreak)  
+ [AfxDebugBreak](#BKMK_AfxDebugBreak)  
 
  [TRACE – makro](#BKMK_The_TRACE_macro)  
 
@@ -142,7 +142,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
 
   |Hodnota|Popis|  
   |-----------|-----------------|  
-  |**allocmemdf –**|Zapněte diagnostiku paměti alokátoru (výchozí).|  
+  |**allocMemDF**|Zapněte diagnostiku paměti alokátoru (výchozí).|  
   |**delayFreeMemDF**|Zpoždění uvolnění paměti při volání metody `delete` nebo `free` až do ukončení programu. To způsobí, že program k přidělení maximální množství paměti.|  
   |**checkAlwaysMemDF**|Volání [afxcheckmemory –](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) pokaždé, když je paměť přidělena nebo uvolněna.|  
 

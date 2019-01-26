@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d01686d3e0bbc034095ae1b4ec54e5995fc6462f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958729"
 ---
 # <a name="overview-report-a-problem"></a>Přehled: Nahlášení problému
 
@@ -63,7 +63,7 @@ Poté, co můžete nahlásit problém, stavy určují, kde vašim příspěvkům
 
 - - -
 
-![Uzavřeno – oprava stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![Uzavřeno – oprava stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 **Uzavřeno – opraveno** označuje, že Vydali jsme opravu problému. Problém je nyní také označené "opravené ve:" značky určující vydanou verzi.
 

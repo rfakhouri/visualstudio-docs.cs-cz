@@ -7,16 +7,16 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aded621c89f6d351c6abb9bbe1744de51673e6b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925547"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070796"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 Můžete vytvořit pravidlo úložiště, které rozšíří změnu z jednoho elementu do druhého v produktu Visualization and Modeling SDK (vmsdk následující položky). Když dojde ke změně k libovolnému prvku v Store, jsou naplánovány pravidla má být spuštěna, většinou když nejkrajnější transakce se potvrzeny. Existují různé typy pravidel pro různé druhy událostí, jako je například přidání elementu nebo jejím odstranění. Pravidla můžete připojit na konkrétní typy prvků, tvary nebo diagramů. Mnoho integrovaných funkcí, které jsou definovány pomocí pravidel: například pravidla ujistěte se, že diagramu se aktualizuje při změně modelu. Doménově specifického jazyka můžete přizpůsobit tak, že přidáte vlastní pravidla.

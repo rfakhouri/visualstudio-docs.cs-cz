@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904293"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923091"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Návrh souborů tabulky (.vsct) příkaz XML
 Tabulky příkazů XML (*.vsct*) soubor popisuje rozložení a vzhled příkaz položek pro balíček VSPackage. Příkaz položky zahrnují tlačítka, pole se seznamem, nabídky, panely nástrojů a skupiny položek příkazu. Tento článek popisuje XML souborů tabulky příkazů, jak ovlivňují příkaz položky a v nabídkách a postupy jejich vytvoření.
@@ -117,7 +117,7 @@ Můžete použít *vsct.exe* kompilátor pro převod z existujícího *.cto* do 
 
  Během vývoje je možné pro více projektů VSPackage vytvořené a registrované v experimentální podregistru, který může mít za následek matoucí nepořádku v integrovaném vývojovém prostředí. To pokud chcete napravit, můžete resetovat experimentální hive do výchozího nastavení pro odebrání všech registrovaných rozšíření VSPackages a všechny změny, které mohou mít provedené integrovaného vývojového prostředí. Resetovat experimentální hive, použijte nástroj CreateExpInstance.exe, který je součástí sady Visual Studio SDK. Najdete ho na:
 
- *% PROGRAMFILES (x 86) %\Visual Studio\\\<verze > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
+ *%PROGRAMFILES(x86)%\Visual Studio\\\<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
  Spusťte nástroj pomocí příkazu **/reset CreateExpInstance**. Mějte na paměti, že tento nástroj odebere z podregistru experimentální všechny registrované nejsou obvykle nainstalovány s rozšířením VSPackages [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 

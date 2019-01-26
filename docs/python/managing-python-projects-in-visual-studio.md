@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 384c966c9553ac07131eb74d065df17640305421
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961634"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty v Pythonu v sadě Visual Studio
 
@@ -113,7 +113,7 @@ Propojených souborů jsou ignorovány pod následující podmínky:
 
 Chcete-li přidat existující položku jako odkaz, klikněte pravým tlačítkem na složku v projektu, ve kterém chcete přidat soubor a pak vyberte **přidat** > **existující položku**. V zobrazeném dialogovém okně vyberte soubor a zvolte **přidat jako odkaz** z rozevíracího seznamu na **přidat** tlačítko. Za předpokladu, že neexistují žádné konfliktní soubory, tento příkaz vytvoří odkaz ve vybrané složce. Odkaz není však přidat, pokud již existuje soubor se stejným názvem nebo odkaz na tento soubor v projektu již existuje.
 
-Pokud se pokusíte k odkazování na soubor, který již existuje ve složce projektu se přidá jako normální soubor, nikoli jako odkaz. Chcete-li soubor převést na odkaz, vyberte **souboru** > **uložit jako** k uložení souboru do umístění mimo hierarchii projektu. Visual Studio automaticky převede jej na odkaz. Podobně můžete převést odkaz zpět pomocí **souboru** > **uložit jako** k uložení souboru někde v hierarchii projektu. 
+Pokud se pokusíte k odkazování na soubor, který již existuje ve složce projektu se přidá jako normální soubor, nikoli jako odkaz. Chcete-li soubor převést na odkaz, vyberte **souboru** > **uložit jako** k uložení souboru do umístění mimo hierarchii projektu. Visual Studio automaticky převede jej na odkaz. Podobně můžete převést odkaz zpět pomocí **souboru** > **uložit jako** k uložení souboru někde v hierarchii projektu.
 
 Je-li přesunout propojený soubor v **Průzkumníka řešení**, se přesune na odkaz, ale skutečný soubor je poškozena. Podobně odstraněním propojení odebere propojení bez ovlivnění souboru.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21826a432dbbebb6ae38db4ed5b1ca33d95cf9f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d66af0c4ce83feb1153cfd53bf12d8ae40f38b69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941515"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071004"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType – element (šablony sady Visual Studio)
 Rozděluje šablonu projektu tak, aby se objevila pod zadané skupiny v rámci **nový projekt** nebo **přidat novou položku** dialogové okno.  
@@ -27,8 +27,8 @@ Rozděluje šablonu projektu tak, aby se objevila pod zadané skupiny v rámci *
 >  Šablony projektů jsou podporovány pro C++ v sadě Visual Studio 2012. Nejsou podporovány pro C++ v sadě Visual Studio 2010 a starší verze.  
   
  \<Vstemplate – >  
- \<TemplateData >  
- \<ProjectType >  
+ \<TemplateData>  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,7 +49,7 @@ Rozděluje šablonu projektu tak, aby se objevila pod zadané skupiny v rámci *
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  

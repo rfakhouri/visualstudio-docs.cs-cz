@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca01809edc10058097ea40ff67ea263b5a10a5a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914965"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959811"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidruženy **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu k vlastnosti kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
@@ -133,7 +133,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Akce se má provést při spuštění z <xref:EnvDTE.vsStartUp>, s hodnotami 0 až 5:<br /><br /> -0: Otevřít domovskou stránku<br />-1: Načíst poslední načtené řešení<br />-2: Zobrazit **otevřít projekt** dialogové okno<br />-3: Zobrazit **nový projekt** dialogové okno<br />-4: Zobrazit prázdné prostředí<br />-5: Zobrazit úvodní stránku|
+|OnStartUp|Get/Set (Enum)|Akce se má provést při spuštění z <xref:EnvDTE.vsStartUp>, s hodnotami 0 až 5:<br /><br /> -   0: Otevřít domovskou stránku<br />-   1: Načíst poslední načtené řešení<br />-   2: Zobrazit **otevřít projekt** dialogové okno<br />-   3: Zobrazit **nový projekt** dialogové okno<br />-   4: Zobrazit prázdné prostředí<br />-   5: Zobrazit úvodní stránku|
 |StartPageRSSUrl|Získá nebo nastaví (String)|Adresa URL pro informační kanál RSS informačního kanálu, který se používá při spuštění.|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Úvodní stránka se aktualizuje po každé průchodu intervalu zadaném ve StartPageRefreshInterval.|
 |StartPageRefreshInterval|Získá nebo nastaví (krátký)|Interval v minutách, chcete-li aktualizovat úvodní stránku.|

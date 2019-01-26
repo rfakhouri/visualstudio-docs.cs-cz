@@ -32,16 +32,16 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847925"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919938"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 
@@ -255,7 +255,7 @@ K tomuto problému vyhnout, typy v odkazovaných sestaveních jsou sdílené ve 
 
 | Název | Popis |
 | - | - |
-| [Návod: Vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Poskytuje podrobné demonstraci vytvoření a použití služeb WCF v sadě Visual Studio. |
+| [Návod: Vytvoření jednoduché služby WCF v modelu Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Poskytuje podrobné demonstraci vytvoření a použití služeb WCF v sadě Visual Studio. |
 | [Návod: Vytvoření datové služby WCF s WPF a Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Poskytuje podrobné demonstraci toho, jak vytvořit a používat datové služby WCF v sadě Visual Studio. |
 | [Používání vývojářských nástrojů WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | Tento článek popisuje postup vytvoření a testování služeb WCF v sadě Visual Studio. |
 | | [Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |

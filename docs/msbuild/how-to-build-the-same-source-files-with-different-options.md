@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9bbf558558b7eff673d255e525d6b69677e906
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70f7fee3f7dc2238dc8e9804cd8d35960c1661a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958235"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Postupy: Sestavení stejných zdrojových souborů s různými možnostmi
 Při sestavování projektů často kompilaci stejné komponenty s možnostmi jiné sestavení. Můžete například vytvořit sestavení pro ladění pomocí informací o symbolu nebo sestavení pro vydání se žádné informace o symbolech, ale s povolenými optimalizacemi. Nebo můžete vytvořit projektu pro spuštění na konkrétní platformě, jako je například x86 nebo [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. V těchto případech se většina možností sestavení zůstat stejná; řízení konfigurace sestavení se změní jenom pár možností. S [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], použijete k vytvoření konfigurace sestavení různé vlastnosti a podmínky.  

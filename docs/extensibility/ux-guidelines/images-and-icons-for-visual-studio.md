@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a49445445388a6db0e6dae9c09b50137c04c4ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954121"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrázky a ikony pro sadu Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Použití obrázků v sadě Visual Studio  
@@ -89,7 +89,7 @@ ms.locfileid: "53880699"
   
 |||  
 |-|-|  
-|**"Vyhledávání"**|**"Přiblížit"**|  
+|**"Search"**|**"Přiblížit"**|  
 |![Ikona Hledat](../../extensibility/ux-guidelines/media/0404-09_search.png "0404 09_Search")|![Ikona přiblížení](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404 10_Zoom")|  
   
  Ve stromové zobrazení, nepoužívejte na ikonu složky a modifikátor. Pokud je k dispozici, použijte pouze modifikátor.  
@@ -152,9 +152,9 @@ ms.locfileid: "53880699"
 #### <a name="perspective"></a>Perspektiva  
  Zachovejte na ikonu jasný a srozumitelný. Pomocí perspektivy a světelného zdroje jenom v případě potřeby. I když mělo by se vyhnout pomocí perspektivy u elementů ikonu, některé prvky nerozpoznatelný bez něj. V takových případech komunikuje stylizované perspektivy přehlednost daného elementu.  
   
- ![Perspektiva 3 bodu](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "0404 31_3PointPerspective")<br />3bodu perspektivy
+ ![3-point perspective](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "0404-31_3PointPerspective")<br />3bodu perspektivy
   
- ![1 bod pohledu](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404 32_1PointPerspective")<br />1 bod perspektivy
+ ![1-point perspective](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404-32_1PointPerspective")<br />1 bod perspektivy
   
  Většinu prvků by měl být připojena nebo vpravo v lomených:  
   
@@ -293,7 +293,7 @@ ms.locfileid: "53880699"
   
 |||||  
 |-|-|-|-|  
-|![Ikona spuštění](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Spustit|![Spuštění dotazu ikonu](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Spuštění dotazu|![Přehrát všechny ikony kroků](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Přehraje všechny kroky.|![Přidat ikonu ovládacího prvku](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Přidání ovládacího prvku|  
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Spustit|![Spuštění dotazu ikonu](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Spuštění dotazu|![Přehrát všechny ikony kroků](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Přehraje všechny kroky.|![Přidat ikonu ovládacího prvku](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Přidání ovládacího prvku|  
   
  Červená se používá pro modifikátory negativní akce jako "Odstranit" "Stop", "Storno" a "Zavřít".  
   
@@ -305,20 +305,20 @@ ms.locfileid: "53880699"
   
 |||||  
 |-|-|-|-|  
-|![Přejděte na ikonu pole](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 11_GoToField")<br />Přejděte na pole|![Vrácení v dávce&#45;ikona](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 12_BatchedCheckIn")<br />Dávkové vrácení se změnami|![Ikona editoru adresu](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 13_AddressEditor")<br />Editor adresy|![Ikona editoru přidružení](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 14_AssociationEditor")<br />Editor asociace|  
+|![Přejděte na ikonu pole](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 11_GoToField")<br />Přejděte na pole|![Vrácení v dávce&#45;ikona](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 12_BatchedCheckIn")<br />Dávkové vrácení se změnami|![Ikona editoru adresu](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 13_AddressEditor")<br />Editor adresy|![Association editor icon](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")<br />Editor asociace|  
   
  Tmavě gold se používá především pro modifikátor "New".  
   
 |||||  
 |-|-|-|-|  
-|![Nová ikona projektu](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405 15_NewProject")<br />Nový projekt|![Vytvořit nový graf ikonu](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405 16_CreateNewGraph")<br />Vytvořit nový graf|![Nová ikona testu jednotek](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 17_NewUnitTest")<br />Nový Test jednotek|![Ikona nové položky seznamu](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 18_NewListItem")<br />Nové položky seznamu|  
+|![Nová ikona projektu](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405 15_NewProject")<br />Nový projekt|![Create new graph icon](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405-16_CreateNewGraph")<br />Vytvořit nový graf|![Nová ikona testu jednotek](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 17_NewUnitTest")<br />Nový Test jednotek|![Ikona nové položky seznamu](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 18_NewListItem")<br />Nové položky seznamu|  
   
 #### <a name="special-cases"></a>Zvláštní případy  
  Ve zvláštních případech modifikátor barevné akce lze nezávisle na sobě jako samostatné ikonu. Barva použitá pro ikonu odráží akce, které je přidružený ikonu. Toto použití je omezené na malou podmnožinu ikony, včetně:  
   
 ||||||  
 |-|-|-|-|-|  
-|![Ikona spuštění](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Spustit|![Ikona stop](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Zastavit|![Ikona odstranění](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Odstranit|![Ikonu Uložit](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Uložit|![Přejděte zpět ikonu](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Navigovat zpět|  
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Spustit|![Ikona stop](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Zastavit|![Ikona odstranění](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Odstranit|![Ikonu Uložit](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Uložit|![Přejděte zpět ikonu](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Navigovat zpět|  
   
 ### <a name="code-hierarchy-palette"></a>Kód hierarchie palety  
   
@@ -347,8 +347,8 @@ ms.locfileid: "53880699"
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Ikona jazyka Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; ikonu](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 26_CSharp")<br />C#|![C&#43; &#43; ikonu](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 27_CPlusPlus")<br />C++|![F&#35; ikonu](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![Ikona JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Ikona Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
-|![Ikona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![Ikona WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![Ikona ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![Ikona šablony stylů CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![Ikona TypeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
+|![Ikona jazyka Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; icon](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; icon](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![Ikona JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Python icon](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")<br />Python|  
+|![HTML icon](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS icon](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript icon](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  Ikony technologie IntelliSense pomocí exkluzivní barevné palety. Tyto barvy se používají k poskytování pomoci uživatelům rychle odlišit různé položky v seznamu automaticky otevírané okno technologie IntelliSense.  
@@ -414,15 +414,15 @@ ms.locfileid: "53880699"
   
 |TFS Online||||  
 |----------------|-|-|-|  
-|![Ikona TFS Online týmu](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405 49_TFSOnlineTeam")<br />Tým online|![Informační ikona, která TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405 50_TFSInformation")<br />Informace o|![Ikona historie TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405 51_TFSHistory")<br />Historie|![Ikona větev TFS](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405 52_TFSBranch")<br />Větvení.|  
+|![TFS Online team icon](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405-49_TFSOnlineTeam")<br />Tým online|![TFS information icon](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405-50_TFSInformation")<br />Informace o|![TFS history icon](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405-51_TFSHistory")<br />Historie|![TFS branch icon](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405-52_TFSBranch")<br />Větvení.|  
   
 |Napa||||  
 |----------|-|-|-|  
-|![Ikona obsahu Napa](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405 53_NapaContent")<br />Obsah|![Ikona e-mailu office Napa](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405 54_NapaOfficeMail")<br />E-mailu Office|![Ikona Sharepointu Napa](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405 55_NapaSharePoint")<br />SharePoint|![Ikona podokno úlohy Napa](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405 56_NapaTaskPane")<br />Podokno úloh|  
+|![Ikona obsahu Napa](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405 53_NapaContent")<br />Obsah|![Ikona e-mailu office Napa](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405 54_NapaOfficeMail")<br />E-mailu Office|![Napa SharePoint icon](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint")<br />SharePoint|![Ikona podokno úlohy Napa](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405 56_NapaTaskPane")<br />Podokno úloh|  
   
 |Monako||||  
 |------------|-|-|-|  
-|![Ikona souborů Monako](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />Soubory|![Ikona Git Monako](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405 58_MonacoGit")<br />Git|![Ikona hledání Monako](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Hledat|![Ikona textu Monako](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405 60_MonacoText")<br />Text|  
+|![Ikona souborů Monako](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />Soubory|![Ikona Git Monako](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405 58_MonacoGit")<br />Git|![Ikona hledání Monako](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Hledat|![Monaco text icon](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405-60_MonacoText")<br />Text|  
   
 |F12|||  
 |---------|-|-|  

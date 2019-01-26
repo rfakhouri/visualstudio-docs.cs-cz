@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918599"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Upravit kód R v sadě Visual Studio
 
@@ -40,7 +40,7 @@ Chcete-li toto chování změnit, přečtěte si téma **Upřesnit** > **kontrol
 
 ## <a name="edit-and-organize-code"></a>Upravit a organizaci kódu
 
-Při psaní kódu, RTVS poskytuje automatické dokončování, jak je popsáno na [IntelliSense](r-intellisense.md) stránky. Také provádí automatické formátování, jako je doplňování závorek a závorky: 
+Při psaní kódu, RTVS poskytuje automatické dokončování, jak je popsáno na [IntelliSense](r-intellisense.md) stránky. Také provádí automatické formátování, jako je doplňování závorek a závorky:
 
 ![Animace vložené formátování](media/editing-inline-formatting.gif)
 
@@ -129,6 +129,6 @@ Možnosti **R** > **Upřesnit** jsou specifické pro RTVS kartu:
 | | Seznam pro doplňování při prvním znaku | On | Zobrazí seznam pro doplňování při prvním typy znaků. Při vypnutí, zobrazí se seznam pro doplňování s **upravit** > **IntelliSense** > **seznam členů** (**Ctrl** + **J**). |
 | | Seznam pro doplňování **kartu** klíč | Off | Vyvolá seznam pro doplňování zadáním jednoho nebo více znaků a stisknutím klávesy **kartu**. |
 | | Shoda částečně typy názvy argumentů | Off | Při zadávání názvy argumentů ve volání funkce se zobrazí nápovědu k signatuře popis argumentu, který nejlépe odpovídá. |
-| Interaktivní okno | Kontrola syntaxe v konzole R | Off | Platí kontrolu syntaxe v interaktivním okně. Kontrola syntaxe nemusí fungovat správně s víceřádkových příkazech. | 
+| Interaktivní okno | Kontrola syntaxe v konzole R | Off | Platí kontrolu syntaxe v interaktivním okně. Kontrola syntaxe nemusí fungovat správně s víceřádkových příkazech. |
 | Sbalování | Sbalování kódu | On | Automaticky vytvoří sbalitelné oblasti pro oblasti, jako je víceřádkových příkazech. |
 | Kontrola syntaxe | Zobrazit syntaktické chyby | On | Povolí automatickou kontrolu kódu syntaxe. |

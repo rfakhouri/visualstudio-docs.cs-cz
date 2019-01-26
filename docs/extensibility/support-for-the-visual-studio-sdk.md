@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f1f54d43c02d02aa2967eaead2de75a664619c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90209173e2710850b174539eb3e292234c04c5c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959271"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922360"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Podpora sady Visual Studio SDK
 Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy týkající se rozšíření integrovaného vývojového prostředí (IDE) sady Visual Studio.  
@@ -29,7 +29,7 @@ Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy 
 ### <a name="msdn-development-center"></a>Centrum MSDN pro vývoj  
  [Středisko pro vývojáře rozšiřitelnosti Visual Studio](http://go.microsoft.com/fwlink/?LinkID=84381) na webové stránce MSDN obsahuje prostředky, které pomohou zodpovědět otázky týkající se rozšíření sady Visual Studio. Například se několik odkazů na blogy o vývojářských VSIP.  
   
-### <a name="microsoft-newsgroups"></a>Diskusní skupiny společnosti Microsoft  
+### <a name="microsoft-newsgroups"></a>Microsoft Newsgroups  
  Členové týmu vývoje Visual Studia a jinými vývojáři, kteří často rozšíření sady Visual Studio účastnit microsoft.public.vstudio.extensibility diskusní skupiny. Této diskusní skupiny je spravovaný diskusní skupiny. Pokud jste předplatitelem MSDN univerzální, ujistěte se, že zaregistrujete vyžádanou aliasu, aby bylo možné pro Microsoft reagovat.  
   
 ### <a name="msdn-forums"></a>Fóra na webu MSDN  
@@ -44,7 +44,7 @@ Můžete najít příklady opensourcové rozšíření VS SDK na Githubu v [uká
 
 ## <a name="included-support"></a>Podpory  
   
-### <a name="visual-studio-product-support"></a>Podpora produktu Visual Studio  
+### <a name="visual-studio-product-support"></a>Visual Studio Product Support  
  Některé podpora je součástí nákupu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produktů. Další informace najdete v tématu [Visual Studio – podpora](http://msdn.microsoft.com/vstudio/cc136615.aspx). Společnost Microsoft udržuje podporu vyhrazeného týmu odpovědi na otázky o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšiřitelnosti.  
   
 ### <a name="msdn-subscription-support"></a>Podpora pro předplatná MSDN  

@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3c79ca7c18b4b854b38920481757dbf49d2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966009"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919795"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 
@@ -47,7 +47,7 @@ Obsahuje seznam všech prvků uživatelského rozhraní, pro které můžete zm�
 
      Změny styl písma, velikosti a zobrazení nastavení barev pro textový Editor vliv na vzhled textu v textovém editoru výchozí. Tato nastavení se nevztahuje dokumenty otevřené v textovém editoru mimo rozhraní IDE.
 
--   **Tiskárny**
+-   **Printer**
 
      Změny styl písma, velikosti a zobrazení nastavení barev pro tiskárnu vliv na vzhled textu v dokumentu.
 
@@ -160,7 +160,7 @@ Zobrazit položky patří:
 |**Data v registru**|Barva textu slouží k zobrazení dat uvnitř **zaregistruje** okna.|
 |**Registrovat NAT**|Barva textu slouží k zobrazení nerozpoznatelná data a objekty uvnitř **zaregistruje** okna.|
 |**Inteligentní značky**|Používá k označení obrys, když jsou vyvolány inteligentních značek.|
-|**SQL DML značka**|Platí pro editor jazyka Transact-SQL. Příkazy DML v tomto editoru jsou označené ohraničujícího rámečku modrá ve výchozím nastavení.|
+|**SQL DML Marker**|Platí pro editor jazyka Transact-SQL. Příkazy DML v tomto editoru jsou označené ohraničujícího rámečku modrá ve výchozím nastavení.|
 |**Zastaralý kód**|Nahrazené kód čeká na aktualizace. V některých případech funkce upravit a pokračovat nemůže použít změny kódu okamžitě, ale je použít později v průběhu ladění. K tomu dochází při úpravě funkce, která se musí volat funkci právě probíhá, nebo pokud chcete přidat více než 64 bajtů nové proměnné čekání v zásobníku volání funkce. Pokud k tomu dojde, ladicí program zobrazí dialogové okno "Upozornění na starý kód", a kód nahrazené pokračuje v provádění, dokud dotyčný funkce dokončí a je volána znovu. Upravit a pokračovat platí v daném čase změny kódu.|
 |**řetězec**|Řetězcových literálů.|
 |**Řetězce (C# @ Verbatim)**|Textové literály v jazyce C#, které dokáže interpretovat znění. Příklad:<br /><br /> @"x"|
@@ -191,12 +191,12 @@ Zobrazit položky patří:
 |**Atribut XML**|Názvy atributů.|
 |**Uvozovky atributu XML**|Znaky uvozovek pro atributy ve formátu XML.|
 |**Hodnota atributu XML**|Obsah atributy ve formátu XML.|
-|**Sekce XML Cdata**|Obsah \<![CDATA[...]]>.|
+|**XML Cdata Section**|Obsah \<![CDATA[...]]>.|
 |**Komentář XML**|Obsah \<!---->.|
-|**Oddělovač XML**|Syntaxe jazyka XML oddělovače, včetně <, <?, <!, \<!-,-->,?\>, \<! [,]] > a [,].|
+|**XML Delimiter**|Syntaxe jazyka XML oddělovače, včetně <, <?, <!, \<!-,-->,?\>, \<! [,]] > a [,].|
 |**Atribut XML Doc**|Hodnota dokumentaci xml atribut, například \<param name = "I" > "I", kde je obarveny.|
 |**Komentář XML**|Komentáře v dokumentační komentáře xml.|
-|**– Značka XML Doc**|Značky v dokumentu XML jako komentáře<br /><br /> /// \<Souhrn >.|
+|**– Značka XML Doc**|Značky v dokumentu XML jako komentáře<br /><br /> /// \<summary>.|
 |**XML – klíčové slovo**|DTD klíčová slova jako CDATA, IDREF a NDATA.|
 |**Název XML**|Názvy prvků a název cílové zpracování pokyny.|
 |**Instrukce pro zpracování XML**|Obsah zpracování instrukcí nezahrnuje název cíle.|

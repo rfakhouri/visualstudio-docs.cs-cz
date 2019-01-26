@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1122b662bd9f23bb88f368c02432584c3bbfffe2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a1a3c1eff1775114bbeb17645ab782451ac2ae2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819512"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923215"
 ---
 # <a name="cvwriteflag-function"></a>Cvwriteflag – funkce
 Příznak, který zapisuje do souboru trasování vizualizátoru souběžnosti.  
@@ -82,9 +82,9 @@ HRESULT CvWriteFlagExVA(
  S_OK při úspěšném zápisu zprávy. Kód chyby v případě, že došlo k chybám. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
- **Záhlaví:** *cvmarkers.h*  
+ **Header:** *cvmarkers.h*  
   
- **Unicode:** Cvwriteflagexw – cvwriteflagexvw –  
+ **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
   
  <strong>ANSI:</strong>cvwriteflagexa –, cvwriteflagexva –  
   

@@ -6,21 +6,21 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925495"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918365"
 ---
 # <a name="debug-r-in-visual-studio"></a>Ladění jazyka R v sadě Visual Studio
 
 Nástroje R pro Visual Studio (RTVS) integruje do úplného ladicího prostředí sady Visual Studio (viz [ladění v sadě Visual Studio](/visualstudio/debugger/debugger-feature-tour). Tato podpora zahrnuje zarážky, připojení ke spuštěným procesům, proměnné kontrolní a sledováním a zkontrolujete zásobníku volání. Tento článek se věnuje pak tyto aspekty ladění, které jsou jedinečné pro R a RTVS.
 
-Spouští se ladicí program pro spouštěcí R soubor v projektu jazyka R je stejný jako u jiných typů projektů: použijte **ladění** > **spustit ladění**, **F5** klíč, nebo **Zdrojový soubor spouštěcí** na panelu nástrojů ladění: 
+Spouští se ladicí program pro spouštěcí R soubor v projektu jazyka R je stejný jako u jiných typů projektů: použijte **ladění** > **spustit ladění**, **F5** klíč, nebo **Zdrojový soubor spouštěcí** na panelu nástrojů ladění:
 
 ![Ladicí program tlačítko start pro R](media/debugger-start-button.png)
 

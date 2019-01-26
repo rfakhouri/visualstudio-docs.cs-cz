@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204278"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919327"
 ---
 # <a name="what-is-debugging"></a>Co je ladění?
 
@@ -54,4 +54,4 @@ V tomto článku jste se seznámili s několika koncepty obecné ladění. V dal
 > [Ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
-> [Oprava chyb napsáním lépe C# kódu](../debugger/write-better-code-with-visual-studio.md)
+> [Nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md)

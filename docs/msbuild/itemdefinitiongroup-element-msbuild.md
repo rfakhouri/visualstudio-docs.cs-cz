@@ -15,21 +15,21 @@ helpviewer_keywords:
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89fba35aeef3b4e71494081dd1776c7a4248a05e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9faf5d0b242f81726dc2e0b8fe4a955db31938a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919492"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918417"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup – element (MSBuild)
 `ItemDefinitionGroup` Prvek umožňuje definovat sadu definice položek, které jsou hodnoty metadat, které se použijí u všech položek v projektu, ve výchozím nastavení. ItemDefinitionGroup – nahrazuje nutnost používat [createitem – úloha](../msbuild/createitem-task.md) a [CreateProperty – úloha](../msbuild/createproperty-task.md). Další informace najdete v tématu [definice položek](../msbuild/item-definitions.md).  
 
  \<Project>  
- \<ItemDefinitionGroup – >  
+ \<ItemDefinitionGroup>  
 
 ## <a name="syntax"></a>Syntaxe  
 

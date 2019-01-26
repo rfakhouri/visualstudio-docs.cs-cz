@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4a39747150d0be0e550afddf8048d4e207521d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2a4f50e710073c0dfe230f34d188056c20eaaab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922987"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Produkty a služby (Blend)
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. V následujících oddílech jsou uvedeny informace o funkcích, produktech a službách, které usnadňují používání systému Microsoft Windows tělesně postiženým uživatelům:
@@ -50,9 +50,9 @@ Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní pou�
 
  **Learning Ally**
 
- Silniční Roszel 20
+ 20 Roszel Road
 
- Princetonské, NJ 08540
+ Princeton, NJ 08540
 
  Telefonní číslo ze Spojených států: (800) 221-4792
 

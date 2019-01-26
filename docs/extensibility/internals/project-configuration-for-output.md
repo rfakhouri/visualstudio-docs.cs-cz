@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50abcfcc68ee881a7977224ba2354701e735d2bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72660ab5a3c3aedd888f22bdf7db1ef635d5bc34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843291"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069548"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurace projektu pro výstup
 Všechny konfigurace může podporovat sadu procesy sestavení, které se vytvoří výstupní položky, jako jsou soubory spustitelný soubor nebo prostředek. Tyto položky výstupu jsou privátní pro uživatele a mohou být umístěny ve skupinách, které jsou propojeny související typy výstupu, jako je například spustitelné soubory (.exe, .dll, LIB) a zdrojových souborů (.idl, souborů .h).  

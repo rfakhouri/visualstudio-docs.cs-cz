@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef9ad479d44e43caf0a77c4db01cc349678c73ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93973eeadf7629201aa6bd739f33a094677efe5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961475"
 ---
 # <a name="idsymbol-element"></a>Idsymbol – element
 `IDSymbol` Prvek obsahuje ID GUID:ID pár, který představuje nabídky, skupiny nebo příkaz. Identifikátor GUID pochází z nadřazeného `GuidSymbol` elementu. `IDSymbol` Element má `name` atribut, který poskytuje popisný název pro Identifikátor, který je součástí `value` atribut.  

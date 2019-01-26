@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875803"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916612"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Další informace o ladicím programu Windows v sadě Visual Studio
 
@@ -30,12 +30,12 @@ Můžete otevřít většinu oknech ladicího programu během ladění programu.
 |QuickWatch|SHIFT+F9|[Okna Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)|
 |Automatické hodnoty|CTRL + ALT + V, A|[Okna automatických a místních hodnot](../debugger/autos-and-locals-windows.md)|
 |Místní hodnoty|CTRL + ALT + V, L|[Okna automatických a místních hodnot](../debugger/autos-and-locals-windows.md)|
-|Zásobníky volání|CTRL + ALT + C|[Postupy: Použijte okno zásobníku volání](../debugger/how-to-use-the-call-stack-window.md)|
+|Zásobníky volání|CTRL + ALT + C|[Postupy: Použití okna Zásobník volání](../debugger/how-to-use-the-call-stack-window.md)|
 |Okamžité|CTRL + ALT + I|[Příkazové podokno](../ide/reference/immediate-window.md)|
 |Paralelní zásobníky|PEV.CENU: + SHIFT + D, S|[Použití okna Paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)|
 |Paralelní sledování|PEV.CENU: + SHIFT + D, (1, 2, 3, 4)|[Získat spustit ladění vícevláknových aplikací](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Vlákna|CTRL + ALT + H|[Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md)|
-|Moduly|CTRL + ALT + U|[Postupy: Použití okna moduly](../debugger/how-to-use-the-modules-window.md)|
+|Moduly|CTRL + ALT + U|[Postupy: Použití okna Moduly](../debugger/how-to-use-the-modules-window.md)|
 |Vlákna GPU|-|[Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Úlohy|PEV.CENU: + SHIFT + D, K|[Použití okna úloh](../debugger/using-the-tasks-window.md)|
 |Interaktivní ladění Pythonu|SHIFT+ALT+I|[Interaktivní okno REPL Pythonu](../python/python-interactive-repl-in-visual-studio.md)|
@@ -46,7 +46,7 @@ Můžete otevřít většinu oknech ladicího programu během ladění programu.
 |Procesy|CTRL + ALT + Z|[Ladění vláken a procesů](../debugger/debug-threads-and-processes.md)|
 |Paměť|CTRL + ALT + M, (1, 2, 3, 4)|[Okna paměti](../debugger/memory-windows.md)|
 |Převod do strojového jazyka|CTRL + ALT + D|[Postupy: Použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md)|
-|Zaregistruje|CTRL + ALT + G|[Postupy: Použití okna registry](../debugger/how-to-use-the-registers-window.md)|
+|Zaregistruje|CTRL + ALT + G|[Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Viz také
 
