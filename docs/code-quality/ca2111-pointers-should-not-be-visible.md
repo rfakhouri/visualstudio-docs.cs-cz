@@ -1,5 +1,5 @@
 ---
-title: 'CA2111: Ukazatelé by neměli být viditelné'
+title: 'CA2111: Ukazatele by neměly být viditelné'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1427cc61d540599b04118e6efff020f62a58bd1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30285ab929cb80e689d70adb267cb17c69a9aff1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839739"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033101"
 ---
-# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Ukazatelé by neměli být viditelné
+# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Ukazatele by neměly být viditelné
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53839739"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný <xref:System.IntPtr?displayProperty=fullName> nebo <xref:System.UIntPtr?displayProperty=fullName> pole není jen pro čtení.
 
 ## <a name="rule-description"></a>Popis pravidla

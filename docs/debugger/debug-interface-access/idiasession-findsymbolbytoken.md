@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c92149c-6eef-454f-86be-66e89557b9e6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6115a2446b8a8a34fdd1531747fc52f74a96de5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a248eb2c275ad576921cfaad04ce85ccd46f780
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919278"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023756"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
 Načte symbol, který obsahuje token Zadaná metadata.  
@@ -54,5 +54,5 @@ pSession->findSymbolByToken( token, SymTagFunction, &pFunc );
   
 ## <a name="see-also"></a>Viz také  
  [Idiasession –](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)

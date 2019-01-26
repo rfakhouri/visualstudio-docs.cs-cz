@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d319dfdf1203870ecc1b80787522a56d6f37b5e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54741301c1c1402876ab7b13dba30b3c4ef03831
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940372"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028605"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Vytvoření vazby klávesové zkratky a položkami nabídky
 K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí přidat položku *.vsct* souborů pro balíček. Toto téma vysvětluje, jak namapovat na vlastní tlačítka, položka nabídky nebo panelu nástrojů příkazu Klávesové zkratky a použít mapování klávesnice v editoru výchozí nebo omezit na vlastní editor.  

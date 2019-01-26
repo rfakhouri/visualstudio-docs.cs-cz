@@ -1,5 +1,5 @@
 ---
-title: 'CA1801: Revize nepoužitých parametrů'
+title: 'CA1801: Zkontrolujte nepoužité parametry'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 5d73545c-e153-4b7c-a7b2-be6bf5aca5be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b7fdbf4d842218b8a06146c777a1e468459d140
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dea30f8053844cc6ce6eb38dd5138e935e8020df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029892"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: Revize nepoužitých parametrů
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Zkontrolujte nepoužité parametry
 
 |||
 |-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "53921001"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné – Pokud člen není viditelný mimo sestavení, bez ohledu na to, které provedete změnu.<br /><br /> Pevné – Pokud změníte členu, který chcete použít parametr v rámci svého těla.<br /><br /> Rozdělení – odeberte parametr a je viditelný mimo sestavení.|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Podpis metody obsahuje parametr, který není použit v těle metody. Toto pravidlo nezkoumá následujících metod:
 
 - Metody odkazuje delegáta.

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a830639d8e69a331c2d81c6012d0ea7e6fcfb848
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c88cb617e145d4acda730a86153cfc1a1524521
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990187"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042475"
 ---
 # <a name="xdcmake-task"></a>XDCMake – úloha
 Zabalí nástroj dokumentace XML (*xdcmake.exe*), která sloučí komentář k dokumentu XML (*.xdc*) soubory do *.xml* souboru.  
@@ -42,7 +42,7 @@ Zabalí nástroj dokumentace XML (*xdcmake.exe*), která sloučí komentář k d
 |**AdditionalDocumentFile**|Volitelné **String []** parametru.<br /><br /> Určuje jeden nebo více dalších *.xdc* soubory ke sloučení.<br /><br /> Další informace najdete v tématu **další soubory dokumentu** popis v [stránky vlastností nástroje Generátor dokumentů XML](/cpp/ide/xml-document-generator-tool-property-pages). Viz také **/staré** a **/Fs** možnosti příkazového řádku pro *xdcmake.exe*.|  
 |**AdditionalOptions**|Volitelné **řetězec** parametru.<br /><br /> Seznam možností, jak je uvedeno na příkazovém řádku. Třeba /\<možnost1 > /\<možnost2 > /\<možnost #>. Tento parametr použijte k určení možností, které nejsou reprezentovány jakýkoli jiný **XDCMake** parametr úlohy.<br /><br /> Další informace najdete v tématu [referenční dokumentace nástroje XDCMake](/cpp/ide/xdcmake-reference), [stránky vlastností nástroje Generátor dokumentů XML](/cpp/ide/xml-document-generator-tool-property-pages)a Nápověda k příkazovému řádku (**/?**) pro *xdcmake.exe*.|  
 |**DocumentLibraryDependencies**|Volitelné **logická** parametru.<br /><br /> Pokud `true` a aktuální projekt obsahuje závislost na statickou knihovnu (*lib*) projektu v řešení, *.xdc* jsou součástí souborů pro daný projekt knihovny *.xml* souboru výstupu pro aktuální projekt.<br /><br /> Další informace najdete v tématu **závislosti knihoven dokumentu** popis v [stránky vlastností nástroje Generátor dokumentů XML](/cpp/ide/xml-document-generator-tool-property-pages).|  
-|**Výstupní soubor**|Volitelné **řetězec** parametru.<br /><br /> Přepíše výchozí název výstupního souboru. Výchozí název je odvozen z názvu prvního *.xdc* soubor, který je zpracován.<br /><br /> Další informace najdete v tématu **/out:\<název souboru >** možnost [referenční dokumentace nástroje XDCMake](/cpp/ide/xdcmake-reference). Viz také **/staré** a **/Fo** možnosti příkazového řádku pro *xdcmake.exe*.|  
+|**OutputFile**|Volitelné **řetězec** parametru.<br /><br /> Přepíše výchozí název výstupního souboru. Výchozí název je odvozen z názvu prvního *.xdc* soubor, který je zpracován.<br /><br /> Další informace najdete v tématu **/out:\<název souboru >** možnost [referenční dokumentace nástroje XDCMake](/cpp/ide/xdcmake-reference). Viz také **/staré** a **/Fo** možnosti příkazového řádku pro *xdcmake.exe*.|  
 |**ProjectName**|Volitelné **řetězec** parametru.<br /><br /> Název aktuálního projektu.|  
 |**SlashOld**|Volitelné **logická** parametru.<br /><br /> Pokud `true`, umožňuje další *xdcmake.exe* možnosti.<br /><br /> Další informace najdete v tématu **/staré** možnost příkazového řádku pro *xdcmake.exe*.|  
 |**Zdroje**|Vyžaduje `ITaskItem[]` parametru.<br /><br /> Definuje pole objektů položky nástroje MSBuild zdrojových souborů, které lze používat a, protože ho vygeneroval úlohy.|  

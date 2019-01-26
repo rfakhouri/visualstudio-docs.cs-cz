@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f5a8d7f60793bbd6864fdfa98fc1864d1612955
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81644cd67ff46291d3bb4e678e858d41a4305bb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027228"
 ---
 # <a name="bscmake-task"></a>BscMake – úloha
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ ms.locfileid: "53887445"
 |Parametr|Popis|  
 |---------------|-----------------|  
 |**AdditionalOptions**|Volitelné **řetězec** parametru.<br /><br /> Seznam možností, jak je uvedeno na příkazovém řádku. Třeba /\<možnost1 > /\<možnost2 > /\<možnost #>. Tento parametr použijte k určení možností, které nejsou reprezentovány jakýkoli jiný **BscMake** parametr úlohy.<br /><br /> Další informace najdete v tématu Možnosti v [bscmakee – možnosti](/cpp/build/reference/bscmake-options).|  
-|**Výstupní soubor**|Volitelné **řetězec** parametru.<br /><br /> Určuje název souboru, který přepíše výchozí název výstupního souboru.<br /><br /> Další informace najdete v tématu **/o** možnost [bscmakee – možnosti](/cpp/build/reference/bscmake-options).|  
+|**OutputFile**|Volitelné **řetězec** parametru.<br /><br /> Určuje název souboru, který přepíše výchozí název výstupního souboru.<br /><br /> Další informace najdete v tématu **/o** možnost [bscmakee – možnosti](/cpp/build/reference/bscmake-options).|  
 |**PreserveSBR**|Volitelné **logická** parametru.<br /><br /> Pokud `true`, vynutí nepřírůstková sestavení. Bez ohledu na to, zda dojde k úplné, nepřírůstková sestavení *.bsc* soubor existuje a zabraňuje *.sbr* soubory z vedlo ke zkrácení.<br /><br /> Další informace najdete v tématu **/n** možnost [bscmakee – možnosti](/cpp/build/reference/bscmake-options).|  
 |**Zdroje**|Volitelné **[] ITaskItem** parametru.<br /><br /> Definuje pole objektů položky nástroje MSBuild zdrojových souborů, které lze používat a, protože ho vygeneroval úlohy.|  
 |**SuppressStartupBanner**|Volitelné **logická** parametru.<br /><br /> Pokud `true`, zabraňuje zobrazování čísel zprávu o autorských právech a verze při spuštění úlohy.<br /><br /> Další informace najdete v tématu **/nologo** možnost [bscmakee – možnosti](/cpp/build/reference/bscmake-options).|  

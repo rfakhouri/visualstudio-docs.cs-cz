@@ -8,16 +8,16 @@ dev_langs:
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cdb8f4a419bfaa2d4e5d6c93bad4daede6c10990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be750ec83c10b5b052b7ac378d4e77438e60edbe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988174"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042553"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Průvodce: Vytvoření tříd LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje dědičnosti jedné tabulky, jak se zpravidla implementuje v relačních systémech. Tento názorný postup rozšiřují obecných kroků uvedených v [jak: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data pro demonstraci použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -54,9 +54,9 @@ ms.locfileid: "53988174"
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Typ**|**int**|**Hodnota TRUE**|
-    |**Jméno**|**Nvarchar(200)**|**False**|
-    |**LastName**|**Nvarchar(200)**|**False**|
-    |**Správce**|**int**|**Hodnota TRUE**|
+    |**Jméno**|**nvarchar(200)**|**False**|
+    |**LastName**|**nvarchar(200)**|**False**|
+    |**Manager**|**int**|**Hodnota TRUE**|
 
 3.  Sloupec ID nastavte jako primární klíč.
 
@@ -73,10 +73,10 @@ ms.locfileid: "53988174"
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Typ**|**Jméno**|**LastName**|**Správce**|
-    |**1**|**1**|**Anne**|**Wallace**|**HODNOTU NULL**|
-    |**2**|**1**|**Carlos**|**Grilo**|**HODNOTU NULL**|
-    |**3**|**1**|**Yael**|**Peled**|**HODNOTU NULL**|
+    |**ID**|**Typ**|**Jméno**|**LastName**|**Manager**|
+    |**1**|**1**|**Anne**|**Wallace**|**NULL**|
+    |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
+    |**3**|**1**|**Yael**|**Peled**|**NULL**|
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|
     |**5**|**2**|**Andreas**|**Hauser**|**1**|
     |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|
@@ -84,7 +84,7 @@ ms.locfileid: "53988174"
     |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|
     |**9**|**2**|**Tai**|**Jé**|**2**|
     |**10**|**2**|**Fabricio**|**Noriega**|**3**|
-    |**11**|**2**|**Anna**|**Martin**|**3**|
+    |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
@@ -190,6 +190,6 @@ ms.locfileid: "53988174"
 
 - [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Návod: Vytvoření LINQ na třídy SQL (Návrhář O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Postupy: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Postupy: Přiřazení uložených procedur za účelem aktualizací, vkládání a odstraňování (Návrhář relací objektů)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Postupy: Generování objektového modelu v jazyce Visual Basic neboC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

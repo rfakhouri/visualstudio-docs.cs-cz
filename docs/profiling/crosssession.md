@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192ddfb7312dff13b457f36940220f0bb17fe2c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d465739892d6c3a848069211572019332f97fa77
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022557"
 ---
 # <a name="crosssession"></a>CrossSession
 *VSPerfCmd.exe* **CrossSession** možnost umožňuje profileru začnete shromažďovat data z všechny relace konzoly. **CrossSession** možnost musí být použita s **Start** možnost.  
@@ -50,7 +50,7 @@ VSPerfCmd.exe /Attach:12345 /CS
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil služby](../profiling/command-line-profiling-of-services.md)

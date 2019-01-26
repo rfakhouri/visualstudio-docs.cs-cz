@@ -1,5 +1,5 @@
 ---
-title: 'CA2136: Členy nesmějí mít konfliktní poznámky transparentnosti'
+title: 'CA2136: Členy by neměly mít konfliktní poznámky transparentnosti'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: ff5a1d18-7c52-4da5-8990-60be83a8ea81
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3186baa671aba3830d864434a519c6eb820d5204
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c41c3d5554848c97202e384ca0cdef9e4bf71fc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033497"
 ---
-# <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Členy nesmějí mít konfliktní poznámky transparentnosti
+# <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Členy by neměly mít konfliktní poznámky transparentnosti
 
 |||
 |-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "53899847"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Toto pravidlo je vyvoláno, když typ člena je označena <xref:System.Security> atribut zabezpečení, který má jiný transparentnost než hodnota atributu zabezpečení kontejneru člena.
 
 ## <a name="rule-description"></a>Popis pravidla

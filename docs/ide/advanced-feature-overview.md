@@ -6,23 +6,23 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ed82b900c82ecc704a74e39a9ab8e3fa82d49bd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 24a21111ae1f872bfc8517a11730c4bf99f18e30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834224"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037600"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkce sady Visual Studio 2017
 
-[Přehled Visual Studio IDE](../get-started/visual-studio-ide.md) článek obsahuje základní informace o sadě Visual Studio. Tento článek popisuje funkce, které může být vhodnější pro zkušené vývojáře nebo osoby, které už znáte Visual Studio.
+[Přehled Visual Studio IDE](../get-started/visual-studio-ide.md) článek obsahuje základní informace o sadě Visual Studio. Tento článek popisuje funkce, které může být vhodnější pro zkušené vývojáře nebo tyto vývojáře, kteří jsou již znáte Visual Studio.
 
 ## <a name="modular-installation"></a>Modulární instalace
 
-Modulární instalačního programu sady Visual Studio vám umožní vybrat a nainstalovat *úlohy*, což jsou skupiny funkce potřebné pro programovací jazyk nebo platformu dáváte přednost. Tato strategie pomáhá, aby nárokům na místo instalace sady Visual Studio, která je menší, což znamená, že instalace a aktualizace moc rychlejší.
+Modulární instalačního programu sady Visual Studio vám umožní vybrat a nainstalovat *úlohy*. Úlohy jsou skupiny funkce potřebné pro programovací jazyk a platformu, kterému dáváte přednost. Tato strategie pomáhá, aby nárokům na místo instalace sady Visual Studio, která je menší, což znamená, že instalace a aktualizace moc rychlejší.
 
 Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
@@ -72,23 +72,23 @@ Visual Studio můžete použít k sestavení aplikací a her pro Windows, macOS 
 
 - Vytváření 2D a 3D hry v jazyce C# s použitím [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Sestavení nativních aplikací v C++ pro iOS, Android a Windows a sdílet společný kód v knihovnách sestavenou aplikací pro iOS, Android a Windows, [C++ pro vývoj pro různé platformy](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
+- Vytvářejte nativní aplikace C++ pro iOS, Android a Windows zařízení. Sdílet společný kód v knihovnách sestavenou aplikací pro iOS, Android a Windows, [C++ pro vývoj pro různé platformy](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
 
 - Nasazení, testování a ladění aplikací pro Android s [emulátoru Androidu](../cross-platform/visual-studio-emulator-for-android.md).
 
 ## <a name="connect-to-databases"></a>Připojení k databázím
 
-**Průzkumník serveru** usnadňuje procházení a správě instancí systému SQL Server a prostředky místně, vzdáleně a v Azure, Salesforce.com, Office 365 a websites. Chcete-li otevřít **Průzkumníka serveru**, v hlavní nabídce zvolte **zobrazení** > **Průzkumníka serveru**. Zobrazit [přidat nové připojení](../data-tools/add-new-connections.md) pro další informace o použití Průzkumníka serveru.
+**Průzkumník serveru** usnadňuje procházení a správě instancí systému SQL Server a prostředky místně, vzdáleně a v Azure, Salesforce.com, Office 365 a websites. Chcete-li otevřít **Průzkumníka serveru**, v hlavní nabídce zvolte **zobrazení** > **Průzkumníka serveru**. Další informace o použití Průzkumníka serveru najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) je výkonné vývojové prostředí pro SQL Server, Azure SQL Database a Azure SQL Data Warehouse. Umožňuje sestavovat, ladit, udržovat a Refaktorovat databází. Můžete pracovat s projektem databáze, nebo přímo s připojeném databázovém instance nebo vypnout místně.
 
-**Průzkumník objektů systému SQL Server** v sadě Visual Studio poskytuje přehled vaše databázové objekty, podobně jako SQL Server Management Studio. Průzkumník objektů systému SQL Server umožňuje práci lehká databáze správy a návrh, včetně úprav data v tabulce, porovnávání schémat, provádění dotazů pomocí kontextové nabídky přímo z Průzkumníku objektů systému SQL Server a další.
+**Průzkumník objektů systému SQL Server** v sadě Visual Studio poskytuje přehled vaše databázové objekty, podobně jako SQL Server Management Studio. Průzkumník objektů systému SQL Server umožňuje práci lehká databáze správy a návrhu. Pracovní příklady úpravu tabulky dat, porovnávání schémat, provádění dotazů pomocí kontextové nabídky přímo na základě Průzkumník objektů systému SQL Server a další.
 
 ![Průzkumník objektů systému SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>Ladit, testovat a zlepšování kódu
 
-Při psaní kódu, musíte ji spustit a otestovat chyb a výkonu. Špičkové ladění systému Visual Studio umožňuje ladit kód spuštěný ve vašem místním projektu na vzdáleném zařízení, nebo na [emulátor zařízení](../cross-platform/visual-studio-emulator-for-android.md). Můžete krokovat kód jeden příkaz najednou a kontrolovat proměnné, co využijete. Můžete nastavit zarážky, které jsou pouze přístupů, když je zadaná podmínka pravdivá. To vše je možné spravovat v editoru kódu, takže nemusíte opouštět svůj kód. Pokud chcete získat další informace o ladění v sadě Visual Studio, naleznete v tématu [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md).
+Při psaní kódu, musíte ji spustit a otestovat chyb a výkonu. Špičkové ladění systému Visual Studio umožňuje ladit kód spuštěný ve vašem místním projektu na vzdáleném zařízení, nebo na [emulátor zařízení](../cross-platform/visual-studio-emulator-for-android.md). Můžete krokovat kód jeden příkaz najednou a kontrolovat proměnné, co využijete. Můžete nastavit zarážky, které jsou pouze přístupů, když je zadaná podmínka pravdivá. Ladění možnosti jde spravovat v editoru kódu, takže nemusíte opouštět svůj kód. Pokud chcete získat další informace o ladění v sadě Visual Studio, naleznete v tématu [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md).
 
 Další informace týkající se vylepšení výkonu aplikací, rezervaci si Visual Studio [profilace](../profiling/profiling-feature-tour.md) funkce.
 
@@ -96,13 +96,13 @@ Pro [testování](../test/improve-code-quality.md), Visual Studio nabízí testo
 
 ## <a name="deploy-your-finished-application"></a>Nasazení dokončené aplikace
 
-Pokud vaše aplikace je připraven k nasazení uživatelům nebo zákazníkům, Visual Studio poskytuje nástroje k tomu, jestli nasazujete do Microsoft Store na Sharepointový web, nebo s technologiemi InstallShield nebo instalační služby systému Windows. To je vše je přístupné prostřednictvím rozhraní IDE. Další informace najdete v tématu [nasazení aplikací, služeb a součástí](../deployment/deploying-applications-services-and-components.md).
+Pokud vaše aplikace je připraven k nasazení uživatelům nebo zákazníkům, Visual Studio poskytuje nástroje, které provedete. Možnosti nasazení patří do Microsoft Store na Sharepointový web, nebo s technologiemi InstallShield nebo instalační služby systému Windows. To je vše je přístupné prostřednictvím rozhraní IDE. Další informace najdete v tématu [nasazení aplikací, služeb a součástí](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Spravovat zdrojový kód a spolupracovat s ostatními
 
 Můžete spravovat zdrojový kód v úložištích Git, jejichž hostitelem je libovolný poskytovatel, včetně Githubu. Nebo použijte [Azure DevOps služby](/azure/devops/index) ke správě kódu společně s chybami a pracovními položkami pro celý projekt. Zobrazit [Začínáme s Git a úložiště Azure](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) Další informace o správě úložiště Git v sadě Visual Studio pomocí Průzkumníka týmových projektů. Visual Studio také poskytuje jiné funkce správy vestavěné zdrojového kódu. Další informace o nich najdete v tématu [funkce Gitu v sadě Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
 
-Služby Azure DevOps jsou cloudové služby pro plánování, hostování, automatizace a nasazení softwaru a umožňuje spolupráci v týmech. Služby Azure DevOps podporu úložiště Git (distribuovanou správu verzí) a Team Foundation Version Control (centralizované správy verzí), a také kanály průběžného sestavení a vydaná verze (CI/CD) kód uložený ve systémy správy verzí. Služby Azure DevOps také podporu metodologie Scrum, CMMI a agilní vývoj.
+Služby Azure DevOps jsou cloudové služby pro plánování, hostování, automatizovat a nasazení softwaru a umožněte spolupráci v týmech. Služby Azure DevOps podporu úložiště Git (distribuovanou správu verzí) a Team Foundation Version Control (centralizované správy verzí). Podporují taky kanály pro nepřetržité sestavení a vydaná verze (CI/CD) kód uložený ve systémy správy verzí. Služby Azure DevOps také podporu metodologie Scrum, CMMI a agilní vývoj.
 
 Team Foundation Server (TFS) je Centrum správy životního cyklu aplikace pro sadu Visual Studio. Umožňuje všem uživatelům zapojené do procesu vývoje se zúčastnit prostřednictvím jediného řešení. TFS je užitečné při správě heterogenních týmům a projektům, příliš.
 
@@ -110,7 +110,7 @@ Pokud máte v síti organizace Azure DevOps nebo Team Foundation Server, k němu
 
 Na následujícím obrázku **Team Exploreru** okna pro řešení, které je hostované v Azure DevOps služby.
 
-![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
+![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer_devops.png)
 
 Můžete automatizovat proces sestavení k sestavení kódu, který ověří vývojáři ve vašem týmu do správy verzí. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami. Další informace najdete v tématu [kanály Azure](/azure/devops/pipelines/index?view=vsts).
 

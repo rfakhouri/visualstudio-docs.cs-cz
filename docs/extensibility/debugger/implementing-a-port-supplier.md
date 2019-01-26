@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd068f9c669b898ac3d29dadccffb6edd1e0c783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e59ad83499e69bcf257ae212c18b14fba208f3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025810"
 ---
 # <a name="implement-a-port-supplier"></a>Implementace dodavatele portu
 Dodavatele portu poskytuje porty na požadavek na správce ladění relace (SDM). Při ladění k počítači bez modelu DCOM nebo když nová zařízení vyžaduje podporu, musí být implementované dodavatele portu. Například k poskytování ladění na mobilní telefon, může být nastavíte dodavatele portu, který poskytuje porty, které slouží k připojení k mobilní telefon (například prostřednictvím prostředí IR nebo buňky připojení) a vytváří výčet procesů a programy spuštěné na telefonu.  

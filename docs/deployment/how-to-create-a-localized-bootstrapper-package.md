@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 129f684c7dca4fc8da27286d51a9c3309ed87531
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80896483e0d7d1f3b42fce11ed53cbd253dc1b82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990396"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030129"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Postupy: Vytvoření lokalizovaného balíčku bootstrapperu
 Po vytvoření balíčku zaváděcího nástroje lokalizované verze balíčku zaváděcího nástroje můžete vytvořit tak, že vytvoříte dva další soubory pro každé národní prostředí: software licenčních podmínek souboru (například *eula.rtf*) a manifest balíčku (*package.xml*).  
@@ -51,15 +51,15 @@ Po vytvoření balíčku zaváděcího nástroje lokalizované verze balíčku z
     |Čínština (tradiční)|zh-Hant|  
     |Čeština|cs|  
     |Němčina|de|  
-    |Angličtina|cs|  
-    |Španělština|ES|  
-    |Francouzština|FR|  
-    |Italština|To|  
+    |Angličtina|en|  
+    |Španělština|es|  
+    |Francouzština|fr|  
+    |Italština|it|  
     |Korejština|Ko|  
     |Japonština|Japonsko|  
-    |Polština|PL|  
+    |Polština|pl|  
     |Portugalština (Brazílie)|pt-BR|  
-    |Ruština|RU|  
+    |Ruština|ru|  
     |Turečtina|tr|  
   
 2.  Vytvořit soubor, který obsahuje licenční podmínky pro software pro balíček zaváděcího nástroje a vložit ho do nové složky.  

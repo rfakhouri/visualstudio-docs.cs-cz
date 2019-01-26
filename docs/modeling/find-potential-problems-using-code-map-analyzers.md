@@ -10,16 +10,16 @@ helpviewer_keywords:
 - graph documents, analyzing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f23b00a1ee4ee437214453d221824313883f7435
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04e4d51fba62c56ce39fd34d8179f73baeeea77a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025914"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Nalezení potenciálních problémů pomocí analyzátorů mapy kódu
 
@@ -35,7 +35,7 @@ Spusťte analyzátory na mapách kódu, abyste mohli snadno identifikovat kód, 
 
 Na panelu nástrojů Mapa **rozložení** > **analyzátory**a potom analyzátor, který chcete spustit:
 
-|**Analyzátor**|**K identifikaci uzlů, který**|
+|**Analyzer**|**K identifikaci uzlů, který**|
 |-|-|
 |**Analyzátor cyklické odkazy**|Cyklické závislosti jsou na sobě navzájem. **Poznámka:**  Cyklické závislosti, které jsou v **obecných typů** skupiny nejsou zobrazeny na mapě, získáte rozbalením skupiny.|
 |**Najít analyzátor rozbočovače**|Jsou v horním 25 % vysoce připojených uzlů<br /><br /> **Chcete-li skrýt všechny uzly na mapě**<br /><br /> -Otevřete místní nabídku pro mapu, zvolte **Upřesnit**, **vyberte**, **Skrýt nevybrané**.<br />     Na mapě skryje nevybraných uzlů a analyzátor identifikuje nových uzlů jako centra.|

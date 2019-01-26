@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b898713b456afd72f6453bad01028af9090b8dd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b3dad44f0c3971ed3b206db9b3c022f8375153a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922952"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024666"
 ---
 # <a name="processes-view"></a>Zobrazení procesů
 Zobrazí se v zobrazení zobrazí strom všech aktivních procesů ve vašem systému. Název modulu a ID procesu se zobrazí. Zobrazení procesů použijte, pokud chcete prozkoumat konkrétní systém procesu, která obvykle odpovídá prováděnému programu. Procesy jsou označeny názvů modulů, nebo jsou určené "systémové procesy."  

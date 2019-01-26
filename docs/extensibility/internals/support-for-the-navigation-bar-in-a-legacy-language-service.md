@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9fc9d4339978f84b02a5c922c06139031924bf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcfb3d754db6696a213806c9188d34105d127fb5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868810"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032953"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Podpora navigačního panelu ve službě starší verze jazyka
 Navigační panel v horní části zobrazení editoru se zobrazí typy a členy v souboru. V levém rozevíracího seznamu jsou uvedeny typy a členy se zobrazí v pravém rozevíracího seznamu. Když uživatel vybere typ, blikající kurzor je umístěn na prvním řádku typu. Když uživatel vybere člena, blikající kurzor je umístěn v definici člena. Rozevírací seznamy jsou aktualizovány tak, aby odrážela aktuální umístění znaku stříšky.  

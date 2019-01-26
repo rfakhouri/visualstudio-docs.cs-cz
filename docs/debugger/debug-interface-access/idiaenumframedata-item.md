@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2761a72d-1868-4f5b-a32e-c2a1d9358c91
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38655a9dc55f16cf7c1ccddd65ae0793d7a04640
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67f34aaccac8394e57493fbf31a5ad42a815759c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894204"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036456"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 Načte datový prvek rámce pomocí indexu.  
@@ -42,5 +42,5 @@ HRESULT Item ( 
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaenumframedata –](../../debugger/debug-interface-access/idiaenumframedata.md)   
+ [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

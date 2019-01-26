@@ -8,21 +8,21 @@ helpviewer_keywords:
 ms.assetid: f9e9f895-57bb-41e8-8bd1-cdaa738ec220
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed7e91579cd9e07aeda8dd355fb8880f1a4fad9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e445e561849367609d7e9c7b4962d309f3fe0e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987061"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031614"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** nástroj příkazového řádku vám umožní profilu technologie ASP.Net webové servery bez nutnosti nastavit proměnné prostředí nebo restartovat počítač. Použití **VSPerfASPNetCmd.exe** místo [VSPerfCmd](../profiling/vsperfcmd.md) Pokud profilujete webů ASP.NET a není nutné další funkce poskytovaná modulem **VSPerfCmd**. Další informace o **VSPerfASPNetCmd**, naleznete v tématu [profilace pohotová webových stránek pomocí VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **Příkaz VSPerfASPNetCmd** je upřednostňovaný příkazového řádku nástroje pro použití při použití samostatného profileru Profilovat webu ASP.NET.  
   
 ## <a name="syntax"></a>Syntaxe  
- **příkaz vsperfaspnetcmd** [/*možnosti*] *webu*  
+ **vsperfaspnetcmd** [/*Options*] *Website*  
   
 ## <a name="options"></a>Možnosti  
   
@@ -34,7 +34,7 @@ ms.locfileid: "53987061"
 |**/ Tip** nebo **/i**|Přidá podrobné žádosti ASP.NET a informace o volání ADO.NET data profilace. **/ Tip** jde použít s vzorkování nebo instrumentace metody a je možné s **Memory** možnost.|  
 |**/ Output:** `File` nebo   **/o:**`File`|Určuje cestu a název souboru dat profilování (. *Vsp*) soubor.|  
 |**/ NoWait** nebo **/n**|Vrátí příkaz výzva okamžitě tak, aby další příkazy lze použít v okně příkazového řádku. Je nutné zadat **příkaz VSPerfASPNETCmd/Shutdown** na samostatný příkazový řádek vypnout profilování.|  
-|**/ PackSymbols**[: {**na**&#124;**vypnout**} nebo **/p**[: {**na**&#124;**vypnout**}|Vloží symboly (názvy funkce a parametrů, atd.) v profilaci dat (. *Vsp*) soubor.|  
+|**/PackSymbols**[:{**on**&#124;**off**}or   **/p**[:{**on**&#124;**off**}|Vloží symboly (názvy funkce a parametrů, atd.) v profilaci dat (. *Vsp*) soubor.|  
 |**/ Shutdown:** `Website`nebo   **/d:**`Website`|Zapne profilaci vypnout. Použijte parametr příkazového řádku po použití **/nowait** možnosti spuštění profilace, nebo pokud profiler neočekávaně ukončí. Zadejte stejnou adresu url, kterou jste použili v původním **VSPerfASPNETCmd** příkazu.|  
 |`Website`|Adresu url webu, který má být profilována.|  
   

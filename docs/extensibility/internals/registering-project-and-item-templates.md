@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca4723d24c45a11422eae4b7d8b288671e0b921
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041084"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrace šablon projektů a položek
 Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablony projektů a položek projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informace o registraci přidružený k vaší typy projektů používá k určení, co se má zobrazit v **přidat nový projekt** a **přidat novou položku** dialogových oknech.  
@@ -66,7 +66,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 ### <a name="registering-file-filters"></a>Registrace filtry souborů  
  Volitelně můžete zaregistrovat filtry, které [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používá, když ho vyzve k zadání názvů souborů. Například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrovat **otevřít soubor** dialogové okno je:  
 
- **Soubory Visual C# (\*.cs,\*.resx,\*.settings,\*XSD,\*WSDL);\*. cs,\*.resx,\*.settings,\*XSD,\*WSDL)**  
+ **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
 
  Pro podporu registrace více filtrů, každý filtr je zaregistrován ve vlastní podklíč pod HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*verze*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*podklíč*>. Název podklíče je libovolný. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoruje v podklíči název a používá jenom jeho hodnoty.  
 
@@ -111,7 +111,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 
  \Form  
 
- \Web stránky  
+ \Web Page  
 
  \HelperFiles (obsahuje soubory používané v položkách projektu více soubory)  
 

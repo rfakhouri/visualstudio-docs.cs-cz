@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 79127504259fde6e3b8d0a917b7a83554eaf23cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0eb372fffac9c9750f5912871e32a987b41e41b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042397"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Průvodce: Zápis Vizualizéru v jazyce C# #
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí jazyka C#. Vizualizaci, kterou vytvoříte v tomto názorném postupu se zobrazí obsah řetězce pomocí okna se zprávou formulářů Windows. Tento vizualizér jednoduchým řetězcem není zvlášť užitečné sám o sobě, ale zobrazuje základní kroky, které je třeba provést pro vytvoření užitečnější vizualizéry pro jiné datové typy.
@@ -260,5 +260,5 @@ Nejprve budete muset vytvořit nový projekt knihovny tříd.
 ## <a name="see-also"></a>Viz také:
 
 - [Architektura vizualizéru](../debugger/visualizer-architecture.md)
-- [Postupy: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)
+- [Postupy: Instalace vizualizéru](../debugger/how-to-install-a-visualizer.md)
 - [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)

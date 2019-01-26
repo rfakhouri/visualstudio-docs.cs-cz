@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd74b6af128ee8b624c022cbbf72c5de4edc7997
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aaa9784b40b02ba726b1bcc4b82e0708223fb283
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039628"
 ---
 # <a name="add-existing-item-command"></a>Přidat existující položku – příkaz
 Přidá existující soubor do aktuálního řešení a otevře jej.
@@ -34,7 +34,7 @@ File.AddExistingItem filename [/e:editorname]
  `filename` Povinné. Úplná cesta a název souboru, s rozšířením položky pro přidání do aktuálního řešení. Pokud cesta k souboru nebo název souboru obsahuje mezery, uzavřete do uvozovek celou cestu.
 
 ## <a name="switches"></a>Přepínače
- / e: `editorname` Volitelné. Název editoru, ve kterém chcete soubor otevřít. Pokud je zadán argument, ale žádný editor název je zadán, **otevřít v** zobrazí se dialogové okno.
+ /e: `editorname` Volitelné. Název editoru, ve kterém chcete soubor otevřít. Pokud je zadán argument, ale žádný editor název je zadán, **otevřít v** zobrazí se dialogové okno.
 
  / E:`editorname` syntaxí argumentů používá názvy editoru, jak se objeví v **otevřít s dialogové okno**, uzavřené v uvozovkách. Chcete-li otevřít šablony stylů v editoru zdrojového kódu, by například zadejte následující pro / e:`editorname` argument.
 

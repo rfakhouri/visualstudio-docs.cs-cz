@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c0496f6f-f8f2-435f-8674-6c32db6c5934
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8053945e0d759184c3eec0d26043eb8cdde6cfd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dca6ea011392daf5492d68ac61483d5ac39a71a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906953"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039836"
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
 Získá odkaz na symbol kompilace, které přispěly v této části.  
@@ -38,5 +38,5 @@ HRESULT get_compiland ( 
  Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasectioncontrib –](../../debugger/debug-interface-access/idiasectioncontrib.md)   
+ [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

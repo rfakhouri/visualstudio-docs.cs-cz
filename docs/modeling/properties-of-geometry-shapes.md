@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, geometry shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8b230d9611b52e4f68c399b5b36b2a8c0bfe88ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8964c36a2960829e257f46bdec2b238decada8ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937764"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041929"
 ---
 # <a name="properties-of-geometry-shapes"></a>Vlastnosti geometrických obrazců
 Obrazce geometrie můžete použít k určení, jak jsou instance třídy domény zobrazí v jazyka specifického pro doménu. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).

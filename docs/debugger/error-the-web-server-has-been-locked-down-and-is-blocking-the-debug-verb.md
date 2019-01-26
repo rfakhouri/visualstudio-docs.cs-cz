@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 277619cb89003aea9dca58678f251f2f21826046
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026590"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Chyba: Webový Server byl uzamčen a blokuje příkaz DEBUG.
 Krokování s vnořením do webové aplikace nebo webové služby XML se nezdařila, protože byl spuštěn nástroj lockdown služby IIS a nainstalovaných a aktivovaných URLScan. K tomuto stavu služby IIS blokuje příjem příkaz DEBUG.  
@@ -50,4 +50,4 @@ Krokování s vnořením do webové aplikace nebo webové služby XML se nezdař
   
 ## <a name="see-also"></a>Viz také  
  [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Chyba: Webový Server nenalezl požadovaný prostředek](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+ [Chyba: Webový server nemohl najít požadovaný prostředek.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dcf81d6ddba8fdd4fbdbc3e1ea9ca15b7682498
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0e16ec76a6c820afc672bf38729c18b92cf2cdf8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991003"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025654"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Průvodce: Vytvoření vlastního instalátoru pro aplikaci ClickOnce
 Na základě všech aplikací ClickOnce *.exe* souboru bezobslužné instalace a aktualizovat vlastní instalační program. Vlastní instalační program můžete implementovat vlastní uživatelské prostředí při instalaci, včetně vlastní dialogová okna pro operace zabezpečení a údržba. K provedení operace instalace, používá vlastní instalační program <xref:System.Deployment.Application.InPlaceHostingManager> třídy. Tento návod ukazuje, jak vytvořit vlastní instalační program, který tiché instalaci aplikace ClickOnce.  
@@ -77,4 +77,4 @@ Na základě všech aplikací ClickOnce *.exe* souboru bezobslužné instalace a
   
 ## <a name="see-also"></a>Viz také:  
  [ClickOnce – manifest aplikace](../deployment/clickonce-application-manifest.md)   
- [\<entryPoint > – element](../deployment/entrypoint-element-clickonce-application.md)
+ [\<entryPoint> element](../deployment/entrypoint-element-clickonce-application.md)

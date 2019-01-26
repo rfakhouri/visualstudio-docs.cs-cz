@@ -1,5 +1,5 @@
 ---
-title: 'CA2239: Poskytujte metody deserializace pro nepovinné pole'
+title: 'CA2239: Zadejte metody deserializace pro nepovinná pole'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 6480ff5e-0caa-4707-814e-2f927cdafef5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 572bf56c63e8fcbf9d78738d7cdffcf9540df158
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9e4ce74cceb09ab0fe87a375e48a6f4b8bb85ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037808"
 ---
-# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Poskytujte metody deserializace pro nepovinné pole
+# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Zadejte metody deserializace pro nepovinná pole
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "53988959"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ má pole, která je označena pomocí <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> atribut a typ neposkytuje metody zpracování událostí rušení serializace.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e282e63b81ecee4023934a235d4f524f8372311e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4c4c987bd0f44f6b8a4bad945d249aaf832fc57
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945571"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035273"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (konstruktor)
 Vytvoří instanci objektu `VsgDbg` třídy s nebo bez přípravy komponentu v aplikaci diagnostiky grafiky k aktivně zachycení a zaznamenání grafických informací ve výchozím nastavení, založené na zadaný parametr logické hodnoty.  
@@ -36,7 +36,7 @@ VsgDbg(
  Pokud je konstruktor volán s `bDefaultInit` nastavena na `false`, součást diagnostiky grafiky v aplikaci může být připraveni aktivně zachycení a zaznamenání informací grafiky později pomocí volání `Init` funkce.  
   
 ## <a name="see-also"></a>Viz také  
- [VsgDbg:: ~ VsgDbg (destruktor)](vsgdbg-tilde-vsgdbg-destructor.md)   
+ [VsgDbg::~VsgDbg (Destructor)](vsgdbg-tilde-vsgdbg-destructor.md)   
  [Inicializace](init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)   
  [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)

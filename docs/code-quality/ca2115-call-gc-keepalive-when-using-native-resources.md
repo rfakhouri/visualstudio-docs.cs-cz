@@ -1,5 +1,5 @@
 ---
-title: 'CA2115: Volání uvolňování paměti. KeepAlive při použití nativních zdrojů'
+title: 'CA2115: Volejte GC.KeepAlive při použití nativních prostředků'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d1f7214ce570042d1cebdbf0ac75ffaf81b0ea1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8307c9cd133671d5cc1e1c32fc257965198f0a9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849490"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023665"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Volání uvolňování paměti. KeepAlive při použití nativních zdrojů
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Volejte GC.KeepAlive při použití nativních prostředků
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53849490"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Metoda deklarovaného v typu s finalizační metoda odkazuje <xref:System.IntPtr?displayProperty=fullName> nebo <xref:System.UIntPtr?displayProperty=fullName> pole, ale nevolá <xref:System.GC.KeepAlive%2A?displayProperty=fullName>.
 

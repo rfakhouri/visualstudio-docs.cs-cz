@@ -13,19 +13,19 @@ helpviewer_keywords:
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ada56147ae384303b0d2fed736f41c9e6c11ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca26a7c0a11915f1f68fab2ec4a6e4b3268f349
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927594"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043346"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nepředávejte literály jako lokalizované parametry
 
@@ -36,7 +36,7 @@ ms.locfileid: "53927594"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Metoda předává řetězcový literál jako parametr do konstruktoru nebo metody v knihovně tříd rozhraní .NET Framework a tento řetězec by měl být lokalizovatelný.
 
  Toto upozornění je vyvoláno, když řetězcový literál je předán jako hodnotu parametru nebo vlastnost a nejméně jednu z následujících případech má hodnotu true:

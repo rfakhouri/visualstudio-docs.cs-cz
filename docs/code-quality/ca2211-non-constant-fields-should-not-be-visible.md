@@ -1,5 +1,5 @@
 ---
-title: 'CA2211: Nekonstantní pole by nemělo být viditelné'
+title: 'CA2211: Nekonstantní pole by neměla být viditelná'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 77253de14219c4c1c6737f9bc6e5c61e11fff4ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff103936f815f369bb66b54efc379306b52b8375
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937462"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036352"
 ---
-# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Nekonstantní pole by nemělo být viditelné
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Nekonstantní pole by neměla být viditelná
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "53937462"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný statické pole není konstantní, ani není jen pro čtení.
 
 ## <a name="rule-description"></a>Popis pravidla

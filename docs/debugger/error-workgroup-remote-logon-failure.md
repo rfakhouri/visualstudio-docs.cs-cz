@@ -15,15 +15,15 @@ helpviewer_keywords:
 - remote debugging, logon failure
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b197913abecbaf2ff74913a41720f464646fc67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16ba1c2fd9b1bd562171a69a846fed4e37352f54
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848045"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030441"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Chyba: Selhání přihlášení vzdálené pracovní skupiny
 Přečte tuto chybu:  
@@ -55,7 +55,7 @@ Přečte tuto chybu:
   
 4.  V **zásady** sloupce, klikněte dvakrát na **ladit programy** zobrazíte aktuální přiřazení zásad místní skupiny v **nastavení místních zásad zabezpečení** dialogové okno.  
   
-     ![Zabezpečení místní zásady uživatelská práva](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
+     ![Local Security Policy User Rights](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
 5.  Pokud chcete přidat nové uživatele, klikněte na tlačítko **přidat uživatele nebo skupinu** tlačítko.  
   
@@ -71,7 +71,7 @@ Přečte tuto chybu:
   
 5.  V **přístup k síti: Model sdílení a zabezpečení pro místní účty** dialogové okno pole, změňte hodnotu na **Classic - místní uživatelé ověřováni pomocí svých účtů** a klikněte na tlačítko **použít** tlačítko.  
   
-     ![Možnosti místního zabezpečení zásad zabezpečení](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
+     ![Local Security Policy Security Options](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)   

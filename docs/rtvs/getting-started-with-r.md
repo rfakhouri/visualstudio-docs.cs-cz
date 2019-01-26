@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944623"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024094"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Začínáme s nástroji R pro Visual Studio
 
-Jakmile budete mít nástroje R pro Visual Studio (RTVS) nainstalovaná (naleznete v tématu [instalace](installing-r-tools-for-visual-studio.md)), můžete rychle získat představu o tom, které poskytují tyto nástroje prostředí. 
+Jakmile budete mít nástroje R pro Visual Studio (RTVS) nainstalovaná (naleznete v tématu [instalace](installing-r-tools-for-visual-studio.md)), můžete rychle získat představu o tom, které poskytují tyto nástroje prostředí.
 
 ## <a name="create-an-r-project"></a>Vytvoření projektu jazyka R
 
@@ -93,7 +93,7 @@ Jako příklad, následujícím postupem se vytvoří pár kódu [centrální Li
 
 > [!Tip]
 > Další vzor úpravou a stisknutím **Ctrl**+**Enter** (nebo výběr všechno, co s **Ctrl**+**A** a stisknutím klávesy **Ctrl**+**Enter**) rychlé spuštění kódu. To je mnohem efektivnější než pomocí myši pro stejné operace.
-> 
+>
 > Kromě toho lze přetáhnout a rozevírací okno diagramů mimo rámec sady Visual Studio a umístěte ho jinak můžete kdykoli na obrazovce. Pak můžete změnit velikost okna diagramů dimenzím chcete a uložte ho do obrazu nebo souboru PDF.
 
 1. Přidejte několik další řádky kódu, které zahrnují druhý graf:
