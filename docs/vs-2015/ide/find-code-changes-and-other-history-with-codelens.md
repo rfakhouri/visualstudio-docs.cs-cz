@@ -1,25 +1,20 @@
 ---
 title: Nalezení změn kódu a další historie pomocí Codelensu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f697d7b4-704e-4cac-b13a-bc57d2ff8318
 caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825666"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753897"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
   Chcete-li zobrazit kód odkazující, přesuňte ukazatel myši nad odkaz.  
   
-  ![Funkce CodeLens &#45; náhled odkaz](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+  ![CodeLens &#45; Peek reference](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
   K otevření souboru, který obsahuje odkaz, dvakrát klikněte na odkaz.  
   
@@ -88,7 +83,7 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  ![CodeLens: Get změnit historii vašeho kódu v TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- Výchozí časové období se za posledních 12 měsíců. Pokud je váš kód uložen v sadě Team Foundation Server, můžete to změnit spuštěním [příkazu TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod** příznak.  
+ Výchozí časové období se za posledních 12 měsíců. Pokud je váš kód uložen v sadě Team Foundation Server, můžete to změnit spuštěním [příkazu TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod** příznak.  
   
  Chcete-li zobrazit podrobnou historii všech změn, včetně těch, které z více než rokem, zvolte **zobrazit všechny změny souborů**.  
   
@@ -110,24 +105,24 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  Můžete také zobrazit, kdo ho změnil kódu v čase. To může pomoct najít vzory ve změnách vašeho týmu a posoudit jejich dopad.  
   
- ![CodeLens: Změn kódu najdete v historii jako graf](../ide/media/codelens.png "CodeLens")  
+ ![CodeLens: Zobrazit historii změn kódu jako graf](../ide/media/codelens.png "CodeLens")  
   
 #### <a name="find-changes-in-your-current-branch"></a>Vyhledat změny v aktuální větvi  
  Předpokládejme, že má váš tým v několika větvích – hlavní větve a vývoj podřízený - snížit riziko rozbíjející stabilní kód:  
   
- ![CodeLens: Vyhledání, pokud byl váš kód rozvětvených](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
+ ![CodeLens: Najít, pokud byl váš kód rozvětvených](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
   
  Kolik lidí změnilo kódu a kolik změn (**Alt + 6**) v hlavní větvi:  
   
- ![CodeLens: Vyhledání, kolik změny ve vaší větvi](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
+ ![CodeLens: Najít v tom, kolik změn ve větvi](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
   
 #### <a name="find-when-your-code-was-branched"></a>Najít, pokud byl váš kód rozvětvených  
  Přejděte na svůj kód v podřízená větev, například poboček dev. tady. Vyberte indikátor změn (**Alt + 6**):  
   
- ![CodeLens: Vyhledání, pokud byl váš kód rozvětvených](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
+ ![CodeLens: Najít, pokud byl váš kód rozvětvených](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
   
 #### <a name="find-incoming-changes-from-other-branches"></a>Vyhledat příchozí změny další větve  
- ![CodeLens: Vyhledat změny kódu v jiných větvích](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
+ ![CodeLens: Nalezení změn kódu v další větve](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
  .. Tato oprava chyby v vývojový větev tady takto:  
   
@@ -135,7 +130,7 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  Aniž byste museli opustit aktuální větvi (hlavní) můžete zkontrolovat tuto změnu:  
   
- ![CodeLens: Viz příchozí změna z jiné větve](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
+ ![CodeLens: Zobrazit příchozí změna z jiné větve](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
   
 #### <a name="find-when-changes-got-merged"></a>Najít, když máte změny sloučit  
  Abyste viděli, jaké změny jsou zahrnuté ve vaší větvi:  
@@ -211,8 +206,8 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
 ##  <a name="QA"></a> Q & A  
   
-###  <a name="ChangeOrTurnOff"></a> Otázka: jak nebo vypnutí zapnutí funkce CodeLens? Nebo zvolte které indikátory zobrazíte?  
- **Odpověď:** posunete ukazatele nebo vypnutí, s výjimkou indikátor odkazů. Přejděte na **nástroje**, **možnosti**, **textový Editor**, **všechny jazyky**, **CodeLens**.  
+###  <a name="ChangeOrTurnOff"></a> DOTAZ: Jak se vypnout nebo na zapnout funkce CodeLens? Nebo zvolte které indikátory zobrazíte?  
+ **ODPOVĚĎ:**  Můžete zapnout ukazatele nebo vypnutí, s výjimkou indikátor odkazů. Přejděte na **nástroje**, **možnosti**, **textový Editor**, **všechny jazyky**, **CodeLens**.  
   
  Když jsou indikátory zapnuté, můžete také otevřít možnosti funkce CodeLens z indikátorů.  
   
@@ -222,22 +217,22 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  ![Změnit soubor&#45;indikátory na úrovni zapnutí a vypnutí](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
   
-###  <a name="NoIndicators"></a> Otázka: kde je funkce CodeLens?  
- **Odpověď:** CodeLens se zobrazí v kódu jazyka Visual C# .NET a Visual Basic .NET na úrovni metody, třídy, indexerů a vlastnost. CodeLens se zobrazí na úrovni pro všechny ostatní typy souborů.  
+###  <a name="NoIndicators"></a> DOTAZ: Pokud je funkce CodeLens?  
+ **ODPOVĚĎ:** CodeLens se zobrazí ve Vizuálu C# kód .NET a Visual Basic .NET na úrovni metody, třídy, indexerů a vlastnost. CodeLens se zobrazí na úrovni pro všechny ostatní typy souborů.  
   
 -   Ujistěte se, že je zapnutá funkce CodeLens. Přejděte na **nástroje**, **možnosti**, **textový Editor**, **všechny jazyky**, **CodeLens**.  
   
--   Pokud je váš kód uložen v sadě TFS, ujistěte se, jestli indexování kódu je zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).  
+-   Pokud je váš kód uložen v sadě TFS, ujistěte se, jestli indexování kódu je zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
--   Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. [Potvrďte, že máte oprávnění člena týmu.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. [Potvrďte, že máte oprávnění člena týmu.](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
   
 -   Pokud kód aplikace nemá testování částí, nejsou zobrazeny indikátory testu jednotek. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud víte, že váš kód aplikace má testování částí, ale nejsou zobrazeny indikátory testu, zkuste sestavit řešení (**Ctrl + Shift + B**).  
   
-### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Otázka: Proč nevidím podrobnosti pracovní položky pro potvrzení změn?  
- **Odpověď:** příčinou může být funkce CodeLens nelze najít pracovní položky v TFS. Zkontrolujte, že jste připojeni k týmovému projektu, který má ty pracovní položky a zda máte oprávnění k zobrazení pracovní položky. To může dojít, pokud se popis potvrzení obsahuje nesprávné informace o ID pracovních položek v sadě TFS.  
+### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>DOTAZ: Proč nevidím podrobnosti pracovní položky pro potvrzení změn?  
+ **ODPOVĚĎ:** Příčinou může být funkce CodeLens nelze najít pracovní položky v TFS. Zkontrolujte, že jste připojeni k týmovému projektu, který má ty pracovní položky a zda máte oprávnění k zobrazení pracovní položky. To může dojít, pokud se popis potvrzení obsahuje nesprávné informace o ID pracovních položek v sadě TFS.  
   
-###  <a name="NoLync"></a> Otázka: Proč nevidím indikátory služby Lync nebo Skype?  
- **Odpověď:** se nezobrazí, pokud ještě nejste k Lync nebo Skype pro firmy, není k dispozici jeden z nich nainstalovaný, nebo nemáte podporovanou konfiguraci. Ale stále můžete odesílat e-mailu:  
+###  <a name="NoLync"></a> DOTAZ: Proč nevidím indikátory služby Lync nebo Skype?  
+ **ODPOVĚĎ:** Se nezobrazí, pokud nejsou přihlášeni ke službě Lync nebo Skype pro firmy, nemáte jednu z těchto nainstalován nebo nemáte podporovanou konfiguraci. Ale stále můžete odesílat e-mailu:  
   
  ![Funkce CodeLens &#45; vlastník sady změn kontaktujte e-mailem](../ide/media/codelenscodesendmailchangesetnolync1.png "CodeLensCodeSendMailChangesetNoLync1")  
   
@@ -249,8 +244,8 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
   Funkce CodeLens nepodporuje existenci různých verzí aplikace Lync nebo Skype nainstalované. Nemusí být lokalizována pro všechny lokalizované verze sady Visual Studio.  
   
-### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Otázka: Jak mohu změnit písmo a barvu funkce codelens?  
- **Odpověď:** přejít na **nástroje**, **možnosti**, **prostředí**, **písma a barvy**.  
+### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>DOTAZ: Jak změnit písma a barvy funkce codelens?  
+ **ODPOVĚĎ:** Přejděte na **nástroje**, **možnosti**, **prostředí**, **písma a barvy**.  
   
  ![Funkce CodeLens &#45; změnit nastavení písem a barev](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")  
   
@@ -264,32 +259,28 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
 4.  Stisknutím klávesy **kartu** přejdete **zobrazit nastavení pro** seznamu a potom stiskněte klávesu **šipka dolů** vyberte **CodeLens**.  
   
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Otázka: Lze přesunout pohotové zobrazení funkce CodeLens?  
- **Odpověď:** Ano, zvolte ![CodeLens &#45; ukotvit jako okno](../ide/media/codelensdockwindow.png "CodeLensDockWindow") k dokování CodeLens jako okna.  
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>DOTAZ: Lze přesunout pohotové zobrazení funkce CodeLens?  
+ **ODPOVĚĎ:** Ano, zvolte ![CodeLens &#45; ukotvit jako okno](../ide/media/codelensdockwindow.png "CodeLensDockWindow") k dokování CodeLens jako okna.  
   
  ![Ukotvit okno na indikátor CodeLens](../ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
   
  ![Ukotvené odkazy CodeLens okno](../ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
   
-### <a name="q-how-do-i-refresh-the-indicators"></a>Otázka: Jak mohu aktualizovat indikátory?  
- **Odpověď:** to závisí na ukazatele:  
+### <a name="q-how-do-i-refresh-the-indicators"></a>DOTAZ: Jak mohu aktualizovat indikátory?  
+ **ODPOVĚĎ:** To závisí na ukazatele:  
   
 -   **Odkazy na**: Tento indikátor se aktualizuje automaticky při změně kódu. Pokud máte tento ukazatel jako samostatné okno ukotveno, aktualizujte indikátoru ručně tady:  
   
      ![Funkce CodeLens &#45; ukotvit jako okno](../ide/media/codelensviewreferencesdocked.png "CodeLensViewReferencesDocked")  
   
--   **Tým**: aktualizovat tyto indikátory ručně tady:  
+-   **Tým**: Aktualizujte tyto ukazatele ručně k tady:  
   
      ![Funkce CodeLens &#45; aktualizovat indikátory](../ide/media/codelensrefreshindicatorsfromcode.png "CodeLensRefreshIndicatorsFromCode")  
   
--   **Test**: [najít testy jednotek pro kód](#FindRunUnitTests) aktualizovat tento ukazatel.  
+-   **Test**: [Vyhledání testů jednotek pro kód](#FindRunUnitTests) aktualizovat tento ukazatel.  
   
-###  <a name="LocalVersion"></a> Otázka: co je "Místní verze"?  
- **Odpověď:** **místní verze** šipka ukazuje na poslední sady změn ve vaší místní verzi tohoto souboru. Pokud na serveru existují novější sady změn, zobrazují se nad nebo pod **místní verze** šipku, v závislosti na pořadí použitém k řazení sady změn.  
+###  <a name="LocalVersion"></a> DOTAZ: Co je "Místní verze"?  
+ **ODPOVĚĎ:** **Místní verze** šipka ukazuje na poslední sady změn ve vaší místní verzi tohoto souboru. Pokud na serveru existují novější sady změn, zobrazují se nad nebo pod **místní verze** šipku, v závislosti na pořadí použitém k řazení sady změn.  
   
-### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Dotaz: lze spravovat, jak funkce CodeLens zpracovává kód k zobrazení historie a propojené položky?  
- **Odpověď:** Ano, pokud je váš kód v TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).
-
-
-
-
+### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>DOTAZ: Můžete spravovat způsob, jak funkce CodeLens zpracuje kód k zobrazení historie a propojené položky?  
+ **ODPOVĚĎ:** Ano, pokud je váš kód v TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).

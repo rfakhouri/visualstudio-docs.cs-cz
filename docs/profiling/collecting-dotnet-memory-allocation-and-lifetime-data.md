@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2095b06347c577811cdeb91d0a9039a140758c86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ab421e4a74b76d8caf8edba159b640c9313215c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006083"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat o alokaci paměti a době platnosti objektů .NET
 
@@ -72,8 +72,8 @@ Můžete zadat další možnosti v _relace výkonu_**stránky vlastností** dial
 
 |Úloha|Související obsah|
 |----------|---------------------|
-|Na **binární soubory** stránky, zadejte umístění pro instrumentované kopie modulů. Ve výchozím nastavení původní binární soubory přesunou do složky pro zálohy.|- [Jak: Přemístit instrumentované binární soubory](../profiling/how-to-relocate-instrumented-binaries.md)|
-|Na **instrumentace** stránce, malé funkce vyloučit z profilace ke snížení profilace režie, profil kódu jazyka JavaScript na webových stránkách ASP.NET a zadat příkazy před a po spuštění z příkazového řádku proces instrumentace.|- [Jak: Vyloučení nebo zahrnutí krátkých funkcí z instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Jak: Profilování kódu JavaScript ve webových stránkách](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Jak: Určení příkazů k provedení před instrumentací a po instrumentaci](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|Na **binární soubory** stránky, zadejte umístění pro instrumentované kopie modulů. Ve výchozím nastavení původní binární soubory přesunou do složky pro zálohy.|- [Jak: Přemístění instrumentovaných binárních souborů](../profiling/how-to-relocate-instrumented-binaries.md)|
+|Na **instrumentace** stránce, malé funkce vyloučit z profilace ke snížení profilace režie, profil kódu jazyka JavaScript na webových stránkách ASP.NET a zadat příkazy před a po spuštění z příkazového řádku proces instrumentace.|- [Jak: Vyloučení nebo zahrnutí krátkých funkcí z instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Jak: Profilování kódu JavaScript ve webových stránkách](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Jak: Zadání příkazů k provedení před instrumentací a po instrumentaci](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
 |Na **čítače CPU** stránky, zadejte jeden nebo více čítačů výkonu procesoru pro přidání do profilových dat.|- [Jak: Shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)|
 |Na **Upřesnit** stránky, zadejte jakékoli další VSInstr.exe požadované možnosti, jako je například možnost zahrnout nebo vyloučit určité funkce. Další informace o možnosti VSInstr najdete v tématu [VSInstr](../profiling/vsinstr.md)|- [Jak: Určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Jak: Omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ebd1c8363c9801a9ac16a3b10a702de5954a14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837456"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023259"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Nástroje R pro Visual Studio ukázkových projektů
 
@@ -48,7 +48,7 @@ S všechny příklady, otevřete soubor, umístěte kurzor na slovo v horní č�
 
     ![Diagram příkladu srovnávacích testů](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` Vytvoří model vyžádání předpovědi na základě historické sady dat pomocí Microsoft ML Server pronajatých kol za. 
+- `Bike_Rental_Estimation_with_MRS` Vytvoří model vyžádání předpovědi na základě historické sady dat pomocí Microsoft ML Server pronajatých kol za.
 
 - `Data_Exploration` obsahuje tři skripty:
 
@@ -59,7 +59,7 @@ S všechny příklady, otevřete soubor, umístěte kurzor na slovo v horní č�
       ![Výstup pomocí ggplot2. Příklad R](media/samples-3d-interactive.png)
 
 - `Datasets` obsahuje tři *CSV* soubory používané aplikací Další ukázky
-- `Flight_Delays_Prediction_with_R` a `Flight_Delays_Prediction_with_MRS` ukazuje, jak k předpovědi zpoždění letů pomocí R, strojové učení a historická o včasných odletech a data o počasí. 
+- `Flight_Delays_Prediction_with_R` a `Flight_Delays_Prediction_with_MRS` ukazuje, jak k předpovědi zpoždění letů pomocí R, strojové učení a historická o včasných odletech a data o počasí.
 - `Machine learning` obsahuje tři ukázky pro učení k předpovědi zpoždění letů, ubytování ceny a pronajatých kol za. Společně tyto ukázky ukazují použití R a Microsoft ML Server na reálných problémů. Jsou také ukazují, jak použít několik modelů oblíbených strojového učení a jejich nasazení jako webové služby Azure s použitím [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) pracovního prostoru.
 
 - `R_MRO_MRS_Comparison` je šestidílném porovnání, která zobrazuje podobnosti a rozdíly v R, Microsoft R Open nebo Microsoft ML Server s příkazy, syntaxe, konstrukce a výkonu.

@@ -1,14 +1,9 @@
 ---
 title: Panel nástrojů, karta Data | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
 - Data tab, Toolbox
@@ -17,13 +12,13 @@ ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c5a75242a193345098ac33557a87e792f94f1ef4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768955"
 ---
 # <a name="toolbox-data-tab"></a>Sada nástrojů, karta Data
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "53648558"
 Zobrazí data objekty, které můžete přidat do formuláře a komponenty. **Data** karty **nástrojů** se zobrazí, když vytvoříte projekt, který má přidružený designer. **Nástrojů** se zobrazí ve výchozím nastavení v integrovaném vývojovém prostředí sady Visual Studio; Pokud chcete zobrazit **nástrojů**vyberte **nástrojů** z **Zobrazení** nabídky.  
   
 > [!TIP]
->  Spuštění Průvodce konfigurací zdroje dat automaticky vytvoří a nakonfiguruje většina datových položek. Další informace najdete v tématu [vytváření datových aplikací pomocí sady Visual Studio](http://msdn.microsoft.com/en-us/28edce21-220a-484c-b461-a75b0232d293).  
+>  Spuštění Průvodce konfigurací zdroje dat automaticky vytvoří a nakonfiguruje většina datových položek. Další informace najdete v tématu [vytváření datových aplikací pomocí sady Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Seznam prvků uživatelského rozhraní  
  Chcete-li přejít přímo na stránce dokumentace rozhraní .NET Framework pro komponentu, stiskněte **F1** na položku v **nástrojů** nebo na položku součásti na hlavním panelu v návrháři.  

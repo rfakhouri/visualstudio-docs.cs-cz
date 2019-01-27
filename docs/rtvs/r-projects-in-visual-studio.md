@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d9e20b53597ebca2eb079418a0838ff5449678a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66dc3cfcdd8cf815ba8f7744b36e0c04a750d49a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924329"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990573"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Vytvořit projekty v R v sadě Visual Studio
 
@@ -65,14 +65,14 @@ Pokud máte existující složky *. R* soubory, které chcete spravovat v projek
 K otevření stránek vlastností projektu, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo vyberte **projektu > vlastnosti (název projektu)** nabídky položka. Otevřeném okně zobrazí vlastnosti projektu:
 
 
-| Tabulátor | Vlastnost | Popis | 
-| --- | --- | --- | 
-| Spustit | Spouštěcí soubor | Název souboru, který se spustí s **zdrojový soubor spouštěcí** příkazu **F5**, **ladění** > **spustit ladění**, nebo  **Ladění** > **spustit bez ladění**. Pravým tlačítkem soubor v projektu a výběrem **nastavit jako spouštěcí skript jazyka R** také nastaví jako spouštěcí soubor. | 
-| | Resetovat při spuštění interaktivní R | Vymaže všechny proměnné z pracovního prostoru interaktivní okno při spuštění projektu. To provedete tak záruky existuje není žádný obsah pracovního prostoru plyne ze zbytkových zkontrolují běhů. | 
-| | Cesta vzdáleného projektu | Cesta k vzdálený pracovní prostor. | 
-| | Přenos souborů při spuštění | Určuje, zda soubory projektu, v souladu s filtr na **soubory k přesunu**, jsou zkopírovány do vzdálené pracovní prostor se každé spuštění. | 
-| | Soubory k přesunu | Názvy souborů a zástupné znaky označující konkrétní soubory ke zkopírování do vzdáleného pracovního prostoru, pokud **přenos souborů při spuštění** zaškrtnuto. | 
-| Nastavení | (Soubor Settings.R) | Nastavení projektu R pochází *Settings.R* nebo **. Settings.R* soubory, které jsou umístěné uvnitř projektu. Pokud není dostupný žádný soubor nastavení, můžete přidat proměnné, uložit na stránku a výchozí *Settings.R* soubor se vytvoří za vás. Můžete také přidat soubor nastavení projektu prostřednictvím **souboru** > **přidat novou položku** příkazu nabídky. <br/> Nastavení se ukládají jako kód R a soubor lze použít jako zdroj před spuštěním dalších modulů, tedy předem naplnění prostředí s předdefinovanými nastaveními. | 
+| Tabulátor | Vlastnost | Popis |
+| --- | --- | --- |
+| Spustit | Spouštěcí soubor | Název souboru, který se spustí s **zdrojový soubor spouštěcí** příkazu **F5**, **ladění** > **spustit ladění**, nebo  **Ladění** > **spustit bez ladění**. Pravým tlačítkem soubor v projektu a výběrem **nastavit jako spouštěcí skript jazyka R** také nastaví jako spouštěcí soubor. |
+| | Resetovat při spuštění interaktivní R | Vymaže všechny proměnné z pracovního prostoru interaktivní okno při spuštění projektu. To provedete tak záruky existuje není žádný obsah pracovního prostoru plyne ze zbytkových zkontrolují běhů. |
+| | Cesta vzdáleného projektu | Cesta k vzdálený pracovní prostor. |
+| | Přenos souborů při spuštění | Určuje, zda soubory projektu, v souladu s filtr na **soubory k přesunu**, jsou zkopírovány do vzdálené pracovní prostor se každé spuštění. |
+| | Soubory k přesunu | Názvy souborů a zástupné znaky označující konkrétní soubory ke zkopírování do vzdáleného pracovního prostoru, pokud **přenos souborů při spuštění** zaškrtnuto. |
+| Nastavení | (Soubor Settings.R) | Nastavení projektu R pochází *Settings.R* nebo **. Settings.R* soubory, které jsou umístěné uvnitř projektu. Pokud není dostupný žádný soubor nastavení, můžete přidat proměnné, uložit na stránku a výchozí *Settings.R* soubor se vytvoří za vás. Můžete také přidat soubor nastavení projektu prostřednictvím **souboru** > **přidat novou položku** příkazu nabídky. <br/> Nastavení se ukládají jako kód R a soubor lze použít jako zdroj před spuštěním dalších modulů, tedy předem naplnění prostředí s předdefinovanými nastaveními. |
 
 ## <a name="r-specific-project-commands"></a>Příkazy jazyka R specifický pro projekt
 
@@ -84,7 +84,7 @@ Projektů sady Visual Studio podporují několik obecných příkazů pomocí m�
 | Otevřít nadřazenou složku | Otevře se Průzkumník Windows v umístění vybraný soubor. |
 | Přidat skript jazyka R | Vytvoří a otevře se nový *. R* s výchozím názvem souboru. Můžete také použít **přidat** > **nová položka** příkaz pro vytvoření *. R* soubory a také řadu dalších typů souborů. Zobrazit [šablony položek specifické pro R](#r-specific-item-templates). |
 | Přidat R Markdown | Vytvoří a otevře se nové *.rmd* dokument s výchozím názvem. Můžete také použít **přidat** > **nová položka** příkaz pro vytvoření *.rmd* soubory a také řadu dalších typů souborů. Zobrazit [šablony položek specifické pro R](#r-specific-item-templates).  |
-| Publikovat uložené procedury | Zahájí proces publikování žádné uložené procedury, které jsou součástí skripty jazyka R. Zobrazit [pracovat uložených procedur SQL serveru](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). | 
+| Publikovat uložené procedury | Zahájí proces publikování žádné uložené procedury, které jsou součástí skripty jazyka R. Zobrazit [pracovat uložených procedur SQL serveru](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>Šablony položek specifické pro R
 
@@ -97,7 +97,7 @@ RTVS obsahuje několik šablon pro určité typy souborů. Přístup k šablony 
 | --- | --- |
 | Skript jazyka R | Textový soubor, který obsahuje stejné příkazy, které mohou být zadány v příkazovém řádku R. |
 | R Markdown | Soubor obsahující [R Markdown](rmarkdown-with-r-in-visual-studio.md) dokumentu. |
-| Nastavení jazyka R | Soubor, který obsahuje nastavení aplikace r. | 
+| Nastavení jazyka R | Soubor, který obsahuje nastavení aplikace r. |
 | Dokumentace R | Obecný soubor dokumentace R obsahující pouze název, aliasu a názvu pole. |
 | Dokumentace R (funkce) | Soubor dokumentace R obsahující velký počet polí s komentáři pro popis funkce. |
 | Dokumentace R (datová sada) | Soubor dokumentace R obsahující velký počet polí s komentáři popisující datové sady. |

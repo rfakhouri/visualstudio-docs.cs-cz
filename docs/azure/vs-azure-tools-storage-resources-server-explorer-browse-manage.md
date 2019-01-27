@@ -2,7 +2,7 @@
 title: Procházet a spravovat prostředky úložiště pomocí Průzkumníku serveru | Dokumentace Microsoftu
 description: Procházení a Správa prostředků úložiště pomocí Průzkumníka serveru
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: dc4e5abf5ecc96ea11771158c646d67492f85ec4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97c6bea6fbdb676e33be1bfc9aa40ebbfe9eac85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968463"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934631"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procházení a správa prostředků úložiště pomocí Průzkumníka serveru
 
@@ -44,7 +44,7 @@ Chcete-li zobrazit prostředky v účtu úložiště, rozbalte uzel účtu úlo�
 ### <a name="to-create-a-blob-container"></a>Chcete-li vytvořit kontejner objektů blob
 
 1. Otevřete místní nabídku **objekty BLOB** uzlu a pak vyberte **vytvořit kontejner objektů Blob**.
-1. V **vytvořit kontejner objektů Blob** dialogovém okně zadejte název nového kontejneru.  
+1. V **vytvořit kontejner objektů Blob** dialogovém okně zadejte název nového kontejneru.
 1. Vyberte možnost Enter na klávesnici nebo můžete kliknutím nebo klepnutím mimo pole názvu pro uložení objektů blob v kontejneru.
 
    > [!NOTE]
@@ -286,7 +286,7 @@ Pokud jste nevytvořili účet úložiště pomocí **geograficky redundantní s
 
 ### <a name="to-remove-a-storage-account-from-server-explorer"></a>Chcete-li odebrat účet úložiště z Průzkumníka serveru
 
-V Průzkumníku serveru, otevřete místní nabídku pro název účtu a pak vyberte **odstranit**. 
+V Průzkumníku serveru, otevřete místní nabídku pro název účtu a pak vyberte **odstranit**.
 
 Pokud odstraníte účet úložiště, odeberou se také žádné uložené informace o klíči pro tento účet.
 

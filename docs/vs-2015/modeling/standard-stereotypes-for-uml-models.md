@@ -1,12 +1,9 @@
 ---
 title: Standardní Stereotypy pro modely UML | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763242"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770701"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardní stereotypy pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +31,8 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
   
 |Profil|Účel|  
 |-------------|-------------|  
-|[L2 standardním profilu UML](#L2)|Standardní sadu Stereotypy, které je možné přidat další informace o elementu nebo relace.|  
-|[L3 standardním profilu UML](#L3)|Standardní sadu Stereotypy, které je možné přidat další informace o elementu nebo relace.|  
+|[UML Standard Profile L2](#L2)|Standardní sadu Stereotypy, které je možné přidat další informace o elementu nebo relace.|  
+|[UML Standard Profile L3](#L3)|Standardní sadu Stereotypy, které je možné přidat další informace o elementu nebo relace.|  
 |[Profil jazyka C#](#NetProfile)|Pokud máte v úmyslu třídu nebo jiný prvek v modelu UML představující programový kód, to lze naznačit jednomu stereotypu použitím z profil jazyka C#.<br /><br /> Tyto Stereotypy také přidání vlastností do prvky modelu.|  
   
  Když vytvoříte nový model UML, standardní L2 profilů UML a L3 jsou propojeny s modelem, dokud neodeberete odkazy.  
@@ -74,7 +71,7 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
   
 3.  Některé Stereotypy umožní nastavit hodnoty dalších vlastností pro ovládací prvek modelu. Chcete-li zobrazit tyto vlastnosti, rozbalte **Stereotypy** vlastnost.  
   
-###  <a name="L2"></a> L2 standardním profilu UML  
+###  <a name="L2"></a> UML Standard Profile L2  
  Následující Stereotypy umožňuje specialize význam elementů modelu UML, pokud odkaz na profil, který byl odebrán z modelu.  
   
  Přesné význam těchto Stereotypy je určena vlastní místní konvence a všechny nástroje, které můžete použít ke zpracování modelu.  
@@ -82,21 +79,21 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
 |Stereotyp|Platí pro|Význam|  
 |----------------|----------------|-------------|  
 |pomocné|Třída|Třída, která podporuje jiné třídy, obvykle prostřednictvím implementace další logiku. Jiná třída může mít stereotyp "aktivní".|  
-|– volání|Závislost|Klientská třída volá operace od dodavatele.|  
+| – volání|Závislost|Klientská třída volá operace od dodavatele.|  
 |vytvoření|Závislost|Klientská třída vytváří instance dodavatele.|  
 |vytvoření|Zpráva|Odesílatel vytvoří příjemce.|  
 |vytvoření|Operace|Tato operace je konstruktor.|  
 |odvození|Závislost|Element klienta je vypočítán zcela nebo částečně od dodavatele.|  
-|zrušení|Operace|Operace odstraní jeho instanci.|  
+|destroy|Operace|Operace odstraní jeho instanci.|  
 |dokument|Artefakt|A "souboru", který je není zdrojem nebo spustitelný soubor.|  
 |entita|Součást|Součást představuje obchodní koncept.|  
 |spustitelný soubor|Artefakt|Spustitelný soubor "file".|  
-|– soubor|Artefakt|Fyzický soubor.|  
+|soubor|Artefakt|Fyzický soubor.|  
 |fokus|Třída|Třída definující základní obchodní logiku, která podporuje několik "pomocné" třídy.|  
 |rozhraní|Balíček|Tento balíček definuje opakovaně návrhovém vzoru.|  
 |Implementace|Součást|Implementace "specifikace".|  
 |implementationClass|Třída|Tato třída Popisuje implementaci a každá instance modulu runtime má jednu třídu pevné implementace. Oproti "typ".|  
-|Vytvoření instance|Závislost|Klient vytvoří instance dodavatele.|  
+|instantiate|Závislost|Klient vytvoří instance dodavatele.|  
 |knihovna|Artefakt|Knihovna "file".|  
 |metaclass|Třída|Instance této třídy jsou zároveň třídami.|  
 |modelLibrary|Balíček|Obsahuje elementy modelu měli v úmyslu opakovaně využít pro import balíčků. Obvykle definovali jako součást profilu a automaticky importovány pomocí aplikace profilu.|  
@@ -145,6 +142,3 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
  [Přidávání stereotypů k elementům modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Přizpůsobení modelu pomocí profilů a stereotypů](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 617d3afece5fbf5da2b347d097df65b5659263f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eddbdfe8b2b5f6f3c5940200077f29df0d6003a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900110"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043362"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Vytváření vyhledávacích tabulek v aplikacích Windows Forms
 
@@ -53,7 +53,7 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
 
     |Vlastnost|Vysvětlivky k nastavení|
     |--------------| - |
-    |**Zdroj dat**|Visual Studio nastaví tuto vlastnost <xref:System.Windows.Forms.BindingSource>, které byly vytvořeny pro tabulky přetažena na ovládací prvek (nikoli <xref:System.Windows.Forms.BindingSource>, vytvořené při vytvoření ovládacího prvku).<br /><br /> Pokud potřebujete provést úpravu, nastavte <xref:System.Windows.Forms.BindingSource> tabulky se sloupcem, kterou chcete zobrazit.|
+    |**DataSource**|Visual Studio nastaví tuto vlastnost <xref:System.Windows.Forms.BindingSource>, které byly vytvořeny pro tabulky přetažena na ovládací prvek (nikoli <xref:System.Windows.Forms.BindingSource>, vytvořené při vytvoření ovládacího prvku).<br /><br /> Pokud potřebujete provést úpravu, nastavte <xref:System.Windows.Forms.BindingSource> tabulky se sloupcem, kterou chcete zobrazit.|
     |**DisplayMember**|Aplikace Visual Studio nastaví tuto vlastnost na první sloupec po primárním klíči, který má datový typ řetězec, u tabulky, která je přetažena na ovládací prvek.<br /><br /> Pokud potřebujete provést úpravu, nastavte na název sloupce, které chcete zobrazit.|
     |**ValueMember**|Aplikace Visual Studio nastaví tuto vlastnost na první sloupec, který je součástí primárního klíče, nebo na první sloupec v tabulce, pokud není definován žádný klíč.<br /><br /> Pokud potřebujete provést úpravu, nastavte na primární klíč tabulky se sloupcem, který chcete zobrazit.|
     |**SelectedValue**|Visual Studio nastaví tuto vlastnost na původní sloupec vyřadit z **zdroje dat** okna.<br /><br /> Pokud potřebujete provést úpravu, nastavte na sloupce cizího klíče v související tabulce.|

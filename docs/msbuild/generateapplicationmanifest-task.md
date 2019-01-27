@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c15f3ae12aec25747629dfb634ad5790405a11c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900688"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940658"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest – úloha
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace nebo nativní manifest. Nativní manifest popisuje komponentu definováním jedinečné identity pro komponentu a identifikaci všech sestavení a souborů, které tvoří součást. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace rozšiřuje nativní manifest označením vstupního bodu aplikace a určením úrovně zabezpečení aplikace.  

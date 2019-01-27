@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: da1c1ad76802496108284dcb6fc037bfd7443180
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e0098db138aa476a9ec66c7d9f79f6c112f256e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923909"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďovat paměťová data pomocí příkazového řádku profileru
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci shromažďovat podrobná data paměti .NET přidělení a objekt doba života pro dynamicky kompilovaných [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci s použitím metoda profilace instrumentace.  
@@ -37,11 +37,11 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 3.  Inicializujte proměnné prostředí profilování. Zadejte:  
 
-     **Vsperfclrenv – /globaltracegc**  
+     **VSPerfClrEnv /globaltracegc**  
 
      -nebo-  
 
-     **Vsperfclrenv – /globaltracegclife**  
+     **VSPerfClrEnv /globaltracegclife**  
 
     -   **/globaltracegc** umožňuje shromažďování data o přidělování paměti.  
 

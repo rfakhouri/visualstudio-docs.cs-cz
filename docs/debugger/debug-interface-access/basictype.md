@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 19ae53ba-cd6e-47b6-9f94-27ae663ce955
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 891b83d6a43cb73fe8f38bb8b20201cbcfa230f6
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 7fb6000da7ab5d9ff17f78cacf87608432b839e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154079"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030931"
 ---
 # <a name="basictype"></a>BasicType
 Určuje základní typ symbolu.  
@@ -112,5 +112,5 @@ enum BasicType { 
   
 ## <a name="see-also"></a>Viz také  
  [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol::get_basetype –](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

@@ -1,14 +1,9 @@
 ---
 title: Úpravy programových testů UI pomocí editoru testů kódované UI | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951254"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793760"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Úpravy programových testů uživatelského rozhraní pomocí Editoru programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +120,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
  *Co dalšího mohu vědět?*  
  **Důležité problémy**  
   
-- ![Ikona upozornění](../test/media/caution.gif "upozornění") **upozornění:** Pokud rozdělíte metodu, je nutné upravit veškerý kód, který volá metodu existující také volání nové metody, které se chystáte vytvořit, pokud chcete i tyto uživatelského rozhraní akce zahrnuté. Pokud rozdělíte metodu, zobrazí se dialogové okno sady Microsoft Visual Studio. Upozorňuje vás, že je třeba upravit jakýkoli kód, který volá metodu existující také zavolat novou metodu, kterou se chystáte vytvořit. Zvolte **Ano**.  
+- ![Ikona upozornění](../test/media/caution.gif "upozornění") **upozornění:** Pokud rozdělíte metodu, je třeba upravit jakýkoli kód, který volá metodu existující také zavolat novou metodu, kterou se chystáte vytvořit, pokud chcete i tyto akce uživatelského rozhraní, které jsou zahrnuty. Pokud rozdělíte metodu, zobrazí se dialogové okno sady Microsoft Visual Studio. Upozorňuje vás, že je třeba upravit jakýkoli kód, který volá metodu existující také zavolat novou metodu, kterou se chystáte vytvořit. Zvolte **Ano**.  
   
   **Tipy**  
   
@@ -149,7 +144,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
  *Co dalšího mohu vědět?*  
  **Důležité problémy**  
   
-- ![Ikona upozornění](../test/media/caution.gif "upozornění") **upozornění:** po přesunutí metody je nemůžete nadále upravovat pomocí editoru programového testu UI. Musíte přidat vlastní kód a spravovat jej pomocí Editoru kódu. Při přesunutí metody se zobrazí dialogové okno sady Microsoft Visual Studio. Upozorňuje vás, že metoda bude přesunuta ze souboru UIMap.uitest do UIMap.cs nebo UIMap.vb Souborová služba a který se již budete moci upravit metodu pomocí editoru programového testu UI. Zvolte **Ano**.  
+- ![Ikona upozornění](../test/media/caution.gif "upozornění") **upozornění:** Po přesunutí metody můžete nadále upravovat pomocí editoru programového testu UI. Musíte přidat vlastní kód a spravovat jej pomocí Editoru kódu. Při přesunutí metody se zobrazí dialogové okno sady Microsoft Visual Studio. Upozorňuje vás, že metoda bude přesunuta ze souboru UIMap.uitest do UIMap.cs nebo UIMap.vb Souborová služba a který se již budete moci upravit metodu pomocí editoru programového testu UI. Zvolte **Ano**.  
   
   **Tipy**  
   
@@ -167,7 +162,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
  *Co dalšího mohu vědět?*  
  **Důležité problémy**  
   
-- ![Ikona upozornění](../test/media/caution.gif "upozornění") **upozornění:** předtím, než můžete vyhledat ovládací prvek uživatelského rozhraní, ověřte, zda je spuštěna aplikace spojené s testem.  
+- ![Ikona upozornění](../test/media/caution.gif "upozornění") **upozornění:** Předtím, než můžete vyhledat ovládací prvek uživatelského rozhraní, ověřte, zda je spuštěna aplikace spojené s testem.  
   
   **Tipy**  
   
@@ -185,7 +180,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
  *Co dalšího mohu vědět?*  
  **Důležité problémy**  
   
--   ![Ikona upozornění](../test/media/caution.gif "upozornění") **upozornění:** před vyhledávání ovládacích prvků uživatelského rozhraní, ověřte, zda je spuštěna aplikace spojené s testem.  
+-   ![Ikona upozornění](../test/media/caution.gif "upozornění") **upozornění:** Před vyhledávání ovládacích prvků uživatelského rozhraní, ověřte, zda je spuštěna aplikace spojené s testem.  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> Vložení prodlevy před akci uživatelského rozhraní  
  V některých případech můžete chtít provést test čekání na určité události pravděpodobnější, jako je okno se zobrazí indikátor průběhu zmizí a tak dále. Pomocí editoru programového testu uživatelského rozhraní, lze provést pomocí vložení prodlevy před akci uživatelského rozhraní. Můžete určit, kolik sekund má zpoždění, aby.  
@@ -194,7 +189,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
   
  ![Zpoždění přidána s 5 sekund](../test/media/codeduidealy2.png "CodedUIDealy2")  
   
- V **akce uživatelského rozhraní** podokně rozbalte položku testovací metoda, která obsahuje akce uživatelského rozhraní, který chcete vložit zpoždění před. Výběr akce uživatelského rozhraní. Dále otevřete místní nabídku pro akce uživatelského rozhraní a zvolte **vložit zpoždění před**. Zpoždění při vkládání a zvýrazněná, před vybrané akce uživatelského rozhraní s následujícím textem: **vyčkat, než 1 sekundy pro zpoždění uživatele mezi akcemi**. V okně Vlastnosti změňte hodnotu **zpoždění** vlastnost na požadovanou dobu v milisekundách.  
+ V **akce uživatelského rozhraní** podokně rozbalte položku testovací metoda, která obsahuje akce uživatelského rozhraní, který chcete vložit zpoždění před. Výběr akce uživatelského rozhraní. Dále otevřete místní nabídku pro akce uživatelského rozhraní a zvolte **vložit zpoždění před**. Zpoždění při vkládání a zvýrazněná, před vybrané akce uživatelského rozhraní s následujícím textem: **Počkejte 1 sekundy pro zpoždění uživatele mezi akcemi**. V okně Vlastnosti změňte hodnotu **zpoždění** vlastnost na požadovanou dobu v milisekundách.  
   
  Po dokončení vkládání zpoždění, uložte změny do souboru UIMap.Designer výběrem **Uložit** na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů.  
   
@@ -210,7 +205,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
 ## <a name="external-resources"></a>Externí zdroje  
   
 ### <a name="guidance"></a>Doprovodné materiály  
- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: testování částí: testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>Nejčastější dotazy  
  [Programové testy UI – nejčastější dotazy – 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -225,7 +220,4 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
  [Vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Vytvoření datově řízeného programového testu UI](../test/creating-a-data-driven-coded-ui-test.md)   
  [Generování programového testu UI ze stávajícího záznamu akcí](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
- [Návod: Vytváření, upravování a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-
+ [Návod: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

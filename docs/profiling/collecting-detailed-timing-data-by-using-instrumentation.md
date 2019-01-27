@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8812db301b4e58b89ac8ab879625b7cf101ad94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaeebaf4a6b935d59152e9f15e01cfae88ff6f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913952"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974315"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Shromažďování podrobných dat časování pomocí instrumentace
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Metody nástroje pro profilaci instrumentace vkládá kód profilování do kopie modulu. Kód zaznamenává každou položku, ukončení a volání funkce funkce v modulu během profilování. Metody instrumentace je užitečná pro shromažďování podrobných informací o časování o části kódu a k pochopení dopadu vstupních a výstupních operací na výkon aplikace.  
@@ -46,4 +46,4 @@ ms.locfileid: "53913952"
 |Na **čítače CPU** stránky, zadejte jeden nebo více čítačů výkonu procesoru pro přidání do profilových dat.|-   [Postupy: shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)|  
 |Na **události Windows** vyberte jeden nebo více událostí trasování událostí pro Windows (ETW) pro shromažďování dat prostřednictvím data vzorkování.|-   [Jak: Shromažďování trasování událostí pro Windows (ETW) dat.](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
 |Na **čítače Windows** stránky, zadejte jeden nebo více čítačů výkonu operačního systému pro přidání do profilových dat. jako značky.|-   [Jak: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)|  
-|Na **Upřesnit** stránky, zadejte jakékoli další možnosti, které chcete předat do programu VSInstr instrumentace, jako je například možnost zahrnout nebo vyloučit určité funkce.|-   [Jak: Určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [Jak: Omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)<br />-   [Nástroj VSInstr](../profiling/vsinstr.md)|
+|Na **Upřesnit** stránky, zadejte jakékoli další možnosti, které chcete předat do programu VSInstr instrumentace, jako je například možnost zahrnout nebo vyloučit určité funkce.|-   [Jak: Určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [Jak: Omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)<br />-   [VSInstr](../profiling/vsinstr.md)|

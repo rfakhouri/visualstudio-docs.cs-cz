@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986983"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013701"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -47,7 +47,7 @@ Tyto soubory definují trochu samy o sobě. Místo toho importovat další soubo
 
    Architektura sestavení s názvem "Platformy" z historických důvodů.
 
-   Příklady: Win32, x86, x64 ARM   
+   Příklady: Win32, x86, x64, ARM   
 
 - `$(PlatformToolset)`
 
@@ -59,7 +59,7 @@ Hodnoty těchto vlastností zadat názvy složek v rámci `$(VCTargetsPath)` ko�
 > &nbsp;&nbsp;&nbsp;&nbsp;*Typ aplikace*\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Platformy*\\  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Platforms*\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
@@ -110,7 +110,7 @@ Windows desktopové projekty nebudete definovat `$(ApplicationType)`, takže pou
 > `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*výchozí*\\\*. *Vlastnosti*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platformy*\\`$(Platform)`\\*Platform.default.props*  
+> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*výchozí*\\\*. *Vlastnosti*  
 
 Použijeme `$(_PlatformFolder)` vlastnost pro uchování `$(Platform)` umístění složek pro platformu. Tato vlastnost je 
@@ -125,7 +125,7 @@ pro všechno ostatní.
 
 Soubory vlastností se importují v tomto pořadí:
 
-> `$(VCTargetsPath)`\\*Souboru Microsoft.Cpp.props*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Vlastnosti*  
@@ -136,7 +136,7 @@ Soubory cíle importují v tomto pořadí:
 
 > `$(VCTargetsPath)`\\*Microsoft.Cpp.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.TARGETS*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *cíle*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
@@ -158,7 +158,7 @@ I když sadu nástrojů můžete přepsat proces celé sestavení, obvykle je vh
 
    - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Cílů Microsoft.Common.Targets*
+   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -482,8 +482,8 @@ Pravidla formátu je jednoduché, takže tato část popisuje pouze atributy, kt
 |------------| - |
 | `generic` | Všechny vlastnosti jsou zobrazeny na jedné stránce v části kategorie záhlaví<br/>Pravidlo může být viditelné pro `Project` a `PropertySheet` kontextů, ale ne `File`.<br/><br/> Příklad: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
 | `tool` | Kategorie jsou uvedeny jako podstránky.<br/>Pravidlo může být viditelný ve všech kontextech: `Project`, `PropertySheet` a `File`.<br/>Toto pravidlo je viditelná ve vlastnostech projektu pouze v případě, že projekt obsahuje položky, které `ItemType` definované v `Rule.DataSource`, pokud je součástí názvu pravidla `ProjectTools` skupiny položek.<br/><br/>Příklad: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
-| `debugger` | Na stránce se zobrazí jako součást stránky ladění.<br/>Kategorie jsou aktuálně ignorovány.<br/>Název pravidla musí odpovídat objektu ladění MEF Spouštěč `ExportDebugger` atribut.<br/><br/>Příklad: `$(VCTargetsPath)`\\*1033*\\*ladicí program\_místní\_windows.xml* |
-| *custom* | Vlastní šablony. Název šablony by měl odpovídat `ExportPropertyPageUIFactoryProvider` atribut `PropertyPageUIFactoryProvider` objekt MEF. Zobrazit **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Příklad: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
+| `debugger` | Na stránce se zobrazí jako součást stránky ladění.<br/>Kategorie jsou aktuálně ignorovány.<br/>Název pravidla musí odpovídat objektu ladění MEF Spouštěč `ExportDebugger` atribut.<br/><br/>Příklad: `$(VCTargetsPath)`\\*1033*\\*debugger\_local\_windows.xml* |
+| *custom* | Vlastní šablony. Název šablony by měl odpovídat `ExportPropertyPageUIFactoryProvider` atribut `PropertyPageUIFactoryProvider` objekt MEF. See **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Příklad: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Pokud toto pravidlo používá některé ze šablon na základě mřížky vlastností, můžete těmto rozšiřujícím bodům vlastností:
 
