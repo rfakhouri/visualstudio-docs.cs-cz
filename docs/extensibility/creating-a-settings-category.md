@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e88fbc023d495bb4fbad795d2013a9fe3a5c883
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935616"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941230"
 ---
 # <a name="create-a-settings-category"></a>Vytvoření kategorie nastavení
 
@@ -118,7 +118,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
 
      **Exportovat kompletní** stránku sestavy, nastavení bylo úspěšně exportováno.
 
-10. Na **souboru** nabídky, přejděte k **otevřít**a potom klikněte na tlačítko souboru. Vyhledejte *MySettings.vssettings* a otevřete ho.
+10. Na **souboru** nabídky, přejděte k **otevřít**a potom klikněte na tlačítko **souboru**. Vyhledejte *MySettings.vssettings* a otevřete ho.
 
      Můžete najít vlastnost kategorii, kterou jste exportovali v následující části souboru (vaše GUID se bude lišit).
 

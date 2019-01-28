@@ -82,7 +82,7 @@ Toto porovnání ukazuje, že MLS a MRO s MKL jsou výrazně vyšší výpočetn
 
 ![Porovnání MLS a MRO s MKL r a MRO bez MKL](media/samples-speed-comparison.png)
 
-Technické porovnání jazyka R s MRO a MLS, projděte si [Lixun Potokar podrobné diskuze](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) v tomto tématu.
+Technické porovnání jazyka R s MRO a MLS, projděte si [Lixun Potokar podrobné diskuze](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) v tomto tématu.
 
 Na následujícím obrázku pak porovná uplynulý čas v sekundách použít při vytváření logistické regresní modely k předpovědi zpoždění letů delší než 15 minut.  Uplynulý čas při CRAN r. zvýší výrazně při zvýšení malý počet řádků, zatímco MLS zvyšuje úroveň pouze přibližně dvakrát. Podrobnosti o tomto srovnávacího testu, podívejte se *srovnávací testy/rxGlm_benchmark. R* příklad.
 
