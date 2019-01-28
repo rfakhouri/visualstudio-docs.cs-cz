@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a21111ae1f872bfc8517a11730c4bf99f18e30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea5b321169253202c397d09b9d6daac439213b55
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037600"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089208"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkce sady Visual Studio 2017
 
@@ -127,4 +127,5 @@ Další informace o rozšíření sady Visual Studio najdete v tématu [rozší�
 ## <a name="see-also"></a>Viz také:
 
 - [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)
-- [Co je nového v sadě Visual Studio 2017](../ide/whats-new-visual-studio.md)
+- [Co je nového v sadě Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Co je nového v sadě Visual Studio. 2019 Preview](../ide/whats-new-visual-studio-2019.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 001827c1b37596228221d6b4285abb2915ec5b8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788714"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089189"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Průvodce: Použití diagnostiky grafiky k ladění výpočetního shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Tento návod ukazuje, jak použít nástrojů Diagnostika grafiky sady Visual St
   
 1. Na **diagnostiky grafiky** nástrojů, zvolte **zásobník volání událostí** otevřít **zásobník volání událostí grafiky** okna.  
   
-2. Počínaje událostí draw, která vykresluje výsledky simulace, přechod zpět každý pomocí jednotlivých předchozí `CSSetShader` událostí. Potom v **zásobník volání událostí grafiky** okně zvolte funkci zcela nahoře přejděte na lokalitu volání. Při volání webu můžete použít první parametr [CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx) k určení, které výpočetní shadery jsou provedeny následující `Dispatch` událostí.  
+2. Počínaje událostí draw, která vykresluje výsledky simulace, přechod zpět každý pomocí jednotlivých předchozí `CSSetShader` událostí. Potom v **zásobník volání událostí grafiky** okně zvolte funkci zcela nahoře přejděte na lokalitu volání. Při volání webu můžete použít první parametr [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) k určení, které výpočetní shadery jsou provedeny následující `Dispatch` událostí.  
   
    V tomto scénáři existují tři páry `CSSetShader` a `Dispatch` události v každém rámci. Při zpětné práci přestavuje, třetí pár představuje krok integrace (kam částice jsou skutečně přesunuty), druhá pár představuje krok vynucení výpočtu (kde se počítají síly ovlivňující jednotlivé částice) a první pár představuje Krok výpočtu hustoty.  
   

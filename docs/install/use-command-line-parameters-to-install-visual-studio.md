@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6d400410517923665a26ae28e916018643e21f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a83b3c1be5beeeb2ea40fb9d27089a4b559f758a
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008540"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089139"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -37,7 +37,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 - [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 - [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
-## <a name="list-of-command-line-parameters"></a>Seznam parametrů příkazového řádku
+## <a name="command-line-parameters"></a>Parametry příkazového řádku
 
  Parametry příkazového řádku aplikace Visual Studio jsou malá a velká písmena.
 
@@ -57,7 +57,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `uninstall` | Odinstaluje zobrazí nainstalovaný produkt. |
 | `export` | **Novinka v 15.9**: Exportuje výběr instalace na konfigurační soubor instalace. **Poznámka:**: Jde použít jenom s vs_installer.exe. |
 
-### <a name="install-options"></a>Možnosti instalace
+## <a name="install-options"></a>Možnosti instalace
 
 | **Možnost instalace** | **Popis** |
 | ----------------------- | --------------- |
@@ -82,7 +82,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 > [!IMPORTANT]
 > Při zadávání více úloh a součástí, je nutné opakovat `--add` nebo `--remove` přepínač příkazového řádku pro každou položku.
 
-### <a name="layout-options"></a>Možnosti rozložení
+## <a name="layout-options"></a>Možnosti rozložení
 
 | **Možnosti rozložení** | **Popis** |
 | ----------------------- | --------------- |

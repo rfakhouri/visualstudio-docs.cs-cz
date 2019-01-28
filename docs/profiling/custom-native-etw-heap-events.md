@@ -10,18 +10,18 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 673f31451d778e288da49f078da0ca4263189586
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021202"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089263"
 ---
 # <a name="custom-native-etw-heap-events"></a>Vlastní nativní události haldy Trasování událostí pro Windows
 
 Visual Studio obsahuje řadu [profilování a diagnostické nástroje](../profiling/profiling-feature-tour.md), včetně nativní paměť profileru.  Tento profiler zavěšení [události trasování událostí pro Windows](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od poskytovatele haldy a poskytuje analýzu toho, jak je že paměti přidělovány a využívány.  Ve výchozím nastavení tento nástroj může analyzovat jenom přidělení provedených od standardní haldy Windows a rozdělení mimo tuto nativní haldě nezobrazí.
 
-Existuje mnoho případy, ve kterých můžete chtít použít vlastní vlastní haldy a vyhnout se nároky na přidělení ze standardní haldy.  Například můžete použít [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) alokace velké množství paměti při spuštění této aplikace nebo hry, a potom spravovat vlastní bloky v tomto seznamu.  V tomto scénáři zobrazoval pouze nástroj profiler paměti tohoto počáteční přidělení a ne vlastní správu provést uvnitř bloku paměti.  Nicméně pomocí zprostředkovatele vlastní nativní haldy trasování událostí pro Windows, můžete nechat nástroj vědět o rozdělení, které provádíte mimo standardní haldy.
+Existuje mnoho případy, ve kterých můžete chtít použít vlastní vlastní haldy a vyhnout se nároky na přidělení ze standardní haldy.  Například můžete použít [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) alokace velké množství paměti při spuštění této aplikace nebo hry, a potom spravovat vlastní bloky v tomto seznamu.  V tomto scénáři zobrazoval pouze nástroj profiler paměti tohoto počáteční přidělení a ne vlastní správu provést uvnitř bloku paměti.  Nicméně pomocí zprostředkovatele vlastní nativní haldy trasování událostí pro Windows, můžete nechat nástroj vědět o rozdělení, které provádíte mimo standardní haldy.
 
 Například v projektu takto kde `MemoryPool` je vlastní haldy jednu alokovanou byste měli jenom v haldě Windows:
 
