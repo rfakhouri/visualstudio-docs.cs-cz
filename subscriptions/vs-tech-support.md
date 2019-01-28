@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody technické podpory součástí va�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380252"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089221"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivovat výhody technické podpory v předplatných sady Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "54380252"
 > ![Dlaždice výhody technické podpory](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Pokud chcete začít používat vaše výhody technické podpory, klikněte na **chatu k aktivaci** na dlaždici technickou podporu. 
+1. Pokud chcete začít používat vaše výhody technické podpory, přejděte na https://my.visualstudio.com/Benefits, přejděte dolů k části Podpora a na dlaždici technické podpory, klikněte na tlačítko **chatu k aktivaci**. 
 2. Tím zahájíte Chat, pokud se zástupcem, kdo může vytvořit ID smlouvy a přístupové ID a ty se vám poskytují. 
 3. K dokončení procesu budete muset poskytnout zástupce pomocí:
    - E-mailovou adresu, kterou používáte k přihlášení k vašemu předplatnému

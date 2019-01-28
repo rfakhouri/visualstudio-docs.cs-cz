@@ -3,18 +3,18 @@ title: Výhody pro Pluralsight v předplatných sady Visual Studio | Dokumentace
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 12/19/2018
+ms.date: 01/25/2019
 ms.topic: Get-Started-Article
 description: Další informace o předplatné školení Pluralsight, který je součástí vybraných předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8e077db1aa369198f015f68e0e61efbc30697659
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 197e162df314e039bbf748a7afc208c0639531d1
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380313"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089237"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -71,17 +71,17 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 
 |                          Úroveň předplatného                          |     Kanály      |    Výhody    |   Obnovitelné?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (Standard)           | VL, Azure, maloobchodního prodeje |   6 měsíců    | Ne<sup>2</sup> |
-|         Visual Studio Professional (Standard)          | VL, Azure, maloobchodního prodeje |   3 měsíce    | Ne<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL maloobchodního prodeje     |   3 měsíce    | Ne<sup>2</sup> |
-|                      Předplatné MSDN Platforms (Standard)                       |    VL maloobchodního prodeje     |   3 měsíce    | Ne<sup>2</sup> |
+|          Visual Studio Enterprise (Standard)           | VL, Azure, maloobchodního prodeje |   6 měsíců    | Ano<sup>2</sup> |
+|         Visual Studio Professional (Standard)          | VL, Azure, maloobchodního prodeje |   3 měsíce    | Ano<sup>2</sup> |
+|              Visual Studio Test Professional (Standard)              |    VL maloobchodního prodeje     |   3 měsíce    | Ne |
+|                      Předplatné MSDN Platforms (Standard)                       |    VL maloobchodního prodeje     |   3 měsíce    | Ne |
 |                     Visual Studio Dev Essentials                     |        Není k dispozici         |   1 měsíc    |       Ne       |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) |       Azure       | Není k dispozici |       Není k dispozici       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Není k dispozici |       Není k dispozici       |
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & služby pro vývojáře, MCT Software a služby, nejcennější Professional (MVP) Regional Director (RD), Microsoft Partner Network (MPN), FTE Imagine.*
 
-<sup>2</sup>*výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit.*
+<sup>2</sup>*při prodloužení předplatného: Tato možnost obnoví výhody pro the Pluralsight ve vybraných předplatných sady Visual Studio.   Například pokud máte ročního předplatného se obnovit každý rok výhoda je k dispozici, každý rok po obnovení. Pokud máte více roční předplatné, jednou během období předplatného je k dispozici, výhody pro Pluralsight.  Pokud obnovíte více roční předplatné, výhody budou k dispozici znovu po obnovení.*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
@@ -106,9 +106,6 @@ O: Ano, jako předplatitel sady Visual Studio získáte přístup k expertní ka
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>DOTAZ: Co se stane, když Moje předplatné Pluralsight vyprší?
 O:  Na konci platnosti vašeho bezplatného předplatného Pluralsight můžete koupit předplatné přímo od společnosti Pluralsight.  Obraťte se prosím na [Pluralsight](http://www.pluralsight.com) úplné podrobnosti.
-
-### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>DOTAZ: Moje společnost obnoví svoje předplatné sady Visual Studio prostřednictvím smlouvy Enterprise. Resetovat výhody pro Pluralsight?
-O:  Ne.  Výhody pro Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit.  To platí pro všechny nákupním kanálům, včetně maloobchodní prodej, cloud a nákupy – svazek licencí (Multilicence).
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  [Centrum pro nápovědu Pluralsight](https://help.pluralsight.com/help) poskytuje pomoc s kurzy Pluralsight trvá nebo na webu Pluralsight.
