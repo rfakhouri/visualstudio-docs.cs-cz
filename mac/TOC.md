@@ -52,6 +52,11 @@
 ## [Nastavení úložiště Subversion](set-up-subversion-repository.md)
 ## [Práce s úložištěm Subversion](working-with-subversion.md)
 
+# [Nasazení webové aplikace](web-app-deployment.md)
+## [Publikování do Azure App Service](publish-app-svc.md)
+## [Publikování do složky](publish-folder.md)
+
+
 # [Úlohy](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
