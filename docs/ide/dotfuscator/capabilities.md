@@ -29,34 +29,34 @@ ms.locfileid: "54935627"
 Tato stránka se zaměřuje na funkce řešení Dotfuscator Community Edition (řešení Dotfuscator CE) s některé odkazy na rozšířené možnosti, které jsou k dispozici prostřednictvím [upgrady][upgrades].
 
 Je řešení Dotfuscator *po sestavení* systému pro aplikace .NET.
-Pomocí nástroje Dotfuscator CE, budou moct uživatelé sady Visual Studio [obfuskaci sestavení] [ obfuscation] a vložit [aktivní defense opatření] [ checks] do aplikace – vše bez nutnosti přístupu k původní zdrojový kód nástroje Dotfuscator.
+Pomocí nástroje Dotfuscator CE, budou moct uživatelé sady Visual Studio [obfuskaci sestavení][obfuscation] a vložit [aktivní defense opatření][checks] do aplikace – vše bez nutnosti přístupu k původní zdrojový kód nástroje Dotfuscator.
 Nástroj Dotfuscator chrání vaši aplikaci několika různými způsoby vytváření strategie vrstvami ochrany.
 
-Podporuje řešení Dotfuscator CE a široký rozsah .NET sestavení a aplikace typy, včetně [univerzální platformu Windows (UPW)] [ uwp] a [Xamarin] [ xamarin].
+Podporuje řešení Dotfuscator CE a široký rozsah .NET sestavení a aplikace typy, včetně [univerzální platformu Windows (UPW)][uwp] a [Xamarin][xamarin].
 
 ## <a name="intellectual-property-protection"></a>Ochranu duševního vlastnictví
 
 Návrh, chování a implementaci vaší aplikace jsou formy duševní vlastnictví (IP).
 Aplikace vytvořené pro rozhraní .NET Framework jsou však v podstatě otevře knih; je velmi snadné sestavení .NET zpětné analýzy, [obsahují základní metadata a mezikódu][assemblies].
 
-Zahrnuje základní řešení Dotfuscator CE [.NET obfuskace] [ obfuscation] ve formě [přejmenování][renaming].
+Zahrnuje základní řešení Dotfuscator CE [.NET obfuskace][obfuscation] ve formě [přejmenování][renaming].
 Ke zdrojovému kódu prostřednictvím zpětné analýzy, že maskuje svůj kód pomocí nástroje Dotfuscator snižuje riziko neoprávněného přístupu, jako důležité informace o názvech už být veřejné.
 Obfuskace také zobrazuje úsilí na druhé straně k ochraně vašeho kódu z zkoumání - cenné krok při vytváření, že je vaše IP adresa ze zákona chráněný jako tajemství.
 
 Mnoho [funkcí ochrany aplikací integrity](#application-integrity-protection) z řešení Dotfuscator CE další brání zpětná analýza.
 Chybný actor například může pokusit připojit ladicí program ke spuštěné instanci vaší aplikace, chcete-li pochopit programovou logiku.
-Nástroje Dotfuscator můžete vložit [proti ladění chování] [ debug] do vaší aplikace to bránit.
+Nástroje Dotfuscator můžete vložit [proti ladění chování][debug] do vaší aplikace to bránit.
 
 ## <a name="application-integrity-protection"></a>Ochrana Integrity aplikace
 
 Kromě ochrany zdrojového kódu, je také důležité zajistit, že vaše aplikace se používá tak, jak navrženo.
 Útočníci se mohou pokusit o zneužití vaší aplikace, aby bylo možné obejít licenční zásady (tj, softwarové pirátství), krádeži nebo citlivá data, jakým aplikace zpracovává manipulaci s, nebo chcete změnit chování aplikace.
 
-Můžete vložit řešení Dotfuscator CE [kód pro ověření aplikace] [ checks] do vašeho sestavení, včetně [boj proti][tamper], [ ladění proti][debug], a [proti rootem] [ root] míry.
+Můžete vložit řešení Dotfuscator CE [kód pro ověření aplikace][checks] do vašeho sestavení, včetně [boj proti][tamper], [ ladění proti][debug], a [proti rootem][root] míry.
 Když je zjištěn stav Neplatná aplikace, můžete kód pro ověření [zvát kód aplikace na adresu situaci vhodným způsobem][check-app].
-Nebo, pokud nechcete napsat kód, který používá neplatný popisovač aplikace, nástroje Dotfuscator můžete také vložit [odpovědi] [ check-action] chování, aniž by bylo nutné žádné úpravy zdrojového kódu.
+Nebo, pokud nechcete napsat kód, který používá neplatný popisovač aplikace, nástroje Dotfuscator můžete také vložit [odpovědi][check-action] chování, aniž by bylo nutné žádné úpravy zdrojového kódu.
 
-Mnohé z těchto stejné metody mohou také používá k vynucení [ukončenou životností termíny] [ shelflife] pro vyhodnocení nebo zkušební verze softwaru.
+Mnohé z těchto stejné metody mohou také používá k vynucení [ukončenou životností termíny][shelflife] pro vyhodnocení nebo zkušební verze softwaru.
 
 ## <a name="see-also"></a>Viz také
 
