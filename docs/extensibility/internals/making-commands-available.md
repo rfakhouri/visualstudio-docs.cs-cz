@@ -13,24 +13,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e01a0030d4c8948652cdfc8706bb620190fd45b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a14998b8dca3c14bdae4f00f1940c19b696646ff
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923013"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231854"
 ---
 # <a name="making-commands-available"></a>Zpřístupnění příkazů
+
 Při více rozšíření VSPackages přidávají do sady Visual Studio, může být pomocí příkazů přeplněné uživatelského rozhraní (UI). Můžete naprogramovat váš balíček ke zmírnění tohoto problému, následujícím způsobem:
 
--   Program balíčku tak, aby se načetl pouze v případě, že uživatel vyžaduje.
+- Program balíčku tak, aby se načetl pouze v případě, že uživatel vyžaduje.
 
--   Balíček naprogramovat tak, aby jeho příkazy se zobrazí jenom v případě, že může být nutné v kontextu aktuálního stavu integrovaného vývojového prostředí (IDE).
+- Balíček naprogramovat tak, aby jeho příkazy se zobrazí jenom v případě, že může být nutné v kontextu aktuálního stavu integrovaného vývojového prostředí (IDE).
 
 ## <a name="delayed-loading"></a>S odloženým načtením
- Typické způsob, jak povolit s odloženým načtením je návrh sady VSPackage, aby jeho příkazy jsou zobrazeny v uživatelském rozhraní, ale není načten samotném balíčku, dokud uživatel neklikne jeden z příkazů. Provedete to, že v souboru .vsct vytvořte příkazy, které mají bez příznaků příkazů.
 
- Následující příklad ukazuje definici příkazu nabídky ze souboru .vsct. Toto je příkaz, který je generován šabloně balíčku Visual Studio při **příkazu nabídky** je vybraná možnost v šabloně.
+Typické způsob, jak povolit s odloženým načtením je návrh sady VSPackage, aby jeho příkazy jsou zobrazeny v uživatelském rozhraní, ale není načten samotném balíčku, dokud uživatel neklikne jeden z příkazů. Provedete to, že v souboru .vsct vytvořte příkazy, které mají bez příznaků příkazů.
+
+Následující příklad ukazuje definici příkazu nabídky ze souboru .vsct. Toto je příkaz, který je generován šabloně balíčku Visual Studio při **příkazu nabídky** je vybraná možnost v šabloně.
 
 ```xml
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
@@ -48,10 +50,10 @@ V příkladu Pokud nadřazené skupiny, `MyMenuGroup`, je podřízeným prvkem n
 Všimněte si, že opožděné načtení může také zvýšit výkon spuštění.
 
 ## <a name="current-context-and-the-visibility-of-commands"></a>Aktuální kontext a viditelnost příkazů
- Můžete naprogramovat VSPackage příkazy jako viditelný nebo skrytý, v závislosti na aktuální stav dat balíčku VSPackage nebo akce, které jsou aktuálně relevantní. Můžete povolit balíčku VSPackage pro nastavení stavu příkazů, obvykle prostřednictvím implementace <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodu z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní, ale to vyžaduje sady VSPackage, který se má načíst předtím, než se může spustit kód. Namísto toho doporučujeme, abyste povolili integrovaného vývojového prostředí pro správu, zda se příkazy bez načtení balíčku. Provedete to, že v souboru .vsct přidružit jeden nebo více speciálních kontexty uživatelského rozhraní příkazů. Kontexty uživatelského rozhraní jsou označeny identifikátorem GUID říká *kontext příkazů GUID*.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sleduje změny, které jsou výsledkem akce uživatelů, například načítání projektu nebo pokud v úpravách sestavování. Změny se projeví, je automaticky upravit vzhled integrovaného vývojového prostředí. Následující tabulka obsahuje čtyři hlavní kontexty IDE změnit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitorování.
+Můžete naprogramovat VSPackage příkazy jako viditelný nebo skrytý, v závislosti na aktuální stav dat balíčku VSPackage nebo akce, které jsou aktuálně relevantní. Můžete povolit balíčku VSPackage pro nastavení stavu příkazů, obvykle prostřednictvím implementace <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodu z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní, ale to vyžaduje sady VSPackage, který se má načíst předtím, než se může spustit kód. Namísto toho doporučujeme, abyste povolili integrovaného vývojového prostředí pro správu, zda se příkazy bez načtení balíčku. Provedete to, že v souboru .vsct přidružit jeden nebo více speciálních kontexty uživatelského rozhraní příkazů. Kontexty uživatelského rozhraní jsou označeny identifikátorem GUID říká *kontext příkazů GUID*.
 
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sleduje změny, které jsou výsledkem akce uživatelů, například načítání projektu nebo pokud v úpravách sestavování. Změny se projeví, je automaticky upravit vzhled integrovaného vývojového prostředí. Následující tabulka obsahuje čtyři hlavní kontexty IDE změnit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitorování.
 
 | Typ kontextu | Popis |
 |-------------------------| - |
@@ -60,57 +62,60 @@ Všimněte si, že opožděné načtení může také zvýšit výkon spuštěn�
 | Služba Active jazyka | Služba jazyka, který je spojen se souborem, který se nyní zobrazí v textovém editoru. |
 | Aktivní okno nástrojů | Okno nástroje, který je otevřený a má fokus. |
 
- Na páté hlavní kontextu oblast je stav uživatelského rozhraní IDE. Kontexty uživatelského rozhraní jsou označeny kontextu aktivní příkaz `GUID`s následujícím způsobem:
+Na páté hlavní kontextu oblast je stav uživatelského rozhraní IDE. Kontexty uživatelského rozhraní jsou označeny kontextu aktivní příkaz `GUID`s následujícím způsobem:
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
 
 Tyto GUID identifikátory jsou označeny jako aktivní nebo neaktivní, v závislosti na aktuální stav rozhraní IDE. Kontexty více uživatelského rozhraní může být aktivní ve stejnou dobu.
 
-### <a name="hiding-and-displaying-commands-based-on-context"></a>Skrytí a zobrazení příkazy na základě kontextu
- Můžete zobrazit nebo skrýt příkaz balíčku v integrovaném vývojovém prostředí bez načtení samotném balíčku. K tomuto účelu definovat příkaz v souboru .vsct balíčku pomocí `DefaultDisabled`, `DefaultInvisible`, a `DynamicVisibility` příkaz příznaky a přidat jeden nebo více [visibilityitem –](../../extensibility/visibilityitem-element.md) prvků, které mají [ Visibilityconstraints –](../../extensibility/visibilityconstraints-element.md) oddílu. Pokud zadaný příkaz kontextu `GUID` stane aktivní, se zobrazí příkaz bez načtení balíčku.
+### <a name="hide-and-display-commands-based-on-context"></a>Skrýt a zobrazit příkazy na základě kontextu
+
+Můžete zobrazit nebo skrýt příkaz balíčku v integrovaném vývojovém prostředí bez načtení samotném balíčku. K tomuto účelu definovat příkaz v souboru .vsct balíčku pomocí `DefaultDisabled`, `DefaultInvisible`, a `DynamicVisibility` příkaz příznaky a přidat jeden nebo více [visibilityitem –](../../extensibility/visibilityitem-element.md) prvků, které mají [ Visibilityconstraints –](../../extensibility/visibilityconstraints-element.md) oddílu. Pokud zadaný příkaz kontextu `GUID` stane aktivní, se zobrazí příkaz bez načtení balíčku.
 
 ### <a name="custom-context-guids"></a>Vlastní místní GUID
- Pokud příslušný příkaz kontextu, již není definovaný identifikátor GUID, můžete definovat v vašeho balíčku VSPackage a pak naprogramovat tak být aktivní nebo neaktivní podle potřeby řídit viditelnost příkazů. Použití <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> služby na:
 
--   Zaregistrovat GUID kontextu (voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metoda).
+Pokud příslušný příkaz kontextu, již není definovaný identifikátor GUID, můžete definovat v vašeho balíčku VSPackage a pak naprogramovat tak být aktivní nebo neaktivní podle potřeby řídit viditelnost příkazů. Použití <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> služby na:
 
--   Získat informace o stavu kontextu `GUID` (voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metoda).
+- Zaregistrovat GUID kontextu (voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metoda).
 
--   Zapnout kontextu `GUID`s zapnout a vypnout (pomocí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metoda).
+- Získat informace o stavu kontextu `GUID` (voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metoda).
+
+- Zapnout kontextu `GUID`s zapnout a vypnout (pomocí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metoda).
 
     > [!CAUTION]
     > Ujistěte se, že vaše VSPackage nemá vliv na stav jakýkoli existující kontext GUID vzhledem k tomu, že ostatní rozšíření VSPackages může záviset na ně.
 
 ## <a name="example"></a>Příklad
- Následující příklad příkazu VSPackage ukazuje dynamické viditelnost příkaz, který je spravován kontexty příkaz bez načtení sady VSPackage.
 
- Příkaz je nastavena na povolena a zobrazí pokaždé, když existuje řešení To znamená vždy, když je jeden z kontextu následující příkaz identifikátory GUID aktivní:
+Následující příklad příkazu VSPackage ukazuje dynamické viditelnost příkaz, který je spravován kontexty příkaz bez načtení sady VSPackage.
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+Příkaz je nastavena na povolena a zobrazí pokaždé, když existuje řešení To znamená vždy, když je jeden z kontextu následující příkaz identifikátory GUID aktivní:
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
 V příkladu, Všimněte si, že každý příkaz příznak je samostatný [příkazu příznak](../../extensibility/command-flag-element.md) elementu.
 
@@ -144,6 +149,7 @@ Také Všimněte si, že každý kontextu uživatelského rozhraní se musí př
 
 ## <a name="see-also"></a>Viz také:
 
+- [Přidání příkazu do panelu nástrojů Průzkumníka řešení](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [MenuCommands Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)
 - [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Směrování příkazů v balíčcích VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)

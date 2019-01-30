@@ -2,7 +2,7 @@
 title: Ladění pro Python v sadě Visual Studio kurz – krok 4
 titleSuffix: ''
 description: Krok 4 Průvodce základní funkce Pythonu v sadě Visual Studio ke spuštění kódu Pythonu v ladicím programu.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de38f06615be4ddba5c8cdc16ac69f2c5ff2204b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e48619c34774425986888a9210c2c533e4b5d0db
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979374"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231893"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 

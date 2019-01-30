@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f14fa381a007579d39feafe878d1283635060997
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011516"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231568"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Vzdálené ladění projektu ve Visual C++ v sadě Visual Studio
 Ladění aplikace Visual Studio na jiném počítači, nainstalovat a spustit nástroje remote tools v počítači, kde bude nasazovat aplikace, nakonfigurujte projekt tak, aby připojení ke vzdálenému počítači ze sady Visual Studio a pak nasaďte a spusťte aplikaci.
@@ -96,9 +96,11 @@ Vzdálený ladicí program podporuje se ve Windows 7 a novější (ne telefon) a
 11. V počítači, Visual Studio měli byste vidět zastavením spuštění na zarážce.  
   
     > [!TIP]
-    >  Alternativně můžete nasadit soubory jako samostatný krok. V **Průzkumníku řešení klikněte** klikněte pravým tlačítkem myši **mymfc** uzel a klikněte na tlačítko **nasadit**.  
+    > Alternativně můžete nasadit soubory jako samostatný krok. V **Průzkumníku řešení klikněte** klikněte pravým tlačítkem myši **mymfc** uzel a klikněte na tlačítko **nasadit**.
   
-    Pokud máte souborům bez kódu, které je potřeba v aplikaci použít, budete muset zahrnout je do projektu sady Visual Studio. Vytvořte složku projektu pro další soubory (v **Průzkumníka řešení**, klikněte na tlačítko **Přidat > Nová složka**.) Pak přidejte soubory do složky (v **Průzkumníka řešení**, klikněte na tlačítko **Přidat > existující položku**, vyberte soubory). Na **vlastnosti** stránky pro každý soubor, nastavte **kopírovat do výstupního adresáře** k **vždy Kopírovat**.
+    Pokud máte souborům bez kódu, které jsou vyžadované aplikací, můžete je zadat **další soubory k nasazení** na **vzdálený ladicí program Windows** stránky.
+
+    Alternativně můžete zahrnout soubory ve vašem projektu a nastavit **obsahu** vlastnost **Ano** v **vlastnosti** stránky pro každý soubor. Tyto soubory se zkopírují do **adresáře nasazení** zadané **vzdálený ladicí program Windows** stránky. Můžete také změnit **typ položky** k **kopírovat soubor** a zadat další vlastnosti existuje, pokud potřebujete soubory zkopírovány do podsložky **adresáře nasazení**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Nastavení se vzdálený symboly ladění 
 

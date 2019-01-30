@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac4929c4f46ec324d7e27c3ea45ac56406505edc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9ae3bcb27e86a4646aa345d4cfd010f8d34dd56
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043736"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231802"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1: Vytvořte projekt a přidejte do svého formuláře tabulku
 
@@ -69,7 +69,7 @@ Prvním krokem při vytváření porovnávací hry je vytvořit projekt a přida
 
    5.  Zvolte **písmo** vlastnost. Tři tečky (**...** ) by tlačítko mělo vypadat.
 
-   6.  Vyberte tlačítko se třemi tečkami a nastavte hodnotu **písmo** hodnota, která se **Webdings**, **styl písma** k **tučné**a **velikost** k **72**.
+   6.  Vyberte tlačítko se třemi tečkami a nastavte hodnotu **písmo** hodnota, která se **Webdings**, **styl písma** k **tučné**a **velikost** k **48**.
 
    7.  Nastavte **Text** vlastnosti tohoto popisku na písmeno **c**.
 

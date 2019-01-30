@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 07ffcf9f1af4e6b23f0d2469d757eeb9ab95f2b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927851"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232062"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -140,7 +140,7 @@ Další informace:
 
 Úlohy Python obsahuje sadu Azure SDK pro Python, která zjednodušuje využívání služeb Azure z aplikace pro Windows, Mac OS X a Linux.
 
-Další informace najdete v tématu [sady Azure SDK pro Python](azure-sdk-for-python.md)
+Další informace najdete v tématu [sady Azure SDK for Python](/python/azure/?view=azure-python).
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Python školení na Microsoft Virtual Academy
 

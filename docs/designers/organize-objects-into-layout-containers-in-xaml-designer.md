@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d9b6dd78f30ccc362a26145d66f4983389f8445
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983466"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231815"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Uspořádání objektů do kontejnerů rozložení v Návrháři XAML
 
@@ -30,19 +30,7 @@ Panely rozložení můžete uspořádat objekty na stránce, ale více než oni.
 
 Vaše stránka Začněte výběrem jedné z těchto panelů rozložení. Stránka může mít více než jeden. Například můžete začít s **mřížky** rozložení panelu a pak přidejte **StackPanel** na oblast v **mřížky** tak, aby si můžete uspořádat ovládací prvky v tomto elementu svisle.
 
-Následující panely rozložení jsou nejvíce popularly používá, ale existují i další. Najdete je všechny in **prostředky** panelu.
-
-- [Mřížka](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Plátno](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Následující panely rozložení jsou nejvíce popularly používá, ale existují i další. Najdete je vše v **nástrojů** v sadě Visual Studio nebo **prostředky** panelu v Blendu pro Visual Studio.
 
 ### <a name="grid"></a>Mřížka
 
@@ -92,15 +80,7 @@ Uspořádat objekty tak, aby zůstanou, nebo *ukotvit*, k jednomu z okrajů pane
 
 Do rozložení ovládacích prvků také můžete přidat objekty. Nejsou jako plně funkční jako panel rozložení, ale mohou být užitečné je pro určité scénáře.
 
-Následující ovládací prvky rozložení jsou nejoblíbenější, ale existují i další. Najdete je všechny in **prostředky** panelu.
-
-- [Ohraničení](#Border)
-
-- [Popup](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+Následující ovládací prvky rozložení jsou nejoblíbenější, ale existují i další. Najdete je vše v **nástrojů** v sadě Visual Studio nebo **prostředky** panelu v Blendu pro Visual Studio.
 
 ### <a name="border"></a>Ohraničení
 

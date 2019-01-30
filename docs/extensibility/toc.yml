@@ -380,7 +380,45 @@ items:
 - name: Rozšiřitelnost projektu C++ v sadě Visual Studio
   href: visual-cpp-project-extensibility.md
 - name: Pravidla pro práci s uživatelským prostředím sady Visual Studio
-  href: ux-guidelines/toc.yml
+  href: ux-guidelines/visual-studio-user-experience-guidelines.md
+  items:
+  - name: Základy uživatelského prostředí
+    href: ux-guidelines/ux-essentials-for-visual-studio.md
+  - name: Písma a formátování
+    href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
+  - name: Barvy a styly
+    href: ux-guidelines/colors-and-styling-for-visual-studio.md
+    items:
+    - name: Sdílené barvy
+      href: ux-guidelines/shared-colors-for-visual-studio.md
+    - name: Referenční informace k hodnotám barev
+      href: ux-guidelines/color-value-reference-for-visual-studio.md
+  - name: Obrázky a ikony
+    href: ux-guidelines/images-and-icons-for-visual-studio.md
+    items:
+    - name: Slovník vizuálního jazyka
+      href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
+  - name: Nabídky a příkazy
+    href: ux-guidelines/menus-and-commands-for-visual-studio.md
+  - name: Vzory interakcí
+    href: ux-guidelines/interaction-patterns-for-visual-studio.md
+    items:
+    - name: Vzory aplikací
+      href: ux-guidelines/application-patterns-for-visual-studio.md
+    - name: Vzory běžných ovládacích prvků
+      href: ux-guidelines/common-control-patterns-for-visual-studio.md
+    - name: Složené vzory
+      href: ux-guidelines/composite-patterns-for-visual-studio.md
+  - name: Text a nápověda uživatelského rozhraní
+    href: ux-guidelines/ui-text-and-help-for-visual-studio.md
+  - name: Rozložení dialogového okna
+    href: ux-guidelines/layout-for-visual-studio.md
+  - name: Oznámení a průběh
+    href: ux-guidelines/notifications-and-progress-for-visual-studio.md
+  - name: Animace
+    href: ux-guidelines/animations-for-visual-studio.md
+  - name: Nástroje pro vyhodnocení
+    href: ux-guidelines/evaluation-tools-for-visual-studio.md
 - name: Řešení problémů s nastavením DPI
   href: addressing-dpi-issues2.md
 - name: Služba vyhledávání a katalog obrázků
@@ -743,9 +781,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Referenční informace k verzi balíčku Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 14efc710953d669b51b275226885eb9d0f5bbe50
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562357"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231997"
