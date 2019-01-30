@@ -1,6 +1,6 @@
 ---
 title: Rozšíření projektu Visual C++
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013701"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232049"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -274,6 +274,8 @@ Microsoft.Cpp.Common.Tasks.dll implementuje tyto úlohy:
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 Pokud máte nástroj, který provede stejnou akci, jako je stávající nástroj, který má podobné přepínače příkazového řádku (stejně jako clang-cl a CL), stejné úlohy můžete použít u obou z nich.
 
 Pokud je potřeba vytvořit nový úkol pro nástroj pro sestavení, můžete použít jednu z následujících možností:
@@ -294,11 +296,14 @@ Pokud je potřeba vytvořit nový úkol pro nástroj pro sestavení, můžete po
 
 Přírůstkové sestavení nástroje MSBuild výchozí, zaměřuje použití `Inputs` a `Outputs` atributy. Je-li zadán, MSBuild volá cíl pouze v případě, že některý ze vstupních má novější časové razítko než všechny výstupy. Protože zdrojové soubory často zahrnout další soubory nebo ho importovat jiné výstupy v závislosti na možnostech nástroje sestavení nástroje produktu, je obtížné určit všechny možné vstupy a výstupy cíle nástroje MSBuild.
 
-Ke správě tohoto problému, sestavení C++ používá jiné techniky pro podporu přírůstkové sestavení. Většina cílů nemáte zadejte vstupů a výstupů a v důsledku toho se vždycky spouštět během sestavení. Úlohy volány cíle zapisovat informace o všech vstupů a výstupů do *tlog* soubory, které mají příponu .tlog. Soubory .tlog používají novější sestavení ke kontrole co změnil a je třeba znovu sestavit a jaký je aktuální.
+Ke správě tohoto problému, sestavení C++ používá jiné techniky pro podporu přírůstkové sestavení. Většina cílů nemáte zadejte vstupů a výstupů a v důsledku toho se vždycky spouštět během sestavení. Úlohy volány cíle zapisovat informace o všech vstupů a výstupů do *tlog* soubory, které mají příponu .tlog. Soubory .tlog používají novější sestavení ke kontrole co změnil a je třeba znovu sestavit a jaký je aktuální. Soubory .tlog jsou také jediný zdroj pro aktuální Kontrola výchozí sestavení v integrovaném vývojovém prostředí.
 
 Pokud chcete zjistit všechny vstupy a výstupy, nativní nástroj úlohy používají tracker.exe a [FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) třída poskytuje nástroj MSBuild.
 
 Definuje Microsoft.Build.CPPTasks.Common.dll `TrackedVCToolTask` veřejné abstraktní základní třída. Většinu úloh, nástroj native jsou odvozeny z této třídy.
+
+Od verze Visual Studio 2017 update 15.8, můžete použít `GetOutOfDateItems` implementované v Microsoft.Cpp.Common.Tasks.dll vytvoří soubory .tlog pro vlastní cíle se známými vstupy a výstupy úloh.
+Alternativně je můžete vytvořit pomocí `WriteLinesToFile` úloh. Zobrazit `_WriteMasmTlogs` target v `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* jako příklad.
 
 ## <a name="tlog-files"></a>soubory .tlog
 
@@ -314,7 +319,6 @@ Nástroj MSBuild poskytuje tyto pomocné třídy ke čtení a zápisu .tlog soub
 
 Příkazový řádek .tlog soubory obsahují informace o příkazové řádky v sestavení použity. Pouze používají se pro přírůstková sestavení, není aktuální kontrol, tak interní formát závisí na úkolu MSBuild, který vytvoří je.
 
-Pokud .tlog soubory jsou vytvořeny úlohou, je nejvhodnější použít tyto pomocné třídy pro jejich vytvoření. Vzhledem k tomu, že Kontrola aktuálnosti výchozí nyní spoléhá výhradně na soubory .tlog, někdy je však pohodlnější k vytvoření v cíli bez úlohy. Můžete je zapsat pomocí `WriteLinesToFile` úloh. Zobrazit `_WriteMasmTlogs` target v `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* jako příklad.
 
 ### <a name="read-tlog-format"></a>Formát .tlog pro čtení
 
