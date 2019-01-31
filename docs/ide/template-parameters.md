@@ -11,18 +11,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c46c0094985e8b84e546ef64fbdd268689c5296
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd80a7d29ae62cac691775e85cc432ac65a6eded
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935017"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424444"
 ---
 # <a name="template-parameters"></a>Parametry šablony
 
 Při vytváření instance šablony, můžete v šabloně nahraďte hodnoty. Chcete-li nastavit tuto funkci, použijte *parametry šablony*. Parametry šablony lze použít k nahrazení hodnoty, jako jsou názvy tříd a obory názvů v šabloně. Průvodce šablonou, která běží na pozadí, když uživatel přidá nová položka nebo projektu nahradí tyto parametry.
 
-## <a name="declaring-and-enabling-template-parameters"></a>Deklarace a povolení parametry šablony
+## <a name="declare-and-enable-template-parameters"></a>Deklarace a povolit parametry šablony
 
 Parametry šablon jsou deklarovány ve formátu $*parametr*$. Příklad:
 
@@ -32,7 +32,7 @@ Parametry šablon jsou deklarovány ve formátu $*parametr*$. Příklad:
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>Povolit nahrazení parametrů v šablonách
+### <a name="enable-parameter-substitution-in-templates"></a>Povolit nahrazení parametrů v šablonách
 
 1. V *.vstemplate* soubor šablony, vyhledejte `ProjectItem` element, který odpovídá položce, pro kterou chcete povolit náhradu parametrů.
 
@@ -46,11 +46,12 @@ Parametry šablon jsou deklarovány ve formátu $*parametr*$. Příklad:
 
 ## <a name="reserved-template-parameters"></a>Vyhrazené parametry šablon
 
-Následující tabulka uvádí vyhrazené parametry šablon, které mohou využívat všechny šablony.
+Následující tabulka uvádí vyhrazené parametry šablon, které mohou využívat všechny šablony:
 
 |Parametr|Popis|
 |---------------|-----------------|
 |clrversion|Aktuální verze modulu common language runtime (CLR).|
+|ext_*|Přidat `ext_` předpona, která žádné parametry k odkazování proměnné nadřazené šablony. Například, `ext_safeprojectname`.|
 |identifikátor GUID [1-10]|GUID, který se používá k nahrazení identifikátoru GUID projektu v souboru projektu. Můžete zadat až 10 jedinečných identifikátorů GUID (například `guid1`).|
 |Název položky|Název zadaný uživatelem v **přidat novou položku** dialogové okno.|
 |MachineName|Aktuální název počítače (například Computer01).|
@@ -118,6 +119,7 @@ V *.vstemplate* soubor šablony projektu, zahrnují `ReplaceParameters="true"` a
 
 ## <a name="see-also"></a>Viz také:
 
+- [Postupy: Nahrazení parametrů v šabloně](how-to-substitute-parameters-in-a-template.md)
 - [Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)
 - [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)
 - [Odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)

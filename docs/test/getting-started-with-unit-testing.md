@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999753"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424379"
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testováním částí
 
-Pomocí sady Visual Studio můžete definovat a spouštět testy jednotek Údržba kódu stavu, ujistěte se, pokrytí kódu a najít chyby a závad, než se vaši zákazníci.
+Visual Studio používejte k definování a spouštění testů jednotek Údržba kódu stavu, ujistěte se pokrytí kódu a najít chyby a závad, než se vaši zákazníci. Spuštění testování částí často a ujistěte se, že váš kód funguje správně.
 
 ## <a name="create-unit-tests"></a>Vytvořit testy jednotek
 
-Vytvořit testy jednotek a spouštět je často abyste měli jistotu, že váš kód funguje správně.
+Tato část popisuje jak vytvořit projekt testování částí na vysoké úrovni.
+
+> [!TIP]
+> Projekt v rámci testu, "HelloWorld", je příklad projektu a použití žádný kód pro něj není zobrazený. Pokud chcete vytvořit projekt "HelloWorld" k otestování najdete v tématu [první vytvoření C# konzolovou aplikaci](../ide/quickstart-csharp-console.md). Kompletní postup článku, najdete v části [vytvoření a spuštění jednotky testů pro spravovaný kód](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Vytvořte projekt testu jednotek.
 
@@ -150,6 +153,7 @@ Postup povolení rozhraní pro testování třetích stran jsou následující:
 
 ## <a name="see-also"></a>Viz také:
 
+* [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Vytvoření příkazu pro testování částí](create-unit-tests-menu.md)
 * [Generování testů s Intellitestem](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Spouštění testů pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md)

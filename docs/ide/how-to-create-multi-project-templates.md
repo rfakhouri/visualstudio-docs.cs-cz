@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985913"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424211"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Postupy: Vytváření šablon vícenásobného projektu
 
@@ -69,17 +69,20 @@ Kořen *vstemplate* soubor pro víceprojektové šabloně se liší od jednoproj
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>K vytvoření víceprojektové šablony z existujícího řešení
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Vytvoření víceprojektové šablony z existujícího řešení
 
 1. Vytvoření řešení a přidejte dva nebo více projektů.
 
 1. Přizpůsobení projektů, dokud nebudou připravené nelze exportovat do šablony.
 
+   > [!TIP]
+   > Pokud používáte [parametry šablony](template-parameters.md) a vy chcete odkazovat na proměnné z nadřazené šablony, předpona názvu parametru s `ext_`. Například, `$ext_safeprojectname$`.
+
 1. Na **projektu** nabídce zvolte **exportovat šablonu**.
 
    **Průvodce exportem šablony** otevře.
 
-1. Na **zvolte typ šablony** stránce **šablonu projektu**. Vyberte projekt, který chcete exportovat do šablony a klikněte na tlačítko **Další**.
+1. Na **zvolte typ šablony** stránce **šablonu projektu**. Vyberte jeden z projektů, které chcete exportovat do šablony a klikněte na tlačítko **Další**. (Budete opakujte tyto kroky pro každý projekt v řešení.)
 
 1. Na **vyberte možnosti šablony** stránky, zadejte název a volitelný popis, ikona a image ve verzi preview pro šablonu. Zvolte **Dokončit**.
 
