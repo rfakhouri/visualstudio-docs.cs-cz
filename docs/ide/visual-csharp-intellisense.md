@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979059"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484183"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -99,7 +99,7 @@ K zahájení **přidat direktivu using** operace, pozice kurzoru na typu odkaz, 
 
 ![Přidání pomocí, rychlá akce rozšířené bitové kopie](../ide/media/addusing-quickaction.png)
 
-Klikněte na ikonu žárovky a klikněte na tlačítko **použití System.Xml;** k automatickému přidávání using – direktiva.
+Klikněte na ikonu žárovky chyby a klikněte na tlačítko **použití System.Xml;** k automatickému přidávání using – direktiva.
 
 ### <a name="remove-and-sort-usings"></a>Odebrat a seřadit direktivy using
 
@@ -123,7 +123,7 @@ Metoda zástupné procedury, které se vygenerovaly **implementace abstraktní t
 
 V rámci každé nedefinovaný identifikátor se zobrazí červené podtržení vlnovkou. Při umístění ukazatele myši na identifikátor v popisku se zobrazí chybová zpráva. K zobrazení příslušné možnosti, můžete použít jednu z následujících postupů:
 
-- Klikněte na nedefinovaný identifikátor. A **rychlé akce** pod tento identifikátor se zobrazí žárovka. Klikněte na žárovku.
+- Klikněte na nedefinovaný identifikátor. A **rychlé akce** žárovky chyba se zobrazí v části identifikátoru. Klikněte na žárovku chyby.
 
 - Klikněte na nedefinovaný identifikátor a potom stiskněte klávesu **Ctrl**+**.** (**Ctrl** + tečka).
 

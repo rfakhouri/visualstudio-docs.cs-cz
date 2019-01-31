@@ -1,6 +1,6 @@
 ---
 title: Nasazení do místní složky
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
@@ -10,18 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd0260be91e89a8ed1f9ce0cef89a5e361933ecc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0772e44bf7636edd84c88b3dbaedce7bf2f51604
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007708"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483559"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Nasazení aplikace do místní složky pomocí sady Visual Studio
 
 Můžete použít **publikovat** nástroj pro publikování aplikace ASP.NET, ASP.NET Core, .NET Core a Pythonu do místní složky ze sady Visual Studio. Pro Node.js kroky jsou podporované, ale uživatelské rozhraní se liší.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> Pokud je potřeba publikovat do místní složky aplikace pracovní plochy Windows, přečtěte si téma [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# nebo Visual Basic) nebo [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) (C++).
 
 ## <a name="deploy-to-a-local-folder"></a>Nasazení do místní složky
 
@@ -33,7 +36,7 @@ Můžete použít **publikovat** nástroj pro publikování aplikace ASP.NET, AS
 
 1. V **vyberte cíl publikování** dialogového okna zvolte **složky**.
 
-    ![Zvolte místní složku jako publikovat nějaký](../deployment/media/quickstart-publish-folder.png "vybrat složku")
+    ![Zvolte místní složku jako cíl publikování](../deployment/media/quickstart-publish-folder.png "vybrat složku")
 
 1. Zadejte cestu nebo vyberte **Procházet** určit místní složku.
 

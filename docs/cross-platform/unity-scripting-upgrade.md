@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 294f3efe5e541a316a8bb90da07d75e9319e7983
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 09fede64aee943d7c3160a5e9be449752d4f2c68
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027364"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484209"
 ---
 # <a name="using-net-4x-in-unity"></a>Pomocí rozhraní .NET 4.x v Unity
 
@@ -24,7 +24,7 @@ S vydáním Unity 2017.1 zavedené Unity experimentální verzi jeho skriptovac�
 ## <a name="prerequisites"></a>Požadavky
 
 * [Unity 2017.1 nebo vyšší](https://unity3d.com/) (2018.2 doporučeno)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
 ## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Povolení skriptovací runtime .NET 4.x v Unity
 

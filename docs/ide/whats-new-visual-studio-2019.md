@@ -2,7 +2,7 @@
 title: Novinky v sadě Visual Studio 2019
 titleSuffix: ''
 description: Další informace o nových funkcích sady Visual Studio 2019.
-ms.date: 01/24/2019
+ms.date: 01/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,14 +15,14 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 9f1d2ba67739dd5349a1a361744543089900a371
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090173"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483702"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>Co je nového v sadě Visual Studio. 2019 Preview
+# <a name="whats-new-in-visual-studio-2019-preview"></a>Novinky v sadě Visual Studio 2019 Preview
 
 **Aktualizováno pro [verzi Preview 2](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
@@ -40,7 +40,7 @@ Tady je podrobný rekapitulace toho, co má Visual Studio nabízí:
 * **[Průběžné inovace](#continuous-innovation)**. Kód inteligentní s podporou inteligentní, s využitím cloudu.
 
 > [!NOTE]
-> Úplný seznam nových funkcí a funkcí v sadě Visual Studio. 2019 Preview, najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Úplný seznam nových funkcí a funkcí v sadě Visual Studio. 2019 Preview, najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). A roundup o novinkách ve verzi preview druhý, najdete v článku [Visual Studio. 2019 ve verzi Preview 2 je nyní k dispozici](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) blogový příspěvek.
 
 ## <a name="personal-and-team-productivity"></a>Osobní a produktivitu týmu
 
@@ -82,6 +82,8 @@ Můžete také formátovat, jak se zobrazí hodnota v oknech sledovat, místní 
 
    ![Nové kukátko okno Formát hodnoty funkci a ve Visual Studio 2019](media/search-watch-window.png)
 
+Další informace najdete v tématu [zdokonaleno ve Visual Studio 2019: Hledání objektů a vlastností v okně kukátka, automatické hodnoty a místní hodnoty Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) blogový příspěvek.
+
 ### <a name="visual-studio-live-share"></a>Visual Studio za sdílené složky
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) je služba pro vývojáře, která umožňuje sdílet základ kódu a jeho kontextu s programujete a získat rychlé obousměrné spolupráci přímo z Visual Studia. S Live Share programujete můžete přečíst, přejděte, upravit a ladit projekt, který jste sdíleli s nimi a učinit snadno a bezpečně.
@@ -110,7 +112,7 @@ Ve verzi preview verze sady Visual Studio 2019 podporuje vytváření [.NET Core
 
 Pokud používáte monitorování, které jsou nakonfigurovány s jiným zobrazením měřítko nebo vzdáleně připojit k počítači s použitím zobrazení škálování faktorů, které se liší od hlavní zařízení, můžete všimnout, že Visual Studio rozmazaný nebo vykreslí nesprávné měřítko.
 
-S vydáním sady Visual Studio. 2019 ve verzi Preview 1 jsme se rozhodli první kroky k zabezpečení aplikace Visual Studio (PMA) aplikace pracující s za monitorování. Pokládáme základní práce, které vám umožní sadě Visual Studio správně vykreslit, bez ohledu na to, co zobrazí měřítko, které používáte.
+S vydáním sady Visual Studio 2019 Preview jsme se rozhodli první kroky k zabezpečení aplikace Visual Studio (PMA) aplikace pracující s za monitorování. Pokládáme základní práce, které vám umožní sadě Visual Studio správně vykreslit, bez ohledu na to, co zobrazí měřítko, které používáte.
 
    ![Clustery vykreslování (PMA) v aplikaci Visual Studio 2019 za monitorování](media/per-monitor-aware-dpi-scaling.png)
 

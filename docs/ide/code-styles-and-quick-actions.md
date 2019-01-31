@@ -11,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 065a4c21be596b409ed82718e0b38c38367612cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039052"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483988"
 ---
 # <a name="code-style-preferences"></a>Předvolby stylu kódu
 
@@ -31,7 +31,7 @@ Každá položka v seznamu zobrazí náhled předvoleb při výběru:
 
 ## <a name="preference-and-severity"></a>Priority a závažnosti
 
-Pro každou položku, můžete nastavit **předvoleb** a **závažnost** hodnoty pomocí rozevíracích na každém řádku. Je možné nastavit závažnost **žádný**, **návrh**, **upozornění**, nebo **chyba**. Pokud chcete povolit [rychlé akce](../ide/quick-actions.md) pro styl kódu, ujistěte se, že **závažnost** nastavená na něco jiného než **žádný**. **Rychlé akce** ikonou žárovky ![ikonou žárovky malé](media/vs2015_lightbulbsmall.png) se zobrazí, když se používá jiný než upřednostňovaný styl a zvolíte možnost na **rychlé akce** do seznamu automaticky revize kódu upřednostňované stylu.
+Pro každou položku, můžete nastavit **předvoleb** a **závažnost** hodnoty pomocí rozevíracích na každém řádku. Je možné nastavit závažnost **žádný**, **návrh**, **upozornění**, nebo **chyba**. Pokud chcete povolit [rychlé akce](../ide/quick-actions.md) pro styl kódu, ujistěte se, že **závažnost** nastavená na něco jiného než **žádný**. **Rychlé akce** žárovky ![žárovky](media/vs2015_lightbulbsmall.png), chyba žárovky ![chyba žárovky](media/error-bulb.png), nebo šroubovák ![šroubovák](media/screwdriver.png) ikona se zobrazuje, kdy jiný než upřednostňovaný styl se používá, a zvolíte možnost na **rychlé akce** seznamu automaticky přepište kód upřednostňované stylu.
 
 ## <a name="editorconfig-files"></a>EditorConfig soubory
 

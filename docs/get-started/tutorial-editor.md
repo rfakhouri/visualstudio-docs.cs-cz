@@ -12,19 +12,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 573a4fcfa9d9889f4fc6eaaeaf01ce0b1a478651
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d46c26881c07e066ba57afba8e648f5b81325b49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021176"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483816"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
 V tomto úvodu během 10 minut do editoru kódu v sadě Visual Studio přidáme kód pro soubor, který chcete podívat na některé ze způsobů, že sada Visual Studio provádí zápis, procházení a porozumění kódu jednodušší.
 
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 Tento článek předpokládá, že jste již obeznámeni s programovacím jazyce. Pokud si nejste, doporučujeme nejdřív podívat na jeden z programovací šablon rychlý start, jako je například vytvoření webové aplikace s využitím [Python](../ide/quickstart-python.md) nebo [jazyka C#](../get-started/csharp/tutorial-aspnet-core.md), nebo vytvořte aplikaci konzoly pomocí [jazyka Visual Basic](../ide/quickstart-visual-basic-console.md) nebo [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 

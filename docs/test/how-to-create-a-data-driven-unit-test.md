@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Vytvoření testu částí řízeného daty'
+title: Vytvořit testy jednotek řízené daty
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e8092663f7ccc0b6443f392358e7c487d0f6b63f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5166b2d4e7bc56ab61d8ca93b4d86019572554df
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968135"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484014"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Vytvoření testu částí řízeného daty
+# <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Vytvoření testu jednotek řízené daty
 
 Pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód, můžete nastavit metodu testovací jednotky tak, k načtení hodnoty použité v testovací metodě ze zdroje dat. Metoda se spouští postupně pro každý řádek ve zdroji dat, která usnadňuje testování celé škály vstup pomocí jedné metody.
 
@@ -36,7 +36,7 @@ Vytvoření testu jednotek řízené daty zahrnuje následující kroky:
 
 4.  Použít <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> vlastnost indexeru pro načtení hodnoty, které můžete použít v rámci testu.
 
-##  <a name="BKMK_The_method_under_test"></a> Testované metody
+## <a name="the-method-under-test"></a>Testované metody
 
 Jako příklad předpokládejme, že máte:
 
@@ -64,8 +64,9 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="create-a-data-source"></a>Vytvoření zdroje dat
- K testování `AddIntegers` metodu, vytvořte zdroj dat, která určuje rozsah hodnot pro parametry a součet, který očekáváte, že má být vrácen. V tomto příkladu vytvoříme s názvem databáze Sql Compact `MathsData` a tabulku s názvem `AddIntegersData` , který obsahuje následující názvy sloupců a hodnot
+## <a name="create-a-data-source"></a>Vytvoření zdroje dat
+
+K testování `AddIntegers` metodu, vytvořte zdroj dat, která určuje rozsah hodnot pro parametry a součet, který očekáváte, že má být vrácen. V tomto příkladu vytvoříme s názvem databáze Sql Compact `MathsData` a tabulku s názvem `AddIntegersData` , který obsahuje následující názvy sloupců a hodnot
 
 |Prvníčíslo|Druhéčíslo|Součet|
 |-|------------------|-|
@@ -73,8 +74,9 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="add-a-testcontext-to-the-test-class"></a>Přidat TestContext pro třídu testu
- Vytvoří rozhraní testování částí `TestContext` objekt pro uložení informace o zdroji dat pro test řízený daty. Tento objekt rozhraní pak nastaví jako hodnotu `TestContext` vlastnost, která vytvoříte.
+## <a name="add-a-testcontext-to-the-test-class"></a>Přidat TestContext pro třídu testu
+
+Vytvoří rozhraní testování částí `TestContext` objekt pro uložení informace o zdroji dat pro test řízený daty. Tento objekt rozhraní pak nastaví jako hodnotu `TestContext` vlastnost, která vytvoříte.
 
 ```csharp
 private TestContext testContextInstance;
@@ -85,10 +87,11 @@ public TestContext TestContext
 }
 ```
 
- V testovací metodě, získáte přístup k datům prostřednictvím `DataRow` vlastnost indexer `TestContext`.
+V testovací metodě, získáte přístup k datům prostřednictvím `DataRow` vlastnost indexer `TestContext`.
 
-##  <a name="write-the-test-method"></a>Zápis testovací metody
- Testovací metody pro `AddIntegers` je docela jednoduché. Pro každý řádek ve zdroji dat volání `AddIntegers` s **Prvníčíslo** a **Druhéčíslo** sloupec hodnoty jako parametry a ověřte návratovou hodnotu proti **součet** Hodnota sloupce:
+## <a name="write-the-test-method"></a>Zápis testovací metody
+
+Testovací metody pro `AddIntegers` je docela jednoduché. Pro každý řádek ve zdroji dat volání `AddIntegers` s **Prvníčíslo** a **Druhéčíslo** sloupec hodnoty jako parametry a ověřte návratovou hodnotu proti **součet** Hodnota sloupce:
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0; Data Source=C:\Data\MathsData.sdf;", "Numbers")]
@@ -110,8 +113,9 @@ public void AddIntegers_FromDataSourceTest()
 
 `Assert` Metoda obsahuje zprávu, která se zobrazí `x` a `y` hodnoty selhání iterace. Ve výchozím nastavení s potvrzením hodnoty `expected` a `actual`, jsou již zahrnuty podrobnosti o selhání testu.
 
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Zadejte atribut
- `DataSource` Atribut určuje připojovací řetězec pro zdroj dat a název tabulky, který používáte v testovací metodě. Přesné informace v připojovacím řetězci se liší v závislosti na tom, jaký druh zdroje dat, kterou používáte. V tomto příkladu jsme použili SqlServerCe databáze.
+### <a name="specify-the-datasourceattribute"></a>Zadejte atribut
+
+`DataSource` Atribut určuje připojovací řetězec pro zdroj dat a název tabulky, který používáte v testovací metodě. Přesné informace v připojovacím řetězci se liší v závislosti na tom, jaký druh zdroje dat, kterou používáte. V tomto příkladu jsme použili SqlServerCe databáze.
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
@@ -123,17 +127,17 @@ Atribut zdroje dat má tři konstruktory.
 [DataSource(dataSourceSettingName)]
 ```
 
- Konstruktor s jedním parametrem používá informace o připojení, která je uložena v *app.config* soubor řešení. *DataSourceSettingsName* je název elementu Xml v konfiguračním souboru, který určuje informace o připojení.
+Konstruktor s jedním parametrem používá informace o připojení, která je uložena v *app.config* soubor řešení. *DataSourceSettingsName* je název elementu Xml v konfiguračním souboru, který určuje informace o připojení.
 
- Pomocí *app.config* souborů umožňuje změnit umístění zdroje dat bez provedení změn samotného testu. Informace o tom, jak vytvořit a používat *app.config* souborů naleznete v tématu [názorný postup: Použití konfiguračního souboru k definování zdroje dat](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+Pomocí *app.config* souborů umožňuje změnit umístění zdroje dat bez provedení změn samotného testu. Informace o tom, jak vytvořit a používat *app.config* souborů naleznete v tématu [názorný postup: Použití konfiguračního souboru k definování zdroje dat](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
 ```
 
- `DataSource` Konstruktor se dvěma parametry Určuje připojovací řetězec pro zdroj dat a název tabulky, která obsahuje data pro testovací metodu.
+`DataSource` Konstruktor se dvěma parametry Určuje připojovací řetězec pro zdroj dat a název tabulky, která obsahuje data pro testovací metodu.
 
- Připojovací řetězce závisí na typu zdroje dat, ale měl by obsahovat element zprostředkovatele, který určuje výchozí název zprostředkovatele dat.
+Připojovací řetězce závisí na typu zdroje dat, ale měl by obsahovat element zprostředkovatele, který určuje výchozí název zprostředkovatele dat.
 
 ```csharp
 [DataSource(
@@ -144,21 +148,26 @@ Atribut zdroje dat má tři konstruktory.
     )]
 ```
 
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Použití TestContext.DataRow pro přístup k datům
- Pro přístup k datům v `AddIntegersData` tabulky, použijte `TestContext.DataRow` indexeru. `DataRow` je <xref:System.Data.DataRow> objektu, proto načtení hodnot sloupců podle názvů index nebo sloupec. Protože hodnoty jsou vráceny jako objekty, je převeďte na typ odpovídající:
+### <a name="use-testcontextdatarow-to-access-the-data"></a>Použití TestContext.DataRow pro přístup k datům
+
+Pro přístup k datům v `AddIntegersData` tabulky, použijte `TestContext.DataRow` indexeru. `DataRow` je <xref:System.Data.DataRow> objektu, proto načtení hodnot sloupců podle názvů index nebo sloupec. Protože hodnoty jsou vráceny jako objekty, je převeďte na typ odpovídající:
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="run-the-test-and-view-results"></a>Spusťte test a zobrazit výsledky
- Po dokončení zápisu testovací metody vytvoření testovacího projektu. Metoda testu se zobrazí v **Průzkumníka testů** okna **nespuštěné testy** skupiny. Při spouštění, zápis a znovu spustit testy, **Průzkumník testů** zobrazuje výsledky ve skupinách **neúspěšné testy**, **úspěšné testy**, a **nespuštěné testy**. Můžete zvolit **spustit všechny** chcete spustit všechny testy, nebo zvolte **spustit** vybrat podmnožinu testů ke spuštění.
+## <a name="run-the-test-and-view-results"></a>Spusťte test a zobrazit výsledky
 
- Panel výsledků testu v horní části stránky Průzkumníka je animovaný při spuštění testu. Na konci testovacího běhu panelu budou zelené, pokud všechny testy prošly nebo red Pokud některé testy selhaly. Přehled testovacího běhu se zobrazí v podokně podrobností v dolní části **Průzkumníka testů** okna. Vyberte test, chcete-li zobrazit podrobnosti o testu v dolním podokně.
+Po dokončení zápisu testovací metody vytvoření testovacího projektu. Metoda testu se zobrazí v **Průzkumníka testů** v **nespuštěné testy** skupiny. Při spouštění, zápis a znovu spustit testy, **Průzkumník testů** zobrazuje výsledky ve skupinách **neúspěšné testy**, **úspěšné testy**, a **nespuštěné testy**. Můžete zvolit **spustit všechny** chcete spustit všechny testy, nebo zvolte **spustit** vybrat podmnožinu testů ke spuštění.
 
- Pokud jste spustili `AddIntegers_FromDataSourceTest` metoda v našem příkladu, na panelu výsledků na červenou a testovací metoda je přesunuta do **neúspěšné testy**. Test řízený daty selže, pokud některé z metod iterovaném ze zdroje dat se nezdaří. Pokud zvolíte selhání testu s daty v **Průzkumníka testů** okně, v podokně podrobností se zobrazí výsledky každé iterace, která je identifikovaná index řádku dat. V našem příkladu zdá se, `AddIntegers` algoritmus nezpracovává záporné hodnoty správně.
+Panel výsledků testu v horní části **Průzkumníka testů** je animovaný při spuštění testu. Na konci testovacího běhu panelu budou zelené, pokud všechny testy prošly nebo red Pokud některé testy selhaly. Přehled testovacího běhu se zobrazí v podokně podrobností v dolní části **Průzkumníka testů** okna. Vyberte test, chcete-li zobrazit podrobnosti o testu v dolním podokně.
 
- Při nápravě testované metody a test spustit znovu, výsledky panel zbarví zeleně a testovací metoda je přesunuta do **předaný testování** skupiny.
+> [!NOTE]
+> Neexistuje výsledek pro každý řádek dat a také jeden výsledek sumarizace. Pokud test proběhl úspěšně. na každém řádku dat spustit souhrn zobrazuje jako **proběhl**. Pokud se test nezdařil na libovolný řádek dat, spusťte souhrn zobrazuje jako **neúspěšné**.
+
+Pokud jste spustili `AddIntegers_FromDataSourceTest` metoda v našem příkladu, na panelu výsledků na červenou a testovací metoda je přesunuta do **neúspěšné testy**. Test řízený daty selže, pokud některé z metod iterovaném ze zdroje dat se nezdaří. Pokud zvolíte selhání testu s daty v **Průzkumníka testů** okně, v podokně podrobností se zobrazí výsledky každé iterace, která je identifikovaná index řádku dat. V našem příkladu zdá se, `AddIntegers` algoritmus nezpracovává záporné hodnoty správně.
+
+Při nápravě testované metody a test spustit znovu, výsledky panel zbarví zeleně a testovací metoda je přesunuta do **předaný testování** skupiny.
 
 ## <a name="see-also"></a>Viz také:
 

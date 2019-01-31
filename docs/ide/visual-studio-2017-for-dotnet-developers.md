@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941389"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484092"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
@@ -81,7 +81,7 @@ Můžete použít *.editorconfig* souboru kodifikovat konvence kódování a mí
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Potřebuji další opravy refaktoringů a kódu
 
-Visual Studio 2017 se dodává s velké množství refaktoringů, akcí generování kódu a opravy kódu. Chyby představují červenou vlnovkou, zelenou vlnovkou představují upozornění a tři šedé tečky představují návrhy kódu. Přístupový kód opravy můžete kliknutím na ikonu žárovky/šroubovák nebo stisknutím klávesy **Ctrl**+**.** nebo **Alt**+**zadejte**. Jednotlivé opravy se dodává s oknem Náhled, který ukazuje rozdíl živého kódu fungování opravy.
+Visual Studio 2017 se dodává s velké množství refaktoringů, akcí generování kódu a opravy kódu. Chyby představují červenou vlnovkou, zelenou vlnovkou představují upozornění a tři šedé tečky představují návrhy kódu. Přístupový kód opravy můžete kliknutím na ikonu šroubovák nebo návrhy nebo stisknutím klávesy **Ctrl**+**.** nebo **Alt**+**zadejte**. Jednotlivé opravy se dodává s oknem Náhled, který ukazuje rozdíl živého kódu fungování opravy.
 
 - Oblíbené rychlých oprav a refaktoringy patří:
   - *Přejmenovat*
@@ -155,7 +155,7 @@ Tady je seznam editoru a produktivitu funkcí pro zajištění efektivnějšího
 | Funkce | Podrobnosti | Jak povolit |
 |-|-|-|
 | Vyhledejte soubor v Průzkumníku řešení | Zvýrazní aktivní soubor v **Průzkumníka řešení** | **Nástroje** > **možnosti** > **projekty a řešení** > **sledovat aktivní položku v Průzkumníku řešení** |
-| Přidání direktivy using pro typy v referenční sestavení a balíčky NuGet | Zobrazí žárovka s opravu kódu se nainstalovat balíček NuGet pro neodkazovaný typ. | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Navrhnout použití typů v sestaveních reference** a **navrhnout použití typů v balíčcích NuGet** |
+| Přidání direktivy using pro typy v referenční sestavení a balíčky NuGet | Zobrazí návrhy k chybě s opravu kódu se nainstalovat balíček NuGet pro neodkazovaný typ | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Navrhnout použití typů v sestaveních reference** a **navrhnout použití typů v balíčcích NuGet** |
 | Povolení úplné analýzy řešení | Zobrazit všechny chyby ve vašem řešení v **seznam chyb** | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Povolení úplné analýzy řešení** |
 | Povolit navigaci na dekompilované zdroje | Povolit přejít k definici pro typy nebo členy z externích zdrojů a ILSpy decompiler znázornit těl metod. | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Povolit navigaci na dekompilované zdroje** |
 | Režim dokončování a návrhu | Změny chování při dokončování IntelliSense--vývojářům IntelliJ pozadí mají tendenci se měnit nastavení zde z výchozího | **Nabídka** > **upravit** > **IntelliSense** > **přepnout režim dokončení** |

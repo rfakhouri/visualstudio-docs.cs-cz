@@ -14,16 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1789a14d1b3d398372a6490c901b8e9b347691
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 848fe369083b4dd01ee0ee1b541ab7228ee338f8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013298"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483923"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka Visual Basic
 
 V tomto návodu se seznámíte s mnoha nástrojů, dialogových oknech a návrhářích, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Budete vytvářet aplikace "Hello, World", návrh uživatelského rozhraní, přidat kód a ladit chyby, zatímco informace o práci v integrovaném vývojovém prostředí ([IDE](visual-studio-ide.md)).
+
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 ## <a name="configure-the-ide"></a>Nastavení integrovaného vývojového prostředí (IDE)
 

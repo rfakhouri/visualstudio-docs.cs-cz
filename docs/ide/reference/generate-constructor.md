@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8f72638db2403b67a52ed5bc4ff005189526d7e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 746a0099d16196e9cbc2b98d18667acae57777f9
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938351"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483572"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generovat konstruktor v sadě Visual Studio
 
@@ -49,7 +49,7 @@ Tato generace kód platí pro:
       - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na prázdný řádek ve třídě.
+      - Klikněte na ![šroubovák](media/screwdriver.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na prázdný řádek ve třídě.
 
    ![Generovat konstruktor ve verzi preview](media/constructor1-preview-cs.png)
 
@@ -80,7 +80,7 @@ Tato generace kód platí pro:
       - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s výběrem.
+      - Klikněte na ![šroubovák](media/screwdriver.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s výběrem.
 
       ![Generovat konstruktor ve verzi preview](media/constructor2-preview-cs.png)
 
@@ -108,8 +108,8 @@ Tato generace kód platí pro:
       - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Červená vlnovka ukazatel myši a klikněte ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí.
-      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
+      - Červená vlnovka ukazatel myši a klikněte ![Chyba žárovky](media/error-bulb.png) ikona, která se zobrazí.
+      - Klikněte na ![Chyba žárovky](media/error-bulb.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
 
       ![Generovat konstruktor ve verzi preview](media/constructor-preview-cs.png)
 
@@ -142,8 +142,8 @@ Tato generace kód platí pro:
       - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Červená vlnovka ukazatel myši a klikněte ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí.
-      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
+      - Červená vlnovka ukazatel myši a klikněte ![Chyba žárovky](media/error-bulb.png) ikona, která se zobrazí.
+      - Klikněte na ![Chyba žárovky](media/error-bulb.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
 
       ![Generovat konstruktor ve verzi preview](media/constructor4-preview-cs.png)
 
@@ -169,7 +169,7 @@ Můžete také přidat parametr do existující metodu. Další informace najdet
       - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s přidání parametru.
+      - Klikněte na ![šroubovák](media/screwdriver.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s přidání parametru.
 
    ![Generovat konstruktor ve verzi preview](media/constructor5-preview-cs.png)
 

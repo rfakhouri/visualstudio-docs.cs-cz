@@ -12,18 +12,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 80edc9e5f181561d063dd9e497c837a961c2815d
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: f1b1ccaaeb8f51e662c85b7894f9f752dba9c2a8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424588"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484170"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Vítá vás Visual Studio IDE |C#
 
 Visual Studio *integrovaného vývojového prostředí* je creative odrazový, můžete použít k úpravám, ladit a sestavovat kód a pak publikujete aplikaci. Integrované vývojové prostředí (IDE) je plně funkční program, který lze použít pro mnoho aspektů vývoje softwaru. Kromě standardní editor a ladicího programu, že většina integrovanými vývojovými prostředími poskytnout, Visual Studio obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a mnoho dalších funkcí, které usnadňují proces vývoje softwaru.
-
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 ![Prostředí IDE sady Visual Studio](../media/visual-studio-ide.png)
 
@@ -100,7 +98,7 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
 ## <a name="install-the-visual-studio-ide"></a>Instalace sady Visual Studio IDE
 
-Tento přehled článek vás provede procesem vytvoření jednoduchého projektu a zkusit některé z akcí můžete provést pomocí sady Visual Studio, například [IntelliSense](../../ide/using-intellisense.md) jako kódování podpory ladění aplikace zobrazíte hodnotu proměnné během programu spuštění a Změna barevného motivu. Abyste mohli začít, [Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a nainstalovat do vašeho systému.
+Tento přehled článek vás provede procesem vytvoření jednoduchého projektu a zkusit některé z akcí můžete provést pomocí sady Visual Studio, například [IntelliSense](../../ide/using-intellisense.md) jako kódování podpory ladění aplikace zobrazíte hodnotu proměnné během programu spuštění a Změna barevného motivu. Abyste mohli začít, [Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) a nainstalovat do vašeho systému.
 
 Modulární instalačního programu umožňuje vybrat a nainstalovat *úlohy*, což jsou skupiny funkce potřebné pro programovací jazyk nebo platformu dáváte přednost. Postupovat podle kroků pro [vytvoření programu](#create-a-program), je nutné vybrat **vývoj pro různé platformy .NET Core** úloh během instalace.
 

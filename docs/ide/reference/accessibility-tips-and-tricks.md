@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010386"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484131"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Usnadnění tipy a triky pro Visual Studio
 
@@ -41,7 +41,7 @@ Pro některé ty jsou obtížnější zobrazíte některé barvy. Pokud má vyš
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Použití anotací zobrazíte užitečné informace o kódu
 
-Editor sady Visual Studio obsahuje mnoho text "vylepšení", které umožňují vědět záložky, vlastnosti a funkce na konkrétní body na řádek kódu, jako je například lightbulbs, chyby a upozornění "podtržení vlnovkou" a tak dále. Můžete použít příkaz "Zobrazení poznámek k řádkům" nastavena na vám pomohou zjistit a poté přejděte mezi tato vylepšení.
+Editor sady Visual Studio obsahuje mnoho text "vylepšení", které umožňují vědět záložky, vlastnosti a funkce na konkrétní body na řádek kódu, jako je například šroubovák a ikony žárovky, chyby a upozornění "podtržení vlnovkou" a tak dále. Můžete použít příkaz "Zobrazení poznámek k řádkům" nastavena na vám pomohou zjistit a poté přejděte mezi tato vylepšení.
 
   ![Použití sady příkazů zobrazit poznámek k řádkům](media/show-line-annotations-command-set.png)
 

@@ -2,7 +2,7 @@
 title: Nasazení základních charakteristikách
 description: Další informace o dostupných možnostech při nasazování aplikací ze sady Visual Studio.
 ms.custom: mvc
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4046abd84443bd1cff6b6e618f2dfba2de5e09dd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 920734a76c184b8c0a44fb5118c40fc79ebd539c
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974929"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483910"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý start: První pohled na nasazení v sadě Visual Studio
 
@@ -48,20 +48,28 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
 ## <a name="publish-to-azure"></a>Publikování do Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**, a **Node.js**: Nástroj publikování můžete použít k rychlému nasazení aplikací do služby Azure App Service nebo na virtuálním počítači Azure. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) V dialogovém okně Publikovat zvolit buď **služby App Service** nebo **Azure Virtual Machines**a pak postupujte podle kroků konfigurace.
+- **ASP.NET**, **ASP.NET Core**, **Python**, a **Node.js**: Publikování do služby Azure App Service nebo Azure App Service pro Linux (pomocí kontejnerů) pomocí některého z následujících metod.
 
-    ![Zvolte Azure App Service](../deployment/media/quickstart-publish-azure.png "zvolte služby Azure App Service")
+  - Průběžné (nebo automatizované) nasazení aplikací, použijte Azure DevOps s využitím [kanály Azure](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-    V sadě Visual Studio 2017 verze 15.7 nebo novější, můžete nasazovat aplikace ASP.NET Core **služby App Service pro Linux**.
+  - Pro jednorázové (nebo ruční) nasazení aplikací, použijte **publikovat** nástroje v sadě Visual Studio.
 
-    Aplikace v Pythonu, také naleznete v tématu [Python - publikování do služby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+  Pro nasazení, které poskytuje více přizpůsobit konfiguraci serveru, můžete použít také **publikovat** nástroj pro nasazení aplikací na virtuální počítač Azure.
 
-    Rychlý úvod naleznete zde [publikovat do Azure](quickstart-deploy-to-azure.md) a [publikovat do Linuxu](quickstart-deploy-to-linux.md). Viz také [publikování aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Nasazení přes Git, najdete v tématu [průběžné nasazování ASP.NET Core do Azure pomocí Gitu](/aspnet/core/publishing/azure-continuous-deployment).
+  Použít **publikovat** nástroj, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) V dialogovém okně Publikovat zvolit buď **služby App Service** nebo **Azure Virtual Machines**a pak postupujte podle kroků konfigurace.
 
-    Informace o importu profilu publikování z Azure App Service se sadou Visual Studio najdete v tématu [importovat nastavení publikování a nasazení do Azure](../deployment/tutorial-import-publish-settings-azure.md).
+  ![Zvolte Azure App Service](../deployment/media/quickstart-publish-azure.png "zvolte služby Azure App Service")
 
-    > [!NOTE]
-    > Pokud ještě nemáte účet Azure, můžete si [zaregistrovat](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+  Spouští se v sadě Visual Studio 2017 verze 15.7, můžete nasazovat aplikace ASP.NET Core **služby App Service pro Linux**.
+
+  Aplikace v Pythonu, také naleznete v tématu [Python - publikování do služby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+
+  Rychlý úvod naleznete zde [publikovat do Azure](quickstart-deploy-to-azure.md) a [publikovat do Linuxu](quickstart-deploy-to-linux.md). Viz také [publikování aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Nasazení přes Git, najdete v tématu [průběžné nasazování ASP.NET Core do Azure pomocí Gitu](/aspnet/core/publishing/azure-continuous-deployment).
+
+  Informace o importu profilu publikování z Azure App Service se sadou Visual Studio najdete v tématu [importovat nastavení publikování a nasazení do Azure](../deployment/tutorial-import-publish-settings-azure.md).
+
+  > [!NOTE]
+  > Pokud ještě nemáte účet Azure, můžete si [zaregistrovat](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikování na Web nebo nasadit do sdílené síťové složky
 
@@ -111,9 +119,9 @@ Pokud potřebujete více o složitou instalace aplikace pracovní plochy než [C
 
 Můžete povolit složitější vývoj a testování nasazení aplikací ve virtuálních prostředích. Další informace najdete v tématu [testů v testovacím prostředí](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
-## <a name="devops-deployment"></a>Nasazení DevOps
+## <a name="continuous-deployment"></a>Průběžné nasazování
 
-Ve vývojovém týmu můžete použít kanály Azure umožnit průběžné nasazování vaší aplikace. Další informace najdete v tématu [kanály Azure](/azure/devops/pipelines/index?view=vsts) a [nasadit do Azure](/azure/devops/deploy-azure/index?view=vsts).
+Kanály Azure můžete povolit průběžné nasazování vašich aplikací. Další informace najdete v tématu [kanály Azure](/azure/devops/pipelines/index?view=vsts) a [nasadit do Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Nasazení pro další typy aplikací
 

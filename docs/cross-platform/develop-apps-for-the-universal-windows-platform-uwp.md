@@ -10,12 +10,12 @@ ms.author: shoag
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cf58ea2ada658f7a1548ed81c875b19d33f81a91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fc9378b08db39d26ad491aa8cb213e89e6fa493
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981691"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483793"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 Univerzální platformu Windows a naše jednoho jádra Windows můžete stejnou aplikaci spustit na jakékoli zařízení s Windows 10 z telefonů pro stolní počítače. Vytvořte tyto Universal Windows apps pomocí sady Visual Studio a nástroje pro vývoj univerzálních aplikací pro Windows.
@@ -39,7 +39,7 @@ Univerzální platforma Windows je jednoduše soubor smluv a verze. Tyto rutiny 
 
 -   [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 podporuje vývoj pro UPW pouze ve Windows 10. Další podrobnosti najdete v tématu Visual Studio [cílení na platformy](/visualstudio/productinfo/vs2017-compatibility-vs) a [požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
--   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Musíte také volitelné úlohu vývoje univerzální platformy Windows.
+-   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Musíte také volitelné úlohu vývoje univerzální platformy Windows.
 
      ![Úlohy UPW](media/uwp_workload.png)
 

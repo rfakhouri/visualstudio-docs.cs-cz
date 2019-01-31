@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fcd6032879dc8e218aa782d27a34250982fb7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14a595de3b80635ad6974f2abb94bd9645d5a7f7
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961946"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483806"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Přidání místní proměnné v sadě Visual Studio
 
@@ -47,11 +47,11 @@ Tato generace kód platí pro:
       - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
+      - Klikněte na ![šroubovák](media/screwdriver.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek zvýrazněný výrazem.
 
    ![Zavést místní náhled](media/local-preview-cs.png)
 
-3. Vyberte **zavést místní pro (všechny výskyty) "*výraz*"** z rozevírací nabídky.
+3. Vyberte **zavést lokální proměnnou (všech výskytů) "výrazu"** z rozevírací nabídky.
 
    > [!TIP]
    > Použití **náhled změn** odkaz v dolní části okna náhledu [zobrazíte všechny změny](../../ide/preview-changes.md) , který bude proveden před zvolení požadované možnosti.

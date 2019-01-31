@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020461"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483715"
 ---
 # <a name="code-snippet-functions"></a>Funkce fragmentu kódu
 
@@ -30,11 +30,11 @@ Následující tabulka popisuje dostupné k použití s funkcí `Function` eleme
 
 |Funkce|Popis|Jazyk|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generuje příkazu switch a sadu příkazy case pro členy výčtu určené `EnumerationLiteral` parametru. `EnumerationLiteral` Parametr musí být odkaz na literál výčtu nebo typu výčtu.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Generuje příkazu switch a sadu příkazy case pro členy výčtu určené `EnumerationLiteral` parametru. `EnumerationLiteral` Parametr musí být odkaz na literál výčtu nebo typu výčtu.|C#|
 |`ClassName()`|Vrací název třídy, která obsahuje vložený fragment kódu.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Snižuje *TypeName* parametr své nejjednodušší podobě v kontextu, ve kterém se vyvolala fragmentu kódu.|C#|
+|`SimpleTypeName(TypeName)`|Snižuje *TypeName* parametr své nejjednodušší podobě v kontextu, ve kterém se vyvolala fragmentu kódu.|C#|
 
-## <a name="example"></a>Příklad
+## <a name="generateswitchcases-example"></a>Příklad GenerateSwitchCases
 
 Následující příklad ukazuje způsob použití `GenerateSwitchCases` funkce. Při vložení tohoto fragmentu a výčet se zadá do `$switch_on$` literálu, `$cases$` generuje literál `case` prohlášení pro každou hodnotu ve výčtu.
 
@@ -76,7 +76,7 @@ Následující příklad ukazuje způsob použití `GenerateSwitchCases` funkce.
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Příklad
+## <a name="classname-example"></a>Příklad ClassName
 
 Následující příklad ukazuje způsob použití `ClassName` funkce. Po vložení fragmentu kódu `$classname$` literálu se nahradí názvem ohraničující třídy v tomto umístění v souboru kódu.
 
@@ -123,7 +123,7 @@ Následující příklad ukazuje způsob použití `ClassName` funkce. Po vlože
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Příklad
+## <a name="simpletypename-example"></a>Příklad SimpleTypeName
 
 Tento příklad ukazuje způsob použití `SimpleTypeName` funkce. Při vložení fragmentu kódu do souboru kódu `$SystemConsole$` literál nahradí nejjednodušší forma <xref:System.Console> typ v kontextu, ve kterém se vyvolala fragmentu kódu.
 

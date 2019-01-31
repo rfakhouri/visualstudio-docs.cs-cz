@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017094"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483767"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kód pracovat v sadě Visual Studio
 
@@ -89,9 +89,9 @@ Zobrazí všechna upozornění nové nebo aktualizované v **seznam chyb** karta
 
 ![Seznam chyb sady Visual Studio s upozorněními.](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Pro opravu nebo refaktorování kódu pomocí žárovky
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Použít rychlé akce pro opravu nebo refaktorování kódu
 
-[Rychlé akce](../ide/quick-actions.md), která je dostupná z žárovky nebo ikonu šroubovák umožňují Refaktorovat vložený kód. Jsou snadný způsob, jak vyřešit běžné upozornění rychle a efektivně v C#, C++ a Visual Basic code. Pro přístup k nim, klikněte pravým tlačítkem na varování vlnovku a vyberte **rychlé akce a refaktoringy**. Nebo, pokud je kurzor na řádek s barevné vlnovka, stiskněte klávesu **Ctrl**+**.** nebo vyberte žárovky nebo šroubovák ikonu na okraji. Zobrazí se vám seznam možných opravy nebo refaktoringů, které můžete provést u tohoto řádku kódu.
+[Rychlé akce](../ide/quick-actions.md), která je dostupná z žárovky nebo ikonu šroubovák umožňují Refaktorovat vložený kód. Jsou snadný způsob, jak vyřešit běžné upozornění rychle a efektivně v C#, C++ a Visual Basic code. Pro přístup k nim, klikněte pravým tlačítkem na varování vlnovku a vyberte **rychlé akce a refaktoringy**. Nebo, pokud je kurzor na řádek s barevné vlnovka, stiskněte klávesu **Ctrl**+**.** nebo vyberte žárovky, chyba žárovky nebo šroubovák ikonu na okraji. Zobrazí se vám seznam možných opravy nebo refaktoringů, které můžete provést u tohoto řádku kódu.
 
 ![Náhled návrhů Visual Studio](../ide/media/quick-actions-options.png)
 

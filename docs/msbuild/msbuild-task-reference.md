@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951284"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483975"
 ---
 # <a name="msbuild-task-reference"></a>Referenční dokumentace úlohy nástroje MSBuild
 Úlohy poskytují kód, který se spustí během procesu sestavení. Úkoly v následujícím seznamu jsou součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Když [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] je nainstalovaný, další úkoly jsou k dispozici, které se používají k vytváření [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty. Další informace najdete v tématu [Visual C++ – úkoly](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -130,7 +130,10 @@ ms.locfileid: "54951284"
  [Getassemblyidentity – úloha](../msbuild/getassemblyidentity-task.md)  
  Načte identit sestavení ze zadaných souborů a vypíše informace o identitě.  
 
- [Getframeworkpath – úloha](../msbuild/getframeworkpath-task.md)  
+ [GetFileHash úkolu](../msbuild/getfilehash-task.md)  
+ Vypočítá kontrolních součtů obsah souboru nebo sady souborů.
+
+[Getframeworkpath – úloha](../msbuild/getframeworkpath-task.md)  
  Načte cestu k [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sestavení.  
 
  [GetFrameworkSdkPath task](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ ms.locfileid: "54951284"
 
  [Vbc – úloha](../msbuild/vbc-task.md)  
  Vyvolá kompilátor jazyka Visual Basic vytvoří spustitelné soubory, knihovny DLL nebo moduly kódu...  
+
+ [VerifyFileHash úkolu](../msbuild/verifyfilehash-task.md)  
+ Ověřuje, že soubor odpovídající hodnotě hash očekávaného souboru.
 
  [Warning – úloha](../msbuild/warning-task.md)  
  Protokoly upozornění během sestavení podle Vyhodnocená podmíněném příkazu.  

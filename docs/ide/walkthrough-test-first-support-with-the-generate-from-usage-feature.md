@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115ffb5c22b45a8cdae1f404556d9aab3ed38bad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e90993a6600adaa7f14242289ecb91cf2e74634
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964610"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484105"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Průvodce: Vývoj včasného testování s funkcí generování před využitím
 
@@ -64,7 +64,7 @@ Toto téma popisuje způsob použití [Generovat z využití](../ide/visual-csha
    > [!NOTE]
    >  Technologie IntelliSense teď poskytuje dvě možnosti pro doplňování příkazů IntelliSense: *doplňovacím režimem* a *režim návrhu*. Použijte režim návrhu pro situace, ve kterých se používají třídy a členy, než jsou definovány. Když **IntelliSense** je otevřeno okno, můžete stisknout **Ctrl**+**Alt**+**místo** přepínat mezi doplňovacím režimem a režimem návrhu. Zobrazit [použití IntelliSense](../ide/using-intellisense.md) Další informace. Režim návrhu vám pomůže při psaní `Automobile` v dalším kroku.
 
-3. Vyhledejte `TestMethod1()` metoda a přejmenujte ho na `DefaultAutomobileIsInitializedCorrectly()`. V této metodě vytvoření nové instance třídy s názvem `Automobile`, jak je znázorněno na následujících snímcích obrazovky. Zobrazí se podtržení vlnovkou, což znamená chybu kompilace a [rychlé akce](../ide/quick-actions.md) na levém okraji se zobrazí žárovka (C# pouze), nebo přímo pod vlnovka, pokud se při najetí myší nad ním.
+3. Vyhledejte `TestMethod1()` metoda a přejmenujte ho na `DefaultAutomobileIsInitializedCorrectly()`. V této metodě vytvoření nové instance třídy s názvem `Automobile`, jak je znázorněno na následujících snímcích obrazovky. Zobrazí se podtržení vlnovkou, což znamená chybu kompilace a [rychlé akce](../ide/quick-actions.md) chyba se zobrazí žárovka do levého okraje, nebo přímo pod piktogram Pokud myší.
 
     ![Rychlé akce v jazyce Visual Basic](../ide/media/genclass_underlinevb.png)
 
@@ -90,7 +90,7 @@ Předpokládejme, že specifikace uvádí, že `Automobile` třídy mají dvě v
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Vzhledem k tomu, že kód odkazuje na dva nedefinovanými vlastnostmi `Automobile`, podtržení vlnovkou se zobrazí v části `Model` a `TopSpeed`. Najeďte myší na `Model` a zvolte **rychlé akce** světle žárovku a pak zvolte **generovat vlastnost "Automobile.Model"**.
+2. Vzhledem k tomu, že kód odkazuje na dva nedefinovanými vlastnostmi `Automobile`, podtržení vlnovkou se zobrazí v části `Model` a `TopSpeed`. Najeďte myší na `Model` a zvolte **rychlé akce** chyba světle žárovku a pak zvolte **generovat vlastnost "Automobile.Model"**.
 
 3. Generování provizorního kódu vlastnosti pro `TopSpeed` vlastnost stejným způsobem.
 
@@ -104,12 +104,12 @@ Teď vytvoříme testovací metoda, která se generovat podložení konstruktor 
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Klikněte na tlačítko **rychlé akce** světle kuličky v rámci červená vlnovka a potom klikněte na **generovat konstruktor 'Auto'**.
+2.  Klikněte na tlačítko **rychlé akce** chyba světle kuličky v rámci červená vlnovka a potom klikněte na **generovat konstruktor 'Auto'**.
 
      V `Automobile` třídy souboru, Všimněte si, že nový konstruktor má prověřit, názvy místních proměnných, které se používají ve volání konstruktoru, nalezené vlastnosti, které mají stejné názvy v `Automobile` třídy a zadaný kód v těle konstruktoru na ukládání hodnot argumentů v `Model` a `TopSpeed` vlastnosti.
 
 
-3.  Jakmile vygenerujete nový konstruktor, podtržení vlnovkou se zobrazí pod volání výchozího konstruktoru v `DefaultAutomobileIsInitializedCorrectly`. Chybová zpráva uvádí, že `Automobile` třída nemá žádný konstruktor, který nepřijímá žádné argumenty. Chcete-li generovat explicitní výchozí konstruktor, který nemá žádné parametry, klikněte na tlačítko **rychlé akce** světle žárovku a pak klikněte na **generovat konstruktor 'Auto'**.
+3.  Jakmile vygenerujete nový konstruktor, podtržení vlnovkou se zobrazí pod volání výchozího konstruktoru v `DefaultAutomobileIsInitializedCorrectly`. Chybová zpráva uvádí, že `Automobile` třída nemá žádný konstruktor, který nepřijímá žádné argumenty. Chcete-li generovat explicitní výchozí konstruktor, který nemá žádné parametry, klikněte na tlačítko **rychlé akce** chyba žárovku a pak klikněte na **generovat konstruktor 'Auto'**.
 
 ### <a name="generate-a-stub-for-a-method"></a>Generování zástupných procedur pro metodu
 Předpokládejme, že specifikace uvádí, že nový `Automobile` můžou být přepnuté do `IsRunning` stavu, pokud jeho `Model` a `TopSpeed` vlastnosti jsou nastaveny na jinou hodnotu než výchozí hodnoty.
@@ -119,7 +119,7 @@ Předpokládejme, že specifikace uvádí, že nový `Automobile` můžou být p
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Klikněte na tlačítko **rychlé akce** návrhy pro `myAuto.Start` metoda volání a pak klikněte na **generovat metodu "Automobile.Start"**.
+2.  Klikněte na tlačítko **rychlé akce** chyba návrhy pro `myAuto.Start` metoda volání a pak klikněte na **generovat metodu "Automobile.Start"**.
 
 3.  Klikněte na tlačítko **rychlé akce** návrhy pro `IsRunning` vlastnosti a pak klikněte na tlačítko **generovat vlastnost "Automobile.IsRunning"**.
 

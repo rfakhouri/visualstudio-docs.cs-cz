@@ -1,6 +1,6 @@
 ---
 title: Publikování do Azure App Service
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -10,16 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 3bad335fe9781cbd039f17a1a78c51bfa63775d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970640"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483754"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publikování webové aplikace do služby Azure App Service pomocí sady Visual Studio
 
-Můžete použít **publikovat** nástroj k publikování aplikace v ASP.NET, ASP.NET Core, Node.js a .NET Core do Azure App Service nebo Azure App Service pro Linux (použitím kontejnery). Aplikace v Pythonu, postupujte podle kroků [Python - publikovat do služby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+Pro aplikace ASP.NET, ASP.NET Core, Node.js a .NET Core můžete publikovat do služby Azure App Service nebo Azure App Service pro Linux (pomocí kontejnerů) pomocí některého z následujících metod.
+
+* Průběžné (nebo automatizované) nasazení aplikací, použijte Azure DevOps s využitím [kanály Azure](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+
+* Pro jednorázové (nebo ruční) nasazení aplikací, použijte **publikovat** nástroje v sadě Visual Studio k nasazení aplikace v ASP.NET, ASP.NET Core, Node.js a .NET Core do Azure App Service nebo služby App Service pro Linux (použitím kontejnery). Aplikace v Pythonu, postupujte podle kroků [Python - publikovat do služby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+Tento článek popisuje způsob použití **publikovat** nástroj pro jednorázové nasazení.
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
