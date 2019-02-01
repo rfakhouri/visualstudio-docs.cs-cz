@@ -41,7 +41,7 @@ items:
       href: /aspnet/core/publishing/azure-continuous-deployment
     - name: Publikování do Kubernetes pomocí rozšíření Visual Studio Kubernetes Tools
       href: tutorial-kubernetes-tools.md
-  - name: Nativní
+  - name: C++
     items:
     - name: Nasazení ve Visual C++...
       href: /cpp/ide/deployment-in-visual-cpp
@@ -107,6 +107,8 @@ items:
     - name: Publikování aplikací ClickOnce
       href: publishing-clickonce-applications.md
       items:
+      - name: Publikování aplikace ClickOnce pomocí průvodce publikováním
+        href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
       - name: Vytváření aplikací ClickOnce k implementaci dalšími osobami
         href: creating-clickonce-applications-for-others-to-deploy.md
       - name: Nasazování aplikací pro testovací a produkční servery bez opětovného podepsání
@@ -117,8 +119,6 @@ items:
         href: deploying-com-components-with-clickonce.md
       - name: Vytváření aplikací ClickOnce z příkazového řádku
         href: building-clickonce-applications-from-the-command-line.md
-      - name: Publikování aplikace ClickOnce pomocí průvodce publikováním
-        href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
       - name: Určení cíle kopírování souborů sadou Visual Studio
         href: how-to-specify-where-visual-studio-copies-the-files.md
       - name: Určení umístění, z něhož budou instalovat koncoví uživatelé
@@ -169,21 +169,21 @@ items:
         href: how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-dotnet-framework.md
       - name: Publikování aplikace WPF s povolenými vizuálními styly
         href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
-      - name: 'Návod: Stahování sestavení na vyžádání pomocí Návrháře'
+      - name: 'Průvodce: Stahování sestavení na vyžádání pomocí Návrháře'
         href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
         items:
-        - name: 'Návod: Stahování sestavení na vyžádání'
+        - name: 'Průvodce: Stahování sestavení na vyžádání'
           href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
-      - name: 'Návod: Stahování satelitních sestavení na vyžádání pomocí Návrháře'
+      - name: 'Průvodce: Stahování satelitních sestavení na vyžádání pomocí Návrháře'
         href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-      - name: 'Návod: Ruční nasazení aplikace ClickOnce'
+      - name: 'Průvodce: Ruční nasazení aplikace ClickOnce'
         href: walkthrough-manually-deploying-a-clickonce-application.md
         items:
-        - name: 'Návod: Ruční nasazení aplikace, která nevyžaduje opětovné podepsání'
+        - name: 'Průvodce: Ruční nasazení aplikace, která nevyžaduje opětovné podepsání'
           href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
-      - name: 'Návod: Stahování satelitních sestavení na vyžádání'
+      - name: 'Průvodce: Stahování satelitních sestavení na vyžádání'
         href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md
-      - name: 'Návod: Vytvoření vlastního instalačního programu'
+      - name: 'Průvodce: Vytvoření vlastního instalačního programu'
         href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
     - name: Výběr strategie aktualizace ClickOnce
       href: choosing-a-clickonce-update-strategy.md
@@ -224,7 +224,7 @@ items:
       href: how-to-create-a-package-manifest.md
     - name: Vytvoření lokalizovaného balíčku bootstrapperu
       href: how-to-create-a-localized-bootstrapper-package.md
-    - name: 'Návod: Vytvoření vlastního bootstrapperu s dotazem souvisejícím se soukromím'
+    - name: 'Průvodce: Vytvoření vlastního bootstrapperu s dotazem souvisejícím se soukromím'
       href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
     - name: Referenční schéma balíčku a produktu
       href: product-and-package-schema-reference.md
@@ -290,9 +290,9 @@ items:
         href: customerrorreporting-element-clickonce-deployment.md
     - name: Referenční dokumentace nespravovaného rozhraní API ClickOnce
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: 303890cae6181264f0bcd96e24b27a1065d67d6b
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 427a4156599cbf4ed4fc718c2b5f6199aeef2342
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243975"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484053"
