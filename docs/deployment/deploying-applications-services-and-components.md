@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 920734a76c184b8c0a44fb5118c40fc79ebd539c
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 61da2f7de84ca5ab76e244faa7f45a9527f40515
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483910"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571106"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý start: První pohled na nasazení v sadě Visual Studio
 
@@ -44,7 +44,7 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
     ![Tlačítko Publikovat](../deployment/media/quickstart-publish.png)
 
-- **Modul runtime Visual C++**: Můžete nasadit modulu runtime Visual C++ pomocí místní nasazení nebo statického propojení. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Windows desktop** publikováním aplikací pro stolní počítače Windows do složky pomocí nasazení ClickOnce. Uživatelé pak mohou aplikaci nainstalovat jediným kliknutím. Další informace najdete v tématu [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# a Visual Basic). Pro C + +/ CLR, najdete v článku [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) nebo C/C++, naleznete v tématu [nasazení nativní aplikace pomocí projektu instalace](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publikování do Azure
 
@@ -83,9 +83,7 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
     Můžete také nasadit aplikace ASP.NET a služby v celou řadou způsobů. Další informace najdete v tématu [nasazení webových aplikací a služeb ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Modul runtime Visual C++**: Modul runtime Visual C++ pomocí centrálního nasazení, můžete nasadit. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
-
-- **Windows desktop** můžete publikovat aplikace klasické pracovní plochy Windows na webový server nebo síťové sdílené pomocí nasazení ClickOnce. Uživatelé pak mohou aplikaci nainstalovat jediným kliknutím. Další informace najdete v tématu [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) a [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+- **Windows desktop** můžete publikovat aplikace klasické pracovní plochy Windows na webový server nebo síťové sdílené pomocí nasazení ClickOnce. Uživatelé pak mohou aplikaci nainstalovat jediným kliknutím. Další informace najdete v tématu [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# a Visual Basic). Pro C + +/ CLR, najdete v článku [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) nebo C/C++, naleznete v tématu [nasazení nativní aplikace pomocí projektu instalace](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publikování do Microsoft Store
 

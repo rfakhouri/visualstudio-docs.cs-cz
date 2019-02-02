@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020562"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571184"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony
 
@@ -35,7 +35,7 @@ V tomto kroku se nyní dozvíte, jak:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Krok 2-1: Vytvoření aplikace pomocí výchozí struktury
 
-Aplikace Django je samostatný balíček Pythonu, který obsahuje nastavení sady souvisejících souborů pro konkrétní účel. Django projekt může obsahovat libovolný počet aplikací, která odráží fakt, že webového hostitele může obsluhovat libovolný počet samostatných vstupní body z jedné domény. Například projekt Django pro domény třeba contoso.com může obsahovat jednu aplikaci pro www.contoso.com, druhé aplikace pro support.contoso.com a třetí aplikaci pro docs.contoso.com. V takovém případě se stará o směrování adres URL a nastavení úrovni webu projektu Django (v jeho *urls.py* a *settings.py* soubory), zatímco každá aplikace má vlastní různých stylů a chování prostřednictvím jeho vnitřní směrování, zobrazení, modely, statické soubory a rozhraní pro správu.
+Aplikace Django je samostatný balíček Pythonu, který obsahuje nastavení sady souvisejících souborů pro konkrétní účel. Django projekt může obsahovat libovolný počet aplikací, která odráží fakt, že webového hostitele může obsluhovat libovolný počet samostatných vstupní body z jedné domény. Například projektu Django pro doménu, třeba contoso.com může obsahovat jednu aplikaci pro `www.contoso.com`, druhé aplikace pro support.contoso.com a třetí aplikace pro docs.contoso.com. V takovém případě se stará o směrování adres URL a nastavení úrovni webu projektu Django (v jeho *urls.py* a *settings.py* soubory), zatímco každá aplikace má vlastní různých stylů a chování prostřednictvím jeho vnitřní směrování, zobrazení, modely, statické soubory a rozhraní pro správu.
 
 Aplikace Django obvykle začíná standardní sadu souborů. Visual Studio obsahuje šablony položek k inicializaci aplikace Django v rámci projektu Django, spolu s integrované příkaz, který slouží ke stejnému účelu:
 

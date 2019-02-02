@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 14e56ddbedb419b41f413b014391fc69caecc9dd
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344704"
----
-# <a name="visual-studio-2017-documentation"></a>Dokumentace k sadě Visual Studio 2017
+# <a name="visual-studio-documentation"></a>Dokumentace sady Visual Studio
 
-Vítej! Toto úložiště obsahuje zdrojové soubory pro technickou dokumentaci sady Visual Studio 2017. Témata jsou publikovány v [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
+Vítej! Toto úložiště obsahuje zdrojové soubory pro technickou dokumentaci sady Visual Studio. Témata jsou publikovány v [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
 
 Toto úložiště se přesunul 23. června 2017 od https://github.com/Microsoft/vsdocs. Tady přesměruje přenosy na staré adresy URL.
 

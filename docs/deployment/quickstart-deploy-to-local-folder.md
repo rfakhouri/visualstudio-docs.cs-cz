@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0772e44bf7636edd84c88b3dbaedce7bf2f51604
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 5627cd0f5ad37a7f92408e887b87d5eda14706eb
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483559"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571224"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Nasazení aplikace do místní složky pomocí sady Visual Studio
 
@@ -24,7 +24,7 @@ Můžete použít **publikovat** nástroj pro publikování aplikace ASP.NET, AS
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Pokud je potřeba publikovat do místní složky aplikace pracovní plochy Windows, přečtěte si téma [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# nebo Visual Basic) nebo [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) (C++).
+> Pokud je potřeba publikovat do místní složky aplikace pracovní plochy Windows, přečtěte si téma [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# nebo Visual Basic). Pro C + +/ CLR, najdete v článku [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) nebo C/C++, naleznete v tématu [nasazení nativní aplikace pomocí projektu instalace](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Nasazení do místní složky
 

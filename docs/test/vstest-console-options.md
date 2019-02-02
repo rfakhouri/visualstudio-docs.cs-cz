@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bd901ad2a57570a11f7a4a9995c30b44d476d3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
+ms.lasthandoff: 02/01/2019
 ms.locfileid: "54924013"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe – možnosti příkazového řádku
@@ -43,7 +43,7 @@ V následující tabulce jsou uvedeny všechny možnosti pro *VSTest.Console.exe
 |**/TestAdapterPath:[*path*]**|Vynutí *vstest.console.exe* procesu použít vlastní adaptéry testu ze zadané cesty (pokud existuje) v testovacím běhu.<br />Příklad: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/ Platform: [*typ platformy*]**|Cílová architektura platformy, které má být použit pro provádění testů.<br />Platné hodnoty jsou x86 x64 a ARM.|
 |**/ Framework: [*verzi rozhraní framework*]**|Cílová verze rozhraní .NET Framework má být použit pro provádění testů.<br />Platné hodnoty jsou Framework35, Framework40, Framework45 a FrameworkUap10.<br />Pokud cílová architektura, která je zadána jako **Framework35**, testy spustit v modulu CLR 4.0 "compatibly režim".<br />Příklad: `/Framework:framework40`|
-|**/TestCaseFilter:[*expression*]**|Spusťte testy, které odpovídají danému výrazu.<br />< výraz\> je ve formátu < vlastnost\>= < hodnota\>[\|< výraz\>].<br />Příklad: `/TestCaseFilter:"Priority=1"`<br />Příklad: "/ TestCaseFilter:" TestCategory = Nightly|FullyQualifiedName=Namespace.ClassName.MethodName".<br />**/Testcasefilter** nemohou být součástí možnost příkazového řádku **/testy** možnost příkazového řádku. <br />Informace o vytváření a používání výrazů naleznete v tématu [testovací případ filtr](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/TestCaseFilter:[*expression*]**|Spusťte testy, které odpovídají danému výrazu.<br />< výraz\> je ve formátu < vlastnost\>= < hodnota\>[\|< výraz\>].<br />Příklad: `/TestCaseFilter:"Priority=1"`<br />Příklad: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** nemohou být součástí možnost příkazového řádku **/testy** možnost příkazového řádku. <br />Informace o vytváření a používání výrazů naleznete v tématu [testovací případ filtr](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zobrazí informace o použití.|
 |**/Logger:[*uri/friendlyname*]**|Zadejte protokolovací nástroj pro výsledky testů.<br />Příklad: Pro protokolování výsledků do Visual Studio Test výsledky souboru (TRX), použijte **/Logger:trx**.<br />Příklad: Pokud chcete publikovat výsledky testů do sady Team Foundation Server, použijte TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Kolekce = < adresa url projektu\>;**<br />**BuildName = < název sestavení\>;**<br />**TeamProject = < název projektu\>;**<br />**[; Platform = < výchozí hodnota je "Jakékoli CPU" >]**<br />**[; Flavor = < výchozí hodnota je "Debug" >]**<br />**[; RunTitle = < název\>]**|
 |**/ ListTests: [*název_souboru*]**|Zobrazí seznam testů v daném kontejneru testů zjištěných.|

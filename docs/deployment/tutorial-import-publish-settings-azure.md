@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46bfb9c93c3cf69b13c7879b25e6855f421fbea9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4400135eb48c68dc855bd38c2155c8e23c2c417c
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003860"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571132"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -37,7 +37,7 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou sadu Visual Studio 2017 a **ASP.NET** a. **NET Framework** úlohy pro vývoj. Pro aplikace .NET Core, musíte také. **.NET Core** pracovního vytížení.
+* Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj pro ASP.NET a web** pracovního vytížení.
 
     Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
@@ -47,9 +47,9 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 1. Na počítači se systémem Visual Studio, zvolte **souboru** > **nový projekt**.
 
-1. V části **Visual C#**  nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně zvolte buď **webová aplikace ASP.NET (.NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
+1. V části **Visual C#**  nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně zvolte buď **webová aplikace ASP.NET (.NET Framework)** nebo (pro C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
 
-    Pokud nevidíte zadaný projekt šablony, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Viz požadavky v tomto článku k identifikaci požadované úlohy sady Visual Studio, které je nutné nainstalovat.
+    Pokud nevidíte zadaný projekt šablony, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Nainstalujte **vývoj pro ASP.NET a web** pracovního vytížení.
 
 1. Zvolte buď **MVC** (.NET Framework) nebo **webové aplikace (Model-View-Controller)** (pro .NET Core) a ujistěte se, že **bez ověřování** je vybrána a potom klikněte na **OK**.
 

@@ -1,7 +1,7 @@
 ---
 title: Publikování do služby IIS pomocí importu nastavení publikování
 description: Vytváření a import profilu publikování k nasazení aplikace do služby IIS ze sady Visual Studio
-ms.date: 05/07/2018
+ms.date: 01/31/2019
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 064eb9f57db538df4cae32777e9ac61359ddea4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 392770ae5a4ae37431c588d8d15f26a318bdc2c2
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026877"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571044"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby IIS pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -38,19 +38,21 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou sadu Visual Studio 2017 a **ASP.NET** a **rozhraní .NET Framework** úlohy pro vývoj. Pro aplikace .NET Core, musíte také **.NET Core** pracovního vytížení.
+* Na svém vývojovém počítači, musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj pro ASP.NET a web** pracovního vytížení.
 
     Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
-* Generovat soubor nastavení publikování ze služby IIS, musíte mít počítač se systémem Windows Server 2012 nebo Windows Server 2016 a musí mít roli Webový Server služby IIS správně nakonfigurován. Musí také nainstalovaná technologie ASP.NET 4.5 nebo ASP.NET Core. ASP.NET Core, najdete v části [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 naleznete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Na serveru, musíte používat Windows Server 2012 nebo Windows Server 2016 a musí mít [role webového serveru IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) správně nainstalovaný (vyžadovaných ke generování souboru nastavení publikování (*\*. publishsettings*)). ASP.NET 4.5 nebo ASP.NET Core musí také nainstalovaná na serveru. Nastavení technologie ASP.NET 4.5, naleznete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core, naleznete v tématu [hostitele ASP.NET Core ve Windows se službou IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Vytvoření nového projektu ASP.NET v sadě Visual Studio
 
 1. Na počítači se systémem Visual Studio, zvolte **souboru** > **nový projekt**.
 
-1. V části **Visual C#**  nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně zvolte buď **webová aplikace ASP.NET (.NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
+1. V části **Visual C#**  nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně zvolte buď **webová aplikace ASP.NET (.NET Framework)** nebo (pro C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
 
-    Pokud nevidíte zadaný projekt šablony, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Viz požadavky v tomto článku k identifikaci požadované úlohy sady Visual Studio, které je nutné nainstalovat.
+    Pokud nevidíte zadaný projekt šablony, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Nainstalujte **vývoj pro ASP.NET a web** pracovního vytížení.
+
+    Šablona projektu zvolte (ASP.NET nebo ASP.NET Core) musí odpovídat 
 
 1. Zvolte buď **MVC** (.NET Framework) nebo **webové aplikace (Model-View-Controller)** (pro .NET Core) a ujistěte se, že **bez ověřování** je vybrána a potom klikněte na **OK**.
 
