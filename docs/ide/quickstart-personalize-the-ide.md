@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4fc268c085b7c1fe83889a0f8860ee665cc7a4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2573e2de0dba830269711b9ee08f6f3ac2a24522
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011742"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690357"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý start: Přizpůsobení integrovaného vývojového prostředí sady Visual Studio a Editor
 
 V tomto rychlém startu 5 až 10 minut přizpůsobíme barevný motiv sady Visual Studio tak, že vyberete tmavý motiv. Přizpůsobíme také barvy pro dva různé typy textu v textovém editoru.
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 ## <a name="set-the-color-theme"></a>Nastavit barevný motiv
 

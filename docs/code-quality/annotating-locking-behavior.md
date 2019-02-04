@@ -33,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835289"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690307"
 ---
 # <a name="annotating-locking-behavior"></a>Zadávání poznámek o chování při zamykání
 Předejdete tak chybám souběžnosti ve vašem vícevláknovém programu, vždy postupujte podle příslušné zamykání disciplína a použití anotací SAL.
@@ -105,6 +105,19 @@ Předejdete tak chybám souběžnosti ve vašem vícevláknovém programu, vždy
 |`_Interlocked_`|Označí proměnné a je ekvivalentní `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Parametr s poznámkami funkce je operand target jednoho z různých funkcí Interlocked.  Těmito operandy musí mít specifické další vlastnosti.|
 |`_Write_guarded_by_(expr)`|Označí proměnné a označuje, že vždy, když je proměnná je upraveno, počet zámků zámek objektu, který je pojmenován podle `expr` je alespoň jednou.|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Smart Lock a RAII poznámky
+ Chytré zámky obvykle zabalení nativních zámky a spravovat jejich životního cyklu. V následující tabulce jsou uvedeny poznámky, které lze použít s Chytré zámky a RAII, pravidel psaní kódu s podporou `move` sémantiku.
+
+|Poznámka|Popis|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|Určuje analyzátor předpokládat, že získala funkce smart lock. Tato poznámka očekává, že zámek typu odkaz jako svůj parametr.|
+|`_Analysis_assume_smart_lock_released_`|Určuje analyzátor předpokládat, že byl vydán funkce smart lock. Tato poznámka očekává, že zámek typu odkaz jako svůj parametr.|
+|`_Moves_lock_(target, source)`|Popisuje `move constructor` operace, která přenáší Stav zámku z `source` objektu `target`. `target` Se považuje za nově konstruovaný objekt, takže státy měly předtím, než je ztráty a nahrazuje `source` stavu. `source` Je také obnovit do čistého stavu s žádný zámek počty nebo aliasy cíl, ale aliasy přechodem na zůstanou beze změny.|
+|`_Replaces_lock_(target, source)`|Popisuje `move assignment operator` sémantiku, kde cílový zámek je uvolněn před přenosem stav ze zdroje. To lze považovat jako kombinace `_Moves_lock_(target, source)` předcházet párový příkaz `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Popisuje standardní `swap` chování, které předpokládá, že objekty `left` a `right` exchange jejich stav. Stav vyměňují zahrnuje zamykací počet a aliasy cíl, pokud jsou k dispozici. Aliasy, které odkazují na `left` a `right` objekty zůstanou beze změny.|
+|`_Detaches_lock_(detached, lock)`|Popisuje scénář, ve kterém typ obálky zámek umožňuje odmítnuto s jeho obsaženého zdroje. To se podobá postupu `std::unique_ptr` funguje s jeho vnitřní ukazatel: umožňuje programátorům extrahovat ukazatele a ponechat jeho kontejneru inteligentního ukazatele v čistém stavu. Podporuje podobnou logiku `std::unique_lock` a může být implementováno v zámek vlastní obálky. Odpojit zámku zůstane ve stavu (zámek počet a aliasy cíl, pokud existuje), i když je obálka resetovat tak, aby obsahovala nulový počet zámků a žádný cíl vyhlazení při zachování vlastní aliasy. Neexistuje žádná operace na zamykací počet (uvolnění a získávání). Tato poznámka se chová stejně jako `_Moves_lock_` s tím rozdílem, že odpojená argument by měl být `return` spíše než `this`.|
 
 ## <a name="see-also"></a>Viz také
 

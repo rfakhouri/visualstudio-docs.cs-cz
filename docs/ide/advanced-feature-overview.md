@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5b321169253202c397d09b9d6daac439213b55
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 3fa12b878a21523e53a3ff78ad838e41eb95888f
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089208"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690434"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkce sady Visual Studio 2017
 
@@ -24,7 +24,7 @@ ms.locfileid: "55089208"
 
 Modulární instalačního programu sady Visual Studio vám umožní vybrat a nainstalovat *úlohy*. Úlohy jsou skupiny funkce potřebné pro programovací jazyk a platformu, kterému dáváte přednost. Tato strategie pomáhá, aby nárokům na místo instalace sady Visual Studio, která je menší, což znamená, že instalace a aktualizace moc rychlejší.
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 Další informace o nastavení sady Visual Studio na systém najdete v tématu [instalace sady Visual Studio 2017](../install/install-visual-studio.md).
 

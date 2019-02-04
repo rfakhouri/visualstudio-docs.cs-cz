@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 113a333c7a1ca100b6572f730ec9291ffc20ff87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b9777fc9bbe22e394c06152808d35b3f0a549d4
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939176"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690525"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Vítá vás Visual Studio IDE | Visual Basic
 
@@ -98,7 +98,7 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
 ## <a name="install-the-visual-studio-ide"></a>Instalace sady Visual Studio IDE
 
-Tomto přehledovém článku vás provede vytvořením jednoduchého projektu a zkusit některé z akcí můžete provést pomocí sady Visual Studio, jako je změna barevného motivu pomocí [IntelliSense](../../ide/using-intellisense.md) jako podpory kódování a ladění aplikace zobrazíte hodnotu Proměnná během provádění programu. Abyste mohli začít, [Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a nainstalovat do vašeho systému.
+Tomto přehledovém článku vás provede vytvořením jednoduchého projektu a zkusit některé z akcí můžete provést pomocí sady Visual Studio, jako je změna barevného motivu pomocí [IntelliSense](../../ide/using-intellisense.md) jako podpory kódování a ladění aplikace zobrazíte hodnotu Proměnná během provádění programu. Abyste mohli začít, [Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) a nainstalovat do vašeho systému.
 
 Modulární instalačního programu umožňuje vybrat a nainstalovat *úlohy*, což jsou skupiny funkce potřebné pro programovací jazyk nebo platformu dáváte přednost. Postupovat podle kroků pro [vytvoření programu](#create-a-program), je nutné vybrat **vývoj pro různé platformy .NET Core** úloh během instalace.
 

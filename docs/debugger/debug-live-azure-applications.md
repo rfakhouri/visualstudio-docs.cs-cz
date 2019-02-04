@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 5c21fbbee529cc67f31df98f4a441fdefa3bae6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f0936078039c4c1071f0214b61702a7f57f794ec
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020110"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690189"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění živé aplikace ASP.NET Azure pomocí ladicího programu snímků
 
@@ -37,7 +37,7 @@ V tomto kurzu se naučíte:
 
 * Snapshot Debugger je dostupná jenom pro Visual Studio Enterprise 2017 verze 15.5 nebo novější s **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
 
-    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo novější. Při aktualizaci z předchozí instalace sady Visual Studio 2017, spusťte instalační program sady Visual Studio a vrátit se změnami komponenty ladicího programu snímků **úlohy pro vývoj pro ASP.NET a web**.
+    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) nebo novější. Při aktualizaci z předchozí instalace sady Visual Studio 2017, spusťte instalační program sady Visual Studio a vrátit se změnami komponenty ladicího programu snímků **úlohy pro vývoj pro ASP.NET a web**.
 
 * Plán služby App Service Basic nebo vyšší.
 

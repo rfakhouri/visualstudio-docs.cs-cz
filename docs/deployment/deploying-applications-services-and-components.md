@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61da2f7de84ca5ab76e244faa7f45a9527f40515
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: e083acb49d430c749929d84f58f59229fbde46ab
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571106"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690512"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý start: První pohled na nasazení v sadě Visual Studio
 
@@ -101,17 +101,17 @@ Ze sady Visual Studio můžete vytvořit balíčky aplikací pro nasazení na Mi
 
 Pokud provádíte nasazení aplikace pro UPW pro testování na zařízení, přečtěte si téma [aplikací pro UWP spuštění na vzdáleném počítači v sadě Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="create-an-installer-package-windows-client"></a>Vytvoření instalačního balíčku (klienta Windows)
+## <a name="create-an-installer-package-windows-desktop"></a>Vytvoření instalačního balíčku (Windows desktop)
 
-Pokud potřebujete více o složitou instalace aplikace pracovní plochy než [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) může poskytovat, můžete vytvořit instalační balíček, projekt instalace nebo vlastní zaváděcí nástroj.
+Pokud potřebujete více komplexní instalace aplikací pro stolní počítače než [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) může poskytovat, můžete vytvořit balíček Instalační služby systému Windows (MSI a EXE instalační soubor) nebo vlastní zaváděcí nástroj.
 
-- Instalační program na základě Instalační služby MSI WiX lze vytvořit pomocí [rozšíření Visual Studio 2017 WiX Toolset](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
+- Balíček MSI Instalační program je možné vytvořit [rozšíření Visual Studio 2017 WiX Toolset](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). To je sada nástrojů pro příkazový řádek.
 
-- [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera softwaru může být použit s Visual Studio 2017 (Community Edition nejsou podporovány). Všimněte si, že program InstallShield Limited Edition je již součástí sady Visual Studio a v sadě Visual Studio 2017; se nepodporuje Obraťte se na [Flexera softwaru](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o budoucí dostupnosti.
+- Balíček Instalační služby MSI a EXE lze vytvořit pomocí [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera softwaru. InstallShield může být použit s Visual Studio 2017 (Community Edition nejsou podporovány). Všimněte si, že program InstallShield Limited Edition je již součástí sady Visual Studio a v sadě Visual Studio 2017; se nepodporuje Obraťte se na [Flexera softwaru](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o budoucí dostupnosti.
 
-- Pokud chcete vytvořit projekt instalace (vdproj), nainstalujte [projekty instalačního programu Visual Studio 2017 rozšíření](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Balíček Instalační služby MSI a EXE lze vytvořit pomocí projektu instalace (vdproj). Chcete-li použít tuto možnost, nainstalujte [projekty instalačního programu Visual Studio 2017 rozšíření](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
-- Požadované součásti pro aplikace klasické pracovní plochy můžete nainstalovat pomocí konfigurace obecného instalačního programu, který je označován jako zaváděcí nástroj. Další informace najdete v tématu [nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md).
+- Můžete také nainstalovat požadované součásti pro desktopové aplikace pomocí konfigurace obecného instalačního programu, který je označován jako zaváděcí nástroj. Další informace najdete v tématu [nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md).
 
 ## <a name="deploy-to-test-lab"></a>Nasazení do testovací laboratoře
 

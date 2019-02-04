@@ -13,12 +13,12 @@ f1_keywords:
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: c56bd7bbfdd162a354432814decb2450eff6f360
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e8ed42160d6bdbcc6b68a1652ff725c7e1d75e3a
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070458"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690308"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimalizace výkonu sady Visual Studio
 
@@ -26,7 +26,7 @@ Tento článek obsahuje několik návrhů vyzkoušet, pokud zjistíte, že Visua
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Upgrade na Visual Studio 2017 verze 15.6 nebo novější
 
-Pokud aktuálně používáte Visual Studio 2015, stáhněte si [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zdarma, podívejte se na jeho vylepšení výkonu. Řešení se načítají dvakrát až třikrát rychleji v sadě Visual Studio 2017 se vylepšení výkonu v jiných oblastech příliš. Visual Studio 2017 je vedle sebe kompatibilní s Visual Studiem 2015, takže nic nepřijdete a vyzkoušejte si.
+Pokud aktuálně používáte Visual Studio 2015, stáhněte si [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) zdarma, podívejte se na jeho vylepšení výkonu. Řešení se načítají dvakrát až třikrát rychleji v sadě Visual Studio 2017 se vylepšení výkonu v jiných oblastech příliš. Visual Studio 2017 je vedle sebe kompatibilní s Visual Studiem 2015, takže nic nepřijdete a vyzkoušejte si.
 
 Pokud aktuálně používáte Visual Studio 2017, ujistěte se, že používáte verzi 15.6 nebo novější. Dat udávají, že řešení se načtení do dvakrát nebo třikrát rychlejší ve verzi 15.6. Stáhněte si ho [tady](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 

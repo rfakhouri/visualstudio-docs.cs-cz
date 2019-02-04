@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f34f686b91d6a140e975c13eec72e8703a1b47ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 91e32cdae7310a99021946315279736bddb094a8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945245"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690135"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Postupy: Vygenerování dat metrik kódu
 
@@ -49,46 +49,58 @@ Výsledky jsou generovány a **výsledků metrik kódu** se zobrazí okno. Chcet
 
 ## <a name="command-line-code-metrics"></a>Metriky kódu příkazového řádku
 
-Můžete vygenerování dat metrik kódu z příkazového řádku pro C# a projekty Visual Basic pro aplikace rozhraní .NET Framework, .NET Core a .NET Standard. Nástroje příkazového řádku kódu metriky se nazývá *Metrics.exe*.
+Můžete vygenerování dat metrik kódu z příkazového řádku pro C# a projekty Visual Basic pro aplikace rozhraní .NET Framework, .NET Core a .NET Standard. Chcete-li spustit kód metriky z příkazového řádku, nainstalovat [balíček Microsoft.CodeAnalysis.Metrics NuGet](#microsoftcodeanalysismetrics-nuget-package) nebo sestavení [Metrics.exe](#metricsexe) spustitelný sami.
 
-Získat *Metrics.exe* spustitelný soubor, je nutné [generovat sami](#generate-the-executable). V blízké budoucnosti [publikované verze *Metrics.exe* bude k dispozici](https://github.com/dotnet/roslyn-analyzers/issues/1756) aby nemuseli vytvářet sami.
+### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Balíček Microsoft.CodeAnalysis.Metrics NuGet
 
-### <a name="generate-the-executable"></a>Generovat spustitelný soubor
-
-Ke generování spustitelný soubor *Metrics.exe*, postupujte podle těchto kroků:
-
-1. Klonování [dotnet /-analyzátory roslyn](https://github.com/dotnet/roslyn-analyzers) úložiště.
-2. Otevřete příkazový řádek pro vývojáře pro sadu Visual Studio jako správce.
-3. Z kořenové složky **analyzátory roslyn** úložiště, spusťte následující příkaz: `Restore.cmd`
-4. Změňte adresář na *src\Tools*.
-5. Spusťte následující příkaz k sestavení **Metrics.csproj** projektu:
-
-   ```shell
-   msbuild /m /v:m /p:Configuration=Release Metrics.csproj
-   ```
-
-   Spustitelný soubor s názvem *Metrics.exe* generován *artifacts\bin* adresáře v kořenovém adresáři úložiště.
-
-   > [!TIP]
-   > K vytvoření *Metrics.exe* v [režim starší verze](#legacy-mode), spusťte následující příkaz:
-   >
-   > ```shell
-   > msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
-   > ```
-
-### <a name="usage"></a>Použití
-
-Ke spuštění *Metrics.exe*, zadat projekt nebo řešení a výstup XML souboru jako argumenty. Příklad:
+Po instalaci je nejjednodušší způsob, jak vygenerování dat metrik kódu z příkazového řádku [Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) balíček NuGet. Po instalaci balíčku, spusťte `msbuild /t:Metrics` z adresáře, který obsahuje váš soubor projektu. Příklad:
 
 ```shell
-C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
-Loading ConsoleApp20.csproj...
-Computing code metrics for ConsoleApp20.csproj...
-Writing output to 'report.xml'...
-Completed Successfully.
+C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
+Microsoft (R) Build Engine version 16.0.360-preview+g9781d96883 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/22/2019 4:29:57 PM.
+Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" on node 1 (Metrics target(s))
+.
+Metrics:
+  C:\source\repos\ClassLibrary3\packages\Microsoft.CodeMetrics.2.6.4-ci\build\\..\Metrics\Metrics.exe /project:C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj /out:ClassLibrary3.Metrics.xml
+  Loading ClassLibrary3.csproj...
+  Computing code metrics for ClassLibrary3.csproj...
+  Writing output to 'ClassLibrary3.Metrics.xml'...
+  Completed Successfully.
+Done Building Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" (Metrics target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
 ```
 
-### <a name="output"></a>Výstup
+Název výstupního souboru můžete přepsat zadáním `/p:MetricsOutputFile=<filename>`. Můžete také získat [starý styl](#previous-versions) data metrik kódu tak, že zadáte `/p:LEGACY_CODE_METRICS_MODE=true`. Příklad:
+
+```shell
+C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
+Microsoft (R) Build Engine version 16.0.360-preview+g9781d96883 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/22/2019 4:31:00 PM.
+The "MetricsOutputFile" property is a global property, and cannot be modified.
+Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" on node 1 (Metrics target(s))
+.
+Metrics:
+  C:\source\repos\ClassLibrary3\packages\Microsoft.CodeMetrics.2.6.4-ci\build\\..\Metrics.Legacy\Metrics.Legacy.exe /project:C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj /out:Legacy.xml
+  Loading ClassLibrary3.csproj...
+  Computing code metrics for ClassLibrary3.csproj...
+  Writing output to 'Legacy.xml'...
+  Completed Successfully.
+Done Building Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" (Metrics target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+```
+
+### <a name="code-metrics-output"></a>Výstup metrik kódu
 
 Generovaný výstup XML má následující formát:
 
@@ -124,7 +136,7 @@ Generovaný výstup XML má následující formát:
                   <Metric Name="LinesOfCode" Value="7" />
                 </Metrics>
                 <Members>
-                  <Method Name="void Program.Main(string[] args)" File="C:\Users\mavasani\source\repos\ConsoleApp20\ConsoleApp20\Program.cs" Line="7">
+                  <Method Name="void Program.Main(string[] args)" File="C:\source\repos\ConsoleApp20\ConsoleApp20\Program.cs" Line="7">
                     <Metrics>
                       <Metric Name="MaintainabilityIndex" Value="100" />
                       <Metric Name="CyclomaticComplexity" Value="1" />
@@ -143,27 +155,55 @@ Generovaný výstup XML má následující formát:
 </CodeMetricsReport>
 ```
 
-### <a name="tool-differences"></a>Nástroj rozdíly
+### <a name="metricsexe"></a>Metrics.exe
 
-Předchozí verze sady Visual Studio, včetně sady Visual Studio 2015, zahrnout metriky nástroj příkazového řádku kódu volá *Metrics.exe*. Tuto předchozí verzi nástroje nebylo binární analýzy, to znamená, analýzy založené na sestavení. Nový nástroj analyzuje zdrojový kód místo. Protože nová *Metrics.exe* je zdrojem založený na kódu, výsledky se liší na co je vygenerována v předchozích verzích nástroje *Metrics.exe* a integrovaného vývojového prostředí Visual Studio 2017.
+Pokud nechcete nainstalovat balíček NuGet, můžete vygenerovat a použít *Metrics.exe* přímo spustitelnému souboru. Ke generování *Metrics.exe* spustitelný:
 
-Nové *Metrics.exe* nástroje můžete vypočítat metriky i v případě výskytu chyby zdrojového kódu, tak dlouho, dokud je možné načíst řešení a projektu.
+1. Klonování [dotnet /-analyzátory roslyn](https://github.com/dotnet/roslyn-analyzers) úložiště.
+2. Otevřete příkazový řádek pro vývojáře pro sadu Visual Studio jako správce.
+3. Z kořenové složky **analyzátory roslyn** úložiště, spusťte následující příkaz: `Restore.cmd`
+4. Změňte adresář na *src\Tools*.
+5. Spusťte následující příkaz k sestavení **Metrics.csproj** projektu:
 
-#### <a name="metric-value-differences"></a>Rozdíly hodnota metriky
+   ```shell
+   msbuild /m /v:m /p:Configuration=Release Metrics.csproj
+   ```
 
-`LinesOfCode` Metrika je více přesným a spolehlivým na novém *Metrics.exe*. Je nezávislý na případné rozdíly codegen a nezmění, pokud se změní sadu nástrojů nebo modulu runtime. Nové *Metrics.exe* počítá skutečné řádky kódu, včetně prázdné řádky a komentáře.
+   Spustitelný soubor s názvem *Metrics.exe* generován *artifacts\bin* adresáře v kořenovém adresáři úložiště.
 
-Jiné metriky, jako `CyclomaticComplexity` a `MaintainabilityIndex` stejné vzorce použít jako předchozí verze *Metrics.exe*, ale nové *Metrics.exe* spočítá `IOperations` (logické zdroje pokyny) namísto instrukce (IL intermediate language). Čísla budou mírně lišit od předchozích verzí *Metrics.exe* a z výsledků metrik kódu IDE sady Visual Studio 2017.
+#### <a name="metricsexe-usage"></a>Metrics.exe využití
 
-### <a name="legacy-mode"></a>Režim starší verze
+Ke spuštění *Metrics.exe*, zadat projekt nebo řešení a výstup XML souboru jako argumenty. Příklad:
 
-Můžete také sestavit *Metrics.exe* v *režim starší verze*. Režim starší verze nástroje generuje hodnoty metrik, které jsou blíž ke jaké starší verze generovaných nástrojem. Kromě toho v režimu starší verze *Metrics.exe* generuje metriky kódu pro stejnou sadu metoda typy, které jsou předchozí verze generovaných nástrojem metriky kódu pro. Například pro pole a vlastnosti inicializátory negeneroval dat metrik kódu. Starší režim je užitečný pro zpětnou kompatibilitu nebo pokud máte brány vrácení se změnami kódu na základě metrik kódu čísla. Příkaz k vytvoření *Metrics.exe* v režimu starší verze je:
+```shell
+C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
+Loading ConsoleApp20.csproj...
+Computing code metrics for ConsoleApp20.csproj...
+Writing output to 'report.xml'...
+Completed Successfully.
+```
+
+#### <a name="legacy-mode"></a>Režim starší verze
+
+Můžete také sestavit *Metrics.exe* v *režim starší verze*. Režim starší verze nástroje generuje hodnoty metrik, které jsou blíž k co [starší verze generovaných nástrojem](#previous-versions). Kromě toho v režimu starší verze *Metrics.exe* generuje metriky kódu pro stejnou sadu metoda typy, které jsou předchozí verze generovaných nástrojem metriky kódu pro. Například pro pole a vlastnosti inicializátory negeneroval dat metrik kódu. Starší režim je užitečný pro zpětnou kompatibilitu nebo pokud máte brány vrácení se změnami kódu na základě metrik kódu čísla. Příkaz k vytvoření *Metrics.exe* v režimu starší verze je:
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ```
 
 Další informace najdete v tématu [povolit generování metriky kódu v režimu starší verze](https://github.com/dotnet/roslyn-analyzers/pull/1841).
+
+### <a name="previous-versions"></a>Předchozí verze
+
+Předchozí verze sady Visual Studio, včetně sady Visual Studio 2015, zahrnout metriky nástroj příkazového řádku kódu, který se také nazývá *Metrics.exe*. Tuto předchozí verzi nástroje nebylo binární analýzy, to znamená, analýzy založené na sestavení. Nový nástroj analyzuje zdrojový kód místo. Protože nové metriky nástroj příkazového řádku kódu je zdrojem založený na kódu, výsledky se liší na co je vygenerována v předchozích verzích nástroje *Metrics.exe* a integrovaného vývojového prostředí Visual Studio 2017.
+
+Nový nástroj pro příkazový řádek kódu metriky vypočítá metriky i v případě výskytu chyby zdrojového kódu, za předpokladu, je možné načíst řešení a projektu.
+
+#### <a name="metric-value-differences"></a>Rozdíly hodnota metriky
+
+`LinesOfCode` Metrika je více přesným a spolehlivým v nové metriky nástroj příkazového řádku kódu. Je nezávislý na případné rozdíly codegen a nezmění, pokud se změní sadu nástrojů nebo modulu runtime. Nový nástroj počítá skutečné řádky kódu, včetně prázdné řádky a komentáře.
+
+Jiné metriky, jako `CyclomaticComplexity` a `MaintainabilityIndex` stejné vzorce použít jako předchozí verze *Metrics.exe*, ale nový nástroj vypočítá počet `IOperations` (logické zdroj pokyny) namísto zprostředkující instrukcí jazyka (IL). Čísla budou mírně lišit od předchozích verzí *Metrics.exe* a z výsledků metrik kódu IDE sady Visual Studio 2017.
 
 ## <a name="see-also"></a>Viz také:
 

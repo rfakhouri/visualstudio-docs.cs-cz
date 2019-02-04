@@ -13,18 +13,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 890bec08c29491bbd867c9c8380172cced71d2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00cf69a949dcd5ad73120c9ce1fccb2b7af9040
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985705"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690366"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Postupy: Distribuce fragmentů kódu
 
 Můžete poskytnout fragmenty svého kódu přátelům a nainstalovat fragmenty kódu ve svých počítačích pomocí **Správce fragmentů kódů**. Pokud máte chcete distribuovat více fragmentů nebo chcete distribuovat více široce, je však zahrnout souboru fragmentu v rozšíření sady Visual Studio. Uživatelé sady Visual Studio můžete nainstalovat rozšíření.
 
-Chcete-li vytvořit rozšíření sady Visual Studio je nutné nainstalovat sadu Visual Studio SDK. Najít verzi nástroje VSSDK, který odpovídá vaší instalaci sady Visual Studio na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+Chcete-li vytvořit rozšíření sady Visual Studio je nutné nainstalovat sadu Visual Studio SDK. Najít verzi nástroje VSSDK, který odpovídá vaší instalaci sady Visual Studio na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Nastavit rozšíření
 

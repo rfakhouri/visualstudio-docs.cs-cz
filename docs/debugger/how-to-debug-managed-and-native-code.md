@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: e817302031ba2ec37102e5b3eb41a5b35460c546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029866"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690239"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Kurz: Ladění C# a C++ ve stejné relaci ladění
 
@@ -44,7 +44,7 @@ Musíte mít Visual Studio nainstalovaný, s následujícími sadami funkcí:
 - **Vývoj desktopových aplikací pomocí C++**
 - Buď **vývoj desktopových aplikací .NET** nebo **.NET Core pro vývoj napříč platformami**, v závislosti na typu aplikace, který chcete vytvořit.
 
-Pokud nemáte Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud nemáte Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potřebujete, vyberte **otevřít instalační program Visual Studio** v levém podokně sady Visual Studio **nový projekt** dialogové okno. Ve Visual Studio Installerem. Vyberte úlohy, které potřebujete a pak vyberte **změnit**.
 

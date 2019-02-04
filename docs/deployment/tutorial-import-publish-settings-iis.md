@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392770ae5a4ae37431c588d8d15f26a318bdc2c2
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: b38f9d951be37619c84095c379879e1acd51cf7b
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571044"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690447"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby IIS pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -40,7 +40,7 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 * Na svém vývojovém počítači, musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj pro ASP.NET a web** pracovního vytížení.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 * Na serveru, musíte používat Windows Server 2012 nebo Windows Server 2016 a musí mít [role webového serveru IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) správně nainstalovaný (vyžadovaných ke generování souboru nastavení publikování (*\*. publishsettings*)). ASP.NET 4.5 nebo ASP.NET Core musí také nainstalovaná na serveru. Nastavení technologie ASP.NET 4.5, naleznete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core, naleznete v tématu [hostitele ASP.NET Core ve Windows se službou IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
 

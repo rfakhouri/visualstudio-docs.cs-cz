@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a5b4cad6d3f033b03f28851fca3c88e9efcc271d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fa182d504fba8a939d44684f1611debec448593
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945096"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690486"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý start: Vytvoření první webové aplikace v Pythonu pomocí sady Visual Studio
 
 V tomto úvodu 5 až 10 minut do sady Visual Studio jako integrované vývojové prostředí Pythonu vytvoříte jednoduchou webovou aplikaci Python, který je založená na platformě Flask. Vytvoření projektu prostřednictvím diskrétní kroky, které vám pomůžou informace o základní funkce sady Visual Studio.
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nainstalovat zdarma. V instalačním programu, je nutné vybrat **vývoj v jazyce Python** pracovního vytížení.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) nainstalovat zdarma. V instalačním programu, je nutné vybrat **vývoj v jazyce Python** pracovního vytížení.
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
