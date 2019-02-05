@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 9cbcdb26b333bc0d4ba0d96d5a81d652666c6c86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d7d07efa862e619961c21962dca20303efed97e
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956087"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742518"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -1390,6 +1390,7 @@ Následující seznam ukazuje dostupné v sadě Visual Studio pravidla formátov
 - Nastavení formátování rozhraní .NET
     - [Uspořádat direktivy using](#usings)
         - dotnet_sort_system_directives_first
+        - dotnet_separate_import_directive_groups
 - Nastavení formátování C#
     - [Možnosti nového řádku](#newline)
         - csharp_new_line_before_open_brace
@@ -1432,6 +1433,7 @@ V následující tabulce jsou uvedeny název pravidla, použitelné jazyky, výc
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 version |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# a Visual Basic | true | 15.3 |
+| dotnet_separate_import_directive_groups | C# a Visual Basic | true | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1458,6 +1460,34 @@ Příklad *.editorconfig* souboru:
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
+```
+
+**DotNet\_samostatné\_importovat\_směrnice\_skupiny**
+
+- Pokud toto pravidlo je nastaven na **true**, prázdný řádek mezi skupiny direktiv using umístit.
+- Pokud toto pravidlo je nastaven na **false**, neumísťujte prázdný řádek mezi skupiny direktiv using.
+
+Příklady kódu:
+
+```csharp
+// dotnet_separate_import_directive_groups = true
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Octokit;
+
+// dotnet_separate_import_directive_groups = false
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Octokit;
+```
+
+Příklad *.editorconfig* souboru:
+
+```EditorConfig
+# .NET formatting settings:
+[*.{cs,vb}]
+dotnet_separate_import_directive_groups = true
 ```
 
 ### <a name="c-formatting-settings"></a>Nastavení formátování C#
@@ -2193,6 +2223,7 @@ charset = utf-8-bom
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:none

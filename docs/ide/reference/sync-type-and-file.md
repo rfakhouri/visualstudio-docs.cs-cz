@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948177"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742427"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Synchronizace typu název souboru nebo název souboru pro typ refaktoring
 
@@ -31,6 +31,9 @@ Tento refaktoring platí pro:
 **Kdy:** Přejmenování souboru nebo typu a ještě neprovedli aktualizaci na odpovídající soubor nebo typ k porovnání.
 
 **Proč:** Typ umístění v souboru s jiným názvem, nebo naopak je obtížné najít, co hledáte. Přejmenováním tento typ nebo název souboru bude kód čitelnější a přehlednější a díky tomu.
+
+> [!NOTE]
+> Tento refaktoring ještě není k dispozici pro projekty .NET Standard a .NET Core.
 
 ## <a name="how-to"></a>Postupy
 
@@ -62,8 +65,6 @@ Tento refaktoring platí pro:
    - Visual Basic: V příkladu níže, soubor **Employee.vb** se přejmenoval na **Person.vb** tak, aby odpovídaly názvu typu.
 
        ![Vložené výsledek jazyka Visual Basic](media/synctype-result-vb.png)
-
-> ! [POZNÁMKA] Tento refaktoring ještě není k dispozici pro projekty .NET Standard a .NET Core.
 
 ## <a name="see-also"></a>Viz také:
 

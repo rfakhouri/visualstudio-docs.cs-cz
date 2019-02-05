@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e083acb49d430c749929d84f58f59229fbde46ab
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690512"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742453"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý start: První pohled na nasazení v sadě Visual Studio
+# <a name="first-look-at-deployment-in-visual-studio"></a>První pohled na nasazení v sadě Visual Studio
 
 Nasazením aplikace, služby nebo komponenty ji budete distribuovat pro instalaci na jiné počítače, zařízení nebo serverech nebo v cloudu. V sadě Visual Studio můžete zvolit vhodnou metodu pro potřebný typ nasazení. (Mnoho typů aplikací podporují další nástroje pro nasazení, jako je například nasazení příkazového řádku nebo NuGet, které nebyly popsány zde.)
 

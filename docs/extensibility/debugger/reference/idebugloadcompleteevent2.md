@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276c2a6bc2d03bb03337404b4ae38bd0a9451fca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0071203200cea00671743fe167ba566ece75d1b2
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029153"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742389"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Toto rozhraní je odesílat pomocí ladicího stroje (DE) Správce ladění relace (SDM) při načtení programu v jazyce, ale před provedením jakéhokoli kódu.  
@@ -33,10 +33,7 @@ IDebugLoadCompleteEvent2 : IUnknown
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  DE vytvoří a odešle tento objekt události oznamuje, že program se úspěšně načetl. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkce zpětného volání, který poskytl SDM při připojení k laděnému programu.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato událost je událostí ukončení a musí mít `EVENT_STOPPING` příznak nastaven na atributy události.  
-  
+   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   

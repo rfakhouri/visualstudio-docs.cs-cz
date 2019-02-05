@@ -1,6 +1,6 @@
 ## <a name="prerequisites"></a>Požadavky
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
   * ASP.NET: **Vývoj pro ASP.NET a web**
   * Node.js: **Vývoj v Node.js**
 

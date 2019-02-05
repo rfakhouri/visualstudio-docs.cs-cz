@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f984a9f7207a8eec77468a3360e2caec5d9400d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c75b635cbdce7662c9e3a30237edb3e004ab7d0c
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036092"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742440"
 ---
 # <a name="receive-activity-designer"></a>Návrhář aktivity Receive
 
@@ -52,7 +52,7 @@ Následující tabulka ukazuje <xref:System.ServiceModel.Activities.Receive> vla
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Určuje kolekci známých typů pro operaci služby implementovaná tímto objektem <xref:System.ServiceModel.Activities.Receive> aktivity. Tuto vlastnost byste měli použít ve spojení s <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> nastavenou na <xref:System.Runtime.Serialization.DataContractSerializer>. Se ignoruje, pokud <xref:System.Xml.Serialization.XmlSerializer> se používá.<br /><br /> Vyberte tlačítko se třemi tečkami vedle **KnownTypes** v mřížce vlastností zobrazíte **Editor typu kolekce** dialogovému oknu, pomocí kterého můžete přidat odpovídající typy. Další informace o použití tohoto pole, najdete v článku [dialogové okno Editor typu kolekce](../workflow-designer/type-collection-editor-dialog-box.md) tématu. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | Určuje, <xref:System.Net.Security.ProtectionLevel> zprávy.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> znamená, že jenom ověřování.<br />2. <xref:System.Net.Security.ProtectionLevel> znamená, že podepsat data k zajištění integrity dat přenášených.<br />3. <xref:System.Net.Security.ProtectionLevel> znamená, že šifrování a podepisování dat k zajištění důvěrnost a integrita dat přenášených. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | Určuje typ serializátoru pro operaci služby, které jsou implementované <xref:System.ServiceModel.Activities.Receive> aktivity. Výchozí hodnota je <xref:System.Runtime.Serialization.DataContractSerializer>, který serializuje a deserializuje instance typu do datový proud XML nebo dokument, který používá zadaný datový kontrakt. <xref:System.Xml.Serialization.XmlSerializer> Lze také pokud je potřeba použít větší kontrolu nad XML. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Určuje akci záhlaví zprávy. Pokud není explicitně nastavena, její výchozí hodnota je: https://tempuri.org/{service obor názvů kontraktu} / {název kontraktu služby} / {název operace}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Určuje akci záhlaví zprávy. Pokud není explicitně nastavena, její výchozí hodnota je: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
 ## <a name="see-also"></a>Viz také:
 
