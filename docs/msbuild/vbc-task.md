@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969665"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768421"
 ---
 # <a name="vbc-task"></a>Vbc – úloha
 Zabalí *vbc.exe*, která vytváří spustitelné soubory (*.exe*), dynamické knihovny (*.dll*), nebo moduly kódu (*.netmodule*). Další informace o *vbc.exe*, naleznete v tématu [příkazového řádku kompilátoru jazyka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -51,7 +51,7 @@ Zabalí *vbc.exe*, která vytváří spustitelné soubory (*.exe*), dynamické k
 | `Imports` | Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Obory názvů se importuje z zadanou položku kolekce. Tento parametr [– importuje](/dotnet/visual-basic/reference/command-line-compiler/imports) přepnout z *vbc.exe* kompilátoru. |
 | `KeyContainer` | Volitelné `String` parametru.<br /><br /> Určuje název kontejneru kryptografických klíčů. Tento parametr [- keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) přepnout z *vbc.exe* kompilátoru. |
 | `KeyFile` | Volitelné `String` parametru.<br /><br /> Určuje název souboru obsahujícího kryptografický klíč. Další informace najdete v tématu [- keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Volitelné <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Určuje jazykovou verzi, "9" nebo "10". |
+| `LangVersion` | Volitelné <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Určuje, [jazykovou verzi](/dotnet/visual-basic/language-reference/configure-language-version), jako je například "15.5". |
 | `LinkResources` | Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Vytvoří odkaz na prostředek rozhraní .NET Framework do výstupního souboru; soubor prostředků není umístěn do výstupního souboru. Tento parametr [- linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) přepnout z *vbc.exe* kompilátoru. |
 | `MainEntryPoint` | Volitelné `String` parametru.<br /><br /> Určuje třídu nebo modul, který obsahuje `Sub Main` postup. Tento parametr [– hlavní](/dotnet/visual-basic/reference/command-line-compiler/main) přepnout z *vbc.exe* kompilátoru. |
 | `ModuleAssemblyName` | Volitelné `String` parametru.<br /><br /> Určuje sestavení, které tento modul je součástí. |

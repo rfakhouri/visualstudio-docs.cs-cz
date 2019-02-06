@@ -9,12 +9,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9f4c00056c93230d588216ff425dee56d42e0961
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3555db278f469dde7754e752dd65b55ec51ceee0
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921091"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768474"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Postup instalace nástroje R pro Visual Studio
 
@@ -30,7 +30,7 @@ V tomto článku:
 
 ## <a name="supported-versions-of-visual-studio"></a>Podporované verze sady Visual Studio
 
-Nástroje R pro Visual Studio (RTVS) se podporuje na Windows s Community (zdarma), Professional a verze Enterprise Edition obou [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a [Visual Studio 2015 Update 3 (nebo vyšší)](http://go.microsoft.com/fwlink/?LinkId=691129) (s přímým přístupem ke stažení).
+Nástroje R pro Visual Studio (RTVS) se podporuje na Windows s Community (zdarma), Professional a verze Enterprise Edition obou [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) a [Visual Studio 2015 Update 3 (nebo vyšší)](http://go.microsoft.com/fwlink/?LinkId=691129) (s přímým přístupem ke stažení).
 
 RTVS není podporována v současné době v sadě Visual Studio pro Mac.
 

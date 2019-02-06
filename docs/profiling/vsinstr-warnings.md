@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a4136a67bea3dc06378265df9f01878c1a14dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 079cf7681f8583b500068c0ca6aea60ce0fad66b
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923974"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767903"
 ---
 # <a name="vsinstr-warnings"></a>Upozornění VSInstr
 Následující tabulka obsahuje seznam upozornění vydané *VSInstr.exe* nástroj. Možnost NOWARN spolu s čísla upozornění můžete potlačit upozornění nezobrazovalo.  
   
 |Číslo upozornění|Popis|  
 |--------------------|-----------------|  
-|**VSP1026**|Pokrytí není podporované u knihoven, které neodkazují na MSCorLib. To je často případ přenosných knihoven.|  
+|**VSP1026**|Pokrytí není podporované u knihoven, které neodkazují na MSCorLib. To je často případ přenosných knihoven.<br /><br />[/EnableCodeCoverage](/visualstudio/test/vstest-console-options) možnost příkazového řádku je vyžadována pro .NET Core.|  
 |**VSP2000**|Vnitřní chyba Nelze získat název souboru modulu tohoto spustitelného souboru.|  
 |**VSP2001**|\<název sestavení > je sestavení se silným názvem. Musí být znovu podepsat předtím, než mohou být provedeny.<br /><br /> K tomuto upozornění dochází, když je instrumentováno podepsané sestavení. Můžete použít *sn.exe* nástroj pro binární soubor znovu podepsat nebo dočasné vypnutí požadavek silným názvem. Další informace najdete v tématu [Sn.exe (nástroj pro silný název)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|Nelze nalézt funkci \<funcname > v souboru \<název souboru ><br /><br /> K tomuto upozornění dochází, pokud funkci nelze umístit do zadaného souboru.|  

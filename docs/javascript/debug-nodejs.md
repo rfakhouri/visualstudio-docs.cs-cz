@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f3b2e3c5179c5edb390fc494b49ba0051e04108e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995053"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768402"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Ladění aplikací v jazyce JavaScript nebo TypeScript v sadě Visual Studio
 
 Můžete ladit JavaScript a TypeScript kódu pomocí sady Visual Studio. Můžete nastavit a dosažení zarážky, připojení ladicího programu, kontrolovat proměnné, zobrazení zásobníku volání a používat další funkce ladění.
 
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Ladění skriptů na straně serveru
 

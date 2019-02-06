@@ -1,7 +1,7 @@
 ---
 title: Vytvoření offline instalace
 description: Zjistěte, jak v režimu offline instalace sady Visual Studio, když máte nespolehlivým připojení k Internetu nebo s malou šířkou pásma.
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a9c30570a284e037dc529b7ffa90eb2ed7d80c7
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035520"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768202"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Vytvoření offline instalace sady Visual Studio 2017
 
-Jsme navrhovali Visual Studio 2017, aby dobře fungovaly v různých konfiguracích sítě a počítače. Přestože doporučujeme vám vyzkoušet [webovou Instalační službu sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;což je malý soubor a umožňuje aktuální nejnovější opravy a funkce&mdash;rozumí tomu, že nemusí být možné.
+Jsme navrhovali Visual Studio 2017, aby dobře fungovaly v různých konfiguracích sítě a počítače. Přestože doporučujeme vám vyzkoušet [webovou Instalační službu sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;což je malý soubor a umožňuje aktuální nejnovější opravy a funkce&mdash;rozumí tomu, že nemusí být možné.
 
 Například může mít nespolehlivé připojení k Internetu nebo, pokud má s malou šířkou pásma. Pokud ano, máte několik možností: Můžete použít novou "Vše stáhnout, potom nainstalovat" funkcí ke stažení souborů, před instalací nebo příkazového řádku můžete vytvořit místní mezipaměť souborů.
 
@@ -33,10 +33,14 @@ Například může mít nespolehlivé připojení k Internetu nebo, pokud má s 
 
 ## <a name="use-the-download-all-then-install-feature"></a>Používá "vše stáhnout, potom nainstalovat" funkce
 
-[**Novinka v 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): Po stažení webovou Instalační službu vyberte novou **vše stáhnout, potom nainstalovat** možnost z instalačního programu sady Visual Studio. Pokračujte s instalací.
+[**Novinka v 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Po stažení webovou Instalační službu vyberte novou **vše stáhnout, potom nainstalovat** možnost z instalačního programu sady Visual Studio. Pokračujte s instalací.
 
    !["Vše stáhnout, potom nainstalovat" možnost](media/download-all-then-install.png)
+
+Jsme navrhovali "vše stáhnout, potom nainstalovat" funkce tak, aby Visual Studio si můžete stáhnout jako jedna instalace pro stejný počítač, na který jste stáhli. Tímto způsobem můžete bezpečně odpojit z webu před instalací sady Visual Studio.
+
+> [!IMPORTANT]
+> Nepoužívejte "vše stáhnout, potom nainstalovat" funkci pro vytvoření offline mezipaměti, které máte v úmyslu přenést do jiného počítače. Není je navržena tak, aby fungoval. <br><br>Pokud chcete vytvořit offline mezipaměť pro instalaci sady Visual Studio na jiném počítači, najdete v článku [místní mezipaměť vytvořit pomocí příkazového řádku](#use-the-command-line-to-create-a-local-cache) části této stránky pro informace o tom, jak vytvořit místní mezipaměť, nebo [vytvořit síťové instalace sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) stránka informace o tom, jak vytvořit mezipaměť sítě.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Místní mezipaměť vytvořit pomocí příkazového řádku
 

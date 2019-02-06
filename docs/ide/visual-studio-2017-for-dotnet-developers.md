@@ -11,16 +11,16 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 582387ee410b8500fd8737130d5325e550824b9d
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484092"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768342"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
-Zjistěte, jak [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zajišťuje vývojářům vyšší produktivitu, než kdy dřív. Využijte výhod našich vylepšení výkonu a produktivity jako je navigace na dekompilované sestavení, název proměnné návrhy při psaní, hierarchické zobrazení v **Průzkumník testů**, přejít na všechno (**Ctrl** + **T**) přejděte k souboru/typu/členu/symbolu deklarace, inteligentní **pomocníka výjimky**, styl konfigurace a vynucení a mnoho refaktoring kódu a opravy kódu.
+Zjistěte, jak [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) zajišťuje vývojářům vyšší produktivitu, než kdy dřív. Využijte výhod našich vylepšení výkonu a produktivity jako je navigace na dekompilované sestavení, název proměnné návrhy při psaní, hierarchické zobrazení v **Průzkumník testů**, přejít na všechno (**Ctrl** + **T**) přejděte k souboru/typu/členu/symbolu deklarace, inteligentní **pomocníka výjimky**, styl konfigurace a vynucení a mnoho refaktoring kódu a opravy kódu.
 
 ## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Jsem zvyklý / zvyklá Moje klávesových zkratek z jiné rozšíření nebo editoru nebo prostředí IDE
 

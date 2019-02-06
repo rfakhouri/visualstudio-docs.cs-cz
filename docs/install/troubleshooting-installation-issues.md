@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196902df41ec9c465be948415f866280de62e32
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f456e1516d1baf4ee87fd4ebe5e5ad76423f1175
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939813"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768397"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Řešení potíží s instalací sady Visual Studio 2017 a upgradovat problémy
 
@@ -49,7 +49,7 @@ Instalační program sady Visual Studio bootstrapper je minimální odlehčené 
 
 1. Ukončete instalační program sady Visual Studio.
 2. Odstraňte adresář instalační program sady Visual Studio. Adresář je obvykle `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Spusťte instalační program sady Visual Studio zaváděcí nástroj. Zaváděcí nástroj může najít ve složce stažené soubory s názvem souboru, který následuje `vs_[Visual Studio edition]__*.exe` vzor. Pokud tuto aplikaci se nepodařilo najít, zaváděcí nástroj můžete stáhnout tak, že přejdete [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a kliknutím na **Stáhnout** vaší verze sady Visual Studio. Spusťte spustitelný soubor resetovat vaše instalace metadata.
+3. Spusťte instalační program sady Visual Studio zaváděcí nástroj. Zaváděcí nástroj může najít ve složce stažené soubory s názvem souboru, který následuje `vs_[Visual Studio edition]__*.exe` vzor. Pokud tuto aplikaci se nepodařilo najít, zaváděcí nástroj můžete stáhnout tak, že přejdete [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a kliknutím na **Stáhnout** vaší verze sady Visual Studio. Spusťte spustitelný soubor resetovat vaše instalace metadata.
 4. Akci pro instalaci nebo aktualizaci sady Visual Studio znovu. Pokud instalační program ani potom nedaří, přejděte k dalšímu kroku.
 
 ### <a name="step-4---report-a-problem"></a>Krok 4 – ohlásit problém

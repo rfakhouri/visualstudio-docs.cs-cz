@@ -10,12 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c2ea0d43a4c6aa4c7e83d2faedadd768024d96e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e773088671abfb5feffe50379bb717d09cb5ab64
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921801"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768500"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -35,7 +35,7 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
 ## <a name="create-a-sql-database"></a>Vytvoření databáze SQL
 
-1. Pokud nemáte Visual Studio Enterprise, můžete ho stáhnout [stahování sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky.
+1. Pokud nemáte Visual Studio Enterprise, můžete ho stáhnout [stahování sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránky.
 
 2. Vytvoření databáze SQL.
 
