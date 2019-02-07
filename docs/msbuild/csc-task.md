@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b97ad15c6064f1c27eba252173f9afdfc33eda8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009684"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854119"
 ---
 # <a name="csc-task"></a>Csc – úloha
-Zabalí *csc.exe*a vytváří spustitelné soubory (*.exe* soubory), dynamické knihovny (*.dll* soubory), nebo moduly kódu (*.netmodule* soubory). Další informace o *csc.exe*, naleznete v tématu [možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index).  
+Zabalí *csc.exe*a vytváří spustitelné soubory (*.exe* soubory), dynamické knihovny (*.dll* soubory), nebo moduly kódu (*.netmodule* soubory). Další informace o *csc.exe*, naleznete v tématu [možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `Csc` úloh.  
-
+## <a name="parameters"></a>Parametry
+Následující tabulka popisuje parametry `Csc` úloh.
 
 | Parametr | Popis |
 |------------------------------| - |
@@ -81,19 +80,19 @@ Zabalí *csc.exe*a vytváří spustitelné soubory (*.exe* soubory), dynamické 
 | `Win32Manifest` | Volitelné `String` parametru.<br /><br /> Určuje manifest Win32 mají být zahrnuty. |
 | `Win32Resource` | Volitelné `String` parametru.<br /><br /> Vloží prostředek systému Win32 (*.res*) soubor do výstupního souboru. Další informace najdete v tématu [-win32res (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze `Microsoft.Build.Tasks.ManagedCompiler` třída, která dědí z <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Poznámky
+Kromě výše uvedených parametrů zdědí tento úkol parametry ze `Microsoft.Build.Tasks.ManagedCompiler` třída, která dědí z <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Příklad  
- V následujícím příkladu `Csc` úloha kompilace spustitelný soubor ze zdrojových souborů v `Compile` kolekci položek.  
+## <a name="example"></a>Příklad
+V následujícím příkladu `Csc` úloha kompilace spustitelný soubor ze zdrojových souborů v `Compile` kolekci položek.
 
-```xml  
-<CSC  
-    Sources="@(Compile)"  
-    OutputAssembly="$(AppName).exe"  
-    EmitDebugInformation="true" />  
-```  
+```xml
+<CSC
+    Sources="@(Compile)"
+    OutputAssembly="$(AppName).exe"
+    EmitDebugInformation="true" />
+```
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Úlohy](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Viz také:
+[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)  
+[Úlohy](../msbuild/msbuild-tasks.md)

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2368f3f0deff4262ffebca736fc14e6d5bc142a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 926f147264214396ef746d57eb8a8b014abd5b58
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005409"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853558"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5: Přidejte odkazy na jmenovky
 Program je potřeba sledovat, jaké ovládací prvky popisku hráč zvolí. Nyní program zobrazí všechny popisky, které hráč zvolí. Ale to změníme. Po výběru prvního popisku by program měl zobrazit ikonu popisku. Po výběru druhého popisku by program měl krátce zobrazit obě ikony a pak je opět skrýt. Váš program bude nyní sledovat, který ovládací prvek popisku je vybrán jako první a který jako druhý pomocí *referenční proměnné*.

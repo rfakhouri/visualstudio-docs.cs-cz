@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a4f50e710073c0dfe230f34d188056c20eaaab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9c71f39a4c4a34145f844b7abbd1915a3117d224
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922987"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853089"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Produkty a služby (Blend)
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. V následujících oddílech jsou uvedeny informace o funkcích, produktech a službách, které usnadňují používání systému Microsoft Windows tělesně postiženým uživatelům:

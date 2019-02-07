@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a1188d202fd38ce0f14c5792ba6976b424d0d8c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937350"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853937"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Postupy: Speciální řídicí znaky v nástroji MSBuild
 
 Některé znaky mají speciální význam v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory projektu. Příklady znaků středníky (`;`) a hvězdičky (`*`). Úplný seznam těchto speciálních znaků, naleznete v tématu [speciální znaky nástroje MSBuild](../msbuild/msbuild-special-characters.md).
-  
+
 Chcete-li použít tyto speciální znaky jako literály v souboru projektu, se musí zadat pomocí syntaxe `%<xx>`, kde `<xx>` představuje znak šestnáctkové hodnoty ASCII.
-  
+
 ## <a name="msbuild-special-characters"></a>Speciální znaky nástroje MSBuild
 
- Jedna je například použití speciálních znaků v `Include` atribut položky seznamů. Například následující seznam položek deklaruje dvě položky: *MyFile.cs* a *MyClass.cs*.  
-  
-```xml  
-<Compile Include="MyFile.cs;MyClass.cs"/>  
-```  
-  
+Jedna je například použití speciálních znaků v `Include` atribut položky seznamů. Například následující seznam položek deklaruje dvě položky: *MyFile.cs* a *MyClass.cs*.
+
+```xml
+<Compile Include="MyFile.cs;MyClass.cs"/>
+```
+
 Pokud chcete deklarovat, který obsahuje středníkem v názvu položky, je nutné použít `%<xx>` syntaxe řídicí středník a zabránit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z deklarace dvou samostatných položek. Například následující položka řídicí sekvence středník a deklaruje jednu položku s názvem `MyFile.cs;MyClass.cs`.
-  
-```xml  
-<Compile Include="MyFile.cs%3BMyClass.cs"/>  
-```  
+
+```xml
+<Compile Include="MyFile.cs%3BMyClass.cs"/>
+```
 
 Můžete také použít [vlastnost funkce](../msbuild/property-functions.md) řídicí řetězce. Například to je ekvivalentní k výše uvedený příklad.
 
@@ -50,8 +50,7 @@ Můžete také použít [vlastnost funkce](../msbuild/property-functions.md) ř�
 
 Použijte notaci `%<xx>` místo speciální znaky, kde `<xx>` představuje šestnáctkovou hodnotu znaku standardu ASCII. Například použijte hvězdičku (`*`) jako literální znak, použijte hodnotu `%2A`.
 
- 
-## <a name="see-also"></a>Viz také:  
- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [MSBuild](../msbuild/msbuild.md)   
- [Položky](../msbuild/msbuild-items.md)   
+## <a name="see-also"></a>Viz také:
+[Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)  
+[MSBuild](../msbuild/msbuild.md)  
+[Položky](../msbuild/msbuild-items.md)

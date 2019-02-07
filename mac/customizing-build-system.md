@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f2b3abf20e75dcf783f03f696ec679a1ce575c56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296304"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853635"
 ---
 # <a name="customizing-the-build-system"></a>Přizpůsobení procesu sestavení
 
-Nástroj MSbuild je modul sestavení s vyvinutý microsoftem, který umožňuje vytváření primárně aplikací .NET. Mono framework obsahuje také vlastní implementace společnosti Microsoft Build Engine, volá **xbuild**. Ale xbuild byla ukončena používat MSBuild na všechny operační systémy.
+Nástroj MSBuild je modul sestavení s vyvinutý microsoftem, který umožňuje vytváření primárně aplikací .NET. Mono framework obsahuje také vlastní implementace společnosti Microsoft Build Engine, volá **xbuild**. Ale xbuild byla ukončena používat MSBuild na všechny operační systémy.
 
-**Nástroj MSbuild** slouží především pro jako systém sestavení pro projekty v sadě Visual Studio pro Mac.
+**Nástroj MSBuild** slouží především pro jako systém sestavení pro projekty v sadě Visual Studio pro Mac.
 
 Nástroj MSBuild funguje tak, že trvá sadu vstupů, jako je například zdrojové soubory a přemění je na výstupů, jako je například spustitelné soubory. Tento výstup dosahuje vyvoláním nástrojů, jako je kompilátor.
 

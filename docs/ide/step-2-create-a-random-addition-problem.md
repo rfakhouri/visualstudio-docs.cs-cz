@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35168bdeaab94b95e5e4dbd5fc703a99dfdcbdc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b8ad9d2dc0ba3d4a51b9ff7ec3e0907eda56a03
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919418"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854093"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2: Vytvořit náhodnou úlohu sčítání
 V druhé části tohoto kurzu je náročnější kvíz přidáním matematických úlohy, které jsou založeny na náhodných čísel. Také vytvořit metoda s názvem `StartTheQuiz()` a která vyplní úlohy a spustí časovač odpočítávání. Později v tomto kurzu přidáte odčítání, násobení a dělení.

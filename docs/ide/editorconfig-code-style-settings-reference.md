@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 8d7d07efa862e619961c21962dca20303efed97e
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 6b0e303e1e7c1639b926f3f2d5b889e3a10920b8
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742518"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854080"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -1433,7 +1433,7 @@ V následující tabulce jsou uvedeny název pravidla, použitelné jazyky, výc
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 version |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# a Visual Basic | true | 15.3 |
-| dotnet_separate_import_directive_groups | C# a Visual Basic | true | 15.5 |
+| dotnet_separate_import_directive_groups | C# a Visual Basic | false | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 

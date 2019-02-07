@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781f5515be77cfa6ae734b97a2cdba52f6702f56
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946981"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853375"
 ---
 # <a name="error-task"></a>Error – úloha
-Sestavení se zastaví a protokoly chybu na základě Vyhodnocená podmíněného příkazu.  
+Sestavení se zastaví a protokoly chybu na základě Vyhodnocená podmíněného příkazu.
 
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `Error` úloh.  
-
+## <a name="parameters"></a>Parametry
+Následující tabulka popisuje parametry `Error` úloh.
 
 | Parametr | Popis |
 |---------------| - |
@@ -39,30 +38,30 @@ Sestavení se zastaví a protokoly chybu na základě Vyhodnocená podmíněnéh
 | `HelpKeyword` | Volitelné `String` parametru.<br /><br /> Klíčové slovo nápovědy pro přidružení k chybě. |
 | `Text` | Volitelné `String` parametru.<br /><br /> Text chyby, která [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokoly, pokud `Condition` vyhodnotí jako parametr `true`. |
 
-## <a name="remarks"></a>Poznámky  
- `Error` Úloha umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sestavení projektů vydat Protokolovací nástroje text chyby a zastavit provádění.  
+## <a name="remarks"></a>Poznámky
+`Error` Úloha umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sestavení projektů vydat Protokolovací nástroje text chyby a zastavit provádění.
 
- Pokud `Condition` vyhodnotí jako parametr `true`, sestavení je zastavená a je zaznamenána chyba. Pokud `Condition` neexistuje parametr, se protokoluje chyby a sestavení zastaví provádění. Další informace o protokolování naleznete v tématu [protokoly o sestavení získání](../msbuild/obtaining-build-logs-with-msbuild.md).  
+Pokud `Condition` vyhodnotí jako parametr `true`, sestavení je zastavená a je zaznamenána chyba. Pokud `Condition` neexistuje parametr, se protokoluje chyby a sestavení zastaví provádění. Další informace o protokolování naleznete v tématu [protokoly o sestavení získání](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
+Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Příklad  
- Následující příklad kódu ověřuje, že všechny požadované vlastnosti nastavené. Pokud nejsou nastavená, projektu vyvolá událost chyby a protokoly hodnotu `Text` parametr `Error` úloh.  
+## <a name="example"></a>Příklad
+Následující příklad kódu ověřuje, že všechny požadované vlastnosti nastavené. Pokud nejsou nastavená, projektu vyvolá událost chyby a protokoly hodnotu `Text` parametr `Error` úloh.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="ValidateCommandLine">  
-        <Error  
-            Text=" The 0 property must be set on the command line."  
-            Condition="'$(0)' == ''" />  
-        <Error  
-            Text="The FREEBUILD property must be set on the command line."  
-            Condition="'$(FREEBUILD)' == ''" />  
-    </Target>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ValidateCommandLine">
+        <Error
+            Text=" The 0 property must be set on the command line."
+            Condition="'$(0)' == ''" />
+        <Error
+            Text="The FREEBUILD property must be set on the command line."
+            Condition="'$(FREEBUILD)' == ''" />
+    </Target>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)
+## <a name="see-also"></a>Viz také:
+[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)  
+[Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)

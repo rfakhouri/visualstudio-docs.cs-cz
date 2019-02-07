@@ -9,14 +9,15 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac-dev15
+ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 9b73d598ef2d498d4c2c9c1296ef8cd3de760134
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768311"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853924"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikování webové aplikace do služby Azure App Service pomocí sady Visual Studio pro Mac
 
@@ -67,3 +68,7 @@ Nástroj publikování můžete použít k publikování aplikace ASP.NET Core d
       ![Vytvoření služby App Service zprávy](media/publish-create-app-service-message.png)
 
     Po kliknutí na tlačítko **OK** zpráva se zavře a můžete pokračovat v práci na projektu. Můžete sledovat stav procesu publikování pomocí stavového řádku v horní části rozhraní IDE. Až vaše webová aplikace se úspěšně publikovala, web se otevře s výchozím prohlížeči.
+
+## <a name="related-video"></a>Související videa
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]

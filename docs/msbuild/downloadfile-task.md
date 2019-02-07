@@ -22,44 +22,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f22d335cb9f0c9bde5d9a5adc11c32e2d165fd97
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea9b6e655ea9c5eb6c598d7a4bdbb09ed3345903
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978149"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853505"
 ---
 # <a name="downloadfile-task"></a>Úloha DownloadFile
 Soubory ke stažení zadané soubory pomocí technologie Hyper-Text přenos protokol (HTTP).
 
 >[!NOTE]
 >Pouze je k dispozici v MSBuild 15.8 a vyšší DownloadFile úloha.
-  
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `DownloadFile` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
+
+## <a name="parameters"></a>Parametry
+Následující tabulka popisuje parametry `DownloadFile` úloh.
+
+|Parametr|Popis|
+|---------------|-----------------|
 |`DestinationFileName`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametr<br /><br /> Název, který se má použít pro stažený soubor.  Ve výchozím nastavení, název souboru je odvozen od `SourceUrl` nebo vzdálený server.|
 |`DestinationFolder`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje cílovou složku ke stažení souboru.  Pokud složka se vytvoří, pokud neexistuje.|
 |`DownloadedFile`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> výstupní parametr.<br /><br /> Určuje soubor, který jste stáhli.|
-|`Retries`|Volitelné `Int32` parametru.<br /><br /> Určuje, kolik pokusů o stažení, pokud všechny předchozí pokusy nezdařily. Výchozím nastavením je nula.|  
-|`RetryDelayMilliseconds`|Volitelné `Int32` parametru.<br /><br /> Určuje zpoždění v milisekundách mezi všechny nezbytnými pokusy o opakování. Výchozí hodnota je 5000.|  
+|`Retries`|Volitelné `Int32` parametru.<br /><br /> Určuje, kolik pokusů o stažení, pokud všechny předchozí pokusy nezdařily. Výchozím nastavením je nula.|
+|`RetryDelayMilliseconds`|Volitelné `Int32` parametru.<br /><br /> Určuje zpoždění v milisekundách mezi všechny nezbytnými pokusy o opakování. Výchozí hodnota je 5000.|
 |`SkipUnchangedFiles`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, přeskočí stahování souborů, které jsou beze změny. Výchozí hodnota je `true`. `DownloadFile` Úloh považuje soubory za nezměněné, pokud mají stejnou velikost a stejný čas podle vzdálený server poslední aktualizace. <br /><br />**Poznámka:**  Ne všechny servery HTTP označuje datum poslední změny souborů způsobí, že soubor ke stažení znovu.|
 |`SourceUrl`|Vyžaduje `String` parametru.<br /><br /> Určuje adresu URL ke stažení.|
-  
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Příklad  
- Následující příklad stáhne soubor a zahrnuje ho `Content` položek před sestavením projektu.
-  
-```xml  
+
+## <a name="remarks"></a>Poznámky
+Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Příklad
+Následující příklad stáhne soubor a zahrnuje ho `Content` položek před sestavením projektu.
+
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <PropertyGroup>  
+    <PropertyGroup>
       <MyUrl>https://raw.githubusercontent.com/Microsoft/msbuild/master/LICENSE</MyUrl>
-    </PropertyGroup>  
+    </PropertyGroup>
 
     <Target Name="DownloadContentFiles" BeforeTargets="Build">
         <DownloadFile
@@ -71,7 +71,7 @@ Soubory ke stažení zadané soubory pomocí technologie Hyper-Text přenos prot
 
 </Project>
 ```
-  
-## <a name="see-also"></a>Viz také:  
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+
+## <a name="see-also"></a>Viz také:
+[Úlohy](../msbuild/msbuild-tasks.md)  
+[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

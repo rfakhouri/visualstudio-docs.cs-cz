@@ -18,65 +18,65 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b67fb585c6e006b76417fec91d5eaf80288ba9a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 980a9c49ee801af0caf45ecd6123c6af3e26f1ae
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001849"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853622"
 ---
 # <a name="assignculture-task"></a>AssignCulture – úloha
-Tento úkol přijímá seznam položek, které mohou obsahovat platný řetězec identifikátor jazykové verze .NET jako součást názvu souboru a vytvoří položky, které mají metadat s názvem `Culture` obsahuje odpovídající jazykovou verzi identifikátor. Například název souboru *Form1.fr-fr.resx* neobsahuje vložený jazykovou verzi identifikátor "fr-fr", proto tento úkol vytvoří položka, která má stejný název souboru s metadaty `Culture` rovna `fr-fr`. Úloha také vytvoří seznam názvů souborů pomocí jazykové verze odebrána z názvu souboru.  
-  
-## <a name="task-parameters"></a>Parametry úlohy  
- Následující tabulka popisuje parametry `AssignCulture` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`AssignedFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje seznam položek dostali `Files` parametrů, s `Culture` přidání pro každou položku metadat položky.<br /><br /> Pokud příchozí položky `Files` již obsahuje parametr `Culture` položka metadat, původní položka metadat se používá.<br /><br /> Pouze přiřadí úlohu `Culture` položka metadat, pokud název souboru obsahuje identifikátor platné jazykové verze. Identifikátor jazykové verze musí být mezi poslední dvě tečky v názvu souboru.|  
-|`AssignedFilesWithCulture`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje dílčí položky z `AssignedFiles` parametr, který máte `Culture` položka metadat.|  
-|`AssignedFilesWithNoCulture`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje dílčí položky z `AssignedFiles` parametr, který není `Culture` položka metadat.|  
-|`CultureNeutralAssignedFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje stejný seznam položek, které se vytvářejí v `AssignedFiles` parametrů, s výjimkou pomocí jazykové verze odebrána z názvu souboru.<br /><br /> Úloha pouze odebere jazykovou verzi z názvu souboru, pokud je identifikátor platná jazyková verze.|  
-|`Files`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Určuje seznam souborů s názvy vložených jazykovou verzi přiřadit jazykovou verzi pro.|  
-  
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Příklad  
- Následující příklad provede `AssignCulture` úloh s `ResourceFiles` kolekci položek.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ResourceFiles Include="MyResource1.fr.resx"/>  
-        <ResourceFiles Include="MyResource2.XX.resx"/>  
-    </ItemGroup>  
-  
-    <Target Name="Culture">  
-        <AssignCulture  
-            Files="@(ResourceFiles)"  
-            <Output TaskParameter="AssignedFiles"  
-                ItemName="OutAssignedFiles"/>  
-            <Output TaskParameter="AssignedFilesWithCulture"  
-                ItemName="OutAssignedFilesWithCulture"/>  
-            <Output TaskParameter="AssignedFilesWithNoCulture"  
-                ItemName="OutAssignedFilesWithNoCulture"/>  
-            <Output TaskParameter="CultureNeutralAssignedFiles"  
-                ItemName="OutCultureNeutralAssignedFiles"/>  
-        </AssignCulture>  
-    </Target>  
-</Project>  
-```  
-  
- Následující tabulka popisuje výhody výstupní položky po spuštění úlohy. Metadata položky se zobrazí v závorkách po provedení položky.  
-  
-|Kolekce položek|Obsah|  
-|---------------------|--------------|  
-|`OutAssignedFiles`|*MyResource1.fr.resx* (jazyková verze = "fr")<br /><br /> *MyResource2.XX.resx* (žádné další metadata)|  
-|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (jazyková verze = "fr")|  
-|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (žádné další metadata)|  
-|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (jazyková verze = "fr")<br /><br /> *MyResource2.XX.resx* (žádné další metadata)|  
-  
-## <a name="see-also"></a>Viz také:  
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+Tento úkol přijímá seznam položek, které mohou obsahovat platný řetězec identifikátor jazykové verze .NET jako součást názvu souboru a vytvoří položky, které mají metadat s názvem `Culture` obsahuje odpovídající jazykovou verzi identifikátor. Například název souboru *Form1.fr-fr.resx* neobsahuje vložený jazykovou verzi identifikátor "fr-fr", proto tento úkol vytvoří položka, která má stejný název souboru s metadaty `Culture` rovna `fr-fr`. Úloha také vytvoří seznam názvů souborů pomocí jazykové verze odebrána z názvu souboru.
+
+## <a name="task-parameters"></a>Parametry úlohy
+Následující tabulka popisuje parametry `AssignCulture` úloh.
+
+|Parametr|Popis|
+|---------------|-----------------|
+|`AssignedFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje seznam položek dostali `Files` parametrů, s `Culture` přidání pro každou položku metadat položky.<br /><br /> Pokud příchozí položky `Files` již obsahuje parametr `Culture` položka metadat, původní položka metadat se používá.<br /><br /> Pouze přiřadí úlohu `Culture` položka metadat, pokud název souboru obsahuje identifikátor platné jazykové verze. Identifikátor jazykové verze musí být mezi poslední dvě tečky v názvu souboru.|
+|`AssignedFilesWithCulture`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje dílčí položky z `AssignedFiles` parametr, který máte `Culture` položka metadat.|
+|`AssignedFilesWithNoCulture`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje dílčí položky z `AssignedFiles` parametr, který není `Culture` položka metadat.|
+|`CultureNeutralAssignedFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje stejný seznam položek, které se vytvářejí v `AssignedFiles` parametrů, s výjimkou pomocí jazykové verze odebrána z názvu souboru.<br /><br /> Úloha pouze odebere jazykovou verzi z názvu souboru, pokud je identifikátor platná jazyková verze.|
+|`Files`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Určuje seznam souborů s názvy vložených jazykovou verzi přiřadit jazykovou verzi pro.|
+
+## <a name="remarks"></a>Poznámky
+Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Příklad
+ Následující příklad provede `AssignCulture` úloh s `ResourceFiles` kolekci položek.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ResourceFiles Include="MyResource1.fr.resx"/>
+        <ResourceFiles Include="MyResource2.XX.resx"/>
+    </ItemGroup>
+
+    <Target Name="Culture">
+        <AssignCulture
+            Files="@(ResourceFiles)"
+            <Output TaskParameter="AssignedFiles"
+                ItemName="OutAssignedFiles"/>
+            <Output TaskParameter="AssignedFilesWithCulture"
+                ItemName="OutAssignedFilesWithCulture"/>
+            <Output TaskParameter="AssignedFilesWithNoCulture"
+                ItemName="OutAssignedFilesWithNoCulture"/>
+            <Output TaskParameter="CultureNeutralAssignedFiles"
+                ItemName="OutCultureNeutralAssignedFiles"/>
+        </AssignCulture>
+    </Target>
+</Project>
+```
+
+Následující tabulka popisuje výhody výstupní položky po spuštění úlohy. Metadata položky se zobrazí v závorkách po provedení položky.
+
+|Kolekce položek|Obsah|
+|---------------------|--------------|
+|`OutAssignedFiles`|*MyResource1.fr.resx* (jazyková verze = "fr")<br /><br /> *MyResource2.XX.resx* (žádné další metadata)|
+|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (jazyková verze = "fr")|
+|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (žádné další metadata)|
+|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (jazyková verze = "fr")<br /><br /> *MyResource2.XX.resx* (žádné další metadata)|
+
+## <a name="see-also"></a>Viz také:
+[Úlohy](../msbuild/msbuild-tasks.md)  
+[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
