@@ -3,7 +3,6 @@ title: Úvod do úprav pro vývojáře v jazyce Visual Basic
 description: Tento úvod během 10 minut do editoru kódu v sadě Visual Studio jsou uvedeny některé ze způsobů, že sada Visual Studio provádí zápis, navigace a pochopení kódu jazyka Visual Basic jednodušší.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2183b12f1614adf7939c17b3e260cebb1c3238b
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424483"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939473"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 

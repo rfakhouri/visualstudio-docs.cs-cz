@@ -1,7 +1,6 @@
 ---
 title: Dialogové okno Možnosti, Projekty a řešení, Sestavit a spustit
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9b572137a1143b00b824fbd726c2fc17c55862a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5e2e62a0b9ece6052d222a8c228bbd7fe018b0a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928097"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954774"
 ---
 # <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Dialogové okno Možnosti, Projekty a řešení, Sestavit a spustit
 

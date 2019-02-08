@@ -2,18 +2,17 @@
 title: Kontexty souborů pracovní prostor v sadě Visual Studio | Dokumentace Microsoftu
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826861"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939187"
 ---
 # <a name="workspace-file-contexts"></a>Kontexty souborů pracovního prostoru
 
@@ -27,7 +26,7 @@ Nejběžnější scénáře pro kontexty souborů se vztahují k sestavování, 
 
 ## <a name="file-context-lifecycle"></a>Životní cyklus kontextu souboru
 
-Časově omezené `FileContext` jsou nedeterministické. V každém okamžiku komponentu asynchronně požádat některé množiny typů kontextu. Bude se dotazovat na zprostředkovatele, které podporují určité dílčí sady typů kontextu požadavku. `IWorkspace` Instance funguje jako střední man mezi příjemců a prostřednictvím poskytovatelů <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> metody. Spotřebitelé můžou požádat o kontext a provedení některých krátkodobé akce na základě kontextu, zatímco jiné můžou požádat o kontext a udržovat dlouhodobá odkaz. 
+Časově omezené `FileContext` jsou nedeterministické. V každém okamžiku komponentu asynchronně požádat některé množiny typů kontextu. Bude se dotazovat na zprostředkovatele, které podporují určité dílčí sady typů kontextu požadavku. `IWorkspace` Instance funguje jako střední man mezi příjemců a prostřednictvím poskytovatelů <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> metody. Spotřebitelé můžou požádat o kontext a provedení některých krátkodobé akce na základě kontextu, zatímco jiné můžou požádat o kontext a udržovat dlouhodobá odkaz.
 
 Změny může dojít k souborům, které způsobují kontextu souboru k začnou být zastaralé. Zprostředkovatel může vyvolat událost v `FileContext` oznámit příjemci aktualizací. Například pokud kontext sestavení je k dispozici pro některý soubor ale o změnu na disku zruší platnost tohoto kontextu, poté původce můžete je vyvolat události. Kterýchkoli stále odkazuje, který `FileContext` můžete pak requery nový `FileContext`.
 

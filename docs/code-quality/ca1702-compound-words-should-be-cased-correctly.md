@@ -1,7 +1,6 @@
 ---
 title: 'CA1702: Malá a velká písmena složených slov by měla být použita správně'
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1702
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d697ac5c441efaf78fa7382b9efdead647eec8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f78ea4f44c48d2740df58def03a6335bce6637a2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996503"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942762"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Malá a velká písmena složených slov by měla být použita správně
 
@@ -31,7 +30,7 @@ ms.locfileid: "54996503"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Při ukončování pro sestavení vyvolala.<br /><br /> Bez konce – při vyvolání na parametry typu.|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Název identifikátoru obsahuje více slov a alespoň jedno ze slov se zdá být složené slovo, které není správně formátováno.
 

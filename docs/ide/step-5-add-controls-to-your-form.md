@@ -1,7 +1,6 @@
 ---
 title: 'Krok 5: Přidejte do svého formuláře ovládací prvky'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d00030407e483c2c6cb816bf9415458988922f
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3da5294b085354d85e71445a30395072f091ae23
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853726"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954711"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5: Přidejte do svého formuláře ovládací prvky
 V tomto kroku přidáte ovládací prvky, například <xref:System.Windows.Forms.PictureBox> ovládacího prvku a <xref:System.Windows.Forms.CheckBox> ovládací prvek do formuláře. Potom přidáte <xref:System.Windows.Forms.Button> ovládací prvky do formuláře.

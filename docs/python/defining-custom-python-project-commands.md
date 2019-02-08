@@ -2,7 +2,6 @@
 title: Definovat vlastní příkazy pro projekty v Pythonu
 description: Podle úprav projektu a soubory cíle můžete přidat vlastní příkazy do kontextové nabídky projektu Pythonu v sadě Visual Studio, který má být vyvolán spustitelné programy, skripty, moduly, vložené fragmenty kódu a pip.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5ef751610510e6b167d2aa7975196d17cb1b72b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965559"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943087"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definovat vlastní příkazy pro projekty v Pythonu
 
@@ -134,7 +133,7 @@ K odkazování na vlastnosti projektu a proměnných prostředí v hodnoty atrib
 
 | Atribut | Požadováno | Popis |
 | --- | --- | --- |
-| Název | Ano | Identifikátor příkazu v rámci projektu sady Visual Studio. Tento název musí být přidán do `<PythonCommands>` skupiny vlastností příkazu se zobrazí v podnabídce Python. |
+| Name | Ano | Identifikátor příkazu v rámci projektu sady Visual Studio. Tento název musí být přidán do `<PythonCommands>` skupiny vlastností příkazu se zobrazí v podnabídce Python. |
 | Popisek | Ano | Zobrazovaný název uživatelského rozhraní, který se zobrazí dílčí nabídky Python. |
 | Vrací | Ano | Musí obsahovat `@(Commands)`, který identifikuje cíl jako příkaz. |
 

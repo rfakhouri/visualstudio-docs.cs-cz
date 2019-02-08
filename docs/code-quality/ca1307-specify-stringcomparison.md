@@ -1,7 +1,6 @@
 ---
 title: 'CA1307: Určete StringComparison'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1307
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3896056612631bac0c871ea7b09204e2622492
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a3aabd73a3c234be61cecdf68fbc92fc7e52883e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018277"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927682"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Určete StringComparison
 
@@ -31,7 +30,7 @@ ms.locfileid: "55018277"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Operace porovnání řetězců používá přetížení metody, které nenastavuje <xref:System.StringComparison> parametru.
 
 ## <a name="rule-description"></a>Popis pravidla

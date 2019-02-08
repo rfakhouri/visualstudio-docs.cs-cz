@@ -1,5 +1,5 @@
 ---
-title: Pomocí podle dokumentu C++ Core Guidelines šachovnice
+title: Použití kontrolních mechanismů C++ Core Guidelines
 ms.date: 08/14/2018
 ms.topic: conceptual
 author: mikeblome
@@ -7,15 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820235"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914994"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Pomocí podle dokumentu C++ Core Guidelines šachovnice
+# <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 Podle dokumentu C++ Core Guidelines jsou přenosná sadu pokynů, pravidla a osvědčenými postupy psaní kódu v jazyce C++ vytvořených odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu těchto pravidel jako součást své nástroje analýzy kódu pro jazyk C++. Tyto moduly pro kontrolu příručka core jsou nainstalované ve výchozím nastavení v sadě Visual Studio 2017 a jsou [k dispozici jako balíček NuGet pro Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>Projekt C++ Core Guidelines
@@ -91,7 +90,7 @@ Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou:
 
 - **Zadejte pravidla** vynutit [zadejte profil podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
-**Visual Studio 2017 verze 15.5**:
+**Visual Studio 2017 version 15.5**:
 
 - **Třída pravidla** několik pravidel, která se soustřeďují na správné použití operátoru zvláštní členské funkce a virtuální specifikací. Toto je podmnožinou kontroly doporučuje pro [třídy a třídy hierarchie](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
 - **– Pravidla souběžnosti** jediné pravidlo, které zachytí objekty chybně deklarované ochrany. Další informace najdete v tématu [pokyny související se souběžností](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
@@ -100,7 +99,7 @@ Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou:
 - **– Pravidla sdílených ukazatelů** jako součást [správy prostředků](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) pokyny k vynucení, přidali jsme několik pravidel, které jsou specifické pro zobrazení sdílených ukazatelů jsou předány do funkcí nebo používané lokálně.
 - **Pravidla stylu** jeden jednoduchý, ale důležité zaškrtnutí, která zakáže použití [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Toto je prvním krokem při vylepšování kódování styl a používat výrazy a příkazy v jazyce C++.
 
-**Visual Studio 2017 verze 15.6**:
+**Visual Studio 2017 version 15.6**:
 
 - **Aritmetické pravidla** pravidla, která zjistí aritmetický [přetečení](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [podepsané bez znaménka operace](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) a [bit manipulaci s](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
 
@@ -254,4 +253,4 @@ Kvůli způsobu, jakým jsou načteny pravidel analýzy kódu musíte nainstalov
 
 ## <a name="see-also"></a>Viz také
 
-- [Odkaz Kontrola C++ Core sady Visual Studio](code-analysis-for-cpp-corecheck.md)
+- [Visual Studio C++ Core Check Reference](code-analysis-for-cpp-corecheck.md)

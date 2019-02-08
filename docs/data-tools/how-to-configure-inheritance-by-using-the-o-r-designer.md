@@ -6,15 +6,14 @@ ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a68101b6090a20526088309a441956a68e875e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6430cd3092f6edbc514c7958e07961ccd234c161
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014663"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931257"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Postupy: Konfigurace dědičnosti pomocí Návrháře relací objektů
 **Návrhář relací objektů** (**O/R Designer**) podporují koncept dědičnosti jedné tabulky, jak často je implementován v relačních systémech. V dědičnosti jedné tabulky je izolované databáze tabulku, která obsahuje pole pro informace o nadřazené i podřízené informace. Sloupec diskriminátoru s relačními daty, obsahuje hodnotu, která určuje, která třída libovolný záznam patří.

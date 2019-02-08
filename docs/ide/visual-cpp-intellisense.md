@@ -1,19 +1,18 @@
 ---
-title: IntelliSense pro C++
+title: C++ IntelliSense
 ms.date: 10/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 203e36c1ea7863b18495284174690d3c985b2900
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f92a1c9e39013c9c9cc0a320169f12e0c075b5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959758"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942268"
 ---
 # <a name="visual-c-intellisense-features"></a>Funkce Visual C++ IntelliSense
 
@@ -53,7 +52,7 @@ Když zadáte levá složená závorka volání funkce nebo ostré závorky v de
 
 Když najedete myší do přes proměnnou, se zobrazí v textu, který zobrazuje informace o typu a záhlaví, ve kterém je typ definován malém okně. Najeďte myší volání funkce pro zjištění signatury funkce. Můžete ji vypnout rychlé informace v **možnosti** dialogovém okně **textový Editor** > **C/C++** > **Upřesnit**  >  **Automatické rychlé informace**.
 
-![Visual C&#43; &#43; rychlé informace](../ide/media/vs2015_cpp_quickinfo.png)
+![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
 ## <a name="error-squiggles"></a>Podtržení vlnovkou u chyb
 

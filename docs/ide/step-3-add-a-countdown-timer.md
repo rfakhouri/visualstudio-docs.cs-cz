@@ -1,7 +1,6 @@
 ---
 title: 'Krok 3: Přidejte časovač odpočítávání'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a11e9c75b463aeb4de14dc4bc66f2c7e6d1dae50
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853245"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940708"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Krok 3: Přidejte časovač odpočítávání
 Ve třetí části tohoto kurzu přidáte časovač odpočítávání ke sledování počtu sekund pro dokončení kvízu.

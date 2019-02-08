@@ -3,14 +3,15 @@ title: Visual Studio for Mac Tour
 description: Visual Studio for Mac obsahuje integrované vývojové prostředí pro vytváření aplikací .NET v systému macOS, včetně webů ASP.NET Core a projekty Xamarin pro iOS, Android, Mac a Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 11/03/2018
+ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 54b3c3ac265f00ba0fb5a9d95e65ed3913eb5c9c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 2a5b60496a53c35bb67e5cd19d6059212e22ccfd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316175"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911777"
 ---
 # <a name="visual-studio-2019-for-mac-preview-tour"></a>2019 Visual Studio pro Mac ve verzi Preview prohlídku
 
@@ -107,6 +108,10 @@ Další informace o používání správy verzí v sadě Visual Studio, najdete 
 
 - [Instalace sady Visual Studio pro Mac](installation.md)
 - [Zkontrolujte dostupné úlohy](/visualstudio/mac/workloads/)
+
+## <a name="related-video"></a>Související videa
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
 ## <a name="see-also"></a>Viz také:
 
