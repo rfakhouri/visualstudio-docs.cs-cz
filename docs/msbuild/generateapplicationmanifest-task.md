@@ -19,19 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15f3ae12aec25747629dfb634ad5790405a11c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940658"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854106"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest – úloha
-Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace nebo nativní manifest. Nativní manifest popisuje komponentu definováním jedinečné identity pro komponentu a identifikaci všech sestavení a souborů, které tvoří součást. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace rozšiřuje nativní manifest označením vstupního bodu aplikace a určením úrovně zabezpečení aplikace.  
+Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace nebo nativní manifest. Nativní manifest popisuje komponentu definováním jedinečné identity pro komponentu a identifikaci všech sestavení a souborů, které tvoří součást. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace rozšiřuje nativní manifest označením vstupního bodu aplikace a určením úrovně zabezpečení aplikace.
 
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `GenerateApplicationManifest` úloh.  
-
+## <a name="parameters"></a>Parametry
+Následující tabulka popisuje parametry `GenerateApplicationManifest` úloh.
 
 | Parametr | Popis |
 |---------------------------------| - |
@@ -65,293 +64,293 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
 | `TrustInfoFile` | Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Označuje dokument XML, který určuje zabezpečení aplikace. Kořenový element v dokumentu XML musí být uzel trustInfo v oboru názvů asmv2. Pokud úloha generuje nativní manifest, tento parametr je ignorován. |
 | `UseApplicationTrust` | Volitelné `Boolean` parametru.<br /><br /> Hodnota TRUE znamená, `Product`, `Publisher`, a `SupportUrl` vlastnosti jsou zapisovány do manifestu aplikace. |
 
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.GenerateManifestBase> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam parametrů třídy úkoly naleznete v tématu [Task – základní třída](../msbuild/task-base-class.md).  
+## <a name="remarks"></a>Poznámky
+Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.GenerateManifestBase> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam parametrů třídy úkoly naleznete v tématu [Task – základní třída](../msbuild/task-base-class.md).
 
- Informace o tom, jak používat `GenerateDeploymentManifest` úloh naleznete v tématu [generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md).  
+Informace o tom, jak používat `GenerateDeploymentManifest` úloh naleznete v tématu [generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md).
 
- Vstupy pro závislosti a soubory mohou dále obohaceny metadaty položky pro určení dalšího stavu nasazení pro každou položku.  
+Vstupy pro závislosti a soubory mohou dále obohaceny metadaty položky pro určení dalšího stavu nasazení pro každou položku.
 
-## <a name="item-metadata"></a>Metadata položky  
+## <a name="item-metadata"></a>Metadata položky
 
-|Název metadat|Popis|  
-|-------------------|-----------------|  
-|`DependencyType`|Určuje, zda závislost je publikována a nainstalovaná pomocí aplikace nebo jako předpoklad. Tato metadata je platná pro všechny závislosti, ale nejsou použita pro soubory. Dostupné hodnoty pro tato metadata jsou:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Výchozí hodnota je Install.|  
-|`AssemblyType`|Určuje, zda je závislost spravované nebo nativní sestavení. Tato metadata je platná pro všechny závislosti, ale nejsou použita pro soubory. Dostupné hodnoty pro tato metadata jsou:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` je výchozí hodnota, která označuje, že generátor manifestu automaticky určí typ sestavení.|  
-|`Group`|Označuje skupinu pro stahování dalších souborů na vyžádání. Název skupiny je definován aplikací a může být libovolný řetězec. Prázdný řetězec znamená, že soubor není součástí skupiny stažení, což je výchozí hodnota. Souborů mimo skupiny jsou součástí původní žádosti o stažení. Soubory ve skupině jsou staženy pouze při explicitním požadavku aplikace pomocí <xref:System.Deployment.Application>.<br /><br /> Tato metadata jsou platná pro všechny soubory kde `IsDataFile` je `false` a všechny závislosti kde `DependencyType` je `Install`.|  
-|`TargetPath`|Určuje, jak cesta musí být definován v vygenerovaný manifest. Tento atribut je platný pro všechny soubory. Pokud tento atribut není zadán, použije se specifikace položky. Tento atribut je platný pro všechny soubory a závislosti s `DependencyType` hodnotu `Install`.|  
-|`IsDataFile`|A `Boolean` hodnota metadat, která určuje, zda je soubor datového souboru. Datový soubor je zvláštní v tom, že je migrován mezi aktualizacemi aplikace. Tato metadata jsou platná pouze pro soubory. `False` je výchozí hodnota.|  
+|Název metadat|Popis|
+|-------------------|-----------------|
+|`DependencyType`|Určuje, zda závislost je publikována a nainstalovaná pomocí aplikace nebo jako předpoklad. Tato metadata je platná pro všechny závislosti, ale nejsou použita pro soubory. Dostupné hodnoty pro tato metadata jsou:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Výchozí hodnota je Install.|
+|`AssemblyType`|Určuje, zda je závislost spravované nebo nativní sestavení. Tato metadata je platná pro všechny závislosti, ale nejsou použita pro soubory. Dostupné hodnoty pro tato metadata jsou:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` je výchozí hodnota, která označuje, že generátor manifestu automaticky určí typ sestavení.|
+|`Group`|Označuje skupinu pro stahování dalších souborů na vyžádání. Název skupiny je definován aplikací a může být libovolný řetězec. Prázdný řetězec znamená, že soubor není součástí skupiny stažení, což je výchozí hodnota. Souborů mimo skupiny jsou součástí původní žádosti o stažení. Soubory ve skupině jsou staženy pouze při explicitním požadavku aplikace pomocí <xref:System.Deployment.Application>.<br /><br /> Tato metadata jsou platná pro všechny soubory kde `IsDataFile` je `false` a všechny závislosti kde `DependencyType` je `Install`.|
+|`TargetPath`|Určuje, jak cesta musí být definován v vygenerovaný manifest. Tento atribut je platný pro všechny soubory. Pokud tento atribut není zadán, použije se specifikace položky. Tento atribut je platný pro všechny soubory a závislosti s `DependencyType` hodnotu `Install`.|
+|`IsDataFile`|A `Boolean` hodnota metadat, která určuje, zda je soubor datového souboru. Datový soubor je zvláštní v tom, že je migrován mezi aktualizacemi aplikace. Tato metadata jsou platná pouze pro soubory. `False` je výchozí hodnota.|
 
-## <a name="example"></a>Příklad  
- V tomto příkladu `GenerateApplicationManifest` úkolů ke generování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace a `GenerateDeploymentManifest` úkolů ke generování manifestu nasazení pro aplikaci s jedním sestavením. Poté použije `SignFile` úloh k podepsání manifestů.  
+## <a name="example"></a>Příklad
+V tomto příkladu `GenerateApplicationManifest` úkolů ke generování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace a `GenerateDeploymentManifest` úkolů ke generování manifestu nasazení pro aplikaci s jedním sestavením. Poté použije `SignFile` úloh k podepsání manifestů.
 
- To ukazuje nejjednodušší možný scénář generování manifestu kde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestů jsou generovány pro jeden program. Výchozí název a identita jsou odvozeny z manifestu sestavení.  
+To ukazuje nejjednodušší možný scénář generování manifestu kde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestů jsou generovány pro jeden program. Výchozí název a identita jsou odvozeny z manifestu sestavení.
 
 > [!NOTE]
->  V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  
+> V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.
 > 
 > [!NOTE]
->  Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).  
+> Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            EntryPoint="@(EntryPoint)">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            EntryPoint="@(EntryPoint)">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-            EntryPoint="@(ApplicationManifest)">  
-            <Output  
-                ItemName="DeployManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+            EntryPoint="@(ApplicationManifest)">
+            <Output
+                ItemName="DeployManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Příklad  
- V tomto příkladu `GenerateApplicationManifest` a `GenerateDeploymentManifest` úkoly ke generování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a manifestů nasazení pro aplikaci s jedním sestavením, přičemž název a identitu manifestů.  
+## <a name="example"></a>Příklad
+V tomto příkladu `GenerateApplicationManifest` a `GenerateDeploymentManifest` úkoly ke generování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a manifestů nasazení pro aplikaci s jedním sestavením, přičemž název a identitu manifestů.
 
- Tento příklad je podobný jako předchozí příklad s výjimkou název a identita manifestů jsou explicitně zadány. Navíc tento příklad je nakonfigurován jako online aplikace namísto aplikace nainstalované.  
+Tento příklad je podobný jako předchozí příklad s výjimkou název a identita manifestů jsou explicitně zadány. Navíc tento příklad je nakonfigurován jako online aplikace namísto aplikace nainstalované.
 
 > [!NOTE]
->  V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  
+> V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.
 > 
 > [!NOTE]
->  Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).  
+> Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            AssemblyName="SimpleWinApp.exe"  
-            AssemblyVersion="1.0.0.0"  
-            EntryPoint="@(EntryPoint)"  
-            OutputManifest="SimpleWinApp.exe.manifest">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            AssemblyName="SimpleWinApp.exe"
+            AssemblyVersion="1.0.0.0"
+            EntryPoint="@(EntryPoint)"
+            OutputManifest="SimpleWinApp.exe.manifest">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-                AssemblyName="SimpleWinApp.application"  
-                AssemblyVersion="1.0.0.0"  
-                EntryPoint="@(ApplicationManifest)"  
-                Install="false"  
-                OutputManifest="SimpleWinApp.application">  
-                <Output  
-                    ItemName="DeployManifest"  
-                    TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+                AssemblyName="SimpleWinApp.application"
+                AssemblyVersion="1.0.0.0"
+                EntryPoint="@(ApplicationManifest)"
+                Install="false"
+                OutputManifest="SimpleWinApp.application">
+                <Output
+                    ItemName="DeployManifest"
+                    TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Příklad  
- V tomto příkladu `GenerateApplicationManifest` a `GenerateDeploymentManifest` úkoly ke generování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a manifestů nasazení pro aplikaci s více soubory a sestaveními.  
+## <a name="example"></a>Příklad
+V tomto příkladu `GenerateApplicationManifest` a `GenerateDeploymentManifest` úkoly ke generování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a manifestů nasazení pro aplikaci s více soubory a sestaveními.
 
 > [!NOTE]
->  V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  
+> V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.
 > 
 > [!NOTE]
->  Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).  
+> Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-        <DeployUrl>  
-            <!-- Insert the deployment URL here -->  
-        </DeployUrl>  
-        <SupportUrl>  
-            <!-- Insert the support URL here -->  
-        </SupportUrl>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+        <DeployUrl>
+            <!-- Insert the deployment URL here -->
+        </DeployUrl>
+        <SupportUrl>
+            <!-- Insert the support URL here -->
+        </SupportUrl>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe"/>  
-        <Dependency Include="ClassLibrary1.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-        </Dependency>  
-        <Dependency Include="ClassLibrary2.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-            <Group>Secondary</Group>  
-        </Dependency>  
-        <Dependency Include="MyAddIn1.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-            <TargetPath>Addins\MyAddIn1.dll</TargetPath>  
-        </Dependency>  
-        <Dependency Include="ClassLibrary3.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Prerequisite</DependencyType>  
-        </Dependency>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe"/>
+        <Dependency Include="ClassLibrary1.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+        </Dependency>
+        <Dependency Include="ClassLibrary2.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+            <Group>Secondary</Group>
+        </Dependency>
+        <Dependency Include="MyAddIn1.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+            <TargetPath>Addins\MyAddIn1.dll</TargetPath>
+        </Dependency>
+        <Dependency Include="ClassLibrary3.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Prerequisite</DependencyType>
+        </Dependency>
 
-        <File Include="Text1.txt">  
-            <TargetPath>Text\Text1.txt</TargetPath>  
-            <Group>Text</Group>  
-        </File>  
-        <File Include="DataFile1.xml ">  
-            <TargetPath>Data\DataFile1.xml</TargetPath>  
-            <IsDataFile>true</IsDataFile>  
-        </File>  
+        <File Include="Text1.txt">
+            <TargetPath>Text\Text1.txt</TargetPath>
+            <Group>Text</Group>
+        </File>
+        <File Include="DataFile1.xml ">
+            <TargetPath>Data\DataFile1.xml</TargetPath>
+            <IsDataFile>true</IsDataFile>
+        </File>
 
-        <IconFile Include="Heart.ico"/>  
-        <ConfigFile Include="app.config">  
-            <TargetPath>SimpleWinApp.exe.config</TargetPath>  
-        </ConfigFile>  
-        <BaseManifest Include="app.manifest"/>  
-    </ItemGroup>  
+        <IconFile Include="Heart.ico"/>
+        <ConfigFile Include="app.config">
+            <TargetPath>SimpleWinApp.exe.config</TargetPath>
+        </ConfigFile>
+        <BaseManifest Include="app.manifest"/>
+    </ItemGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            AssemblyName="SimpleWinApp.exe"  
-            AssemblyVersion="1.0.0.0"  
-            ConfigFile="@(ConfigFile)"  
-            Dependencies="@(Dependency)"  
-            Description="TestApp"  
-            EntryPoint="@(EntryPoint)"  
-            Files="@(File)"  
-            IconFile="@(IconFile)"  
-            InputManifest="@(BaseManifest)"  
-            OutputManifest="SimpleWinApp.exe.manifest">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            AssemblyName="SimpleWinApp.exe"
+            AssemblyVersion="1.0.0.0"
+            ConfigFile="@(ConfigFile)"
+            Dependencies="@(Dependency)"
+            Description="TestApp"
+            EntryPoint="@(EntryPoint)"
+            Files="@(File)"
+            IconFile="@(IconFile)"
+            InputManifest="@(BaseManifest)"
+            OutputManifest="SimpleWinApp.exe.manifest">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-            AssemblyName="SimpleWinApp.application"  
-            AssemblyVersion="1.0.0.0"  
-            DeploymentUrl="$(DeployToUrl)"  
-            Description="TestDeploy"  
-            EntryPoint="@(ApplicationManifest)"  
-            Install="true"  
-            OutputManifest="SimpleWinApp.application"  
-            Product="SimpleWinApp"  
-            Publisher="Microsoft"  
-            SupportUrl="$(SupportUrl)"  
-            UpdateEnabled="true"  
-            UpdateInterval="3"  
-            UpdateMode="Background"  
-            UpdateUnit="weeks">  
-            <Output  
-                ItemName="DeployManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+            AssemblyName="SimpleWinApp.application"
+            AssemblyVersion="1.0.0.0"
+            DeploymentUrl="$(DeployToUrl)"
+            Description="TestDeploy"
+            EntryPoint="@(ApplicationManifest)"
+            Install="true"
+            OutputManifest="SimpleWinApp.application"
+            Product="SimpleWinApp"
+            Publisher="Microsoft"
+            SupportUrl="$(SupportUrl)"
+            UpdateEnabled="true"
+            UpdateInterval="3"
+            UpdateMode="Background"
+            UpdateUnit="weeks">
+            <Output
+                ItemName="DeployManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Příklad  
- V tomto příkladu `GenerateApplicationManifest` úkolů ke generování nativního manifestu pro aplikaci *Test.exe*, odkazující na nativní součást *Alpha.dll* a součást izolovaného modelu COM  *Bravo.dll*.  
+## <a name="example"></a>Příklad
+V tomto příkladu `GenerateApplicationManifest` úkolů ke generování nativního manifestu pro aplikaci *Test.exe*, odkazující na nativní součást *Alpha.dll* a součást izolovaného modelu COM  *Bravo.dll*.
 
- Tento příklad vytvoří *Test.exe.manifest*, čímž aplikaci XCOPY nasaditelný a přijímá výhod modelu Registration Free com.  
+Tento příklad vytvoří *Test.exe.manifest*, čímž aplikaci XCOPY nasaditelný a přijímá výhod modelu Registration Free com.
 
 > [!NOTE]
->  V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  
+> V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.
 
-```xml  
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <File Include="Test.exe" />  
-        <Dependency Include="Alpha.dll">  
-            <AssemblyType>Native</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-        </Dependency>  
-        <ComComponent Include="Bravo.dll" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <File Include="Test.exe" />
+        <Dependency Include="Alpha.dll">
+            <AssemblyType>Native</AssemblyType>
+            <DependencyType>Install</DependencyType>
+        </Dependency>
+        <ComComponent Include="Bravo.dll" />
+    </ItemGroup>
 
-    <Target Name="Build">  
-        <GenerateApplicationManifest  
-            AssemblyName="Test.exe"  
-            AssemblyVersion="1.0.0.0"  
-            Dependencies="@(Dependency)"  
-            Files="@(File)"  
-            IsolatedComReferences="@(ComComponent)"  
-            ManifestType="Native">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+    <Target Name="Build">
+        <GenerateApplicationManifest
+            AssemblyName="Test.exe"
+            AssemblyVersion="1.0.0.0"
+            Dependencies="@(Dependency)"
+            Files="@(File)"
+            IsolatedComReferences="@(ComComponent)"
+            ManifestType="Native">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="see-also"></a>Viz také:  
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Generatedeploymentmanifest – úloha](../msbuild/generatedeploymentmanifest-task.md)   
- [Signfile – úloha](../msbuild/signfile-task.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Viz také:
+[Úlohy](../msbuild/msbuild-tasks.md)  
+[Generatedeploymentmanifest – úloha](../msbuild/generatedeploymentmanifest-task.md)  
+[Signfile – úloha](../msbuild/signfile-task.md)  
+[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
