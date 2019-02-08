@@ -1,7 +1,6 @@
 ---
 title: 'CA2107: Zkontrolujte použití čistého odepření a povolení'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2107
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b3bc6152bf233a1435eb0606490aa7be90e434
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c251b9fbf8327369acf20ef6acea0518e2b16913
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971591"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910282"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Zkontrolujte použití čistého odepření a povolení
 
@@ -31,7 +30,7 @@ ms.locfileid: "54971591"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Metoda obsahuje kontrolu zabezpečení, která určuje akce zabezpečení PermitOnly nebo odepřít.
 
 ## <a name="rule-description"></a>Popis pravidla

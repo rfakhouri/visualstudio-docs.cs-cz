@@ -1,7 +1,6 @@
 ---
 title: 'CA2000: Uvolňujte objekty před ztrátou oboru'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2e1e40945c3d3a60cdb633aac96c78dd92bc0e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06cb3ad9a3f424d4e7ec0c5ed239303c9b85ca58
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936850"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910115"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Uvolňujte objekty před ztrátou oboru
 
@@ -35,7 +34,7 @@ ms.locfileid: "54936850"
 |Kategorie|Microsoft.Reliability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Je vytvořen místní objekt typu <xref:System.IDisposable>, který však není uvolněn před tím, než jsou všechny odkazy na objekt mimo rozsah.
 
 ## <a name="rule-description"></a>Popis pravidla

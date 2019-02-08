@@ -1,7 +1,6 @@
 ---
 title: 'Krok 6: Pojmenujte své ovládací prvky tlačítek'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4624f6a4ce77aa03d3daea0781dc1cbd1028343d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: e0b1c4b34a9d4195875c1ae1104b1dc88585871b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853024"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946145"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6: Pojmenujte své ovládací prvky tlačítek
 Existuje pouze jeden <xref:System.Windows.Forms.PictureBox> na formuláři. Při přidávání jej rozhraní IDE automaticky pojmenuje **pictureBox1**. Existuje pouze jeden <xref:System.Windows.Forms.CheckBox>, který se nazývá **checkBox1**. Brzy napíšete kód a tento kód bude odkazovat na ovládací prvek CheckBox a PictureBox. Protože se nachází pouze jednu roli od každého z těchto ovládacích prvků, budete vědět, co znamenají, až se zobrazí **pictureBox1** nebo **checkBox1** ve vašem kódu.

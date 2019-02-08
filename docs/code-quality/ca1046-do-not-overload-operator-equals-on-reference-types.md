@@ -1,7 +1,6 @@
 ---
 title: 'CA1046: Nepřetěžujte operátory rovnosti u odkazových typů'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7d3994c827e7d090ead52d0ea6345ba8d79b2a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f9304fcd86a9b36a729b1436fe16471b449ac0d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018506"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953760"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Nepřetěžujte operátory rovnosti u odkazových typů
 
@@ -31,7 +30,7 @@ ms.locfileid: "55018506"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Odkaz na veřejný nebo vnořený veřejný typ přetížení operátoru rovnosti.
 
 ## <a name="rule-description"></a>Popis pravidla

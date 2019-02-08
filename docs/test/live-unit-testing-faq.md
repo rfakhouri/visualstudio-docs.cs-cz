@@ -1,7 +1,6 @@
 ---
 title: Nejčastější dotazy k funkci Live Unit Testing
-ms.date: 2017-10-03
-ms.prod: visual-studio-dev15
+ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935590"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947390"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – nejčastější dotazy
 
@@ -139,7 +138,7 @@ Nesmí být přepsána `<OutDir>` přímo v procesu sestavení; přepsat `<Outpu
 
 Nastavte `LiveUnitTesting_BuildRoot` proměnnou individuální prostředí pro cestu, kde chcete Live Unit Testing artefakty sestavení do vyřadit. 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Test Explorer vs. Live Unit Testing testovací běhy 
+## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Test Explorer vs. Live Unit Testing testovací běhy
 **Jak je spouštění testů z okna Průzkumníka testů liší od spuštění testů v Live Unit Testing?**
 
 Existuje několik rozdílů:
@@ -158,7 +157,7 @@ Existuje několik rozdílů:
 **Jak vyloučit testy ze Live Unit Testing?**
 
 Najdete v části "zahrnutí a vyloučení projekty testů a testovací metody" [pomocí Live Unit Testing v aplikaci Visual Studio 2017 Enterprise Edition](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) článku pro uživatelská nastavení. Zahrnutí nebo vyloučení testů je užitečné, pokud chcete spustit konkrétní sadu testů pro konkrétní Upravit relaci nebo k uchování vašich vlastních předvoleb osobní.
- 
+
 U nastavení specifická pro řešení, můžete použít <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> atribut prostřednictvím kódu programu k vyloučení je instrumentováno nástrojem Live Unit Testing metody, vlastnosti, třídy nebo struktury. Kromě toho můžete také nastavit `<ExcludeFromCodeCoverage>` vlastnost `true` v souboru projektu k vyloučení je instrumentováno celého projektu. Live Unit Testing stále poběží testy, které nebyly byla instrumentována, ale nebude možné vizualizovat jejich pokrytí.
 
 Můžete také zkontrolovat, zda `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` je načteno do aktuální domény aplikace a zakázat testy založené na důvod, proč. Například lze provádět podobné následujícímu s použitím xUnit:

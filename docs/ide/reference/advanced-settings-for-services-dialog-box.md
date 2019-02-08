@@ -1,7 +1,6 @@
 ---
 title: Dialogové okno Pokročilé nastavení služeb
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 490f7fcbe1a63fee9b44844de94e58cd0823aa46
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 330f52e1dd72f56c61e2fd77f5150edf4ac30731
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023155"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956880"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Dialogové okno Pokročilé nastavení služeb
 Klientské aplikační služby nabízejí zjednodušený přístup ke [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] přihlášení, role a služby profilu v aplikacích Windows Forms a Windows Presentation Foundation (WPF). Můžete použít **služby** stránku **Návrháře projektu** konfigurace klientských aplikačních služeb. Další informace o **služby** stránky, přečtěte si téma [stránka služby, Návrhář projektu](../../ide/reference/services-page-project-designer.md).
@@ -27,7 +26,7 @@ Klientské aplikační služby nabízejí zjednodušený přístup ke [!INCLUDE[
 
  Přístup **pokročilé nastavení služeb** dialogové okno, vyberte uzel projektu v **Průzkumníku řešení**a potom klikněte na tlačítko **vlastnosti** na **projektu**  nabídky. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **služby** kartu a potom klikněte na **Upřesnit** tlačítko. Toto tlačítko bude zakázána, dokud povolit klientské aplikační služby.
 
-## <a name="task-list"></a>Seznam úloh
+## <a name="task-list"></a>Seznam úkolů
 
 - [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 

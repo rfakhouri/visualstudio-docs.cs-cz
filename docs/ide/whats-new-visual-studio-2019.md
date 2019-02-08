@@ -2,7 +2,7 @@
 title: Novinky v sadě Visual Studio 2019
 titleSuffix: ''
 description: Další informace o nových funkcích sady Visual Studio 2019.
-ms.date: 02/07/2019
+ms.date: 02/08/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd0785e3e20051a58fe46695f27d9be0ae8567a
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: ef49ce6e84f4e96c92489b35ca2c91401f16c7d2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853963"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957988"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Novinky v sadě Visual Studio 2019 Preview
 
@@ -99,11 +99,16 @@ Zavádíme nové rozšíření, které si můžete stáhnout pomocí Visual Stud
 
 Abyste mohli hned začít, stáhněte si [žádosti o přijetí změn pro sadu Visual Studio](https://aka.ms/pr4vs) rozšíření z Visual Studio Marketplace.
 
-### <a name="develop-with-net-core-3-preview-1"></a>Vývoj s využitím .NET Core 3 Preview 1
+### <a name="develop-with-net-core-3-preview"></a>Vývoj s využitím .NET Core 3 ve verzi Preview
 
-Ve verzi preview verze sady Visual Studio 2019 podporuje vytváření [.NET Core 3](http://aka.ms/netcore3preview1) aplikací pro libovolnou platformu. Budeme nadále podporovat a zlepšit multiplatformní vývoj v jazyce C++ a .NET vývoj mobilních aplikací pro iOS a Android pomocí Xamarinu.
+Ve verzi preview verze sady Visual Studio 2019 podporuje vytváření [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) aplikací pro libovolnou platformu. Budeme nadále podporovat a zlepšit multiplatformní vývoj v jazyce C++ a .NET vývoj mobilních aplikací pro iOS a Android pomocí Xamarinu.
 
    ![Vývoj aplikací pomocí .NET Core 3 Preview 1 v Visual Studio 2019](media/dot-net-core-three-dev.png)
+
+Další informace naleznete na následujících stránkách:
+
+* [.NET core 3 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) a [.NET Core 3 ve verzi Preview 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) zpráva k vydání verze
+* [Ohlašujeme .NET Core 3 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) a [Ohlašujeme .NET Core 3 ve verzi Preview 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) blogové příspěvky
 
 ## <a name="continuous-innovation"></a>Průběžné inovace
 

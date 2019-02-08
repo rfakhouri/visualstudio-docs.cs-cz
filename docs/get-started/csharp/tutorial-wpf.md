@@ -3,7 +3,6 @@ title: 'Kurz: Aplikace Hello World pomocí Windows Presentation Foundation (WPF)
 description: Vytvoření jednoduché aplikace Windows Desktop .NET v C# pomocí sady Visual Studio pomocí rozhraní Windows Presentation Foundation (WPF) uživatelského rozhraní.
 ms.custom: seodec18, get-started
 ms.date: 10/03/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: be52f96cc105d1de2acb4fbcf37d37951ca9f609
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8fa5a78fbf1852e49da8a4cda59398c302029430
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853911"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909944"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Kurz: Vytvoření jednoduché aplikace sC#
 

@@ -3,7 +3,6 @@ title: Python v sadě Visual Studio kurz – krok 1, vytvoření projektu
 titleSuffix: ''
 description: Přehled a krok 1 Průvodce základní funkce Pythonu v sadě Visual Studio, včetně požadavků a vytvoření nového projektu Pythonu.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: da95e1b4da39d645712a8429798d8a1ca468e056
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231867"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924146"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Kurz: Práce s využitím Pythonu v sadě Visual Studio
 

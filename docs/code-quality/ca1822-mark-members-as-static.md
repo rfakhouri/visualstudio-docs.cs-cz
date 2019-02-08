@@ -1,7 +1,6 @@
 ---
 title: 'CA1822: Označte členy jako statické'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77b256ddaff769263bcc56891ca7c0ad2be30d0c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5ac9aff8741654ee5799724feb09c53f588dafb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979696"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948521"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Označte členy jako statické
 
@@ -31,7 +30,7 @@ ms.locfileid: "54979696"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Bez konce – Pokud člen není viditelný mimo sestavení, bez ohledu na změnu provedete. Pevné – Pokud stačí změnit na instanci členu s člena `this` – klíčové slovo.<br /><br /> Zásadní - li změnit člena z člena instance statického členu a je viditelný mimo sestavení.|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Člen, který není přístup k datům instance není označen jako statické (sdílené v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>Popis pravidla

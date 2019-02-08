@@ -3,7 +3,6 @@ title: Python v sadě Visual Studio kurz – krok 3, interaktivní okno REPL
 titleSuffix: ''
 description: Krok 3 průvodce základní funkce Pythonu v sadě Visual Studio, pokrývající okno REPL interaktivní Python.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cf51a53301ad65debe2bb69d33ce8a159aa9612f
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 5a1e4d87f86610fd009e3f8c07e8fd935e76abba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231880"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909671"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Použití okna interaktivní okno REPL
 

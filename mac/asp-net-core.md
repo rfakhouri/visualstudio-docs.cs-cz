@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296473"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910984"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 
@@ -41,7 +42,7 @@ Vyberte **prázdná webová aplikace ASP.NET Core** a stiskněte klávesu **Dal�
 
 ![Nové zobrazení prázdný projekt ASP.NET Core](media/asp-net-core-image4.png)
 
-ASP.NET Core prázdná webová aplikace vytvoří webovou aplikaci se dvěma soubory výchozí: **Program.cs** a **Startup.cs**, což je vysvětleno níže. Také vytvoří složku, závislosti, která obsahuje závislosti balíčku NuGet projektu, jako je ASP.NET Core, .NET Core framework a cíle nástroje MSBuild, které se projekt sestavil:
+ASP.NET Core prázdná webová aplikace vytvoří webovou aplikaci se dvěma výchozí soubory: **Soubor program.cs** a **Startup.cs**, což je vysvětleno níže. Také vytvoří složku, závislosti, která obsahuje závislosti balíčku NuGet projektu, jako je ASP.NET Core, .NET Core framework a cíle nástroje MSBuild, které se projekt sestavil:
 
 ![Zobrazení závislostí oblasti řešení](media/asp-net-core-image12.png)
 
@@ -65,7 +66,7 @@ public static void Main(string[] args)
 Aplikace ASP.NET Core vytvoří webový server v jeho hlavní metoda konfigurací a spuštění hostitele prostřednictvím instance [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Tato Tvůrce poskytuje metody, které umožňují hostitele nakonfigurovat. V aplikaci šablony jsou použité následující konfigurace:
 
 * `UseKestrel`: Určuje, že Kestrel server budou používat aplikaci
-* `UseContentRoot(Directory.GetCurrentDirectory())`: Používá kořenové složce webového projektu jako uživatel root obsahu aplikace při spuštění aplikace z této složky
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Jako obsah kořenové aplikace používá kořenové složce webového projektu při spuštění aplikace z této složky
 * `.UseIISIntegration()`: Určuje, že aplikace by měla fungovat se službou IIS. Použití služby IIS s ASP.NET Core `UseKestrel` a `UseIISIntegration` musí být zadána.
 * `.UseStartup<Startup>()`: Určuje třídu pro spuštění.
 
@@ -130,9 +131,9 @@ Otevřete prohlížeč zvolíte a zadejte `http://localhost:5000/`a nahraďte `5
 
 Aplikace ASP.NET Core pomocí vzoru návrhu Model-View-Controller (MVC) k poskytování logické rozdělení povinností mezi jednotlivé části aplikace. MVC se skládá z následujících akcí:
 
-- **Model**: třída, která představuje data aplikace.
-- **Zobrazení**: zobrazí aplikace uživatelské rozhraní (což se často stává datový model).
-- **Kontroler**: třída, která zpracovává požadavky na prohlížeč, odpoví na vstup uživatele a interakce.
+- **Model**: Třída, která představuje data aplikace.
+- **Zobrazení**: Zobrazí uživatelské rozhraní aplikace (což se často stává datový model).
+- **Kontroler**: Třída, která zpracovává požadavky na prohlížeč, jsou reaguje na vstup uživatele a interakce.
 
 Další informace o používání MVC najdete [přehled ASP.NET Core MVC](/aspnet/core/mvc/overview) průvodce.
 
@@ -236,3 +237,7 @@ Další informace o dalších krocích odsud najdete v následujících příru�
 - [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) dokumentace.
 - [Vytváření back-endových služeb pro nativní mobilní aplikace](/aspnet/core/mobile/native-mobile-backend), který ukazuje, jak sestavit služby REST pro aplikace na platformě Xamarin.Forms pomocí ASP.NET Core.
 - [ASP.NET Core praktických cvičení](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+
+## <a name="related-video"></a>Související videa
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

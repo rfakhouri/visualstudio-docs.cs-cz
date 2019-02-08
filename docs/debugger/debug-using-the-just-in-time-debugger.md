@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e9a85afd2024cb2ec723df053ebeca89ff52822
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020610"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921429"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu za běhu v sadě Visual Studio
 
@@ -193,6 +192,7 @@ Může se zobrazit následující chybové zprávy během Just-In-Time ladění:
     Pokud chcete tento problém vyřešit, použijte instalační program sady Visual Studio a přeinstalujte nebo opravte instalaci sady Visual Studio.
 
 ## <a name="see-also"></a>Viz také:
+
 - [Zabezpečení ladicího programu](../debugger/debugger-security.md)
 - [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
 - [Možnosti, ladění Just-In-Time dialogové okno](../debugger/just-in-time-debugging-options-dialog-box.md)

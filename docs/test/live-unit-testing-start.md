@@ -1,7 +1,6 @@
 ---
 title: Zjistěte, jak testovat kód pomocí živého testování částí
 ms.date: 08/31/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca02e4961d687d737887777bfe19d586298b6a9a
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854015"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950302"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live Unit Testing v sadě Visual Studio
 

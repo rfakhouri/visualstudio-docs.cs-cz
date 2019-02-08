@@ -1,7 +1,6 @@
 ---
 title: Přidání ovládacích prvků do dokumentů Office za běhu
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 01daa9a0446cc35090e6e47787b338cc74a9b1c8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869184"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944959"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Přidání ovládacích prvků do dokumentů Office za běhu
   Můžete přidat ovládací prvky do dokumentu Microsoft Office Word a sešit aplikace Microsoft Office Excel za běhu. Můžete také odebrat je za běhu. Ovládací prvky, které můžete přidat nebo odebrat za běhu se nazývají *dynamické ovládací prvky*.  

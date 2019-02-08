@@ -2,18 +2,17 @@
 title: Pracovní prostor sestavení v sadě Visual Studio | Dokumentace Microsoftu
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 813f7a5e-f298-4469-9f4c-a5bddf5a6e14
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0d90a3d317583e987eae83fadae5afa40546701
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826718"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951225"
 ---
 # <a name="workspace-build"></a>Pracovní prostor sestavení
 
@@ -39,7 +38,7 @@ Tady je přehled, co bude potřebovat vaše rozšíření.
 - Skener souboru na `ScanContentAsync<T>`
   - Vrací data při `FileScannerTypeConstants.FileDataValuesType` je argument typu
   - Vrací hodnotu data souboru pro každou konfiguraci zkonstruován pomocí:
-    - `type` jako `BuildConfigurationContext.ContextTypeGuid`
+    - `type` as `BuildConfigurationContext.ContextTypeGuid`
     - `context` jako konfigurace sestavení (třeba `"Debug|x86"`, `"ret"`, nebo `null` Pokud není k dispozici). Tato hodnota **musí** odpovídat konfiguraci z kontextu souboru.
 
 ## <a name="build-file-context-action"></a>Akce kontextu souboru sestavení

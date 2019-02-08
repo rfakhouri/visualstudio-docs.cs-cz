@@ -1,7 +1,6 @@
 ---
 title: 'CA1406: Vyhněte se argumentům Int64 pro klienty jazyka Visual Basic 6'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidInt64ArgumentsForVB6Clients
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be9df5658e3f68c5d5f03b356c60c7ab023ed46
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f1c8e50acf2aa4d061461ad934dbd61ba9be9644
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043164"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949249"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Vyhněte se argumentům Int64 pro klienty jazyka Visual Basic 6
 
@@ -34,7 +33,7 @@ ms.locfileid: "55043164"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Typ, který je označen jako viditelný pro Model COM (Component Object) deklaruje člen, že přejdete <xref:System.Int64?displayProperty=fullName> argument.
 
 ## <a name="rule-description"></a>Popis pravidla

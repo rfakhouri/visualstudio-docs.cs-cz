@@ -2,19 +2,18 @@
 title: Aktuální verze nástrojů R
 description: Jak zkontrolovat verze nástrojů R pro Visual Studio a nainstalovat aktualizace.
 ms.date: 07/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: dfbf4e2b39347fb6307121c84acc6e9f70f8dc2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6f37c26dac231bbfab38b6370786bd9bbe6b17c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031679"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956399"
 ---
 # <a name="rtvs-current-version"></a>Aktuální verze RTVS
 

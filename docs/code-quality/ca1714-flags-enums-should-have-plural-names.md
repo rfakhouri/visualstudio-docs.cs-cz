@@ -1,7 +1,6 @@
 ---
 title: 'CA1714: Výčty příznaků by neměly mít názvy v množném čísle'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - FlagsEnumsShouldHavePluralNames
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6bcfb7684c27104801ec54839b3fc6598cc850
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 512e66c65cb3abd0b5e56f268b9a89e4d51758bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971348"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953903"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Výčty příznaků by neměly mít názvy v množném čísle
 
@@ -31,7 +30,7 @@ ms.locfileid: "54971348"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Veřejný výčet má <xref:System.FlagsAttribute?displayProperty=fullName> a jeho název nekončí v prvku ".
 
 ## <a name="rule-description"></a>Popis pravidla

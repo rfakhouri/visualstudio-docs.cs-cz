@@ -1,7 +1,6 @@
 ---
 title: 'Průvodce: Vytvoření fragmentu kódu'
 ms.date: 10/27/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 27c8237b04b2c4c903d971b1035558b77d4bf2d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8944117c7d4e47f36f504f9677074ad4f86e33de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937597"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949054"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Průvodce: Vytvoření fragmentu kódu
 Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je třeba provést je vytvořit soubor XML, vyplnit odpovídající prvky a přidejte svůj kód do něj. Můžete také přidat odkazy a náhradní parametry do vašeho kódu. Fragment kódu pro instalaci sady Visual Studio můžete přidat pomocí **Import** tlačítko **Správce fragmentů kódů** (**nástroje**  >   **Správce fragmentů kódu**).
