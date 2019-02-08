@@ -2,7 +2,6 @@
 title: Prostředky pro navržení aplikací usnadňujících přístup
 description: Informace o vytvoření přístupných aplikací pro snadnější pro osoby s postižením používat.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1429816f15fb0184aa7f9b5295291b69ff0edc1e
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853739"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952660"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Prostředky pro navržení aplikací usnadňujících přístup
 

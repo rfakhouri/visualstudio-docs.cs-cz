@@ -1,7 +1,6 @@
 ---
 title: Automatizace aplikace Word s použitím rozšířených objektů
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 296946aa4d0bd012649cd39cbde99274db82484d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2babc4c22da5d27027f63dd0e0ca54577daa5535
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874286"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956308"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatizace aplikace Word s použitím rozšířených objektů
   Při vývoji řešení aplikace Word v sadě Visual Studio, můžete použít *hostovat položky* a *hostování ovládacího prvku*s ve vašich řešeních. Jedná se o objekty, které rozšiřují některé běžně používané objekty v objektovém modelu aplikace Word (to znamená, objektový model, který je zveřejněný prostřednictvím primárních sestavení vzájemné spolupráce pro aplikaci Word), například <xref:Microsoft.Office.Interop.Word.Document> a <xref:Microsoft.Office.Interop.Word.ContentControl> objekty. Rozšířené objekty se chovají jako objekty aplikace Word, které jsou založeny na, ale přidávají další události a možnosti vázání dat na objekty.  

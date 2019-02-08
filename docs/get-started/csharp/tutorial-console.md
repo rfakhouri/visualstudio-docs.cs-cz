@@ -4,7 +4,6 @@ description: Zjistěte, jak vytvořit konzolovou aplikaci C# v sadě Visual Stud
 ms.custom: seodec18, get-started
 ms.date: 01/25/2019
 ms.technology: vs-ide-general
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4f303b67365b5f824fe1ee114921ddc94c333922
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: e0ee9629a3ea4a98dd720886af14238c92fd6780
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424522"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912076"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Kurz: Vytvořit jednoduchou C# konzolovou aplikaci v sadě Visual Studio
 

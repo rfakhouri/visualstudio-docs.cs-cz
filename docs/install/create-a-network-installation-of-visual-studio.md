@@ -3,7 +3,6 @@ title: Vytvoření síťové instalace
 description: Zjistěte, jak vytvořit bod instalace sítě pro nasazení sady Visual Studio v rámci organizace.
 ms.date: 01/15/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc786cddc2a3676c1be246f04b726072beb37b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e208362352fc8d7024f02eae3d88a0d8d874b233
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981256"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912089"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvoření síťové instalace sady Visual Studio 2017
 

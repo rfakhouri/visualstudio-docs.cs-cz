@@ -1,7 +1,6 @@
 ---
 title: 'CA1001: Typy, které vlastní uvolnitelné pole, by měly být uvolnitelné'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1001
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 624839bb7e5f5e97260ef1a16eefcaf2c013470e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 581bc75c22326275dcb3657910f60c2977094037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997569"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907163"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Typy, které vlastní uvolnitelné pole, by měly být uvolnitelné
 
@@ -34,7 +33,7 @@ ms.locfileid: "54997569"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Bez konce – Pokud typ není viditelný mimo sestavení.<br /><br /> Rozdělení – typ je viditelný mimo sestavení.|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Třída deklaruje a implementuje pole instance, která je <xref:System.IDisposable?displayProperty=fullName> typ a třída neimplementuje <xref:System.IDisposable>.
 
 ## <a name="rule-description"></a>Popis pravidla

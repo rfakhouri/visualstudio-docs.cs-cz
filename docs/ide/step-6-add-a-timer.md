@@ -1,7 +1,6 @@
 ---
 title: 'Krok 6: Přidejte časovač'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab23e935aa9cc143dadae67eaf95d1309fcb3710
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 10581b66a22946012bb6f1ac86423fd92ca534cb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854028"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957806"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6: Přidejte časovač
 V dalším kroku přidejte <xref:System.Windows.Forms.Timer> ovládacího prvku do porovnávací hry. Časovač čeká zadaný počet milisekund a potom vyvolá událost označovanou jako *značek*. To je užitečné při spuštění akce nebo opakování akce v pravidelných intervalech. V takovém případě můžete pomocí časovače povolit hráči zvolit dvě ikony a pokud se ikony neshodují, po krátké době tyto ikony opět skrýt.

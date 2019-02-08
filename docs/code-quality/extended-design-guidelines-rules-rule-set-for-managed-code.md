@@ -1,7 +1,6 @@
 ---
 title: Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9aeddeed26542b32ed1517939b9f93e3ec7bdbb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017029"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918166"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
 Sada pravidel pravidla obecných zásad rozšířené návrhu Microsoft rozšiřuje možnosti návrhu základní pravidla obecných zásad pro maximalizaci problémů použitelnosti a udržovatelnosti, které jsou hlášeny. Je kladen zvláštní důraz na pokyny pro pojmenování. Zvažte zahrnutí této sady, pokud váš projekt zahrnuje kód knihovny nebo pokud chcete zajistit nejvyšší standardy pro psaní kódu, který se snadnou údržbou pravidel.

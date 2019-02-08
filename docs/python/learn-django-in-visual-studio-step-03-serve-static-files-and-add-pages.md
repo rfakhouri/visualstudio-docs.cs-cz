@@ -3,7 +3,6 @@ title: Přečtěte si kurz Django v sadě Visual Studio kroku 3, statické soubo
 titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně představením toho, jak doručování statických souborů, přidání stránky do aplikace a používat šablonu dědičnosti
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd226257b8af989ff336b518a6666d1aad3156ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e649dd6b802f99c73b99e5980039d0fef6e5a86f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947579"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957244"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti
 

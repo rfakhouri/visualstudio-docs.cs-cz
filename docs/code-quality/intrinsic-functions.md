@@ -1,7 +1,6 @@
 ---
 title: Vnitřní funkce
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _String_length_
@@ -16,12 +15,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7781a1ac48945b2c272d5234ac7f4dcbd923b309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944519"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907955"
 ---
 # <a name="intrinsic-functions"></a>Vnitřní funkce
 Výraz v SAL může být výraz jazyka C/C++, za předpokladu, že je výraz, který nemá žádné vedlejší účinky, například ++,--a všechny vedlejší účinky mají v tomto kontextu volání funkce.  Poznámky SAL však poskytuje některé funkce jako objekty a některé rezervované symboly, které můžete použít ve výrazech SAL. Tyto jsou označovány jako *vnitřní funkce*.

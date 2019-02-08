@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 93990d8437df75ff290d6c471f5f2ff38f710959
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec82c71a359bed423785cc914c58b97db954f4f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033905"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944595"
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové textové šablony, uložte soubor textové šablony a pak zvolte **ladit šablonu T4** v místní nabídce souboru v Průzkumníku řešení. Ladění za běhu textové šablony, jednoduše ladit aplikaci, do které patří.

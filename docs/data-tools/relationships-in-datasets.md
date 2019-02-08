@@ -13,15 +13,14 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f349887512cdfb9a98d64b0880eda45ecd5c186
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 611accb591b63f31ffe6a14535d470f2807f0e99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970224"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951732"
 ---
 # <a name="create-relationships-between-datasets"></a>Vytváření vztahů mezi tabulkami
 Datové sady, které obsahují data související tabulky použijte <xref:System.Data.DataRelation> objekty představují nadřazené a podřízené relace mezi tabulkami a vrácení souvisejících záznamů od sebe. Přidání souvisejících tabulek do datové sady s použitím **Průvodce konfigurací zdroje dat**, nebo **Návrhář Dataset**, vytvoří a nakonfiguruje <xref:System.Data.DataRelation> objekt za vás.

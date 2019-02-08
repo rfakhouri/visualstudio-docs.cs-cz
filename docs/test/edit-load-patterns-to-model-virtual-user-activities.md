@@ -10,13 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4f8e80fa9568bf418b972a3e2dd77d9141ba829f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932724"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956412"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro model aktivity virtuálního uživatele
 
@@ -107,7 +106,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
  Dávejte pozor na jedna věc je, pokud některé jiné zdroje jsou omezením propustnosti systému. Tyto prostředky může způsobit cíl, který je určen cílově zaměřeného vzoru nikdy dosaženo. Navíc bude pokračovat uživatelské zatížení roste, dokud hodnota, která je určená pro **maximální počet uživatelů** je dosaženo. Obvykle se nejedná o požadované zatížení, proto buďte opatrní při výběru čítače výkonu v cílově zaměřeného vzoru.
 
-## <a name="tasks"></a>Úlohy
+## <a name="tasks"></a>Úkoly
 
 |Úlohy|Související témata|
 |-|-----------------------|

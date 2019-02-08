@@ -1,7 +1,6 @@
 ---
 title: 'CA1020: Vyhněte se oborům názvu s malým množstvím typů'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1020
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc55de0e8326d44dde18230a88accc06635c39aa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 396208b9594e46aa179c3eebddc5a552ce0fca3c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936083"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916658"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Vyhněte se oborům názvu s malým množstvím typů
 
@@ -31,7 +30,7 @@ ms.locfileid: "54936083"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Obor názvů než globální obor názvů obsahuje méně než pět typů.
 

@@ -2,21 +2,20 @@
 title: Prohlídka integrovaného vývojového prostředí sady Visual Studio
 titleSuffix: ''
 ms.date: 02/05/2019
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79bf66a1fe46a32bb9c172106af7676d89a5469a
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742538"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920038"
 ---
-# <a name="first-look-at-the-visual-studio-ide"></a>První pohled na integrovaném vývojovém prostředí sady Visual Studio
+# <a name="first-look-at-the-visual-studio-ide"></a>První seznámení s integrovaným vývojovým prostředím sady Visual Studio
 
 V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio provedeme si některé z okna, nabídek a další funkce uživatelského rozhraní.
 

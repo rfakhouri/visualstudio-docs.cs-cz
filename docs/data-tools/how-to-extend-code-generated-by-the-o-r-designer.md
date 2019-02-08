@@ -6,15 +6,14 @@ ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 275d281c8e127f5ef7278881244252615efd2827
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ff7dfc9a83028b866f7601b9b41c685262356ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966163"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909598"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Postupy: Rozšíření kódu vygenerovaného návrhářem relací objektů
 Kód vygenerovaný **O/R Designer** je znovu vygenerovány, když dojde ke změně tříd entit a dalších objektů na návrhové ploše. Z důvodu této opětovné generování kódu veškerý kód, který přidáte do vytvořeného kódu je obvykle při přepsat návrháře znovu vygeneruje kód. **O/R Designer** poskytuje možnost Generovat částečné třídy soubory, které můžete přidat kód, který není přepsán. Jedním z příkladů přidání vlastního kódu pro kód vygenerovaný **O/R Designer** je přidání ověření dat na LINQ na třídy SQL (entita). Další informace najdete v tématu [jak: Přidání ověřování do tříd entit](../data-tools/how-to-add-validation-to-entity-classes.md).
