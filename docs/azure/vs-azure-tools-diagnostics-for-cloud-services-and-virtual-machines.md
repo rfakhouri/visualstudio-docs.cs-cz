@@ -8,13 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8fbbdfa3bbe76a4b09503f619d7a05c89291e5dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969162"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908723"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Nastavení diagnostiky pro službu Azure Cloud Services a virtuální počítače
 Když budete potřebovat k řešení cloudové služby Azure nebo na virtuálním počítači, můžete použít Visual Studio snadněji nastavení Azure Diagnostics. Diagnostika zaznamená systémová data a data protokolování na virtuální počítače a instance virtuálních počítačů, na kterých běží vaše Cloudová služba. Diagnostická data se přenesou do účtu úložiště, kterou zvolíte. Další informace o diagnostice protokolování v Azure, najdete v článku [povolit protokolování diagnostiky pro webové aplikace ve službě Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).

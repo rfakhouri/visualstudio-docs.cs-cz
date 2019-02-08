@@ -1,7 +1,6 @@
 ---
 title: 'CA2213: Uvolnitelná pole by měla být uvolněna'
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a57b3f094449665ec49688b21ebf89dc8b7a1669
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998232"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935534"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Uvolnitelná pole by měla být uvolněna
 
@@ -31,7 +30,7 @@ ms.locfileid: "54998232"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Typ, který implementuje <xref:System.IDisposable?displayProperty=fullName> deklaruje pole, která jsou typy, které také implementují <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Není volána metoda pole <xref:System.IDisposable.Dispose%2A> metoda deklarujícího typu.
 

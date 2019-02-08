@@ -1,7 +1,6 @@
 ---
 title: 'CA1707: Identifikátory by neměly obsahovat podtržítka'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb7fc19f90b7f0cd329dd1cff972d08c2052b055
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951375"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917737"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identifikátory by neměly obsahovat podtržítka
 
@@ -31,7 +30,7 @@ ms.locfileid: "54951375"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Zásadní – při aktivaci pro sestavení<br /><br /> Bez konce – při aktivaci pro parametry typu|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Název identifikátoru obsahuje podtržítko (\_) znaků.
 

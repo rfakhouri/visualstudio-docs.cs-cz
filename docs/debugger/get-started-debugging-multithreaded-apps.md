@@ -12,20 +12,20 @@ dev_langs:
 helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
-ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: e9b4cd77fb0d755079271668ba827c7d708b30b6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231971"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936691"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Začínáme s laděním vícevláknových aplikací (C#, Visual Basic, C++)
+
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní si můžete usnadnit ladění aplikací s více vlákny. Tento kurz ukazuje, jak používat značky vlákna **paralelní zásobníky** okně **paralelní sledování** oken, podmíněné zarážky a filtr zarážek. Dokončení tohoto kurzu se můžete seznámit s funkcemi sady Visual Studio pro ladění aplikací s více vlákny.
 
 | | |
@@ -342,7 +342,8 @@ Můžete nastavit zarážky v různých podmínkách, jako je například název
     > [!NOTE]
     > Při přechodu ladicí program se spustí všechna vlákna. Ladicí program však nebude proniknout do kódu v jiných vláknech, pokud jeden z jiných vláken narazí na zarážku. 
   
-## <a name="see-also"></a>Viz také:  
+## <a name="see-also"></a>Viz také:
+
 [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [Postupy: Přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
 [Postupy: Použití okna paralelní zásobníku](../debugger/using-the-parallel-stacks-window.md)  

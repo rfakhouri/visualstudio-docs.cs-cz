@@ -1,7 +1,6 @@
 ---
 title: 'CA1040: Vyhněte se prázdným rozhraním'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1040
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ffdea7cadbf7bfc2803573a78fdd9bbc74b1d287
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 73a1080a9701cc38da5d222e66baeb7747ffb8bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936863"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929086"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Vyhněte se prázdným rozhraním
 
@@ -35,7 +34,7 @@ ms.locfileid: "54936863"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Rozhraní není deklarovat všechny členy nebo implementovat dvě nebo více rozhraní.
 
 ## <a name="rule-description"></a>Popis pravidla

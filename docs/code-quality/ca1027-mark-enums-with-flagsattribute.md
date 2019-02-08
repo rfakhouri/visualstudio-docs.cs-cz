@@ -1,7 +1,6 @@
 ---
 title: 'CA1027: Označte výčty pomocí FlagsAttribute'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MarkEnumsWithFlags
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 268f946e3f6487fc4f53364ccaf34fd6dbd0527e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 185ff6a133fdb990e350d5d5737a40a27c24d588
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977457"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935261"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Označte výčty pomocí FlagsAttribute
 
@@ -31,7 +30,7 @@ ms.locfileid: "54977457"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Veřejný výčet hodnoty mocniny dvou nebo kombinací jiné hodnoty, které jsou definovány ve výčtu, a <xref:System.FlagsAttribute?displayProperty=fullName> atribut není k dispozici. Pokud chcete snížit počet falešně pozitivních výsledků, toto pravidlo sestavu porušení pro výčty, které mají souvislých hodnot.
 
 ## <a name="rule-description"></a>Popis pravidla

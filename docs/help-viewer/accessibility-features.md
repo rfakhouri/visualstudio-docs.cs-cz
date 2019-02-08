@@ -1,7 +1,6 @@
 ---
 title: Usnadnění programu Help Viewer
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility features [Help Viewer]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa7aca674968251418242b57625fb9e0b8b3561e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 808b3902747198697aa6a1147bd1c04c85dd96a6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940801"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913695"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funkce usnadnění v aplikaci Help Viewer
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. Toto téma obsahuje informace o funkcích, produktech a službách, které pomáhají zpřístupnit Microsoft Help Viewer pro osoby s různými schopnostmi.

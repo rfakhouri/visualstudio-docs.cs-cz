@@ -2,19 +2,18 @@
 title: R Tools for Visual Studio
 description: Nástroje R pro Visual Studio (RTVS) je zdarma, open source rozšíření, která poskytuje mnoho funkcí jazyka, včetně IntelliSense, ladění a vzdálené pracovní prostory.
 ms.date: 11/13/2017
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 542563340287b1d41a6f2c3aedd188e80589e898
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa12091493bda23c7eae52377f93b45cfe4c6e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947670"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933558"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Práce s R v sadě Visual Studio
 

@@ -2,7 +2,6 @@
 title: Testování částí kódu v Pythonu
 description: Nastavení testování jednotek pro kód Python v sadě Visual Studio plně využívá funkce Průzkumníka testů, které chcete zjišťovat, spouštějte a laďte testy.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76cdaadc8258acd3ed0ea87b69a6446b4ad920df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04c418824ff3d21e033466427cf805913d156465
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929189"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935274"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Nastavení testování jednotek pro kód v Pythonu
 

@@ -1,7 +1,6 @@
 ---
 title: 'Krok 11: Spusťte program a vyzkoušejte další funkce'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f37018a7ccc642b06382308b366644d5580d4cc
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: fbceecbbe03e84e1dac6c851f3bbb692c0e26539
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853271"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934650"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Spusťte program a vyzkoušejte další funkce
 Aplikace je dokončené a připravené ke spuštění. Můžete spustit váš program a nastavit barvu pozadí <xref:System.Windows.Forms.PictureBox>. Další informace, zkuste program zlepšit změnou barvy formuláře, přizpůsobením tlačítek a zaškrtávacího políčka a změnou vlastností formuláře.

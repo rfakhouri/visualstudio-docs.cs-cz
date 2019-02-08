@@ -1,7 +1,6 @@
 ---
 title: 'CA1023: Indexery by neměly být multidimenzionální'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - IndexersShouldNotBeMultidimensional
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b708b1be65b8aefa34e9f0366a87d6f94b5b5c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef3afd9dda70d02698abec5459b36e6acc2c5ed0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043697"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924541"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexery by neměly být multidimenzionální
 
@@ -35,7 +34,7 @@ ms.locfileid: "55043697"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Veřejný nebo chráněný typ obsahuje veřejná nebo chráněná indexer, který používá více než jeden index.
 
 ## <a name="rule-description"></a>Popis pravidla

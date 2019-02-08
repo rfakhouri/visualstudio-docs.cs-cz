@@ -1,7 +1,6 @@
 ---
 title: Stránka Možnosti, vlastnosti uzlu prostředí
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca01809edc10058097ea40ff67ea263b5a10a5a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959811"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955749"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidruženy **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu k vlastnosti kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.

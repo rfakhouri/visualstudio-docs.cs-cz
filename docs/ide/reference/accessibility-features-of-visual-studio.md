@@ -2,7 +2,6 @@
 title: Funkce pro usnadnění přístupu sady Visual Studio
 description: Další informace o funkcí usnadnění a nástrojů, které vám pomohou zajistit operačního systému Windows a sady Visual Studio developer přístupnější pro všechny uživatele, včetně osobám s postižením.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7011ec455ae9d723e7abfb8289f240c1fa6dd425
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 09b21ab89fe7631ae40def360c1dd111ded0df93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853011"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935001"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkce pro usnadnění přístupu sady Visual Studio
 

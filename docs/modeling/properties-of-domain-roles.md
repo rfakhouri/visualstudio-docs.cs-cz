@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 854f282b22427fd805091d39377654b8d988084b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919146"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923275"
 ---
 # <a name="properties-of-domain-roles"></a>Vlastnosti rolí domény
 Vlastnosti v následující tabulce jsou spojeny s rolí domény. Informace o rolích domény najdete v tématu [porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).

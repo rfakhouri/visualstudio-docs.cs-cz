@@ -18,71 +18,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2bb63fefe98426d63a7dd682c8a66c1d9b594c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070549"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909996"
 ---
 # <a name="itemgroup-element-msbuild"></a>Itemgroup – element (MSBuild)
-Obsahuje sadu uživatelem definované [položky](../msbuild/item-element-msbuild.md) elementy. Každá položka používané [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musí být zadán jako podřízený objekt `ItemGroup` element.  
-  
- \<Project>  
- \<ItemGroup>  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```xml  
-<ItemGroup Condition="'String A' == 'String B'">  
-    <Item1>... </Item1>  
-    <Item2>... </Item2>  
-</ItemGroup>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributy a elementy  
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
-  
-### <a name="attributes"></a>Atributy  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`Condition`|Nepovinný atribut. Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
-  
-### <a name="child-elements"></a>Podřízené prvky  
-  
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Položka](../msbuild/item-element-msbuild.md)|Definuje vstupy pro proces sestavení. Může být nula nebo více `Item` prvky `ItemGroup`.|  
-  
-### <a name="parent-elements"></a>Nadřazené prvky  
-  
+Obsahuje sadu uživatelem definované [položky](../msbuild/item-element-msbuild.md) elementy. Každá položka používané [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musí být zadán jako podřízený objekt `ItemGroup` element.
+
+\<Project>  
+\<ItemGroup>
+
+## <a name="syntax"></a>Syntaxe
+
+```xml
+<ItemGroup Condition="'String A' == 'String B'">
+    <Item1>... </Item1>
+    <Item2>... </Item2>
+</ItemGroup>
+```
+
+## <a name="attributes-and-elements"></a>Atributy a elementy
+Následující části popisují atributy, podřízené prvky a nadřazené prvky.
+
+### <a name="attributes"></a>Atributy
+
+|Atribut|Popis|
+|---------------|-----------------|
+|`Condition`|Nepovinný atribut. Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|
+
+### <a name="child-elements"></a>Podřízené prvky
+
+|Prvek|Popis|
+|-------------|-----------------|
+|[Položka](../msbuild/item-element-msbuild.md)|Definuje vstupy pro proces sestavení. Může být nula nebo více `Item` prvky `ItemGroup`.|
+
+### <a name="parent-elements"></a>Nadřazené prvky
+
 | Prvek | Popis |
 | - | - |
 | [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
 | [Cíl](../msbuild/target-element-msbuild.md) | Od verze rozhraní .NET Framework 3.5 `ItemGroup` element může být použit uvnitř `Target` elementu. Další informace najdete v tématu [cíle](../msbuild/msbuild-targets.md). |
-  
-## <a name="example"></a>Příklad  
- Následující příklad kódu ukazuje kolekce uživatelem definovanou položku katalogu `Res` a `CodeFiles` deklarované uvnitř `ItemGroup` elementu. Všechny položky v `Res` položky kolekce obsahuje definovaný uživatelem podřízený [itemmetadata –](../msbuild/itemmetadata-element-msbuild.md) elementu.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Res Include = "Strings.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-        <Res Include = "Dialogs.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-  
-        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />  
-        <CodeFiles Include="..\..\Resources\Constants.cs" />  
-    </ItemGroup>  
-...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Položky](../msbuild/msbuild-items.md)   
- [Společné položky projektu nástroje MSBuild](../msbuild/common-msbuild-project-items.md)
+
+## <a name="example"></a>Příklad
+Následující příklad kódu ukazuje kolekce uživatelem definovanou položku katalogu `Res` a `CodeFiles` deklarované uvnitř `ItemGroup` elementu. Všechny položky v `Res` položky kolekce obsahuje definovaný uživatelem podřízený [itemmetadata –](../msbuild/itemmetadata-element-msbuild.md) elementu.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Res Include = "Strings.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+        <Res Include = "Dialogs.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+
+        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />
+        <CodeFiles Include="..\..\Resources\Constants.cs" />
+    </ItemGroup>
+...
+</Project>
+```
+
+## <a name="see-also"></a>Viz také:
+[Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)  
+[Položky](../msbuild/msbuild-items.md)  
+[Společné položky projektu nástroje MSBuild](../msbuild/common-msbuild-project-items.md)

@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9d9a1826e8c06d947e05bf7201f2963a7bac860f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82309eb9288dffb1fca0a3917b764ffb9040ab9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039576"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937166"
 ---
 # <a name="how-to--with-text-templates"></a>Postupy pro textové šablony
 Textové šablony v sadě Visual Studio nabízejí praktický způsob generování textu jakéhokoli druhu. Textové šablony můžete použít ke generování textu za běhu v rámci vaší aplikace a v době návrhu k vygenerování nějakých kód projektu. Toto téma obsahuje souhrn nejčastěji dotaz "Jak na to...?" dotazy.

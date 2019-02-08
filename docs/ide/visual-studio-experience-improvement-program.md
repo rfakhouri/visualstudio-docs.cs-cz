@@ -2,19 +2,18 @@
 title: Program Zlepšování softwaru a služeb na základě zkušeností uživatelů
 description: Zjistěte, jak spravovat nastavení ochrany osobních údajů v sadě Visual Studio.
 ms.date: 05/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ddafa340f0d9ab87b359cf1a5cc5b92ea7cabe
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852670"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927526"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio programu zlepšování zkušeností zákazníků
 

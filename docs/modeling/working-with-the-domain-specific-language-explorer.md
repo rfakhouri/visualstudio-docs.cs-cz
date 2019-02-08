@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 295b7c2bb0c146e567ab752f693b8dba9aa08517
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a27558ea21569e4e31bdbb3ea2c238ce863efda3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069353"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907734"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Práce s průzkumníkem jazyka specifického pro doménu
 **Průzkumník DSL** několik druhů informací se zobrazí ve stromovém zobrazení. Další informace o většině položek v Průzkumníku DSL najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).

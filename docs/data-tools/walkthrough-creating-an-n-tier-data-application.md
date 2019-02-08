@@ -12,15 +12,14 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c3ee28514af9db5b0a03ce8b9805ef773c649a42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993161"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933012"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Průvodce: Vytvoření vícevrstvé datové aplikace
 *N-vrstvá* datové aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logické vrstvy, nebo *úrovně*. Rozdělení komponent aplikace do samostatných vrstev zvyšuje udržovatelnost a škálovatelnost aplikace. Dělá to tak, že umožněno snadnější přijímání nových technologií, které lze použít u jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvu, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstvy přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, jako je například ověřování a ověřování. Datová vrstva obsahuje relační databáze. N-vrstvá aplikace obvykle ukládá citlivé informace do vrstvy přístupu k datům z střední vrstvy, aby se zachovala izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md).

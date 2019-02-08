@@ -3,7 +3,6 @@ title: Úvod do úprav pro C# vývojáře
 description: Tento úvod během 10 minut do editoru kódu v sadě Visual Studio jsou uvedeny některé ze způsobů, že sada Visual Studio provádí zápis, navigace a pochopení C# kódu jednodušší.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc0e143b4ff84422a344caae1e50e88f47af5eeb
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: ebcf76f07eadaee6402facb4fa62a3ac309ebbac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424561"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933155"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 

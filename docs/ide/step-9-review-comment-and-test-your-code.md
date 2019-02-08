@@ -1,7 +1,6 @@
 ---
 title: 'Krok 9: Zkontrolujte, komentáře a testování kódu'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c8808b8de7bd42ea5dab1c9e739e98ce63e6c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853349"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934312"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Zkontrolujte, komentáře a testování kódu
 Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že nedojde ke změně způsobu, jakým se chová program. To usnadňuje pro čtenáře kódu pochopit jeho význam. Přidání komentářů do kódu je dobré se naučit do. V jazyce Visual C# dvě lomítka (/ /) značí řádek jako komentáře. V jazyce Visual Basic jednoduché uvozovky (') slouží k označení řádku jako komentáře. Po přidání komentáře otestujete váš program. Je vhodné spustit a otestovat kód často při práci na svých projektech, takže můžete zachytit a opravit případné problémy dříve, než kód složitější. Tento postup se nazývá *iterativnější testování*.

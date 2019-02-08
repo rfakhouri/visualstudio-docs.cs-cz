@@ -1,7 +1,6 @@
 ---
 title: Možnosti, textový editor, C/C++, upřesnit
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
@@ -15,12 +14,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e5b78f6642cf458e9099d421d7b4a20540ab8c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6136c9c1cd2bb169c08fc314dcd7cb327d143125
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903038"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933961"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Možnosti, textový editor, C/C++, upřesnit
 Změnou tyto možnosti můžete změnit chování související se technologie IntelliSense a procházení databází, když programujete v jazyce C nebo C++.
@@ -184,7 +183,7 @@ Změnou tyto možnosti můžete změnit chování související se technologie I
 
  Z důvodů výkonu "Najít všechny odkazy" zobrazí nezpracované textové výsledky hledání ve výchozím nastavení namísto použití IntelliSense k ověření každého kandidáta. Pro přesnější výsledky pro všechny operace hledání můžete zrušte zaškrtnutí tohoto políčka. Filtrovat na základě za vyhledávání, otevřete místní nabídku pro seznam výsledků a klikněte na tlačítko "Vyřešit výsledky."
 
- **Skrýt nepotvrzené**
+ **Hide Unconfirmed**
 
  Skryjte nepotvrzené položky ve výsledcích najít všechny odkazy. Pokud jste možnost zrušit nastavení "Zakázat řešení", můžete použít tuto možnost skryjete nepotvrzené položky ve výsledcích.
 

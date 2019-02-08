@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6151cafd1b89333e6db45abd3d93a61648346bc9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981191"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927851"
 ---
 # <a name="properties-of-domain-properties"></a>Vlastnosti vlastností domény
 A *doménovou vlastnost* je funkce, které může obsahovat hodnotu prvku modelu. Například `Person` doménová třída může mít vlastnosti `Name` a `BirthDate`. V definici DSL vlastnosti domény patří do domény pole třídy v diagramu a v rámci doménové třídy v Průzkumníku DSL. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).

@@ -6,17 +6,16 @@ ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
 manager: wpickett
-ms.prod: visual-studio-dev15
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926275"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957936"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Pomocí podle dokumentu C++ Core Guidelines šachovnice
+# <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 
 Podle dokumentu C++ Core Guidelines jsou přenosná sadu pokynů, pravidla a osvědčenými postupy psaní kódu v jazyce C++ vytvořených odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu těchto pravidel jako součást své nástroje analýzy kódu pro jazyk C++. Tyto moduly pro kontrolu příručka core jsou nainstalované ve výchozím nastavení v sadě Visual Studio 2017 a jsou [k dispozici jako balíček NuGet pro Visual Studio 2015](#vs2015_corecheck).
 

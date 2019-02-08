@@ -2,7 +2,6 @@
 title: Formátování kódu Pythonu
 description: Visual Studio může automaticky formátovat kód Python včetně mezer, příkazy, zabalení a komentáře.
 ms.date: 10/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49733b4a63ccffef64ca2fca3ba1f969eca2609b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bec365d47dfe3e821b47b3a8f895cd749eb49d60
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012518"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932024"
 ---
 # <a name="format-python-code"></a>Formátování kódu Pythonu
 

@@ -2,7 +2,6 @@
 title: Produkty a služby pro usnadnění přístupu od Microsoftu
 description: Další informace o produktech a službách od Microsoftu, která můžou pomoct náš operační systémy, programů a aplikace pro každodenní použití, včetně osobám s postižením.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -20,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04463705130ba0bf16c812fdc29d33f9cdb7753b
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853297"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932089"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby pro usnadnění přístupu od Microsoftu
 

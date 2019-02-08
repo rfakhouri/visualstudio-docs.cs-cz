@@ -1,7 +1,6 @@
 ---
 title: Další zdroje informací pro vývoj řešení pro systém Office
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6626f9dbc6f0b17ba3e02a66d2f104873089a616
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ea45bc0bec473983765a7358dabc36a485f520b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873389"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939460"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Další zdroje informací pro vývoj řešení pro systém Office
   Nástroje Microsoft Office developer tools v sadě Visual Studio představují pouze jedna z mnoha způsoby, jak rozšířit aplikace Office. Aplikace Office mají také některé integrované funkce, jako je například otevřených formátů XML, které nejsou pokryty všemi Office developer tools v sadě Visual Studio nebo tuto dokumentaci.  

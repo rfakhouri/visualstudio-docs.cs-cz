@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bc59d2c070b4463bde133be8d378c0094ef5a4fb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853950"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935092"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novinky v sadě Visual Studio 2017
 
@@ -382,6 +382,7 @@ Pokud chcete provést návrh, o jak jsme vylepšení sady Visual Studio, nebo Da
 ## <a name="see-also"></a>Viz také:
 
 * [Zpráva k vydání verze Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
+* [Novinky v sadě Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
 * [Co je nového v jazyce Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Co je nového v jazyce C#](/dotnet/csharp/whats-new)
 * [Co je nového v Team Foundation Server](/tfs/server/whats-new?view=vsts)

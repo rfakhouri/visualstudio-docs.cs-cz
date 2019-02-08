@@ -1,7 +1,6 @@
 ---
 title: 'CA1901: Deklarace volání nespravovaného kódu by měla být přenosná'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1901
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e74c798cc273fe331118139df99ec890cdcd3086
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001667"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936892"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklarace volání nespravovaného kódu by měla být přenosná
 
@@ -31,7 +30,7 @@ ms.locfileid: "55001667"
 |Kategorie|Microsoft.Portability|
 |Narušující změna|Rozdělení - P/Invoke je viditelná mimo sestavení. Pevné – Pokud P/Invoke není viditelný mimo sestavení.|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Toto pravidlo vyhodnotí velikost každého parametru a vrácené hodnoty deklarace P/Invoke a ověří správnost jejich velikost, při zařazení na nespravovaný kód v 32bitové a 64bitové platformy. Nejběžnější porušení tohoto pravidla je předat celé číslo pevnou velikostí, ve kterém jsou vyžadována proměnná závislého na platformě, velikosti ukazatele.
 
 ## <a name="rule-description"></a>Popis pravidla

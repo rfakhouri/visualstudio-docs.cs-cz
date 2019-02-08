@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d11edbc37af9201718831433bd7dba7b2753484
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de62cb46c591b554ea4204e88fedbbfa99381fef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991044"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907604"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generování a konfigurace aplikace z modelů
 Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu.

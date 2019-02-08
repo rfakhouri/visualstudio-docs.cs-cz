@@ -12,15 +12,14 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 08cf47310c9743d1071dd46a30e5c04372ca5cb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996724"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928670"
 ---
 # <a name="edit-data-in-datasets"></a>Úpravy dat v datových sadách
 Můžete upravovat data v datových tabulkách stejně, jako úprava dat v tabulce v jakékoli databázi. Proces může obsahovat, vkládání, aktualizaci a odstranění záznamů v tabulce. Ve formě vázané na data můžete určit, která pole se uživatel upravovat. V těchto případech se datové vazby infrastruktury zpracovává všechny řešení change tracking, aby změny lze odeslat zpět do databáze později. Pokud provedete úpravy prostřednictvím kódu programu k datům a chcete odeslat změny zpět do databáze, musíte použít objekty a metody, které udělal za vás sledování změn.
