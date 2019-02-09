@@ -1,7 +1,6 @@
 ---
 title: 'CA1302: Nekódujte pevně řetězce závislé na národním prostředí'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotHardcodeLocaleSpecificStrings
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5698cbc9621747ce4d84ba1d70a0036571fa9bcb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a52add4453276ebf415b47f7f50e74b51a573306
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939592"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970605"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Nekódujte pevně řetězce závislé na národním prostředí
 
@@ -34,7 +33,7 @@ ms.locfileid: "54939592"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Metoda používá řetězcový literál, který představuje část cesty k určitým složkám systému.
 
 ## <a name="rule-description"></a>Popis pravidla

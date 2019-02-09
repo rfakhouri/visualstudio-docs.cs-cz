@@ -1,7 +1,6 @@
 ---
 title: 'CA2124: Zabalte ohroženou klauzuli finally do vnějšího bloku try'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2124
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8773df5d309d72ef7e1a5298230b6cce63f23ee8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958833"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970345"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Zabalte ohroženou klauzuli finally do vnějšího bloku try
 
@@ -31,7 +30,7 @@ ms.locfileid: "54958833"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Ve verzích 1.0 a 1.1 rozhraní .NET Framework, veřejná nebo chráněná metoda obsahuje `try` / `catch` / `finally` bloku. `finally` Bloku nejspíše obnovuje stav zabezpečení a není uzavřen v `finally` bloku.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -1,7 +1,6 @@
 ---
 title: Ověřování systému během vývoje
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2abdb1d23598c0a103b706781b41fa0a59e6e6ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98cde01932d2e0d73fdae1dad0ef4e5b3e659f34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977993"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970371"
 ---
 # <a name="validate-your-system-during-development"></a>Ověřování systému během vývoje
 Visual Studio vám může pomoci udržovat konzistentní s požadavky uživatelů a architektuře systému vašeho softwaru.
