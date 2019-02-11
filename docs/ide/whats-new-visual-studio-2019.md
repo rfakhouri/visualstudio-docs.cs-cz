@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ef49ce6e84f4e96c92489b35ca2c91401f16c7d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957988"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987415"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Novinky v sadě Visual Studio 2019 Preview
 
@@ -89,6 +89,8 @@ Další informace najdete v tématu [zdokonaleno ve Visual Studio 2019: Hledán�
 
 A sadou Visual Studio 2019 Preview, tato služba nainstaluje ve výchozím nastavení.
 
+   ![Animovaný GIF, který zobrazuje spolupráci funkce Live Share v aplikaci Visual Studio 2019](media/live-share-collaboration.gif)
+
 Další informace najdete v tématu [Visual Studio Live Share pro revize kódu v reálném čase a interaktivní vzdělávání](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blogový příspěvek.
 
 ## <a name="modern-development-support"></a>Podpora moderního vývoje
@@ -103,7 +105,7 @@ Abyste mohli hned začít, stáhněte si [žádosti o přijetí změn pro sadu V
 
 Ve verzi preview verze sady Visual Studio 2019 podporuje vytváření [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) aplikací pro libovolnou platformu. Budeme nadále podporovat a zlepšit multiplatformní vývoj v jazyce C++ a .NET vývoj mobilních aplikací pro iOS a Android pomocí Xamarinu.
 
-   ![Vývoj aplikací pomocí .NET Core 3 Preview 1 v Visual Studio 2019](media/dot-net-core-three-dev.png)
+   ![Vývoj aplikací pomocí .NET Core 3 ve verzi Preview v aplikaci Visual Studio 2019](media/dot-net-core-three-dev.png)
 
 Další informace naleznete na následujících stránkách:
 
@@ -132,6 +134,8 @@ Tady je několik způsobů, jak Visual Studio IntelliCode může pomoct zvýšit
 * Příručka pro vývojáře dodržovat vzory a styly jejich tým
 * Najít problémy s kódu obtížné catch
 * Revize kódu fokus kreslením upozornit na oblasti, které jsou opravdu důležité.
+
+ ![Příklad návrhem technologie IntelliSense](media/intellicode-intellisense-suggestion.png)
 
 Zpočátku podporujeme pouze C# když jsme první předběžně IntelliCode rozšíření pro Visual Studio. Nyní přidali jsme podporu pro C++ a XAML v sadě Visual Studio, příliš.
 

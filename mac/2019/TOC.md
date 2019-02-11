@@ -10,7 +10,7 @@
 
 # [Uživatelské účty](/visualstudio/mac/user-accounts)
 ## [Přihlášení](/visualstudio/mac/signing-in)
-## [Povolení předplatného](/visualstudio/mac/activation)
+## [Povolení předplatného](/visualstudio/mac/enable-subscription)
 
 # [Přizpůsobení integrovaného vývojového prostředí (IDE)](/visualstudio/mac/customizing-the-ide)
 ## [Rozšíření sady Visual Studio pro Mac](/visualstudio/mac/extending-visual-studio-mac)

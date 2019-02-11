@@ -1,7 +1,7 @@
 ---
 title: Interaktivní okno Python (REPL)
 description: Použití interaktivního okna (REPL) pro rychlý vývoj kódu Python v sadě Visual Studio.
-ms.date: 10/29/2018
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc6d9896cc8d6015606d5e5fc3c21d2547aae233
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a7f47ace0d43416638221329dc74a431cdba587e
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912843"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987441"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Práce s interaktivní okno Pythonu
 

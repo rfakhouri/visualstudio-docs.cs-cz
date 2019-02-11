@@ -9,7 +9,7 @@
 
 # [Uživatelské účty](user-accounts.md)
 ## [Přihlášení](signing-in.md)
-## [Povolení předplatného](activation.md)
+## [Povolení předplatného](enable-subscription.md)
 
 # [Přizpůsobení integrovaného vývojového prostředí (IDE)](customizing-the-ide.md)
 ## [Rozšíření sady Visual Studio pro Mac](extending-visual-studio-mac.md)
