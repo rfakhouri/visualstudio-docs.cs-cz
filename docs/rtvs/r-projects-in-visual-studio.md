@@ -2,19 +2,18 @@
 title: Projekty v R
 description: Jak vytvořit projekty v R správce v sadě Visual Studio obsahuje vlastnosti, projekt příkazů a šablony.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 66dc3cfcdd8cf815ba8f7744b36e0c04a750d49a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990573"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936184"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Vytvořit projekty v R v sadě Visual Studio
 
@@ -65,7 +64,7 @@ Pokud máte existující složky *. R* soubory, které chcete spravovat v projek
 K otevření stránek vlastností projektu, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo vyberte **projektu > vlastnosti (název projektu)** nabídky položka. Otevřeném okně zobrazí vlastnosti projektu:
 
 
-| Tabulátor | Vlastnost | Popis |
+| Karta | Vlastnost | Popis |
 | --- | --- | --- |
 | Spustit | Spouštěcí soubor | Název souboru, který se spustí s **zdrojový soubor spouštěcí** příkazu **F5**, **ladění** > **spustit ladění**, nebo  **Ladění** > **spustit bez ladění**. Pravým tlačítkem soubor v projektu a výběrem **nastavit jako spouštěcí skript jazyka R** také nastaví jako spouštěcí soubor. |
 | | Resetovat při spuštění interaktivní R | Vymaže všechny proměnné z pracovního prostoru interaktivní okno při spuštění projektu. To provedete tak záruky existuje není žádný obsah pracovního prostoru plyne ze zbytkových zkontrolují běhů. |

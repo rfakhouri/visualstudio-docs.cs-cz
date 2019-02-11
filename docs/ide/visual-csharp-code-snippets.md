@@ -1,7 +1,6 @@
 ---
 title: C#fragmenty kódu
 ms.date: 06/05/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38794c3a81d98b245102f48b0c99319f6e9571b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021387"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917841"
 ---
 # <a name="c-code-snippets"></a>C#fragmenty kódu
 
@@ -37,7 +36,7 @@ Ve výchozím nastavení jsou zahrnuty následující fragmenty kódu v sadě Vi
 |#if – direktiva|Vytvoří [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) směrnice a [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif) směrnice.|Kdekoli.|
 |#region – direktiva|Vytvoří [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) směrnice a [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) směrnice.|Kdekoli.|
 |~|Vytvoří [finalizační metodu](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (destruktor) pro třídu obsahující.|Uvnitř třídy.|
-|– atribut|Vytvoří deklaraci pro třídu, která je odvozena z <xref:System.Attribute>.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|
+| – atribut|Vytvoří deklaraci pro třídu, která je odvozena z <xref:System.Attribute>.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|
 |checked|Vytvoří [zaškrtnutí](/dotnet/csharp/language-reference/keywords/checked) bloku.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|
 |třída|Vytvoří deklaraci třídy.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|
 |konstruktoru|Vytvoří konstruktor pro třídu obsahující.|Uvnitř třídy.|
