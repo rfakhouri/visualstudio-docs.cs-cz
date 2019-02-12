@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf8f680cedaf64fba5f75e65f2e4ca5398969b89
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970579"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155133"
 ---
 # <a name="profile-python-code"></a>Profil kódu Pythonu
 
@@ -30,10 +30,6 @@ Profilace je spuštěn prostřednictvím **analyzovat** > **spuštění profilov
 Když vyberete **OK**, profiler běží a otevře se sestava výkonu, pomocí kterého můžete prozkoumat, jak je čas strávený v aplikaci:
 
 ![Sestava profilace výkonu](media/profiling-results.png)
-
-|   |   |
-|---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) ukázku pythonu profilace (3 m 00s).|
 
 > [!Note]
 > V současné době Visual Studio podporuje pouze tuto úroveň profilace celé aplikace, ale určitě chceme slyšet váš názor na budoucí funkce. Použití [ **názor na produkt** tlačítko](#feedback) v dolní části této stránky.

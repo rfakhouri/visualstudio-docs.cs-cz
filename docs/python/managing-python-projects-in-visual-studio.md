@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 487d03ff462fbb8fbcd5cbd1131103e5bacb3316
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935183"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155861"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty v Pythonu v sadě Visual Studio
 
@@ -36,8 +36,7 @@ Visual Studio poskytuje celou řadu šablon projektů Python rychle nastavit po�
 
 |   |   |
 |---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) s úvodem do projektů v Pythonu (2 miliony 17s). |
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | Viz také [podrobné informace: Použití správy zdrojového kódu s projekty v Pythonu](https://youtu.be/Aq8eqApnugM) (webu youtube.com, 8 min 55s). |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podrobné informace: Použití správy zdrojového kódu s projekty v Pythonu](https://youtu.be/Aq8eqApnugM) (webu youtube.com, 8 min 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Přidejte soubory, přiřaďte spouštěcí soubor a nastavení prostředí
 

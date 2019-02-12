@@ -1,7 +1,7 @@
 ---
 title: Vytvoření síťové instalace
 description: Zjistěte, jak vytvořit bod instalace sítě pro nasazení sady Visual Studio v rámci organizace.
-ms.date: 01/15/2019
+ms.date: 02/12/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e208362352fc8d7024f02eae3d88a0d8d874b233
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69073866096d5b4a20501aadfd93f7befd4a0b12
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912089"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155432"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvoření síťové instalace sady Visual Studio 2017
 
@@ -123,8 +123,10 @@ Správci můžou nasadit sady Visual Studio na klientských pracovních stanic, 
 > [!TIP]
 > Při spuštění jako součást dávkového souboru, `--wait` možnost zajišťuje, že `vs_enterprise.exe` proces čeká na dokončení instalace je dříve, než vrátí ukončovací kód. To je užitečné, pokud chce správce podnikové sítě provádět další akce instalace byla dokončena (například [použít kód product key pro úspěšnou instalaci](automatically-apply-product-keys-when-deploying-visual-studio.md)) ale musí počkat na dokončení zpracování instalace Návratový kód z této instalace.  Pokud nepoužijete `--wait`, `vs_enterprise.exe` proces ukončí před dokončením instalace a vrátí nesprávné ukončovací kód, který nepředstavuje stavu operace instalace.
 
+Při instalaci z rozložení, je obsah, který je nainstalován získaných z rozložení. Ale pokud vyberete součást, která se nenachází v rozložení, ji bude možné získat z Internetu.  Pokud chcete zabránit ve stahování veškerý obsah, který nebyl nalezen v rozložení, použijte instalační program sady Visual Studio `--noWeb` možnost.  Pokud `--noWeb` se používá a rozložení chybí veškerý obsah, který je se rozhodli nainstalovat, instalace selže. 
 
-Při instalaci z rozložení, je obsah, který je nainstalován získaných z rozložení. Ale pokud vyberete součást, která se nenachází v rozložení, ji bude možné získat z Internetu.  Pokud chcete zabránit ve stahování veškerý obsah, který nebyl nalezen v rozložení, použijte instalační program sady Visual Studio `--noWeb` možnost.  Pokud `--noWeb` se používá a rozložení chybí veškerý obsah, který je se rozhodli nainstalovat, instalace selže.
+> [!IMPORTANT]
+> `--noWeb` Možnost k zastavení instalace sady Visual Studio z vyhledávají se aktualizace. Další informace najdete v tématu [řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md) stránky.
 
 ### <a name="error-codes"></a>Kódy chyb
 

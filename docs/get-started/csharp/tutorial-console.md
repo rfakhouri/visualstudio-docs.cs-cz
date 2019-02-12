@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e0ee9629a3ea4a98dd720886af14238c92fd6780
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912076"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156069"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Kurz: Vytvořit jednoduchou C# konzolovou aplikaci v sadě Visual Studio
 
@@ -533,5 +533,4 @@ Blahopřejeme k dokončení tohoto kurzu! Další ještě více, pokračujte v n
 
 ## <a name="see-also"></a>Viz také:
 
-* [Videokurz: C#Základy pro naprosté začátečníky](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
 * [Další informace k ladění C# kódu v sadě Visual Studio](tutorial-debugger.md)

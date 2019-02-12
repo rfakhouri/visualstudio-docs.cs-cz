@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4b37d2d8db3aad649b0285a952d2537e67d7c1b5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916749"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155484"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalace podpory Pythonu v sadě Visual Studio ve Windows
 
@@ -68,10 +68,6 @@ K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete
 1. Po dokončení instalace instalační program poskytuje možnosti, jak změnit, spusťte, opravit nebo odinstalovat Visual Studio. **Změnit** tlačítko se změní na **aktualizace** při aktualizacích sady Visual Studio jsou k dispozici pro všechny nainstalované součásti. ( **Změnit** je pak k dispozici v rozevírací nabídce možnost.) Můžete také spustit Visual Studio a instalační program pro instalaci Windows **Start** nabídky hledáním v "Visual Studio".
 
     ![Spouštění, úprava, změna nebo odinstalací sady Visual Studio pomocí instalačního programu](media/installation-vs-launch.png)
-
-|   |   |
-|---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) na instalace podpory Pythonu v sadě Visual Studio.|
 
 ### <a name="troubleshooting"></a>Poradce při potížích
 

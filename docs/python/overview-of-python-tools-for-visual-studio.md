@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f26b9fcb038380a57c6dd6c8f5752de9ac0ada1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 39d11b1b3bc17cd8a7329fd6f4c1a8010f461438
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957923"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155835"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -29,7 +29,7 @@ Python v současné době nepodporuje v sadě Visual Studio pro Mac, ale je k di
 Jak začít:
 
 - Postupujte podle [pokyny k instalaci](installing-python-support-in-visual-studio.md) nastavit úlohou Pythonu.
-- Seznámíte se s funkcemi Python sady Visual Studio si části v tomto článku. Můžete také [sledovat série videí (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) s úvodem do Python v sadě Visual Studio (celkem 22 minut).
+- Seznámíte se s funkcemi Python sady Visual Studio si části v tomto článku.
 - Projděte si jeden nebo více šablon rychlý start k vytvoření projektu. Pokud si nejste jisti, začněte tématem [vytvoření webové aplikace pomocí Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - Postupujte podle [pracovat s využitím Pythonu v sadě Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) kurzu pro prostředí úplného začátku do konce.
 
@@ -43,9 +43,8 @@ Použití **otevřít interaktivní okno** příkaz interaktivní spuštění Py
 
 Další informace:
 
-- Video (2m 35s): [Správa prostředí Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Dokumentace: [Správa prostředí Pythonu](managing-python-environments-in-visual-studio.md)
-- Dokumentace: [Odkaz na prostředí Pythonu](python-environments-window-tab-reference.md)
+- [Správa prostředí Pythonu](managing-python-environments-in-visual-studio.md)
+- [Odkaz na prostředí Pythonu](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Bohaté možnosti úpravy, technologii IntelliSense a porozumění kódu
 
@@ -55,7 +54,6 @@ Visual Studio poskytuje prvotřídní editor Pythonu, včetně barevné zvýraz�
 
 Další informace:
 
-- Video (2m 30s): [Úpravy kódu v Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Dokumentace: [Úpravy kódu v Pythonu](editing-python-code-in-visual-studio.md)
 - Dokumentace: [Formátovat kód](formatting-python-code.md)
 - Dokumentace: [Refaktorování kódu](refactoring-python-code.md)
@@ -74,9 +72,8 @@ Visual Studio také podporuje IPython/Jupyter v REPL, včetně vložené grafy, 
 
 Další informace:
 
-- Video (2m 22s: [Interaktivní okno Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Dokumentace: [Interaktivní okno](python-interactive-repl-in-visual-studio.md)
-- Dokumentace: [IPython in Visual Studio](interactive-repl-ipython.md)
+- [Interaktivní okno](python-interactive-repl-in-visual-studio.md)
+- [IPython in Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Systém projektů a šablon projektů a položek
 
@@ -105,7 +102,6 @@ Jednou z Visual Studio předností je jeho výkonný ladicí program. Pro jazyk 
 
 Další informace:
 
-- Video: [3m 32s ladění Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
 - Dokumentace: [Ladění Pythonu](debugging-python-in-visual-studio.md)
 - Dokumentace: [Ladění ve smíšeném režimu Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Dokumentace: [Vzdálené ladění na Linuxu](debugging-python-code-on-remote-linux-machines.md)
@@ -119,7 +115,6 @@ Profilace zkoumá, jak je právě doba trvání v rámci vaší aplikace. Visual
 
 Další informace:
 
-- Video: [Profilace Python 3m 00s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - Dokumentace: [Python nástroje pro profilaci](profiling-python-code-in-visual-studio.md)
 - Visual Studio – Obecné funkce dokumentace: [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md). (Ne všechny funkce pro profilaci sady Visual Studio jsou k dispozici pro Python).
 
@@ -131,7 +126,6 @@ Zjišťování, spouštět a spravovat testy v sadě Visual Studio **Průzkumní
 
 Další informace:
 
-- Video: [Testing Python 2m 31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
 - Dokumentace: [Nástroje testování částí pro Python](unit-testing-python-in-visual-studio.md)
 - Visual Studio – Obecné funkce dokumentace: [Testování částí kódu](../test/unit-test-your-code.md).
 
@@ -140,12 +134,6 @@ Další informace:
 Úlohy Python obsahuje sadu Azure SDK pro Python, která zjednodušuje využívání služeb Azure z aplikace pro Windows, Mac OS X a Linux.
 
 Další informace najdete v tématu [sady Azure SDK for Python](/python/azure/?view=azure-python).
-
-## <a name="python-training-on-microsoft-virtual-academy"></a>Python školení na Microsoft Virtual Academy
-
-|   |   |
-|---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | <ul><li>[Úvod k programování v Pythonu](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python začátečníky: Řetězce a funkce](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Základy Pythonu: Seznam a smyčky](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Nejdůležitější otázky týkající se Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Otázky a odpovědi
 
@@ -313,9 +301,3 @@ Jsou k dispozici v sadě Visual Studio 2015 a starší [visualstudio.microsoft.c
 1. Vyžaduje systém Windows 8 nebo novější. **Připojit ladicí program (Python)** v příkaz **Průzkumníka serveru** vyžaduje [sady Azure SDK for .NET 2.3 – Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) nebo novější.
 
 1. Vyžaduje systém Windows 8 nebo novější.
-
-## <a name="additional-resources"></a>Další zdroje
-
-- [WFastCGI most mezi službou IIS a Python](https://pypi.org/p/wfastcgi) (pypi.org)
-- [Bezplatné kurzy Pythonu v Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Nejdůležitější otázky týkající se Python v Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

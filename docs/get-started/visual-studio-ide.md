@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead4ed51d2cf72e505f905e5bab7be0551a6ee86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 32bb2ea08ffc5b60948d45c31b7c7a471d7d57ea
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909970"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155953"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Vítejte v prostředí IDE sady Visual Studio
 
@@ -286,5 +286,4 @@ Pokud jste připraveni začít do další kód, jeden z následujících šablon
 - Zjistit [další funkce sady Visual Studio](../ide/advanced-feature-overview.md)
 - Navštivte [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Čtení [blogu sady Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-- Podívejte se na bezplatné kurzy sady Visual Studio na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)
 - Stáhněte si Visual Studio na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 89d08619ede0269adb8cbf1df70bb423bb436bca
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947020"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155380"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Vytvoření aplikace Vue.js pomocí Node.js Tools for Visual Studio
 
@@ -177,6 +177,6 @@ Neznámý problém s vue cli 3.0 brání automatizace procesu sestavení. Pokaž
 
 ## <a name="see-also"></a>Viz také:
 
-- https://vuejs.org/v2/guide – Vue Příručka Začínáme.
-- https://github.com/vuejs/vue-cli – Projekt Vue rozhraní příkazového řádku.
-- https://webpack.js.org/configuration/ -Dokumentace ke službě Webpacku konfigurace.
+- [Příručka Začínáme VUE get](https://vuejs.org/v2/guide).
+- [Vue CLI projekt] (https://github.com/vuejs/vue-cli(.
+- [Dokumentaci konfigurační Webpacku](https://webpack.js.org/configuration/).

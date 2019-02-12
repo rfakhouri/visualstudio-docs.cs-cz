@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 415739feaf313ae55e72033cc89116f0b8307dd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4514aa132adab37425d0d49c4594fec8db09d12d
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949003"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155718"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Pythonu v sadě Visual Studio
 
@@ -70,10 +70,6 @@ Vpravo od každé uvedené prostředí je ovládací prvek, který se otevře **
 
 > [!Note]
 > I když Visual Studio respektuje možnost balíčků systému lokality, neposkytuje způsob, jak změnit ho z Visual Studia.
-
-|   |   |
-|---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) na prostředí Pythonu v sadě Visual Studio (2 miliony 35s).|
 
 ### <a name="what-if-no-environments-appear"></a>Co když se nezobrazí žádná prostředí?
 

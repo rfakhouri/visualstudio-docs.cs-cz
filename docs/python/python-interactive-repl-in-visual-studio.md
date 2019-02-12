@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a7f47ace0d43416638221329dc74a431cdba587e
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987441"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155653"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Práce s interaktivní okno Pythonu
 
@@ -35,10 +35,6 @@ Visual Studio má několik režimů REPL Pythonu na výběr:
 Tento článek popisuje **standardní** a **ladění** REPL režimy. Informace o režimech IPython, naleznete v tématu [použití Ipythonu REPL](interactive-repl-ipython.md).
 
 Podrobný návod s příklady, včetně interakcí s editoru **Ctrl**+**Enter**, naleznete v tématu [kurzu krok 3: Použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
-
-|   |   |
-|---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) na **interaktivní** okno (2 miliony 22s).|
 
 ## <a name="open-an-interactive-window"></a>Otevřít interaktivní okno
 

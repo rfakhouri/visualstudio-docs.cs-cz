@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d306ec5789359469a25631f6e27dc2c13bcb7cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946454"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156134"
 ---
 # <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
 
@@ -54,10 +54,6 @@ Dále si stáhněte soubor zaváděcího nástroje sady Visual Studio. Uděláte
  > [!div class="button"]
  > [Stažení sady Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![Ikona filmové kamery pro video](media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) o tom, jak stáhnout soubor zaváděcí nástroj Visual Studio a zvolte edici sady Visual Studio, která je pro vás nejvhodnější. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Krok 3: instalace instalační program sady Visual Studio
 
@@ -94,29 +90,17 @@ Po dokončení instalace instalační program vám pomůže ho svou instalaci p�
 > [!TIP]
 > Kdykoli po instalaci můžete nainstalovat úlohy nebo komponenty, které nenainstaloval původně. Pokud máte Visual Studio otevřete, přejděte na **nástroje** > **získat nástroje a funkce...**  tím se otevře instalačního programu sady Visual Studio. Nebo otevřete **instalační program sady Visual Studio** z nabídky Start. Odtud můžete vybrat úlohy nebo komponenty, které chcete nainstalovat a pak klikněte na **změnit**.
 
-|         |         |
-|---------|---------|
-|  ![Ikona filmové kamery pro video](media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) o tom, jak nainstalovat Instalační program sady Visual Studio a pak nainstalujte úlohu. |
-
 ## <a name="step-5---select-individual-components-optional"></a>Krok 5: vyberte jednotlivé komponenty (volitelné)
 
 Pokud už nechcete používat funkci úlohy k přizpůsobení instalace sady Visual Studio, můžete tak učiníte nainstalováním jednotlivé komponenty. Chcete-li vybrat jednotlivé komponenty, klikněte na tlačítko **jednotlivé komponenty** z instalačního programu sady Visual Studio, vyberte, co chcete a pak postupujte podle pokynů.
 
   ![Visual Studio 2017 – instalace jednotlivých součástí](media/vs2017-components.PNG "jednotlivých součástí instalace sady Visual Studio")
 
-  |         |         |
-  |---------|---------|
-  |  ![Ikona filmové kamery pro video](media/video-icon.png "Sledovat video")  |   [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) o postupu instalace jednotlivých součástí s použitím instalačního programu sady Visual Studio. |
-
 ## <a name="step-6---install-language-packs-optional"></a>Krok 6 – instalace jazykových sad (volitelné)
 
 Ve výchozím nastavení instalační program pokusí tak, aby odpovídala jazyku operačního systému při prvním spuštění. Chcete-li nainstalovat Visual Studio 2017 v jazyce podle vašeho výběru, klikněte na tlačítko **jazykových sad** možnost z instalačního programu sady Visual Studio a postupujte podle zobrazených výzev.
 
   ![Visual Studio 2017 – instalace jazykových sad](media/vs2017-languages.PNG "jazykové sady Nainstalujte Visual Studio")
-
-  |         |         |
-  |---------|---------|
-  |  ![Ikona filmové kamery pro video](media/video-icon.png "Sledovat video")  |   [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) o tom, jak nainstalovat jazykovou sadu pomocí instalačního programu sady Visual Studio. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Změnit jazyk instalačního programu z příkazového řádku
 

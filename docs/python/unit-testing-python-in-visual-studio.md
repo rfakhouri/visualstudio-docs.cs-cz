@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 04c418824ff3d21e033466427cf805913d156465
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935274"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155978"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Nastavení testování jednotek pro kód v Pythonu
 
@@ -24,10 +24,6 @@ Testování částí jsou části kódu, které testují jiné jednotky kódu v 
 Testy jednotek Python často používá k ověření scénáře při návrhu programu. Podpora Pythonu v sadě Visual Studio obsahuje zjišťování, spouštění a ladění testů jednotek v rámci vašeho vývojového procesu, aniž by bylo potřeba spustit samostatně.
 
 Tento článek poskytuje stručný přehled testování funkce v sadě Visual Studio pomocí Pythonu. Další informace o testování obecně najdete v tématu [testování částí kódu](../test/unit-test-your-code.md).
-
-|   |   |
-|---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) na testování jednotek v Pythonu (2 miliony 31s). |
 
 ## <a name="discover-and-view-tests"></a>Zjištění a zobrazení testů
 

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8b8c0476c404604eca38ed16916a92d92e25275
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 666f0df2e0b210b41155a5c1cd082e969d029e4e
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925420"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155848"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Vítá vás Visual Studio IDE | Python
 
@@ -135,4 +135,3 @@ Python v sadě Visual Studio dále prozkoumejte pomocí jednoho z následující
 - Zjistit [další funkce sady Visual Studio](../ide/advanced-feature-overview.md)
 - Navštivte [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Čtení [blogu sady Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-- Podívejte se na bezplatné kurzy sady Visual Studio na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)

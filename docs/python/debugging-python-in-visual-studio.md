@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bdaff4b9e67ff1dce7edd2d0002d119ba7a84003
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941882"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155874"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -26,10 +26,6 @@ Také naleznete v následujících článcích ladění specifické pro scéná�
 - [Vzdálené ladění pro Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Ladění ve smíšeném režimu Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symboly pro ladění ve smíšeném režimu](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) ukázku pythonu ladění (3 m 32s).|
 
 <a name="debugging-without-a-project"></a>
 

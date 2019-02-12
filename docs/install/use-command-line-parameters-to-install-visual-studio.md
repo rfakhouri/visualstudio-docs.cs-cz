@@ -2,7 +2,7 @@
 title: Instalace sady Visual Studio s použitím parametrů příkazového řádku
 titleSuffix: ''
 description: Další informace o použití parametrů příkazového řádku k řízení nebo přizpůsobit instalaci sady Visual Studio.
-ms.date: 11/14/2018
+ms.date: 02/12/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d82af468af14a6d743d6b89326eae0e510ce358
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d6f04d6cdf94a351025e62f4bafb1eb92b1fcf91
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909099"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155497"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -107,7 +107,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `--cache` | **Novinka v 15.2, volitelné**: Pokud jsou k dispozici, balíčky se uchovají po nainstalování pro další opravy. Tím se přepíše nastavení pro následné nainstaluje, opraví nebo úpravy globální zásady. Výchozí zásada je do mezipaměti balíčků. To se ignoruje pro příkaz odinstalovat. Přečtěte si, jak k [zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) Další informace. |
 | `--nocache` | **Novinka v 15.2, volitelné**: Pokud jsou k dispozici, balíčky se odstraní po se nainstalovat ani opravit. Že se znovu stáhnou pouze v případě potřeby a znovu po použití odstraněna. Tím se přepíše nastavení pro následné nainstaluje, opraví nebo úpravy globální zásady. Výchozí zásada je do mezipaměti balíčků. To se ignoruje pro příkaz odinstalovat. Přečtěte si, jak k [zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) Další informace. |
 | `--noUpdateInstaller` | **Novinka v 15.2, volitelné**: Pokud jsou k dispozici, lze zabránit instalačnímu programu ze samotné aktualizace, pokud je zadán tichý. Instalační program příkaz selže a vrátí nenulový ukončovací kód, pokud noUpdateInstaller je zadána s quiet, když se vyžaduje se aktualizace instalačního programu. |
-| `--noWeb` | **Novinka v 15.3, volitelné**: Instalační program teď stáhnout veškerý obsah, který je instalace z Internetu.  Veškerý obsah, který se instaluje musí být k dispozici v offline rozložení.  Pokud se rozložení chybí obsah, instalace selže.  Další informace najdete v tématu [nasazení z instalace v síti](create-a-network-installation-of-visual-studio.md). |
+| `--noWeb` | **Novinka v 15.3, volitelné**: Pokud jsou k dispozici, instalační program sady Visual Studio používá soubory v adresáři rozložení instalace sady Visual Studio. Pokud se uživatel pokusí nainstalovat součásti, které nejsou v rozložení, instalace selže.  Další informace najdete v tématu [nasazení z instalace v síti](create-a-network-installation-of-visual-studio.md). <br/><br/> **Důležité**: Tento přepínač nezastaví instalace sady Visual Studio z vyhledávají se aktualizace. Další informace najdete v tématu [řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **Nové ve verzi 15.7 volitelné**: Slouží k určení vlastní instalační cesty pro instalaci. Podporované cesty, které jsou sdíleny názvy, mezipaměť a instalace. |
 | `--path cache=<path>` | **Nové ve verzi 15.7 volitelné**: Používá umístění, které zadáte ke stažení instalačních souborů. Toto umístění lze nastavit pouze při prvním je nainstalována aplikace Visual Studio. Příklad: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Nové ve verzi 15.7 volitelné**: Obsahuje sdílené soubory pro instalaci sady Visual Studio vedle sebe. Některé nástroje a sady SDK nainstalovat do umístění na této jednotce, zatímco jiné můžou toto nastavení přepsat a nainstalovat na jinou jednotku. Příklad: `--path shared="C:\VS\shared"` <br><br>Důležité: To lze nastavit pouze jednou a na prvním je nainstalována aplikace Visual Studio. |
