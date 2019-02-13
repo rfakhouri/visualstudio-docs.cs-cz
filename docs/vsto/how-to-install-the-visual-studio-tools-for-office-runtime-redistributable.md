@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74e63f34a7285fc035ae2acd338a73725a77e6ce
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 28bd6b050f5f313132167631d25ec7c4be661462
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867205"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227365"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable
   Visual Studio 2010 Tools for Office runtime musí být nainstalovaný na každém počítači, na kterém běží řešení, které jsou vytvořeny pomocí nástroje Microsoft Office developer tools v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Modul runtime se nainstaluje automaticky při instalaci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a Microsoft Office. Další informace najdete v tématu [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
@@ -48,7 +48,7 @@ ms.locfileid: "54867205"
   
      Můžete stáhnout z těchto instalačních souborů [Visual Studio 2010 Tools for Office runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Požadavky pro [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] odpovídat požadavky pro rozhraní .NET Framework.  
   
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Obsahuje jazykové sady. Pokud instalace systému Windows je nastavena na jiný jazyk než angličtinu, můžete zobrazit zprávy modulu runtime ve stejném jazyce, který používáte pro Windows. Podobně pokud si koncoví uživatelé nainstalují [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] a spusťte instalaci systému Windows, která jsou nastavena na jiný jazyk než angličtinu, zpráv modulu runtime se zobrazí ve stejném jazyce jako Windows vašich řešení. V některých případech můžete potřebovat další jazykové sady. Například může být nutné další jazykové sady, pokud vaše kopie systému Windows používá více než jedno nastavení jazyka nebo přepnout na jiný jazyk, poté, co jste již nainstalovali [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Můžete najít jazykové sady v [Microsoft Visual Studio 2010 Tools pro Microsoft Office system (verze 4.0 modulu runtime) language pack](http://go.microsoft.com/fwlink/?LinkId=140386).  
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Obsahuje jazykové sady. Pokud instalace systému Windows je nastavena na jiný jazyk než angličtinu, můžete zobrazit zprávy modulu runtime ve stejném jazyce, který používáte pro Windows. Podobně pokud si koncoví uživatelé nainstalují [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] a spusťte instalaci systému Windows, která jsou nastavena na jiný jazyk než angličtinu, zpráv modulu runtime se zobrazí ve stejném jazyce jako Windows vašich řešení. V některých případech můžete potřebovat další jazykové sady. Například může být nutné další jazykové sady, pokud vaše kopie systému Windows používá více než jedno nastavení jazyka nebo přepnout na jiný jazyk, poté, co jste již nainstalovali [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Můžete najít jazykové sady v [Microsoft Visual Studio 2010 Tools pro Microsoft Office system (verze 4.0 modulu runtime) language pack](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Viz také:  
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

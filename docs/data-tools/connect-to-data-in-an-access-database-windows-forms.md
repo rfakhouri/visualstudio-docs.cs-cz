@@ -1,6 +1,6 @@
 ---
 title: Připojení k datům v databázi aplikace Access (Windows Forms)
-ms.date: 09/15/2017
+ms.date: 02/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - databases, connecting to
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: efad211c5807aa4a018ede3c9018cf69f4668747
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933779"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227641"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojení k datům v databázi aplikace Access (Windows Forms)
 
@@ -29,44 +29,35 @@ Můžete připojit k databázi aplikace Access (buď *.mdf* souboru nebo *.accdb
 
 Pokud chcete použít tyto postupy, potřebujete projekt aplikace Windows Forms a databáze aplikace Access (*.accdb* soubor) nebo databázi aplikace Access 2000-2003 (*.mdb* souboru). Postupujte podle kroků odpovídajících vašemu typu souboru.
 
-## <a name="creating-the-dataset-for-an-accdb-file"></a>Vytvoření datové sady pro soubor .accdb
+## <a name="create-a-dataset-for-an-accdb-file"></a>Vytvoření datové sady pro soubor .accdb
 
 Můžete připojit k databázím vytvořeným pomocí aplikace Access 2013, Office 365, Access 2010 nebo 2007 přístup pomocí následujícího postupu.
 
-### <a name="to-create-the-dataset"></a>Vytvoření datové sady
+1. Otevřete aplikaci Windows Forms, ke kterému chcete připojit data.
 
-1.  Otevřete aplikaci Windows Forms, ke kterému chcete připojit data.
+2. Chcete-li otevřít **zdroje dat** okno na **zobrazení** nabídce vyberte možnost **ostatní Windows** > **zdroje dat**.
 
-2.  Chcete-li otevřít **zdroje dat** okno na **zobrazení** nabídce vyberte možnost **ostatní Windows** > **zdroje dat**.
+   ![Zobrazení zdrojů dat Windows](../data-tools/media/viewdatasources.png)
 
-     ![Zobrazení zdrojů dat Windows](../data-tools/media/viewdatasources.png)
+3. V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
 
-3.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
+   **Průvodce konfigurací zdroje dat** otevře.
 
-     **Průvodce konfigurací zdroje dat** otevře.
+4. Vyberte **databáze** na **zvolte typ zdroje dat** stránce a pak vyberte **Další**.
 
-4.  Vyberte **databáze** na **zvolte typ zdroje dat** stránce a pak vyberte **Další**.
+5. Vyberte **datovou sadu** na **vyberte databázový Model** stránce a pak vyberte **Další**.
 
-5.  Vyberte **datovou sadu** na **vyberte databázový Model** stránce a pak vyberte **Další**.
+6. Na **vyberte datové připojení** stránce **nové připojení** konfigurace nové datové připojení.
 
-6.  Na **vyberte datové připojení** stránce **nové připojení** konfigurace nové datové připojení.
+   **Přidat připojení** zobrazí se dialogové okno.
 
-     **Přidat připojení** zobrazí se dialogové okno.
+7. Pokud **zdroj dat** není nastavená na **soubor databáze Microsoft Access (OLE DB)**, vyberte **změnu** tlačítko.
 
-7.  Vyberte **změnu** vedle **zdroj dat** textového pole.
+   **Změnit zdroj dat** zobrazí se dialogové okno. V seznamu zdrojů dat, zvolte **soubor databáze Microsoft Access**. V **poskytovatele dat** rozevíracího seznamu, vyberte **zprostředkovatele dat .NET Framework pro OLE DB**a klikněte na tlačítko **OK**.
 
-     **Změnit zdroj dat** zobrazí se dialogové okno.
+8. Zvolte **Procházet** vedle **název souboru databáze**a pak přejděte do vaší *.accdb* soubor a zvolte **otevřít**.
 
-8.  V seznamu zdrojů dat, zvolte  **\<jiných\>**. V **poskytovatele dat** rozevíracího seznamu, vyberte **zprostředkovatele dat .NET Framework pro OLE DB**, klikněte na tlačítko **OK**.
-
-9. Zpátky **přidat připojení** dialogovém okně vyberte **Office 12.0 Access Database modulu zprostředkovatele Microsoft OLE DB** z **zprostředkovatele OLE DB** rozevíracího seznamu.
-
-     ![OLE DB poskytovatele Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
-
-     > [!NOTE]
-     > Pokud nevidíte **Office 12.0 Access Database modulu zprostředkovatele Microsoft OLE DB** ve zprostředkovateli OLE DB rozevíracího seznamu, budete muset nainstalovat [ovladač systému Office 2007: součásti pro připojení dat](https://www.microsoft.com/download/confirmation.aspx?id=23734).
-
-9. V **serveru nebo název souboru** textového pole zadejte cestu a název souboru *.accdb* souboru, kterou chcete připojit a pak vyberte **OK**. (Pokud má soubor databáze uživatelské jméno a heslo, zadejte, je před výběrem **OK**.)
+9. Zadejte uživatelské jméno a heslo (v případě potřeby) a klikněte na tlačítko **OK**.
 
 10. Vyberte **Další** na **vyberte datové připojení** stránky.
 
@@ -76,37 +67,35 @@ Můžete připojit k databázím vytvořeným pomocí aplikace Access 2013, Offi
 
 12. Rozbalte **tabulky** uzlu **zvolte vaše databázové objekty** stránky.
 
-13. Vyberte jakékoli tabulky a zobrazení v datové sadě a pak vyberte **Dokončit**.
+13. Vyberte tabulky a zobrazení, kterou chcete zahrnout do datové sady a pak vyberte **Dokončit**.
 
      Do projektu je přidána datová sada a tabulky a zobrazení se zobrazí **zdroje dat** okna.
 
-## <a name="create-the-dataset-for-an-mdb-file"></a>Vytvoření datové sady pro soubor .mdb
+## <a name="create-a-dataset-for-an-mdb-file"></a>Vytvoření datové sady pro soubor .mdb
 
 Vytvořte datovou sadu spuštěním **Průvodce konfigurací zdroje dat**.
 
-### <a name="to-create-the-dataset"></a>Vytvoření datové sady
+1. Otevřete aplikaci Windows Forms, ke kterému chcete připojit data.
 
-1.  Otevřete aplikaci Windows Forms, ke kterému chcete připojit data.
+2. Na **zobrazení** nabídce vyberte možnost **ostatní Windows** > **zdroje dat**.
 
-2.  Na **zobrazení** nabídce vyberte možnost **ostatní Windows** > **zdroje dat**.
+   ![Zobrazení zdrojů dat Windows](../data-tools/media/viewdatasources.png)
 
-     ![Zobrazení zdrojů dat Windows](../data-tools/media/viewdatasources.png)
+3. V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
 
-3.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
+    **Průvodce konfigurací zdroje dat** otevře.
 
-     **Průvodce konfigurací zdroje dat** otevře.
+4. Vyberte **databáze** na **zvolte typ zdroje dat** stránce a pak vyberte **Další**.
 
-4.  Vyberte **databáze** na **zvolte typ zdroje dat** stránce a pak vyberte **Další**.
+5. Vyberte **datovou sadu** na **vyberte databázový Model** stránce a pak vyberte **Další**.
 
-5.  Vyberte **datovou sadu** na **vyberte databázový Model** stránce a pak vyberte **Další**.
+6. Na **vyberte datové připojení** stránce **nové připojení** konfigurace nové datové připojení.
 
-6.  Na **vyberte datové připojení** stránce **nové připojení** konfigurace nové datové připojení.
+7. Pokud zdroj dat není **soubor databáze Microsoft Access (OLE DB)** vyberte **změnu** otevřít **změnit zdroj dat** dialogové okno a vyberte **Microsoft Přístup k souboru databáze**a pak vyberte **OK**.
 
-7.  Pokud zdroj dat není **soubor databáze Microsoft Access (OLE DB)** vyberte **změnu** otevřít **změnit zdroj dat** dialogové okno a vyberte **Microsoft Přístup k souboru databáze**a pak vyberte **OK**.
+8. V **název souboru databáze**, zadejte cestu a název *.mdb* souboru, kterou chcete připojit a pak vyberte **OK**.
 
-8.  V **název souboru databáze**, zadejte cestu a název *.mdb* souboru, kterou chcete připojit a pak vyberte **OK**.
-
-     ![Přidat připojení souboru databáze aplikace Access](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Přidat připojení souboru databáze aplikace Access](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Vyberte **Další** na **vyberte datové připojení** stránky.
 
@@ -116,7 +105,7 @@ Vytvořte datovou sadu spuštěním **Průvodce konfigurací zdroje dat**.
 
 12. Vyberte jakékoli tabulky a zobrazení v datové sadě a pak vyberte **Dokončit**.
 
-     Do projektu je přidána datová sada a tabulky a zobrazení se zobrazí **zdroje dat** okna.
+    Do projektu je přidána datová sada a tabulky a zobrazení se zobrazí **zdroje dat** okna.
 
 ## <a name="security"></a>Zabezpečení
 
@@ -126,11 +115,11 @@ Ukládání citlivých informací (například hesla) může ovlivnit zabezpeče
 
 Je teď dostupná v datové sadě, kterou jste právě vytvořili **zdroje dat** okna. Nyní můžete provést kteroukoli z následujících úloh:
 
--   Vyberte položky v **zdroje dat** okno a přetáhněte je na svůj formulář (naleznete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).
+- Vyberte položky v **zdroje dat** okno a přetáhněte je na svůj formulář (naleznete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).
 
--   Otevřít zdroj dat v **Návrhář Dataset** můžete přidat nebo upravit objekty, které tvoří datové sady.
+- Otevřít zdroj dat v **Návrhář Dataset** můžete přidat nebo upravit objekty, které tvoří datové sady.
 
--   Přidejte logiku ověřování k <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> události tabulek dat v datové sadě (naleznete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md)).
+- Přidejte logiku ověřování k <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> události tabulek dat v datové sadě (naleznete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md)).
 
 ## <a name="see-also"></a>Viz také:
 

@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: c4bc87c717125e23c1312fa403a90452ba0dd3e6
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155991"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227836"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Vítá vás Visual Studio IDE |C#
 
@@ -122,18 +122,6 @@ Nakonfigurujme Visual Studio použije nastavení prostředí přizpůsobené C# 
 Další informace o dalších způsobech mohli přizpůsobit integrovaného vývojového prostředí, najdete v článku [přizpůsobení sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Vytvoření programu
-
-Nejprve nakonfigurujeme Visual Studio použije nastavení prostředí přizpůsobené C# vývojáři.
-
-1. V panelu nabídky zvolte **nástroje** > **nastavení importu a exportu**.
-
-2. V **Průvodce importem a exportem nastavení**vyberte **obnovit všechna nastavení** na stránce první a klikněte na tlačítko **Další**.
-
-3. Na **uložit aktuální nastavení** vyberte možnost Uložit aktuální nastavení, nebo Ne a klikněte na tlačítko **Další**. (Pokud jste nepřizpůsobili všechna nastavení, vyberte **Ne, pouze obnovit nastavení přepsáním aktuálního nastavení**.)
-
-4. Na **zvolte výchozí kolekce nastavení** zvolte **Visual C#**  a klikněte na tlačítko **Dokončit**.
-
-5. Na **kompletní obnovení** zvolte **Zavřít**.
 
 Pojďme začít a vytvořit jednoduchý program.
 

@@ -9,15 +9,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 165676bae3b3a0b6a5e0fd51f2b505701a0eba2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795522"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227557"
 ---
 # <a name="primitives-activity-designers"></a>Návrháři aktivit primitiv
-Návrháři aktivit primitiv slouží k vytvoření a konfigurace různých činností v <xref:System.Activities> obor názvů, jako je například přiřazení a zpoždění. V tématech obsažené v této části najdete pokyny, jak používat [!INCLUDE[wfd2](../includes/wfd2-md.md)] návrhářů aktivit a šablony.  
+Návrháři aktivit primitiv slouží k vytvoření a konfigurace různých činností v <xref:System.Activities.Statements> obor názvů, jako je například přiřazení a zpoždění. V tématech obsažené v této části najdete pokyny, jak používat [!INCLUDE[wfd2](../includes/wfd2-md.md)] návrhářů aktivit a šablony.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Assign](../workflow-designer/assign-activity-designer.md)  
@@ -49,5 +49,6 @@ Návrháři aktivit primitiv slouží k vytvoření a konfigurace různých čin
   
  [Zpracování chyb](../workflow-designer/error-handling-activity-designers.md)  
   
-## <a name="see-also"></a>Viz také  
- [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)
+## <a name="see-also"></a>Viz také
+
+-[Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)

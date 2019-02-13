@@ -12,111 +12,111 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6854a099548b8db97b26a2b3fe70c7870fb2af2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 625b9dd6a1ffb6e982097626018617c9b74d4746
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964935"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227103"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-Poskytuje podrobnosti o základní posuny umístění a paměti modulu nebo image.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDiaImageData : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- V následující tabulce jsou uvedeny metody objektu `IDiaImageData`.  
-  
-|Metoda|Popis|  
-|------------|-----------------|  
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Získá umístění ve virtuální paměti modulu vzhledem k aplikaci.|  
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Získá umístění ve virtuální paměti bitové kopie.|  
-|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Získá umístění v paměti, kde by měla být založena na obrázku.|  
-  
-## <a name="remarks"></a>Poznámky  
- Některé datové proudy debug (XDATA, PDATA) obsahují kopie dat také uložených v bitové kopii. Tyto datové objekty je možné zadávat dotazy pro datový proud stream `IDiaImageData` rozhraní. V tomto tématu podrobnosti v části "Poznámky pro volající".  
-  
-## <a name="notes-for-callers"></a>Poznámky pro volající  
- Získat po zavolání tohoto rozhraní `QueryInterface` na [idiaenumdebugstreamdata –](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objektu. Podporu streamuje Všimněte si, že ne všechny ladění `IDiaImageData` rozhraní. Například aktuálně podporují pouze XDATA a PDATA datové proudy `IDiaImageData` rozhraní.  
-  
-## <a name="example"></a>Příklad  
- Tento příklad vyhledá všechny datové proudy debug pro datový proud, který podporuje `IDiaImageData` rozhraní. Pokud není nalezen takový stream, zobrazí se nějaké informace týkající se tohoto datového proudu.  
-  
-```C++  
-void ShowImageData(IDiaSession *pSession)  
-{  
-    if (pSession != NULL)  
-    {  
-        CComPtr<IDiaEnumDebugStreams> pStreamsList;  
-        HRESULT hr;  
-  
-        hr = pSession->getEnumDebugStreams(&pStreamsList);  
-        if (SUCCEEDED(hr))  
-        {  
-            LONG numStreams = 0;  
-            hr = pStreamsList->get_Count(&numStreams);  
-            if (SUCCEEDED(hr))  
-            {  
-                ULONG fetched = 0;  
-                for (LONG i = 0; i < numStreams; i++)  
-                {  
-                    CComPtr<IDiaEnumDebugStreamData> pStream;  
-                    hr = pStreamsList->Next(1,&pStream,&fetched);  
-                    if (fetched == 1)  
-                    {  
-                        CComPtr<IDiaImageData> pImageData;  
-                        hr = pStream->QueryInterface(__uuidof(IDiaImageData),  
-                                                     (void **)&pImageData);  
-                        if (SUCCEEDED(hr))  
-                        {  
-                            CComBSTR name;  
-                            hr = pStream->get_name(&name);  
-                            if (SUCCEEDED(hr))  
-                            {  
-                                wprintf(L"Stream %s:\n",(BSTR)name);  
-                            }  
-                            else  
-                            {  
-                                wprintf(L"Failed to get name of stream\n");  
-                            }  
-  
-                            ULONGLONG imageBase = 0;  
-                            if (pImageData->get_imageBase(&imageBase) == S_OK)  
-                            {  
-                                wprintf(L"  image base = 0x%0I64x\n",imageBase);  
-                            }  
-  
-                            DWORD relVA = 0;  
-                            if (pImageData->get_relativeVirtualAddress(&relVA) == S_OK)  
-                            {  
-                                wprintf(L"  relative virtual address = 0x%08lx\n",relVA);  
-                            }  
-  
-                            ULONGLONG va = 0;  
-                            if (pImageData->get_virtualAddress(&va) == S_OK)  
-                            {  
-                                wprintf(L"  virtual address = 0x%0I64x\n", va);  
-                            }  
-                        }  
-                    }  
-                }  
-            }  
-        }  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
-  
- Knihovna: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+Poskytuje podrobnosti o základní posuny umístění a paměti modulu nebo image.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDiaImageData : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí
+V následující tabulce jsou uvedeny metody objektu `IDiaImageData`.
+
+|Metoda|Popis|
+|------------|-----------------|
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Získá umístění ve virtuální paměti modulu vzhledem k aplikaci.|
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Získá umístění ve virtuální paměti bitové kopie.|
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Získá umístění v paměti, kde by měla být založena na obrázku.|
+
+## <a name="remarks"></a>Poznámky
+Některé datové proudy debug (XDATA, PDATA) obsahují kopie dat také uložených v bitové kopii. Tyto datové objekty je možné zadávat dotazy pro datový proud stream `IDiaImageData` rozhraní. V tomto tématu podrobnosti v části "Poznámky pro volající".
+
+## <a name="notes-for-callers"></a>Poznámky pro volající
+Získat po zavolání tohoto rozhraní `QueryInterface` na [idiaenumdebugstreamdata –](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objektu. Podporu streamuje Všimněte si, že ne všechny ladění `IDiaImageData` rozhraní. Například aktuálně podporují pouze XDATA a PDATA datové proudy `IDiaImageData` rozhraní.
+
+## <a name="example"></a>Příklad
+Tento příklad vyhledá všechny datové proudy debug pro datový proud, který podporuje `IDiaImageData` rozhraní. Pokud není nalezen takový stream, zobrazí se nějaké informace týkající se tohoto datového proudu.
+
+```C++
+void ShowImageData(IDiaSession *pSession)
+{
+    if (pSession != NULL)
+    {
+        CComPtr<IDiaEnumDebugStreams> pStreamsList;
+        HRESULT hr;
+
+        hr = pSession->getEnumDebugStreams(&pStreamsList);
+        if (SUCCEEDED(hr))
+        {
+            LONG numStreams = 0;
+            hr = pStreamsList->get_Count(&numStreams);
+            if (SUCCEEDED(hr))
+            {
+                ULONG fetched = 0;
+                for (LONG i = 0; i < numStreams; i++)
+                {
+                    CComPtr<IDiaEnumDebugStreamData> pStream;
+                    hr = pStreamsList->Next(1,&pStream,&fetched);
+                    if (fetched == 1)
+                    {
+                        CComPtr<IDiaImageData> pImageData;
+                        hr = pStream->QueryInterface(__uuidof(IDiaImageData),
+                                                     (void **)&pImageData);
+                        if (SUCCEEDED(hr))
+                        {
+                            CComBSTR name;
+                            hr = pStream->get_name(&name);
+                            if (SUCCEEDED(hr))
+                            {
+                                wprintf(L"Stream %s:\n",(BSTR)name);
+                            }
+                            else
+                            {
+                                wprintf(L"Failed to get name of stream\n");
+                            }
+
+                            ULONGLONG imageBase = 0;
+                            if (pImageData->get_imageBase(&imageBase) == S_OK)
+                            {
+                                wprintf(L"  image base = 0x%0I64x\n",imageBase);
+                            }
+
+                            DWORD relVA = 0;
+                            if (pImageData->get_relativeVirtualAddress(&relVA) == S_OK)
+                            {
+                                wprintf(L"  relative virtual address = 0x%08lx\n",relVA);
+                            }
+
+                            ULONGLONG va = 0;
+                            if (pImageData->get_virtualAddress(&va) == S_OK)
+                            {
+                                wprintf(L"  virtual address = 0x%0I64x\n", va);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## <a name="requirements"></a>Požadavky
+Záhlaví: Dia2.h
+
+Knihovna: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Viz také
+[Rozhraní (Přístup k rozhraní ladění SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
