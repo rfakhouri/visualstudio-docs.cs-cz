@@ -2,7 +2,7 @@
 title: Novinky v sadě Visual Studio 2019
 titleSuffix: ''
 description: Další informace o nových funkcích sady Visual Studio 2019.
-ms.date: 02/08/2019
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: af9f3031fed0711bc21709a2df7b91c4b4089a73
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987415"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270586"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Novinky v sadě Visual Studio 2019 Preview
 
-**Aktualizováno pro [verzi Preview 2](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**Aktualizováno pro [verzi Preview 3](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
 >[!div class="button"]
 >[Stáhněte si verzi Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
@@ -39,7 +39,7 @@ Tady je podrobný rekapitulace toho, co má Visual Studio nabízí:
 * **[Průběžné inovace](#continuous-innovation)**. Kód inteligentní s podporou inteligentní, s využitím cloudu.
 
 > [!NOTE]
-> Úplný seznam nových funkcí a funkcí v sadě Visual Studio. 2019 Preview, najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). A roundup o novinkách ve verzi preview druhý, najdete v článku [Visual Studio. 2019 ve verzi Preview 2 je nyní k dispozici](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) blogový příspěvek.
+> Úplný seznam nových funkcí a funkcí v sadě Visual Studio. 2019 Preview, najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
 
 ## <a name="personal-and-team-productivity"></a>Osobní a produktivitu týmu
 
@@ -53,7 +53,7 @@ První věc, kterou zjistíte, když spustíte Visual Studio 2019 je její nové
 
 Toto nové okno start vám nabídne možnosti, jak klonovat nebo podívejte se na kód, otevřete projekt nebo řešení, otevřít místní složku nebo vytvořte nový projekt. Tyto možnosti se zobrazí v dialogovém okně jednoduché pomůže obou začátečníky a získat kód rychle Pokročilí uživatelé sady Visual Studio.
 
-Další informace najdete v tématu [získat kód: Jak jsme navrhli nové okno Visual Studio start](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blogový příspěvek.
+Další informace najdete v tématu [získat kód: Jak jsme navrhli nové okno Visual Studio start](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blogový příspěvek.
 
 ### <a name="better-search"></a>Lepší vyhledávání
 
@@ -81,7 +81,7 @@ Můžete také formátovat, jak se zobrazí hodnota v oknech sledovat, místní 
 
    ![Nové kukátko okno Formát hodnoty funkci a ve Visual Studio 2019](media/search-watch-window.png)
 
-Další informace najdete v tématu [zdokonaleno ve Visual Studio 2019: Hledání objektů a vlastností v okně kukátka, automatické hodnoty a místní hodnoty Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) blogový příspěvek.
+Další informace najdete v tématu [zdokonaleno ve Visual Studio 2019: Hledání objektů a vlastností v okně kukátka, automatické hodnoty a místní hodnoty Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) blogový příspěvek.
 
 ### <a name="visual-studio-live-share"></a>Visual Studio za sdílené složky
 
@@ -91,7 +91,7 @@ A sadou Visual Studio 2019 Preview, tato služba nainstaluje ve výchozím nasta
 
    ![Animovaný GIF, který zobrazuje spolupráci funkce Live Share v aplikaci Visual Studio 2019](media/live-share-collaboration.gif)
 
-Další informace najdete v tématu [Visual Studio Live Share pro revize kódu v reálném čase a interaktivní vzdělávání](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blogový příspěvek.
+Další informace najdete v tématu [Visual Studio Live Share pro revize kódu v reálném čase a interaktivní vzdělávání](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blogový příspěvek.
 
 ## <a name="modern-development-support"></a>Podpora moderního vývoje
 
@@ -122,7 +122,7 @@ S vydáním sady Visual Studio 2019 Preview jsme se rozhodli první kroky k zabe
 
    ![Clustery vykreslování (PMA) v aplikaci Visual Studio 2019 za monitorování](media/per-monitor-aware-dpi-scaling.png)
 
-Další informace najdete v tématu [lepší prostředí pro více monitorů s Visual Studio 2019](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) blogový příspěvek.
+Další informace najdete v tématu [lepší prostředí pro více monitorů s Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) blogový příspěvek.
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
@@ -141,7 +141,7 @@ Zpočátku podporujeme pouze C# když jsme první předběžně IntelliCode roz�
 
 A pokud používáte C#, přidali jsme také možnost pro trénování modelu vlastní na váš vlastní kód.
 
-Další informace o nedávných aktualizacích najdete v tématu [Visual Studio IntelliCode podporuje více jazyků a učí z vašeho kódu](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) blogový příspěvek. A další informace o rozšíření a jak ho můžete stáhnout, najdete v článku [Visual Studio IntelliCode - Preview](https://go.microsoft.com/fwlink/?linkid=872707) stránce Microsoft DevLabs.
+Další informace o nedávných aktualizacích najdete v tématu [Visual Studio IntelliCode podporuje více jazyků a učí z vašeho kódu](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) blogový příspěvek. A další informace o rozšíření a jak ho můžete stáhnout, najdete v článku [Visual Studio IntelliCode - Preview](https://go.microsoft.com/fwlink/?linkid=872707) stránce Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Sdělte nám svůj názor
 
