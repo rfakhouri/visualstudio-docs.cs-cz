@@ -6,12 +6,12 @@ titleSuffix: ''
 description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: bddd51f4544c1eb96c309330d6cda04e6589db44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032208"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316779"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -158,7 +158,7 @@ JavaScript</a>
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Vytvoření nové aplikace</h3>
+                                                <h3>Vytvoření aplikace</h3>
                                                 <ul class="noBullet">
                                                     <li>
                                                         <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
@@ -988,7 +988,7 @@ Webové aplikace pomocí ASP.NET Core</a>
         <h2>Neustále USA</h2>
         <ul class="links">
            <li>
-                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> blog </a>
+                <a href="https://devblogs.microsoft.com/visualstudio/"> blog </a>
             </li>
             <li>
                 <a href="https://twitter.com/VisualStudio"> Na twitteru </a>

@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918540"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56314595"
 ---
 # <a name="help-content-manager-overrides"></a>Přepíše Help Content Manager
 
-Můžete změnit výchozí chování aplikace Help Viewer a funkcí souvisejících s nápovědou v integrovaném vývojovém prostředí sady Visual Studio. Některé možnosti jsou určena pomocí vytváření [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) souboru nastavit různé hodnoty klíče registru. Ostatní jsou nastavena přímo v registru.
+Můžete změnit výchozí chování aplikace Help Viewer a funkcí souvisejících s nápovědou v integrovaném vývojovém prostředí sady Visual Studio. Některé možnosti jsou určena pomocí vytváření [.pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/) souboru nastavit různé hodnoty klíče registru. Ostatní jsou nastavena přímo v registru.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Jak řídit chování aplikace Help Viewer pomocí souboru .pkgdef
 

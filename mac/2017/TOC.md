@@ -70,7 +70,7 @@
 ### [Používání nástrojů Unity](/visualstudio/mac/using-vsmac-tools-unity)
 ### [Používání .NET 4.x v Unity](/visualstudio/mac//visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Protokol Změn](/visualstudio/mac//visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
-## [Mobilní aplikace s Xamarinem](/xamarin/)
+## [Mobilní aplikace s Xamarinem](/visualstudio/mac/xamarin)
 
 # [Usnadnění](/visualstudio/mac/accessibility)
 

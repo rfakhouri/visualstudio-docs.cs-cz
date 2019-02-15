@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935092"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318807"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novinky v sadě Visual Studio 2017
 
@@ -72,7 +72,7 @@ Další informace o nové prostředí instalace, včetně podrobných pokynů, k
 
 **Novinka v 15.3**, jsme provedli přes 1,700 cílová opravy pro zlepšení kompatibility mezi verzemi sady Visual Studio a technologiemi pro usnadnění, které mnozí uživatelé používají. Existují desítky scénáře, které se čtečkami obrazovky, vysoký kontrast – motivy a dalšími technologiemi přístupnosti kompatibilní více než kdy dřív. Ladicí program, editor a prostředí mají gotten významná vylepšení, příliš.
 
-Další informace najdete v tématu [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.
+Další informace najdete v tématu [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.
 
 ## <a name="performance-and-productivity"></a>Výkon a produktivitu
 
@@ -80,7 +80,7 @@ Další informace najdete v tématu [vylepšení přístupnosti v sadě Visual S
 
 Zavedli jsme novou službu identit v sadě Visual Studio, která umožňuje sdílet uživatelské účty napříč Průzkumník týmových projektů, nástrojů Azure, publikování Microsoft Store a další.
 
-Abyste mohli zůstat přihlášeni, příliš. Visual Studio nevyžaduje, abyste se přihlásili znovu každých 12 hodin. Další informace najdete v tématu [přihlášení méně Visual Studio vyzve](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) blogový příspěvek.
+Abyste mohli zůstat přihlášeni, příliš. Visual Studio nevyžaduje, abyste se přihlásili znovu každých 12 hodin. Další informace najdete v tématu [přihlášení méně Visual Studio vyzve](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/) blogový příspěvek.
 
 ### <a name="start-visual-studio-faster"></a>Rychlejší spuštění aplikace Visual Studio
 
@@ -131,7 +131,7 @@ Automatizované testování je klíčovou součástí libovolného kanálu DevOp
 
 Další informace o automatických testů, najdete v článku [kanálu CI/CD pro automatizované testování v DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) blogový příspěvek.
 
-A další informace o tom, co je nového [nástrojů Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření devlabs s názvem, najdete v článku [potvrzení s jistotou: Potvrdit kvalitu kódu čas](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blogový příspěvek.
+A další informace o tom, co je nového [nástrojů Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření devlabs s názvem, najdete v článku [potvrzení s jistotou: Potvrdit kvalitu kódu čas](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) blogový příspěvek.
 
 ### <a name="visual-studio-ide-enhancements"></a>Vylepšení Visual Studio IDE
 
@@ -188,7 +188,7 @@ Aktualizovali jsme navigační prostředí, se kterými získáte od A do B s v�
 
   ![Vizualizér struktur Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Další informace o nových funkcích produktivity, najdete v článku [produktivitu v sadě Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) blogový příspěvek označit Wilson-Thomase.
+Další informace o nových funkcích produktivity, najdete v článku [produktivitu v sadě Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) blogový příspěvek označit Wilson-Thomase.
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -212,7 +212,7 @@ Nového pomocníka výjimky umožňuje zobrazit vaše výjimka informace na pře
 
 ![Dialog nového pomocníka výjimky v sadě Visual Studio](media/vs2017ide-ExceptionHelper.png)
 
-Další informace najdete v tématu [pomocí nového pomocníka výjimky v sadě Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blogový příspěvek.
+Další informace najdete v tématu [pomocí nového pomocníka výjimky v sadě Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) blogový příspěvek.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Snímky a zpětného kroku IntelliTrace
 
@@ -328,7 +328,7 @@ Součást všech edicí sady Visual Studio 2017:
 
 * [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) zvyšuje vaši produktivitu tím, že pomáhá rychle najít fragmenty a objekty SQL ve více databázích.
 
-Další informace najdete v tématu [Redgate Data Tools v sadě Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) blogový příspěvek.
+Další informace najdete v tématu [Redgate Data Tools v sadě Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/) blogový příspěvek.
 
 ### <a name="net-core"></a>.NET Core
 

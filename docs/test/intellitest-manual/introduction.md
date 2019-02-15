@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4f9bb50d362e73c6f6955dc590b7d0a8f7c79645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955814"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318248"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Přehled Microsoft IntelliTest
 
@@ -151,5 +151,5 @@ Protože IntelliTest zachytí a "znovu vyvolá" výjimky v každé metodě instr
 
 ## <a name="further-reading"></a>Další čtení
 
-* [Úvodní blogový příspěvek](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/).
+* [Úvodní blogový příspěvek](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/).
 * [Generování testů částí pro kód pomocí funkce IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

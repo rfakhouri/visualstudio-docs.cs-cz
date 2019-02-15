@@ -12,65 +12,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6102c0897c80fc927713d2f8bb1e5c83708e6bd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0091924c5c117eb8953b5dd3fc70b5cdf446761
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000195"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318599"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
-Určuje, proč byl spuštěn proces pro ladění.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
-};  
-typedef DWORD DEBUG_REASON;  
-```  
-  
-```csharp  
-public enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- DEBUG_REASON_ERROR  
- Došlo k chybě nespecifickou (používá se jako výchozí podmínku Pokud žádná z nich důvodů, proč přizpůsobit).  
-  
- DEBUG_REASON_USER_LAUNCHED  
- Proces byl spuštěn na žádost uživatele.  
-  
- DEBUG_REASON_USER_ATTACHED  
- Již spuštěnému procesu byl připojen k uživatelem.  
-  
- DEBUG_REASON_AUTO_ATTACHED  
- Proces byl automaticky připojen k při jejím spuštění.  
-  
- DEBUG_REASON_CAUSALITY  
- Proces byl spuštěn z důvodu *Just-In-Time* ladění události (JIT).  
-  
-## <a name="remarks"></a>Poznámky  
- Vrátilo [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: msdbg.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
+Určuje, proč byl spuštěn proces pro ladění.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_DEBUG_REASON {
+    DEBUG_REASON_ERROR         = 0,
+    DEBUG_REASON_USER_LAUNCHED = 1,
+    DEBUG_REASON_USER_ATTACHED = 2,
+    DEBUG_REASON_AUTO_ATTACHED = 3,
+    DEBUG_REASON_CAUSALITY     = 4
+};
+typedef DWORD DEBUG_REASON;
+```
+
+```csharp
+public enum enum_DEBUG_REASON {
+    DEBUG_REASON_ERROR         = 0,
+    DEBUG_REASON_USER_LAUNCHED = 1,
+    DEBUG_REASON_USER_ATTACHED = 2,
+    DEBUG_REASON_AUTO_ATTACHED = 3,
+    DEBUG_REASON_CAUSALITY     = 4
+};
+```
+
+#### <a name="parameters"></a>Parametry
+DEBUG_REASON_ERROR  
+Došlo k chybě nespecifickou (používá se jako výchozí podmínku Pokud žádná z nich důvodů, proč přizpůsobit).
+
+DEBUG_REASON_USER_LAUNCHED  
+Proces byl spuštěn na žádost uživatele.
+
+DEBUG_REASON_USER_ATTACHED  
+Již spuštěnému procesu byl připojen k uživatelem.
+
+DEBUG_REASON_AUTO_ATTACHED  
+Proces byl automaticky připojen k při jejím spuštění.
+
+DEBUG_REASON_CAUSALITY  
+Proces byl spuštěn z důvodu *Just-In-Time* ladění události (JIT).
+
+## <a name="remarks"></a>Poznámky
+Vrátilo [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.
+
+## <a name="requirements"></a>Požadavky
+Záhlaví: msdbg.h
+
+Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

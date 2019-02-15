@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008709"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316883"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostika problémů po nasazení pomocí nástroje IntelliTrace (C#, Visual Basic)
 
@@ -216,7 +216,7 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
     - [Co je všechny tyto další události a informace v protokolu nástroje IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
     - [Co dalšího můžete mohu ještě udělat?](#WhatElse)
-    - [Přečtěte si další informace o událostech výkonu?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [Přečtěte si další informace o událostech výkonu?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Diagnostikování výjimky
 

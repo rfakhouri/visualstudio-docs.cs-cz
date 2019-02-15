@@ -1,4 +1,4 @@
-# [Visual Studio pro Mac](index.md)
+# [Visual Studio pro Mac](index.yml)
 # [Prohlídka integrovaného vývojového prostředí (IDE)](/visualstudio/mac/ide-tour/)
 
 # [Instalace](/visualstudio/mac/installation/)
@@ -70,7 +70,7 @@
 ### [Používání nástrojů Unity](using-vsmac-tools-unity.md)
 ### [Používání .NET 4.x v Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Protokol Změn](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
-## [Mobilní aplikace s Xamarinem](/xamarin/)
+## [Mobilní aplikace s Xamarinem](/visualstudio/mac/xamarin)
 
 # [Usnadnění](accessibility.md)
 

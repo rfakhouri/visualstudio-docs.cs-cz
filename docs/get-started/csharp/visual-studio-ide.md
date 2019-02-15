@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4bc87c717125e23c1312fa403a90452ba0dd3e6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227836"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317221"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Vítá vás Visual Studio IDE |C#
 
@@ -291,4 +291,4 @@ Prozkoumejte další Visual Studio na základě společně s některou z těchto
 
 - Zjistit [další funkce sady Visual Studio](../../ide/advanced-feature-overview.md)
 - Navštivte [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Čtení [blogu sady Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Čtení [blogu sady Visual Studio](https://devblogs.microsoft.com/visualstudio/)

@@ -8,12 +8,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e94d48a1a9dc926bc039ba12c64f26616ae68ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912153"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316077"
 ---
 # <a name="overview-suggest-a-feature"></a>Přehled: Navrhnout funkci
 
@@ -129,4 +129,4 @@ Doba odezvy závisí na stavu, ve kterém vaše zpětná vazba nachází. Přeč
 
 ## <a name="see-also"></a>Viz také:
 
-- [Představujeme 'navrhnout funkci"v komunitě vývojářů (blog sady Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)
+- [Představujeme 'navrhnout funkci"v komunitě vývojářů (blog sady Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

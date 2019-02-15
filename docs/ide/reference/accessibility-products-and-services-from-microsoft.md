@@ -19,17 +19,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932089"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318625"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby pro usnadnění přístupu od Microsoftu
 
 > [!TIP]
-> Další informace o nedávných aktualizacích usnadnění přístupu ke službě Visual Studio, najdete v článku [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.
+> Další informace o nedávných aktualizacích usnadnění přístupu ke službě Visual Studio, najdete v článku [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.
 
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. V následujících tématech najdete informace o funkcích, produktech a službách, které usnadňují práci s Microsoft Windows osobám s postižením:
 

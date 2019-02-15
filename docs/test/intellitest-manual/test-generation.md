@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bc82ccf47575bf30b8c8e2e3def26746feb998d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ee6b01e2c154ddebf71f5ae2511ccfe693506db6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912287"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316532"
 ---
 # <a name="test-generation"></a>Generování testů
 
@@ -237,8 +237,8 @@ namespace MyTests
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Další čtení
 
-* [Testování vazby kódu](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [Jeden test pro vládne všem.](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [Testování vazby kódu](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [Jeden test pro vládne všem.](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>Máte nějakou zpětnou vazbu?
 

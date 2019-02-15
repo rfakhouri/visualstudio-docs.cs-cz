@@ -12,187 +12,187 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 282e7ec04f2cff029480701de10af2294a8185d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf66338474ec432f327cef3f3a0b64f718699d78
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944498"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317897"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
-Určuje modifikátory pro typ pole.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_FIELD_MODIFIERS {   
-   FIELD_MOD_NONE             = 0x00000000,  
-  
-   // Modifier of the field  
-   FIELD_MOD_ACCESS_NONE      = 0x00000001,  
-   FIELD_MOD_ACCESS_PUBLIC    = 0x00000002,  
-   FIELD_MOD_ACCESS_PROTECTED = 0x00000004,  
-   FIELD_MOD_ACCESS_PRIVATE   = 0x00000008,  
-  
-   // Storage modifier of the field  
-   FIELD_MOD_NOMODIFIERS      = 0x00000010,  
-   FIELD_MOD_STATIC           = 0x00000020,  
-   FIELD_MOD_CONSTANT         = 0x00000040,  
-   FIELD_MOD_TRANSIENT        = 0x00000080,  
-   FIELD_MOD_VOLATILE         = 0x00000100,  
-   FIELD_MOD_ABSTRACT         = 0x00000200,  
-   FIELD_MOD_NATIVE           = 0x00000400,  
-   FIELD_MOD_SYNCHRONIZED     = 0x00000800,  
-   FIELD_MOD_VIRTUAL          = 0x00001000,  
-   FIELD_MOD_INTERFACE        = 0x00002000,  
-   FIELD_MOD_FINAL            = 0x00004000,  
-   FIELD_MOD_SENTINEL         = 0x00008000,  
-   FIELD_MOD_INNERCLASS       = 0x00010000,  
-   FIELD_TYPE_OPTIONAL        = 0x00020000,  
-   FIELD_MOD_BYREF            = 0x00040000,  
-   FIELD_MOD_HIDDEN           = 0x00080000,  
-   FIELD_MOD_MARSHALASOBJECT  = 0x00100000,  
-   FIELD_MOD_SPECIAL_NAME     = 0x00200000,  
-   FIELD_MOD_HIDEBYSIG        = 0x00400000,  
-  
-   FIELD_MOD_WRITEONLY        = 0x80000000,  
-   FIELD_MOD_ACCESS_MASK      = 0x000000ff,  
-   FIELD_MOD_MASK             = 0xffffff00,  
-   FIELD_MOD_ALL              = 0x7fffffff  
-};  
-typedef DWORD FIELD_MODIFIERS;  
-```  
-  
-```csharp  
-public enum enum_FIELD_MODIFIERS {  
-   FIELD_MOD_NONE             = 0x00000000,  
-  
-   // Modifier of the field  
-   FIELD_MOD_ACCESS_NONE      = 0x00000001,  
-   FIELD_MOD_ACCESS_PUBLIC    = 0x00000002,  
-   FIELD_MOD_ACCESS_PROTECTED = 0x00000004,  
-   FIELD_MOD_ACCESS_PRIVATE   = 0x00000008,  
-  
-   // Storage modifier of the field  
-   FIELD_MOD_NOMODIFIERS      = 0x00000010,  
-   FIELD_MOD_STATIC           = 0x00000020,  
-   FIELD_MOD_CONSTANT         = 0x00000040,  
-   FIELD_MOD_TRANSIENT        = 0x00000080,  
-   FIELD_MOD_VOLATILE         = 0x00000100,  
-   FIELD_MOD_ABSTRACT         = 0x00000200,  
-   FIELD_MOD_NATIVE           = 0x00000400,  
-   FIELD_MOD_SYNCHRONIZED     = 0x00000800,  
-   FIELD_MOD_VIRTUAL          = 0x00001000,  
-   FIELD_MOD_INTERFACE        = 0x00002000,  
-   FIELD_MOD_FINAL            = 0x00004000,  
-   FIELD_MOD_SENTINEL         = 0x00008000,  
-   FIELD_MOD_INNERCLASS       = 0x00010000,  
-   FIELD_TYPE_OPTIONAL        = 0x00020000,  
-   FIELD_MOD_BYREF            = 0x00040000,  
-   FIELD_MOD_HIDDEN           = 0x00080000,  
-   FIELD_MOD_MARSHALASOBJECT  = 0x00100000,  
-   FIELD_MOD_SPECIAL_NAME     = 0x00200000,  
-   FIELD_MOD_HIDEBYSIG        = 0x00400000,  
-  
-   FIELD_MOD_WRITEONLY        = 0x80000000,  
-   FIELD_MOD_ACCESS_MASK      = 0x000000ff,  
-   FIELD_MOD_MASK             = 0xffffff00,  
-   FIELD_MOD_ALL              = 0x7fffffff  
-};  
-```  
-  
-## <a name="members"></a>Členové  
- FIELD_MOD_ACCESS_TYPE  
- Označuje, že pole není přístupný.  
-  
- FIELD_MOD_ACCESS_PUBLIC  
- Označuje, že pole má veřejný přístup.  
-  
- FIELD_MOD_ACCESS_PROTECTED  
- Označuje, že pole chrání přístup.  
-  
- FIELD_MOD_ACCESS_PRIVATE  
- Označuje, že pole má soukromý přístup.  
-  
- FIELD_MOD_NOMODIFIERS  
- Označuje, že pole nemá žádné modifikátory.  
-  
- FIELD_MOD_STATIC  
- Označuje, že pole je statické.  
-  
- FIELD_MOD_CONSTANT  
- Označuje, že je pole konstanta.  
-  
- FIELD_MOD_TRANSIENT  
- Označuje, že pole je přechodná.  
-  
- FIELD_MOD_VOLATILE  
- Označuje, že pole je typu volatile.  
-  
- FIELD_MOD_ABSTRACT  
- Označuje, že pole je abstraktní.  
-  
- FIELD_MOD_NATIVE  
- Označuje, že pole je nativní.  
-  
- FIELD_MOD_SYNCHRONIZED  
- Označuje, že pole se synchronizuje.  
-  
- FIELD_MOD_VIRTUAL  
- Označuje, že je virtuální pole.  
-  
- FIELD_MOD_INTERFACE  
- Označuje, že pole je rozhraní.  
-  
- FIELD_MOD_FINAL  
- Označuje, že pole je finální.  
-  
- FIELD_MOD_SENTINEL  
- Označuje, že je pole sentinel.  
-  
- FIELD_MOD_INNERCLASS  
- Označuje, že pole je vnitřní třídu.  
-  
- FIELD_TYPE_OPTIONAL  
- Označuje, že pole je volitelné.  
-  
- FIELD_MOD_BYREF  
- Označuje, že pole je argumentem reference. Toto je speciálně pro argumenty metody.  
-  
- FIELD_MOD_HIDDEN  
- Označuje, že pole musí být skrytá nebo zobrazí v jiném kontextu; například [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statické lokální proměnné.  
-  
- FIELD_MOD_MARSHALASOBJECT  
- Označuje, že pole představuje objekt s `IUnknown` rozhraní.  
-  
- FIELD_MOD_SPECIAL_NAME  
- Označuje, že pole má speciální název, například `.ctor` pro konstruktor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] pouze).  
-  
- FIELD_MOD_HIDEBYSIG  
- Označuje, zda má pole `Overloads` použít klíčové slovo ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] pouze).  
-  
- FIELD_MOD_WRITEONLY  
- Označuje, že pole je jen pro zápis. Tato hodnota není součástí `FIELD_MOD_ALL`, jak je pouze použití pole jen pro zápis pro vyhodnocení funkce. Uživatel musí explicitně požádat o `FIELD_MOD_WRITEONLY` pole.  
-  
- FIELD_MOD_ACCESS_MASK  
- Označuje maska pro přístup k poli.  
-  
- FIELD_MOD_MASK  
- Označuje masku modifikátory pole.  
-  
-## <a name="remarks"></a>Poznámky  
- Používá pro `dwModifiers` člena [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.  
-  
- Tyto hodnoty jsou předány také [enumfields –](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metodou filtrování pro konkrétní pole.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: sh.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)   
- [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
+Určuje modifikátory pro typ pole.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_FIELD_MODIFIERS {
+    FIELD_MOD_NONE             = 0x00000000,
+
+    // Modifier of the field
+    FIELD_MOD_ACCESS_NONE      = 0x00000001,
+    FIELD_MOD_ACCESS_PUBLIC    = 0x00000002,
+    FIELD_MOD_ACCESS_PROTECTED = 0x00000004,
+    FIELD_MOD_ACCESS_PRIVATE   = 0x00000008,
+
+    // Storage modifier of the field
+    FIELD_MOD_NOMODIFIERS      = 0x00000010,
+    FIELD_MOD_STATIC           = 0x00000020,
+    FIELD_MOD_CONSTANT         = 0x00000040,
+    FIELD_MOD_TRANSIENT        = 0x00000080,
+    FIELD_MOD_VOLATILE         = 0x00000100,
+    FIELD_MOD_ABSTRACT         = 0x00000200,
+    FIELD_MOD_NATIVE           = 0x00000400,
+    FIELD_MOD_SYNCHRONIZED     = 0x00000800,
+    FIELD_MOD_VIRTUAL          = 0x00001000,
+    FIELD_MOD_INTERFACE        = 0x00002000,
+    FIELD_MOD_FINAL            = 0x00004000,
+    FIELD_MOD_SENTINEL         = 0x00008000,
+    FIELD_MOD_INNERCLASS       = 0x00010000,
+    FIELD_TYPE_OPTIONAL        = 0x00020000,
+    FIELD_MOD_BYREF            = 0x00040000,
+    FIELD_MOD_HIDDEN           = 0x00080000,
+    FIELD_MOD_MARSHALASOBJECT  = 0x00100000,
+    FIELD_MOD_SPECIAL_NAME     = 0x00200000,
+    FIELD_MOD_HIDEBYSIG        = 0x00400000,
+
+    FIELD_MOD_WRITEONLY        = 0x80000000,
+    FIELD_MOD_ACCESS_MASK      = 0x000000ff,
+    FIELD_MOD_MASK             = 0xffffff00,
+    FIELD_MOD_ALL              = 0x7fffffff
+};
+typedef DWORD FIELD_MODIFIERS;
+```
+
+```csharp
+public enum enum_FIELD_MODIFIERS {
+    FIELD_MOD_NONE             = 0x00000000,
+
+    // Modifier of the field
+    FIELD_MOD_ACCESS_NONE      = 0x00000001,
+    FIELD_MOD_ACCESS_PUBLIC    = 0x00000002,
+    FIELD_MOD_ACCESS_PROTECTED = 0x00000004,
+    FIELD_MOD_ACCESS_PRIVATE   = 0x00000008,
+
+    // Storage modifier of the field
+    FIELD_MOD_NOMODIFIERS      = 0x00000010,
+    FIELD_MOD_STATIC           = 0x00000020,
+    FIELD_MOD_CONSTANT         = 0x00000040,
+    FIELD_MOD_TRANSIENT        = 0x00000080,
+    FIELD_MOD_VOLATILE         = 0x00000100,
+    FIELD_MOD_ABSTRACT         = 0x00000200,
+    FIELD_MOD_NATIVE           = 0x00000400,
+    FIELD_MOD_SYNCHRONIZED     = 0x00000800,
+    FIELD_MOD_VIRTUAL          = 0x00001000,
+    FIELD_MOD_INTERFACE        = 0x00002000,
+    FIELD_MOD_FINAL            = 0x00004000,
+    FIELD_MOD_SENTINEL         = 0x00008000,
+    FIELD_MOD_INNERCLASS       = 0x00010000,
+    FIELD_TYPE_OPTIONAL        = 0x00020000,
+    FIELD_MOD_BYREF            = 0x00040000,
+    FIELD_MOD_HIDDEN           = 0x00080000,
+    FIELD_MOD_MARSHALASOBJECT  = 0x00100000,
+    FIELD_MOD_SPECIAL_NAME     = 0x00200000,
+    FIELD_MOD_HIDEBYSIG        = 0x00400000,
+
+    FIELD_MOD_WRITEONLY        = 0x80000000,
+    FIELD_MOD_ACCESS_MASK      = 0x000000ff,
+    FIELD_MOD_MASK             = 0xffffff00,
+    FIELD_MOD_ALL              = 0x7fffffff
+};
+```
+
+## <a name="members"></a>Členové
+FIELD_MOD_ACCESS_TYPE  
+Označuje, že pole není přístupný.
+
+FIELD_MOD_ACCESS_PUBLIC  
+Označuje, že pole má veřejný přístup.
+
+FIELD_MOD_ACCESS_PROTECTED  
+Označuje, že pole chrání přístup.
+
+FIELD_MOD_ACCESS_PRIVATE  
+Označuje, že pole má soukromý přístup.
+
+FIELD_MOD_NOMODIFIERS  
+Označuje, že pole nemá žádné modifikátory.
+
+FIELD_MOD_STATIC  
+Označuje, že pole je statické.
+
+FIELD_MOD_CONSTANT  
+Označuje, že je pole konstanta.
+
+FIELD_MOD_TRANSIENT  
+Označuje, že pole je přechodná.
+
+FIELD_MOD_VOLATILE  
+Označuje, že pole je typu volatile.
+
+FIELD_MOD_ABSTRACT  
+Označuje, že pole je abstraktní.
+
+FIELD_MOD_NATIVE  
+Označuje, že pole je nativní.
+
+FIELD_MOD_SYNCHRONIZED  
+Označuje, že pole se synchronizuje.
+
+FIELD_MOD_VIRTUAL  
+Označuje, že je virtuální pole.
+
+FIELD_MOD_INTERFACE  
+Označuje, že pole je rozhraní.
+
+FIELD_MOD_FINAL  
+Označuje, že pole je finální.
+
+FIELD_MOD_SENTINEL  
+Označuje, že je pole sentinel.
+
+FIELD_MOD_INNERCLASS  
+Označuje, že pole je vnitřní třídu.
+
+FIELD_TYPE_OPTIONAL  
+Označuje, že pole je volitelné.
+
+FIELD_MOD_BYREF  
+Označuje, že pole je argumentem reference. Toto je speciálně pro argumenty metody.
+
+FIELD_MOD_HIDDEN  
+Označuje, že pole musí být skrytá nebo zobrazí v jiném kontextu; například [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statické lokální proměnné.
+
+FIELD_MOD_MARSHALASOBJECT  
+Označuje, že pole představuje objekt s `IUnknown` rozhraní.
+
+FIELD_MOD_SPECIAL_NAME  
+Označuje, že pole má speciální název, například `.ctor` pro konstruktor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] pouze).
+
+FIELD_MOD_HIDEBYSIG  
+Označuje, zda má pole `Overloads` použít klíčové slovo ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] pouze).
+
+FIELD_MOD_WRITEONLY  
+Označuje, že pole je jen pro zápis. Tato hodnota není součástí `FIELD_MOD_ALL`, jak je pouze použití pole jen pro zápis pro vyhodnocení funkce. Uživatel musí explicitně požádat o `FIELD_MOD_WRITEONLY` pole.
+
+FIELD_MOD_ACCESS_MASK  
+Označuje maska pro přístup k poli.
+
+FIELD_MOD_MASK  
+Označuje masku modifikátory pole.
+
+## <a name="remarks"></a>Poznámky
+Používá pro `dwModifiers` člena [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.
+
+Tyto hodnoty jsou předány také [enumfields –](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metodou filtrování pro konkrétní pole.
+
+## <a name="requirements"></a>Požadavky
+Záhlaví: sh.h
+
+Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
+[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)

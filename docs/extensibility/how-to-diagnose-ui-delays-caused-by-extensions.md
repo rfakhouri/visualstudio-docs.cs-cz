@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957439"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317117"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Postupy: Diagnostika zpoždění uživatelského rozhraní způsobených rozšířeními
 
@@ -102,7 +102,7 @@ Trasovací soubor otevřete v dalším kroku. Můžete provést pomocí stejné 
 Potom vyberte soubor trasování v levém podokně a otevřete výběrem **otevřete** z nabídky klikněte pravým tlačítkem nebo kontext.
 
 > [!NOTE]
-> Ve výchozím nastavení výstupy PerfView archiv Zip. Když otevřete *trace.zip*, automaticky dekomprimuje archivu a otevře trasování. To můžete přeskočit zrušením **Zip** pole během kolekce trasování. Ale pokud máte v úmyslu přenosu a použít trasování na různých počítačích, důrazně doporučujeme před zrušením zaškrtnutí **Zip** pole. Bez této možnosti požadované soubory PDB pro Ngen sestavení nebude doprovázet trasování a proto nebudou symbolů ze sestavení Ngen přeloženy na cílovém počítači. (Viz [tento příspěvek na blogu](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) pro další informace o soubory PDB pro Ngen sestavení.) 
+> Ve výchozím nastavení výstupy PerfView archiv Zip. Když otevřete *trace.zip*, automaticky dekomprimuje archivu a otevře trasování. To můžete přeskočit zrušením **Zip** pole během kolekce trasování. Ale pokud máte v úmyslu přenosu a použít trasování na různých počítačích, důrazně doporučujeme před zrušením zaškrtnutí **Zip** pole. Bez této možnosti požadované soubory PDB pro Ngen sestavení nebude doprovázet trasování a proto nebudou symbolů ze sestavení Ngen přeloženy na cílovém počítači. (Viz [tento příspěvek na blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) pro další informace o soubory PDB pro Ngen sestavení.) 
 
 Může trvat několik minut, než PerfView pro zpracování a otevřít trasování. Po otevřít trasování se zobrazí pod ním seznam různých "zobrazení".
 

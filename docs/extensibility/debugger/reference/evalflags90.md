@@ -10,94 +10,94 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 783ffb1b0fe101a0f2f70eac9c824c213db34b62
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93345609a7dadc240aa33ce2a1751f6d04ab4384
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992266"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315661"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Vytvoří výčet platné hodnoty pro příznaky, které řídí vyhodnocení výrazu. Tento výčet rozšiřuje [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) výčtu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_EVALFLAGS90  
-{  
-   // VS 8.0 values  
-   EVAL90_RETURNVALUE                 = 0x0002,  
-   EVAL90_NOSIDEEFFECTS               = 0x0004,  
-   EVAL90_ALLOWBPS                    = 0x0008,  
-   EVAL90_ALLOWERRORREPORT            = 0x0010,  
-   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
-   EVAL90_NOFUNCEVAL                  = 0x0080,  
-   EVAL90_NOEVENTS                    = 0x1000,  
-   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
-   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
-  
-   // Values added in VS 9.0  
-   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
-};  
-typedef DWORD EVALFLAGS90;  
-```  
-  
-```csharp  
-public enum enum_EVALFLAGS90  
-{  
-   // VS 8.0 values  
-   EVAL90_RETURNVALUE                 = 0x0002,  
-   EVAL90_NOSIDEEFFECTS               = 0x0004,  
-   EVAL90_ALLOWBPS                    = 0x0008,  
-   EVAL90_ALLOWERRORREPORT            = 0x0010,  
-   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
-   EVAL90_NOFUNCEVAL                  = 0x0080,  
-   EVAL90_NOEVENTS                    = 0x1000,  
-   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
-   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
-  
-   // Values added in VS 9.0  
-   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- EVAL90_RETURNVALUE  
- Určuje, že návratová hodnota, pokud existuje, vyhodnocen.  
-  
- EVAL90_NOSIDEEFFECTS  
- Určuje, že nebudou povoleny vedlejší účinky.  
-  
- EVAL90_ALLOWBPS  
- Určuje zastavení zarážky.  
-  
- EVAL90_ALLOWERRORREPORT  
- Určuje tuto chybu generování sestav k hostiteli mají být povolena. Používá se především pro vyhodnocení výrazu ve skriptu v aplikaci Internet Explorer.  
-  
- EVAL90_FUNCTION_AS_ADDRESS  
- Funkce sil má být vyhodnocen jako adresy, namísto volání funkce.  
-  
- EVAL90_NOFUNCEVAL  
- Zabraňuje vyhodnocení funkce. Představme si třeba, `int` token ve výrazu `myExpression(int) + 10`. Tato funkce může být správně vyhodnocen jako adresa, ale ne jako hodnotu.  
-  
- EVAL90_NOEVENTS  
- Příznak označující, že správce ladění relace (SDM) nebo integrovaném vývojovém prostředí by se neměly posílat události, ke kterým dochází při vyhodnocení výrazu.  
-  
- EVAL90_DESIGN_TIME_EXPR_EVAL  
- Umožňuje vyhodnocování výrazu v době návrhu.  
-  
- EVAL90_ALLOW_IMPLICIT_VARS  
- Umožňuje implicitní vytváření proměnných.  
-  
- EVAL90_FORCE_EVALUATION_NOW  
- Vyhodnocení vynutí okamžité. To je užitečné při obsluze žádosti, jako je například požadavek uživatele.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: Msdbg90.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+Vytvoří výčet platné hodnoty pro příznaky, které řídí vyhodnocení výrazu. Tento výčet rozšiřuje [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) výčtu.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_EVALFLAGS90
+{
+    // VS 8.0 values
+    EVAL90_RETURNVALUE                 = 0x0002,
+    EVAL90_NOSIDEEFFECTS               = 0x0004,
+    EVAL90_ALLOWBPS                    = 0x0008,
+    EVAL90_ALLOWERRORREPORT            = 0x0010,
+    EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,
+    EVAL90_NOFUNCEVAL                  = 0x0080,
+    EVAL90_NOEVENTS                    = 0x1000,
+    EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,
+    EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,
+
+    // Values added in VS 9.0
+    EVAL90_FORCE_EVALUATION_NOW        = 0x8000
+};
+typedef DWORD EVALFLAGS90;
+```
+
+```csharp
+public enum enum_EVALFLAGS90
+{
+    // VS 8.0 values
+    EVAL90_RETURNVALUE                 = 0x0002,
+    EVAL90_NOSIDEEFFECTS               = 0x0004,
+    EVAL90_ALLOWBPS                    = 0x0008,
+    EVAL90_ALLOWERRORREPORT            = 0x0010,
+    EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,
+    EVAL90_NOFUNCEVAL                  = 0x0080,
+    EVAL90_NOEVENTS                    = 0x1000,
+    EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,
+    EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,
+
+    // Values added in VS 9.0
+    EVAL90_FORCE_EVALUATION_NOW        = 0x8000
+};
+```
+
+#### <a name="parameters"></a>Parametry
+EVAL90_RETURNVALUE  
+Určuje, že návratová hodnota, pokud existuje, vyhodnocen.
+
+EVAL90_NOSIDEEFFECTS  
+Určuje, že nebudou povoleny vedlejší účinky.
+
+EVAL90_ALLOWBPS  
+Určuje zastavení zarážky.
+
+EVAL90_ALLOWERRORREPORT  
+Určuje tuto chybu generování sestav k hostiteli mají být povolena. Používá se především pro vyhodnocení výrazu ve skriptu v aplikaci Internet Explorer.
+
+EVAL90_FUNCTION_AS_ADDRESS  
+Funkce sil má být vyhodnocen jako adresy, namísto volání funkce.
+
+EVAL90_NOFUNCEVAL  
+Zabraňuje vyhodnocení funkce. Představme si třeba, `int` token ve výrazu `myExpression(int) + 10`. Tato funkce může být správně vyhodnocen jako adresa, ale ne jako hodnotu.
+
+EVAL90_NOEVENTS  
+Příznak označující, že správce ladění relace (SDM) nebo integrovaném vývojovém prostředí by se neměly posílat události, ke kterým dochází při vyhodnocení výrazu.
+
+EVAL90_DESIGN_TIME_EXPR_EVAL  
+Umožňuje vyhodnocování výrazu v době návrhu.
+
+EVAL90_ALLOW_IMPLICIT_VARS  
+Umožňuje implicitní vytváření proměnných.
+
+EVAL90_FORCE_EVALUATION_NOW  
+Vyhodnocení vynutí okamžité. To je užitečné při obsluze žádosti, jako je například požadavek uživatele.
+
+## <a name="requirements"></a>Požadavky
+Záhlaví: Msdbg90.h
+
+Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

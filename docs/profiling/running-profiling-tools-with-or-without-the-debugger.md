@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96341ada2485654f5553b7b862c84dd03b8b4a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a6f7b61bc3dd6f11bf16808df15d9c2dad1222f6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979488"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316909"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj
 
@@ -63,7 +63,7 @@ Pomocí vyhledávacího pole najít konkrétní řetězec v seznamu událostí. 
 
 ![Vyhledávání diagnostických událostí](../profiling/media/diagnosticseventsearch.png "prohledávání diagnostických událostí")  
 
-Další informace najdete v tématu [vyhledávání a filtrování na kartě události okna diagnostické nástroje](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
+Další informace najdete v tématu [vyhledávání a filtrování na kartě události okna diagnostické nástroje](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
 
 ## <a name="collect-profiling-data-without-debugging"></a>Shromažďování dat profilace bez ladění  
 
@@ -118,14 +118,14 @@ Následují blogy a články MSDN od vývojového týmu diagnostiky:
   
  [Zpravodaj MSDN Magazine: Dokážete rychleji diagnostikovat problémy pomocí IntelliTrace](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [Blogový příspěvek: Diagnostika nevrácené obslužné rutiny události pomocí nástroje využití paměti v sadě Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+ [Blogový příspěvek: Diagnostika nevrácené obslužné rutiny události pomocí nástroje využití paměti v sadě Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
  [Video: Historické ladění pomocí nástroje IntelliTrace v sadě Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
  [Video: Ladění problémů s výkonem pomocí sady Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [Tipy pro výkon: Výkon informace na přehledem při ladění se sadou Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [Tipy pro výkon: Výkon informace na přehledem při ladění se sadou Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Ladicí program okně diagnostické nástroje v sadě Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
+ [Ladicí program okně diagnostické nástroje v sadě Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [Nástroj IntelliTrace v sadě Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+ [Nástroj IntelliTrace v sadě Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

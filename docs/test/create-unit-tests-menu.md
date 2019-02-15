@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577cb338e7cbf20b23d2d75ad2dfded017b0aacb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955138"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315102"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Metoda zástupné procedury s příkaz Vytvořit testy jednotek pro testování částí Create
 
@@ -60,11 +60,11 @@ Testovací rozhraní framework rozšíření jsou k dispozici v aplikaci Visual 
 
 ## <a name="when-should-i-use-this-feature"></a>Kdy použít tuto funkci?
 
-Tuto funkci použít vždy, když je potřeba vytvořit testy jednotek, ale specificky při testování existující kód, který má žádné nebo téměř žádné pokrytí testu a žádná dokumentace. Jinými slovy ve kterých je specifikace omezené nebo neexistující kódu. Efektivně implementuje podobný přístup [inteligentní testování částí](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/) , které charakterizují zjištěnou chování kódu.
+Tuto funkci použít vždy, když je potřeba vytvořit testy jednotek, ale specificky při testování existující kód, který má žádné nebo téměř žádné pokrytí testu a žádná dokumentace. Jinými slovy ve kterých je specifikace omezené nebo neexistující kódu. Efektivně implementuje podobný přístup [inteligentní testování částí](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) , které charakterizují zjištěnou chování kódu.
 
 Tato funkce je však vztahuje rovněž na situaci, kdy vývojář spustí napsáním nějakého kódu a, který používá ke spuštění testování disciplíny. Ve službě flow kódování může být vhodné Vývojář můžete rychle vytvořit jednotku testovací metoda zástupnou proceduru (s vhodné testovací třídy a vhodný testovacího projektu) pro konkrétní část kódu.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vytvoření testu jednotek metoda zástupné procedury s "Vytvoření Unit Tests"](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [Testování blogové příspěvky](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)
+- [Vytvoření testu jednotek metoda zástupné procedury s "Vytvoření Unit Tests"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Testování blogové příspěvky](https://devblogs.microsoft.com/devops/?s=unit+testing)

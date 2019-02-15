@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e62c662a9936467f2a434c48e1c588e7dd5c9cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcb1dbd003dca3139d9370460805b03f03647f43
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923776"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318444"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Použití služby Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -296,7 +296,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
 ### <a name="q-where-can-i-get-more-information"></a>DOTAZ: Kde lze získat další informace?  
   
 #### <a name="blogs"></a>Blogy  
- [Představujeme službu Microsoft Monitoring Agent.](https://blogs.msdn.microsoft.com/devops/2013/09/20/introducing-microsoft-monitoring-agent/)  
+ [Představujeme službu Microsoft Monitoring Agent.](https://devblogs.microsoft.com/devops/introducing-microsoft-monitoring-agent/)  
   
  [Optimalizace kolekce IntelliTrace na provozních serverech](http://go.microsoft.com/fwlink/?LinkId=255233)  
   

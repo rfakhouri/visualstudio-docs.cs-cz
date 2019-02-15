@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 512c62c589dcfc4276e35247d268a035b03865a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937718"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316454"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolace testovaného kódu pomocí Napodobenin Microsoft
 
@@ -35,7 +35,8 @@ Jsou dva typy napodobenin:
 -   Rozhraní .NET Framework projektu
 
 > [!NOTE]
-> Projekty .NET standard teď nejsou podporovány.
+> - Projekty .NET standard teď nejsou podporovány.
+> - Profilace pomocí sady Visual Studio není k dispozici pro testy, které používají Microsoft Fakes.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Výběr mezi zástupnou procedurou a překrytím typy
 Obvykle byste měli považovat projekt sady Visual Studio za součást, protože vytváříte a aktualizujete tyto třídy současně. Měli byste zvážit použití zástupných procedur a překrytí pro volání, která projekt provádí do jiných projektů v rámci vašeho řešení nebo do jiných sestavení, na která projekt odkazuje.

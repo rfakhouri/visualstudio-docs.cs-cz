@@ -12,51 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14f05949dd275a7f1566b8cec3a49903249e3de1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79502e4a7a42a4c83957c0ef6b470fa9753db6fd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037197"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317455"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
-Struktura, která popisuje pole řetězců.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-typedef struct tagBSTR_ARRAY {  
-   DWORD dwCount;  
-   BSTR* Members;  
-} BSTR_ARRAY;  
-```  
-  
-```csharp  
-struct BSTR_ARRAY {  
-   DWORD    dwCount;  
-   string[] Members;  
-}  
-```  
-  
-## <a name="terms"></a>Podmínky  
- dwCount  
- Počet řetězců v `Members` pole.  
-  
- Členové  
- Pole řetězců.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato struktura je vrácen z [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) metody.  
-  
- [Jenom C++] Každé jednotlivé řetězce musí být uvolněna pomocí `SysFreeString`a `Members` pole musí být uvolněna pomocí `CoTaskMemFree`.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: msdbg.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
+Struktura, která popisuje pole řetězců.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+typedef struct tagBSTR_ARRAY {
+    DWORD dwCount;
+    BSTR* Members;
+} BSTR_ARRAY;
+```
+
+```csharp
+struct BSTR_ARRAY {
+    DWORD    dwCount;
+    string[] Members;
+}
+```
+
+## <a name="terms"></a>Podmínky
+dwCount  
+Počet řetězců v `Members` pole.
+
+Členové  
+Pole řetězců.
+
+## <a name="remarks"></a>Poznámky
+Tato struktura je vrácen z [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) metody.
+
+[Jenom C++] Každé jednotlivé řetězce musí být uvolněna pomocí `SysFreeString`a `Members` pole musí být uvolněna pomocí `CoTaskMemFree`.
+
+## <a name="requirements"></a>Požadavky
+Záhlaví: msdbg.h
+
+Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+[Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

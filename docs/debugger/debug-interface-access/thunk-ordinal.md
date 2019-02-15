@@ -12,60 +12,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756a1b9fde9c85ca914b00924cb13191859be78e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952298"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318521"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
-Určuje typy převodní rutina.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-typedef enum THUNK_ORDINAL {   
-   THUNK_ORDINAL_NOTYPE,  
-   THUNK_ORDINAL_ADJUSTOR,  
-   THUNK_ORDINAL_VCALL,  
-   THUNK_ORDINAL_PCODE,  
-   THUNK_ORDINAL_LOAD   
-  
-   // trampoline thunk ordinals - only for use in Trampoline thunk symbols  
-   THUNK_ORDINAL_TRAMP_INCREMENTAL,  
-   THUNK_ORDINAL_TRAMP_BRANCHISLAND,  
-} THUNK_ORDINAL;  
-```  
-  
-## <a name="elements"></a>Elementy  
- THUNK_ORDINAL_NOTYPE  
- Standardní převodní rutina.  
-  
- THUNK_ORDINAL_ADJUSTOR  
- A `this` likvidátor převodní rutina.  
-  
- THUNK_ORDINAL_VCALL  
- Virtuální volání převodní rutina.  
-  
- THUNK_ORDINAL_PCODE  
- Převodní rutina P-code.  
-  
- THUNK_ORDINAL_LOAD  
- Převodní rutina zatížení zpoždění.  
-  
- THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Převodní rutina přírůstkové trampoline (trampoline převodní rutina se používá k odraz volání z jednoho paměťového prostoru do jiného).  
-  
- THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- Převodní rutina trampoline bod větve.  
-  
-## <a name="remarks"></a>Poznámky  
- Během volání se vrátí hodnoty v tento výčet [idiasymbol::get_thunkordinal –](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) metody.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: cvconst.h  
-  
-## <a name="see-also"></a>Viz také  
- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+Určuje typy převodní rutina.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+typedef enum THUNK_ORDINAL {
+    THUNK_ORDINAL_NOTYPE,
+    THUNK_ORDINAL_ADJUSTOR,
+    THUNK_ORDINAL_VCALL,
+    THUNK_ORDINAL_PCODE,
+    THUNK_ORDINAL_LOAD
+
+    // trampoline thunk ordinals - only for use in Trampoline thunk symbols
+    THUNK_ORDINAL_TRAMP_INCREMENTAL,
+    THUNK_ORDINAL_TRAMP_BRANCHISLAND,
+} THUNK_ORDINAL;
+```
+
+## <a name="elements"></a>Elementy
+THUNK_ORDINAL_NOTYPE  
+Standardní převodní rutina.
+
+THUNK_ORDINAL_ADJUSTOR  
+A `this` likvidátor převodní rutina.
+
+THUNK_ORDINAL_VCALL  
+Virtuální volání převodní rutina.
+
+THUNK_ORDINAL_PCODE  
+Převodní rutina P-code.
+
+THUNK_ORDINAL_LOAD  
+Převodní rutina zatížení zpoždění.
+
+THUNK_ORDINAL_TRAMP_INCREMENTAL  
+Převodní rutina přírůstkové trampoline (trampoline převodní rutina se používá k odraz volání z jednoho paměťového prostoru do jiného).
+
+THUNK_ORDINAL_TRAMP_BRANCHISLAND  
+Převodní rutina trampoline bod větve.
+
+## <a name="remarks"></a>Poznámky
+Během volání se vrátí hodnoty v tento výčet [idiasymbol::get_thunkordinal –](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) metody.
+
+## <a name="requirements"></a>Požadavky
+Záhlaví: cvconst.h
+
+## <a name="see-also"></a>Viz také
+[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
+[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

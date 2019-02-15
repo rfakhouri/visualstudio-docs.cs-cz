@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb89368869835edc8e6138c5b21d5a8b3970758
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957218"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318729"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 
@@ -84,7 +84,7 @@ Visual Studio Emulator for Android je desktopová aplikace, které emuluje zař�
  Po instalaci sady profilů, které chcete cílit, lze tyto nové profily spustit stisknutím zelené přímo ze správce **Přehrát** tlačítko. Zobrazí se také v rozevírací nabídce Cíl ladění do libovolného typu – multiplatformního mobilního projektu sady Visual Studio.
 
 ##  <a name="FeaturesTest"></a> Funkce, které můžete testovat se spustila v emulátoru
- Podrobné informace o funkcích můžete otestovat v emulátoru, najdete v tomto [blogový příspěvek](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/).
+ Podrobné informace o funkcích můžete otestovat v emulátoru, najdete v tomto [blogový příspěvek](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).
 
 ##  <a name="FeaturesNonTest"></a> Funkce, které nelze otestovat v emulátoru
  Následující seznam popisuje funkce platformy Android, které jste **nelze** testování se spustila v emulátoru. Máte k testování těchto funkcí na fyzickém zařízení.

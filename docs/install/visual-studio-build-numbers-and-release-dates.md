@@ -12,12 +12,12 @@ helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: d1134a0b757423c8196ae40f49fe5251e6de84f2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270625"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317988"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -188,6 +188,7 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 ## <a name="see-also"></a>Viz také:
 
+* [Visual Studio vydávání nových verzí](/visualstudio/productinfo/release-rhythm)
 * [Příručka pro správce aplikace Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
 * [Nástroje pro zjišťování a správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)

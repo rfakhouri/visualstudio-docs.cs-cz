@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965689"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318794"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Přidat příponu protokol jazyka serveru
 
@@ -89,9 +89,9 @@ textDocument/přejmenování | ano
 ## <a name="getting-started"></a>Začínáme
 
 > [!NOTE]
-> Od verze Visual Studio 15.8 ve verzi Preview 3 podpora pro běžné protokol jazyka serveru je integrovaná do sady Visual Studio.  Pokud jste vytvořili LSP rozšíření pomocí našich ve verzi preview [jazyk serveru klienta VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) verze, přestanou fungovat až do jste upgradovali na 15,8 ve verzi Preview 3 nebo vyšší.  Budete muset následujícím postupem získejte rozšíření LSP znovu pracovat:
+> Od verze Visual Studio 15.8 ve verzi Preview 3 podpora pro běžné protokol jazyka serveru je integrovaná do sady Visual Studio. Pokud jste vytvořili LSP rozšíření pomocí našich ve verzi preview [jazyk serveru klienta VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) verze, přestanou fungovat až do jste upgradovali na 15,8 ve verzi Preview 3 nebo vyšší. Budete muset následujícím postupem získejte rozšíření LSP znovu pracovat:
 >
-> 1. Odinstalujte Microsoft Visual Studio jazyk serveru protokolu Preview VSIX.  Počínaje 15,8 ve verzi Preview 4, pokaždé, když provedete upgrade v sadě Visual Studio jsme bude automaticky rozpoznávat a odebrat náhled VSIX pro vás během procesu upgradu.
+> 1. Odinstalujte Microsoft Visual Studio jazyk serveru protokolu Preview VSIX. Počínaje 15,8 ve verzi Preview 4, pokaždé, když provedete upgrade v sadě Visual Studio jsme bude automaticky rozpoznávat a odebrat náhled VSIX pro vás během procesu upgradu.
 >
 > 2. Aktualizujte referenci Nuget na nejnovější verzi – ve verzi preview pro [LSP balíčky](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client).
 >
@@ -129,10 +129,10 @@ LSP neobsahuje specifikaci o tom, jak poskytnout zabarvení textu pro jazyky. Po
 
 4. Vytvoření *.pkgdef* soubor a přidá řádek podobný tomuto:
 
-   ```xml
-   [$RootKey$\TextMate\Repositories]
-   "MyLang"="$PackageFolder$\Grammars"
-   ```
+    ```xml
+    [$RootKey$\TextMate\Repositories]
+    "MyLang"="$PackageFolder$\Grammars"
+    ```
 
 5. Klikněte pravým tlačítkem na požadované soubory, vyberte **vlastnosti**. Změnit **sestavení** akce **obsahu** a **zahrnout do VSIX** vlastnost na hodnotu true.
 
@@ -292,31 +292,31 @@ Postupujte podle následujících kroků pro přidání podpory pro nastavení r
 
 1. Přidání souboru JSON (například *MockLanguageExtensionSettings.json*) ve vašem projektu, který obsahuje nastavení a jejich výchozí hodnoty. Příklad:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": -1
-   }
-   ```
+    ```json
+    {
+        "foo.maxNumberOfProblems": -1
+    }
+    ```
 2. Klikněte pravým tlačítkem na soubor JSON a vyberte **vlastnosti**. Změnit **sestavení** akce "Obsah" a "zahrnout do VSIX' vlastnost na hodnotu true.
 
 3. Implementace oddíly ConfigurationSections a vrátí seznam předpon pro nastavení definované v souboru JSON (v aplikaci Visual Studio Code, to by namapovat na název oddílu konfigurace v souboru package.json):
 
-   ```csharp
-   public IEnumerable<string> ConfigurationSections
-   {
-      get
-      {
-          yield return "foo";
-      }
-   }
-   ```
+    ```csharp
+    public IEnumerable<string> ConfigurationSections
+    {
+        get
+        {
+            yield return "foo";
+        }
+    }
+    ```
 
 4. Soubor .pkgdef přidejte do projektu (Přidat nový textový soubor a změňte příponu souboru .pkgdef). Soubor pkgdef by měl obsahovat tyto informace:
 
-   ```xml
+    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-   ```
+    ```
 
     Ukázka:
     ```xml
@@ -340,13 +340,13 @@ Postupujte podle následujících kroků pro přidání podpory pro nastavení r
 2. Uživatel přidá soubor v *.vs* složku s názvem *VSWorkspaceSettings.json*.
 3. Uživatel přidá řádek do *VSWorkspaceSettings.json* soubor pro třídu setting server poskytuje. Příklad:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": 10
-   }
-   ```
-   ### <a name="enabling-diagnostics-tracing"></a>Povolení trasování diagnostiky
-   Diagnostické trasování je možné zapnout na výstup všech zpráv mezi klientem a serverem, který může být užitečné při ladění problémů.  Pokud chcete povolit diagnostické trasování, postupujte takto:
+    ```json
+    {
+        "foo.maxNumberOfProblems": 10
+    }
+    ```
+    ### <a name="enabling-diagnostics-tracing"></a>Povolení trasování diagnostiky
+    Diagnostické trasování je možné zapnout na výstup všech zpráv mezi klientem a serverem, který může být užitečné při ladění problémů. Pokud chcete povolit diagnostické trasování, postupujte takto:
 
 4. Otevření nebo vytvoření souboru nastavení pracovního prostoru *VSWorkspaceSettings.json* (viz "Uživatel upravuje nastavení pro pracovní prostor").
 5. Přidejte následující řádek v souboru nastavení json:
@@ -362,7 +362,7 @@ Existují tři možné hodnoty pro trasovacího podrobnosti:
 * "Zprávy": trasování zapnuté, ale ID názvu a odpovědi pouze metody jsou trasovány.
 * "Verbose": trasování zapnuté; zpráva rpc celý trasován.
 
-Pokud je trasování zapnuto obsah se zapisují do souboru v *%temp%\VisualStudio\LSP* adresáře.  Protokol formát pojmenování *[LanguageClientName]-[razítko data a času] log*.  V současné době můžete trasování povoleno pouze pro otevřenou složku.  Otevření jednoho souboru aktivace jazyk serveru nemá žádné diagnostické trasování podpory.
+Pokud je trasování zapnuto obsah se zapisují do souboru v *%temp%\VisualStudio\LSP* adresáře. Protokol formát pojmenování *[LanguageClientName]-[razítko data a času] log*. V současné době můžete trasování povoleno pouze pro otevřenou složku. Otevření jednoho souboru aktivace jazyk serveru nemá žádné diagnostické trasování podpory.
 
 ### <a name="custom-messages"></a>Vlastní zprávy
 
@@ -425,7 +425,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     }
 
     public async Task SendServerCustomNotification(object arg)
-    {    
+    {
         await this.customMessageRpc.NotifyWithParameterObjectAsync("OnCustomNotification", arg);
     }
 
@@ -477,7 +477,7 @@ Zdrojový kód ukázkové rozšíření pomocí rozhraní API klienta LSP v sad�
 
 **Chci vytvořit vlastní projekt systém k doplnění LSP jazyk serveru k poskytování bohatších podporovaných funkcích v sadě Visual Studio, jak se mám obrátit o to provedete?**
 
-Podpora jazyka založeného na LSP serverů v sadě Visual Studio využívá [funkce Otevřít složku](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/) a je speciálně navržen pro, aby vlastní projektový systém. Můžete vytvářet vlastní projekt systému postupujte podle pokynů [tady](https://github.com/Microsoft/VSProjectSystem), ale některé funkce, jako je například nastavení, nemusí fungovat. Výchozí inicializace logiku pro servery LSP jazyka je a zajistěte tak předání složky, do kořenové složky je aktuálně otevřenou, takže pokud používáte vlastní projektový systém, budete muset poskytnout vlastní logiku během inicializace k zajištění můžete server language správně spusťte.
+Podpora jazyka založeného na LSP serverů v sadě Visual Studio využívá [funkce Otevřít složku](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) a je speciálně navržen pro, aby vlastní projektový systém. Můžete vytvářet vlastní projekt systému postupujte podle pokynů [tady](https://github.com/Microsoft/VSProjectSystem), ale některé funkce, jako je například nastavení, nemusí fungovat. Výchozí inicializace logiku pro servery LSP jazyka je a zajistěte tak předání složky, do kořenové složky je aktuálně otevřenou, takže pokud používáte vlastní projektový systém, budete muset poskytnout vlastní logiku během inicializace k zajištění můžete server language správně spusťte.
 
 **Jak přidám podpora ladicího programu?**
 

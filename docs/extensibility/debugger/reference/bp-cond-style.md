@@ -12,55 +12,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d82656e50b472712d7bed39c1a1decdc84f0242
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d8ca4f551f4dd6541bad9d73b5e91c671ad80492
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025147"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318300"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
-Určuje styl podmínku zarážky pro čekající a vázán zarážky.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_BP_COND_STYLE {   
-   BP_COND_NONE         = 0x0000,  
-   BP_COND_WHEN_TRUE    = 0x0001,  
-   BP_COND_WHEN_CHANGED = 0x0002  
-};  
-typedef DWORD BP_COND_STYLE;  
-```  
-  
-```csharp  
-public enum enum_BP_COND_STYLE {   
-   BP_COND_NONE         = 0x0000,  
-   BP_COND_WHEN_TRUE    = 0x0001,  
-   BP_COND_WHEN_CHANGED = 0x0002  
-};  
-```  
-  
-## <a name="members"></a>Členové  
- BP_COND_NONE  
- Při dosažení zarážky na pozici, je vyvoláno zarážku. Není zadaná žádná podmínka zarážky.  
-  
- BP_COND_WHEN_TRUE  
- Aktivuje zarážku, jen když podmíněný výraz přidružený k zarážce vyhodnocen `true`.  
-  
- BP_COND_WHEN_CHANGED  
- Je aktivována zarážka pouze v případě, že hodnota podmíněný výraz přidružený k zarážce byl změněn z jeho předchozí hodnocení.  
-  
-## <a name="remarks"></a>Poznámky  
- Používá pro `styleCondition` člena [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktury.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: msdbg.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+Určuje styl podmínku zarážky pro čekající a vázán zarážky.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_BP_COND_STYLE {
+    BP_COND_NONE         = 0x0000,
+    BP_COND_WHEN_TRUE    = 0x0001,
+    BP_COND_WHEN_CHANGED = 0x0002
+};
+typedef DWORD BP_COND_STYLE;
+```
+
+```csharp
+public enum enum_BP_COND_STYLE {
+    BP_COND_NONE         = 0x0000,
+    BP_COND_WHEN_TRUE    = 0x0001,
+    BP_COND_WHEN_CHANGED = 0x0002
+};
+```
+
+## <a name="members"></a>Členové
+BP_COND_NONE  
+Při dosažení zarážky na pozici, je vyvoláno zarážku. Není zadaná žádná podmínka zarážky.
+
+BP_COND_WHEN_TRUE  
+Aktivuje zarážku, jen když podmíněný výraz přidružený k zarážce vyhodnocen `true`.
+
+BP_COND_WHEN_CHANGED  
+Je aktivována zarážka pouze v případě, že hodnota podmíněný výraz přidružený k zarážce byl změněn z jeho předchozí hodnocení.
+
+## <a name="remarks"></a>Poznámky
+Používá pro `styleCondition` člena [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktury.
+
+## <a name="requirements"></a>Požadavky
+Záhlaví: msdbg.h
+
+Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

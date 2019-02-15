@@ -6,23 +6,34 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 2a5b60496a53c35bb67e5cd19d6059212e22ccfd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e192f75508173cd4014e391168ab27e9abe2bc9a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911777"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317208"
 ---
 # <a name="visual-studio-2019-for-mac-preview-tour"></a>2019 Visual Studio pro Mac ve verzi Preview prohlídku
 
 > [!NOTE]
 > 2019 Visual Studio for Mac je [nyní k dispozici](installation.md) jako verze preview pro testování.
 
-Visual Studio pro Mac vyvíjí Xamarinu pro zaměřené na mobilní zařízení IDE, Xamarin Studio, mobilní a cloudové vývojové prostředí na počítači Mac. Tento nástroj určený pro vývojáře můžete využít k vytváření aplikací pro všechny platformy musí vaši uživatelé rozhraní .NET.
+Visual Studio for Mac je .NET _integrovaného vývojového prostředí_ na počítači Mac, který je možné upravit, ladit a vytvářet kód a pak publikujete aplikaci. Kromě očekávané funkce, jako je standardní editor a ladicí program Visual Studio for Mac obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a správy zdrojového kódu do úložiště ese proces vývoje softwaru.
 
-Uživatelské rozhraní (UX sady Visual Studio for Mac) je podobná jeho protějšek Windows, ale s nativní macOS chování. Vytvoření, otevření nebo vyvíjet aplikace bude známým všem uživatelům, kteří dříve používali Visual Studio na Windows. Kromě toho Visual Studio for Mac využívá mnoho výkonných nástrojů, které usnadňují jeho protějšek Windows výkonné IDE. Platforma kompilátor Roslyn se používá pro refaktoring a technologii IntelliSense. Jeho modul systému a sestavení projektu pomocí nástroje MSBuild a jeho Editor zdrojového kódu podporuje sady TextMate. Používá stejný ladicím modulem pro aplikace Xamarin a .NET Core a stejného návrháře pro Xamarin.iOS a Xamarin.Android.
+Visual Studio for Mac podporuje mnoho stejné typy souborů jako jeho protějšek Windows, například `.csproj`, `.fsproj`, nebo `.sln` soubory a podporuje funkce, jako je například EditorConfig, což znamená, že můžete použít rozhraní IDE, který vám bude nejlépe vyhovovat.
+Vytvoření, otevření nebo vyvíjet aplikace bude známým všem uživatelům, kteří dříve používali Visual Studio na Windows. Kromě toho Visual Studio for Mac využívá mnoho výkonných nástrojů, které usnadňují jeho protějšek Windows výkonné IDE. Platforma kompilátor Roslyn se používá pro refaktoring a technologii IntelliSense. Jeho modul systému a sestavení projektu pomocí nástroje MSBuild a jeho Editor zdrojového kódu podporuje sady TextMate. Používá stejný ladicím modulem pro aplikace Xamarin a .NET Core a stejného návrháře pro Xamarin.iOS a Xamarin.Android.
 
-Tento článek se věnuje různých oddílů sady Visual Studio pro Mac, poskytuje pohled na některé z funkcí, které usnadňují výkonný nástroj pro vytváření aplikací pro víc platforem.
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Co můžu dělat v sadě Visual Studio for Mac
+
+Visual Studio for Mac podporuje následující typy vývoje pro:
+
+- Webové aplikace ASP.NET Core s C#, F#a podpora pro stránky Razor, JavaScript a TypeScript
+- Konzolové aplikace .NET core s C# neboF#
+- Hry Unity pro různé platformy a aplikace sC#
+- Aplikace pro Android, iOS, tvOS a watchOS v Xamarinu s C# nebo F# a XAML
+- Desktopové aplikace cocoa v C# neboF#
+
+Tento článek se věnuje různých oddílů sady Visual Studio pro Mac, poskytuje pohled na některé z funkcí, které usnadňují výkonný nástroj pro vytváření těchto aplikací.
 
 ## <a name="ide-tour"></a>Prohlídka integrovaného vývojového prostředí
 

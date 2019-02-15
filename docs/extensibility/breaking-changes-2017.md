@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012271"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318742"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Změny v rozšíření sady Visual Studio 2017
 
-Pomocí sady Visual Studio 2017, teď nabízíme [rychlejší, nenáročný prostředí instalace sady Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer) zároveň dává uživatelům větší výběr úloh a funkcí, které sníží to dopad sady Visual Studio v systémech uživatelů které se instalují. Pro podporu těchto vylepšení jsme udělali změny model rozšiřitelnosti a odstraňuje některé narušující změny provedené rozšiřitelnost sady Visual Studio. Tento dokument ale popisuje technické podrobnosti o tyto změny a co se dá dělat k jejich řešení. Mějte prosím na paměti, že některé informace se podrobnosti implementace v daném okamžiku a může být později změnit.
+Pomocí sady Visual Studio 2017, teď nabízíme [rychlejší, nenáročný prostředí instalace sady Visual Studio](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) zároveň dává uživatelům větší výběr úloh a funkcí, které sníží to dopad sady Visual Studio v systémech uživatelů které se instalují. Pro podporu těchto vylepšení jsme udělali změny model rozšiřitelnosti a odstraňuje některé narušující změny provedené rozšiřitelnost sady Visual Studio. Tento dokument ale popisuje technické podrobnosti o tyto změny a co se dá dělat k jejich řešení. Mějte prosím na paměti, že některé informace se podrobnosti implementace v daném okamžiku a může být později změnit.
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>Změny, které mají vliv formát VSIX a instalace
 
@@ -28,7 +28,7 @@ Změny formátu VSIX patří:
 * Prohlášení o požadovaných součástí instalace. K doručování na příslib odlehčený, rychlý instalace sady Visual Studio, instalační program teď nabízí další možnosti konfigurace pro uživatele. Kvůli tomu aby bylo zajištěno, že jsou nainstalované funkce a součásti vyžadované pro rozšíření, bude rozšíření potřeba deklarovat jejich závislosti.
   * Instalační program sady Visual Studio 2017 automaticky nabídne získat a nainstalovat komponenty potřebné pro daného uživatele jako součást instalace příslušného rozšíření.
   * Uživatelům zobrazí upozornění také při pokusu o instalaci rozšíření, které nebylo vytvořené pomocí nového formátu VSIX v3, i když bylo označeno ve svém manifestu jako cílení na verzi 15.0.
-* Vylepšené funkce pro formát VSIX. Dodržujeme [nízkým dopadem instalace](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install) sady Visual Studio, která podporuje také nainstaluje vedle sebe, už většina konfigurační data uložit do registru systému jsme přesunuli Visual Studio konkrétní sestavení z mezipaměti GAC. Také jsme zvýšili funkce formát VSIX a instalace modulu VSIX, abyste mohli používat ho místo MSI nebo EXE instalace rozšíření pro některé typy instalace.
+* Vylepšené funkce pro formát VSIX. Dodržujeme [nízkým dopadem instalace](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) sady Visual Studio, která podporuje také nainstaluje vedle sebe, už většina konfigurační data uložit do registru systému jsme přesunuli Visual Studio konkrétní sestavení z mezipaměti GAC. Také jsme zvýšili funkce formát VSIX a instalace modulu VSIX, abyste mohli používat ho místo MSI nebo EXE instalace rozšíření pro některé typy instalace.
 
   Mezi nové schopnosti patří:
 

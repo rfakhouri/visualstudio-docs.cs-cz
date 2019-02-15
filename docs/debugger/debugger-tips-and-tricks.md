@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016528"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318417"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Další tipy pro vyšší produktivitu a triky pro ladicí program v sadě Visual Studio
 
@@ -77,9 +77,9 @@ Lze snadno zobrazit proměnné pomocí ladicího programu systému windows, stej
 3. Vyhledejte proměnnou v **místní hodnoty** okno (**ladění > Windows > místní hodnoty**), klikněte pravým tlačítkem na proměnnou a vyberte **Ujistěte se, ID objektu**.
 
     ![Vytvoření ID objektu](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Měli byste vidět **$** plus číslo v **místní hodnoty** okna. Tato proměnná je ID objektu.
-  
+
 5.  Klikněte pravým tlačítkem na ID proměnné objektu a zvolte **Přidat kukátko**.
 
 Další informace najdete v tématu [vytvořit ID objektu](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ Pokud musíte ladit druhy problémů, které jsou společné pro vícevláknové
 #### <a name="to-show-threads-in-your-source-code"></a>Chcete-li zobrazit vlákna ve zdrojovém kódu
 
 1.  Při ladění, klikněte na tlačítko **zobrazit vlákna ve zdroji** tlačítko ![zobrazit vlákna ve zdroji](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") v **ladění** nástrojů.
-  
+
 2.  Podívejte se na ovládací prvek na levé straně okna. Na tomto řádku se zobrazí *značky vlákna* ikonu ![značky vlákna](../debugger/media/dbg-thread-marker.png "ThreadMarker") , který se podobá dvěma vlákny látky. Značky vlákna označuje, že je vlákno zastavené v tomto umístění.
 
     Všimněte si, že značky vlákna mohou být částečně zakryty podle zarážku.
-  
+
 3.  Ukazatel myši značky vlákna. Zobrazí se DataTip. DataTip zjistíte číslo ID názvu a vlákna pro každé vlákno zastavené.
 
     Můžete také zobrazit umístění vlákna [okna paralelní zásobníky](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ Chcete-li zjistit, jak ladicí program klasifikuje kód jako uživatelský kód,
 
 Další tipy a triky a podrobné informace najdete v těchto příspěvcích blogu:
 
-- [7 menší známé hackatony pro ladění v sadě Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 skryté gems v sadě Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 menší známé hackatony pro ladění v sadě Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 skryté gems v sadě Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Viz také
 [Klávesové zkratky](../ide/tips-and-tricks-for-visual-studio.md)

@@ -12,66 +12,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7da5e8f656dd7120aedb1b6e593e495f15d4e1a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4039a8ca3b6759480ff1df7b2a9f648ae4ad01e9
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944472"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316155"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-Získá čekající zarážka svázaný.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetPendingBreakpoint(   
-   IDebugPendingBreakpoint2** ppPendingBP  
-);  
-```  
-  
-```cpp  
-int GetPendingBreakpoint(   
-   out IDebugPendingBreakpoint2 ppPendingBP  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppPendingBP`  
- [out] Vrátí [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objekt, který reprezentuje čekající zarážka vázání.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak pro tuto metodu implementovat **CBreakpointSetDebugEventBase** objekt, který zveřejňuje [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) rozhraní.  
-  
-```cpp  
-STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(  
-    IDebugPendingBreakpoint2 **ppPendingBP)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if ( ppPendingBP )  
-    {  
-        if ( m_pPendingBP )  
-        {  
-            *ppPendingBP = m_pPendingBP;  
-  
-            m_pPendingBP->AddRef();  
-  
-            hRes = S_OK;  
-        }  
-        else  
-            hRes = E_FAIL;  
-    }  
-    else  
-        hRes = E_INVALIDARG;  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+Získá čekající zarážka svázaný.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetPendingBreakpoint(
+    IDebugPendingBreakpoint2** ppPendingBP
+);
+```
+
+```cpp
+int GetPendingBreakpoint(
+    out IDebugPendingBreakpoint2 ppPendingBP
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`ppPendingBP`  
+[out] Vrátí [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objekt, který reprezentuje čekající zarážka vázání.
+
+## <a name="return-value"></a>Návratová hodnota
+Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="example"></a>Příklad
+Následující příklad ukazuje, jak pro tuto metodu implementovat **CBreakpointSetDebugEventBase** objekt, který zveřejňuje [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) rozhraní.
+
+```cpp
+STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(
+    IDebugPendingBreakpoint2 **ppPendingBP)
+{
+    HRESULT hRes = E_FAIL;
+
+    if ( ppPendingBP )
+    {
+        if ( m_pPendingBP )
+        {
+            *ppPendingBP = m_pPendingBP;
+
+            m_pPendingBP->AddRef();
+
+            hRes = S_OK;
+        }
+        else
+            hRes = E_FAIL;
+    }
+    else
+        hRes = E_INVALIDARG;
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>Viz také
+[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)  
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
