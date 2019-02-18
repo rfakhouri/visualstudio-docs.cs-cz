@@ -1,7 +1,7 @@
 ---
-title: Vytváření aplikací v obousměrných jazycích
+title: Podpora pro aplikace pro arabština a hebrejština
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
 - bi-directional language support, about bi-directional language support
@@ -12,81 +12,85 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d628dee8a28b96bcb2db176799aab9ec25c33d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946415"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335230"
 ---
-# <a name="creating-applications-in-bi-directional-languages"></a>Vytváření aplikací v obousměrných jazycích
+# <a name="create-applications-in-bi-directional-languages"></a>Vytváření aplikací v obousměrných jazycích
 
 Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazycích napsané-doleva, včetně arabština a hebrejština. Pro některé funkce stačí nastavit vlastnosti. V ostatních případech je nutné implementovat v kódu funkce.
 
 > [!NOTE]
 > Pokud chcete zadat a zobrazit obousměrných jazycích, musíte pracovat s verzí Windows, který je nakonfigurován příslušný jazyk. To může být buď anglickou verzi systému Windows s odpovídající jazyková sada nainstalovaná nebo správně lokalizovanou verzi Windows.
 
-## <a name="types-of-application-that-support-bi-directional-languages"></a>Typy aplikací, které podporují obousměrných jazycích
+## <a name="types-of-applications-that-support-bi-directional-languages"></a>Typy aplikací, které podporují obousměrných jazycích
 
--  Aplikace Windows. Můžete vytvořit plně obousměrnou aplikace, které zahrnují podporu pro obousměrný text zprava doleva pořadí čtení a zrcadlení (reverzní rozložení windows, nabídek, dialogová okna a tak dále). S výjimkou zrcadlení, tyto funkce jsou dostupné ve výchozím nastavení nebo nastavení vlastností. Zrcadlení se podporuje ze své podstaty pro některé funkce, jako jsou okna se zprávou. Ale v ostatních případech je nutné implementovat zrcadlení v kódu. Další informace najdete v tématu [obousměrná podpora pro aplikace Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+-  Aplikace Windows
 
--  Webové aplikace. Webové služby, podpora a přijímají odesílání UTF-8 a Unicode textu, díky kterým jsou vhodné pro aplikace zahrnující obousměrných jazycích. Webové klientské aplikace využívají prohlížeče pro uživatelské rozhraní, tedy závisí na tom, jak dobře webového prohlížeče podporuje tyto funkce obousměrné stupeň obousměrná podpora ve webové aplikaci. V sadě Visual Studio můžete vytvářet aplikace s podporou arabský nebo hebrejský text, pořadí čtení zprava doleva, kódování souborů a nastavení místní jazykové verze. Další informace najdete v tématu [obousměrná podpora pro webové aplikace ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Můžete vytvořit plně obousměrnou aplikace, které zahrnují podporu pro obousměrný text zprava doleva pořadí čtení a zrcadlení (reverzní rozložení windows, nabídek, dialogová okna a tak dále). S výjimkou zrcadlení, tyto funkce jsou dostupné ve výchozím nastavení nebo nastavení vlastností. Zrcadlení se podporuje ze své podstaty pro některé funkce, jako jsou okna se zprávou. Ale v ostatních případech je nutné implementovat zrcadlení v kódu. Další informace najdete v tématu [obousměrná podpora pro aplikace Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
--  Konzolová aplikace. Konzolové aplikace nezahrnují text podpora obousměrných jazycích. Toto je v důsledku toho, jak funguje Windows pomocí konzolové aplikace.
+-  Webové aplikace
 
-## <a name="visual-studio-features-that-are-fully-supported"></a>Funkce sady Visual Studio, které jsou plně podporovány.
- V době návrhu v sadě Visual Studio můžete použít obousměrných jazycích následujícími způsoby:
+   Webové služby podporují odesílání a přijímání UTF-8 a text v kódu Unicode, díky kterým jsou vhodné pro aplikace, které se týkají obousměrných jazycích. Webové klientské aplikace využívají prohlížeče pro uživatelské rozhraní, tedy závisí na tom, jak dobře webového prohlížeče podporuje tyto funkce obousměrné stupeň obousměrná podpora ve webové aplikaci. V sadě Visual Studio můžete vytvářet aplikace s podporou arabský nebo hebrejský text, pořadí čtení zprava doleva, kódování souborů a nastavení místní jazykové verze. Další informace najdete v tématu [obousměrná podpora pro webové aplikace ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
--   **Zadání textu** sady Visual Studio podporuje kódování Unicode, takže když systém je nastaven na odpovídající národní prostředí a jazyk, můžete zadat text ve arabské nebo hebrejské. (Arabské podpora zahrnuje kašidy a diakritických znamének.)
+Aplikace konzoly nezahrnují text podpora obousměrných jazycích. Toto je v důsledku toho, jak funguje Windows pomocí konzolové aplikace.
 
--   **Názvy objektů** obousměrných jazycích můžete přiřadit názvy řešení, projekty, soubory, složky a tak dále. V kódu můžete použít obousměrných jazycích pro názvy proměnných, tříd, objektů, atributy, metadata a další prvky.
+## <a name="fully-supported-features"></a>Plně podporované funkce
 
--   **Kódování souboru** můžete ukládání a otevírání souborů s konkrétní jazyk nebo kódování Unicode. Další informace najdete v tématu [jak: Ukládání a otevírání souborů s kódováním](../ide/how-to-save-and-open-files-with-encoding.md).
+V době návrhu v sadě Visual Studio můžete použít obousměrných jazycích následujícími způsoby:
 
-## <a name="features-with-limited-or-no-support"></a>Funkce s omezením nebo bez podpory
- Další funkce, které jsou společné pro obousměrných jazyků aplikací nejsou plně podporovány v sadě Visual Studio nebo v některých případech se vůbec ne. Zde jsou některé z nich:
+- **Zadání textu**
 
-**Doleva pořadí čtení** ve výchozím nastavení, ovládací prvky zadání textu můžete použít v sadě Visual Studio používat pořadí čtení zleva doprava. Ve většině případů můžete použít standardní Windows gesta přepnout pořadí čtení. Například můžete stisknout **Ctrl + RightShift** přepnout **vlastnosti** okna pro podporu hodnoty vlastností pořadí čtení zprava doleva.
+   Visual Studio podporuje kódování Unicode, takže když systém je nastaven na odpovídající národní prostředí a jazyk, můžete zadat text ve arabské nebo hebrejské. (Arabské podpora zahrnuje kašidy a diakritických znamének.)
 
-Pořadí čtení zprava doleva není ale podporované všude v sadě Visual Studio. Výjimky patří:
+- **Názvy objektů**
 
--   Zaškrtávací políčka, rozevírací seznamy a další ovládací prvky v dialogových oknech sady Visual Studio použijte vždy pořadí čtení zleva doprava.
+   Obousměrné jazyky můžete přiřadit názvy řešení, projekty, soubory, složky a tak dále. V kódu můžete použít obousměrných jazycích pro názvy proměnných, tříd, objektů, atributy, metadata a další prvky.
 
--   Editor kódu (a textový editor) nepodporuje pořadí čtení zprava doleva. Můžete zadat text v obousměrných jazyků, ale je vždy o pořadí čtení zleva doprava.
+- **Kódování souboru**
 
-## <a name="naming-things-using-arabic-or-hebrew-text"></a>Pojmenování věci pomocí arabský nebo hebrejský text
- Arabský nebo hebrejský text můžete přiřadit názvy složek, proměnné nebo jiné objekty. Při práci s arabština, můžete použít libovolný Arabské znaků včetně kašidy a diakritických znamének.
+   Můžete uložit a otevírání souborů se konkrétní jazyk nebo kódování Unicode. Další informace najdete v tématu [jak: Ukládání a otevírání souborů s kódováním](../ide/how-to-save-and-open-files-with-encoding.md).
 
- Tyto prvky můžete být pojmenované pomocí arabské nebo hebrejské a se zpracuje správně v sadě Visual Studio:
+## <a name="features-with-limited-support"></a>Funkce s omezenou podporou
 
--   Řešení, projektů a názvy souborů, včetně některou ze složek, které jsou v cestě projektu. **Průzkumník řešení** správně zobrazí řešení a názvy elementů.
+### <a name="right-to-left-reading-order"></a>Pořadí čtení zprava doleva
 
--   Obsah souboru. Můžete otevřít nebo uložit soubory s kódováním Unicode nebo s vybranou znakovou stránkou.
+Ve výchozím nastavení použijte ovládací prvky textového vstupu v sadě Visual Studio pořadí čtení zleva doprava. Ve většině případů můžete použít standardní Windows gesta přepnout pořadí čtení. Například můžete stisknout **Ctrl**+**RightShift** přepnout **vlastnosti** okna pro podporu hodnoty vlastností pořadí čtení zprava doleva. Pořadí čtení zprava doleva se však nepodporuje všude v sadě Visual Studio:
+
+- Zaškrtávací políčka, rozevírací seznamy a další ovládací prvky v dialogových oknech sady Visual Studio použijte vždy pořadí čtení zleva doprava.
+
+- Editor kódu (a textový editor) nepodporuje pořadí čtení zprava doleva. Můžete zadat text v obousměrných jazyků, ale je vždy o pořadí čtení zleva doprava.
+
+## <a name="arabic-or-hebrew-object-names"></a>Arabský nebo hebrejský názvy objektů
+
+Arabský nebo hebrejský text můžete přiřadit názvy složek, proměnné nebo jiné objekty. Při práci s arabština, můžete použít libovolný Arabské znaků včetně kašidy a diakritických znamének.
+
+Tyto prvky můžete být pojmenované pomocí arabské nebo hebrejské a jsou správně zpracovány v sadě Visual Studio:
+
+- Řešení, projektů a názvy souborů, včetně některou ze složek, které jsou v cestě projektu. **Průzkumník řešení** správně zobrazuje řešení a názvy elementů.
+
+- Obsah souboru. Můžete otevřít nebo uložit soubory s kódováním Unicode nebo s vybranou znakovou stránkou.
 
     > [!NOTE]
-    >  Editor kódu je zvláštní případ. Podrobnosti najdete níže.
+    > Editor kódu nepodporuje pořadí čtení zprava doleva.
 
--   Datové prvky. **Průzkumník serveru** správně zobrazí tyto prvky a bylo možné upravovat.
+- Datové prvky. **Průzkumník serveru** správně zobrazuje tyto prvky a umožňuje upravovat.
 
--   Prvky zkopírováno do schránky Windows.
+- Prvky zkopírováno do schránky Windows.
 
--   Atributy a metadata.
+- Atributy a metadata.
 
--   Hodnoty vlastností. Arabský nebo hebrejský text v můžete použít **vlastnosti** okna. V okně umožňuje přepínat mezi pořadí čtení zprava doleva a doprava a doleva pomocí standardních klávesových úhozů Windows (**Ctrl + RightShift** pro right to left, a **Ctrl + LeftShift** pro zleva doprava).
+- Hodnoty vlastností. Arabský nebo hebrejský text v můžete použít **vlastnosti** okna. V okně umožňuje přepínat mezi pořadí čtení zprava doleva a doprava a doleva pomocí standardních klávesových úhozů Windows (**Ctrl**+**RightShift** zprava doleva a **Ctrl**+**LeftShift** pro zleva doprava).
 
--   Kód a text literálu. V editoru kódu (což je také textového editoru) vám pomůže arabské nebo hebrejské název třídy, funkce, proměnné, vlastnosti, řetězcové literály, atributy a tak dále. Editor ale nepodporuje pořadí čtení zprava doleva. text vždy začíná na levém okraji.
+- Kód a text literálu. V editoru kódu vám pomůže arabské nebo hebrejské název třídy, funkce, proměnné, vlastnosti, řetězcové literály, atributy a tak dále. Editor ale nepodporuje pořadí čtení zprava doleva. text vždy začíná na levém okraji.
 
     > [!TIP]
-    > Doporučujeme, umístěte řetězcové literály do souborů prostředků místo pevného kódování je do vašich aplikací. Další informace najdete v tématu [prostředky v aplikacích klasické pracovní plochy (.NET Framework)](/dotnet/framework/resources/index).
+    > Byste měli umístit řetězcové literály do souborů prostředků místo pevného kódování je do vašich aplikací. Další informace najdete v tématu [prostředky v aplikacích klasické pracovní plochy (.NET Framework)](/dotnet/framework/resources/index).
 
     > [!NOTE]
-    > Musíte být konzistentní vzhledem k aplikacím v jak odkazovat na objekty s názvem v těchto jazycích. Pokud používáte kašidy názvů Arabské proměnné, musíte vždycky použít kašida k odkazování na tuto proměnnou nebo způsobí chyby.
+    > Musíte být konzistentní vzhledem k aplikacím v jak odkazovat na objekty s názvem v arabština a hebrejština. Například pokud používáte kašidy názvů Arabské proměnné, musíte vždycky použít kašida k odkazování na, že bude výsledek proměnné nebo chyby.
 
--   Komentáře ke kódu. Vytvoření komentářů v arabské nebo hebrejské. Můžete také těchto jazyků v nástroji Tvůrce komentář.
-
-## <a name="see-also"></a>Viz také:
-
-- [Obousměrná podpora pro aplikace Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
-- [Obousměrná podpora pro webové aplikace ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
-- [Globalizace aplikací](../ide/globalizing-applications.md)
-- [Lokalizace aplikací](../ide/localizing-applications.md)
+- Komentáře ke kódu. Vytvoření komentářů v arabské nebo hebrejské. Můžete také těchto jazyků v nástroji Tvůrce komentář.

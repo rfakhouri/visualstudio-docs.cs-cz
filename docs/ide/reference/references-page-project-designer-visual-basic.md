@@ -9,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afd144248ed01210c888ee516a19bf93a156b86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970748"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335127"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Stránka Odkazy, návrhář projektu (Visual Basic)
 
@@ -32,12 +31,6 @@ Pro přístup k **odkazy** zvolte uzel projektu (ne **řešení** uzlu) v **Prů
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 
 Tyto možnosti umožňují vybrat nebo odebrání odkazů a importovaných oborů názvů ve vašem projektu.
-
-**Nepoužité odkazy**
-
-Kliknutím na toto tlačítko přístup **nepoužité odkazy** dialogové okno.
-
-**Nepoužité odkazy** dialogové okno umožňuje odebrat odkazy, které jsou zahrnuté ve vašem projektu, ale nejsou ve skutečnosti používá v kódu. Obsahuje tabulku, ve které jsou uvedeny **referenční název**, **cesta**a další informace o odkazech na obor názvů nepoužívané ve vašem projektu. V mřížce, vyberte odkazy na obor názvů, které chcete odebrat z projektu a klikněte na tlačítko **odebrat**.
 
 **Cesty odkazů**
 

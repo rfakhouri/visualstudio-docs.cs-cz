@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e71b8675aad05f45d13be5a86e8729266a3a017
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954095"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335217"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura balíčku VSPackage (balíček VSPackage správy zdrojového kódu)
 
-Zdrojový ovládací prvek balíčku SDK poskytuje pokyny pro vytvoření VSPackage, která umožňují implementátora ovládacího prvku zdroj integrovat funkce správy zdrojového kódu své prostředí sady Visual Studio. VSPackage je komponenta modelu COM, který je obvykle načtena na vyžádání pomocí integrovaného vývojového prostředí (IDE) sady Visual Studio na základě služeb, které mají být inzerovány balíček v jeho položky registru. Každý VSPackage musí implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage obvykle využívá služeb, které Visual Studio IDE a proffers některých služeb.
+Zdrojový ovládací prvek balíčku SDK poskytuje pokyny pro vytvoření VSPackage, která umožňují implementátora ovládacího prvku zdroj integrovat funkce správy zdrojového kódu své prostředí sady Visual Studio. VSPackage je komponenta modelu COM, který je obvykle načtena na vyžádání pomocí integrovaného vývojového prostředí (IDE) sady Visual Studio na základě služeb, které mají být inzerovány balíček v jeho položky registru. Musí implementovat všechny VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage obvykle využívá služeb, které Visual Studio IDE a proffers některých služeb.
 
 VSPackage deklaruje jeho položky nabídky a vytvoří výchozí položku Stav prostřednictvím souboru .vsct. Integrovaném vývojovém prostředí sady Visual Studio zobrazí položky nabídky v tomto stavu, dokud nebude vložen sady VSPackage. Následně sady VSPackage provádění <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda je volána k povolení nebo zakázání položky nabídky.
 

@@ -1,26 +1,26 @@
 ---
-title: JavaScript
-description: Informace o podpoře pro jazyk Javascript v sadě Visual Studio pro Mac
+title: JavaScript a TypeScript
+description: Informace o podpoře pro jazyk JavaScript v sadě Visual Studio pro Mac
 author: conceptdev
 ms.author: crdun
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: a2f8e73ecd4ca1010dd25fe4031e73aa13727605
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ed84e5478ae7a15905a5555a318bd656c664710e
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294913"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335204"
 ---
-# <a name="javascript-support"></a>Podpora jazyka JavaScript
+# <a name="javascript-and-typescript-support"></a>Podpora jazyka JavaScript a TypeScript
 
-Visual Studio pro Mac poskytuje podporu pro Javascript a Typescript prostřednictvím zvýrazňování syntaxe, formátování kódu a technologii IntelliSense.
+Visual Studio pro Mac poskytuje podporu pro JavaScript a TypeScript prostřednictvím zvýrazňování syntaxe, formátování kódu a technologii IntelliSense.
 
 ![Podpora editoru typescript](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
 
-Další informace o psaní jazyka JavaScript naleznete v části [psaní kódu jazyka Javascript](/scripting/javascript/writing-javascript-code) vodítka.
+Další informace o psaní jazyka JavaScript naleznete v části [psaní kódu jazyka JavaScript](/scripting/javascript/writing-javascript-code) vodítka.
 
 ## <a name="adding-a-javascript-file"></a>Přidání souboru jazyka JavaScript
 
@@ -28,19 +28,19 @@ Soubory jazyka JavaScript jsou nejčastěji přidat do projektů ASP.NET Core pr
 
 ![přidávají se nové soubory do projektu](media/javascript-image1.png)
 
-V dialogovém okně Nový soubor, vyberte **Web > soubor JS sady prázdné** nebo **Web > soubor Typescript**. Pojmenujte ho a klikněte na tlačítko **nový**:
+Z **nový soubor** dialogového okna, vyberte **Web > soubor JS sady prázdné** nebo **Web > soubor TypeScript**. Pojmenujte ho a klikněte na tlačítko **nový**:
 
 ![Vytvoření nového souboru typescript z této šablony](media/javascript-image2.png)
 
-## <a name="intellisense"></a>technologie IntelliSense
+## <a name="intellisense"></a>IntelliSense
 
-Visual Studio pro Mac používá [jazyková služba JavaScriptu](/visualstudio/ide/javascript-intellisense) na poskytovat technologii Intellisense, díky kterým inteligentní doplňování kódu, informace o parametrech a seznamech členů při psaní kódu.
+Visual Studio pro Mac používá [jazyková služba JavaScriptu](/visualstudio/ide/javascript-intellisense) na poskytovat technologii IntelliSense, díky kterým inteligentní doplňování kódu, informace o parametrech a seznamech členů při psaní kódu.
 
-Technologie intellisense jazyka JavaScript v sadě Visual Studio pro Mac může být založen na odvození typu proměnné, JSDoc nebo Typescript deklarace.
+Technologie intellisense jazyka JavaScript v sadě Visual Studio pro Mac může být založen na odvození typu proměnné, JSDoc nebo TypeScript deklarace.
 
 - **Odvození typu** – typ objektu je zajištěno pomocí okolního kontext kódu. Další informace najdete v části Visual Studio na [IntelliSense podle odvození typu](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference).
-- **JSDoc** – existují situace, kdy odvození typu neposkytuje informace o správném typu. V těchto případech lze explicitně zadat informace o typu [JSDoc](http://usejsdoc.org/about-getting-started.html) poznámky. Další informace najdete v části Visual Studio na [Intellisense podle JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
-- **Soubory TypeScript deklarace** – `.d.ts` soubory se používají k poskytnutí hodnot pro technologie Intellisense jazyka Javascript. Typy deklarované v tomto souboru mohou být použity jako typy v komentářích JSDoc. Další informace najdete v části Visual Studio na [na soubory TypeScript deklarací na základě technologie IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
+- **JSDoc** – existují situace, kdy odvození typu neposkytuje informace o správném typu. V těchto případech lze explicitně zadat informace o typu [JSDoc](http://usejsdoc.org/about-getting-started.html) poznámky. Další informace najdete v části Visual Studio na [IntelliSense podle JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
+- **Soubory TypeScript deklarace** – `.d.ts` soubory se používají k poskytnutí hodnot pro technologie IntelliSense jazyka JavaScript. Typy deklarované v tomto souboru mohou být použity jako typy v komentářích JSDoc. Další informace najdete v části Visual Studio na [na soubory TypeScript deklarací na základě technologie IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
 
     ![přidává se soubor definice typescript](media/javascript-image3.png)
 

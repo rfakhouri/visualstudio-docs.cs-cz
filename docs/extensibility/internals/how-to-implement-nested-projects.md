@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037834"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335243"
 ---
 # <a name="how-to-implement-nested-projects"></a>Postupy: Implementace vnořených projektů
 
@@ -65,7 +65,7 @@ Při vytváření typu vnořený projekt existuje několik dalších kroků, kte
      Protože nadřazené a podřízené projekty jsou vytvořena prostřednictvím kódu programu, můžete nastavit vlastnosti pro vnořené projekty v tomto okamžiku.
 
     > [!NOTE]
-    > Pouze dostáváte kontextové informace z vnořený projekt, ale můžete také požádat, pokud nadřazený projekt má jakýkoli kontext pro danou položku tak, že zkontrolujete <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Tímto způsobem můžete přidat velmi Dynamická nápověda atributy a možnosti nabídky, které jsou specifické pro jednotlivé vnořené projekty.
+    > Pouze dostáváte kontextové informace z vnořený projekt, ale můžete také požádat, pokud nadřazený projekt má jakýkoli kontext pro danou položku tak, že zkontrolujete [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). Tímto způsobem můžete přidat velmi Dynamická nápověda atributy a možnosti nabídky, které jsou specifické pro jednotlivé vnořené projekty.
 
 10. V hierarchii je sestaven pro zobrazení v **Průzkumníku řešení** voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metody.
 

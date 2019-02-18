@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 817e6f31d9282caf77c9f403c7e5555075726d2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943796"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335477"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro ladění snímků v sadě Visual Studio
 
@@ -53,7 +53,19 @@ Proveďte tyto kroky:
 Proveďte tyto kroky:
 
 - Ujistěte se, že je nainstalovaná komponenta Snapshot Debugger. Otevřete instalační program sady Visual Studio a zkontrolujte **Snapshot Debugger** komponenta v úloze Azure.
+::: moniker range="< vs-2019"
 - Zajistěte, aby že vaše aplikace je podporovaná. V současné době pouze technologie ASP.NET (4.6.1+) a podporují aplikace ASP.NET Core (2.0 +) nasazené do služby Azure App Services.
+::: moniker-end
+::: moniker range=">= vs-2019"
+- Ujistěte se, že se vaše aplikace podporuje:
+  - Azure App Services - aplikací ASP.NET běžících na rozhraní .NET Framework 4.6.1 nebo novější.
+  - Azure App Service – aplikace ASP.NET Core na .NET Core 2.0 nebo novější na Windows.
+  - Azure Virtual Machines (a VMSS) - aplikací ASP.NET běžících na rozhraní .NET Framework 4.6.1 nebo novější.
+  - Azure Virtual Machines (a VMSS) – aplikace ASP.NET Core na .NET Core 2.0 nebo novější na Windows.
+  - Služby Azure Kubernetes – aplikace ASP.NET Core spuštěné v .NET Core 2.2 nebo vyšší na Debian 9.
+  - Služby Azure Kubernetes – aplikace ASP.NET Core spuštěné v .NET Core 2.2 nebo vyšší na Alpine 3.8.
+  - Služby Azure Kubernetes – aplikace ASP.NET Core spuštěné v .NET Core 2.2 nebo vyšší na Ubuntu 18.04.
+::: moniker-end
 
 ## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problém: Zobrazuje pouze omezená snímky v okně diagnostické nástroje
 
@@ -66,7 +78,7 @@ Proveďte tyto kroky:
 ## <a name="known-issues"></a>Známé problémy
 
 - Ladění snímků s více klienty sady Visual Studio na stejné služby App Service se momentálně nepodporuje.
-- Optimalizace Roslyn IL nejsou plně podporovány v projektech ASP.NET Core. Pro některé projekty ASP.NET Core nebudete moci zobrazit některé proměnné nebo použití proměnných podmíněné příkazy. 
+- Optimalizace Roslyn IL nejsou plně podporovány v projektech ASP.NET Core. Pro některé projekty ASP.NET Core nebudete moci zobrazit některé proměnné nebo použití proměnných podmíněné příkazy.
 - Speciální proměnné, jako například *$FUNCTION* nebo *$CALLER*, nelze vyhodnotit v podmíněné příkazy nebo protokolovací body pro projekty ASP.NET Core.
 - Ladění snímků nefunguje v App Service, které mají [místní ukládání do mezipaměti](/azure/app-service/app-service-local-cache) zapnuté.
 - Snímek ladění aplikace API se momentálně nepodporuje.
@@ -86,4 +98,6 @@ Ladění snímků a Application Insights závisí na ICorProfiler, který načte
 
 [Ladění v sadě Visual Studio](../debugger/index.md)  
 [Ladění živé aplikace v ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md)  
+[Ladění za provozu technologie ASP.NET Azure virtuální Machines\Virtual počítače Škálovací sady pomocí ladicího programu snímků](../debugger/debug-live-azure-virtual-machines.md)  
+[Ladění za provozu technologie ASP.NET Kubernetes se službou Azure pomocí ladicího programu snímků](../debugger/debug-live-azure-kubernetes.md)  
 [Nejčastější dotazy k ladění snímků](../debugger/debug-live-azure-apps-faq.md)  

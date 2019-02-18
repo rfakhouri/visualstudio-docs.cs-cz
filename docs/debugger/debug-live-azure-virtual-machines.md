@@ -1,25 +1,26 @@
 ---
-title: Ladění živé aplikace Azure technologie ASP.NET
+title: Ladění za provozu technologie ASP.NET Azure virtual machines a škálovací sady virtuálních počítačů Azure
 description: Zjistěte, jak nastavit snímkovací body a zobrazit snímky se Snapshot Debugger.
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/06/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335594"
+ms.locfileid: "56335932"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění živé aplikace ASP.NET Azure pomocí ladicího programu snímků
+# <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Ladit živé aplikace ASP.NET na virtuálních počítačích Azure a škálovací sady virtuálních počítačů Azure pomocí ladicího programu snímků
 
 Snapshot Debugger pořídí snímek vaší aplikace do produkčního prostředí, když spustí kód, který vás zajímá. Dáte pokyn, aby ladicí program k vytvoření snímku, můžete nastavit snímkovací a protokolovací body ve vašem kódu. Ladicí program umožňuje zobrazit přesně toho, co nefunguje, aniž by to ovlivnilo provozu aplikace v produkčním prostředí. Snapshot Debugger můžete výrazně zkrátit čas potřebný k vyřešení problémů, ke kterým dochází v produkčním prostředí.
 
@@ -34,13 +35,11 @@ V tomto kurzu se naučíte:
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Snapshot Debugger je dostupná jenom pro Visual Studio Enterprise 2017 verze 15.5 nebo novější s **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
+* Snapshot Debugger pro Azure Virtual Machines (VM) a Azure virtuálního počítače Škálovací sady (VMSS) je pouze dostupná ve verzi preview sady Visual Studio. 2019 Enterprise nebo vyšší s **funkcí vývoj pro Azure**. (V části **jednotlivé komponenty** kartu, najdete ho pod **ladění a testování** > **Snapshot debugger**.)
 
-    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) nebo novější. Při aktualizaci z předchozí instalace sady Visual Studio 2017, spusťte instalační program sady Visual Studio a vrátit se změnami komponenty ladicího programu snímků **úlohy pro vývoj pro ASP.NET a web**.
+    Pokud ještě není nainstalovaný, nainstalujte [ve verzi preview sady Visual Studio Enterprise. 2019](https://visualstudio.microsoft.com/vs/preview/).
 
-* Plán služby App Service Basic nebo vyšší.
-
-* Shromažďování snímků je k dispozici pro následující web apps ve službě Azure App Service:
+* Shromažďování snímků je k dispozici pro následující webové aplikace Azure VM/VMSS:
   * Aplikace ASP.NET spuštěné na rozhraní .NET Framework 4.6.1 nebo novější.
   * Aplikace ASP.NET Core na .NET Core 2.0 nebo novější na Windows.
 
@@ -49,44 +48,37 @@ V tomto kurzu se naučíte:
 1. Otevřete projekt, který chcete snímek ladění.
 
     > [!IMPORTANT]
-    > K ladění snímků, budete muset otevřít *stejnou verzi zdrojového kódu* , který je publikován do služby Azure App Service.
-::: moniker range="< vs-2019"
+    > K ladění snímků, budete muset otevřít *stejnou verzi zdrojového kódu* , který je publikován do služby Azure VM/VMSS.
 
-2. V Průzkumníku cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na projekt je nasazen na službě Azure App Service a vyberte **připojit Snapshot Debugger**.
+1. Připojte Snapshot Debugger. Můžete použít jeden z několika různými způsoby:
 
-   ![Spuštění ladicího programu snímků](../debugger/media/snapshot-launch.png)
-
-    Při prvním vyberete **připojit Snapshot Debugger**, budete vyzváni k instalaci rozšíření webu pro Snapshot Debugger ve službě Azure App Service. Tato instalace vyžaduje restartování služby Azure App Service.
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. Připojte Snapshot Debugger. Můžete použít jeden z několika různými způsoby:
-
-    * Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte váš projekt je nasazen na službě Azure App Service a účet úložiště Azure a pak klikněte na tlačítko **připojit**.
+    * Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
   
       ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Klikněte pravým tlačítkem myši na projekt a vyberte **publikovat**a pak na stránce klikněte na publikovat **připojit Snapshot Debugger**. Vyberte váš projekt je nasazen na službě Azure App Service a účet úložiště Azure a pak klikněte na tlačítko **připojit**.
+    * Klikněte pravým tlačítkem myši na projekt a vyberte **publikovat**a pak na stránce klikněte na publikovat **připojit Snapshot Debugger**. Vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
     ![Spuštění ladicího programu snímků ze stránky publikovat](../debugger/media/snapshot-publish-attach.png)
 
-    * V ladění cíl rozevírací nabídky vyberte možnost **Snapshot Debugger**, přístupů **F5** a v případě potřeby vyberte váš projekt je nasazen na službě Azure App Service a službu Azure storage account a pak klikněte na tlačítko  **Připojit**.
+    * V ladění cíl rozevírací nabídky vyberte možnost **Snapshot Debugger**, přístupů **F5** a v případě potřeby vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a služby Azure storage account a pak klikněte na  **Připojit**.
     ![Spuštění ladicího programu snímků z rozevírací nabídky F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * Pomocí Průzkumníka cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na projekt je nasazen na službě Azure App Service a vyberte účet úložiště Azure a pak klikněte na tlačítko **připojit Snapshot Debugger**.
+    * Pomocí Průzkumníka cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na Azure VM/VMSS webové aplikace je nasazená do a vyberte účet úložiště Azure a pak klikněte na tlačítko **připojit Snapshot Debugger**.
   
       ![Spuštění ladicího programu snímků z Průzkumníka cloudu](../debugger/media/snapshot-launch.png)
 
-    Při prvním vyberete **připojit Snapshot Debugger**, budete vyzváni k instalaci rozšíření webu pro Snapshot Debugger ve službě Azure App Service. Tato instalace vyžaduje restartování služby Azure App Service.
-::: moniker-end
+    > [!IMPORTANT]
+    > Při prvním vyberete **připojit Snapshot Debugger** pro váš virtuální počítač automaticky restartuje služba IIS.
+    > Při prvním vyberete **připojit Snapshot Debugger** VMSS, vyžadují ruční upgrade každé instance VMSS.
 
-   Visual Studio je nyní v režimu ladění snímků.
+    Metadata pro **moduly** nebudou zpočátku aktivovat, přejděte do webové aplikace a **spustit shromažďování** tlačítko je aktivní. Visual Studio je nyní v režimu ladění snímků.
 
-  > [!NOTE]
-  > Rozšíření webu Application Insights podporuje také ladění snímků. Pokud narazíte na chybovou zprávu "aktuální rozšíření webu", přečtěte si téma [řešení potíží, tipy a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
+    > [!NOTE]
+    > Rozšíření webu Application Insights podporuje také ladění snímků. Pokud narazíte na chybovou zprávu "aktuální rozšíření webu", přečtěte si téma [řešení potíží, tipy a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
+    > Pro VMSS je potřeba ručně upgradovat instance v jejich VMSS po prvním spuštění Snapshot Debugger připojit uživatele.
 
    ![Režim ladění snímků](../debugger/media/snapshot-message.png)
 
-   **Moduly** okno zobrazuje, když jste načetli všech modulů pro službu Azure App Service (zvolte **ladit > Windows > moduly** otevřete toto okno).
+   **Moduly** okno zobrazuje, když všechny moduly jste načetli pro Azure VM/VMSS (zvolte **ladit > Windows > moduly** otevřete toto okno).
 
    ![Zkontrolujte okno modulů](../debugger/media/snapshot-modules.png)
 
@@ -96,7 +88,7 @@ V tomto kurzu se naučíte:
 
    ![Nastavte snímkovacího bodu](../debugger/media/snapshot-set-snappoint.png)
 
-2. Klikněte na tlačítko **spustit shromažďování** zapnout snímkovacího bodu.
+1. Klikněte na tlačítko **spustit shromažďování** zapnout snímkovacího bodu.
 
    ![Zapnout snímkovací bod](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +155,7 @@ Kromě pořízení snímku při dosažení snímkovacího bodu, můžete také n
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto kurzu jste zjistili, jak používat Snapshot debuggeru pro aplikaci služby. Můžete chtít přečtěte si další podrobnosti o této funkci.
+V tomto kurzu jste zjistili, jak použít ladicí program snímků pro Azure Virtual Machines a Azure Virtual Machine Scale Sets. Můžete chtít přečtěte si další podrobnosti o této funkci.
 
 > [!div class="nextstepaction"]
 > [Nejčastější dotazy k ladění snímků](../debugger/debug-live-azure-apps-faq.md)

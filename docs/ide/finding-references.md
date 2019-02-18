@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 777e8519077cebc162b1bad575a6ffcf976c4db4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908878"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335269"
 ---
 # <a name="find-references-in-your-code"></a>Hledání odkazů v kódu
 
@@ -46,6 +46,11 @@ Přejděte na odkazy v můžete použít následující metody **odkazy** okno:
 Ve výchozím nastavení odkazy jsou seskupené podle projektu, pak podle definice. Toto seskupení pořadí však můžete změnit změnou nastavení v **Seskupit podle:** rozevíracího seznamu na panelu nástrojů. Například můžete změnit z výchozí nastavení **projekt a pak definice** k **definice a pak projekt**, i na další nastavení.
 
 **Definice** a **projektu** se používají dvě výchozí skupiny, ale ostatní lze přidat kliknutím **seskupení** příkaz v nabídce klepněte pravým tlačítkem nebo kontextu vybranou položku. Přidání další seskupení může být užitečné, pokud má vaše řešení velké množství souborů a cesty.
+
+## <a name="filter-by-reference-type-in-net"></a>Filtrovat podle typu odkazu v .NET
+V C# nebo Visual Basic má okno Najít odkazy typu sloupce, kde uvádí typ odkazu nalezena. Filtrovat podle typu odkazu, kliknutím na ikonu filtru, který se zobrazí, když najede myší na záhlaví sloupce lze tento sloupec. Čtení, zápisu, odkazem a NameOnly se dá filtrovat odkazy.
+
+![Najít odkazy na okno typ sloupce ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>Viz také:
 

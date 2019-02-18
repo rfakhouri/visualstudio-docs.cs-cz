@@ -11,25 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60efbb25b0b5b52e1392ce84c16710a78dde7b16
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ee4bcddd7c23f5178984c2c76b059209a965956
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919275"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335334"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Automatizace pro objekty konfigurace a SelectedItem
-Můžete automatizovat sestavení a procesy pro vybranou položku v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="automation-for-builds"></a>Automatizace pro sestavení  
- Sestavení nebo konfigurace má modelu automatizace, který je k dispozici při implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>. Další informace najdete v tématu [pochopení konfigurace sestavení](../../ide/understanding-build-configurations.md).  
-  
- Pokud vytvoříte VSPackage a chcete mít pod kontrolou možnosti konfigurace, musíte použít model automatizace.  
-  
-## <a name="automation-for-selecteditem"></a>Automatizace pro SelectedItem  
- Není nutné poskytnout implementaci pro `SelectedItem` objektu, protože Visual Studio obsahuje standardní implementace. Ale můžete implementovat `SelectedItem` objektu, pokud dáváte přednost. Musí implementovat objekt, který obsahuje `SelectedItem` rozhraní a vrátí odpověď na volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metodu s `VSITEMID` nastavena na <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>.  
-  
-## <a name="see-also"></a>Viz také:  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
- [Přispívání do modelu automatizace](../../extensibility/internals/contributing-to-the-automation-model.md)   
- [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md)
+
+Můžete automatizovat sestavení a procesy pro vybranou položku v sadě Visual Studio.
+
+## <a name="automation-for-builds"></a>Automatizace pro sestavení
+
+Sestavení nebo konfigurace má modelu automatizace, který je k dispozici při implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>. Další informace najdete v tématu [pochopení konfigurace sestavení](../../ide/understanding-build-configurations.md).
+
+Pokud vytvoříte VSPackage a chcete mít pod kontrolou možnosti konfigurace, musíte použít model automatizace.
+
+## <a name="automation-for-selecteditem"></a>Automatizace pro SelectedItem
+
+Není nutné poskytnout implementaci pro `SelectedItem` objektu, protože Visual Studio obsahuje standardní implementace. Ale můžete implementovat `SelectedItem` objektu, pokud dáváte přednost. Musí implementovat objekt, který obsahuje `SelectedItem` rozhraní a vrátí odpověď na volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metodu s `VSITEMID` nastavena na [__VSHPROPID. VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>).
+
+## <a name="see-also"></a>Viz také:
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>
+- [Přispívání do modelu automatizace](../../extensibility/internals/contributing-to-the-automation-model.md)
+- [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md)

@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058660"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335568"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2019 Preview
 
@@ -35,7 +35,7 @@ Podpora pro některé typy projektů také mění v průběhu času. Novější 
 
 Tento článek obsahuje podrobnosti pro typy projektů, které lze migrovat Visual Studio 2019 Preview. Obsahuje také podrobnosti o typech projektů, které jsou zastaralé v sadě Visual Studio. 2019 Preview, nebo se brzy přestanou používat. Tento článek nezahrnuje typy projektů, které již nejsou podporovány v aplikaci Visual Studio 2019 a proto není možné migrovat. Tento článek také nezahrnuje podporované typy projektů, které mají žádné problémy s migrací; Tento seznam se nachází na [cílení platformy nebo Kompatibilita](/visualstudio/releases/2019/compatibility).
 
-> [!Important]
+> [!IMPORTANT]
 > Některé typy projektů vyžadují instalaci konkrétní úlohy prostřednictvím instalačního programu sady Visual Studio. Pokud nemáte nainstalovaná úloha, sada Visual Studio hlásí typ projektu neznámé nebo nekompatibilní. V takovém případě zkontrolujte vaše možnosti instalace a zkuste to znovu. Zobrazit [cílení platformy nebo Kompatibilita](/visualstudio/releases/2019/compatibility) , kde najdete podrobnosti o podpoře project v sadě Visual Studio Preview 2019.
 
 ## <a name="project-types"></a>Typy projektů
@@ -70,10 +70,10 @@ Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najde
 | SharePoint 2016 | SharePoint Add-In projekty vytvořené v Office Developer Tools ve verzi Preview 2 nelze otevřít v sadě Visual Studio Preview 2019. Pokud chcete toto omezení obejít, aktualizujte `MinimumVisualStudioVersion` k 12.0 a `MinimumOfficeToolsVersion` k 12.2 v souboru csproj vbproj. |
 | Silverlight | Projekty technologie Silverlight v sadě Visual Studio. 2019 Preview nepodporuje. Chcete-li udržovat aplikace Silverlight, používejte nadále Visual Studio 2015. |
 | SQL – Redgate | V instalačním programu sady Visual Studio už dodanými SQL změnu automatizace Core (dříve označované jako ReadyRoll Core), SQL Prompt Core a SQL Search od společnosti Redgate.<br/><br/>Můžete pokračovat v používání sady Visual Studio 2017 pro tyto funkce. V sadě Visual Studio. 2019 Preview můžete upgradovat na placené automatizace změnu SQL a SQL Prompt produkty, které jsou k dispozici v Toolbelt od společnosti Redgate SQL.|
-| SQL Server Reporting Services a SQL Server Analysis Services (SSRS, rozšíření SSDT, SSAS, účty spravované služby) | Pro tyto typy projektů je poskytována prostřednictvím podpory dvě rozšíření v Galerii Visual Studio: [projekty modelování služby Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) a [Microsoft Reporting Services projekty](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Podpora rozšíření SSDT je také součástí úloze ukládání a zpracování v sadě Visual Studio Preview 2019. |
+| SQL Server Reporting Services a SQL Server Analysis Services (SSRS, rozšíření SSDT, SSAS, účty spravované služby) | Podpora pro tyto typy projektů je poskytována prostřednictvím dvě rozšíření v Galerii Visual Studio:  [Microsoft Analysis Services projekty modelování](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) a [služby Microsoft Reporting Services projekty](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Podpora rozšíření SSDT je také součástí úloze ukládání a zpracování v sadě Visual Studio Preview 2019. |
 | SQL Server Integration Services (SSIS) | Podpora pro Visual Studio. 2019 Preview je k dispozici prostřednictvím SQL Server Data Tools (SSDT). Další informace najdete v tématu [blog služby SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
 | Visual C++ | Visual Studio. 2019 Preview můžete použít pro práci v projektech, které byly vytvořeny v dřívějších verzích sady Visual Studio zpět do sady Visual Studio 2010. Při prvním otevření projektu, máte možnost upgradu na nejnovější kompilátoru a nástrojů, nebo pokračovat v používání původního. Pokud budete chtít používat i nadále původního, Visual Studio 2019 Preview neprovede žádné změny souboru projektu a svůj projekt sestavit pomocí sady nástrojů z dřívější instalace sady Visual Studio. Zachovat původní možnosti prostředky můžete i nadále otevřít projekt v původní verzi sady Visual Studio v případě potřeby. Další informace najdete v tématu [pomocí nativního cílení na více platforem v sadě Visual Studio sestavení starých projektů](/cpp/porting/use-native-multi-targeting). |
-| Rozšiřitelnost sady Visual Studio/souboru VSIX | Projekty s MinimumVersion 14.0 nebo méně aktualizují deklarovat MinimumVersion 15.0, což zabrání projektu se otevře v dřívějších verzích sady Visual Studio. Povolit projekt otevřít ve starších verzích, nastavte na MinimumVersion `$(VisualStudioVersion)`. Viz také [postupy: migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
+| Rozšiřitelnost sady Visual Studio/souboru VSIX | Projekty s MinimumVersion 14.0 nebo méně aktualizují deklarovat MinimumVersion 15.0, což zabrání projektu se otevře v dřívějších verzích sady Visual Studio. Povolit projekt otevřít ve starších verzích, nastavte na MinimumVersion `$(VisualStudioVersion)`. Viz také [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Můžete použít nástroje Microsoft Test Manager nebo Visual Studio 2010 SP1 a novější k otevření prostředí, které jsou vytvořeny v některé z těchto verzí. Ale pro Visual Studio 2010 SP1 verze nástroje Microsoft Test Manager musí odpovídat verzi serveru Team Foundation Server než budete moct vytvořit prostředí. |
 | Visual Studio Tools pro Apache Cordova | V sadě Visual Studio. 2019 Preview se odebrala podpora pro Apache Cordova. Protože neexistuje žádný ekvivalent v sadě Visual Studio. 2019 Preview, neexistuje žádná cesta Automatická migrace pro tyto projekty.<br/><br/>Můžete použít nástroje Cordova pro Visual Studio Code příponou (které poskytuje podporu pro nejnovější verzi Cordova) nebo pokračovat v používání sady Visual Studio 2017. |
 | Nasazení webu (wdproj) | Podpora pro nasazení webu byla odebrána projekty v sadě Visual Studio 2012 a uveďte podpora profilů publikování. Protože neexistuje žádný ekvivalent v sadě Visual Studio. 2019 Preview, neexistuje žádná cesta Automatická migrace pro tyto projekty. Místo toho v textovém editoru otevřete soubor wdproj a jakékoli vlastní nastavení do pubxml kopírování a vkládání (profil publikování) souboru, jak je popsáno na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Viz také [plány týkající se webu a webové projekty nasazení](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |

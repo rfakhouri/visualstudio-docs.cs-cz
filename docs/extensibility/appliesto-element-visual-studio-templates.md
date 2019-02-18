@@ -9,94 +9,102 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8616d2cf922f1522f44470bc76ed3b80e3ef9ceb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008891"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335191"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo – element (šablony sady Visual Studio)
-Určuje volitelný výraz, který musí odpovídat jedné nebo více možnostem (viz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Možnosti jsou vystavené typy projektů hierarchie jako vlastnost <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. Tímto způsobem může šablony sdílet více typů projektů, které mají společné příslušné schopnosti.  
-  
- Tento element je volitelný. Soubor šablony může obsahovat maximálně jednu jeho instanci. Tento element pouze umožňuje určit, kterou šablonu položky lze případně použít, na základě schopností aktuálně vybraného aktivního projektu. Neumožňuje určit, že šablonu položky nelze použít. Pokud `AppliesTo` chybí nebo výraz nevyjadřovat výslovný úspěšně, potom `TemplateID` nebo `TemplateGroupID` umožňuje zajistit, že šablona použitelný, jako v předchozích verzích produktu.  
-  
- Zavedena v aplikaci Visual Studio 2013 Update 2. Tak, aby odkazovaly na správné verzi, najdete v článku [odkazování na sestavení doručit v aktualizaci 2 pro Visual Studio 2013 SDK](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
-  
- \<Vstemplate – >  
- \<TemplateData>  
- \<AppliesTo – >  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-<AppliesTo>Capability1</AppliesTo>   
-```  
-  
-## <a name="attributes-and-elements"></a>Atributy a elementy  
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
-  
-### <a name="attributes"></a>Atributy  
- Žádné  
-  
-### <a name="child-elements"></a>Podřízené prvky  
- Žádné  
-  
-### <a name="parent-elements"></a>Nadřazené prvky  
-  
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Určuje kategorii šablony.|  
-  
-## <a name="text-value"></a>Textová hodnota  
- Je vyžadována textová hodnota. Tento text určuje schopnosti projektu.  
-  
- Platná syntaxe výrazu je definována takto:  
-  
--   Výraz schopnosti, například "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
-  
--   "&#124;" Je operátor OR.  
-  
--   "&" A "+" znaky jsou oba operátory.  
-  
--   Znak "!" je operátor NOT.  
-  
--   Závorky určují pořadí vyhodnocování.  
-  
--   Hodnota null nebo prázdný výraz jsou vyhodnoceny jako shoda.  
-  
--   Schopnosti projektu mohou používat libovolné znaky kromě těchto vyhrazených znaků: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje tři různé šablony. `Template1` vztahuje na všechny typy projektů jazyka C# nebo jakýkoli jiný typ projektu, který podporuje `WindowsAppContainer` funkce. `Template2` platí pro všechny projekty jazyka C# jakéhokoli druhu. `Template3` platí pro projekty jazyka C#, které nejsou `WindowsAppContainer` projekty.  
-  
-```xml  
-<!--  Template 1 -->  
-<?xml version="1.0" encoding="utf-8"?>  
-<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <AppliesTo>CSharp | WindowsAppContainer</AppliesTo>   
-    </TemplateData>  
-</VSTemplate>  
-  
-<!--  Template 2 -->  
-<?xml version="1.0" encoding="utf-8"?>  
-<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <AppliesTo>CSharp</AppliesTo>   
-    </TemplateData>  
-</VSTemplate>  
-  
-<!--  Template 1 -->  
-<?xml version="1.0" encoding="utf-8"?>  
-<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <AppliesTo>CSharp_Class + (!WindowsAppContainer)</AppliesTo>   
-    </TemplateData>  
-</VSTemplate>  
-  
-```  
-  
-## <a name="see-also"></a>Viz také:  
- [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)   
- [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
+
+Určuje volitelný výraz, který odpovídá jedné nebo více možnostem (viz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Možnosti jsou vystavené typy projektů hierarchie jako vlastnost [__VSHPROPID5. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). Tímto způsobem může šablony sdílet více typů projektů, které mají společné příslušné schopnosti.
+
+Tento element je volitelný. Soubor šablony může obsahovat maximálně jednu jeho instanci. Tento element pouze umožňuje určit, kterou šablonu položky lze případně použít, na základě schopností aktuálně vybraného aktivního projektu. Neumožňuje určit, že šablonu položky nelze použít. Pokud `AppliesTo` chybí nebo výraz nevyjadřovat výslovný úspěšně, potom `TemplateID` nebo `TemplateGroupID` umožňuje zajistit, že šablona použitelný, jako v předchozích verzích produktu.
+
+Zavedena v aplikaci Visual Studio 2013 Update 2. Tak, aby odkazovaly na správné verzi, najdete v článku [odkazování na sestavení doručit v aktualizaci 2 pro Visual Studio 2013 SDK](/previous-versions/dn632168(v=vs.120)).
+
+```xml
+<VSTemplate>
+   <TemplateData>
+      <AppliesTo>
+```
+
+## <a name="syntax"></a>Syntaxe
+
+```xml
+<AppliesTo>Capability1</AppliesTo>
+```
+
+## <a name="attributes-and-elements"></a>Atributy a elementy
+
+Následující části popisují atributy, podřízené prvky a nadřazené prvky.
+
+### <a name="attributes"></a>Atributy
+
+Žádné
+
+### <a name="child-elements"></a>Podřízené prvky
+
+Žádné
+
+### <a name="parent-elements"></a>Nadřazené prvky
+
+|Prvek|Popis|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Určuje kategorii šablony.|
+
+## <a name="text-value"></a>Textová hodnota
+
+Je vyžadována textová hodnota. Tento text určuje schopnosti projektu.
+
+Platná syntaxe výrazu je definována takto:
+
+-   Výraz schopnosti, například "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+
+-   "&#124;" Je operátor OR.
+
+-   "&" A "+" znaky jsou oba operátory.
+
+-   Znak "!" je operátor NOT.
+
+-   Závorky určují pořadí vyhodnocování.
+
+-   Hodnota null nebo prázdný výraz jsou vyhodnoceny jako shoda.
+
+-   Schopnosti projektu mohou používat libovolné znaky kromě těchto vyhrazených znaků: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+
+## <a name="example"></a>Příklad
+
+Následující příklad ukazuje tři různé šablony. `Template1` vztahuje na všechny typy projektů jazyka C# nebo jakýkoli jiný typ projektu, který podporuje `WindowsAppContainer` funkce. `Template2` platí pro všechny projekty jazyka C# jakéhokoli druhu. `Template3` platí pro projekty jazyka C#, které nejsou `WindowsAppContainer` projekty.
+
+```xml
+<!--  Template 1 -->
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <AppliesTo>CSharp | WindowsAppContainer</AppliesTo>
+    </TemplateData>
+</VSTemplate>
+
+<!--  Template 2 -->
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <AppliesTo>CSharp</AppliesTo>
+    </TemplateData>
+</VSTemplate>
+
+<!--  Template 1 -->
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <AppliesTo>CSharp_Class + (!WindowsAppContainer)</AppliesTo>
+    </TemplateData>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Viz také:
+
+- [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)
+- [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)

@@ -1,7 +1,7 @@
 ---
-title: Globalizace a lokalizace aplikací
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: Nástroje pro lokalizaci
+ms.date: 02/15/2019
+ms.topic: reference
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -15,30 +15,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b8628f61c5fa2bc6eebadad23d5c9133f6fe4c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f90590c0273b886fe3f9a8e1c406ddf9aa7f11c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907345"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335256"
 ---
-# <a name="globalizing-and-localizing-applications"></a>Globalizace a lokalizace aplikací
+# <a name="develop-globalized-and-localized-apps"></a>Vývoj globalizovaných a lokalizovaných aplikací
 
-Pokud plánujete distribuce vaší aplikace pro mezinárodní cílovou skupinu, bude nutné zachovat pár věcí v úvahu během fáze návrhu a vývoje. I v případě, že nemáte k dispozici tyto plány, ještě před zahájením malé úsilí můžete usnadnili značně by měla vaše plány změnit v budoucích verzí aplikace. Součástí služby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usnadňují vývoj jednu aplikaci, která se přizpůsobí různá národní prostředí spravovaný vývoj pomocí sady Visual Studio.
+Visual Studio usnadňuje vývoj pro mezinárodní snadno cílovou skupinu s využitím služeb do vytvořených [rozhraní .NET Framework](/dotnet/standard/globalization-localization/).
 
-## <a name="resources"></a>Prostředky
+Například projektový systém pro aplikace Windows Forms může generovat soubory prostředků pro použití náhradní lokality jazykové verze uživatelského rozhraní a každé další jazykové verze uživatelského rozhraní. Při sestavování projektu v sadě Visual Studio se soubory prostředků jsou kompilovány z formátu XML pro Visual Studio (.resx) do zprostředkující binární formát (.resources), které pak jsou vloženy do satelitních sestavení. Další informace najdete v tématu [soubory prostředků v sadě Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) a [vytvořit satelitní sestavení pro aplikace klasické pracovní plochy](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
- Visual Studio byla navržena od samého začátku k usnadnění vývoje s využitím služeb do vytvořených pro mezinárodní snadno cílovou skupinu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Tyto články vám pomůže vám představíme funkce internacionalizace integrované do sady Visual Studio.
-
- [Představení mezinárodních aplikací založené na rozhraní .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) seznámíte se základními pojmy týkající se vývoje softwaru pro mezinárodní trh pomocí sady Visual Studio a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-
- [Lokalizace aplikací](../ide/localizing-applications.md) obsahuje odkazy na stránky o přizpůsobení aplikace pro danou jazykovou verzi.
-
- [Globalizace aplikací](../ide/globalizing-applications.md) obsahuje odkazy na stránky o vytváření aplikací, které podporují více jazykových verzích.
+Informace o vytváření aplikací pro obousměrné jazyky v sadě Visual Studio najdete v tématu [vytvářet aplikace pro arabština a hebrejština](creating-applications-in-bi-directional-languages.md).
 
 ## <a name="see-also"></a>Viz také:
 
-- [Osvědčené postupy pro vývoj globalizovaných aplikací](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) poskytuje základní informace o programování pro mezinárodní cílovou skupinu.
-- [Přehled knihovny tříd](/dotnet/standard/class-library-overview) zavádí tříd, rozhraní a typů hodnot, které urychlují a optimalizovat proces vývoje a poskytují přístup k funkčnosti systému.
-- <xref:System.Globalization> Body třídy v tomto oboru názvů, které definují informace týkající se jazykové verze, včetně jazyka, země nebo oblast, kalendáře v použití, pořadí vzory formátu data, měny a čísla a řazení řetězců.
-- <xref:System.Resources> Body třídy a rozhraní v tomto oboru názvů, který umožňuje vývojářům vytvářet, ukládat a spravovat různé prostředky specifické pro jazykovou verzi používané v aplikaci.
+- [Globalizace a lokalizace aplikací .NET](/dotnet/standard/globalization-localization/)
+- [Prostředky v aplikacích .NET](/dotnet/framework/resources/)

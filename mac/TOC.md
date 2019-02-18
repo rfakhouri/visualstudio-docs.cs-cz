@@ -56,11 +56,10 @@
 ## [Publikování do Azure App Service](publish-app-svc.md)
 ## [Publikování do složky](publish-folder.md)
 
-
 # [Úlohy](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [JavaScript](javascript.md)
+### [JavaScript a TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Úvod do Azure Functions](azure-functions.md)
 ### [Kurz: Azure Functions](azure-functions-lab.md)

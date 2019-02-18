@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18471a94720a7e625cc183685a83c9f5388c64bb
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6630f277ef24a6e84e8dc8d6b0fbfa58d720626f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270612"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335516"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Ladit jenom uživatelský kód pomocí funkce pouze můj kód
 
@@ -81,7 +81,7 @@ Pokud první příležitosti výjimky jsou povolené pro výjimku, řádku volá
 
 ## <a name="BKMK_C___Just_My_Code"></a> Pouze můj kód C++
   
-Spouští se v sadě Visual Studio 2017 verze 15.8 pouze můj kód pro kód krokování je také podporována. Tato funkce vyžaduje také použití [/JMC (pouze můj kód ladění)](/cpp/build/reference/jmc) přepínač kompilátoru. Přepínač je standardně povolená. Pro **zásobník volání** okno a volání zásobníku podpory v pouze můj kód, přepínač /JMC se nevyžaduje.
+Spouští se v sadě Visual Studio 2017 verze 15.8 pouze můj kód pro kód krokování je také podporována. Tato funkce vyžaduje také použití [/JMC (pouze můj kód ladění)](/cpp/build/reference/jmc) přepínač kompilátoru. Přepínač je povolené ve výchozím nastavení v projektech C++. Pro **zásobník volání** okno a volání zásobníku podpory v pouze můj kód, přepínač /JMC se nevyžaduje.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Klasifikovat jako uživatelského kódu, musí být načten soubor PDB pro binární soubor, který obsahuje uživatelský kód pomocí ladicího programu (použít **moduly** okno zaškrtnutím tohoto políčka).
 

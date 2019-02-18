@@ -7,22 +7,24 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905193110d8485399b01c1e3c00791154efee637
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824285"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335347"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: Použít pravidlo na základě kontextu uživatelského rozhraní pro rozšíření sady Visual Studio
+
 Visual Studio umožňuje načítání rozšíření VSPackages při některých dobře známé <xref:Microsoft.VisualStudio.Shell.UIContext>s aktivují. Kontexty uživatelského rozhraní nejsou jemné grained, což ponechá autoři rozšíření žádná volba ale vybrat k dispozici kontextu uživatelského rozhraní, který se aktivuje před bodem VSPackage načíst opravdu chtěli. Seznam dobře známé uživatelské rozhraní kontextech najdete v tématu <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
- Načítají se balíčky může mít dopad na výkon a jejich načtení dřív, než je potřeba není nejlepším postupem. Visual Studio 2015 představil nový koncept kontexty uživatelského rozhraní založeného na pravidlech, mechanismus, který umožňuje autorům rozšíření určit přesné podmínky, za kterých se aktivuje kontextu uživatelského rozhraní a jsou načteny přidružené balíčky VSPackages.  
+Načítají se balíčky může mít dopad na výkon a jejich načtení dřív, než je potřeba není nejlepším postupem. Visual Studio 2015 představil nový koncept kontexty uživatelského rozhraní založeného na pravidlech, mechanismus, který umožňuje autorům rozšíření určit přesné podmínky, za kterých se aktivuje kontextu uživatelského rozhraní a jsou načteny přidružené balíčky VSPackages.  
   
 ## <a name="rule-based-ui-context"></a>Kontext založený na pravidlech uživatelského rozhraní  
- "Pravidlo" se skládá z nového kontextu uživatelského rozhraní (GUID) a logický výraz, který odkazuje na jeden nebo více "Terms" kombinovat pomocí logické "a", "nebo", "not" operace. "Terms" jsou vyhodnoceny dynamicky za běhu a výraz je již znovu pokaždé, když některý z jeho podmínek změny. Pokud je výraz vyhodnocen jako true, je aktivováno souvisejícího kontextu uživatelského rozhraní. V opačném případě je deaktivován kontextu uživatelského rozhraní.  
+
+"Pravidlo" se skládá z nového kontextu uživatelského rozhraní (GUID) a logický výraz, který odkazuje na jeden nebo více "Terms" kombinovat pomocí logické "a", "nebo", "not" operace. "Terms" jsou vyhodnoceny dynamicky za běhu a výraz je již znovu pokaždé, když některý z jeho podmínek změny. Pokud je výraz vyhodnocen jako true, je aktivováno souvisejícího kontextu uživatelského rozhraní. V opačném případě je deaktivován kontextu uživatelského rozhraní.  
   
- Podle pravidel kontextu uživatelského rozhraní lze použít různými způsoby:  
+Podle pravidel kontextu uživatelského rozhraní lze použít různými způsoby:  
   
 1. Zadejte omezení viditelnost příkazů a oken nástrojů. Příkazy a nástroje pro windows můžete skrýt, až do splnění pravidla kontextu uživatelského rozhraní.  
   
@@ -124,7 +126,8 @@ Visual Studio umožňuje načítání rozšíření VSPackages při některých 
 ```  
   
 ## <a name="term-types"></a>Typy termín  
- Tady jsou různé typy podmínek, které jsou podporovány:  
+
+Tady jsou různé typy podmínek, které jsou podporovány:  
   
 |Termín|Popis|  
 |-|-|  
@@ -138,16 +141,15 @@ Visual Studio umožňuje načítání rozšíření VSPackages při některých 
 |SolutionHasProjectCapability:\<výrazu >|Podobně jako výše, ale termín je true, pokud řešení obsahuje načtený projekt, který odpovídá výrazu.|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Výraz bude mít hodnotu true, vždy, když řešení obsahuje projekt, který je flavored (souhrn) a má flavor odpovídající danému projektu typu GUID.|
 
-
-  
 ## <a name="compatibility-with-cross-version-extension"></a>Kompatibilita s verzí rozšíření  
- Podle pravidel kontexty uživatelského rozhraní je nová funkce v sadě Visual Studio 2015 a nebude přenést do starší verze. Portování není na starší verze vytvoří problém s rozšíření/balíčky, které cílí více verzí sady Visual Studio. Tyto verze by mohl být automaticky načíst v sadě Visual Studio 2013 a starší, ale může přinést založený na pravidlech uživatelského rozhraní kontexty zabránit automatické načítání v aplikaci Visual Studio 2015.  
+
+Podle pravidel kontexty uživatelského rozhraní je nová funkce v sadě Visual Studio 2015 a nebude přenést do starší verze. Portování není na starší verze vytvoří problém s rozšíření/balíčky, které cílí více verzí sady Visual Studio. Tyto verze by mohl být automaticky načíst v sadě Visual Studio 2013 a starší, ale může přinést založený na pravidlech uživatelského rozhraní kontexty zabránit automatické načítání v aplikaci Visual Studio 2015.  
   
- Za účelem podpory těchto balíčků teď AutoLoadPackages položky v registru můžete zadat příznak v poli hodnota označující, že má být položka vynecháno v sadě Visual Studio 2015 a vyšší. To můžete udělat tak, že přidáte příznaky možnost <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Teď můžete přidávat rozšíření VSPackages **SkipWhenUIContextRulesActive** umožňuje jejich <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atribut označuje položku v sadě Visual Studio 2015 a novější ignorovat.  
-  
+Za účelem podpory těchto balíčků teď AutoLoadPackages položky v registru můžete zadat příznak v poli hodnota označující, že má být položka vynecháno v sadě Visual Studio 2015 a vyšší. To můžete udělat tak, že přidáte příznaky možnost <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Teď můžete přidávat rozšíření VSPackages **SkipWhenUIContextRulesActive** umožňuje jejich <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atribut označuje položku v sadě Visual Studio 2015 a novější ignorovat.  
 ## <a name="extensible-ui-context-rules"></a>Rozšiřitelné pravidla kontextu uživatelského rozhraní  
- V některých případech balíčky nelze použít statická pravidla kontextu uživatelského rozhraní. Například předpokládejme, že máte balíček podporuje rozšiřitelnost tak, aby stav příkaz je založen na editoru typy podporovaných poskytovateli importované MEF. Pokud je rozšíření podporuje aktuální typ upravit, je příkaz povolen. V takových případech samotném balíčku nelze statické kontextu uživatelského rozhraní pravidlo použít, protože podmínky změní v závislosti na tom, jaké MEF rozšíření jsou k dispozici.  
+
+V některých případech balíčky nelze použít statická pravidla kontextu uživatelského rozhraní. Například předpokládejme, že máte balíček podporuje rozšiřitelnost tak, aby stav příkaz je založen na editoru typy podporovaných poskytovateli importované MEF. Pokud je rozšíření podporuje aktuální typ upravit, je příkaz povolen. V takových případech samotném balíčku nelze statické kontextu uživatelského rozhraní pravidlo použít, protože podmínky změní v závislosti na tom, jaké MEF rozšíření jsou k dispozici.  
   
- Za účelem podpory těchto balíčků, založený na pravidlech kontexty uživatelského rozhraní podporují výraz pevně zakódované "*", který označuje všechny níže uvedené podmínky se jde připojit k nebo. To umožňuje hlavní balíček a definovat známé uživatelské rozhraní kontext založený na pravidlech a provázat postupy stavu příkazu k tomuto kontextu. Později můžete přidat jakékoli MEF rozšíření určená pro hlavní balíček její podmínky pro editorů, které podporuje bez dopadu na ostatní podmínky nebo hlavní výraz.  
+Za účelem podpory těchto balíčků, založený na pravidlech kontexty uživatelského rozhraní podporují výraz pevně zakódované "*", který označuje všechny níže uvedené podmínky se jde připojit k nebo. To umožňuje hlavní balíček a definovat známé uživatelské rozhraní kontext založený na pravidlech a provázat postupy stavu příkazu k tomuto kontextu. Později můžete přidat jakékoli MEF rozšíření určená pro hlavní balíček její podmínky pro editorů, které podporuje bez dopadu na ostatní podmínky nebo hlavní výraz.  
   
- Konstruktor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> dokumentaci ukazuje syntaxi pro extensible pravidla kontextu uživatelského rozhraní.
+Konstruktor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> dokumentaci ukazuje syntaxi pro extensible pravidla kontextu uživatelského rozhraní.

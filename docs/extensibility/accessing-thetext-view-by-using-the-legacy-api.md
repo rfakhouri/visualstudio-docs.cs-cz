@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979644"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335493"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Přístup k zobrazení textu pomocí starší verze rozhraní API
 Zobrazení textu je prezentace textu, který je uložen do vyrovnávací paměti textu. Text můžete zobrazit pomocí starší verze rozhraní API, jak je znázorněno v následující části.
@@ -23,7 +23,7 @@ Zobrazení textu je prezentace textu, který je uložen do vyrovnávací paměti
 ## <a name="text-view-object"></a>Objekt zobrazení textu
  Každé zobrazení souvisí s vlastním textovou vyrovnávací paměť a zobrazení je okno na data ve vyrovnávací paměti. Následující diagram znázorňuje rozhraní klíče použitého textového objektu zobrazení, která je reprezentována <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Visual Studio textové zobrazení objektu](../extensibility/media/vstextview.gif "vstextview –") objekt zobrazení textu
+ ![Visual Studio objekt zobrazení textu](../extensibility/media/vstextview.gif)
 
  Zobrazení je způsob prezentace text ve vyrovnávací paměti. Zahrnuje funkce, jako je zalamování řádků a přehledů tak, co se zobrazí v zobrazení není přesnou reprezentací text ve vyrovnávací paměti.
 

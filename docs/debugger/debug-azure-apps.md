@@ -10,18 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 72947a75cb782ad92444dd58658dbeebce55012a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6190f4e735b7b3f05efe80f8d8562ac03f1ee3c8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967570"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335027"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Ladění služeb Azure v sadě Visual Studio
 
 Visual Studio můžete použít k ladění služeb Azure v různých scénářích:
 
 - Chcete-li ladit produkční aplikace hostované ve službě Azure App Service, najdete v článku [ladění živých aplikací ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md).
+
+- Chcete-li ladit produkční aplikace hostované v Azure virtuální počítač nebo škálovací sady virtuálních počítačů Azure, najdete v článku [ladění za provozu technologie ASP.NET Azure virtual machines a virtuálních počítačů Azure škálovací sady pomocí ladicího programu snímků](../debugger/debug-live-azure-virtual-machines.md).
+
+- Chcete-li ladit produkční aplikace hostované ve službě Azure Kubernetes Service, najdete v článku [ladění za provozu služby Kubernetes v Azure ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-kubernetes.md).
 
 - Ladit produkční aplikace pomocí Application Insights a hostované ve službě Azure App Service nebo Service Fabric najdete v článku [ladicí snímky pro výjimky v aplikacích .NET](/azure/application-insights/app-insights-snapshot-debugger).
 

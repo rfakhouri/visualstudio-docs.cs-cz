@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768829"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335532"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2017
 
@@ -34,7 +35,7 @@ Podpora pro některé typy projektů také mění v průběhu času. Novější 
 
 Tento článek k dispozici obsahuje podrobnosti pouze pro typy projektů, které lze migrovat Visual Studio 2017. Tento článek nezahrnuje typy projektů, které již nejsou podporovány v sadě Visual Studio 2017 a proto není možné migrovat. Tento článek také nezahrnuje podporované typy projektů, které mají žádné problémy s migrací; Tento seznam se nachází na [cílení platformy nebo Kompatibilita](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Některé typy projektů vyžadují instalaci odpovídající úloh prostřednictvím instalačního programu sady Visual Studio. Pokud nemáte nainstalovaná úloha, sada Visual Studio hlásí typ projektu neznámé nebo nekompatibilní. V takovém případě zkontrolujte vaše možnosti instalace a zkuste to znovu. Znovu, se zobrazí [cílení platformy nebo Kompatibilita](/visualstudio/productinfo/vs2017-compatibility-vs) , kde najdete podrobnosti o podpoře project v sadě Visual Studio 2017.
 
 ## <a name="project-types"></a>Typy projektů
