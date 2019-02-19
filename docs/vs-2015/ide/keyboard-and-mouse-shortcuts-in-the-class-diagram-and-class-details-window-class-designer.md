@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775824"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Klávesové zkratky a zkratky myši v diagramu tříd a okně podrobností třídy (návrhář tříd)
@@ -101,7 +101,7 @@ Klávesnice kromě myši můžete použít k provádění akcí navigace v Návr
 |Key|Výsledek|  
 |, (čárka)|Pokud je kurzor na řádku parametru, zadáním čárku přesune kurzor do pole Název parametru Další. Pokud je kurzor na poslední řádek parametru metody, přesune kurzor \<přidat parametr > pole, které můžete použít k vytvoření nového parametru.<br /><br /> Pokud je kurzor jinde v okně podrobností třídy, zadáním čárku doslova přidá čárku v aktuálním poli.|  
 |; (středník)<br /><br /> or<br /><br /> ) (pravá závorka)|Přesuňte kurzor do pole název dalšího člena řádku v mřížce okno podrobností třídy.|  
-|Tabulátor|Přesune kurzor na další pole, první přesun klikněte shora dolů a zleva doprava. Pokud je kurzor přesouvá z pole, ve které jste zadali text, okno podrobností třídy zpracovává text a uloží jej případě nevytváří chybu.<br /><br /> Jestli je ukazatel na prázdné pole, jako \<přidat parametr >, přejde se na první pole na další řádek.|  
+|Karta|Přesune kurzor na další pole, první přesun klikněte shora dolů a zleva doprava. Pokud je kurzor přesouvá z pole, ve které jste zadali text, okno podrobností třídy zpracovává text a uloží jej případě nevytváří chybu.<br /><br /> Jestli je ukazatel na prázdné pole, jako \<přidat parametr >, přejde se na první pole na další řádek.|  
 |\<space>|Přesune kurzor na další pole, první přesun klikněte shora dolů a zleva doprava. Jestli je ukazatel na prázdné pole, jako \<přidat parametr >, přejde do prvního pole na další řádek. Všimněte si, že \<místo > zadali ihned poté, co je ignorován čárkou.<br /><br /> Pokud je kurzor v poli Summary, zadáním mezery přidá znak mezery.<br /><br /> Pokud je kurzor v skrýt sloupce daného řádku, zadáte mezeru přepne hodnotu zaškrtávací políčko Skrýt.|  
 |CTRL+Tab|Přepnout na další okno dokumentu. Například přepněte v okně podrobností třídy do souboru otevřete kód.|  
 |ESC (Escape)|Pokud jste začali můžete napsat text v poli, stiskněte klávesu ESC funguje jako klíč vrácení zpět, vrácení zpět pole obsah na původní hodnotu. Pokud okno podrobností třídy obecné fokus, ale žádné konkrétní buňky má fokus, stiskněte klávesu ESC přesune fokus z okna podrobností třídy.|  

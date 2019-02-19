@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794279"
 ---
 # <a name="task-writing"></a>Zápis úloh
@@ -26,7 +26,7 @@ ms.locfileid: "54794279"
   
 Úlohy poskytují kód, který se spustí během procesu sestavení. Úkoly jsou obsaženy v cíli. Je součástí knihovny typické úlohy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], a můžete také vytvořit vlastní úlohy. Další informace o knihovně úlohy, které jsou součástí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], naleznete v tématu [– referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md).  
   
-## <a name="tasks"></a>Úlohy  
+## <a name="tasks"></a>Úkoly  
  Příklady úloh [kopírování](../msbuild/copy-task.md), který kopíruje jeden nebo více souborů, [MakeDir](../msbuild/makedir-task.md), který vytvoří adresář, a [Csc](../msbuild/csc-task.md), který zkompiluje [!INCLUDE[csprcs](../includes/csprcs-md.md)] souborů zdrojového kódu. Každý úkol je implementován jako třída rozhraní .NET, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní, která je definována v sestavení Microsoft.Build.Framework.dll.  
   
  Existují dvě metody, které můžete použít při implementaci úkolu:  

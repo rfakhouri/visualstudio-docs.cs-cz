@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776095"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -84,7 +84,7 @@ VSPerfCmd [/U] [/options]
   
 |Možnost|Popis|  
 |------------|-----------------|  
-|**Admin:Security** \< **povolit&#124;ODEPŘÍT**> *vpravo*[ *vpravo*] \< *uživatele*  &#124; *Skupiny*>|Povoluje nebo zakazuje zadaného uživatele nebo skupiny přístup k profilovací služby.<br /><br /> `Right` může být:<br /><br /> CrossSession – umožní uživateli přístup ke službě pro různé relace profilování.<br /><br /> SampleProfiling – umožní uživateli přístup k ovladači povolit profilaci vzorkování. Také umožňuje přístup k informacím o přechodu jádra během profilace trasování.<br /><br /> FullAccess – umožňuje uživateli CrossSession a SampleProfiling přístup.|  
+|**Admin:Security** \< **povolit&#124;ODEPŘÍT**> *vpravo*[ *vpravo*] \< *uživatele * &#124; *Skupiny*>|Povoluje nebo zakazuje zadaného uživatele nebo skupiny přístup k profilovací služby.<br /><br /> `Right` může být:<br /><br /> CrossSession – umožní uživateli přístup ke službě pro různé relace profilování.<br /><br /> SampleProfiling – umožní uživateli přístup k ovladači povolit profilaci vzorkování. Také umožňuje přístup k informacím o přechodu jádra během profilace trasování.<br /><br /> FullAccess – umožňuje uživateli CrossSession a SampleProfiling přístup.|  
 |**Admin:Security, List**|Zobrazí aktuální stav služeb profilace a zobrazí seznam oprávnění uživatele.|  
 |**Správce:** \<*Služba*&#124;*ovladač*>\<**START**&#124;**Zastavit**&#124;**instalace** &#124; **Odinstalace**>|Spustí, zastaví, nainstaluje nebo odinstaluje komponentu služeb profilace (service) nebo ovladač zařízení režimu jádra (driver).|  
 |**Správce:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Povolí nebo zakáže automatické spuštění služby profilace (service) nebo ovladač zařízení režimu jádra (driver) po restartu.|  
