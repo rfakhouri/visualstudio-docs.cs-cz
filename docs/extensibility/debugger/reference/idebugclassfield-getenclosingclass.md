@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37dcb0eb23cf216b604d927309cd395252d59792
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ab5be03fc6421f03742878f2b72f568ec0915dc
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040863"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412913"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Získá třídu, která obklopuje této třídy.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetEnclosingClass(   
-   IDebugClassField** ppClassField  
-);  
-```  
-  
-```csharp  
-int GetEnclosingClass(  
-   out IDebugClassField ppClassField  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppClassField`  
- [out] Vrátí [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) třídy představující nadřazený objekt. Vrátí hodnotu null, pokud neexistuje žádné nadřazené třídy.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Pokud třída představovaného tímto rozhraním [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objektu je vnořená třída, pak bude `ppClassField` vrátí parametr `IDebugClassField` třídy představující nadřazený objekt. Například při této definici třídy:  
-  
-```  
-class RootClass {  
-   class NestedClass { }  
-};  
-```  
-  
- Volání `GetEnclosingClass` metodu `IDebugClassField` objekt představující `NestedClass` třídy vrátí `IDebugClassField` objekt představující třídu `RootClass`.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
+Získá třídu, která obklopuje této třídy.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetEnclosingClass(
+    IDebugClassField** ppClassField
+);
+```
+
+```csharp
+int GetEnclosingClass(
+    out IDebugClassField ppClassField
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`ppClassField`  
+[out] Vrátí [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) třídy představující nadřazený objekt. Vrátí hodnotu null, pokud neexistuje žádné nadřazené třídy.
+
+## <a name="return-value"></a>Návratová hodnota
+V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+Pokud třída představovaného tímto rozhraním [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objektu je vnořená třída, pak bude `ppClassField` vrátí parametr `IDebugClassField` třídy představující nadřazený objekt. Například při této definici třídy:
+
+```
+class RootClass {
+    class NestedClass { }
+};
+```
+
+Volání `GetEnclosingClass` metodu `IDebugClassField` objekt představující `NestedClass` třídy vrátí `IDebugClassField` objekt představující třídu `RootClass`.
+
+## <a name="see-also"></a>Viz také
+[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
