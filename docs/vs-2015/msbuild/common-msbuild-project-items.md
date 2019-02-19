@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796874"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
@@ -78,7 +78,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 |Název položky|Popis|  
 |---------------|-----------------|  
 |Název|Volitelný řetězec. Zobrazovaný název odkazu.|  
-|Projekt|Volitelný řetězec. Identifikátor GUID pro odkaz ve formuláři {12345678-1234-1234-1234-1234567891234}.|  
+|Project|Volitelný řetězec. Identifikátor GUID pro odkaz ve formuláři {12345678-1234-1234-1234-1234567891234}.|  
 |Balíček|Volitelný řetězec. Cesta souboru projektu, který se odkazuje.|  
   
 ### <a name="compile"></a>Kompilace  
