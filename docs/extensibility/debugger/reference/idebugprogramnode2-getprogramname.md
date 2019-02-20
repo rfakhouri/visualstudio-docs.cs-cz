@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e3c3f2b3ace78eae718a719b1b8b8f6aca721e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d6f678adc135e85f8808cef36d819733033447e4
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989767"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450370"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
-Získá název programu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetProgramName (   
-   BSTR* pbstrProgramName  
-);  
-```  
-  
-```csharp  
-int GetProgramName (   
-   out string pbstrProgramName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pbstrProgramName`  
- [out] Vrátí název programu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Název programu není totéž jako cesta k programu, i když název programu může být součástí tyto cesty.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak implementovat tuto metodu pro jednoduchý `CProgram` objekt, který implementuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní. `MakeBstr` Funkce přidělí kopii zadaného řetězce BSTR.  
-  
-```cpp  
-HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    
-   if (!pbstrProgramName)    
-      return E_INVALIDARG;    
-  
-   // Assign the member program name to the passed program name.    
-   *pbstrProgramName = MakeBstr(m_pszProgramName);    
-   return NOERROR;    
-}    
-```  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+Získá název programu.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetProgramName (
+    BSTR* pbstrProgramName
+);
+```
+
+```csharp
+int GetProgramName (
+    out string pbstrProgramName
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`pbstrProgramName`  
+[out] Vrátí název programu.
+
+## <a name="return-value"></a>Návratová hodnota
+Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+Název programu není totéž jako cesta k programu, i když název programu může být součástí tyto cesty.
+
+## <a name="example"></a>Příklad
+Následující příklad ukazuje, jak implementovat tuto metodu pro jednoduchý `CProgram` objekt, který implementuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní. `MakeBstr` Funkce přidělí kopii zadaného řetězce BSTR.
+
+```cpp
+HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
+    if (!pbstrProgramName)
+        return E_INVALIDARG;
+
+    // Assign the member program name to the passed program name.
+    *pbstrProgramName = MakeBstr(m_pszProgramName);
+    return NOERROR;
+}
+```
+
+## <a name="see-also"></a>Viz také
+[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

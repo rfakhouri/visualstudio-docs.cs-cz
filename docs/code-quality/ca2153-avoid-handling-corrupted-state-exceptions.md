@@ -1,20 +1,20 @@
 ---
-title: 'CA2153: Vyhněte se zpracování výjimek v poškozeném stavu'
-ms.date: 11/04/2016
+title: Pravidel nástroje Analýza kódu CA2153 pro poškozený stav výjimky
+ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e8253936c406a3f84304337b818e0f28f1036f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950900"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450266"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Vyhněte se zpracování výjimek v poškozeném stavu
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Vyhněte se zpracování výjimek poškozený stav
 
 |||
 |-|-|
@@ -29,21 +29,21 @@ ms.locfileid: "55950900"
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Rozšíření na straně klienta Určuje, že stav procesu byl poškozený a není zachycena v systému. V poškozeném stavu scénáři obecné obslužné rutiny pouze zachytí výjimku Pokud označíte metodu správné `HandleProcessCorruptedStateExceptions` atribut. Ve výchozím nastavení [Common Language Runtime (CLR)](/dotnet/standard/clr) nebude volat obslužné rutiny catch pro rozšíření na straně klienta.
+Rozšíření na straně klienta Určuje, že stav procesu byl poškozený a není zachycena v systému. V poškozeném stavu scénáři obecné obslužné rutiny pouze zachytí výjimku Pokud označíte metodu s <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> atribut. Ve výchozím nastavení [Common Language Runtime (CLR)](/dotnet/standard/clr) nevyvolá obslužné rutiny catch pro rozšíření na straně klienta.
 
-Povolení proces při selhání bez zachycování tyto druhy výjimek je nejbezpečnější možnosti, jako i protokolování kódu můžou útočníci zneužít ohrožená místa chyby poškození paměti.
+Nejbezpečnější možností je Povolit proces při selhání bez zachycování tyto druhy výjimek. I protokolování kódu můžou útočníci zneužít ohrožená místa chyby poškození paměti.
 
-Toto upozornění se aktivuje při zachycování rozšíření na straně klienta pomocí obecné obslužné rutině, která zachytává všechny výjimky, jako je například catch(exception) nebo catch (bez specifikací výjimek).
+Toto upozornění se aktivuje při zachycování rozšíření na straně klienta pomocí obecné obslužné rutině, která zachytává všechny výjimky, například `catch (System.Exception e)` nebo `catch` s parametrem žádné výjimky.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
 Pokud chcete vyřešit toto upozornění, proveďte jednu z následujících akcí:
 
-- Odeberte `HandleProcessCorruptedStateExceptions` atribut. To obnoví na výchozí chování za běhu, ve kterém nejsou předán obslužné rutiny zachytávání rozšíření na straně klienta.
+- Odeberte <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atribut. To obnoví na výchozí chování za běhu, ve kterém nejsou předán obslužné rutiny zachytávání rozšíření na straně klienta.
 
-- Odeberte obslužnou rutinu obecný zachytávací in preference of obslužných rutin, které zachytit specifické výjimky typy. To může zahrnovat rozšíření na straně klienta za předpokladu, že kód obslužné rutiny můžete bezpečně jejich zpracování (vzácného).
+- Odeberte obslužnou rutinu obecný zachytávací in preference of obslužných rutin, které zachytit specifické výjimky typy. To může zahrnovat rozšíření na straně klienta, za předpokladu, že kód obslužné rutiny můžete bezpečně jejich zpracování (vzácného).
 
-- V obslužné rutiny catch, který zajišťuje výjimky je předán do volajícího a bude mít za následek ukončení spuštěného procesu znovu vyvolejte rozšíření na straně klienta.
+- V obslužné rutiny catch, který předá výjimku volajícího a by měl mít za následek ukončení spuštěného procesu znovu vyvolejte rozšíření na straně klienta.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
@@ -57,7 +57,7 @@ Pseudo následující kód znázorňuje, zjistí toto pravidlo.
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]
-// Method to handle and log CSE exceptions.
+// Method that handles CSE exceptions.
 void TestMethod1()
 {
     try
@@ -66,14 +66,14 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error.
+        // Handle exception.
     }
 }
 ```
 
-### <a name="solution-1"></a>Řešení 1
+### <a name="solution-1---remove-the-attribute"></a>Řešení 1 - odebrat atribut
 
-Odebrání atributu HandleProcessCorruptedExceptions zajistí, že k výjimkám nebude zpracován.
+Odebírá <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atribut zajistí, že poškozený stav výjimky nejsou zpracovávány metodu.
 
 ```csharp
 void TestMethod1()
@@ -82,18 +82,14 @@ void TestMethod1()
     {
         FileStream fileStream = new FileStream("name", FileMode.Create);
     }
-    catch (IOException e)
+    catch (Exception e)
     {
-        // Handle error.
-    }
-    catch (UnauthorizedAccessException e)
-    {
-        // Handle error.
+        // Handle exception.
     }
 }
 ```
 
-### <a name="solution-2"></a>Řešení 2
+### <a name="solution-2---catch-specific-exceptions"></a>Řešení 2 - zachytit specifické výjimky
 
 Odebrat obslužnou rutinu obecný zachytávací a zachytit pouze typy určité výjimky.
 
@@ -106,20 +102,21 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error.
+        // Handle IOException.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error.
+        // Handle UnauthorizedAccessException.
     }
 }
 ```
 
-### <a name="solution-3"></a>Řešení 3
+### <a name="solution-3---rethrow"></a>Řešení 3 - rethrow
 
 Znovu vyvolá výjimku.
 
 ```csharp
+[HandleProcessCorruptedStateExceptions]
 void TestMethod1()
 {
     try
@@ -128,7 +125,7 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error.
+        // Rethrow the exception.
         throw;
     }
 }

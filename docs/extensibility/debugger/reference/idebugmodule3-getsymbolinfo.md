@@ -13,79 +13,80 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8273a8111eb087202a1b97ec042e8d1bd21f637a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: adffeb018bfaa597d399042ef9651965674f92bb
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992825"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450138"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
-Načte seznam cest, které budou vyhledány pro symboly, stejně jako výsledky hledání jednotlivé cesty.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetSymbolInfo(  
-   SYMBOL_SEARCH_INFO_FIELDS  dwFields,  
-   MODULE_SYMBOL_SEARCH_INFO* pInfo  
-);  
-```  
-  
-```csharp  
-int GetSymbolInfo(  
-   enum_SYMBOL_SEARCH_INFO_FIELDS dwFields,   
-   MODULE_SYMBOL_SEARCH_INFO[]    pinfo  
-);  
-  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `dwFields`  
- [in] Kombinace příznaků z [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) výčet určující, které pole `pInfo` mají být vyplněna.  
-  
- `pInfo`  
- [out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) strukturu, jejíž členové jsou pro vyplnění pomocí zadaných informací. Pokud je tato hodnota null, vrátí tato metoda `E_INVALIDARG`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud metoda uspěje, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
+Načte seznam cest, které budou vyhledány pro symboly, stejně jako výsledky hledání jednotlivé cesty.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetSymbolInfo(
+    SYMBOL_SEARCH_INFO_FIELDS  dwFields,
+    MODULE_SYMBOL_SEARCH_INFO* pInfo
+);
+```
+
+```csharp
+int GetSymbolInfo(
+    enum_SYMBOL_SEARCH_INFO_FIELDS dwFields,
+    MODULE_SYMBOL_SEARCH_INFO[]    pinfo
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`dwFields`  
+[in] Kombinace příznaků z [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) výčet určující, které pole `pInfo` mají být vyplněna.
+
+`pInfo`  
+[out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) strukturu, jejíž členové jsou pro vyplnění pomocí zadaných informací. Pokud je tato hodnota null, vrátí tato metoda `E_INVALIDARG`.
+
+## <a name="return-value"></a>Návratová hodnota
+Pokud metoda uspěje, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
 > [!NOTE]
->  Vrácený řetězec (v `MODULE_SYMBOL_SEARCH_INFO` struktura) může být prázdný i v případě `S_OK` je vrácena. V takovém případě se žádné informace o hledání vrátit.  
-  
-## <a name="remarks"></a>Poznámky  
- Pokud `bstrVerboseSearchInfo` pole `MODULE_SYMBOL_SEARCH_INFO` struktura není prázdný a obsahuje seznam cest prohledávat a výsledky hledání. V seznamu je formátováno s cestou, následované třemi tečkami ("..."), za nímž následuje výsledek. Pokud existuje více než jednu dvojici výsledek cestu, každý pár oddělený pár "\r\n" (návrat na začátek řádku return nebo odřádkování). Vzor vypadá takto:  
-  
- \<cesta >... \<výsledku > \r\n\<cesta >... \<výsledku > \r\n\<cesta >... \<výsledku >  
-  
- Všimněte si, že poslední položka nemá \r\n pořadí.  
-  
-## <a name="example"></a>Příklad  
- V tomto příkladu vrátí tato metoda tři cesty s tři různé výsledky hledání. Každý řádek je přerušen skrze pár návrat na začátek řádku return nebo odřádkování. Příklad výstupu právě zobrazí výsledky hledání jako jeden řetězec.  
-  
+> Vrácený řetězec (v `MODULE_SYMBOL_SEARCH_INFO` struktura) může být prázdný i v případě `S_OK` je vrácena. V takovém případě se žádné informace o hledání vrátit.
+
+## <a name="remarks"></a>Poznámky
+Pokud `bstrVerboseSearchInfo` pole `MODULE_SYMBOL_SEARCH_INFO` struktura není prázdný a obsahuje seznam cest prohledávat a výsledky hledání. V seznamu je formátováno s cestou, následované třemi tečkami ("..."), za nímž následuje výsledek. Pokud existuje více než jednu dvojici výsledek cestu, každý pár oddělený pár "\r\n" (návrat na začátek řádku return nebo odřádkování). Vzor vypadá takto:
+
+\<cesta >... \<výsledku > \r\n\<cesta >... \<výsledku > \r\n\<cesta >... \<výsledku >
+
+Všimněte si, že poslední položka nemá \r\n pořadí.
+
+## <a name="example"></a>Příklad
+V tomto příkladu vrátí tato metoda tři cesty s tři různé výsledky hledání. Každý řádek je přerušen skrze pár návrat na začátek řádku return nebo odřádkování. Příklad výstupu právě zobrazí výsledky hledání jako jeden řetězec.
+
 > [!NOTE]
->  Stav výsledek je všechno, co hned za "..." až do konce řádku.  
-  
-```cpp  
-void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
-{  
-    MODULE_SYMBOL_SEARCH_INFO ssi = { 0 };  
-    HRESULT hr;  
-    hr = pIDebugModule3->GetSymbolInfo(SSIF_VERBOSE_SEARCH_INFO,&ssi);  
-    if (SUCCEEDED(hr)) {  
-        CComBSTR searchInfo = ssi.bstrVerboseSearchInfo;  
-        if (searchInfo.Length() != 0) {  
-            std::wcout << (wchar_t *)(BSTR)searchInfo;  
-            std::wcout << std::endl;  
-        }  
-    }  
-}  
-```  
-  
- **c:\symbols\user32.pdb... Soubor nebyl nalezen.**  
+> Stav výsledek je všechno, co hned za "..." až do konce řádku.
+
+```cpp
+void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
+{
+    MODULE_SYMBOL_SEARCH_INFO ssi = { 0 };
+    HRESULT hr;
+    hr = pIDebugModule3->GetSymbolInfo(SSIF_VERBOSE_SEARCH_INFO,&ssi);
+    if (SUCCEEDED(hr)) {
+        CComBSTR searchInfo = ssi.bstrVerboseSearchInfo;
+        if (searchInfo.Length() != 0) {
+            std::wcout << (wchar_t *)(BSTR)searchInfo;
+            std::wcout << std::endl;
+        }
+    }
+}
+```
+
+**c:\symbols\user32.pdb... Soubor nebyl nalezen.**  
 **c:\winnt\symbols\user32.pdb... Verze neodpovídá.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Načíst symboly.**   
-## <a name="see-also"></a>Viz také  
- [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
- [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   
- [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
+**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Načíst symboly.**
+
+## <a name="see-also"></a>Viz také
+
+[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)  
+[MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
+[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

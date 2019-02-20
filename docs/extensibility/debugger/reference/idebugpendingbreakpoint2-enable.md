@@ -13,74 +13,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f4da6362f195efe55ba38e3de02f644d40596c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a06ed6e7d3c5f95e0de2ee88c63783924c2b015d
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971946"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450006"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Přepíná povoleného stavu čekající zarážka.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Enable(   
-   BOOL fEnable  
-);  
-```  
-  
-```csharp  
-int Enable(   
-   int fEnable  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `fEnable`  
- [in] Nastavit na nenulovou hodnotu (`TRUE`) umožňující čekající zarážkou, nebo na hodnotu nula (`FALSE`) Chcete-li zakázat.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `E_BP_DELETED` Pokud zarážka byla odstraněna.  
-  
-## <a name="remarks"></a>Poznámky  
- Když čekající zarážkou povolený nebo zakázaný, vázaná z něj všechny zarážky nastavené do stejného stavu.  
-  
- Tato metoda může být volána tolikrát, kolikrát podle potřeby, i když je už povolená nebo zakázaná zarážka.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak implementovat tuto metodu pro jednoduchý `CPendingBreakpoint` objekt, který zveřejňuje [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) rozhraní.  
-  
-```cpp  
-HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    
-{    
-   HRESULT hr;    
-  
-   // Verify that the pending breakpoint has not been deleted. If deleted,   
-   // then return hr = E_BP_DELETED.    
-   if (m_state.state != PBPS_DELETED)    
-   {    
-      // If the bound breakpoint member variable is valid, then enable or   
-      // disable the bound breakpoint.    
-      if (m_pBoundBP)    
-      {    
-         m_pBoundBP->Enable(fEnable);    
-      }    
-      // Set the PENDING_BP_STATE in the PENDING_BP_STATE_INFO structure   
-      // to enabled or disabled depending on the passed BOOL condition.    
-      m_state.state = fEnable ? PBPS_ENABLED : PBPS_DISABLED;    
-      hr = S_OK;    
-  
-   }    
-   else    
-   {    
-      hr = E_BP_DELETED;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+Přepíná povoleného stavu čekající zarážka.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Enable(
+    BOOL fEnable
+);
+```
+
+```csharp
+int Enable(
+    int fEnable
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`fEnable`  
+[in] Nastavit na nenulovou hodnotu (`TRUE`) umožňující čekající zarážkou, nebo na hodnotu nula (`FALSE`) Chcete-li zakázat.
+
+## <a name="return-value"></a>Návratová hodnota
+Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `E_BP_DELETED` Pokud zarážka byla odstraněna.
+
+## <a name="remarks"></a>Poznámky
+Když čekající zarážkou povolený nebo zakázaný, vázaná z něj všechny zarážky nastavené do stejného stavu.
+
+Tato metoda může být volána tolikrát, kolikrát podle potřeby, i když je už povolená nebo zakázaná zarážka.
+
+## <a name="example"></a>Příklad
+Následující příklad ukazuje, jak implementovat tuto metodu pro jednoduchý `CPendingBreakpoint` objekt, který zveřejňuje [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) rozhraní.
+
+```cpp
+HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
+{
+    HRESULT hr;
+
+    // Verify that the pending breakpoint has not been deleted. If deleted,
+    // then return hr = E_BP_DELETED.
+    if (m_state.state != PBPS_DELETED)
+    {
+        // If the bound breakpoint member variable is valid, then enable or
+        // disable the bound breakpoint.
+        if (m_pBoundBP)
+        {
+            m_pBoundBP->Enable(fEnable);
+        }
+        // Set the PENDING_BP_STATE in the PENDING_BP_STATE_INFO structure
+        // to enabled or disabled depending on the passed BOOL condition.
+        m_state.state = fEnable ? PBPS_ENABLED : PBPS_DISABLED;
+        hr = S_OK;
+
+    }
+    else
+    {
+        hr = E_BP_DELETED;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Viz také
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

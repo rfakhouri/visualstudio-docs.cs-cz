@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172ec56815f989b13cd5a15c22241b669a9dc0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73d3dd7d77caa1e3c7a3539638d125d927bebfbf
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908852"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450578"
 ---
 # <a name="features-of-the-code-editor"></a>Funkce editoru kódu
 
@@ -56,15 +56,15 @@ Najdete řadu pokročilých funkcí na **upravit** > **Upřesnit** nabídka na p
 |Výběr formátu|Nastaví správné odsazení řádků kódu a přesune složené závorky do samostatných řádků ve výběru.|
 |Vybrané řádky posunout tabulátorem|Změny úvodních mezer na karty, kde je to vhodné.|
 |Zrušit posunutí tabulátorem u vybraných řádků|Změny úvodních karet na mezery. Pokud chcete převést všechny mezery v souboru na tabulátory (nebo všechny tabulátory na mezery), můžete použít `Edit.ConvertSpacesToTabs` a `Edit.ConvertTabsToSpaces` příkazy. Tyto příkazy se nezobrazují v nabídkách aplikace Visual Studio, ale můžete je z volat **rychlý přístup** okna nebo příkazové okno.|
-|Převést na velká písmena|Změní všechny znaky ve výběru na velká písmena, nebo pokud není nic vybráno, znak na pozici kurzoru na velká písmena se změní.|
-|Nastavit jako malé písmeno|Změní všechny znaky ve výběr na malá písmena, nebo pokud není nic vybráno, znak na pozici kurzoru změní na malá písmena.|
+|Převést na velká písmena|Změní všechny znaky ve výběru na velká písmena, nebo pokud není nic vybráno, znak na pozici kurzoru na velká písmena se změní. Zástupce: **Ctrl**+**Shift**+**U**.|
+|Nastavit jako malé písmeno|Změní všechny znaky ve výběr na malá písmena, nebo pokud není nic vybráno, znak na pozici kurzoru změní na malá písmena. Zástupce: **Ctrl**+**U**.|
 |Přesunout vybrané řádky nahoru|Posune vybraný řádek jeden řádek nahoru. Zástupce: **ALT**+**šipka nahoru**.|
 |Přesunout vybrané řádky dolů|Posune vybraný řádek jeden řádek dolů. Zástupce: **ALT**+**šipka dolů**.|
 |Odstranit vodorovné prázdné znaky|Odstraní tabulátory nebo mezery na konci aktuálního řádku.|
 |Zobrazit prázdné znaky|Zobrazí mezery jako zvýšené tečky a karty jako šipky. Konec souboru se zobrazí jako obdélníkový glyf. Pokud **nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >  **Zalamování** > **zobrazit viditelné piktogramy pro zalamování řádků** je vybráno, že zobrazí se také piktogram.|
 |Zalamování řádků|Způsobí, že všechny řádky v dokumentu mají být zobrazeny v okně kódu. Zalamování slov můžete vypnout nebo zapnout v **všechny jazyky textového editoru** nastavení (**nástroje** > **možnosti** > **textový Editor**   >  **Všechny jazyky**).|
-|Zakomentovat výběr|Přidá znaky komentáře do výběru nebo aktuálního řádku.|
-|Odkomentovat výběr|Odebere znaky komentáře z výběru nebo aktuálního řádku.|
+|Zakomentovat výběr|Přidá znaky komentáře do výběru nebo aktuálního řádku. Zástupce: **Ctrl**+**K**, **Ctrl**+**C**|
+|Odkomentovat výběr|Odebere znaky komentáře z výběru nebo aktuálního řádku. Zástupce: **Ctrl**+**K**, **Ctrl**+**U**|
 |Zvětšit odsazení řádku|Přidá kartu (nebo ekvivalentní mezery) do vybraných řádků nebo aktuálního řádku.|
 |Zmenšit odsazení řádku|Odebere kartu (nebo ekvivalentní mezery) z vybraných řádků nebo aktuálního řádku.|
 |Vybrat značku|V dokumentu, který obsahuje značky (například XML nebo HTML) vybere značku.|

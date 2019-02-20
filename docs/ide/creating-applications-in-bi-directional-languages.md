@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,35 +12,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335230"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450318"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>Vytváření aplikací v obousměrných jazycích
+# <a name="create-applications-in-bidirectional-languages"></a>Vytváření aplikací v obousměrných jazycích
 
 Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazycích napsané-doleva, včetně arabština a hebrejština. Pro některé funkce stačí nastavit vlastnosti. V ostatních případech je nutné implementovat v kódu funkce.
 
 > [!NOTE]
-> Pokud chcete zadat a zobrazit obousměrných jazycích, musíte pracovat s verzí Windows, který je nakonfigurován příslušný jazyk. To může být buď anglickou verzi systému Windows s odpovídající jazyková sada nainstalovaná nebo správně lokalizovanou verzi Windows.
+> Pokud chcete zadat a zobrazit obousměrných jazyků, musíte pracovat s verzí Windows, který je nakonfigurován příslušný jazyk. To může být buď anglickou verzi systému Windows s odpovídající jazyková sada nainstalovaná nebo správně lokalizovanou verzi Windows.
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>Typy aplikací, které podporují obousměrných jazycích
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>Typy aplikací, které podporují obousměrné jazyky
 
 -  Aplikace Windows
 
-   Můžete vytvořit plně obousměrnou aplikace, které zahrnují podporu pro obousměrný text zprava doleva pořadí čtení a zrcadlení (reverzní rozložení windows, nabídek, dialogová okna a tak dále). S výjimkou zrcadlení, tyto funkce jsou dostupné ve výchozím nastavení nebo nastavení vlastností. Zrcadlení se podporuje ze své podstaty pro některé funkce, jako jsou okna se zprávou. Ale v ostatních případech je nutné implementovat zrcadlení v kódu. Další informace najdete v tématu [obousměrná podpora pro aplikace Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   Můžete vytvořit plně obousměrné aplikace, které zahrnují podporu pro obousměrný text zprava doleva pořadí čtení a zrcadlení (reverzní rozložení windows, nabídek, dialogová okna a tak dále). S výjimkou zrcadlení, tyto funkce jsou dostupné ve výchozím nastavení nebo nastavení vlastností. Zrcadlení se podporuje ze své podstaty pro některé funkce, jako jsou okna se zprávou. Ale v ostatních případech je nutné implementovat zrcadlení v kódu. Další informace najdete v tématu [obousměrná podpora pro aplikace Windows Forms](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
 
 -  Webové aplikace
 
-   Webové služby podporují odesílání a přijímání UTF-8 a text v kódu Unicode, díky kterým jsou vhodné pro aplikace, které se týkají obousměrných jazycích. Webové klientské aplikace využívají prohlížeče pro uživatelské rozhraní, tedy závisí na tom, jak dobře webového prohlížeče podporuje tyto funkce obousměrné stupeň obousměrná podpora ve webové aplikaci. V sadě Visual Studio můžete vytvářet aplikace s podporou arabský nebo hebrejský text, pořadí čtení zprava doleva, kódování souborů a nastavení místní jazykové verze. Další informace najdete v tématu [obousměrná podpora pro webové aplikace ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Webové služby podporují odesílání a přijímání UTF-8 a text v kódu Unicode, díky kterým jsou vhodné pro aplikace, které se týkají obousměrných jazyků. Webové klientské aplikace závisí na prohlížeče pro jeho uživatelské rozhraní, takže stupeň obousměrná podpora v webové aplikace závisí na tom, jak dobře webového prohlížeče podporuje tyto funkce obousměrné. V sadě Visual Studio můžete vytvářet aplikace s podporou arabský nebo hebrejský text, pořadí čtení zprava doleva, kódování souborů a nastavení místní jazykové verze. Další informace najdete v tématu [obousměrná podpora pro webové aplikace ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
-Aplikace konzoly nezahrnují text podpora obousměrných jazycích. Toto je v důsledku toho, jak funguje Windows pomocí konzolové aplikace.
+Aplikace konzoly nezahrnují text podpora obousměrných jazyků. Toto je v důsledku toho, jak funguje Windows pomocí konzolové aplikace.
 
 ## <a name="fully-supported-features"></a>Plně podporované funkce
 
-V době návrhu v sadě Visual Studio můžete použít obousměrných jazycích následujícími způsoby:
+V době návrhu v sadě Visual Studio můžete použít obousměrné jazyky následujícími způsoby:
 
 - **Zadání textu**
 
@@ -48,7 +48,7 @@ V době návrhu v sadě Visual Studio můžete použít obousměrných jazycích
 
 - **Názvy objektů**
 
-   Obousměrné jazyky můžete přiřadit názvy řešení, projekty, soubory, složky a tak dále. V kódu můžete použít obousměrných jazycích pro názvy proměnných, tříd, objektů, atributy, metadata a další prvky.
+   Obousměrné jazyky můžete přiřadit názvy řešení, projekty, soubory, složky a tak dále. V kódu můžete použít obousměrné jazyky pro názvy proměnných, tříd, objektů, atributy, metadata a další prvky.
 
 - **Kódování souboru**
 
@@ -62,7 +62,7 @@ Ve výchozím nastavení použijte ovládací prvky textového vstupu v sadě Vi
 
 - Zaškrtávací políčka, rozevírací seznamy a další ovládací prvky v dialogových oknech sady Visual Studio použijte vždy pořadí čtení zleva doprava.
 
-- Editor kódu (a textový editor) nepodporuje pořadí čtení zprava doleva. Můžete zadat text v obousměrných jazyků, ale je vždy o pořadí čtení zleva doprava.
+- Editor kódu (a textový editor) nepodporuje pořadí čtení zprava doleva. Můžete zadat text v jazyce obousměrný, ale je vždy o pořadí čtení zleva doprava.
 
 ## <a name="arabic-or-hebrew-object-names"></a>Arabský nebo hebrejský názvy objektů
 

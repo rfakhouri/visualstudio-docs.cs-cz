@@ -2,7 +2,7 @@
 title: Pomocí sady Visual Studio na virtuálním počítači Azure
 titleSuffix: ''
 description: Zjistěte, jak pomocí sady Visual Studio na virtuálním počítači Azure
-ms.date: 09/12/2018
+ms.date: 02/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952902"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450396"
 ---
 # <a id="top"> </a> Visual Studio Image v Azure
 
@@ -34,8 +34,8 @@ Image pro aktuální hlavní verze, Visual Studio 2017 a Visual Studio 2015, naj
 
 | Prodejní verze                                              | Edice                     |     Verze produktu      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: Ve verzi Preview (ve verzi Preview 2)                   |           Enterprise         | Verze 16.0.0 Preview 2 |
-| Visual Studio 2017: Nejnovější (verzi 15.9)                    |    Organizace, Community     |      Verze 15.9.4      |
+|    Visual Studio 2019: Ve verzi Preview (ve verzi Preview 3)                   |           Enterprise         | Verze 16.0.0 ve verzi Preview 3 |
+| Visual Studio 2017: Nejnovější (verzi 15.9)                    |    Organizace, Community     |      Verze 15.9.7      |
 |         Visual Studio 2017: RTW                              |    Organizace, Community     |      Verze 15.0.20     |
 |   Visual Studio 2015: Nejnovější (aktualizace 3)                      |    Organizace, Community     |  Verze 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Žádná             | (Platnost pro obsluhu)  |
