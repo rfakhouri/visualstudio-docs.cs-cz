@@ -10,79 +10,79 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5fba25effa5e2888f86c08d41e52f2e4cd7966
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33b36c648a0ab1c7df9d4f358d729e7f6b96212f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981581"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597475"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Dialogové okno Upřesnit nastavení (vizualizér souběžnosti)
-S použitím **Upřesnit nastavení** dialogové okno v Concurrency Visualizer můžete řídit, jak se shromáždí trasování.  Dialogové okno obsahuje karty pro symboly, pouze můj kód, ukládání do vyrovnávací paměti, filtrování, CLR události, značky, zprostředkovatele a soubory.  
-  
-## <a name="symbols"></a>Symboly  
- Vizualizátor souběžnosti používá stejné nastavení symbolu jako ladicí program sady Visual Studio. Vizualizátor souběžnosti používá nastavení pro zásobníky volání, které jsou spojeny s daty výkonu.  Po zpracování trasování, přistupuje k Concurrency Visualizer serverů symbolů, které jsou zadány na stránce nastavení.  Když tato data se přistupuje přes síť, zpracování trasování může zpomalit.  Pokud chcete snížit množství času, které je potřeba vyřešit symboly, můžete ukládat do mezipaměti symbolů místně. Pokud se stáhly symboly, Visual Studio načte z místní mezipaměti.  
-  
-## <a name="just-my-code"></a>Pouze můj kód  
- Ve výchozím nastavení pouze můj kód je sada. *exe* a. *Knihovna DLL* soubory, které jsou spojeny s aktuální řešení v sadě Visual Studio. Vizualizátor souběžnosti vyhodnotí tuto sadu souborů při použití funkce pouze můj kód pro filtrování zásobníky volání. Na kartě funkce pouze můj kód můžete přidat adresáře, které obsahují. *exe* a. *Knihovna DLL* soubory do umístění, které používá nástroj Vizualizátor souběžnosti pro volbu pouze vlastní kód.  
-  
- Cesty. *exe* a. *Knihovna DLL* soubory jsou uloženy v trasovacím souboru při shromážděné trasování.  Změna tohoto nastavení nemá vliv na všechny dříve shromážděná trasování.  
-  
-## <a name="buffering"></a>ukládání do vyrovnávací paměti  
- Vizualizátor souběžnosti používá trasování událostí pro Windows (ETW), pokud shromáždí trasování.  Trasování událostí pro Windows používá různé vyrovnávací paměti jako ukládá události.  Výchozí nastavení vyrovnávací paměti trasování událostí pro Windows nemusí být optimální ve všech případech a v některých případech, může způsobit problémy, jako jsou ztraceny události.  Karta ukládání do vyrovnávací paměti můžete použít ke konfiguraci nastavení vyrovnávací paměti trasování událostí pro Windows. Další informace najdete v tématu [trasování událostí](http://go.microsoft.com/fwlink/?LinkId=234579) a [EVENT_TRACE_PROPERTIES struktura](http://go.microsoft.com/fwlink/?LinkId=234580).  
-  
-## <a name="filter"></a>Filtr  
- Na kartě Filtr můžete vybrat sadu událostí, která shromažďuje Vizualizátor souběžnosti. Výběrem podmnožiny události omezuje typy dat, která se zobrazí v sestavách, snižuje velikost každé trasování a zkracuje dobu potřebnou k zpracování trasování.  
-  
-### <a name="clr-events"></a>CLR – události  
- Události vygenerované Common Language Runtime (CLR) povolte Vizualizátor souběžnosti, chcete-li vyřešit spravované zásobníky volání.  Pokud zakážete shromažďování událostí modulu CLR, bude možné snížit velikost trasování, ale některé zásobníky volání nevyřeší.  V důsledku toho může být nesprávně kategorizovaná nějakou aktivitu vlákna CPU.  
-  
-### <a name="collect-for-native-processes"></a>Shromáždit pro nativní procesy  
- Ve výchozím nastavení události CLR se shromažďují pouze v případě, že je profilována spravovaného procesu, protože jsou obvykle zbytečné pro nativní procesy.  V některých případech (například když nativní proces je hostitelem modulu CLR) bude pravděpodobně shromažďování událostí modulu CLR pro nativní proces.  Pokud tomu tak, **shromáždit pro nativní procesy** zaškrtávací políčko.  
-  
-### <a name="disable-rundown-events"></a>Zakázat události rundown  
- Modul CLR generuje události z dva poskytovatelé: modul runtime a doběhu.  Pokud chcete shromažďování událostí modulu runtime CLR, ale nechcete shromažďování události rundown, vyberte **zakažte události doběhu** zaškrtávací políčko.  To snižuje velikost souboru trasování, který je generován kolekce, ale nemusí vyřešit některé balíčky. Další informace najdete v tématu [CLR ETW – zprostředkovatelé](/dotnet/framework/performance/clr-etw-providers)  
-  
-### <a name="sample-events"></a>Ukázkové události  
- Ukázkové události můžete shromažďovat zásobníky volání, které jsou spojeny s provádění vlákna. Tyto události se shromažďují přibližně jednou za milisekundu pro vlákna, které jsou spuštěny v aktuálním procesu. Pokud zakážete shromažďování události vzorku, zmenšení shromážděného trasování, ale nelze zobrazit žádné zásobníky volání, které jsou spojeny s provádění vlákna.  
-  
-### <a name="gpu-events"></a>Události GPU  
- Události GPU jsou události generované modulem rozhraní DirectX. Pokud zakážete shromažďování událostí GPU, zmenšení shromážděného trasování, ale nelze zobrazit všechny aktivity GPU v zobrazení využití nebo DirectX modul aktivity v zobrazení vláken.  
-  
-### <a name="file-io-events"></a>Vstupně výstupní události souboru  
- Soubor vstupně-výstupních operací události představují přístupů na disk jménem aktuální proces.  Pokud zakážete události vstup a výstup souborů, zmenšení trasování, ale zobrazení vláken nebudou oznamovat všechny informace o kanály disku a diskových operací.  
-  
-## <a name="markers"></a>Značky  
- Na **značky** kartu, můžete nakonfigurovat sady zprostředkovatelů trasování událostí pro Windows, které jsou uvedeny jako značky ve vizualizátoru souběžnosti.  Můžete také filtrovat kolekce značky na základě úroveň důležitosti a kategorie trasování událostí pro Windows.  Pokud používáte [sada Vizualizátor souběžnosti SDK](../profiling/concurrency-visualizer-sdk.md) a použití vlastní poskytovatele značek, můžete ho zaregistrovat tady tak, aby se zobrazí v zobrazení vláken.  
-  
-### <a name="add-a-new-provider"></a>Přidat nového poskytovatele  
- Pokud váš kód používá [sada Vizualizátor souběžnosti SDK](../profiling/concurrency-visualizer-sdk.md) nebo generuje události trasování událostí pro Windows, které následují <xref:System.Diagnostics.Tracing.EventSource> konvence, zobrazí se tyto události v Concurrency Visualizer tak, že je zaregistrujete v tomto dialogovém.  
-  
- V **název** zadejte název, který popisuje typy, které události vygenerované zprostředkovatelem.  V **GUID** zadejte identifikátor GUID, který je spojen s tímto poskytovatelem. (Identifikátor GUID je spojené s každou poskytovatele trasování událostí pro Windows.)  
-  
- Volitelně můžete určit, zda chcete vyfiltrovat události z tohoto poskytovatele, podle kategorie nebo důležitost.  Kategorii můžete použít pole, které chcete filtrovat podle kategorií sada Vizualizátor souběžnosti SDK.  Provedete to tak, zadejte řetězec oddělených čárkou kategorií nebo rozsahy kategorií.  Určuje kategorie událostí v rámci aktuálního zprostředkovatele k zobrazení.  Pokud chcete přidat <xref:System.Diagnostics.Tracing.EventSource> poskytovatele, můžete použít pole kategorií můžete filtrovat podle klíčových slov trasování událostí pro Windows.  Protože klíčové slovo je bitová maska, můžete zadat, jsou nastaveny bity, které v masce řetězec celých čísel oddělených čárkou. Například "1,2" Nastaví bity prvního a druhého, a to se přeloží na 6 v desítkové soustavě.  
-  
- V seznamu úroveň důležitosti můžete vyfiltrovat události, které mají význam nebo úroveň trasování událostí pro Windows, která je menší než zadanou hodnotou.  
-  
-### <a name="configure-an-existing-provider"></a>Konfigurace existujícího poskytovatele  
- Upravit nastavení, které jsou spojeny s existujícího poskytovatele, vyberte ho v seznamu a klikněte na tlačítko **upravit poskytovatele** tlačítko.  Můžete změnit název, identifikátor GUID a filtrování nastavení.  
-  
-### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtrovat značky data ze sestavy Vizualizátor souběžnosti  
- Pokud nechcete, aby data pro konkrétní zprostředkovatele, aby v budoucnu se zobrazí trasování, zrušte zaškrtnutí políčka u poskytovatele, který chcete odebrat.  
-  
-## <a name="files"></a>Soubory  
- Na **soubory** kartu, můžete určit adresáře v rámci které trasování jsou soubory uložené trasování pokaždé, když se shromažďují.  Vizualizátor souběžnosti generuje pro každou trasování, které shromažďuje čtyři soubory:  
-  
-- Soubor protokolu (ETL) jádra události trasování (<em>.</em> Kernel.etl*)  
-  
-- Soubor protokolu trasování událostí uživatelského režimu (<em>.</em> User.etl*)  
-  
-- Soubor dat Vizualizéru souběžnosti (<em>.</em> CVData*)  
-  
-- Soubor trasování vizualizátoru souběžnosti (<em>.</em> CVTrace*)  
-  
-  Příslušné dva soubory ETL ukládat data trasování a dva soubory Vizualizátor souběžnosti ukládejte zpracovaná data.  Nezpracovaných souborů ETL se obvykle používá po zpracování trasování.  Výběr **soubory odstranit událost trasování protokolu (ETL) po dokončení analýzy** zaškrtávací políčko snižuje množství dat trasování, která je uložena na disk.  
-  
-## <a name="see-also"></a>Viz také:  
- [Pouze můj kód](../profiling/just-my-code-threads-view.md)   
- [Značky Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md)
+S použitím **Upřesnit nastavení** dialogové okno v Concurrency Visualizer můžete řídit, jak se shromáždí trasování.  Dialogové okno obsahuje karty pro symboly, pouze můj kód, ukládání do vyrovnávací paměti, filtrování, CLR události, značky, zprostředkovatele a soubory.
+
+## <a name="symbols"></a>Symboly
+ Vizualizátor souběžnosti používá stejné nastavení symbolu jako ladicí program sady Visual Studio. Vizualizátor souběžnosti používá nastavení pro zásobníky volání, které jsou spojeny s daty výkonu.  Po zpracování trasování, přistupuje k Concurrency Visualizer serverů symbolů, které jsou zadány na stránce nastavení.  Když tato data se přistupuje přes síť, zpracování trasování může zpomalit.  Pokud chcete snížit množství času, které je potřeba vyřešit symboly, můžete ukládat do mezipaměti symbolů místně. Pokud se stáhly symboly, Visual Studio načte z místní mezipaměti.
+
+## <a name="just-my-code"></a>Pouze můj kód
+ Ve výchozím nastavení pouze můj kód je sada. *exe* a. *Knihovna DLL* soubory, které jsou spojeny s aktuální řešení v sadě Visual Studio. Vizualizátor souběžnosti vyhodnotí tuto sadu souborů při použití funkce pouze můj kód pro filtrování zásobníky volání. Na kartě funkce pouze můj kód můžete přidat adresáře, které obsahují. *exe* a. *Knihovna DLL* soubory do umístění, které používá nástroj Vizualizátor souběžnosti pro volbu pouze vlastní kód.
+
+ Cesty. *exe* a. *Knihovna DLL* soubory jsou uloženy v trasovacím souboru při shromážděné trasování.  Změna tohoto nastavení nemá vliv na všechny dříve shromážděná trasování.
+
+## <a name="buffering"></a>ukládání do vyrovnávací paměti
+ Vizualizátor souběžnosti používá trasování událostí pro Windows (ETW), pokud shromáždí trasování.  Trasování událostí pro Windows používá různé vyrovnávací paměti jako ukládá události.  Výchozí nastavení vyrovnávací paměti trasování událostí pro Windows nemusí být optimální ve všech případech a v některých případech, může způsobit problémy, jako jsou ztraceny události.  Karta ukládání do vyrovnávací paměti můžete použít ke konfiguraci nastavení vyrovnávací paměti trasování událostí pro Windows. Další informace najdete v tématu [trasování událostí](http://go.microsoft.com/fwlink/?LinkId=234579) a [EVENT_TRACE_PROPERTIES struktura](http://go.microsoft.com/fwlink/?LinkId=234580).
+
+## <a name="filter"></a>Filtr
+ Na kartě Filtr můžete vybrat sadu událostí, která shromažďuje Vizualizátor souběžnosti. Výběrem podmnožiny události omezuje typy dat, která se zobrazí v sestavách, snižuje velikost každé trasování a zkracuje dobu potřebnou k zpracování trasování.
+
+### <a name="clr-events"></a>CLR – události
+ Události vygenerované Common Language Runtime (CLR) povolte Vizualizátor souběžnosti, chcete-li vyřešit spravované zásobníky volání.  Pokud zakážete shromažďování událostí modulu CLR, bude možné snížit velikost trasování, ale některé zásobníky volání nevyřeší.  V důsledku toho může být nesprávně kategorizovaná nějakou aktivitu vlákna CPU.
+
+### <a name="collect-for-native-processes"></a>Shromáždit pro nativní procesy
+ Ve výchozím nastavení události CLR se shromažďují pouze v případě, že je profilována spravovaného procesu, protože jsou obvykle zbytečné pro nativní procesy.  V některých případech (například když nativní proces je hostitelem modulu CLR) bude pravděpodobně shromažďování událostí modulu CLR pro nativní proces.  Pokud tomu tak, **shromáždit pro nativní procesy** zaškrtávací políčko.
+
+### <a name="disable-rundown-events"></a>Zakázat události rundown
+ Modul CLR generuje události z dva poskytovatelé: modul runtime a doběhu.  Pokud chcete shromažďování událostí modulu runtime CLR, ale nechcete shromažďování události rundown, vyberte **zakažte události doběhu** zaškrtávací políčko.  To snižuje velikost souboru trasování, který je generován kolekce, ale nemusí vyřešit některé balíčky. Další informace najdete v tématu [CLR ETW – zprostředkovatelé](/dotnet/framework/performance/clr-etw-providers)
+
+### <a name="sample-events"></a>Ukázkové události
+ Ukázkové události můžete shromažďovat zásobníky volání, které jsou spojeny s provádění vlákna. Tyto události se shromažďují přibližně jednou za milisekundu pro vlákna, které jsou spuštěny v aktuálním procesu. Pokud zakážete shromažďování události vzorku, zmenšení shromážděného trasování, ale nelze zobrazit žádné zásobníky volání, které jsou spojeny s provádění vlákna.
+
+### <a name="gpu-events"></a>Události GPU
+ Události GPU jsou události generované modulem rozhraní DirectX. Pokud zakážete shromažďování událostí GPU, zmenšení shromážděného trasování, ale nelze zobrazit všechny aktivity GPU v zobrazení využití nebo DirectX modul aktivity v zobrazení vláken.
+
+### <a name="file-io-events"></a>Vstupně výstupní události souboru
+ Soubor vstupně-výstupních operací události představují přístupů na disk jménem aktuální proces.  Pokud zakážete události vstup a výstup souborů, zmenšení trasování, ale zobrazení vláken nebudou oznamovat všechny informace o kanály disku a diskových operací.
+
+## <a name="markers"></a>Značky
+ Na **značky** kartu, můžete nakonfigurovat sady zprostředkovatelů trasování událostí pro Windows, které jsou uvedeny jako značky ve vizualizátoru souběžnosti.  Můžete také filtrovat kolekce značky na základě úroveň důležitosti a kategorie trasování událostí pro Windows.  Pokud používáte [sada Vizualizátor souběžnosti SDK](../profiling/concurrency-visualizer-sdk.md) a použití vlastní poskytovatele značek, můžete ho zaregistrovat tady tak, aby se zobrazí v zobrazení vláken.
+
+### <a name="add-a-new-provider"></a>Přidat nového poskytovatele
+ Pokud váš kód používá [sada Vizualizátor souběžnosti SDK](../profiling/concurrency-visualizer-sdk.md) nebo generuje události trasování událostí pro Windows, které následují <xref:System.Diagnostics.Tracing.EventSource> konvence, zobrazí se tyto události v Concurrency Visualizer tak, že je zaregistrujete v tomto dialogovém.
+
+ V **název** zadejte název, který popisuje typy, které události vygenerované zprostředkovatelem.  V **GUID** zadejte identifikátor GUID, který je spojen s tímto poskytovatelem. (Identifikátor GUID je spojené s každou poskytovatele trasování událostí pro Windows.)
+
+ Volitelně můžete určit, zda chcete vyfiltrovat události z tohoto poskytovatele, podle kategorie nebo důležitost.  Kategorii můžete použít pole, které chcete filtrovat podle kategorií sada Vizualizátor souběžnosti SDK.  Provedete to tak, zadejte řetězec oddělených čárkou kategorií nebo rozsahy kategorií.  Určuje kategorie událostí v rámci aktuálního zprostředkovatele k zobrazení.  Pokud chcete přidat <xref:System.Diagnostics.Tracing.EventSource> poskytovatele, můžete použít pole kategorií můžete filtrovat podle klíčových slov trasování událostí pro Windows.  Protože klíčové slovo je bitová maska, můžete zadat, jsou nastaveny bity, které v masce řetězec celých čísel oddělených čárkou. Například "1,2" Nastaví bity prvního a druhého, a to se přeloží na 6 v desítkové soustavě.
+
+ V seznamu úroveň důležitosti můžete vyfiltrovat události, které mají význam nebo úroveň trasování událostí pro Windows, která je menší než zadanou hodnotou.
+
+### <a name="configure-an-existing-provider"></a>Konfigurace existujícího poskytovatele
+ Upravit nastavení, které jsou spojeny s existujícího poskytovatele, vyberte ho v seznamu a klikněte na tlačítko **upravit poskytovatele** tlačítko.  Můžete změnit název, identifikátor GUID a filtrování nastavení.
+
+### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtrovat značky data ze sestavy Vizualizátor souběžnosti
+ Pokud nechcete, aby data pro konkrétní zprostředkovatele, aby v budoucnu se zobrazí trasování, zrušte zaškrtnutí políčka u poskytovatele, který chcete odebrat.
+
+## <a name="files"></a>Soubory
+ Na **soubory** kartu, můžete určit adresáře v rámci které trasování jsou soubory uložené trasování pokaždé, když se shromažďují.  Vizualizátor souběžnosti generuje pro každou trasování, které shromažďuje čtyři soubory:
+
+- Soubor protokolu (ETL) jádra události trasování (<em>.</em> Kernel.etl*)
+
+- Soubor protokolu trasování událostí uživatelského režimu (<em>.</em> User.etl*)
+
+- Soubor dat Vizualizéru souběžnosti (<em>.</em> CVData*)
+
+- Soubor trasování vizualizátoru souběžnosti (<em>.</em> CVTrace*)
+
+  Příslušné dva soubory ETL ukládat data trasování a dva soubory Vizualizátor souběžnosti ukládejte zpracovaná data.  Nezpracovaných souborů ETL se obvykle používá po zpracování trasování.  Výběr **soubory odstranit událost trasování protokolu (ETL) po dokončení analýzy** zaškrtávací políčko snižuje množství dat trasování, která je uložena na disk.
+
+## <a name="see-also"></a>Viz také:
+- [Pouze můj kód](../profiling/just-my-code-threads-view.md)
+- [Značky Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md)

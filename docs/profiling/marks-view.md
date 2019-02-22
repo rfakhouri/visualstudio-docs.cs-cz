@@ -13,37 +13,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799185aa3ea1caa84c64d2887506d666fdc68577
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: badb2266e47fcbf0bb20c5fd6fd2f7f25a167997
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996373"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639983"
 ---
 # <a name="marks-view"></a>Zobrazení značek
-Zobrazení značky zobrazuje vzorkování a události trasování událostí pro Windows, které byly vloženy do aplikace.  
-  
- Výchozí značky, které jsou předem v sestavě označují začátek programu a konec programu.  
-  
- Data čítačů Windows z automaticky vygenerovaných značek jsou také zobrazena v tomto zobrazení. Další informace najdete v tématu [jak: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md).  
-  
- Chcete-li vytvořit filtr mezi dvěma značkami, vyberte značky, klikněte pravým tlačítkem a pak klikněte na tlačítko **přidat filtr podle značek** nebo **přidat filtr podle časového razítka**.  
-  
- Následující tabulka obsahuje definice sloupců, které jsou k dispozici v zobrazení značky.  
-  
- **ID značky**  
- Jedinečný identifikátor značky profilování.  
-  
- **Název značky**  
- Název události  
-  
- **Časové razítko**  
- Čas od zahájení profilování na dobu, která je zaznamenána událost.  
-  
- Data čítače výkonu Windows  
- Když jsou shromážděna data čítače výkonu Windows zobrazení hodnot ve sloupci, který má název čítače.  
-  
-## <a name="see-also"></a>Viz také:  
- [Přehled sestav výkonu](../profiling/performance-report-overview.md)   
- [Postupy: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; okna ovládacího prvku sběru dat](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+Zobrazení značky zobrazuje vzorkování a události trasování událostí pro Windows, které byly vloženy do aplikace.
+
+ Výchozí značky, které jsou předem v sestavě označují začátek programu a konec programu.
+
+ Data čítačů Windows z automaticky vygenerovaných značek jsou také zobrazena v tomto zobrazení. Další informace najdete v tématu [jak: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md).
+
+ Chcete-li vytvořit filtr mezi dvěma značkami, vyberte značky, klikněte pravým tlačítkem a pak klikněte na tlačítko **přidat filtr podle značek** nebo **přidat filtr podle časového razítka**.
+
+ Následující tabulka obsahuje definice sloupců, které jsou k dispozici v zobrazení značky.
+
+ **ID značky** jedinečný identifikátor značky profilování.
+
+ **Název značky** název události.
+
+ **Časové razítko** čas od zahájení profilování na dobu, která je zaznamenána událost.
+
+ Data čítače výkonu Windows při Windows je data čítače výkonu shromážděné hodnoty jsou zobrazeny ve sloupci, který má název čítače.
+
+## <a name="see-also"></a>Viz také:
+- [Přehled sestav výkonu](../profiling/performance-report-overview.md)
+- [Postupy: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [&#91;NIB&#93; okna ovládacího prvku sběru dat](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

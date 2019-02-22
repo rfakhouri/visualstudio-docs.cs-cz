@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918612"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635082"
 ---
 # <a name="understand-performance-collection-methods"></a>Vysvětlení metody kolekce výkonu
 
@@ -131,5 +131,5 @@ Data interakce vrstev, která jsou shromážděna nástroji pro profilaci
 
 ## <a name="see-also"></a>Viz také:
 
-[Postupy: Shromažďování dat o výkonu pro webový server](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
-[Průvodce profilací výkonu pro začátečníky](../profiling/beginners-guide-to-performance-profiling.md)
+[Postupy: Shromažďování dat o výkonu pro webový server](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+[příručka začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md)

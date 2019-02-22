@@ -12,38 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc08aed6f059a505bab6a1acb26c9e3a35bd5a65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031039"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613034"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
-Načte hodnotu registru.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_registerValue (   
-   DWORD      index,  
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `index`  
- [in] Hodnota z [cv_hreg_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md) výčet určující, které zaregistrovat k získání hodnoty z.  
-  
- `pRetVal`  
- [out] Vrátí aktuální hodnotu registru.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Bez ohledu na velikost `pRetVal` parametr, implementace by měla být uložena pouze co do registru obvykle obsahuje. Například 8bitový registr obsahuje pouze nejnižší 8 bitů předané hodnoty. Tato hodnota 8 bitů rozbalen do 64 bitů když tato metoda vrátí.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [CV_HREG_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md)
+Načte hodnotu registru.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_registerValue ( 
+   DWORD      index,
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `index`
+
+[in] Hodnota z [cv_hreg_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md) výčet určující, které zaregistrovat k získání hodnoty z.
+
+ `pRetVal`
+
+[out] Vrátí aktuální hodnotu registru.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Bez ohledu na velikost `pRetVal` parametr, implementace by měla být uložena pouze co do registru obvykle obsahuje. Například 8bitový registr obsahuje pouze nejnižší 8 bitů předané hodnoty. Tato hodnota 8 bitů rozbalen do 64 bitů když tato metoda vrátí.
+
+## <a name="see-also"></a>Viz také
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [CV_HREG_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md)

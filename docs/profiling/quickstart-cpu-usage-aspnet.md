@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d45cf1e1ee8cbb12af9f10733db9aed06e252ece
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996204"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634055"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (ASP.NET)
 
@@ -87,8 +87,8 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů 
-  
+##  <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů
+
 1.  Nejprve nastavte zarážku v aplikaci na tomto řádku kódu v `Simple` konstruktor:
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
 
     > [!TIP]
     > Nastavením dvou zarážek omezíte shromažďování dat jenom na analyzovanou část kódu.
-  
+
 1.  **Diagnostické nástroje** okno již viditelné, pokud jste ji vypnuli. Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
 1.  Klikněte na tlačítko **ladění** > **spustit ladění** (nebo **Start** na panelu nástrojů nebo **F5**).
@@ -189,7 +189,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
      Teď máte údaje o výkonu aplikace přesně pro oblast kódu spuštěnou mezi dvěma zarážkami.
 
      Profiler začne připravovat údaje o vlákně. Počkejte, až skončí.
-  
+
      V nástroji Využití procesoru se na kartě **Využití procesoru** zobrazí sestava.
 
      Teď můžete začít analyzovat data.
@@ -207,7 +207,7 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
 
 2. V seznamu funkcí dvakrát klikněte `MyProfilingApp_MVC.Models.ServerClass::GetNumber` funkce.
 
-    Když dvakrát kliknete funkce **volající/volaný** zobrazení se otevře v levém podokně. 
+    Když dvakrát kliknete funkce **volající/volaný** zobrazení se otevře v levém podokně.
 
     ![Zobrazení volající/volaný nástroje diagnostiky](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
 - [Analýza využití procesoru](../profiling/cpu-usage.md) další podrobné informace o nástroj využití procesoru.
 - Analýza využití procesoru bez připojen jiný ladicí program, nebo cílení na spuštění aplikace – Další informace najdete v tématu [shromažďovat data profilování bez ladění](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) v [spustit s nebo bez ladicího programu nástroje pro profilaci](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Viz také:  
+## <a name="see-also"></a>Viz také:
 
- [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)
+- [Profilace v sadě Visual Studio](../profiling/index.md)
+- [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

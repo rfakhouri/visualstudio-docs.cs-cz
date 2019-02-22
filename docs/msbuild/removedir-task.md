@@ -18,46 +18,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1268d82325daa068ca42684b5f191c3db87d9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3e2e3e629102b3ce1cfab1a998b18842c69666c3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009528"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645196"
 ---
 # <a name="removedir-task"></a>RemoveDir – úloha
-Odebere zadaný adresáře a všechny jeho soubory a podadresáře.  
-  
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `RemoveDir` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`Directories`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Určuje adresáře odstranit.|  
-|`RemovedDirectories`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje adresáře, které byly úspěšně odstraněny.|  
-  
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Příklad  
- Následující příklad odebere adresáře určené `OutputDirectory` a `DebugDirectory` vlastnosti. Tyto cesty jsou zpracovány jako relativní k adresáři projektu.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2005">  
-  
-    <PropertyGroup>  
-        <OutputDirectory>\Output\</OutputDirectory>  
-        <DebugDirectory>\Debug\</DebugDirectory>  
-    </PropertyGroup>  
-  
-    <Target Name="RemoveDirectories">  
-        <RemoveDir  
-            Directories="$(OutputDirectory);$(DebugDirectory)" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Viz také:  
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+Odebere zadaný adresáře a všechny jeho soubory a podadresáře.
+
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `RemoveDir` úloh.
+
+|Parametr|Popis|
+|---------------|-----------------|
+|`Directories`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Určuje adresáře odstranit.|
+|`RemovedDirectories`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje adresáře, které byly úspěšně odstraněny.|
+
+## <a name="remarks"></a>Poznámky
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Příklad
+ Následující příklad odebere adresáře určené `OutputDirectory` a `DebugDirectory` vlastnosti. Tyto cesty jsou zpracovány jako relativní k adresáři projektu.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2005">
+
+    <PropertyGroup>
+        <OutputDirectory>\Output\</OutputDirectory>
+        <DebugDirectory>\Debug\</DebugDirectory>
+    </PropertyGroup>
+
+    <Target Name="RemoveDirectories">
+        <RemoveDir
+            Directories="$(OutputDirectory);$(DebugDirectory)" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Viz také:
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

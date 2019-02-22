@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238eb138f7e7452e942047d776411d973a689c2a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931437"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623863"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-Získá umístění v paměti, kde by měla být založena na obrázku.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_imageBase (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí image navrhované základní hodnoty.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Kvůli konfliktům základní image image může přenese se změnami automaticky do umístění nevyužité paměti při spuštění. Tato metoda vrátí základní pomocný parametr (umístění v paměti navrhované), která byla uložená v modulu v době kompilace.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+Získá umístění v paměti, kde by měla být založena na obrázku.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_imageBase ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí image navrhované základní hodnoty.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Kvůli konfliktům základní image image může přenese se změnami automaticky do umístění nevyužité paměti při spuštění. Tato metoda vrátí základní pomocný parametr (umístění v paměti navrhované), která byla uložená v modulu v době kompilace.
+
+## <a name="see-also"></a>Viz také
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

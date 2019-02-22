@@ -11,27 +11,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d9942e7bc711889006184b5ec3dc491168183d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de8eb3b0e56351e9da0af799db40a29721df5df6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937636"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606379"
 ---
 # <a name="customize-performance-tools-report-views"></a>Přizpůsobení zobrazení sestav nástrojů výkonu
-Tato část popisuje, jak přizpůsobit sestavy, které jsou generovány s [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci.  
-  
+Tato část popisuje, jak přizpůsobit sestavy, které jsou generovány s [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci.
+
 ## <a name="common-tasks"></a>Běžné úkoly
-  
-|Úloha|Související obsah|  
-|----------|---------------------|  
-|**Přidání, odebrání a řazení podle sloupců v zobrazení sestavy:** Můžete určit sloupce, které chcete zobrazit v zobrazení založená na tabulku a můžete určit pořadí, ve kterém se sloupce zobrazí. Řádky v tabulce sestavy můžete také seřadit podle hodnot sloupců.|-   [Jak: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)|  
-|**Vylučte malé funkce z této sestavy:** Můžete vyloučit funkce, které jsou menší než zadaná prahová hodnota ze sestav.|-   [Jak: Konfigurace snížení šumu v zobrazeních sestav](../profiling/how-to-configure-noise-reduction-in-report-views.md)|  
-|**Filtrovat data v zobrazení sestavy**: Můžete omezit data, která se zobrazí v sestavě k segmentu čas spuštění profilování. Segment čas můžete určit pomocí časové osy grafu souhrnné zobrazení nebo dotaz, který definujete v filtr zobrazení sestav můžete určit časového úseku. Můžete také filtrovat sestav, které chcete zobrazit pouze funkce, které jsou definovány v rámci souborů s kódy.|-   [Filtrování zobrazení sestav](../profiling/filtering-report-views.md)<br />-   [Jak: Filtrování zobrazení sestav ze souhrnné časové osy](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Jak: Nástroje pro profilaci filtr zobrazení sestav k zobrazení pouze vlastního kódu](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtr zobrazení sestav výkonu](../profiling/performance-report-view-filter.md)|  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Zobrazení sestav výkonu](../profiling/performance-report-views.md)  
- Popisuje zobrazení, která můžete použít k analýze dat profilace.  
-  
-## <a name="see-also"></a>Viz také:  
- [Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)
+
+|Úloha|Související obsah|
+|----------|---------------------|
+|**Přidání, odebrání a řazení podle sloupců v zobrazení sestavy:** Můžete určit sloupce, které chcete zobrazit v zobrazení založená na tabulku a můžete určit pořadí, ve kterém se sloupce zobrazí. Řádky v tabulce sestavy můžete také seřadit podle hodnot sloupců.|-   [Jak: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)|
+|**Vylučte malé funkce z této sestavy:** Můžete vyloučit funkce, které jsou menší než zadaná prahová hodnota ze sestav.|-   [Jak: Konfigurace snížení šumu v zobrazeních sestav](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
+|**Filtrovat data v zobrazení sestavy**: Můžete omezit data, která se zobrazí v sestavě k segmentu čas spuštění profilování. Segment čas můžete určit pomocí časové osy grafu souhrnné zobrazení nebo dotaz, který definujete v filtr zobrazení sestav můžete určit časového úseku. Můžete také filtrovat sestav, které chcete zobrazit pouze funkce, které jsou definovány v rámci souborů s kódy.|-   [Filtrování zobrazení sestav](../profiling/filtering-report-views.md)<br />-   [Jak: Filtrování zobrazení sestav ze souhrnné časové osy](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Jak: Nástroje pro profilaci filtr zobrazení sestav k zobrazení pouze vlastního kódu](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtr zobrazení sestav výkonu](../profiling/performance-report-view-filter.md)|
+
+## <a name="related-sections"></a>Související oddíly
+- [Zobrazení sestav výkonu](../profiling/performance-report-views.md) popisuje zobrazení, která můžete použít k analýze dat profilace.
+
+## <a name="see-also"></a>Viz také:
+- [Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)

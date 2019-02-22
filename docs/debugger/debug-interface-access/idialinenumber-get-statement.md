@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e517eac8e3649328c56b77e86288fbb9a52ba436
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 397873a65176024327f371e9727b15984cd7d03f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977431"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632105"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
-Získá příznak označující, že informace o tomto řádku popisuje začátku příkazu namísto výrazu, ve zdrojovém programu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_statement (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` Pokud informace o tomto řádku popisuje počátku příkazu ve zdrojovém programu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Příkazy může zahrnovat více řádků. Tato metoda znamená, pokud přidružený řádek číslo označuje začátek Víceřádkový příkazu.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Získá příznak označující, že informace o tomto řádku popisuje začátku příkazu namísto výrazu, ve zdrojovém programu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_statement ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` Pokud informace o tomto řádku popisuje počátku příkazu ve zdrojovém programu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Příkazy může zahrnovat více řádků. Tato metoda znamená, pokud přidružený řádek číslo označuje začátek Víceřádkový příkazu.
+
+## <a name="see-also"></a>Viz také
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

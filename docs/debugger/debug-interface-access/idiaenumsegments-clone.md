@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 572db4071fecc9bb235bc79a8d0c7b182b907cb4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9992b17155601284387981a9b424a77d3d9b5580
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070736"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616609"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
-Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumSegments** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- ppenum  
- [out] Vrátí [idiaenumsegments –](../../debugger/debug-interface-access/idiaenumsegments.md) objekt, který obsahuje duplicitní čítače výčtu. Segmenty nejsou duplicitní, pouze enumerátor.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumSegments** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ ppenum
+
+[out] Vrátí [idiaenumsegments –](../../debugger/debug-interface-access/idiaenumsegments.md) objekt, který obsahuje duplicitní čítače výčtu. Segmenty nejsou duplicitní, pouze enumerátor.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

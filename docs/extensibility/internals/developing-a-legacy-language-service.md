@@ -16,52 +16,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20a2d36ef9ddfd27bfa41619bccc36bd53c1ed6d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941664"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631871"
 ---
 # <a name="develop-a-legacy-language-service"></a>Vývoj služby starší verze jazyka
-Tento oddíl obsahuje odkazy na témata, které umožňují vytvoření služby starší verze jazyka.  
-  
- Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace služby jazyka najdete v tématu [jazyk a Editor rozšíření služeb](../../extensibility/editor-and-language-service-extensions.md).  
-  
+Tento oddíl obsahuje odkazy na témata, které umožňují vytvoření služby starší verze jazyka.
+
+ Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace služby jazyka najdete v tématu [jazyk a Editor rozšíření služeb](../../extensibility/editor-and-language-service-extensions.md).
+
 > [!NOTE]
->  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Model služby starší verze jazyka](../../extensibility/internals/model-of-a-legacy-language-service.md)  
- Poskytuje služby minimální jazyka pro model [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] základní editor. Tento model jako vodítko můžete použít k vytváření vlastních služeb jazyka.  
-  
- [Rozhraní služby starší verze jazyka](../../extensibility/internals/legacy-language-service-interfaces.md)  
- Tento článek popisuje objekty nezbytné k implementaci služby jazyka a poskytuje seznam další objekty, které můžete použít k zajištění zvýrazňování syntaxe, metoda dat a další funkce.  
-  
- [Zachytit příkazy služby starší verze jazyka](../../extensibility/internals/intercepting-legacy-language-service-commands.md)  
- Popisuje, jak vložit příkaz filtru do služby jazyka pro příkazy zachycení, které by jinak zpracovat zobrazení textu.  
-  
- [Registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service2.md)  
- Poskytuje informace o tom, jak zaregistrovat vaše služba jazyka pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
- [Podpora služby jazyka pro ladění](../../extensibility/internals/language-service-support-for-debugging.md)  
- Popisuje, jak služba jazyka může poskytovat funkce pro podporu ladicího programu.  
-  
- [Kontrolní seznam: Vytvoření služby starší verze jazyka](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
- Poskytuje podrobné pokyny pro vytváření a integrace language service pro základní editor.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- Popisuje, jak implementovat, zvýrazňování syntaxe ve vaší službě jazyka.  
-  
- [Dokončování příkazů ve službě starší verze jazyka](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- Tento článek popisuje dokončování příkazů, proces, podle kterého služba jazyka pomáhá uživatelům dokončit – klíčové slovo jazyka nebo element, kterou zahájil psát.  
-  
- [Informace o parametrech ve službě starší verze jazyka](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
- Popisuje, jak získat tipy metodu přetížených funkcí a metod.  
-  
- [Postupy: Poskytování podpory skrytého textu ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
- Vysvětluje účel oblasti skrytého textu a poskytuje pokyny o tom, jak implementovat oblasti skrytého textu.  
-  
- [Postupy: Rozšířená podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+>  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
+
+## <a name="in-this-section"></a>V tomto oddílu
+- [Model služby starší verze jazyka](../../extensibility/internals/model-of-a-legacy-language-service.md)
+
+ Poskytuje služby minimální jazyka pro model [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] základní editor. Tento model jako vodítko můžete použít k vytváření vlastních služeb jazyka.
+
+- [Rozhraní služby starší verze jazyka](../../extensibility/internals/legacy-language-service-interfaces.md)
+
+ Tento článek popisuje objekty nezbytné k implementaci služby jazyka a poskytuje seznam další objekty, které můžete použít k zajištění zvýrazňování syntaxe, metoda dat a další funkce.
+
+- [Zachytit příkazy služby starší verze jazyka](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+
+ Popisuje, jak vložit příkaz filtru do služby jazyka pro příkazy zachycení, které by jinak zpracovat zobrazení textu.
+
+- [Registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service2.md)
+
+ Poskytuje informace o tom, jak zaregistrovat vaše služba jazyka pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+- [Podpora služby jazyka pro ladění](../../extensibility/internals/language-service-support-for-debugging.md)
+
+ Popisuje, jak služba jazyka může poskytovat funkce pro podporu ladicího programu.
+
+- [Kontrolní seznam: Vytvoření služby starší verze jazyka](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+
+ Poskytuje podrobné pokyny pro vytváření a integrace language service pro základní editor.
+
+## <a name="related-sections"></a>Související oddíly
+- [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+
+ Popisuje, jak implementovat, zvýrazňování syntaxe ve vaší službě jazyka.
+
+- [Dokončování příkazů ve službě starší verze jazyka](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
+
+ Tento článek popisuje dokončování příkazů, proces, podle kterého služba jazyka pomáhá uživatelům dokončit – klíčové slovo jazyka nebo element, kterou zahájil psát.
+
+- [Informace o parametrech ve službě starší verze jazyka](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
+
+ Popisuje, jak získat tipy metodu přetížených funkcí a metod.
+
+- [Postupy: Poskytování podpory skrytého textu ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+
+ Vysvětluje účel oblasti skrytého textu a poskytuje pokyny o tom, jak implementovat oblasti skrytého textu.
+
+- [Postupy: Rozšířená podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+
  Vysvětluje dvě možnosti, které rozšiřují podpora osnovy pro váš jazyk nad rámec podpora *sbalit do definic* příkazu.

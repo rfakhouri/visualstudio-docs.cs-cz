@@ -18,46 +18,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ebb74c201a730ffe256670b936ef2a886a24e95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941585"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643064"
 ---
 # <a name="message-task"></a>úloha zprávy
-Zaznamená zprávu během sestavení.  
-  
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `Message` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`Importance`|Volitelné `String` parametru.<br /><br /> Určuje důležitost zprávy. Tento parametr může mít hodnotu `high`, `normal` nebo `low`. Výchozí hodnota je `normal`.|  
-|`Text`|Volitelné `String` parametru.<br /><br /> Text chyby do protokolu.|  
-  
-## <a name="remarks"></a>Poznámky  
- `Message` Úloha umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty se mají problém zprávy protokolovacích nástrojů na jiné kroky v procesu sestavení.  
-  
- Pokud `Condition` vyhodnotí jako parametr `true`, hodnota `Text` parametr se zaznamenají a sestavení budou i nadále spouštět. Pokud `Condition` neexistuje parametr, se do protokolu zapíše text zprávy. Další informace o protokolování naleznete v tématu [získat protokoly o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md).  
-  
- Ve výchozím nastavení je zpráva odeslána k protokolovací nástroj konzoly nástroje MSBuild. To se dá změnit tak, že nastavíte <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> parametru. Protokolovací nástroj interpretuje `Importance` parametru.  
-  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Příklad  
- Následující příklad kódu zprávy protokolu pro všechna registrovaná protokolovacích nástrojů.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="DisplayMessages">  
-        <Message Text="Project File Name = $(MSBuildProjectFile)" />  
-        <Message Text="Project Extension = $(MSBuildProjectExtension)" />  
-    </Target>  
-    ...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)
+Zaznamená zprávu během sestavení.
+
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `Message` úloh.
+
+|Parametr|Popis|
+|---------------|-----------------|
+|`Importance`|Volitelné `String` parametru.<br /><br /> Určuje důležitost zprávy. Tento parametr může mít hodnotu `high`, `normal` nebo `low`. Výchozí hodnota je `normal`.|
+|`Text`|Volitelné `String` parametru.<br /><br /> Text chyby do protokolu.|
+
+## <a name="remarks"></a>Poznámky
+ `Message` Úloha umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty se mají problém zprávy protokolovacích nástrojů na jiné kroky v procesu sestavení.
+
+ Pokud `Condition` vyhodnotí jako parametr `true`, hodnota `Text` parametr se zaznamenají a sestavení budou i nadále spouštět. Pokud `Condition` neexistuje parametr, se do protokolu zapíše text zprávy. Další informace o protokolování naleznete v tématu [získat protokoly o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md).
+
+ Ve výchozím nastavení je zpráva odeslána k protokolovací nástroj konzoly nástroje MSBuild. To se dá změnit tak, že nastavíte <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> parametru. Protokolovací nástroj interpretuje `Importance` parametru.
+
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Příklad
+ Následující příklad kódu zprávy protokolu pro všechna registrovaná protokolovacích nástrojů.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="DisplayMessages">
+        <Message Text="Project File Name = $(MSBuildProjectFile)" />
+        <Message Text="Project Extension = $(MSBuildProjectExtension)" />
+    </Target>
+    ...
+</Project>
+```
+
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)

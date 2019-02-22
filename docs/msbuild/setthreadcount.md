@@ -15,28 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4bfb8e1f60ed668039011841e12021e0f0702f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34040d368a531d257ef72d6e883cb6e151f28a0b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942006"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636200"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
-Nastaví počet globální vláken a přiřadí tento počet aktuální vlákno.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cmd  
-HRESULT WINAPI SetThreadCount(int threadCount);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- [in] `threadCount`  
- Počet vláken.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- **HRESULT** s **SUCCEEDED** sadu bitů, pokud byl aktualizován počet vláken.  
-  
-## <a name="requirements"></a>Požadavky  
+Nastaví počet globální vláken a přiřadí tento počet aktuální vlákno.
+
+## <a name="syntax"></a>Syntaxe
+
+```cmd
+HRESULT WINAPI SetThreadCount(int threadCount);
+```
+
+#### <a name="parameters"></a>Parametry
+- [in] `threadCount` Počet vláken.
+
+## <a name="return-value"></a>Návratová hodnota
+ **HRESULT** s **SUCCEEDED** sadu bitů, pokud byl aktualizován počet vláken.
+
+## <a name="requirements"></a>Požadavky
  **Záhlaví:** *FileTracker.h*

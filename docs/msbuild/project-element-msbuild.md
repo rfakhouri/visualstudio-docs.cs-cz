@@ -19,40 +19,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 598e802f9868399073bba7a6f1bc1f2278af83f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921043"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635134"
 ---
 # <a name="project-element-msbuild"></a>Project – element (MSBuild)
-Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.  
+Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
-<Project InitialTargets="TargetA;TargetB"  
-         DefaultTargets="TargetC;TargetD"  
-         TreatAsLocalProperty="PropertyA;PropertyB"  
+```xml
+<Project InitialTargets="TargetA;TargetB"
+         DefaultTargets="TargetC;TargetD"
+         TreatAsLocalProperty="PropertyA;PropertyB"
          ToolsVersion=<version number>
          Sdk="name[/version]"
-         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Sdk... />
-    <Choose>... </Choose>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Target>... </Target>  
-    <UsingTask.../>  
-    <ProjectExtensions>... </ProjectExtensions>  
-    <Import... />  
-</Project>  
-```  
+    <Choose>... </Choose>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Target>... </Target>
+    <UsingTask.../>
+    <ProjectExtensions>... </ProjectExtensions>
+    <Import... />
+</Project>
+```
 
-## <a name="attributes-and-elements"></a>Atributy a elementy  
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
+## <a name="attributes-and-elements"></a>Atributy a elementy
+ Následující části popisují atributy, podřízené prvky a nadřazené prvky.
 
-### <a name="attributes"></a>Atributy  
+### <a name="attributes"></a>Atributy
 
 | Atribut | Popis |
 |------------------------| - |
@@ -63,7 +63,7 @@ Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/interna
 | `TreatAsLocalProperty` | Nepovinný atribut.<br /><br /> Názvy vlastností, které se za globální. Tento atribut zabrání přepsání hodnoty vlastností, které jsou nastaveny v souboru projektu nebo cílů a všechny následné importy specifické vlastnosti příkazového řádku. Víc vlastností se středníkem (;) s oddělovači.<br /><br /> Za normálních okolností se globální vlastnosti přepisují hodnoty vlastností, které jsou nastaveny v souboru projektu nebo cílů. Pokud vlastnost je uvedená v `TreatAsLocalProperty` hodnota nepřepíše hodnota globální vlastnosti hodnoty vlastností, které jsou nastaveny v souboru a všechny následné importy. Další informace najdete v tématu [jak: Sestavení stejných zdrojových souborů s různými možnostmi](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Poznámka:**  Nastavení globální vlastnosti příkazového řádku s použitím **– vlastnost** (nebo **-p**) přepnutí. Můžete také nastavit nebo upravit globální vlastnosti pro podřízené projekty v sestaveních s více projekty pomocí `Properties` atribut úlohy nástroje MSBuild. Další informace najdete v tématu [úlohy nástroje MSBuild](../msbuild/msbuild-task.md). |
 | `Xmlns` | Nepovinný atribut.<br /><br /> -Li zadána, `xmlns` atribut musí mít hodnotu `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
-### <a name="child-elements"></a>Podřízené prvky  
+### <a name="child-elements"></a>Podřízené prvky
 
 | Prvek | Popis |
 | - | - |
@@ -78,11 +78,11 @@ Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/interna
 | [Cíl](../msbuild/target-element-msbuild.md) | Volitelný element.<br /><br /> Obsahuje sadu úkolů pro [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] postupně provést. Úlohy je určené vlastností [úloh](../msbuild/task-element-msbuild.md) elementu. Může být nula nebo více `Target` prvky v projektu. |
 | [Usingtask –](../msbuild/usingtask-element-msbuild.md) | Volitelný element.<br /><br /> Poskytuje způsob, jak zaregistrovat úlohy v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Může být nula nebo více `UsingTask` prvky v projektu. |
 
-### <a name="parent-elements"></a>Nadřazené prvky  
- Žádné  
+### <a name="parent-elements"></a>Nadřazené prvky
+ Žádné
 
-## <a name="see-also"></a>Viz také:  
- [Postupy: Zadejte cíl, které nejdřív sestavit](../msbuild/how-to-specify-which-target-to-build-first.md)   
- [Odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md)   
- [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Viz také:
+- [Postupy: Zadejte cíl, které nejdřív sestavit](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [Odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md)
+- [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

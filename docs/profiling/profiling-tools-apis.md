@@ -8,28 +8,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8577cb0c456d3cf3ea295928a9bfd1df59d65c03
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35b1f0a56cc2aee3aafe31ca786d508d2162e50c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040226"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634757"
 ---
 # <a name="profiling-tools-apis"></a>Rozhraní API nástrojů pro profilaci
-Můžete vložit spravované nebo nativní metody rozhraní API, aby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci k řízení shromažďování dat profilování. Tato část popisuje metody rozhraní API a jejich použití.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Referenční dokumentace rozhraní Visual Studio Profiler API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)  
- Popisuje nástroje pro profilaci sady C++ metody.  
-  
- <xref:Microsoft.VisualStudio.Profiler>  
- Popisuje nástroje pro profilaci .NET metody.  
-  
- [Návod: Použití rozhraní API profileru](../profiling/walkthrough-using-profiler-apis.md)  
- Další informace o použití metody nástroje pro profilaci .NET v tomto kompletní příklad.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Řízení shromažďování dat](../profiling/controlling-data-collection.md)  
-  
-## <a name="see-also"></a>Viz také:  
- [Prohlížeč výkonu](../profiling/performance-explorer.md)
+
+Můžete vložit spravované nebo nativní metody rozhraní API, aby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci k řízení shromažďování dat profilování. Tato část popisuje metody rozhraní API a jejich použití.
+
+## <a name="in-this-section"></a>V tomto oddílu
+
+[Referenční dokumentace rozhraní Visual Studio Profiler API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+
+Popisuje nástroje pro profilaci sady C++ metody.
+
+<xref:Microsoft.VisualStudio.Profiler>
+
+Popisuje nástroje pro profilaci .NET metody.
+
+[Návod: Použití rozhraní API profileru](../profiling/walkthrough-using-profiler-apis.md)
+
+Další informace o použití metody nástroje pro profilaci .NET v tomto kompletní příklad.
+
+## <a name="related-sections"></a>Související oddíly
+
+[Řízení shromažďování dat](../profiling/controlling-data-collection.md)
+
+## <a name="see-also"></a>Viz také:
+
+- [Prohlížeč výkonu](../profiling/performance-explorer.md)

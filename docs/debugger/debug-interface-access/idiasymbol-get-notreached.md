@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3ef7418a232c5c6fa06062fbe6214f55e40b8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d448fe9c8eb3379d4d66bbc174626a3c3998a737
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008527"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639307"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
-Získá příznak, který určuje, zda se nedospělo funkce nebo popisek.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_notReached(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pFlag  
- [out] Vrátí `TRUE` Pokud funkce nebo popisek se nedospělo; v opačném případě vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Získá příznak, který určuje, zda se nedospělo funkce nebo popisek.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_notReached(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pFlag
+
+[out] Vrátí `TRUE` Pokud funkce nebo popisek se nedospělo; v opačném případě vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="requirements"></a>Požadavky  
-  
-|Požadavek|Popis|  
-|-----------------|-----------------|  
-|Záhlaví:|dia2.h|  
-|Verze:|Ve verzi 8.0 DIA SDK|  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="requirements"></a>Požadavky
+
+|Požadavek|Popis|
+|-----------------|-----------------|
+|Záhlaví:|dia2.h|
+|Verze:|Ve verzi 8.0 DIA SDK|
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

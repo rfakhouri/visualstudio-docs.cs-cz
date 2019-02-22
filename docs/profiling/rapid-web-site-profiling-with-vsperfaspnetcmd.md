@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 617e032805f0074b813bc3a7dc5a66047186861b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 228200a3439deefd44ba69b205c1fb7e27fb98ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989715"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632612"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotová profilace stránek pomocí VSPerfASPNETCmd webových
 
@@ -27,7 +27,7 @@ ms.locfileid: "54989715"
  V některých scénářích, jako je shromažďování dat souběžnosti nebo pozastavování a obnovování profilace, s použitím **VSPerfCmd** upřednostňuje profilování.
 
 > [!NOTE]
->  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.  
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
 
 ## <a name="profile-an-aspnet-application"></a>Profilovat aplikaci ASP.NET
 

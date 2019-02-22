@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1658944b8db6df25111fb8c490b6eeda9ff016ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8175fc05b05bfd3375fe0dcc0702741266801137
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917026"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619170"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
-Získá příznak, který označuje, zda oddíl obsahuje spustitelný kód.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_code (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` pokud obsahuje spustitelný kód; v opačném případě vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Získá příznak, který označuje, zda oddíl obsahuje spustitelný kód.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_code ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` pokud obsahuje spustitelný kód; v opačném případě vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

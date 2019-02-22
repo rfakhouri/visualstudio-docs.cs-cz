@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873741"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636512"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Postupy: Mezipaměť dat pro použití v režimu offline nebo na serveru
   Můžete označit položku dat do mezipaměti v dokumentu, tak, aby byly k dispozici offline. To také umožňuje pro data v dokumentu, abychom manipulovat jiným kódem, když je dokument uložen na serveru.
@@ -60,4 +60,8 @@ ms.locfileid: "54873741"
 4.  V **vlastnosti** okno, nastaveno **modifikátory** vlastnost **veřejné** (ve výchozím nastavení je **interní**).
 
 ## <a name="see-also"></a>Viz také:
- [Ukládat data do mezipaměti](../vsto/caching-data.md) [jak: Zdroj dat v dokumentu systému Office do mezipaměti prostřednictvím kódu programu](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [jak: Mezipaměti dat v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md) [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md) [ukládání dat](../data-tools/saving-data.md)
+- [Data v mezipaměti](../vsto/caching-data.md)
+- [Postupy: Zdroj dat v dokumentu systému Office do mezipaměti prostřednictvím kódu programu](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Postupy: Data v mezipaměti v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Ukládání dat](../data-tools/saving-data.md)

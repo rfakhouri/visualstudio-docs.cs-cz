@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ade955f53f7e3d3823580934f623c9b0157f04c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c61e305868045664af7333bbb7dcce0beed54370
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042228"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623174"
 ---
 # <a name="wpf-targets-files"></a>WPF – soubory .targets
-[!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] rozšiřuje [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] tak, že přidáte sadu [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)]-konkrétní úlohy, které jsou zkombinované do zvláštního *.targets* souboru *Microsoft.WinFX.targets*. Tento soubor kombinuje sadu [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] úlohy, které jsou nutné k vytvoření [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] projekt [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].  
-  
-## <a name="see-also"></a>Viz také:  
- [MSBuild – soubory .targets](../msbuild/msbuild-dot-targets-files.md)   
- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
- [Sestavení aplikace WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+[!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] rozšiřuje [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] tak, že přidáte sadu [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)]-konkrétní úlohy, které jsou zkombinované do zvláštního *.targets* souboru *Microsoft.WinFX.targets*. Tento soubor kombinuje sadu [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] úlohy, které jsou nutné k vytvoření [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] projekt [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].
+
+## <a name="see-also"></a>Viz také:
+- [MSBuild – soubory .targets](../msbuild/msbuild-dot-targets-files.md)
+- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)
+- [Sestavení aplikace WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

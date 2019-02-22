@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870032"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631962"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Principy spoluvytváření a doplňků
 
@@ -26,4 +26,4 @@ Spoluvytváření je funkcí aplikace Excel pro Windows desktop, který slouží
 Poznámka: Spoluvytváření for Windows Desktop Excel byla zavedena v 2017 a je aktuálně dostupné pro předplatitele Office 365. Uživatelé, kteří si zakoupili trvalou licenci na Office 2016 nebo starší aktuálně nemají přístup k funkci coauthoring. (Excelu Online, Excel pro Android, aplikace Excel pro iOS a mobilní aplikace Excel ve Windows Store taky podporují spoluvytváření).
 
 ## <a name="see-also"></a>Viz také:
-[Řešení pro aplikaci Excel](./excel-solutions.md)
+- [Řešení pro aplikaci Excel](./excel-solutions.md)

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987467"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628322"
 ---
 # <a name="cc-assertions"></a>Kontrolní výrazy jazyka C/C++
 Příkaz kontrolní výraz určuje podmínku, která očekáváte, že na hodnotu true na místě v aplikaci. Pokud tato podmínka není splněna, výraz se nezdaří, dojde k přerušení provádění programu a [chyba kontrolního výrazu dialogovému oknu](../debugger/assertion-failed-dialog-box.md) se zobrazí.
@@ -46,7 +46,7 @@ Jazyk Visual C++ podporuje kontrolní výraz příkazy, které jsou založeny na
 
 - Kontrolní výrazy CRT pro programy, které používají knihovny run-time C.
 
-- ANSI [vyhodnocení funkce](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) pro programy C/C++.  
+- ANSI [vyhodnocení funkce](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) pro programy C/C++.
 
   Kontrolní výrazy můžete zachytávat chyby logiky, zkontrolujte výsledky operace a testování chybové stavy, které by měl zpracovat.
 
@@ -63,7 +63,7 @@ Jazyk Visual C++ podporuje kontrolní výraz příkazy, které jsou založeny na
 
 - [MFC ASSERT_VALID a CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [Omezení AssertValid](#BKMK_Limitations_of_AssertValid)  
+- [Omezení AssertValid](#BKMK_Limitations_of_AssertValid)
 
   [Použití kontrolních výrazů](#BKMK_Using_assertions)
 
@@ -339,6 +339,7 @@ Tento kód závisí na kontrolní výraz příkazu pro zpracování chybového s
 [V tomto tématu](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Viz také
-[Zabezpečení ladicího programu](../debugger/debugger-security.md)  
-[Ladění nativního kódu](../debugger/debugging-native-code.md)  
-[Kontrolní výrazy ve spravovaném kódu](../debugger/assertions-in-managed-code.md)
+
+- [Zabezpečení ladicího programu](../debugger/debugger-security.md)
+- [Ladění nativního kódu](../debugger/debugging-native-code.md)
+- [Kontrolní výrazy ve spravovaném kódu](../debugger/assertions-in-managed-code.md)

@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f532b55ffd401b88471921cb41d47410604dfa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939371"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614724"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-Získá příznak, který určuje, zda blok obsahuje vstupního bodu funkce.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_functionStart (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` pokud blok obsahuje vstupní bod; v opačném případě vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Je možné, že rámec zásobníku nebudou spuštění funkce, protože rámce představuje nějaké vložená metoda nebo funkce vloženy do funkce.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Získá příznak, který určuje, zda blok obsahuje vstupního bodu funkce.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_functionStart ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` pokud blok obsahuje vstupní bod; v opačném případě vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Je možné, že rámec zásobníku nebudou spuštění funkce, protože rámce představuje nějaké vložená metoda nebo funkce vloženy do funkce.
+
+## <a name="see-also"></a>Viz také
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

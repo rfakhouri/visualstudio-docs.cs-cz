@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b5764ec6d996e4e76d509e0cfe65ec34237d581
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15e0d58c49a66416371c7e66e12f469e6d224c91
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931307"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637162"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Vlastní (Přístup k rozhraní ladění SDK)
-Některé kompilátory zavedeny symboly, které nejsou uvedené žádné typy standardní lexikální symbol. Tyto symboly jsou identifikovány `SymTagCustom` značky.  
-  
-## <a name="properties"></a>Vlastnosti  
- V následující tabulce jsou uvedeny vlastnosti, které jsou platné pro tento typ symbolu.  
-  
-|Vlastnost|Datový typ|Popis|  
-|--------------|---------------|-----------------|  
-|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Pole data přidružená k symbolu.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagCustom` (jeden z [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|  
-  
-## <a name="see-also"></a>Viz také  
- [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
+Některé kompilátory zavedeny symboly, které nejsou uvedené žádné typy standardní lexikální symbol. Tyto symboly jsou identifikovány `SymTagCustom` značky.
+
+## <a name="properties"></a>Vlastnosti
+ V následující tabulce jsou uvedeny vlastnosti, které jsou platné pro tento typ symbolu.
+
+|Vlastnost|Datový typ|Popis|
+|--------------|---------------|-----------------|
+|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Pole data přidružená k symbolu.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagCustom` (jeden z [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|
+
+## <a name="see-also"></a>Viz také
+- [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

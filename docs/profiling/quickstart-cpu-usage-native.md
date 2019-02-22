@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 280a721cd841014823382194465816f6b132d5a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000702"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633704"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (C++)
 
@@ -57,64 +57,64 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
     #include <mutex>
     #include <random>
     #include <functional>
-    
+
     //.cpp file code:
-    
+
     static constexpr int MIN_ITERATIONS = std::numeric_limits<int>::max() / 1000;
     static constexpr int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
     long long m_totalIterations = 0;
     std::mutex m_totalItersLock;
-    
+
     int getNumber()
     {
-    
+
         std::uniform_int_distribution<int> num_distribution(MIN_ITERATIONS, MAX_ITERATIONS);
         std::mt19937 random_number_engine; // pseudorandom number generator
         auto get_num = std::bind(num_distribution, random_number_engine);
         int random_num = get_num();
-    
+
         auto result = 0;
         {
             std::lock_guard<std::mutex> lock(m_totalItersLock);
             m_totalIterations += random_num;
         }
-        // we're just spinning here  
-        // to increase CPU usage 
+        // we're just spinning here
+        // to increase CPU usage
         for (int i = 0; i < random_num; i++)
         {
             result = get_num();
         }
         return result;
     }
-    
+
     void doWork()
     {
         std::wcout << L"The doWork function is running on another thread." << std::endl;
-    
-        auto x = getNumber();    
+
+        auto x = getNumber();
     }
-    
+
     int main()
     {
         std::vector<std::thread> threads;
-    
+
         for (int i = 0; i < 10; ++i) {
-    
+
             threads.push_back(std::thread(doWork));
             std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
         }
-    
+
         for (auto& thread : threads) {
             thread.join();
         }
-    
+
         return 0;
     }
     ```
-  
-## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů 
-  
+
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů
+
 1.  Nejprve nastavte zarážku v aplikaci na tomto řádku kódu v `main` funkce:
 
     `for (int i = 0; i < 10; ++i) {`
@@ -127,7 +127,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
 
     > [!TIP]
     > Nastavením dvou zarážek omezíte shromažďování dat jenom na analyzovanou část kódu.
-  
+
 3.  **Diagnostické nástroje** okno již viditelné, pokud jste ji vypnuli. Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
 4.  Klikněte na tlačítko **ladění** > **spustit ladění** (nebo **Start** na panelu nástrojů nebo **F5**).
@@ -147,7 +147,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
      Teď máte údaje o výkonu aplikace přesně pro oblast kódu spuštěnou mezi dvěma zarážkami.
 
      Profiler začne připravovat údaje o vlákně. Počkejte, až skončí.
-  
+
      V nástroji Využití procesoru se na kartě **Využití procesoru** zobrazí sestava.
 
      Teď můžete začít analyzovat data.
@@ -165,7 +165,7 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
 
 2. V seznamu funkcí dvakrát klikněte `getNumber` funkce.
 
-    Když dvakrát kliknete funkce **volající/volaný** zobrazení se otevře v levém podokně. 
+    Když dvakrát kliknete funkce **volající/volaný** zobrazení se otevře v levém podokně.
 
     ![Zobrazení Volající/volaný v diagnostických nástrojích](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
@@ -184,7 +184,7 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
 - [Analýza využití procesoru](../profiling/cpu-usage.md) další podrobné informace o nástroj využití procesoru.
 - Analýza využití procesoru bez připojen jiný ladicí program, nebo cílení na spuštění aplikace – Další informace najdete v tématu [shromažďovat data profilování bez ladění](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) v [spustit s nebo bez ladicího programu nástroje pro profilaci](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Viz také:  
+## <a name="see-also"></a>Viz také:
 
- [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)
+- [Profilace v sadě Visual Studio](../profiling/index.md)
+- [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883595eb6cd7565250de216bcae23eba86bf5074
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f570009ad937e955853a616987a08583f2ba2237
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937020"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632404"
 ---
 # <a name="unzip-task"></a>Rozbalte úloh
 Unzips *ZIP* archivní úrovně do zadaného umístění.
 
 >[!NOTE]
 >`Unzip` Úloh je k dispozici v MSBuild 15.8 a vyšší pouze.
-  
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `Unzip` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
+
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `Unzip` úloh.
+
+|Parametr|Popis|
+|---------------|-----------------|
 |`DestinationFolder`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametr<br /><br /> Určuje cílovou složku dekomprimovat soubor.|
 |`OverwriteReadOnlyFiles`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, přepíše soubory jen pro čtení. Výchozí hodnota je `false`.|
 |`SkipUnchangedFiles`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, přeskočí rozzipovávání soubory, které jsou beze změny. Výchozí hodnota je `true`. Úloha `Unzip` považuje soubory za nezměněné, pokud mají stejnou velikost a je uveden stejný čas poslední aktualizace.|
 |`SourceFiles`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Určuje jeden nebo více souborů k rozbalení. Při zadávání více souborů jsou rozbaleny v pořadí do stejné složky.|
-  
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Příklad  
+
+## <a name="remarks"></a>Poznámky
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Příklad
  V následujícím příkladu unzips archiv a přepíše všechny soubory jen pro čtení.
-  
-```xml  
+
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <Target Name="UnzipArchive" BeforeTargets="Build">
@@ -64,7 +64,7 @@ Unzips *ZIP* archivní úrovně do zadaného umístění.
 
 </Project>
 ```
-  
-## <a name="see-also"></a>Viz také:  
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+
+## <a name="see-also"></a>Viz také:
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

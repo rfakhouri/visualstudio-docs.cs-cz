@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089263"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615543"
 ---
 # <a name="custom-native-etw-heap-events"></a>Vlastní nativní události haldy Trasování událostí pro Windows
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Tuto knihovnu je možné snadno v jazyce C a C++.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > Tohoto dekoratéru oznamuje kompilátoru, že tato funkce je volání alokátoru.  Každé volání funkce se výstupní adresy callsite, velikost instrukcí volání a ID typu nového objektu do nového `S_HEAPALLOCSITE` symbol.  Při přidělení zásobník volání Windows bude generovat události trasování událostí pro Windows pomocí těchto informací.  Nástroj profiler paměti vás zásobník volání, hledá odpovídající návratovou adresu `S_HEAPALLOCSITE` symbolů a typeId informace v symbolu se používá k zobrazení běhového typu přidělení.
    >
@@ -79,7 +79,7 @@ Tuto knihovnu je možné snadno v jazyce C a C++.
    ```
 
    Pokud používáte C, použijte `OpenHeapTracker` namísto toho funkci.  Tato funkce vrátí popisovač, který budete používat při volání další funkce sledování:
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Tuto knihovnu je možné snadno v jazyce C a C++.
    ```
 
 ## <a name="track-memory-usage"></a>Sledovat využití paměti
-Pomocí těchto volání na místě využití vlastních haldy lze nyní sledovat pomocí standardní **využití paměti** nástroje v sadě Visual Studio.  Další informace o tom, jak tento nástroj použít, najdete v tématu [využití paměti](../profiling/memory-usage.md) dokumentaci. Zkontrolujte, jestli že je povolená profilace haldy pomocí snímků, jinak se nezobrazí využití vlastních haldy, zobrazí. 
+Pomocí těchto volání na místě využití vlastních haldy lze nyní sledovat pomocí standardní **využití paměti** nástroje v sadě Visual Studio.  Další informace o tom, jak tento nástroj použít, najdete v tématu [využití paměti](../profiling/memory-usage.md) dokumentaci. Zkontrolujte, jestli že je povolená profilace haldy pomocí snímků, jinak se nezobrazí využití vlastních haldy, zobrazí.
 
 ![Povolit profilaci haldy](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ I s standardní haldou Windows můžete také použít tento nástroj můžete p
 > Visual Studio obsahuje taky **využití paměti** nástroj v **profilaci výkonu** sadu nástrojů, který je povolený z **ladění**  >   **Profiler výkonu** klikněte na možnost nebo **Alt**+**F2** klávesové kombinace.  Tato funkce neobsahuje haldy sledování a nebudou zobrazovat vlastní haldy, jak je popsáno zde.  Pouze **diagnostické nástroje** okno, které můžete povolit **ladění** > **Windows** > **zobrazit diagnostické nástroje**  nabídky, nebo **Ctrl**+**Alt**+**F2** klávesové kombinace, obsahuje tato funkce.
 
 ## <a name="see-also"></a>Viz také:
-[Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)  
-[Využití paměti](../profiling/memory-usage.md)
+[Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)
+[využití paměti](../profiling/memory-usage.md)

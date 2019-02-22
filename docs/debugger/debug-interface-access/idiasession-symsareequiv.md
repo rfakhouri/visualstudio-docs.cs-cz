@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a3081cc32eb4286ed7b981dfa2a070dbf4a0ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0253104cf29e86825fadc8c8bd18133e0d3cf593
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036690"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613047"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
-Kontroluje, jestli dva symboly jsou ekvivalentní.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT symsAreEquiv (   
-   IDiaSymbol* symbolA,  
-   IDiaSymbol* symbolB  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `symbolA`  
- [in] První [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objektu při porovnání použit.  
-  
- `symbolB`  
- [in] Druhá `IDiaSymbol` objektu při porovnání použit.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud jsou tyto symboly ekvivalentní, vrátí `S_OK`; v opačném případě vrátí `S_FALSE`, symboly nejsou ekvivalentní. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [Idiasession –](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Kontroluje, jestli dva symboly jsou ekvivalentní.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT symsAreEquiv ( 
+   IDiaSymbol* symbolA,
+   IDiaSymbol* symbolB
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `symbolA`
+
+[in] První [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objektu při porovnání použit.
+
+ `symbolB`
+
+[in] Druhá `IDiaSymbol` objektu při porovnání použit.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud jsou tyto symboly ekvivalentní, vrátí `S_OK`; v opačném případě vrátí `S_FALSE`, symboly nejsou ekvivalentní. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

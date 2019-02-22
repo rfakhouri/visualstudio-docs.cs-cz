@@ -11,52 +11,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2efaad276eec2030b062be5f6508ec9603dcbf89
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040694"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596851"
 ---
 # <a name="test-area-7-share"></a>Testovací oblast 7: Sdílet
-Tento test oblast obsahuje informace o sdílení položek mezi umístěními prostřednictvím **sdílené složky** příkazu.  
-  
- Operace hhare je zřejmý duplicitní soubory a složky položky mezi dva nebo více umístění v rámci zdrojové hierarchie soubor ovládacího prvku. Duplikace nedojde ve skutečnosti na serveru, ale uživatel zobrazit stejný soubor ve dvou nebo více zadaných umístění. Pokaždé, když dojde ke změně některou ze sdílené položky, se tyto změny ve všech jiných sdílené umístění.  
-  
- Sdílení do složek, které funguje, pokud vyberete složku s alespoň jeden soubor pod správou zdrojových kódů v ní. Příkaz Sdílená složka je zakázán za následujících podmínek:  
-  
--   Pokud se do vybrané složky je prázdné složce.  
-  
--   Pokud je skutečná složka, ale neobsahuje žádné zdrojové soubory ovládacího prvku.  
-  
--   Pokud existuje virtuální složka, jestli jsou soubory pod správou zdrojových kódů v ní nebo ne.  
-  
--   Pokud je vzdálené lokality webového projektu.  
-  
-## <a name="command-menu-access"></a>Přístup do příkazu nabídky  
- Následující [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí nabídky cesty se používají v testovacích procesech.  
-  
- Sdílet: **Soubor**->**správy zdrojového kódu**->**sdílené složky**.  
-  
-## <a name="expected-behavior"></a>Očekávané chování  
-  
--   Sdílený soubor se zobrazí ve sdíleném umístění.  
-  
--   Zobrazení zdroje ovládací prvek verze úložiště historie zobrazí, že jsou sdílené soubory.  
-  
--   Úpravy sdílený soubor upravuje i umístění souboru.  
-  
-## <a name="test-cases"></a>Testovací případy  
- Tady jsou konkrétní testovací případy pro oblasti testovací sdílené složky.  
-  
-|Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
-|------------|----------------|--------------------------------|  
-|Sdílení souboru na jiný projekt načíst z jednoho načtený projekt pod správou zdrojových kódů|1.  Vytvořte nový projekt.<br />2.  Přidáte druhý projekt do řešení.<br />3.  Vytvořte soubor v druhé projektu s názvem, který se nenachází v první projekt.<br />4.  Přidáte řešení do správy zdrojového kódu.<br />5.  Vyberte první projekt.<br />6.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />7.  Sdílení souboru z druhého projektu do prvního projektu.<br />8.  Přijměte **rezervovat** Pokud se zobrazí výzva.|Běžné očekávané chování.|  
-|Sdílení souboru z jednoho projektu do druhého|1.  Vytvořte nový projekt.<br />2.  Přidáte do správy zdrojového kódu.<br />3.  Zavřete řešení.<br />4.  Vytvořte druhý projekt (nové řešení.)<br />5.  Přidáte řešení do správy zdrojového kódu.<br />6.  Vyberte projekt.<br />7.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />8.  Sdílení souboru z projektu dříve přidanými do otevřeného projektu.<br />9. Přijměte **rezervovat** Pokud se zobrazí výzva.|Běžné očekávané chování.|  
-|Sdílení souboru není součástí projektu ze správy zdrojového kódu do právě načtený projekt|1.  Vytvořte nový projekt.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Přidejte soubor do správy zdrojového kódu, který není součástí projektu nebo řešení.<br />4.  Vyberte projekt a otevřete **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />5.  Vyberte soubor v rámci **sdílet** dialogové okno, které neexistuje v aktuálním projektu nebo řešení a sdílet ho.<br />6.  Přijměte **rezervovat** Pokud se zobrazí výzva.|Úložiště správy zdrojových kódů provedl Get, takže teď je soubor na místní umístění projektu.|  
-|Sdílení souborů v rámci jednoho projektu do jiné složky|1.  Vyberte **zaregistrovat automaticky** v **nástroje** -> **možnosti** -> **správy zdrojových kódů**.<br />2.  Vytvořte nový projekt a přidat do správy zdrojového kódu.<br />3.  Přidáte složku do projektu.<br />4.  Přidejte soubor do složky a vrátit se změnami složku.<br />5.  Vyberte složku.<br />6.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />7.  Sdílet soubor do vybrané složky.|Běžné očekávané chování.<br /><br /> Složka musí být kontrolované pomocí souboru v něm předtím, než je možné pro sdílenou složku.|  
-|Sdílené složky do načtený projekt – rekurzivní|1.  Vytvořte nový projekt.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Vyberte projekt.<br />4.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />5.  Vyberte složku.<br />6.  Sdílení složky rekurzivně do projektu.|Běžné očekávané chování.|  
-|Sdílení několik souborů z jednoho projektu do druhého|1.  Vytvoření nového projektu s několika souborů.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Zavřete řešení.<br />4.  Vytvořte nový projekt v novém řešení.<br />5.  Přidáte řešení do správy zdrojového kódu.<br />6.  Vyberte projekt.<br />7.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />8.  Sdílení několik souborů z dříve vytvořeném projektu do aktuálně otevřeného projektu.|Běžné očekávané chování.|  
-  
-## <a name="see-also"></a>Viz také  
- [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+Tento test oblast obsahuje informace o sdílení položek mezi umístěními prostřednictvím **sdílené složky** příkazu.
+
+ Operace hhare je zřejmý duplicitní soubory a složky položky mezi dva nebo více umístění v rámci zdrojové hierarchie soubor ovládacího prvku. Duplikace nedojde ve skutečnosti na serveru, ale uživatel zobrazit stejný soubor ve dvou nebo více zadaných umístění. Pokaždé, když dojde ke změně některou ze sdílené položky, se tyto změny ve všech jiných sdílené umístění.
+
+ Sdílení do složek, které funguje, pokud vyberete složku s alespoň jeden soubor pod správou zdrojových kódů v ní. Příkaz Sdílená složka je zakázán za následujících podmínek:
+
+-   Pokud se do vybrané složky je prázdné složce.
+
+-   Pokud je skutečná složka, ale neobsahuje žádné zdrojové soubory ovládacího prvku.
+
+-   Pokud existuje virtuální složka, jestli jsou soubory pod správou zdrojových kódů v ní nebo ne.
+
+-   Pokud je vzdálené lokality webového projektu.
+
+## <a name="command-menu-access"></a>Přístup do příkazu nabídky
+ Následující [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí nabídky cesty se používají v testovacích procesech.
+
+ Sdílet: **Soubor**->**správy zdrojového kódu**->**sdílené složky**.
+
+## <a name="expected-behavior"></a>Očekávané chování
+
+-   Sdílený soubor se zobrazí ve sdíleném umístění.
+
+-   Zobrazení zdroje ovládací prvek verze úložiště historie zobrazí, že jsou sdílené soubory.
+
+-   Úpravy sdílený soubor upravuje i umístění souboru.
+
+## <a name="test-cases"></a>Testovací případy
+ Tady jsou konkrétní testovací případy pro oblasti testovací sdílené složky.
+
+|Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|
+|------------|----------------|--------------------------------|
+|Sdílení souboru na jiný projekt načíst z jednoho načtený projekt pod správou zdrojových kódů|1.  Vytvořte nový projekt.<br />2.  Přidáte druhý projekt do řešení.<br />3.  Vytvořte soubor v druhé projektu s názvem, který se nenachází v první projekt.<br />4.  Přidáte řešení do správy zdrojového kódu.<br />5.  Vyberte první projekt.<br />6.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />7.  Sdílení souboru z druhého projektu do prvního projektu.<br />8.  Přijměte **rezervovat** Pokud se zobrazí výzva.|Běžné očekávané chování.|
+|Sdílení souboru z jednoho projektu do druhého|1.  Vytvořte nový projekt.<br />2.  Přidáte do správy zdrojového kódu.<br />3.  Zavřete řešení.<br />4.  Vytvořte druhý projekt (nové řešení.)<br />5.  Přidáte řešení do správy zdrojového kódu.<br />6.  Vyberte projekt.<br />7.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />8.  Sdílení souboru z projektu dříve přidanými do otevřeného projektu.<br />9. Přijměte **rezervovat** Pokud se zobrazí výzva.|Běžné očekávané chování.|
+|Sdílení souboru není součástí projektu ze správy zdrojového kódu do právě načtený projekt|1.  Vytvořte nový projekt.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Přidejte soubor do správy zdrojového kódu, který není součástí projektu nebo řešení.<br />4.  Vyberte projekt a otevřete **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />5.  Vyberte soubor v rámci **sdílet** dialogové okno, které neexistuje v aktuálním projektu nebo řešení a sdílet ho.<br />6.  Přijměte **rezervovat** Pokud se zobrazí výzva.|Úložiště správy zdrojových kódů provedl Get, takže teď je soubor na místní umístění projektu.|
+|Sdílení souborů v rámci jednoho projektu do jiné složky|1.  Vyberte **zaregistrovat automaticky** v **nástroje** -> **možnosti** -> **správy zdrojových kódů**.<br />2.  Vytvořte nový projekt a přidat do správy zdrojového kódu.<br />3.  Přidáte složku do projektu.<br />4.  Přidejte soubor do složky a vrátit se změnami složku.<br />5.  Vyberte složku.<br />6.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />7.  Sdílet soubor do vybrané složky.|Běžné očekávané chování.<br /><br /> Složka musí být kontrolované pomocí souboru v něm předtím, než je možné pro sdílenou složku.|
+|Sdílené složky do načtený projekt – rekurzivní|1.  Vytvořte nový projekt.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Vyberte projekt.<br />4.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />5.  Vyberte složku.<br />6.  Sdílení složky rekurzivně do projektu.|Běžné očekávané chování.|
+|Sdílení několik souborů z jednoho projektu do druhého|1.  Vytvoření nového projektu s několika souborů.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Zavřete řešení.<br />4.  Vytvořte nový projekt v novém řešení.<br />5.  Přidáte řešení do správy zdrojového kódu.<br />6.  Vyberte projekt.<br />7.  Otevřít **sdílenou složku** dialogové okno (**souboru** -> **správy zdrojových kódů** -> **sdílené složky**).<br />8.  Sdílení několik souborů z dříve vytvořeném projektu do aktuálně otevřeného projektu.|Běžné očekávané chování.|
+
+## <a name="see-also"></a>Viz také
+- [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

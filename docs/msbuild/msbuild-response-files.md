@@ -18,22 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3777be5701e9876352db41a5454d5e12668f6f1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9e83ed29e2caf180cdd8950b73f65f62794a8783
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932114"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618442"
 ---
 # <a name="msbuild-response-files"></a>Soubory odezvy nástroje MSBuild
-Odpověď (*.rsp*) soubory jsou textové soubory, které obsahují *MSBuild.exe* přepínače příkazového řádku. Každý přepínač může být na samostatném řádku nebo všechny přepínače může být na jednom řádku. Komentář řádky jsou uvedena **#** symbol. **@** Přepínač slouží k předání jiný soubor odezvy *MSBuild.exe*.  
-  
+Odpověď (*.rsp*) soubory jsou textové soubory, které obsahují *MSBuild.exe* přepínače příkazového řádku. Každý přepínač může být na samostatném řádku nebo všechny přepínače může být na jednom řádku. Komentář řádky jsou uvedena **#** symbol. **@** Přepínač slouží k předání jiný soubor odezvy *MSBuild.exe*.
+
 ## <a name="msbuildrsp"></a>MSBuild.rsp
-Soubor nástroj je speciální *.rsp* souboru, který *MSBuild.exe* automaticky používá při sestavování projektu. Tento soubor *MSBuild.rsp*, musí být ve stejném adresáři jako *MSBuild.exe*, jinak nebude nalezena. Můžete upravit tento soubor k určení výchozího přepínače příkazového řádku k *MSBuild.exe*. Například, pokud používáte stejný protokolovač pokaždé, když se sestavení projektu, můžete přidat **-protokolovací nástroj** přepnout na *MSBuild.rsp*, a *MSBuild.exe* bude použijte protokolovací nástroj pokaždé, když se Projekt se vytvořil. 
+Soubor nástroj je speciální *.rsp* souboru, který *MSBuild.exe* automaticky používá při sestavování projektu. Tento soubor *MSBuild.rsp*, musí být ve stejném adresáři jako *MSBuild.exe*, jinak nebude nalezena. Můžete upravit tento soubor k určení výchozího přepínače příkazového řádku k *MSBuild.exe*. Například, pokud používáte stejný protokolovač pokaždé, když se sestavení projektu, můžete přidat **-protokolovací nástroj** přepnout na *MSBuild.rsp*, a *MSBuild.exe* bude použijte protokolovací nástroj pokaždé, když se Projekt se vytvořil.
 
 ## <a name="directorybuildrsp"></a>Directory.Build.rsp
-Ve verzi 15.6 a vyšší než MSBuild vyhledá nadřazené adresáře projektu pro soubor s názvem *Directory.Build.rsp*.  To může být užitečné v úložiště zdrojového kódu během sestavení příkazového řádku poskytovat výchozí argumenty.  To také umožňuje zadat argumenty příkazového řádku hostovaných buildů. 
+Ve verzi 15.6 a vyšší než MSBuild vyhledá nadřazené adresáře projektu pro soubor s názvem *Directory.Build.rsp*.  To může být užitečné v úložiště zdrojového kódu během sestavení příkazového řádku poskytovat výchozí argumenty.  To také umožňuje zadat argumenty příkazového řádku hostovaných buildů.
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
- [Odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md)
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)
+- [Odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md)

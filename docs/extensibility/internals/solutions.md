@@ -11,23 +11,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e19289b843dac77c87e4c3d81bc4b74719e742b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 017e1489715b5c1b322f9f5ae04b89de02accac7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965585"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618338"
 ---
 # <a name="solutions"></a>Řešení
-Řešení je seskupení jednoho nebo více projektů, které vzájemně spolupracují na vytvoření aplikace. Projekt a stav informace, které se týkají řešení se ukládají do dvou souborů řešení, soubor založený na textu řešení (.sln) a soubor binární řešení uživatelské možnosti (.suo).  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Přehled](../../extensibility/internals/solutions-overview.md)  
- Tento článek popisuje typy řešení souborů zahrnutých v řešení a proces, který nastane při otevření řešení.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Soubor řešení (.Sln)](../../extensibility/internals/solution-dot-sln-file.md)  
- Vysvětluje strukturu souboru .sln.  
-  
- [Soubor uživatelských možností řešení (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
+Řešení je seskupení jednoho nebo více projektů, které vzájemně spolupracují na vytvoření aplikace. Projekt a stav informace, které se týkají řešení se ukládají do dvou souborů řešení, soubor založený na textu řešení (.sln) a soubor binární řešení uživatelské možnosti (.suo).
+
+## <a name="in-this-section"></a>V tomto oddílu
+- [Přehled](../../extensibility/internals/solutions-overview.md)
+
+ Tento článek popisuje typy řešení souborů zahrnutých v řešení a proces, který nastane při otevření řešení.
+
+## <a name="related-sections"></a>Související oddíly
+- [Soubor řešení (.Sln)](../../extensibility/internals/solution-dot-sln-file.md)
+
+ Vysvětluje strukturu souboru .sln.
+
+- [Soubor uživatelských možností řešení (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)
+
  Vysvětluje soubor .suo.

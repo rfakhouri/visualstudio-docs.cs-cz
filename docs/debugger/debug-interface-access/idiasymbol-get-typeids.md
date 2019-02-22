@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d06648c884a4406c6a5d28b2b33a7cbfd4f6d24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12024a3a024f2c9433e144790c0a513d4e33df12
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987463"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643740"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Načte pole hodnot typu specifických pro kompilátor identifikátor pro tento symbol.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_typeIds (   
-   DWORD  cTypeIds,  
-   DWORD* pcTypeIds,  
-   DWORD  typeIds[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `cTypeIds`  
- [in] Velikost vyrovnávací paměti pro data.  
-  
- `pcTypeIds`  
- [out] Vrátí počet `typeIds` zapsána, nebo pokud `typeIds` je `NULL`, pak celkový počet identifikátorů typu k dispozici.  
-  
- `typeIds[]`  
- [out] Pole, které se vyplní identifikátory typu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Načte pole hodnot typu specifických pro kompilátor identifikátor pro tento symbol.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_typeIds ( 
+   DWORD  cTypeIds,
+   DWORD* pcTypeIds,
+   DWORD  typeIds[]
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `cTypeIds`
+
+[in] Velikost vyrovnávací paměti pro data.
+
+ `pcTypeIds`
+
+[out] Vrátí počet `typeIds` zapsána, nebo pokud `typeIds` je `NULL`, pak celkový počet identifikátorů typu k dispozici.
+
+ `typeIds[]`
+
+[out] Pole, které se vyplní identifikátory typu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

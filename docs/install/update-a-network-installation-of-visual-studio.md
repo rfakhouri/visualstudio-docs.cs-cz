@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 28ba86dcfb1fb98d9ba88c06a8df2ea3a104ea4d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937536"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617285"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Aktualizace síťové instalace sady Visual Studio 2017
 
@@ -26,13 +26,13 @@ Je možné k aktualizaci rozložení síťové instalace sady Visual Studio s ne
 
 ## <a name="how-to-update-a-network-layout"></a>Jak aktualizovat síťový diagram
 
-Chcete-li aktualizovat vaší síťové sdílené složky instalace tak, že obsahují nejnovější aktualizace, spusťte příkaz--rozložení postupně stáhnout aktualizované balíčky.
+Chcete-li aktualizovat vaší síťové sdílené složky instalace tak, že obsahují nejnovější aktualizace, spusťte `--layout` příkaz, který přírůstkově stáhnout aktualizované balíčky.
 
-Pokud jste vybrali částečné rozložení, při prvním vytvoření rozložení sítě, se uloží.  Všechny příkazy budoucí rozložení použít předchozí možnosti plus všechny nové možnosti, které zadáte.  (To je nového v 15.3.)  Pokud použijete rozložení starší verze, měli byste použít stejné parametry příkazového řádku, které jste použili při prvním vytvoření rozložení instalace sítě (jinými slovy, stejné úlohy a jazyky) a aktualizovat jeho obsah.
+**Novinka v 15.3**: Pokud jste vybrali částečné rozložení, při prvním vytvoření rozložení sítě, se uloží.  Všechny příkazy budoucí rozložení použít předchozí možnosti plus všechny nové možnosti, které zadáte. Ale pokud použijete rozložení starší verzi, měli byste použít stejné parametry příkazového řádku, které jste použili při prvním vytvoření rozložení instalace sítě (jinými slovy, stejné úlohy a jazyky) a aktualizovat jeho obsah.
 
 Pokud hostujete rozložení ve sdílené složce, by měl aktualizovat soukromou kopii rozložení (například c:\vs2017offline) a pak po stažení všechny aktualizace obsahu, zkopírujte ho do sdílené složky (například \\server\products\VS2017). Pokud to neuděláte, existuje větší riziko, že všichni uživatelé, kteří spusťte instalační program, když aktualizujete rozložení nebudou moct získat veškerý obsah z rozložení, protože není dosud aktualizovat úplně.
 
-Tady si projdeme postup vytvoření a pak aktualizujte rozložení:
+Pojďme si projít pár příkladů, jak vytvořit a pak aktualizujte rozložení:
 
 * Nejprve tady je příklad toho, jak vytvořit rozložení se sadou jeden pro angličtinu pouze:
 
@@ -58,7 +58,7 @@ Tady si projdeme postup vytvoření a pak aktualizujte rozložení:
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* A konečně, tady je postup přidejte další úlohy a lokalizovaných bez aktualizace na verzi. (Tento příkaz přidá ASP.NET a webových úloh).  Managed Desktop, Azure a ASP.NET a webové úlohy jsou teď součástí toto rozložení.  Jazykové prostředky pro angličtinu, němčinu a francouzštinu jsou také zahrnuté pro všechny tyto úlohy.  Rozložení však nebyl aktualizován na nejnovější dostupnou verzi, při spuštění tohoto příkazu.  Zůstane na existující verze.
+* A konečně, tady je postup přidejte další úlohy a lokalizovaných bez aktualizace na verzi. (Tento příkaz přidá ASP.NET a webových úloh).  Managed Desktop, Azure a ASP.NET a webové úlohy jsou teď součástí toto rozložení. Jazykové prostředky pro angličtinu, němčinu a francouzštinu jsou také zahrnuté pro všechny tyto úlohy.  Rozložení však nebyl aktualizován na nejnovější dostupnou verzi, při spuštění tohoto příkazu. Zůstane na existující verze.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

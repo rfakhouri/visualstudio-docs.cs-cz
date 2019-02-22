@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c532f38fcdcd5a41cfa188c0dc175a8293548442
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 146ef53f8a5d893e394834c7d5702c8992fdd20a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611006"
 ---
 # <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
-Určuje, zda matice hlavní řádek.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_isMatrixRowMajor(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Ukazatel `BOOL` , která určuje, zda matice hlavní řádek.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Určuje, zda matice hlavní řádek.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_isMatrixRowMajor(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Ukazatel `BOOL` , která určuje, zda matice hlavní řádek.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

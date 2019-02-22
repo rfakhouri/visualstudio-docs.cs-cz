@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb0970d7c907821a2ba0578cd5a326688bee2b34
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f5d1630b46ca2203e9f935517e96b11856b273b9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922675"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631481"
 ---
 # <a name="idiasymbolgetisvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
-Určuje, zda `this` ukazatel odkazuje na datový člen s virtuální dědičnost.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_isVirtualInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Ukazatel `BOOL` , která určuje, zda `this` ukazatel odkazuje na datový člen s virtuální dědičnost.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Určuje, zda `this` ukazatel odkazuje na datový člen s virtuální dědičnost.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_isVirtualInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Ukazatel `BOOL` , která určuje, zda `this` ukazatel odkazuje na datový člen s virtuální dědičnost.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

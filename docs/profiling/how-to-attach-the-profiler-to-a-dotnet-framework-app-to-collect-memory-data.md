@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 435141ce8b01c2c486dd9b856c173895237a4906
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31e9aa6bcc89f0a9fb39d2a871119a0906b4243d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954810"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637942"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Připojení profileru k samostatné aplikaci .NET Framework ke shromažďování dat paměti pomocí příkazového řádku
 
 Tento článek popisuje, jak používat Visual Studio nástroje příkazového řádku nástroje pro profilaci k připojení profileru k běžící samostatné (klientské) aplikaci rozhraní .NET Framework a shromažďování dat paměti.
 
 > [!NOTE]
->  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.  
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
 
 Připojit k aplikaci rozhraní .NET Framework a shromažďovat paměťová data, je nutné použít [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) nástroj k inicializaci příslušných proměnných prostředí před spuštěním cílové aplikace. Když je profiler připojen k aplikaci, můžete *VSPerfCmd.exe* má pozastavit a obnovit sběr dat. nástroj.
 
@@ -112,5 +112,5 @@ Chcete-li ukončit relaci profilování, musí být profiler odpojen od všech p
 
 ## <a name="see-also"></a>Viz také:
 
-[Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)  
-[Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)
+[Profilování samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)
+[zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)

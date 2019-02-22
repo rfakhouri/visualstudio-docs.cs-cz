@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b8a301bd4f16cd3fb6f1b6fcec90e0f1cf3f47c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 78440c703ece2aa54e54594d57156dbb17848915
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992019"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617701"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
-Provádí odvíjení zásobníku a vrátí výsledky v rozhraní rámce zásobníku funkce walk.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT execute (   
-   IDiaStackWalkFrame* frame  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `frame`  
- [in] [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md) objekt, který obsahuje stav rámce registrů.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny možné návratové hodnoty pro tuto metodu.  
-  
-|Hodnota|Popis|  
-|-----------|-----------------|  
-|E_DIA_INPROLOG|Nelze spustit blok zásobníku v kódu prologu.|  
-|E_DIA_SYNTAX|Analyzovat v aplikaci rámce došlo k chybě.|  
-|E_DIA_FRAME_ACCESS|Nepovedlo se přístup registrů nebo paměti.|  
-|E_DIA_VALUE|Při výpočtu hodnoty (například dělení nulou).|  
-  
-## <a name="remarks"></a>Poznámky  
- Tato metoda je volána při ladění k provedení operace unwind zásobníku. [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md) objektu je implementováno klientské aplikace pro příjem aktualizací registry a poskytovat metody používané `execute` metody.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+Provádí odvíjení zásobníku a vrátí výsledky v rozhraní rámce zásobníku funkce walk.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT execute ( 
+   IDiaStackWalkFrame* frame
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `frame`
+
+[in] [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md) objekt, který obsahuje stav rámce registrů.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny možné návratové hodnoty pro tuto metodu.
+
+|Hodnota|Popis|
+|-----------|-----------------|
+|E_DIA_INPROLOG|Nelze spustit blok zásobníku v kódu prologu.|
+|E_DIA_SYNTAX|Analyzovat v aplikaci rámce došlo k chybě.|
+|E_DIA_FRAME_ACCESS|Nepovedlo se přístup registrů nebo paměti.|
+|E_DIA_VALUE|Při výpočtu hodnoty (například dělení nulou).|
+
+## <a name="remarks"></a>Poznámky
+ Tato metoda je volána při ladění k provedení operace unwind zásobníku. [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md) objektu je implementováno klientské aplikace pro příjem aktualizací registry a poskytovat metody používané `execute` metody.
+
+## <a name="see-also"></a>Viz také
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

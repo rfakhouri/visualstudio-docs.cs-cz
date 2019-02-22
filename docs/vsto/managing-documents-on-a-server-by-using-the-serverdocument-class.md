@@ -14,56 +14,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f776b73b4f80756a36a5ad4610a60440a6f9abd1
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876067"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630077"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Správa dokumentů na serveru s použitím třídy ServerDocument
-  Můžete použít `ServerDocument` třídy v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ke správě několik aspektů přizpůsobení na úrovni dokumentu i v případě, že není nainstalovaný Microsoft Office Word nebo Microsoft Office Excel. Můžete provádět následující úlohy:  
-  
-- Přístup a úpravy dat v mezipaměti dat dokumentu nebo sešitu. Další informace najdete v tématu [pracovat s daty v mezipaměti v dokumentu](#CachedData).  
-  
-- Správa vlastního nastavení sestavení, které je spojeno s dokumentem. Další informace najdete v tématu [spravovat dokumentu přizpůsobení](#CustomizationInfo).  
-  
-  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
-## <a name="understand-the-serverdocument-class"></a>Pochopení třídy ServerDocument  
- `ServerDocument` Třídy je určen k použití na počítačích, které nemají nainstalovaný Office. Proto je obvykle tuto třídu použít v aplikacích, které nejsou integrované se sadou Office, jako jsou projekty konzoly nebo projekty Windows Forms, nikoli projektech pro systém Office. Použití <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy v *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* sestavení.  
-  
- `ServerDocument` Třídy lze použít pro přizpůsobení na úrovni dokumentu, které byly vytvořeny pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
-  
- Další informace o Visual Studio 2010 Tools pro systém Office Runtime, rozšíření Office pro rozhraní .NET Framework, naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
-  
-> [!NOTE]  
->  Pokud máte starší verzi aplikace, která používá `ServerDocument` třídy v `Visual Studio Tools for Office` system (verze 3.0 Runtime), `Visual Studio Tools for Office` systém (verze 3.0 runtime) musí být nainstalován na počítačích, na kterých běží aplikace. `Visual Studio 2010 Tools for Office runtime` Nelze spustit tyto aplikace.  
-  
-##  <a name="CachedData"></a> Práce s data uložená v mezipaměti v dokumentu  
- `ServerDocument` Třída obsahuje členy, které slouží k práci s mezipamětí dat v upravené dokumenty. Další informace o data uložená v mezipaměti, naleznete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md) a [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).  
-  
- Následující tabulka uvádí členy, které můžete použít pro práci s data uložená v mezipaměti.  
-  
-|Úloha|Člen použití|  
-|----------|-------------------|  
-|Chcete-li zjistit, jestli má dokument datové mezipaměti.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Metody.|  
-|Pro přístup k data uložená v mezipaměti v dokumentu.<br /><br /> Další informace najdete v tématu [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Vlastnost.|  
-  
-##  <a name="CustomizationInfo"></a> Spravovat vlastní nastavení dokumentu  
- Členy můžete použít `ServerDocument` třídy ke správě vlastního nastavení sestavení, které je spojeno s dokumentem. Například můžete programově odebrat vlastní nastavení z dokumentu tak, aby dokument už nejsou součástí přizpůsobení.  
-  
- Následující tabulka uvádí členy, které můžete použít ke správě vlastního nastavení sestavení.  
-  
-|Úloha|Člen použití|  
-|----------|-------------------|  
-|Chcete-li zjistit, jestli dokument je součástí přizpůsobení na úrovni dokumentu.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> Metody.|  
-|Přizpůsobení programově připojit do dokumentu za běhu.<br /><br /> Další informace najdete v tématu [jak: Připojení rozšíření spravovaného kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Jeden z <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metody.|  
-|Odebrat vlastní nastavení z dokumentu prostřednictvím kódu programu za běhu.<br /><br /> Další informace najdete v tématu [jak: Odebrání rozšíření spravovaného kódu z dokumentů](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> Metody.|  
-|Získat adresu URL manifestu nasazení, který je přidružený k dokumentu.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> Vlastnost.|  
-  
-## <a name="see-also"></a>Viz také:  
- [Postupy: Připojení rozšíření spravovaného kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
- [Postupy: Odebrání rozšíření spravovaného kódu z dokumentů](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
- [Visual Studio Tools for Office runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Data v mezipaměti](../vsto/caching-data.md)  
+  Můžete použít `ServerDocument` třídy v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ke správě několik aspektů přizpůsobení na úrovni dokumentu i v případě, že není nainstalovaný Microsoft Office Word nebo Microsoft Office Excel. Můžete provádět následující úlohy:
+
+- Přístup a úpravy dat v mezipaměti dat dokumentu nebo sešitu. Další informace najdete v tématu [pracovat s daty v mezipaměti v dokumentu](#CachedData).
+
+- Správa vlastního nastavení sestavení, které je spojeno s dokumentem. Další informace najdete v tématu [spravovat dokumentu přizpůsobení](#CustomizationInfo).
+
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+## <a name="understand-the-serverdocument-class"></a>Pochopení třídy ServerDocument
+ `ServerDocument` Třídy je určen k použití na počítačích, které nemají nainstalovaný Office. Proto je obvykle tuto třídu použít v aplikacích, které nejsou integrované se sadou Office, jako jsou projekty konzoly nebo projekty Windows Forms, nikoli projektech pro systém Office. Použití <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy v *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* sestavení.
+
+ `ServerDocument` Třídy lze použít pro přizpůsobení na úrovni dokumentu, které byly vytvořeny pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].
+
+ Další informace o Visual Studio 2010 Tools pro systém Office Runtime, rozšíření Office pro rozhraní .NET Framework, naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+
+> [!NOTE]
+>  Pokud máte starší verzi aplikace, která používá `ServerDocument` třídy v `Visual Studio Tools for Office` system (verze 3.0 Runtime), `Visual Studio Tools for Office` systém (verze 3.0 runtime) musí být nainstalován na počítačích, na kterých běží aplikace. `Visual Studio 2010 Tools for Office runtime` Nelze spustit tyto aplikace.
+
+##  <a name="CachedData"></a> Práce s data uložená v mezipaměti v dokumentu
+ `ServerDocument` Třída obsahuje členy, které slouží k práci s mezipamětí dat v upravené dokumenty. Další informace o data uložená v mezipaměti, naleznete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md) a [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).
+
+ Následující tabulka uvádí členy, které můžete použít pro práci s data uložená v mezipaměti.
+
+|Úloha|Člen použití|
+|----------|-------------------|
+|Chcete-li zjistit, jestli má dokument datové mezipaměti.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Metody.|
+|Pro přístup k data uložená v mezipaměti v dokumentu.<br /><br /> Další informace najdete v tématu [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Vlastnost.|
+
+##  <a name="CustomizationInfo"></a> Spravovat vlastní nastavení dokumentu
+ Členy můžete použít `ServerDocument` třídy ke správě vlastního nastavení sestavení, které je spojeno s dokumentem. Například můžete programově odebrat vlastní nastavení z dokumentu tak, aby dokument už nejsou součástí přizpůsobení.
+
+ Následující tabulka uvádí členy, které můžete použít ke správě vlastního nastavení sestavení.
+
+|Úloha|Člen použití|
+|----------|-------------------|
+|Chcete-li zjistit, jestli dokument je součástí přizpůsobení na úrovni dokumentu.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> Metody.|
+|Přizpůsobení programově připojit do dokumentu za běhu.<br /><br /> Další informace najdete v tématu [jak: Připojení rozšíření spravovaného kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Jeden z <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metody.|
+|Odebrat vlastní nastavení z dokumentu prostřednictvím kódu programu za běhu.<br /><br /> Další informace najdete v tématu [jak: Odebrání rozšíření spravovaného kódu z dokumentů](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> Metody.|
+|Získat adresu URL manifestu nasazení, který je přidružený k dokumentu.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> Vlastnost.|
+
+## <a name="see-also"></a>Viz také:
+- [Postupy: Připojení rozšíření spravovaného kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
+- [Postupy: Odebrání rozšíření spravovaného kódu z dokumentů](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
+- [Visual Studio Tools for Office runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)
+- [Data v mezipaměti](../vsto/caching-data.md)

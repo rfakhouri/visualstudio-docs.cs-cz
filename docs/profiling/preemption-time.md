@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e3c3488c54477a9517263bf363cede3198fc3f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007630"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620093"
 ---
 # <a name="preemption-time"></a>Čas přerušení
-Tyto segmenty na časové ose jsou přidruženy k blokování, který je zařazený do kategorie jako ztracený čas. Tato kategorie znamená, že je vlákno přepnutí z jednoho z těchto důvodů:  
-  
-- Plánovač se nahrazuje použití vyšší priorita vlákna.  
-  
-- Kvantové doby provádění vlákna vypršela platnost a byly jiná vlákna připravená ke spuštění.  
-  
-  Během této doby je blokovaná společností Důvod čekání jádra, která Vizualizátor souběžnosti se počítá jako ztracený vlákno. Ztracený segmenty spustit, když vlákno je vložena mimo logické jádro a ukončit, pokud bylo vlákno pokračuje v provádění.  
-  
-  Popis pro segment dojde ke zrušení zobrazí název procesu nebo vlákna, která způsobila ztracený. Nicméně to neznamená, že proces nebo vlákno, které převzal skutečně spustila v průběhu preempted období.  
-  
-## <a name="see-also"></a>Viz také:  
- [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)
+Tyto segmenty na časové ose jsou přidruženy k blokování, který je zařazený do kategorie jako ztracený čas. Tato kategorie znamená, že je vlákno přepnutí z jednoho z těchto důvodů:
+
+- Plánovač se nahrazuje použití vyšší priorita vlákna.
+
+- Kvantové doby provádění vlákna vypršela platnost a byly jiná vlákna připravená ke spuštění.
+
+  Během této doby je blokovaná společností Důvod čekání jádra, která Vizualizátor souběžnosti se počítá jako ztracený vlákno. Ztracený segmenty spustit, když vlákno je vložena mimo logické jádro a ukončit, pokud bylo vlákno pokračuje v provádění.
+
+  Popis pro segment dojde ke zrušení zobrazí název procesu nebo vlákna, která způsobila ztracený. Nicméně to neznamená, že proces nebo vlákno, které převzal skutečně spustila v průběhu preempted období.
+
+## <a name="see-also"></a>Viz také:
+- [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

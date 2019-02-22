@@ -10,53 +10,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432c0859041740c74e6c3264c318d46352d262b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f6ed12d127789d350f528bf2eabfce34da2c3736
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972690"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621861"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
-Načte výčet, který umožňuje klientovi k iteraci v rámci informace o číslech řádků všech funkcí, které jsou vloženy, přímo nebo nepřímo v zadaný zdrojový soubor a číslo řádku.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT findInlineeLinesByVA (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 column,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `compiland`  
- [in] [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt, který reprezentuje kompilace, ve kterém chcete hledat čísla řádků. Tento parametr nemůže mít `NULL`.  
-  
- `file`  
- [in] [Idiasourcefile –](../../debugger/debug-interface-access/idiasourcefile.md) objekt, který reprezentuje zdrojový soubor, ve kterých chcete hledat. Tento parametr nemůže mít `NULL`.  
-  
- `linenum`  
- [in] Určuje číslo řádku založen na jedničce.  
-  
+Načte výčet, který umožňuje klientovi k iteraci v rámci informace o číslech řádků všech funkcí, které jsou vloženy, přímo nebo nepřímo v zadaný zdrojový soubor a číslo řádku.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT findInlineeLinesByVA ( 
+   IDiaSymbol*           compiland,
+   IDiaSourceFile*       file,
+   DWORD                 linenum,
+   DWORD                 column,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `compiland`
+
+[in] [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt, který reprezentuje kompilace, ve kterém chcete hledat čísla řádků. Tento parametr nemůže mít `NULL`.
+
+ `file`
+
+[in] [Idiasourcefile –](../../debugger/debug-interface-access/idiasourcefile.md) objekt, který reprezentuje zdrojový soubor, ve kterých chcete hledat. Tento parametr nemůže mít `NULL`.
+
+ `linenum`
+
+[in] Určuje číslo řádku založen na jedničce.
+
 > [!NOTE]
->  Nula nelze použít k určení všech řádků (použít [idiasession::findlines –](../../debugger/debug-interface-access/idiasession-findlines.md) metody k vyhledání všech řádků).  
-  
- `column`  
- [in] Určuje číslo sloupce. Můžete určit všechny sloupce nula. Sloupec je posun bajtů do řádku.  
-  
- `ppResult`  
- [out] Vrátí [idiaenumlinenumbers –](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objekt, který obsahuje seznam čísel řádků, které byly načteny.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [Idiasession –](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasourcefile –](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+>  Nula nelze použít k určení všech řádků (použít [idiasession::findlines –](../../debugger/debug-interface-access/idiasession-findlines.md) metody k vyhledání všech řádků).
+
+ `column`
+
+[in] Určuje číslo sloupce. Můžete určit všechny sloupce nula. Sloupec je posun bajtů do řádku.
+
+ `ppResult`
+
+[out] Vrátí [idiaenumlinenumbers –](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objekt, který obsahuje seznam čísel řádků, které byly načteny.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

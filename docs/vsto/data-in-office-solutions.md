@@ -14,30 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0dc88a5075d5830a26c5a9d3eaa99a885b6ddde1
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871790"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621250"
 ---
 # <a name="data-in-office-solutions"></a>Data v řešeních pro systém Office
   Mnoho řešení pro systém Office uživatelům umožnit načtení nebo upravovat data. Při vytváření řešení pro systém Office s použitím sady Visual Studio existuje několik různých způsobů, kterými můžete pracovat s daty.
 
 ## <a name="in-this-section"></a>V tomto oddílu
- [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md) popisuje způsob vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office.
+- [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
- [Přehled vlastních částí XML](../vsto/custom-xml-parts-overview.md) popisuje, jak pracovat s daty v řešeních pro systém Office pomocí vlastních částí XML.
+ Popisuje postup vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office.
 
- [Data v přizpůsobeních na úrovni dokumentu v mezipaměti](../vsto/cached-data-in-document-level-customizations.md) popisuje, jak ukládat data v ostrůvku vložená data, která je přístupná bez spuštění aplikace sady Office.
+- [Přehled vlastních částí XML](../vsto/custom-xml-parts-overview.md)
 
- [Schémata XML a data v úrovni dokumentu přizpůsobení](../vsto/xml-schemas-and-data-in-document-level-customizations.md) popisuje, jak vytvořit ovládací prvky, které jsou vázány na XML data pomocí schémat XML v přizpůsobeních na úrovni dokumentu.
+ Popisuje, jak pracovat s daty v řešeních pro systém Office pomocí vlastních částí XML.
 
- [Použití místních souborů databáze v přehled řešení pro systém Office](../vsto/using-local-database-files-in-office-solutions-overview.md) popisuje, jak importovat soubory databáze ve vašich projektech a můžete ukládat do mezipaměti dat pro použití v offline režimu.
+- [Data uložená v mezipaměti v přizpůsobeních na úrovni dokumentu](../vsto/cached-data-in-document-level-customizations.md)
+
+ Popisuje, jak ukládat data v ostrůvku vložená data, která je přístupná bez spuštění aplikace sady Office.
+
+- [Schémata XML a data v přizpůsobeních na úrovni dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+
+ Popisuje, jak vytvořit ovládací prvky, které jsou vázány na XML data pomocí schémat XML v přizpůsobeních na úrovni dokumentu.
+
+- [Použití místních souborů databáze v přehled řešení pro systém Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
+
+ Popisuje, jak importovat soubory databáze ve vašich projektech a můžete ukládat do mezipaměti dat pro použití v offline režimu.
 
 ## <a name="related-sections"></a>Související oddíly
- [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md) Vypíše seznam témat, které ukazují, jak pracovat s daty v sadě Visual Studio.
+- [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 
- [Uložit data](../data-tools/saving-data.md) poskytuje odkazy na témata týkající se práce s datovými sadami, včetně úprava dat v datové sadě a jejich zápisu změn zpět do zdroje dat.
+ Seznam témat, která ukazují, jak pracovat s daty v sadě Visual Studio.
 
- [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md) obsahuje odkazy na informace o tom, jak hned začít vytvářet projekty pro systém Office s použitím sady Visual Studio.
+- [Ukládání dat](../data-tools/saving-data.md)
+
+ Poskytuje odkazy na témata týkající se práce s datovými sadami, včetně úprava dat v datové sadě a jejich zápisu změn zpět do zdroje dat.
+
+- [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)
+
+ Obsahuje odkazy na informace o tom, jak hned začít vytvářet projekty pro systém Office s použitím sady Visual Studio.

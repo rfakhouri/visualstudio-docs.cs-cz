@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1241de2849ce0b32206c0815928c8beb140e23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963655"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632391"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Nástroj MSBuild vyhrazené a dobře známé vlastnosti
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje sadu předdefinovaných vlastností, které ukládají informace o souboru projektu a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] binární soubory. Tyto vlastnosti jsou vyhodnocovány stejným způsobem jako ostatní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vlastnosti. Chcete-li například použít `MSBuildProjectFile` vlastnost, typ `$(MSBuildProjectFile)`.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje sadu předdefinovaných vlastností, které ukládají informace o souboru projektu a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] binární soubory. Tyto vlastnosti jsou vyhodnocovány stejným způsobem jako ostatní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vlastnosti. Chcete-li například použít `MSBuildProjectFile` vlastnost, typ `$(MSBuildProjectFile)`.
 
  Nástroj MSBuild používá hodnoty v následující tabulce pro předdefinování rezervovaných a dobře známých vlastností. Rezervované vlastnosti nemohou být potlačeny, ale dobře známé vlastnosti lze přepsat pomocí nazvanými vlastnostmi prostředí, globálními vlastnostmi nebo vlastnostmi, které jsou deklarovány v souboru projektu.
 
-## <a name="reserved-and-well-known-properties"></a>Vyhrazené a dobře známé vlastnosti  
- V následující tabulce jsou popsány [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] předdefinované vlastnosti.  
+## <a name="reserved-and-well-known-properties"></a>Vyhrazené a dobře známé vlastnosti
+ V následující tabulce jsou popsány [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] předdefinované vlastnosti.
 
 
 | Vlastnost | Vyhrazené nebo známé | Popis |
@@ -75,7 +75,7 @@ Kromě výše uvedeného pojmenuje odpovídající jazykové prvky nelze použí
 * Kdy
 * jinak
 
-## <a name="see-also"></a>Viz také:  
-[Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)
 
-[Vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md)
+- [Vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb73ce3750876ae5c96df65a9129fe9c5d4a082f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c47b552d2d9246fcf7f0982a84d8c301238cf65d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964974"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636213"
 ---
 # <a name="idiaenumtablesgetnewenum"></a>IDiaEnumTables::get__NewEnum
-Načte <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> verzi výčet.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get__NewEnum (   
-   IUnknown** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `IUnknown` rozhraní zastupující <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> verzi výčet.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+Načte <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> verzi výčet.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get__NewEnum ( 
+   IUnknown** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `IUnknown` rozhraní zastupující <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> verzi výčet.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

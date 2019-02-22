@@ -12,39 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c97df0a5c860fa27fdc136164b9fea79f58fa26
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e3454ff5ef087b67dda5d48849d4a6c4eceb7e52
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042137"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621822"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
-Zkopíruje zdrojový soubor pomocí identifikátoru zdrojového souboru.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT findFileById (   
-   DWORD            uniqueId,  
-   IDiaSourceFile** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `uniqueId`  
- [in] Určuje identifikátor zdrojového souboru.  
-  
- `ppResult`  
- [out] Vrátí [idiasourcefile –](../../debugger/debug-interface-access/idiasourcefile.md) načíst objekt, který reprezentuje zdrojový soubor.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Identifikátor zdrojového souboru je jedinečná hodnota používá interně ke DIA SDK, aby všechny zdrojové soubory jedinečný. Tato metoda se obvykle používá interně ke DIA SDK.  
-  
-## <a name="see-also"></a>Viz také  
- [Idiasession –](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession::FindFile –](../../debugger/debug-interface-access/idiasession-findfile.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Zkopíruje zdrojový soubor pomocí identifikátoru zdrojového souboru.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT findFileById ( 
+   DWORD            uniqueId,
+   IDiaSourceFile** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `uniqueId`
+
+[in] Určuje identifikátor zdrojového souboru.
+
+ `ppResult`
+
+[out] Vrátí [idiasourcefile –](../../debugger/debug-interface-access/idiasourcefile.md) načíst objekt, který reprezentuje zdrojový soubor.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Identifikátor zdrojového souboru je jedinečná hodnota používá interně ke DIA SDK, aby všechny zdrojové soubory jedinečný. Tato metoda se obvykle používá interně ke DIA SDK.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

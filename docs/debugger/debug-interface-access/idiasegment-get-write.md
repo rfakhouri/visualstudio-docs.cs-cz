@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2a5e1e56ed72bc744180a3600b24e12b2c8c5c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 81e4721ea4db124f9161c69b4fced0dacca714c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928495"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615677"
 ---
 # <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
-Získá příznak, který označuje, zda může být upraveno segmentu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_write (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` segmentu je možné zapisovat na; v opačném případě vrátí-li `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Získá příznak, který označuje, zda může být upraveno segmentu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_write ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` segmentu je možné zapisovat na; v opačném případě vrátí-li `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

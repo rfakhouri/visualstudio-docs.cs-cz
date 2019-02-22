@@ -12,38 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5582990ff3db2e03dce9dc0c198a907de978d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 604160cdaf8c1ff28b306106afe34e047768f3c4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971072"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632092"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
-Získá počet bajtů zdrojového kódu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_source (   
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `cbData`  
- [in] Počet bajtů, který představuje velikost vyrovnávací paměti pro data.  
-  
- `pcbData`  
- [out] Vrátí počet bajtů, který představuje počet bajtů vrácených. Pokud `data` je `NULL`, pak `pcbData` celkový počet bajtů dat je k dispozici.  
-  
- `data[]`  
- [out] Vyrovnávací paměť, která se vyplní bajtů zdroje.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Získá počet bajtů zdrojového kódu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_source ( 
+   DWORD  cbData,
+   DWORD* pcbData,
+   BYTE   data[]
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `cbData`
+
+[in] Počet bajtů, který představuje velikost vyrovnávací paměti pro data.
+
+ `pcbData`
+
+[out] Vrátí počet bajtů, který představuje počet bajtů vrácených. Pokud `data` je `NULL`, pak `pcbData` celkový počet bajtů dat je k dispozici.
+
+ `data[]`
+
+[out] Vyrovnávací paměť, která se vyplní bajtů zdroje.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

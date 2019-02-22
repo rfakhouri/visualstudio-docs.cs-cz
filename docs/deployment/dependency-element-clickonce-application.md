@@ -26,101 +26,101 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920653"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612670"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – element (aplikace ClickOnce)
-Určuje závislost platformy nebo sestavení, která je požadována pro aplikaci.  
+Určuje závislost platformy nebo sestavení, která je požadována pro aplikaci.
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
+```xml
 
-      <dependency>  
-   <dependentOS  
-      supportURL  
-      description  
-   >  
-      <osVersionInfo>  
-         <os  
-            majorVersion  
-            minorVersion  
-            buildNumber  
-            servicePackMajor  
-            servicePackMinor  
-            productType  
-            suiteType  
-         />   
-      </osVersionInfo>  
-   </dependentOS>  
-   <dependentAssembly  
-      dependencyType  
-      allowDelayedBinding  
-      group  
-      codeBase  
-      size  
-   >  
-      <assemblyIdentity  
-         name  
-         version  
-         processorArchitecture  
-         language  
-      >  
-         <hash>  
-            <dsig:Transforms>  
-               <dsig:Transform  
-                  Algorithm  
-            />  
-            </dsig:Transforms>  
-            <dsig:DigestMethod />  
-            <dsig:DigestValue>  
-            </dsig:DigestValue>  
-    </hash>  
+      <dependency>
+   <dependentOS
+      supportURL
+      description
+   >
+      <osVersionInfo>
+         <os
+            majorVersion
+            minorVersion
+            buildNumber
+            servicePackMajor
+            servicePackMinor
+            productType
+            suiteType
+         />
+      </osVersionInfo>
+   </dependentOS>
+   <dependentAssembly
+      dependencyType
+      allowDelayedBinding
+      group
+      codeBase
+      size
+   >
+      <assemblyIdentity
+         name
+         version
+         processorArchitecture
+         language
+      >
+         <hash>
+            <dsig:Transforms>
+               <dsig:Transform
+                  Algorithm
+            />
+            </dsig:Transforms>
+            <dsig:DigestMethod />
+            <dsig:DigestValue>
+            </dsig:DigestValue>
+    </hash>
 
-      </assemblyIdentity>  
-   </dependentAssembly>  
-</dependency>  
-```  
+      </assemblyIdentity>
+   </dependentAssembly>
+</dependency>
+```
 
-## <a name="elements-and-attributes"></a>Elementy a atributy  
- `dependency` Je vyžadován element. Může existovat více instancí `dependency` ve stejném manifestu aplikace.  
+## <a name="elements-and-attributes"></a>Elementy a atributy
+ `dependency` Je vyžadován element. Může existovat více instancí `dependency` ve stejném manifestu aplikace.
 
- `dependency` Prvek nemá žádné atributy a obsahuje následující podřízené prvky.  
+ `dependency` Prvek nemá žádné atributy a obsahuje následující podřízené prvky.
 
-### <a name="dependentos"></a>dependentOS  
- Volitelné. Obsahuje `osVersionInfo` elementu. `dependentOS` a `dependentAssembly` prvky se vzájemně vylučují: jeden z nich musí existovat `dependency` elementu, ale ne obojí.  
+### <a name="dependentos"></a>dependentOS
+ Volitelné. Obsahuje `osVersionInfo` elementu. `dependentOS` a `dependentAssembly` prvky se vzájemně vylučují: jeden z nich musí existovat `dependency` elementu, ale ne obojí.
 
- `dependentOS` podporuje následující atributy.  
+ `dependentOS` podporuje následující atributy.
 
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`supportUrl`|Volitelné. Určuje adresu URL podpory pro závislý platformu. Tato adresa URL zobrazí uživateli, pokud je nalezen aktuální platformě.|  
-|`description`|Volitelné. Popisuje operační systém popsané v čitelné formě, `dependentOS` elementu.|  
+|Atribut|Popis|
+|---------------|-----------------|
+|`supportUrl`|Volitelné. Určuje adresu URL podpory pro závislý platformu. Tato adresa URL zobrazí uživateli, pokud je nalezen aktuální platformě.|
+|`description`|Volitelné. Popisuje operační systém popsané v čitelné formě, `dependentOS` elementu.|
 
-### <a name="osversioninfo"></a>osVersionInfo  
- Povinný parametr. Tento element je podřízeným prvkem `dependentOS` elementu a obsahuje `os` elementu. Tento element nemá žádné atributy.  
+### <a name="osversioninfo"></a>osVersionInfo
+ Povinný parametr. Tento element je podřízeným prvkem `dependentOS` elementu a obsahuje `os` elementu. Tento element nemá žádné atributy.
 
-### <a name="os"></a>os  
- Povinný parametr. Tento element je podřízeným prvkem `osVersionInfo` elementu. Tento element má následující atributy.  
+### <a name="os"></a>os
+ Povinný parametr. Tento element je podřízeným prvkem `osVersionInfo` elementu. Tento element má následující atributy.
 
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`majorVersion`|Povinný parametr. Určuje číslo hlavní verze operačního systému.|  
-|`minorVersion`|Povinný parametr. Určuje číslo podverze operačního systému.|  
-|`buildNumber`|Povinný parametr. Určuje číslo sestavení operačního systému.|  
-|`servicePackMajor`|Povinný parametr. Určuje hlavní číslo aktualizace service pack operačního systému.|  
-|`servicePackMinor`|Volitelné. Určuje dílčí číslo aktualizace service pack operačního systému.|  
-|`productType`|Volitelné. Určuje hodnotu typu produktu. Platné hodnoty jsou `server`, `workstation`, a `domainController`. Například pro Windows 2000 Professional, je hodnota tohoto atributu `workstation`.|  
-|`suiteType`|Volitelné. Identifikuje sadu produktů, která je k dispozici v systému nebo typ konfigurace systému. Platné hodnoty jsou `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, a `terminal`. Například pro Windows 2000 Professional, je hodnota tohoto atributu `professional`.|  
+|Atribut|Popis|
+|---------------|-----------------|
+|`majorVersion`|Povinný parametr. Určuje číslo hlavní verze operačního systému.|
+|`minorVersion`|Povinný parametr. Určuje číslo podverze operačního systému.|
+|`buildNumber`|Povinný parametr. Určuje číslo sestavení operačního systému.|
+|`servicePackMajor`|Povinný parametr. Určuje hlavní číslo aktualizace service pack operačního systému.|
+|`servicePackMinor`|Volitelné. Určuje dílčí číslo aktualizace service pack operačního systému.|
+|`productType`|Volitelné. Určuje hodnotu typu produktu. Platné hodnoty jsou `server`, `workstation`, a `domainController`. Například pro Windows 2000 Professional, je hodnota tohoto atributu `workstation`.|
+|`suiteType`|Volitelné. Identifikuje sadu produktů, která je k dispozici v systému nebo typ konfigurace systému. Platné hodnoty jsou `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, a `terminal`. Například pro Windows 2000 Professional, je hodnota tohoto atributu `professional`.|
 
-### <a name="dependentassembly"></a>dependentAssembly  
- Volitelné. Obsahuje `assemblyIdentity` elementu. `dependentOS` a `dependentAssembly` prvky se vzájemně vylučují: jeden z nich musí existovat `dependency` elementu, ale ne obojí.  
+### <a name="dependentassembly"></a>dependentAssembly
+ Volitelné. Obsahuje `assemblyIdentity` elementu. `dependentOS` a `dependentAssembly` prvky se vzájemně vylučují: jeden z nich musí existovat `dependency` elementu, ale ne obojí.
 
- `dependentAssembly` má následující atributy.  
+ `dependentAssembly` má následující atributy.
 
 
 | Atribut | Popis |
@@ -131,94 +131,94 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 | `codeBase` | Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Cesta k závislého sestavení. Může být absolutní cesta nebo cesta relativní k kódu manifestu základní. Tato cesta musí být platný identifikátor URI platný v pořadí pro manifest sestavení. |
 | `size` | Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Velikost závislého sestavení, v bajtech. |
 
-### <a name="assemblyidentity"></a>assemblyIdentity  
- Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` prvek a má následující atributy.  
+### <a name="assemblyidentity"></a>assemblyIdentity
+ Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` prvek a má následující atributy.
 
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`name`|Povinný parametr. Určuje název aplikace.|  
-|`version`|Povinný parametr. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|  
-|`publicKeyToken`|Volitelné. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů `SHA-1` hash hodnoty veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč používaný k podepisování katalogu musí být 2 048 bitů nebo více.|  
-|`processorArchitecture`|Volitelné. Určuje procesor. Platné hodnoty jsou `x86` pro 32bitová verze Windows a `I64` pro 64bitová verze Windows.|  
-|`language`|Volitelné. Určuje jazyk kódy dvě části, třeba cs-cz, sestavení.|  
+|Atribut|Popis|
+|---------------|-----------------|
+|`name`|Povinný parametr. Určuje název aplikace.|
+|`version`|Povinný parametr. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|
+|`publicKeyToken`|Volitelné. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů `SHA-1` hash hodnoty veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč používaný k podepisování katalogu musí být 2 048 bitů nebo více.|
+|`processorArchitecture`|Volitelné. Určuje procesor. Platné hodnoty jsou `x86` pro 32bitová verze Windows a `I64` pro 64bitová verze Windows.|
+|`language`|Volitelné. Určuje jazyk kódy dvě části, třeba cs-cz, sestavení.|
 
-### <a name="hash"></a>hash  
- `hash` Je volitelný podřízený element `assemblyIdentity` elementu. `hash` Prvek nemá žádné atributy.  
+### <a name="hash"></a>hash
+ `hash` Je volitelný podřízený element `assemblyIdentity` elementu. `hash` Prvek nemá žádné atributy.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] používá vylepšením hodnota hash všech souborů v aplikaci pro kontrolu zabezpečení, k zajištění, že žádné soubory byly změněny po nasazení. Pokud `hash` element není zahrnut, tato kontrola neproběhne. Proto vynechání `hash` element se nedoporučuje.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] používá vylepšením hodnota hash všech souborů v aplikaci pro kontrolu zabezpečení, k zajištění, že žádné soubory byly změněny po nasazení. Pokud `hash` element není zahrnut, tato kontrola neproběhne. Proto vynechání `hash` element se nedoporučuje.
 
-### <a name="dsigtransforms"></a>dsig:TRANSFORMS  
- `dsig:Transforms` Je požadovaný podřízený element `hash` elementu. `dsig:Transforms` Prvek nemá žádné atributy.  
+### <a name="dsigtransforms"></a>dsig:TRANSFORMS
+ `dsig:Transforms` Je požadovaný podřízený element `hash` elementu. `dsig:Transforms` Prvek nemá žádné atributy.
 
-### <a name="dsigtransform"></a>dsig:Transform  
- `dsig:Transform` Je požadovaný podřízený element `dsig:Transforms` elementu. `dsig:Transform` Element má následující atributy.  
+### <a name="dsigtransform"></a>dsig:Transform
+ `dsig:Transform` Je požadovaný podřízený element `dsig:Transforms` elementu. `dsig:Transform` Element má následující atributy.
 
 
 | Atribut | Popis |
 |-------------| - |
 | `Algorithm` | Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
-### <a name="dsigdigestmethod"></a>dsig: DigestMethod  
- `dsig:DigestMethod` Je požadovaný podřízený element `hash` elementu. `dsig:DigestMethod` Element má následující atributy.  
+### <a name="dsigdigestmethod"></a>dsig: DigestMethod
+ `dsig:DigestMethod` Je požadovaný podřízený element `hash` elementu. `dsig:DigestMethod` Element má následující atributy.
 
 
 | Atribut | Popis |
 |-------------| - |
 | `Algorithm` | Algoritmus používaný k výpočtu algoritmu digest pro tento soubor. Aktuálně pouze hodnota používaná metodou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-### <a name="dsigdigestvalue"></a>dsig:DigestValue  
- `dsig:DigestValue` Je požadovaný podřízený element `hash` elementu. `dsig:DigestValue` Prvek nemá žádné atributy. Jeho textová hodnota je vypočítaný algoritmus hash pro zadaný soubor.  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue
+ `dsig:DigestValue` Je požadovaný podřízený element `hash` elementu. `dsig:DigestValue` Prvek nemá žádné atributy. Jeho textová hodnota je vypočítaný algoritmus hash pro zadaný soubor.
 
-## <a name="remarks"></a>Poznámky  
- Všechna sestavení, které používá vaše aplikace musí mít odpovídající `dependency` elementu. Závislá sestavení neobsahují sestavení, která musí předinstalován v globální mezipaměti sestavení jako sestavení platformy.  
+## <a name="remarks"></a>Poznámky
+ Všechna sestavení, které používá vaše aplikace musí mít odpovídající `dependency` elementu. Závislá sestavení neobsahují sestavení, která musí předinstalován v globální mezipaměti sestavení jako sestavení platformy.
 
-## <a name="example"></a>Příklad  
- Následující příklad kódu ukazuje `dependency` prvky [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace. Tento příklad kódu je součástí většího příkladu určeného pro [Manifest aplikace ClickOnce](../deployment/clickonce-application-manifest.md) tématu.  
+## <a name="example"></a>Příklad
+ Následující příklad kódu ukazuje `dependency` prvky [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace. Tento příklad kódu je součástí většího příkladu určeného pro [Manifest aplikace ClickOnce](../deployment/clickonce-application-manifest.md) tématu.
 
-```xml  
-<dependency>  
-  <dependentOS>  
-    <osVersionInfo>  
-      <os   
-        majorVersion="4"   
-        minorVersion="10"   
-        buildNumber="0"   
-        servicePackMajor="0" />  
-    </osVersionInfo>  
-  </dependentOS>  
-</dependency>  
-<dependency>  
-  <dependentAssembly  
-    dependencyType="preRequisite"  
-    allowDelayedBinding="true">  
-    <assemblyIdentity  
-      name="Microsoft.Windows.CommonLanguageRuntime"  
-      version="4.0.20506.0" />  
-  </dependentAssembly>  
-</dependency>  
+```xml
+<dependency>
+  <dependentOS>
+    <osVersionInfo>
+      <os
+        majorVersion="4"
+        minorVersion="10"
+        buildNumber="0"
+        servicePackMajor="0" />
+    </osVersionInfo>
+  </dependentOS>
+</dependency>
+<dependency>
+  <dependentAssembly
+    dependencyType="preRequisite"
+    allowDelayedBinding="true">
+    <assemblyIdentity
+      name="Microsoft.Windows.CommonLanguageRuntime"
+      version="4.0.20506.0" />
+  </dependentAssembly>
+</dependency>
 
-<dependency>  
-  <dependentAssembly  
-    dependencyType="install"  
-    allowDelayedBinding="true"  
-    codebase="MyApplication.exe"  
-    size="4096">  
-    <assemblyIdentity  
-      name="MyApplication"  
-      version="1.0.0.0"  
-      language="neutral"  
-      processorArchitecture="x86" />  
-    <hash>  
-      <dsig:Transforms>  
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />  
-      </dsig:Transforms>  
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-      <dsig:DigestValue>DpTW7RzS9IeT/RBSLj54vfTEzNg=</dsig:DigestValue>  
-    </hash>  
-  </dependentAssembly>  
-</dependency>  
-```  
+<dependency>
+  <dependentAssembly
+    dependencyType="install"
+    allowDelayedBinding="true"
+    codebase="MyApplication.exe"
+    size="4096">
+    <assemblyIdentity
+      name="MyApplication"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="x86" />
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DpTW7RzS9IeT/RBSLj54vfTEzNg=</dsig:DigestValue>
+    </hash>
+  </dependentAssembly>
+</dependency>
+```
 
-## <a name="see-also"></a>Viz také:  
- [ClickOnce – manifest aplikace](../deployment/clickonce-application-manifest.md)   
- [\<závislost > – element](../deployment/dependency-element-clickonce-deployment.md)
+## <a name="see-also"></a>Viz také:
+- [ClickOnce – manifest aplikace](../deployment/clickonce-application-manifest.md)
+- [\<závislost > – element](../deployment/dependency-element-clickonce-deployment.md)

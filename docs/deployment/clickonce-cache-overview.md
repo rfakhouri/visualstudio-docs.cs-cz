@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82a92600c1f8fafff63e8c4f36ed249457651e0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 85dbe4917d37c8d39dd8348c32d88933032ede1b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977093"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603858"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce – Přehled mezipaměti
-Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací, ať už jsou nainstalované místně nebo online, se ukládají v klientském počítači v [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikace *mezipaměti*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mezipaměť je řada skrytých složek v místní nastavení adresáři Documents and Settings složky aktuálního uživatele. Tato mezipaměť obsahuje soubory všechny aplikace, včetně sestavení, konfigurační soubory, aplikace a uživatelských nastavení a data adresáře. Mezipaměť je také zodpovědnost za migraci dat adresáře aplikace na nejnovější verzi. Další informace o migraci dat najdete v tématu [Accessing Local and Remote Data in ClickOnce Applications](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
-  
- Tím, že poskytuje jedno umístění pro uložení aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] převezme úlohy správy fyzické instalace aplikace od uživatele. Mezipaměť také pomáhá izolovat aplikace podle sestavení a datové soubory pro všechny aplikace a jejich různé verze oddělit od sebe. Například při upgradu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, že verze a její datové prostředky se dodávají s jejich vlastní adresáře v mezipaměti.  
-  
-## <a name="cache-storage-quota"></a>Kvóta úložiště mezipaměti  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, které jsou hostované online jsou omezené množství místa, které mohou zabírat kvótou, která omezuje velikost [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mezipaměti. Velikost mezipaměti se vztahuje na všechny uživatele online aplikace; jednu aplikaci částečně důvěryhodné, online je omezena na polovinu kvóta místa. Nainstalované aplikace nejsou omezeny velikost mezipaměti a nezapočítávají limit mezipaměti. Pro všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací, mezipaměti zachová jenom aktuální verzi a dříve nainstalované verzi.  
-  
- Ve výchozím nastavení, klientské počítače mají 250 MB úložiště pro online [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací. Datové soubory se nepočítají do tohoto limitu. Správce systému může zvětšit nebo zmenšit tato kvóta na konkrétní klientský počítač změnou klíče registru **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, což je hodnota DWORD, aby vyjadřoval velikost mezipaměti v kilobajtech. Například by za účelem snížení velikosti mezipaměti na 50 MB, změňte tuto hodnotu na 51200.  
-  
-## <a name="see-also"></a>Viz také:  
- [Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací, ať už jsou nainstalované místně nebo online, se ukládají v klientském počítači v [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikace *mezipaměti*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mezipaměť je řada skrytých složek v místní nastavení adresáři Documents and Settings složky aktuálního uživatele. Tato mezipaměť obsahuje soubory všechny aplikace, včetně sestavení, konfigurační soubory, aplikace a uživatelských nastavení a data adresáře. Mezipaměť je také zodpovědnost za migraci dat adresáře aplikace na nejnovější verzi. Další informace o migraci dat najdete v tématu [Accessing Local and Remote Data in ClickOnce Applications](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
+
+ Tím, že poskytuje jedno umístění pro uložení aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] převezme úlohy správy fyzické instalace aplikace od uživatele. Mezipaměť také pomáhá izolovat aplikace podle sestavení a datové soubory pro všechny aplikace a jejich různé verze oddělit od sebe. Například při upgradu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, že verze a její datové prostředky se dodávají s jejich vlastní adresáře v mezipaměti.
+
+## <a name="cache-storage-quota"></a>Kvóta úložiště mezipaměti
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, které jsou hostované online jsou omezené množství místa, které mohou zabírat kvótou, která omezuje velikost [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mezipaměti. Velikost mezipaměti se vztahuje na všechny uživatele online aplikace; jednu aplikaci částečně důvěryhodné, online je omezena na polovinu kvóta místa. Nainstalované aplikace nejsou omezeny velikost mezipaměti a nezapočítávají limit mezipaměti. Pro všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací, mezipaměti zachová jenom aktuální verzi a dříve nainstalované verzi.
+
+ Ve výchozím nastavení, klientské počítače mají 250 MB úložiště pro online [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací. Datové soubory se nepočítají do tohoto limitu. Správce systému může zvětšit nebo zmenšit tato kvóta na konkrétní klientský počítač změnou klíče registru **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, což je hodnota DWORD, aby vyjadřoval velikost mezipaměti v kilobajtech. Například by za účelem snížení velikosti mezipaměti na 50 MB, změňte tuto hodnotu na 51200.
+
+## <a name="see-also"></a>Viz také:
+- [Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

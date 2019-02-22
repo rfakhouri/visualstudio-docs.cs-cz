@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1013d026e2943560ceeb9c0146469b754b2faa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d318ed0b033e4e423ee947a3b72fc317e98e432
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982868"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611305"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
-Načte název symbolu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_name (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí název symbolu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Načte název symbolu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_name ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí název symbolu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="example"></a>Příklad  
-  
-```C++  
-IDiaSymbol* pType;  
-BSTR        name;  
-pType->get_name( &name );  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="example"></a>Příklad
+
+```C++
+IDiaSymbol* pType;
+BSTR        name;
+pType->get_name( &name );
+```
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

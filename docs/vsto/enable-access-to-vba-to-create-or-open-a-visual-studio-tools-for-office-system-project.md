@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 219b2e1bd3ff7690f19066f83e914e5d0b878a73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945778"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634822"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Povolit přístup pro jazyk VBA vytvořit nebo otevřít Visual Studio Tools pro projekt systému Microsoft Office
 
@@ -126,5 +126,4 @@ Předtím, než můžete vytvořit nebo otevřít Visual Studio Tools pro Micros
 5. Vyberte **rozpoznat a opravit chyby v instalaci Office**a potom klikněte na tlačítko **nainstalovat**.
 
 ## <a name="see-also"></a>Viz také:
-
- [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)
+- [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936639"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645716"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalace certifikátů vyžadovaných pro offline instalace sady Visual Studio
 
@@ -61,6 +61,7 @@ Pokud vytváříte skript nasazení sady Visual Studio v režimu offline klients
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **Aktualizace**: Pro Visual Studio 2017 verze 15,8 ve verzi Preview 2 nebo novější, vytvořte dávkový soubor pomocí následujících příkazů:
 
    ```cmd
@@ -123,7 +124,7 @@ Pokud nebyly v názvech certifikátů **vystaveno pro** sloupce, musí být nain
 
 ## <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
-Po instalaci certifikátů nasazení sady Visual Studio můžete přejít pomocí pokynů z [nasazení z instalace v síti](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) část stránky "Vytvoření síťové instalace sady Visual Studio".
+Po instalaci certifikátů nasazení sady Visual Studio můžete přejít pomocí pokynů z [nasazení z instalace v síti](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) část stránky "Vytvoření síťové instalace sady Visual Studio".
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

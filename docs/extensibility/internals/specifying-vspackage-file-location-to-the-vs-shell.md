@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a1a28232b276456dd2b9a982533e1974ed9a088
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 47f95231c0c7bb955271203792bdd795772b50c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932412"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612371"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Specifikace umístění souboru balíčku VSPackage pro prostředí sady VS
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musí být schopna najít sestavení knihovny DLL pro načtení sady VSPackage. Můžete jej umístit různými způsoby, jak je popsáno v následující tabulce.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musí být schopna najít sestavení knihovny DLL pro načtení sady VSPackage. Můžete jej umístit různými způsoby, jak je popsáno v následující tabulce.
 
 
 | Metoda | Popis |

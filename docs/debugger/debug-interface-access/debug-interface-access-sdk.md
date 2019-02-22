@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 161934d30c7cd4ecb9d2658e7dac12e46049be1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932295"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608081"
 ---
 # <a name="debug-interface-access-sdk"></a>Přístup k rozhraní ladění SDK
 
@@ -27,17 +27,22 @@ Microsoft ladění rozhraní přístup Software Development Kit (DIA SDK) poskyt
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
-[Začínáme](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[Začínáme](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 Poskytuje přehled o DIA SDK funkcí a určuje, kde je nainstalován DIA SDK a požadované záhlaví nebo soubory knihoven.
 
-[Dotazování na soubor .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[Dotazování na soubor .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 Obsahuje pokyny k používání rozhraní API DIA k dotazování na soubor .pdb.
 
-[Symboly a značky symbolů](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[Symboly a značky symbolů](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 Popisuje, jak se v rozhraní API DIA používají symboly a značky symbolů.
 
-[Referenční informace](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Referenční informace](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 Obsahuje rozhraní, metody, výčty a struktury DIA rozhraní API.
 
-[Dia2dump – ukázka](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Dia2dump – ukázka](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 Ukazuje, jak použít rozhraní API DIA k vyhledávání a procházení ladicí informace.

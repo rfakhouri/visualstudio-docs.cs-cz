@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48650731d9f3493d1b399aae0345792e04e5eada
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316103"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623421"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Určuje cílový registru.
@@ -409,38 +409,27 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Elementy
-CV_REG_*  
-Registry používají Intel 80 x 86 a ix86 procesory a p-code.
+CV_REG_ * zaregistruje, používá Intel 80 x 86 a ix86 procesory a p-code.
 
-CV_R68_*  
-Registry používané 68K procesoru.
+CV_R68_ * zaregistruje, používá 68K procesoru.
 
-CV_M4_*  
-Registry používá řadu procesorem MIPS 4000.
+CV_M4_ * zaregistruje, používá řadu procesorem MIPS 4000.
 
-CV_ALPHA_*  
-Použít procesorem řady Digital Equipment Corporation alfa AXP registrů.
+CV_ALPHA_ * zaregistruje, používá procesorem řady Digital Equipment Corporation alfa AXP.
 
-CV_PPC_*  
-Registry používané procesoru Motorola/IBM PowerPC.
+CV_PPC_ * zaregistruje, používá procesoru Motorola/IBM PowerPC.
 
-CV_SH3_ * a CV_SH_\*  
-Použít procesorem řady Hitachi SH3 a Hitachi SH registrů.
+CV_SH3_ * a CV_SH_\* registry použité procesorem řady Hitachi SH3 a Hitachi SH.
 
-CV_ARM_*  
-Registry používané procesory Advanced RISC Machine (ARM).
+CV_ARM_ * zaregistruje používané procesory Advanced RISC Machine (ARM).
 
-CV_IA64_*  
-Registry používá řadu procesorů Intel IA64.
+CV_IA64_ * zaregistruje, používá řadu procesorů Intel IA64.
 
-CV_TRI_*  
-Registry používané technologie TriCore Infineon procesoru.
+CV_TRI_ * zaregistruje, používá technologie TriCore Infineon procesoru.
 
-CV_AM33_*  
-Registry používat jednotky/Panasonic AM33 a související s procesory.
+CV_AM33_ * zaregistruje používané jednotky/Panasonic AM33 a související s procesory.
 
-CV_M32R_*  
-Registry používané Mitsubishi M32R procesoru.
+CV_M32R_ * zaregistruje, používá Mitsubishi M32R procesoru.
 
 ## <a name="remarks"></a>Poznámky
 Každý typ procesoru používá svou vlastní jedinečnou sadu registrů.
@@ -461,9 +450,9 @@ Hodnoty v tento výčet se předají do následujících metod:
 Záhlaví: cvconst.h
 
 ## <a name="see-also"></a>Viz také
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
-[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
-[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
-[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
-[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

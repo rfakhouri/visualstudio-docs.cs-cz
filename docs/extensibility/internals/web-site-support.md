@@ -10,31 +10,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a84b59085e2850a7c889e3468788fb8ef23414ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff59be63ef1d6e7120842c936dd64dbb77d7ed70
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959904"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618026"
 ---
 # <a name="web-site-support"></a>Podpora webu
-Systém projektu webu se bude systém projektu, který vytvoří webové projekty. Webové projekty zase vytvářet webové aplikace. Webový projekt vytvoří jeden spustitelný soubor pro každou webovou stránku, který je spojen kódu. Další spustitelné soubory jsou generovány v souborech zdrojového kódu ve složce /App_Code.  
-  
- Systémy projektu webové stránky jsou vytvořena přidáním šablony a atributy registrace do existujícího projektu systému. Jeden z těchto atributů vybere poskytovatele technologie IntelliSense pro jazyk. Implementace zprostředkovatele technologie IntelliSense zpracovává odkazy a volá kompilátor jazyka, pokud se požaduje inteligentní webové stránky, která není v mezipaměti.  
-  
- Kompilátor jazyka, který používá ke kompilaci webové stránky musí být zaregistrovaná s [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]. Můžete použít [ \<kompilátoru > Element](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) v souboru Web.config pro registraci kompilátor, jako v následujícím příkladu:  
-  
-```  
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
-```  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Šablony podpory webu](../../extensibility/internals/web-site-support-templates.md)  
- Seznam šablon, které můžete použít k vytvoření nových projektů webu a přidružené položky.  
-  
- [Atributy podpory webu](../../extensibility/internals/web-site-support-attributes.md)  
- Představuje atributy registrace, které se připojují webového projektu do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Webové projekty](../../extensibility/internals/web-projects.md)  
+Systém projektu webu se bude systém projektu, který vytvoří webové projekty. Webové projekty zase vytvářet webové aplikace. Webový projekt vytvoří jeden spustitelný soubor pro každou webovou stránku, který je spojen kódu. Další spustitelné soubory jsou generovány v souborech zdrojového kódu ve složce /App_Code.
+
+ Systémy projektu webové stránky jsou vytvořena přidáním šablony a atributy registrace do existujícího projektu systému. Jeden z těchto atributů vybere poskytovatele technologie IntelliSense pro jazyk. Implementace zprostředkovatele technologie IntelliSense zpracovává odkazy a volá kompilátor jazyka, pokud se požaduje inteligentní webové stránky, která není v mezipaměti.
+
+ Kompilátor jazyka, který používá ke kompilaci webové stránky musí být zaregistrovaná s [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]. Můžete použít [ \<kompilátoru > Element](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) v souboru Web.config pro registraci kompilátor, jako v následujícím příkladu:
+
+```
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
+```
+
+## <a name="in-this-section"></a>V tomto oddílu
+- [Šablony podpory webu](../../extensibility/internals/web-site-support-templates.md)
+
+ Seznam šablon, které můžete použít k vytvoření nových projektů webu a přidružené položky.
+
+- [Atributy podpory webu](../../extensibility/internals/web-site-support-attributes.md)
+
+ Představuje atributy registrace, které se připojují webového projektu do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].
+
+## <a name="related-sections"></a>Související oddíly
+- [Webové projekty](../../extensibility/internals/web-projects.md)
+
  Obsahuje přehled dva druhy webových projektů, webové projekty a projekty webových aplikací.

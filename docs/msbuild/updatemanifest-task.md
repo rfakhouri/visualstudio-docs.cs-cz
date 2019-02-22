@@ -16,29 +16,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d4eb1d9ea90f2ee10a5b285e8fd841b5405203
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0dd2ddfdbe784a45badfd0138b41b1f5dbff8ec7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961294"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641062"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest – úloha
-Aktualizace vybraných vlastností v manifestu a vzdává.  
-  
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `UpdateManifest` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`ApplicationManifest`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje manifest aplikace.|  
-|`ApplicationPath`|Vyžaduje `String` parametru.<br /><br /> Určuje cestu k manifestu aplikace.|  
-|`InputManifest`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje manifest aktualizovat.|  
-|`OutputManifest`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> výstupní parametr.<br /><br /> Určuje manifest, který obsahuje aktualizované vlastnosti.|  
-  
-## <a name="remarks"></a>Poznámky  
- Kromě s parametry, které jsou uvedené v tabulce, zdědí tento úkol parametry ze <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [Task – základní třída](../msbuild/task-base-class.md).  
-  
-## <a name="see-also"></a>Viz také:  
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+Aktualizace vybraných vlastností v manifestu a vzdává.
+
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `UpdateManifest` úloh.
+
+|Parametr|Popis|
+|---------------|-----------------|
+|`ApplicationManifest`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje manifest aplikace.|
+|`ApplicationPath`|Vyžaduje `String` parametru.<br /><br /> Určuje cestu k manifestu aplikace.|
+|`InputManifest`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje manifest aktualizovat.|
+|`OutputManifest`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> výstupní parametr.<br /><br /> Určuje manifest, který obsahuje aktualizované vlastnosti.|
+
+## <a name="remarks"></a>Poznámky
+ Kromě s parametry, které jsou uvedené v tabulce, zdědí tento úkol parametry ze <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [Task – základní třída](../msbuild/task-base-class.md).
+
+## <a name="see-also"></a>Viz také:
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

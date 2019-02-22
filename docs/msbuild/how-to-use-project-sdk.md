@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020591"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638176"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Postupy: Použití sady SDK projektu MSBuild
 
@@ -94,7 +94,7 @@ Během vyhodnocování projektu [!INCLUDE[vstecmsbuild](../extensibility/interna
 Při vyhodnocování importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicky přeloží cestu k projektu sadu SDK na základě názvu a verze, které jste zadali.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsahuje také seznam registrovaných překladačů sady SDK, které jsou moduly plug-in, které se najít projekt sady SDK na svém počítači.  Tyto moduly plug-in patří:
 
 1. Překladač založená na Nugetu, který se dotazuje nakonfigurované balíček informační kanály pro balíčky NuGet, které odpovídají ID a verzi sady SDK, které jste zadali.<br/>
-   Tento překladač je aktivní, pouze pokud jste zadali volitelné verze a můžou používat pro všechny vlastní sadu SDK projektu.  
+   Tento překladač je aktivní, pouze pokud jste zadali volitelné verze a můžou používat pro všechny vlastní sadu SDK projektu.
 2. Překladač .NET CLI, který se přeloží sad SDK, které se instalují s .NET CLI.<br/>
    Tento překladač vyhledá sady SDK projektu jako `Microsoft.NET.Sdk` a `Microsoft.NET.Sdk.Web` které jsou součástí produktu.
 3. Výchozí překladač, který se přeloží sad SDK, které byly nainstalovány s nástrojem MSBuild.
@@ -110,11 +110,11 @@ Překladač založená na Nugetu SDK podporuje určení verze ve vaší [global.
 }
 ```
 
-Během sestavení lze použít pouze jednu verzi každého projektu sady SDK.  Pokud odkazujete na dvě různé verze stejného projektu sadu SDK, nástroj MSBuild vygeneruje upozornění.  Doporučuje se **není** určit verzi ve vašich projektech, pokud je zadán s verzí v vaše *global.json*.  
+Během sestavení lze použít pouze jednu verzi každého projektu sady SDK.  Pokud odkazujete na dvě různé verze stejného projektu sadu SDK, nástroj MSBuild vygeneruje upozornění.  Doporučuje se **není** určit verzi ve vašich projektech, pokud je zadán s verzí v vaše *global.json*.
 
 ## <a name="see-also"></a>Viz také:
 
- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [Přizpůsobení sestavení](../msbuild/customize-your-build.md)   
- [Balíčky, metadata a architektur](/dotnet/core/packages)   
- [Dodatky k formátu csproj pro .NET Core](/dotnet/core/tools/csproj)
+- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)
+- [Přizpůsobení sestavení](../msbuild/customize-your-build.md)
+- [Balíčky, metadata a architektur](/dotnet/core/packages)
+- [Dodatky k formátu csproj pro .NET Core](/dotnet/core/tools/csproj)

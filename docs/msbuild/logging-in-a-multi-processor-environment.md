@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925446"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638727"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokolování v prostředí s více procesory
 Schopnost nástroje MSBuild používat více procesorů může výrazně zkrátit čas sestavení projektu, ale bude mít také za následek složitější protokolování. V prostředí s jedním procesorem může protokolovací nástroj zpracovat příchozí události, zprávy, upozornění a chyby předvídatelným, sekvenčním způsobem. Avšak v prostředí s více procesory mohou události přicházet z různých zdrojů zároveň nebo mimo pořadí. Nástroj MSBuild poskytuje nový protokolovací nástroj více-procesorů s ohledem na a povolí vytváření vlastních "předávajících protokolovacích nástrojů."
@@ -71,5 +71,5 @@ Culture=neutral
 Hvězdička (*) v přepínači `-dl` odděluje názvy dvou protokolovacích nástrojů.
 
 ## <a name="see-also"></a>Viz také:
-[Protokolovací nástroje sestavení](../msbuild/build-loggers.md)  
-[Vytvořit předávající Protokolovací nástroje](../msbuild/creating-forwarding-loggers.md)
+- [Protokolovací nástroje sestavení](../msbuild/build-loggers.md)
+- [Vytvořit předávající Protokolovací nástroje](../msbuild/creating-forwarding-loggers.md)

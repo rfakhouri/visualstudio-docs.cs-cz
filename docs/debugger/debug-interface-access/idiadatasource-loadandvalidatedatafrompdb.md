@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0024acf89af28e3496443c0e0dd74377618564
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987350"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626138"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Otevře a ověřuje, že soubor databáze (PDB) programu odpovídá podpis informací uvedených a připraví soubor typu .pdb jako zdroj dat ladění.
@@ -34,16 +34,20 @@ HRESULT loadAndValidateDataFromPdb ( 
 ```
 
 #### <a name="parameters"></a>Parametry
-`pdbPath`  
+`pdbPath`
+
 [in] Cesta k souboru .pdb.
 
-`pcsig70`  
+`pcsig70`
+
 [in] Identifikátor GUID podpis ověření proti podpis souboru pdb. Soubory PDB pouze [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] a později máte podpisů identifikátor GUID.
 
-`sig`  
+`sig`
+
 [in] 32-bit podpis ověření proti podpis souboru pdb.
 
-`age`  
+`age`
+
 [in] Stáří hodnotu pro ověření. Stáří neodpovídá nutně na libovolnou hodnotu známý čas, se používá k určení, zda je soubor PDB synchronizován s odpovídající soubor .exe.
 
 ## <a name="return-value"></a>Návratová hodnota
@@ -88,7 +92,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

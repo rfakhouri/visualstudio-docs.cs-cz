@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e18484154e3fd1664eae1ccbdd5fd787d3d1c3b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d3021aef3f9a2e11849991327a6ef8783b62439
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960825"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636813"
 ---
 # <a name="noise-reduction-percentage"></a>Procento snížení šumu
 Výchozí hodnota nastavení procento snížení šumu je 2. Ve stromu volání jsou uvedeny pouze položky, které mají procento celkového času větší než nebo rovna hodnotě toto nastavení. Změnou nastavení můžete řídit počet položek, které jsou zobrazeny ve stromu volání. Například změna hodnoty 10 se zobrazí pouze položky stromu volání, které mají celkový čas větší nebo rovna 10 %. Zvýšením hodnoty nastavení vám soustředit se na položky, které mají větší dopad na výkon procesu.

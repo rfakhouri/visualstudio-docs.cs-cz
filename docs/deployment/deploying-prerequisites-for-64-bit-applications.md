@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aab5fb7487cc2e79bc2e0e1a7a5dffce96447f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f481d944baf60120bf691313400489c876ecf5c2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024549"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606248"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Nasazení nezbytných součástí pro 64bitové aplikace
-ClickOnce – nasazení podporuje instalaci aplikací na 64bitových platformách. Cílové platformy jsou **x86** pro 32bitové platformy, **x64** pro počítače podporuje AMD64 a podporou technologie EM64T instrukční sadu, a **Itanium** pro procesor Itanium 64-bit.  
+ClickOnce – nasazení podporuje instalaci aplikací na 64bitových platformách. Cílové platformy jsou **x86** pro 32bitové platformy, **x64** pro počítače podporuje AMD64 a podporou technologie EM64T instrukční sadu, a **Itanium** pro procesor Itanium 64-bit.
 
-## <a name="prerequisites"></a>Požadavky  
- V následující tabulce jsou uvedeny distribuovatelné součásti, které můžete použít jako požadavky na instalaci 64bitové aplikace.  
+## <a name="prerequisites"></a>Požadavky
+ V následující tabulce jsou uvedeny distribuovatelné součásti, které můžete použít jako požadavky na instalaci 64bitové aplikace.
 
- Pokud vyberete požadovanou součást, která se nevyznačuje 64bitové komponenty, může se zobrazit upozornění oznamující, že vybrané balíčky nejsou k dispozici pro 64bitovou platformu.  
+ Pokud vyberete požadovanou součást, která se nevyznačuje 64bitové komponenty, může se zobrazit upozornění oznamující, že vybrané balíčky nejsou k dispozici pro 64bitovou platformu.
 
 
 | Distribuovatelné součásti | Podpora x64 | Podpora IA64 |
@@ -42,7 +42,7 @@ ClickOnce – nasazení podporuje instalaci aplikací na 64bitových platformác
 | Microsoft .NET Framework 4 (x86 a x64) | Ano | |
 | Microsoft .NET Framework 4 Client Profile (x86 a x64) | Ano | |
 
-## <a name="see-also"></a>Viz také:  
- [Nasazení aplikací, služeb a komponent](../deployment/deploying-applications-services-and-components.md)   
- [Postupy: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64bitové aplikace](/dotnet/framework/64-bit-apps)
+## <a name="see-also"></a>Viz také:
+- [Nasazení aplikací, služeb a komponent](../deployment/deploying-applications-services-and-components.md)
+- [Postupy: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [64bitové aplikace](/dotnet/framework/64-bit-apps)

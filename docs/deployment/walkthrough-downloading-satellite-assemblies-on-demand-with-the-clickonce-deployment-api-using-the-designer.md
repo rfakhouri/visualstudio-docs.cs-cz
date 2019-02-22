@@ -20,64 +20,64 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25659368933dc2c841eb35f0f53014b42e455f7a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a063a42cd3597f69d0500012d74c7be700e02138
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031052"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634991"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Průvodce: Stahování satelitních sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API
-Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelitních sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikací pro jazykovou verzi, než je výchozí jazykovou verzi aplikace.  
-  
- Jak je popsáno v [lokalizace aplikací ClickOnce](../deployment/localizing-clickonce-applications.md), může obsahovat více satelitní sestavení pro více jazykových verzí v rámci stejného [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení. Ve výchozím nastavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] stáhne všechny satelitní sestavení ve vašem nasazení do klientského počítače, i když jednoho klienta, bude pravděpodobně vyžadovat jenom jeden satelitní sestavení.  
-  
- Tento návod ukazuje, jak označit vaše satelitní sestavení jako volitelné a stáhnout pouze sestavení klientský počítač, musí mít nastavení aktuální jazykové verze.  
-  
+Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelitních sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikací pro jazykovou verzi, než je výchozí jazykovou verzi aplikace.
+
+ Jak je popsáno v [lokalizace aplikací ClickOnce](../deployment/localizing-clickonce-applications.md), může obsahovat více satelitní sestavení pro více jazykových verzí v rámci stejného [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení. Ve výchozím nastavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] stáhne všechny satelitní sestavení ve vašem nasazení do klientského počítače, i když jednoho klienta, bude pravděpodobně vyžadovat jenom jeden satelitní sestavení.
+
+ Tento návod ukazuje, jak označit vaše satelitní sestavení jako volitelné a stáhnout pouze sestavení klientský počítač, musí mít nastavení aktuální jazykové verze.
+
 > [!NOTE]
->  Pro účely testování následující příklady kódu prostřednictvím kódu programu nastavit jazykovou verzi `ja-JP`. V části "Další kroky" dále v tomto tématu informace o tom, jak upravit tento kód pro produkční prostředí.  
-  
-### <a name="to-mark-satellite-assemblies-as-optional"></a>K označení satelitní sestavení jako volitelný  
-  
-1.  Sestavte projekt. Tím se vygeneruje satelitní sestavení pro všechny jazykové verze, které jsou k lokalizaci.  
-  
-2.  Klikněte pravým tlačítkem na název vašeho projektu v Průzkumníku řešení a klikněte na tlačítko **vlastnosti**.  
-  
-3.  Klikněte na tlačítko **publikovat** kartu a potom klikněte na tlačítko **soubory aplikace**.  
-  
-4.  Vyberte **zobrazit všechny soubory** zaškrtnutím políčka Zobrazit satelitní sestavení. Všechny satelitní sestavení ve výchozím nastavení, budou zahrnuty ve vašem nasazení a bude viditelný v tomto dialogovém.  
-  
-     Satelitní sestavení bude mít název ve tvaru  *\<isoCode > \ApplicationName.resources.dll*, kde \<isoCode > je ve formátu RFC 1766 identifikátor jazyka.  
-  
-5.  Klikněte na tlačítko **nový** v **skupina pro stažení** seznamu pro každý identifikátor jazyka. Po zobrazení výzvy pro název skupiny stažení, zadejte identifikátor jazyka. Například by pro japonské satelitní sestavení, zadejte název skupiny stažení `ja-JP`.  
-  
-6.  Zavřít **soubory aplikace** dialogové okno.  
-  
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Chcete-li stáhnout satelitních sestavení na vyžádání v jazyce C# 
-  
-1.  Otevřít *Program.cs* souboru. Pokud se tento soubor v Průzkumníku řešení, vyberte svůj projekt nezobrazí a na **projektu** nabídky, klikněte na tlačítko **zobrazit všechny soubory**.  
-  
-2.  Pomocí následujícího kódu ke stažení příslušného satelitního sestavení a spuštění aplikace.  
-  
-     [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
-  
-### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Chcete-li stáhnout satelitních sestavení na vyžádání v jazyce Visual Basic  
-  
-1.  V **vlastnosti** okno pro aplikace, klikněte **aplikace** kartu.  
-  
-2.  V dolní části stránky karty, klikněte na tlačítko **zobrazení události aplikace**.  
-  
-3.  Přidejte následující importy do začátku *ApplicationEvents.VB* souboru.  
-  
-     [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
-  
-4.  Přidejte následující kód, který `MyApplication` třídy.  
-  
-     [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
-  
-## <a name="next-steps"></a>Další kroky  
- V produkčním prostředí, budete pravděpodobně muset odebrat řádek v příkladech kódu, které nastaví <xref:System.Threading.Thread.CurrentUICulture%2A> na určitou hodnotu, protože klientské počítače budou mít správnou hodnotu ve výchozím nastavení. Pokud vaše aplikace běží na počítači japonské klienta, například <xref:System.Threading.Thread.CurrentUICulture%2A> bude `ja-JP` ve výchozím nastavení. Nastavení programu je dobrým způsobem, jak testovat satelitní sestavení před nasazením aplikace.  
-  
-## <a name="see-also"></a>Viz také:  
- [Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
- [Lokalizace aplikací ClickOnce](../deployment/localizing-clickonce-applications.md)
+>  Pro účely testování následující příklady kódu prostřednictvím kódu programu nastavit jazykovou verzi `ja-JP`. V části "Další kroky" dále v tomto tématu informace o tom, jak upravit tento kód pro produkční prostředí.
+
+### <a name="to-mark-satellite-assemblies-as-optional"></a>K označení satelitní sestavení jako volitelný
+
+1.  Sestavte projekt. Tím se vygeneruje satelitní sestavení pro všechny jazykové verze, které jsou k lokalizaci.
+
+2.  Klikněte pravým tlačítkem na název vašeho projektu v Průzkumníku řešení a klikněte na tlačítko **vlastnosti**.
+
+3.  Klikněte na tlačítko **publikovat** kartu a potom klikněte na tlačítko **soubory aplikace**.
+
+4.  Vyberte **zobrazit všechny soubory** zaškrtnutím políčka Zobrazit satelitní sestavení. Všechny satelitní sestavení ve výchozím nastavení, budou zahrnuty ve vašem nasazení a bude viditelný v tomto dialogovém.
+
+     Satelitní sestavení bude mít název ve tvaru  *\<isoCode > \ApplicationName.resources.dll*, kde \<isoCode > je ve formátu RFC 1766 identifikátor jazyka.
+
+5.  Klikněte na tlačítko **nový** v **skupina pro stažení** seznamu pro každý identifikátor jazyka. Po zobrazení výzvy pro název skupiny stažení, zadejte identifikátor jazyka. Například by pro japonské satelitní sestavení, zadejte název skupiny stažení `ja-JP`.
+
+6.  Zavřít **soubory aplikace** dialogové okno.
+
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Chcete-li stáhnout satelitních sestavení na vyžádání v jazyce C#
+
+1.  Otevřít *Program.cs* souboru. Pokud se tento soubor v Průzkumníku řešení, vyberte svůj projekt nezobrazí a na **projektu** nabídky, klikněte na tlačítko **zobrazit všechny soubory**.
+
+2.  Pomocí následujícího kódu ke stažení příslušného satelitního sestavení a spuštění aplikace.
+
+     [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
+
+### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Chcete-li stáhnout satelitních sestavení na vyžádání v jazyce Visual Basic
+
+1.  V **vlastnosti** okno pro aplikace, klikněte **aplikace** kartu.
+
+2.  V dolní části stránky karty, klikněte na tlačítko **zobrazení události aplikace**.
+
+3.  Přidejte následující importy do začátku *ApplicationEvents.VB* souboru.
+
+     [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
+
+4.  Přidejte následující kód, který `MyApplication` třídy.
+
+     [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
+
+## <a name="next-steps"></a>Další kroky
+ V produkčním prostředí, budete pravděpodobně muset odebrat řádek v příkladech kódu, které nastaví <xref:System.Threading.Thread.CurrentUICulture%2A> na určitou hodnotu, protože klientské počítače budou mít správnou hodnotu ve výchozím nastavení. Pokud vaše aplikace běží na počítači japonské klienta, například <xref:System.Threading.Thread.CurrentUICulture%2A> bude `ja-JP` ve výchozím nastavení. Nastavení programu je dobrým způsobem, jak testovat satelitní sestavení před nasazením aplikace.
+
+## <a name="see-also"></a>Viz také:
+- [Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
+- [Lokalizace aplikací ClickOnce](../deployment/localizing-clickonce-applications.md)

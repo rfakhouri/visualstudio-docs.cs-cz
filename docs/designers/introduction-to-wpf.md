@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 893b073c2722fc91e342d37f0aeb2a490fccb53a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919986"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635069"
 ---
 # <a name="wpf-overview"></a>Přehled grafického subsystému WPF (Windows Presentation Foundation)
 

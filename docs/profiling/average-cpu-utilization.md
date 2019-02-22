@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 332202d5062b081227619f4007e011f611b6192e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01557fb378f03ffd033495ca42024c1143e67187
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036937"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609498"
 ---
 # <a name="average-cpu-utilization"></a>Průměrné využití procesoru
-Zobrazí průměrné využití profilovaný proces systému logických jader po dobu trvání procesu. Grafu nezobrazuje, které konkrétní core je aktivní v daném okamžiku. Například pokud dvě jádra každý systém plně využívá kapacitu 50 % za dané časové období, pak toto zobrazení zobrazí využívané jednoho logického jádra.  
-  
-## <a name="see-also"></a>Viz také:  
- [Zobrazení jader](../profiling/cores-view.md)   
- [Graf využití procesoru](../profiling/cpu-utilization-graph.md)
+Zobrazí průměrné využití profilovaný proces systému logických jader po dobu trvání procesu. Grafu nezobrazuje, které konkrétní core je aktivní v daném okamžiku. Například pokud dvě jádra každý systém plně využívá kapacitu 50 % za dané časové období, pak toto zobrazení zobrazí využívané jednoho logického jádra.
+
+## <a name="see-also"></a>Viz také:
+- [Zobrazení jader](../profiling/cores-view.md)
+- [Graf využití procesoru](../profiling/cpu-utilization-graph.md)

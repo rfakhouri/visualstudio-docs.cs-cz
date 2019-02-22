@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78b66e1d7e9520f4aa54d8bcee54803659f9f6f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e559ddfec8570077a78fe980632366b4a57605de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863432"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632950"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurace počítače pro vývoj řešení pro systém Office
 
@@ -27,7 +27,7 @@ K vytvoření doplňků VSTO a vlastní nastavení pro Microsoft Office, nainsta
 |--------------|------------------------|
 |Visual Studio 2017| Libovolná edice s **vývoj pro Office/SharePoint** pracovního vytížení.|
 |.NET Framework|-Rozhraní .NET Framework 4 nebo novější.|
-|Microsoft Office|<ul><li>Jakákoli edice sady Office, včetně Office Professional Plus pro Office 365.</li><li>Některé z následujících samostatných aplikací:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 a Office 2010 pouze)</li><li>Outlook</li><li>PowerPoint</li><li>Projekt</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musí být nainstalována jako součást sady Office. **Důležité:** Klikněte na tlačítko spustit verze aplikace systému Office 2010 nejsou podporované.|
+|Microsoft Office|<ul><li>Jakákoli edice sady Office, včetně Office Professional Plus pro Office 365.</li><li>Některé z následujících samostatných aplikací:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 a Office 2010 pouze)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musí být nainstalována jako součást sady Office. **Důležité:** Klikněte na tlačítko spustit verze aplikace systému Office 2010 nejsou podporované.|
 
 Podrobný postup instalace najdete v části [jak: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
@@ -48,9 +48,8 @@ Je-li nainstalovat podporovanou verzi sady Visual Studio, .NET Framework a Micro
 Pokud budete nadále docházet k potížím, přečtěte si téma [další podporu pro chyby v řešeních pro systém Office](../vsto/additional-support-for-errors-in-office-solutions.md).
 
 ## <a name="see-also"></a>Viz také:
-
-[Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Postupy: Instalace primárních sestavení vzájemné spolupráce Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Zadejte dostupné funkce podle aplikace systému Office a projektu](../vsto/features-available-by-office-application-and-project-type.md)
+- [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
+- [Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Postupy: Instalace primárních sestavení vzájemné spolupráce Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Zadejte dostupné funkce podle aplikace systému Office a projektu](../vsto/features-available-by-office-application-and-project-type.md)

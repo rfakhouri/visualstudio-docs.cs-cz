@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bb6e7332386e7dc22465eaffedd01a969673dc3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335477"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607912"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro ladění snímků v sadě Visual Studio
 
@@ -96,8 +96,8 @@ Ladění snímků a Application Insights závisí na ICorProfiler, který načte
 
 ## <a name="see-also"></a>Viz také:
 
-[Ladění v sadě Visual Studio](../debugger/index.md)  
-[Ladění živé aplikace v ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md)  
-[Ladění za provozu technologie ASP.NET Azure virtuální Machines\Virtual počítače Škálovací sady pomocí ladicího programu snímků](../debugger/debug-live-azure-virtual-machines.md)  
-[Ladění za provozu technologie ASP.NET Kubernetes se službou Azure pomocí ladicího programu snímků](../debugger/debug-live-azure-kubernetes.md)  
-[Nejčastější dotazy k ladění snímků](../debugger/debug-live-azure-apps-faq.md)  
+- [Ladění v sadě Visual Studio](../debugger/index.md)
+- [Ladění živé aplikace v ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md)
+- [Ladění za provozu technologie ASP.NET Azure virtuální Machines\Virtual počítače Škálovací sady pomocí ladicího programu snímků](../debugger/debug-live-azure-virtual-machines.md)
+- [Ladění za provozu technologie ASP.NET Kubernetes se službou Azure pomocí ladicího programu snímků](../debugger/debug-live-azure-kubernetes.md)
+- [Nejčastější dotazy k ladění snímků](../debugger/debug-live-azure-apps-faq.md)

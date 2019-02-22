@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aca080642e696d0c34c8cc1514eff484f03e037
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf20c4fe040155e6f2a88312b1fb0eab17e7f7df
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946844"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610980"
 ---
 # <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
-Získá příznak, který označuje, zda může být upraveno v části.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_write (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` části lze zapsat do; v opačném případě vrátí-li `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Získá příznak, který označuje, zda může být upraveno v části.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_write ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` části lze zapsat do; v opačném případě vrátí-li `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

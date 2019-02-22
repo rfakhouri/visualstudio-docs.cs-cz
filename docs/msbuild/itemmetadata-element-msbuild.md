@@ -16,60 +16,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78be9b906efd9720d9bc7ccdbe09614899ef6818
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 825c6b897447a5a628d9a97e4c7e64f1427fb4d7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989585"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644312"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Itemmetadata – element (MSBuild)
-Obsahuje klíč metadat uživatelem definovanou položku katalogu, který obsahuje hodnotu metadat položky. Položka může mít libovolný počet párů klíč hodnota metadat.  
+Obsahuje klíč metadat uživatelem definovanou položku katalogu, který obsahuje hodnotu metadat položky. Položka může mít libovolný počet párů klíč hodnota metadat.
 
- \<Project>  
- \<ItemGroup>  
- \<Položka >  
+ \<Project> \<ItemGroup> \<Item>
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
-<ItemMetadataName> Item Metadata value</ItemMetadataName>  
-```  
+```xml
+<ItemMetadataName> Item Metadata value</ItemMetadataName>
+```
 
-## <a name="attributes-and-elements"></a>Atributy a elementy  
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
+## <a name="attributes-and-elements"></a>Atributy a elementy
+ Následující části popisují atributy, podřízené prvky a nadřazené prvky.
 
-### <a name="attributes"></a>Atributy  
+### <a name="attributes"></a>Atributy
 
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`Condition`|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
+|Atribut|Popis|
+|---------------|-----------------|
+|`Condition`|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Podřízené prvky  
- Žádné  
+### <a name="child-elements"></a>Podřízené prvky
+ Žádné
 
-### <a name="parent-elements"></a>Nadřazené prvky  
+### <a name="parent-elements"></a>Nadřazené prvky
 
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Položka](../msbuild/item-element-msbuild.md)|Uživatelem definované prvek, který definuje vstupy pro proces sestavení.|  
+|Prvek|Popis|
+|-------------|-----------------|
+|[Položka](../msbuild/item-element-msbuild.md)|Uživatelem definované prvek, který definuje vstupy pro proces sestavení.|
 
-## <a name="text-value"></a>Textová hodnota  
- Textová hodnota je volitelná.  
+## <a name="text-value"></a>Textová hodnota
+ Textová hodnota je volitelná.
 
- Tento text určuje hodnotu položky metadat, který může být text nebo XML.  
+ Tento text určuje hodnotu položky metadat, který může být text nebo XML.
 
-## <a name="example"></a>Příklad  
- Následující příklad kódu ukazuje, jak přidat `Culture` metadata s hodnotou `fr` k položce `CSFile`.  
+## <a name="example"></a>Příklad
+ Následující příklad kódu ukazuje, jak přidat `Culture` metadata s hodnotou `fr` k položce `CSFile`.
 
-```xml  
-<ItemGroup>  
-    <CSFile Include="main.cs" >  
-        <Culture>fr</Culture>  
-    </CSFile>  
-</ItemGroup>  
-```  
+```xml
+<ItemGroup>
+    <CSFile Include="main.cs" >
+        <Culture>fr</Culture>
+    </CSFile>
+</ItemGroup>
+```
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Položky](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Položky](../msbuild/msbuild-items.md)

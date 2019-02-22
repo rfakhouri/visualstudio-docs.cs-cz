@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0899b70ce4a917b0479a9ac6623e33ee8bcdbe22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f5b6315ba3cc99b60c97e70621f42cf13f6397c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335100"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630714"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Nejčastější dotazy k ladění snímků v sadě Visual Studio
 
@@ -23,11 +23,11 @@ Tady je seznam dotazů, ke kterým může při ladění pomocí ladicího progra
 
 #### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>Co je náklady na pořízení snímku?
 
-Pokud ladicí program snímků zachytí snímek vaší aplikace, je větvení proces aplikací a pozastavuje rozvětvené kopírování. Při ladění snímku ladění proti rozvětveného kopii procesu. Tento proces trvá jenom 10-20 MS ale nekopíruje haldě úplné aplikace. Místo toho zkopíruje pouze tabulky stránky a zkopírování při zápisu na stránkách. Pokud některé objekty vaší aplikace na změnu haldy příslušných stránkách s poté zkopírován. Každý snímek proto má s malými náklady v paměti (v řádu stovek kB pro většinu aplikací). 
+Pokud ladicí program snímků zachytí snímek vaší aplikace, je větvení proces aplikací a pozastavuje rozvětvené kopírování. Při ladění snímku ladění proti rozvětveného kopii procesu. Tento proces trvá jenom 10-20 MS ale nekopíruje haldě úplné aplikace. Místo toho zkopíruje pouze tabulky stránky a zkopírování při zápisu na stránkách. Pokud některé objekty vaší aplikace na změnu haldy příslušných stránkách s poté zkopírován. Každý snímek proto má s malými náklady v paměti (v řádu stovek kB pro většinu aplikací).
 
 #### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>Co se stane, když mám horizontálním navýšením kapacity služby Azure App Service (více instancí aplikace)?
 
-Pokud máte více instancí vaší aplikace, snímkovacích bodů: použije na každý jednu instanci. Pouze první snímkovací bod k dosažení s podmínkami uvedenými vytvoří snímek. Pokud máte více snímkovacích bodů: následující snímky pocházet ze stejné instance, kterou vytvořili první snímek. Protokolovací body odesílané do okna výstup se zobrazí jen zprávy z jedné instance, zatímco odesílat protokoly aplikací protokolovacích bodů: odesílání zpráv z každé instance. 
+Pokud máte více instancí vaší aplikace, snímkovacích bodů: použije na každý jednu instanci. Pouze první snímkovací bod k dosažení s podmínkami uvedenými vytvoří snímek. Pokud máte více snímkovacích bodů: následující snímky pocházet ze stejné instance, kterou vytvořili první snímek. Protokolovací body odesílané do okna výstup se zobrazí jen zprávy z jedné instance, zatímco odesílat protokoly aplikací protokolovacích bodů: odesílání zpráv z každé instance.
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Jak Snapshot Debugger načíst symboly
 
@@ -35,11 +35,11 @@ Snapshot Debugger vyžaduje, abyste měli odpovídající symboly pro vaši apli
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Funguje Snapshot Debugger pro buildy vydaných verzí mojí aplikace?
 
-Ano – Snapshot Debugger by měla fungovat pro buildy vydaných verzí. Pokud snímkovacího bodu je umístěn ve funkci, funkci přepsán zpět do ladicí verze, takže laditelný. Při zastavení ladicího programu snímků funkce se vrátí k jejich sestavení pro vydání. 
+Ano – Snapshot Debugger by měla fungovat pro buildy vydaných verzí. Pokud snímkovacího bodu je umístěn ve funkci, funkci přepsán zpět do ladicí verze, takže laditelný. Při zastavení ladicího programu snímků funkce se vrátí k jejich sestavení pro vydání.
 
 #### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Může způsobit protokolovacích bodů: vedlejší účinky v produkční aplikace?
 
-Prakticky ne - vyhodnocují všechny zprávy protokolu, které přidáte do vaší aplikace. Ve vaší aplikaci se nemůže způsobit žádné vedlejší účinky. Některé vlastnosti nativní však nemusí být přístupný pomocí protokolovacích bodů. 
+Prakticky ne - vyhodnocují všechny zprávy protokolu, které přidáte do vaší aplikace. Ve vaší aplikaci se nemůže způsobit žádné vedlejší účinky. Některé vlastnosti nativní však nemusí být přístupný pomocí protokolovacích bodů.
 
 #### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>Funguje Snapshot Debugger při zatížení serveru?
 
@@ -55,8 +55,8 @@ Odinstalovat rozšíření pro Snapshot Debugger web ve službě App Service pom
 
 ## <a name="see-also"></a>Viz také:
 
-[Ladění v sadě Visual Studio](../debugger/index.md)  
-[Ladění živé aplikace v ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md)  
-[Ladění za provozu technologie ASP.NET Azure virtuální Machines\Virtual počítače Škálovací sady pomocí ladicího programu snímků](../debugger/debug-live-azure-virtual-machines.md)  
-[Ladění za provozu technologie ASP.NET Kubernetes se službou Azure pomocí ladicího programu snímků](../debugger/debug-live-azure-kubernetes.md)  
-[Řešení potíží a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Ladění v sadě Visual Studio](../debugger/index.md)
+- [Ladění živé aplikace v ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md)
+- [Ladění za provozu technologie ASP.NET Azure virtuální Machines\Virtual počítače Škálovací sady pomocí ladicího programu snímků](../debugger/debug-live-azure-virtual-machines.md)
+- [Ladění za provozu technologie ASP.NET Kubernetes se službou Azure pomocí ladicího programu snímků](../debugger/debug-live-azure-kubernetes.md)
+- [Řešení potíží a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md)

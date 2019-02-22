@@ -18,60 +18,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae63602b1892bca722ae8eb5e2052c103597fb6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 607c5f2c3cda64e7407203b0c45287a58342b807
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941186"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622914"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup – element (MSBuild)
-Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Každý `Property` prvku použitého při [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musí být podřízeným `PropertyGroup` elementu.  
+Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Každý `Property` prvku použitého při [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musí být podřízeným `PropertyGroup` elementu.
 
- \<Project>  
- \<PropertyGroup>  
+ \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
-<PropertyGroup Condition="'String A' == 'String B'">  
-    <Property1>...</Property1>  
-    <Property2>...</Property2>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup Condition="'String A' == 'String B'">
+    <Property1>...</Property1>
+    <Property2>...</Property2>
+</PropertyGroup>
+```
 
-## <a name="attributes-and-elements"></a>Atributy a elementy  
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
+## <a name="attributes-and-elements"></a>Atributy a elementy
+ Následující části popisují atributy, podřízené prvky a nadřazené prvky.
 
-### <a name="attributes"></a>Atributy  
+### <a name="attributes"></a>Atributy
 
-|Atribut|Popis|  
-|---------------|-----------------|  
-|Podmínka|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
+|Atribut|Popis|
+|---------------|-----------------|
+|Podmínka|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Podřízené prvky  
+### <a name="child-elements"></a>Podřízené prvky
 
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Vlastnost](../msbuild/property-element-msbuild.md)|Volitelný element.<br /><br /> Název definované vlastnosti uživatele, který obsahuje hodnotu vlastnosti. Může být nula nebo více *vlastnost* prvky `PropertyGroup` elementu.|  
+|Prvek|Popis|
+|-------------|-----------------|
+|[Vlastnost](../msbuild/property-element-msbuild.md)|Volitelný element.<br /><br /> Název definované vlastnosti uživatele, který obsahuje hodnotu vlastnosti. Může být nula nebo více *vlastnost* prvky `PropertyGroup` elementu.|
 
-### <a name="parent-elements"></a>Nadřazené prvky  
+### <a name="parent-elements"></a>Nadřazené prvky
 
 | Prvek | Popis |
 | - | - |
 | [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
 
-## <a name="example"></a>Příklad  
- Následující příklad kódu ukazuje, jak nastavit vlastnosti na základě podmínky. V tomto příkladu Pokud hodnota `CompileConfig` vlastnost je `DEBUG`, `Optimization`, `Obfuscate`, a `OutputPath` vlastnosti uvnitř `PropertyGroup` element jsou nastavené.  
+## <a name="example"></a>Příklad
+ Následující příklad kódu ukazuje, jak nastavit vlastnosti na základě podmínky. V tomto příkladu Pokud hodnota `CompileConfig` vlastnost je `DEBUG`, `Optimization`, `Obfuscate`, a `OutputPath` vlastnosti uvnitř `PropertyGroup` element jsou nastavené.
 
-```xml  
-<PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >  
-    <Optimization>false</Optimization>  
-    <Obfuscate>false</Obfuscate>  
-    <OutputPath>$(OutputPath)\debug</OutputPath>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >
+    <Optimization>false</Optimization>
+    <Obfuscate>false</Obfuscate>
+    <OutputPath>$(OutputPath)\debug</OutputPath>
+</PropertyGroup>
+```
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)  
- [Vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md)
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md)

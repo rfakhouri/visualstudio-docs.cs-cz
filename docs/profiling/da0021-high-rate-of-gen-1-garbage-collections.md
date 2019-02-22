@@ -12,38 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66817ab427b066b10c42c7ea2e0f4667bfcd095
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd10bd9eb834a3ca41fce38baf11e36b13fe0734
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984480"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639125"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Vysoká míra 1. generace uvolňování pamětí
 
-|||  
-|-|-|  
-|Id pravidla|DA0021|  
-|Kategorie|Použití rozhraní .NET framework|  
-|Metod profilace|Všechny|  
-|Zpráva|Je velmi vysoká míra 1. generace uvolňování pamětí, ke kterým dochází. Pokud, podle návrhu, většina datových struktur vašeho programu jsou přiděleny a trvala po dlouhou dobu, to není obvykle problém. Ale pokud toto chování nežádoucí, vaše aplikace může být Připnutí objekty. Pokud si nejste jisti, můžete shromáždit .NET paměť přidělení dat a objekt životnosti informace pro pochopení způsobu přidělení paměti, které vaše aplikace používá.|  
-|Typ pravidla|Informace o|  
+|||
+|-|-|
+|Id pravidla|DA0021|
+|Kategorie|Použití rozhraní .NET framework|
+|Metod profilace|Všechny|
+|Zpráva|Je velmi vysoká míra 1. generace uvolňování pamětí, ke kterým dochází. Pokud, podle návrhu, většina datových struktur vašeho programu jsou přiděleny a trvala po dlouhou dobu, to není obvykle problém. Ale pokud toto chování nežádoucí, vaše aplikace může být Připnutí objekty. Pokud si nejste jisti, můžete shromáždit .NET paměť přidělení dat a objekt životnosti informace pro pochopení způsobu přidělení paměti, které vaše aplikace používá.|
+|Typ pravidla|Informace o|
 
- Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.  
+ Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.
 
-## <a name="cause"></a>Příčina  
- Údaje o výkonu systému, která byla shromážděna během profilování znamenat, že podstatnou část objekty paměti for.NET Framework byla uvolněny v 1. generace uvolňování ve srovnání s shromažďování dat 0. generace.  
+## <a name="cause"></a>příčina
+ Údaje o výkonu systému, která byla shromážděna během profilování znamenat, že podstatnou část objekty paměti for.NET Framework byla uvolněny v 1. generace uvolňování ve srovnání s shromažďování dat 0. generace.
 
-## <a name="rule-description"></a>Popis pravidla  
- Rozhraní Microsoft .NET common language runtime (CLR) poskytuje mechanismus správy automatické paměti, která používá systému uvolňování paměti pro uvolnění paměti z objektů, které aplikace se už používá. Uvolňování paměti je orientované na generování založeno na předpokladu, že jsou krátkodobé a jednorázové mnoho přidělení. Lokální proměnné by měl být například krátkodobou. Spustit nově vytvořené objekty v generaci 0 (0. generace) a potom pokroku na generaci 1, pokud se uvolňování paměti spusťte a nakonec přechod do 2. generace zvládnout situaci, kdy aplikace stále používá.  
+## <a name="rule-description"></a>Popis pravidla
+ Rozhraní Microsoft .NET common language runtime (CLR) poskytuje mechanismus správy automatické paměti, která používá systému uvolňování paměti pro uvolnění paměti z objektů, které aplikace se už používá. Uvolňování paměti je orientované na generování založeno na předpokladu, že jsou krátkodobé a jednorázové mnoho přidělení. Lokální proměnné by měl být například krátkodobou. Spustit nově vytvořené objekty v generaci 0 (0. generace) a potom pokroku na generaci 1, pokud se uvolňování paměti spusťte a nakonec přechod do 2. generace zvládnout situaci, kdy aplikace stále používá.
 
- Objekty v generaci 0 se vybírají obvykle velmi efektivně a často. Objekty v 1. generace jsou shromažďovány méně často a méně efektivní. Nakonec dlouhodobými objekty v generaci 2 by měl být shromažďovány i méně často. 2. generace kolekce, která je spuštění úplného uvolňování paměti kolekce, je také nejvíce náročná operace.  
+ Objekty v generaci 0 se vybírají obvykle velmi efektivně a často. Objekty v 1. generace jsou shromažďovány méně často a méně efektivní. Nakonec dlouhodobými objekty v generaci 2 by měl být shromažďovány i méně často. 2. generace kolekce, která je spuštění úplného uvolňování paměti kolekce, je také nejvíce náročná operace.
 
- Toto pravidlo je vyvoláno při proporcionálně příliš mnoho generace došlo k uvolnění paměti 1. Pokud příliš mnoho poměrně krátkodobé objekty byly zachovány při 0. generace kolekce ale počítače pak můžou být shromážděny v kolekci generace 1, může být nadměrné náklady na správu paměti. Další informace najdete v tématu [uprostřed života krize](http://go.microsoft.com/fwlink/?LinkId=177835) Zveřejněte na výkon Tidbits Rico Mariani na webové stránce MSDN.  
+ Toto pravidlo je vyvoláno při proporcionálně příliš mnoho generace došlo k uvolnění paměti 1. Pokud příliš mnoho poměrně krátkodobé objekty byly zachovány při 0. generace kolekce ale počítače pak můžou být shromážděny v kolekci generace 1, může být nadměrné náklady na správu paměti. Další informace najdete v tématu [uprostřed života krize](http://go.microsoft.com/fwlink/?LinkId=177835) Zveřejněte na výkon Tidbits Rico Mariani na webové stránce MSDN.
 
-## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění  
- Dvakrát klikněte na zprávu v okně Seznam chyb, přejděte [zobrazení značky](../profiling/marks-view.md) dat profilování. Najít **paměť .NET CLR\\Počet úklidů 0** a **paměť .NET CLR\\Počet úklidů 1** sloupce. Zjistěte, jestli konkrétní fázích provádění programu kde uvolňování paměti dochází častěji. Porovnat tyto hodnoty **% času v uvolňování paměti** sloupec, pokud vzor přidělení spravované paměti je příčinou režie na správu využívala příliš mnoho paměti.  
+## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění
+ Dvakrát klikněte na zprávu v okně Seznam chyb, přejděte [zobrazení značky](../profiling/marks-view.md) dat profilování. Najít **paměť .NET CLR\\Počet úklidů 0** a **paměť .NET CLR\\Počet úklidů 1** sloupce. Zjistěte, jestli konkrétní fázích provádění programu kde uvolňování paměti dochází častěji. Porovnat tyto hodnoty **% času v uvolňování paměti** sloupec, pokud vzor přidělení spravované paměti je příčinou režie na správu využívala příliš mnoho paměti.
 
- Informace o tom aplikace vzor využití spravované paměti, profilujte ji znovu spuštěna přidělení paměti analýze profilu a žádosti o měření doba života objektu.  
+ Informace o tom aplikace vzor využití spravované paměti, profilujte ji znovu spuštěna přidělení paměti analýze profilu a žádosti o měření doba života objektu.
 
  Informace o tom, jak zlepšit výkon kolekce uvolnění paměti, naleznete v tématu [základní informace o uvolňování paměti a typech výkonu](http://go.microsoft.com/fwlink/?LinkId=148226) na webu společnosti Microsoft. Informace o režii související se automatické uvolňování paměti naleznete v tématu [velký objekt haldy Nepokrytý](http://go.microsoft.com/fwlink/?LinkId=177836).

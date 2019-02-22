@@ -12,36 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b52685c66daac5c1f5f3da9d632ff3a03aabd762
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 84cea5ba87c606f66bda1ee09cbf35ae6ef5a643
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026423"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635381"
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
-Získá příznak, který určuje, zda je zabalena uživatelsky definovaný datový typ (UDT).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_packed (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` Pokud UDT je zabalena; v opačném případě vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Získá příznak, který určuje, zda je zabalena uživatelsky definovaný datový typ (UDT).
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_packed ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` Pokud UDT je zabalena; v opačném případě vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="remarks"></a>Poznámky  
- Provedené zabalené znamená, že všichni členové UDT jsou umístěny v co nejblíže k sobě, s žádné odsazení použité pro zarovnání na hranicích paměti.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="remarks"></a>Poznámky
+ Provedené zabalené znamená, že všichni členové UDT jsou umístěny v co nejblíže k sobě, s žádné odsazení použité pro zarovnání na hranicích paměti.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -16,52 +16,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cec8e999ef4cf472ceabd56b30ec19c1077e31d1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1501cd0243d6dc17cc627715eda85e755aec4502
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992719"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637097"
 ---
 # <a name="client-side-script-debugging"></a>Ladění skriptů na straně klienta
-Ladicí program sady Visual Studio poskytuje všestranné prostředí pro nalezení a opravu chyb v klientských skriptech na stránkách ASP.NET.  
-  
-## <a name="opening-script-documents"></a>Otevření dokumentů skriptu  
-Můžete zobrazit seznamy dokumentů skriptů na straně serveru a na straně klienta v **Průzkumníka řešení** zobrazíte. Můžete otevřít libovolný dokument skriptu z **Průzkumníka řešení**. Další informace najdete v tématu [jak: Zobrazení dokumentů skriptu](../debugger/how-to-view-script-documents.md).  
-  
-## <a name="breakpoint-mapping"></a>Mapování zarážek  
- V sadě Visual Studio nelze přímo ladit kód na straně serveru, ale můžete nastavit zarážku v souboru na straně serveru. Visual Studio automaticky mapuje zarážku do odpovídajícího umístění v souboru straně klienta a vytvoří mapovanou zarážku v kódu na straně klienta.  
-  
-## <a name="manually-or-automatically-attaching-to-script"></a>Ruční nebo automatické připojení ke skriptu  
- Chcete-li začít ladit skript v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ladicí program musí připojení ke skriptu, který chcete ladit. Může to ručně nebo automaticky.  
-  
- Můžete provést ruční přiřazení pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní ladicího programu k výběru spuštěného procesu skriptu, který chcete připojit k. Další informace najdete v tématu [jak: Připojení ke skriptu](../debugger/how-to-attach-to-script.md).  
-  
- Ladicí program se automaticky připojí ke skriptu při jedné z následujících akcí:  
-  
-- Dostanete se ve skriptu nastavte zarážku.  
-  
-- Dosažení VBScript `Stop` příkazu nebo JScript `debugger` příkaz v kódu skriptu.  
-  
-- Prohlížeč a server zaznamená syntaxi nebo chybu při skriptu spuštění. Pokud k tomu dojde, dialogové okno se zobrazí a můžete začít ladění.  
-  
-  Pokud provedete ruční připojení ke skriptu, proces skriptování pokračuje, dokud není nějakým způsobem zastaven. Můžete ho zastavit výběrem **přerušit** na **ladění** nabídky.  
-  
-  Pokud ladicí program automaticky připojí, spuštění skriptu je zastaveno na řádku kde zarážka, `Stop` příkazu nebo `debugger` nebo chybu došlo k chybě, nebo v okamžiku, kdy jste se rozhodli spustit ladění v aplikaci Internet Explorer.  
-  
-  V tomto okamžiku můžete použít normální funkce ladicího programu a zahájit ladění. Například můžete použít **krok** příkazy pro další spouštění kódu řádek po řádku. Můžete použít **zásobník volání** okno k zobrazení a ovládání skript toku. Můžete použít okna proměnných nebo **okamžité** okno k zobrazení nebo změnu proměnných a vlastností.  
-  
-## <a name="enhanced-error-messages-for-script-debugging"></a>Rozšířené chybové zprávy pro ladění skriptů  
- Visual Studio poskytuje rozšířené chybové zprávy pro běžné potíže ladění skriptu. Tyto zprávy se nezobrazí, pokud se nepřipojíte k aplikaci Internet Explorer ručně. Pokud dojde k chybě při se automaticky otevře aplikace Internet Explorer, zkuste připojení ručně tak, aby se zobrazí chybové zprávy.  
-  
-## <a name="debugging-ajax-script-applications"></a>Ladění aplikací se skriptem AJAX  
- Webové aplikace s povoleným AJAX hojně používají kód skriptu a představují zvláštní problémy ladění. Informace o metodách ladění AJAX naleznete v tématu  
-  
- [Ladění a trasování – přehled aplikace Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
-  
-## <a name="see-also"></a>Viz také  
- [Ladění aplikací ASP.NET a AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
- [Omezení ladění skriptů](../debugger/limitations-on-script-debugging.md)   
- [Proměnné Windows](../debugger/debugger-windows.md)   
- [Příkazové podokno](../ide/reference/immediate-window.md)   
- [Ladění a trasování – přehled jazyka Ajax aplikací](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+Ladicí program sady Visual Studio poskytuje všestranné prostředí pro nalezení a opravu chyb v klientských skriptech na stránkách ASP.NET.
+
+## <a name="opening-script-documents"></a>Otevření dokumentů skriptu
+Můžete zobrazit seznamy dokumentů skriptů na straně serveru a na straně klienta v **Průzkumníka řešení** zobrazíte. Můžete otevřít libovolný dokument skriptu z **Průzkumníka řešení**. Další informace najdete v tématu [jak: Zobrazení dokumentů skriptu](../debugger/how-to-view-script-documents.md).
+
+## <a name="breakpoint-mapping"></a>Mapování zarážek
+ V sadě Visual Studio nelze přímo ladit kód na straně serveru, ale můžete nastavit zarážku v souboru na straně serveru. Visual Studio automaticky mapuje zarážku do odpovídajícího umístění v souboru straně klienta a vytvoří mapovanou zarážku v kódu na straně klienta.
+
+## <a name="manually-or-automatically-attaching-to-script"></a>Ruční nebo automatické připojení ke skriptu
+ Chcete-li začít ladit skript v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ladicí program musí připojení ke skriptu, který chcete ladit. Může to ručně nebo automaticky.
+
+ Můžete provést ruční přiřazení pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní ladicího programu k výběru spuštěného procesu skriptu, který chcete připojit k. Další informace najdete v tématu [jak: Připojení ke skriptu](../debugger/how-to-attach-to-script.md).
+
+ Ladicí program se automaticky připojí ke skriptu při jedné z následujících akcí:
+
+- Dostanete se ve skriptu nastavte zarážku.
+
+- Dosažení VBScript `Stop` příkazu nebo JScript `debugger` příkaz v kódu skriptu.
+
+- Prohlížeč a server zaznamená syntaxi nebo chybu při skriptu spuštění. Pokud k tomu dojde, dialogové okno se zobrazí a můžete začít ladění.
+
+  Pokud provedete ruční připojení ke skriptu, proces skriptování pokračuje, dokud není nějakým způsobem zastaven. Můžete ho zastavit výběrem **přerušit** na **ladění** nabídky.
+
+  Pokud ladicí program automaticky připojí, spuštění skriptu je zastaveno na řádku kde zarážka, `Stop` příkazu nebo `debugger` nebo chybu došlo k chybě, nebo v okamžiku, kdy jste se rozhodli spustit ladění v aplikaci Internet Explorer.
+
+  V tomto okamžiku můžete použít normální funkce ladicího programu a zahájit ladění. Například můžete použít **krok** příkazy pro další spouštění kódu řádek po řádku. Můžete použít **zásobník volání** okno k zobrazení a ovládání skript toku. Můžete použít okna proměnných nebo **okamžité** okno k zobrazení nebo změnu proměnných a vlastností.
+
+## <a name="enhanced-error-messages-for-script-debugging"></a>Rozšířené chybové zprávy pro ladění skriptů
+ Visual Studio poskytuje rozšířené chybové zprávy pro běžné potíže ladění skriptu. Tyto zprávy se nezobrazí, pokud se nepřipojíte k aplikaci Internet Explorer ručně. Pokud dojde k chybě při se automaticky otevře aplikace Internet Explorer, zkuste připojení ručně tak, aby se zobrazí chybové zprávy.
+
+## <a name="debugging-ajax-script-applications"></a>Ladění aplikací se skriptem AJAX
+ Webové aplikace s povoleným AJAX hojně používají kód skriptu a představují zvláštní problémy ladění. Informace o metodách ladění AJAX naleznete v tématu
+
+ [Ladění a trasování – přehled aplikace Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
+
+## <a name="see-also"></a>Viz také
+
+- [Ladění aplikací ASP.NET a AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Omezení při ladění skriptů](../debugger/limitations-on-script-debugging.md)
+- [Proměnné Windows](../debugger/debugger-windows.md)
+- [Příkazové podokno](../ide/reference/immediate-window.md)
+- [Ladění a trasování – přehled jazyka Ajax aplikací](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

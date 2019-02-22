@@ -15,62 +15,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1cd97cc6f85930523b6f0be02385dcb85b7af93d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 81c85adc3aaa3bedb92709ce59dd2192a6756473
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872778"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601236"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Postupy: Zamykání listů
-  Funkce ochrany v aplikaci Microsoft Office Excel pomáhá zabránit uživatelům a kód v úpravách objektů v listu. Ve výchozím nastavení všechny buňky jsou zamknuté po zapnutí ochrany.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- V přizpůsobeních na úrovni dokumentu můžete chránit listů s použitím návrháře Excelu. Můžete také zamknout list prostřednictvím kódu programu za běhu v libovolným typem projektu.  
-  
-> [!NOTE]  
->  Nelze přidat ovládací prvky Windows Forms k oblastem listu, které jsou chráněné.  
-  
-## <a name="use-the-designer"></a>Pomocí návrháře  
-  
-### <a name="to-protect-a-worksheet-in-the-designer"></a>K ochraně listu v Návrháři  
-  
-1. V **změny** skupinu **revize** klikněte na tlačítko **Zamknout list**.  
-  
-    **Zamknout list** zobrazí se dialogové okno. Můžete nastavit heslo a volitelně zadat určité akce, které uživatelé můžou provádět s listem, jako je formát buňky nebo vložit řádky.  
-  
-   Můžete také povolit uživatelům upravovat konkrétní rozsahy v chráněném listů.  
-  
-### <a name="to-allow-editing-in-specific-ranges"></a>Povolit úpravy v konkrétní oblasti  
-  
-1.  V **změny** skupinu **revize** klikněte na tlačítko **povolit uživatelům upravit oblastí**.  
-  
-     **Povolit uživatelům upravit oblastí** zobrazí se dialogové okno. Můžete určit rozsahy, které jsou odemknout pomocí hesla a uživatele, kteří můžete upravit rozsahy bez hesla.  
-  
-## <a name="use-code-at-runtime"></a>Použít kód za běhu  
- Následující kód nastaví heslo (použitím proměnné getPasswordFromUser, který obsahuje heslo získané od uživatele) a umožňuje pouze řazení.  
-  
-### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>K ochraně na listu s použitím kódu v přizpůsobení na úrovni dokumentu  
-  
-1.  Volání <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metoda listu. Tento příklad předpokládá, že pracujete s listem s názvem `Sheet1`.  
-  
+  Funkce ochrany v aplikaci Microsoft Office Excel pomáhá zabránit uživatelům a kód v úpravách objektů v listu. Ve výchozím nastavení všechny buňky jsou zamknuté po zapnutí ochrany.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ V přizpůsobeních na úrovni dokumentu můžete chránit listů s použitím návrháře Excelu. Můžete také zamknout list prostřednictvím kódu programu za běhu v libovolným typem projektu.
+
+> [!NOTE]
+>  Nelze přidat ovládací prvky Windows Forms k oblastem listu, které jsou chráněné.
+
+## <a name="use-the-designer"></a>Pomocí návrháře
+
+### <a name="to-protect-a-worksheet-in-the-designer"></a>K ochraně listu v Návrháři
+
+1. V **změny** skupinu **revize** klikněte na tlačítko **Zamknout list**.
+
+    **Zamknout list** zobrazí se dialogové okno. Můžete nastavit heslo a volitelně zadat určité akce, které uživatelé můžou provádět s listem, jako je formát buňky nebo vložit řádky.
+
+   Můžete také povolit uživatelům upravovat konkrétní rozsahy v chráněném listů.
+
+### <a name="to-allow-editing-in-specific-ranges"></a>Povolit úpravy v konkrétní oblasti
+
+1.  V **změny** skupinu **revize** klikněte na tlačítko **povolit uživatelům upravit oblastí**.
+
+     **Povolit uživatelům upravit oblastí** zobrazí se dialogové okno. Můžete určit rozsahy, které jsou odemknout pomocí hesla a uživatele, kteří můžete upravit rozsahy bez hesla.
+
+## <a name="use-code-at-runtime"></a>Použít kód za běhu
+ Následující kód nastaví heslo (použitím proměnné getPasswordFromUser, který obsahuje heslo získané od uživatele) a umožňuje pouze řazení.
+
+### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>K ochraně na listu s použitím kódu v přizpůsobení na úrovni dokumentu
+
+1.  Volání <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metoda listu. Tento příklad předpokládá, že pracujete s listem s názvem `Sheet1`.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
-     [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]  
-  
-### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>K ochraně na listu s použitím kódu v doplňku VSTO  
-  
-1.  Volání <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> metoda aktivního listu.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
+
+### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>K ochraně na listu s použitím kódu v doplňku VSTO
+
+1.  Volání <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> metoda aktivního listu.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]  
-  
-## <a name="see-also"></a>Viz také:  
- [Práce s listy](../vsto/working-with-worksheets.md)   
- [Postupy: Programově odemykání listů](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
- [Postupy: Zamykání sešitů](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Postupy: Skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
- [Hostitelská položka Worksheet](../vsto/worksheet-host-item.md)   
- [Globální přístup k objektům v projektech pro systém Office](../vsto/global-access-to-objects-in-office-projects.md)   
- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
+
+## <a name="see-also"></a>Viz také:
+- [Práce s listy](../vsto/working-with-worksheets.md)
+- [Postupy: Programově odemykání listů](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [Postupy: Zamykání sešitů](../vsto/how-to-programmatically-protect-workbooks.md)
+- [Postupy: Skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)
+- [Hostitelská položka Worksheet](../vsto/worksheet-host-item.md)
+- [Globální přístup k objektům v projektech pro systém Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)

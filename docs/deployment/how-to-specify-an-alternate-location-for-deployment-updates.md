@@ -15,53 +15,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ca1f9c8879130abfd762aea4b803e7734433b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d44750783ecc7253480750fce10b65e07b2f5fd2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930664"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630675"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Postupy: Zadejte alternativní umístění pro aktualizace nasazení
-Můžete nainstalovat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace zpočátku z disku CD-ROM nebo sdílené složky, ale aplikace musíte hledat pravidelné aktualizace na webu. Můžete zadat alternativní umístění pro aktualizace v manifestu nasazení, tak, aby vaše aplikace můžete aktualizovat přímo z webu po počáteční instalaci.  
-  
+Můžete nainstalovat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace zpočátku z disku CD-ROM nebo sdílené složky, ale aplikace musíte hledat pravidelné aktualizace na webu. Můžete zadat alternativní umístění pro aktualizace v manifestu nasazení, tak, aby vaše aplikace můžete aktualizovat přímo z webu po počáteční instalaci.
+
 > [!NOTE]
->  Aplikace musí být nakonfigurován k instalaci místně pro tuto funkci používat. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Kromě toho, pokud nainstalujete [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] v síti, nastavení způsobí, že alternativního umístění [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] použije toto umístění pro počáteční instalaci a všechny následné aktualizace. Pokud nainstalujete aplikaci místně (například z disku CD), počáteční instalace se provádí pomocí původního média a všechny následné aktualizace použije alternativního umístění.  
-  
-### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Zadejte alternativní umístění pro aktualizace pomocí MageUI.exe (nástroj založený na Windows Forms)  
-  
-1.  Otevřete příkazový řádek rozhraní .NET Framework a zadejte:  
-  
-     **mageui.exe**  
-  
-2.  Na **souboru** nabídce zvolte **otevřete** pro otevření manifestu nasazení vaší aplikace.  
-  
-3.  Vyberte **možnosti nasazení** kartu.  
-  
-4.  V textovém poli s názvem **umístění spuštění**, zadejte adresu URL k adresáři, který bude obsahovat manifest nasazení pro aktualizace aplikace.  
-  
-5.  Uložte manifest nasazení.  
-  
-### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Zadejte alternativní umístění pro aktualizace pomocí Mage.exe  
-  
-1. Otevřete příkazový řádek rozhraní .NET Framework.  
-  
-2. Nastavte umístění aktualizace pomocí následujícího příkazu. V tomto příkladu *HelloWorld.exe.application* způsob, jak je vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikace, který má vždy příponu .application a *<http://adatum.com/Update/Path>* je adresa URL tohoto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se kontrola aktualizací aplikace.  
-  
-    **Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path**  
-  
-3. Uložte soubor.  
-  
+>  Aplikace musí být nakonfigurován k instalaci místně pro tuto funkci používat. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Kromě toho, pokud nainstalujete [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] v síti, nastavení způsobí, že alternativního umístění [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] použije toto umístění pro počáteční instalaci a všechny následné aktualizace. Pokud nainstalujete aplikaci místně (například z disku CD), počáteční instalace se provádí pomocí původního média a všechny následné aktualizace použije alternativního umístění.
+
+### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Zadejte alternativní umístění pro aktualizace pomocí MageUI.exe (nástroj založený na Windows Forms)
+
+1.  Otevřete příkazový řádek rozhraní .NET Framework a zadejte:
+
+     **mageui.exe**
+
+2.  Na **souboru** nabídce zvolte **otevřete** pro otevření manifestu nasazení vaší aplikace.
+
+3.  Vyberte **možnosti nasazení** kartu.
+
+4.  V textovém poli s názvem **umístění spuštění**, zadejte adresu URL k adresáři, který bude obsahovat manifest nasazení pro aktualizace aplikace.
+
+5.  Uložte manifest nasazení.
+
+### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Zadejte alternativní umístění pro aktualizace pomocí Mage.exe
+
+1. Otevřete příkazový řádek rozhraní .NET Framework.
+
+2. Nastavte umístění aktualizace pomocí následujícího příkazu. V tomto příkladu *HelloWorld.exe.application* způsob, jak je vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikace, který má vždy příponu .application a *<http://adatum.com/Update/Path>* je adresa URL tohoto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se kontrola aktualizací aplikace.
+
+    **Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path**
+
+3. Uložte soubor.
+
    > [!NOTE]
-   >  Teď musíte znovu podepsat soubor s *Mage.exe*. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
-  
-## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework  
- Pokud nainstalujete aplikaci z offline média, jako je například disk CD-ROM a je počítač online, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nejprve zkontroluje adrese URL zadané hodnotou `<deploymentProvider>` značky v manifestu nasazení, aby určilo, jestli umístění aktualizace obsahuje novější verzi aplikace. Pokud ano, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nainstaluje aplikaci přímo z daného místa, místo v adresáři počáteční instalaci a common language runtime (CLR) určuje důvěryhodnost vaší aplikace pomocí na úrovni `<deploymentProvider>`. Pokud je počítač v režimu offline, nebo `<deploymentProvider>` nedostupný, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalace z disku CD-ROM a CLR uděluje vztah důvěryhodnosti podle umístění instalace; pro instalaci z disku CD, to znamená, že vaše aplikace obdrží úplný vztah důvěryhodnosti. Všechny následné aktualizace zdědí tuto úroveň důvěryhodnosti.  
-  
- Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, které používají `<deploymentProvider>` by měly explicitně deklarovat oprávnění potřebují ve svém manifestu aplikace tak, aby aplikace neobdrží různé úrovně důvěryhodnosti na různých počítačích.  
-  
-## <a name="see-also"></a>Viz také:  
- [Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md)   
- [Zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Volba strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
+   >  Teď musíte znovu podepsat soubor s *Mage.exe*. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+
+## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework
+ Pokud nainstalujete aplikaci z offline média, jako je například disk CD-ROM a je počítač online, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nejprve zkontroluje adrese URL zadané hodnotou `<deploymentProvider>` značky v manifestu nasazení, aby určilo, jestli umístění aktualizace obsahuje novější verzi aplikace. Pokud ano, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nainstaluje aplikaci přímo z daného místa, místo v adresáři počáteční instalaci a common language runtime (CLR) určuje důvěryhodnost vaší aplikace pomocí na úrovni `<deploymentProvider>`. Pokud je počítač v režimu offline, nebo `<deploymentProvider>` nedostupný, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalace z disku CD-ROM a CLR uděluje vztah důvěryhodnosti podle umístění instalace; pro instalaci z disku CD, to znamená, že vaše aplikace obdrží úplný vztah důvěryhodnosti. Všechny následné aktualizace zdědí tuto úroveň důvěryhodnosti.
+
+ Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, které používají `<deploymentProvider>` by měly explicitně deklarovat oprávnění potřebují ve svém manifestu aplikace tak, aby aplikace neobdrží různé úrovně důvěryhodnosti na různých počítačích.
+
+## <a name="see-also"></a>Viz také:
+- [Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md)
+- [Zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md)
+- [Volba strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

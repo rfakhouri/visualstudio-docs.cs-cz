@@ -10,38 +10,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54fbcf42786e7c31244dc0c37f4986e36096e17
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ba3b7c2c1cac1255c6234d2b9a8ed6ab4fd05820
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958483"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644533"
 ---
 # <a name="managing-configuration-options"></a>Správa možností konfigurace
-Když vytvoříte nový typ projektu, musíte spravovat projektu a řešení nastavení konfigurace, které určují, jak váš projekt bude vytvořen, zabalené nasazené a spuštění. Následující témata popisují konfiguraci projektů a řešení.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Přehled](../../extensibility/internals/configuration-options-overview.md)  
- Popisuje, jak projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] může podporovat více konfigurací.  
-  
- [Stránky vlastností](../../extensibility/internals/property-pages.md)  
- Vysvětluje, že uživatelé mohou zobrazit a změnit vlastnosti nezávislé a závislé vlastnosti konfigurace projektu pomocí stránky vlastností.  
-  
- [Konfigurace řešení](../../extensibility/internals/solution-configuration.md)  
- Poskytuje informace o se ukládá v konfiguracích řešení a způsobu konfigurace řešení přímo chování **Start** a **sestavení** příkazy.  
-  
- [Objekt konfigurace projektu](../../extensibility/internals/project-configuration-object.md)  
- Vysvětluje, jak objekt konfigurace projektu spravuje zobrazení informací o konfiguraci v uživatelském rozhraní.  
-  
- [Konfigurace projektu pro sestavení](../../extensibility/internals/project-configuration-for-building.md)  
- Vysvětluje, jak je spravován seznam konfigurací řešení pro konkrétního řešení **konfigurace řešení** dialogové okno.  
-  
- [Konfigurace projektu pro správu nasazení](../../extensibility/internals/project-configuration-for-managing-deployment.md)  
- Definuje v rámci nasazení a dva způsoby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje projekty, které podporují nasazení.  
-  
- [Konfigurace projektu pro výstup](../../extensibility/internals/project-configuration-for-output.md)  
- Popisuje procesy sestavení, které podporují všechny konfigurace a rozhraní a metody, pomocí které výstupní položky mohou být zpřístupněny.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Typy projektů](../../extensibility/internals/project-types.md)  
+Když vytvoříte nový typ projektu, musíte spravovat projektu a řešení nastavení konfigurace, které určují, jak váš projekt bude vytvořen, zabalené nasazené a spuštění. Následující témata popisují konfiguraci projektů a řešení.
+
+## <a name="in-this-section"></a>V tomto oddílu
+- [Přehled](../../extensibility/internals/configuration-options-overview.md)
+
+ Popisuje, jak projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] může podporovat více konfigurací.
+
+- [Stránky vlastností](../../extensibility/internals/property-pages.md)
+
+ Vysvětluje, že uživatelé mohou zobrazit a změnit vlastnosti nezávislé a závislé vlastnosti konfigurace projektu pomocí stránky vlastností.
+
+- [Konfigurace řešení](../../extensibility/internals/solution-configuration.md)
+
+ Poskytuje informace o se ukládá v konfiguracích řešení a způsobu konfigurace řešení přímo chování **Start** a **sestavení** příkazy.
+
+- [Objekt konfigurace projektu](../../extensibility/internals/project-configuration-object.md)
+
+ Vysvětluje, jak objekt konfigurace projektu spravuje zobrazení informací o konfiguraci v uživatelském rozhraní.
+
+- [Konfigurace projektu pro sestavení](../../extensibility/internals/project-configuration-for-building.md)
+
+ Vysvětluje, jak je spravován seznam konfigurací řešení pro konkrétního řešení **konfigurace řešení** dialogové okno.
+
+- [Konfigurace projektu pro správu nasazení](../../extensibility/internals/project-configuration-for-managing-deployment.md)
+
+ Definuje v rámci nasazení a dva způsoby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje projekty, které podporují nasazení.
+
+- [Konfigurace projektu pro výstup](../../extensibility/internals/project-configuration-for-output.md)
+
+ Popisuje procesy sestavení, které podporují všechny konfigurace a rozhraní a metody, pomocí které výstupní položky mohou být zpřístupněny.
+
+## <a name="related-sections"></a>Související oddíly
+- [Typy projektů](../../extensibility/internals/project-types.md)
+
  Poskytuje přehled o projekty jako základní stavební bloky [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou uvedeny odkazy na další témata, která popisují, jak řídit projekty vytváření a kompilování kódu.

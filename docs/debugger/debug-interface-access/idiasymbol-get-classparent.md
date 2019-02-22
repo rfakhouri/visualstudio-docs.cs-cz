@@ -12,44 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b224b0311da78b709f7782f4f66e02869c595d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 736d2150c2d19ba7ee7ee75bdb336fa6f0614a30
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992838"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613463"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
-Získá odkaz na nadřazené třídu symbolu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_classParent (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt, který reprezentuje nadřazené třídu symbolu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Získá odkaz na nadřazené třídu symbolu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_classParent ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt, který reprezentuje nadřazené třídu symbolu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="requirements"></a>Požadavky  
-  
-|Požadavek|Popis|  
-|-----------------|-----------------|  
-|Záhlaví:|dia2.h|  
-|Verze:|V7.0 DIA SDK|  
-  
-## <a name="remarks"></a>Poznámky  
- Druhy symbolů, které mohou být nadřazené třídu jsou dokumentovány v článku [hierarchie typů symbolů tříd](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Hierarchie tříd typů symbolů](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="requirements"></a>Požadavky
+
+|Požadavek|Popis|
+|-----------------|-----------------|
+|Záhlaví:|dia2.h|
+|Verze:|V7.0 DIA SDK|
+
+## <a name="remarks"></a>Poznámky
+ Druhy symbolů, které mohou být nadřazené třídu jsou dokumentovány v článku [hierarchie typů symbolů tříd](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Hierarchie tříd typů symbolů](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

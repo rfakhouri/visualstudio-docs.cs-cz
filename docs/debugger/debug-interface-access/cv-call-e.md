@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8c11e84a514739049a044a12ae482f7b2d9929
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316175"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602751"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Určuje konvenci volání funkce.
@@ -39,23 +39,17 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>Elementy
-CV_CALL_NEAR_C  
-Určuje konvence volání funkce, pomocí operace push blízké zprava doleva. Volání funkce vymaže zásobníku.
+CV_CALL_NEAR_C určuje konvence volání funkce, pomocí operace push blízké zprava doleva. Volání funkce vymaže zásobníku.
 
-CV_CALL_NEAR_FAST  
-Určuje konvence volání funkce, pomocí registrů téměř nabízených zleva doprava. Volaná funkce používá součtem bajtů parametrů k vymazání zásobníku.
+Určuje CV_CALL_NEAR_FAST konvence volání funkce použitím téměř zleva doprava push se zaregistruje. Volaná funkce používá součtem bajtů parametrů k vymazání zásobníku.
 
-CV_CALL_NEAR_STD  
-Určuje konvence volání funkce, pomocí téměř standardní volání (nabízených zprava doleva).
+CV_CALL_NEAR_STD určuje konvence volání funkce, pomocí téměř standardní volání (nabízených zprava doleva).
 
-CV_CALL_NEAR_SYS  
-Určuje konvence volání funkce použitím téměř volání systému.
+Určuje CV_CALL_NEAR_SYS konvence volání funkce, pomocí téměř systému volání.
 
-CV_CALL_THISCALL  
-Určuje konvenci volání funkce použitím `this` volání (`this` předán ukazatel v registru).
+Konvence volání funkce pomocí určuje CV_CALL_THISCALL `this` volání (`this` předán ukazatel v registru).
 
-CV_CALL_CLRCALL  
-Určuje volání funkce konvence podle CLR Common Language Runtime () (označované také jako spravovaný kód konvence volání).
+Určuje CV_CALL_CLRCALL volání funkce konvence podle CLR Common Language Runtime () (označované také jako spravovaný kód konvence volání).
 
 ## <a name="remarks"></a>Poznámky
 Hodnoty v tomto výčtu jsou vráceny prostřednictvím volání [idiasymbol::get_callingconvention –](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) metody.
@@ -64,5 +58,5 @@ Hodnoty v tomto výčtu jsou vráceny prostřednictvím volání [idiasymbol::ge
 Záhlaví: cvconst.h
 
 ## <a name="see-also"></a>Viz také
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

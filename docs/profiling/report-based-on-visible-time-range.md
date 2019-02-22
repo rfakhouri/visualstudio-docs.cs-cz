@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9372e4ae27142fa31beb2a4fb8730b64f025cbdf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019564"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614594"
 ---
 # <a name="report-based-on-visible-time-range"></a>Sestava pro viditelný časový rozsah
-Profil zobrazení sestavy, které jsou založeny na současném viditelném časovém rozsahu a kanály. Chcete-li zobrazit podrobnosti pro různé podmnožiny dat, klikněte na položky v legendě.  
-  
- Další informace o datech najdete v tabulkách v tomto poli.  
-  
-## <a name="see-also"></a>Viz také:  
- [Žádná aktivita vláken k zobrazení](../profiling/no-thread-activity-to-show-threads-view.md)   
- [Sestava profilu spuštění](../profiling/execution-profile-report.md)   
- [Čas synchronizace](../profiling/synchronization-time.md)   
- [Čas I/O (zobrazení vláken)](../profiling/i-o-time-threads-view.md)   
- [Doba spánku](../profiling/sleep-time.md)   
- [Čas správy paměti](../profiling/memory-management-time.md)   
- [Čas přerušení](../profiling/preemption-time.md)   
- [Doba zpracování uživatelského rozhraní](../profiling/ui-processing-time.md)   
- [Sestava diskových operací](../profiling/disk-operations-report-threads-view.md)   
- [Sestava souhrnu podle vláken](../profiling/per-thread-summary-report.md)   
- [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)
+Profil zobrazení sestavy, které jsou založeny na současném viditelném časovém rozsahu a kanály. Chcete-li zobrazit podrobnosti pro různé podmnožiny dat, klikněte na položky v legendě.
+
+ Další informace o datech najdete v tabulkách v tomto poli.
+
+## <a name="see-also"></a>Viz také:
+- [Žádná aktivita vláken k zobrazení](../profiling/no-thread-activity-to-show-threads-view.md)
+- [Sestava profilu spuštění](../profiling/execution-profile-report.md)
+- [Čas synchronizace](../profiling/synchronization-time.md)
+- [Čas I/O (Zobrazení vláken)](../profiling/i-o-time-threads-view.md)
+- [Doba spánku](../profiling/sleep-time.md)
+- [Čas správy paměti](../profiling/memory-management-time.md)
+- [Čas přerušení](../profiling/preemption-time.md)
+- [Doba zpracování uživatelského rozhraní](../profiling/ui-processing-time.md)
+- [Sestava diskových operací](../profiling/disk-operations-report-threads-view.md)
+- [Sestava souhrnu podle vláken](../profiling/per-thread-summary-report.md)
+- [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

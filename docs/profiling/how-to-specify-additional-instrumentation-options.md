@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e93a249572c34d801426b9919a274aa133639a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963720"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618676"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Postupy: Určení dalších možností instrumentace
 
@@ -41,5 +41,5 @@ Vám umožňuje instrumentovat binárních souborů pomocí integrovaného vývo
 
 ## <a name="see-also"></a>Viz také:
 
-[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
-[Profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)
+[profilu z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)

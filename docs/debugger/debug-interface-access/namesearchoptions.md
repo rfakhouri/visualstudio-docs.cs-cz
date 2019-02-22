@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa637a5f403a4651541d920c6390204ee579994
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318612"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639684"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Určuje možnosti hledání symbolů a názvy souborů.
@@ -43,23 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Elementy
-`nsNone`  
-Nejsou zadány žádné parametry.
+`nsNone` Nejsou zadány žádné parametry.
 
-`nsfCaseSensitive`  
-Platí shoda názvu malá a velká písmena.
+`nsfCaseSensitive` Platí shoda názvu malá a velká písmena.
 
-`nsfCaseInsensitive`  
-Platí shoda nerozlišuje velikost písmen názvů.
+`nsfCaseInsensitive` Platí shoda nerozlišuje velikost písmen názvů.
 
-`nsfFNameExt`  
-Názvy považuje za cesty a použije shodného názvu název_souboru.přípona.
+`nsfFNameExt` Názvy považuje za cesty a použije shodného názvu název_souboru.přípona.
 
-`nsfRegularExpression`  
-Platí shoda názvu malá a velká písmena pomocí hvězdičky (*) a otazník (?) jako zástupné znaky.
+`nsfRegularExpression` Platí shoda názvu malá a velká písmena pomocí hvězdičky (*) a otazník (?) jako zástupné znaky.
 
-`nsfUndecoratedName`  
-Platí jenom pro symboly, které mají nedekorovaných i dekorované názvy.
+`nsfUndecoratedName` Platí jenom pro symboly, které mají nedekorovaných i dekorované názvy.
 
 ## <a name="remarks"></a>Poznámky
 Hodnoty z tento výčet se předají do následujících metod:
@@ -74,7 +68,7 @@ Hodnoty z tento výčet se předají do následujících metod:
 Záhlaví: dia2.h
 
 ## <a name="see-also"></a>Viz také
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

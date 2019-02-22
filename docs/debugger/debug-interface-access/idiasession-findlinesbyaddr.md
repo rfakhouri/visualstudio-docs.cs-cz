@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57ef75b27f90df37132ecb246b6f8d433581a696
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 730793d2b9f2e02d7e5665777f8df4d245b0ddf6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227456"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642180"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 Načte řádky v zadané kompilace, které obsahují zadané adrese.
@@ -34,16 +34,20 @@ HRESULT findLinesByAddr (
 ```
 
 #### <a name="parameters"></a>Parametry
-`seg`  
+`seg`
+
 [in] Určuje komponentu části z konkrétní adresy.
 
-`offset`  
+`offset`
+
 [in] Určuje posunutí komponentu konkrétní adresu.
 
-`length`  
+`length`
+
 [in] Určuje počet bajtů rozsah adres, aby pokryl s Tento dotaz.
 
-`ppResult`  
+`ppResult`
+
 [out] Vrátí [idiaenumlinenumbers –](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objekt, který obsahuje seznam všech řádku čísla tohoto krytí zadaný rozsah adres.
 
 ## <a name="return-value"></a>Návratová hodnota
@@ -72,6 +76,6 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)

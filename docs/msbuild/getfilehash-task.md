@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ebd50b42408dc7bd2642c257dece686245870f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484885"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622017"
 ---
 # <a name="getfilehash-task"></a>GetFileHash úkolu
 
@@ -65,6 +65,6 @@ V následujícím příkladu `GetFileHash` úloh na určení a vytisknout kontro
 
 ## <a name="see-also"></a>Viz také:
 
-[Úlohy](../msbuild/msbuild-tasks.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
 
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

@@ -14,25 +14,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e34640a06fb231aad0cf0a48ebc001ef7e1b597a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 89b3e7492e0f5155dd1c36f0140f6a1ad11db027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979098"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632898"
 ---
 # <a name="modules-view"></a>Zobrazení modulů
-Zobrazení modulů seznam modulů dat profilování. Každý modul je kořenový uzel hierarchického stromu. Profilované funkce modulu jsou uvedeny pod uzlem modulu. Pokud data profilace byla shromážděna pomocí metody odběru vzorků, informace o řádku je uvedena pod uzel funkce a data ukazatel instrukce je uvedena pod uzlem řádku.  
-  
- Rozbalit nebo sbalit název modulu pro zobrazení nebo zobrazení dat výkonu modulu zavřít.  
-  
- Přidejte nebo odeberte sloupce, klikněte pravým tlačítkem v okně sestavy a pak vyberte **Přidat/odebrat sloupce**. Data lze seřadit klepnutím na název sloupce. Další informace najdete v tématu [jak: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md).  
-  
- Sloupce, které jsou k dispozici v zobrazení modulů závisí na metodě profilování (vzorkování nebo instrumentace), která byla použita pro sběr dat a zda shromáždění dat paměti .NET v profilaci spouštět.  
-  
-## <a name="see-also"></a>Viz také:  
- [Zobrazení modulů](../profiling/modules-view-sampling-data.md)   
- [Zobrazení modulů](../profiling/modules-view-instrumentation-data.md)   
- [Zobrazení modulů – instrumentace](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Moduly zobrazení – vzorkování](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Zobrazení modulů](../profiling/modules-view-contention-data.md)
+Zobrazení modulů seznam modulů dat profilování. Každý modul je kořenový uzel hierarchického stromu. Profilované funkce modulu jsou uvedeny pod uzlem modulu. Pokud data profilace byla shromážděna pomocí metody odběru vzorků, informace o řádku je uvedena pod uzel funkce a data ukazatel instrukce je uvedena pod uzlem řádku.
+
+ Rozbalit nebo sbalit název modulu pro zobrazení nebo zobrazení dat výkonu modulu zavřít.
+
+ Přidejte nebo odeberte sloupce, klikněte pravým tlačítkem v okně sestavy a pak vyberte **Přidat/odebrat sloupce**. Data lze seřadit klepnutím na název sloupce. Další informace najdete v tématu [jak: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md).
+
+ Sloupce, které jsou k dispozici v zobrazení modulů závisí na metodě profilování (vzorkování nebo instrumentace), která byla použita pro sběr dat a zda shromáždění dat paměti .NET v profilaci spouštět.
+
+## <a name="see-also"></a>Viz také:
+- [Zobrazení modulů](../profiling/modules-view-sampling-data.md)
+- [Zobrazení modulů](../profiling/modules-view-instrumentation-data.md)
+- [Zobrazení modulů – instrumentace](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Moduly zobrazení – vzorkování](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Zobrazení modulů](../profiling/modules-view-contention-data.md)

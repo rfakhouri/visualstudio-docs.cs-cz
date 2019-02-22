@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2baf119259c749e8da99a9326eb22aa1e034b4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335932"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646470"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Ladit živé aplikace ASP.NET na virtuálních počítačích Azure a škálovací sady virtuálních počítačů Azure pomocí ladicího programu snímků
 
@@ -53,7 +53,7 @@ V tomto kurzu se naučíte:
 1. Připojte Snapshot Debugger. Můžete použít jeden z několika různými způsoby:
 
     * Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
-  
+
       ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Klikněte pravým tlačítkem myši na projekt a vyberte **publikovat**a pak na stránce klikněte na publikovat **připojit Snapshot Debugger**. Vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
@@ -63,7 +63,7 @@ V tomto kurzu se naučíte:
     ![Spuštění ladicího programu snímků z rozevírací nabídky F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Pomocí Průzkumníka cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na Azure VM/VMSS webové aplikace je nasazená do a vyberte účet úložiště Azure a pak klikněte na tlačítko **připojit Snapshot Debugger**.
-  
+
       ![Spuštění ladicího programu snímků z Průzkumníka cloudu](../debugger/media/snapshot-launch.png)
 
     > [!IMPORTANT]

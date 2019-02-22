@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c673a362cfa48e41c82518da50f489422ea480fd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a9208a274c9dc50226452bbe9d2235d8dbf9b42
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994274"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620158"
 ---
 # <a name="instruction-pointers-ips-view"></a>Zobrazení Ukazatele na instrukce (IP)
-Zobrazení ukazatele na instrukce vám umožní zobrazit konkrétní pokyny, které jsou spouštěny během profilace vzorkování.  
-  
- Toto zobrazení není k dispozici během profilace instrumentace.  
-  
- Zobrazení IP adres pro vzorkování dat profilu, identifikuje pokyny ve funkci, která byla spuštěna přímo po shromáždění vzorku.  
-  
- Zobrazení řádků pro data paměti .NET, identifikuje pokynů, které se přidělit paměť.  
-  
-## <a name="see-also"></a>Viz také:  
- [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-sampling-data.md)   
- [Ukazatele na instrukce (IP) zobrazení – vzorkování](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-contention-data.md)
+Zobrazení ukazatele na instrukce vám umožní zobrazit konkrétní pokyny, které jsou spouštěny během profilace vzorkování.
+
+ Toto zobrazení není k dispozici během profilace instrumentace.
+
+ Zobrazení IP adres pro vzorkování dat profilu, identifikuje pokyny ve funkci, která byla spuštěna přímo po shromáždění vzorku.
+
+ Zobrazení řádků pro data paměti .NET, identifikuje pokynů, které se přidělit paměť.
+
+## <a name="see-also"></a>Viz také:
+- [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Ukazatele na instrukce (IP) zobrazení – vzorkování](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-contention-data.md)

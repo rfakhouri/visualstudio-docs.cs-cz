@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae991730caf5e83e9632d7b9a871a62778463098
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928565"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642739"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Postupy: Shromažďování dat čítačů procesoru
 
@@ -60,7 +60,7 @@ Dva typy událostí čítače CPU dojít:
 
 ## <a name="see-also"></a>Viz také:
 
-[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
-[Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)  
-[Čítače procesoru a systému Windows](../profiling/cpu-and-windows-counters.md)  
-[Postupy: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)
+[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)
+[vlastnosti relace výkonu](../profiling/performance-session-properties.md)
+[čítače procesoru a Windows](../profiling/cpu-and-windows-counters.md)
+[jak: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)

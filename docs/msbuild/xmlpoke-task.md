@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 691a9ddbba4291bb6b54d15c9b60e6339b2548b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963781"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626684"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke – úloha
 
@@ -30,7 +30,7 @@ Nastaví hodnoty podle specifikace dotazu XPath do souboru XML.
 ## <a name="parameters"></a>Parametry
 
  Následující tabulka popisuje parametry `XmlPoke` úloh.
-  
+
 |Parametr|Popis|
 |---------------|-----------------|
 |`Namespaces`|Volitelné `String` parametru.<br /><br /> Určuje obor názvů u předpony dotazu XPath. `Namespaces` je fragment kódu XML, který se skládá z `Namespace` elementy s atributy `Prefix` a `Uri`. Atribut `Prefix` určuje předpona, kterou chcete přidružit k oboru názvů určenému ve `Uri` atribut. Nepoužívejte prázdné `Prefix`.|
@@ -81,5 +81,5 @@ V tomto příkladu, pokud chcete upravit `/Package/mp:PhoneIdentity/PhonePublish
 
 ## <a name="see-also"></a>Viz také:
 
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

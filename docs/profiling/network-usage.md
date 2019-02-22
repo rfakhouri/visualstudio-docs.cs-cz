@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23db31cc0ede03072d42a36fb089038bb097e9ae
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d342a3746b081a47e68e781c2c18b7fbc4fe0b33
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316714"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606092"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analýza využití sítě v aplikacích pro UWP
 Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o síťových operacích pomocí provádí [Windows.Web.Http API](/uwp/api/windows.web.http). Analýza dat vám může pomoct vyřešit problémy, jako jsou problémy přístupu a ověřování, nesprávné použití mezipaměti a špatné zobrazení a stáhnout výkonu.

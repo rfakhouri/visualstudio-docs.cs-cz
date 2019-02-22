@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866188"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630896"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Průvodce: Vytvoření stránky aplikace služby SharePoint
- 
+
 Stránka aplikace je specializovaná forma stránky technologie ASP.NET. Stránky aplikace obsahují obsah, který je sloučen s hlavní stránkou služby SharePoint. Další informace najdete v tématu [vytváření stránek aplikací pro SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 Tento návod ukazuje, jak vytvořit stránku aplikace a pak ho ladit pomocí místního webu služby SharePoint. Tato stránka zobrazuje všechny položky, které každý uživatel vytvořil nebo změnil na všech serverech ve farmě.
@@ -153,5 +153,5 @@ Vám může Další informace o navrhování obsahu stránky služby SharePoint 
 
 ## <a name="see-also"></a>Viz také:
 
-[Postupy: Vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)  
-[Typ stránky _layouts aplikace](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Postupy: Vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)
+[_layouts aplikace typ stránky](http://go.microsoft.com/fwlink/?LinkID=169274)
