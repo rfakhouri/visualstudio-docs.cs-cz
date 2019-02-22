@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43759d33c776e7ca4a6bdd8269df4bee0f882a53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982933"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638514"
 ---
 # <a name="how-to-choose-collection-methods"></a>Postupy: Výběr metod shromažďování
 
@@ -91,6 +91,6 @@ Můžete použít relaci výkonu **metoda** vlastnosti a určit nejvhodnější 
 
 ## <a name="see-also"></a>Viz také:
 
-[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
-[Vysvětlení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
-[Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)
+[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)
+[pochopit hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)
+[vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)

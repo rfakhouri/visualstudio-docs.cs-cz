@@ -22,53 +22,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7e31f1eb259f6633f747f0243a08e09caf4539d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c39a9e4f268a0e11d7a0962820b418876e9733b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633535"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operátor kontextu v ladicím programu sady Visual Studio (C++)
-Operátor kontextu v jazyce C++ můžete použít k určení umístění zarážky, název proměnné nebo výrazu. Operátor kontextu je vhodné při zadání názvu z vnějšího oboru, který je jinak skrytý místní název.  
-  
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe  
- Existují dva způsoby určení kontextu:  
-  
-1.  {, [*modulu*]} *výraz*  
-  
-     Složené závorky musí obsahovat dvě čárky a modulu (spustitelné nebo knihovna DLL) název nebo úplnou cestu.  
-  
-     Například, chcete-li nastavit zarážku na `SomeFunction` funkce EXAMPLE.dll:  
-  
-    ```C++  
-    {,,EXAMPLE.dll}SomeFunction  
-    ```  
-  
-2.  *modul*! *výraz*  
-  
-    ```C++  
-    EXAMPLE.dll!SomeFunction  
-    ```  
-  
-- *modul* je název modulu. Můžete použít úplnou cestu k rozlišení mezi moduly se stejným názvem.  
-  
-   Pokud *modulu* cesta obsahuje čárku, vložené místo nebo složené závorky, je nutné použít cesty v uvozovkách, tak, aby analyzátor kontextu správně rozpozná řetězec. Jednoduché uvozovky jsou považovány za součást názvu souboru Windows, je nutné použít dvojitých uvozovek. Například  
-  
-  ```C++  
-  {,,"a long, long, library name.dll"} g_Var  
-  ```  
-  
-- *výraz* je libovolný platný výraz jazyka C++, který se přeloží na platný cíl, například název funkce, název proměnné nebo adresa ukazatele v *modulu*.  
-  
-  Chyba při vyhodnocování výrazu narazí na symbol ve výrazu, prohledá pro symbol v tomto pořadí:  
-  
-1.  V rámci oboru lexikální směrem ven, počínaje aktuální blok řadu příkazů uzavřeny ve složených závorkách a ven pokračujte v nadřízeném bloku. Aktuální blok je kód, který obsahuje aktuální umístění, adresa ukazatele instrukce.  
-  
-2.  Rozsah funkce. Aktuální funkce.  
-  
-3.  Pokud je aktuální umístění uvnitř členské funkce C++ oboru třídy. Rozsah třídy obsahuje všechny základní třídy. Chyba při vyhodnocování výrazu používá pravidla dominance v normální.  
-  
-4.  Globální symboly v aktuálním modulu.  
-  
+Operátor kontextu v jazyce C++ můžete použít k určení umístění zarážky, název proměnné nebo výrazu. Operátor kontextu je vhodné při zadání názvu z vnějšího oboru, který je jinak skrytý místní název.
+
+##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe
+ Existují dva způsoby určení kontextu:
+
+1.  {, [*modulu*]} *výraz*
+
+     Složené závorky musí obsahovat dvě čárky a modulu (spustitelné nebo knihovna DLL) název nebo úplnou cestu.
+
+     Například, chcete-li nastavit zarážku na `SomeFunction` funkce EXAMPLE.dll:
+
+    ```C++
+    {,,EXAMPLE.dll}SomeFunction
+    ```
+
+2.  *modul*! *výraz*
+
+    ```C++
+    EXAMPLE.dll!SomeFunction
+    ```
+
+- *modul* je název modulu. Můžete použít úplnou cestu k rozlišení mezi moduly se stejným názvem.
+
+   Pokud *modulu* cesta obsahuje čárku, vložené místo nebo složené závorky, je nutné použít cesty v uvozovkách, tak, aby analyzátor kontextu správně rozpozná řetězec. Jednoduché uvozovky jsou považovány za součást názvu souboru Windows, je nutné použít dvojitých uvozovek. Například
+
+  ```C++
+  {,,"a long, long, library name.dll"} g_Var
+  ```
+
+- *výraz* je libovolný platný výraz jazyka C++, který se přeloží na platný cíl, například název funkce, název proměnné nebo adresa ukazatele v *modulu*.
+
+  Chyba při vyhodnocování výrazu narazí na symbol ve výrazu, prohledá pro symbol v tomto pořadí:
+
+1.  V rámci oboru lexikální směrem ven, počínaje aktuální blok řadu příkazů uzavřeny ve složených závorkách a ven pokračujte v nadřízeném bloku. Aktuální blok je kód, který obsahuje aktuální umístění, adresa ukazatele instrukce.
+
+2.  Rozsah funkce. Aktuální funkce.
+
+3.  Pokud je aktuální umístění uvnitř členské funkce C++ oboru třídy. Rozsah třídy obsahuje všechny základní třídy. Chyba při vyhodnocování výrazu používá pravidla dominance v normální.
+
+4.  Globální symboly v aktuálním modulu.
+
 5.  Veřejné symboly v aktuálním programu.

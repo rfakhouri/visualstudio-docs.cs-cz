@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640cebfda96b0c618352017e982c695ad908de0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155588"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637071"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Otevře relaci pro dotazování na symboly.
@@ -31,7 +31,8 @@ HRESULT openSession ( 
 ```
 
 #### <a name="parameters"></a>Parametry
-ppSession  
+ppSession
+
 [out] Vrátí [idiasession –](../../debugger/debug-interface-access/idiasession.md) objekt představující otevřít relaci.
 
 ## <a name="return-value"></a>Návratová hodnota
@@ -60,7 +61,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[Přehled](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[Dotazování na soubor .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [Přehled](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [Dotazování na soubor .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

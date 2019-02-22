@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82385221988a0a2eb9ed562742abc16c8552f9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639944"
 ---
 # <a name="measure-mode-onoff"></a>Zapnout nebo vypnout režim míry
-Pomocí tohoto nástroje můžete přesně změřit dobu na časové ose. Pokud chcete povolit režim míry, klikněte na tlačítko měr, (který má ikonu pravítka) a potom přetáhněte na časové ose. Při přetahování, Všimněte si, že oblast pod ukazatelem je zvýrazněn žlutě a měření času se zobrazí na panelu nástrojů na pravé straně tlačítka. Tato hodnota se vypočítá dynamicky při přetahování tak, aby umožňují okamžitě zjistit, jak dlouho trvá konkrétní události. Když uvolníte tlačítko myši, časová hodnota zůstává viditelná.  
-  
- Měření procesu můžete opakovat, ale je zobrazena pouze nejnovější měření. Klikněte na tlačítko míru znovu k vypnutí režimu míry.  
-  
-## <a name="see-also"></a>Viz také:  
- [Správa kanálů](../profiling/manage-channels.md)   
- [Ovládací prvek Lupa (zobrazení vláken)](../profiling/zoom-control-threads-view.md)   
- [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)
+Pomocí tohoto nástroje můžete přesně změřit dobu na časové ose. Pokud chcete povolit režim míry, klikněte na tlačítko měr, (který má ikonu pravítka) a potom přetáhněte na časové ose. Při přetahování, Všimněte si, že oblast pod ukazatelem je zvýrazněn žlutě a měření času se zobrazí na panelu nástrojů na pravé straně tlačítka. Tato hodnota se vypočítá dynamicky při přetahování tak, aby umožňují okamžitě zjistit, jak dlouho trvá konkrétní události. Když uvolníte tlačítko myši, časová hodnota zůstává viditelná.
+
+ Měření procesu můžete opakovat, ale je zobrazena pouze nejnovější měření. Klikněte na tlačítko míru znovu k vypnutí režimu míry.
+
+## <a name="see-also"></a>Viz také:
+- [Správa kanálů](../profiling/manage-channels.md)
+- [Ovládací prvek Lupa (zobrazení vláken)](../profiling/zoom-control-threads-view.md)
+- [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

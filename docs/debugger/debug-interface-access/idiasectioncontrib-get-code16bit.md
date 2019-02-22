@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0200c65cfd89086a58466913967e73a00e4d7fd4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e9c190108cdbf1eb7be2d21927a95fe56fca75
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993519"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635888"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
-Získá příznak označující, zda oddíl obsahuje kód 16 bitů.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_code16bit(  
-   BOOL *pRetVal  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` , pokud je kód v části 16-bit; jinak vrátí hodnotu, vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato metoda pouze určuje, zda kód je 16 bitů. Pokud kód představuje 16-bit, může být cokoli jiného, jako je 32bitová nebo 64bitová verze kódu.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Získá příznak označující, zda oddíl obsahuje kód 16 bitů.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_code16bit(
+   BOOL *pRetVal
+};
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` , pokud je kód v části 16-bit; jinak vrátí hodnotu, vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Tato metoda pouze určuje, zda kód je 16 bitů. Pokud kód představuje 16-bit, může být cokoli jiného, jako je 32bitová nebo 64bitová verze kódu.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

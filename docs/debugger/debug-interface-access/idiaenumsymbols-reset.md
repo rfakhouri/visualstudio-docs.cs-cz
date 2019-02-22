@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8540a3aef4460ec022c3da8d69da44d14863d7e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96ce674e9bfc15913c8b7c142ee36780bf74c7ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068664"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641985"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
-Návrat na začátek sekvence výčtu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Vrátí `S_OK`.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Návrat na začátek sekvence výčtu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Návratová hodnota
+ Vrátí `S_OK`.
+
+## <a name="see-also"></a>Viz také
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

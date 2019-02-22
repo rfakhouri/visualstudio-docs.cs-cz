@@ -11,39 +11,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4df7ec753f1d636a74dfce74b451ecaf5557c53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021673"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643584"
 ---
 # <a name="detect-system-requirements"></a>Zjistit požadavky na systém
-VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Když spravovat instalaci vašeho balíčku VSPackage pomocí Instalační služby systému Windows, můžete nakonfigurovat instalační program a zjistit, zda je nainstalována aplikace Visual Studio. Můžete také nakonfigurovat tak, zkontrolujte systém, hledá další požadavky, například konkrétní verzi Windows nebo určité množství paměti RAM.  
-  
-## <a name="detect-visual-studio-editions"></a>Zjištění edice sady Visual Studio  
- Pokud chcete zjistit, jestli je nainstalovaná edice sady Visual Studio, ověřte, že hodnota **nainstalovat** klíč registru je *(REG_DWORD) 1* v příslušné složce, jak je uvedeno v následující tabulce. Všimněte si, že hierarchii edice sady Visual Studio:  
-  
-1.  Enterprise  
-  
-2.  Professional  
-  
-3.  Komunita  
-      
-Při instalaci na novější verzi klíče registru pro tuto verzi jsou přidány stejně jako u starších edicích. To znamená, pokud je nainstalovaná edice Enterprise, **nainstalovat** klíč nastavený na *1* pro organizace, a také pro edice Professional a Community. Proto je potřeba zkontrolovat pouze pro nejnovější verzi, které potřebujete.  
-  
+VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Když spravovat instalaci vašeho balíčku VSPackage pomocí Instalační služby systému Windows, můžete nakonfigurovat instalační program a zjistit, zda je nainstalována aplikace Visual Studio. Můžete také nakonfigurovat tak, zkontrolujte systém, hledá další požadavky, například konkrétní verzi Windows nebo určité množství paměti RAM.
+
+## <a name="detect-visual-studio-editions"></a>Zjištění edice sady Visual Studio
+ Pokud chcete zjistit, jestli je nainstalovaná edice sady Visual Studio, ověřte, že hodnota **nainstalovat** klíč registru je *(REG_DWORD) 1* v příslušné složce, jak je uvedeno v následující tabulce. Všimněte si, že hierarchii edice sady Visual Studio:
+
+1.  Enterprise
+
+2.  Professional
+
+3.  Komunita
+
+Při instalaci na novější verzi klíče registru pro tuto verzi jsou přidány stejně jako u starších edicích. To znamená, pokud je nainstalovaná edice Enterprise, **nainstalovat** klíč nastavený na *1* pro organizace, a také pro edice Professional a Community. Proto je potřeba zkontrolovat pouze pro nejnovější verzi, které potřebujete.
+
 > [!NOTE]
->  V 64bitové verzi systému editor registru, 32bitová verze klíče se zobrazí v části **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Klíče aplikace Visual Studio jsou v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.  
-  
-|Produkt|Key|  
-|-------------|---------|  
-|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|  
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|  
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|  
-|Visual Studio 2015 Shell (integrovaný režim a izolovaný režim)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
-  
-## <a name="detect-when-visual-studio-is-running"></a>Rozpoznat, kdy je spuštěná sada Visual Studio  
- Vaše VSPackage nelze správně zaregistrovány, pokud je spuštěná sada Visual Studio při instalaci sady VSPackage. Instalační program musí rozpoznat, kdy je spuštěná sada Visual Studio a pak odmítnout instalaci programu. Instalační služby systému Windows neumožňuje použití položky tabulky k povolení takovéto zjišťování. Místo toho musíte vytvořit vlastní akci, následujícím způsobem: Použití `EnumProcesses` funkce pro detekci *devenv.exe* zpracovávat a potom buď nastavit vlastnost Instalační program, který se používá v podmínce spuštění nebo podmíněně zobrazit dialogové okno, které se zobrazí výzva k zavřete sadu Visual Studio.  
-  
-## <a name="see-also"></a>Viz také:  
- [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+>  V 64bitové verzi systému editor registru, 32bitová verze klíče se zobrazí v části **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Klíče aplikace Visual Studio jsou v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+
+|Produkt|Key|
+|-------------|---------|
+|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
+|Visual Studio 2015 Shell (integrovaný režim a izolovaný režim)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
+
+## <a name="detect-when-visual-studio-is-running"></a>Rozpoznat, kdy je spuštěná sada Visual Studio
+ Vaše VSPackage nelze správně zaregistrovány, pokud je spuštěná sada Visual Studio při instalaci sady VSPackage. Instalační program musí rozpoznat, kdy je spuštěná sada Visual Studio a pak odmítnout instalaci programu. Instalační služby systému Windows neumožňuje použití položky tabulky k povolení takovéto zjišťování. Místo toho musíte vytvořit vlastní akci, následujícím způsobem: Použití `EnumProcesses` funkce pro detekci *devenv.exe* zpracovávat a potom buď nastavit vlastnost Instalační program, který se používá v podmínce spuštění nebo podmíněně zobrazit dialogové okno, které se zobrazí výzva k zavřete sadu Visual Studio.
+
+## <a name="see-also"></a>Viz také:
+- [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df9faeae70ac29562b7fa50f3d472e83299bfb62
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 09aa22660853149472ca4b581e0e3d7d346846f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155627"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634718"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Přehled nástrojů pro měření výkonu v sadě Visual Studio
 
@@ -25,4 +25,4 @@ Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití 
 
 * [Analýza využití procesoru](../profiling/cpu-usage.md) další podrobné informace o nástroj využití procesoru.
 
-* [Analýza využití paměti](../profiling/memory-usage.md)identifikovat kritické body výkonu. 
+* [Analýza využití paměti](../profiling/memory-usage.md)identifikovat kritické body výkonu.
