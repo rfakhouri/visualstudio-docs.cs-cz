@@ -13,28 +13,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99dd7bea33fa534be8dceb0fb888ac50e23cd01d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ff441de5d3643a1c8c4e9b57a98c7a5563d1ea62
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865584"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653967"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Postupy: Konfigurace počítače pro vývoj řešení pro systém Office
-  Ke konfiguraci vývojovém počítači, aby mohli používat Microsoft Office developer tools v sadě Visual Studio, postupujte podle pokynů v tomto tématu. Ve vývojovém počítači tyto kroky mohli provést, musíte mít oprávnění správce.  
-  
-### <a name="to-configure-the-development-computer"></a>Konfigurace vývojového počítače  
-  
-1.  Nainstalujte verzi sady Visual Studio, která zahrnuje Office developer tools. Nástroje Office developer tools jsou nainstalovány ve výchozím nastavení. Pokud přizpůsobíte instalaci sady Visual Studio tak, že vyberete funkcí, které chcete nainstalovat, ujistěte se, že **Microsoft Office Developer Tools** určen během instalace. Další informace o verzích sady Visual Studio, které zahrnují nástroje Office developer tools, naleznete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
-  
-2.  Nainstalujte verzi sady Office, která podporuje Office developer tools v sadě Visual Studio. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
-  
-     Ujistěte se, že nainstalujete PIA pro verzi Office, kterou instalujete. PIA jsou nainstalovány se sadou Office ve výchozím nastavení. Pokud změníte instalační program sady Office, ujistěte se, že **Podpora programovatelnosti rozhraní .NET** výběru pro aplikace, kterou chcete cílit.  
-  
-3.  Pokud máte anglickou verzi sady Visual Studio, ale chcete použít jiné než anglické jazykové nastavení pro Windows, můžete nainstalovat [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jazyková sada zobrazíte [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zprávy ve stejném jazyce jako Windows. Jiných než anglických verzích sady Visual Studio automaticky nainstalujte jazykovou sadu. Sada language pack je k dispozici [webu služby Stažení softwaru](http://go.microsoft.com/fwlink/?LinkId=140386).  
-  
-## <a name="see-also"></a>Viz také:  
- [Co je nového ve vývoji Office](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
- [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Postupy: Instalace primárních sestavení vzájemné spolupráce Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+  Ke konfiguraci vývojovém počítači, aby mohli používat Microsoft Office developer tools v sadě Visual Studio, postupujte podle pokynů v tomto tématu. Ve vývojovém počítači tyto kroky mohli provést, musíte mít oprávnění správce.
+
+### <a name="to-configure-the-development-computer"></a>Konfigurace vývojového počítače
+
+1.  Nainstalujte verzi sady Visual Studio, která zahrnuje Office developer tools. Nástroje Office developer tools jsou nainstalovány ve výchozím nastavení. Pokud přizpůsobíte instalaci sady Visual Studio tak, že vyberete funkcí, které chcete nainstalovat, ujistěte se, že **Microsoft Office Developer Tools** určen během instalace. Další informace o verzích sady Visual Studio, které zahrnují nástroje Office developer tools, naleznete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+
+2.  Nainstalujte verzi sady Office, která podporuje Office developer tools v sadě Visual Studio. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+
+     Ujistěte se, že nainstalujete PIA pro verzi Office, kterou instalujete. PIA jsou nainstalovány se sadou Office ve výchozím nastavení. Pokud změníte instalační program sady Office, ujistěte se, že **Podpora programovatelnosti rozhraní .NET** výběru pro aplikace, kterou chcete cílit.
+
+3.  Pokud máte anglickou verzi sady Visual Studio, ale chcete použít jiné než anglické jazykové nastavení pro Windows, můžete nainstalovat [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jazyková sada zobrazíte [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zprávy ve stejném jazyce jako Windows. Jiných než anglických verzích sady Visual Studio automaticky nainstalujte jazykovou sadu. Sada language pack je k dispozici [webu služby Stažení softwaru](http://go.microsoft.com/fwlink/?LinkId=140386).
+
+## <a name="see-also"></a>Viz také:
+- [Co je nového ve vývoji Office](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)
+- [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Postupy: Instalace primárních sestavení vzájemné spolupráce Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

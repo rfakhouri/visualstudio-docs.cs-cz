@@ -8,53 +8,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d602ca205cc8b60b867606e391d6a3c33f46107a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e93cc526ad61916e2a8663caa9652842ce136c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943192"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620639"
 ---
 # <a name="wincounter"></a>WinCounter
-**WinCounter** určuje Windows nebo čítač výkonu aplikace na shromažďování v nastavených intervalech během profil spustit. Windows a čítače výkonu aplikace jsou uvedené jako značky v souboru dat profilování. Můžete zadat více čítačů výkonu k získání v samostatné možnosti.  
-  
- Ve výchozím nastavení, se shromažďují čítače každých 500 milisekund. Použití **AutoMark** lze zadat interval jinou kolekci.  
-  
- Pouze jeden **AutoMark** možnost se používá. Pokud je položek víc **AutoMark** možnosti se uvádějí, použije se ten poslední.  
-  
- **WinCounter** možnost se dá použít jenom s **Start** možnost.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cmd  
-VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `Path`  
- Čítače výkonu Windows ve formátu cesty čítače PDH.  
-  
-## <a name="required-options"></a>Požadované možnosti  
- **WinCounter** možnost se dá použít jenom s **Start** možnost.  
-  
- **Spusťte:** `Method`  
- **Start** možnost inicializuje profiler k zadané metodě profilování.  
-  
-## <a name="exclusive-options"></a>Výhradní možnosti  
- **AutoMark** možnost se dá použít jenom s **WinCounter** možnost.  
-  
- **AutoMark:** `Milliseconds`  
- Určuje počet milisekund mezi shromažďování dat čítačů výkonu Windows.  
-  
-## <a name="example"></a>Příklad  
- V následujícím příkladu jsou uvedeny dva čítače výkonu Windows se mají shromažďovat v intervalu 1 000 milisekund.  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
-```  
-  
-## <a name="see-also"></a>Viz také:  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil služby](../profiling/command-line-profiling-of-services.md)
+**WinCounter** určuje Windows nebo čítač výkonu aplikace na shromažďování v nastavených intervalech během profil spustit. Windows a čítače výkonu aplikace jsou uvedené jako značky v souboru dat profilování. Můžete zadat více čítačů výkonu k získání v samostatné možnosti.
+
+ Ve výchozím nastavení, se shromažďují čítače každých 500 milisekund. Použití **AutoMark** lze zadat interval jinou kolekci.
+
+ Pouze jeden **AutoMark** možnost se používá. Pokud je položek víc **AutoMark** možnosti se uvádějí, použije se ten poslední.
+
+ **WinCounter** možnost se dá použít jenom s **Start** možnost.
+
+## <a name="syntax"></a>Syntaxe
+
+```cmd
+VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]
+```
+
+#### <a name="parameters"></a>Parametry
+ `Path` Čítače výkonu Windows ve formátu cesty čítače PDH.
+
+## <a name="required-options"></a>Požadované možnosti
+ **WinCounter** možnost se dá použít jenom s **Start** možnost.
+
+ **Spusťte:** `Method` **Start** možnost inicializuje profiler k zadané metodě profilování.
+
+## <a name="exclusive-options"></a>Výhradní možnosti
+ **AutoMark** možnost se dá použít jenom s **WinCounter** možnost.
+
+ **AutoMark:** `Milliseconds` Určuje počet milisekund mezi shromažďování dat čítačů výkonu Windows.
+
+## <a name="example"></a>Příklad
+ V následujícím příkladu jsou uvedeny dva čítače výkonu Windows se mají shromažďovat v intervalu 1 000 milisekund.
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000
+```
+
+## <a name="see-also"></a>Viz také:
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil služby](../profiling/command-line-profiling-of-services.md)

@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1d3b504f5987eca850cb2cbd73223c5c115fcde
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948216"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607353"
 ---
 # <a name="sgen-task"></a>SGen – úloha
-Vytvoří sestavení serializace XML pro typy v zadaném sestavení. Tato úloha obtéká nástroj Generátor serializátor XML (*Sgen.exe*). Další informace najdete v tématu [nástroj Generátor serializátor XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
+Vytvoří sestavení serializace XML pro typy v zadaném sestavení. Tato úloha obtéká nástroj Generátor serializátor XML (*Sgen.exe*). Další informace najdete v tématu [nástroj Generátor serializátor XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `SGen` úloh.  
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `SGen` úloh.
 
 
 | Parametr | Popis |
@@ -50,10 +50,10 @@ Vytvoří sestavení serializace XML pro typy v zadaném sestavení. Tato úloha
 | `Types` | Volitelné `String[]` parametru.<br /><br /> Získá nebo nastaví seznam pro generování kódu serializace pro konkrétní typy. SGen – vygeneruje kód serializace pouze u typů. |
 | `UseProxyTypes` | Vyžaduje `Boolean` parametru.<br /><br /> Pokud `true`, SGen – úloha generuje kód serializace pouze pro typy XML webové služby serveru proxy. |
 
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Poznámky
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)

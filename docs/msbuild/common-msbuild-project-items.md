@@ -15,71 +15,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd4f2676c9d696ecf7a59fa327a7c3f35eb2a4c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035416"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610343"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
-V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], položka je pojmenovaný odkaz na jeden nebo více souborů. Položky obsahují metadat – například názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru *Microsoft.Build.CommonTypes.xsd*.  
+V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], položka je pojmenovaný odkaz na jeden nebo více souborů. Položky obsahují metadat – například názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru *Microsoft.Build.CommonTypes.xsd*.
 
-## <a name="common-items"></a>Společné položky  
- Následuje seznam všechny společné položky projektu.  
+## <a name="common-items"></a>Společné položky
+ Následuje seznam všechny společné položky projektu.
 
-### <a name="reference"></a>Odkaz  
- Představuje odkaz na sestavení (spravované) v projektu.  
+### <a name="reference"></a>Odkaz
+ Představuje odkaz na sestavení (spravované) v projektu.
 
-|Název metadat položky|Popis|  
-|---------------|-----------------|  
-|HintPath|Volitelný řetězec. Relativní nebo absolutní cesta k sestavení.|  
-|Název|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|  
-|FusionName|Volitelný řetězec. Určuje jednoduchý nebo silné sloučeném názvu pro položku.<br /><br /> Když tento atribut je k dispozici, můžete ušetřit čas, protože není potřeba otevřít získat sloučeném názvu souboru sestavení.|  
-|SpecificVersion|Nepovinný datový typ boolean. Určuje, zda by se měla odkazovat pouze verze ve sloučeném názvu.|  
-|Aliasy|Volitelný řetězec. Všechny aliasy pro odkaz.|  
-|Soukromé|Nepovinný datový typ boolean. Určuje, zda by měl být odkaz zkopírován do výstupní složky. Tento atribut odpovídá **Kopírovat místně** vlastnost odkazu, který je v integrovaném vývojovém prostředí sady Visual Studio.|  
+|Název metadat položky|Popis|
+|---------------|-----------------|
+|HintPath|Volitelný řetězec. Relativní nebo absolutní cesta k sestavení.|
+|Název|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|
+|FusionName|Volitelný řetězec. Určuje jednoduchý nebo silné sloučeném názvu pro položku.<br /><br /> Když tento atribut je k dispozici, můžete ušetřit čas, protože není potřeba otevřít získat sloučeném názvu souboru sestavení.|
+|SpecificVersion|Nepovinný datový typ boolean. Určuje, zda by se měla odkazovat pouze verze ve sloučeném názvu.|
+|Aliasy|Volitelný řetězec. Všechny aliasy pro odkaz.|
+|Soukromé|Nepovinný datový typ boolean. Určuje, zda by měl být odkaz zkopírován do výstupní složky. Tento atribut odpovídá **Kopírovat místně** vlastnost odkazu, který je v integrovaném vývojovém prostředí sady Visual Studio.|
 
-### <a name="comreference"></a>COMReference  
- Představuje komponentu modelu COM (nespravovaného) odkaz v projektu.  
+### <a name="comreference"></a>COMReference
+ Představuje komponentu modelu COM (nespravovaného) odkaz v projektu.
 
-|Název metadat položky|Popis|  
-|---------------|-----------------|  
-|Název|Volitelný řetězec. Zobrazovaný název součásti.|  
-|Guid|Volitelný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|  
-|VersionMajor|Volitelný řetězec. Hlavní část čísla verze komponenty. Například "5" Pokud celé číslo verze je "5.46."|  
-|VersionMinor|Volitelný řetězec. Dílčí část čísla verze komponenty. Například "46" Pokud celé číslo verze je "5.46."|  
-|LCID|Volitelný řetězec. Identifikátor národního prostředí pro komponentu.|  
-|WrapperTool|Volitelný řetězec. Název nástroj obálky, který je použit na komponenty, například "tlbimp".|  
-|Izolovaný režim|Nepovinný datový typ boolean. Určuje, zda je součást komponenty bez registrace.|  
+|Název metadat položky|Popis|
+|---------------|-----------------|
+|Název|Volitelný řetězec. Zobrazovaný název součásti.|
+|Guid|Volitelný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Volitelný řetězec. Hlavní část čísla verze komponenty. Například "5" Pokud celé číslo verze je "5.46."|
+|VersionMinor|Volitelný řetězec. Dílčí část čísla verze komponenty. Například "46" Pokud celé číslo verze je "5.46."|
+|LCID|Volitelný řetězec. Identifikátor národního prostředí pro komponentu.|
+|WrapperTool|Volitelný řetězec. Název nástroj obálky, který je použit na komponenty, například "tlbimp".|
+|Izolovaný režim|Nepovinný datový typ boolean. Určuje, zda je součást komponenty bez registrace.|
 
-### <a name="comfilereference"></a>COMFileReference  
- Představuje seznam knihovny typů, které do cílové ResolvedComreference informačního kanálu.  
+### <a name="comfilereference"></a>COMFileReference
+ Představuje seznam knihovny typů, které do cílové ResolvedComreference informačního kanálu.
 
-|Název metadat položky|Popis|  
-|---------------|-----------------|  
-|WrapperTool|Volitelný řetězec. Název nástroj obálky, který je použit na komponenty, například "tlbimp".|  
+|Název metadat položky|Popis|
+|---------------|-----------------|
+|WrapperTool|Volitelný řetězec. Název nástroj obálky, který je použit na komponenty, například "tlbimp".|
 
-### <a name="nativereference"></a>NativeReference  
- Představuje nativní soubor manifestu nebo odkaz na tento soubor.  
+### <a name="nativereference"></a>NativeReference
+ Představuje nativní soubor manifestu nebo odkaz na tento soubor.
 
-|Název metadat položky|Popis|  
-|---------------|-----------------|  
-|Název|Povinný řetězec. Základní název souboru manifestu.|  
-|HintPath|Povinný řetězec. Relativní cesta souboru manifestu.|  
+|Název metadat položky|Popis|
+|---------------|-----------------|
+|Název|Povinný řetězec. Základní název souboru manifestu.|
+|HintPath|Povinný řetězec. Relativní cesta souboru manifestu.|
 
-### <a name="projectreference"></a>ProjectReference  
- Představuje odkaz na jiný projekt.  
+### <a name="projectreference"></a>ProjectReference
+ Představuje odkaz na jiný projekt.
 
-|Název metadat položky|Popis|  
-|---------------|-----------------|  
-|Název|Volitelný řetězec. Zobrazovaný název odkazu.|  
-|Projekt|Volitelný řetězec. Identifikátor GUID pro odkaz ve formuláři {12345678-1234-1234-1234-1234567891234}.|  
-|Balíček|Volitelný řetězec. Cesta souboru projektu, který se odkazuje.|  
+|Název metadat položky|Popis|
+|---------------|-----------------|
+|Název|Volitelný řetězec. Zobrazovaný název odkazu.|
+|Project|Volitelný řetězec. Identifikátor GUID pro odkaz ve formuláři {12345678-1234-1234-1234-1234567891234}.|
+|Balíček|Volitelný řetězec. Cesta souboru projektu, který se odkazuje.|
 |ReferenceOutputAssembly|Nepovinný datový typ boolean. Pokud nastavena na `false`, neobsahuje výstup Odkazovaný projekt jako [odkaz](#Reference) tohoto projektu, ale přesto se zajistí, že jiný projekt sestavení před tímto. Výchozí hodnota je `true`.|
 
-### <a name="compile"></a>Kompilace  
- Představuje zdrojové soubory pro kompilátor.  
+### <a name="compile"></a>Kompilace
+ Představuje zdrojové soubory pro kompilátor.
 
 
 | Název metadat položky | Popis |
@@ -90,8 +90,8 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 | Viditelné | Nepovinný datový typ boolean. Určuje, zda se zobrazí soubor v **Průzkumníka řešení** v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Volitelný řetězec. Určuje, jestli se má zkopírovat soubor do výstupního adresáře. Hodnoty jsou:<br /><br /> 1.  Nikdy<br />2.  Vždy<br />3.  PreserveNewest |
 
-### <a name="embeddedresource"></a>EmbeddedResource  
- Představuje prostředky mají být vloženy do generovaného sestavení.  
+### <a name="embeddedresource"></a>EmbeddedResource
+ Představuje prostředky mají být vloženy do generovaného sestavení.
 
 
 | Název metadat položky | Popis |
@@ -105,8 +105,8 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 | CopyToOutputDirectory | Volitelný řetězec. Určuje, jestli se má zkopírovat soubor do výstupního adresáře. Hodnoty jsou:<br /><br /> 1.  Nikdy<br />2.  Vždy<br />3.  PreserveNewest |
 | LogicalName | Povinný řetězec. Logický název vloženého zdroje. |
 
-### <a name="content"></a>Obsah  
- Představuje soubory, které nejsou kompilovány do projektu, ale může vloženy nebo publikovány společně s jeho.  
+### <a name="content"></a>Obsah
+ Představuje soubory, které nejsou kompilovány do projektu, ale může vloženy nebo publikovány společně s jeho.
 
 
 | Název metadat položky | Popis |
@@ -121,8 +121,8 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 | Viditelné | Nepovinný datový typ boolean. Určuje, zda se zobrazí soubor v **Průzkumníka řešení** v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Volitelný řetězec. Určuje, jestli se má zkopírovat soubor do výstupního adresáře. Hodnoty jsou:<br /><br /> 1.  Nikdy<br />2.  Vždy<br />3.  PreserveNewest |
 
-### <a name="none"></a>Žádná  
- Představuje soubory, které by se neměly nijak podílet v procesu sestavení.  
+### <a name="none"></a>Žádná
+ Představuje soubory, které by se neměly nijak podílet v procesu sestavení.
 
 
 | Název metadat položky | Popis |
@@ -135,14 +135,14 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 | Viditelné | Nepovinný datový typ boolean. Určuje, zda se zobrazí soubor v **Průzkumníka řešení** v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Volitelný řetězec. Určuje, jestli se má zkopírovat soubor do výstupního adresáře. Hodnoty jsou:<br /><br /> 1.  Nikdy<br />2.  Vždy<br />3.  PreserveNewest |
 
-### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
- Představuje základní manifest aplikace pro sestavení a obsahuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] informace o zabezpečení nasazení.  
+### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
+ Představuje základní manifest aplikace pro sestavení a obsahuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] informace o zabezpečení nasazení.
 
-### <a name="codeanalysisimport"></a>CodeAnalysisImport  
- Představuje projekt FxCop pro import.  
+### <a name="codeanalysisimport"></a>CodeAnalysisImport
+ Představuje projekt FxCop pro import.
 
-### <a name="import"></a>Import  
- Představuje sestavení, jejichž jmenné prostory by měly být naimportovány podle [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilátoru.  
+### <a name="import"></a>Import
+ Představuje sestavení, jejichž jmenné prostory by měly být naimportovány podle [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilátoru.
 
-## <a name="see-also"></a>Viz také:  
- [Obecné vlastnosti projektu nástroje MSBuild](../msbuild/common-msbuild-project-properties.md)
+## <a name="see-also"></a>Viz také:
+- [Obecné vlastnosti projektu nástroje MSBuild](../msbuild/common-msbuild-project-properties.md)

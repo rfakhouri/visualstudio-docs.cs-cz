@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922118"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645482"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Možnosti, textový editor, C/C++, formátování
 
@@ -42,7 +42,7 @@ Tato stránka obsahuje možnosti formátování příkazů a bloků, jako je typ
 
 ### <a name="configuring-clangformat-options"></a>Konfigurace možností ClangFormat
 
-V sadě Visual Studio 2017 verze 15.7 nebo novější je standardně povolená podporu pro ClangFormat. Můžete vybrat, které tyto běžné konvence formátování se mají použít na všechny projekty: Kompilátor LLVM, Google, chromu, Mozilla nebo komponenty WebKit. Můžete také vytvořit definici vlastního formátu souboru .clang-format nebo _clang-format. Pokud se tento soubor nachází ve složce projektu, Visual Studio používá k formátování všechny soubory zdrojového kódu v této složce a jejích podsložkách. 
+V sadě Visual Studio 2017 verze 15.7 nebo novější je standardně povolená podporu pro ClangFormat. Můžete vybrat, které tyto běžné konvence formátování se mají použít na všechny projekty: Kompilátor LLVM, Google, chromu, Mozilla nebo komponenty WebKit. Můžete také vytvořit definici vlastního formátu souboru .clang-format nebo _clang-format. Pokud se tento soubor nachází ve složce projektu, Visual Studio používá k formátování všechny soubory zdrojového kódu v této složce a jejích podsložkách.
 
 Ve výchozím nastavení sady Visual Studio clangformat.exe běží na pozadí použije formátování při psaní. Můžete také zadat pouze pro ji spustit ručně vyvolat příkazy formátování **formátovat dokument (Ctrl + K, Ctrl + D)** nebo **formátovat výběr (Ctrl + K, Ctrl + F)**.
 

@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010347"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623005"
 ---
 # <a name="tooltaskextension-base-class"></a>Tooltaskextension – základní třída
-Dědí celou řadu úloh <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která dědí z <xref:Microsoft.Build.Utilities.ToolTask> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Tento řetězec dědičnosti přidá několik parametrů do úlohy, které jsou odvozeny z nich. Tyto parametry jsou uvedeny v tomto dokumentu.  
+Dědí celou řadu úloh <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která dědí z <xref:Microsoft.Build.Utilities.ToolTask> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Tento řetězec dědičnosti přidá několik parametrů do úlohy, které jsou odvozeny z nich. Tyto parametry jsou uvedeny v tomto dokumentu.
 
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry základní třídy.  
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry základní třídy.
 
 
 | Parametr | Popis |
@@ -48,6 +48,6 @@ Dědí celou řadu úloh <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída,
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Volitelné `bool` parametru.<br /><br /> Pokud je nastavena na `true`, tato úloha vytvoří dávkový soubor pro příkazový řádek a spustí pomocí procesor příkazu namísto provádění příkazu přímo. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Volitelné `bool` parametru.<br /><br /> Pokud je nastavena na `true`, tato úloha provede uzlu při provádění svých úloh. |
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Úlohy](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)

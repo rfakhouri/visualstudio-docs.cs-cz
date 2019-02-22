@@ -8,49 +8,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46c9061163b36b6d75bb7e6d8a9b8631ce1ea01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b2be1ac0818f7efd31fb30981e50eff5e42df7af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070679"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634783"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace nativní služby a shromažďování podrobných dat časování pomocí příkazového řádku profileru
-Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci nativní (C/C++), služby a shromažďování podrobných dat časování.  
+Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci nativní (C/C++), služby a shromažďování podrobných dat časování.
 
 > [!NOTE]
->  Metodou instrumentace nelze Profilovat službu, je-li nelze po spuštění počítače restartovat službu, například Služba spouštěná pouze spolu s operačním systémem.  
-> 
+>  Metodou instrumentace nelze Profilovat službu, je-li nelze po spuštění počítače restartovat službu, například Služba spouštěná pouze spolu s operačním systémem.
+>
 >  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
- 
- Pro shromáždění podrobných časových údajů z nativní služby pomocí metody instrumentace, použijete [VSInstr.exe](../profiling/vsinstr.md) Nástroj generuje instrumentovanou verzi komponenty. Pak nahradíte neinstrumentovanou verzi služby instrumentovanou verzí, a ujistěte se, že je služba nastavena na Manuální spuštění. Potom spusťte profiler.  
 
- Když je služba spuštěna, data o časování jsou automaticky shromažďována do datového souboru. Můžete pozastavit a obnovit sběr dat. během relace profilování.  
+ Pro shromáždění podrobných časových údajů z nativní služby pomocí metody instrumentace, použijete [VSInstr.exe](../profiling/vsinstr.md) Nástroj generuje instrumentovanou verzi komponenty. Pak nahradíte neinstrumentovanou verzi služby instrumentovanou verzí, a ujistěte se, že je služba nastavena na Manuální spuštění. Potom spusťte profiler.
 
- Chcete-li ukončit relaci profilování, vypněte službu a explicitně vypněte profiler.  
+ Když je služba spuštěna, data o časování jsou automaticky shromažďována do datového souboru. Můžete pozastavit a obnovit sběr dat. během relace profilování.
 
-## <a name="start-the-application-with-the-profiler"></a>Spuštění aplikace s profilerem  
+ Chcete-li ukončit relaci profilování, vypněte službu a explicitně vypněte profiler.
 
-#### <a name="to-start-profiling-a-native-service"></a>Spuštění profilování nativní služby  
+## <a name="start-the-application-with-the-profiler"></a>Spuštění aplikace s profilerem
 
-1. Otevřete okno příkazového řádku.  
+#### <a name="to-start-profiling-a-native-service"></a>Spuštění profilování nativní služby
 
-2. Použití **VSInstr** Nástroj generuje instrumentovanou verzi binárního souboru služby.  
+1. Otevřete okno příkazového řádku.
 
-3. Nahraďte původní binární soubor instrumentovanou verzí. Ve správci řízení služeb Windows Ujistěte se, že služby Typ spouštění je nastaven na ručně.  
+2. Použití **VSInstr** Nástroj generuje instrumentovanou verzi binárního souboru služby.
 
-4. Spusťte profiler. Zadejte:  
+3. Nahraďte původní binární soubor instrumentovanou verzí. Ve správci řízení služeb Windows Ujistěte se, že služby Typ spouštění je nastaven na ručně.
 
-    **Nástroj VSPerfCmd** [/start](../profiling/start.md) **: trasování**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]    
+4. Spusťte profiler. Zadejte:
 
-   - **/Start:trace** možnost inicializuje profiler.  
+    **Nástroj VSPerfCmd** [/start](../profiling/start.md) **: trasování**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
 
-   - **/Output:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění dat profilování (. *Vsp*) soubor.  
+   - **/Start:trace** možnost inicializuje profiler.
 
-     Můžete použít některý z těchto možností s **/start:trace** možnost.  
+   - **/Output:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění dat profilování (. *Vsp*) soubor.
+
+     Můžete použít některý z těchto možností s **/start:trace** možnost.
 
    > [!NOTE]
-   >  **/User** a **/crosssession** možnosti jsou obvykle vyžadovány pro aplikace ASP.NET.  
+   >  **/User** a **/crosssession** možnosti jsou obvykle vyžadovány pro aplikace ASP.NET.
 
    | Možnost | Popis |
    | - | - |
@@ -64,34 +64,34 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
    | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Určuje událost trasování událostí pro Windows (ETW) má být shromážděn během profilování. Události trasování událostí pro Windows jsou shromážděny v samostatném (. *ETL*) soubor. |
 
 
-5. Spusťte službu ze Správce řízení služeb.  
+5. Spusťte službu ze Správce řízení služeb.
 
-## <a name="control-data-collection"></a>Řízení shromažďování dat  
- Pokud je služba spuštěna, můžete použít *VSPerfCmd.exe* možnosti spuštění a zastavení zápisu dat do datového souboru profilování. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování služby.  
+## <a name="control-data-collection"></a>Řízení shromažďování dat
+ Pokud je služba spuštěna, můžete použít *VSPerfCmd.exe* možnosti spuštění a zastavení zápisu dat do datového souboru profilování. Řízení sběru dat umožňuje shromažďovat data pro určitou část provádění programu, například spouštění či ukončování služby.
 
-#### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
+#### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
--   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.  
+-   Následující páry **VSPerfCmd** možností spouští a zastavují sběr dat. Každou možnost zadejte na samostatný příkazový řádek. Sběr dat lze zapnout a vypnout několikrát.
 
-    |Možnost|Popis|  
-    |------------|-----------------|  
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Spustí (**globalon**) nebo zastaví (**/globaloff**) sběr dat pro všechny procesy.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) sběr dat pro proces určený identifikátorem procesu (`PID`).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Spustí (**/threadon**) nebo zastaví (**/threadoff**) sběr dat pro vlákno určené pomocí ID vlákna (`TID`).|  
+    |Možnost|Popis|
+    |------------|-----------------|
+    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Spustí (**globalon**) nebo zastaví (**/globaloff**) sběr dat pro všechny procesy.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) sběr dat pro proces určený identifikátorem procesu (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Spustí (**/threadon**) nebo zastaví (**/threadoff**) sběr dat pro vlákno určené pomocí ID vlákna (`TID`).|
 
-## <a name="end-the-profiling-session"></a>Ukončit relaci profilování  
- Chcete-li ukončit relaci profilování, zastavte službu, která je spuštěna instrumentovaná komponenta a následně zavolat **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) možnost profiler vypne a uzavře soubor dat profilování.  
+## <a name="end-the-profiling-session"></a>Ukončit relaci profilování
+ Chcete-li ukončit relaci profilování, zastavte službu, která je spuštěna instrumentovaná komponenta a následně zavolat **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) možnost profiler vypne a uzavře soubor dat profilování.
 
-#### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování  
+#### <a name="to-end-a-profiling-session"></a>Chcete-li ukončit relaci profilování
 
-1.  Zastavte službu ze Správce řízení služeb.  
+1.  Zastavte službu ze Správce řízení služeb.
 
-2.  Vypněte profiler. Typ:  
+2.  Vypněte profiler. Typ:
 
-     **/ Shutdown VSPerfCmd**  
+     **/ Shutdown VSPerfCmd**
 
-3.  Nahraďte instrumentovaný modul původní. V případě potřeby znovu nakonfigurujte typ spouštění služby.  
+3.  Nahraďte instrumentovaný modul původní. V případě potřeby znovu nakonfigurujte typ spouštění služby.
 
-## <a name="see-also"></a>Viz také:  
- [Profil služby](../profiling/command-line-profiling-of-services.md)   
- [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)
+## <a name="see-also"></a>Viz také:
+- [Profil služby](../profiling/command-line-profiling-of-services.md)
+- [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)

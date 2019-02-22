@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c680e1faf7a2a70f7763b55e5fa521d94bb819e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a353f9fc3605d1f2d26248b3ce907fb76b947c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941364"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596461"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-Určuje, zda `this` ukazatel odkazuje na datový člen s vícenásobnou dědičnost.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_isMultipleInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Ukazatel `BOOL` , která určuje, zda `this` ukazatel odkazuje na datový člen s vícenásobnou dědičnost.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Určuje, zda `this` ukazatel odkazuje na datový člen s vícenásobnou dědičnost.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_isMultipleInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Ukazatel `BOOL` , která určuje, zda `this` ukazatel odkazuje na datový člen s vícenásobnou dědičnost.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

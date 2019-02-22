@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919271"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596735"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Ladění nebo zakázání kódu projektu v Návrháři XAML
 
@@ -88,7 +88,7 @@ Když kód projektu je zakázaný, sada Visual Studio zobrazí zástupné symbol
 ## <a name="control-display-options"></a>Možnosti zobrazení ovládacího prvku
 
 > [!NOTE]
-> **Možnosti zobrazení ovládání** je dostupná jenom pro aplikace univerzální platformy Windows, které se zaměřují Windows 10 Fall Creators Update (sestavení 16299) nebo novější. **Možnosti zobrazení ovládacího prvku** funkce je k dispozici v sadě Visual Studio 2017 verze 15.9 nebo vyšší. 
+> **Možnosti zobrazení ovládání** je dostupná jenom pro aplikace univerzální platformy Windows, které se zaměřují Windows 10 Fall Creators Update (sestavení 16299) nebo novější. **Možnosti zobrazení ovládacího prvku** funkce je k dispozici v sadě Visual Studio 2017 verze 15.9 nebo vyšší.
 
 V Návrháři XAML můžete změnit možnosti zobrazení ovládacího prvku můžete zobrazit jenom ovládacích prvků platformy ze sady Windows SDK. Toto může vylepšit spolehlivost tohoto návrháře XAML.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020d631405586227d91fd06fb1794ab5554d1075
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226907"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613580"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Získá příznak, který určuje, zda je funkce Představujeme virtuální funkce.
@@ -31,7 +31,8 @@ HRESULT get_intro ( 
 ```
 
 #### <a name="parameters"></a>Parametry
-`pRetVal`  
+`pRetVal`
+
 [out] Vrátí `TRUE` Pokud je funkce Úvod virtuální; v opačném případě vrátí `FALSE`.
 
 ## <a name="return-value"></a>Návratová hodnota
@@ -61,4 +62,4 @@ Obě `A::f1` a `B::f1` jsou virtuální funkce, ale `A::f1` Úvod je virtuální
 |Verze:|V7.0 DIA SDK|
 
 ## <a name="see-also"></a>Viz také
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618234"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Je platforma pro vytváření aplikací. Tento modul, který se také nazývá MSBuild, obsahuje schéma XML souboru projektu, který určuje, jak platforma sestavení zpracuje a vytvoří software. Visual Studio používá MSBuild, ale není závislé na Visual Studio. Vyvoláním *msbuild.exe* v souboru projektu nebo řešení můžete organizovat a vytvářet produkty v prostředích, kde není nainstalovaná sada Visual Studio.
@@ -183,6 +183,6 @@ Další informace najdete v tématu [cílení na více verzí](../msbuild/msbuil
 | [Další zdroje informací](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Uvádí komunitu a prostředky podpory pro další informace o nástroji MSBuild. |
 
 ## <a name="reference"></a>Odkaz
- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md) odkazy na témata, která obsahují referenční informace.
+- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md) odkazy na témata, která obsahují referenční informace.
 
- [Glosář](msbuild-glossary.md) definuje společné termíny MSBuild.
+- [Glosář](msbuild-glossary.md) definuje společné termíny MSBuild.

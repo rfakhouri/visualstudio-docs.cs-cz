@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ce12ce3497e47e302233d739a11b4d0e527c40
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82ada6ac52a9eacbd8ec0dee3940a9231564d79a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034165"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639359"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
-Získá příznak, který určuje, zda obsahuje funkci k využívání [setjmp](/cpp/c-runtime-library/reference/setjmp) příkazu (spárované s [longjmp](/cpp/c-runtime-library/reference/longjmp) příkazu, vytvářejí C-style způsob zpracování výjimek).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_hasSetJump(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pFlag`  
- [out] Vrátí `TRUE` pokud obsahuje funkce `setjmp` příkazu; v opačném případě vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Získá příznak, který určuje, zda obsahuje funkci k využívání [setjmp](/cpp/c-runtime-library/reference/setjmp) příkazu (spárované s [longjmp](/cpp/c-runtime-library/reference/longjmp) příkazu, vytvářejí C-style způsob zpracování výjimek).
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_hasSetJump(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pFlag`
+
+[out] Vrátí `TRUE` pokud obsahuje funkce `setjmp` příkazu; v opačném případě vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="requirements"></a>Požadavky  
-  
-|Požadavek|Popis|  
-|-----------------|-----------------|  
-|Záhlaví:|dia2.h|  
-|Verze:|Ve verzi 8.0 DIA SDK|  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
- [longjmp](/cpp/c-runtime-library/reference/longjmp)   
- [setjmp](/cpp/c-runtime-library/reference/setjmp)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="requirements"></a>Požadavky
+
+|Požadavek|Popis|
+|-----------------|-----------------|
+|Záhlaví:|dia2.h|
+|Verze:|Ve verzi 8.0 DIA SDK|
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)
+- [longjmp](/cpp/c-runtime-library/reference/longjmp)
+- [setjmp](/cpp/c-runtime-library/reference/setjmp)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fa54b0a0931c5bbefd7efb3a86d668f6cb7c64
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853063"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600960"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Sestavování více projektů současně pomocí nástroje MSBuild
 Nástroj MSBuild lze použít pro rychlejší sestavení více projektů tak, že budou tyto projekty spuštěny paralelně. Pro paralelní spuštění sestavení je možné na počítači s více jádry nebo s více procesory použít následující nastavení:
@@ -70,6 +70,6 @@ Následuje příklad, na základě *cílů microsoft.common.targets*, o tom, jak
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Použití více procesorů k sestavení projektů](../msbuild/using-multiple-processors-to-build-projects.md)  
-[Zápis více procesorů protokolovacích](../msbuild/writing-multi-processor-aware-loggers.md)  
-[Ladění blogu paralelismu sestavení C++](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [Použití více procesorů k sestavení projektů](../msbuild/using-multiple-processors-to-build-projects.md)
+- [Zápis více procesorů protokolovacích](../msbuild/writing-multi-processor-aware-loggers.md)
+- [Ladění blogu paralelismu sestavení C++](http://go.microsoft.com/fwlink/?LinkId=251457)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe3e959f9e34dfbc757789a5461a920125eb10e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970319"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606313"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadata položek v dávkování cíle
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost provádět analýzu závislostí na vstupy a výstupy cíle sestavení. Pokud je zjištěno, že vstupy nebo výstupy cíle jsou aktuální, cíl se přeskočí a bude pokračovat sestavení. `Target` použití elementů `Inputs` a `Outputs` atributů zadejte položky, které chcete zkontrolovat během analýzu závislostí.
@@ -66,7 +66,7 @@ Následující příklad obsahuje seznam položek s názvem `Res` , který je ro
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Postupy: Přírůstkové sestavování](../msbuild/how-to-build-incrementally.md)  
-[Dávkování](../msbuild/msbuild-batching.md)  
-[Target – element (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Metadata položek v dávkování úloh](../msbuild/item-metadata-in-task-batching.md)
+- [Postupy: Přírůstkové sestavování](../msbuild/how-to-build-incrementally.md)
+- [Dávkování](../msbuild/msbuild-batching.md)
+- [Target – element (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Metadata položek v dávkování úloh](../msbuild/item-metadata-in-task-batching.md)

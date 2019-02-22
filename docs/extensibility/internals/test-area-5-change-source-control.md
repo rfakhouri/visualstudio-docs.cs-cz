@@ -11,40 +11,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e34e919d912af09e1265ea5326189d4f3e7b89
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935940"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599646"
 ---
 # <a name="test-area-5-change-source-control"></a>Testovací oblast 5: Změnit správu zdrojového kódu
-Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o změnou správy zdrojových kódů prostřednictvím **změnit správu zdrojových kódů** příkazu.  
+Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o změnou správy zdrojových kódů prostřednictvím **změnit správu zdrojových kódů** příkazu.
 
- **Změna správy zdrojového kódu** příkaz poskytuje čtyři základní funkce pro uživatele:  
+ **Změna správy zdrojového kódu** příkaz poskytuje čtyři základní funkce pro uživatele:
 
-- **Vázání:**  
+- **Vázání:**
 
-   Umožňuje uživateli vytvořit nebo obnovit zdrojový ovládací prvek propojení mezi řešení nebo projektu a úložiště verzí.  
+   Umožňuje uživateli vytvořit nebo obnovit zdrojový ovládací prvek propojení mezi řešení nebo projektu a úložiště verzí.
 
-- **Zrušení vazby:**  
+- **Zrušení vazby:**
 
-   Odebere projekt či řešení ze správy zdrojového kódu na základě jednotlivých připojení.  
+   Odebere projekt či řešení ze správy zdrojového kódu na základě jednotlivých připojení.
 
-- **Připojení/odpojení:**  
+- **Připojení/odpojení:**
 
-  Přepíná připojen nebo offline stav řízené řešení, které jsou obsaženy v oblasti 3. Další informace najdete v tématu [testovací oblast 3: Podívejte se na / rezervace](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Přepíná připojen nebo offline stav řízené řešení, které jsou obsaženy v oblasti 3. Další informace najdete v tématu [testovací oblast 3: Podívejte se na / rezervace](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).
 
-## <a name="command-menu-access"></a>Přístup do příkazu nabídky  
- Následující [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí nabídky Cesta se používá v testovacích procesech.  
+## <a name="command-menu-access"></a>Přístup do příkazu nabídky
+ Následující [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí nabídky Cesta se používá v testovacích procesech.
 
- Změnit správu zdrojových kódů:**souboru**, **správy zdrojového kódu**, **Změna správy zdrojového kódu**.  
+ Změnit správu zdrojových kódů:**souboru**, **správy zdrojového kódu**, **Změna správy zdrojového kódu**.
 
-## <a name="test-cases"></a>Testovací případy  
- Toto jsou pro konkrétní testovací případy **změnit správu zdrojových kódů** příkaz Testovací oblast.  
+## <a name="test-cases"></a>Testovací případy
+ Toto jsou pro konkrétní testovací případy **změnit správu zdrojových kódů** příkaz Testovací oblast.
 
-### <a name="case-5a-bind"></a>Případu 5a: Vytvoření vazby  
- Vazba umožňuje uživateli přidat informace o řízení zdrojového kódu pro vybrané projekty a řešení. Obvykle bude uživatel vyzván k identifikaci projektu ve správě zdrojového kódu, ke kterému jde přidat. Uživatele nelze vytvořit nový projekt ve správě zdrojového kódu jako součást této operace (kontrastu u přidat do správy zdrojového kódu).  
+### <a name="case-5a-bind"></a>Případu 5a: Vytvoření vazby
+ Vazba umožňuje uživateli přidat informace o řízení zdrojového kódu pro vybrané projekty a řešení. Obvykle bude uživatel vyzván k identifikaci projektu ve správě zdrojového kódu, ke kterému jde přidat. Uživatele nelze vytvořit nový projekt ve správě zdrojového kódu jako součást této operace (kontrastu u přidat do správy zdrojového kódu).
 
 
 | Akce | Testovací kroky | Chcete-li ověřit očekávané výsledky |
@@ -55,23 +55,23 @@ Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o 
 | Vytvoření vazby řešení, které se nikdy pod správou zdrojových kódů | 1.  Vytvořte prázdnou složku ve správě zdrojového kódu.<br />2.  Vytvoření projektu klienta.<br />3.  Otevřít **změnit správu zdrojových kódů** dialogové okno (**souboru**, **správy zdrojových kódů**, **změnit správu zdrojových kódů**).<br />4.  Vytvoření vazby řešení na prázdné místo ve správě zdrojového kódu.<br />5.  Klikněte na tlačítko **OK** zavřete **změnit správu zdrojových kódů** dialogové okno.<br />6.  Klikněte na tlačítko **pokračovat s těmito vazbami** v potvrzovacím dialogovém okně.<br />7.  Klikněte na tlačítko **OK** v dialogovém okně upozornění, pokud se zobrazí. | Přidání řešení do správy zdrojového kódu.<br /><br /> Řešení a projektu jsou rezervovány. |
 | Zrušení vazby | 1.  Vytvoření projektu.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Otevření dialogu změnit správu zdrojových kódů.<br />4.  Odpojit vše.<br />5.  Klikněte na tlačítko **OK** tlačítka zavřete dialogové okno. Pokud tento krok úspěšný, pokračujte dalším krokem.<br />6.  Znovu otevřít **změnit správu zdrojových kódů** dialogové okno.<br />7.  Vytvořit vazbu na nesouvisejících umístění.<br />8.  Klikněte na tlačítko **zrušit**. | `Result from Step 5:`<br /><br /> Řešení již není pod správou zdrojových kódů<br /><br /> `Result from Step 8:`<br /><br /> Řešení je stále není v kategorii Správa zdrojového kódu. |
 
-### <a name="case-5b-unbind"></a>Případu 5b: Zrušení vazby  
- Zrušení vazby odebere zdrojového kódu informace o řízení z projektů a jejich řešení. Ovlivněné projekty a řešení jsou založeny na výběru uživatele i jak byly přidány do správy zdrojového kódu.  
+### <a name="case-5b-unbind"></a>Případu 5b: Zrušení vazby
+ Zrušení vazby odebere zdrojového kódu informace o řízení z projektů a jejich řešení. Ovlivněné projekty a řešení jsou založeny na výběru uživatele i jak byly přidány do správy zdrojového kódu.
 
-|Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
-|------------|----------------|--------------------------------|  
-|Odpojit řešení obsahující jeden systému souborů nebo místní služby IIS webový projekt a jeden klientský projekt|1.  Vytvořte systém souborů nebo místní projekt webové služby IIS.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Přidání nového projektu klienta do řešení.<br />4.  Pokud se zobrazí výzva, přijměte zkontrolujte z řešení.<br />5.  Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />6.  Klikněte na tlačítko **odpojit**.<br />7.  Kliknutím na **OK** zavřete dialogové okno.<br />8.  Pokuste se podívejte se na řešení, projektů, položky řešení, položky projektu.|Řešení a projekty nejsou pod správou zdrojových kódů.<br /><br /> Příkazy nabídky ovládací prvek zdroje se nezobrazují.|  
-|Zrušit odpojení|1.  Vytvoření projektu.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />4.  Klikněte na tlačítko **odpojit všechny**.<br />5.  Klikněte na tlačítko **zrušit**.|Řešení je pod správou zdrojových kódů.|  
+|Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|
+|------------|----------------|--------------------------------|
+|Odpojit řešení obsahující jeden systému souborů nebo místní služby IIS webový projekt a jeden klientský projekt|1.  Vytvořte systém souborů nebo místní projekt webové služby IIS.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Přidání nového projektu klienta do řešení.<br />4.  Pokud se zobrazí výzva, přijměte zkontrolujte z řešení.<br />5.  Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />6.  Klikněte na tlačítko **odpojit**.<br />7.  Kliknutím na **OK** zavřete dialogové okno.<br />8.  Pokuste se podívejte se na řešení, projektů, položky řešení, položky projektu.|Řešení a projekty nejsou pod správou zdrojových kódů.<br /><br /> Příkazy nabídky ovládací prvek zdroje se nezobrazují.|
+|Zrušit odpojení|1.  Vytvoření projektu.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />4.  Klikněte na tlačítko **odpojit všechny**.<br />5.  Klikněte na tlačítko **zrušit**.|Řešení je pod správou zdrojových kódů.|
 
-### <a name="case-5c-rebind"></a>Případ 5c: obnovení vazby  
- Obnovení vazby je jednoduše kombinací zrušit vazbu a vazby – proces obnovení vazby projektu/řešení, které dříve bylo pod správou zdrojových kódů a nevázaného.  
+### <a name="case-5c-rebind"></a>Případ 5c: obnovení vazby
+ Obnovení vazby je jednoduše kombinací zrušit vazbu a vazby – proces obnovení vazby projektu/řešení, které dříve bylo pod správou zdrojových kódů a nevázaného.
 
-|Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  
-|------------|----------------|--------------------------------|  
-|Rebind řešení a projekty bez zavření **změnit správu zdrojových kódů** dialogové okno|1.  Vytvoření projektu.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />4.  Klikněte na tlačítko **odpojit**.<br />5.  Vyberte všechny řádky.<br />6.  Klikněte na tlačítko **svázat**.<br />7.  Klikněte na tlačítko **OK** zavřete **změnit správu zdrojových kódů** dialogové okno.<br />8.  Pokud se zobrazí výzva, přijměte checkout.|Řešení a projektu jsou pod správou zdrojových kódů.|  
-|Znovu připojit projekt pouze bez zavření **změnit správu zdrojových kódů** dialogové okno|1.  Vytvoření projektu.<br />2.  Přidat do zdrojového ovládacího prvku pomocí pouze projekt (Soubor -> zdroje ovládacího prvku -> Přidat vybrané projekty do správy zdrojového kódu.<br />3.  Otevření dialogu změnit správu zdrojových kódů.<br />4.  Nejprve zrušte vazbu jenom projektu.<br />5.  Vytvořit vazbu jenom projektu.|Řešení zůstane nespravovaný.<br /><br /> Projekt zůstává řízené.|  
-|Rebind řešení pouze bez zavření **změnit správu zdrojových kódů** dialogové okno|1.  Vytvoření projektu.<br />2.  Přidejte pouze řešení do zdrojového ovládacího prvku pomocí (**souboru**, **správy zdrojových kódů**, **přidat vybrané projekty do správy zdrojových kódů**.<br />3.  Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />4.  Nejprve zrušte vazbu jenom řešení (nezavírejte **změnit správu zdrojových kódů** dialogové okno.)<br />5.  Vytvořit vazbu jenom řešení.<br />6.  Kliknutím na **OK** zavřete dialogové okno.<br />7.  Podívejte se na řešení a položky řešení (pokud existuje)|Řešení zůstane řízené.<br /><br /> Projekt zůstává nespravovaný.|  
-|Rebind řešení nebo projektu pouze pokud ve stejném adresáři|1.  Vytvoření projektu.<br />2.  Přidat pouze projekt do zdrojového ovládacího prvku pomocí (**souboru**, **správy zdrojových kódů**, **přidat vybrané projekty do správy zdrojových kódů**.<br />3.  Zavřete řešení.<br />4.  Vytvořte nové řešení s alespoň dva projekty.<br />5.  Přidáte řešení do správy zdrojového kódu.<br />6.  Přidáte projekt vytvořený v kroku 1 ze správy zdrojového kódu.<br />7.  Pokud se zobrazí výzva, přijměte checkout řešení.<br />8.  Vrátit se změnami celé řešení.<br />9. Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />10. Přidání projektu (z kroku 6) vyberte a klikněte na tlačítko **zrušit vazbu**.<br />11. Kliknutím na **OK** zavřete dialogové okno.<br />12. Pokud se zobrazí výzva, přijměte rezervace.<br />13. Znovu otevřít **změnit správu zdrojových kódů** dialogové okno.<br />14. Přidání projektu (z kroku 6) vyberte a klikněte na tlačítko **svázat**.<br />15. Vyberte původní umístění.|Řešení a projekty zůstanou řízené.|  
+|Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|
+|------------|----------------|--------------------------------|
+|Rebind řešení a projekty bez zavření **změnit správu zdrojových kódů** dialogové okno|1.  Vytvoření projektu.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />4.  Klikněte na tlačítko **odpojit**.<br />5.  Vyberte všechny řádky.<br />6.  Klikněte na tlačítko **svázat**.<br />7.  Klikněte na tlačítko **OK** zavřete **změnit správu zdrojových kódů** dialogové okno.<br />8.  Pokud se zobrazí výzva, přijměte checkout.|Řešení a projektu jsou pod správou zdrojových kódů.|
+|Znovu připojit projekt pouze bez zavření **změnit správu zdrojových kódů** dialogové okno|1.  Vytvoření projektu.<br />2.  Přidat do zdrojového ovládacího prvku pomocí pouze projekt (Soubor -> zdroje ovládacího prvku -> Přidat vybrané projekty do správy zdrojového kódu.<br />3.  Otevření dialogu změnit správu zdrojových kódů.<br />4.  Nejprve zrušte vazbu jenom projektu.<br />5.  Vytvořit vazbu jenom projektu.|Řešení zůstane nespravovaný.<br /><br /> Projekt zůstává řízené.|
+|Rebind řešení pouze bez zavření **změnit správu zdrojových kódů** dialogové okno|1.  Vytvoření projektu.<br />2.  Přidejte pouze řešení do zdrojového ovládacího prvku pomocí (**souboru**, **správy zdrojových kódů**, **přidat vybrané projekty do správy zdrojových kódů**.<br />3.  Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />4.  Nejprve zrušte vazbu jenom řešení (nezavírejte **změnit správu zdrojových kódů** dialogové okno.)<br />5.  Vytvořit vazbu jenom řešení.<br />6.  Kliknutím na **OK** zavřete dialogové okno.<br />7.  Podívejte se na řešení a položky řešení (pokud existuje)|Řešení zůstane řízené.<br /><br /> Projekt zůstává nespravovaný.|
+|Rebind řešení nebo projektu pouze pokud ve stejném adresáři|1.  Vytvoření projektu.<br />2.  Přidat pouze projekt do zdrojového ovládacího prvku pomocí (**souboru**, **správy zdrojových kódů**, **přidat vybrané projekty do správy zdrojových kódů**.<br />3.  Zavřete řešení.<br />4.  Vytvořte nové řešení s alespoň dva projekty.<br />5.  Přidáte řešení do správy zdrojového kódu.<br />6.  Přidáte projekt vytvořený v kroku 1 ze správy zdrojového kódu.<br />7.  Pokud se zobrazí výzva, přijměte checkout řešení.<br />8.  Vrátit se změnami celé řešení.<br />9. Otevřít **změnit správu zdrojových kódů** dialogové okno.<br />10. Přidání projektu (z kroku 6) vyberte a klikněte na tlačítko **zrušit vazbu**.<br />11. Kliknutím na **OK** zavřete dialogové okno.<br />12. Pokud se zobrazí výzva, přijměte rezervace.<br />13. Znovu otevřít **změnit správu zdrojových kódů** dialogové okno.<br />14. Přidání projektu (z kroku 6) vyberte a klikněte na tlačítko **svázat**.<br />15. Vyberte původní umístění.|Řešení a projekty zůstanou řízené.|
 
-## <a name="see-also"></a>Viz také  
- [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+## <a name="see-also"></a>Viz také
+- [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

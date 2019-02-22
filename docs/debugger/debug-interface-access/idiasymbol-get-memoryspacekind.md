@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc48e56cb9a053b1ce85cf4b719de82292d8524d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb6fca61dfaf4577f4818c84e1570739c6d63149
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925406"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611448"
 ---
 # <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
-Načte druh místo paměti.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_memorySpaceKind(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Ukazatel `DWORD` , který obsahuje typ místo paměti.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Načte druh místo paměti.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_memorySpaceKind(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Ukazatel `DWORD` , který obsahuje typ místo paměti.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

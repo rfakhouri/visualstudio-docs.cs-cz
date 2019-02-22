@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1357c598b2a30f390372ed9630b044c951172531
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: ef9759c5a422a0b67cdb9e8f7dde565b732958dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853713"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610252"
 ---
 # <a name="exec-task"></a>Exec – úloha
 Spustí zadaný program nebo příkaz pomocí zadaných argumentů.
@@ -71,5 +71,5 @@ V následujícím příkladu `Exec` úkolů ke spuštění příkazu.
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Úlohy](../msbuild/msbuild-tasks.md)  
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

@@ -12,38 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bacf5699e1ccccf186b09bcd50c82cba203919fc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070081"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634705"
 ---
 # <a name="span-class"></a>span třídy
-Definuje fáze aplikace.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-class span;  
-```  
-  
-## <a name="members"></a>Členové  
-  
-### <a name="public-constructors"></a>Veřejné konstruktory  
-  
-|Název|Popis|  
-|----------|-----------------|  
-|[span::span – konstruktor](../profiling/span-span-constructor.md)|Inicializuje novou instanci třídy `span` třídy.|  
-|[span::~span – destruktor](../profiling/span-tilde-span-destructor.md)|Odstraní `span` objektu a jeho prostředky.|  
-  
-## <a name="inheritance-hierarchy"></a>Hierarchie dědičnosti  
- `span`  
-  
-## <a name="requirements"></a>Požadavky  
- **Záhlaví:** *cvmarkersobj.h*  
-  
- **Namespace:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Viz také:  
- [Diagnostic – obor názvů](../profiling/diagnostic-namespace.md)
+Definuje fáze aplikace.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+class span;
+```
+
+## <a name="members"></a>Členové
+
+### <a name="public-constructors"></a>Veřejné konstruktory
+
+|Název|Popis|
+|----------|-----------------|
+|[span::span – konstruktor](../profiling/span-span-constructor.md)|Inicializuje novou instanci třídy `span` třídy.|
+|[span::~span – destruktor](../profiling/span-tilde-span-destructor.md)|Odstraní `span` objektu a jeho prostředky.|
+
+## <a name="inheritance-hierarchy"></a>Hierarchie dědičnosti
+ `span`
+
+## <a name="requirements"></a>Požadavky
+ **Záhlaví:** *cvmarkersobj.h*
+
+ **Namespace:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Viz také:
+- [Diagnostic – obor názvů](../profiling/diagnostic-namespace.md)

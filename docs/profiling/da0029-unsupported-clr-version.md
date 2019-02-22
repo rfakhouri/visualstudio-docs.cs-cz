@@ -15,28 +15,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16782fcf3c8f859edd8363c43741f598d5929188
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007010"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635537"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nepodporovaná verze CLR
 
-|||  
-|-|-|  
-|Id pravidla|DA0029|  
-|Kategorie|Použití nástroje pro profilaci|  
-|Metoda profilace|Profilace z příkazového řádku|  
-|Zpráva|Během shromažďování byla zjištěna nepodporovaná verze CLR. Nemůže vyřešit správně spravované symboly.|  
-|Typ pravidla|Informace.|  
+|||
+|-|-|
+|Id pravidla|DA0029|
+|Kategorie|Použití nástroje pro profilaci|
+|Metoda profilace|Profilace z příkazového řádku|
+|Zpráva|Během shromažďování byla zjištěna nepodporovaná verze CLR. Nemůže vyřešit správně spravované symboly.|
+|Typ pravidla|Informace.|
 
-## <a name="cause"></a>Příčina  
- Pokoušíte se profil aplikace, která se používá [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] , která není podporována nástrojů pro profilaci.  
+## <a name="cause"></a>příčina
+ Pokoušíte se profil aplikace, která se používá [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] , která není podporována nástrojů pro profilaci.
 
-## <a name="rule-description"></a>Popis pravidla  
- K tomuto upozornění dochází, protože nástrojů pro profilaci, nebude možné vyřešit symboly pro spravovaný kód spuštěný v aplikaci. Nástroje pro profilaci nemůže vyřešit symboly spravovaného kódu pro aplikace, které jsou spuštěny [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
+## <a name="rule-description"></a>Popis pravidla
+ K tomuto upozornění dochází, protože nástrojů pro profilaci, nebude možné vyřešit symboly pro spravovaný kód spuštěný v aplikaci. Nástroje pro profilaci nemůže vyřešit symboly spravovaného kódu pro aplikace, které jsou spuštěny [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Žádné

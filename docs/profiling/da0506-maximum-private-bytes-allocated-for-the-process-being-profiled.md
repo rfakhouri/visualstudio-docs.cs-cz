@@ -12,37 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09066fc66570f0de700959509327476f6fc4665
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd3ae6b45d910723f04cf8b828cbce62f8fdc1a7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961699"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612215"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Maximum nesdílených bajtů přidělených pro profilovaný proces
 
-|||  
-|-|-|  
-|Id pravidla|DA0506|  
-|Kategorie|Sledování prostředků|  
-|Metoda profilace|Všechny|  
-|Zpráva|Tato informace byla shromážděna pouze pro informaci. Čítač nesdílených bajtů procesu měří virtuální paměť přidělené procesem, který profilujete. Hlášená hodnota je maximum pozorované přes všechny intervaly měření.|  
-|Typ pravidla|Informace o|  
+|||
+|-|-|
+|Id pravidla|DA0506|
+|Kategorie|Sledování prostředků|
+|Metoda profilace|Všechny|
+|Zpráva|Tato informace byla shromážděna pouze pro informaci. Čítač nesdílených bajtů procesu měří virtuální paměť přidělené procesem, který profilujete. Hlášená hodnota je maximum pozorované přes všechny intervaly měření.|
+|Typ pravidla|Informace o|
 
- Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.  
+ Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.
 
-## <a name="rule-description"></a>Popis pravidla  
- Tato zpráva znamená maximální velikost virtuální paměti, který má proces nyní přidělenu v bajtech (Nesdílené bajty). Nesdílené bajty představuje virtuální paměti umístění, které byly přiděleny procesem, který je přístupný pouze tím, že běží uvnitř procesu vlákna.  
+## <a name="rule-description"></a>Popis pravidla
+ Tato zpráva znamená maximální velikost virtuální paměti, který má proces nyní přidělenu v bajtech (Nesdílené bajty). Nesdílené bajty představuje virtuální paměti umístění, které byly přiděleny procesem, který je přístupný pouze tím, že běží uvnitř procesu vlákna.
 
- Pro 32bitové procesy spuštěné na počítači 32bitové horní limit části privátní adresní prostor procesu je 2 GB. Použití [3 GB](http://go.microsoft.com/fwlink/?LinkId=177831) přepínač Boot.ini 32bitové procesy můžete získat až 3 GB virtuální paměti. 32bitový proces, který běží na 64bitovém počítači můžete získat až 4 GB přidělené virtuální paměti.  
+ Pro 32bitové procesy spuštěné na počítači 32bitové horní limit části privátní adresní prostor procesu je 2 GB. Použití [3 GB](http://go.microsoft.com/fwlink/?LinkId=177831) přepínač Boot.ini 32bitové procesy můžete získat až 3 GB virtuální paměti. 32bitový proces, který běží na 64bitovém počítači můžete získat až 4 GB přidělené virtuální paměti.
 
- 64bitový proces, který běží na 64bitovém počítači můžete získat až do 8 TB privátní virtuální paměti.  
+ 64bitový proces, který běží na 64bitovém počítači můžete získat až do 8 TB privátní virtuální paměti.
 
- Hlášená hodnota je maximum přes všechny intervaly měření, ve kterých byl aktivní profilovaný proces.  
+ Hlášená hodnota je maximum přes všechny intervaly měření, ve kterých byl aktivní profilovaný proces.
 
- Další informace o procesu adresních prostorů, naleznete v tématu [virtuální adresní prostor](http://go.microsoft.com/fwlink/?LinkId=177832) v dokumentaci k Windows správy paměti.  
+ Další informace o procesu adresních prostorů, naleznete v tématu [virtuální adresní prostor](http://go.microsoft.com/fwlink/?LinkId=177832) v dokumentaci k Windows správy paměti.
 
-## <a name="how-to-use-rule-data"></a>Jak používat data pravidla  
- Použijte hlášená hodnota k porovnání výkonu různých verzí nebo sestavení programu a porozumět výkonu aplikace v různých scénářích profilování.  
+## <a name="how-to-use-rule-data"></a>Jak používat data pravidla
+ Použijte hlášená hodnota k porovnání výkonu různých verzí nebo sestavení programu a porozumět výkonu aplikace v různých scénářích profilování.
 
  Maximální hodnota soukromých bajtů procesu, který se blíží limitu jak velký adresní prostor procesu můžou růst může vést ke výjimky paměti. Další informace najdete v tématu [zkoumání problémů s pamětí](http://go.microsoft.com/fwlink/?LinkID=177833) v MSDN Magazine.

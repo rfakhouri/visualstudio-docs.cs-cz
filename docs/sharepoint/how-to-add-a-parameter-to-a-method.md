@@ -17,45 +17,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d55c345d9cd0e57d7af2ed359cf4bd9a4f06cd9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1bec6daa92d4e5b58b97c47a45fa32c410aced5a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868115"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619950"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Postupy: Přidání parametru k metodě
-  Parametr použijte k předávání informací do metody nebo který vrací informace z metody. Všechny metody musí mít aspoň jeden parametr. Další informace o tom, jak navrhnout parametr pro podporu typ metody, kterou chcete vytvořit, naleznete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
- Při přidání parametru k metodě Visual Studio přidá prvek parametru do XML souboru modelu ve vašem projektu. Další informace o atributech elementu Parameter najdete v tématu [parametr](http://go.microsoft.com/fwlink/?LinkId=169284).  
-  
-### <a name="to-add-a-parameter-to-a-method"></a>Přidání parametru do metody  
-  
-1.  Přidejte metodu k entitě.  
-  
-2.  V panelu nabídky zvolte **zobrazení** > **ostatní Windows** > **podrobnosti metody služby BDC**.  
-  
-     **Podrobnosti metody služby BDC** otevře se okno. Další informace najdete v tématu [přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md).  
-  
-3.  V **podrobnosti metody služby BDC** okna, rozbalte uzel metodu a poté rozbalte **parametry** uzlu.  
-  
-4.  V **přidat parametr** klikněte na položku **vytvořit parametr**.  
-  
-     Nový parametr se zobrazí pod **parametry** uzlu.  
-  
-5.  V panelu nabídky zvolte **zobrazení** > **okno vlastností**.  
-  
-6.  V **vlastnosti** okno, nastaveno **název** vlastnost na libovolný název, který dává smysl. Pokud metoda vrátí zákazníků, můžete například pojmenovat metodu **GetCustomers**.  
-  
-7.  V **podrobnosti metody služby BDC** okno, otevřete seznam, který se zobrazí pro směr parametru a klikněte na tlačítko **v**, **InOut**, **si**, nebo **vrátit**.  
-  
-     Další informace o směr zvolit typ metody, kterou vytváříte, naleznete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
-8.  Změnit typ popisovače parametru. Další informace najdete v tématu [jak: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
-  
+  Parametr použijte k předávání informací do metody nebo který vrací informace z metody. Všechny metody musí mít aspoň jeden parametr. Další informace o tom, jak navrhnout parametr pro podporu typ metody, kterou chcete vytvořit, naleznete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
+
+ Při přidání parametru k metodě Visual Studio přidá prvek parametru do XML souboru modelu ve vašem projektu. Další informace o atributech elementu Parameter najdete v tématu [parametr](http://go.microsoft.com/fwlink/?LinkId=169284).
+
+### <a name="to-add-a-parameter-to-a-method"></a>Přidání parametru do metody
+
+1.  Přidejte metodu k entitě.
+
+2.  V panelu nabídky zvolte **zobrazení** > **ostatní Windows** > **podrobnosti metody služby BDC**.
+
+     **Podrobnosti metody služby BDC** otevře se okno. Další informace najdete v tématu [přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md).
+
+3.  V **podrobnosti metody služby BDC** okna, rozbalte uzel metodu a poté rozbalte **parametry** uzlu.
+
+4.  V **přidat parametr** klikněte na položku **vytvořit parametr**.
+
+     Nový parametr se zobrazí pod **parametry** uzlu.
+
+5.  V panelu nabídky zvolte **zobrazení** > **okno vlastností**.
+
+6.  V **vlastnosti** okno, nastaveno **název** vlastnost na libovolný název, který dává smysl. Pokud metoda vrátí zákazníků, můžete například pojmenovat metodu **GetCustomers**.
+
+7.  V **podrobnosti metody služby BDC** okno, otevřete seznam, který se zobrazí pro směr parametru a klikněte na tlačítko **v**, **InOut**, **si**, nebo **vrátit**.
+
+     Další informace o směr zvolit typ metody, kterou vytváříte, naleznete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
+
+8.  Změnit typ popisovače parametru. Další informace najdete v tématu [jak: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+
 ## <a name="see-also"></a>Viz také:
- [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Postupy: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)   
- [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)  
+- [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Postupy: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)
+- [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)

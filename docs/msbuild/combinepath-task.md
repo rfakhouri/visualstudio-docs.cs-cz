@@ -16,28 +16,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d7dd3a6ecfbaf86c607a5dd42dde1b9fe10e2c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b73ddd4715d3abd29f87d7ef38a269d821733ba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936435"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610278"
 ---
 # <a name="combinepath-task"></a>CombinePath – úloha
-Zkombinuje zadané cesty do jedné cesty.  
-  
-## <a name="task-parameters"></a>Parametry úlohy  
- Následující tabulka popisuje parametry [CombinePath – úloha](../msbuild/combinepath-task.md).  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`BasePath`|Vyžaduje `String` parametru.<br /><br /> Základní cesta ke sloučení s jiné cesty. Může být relativní cestu, absolutní cestu nebo prázdné.|  
-|`Paths`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Seznam jednotlivých cesty ke sloučení s BasePath k vytvoření kombinované cesty. Cesty může být relativní nebo absolutní.|  
-|`CombinedPaths`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Kombinovanou cestu, který je vytvořen pomocí této úlohy.|  
-  
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Viz také:  
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+Zkombinuje zadané cesty do jedné cesty.
+
+## <a name="task-parameters"></a>Parametry úlohy
+ Následující tabulka popisuje parametry [CombinePath – úloha](../msbuild/combinepath-task.md).
+
+|Parametr|Popis|
+|---------------|-----------------|
+|`BasePath`|Vyžaduje `String` parametru.<br /><br /> Základní cesta ke sloučení s jiné cesty. Může být relativní cestu, absolutní cestu nebo prázdné.|
+|`Paths`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Seznam jednotlivých cesty ke sloučení s BasePath k vytvoření kombinované cesty. Cesty může být relativní nebo absolutní.|
+|`CombinedPaths`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Kombinovanou cestu, který je vytvořen pomocí této úlohy.|
+
+## <a name="remarks"></a>Poznámky
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Viz také:
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

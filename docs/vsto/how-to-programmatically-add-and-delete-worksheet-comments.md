@@ -14,53 +14,53 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23b14cf662da3440aae2c7fc2d05e2ead5eabaa8
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0a9d174773493546a4d9cd8d7889c39945afafe6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869681"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636759"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Postupy: Programové přidávání a odstraňování komentářů v listech
-  Můžete programově přidávání a odstraňování komentářů v listech aplikace Microsoft Office Excel. Komentáře můžete přidávat pouze do jedné buňky, ne do více oblastí.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>Přidávání a odstraňování komentářů v projektu úrovni dokumentu  
- Následující příklady předpokládají, že se jednotlivé buňky <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek s názvem `dateComment` na listu s názvem `Sheet1`.  
-  
-### <a name="to-add-a-new-comment-to-a-named-range"></a>Chcete-li přidat nový komentář na pojmenované oblasti  
-  
-1.  Volání <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> metodu <xref:Microsoft.Office.Tools.Excel.NamedRange> řídit a zadejte komentář. Tento kód musí být umístěné ve `Sheet1` třídy.  
-  
+  Můžete programově přidávání a odstraňování komentářů v listech aplikace Microsoft Office Excel. Komentáře můžete přidávat pouze do jedné buňky, ne do více oblastí.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>Přidávání a odstraňování komentářů v projektu úrovni dokumentu
+ Následující příklady předpokládají, že se jednotlivé buňky <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek s názvem `dateComment` na listu s názvem `Sheet1`.
+
+### <a name="to-add-a-new-comment-to-a-named-range"></a>Chcete-li přidat nový komentář na pojmenované oblasti
+
+1.  Volání <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> metodu <xref:Microsoft.Office.Tools.Excel.NamedRange> řídit a zadejte komentář. Tento kód musí být umístěné ve `Sheet1` třídy.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#30)]
-     [!code-vb[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#30)]  
-  
-#### <a name="to-delete-a-comment-from-a-named-range"></a>Chcete-li odstranit komentář z pojmenované oblasti  
-  
-1.  Ověřte, zda existuje komentář na rozsahu a odstraňte ho. Tento kód musí být umístěné ve `Sheet1` třídy.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#30)]
+
+#### <a name="to-delete-a-comment-from-a-named-range"></a>Chcete-li odstranit komentář z pojmenované oblasti
+
+1.  Ověřte, zda existuje komentář na rozsahu a odstraňte ho. Tento kód musí být umístěné ve `Sheet1` třídy.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
-     [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]  
-  
-## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Přidávání a odstraňování komentářů v projektu doplňku VSTO  
- Následující příklady předpokládají, že se jednotlivé buňky <xref:Microsoft.Office.Interop.Excel.Range> s názvem `dateComment` na aktivním listu.  
-  
-### <a name="to-add-a-new-comment-to-an-excel-range"></a>Chcete-li přidat nový komentář k oblasti aplikace Excel  
-  
-1.  Volání <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> metodu <xref:Microsoft.Office.Interop.Excel.Range> a zadejte komentář.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
+
+## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Přidávání a odstraňování komentářů v projektu doplňku VSTO
+ Následující příklady předpokládají, že se jednotlivé buňky <xref:Microsoft.Office.Interop.Excel.Range> s názvem `dateComment` na aktivním listu.
+
+### <a name="to-add-a-new-comment-to-an-excel-range"></a>Chcete-li přidat nový komentář k oblasti aplikace Excel
+
+1.  Volání <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> metodu <xref:Microsoft.Office.Interop.Excel.Range> a zadejte komentář.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#20)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#20)]  
-  
-### <a name="to-delete-a-comment-from-an-excel-range"></a>Chcete-li odstranit komentář z oblasti aplikace Excel  
-  
-1.  Ověřte, zda existuje komentář na rozsahu a odstraňte ho.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#20)]
+
+### <a name="to-delete-a-comment-from-an-excel-range"></a>Chcete-li odstranit komentář z oblasti aplikace Excel
+
+1.  Ověřte, zda existuje komentář na rozsahu a odstraňte ho.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]  
-  
-## <a name="see-also"></a>Viz také:  
- [Práce s listy](../vsto/working-with-worksheets.md)   
- [Postupy: Zobrazování komentářů v listech prostřednictvím kódu programu](../vsto/how-to-programmatically-display-worksheet-comments.md)   
- [Namedrange – ovládací prvek](../vsto/namedrange-control.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
+
+## <a name="see-also"></a>Viz také:
+- [Práce s listy](../vsto/working-with-worksheets.md)
+- [Postupy: Zobrazování komentářů v listech prostřednictvím kódu programu](../vsto/how-to-programmatically-display-worksheet-comments.md)
+- [Namedrange – ovládací prvek](../vsto/namedrange-control.md)

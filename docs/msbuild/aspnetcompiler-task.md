@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4ac8eef753f656e008187a23a9d9e40a0be19f16
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853596"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602270"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler – úloha
 `AspNetCompiler` Úkolů zabalí *aspnet_compiler.exe*, nástroj pro předkompilaci [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikací.
@@ -69,5 +69,5 @@ Následující příklad kódu používá `AspNetCompiler` úloh předkompilovat
 ```
 
 ## <a name="see-also"></a>Viz také:
-* [Úlohy](../msbuild/msbuild-tasks.md)  
+* [Úlohy](../msbuild/msbuild-tasks.md)
 * [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

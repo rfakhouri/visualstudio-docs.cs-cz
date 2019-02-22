@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318521"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613268"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Určuje typy převodní rutina.
@@ -39,26 +39,19 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Elementy
-THUNK_ORDINAL_NOTYPE  
-Standardní převodní rutina.
+Standardní THUNK_ORDINAL_NOTYPE převodní rutina.
 
-THUNK_ORDINAL_ADJUSTOR  
-A `this` likvidátor převodní rutina.
+THUNK_ORDINAL_ADJUSTOR A `this` likvidátor převodní rutina.
 
-THUNK_ORDINAL_VCALL  
-Virtuální volání převodní rutina.
+Převodní rutina THUNK_ORDINAL_VCALL virtuální volání.
 
-THUNK_ORDINAL_PCODE  
-Převodní rutina P-code.
+Převodní rutina THUNK_ORDINAL_PCODE P-code.
 
-THUNK_ORDINAL_LOAD  
-Převodní rutina zatížení zpoždění.
+Převodní rutina zatížení THUNK_ORDINAL_LOAD zpoždění.
 
-THUNK_ORDINAL_TRAMP_INCREMENTAL  
-Převodní rutina přírůstkové trampoline (trampoline převodní rutina se používá k odraz volání z jednoho paměťového prostoru do jiného).
+Přírůstkové THUNK_ORDINAL_TRAMP_INCREMENTAL trampoline převodní rutina (trampoline převodní rutina se používá k odraz volání z jednoho paměťového prostoru do jiného).
 
-THUNK_ORDINAL_TRAMP_BRANCHISLAND  
-Převodní rutina trampoline bod větve.
+Převodní rutina trampoline bodu THUNK_ORDINAL_TRAMP_BRANCHISLAND větve.
 
 ## <a name="remarks"></a>Poznámky
 Během volání se vrátí hodnoty v tento výčet [idiasymbol::get_thunkordinal –](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) metody.
@@ -67,5 +60,5 @@ Během volání se vrátí hodnoty v tento výčet [idiasymbol::get_thunkordinal
 Záhlaví: cvconst.h
 
 ## <a name="see-also"></a>Viz také
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

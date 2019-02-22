@@ -12,37 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfb9968aac05c9bbe79de1d37b13eb03dd31714
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34954cd32b350a7c5f9c176deffd9943f8e05100
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972807"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641387"
 ---
 # <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
-Načte název souboru pro poslední chyba načtení.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_lastError (  
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pRetVal  
- [out] Vrátí řetězec, který obsahuje název souboru PDB přidružené k poslední chyba načtení.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Vrátí poslední kód chyby způsobené operace načtení. Vrátí `E_INVALIDARG` Pokud `pRetVal` parametr `NULL`.  
-  
-## <a name="example"></a>Příklad  
-  
-```C++  
-BSTR    fileName;  
-HRESULT errorCode = pSource->get_lastError( &fileName );  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+Načte název souboru pro poslední chyba načtení.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_lastError (
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pRetVal
+
+[out] Vrátí řetězec, který obsahuje název souboru PDB přidružené k poslední chyba načtení.
+
+## <a name="return-value"></a>Návratová hodnota
+ Vrátí poslední kód chyby způsobené operace načtení. Vrátí `E_INVALIDARG` Pokud `pRetVal` parametr `NULL`.
+
+## <a name="example"></a>Příklad
+
+```C++
+BSTR    fileName;
+HRESULT errorCode = pSource->get_lastError( &fileName );
+```
+
+## <a name="see-also"></a>Viz také
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

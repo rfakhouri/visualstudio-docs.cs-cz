@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853898"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621328"
 ---
 # <a name="how-to-build-incrementally"></a>Postupy: Přírůstkové sestavování
 Při sestavování velkých projektů, je důležité nejsou, která dříve vytvořená součásti, které jsou stále aktuální znovu sestavit. Pokud všechny cíle jsou sestaveny pokaždé, když každého sestavení bude trvat dlouhou dobu pro dokončení. Chcete-li povolit přírůstkové buildy (sestavení, ve kterém jen pro tyto cíle, které nejsou sestavené před nebo, zaměřuje jsou zastaralé, jsou znovu sestavit), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) můžete porovnat časová razítka vstupních souborů s časovými razítky výstupních souborů a zjistěte, jestli se má přeskočit, sestavení nebo částečně znovu sestavit cíl. Musí však být mapování 1: 1 mezi vstupy a výstupy. Použití transformací umožňující cíle k identifikaci této přímé mapování. Další informace o transformace, najdete v části [transformuje](../msbuild/msbuild-transforms.md).
@@ -38,12 +38,12 @@ Cíl může postupně sestavena, pokud jsou zadané vstupy a výstupy v souboru 
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] můžete porovnat časová razítka vstupních souborů s časovými razítky výstupních souborů a určit, jestli se má přeskočit, sestavení nebo částečně znovu sestavit cíl. V následujícím příkladu, pokud jakýkoli soubor v `@(CSFile)` seznam položek je novější než *hello.exe* souboru [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] spustí cíl; v opačném případě bude přeskočen:
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ Tento soubor projektu obsahuje i `Convert` a `Build` cíle. `GenerateContentFile
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Cíle](../msbuild/msbuild-targets.md)  
-[Target – element (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Transformace](../msbuild/msbuild-transforms.md)  
-[CSC – úloha](../msbuild/csc-task.md)  
-[Vbc – úloha](../msbuild/vbc-task.md)
+- [Cíle](../msbuild/msbuild-targets.md)
+- [Target – element (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Transformace](../msbuild/msbuild-transforms.md)
+- [CSC – úloha](../msbuild/csc-task.md)
+- [Vbc – úloha](../msbuild/vbc-task.md)

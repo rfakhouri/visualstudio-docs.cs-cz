@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd28e67a629fd9922ed1ac30d497c1bb8bbe9a56
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854041"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624903"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Linker sestavení) – úloha
-Al – úloha zabalí *AL.exe*, nástroj, který je distribuován spolu s [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Tento nástroj Linker sestavení se používá k vytvoření sestavení s manifestem z jednoho nebo více souborů, které jsou buď moduly nebo souborů prostředků. Kompilátory a vývojová prostředí už zadat tyto možnosti tak, aby byl často není potřeba přímo pomocí této úlohy. Linker sestavení je zvláště užitečná pro vývojáře, které by bylo potřeba vytvořte jedno sestavení z více souborů součástí, například ty, které může být vytvořen z jazyků vývoj. Tato úloha není možné sloučit moduly do jednoho sestavení souboru; jednotlivé moduly musí být stále distribuované a k dispozici v pořadí pro výsledné sestavení se načíst správně. Další informace o *AL.exe*, naleznete v tématu [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).  
+Al – úloha zabalí *AL.exe*, nástroj, který je distribuován spolu s [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Tento nástroj Linker sestavení se používá k vytvoření sestavení s manifestem z jednoho nebo více souborů, které jsou buď moduly nebo souborů prostředků. Kompilátory a vývojová prostředí už zadat tyto možnosti tak, aby byl často není potřeba přímo pomocí této úlohy. Linker sestavení je zvláště užitečná pro vývojáře, které by bylo potřeba vytvořte jedno sestavení z více souborů součástí, například ty, které může být vytvořen z jazyků vývoj. Tato úloha není možné sloučit moduly do jednoho sestavení souboru; jednotlivé moduly musí být stále distribuované a k dispozici v pořadí pro výsledné sestavení se načíst správně. Další informace o *AL.exe*, naleznete v tématu [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).
 
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `AL` úloh.  
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `AL` úloh.
 
 
 | Parametr | Popis |
@@ -69,30 +69,29 @@ Al – úloha zabalí *AL.exe*, nástroj, který je distribuován spolu s [!INCL
 | `Win32Icon` | Volitelné `String` parametru.<br /><br /> Vloží *.ico* soubor sestavení. *.Ico* souboru dává výstupnímu souboru požadovaný vzhled v Průzkumníku souborů. Tento parametr `/win32icon` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Resource` | Volitelné `String` parametru.<br /><br /> Vloží prostředek systému Win32 (*.res* soubor) do výstupního souboru. Další informace najdete v tématu v dokumentaci `/win32res` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker). |
 
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Poznámky
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Příklad  
- Následující příklad vytvoří sestavení s konkrétní možnosti.  
+## <a name="example"></a>Příklad
+ Následující příklad vytvoří sestavení s konkrétní možnosti.
 
-```xml  
-<AL  
-    EmbedResources="@(EmbeddedResource)"  
-    Culture="%(EmbeddedResource.Culture)"  
-    TemplateFile="@(IntermediateAssembly)"  
-    KeyContainer="$(KeyContainerName)"  
-    KeyFile="$(KeyOriginatorFile)"  
-    DelaySign="$(DelaySign)"  
+```xml
+<AL
+    EmbedResources="@(EmbeddedResource)"
+    Culture="%(EmbeddedResource.Culture)"
+    TemplateFile="@(IntermediateAssembly)"
+    KeyContainer="$(KeyContainerName)"
+    KeyFile="$(KeyOriginatorFile)"
+    DelaySign="$(DelaySign)"
 
-    OutputAssembly=  
-       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">  
+    OutputAssembly=
+       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">
 
-    <Output TaskParameter="OutputAssembly"  
-        ItemName="SatelliteAssemblies"/>  
-</AL>  
-```  
+    <Output TaskParameter="OutputAssembly"
+        ItemName="SatelliteAssemblies"/>
+</AL>
+```
 
-## <a name="see-also"></a>Viz také:  
-* [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>Viz také:
+* [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
 * [Úlohy](../msbuild/msbuild-tasks.md)
-

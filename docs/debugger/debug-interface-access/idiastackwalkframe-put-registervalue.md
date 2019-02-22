@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41b157e3448c4000ddd49dc31b97dc26b0a40561
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 440c7d19382b813b3f34451d7c177c6e8b57f16f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944407"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613229"
 ---
 # <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
-Nastaví hodnotu registru.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT put_registerValue (   
-   DWORD     index,  
-   ULONGLONG NewVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `index`  
- [in] Hodnota z [cv_hreg_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md) výčet určující k zápisu do registru.  
-  
- `NewVal`  
- [in] Nové hodnoty registru.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [CV_HREG_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md)
+Nastaví hodnotu registru.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT put_registerValue ( 
+   DWORD     index,
+   ULONGLONG NewVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `index`
+
+[in] Hodnota z [cv_hreg_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md) výčet určující k zápisu do registru.
+
+ `NewVal`
+
+[in] Nové hodnoty registru.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [CV_HREG_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md)

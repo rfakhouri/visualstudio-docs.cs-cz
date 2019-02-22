@@ -12,33 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb47eb0bb63ca7d617e98d372f691ab4d28fec4a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0008b7476290558c098b2241fde5c9b209933a0a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969246"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606755"
 ---
 # <a name="cvreleaseprovider-function"></a>Cvreleaseprovider – funkce
-Verze poskytovatele značek. Uvolňování poskytovatele značek neovlivní dříve vytvořené značky řady tohoto zprostředkovatele. Značky řady musí být verze samostatně voláním cvreleasemarkerseries –. Nepodařilo se uvolnit poskytovatele způsobí, že nevracení paměti.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C  
-HRESULT CvReleaseProvider(  
-   _In_ PCV_PROVIDER pProvider  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pProvider`  
- Kontext zprostředkovatele. Nemůže mít hodnotu NULL.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- S_OK při poskytovatele se úspěšně uvolnily nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
-  
-## <a name="requirements"></a>Požadavky  
- **Header:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)
+Verze poskytovatele značek. Uvolňování poskytovatele značek neovlivní dříve vytvořené značky řady tohoto zprostředkovatele. Značky řady musí být verze samostatně voláním cvreleasemarkerseries –. Nepodařilo se uvolnit poskytovatele způsobí, že nevracení paměti.
+
+## <a name="syntax"></a>Syntaxe
+
+```C
+HRESULT CvReleaseProvider(
+   _In_ PCV_PROVIDER pProvider
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pProvider` Kontext zprostředkovatele. Nemůže mít hodnotu NULL.
+
+## <a name="return-value"></a>Návratová hodnota
+ S_OK při poskytovatele se úspěšně uvolnily nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.
+
+## <a name="requirements"></a>Požadavky
+ **Header:** *cvmarkers.h*
+
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

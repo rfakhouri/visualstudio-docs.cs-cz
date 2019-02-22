@@ -12,47 +12,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a248eb2c275ad576921cfaad04ce85ccd46f780
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f342efce1c05e305a3e55d6372d1862b04b1197
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023756"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642245"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
-Načte symbol, který obsahuje token Zadaná metadata.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT findSymbolByToken (   
-   ULONG        token,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `token`  
- [in] Určuje token.  
-  
- `symtag`  
- [in] Typ symbolu, která se má najít. Hodnoty pocházejí ze [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) výčtu.  
-  
- `ppSymbol`  
- [out] Vrátí [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) načíst objekt představující symbol.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="example"></a>Příklad  
-  
-```C++  
-IDiaSymbol* pFunc;  
-pSession->findSymbolByToken( token, SymTagFunction, &pFunc );  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [Idiasession –](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)
+Načte symbol, který obsahuje token Zadaná metadata.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT findSymbolByToken ( 
+   ULONG        token,
+   SymTagEnum   symtag,
+   IDiaSymbol** ppSymbol
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `token`
+
+[in] Určuje token.
+
+ `symtag`
+
+[in] Typ symbolu, která se má najít. Hodnoty pocházejí ze [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) výčtu.
+
+ `ppSymbol`
+
+[out] Vrátí [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) načíst objekt představující symbol.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="example"></a>Příklad
+
+```C++
+IDiaSymbol* pFunc;
+pSession->findSymbolByToken( token, SymTagFunction, &pFunc );
+```
+
+## <a name="see-also"></a>Viz také
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)

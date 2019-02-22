@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 39b732a962f648f0c812f3f9d37df7dcf17296ce
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853440"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626606"
 ---
 # <a name="createproperty-task"></a>CreateProperty – úloha
 Naplní hodnoty předané vlastnosti. Díky tomu hodnoty zkopírovány z jedné vlastnosti nebo řetězec do druhého.
@@ -67,5 +67,5 @@ V následujícím příkladu `CreateProperty` úkolu k vytvoření `NewFile` vla
 Po spuštění projektu, hodnota `NewFile` vlastnost *Module1.vb*.
 
 ## <a name="see-also"></a>Viz také:
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)  
-[Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)

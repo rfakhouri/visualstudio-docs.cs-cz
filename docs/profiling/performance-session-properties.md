@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959418"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624968"
 ---
 # <a name="performance-session-properties"></a>Vlastnosti výkonnostní relace
 
@@ -38,7 +38,7 @@ Další informace naleznete v tématu:
 
 [Shromažďování dat o alokaci paměti a době platnosti objektů .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Postupy: Nastavení možností názvu datového souboru výkonu](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Postupy: Nastavení možností názvu datového souboru výkonu](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Spuštění
 
@@ -111,6 +111,6 @@ Další informace naleznete v tématu:
 
 ## <a name="see-also"></a>Viz také:
 
-[Přehledy](../profiling/overviews-performance-tools.md)  
-[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
-[Řízení shromažďování dat](../profiling/controlling-data-collection.md)
+[Přehledy](../profiling/overviews-performance-tools.md)
+[konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)
+[sběr dat řídit](../profiling/controlling-data-collection.md)

@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea60c8d7001b906bf9f994e2d48974fe0e2da1f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937363"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610447"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Postupy: Sestavování specifických cílů v řešení pomocí MSBuild.exe
-Můžete použít *MSBuild.exe* k sestavování specifických cílů konkrétní projekty v řešení.  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>K sestavení specifické cílem určitého projektu v řešení  
-  
-1.  Na příkazovém řádku zadejte `MSBuild.exe <SolutionName>.sln`, kde `<SolutionName>` odpovídá názvu souboru řešení, která obsahuje cíl, který chcete spustit.  
-  
+Můžete použít *MSBuild.exe* k sestavování specifických cílů konkrétní projekty v řešení.
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>K sestavení specifické cílem určitého projektu v řešení
+
+1.  Na příkazovém řádku zadejte `MSBuild.exe <SolutionName>.sln`, kde `<SolutionName>` odpovídá názvu souboru řešení, která obsahuje cíl, který chcete spustit.
+
 2. Zadejte cíl po `-target:` přepnout ve formátu \<ProjectName >:\<TargetName >. Pokud název projektu obsahuje některý ze znaků `%`, `$`, `@`, `;`, `.`, `(`, `)`, nebo `'`, nahraďte pomocí `_` v zadaném Název cíle.
-  
-## <a name="example"></a>Příklad  
- Následující příklad provede `Rebuild` cíl `NotInSlnFolder` projektu a potom provede `Clean` cíl `InSolutionFolder` projekt, který se nachází v *NewFolder* složku řešení.  
-  
+
+## <a name="example"></a>Příklad
+ Následující příklad provede `Rebuild` cíl `NotInSlnFolder` projektu a potom provede `Clean` cíl `InSolutionFolder` projekt, který se nachází v *NewFolder* složku řešení.
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ Pokud chcete zkontrolovat dostupné možnosti, můžete k tomu možnost ladění
 
 Nejdou sestavit pomocí této proměnné prostředí, pokud je třeba interní zobrazení. Toto nastavení může způsobit problémy sestavení projektů v řešení.
 
-## <a name="see-also"></a>Viz také:  
- [Odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md)   
- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Viz také:
+- [Odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md)
+- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)

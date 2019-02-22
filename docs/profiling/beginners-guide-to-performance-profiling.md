@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc7d75329e83345107cac18fa49267dc62f964d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cf5fb798bde008da1be3bc562ca0974d2ed916e0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316701"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634302"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Měřit výkon aplikace díky analýze využití procesoru
 Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze problémů s výkonem aplikace. V tomto postupu si ukážeme, jak používat kartu **Využití procesoru** v diagnostických nástrojích k získání dat o výkonu vaší aplikace. Diagnostické nástroje jsou podporované pro vývoj rozhraní .NET v sadě Visual Studio, včetně ASP.NET, nativního vývoje a vývoje v jazyce C++.
-  
+
 Když se ladicí program pozastaví, shromáždí nástroj **Využití procesoru** informace o funkcích spuštěných ve vaší aplikaci. Nástroj zobrazí seznam funkcí, které pracovaly, a nabídce graf s časovou osou, který můžete použít k podrobnému řešení konkrétních úseků vzorkovací relace.
 
 Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravovat diagnostické relace. Pokud potřebná data nezískáte nástrojem **Využití procesoru**, použijte [jiné nástroje pro profilaci](../profiling/profiling-feature-tour.md), které nabízejí různé druhy užitečných informací. V řadě případů může být kritickým bodem aplikace něco jiného než procesor, třeba paměť, vykreslování uživatelského rozhraní nebo dlouhá odezva síťového požadavku. Diagnostické centrum nabízí řadu dalších možností, jak data tohoto druhu zaznamenávat a analyzovat.
@@ -40,16 +40,16 @@ V tomto kurzu se naučíte:
 > [!div class="checklist"]
 > * Shromažďovat data o využití procesoru
 > * Analyzovat data o využití procesoru
-  
-## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů 
-  
+
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů
+
 1.  Otevřete projekt, který chcete v sadě Visual Studio ladit, a nastavte v aplikaci zarážku do bodu, kde chcete prověřit využití procesoru.
 
 2.  Druhou zarážku nastavte na konec funkce nebo oblasti kódu, kterou chcete analyzovat.
 
     > [!TIP]
     > Nastavením dvou zarážek omezíte shromažďování dat jenom na analyzovanou část kódu.
-  
+
 3.  Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
 4.  Na panelu nástrojů v nastavení **Vybrat nástroje** můžete vybrat, jestli chcete zobrazit [Využití procesoru](../profiling/Memory-Usage.md), **Využití paměti** nebo obojí. Pokud používáte Visual Studio Enterprise, můžete také povolit nebo zakázat nástroje IntelliTrace v **nástroje** > **možnosti** > **IntelliTrace**.
@@ -85,9 +85,9 @@ V tomto kurzu se naučíte:
      Profiler začne připravovat údaje o vlákně. Počkejte, až skončí.
 
      ![Příprava vláken v diagnostických nástrojích](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
-  
+
      V nástroji Využití procesoru se na kartě **Využití procesoru** zobrazí sestava.
-  
+
      ![Karta Využití procesoru v diagnostických nástrojích](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      Teď můžete začít analyzovat data.
@@ -105,7 +105,7 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
 
 2. V seznamu funkcí poklikejte na některou funkci aplikace, která pracuje nejvíce.
 
-    Když na ni poklikáte, otevře se v levém podokně zobrazení **Volající/volaný**. 
+    Když na ni poklikáte, otevře se v levém podokně zobrazení **Volající/volaný**.
 
     ![Zobrazení Volající/volaný v diagnostických nástrojích](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
@@ -118,22 +118,22 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
     > Vysoké hodnoty v **těle funkce** pravděpodobně znamenají kritické místo výkonu samotné funkce.
 
 3. Pokud se chcete podívat o úroveň výš a prohlédnout si pořadí volaných funkcí, vyberte nahoře v podokně z rozevíracího seznamu **Strom volání**.
- 
+
     Každé číslo na následujícím obrázku odpovídá některému kroku v postupu.
-  
+
     ![Strom volání v diagnostických nástrojích](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
-  
+
 |||
 |-|-|
-|![1. krok](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Nejvyšší uzel ve stromech volání Využití procesoru je fiktivní.|  
-|![2. krok](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Ve většině aplikací, ve kterých zakážete možnost [Zobrazit externí kód](#view-external-code), je v druhé úrovni uzel **[Externí kód]**, který obsahuje systémový kód a kód architektury, který spouští a zastavuje aplikaci, vykresluje uživatelské rozhraní, řídí plánování podprocesů a na nejnižší úrovni zajišťuje pro aplikaci další služby.|  
+|![1. krok](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Nejvyšší uzel ve stromech volání Využití procesoru je fiktivní.|
+|![2. krok](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Ve většině aplikací, ve kterých zakážete možnost [Zobrazit externí kód](#view-external-code), je v druhé úrovni uzel **[Externí kód]**, který obsahuje systémový kód a kód architektury, který spouští a zastavuje aplikaci, vykresluje uživatelské rozhraní, řídí plánování podprocesů a na nejnižší úrovni zajišťuje pro aplikaci další služby.|
 |![3. krok](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Uzlu druhé úrovně jsou podřízeny metody uživatelského kódu a asynchronní rutiny, které volá nebo vytváří systémový kód a kód architektury druhé úrovně.|
 |![4. krok](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Podřízené uzly metody obsahují jenom data pro volání nadřízené metody. Pokud zakážete **Zobrazit externí kód**, mohou metody aplikace obsahovat také uzel **[Externí kód]**.|
 
 Další informace k hodnotám ve sloupcích:
 
 - **Celkový čas procesoru**: Kolik práce vykonala funkce spolu se všemi dalšími funkcemi, které volala. Vysoké hodnoty znamenají, že tyto funkce patří k těm nejnáročnějším.
-  
+
 - **Vlastní čas procesoru**: Kolik práce vykonal kód v těle funkce po odečtení práce vykonané volanými funkcemi. Vysoké hodnoty **vlastního času procesoru** pravděpodobně odpovídají kritickému místu ve funkci.
 
 - **Moduly**: Název modulu, který funkci obsahuje, nebo počet modulů obsahujících funkce v uzlu [Externí kód].
@@ -141,13 +141,13 @@ Další informace k hodnotám ve sloupcích:
 ## <a name="view-external-code"></a>Zobrazit externí kód
 
 Externím kódem se rozumí funkce systémových komponent a komponent architektury, které jsou spouštěné vámi napsaným kódem. Externí kód zahrnuje funkce, které spouštějí a zastavují aplikaci, vykreslují uživatelské rozhraní, řídí dělení na podprocesy a na nejnižší úrovni zajišťuje pro aplikaci další služby. Externí kód vás většinou nebude zajímat, a proto nástroj Využití procesoru shromažďuje externí funkce metody uživatele do jednoho uzlu **[Externí kód]**.
-  
-Pokud se chcete podívat na cesty volání externího kódu, vyberte v seznamu **filtru zobrazení** možnost **Zobrazit externí kód** a pak zvolte **Použít**.  
-  
-![Filtr zobrazení s vybranou možností Zobrazit externí kód](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
-  
+
+Pokud se chcete podívat na cesty volání externího kódu, vyberte v seznamu **filtru zobrazení** možnost **Zobrazit externí kód** a pak zvolte **Použít**.
+
+![Filtr zobrazení s vybranou možností Zobrazit externí kód](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")
+
 Myslete na to, že řetězy volání externího kódu je většinou hluboko vnořené, takže šířka sloupce Název funkce může na většině počítačových monitorů – s výjimkou těch největších – přesáhnout šířku zobrazení. V takovém případě se názvy funkcí zobrazují jako **[...]**.
-  
+
 K nalezení hledaného uzlu použijte vyhledávací pole a pak použijte k zobrazení dat vodorovný posuvník.
 
 > [!TIP]
@@ -158,4 +158,4 @@ K nalezení hledaného uzlu použijte vyhledávací pole a pak použijte k zobra
 V tomto kurzu jste se naučili shromažďovat data o využití procesoru a analyzovat je. Pokud jste již dokončili [nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md), možná budete chtít získat rychlý přehled postupu k analýze využití paměti v aplikacích.
 
 > [!div class="nextstepaction"]
-> [Využití paměti profilu v sadě Visual Studio](../profiling/memory-usage.md) 
+> [Využití paměti profilu v sadě Visual Studio](../profiling/memory-usage.md)

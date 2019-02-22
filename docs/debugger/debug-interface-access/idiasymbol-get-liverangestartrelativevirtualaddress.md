@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ddf93be6779dc0fa2faf61d485e83b14f071e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b73839b4d9ee0482fc8248b5ebd9f5c61f63552a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034343"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639047"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-Vrátí začátek rozsahu adres, ve kterém je platná místního symbolu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
-   DWORD* address  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `address`  
- [out] Vrátí začátek rozsahu adres.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Relativní virtuální adresa vrátil je začátek rozsahu, ve kterém je platná symbolu.  
-  
+Vrátí začátek rozsahu adres, ve kterém je platná místního symbolu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_liveRangeStartRelativeVirtualAddress ( 
+   DWORD* address
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `address`
+
+[out] Vrátí začátek rozsahu adres.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Relativní virtuální adresa vrátil je začátek rozsahu, ve kterém je platná symbolu.
+
 > [!NOTE]
->  Kód chyby znamená, že symbol nemá informace o rozsahu za provozu.  
-  
-## <a name="remarks"></a>Poznámky  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
-  
- Knihovna: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Kód chyby znamená, že symbol nemá informace o rozsahu za provozu.
+
+## <a name="remarks"></a>Poznámky
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: Dia2.h
+
+ Knihovna: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

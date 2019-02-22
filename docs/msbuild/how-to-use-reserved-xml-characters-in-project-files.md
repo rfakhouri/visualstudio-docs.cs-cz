@@ -11,65 +11,65 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc679aea2d5f2877233b62482cb241b7bf12565
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924029"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603866"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Postupy: Použití vyhrazených znaků XML v souborech projektu
-Při vytváření souborů projektu, můžete potřebovat použít vyhrazené znaky jazyka XML, třeba v hodnotách vlastnosti nebo hodnoty parametrů úloh. Nicméně některé znaky vyhrazené musí nahradit odpovídajícími pojmenovaná entita, tak, aby soubor projektu může být analyzován.  
-  
-## <a name="use-reserved-characters"></a>Použití vyhrazených znaků  
- Následující tabulka popisuje vyhrazených znaků jazyka XML, které se musí nahradit odpovídajícími odpovídající pojmenovaná entita tak, aby soubor projektu může být analyzován.  
-  
-|Vyhrazené znaky|Pojmenovaná entita|  
-|------------------------|------------------|  
-|\<|&amp;lt;|  
-|>|&amp;gt;|  
-|&|&amp;amp;|  
-|"|&amp;quot;|  
-|'|&amp;Očekávaný|  
-  
-#### <a name="to-use-double-quotes-in-a-project-file"></a>Použití dvojitých uvozovek v souboru projektu  
-  
--   Nahraďte odpovídající entity s názvem dvojité uvozovky &amp;quot;. Například umístit dvojitých uvozovek `EXEFile` seznam položek, zadejte:  
-  
-    ```xml  
-    <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
-    ```  
-  
-## <a name="example"></a>Příklad  
- V následujícím příkladu kódu dvojité uvozovky jsou používány zvýrazněte název souboru ve zprávě, která je výstupní soubor projektu.  
-  
-```xml  
-<Project DefaultTargets="Compile"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-    <!-- Set the application name as a property -->  
-    <PropertyGroup>  
-        <appname>"HelloWorldCS"</appname>  
-    </PropertyGroup>  
-    <!-- Specify the inputs -->  
-    <ItemGroup>  
-        <CSFile Include = "consolehwcs1.cs" />  
-    </ItemGroup>  
-    <Target Name = "Compile">  
-        <!-- Run the Visual C# compilation using input  
-        files of type CSFile -->  
-        <Csc Sources = "@(CSFile)">  
-            <!-- Set the OutputAssembly attribute of the CSC task  
-            to the name of the executable file that is created -->  
-            <Output  
-                TaskParameter = "OutputAssembly"  
-                ItemName = "EXEFile"/>  
-        </Csc>  
-        <!-- Log the file name of the output file -->  
-        <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)    
- [MSBuild](../msbuild/msbuild.md)    
+Při vytváření souborů projektu, můžete potřebovat použít vyhrazené znaky jazyka XML, třeba v hodnotách vlastnosti nebo hodnoty parametrů úloh. Nicméně některé znaky vyhrazené musí nahradit odpovídajícími pojmenovaná entita, tak, aby soubor projektu může být analyzován.
+
+## <a name="use-reserved-characters"></a>Použití vyhrazených znaků
+ Následující tabulka popisuje vyhrazených znaků jazyka XML, které se musí nahradit odpovídajícími odpovídající pojmenovaná entita tak, aby soubor projektu může být analyzován.
+
+|Vyhrazené znaky|Pojmenovaná entita|
+|------------------------|------------------|
+|\<|&amp;lt;|
+|>|&amp;gt;|
+|&|&amp;amp;|
+|"|&amp;quot;|
+|'|&amp;Očekávaný|
+
+#### <a name="to-use-double-quotes-in-a-project-file"></a>Použití dvojitých uvozovek v souboru projektu
+
+-   Nahraďte odpovídající entity s názvem dvojité uvozovky &amp;quot;. Například umístit dvojitých uvozovek `EXEFile` seznam položek, zadejte:
+
+    ```xml
+    <Message Text="The output file is &quot;@(EXEFile)&quot;."/>
+    ```
+
+## <a name="example"></a>Příklad
+ V následujícím příkladu kódu dvojité uvozovky jsou používány zvýrazněte název souboru ve zprávě, která je výstupní soubor projektu.
+
+```xml
+<Project DefaultTargets="Compile"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+    <!-- Set the application name as a property -->
+    <PropertyGroup>
+        <appname>"HelloWorldCS"</appname>
+    </PropertyGroup>
+    <!-- Specify the inputs -->
+    <ItemGroup>
+        <CSFile Include = "consolehwcs1.cs" />
+    </ItemGroup>
+    <Target Name = "Compile">
+        <!-- Run the Visual C# compilation using input
+        files of type CSFile -->
+        <Csc Sources = "@(CSFile)">
+            <!-- Set the OutputAssembly attribute of the CSC task
+            to the name of the executable file that is created -->
+            <Output
+                TaskParameter = "OutputAssembly"
+                ItemName = "EXEFile"/>
+        </Csc>
+        <!-- Log the file name of the output file -->
+        <Message Text="The output file is &quot;@(EXEFile)&quot;."/>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

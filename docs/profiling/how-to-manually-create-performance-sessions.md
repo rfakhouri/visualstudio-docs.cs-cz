@@ -14,28 +14,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e283128d17d088ed9d90597ccde24bcb22470b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035611"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645222"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Postupy: Ruční vytváření výkonnostních relací
-Můžete ručně vytvořit relaci výkonu. Není nutné k otevření projektu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provedete to tak. Další informace najdete v tématu [konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md).  
-  
-### <a name="to-manually-create-a-performance-session"></a>Ručně vytvořte relaci výkonu  
-  
-1.  Na **ladění** nabídky, přejděte k **Profiler**, pak **prohlížeč výkonu**a potom klikněte na tlačítko **novou relaci výkonu**.  
-  
-     Prázdný výkonnostní relaci se přidá do **prohlížeč výkonu**.  
-  
-2.  Klikněte pravým tlačítkem na **cíle**a potom klikněte na tlačítko **přidat cílový binární**.  
-  
-3.  V **přidat cílový binární** dialogové okno, vyberte název souboru a pak klikněte na tlačítko **otevřít**.  
-  
-     Přidání nové binární soubor.  
-  
-## <a name="see-also"></a>Viz také:  
- [Prohlížeč výkonu](../profiling/performance-explorer.md)   
- [Začínáme](../profiling/getting-started-with-performance-tools.md)
+Můžete ručně vytvořit relaci výkonu. Není nutné k otevření projektu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provedete to tak. Další informace najdete v tématu [konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md).
+
+### <a name="to-manually-create-a-performance-session"></a>Ručně vytvořte relaci výkonu
+
+1.  Na **ladění** nabídky, přejděte k **Profiler**, pak **prohlížeč výkonu**a potom klikněte na tlačítko **novou relaci výkonu**.
+
+     Prázdný výkonnostní relaci se přidá do **prohlížeč výkonu**.
+
+2.  Klikněte pravým tlačítkem na **cíle**a potom klikněte na tlačítko **přidat cílový binární**.
+
+3.  V **přidat cílový binární** dialogové okno, vyberte název souboru a pak klikněte na tlačítko **otevřít**.
+
+     Přidání nové binární soubor.
+
+## <a name="see-also"></a>Viz také:
+- [Prohlížeč výkonu](../profiling/performance-explorer.md)
+- [Začínáme](../profiling/getting-started-with-performance-tools.md)

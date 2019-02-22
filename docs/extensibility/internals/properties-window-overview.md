@@ -10,44 +10,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38579bcfee3aa390d9135006b8fc57f7b4b06b0f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993300"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643675"
 ---
 # <a name="properties-window-overview"></a>Přehled okna Vlastnosti
-**Vlastnosti** okno se používá k zobrazení vlastností objektů vybraných v dva hlavní typy dostupné v systému windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou tyto dva typy systému windows:  
-  
--   Okna nástrojů, jako je například Průzkumník řešení, zobrazení tříd a objektů prohlížeče  
-  
--   Okna dokumentu obsahující takové editory a návrháře jako Návrháře formulářů, editoru XML a editoru HTML  
-  
-## <a name="using-the-properties-window"></a>Pomocí okna Vlastnosti  
- **Vlastnosti** okně zobrazí vlastnosti jednoho nebo více vybraných položek. Pokud je vybráno více položek, zobrazí se průnik všechny vlastnosti pro všechny vybrané objekty.  
-  
- Události související s vybraným objektem v okně návrhu formuláře nebo editoru HTML pomocí metadat modelu COM + se zobrazují v **vlastnosti** okna. Například můžete vybrat tlačítko a zobrazit související události, jako například `OnClick` události, které lze propojit na toto tlačítko.  
-  
- Události zobrazené v **vlastnosti** okno se primárně používají s objekty, které jsou vázány na kód. Pokud upravujete soubor formátu, který není nutné nic dělat s kódem, nebudete mít žádné události. Události se zobrazí pouze v **vlastnosti** okno po vytvoření vazby mezi spouštěním kódu určitých událostí spojených s konkrétní objekty. Příklad tohoto by kódu na pozadí vybraného objektu, který se spustí při aktivaci tohoto objektu.  
-  
- V následující tabulce jsou uvedeny primární rozhraní používaných **vlastnosti** okna.  
-  
-|Název rozhraní|Popis|  
-|--------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Obsahuje seznam kategorií, které mají **vlastnosti** okno a jednotlivých vlastností se mapuje na kategorie.|  
-|[Rozhraní IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|Poskytuje metody a vlastnosti programovací nástroje a další aplikace, které podporují automatizaci objektu.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Obsahuje tlačítko se třemi tečkami (...) tlačítka volá *tvůrci* , který otevře modální dialogové okno windows implementované samotného objektu. Použít, pokud hodnota není snadno zadaný uživatelem v textovém poli. Například se může použít k otevření barvu ovládacího prvku pro výběr, který určuje hodnotu RGB za vás.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Poskytuje přístup k objektům, které používá k aktualizaci informací zobrazených v **vlastnosti** okna. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> je implementováno rozšíření VSPackages pro každé okno, které obsahuje volitelný objekty s souvisejících vlastností, který se má zobrazit.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Poskytuje informace o typu objektu, jako jsou metody rozhraní a pole struktury.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Umožňuje rozšíření VSPackages, na které přijde upozornění výběr události a k načtení informací o aktuálním hierarchie projektu, položky, hodnota elementu a kontextu uživatelského rozhraní příkazového.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Poskytuje prostředí, které nabízí přístup k více výběrů.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Používá k poskytování lokalizované názvy na některé vlastnosti zobrazené **vlastnosti** okna.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Upozorní registrovaných rozšíření VSPackages na změny aktuálního výběru, hodnota elementu nebo příkaz kontextu uživatelského rozhraní.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Upozorní prostředí, které ke změně aktuálního výběru a poskytuje přístup k informacím o hierarchii a položky týkající se nový výběr.|  
-  
- Další informace o `IDispatch`, naleznete v knihovně MSDN.  
-  
-## <a name="see-also"></a>Viz také  
- [Rozšíření vlastností](../../extensibility/internals/extending-properties.md)   
- [Pole a rozhraní okna Vlastnosti](../../extensibility/internals/properties-window-fields-and-interfaces.md)
+**Vlastnosti** okno se používá k zobrazení vlastností objektů vybraných v dva hlavní typy dostupné v systému windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou tyto dva typy systému windows:
+
+-   Okna nástrojů, jako je například Průzkumník řešení, zobrazení tříd a objektů prohlížeče
+
+-   Okna dokumentu obsahující takové editory a návrháře jako Návrháře formulářů, editoru XML a editoru HTML
+
+## <a name="using-the-properties-window"></a>Pomocí okna Vlastnosti
+ **Vlastnosti** okně zobrazí vlastnosti jednoho nebo více vybraných položek. Pokud je vybráno více položek, zobrazí se průnik všechny vlastnosti pro všechny vybrané objekty.
+
+ Události související s vybraným objektem v okně návrhu formuláře nebo editoru HTML pomocí metadat modelu COM + se zobrazují v **vlastnosti** okna. Například můžete vybrat tlačítko a zobrazit související události, jako například `OnClick` události, které lze propojit na toto tlačítko.
+
+ Události zobrazené v **vlastnosti** okno se primárně používají s objekty, které jsou vázány na kód. Pokud upravujete soubor formátu, který není nutné nic dělat s kódem, nebudete mít žádné události. Události se zobrazí pouze v **vlastnosti** okno po vytvoření vazby mezi spouštěním kódu určitých událostí spojených s konkrétní objekty. Příklad tohoto by kódu na pozadí vybraného objektu, který se spustí při aktivaci tohoto objektu.
+
+ V následující tabulce jsou uvedeny primární rozhraní používaných **vlastnosti** okna.
+
+|Název rozhraní|Popis|
+|--------------------|-----------------|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Obsahuje seznam kategorií, které mají **vlastnosti** okno a jednotlivých vlastností se mapuje na kategorie.|
+|[Rozhraní IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|Poskytuje metody a vlastnosti programovací nástroje a další aplikace, které podporují automatizaci objektu.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Obsahuje tlačítko se třemi tečkami (...) tlačítka volá *tvůrci* , který otevře modální dialogové okno windows implementované samotného objektu. Použít, pokud hodnota není snadno zadaný uživatelem v textovém poli. Například se může použít k otevření barvu ovládacího prvku pro výběr, který určuje hodnotu RGB za vás.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Poskytuje přístup k objektům, které používá k aktualizaci informací zobrazených v **vlastnosti** okna. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> je implementováno rozšíření VSPackages pro každé okno, které obsahuje volitelný objekty s souvisejících vlastností, který se má zobrazit.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Poskytuje informace o typu objektu, jako jsou metody rozhraní a pole struktury.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Umožňuje rozšíření VSPackages, na které přijde upozornění výběr události a k načtení informací o aktuálním hierarchie projektu, položky, hodnota elementu a kontextu uživatelského rozhraní příkazového.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Poskytuje prostředí, které nabízí přístup k více výběrů.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Používá k poskytování lokalizované názvy na některé vlastnosti zobrazené **vlastnosti** okna.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Upozorní registrovaných rozšíření VSPackages na změny aktuálního výběru, hodnota elementu nebo příkaz kontextu uživatelského rozhraní.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Upozorní prostředí, které ke změně aktuálního výběru a poskytuje přístup k informacím o hierarchii a položky týkající se nový výběr.|
+
+ Další informace o `IDispatch`, naleznete v knihovně MSDN.
+
+## <a name="see-also"></a>Viz také
+- [Rozšíření vlastností](../../extensibility/internals/extending-properties.md)
+- [Pole a rozhraní okna Vlastnosti](../../extensibility/internals/properties-window-fields-and-interfaces.md)

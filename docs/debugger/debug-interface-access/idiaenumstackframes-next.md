@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00be37ffa1724cb6ced2423ea388b2a24dae42f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9cf220c65cf11836e64a7e1f4c0142c89669f4b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919965"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619443"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
-Načte zadaný počet prvků rámce zásobníku v pořadí výčtu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Next(   
-   ULONG             celt,  
-   IDiaStackFrame**  rgelt,  
-   ULONG*            pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- celt  
- [in] Počet prvků stackframe v enumerátor, který se má načíst.  
-  
- rgelt  
- [out] Pole, které je pro vyplnění s požadovaným [idiastackframe –](../../debugger/debug-interface-access/idiastackframe.md) objekty.  
-  
- pceltFetched  
- [out] Vrátí počet zásobníku rámce prvků načtených enumerátor.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` Pokud nejsou žádné další rámce zásobníku. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Načte zadaný počet prvků rámce zásobníku v pořadí výčtu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Next( 
+   ULONG             celt,
+   IDiaStackFrame**  rgelt,
+   ULONG*            pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ celt
+
+[in] Počet prvků stackframe v enumerátor, který se má načíst.
+
+ rgelt
+
+[out] Pole, které je pro vyplnění s požadovaným [idiastackframe –](../../debugger/debug-interface-access/idiastackframe.md) objekty.
+
+ pceltFetched
+
+[out] Vrátí počet zásobníku rámce prvků načtených enumerátor.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` Pokud nejsou žádné další rámce zásobníku. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 822a32bdef1a9974c12b5f2b19e03cc4bedbcb0e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a64fcf47e6d1b315499bc2e43ab32459bf11c091
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973873"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616804"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
-Získá počet položek v tabulce.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_Count (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí počet položek v tabulce.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [Idiatable –](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)
+Získá počet položek v tabulce.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_Count ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí počet položek v tabulce.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+- [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)

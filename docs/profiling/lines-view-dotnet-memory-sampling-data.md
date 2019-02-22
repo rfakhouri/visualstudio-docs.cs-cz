@@ -10,55 +10,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d49cba09d5ca9f7a3a88d2b585937b50a2c5aa1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c654bbcc9db696d78e651414bfa89d6ad1e2f3e3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625202"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zobrazení řádků – data vzorkování paměti .NET
-Zobrazení řádků pro .NET profilování data o přidělování paměti, která používá metody vzorkování seznam příkazů, které přidělené paměti během spuštění profilování. Sloupce, které zahrnují také velikost a počet přidělení.  
-  
- Ve zdrojovém souboru příkaz se týkají více než jeden řádek ve zdrojovém souboru a jeden řádek může obsahovat více než jeden výraz.  
-  
- Příkaz je identifikován následující:  
-  
-- Zdrojový soubor, který obsahuje Function – příkaz  
-  
-- Funkce, která obsahuje příkaz.  
-  
-- Zdrojový řádek, ve kterém se spustí příkaz.  
-  
-- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
-  
-- Řádku zdroje, u které končí příkaz.  
-  
-- Znak ve zdrojovém řádku, kdy příkaz skončí.  
-  
-  Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.  
-  
-  Podle definice příkazu nevolá dalších funkcí. Proto jsou uvedeny pouze výhradní hodnoty.  
-  
-|Sloupec|Popis|  
-|------------|-----------------|  
-|**ID procesu**|ID procesu (PID) běhu profilování.|  
-|**Název procesu**|Název procesu.|  
-|**Název modulu**|Název modulu, který obsahuje příkaz.|  
-|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje příkaz.|  
-|**Zdrojový soubor**|Zdrojový soubor, který obsahuje příkaz.|  
-|**Název funkce**|Název funkce, která obsahuje příkaz.|  
-|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
-|**Adresa funkce**|Počáteční adresa funkce.|  
-|**Začátek řádku zdroje**|Počáteční řádek číslo ve zdrojovém souboru, ve kterém došlo k chybě přidělení paměti.|  
-|**Konec řádku zdroje**|Koncové číslo řádku ve zdrojovém souboru, ve kterém došlo k chybě přidělení paměti.|  
-|**Počáteční znak zdrojového kódu**|Odsazení počátečního znaku ve zdrojovém souboru řádku, ve kterém došlo k chybě přidělení paměti.|  
-|**Koncový znak zdrojového kódu**|Posun koncového znaku ve zdrojovém souboru řádku, ve kterém došlo k chybě přidělení paměti.|  
-|**Název čáry**|Identifikátor generovaný profileru řádku pomocí následující syntaxe:`Source File`**; [** `Line Number Start` **,**`Character Start`**] ->; [**`Line Number Start,Character Start`**]**|  
-|**Výhradní přidělení**|Celkový počet objektů, které byly vytvořeny v tomto řádku.|  
-|**% Výhradních přidělení**|Procento všech objektů, které byly vytvořeny při spuštění profilace, které byly přiděleny v tomto řádku.|  
-|**Výhradní bajty**|Procento všech počet bajtů paměti, které byly přiděleny při spuštění profilace, které byly přiděleny v tomto řádku.|  
-|**% Výhradních bajtů**|Procento všech počet bajtů paměti, které byly přiděleny při spuštění profilace, které byly přiděleny v tomto řádku.|  
-  
-## <a name="see-also"></a>Viz také:  
- [Zobrazení řádků](../profiling/lines-view-sampling-data.md)
+Zobrazení řádků pro .NET profilování data o přidělování paměti, která používá metody vzorkování seznam příkazů, které přidělené paměti během spuštění profilování. Sloupce, které zahrnují také velikost a počet přidělení.
+
+ Ve zdrojovém souboru příkaz se týkají více než jeden řádek ve zdrojovém souboru a jeden řádek může obsahovat více než jeden výraz.
+
+ Příkaz je identifikován následující:
+
+- Zdrojový soubor, který obsahuje Function – příkaz
+
+- Funkce, která obsahuje příkaz.
+
+- Zdrojový řádek, ve kterém se spustí příkaz.
+
+- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.
+
+- Řádku zdroje, u které končí příkaz.
+
+- Znak ve zdrojovém řádku, kdy příkaz skončí.
+
+  Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.
+
+  Podle definice příkazu nevolá dalších funkcí. Proto jsou uvedeny pouze výhradní hodnoty.
+
+|Sloupec|Popis|
+|------------|-----------------|
+|**ID procesu**|ID procesu (PID) běhu profilování.|
+|**Název procesu**|Název procesu.|
+|**Název modulu**|Název modulu, který obsahuje příkaz.|
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje příkaz.|
+|**Zdrojový soubor**|Zdrojový soubor, který obsahuje příkaz.|
+|**Název funkce**|Název funkce, která obsahuje příkaz.|
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|
+|**Adresa funkce**|Počáteční adresa funkce.|
+|**Začátek řádku zdroje**|Počáteční řádek číslo ve zdrojovém souboru, ve kterém došlo k chybě přidělení paměti.|
+|**Konec řádku zdroje**|Koncové číslo řádku ve zdrojovém souboru, ve kterém došlo k chybě přidělení paměti.|
+|**Počáteční znak zdrojového kódu**|Odsazení počátečního znaku ve zdrojovém souboru řádku, ve kterém došlo k chybě přidělení paměti.|
+|**Koncový znak zdrojového kódu**|Posun koncového znaku ve zdrojovém souboru řádku, ve kterém došlo k chybě přidělení paměti.|
+|**Název čáry**|Identifikátor generovaný profileru řádku pomocí následující syntaxe:`Source File`**; [** `Line Number Start` **,**`Character Start`**] ->; [**`Line Number Start,Character Start`**]**|
+|**Výhradní přidělení**|Celkový počet objektů, které byly vytvořeny v tomto řádku.|
+|**% Výhradních přidělení**|Procento všech objektů, které byly vytvořeny při spuštění profilace, které byly přiděleny v tomto řádku.|
+|**Výhradní bajty**|Procento všech počet bajtů paměti, které byly přiděleny při spuštění profilace, které byly přiděleny v tomto řádku.|
+|**% Výhradních bajtů**|Procento všech počet bajtů paměti, které byly přiděleny při spuštění profilace, které byly přiděleny v tomto řádku.|
+
+## <a name="see-also"></a>Viz také:
+- [Zobrazení řádků](../profiling/lines-view-sampling-data.md)

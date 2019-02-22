@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee0c3c503be815feacd5d6077dd9e560b2c4074
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928397"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603466"
 ---
 # <a name="msbuild-batching"></a>Dávkování nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost rozdělení seznamů položek do různých kategorií nebo dávek, na základě položky metadat a spustit cíl nebo úloha jednou s jednotlivých dávek.
@@ -100,7 +100,7 @@ není povoleno.
 Další informace o funkcích vlastnost, naleznete v tématu [funkce vlastností](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Viz také:
-[Itemmetadata – element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)  
-[Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)  
-[Rozšířené koncepty](../msbuild/msbuild-advanced-concepts.md)
+- [Itemmetadata – element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)
+- [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)
+- [Rozšířené koncepty](../msbuild/msbuild-advanced-concepts.md)

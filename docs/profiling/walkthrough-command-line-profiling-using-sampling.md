@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cfa4afeda38180825a9f17b47a4e959fdac092d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf9fd3006ab584dddfcb089ae31fb945fe69049a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960539"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624890"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Průvodce: Příkazový řádek profilování pomocí vzorkování
 
@@ -41,7 +41,7 @@ V tomto podrobném návodu postupujte podle těchto kroků:
 Vzorkování je metodě profilování pomocí kterého konkrétní proces pravidelně dotazovaní určit aktivní funkce. Výsledná data poskytuje přehled o četnosti funkce byla vrcholu zásobníku volání při procesu vzorkováno.
 
 > [!NOTE]
->  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.  
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Chcete-li Profilovat aplikaci PeopleTrax pomocí metody vzorkování
 
@@ -99,8 +99,8 @@ Vzorkování je metodě profilování pomocí kterého konkrétní proces pravid
 
 ## <a name="see-also"></a>Viz také:
 
-[Přehled výkonnostní relace](../profiling/performance-session-overview.md)  
-[Profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[Vysvětlení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
-[Zobrazení sestav výkonu](../profiling/performance-report-views.md)
+[Přehled výkonnostní relace](../profiling/performance-session-overview.md)
+[profilu z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[pochopení dat vzorkování hodnoty](../profiling/understanding-sampling-data-values.md)
+[zobrazení sestav výkonu](../profiling/performance-report-views.md)

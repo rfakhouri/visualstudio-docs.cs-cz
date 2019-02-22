@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8122f1a3869efe32d7ae35ff05cdbb77ad84375
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484886"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618377"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash úkolu
 
@@ -64,6 +64,5 @@ V následujícím příkladu `VerifyFileHash` úkolů, ověřit svůj vlastní k
 
 ## <a name="see-also"></a>Viz také:
 
-[Úlohy](../msbuild/msbuild-tasks.md)
-
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

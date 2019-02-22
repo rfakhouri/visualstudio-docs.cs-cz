@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f46494c22a11be09efb6181340e0fb6108a17c8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8ffa5340ceaa00adb5e86100d8e58c307f41d40
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979143"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56647030"
 ---
 # <a name="performance-explorer-window"></a>Okno Prohlížeč výkonu
 
@@ -51,6 +51,6 @@ Tyto možnosti jsou k dispozici na **prohlížeč výkonu** nástrojů:
 
 ## <a name="see-also"></a>Viz také:
 
-[Přehledy](../profiling/overviews-performance-tools.md)  
-[Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
-[Řízení shromažďování dat](../profiling/controlling-data-collection.md)
+[Přehledy](../profiling/overviews-performance-tools.md)
+[konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)
+[řízení sběru dat](../profiling/controlling-data-collection.md)

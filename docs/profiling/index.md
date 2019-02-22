@@ -1,22 +1,16 @@
 ---
 layout: LandingPage
 title: Měření výkonu aplikace pomocí profilace | Dokumentace Microsoftu
-description: Zjistěte, jak pomocí sady Visual Studio 2017 Profilovat jejich výkon aplikací, služeb a nástrojů v jazyce podle vašeho výběru.
+description: 'Zjistěte, jak pomocí sady Visual Studio 2017 Profilovat jejich výkon aplikací, služeb a nástrojů v jazyce podle vašeho výběru.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a940aea1260090371b24c7ccdb0975a609b3d4d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155770"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Měřit výkon aplikace v sadě Visual Studio
 
-Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití procesoru a dalších problémů na úrovni aplikací. Pomocí těchto nástrojů můžete shromažďování dat (třeba hodnoty proměnných, volání funkce a událostí) za čas, kdy spustíte svou aplikaci v ladicím programu. Můžete zobrazit stav vaší aplikace v různých fázích během provádění kódu. 
+Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití procesoru a dalších problémů na úrovni aplikací. Pomocí těchto nástrojů můžete shromažďování dat (třeba hodnoty proměnných, volání funkce a událostí) za čas, kdy spustíte svou aplikaci v ladicím programu. Můžete zobrazit stav vaší aplikace v různých fázích během provádění kódu.
 
 <ul class="panelContent cardsFTitle">
     <li>

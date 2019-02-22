@@ -12,43 +12,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a637608c8da5d7c5c5e0d857520a08ffae494a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bda25b870c110324962d0249948929b207d98826
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944863"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619677"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
-Přečte zadaný počet bajtů počínaje od určeného posunutí ze spustitelného souboru.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT ReadExecutableAt (   
-   DWORDLONG fileOffset,  
-   DWORD     cbData,  
-   DWORD*    pcbData,  
-   BYTE      data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- fileOffset  
- [in] Posun ve spustitelném souboru má začínat čtení.  
-  
- cbData  
- [in] Počet bajtů ke čtení.  
-  
- pcbData  
- [out] Vrátí počet přečtených bajtů.  
-  
- data[]  
- [out v] Pole, které se vyplní přečtených ze souboru bajtů.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato metoda je volána kód podpory, který DIA načtení bajtů dat ze spustitelného souboru pomocí posun absolutní. Tato metoda je volána z podporu [idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+Přečte zadaný počet bajtů počínaje od určeného posunutí ze spustitelného souboru.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT ReadExecutableAt ( 
+   DWORDLONG fileOffset,
+   DWORD     cbData,
+   DWORD*    pcbData,
+   BYTE      data[]
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ fileOffset
+
+[in] Posun ve spustitelném souboru má začínat čtení.
+
+ cbData
+
+[in] Počet bajtů ke čtení.
+
+ pcbData
+
+[out] Vrátí počet přečtených bajtů.
+
+ data[]
+- [out v] Pole, které se vyplní přečtených ze souboru bajtů.
+
+## <a name="remarks"></a>Poznámky
+ Tato metoda je volána kód podpory, který DIA načtení bajtů dat ze spustitelného souboru pomocí posun absolutní. Tato metoda je volána z podporu [idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody.
+
+## <a name="see-also"></a>Viz také
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

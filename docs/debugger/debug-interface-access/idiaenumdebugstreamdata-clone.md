@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a630f1097db2a2f90b4958466a0280bac8fac86d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8362fecf12613595b3e96218c704eae26f4e8bbc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973291"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641907"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
-Vytvoří čítač, který obsahuje stejné pořadí výčtu jako aktuální enumerátor.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumDebugStreamData** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- ppenum  
- [out] Vrátí [idiaenumdebugstreamdata –](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objekt, který obsahuje duplicitní pořadí záznamů dat datový proud ladění.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+Vytvoří čítač, který obsahuje stejné pořadí výčtu jako aktuální enumerátor.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumDebugStreamData** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ ppenum
+
+[out] Vrátí [idiaenumdebugstreamdata –](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objekt, který obsahuje duplicitní pořadí záznamů dat datový proud ladění.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

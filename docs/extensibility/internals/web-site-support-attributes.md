@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac58ec0d7175d2d7989ce9c4d6086b5a741e77c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 076b7aa56ec00fda559bbdfdc8b2b9df2be38816
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927239"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603128"
 ---
 # <a name="web-site-support-attributes"></a>Atributy podpory webu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Webový projekt je možné rozšířit o podporu pro webové programovacích jazyků. Jazyk musí registrovat s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby šablony projektů mohou objevit v **nový web** dialogové okno při výběru jazyka.
@@ -55,4 +55,4 @@ public class PythonPackage : Package, IOleComponent
  Implementace IVsIntellisenseProject zpracovává odkazy a volá kompilátor jazyka, pokud webové stránky s kódem je požadováno, ale neukládá do mezipaměti.
 
 ## <a name="see-also"></a>Viz také
- [Podpora webu](../../extensibility/internals/web-site-support.md)
+- [Podpora webu](../../extensibility/internals/web-site-support.md)

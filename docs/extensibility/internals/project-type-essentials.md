@@ -10,59 +10,59 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0b6b3509af981a07fce76be69f16d767ec0c246
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16031cbe5152c49c56b4c151e85b01ecf2f91a21
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017926"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624357"
 ---
 # <a name="project-type-essentials"></a>Základy typů projektů
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje několik typů projektů pro jazyky, jako například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] nebo [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] také umožňuje vytvořit vlastní typy projektů.  
-  
- Pokud chcete přidat vlastní příkazy, editory nebo okna nástrojů do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], jde to provést bez vytvoření nového typu projektu. Další informace naleznete v následujících tématech:  
-  
-- [Příkazy, nabídky a panely nástrojů](../../extensibility/internals/commands-menus-and-toolbars.md)  
-  
-- [Editor a rozšíření služeb jazyka](../../extensibility/editor-and-language-service-extensions.md)  
-  
-- [Rozšíření a přizpůsobení panelů nástrojů](../../extensibility/extending-and-customizing-tool-windows.md)  
-  
-  Podobně pokud chcete přizpůsobit chování zadané [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typy projektů, můžete provést pomocí podtypů projektů. Další informace najdete v tématu [podtypů projektů](../../extensibility/internals/project-subtypes.md).  
-  
-  Musíte vytvořit nový typ projektu pro projekty, které vycházejí z jazyka jiného než [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Pokud chcete zajistit podporu jeden nebo více z následujících akcí:  
-  
-- Sestavení  
-  
-- Nasazení  
-  
-- Více konfigurací  
-  
-- Správy zdrojového kódu  
-  
-- Ladění  
-  
-- Položky projektu v Průzkumníku řešení  
-  
-- **Otevřít projekt** nebo **nový projekt** dialogová okna  
-  
-- Vnoření projektů  
-  
-- Další informace o možnostech typů projektů naleznete v následujících tématech:  
-  
-- Typy projektů jsou objekty v sadě VSPackage, implementující sadu rozhraní [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] očekává. Pokud používáte C# na vývoj typu projektu, projektu třídy Managed Package Framework implementovat rozhraní potřebná pro vás a umožňují dědit tuto implementaci. Další informace najdete v tématu [pomocí Managed Package Framework pro implementaci typu projektu (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
-  
-- Pro vývojáře v jazyce C++ tříd v knihovně HierUtil pracovní podobným způsobem. Další informace najdete v tématu [není v sestavení: Použití HierUtil7 projektu třídy k implementaci typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
-  
-- Typy projektů může podporovat dat než typické zdrojové soubory sestavení do sestavení .exe nebo .dll. Například [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] databázové projekty obsahují odkazy na skript a dotaz soubory uložené na disku a přidání příkazů pro **Průzkumníka řešení** ke spuštění skriptů a dotazy na databázi, ale projektů nepodporují chování sestavení. Další informace najdete v tématu [otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
-  
-- Typ projektu nemusí vůbec používat soubory. Například typ projektu může uchovávat svá data v databázi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje typy projektů úplnou kontrolu nad jak jsou zachována i data pro projekty a položky projektu. Další informace najdete v tématu [rozhodnutí o návrhu typu projektu](../../extensibility/internals/project-type-design-decisions.md).  
-  
-- Musíte zadat typy projektů *objekt pro vytváření projektu*, což je objekt, který vytvoří instanci projektu zadejte vždy, když [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] některého otevřete nebo vytvořte projekt, který je založen na typu projektu. Další informace najdete v tématu [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
-  
-- Typy projektů, musíte zadat šablon projektů a položek projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používá šablony, když uživatelé vytvářet nové projekty a přidání nových položek do existujících projektů. Další informace najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
-  
-- Typy projektů může podporovat více konfigurací, jako je ladění a vydání. Uživatelé mohou změnit další možnosti konfigurace projektu pomocí stránky vlastností, které zadáte. Další informace najdete v tématu [Správa možností konfigurace](../../extensibility/internals/managing-configuration-options.md).  
-  
-## <a name="see-also"></a>Viz také  
- [Nasazování typů projektů](../../extensibility/internals/deploying-project-types.md)
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje několik typů projektů pro jazyky, jako například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] nebo [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] také umožňuje vytvořit vlastní typy projektů.
+
+ Pokud chcete přidat vlastní příkazy, editory nebo okna nástrojů do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], jde to provést bez vytvoření nového typu projektu. Další informace naleznete v následujících tématech:
+
+- [Příkazy, nabídky a panely nástrojů](../../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [Editor a rozšíření služeb jazyka](../../extensibility/editor-and-language-service-extensions.md)
+
+- [Rozšíření a přizpůsobení panelů nástrojů](../../extensibility/extending-and-customizing-tool-windows.md)
+
+  Podobně pokud chcete přizpůsobit chování zadané [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typy projektů, můžete provést pomocí podtypů projektů. Další informace najdete v tématu [podtypů projektů](../../extensibility/internals/project-subtypes.md).
+
+  Musíte vytvořit nový typ projektu pro projekty, které vycházejí z jazyka jiného než [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Pokud chcete zajistit podporu jeden nebo více z následujících akcí:
+
+- Sestavení
+
+- Nasazení
+
+- Více konfigurací
+
+- Správy zdrojového kódu
+
+- Ladění
+
+- Položky projektu v Průzkumníku řešení
+
+- **Otevřít projekt** nebo **nový projekt** dialogová okna
+
+- Vnoření projektů
+
+- Další informace o možnostech typů projektů naleznete v následujících tématech:
+
+- Typy projektů jsou objekty v sadě VSPackage, implementující sadu rozhraní [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] očekává. Pokud používáte C# na vývoj typu projektu, projektu třídy Managed Package Framework implementovat rozhraní potřebná pro vás a umožňují dědit tuto implementaci. Další informace najdete v tématu [pomocí Managed Package Framework pro implementaci typu projektu (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).
+
+- Pro vývojáře v jazyce C++ tříd v knihovně HierUtil pracovní podobným způsobem. Další informace najdete v tématu [není v sestavení: Použití HierUtil7 projektu třídy k implementaci typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+
+- Typy projektů může podporovat dat než typické zdrojové soubory sestavení do sestavení .exe nebo .dll. Například [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] databázové projekty obsahují odkazy na skript a dotaz soubory uložené na disku a přidání příkazů pro **Průzkumníka řešení** ke spuštění skriptů a dotazy na databázi, ale projektů nepodporují chování sestavení. Další informace najdete v tématu [otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md).
+
+- Typ projektu nemusí vůbec používat soubory. Například typ projektu může uchovávat svá data v databázi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje typy projektů úplnou kontrolu nad jak jsou zachována i data pro projekty a položky projektu. Další informace najdete v tématu [rozhodnutí o návrhu typu projektu](../../extensibility/internals/project-type-design-decisions.md).
+
+- Musíte zadat typy projektů *objekt pro vytváření projektu*, což je objekt, který vytvoří instanci projektu zadejte vždy, když [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] některého otevřete nebo vytvořte projekt, který je založen na typu projektu. Další informace najdete v tématu [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
+
+- Typy projektů, musíte zadat šablon projektů a položek projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používá šablony, když uživatelé vytvářet nové projekty a přidání nových položek do existujících projektů. Další informace najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).
+
+- Typy projektů může podporovat více konfigurací, jako je ladění a vydání. Uživatelé mohou změnit další možnosti konfigurace projektu pomocí stránky vlastností, které zadáte. Další informace najdete v tématu [Správa možností konfigurace](../../extensibility/internals/managing-configuration-options.md).
+
+## <a name="see-also"></a>Viz také
+- [Nasazování typů projektů](../../extensibility/internals/deploying-project-types.md)

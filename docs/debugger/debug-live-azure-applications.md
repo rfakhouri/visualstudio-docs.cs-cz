@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335594"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613372"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění živé aplikace ASP.NET Azure pomocí ladicího programu snímků
 
@@ -63,7 +63,7 @@ V tomto kurzu se naučíte:
 2. Připojte Snapshot Debugger. Můžete použít jeden z několika různými způsoby:
 
     * Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte váš projekt je nasazen na službě Azure App Service a účet úložiště Azure a pak klikněte na tlačítko **připojit**.
-  
+
       ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Klikněte pravým tlačítkem myši na projekt a vyberte **publikovat**a pak na stránce klikněte na publikovat **připojit Snapshot Debugger**. Vyberte váš projekt je nasazen na službě Azure App Service a účet úložiště Azure a pak klikněte na tlačítko **připojit**.
@@ -73,7 +73,7 @@ V tomto kurzu se naučíte:
     ![Spuštění ladicího programu snímků z rozevírací nabídky F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Pomocí Průzkumníka cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na projekt je nasazen na službě Azure App Service a vyberte účet úložiště Azure a pak klikněte na tlačítko **připojit Snapshot Debugger**.
-  
+
       ![Spuštění ladicího programu snímků z Průzkumníka cloudu](../debugger/media/snapshot-launch.png)
 
     Při prvním vyberete **připojit Snapshot Debugger**, budete vyzváni k instalaci rozšíření webu pro Snapshot Debugger ve službě Azure App Service. Tato instalace vyžaduje restartování služby Azure App Service.

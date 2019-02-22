@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab674576655df3b4a695d97fdfdb42df2ffa449
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227261"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602452"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Určuje typ rámce zásobníku.
@@ -36,23 +36,17 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elementy
-`FrameTypeFPO`  
-Tento parametr vynechán, ukazatel na rámec Informace o FPO k dispozici.
+`FrameTypeFPO` Tento parametr vynechán, ukazatel na rámec Informace o FPO k dispozici.
 
-`FrameTypeTrap`  
-Rámec depeše jádra.
+`FrameTypeTrap` Rámec depeše jádra.
 
-`FrameTypeTSS`  
-Rámec depeše jádra.
+`FrameTypeTSS` Rámec depeše jádra.
 
-`FrameTypeStandard`  
-Standardní EBP rámce zásobníku.
+`FrameTypeStandard` Standardní EBP rámce zásobníku.
 
-`FrameTypeFrameData`  
-Tento parametr vynechán, ukazatel na rámec Rámec informace o datech k dispozici.
+`FrameTypeFrameData` Tento parametr vynechán, ukazatel na rámec Rámec informace o datech k dispozici.
 
-`FrameTypeUnknown`  
-Snímek, který nemá dostupné žádné ladicí informace.
+`FrameTypeUnknown` Snímek, který nemá dostupné žádné ladicí informace.
 
 ## <a name="remarks"></a>Poznámky
 Hodnoty v tomto výčtu jsou vráceny prostřednictvím volání [idiastackframe::get_type –](../../debugger/debug-interface-access/idiastackframe-get-type.md) metody.
@@ -61,5 +55,5 @@ Hodnoty v tomto výčtu jsou vráceny prostřednictvím volání [idiastackframe
 Záhlaví: cvconst.h
 
 ## <a name="see-also"></a>Viz také
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

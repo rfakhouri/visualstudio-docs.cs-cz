@@ -11,92 +11,92 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 355101179e54839fbe5060ce2bc5cdf583ec7d3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3142d854a3a6371983dc6c5851ad007c387f1480
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997491"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603037"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Ověřování zarážek ve službě starší verze jazyka
-Zarážky označuje, že spuštění programu by se měla zastavit v určitém místě, když je spuštěn v ladicí program. Uživatele můžete umístit zarážky na kterýkoli řádek v ve zdrojovém souboru, protože nemá žádné informace o tom, co platné umístění zarážky editoru. Když ladicí program se spustí, všechny označené zarážky (označované jako čekajících zarážek) jsou vázány na příslušné umístění v běžící aplikaci. Ve stejnou dobu, kterou zarážek se ověří a zkontrolujte, že se označení umístění platný kód. Například zarážky na komentář není platný, protože není na tomto místě ve zdrojovém kódu žádný kód. Ladicí program se zakáže neplatný zarážky.  
-  
- Protože služba jazyka ví o zdrojovém kódu se zobrazí, předtím, než se spustí ladicí program může ověřit zarážky. Je možné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metoda vrátí rozpětí určující platné umístění zarážky. Umístění zarážky stále ověření při spuštění ladicího programu, ale uživatel je informován o neplatný zarážky bez čekání na ladicí program načíst.  
-  
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementace podporu pro ověřování zarážek  
-  
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Metoda je uvedena umístění zarážky. Implementace musíte rozhodnout, zda je platná umístění a označující, že to tak, že vrací rozpětí textu, který identifikuje kód přidružený k řádku pozici zarážku.  
-  
--   Vrátí <xref:Microsoft.VisualStudio.VSConstants.S_OK> Pokud je toto umístění platné, nebo <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Pokud není platná.  
-  
--   Pokud zarážka je platný rozsah textu je zvýrazněn spolu s zarážku.  
-  
--   Pokud zarážka není platná, zobrazí se chybová zpráva ve stavovém řádku.  
-  
-### <a name="example"></a>Příklad  
- Tento příklad ukazuje implementaci <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodu, která volá analyzátor, který má získat délka kódu (pokud existuje) v zadaném umístění.  
-  
- Tento příklad předpokládá, že jste přidali `GetCodeSpan` metodu <xref:Microsoft.VisualStudio.Package.AuthoringSink> třídu, která ověřuje text rozpětí a vrátí `true` Pokud se jedná o platný zarážku umístění.  
-  
-```csharp  
-using Microsoft VisualStudio;  
-using Microsoft.VisualStudio.Package;  
-using Microsoft.VisualStudio.TextManager.Interop;  
-  
-namespace TestLanguagePackage  
-{  
-    class TestLanguageService : LanguageService  
-    {  
-        public override int ValidateBreakpointLocation(IVsTextBuffer buffer,  
-                                                       int line,  
-                                                       int col,  
-                                                       TextSpan[] pCodeSpan)  
-        {  
-            int retval = VSConstants.S_FALSE;  
-            if (pCodeSpan != null)  
-            {  
-                // Initialize span to current line by default.  
-                pCodeSpan[0].iStartLine = line;  
-                pCodeSpan[0].iStartIndex = col;  
-                pCodeSpan[0].iEndLine = line;  
-                pCodeSpan[0].iEndIndex = col;  
-            }  
-  
-            if (buffer != null)  
-            {  
-                IVsTextLines textLines = buffer as IVsTextLines;  
-                if (textLines != null)  
-                {  
-                    Source src = this.GetSource(textLines);  
-                    if (src != null)  
-                    {  
-                        TokenInfo tokenInfo = new TokenInfo();  
-                        string text = src.GetText();  
-                        ParseRequest req = CreateParseRequest(src,  
-                                                              line,  
-                                                              col,  
-                                                              tokenInfo,  
-                                                              text,  
-                                                              src.GetFilePath(),  
-                                                              ParseReason.CodeSpan,  
-                                                              null);  
-                        req.Scope = this.ParseSource(req);  
-                        TestAuthoringSink sink = req.Sink as TestAuthoringSink;  
-  
-                        TextSpan span = new TextSpan();  
-                        if (sink.GetCodeSpan(out span))  
-                        {  
-                            pCodeSpan[0] = span;  
-                            retval = VSConstants.S_OK;  
-                        }  
-                    }  
-                }  
-            }  
-            return retval;  
-        }  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [Funkce služby starší verze jazyka](../../extensibility/internals/legacy-language-service-features1.md)
+Zarážky označuje, že spuštění programu by se měla zastavit v určitém místě, když je spuštěn v ladicí program. Uživatele můžete umístit zarážky na kterýkoli řádek v ve zdrojovém souboru, protože nemá žádné informace o tom, co platné umístění zarážky editoru. Když ladicí program se spustí, všechny označené zarážky (označované jako čekajících zarážek) jsou vázány na příslušné umístění v běžící aplikaci. Ve stejnou dobu, kterou zarážek se ověří a zkontrolujte, že se označení umístění platný kód. Například zarážky na komentář není platný, protože není na tomto místě ve zdrojovém kódu žádný kód. Ladicí program se zakáže neplatný zarážky.
+
+ Protože služba jazyka ví o zdrojovém kódu se zobrazí, předtím, než se spustí ladicí program může ověřit zarážky. Je možné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metoda vrátí rozpětí určující platné umístění zarážky. Umístění zarážky stále ověření při spuštění ladicího programu, ale uživatel je informován o neplatný zarážky bez čekání na ladicí program načíst.
+
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementace podporu pro ověřování zarážek
+
+-   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Metoda je uvedena umístění zarážky. Implementace musíte rozhodnout, zda je platná umístění a označující, že to tak, že vrací rozpětí textu, který identifikuje kód přidružený k řádku pozici zarážku.
+
+-   Vrátí <xref:Microsoft.VisualStudio.VSConstants.S_OK> Pokud je toto umístění platné, nebo <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Pokud není platná.
+
+-   Pokud zarážka je platný rozsah textu je zvýrazněn spolu s zarážku.
+
+-   Pokud zarážka není platná, zobrazí se chybová zpráva ve stavovém řádku.
+
+### <a name="example"></a>Příklad
+ Tento příklad ukazuje implementaci <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodu, která volá analyzátor, který má získat délka kódu (pokud existuje) v zadaném umístění.
+
+ Tento příklad předpokládá, že jste přidali `GetCodeSpan` metodu <xref:Microsoft.VisualStudio.Package.AuthoringSink> třídu, která ověřuje text rozpětí a vrátí `true` Pokud se jedná o platný zarážku umístění.
+
+```csharp
+using Microsoft VisualStudio;
+using Microsoft.VisualStudio.Package;
+using Microsoft.VisualStudio.TextManager.Interop;
+
+namespace TestLanguagePackage
+{
+    class TestLanguageService : LanguageService
+    {
+        public override int ValidateBreakpointLocation(IVsTextBuffer buffer,
+                                                       int line,
+                                                       int col,
+                                                       TextSpan[] pCodeSpan)
+        {
+            int retval = VSConstants.S_FALSE;
+            if (pCodeSpan != null)
+            {
+                // Initialize span to current line by default.
+                pCodeSpan[0].iStartLine = line;
+                pCodeSpan[0].iStartIndex = col;
+                pCodeSpan[0].iEndLine = line;
+                pCodeSpan[0].iEndIndex = col;
+            }
+
+            if (buffer != null)
+            {
+                IVsTextLines textLines = buffer as IVsTextLines;
+                if (textLines != null)
+                {
+                    Source src = this.GetSource(textLines);
+                    if (src != null)
+                    {
+                        TokenInfo tokenInfo = new TokenInfo();
+                        string text = src.GetText();
+                        ParseRequest req = CreateParseRequest(src,
+                                                              line,
+                                                              col,
+                                                              tokenInfo,
+                                                              text,
+                                                              src.GetFilePath(),
+                                                              ParseReason.CodeSpan,
+                                                              null);
+                        req.Scope = this.ParseSource(req);
+                        TestAuthoringSink sink = req.Sink as TestAuthoringSink;
+
+                        TextSpan span = new TextSpan();
+                        if (sink.GetCodeSpan(out span))
+                        {
+                            pCodeSpan[0] = span;
+                            retval = VSConstants.S_OK;
+                        }
+                    }
+                }
+            }
+            return retval;
+        }
+    }
+}
+```
+
+## <a name="see-also"></a>Viz také
+- [Funkce služby starší verze jazyka](../../extensibility/internals/legacy-language-service-features1.md)

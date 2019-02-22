@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004485"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620288"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Řešení potíží s cílením na rozhraní .NET Framework
 Toto téma popisuje chyby nástroje MSBuild, kterým by mohlo dojít z důvodu odkazu problémy a jak můžete tyto chyby vyřešili.
@@ -54,4 +54,7 @@ Toto téma popisuje chyby nástroje MSBuild, kterým by mohlo dojít z důvodu o
 >  Po zavření a znovu otevřít projekt, měli byste také znovu vytvořit jej pro zajištění správně přeložit všechny odkazy.
 
 ## <a name="see-also"></a>Viz také:
- [Postupy: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile) [cílení na konkrétní verzi rozhraní .NET Framework](../ide/visual-studio-multi-targeting-overview.md) [cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
+- [Postupy: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [Profil klienta rozhraní .NET framework](/dotnet/framework/deployment/client-profile)
+- [Cílení na konkrétní verzi rozhraní .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)

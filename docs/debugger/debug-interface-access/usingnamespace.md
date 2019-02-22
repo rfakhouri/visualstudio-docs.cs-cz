@@ -12,29 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f07555299318d57cb3e57e50cb616611659424ea
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff7b834c80b80b3b8d61e4f7aea23a0219786d2a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952168"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643844"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
-Některé symboly odkážeme na oboru názvů a by být identifikovaný následně `SymTagUsingNameSpace` značky.  
-  
+Některé symboly odkážeme na oboru názvů a by být identifikovaný následně `SymTagUsingNameSpace` značky.
+
 > [!NOTE]
->  Usingnamespace – značka symbolu se zobrazí jenom ve spravovaném kódu.  
-  
-## <a name="properties"></a>Vlastnosti  
- V následující tabulce jsou uvedeny vlastnosti, které jsou platné pro tento typ symbolu.  
-  
-|Vlastnost|Datový typ|Popis|  
-|--------------|---------------|-----------------|  
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol pro nadřazené kompilace, bloku nebo funkce.|  
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID nadřazené lexikální symbolu.|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Název Namespace.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagNameSpace` (jeden z [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|  
-  
-## <a name="see-also"></a>Viz také  
- [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
+>  Usingnamespace – značka symbolu se zobrazí jenom ve spravovaném kódu.
+
+## <a name="properties"></a>Vlastnosti
+ V následující tabulce jsou uvedeny vlastnosti, které jsou platné pro tento typ symbolu.
+
+|Vlastnost|Datový typ|Popis|
+|--------------|---------------|-----------------|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol pro nadřazené kompilace, bloku nebo funkce.|
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID nadřazené lexikální symbolu.|
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Název Namespace.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagNameSpace` (jeden z [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|
+
+## <a name="see-also"></a>Viz také
+- [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

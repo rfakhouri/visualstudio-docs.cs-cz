@@ -12,37 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fafae8bb5c2e9ab275601af0d7ed1dea22db4940
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b78c62ad096600254ddeb2ebd82d6174a950ca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970068"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601537"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
-Načte název souboru, ze kterého byly načteny symboly.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_symbolsFileName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí název souboru, ze kterého byly načteny symboly.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Načte název souboru, ze kterého byly načteny symboly.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_symbolsFileName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí název souboru, ze kterého byly načteny symboly.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato vlastnost je platná jenom pro symboly s [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnotu `SymTagExe` , které mají také globální obor.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="remarks"></a>Poznámky
+ Tato vlastnost je platná jenom pro symboly s [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnotu `SymTagExe` , které mají také globální obor.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)
