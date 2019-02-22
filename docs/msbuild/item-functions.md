@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950510"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617155"
 ---
 # <a name="item-functions"></a>funkce položek
 Od verze MSBuild 4.0, kód v úlohy a cíle může volat funkce položek, chcete-li získat informace o položkách v projektu. Tyto funkce zjednodušují získávání Distinct() položek a jsou rychlejší než položky ve smyčce.
@@ -100,4 +100,4 @@ Následující příklad ukazuje, jak používat funkce vnitřní položek.
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Položky](../msbuild/msbuild-items.md)
+- [Položky](../msbuild/msbuild-items.md)

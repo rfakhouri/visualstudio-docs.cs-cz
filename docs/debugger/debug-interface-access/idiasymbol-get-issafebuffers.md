@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623163353f0e1c95c073eeef91518617ba68c658
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 30a2f26a1488500f256b6ba9a0ec96eca9b952f8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922636"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626389"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-Získá příznak, který určuje, jestli je použít direktivy preprocesoru bezpečné vyrovnávací paměti. Použít, když [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) je nastavena na `SymTagFunction`.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_isSafeBuffers(   
-   BOOL* pRetVal)  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` Pokud ukazatel pomocí direktivy preprocesoru bezpečné vyrovnávací paměti; v opačném případě vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Získá příznak, který určuje, jestli je použít direktivy preprocesoru bezpečné vyrovnávací paměti. Použít, když [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) je nastavena na `SymTagFunction`.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_isSafeBuffers( 
+   BOOL* pRetVal)
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` Pokud ukazatel pomocí direktivy preprocesoru bezpečné vyrovnávací paměti; v opačném případě vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="remarks"></a>Poznámky  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
-  
- Knihovna: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [strict_gs_check](/cpp/preprocessor/strict-gs-check)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="remarks"></a>Poznámky
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: Dia2.h
+
+ Knihovna: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [strict_gs_check](/cpp/preprocessor/strict-gs-check)

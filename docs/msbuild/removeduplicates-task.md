@@ -18,78 +18,78 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9e732d55858b713d73cbf1ba4f325f40560503
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 027e1f4894660b0198ed8a6df862e66e41cde409
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987372"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642921"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates – úloha
-Odebere duplicitní položky z kolekce zadané položky.  
-  
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `RemoveDuplicates` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`Filtered`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje kolekci položek se odebrat všechny duplicitní položky. Zachování pořadí vstupních položek udržování první instance každé duplicitní položky.|  
-|`Inputs`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Odebrat duplicitní položky z kolekce položek.|  
-  
-## <a name="remarks"></a>Poznámky  
- Tato úloha velká a malá písmena a není výsledkem porovnání metadata položky při určování duplicitní položky.  
-  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Příklad  
- V následujícím příkladu `RemoveDuplicates` úloh odebrat duplicitní položky ze `MyItems` kolekci položek. Po dokončení úlohy `FilteredItems` kolekce položek obsahuje jednu položku.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyItems Include="MyFile.cs"/>  
-        <MyItems Include="MyFile.cs">  
-            <Culture>fr</Culture>  
-        </MyItems>  
-        <MyItems Include="myfile.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="RemoveDuplicateItems">  
-        <RemoveDuplicates  
-            Inputs="@(MyItems)">  
-            <Output  
-                TaskParameter="Filtered"  
-                ItemName="FilteredItems"/>  
-        </RemoveDuplicates>  
-    </Target>  
-</Project>  
-```  
+Odebere duplicitní položky z kolekce zadané položky.
 
- Následující příklad ukazuje, že `RemoveDuplicates` úlohy zachová jeho vstupní pořadí. Po dokončení úlohy `FilteredItems` kolekce položek obsahuje položky *MyFile2.cs*, *MyFile1.cs*, a *MyFile3.cs* v uvedeném pořadí.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyItems Include="MyFile2.cs"/>  
-        <MyItems Include="MyFile1.cs" />  
-        <MyItems Include="MyFile3.cs" />  
-        <MyItems Include="myfile1.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="RemoveDuplicateItems">  
-        <RemoveDuplicates  
-            Inputs="@(MyItems)">  
-            <Output  
-                TaskParameter="Filtered"  
-                ItemName="FilteredItems"/>  
-        </RemoveDuplicates>  
-    </Target>  
-</Project>  
-```  
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `RemoveDuplicates` úloh.
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [Úlohy](../msbuild/msbuild-tasks.md)
+|Parametr|Popis|
+|---------------|-----------------|
+|`Filtered`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje kolekci položek se odebrat všechny duplicitní položky. Zachování pořadí vstupních položek udržování první instance každé duplicitní položky.|
+|`Inputs`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Odebrat duplicitní položky z kolekce položek.|
+
+## <a name="remarks"></a>Poznámky
+ Tato úloha velká a malá písmena a není výsledkem porovnání metadata položky při určování duplicitní položky.
+
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Příklad
+ V následujícím příkladu `RemoveDuplicates` úloh odebrat duplicitní položky ze `MyItems` kolekci položek. Po dokončení úlohy `FilteredItems` kolekce položek obsahuje jednu položku.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyItems Include="MyFile.cs"/>
+        <MyItems Include="MyFile.cs">
+            <Culture>fr</Culture>
+        </MyItems>
+        <MyItems Include="myfile.cs"/>
+    </ItemGroup>
+
+    <Target Name="RemoveDuplicateItems">
+        <RemoveDuplicates
+            Inputs="@(MyItems)">
+            <Output
+                TaskParameter="Filtered"
+                ItemName="FilteredItems"/>
+        </RemoveDuplicates>
+    </Target>
+</Project>
+```
+
+ Následující příklad ukazuje, že `RemoveDuplicates` úlohy zachová jeho vstupní pořadí. Po dokončení úlohy `FilteredItems` kolekce položek obsahuje položky *MyFile2.cs*, *MyFile1.cs*, a *MyFile3.cs* v uvedeném pořadí.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyItems Include="MyFile2.cs"/>
+        <MyItems Include="MyFile1.cs" />
+        <MyItems Include="MyFile3.cs" />
+        <MyItems Include="myfile1.cs"/>
+    </ItemGroup>
+
+    <Target Name="RemoveDuplicateItems">
+        <RemoveDuplicates
+            Inputs="@(MyItems)">
+            <Output
+                TaskParameter="Filtered"
+                ItemName="FilteredItems"/>
+        </RemoveDuplicates>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
