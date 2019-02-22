@@ -1,45 +1,52 @@
+items:
 - name: Visual Studio Tools for AI
   href: index.yml
   items:
-    - name: Přehled
+  - name: Přehled
+    items:
+    - name: Informace o Visual Studio Tools for AI
+      href: about-ai-tools.md
+  - name: Instalace
+    href: installation.md
+  - name: Rychlý start
+    items:
+    - name: Tensorflow + Python
+      href: tensorflow-local.md
+  - name: Kurzy
+    items:
+    - name: TensorFlow + Azure Deep Learning VM
+      href: tensorflow-vm.md
+  - name: Návody
+    items:
+    - name: Vytvoření projektu
       items:
-        - name: Informace o Visual Studio Tools for AI
-          href: about-ai-tools.md
-    - name: Instalace
-      href: installation.md
-    - name: Rychlý start
-      items:
-        - name: Tensorflow + Python
-          href: tensorflow-local.md
-    - name: Kurzy
-      items:
-        - name: TensorFlow + Azure Deep Learning VM
-          href: tensorflow-vm.md
-    - name: Návody
-      items:
-        - name: Vytvoření projektu
-          items:
-            - name: Vytvoření projektu z galerie ukázek
-              href: create-project-gallery.md
-            - name: "Vytvoření projektu z\_existujícího kódu"
-              href: create-project-existing.md
-            - name: Vytvoření projektu ze šablony
-              href: create-project.md
-            - name: Vytvoření projektu z úložiště GitHubu
-              href: create-project-repo.md
-        - name: Vyzkoušejte svůj model
-          href: train-model.md
-        - name: Zobrazení podrobností o úloze
-          href: job-details.md
-        - name: Monitorování využití GPU
-          href: monitor-gpu.md
-        - name: Monitorování TensorBoard
-          href: monitor-tensorboard.md
-        - name: Správa úložiště
-          href: manage-storage.md
-    - name: Ukázky kódu
-      items:
-        - name: GitHub
-          href: 'https://github.com/Microsoft/samples-for-ai'
-        - name: Galerie strojového učení
-          href: 'https://gallery.cortanaintelligence.com/projects'
+      - name: Vytvoření projektu z galerie ukázek
+        href: create-project-gallery.md
+      - name: Vytvoření projektu z existujícího kódu
+        href: create-project-existing.md
+      - name: Vytvoření projektu ze šablony
+        href: create-project.md
+      - name: Vytvoření projektu z úložiště GitHubu
+        href: create-project-repo.md
+    - name: Vyzkoušejte svůj model
+      href: train-model.md
+    - name: Zobrazení podrobností o úloze
+      href: job-details.md
+    - name: Monitorování využití GPU
+      href: monitor-gpu.md
+    - name: Monitorování TensorBoard
+      href: monitor-tensorboard.md
+    - name: Správa úložiště
+      href: manage-storage.md
+  - name: Ukázky
+    items:
+    - name: GitHub
+      href: https://github.com/Microsoft/samples-for-ai
+    - name: Galerie strojového učení
+      href: https://gallery.cortanaintelligence.com/projects
+ms.openlocfilehash: 06ed7a4c59a97742f3055d0d5084f28f9022adc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624383"
