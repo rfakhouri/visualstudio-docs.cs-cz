@@ -17,58 +17,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe40d6f8b5032dbbffeeda3edaff3b1c89aadb3f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1c1596213b618ba67cd4bf1406f63c0754fd9b96
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867153"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619313"
 ---
 # <a name="how-to-add-a-creator-method"></a>Postupy: Přidání metody vytvoření
-  Metody vytvoření zdroje dat entity přidá nová data. Služba obchodní Data připojení (BDC) volá tuto metodu, když se uživatelé rozhodnou **nová položka** tlačítko **pásu karet** seznamu, který je založen na modelu. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
-### <a name="to-add-a-creator-method"></a>Přidání metody vytvoření  
-  
-1. Na **návrháři služby BDC**, zvolit entitu.  
-  
-2. V panelu nabídky zvolte **zobrazení** > **ostatní Windows** >**podrobnosti metody služby BDC**.  
-  
-    **Podrobnosti metody služby BDC** otevře se okno. Další informace o tomto okně najdete v tématu [přehled nástrojů pro návrh modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md).  
-  
-3. V **přidejte metodu** klikněte na položku **vytvořit metodu Creator**.  
-  
-    Visual Studio přidá následující prvky modelu, a tyto prvky se zobrazí v **podrobnosti metody služby BDC** okna.  
-  
-   - Metodu s názvem **vytvořit**.  
-  
-   - Vstupní parametr metody.  
-  
-   - Návratový parametr metody.  
-  
-   - Typ popisovače parametru.  
-  
-   - Instance metody k metodě.  
-  
-     Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
-4. V **Průzkumníka řešení**, otevřete místní nabídku souboru služby kód, který byl vygenerován pro entitu a pak zvolte **zobrazit kód**.  
-  
-    Soubor kódu služby entity se otevře v editoru kódu. Další informace o souboru kód služby entity, naleznete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md).  
-  
-5. Přidejte kód do metody tvůrce, který přidá data do zdroje dat. Následující příklad přidá kontaktu k ukázkové databázi AdventureWorks pro SQL Server.  
-  
-   > [!NOTE]  
-   >  Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.  
-  
+  Metody vytvoření zdroje dat entity přidá nová data. Služba obchodní Data připojení (BDC) volá tuto metodu, když se uživatelé rozhodnou **nová položka** tlačítko **pásu karet** seznamu, který je založen na modelu. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
+
+### <a name="to-add-a-creator-method"></a>Přidání metody vytvoření
+
+1. Na **návrháři služby BDC**, zvolit entitu.
+
+2. V panelu nabídky zvolte **zobrazení** > **ostatní Windows** >**podrobnosti metody služby BDC**.
+
+    **Podrobnosti metody služby BDC** otevře se okno. Další informace o tomto okně najdete v tématu [přehled nástrojů pro návrh modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md).
+
+3. V **přidejte metodu** klikněte na položku **vytvořit metodu Creator**.
+
+    Visual Studio přidá následující prvky modelu, a tyto prvky se zobrazí v **podrobnosti metody služby BDC** okna.
+
+   - Metodu s názvem **vytvořit**.
+
+   - Vstupní parametr metody.
+
+   - Návratový parametr metody.
+
+   - Typ popisovače parametru.
+
+   - Instance metody k metodě.
+
+     Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).
+
+4. V **Průzkumníka řešení**, otevřete místní nabídku souboru služby kód, který byl vygenerován pro entitu a pak zvolte **zobrazit kód**.
+
+    Soubor kódu služby entity se otevře v editoru kódu. Další informace o souboru kód služby entity, naleznete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md).
+
+5. Přidejte kód do metody tvůrce, který přidá data do zdroje dat. Následující příklad přidá kontaktu k ukázkové databázi AdventureWorks pro SQL Server.
+
+   > [!NOTE]
+   >  Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
+
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
-    [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
-  
+    [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]
+
 ## <a name="see-also"></a>Viz také:
- [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Postupy: Přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
- [Postupy: Přidání konkrétní vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Postupy: Přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
- [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)   
- [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
+- [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Postupy: Přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)
+- [Postupy: Přidání konkrétní vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Postupy: Přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)
+- [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)
+- [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)

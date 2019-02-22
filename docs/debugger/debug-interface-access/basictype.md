@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318015"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626112"
 ---
 # <a name="basictype"></a>BasicType
 Určuje základní typ symbolu.
@@ -50,59 +50,41 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elementy
-btNoType  
-Není zadán žádný základní typ.
+btNoType, který není zadán žádný základní typ.
 
-btVoid  
-Základní typ je `void`.
+btVoid základní typ je `void`.
 
-btChar  
-Základní typ je `char` (C/C++ typ).
+btChar základní typ je `char` (C/C++ typ).
 
-btWChar  
-Základní typ je širokého znaku (Unicode) (`WCHAR`).
+btWChar základní typ je širokého znaku (Unicode) (`WCHAR`).
 
-btInt  
-Základní typ je `signed int` (C/C++ typ).
+btInt základní typ je `signed int` (C/C++ typ).
 
-btUInt  
-Základní typ je `unsigned int` (C/C++ typ).
+btUInt základní typ je `unsigned int` (C/C++ typ).
 
-btFloat  
-Základní typ je číslo s plovoucí desetinnou čárkou (`FLOAT`).
+btFloat základní typ je číslo s plovoucí desetinnou čárkou (`FLOAT`).
 
-btBCD  
-Základní typ je binární soubor pevně zakódované desetinné číslo (`BCD`).
+btBCD základní typ je binární soubor pevně zakódované desetinné číslo (`BCD`).
 
-btBool  
-Základní typ je logická hodnota (`BOOL`).
+btBool základní typ je logická hodnota (`BOOL`).
 
-btLong  
-Základní typ je `long int` (C/C++ typ).
+btLong základní typ je `long int` (C/C++ typ).
 
-btULong  
-Základní typ je `unsigned long int` (C/C++ typ).
+btULong základní typ je `unsigned long int` (C/C++ typ).
 
-btCurrency  
-Základní typ je měna.
+btCurrency základní typ je měna.
 
-btDate  
-Základní typ je datum a čas (`DATE`).
+btDate základní typ je datum a čas (`DATE`).
 
-btVariant  
-Základní typ je typ proměnné struktury (`VARIANT`).
+btVariant základní typ je typ proměnné struktury (`VARIANT`).
 
-btComplex  
-Základní typ je komplexní čísla.
+btComplex základní typ je komplexní čísla.
 
-btBit  
-Základní typ je tento bit.
+btBit základní typ je tento bit.
 
-btBSTR  
-Základní typ je řetězec základní nebo binární (`BSTR`).
+btBSTR základní typ je řetězec základní nebo binární (`BSTR`).
 
-btHresult  
-Základní typ je `HRESULT`.
+btHresult základní typ je `HRESULT`.
 
 ## <a name="remarks"></a>Poznámky
 Jsou vrácené hodnoty v tento výčet [idiasymbol::get_basetype –](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) metody.
@@ -111,6 +93,6 @@ Jsou vrácené hodnoty v tento výčet [idiasymbol::get_basetype –](../../debu
 Záhlaví: cvconst.h
 
 ## <a name="see-also"></a>Viz také
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

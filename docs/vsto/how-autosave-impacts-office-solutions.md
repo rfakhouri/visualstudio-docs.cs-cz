@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875625"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601379"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Jak ovlivňuje automatické ukládání řešení pro systém Office
 
@@ -27,5 +27,4 @@ Automatické ukládání je funkce pro Excel, PowerPoint a Word, který průbě�
 > Automatické ukládání pro Windows Desktop Word, Excel a PowerPoint byla zavedena v 2017 a je aktuálně dostupné pro předplatitele Office 365. Pokud jste si zakoupili trvalou licenci na Office 2016 nebo starší, není nutné aktuálně přístup k funkci coauthoring. (Excelu Online, Excel pro Android, aplikace Excel pro iOS a mobilní aplikace Excel ve Windows Store nepodporují tuto funkci, i když.)
 
 ## <a name="see-also"></a>Viz také:
-
-[Vývoj řešení pro systém Office](./developing-office-solutions.md)
+- [Vývoj řešení pro systém Office](./developing-office-solutions.md)

@@ -16,56 +16,56 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ebe08584e3be85b38778276c7876a6394d2cef1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043151"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608341"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;Vlastnost assemblyIdentity&gt; – element (nasazení ClickOnce)
-Určuje primární sestavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```xml  
-  
-      <assemblyIdentity    
-   name   
-   version  
-   publicKeyToken  
-   processorArchitecture  
-    type  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementy a atributy  
- `assemblyIdentity` Je vyžadován element. Neobsahuje žádné podřízené prvky a má následující atributy.  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`name`|Povinný parametr. Určuje popisný název nasazení pro informační účely.<br /><br /> Pokud `name` obsahuje speciální znaky, jako je například jednoduché nebo dvojité uvozovky, aplikací se pravděpodobně nezdaří k aktivaci.|  
-|`version`|Povinný parametr. Určuje číslo verze sestavení, v následujícím formátu: `major.minor.build.revision`.<br /><br /> Tato hodnota musí být zvýšena v aktualizovaném manifestu pro spuštění aktualizace aplikace.|  
-|`publicKeyToken`|Povinný parametr. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů hodnoty hash SHA-1 veřejný klíč, pod kterým manifest nasazení je podepsán. Veřejný klíč, který se používá k podepsání musí být 2 048 bitů nebo vyšší.<br /><br /> I když se podpis sestavení se doporučuje, ale volitelné, tento atribut je vyžadován. Pokud je sestavení bez znaménka, by měl zkopírujte hodnotu z podepsaného sestavení nebo použijte hodnotu "fiktivní" samými nulami.|  
-|`processorArchitecture`|Povinný parametr. Určuje procesor. Platné hodnoty jsou `msil` pro všechny procesory `x86` pro Windows 32-bit `IA64` pro Windows 64-bit, a `Itanium` pro procesory Itanium Intel 64-bit.|  
-|`type`|Povinný parametr. Z důvodu kompatibility s technologií vedle sebe instalace Windows. Jediná povolená hodnota je `win32`.|  
-  
-## <a name="remarks"></a>Poznámky  
-  
-## <a name="example"></a>Příklad  
- Následující příklad kódu ukazuje `assemblyIdentity` prvek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu nasazení. Tento příklad kódu je součástí většího příkladu určeného pro [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md) tématu.  
-  
-```xml  
-<!-- Identify the deployment. -->  
-<assemblyIdentity   
-  name="My Application Deployment.app"  
-  version="1.0.0.0"  
-  publicKeyToken="43cb1e8e7a352766"  
-  language="neutral"  
-  processorArchitecture="x86"  
-  xmlns="urn:schemas-microsoft-com:asm.v1" />  
-```  
-  
-## <a name="see-also"></a>Viz také:  
- [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md)   
- [\<Vlastnost assemblyIdentity > – element](../deployment/assemblyidentity-element-clickonce-application.md)
+Určuje primární sestavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.
+
+## <a name="syntax"></a>Syntaxe
+
+```xml
+
+      <assemblyIdentity  
+   name 
+   version
+   publicKeyToken
+   processorArchitecture
+    type
+/>
+```
+
+## <a name="elements-and-attributes"></a>Elementy a atributy
+ `assemblyIdentity` Je vyžadován element. Neobsahuje žádné podřízené prvky a má následující atributy.
+
+|Atribut|Popis|
+|---------------|-----------------|
+|`name`|Povinný parametr. Určuje popisný název nasazení pro informační účely.<br /><br /> Pokud `name` obsahuje speciální znaky, jako je například jednoduché nebo dvojité uvozovky, aplikací se pravděpodobně nezdaří k aktivaci.|
+|`version`|Povinný parametr. Určuje číslo verze sestavení, v následujícím formátu: `major.minor.build.revision`.<br /><br /> Tato hodnota musí být zvýšena v aktualizovaném manifestu pro spuštění aktualizace aplikace.|
+|`publicKeyToken`|Povinný parametr. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů hodnoty hash SHA-1 veřejný klíč, pod kterým manifest nasazení je podepsán. Veřejný klíč, který se používá k podepsání musí být 2 048 bitů nebo vyšší.<br /><br /> I když se podpis sestavení se doporučuje, ale volitelné, tento atribut je vyžadován. Pokud je sestavení bez znaménka, by měl zkopírujte hodnotu z podepsaného sestavení nebo použijte hodnotu "fiktivní" samými nulami.|
+|`processorArchitecture`|Povinný parametr. Určuje procesor. Platné hodnoty jsou `msil` pro všechny procesory `x86` pro Windows 32-bit `IA64` pro Windows 64-bit, a `Itanium` pro procesory Itanium Intel 64-bit.|
+|`type`|Povinný parametr. Z důvodu kompatibility s technologií vedle sebe instalace Windows. Jediná povolená hodnota je `win32`.|
+
+## <a name="remarks"></a>Poznámky
+
+## <a name="example"></a>Příklad
+ Následující příklad kódu ukazuje `assemblyIdentity` prvek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu nasazení. Tento příklad kódu je součástí většího příkladu určeného pro [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md) tématu.
+
+```xml
+<!-- Identify the deployment. -->
+<assemblyIdentity
+  name="My Application Deployment.app"
+  version="1.0.0.0"
+  publicKeyToken="43cb1e8e7a352766"
+  language="neutral"
+  processorArchitecture="x86"
+  xmlns="urn:schemas-microsoft-com:asm.v1" />
+```
+
+## <a name="see-also"></a>Viz také:
+- [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md)
+- [\<Vlastnost assemblyIdentity > – element](../deployment/assemblyidentity-element-clickonce-application.md)

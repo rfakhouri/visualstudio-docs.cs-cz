@@ -26,97 +26,92 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa902b9f429f11f1f168503de55f74f112f8474f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea9fd21c346a61939683ee05e3cb9ef3123cc03d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948411"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639151"
 ---
 # <a name="cvwritemessage-function"></a>Cvwritemessage – funkce
-Zapíše zprávu do souboru trasování vizualizátoru souběžnosti.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C  
-HRESULT CvWriteMessageW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteMessageA(  
-    PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteMessageVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteMessageVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteMessageExW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteMessageExA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteMessageExVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteMessageExVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `argList`  
- Seznam argumentů.  
-  
- `category`  
- Kategorie značky span  
-  
- `level`  
- Úroveň důležitosti rozpětí.  
-  
- `pMarkerSeries`  
- Platné značky řady kontextu. Nemůže mít hodnotu NULL.  
-  
- `pMessage`  
- Řetězec formátu zprávy. Nemůže mít hodnotu NULL.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- S_OK při úspěšném zápisu zprávy. Kód chyby v případě, že došlo k chybám. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
-  
-## <a name="requirements"></a>Požadavky  
- **Header:** *cvmarkers.h*  
-  
- **Unicode:** CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW  
-  
- **ANSI:** Cvwritemessagea – cvwritemessageexva – cvwritemessageva – cvwritemessageexa –,  
-  
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)
+Zapíše zprávu do souboru trasování vizualizátoru souběžnosti.
+
+## <a name="syntax"></a>Syntaxe
+
+```C
+HRESULT CvWriteMessageW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteMessageA(
+    PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteMessageVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteMessageVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteMessageExW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteMessageExA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteMessageExVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteMessageExVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+```
+
+#### <a name="parameters"></a>Parametry
+ `argList` Seznam argumentů.
+
+ `category` Kategorie značky span
+
+ `level` Úroveň důležitosti rozpětí.
+
+ `pMarkerSeries` Platné značky řady kontextu. Nemůže mít hodnotu NULL.
+
+ `pMessage` Řetězec formátu zprávy. Nemůže mít hodnotu NULL.
+
+## <a name="return-value"></a>Návratová hodnota
+ S_OK při úspěšném zápisu zprávy. Kód chyby v případě, že došlo k chybám. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.
+
+## <a name="requirements"></a>Požadavky
+ **Header:** *cvmarkers.h*
+
+ **Unicode:** CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW
+
+ **ANSI:** Cvwritemessagea – cvwritemessageexva – cvwritemessageva – cvwritemessageexa –,
+
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

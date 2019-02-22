@@ -11,28 +11,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba235f98ce0c6f8016463c86635eff0c4178ff4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2602996e6c823888b272129ea0c2414534a4e1f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992461"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613931"
 ---
 # <a name="getting-started-with-performance-tools"></a>Začínáme s nástroji výkonu
 
-Visual Studio nabízí několik způsobů, jak shromažďovat, zobrazit a analyzovat data o výkonu kódu. V mnoha případech je nejlepší způsob, jak začít pracovat s výkonem nástroje použít výchozí nastavení pro položky **Průvodce výkonem**. Průvodce shromažďuje statistiky aplikace, které může odkazovat na problémy s výkonem v kódu.  
-  
+Visual Studio nabízí několik způsobů, jak shromažďovat, zobrazit a analyzovat data o výkonu kódu. V mnoha případech je nejlepší způsob, jak začít pracovat s výkonem nástroje použít výchozí nastavení pro položky **Průvodce výkonem**. Průvodce shromažďuje statistiky aplikace, které může odkazovat na problémy s výkonem v kódu.
+
 - V sadě Visual Studio se zobrazí upozornění výkonu, které upozorňují na běžné chyby v kódování **seznam chyb** okna. Z upozornění můžete přejít ke zdrojovému kódu a na možnosti podrobné témata nápovědy, která vám pomůže psát kód efektivnější.
 
-- Sestavy o výkonu umožňují pohled na různé úrovně struktury aplikace, řádky zdrojového kódu a procesy. Sestavy o výkonu zobrazují data provádění aplikace, z volající a volat funkce konkrétní funkce, která se strom volání celé aplikace.  
-  
-Chcete-li rychle Profilovat projektu, aplikaci nebo webové stránky ASP.NET, vyberte **ladění** > **Profiler výkonu**a vyberte **Průvodce výkonem**. Podrobné pokyny najdete v tématu [začátečníky Průvodce profilací výkonu](../profiling/beginners-guide-to-cpu-sampling.md) a [jak: Shromažďování dat o výkonu pro webovou stránku](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+- Sestavy o výkonu umožňují pohled na různé úrovně struktury aplikace, řádky zdrojového kódu a procesy. Sestavy o výkonu zobrazují data provádění aplikace, z volající a volat funkce konkrétní funkce, která se strom volání celé aplikace.
 
-Chcete-li ručně zadat a konfigurovat výkonnostní relaci profilování, vyberte **ladění** > **Profiler** > **prohlížeč výkonu**. Použití **cíle** složky a **vlastnosti** stránky v **prohlížeč výkonu** ke konfiguraci relace. Pokyny najdete v tématu [jak: Ruční vytváření výkonnostních relací](../profiling/how-to-manually-create-performance-sessions.md).  
-  
+Chcete-li rychle Profilovat projektu, aplikaci nebo webové stránky ASP.NET, vyberte **ladění** > **Profiler výkonu**a vyberte **Průvodce výkonem**. Podrobné pokyny najdete v tématu [začátečníky Průvodce profilací výkonu](../profiling/beginners-guide-to-cpu-sampling.md) a [jak: Shromažďování dat o výkonu pro webovou stránku](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+
+Chcete-li ručně zadat a konfigurovat výkonnostní relaci profilování, vyberte **ladění** > **Profiler** > **prohlížeč výkonu**. Použití **cíle** složky a **vlastnosti** stránky v **prohlížeč výkonu** ke konfiguraci relace. Pokyny najdete v tématu [jak: Ruční vytváření výkonnostních relací](../profiling/how-to-manually-create-performance-sessions.md).
+
 **Viz také:**
-  
- [Přehled nástrojů výkonu](../profiling/overviews-performance-tools.md)   
- [Analýza dat nástrojů pro výkon](../profiling/analyzing-performance-tools-data.md)   
- [Použití pravidel výkonu k analýze dat](../profiling/using-performance-rules-to-analyze-data.md)   
- [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)
+
+- [Přehled nástrojů výkonu](../profiling/overviews-performance-tools.md)
+- [Analýza dat nástrojů pro výkon](../profiling/analyzing-performance-tools-data.md)
+- [Použití pravidel výkonu k analýze dat](../profiling/using-performance-rules-to-analyze-data.md)
+- [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)

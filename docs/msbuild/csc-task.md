@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854119"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643935"
 ---
 # <a name="csc-task"></a>Csc – úloha
 Zabalí *csc.exe*a vytváří spustitelné soubory (*.exe* soubory), dynamické knihovny (*.dll* soubory), nebo moduly kódu (*.netmodule* soubory). Další informace o *csc.exe*, naleznete v tématu [možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -94,5 +94,5 @@ V následujícím příkladu `Csc` úloha kompilace spustitelný soubor ze zdroj
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)  
-[Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)

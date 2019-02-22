@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 980a9c49ee801af0caf45ecd6123c6af3e26f1ae
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 5cf6627b23f7421dc164cf13bbaab46e8d7a2577
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853622"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615244"
 ---
 # <a name="assignculture-task"></a>AssignCulture – úloha
 Tento úkol přijímá seznam položek, které mohou obsahovat platný řetězec identifikátor jazykové verze .NET jako součást názvu souboru a vytvoří položky, které mají metadat s názvem `Culture` obsahuje odpovídající jazykovou verzi identifikátor. Například název souboru *Form1.fr-fr.resx* neobsahuje vložený jazykovou verzi identifikátor "fr-fr", proto tento úkol vytvoří položka, která má stejný název souboru s metadaty `Culture` rovna `fr-fr`. Úloha také vytvoří seznam názvů souborů pomocí jazykové verze odebrána z názvu souboru.
@@ -78,5 +78,5 @@ Následující tabulka popisuje výhody výstupní položky po spuštění úloh
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (jazyková verze = "fr")<br /><br /> *MyResource2.XX.resx* (žádné další metadata)|
 
 ## <a name="see-also"></a>Viz také:
-[Úlohy](../msbuild/msbuild-tasks.md)  
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb4cf928426fb39adbbfdc18382b7d5de6c6b4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 548edc3c069159b0ae55f723a86be4d6fb2fd25f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963681"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626931"
 ---
 # <a name="empty-timeline-segment"></a>Prázdný segment časové osy
-Ve Vizualizátor souběžnosti, proč se části časové osy je prázdný (má bílé pozadí) závisí na typu vašeho kanálu.  
-  
--   Pro kanál vlákna CPU znamená to, že vlákno neexistoval při tuto část časové osy. Pokud vás zajímá ve vlákně, najdete jeho provádění části pomocí ovládacího prvku přiblížení nebo posouvání vodorovně.  
-  
--   Pro kanál vstupně-výstupních operací znamená to, že žádný přístup k disku došlo k jménem Cílový proces od tohoto okamžiku v čase.  
-  
--   Pro kanál rozhraní DirectX znamená to, že se žádná práce GPU provedla jménem Cílový proces během této části časové osy.  
-  
--   Pro značky kanál znamená to, že nevygenerovaly se žádné značky.  
-  
-## <a name="see-also"></a>Viz také:  
- [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)   
- [Ovládací prvek Lupa (zobrazení vláken)](../profiling/zoom-control-threads-view.md)
+Ve Vizualizátor souběžnosti, proč se části časové osy je prázdný (má bílé pozadí) závisí na typu vašeho kanálu.
+
+-   Pro kanál vlákna CPU znamená to, že vlákno neexistoval při tuto část časové osy. Pokud vás zajímá ve vlákně, najdete jeho provádění části pomocí ovládacího prvku přiblížení nebo posouvání vodorovně.
+
+-   Pro kanál vstupně-výstupních operací znamená to, že žádný přístup k disku došlo k jménem Cílový proces od tohoto okamžiku v čase.
+
+-   Pro kanál rozhraní DirectX znamená to, že se žádná práce GPU provedla jménem Cílový proces během této části časové osy.
+
+-   Pro značky kanál znamená to, že nevygenerovaly se žádné značky.
+
+## <a name="see-also"></a>Viz také:
+- [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)
+- [Ovládací prvek Lupa (zobrazení vláken)](../profiling/zoom-control-threads-view.md)

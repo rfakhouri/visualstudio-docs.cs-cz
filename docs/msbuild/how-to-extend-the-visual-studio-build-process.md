@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908488"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603258"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Postupy: Rozšíření procesu sestavení sady Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Procesu sestavení je definován pomocí posloupnosti [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* soubory, které jsou importovány do souboru projektu. Jeden z nich importovat soubory, *cílů Microsoft.Common.targets*, je možné rozšířit, aby bylo možné spouštět vlastní úlohy na několika místech v procesu sestavení. Tento článek vysvětluje, dvě metody, které vám umožní rozšířit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] procesu sestavení:
@@ -35,8 +35,8 @@ ms.locfileid: "55908488"
 
 1. Identifikujte předdefinované cíle v *cílů Microsoft.Common.targets* , kterou chcete přepsat. Najdete v následující tabulce pro úplný seznam cílů, které je možné bezpečně přepsat.
 
-2. Definování cíle nebo cílů na konci souboru projektu je třeba bezprostředně před `</Project>` značky. Příklad:  
-  
+2. Definování cíle nebo cílů na konci souboru projektu je třeba bezprostředně před `</Project>` značky. Příklad:
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ ms.locfileid: "55908488"
         </Target>
     </Project>
     ```
-  
+
 3. Vytváření souboru projektu.
 
 V následující tabulce jsou uvedeny všechny cíle v *cílů Microsoft.Common.targets* , můžete bez obav přepsat.
@@ -124,6 +124,6 @@ Projekty, které importuje soubory projektu můžete přepsat tyto vlastnosti, a
 |`CompileDependsOn`|Vlastnost, která má přepsat, pokud chcete vložit vlastní procesy před nebo po kompilační krok.|
 
 ## <a name="see-also"></a>Viz také:
-[Integrace se sadou Visual Studio](../msbuild/visual-studio-integration-msbuild.md)  
-[Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)  
-[– soubory .targets](../msbuild/msbuild-dot-targets-files.md)
+- [Integrace se sadou Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)
+- [– soubory .targets](../msbuild/msbuild-dot-targets-files.md)

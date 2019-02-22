@@ -10,21 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66264af71d93bb83c217360668a14c5cae2bf812
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975943"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634341"
 ---
 # <a name="c-library-reference"></a>Referenční dokumentace knihoven jazyka C++
-Tato část obsahuje referenční informace k sadě SDK Vizualizéru souběžnosti.  
-  
+
+Tato část obsahuje referenční informace k sadě SDK Vizualizéru souběžnosti.
+
 > [!NOTE]
->  Standard jazyka C++ vyhrazuje použití identifikátorů, které začínají podtržítkem (`_`) znak, například pro implementaci knihoven. Nepoužívejte názvy začínající podtržítkem ve vašem kódu. Chování kódu elementy, jejichž názvy postupujte podle tohoto konvence není zaručeno a se může změnit v budoucích vydáních. Z těchto důvodů jsou takovéto prvky kódu z této dokumentace vynechány.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Obor názvů souběžnosti (vizualizér souběžnosti)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
-  
-## <a name="see-also"></a>Viz také:  
- [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md)
+> Standard jazyka C++ vyhrazuje použití identifikátorů, které začínají podtržítkem (`_`) znak, například pro implementaci knihoven. Nepoužívejte názvy začínající podtržítkem ve vašem kódu. Chování kódu elementy, jejichž názvy postupujte podle tohoto konvence není zaručeno a se může změnit v budoucích vydáních. Z těchto důvodů jsou takovéto prvky kódu z této dokumentace vynechány.
+
+## <a name="in-this-section"></a>V tomto oddílu
+
+[Obor názvů souběžnosti (vizualizér souběžnosti)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+
+## <a name="see-also"></a>Viz také:
+
+- [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md)

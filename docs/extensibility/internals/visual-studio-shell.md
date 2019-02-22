@@ -11,76 +11,76 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1f8d63827b654da4dcd3d609854e0c14201df8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031317"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613281"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Prostředí je primární agenta integrace v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Prostředí obsahuje potřebné funkce, které umožňují rozšíření VSPackages sdílení společných služeb. Protože architektury cílem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je vzor průmyslovému primární funkce v balíčcích VSPackage, prostředí je rámec, který poskytuje základní funkce a podporují různé komunikaci mezi komponenty rozšíření VSPackages.  
-  
-## <a name="shell-responsibilities"></a>Odpovědnosti prostředí  
- Prostředí má následující klíčové odpovědnosti:  
-  
-- Podpora (prostřednictvím rozhraní modelu COM) základní prvky uživatelského rozhraní (UI). Patří mezi ně výchozí nabídky a panely nástrojů, okna rámce dokumentu nebo podřízená okna rozhraní více dokumentů (MDI) a rámce okna nástrojů a podporu dokování.  
-  
-- Zachování seznam všechny aktuálně otevřené dokumenty v tabulce spuštěných dokumentů (r...) za účelem koordinace trvalost dokumenty a zaručuje, že daný jeden dokument nelze otevřít více než jedním způsobem, nebo nekompatibilní způsoby.  
-  
-- Podpora rozhraní směrování příkazů a zpracování příkazu `IOleCommandTarget`.  
-  
-- Načítání rozšíření VSPackages ve vhodných chvílích. Zpoždění načítání VSPackage je nezbytné ke zlepšení výkonu prostředí.  
-  
-- Správa určité sdílené služby, jako například <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, která poskytuje funkce pro základní prostředí, a <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, který poskytuje základní oddílová funkce.  
-  
-- Správa souborů řešení (.sln). Řešení obsahují skupiny souvisejících projektů, podobně jako soubory pracovního prostoru (.dsw) v aplikaci Visual C++ 6.0.  
-  
-- Sledování prostředí celý výběr, kontextu a měny. Prostředí sleduje následující typy položek:  
-  
-  -   Aktuální projekt  
-  
-  -   Aktuální položku projektu nebo ID aktuální položky <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
-  
-  -   Aktuální výběr **vlastnosti** okno nebo `SelectionContainer`  
-  
-  -   Kontextu uživatelského rozhraní ID nebo CmdUIGuids, které řídí, zda se příkazy, nabídky a panely nástrojů  
-  
-  -   Aktuálně aktivní prvky, jako jsou aktivní okno, dokument a vhodný  
-  
-  -   Atributy kontextu uživatele, které řídí, dynamická Nápověda  
-  
-  Prostředí také zprostředkovává komunikaci mezi nainstalovaných rozšíření VSPackages a službami. Podporuje základní funkce prostředí a je zpřístupní pro všechny balíčky VSPackages integrováno v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Tyto základní funkce zahrnují následující položky:  
-  
-- **O** dialogové okno pole a na úvodní obrazovce  
-  
-- **Přidat nový a přidat existující položku** dialogová okna  
-  
-- **Zobrazení tříd** okno a **prohlížeče objektů**  
-  
-- **Odkazy na** dialogové okno  
-  
-- **Osnova dokumentu** okna  
-  
-- **Dynamická nápověda** okna  
-  
-- **Najít** a **nahradit**  
-  
-- **Otevřete projekt** a **otevřít soubor** dialogová okna na **nový** nabídky  
-  
-- **Možnosti** dialogové okno na **nástroje** nabídky  
-  
-- **Vlastnosti** okna  
-  
-- **Průzkumník řešení**  
-  
-- **Seznam úkolů** okna  
-  
-- **Panel nástrojů**  
-  
-## <a name="see-also"></a>Viz také  
- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>   
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
- [Balíčky VSPackage](../../extensibility/internals/vspackages.md)
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Prostředí je primární agenta integrace v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Prostředí obsahuje potřebné funkce, které umožňují rozšíření VSPackages sdílení společných služeb. Protože architektury cílem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je vzor průmyslovému primární funkce v balíčcích VSPackage, prostředí je rámec, který poskytuje základní funkce a podporují různé komunikaci mezi komponenty rozšíření VSPackages.
+
+## <a name="shell-responsibilities"></a>Odpovědnosti prostředí
+ Prostředí má následující klíčové odpovědnosti:
+
+- Podpora (prostřednictvím rozhraní modelu COM) základní prvky uživatelského rozhraní (UI). Patří mezi ně výchozí nabídky a panely nástrojů, okna rámce dokumentu nebo podřízená okna rozhraní více dokumentů (MDI) a rámce okna nástrojů a podporu dokování.
+
+- Zachování seznam všechny aktuálně otevřené dokumenty v tabulce spuštěných dokumentů (r...) za účelem koordinace trvalost dokumenty a zaručuje, že daný jeden dokument nelze otevřít více než jedním způsobem, nebo nekompatibilní způsoby.
+
+- Podpora rozhraní směrování příkazů a zpracování příkazu `IOleCommandTarget`.
+
+- Načítání rozšíření VSPackages ve vhodných chvílích. Zpoždění načítání VSPackage je nezbytné ke zlepšení výkonu prostředí.
+
+- Správa určité sdílené služby, jako například <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, která poskytuje funkce pro základní prostředí, a <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, který poskytuje základní oddílová funkce.
+
+- Správa souborů řešení (.sln). Řešení obsahují skupiny souvisejících projektů, podobně jako soubory pracovního prostoru (.dsw) v aplikaci Visual C++ 6.0.
+
+- Sledování prostředí celý výběr, kontextu a měny. Prostředí sleduje následující typy položek:
+
+  -   Aktuální projekt
+
+  -   Aktuální položku projektu nebo ID aktuální položky <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+
+  -   Aktuální výběr **vlastnosti** okno nebo `SelectionContainer`
+
+  -   Kontextu uživatelského rozhraní ID nebo CmdUIGuids, které řídí, zda se příkazy, nabídky a panely nástrojů
+
+  -   Aktuálně aktivní prvky, jako jsou aktivní okno, dokument a vhodný
+
+  -   Atributy kontextu uživatele, které řídí, dynamická Nápověda
+
+  Prostředí také zprostředkovává komunikaci mezi nainstalovaných rozšíření VSPackages a službami. Podporuje základní funkce prostředí a je zpřístupní pro všechny balíčky VSPackages integrováno v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Tyto základní funkce zahrnují následující položky:
+
+- **O** dialogové okno pole a na úvodní obrazovce
+
+- **Přidat nový a přidat existující položku** dialogová okna
+
+- **Zobrazení tříd** okno a **prohlížeče objektů**
+
+- **Odkazy na** dialogové okno
+
+- **Osnova dokumentu** okna
+
+- **Dynamická nápověda** okna
+
+- **Najít** a **nahradit**
+
+- **Otevřete projekt** a **otevřít soubor** dialogová okna na **nový** nabídky
+
+- **Možnosti** dialogové okno na **nástroje** nabídky
+
+- **Vlastnosti** okna
+
+- **Průzkumník řešení**
+
+- **Seznam úkolů** okna
+
+- **Panel nástrojů**
+
+## <a name="see-also"></a>Viz také
+- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+- <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
+- <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>
+- [Balíčky VSPackage](../../extensibility/internals/vspackages.md)

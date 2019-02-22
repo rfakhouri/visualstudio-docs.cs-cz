@@ -14,46 +14,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ca4723d24c45a11422eae4b7d8b288671e0b921
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041084"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630519"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrace šablon projektů a položek
-Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablony projektů a položek projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informace o registraci přidružený k vaší typy projektů používá k určení, co se má zobrazit v **přidat nový projekt** a **přidat novou položku** dialogových oknech.  
+Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablony projektů a položek projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informace o registraci přidružený k vaší typy projektů používá k určení, co se má zobrazit v **přidat nový projekt** a **přidat novou položku** dialogových oknech.
 
- Další informace o šablonách najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+ Další informace o šablonách najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
-## <a name="registry-entries-for-projects"></a>Položky registru pro projekty  
- Následující příklady ukazují položky registru v rámci HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*verze*>. Související tabulky popisují prvky použité v případech.  
+## <a name="registry-entries-for-projects"></a>Položky registru pro projekty
+ Následující příklady ukazují položky registru v rámci HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*verze*>. Související tabulky popisují prvky použité v případech.
 
-```  
-[Projects\{ProjectGUID}]  
-@="MyProjectType"  
-"DisplayName"="#2"  
-"Package"="{VSPackageGUID}"  
-"ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
-```  
+```
+[Projects\{ProjectGUID}]
+@="MyProjectType"
+"DisplayName"="#2"
+"Package"="{VSPackageGUID}"
+"ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
+```
 
-|Název|Typ|Popis|  
-|----------|----------|-----------------|  
-|@|REG_SZ|Výchozí název projektů tohoto druhu.|  
-|displayName|REG_SZ|ID prostředku, který se má načíst z satelitní knihovny DLL název zaregistrován balíčky.|  
-|Balíček|REG_SZ|ID třídy balíčku zaregistrován balíčky.|  
-|ProjectTemplatesDir|REG_SZ|Výchozí cesty k souboru šablony projektu. Soubory šablon projektu se zobrazí podle **nový projekt** šablony.|  
+|Název|Typ|Popis|
+|----------|----------|-----------------|
+|@|REG_SZ|Výchozí název projektů tohoto druhu.|
+|displayName|REG_SZ|ID prostředku, který se má načíst z satelitní knihovny DLL název zaregistrován balíčky.|
+|Balíček|REG_SZ|ID třídy balíčku zaregistrován balíčky.|
+|ProjectTemplatesDir|REG_SZ|Výchozí cesty k souboru šablony projektu. Soubory šablon projektu se zobrazí podle **nový projekt** šablony.|
 
-### <a name="registering-item-templates"></a>Registrace šablon položek  
- Je nutné zaregistrovat na adresář, kam ukládat šablony položek.  
+### <a name="registering-item-templates"></a>Registrace šablon položek
+ Je nutné zaregistrovat na adresář, kam ukládat šablony položek.
 
-```  
-[Projects\{ProjectGUID}\AddItemTemplates\TemplateDirs\{VSPackageGUID}\1]  
-@="#7"  
-"TemplatesDir"="C:\\MyProduct\\MyProjectItemTemplates "  
-"TemplatesLocalizedSubDir"="#10"  
-"SortPriority"=dword:00000064  
-```  
+```
+[Projects\{ProjectGUID}\AddItemTemplates\TemplateDirs\{VSPackageGUID}\1]
+@="#7"
+"TemplatesDir"="C:\\MyProduct\\MyProjectItemTemplates "
+"TemplatesLocalizedSubDir"="#10"
+"SortPriority"=dword:00000064
+```
 
 
 | Název | Typ | Popis |
@@ -63,62 +63,62 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 | TemplatesLocalizedSubDir | REG_SZ | ID prostředku řetězce, který podadresáři TemplatesDir názvů, který obsahuje lokalizované šablony. Protože [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zatížení prostředek řetězce ze satelitní knihovny DLL Pokud je máte, každý satelitní knihovny DLL může obsahovat název jiné lokalizované podadresáře. |
 | SortPriority | REG_DWORD | Nastavte SortPriority k řízení pořadí, ve kterém šablony se zobrazují v **přidat novou položku** dialogové okno. Vyšší hodnoty SortPriority zobrazí výše v seznamu šablon. |
 
-### <a name="registering-file-filters"></a>Registrace filtry souborů  
- Volitelně můžete zaregistrovat filtry, které [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používá, když ho vyzve k zadání názvů souborů. Například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrovat **otevřít soubor** dialogové okno je:  
+### <a name="registering-file-filters"></a>Registrace filtry souborů
+ Volitelně můžete zaregistrovat filtry, které [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používá, když ho vyzve k zadání názvů souborů. Například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrovat **otevřít soubor** dialogové okno je:
 
- **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**
 
- Pro podporu registrace více filtrů, každý filtr je zaregistrován ve vlastní podklíč pod HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*verze*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*podklíč*>. Název podklíče je libovolný. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoruje v podklíči název a používá jenom jeho hodnoty.  
+ Pro podporu registrace více filtrů, každý filtr je zaregistrován ve vlastní podklíč pod HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*verze*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*podklíč*>. Název podklíče je libovolný. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoruje v podklíči název a používá jenom jeho hodnoty.
 
- Můžete řídit kontextech, ve kterých se používá filtr tak, že nastavíte příznaky, které jsou uvedeny v následující tabulce. Pokud filtr nemá nastaveny žádné příznaky, objeví se po běžné filtry v **přidat existující položku** dialogové okno a **otevřít soubor** dialogovému oknu, ale nesmí být použity v **najít v souborech**  dialogové okno.  
+ Můžete řídit kontextech, ve kterých se používá filtr tak, že nastavíte příznaky, které jsou uvedeny v následující tabulce. Pokud filtr nemá nastaveny žádné příznaky, objeví se po běžné filtry v **přidat existující položku** dialogové okno a **otevřít soubor** dialogovému oknu, ale nesmí být použity v **najít v souborech**  dialogové okno.
 
-```  
-[Projects\{ProjectGUID}\Filters\MyLanguageFilter]  
-@="#3"  
-"CommonOpenFilesFilter"=dword:00000000  
-"CommonFindFilesFilter"=dword:00000000  
-"FindInFilesFilter"=dword:00000000  
-"NotOpenFileFilter"=dword:00000000  
-"NotAddExistingItemFilter"=dword:00000000  
-"SortPriority"=dword:00000064  
-```  
+```
+[Projects\{ProjectGUID}\Filters\MyLanguageFilter]
+@="#3"
+"CommonOpenFilesFilter"=dword:00000000
+"CommonFindFilesFilter"=dword:00000000
+"FindInFilesFilter"=dword:00000000
+"NotOpenFileFilter"=dword:00000000
+"NotAddExistingItemFilter"=dword:00000000
+"SortPriority"=dword:00000064
+```
 
-|Název|Typ|Popis|  
-|----------|----------|-----------------|  
-|CommonFindFilesFilter|REG_DWORD|Vytvoří jeden z běžných filtrů filtr na **najít v souborech** dialogové okno. Běžné filtry jsou uvedeny v seznamu filtru před filtry, které nejsou označeny jako běžné.|  
-|CommonOpenFilesFilter|REG_DWORD|Vytvoří jeden z běžných filtrů filtr na **otevřít soubor** dialogové okno. Běžné filtry jsou uvedeny v seznamu filtru před filtry, které nejsou označeny jako běžné.|  
-|FindInFilesFilter|REG_DWORD|Seznam filtru po běžné filtry v **najít v souborech** dialogové okno.|  
-|NotOpenFileFilter|REG_DWORD|Označuje, že se nepoužívá filtr **otevřít soubor** dialogové okno.|  
-|NotAddExistingItemFilter|REG_DWORD|Označuje, že se nepoužívá filtr **přidat existující položku** dialogové okno.|  
-|SortPriority|REG_DWORD|Nastavit SortPriority k řízení pořadí, ve kterém jsou zobrazeny filtry. Vyšší hodnoty SortPriority zobrazí výše v seznamu filtrů.|  
+|Název|Typ|Popis|
+|----------|----------|-----------------|
+|CommonFindFilesFilter|REG_DWORD|Vytvoří jeden z běžných filtrů filtr na **najít v souborech** dialogové okno. Běžné filtry jsou uvedeny v seznamu filtru před filtry, které nejsou označeny jako běžné.|
+|CommonOpenFilesFilter|REG_DWORD|Vytvoří jeden z běžných filtrů filtr na **otevřít soubor** dialogové okno. Běžné filtry jsou uvedeny v seznamu filtru před filtry, které nejsou označeny jako běžné.|
+|FindInFilesFilter|REG_DWORD|Seznam filtru po běžné filtry v **najít v souborech** dialogové okno.|
+|NotOpenFileFilter|REG_DWORD|Označuje, že se nepoužívá filtr **otevřít soubor** dialogové okno.|
+|NotAddExistingItemFilter|REG_DWORD|Označuje, že se nepoužívá filtr **přidat existující položku** dialogové okno.|
+|SortPriority|REG_DWORD|Nastavit SortPriority k řízení pořadí, ve kterém jsou zobrazeny filtry. Vyšší hodnoty SortPriority zobrazí výše v seznamu filtrů.|
 
-## <a name="directory-structure"></a>Adresářová struktura  
- Rozšíření VSPackages můžete do šablony soubory a složky, kdekoli na místním nebo vzdáleném disk, tak dlouho, dokud umístění je zaregistrované prostřednictvím integrovaného vývojového prostředí (IDE). Ale pro usnadnění organizace, doporučujeme následující adresářovou strukturu v cestě instalace produktu.  
+## <a name="directory-structure"></a>Adresářová struktura
+ Rozšíření VSPackages můžete do šablony soubory a složky, kdekoli na místním nebo vzdáleném disk, tak dlouho, dokud umístění je zaregistrované prostřednictvím integrovaného vývojového prostředí (IDE). Ale pro usnadnění organizace, doporučujeme následující adresářovou strukturu v cestě instalace produktu.
 
- \Templates  
+ \Templates
 
- \Projects (obsahuje šablony projektu)  
+ \Projects (obsahuje šablony projektu)
 
- \Applications  
+ \Applications
 
- \Components  
+ \Components
 
- \ ...  
+ \ ...
 
- \ProjectItems (obsahuje položky projektu)  
+ \ProjectItems (obsahuje položky projektu)
 
- \Class  
+ \Class
 
- \Form  
+ \Form
 
- \Web Page  
+ \Web Page
 
- \HelperFiles (obsahuje soubory používané v položkách projektu více soubory)  
+ \HelperFiles (obsahuje soubory používané v položkách projektu více soubory)
 
- \WizardFiles  
+ \WizardFiles
 
-## <a name="see-also"></a>Viz také  
- [Přidání projektu a šablony položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [Průvodce](../../extensibility/internals/wizards.md)   
- [Lokalizace aplikací](../../ide/localizing-applications.md)   
- [Identifikátory CATID pro objekty používané obvykle k rozšíření projektů](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+## <a name="see-also"></a>Viz také
+- [Přidávání šablon projektů a položek projektů](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [Průvodci](../../extensibility/internals/wizards.md)
+- [Lokalizace aplikací](../../ide/localizing-applications.md)
+- [Identifikátory CATID pro objekty používané obvykle k rozšíření projektů](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

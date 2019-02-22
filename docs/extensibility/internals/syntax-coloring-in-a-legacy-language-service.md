@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025641"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629570"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Barevné zvýrazňování syntaxe ve službě starší verze jazyka
 
@@ -63,11 +63,17 @@ Visual Studio používá k identifikaci prvky jazyka a jejich zobrazení pomocí
 >  Kromě použití colorizer služby jazyka, VSPackage použít také pro obecné účely mechanismus zbarvení text sady Visual Studio. Další informace o tomto mechanizmu, naleznete v tématu [pomocí písma a barvy](../../extensibility/using-fonts-and-colors.md).
 
 ## <a name="in-this-section"></a>V tomto oddílu
- [Implementace barevné zvýrazňování syntaxe](../../extensibility/internals/implementing-syntax-coloring.md) popisuje, jak editor přistupuje k službě jazyka barevné zvýrazňování syntaxe a služba jazyka musí implementovat pro podporu barevné zvýrazňování syntaxe.
+- [Implementace barevného zvýrazňování syntaxe](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [Postupy: Použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md) ukazuje, jak používat integrované které lze zabarvit položky ze služby jazyka.
+ Tento článek popisuje, jak editor přistupuje k službě jazyka barevné zvýrazňování syntaxe a služba jazyka musí implementovat pro podporu syntaxe barevné zvýrazňování.
 
- [Vlastní položky které lze zabarvit](../../extensibility/internals/custom-colorable-items.md) popisuje, jak implementovat vlastní, které lze zabarvit položky.
+- [Postupy: Použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ Ukazuje, jak používat integrované které lze zabarvit položky ze služby jazyka.
+
+- [Vlastní položky, které lze zabarvit](../../extensibility/internals/custom-colorable-items.md)
+
+ Popisuje, jak implementovat vlastní, které lze zabarvit položky.
 
 ## <a name="see-also"></a>Viz také
 

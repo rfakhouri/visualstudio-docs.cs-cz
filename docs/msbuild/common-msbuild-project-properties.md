@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020877"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610603"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
-V následující tabulce je často používané seznamy vlastností, které jsou definovány v souborech projektu sady Visual Studio nebo součástí *.targets* soubory, které poskytuje nástroj MSBuild.  
-  
- Soubory v sadě Visual Studio projektu (*.csproj*, *.vbproj*, *.vcxproj*a jiné) obsahují kód XML nástroje MSBuild, která se spouští při vytváření projektu pomocí rozhraní IDE. Projekty obvykle importují jeden nebo více *.targets* soubory pro definování jejich procesu sestavení. Další informace najdete v tématu [MSBuild – soubory .targets](../msbuild/msbuild-dot-targets-files.md).  
-  
-## <a name="list-of-common-properties-and-parameters"></a>Seznam běžných vlastností a parametrů  
-  
+V následující tabulce je často používané seznamy vlastností, které jsou definovány v souborech projektu sady Visual Studio nebo součástí *.targets* soubory, které poskytuje nástroj MSBuild.
+
+ Soubory v sadě Visual Studio projektu (*.csproj*, *.vbproj*, *.vcxproj*a jiné) obsahují kód XML nástroje MSBuild, která se spouští při vytváření projektu pomocí rozhraní IDE. Projekty obvykle importují jeden nebo více *.targets* soubory pro definování jejich procesu sestavení. Další informace najdete v tématu [MSBuild – soubory .targets](../msbuild/msbuild-dot-targets-files.md).
+
+## <a name="list-of-common-properties-and-parameters"></a>Seznam běžných vlastností a parametrů
+
 | Název vlastnosti nebo parametr | Popis |
 |------------------------------------| - |
 | AdditionalLibPaths | Určuje další složky, ve kterých by měly kompilátory hledat referenční sestavení. |
@@ -128,6 +128,6 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | WarningsNotAsErrors | Označí seznam upozornění, která nemají být považována za chyby. Tento parametr je ekvivalentní `/warnaserror` přepínač kompilátoru. |
 | Win32Manifest | Název souboru manifestu, který má být vložen v konečném sestavení. Tento parametr je ekvivalentní `/win32Manifest` přepínač kompilátoru. |
 | Win32Resource | Název souboru prostředků Win32, který má být vložen v konečném sestavení. Tento parametr je ekvivalentní `/win32resource` přepínač kompilátoru. |
-  
-## <a name="see-also"></a>Viz také:  
- [Společné položky projektu nástroje MSBuild](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>Viz také:
+- [Společné položky projektu nástroje MSBuild](../msbuild/common-msbuild-project-items.md)

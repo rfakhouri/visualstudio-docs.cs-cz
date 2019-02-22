@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c63e9293cffca2c1b071dcd537c0f49f8faa438
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853976"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615910"
 ---
 # <a name="generateresource-task"></a>GenerateResource – úloha
 Převádí mezi *.txt* a *RESX* (formát založený na formátu XML prostředků) soubory a binární common language runtime *.resources* soubory, které může být vložen do binárního modulu runtime spustitelný soubor nebo soubor zkompilovaný do satelitních sestavení. Tato úloha je obvykle používána pro převod *.txt* nebo *RESX* soubory *.resources* soubory. `GenerateResource` Úkolu je funkčně podobný [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
@@ -95,5 +95,5 @@ Za předpokladu, že sestavení má název myAssembly, následující kód vygen
 Bez \<LogicalName > metadata, by se pojmenoval prostředek *myAssembly.myResource.resources*.  Tento příklad se týká jenom procesem sestavení jazyka Visual Basic a Visual C#.
 
 ## <a name="see-also"></a>Viz také:
-[Úlohy](../msbuild/msbuild-tasks.md)  
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

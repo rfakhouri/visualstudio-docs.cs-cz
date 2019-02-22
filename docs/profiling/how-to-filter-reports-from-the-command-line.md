@@ -8,22 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55438c95bcb82306afde7c65c22f3f29b98578d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c90ca0bea8126308b1260258044cece53218fb3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069223"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624292"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Postupy: Filtrování sestav z příkazového řádku
-Pomocí možností **VSPerfReport** příkazu, můžete filtrovat sestavy k segmentu určený čas souboru dat profilování nebo omezit data na jeden nebo více procesů nebo vláken. Další informace o tomto příkazu najdete v tématu [VSPerfReport](../profiling/vsperfreport.md).  
-  
-|Možnosti|Popis|  
-|-------------|-----------------|  
-|**StartTime:**[*hodnotu*]|Zobrazit pouze data shromážděná za hodnotou (v milisekundách).|  
-|**EndTime:**[*hodnotu*]|Zobrazit pouze data shromážděná před hodnotou (v milisekundách).|  
-|**FilterFile:** `VSPFFile`|Určuje umístění souboru filtru, který byl vytvořen **sestavu výkonu Visual Studio** okna.|  
-|**MsFilter:**[*StartTime,Duration*]|Zobrazit pouze data od `StartTime` až do délky `Duration` (v milisekundách).|  
-|**Proces:**[*Pid*]|Zobrazit pouze data ze zadaného procesu.|  
-|**Vlákna:**[*Idvlákna*]|Zobrazit pouze data ze zadaného vlákna.|  
+Pomocí možností **VSPerfReport** příkazu, můžete filtrovat sestavy k segmentu určený čas souboru dat profilování nebo omezit data na jeden nebo více procesů nebo vláken. Další informace o tomto příkazu najdete v tématu [VSPerfReport](../profiling/vsperfreport.md).
+
+|Možnosti|Popis|
+|-------------|-----------------|
+|**StartTime:**[*hodnotu*]|Zobrazit pouze data shromážděná za hodnotou (v milisekundách).|
+|**EndTime:**[*hodnotu*]|Zobrazit pouze data shromážděná před hodnotou (v milisekundách).|
+|**FilterFile:** `VSPFFile`|Určuje umístění souboru filtru, který byl vytvořen **sestavu výkonu Visual Studio** okna.|
+|**MsFilter:**[*StartTime,Duration*]|Zobrazit pouze data od `StartTime` až do délky `Duration` (v milisekundách).|
+|**Proces:**[*Pid*]|Zobrazit pouze data ze zadaného procesu.|
+|**Vlákna:**[*Idvlákna*]|Zobrazit pouze data ze zadaného vlákna.|
 |**Vlákna:**[*Idvlákna, Idprocesu*]|Zobrazit pouze data ze zadaného vlákna, která souvisí se zadaným procesem.|

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0244aca54ffe7b68ea4cfd82be465c28524758ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e39693f63ea706ecdfa30a9ce0202444f51d4f57
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973483"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616102"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
-Získá enumerátor pro vlastnosti v rámci této sady.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Enum (   
-   IEnumSTATPROPSTG** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppenum`  
- [out] Vrátí `IEnumSTATPROPSTG` objekt (v oboru názvů sestavení Microsoft.VisualStudio.OLE.Interop) představující výčet vlastností.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Získá enumerátor pro vlastnosti v rámci této sady.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Enum ( 
+   IEnumSTATPROPSTG** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppenum`
+
+[out] Vrátí `IEnumSTATPROPSTG` objekt (v oboru názvů sestavení Microsoft.VisualStudio.OLE.Interop) představující výčet vlastností.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

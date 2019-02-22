@@ -12,28 +12,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521b7576293be30a1ce4e305ef355ef79e79a4f7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f960ebddbe5e58371f6a8bc7bd592be2fc2f25fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960461"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629427"
 ---
 # <a name="customtype"></a>CustomType
-Jsou označeny dodavatele definované typy (typy specifických pro kompilátor) `SymTagCustomType` symbol.  
-  
-## <a name="properties"></a>Vlastnosti  
- V následující tabulce jsou uvedeny další platné vlastnosti pro tento typ symbolu.  
-  
-|Vlastnost|Datový typ|Popis|  
-|--------------|---------------|-----------------|  
-|[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Identifikátor pro výrobce OEM.|  
-|[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|Interní ID výrobce OEM|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagCustomType` (jeden z [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|  
-|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|První typ odkázal: vlastní typ symbolu.|  
-|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID typu symbol.|  
-|[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Pole všech typů odkazuje vlastní typ symbolu.|  
-  
-## <a name="see-also"></a>Viz také  
- [Hierarchie tříd typů symbolů](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
+Jsou označeny dodavatele definované typy (typy specifických pro kompilátor) `SymTagCustomType` symbol.
+
+## <a name="properties"></a>Vlastnosti
+ V následující tabulce jsou uvedeny další platné vlastnosti pro tento typ symbolu.
+
+|Vlastnost|Datový typ|Popis|
+|--------------|---------------|-----------------|
+|[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Identifikátor pro výrobce OEM.|
+|[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|Interní ID výrobce OEM|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagCustomType` (jeden z [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|První typ odkázal: vlastní typ symbolu.|
+|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID typu symbol.|
+|[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Pole všech typů odkazuje vlastní typ symbolu.|
+
+## <a name="see-also"></a>Viz také
+- [Hierarchie tříd typů symbolů](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
