@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768421"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623824"
 ---
 # <a name="vbc-task"></a>Vbc – úloha
-Zabalí *vbc.exe*, která vytváří spustitelné soubory (*.exe*), dynamické knihovny (*.dll*), nebo moduly kódu (*.netmodule*). Další informace o *vbc.exe*, naleznete v tématu [příkazového řádku kompilátoru jazyka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
+Zabalí *vbc.exe*, která vytváří spustitelné soubory (*.exe*), dynamické knihovny (*.dll*), nebo moduly kódu (*.netmodule*). Další informace o *vbc.exe*, naleznete v tématu [příkazového řádku kompilátoru jazyka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `Vbc` úloh.  
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `Vbc` úloh.
 
 
 | Parametr | Popis |
@@ -88,21 +88,21 @@ Zabalí *vbc.exe*, která vytváří spustitelné soubory (*.exe*), dynamické k
 | `Win32Icon` | Volitelné `String` parametru.<br /><br /> Vloží *.ico* souboru v sestavení, které dává výstupnímu souboru požadovaný vzhled v **Průzkumníka souborů**. Tento parametr [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) přepnout z *vbc.exe* kompilátoru. |
 | `Win32Resources` | Volitelné `String` parametru.<br /><br /> Vloží prostředek systému Win32 (*.res*) soubor do výstupního souboru. Tento parametr [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) přepnout z *vbc.exe* kompilátoru. |
 
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Poznámky
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Příklad  
- Následující příklad se zkompiluje projekt jazyka Visual Basic.  
+## <a name="example"></a>Příklad
+ Následující příklad se zkompiluje projekt jazyka Visual Basic.
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>Viz také:  
- [Kompilátor příkazového řádku jazyka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Viz také:
+- [Kompilátor příkazového řádku jazyka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

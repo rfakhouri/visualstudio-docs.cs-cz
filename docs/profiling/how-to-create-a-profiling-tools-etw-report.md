@@ -8,33 +8,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b7c92c8cbbf500b44816fbb0f34e0df6f04720
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940931"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614464"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Postupy: Vytvoření sestavy Trasování událostí pro Windows nástrojů pro profilaci
-Sestava trasování událostí pro Windows (ETW) obsahuje události trasování událostí pro Windows, které jsou zaznamenány v relaci výkonu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci. Data trasování událostí pro Windows se shromažďují v binárním (. *ETL*) soubor. Další informace o této sestavě najdete v tématu [sestavy trasování událostí pro Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).  
-  
+Sestava trasování událostí pro Windows (ETW) obsahuje události trasování událostí pro Windows, které jsou zaznamenány v relaci výkonu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci. Data trasování událostí pro Windows se shromažďují v binárním (. *ETL*) soubor. Další informace o této sestavě najdete v tématu [sestavy trasování událostí pro Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).
+
 > [!NOTE]
->  Nelze zobrazit sestavy trasování událostí pro Windows v rozhraní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-- Informace o tom, jak shromažďování dat trasování událostí pro Windows pomocí rozhraní pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], naleznete v tématu [jak: Shromažďování dat trasování událostí pro Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
-  
-- Informace o tom, jak shromažďovat data trasování událostí pro Windows z příkazového řádku najdete v tématu [VSPerfCmd](../profiling/vsperfcmd.md) a [události](../profiling/events-vsperfcmd.md).  
-  
-  Generování sestavy trasování událostí pro Windows pomocí **VSReport / summary: etw** příkazu. Na. *etl* trasování událostí pro Windows, který obsahuje data musí být ve stejném adresáři jako dat profilování (. *Vsp* nebo. *vsps*) soubor. Ve výchozím nastavení je sestava generována jako hodnoty oddělené čárkou (. *sdílený svazek clusteru*) soubor. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md).  
-  
-### <a name="to-generate-an-etw-report"></a>Chcete-li generovat sestavu trasování událostí pro Windows  
-  
--   V **příkazového řádku** okno, zadejte na příkazovém řádku následující:  
-  
-     *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**  
-  
-    |||  
-    |-|-|  
-    |*ToolsPath*|Cesta nástroje pro profilaci. Další informace najdete v tématu [zadejte cestu k nástroji příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
-    |*VSPFile*|Dat profilování (. *Vsp* nebo. *vsps*) soubor. Jsou přijímány úplné a částečné cesty.|  
+>  Nelze zobrazit sestavy trasování událostí pro Windows v rozhraní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+- Informace o tom, jak shromažďování dat trasování událostí pro Windows pomocí rozhraní pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], naleznete v tématu [jak: Shromažďování dat trasování událostí pro Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
+
+- Informace o tom, jak shromažďovat data trasování událostí pro Windows z příkazového řádku najdete v tématu [VSPerfCmd](../profiling/vsperfcmd.md) a [události](../profiling/events-vsperfcmd.md).
+
+  Generování sestavy trasování událostí pro Windows pomocí **VSReport / summary: etw** příkazu. Na. *etl* trasování událostí pro Windows, který obsahuje data musí být ve stejném adresáři jako dat profilování (. *Vsp* nebo. *vsps*) soubor. Ve výchozím nastavení je sestava generována jako hodnoty oddělené čárkou (. *sdílený svazek clusteru*) soubor. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md).
+
+### <a name="to-generate-an-etw-report"></a>Chcete-li generovat sestavu trasování událostí pro Windows
+
+-   V **příkazového řádku** okno, zadejte na příkazovém řádku následující:
+
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
+
+    |||
+    |-|-|
+    |*ToolsPath*|Cesta nástroje pro profilaci. Další informace najdete v tématu [zadejte cestu k nástroji příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
+    |*VSPFile*|Dat profilování (. *Vsp* nebo. *vsps*) soubor. Jsou přijímány úplné a částečné cesty.|
     |XML|Generuje sestavu, která je ve formátu v jazyce XML.|

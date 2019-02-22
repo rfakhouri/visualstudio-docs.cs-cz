@@ -21,44 +21,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55035a214d98abd262f85c29c55bd633c0b35505
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a7a22e683f1db05544f235308dc5ba495f74095
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023717"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629518"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;nasazení&gt; – element (nasazení ClickOnce)
-Určuje atributy použité pro nasazení aktualizací a vystavení systému.  
+Určuje atributy použité pro nasazení aktualizací a vystavení systému.
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
+```xml
 
-      <deployment   
-   install  
-   minimumRequiredVersion  
-   mapFileExtensions  
-   disallowUrlActivation  
-   trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
-            <expiration  
-               maximumAge  
-               unit  
-            />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
-</deployment>  
-```  
+      <deployment
+   install
+   minimumRequiredVersion
+   mapFileExtensions
+   disallowUrlActivation
+   trustUrlParameters
+>
+   <subscription>
+         <update>
+            <beforeApplicationStartup/>
+            <expiration
+               maximumAge
+               unit
+            />
+         </update>
+   </subscription>
+   <deploymentProvider
+      codebase
+   />
+</deployment>
+```
 
-## <a name="elements-and-attributes"></a>Elementy a atributy  
- `deployment` Element je povinný a je v `urn:schemas-microsoft-com:asm.v1` oboru názvů. Element má následující atributy.  
+## <a name="elements-and-attributes"></a>Elementy a atributy
+ `deployment` Element je povinný a je v `urn:schemas-microsoft-com:asm.v1` oboru názvů. Element má následující atributy.
 
 
 | Atribut | Popis |
@@ -69,59 +69,59 @@ Určuje atributy použité pro nasazení aktualizací a vystavení systému.
 | `disallowUrlActivation` | Volitelné. Výchozí hodnota je `false`. Pokud `true`, brání aplikace nainstalované ze spuštění klepnutím na adresu URL nebo zadáním adresy URL do aplikace Internet Explorer. Pokud `install` atribut není k dispozici, tento atribut se ignoruje. |
 | `trustURLParameters` | Volitelné. Výchozí hodnota je `false`. Pokud `true`, umožňuje URL obsahuje parametry řetězce dotazu, které se předávají do aplikace, mnoho like příkazového řádku argumenty jsou předány do aplikace příkazového řádku. Další informace najdete v tématu [jak: Načtení informací řetězce dotazu do Online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Pokud `disallowUrlActivation` atribut je `true`, `trustUrlParameters` musí být vyloučeny z manifestu nebo explicitně nastavit na `false`. |
 
- `deployment` Element obsahuje také následující podřízené prvky.  
+ `deployment` Element obsahuje také následující podřízené prvky.
 
-## <a name="subscription"></a>předplatné  
- Volitelné. Obsahuje `update` elementu. `subscription` Prvek nemá žádné atributy. Pokud `subscription` element neexistuje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se nikdy vyhledat aktualizace. Pokud `install` atribut `deployment` element je `false`, `subscription` prvek je ignorován, protože [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci, která se spustí ze sítě, vždy používá nejnovější verzi.  
+## <a name="subscription"></a>předplatné
+ Volitelné. Obsahuje `update` elementu. `subscription` Prvek nemá žádné atributy. Pokud `subscription` element neexistuje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se nikdy vyhledat aktualizace. Pokud `install` atribut `deployment` element je `false`, `subscription` prvek je ignorován, protože [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci, která se spustí ze sítě, vždy používá nejnovější verzi.
 
-## <a name="update"></a>update  
- Povinný parametr. Tento element je podřízeným prvkem `subscription` elementu a obsahuje buď `beforeApplicationStartup` nebo `expiration` elementu. `beforeApplicationStartup` a `expiration` nelze zadat současně ve stejném manifestu nasazení.  
+## <a name="update"></a>update
+ Povinný parametr. Tento element je podřízeným prvkem `subscription` elementu a obsahuje buď `beforeApplicationStartup` nebo `expiration` elementu. `beforeApplicationStartup` a `expiration` nelze zadat současně ve stejném manifestu nasazení.
 
- `update` Prvek nemá žádné atributy.  
+ `update` Prvek nemá žádné atributy.
 
-## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
- Volitelné. Tento element je podřízeným prvkem `update` elementu a nemá žádné atributy. Když `beforeApplicationStartup` existuje element, aplikace bude blokována, pokud [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zjišťuje dostupnost aktualizací, pokud klient je online. Pokud tento prvek neexistuje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nejprve vyhledá aktualizace na základě hodnot pro zadaný `expiration` elementu. `beforeApplicationStartup` a `expiration` nelze zadat současně ve stejném manifestu nasazení.  
+## <a name="beforeapplicationstartup"></a>beforeApplicationStartup
+ Volitelné. Tento element je podřízeným prvkem `update` elementu a nemá žádné atributy. Když `beforeApplicationStartup` existuje element, aplikace bude blokována, pokud [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zjišťuje dostupnost aktualizací, pokud klient je online. Pokud tento prvek neexistuje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nejprve vyhledá aktualizace na základě hodnot pro zadaný `expiration` elementu. `beforeApplicationStartup` a `expiration` nelze zadat současně ve stejném manifestu nasazení.
 
-## <a name="expiration"></a>vypršení platnosti  
- Volitelné. Tento element je podřízeným prvkem `update` elementu a nemá žádné podřízené položky. `beforeApplicationStartup` a `expiration` nelze zadat současně ve stejném manifestu nasazení. Pokud dojde k kontrolu aktualizací a je zjištěna aktualizovanou verzi, nová verze ukládá do mezipaměti průběhu stávající verzi. Nová verze se potom nainstaluje při příštím spuštění aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
+## <a name="expiration"></a>vypršení platnosti
+ Volitelné. Tento element je podřízeným prvkem `update` elementu a nemá žádné podřízené položky. `beforeApplicationStartup` a `expiration` nelze zadat současně ve stejném manifestu nasazení. Pokud dojde k kontrolu aktualizací a je zjištěna aktualizovanou verzi, nová verze ukládá do mezipaměti průběhu stávající verzi. Nová verze se potom nainstaluje při příštím spuštění aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.
 
- `expiration` Element podporuje následující atributy.  
+ `expiration` Element podporuje následující atributy.
 
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`maximumAge`|Povinný parametr. Určuje, kolik aktuální aktualizace by měla být předtím, než zkontroluje aktualizace aplikace. Jednotka času je určeno `unit` atribut.|  
-|`unit`|Povinný parametr. Jednotka času pro identifikuje `maximumAge`. Jsou platné jednotky `hours`, `days`, a `weeks`.|  
+|Atribut|Popis|
+|---------------|-----------------|
+|`maximumAge`|Povinný parametr. Určuje, kolik aktuální aktualizace by měla být předtím, než zkontroluje aktualizace aplikace. Jednotka času je určeno `unit` atribut.|
+|`unit`|Povinný parametr. Jednotka času pro identifikuje `maximumAge`. Jsou platné jednotky `hours`, `days`, a `weeks`.|
 
-## <a name="deploymentprovider"></a>deploymentProvider  
- Pro rozhraní .NET Framework 2.0, tento element je povinný, pokud obsahuje manifest nasazení `subscription` oddílu. Pro rozhraní .NET Framework 3.5 a novější Tento element je volitelný a budou ve výchozím nastavení serveru a cestu souboru, ve kterém bylo zjištěno manifest nasazení.  
+## <a name="deploymentprovider"></a>deploymentProvider
+ Pro rozhraní .NET Framework 2.0, tento element je povinný, pokud obsahuje manifest nasazení `subscription` oddílu. Pro rozhraní .NET Framework 3.5 a novější Tento element je volitelný a budou ve výchozím nastavení serveru a cestu souboru, ve kterém bylo zjištěno manifest nasazení.
 
- Tento element je podřízeným prvkem `deployment` elementu a nemá tento atribut.  
+ Tento element je podřízeným prvkem `deployment` elementu a nemá tento atribut.
 
 
 | Atribut | Popis |
 |------------| - |
 | `codebase` | Povinný parametr. Určuje umístění, jako identifikátor URI (Uniform Resource), manifest nasazení, který se používá k aktualizaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Tento prvek umožňuje také předávání umístění aktualizace pro instalace z disku CD-ROM. Musí být platný identifikátor URI. |
 
-## <a name="remarks"></a>Poznámky  
- Můžete nakonfigurovat váš [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vyhledávání aktualizací po spuštění aplikace můžete spustit kontrolu aktualizací při spuštění, nebo nikdy nevyhledávat aktualizace. Můžete spustit kontrolu aktualizací při spuštění, ujistěte se, že `beforeApplicationStartup` existuje element v rámci `update` elementu. Kontrola aktualizací po spuštění, ujistěte se, že `expiration` existuje element v rámci `update` element a jsou k dispozici intervalů aktualizace.  
+## <a name="remarks"></a>Poznámky
+ Můžete nakonfigurovat váš [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vyhledávání aktualizací po spuštění aplikace můžete spustit kontrolu aktualizací při spuštění, nebo nikdy nevyhledávat aktualizace. Můžete spustit kontrolu aktualizací při spuštění, ujistěte se, že `beforeApplicationStartup` existuje element v rámci `update` elementu. Kontrola aktualizací po spuštění, ujistěte se, že `expiration` existuje element v rámci `update` element a jsou k dispozici intervalů aktualizace.
 
- Chcete-li zakázat, vyhledávají se aktualizace, odeberte `subscription` elementu. Při zadávání v manifestu nasazení, aby nikdy vyhledat aktualizace, je můžete ručně zkontrolovat aktualizace pomocí <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> metody.  
+ Chcete-li zakázat, vyhledávají se aktualizace, odeberte `subscription` elementu. Při zadávání v manifestu nasazení, aby nikdy vyhledat aktualizace, je můžete ručně zkontrolovat aktualizace pomocí <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> metody.
 
- Další informace o jak deploymentProvider souvisí s aktualizací najdete v tématu [Výběr strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Další informace o jak deploymentProvider souvisí s aktualizací najdete v tématu [Výběr strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
-## <a name="examples"></a>Příklady  
- Následující příklad kódu ukazuje `deployment` prvek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu nasazení. V příkladu se používá `deploymentProvider` – element pro označení umístění upřednostňované aktualizace.  
+## <a name="examples"></a>Příklady
+ Následující příklad kódu ukazuje `deployment` prvek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu nasazení. V příkladu se používá `deploymentProvider` – element pro označení umístění upřednostňované aktualizace.
 
-```xml  
-<deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">  
-    <subscription>  
-      <update>  
-        <expiration maximumAge="6" unit="hours" />  
-      </update>  
-    </subscription>  
-    <deploymentProvider codebase="http://www.adatum.com/MyApplication.application" />  
-  </deployment>  
-```  
+```xml
+<deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">
+    <subscription>
+      <update>
+        <expiration maximumAge="6" unit="hours" />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://www.adatum.com/MyApplication.application" />
+  </deployment>
+```
 
-## <a name="see-also"></a>Viz také:  
- [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Viz také:
+- [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md)
