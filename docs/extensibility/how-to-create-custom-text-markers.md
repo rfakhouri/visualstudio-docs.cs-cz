@@ -10,85 +10,85 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93128e22d3bb70a0ff9cfb9b5b56e8c4e7c463f5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5d03c7b96a6329775db426f7306dcf4cf60ca0e4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030389"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712031"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Postupy: Vytvoření vlastního textu značky
-Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu, je nutné provést následující kroky:  
-  
-- Zaregistrujte nový text značky, tak, aby k němu mají přístup jiných nástrojů.  
-  
-- Zadejte výchozí implementace a konfigurace text značky.  
-  
-- Vytvoření služby, které lze použít s jinými procesy, aby používat text značky.  
-  
-  Podrobnosti o tom, jak použít text značky do oblasti kódu najdete v tématu [jak: Použití značek text](../extensibility/how-to-use-text-markers.md).  
-  
-## <a name="to-register-a-custom-marker"></a>Chcete-li zaregistrovat vlastní značky  
-  
-1. Vytvořte položku registru následujícím způsobem:  
-  
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version>\Text Editor\External Markers\\\<MarkerGUID>**  
-  
-    *\<MarkerGUID >* je `GUID` slouží k identifikaci značky přidávaný  
-  
-    `<Version>` je verze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], například 8.0  
-  
-    `<PackageGUID>` identifikátor GUID sady VSPackage implementuje objekt automatizace.  
-  
+Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu, je nutné provést následující kroky:
+
+- Zaregistrujte nový text značky, tak, aby k němu mají přístup jiných nástrojů.
+
+- Zadejte výchozí implementace a konfigurace text značky.
+
+- Vytvoření služby, které lze použít s jinými procesy, aby používat text značky.
+
+  Podrobnosti o tom, jak použít text značky do oblasti kódu najdete v tématu [jak: Použití značek text](../extensibility/how-to-use-text-markers.md).
+
+## <a name="to-register-a-custom-marker"></a>Chcete-li zaregistrovat vlastní značky
+
+1. Vytvořte položku registru následujícím způsobem:
+
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version>\Text Editor\External Markers\\\<MarkerGUID>**
+
+    *\<MarkerGUID >* je `GUID` slouží k identifikaci značky přidávaný
+
+    `<Version>` je verze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], například 8.0
+
+    `<PackageGUID>` identifikátor GUID sady VSPackage implementuje objekt automatizace.
+
    > [!NOTE]
-   >  Kořenová cesta **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze >** monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).  
-  
-2. Vytvořit čtyři hodnoty v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze > \Text Editor\External značky\\\<MarkerGUID >**  
-  
-   -   (Výchozí)  
-  
-   -   Služba  
-  
-   -   displayName  
-  
-   -   Balíček  
-  
-   -   `Default` je typ REG_SZ volitelné položky. Pokud nastavíte hodnotu položky je řetězec obsahující některé užitečné identifikační informace, například "vlastní Text značky".  
-  
-   -   `Service` je typ REG_SZ položky obsahující řetězec GUID služby, která poskytuje vlastní text značky tím, že proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Formát je {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
-  
-   -   `DisplayName` je typ REG_SZ položky obsahující ID prostředku názvu značky vlastní text. Formát je #YYYY.  
-  
-   -   `Package` je záznam obsahující typ REG_SZ `GUID` sady VSPackage, která poskytuje služby uvedené v části služby. Formát je {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
-  
-## <a name="to-create-a-custom-text-marker"></a>Chcete-li vytvořit vlastní text značky  
-  
-1.  Implementujte rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
-  
-     Implementace tohoto rozhraní definuje chování a vzhled typu vlastní značky.  
-  
-     Toto rozhraní je volána, když  
-  
-    1.  Uživatel spustí rozhraní IDE poprvé.  
-  
-    2.  Uživatel vybere **obnovit výchozí nastavení** tlačítko **písma a barvy** stránku vlastností v **prostředí** složku, v levém podokně  **Možnosti** dialogové okno získaných **nástroje** nabídky integrovaného vývojového prostředí.  
-  
-2.  Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> metoda zadání která `IVsPackageDefinedTextMarkerType` implementace by měl být vrací na základě značky typu zadaný ve volání metody identifikátor GUID.  
-  
-     Prostředí volá tuto chvíli metoda první typ vaše vlastní značky se vytvoří a určuje identifikátor GUID určující typ vlastní značky.  
-  
-## <a name="to-proffer-your-marker-type-as-a-service"></a>Chcete-li nabídnout váš typ značky jako služba  
-  
-1.  Volání <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> metodu <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
-  
-     Ukazatel na <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> je vrácena.  
-  
-2.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> metoda zadání identifikátoru GUID identifikující váš vlastní značky typu služby a poskytuje ukazatel na implementaci <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní. Vaše <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementace by měla vrátit ukazatel na implementaci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> rozhraní.  
-  
-     Jedinečný soubor cookie, který identifikuje vaši službu, je vrácena. Později můžete tento soubor cookie k odvolání vlastní značku služby typu při volání <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metodu <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> rozhraní zadání této hodnoty souboru cookie.  
-  
-## <a name="see-also"></a>Viz také:  
- [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md)   
- [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
- [Postupy: Použití značek text](../extensibility/how-to-use-text-markers.md)
+   >  Kořenová cesta **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze >** monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).
+
+2. Vytvořit čtyři hodnoty v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze > \Text Editor\External značky\\\<MarkerGUID >**
+
+   -   (Výchozí)
+
+   -   Služba
+
+   -   displayName
+
+   -   Balíček
+
+   -   `Default` je typ REG_SZ volitelné položky. Pokud nastavíte hodnotu položky je řetězec obsahující některé užitečné identifikační informace, například "vlastní Text značky".
+
+   -   `Service` je typ REG_SZ položky obsahující řetězec GUID služby, která poskytuje vlastní text značky tím, že proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Formát je {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
+
+   -   `DisplayName` je typ REG_SZ položky obsahující ID prostředku názvu značky vlastní text. Formát je #YYYY.
+
+   -   `Package` je záznam obsahující typ REG_SZ `GUID` sady VSPackage, která poskytuje služby uvedené v části služby. Formát je {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
+
+## <a name="to-create-a-custom-text-marker"></a>Chcete-li vytvořit vlastní text značky
+
+1.  Implementujte rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.
+
+     Implementace tohoto rozhraní definuje chování a vzhled typu vlastní značky.
+
+     Toto rozhraní je volána, když
+
+    1.  Uživatel spustí rozhraní IDE poprvé.
+
+    2.  Uživatel vybere **obnovit výchozí nastavení** tlačítko **písma a barvy** stránku vlastností v **prostředí** složku, v levém podokně  **Možnosti** dialogové okno získaných **nástroje** nabídky integrovaného vývojového prostředí.
+
+2.  Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> metoda zadání která `IVsPackageDefinedTextMarkerType` implementace by měl být vrací na základě značky typu zadaný ve volání metody identifikátor GUID.
+
+     Prostředí volá tuto chvíli metoda první typ vaše vlastní značky se vytvoří a určuje identifikátor GUID určující typ vlastní značky.
+
+## <a name="to-proffer-your-marker-type-as-a-service"></a>Chcete-li nabídnout váš typ značky jako služba
+
+1.  Volání <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> metodu <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.
+
+     Ukazatel na <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> je vrácena.
+
+2.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> metoda zadání identifikátoru GUID identifikující váš vlastní značky typu služby a poskytuje ukazatel na implementaci <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní. Vaše <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementace by měla vrátit ukazatel na implementaci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> rozhraní.
+
+     Jedinečný soubor cookie, který identifikuje vaši službu, je vrácena. Později můžete tento soubor cookie k odvolání vlastní značku služby typu při volání <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metodu <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> rozhraní zadání této hodnoty souboru cookie.
+
+## <a name="see-also"></a>Viz také:
+- [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)
+- [Postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md)
+- [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)
+- [Postupy: Použití značek text](../extensibility/how-to-use-text-markers.md)

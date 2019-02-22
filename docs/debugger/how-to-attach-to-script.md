@@ -18,55 +18,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d2a2cbd3cfe59b1d110fdd8b0b7c5fd042d25c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2402cbc4f4a1fa37c4317c6616fc02e4fa34e59d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937324"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686077"
 ---
 # <a name="how-to-attach-to-script"></a>Postupy: Připojení ke skriptu
-Toto téma vysvětluje, jak ručně připojit ladicí program sady Visual Studio do souboru skriptu pro ladění.  
-  
-### <a name="to-attach-to-a-running-process"></a>Připojit ke spuštěnému procesu  
-  
-1. Na **ladění** nabídce zvolte **připojit k procesu**. (Pokud není otevřený žádný projekt, zvolte **připojit k procesu** na **nástroje** nabídky.)  
-  
-2. V **připojit k procesu** dialogové okno, podívejte se **procesy k dispozici** seznam a vyhledejte zpracovat skript, můžete ke kterému chcete připojit k. Procesy skriptu můžete identifikovat pohledem **typ** sloupce.  
-  
+Toto téma vysvětluje, jak ručně připojit ladicí program sady Visual Studio do souboru skriptu pro ladění.
+
+### <a name="to-attach-to-a-running-process"></a>Připojit ke spuštěnému procesu
+
+1. Na **ladění** nabídce zvolte **připojit k procesu**. (Pokud není otevřený žádný projekt, zvolte **připojit k procesu** na **nástroje** nabídky.)
+
+2. V **připojit k procesu** dialogové okno, podívejte se **procesy k dispozici** seznam a vyhledejte zpracovat skript, můžete ke kterému chcete připojit k. Procesy skriptu můžete identifikovat pohledem **typ** sloupce.
+
    1.  Pokud je proces, který chcete ladit spuštěn na jiném počítači, musíte nejprve vybrat vzdálený počítač.
-  
-   2.  Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.  
-  
-   3.  Pokud jste připojeni přes **připojení ke vzdálené ploše**, vyberte **Zobrazit procesy ve všech relacích** zaškrtávací políčko.  
-  
-3. Klikněte na tlačítko, které chcete připojit k procesu.  
-  
-4. V **připojit k** pole, měli byste vidět **kód skriptu** nebo **automatické: Kód skriptu**. Pokud se zobrazí cokoli jiného, postupujte podle těchto kroků:  
-  
-   1.  Klikněte na tlačítko **vyberte**.  
-  
-   2.  V **vybrat typ kódu** dialogové okno, klikněte na tlačítko **ladit tyto typy kódu** a vyberte **skript**.  
-  
-   3.  Klikněte na **OK**.  
-  
-5. Klikněte na tlačítko **připojit**.  
-  
-    V tomto okamžiku může zobrazit upozornění oznamující, že je v aplikaci Internet Explorer zakázáno ladění skriptů. Pokud k tomu dojde, přečtěte si téma [upozornění: Ladění skriptů zakázáno](../debugger/warning-script-debugging-disabled.md).  
-  
-   **Procesy k dispozici** seznam se automaticky zobrazí při otevření **procesy** dialogové okno. Procesy můžete spouštět a zastavovat na pozadí při otevřeném dialogovém okně. Proto obsah nemusí být vždy aktuální. Můžete aktualizovat seznam kdykoli zobrazit aktuální seznam procesů stisknutím kombinace kláves **aktualizovat** tlačítko.  
-  
-   Můžete být připojení k více programům při ladění, ale pouze jeden program je v každém okamžiku aktivní v ladicím programu. Nastavit aktivní program na panelu nástrojů umístění ladění. Další informace najdete v tématu [jak: Nastavit aktuální proces](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
-  
-   Všechny **ladění** provádění příkazy vliv na aktivní program. V dialogovém okně procesy můžete přerušit všechny ladícího programu. Zobrazit [pomocí zarážek](../debugger/using-breakpoints.md).  
-  
+
+   2.  Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.
+
+   3.  Pokud jste připojeni přes **připojení ke vzdálené ploše**, vyberte **Zobrazit procesy ve všech relacích** zaškrtávací políčko.
+
+3. Klikněte na tlačítko, které chcete připojit k procesu.
+
+4. V **připojit k** pole, měli byste vidět **kód skriptu** nebo **automatické: Kód skriptu**. Pokud se zobrazí cokoli jiného, postupujte podle těchto kroků:
+
+   1.  Klikněte na tlačítko **vyberte**.
+
+   2.  V **vybrat typ kódu** dialogové okno, klikněte na tlačítko **ladit tyto typy kódu** a vyberte **skript**.
+
+   3.  Klikněte na **OK**.
+
+5. Klikněte na tlačítko **připojit**.
+
+    V tomto okamžiku může zobrazit upozornění oznamující, že je v aplikaci Internet Explorer zakázáno ladění skriptů. Pokud k tomu dojde, přečtěte si téma [upozornění: Ladění skriptů zakázáno](../debugger/warning-script-debugging-disabled.md).
+
+   **Procesy k dispozici** seznam se automaticky zobrazí při otevření **procesy** dialogové okno. Procesy můžete spouštět a zastavovat na pozadí při otevřeném dialogovém okně. Proto obsah nemusí být vždy aktuální. Můžete aktualizovat seznam kdykoli zobrazit aktuální seznam procesů stisknutím kombinace kláves **aktualizovat** tlačítko.
+
+   Můžete být připojení k více programům při ladění, ale pouze jeden program je v každém okamžiku aktivní v ladicím programu. Nastavit aktivní program na panelu nástrojů umístění ladění. Další informace najdete v tématu [jak: Nastavit aktuální proces](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).
+
+   Všechny **ladění** provádění příkazy vliv na aktivní program. V dialogovém okně procesy můžete přerušit všechny ladícího programu. Zobrazit [pomocí zarážek](../debugger/using-breakpoints.md).
+
 > [!NOTE]
->  Pokud se pokusíte připojit k procesu, který je vlastněn nedůvěryhodným uživatelským účtem, zobrazí se potvrzovací dialogové okno s upozorněním zabezpečení. Další informace najdete v tématu [upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
-  
- V některých případech při ladění v relaci Terminálové služby (Vzdálená plocha), seznam dostupných procesů nezobrazí všechny procesy k dispozici. Na [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] nebo novější verze, pokud používáte sadu Visual Studio jako uživatel s omezenými právy, seznam dostupných procesů nezobrazí procesy spuštěné v relaci 0, které se používá pro služby a ostatních serverové procesy, včetně w3wp.exe. Problém můžete vyřešit spuštěním sady Visual Studio pod administrátorským účtem nebo pomocí sady Visual Studio z konzoly serveru místo relace Terminálové služby. Pokud ani jeden z těchto řešení je možné, třetí možnost je připojit k procesu tak, že zadáte vsjitdebugger.exe -p ProcessId na příkazovém řádku Windows. Id procesu můžete určit pomocí tlist.exe. Chcete-li získat tlist.exe, stáhněte a nainstalujte ladění nástroje pro Windows, k dispozici na [Windows Hardware pro vývojáře centrální](/windows-hardware/drivers/dashboard/).  
-  
-## <a name="see-also"></a>Viz také  
- [Ladění skriptů na straně klienta](../debugger/client-side-script-debugging.md)   
- [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [Zabezpečení ladicího programu](../debugger/debugger-security.md)
+>  Pokud se pokusíte připojit k procesu, který je vlastněn nedůvěryhodným uživatelským účtem, zobrazí se potvrzovací dialogové okno s upozorněním zabezpečení. Další informace najdete v tématu [upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+
+ V některých případech při ladění v relaci Terminálové služby (Vzdálená plocha), seznam dostupných procesů nezobrazí všechny procesy k dispozici. Na [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] nebo novější verze, pokud používáte sadu Visual Studio jako uživatel s omezenými právy, seznam dostupných procesů nezobrazí procesy spuštěné v relaci 0, které se používá pro služby a ostatních serverové procesy, včetně w3wp.exe. Problém můžete vyřešit spuštěním sady Visual Studio pod administrátorským účtem nebo pomocí sady Visual Studio z konzoly serveru místo relace Terminálové služby. Pokud ani jeden z těchto řešení je možné, třetí možnost je připojit k procesu tak, že zadáte vsjitdebugger.exe -p ProcessId na příkazovém řádku Windows. Id procesu můžete určit pomocí tlist.exe. Chcete-li získat tlist.exe, stáhněte a nainstalujte ladění nástroje pro Windows, k dispozici na [Windows Hardware pro vývojáře centrální](/windows-hardware/drivers/dashboard/).
+
+## <a name="see-also"></a>Viz také
+- [Ladění skriptů na straně klienta](../debugger/client-side-script-debugging.md)
+- [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Zabezpečení ladicího programu](../debugger/debugger-security.md)

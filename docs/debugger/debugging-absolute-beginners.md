@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484222"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713149"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -101,7 +101,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
     Aplikace se spustí a neexistují žádné výjimky uvedené nám ladicím programem. Výstupem, který se zobrazí v okně konzoly je však nesplňuje vaše očekávání. Tady je očekávaný výstup:
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
     Ale to uvidíme místo:
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Pokud nastavíte zarážku, zobrazí se červená tečka na levém okraji.
@@ -247,13 +247,13 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
 1. Procházení kódu související s galaxy typ nastavení, najdete `GalaxyType` vlastnost `Galaxy` třída zadaná jako `object` místo `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Změna předcházející kód:
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Klikněte na tlačítko **restartovat** ![restartovat aplikaci](../debugger/media/dbg-tour-restart.png "RestartApp") tlačítko na panelu nástrojů ladění (**Ctrl** + **Shift**   +  **F5**) znovu zkompilovat kód a znovu spusťte.
@@ -265,8 +265,8 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
     Aplikace se spustí a zobrazí výstup. Vypadá to docela kvalitní nyní, ale Všimněte si jednu věc; očekáváte malé Magellanic cloudu galaxy zobrazí jako nestandardní galaxy ve výstupu konzoly, ale žádný typ galaxy vůbec zobrazí.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
 
 1. Klikněte na tlačítko **restartovat** ![restartovat aplikaci](../debugger/media/dbg-tour-restart.png "RestartApp") tlačítko na panelu nástrojů ladění (**Ctrl** + **Shift**   +  **F5**) k restartování.
 
-    Ladicí program pozastaví na řádek kódu, kde nastavit zarážku.  
+    Ladicí program pozastaví na řádek kódu, kde nastavit zarážku.
 
 1. Najeďte myší `type` proměnné. Zobrazí hodnotu `S` (následující kód znaku). Máte zájem hodnotu `I`, protože víte, který je nestandardní galaxy typu.
 
@@ -323,7 +323,7 @@ Když najdete oblasti kódu s problémem, který pomocí ladicího programu k pr
 * Zkontrolujte, jestli vaše aplikace spouští kód, který očekáváte. (Například v ukázkové aplikaci očekávali jsme kód pro příkaz switch postup nastavení typu galaxy nestandardní, ale aplikace přeskočeno kódu z důvodu překlep.)
 
 > [!TIP]
-> Pomocí ladicího programu můžete najít chyby. Ladicí nástroj pomůže hledat chyby *za vás* pouze v případě, že zná záměru kódu. Nástroj lze pouze vědět záměru kódu, pokud vás jako na vývojáři express tohoto záměru. Zápis [testování částí](../test/improve-code-quality.md) je, jak to udělat. 
+> Pomocí ladicího programu můžete najít chyby. Ladicí nástroj pomůže hledat chyby *za vás* pouze v případě, že zná záměru kódu. Nástroj lze pouze vědět záměru kódu, pokud vás jako na vývojáři express tohoto záměru. Zápis [testování částí](../test/improve-code-quality.md) je, jak to udělat.
 
 ## <a name="next-steps"></a>Další kroky
 

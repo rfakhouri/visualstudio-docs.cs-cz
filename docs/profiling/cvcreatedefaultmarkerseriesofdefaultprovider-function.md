@@ -12,37 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 036eba6fd1c25b475b703f49e1841c647d5fbd9a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a13174b2991b7c69535a6d1910f761890397818
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962167"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642791"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Cvcreatedefaultmarkerseriesofdefaultprovider – funkce
-Vytvoří výchozí značky řady výchozího zprostředkovatele.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C  
-HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(  
-   _Out_ PCV_PROVIDER* ppProvider,  
-   _Out_ PCV_MARKERSERIES* ppMarkerSeries  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppProvider`  
- Adresa proměnné objektu zprostředkovatele. Adresa nesmí být NULL, proměnná může mít libovolnou hodnotu.  
-  
- `ppMarkerSeries`  
- Adresa proměnné objektu značky řady. Adresa nesmí být NULL, proměnná může mít libovolnou hodnotu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- S_OK při řady zprostředkovatele a značky se úspěšně vytvořil nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
-  
-## <a name="requirements"></a>Požadavky  
- **Header:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)
+Vytvoří výchozí značky řady výchozího zprostředkovatele.
+
+## <a name="syntax"></a>Syntaxe
+
+```C
+HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
+   _Out_ PCV_PROVIDER* ppProvider,
+   _Out_ PCV_MARKERSERIES* ppMarkerSeries
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppProvider` Adresa proměnné objektu zprostředkovatele. Adresa nesmí být NULL, proměnná může mít libovolnou hodnotu.
+
+ `ppMarkerSeries` Adresa proměnné objektu značky řady. Adresa nesmí být NULL, proměnná může mít libovolnou hodnotu.
+
+## <a name="return-value"></a>Návratová hodnota
+ S_OK při řady zprostředkovatele a značky se úspěšně vytvořil nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.
+
+## <a name="requirements"></a>Požadavky
+ **Header:** *cvmarkers.h*
+
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

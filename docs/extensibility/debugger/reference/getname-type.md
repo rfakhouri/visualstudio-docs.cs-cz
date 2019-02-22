@@ -1,7 +1,7 @@
 ---
 title: GETNAME_TYPE | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - GETNAME_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba394d725afd45664ad6cf4f69c9e048b7e1a74d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413108"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701716"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Určuje název typu souborů, které mají načíst.
@@ -50,26 +50,19 @@ public enum enum_GETNAME_TYPE {
 ```
 
 ## <a name="members"></a>Členové
-GN_NAME  
-Určuje popisný název dokumentu nebo kontext.
+GN_NAME Určuje popisný název dokumentu nebo kontext.
 
-GN_FILENAME  
-Určuje úplnou cestu dokumentu nebo kontext.
+GN_FILENAME Určuje úplnou cestu dokumentu nebo kontext.
 
-GN_BASENAME  
-Určuje název základního souboru místo úplnou cestu k dokumentu nebo kontext.
+GN_BASENAME Určuje název základního souboru místo úplnou cestu k dokumentu nebo kontext.
 
-GN_MONIKERNAME  
-Určuje jedinečný název dokumentu nebo kontext ve formě monikeru.
+GN_MONIKERNAME Určuje jedinečný název dokumentu nebo kontext ve formě monikeru.
 
-GN_URL  
-Určuje název adresy URL dokumentu nebo kontext.
+GN_URL Určuje název adresy URL dokumentu nebo kontext.
 
-GN_TITLE  
-Určuje název dokumentu, pokud existuje.
+GN_TITLE Určuje název dokumentu, pokud existuje.
 
-GN_STARTPAGEURL  
-Získá počáteční adresa URL stránky pro procesy.
+Získá GN_STARTPAGEURL počáteční adresa URL pro stránky zpracovává.
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou předány jako parametry [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), a [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody k určení, jaký typ název, který vrátí.
@@ -82,7 +75,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)  
-[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)  
-[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)
+- [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)
+- [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227391"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692265"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Výrazy v ladicím programu sady Visual Studio
 Ladicího programu sady Visual Studio obsahuje hodnotitele výrazu, které pracují při zadání výrazu v **QuickWatch** dialogovém okně **Watch** okna, nebo **okamžité** okna. Vyhodnocení výrazu jsou také v práci **zarážky** okno a mnoha dalších místech v ladicím programu.
@@ -205,7 +205,7 @@ Nelze deklarovat explicitní nové proměnné v ladicím programu systému windo
 - Namespace nebo modul úroveň klíčová slova, jako například `End Sub` nebo `Module`.
 
 ## <a name="see-also"></a>Viz také
-[Specifikátory formátu v jazyce C++](../debugger/format-specifiers-in-cpp.md)  
-[Kontextový operátor (C++)](../debugger/context-operator-cpp.md)  
-[Specifikátory formátu v jazyce C#](../debugger/format-specifiers-in-csharp.md)  
-[Pseudoproměnné](../debugger/pseudovariables.md)
+- [Specifikátory formátu v jazyce C++](../debugger/format-specifiers-in-cpp.md)
+- [Kontextový operátor (C++)](../debugger/context-operator-cpp.md)
+- [Specifikátory formátu v jazyce C#](../debugger/format-specifiers-in-csharp.md)
+- [Pseudoproměnné](../debugger/pseudovariables.md)

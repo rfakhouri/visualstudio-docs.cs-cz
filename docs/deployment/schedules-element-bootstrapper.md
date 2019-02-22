@@ -15,53 +15,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccba6de5795dd461c2a68f6aeeb593314ceede09
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962479"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639424"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Plány&gt; – element (zaváděcí nástroj)
-`Schedules` Obsahuje element `Schedule` prvky, které definují konkrétní časy, ve které příkazy určené `Command` element by měl být spuštěn.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
+`Schedules` Obsahuje element `Schedule` prvky, které definují konkrétní časy, ve které příkazy určené `Command` element by měl být spuštěn.
+
+## <a name="syntax"></a>Syntaxe
+
 ```xml
-<Schedules>  
-    <Schedule  
-        Name  
-    >  
-        <BuildList />  
-        <BeforePackage />  
-        <AfterPackage />  
-    </Schedule>  
-</Schedules>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementy a atributy  
- `Schedules` Element je podřízeným prvkem `Product` elementu. Každý `Product` element může obsahovat nanejvýš jeden `Schedules` elementu. `Schedules` Prvek nemá žádné atributy.  
-  
-## <a name="schedule"></a>Plán  
- `Schedule` Element je podřízeným prvkem `Schedules` elementu. A `Schedules` element musí mít aspoň jeden `Schedule` elementu.  
-  
- `Schedule` má následující atribut.  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`Name`|Povinný parametr. Název položky plánu. To odpovídá `ScheduleName` vlastnost `Command` elementu. Když `Command` odkazuje na pojmenovanou plánu, bude spuštěn pouze v době uvedené díky tomu `Schedule` element. Plány mohou také být přiřazena `FailIf` a `BypassIf` prvky, které omezují tyto testy podmíněného spouštění podle zadaného plánu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
-  
- A vzhledem `Schedule` element může mít nastavený právě jeden z následujících podřízených prvků.  
-  
-## <a name="buildlist"></a>BuildList  
- `BuildList` Element dává pokyn k provedení příkazu okamžitě po spuštění zaváděcí aplikace Instalační služby.  
-  
-## <a name="beforepackage"></a>BeforePackage  
- `BeforePackage` Element dává pokyn k provedení příkazu, než bude nainstalován zadaný balíček Instalační služby.  
-  
-## <a name="afterpackage"></a>AfterPackage  
- `AfterPackage` Element instruuje instalační program ke spuštění příkazu po zadaný balíček nainstalován.  
-  
-## <a name="see-also"></a>Viz také:  
- [\<Produkt > – element](../deployment/product-element-bootstrapper.md)   
- [Referenční dokumentace schématu produktů a balíčků](../deployment/product-and-package-schema-reference.md)
+<Schedules>
+    <Schedule
+        Name
+    >
+        <BuildList />
+        <BeforePackage />
+        <AfterPackage />
+    </Schedule>
+</Schedules>
+```
+
+## <a name="elements-and-attributes"></a>Elementy a atributy
+ `Schedules` Element je podřízeným prvkem `Product` elementu. Každý `Product` element může obsahovat nanejvýš jeden `Schedules` elementu. `Schedules` Prvek nemá žádné atributy.
+
+## <a name="schedule"></a>Plán
+ `Schedule` Element je podřízeným prvkem `Schedules` elementu. A `Schedules` element musí mít aspoň jeden `Schedule` elementu.
+
+ `Schedule` má následující atribut.
+
+|Atribut|Popis|
+|---------------|-----------------|
+|`Name`|Povinný parametr. Název položky plánu. To odpovídá `ScheduleName` vlastnost `Command` elementu. Když `Command` odkazuje na pojmenovanou plánu, bude spuštěn pouze v době uvedené díky tomu `Schedule` element. Plány mohou také být přiřazena `FailIf` a `BypassIf` prvky, které omezují tyto testy podmíněného spouštění podle zadaného plánu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|
+
+ A vzhledem `Schedule` element může mít nastavený právě jeden z následujících podřízených prvků.
+
+## <a name="buildlist"></a>BuildList
+ `BuildList` Element dává pokyn k provedení příkazu okamžitě po spuštění zaváděcí aplikace Instalační služby.
+
+## <a name="beforepackage"></a>BeforePackage
+ `BeforePackage` Element dává pokyn k provedení příkazu, než bude nainstalován zadaný balíček Instalační služby.
+
+## <a name="afterpackage"></a>AfterPackage
+ `AfterPackage` Element instruuje instalační program ke spuštění příkazu po zadaný balíček nainstalován.
+
+## <a name="see-also"></a>Viz také:
+- [\<Produkt > – element](../deployment/product-element-bootstrapper.md)
+- [Referenční dokumentace schématu produktů a balíčků](../deployment/product-and-package-schema-reference.md)

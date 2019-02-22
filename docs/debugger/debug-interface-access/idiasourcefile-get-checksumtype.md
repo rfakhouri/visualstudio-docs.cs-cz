@@ -12,44 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bee821a1ecd0179d3ea64e3d1e1f7efca92d64f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928968"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646392"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
-Načte typ kontrolního součtu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_checksumType (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí typ kontrolního součtu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Typ kontrolního součtu je hodnota, která je možné mapovat na algoritmus kontrolního součtu. Například standardní formát souborů PDB může obvykle mít jednu z následujících hodnot:  
-  
-|Typ kontrolního součtu|CryptoAPI Label|Popis|  
-|-------------------|---------------------|-----------------|  
-|0|\<žádné >|Žádné kontrolní součet k dispozici.|  
-|1|`CALG_MD5`|kontrolní součet generuje s použitím algoritmu hash MD5.|  
-|2|`CALG_SHA1`|kontrolní součet generuje s použitím algoritmu hash SHA1.|  
-  
- `CryptoAPI` Popisky jsou z `ALG_ID` výčtu. Další informace o algoritmy hash, najdete `CryptoAPI` části Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].  
-  
- Chcete-li získat skutečný kontrolní součet bajtů pro zdrojový soubor, zavolejte [idiasourcefile::get_checksum –](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) metody.  
-  
-## <a name="see-also"></a>Viz také  
- [Idiasourcefile –](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)
+Načte typ kontrolního součtu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_checksumType ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí typ kontrolního součtu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Typ kontrolního součtu je hodnota, která je možné mapovat na algoritmus kontrolního součtu. Například standardní formát souborů PDB může obvykle mít jednu z následujících hodnot:
+
+|Typ kontrolního součtu|CryptoAPI Label|Popis|
+|-------------------|---------------------|-----------------|
+|0|\<žádné >|Žádné kontrolní součet k dispozici.|
+|1|`CALG_MD5`|kontrolní součet generuje s použitím algoritmu hash MD5.|
+|2|`CALG_SHA1`|kontrolní součet generuje s použitím algoritmu hash SHA1.|
+
+ `CryptoAPI` Popisky jsou z `ALG_ID` výčtu. Další informace o algoritmy hash, najdete `CryptoAPI` části Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].
+
+ Chcete-li získat skutečný kontrolní součet bajtů pro zdrojový soubor, zavolejte [idiasourcefile::get_checksum –](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) metody.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)

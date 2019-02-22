@@ -10,47 +10,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7673a4a9ccde94589ba03bd130645558ec088f1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013155"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694618"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Postupy: Používání vyhledávacího nástroje
-Tažením nástroje hledání v můžete použít **najít okno** dialogové okno Vlastnosti okna a zprávy zobrazíte. Tažením nástroje hledání můžete také najít zakázané podřízená okna a rozpoznat, které okno, abyste měli na očích Pokud zakázané podřízená okna se překrývají.  
-  
- ![Spy&#43; &#43; najít dialogové okno](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
-Tažením nástroje hledání v dialogovém okně Najít okno  
-  
- Obrázek nahoře ukazuje dialogové okno Najít okno po kroku 3 uvedené níže.  
-  
-### <a name="to-display-window-properties-or-messages"></a>Chcete-li zobrazit okno Vlastnosti nebo zprávy.  
-  
-1. Uspořádejte windows tak, aby nástroje Spy ++ i cílové okno viditelné.  
-  
-2. Z **Spy** nabídce zvolte **najít okno**.  
-  
-    [Dialogové okno hledání oken](../debugger/find-window-dialog-box.md) otevře.  
-  
-3. Přetáhněte **tažením nástroje hledání** intervalu cíl.  
-  
-    Při přetahování nástroj, **najít okno** dialogové okno zobrazí podrobnosti o vybrané okno.  
-  
-   - nebo –  
-  
-     Pokud máte popisovač okna, které chcete prověřit (například zkopírovat z ladicího programu), zadejte ho do **zpracování** textového pole.  
-  
+Tažením nástroje hledání v můžete použít **najít okno** dialogové okno Vlastnosti okna a zprávy zobrazíte. Tažením nástroje hledání můžete také najít zakázané podřízená okna a rozpoznat, které okno, abyste měli na očích Pokud zakázané podřízená okna se překrývají.
+
+ ![Spy&#43; &#43; dialogové okno hledání oken](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find") tažením nástroje hledání v dialogovém okně Najít okno
+
+ Obrázek nahoře ukazuje dialogové okno Najít okno po kroku 3 uvedené níže.
+
+### <a name="to-display-window-properties-or-messages"></a>Chcete-li zobrazit okno Vlastnosti nebo zprávy.
+
+1. Uspořádejte windows tak, aby nástroje Spy ++ i cílové okno viditelné.
+
+2. Z **Spy** nabídce zvolte **najít okno**.
+
+    [Dialogové okno hledání oken](../debugger/find-window-dialog-box.md) otevře.
+
+3. Přetáhněte **tažením nástroje hledání** intervalu cíl.
+
+    Při přetahování nástroj, **najít okno** dialogové okno zobrazí podrobnosti o vybrané okno.
+
+   - nebo –
+
+     Pokud máte popisovač okna, které chcete prověřit (například zkopírovat z ladicího programu), zadejte ho do **zpracování** textového pole.
+
    > [!TIP]
-   >  Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.  
-  
-4. V části **zobrazit**, vyberte buď **vlastnosti** nebo **zprávy**.  
-  
-5. Stisknutím klávesy **OK**.  
-  
-    Pokud jste vybrali **vlastnosti**, [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md) otevře. Pokud jste vybrali **zprávy**, [zobrazení zpráv](../debugger/messages-view.md) otevře se okno.  
-  
-## <a name="see-also"></a>Viz také  
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)   
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
- [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)
+   >  Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.
+
+4. V části **zobrazit**, vyberte buď **vlastnosti** nebo **zprávy**.
+
+5. Stisknutím klávesy **OK**.
+
+    Pokud jste vybrali **vlastnosti**, [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md) otevře. Pokud jste vybrali **zprávy**, [zobrazení zpráv](../debugger/messages-view.md) otevře se okno.
+
+## <a name="see-also"></a>Viz také
+- [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)
+- [Použití nástroje Spy++](../debugger/using-spy-increment.md)
+- [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

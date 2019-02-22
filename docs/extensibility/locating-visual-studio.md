@@ -9,12 +9,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b57150a7a2ad94b4e0706f3dd21d2fe410ed813d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944381"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683568"
 ---
 # <a name="locate-visual-studio"></a>Vyhledejte Visual Studio
 
@@ -33,7 +33,7 @@ Můžete najít jednu instanci cestu nebo aktuální proces, nebo vytvořit vý�
 
 Visual Studio a dalších nástrojů najdete v prostředí sestavení, skriptů prostředí PowerShell, instalační programy a další scénáře, existuje mnoho open source nástrojů můžete přímo použít nebo si znovu distribuovat spolu s vlastní skripty.
 
-| Projekt | Popis |
+| Project | Popis |
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | Jedním souborem nativní spustitelný soubor k vyhledání instance splňující kritéria, například vydání nebo předběžné verze, jaké produkt je nainstalovaný a úlohy, které jsou nainstalovány. Podporuje také vyhledání sady Visual Studio 2010 a novější, ale méně informací je vrácena, který pro Visual Studio 2017 a novější. Zobrazit [wiki](https://github.com/Microsoft/vswhere/wiki) příklady. |
 | [Rutiny VSSetup](https://github.com/Microsoft/vssetup.powershell) | Podporované rutin prostředí PowerShell 2.0 a novějších verzí, které vracejí široké škály informací jako objekty můžete použít k vyhledání instance na základě kritérií stejné jako _vswhere_ a zjišťování ještě více vlastností o instancích. Zobrazit [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) příklady. |
@@ -41,4 +41,4 @@ Visual Studio a dalších nástrojů najdete v prostředí sestavení, skriptů 
 
 ## <a name="see-also"></a>Viz také:
 
-* [Změny v instalaci sady Visual Studio 2017](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)
+* [Změny v instalaci sady Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)

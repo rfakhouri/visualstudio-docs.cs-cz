@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41767546902e131f46230c5ee4e2e3085b1ff8a5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773411"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705577"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Postupy: Konfigurace chování výzvy důvěryhodnosti ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
   
     1.  Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.  
   
-    2.  V **otevřít** zadejte `regedit32`a potom klikněte na tlačítko **OK**.  
+    2.  V **otevřít** zadejte `regedit` (nebo `regedit32` na Windows 32-bit) a potom klikněte na tlačítko **OK**.  
   
 2.  Vyhledejte následující klíč registru:  
   
@@ -119,7 +119,7 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
   
     1.  Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.  
   
-    2.  V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.  
+    2.  V **otevřít** zadejte `regedit` (nebo `regedit32` na Windows 32-bit) a potom klikněte na tlačítko **OK**.  
   
 2.  Vyhledejte následující klíč registru:  
   
@@ -176,7 +176,7 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
   
     1.  Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.  
   
-    2.  V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.  
+    2.  V **otevřít** zadejte `regedit` (nebo `regedit32` na Windows 32-bit) a potom klikněte na tlačítko **OK**.  
   
 2.  Vyhledejte následující klíč registru:  
   

@@ -1,7 +1,7 @@
 ---
 title: BPREQI_FIELDS | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPREQI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 448cdf3087014b927a9c144fbc756c5cc8f4a37e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b95e2934de9d09ef9541162b05920a04f645bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317403"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723042"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 Určuje informace, které se mají načíst informace o požadavku zarážku.
@@ -64,47 +64,33 @@ public enum enum_BPREQI_FIELDS {
 ```
 
 ## <a name="members"></a>Členové
-BPREQI_BPLOCATION  
-Inicializace/použít `bpLocation` oblasti (umístění zarážky) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) nebo [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
+BPREQI_BPLOCATION inicializace/použít `bpLocation` oblasti (umístění zarážky) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) nebo [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
 
-BPREQI_LANGUAGE  
-Inicializace/použít `guidLanguage` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+BPREQI_LANGUAGE inicializace/použít `guidLanguage` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI_PROGRAM  
-Inicializace/použít `pProgram` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+BPREQI_PROGRAM inicializace/použít `pProgram` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI_PROGRAMNAME  
-Inicializace/použít `bstrProgramName` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+BPREQI_PROGRAMNAME inicializace/použít `bstrProgramName` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI_THREAD  
-Inicializace/použít `pThread` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+BPREQI_THREAD inicializace/použít `pThread` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI_THREADNAME  
-Inicializace/použít `bstrThreadName` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+BPREQI_THREADNAME inicializace/použít `bstrThreadName` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI_PASSCOUNT  
-Inicializace/použít `bpPassCount` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+BPREQI_PASSCOUNT inicializace/použít `bpPassCount` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI_CONDITION  
-Inicializace/použít `bpCondition` pole (podmínka zarážky) `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+BPREQI_CONDITION inicializace/použít `bpCondition` pole (podmínka zarážky) `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI_FLAGS  
-Inicializace/použít `dwFlags` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+BPREQI_FLAGS inicializace/použít `dwFlags` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI_ALLOLDFIELDS  
-Inicializace/použít pro všechna pole nástroje `BP_REQUEST_INFO` struktury.
+Pole BPREQI_ALLOLDFIELDS inicializace nebo použijte hodnotu all pro aplikace `BP_REQUEST_INFO` struktura.
 
-BPREQI_VENDOR  
-Inicializace/použít `guidVendor` pole `BP_REQUEST_INFO2` struktury.
+BPREQI_VENDOR inicializace/použít `guidVendor` pole `BP_REQUEST_INFO2` struktury.
 
-BPREQI_CONSTRAINT  
-Inicializace/použít `bstrConstraint` pole `BP_REQUEST_INFO2` struktury.
+BPREQI_CONSTRAINT inicializace/použít `bstrConstraint` pole `BP_REQUEST_INFO2` struktury.
 
-BPREQI_TRACEPOINT  
-Inicializace/použít `bstrTracepoint` pole `BP_REQUEST_INFO2` struktury.
+BPREQI_TRACEPOINT inicializace/použít `bstrTracepoint` pole `BP_REQUEST_INFO2` struktury.
 
-BPREQI_ALLFIELDS  
-Určuje všechna pole `BP_REQUEST_INFO2` struktury.
+Určuje BPREQI_ALLFIELDS všechna pole pro `BP_REQUEST_INFO2` struktury.
 
 ## <a name="remarks"></a>Poznámky
 Předán jako argument [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) a [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) metody k určení polí s [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) a [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) struktury mají být inicializovány.
@@ -121,7 +107,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

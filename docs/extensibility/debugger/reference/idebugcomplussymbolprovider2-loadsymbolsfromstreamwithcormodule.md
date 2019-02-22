@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9241a93afea5d19664a74a78321d4d2857467b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412796"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722834"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Načtení symbolů ladění z datového proudu zadaný **ICorDebugModule** objektu.
@@ -46,23 +46,29 @@ int LoadSymbolsFromStreamWithCorModule(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identifikátor domény aplikace.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Jedinečný identifikátor modulu.
+ [in] Identifikátor domény aplikace.
 
-`baseAddress`  
-[in] Adresa základní paměti.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Objekt, který obsahuje metadata pro symbol.
+ [in] Jedinečný identifikátor modulu.
 
-`pUnkCorDebugModule`  
-[in] Objekt, který implementuje [icordebugmodule – rozhraní](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+`baseAddress`
 
-`pStream`  
-[in] Datový proud, který obsahuje symboly ladění, které chcete načíst.
+ [in] Adresa základní paměti.
+
+`pUnkMetadataImport`
+
+ [in] Objekt, který obsahuje metadata pro symbol.
+
+`pUnkCorDebugModule`
+
+ [in] Objekt, který implementuje [icordebugmodule – rozhraní](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`pStream`
+
+ [in] Datový proud, který obsahuje symboly ladění, které chcete načíst.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -141,4 +147,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

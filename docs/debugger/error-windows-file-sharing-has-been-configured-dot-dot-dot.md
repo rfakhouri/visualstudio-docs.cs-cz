@@ -14,34 +14,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257d7a0ce597cc8cbbadca975ee3db60d4e3adcc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 669a66f95c4e93dc9bee936cf36973cae20a2a4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951843"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698882"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Chyba: Sdílení souborů systému Windows bylo nakonfigurováno...
-Sdílení souborů Windows nakonfigurovaný tak, aby se připojit ke vzdálenému počítači pomocí jiné uživatelské jméno. Toto je kompatibilní se vzdáleným laděním  
-  
- Aktuální konfigurace sdílení souborů je nastavený pro připojení ke vzdálenému počítači pomocí jiné uživatelské jméno. Vzdálené ladění není možné v tomto scénáři.  
-  
- Chcete-li opravit tuto chybu, přihlášení k počítači pomocí jiných názvu účtu, nebo změňte sdílení souborů použít název účtu, který ladíte, v části.  
-  
- Pokud se chcete připojit ke vzdálenému počítači pomocí tohoto uživatelského jména, je nutné nejprve odpojit od vzdáleného počítače.  
-  
-### <a name="to-correct-this-error"></a>Oprava této chyby  
-  
-1.  Přihlaste se na místním počítači, počítač, který ladíte, které pomocí jiných názvu účtu.  
-  
-     —nebo—  
-  
-     . Odpojit od vzdáleného počítače a překonfigurujte sdílení souborů pro připojení k počítači, pomocí názvu účtu:  
-  
-    1.  Na **Start** nabídky, přejděte k **Příslušenství**a potom klikněte na tlačítko **příkazový řádek**.  
-  
-    2.  Na příkazovém řádku Windows zadejte:  
-  
-         `net use /delete computer_name`  
-  
+Sdílení souborů Windows nakonfigurovaný tak, aby se připojit ke vzdálenému počítači pomocí jiné uživatelské jméno. Toto je kompatibilní se vzdáleným laděním
+
+ Aktuální konfigurace sdílení souborů je nastavený pro připojení ke vzdálenému počítači pomocí jiné uživatelské jméno. Vzdálené ladění není možné v tomto scénáři.
+
+ Chcete-li opravit tuto chybu, přihlášení k počítači pomocí jiných názvu účtu, nebo změňte sdílení souborů použít název účtu, který ladíte, v části.
+
+ Pokud se chcete připojit ke vzdálenému počítači pomocí tohoto uživatelského jména, je nutné nejprve odpojit od vzdáleného počítače.
+
+### <a name="to-correct-this-error"></a>Oprava této chyby
+
+1.  Přihlaste se na místním počítači, počítač, který ladíte, které pomocí jiných názvu účtu.
+
+     —nebo—
+
+     . Odpojit od vzdáleného počítače a překonfigurujte sdílení souborů pro připojení k počítači, pomocí názvu účtu:
+
+    1.  Na **Start** nabídky, přejděte k **Příslušenství**a potom klikněte na tlačítko **příkazový řádek**.
+
+    2.  Na příkazovém řádku Windows zadejte:
+
+         `net use /delete computer_name`
+
     3.  Změňte nastavení sdílení souborů pomocí libovolné metody popsané v nápovědě k Windows.

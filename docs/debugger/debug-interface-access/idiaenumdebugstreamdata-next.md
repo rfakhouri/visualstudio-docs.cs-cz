@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 558dd6a54d4fa4a5d9cb8f5613de5ed00d761de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642024"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695632"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Načte zadaný počet záznamů v pořadí výčtu.
@@ -52,7 +52,8 @@ HRESULT Next ( 
 [out] Vyrovnávací paměť, která má být vyplněny data záznamu datový proud ladění.
 
  pceltFetched
-- [out v] Vrátí počet záznamů v `data`.
+
+[out v] Vrátí počet záznamů v `data`.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` Pokud neexistují žádné další záznamy. V opačném případě vrátí kód chyby.

@@ -1,7 +1,7 @@
 ---
 title: BPRESI_FIELDS | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPRESI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0784d26f4d5ae6bd8edd9b6565644a6cd513db78
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413056"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680565"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Určuje informace, který se má načíst informace o úspěšného vyřešení zarážku.
@@ -44,17 +44,13 @@ public enum enum_BPRESI_FIELDS {
 ```
 
 ## <a name="members"></a>Členové
-BPRESI_BPRESLOCATION  
-Inicializace/použít `bpResLocation` oblasti (umístění zarážky řešení) [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.
+BPRESI_BPRESLOCATION inicializace/použít `bpResLocation` oblasti (umístění zarážky řešení) [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.
 
-BPRESI_PROGRAM  
-Inicializace/použít `pProgram` pole `BP_RESOLUTION_INFO` struktury.
+BPRESI_PROGRAM inicializace/použít `pProgram` pole `BP_RESOLUTION_INFO` struktury.
 
-BPRESI_THREAD  
-Inicializace/použít `pThread` pole `BP_RESOLUTION_INFO` struktury.
+BPRESI_THREAD inicializace/použít `pThread` pole `BP_RESOLUTION_INFO` struktury.
 
-BPRESI_ALLFIELDS  
-Určuje všechna pole.
+BPRESI_ALLFIELDS určuje všechna pole.
 
 ## <a name="remarks"></a>Poznámky
 Předány [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) indikace polí s [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury mají být inicializovány.
@@ -71,6 +67,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

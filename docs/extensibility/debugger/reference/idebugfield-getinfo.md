@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetInfo | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugField::GetInfo
 helpviewer_keywords:
@@ -12,42 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78555274e7e88bc6073f11f35d7f6f6b1ad55808
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96ce3c428785bd6b817cb8ce0f97f14a87180d0c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988893"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700669"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
-Tato metoda načte zobrazitelný informace o poli.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetInfo(   
-   FIELD_INFO_FIELDS dwFields,  
-   FIELD_INFO* pFieldInfo  
-);  
-```  
-  
-```csharp  
-int GetInfo(  
-   enum_FIELD_INFO_FIELDS dwFields,  
-   FIELD_INFO[] pFieldInfo  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `dwFields`  
- [in] Kombinace [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) konstanty, které vybere informace, které mají být zobrazeny. Pokud toto pole představuje symbol, to je obvykle název symbolu a typu.  
-  
- `pFieldInfo`  
- [out] Vrátí informace do zadané [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
+Tato metoda načte zobrazitelný informace o poli.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetInfo( 
+   FIELD_INFO_FIELDS dwFields,
+   FIELD_INFO* pFieldInfo
+);
+```
+
+```csharp
+int GetInfo(
+   enum_FIELD_INFO_FIELDS dwFields,
+   FIELD_INFO[] pFieldInfo
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `dwFields`
+
+ [in] Kombinace [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) konstanty, které vybere informace, které mají být zobrazeny. Pokud toto pole představuje symbol, to je obvykle název symbolu a typu.
+
+ `pFieldInfo`
+
+ [out] Vrátí informace do zadané [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)

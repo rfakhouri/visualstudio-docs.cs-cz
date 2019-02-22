@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugModules2::Reset | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugModules2::Reset
 helpviewer_keywords:
@@ -12,33 +12,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 509ae4709e2038f0c9044a95f05f73d2dc25dbf8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af3e9e7d4c904bc9a0a50a232c764d9c4cf26cf0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029580"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686402"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
-Obnoví výčtu na první prvek.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Reset(  
-   void  
-);  
-```  
-  
-```csharp  
-int Reset();  
-```  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Až tato metoda je volána, další volání [Další](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) metoda vrátí první prvek výčtu.  
-  
-## <a name="see-also"></a>Viz také  
- [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
+Obnoví výčtu na první prvek.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Reset(
+   void
+);
+```
+
+```csharp
+int Reset();
+```
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Až tato metoda je volána, další volání [Další](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) metoda vrátí první prvek výčtu.
+
+## <a name="see-also"></a>Viz také
+- [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

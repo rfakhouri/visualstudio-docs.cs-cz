@@ -16,24 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb9e84de2724943511017027f51fa8e74b73091
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008696"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716841"
 ---
 # <a name="debugging-wcf-services"></a>Ladění služeb WCF
-## <a name="in-this-section"></a>V tomto oddílu  
- [Omezení ladění WCF](../debugger/limitations-on-wcf-debugging.md)  
- Popisuje omezení ladění WCF.  
-  
- [Postupy: Krokování služeb WCF s vnořením](../debugger/how-to-step-into-wcf-services.md)  
- Vysvětluje, podpora ladění pro krokování s vnořením služeb WCF.  
-  
- [Postupy: Ladění služby WCF s vlastním hostováním](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
- Popisuje, jak ladit služby WCF, na kterém běží mimo službu IIS nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] vývojový server.  
-  
-## <a name="see-also"></a>Viz také  
- [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
+## <a name="in-this-section"></a>V tomto oddílu
+ [Omezení ladění WCF](../debugger/limitations-on-wcf-debugging.md) popisuje omezení ladění WCF.
+
+ [Postupy: Krokování s vnořením služeb WCF](../debugger/how-to-step-into-wcf-services.md) vysvětluje podpora ladicího programu pro krokování s vnořením služeb WCF.
+
+ [Postupy: Ladění služby WCF s místním](../debugger/how-to-debug-a-self-hosted-wcf-service.md) popisuje, jak ladit služby WCF, na kterém běží mimo službu IIS nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] vývojový server.
+
+## <a name="see-also"></a>Viz také
+- [Zabezpečení ladicího programu](../debugger/debugger-security.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

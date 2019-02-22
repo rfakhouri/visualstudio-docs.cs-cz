@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbols | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1469c2a0d8332371bb38be2616ae7dcf6a61fe37
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413368"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678199"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Načte zadaný ladicí symboly v paměti.
@@ -46,23 +46,29 @@ int LoadSymbols(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identifikátor domény aplikace.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Jedinečný identifikátor mondule.
+ [in] Identifikátor domény aplikace.
 
-`baseAddress`  
-[in] Adresa základní paměti.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Objekt, který obsahuje metadata pro symbol.
+ [in] Jedinečný identifikátor mondule.
 
-`bstrModuleName`  
-[in] Název modulu.
+`baseAddress`
 
-`bstrSymSearchPath`  
-[in] Cesta pro hledání souborů symbolů.
+ [in] Adresa základní paměti.
+
+`pUnkMetadataImport`
+
+ [in] Objekt, který obsahuje metadata pro symbol.
+
+`bstrModuleName`
+
+ [in] Název modulu.
+
+`bstrSymSearchPath`
+
+ [in] Cesta pro hledání souborů symbolů.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -84,4 +90,4 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

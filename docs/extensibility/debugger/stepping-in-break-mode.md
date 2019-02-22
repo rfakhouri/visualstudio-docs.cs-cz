@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aefa1c4b3767ae58cb526c6f5a663350efd3137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 66e7e227daa0dd58bf24ae946cce667992e09f90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922870"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685024"
 ---
 # <a name="stepping-in-break-mode"></a>Krokování v režimu pozastavení
-Následující část popisuje proces, který nastane, pokud je v režimu přerušení ladicího programu a musí krokovat kód:  
-  
-## <a name="stepping-process"></a>Krokování procesu  
-  
-1.  Volání [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) s [STEPKIND](../../extensibility/debugger/reference/stepkind.md) a [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) argumenty k provedení kroku.  
-  
-2.  Po dokončení kroku odeslat [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) jako událostí ukončení.  
-  
-## <a name="see-also"></a>Viz také:  
- [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)
+Následující část popisuje proces, který nastane, pokud je v režimu přerušení ladicího programu a musí krokovat kód:
+
+## <a name="stepping-process"></a>Krokování procesu
+
+1.  Volání [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) s [STEPKIND](../../extensibility/debugger/reference/stepkind.md) a [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) argumenty k provedení kroku.
+
+2.  Po dokončení kroku odeslat [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) jako událostí ukončení.
+
+## <a name="see-also"></a>Viz také:
+- [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

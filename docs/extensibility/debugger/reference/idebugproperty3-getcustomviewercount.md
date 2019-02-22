@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetCustomViewerCount | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetCustomViewerCount
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14fc55c65aa94d4f84d541de9f20e5f5886142ad
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 4067fc314889e7aa991407c99ba949564b547087
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450084"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709145"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Získá počet vlastních prohlížečů, které mohou být k dispozici pro tuto vlastnost.
@@ -37,8 +37,9 @@ int GetCustomViewerCount(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pcelt`  
-[out] Počet vlastních prohlížečů, které jsou k dispozici pro tuto vlastnost.
+`pcelt`
+
+ [out] Počet vlastních prohlížečů, které jsou k dispozici pro tuto vlastnost.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -71,6 +72,6 @@ STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
-[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
-[zadejte Vizualizéru a vlastní prohlížeč](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
+- [Vizualizér typů a vlastní prohlížeč](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

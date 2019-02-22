@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921039"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688339"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Vytvořte své první rozšíření: Hello World
 
@@ -50,7 +50,11 @@ Krok 2. Z **šablony** nabídky, klikněte na tlačítko **Visual C#**, kliknět
 
 Teď byste měli vidět stránku Začínáme a některé ukázkové prostředky.
 
+::: moniker range="vs-2017"
+
 Pokud potřebujete ponechat v tomto kurzu, vraťte se do něj, můžete najít váš nový projekt Hello World na **úvodní stránka** v **poslední** oddílu.
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Přidat vlastní příkaz.
 

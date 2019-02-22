@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d84b8b6b186887fe9add71d5e70ac007e3157ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934202"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695788"
 ---
 # <a name="list-of-available-services"></a>Seznam dostupných služeb
 
@@ -129,7 +129,7 @@ Použijte identifikátory GUID služby uvedené nebo získané z nějakého jin�
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Ano | Ano | Použití <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> místo služby. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | Ano | Ano | Umožňuje VSPackage k ukládání a načítání informací ze souboru .sln aktuálního řešení. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | Ne | Ano | Poskytuje možnost přidávat a aktualizovat odkazy v sestavení spravovaného kódu. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Ne | Ano | Poskytuje přístup ke službě download úvodní stránky pro spuštění a zastavení služby ke stažení na vlákně na pozadí. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Ne | Ano | Poskytuje přístup ke službě Visual Studio 2017 úvodní stránky pro stažení za spouštění a zastavování služby ke stažení na vlákně na pozadí. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | Ano | Ano | Poskytuje přístup k rozhraní IDE stavový řádek. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | Ne | Ano | Poskytuje přístup k metody pro vytváření souborů klíčů silné názvy klíčů a hesel, která se používají při podepisování sestavení spravovaného kódu. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | Ano | Ano | Umožňuje VSPackage pro poskytnutí podpory pro ukládání dat v různých formátech. |

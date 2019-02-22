@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fba742bd2239ac28957e7d392e99168c8854028f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985562"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720156"
 ---
 # <a name="how-to-display-message-properties"></a>Postupy: Zobrazení vlastností zpráv
-Další informace o zprávě uvedené v [zobrazení zpráv](../debugger/messages-view.md), použijte [dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md).  
-  
-### <a name="to-open-a-message-properties-dialog-box"></a>Chcete-li otevřít dialogové okno vlastností zpráv  
-  
-1. Vyberte zprávu ze stromu se zobrazí v zobrazení zpráv.  
-  
-2. Z **zobrazení** nabídce zvolte **vlastnosti**.  
-  
+Další informace o zprávě uvedené v [zobrazení zpráv](../debugger/messages-view.md), použijte [dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md).
+
+### <a name="to-open-a-message-properties-dialog-box"></a>Chcete-li otevřít dialogové okno vlastností zpráv
+
+1. Vyberte zprávu ze stromu se zobrazí v zobrazení zpráv.
+
+2. Z **zobrazení** nabídce zvolte **vlastnosti**.
+
    Dialogová okna vlastnosti nejsou modální, takže můžete kliknout na jiné položce v zobrazení oken a dialogových oken se zobrazí informace na vybranou položku.

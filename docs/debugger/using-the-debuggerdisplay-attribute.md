@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5304da009aa35eefb91f064929a58444f139f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317000"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680183"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Používání atributu DebuggerDisplay (C#, Visual Basic, F#, C + +/ CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Ovládací prvky zobrazení objektu, vlastnost nebo pole v oknech proměnných ladicího programu. Tento atribut lze použít pro typy delegátů, vlastnosti, pole a sestavení.
@@ -178,7 +178,8 @@ class MyHashtable
 ```
 
 ## <a name="see-also"></a>Viz také
-[Používání atributu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)  
-[Vytváření vlastních zobrazení spravovaných objektů](../debugger/create-custom-views-of-dot-managed-objects.md)  
-[Specifikátory formátu v jazyce C#](../debugger/format-specifiers-in-csharp.md)  
-[Rozšíření ladění pomocí atributů zobrazení ladicího programu](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+
+- [Používání atributu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Vytváření vlastních zobrazení spravovaných objektů](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Specifikátory formátu v jazyce C#](../debugger/format-specifiers-in-csharp.md)
+- [Rozšíření ladění pomocí atributů zobrazení ladicího programu](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

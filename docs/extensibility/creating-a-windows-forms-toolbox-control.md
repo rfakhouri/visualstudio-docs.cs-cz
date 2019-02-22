@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316584"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687884"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku Windows Forms panel nástrojů
 Šablona položky ovládacího prvku Windows Forms panel nástrojů, který je součástí aplikace Visual Studio Extensibility Tools (VS SDK) umožňuje vytvořit ovládací prvek, který je automaticky přidán do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření ovládacího prvku jednoduchého čítače, které můžete distribuovat ostatním uživatelům.
@@ -209,7 +209,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 Při sestavení **nástrojů** ovládací prvek, Visual Studio vytvoří soubor s názvem *ProjectName.vsix* \bin\debug\ složky vašeho projektu. Ovládací prvek můžete nasadit tak, že nahrajete *VSIX* soubor k síti nebo na web. Když uživatel otevře *VSIX* soubor, ovládací prvek je nainstalován a přidali do sady Visual Studio **nástrojů** na počítači uživatele. Alternativně můžete nahrát *VSIX* do souboru [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) tak, aby uživatelé můžete najít tak, že přejdete v **nástroje**  >   **Rozšíření a aktualizace** dialogového okna.
 
 ## <a name="see-also"></a>Viz také:
-[Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Vytvoření ovládacího prvku panel nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
-[Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Základní informace o vývoji pro ovládací prvek Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Vytvoření ovládacího prvku panel nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Základní informace o vývoji pro ovládací prvek Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

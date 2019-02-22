@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318638"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637084"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Popisuje položky v mapování adres.
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elementy
-`rva`  
-Relativní virtuální adresu (RVA) v bitové kopii A.
+`rva` Relativní virtuální adresu (RVA) v bitové kopii A.
 
-`rvaTo`  
-Relativní virtuální adresu `rva` je namapována na obrázku B.
+`rvaTo` Relativní virtuální adresu `rva` je namapována na obrázku B.
 
 ## <a name="remarks"></a>Poznámky
 Mapování adresy zajišťuje překlad z jedné image rozložení (A) do jiného (B). Pole `DiaAddressMapEntry` struktury seřazené podle `rva` definuje mapu adresu.
@@ -55,5 +53,5 @@ Přeložit adresy, `addrA`, obrázku A na adresu, `addrB`, obrázku B, proveďte
 Záhlaví: dia2.h
 
 ## <a name="see-also"></a>Viz také
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

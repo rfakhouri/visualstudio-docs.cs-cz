@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970410"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710107"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Příručka pro správce aplikace Visual Studio 2017
 
@@ -54,7 +54,7 @@ Visual Studio 2017 můžete nasadit do klientských pracovních stanic tak dlouh
 Máme několik nástrojů, které vám pomůžou [zjišťovat a spravovat nainstalované instance sady Visual Studio](tools-for-managing-visual-studio-instances.md) na klientských počítačích.
 
 > [!TIP]
-> Kromě dokumentaci v příručce pro správce, je dobré zdroje informací o instalaci sady Visual Studio 2017 [stavu Chmiela blogu](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+> Kromě dokumentaci v příručce pro správce, je dobré zdroje informací o instalaci sady Visual Studio 2017 [archivy instalační program Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="specify-customer-feedback-settings"></a>Určení nastavení zpětné vazby zákazníka
 

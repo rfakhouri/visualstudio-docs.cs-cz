@@ -1,7 +1,7 @@
 ---
 title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_CUSTOM_VIEWER
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe17c8747d5c678c14561a918ddd9d62bd658841
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f50f46376e21694bebeb4f13ab8ed8e658838bf2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315830"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680450"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 Struktura, která identifikuje vlastní prohlížeč nebo zadejte vizualizér.
@@ -47,23 +47,17 @@ public struct DEBUG_CUSTOM_VIEWER {
 ```
 
 ## <a name="members"></a>Členové
-dwID  
-ID k rozlišení více prohlížečů nebo vizualizéry implementované jeden `GUID`.
+dwID ID k rozlišení více prohlížečů nebo vizualizéry implementované jeden `GUID`.
 
-bstrMenuName  
-Text, který se zobrazí v rozevírací nabídce.
+bstrMenuName text, který se zobrazí v rozevírací nabídce.
 
-bstrDescription  
-Popis vlastní prohlížeč nebo vizualizér typů (musí mít hodnotu null Pokud není využito).
+Popis bstrDescription A vlastní prohlížeč nebo vizualizér typů (musí mít hodnotu null Pokud není využito).
 
-guidLang  
-Jazyk poskytující vyhodnocovací filtr výrazů.
+guidLang jazyka poskytující vyhodnocovací filtr výrazů.
 
-guidVendor  
-Dodavatel poskytování vyhodnocovací filtr výrazů.
+guidVendor dodavatele poskytující vyhodnocovací filtr výrazů.
 
-bstrMetric  
-Metriky, pod kterým vlastní prohlížeč nebo vizualizér typů `CLSID` uložená.
+bstrMetric metriky, pod kterým vlastní prohlížeč nebo vizualizér typů `CLSID` uložená.
 
 ## <a name="remarks"></a>Poznámky
 Seznam tato struktura je vrácený voláním [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) – metoda (a při rozšíření i [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) metoda).
@@ -76,6 +70,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+- [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

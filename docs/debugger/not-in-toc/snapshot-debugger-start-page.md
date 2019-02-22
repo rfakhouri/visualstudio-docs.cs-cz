@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939787"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703705"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Začínáme s Snapshot Debugger
 
@@ -27,7 +27,7 @@ Snapshot Debugger shromažďuje snímky z vaší aplikace. Snímky jsou podobné
 
 ### <a name="set-a-snappoint"></a>Nastavte snímkovacího bodu
 
-1. V editoru kódu klikněte na levém hřbetu vedle řádku kódu, které vás zajímají nastavení snímkovacího bodu. Ujistěte se, že je kód, o kterém víte, že se spustí. 
+1. V editoru kódu klikněte na levém hřbetu vedle řádku kódu, které vás zajímají nastavení snímkovacího bodu. Ujistěte se, že je kód, o kterém víte, že se spustí.
 
     ![Nastavení snímkovacího bodu v editoru](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Snapshot Debugger shromažďuje snímky z vaší aplikace. Snímky jsou podobné
 
 ### <a name="open-a-snapshot"></a>Otevření snímku
 
-1. Při dosažení snímkovacího bodu, se zobrazí v okně diagnostické nástroje na pravé straně snímku. Pokud se okno se neotevře, které můžete otevřít výběrem **ladění** > **Windows** > **zobrazit diagnostické nástroje**. 
+1. Při dosažení snímkovacího bodu, se zobrazí v okně diagnostické nástroje na pravé straně snímku. Pokud se okno se neotevře, které můžete otevřít výběrem **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
     ![Snímek v okně diagnostické nástroje](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ Je webem jako takovým stále aktivní a nejsou to vliv na koncové uživatele. 
 
 3. V **zpráva** zadejte zprávu protokolu, který chcete zaznamenat. Můžete také vyhodnotit proměnné ve zprávě protokolu je umístit uvnitř složených závorek.
 
-    Pokud se rozhodnete **odeslat do okna výstup**, zpráva se zobrazí v okně diagnostické nástroje, když protokolovacích bodů: dosažení. 
+    Pokud se rozhodnete **odeslat do okna výstup**, zpráva se zobrazí v okně diagnostické nástroje, když protokolovacích bodů: dosažení.
 
     Pokud se rozhodnete **odeslat do protokolu aplikace**, zobrazí se zpráva kdekoli, zobrazí se zprávy z `System.Diagnostics.Trace` (nebo `ILogger` v .NET Core), jako jsou App Insights, při dosažení protokolovacích bodů:.
 
@@ -69,6 +69,6 @@ Další informace o ladicím programu snímků můžete najít na [stránky doku
 
 ## <a name="dont-show-me-this-again"></a>Není "zprávu již nezobrazovat
 
-Chcete-li již nezobrazovat úvodní stránku ladicího programu snímků při připojování ladicího programu snímků, změňte **Show "Začínáme" stránku při spuštění relace** možnost **nástroje**  >   **Možnosti** > **Snapshot Debugger**. 
+Chcete-li již nezobrazovat úvodní stránku ladicího programu snímků při připojování ladicího programu snímků, změňte **Show "Začínáme" stránku při spuštění relace** možnost **nástroje**  >   **Možnosti** > **Snapshot Debugger**.
 
 ![Stránka – možnost nástroje ladicího programu snímků](../media/snapshot-startpage-tools-options.png)

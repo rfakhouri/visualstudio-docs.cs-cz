@@ -1,7 +1,7 @@
 ---
 title: CONNECTION_PROTOCOL | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONNECTION_PROTOCOL
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dcf3d271d331664d6d2ef210868245b50c264d6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316481"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705830"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Určuje protokol, který používá ke komunikaci mezi serverem pro ladění a ladit balíček (DE).
@@ -49,26 +49,19 @@ public enum CONNECTION_PROTOCOL {
 ```
 
 #### <a name="parameters"></a>Parametry
-CONNECTION_NONE  
-Žádné připojení k serveru.
+CONNECTION_NONE bez připojení k serveru.
 
-CONNECTION_UNKNOWN  
-Vytvoří připojení, ale je neznámého typu.
+CONNECTION_UNKNOWN A připojení, ale je neznámého typu.
 
-CONNECTION_LOCAL  
-Připojení je na místním serveru.
+CONNECTION_LOCAL připojení je na místním serveru.
 
-CONNECTION_PIPE  
-Připojení je přes pojmenovaný kanál.
+CONNECTION_PIPE připojení je přes pojmenovaný kanál.
 
-CONNECTION_TCPIP  
-Připojení používá protokol TCP/IP.
+CONNECTION_TCPIP připojení používá protokol TCP/IP.
 
-CONNECTION_HTTP  
-Připojení používá protokol HTTP (prostřednictvím webového serveru).
+CONNECTION_HTTP připojení používá protokol HTTP (prostřednictvím webového serveru).
 
-CONNECTION_OTHER  
-Vytvořilo se jiný typ připojení (Tato hodnota není aktuálně používá.).
+CONNECTION_OTHER stal jiný typ připojení (Tato hodnota není aktuálně používá.).
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou vráceny z [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metody.
@@ -81,5 +74,5 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

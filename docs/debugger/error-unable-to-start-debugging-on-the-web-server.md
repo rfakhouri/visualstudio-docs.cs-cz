@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938456"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688209"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru
 
 Při pokusu o ladění aplikace ASP.NET běžící na webovém serveru, se může zobrazit tato chybová zpráva: `Unable to start debugging on the Web server`.
 
-Této chybě dochází často, protože k chybě nebo konfigurace došlo ke změně, která vyžaduje aktualizaci fondů aplikací a resetování služby IIS. Služba IIS můžete resetovat otevřením příkazového řádku se zvýšenými oprávněními a zadáním `iisreset`. 
+Této chybě dochází často, protože k chybě nebo konfigurace došlo ke změně, která vyžaduje aktualizaci fondů aplikací a resetování služby IIS. Služba IIS můžete resetovat otevřením příkazového řádku se zvýšenými oprávněními a zadáním `iisreset`.
 
 ## <a name="specificerrors"></a>Co je Podrobná chybová zpráva?
 
@@ -106,12 +106,12 @@ Navíc pokud použijete soubor HOSTITELŮ, ujistěte se, že je správně nakonf
 
 ##  <a name="vxtbshttpservererrorsthingstocheck"></a> Zkontrolujte konfiguraci služby IIS
 
-Až provedete kroky popsané tady řešení tohoto problému a před dalším pokusem o ladění může být také potřeba resetovat služby IIS. Můžete to udělat otevřením příkazového řádku se zvýšenými oprávněními a zadáním `iisreset`. 
+Až provedete kroky popsané tady řešení tohoto problému a před dalším pokusem o ladění může být také potřeba resetovat služby IIS. Můžete to udělat otevřením příkazového řádku se zvýšenými oprávněními a zadáním `iisreset`.
 
-* Zastavit a restartovat fondů aplikací IIS, a opakujte. 
+* Zastavit a restartovat fondů aplikací IIS, a opakujte.
 
     Fond aplikací se možná zastavil v důsledku chyby. Nebo jiné se provedené změny konfigurace můžou vyžadovat ukončení a restartování fondu aplikací.
-    
+
     > [!NOTE]
     > Pokud udržuje zastavení fondu aplikací, budete muset z ovládacího panelu odinstalovat modul přepisování adres URL. Můžete znovu nainstalovat pomocí instalačního programu webové platformy (WebPI). Tomuto problému může dojít po upgradu významné systému.
 
@@ -120,7 +120,7 @@ Až provedete kroky popsané tady řešení tohoto problému a před dalším po
     Fond aplikací může být nakonfigurovaný pro verze technologie ASP.NET, která se neshoduje s projektu sady Visual Studio. Aktualizovat verzi technologie ASP.NET ve fondu aplikací a restartujte ji. Podrobné informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Také pokud jste změnili heslo přihlašovacích údajů, budete muset aktualizovat ve fondu aplikací nebo webovou stránku.  Ve fondu aplikací, aktualizujte přihlašovací údaje v **Upřesnit nastavení > Model procesu > Identity**. Pro webový server, aktualizujte přihlašovací údaje v **základní nastavení > připojit jako...** . Restartování fondu aplikací.
-    
+
 * Zkontrolujte, že vaše webové aplikace složka má správná oprávnění.
 
     Ujistěte se, že poskytnete IIS_IUSRS IUSR, nebo konkrétního uživatele přidružené k [fond aplikací](/iis/manage/configuring-security/application-pool-identities) číst a spouštět práva ke složce webové aplikace. Tento problém vyřešit a restartuje fond aplikací.
@@ -128,11 +128,11 @@ Až provedete kroky popsané tady řešení tohoto problému a před dalším po
 * Ujistěte se, že je nainstalována správná verze technologie ASP.NET ve službě IIS.
 
     Neshoda verzí technologie ASP.NET ve službě IIS a v projektu sady Visual Studio může způsobit potíže. Budete muset nastavit verzi rozhraní framework v souboru web.config. Instalace technologie ASP.NET na IIS, použijte [instalačního programu webové platformy (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Viz také [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) nebo pro ASP.NET Core, [hostitelská služba ve Windows se službou IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 * Řešení chyb při ověřování, pokud používáte jenom IP adresy
 
      Ve výchozím nastavení IP adresy jsou považovány za součást Internetu a ověřování protokolem NTLM není Hotovo přes Internet. Pokud je váš web konfigurován ve službě IIS tak, aby vyžadovala ověřování, ověřování se nezdaří. Chcete-li tento problém, můžete zadat název vzdáleného počítače místo IP adresy.
-     
+
 ## <a name="other-causes"></a>Další příčiny
 
 Pokud se konfigurace služby IIS nebude příčinou problému, proveďte následující kroky:
@@ -140,7 +140,7 @@ Pokud se konfigurace služby IIS nebude příčinou problému, proveďte násled
 - Restartujte sadu Visual Studio s oprávněními správce a zkuste to znovu.
 
     Některé scénáře ladění ASP.NET například pomocí nasazení webu vyžaduje zvýšená oprávnění pro Visual Studio.
-    
+
 - Pokud běží více instancí sady Visual Studio, otevřete projekt v jedné instanci sady Visual Studio (s oprávněními správce) a zkuste to znovu.
 
 - Pokud používáte soubor HOSTITELŮ pomocí místní adresy, použijte adresu zpětné smyčky místo jeho IP adresy.
@@ -152,12 +152,12 @@ Pokud se konfigurace služby IIS nebude příčinou problému, proveďte násled
 * Vyvolejte localhost stránku v prohlížeči na serveru.
 
      Pokud služba IIS není správně nainstalovaná, by měl dojde k chybám při zadávání `http://localhost` v prohlížeči.
-     
+
      Další informace o nasazení do služby IIS najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) a pro ASP.NET Core, [hostitelská služba ve Windows se službou IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Vytvořit základní aplikaci v ASP.NET na serveru (nebo použijte soubor základní web.config).
 
     Pokud to nejde s vaší aplikaci umožní pracovat s ladicím programem, zkuste vytvořit základní aplikaci ASP.NET místně na serveru a zkuste ladit základní aplikaci. (Můžete chtít použít výchozí šablony ASP.NET MVC.) Pokud ladíte základní aplikaci, který vám mohou pomoci identifikovat, čím se liší mezi dvěma konfiguracemi. Vyhledejte rozdíly v nastavení v souboru web.config, jako například pravidla pro přepis adres URL.
 
-## <a name="see-also"></a>Viz také  
- [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Viz také
+- [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

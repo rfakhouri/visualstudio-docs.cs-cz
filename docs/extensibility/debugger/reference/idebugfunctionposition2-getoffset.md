@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionPosition2::GetOffset | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionPosition2::GetOffset
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c863260ccbdd734f0a651cb3eb8c5e48fbffb4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 705bda0fa8d9795b93d4633dba62d67e9f458587
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954966"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680250"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
-Načte pozici funkce ve zdrojovém dokumentu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetOffset(   
-   TEXT_POSITION* pPosition  
-);  
-```  
-  
-```csharp  
-int GetOffset(  
-   TEXT_POSITION[] pPosition  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pPosition`  
- [out v] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktura, která se vyplní umístění funkce v dokumentu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+Načte pozici funkce ve zdrojovém dokumentu.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetOffset( 
+   TEXT_POSITION* pPosition
+);
+```
+
+```csharp
+int GetOffset(
+   TEXT_POSITION[] pPosition
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pPosition`
+
+ [out v] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktura, která se vyplní umístění funkce v dokumentu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

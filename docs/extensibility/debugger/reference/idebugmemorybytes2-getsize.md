@@ -1,7 +1,7 @@
 ---
 title: IDebugMemoryBytes2::GetSize | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMemoryBytes2::GetSize
 helpviewer_keywords:
@@ -13,36 +13,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8ac99883e2e7d25095a7a9f60eb5b5fe23c531
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cbed7e4421b01e1a779c5c976001a5dd5b4ba2d1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007799"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712109"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-Získá velikost v bajtech paměti představovaného tímto rozhraním [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objektu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetSize(   
-   UINT64* pqwSize  
-);  
-```  
-  
-```csharp  
-int GetSize(  
-   out ulong pqwSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pqwSize`  
- [out] Vrátí velikost v bajtech místo v paměti.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
+Získá velikost v bajtech paměti představovaného tímto rozhraním [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objektu.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetSize( 
+   UINT64* pqwSize
+);
+```
+
+```csharp
+int GetSize(
+   out ulong pqwSize
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pqwSize`
+
+ [out] Vrátí velikost v bajtech místo v paměti.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

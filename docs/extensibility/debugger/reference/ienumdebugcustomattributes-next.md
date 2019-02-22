@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugCustomAttributes::Next | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumCustomAttributes::Next
 helpviewer_keywords:
@@ -12,47 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a418fdcb005965a5a972da05ddbc87a598f0ec64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fdad468c788d475d32eddca160728b2c3ecf11d9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927012"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683712"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
-Načte zadaný počet vlastních atributů v sekvenci výčtu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Next (   
-   ULONG      celt,  
-   CODE_PATH* rgelt,  
-   ULONG*     pceltFetched  
-);  
-```  
-  
-```csharp  
-int Next(  
-   uint                        celt,   
-   out IDebugCustomAttribute[] rgelt,   
-   ref uint                    pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `celt`  
- [in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.  
-  
- `rgelt`  
- [out] Pole [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) objekty být vyplněna.  
-  
- `pceltFetched`  
- [out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud menší než požadovaný počet prvků, které může být vrácena; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
+Načte zadaný počet vlastních atributů v sekvenci výčtu.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Next ( 
+   ULONG      celt,
+   CODE_PATH* rgelt,
+   ULONG*     pceltFetched
+);
+```
+
+```csharp
+int Next(
+   uint                        celt,
+   out IDebugCustomAttribute[] rgelt,
+   ref uint                    pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `celt`
+
+ [in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.
+
+ `rgelt`
+
+ [out] Pole [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) objekty být vyplněna.
+
+ `pceltFetched`
+
+ [out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud menší než požadovaný počet prvků, které může být vrácena; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

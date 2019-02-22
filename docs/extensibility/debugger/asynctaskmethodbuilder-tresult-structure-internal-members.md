@@ -11,37 +11,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6042b574976be6587a918de6b595d0e7b254defb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6dc0f1a2cf8be65d812591b6d0d87fef15b42cd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014052"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716880"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder&lt;TResult&gt; struktury – vnitřní členy
-Toto téma popisuje interní členy <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> třídy. Obecné informace o této třídy, najdete v článku <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> téma referenčních informací.  
-  
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Sestavení:** mscorlib (v knihovně mscorlib.dll)  
-  
- Protože tyto vnitřní členy nemůže získat přístup z rozhraní .NET Framework, je k dispozici v Common Intermediate Language (CIL) následující syntaxi.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```csharp  
-.class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult>  
-       extends System.ValueType  
-       implements System.Runtime.CompilerServices.IAsyncMethodBuilder  
-```  
-  
-## <a name="internal-members"></a>Vnitřní členy  
-  
-|Název|Popis|  
-|----------|-----------------|  
-|[Vlastnost ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Získá objekt, který slouží k jednoznačné identifikaci tohoto Tvůrce ladicímu programu.|  
-|[m_task pole](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Představuje laxně inicializovaný vytvořené úlohy.|  
-  
-## <a name="see-also"></a>Viz také:  
- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [Interní informace o paralelním rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Toto téma popisuje interní členy <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> třídy. Obecné informace o této třídy, najdete v článku <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> téma referenčních informací.
+
+ **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Sestavení:** mscorlib (v knihovně mscorlib.dll)
+
+ Protože tyto vnitřní členy nemůže získat přístup z rozhraní .NET Framework, je k dispozici v Common Intermediate Language (CIL) následující syntaxi.
+
+## <a name="syntax"></a>Syntaxe
+
+```csharp
+.class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult>
+       extends System.ValueType
+       implements System.Runtime.CompilerServices.IAsyncMethodBuilder
+```
+
+## <a name="internal-members"></a>Vnitřní členy
+
+|Název|Popis|
+|----------|-----------------|
+|[Vlastnost ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Získá objekt, který slouží k jednoznačné identifikaci tohoto Tvůrce ladicímu programu.|
+|[m_task pole](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Představuje laxně inicializovaný vytvořené úlohy.|
+
+## <a name="see-also"></a>Viz také:
+- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
+- [Interní informace o paralelním rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,7 +1,7 @@
 ---
 title: EncUnavailableReason | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EncUnavailableReason
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ccc05c58eafe6f8902b3f8ac09b90dc771a3009
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ea1bbf8fe96abbf1e7bd9a92396d0dcfa4306445
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315685"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717036"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Představuje důvody, které **upravit a pokračovat** není k dispozici.
@@ -50,26 +50,19 @@ public enum EncUnavailableReason {
 ```
 
 #### <a name="parameters"></a>Parametry
-ENCUN_NONE  
-Žádné konkrétní důvod, proč upravit a pokračovat není k dispozici.
+Ne ENCUN_NONE konkrétní důvod proč upravit a pokračovat není k dispozici.
 
-ENCUN_INTEROP  
-Upravit a pokračovat není během volání rozhraní InterOp k dispozici.
+ENCUN_INTEROP upravit a pokračovat není během volání rozhraní InterOp k dispozici.
 
-ENCUN_SQLCLR  
-Upravit a pokračovat není při volání procedury SQL, která používá Common Language Runtime (CLR) k dispozici.
+ENCUN_SQLCLR upravit a pokračovat není při volání procedury SQL, která používá Common Language Runtime (CLR) k dispozici.
 
-ENCUN_MINIDUMP  
-Upravit a pokračovat není při zpracování mini výpis paměti k dispozici.
+ENCUN_MINIDUMP upravit a pokračovat není při zpracování mini výpis paměti k dispozici.
 
-ENCUN_EMBEDDED  
-Při zpracování vloženého kódu, upravit a pokračovat není k dispozici.
+Při zpracování vloženého kódu, ENCUN_EMBEDDED upravit a pokračovat není k dispozici.
 
-ENCUN_ATTACH  
-Upravit a pokračovat není k dispozici protože relace byla přiřazena, nespustí, ladicím programem.
+ENCUN_ATTACH upravit a pokračovat není k dispozici protože relace byla přiřazena, není spuštěn pomocí ladicího programu.
 
-ENCUN_WIN64  
-Upravit a pokračovat není při zpracování kódu Windows 64-bit k dispozici.
+ENCUN_WIN64 upravit a pokračovat není při zpracování kódu Windows 64-bit k dispozici.
 
 ## <a name="remarks"></a>Poznámky
 Tento výčet je pro interní použití pouze podle [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) a [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) metod, jak je implementován dodavatelem port. Tento vlastní port byste vždy vrátí `E_NOTIMPL`.
@@ -82,9 +75,8 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 
-[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
+- [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 
-[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)
-
+- [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)

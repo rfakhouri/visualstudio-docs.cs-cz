@@ -10,17 +10,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21ebfb4babc32642c37d1a8ccf469a1a5c37046e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982543"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694410"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Starší verze rozhraní v editoru
-Editor sady Visual Studio můžete přistupovat ze starší verze rozhraní. Visual Studio SDK zahrnuje adaptérů, označované jako *překrytí*, která umožňují tato rozhraní pro interakci s nového editoru. Doporučujeme však, že aktualizujete starší kód Refaktorovat pro použití nového editoru rozhraní API. Váš kód budou líp fungovat a využívat nové technologie, jako je Windows Presentation Foundation (WPF) a Managed Extensibility Framework (MEF).  
+Editor sady Visual Studio můžete přistupovat ze starší verze rozhraní. Visual Studio SDK zahrnuje adaptérů, označované jako *překrytí*, která umožňují tato rozhraní pro interakci s nového editoru. Doporučujeme však, že aktualizujete starší kód Refaktorovat pro použití nového editoru rozhraní API. Váš kód budou líp fungovat a využívat nové technologie, jako je Windows Presentation Foundation (WPF) a Managed Extensibility Framework (MEF).
 
-## <a name="related-topics"></a>Související témata  
+## <a name="related-topics"></a>Související témata
 
 | Název | Popis |
 | - | - |

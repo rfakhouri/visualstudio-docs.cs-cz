@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bde2d59bac380ca75fa8d5dcb8a1b6e5b98803e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 722d8c42786a7aaa2daae293b96f7926abcc90ca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598967"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719831"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 Zapíše soubory protokolů pro aktuální kontext.
@@ -32,9 +32,13 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 ```
 
 #### <a name="parameters"></a>Parametry
-- [in] `intermediateDirectory` Adresáře, ve kterém k uložení protokolu sledování.
+[in] `intermediateDirectory`
 
-- [in] `tlogRootName` Název kořenového názvu souboru protokolu.
+ Adresáře, ve kterém k uložení protokolu sledování.
+
+[in] `tlogRootName`
+
+ Název kořenového názvu souboru protokolu.
 
 ## <a name="return-value"></a>Návratová hodnota
  **HRESULT** s **SUCCEEDED** sadu bitů, pokud byl vytvořen kontext sledování.

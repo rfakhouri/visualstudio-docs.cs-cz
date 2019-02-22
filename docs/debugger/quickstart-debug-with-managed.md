@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040b0f5f657b41a268f69d7f34d6c0072646a8e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034087"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696880"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Rychlý start: Při ladění pomocí C# nebo Visual Basic pomocí ladicího programu sady Visual Studio
 
 Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které vám pomůžou ladit vaše aplikace. Toto téma poskytuje rychlý způsob, jak Seznamte se s některými základními funkcemi.
 
-## <a name="create-a-new-project"></a>Vytvoření nového projektu 
+## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
 1. V sadě Visual Studio, zvolte **soubor > Nový projekt**.
 
@@ -158,7 +158,7 @@ Běžné klávesové příkazy používá k procházejte kódem po krocích zahr
 
     ![Zobrazit datatip](../debugger/media/dbg-qs-data-tip-csharp.png "zobrazit datatip")
 
-    Datatip se dozvíte, aktuální hodnota `c1` proměnné a umožňuje vám umožní zkontrolovat její vlastnosti. Při ladění, pokud se zobrazí hodnotu, kterou nečekáte, pravděpodobně chyby v předchozích nebo volání řádků kódu. 
+    Datatip se dozvíte, aktuální hodnota `c1` proměnné a umožňuje vám umožní zkontrolovat její vlastnosti. Při ladění, pokud se zobrazí hodnotu, kterou nečekáte, pravděpodobně chyby v předchozích nebo volání řádků kódu.
 
 2. Rozbalení datového tipu se podívat na aktuální hodnoty vlastností `c1` objektu.
 

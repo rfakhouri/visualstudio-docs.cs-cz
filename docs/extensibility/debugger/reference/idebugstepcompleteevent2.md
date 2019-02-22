@@ -1,7 +1,7 @@
 ---
 title: IDebugStepCompleteEvent2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugStepCompleteEvent2
 helpviewer_keywords:
@@ -12,39 +12,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f7d20954f23825cca9b69a774d6316f1a89982
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2be6568e84157c8d042113fe6f2f86b2cf288005
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919778"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698193"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
-Toto rozhraní je odesílat pomocí ladicího stroje (DE) Správce ladění relace (SDM) po dokončení laděnému programu krokování s vnořením, krok přes nebo kroku přesahující zdrojový kód nebo příkazu nebo instrukce.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugStepCompleteEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- DE implementuje toto rozhraní Oznámit dokončení operace kroku. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) na stejný objekt jako toto rozhraní musí implementovat rozhraní. Používá SDM [QueryInterface](/cpp/atl/queryinterface) přístup `IDebugEvent2` rozhraní.  
-  
-## <a name="notes-for-callers"></a>Poznámky pro volající  
- DE vytvoří a odešle tento objekt události Oznámit dokončení operace kroku. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkce zpětného volání, který je poskytnut pomocí SDM, když je připojen k laděnému programu.  
-  
-## <a name="remarks"></a>Poznámky  
- Po dokončení kroku laděnému programu je pozastavená ještě jednou a rozhraní IDE aktualizuje všechna jeho okna.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: msdbg.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+Toto rozhraní je odesílat pomocí ladicího stroje (DE) Správce ladění relace (SDM) po dokončení laděnému programu krokování s vnořením, krok přes nebo kroku přesahující zdrojový kód nebo příkazu nebo instrukce.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugStepCompleteEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Poznámky pro implementátory
+ DE implementuje toto rozhraní Oznámit dokončení operace kroku. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) na stejný objekt jako toto rozhraní musí implementovat rozhraní. Používá SDM [QueryInterface](/cpp/atl/queryinterface) přístup `IDebugEvent2` rozhraní.
+
+## <a name="notes-for-callers"></a>Poznámky pro volající
+ DE vytvoří a odešle tento objekt události Oznámit dokončení operace kroku. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkce zpětného volání, který je poskytnut pomocí SDM, když je připojen k laděnému programu.
+
+## <a name="remarks"></a>Poznámky
+ Po dokončení kroku laděnému programu je pozastavená ještě jednou a rozhraní IDE aktualizuje všechna jeho okna.
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: msdbg.h
+
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+- [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

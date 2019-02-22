@@ -11,20 +11,20 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1290fe9aa9b8fc017856d776aa718ff3d1810df1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9131ce7950246d878c091f320e22700ba2b1f3ed
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931671"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634666"
 ---
 # <a name="context-parameters"></a>Kontextové parametry
-V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), můžete přidat průvodce, kteří **nový projekt**, **přidat novou položku**, nebo **přidat dílčí projekt** dialogových oknech. Přidání průvodců jsou k dispozici na **souboru** nabídek nebo kliknutím pravým tlačítkem myši projekt v **Průzkumníka řešení**. Integrovaného vývojového prostředí předá parametr kontextu pro implementaci průvodce. Kontextové parametry definovat stav projektu při integrovaném vývojovém prostředí volá průvodce.  
-  
- Spuštění rozhraní IDE Průvodce nastavením <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> příznak při volání funkce rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> metodu pro projekt. Pokud nastavíte, projekt musíte zajistit, aby `IVsExtensibility::RunWizardFile` má být spuštěna s použitím Průvodce registrovaný název nebo identifikátor GUID a další kontextové parametry, které se předá rozhraní IDE.  
-  
-## <a name="context-parameters-for-new-project"></a>Kontextové parametry pro nový projekt  
-  
+V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), můžete přidat průvodce, kteří **nový projekt**, **přidat novou položku**, nebo **přidat dílčí projekt** dialogových oknech. Přidání průvodců jsou k dispozici na **souboru** nabídek nebo kliknutím pravým tlačítkem myši projekt v **Průzkumníka řešení**. Integrovaného vývojového prostředí předá parametr kontextu pro implementaci průvodce. Kontextové parametry definovat stav projektu při integrovaném vývojovém prostředí volá průvodce.
+
+ Spuštění rozhraní IDE Průvodce nastavením <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> příznak při volání funkce rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> metodu pro projekt. Pokud nastavíte, projekt musíte zajistit, aby `IVsExtensibility::RunWizardFile` má být spuštěna s použitím Průvodce registrovaný název nebo identifikátor GUID a další kontextové parametry, které se předá rozhraní IDE.
+
+## <a name="context-parameters-for-new-project"></a>Kontextové parametry pro nový projekt
+
 | Parametr | Popis |
 |-------------------------| - |
 | `WizardType` | Registrovaný typ průvodce (<xref:EnvDTE.Constants.vsWizardNewProject>) nebo identifikátor GUID, který určuje typ průvodce. V [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] je implementace, identifikátor GUID pro Průvodce {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}. |
@@ -34,9 +34,9 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované výv
 | `FExclusive` | Logický příznak, který označuje, že by se měla zavřít projekt otevřete řešení. |
 | `SolutionName` | Název souboru řešení bez část adresáře nebo *.sln* rozšíření. *.Suo* název souboru je také vytvořen pomocí `SolutionName`. Pokud tento argument není prázdný řetězec, použije průvodce <xref:EnvDTE._Solution.Create%2A> před přidáním projektu pomocí <xref:EnvDTE._Solution.AddFromTemplate%2A>. Pokud tento název je prázdný řetězec, použijte <xref:EnvDTE._Solution.AddFromTemplate%2A> bez volání <xref:EnvDTE._Solution.Create%2A>. |
 | `Silent` | Logická hodnota, která označuje, zda by průvodce měl běžet tiše jakoby **Dokončit** bylo kliknuto (`TRUE`). |
-  
-## <a name="context-parameters-for-add-new-item"></a>Kontextové parametry pro přidání nové položky  
-  
+
+## <a name="context-parameters-for-add-new-item"></a>Kontextové parametry pro přidání nové položky
+
 | Parametr | Popis |
 |-------------------------| - |
 | `WizardType` | Registrovaný typ průvodce (<xref:EnvDTE.Constants.vsWizardAddItem>) nebo identifikátor GUID, který určuje typ průvodce. V [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] je implementace, identifikátor GUID pro Průvodce {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}. |
@@ -45,9 +45,9 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované výv
 | `ItemName` | Název položky, která se má přidat. Tento název je výchozí název souboru nebo název souboru, který uživatel zadá z **přidat položky** dialogové okno. Název je založen na příznaky, které jsou nastaveny *.vsdir* souboru. Název může obsahovat hodnotu null. |
 | `InstallationDirectory` | Cestu k adresáři [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je instalace. |
 | `Silent` | Logická hodnota, která označuje, zda by průvodce měl běžet tiše jakoby **Dokončit** bylo kliknuto (`TRUE`). |
-  
-## <a name="context-parameters-for-add-sub-project"></a>Kontextové parametry pro přidání dílčí projekt  
-  
+
+## <a name="context-parameters-for-add-sub-project"></a>Kontextové parametry pro přidání dílčí projekt
+
 | Parametr | Popis |
 |-------------------------| - |
 | `WizardType` | Registrovaný typ průvodce (<xref:EnvDTE.Constants.vsWizardAddSubProject>) nebo identifikátor GUID, který určuje typ průvodce. V [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] je implementace, identifikátor GUID pro Průvodce {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}. |
@@ -57,11 +57,11 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované výv
 | `ItemName` | Název položky, která se má přidat. Tento název je výchozí název souboru nebo název souboru, který uživatel zadá z **přidat položky** dialogové okno. Název je založen na příznaky, které jsou nastaveny *.vsdir* souboru. Název může obsahovat hodnotu null. |
 | `InstallationDirectory` | Cestu k adresáři [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instalace. |
 | `Silent` | Logická hodnota, která označuje, zda by průvodce měl běžet tiše jakoby **Dokončit** bylo kliknuto (`TRUE`). |
-  
-## <a name="see-also"></a>Viz také  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>   
- [Vlastní parametry](../../extensibility/internals/custom-parameters.md)   
- [Průvodce](../../extensibility/internals/wizards.md)   
- [Soubor průvodce (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [Kontextové parametry pro spouštění průvodců](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+
+## <a name="see-also"></a>Viz také
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
+- [Vlastní parametry](../../extensibility/internals/custom-parameters.md)
+- [Průvodci](../../extensibility/internals/wizards.md)
+- [Soubor průvodce (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [Kontextové parametry pro spouštění průvodců](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

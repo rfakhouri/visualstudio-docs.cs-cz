@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPorts2::Next | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPorts2::Next
 helpviewer_keywords:
@@ -12,47 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55c5c6061595b1cd48db9c91b670b8ade26e15de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f5fb4d5574976b99185c4affd934d4a86fdcab72
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031239"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691277"
 ---
 # <a name="ienumdebugports2next"></a>IEnumDebugPorts2::Next
-Vrátí další sadu elementů z výčtu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Next(  
-   ULONG         celt,  
-   IDebugPort2** rgelt,  
-   ULONG*        pceltFetched  
-);  
-```  
-  
-```csharp  
-int Next(  
-   uint          celt,  
-   IDebugPort2[] rgelt,  
-   ref uint      pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `celt`  
- [in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.  
-  
- `rgelt`  
- [out v] Pole [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) prvků, které mají být vyplněna.  
-  
- `pceltFetched`  
- [out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud menší než požadovaný počet prvků, které může být vrácena; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)   
- [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
+Vrátí další sadu elementů z výčtu.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Next(
+   ULONG         celt,
+   IDebugPort2** rgelt,
+   ULONG*        pceltFetched
+);
+```
+
+```csharp
+int Next(
+   uint          celt,
+   IDebugPort2[] rgelt,
+   ref uint      pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `celt`
+
+ [in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.
+
+ `rgelt`
+
+ [out v] Pole [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) prvků, které mají být vyplněna.
+
+ `pceltFetched`
+
+ [out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud menší než požadovaný počet prvků, které může být vrácena; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
+- [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

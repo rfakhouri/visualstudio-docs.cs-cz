@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948807"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716503"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 
@@ -47,12 +47,9 @@ Kromě správy projektů, poskytuje bohaté možnosti, úprav a **interaktivní*
 1. Zkontrolujte, jestli kód funguje správně stisknutím kombinace kláves **F5** nebo jeho výběru **ladění** > **spustit ladění** příkazu nabídky. Tento příkaz spustí kód v ladicím programu, ale vzhledem k tomu, že jste ještě nepracovali se pro pozastavení programu, když je spuštěný, stačí vytiskne vlnovky u několika iterací. Stisknutím jakékoli klávesy zavřete okno výstup.
 
     > [!Tip]
-    > Zavřete okno výstup automaticky při dokončení programu, nahraďte `main()` volat s následujícím kódem:
+    > Zavřete okno výstup automaticky při dokončení programu, vyberte **nástroje** > **možnosti** nabídky příkazu, rozbalte **Python** uzlu, vyberte možnost **Ladění**a potom zrušte zaškrtnutí políčka **počkat na vstup při ukončení procesu obvykle**:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Možnost ladění Pythonu zavřete okno výstup na normální program ukončit](media/vs-getting-started-python-22-debugging5.png)
 
 1. Nastavit zarážku na `for` jedním klepnutím na okraji šedé tento řádek nebo umístěním blikající kurzor na tomto řádku a pomocí příkazu **ladění** > **Přepnout zarážku** příkazu () **F9**). Červená tečka se zobrazí v šedé okraj udávajících zarážky (jak je uvedeno níže šipkou):
 

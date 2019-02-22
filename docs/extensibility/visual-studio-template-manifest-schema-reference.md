@@ -8,137 +8,137 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fa5d123048b819c2b0b92951582bd9348cbdbab6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999467"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713162"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Odkaz na schéma manifestu šablony Visual Studio
-Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) souborů, které jsou generovány pro šablony sady Visual Studio projekt nebo položku. Schéma také popisuje umístění a další důležité informace o šabloně.  
-  
- : Vzhledem k tomu, že existují samostatné položky a adresáře šablony projektu, manifest by měl mít nikdy kombinaci šablony položek a projektů.  
-  
+Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) souborů, které jsou generovány pro šablony sady Visual Studio projekt nebo položku. Schéma také popisuje umístění a další důležité informace o šabloně.
+
+ : Vzhledem k tomu, že existují samostatné položky a adresáře šablony projektu, manifest by měl mít nikdy kombinaci šablony položek a projektů.
+
 > [!IMPORTANT]
->  Tento manifest je k dispozici od verze Visual Studio 2017.  
-  
-## <a name="vstemplatemanifest-element"></a>VSTemplateManifest – element  
- Kořenový element v manifestu.  
-  
-### <a name="attributes"></a>Atributy  
-  
--   **Verze**: Řetězec představující verze manifestu šablony. Povinný parametr.  
-  
--   **Národní prostředí**: Řetězec představující národního prostředí nebo národní prostředí manifestu šablony. Hodnota národního prostředí platí pro všechny šablony. Je nutné použít samostatné manifestu pro každé národní prostředí. Volitelné.  
-  
-### <a name="child-elements"></a>Podřízené prvky  
-  
--   **VSTemplateContainer** volitelné.  
-  
--   **VSTemplateDir** volitelné.  
-  
-### <a name="parent-element"></a>Nadřazený element  
- Žádné  
-  
-## <a name="vstemplatecontainer"></a>VSTemplateContainer  
- Kontejner šablony manifestu elementy. Manifest obsahuje jeden kontejner šablony pro každou šablonu, kterou definuje.  
-  
-### <a name="attributes"></a>Atributy  
- **VSTemplateType**: Hodnotu řetězce, která určuje typ šablony (`"Project"`, `"Item"`, nebo `"ProjectGroup"`). Požadováno  
-  
-### <a name="child-elements"></a>Podřízené prvky  
-  
--   **RelativePathOnDisk**:  Relativní cesta souboru šablony na disku. Toto umístění také definuje umístění šablony ve stromové struktuře šablony je znázorněno **nový projekt** nebo **nová položka** dialogového okna. Pro šablony nasadit jako jednotlivé soubory a adresáře Tato cesta odkazuje na adresář obsahující soubory šablon. Pro šablony nasadit jako *ZIP* soubor, tato cesta musí být cesta k *ZIP* souboru.  
-  
--   **VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, který popisuje záhlaví.  
-  
-### <a name="parent-element"></a>Nadřazený element  
- **VSTemplateManifest**  
-  
-## <a name="vstemplatedir"></a>VSTemplateDir  
- Popisuje adresáře, kde je umístěn šablona. Manifest může obsahovat více **VSTemplateDir** položky k poskytování lokalizovaný název a řazení řazení pro adresáře řídit jejich vzhled ve stromu kategorii šablony.  
-  
- Z důvodu jejich návrhu **VSTemplateDir** položky by se měla zobrazit pouze v zadaných manifestů – národní prostředí.  
-  
-### <a name="attributes"></a>Atributy  
- Žádné  
-  
-### <a name="child-elements"></a>Podřízené prvky  
-  
--   **RelativePath**: Cesta k šabloně. Může existovat jenom jeden záznam za cestu, takže první z nich vyhraje u všech manifestů.  
-  
--   **LocalizedName**: A **NameDescriptionIcon** prvek, který určuje lokalizovaný název. Volitelné.  
-  
--   **SortOrder –**: Řetězec, který určuje pořadí řazení. Volitelné.  
-  
--   **ParentFolderOverrideName**: Přepsané název nadřazené složky. Volitelné. Tento element nemá **název** atribut, který je hodnota řetězce, který určuje název.  
-  
-### <a name="parent-element"></a>Nadřazený element  
- **VSTemplateManifest**  
-  
-## <a name="namedescriptionicon"></a>NameDescriptionIcon  
- Určuje název a popis, případně lokalizovaný šablony. Zobrazit **LocalizedName** výše.  
-  
-### <a name="attributes"></a>Atributy  
-  
--   **Balíček**: Řetězcovou hodnotu, která určuje balíček. Volitelné.  
-  
--   **ID**: Hodnotu řetězce, která určuje ID. Volitelné.  
-  
-### <a name="child-elements"></a>Podřízené prvky  
- Žádné  
-  
-### <a name="parent-element"></a>Nadřazený element  
- **LocalizedName**  
-  
-## <a name="examples"></a>Příklady  
- Následující kód je příkladem šablony projektu *.vstman* souboru.  
-  
-```xml  
-<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  
-  <VSTemplateContainer TemplateType="Project">  
-    <RelativePathOnDisk>CSharp\1033\TestProjectTemplate</RelativePathOnDisk>  
-    <TemplateFileName>TestProjectTemplate.vstemplate</TemplateFileName>  
-    <VSTemplateHeader>  
-      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <Name>TestProjectTemplate</Name>  
-        <Description>TestProjectTemplate</Description>  
-        <Icon>TestProjectTemplate.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>  
-        <SortOrder>1000</SortOrder>  
-        <TemplateID>aac0aeea-7883-4003-992f-937d53d70ab1</TemplateID>  
-        <CreateNewFolder>true</CreateNewFolder>  
-        <DefaultName>TestProjectTemplate</DefaultName>  
-        <ProvideDefaultName>true</ProvideDefaultName>  
-      </TemplateData>  
-    </VSTemplateHeader>  
-  </VSTemplateContainer>  
-</VSTemplateManifest>  
-  
-```  
-  
- Následující kód představuje příklad šablony položky *.vstman* souboru.  
-  
-```xml  
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  
-  <VSTemplateContainer TemplateType="Item">  
-    <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>  
-    <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>  
-    <VSTemplateHeader>  
-      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <Name>ItemTemplate1</Name>  
-        <Description>ItemTemplate1</Description>  
-        <Icon>ItemTemplate1.ico</Icon>  
-        <TemplateID>bfeadf8e-a251-4109-b605-516b88e38c8d</TemplateID>  
-        <ProjectType>CSharp</ProjectType>  
-        <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>  
-        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
-        <DefaultName>Class.cs</DefaultName>  
-      </TemplateData>  
-    </VSTemplateHeader>  
-  </VSTemplateContainer>  
-</VSTemplateManifest>  
-  
+>  Tento manifest je k dispozici od verze Visual Studio 2017.
+
+## <a name="vstemplatemanifest-element"></a>VSTemplateManifest – element
+ Kořenový element v manifestu.
+
+### <a name="attributes"></a>Atributy
+
+-   **Verze**: Řetězec představující verze manifestu šablony. Povinný parametr.
+
+-   **Národní prostředí**: Řetězec představující národního prostředí nebo národní prostředí manifestu šablony. Hodnota národního prostředí platí pro všechny šablony. Je nutné použít samostatné manifestu pro každé národní prostředí. Volitelné.
+
+### <a name="child-elements"></a>Podřízené prvky
+
+-   **VSTemplateContainer** volitelné.
+
+-   **VSTemplateDir** volitelné.
+
+### <a name="parent-element"></a>Nadřazený element
+ Žádné
+
+## <a name="vstemplatecontainer"></a>VSTemplateContainer
+ Kontejner šablony manifestu elementy. Manifest obsahuje jeden kontejner šablony pro každou šablonu, kterou definuje.
+
+### <a name="attributes"></a>Atributy
+ **VSTemplateType**: Hodnotu řetězce, která určuje typ šablony (`"Project"`, `"Item"`, nebo `"ProjectGroup"`). Požadováno
+
+### <a name="child-elements"></a>Podřízené prvky
+
+-   **RelativePathOnDisk**:  Relativní cesta souboru šablony na disku. Toto umístění také definuje umístění šablony ve stromové struktuře šablony je znázorněno **nový projekt** nebo **nová položka** dialogového okna. Pro šablony nasadit jako jednotlivé soubory a adresáře Tato cesta odkazuje na adresář obsahující soubory šablon. Pro šablony nasadit jako *ZIP* soubor, tato cesta musí být cesta k *ZIP* souboru.
+
+-   **VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, který popisuje záhlaví.
+
+### <a name="parent-element"></a>Nadřazený element
+ **VSTemplateManifest**
+
+## <a name="vstemplatedir"></a>VSTemplateDir
+ Popisuje adresáře, kde je umístěn šablona. Manifest může obsahovat více **VSTemplateDir** položky k poskytování lokalizovaný název a řazení řazení pro adresáře řídit jejich vzhled ve stromu kategorii šablony.
+
+ Z důvodu jejich návrhu **VSTemplateDir** položky by se měla zobrazit pouze v zadaných manifestů – národní prostředí.
+
+### <a name="attributes"></a>Atributy
+ Žádné
+
+### <a name="child-elements"></a>Podřízené prvky
+
+-   **RelativePath**: Cesta k šabloně. Může existovat jenom jeden záznam za cestu, takže první z nich vyhraje u všech manifestů.
+
+-   **LocalizedName**: A **NameDescriptionIcon** prvek, který určuje lokalizovaný název. Volitelné.
+
+-   **SortOrder –**: Řetězec, který určuje pořadí řazení. Volitelné.
+
+-   **ParentFolderOverrideName**: Přepsané název nadřazené složky. Volitelné. Tento element nemá **název** atribut, který je hodnota řetězce, který určuje název.
+
+### <a name="parent-element"></a>Nadřazený element
+ **VSTemplateManifest**
+
+## <a name="namedescriptionicon"></a>NameDescriptionIcon
+ Určuje název a popis, případně lokalizovaný šablony. Zobrazit **LocalizedName** výše.
+
+### <a name="attributes"></a>Atributy
+
+-   **Balíček**: Řetězcovou hodnotu, která určuje balíček. Volitelné.
+
+-   **ID**: Hodnotu řetězce, která určuje ID. Volitelné.
+
+### <a name="child-elements"></a>Podřízené prvky
+ Žádné
+
+### <a name="parent-element"></a>Nadřazený element
+ **LocalizedName**
+
+## <a name="examples"></a>Příklady
+ Následující kód je příkladem šablony projektu *.vstman* souboru.
+
+```xml
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Project">
+    <RelativePathOnDisk>CSharp\1033\TestProjectTemplate</RelativePathOnDisk>
+    <TemplateFileName>TestProjectTemplate.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name>TestProjectTemplate</Name>
+        <Description>TestProjectTemplate</Description>
+        <Icon>TestProjectTemplate.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+        <SortOrder>1000</SortOrder>
+        <TemplateID>aac0aeea-7883-4003-992f-937d53d70ab1</TemplateID>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>TestProjectTemplate</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>
+
+```
+
+ Následující kód představuje příklad šablony položky *.vstman* souboru.
+
+```xml
+VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
+    <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name>ItemTemplate1</Name>
+        <Description>ItemTemplate1</Description>
+        <Icon>ItemTemplate1.ico</Icon>
+        <TemplateID>bfeadf8e-a251-4109-b605-516b88e38c8d</TemplateID>
+        <ProjectType>CSharp</ProjectType>
+        <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+        <DefaultName>Class.cs</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>
+
 ```

@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955749"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708326"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
-Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidruženy **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu k vlastnosti kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
+
+Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidruženy **prostředí** kategorie `DTE.Properties("Environment", <Property Page>)` z **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu k vlastnosti kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
 
 ## <a name="general"></a>Obecné
- `DTE.Properties("Environment", "General")`
+
+`DTE.Properties("Environment", "General")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -37,7 +39,8 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |AutohidePinActiveTabOnly|Get/Set (Boolean)|Určuje, zda **automaticky skrýt** ovlivní pouze aktivní kartě.|
 
 ## <a name="add-inmacros-security"></a>Přidat doplňků/maker zabezpečení
- `DTE.Properties("Environment", "AddinMacrosSecurity")`
+
+`DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -46,7 +49,8 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |LoadAddinsFromTheWeb|Get/Set (Boolean)|Umožňuje doplňků pro načtení z adresy URL na webu.|
 
 ## <a name="documents"></a>Dokumenty
- `DTE.Properties("Environment", "Documents")`
+
+`DTE.Properties("Environment", "Documents")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -63,7 +67,8 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Pozice v kartě a ve kterých se mají vložit otevřený dokument.|
 
 ## <a name="extension-manager"></a>správce rozšíření
- `DTE.Properties("Environment", "ExtensionManager")`
+
+`DTE.Properties("Environment", "ExtensionManager")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -72,7 +77,8 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|Automaticky vyhledá aktualizace nainstalované rozšíření.|
 
 ## <a name="find-and-replace"></a>hledání a nahrazování
- `DTE.Properties("Environment", "FindAndReplace")`
+
+`DTE.Properties("Environment", "FindAndReplace")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -82,7 +88,8 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |HideWindowsAfterMatchFromQuickFindReplace|Get/Set (Boolean)|Skryje **najít a nahradit** okno po shoda je vyhledán pomocí **rychlé hledání** nebo **rychlého nahrazení**.|
 
 ## <a name="import-and-export-settings"></a>Nastavení importu a exportu
- `DTE.Properties("Environment", "Import and Export Settings")`
+
+`DTE.Properties("Environment", "Import and Export Settings")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -91,21 +98,24 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |AutoSaveFile|Získá nebo nastaví (String)|Název souboru, kde se automaticky uloží uživatelská nastavení.|
 
 ## <a name="international-settings"></a>Mezinárodní nastavení
- `DTE.Properties("Environment", "International")`
+
+`DTE.Properties("Environment", "International")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
 |Jazyk|Získá nebo nastaví (String)|Hodnota LCID pro aktuální jazyk pro Visual Studio.|
 
 ## <a name="keyboard"></a>Klávesnice
- `DTE.Properties("Environment", "Keyboard")`
+
+`DTE.Properties("Environment", "Keyboard")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
 |Schéma|Získá nebo nastaví (String)|Vrátí řetězec, který obsahuje vestavěné schéma, řetězec obsahující úplnou cestu souboru .vsk, který je načten nebo "(výchozí)" Pokud se žádný soubor .vsk, který je načten.|
 
 ## <a name="projects-and-solution"></a>Projekty a řešení
- `DTE.Properties("Environment", "ProjectsAndSolution")`
+
+`DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -128,7 +138,10 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |MSBuildOutputVerbosity|Získá nebo nastaví (String)|Určuje úroveň podrobností pro výstup sestavení.|
 
 ## <a name="startup"></a>Třída pro spuštění
- `DTE.Properties("Environment", "Startup")`
+
+`DTE.Properties("Environment", "Startup")`
+
+::: moniker range="vs-2017"
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -137,8 +150,19 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Úvodní stránka se aktualizuje po každé průchodu intervalu zadaném ve StartPageRefreshInterval.|
 |StartPageRefreshInterval|Získá nebo nastaví (krátký)|Interval v minutách, chcete-li aktualizovat úvodní stránku.|
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|Název položky vlastnosti|Hodnota|Popis|
+| - |-----------|-----------------|
+|OnStartUp|Get/Set (Enum)|Akce se má provést při spuštění z <xref:EnvDTE.vsStartUp>.|
+
+::: moniker-end
+
 ## <a name="tasklist"></a>Seznamu úkolů
- `DTE.Properties("Environment", "TaskList")`
+
+`DTE.Properties("Environment", "TaskList")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -148,7 +172,8 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |CommentTokens|SafeArray|Vrátí pole SafeArray komentářů k tomuto tokenu hodnoty. Každý obsahuje pole, `Name` (řetězec) a `Priority` (<xref:EnvDTE.vsTaskPriority>, vysoká, střední nebo nízká).|
 
 ## <a name="web-browser"></a>Webový prohlížeč
- `DTE.Properties("Environment", "WebBrowser")`
+
+`DTE.Properties("Environment", "WebBrowser")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
@@ -157,7 +182,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Externí zdroj, návrh,).|
 |ViewSourceExternalProgram|Získá nebo nastaví (String)|Cesta v prohlížeči externího zdroje.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Řízení nastavení možností](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Určování názvů položky vlastností na stránkách možností](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

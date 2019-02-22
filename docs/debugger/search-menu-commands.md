@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de9fdd38655c5c4baf8630df75c1365e38fca1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c61dc9e752dccee909baa742e4c8d677df865a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069061"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693331"
 ---
 # <a name="search-menu-commands"></a>Příkazy nabídky vyhledávání
-**Hledání** nabídka poskytuje příkazy k vyhledání konkrétního systému windows.  
-  
- **Najít okno/procesu/vlákno nebo zprávu**  
- Otevře **okno**/**procesu**/**vlákna**/**MessageSearch** dialogovém okně kde lze použít **FinderTool** nebo určení kritérií hledání.  
-  
- **Najít další**  
- Vyhledá další odpovídající okno, proces, vlákno nebo zprávu aktuální zobrazení. Tato položka nabídky (a související tlačítka) je k dispozici pouze v případě, že je výsledek platný hledání, který není jedinečný.  
-  
- **Najít předchozí**  
- Vyhledá předchozí odpovídající okno, proces, vlákno nebo zprávu aktuální zobrazení. Tato položka nabídky (a související tlačítka) je k dispozici pouze v případě, že je výsledek platný hledání, který není jedinečný.
+**Hledání** nabídka poskytuje příkazy k vyhledání konkrétního systému windows.
+
+ **Najít okno/procesu/vlákno nebo zprávu** otevře **okno**/**procesu**/**vlákna** /  **MessageSearch** dialogové okno, kde můžete použít **FinderTool** nebo určení kritérií hledání.
+
+ **Najít další** vyhledá další odpovídající okno, proces, vlákno nebo zprávu aktuální zobrazení. Tato položka nabídky (a související tlačítka) je k dispozici pouze v případě, že je výsledek platný hledání, který není jedinečný.
+
+ **Najít předchozí** vyhledá předchozí odpovídající okno, proces, vlákno nebo zprávu aktuální zobrazení. Tato položka nabídky (a související tlačítka) je k dispozici pouze v případě, že je výsledek platný hledání, který není jedinečný.

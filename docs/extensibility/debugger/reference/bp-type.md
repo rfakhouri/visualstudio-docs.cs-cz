@@ -1,7 +1,7 @@
 ---
 title: BP_TYPE | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f18d21485084351e639405dad946dff8be4c767a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315973"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711472"
 ---
 # <a name="bptype"></a>BP_TYPE
 Určuje, zda zarážka je v místě, kód, je umístění dat nebo je jiný typ zarážky.
@@ -44,17 +44,13 @@ public enum enum_BP_TYPE {
 ```
 
 ## <a name="members"></a>Členové
-BPT_NONE  
-Určuje žádný typ zarážky.
+BPT_NONE určuje žádný typ zarážky.
 
-BPT_CODE  
-Určuje kód zarážku.
+BPT_CODE určuje kódu zarážku.
 
-BPT_DATA  
-Určuje datové zarážky.
+BPT_DATA Určuje datové zarážky.
 
-BPT_SPECIAL  
-Určuje, který není kód ani datový typ zarážky. Tento typ je zastaralý a neměl by se používat.
+Určuje BPT_SPECIAL zarážka, která není kód ani datového typu. Tento typ je zastaralý a neměl by se používat.
 
 ## <a name="remarks"></a>Poznámky
 Předán jako parametr [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) a [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) metody.
@@ -67,6 +63,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

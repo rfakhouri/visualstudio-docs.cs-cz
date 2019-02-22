@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10bcc9162d41fd07b85d7cb1bf87adc31367bda1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 53f50c3a107f9796e4fbb661f303bfcabf284cc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008904"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710094"
 ---
 # <a name="debugging-f"></a>Ladění F#
-Ladění F# je podobné ladění jakékoli spravovaného jazyka, s několika výjimkami:  
-  
--   **Automatické hodnoty** okno nezobrazí F# proměnné.  
-  
--   Upravit a pokračovat není podporována pro F#. Úpravy F# kódu během relace ladění je možné, ale mělo by se vyhnout. Protože během relace ladění se nepoužijí změny kódu, úpravy F# kódu během ladění způsobí neshodu mezi zdrojový kód a kód, který se právě ladí.  
-  
--   Ladicí program nemůže rozpoznat F# výrazy. Zadání výrazu v okně ladicího programu nebo dialogového okna průběhu F# ladění, musí přeložit výraz, který C# syntaxe. Při překladu F# výraz, který C#, ujistěte se, že si zapamatovat, že C# používá == jako operátor porovnání rovnosti a který F# používá jeden =.  
-  
-## <a name="see-also"></a>Viz také  
- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)
+Ladění F# je podobné ladění jakékoli spravovaného jazyka, s několika výjimkami:
+
+-   **Automatické hodnoty** okno nezobrazí F# proměnné.
+
+-   Upravit a pokračovat není podporována pro F#. Úpravy F# kódu během relace ladění je možné, ale mělo by se vyhnout. Protože během relace ladění se nepoužijí změny kódu, úpravy F# kódu během ladění způsobí neshodu mezi zdrojový kód a kód, který se právě ladí.
+
+-   Ladicí program nemůže rozpoznat F# výrazy. Zadání výrazu v okně ladicího programu nebo dialogového okna průběhu F# ladění, musí přeložit výraz, který C# syntaxe. Při překladu F# výraz, který C#, ujistěte se, že si zapamatovat, že C# používá == jako operátor porovnání rovnosti a který F# používá jeden =.
+
+## <a name="see-also"></a>Viz také
+- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)

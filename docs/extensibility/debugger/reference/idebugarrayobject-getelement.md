@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayObject::GetElement | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetElement
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e9286f4ff229055e001cf8d6b28fe2e599a628e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029255"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684621"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
-Získá prvek pole.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetElement(   
-   DWORD          dwIndex,  
-   IDebugObject** ppElement  
-);  
-```  
-  
-```csharp  
-int GetElement(  
-   [In] uint dwIndex,   
-   out IDebugObject ppElement  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `dwIndex`  
- [in] Index prvku.  
-  
- `ppElement`  
- [out] Vrátí [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) rozhraní, které představuje element.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato metoda považuje všechny prvky objektu pole jednorozměrné pole, i když objekt pole je vícerozměrné. Mějme například pole `myarray[3][2][6]` a `dwIndex` parametr 20, vrátí tato metoda element z `myarray[1][1][2]`a `dwIndex` parametr 21 vracel element z `myarray[1][1][3]`. Použití [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) metodou ke zjištění celkový počet prvků v poli.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
+Získá prvek pole.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetElement( 
+   DWORD          dwIndex,
+   IDebugObject** ppElement
+);
+```
+
+```csharp
+int GetElement(
+   [In] uint dwIndex,
+   out IDebugObject ppElement
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `dwIndex`
+
+ [in] Index prvku.
+
+ `ppElement`
+
+ [out] Vrátí [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) rozhraní, které představuje element.
+
+## <a name="return-value"></a>Návratová hodnota
+ V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Tato metoda považuje všechny prvky objektu pole jednorozměrné pole, i když objekt pole je vícerozměrné. Mějme například pole `myarray[3][2][6]` a `dwIndex` parametr 20, vrátí tato metoda element z `myarray[1][1][2]`a `dwIndex` parametr 21 vracel element z `myarray[1][1][3]`. Použití [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) metodou ke zjištění celkový počet prvků v poli.
+
+## <a name="see-also"></a>Viz také
+- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

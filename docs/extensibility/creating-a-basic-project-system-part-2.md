@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318482"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681306"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 První názorný postup v této sérii [vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md), ukazuje postup vytvoření systému základního projektu. Tento návod vychází systému základního projektu tak, že přidáte šablony sady Visual Studio, stránky vlastností a další funkce. Prvního průvodce musíte dokončit před zahájením tohoto objektu.
@@ -40,7 +40,7 @@ Tento návod se naučíte k provedení následujících úkolů:
 > Kroky v tomto názorném postupu jsou založeny na projektu v jazyce C#. S výjimkou konkrétní přípony názvů souborů a kód, můžete však použít stejný postup pro projekt jazyka Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Vytvořte šablonu sady Visual Studio
-[Vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md) ukazuje, jak vytvořit šablonu základního projektu a přidejte do systém projektu. Také ukazuje, jak zaregistrovat pomocí této šablony pomocí sady Visual Studio <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atribut, který zapisuje úplnou cestu *\\Templates\Projects\SimpleProject\\* složku v systému registru.
+- [Vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md) ukazuje, jak vytvořit šablonu základního projektu a přidejte do systém projektu. Také ukazuje, jak zaregistrovat pomocí této šablony pomocí sady Visual Studio <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atribut, který zapisuje úplnou cestu *\\Templates\Projects\SimpleProject\\* složku v systému registru.
 
 Pomocí šablony sady Visual Studio (*.vstemplate* souboru) namísto šablonu základního projektu, můžete řídit, jak se šablona zobrazuje v **nový projekt** dialogové okno a jak jsou parametry šablony nahrazena. A *.vstemplate* soubor je soubor XML, který popisuje, jak mají být zahrnuty při vytvoření projektu pomocí šablony projektu systému zdrojové soubory. Samotný systém projektu je sestaven tak, že shromažďují *.vstemplate* souboru a zdrojové soubory v *ZIP* souboru a nasadit tak, že zkopírujete *ZIP* do umístění, která je známé sady Visual Studio. Tento proces je vysvětleno podrobněji dále v tomto návodu.
 
@@ -271,7 +271,7 @@ Soubor projektu zobrazíte testu, zda **konzoly** podřízený uzel se zobrazí 
     ![Jednoduchý projekt konzoly uzlu](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>Nahraďte parametry šablony projektu
-[Vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md) vám ukázal, jak přepsat `ProjectNode.AddFileFromTemplate` metodu základní typ nahrazení parametru šablony. V této části se naučíte používat složitější parametry šablony sady Visual Studio.
+- [Vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md) vám ukázal, jak přepsat `ProjectNode.AddFileFromTemplate` metodu základní typ nahrazení parametru šablony. V této části se naučíte používat složitější parametry šablony sady Visual Studio.
 
 Při vytváření projektu pomocí šablony v sadě Visual Studio **nový projekt** dialogové okno, jsou nahrazeny parametry šablony řetězců k přizpůsobení projektu. Parametr šablony je speciální token, který začíná a končí u dolaru, například $time$. Následující dva parametry jsou obzvláště užitečné pro povolení přizpůsobení v projektech, které jsou založeny na šabloně:
 

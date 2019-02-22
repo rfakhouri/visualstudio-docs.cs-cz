@@ -13,37 +13,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5602651cb3e2c2f23e99d10f1af62849209aad6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ae838a1684d0d120295bce0e890b3239421b4a71
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868573"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630103"
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>Postupy: Vytváření nových sešitů prostřednictvím kódu programu
-  Když vytvoříte sešitu prostřednictvím kódu programu, je nativní <xref:Microsoft.Office.Interop.Excel.Workbook> objekt nelze <xref:Microsoft.Office.Tools.Excel.Workbook> hostitelský objekt.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- Můžete generovat <xref:Microsoft.Office.Tools.Excel.Workbook> hostitelský objekt pro <xref:Microsoft.Office.Interop.Excel.Workbook> objektu v projektu doplňku VSTO. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
-  
-## <a name="to-create-a-new-workbook"></a>Chcete-li vytvořit nový sešit  
-  
-1.  Použití <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> metodu <xref:Microsoft.Office.Interop.Excel.Workbooks> kolekce.  
-  
+  Když vytvoříte sešitu prostřednictvím kódu programu, je nativní <xref:Microsoft.Office.Interop.Excel.Workbook> objekt nelze <xref:Microsoft.Office.Tools.Excel.Workbook> hostitelský objekt.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ Můžete generovat <xref:Microsoft.Office.Tools.Excel.Workbook> hostitelský objekt pro <xref:Microsoft.Office.Interop.Excel.Workbook> objektu v projektu doplňku VSTO. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+
+## <a name="to-create-a-new-workbook"></a>Chcete-li vytvořit nový sešit
+
+1.  Použití <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> metodu <xref:Microsoft.Office.Interop.Excel.Workbooks> kolekce.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#1)]
-     [!code-vb[Trin_VstcoreExcelAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#1)]  
-  
-    > [!NOTE]  
-    >  Sešit na základě šablony jiné než výchozí šablony můžete vytvořit: předat šablonu, kterou chcete použít jako parametr, který se <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> metody.  
-  
-## <a name="see-also"></a>Viz také:  
- [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Práce se sešity](../vsto/working-with-workbooks.md)   
- [Postupy: Otevírání sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-open-workbooks.md)   
- [Postupy: Ukládání sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-save-workbooks.md)   
- [Postupy: Zavírání sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)  
+     [!code-vb[Trin_VstcoreExcelAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#1)]
+
+    > [!NOTE]
+    >  Sešit na základě šablony jiné než výchozí šablony můžete vytvořit: předat šablonu, kterou chcete použít jako parametr, který se <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> metody.
+
+## <a name="see-also"></a>Viz také:
+- [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Práce se sešity](../vsto/working-with-workbooks.md)
+- [Postupy: Otevírání sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-open-workbooks.md)
+- [Postupy: Ukládání sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-save-workbooks.md)
+- [Postupy: Zavírání sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-close-workbooks.md)
+- [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)

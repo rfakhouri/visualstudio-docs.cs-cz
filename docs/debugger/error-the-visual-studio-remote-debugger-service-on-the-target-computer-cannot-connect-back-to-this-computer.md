@@ -16,64 +16,64 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d2d637dfb74a6d3a0e4c8b4ae346aa8236f28a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 823e4517deda68fc807c83373d26fc38740383c2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018888"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713877"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Chyba: Služba Visual Studio Remote Debugger na cílovém počítači se nemůže připojit zpět k tomuto počítači
-Tato chyba znamená, že se službou Visual Studio Remote Debugger uživatelského účtu, který nelze ověřit při pokusu o připojení k počítači, který ladíte z.  
-  
- V následující tabulce jsou uvedeny účty, které je přístupné počítači:  
-  
-|||||  
-|-|-|-|-|  
-||Účet LocalSystem|Účet domény|Místní účty, které mají stejné uživatelské jméno a heslo na obou počítačích|  
-|Oba počítače ve stejné doméně.|Ano|Ano|Ano|  
-|Oba počítače v doménách s obousměrným vztahem důvěryhodnosti|Ne|Ne|Ano|  
-|Jeden nebo oba počítače v pracovní skupině|Ne|Ne|Ano|  
-|Počítače v různých doménách|Ne|Ne|Ano|  
-  
- Navíc:  
-  
--   Účet, který spustíte v rámci služby Visual Studio Remote Debugger by měl být správce na vzdáleném počítači tak, aby ho můžete ladit nějaký proces.  
-  
--   Účet také musí být udělena `Log on as a service` oprávnění ve vzdáleném počítači, který se používá **místní zásady zabezpečení** nástroje pro správu.  
-  
--   Pokud používáte místní účet přístupu k počítači, je nutné spustit pod účtem místní služby Visual Studio Remote Debugger.  
-  
-### <a name="to-correct-this-error"></a>Oprava této chyby  
-  
-1.  Ujistěte se, že služba Visual Studio Remote Debugger je správně nastavený na vzdáleném počítači. Další informace najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
-  
-2.  Spusťte službu vzdálený ladicí program pomocí účtu, který má přístup k počítači hostitele ladicího programu, jak je znázorněno v předchozí tabulce.  
-  
-### <a name="to-add-log-on-as-a-service-privilege"></a>Chcete-li přidat oprávnění "Přihlásit jako službu"  
-  
-1.  Na **Start** nabídce zvolte **ovládací panely**.  
-  
-2.  V Ovládacích panelech zvolte **klasické zobrazení**, v případě potřeby.  
-  
-3.  Dvakrát klikněte na panel **nástroje pro správu**.  
-  
-4.  V okně nástroje pro správu, klikněte dvakrát na **místní zásady zabezpečení**.  
-  
-5.  V **místní nastavení zabezpečení** okna, rozbalte **místní zásady** složky.  
-  
-6.  Klikněte na tlačítko **přiřazení uživatelských práv**.  
-  
-7.  V **zásady** sloupce, klikněte dvakrát na **přihlásit jako službu** zobrazíte aktuální místní zásady skupiny přiřazení v **přihlásit jako službu** dialogové okno.  
-  
-8.  Pokud chcete přidat nové uživatele, klikněte na tlačítko **přidat uživatele nebo skupinu** tlačítko.  
-  
-9. Po dokončení přidávání uživatelů, klikněte na tlačítko **OK**.  
-  
-### <a name="to-work-around-this-error"></a>Chcete-li vyřešit tuto chybu  
-  
--   Spuštění sledování vzdáleného ladění jako aplikace místo jako služba.  
-  
-## <a name="see-also"></a>Viz také  
- [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Vzdálené ladění](../debugger/remote-debugging.md)
+Tato chyba znamená, že se službou Visual Studio Remote Debugger uživatelského účtu, který nelze ověřit při pokusu o připojení k počítači, který ladíte z.
+
+ V následující tabulce jsou uvedeny účty, které je přístupné počítači:
+
+|||||
+|-|-|-|-|
+||Účet LocalSystem|Účet domény|Místní účty, které mají stejné uživatelské jméno a heslo na obou počítačích|
+|Oba počítače ve stejné doméně.|Ano|Ano|Ano|
+|Oba počítače v doménách s obousměrným vztahem důvěryhodnosti|Ne|Ne|Ano|
+|Jeden nebo oba počítače v pracovní skupině|Ne|Ne|Ano|
+|Počítače v různých doménách|Ne|Ne|Ano|
+
+ Navíc:
+
+-   Účet, který spustíte v rámci služby Visual Studio Remote Debugger by měl být správce na vzdáleném počítači tak, aby ho můžete ladit nějaký proces.
+
+-   Účet také musí být udělena `Log on as a service` oprávnění ve vzdáleném počítači, který se používá **místní zásady zabezpečení** nástroje pro správu.
+
+-   Pokud používáte místní účet přístupu k počítači, je nutné spustit pod účtem místní služby Visual Studio Remote Debugger.
+
+### <a name="to-correct-this-error"></a>Oprava této chyby
+
+1.  Ujistěte se, že služba Visual Studio Remote Debugger je správně nastavený na vzdáleném počítači. Další informace najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).
+
+2.  Spusťte službu vzdálený ladicí program pomocí účtu, který má přístup k počítači hostitele ladicího programu, jak je znázorněno v předchozí tabulce.
+
+### <a name="to-add-log-on-as-a-service-privilege"></a>Chcete-li přidat oprávnění "Přihlásit jako službu"
+
+1.  Na **Start** nabídce zvolte **ovládací panely**.
+
+2.  V Ovládacích panelech zvolte **klasické zobrazení**, v případě potřeby.
+
+3.  Dvakrát klikněte na panel **nástroje pro správu**.
+
+4.  V okně nástroje pro správu, klikněte dvakrát na **místní zásady zabezpečení**.
+
+5.  V **místní nastavení zabezpečení** okna, rozbalte **místní zásady** složky.
+
+6.  Klikněte na tlačítko **přiřazení uživatelských práv**.
+
+7.  V **zásady** sloupce, klikněte dvakrát na **přihlásit jako službu** zobrazíte aktuální místní zásady skupiny přiřazení v **přihlásit jako službu** dialogové okno.
+
+8.  Pokud chcete přidat nové uživatele, klikněte na tlačítko **přidat uživatele nebo skupinu** tlačítko.
+
+9. Po dokončení přidávání uživatelů, klikněte na tlačítko **OK**.
+
+### <a name="to-work-around-this-error"></a>Chcete-li vyřešit tuto chybu
+
+-   Spuštění sledování vzdáleného ladění jako aplikace místo jako služba.
+
+## <a name="see-also"></a>Viz také
+- [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Vzdálené ladění](../debugger/remote-debugging.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227570"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720507"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Ladění JavaScriptu pomocí konzoly v sadě Visual Studio
 
@@ -249,11 +249,11 @@ Následující obrázek znázorňuje cílového seznamu v okně konzoly jazyka J
 Můžete také přepnout kontext spuštění pomocí `cd` příkaz, ale musíte znát název další kontext spuštění a pomocí odkazu musí být v rozsahu. **Cílové** seznam poskytuje lepší přístup k jiné kontexty provádění.
 
 ## <a name="see-also"></a>Viz také
-[Ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md)  
-[Aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Klávesové zkratky](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Ladění vzorového kódu HTML, CSS a JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)  
-[Ladění ovládacího prvku WebView](../debugger/debug-a-webview-control.md)  
-[Technická podpora a usnadnění přístupu](https://visualstudio.microsoft.com/vs/support/)
+- [Ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md)
+- [Aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Klávesové zkratky](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Ladění vzorového kódu HTML, CSS a JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Ladění ovládacího prvku WebView](../debugger/debug-a-webview-control.md)
+- [Technická podpora a usnadnění přístupu](https://visualstudio.microsoft.com/vs/support/)

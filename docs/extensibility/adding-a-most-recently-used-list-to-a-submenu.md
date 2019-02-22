@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316177"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710081"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Přidat že naposledy použitou seznamu do podnabídky
 Tento návod vychází z ukázky v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md)a ukazuje, jak přidat dynamický seznam do podnabídky. V seznamu dynamického tento balíček je základem pro vytvoření seznamu naposledy (použitých).
@@ -202,4 +202,4 @@ Chcete-li postupovat podle tohoto návodu, je nutné nainstalovat sadu Visual St
 4. Otevřete podnabídku znovu. Všimněte si, že **3 položky** je teď v horní části seznamu a ostatní položky byly nahrány o jednu pozici dolů. Klikněte na tlačítko **3 položky** znovu a Všimněte si, že se stále zobrazuje okno se zprávou **vybrané položky 3**, což znamená, že text přesunula správně na novou pozici spolu s příkaz popisek.
 
 ## <a name="see-also"></a>Viz také:
-[Dynamické přidávání položek nabídky](../extensibility/dynamically-adding-menu-items.md)
+- [Dynamické přidávání položek nabídky](../extensibility/dynamically-adding-menu-items.md)

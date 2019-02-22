@@ -1,7 +1,7 @@
 ---
 title: ASSEMBLYLOCRESOLUTION | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ASSEMBLYLOCRESOLUTION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: befa1c67aa8d095288d13cb6f309f31b5c2916e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316428"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710250"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Určuje, kde je umístěné sestavení.
@@ -44,17 +44,13 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 ```
 
 ## <a name="members"></a>Členové
-ALR_NAME  
-Sestavení se nachází v aktuálním oboru názvů.
+ALR_NAME sestavení se nachází v aktuálním oboru názvů.
 
-ALR_USERDIR  
-Sestavení je umístěn v adresáři uživatele.
+ALR_USERDIR sestavení je umístěn v adresáři uživatele.
 
-ALR_SHAREDDIR  
-Sestavení je umístěn ve sdíleném adresáři.
+ALR_SHAREDDIR sestavení je umístěn ve sdíleném adresáři.
 
-ALR_REMOTEDIR  
-Sestavení je umístěno do vzdáleného adresáře.
+ALR_REMOTEDIR sestavení je umístěno do vzdáleného adresáře.
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou vráceny prostřednictvím [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) a [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metody.
@@ -69,6 +65,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)  
-[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
+- [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 - GetSymUnmanagedReader
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc45a9ba956d563e40292ec9a113217c46129f5d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 3651b48217274f1b408c10831f78daa245ff1471
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412640"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701287"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 Načte modul pro načítání symbolů pro nespravovaný kód.
@@ -40,14 +40,17 @@ int GetSymUnmanagedReader(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identifikátor domény aplikace.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Jedinečný identifikátor modulu.
+ [in] Identifikátor domény aplikace.
 
-`ppSymUnmanagedReader`  
-[out] Vrátí objekt, který představuje modul pro načítání symbolů.
+`guidModule`
+
+ [in] Jedinečný identifikátor modulu.
+
+`ppSymUnmanagedReader`
+
+ [out] Vrátí objekt, který představuje modul pro načítání symbolů.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -79,4 +82,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4b0a860c359335f7461bf0608c26dcb2c325ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 230834e7915114e2a647b21834b4e90b12c54a64
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022985"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688807"
 ---
 # <a name="how-to-display-spy-views"></a>Postupy: Zobrazení nástroje Spy ++
-Spuštěním nástroje Spy ++, otevře se v [zobrazení Windows](../debugger/windows-view.md), stromové zobrazení všechna okna a ovládací prvky k dispozici na svém počítači. Popisky toto okno kořenový "Windows 1." Také nejsou k dispozici tři další zobrazení nástroje Spy ++: [Zobrazení zpráv](../debugger/messages-view.md), [zobrazení procesů](../debugger/processes-view.md), a [vlákna zobrazení](../debugger/threads-view.md). Požadovaný pohled z můžete zobrazit **Spy** nabídky. Další informace najdete v tématu [zobrazení nástroje Spy ++](../debugger/spy-increment-views.md).  
-  
-## <a name="see-also"></a>Viz také  
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
- [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)
+Spuštěním nástroje Spy ++, otevře se v [zobrazení Windows](../debugger/windows-view.md), stromové zobrazení všechna okna a ovládací prvky k dispozici na svém počítači. Popisky toto okno kořenový "Windows 1." Také nejsou k dispozici tři další zobrazení nástroje Spy ++: [Zobrazení zpráv](../debugger/messages-view.md), [zobrazení procesů](../debugger/processes-view.md), a [vlákna zobrazení](../debugger/threads-view.md). Požadovaný pohled z můžete zobrazit **Spy** nabídky. Další informace najdete v tématu [zobrazení nástroje Spy ++](../debugger/spy-increment-views.md).
+
+## <a name="see-also"></a>Viz také
+- [Použití nástroje Spy++](../debugger/using-spy-increment.md)
+- [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

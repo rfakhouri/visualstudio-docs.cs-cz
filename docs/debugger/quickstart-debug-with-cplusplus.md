@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918561"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716516"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Rychlý start: Ladění v C++ pomocí ladicího programu sady Visual Studio
 
 Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které vám pomůžou ladit vaše aplikace. Toto téma poskytuje rychlý způsob, jak Seznamte se s některými základními funkcemi.
 
-## <a name="create-a-new-project"></a>Vytvoření nového projektu 
+## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
 1. V sadě Visual Studio, zvolte **soubor > Nový projekt**.
 
@@ -47,7 +47,7 @@ Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které v
     s tímto kódem (neodebírejte `#include "stdafx.h"`):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ A *zarážku* je značku, která určuje, kde by měl Visual Studio pozastavit s
     > [!TIP]
     > Pokud máte zarážku ve smyčce nebo rekurzi, nebo pokud máte mnoho zarážky, které často projdete, použijte [podmíněné zarážky](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) abyste měli jistotu, že váš kód je pozastavený, pouze v případě, že jsou splněny konkrétní podmínky. Podmíněné zarážky šetří čas a můžete také usnadňují ladění problémů, které je těžké reprodukovat.
 
-    Při pokusu o ladění chyby související s pamětí v jazyce C++, zarážky můžete použít také ke kontrole hodnoty adres (vyhledejte NULL) a odkazovat na počty. 
+    Při pokusu o ladění chyby související s pamětí v jazyce C++, zarážky můžete použít také ke kontrole hodnoty adres (vyhledejte NULL) a odkazovat na počty.
 
 ## <a name="navigate-code"></a>Vyhledání kódu
 
@@ -110,7 +110,7 @@ Běžné klávesové příkazy používá k procházejte kódem po krocích zahr
 
     ![Zobrazit datatip](../debugger/media/dbg-qs-data-tip.png "zobrazit datatip")
 
-    Datatip se dozvíte, aktuální hodnota `c1` proměnné a umožňuje vám umožní zkontrolovat její vlastnosti. Při ladění, pokud se zobrazí hodnotu, kterou nečekáte, pravděpodobně chyby v předchozích nebo volání řádků kódu. 
+    Datatip se dozvíte, aktuální hodnota `c1` proměnné a umožňuje vám umožní zkontrolovat její vlastnosti. Při ladění, pokud se zobrazí hodnotu, kterou nečekáte, pravděpodobně chyby v předchozích nebo volání řádků kódu.
 
 2. Rozbalení datového tipu se podívat na aktuální hodnoty vlastností `c1` objektu.
 

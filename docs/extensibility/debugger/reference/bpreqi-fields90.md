@@ -1,7 +1,7 @@
 ---
 title: BPREQI_FIELDS90 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b9135ddc2f2fb1c45f9f4c9d31ff8fe5bfdb0ee
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be07e034b4059ae7ade40a5a248c01bc4a8237b8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316233"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695931"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 Vytvoří výčet platné hodnoty, které určují, který se má načíst informace o požadavku zarážku. Tento výčet rozšiřuje [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) výčtu.
@@ -74,50 +74,35 @@ public enum enum_BPREQI_FIELDS90
 ```
 
 #### <a name="parameters"></a>Parametry
-BPREQI90_BPLOCATION  
-Inicializace nebo použijte `bpLocation` oblasti (umístění zarážky) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) nebo [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
+Inicializovat BPREQI90_BPLOCATION nebo použití `bpLocation` oblasti (umístění zarážky) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) nebo [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
 
-BPREQI90_LANGUAGE  
-Inicializace nebo použijte `guidLanguage` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_LANGUAGE nebo použití `guidLanguage` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_PROGRAM  
-Inicializace nebo použijte `pProgram` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_PROGRAM nebo použití `pProgram` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_PROGRAMNAME  
-Inicializace nebo použijte `bstrProgramName` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_PROGRAMNAME nebo použití `bstrProgramName` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_THREAD  
-Inicializace nebo použijte `pThread` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_THREAD nebo použití `pThread` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_THREADNAME  
-Inicializace nebo použijte `bstrThreadName` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_THREADNAME nebo použití `bstrThreadName` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_PASSCOUNT  
-Inicializace nebo použijte `bpPassCount` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_PASSCOUNT nebo použití `bpPassCount` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_CONDITION  
-Inicializace nebo použijte `bpCondition` pole (podmínka zarážky) `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_CONDITION nebo použití `bpCondition` pole (podmínka zarážky) `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_FLAGS  
-Inicializace nebo použijte `dwFlags` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_FLAGS nebo použití `dwFlags` pole `BP_REQUEST_INFO` nebo `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_ALLOLDFIELDS  
-Inicializovat nebo použít pro všechna pole aplikace `BP_REQUEST_INFO` struktura.
+Inicializovat BPREQI90_ALLOLDFIELDS nebo všechna pole pro použití z `BP_REQUEST_INFO` struktury.
 
-BPREQI90_VENDOR  
-Inicializace nebo použijte `guidVendor` pole `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_VENDOR nebo použití `guidVendor` pole `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_CONSTRAINT  
-Inicializace nebo použijte `bstrConstraint` pole `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_CONSTRAINT nebo použití `bstrConstraint` pole `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_TRACEPOINT  
-Inicializace nebo použijte `bstrTracepoint` pole `BP_REQUEST_INFO2` struktury.
+Inicializovat BPREQI90_TRACEPOINT nebo použití `bstrTracepoint` pole `BP_REQUEST_INFO2` struktury.
 
-BPREQI90_MACROTRACEPOINT  
-Inicializace nebo použijte `bstrMacroTracepoint` pole `BP_REQUEST_INFO2` struktury. BPREQI_ALLFIELDS neobsahuje toto pole.
+Inicializovat BPREQI90_MACROTRACEPOINT nebo použití `bstrMacroTracepoint` pole `BP_REQUEST_INFO2` struktury. BPREQI_ALLFIELDS neobsahuje toto pole.
 
-BPREQI90_ALLFIELDS  
-Určuje všechna pole `BP_REQUEST_INFO2` struktury.
+Určuje BPREQI90_ALLFIELDS všechna pole pro `BP_REQUEST_INFO2` struktury.
 
 ## <a name="requirements"></a>Požadavky
 Záhlaví: Msdbg90.h
@@ -127,4 +112,4 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

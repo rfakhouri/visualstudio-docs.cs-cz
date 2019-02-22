@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e450ef87733ffed88436114458d804c125fc20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956971"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643831"
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 umožňuje statických deklarací položky v souborech projektu pomocí [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Však může být přidají metadata pouze na úrovni položek, i v případě, že metadata jsou stejné pro všechny položky. Počínaje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, prvek projektu s názvem [ItemDefinitionGroup –](../msbuild/itemdefinitiongroup-element-msbuild.md) překonává toto omezení. *ItemDefinitionGroup –* umožňuje definovat sadu definice položek, které přidávají výchozí hodnoty metadat pro všechny položky v typu s názvem položky.
@@ -252,4 +252,4 @@ Počínaje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Dávkování](../msbuild/msbuild-batching.md)
+- [Dávkování](../msbuild/msbuild-batching.md)

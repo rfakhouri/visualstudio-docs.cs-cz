@@ -10,38 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00785b7f53fd800d924e8ed78d6b6a9b48ea730a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070942"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718553"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Karta Okna, dialogové okno možností zpráv
-Použití **Windows** kartu k nastavení oboru zprávy uvedené v [zobrazení zpráv](../debugger/messages-view.md). Chcete-li zobrazit [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md), zvolte **zprávy protokolu** z **Spy** nabídky.  
-  
- Následující nastavení jsou k dispozici na **Windows** kartu:  
-  
- **Tažením nástroje hledání**  
- Přetažení nástroj použitý k vyberte časové období.  
-  
- **Skrýt Spy ++**  
- Odebere hlavního okna nástroje Spy ++ a zůstane **MessageOptions** dialogové okno viditelné nad vaší aplikace.  
-  
- **Nadřazené okno**  
- Zobrazení zpráv pro vybrané okno a okamžité nadřazenému oknu.  
-  
- **Podřízené okno**  
- Zobrazení zpráv pro vybrané okno a všech jeho podřízených oken, včetně vnořených podřízená okna.  
-  
- **Windows stejné vlákna**  
- Zobrazení zpráv pro vybrané okno a všech ostatních oken vlastněné stejným vláknem.  
-  
- **Windows stejného procesu**  
- Zobrazení zpráv pro vybrané okno a všech ostatních oken vlastněné stejným procesem.  
-  
- **Všechny Windows v systému**  
- Zobrazení zprávy pro všechna okna.  
-  
- **Uložit nastavení jako výchozí**  
- Uložte předchozí nastavení pro nový datový proud zpráv – windows. Tato nastavení jsou také uloženy při ukončení nástroje Spy ++.
+Použití **Windows** kartu k nastavení oboru zprávy uvedené v [zobrazení zpráv](../debugger/messages-view.md). Chcete-li zobrazit [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md), zvolte **zprávy protokolu** z **Spy** nabídky.
+
+ Následující nastavení jsou k dispozici na **Windows** kartu:
+
+ **Tažením nástroje hledání** přetažení nástroj použitý k výběru časového období.
+
+ **Skrýt Spy ++** hlavního okna nástroje Spy ++ odstraní a zůstane **MessageOptions** dialogové okno viditelné nad vaší aplikace.
+
+ **Nadřazené okno** zobrazení zprávy pro vybrané okno a okamžité nadřazenému oknu.
+
+ **Podřízené okno** zobrazení zprávy pro vybrané okno a všech jeho podřízených oken, včetně vnořené podřízená okna.
+
+ **Windows stejném vlákně** zobrazení zprávy pro vybrané okno a všech ostatních oken vlastněné stejným vláknem.
+
+ **Windows stejný proces** zobrazení zprávy pro vybrané okno a všech ostatních oken vlastněné stejným procesem.
+
+ **Všechny Windows v systému** zobrazení zprávy pro všechna okna.
+
+ **Uložit nastavení jako výchozí** uložit předchozí nastavení pro nový datový proud zpráv – windows. Tato nastavení jsou také uloženy při ukončení nástroje Spy ++.

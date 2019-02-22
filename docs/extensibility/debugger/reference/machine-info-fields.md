@@ -1,7 +1,7 @@
 ---
 title: MACHINE_INFO_FIELDS | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - MACHINE_INFO_FIELDS
 helpviewer_keywords:
@@ -12,60 +12,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e3adb36cd0465413c60f70fed1f989937d7a45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021007"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708404"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-Určuje, jaké informace se mají načíst pro konkrétní počítač.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_MACHINE_INFO_FIELDS {   
-   MCIF_NAME  = 0x00000001,  
-   MCIF_FLAGS = 0x00000002,  
-   MCIF_ALL   = 0x00000003  
-};  
-typedef DWORD MACHINE_INFO_FIELDS;  
-```  
-  
-```csharp  
-public enum enum_MACHINE_INFO_FIELDS {   
-   MCIF_NAME  = 0x00000001,  
-   MCIF_FLAGS = 0x00000002,  
-   MCIF_ALL   = 0x00000003  
-};  
-```  
-  
-## <a name="members"></a>Členové  
- MCIF_NAME  
- Inicializace/použít `bstrName` pole ve struktuře.  
-  
- MCIF_FLAGS  
- Inicializace/použít `Flags` pole ve struktuře.  
-  
- MIF_ALL  
- Inicializace/použít všechna pole ve struktuře.  
-  
-## <a name="remarks"></a>Poznámky  
- Tyto hodnoty jsou předány [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metoda označíte, kteří členové [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struktury mají být inicializovány.  
-  
- Používá se také v `Fields` člen `MACHINE_INFO` struktury k označení pole, která se používá a je platný.  
-  
- Tyto příznaky lze kombinovat pomocí logické bitové `OR`.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: msdbg.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
- [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)
+Určuje, jaké informace se mají načíst pro konkrétní počítač.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_MACHINE_INFO_FIELDS { 
+   MCIF_NAME  = 0x00000001,
+   MCIF_FLAGS = 0x00000002,
+   MCIF_ALL   = 0x00000003
+};
+typedef DWORD MACHINE_INFO_FIELDS;
+```
+
+```csharp
+public enum enum_MACHINE_INFO_FIELDS { 
+   MCIF_NAME  = 0x00000001,
+   MCIF_FLAGS = 0x00000002,
+   MCIF_ALL   = 0x00000003
+};
+```
+
+## <a name="members"></a>Členové
+ MCIF_NAME inicializace/použít `bstrName` pole ve struktuře.
+
+ MCIF_FLAGS inicializace/použít `Flags` pole ve struktuře.
+
+ MIF_ALL inicializace/použít všechna pole ve struktuře.
+
+## <a name="remarks"></a>Poznámky
+ Tyto hodnoty jsou předány [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metoda označíte, kteří členové [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struktury mají být inicializovány.
+
+ Používá se také v `Fields` člen `MACHINE_INFO` struktury k označení pole, která se používá a je platný.
+
+ Tyto příznaky lze kombinovat pomocí logické bitové `OR`.
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: msdbg.h
+
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)
+- [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

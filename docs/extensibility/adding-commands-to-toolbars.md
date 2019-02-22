@@ -8,30 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d5f599c11cf63efab69998880e228add354192
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c3b6e313bdf6641359c22e2dfa900d1b705a848
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996776"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722431"
 ---
 # <a name="add-commands-to-toolbars"></a>Přidání příkazů na panely nástrojů
-Panel nástrojů je vodorovný nebo svislý pruh, který obsahuje tlačítka, které jsou vázány na příkazy. Můžete přidat vlastní příkazy na panely nástrojů v mnoha různých systému windows v sadě Visual Studio: hlavní okno Visual Studio, Průzkumníka řešení a vlastní vlastní okna nástrojů.  
-  
- Tato část uvádí řadu věcí, které vám pomůžou s příkazy na panely nástrojů.  
-  
-## <a name="in-this-section"></a>V této části  
- [Přidání panelu nástrojů](../extensibility/adding-a-toolbar.md)  
- Vysvětluje, jak přidat panel nástrojů do sady panelů nástrojů v hlavním okně aplikace Visual Studio.  
-  
- [Přidání panelu nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
- Vysvětluje, jak přidat panel nástrojů do panelu nástrojů.  
-  
- [Přidání příkazu do panelu nástrojů Průzkumníka řešení](../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
- Vysvětluje, jak přidat příkaz na panelu nástrojů v Průzkumníku řešení.  
-  
- [Přidání kontroleru nabídky do panelu nástrojů](../extensibility/adding-a-menu-controller-to-a-toolbar.md)  
- Popisuje postup přidání kontroleru nabídky do panelu nástrojů.  
-  
- [Dynamicky přidat položky nabídky](../extensibility/dynamically-adding-menu-items.md)  
- Vysvětluje, jak dynamicky přidat položky nabídky v různých kontextech.
+Panel nástrojů je vodorovný nebo svislý pruh, který obsahuje tlačítka, které jsou vázány na příkazy. Můžete přidat vlastní příkazy na panely nástrojů v mnoha různých systému windows v sadě Visual Studio: hlavní okno Visual Studio, Průzkumníka řešení a vlastní vlastní okna nástrojů.
+
+ Tato část uvádí řadu věcí, které vám pomůžou s příkazy na panely nástrojů.
+
+## <a name="in-this-section"></a>V této části
+- [Přidání panelu nástrojů](../extensibility/adding-a-toolbar.md) vysvětluje, jak přidat panel nástrojů do sady panelů nástrojů v hlavním okně aplikace Visual Studio.
+
+- [Přidání panelu nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md) vysvětluje, jak přidat panel nástrojů do panelu nástrojů.
+
+- [Přidání příkazu do panelu nástrojů Průzkumníka řešení](../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md) vysvětluje, jak přidat příkaz na panelu nástrojů v Průzkumníku řešení.
+
+- [Přidání kontroleru nabídky do panelu nástrojů](../extensibility/adding-a-menu-controller-to-a-toolbar.md) vysvětluje postup přidání kontroleru nabídky do panelu nástrojů.
+
+- [Dynamické přidání položek nabídky](../extensibility/dynamically-adding-menu-items.md) vysvětluje, jak dynamicky přidat položky nabídky v různých kontextech.

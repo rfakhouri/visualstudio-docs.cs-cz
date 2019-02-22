@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0c1ed6e2fdd461b0fdf502c01089aeafd9a87cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925627"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720598"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Grafické rozhraní API a Statistika paměti
 <!-- VERSIONLESS --> Visual Studio 2017 nebo novější podporují nástroje statistiky grafické rozhraní API a Statistika paměti.  Tyto dva nástroje umožňují zobrazit různé části informace o použití rozhraní API Direct3D, jakož i spotřebu paměti GPU z různých zdrojů.
@@ -39,7 +39,7 @@ Tento nástroj se zobrazí, kolik paměti je ovladač grafiky přidělování pr
 
 Stejně jako u nástroj Statistika API kliknete pravým tlačítkem v okně všechny kopie dat jako sdílený svazek clusteru, který může vložit na něco, jako je Excel k další analýze.
 
-## <a name="see-also"></a>Viz také  
-[Diagnostika grafiky (ladění grafiky DirectX)](visual-studio-graphics-diagnostics.md)   
-[Historie prostředku](graphics-event-list.md#resource-history)
+## <a name="see-also"></a>Viz také
+- [Diagnostika grafiky (ladění grafiky DirectX)](visual-studio-graphics-diagnostics.md)
+- [Historie prostředku](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

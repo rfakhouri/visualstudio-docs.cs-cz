@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970549"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705528"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Přepínače příkazového řádku nástroje DEVENV pro vývoj rozšíření VSPackage
 
-Visual Studio umožňuje vývojářům automatizovat úlohy z příkazového řádku při provádění `devenv.exe`, soubor, který se spustí rozhraní IDE sady Visual Studio.  
+Visual Studio umožňuje vývojářům automatizovat úlohy z příkazového řádku při provádění `devenv.exe`, soubor, který se spustí rozhraní IDE sady Visual Studio.
 
- Mezi úlohy patří:  
+ Mezi úlohy patří:
 
-- Nasazení aplikací v předem navrženými konfigurace z mimo rozhraní IDE.  
+- Nasazení aplikací v předem navrženými konfigurace z mimo rozhraní IDE.
 
-- Vytváření projektů pomocí přednastavených automaticky nastavení sestavení nebo konfiguraci ladění.  
+- Vytváření projektů pomocí přednastavených automaticky nastavení sestavení nebo konfiguraci ladění.
 
-- Načítání integrovaného vývojového prostředí v konkrétní konfigurace, z mimo rozhraní IDE. Můžete také přizpůsobit IDE po spuštění.  
+- Načítání integrovaného vývojového prostředí v konkrétní konfigurace, z mimo rozhraní IDE. Můžete také přizpůsobit IDE po spuštění.
 
 ## <a name="guidelines-for-switches"></a>Pokyny pro přepínače
 
-Dokumentace k sadě Visual Studio popisuje uživatelské úrovni `devenv` přepínače příkazového řádku. Další informace najdete v tématu [přepínače příkazového řádku nástroje Devenv](../ide/reference/devenv-command-line-switches.md). `devenv` Nástroj také podporuje další přepínače příkazového řádku, které jsou užitečné se VSPackage vývoje, nasazení a ladění.  
+Dokumentace k sadě Visual Studio popisuje uživatelské úrovni `devenv` přepínače příkazového řádku. Další informace najdete v tématu [přepínače příkazového řádku nástroje Devenv](../ide/reference/devenv-command-line-switches.md). `devenv` Nástroj také podporuje další přepínače příkazového řádku, které jsou užitečné se VSPackage vývoje, nasazení a ladění.
 
 | Přepínač příkazového řádku | Popis |
 |---------------------| - |

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetHostName | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetHostName
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7c6642d088da304b0a2d2e48292e8dcbcec1e38
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 19bb7f56077abd276936fe8342e74ecda6f5770a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450032"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707377"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Získá název procesu, který je hostitelem programu.
@@ -39,11 +39,13 @@ int GetHostName (
 ```
 
 #### <a name="parameters"></a>Parametry
-`dwHostNameType`  
-[in] Hodnota z [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) výčet, který určuje typ název, který vrátí.
+`dwHostNameType`
 
-`pbstrHostName`  
-[out] Vrátí název hostitelského procesu.
+ [in] Hodnota z [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) výčet, který určuje typ název, který vrátí.
+
+`pbstrHostName`
+
+ [out] Vrátí název hostitelského procesu.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -94,6 +96,6 @@ HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)  
-[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)  
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

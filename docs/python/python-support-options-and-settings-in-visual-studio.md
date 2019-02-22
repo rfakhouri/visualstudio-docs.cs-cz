@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3589447cdc9451a52dcffb4653a31f188b33c634
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987389"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702015"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Možnosti pro Python v sadě Visual Studio
 
@@ -33,7 +33,7 @@ Chcete-li zobrazit možnosti Python, použijte **nástroje** > **možnosti** nab
 Existují také další možnosti specifické pro Python na **textový Editor** > **Python** > **Upřesnit** kartu a na  **Prostředí** > **písma a barvy** kartu v rámci **textový Editor** skupiny.
 
 > [!Note]
-> **Experimentální** skupina obsahuje možnosti pro funkce, které jsou stále ve vývoji a tady nejsou uvedené. Tyto jsou často popsány v příspěvcích na [engineering Python v blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
+> **Experimentální** skupina obsahuje možnosti pro funkce, které jsou stále ve vývoji a tady nejsou uvedené. Tyto jsou často popsány v příspěvcích na [engineering Python v blogu Microsoft](https://devblogs.microsoft.com/python/).
 
 ## <a name="general-options"></a>Obecné možnosti
 

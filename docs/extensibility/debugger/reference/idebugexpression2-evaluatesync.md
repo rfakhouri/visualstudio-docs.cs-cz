@@ -1,7 +1,7 @@
 ---
 title: IDebugExpression2::EvaluateSync | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpression2::EvaluateSync
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41ae89c52a477686647ccd5e2d3bf6f5c70c95e
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 158e24a57838d7f7a1c7221fc243455b5a4bd2bc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450513"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678550"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Tato metoda vyhodnotí výraz synchronně.
@@ -43,17 +43,21 @@ int EvaluateSync(
 ```
 
 #### <a name="parameters"></a>Parametry
-`dwFlags`  
-[in] Kombinace příznaků z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) výčet, který řídí vyhodnocení výrazu.
+`dwFlags`
 
-`dwTimeout`  
-[in] Maximální doba v milisekundách pro čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
+ [in] Kombinace příznaků z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) výčet, který řídí vyhodnocení výrazu.
 
-`pExprCallback`  
-[in] Tento parametr je vždy hodnota null.
+`dwTimeout`
 
-`ppResult`  
-[out] Vrátí [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objekt, který obsahuje výsledek vyhodnocení výrazu.
+ [in] Maximální doba v milisekundách pro čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
+
+`pExprCallback`
+
+ [in] Tento parametr je vždy hodnota null.
+
+`ppResult`
+
+ [out] Vrátí [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objekt, který obsahuje výsledek vyhodnocení výrazu.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Jsou některé typické chybové kódy:
@@ -115,7 +119,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)  
-[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)  
-[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+- [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

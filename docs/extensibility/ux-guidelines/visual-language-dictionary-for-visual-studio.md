@@ -8,37 +8,37 @@ ms.author: v-brickg
 manager: jillfra
 ms.workload:
 - v-brickg
-ms.openlocfilehash: b26eb91439547b3d9837c1482e707dcb7ea62cd8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a17361536437e6ba4811a687fdc75a9b47d4c0e6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940710"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698479"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Slovník vizuálního jazyka pro sadu Visual Studio
-Visual Studio používá společný jazyk visual k objasnění konceptů, které jsou stavební kameny nástroje jeho používá a dalších obrázcích. Při navrhování nových ikon, slouží k identifikaci konceptů, které mají být umístěny ve vlastní image tohoto slovníku.  
-  
+Visual Studio používá společný jazyk visual k objasnění konceptů, které jsou stavební kameny nástroje jeho používá a dalších obrázcích. Při navrhování nových ikon, slouží k identifikaci konceptů, které mají být umístěny ve vlastní image tohoto slovníku.
+
 ## <a name="general-guidelines"></a>Obecné pokyny
-  
--   Tyto koncepty visual je nutné použít konzistentně s jejich definice slovníku. Jinak riskujete matoucí uživatelé, kteří očekávají, že společné prvky mít konzistentní význam.  
-  
--   Zvolte pouze nejrelevantnější nebo důležité koncepty pro použití ve vaší ikony, tak, aby trénováním zřetelný a snadné je rozlišit.  
-  
--   Použijte pouze jednu nebo dvě koncepce každé Image.  
-  
--   Další strategie pro navrhování ikony, naleznete v tématu [ikonu návrhu](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
-  
-**Přejděte do části:**  
-  
-1.  [Koncepty A – Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)    
-2.  [Platformy a produkty](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)    
-3.  [Běžné koncepty pomocí šipky](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows) 
-4.  [Indikátory stavu](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)  
-  
-##  <a name="BKMK_VLDConcepts"></a> Koncepty A – Z  
-  
-###  <a name="BKMK_VLDConceptsA"></a> A  
-  
+
+-   Tyto koncepty visual je nutné použít konzistentně s jejich definice slovníku. Jinak riskujete matoucí uživatelé, kteří očekávají, že společné prvky mít konzistentní význam.
+
+-   Zvolte pouze nejrelevantnější nebo důležité koncepty pro použití ve vaší ikony, tak, aby trénováním zřetelný a snadné je rozlišit.
+
+-   Použijte pouze jednu nebo dvě koncepce každé Image.
+
+-   Další strategie pro navrhování ikony, naleznete v tématu [ikonu návrhu](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).
+
+**Přejděte do části:**
+
+1.  [Koncepty A – Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
+2.  [Platformy a produkty](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
+3.  [Běžné koncepty pomocí šipky](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
+4.  [Indikátory stavu](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
+
+##  <a name="BKMK_VLDConcepts"></a> Koncepty A – Z
+
+###  <a name="BKMK_VLDConceptsA"></a> A
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | - | - | - | - |
 | **Usnadnění** | ![Ikona usnadnění](../../extensibility/ux-guidelines/media/vld_c_accessibility.png "VLD_C_Accessibility") | | |
@@ -50,7 +50,7 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Upozornění** | ![Ikona upozornění](../../extensibility/ux-guidelines/media/vld_c_alert.png "VLD_C_Alert") | | |
 | **Alfa kanál** | ![Ikona alfa kanál](../../extensibility/ux-guidelines/media/vld_c_alphachannel.png "VLD_C_AlphaChannel") | | |
 | **Animace** | ![Ikona animace](../../extensibility/ux-guidelines/media/vld_c_animation.png "VLD_C_Animation") | ![Ikona chyby animace](../../extensibility/ux-guidelines/media/vld_c_animation_animationerror.png "VLD_C_Animation_AnimationError")<br />Chyba animace<br />![Next animation icon](../../extensibility/ux-guidelines/media/vld_c_animation_nextanimation.png "VLD_C_Animation_NextAnimation")<br />Další animace | |
-| **Aplikace**<br />Projekt | ![Ikona aplikace](../../extensibility/ux-guidelines/media/vld_c_application.png "VLD_C_Application") | ![Ikona chyby role aplikace](../../extensibility/ux-guidelines/media/vld_c_application_applicationroleerror.png "VLD_C_Application_ApplicationRoleError")<br />Chyba role aplikace<br />![C&#43;&#43; MFC project icon](../../extensibility/ux-guidelines/media/vld_c_application_cppmfcproject.png "VLD_C_Application_CPPMFCProject")<br />Projekt knihovny MFC C++ | |
+| **Aplikace**<br />Project | ![Ikona aplikace](../../extensibility/ux-guidelines/media/vld_c_application.png "VLD_C_Application") | ![Ikona chyby role aplikace](../../extensibility/ux-guidelines/media/vld_c_application_applicationroleerror.png "VLD_C_Application_ApplicationRoleError")<br />Chyba role aplikace<br />![C&#43;&#43; MFC project icon](../../extensibility/ux-guidelines/media/vld_c_application_cppmfcproject.png "VLD_C_Application_CPPMFCProject")<br />Projekt knihovny MFC C++ | |
 | **Oblast** | ![Ikona](../../extensibility/ux-guidelines/media/vld_c_area.png "VLD_C_Area") | ![Křivkový ikony plošného grafu](../../extensibility/ux-guidelines/media/vld_c_area_splineareachart.png "VLD_C_Area_SplineAreaChart")<br />Křivkový plošný graf<br />![Skládaný plošný řady ikonu](../../extensibility/ux-guidelines/media/vld_c_area_stackedareaseries.png "VLD_C_Area_StackedAreaSeries")<br />Řady pro skládaný plošný | |
 | **Uspořádat** | ![Uspořádat ikony](../../extensibility/ux-guidelines/media/vld_c_arrange.png "VLD_C_Arrange") | ![Uspořádat ikony tvary](../../extensibility/ux-guidelines/media/vld_c_arrange_arrangeshapes.png "VLD_C_Arrange_ArrangeShapes")<br />Uspořádat obrazce<br />![Automatické&#45;uspořádat ikony tvary](../../extensibility/ux-guidelines/media/vld_c_arrange_autoarrangeshapes.png "VLD_C_Arrange_AutoArrangeShapes")<br />Automaticky uspořádat tvary | |
 | **Assign** | ![Přiřaďte ikony](../../extensibility/ux-guidelines/media/vld_c_assign.png "VLD_C_Assign") | | |
@@ -61,27 +61,27 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Zvuk** | ![Ikonu audia](../../extensibility/ux-guidelines/media/vld_c_audio.png "VLD_C_Audio") | ![Audio mute icon](../../extensibility/ux-guidelines/media/vld_c_audio_audiomute.png "VLD_C_Audio_AudioMute")<br />Ztlumit zvuk<br />![Audio playback icon](../../extensibility/ux-guidelines/media/vld_c_audio_audioplayback.png "VLD_C_Audio_AudioPlayback")<br />Přehrávání zvuku<br />![Zvukový soubor ikony](../../extensibility/ux-guidelines/media/vld_c_audio_soundfile.png "VLD_C_Audio_SoundFile")<br />Zvukový soubor | |
 | **Záznam zvuku** | ![Ikona záznam zvuků](../../extensibility/ux-guidelines/media/vld_c_audiorecording.png "VLD_C_AudioRecording") | ![Ikona Ztlumit záznam](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordmute.png "VLD_C_AudioRecording_RecordMute")<br />Záznam ztlumení<br />![Záznam obrazovky a hlasu ikonu](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordscreenandvoice.png "VLD_C_AudioRecording_RecordScreenAndVoice")<br />Záznam obrazovky a hlasu | |
 | **Funkce AutoSum** | ![Ikona tlačítka AutoSum](../../extensibility/ux-guidelines/media/vld_c_autosum.png "VLD_C_Autosum") | | |
-  
-###  <a name="BKMK_VLDConceptsB"></a> B  
-  
+
+###  <a name="BKMK_VLDConceptsB"></a> B
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
-| --- | --- | --- | --- |  
-| **Obousměrné** | ![Ikona obousměrné](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||  
-| **Binární** | ![Binární ikonu](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![Ikona binární instrumentace cíl spuštění](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />Spusťte cílový binární soubor instrumentace ||  
-| **záložky** | ![Ikona záložku](../../extensibility/ux-guidelines/media/vld_c_bookmark.png "VLD_C_Bookmark") | ![Ikony projektu záložky](../../extensibility/ux-guidelines/media/vld_c_bookmark_bookmarkproject.png "VLD_C_Bookmark_BookmarkProject")<br />Projekt (záložky)<br />![Vymazat záložky ikonu](../../extensibility/ux-guidelines/media/vld_c_bookmark_clearbookmark.png "VLD_C_Bookmark_ClearBookmark")<br />Vymazat záložky<br />![Přejít na předchozí záložku](../../extensibility/ux-guidelines/media/vld_c_bookmark_gotopreviousbookmark.png "VLD_C_Bookmark_GoToPreviousBookmark")<br />Přejít na předchozí záložku ||  
+| --- | --- | --- | --- |
+| **Obousměrné** | ![Ikona obousměrné](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||
+| **Binární** | ![Binární ikonu](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![Ikona binární instrumentace cíl spuštění](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />Spusťte cílový binární soubor instrumentace ||
+| **záložky** | ![Ikona záložku](../../extensibility/ux-guidelines/media/vld_c_bookmark.png "VLD_C_Bookmark") | ![Ikony projektu záložky](../../extensibility/ux-guidelines/media/vld_c_bookmark_bookmarkproject.png "VLD_C_Bookmark_BookmarkProject")<br />Projekt (záložky)<br />![Vymazat záložky ikonu](../../extensibility/ux-guidelines/media/vld_c_bookmark_clearbookmark.png "VLD_C_Bookmark_ClearBookmark")<br />Vymazat záložky<br />![Přejít na předchozí záložku](../../extensibility/ux-guidelines/media/vld_c_bookmark_gotopreviousbookmark.png "VLD_C_Bookmark_GoToPreviousBookmark")<br />Přejít na předchozí záložku ||
 | **Větev** | ![Ikona větev](../../extensibility/ux-guidelines/media/vld_c_branch.png "VLD_C_Branch") | ![Ikona pobočku nahráli](../../extensibility/ux-guidelines/media/vld_c_branch_branchuploaded.png "VLD_C_Branch_BranchUploaded") <br />Pobočku nahráli<br />![Ikona vzdálené větve](../../extensibility/ux-guidelines/media/vld_c_branch_remotebranch.png "VLD_C_Branch_RemoteBranch")<br />Vzdálené větve ||
 | **Jas** | ![Ikona jas](../../extensibility/ux-guidelines/media/vld_c_brightness.png "VLD_C_Brightness") | ![Jas dolů ikonu](../../extensibility/ux-guidelines/media/vld_c_brightness_brightnessdown.png "VLD_C_Brightness_BrightnessDown")<br />Jas dolů<br />![Jas nahoru ikonu](../../extensibility/ux-guidelines/media/vld_c_brightness_brightnessup.png "VLD_C_Brightness_BrightnessUp")<br />Jas nahoru ||
-| **Procházet** | ![Ikona Procházet](../../extensibility/ux-guidelines/media/vld_c_browse.png "VLD_C_Browse") | ![Procházet další ikony](../../extensibility/ux-guidelines/media/vld_c_browse_browsenext.png "VLD_C_Browse_BrowseNext")<br />Procházet další<br />![Předchozí ikonu procházení](../../extensibility/ux-guidelines/media/vld_c_browse_browseprevious.png "VLD_C_Browse_BrowsePrevious")<br />Procházet předchozí ||  
-| **Chyby** | ![Ikona chyby](../../extensibility/ux-guidelines/media/vld_c_bug.png "VLD_C_Bug") | ![Vytvořit novou ikonu chyby](../../extensibility/ux-guidelines/media/vld_c_bug_createnewbug.png "VLD_C_Bug_CreateNewBug")<br />Vytvořit novou chybu || 
+| **Procházet** | ![Ikona Procházet](../../extensibility/ux-guidelines/media/vld_c_browse.png "VLD_C_Browse") | ![Procházet další ikony](../../extensibility/ux-guidelines/media/vld_c_browse_browsenext.png "VLD_C_Browse_BrowseNext")<br />Procházet další<br />![Předchozí ikonu procházení](../../extensibility/ux-guidelines/media/vld_c_browse_browseprevious.png "VLD_C_Browse_BrowsePrevious")<br />Procházet předchozí ||
+| **Chyby** | ![Ikona chyby](../../extensibility/ux-guidelines/media/vld_c_bug.png "VLD_C_Bug") | ![Vytvořit novou ikonu chyby](../../extensibility/ux-guidelines/media/vld_c_bug_createnewbug.png "VLD_C_Bug_CreateNewBug")<br />Vytvořit novou chybu ||
 | **Sestavení** | ![Sestavení ikona](../../extensibility/ux-guidelines/media/vld_c_build.png "VLD_C_Build") | ![Sestavit výběr ikonu](../../extensibility/ux-guidelines/media/vld_c_build_buildselection.png "VLD_C_Build_BuildSelection")<br />Sestavit výběr<br />![Soukromé sestavení instance ikonu](../../extensibility/ux-guidelines/media/vld_c_build_privatebuildinstance.png "VLD_C_Build_PrivateBuildInstance")<br />Soukromé sestavení instance<br />![Uživatel&#45;vytvořili sestavení ikonu](../../extensibility/ux-guidelines/media/vld_c_build_usercreatedbuild.png "VLD_C_Build_UserCreatedBuild")<br />Uživatel vytvořil sestavení ||
 | **Tvůrce** | ![Ikona Tvůrce](../../extensibility/ux-guidelines/media/vld_c_builder.png "VLD_C_Builder") | ![Ikona Tvůrce datové krychle](../../extensibility/ux-guidelines/media/vld_c_builder_cubebuilder.png "VLD_C_Builder_CubeBuilder") <br />Tvůrce datové krychle<br />![Ikona Tvůrce dimenze](../../extensibility/ux-guidelines/media/vld_c_builder_dimensionbuilder.png "VLD_C_Builder_DimensionBuilder")<br />Tvůrce dimenze ||
 | **firmy** | ![Ikona obchodní](../../extensibility/ux-guidelines/media/vld_c_business.png "VLD_C_Business") | ![Ikona šablony obchodní model](../../extensibility/ux-guidelines/media/vld_c_business_businessmodeltemplate.png "VLD_C_Business_BusinessModelTemplate")<br />Obchodní model šablony<br />![Ikona zdroje dat obchodní objekty](../../extensibility/ux-guidelines/media/vld_c_business_businessobjectsdatasource.png "VLD_C_Business_BusinessObjectsDataSource")<br />Zdroje dat obchodních objektů<br />![Online business icon](../../extensibility/ux-guidelines/media/vld_c_business_onlinebusiness.png "VLD_C_Business_OnlineBusiness")<br />Online podnikání. ||
 | **Tlačítko** |![Ikona tlačítka](../../extensibility/ux-guidelines/media/vld_c_button.png "VLD_C_Button") | ![Přidat ikonu tlačítka](../../extensibility/ux-guidelines/media/vld_c_button_addbutton.png "VLD_C_Button_AddButton")<br />Přidání tlačítka<br />![Obrázek ikony tlačítka](../../extensibility/ux-guidelines/media/vld_c_button_imagebutton.png "VLD_C_Button_ImageButton")<br />Obrázkové tlačítko<br />![Ikona tlačítka propojené](../../extensibility/ux-guidelines/media/vld_c_button_linkedbutton.png "VLD_C_Button_LinkedButton")<br />Propojené tlačítko ||
-  
-###  <a name="BKMK_VLDConceptsC"></a> C  
-  
-| Koncept | Hlavní ikona | Další příklady | Poznámky |  
-| --- | --- | --- | --- |  
+
+###  <a name="BKMK_VLDConceptsC"></a> C
+
+| Koncept | Hlavní ikona | Další příklady | Poznámky |
+| --- | --- | --- | --- |
 | **Mezipaměť** | ![Ikona mezipaměti](../../extensibility/ux-guidelines/media/vld_c_cache.png "VLD_C_Cache") | ![Cache OK icon](../../extensibility/ux-guidelines/media/vld_c_cache_cacheok.png "VLD_C_Cache_CacheOK")<br />OK mezipaměti<br />![Ikona Aktualizovat mezipaměť](../../extensibility/ux-guidelines/media/vld_c_cache_cacherefresh.png "VLD_C_Cache_CacheRefresh")<br />Aktualizace mezipaměti ||
 | **Kalendář** | ![Ikonu kalendáře](../../extensibility/ux-guidelines/media/vld_c_calendar.png "VLD_C_Calendar") | ![Datum&#47;ikonu osy](../../extensibility/ux-guidelines/media/vld_c_calendar_datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")<br />Časová osa<br />![Ikona globální kalendáře](../../extensibility/ux-guidelines/media/vld_c_calendar_globalcalendar.png "VLD_C_Calendar_GlobalCalendar")<br />Globální kalendáře ||
 | **Volání** | ![Volání ikonu](../../extensibility/ux-guidelines/media/vld_c_call.png "VLD_C_Call") | ![Volání ikonu prohlížeče](../../extensibility/ux-guidelines/media/vld_c_call_callbrowser.png "VLD_C_Call_CallBrowser")<br />Prohlížeč volání<br />![Ikona nastavení prohlížeče volání](../../extensibility/ux-guidelines/media/vld_c_call_callbrowsersettings.png "VLD_C_Call_CallBrowserSettings") <br />Nastavení prohlížeče volání<br />![Ikona zobrazení volající nebo volaný](../../extensibility/ux-guidelines/media/vld_c_call_callerorcalleeview.png "VLD_C_Call_CallerOrCalleeView") <br />Zobrazení volající nebo volaný ||
@@ -91,15 +91,15 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Certifikát** | ![Ikona certifikát](../../extensibility/ux-guidelines/media/vld_c_certificate.png "VLD_C_Certificate") | ![Ikona chyby certifikátu](../../extensibility/ux-guidelines/media/vld_c_certificate_certificateerror.png "VLD_C_Certificate_CertificateError")<br />Chyba certifikátu<br />![Ikona upozornění certifikátu](../../extensibility/ux-guidelines/media/vld_c_certificate_certificatewarning.png "VLD_C_Certificate_CertificateWarning")<br />Upozornění na certifikát ||
 | **Sada změn** | ![Ikona sady změn](../../extensibility/ux-guidelines/media/vld_c_changeset.png "VLD_C_Changeset") | ![Ikona skupiny sady změn](../../extensibility/ux-guidelines/media/vld_c_changeset_groupchangesets.png "VLD_C_Changeset_GroupChangesets")<br />Sady změn skupiny<br />![Nová ikona sady změn](../../extensibility/ux-guidelines/media/vld_c_changeset_newchangeset.png "VLD_C_Changeset_NewChangeset")<br />Novou sadu změn ||
 | **Přepnout výběr** | ![Ikona Choice přepnout](../../extensibility/ux-guidelines/media/vld_c_choicetoggle.png "VLD_C_ChoiceToggle") | ![Ikona zaškrtávacího políčka pole sloupce](../../extensibility/ux-guidelines/media/vld_c_choicetoggle_checkboxfieldcolumn.png "VLD_C_ChoiceToggle_CheckboxFieldColumn")<br />Sloupec pole zaškrtávací políčko<br />![Ikona zaškrtávacího políčka seznamu](../../extensibility/ux-guidelines/media/vld_c_choicetoggle_checkboxlist.png "VLD_C_ChoiceToggle_CheckboxList")<br />Seznam se zaškrtávacími políčky ||
-| **Třída** | ![Třída ikonu](../../extensibility/ux-guidelines/media/vld_c_class.png "VLD_C_Class") | ![Přidat ikonu třídy](../../extensibility/ux-guidelines/media/vld_c_class_addclass.png "VLD_C_Class_AddClass")<br />Přidat třídu<br />![Ikona okna podrobností třídy nástroje](../../extensibility/ux-guidelines/media/vld_c_class_classdetailstoolwindow.png "VLD_C_Class_ClassDetailsToolWindow")<br />Nástroj okno podrobností třídy || 
+| **Třída** | ![Třída ikonu](../../extensibility/ux-guidelines/media/vld_c_class.png "VLD_C_Class") | ![Přidat ikonu třídy](../../extensibility/ux-guidelines/media/vld_c_class_addclass.png "VLD_C_Class_AddClass")<br />Přidat třídu<br />![Ikona okna podrobností třídy nástroje](../../extensibility/ux-guidelines/media/vld_c_class_classdetailstoolwindow.png "VLD_C_Class_ClassDetailsToolWindow")<br />Nástroj okno podrobností třídy ||
 | **Vymazat**<br />Stejné jako "Storno" a "Odstranit" | ![Vymazat ikonu](../../extensibility/ux-guidelines/media/vld_c_clear.png "VLD_C_Clear") | ![Vymazat všechny zarážky ikonu](../../extensibility/ux-guidelines/media/vld_c_clear_clearallbreakpoints.png "VLD_C_Clear_ClearAllBreakpoints")<br />Vymazat všechny zarážky<br />![Vymazat záložky ikonu](../../extensibility/ux-guidelines/media/vld_c_clear_clearbookmark.png "VLD_C_Clear_ClearBookmark")<br />Vymazat záložky<br />![Ikona vymazat kolekce](../../extensibility/ux-guidelines/media/vld_c_clear_clearcollection.png "VLD_C_Clear_ClearCollection")<br />Vymazat kolekce ||
 | **Zavřít**<br />ukončit | ![Ikonu pro zavření](../../extensibility/ux-guidelines/media/vld_c_close.png "VLD_C_Close") | ![Zavřete všechny ikony](../../extensibility/ux-guidelines/media/vld_c_close_closeall.png "VLD_C_Close_CloseAll")<br />Zavřít vše<br />![Ikona zavřít výsledky](../../extensibility/ux-guidelines/media/vld_c_close_closeresults.png "VLD_C_Close_CloseResults")<br />Zavřít výsledky<br />![Ukončit proces ikonu](../../extensibility/ux-guidelines/media/vld_c_close_terminateprocess.png "VLD_C_Close_TerminateProcess")<br />Ukončit proces ||
 | **Cloud** | ![Ikona cloudu](../../extensibility/ux-guidelines/media/vld_c_cloud.png "VLD_C_Cloud") | ![Ikona balíčku cloud](../../extensibility/ux-guidelines/media/vld_c_cloud_cloudpackage.png "VLD_C_Cloud_CloudPackage")<br />Balíček cloud<br />![Cloud service icon](../../extensibility/ux-guidelines/media/vld_c_cloud_cloudservice.png "VLD_C_Cloud_CloudService")<br />Cloudové služby ||
-| **Kód** | ![Ikona kódu](../../extensibility/ux-guidelines/media/vld_c_code.png "VLD_C_Code") | ![Programových testů UI ikonu](../../extensibility/ux-guidelines/media/vld_c_code_codeduitest.png "VLD_C_Code_CodedUITest")<br />Programový test UI<br />![Převést na ikonu kódovaný webový test](../../extensibility/ux-guidelines/media/vld_c_code_converttocodedwebtest.png "VLD_C_Code_ConvertToCodedWebTest")<br />Převést na programových webových testů ||  
-| **Sbalit** | ![Sbalit ikonu](../../extensibility/ux-guidelines/media/vld_c_collapse.png "VLD_C_Collapse") | ![Sbalit všechny ikony](../../extensibility/ux-guidelines/media/vld_c_collapse_collapseall.png "VLD_C_Collapse_CollapseAll")<br />Sbalit vše<br />![Vrátí hodnotu s sbaleném](../../extensibility/ux-guidelines/media/vld_c_collapse_returntocollapsedvalue.png "VLD_C_Collapse_ReturnToCollapsedValue")<br />Vrátí hodnotu s sbaleném ||  
-| **Kolekce** | ![Ikona kolekce](../../extensibility/ux-guidelines/media/vld_c_collection.png "VLD_C_Collection") | ![Ikona vymazat kolekce](../../extensibility/ux-guidelines/media/vld_c_collection_clearcollection.png "VLD_C_Collection_ClearCollection")<br />Vymazat kolekce<br />![Ikona kolekce počet](../../extensibility/ux-guidelines/media/vld_c_collection_countcollection.png "VLD_C_Collection_CountCollection")<br />Shromažďování počtu položek ||  
+| **Kód** | ![Ikona kódu](../../extensibility/ux-guidelines/media/vld_c_code.png "VLD_C_Code") | ![Programových testů UI ikonu](../../extensibility/ux-guidelines/media/vld_c_code_codeduitest.png "VLD_C_Code_CodedUITest")<br />Programový test UI<br />![Převést na ikonu kódovaný webový test](../../extensibility/ux-guidelines/media/vld_c_code_converttocodedwebtest.png "VLD_C_Code_ConvertToCodedWebTest")<br />Převést na programových webových testů ||
+| **Sbalit** | ![Sbalit ikonu](../../extensibility/ux-guidelines/media/vld_c_collapse.png "VLD_C_Collapse") | ![Sbalit všechny ikony](../../extensibility/ux-guidelines/media/vld_c_collapse_collapseall.png "VLD_C_Collapse_CollapseAll")<br />Sbalit vše<br />![Vrátí hodnotu s sbaleném](../../extensibility/ux-guidelines/media/vld_c_collapse_returntocollapsedvalue.png "VLD_C_Collapse_ReturnToCollapsedValue")<br />Vrátí hodnotu s sbaleném ||
+| **Kolekce** | ![Ikona kolekce](../../extensibility/ux-guidelines/media/vld_c_collection.png "VLD_C_Collection") | ![Ikona vymazat kolekce](../../extensibility/ux-guidelines/media/vld_c_collection_clearcollection.png "VLD_C_Collection_ClearCollection")<br />Vymazat kolekce<br />![Ikona kolekce počet](../../extensibility/ux-guidelines/media/vld_c_collection_countcollection.png "VLD_C_Collection_CountCollection")<br />Shromažďování počtu položek ||
 | **Sloupec** | ![Sloupce ikonu](../../extensibility/ux-guidelines/media/vld_c_column.png "VLD_C_Column") | ![AutoSize sloupce ikonu](../../extensibility/ux-guidelines/media/vld_c_column_autosizecolumn.png "VLD_C_Column_AutosizeColumn")<br />Automaticky přizpůsobit velikost sloupců<br />![Ikona podrobnosti sloupce](../../extensibility/ux-guidelines/media/vld_c_column_columndetails.png "VLD_C_Column_ColumnDetails")<br />Podrobnosti sloupce<br />![Ikona chyby sloupce](../../extensibility/ux-guidelines/media/vld_c_column_columnerror.png "VLD_C_Column_ColumnError")<br />Chyby sloupce ||
-| **Komentář**<br />Zpětnou vazbu, poznámky | ![Komentář &#40;bublinu&#41; ikonu](../../extensibility/ux-guidelines/media/vld_c_comment_bubble.png "VLD_C_Comment_bubble") | ![Přidat ikonu komentáře](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_addcomment.png "VLD_C_Comment_bubble_AddComment")<br />Přidat komentář<br />![Popisek ikony](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_callout.png "VLD_C_Comment_bubble_Callout")<br />Popisek ||  
+| **Komentář**<br />Zpětnou vazbu, poznámky | ![Komentář &#40;bublinu&#41; ikonu](../../extensibility/ux-guidelines/media/vld_c_comment_bubble.png "VLD_C_Comment_bubble") | ![Přidat ikonu komentáře](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_addcomment.png "VLD_C_Comment_bubble_AddComment")<br />Přidat komentář<br />![Popisek ikony](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_callout.png "VLD_C_Comment_bubble_Callout")<br />Popisek ||
 | **Komentář (kód)** | ![Komentář &#40;kód&#41;](../../extensibility/ux-guidelines/media/vld_c_comment_lines.png "VLD_C_Comment_lines") | ![Uncomment icon](../../extensibility/ux-guidelines/media/vld_c_comment_lines_uncomment.png "VLD_C_Comment_lines_Uncomment") <br />zrušení komentáře ||
 | **Compare** | ![Porovnání ikonu](../../extensibility/ux-guidelines/media/vld_c_compare.png "VLD_C_Compare") | ![Porovnání dat ikonu](../../extensibility/ux-guidelines/media/vld_c_compare_comparedata.png "VLD_C_Compare_CompareData")<br />Porovnání dat<br />![Porovnat složky](../../extensibility/ux-guidelines/media/vld_c_compare_comparefolders.png "VLD_C_Compare_CompareFolders")<br />Porovnávání složek<br />![Ikona sestav porovnání výkonu](../../extensibility/ux-guidelines/media/vld_c_compare_compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports")<br />Porovnat sestavy výkonu ||
 | **Komponenta** | ![Ikona komponenty](../../extensibility/ux-guidelines/media/vld_c_component.png "VLD_C_Component") | ![Přidat ikonu součásti](../../extensibility/ux-guidelines/media/vld_c_component_addcomponent.png "VLD_C_Component_AddComponent")<br />Přidat součást<br />![Ikona diagramu součástí](../../extensibility/ux-guidelines/media/vld_c_component_componentdiagram.png "VLD_C_Component_ComponentDiagram")<br />Diagram součásti<br />![Ikona součásti Windows Phone RT](../../extensibility/ux-guidelines/media/vld_c_component_phonewindowsrtcomponent.png "VLD_C_Component_PhoneWindowsRTComponent")<br />Komponenta Windows Phone RT ||
@@ -116,11 +116,11 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Kurzor**<br />Ukazatel | ![Ikona kurzor](../../extensibility/ux-guidelines/media/vld_c_cursor.png "VLD_C_Cursor") | ![Kontrola ikona tlačítka režimu](../../extensibility/ux-guidelines/media/vld_c_cursor_inspectmodebutton.png "VLD_C_Cursor_InspectModeButton") <br />Kontrola tlačítka režimu<br />![Nastavit aktivní nástroj ikonu](../../extensibility/ux-guidelines/media/vld_c_cursor_sethotspottool.png "VLD_C_Cursor_SetHotspotTool")<br />Nástroj Nastavení aktivního bodu ||
 | **Vlastní výraz**<br />Předpověď | ![Ikona vlastního výrazu](../../extensibility/ux-guidelines/media/vld_c_customexpression.png "VLD_C_CustomExpression") | ![Předpovědi dolování dat.](../../extensibility/ux-guidelines/media/vld_c_customexpression_dataminingprediction.png "VLD_C_CustomExpression_DataMiningPrediction")<br />Předpovědi dolování dat. ||
 | **Vyjmout** | ![Vyjmout ikonu](../../extensibility/ux-guidelines/media/vld_c_cut.png "VLD_C_Cut") |||
-  
-###  <a name="BKMK_VLDConceptsD"></a> D  
-  
+
+###  <a name="BKMK_VLDConceptsD"></a> D
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
-| --- | --- | --- | --- | 
+| --- | --- | --- | --- |
 | **Tmavý motiv** | ![Tmavý motiv ikonu](../../extensibility/ux-guidelines/media/vld_c_darktheme.png "VLD_C_DarkTheme") | ![Tmavý motiv na ikonu](../../extensibility/ux-guidelines/media/vld_c_darktheme_darkthemeon.png "VLD_C_DarkTheme_DarkThemeOn")<br />Tmavý motiv na ||
 | **Data** | ![Ikona dat](../../extensibility/ux-guidelines/media/vld_c_data.png "VLD_C_Data") | ![Porovnání obou databází ikonu](../../extensibility/ux-guidelines/media/vld_c_data_comparebothdatabases.png "VLD_C_Data_CompareBothDatabases")<br />Porovnání obou databází<br />![Ikona specifikace auditu databáze](../../extensibility/ux-guidelines/media/vld_c_data_databaseauditspecification.png "VLD_C_Data_DatabaseAuditSpecification")<br />Specifikace auditu databáze<br />![Database project icon](../../extensibility/ux-guidelines/media/vld_c_data_databaseproject.png "VLD_C_Data_DatabaseProject")<br />Projekt databáze ||
 | **Dolování dat** | ![Ikona dolování dat](../../extensibility/ux-guidelines/media/vld_c_datamining.png "VLD_C_DataMining") | ![Ikona sloupec dolování dat](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingcolumn.png "VLD_C_DataMining_DataMiningColumn")<br />Sloupec dolování dat<br />![Ikona předpovědi dolování dat](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingprediction.png "VLD_C_DataMining_DataMiningPrediction")<br />Předpovědi dolování dat.<br />![Ikona struktura dolování dat](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingstructure.png "VLD_C_DataMining_DataMiningStructure")<br />Struktura dolování dat ||
@@ -138,10 +138,10 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Ovladač** | ![Ikona ovladač](../../extensibility/ux-guidelines/media/vld_c_driver.png "VLD_C_Driver") | ![Ikona šablony balíček ovladačů](../../extensibility/ux-guidelines/media/vld_c_driver_driverpackagetemplate.png "VLD_C_Driver_DriverPackageTemplate")<br />Šablona balíčku ovladačů<br />![Ikona ovladač testovací skupiny Průzkumníka](../../extensibility/ux-guidelines/media/vld_c_driver_drivertestgroupexplorer.png "VLD_C_Driver_DriverTestGroupExplorer")<br />Průzkumník skupiny ovladačů testů<br />![Ikona šablony ovladače NDIS sítě](../../extensibility/ux-guidelines/media/vld_c_driver_networkndisdrivertemplate.png "VLD_C_Driver_NetworkNDISDriverTemplate")<br />Šablona ovladače NDIS sítě ||
 | **Dynamické** | ![Dynamické ikonu](../../extensibility/ux-guidelines/media/vld_c_dynamic.png "VLD_C_Dynamic") | ![ASP.NET dynamic control icon](../../extensibility/ux-guidelines/media/vld_c_dynamic_aspnetdynamiccontrol.png "VLD_C_Dynamic_ASPNETDynamicControl")<br />Dynamický ovládací prvek ASP.NET<br />![C&#35; dynamic data website icon](../../extensibility/ux-guidelines/media/vld_c_dynamic_csdynamicdatawebsite.png "VLD_C_Dynamic_CSDynamicDataWebsite")<br />Dynamický datový web C#<br />![Dynamic validator icon](../../extensibility/ux-guidelines/media/vld_c_dynamic_dynamicvalidator.png "VLD_C_Dynamic_DynamicValidator")<br />Dynamické ověření ||
 | **Dynamické hodnoty** | ![Ikona dynamické hodnoty](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue.png "VLD_C_DynamicValue") | ![Copy dynamic value icon](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_copydynamicvalue.png "VLD_C_DynamicValue_CopyDynamicValue")<br />Zkopírujte hodnotu dynamické<br />![Ikona prázdnou hodnotu dynamické](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_emptydynamicvalue.png "VLD_C_DynamicValue_EmptyDynamicValue")<br />Prázdný dynamické hodnoty ||
-  
-###  <a name="BKMK_VLDConceptsE"></a> E  
-  
-| Koncept | Hlavní ikona | Další příklady | Poznámky |  
+
+###  <a name="BKMK_VLDConceptsE"></a> E
+
+| Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Upravit** | ![Upravit ikonu](../../extensibility/ux-guidelines/media/vld_c_edit.png "VLD_C_Edit") | ![Ikona editoru adresu](../../extensibility/ux-guidelines/media/vld_c_edit_addresseditor.png "VLD_C_Edit_AddressEditor")<br />Editor adresy<br />![Upravit ikonu dotazu](../../extensibility/ux-guidelines/media/vld_c_edit_editquery.png "VLD_C_Edit_EditQuery")<br />Upravit dotaz<br />![Upravit ikonu vztah](../../extensibility/ux-guidelines/media/vld_c_edit_editrelation.png "VLD_C_Edit_EditRelation")<br />Upravit vztah | **Upravit** anotace čelí vlevo nebo vpravo v závislosti na tom, jak vypadá základní ikonu. Zvolte orientaci, která vypadá co nejlépe s celkového návrhu ikonu. |
 | **Efekty**<br />*Stejné jako "Funkce", "Proměnné (globální)"* | ![Ikona efektů](../../extensibility/ux-guidelines/media/vld_c_effects.png "VLD_C_Effects") |||
@@ -152,10 +152,10 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Rozbalte položku** | ![Ikonu rozbalení](../../extensibility/ux-guidelines/media/vld_c_expand.png "VLD_C_Expand") | ![Návratová hodnota rozšířené ikonu](../../extensibility/ux-guidelines/media/vld_c_expand_returnvalueexpanded.png "VLD_C_Expand_ReturnValueExpanded")<br />Návratová hodnota pro rozšířené ||
 | **Rozbalit/sbalit** | ![Ikonu rozbalení](../../extensibility/ux-guidelines/media/vld_c_contractexpand_expand.png "VLD_C_ContractExpand_expand") ![kontraktu &#40;příkaz&#41; ikonu](../../extensibility/ux-guidelines/media/vld_c_contractexpand_contract.png "VLD_C_ContractExpand_contract") || **Rozbalit/sbalit** ikony v situacích, rozložení slouží k označení, že bude zhušťovat mezeru mezi dvěma prvky. |
 | **Export**<br />*Stejné jako "Otevřít"*| ![Ikona exportu](../../extensibility/ux-guidelines/media/vld_c_export.png "VLD_C_Export") | ![Ikona filtru exportu](../../extensibility/ux-guidelines/media/vld_c_export_exportfilter.png "VLD_C_Export_ExportFilter")<br />Filtr pro export<br />![Export report data icon](../../extensibility/ux-guidelines/media/vld_c_export_exportreportdata.png "VLD_C_Export_ExportReportData") <br />Export dat sestavy<br />![Exportovat sestavu ikonu filtru](../../extensibility/ux-guidelines/media/vld_c_export_exportreportfilter.png "VLD_C_Export_ExportReportFilter")<br />Exportovat filtr sestavy ||
-  
-###  <a name="BKMK_VLDConceptsF"></a> F  
-  
-| Koncept | Hlavní ikona | Další příklady | Poznámky | 
+
+###  <a name="BKMK_VLDConceptsF"></a> F
+
+| Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Oblíbené položky**<br />Chráněné, hodnocení | ![Ikona oblíbené](../../extensibility/ux-guidelines/media/vld_c_favorite.png "VLD_C_Favorite") | ![Přidat ikonu Oblíbené](../../extensibility/ux-guidelines/media/vld_c_favorite_addtofavorites.png "VLD_C_Favorite_AddToFavorites")<br />Přidat k oblíbeným položkám<br />![Ikona hodnocení](../../extensibility/ux-guidelines/media/vld_c_favorite_rating.png "VLD_C_Favorite_Rating")<br />Rating ||
 | **Pole** | ![Ikona pole](../../extensibility/ux-guidelines/media/vld_c_field.png "VLD_C_Field") | ![Přidat ikonu správy pole](../../extensibility/ux-guidelines/media/vld_c_field_addfield.png "VLD_C_Field_AddField")<br />Přidání pole<br />![Upravit ikonu pole](../../extensibility/ux-guidelines/media/vld_c_field_editfield.png "VLD_C_Field_EditField")<br />Upravit pole ||
@@ -169,9 +169,9 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Rámec** | ![Ikona rámečku](../../extensibility/ux-guidelines/media/vld_c_frame.png "VLD_C_Frame") |||
 | **Friend** | ![Ikona typu Friend](../../extensibility/ux-guidelines/media/vld_c_friend.png "VLD_C_Friend") |||
 | **– funkce**<br />Výraz<br />*Stejné jako "Účinky" a "Proměnné (globální)"* | ![Ikona funkce](../../extensibility/ux-guidelines/media/vld_c_function.png "VLD_C_Function") | ![Ikona upozornění funkce](../../extensibility/ux-guidelines/media/vld_c_function_functionwarning.png "VLD_C_Function_FunctionWarning")<br />Upozornění – funkce<br />![WPF page function icon](../../extensibility/ux-guidelines/media/vld_c_function_wpfpagefunction.png "VLD_C_Function_WPFPageFunction")<br />Funkce stránky WPF ||
-  
-###  <a name="BKMK_VLDConceptsG"></a> G  
-  
+
+###  <a name="BKMK_VLDConceptsG"></a> G
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **získat**<br />Stáhnout | ![Ikona](../../extensibility/ux-guidelines/media/vld_c_get.png "VLD_C_Get") | ![Stáhněte si ikonu složky](../../extensibility/ux-guidelines/media/vld_c_get_downloadfolder.png "VLD_C_Get_DownloadFolder")<br />Získat složky pro stahování<br />![Ikona hodnota slovníku](../../extensibility/ux-guidelines/media/vld_c_get_getdictionaryvalue.png "VLD_C_Get_GetDictionaryValue")<br />Získání hodnoty slovníku<br />![Získání položky z kolekce ikony](../../extensibility/ux-guidelines/media/vld_c_get_getitemfromcollection.png "VLD_C_Get_GetItemFromCollection")<br />Získání položky z kolekce ||
@@ -180,17 +180,17 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Mřížka** | ![Ikona mřížky](../../extensibility/ux-guidelines/media/vld_c_grid.png "VLD_C_Grid") | ![Ovládací prvek mřížky dat Asset](../../extensibility/ux-guidelines/media/vld_c_grid_assetdatagridcontrol.png "VLD_C_Grid_AssetDataGridControl")<br />Ovládací prvek mřížky dat prostředku<br />![Mřížková aplikace C&#43; &#43; ikonu](../../extensibility/ux-guidelines/media/vld_c_grid_gridappcpp.png "VLD_C_Grid_GridAppCPP")<br />Mřížková aplikace C++<br />![Toggle grid icon](../../extensibility/ux-guidelines/media/vld_c_grid_togglegrid.png "VLD_C_Grid_ToggleGrid")<br />Přepnout mřížku ||
 | **Rozložení mřížky webové stránky** | ![Ikona rozložení mřížky webové](../../extensibility/ux-guidelines/media/vld_c_gridweblayout.png "VLD_C_GridWebLayout") | ![Ikona prvku grid](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridelement.png "VLD_C_GridWebLayout_GridElement")<br />Elementu mřížky<br />![Ikona prvku rozdělovač mřížky](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridsplitterelement.png "VLD_C_GridWebLayout_GridSplitterElement")<br />Element rozdělovač mřížky ||
 | **Seskupení** | ![Ikona seskupení](../../extensibility/ux-guidelines/media/vld_c_grouping.png "VLD_C_Grouping") | ![Ikona skupiny dialogové okno](../../extensibility/ux-guidelines/media/vld_c_grouping_dialoggroup.png "VLD_C_Grouping_DialogGroup")<br />Dialogové okno skupiny<br />![Team icon](../../extensibility/ux-guidelines/media/vld_c_grouping_team.png "VLD_C_Grouping_Team")<br />Tým<br />![Ikonu služby Virtual machines](../../extensibility/ux-guidelines/media/vld_c_grouping_virtualmachines.png "VLD_C_Grouping_VirtualMachines")<br />Virtuální počítače| Ukládání více objektů na sobě představuje pojem **seskupení** nebo násobnosti. |
-  
-###  <a name="BKMK_VLDConceptsH"></a> H  
-  
+
+###  <a name="BKMK_VLDConceptsH"></a> H
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **hierarchie** | ![Ikona hierarchie](../../extensibility/ux-guidelines/media/vld_c_hierarchy.png "VLD_C_Hierarchy") | ![Ikona hierarchie proměnné](../../extensibility/ux-guidelines/media/vld_c_hierarchy_hierarchyvariable.png "VLD_C_Hierarchy_HierarchyVariable")<br />Proměnná hierarchie<br />![Ikona hierarchie volání](../../extensibility/ux-guidelines/media/vld_c_hierarchy_callhierarchy.png "VLD_C_Hierarchy_CallHierarchy") <br />Hierarchie volání ||
 | **Historie** | ![Ikona historie](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
 | **Domovská stránka** | ![Ikona Domovská stránka](../../extensibility/ux-guidelines/media/vld_c_home.png "VLD_C_Home") | ![Ikony domovské obrazovky LightSwitch](../../extensibility/ux-guidelines/media/vld_c_home_lightswitchhomescreen.png "VLD_C_Home_LightSwitchHomeScreen")<br />Domovské obrazovky LightSwitch ||
-  
-###  <a name="BKMK_VLDConceptsI"></a> MŮŽU  
-  
+
+###  <a name="BKMK_VLDConceptsI"></a> MŮŽU
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Nápad** | ![Ikona nápad](../../extensibility/ux-guidelines/media/vld_c_idea.png "VLD_C_Idea") |||
@@ -201,16 +201,16 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Dědičnost (šipka)** | ![Dědičnost &#40;šipku&#41; ikonu](../../extensibility/ux-guidelines/media/vld_c_inheritance_arrow.png "VLD_C_Inheritance_arrow") || **Dědičnosti (šipka)** ikona představuje ovládacího prvku panelu nástrojů pro modelování plochu. |
 | **Rozhraní** | ![Ikona rozhraní](../../extensibility/ux-guidelines/media/vld_c_interface.png "VLD_C_Interface") | ![Implementovat rozhraní ikonu](../../extensibility/ux-guidelines/media/vld_c_interface_implementinterface.png "VLD_C_Interface_ImplementInterface")<br />Implementace rozhraní ||
 | **Položka** | ![Ikona položky](../../extensibility/ux-guidelines/media/vld_c_item.png "VLD_C_Item") | ![Copy item icon](../../extensibility/ux-guidelines/media/vld_c_item_copyitem.png "VLD_C_Item_CopyItem")<br />Kopírovat položku<br />![Vytvoření ikony položky seznamu](../../extensibility/ux-guidelines/media/vld_c_item_createlistitem.png "VLD_C_Item_CreateListItem")<br />Vytvořte položku seznamu<br />![Ikona položky se změnami](../../extensibility/ux-guidelines/media/vld_c_item_checkinitem.png "VLD_C_Item_CheckInItem")<br />Vrátit se změnami položky ||
-  
-###  <a name="BKMK_VLDConceptsK"></a> TIS.  
-  
+
+###  <a name="BKMK_VLDConceptsK"></a> TIS.
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Key**<br />Oprávnění, ID | ![Ikona klíče](../../extensibility/ux-guidelines/media/vld_c_key.png "VLD_C_Key") | ![Nová ikona klíče](../../extensibility/ux-guidelines/media/vld_c_key_newkey.png "VLD_C_Key_NewKey")<br />Nový klíč<br />![Ikona oprávnění](../../extensibility/ux-guidelines/media/vld_c_key_permission.png "VLD_C_Key_Permission")<br />Oprávnění<br />![Ikona ID aktuální položky](../../extensibility/ux-guidelines/media/vld_c_key_getcurrentitemid.png "VLD_C_Key_GetCurrentItemID")<br />Získejte ID aktuální položky ||
 | **Klíčový ukazatel výkonu (KPI)** | ![Ikony klíčového ukazatele výkonu](../../extensibility/ux-guidelines/media/vld_c_kpi.png "VLD_C_KPI") | ![Odstranit klíčový ukazatel výkonu ikonu](../../extensibility/ux-guidelines/media/vld_c_kpi_deletekpi.png "VLD_C_KPI_DeleteKPI")<br />Odstranit klíčový ukazatel výkonu<br />![Ikona zobrazení klíčových ukazatelů výkonu prohlížeče](../../extensibility/ux-guidelines/media/vld_c_kpi_kpibrowserview.png "VLD_C_KPI_KPIBrowserView")<br />Zobrazit v prohlížeči klíčového ukazatele výkonu<br />![Klíčový ukazatel výkonu s ikonou chyby](../../extensibility/ux-guidelines/media/vld_c_kpi_kpiwitherror.png "VLD_C_KPI_KPIWithError")<br />Klíčový ukazatel výkonu s chybou ||
-  
-###  <a name="BKMK_VLDConceptsL"></a> L  
-  
+
+###  <a name="BKMK_VLDConceptsL"></a> L
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Knihovna** | ![Ikona knihovny](../../extensibility/ux-guidelines/media/vld_c_library.png "VLD_C_Library") | ![C&#43; &#43; ikonu projekt knihovny tříd](../../extensibility/ux-guidelines/media/vld_c_library_cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject")<br />Projekt knihovny tříd jazyka C++<br />![Ikona knihovny exportů](../../extensibility/ux-guidelines/media/vld_c_library_exportslibrary.png "VLD_C_Library_ExportsLibrary")<br />Exporty knihoven<br />![F&#35; ikonu Knihovna ovládacího prvku Windows Forms](../../extensibility/ux-guidelines/media/vld_c_library_fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary")<br />F#Knihovna ovládacích prvků Windows Forms ||
@@ -218,9 +218,9 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Zámek**<br />Privátní a oprávnění | ![Ikona zámku](../../extensibility/ux-guidelines/media/vld_c_lock.png "VLD_C_Lock") | ![Lock X axis icon](../../extensibility/ux-guidelines/media/vld_c_lock_lockxaxis.png "VLD_C_Lock_LockXAxis")<br />Uzamknout osu X<br />![Ikona oprávnění větev](../../extensibility/ux-guidelines/media/vld_c_lock_branchpermissions.png "VLD_C_Lock_BranchPermissions")<br />Větev oprávnění<br />![Ikona soukromou frontu](../../extensibility/ux-guidelines/media/vld_c_lock_privatequeue.png "VLD_C_Lock_PrivateQueue")<br />Soukromé fronty ||
 | **protokol** | ![Ikona protokolu](../../extensibility/ux-guidelines/media/vld_c_log.png "VLD_C_Log") | ![Catalog properties icon](../../extensibility/ux-guidelines/media/vld_c_log_catalogproperties.png "VLD_C_Log_CatalogProperties")<br />Vlastnosti katalogu<br />![Akce protokolu ikonu](../../extensibility/ux-guidelines/media/vld_c_log_actionlog.png "VLD_C_Log_ActionLog")<br />Protokol akcí<br />![Ikona plánu testu připojení](../../extensibility/ux-guidelines/media/vld_c_log_connecttestplan.png "VLD_C_Log_ConnectTestPlan")<br />Připojení testovacího plánu ||
 | **smyčka** | ![Ikona smyčky](../../extensibility/ux-guidelines/media/vld_c_loop.png "VLD_C_Loop") | ![Přidat nebo vložit podmíněné smyčky ikonu](../../extensibility/ux-guidelines/media/vld_c_loop_addorinsertconditionalloop.png "VLD_C_Loop_AddOrInsertConditionalLoop")<br />Přidat nebo vložit podmíněné smyčky<br />![Ikona podmíněné smyčky](../../extensibility/ux-guidelines/media/vld_c_loop_conditionalloop.png "VLD_C_Loop_ConditionalLoop")<br />Podmíněné smyčky ||
-  
-###  <a name="BKMK_VLDConceptsM"></a> M  
-  
+
+###  <a name="BKMK_VLDConceptsM"></a> M
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **e-mailu**<br />Zpráva | ![Ikona e-mailu](../../extensibility/ux-guidelines/media/vld_c_mail.png "VLD_C_Mail") | ![Ikona fronty zprávy](../../extensibility/ux-guidelines/media/vld_c_mail_messagequeue.png "VLD_C_Mail_MessageQueue")<br />Fronty zpráv<br />![Byla přijata zpráva trasování ikonu](../../extensibility/ux-guidelines/media/vld_c_mail_messagereceivedtrace.png "VLD_C_Mail_MessageReceivedTrace")<br />Byla přijata zpráva trasování<br />![E-mailové adresy prohlížeče ikonu](../../extensibility/ux-guidelines/media/vld_c_mail_emailaddressviewer.png "VLD_C_Mail_EmailAddressViewer")<br />Prohlížeč e-mailové adresy ||
@@ -241,26 +241,26 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Mobilní telefon** | ![Mobilní telefon ikonu](../../extensibility/ux-guidelines/media/vld_c_mobilephone.png "VLD_C_MobilePhone") | ![Ikona mobilních služeb](../../extensibility/ux-guidelines/media/vld_c_mobilephone_mobileservices.png "VLD_C_MobilePhone_MobileServices")<br />Mobilní služby<br />![Ikona mobilních her komponenty](../../extensibility/ux-guidelines/media/vld_c_mobilephone_mobilegamecomponents.png "VLD_C_MobilePhone_MobileGameComponents")<br />Komponenty mobilní hry<br />![Ikony projektu VB mobilních webových](../../extensibility/ux-guidelines/media/vld_c_mobilephone_vbmobilewebproject.png "VLD_C_MobilePhone_VBMobileWebProject")<br />Mobilní webový projekt jazyka Visual Basic ||
 | **Modul** | ![Ikona modulu](../../extensibility/ux-guidelines/media/vld_c_module.png "VLD_C_Module") | ![Sloučení modulu projektu ikonu](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleproject.png "VLD_C_Module_MergeModuleProject")<br />Sloučení modulu projektu<br />![Přidat ikonu modulu](../../extensibility/ux-guidelines/media/vld_c_module_addmodule.png "VLD_C_Module_AddModule")<br />Přidat modul<br />![Sloučení modulu vyloučení ikonu](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleexclude.png "VLD_C_Module_MergeModuleExclude")<br />Vyloučení modulů sloučení ||
 | **Přesunutí** | ![Ikona přesunutí](../../extensibility/ux-guidelines/media/vld_c_move.png "VLD_C_Move") |||
-  
-###  <a name="BKMK_VLDConceptsN"></a> N  
-  
+
+###  <a name="BKMK_VLDConceptsN"></a> N
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
-| --- | --- | --- | --- |  
+| --- | --- | --- | --- |
 | **Namespace** | ![Ikona Namespace](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![Odebrat pomocí oboru názvů ikonu](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />Odebrat pomocí oboru názvů<br />![Řazení pomocí ikony obor názvů](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />Řazení s použitím oboru názvů<br />![Přidat direktivu using ikonu oboru názvů](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />Přidat direktivu using namespace ||
 | **Sítě**<br />Připojení | ![Ikona sítě](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![Ikona šablony balíček ovladačů síťové](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />Síťové ovladače balíčku šablony<br />![Ikona offline připojení](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />Připojení do offline režimu<br />![Ikona neznámého připojení](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />Neznámé připojení ||
 | **Node**<br />Křížek | ![Uzel ikona](../../extensibility/ux-guidelines/media/vld_c_node.png "VLD_C_Node") |||
 | **Nonsubstantive (skrytý nebo šablony)**<br />*Stejné jako "Virtuální"* | ![Ikona nonsubstantive](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive.png "VLD_C_Nonsubstantive") | ![Ikona skryté pole](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfield.png "VLD_C_Nonsubstantive_HiddenField")<br />Skryté pole<br />![Hidden folder icon](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfolder.png "VLD_C_Nonsubstantive_HiddenFolder")<br />Skryté složky<br />![Ikona dynamické šablony](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_dynamictemplate.png "VLD_C_Nonsubstantive_DynamicTemplate")<br />Dynamické šablony | Tečkovaná osnovy objektu označuje, že je **skrytý nebo bez vizuálního vzhledu**. |
 | **Poznámka:** | ![Ikona poznámky](../../extensibility/ux-guidelines/media/vld_c_note.png "VLD_C_Note") |||
-  
-###  <a name="BKMK_VLDConceptsO"></a> O  
-  
+
+###  <a name="BKMK_VLDConceptsO"></a> O
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Otevřít**<br />*Stejné jako "Export"* | ![Otevřít ikonu](../../extensibility/ux-guidelines/media/vld_c_open.png "VLD_C_Open") | ![Otevřít přílohu ikonu](../../extensibility/ux-guidelines/media/vld_c_open_openattachment.png "VLD_C_Open_OpenAttachment")<br />Otevřít přílohu<br />![Ikona výsledku otevřít porovnání](../../extensibility/ux-guidelines/media/vld_c_open_opencomparisonresult.png "VLD_C_Open_OpenComparisonResult")<br />Otevřít výsledek porovnání<br />![Ikona dialogové okno otevřít soubor](../../extensibility/ux-guidelines/media/vld_c_open_openfiledialog.png "VLD_C_Open_OpenFileDialog")<br />Dialogové okno otevřít soubor ||
 | **Output** | ![Ikona výstup](../../extensibility/ux-guidelines/media/vld_c_output.png "VLD_C_Output") |||
-  
-###  <a name="BKMK_VLDConceptsP"></a> P  
-  
+
+###  <a name="BKMK_VLDConceptsP"></a> P
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Balíček** | ![Ikona balíčku](../../extensibility/ux-guidelines/media/vld_c_package.png "VLD_C_Package") | ![Ikona balíčku cloud](../../extensibility/ux-guidelines/media/vld_c_package_cloudpackage.png "VLD_C_Package_CloudPackage")<br />Balíček cloud<br />![Vytvořit balíček ikonu](../../extensibility/ux-guidelines/media/vld_c_package_createpackage.png "VLD_C_Package_CreatePackage")<br />Vytvoření balíčku<br />![Ikona šablony balíček ovladačů](../../extensibility/ux-guidelines/media/vld_c_package_driverpackagetemplate.png "VLD_C_Package_DriverPackageTemplate")<br />Šablona balíčku ovladačů ||
@@ -277,15 +277,15 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Tisk** | ![Ikonu tisku](../../extensibility/ux-guidelines/media/vld_c_print.png "VLD_C_Print") | ![Print direct icon](../../extensibility/ux-guidelines/media/vld_c_print_printdirect.png "VLD_C_Print_PrintDirect")<br />Tisk s přímým přístupem<br />![Ikona dialogového okna Tisk](../../extensibility/ux-guidelines/media/vld_c_print_printdialog.png "VLD_C_Print_PrintDialog")<br />Dialogové okno Tisk<br />![Ikona tisku dokumentu ovládací prvek](../../extensibility/ux-guidelines/media/vld_c_print_printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl")<br />Vytištěný dokument ovládacího prvku ||
 | **Postup**<br />Interaktivní okno | ![Ikona postup](../../extensibility/ux-guidelines/media/vld_c_procedure.png "VLD_C_Procedure") | ![Ikony interaktivního okna Pythonu](../../extensibility/ux-guidelines/media/vld_c_procedure_pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow")<br />Interaktivní okno Pythonu<br />![Ikona upozornění procedury](../../extensibility/ux-guidelines/media/vld_c_procedure_procedurewarning.png "VLD_C_Procedure_ProcedureWarning")<br />Upozornění procedury<br />![Uložená procedura ikonu](../../extensibility/ux-guidelines/media/vld_c_procedure_storedprocedure.png "VLD_C_Procedure_StoredProcedure")<br />Uložená procedura ||
 | **Vlastnost**<br />Nastavení konfigurace | ![Ikona vlastnost](../../extensibility/ux-guidelines/media/vld_c_property.png "VLD_C_Property") | ![Přidat ikonu správy vlastnost](../../extensibility/ux-guidelines/media/vld_c_property_addproperty.png "VLD_C_Property_AddProperty")<br />Přidat vlastnost<br />![Ikona upozornění rozšířená vlastnost](../../extensibility/ux-guidelines/media/vld_c_property_extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning")<br />Rozšířená vlastnost&mdash;upozornění<br />![Nová ikona vlastnost](../../extensibility/ux-guidelines/media/vld_c_property_newproperty.png "VLD_C_Property_NewProperty")<br />Nové vlastnosti ||
-  
-###  <a name="BKMK_VLDConceptsQ"></a> Q  
-  
+
+###  <a name="BKMK_VLDConceptsQ"></a> Q
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Dotaz** | ![Ikona dotazu](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![Edit query icon](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />Upravit dotaz<br />![Query extender icon](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />Rozšiřující objekt dotazu<br />![Ikona rychlý dotaz](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />Rychlý dotaz ||
-  
-###  <a name="BKMK_VLDConceptsR"></a> R  
-  
+
+###  <a name="BKMK_VLDConceptsR"></a> R
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Záznam** | ![Ikona záznam](../../extensibility/ux-guidelines/media/vld_c_record.png "VLD_C_Record") | ![Záznam obrazovky ikonu](../../extensibility/ux-guidelines/media/vld_c_record_recordscreen.png "VLD_C_Record_RecordScreen")<br />Záznam obrazovky<br />![Přejděte na ikonu relace zaznamenaného testu](../../extensibility/ux-guidelines/media/vld_c_record_gotorecordedtestsession.png "VLD_C_Record_GoToRecordedTestSession")<br />Přejít na zaznamenané testovací relace ||
@@ -301,9 +301,9 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Sestavy** | ![Ikona sestavy](../../extensibility/ux-guidelines/media/vld_c_report.png "VLD_C_Report") | ![Ikona sestavy dialogového okna souboru](../../extensibility/ux-guidelines/media/vld_c_report_filedialogreport.png "VLD_C_Report_FileDialogReport")<br />Sestava dialogového okna souboru<br />![Ikona sestavy výkonu služby WMI](../../extensibility/ux-guidelines/media/vld_c_report_instrumentationperformancereport.png "VLD_C_Report_InstrumentationPerformanceReport")<br />Sestava výkonu instrumentace<br />![Ikona sestavy projektu průvodce](../../extensibility/ux-guidelines/media/vld_c_report_reportprojectwizard.png "VLD_C_Report_ReportProjectWizard")<br />Průvodce projektem sestavy ||
 | **Pravidlo** | ![Ikona pravidlo](../../extensibility/ux-guidelines/media/vld_c_rule.png "VLD_C_Rule") | ![Nová ikona pravidlo extrakce](../../extensibility/ux-guidelines/media/vld_c_rule_newextractionrule.png "VLD_C_Rule_NewExtractionRule")<br />Nové pravidlo pro extrakci<br />![Nové pravidlo ikonu mezní hodnoty](../../extensibility/ux-guidelines/media/vld_c_rule_newthresholdrule.png "VLD_C_Rule_NewThresholdRule")<br />Nové pravidlo mezní hodnoty<br />![Nová ikona pravidla ověřování](../../extensibility/ux-guidelines/media/vld_c_rule_newvalidationrule.png "VLD_C_Rule_NewValidationRule")<br />Nové ověřovací pravidlo ||
 | **Pravítko**<br />Míry, Průvodce | ![Ikona pravítka](../../extensibility/ux-guidelines/media/vld_c_ruler.png "VLD_C_Ruler") | ![Režim míry na ikonu](../../extensibility/ux-guidelines/media/vld_c_ruler_measuremodeon.png "VLD_C_Ruler_MeasureModeOn")<br />Režim míry<br />![Jednotky měření ikony](../../extensibility/ux-guidelines/media/vld_c_ruler_unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure")<br />Měrné jednotky ||
-  
-###  <a name="BKMK_VLDConceptsS"></a> S  
-  
+
+###  <a name="BKMK_VLDConceptsS"></a> S
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Uložit** | ![Ikonu Uložit](../../extensibility/ux-guidelines/media/vld_c_save.png "VLD_C_Save") | ![Uložit všechny ikony](../../extensibility/ux-guidelines/media/vld_c_save_saveall.png "VLD_C_Save_SaveAll")<br />Uložit vše<br />![Uložte a zavřete ikonu](../../extensibility/ux-guidelines/media/vld_c_save_saveandclose.png "VLD_C_Save_SaveAndClose")<br />Uložit a zavřít<br />![Uložte soubor ikonu ovládacího prvku dialogu](../../extensibility/ux-guidelines/media/vld_c_save_savefiledialogcontrol.png "VLD_C_Save_SaveFileDialogControl")<br />Uložit ovládací prvek dialogového okna souboru ||
@@ -322,8 +322,8 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Struktura**<br />Struktura | ![Struktura &#40;struktura&#41; ikonu](../../extensibility/ux-guidelines/media/vld_c_structure.png "VLD_C_Structure") |||
 | **Šablona stylů** | ![Ikona list stylu](../../extensibility/ux-guidelines/media/vld_c_stylesheet.png "VLD_C_StyleSheet") | ![Ikona nový styl listu](../../extensibility/ux-guidelines/media/vld_c_stylesheet_newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet")<br />Nová šablona stylů<br />![Připojit ikonu list stylu](../../extensibility/ux-guidelines/media/vld_c_stylesheet_attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet")<br />Připojit šablony stylů ||
 | **Synchronizovat**<br />Aktualizace | ![Synchronizovat ikonu](../../extensibility/ux-guidelines/media/vld_c_synchronize.png "VLD_C_Synchronize") | ![Ikona aktualizace JavaScript](../../extensibility/ux-guidelines/media/vld_c_synchronize_updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript")<br />Aktualizované jazyka JavaScript<br />![Ikona položky aktualizovat databázi](../../extensibility/ux-guidelines/media/vld_c_synchronize_databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems")<br />Aktualizovat databázi položky<br />![Ikony synchronizovat](../../extensibility/ux-guidelines/media/vld_c_synchronize_sync.png "VLD_C_Synchronize_Sync")<br />Synchronizace ||
-  
-###  <a name="BKMK_VLDConceptsT"></a> T  
+
+###  <a name="BKMK_VLDConceptsT"></a> T
 
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
@@ -338,18 +338,18 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Timer** | ![Ikona časovače](../../extensibility/ux-guidelines/media/vld_c_timer.png "VLD_C_Timer") | ![Čas dokončení ikonu](../../extensibility/ux-guidelines/media/vld_c_timer_timefinish.png "VLD_C_Timer_TimeFinish")<br />Čas dokončení<br />![Time start icon](../../extensibility/ux-guidelines/media/vld_c_timer_timestart.png "VLD_C_Timer_TimeStart")<br />Počáteční čas ||
 | **Přepínací tlačítko** | ![Ikona přepnutí](../../extensibility/ux-guidelines/media/vld_c_toggle.png "VLD_C_Toggle") | ![Přepnout všechny zarážky ikonu](../../extensibility/ux-guidelines/media/vld_c_toggle_toggleallbreakpoints.png "VLD_C_Toggle_ToggleAllBreakpoints")<br />Přepnout všechny zarážky<br />![Toggle icon](../../extensibility/ux-guidelines/media/vld_c_toggle_toggle.png "VLD_C_Toggle_Toggle")<br />Přepnout ||
 | **Panel nástrojů** | ![Panel nástrojů ikonu](../../extensibility/ux-guidelines/media/vld_c_toolbox.png "VLD_C_Toolbox") | ![Formuláře Windows ikonu ovládacího prvku panel nástrojů](../../extensibility/ux-guidelines/media/vld_c_toolbox_winformtoolboxcontrol.png "VLD_C_Toolbox_WinformToolboxControl")<br />Formuláře Windows ovládacího prvku panelu nástrojů<br />![Ikona ovládacího prvku panel nástrojů WPF](../../extensibility/ux-guidelines/media/vld_c_toolbox_wpftoolboxcontrol.png "VLD_C_Toolbox_WPFToolboxControl")<br />Ovládací prvek panelu nástrojů WPF ||
-  
-###  <a name="BKMK_VLDConceptsU"></a> U  
-  
+
+###  <a name="BKMK_VLDConceptsU"></a> U
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Vrácení zpět**<br />Vrátit zpět, obnovení | ![Ikona zpět](../../extensibility/ux-guidelines/media/vld_c_undo.png "VLD_C_Undo") | ![Image restore icon](../../extensibility/ux-guidelines/media/vld_c_undo_imagerestore.png "VLD_C_Undo_ImageRestore")<br />Obnovení bitové kopie<br />![Vrátit zpět rezervaci položky ikonu](../../extensibility/ux-guidelines/media/vld_c_undo_undocheckoutitem.png "VLD_C_Undo_UndoCheckOutItem")<br />Vrátit zpět rezervaci položek ||
 | **Nahoru**<br />Odeslat | ![Až ikonu](../../extensibility/ux-guidelines/media/vld_c_up.png "VLD_C_Up") | ![Soubor nahrát parametr ikonu](../../extensibility/ux-guidelines/media/vld_c_up_fileuploadparameter.png "VLD_C_Up_FileUploadParameter")<br />Parametr nahraného souboru<br />![O úroveň výš ikonu](../../extensibility/ux-guidelines/media/vld_c_up_onelevelup.png "VLD_C_Up_OneLevelUp")<br />O úroveň výš ||
 | **User**<br />Role, profil | ![Ikona uživatelského](../../extensibility/ux-guidelines/media/vld_c_user.png "VLD_C_User") | ![Add user icon](../../extensibility/ux-guidelines/media/vld_c_user_adduser.png "VLD_C_User_AddUser")<br />Přidat uživatele<br />![Přidat ikonu ovládacího prvku uživatelské web](../../extensibility/ux-guidelines/media/vld_c_user_addwebusercontrol.png "VLD_C_User_AddWebUserControl")<br />Přidat webový uživatelský ovládací prvek<br />![Uživatel SQL&#45;definované typy ikonu](../../extensibility/ux-guidelines/media/vld_c_user_sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType")<br />Uživatelem definované typy SQL ||
 | **Uživatelské rozhraní**<br />Uživatelské rozhraní | ![Ikona uživatelského rozhraní](../../extensibility/ux-guidelines/media/vld_c_userinterface.png "VLD_C_UserInterface") |||
-  
-###  <a name="BKMK_VLDConceptsV"></a> V  
-  
+
+###  <a name="BKMK_VLDConceptsV"></a> V
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Proměnné (místní)** | ![Proměnné &#40;místní&#41; ikonu](../../extensibility/ux-guidelines/media/vld_c_variable_local.png "VLD_C_Variable_local") | ![New variable icon](../../extensibility/ux-guidelines/media/vld_c_variable_local_newvariable.png "VLD_C_Variable_local_NewVariable")<br />Nové proměnné<br />![Proměnné &#40;místní&#41; ikonu](../../extensibility/ux-guidelines/media/vld_c_variable_local_localvariable.png "VLD_C_Variable_local_LocalVariable")<br />Lokální proměnná<br />![SQL variable icon](../../extensibility/ux-guidelines/media/vld_c_variable_local_sqlvariable.png "VLD_C_Variable_local_SQLVariable")<br />Proměnná SQL ||
@@ -358,33 +358,33 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Zobrazení**<br />Auditování | ![Zobrazení &#40;auditu&#41; ikonu](../../extensibility/ux-guidelines/media/vld_c_view_audit.png "VLD_C_View_audit") | ![Resource view icon](../../extensibility/ux-guidelines/media/vld_c_view_audit_resourceview.png "VLD_C_View_audit_ResourceView")<br />Zobrazení prostředků<br />![View in browser icon](../../extensibility/ux-guidelines/media/vld_c_view_audit_viewinbrowser.png "VLD_C_View_audit_ViewInBrowser")<br />Zobrazit v prohlížeči<br />![X&#45;ray view icon](../../extensibility/ux-guidelines/media/vld_c_view_audit_xrayview.png "VLD_C_View_audit_XRayView")<br />X-Ray zobrazení ||
 | **Virtual**<br />*Stejné jako "Nonsubstantive (skrytý nebo šablony)"* | ![Virtuální ikonu](../../extensibility/ux-guidelines/media/vld_c_virtual.png "VLD_C_Virtual") | ![Ikona virtuálního prostředí](../../extensibility/ux-guidelines/media/vld_c_virtual_virtualenvironment.png "VLD_C_Virtual_VirtualEnvironment")<br />Virtuální prostředí ||
 | **Viditelné** | ![Ikon](../../extensibility/ux-guidelines/media/vld_c_visible.png "VLD_C_Visible") | ![Skrytí nebo skrýt ikony](../../extensibility/ux-guidelines/media/vld_c_visible_cloakorhide.png "VLD_C_Visible_CloakOrHide")<br />Skrytí nebo skrýt ||
-  
-###  <a name="BKMK_VLDConceptsW"></a> W  
-  
+
+###  <a name="BKMK_VLDConceptsW"></a> W
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Sledování** | ![Ikona sledování](../../extensibility/ux-guidelines/media/vld_c_watch.png "VLD_C_Watch") | ![Ikona sledovacího procesu systému souboru](../../extensibility/ux-guidelines/media/vld_c_watch_filesystemwatcher.png "VLD_C_Watch_FileSystemWatcher")<br />Sledovací proces systému souborů ||
 | **Web** | ![Ikona webové](../../extensibility/ux-guidelines/media/vld_c_web.png "VLD_C_Web") | ![Publikování na web ikonu](../../extensibility/ux-guidelines/media/vld_c_web_publishtoweb.png "VLD_C_Web_PublishToWeb")<br />Publikování na webu<br />![Webové nastavení Ikona Stáhnout](../../extensibility/ux-guidelines/media/vld_c_web_downloadwebsettings.png "VLD_C_Web_DownloadWebSettings")<br />Stažení nastavení webu<br />![Nová ikona webu](../../extensibility/ux-guidelines/media/vld_c_web_newwebsite.png "VLD_C_Web_NewWebsite")<br />Nový web ||
 | **Průvodce** | ![Ikona průvodce](../../extensibility/ux-guidelines/media/vld_c_wizard.png "VLD_C_Wizard") | ![Ikona Průvodce vrstvy mapy](../../extensibility/ux-guidelines/media/vld_c_wizard_maplayerwizard.png "VLD_C_Wizard_MapLayerWizard")<br />Průvodce vrstvou mapy<br />![Ikona průvodce třídy knihovny MFC](../../extensibility/ux-guidelines/media/vld_c_wizard_mfcclasswizard.png "VLD_C_Wizard_MFCCLassWizard")<br />Průvodce třídou MFC<br />![Map wizard icon](../../extensibility/ux-guidelines/media/vld_c_wizard_mapwizard.png "VLD_C_Wizard_MapWizard")<br />Průvodce mapou ||
 | **Pracovní položky** | ![Ikona pracovní položky](../../extensibility/ux-guidelines/media/vld_c_workitem.png "VLD_C_WorkItem") | ![Přejít na pracovní položky ikony](../../extensibility/ux-guidelines/media/vld_c_workitem_gotoworkitem.png "VLD_C_WorkItem_GoToWorkItem")<br />Přejít na pracovní položku<br />![Work item query icon](../../extensibility/ux-guidelines/media/vld_c_workitem_workitemquery.png "VLD_C_WorkItem_WorkItemQuery")<br />Dotaz na pracovní položky ||
-  
-###  <a name="BKMK_VLDConceptsY"></a> Y  
-  
+
+###  <a name="BKMK_VLDConceptsY"></a> Y
+
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **YIELD** | ![YIELD ikonu](../../extensibility/ux-guidelines/media/vld_c_yield.png "VLD_C_Yield") |||
-  
-###  <a name="BKMK_VLDConceptsZ"></a> Z  
+
+###  <a name="BKMK_VLDConceptsZ"></a> Z
 
 | Koncept | Hlavní ikona | Další příklady | Poznámky |
 | --- | --- | --- | --- |
 | **Přiblížení** | ![Ikona přiblížení](../../extensibility/ux-guidelines/media/vld_c_zoom.png "VLD_C_Zoom") | ![Ikona přiblížení](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomin.png "VLD_C_Zoom_ZoomIn")<br />Přiblížit<br />![Horizonální oddálení ikonu](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomout.png "VLD_C_Zoom_ZoomOut")<br />Oddálit ||
-  
-##  <a name="BKMK_VLDProducts"></a> Platformy a produkty  
-  
+
+##  <a name="BKMK_VLDProducts"></a> Platformy a produkty
+
 | Koncept | Hlavní ikona | Další příklady |
 | --- | --- | --- |
-| **App Insights** | ![App Insights ikonu](../../extensibility/ux-guidelines/media/vld_p_appinsights.png "VLD_P_AppInsights") ||  
+| **App Insights** | ![App Insights ikonu](../../extensibility/ux-guidelines/media/vld_p_appinsights.png "VLD_P_AppInsights") ||
 | **ATL** | ![ATL – ikona](../../extensibility/ux-guidelines/media/vld_p_atl.png "VLD_P_ATL") | ![ATL active server stránky komponenty ikonu](../../extensibility/ux-guidelines/media/vld_p_atl_atlactiveserverpagecomponent.png "VLD_P_ATL_ATLActiveServerPageComponent")<br />Komponenta knihovny ATL pro stránky ASP<br />![Ikona třídy ovládacího prvku ATL](../../extensibility/ux-guidelines/media/vld_p_atl_atlcontrolclass.png "VLD_P_ATL_ATLControlClass")<br />Třída ovládacích prvků ATL<br />![Ikona serveru ATL](../../extensibility/ux-guidelines/media/vld_p_atl_atlserver.png "VLD_P_ATL_ATLServer")<br />Server knihovny ATL |
 | **Blend** | ![Ikona blendu](../../extensibility/ux-guidelines/media/vld_p_blend.png "VLD_P_Blend") | ![Ikona aplikace Blend SketchFlow](../../extensibility/ux-guidelines/media/vld_p_blend_blendsketchflowapplication.png "VLD_P_Blend_BlendSketchFlowApplication")<br />Aplikace Blend SketchFlow<br />![Ikona aplikace Windows Phone blendu](../../extensibility/ux-guidelines/media/vld_p_blend_blendwindowsphoneapplication.png "VLD_P_Blend_BlendWindowsPhoneApplication")<br />Blend aplikace Windows Phone<br />![Blend aplikace Windows Phone pivot](../../extensibility/ux-guidelines/media/vld_p_blend_blendwindowsphonepivotapplication.png "VLD_P_Blend_BlendWindowsPhonePivotApplication")<br />Blend pivot aplikace Windows Phone |
 | **CoffeeScript** | ![Ikona CoffeeScript](../../extensibility/ux-guidelines/media/vld_p_coffeescript.png "VLD_P_CoffeeScript") ||
@@ -395,9 +395,9 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Microsoft Foundation Class**<br />MFC | ![Ikona MFC](../../extensibility/ux-guidelines/media/vld_p_mfc.png "VLD_P_MFC") | ![Ikona projektu ovládacího prvku ActiveX knihovny MFC](../../extensibility/ux-guidelines/media/vld_p_mfc_mfcactivexcontrolproject.png "VLD_P_MFC_MFCActiveXControlProject")<br />Projekt ovládací prvek ActiveX knihovny MFC<br />![Ikona projekt aplikace knihovny MFC](../../extensibility/ux-guidelines/media/vld_p_mfc_mfcapplicationproject.png "VLD_P_MFC_MFCApplicationProject")<br />Projekt aplikace knihovny MFC<br />![C&#43; &#43; ikonu projektu knihovny MFC DLL](../../extensibility/ux-guidelines/media/vld_p_mfc_cppmfcdllproject.png "VLD_P_MFC_CPPMFCDLLProject")<br />Projekt knihovny MFC C++ |
 | **WCF** | ![Ikona WCF](../../extensibility/ux-guidelines/media/vld_p_wcf.png "VLD_P_WCF") | ![WCF data services icon](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfdataservices.png "VLD_P_WCF_WCFDataServices")<br />Datové služby WCF<br />![WCF project F&#35; icon](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectfs.png "VLD_P_WCF_WCFProjectFS")<br />Projekt WCFF#<br />![WCF project VB icon](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectvb.png "VLD_P_WCF_WCFProjectVB")<br />WCF projektu jazyka Visual Basic |
 | **WF** | ![Ikona WF](../../extensibility/ux-guidelines/media/vld_p_wf.png "VLD_P_WF") | ![WF project C&#35; icon](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectcs.png "VLD_P_WF_WFProjectCS")<br />Projekt pracovního postupu C#<br />![WF project VB icon](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectvb.png "VLD_P_WF_WFProjectVB")<br />WF projektu jazyka Visual Basic |
-  
-##  <a name="BKMK_VLDArrows"></a> Běžné koncepty pomocí šipky  
-  
+
+##  <a name="BKMK_VLDArrows"></a> Běžné koncepty pomocí šipky
+
 | Koncept | Hlavní ikona | Další příklady |
 | --- | --- | --- | --- |
 | **Asociační čára** | ![Ikona čáry přidružení](../../extensibility/ux-guidelines/media/vld_a_associationline.png "VLD_A_AssociationLine") ||
@@ -437,9 +437,9 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 | **Synchronizace** | ![Ikony synchronizovat](../../extensibility/ux-guidelines/media/vld_a_sync.png "VLD_A_Sync") | ![Sync contents icon](../../extensibility/ux-guidelines/media/vld_a_sync_synccontents.png "VLD_A_Sync_SyncContents")<br />Synchronizace obsahu |
 | **Vrácení zpět**<br />Vrátit zpět, obnovení | ![Ikona zpět](../../extensibility/ux-guidelines/media/vld_a_undo.png "VLD_A_Undo") | ![Image restore icon](../../extensibility/ux-guidelines/media/vld_a_undo_imagerestore.png "VLD_A_Undo_ImageRestore")<br />Obnovení bitové kopie<br />![Uncomment icon](../../extensibility/ux-guidelines/media/vld_a_undo_uncomment.png "VLD_A_Undo_Uncomment")<br />zrušení komentáře |
 | **Nahoru**<br />Odeslat | ![Až ikonu](../../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up") | ![Soubor nahrát parametr ikonu](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />Parametr nahraného souboru<br />![O úroveň výš ikonu](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />O úroveň výš |
-  
-##  <a name="BKMK_VLDStatus"></a> Indikátory stavu  
-  
+
+##  <a name="BKMK_VLDStatus"></a> Indikátory stavu
+
 | Koncept | Hlavní ikona | Další příklady |
 | --- | --- | --- |
 | **Stav akce: pozastavená** | ![Stav akce: pozastaveno ikonu](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![Server je pozastaven ikonu](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />Server pozastaven |

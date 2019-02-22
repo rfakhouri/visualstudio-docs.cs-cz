@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db8230c393ad18d72ff4d4d186d916c0e938996d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978578"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641075"
 ---
 # <a name="understand-sampling-data-values"></a>Vysvětlení hodnotám dat vzorkování
 
@@ -51,5 +51,5 @@ Procento z celkového počtu výhradních vzorků při spuštění profilace, kt
 
 ## <a name="see-also"></a>Viz také:
 
-[Postupy: Výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)  
-[Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)
+[Postupy: Výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)
+[dat nástrojů pro analýzy výkonu](../profiling/analyzing-performance-tools-data.md)

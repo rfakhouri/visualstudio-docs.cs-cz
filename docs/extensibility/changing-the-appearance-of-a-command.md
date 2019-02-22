@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317078"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691342"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Změna vzhledu příkazu
 Změnou vzhledu příkazu můžete poskytnou zpětnou vazbu uživatelů. Například můžete příkazu, který bude vypadat jinak, pokud není k dispozici. Můžete provést příkazy k dispozici nebo není k dispozici, skrýt nebo zobrazit, nebo zaškrtněte nebo zrušte jejich zaškrtnutí v nabídce.
@@ -85,7 +85,7 @@ Změna vzhledu příkazu, proveďte jednu z těchto akcí:
 8. Na **nástroje** nabídky, měli byste vidět **nový Text**. Klikněte na tlačítko **nový Text**. Příkaz by měl nyní být zobrazena šedě.
 
 ## <a name="see-also"></a>Viz také:
-[Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)  
-[Visual Studio tabulky příkazů (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)
+- [Visual Studio tabulky příkazů (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

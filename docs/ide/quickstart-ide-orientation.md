@@ -1,19 +1,19 @@
 ---
 title: Prohlídka integrovaného vývojového prostředí sady Visual Studio
 titleSuffix: ''
-ms.date: 07/12/2018
+ms.date: 02/21/2019
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e847829877328cff1a244eae4cd5d29616c7a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955827"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712525"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: První seznámení s integrovaným vývojovým prostředím sady Visual Studio
 
@@ -78,6 +78,8 @@ Vytvořme projektu zobrazíte některé výstup sestavení. Z **sestavení** nab
 ## <a name="quick-launch"></a>Snadné spuštění
 
 **Snadné spuštění** pole je rychlý a snadný způsob, jak to je mnohem nic v sadě Visual Studio. Můžete zadat nějaký text související s co chcete udělat, a ho budete zobrazit seznam možností, které se vztahují na text. Představte si například, že chcete zvýšit úroveň podrobností výstupu sestavení zobrazíte další podrobnosti o tom, co přesně sestavení dělá. Zde je, jak vám může provést:
+
+1. Vyhledejte **Snadné spuštění** pole v pravém horním rohu integrovaného vývojového prostředí. (Nebo stisknout **Ctrl**+**Q** k němu přistupovat.)
 
 1. Typ **podrobností** do **Snadné spuštění** pole. V zobrazené výsledky, zvolte **projekty a řešení--> sestavení a spuštění** pod **možnosti** kategorie.
 
