@@ -17,24 +17,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb24a4bf5b3625255ea9503c2ce88bb64b28ef4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037065"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716256"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Okno Výstup, ladění, dialogové okno Možnosti
 Můžete určit typy ladicích informací zobrazovaných v **výstup** okna. Chcete-li zobrazit tyto možnosti, otevřete **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **ladění** uzel a klikněte na tlačítko **okno výstup**.
 
-**Obecné nastavení výstupní** Tato kategorie obsahuje ovládací prvky, které určují, zda zobrazit zprávy obecné ladění **výstup** okna. Můžete určit, zda se zobrazí každý typ zprávy.  
+**Obecné nastavení výstupní** Tato kategorie obsahuje ovládací prvky, které určují, zda zobrazit zprávy obecné ladění **výstup** okna. Můžete určit, zda se zobrazí každý typ zprávy.
 
 **Nastavení trasování WPF** obsahuje ovládací prvky, které určují úroveň WPF trasovací zprávy, které se zobrazují v této kategorii **výstup** okna. Můžete určit, zda každý typ zprávy se zobrazí a zadejte úroveň od **kritický** k **všechny**.
 
 Další informace najdete v tématu [jak: Zobrazení informací trasování WPF](../debugger/how-to-display-wpf-trace-information.md).
 
 Pokud potřebujete obnovit výchozí nastavení, můžete to, že při použití **nástroje** > **nastavení importu a exportu** > **obnovit všechna nastavení**. Pokud chcete obnovit podmnožinu nastavení, nastavení v uložte **Průvodce importem a exportem nastavení** před prováděním změn, které chcete testovat, pak naimportujte uložená nastavení později.
-  
+
 ## <a name="see-also"></a>Viz také:
-[Ladění, dialogové okno Možnosti](../debugger/debugging-options-dialog-box.md)   
-[Okno Výstup](../ide/reference/output-window.md)
+- [Ladění, dialogové okno Možnosti](../debugger/debugging-options-dialog-box.md)
+- [Okno Výstup](../ide/reference/output-window.md)

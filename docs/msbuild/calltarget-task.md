@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ad6261dba80e56ab44f43b4c70df79d63bb509
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6594620051675f2c0ce6e06ca098d26e443f624b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001628"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617233"
 ---
 # <a name="calltarget-task"></a>CallTarget – úloha
-Vyvolá zadané cílů v rámci souboru projektu.  
+Vyvolá zadané cílů v rámci souboru projektu.
 
-## <a name="task-parameters"></a>Parametry úlohy  
- Následující tabulka popisuje parametry `CallTarget` úloh.  
+## <a name="task-parameters"></a>Parametry úlohy
+ Následující tabulka popisuje parametry `CallTarget` úloh.
 
 
 | Parametr | Popis |
@@ -37,31 +37,31 @@ Vyvolá zadané cílů v rámci souboru projektu.
 | `Targets` | Volitelné `String[]` parametru.<br /><br /> Určuje cíl nebo cíle sestavení. |
 | `UseResultsCache` | Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, výsledky uložené v mezipaměti je vrácena, pokud jsou k dispozici.<br /><br /> **Poznámka:** při MSBuild – úloha běží, výstup se uloží do mezipaměti v oboru (ProjectFileName, GlobalProperties) [TargetNames] jako seznam položek sestavení. |
 
-## <a name="remarks"></a>Poznámky  
- Pokud zadaný cíl v `Targets` selže a `RunEachTargetSeparately` je `true`, úloha pokračuje na zbývající cíle sestavení.  
+## <a name="remarks"></a>Poznámky
+ Pokud zadaný cíl v `Targets` selže a `RunEachTargetSeparately` je `true`, úloha pokračuje na zbývající cíle sestavení.
 
- Pokud chcete k sestavení výchozích cílů, použijte [úlohy nástroje MSBuild](../msbuild/msbuild-task.md) a nastavit `Projects` parametr roven `$(MSBuildProjectFile)`.  
+ Pokud chcete k sestavení výchozích cílů, použijte [úlohy nástroje MSBuild](../msbuild/msbuild-task.md) a nastavit `Projects` parametr roven `$(MSBuildProjectFile)`.
 
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Příklad  
- Následující příklad volá `TargetA` z uvnitř `CallOtherTargets`.  
+## <a name="example"></a>Příklad
+ Následující příklad volá `TargetA` z uvnitř `CallOtherTargets`.
 
-```xml  
-<Project DefaultTargets="CallOtherTargets"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="CallOtherTargets"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <Target Name="CallOtherTargets">  
-        <CallTarget Targets="TargetA"/>  
-    </Target>  
+    <Target Name="CallOtherTargets">
+        <CallTarget Targets="TargetA"/>
+    </Target>
 
-    <Target Name="TargetA">  
-        <Message Text="Building TargetA..." />  
-    </Target>  
+    <Target Name="TargetA">
+        <Message Text="Building TargetA..." />
+    </Target>
 
-</Project>  
-```  
+</Project>
+```
 
-## <a name="see-also"></a>Viz také:  
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Cíle](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>Viz také:
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Cíle](../msbuild/msbuild-targets.md)

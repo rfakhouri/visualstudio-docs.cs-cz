@@ -25,59 +25,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd628869d8a642cc6debad726f6c82df71a3b1ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0425929908f17b33de71a49b03ae8de729f28309
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014025"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681892"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>V okně moduly zobrazení knihovny DLL a spustitelné soubory (C#, C++, Visual Basic, F#)
- 
-Během ladění sady Visual Studio **moduly** okno obsahuje seznam a zobrazuje informace o knihovnách DLL a spustitelné soubory (*.exe* soubory) vaše aplikace používá. 
+
+Během ladění sady Visual Studio **moduly** okno obsahuje seznam a zobrazuje informace o knihovnách DLL a spustitelné soubory (*.exe* soubory) vaše aplikace používá.
 
 > [!NOTE]
-> Okno modulů není k dispozici pro SQL nebo ladění skriptů. 
-  
+> Okno modulů není k dispozici pro SQL nebo ladění skriptů.
+
 ## <a name="use-the-modules-window"></a>Použití okna moduly
 
-Chcete-li otevřít okno moduly během ladění, vyberte **ladění** > **Windows** > **moduly** (nebo stiskněte klávesu **Ctrl + Alt + U** ). 
-  
-Ve výchozím nastavení **moduly** okno seřadí podle pořadí načítání modulů. Seřadit podle kteréhokoli sloupce okno, vyberte záhlaví v horní části sloupce.  
-  
-## <a name="load-symbols"></a>Načtení symbolů  
+Chcete-li otevřít okno moduly během ladění, vyberte **ladění** > **Windows** > **moduly** (nebo stiskněte klávesu **Ctrl + Alt + U** ).
+
+Ve výchozím nastavení **moduly** okno seřadí podle pořadí načítání modulů. Seřadit podle kteréhokoli sloupce okno, vyberte záhlaví v horní části sloupce.
+
+## <a name="load-symbols"></a>Načtení symbolů
 
 **Status symbolu** sloupec **moduly** okno zobrazuje, které moduly mají načíst symboly ladění. Pokud je stav **bylo vynecháno načítání symbolů**, **nejde najít nebo otevřít soubor PDB**, nebo **nastavení zahrnutí a vyloučení zakázalo načtení**, můžete ručně načíst symboly. Další informace o načtení a použití symboly, naleznete v tématu [zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-**Načtení symbolů ručně:**  
+**Načtení symbolů ručně:**
 
-1. V **moduly** okna, klikněte pravým tlačítkem na modul pro symboly, které nebyly načteny. 
-   
-   - Vyberte **načíst informace o symbolech** podrobnosti o tom, proč se nenačetla symboly. 
-   
-   - Vyberte **načíst symboly** ručně načíst symboly.  
-   
-1. Pokud není načíst symboly, vyberte **nastavení symbolu** otevřít **možnosti** dialogového okna a zadejte nebo změňte umístění pro načítání symbolů. 
-   
-   Můžete stáhnout symboly z veřejné symbolové servery společnosti Microsoft nebo jiné servery nebo načíst symboly ze složky v počítači. Podrobnosti najdete v tématu [zadejte umístění symbolu a chování načítání](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior).   
+1. V **moduly** okna, klikněte pravým tlačítkem na modul pro symboly, které nebyly načteny.
 
-**Chcete-li změnit nastavení chování načítání symbolů:**  
+   - Vyberte **načíst informace o symbolech** podrobnosti o tom, proč se nenačetla symboly.
 
-1. V **moduly** okna, klikněte pravým tlačítkem na jakýkoli modul.  
-   
-1. Vyberte **Symbol nastavení**.  
-  
-1. Vyberte **načtení všech symbolů**, nebo vyberte které moduly chcete zahrnout nebo vyloučit.  
-  
-1. Vyberte **OK**. Změny se projeví v další relace ladění.  
-  
-**Chcete-li změnit chování pro konkrétní modul načítání symbolů:**  
+   - Vyberte **načíst symboly** ručně načíst symboly.
 
-1.  V **moduly** okna, klikněte pravým tlačítkem na modul.  
+1. Pokud není načíst symboly, vyberte **nastavení symbolu** otevřít **možnosti** dialogového okna a zadejte nebo změňte umístění pro načítání symbolů.
 
-1.  V místní nabídce vyberte nebo zrušte výběr **vždy zatížení automaticky**. Změny se projeví v další relace ladění.  
-  
-## <a name="see-also"></a>Viz také:  
- [Pozastavení provádění](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
- [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)   
- [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+   Můžete stáhnout symboly z veřejné symbolové servery společnosti Microsoft nebo jiné servery nebo načíst symboly ze složky v počítači. Podrobnosti najdete v tématu [zadejte umístění symbolu a chování načítání](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior).
+
+**Chcete-li změnit nastavení chování načítání symbolů:**
+
+1. V **moduly** okna, klikněte pravým tlačítkem na jakýkoli modul.
+
+1. Vyberte **Symbol nastavení**.
+
+1. Vyberte **načtení všech symbolů**, nebo vyberte které moduly chcete zahrnout nebo vyloučit.
+
+1. Vyberte **OK**. Změny se projeví v další relace ladění.
+
+**Chcete-li změnit chování pro konkrétní modul načítání symbolů:**
+
+1.  V **moduly** okna, klikněte pravým tlačítkem na modul.
+
+1.  V místní nabídce vyberte nebo zrušte výběr **vždy zatížení automaticky**. Změny se projeví v další relace ladění.
+
+## <a name="see-also"></a>Viz také:
+- [Pozastavení provádění](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))
+- [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)
+- [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

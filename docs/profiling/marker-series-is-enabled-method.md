@@ -12,39 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a74a1d35128eb61c08d44fc430305a9ba7756c0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22a7baa08a29cd77506e48762179118b3bbb2d1a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936534"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639931"
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled – metoda
-Určuje, zda všechny relace má povoleno zprostředkovatele.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-bool is_enabled();  
-bool is_enabled(  
-   marker_importance _Importance,  
-   int _Category  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `_Importance`  
- Úroveň důležitosti.  
-  
- `_Category`  
- Kategorie.  
-  
-## <a name="return-value"></a>Návratová hodnota  
-  
-## <a name="requirements"></a>Požadavky  
- **Záhlaví:** *cvmarkersobj.h*  
-  
- **Namespace:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Viz také:  
- [marker_series – třída](../profiling/marker-series-class.md)
+Určuje, zda všechny relace má povoleno zprostředkovatele.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+bool is_enabled();
+bool is_enabled(
+   marker_importance _Importance,
+   int _Category
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `_Importance` Úroveň důležitosti.
+
+ `_Category` Kategorie.
+
+## <a name="return-value"></a>Návratová hodnota
+
+## <a name="requirements"></a>Požadavky
+ **Záhlaví:** *cvmarkersobj.h*
+
+ **Namespace:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Viz také:
+- [marker_series – třída](../profiling/marker-series-class.md)

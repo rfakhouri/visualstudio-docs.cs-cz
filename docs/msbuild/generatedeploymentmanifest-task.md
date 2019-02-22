@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afbee1d4f0aee1dbf752ca241521ee121d00975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937493"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610317"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest – úloha
 
@@ -67,7 +67,7 @@ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Micro
 
 ## <a name="see-also"></a>Viz také:
 
-[Úlohy](../msbuild/msbuild-tasks.md)  
-[Generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md)  
-[Signfile – úloha](../msbuild/signfile-task.md)  
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md)
+- [Signfile – úloha](../msbuild/signfile-task.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

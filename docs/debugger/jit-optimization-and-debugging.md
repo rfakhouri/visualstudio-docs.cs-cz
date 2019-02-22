@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8699c468a3bf5f9c72131add984055f08f23c7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959288"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699142"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimalizace a ladění JIT
 **Optimalizace jak fungují v rozhraní .NET:** Pokud se pokoušíte ladit kód, je jednodušší při, že kód je **není** optimalizované. Je to proto, když je kód zoptimalizovaný, kompilovacími a běhovými provést změny emitovaný kód procesoru tak, že běží rychleji, ale je méně přímé mapování na původní zdrojový kód. To znamená, že ladicí programy jsou často nelze zjistit hodnotu místní proměnné a kódu, krokování a zarážky nemusí fungovat podle očekávání.
@@ -46,8 +46,8 @@ Pokud vás zajímá pouze při ladění kódu, který vytvářejí místně, je 
 1. V situacích, kde jsou k již běžícímu procesu připojování ladicího programu Tato možnost nebude mít žádný vliv na moduly, které již byly zavedeny v době, kdy byl připojen ladicí program.
 2. Tato možnost nemá žádný vliv na knihovny DLL, které byly předem zkompilované (známé jako ngen'ed) do nativního kódu. Však můžete zakázat použití předkompilovaný kód, že spuštění procesu prostředí, proměnné 'COMPlus_ZapDisable' nastavena na hodnotu '1'.
 
-## <a name="see-also"></a>Viz také  
- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
- [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)   
- [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Proces spravovaného spuštění](/dotnet/standard/managed-execution-process)
+## <a name="see-also"></a>Viz také
+- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)
+- [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)
+- [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Proces spravovaného spuštění](/dotnet/standard/managed-execution-process)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e31e34c634965dc00a5d8c806759ec82cf78d014
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863978"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604571"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Průvodce: Vytvoření webové části pro SharePoint
 
@@ -216,7 +216,7 @@ Zobrazení a skrytí zaměstnance, kteří nejsou správci kliknutím na položk
 
 ## <a name="see-also"></a>Viz také:
 
-[Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Postupy: Vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Postupy: Vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[jak: Vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[jak: Vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
+[názorný postup: Vytvoření webové části pro službu SharePoint pomocí návrháře](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

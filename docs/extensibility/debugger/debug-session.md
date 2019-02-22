@@ -10,20 +10,20 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97c43a440eee4aa6ebe5e51a53c4aa2da13111a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 344b8d7af2a89b8a39a1a6686a92f8ea2f4fd573
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959629"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710861"
 ---
 # <a name="debug-session"></a>Ladicí relace
-Z hlediska architektury ladicího programu *relace*:  
-  
--   Je sada všechny procesy, související nebo nepříbuzné, spustit nebo připojit z jedné instance rozhraní IDE.  
-  
--   Je implementováno správce ladění relace (SDM). Další informace najdete v tématu [správce ladění relace](../../extensibility/debugger/session-debug-manager.md).  
-  
-## <a name="see-also"></a>Viz také:  
- [Správce ladění relace](../../extensibility/debugger/session-debug-manager.md)   
- [Koncepty ladicího programu](../../extensibility/debugger/debugger-concepts.md)
+Z hlediska architektury ladicího programu *relace*:
+
+-   Je sada všechny procesy, související nebo nepříbuzné, spustit nebo připojit z jedné instance rozhraní IDE.
+
+-   Je implementováno správce ladění relace (SDM). Další informace najdete v tématu [správce ladění relace](../../extensibility/debugger/session-debug-manager.md).
+
+## <a name="see-also"></a>Viz také:
+- [Správce ladění relace](../../extensibility/debugger/session-debug-manager.md)
+- [Koncepty ladicího programu](../../extensibility/debugger/debugger-concepts.md)
