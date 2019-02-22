@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947618"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605182"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Sada nástrojů MSBuild (atribut ToolsVersion)
 Nástroj MSBuild používá sada nástrojů pro úkoly, cíle a nástrojů k sestavení aplikace. Obvykle obsahuje sada nástrojů MSBuild *microsoft.common.tasks* souboru, *cílů microsoft.common.targets* souboru a kompilátory, jako *csc.exe* a  *Vbc.exe*. Většina nástrojů je možné pro kompilaci aplikací pro více než jednu verzi rozhraní .NET Framework a více než jednu platformu systému. Sada nástrojů MSBuild 2.0 je však možné cílit na rozhraní .NET Framework 2.0.
@@ -116,4 +116,5 @@ Přetížení pro poskytuje nástroj MSBuild `ToolLocationHelper` metody, které
 Dílčí sady nástrojů byla zavedena v rozhraní .NET Framework 4.5.
 
 ## <a name="see-also"></a>Viz také:
- [Standardní a vlastní konfigurace sady nástrojů](../msbuild/standard-and-custom-toolset-configurations.md) [cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
+- [Standardní a vlastní konfigurace sady nástrojů](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)

@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 122a71289fc11e4301476c90e7ed9267cce18681
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cd768220b25ec93ffdb4f038db475304db71333
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014819"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605533"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
-Získá příznak, který určuje, zda funkce byla označena jako nikdy vrátilo [noreturn](/cpp/cpp/noreturn) atribut.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_noReturn(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pFlag  
- [out] Vrátí `TRUE` Pokud funkce byla deklarována jako nikdy vrátilo `noreturn` atribut; v opačném případě vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Získá příznak, který určuje, zda funkce byla označena jako nikdy vrátilo [noreturn](/cpp/cpp/noreturn) atribut.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_noReturn(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pFlag
+
+[out] Vrátí `TRUE` Pokud funkce byla deklarována jako nikdy vrátilo `noreturn` atribut; v opačném případě vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="requirements"></a>Požadavky  
-  
-|Požadavek|Popis|  
-|-----------------|-----------------|  
-|Záhlaví:|dia2.h|  
-|Verze:|Ve verzi 8.0 DIA SDK|  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [noreturn](/cpp/cpp/noreturn)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="requirements"></a>Požadavky
+
+|Požadavek|Popis|
+|-----------------|-----------------|
+|Záhlaví:|dia2.h|
+|Verze:|Ve verzi 8.0 DIA SDK|
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [noreturn](/cpp/cpp/noreturn)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab41ead57671948dcc30a0d3009fad2bfabfa34
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413303"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605401"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby IIS pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -42,7 +42,7 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
     Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
-* Na serveru, musíte používat Windows Server 2012 nebo Windows Server 2016 a musí mít [role webového serveru IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) správně nainstalovaný (vyžadovaných ke generování souboru nastavení publikování (*\*. publishsettings*)). ASP.NET 4.5 nebo ASP.NET Core musí také nainstalovaná na serveru. Nastavení technologie ASP.NET 4.5, naleznete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core, naleznete v tématu [hostitele ASP.NET Core ve Windows se službou IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
+* Na serveru, musíte používat Windows Server 2012 nebo Windows Server 2016 a musí mít [role webového serveru IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) správně nainstalovaný (vyžadovaných ke generování souboru nastavení publikování (*\*. publishsettings*)). ASP.NET 4.5 nebo ASP.NET Core musí také nainstalovaná na serveru. Nastavení technologie ASP.NET 4.5, naleznete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core, naleznete v tématu [hostitele ASP.NET Core ve Windows se službou IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Vytvoření nového projektu ASP.NET v sadě Visual Studio
 

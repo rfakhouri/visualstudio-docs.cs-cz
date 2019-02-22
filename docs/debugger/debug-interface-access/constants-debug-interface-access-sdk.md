@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a120a1610e6ca62ba4c19bb5dd2289628e1d273
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987402"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608575"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Konstanty (Přístup k rozhraní ladění SDK)
 Tyto řetězcové konstanty lze použít k identifikaci různých oddílů sady soubor databáze (PDB) programu ladění prostřednictvím sady DIA SDK.
@@ -56,7 +56,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 Záhlaví: dia2.h
 
 ## <a name="see-also"></a>Viz také
-[Referenční informace](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[Rozhraní (Přístup k rozhraní ladění SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+- [Referenční informace](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [Rozhraní (Přístup k rozhraní ladění SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 021c3ec0115267f83dbc39ba9c7c34b262fa6614
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987376"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605598"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Otevře a připraví soubor databáze (PDB) programu jako zdroj dat ladění.
@@ -31,7 +31,8 @@ HRESULT loadDataFromPdb (
 ```
 
 #### <a name="parameters"></a>Parametry
-pdbPath  
+pdbPath
+
 [in] Cesta k souboru .pdb.
 
 ## <a name="return-value"></a>Návratová hodnota
@@ -64,7 +65,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

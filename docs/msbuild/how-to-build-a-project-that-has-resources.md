@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852837"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610408"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Postupy: Sestavení projektu, který má prostředky
 Pokud vytváříte lokalizované verze projektu, musí se oddělit všechny prvky uživatelského rozhraní do souborů prostředků pro různé jazyky. Pokud projekt používá pouze řetězce, soubory prostředků pomocí textových souborů. Alternativně můžete použít *RESX* soubory jako soubory prostředků.
@@ -77,7 +77,7 @@ Následujícím příkladu projektu obsahuje dvě úlohy: `GenerateResource` úl
 ```
 
 ## <a name="see-also"></a>Viz také:
-[MSBuild](../msbuild/msbuild.md)  
-[Generateresource – úloha](../msbuild/generateresource-task.md)  
-[CSC – úloha](../msbuild/csc-task.md)  
-[Resgen.exe (generátor zdrojových souborů)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [Generateresource – úloha](../msbuild/generateresource-task.md)
+- [CSC – úloha](../msbuild/csc-task.md)
+- [Resgen.exe (generátor zdrojových souborů)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

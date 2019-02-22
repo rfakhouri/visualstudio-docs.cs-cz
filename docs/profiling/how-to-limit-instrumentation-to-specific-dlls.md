@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7d8843fe7e23293b0e95ce6b076d8548362fb50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934835"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597566"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Postupy: Omezení instrumentace na konkrétní knihovny DLL
 
@@ -69,5 +69,5 @@ Pomocí metody profilace instrumentace můžete omezit shromažďování dat pro
 
 ## <a name="see-also"></a>Viz také:
 
-[Řízení shromažďování dat](../profiling/controlling-data-collection.md)  
-[Postupy: Omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Sběr dat řídit](../profiling/controlling-data-collection.md)
+[jak: Omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

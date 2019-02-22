@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0435a6dbe10b3f65c6112a0703137d6ac7f0d958
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cbdb525034016981c1f9030e6bce1f9590c45591
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031458"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607392"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
-Vrátí relativní virtuální adresu (RVA) objektu frame.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT frameByRVA(   
-   DWORD           relativeVirtualAddress,  
-   IDiaFrameData** frame  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- relativeVirtualAddress  
- [in] Adresa RVA rámce, které vás zajímají.  
-  
- rámec  
- [out] Vrátí [idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md) objekt představující rámec, který obsahuje adresu k dispozici.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud neodpovídají žádná data rámec zadané adrese. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Vrátí relativní virtuální adresu (RVA) objektu frame.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT frameByRVA( 
+   DWORD           relativeVirtualAddress,
+   IDiaFrameData** frame
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ relativeVirtualAddress
+
+[in] Adresa RVA rámce, které vás zajímají.
+
+ rámec
+
+[out] Vrátí [idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md) objekt představující rámec, který obsahuje adresu k dispozici.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud neodpovídají žádná data rámec zadané adrese. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dda294060e9126e43e80bac35ea68ba202434140
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6e4a548a5d6e564c2be3148d63ee28913fb1143d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951206"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625826"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
-Načte identifikátor kompilace pro oddíl.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_compilandId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí identifikátor kompilace pro oddíl.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Načte identifikátor kompilace pro oddíl.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_compilandId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí identifikátor kompilace pro oddíl.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

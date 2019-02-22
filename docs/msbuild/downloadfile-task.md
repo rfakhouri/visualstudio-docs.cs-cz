@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b6e655ea9c5eb6c598d7a4bdbb09ed3345903
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853505"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610213"
 ---
 # <a name="downloadfile-task"></a>Úloha DownloadFile
 Soubory ke stažení zadané soubory pomocí technologie Hyper-Text přenos protokol (HTTP).
@@ -73,5 +73,5 @@ Následující příklad stáhne soubor a zahrnuje ho `Content` položek před s
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Úlohy](../msbuild/msbuild-tasks.md)  
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

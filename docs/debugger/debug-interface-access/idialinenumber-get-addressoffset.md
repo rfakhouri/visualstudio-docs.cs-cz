@@ -12,39 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2742cb5cd69529896fdbf39ac0d51ac9b3fbf941
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c29f2f8b84c68e9f4f0f7425ed5566b9180b1ac3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924662"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610811"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
-Načte posunu součástí adresa paměti, kde začíná bloku.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí posunutí část adresa paměti, kde začíná bloku.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="example"></a>Příklad  
-  
-```C++  
-CComPtr< IDiaLineNumber > pLine;  
-DWORD offset;  
-pLine->get_addressOffset( &offset);  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)
+Načte posunu součástí adresa paměti, kde začíná bloku.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_addressOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí posunutí část adresa paměti, kde začíná bloku.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="example"></a>Příklad
+
+```C++
+CComPtr< IDiaLineNumber > pLine;
+DWORD offset;
+pLine->get_addressOffset( &offset);
+```
+
+## <a name="see-also"></a>Viz také
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)

@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7226476942497121fd94fbfdf8c902ad5ec4c05f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12f0c8f2235db4c5eb332d52a454bd0093a34b68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987853"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606669"
 ---
 # <a name="msbuild-concepts"></a>Koncepty nástroje MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje základní schéma XML, které vám umožní řídit, jak sestavení platformy sestavení softwaru. Chcete-li v sestavení a jak mají být sestaveny určete součásti, použijte tyto čtyři části nástroje MSBuild: vlastnosti, položky, úlohy a cíle.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje základní schéma XML, které vám umožní řídit, jak sestavení platformy sestavení softwaru. Chcete-li v sestavení a jak mají být sestaveny určete součásti, použijte tyto čtyři části nástroje MSBuild: vlastnosti, položky, úlohy a cíle.
 
-## <a name="related-topics"></a>Související témata  
+## <a name="related-topics"></a>Související témata
 
 | Název | Popis |
 | - | - |

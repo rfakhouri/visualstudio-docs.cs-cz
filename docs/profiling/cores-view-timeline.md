@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb0d126616827e496abc9cf45d4f54444c94a238
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958820"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596383"
 ---
 # <a name="cores-view-timeline"></a>Časová osa zobrazení jader
-Každý řádek na časové ose představuje logický procesor core PROFILOVANÉHO systému. Pro každý řádek vodorovná osa zobrazuje, které vlákno běžel na logické jádro k danému bodu v čase. Myší nad barvu zájmu na časové ose vrátit popisek, který identifikuje vlákna. Usnadňující identifikaci vlákna, legendy v dolní části okna ukazuje, co každá barva představuje. Pomocí nástroje přiblížení a oddálení, zvětšení kliknutím a přetažením nebo stisknutím klávesy CTRL a přesunutím kolečka myši. Přiblížení konzistence zachovaný při přepínání mezi zobrazením jader a zobrazení vláken.  
-  
-## <a name="see-also"></a>Viz také:  
- [Zobrazení jader](../profiling/cores-view.md)   
- [Ovládací prvek Lupa (zobrazení vláken)](../profiling/zoom-control-threads-view.md)
+Každý řádek na časové ose představuje logický procesor core PROFILOVANÉHO systému. Pro každý řádek vodorovná osa zobrazuje, které vlákno běžel na logické jádro k danému bodu v čase. Myší nad barvu zájmu na časové ose vrátit popisek, který identifikuje vlákna. Usnadňující identifikaci vlákna, legendy v dolní části okna ukazuje, co každá barva představuje. Pomocí nástroje přiblížení a oddálení, zvětšení kliknutím a přetažením nebo stisknutím klávesy CTRL a přesunutím kolečka myši. Přiblížení konzistence zachovaný při přepínání mezi zobrazením jader a zobrazení vláken.
+
+## <a name="see-also"></a>Viz také:
+- [Zobrazení jader](../profiling/cores-view.md)
+- [Ovládací prvek Lupa (zobrazení vláken)](../profiling/zoom-control-threads-view.md)

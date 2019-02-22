@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8ef9aa27638c01b0b941284b6c5a0fff442c4c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853518"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602478"
 ---
 # <a name="build-loggers"></a>Protokolovací nástroje sestavení
 Protokolovací nástroje poskytují způsob, jak můžete upravit výstupní sestavení a zobrazení zprávy, chyby nebo upozornění v reakci na události v konkrétním sestavení. Každý protokolovacího nástroje je implementován jako třída rozhraní .NET, která implementuje <xref:Microsoft.Build.Framework.ILogger> rozhraní, která je definována v *Microsoft.Build.Framework.dll* sestavení.
@@ -25,8 +25,8 @@ Protokolovací nástroje poskytují způsob, jak můžete upravit výstupní ses
 Existují dvě metody, které můžete použít při implementaci protokolovač:
 
 - Implementace <xref:Microsoft.Build.Framework.ILogger> rozhraní přímo.
-- Odvodit třídu z pomocná třída <xref:Microsoft.Build.Utilities.Logger>, který je definován v *Microsoft.Build.Utilities.dll* sestavení. <xref:Microsoft.Build.Utilities.Logger> implementuje <xref:Microsoft.Build.Framework.ILogger> a poskytuje výchozí implementaci některých <xref:Microsoft.Build.Framework.ILogger> členy.  
-  
+- Odvodit třídu z pomocná třída <xref:Microsoft.Build.Utilities.Logger>, který je definován v *Microsoft.Build.Utilities.dll* sestavení. <xref:Microsoft.Build.Utilities.Logger> implementuje <xref:Microsoft.Build.Framework.ILogger> a poskytuje výchozí implementaci některých <xref:Microsoft.Build.Framework.ILogger> členy.
+
   Toto téma vysvětluje, jak napsat jednoduchý protokolovací nástroj, který je odvozen z <xref:Microsoft.Build.Utilities.Logger>, a zobrazí zprávy v konzole v reakci na určité události sestavení.
 
 ## <a name="register-for-events"></a>Zaregistrovat se na události
@@ -76,5 +76,5 @@ Následující příklad ukazuje, jak implementovat protokolovací nástroj, kte
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>Viz také:
-[Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)
+- [Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)

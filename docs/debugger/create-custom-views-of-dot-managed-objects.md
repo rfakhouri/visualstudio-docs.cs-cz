@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57480eff4e2ad6e6c33008be6f1bbc2a2f332432
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015092"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597415"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Vytváření vlastních zobrazení objektů (C#, Visual Basic, C++)
-Můžete přizpůsobit tak, jak Visual Studio zobrazí datové typy v oknech proměnných ladicího programu.  
+Můžete přizpůsobit tak, jak Visual Studio zobrazí datové typy v oknech proměnných ladicího programu.
 
 ## <a name="native-code"></a>Nativní kód
 
@@ -39,16 +39,17 @@ Pro kód jazyka C++, můžete přidat vlastní datový typ rozšíření pomocí
 
 ## <a name="attributes"></a>Atributy
 
-V C#, Visual Basic a C++ (C + +/ CLI kódu pouze), přidáte rozšíření pro vlastní data s využitím <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, a <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
-V [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kódu Visual Basic nepodporuje atribut DebuggerBrowsable. Toto omezení neplatí v novějších verzích rozhraní .NET Framework.    
+V C#, Visual Basic a C++ (C + +/ CLI kódu pouze), přidáte rozšíření pro vlastní data s využitím <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, a <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+
+V [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kódu Visual Basic nepodporuje atribut DebuggerBrowsable. Toto omezení neplatí v novějších verzích rozhraní .NET Framework.
 
 ## <a name="visualizers"></a>Vizualizéry
 
 Můžete napsat vizualizéru pro zobrazení libovolného typu spravovaná data. Další informace najdete v tématu [jak: Zápis Vizualizéru](/visualstudio/debugger/create-custom-visualizers-of-data).
-  
-## <a name="see-also"></a>Viz také  
- [Používání atributu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
- [Používání atributu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Kukátko a Rychlé kukátko Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Rozšíření ladění pomocí atributů zobrazení ladicího programu](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+
+## <a name="see-also"></a>Viz také
+
+- [Používání atributu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Používání atributu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Okna Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)
+- [Rozšíření ladění pomocí atributů zobrazení ladicího programu](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

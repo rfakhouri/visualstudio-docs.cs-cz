@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e22de399d69c2e22cb4c24e12504786a28df74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9ba760660a6dfaf97040a296a3ce7991b7ab4555
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951609"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606430"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
-Získá příznak označující, zda modul byl kompilován s [/Z7, / zi, /ZI (formát informací o ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format) přepínač kompilátoru.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_editAndContinueEnabled (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí `TRUE` Pokud edit-and-continue bylo povoleno během kompilace; v opačném případě vrátí `FALSE`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
-  
+Získá příznak označující, zda modul byl kompilován s [/Z7, / zi, /ZI (formát informací o ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format) přepínač kompilátoru.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_editAndContinueEnabled ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí `TRUE` Pokud edit-and-continue bylo povoleno během kompilace; v opačném případě vrátí `FALSE`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
+
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.  
-  
-## <a name="requirements"></a>Požadavky  
-  
-|Požadavek|Popis|  
-|-----------------|-----------------|  
-|Záhlaví:|dia2.h|  
-|Verze:|V7.0 DIA SDK|  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/Z7, /Zi, /ZI (formát informací o ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format)
+>  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+
+## <a name="requirements"></a>Požadavky
+
+|Požadavek|Popis|
+|-----------------|-----------------|
+|Záhlaví:|dia2.h|
+|Verze:|V7.0 DIA SDK|
+
+## <a name="see-also"></a>Viz také
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [/Z7, /Zi, /ZI (formát informací o ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format)

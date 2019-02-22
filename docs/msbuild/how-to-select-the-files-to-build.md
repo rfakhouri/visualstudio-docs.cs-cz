@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942804"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610538"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Postupy: Výběr souborů pro sestavení
 Při vytváření projektu, který obsahuje několik souborů, můžete vytvořit seznam každý soubor samostatně v souboru projektu nebo k zahrnutí všech souborů v jednom adresáři nebo vnořenou sadu adresáře můžete použít zástupné znaky.
@@ -29,25 +29,25 @@ Chcete-li zahrnout soubory pro sestavení, musí být obsažena v seznamu polož
 
 #### <a name="to-declare-items-individually"></a>Chcete-li deklarovat položky jednotlivě
 
-- Použití `Include` atributy podobně jako následující:  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    or  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- Použití `Include` atributy podobně jako následující:
+
+    `<CSFile Include="form1.cs"/>`
+
+    or
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > Pokud se položky v kolekci položek nejsou ve stejném adresáři jako soubor projektu, musíte zadat úplnou nebo relativní cesta k položce. Například: `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Chcete-li deklarovat více položek
 
--   Použití `Include` atributy podobně jako následující:  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    or  
-  
+-   Použití `Include` atributy podobně jako následující:
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    or
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Zadejte vstupy se zástupnými znaky
@@ -63,24 +63,24 @@ Následující příklady jsou založené na projekt, který obsahuje soubory gr
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Zahrnout všechny *.jpg* soubory *Imagí* adresáři a jeho podadresářích
 
-- Pomocí následujících `Include` atribut:  
-  
+- Pomocí následujících `Include` atribut:
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Zahrnout všechny *.jpg* souborů, začínající souborem *img*
 
-- Pomocí následujících `Include` atribut:  
-  
+- Pomocí následujících `Include` atribut:
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Chcete-li zahrnout všechny soubory v adresářích s názvy končící na *formátu JPG využívá*
 
-- Použijte jednu z následujících `Include` atributy:  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    or  
-  
+- Použijte jednu z následujících `Include` atributy:
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    or
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Předejte položky k úkolu
@@ -88,17 +88,17 @@ V souboru projektu, můžete použít @ zápis () v úlohách k určení celé p
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Použití všech Visual C# nebo Visual Basic souborů jako vstupy
 
-- Použití `Include` atributy podobný následujícímu:  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    or  
-  
+- Použití `Include` atributy podobný následujícímu:
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    or
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  K určení vstupů pro sestavení; musíte použít zástupné znaky s položkami Nelze zadat vstupy pomocí `Sources` atribut [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úkoly, jako [Csc](../msbuild/csc-task.md) nebo [Vbc –](../msbuild/vbc-task.md). V následujícím příkladu není platný v souboru projektu:
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Příklad
@@ -170,5 +170,5 @@ Následující příklad kódu používá zástupný znak zahrnout všechny *.cs
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Postupy: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)  
-[Položky](../msbuild/msbuild-items.md)
+- [Postupy: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Položky](../msbuild/msbuild-items.md)

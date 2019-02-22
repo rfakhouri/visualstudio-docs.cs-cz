@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853700"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603228"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Postupy: Konfigurace cílů a úloh
 Vybrané úlohy nástroje MSBuild může nastaven na spouštění v prostředí, které cílí, bez ohledu na prostředí, které vývojovém počítači. Například pokud používáte 64bitový počítač k sestavení aplikace pro danou architekturu cíle 32-bit, vybrané úlohy se spouštějí v 32bitový proces.
@@ -108,4 +108,4 @@ Na rozdíl od jiných parametry úlohy `MSBuildRuntime` a `MSBuildArchitecture` 
 > Parametry úlohy se vyhodnocují v rámci nadřazeného uzlu, nejsou v rámci hostitele úloh. Proměnné prostředí, které jsou závislé na modulu runtime nebo architektura (například *Program Files* umístění) vyhodnotí na hodnotu, která odpovídá nadřazený uzel. Ale pokud stejnou proměnnou prostředí přečte přímo úkol, je správně se vyhodnotí v kontextu bude hostitel úloh.
 
 ## <a name="see-also"></a>Viz také:
-[Konfigurace cílů a úloh](../msbuild/configuring-targets-and-tasks.md)
+- [Konfigurace cílů a úloh](../msbuild/configuring-targets-and-tasks.md)

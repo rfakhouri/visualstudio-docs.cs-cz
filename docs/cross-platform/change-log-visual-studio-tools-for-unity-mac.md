@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027234"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611071"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Protokol změn (Visual Studio Tools for Unity, Mac)
 Protokol změn Visual Studio Tools for Unity.
@@ -34,11 +34,11 @@ Protokol změn Visual Studio Tools for Unity.
 -   **Ladicí program:**
 
      -   Oprava vzájemné zablokování v knihovně používaný ke komunikaci s modulem Unity a ladicí program, nastavení sady Visual Studio nebo Unity ukotvit, zejména v případě dosažení "Připojit k Unity" nebo restartování hry.
-     
+
 -   **Integrace:**
 
      -   Oprava Unity modulu plug-in aktivace byla vyberete jiný výchozí editor.
-     
+
      -   Oprava vytvoření šablony souboru Unity.
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   **Integrace:**
 
      -   Alternativní řešení pro chybu Unity výkonu, která byla opravena Unity vrácena zpět.
-     
+
 ## <a name="1601"></a>1.6.0.1
  Vydáno 10. července 2018
 
@@ -58,7 +58,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   **Integrace:**
 
      -   Oprava zabarvení kódu shaderu podporovat.
-     
+
 ## <a name="1600"></a>1.6.0.0
  Vydáno 26. června 2018
 
@@ -71,23 +71,23 @@ Protokol změn Visual Studio Tools for Unity.
 -   **Generování projektu:**
 
      -   Přechodné alternativní řešení pro chyby výkonu Unity: při vytváření projektů do mezipaměti MonoIslands.
-     
+
      -   Nelze převést souboru PDB typu portable mdb zobrazovat při používání nového modulu runtime Unity.
-     
+
 ## <a name="1502"></a>1.5.0.2
  Vydáno 18. dubna 2018
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Integrace:**
 
     -   Přidání podpory pro základní doplňování kódu shaderu.
-    
+
     -   Přidání podpory pro přepínání komentáře v souborech shaderu.
 
 ## <a name="1501"></a>1.5.0.1
  Vydáno 28. března 2018
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Integrace:**
@@ -96,7 +96,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1500"></a>1.5.0.0
  Vydáno 21. březnem 2018
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Integrace:**
@@ -105,7 +105,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1403"></a>1.4.0.3
  Vydané 5. března 2018
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Generování projektu:**
@@ -118,7 +118,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1402"></a>1.4.0.2
  Vydáno 24. ledna 2018
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Generování projektu:**
@@ -133,7 +133,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1401"></a>1.4.0.1
  Vydáno 23. ledna 2018
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Integrace:**
@@ -142,7 +142,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1400"></a>1.4.0.0
  Vydáno 13. prosince 2017
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Generování projektu:**
@@ -157,7 +157,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1301"></a>1.3.0.1
  Vydáno 12. prosince 2017
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Integrace:**
@@ -170,7 +170,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1300"></a>1.3.0.0
  Vydáno 20. listopadu 2017
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Průvodci:**
@@ -181,7 +181,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1200"></a>1.2.0.0
  Vydáno 23. října 2017
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Ladicí program:**
@@ -198,7 +198,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1103"></a>1.1.0.3
  Vydáno 23. října 2017
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Generování projektu:**
@@ -207,7 +207,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1102"></a>1.1.0.2
  Vydáno 8. srpna 2017
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Ladicí program:**
@@ -220,7 +220,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1101"></a>1.1.0.1
  Vydáno 20. července 2017
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Integrace:**
@@ -229,7 +229,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1100"></a>1.1.0.0
  Vydáno 12. července 2017
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Integrace:**
@@ -240,9 +240,9 @@ Protokol změn Visual Studio Tools for Unity.
 
     -   Pevné odkazy na název sestavení se mcs.rsp soubory.
 
-    -   Přidání podpory pro assembly.json kompilačních jednotek.    
+    -   Přidání podpory pro assembly.json kompilačních jednotek.
 
-    -   Oprava definuje s úrovní rozhraní API.    
+    -   Oprava definuje s úrovní rozhraní API.
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -252,7 +252,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="1001"></a>1.0.0.1
  Vydáno 4. května 2017
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Integrace:**

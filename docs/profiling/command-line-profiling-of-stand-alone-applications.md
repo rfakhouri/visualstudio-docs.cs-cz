@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 728fce7348b94d458a6ce58a86e27ad48726f23c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcd48f421dcae74e82b0d9249a958f2a834f0a45
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935056"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603284"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Profilace samostatných aplikací z příkazového řádku
-Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro samostatné (klientské) aplikace s použitím [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci z příkazového řádku.  
+Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro samostatné (klientské) aplikace s použitím [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci z příkazového řádku.
 
-## <a name="common-tasks"></a>Běžné úkoly  
+## <a name="common-tasks"></a>Běžné úkoly
 
 | Úloha | Související obsah |
 | - | - |
@@ -32,9 +32,9 @@ Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro s
 | **Přidání dat interakce vrstev:** Můžete přidat data o výkonu o synchronní ADO.NET, který volá žádosti služby Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] databáze. Přidání dat interakce vrstvy do běhu profilování vyžaduje zvláštní procedury s nástroji pro profilaci příkazového řádku. | -   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
 | **Vyzkoušejte si to:** Krok za krokem postupem ukázková klientská aplikace profilu pomocí metody vzorkování nebo instrumentace. | -   [Návod: Příkazový řádek profilování pomocí vzorkování](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [Návod: Příkazový řádek, profilace s použitím instrumentace](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications) |
 
-## <a name="related-tasks"></a>Související úlohy  
+## <a name="related-tasks"></a>Související úlohy
 
-|Úloha|Související obsah|  
-|----------|---------------------|  
-|**Profil aplikace ASP.NET**|-   [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|Úloha|Související obsah|
+|----------|---------------------|
+|**Profil aplikace ASP.NET**|-   [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**Profil služby**|-   [Profil služby](../profiling/command-line-profiling-of-services.md)|

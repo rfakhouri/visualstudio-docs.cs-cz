@@ -16,68 +16,68 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f31cfeab76018658ada9cc449af287cfca4abf4f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a8592bdbe08c70df96cf553ff5548a87704837a8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867049"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596331"
 ---
 # <a name="chart-control"></a>Graf – ovládací prvek
-  <xref:Microsoft.Office.Tools.Excel.Chart> Je ovládací prvek grafu objektu, který zpřístupňuje události. Když přidáte grafu na listu, vytvoří Visual Studio <xref:Microsoft.Office.Tools.Excel.Chart> objektu, můžete programovat proti přímo bez nutnosti procházení objektový model aplikace Microsoft Office Excel.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="create-the-control"></a>Vytvoření ovládacího prvku  
- Můžete přidat <xref:Microsoft.Office.Tools.Excel.Chart> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu nebo za běhu v projektu úrovni dokumentu.  
-  
- Můžete přidat <xref:Microsoft.Office.Tools.Excel.Chart> ovládacích prvků na list za běhu v doplňku VSTO. Další informace najdete v tématu [jak: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md).  
-  
-> [!NOTE]  
->  Nejsou trvalé objekty dynamicky generovaný grafu v listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
-  
-## <a name="formatting"></a>Formátování  
- Veškeré formátování, který lze použít <xref:Microsoft.Office.Interop.Excel.Chart> lze také použít u <xref:Microsoft.Office.Tools.Excel.Chart> ovládacího prvku. To zahrnuje ohraničení, písma, grafy, mřížky, legendy a popisky dat.  
-  
-## <a name="events"></a>Události  
- Tyto události jsou k dispozici pro <xref:Microsoft.Office.Tools.Excel.Chart> ovládacího prvku:  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeDoubleClick>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeRightClick>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.BindingContextChanged>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.Calculate>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.Deactivate>  
-  
--   <xref:System.ComponentModel.Component.Disposed>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.DragOver>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.DragPlot>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseDown>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseMove>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseUp>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.Resize>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.SelectEvent>  
-  
--   <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>  
-  
-## <a name="see-also"></a>Viz také:  
- [Ukázky vývoje pro Office a názorné postupy](../vsto/office-development-samples-and-walkthroughs.md)   
- [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
- [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
- [Postupy: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)   
- [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+  <xref:Microsoft.Office.Tools.Excel.Chart> Je ovládací prvek grafu objektu, který zpřístupňuje události. Když přidáte grafu na listu, vytvoří Visual Studio <xref:Microsoft.Office.Tools.Excel.Chart> objektu, můžete programovat proti přímo bez nutnosti procházení objektový model aplikace Microsoft Office Excel.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="create-the-control"></a>Vytvoření ovládacího prvku
+ Můžete přidat <xref:Microsoft.Office.Tools.Excel.Chart> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu nebo za běhu v projektu úrovni dokumentu.
+
+ Můžete přidat <xref:Microsoft.Office.Tools.Excel.Chart> ovládacích prvků na list za běhu v doplňku VSTO. Další informace najdete v tématu [jak: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md).
+
+> [!NOTE]
+>  Nejsou trvalé objekty dynamicky generovaný grafu v listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).
+
+## <a name="formatting"></a>Formátování
+ Veškeré formátování, který lze použít <xref:Microsoft.Office.Interop.Excel.Chart> lze také použít u <xref:Microsoft.Office.Tools.Excel.Chart> ovládacího prvku. To zahrnuje ohraničení, písma, grafy, mřížky, legendy a popisky dat.
+
+## <a name="events"></a>Události
+ Tyto události jsou k dispozici pro <xref:Microsoft.Office.Tools.Excel.Chart> ovládacího prvku:
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeDoubleClick>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeRightClick>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.BindingContextChanged>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.Calculate>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.Deactivate>
+
+-   <xref:System.ComponentModel.Component.Disposed>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.DragOver>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.DragPlot>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.MouseDown>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.MouseMove>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.MouseUp>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.Resize>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.SelectEvent>
+
+-   <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
+
+## <a name="see-also"></a>Viz také:
+- [Ukázky vývoje pro Office a názorné postupy](../vsto/office-development-samples-and-walkthroughs.md)
+- [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)
+- [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)
+- [Postupy: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

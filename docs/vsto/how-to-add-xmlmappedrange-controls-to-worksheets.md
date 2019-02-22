@@ -13,56 +13,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e829a3c9a8621856f70fbd8d3a99fb68c6b2a352
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6f055ba84c4e6a6b48c13f3eef9a433eb4c5b3e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863757"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605842"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků XMLMappedRange do listů
-  Při mapování platný element XML do buňky v aplikaci Microsoft Office Excel sady Visual Studio automaticky přidá <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku do listu.  
-  
- [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
-  
-> [!NOTE]  
->  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Ovládací prvek není k dispozici na **nástrojů** nebo **zdroje dat** okna. Kromě toho nelze vytvořit <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> řídí prostřednictvím kódu programu.  
-  
-## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Chcete-li přidat xmlmappedrange – ovládací prvek do listu  
-  
-1.  Otevřete Excelový sešit v návrháři aplikace Visual Studio.  
-  
-2.  Otevřete list, ve které chcete přidat ovládací prvek.  
-  
-3.  Na **Developer** klikněte na tlačítko **zdroj**.  
-  
-    > [!NOTE]  
-    >  Pokud **Developer** karta není zobrazena na pásu karet, musíte ho nejdřív povolit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
-  
-     **XML použitého jako zdroj** se zobrazí v podokně úloh.  
-  
-4.  V **XML použitého jako zdroj** podokna úloh, klikněte na tlačítko **mapování XML**.  
-  
-5.  V **mapování XML** dialogové okno, klikněte na tlačítko **přidat**.  
-  
-     **XML použitého jako zdroj** zobrazí se dialogové okno.  
-  
-6.  Výběr schématu XML z **XML použitého jako zdroj** dialogové okno a klikněte na tlačítko **otevřít**.  
-  
-     Schéma se přidá do **mapování XML** dialogové okno.  
-  
-7.  V **mapování XML** dialogové okno, klikněte na tlačítko **OK**.  
-  
-8.  Přetáhněte element z **XML použitého jako zdroj** podokna úloh do buňky v listu.  
-  
-     <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Je vytvořen a přidán do projektu.  
-  
-    > [!NOTE]  
-    >  Pokud přetáhnete nadřazený element z **XML použitého jako zdroj** podokna úloh <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek vytvořen.  
-  
-## <a name="see-also"></a>Viz také:  
- [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)   
- [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
- [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
- [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Postupy: Mapování schémat na listy v prostředí Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
+  Při mapování platný element XML do buňky v aplikaci Microsoft Office Excel sady Visual Studio automaticky přidá <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku do listu.
+
+ [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
+
+> [!NOTE]
+>  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Ovládací prvek není k dispozici na **nástrojů** nebo **zdroje dat** okna. Kromě toho nelze vytvořit <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> řídí prostřednictvím kódu programu.
+
+## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Chcete-li přidat xmlmappedrange – ovládací prvek do listu
+
+1.  Otevřete Excelový sešit v návrháři aplikace Visual Studio.
+
+2.  Otevřete list, ve které chcete přidat ovládací prvek.
+
+3.  Na **Developer** klikněte na tlačítko **zdroj**.
+
+    > [!NOTE]
+    >  Pokud **Developer** karta není zobrazena na pásu karet, musíte ho nejdřív povolit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+
+     **XML použitého jako zdroj** se zobrazí v podokně úloh.
+
+4.  V **XML použitého jako zdroj** podokna úloh, klikněte na tlačítko **mapování XML**.
+
+5.  V **mapování XML** dialogové okno, klikněte na tlačítko **přidat**.
+
+     **XML použitého jako zdroj** zobrazí se dialogové okno.
+
+6.  Výběr schématu XML z **XML použitého jako zdroj** dialogové okno a klikněte na tlačítko **otevřít**.
+
+     Schéma se přidá do **mapování XML** dialogové okno.
+
+7.  V **mapování XML** dialogové okno, klikněte na tlačítko **OK**.
+
+8.  Přetáhněte element z **XML použitého jako zdroj** podokna úloh do buňky v listu.
+
+     <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Je vytvořen a přidán do projektu.
+
+    > [!NOTE]
+    >  Pokud přetáhnete nadřazený element z **XML použitého jako zdroj** podokna úloh <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek vytvořen.
+
+## <a name="see-also"></a>Viz také:
+- [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)
+- [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)
+- [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)
+- [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Postupy: Mapování schémat na listy v prostředí Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)

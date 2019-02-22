@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5df6e50185bf04dd1f4dbb9f1016a1d6b73b1185
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f07ecb151b6bf2cd4a9d48fbe6596bc7a533f97a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318274"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598671"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Načte datový proud ladění index nebo název.
@@ -32,10 +32,12 @@ HRESULT Item (
 ```
 
 #### <a name="parameters"></a>Parametry
-index  
+index
+
 [in] Index nebo název datový proud ladění se má načíst. Pokud varianta celé číslo se používá, musí být v rozsahu 0 až `count`-1, kde `count` je vrácená rozhraním [idiaenumdebugstreams::get_count –](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) metody.
 
-datový proud  
+datový proud
+
 [out] Vrátí [idiaenumdebugstreamdata –](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) reprezentující datový proud ladění zadaného objektu.
 
 ## <a name="return-value"></a>Návratová hodnota
@@ -68,5 +70,5 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)  
-[IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
