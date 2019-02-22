@@ -16,35 +16,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e459f042838fa92e9b4bbc1608bb36dfd4c8dc9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875755"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628907"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Další informace o chybách služby SharePoint
-  Můžete najít pomoc s řešením [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, chyby a upozornění při řešení potíží, témata a veřejná fóra.  
-  
+  Můžete najít pomoc s řešením [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, chyby a upozornění při řešení potíží, témata a veřejná fóra.
+
 ## <a name="troubleshoot-errors-and-issues"></a>Řešení chyb a problémů
- Potřebujete pomoc s některé běžné chyby a jiné problémy v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, naleznete v následujících tématech:  
-  
--   [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
-  
--   [Ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md)  
-  
--   [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
-  
+ Potřebujete pomoc s některé běžné chyby a jiné problémy v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, naleznete v následujících tématech:
+
+-   [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
+
+-   [Ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
+
+-   [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+
 ## <a name="other-resources"></a>Další zdroje
- Následující tabulce jsou uvedeny [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, fóra a další prostředky, které jsou k dispozici.  
-  
-|Termín|Definice|  
-|----------|----------------|  
-|[Vývoj pro SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Poskytuje diskusní fórum pro otázky týkající se vývoj pro SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Fóra Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Poskytuje diskusní fórum pro otázky o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Nápovědu a podporu Microsoftu](http://go.microsoft.com/fwlink/?LinkID=108287)|Poskytuje přístup k článkům znalostní báze, souborům ke stažení a aktualizacím, webovému vysílání podpory a jiným službám.|  
-  
- Pokud stále nemůžete najít odpovědi, které potřebujete, můžete přístup k možnosti odborné pomoci online, například Kontaktujte Microsoft Product Support Services nebo hledání článkům. Další informace najdete v tématu [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) stránky.  
-  
+ Následující tabulce jsou uvedeny [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, fóra a další prostředky, které jsou k dispozici.
+
+|Termín|Definice|
+|----------|----------------|
+|[Vývoj pro SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Poskytuje diskusní fórum pro otázky týkající se vývoj pro SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Fóra Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Poskytuje diskusní fórum pro otázky o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Nápovědu a podporu Microsoftu](http://go.microsoft.com/fwlink/?LinkID=108287)|Poskytuje přístup k článkům znalostní báze, souborům ke stažení a aktualizacím, webovému vysílání podpory a jiným službám.|
+
+ Pokud stále nemůžete najít odpovědi, které potřebujete, můžete přístup k možnosti odborné pomoci online, například Kontaktujte Microsoft Product Support Services nebo hledání článkům. Další informace najdete v tématu [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) stránky.
+
 ## <a name="see-also"></a>Viz také:
- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

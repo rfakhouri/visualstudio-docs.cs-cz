@@ -17,27 +17,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5180780835f36768cef77207189a1346c1dccdca
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a9af26cae55a9a13f7aaaeb2297b19c81105f438
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866511"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635680"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Postupy: Cílení na vícejazyčné uživatelské rozhraní sady Office
-  Multilingual User Interface (MUI) je funkce aplikace Microsoft Office, poskytující koncovému uživateli možnost měnit jazyk uživatelského rozhraní (UI). Práce s anglickou uživatelského rozhraní koncového uživatele můžete například změnit jazyk uživatelského rozhraní na španělštinu.  
-  
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
- Pokud vaše aplikace bude používat uživatelé, kteří používají řadu jazyků sady Office, můžete přidat kód, který automaticky změní jazyk vašeho řetězce uživatelského rozhraní tak, aby odpovídaly jazyk používá Office na počítači uživatele (Pokud je nainstalované správné prostředky má uživatel).  
-  
-## <a name="to-check-the-current-office-ui-setting"></a>Pokud chcete zkontrolovat aktuální nastavení uživatelského rozhraní sady Office  
-  
-1.  Použití <xref:System.Threading.Thread.CurrentUICulture%2A> vlastnost aktuálního vlákna. Nastavte jazyk vašeho řetězce uživatelského rozhraní tak, aby odpovídaly jazyk používá verzi systému Office, který aktuálně běží na počítači uživatele.  
-  
+  Multilingual User Interface (MUI) je funkce aplikace Microsoft Office, poskytující koncovému uživateli možnost měnit jazyk uživatelského rozhraní (UI). Práce s anglickou uživatelského rozhraní koncového uživatele můžete například změnit jazyk uživatelského rozhraní na španělštinu.
+
+ [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+ Pokud vaše aplikace bude používat uživatelé, kteří používají řadu jazyků sady Office, můžete přidat kód, který automaticky změní jazyk vašeho řetězce uživatelského rozhraní tak, aby odpovídaly jazyk používá Office na počítači uživatele (Pokud je nainstalované správné prostředky má uživatel).
+
+## <a name="to-check-the-current-office-ui-setting"></a>Pokud chcete zkontrolovat aktuální nastavení uživatelského rozhraní sady Office
+
+1.  Použití <xref:System.Threading.Thread.CurrentUICulture%2A> vlastnost aktuálního vlákna. Nastavte jazyk vašeho řetězce uživatelského rozhraní tak, aby odpovídaly jazyk používá verzi systému Office, který aktuálně běží na počítači uživatele.
+
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
-     [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]  
-  
-## <a name="see-also"></a>Viz také:  
- [Postupy: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
- [Pozdní vazba v řešeních pro systém Office](../vsto/late-binding-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
+
+## <a name="see-also"></a>Viz také:
+- [Postupy: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Pozdní vazba v řešeních pro systém Office](../vsto/late-binding-in-office-solutions.md)

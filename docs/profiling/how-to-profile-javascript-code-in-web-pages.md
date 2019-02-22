@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043515"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646132"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Postupy: Profilování kódu JavaScript ve webových stránkách
 
 Visual Studio Tools profilace můžete shromažďovat údaje o výkonu pro kód jazyka JavaScript, který se spustí v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace, libovolná webová stránka nebo JavaScript aplikace s použitím metoda profilace instrumentace. Vyžaduje aplikaci Internet Explorer 8 nebo novější.
 
 > [!WARNING]
-> Chcete-li Profilovat jazyk JavaScript v aplikacích pro UPW, přečtěte si téma [paměti jazyka JavaScript](../profiling/javascript-memory.md) 
+> Chcete-li Profilovat jazyk JavaScript v aplikacích pro UPW, přečtěte si téma [paměti jazyka JavaScript](../profiling/javascript-memory.md)
 
 Průvodce Profilováním můžete použít k vytvoření relace výkonu. Určete metody instrumentace a potom určete možnost na stránce instrumentace dialogové okno Vlastnosti relace výkonu profilace jazyka JavaScript.
 

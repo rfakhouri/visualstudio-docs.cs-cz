@@ -12,62 +12,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69af1992ba07fb75859a8f71bd0ee3eecadeaa0d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 5bb21773a9cf5bd7ff9f34e1aabffeefb3dc00e2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865330"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616482"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile – element
-  Představuje výstupní samostatný projekt obsahující položku projektu při nasazení do služby SharePoint.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```xml  
-<ProjectOutputFile ProjectId = "GUID of the project"  
-    ProjectPath = "Relative path of the project"  
-    Target = "Deployment path of the project output"  
-    Type = "Type of deployment for the project output" />  
-```  
-  
-## <a name="type"></a>Typ  
- **ProjectOutputFileType**  
-  
+  Představuje výstupní samostatný projekt obsahující položku projektu při nasazení do služby SharePoint.
+
+## <a name="syntax"></a>Syntaxe
+
+```xml
+<ProjectOutputFile ProjectId = "GUID of the project"
+    ProjectPath = "Relative path of the project"
+    Target = "Deployment path of the project output"
+    Type = "Type of deployment for the project output" />
+```
+
+## <a name="type"></a>Typ
+ **ProjectOutputFileType**
+
 ## <a name="attributes-and-elements"></a>Atributy a elementy
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
-  
-### <a name="attributes"></a>Atributy  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|**ProjectId**|Vyžaduje **xs:string** atribut.<br /><br /> Identifikátor GUID závislého projektu, který má výstup, který chcete zahrnout. To odpovídá **ProjectGuid** element v souboru závislý projekt.|  
-|**ProjectPath**|Vyžaduje **xs:string** atribut.<br /><br /> Relativní cesta, včetně názvu souboru projektu, závislého projektu, který má výstup, který chcete zahrnout. Tato cesta je relativní vzhledem ke kořenové složce Sharepointového projektu, který obsahuje položku Sharepointového projektu.|  
-|**Cíl**|Volitelné **xs:string** atribut.<br /><br /> Cesta, kam se výstup závislého projektu k nasazení na serveru SharePoint server vzhledem ke kořenové složky nasazení. Kořenové složky nasazení se určuje podle typ nasazení určený **typ** atribut.<br /><br /> Další informace najdete v popisech pro **cesty nasazení** a **kořen nasazení** položky v projektu služby SharePoint [řešení pro vývoj SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Typ**|Vyžaduje **xs:string** atribut.<br /><br /> Typ nasazení určený pro výstup závislého projektu. Další informace o možných hodnot, viz popis **typ nasazení** vlastnosti položky projektu služby SharePoint v [řešení vývoj služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-  
+ Následující části popisují atributy, podřízené prvky a nadřazené prvky.
+
+### <a name="attributes"></a>Atributy
+
+|Atribut|Popis|
+|---------------|-----------------|
+|**ProjectId**|Vyžaduje **xs:string** atribut.<br /><br /> Identifikátor GUID závislého projektu, který má výstup, který chcete zahrnout. To odpovídá **ProjectGuid** element v souboru závislý projekt.|
+|**ProjectPath**|Vyžaduje **xs:string** atribut.<br /><br /> Relativní cesta, včetně názvu souboru projektu, závislého projektu, který má výstup, který chcete zahrnout. Tato cesta je relativní vzhledem ke kořenové složce Sharepointového projektu, který obsahuje položku Sharepointového projektu.|
+|**Cíl**|Volitelné **xs:string** atribut.<br /><br /> Cesta, kam se výstup závislého projektu k nasazení na serveru SharePoint server vzhledem ke kořenové složky nasazení. Kořenové složky nasazení se určuje podle typ nasazení určený **typ** atribut.<br /><br /> Další informace najdete v popisech pro **cesty nasazení** a **kořen nasazení** položky v projektu služby SharePoint [řešení pro vývoj SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Typ**|Vyžaduje **xs:string** atribut.<br /><br /> Typ nasazení určený pro výstup závislého projektu. Další informace o možných hodnot, viz popis **typ nasazení** vlastnosti položky projektu služby SharePoint v [řešení vývoj služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+
 ### <a name="child-elements"></a>Podřízené prvky
- Žádné  
-  
+ Žádné
+
 ### <a name="parent-elements"></a>Nadřazené prvky
-  
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Soubory](../sharepoint/files-element.md)|Určuje soubory, které chcete zahrnout do položky projektu služby SharePoint při nasazení do služby SharePoint.|  
-  
-## <a name="remarks"></a>Poznámky  
- Použití **ProjectOutputFile** – element pro zahrnutí výstupu projektu v nasazení položky projektu služby SharePoint. Můžete zadat jiný projekt, nebo stejný projekt, který obsahuje položky projektu. Další informace najdete v tématu [poskytují informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
-  
+
+|Prvek|Popis|
+|-------------|-----------------|
+|[Soubory](../sharepoint/files-element.md)|Určuje soubory, které chcete zahrnout do položky projektu služby SharePoint při nasazení do služby SharePoint.|
+
+## <a name="remarks"></a>Poznámky
+ Použití **ProjectOutputFile** – element pro zahrnutí výstupu projektu v nasazení položky projektu služby SharePoint. Můžete zadat jiný projekt, nebo stejný projekt, který obsahuje položky projektu. Další informace najdete v tématu [poskytují informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
+
 ## <a name="element-information"></a>Informace o elementu
-  
-|||  
-|-|-|  
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Název schématu**|Schéma položky projektu služby SharePoint|  
-|**Soubor ověření**|ProjectItemModelSchema.xsd|  
-|**Může být prázdný**|Ne|  
-  
+
+|||
+|-|-|
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Název schématu**|Schéma položky projektu služby SharePoint|
+|**Soubor ověření**|ProjectItemModelSchema.xsd|
+|**Může být prázdný**|Ne|
+
 ## <a name="see-also"></a>Viz také:
- [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Zadání informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+- [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Zadání informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)

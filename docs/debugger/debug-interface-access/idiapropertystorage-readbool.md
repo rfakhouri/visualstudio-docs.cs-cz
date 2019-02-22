@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf0e91e2d617877596798512140195b54f4d3f8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924545"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596344"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Přečte `BOOL` hodnoty v sadu vlastností.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT ReadBOOL (   
-   PROPID id,  
-   BOOL*  pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `id`  
- [in] Identifikátor vlastnosti pro čtení (`PROPID` je definována v WTypes.h jako `ULONG`).  
-  
- `pValue`  
- [out] Vrátí hodnotu vlastnosti.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `E_INVALIDARG` Pokud vlastnost není typu `BOOL`.  
-  
-## <a name="remarks"></a>Poznámky  
- Konzistentní výsledky, interpretovat `BOOL` hodnotu tak, že jsou nenulové hodnoty `TRUE` a nula je `FALSE`.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Přečte `BOOL` hodnoty v sadu vlastností.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT ReadBOOL ( 
+   PROPID id,
+   BOOL*  pValue
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `id`
+
+[in] Identifikátor vlastnosti pro čtení (`PROPID` je definována v WTypes.h jako `ULONG`).
+
+ `pValue`
+
+[out] Vrátí hodnotu vlastnosti.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `E_INVALIDARG` Pokud vlastnost není typu `BOOL`.
+
+## <a name="remarks"></a>Poznámky
+ Konzistentní výsledky, interpretovat `BOOL` hodnotu tak, že jsou nenulové hodnoty `TRUE` a nula je `FALSE`.
+
+## <a name="see-also"></a>Viz také
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

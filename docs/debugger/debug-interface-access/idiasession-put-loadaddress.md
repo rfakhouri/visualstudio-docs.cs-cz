@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 488ae20ae4e38905b722f833a52676eea6ce0e81
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b768b06e0702f7929b402086dcc6e11918f3e683
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035767"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630090"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
-Nastaví adresu zatížení pro spustitelný soubor, který odpovídá na symboly v tomto úložišti symbolů.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT put_loadAddress (   
-   ULONGLONG NewVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `NewVal`  
- [in] Načtení adresy pro spustitelný soubor.  
-  
-## <a name="remarks"></a>Poznámky  
- Vlastnosti virtuální adresy (VA) symbol jsou vypočítány pomocí hodnoty této metody. Virtuální adresy nejsou vypočítat, pokud je tato vlastnost nastavená na nenulovou.  
-  
+Nastaví adresu zatížení pro spustitelný soubor, který odpovídá na symboly v tomto úložišti symbolů.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT put_loadAddress ( 
+   ULONGLONG NewVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `NewVal`
+
+[in] Načtení adresy pro spustitelný soubor.
+
+## <a name="remarks"></a>Poznámky
+ Vlastnosti virtuální adresy (VA) symbol jsou vypočítány pomocí hodnoty této metody. Virtuální adresy nejsou vypočítat, pokud je tato vlastnost nastavená na nenulovou.
+
 > [!NOTE]
->  Tato metoda musí volat, když dostanete [idiasession –](../../debugger/debug-interface-access/idiasession.md) objektu a před zahájením používání objektu, pokud je třeba použít všechny virtuální vlastnosti na symboly.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+>  Tato metoda musí volat, když dostanete [idiasession –](../../debugger/debug-interface-access/idiasession.md) objektu a před zahájením používání objektu, pokud je třeba použít všechny virtuální vlastnosti na symboly.
+
+## <a name="see-also"></a>Viz také
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

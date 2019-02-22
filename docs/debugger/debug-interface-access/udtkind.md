@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb649915179bc6e6b767970150df99caff306b4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317728"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636577"
 ---
 # <a name="udtkind"></a>UdtKind
 Popisuje různé uživatelem definovaný typ (UDT).
@@ -34,17 +34,13 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Elementy
-UdtStruct  
-UDT je struktura.
+UdtStruct UDT je struktura.
 
-UdtClass  
-UDT je třída.
+UdtClass UDT je třída.
 
-UdtUnion  
-UDT je sjednocení.
+UdtUnion UDT je sjednocení.
 
-UdtInterface  
-UDT je rozhraní.
+UdtInterface UDT je rozhraní.
 
 ## <a name="remarks"></a>Poznámky
 Jsou vrácené hodnoty v tento výčet [idiasymbol::get_udtkind –](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) metody.
@@ -53,5 +49,5 @@ Jsou vrácené hodnoty v tento výčet [idiasymbol::get_udtkind –](../../debug
 Záhlaví: cvconst.h
 
 ## <a name="see-also"></a>Viz také
-[Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+- [Výčty a struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

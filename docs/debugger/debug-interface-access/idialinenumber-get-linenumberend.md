@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b541a21afb997e2864f4b43fd6074f760c8e6dd7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920575"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641634"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Získá číslo řádku založen na jedničce zdroj, kde končí příkazem nebo výrazem.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_lineNumberEnd (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Vrátí číslo řádku, kde končí příkazem nebo výrazem. Pokud je hodnota nula, není end informace k dispozici.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Získá číslo řádku založen na jedničce zdroj, kde končí příkazem nebo výrazem.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_lineNumberEnd ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Vrátí číslo řádku, kde končí příkazem nebo výrazem. Pokud je hodnota nula, není end informace k dispozici.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. V opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

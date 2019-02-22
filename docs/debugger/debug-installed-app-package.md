@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84d2296a467bb1fc2c3e1466b715578c94c7d0d8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b6a41ad863ee25e4294d5d0242b3113cd405fb00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317930"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637344"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Ladit nainstalovaný balíček aplikace UWP v sadě Visual Studio
 
@@ -33,7 +33,7 @@ Visual Studio dokáže ladit nainstalované balíčky aplikací univerzální pl
 
 >[!NOTE]
 >Visual Studio, ladění pro nainstalované aplikace UPW se nepodporuje na telefonech.
-   
+
 Další informace o ladění aplikací pro UWP, najdete v blogových příspěvků na [ladění nainstalované balíčky aplikací](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) a [vytváření univerzálních aplikací pro Windows (UPW)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Ladit aplikaci UPW nainstalované na místním počítači

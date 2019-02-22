@@ -2,7 +2,7 @@
 title: Instalace sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak nainstalovat sadu Visual Studio, krok za krokem.
-ms.date: 05/07/2018
+ms.date: 02/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156134"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607021"
 ---
 # <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
 
-Vítá vás nový způsob, jak nainstalovat sadu Visual Studio! V naší nejnovější verzi My jsme usnadnili si můžete vybrat a instalace jen těch funkcí, které potřebujete. Také jsme jste snížení nároků sady Visual Studio tak, aby nainstaloval rychleji a s menšími dopady na systém, než kdy dřív.
+Vítá vás nový způsob, jak nainstalovat sadu Visual Studio! V této verzi jsme jsme usnadnili si můžete vybrat a instalace jen těch funkcí, které potřebujete. Také jsme jste snížení nároků sady Visual Studio tak, aby nainstaloval rychleji a s menšími dopady na systém, než kdy dřív.
 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [instalace sady Visual Studio pro Mac](/visualstudio/mac/installation).

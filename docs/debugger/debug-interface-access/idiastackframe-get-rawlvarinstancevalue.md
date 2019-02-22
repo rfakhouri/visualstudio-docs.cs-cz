@@ -12,42 +12,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96851912abb6593ce1fe72bd3eebdd67c120c26b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624019"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Tato metoda načte hodnotu místní proměnné zadané jako nezpracovaný bajtů.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_rawLVarInstanceValue(  
-   IDiaLVarInstance* pInstance,  
-   DWORD             cbDataMax,  
-   DWORD*            pcbData,  
-   BYTE*             pbData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pInstance`  
- [in] `IDiaLVarInstance` Objekt představující instance má být získána hodnota pro lokální proměnné.  
-  
- `cbDataMax`  
- [in] Maximální počet bajtů ve vyrovnávací paměti na které odkazuje `pbData`. To může být maximálně 8 bajtů (`sizeof(ULONGLONG)`).  
-  
- `pcbData`  
- [out] Vrátí skutečný počet bajtů uložených do vyrovnávací paměti.  
-  
- `pbData`  
- [out] Vyrovnávací paměti, která vyplní data. IP adresa nesmí být `NULL`.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Tato metoda načte hodnotu místní proměnné zadané jako nezpracovaný bajtů.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_rawLVarInstanceValue(
+   IDiaLVarInstance* pInstance,
+   DWORD             cbDataMax,
+   DWORD*            pcbData,
+   BYTE*             pbData
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pInstance`
+
+[in] `IDiaLVarInstance` Objekt představující instance má být získána hodnota pro lokální proměnné.
+
+ `cbDataMax`
+
+[in] Maximální počet bajtů ve vyrovnávací paměti na které odkazuje `pbData`. To může být maximálně 8 bajtů (`sizeof(ULONGLONG)`).
+
+ `pcbData`
+
+[out] Vrátí skutečný počet bajtů uložených do vyrovnávací paměti.
+
+ `pbData`
+
+[out] Vyrovnávací paměti, která vyplní data. IP adresa nesmí být `NULL`.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

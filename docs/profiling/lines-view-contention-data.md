@@ -10,60 +10,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f6e144e75a9544caf7bc11c66bb0ba542bd775
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917260"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614061"
 ---
 # <a name="lines-view---contention-data"></a>Zobrazení řádků – data kolizí
-Zobrazení řádků dat kolizí obsahuje údaje o výkonu pro příkazy, které se spouští při ukázky byly shromážděny během spuštění profilování. Ve zdrojovém souboru příkaz se týkají více než jeden řádek ve zdrojovém souboru a jeden řádek může obsahovat více než jeden výraz.  
-  
- Příkaz je identifikován následující data:  
-  
-- Zdrojový soubor, který obsahuje Function – příkaz  
-  
-- Funkce, která obsahuje příkaz.  
-  
-- Zdrojový řádek, ve kterém se spustí příkaz.  
-  
-- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
-  
-- Řádku zdroje, u které končí příkaz.  
-  
-- Znak ve zdrojovém řádku, kdy příkaz skončí.  
-  
-  Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.  
-  
-  Následující tabulka popisuje sloupce řádky zobrazit sestavu.  
-  
-|Sloupec|Popis|  
-|------------|-----------------|  
-|**Výhradní čas zablokování**|Množství času, během které byl tento příkaz blokovat spouštění kódu v příkazu z důvodu kolize události. Čas zablokování ve funkcích, které volá příkaz není součástí.|  
-|**% Výhradního času zablokování**|Procento času zablokování všech proces, který byl výhradní čas zablokování příkazu.|  
-|**Výhradní spory**|Počet případů, kdy se tento příkaz bylo zablokováno spouštění kódu v příkazu z důvodu kolize události. Kolizní události ve funkcích, které volá příkaz nejsou zahrnuty.|  
-|**% Výhradních sporů**|Procento kolizní události v procesu, které byly výhradních sporů tohoto prohlášení.|  
-|**Adresa funkce**|Adresa funkce, která obsahuje tento příkaz.|  
-|**Název funkce**|Plně kvalifikovaný název funkce, která obsahuje tento příkaz.|  
-|**Celkový čas zablokování**|Čas zablokování v této smlouvě a funkce se volá v příkazu.|  
-|**% Celkového času zablokování**|Procento času zablokování všech proces, který byl celkový čas zablokování příkazu.|  
-|**Celkově sporů**|Počet pokusů, že tento příkaz a funkce, které byly volány v příkazu se zablokoval spuštění.|  
-|**% Celkových sporů**|Procento kolizní události v procesu, které byly celkových sporů tohoto prohlášení.|  
-|**Název čáry**|Profiler generovaný identifikátor řádku. Identifikátor se používá následující syntaxe:`SourceFile`**; [** `LineNumberStart` **,**`CharacterStart`**] ->; [**`LineNumberEnd`**,**`CharacterEnd`**]**|  
-|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
-|**Název modulu**|Název modulu, který obsahuje příkaz.|  
-|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje příkaz.|  
-|**ID procesu**|ID procesu (PID) PROFILOVANÉHO procesu.|  
-|**Název procesu**|Název procesu.|  
-|**Počáteční znak zdrojového kódu**|Odsazení počátečního znaku ve zdrojovém souboru řádku, na který tento příkaz spustí.|  
-|**Koncový znak zdrojového kódu**|Odsazení počátečního znaku ve zdrojovém souboru řádku, u které končí tento příkaz.|  
-|**Zdrojový soubor**|Název zdrojového souboru, který obsahuje příkaz funkce.|  
-|**Začátek řádku zdroje**|Číslo řádku ve zdrojovém souboru, ve kterém se spustí příkaz.|  
-|**Konec řádku zdroje**|Číslo řádku ve zdrojovém souboru, u které končí příkaz.|  
-  
-## <a name="see-also"></a>Viz také:  
- [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
- [Zobrazení řádků](../profiling/lines-view.md)   
- [Zobrazení řádků – vzorkování](../profiling/lines-view-dotnet-memory-sampling-data.md)   
- [Zobrazení řádků](../profiling/lines-view-sampling-data.md)
+Zobrazení řádků dat kolizí obsahuje údaje o výkonu pro příkazy, které se spouští při ukázky byly shromážděny během spuštění profilování. Ve zdrojovém souboru příkaz se týkají více než jeden řádek ve zdrojovém souboru a jeden řádek může obsahovat více než jeden výraz.
+
+ Příkaz je identifikován následující data:
+
+- Zdrojový soubor, který obsahuje Function – příkaz
+
+- Funkce, která obsahuje příkaz.
+
+- Zdrojový řádek, ve kterém se spustí příkaz.
+
+- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.
+
+- Řádku zdroje, u které končí příkaz.
+
+- Znak ve zdrojovém řádku, kdy příkaz skončí.
+
+  Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.
+
+  Následující tabulka popisuje sloupce řádky zobrazit sestavu.
+
+|Sloupec|Popis|
+|------------|-----------------|
+|**Výhradní čas zablokování**|Množství času, během které byl tento příkaz blokovat spouštění kódu v příkazu z důvodu kolize události. Čas zablokování ve funkcích, které volá příkaz není součástí.|
+|**% Výhradního času zablokování**|Procento času zablokování všech proces, který byl výhradní čas zablokování příkazu.|
+|**Výhradní spory**|Počet případů, kdy se tento příkaz bylo zablokováno spouštění kódu v příkazu z důvodu kolize události. Kolizní události ve funkcích, které volá příkaz nejsou zahrnuty.|
+|**% Výhradních sporů**|Procento kolizní události v procesu, které byly výhradních sporů tohoto prohlášení.|
+|**Adresa funkce**|Adresa funkce, která obsahuje tento příkaz.|
+|**Název funkce**|Plně kvalifikovaný název funkce, která obsahuje tento příkaz.|
+|**Celkový čas zablokování**|Čas zablokování v této smlouvě a funkce se volá v příkazu.|
+|**% Celkového času zablokování**|Procento času zablokování všech proces, který byl celkový čas zablokování příkazu.|
+|**Celkově sporů**|Počet pokusů, že tento příkaz a funkce, které byly volány v příkazu se zablokoval spuštění.|
+|**% Celkových sporů**|Procento kolizní události v procesu, které byly celkových sporů tohoto prohlášení.|
+|**Název čáry**|Profiler generovaný identifikátor řádku. Identifikátor se používá následující syntaxe:`SourceFile`**; [** `LineNumberStart` **,**`CharacterStart`**] ->; [**`LineNumberEnd`**,**`CharacterEnd`**]**|
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|
+|**Název modulu**|Název modulu, který obsahuje příkaz.|
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje příkaz.|
+|**ID procesu**|ID procesu (PID) PROFILOVANÉHO procesu.|
+|**Název procesu**|Název procesu.|
+|**Počáteční znak zdrojového kódu**|Odsazení počátečního znaku ve zdrojovém souboru řádku, na který tento příkaz spustí.|
+|**Koncový znak zdrojového kódu**|Odsazení počátečního znaku ve zdrojovém souboru řádku, u které končí tento příkaz.|
+|**Zdrojový soubor**|Název zdrojového souboru, který obsahuje příkaz funkce.|
+|**Začátek řádku zdroje**|Číslo řádku ve zdrojovém souboru, ve kterém se spustí příkaz.|
+|**Konec řádku zdroje**|Číslo řádku ve zdrojovém souboru, u které končí příkaz.|
+
+## <a name="see-also"></a>Viz také:
+- [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)
+- [Zobrazení řádků](../profiling/lines-view.md)
+- [Zobrazení řádků – vzorkování](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Zobrazení řádků](../profiling/lines-view-sampling-data.md)

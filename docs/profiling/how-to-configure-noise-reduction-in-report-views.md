@@ -14,70 +14,70 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6d72df07578701da33213be62d197be9c71ef5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ad6422e66195ff4ff63d010e7cabfec8e96d83a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992851"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638618"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Postupy: Konfigurace snížení šumu v zobrazeních sestav
-Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte množství dat, která jsou zobrazena v zobrazení stromu volání a přidělení. Pomocí snížení šumu jsou nejvážnějších problémy s výkonem. To je užitečné při analýze sestavy o výkonu.  
-  
- Možnosti konfigurace snížení šumu zahrnují následující nastavení:  
-  
--   **Ořezávání** při analýze sestavy zobrazení vynechá funkce, které spadají do nastavení hodnoty a prahové hodnoty, které jste nakonfigurovali, jak je popsáno v následujícím postupu oříznutí. Ve výchozím nastavení je povoleno oříznutí.  
-  
--   **Skládání** Pokud povolíte skládání, budou sloučeny po sobě následující funkce na cestě, která odpovídají nastavení, které jste nakonfigurovali, jak je popsáno v postupu kontejner, který následuje. Ve výchozím nastavení je standardně povolená skládání.  
-  
-### <a name="to-configure-trimming-for-a-performance-report"></a>Ke konfiguraci ořezávání pro sestavu výkonu  
-  
-1.  Při zobrazení stromu volání nebo zobrazení přidělení se zobrazí v generované sestavě na **Developer** nabídky, klikněte na tlačítko **Profiler** a potom klikněte na tlačítko **možnosti snížení šumu**.  
-  
-     **Snížení šumu** zobrazí se dialogové okno.  
-  
-2.  Povolení ořezávání, postupujte podle těchto kroků:  
-  
-    1.  Vyberte **povolení ořezávání**. Toto je výchozí nastavení.  
-  
+Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte množství dat, která jsou zobrazena v zobrazení stromu volání a přidělení. Pomocí snížení šumu jsou nejvážnějších problémy s výkonem. To je užitečné při analýze sestavy o výkonu.
+
+ Možnosti konfigurace snížení šumu zahrnují následující nastavení:
+
+-   **Ořezávání** při analýze sestavy zobrazení vynechá funkce, které spadají do nastavení hodnoty a prahové hodnoty, které jste nakonfigurovali, jak je popsáno v následujícím postupu oříznutí. Ve výchozím nastavení je povoleno oříznutí.
+
+-   **Skládání** Pokud povolíte skládání, budou sloučeny po sobě následující funkce na cestě, která odpovídají nastavení, které jste nakonfigurovali, jak je popsáno v postupu kontejner, který následuje. Ve výchozím nastavení je standardně povolená skládání.
+
+### <a name="to-configure-trimming-for-a-performance-report"></a>Ke konfiguraci ořezávání pro sestavu výkonu
+
+1.  Při zobrazení stromu volání nebo zobrazení přidělení se zobrazí v generované sestavě na **Developer** nabídky, klikněte na tlačítko **Profiler** a potom klikněte na tlačítko **možnosti snížení šumu**.
+
+     **Snížení šumu** zobrazí se dialogové okno.
+
+2.  Povolení ořezávání, postupujte podle těchto kroků:
+
+    1.  Vyberte **povolení ořezávání**. Toto je výchozí nastavení.
+
         > [!NOTE]
-        >  Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).  
-  
-    2.  Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a výběrem příslušné nastavení.  
-  
-    3.  Konfigurace nastavení požadované prahové hodnoty tak, že zadáte hodnotu v procentech v **prahová hodnota** textového pole.  
-  
-    4.  Pokud chcete povolit upozornění snížení šumu v generované sestavě, vyberte **zobrazovat upozornění, když je povolené snížení šumu**. Toto je výchozí nastavení.  
-  
-3.  Zakázat ořezávání, zrušte **povolení ořezávání**.  
-  
-4.  Klikněte na **OK**.  
-  
-### <a name="to-configure-folding-for-a-performance-report"></a>Ke konfiguraci skládání pro sestavu výkonu  
-  
-1.  Na **Developer** nabídky, klikněte na tlačítko **Profiler** a potom klikněte na tlačítko **možnosti snížení šumu**.  
-  
-     **Snížení šumu** zobrazí se dialogové okno.  
-  
-2.  Pokud chcete povolit skládání, postupujte podle těchto kroků:  
-  
-    1.  Vyberte **Povolit skládání**. Toto je výchozí nastavení.  
-  
+        >  Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).
+
+    2.  Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a výběrem příslušné nastavení.
+
+    3.  Konfigurace nastavení požadované prahové hodnoty tak, že zadáte hodnotu v procentech v **prahová hodnota** textového pole.
+
+    4.  Pokud chcete povolit upozornění snížení šumu v generované sestavě, vyberte **zobrazovat upozornění, když je povolené snížení šumu**. Toto je výchozí nastavení.
+
+3.  Zakázat ořezávání, zrušte **povolení ořezávání**.
+
+4.  Klikněte na **OK**.
+
+### <a name="to-configure-folding-for-a-performance-report"></a>Ke konfiguraci skládání pro sestavu výkonu
+
+1.  Na **Developer** nabídky, klikněte na tlačítko **Profiler** a potom klikněte na tlačítko **možnosti snížení šumu**.
+
+     **Snížení šumu** zobrazí se dialogové okno.
+
+2.  Pokud chcete povolit skládání, postupujte podle těchto kroků:
+
+    1.  Vyberte **Povolit skládání**. Toto je výchozí nastavení.
+
         > [!NOTE]
-        >  Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).  
-  
-    2.  Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a vyberte příslušné nastavení.  
-  
-    3.  Konfigurace nastavení požadované prahové hodnoty tak, že zadáte hodnotu v procentech v **prahová hodnota** textového pole.  
-  
-    4.  Pokud chcete povolit upozornění snížení šumu v generované sestavě, vyberte **zobrazovat upozornění, když je povolené snížení šumu**. Toto je výchozí nastavení.  
-  
-3.  Chcete-li zakázat skládání, zrušte **Povolit skládání**.  
-  
-4.  Klikněte na **OK**.  
-  
-## <a name="see-also"></a>Viz také:  
- [Přizpůsobení zobrazení sestav nástrojů výkonu](../profiling/customizing-performance-tools-report-views.md)   
- [Postupy: Vyloučení nebo zahrnutí krátkých funkcí z instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
- [Zobrazení stromu volání](../profiling/call-tree-view.md)   
- [Zobrazení přidělení](../profiling/dotnet-memory-allocations-view.md)
+        >  Pokud je povolené snížení šumu na informačním panelu se zobrazí v sestavě. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md) a [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md).
+
+    2.  Nakonfigurovat pomocí nastavení hodnoty **hodnotu** rozevíracího seznamu a vyberte příslušné nastavení.
+
+    3.  Konfigurace nastavení požadované prahové hodnoty tak, že zadáte hodnotu v procentech v **prahová hodnota** textového pole.
+
+    4.  Pokud chcete povolit upozornění snížení šumu v generované sestavě, vyberte **zobrazovat upozornění, když je povolené snížení šumu**. Toto je výchozí nastavení.
+
+3.  Chcete-li zakázat skládání, zrušte **Povolit skládání**.
+
+4.  Klikněte na **OK**.
+
+## <a name="see-also"></a>Viz také:
+- [Přizpůsobení zobrazení sestav nástrojů výkonu](../profiling/customizing-performance-tools-report-views.md)
+- [Postupy: Vyloučení nebo zahrnutí krátkých funkcí z instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [Zobrazení stromu volání](../profiling/call-tree-view.md)
+- [Zobrazení přidělení](../profiling/dotnet-memory-allocations-view.md)

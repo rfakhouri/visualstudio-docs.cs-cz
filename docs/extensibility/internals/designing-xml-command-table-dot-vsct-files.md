@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923091"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641543"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Návrh souborů tabulky (.vsct) příkaz XML
 Tabulky příkazů XML (*.vsct*) soubor popisuje rozložení a vzhled příkaz položek pro balíček VSPackage. Příkaz položky zahrnují tlačítka, pole se seznamem, nabídky, panely nástrojů a skupiny položek příkazu. Tento článek popisuje XML souborů tabulky příkazů, jak ovlivňují příkaz položky a v nabídkách a postupy jejich vytvoření.
@@ -61,7 +61,7 @@ Tabulky příkazů XML (*.vsct*) soubor popisuje rozložení a vzhled příkaz p
 - Klávesové zkratky: Už máte zadejte emulátoru. Pokud zadáte jednu, kompilátor bude předpokládat, že v editoru a emulátor jsou stejné.
 
 - Keychord: Keychord byla vyřazena. Nový formát je *klíč1, Mod1, klic2, Mod2*.  Můžete zadat znak, šestnáctkové číslo nebo konstantu VK.
-       
+
 Nový kompilátor *vsct.exe*, zkompiluje obě *.ctc* a *.vsct* soubory. Starý *ctc.exe* kompilátoru, ale nebude rozpoznat nebo kompilací *.vsct* soubory.
 
 Můžete použít *vsct.exe* kompilátor pro převod z existujícího *.cto* do souboru *.vsct* souboru. Další informace najdete v tématu [jak: Vytvoření souboru .vsct z existujícího souboru .cto](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
@@ -69,31 +69,31 @@ Můžete použít *vsct.exe* kompilátor pro převod z existujícího *.cto* do 
 ## <a name="the-vsct-file-elements"></a>Prvky souborů .vsct
  Příkaz Tabulka obsahuje následující hierarchie a prvky:
 
- [Commandtable – element](../../extensibility/commandtable-element.md): Představuje všechny příkazy, nabídky skupin a nabídky přidružené sady VSPackage.
+- [Commandtable – element](../../extensibility/commandtable-element.md): Představuje všechny příkazy, nabídky skupin a nabídky přidružené sady VSPackage.
 
- [Extern – element](../../extensibility/extern-element.md): Všechny externí .h soubory, které chcete sloučit s odkazy *.vsct* souboru.
+- [Extern – element](../../extensibility/extern-element.md): Všechny externí .h soubory, které chcete sloučit s odkazy *.vsct* souboru.
 
- [Prvek direktivy include](../../extensibility/include-element.md): Odkazuje na další záhlaví (.h) soubory chcete kompilovat spolu s vaší *.vsct* souboru. A *.vsct* soubor může obsahovat *.h* soubory, které obsahují konstanty, které určují příkazy skupiny nabídek a nabídek, které poskytuje integrované vývojové prostředí nebo jiné VSPackage.
+- [Prvek direktivy include](../../extensibility/include-element.md): Odkazuje na další záhlaví (.h) soubory chcete kompilovat spolu s vaší *.vsct* souboru. A *.vsct* soubor může obsahovat *.h* soubory, které obsahují konstanty, které určují příkazy skupiny nabídek a nabídek, které poskytuje integrované vývojové prostředí nebo jiné VSPackage.
 
- [Commands – element](../../extensibility/commands-element.md): Představuje všechny jednotlivé příkazy, které mohou být provedeny. Každý příkaz má následující čtyři podřízených elementů:
+- [Commands – element](../../extensibility/commands-element.md): Představuje všechny jednotlivé příkazy, které mohou být provedeny. Každý příkaz má následující čtyři podřízených elementů:
 
- [Menus – element](../../extensibility/menus-element.md): Představuje všechny nabídky a panely nástrojů v sady VSPackage. Nabídky jsou kontejnery pro skupiny příkazů.
+- [Menus – element](../../extensibility/menus-element.md): Představuje všechny nabídky a panely nástrojů v sady VSPackage. Nabídky jsou kontejnery pro skupiny příkazů.
 
- [Groups – element](../../extensibility/groups-element.md): Představuje všechny skupiny v sady VSPackage. Skupiny jsou kolekce jednotlivé příkazy.
+- [Groups – element](../../extensibility/groups-element.md): Představuje všechny skupiny v sady VSPackage. Skupiny jsou kolekce jednotlivé příkazy.
 
- [Buttons – element](../../extensibility/buttons-element.md): Představuje všechny příkazy a položek nabídky v sady VSPackage. Tlačítka jsou vizuální ovládací prvky, které můžou být spojené s příkazy.
+- [Buttons – element](../../extensibility/buttons-element.md): Představuje všechny příkazy a položek nabídky v sady VSPackage. Tlačítka jsou vizuální ovládací prvky, které můžou být spojené s příkazy.
 
- [Bitmaps – element](../../extensibility/bitmaps-element.md): Představuje všechny rastrové obrázky pro všechna tlačítka ve sady VSPackage. Rastrové obrázky mají obrázky, které zobrazují vedle nebo na příkazových tlačítkách, v závislosti na kontextu.
+- [Bitmaps – element](../../extensibility/bitmaps-element.md): Představuje všechny rastrové obrázky pro všechna tlačítka ve sady VSPackage. Rastrové obrázky mají obrázky, které zobrazují vedle nebo na příkazových tlačítkách, v závislosti na kontextu.
 
- [Commandplacements – element](../../extensibility/commandplacements-element.md): Určuje další umístění, kde jednotlivé příkazy by měl být umístěn v nabídkách vašeho balíčku VSPackage.
+- [Commandplacements – element](../../extensibility/commandplacements-element.md): Určuje další umístění, kde jednotlivé příkazy by měl být umístěn v nabídkách vašeho balíčku VSPackage.
 
- [Visibilityconstraints – element](../../extensibility/visibilityconstraints-element.md): Určuje, zda příkaz zobrazí vůbec časy, nebo pouze v určitých kontextech, například když se objeví dialogové okno zvláštní nebo okno. Nabídek a příkazů, které mají hodnotu u tohoto elementu se zobrazí pouze v případě, že zadaný kontext je aktivní. Výchozím chováním je zobrazení příkazu za všech okolností.
+- [Visibilityconstraints – element](../../extensibility/visibilityconstraints-element.md): Určuje, zda příkaz zobrazí vůbec časy, nebo pouze v určitých kontextech, například když se objeví dialogové okno zvláštní nebo okno. Nabídek a příkazů, které mají hodnotu u tohoto elementu se zobrazí pouze v případě, že zadaný kontext je aktivní. Výchozím chováním je zobrazení příkazu za všech okolností.
 
- [Keybindings – element](../../extensibility/keybindings-element.md): Určuje všechny klávesové zkratky pro příkazy. To znamená, že nejmíň jeden kombinace kláves, které musí být stisknutí k provedení příkazu, jako například **Ctrl**+**S**.
+- [Keybindings – element](../../extensibility/keybindings-element.md): Určuje všechny klávesové zkratky pro příkazy. To znamená, že nejmíň jeden kombinace kláves, které musí být stisknutí k provedení příkazu, jako například **Ctrl**+**S**.
 
- [Usedcommands – element](../../extensibility/usedcommands-element.md): Informuje o tom, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí, i když zadaný příkaz je implementována jiným kódem, pokud aktuální VSPackage je aktivní, poskytuje implementace příkazu.
+- [Usedcommands – element](../../extensibility/usedcommands-element.md): Informuje o tom, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí, i když zadaný příkaz je implementována jiným kódem, pokud aktuální VSPackage je aktivní, poskytuje implementace příkazu.
 
- [Symbols – element](../../extensibility/symbols-element.md): Obsahuje názvy symbolů a identifikátory GUID všech příkazů v balíčku.
+- [Symbols – element](../../extensibility/symbols-element.md): Obsahuje názvy symbolů a identifikátory GUID všech příkazů v balíčku.
 
 ## <a name="vsct-file-design-guidelines"></a>Pokyny k návrhu souboru .vsct
  Úspěšně návrhu *.vsct* souborů, postupujte podle následujících pokynů.
@@ -122,4 +122,4 @@ Můžete použít *vsct.exe* kompilátor pro převod z existujícího *.cto* do 
  Spusťte nástroj pomocí příkazu **/reset CreateExpInstance**. Mějte na paměti, že tento nástroj odebere z podregistru experimentální všechny registrované nejsou obvykle nainstalovány s rozšířením VSPackages [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Viz také:
- [Rozšíření nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)
+- [Rozšíření nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)

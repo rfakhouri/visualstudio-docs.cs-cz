@@ -22,35 +22,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b09c98fb41adcf1d094ca3cf35e9415773e5c292
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2188ef3026e36d5c97cf35cd29362411c473973e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963525"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624032"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory úkolu
 Vytvoří *ZIP* archiv z obsah adresáře.
 
 >[!NOTE]
 >`ZipDirectory` Úloh je k dispozici v MSBuild 15.8 a vyšší pouze.
-  
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `ZipDirectory` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
+
+## <a name="parameters"></a>Parametry
+ Následující tabulka popisuje parametry `ZipDirectory` úloh.
+
+|Parametr|Popis|
+|---------------|-----------------|
 |`DestinationFile`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametr<br /><br /> Úplná cesta k *ZIP* souboru se má vytvořit.|
 |`Overwrite`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, přeskočí se přepsat cílový soubor, pokud existuje. Výchozí hodnota je `false`.|
 |`SourceDirectory`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje adresář, který chcete vytvořit *ZIP* z archivu.|
-  
-## <a name="remarks"></a>Poznámky  
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Příklad  
+
+## <a name="remarks"></a>Poznámky
+ Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Příklad
  Následující příklad vytvoří *ZIP* archiv z výstupního adresáře po sestavení projektu.
-  
-```xml  
+
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <Target Name="ZipOutputPath" AfterTargets="Build">
@@ -61,7 +61,7 @@ Vytvoří *ZIP* archiv z obsah adresáře.
 
 </Project>
 ```
-  
-## <a name="see-also"></a>Viz také:  
- [Úlohy](../msbuild/msbuild-tasks.md)   
- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+
+## <a name="see-also"></a>Viz také:
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
