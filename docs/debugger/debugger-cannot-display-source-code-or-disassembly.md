@@ -16,27 +16,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3d745622666bd6458d5c3de916bc7b7787292e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 466f8103b2b61d9922621ff2734dc88a20cd36bf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916456"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683971"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Ladicí program nemůže zobrazit zdrojový kód nebo zpětný překlad.
-Přečte tuto chybu:  
-  
- Ladicí program nemůže zobrazit zdrojový kód nebo zpětný překlad pro aktuální umístění, kde vykonávání se zastavilo.  
-  
- K této chybě může dojít z několika důvodů:  
-  
--   Můžete narazit zarážku v umístění, pro který neexistuje žádný zdrojový kód při ladění v jazyce, který nepodporuje zpětný překlad. Otevřít **zarážky** okna, vyhledejte zarážku zase ho smažete.  
-  
--   Když provádíte ladění skriptu, můžete narazit zarážky během nebyly žádná vlákna ve svém programu. Zvolte **krok** nebo **pokračovat** z **ladění** nabídky pokračovat v ladění.  
-  
--   Důležité informace o zabezpečení může znemožnit ladicího programu ze zásobníku a vlákna, zápis a další informace o kontextu čtením program, který ladíte. Toto je nejčastěji dochází, pokud jsou ladění webové aplikace a nemáte správná oprávnění pro přístup k virtuálnímu adresáři. Nastavení zabezpečení pro virtuální adresář pro anonymní a zkuste to znovu.  
-  
+Přečte tuto chybu:
+
+ Ladicí program nemůže zobrazit zdrojový kód nebo zpětný překlad pro aktuální umístění, kde vykonávání se zastavilo.
+
+ K této chybě může dojít z několika důvodů:
+
+-   Můžete narazit zarážku v umístění, pro který neexistuje žádný zdrojový kód při ladění v jazyce, který nepodporuje zpětný překlad. Otevřít **zarážky** okna, vyhledejte zarážku zase ho smažete.
+
+-   Když provádíte ladění skriptu, můžete narazit zarážky během nebyly žádná vlákna ve svém programu. Zvolte **krok** nebo **pokračovat** z **ladění** nabídky pokračovat v ladění.
+
+-   Důležité informace o zabezpečení může znemožnit ladicího programu ze zásobníku a vlákna, zápis a další informace o kontextu čtením program, který ladíte. Toto je nejčastěji dochází, pokud jsou ladění webové aplikace a nemáte správná oprávnění pro přístup k virtuálnímu adresáři. Nastavení zabezpečení pro virtuální adresář pro anonymní a zkuste to znovu.
+
 ## <a name="see-also"></a>Viz také
- [Ladění v sadě Visual Studio](../debugger/index.md)  
- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)  
- [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)
+- [Ladění v sadě Visual Studio](../debugger/index.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
+- [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)

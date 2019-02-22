@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317767"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720182"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace Features (C#, Visual Basic, C++)
 
@@ -56,7 +56,7 @@ Snímky jsou k dispozici v sadě Visual Studio Enterprise 2017 verze 15.5 nebo n
 
 Tato možnost není povolena ve výchozím nastavení, ale nástroj IntelliTrace umí zaznamenat volání metody spolu s událostmi. Povolte shromažďování metoda volání přejít na **nástroje > Možnosti > Nástroje IntelliTrace > Obecné**a vyberte **události IntelliTrace a informací o (režim pouze spravovaný) volání**.
 
-Informace o volání není aktuálně k dispozici pro aplikace .NET Core a ASP.NET Core. 
+Informace o volání není aktuálně k dispozici pro aplikace .NET Core a ASP.NET Core.
 
 To umožňuje zobrazit historii zásobníku volání, krokovat zpět a vpřed mezi voláními ve vašem kódu. Nástroj IntelliTrace zaznamenává data, jako jsou názvy metod, metoda vstupní a výstupní body a některé hodnoty parametrů a návratové hodnoty.
 

@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_FILE_LINE | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_CODE_FILE_LINE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ab7a0b226b7a8fac779e5c5109700a37e60d9d0
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 611a3103c2747040ae9d72c53a905ee3f23c180a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315700"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688287"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 Obsahuje data pro umístění zarážky na konkrétní řádek v souboru zdrojového kódu.
@@ -32,11 +32,9 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 ```
 
 ## <a name="members"></a>Členové
-`bstrContext`  
-Kontext k zarážce, obvykle název metody nebo funkce jako zobrazené v zásobníku volání.
+`bstrContext` Kontext k zarážce, obvykle název metody nebo funkce jako zobrazené v zásobníku volání.
 
-`pDocPos`  
-[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objekt, který reprezentuje dokument umístění zarážky.
+`pDocPos` [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objekt, který reprezentuje dokument umístění zarážky.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je členem skupiny [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktury v rámci sjednocení.
@@ -49,6 +47,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
+- [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
