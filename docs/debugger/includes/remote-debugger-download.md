@@ -8,17 +8,17 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 6c429614a094ceefc4f9a1e358ebc8ee26c40773
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 887d41805063f64c6b96a0375284928efd9321ef
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50915138"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56741613"
 ---
 Na vzdáleném zařízení nebo serveru, na kterém chcete ladit na, spíše než počítač s Visual Studio stáhněte a nainstalujte správnou verzi nástrojů remote tools z odkazů v následující tabulce.
 
-- Stáhněte si nejnovější nástroje pro vzdálenou pro vaši verzi sady Visual Studio. Nejnovější verze nástrojů remote tools je kompatibilní s předchozími verzemi sady Visual Studio, ale dřívější verze nástrojů remote tools nejsou kompatibilní s novějšími verzemi sady Visual Studio. 
-- Stáhněte nástroje remote tools se stejnou architekturu jako počítač už je nainstalujete na. Pokud chcete ladit 32bitovou aplikaci na vzdáleném počítači s 64bitovým operačním systémem, například nainstalujte nástroje pro vzdálenou 64-bit. 
+- Stáhněte si nejnovější nástroje pro vzdálenou pro vaši verzi sady Visual Studio. Nejnovější verze nástrojů remote tools je kompatibilní s předchozími verzemi sady Visual Studio, ale dřívější verze nástrojů remote tools nejsou kompatibilní s novějšími verzemi sady Visual Studio.
+- Stáhněte nástroje remote tools se stejnou architekturu jako počítač už je nainstalujete na. Pokud chcete ladit 32bitovou aplikaci na vzdáleném počítači s 64bitovým operačním systémem, například nainstalujte nástroje pro vzdálenou 64-bit.
 
 |Version|Odkaz|Poznámky|
 |-|-|-|
@@ -30,6 +30,5 @@ Na vzdáleném zařízení nebo serveru, na kterém chcete ladit na, spíše ne�
 Můžete spustit vzdálený ladicí program tak, že zkopírujete *msvsmon.exe* do vzdáleného počítače, nikoli instalace vzdálených nástrojů. Ale Průvodce konfigurací vzdáleného ladicího programu (*rdbgwiz.exe*) je k dispozici pouze při instalaci nástrojů remote tools. Budete muset použít Průvodce pro konfiguraci, pokud chcete spustit vzdálený ladicí program jako službu. Další informace najdete v tématu [(volitelné) konfigurovat vzdálený ladicí program jako službu](../../debugger/remote-debugging.md#bkmk_configureService).
 
 >[!NOTE]
->- Chcete-li ladit aplikace pro Windows 10 na zařízeních ARM, použijte ARM64, což je k dispozici v nejnovější verzi nástrojů remote Tools.  
+>- Chcete-li ladit aplikace pro Windows 10 na zařízeních ARM, použijte ARM64, což je k dispozici v nejnovější verzi nástrojů remote Tools.
 >- Chcete-li ladit aplikace pro Windows 10 na zařízení s Windows RT, použijte ARM, která je k dispozici pouze ve Visual Studiu 2015 stažení nástrojů remote tools.
-
