@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3e61cc093e6a987eec6fdd865b0316901e6c46d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: f399c82e5bc5619e0690cb27245baab9944c9377
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631299"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691004"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Získá informace o chybě rozlišení zarážku.
@@ -39,10 +39,12 @@ int GetResolutionInfo( 
 ```
 
 #### <a name="parameters"></a>Parametry
-`dwFields`  
+`dwFields`
+
 [in] Kombinace příznaků z [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) výčet určující, které pole `pErrorResolutionInfo` mají doplnit.
 
-`pErrorResolutionInfo`  
+`pErrorResolutionInfo`
+
 [out v] [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktura, která se vyplní popis řešení zarážek.
 
 ## <a name="return-value"></a>Návratová hodnota
@@ -51,7 +53,7 @@ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 ## <a name="example"></a>Příklad
 Následující příklad implementuje tuto metodu pro jednoduchý `CDebugErrorBreakpointResolution` objekt, který zveřejňuje [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) rozhraní.
 
-```
+```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(
     BPERESI_FIELDS dwFields,
     BP_ERROR_RESOLUTION_INFO* pBPErrorResolutionInfo)
@@ -150,6 +152,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)  
-[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+
+- [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+- [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

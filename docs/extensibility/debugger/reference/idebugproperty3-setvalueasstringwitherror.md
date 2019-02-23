@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3d317cf45692a8214f15c1473eb8f781b21451
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450305"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709275"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Nastaví hodnotu této vlastnosti a vrátí chybovou zprávu, pokud je to nutné.
@@ -43,17 +43,21 @@ int SetValueAsStringWithError(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pszValue`  
-[in] Hodnota k nastavení.
+`pszValue`
 
-`dwRadix`  
-[in] Základ číselné soustavy nastaví se hodnota.
+ [in] Hodnota k nastavení.
 
-`dwTimeout`  
-[in] Doba čekání nastavit hodnotu (`INFINITE` znamená, že stále čekat).
+`dwRadix`
 
-`errorString`  
-[out] Pokud došlo k chybě, nastavením této hodnoty, to obsahuje příčinu selhání.
+ [in] Základ číselné soustavy nastaví se hodnota.
+
+`dwTimeout`
+
+ [in] Doba čekání nastavit hodnotu (`INFINITE` znamená, že stále čekat).
+
+`errorString`
+
+ [out] Pokud došlo k chybě, nastavením této hodnoty, to obsahuje příčinu selhání.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -167,4 +171,4 @@ HRESULT CProperty::SetValueAsStringWithError(
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

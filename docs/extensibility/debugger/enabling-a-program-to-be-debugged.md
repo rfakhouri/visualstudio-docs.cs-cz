@@ -10,32 +10,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8faa677e5893c0737bcd89db5567ef7459f6d07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f301de66421ef1327b86d900305cb4ecbfb5623
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953223"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695125"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>Povolit program k ladění
-Předtím, než vaše ladicího stroje (DE) můžete ladit program, musí nejdřív spustit DE nebo připojit k existující program.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Získání portu](../../extensibility/debugger/getting-a-port.md)  
- Popisuje, jak získat port jako první krok k povolení ladění programu.  
-  
- [Registrace programu](../../extensibility/debugger/registering-the-program.md)  
- Vysvětluje povolení ladění programu na další krok: registrace s portem. Po registraci do programu můžete ladit buď tak, že proces připojení nebo ladění just-in-time (JIT).  
-  
- [Připojit k programu](../../extensibility/debugger/attaching-to-the-program.md)  
- Popisuje dál: připojování ladicího programu k programu.  
-  
- [Připojení založená na spuštění](../../extensibility/debugger/launch-based-attachment.md)  
- Popisuje přílohu spuštění programu, který je automaticky při spuštění pomocí SDM.  
-  
- [Odesílání požadovaných událostí](../../extensibility/debugger/sending-the-required-events.md)  
- Provede požadované události při vytváření ladicího stroje (DE) a připojení k programu.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Definuje ladicího stroje (DE) a jsou popsány služby implementované pomocí rozhraní DE a jak může způsobit přechod mezi různé provozní režimy ladicí program.
+Předtím, než vaše ladicího stroje (DE) můžete ladit program, musí nejdřív spustit DE nebo připojit k existující program.
+
+## <a name="in-this-section"></a>V tomto oddílu
+ [Získání portu](../../extensibility/debugger/getting-a-port.md) popisuje, jak získat port jako první krok k povolení ladění programu.
+
+ [Registrovat program](../../extensibility/debugger/registering-the-program.md) vysvětluje povolení ladění programu na další krok: registrace s portem. Po registraci do programu můžete ladit buď tak, že proces připojení nebo ladění just-in-time (JIT).
+
+ [Připojit k programu](../../extensibility/debugger/attaching-to-the-program.md) popisuje dál: připojování ladicího programu k programu.
+
+ [Na základě spuštění připojení](../../extensibility/debugger/launch-based-attachment.md) popisuje přílohu spuštění programu, který je automaticky při spuštění pomocí SDM.
+
+ [Odesílání požadovaných událostí](../../extensibility/debugger/sending-the-required-events.md) vás provede požadované události při vytváření ladicího stroje (DE) a připojení k programu.
+
+## <a name="related-sections"></a>Související oddíly
+ [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md) definuje ladicího stroje (DE) a jsou popsány služby implementované pomocí rozhraní DE a jak může způsobit přechod mezi různé provozní režimy ladicí program.

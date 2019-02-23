@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetMemoryContext64 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be0e07721e0f38db68bae2ff8a99aaf50b649b6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317845"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713864"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Převede objekt umístění nebo adresu paměti 64-bit na místní paměti.
@@ -40,14 +40,17 @@ int GetMemoryContext64 (
 ```
 
 #### <a name="parameters"></a>Parametry
-`pField`  
-[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , který popisuje objekt, který má být vyhledán. Pokud `NULL`, pak použijte `dwConstant` místo.
+`pField`
 
-`uConstant`  
-[in] Adresa paměti 64-bit, jako je například 0x50000000.
+ [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , který popisuje objekt, který má být vyhledán. Pokud `NULL`, pak použijte `dwConstant` místo.
 
-`ppMemCxt`  
-[out] Vrátí [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) rozhraní, které představuje adresu objektu, nebo adresy v paměti.
+`uConstant`
+
+ [in] Adresa paměti 64-bit, jako je například 0x50000000.
+
+`ppMemCxt`
+
+ [out] Vrátí [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) rozhraní, které představuje adresu objektu, nebo adresy v paměti.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -127,4 +130,4 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
+- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

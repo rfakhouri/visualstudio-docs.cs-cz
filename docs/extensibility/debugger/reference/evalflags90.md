@@ -1,7 +1,7 @@
 ---
 title: EVALFLAGS90 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93345609a7dadc240aa33ce2a1751f6d04ab4384
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 73673d0b0ca7ccb640a3fab2043bc35b26657a9b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315661"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720299"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Vytvoří výčet platné hodnoty pro příznaky, které řídí vyhodnocení výrazu. Tento výčet rozšiřuje [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) výčtu.
@@ -62,35 +62,25 @@ public enum enum_EVALFLAGS90
 ```
 
 #### <a name="parameters"></a>Parametry
-EVAL90_RETURNVALUE  
-Určuje, že návratová hodnota, pokud existuje, vyhodnocen.
+EVAL90_RETURNVALUE Určuje, že návratová hodnota, pokud existuje, vyhodnocen.
 
-EVAL90_NOSIDEEFFECTS  
-Určuje, že nebudou povoleny vedlejší účinky.
+EVAL90_NOSIDEEFFECTS Určuje, že nebudou povoleny vedlejší účinky.
 
-EVAL90_ALLOWBPS  
-Určuje zastavení zarážky.
+EVAL90_ALLOWBPS určuje zarážky se zastavuje.
 
-EVAL90_ALLOWERRORREPORT  
-Určuje tuto chybu generování sestav k hostiteli mají být povolena. Používá se především pro vyhodnocení výrazu ve skriptu v aplikaci Internet Explorer.
+EVAL90_ALLOWERRORREPORT určuje tuto chybu generování sestav k hostiteli mají být povolena. Používá se především pro vyhodnocení výrazu ve skriptu v aplikaci Internet Explorer.
 
-EVAL90_FUNCTION_AS_ADDRESS  
-Funkce sil má být vyhodnocen jako adresy, namísto volání funkce.
+Funkce sil EVAL90_FUNCTION_AS_ADDRESS má být vyhodnocen jako adresy, namísto volání funkce.
 
-EVAL90_NOFUNCEVAL  
-Zabraňuje vyhodnocení funkce. Představme si třeba, `int` token ve výrazu `myExpression(int) + 10`. Tato funkce může být správně vyhodnocen jako adresa, ale ne jako hodnotu.
+Funkce zabraňuje EVAL90_NOFUNCEVAL z právě vyhodnocuje. Představme si třeba, `int` token ve výrazu `myExpression(int) + 10`. Tato funkce může být správně vyhodnocen jako adresa, ale ne jako hodnotu.
 
-EVAL90_NOEVENTS  
-Příznak označující, že správce ladění relace (SDM) nebo integrovaném vývojovém prostředí by se neměly posílat události, ke kterým dochází při vyhodnocení výrazu.
+EVAL90_NOEVENTS příznak označující, že správce ladění relace (SDM) nebo integrovaném vývojovém prostředí by se neměly posílat události, ke kterým dochází při vyhodnocení výrazu.
 
-EVAL90_DESIGN_TIME_EXPR_EVAL  
-Umožňuje vyhodnocování výrazu v době návrhu.
+Umožňuje EVAL90_DESIGN_TIME_EXPR_EVAL vyhodnocení výrazu v době návrhu.
 
-EVAL90_ALLOW_IMPLICIT_VARS  
-Umožňuje implicitní vytváření proměnných.
+Umožňuje EVAL90_ALLOW_IMPLICIT_VARS implicitní vytváření proměnných.
 
-EVAL90_FORCE_EVALUATION_NOW  
-Vyhodnocení vynutí okamžité. To je užitečné při obsluze žádosti, jako je například požadavek uživatele.
+Vyhodnocení EVAL90_FORCE_EVALUATION_NOW vynutí okamžité. To je užitečné při obsluze žádosti, jako je například požadavek uživatele.
 
 ## <a name="requirements"></a>Požadavky
 Záhlaví: Msdbg90.h
@@ -100,4 +90,4 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

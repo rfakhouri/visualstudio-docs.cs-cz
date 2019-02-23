@@ -10,33 +10,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8f3c19559f5c2b267410d22fd30f32dca7a02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947098"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719762"
 ---
 # <a name="window-menu-commands"></a>Příkazy nabídky okna
-**Okno** nabídka obsahuje příkazy pro správu nástroje Spy ++ windows.  
-  
- **Cascade**  
- Znovu uspořádá všechna okna ve vzorku cascade.  
-  
- **Tile Horizontally**  
- Změna uspořádání všechna okna ve vzorku vodorovné dlaždice.  
-  
- **Svisle vedle sebe**  
- Znovu uspořádá všechna okna ve vzorku svislé dlaždice.  
-  
- **Uspořádat ikony**  
- Znovu uspořádá ikony zobrazení, pokud mají minimalizován systému windows.  
-  
- **Zavřít / Zavřít vše**  
- Zavře jednoho nebo všech windows v nástroji Spy ++.  
-  
- **Aktualizace**  
- Aktualizuje aktuálně vybrané zobrazení.  
-  
- **Window**  
- Umožňuje vybrat konkrétní okno.
+**Okno** nabídka obsahuje příkazy pro správu nástroje Spy ++ windows.
+
+ **Kaskádové** Přeuspořádá všechna okna ve vzorku cascade.
+
+ **Vodorovně nad sebe** uspořádat všechny systémy windows ve vzorku vodorovné dlaždice.
+
+ **Svisle vedle sebe** Přeuspořádá všechna okna ve vzorku svislé dlaždice.
+
+ **Uspořádat ikony** Uspořádá ikony zobrazení, pokud mají minimalizován systému windows.
+
+ **Zavření nebo ukončení všech** jednoho nebo všech windows v nástroji Spy ++ se zavře.
+
+ **Aktualizovat** aktualizuje aktuálně vybrané zobrazení.
+
+ **Okno** umožňuje vybrat konkrétní okno.

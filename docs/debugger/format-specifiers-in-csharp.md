@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227680"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698986"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory ve formátu C# v ladicím programu sady Visual Studio
 Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomocí specifikátorů formátu. Můžete také použít specifikátory formátu v **okamžité** okně **příkaz** okno v [zarážky s trasováním](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)a ve zdrojových oknech. Pokud pozastavíte výraz v těchto oknech, výsledek se zobrazí v [datového tipu](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) v zadaném formátu zobrazení.
@@ -68,5 +68,5 @@ V následující tabulce jsou popsány C# formát specifikátoru v ladicím prog
 |výsledky|Použít s proměnnou typu, který implementuje rozhraní IEnumerable nebo IEnumerable\<T >, obvykle výsledek výrazu dotazu. Zobrazí pouze členy, které obsahují výsledku dotazu.|Zobrazí všechny členy|Zobrazí členy, splňují podmínky dotazu|
 
 ## <a name="see-also"></a>Viz také:
-[Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)  
-[Okna Automatické hodnoty a místní hodnoty](../debugger/autos-and-locals-windows.md)
+- [Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)
+- [Okna Automatické hodnoty a místní hodnoty](../debugger/autos-and-locals-windows.md)

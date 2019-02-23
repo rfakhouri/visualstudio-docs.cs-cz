@@ -8,44 +8,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 675bd0ceef2b8eef382891bf0fc4b42400ca9df4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 304576391b2287aee7567b3ccc2e4514ce5cb2e8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018654"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711784"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
-Definuje jeho přítomnost, zda výchozí instanci [třída VsgDbg](vsgdbg-class.md) třídy – poskytující rozhraní zachytávání prostřednictvím kódu programu – pochází.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-#define VSG_NODEFAULT_INSTANCE  
-```  
-  
-## <a name="value"></a>Hodnota  
- Preprocesoru symbol, který podle jeho přítomnost nebo absence Určuje, zda výchozí instanci `VsgDbg` třídy je k dispozici. Pokud tento symbol není definován, pak žádný výchozí instanci `VsgDbg` třídy je k dispozici; jinak je výchozí instance k dispozici a inicializován před spuštěním programu.  
-  
- Programové zachytávání rozhraní je k dispozici prostřednictvím ukazatele, který má globální obor, `g_pVsgDbg`.  
-  
+Definuje jeho přítomnost, zda výchozí instanci [třída VsgDbg](vsgdbg-class.md) třídy – poskytující rozhraní zachytávání prostřednictvím kódu programu – pochází.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+#define VSG_NODEFAULT_INSTANCE
+```
+
+## <a name="value"></a>Hodnota
+ Preprocesoru symbol, který podle jeho přítomnost nebo absence Určuje, zda výchozí instanci `VsgDbg` třídy je k dispozici. Pokud tento symbol není definován, pak žádný výchozí instanci `VsgDbg` třídy je k dispozici; jinak je výchozí instance k dispozici a inicializován před spuštěním programu.
+
+ Programové zachytávání rozhraní je k dispozici prostřednictvím ukazatele, který má globální obor, `g_pVsgDbg`.
+
 ```cpp
-VsgDbg *g_pVsgDbg;  
-```  
-  
-## <a name="remarks"></a>Poznámky  
- Výchozí instance je často dostatečné, ale pokud chcete použít rozhraní zachytávání prostřednictvím kódu programu uvnitř knihovny DLL, po vytvoření zařízení D3D mimo tuto knihovnu DLL, musíte vytvořit a spravovat vlastní instance `VsgDbg` třídy. Pokud spravujete vlastní rozhraní pro zachytávání prostřednictvím kódu programu API tímto způsobem, zakázat výchozí instanci definováním `VSG_NODEFAULT_INSTANCE` , aby režijní náklady.  
-  
- Pokud není výchozí instancí zakázán, je automaticky inicializován před spuštěním vaší aplikace a automaticky je zničen při ukončení programu. Není nutné inicializovat nebo explicitně uninitialize této instance.  
-  
- Chcete-li zakázat výchozí instanci, je nutné definovat `VSG_NODEFAULT_INSTANCE` teprve potom zahrňte `vsgcapture.h` ve svém programu.  
-  
-## <a name="example"></a>Příklad  
- Tento příklad ukazuje, jak zakázat výchozí instanci:  
-  
+VsgDbg *g_pVsgDbg;
+```
+
+## <a name="remarks"></a>Poznámky
+ Výchozí instance je často dostatečné, ale pokud chcete použít rozhraní zachytávání prostřednictvím kódu programu uvnitř knihovny DLL, po vytvoření zařízení D3D mimo tuto knihovnu DLL, musíte vytvořit a spravovat vlastní instance `VsgDbg` třídy. Pokud spravujete vlastní rozhraní pro zachytávání prostřednictvím kódu programu API tímto způsobem, zakázat výchozí instanci definováním `VSG_NODEFAULT_INSTANCE` , aby režijní náklady.
+
+ Pokud není výchozí instancí zakázán, je automaticky inicializován před spuštěním vaší aplikace a automaticky je zničen při ukončení programu. Není nutné inicializovat nebo explicitně uninitialize této instance.
+
+ Chcete-li zakázat výchozí instanci, je nutné definovat `VSG_NODEFAULT_INSTANCE` teprve potom zahrňte `vsgcapture.h` ve svém programu.
+
+## <a name="example"></a>Příklad
+ Tento příklad ukazuje, jak zakázat výchozí instanci:
+
 ```cpp
-// Define VSG_NODEFAULT_INSTANCE before including vsgcapture.h  
-#define VSG_NODEFAULT_INSTANCE  
-  
-#include <vsgcapture.h>  
+// Define VSG_NODEFAULT_INSTANCE before including vsgcapture.h
+#define VSG_NODEFAULT_INSTANCE
+
+#include <vsgcapture.h>
 ```

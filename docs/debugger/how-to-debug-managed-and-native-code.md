@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 011e51e126fc70f12be7dd94c05b27df17e77adf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690239"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714618"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Kurz: Ladění C# a C++ ve stejné relaci ladění
 
-Visual Studio vám umožňuje povolit více než jeden typ ladicího programu v relaci ladění, která se nazývá ladění ve smíšeném režimu. V tomto kurzu zjistíte, jak ladění spravovaného a nativního kódu v jedné relaci ladění. 
+Visual Studio vám umožňuje povolit více než jeden typ ladicího programu v relaci ladění, která se nazývá ladění ve smíšeném režimu. V tomto kurzu zjistíte, jak ladění spravovaného a nativního kódu v jedné relaci ladění.
 
 Tento kurz ukazuje postupy při ladění nativního kódu ze spravovaných aplikací, ale můžete také [ladění spravovaného kódu z nativní aplikace](../debugger/how-to-debug-in-mixed-mode.md). Ladicí program podporuje také jiné typy ve smíšeném režimu ladění, jako je ladění [Python a nativní kód](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md)a pomocí ladicího programu skriptu v typech aplikací, jako je například technologie ASP.NET.
 
@@ -60,7 +60,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
    Visual Studio vytvoří prázdný projekt a zobrazí ho v **Průzkumníka řešení**.
 
-1. V **Průzkumníka řešení**vyberte **zdrojové soubory**a pak vyberte **projektu** > **přidat novou položku**. Nebo klikněte pravým tlačítkem na **zdrojové soubory** a vyberte **přidat** > **nová položka**. 
+1. V **Průzkumníka řešení**vyberte **zdrojové soubory**a pak vyberte **projektu** > **přidat novou položku**. Nebo klikněte pravým tlačítkem na **zdrojové soubory** a vyberte **přidat** > **nová položka**.
 
 1. V **nová položka** dialogového okna, vyberte **soubor C++ (.cpp)**. Typ **Mixed_Mode.cpp** v **název** pole a pak vyberte **přidat**.
 
@@ -71,7 +71,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. V **Průzkumníka řešení**vyberte **hlavičkové soubory**a pak vyberte **projektu** > **přidat novou položku**. Nebo klikněte pravým tlačítkem na **hlavičkové soubory** a vyberte **přidat** > **nová položka**. 
+1. V **Průzkumníka řešení**vyberte **hlavičkové soubory**a pak vyberte **projektu** > **přidat novou položku**. Nebo klikněte pravým tlačítkem na **hlavičkové soubory** a vyberte **přidat** > **nová položka**.
 
 1. V **nová položka** dialogového okna, vyberte **soubor hlaviček (.h)**. Typ **Mixed_Mode.h** v **název** pole a pak vyberte **přidat**.
 
@@ -100,10 +100,10 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
 1. V **Průzkumníka řešení**, vyberte **Mixed_Mode_Debugging** uzel projektu a vyberte **vlastnosti** ikonu, nebo klikněte pravým tlačítkem na uzel projektu a vyberte **Vlastnosti**.
 
-1. V horní části **vlastnosti** podokno, ujistěte se, že **konfigurace** je nastavena na **Active(Debug)** a **platformy** je stejný jako co nastavit na panelu nástrojů: **x64**, nebo **Win32** pro x86 platformy. 
+1. V horní části **vlastnosti** podokno, ujistěte se, že **konfigurace** je nastavena na **Active(Debug)** a **platformy** je stejný jako co nastavit na panelu nástrojů: **x64**, nebo **Win32** pro x86 platformy.
 
    > [!IMPORTANT]
-   > Pokud přejdete z platformy **x86** k **x64** nebo naopak, je nutné znovu nakonfigurovat vlastnosti pro nové platformy. 
+   > Pokud přejdete z platformy **x86** k **x64** nebo naopak, je nutné znovu nakonfigurovat vlastnosti pro nové platformy.
 
 1. V části **vlastnosti konfigurace** v levém podokně vyberte **Linkeru** > **Upřesnit**a v rozevíracím seznamu vedle **bez vstupního bodu**vyberte **ne**. Pokud jste museli změňte ji na **ne**vyberte **použít**.
 
@@ -125,7 +125,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 1. V **nový projekt** dialogu **Visual C#** a v prostředním podokně:
 
    - Aplikace rozhraní .NET Framework, vyberte **Konzolová aplikace (.NET Framework)**.
-   
+
    - Pro aplikace .NET Core, vyberte **Konzolová aplikace (.NET Core)**.
 
 1. V **název** zadejte **Mixed_Mode_Calling_App**a pak vyberte **OK**.
@@ -164,9 +164,9 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
 1. Vyberte **souboru** > **uložit Program.cs** nebo stiskněte klávesu **Ctrl**+**S** k uložení souboru.
 
-## <a name="configure-mixed-mode-debugging"></a>Konfigurovat ladění ve smíšeném režimu 
+## <a name="configure-mixed-mode-debugging"></a>Konfigurovat ladění ve smíšeném režimu
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Konfigurovat ladění ve smíšeném režimu pro aplikace rozhraní .NET Framework 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Konfigurovat ladění ve smíšeném režimu pro aplikace rozhraní .NET Framework
 
 1. V **Průzkumníka řešení**, vyberte **Mixed_Mode_Calling_App** uzel projektu a vyberte **vlastnosti** ikonu, nebo klikněte pravým tlačítkem na uzel projektu a vyberte **Vlastnosti**.
 
@@ -174,11 +174,11 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
     ![Povolit ladění ve smíšeném režimu](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Konfigurovat ladění ve smíšeném režimu pro aplikace .NET Core 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Konfigurovat ladění ve smíšeném režimu pro aplikace .NET Core
 
 Ve většině verzí sady Visual Studio 2017, je nutné použít *launchSettings.json* souboru místo vlastnosti projektu pro povolení ladění ve smíšeném režimu pro nativní kód v aplikaci .NET Core. Pokud chcete sledovat aktualizace uživatelského rozhraní pro tuto funkci, najdete v tomto [problém Githubu](https://github.com/dotnet/project-system/issues/1125).
 
-1. V **Průzkumníka řešení**, rozbalte **vlastnosti**a otevřete *launchSettings.json* souboru. 
+1. V **Průzkumníka řešení**, rozbalte **vlastnosti**a otevřete *launchSettings.json* souboru.
 
    >[!NOTE]
    >Ve výchozím nastavení *launchSettings.json* probíhá *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Pokud *launchSettings.json* neexistuje, vyberte **Mixed_Mode_Calling_App** projekt **Průzkumníka řešení** a pak vyberte **vlastnosti** ikonu, nebo klikněte pravým tlačítkem na projekt a vyberte **vlastnosti**. Změňte dočasné v **ladění** kartu a sestavte projekt. Tím se vytvoří *launchSettings.json* souboru. Vrátit zpět změny, které jste provedli v **ladění** kartu.

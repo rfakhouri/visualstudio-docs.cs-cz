@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c0226ab3535587466629561738efa6d12d4499
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018950"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713956"
 ---
 # <a name="how-to-change-fonts"></a>Postupy: Změna písma
-Můžete změnit písmo, styl písma a velikost písma pro nástroje Spy ++ windows.  
-  
-### <a name="to-change-font-options"></a>Chcete-li změnit možnosti písma  
-  
-1. Z **zobrazení** nabídce zvolte **písmo**.  
-  
-2. Zvolte písmo, styl písma a velikost písma.  
-  
-3. Klikněte na **OK**.  
-  
-   Výběr **uložit písmo jako výchozí** způsobí, že všechny budoucí nástroje Spy ++ windows používat toto písmo.  
-  
-## <a name="see-also"></a>Viz také  
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)   
- [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)
+Můžete změnit písmo, styl písma a velikost písma pro nástroje Spy ++ windows.
+
+### <a name="to-change-font-options"></a>Chcete-li změnit možnosti písma
+
+1. Z **zobrazení** nabídce zvolte **písmo**.
+
+2. Zvolte písmo, styl písma a velikost písma.
+
+3. Klikněte na **OK**.
+
+   Výběr **uložit písmo jako výchozí** způsobí, že všechny budoucí nástroje Spy ++ windows používat toto písmo.
+
+## <a name="see-also"></a>Viz také
+- [Použití nástroje Spy++](../debugger/using-spy-increment.md)
+- [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)
+- [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

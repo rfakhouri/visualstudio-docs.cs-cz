@@ -10,32 +10,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8ea4f053d28ea14c05a50e3bc187faf6f6e207
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fefeaf07c923a5fefa282efcd96948b2d907cca1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966852"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704641"
 ---
 # <a name="mchildren-field"></a>m_children – pole
-Seznam podřízených úloh, které jsou registrované s touto úlohou.  
-  
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Sestavení:** mscorlib (v *mscorlib.dll*)  
-  
- Protože tento člen interní nemůže získat přístup z rozhraní .NET Framework, je k dispozici v Common Intermediate Language (CIL) následující syntaxi.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```csharp 
-.field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
-```  
-  
-## <a name="remarks"></a>Poznámky  
- Když úloha běží, by měl přístup pouze vlákno, které provádí úlohy Toto pole.  
-  
- Pokud je úkol dokončen, ostatní vlákna tak dlouho, dokud není nic k němu přidat nebo odebrat cokoli z něj přístupná toto pole.  
-  
-## <a name="see-also"></a>Viz také:  
- [Třída ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+Seznam podřízených úloh, které jsou registrované s touto úlohou.
+
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Sestavení:** mscorlib (v *mscorlib.dll*)
+
+ Protože tento člen interní nemůže získat přístup z rozhraní .NET Framework, je k dispozici v Common Intermediate Language (CIL) následující syntaxi.
+
+## <a name="syntax"></a>Syntaxe
+
+```csharp
+.field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children
+```
+
+## <a name="remarks"></a>Poznámky
+ Když úloha běží, by měl přístup pouze vlákno, které provádí úlohy Toto pole.
+
+ Pokud je úkol dokončen, ostatní vlákna tak dlouho, dokud není nic k němu přidat nebo odebrat cokoli z něj přístupná toto pole.
+
+## <a name="see-also"></a>Viz také:
+- [Třída ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

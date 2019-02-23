@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessQueryProperties::QueryProperties | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
@@ -10,53 +10,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8538b315d099544fe466f8ab318c571020874175
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980607"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701456"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Tato metoda dotazy pro hodnoty zadané vlastnosti ladění procesu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT QueryProperties(  
-   ULONG                  celt,  
-   PROCESS_PROPERTY_TYPE *rgdwPropTypes,  
-   VARIANT               *rgtPropValues);  
-```  
-  
-```csharp  
-int QueryProperties(  
-   uint                       celt,  
-   enum_PROCESS_PROPERTY_TYPE rgdwPropTypes,  
-   out object[ ]              rgtPropValues);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `celt`  
- [in] Velikost pole obsahující definice vlastností a hodnot vlastností.  
-  
- `dwPropType`  
- [in] Pole, která obsahuje definice vlastnosti poslal dotaz. Možné hodnoty jsou:  
-  
-- PROCESS_PROPERTY_COMMAND_LINE = 1  
-  
-- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
-  
-- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
-  
-  `pvarPropValue`  
-  [out] Pole obsahující hodnoty vlastností.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato metoda se používá jen zřídka.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)
+Tato metoda dotazy pro hodnoty zadané vlastnosti ladění procesu.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT QueryProperties(
+   ULONG                  celt,
+   PROCESS_PROPERTY_TYPE *rgdwPropTypes,
+   VARIANT               *rgtPropValues);
+```
+
+```csharp
+int QueryProperties(
+   uint                       celt,
+   enum_PROCESS_PROPERTY_TYPE rgdwPropTypes,
+   out object[ ]              rgtPropValues);
+```
+
+#### <a name="parameters"></a>Parametry
+ `celt`
+
+ [in] Velikost pole obsahující definice vlastností a hodnot vlastností.
+
+ `dwPropType`
+
+ [in] Pole, která obsahuje definice vlastnosti poslal dotaz. Možné hodnoty jsou:
+
+- PROCESS_PROPERTY_COMMAND_LINE = 1
+
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2
+
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
+
+  `pvarPropValue` [out] Pole obsahující hodnoty vlastností.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Tato metoda se používá jen zřídka.
+
+## <a name="see-also"></a>Viz také
+- [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

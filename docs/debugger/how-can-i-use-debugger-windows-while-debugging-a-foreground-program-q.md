@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca749d28b7931b6301d591f0bca513877f3060d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069678"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698024"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Jak mohu použít okna ladicího programu během ladění programu na popředí?
-## <a name="problem-description"></a>Popis problému  
- Pokouším k ladění problému vykreslování obrazovky. Sledovat tento problém, budu muset zachovat programu na popředí, což znamená, že nemám přístup k ladění systému windows. Co mám udělat?  
-  
-## <a name="solution"></a>Řešení  
- Pokud máte druhý počítač, můžete použít vzdálené ladění. Při instalaci dva počítače můžete sledovat Malování obrazovky na vzdáleném počítači při provozování ladicího programu na hostiteli. Další informace o vzdáleném ladění naleznete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
-  
-## <a name="see-also"></a>Viz také  
- [Ladění nativního kódu nejčastější dotazy](../debugger/debugging-native-code-faqs.md)   
- [Ladění nativního kódu](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Popis problému
+ Pokouším k ladění problému vykreslování obrazovky. Sledovat tento problém, budu muset zachovat programu na popředí, což znamená, že nemám přístup k ladění systému windows. Co mám udělat?
+
+## <a name="solution"></a>Řešení
+ Pokud máte druhý počítač, můžete použít vzdálené ladění. Při instalaci dva počítače můžete sledovat Malování obrazovky na vzdáleném počítači při provozování ladicího programu na hostiteli. Další informace o vzdáleném ladění naleznete v tématu [vzdálené ladění](../debugger/remote-debugging.md).
+
+## <a name="see-also"></a>Viz také
+- [Nejčastější dotazy k ladění nativního kódu](../debugger/debugging-native-code-faqs.md)
+- [Ladění nativního kódu](../debugger/debugging-native-code.md)

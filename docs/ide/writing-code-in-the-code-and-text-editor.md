@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d3dd7d77caa1e3c7a3539638d125d927bebfbf
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450578"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721509"
 ---
 # <a name="features-of-the-code-editor"></a>Funkce editoru kódu
 
@@ -60,7 +60,7 @@ Najdete řadu pokročilých funkcí na **upravit** > **Upřesnit** nabídka na p
 |Nastavit jako malé písmeno|Změní všechny znaky ve výběr na malá písmena, nebo pokud není nic vybráno, znak na pozici kurzoru změní na malá písmena. Zástupce: **Ctrl**+**U**.|
 |Přesunout vybrané řádky nahoru|Posune vybraný řádek jeden řádek nahoru. Zástupce: **ALT**+**šipka nahoru**.|
 |Přesunout vybrané řádky dolů|Posune vybraný řádek jeden řádek dolů. Zástupce: **ALT**+**šipka dolů**.|
-|Odstranit vodorovné prázdné znaky|Odstraní tabulátory nebo mezery na konci aktuálního řádku.|
+|Odstranit vodorovné prázdné znaky|Odstraní tabulátory nebo mezery na konci aktuálního řádku. Zástupce: **Ctrl**+**K**, **Ctrl**+**\\**|
 |Zobrazit prázdné znaky|Zobrazí mezery jako zvýšené tečky a karty jako šipky. Konec souboru se zobrazí jako obdélníkový glyf. Pokud **nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >  **Zalamování** > **zobrazit viditelné piktogramy pro zalamování řádků** je vybráno, že zobrazí se také piktogram.|
 |Zalamování řádků|Způsobí, že všechny řádky v dokumentu mají být zobrazeny v okně kódu. Zalamování slov můžete vypnout nebo zapnout v **všechny jazyky textového editoru** nastavení (**nástroje** > **možnosti** > **textový Editor**   >  **Všechny jazyky**).|
 |Zakomentovat výběr|Přidá znaky komentáře do výběru nebo aktuálního řádku. Zástupce: **Ctrl**+**K**, **Ctrl**+**C**|
@@ -76,7 +76,7 @@ Můžete pohybovat v editoru kódu v několika různými způsoby, včetně zpě
 
 ## <a name="find-references-in-your-code-base"></a>Hledání odkazů v vašeho základu kódu
 
-Chcete-li zjistit, kde jsou prvky konkrétního kódu odkazovat v rámci vašeho základu kódu, můžete použít **najít všechny odkazy** příkazu. Také, když kliknete na typ nebo člen, **zvýraznění odkazů** funkce automaticky zvýrazní všechny odkazy na tento typ nebo člen. Další informace najdete v tématu [najít odkazy ve vašem kódu](finding-references.md).
+Chcete-li zjistit, kde jsou prvky konkrétního kódu odkazovat v rámci vašeho základu kódu, můžete použít **najít všechny odkazy** příkaz nebo stisknutím klávesy **Shift**+**F12**. Také, když kliknete na typ nebo člen, **zvýraznění odkazů** funkce automaticky zvýrazní všechny odkazy na tento typ nebo člen. Další informace najdete v tématu [najít odkazy ve vašem kódu](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Přizpůsobení editoru
 

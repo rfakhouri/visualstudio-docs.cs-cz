@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155354"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718545"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Vývoj kódu v sadě Visual Studio bez projektů nebo řešení
 
-V sadě Visual Studio 2017 můžete otevřít kód z téměř libovolného typu projektu založeného na adresář do sady Visual Studio bez nutnosti soubor řešení nebo projektu. To znamená, že můžete, například naklonování úložiště na Githubu, otevřete ho přímo do sady Visual Studio a začít vyvíjet, bez nutnosti vytvářet řešení nebo projektu. V případě potřeby můžete zadat úkoly vlastního sestavení a spuštění parametry prostřednictvím jednoduché soubory JSON.
+Kód můžete otevřít z téměř libovolného typu projektu založeného na adresář do sady Visual Studio bez nutnosti soubor řešení nebo projektu. To znamená, že můžete, například naklonování úložiště na Githubu, otevřete ho přímo do sady Visual Studio a začít vyvíjet, bez nutnosti vytvářet řešení nebo projektu. V případě potřeby můžete zadat úkoly vlastního sestavení a spuštění parametry prostřednictvím jednoduché soubory JSON.
 
 Po otevření souborů kódu v sadě Visual Studio **Průzkumníka řešení** zobrazí všechny soubory ve složce. Můžete kliknout na jakýkoli soubor můžete začít s jeho úpravami. Na pozadí spustí aplikace Visual Studio indexování soubory, které chcete povolit technologii IntelliSense, navigace a funkcí refaktoringu. Úpravy, vytváření, přesunout a odstranit soubory, Visual Studio automaticky sleduje změny a průběžně aktualizuje jeho index IntelliSense. Kód se zobrazí s barevné zvýrazňování syntaxe a v mnoha případech zahrnují základní doplňování technologie IntelliSense.
 
@@ -29,9 +29,19 @@ Po otevření souborů kódu v sadě Visual Studio **Průzkumníka řešení** z
 Kód do sady Visual Studio můžete otevřít v některém z následujících způsobů:
 
 - Na řádku nabídek sady Visual Studio, zvolte **souboru** > **otevřít** > **složky**a pak přejděte do umístění v kódu.
+
 - V nabídce kontextu (klikněte pravým tlačítkem) složce obsahující kód, zvolte **otevřít v sadě Visual Studio** příkazu.
+
+::: moniker range="vs-2017"
 - Zvolte **otevřít složku** odkaz v sadě Visual Studio **úvodní stránka**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Zvolte **otevřít složku** odkaz v okně Start.
+::: moniker-end
+
 - Pokud jste uživatelem klávesnice, stiskněte **Ctrl**+**Shift**+**Alt**+**O** ve Vizuálu Studio.
+
 - Otevření kódu z naklonovaného úložiště GitHub.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Chcete-li spustit kód z naklonovaného úložiště GitHub

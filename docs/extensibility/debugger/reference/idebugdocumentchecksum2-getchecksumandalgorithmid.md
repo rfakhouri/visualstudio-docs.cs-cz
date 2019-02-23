@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da313d42ac8e50e7f1a3788b3d40242d1ddffb0c
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 0f1a00b34aa640f9198649552ad7f1620d9b026d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412900"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704615"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 Načte identifikátor dokumentu. kontrolní součet a algoritmus maximální počet bajtů, které mají použít.
@@ -42,17 +42,21 @@ public int GetChecksumAndAlgorithmId(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pRetVal`  
-[out] Jedinečný identifikátor pro tento algoritmus kontrolního součtu.
+`pRetVal`
 
-`cMaxBytes`  
-[in] Maximální počet bajtů, které mají být použita pro kontrolní součet.
+ [out] Jedinečný identifikátor pro tento algoritmus kontrolního součtu.
 
-`pChecksum`  
-[out] Hodnota kontrolního součtu.
+`cMaxBytes`
 
-`pcNumBytes`  
-[out] Skutečný počet bajtů používaných pro kontrolní součet.
+ [in] Maximální počet bajtů, které mají být použita pro kontrolní součet.
+
+`pChecksum`
+
+ [out] Hodnota kontrolního součtu.
+
+`pcNumBytes`
+
+ [out] Skutečný počet bajtů používaných pro kontrolní součet.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -124,4 +128,4 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)
+- [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

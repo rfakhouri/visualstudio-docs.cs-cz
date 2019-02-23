@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019189"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711602"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Chyba: Webový server není správně nakonfigurovaný.
 
@@ -44,9 +44,9 @@ Proveďte tyto kroky k vyřešení tohoto problému:
 4. SLUŽBY (IIS) Ujistěte se, že je na serveru nainstalována správná verze technologie ASP.NET.
 
     Neshoda verzí technologie ASP.NET ve službě IIS a v projektu sady Visual Studio může způsobit potíže. Budete muset nastavit verzi rozhraní framework v souboru web.config. Instalace technologie ASP.NET na IIS, použijte [instalačního programu webové platformy (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Viz také [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) nebo pro ASP.NET Core, [hostitelská služba ve Windows se službou IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 4. Pokud `maxConnection` limit ve službě IIS je příliš nízká a máte příliš mnoho připojení, možná budete muset [zvýšil limit připojení](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
-  
-## <a name="see-also"></a>Viz také  
- [Vzdálené ladění ASP.NET na počítači vzdálené služby IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>Viz také
+- [Vzdálené ladění ASP.NET na vzdáleném počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

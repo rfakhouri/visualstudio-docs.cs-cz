@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe41f5e526abedbbae6bb870cc4ae607d0bfff9a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993375"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698934"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bitů na pixel vykreslování cílového formátu typu Variant
-Nastaví formát pixelu DXGI_FORMAT_B5G6R5_UNORM pro všechny cíle vykreslování a zpět vyrovnávací paměti.  
-  
-## <a name="interpretation"></a>interpretace  
- Cíl vykreslování nebo přípravné vyrovnávací paměti používá obvykle 32 bitů na pixel (32 bitů na pixel) formát jako je například B8G8R8A8_UNORM. formáty 32 bitů na pixel může spotřebovat velké množství paměti šířky pásma. Protože B5G6R5_UNORM formát je 16 bitů na pixel formátu, který je poloviční velikost 32 bitů na pixel formáty, můžete ho pomocí obdobná tlak na šířce pásma paměti, ale za cenu sníženou barva věrnost.  
-  
+Nastaví formát pixelu DXGI_FORMAT_B5G6R5_UNORM pro všechny cíle vykreslování a zpět vyrovnávací paměti.
+
+## <a name="interpretation"></a>interpretace
+ Cíl vykreslování nebo přípravné vyrovnávací paměti používá obvykle 32 bitů na pixel (32 bitů na pixel) formát jako je například B8G8R8A8_UNORM. formáty 32 bitů na pixel může spotřebovat velké množství paměti šířky pásma. Protože B5G6R5_UNORM formát je 16 bitů na pixel formátu, který je poloviční velikost 32 bitů na pixel formáty, můžete ho pomocí obdobná tlak na šířce pásma paměti, ale za cenu sníženou barva věrnost.
+
  Pokud tato varianta zobrazuje velké výkonnější, pravděpodobně znamená, že vaše aplikace využívá příliš velkou šířku pásma, paměti. Významné výkonnostní zlepšení, můžete získat, zejména v případě, že rámec profilovaných měl značné množství overdraw nebo alfa blending.
 
 16 bitů na pixel vykreslování cílového formátu můžete zmenšit obsluhy vzdálené správy paměti s využitím aplikace obsahuje následující podmínky:
@@ -33,37 +33,37 @@ Další strategie zaměřené na ke snížení šířky pásma paměti patří:
 - Snížení velikosti vyrovnávací paměť snímku.
 - Snižte rozměry textury prostředků.
 - Snižte komprimace prostředky textur.
- 
-Obvyklým způsobem je nutné zvážit kvality kompromisy, které jsou součástí některý z těchto optimalizacích bitovou kopii.  
+
+Obvyklým způsobem je nutné zvážit kvality kompromisy, které jsou součástí některý z těchto optimalizacích bitovou kopii.
 
 Aplikace, které jsou součástí řetězce přepnutí mít formát vyrovnávací paměti (DXGI_FORMAT_B5G6R5_UNORM), který nepodporuje 16 bitů na pixel. Tyto řetězce přepnutí se vytvářejí pomocí `D3D11CreateDeviceAndSwapChain` nebo `IDXGIFactory::CreateSwapChain`. Chcete-li toto omezení obejít, postupujte takto:
-1. Vytvořit cíl B5G6R5_UNORM formát vykreslování pomocí `CreateTexture2D` a vykreslování, které cílí. 
+1. Vytvořit cíl B5G6R5_UNORM formát vykreslování pomocí `CreateTexture2D` a vykreslování, které cílí.
 2. Zkopírujte cíl vykreslování do přípravné vyrovnávací paměti řetězce přepnutí kreslením quad celé obrazovky se cíl vykreslení jako zdrojovou texturu.
 3. Nevolají Present na vaše řetězec přepnutí.
 
    Pokud tato strategie uloží větší šířku pásma, než je využívána kopírování cíle vykreslování přípravné vyrovnávací paměti řetězce přepnutí, je lepší výkon při vykreslování.
 
-   Architektury GPU, používající techniky vedle sebe vykreslování můžete zobrazit výhody výkonu pomocí formátu 16 bitů na pixel rámce vyrovnávací paměti. Toto vylepšení totiž větší část vyrovnávací paměť snímku lze zobrazit v mezipaměti Každá dlaždice místní snímek vyrovnávací paměti. Vedle sebe vykreslování architektury jsou někdy součástí grafickými procesory v mobilních telefonů a tabletů počítače; zřídka nacházet mimo tento volné místo.  
-  
-## <a name="remarks"></a>Poznámky  
- Cílový formát vykreslení se resetují na DXGI_FORMAT_B5G6R5_UNORM na všechna volání `ID3D11Device::CreateTexture2D` , který vytvoří cíl vykreslování. Konkrétně je formát přepsána při D3D11_TEXTURE2D_DESC objekt předaný v pDesc popisuje cíl vykreslování; To je:  
-  
--   Člen BindFlags má příznak D3D11_BIND_REDNER_TARGET nastavený.  
-  
--   Člen BindFlags má příznak D3D11_BIND_DEPTH_STENCIL vymazána.  
-  
--   Využití člen je nastavený na D3D11_USAGE_DEFAULT.  
-  
-## <a name="restrictions-and-limitations"></a>Omezení a omezení  
- Protože formátu B5G6R5 nemá kanál alfa, nezachová se tato varianta alfa obsah. Pokud vaše aplikace vykreslování vyžaduje alfa kanál v vaše cíle vykreslování, nebudete moci přepnout jen na B5G6R5 formátu.  
-  
-## <a name="example"></a>Příklad  
- **16 bitů na pixel vykreslování cílového formátu** možné reprodukovat typu variant pro vykreslení cíle vytvořené využitím `CreateTexture2D` pomocí kódu takto:  
-  
+   Architektury GPU, používající techniky vedle sebe vykreslování můžete zobrazit výhody výkonu pomocí formátu 16 bitů na pixel rámce vyrovnávací paměti. Toto vylepšení totiž větší část vyrovnávací paměť snímku lze zobrazit v mezipaměti Každá dlaždice místní snímek vyrovnávací paměti. Vedle sebe vykreslování architektury jsou někdy součástí grafickými procesory v mobilních telefonů a tabletů počítače; zřídka nacházet mimo tento volné místo.
+
+## <a name="remarks"></a>Poznámky
+ Cílový formát vykreslení se resetují na DXGI_FORMAT_B5G6R5_UNORM na všechna volání `ID3D11Device::CreateTexture2D` , který vytvoří cíl vykreslování. Konkrétně je formát přepsána při D3D11_TEXTURE2D_DESC objekt předaný v pDesc popisuje cíl vykreslování; To je:
+
+-   Člen BindFlags má příznak D3D11_BIND_REDNER_TARGET nastavený.
+
+-   Člen BindFlags má příznak D3D11_BIND_DEPTH_STENCIL vymazána.
+
+-   Využití člen je nastavený na D3D11_USAGE_DEFAULT.
+
+## <a name="restrictions-and-limitations"></a>Omezení a omezení
+ Protože formátu B5G6R5 nemá kanál alfa, nezachová se tato varianta alfa obsah. Pokud vaše aplikace vykreslování vyžaduje alfa kanál v vaše cíle vykreslování, nebudete moci přepnout jen na B5G6R5 formátu.
+
+## <a name="example"></a>Příklad
+ **16 bitů na pixel vykreslování cílového formátu** možné reprodukovat typu variant pro vykreslení cíle vytvořené využitím `CreateTexture2D` pomocí kódu takto:
+
 ```cpp
-D3D11_TEXTURE2D_DESC target_description;  
-  
-target_description.BindFlags = D3D11_BIND_RENDER_TARGET;  
-target_description.Format = DXGI_FORMAT_B5G6R5_UNORM;  
-d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
+D3D11_TEXTURE2D_DESC target_description;
+
+target_description.BindFlags = D3D11_BIND_RENDER_TARGET;
+target_description.Format = DXGI_FORMAT_B5G6R5_UNORM;
+d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```

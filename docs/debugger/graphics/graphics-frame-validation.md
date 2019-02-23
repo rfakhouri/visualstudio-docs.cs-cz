@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991525"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694813"
 ---
 # <a name="graphics-frame-validation"></a>Ověření snímku grafiky
 <!-- VERSIONLESS --> Visual Studio 2017 a větší podporu **ověření snímku** nástroj.  V okně rámce ověření se zobrazí chyby a upozornění související s seznamu událostí.  Chcete-li zobrazit toto okno, vyberte **zobrazení > ověření snímku** nabídky.
@@ -33,6 +33,6 @@ Klikněte na tlačítko **spustit ověření** tlačítko v levém horním rohu 
 | Zpráva | Zpráva přidružená k události. |
 | Událost | Událost přidružená k chybě nebo upozornění. |
 
-## <a name="see-also"></a>Viz také  
-[Diagnostika grafiky (ladění grafiky DirectX)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>Viz také
+[Diagnostika grafiky (ladění grafiky DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690499"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704810"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Vytvoření vizuální mapy zásobníku volání při ladění (C#, Visual Basic, C++, JavaScript)
 
@@ -54,7 +54,7 @@ Tady je rychlý pohled na mapě kódu:
 ##  <a name="MapStack"></a> Mapování zásobníku volání
 
 1. V sadě Visual Studio Enterprise C#, Visual Basic, C++ nebo JavaScript project, spustit ladění tak, že vyberete **ladění** > **spustit ladění** nebo stiskněte **F5**.
-   
+
 1. Poté, co vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, vyberte **ladění** > **mapy kódu**, nebo stiskněte klávesu **Ctrl**+**Shift** +**`**.
 
    Aktuální aktuální zásobník volání se zobrazí oranžově na mapě nového kódu:
@@ -73,19 +73,19 @@ Pokud chcete získat další informace o položce, najeďte myší nad ním a po
 ## <a name="map-external-code"></a>Mapování externí kód
 
 Ve výchozím nastavení zobrazí se pouze vlastní kód na mapě. Chcete-li zobrazit externí kód na mapě:
-  
+
 - Klikněte pravým tlačítkem **zásobník volání** okna a vyberte **zobrazit externí kód**:
-  
+
   ![Zobrazit externí kód pomocí okna zásobník volání](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
 - Nebo zrušte výběr **povolit volbu pouze vlastní kód** v sadě Visual Studio **nástroje** (nebo **ladění**) > **možnosti**  >   **Ladění**:
-  
+
   ![Zobrazit externí kód pomocí dialogového okna Možnosti](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
 ## <a name="control-the-maps-layout"></a>Řídit rozložení mapy
 
-Změna rozložení na mapě kódu nijak neovlivní. 
+Změna rozložení na mapě kódu nijak neovlivní.
 
-Chcete-li řídit rozložení na mapě, vyberte **rozložení** nabídky na panelu nástrojů Mapa. 
+Chcete-li řídit rozložení na mapě, vyberte **rozložení** nabídky na panelu nástrojů Mapa.
 
 V **rozložení** nabídku, můžete:
 
@@ -95,9 +95,9 @@ V **rozložení** nabídku, můžete:
 
 ##  <a name="MakeNotes"></a> Tvorba poznámek o kódu
 
-Můžete přidat komentáře pro sledování, co se děje v kódu. 
+Můžete přidat komentáře pro sledování, co se děje v kódu.
 
-Chcete-li přidat komentář, klikněte pravým tlačítkem na mapě kódu a vyberte **upravit** > **nový komentář**, zadejte komentář. 
+Chcete-li přidat komentář, klikněte pravým tlačítkem na mapě kódu a vyberte **upravit** > **nový komentář**, zadejte komentář.
 
 Chcete-li přidat nový řádek v komentáři, stiskněte **Shift**+**Enter**.
 
@@ -109,11 +109,11 @@ Při spouštění vaší aplikace na další zarážku nebo krok do funkce, mapo
 
 ![Aktualizace mapy kódu s následujícím zásobníkem volání](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-Chcete-li zabránit mapě v přidání nových zásobníků volání automaticky, vyberte ![zásobníku volání zobrazit na mapě kódu automaticky](../debugger/media/debuggermap_automaticupdateicon.gif "zásobníku volání zobrazit na mapě kódu automaticky") na panelu nástrojů mapy kódu. I nadále zvýraznění existujících zásobníků volání na mapě. Chcete-li ručně přidat aktuální zásobník volání k mapě, stiskněte **Ctrl**+**Shift**+**`**. 
+Chcete-li zabránit mapě v přidání nových zásobníků volání automaticky, vyberte ![zásobníku volání zobrazit na mapě kódu automaticky](../debugger/media/debuggermap_automaticupdateicon.gif "zásobníku volání zobrazit na mapě kódu automaticky") na panelu nástrojů mapy kódu. I nadále zvýraznění existujících zásobníků volání na mapě. Chcete-li ručně přidat aktuální zásobník volání k mapě, stiskněte **Ctrl**+**Shift**+**`**.
 
 ##  <a name="AddRelatedCode"></a> Přidání souvisejícího kódu do mapy
 
-Teď, když je k dispozici mapu, v C# nebo Visual Basic, můžete přidat položky, jako jsou pole, vlastnosti a jiné metody, můžete sledovat, co se děje v kódu. 
+Teď, když je k dispozici mapu, v C# nebo Visual Basic, můžete přidat položky, jako jsou pole, vlastnosti a jiné metody, můžete sledovat, co se děje v kódu.
 
 Přejít k definici metody v kódu, poklepejte na metodu na mapě nebo vyberte ji a stiskněte klávesu **F12**, nebo pravým tlačítkem myši a vyberte **přejít k definici**.
 
@@ -151,7 +151,7 @@ Pokračujte v sestavování mapy, pokud chcete zobrazit další kód.
 
 Můžete exportovat mapu, odeslat ji ostatním uživatelům s aplikací Microsoft Outlook, uložte ho do svého řešení a vrátit se změnami do správy verzí.
 
-Chcete-li sdílet nebo uložit na mapě, použijte **sdílet** v panelu nástrojů mapy kódu. 
+Chcete-li sdílet nebo uložit na mapě, použijte **sdílet** v panelu nástrojů mapy kódu.
 
 ![Sdílená složka volání zásobníku mapy kódu s ostatními](../debugger/media/debuggermap_sharewithothers.png "sdílené složky volání zásobníku mapy kódu s ostatními")
 

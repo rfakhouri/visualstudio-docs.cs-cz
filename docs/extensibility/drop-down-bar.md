@@ -10,43 +10,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3506ff05bf7551a66ea616ca4c49dbf6ea80f4a7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9de8ea0a42d80adca560655c5f70c5dba84e015d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949282"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700039"
 ---
 # <a name="drop-down-bar"></a>Panel rozevíracího seznamu
-Na panelu rozevíracího seznamu je k dispozici v horní části okna kódu a obsahuje dva rozevírací seznamy.  
-  
-## <a name="drop-down-bar-interfaces"></a>Panel rozevíracího seznamu rozhraní  
- V [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], například panel rozevírací seznam obsahuje seznamy pro [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] položky a [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] položky členské funkce, jak je znázorněno na následujícím obrázku.  
-  
- ![Vyřadit&#45;dolů pruhy](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
-Panel rozevíracího seznamu  
-  
- Při implementaci panel rozevíracího seznamu, existují čtyři rozhraní primární význam:  
-  
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>  
-  
-     Implementace tohoto rozhraní k vložení obsahu na panelu rozevíracího seznamu. Každá kombinace rozevírací seznam může obsahovat prostý text nebo nápadité text (tučné písmo podtržené písmo a kurzíva), můžou mít barvy písma textu okna nebo šedě písma barevné zvýrazňování a volitelně můžete zadat malé rastrový obrázek u rozevíracích položek. Podobně jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> rozhraní, rastrové obrázky jsou k dispozici v seznamech obrázků. Každá kombinace rozevírací seznam může mít jinou image seznam; Každý seznam obrázků ale musí obsahovat obrázky stejnou výškou. Kromě toho používání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> metodu, můžete zadat popis pro každou kombinaci.  
-  
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>  
-  
-     Volejte toto rozhraní k vytvoření nebo zničení na panelu rozevíracího seznamu pro okno kódu. Toto rozhraní lze také použít k určení, zda panel rozevíracího seznamu je již připojen k okně kódu voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> metody. Volání <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> pro <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.  
-  
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>  
-  
-     Volejte toto rozhraní k přímé komunikaci se na panelu rozevíracího seznamu. Toto rozhraní můžete vynutit aktualizaci z rozevírací nabídky panelu obsah nebo chcete-li změnit výběr v jednom z pole se seznamem.  
-  
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>  
-  
-     Pokud jste se zaregistrovali `ShowDropdownBarOption` klíč registru služby jazyka pak správce okno kódu musí sledovat tuto událost, chcete-li synchronizovat s uživatelské preference týkající se určuje, zda má být zobrazena na panelu rozevíracího seznamu. Pokud v klíč služby jazyka nezaregistrujete tuto možnost, pak je zakázána možnost zobrazení nebo skrytí panelu rozevíracího seznamu na **možnosti** nabídky.  
-  
-## <a name="attach-a-drop-down-bar-to-a-code-window"></a>Připojit panelu rozevíracího seznamu do okna kódu  
- Připojit panelu rozevíracího seznamu do okna kódu při jeho vytváření, má služba jazyka připojovat k rozevírací nabídky panelu, když <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> metoda je volána. Pokud je volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> metoda označuje, že panel rozevíracího seznamu ještě neexistuje a potom voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A>. Pro přístup <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> rozhraní, zavolejte <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> ukazatel vrácena, pokud vaše <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> implementace byla připojena.  
-  
-## <a name="see-also"></a>Viz také:  
- [Přizpůsobení windows kód pomocí starší verze rozhraní API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
- [Podpora navigačního panelu ve službě starší verze jazyka](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
+Na panelu rozevíracího seznamu je k dispozici v horní části okna kódu a obsahuje dva rozevírací seznamy.
+
+## <a name="drop-down-bar-interfaces"></a>Panel rozevíracího seznamu rozhraní
+ V [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], například panel rozevírací seznam obsahuje seznamy pro [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] položky a [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] položky členské funkce, jak je znázorněno na následujícím obrázku.
+
+ ![Vyřadit&#45;dolů pruhy](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar") rozevírací panel
+
+ Při implementaci panel rozevíracího seznamu, existují čtyři rozhraní primární význam:
+
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>
+
+     Implementace tohoto rozhraní k vložení obsahu na panelu rozevíracího seznamu. Každá kombinace rozevírací seznam může obsahovat prostý text nebo nápadité text (tučné písmo podtržené písmo a kurzíva), můžou mít barvy písma textu okna nebo šedě písma barevné zvýrazňování a volitelně můžete zadat malé rastrový obrázek u rozevíracích položek. Podobně jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> rozhraní, rastrové obrázky jsou k dispozici v seznamech obrázků. Každá kombinace rozevírací seznam může mít jinou image seznam; Každý seznam obrázků ale musí obsahovat obrázky stejnou výškou. Kromě toho používání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> metodu, můžete zadat popis pro každou kombinaci.
+
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>
+
+     Volejte toto rozhraní k vytvoření nebo zničení na panelu rozevíracího seznamu pro okno kódu. Toto rozhraní lze také použít k určení, zda panel rozevíracího seznamu je již připojen k okně kódu voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> metody. Volání <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> pro <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.
+
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>
+
+     Volejte toto rozhraní k přímé komunikaci se na panelu rozevíracího seznamu. Toto rozhraní můžete vynutit aktualizaci z rozevírací nabídky panelu obsah nebo chcete-li změnit výběr v jednom z pole se seznamem.
+
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>
+
+     Pokud jste se zaregistrovali `ShowDropdownBarOption` klíč registru služby jazyka pak správce okno kódu musí sledovat tuto událost, chcete-li synchronizovat s uživatelské preference týkající se určuje, zda má být zobrazena na panelu rozevíracího seznamu. Pokud v klíč služby jazyka nezaregistrujete tuto možnost, pak je zakázána možnost zobrazení nebo skrytí panelu rozevíracího seznamu na **možnosti** nabídky.
+
+## <a name="attach-a-drop-down-bar-to-a-code-window"></a>Připojit panelu rozevíracího seznamu do okna kódu
+ Připojit panelu rozevíracího seznamu do okna kódu při jeho vytváření, má služba jazyka připojovat k rozevírací nabídky panelu, když <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> metoda je volána. Pokud je volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> metoda označuje, že panel rozevíracího seznamu ještě neexistuje a potom voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A>. Pro přístup <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> rozhraní, zavolejte <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> ukazatel vrácena, pokud vaše <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> implementace byla připojena.
+
+## <a name="see-also"></a>Viz také:
+- [Přizpůsobení windows kód pomocí starší verze rozhraní API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+- [Podpora navigačního panelu ve službě starší verze jazyka](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)

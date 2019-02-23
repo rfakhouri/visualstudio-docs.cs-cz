@@ -14,21 +14,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e72bbc19fef3f75bbd99d2d61902fd881c09bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c31dc8b9ced1ca36b96c73ff8e19fa8c08d98cc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068703"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723536"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Rozšíření vlastností a okno Vlastnosti
-**Vlastnosti** okno umožňuje zobrazit a upravit vlastnosti doby návrhu a událostí vybraných objektů.  
-  
- Když vyberete objektu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], veřejné vlastnosti tohoto objektu se zobrazí v **vlastnosti** okna. Další informace najdete v tématu [přehled okna vlastnosti](../extensibility/internals/properties-window-overview.md).  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Vystavení vlastností v okně Vlastnosti](../extensibility/exposing-properties-to-the-properties-window.md)  
- Vysvětluje, jak může mít vlastní vlastnosti v okně Vlastnosti.  
-  
- [Získání vlastností projektu](../extensibility/getting-project-properties.md)  
- Vysvětluje, jak získat vlastnosti projektu.
+**Vlastnosti** okno umožňuje zobrazit a upravit vlastnosti doby návrhu a událostí vybraných objektů.
+
+ Když vyberete objektu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], veřejné vlastnosti tohoto objektu se zobrazí v **vlastnosti** okna. Další informace najdete v tématu [přehled okna vlastnosti](../extensibility/internals/properties-window-overview.md).
+
+## <a name="in-this-section"></a>V tomto oddílu
+- [Vystavení vlastností v okně Vlastnosti](../extensibility/exposing-properties-to-the-properties-window.md) vysvětluje, jak může mít vlastní vlastnosti v okně Vlastnosti.
+
+- [Získání vlastností projektu](../extensibility/getting-project-properties.md) vysvětluje, jak získat vlastnosti projektu.

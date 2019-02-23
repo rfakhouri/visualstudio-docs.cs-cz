@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949798"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710536"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Spouštění aplikací pro UPW na simulátoru
 Simulátor aplikace Visual Studio pro aplikace pro UPW je desktopová aplikace, která simuluje aplikace pro UPW. Obvykle můžete ladit na místním počítači, připojeného zařízení nebo vzdálený počítač. Ale v některých případech můžete chtít použít simulátor aplikace Visual Studio k emulaci různých fyzických obrazovku a řešení. Můžete také simulovat běžné touch a otočení události a simulovat vlastnosti připojení k síti.
@@ -149,4 +149,4 @@ Simulátor aplikace Visual Studio pro aplikace pro UPW je desktopová aplikace, 
  Simulátor můžete ukončit stisknutím kombinace kláves **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Viz také
- [Spouštění aplikací ze sady Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Spouštění aplikací ze sady Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

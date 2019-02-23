@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 441f5c470f97012da7c63f79f06dd08f810c1d0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f6a93cc87be2369ba3bc96bf6682caeb4a727c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945330"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718934"
 ---
 # <a name="process-debug-manager"></a>Správce ladění procesu
-Správce ladění procesu (PDM) je součástí sady Visual Studio, která spravuje aplikace a procesy, díky kterým jsou k dispozici pro relaci ladění správce a ladicí stroj.  
-  
- PDM spravuje všechny procesy, které lze ladit. Chcete-li být laděn, program, musí zaregistrovat PDM. Tuto registrace se provádí v době, kdy program se spustí, tak, že port nebo ladicí stroj.  
-  
-## <a name="see-also"></a>Viz také:  
- [Procesy](../../extensibility/debugger/processes.md)   
- [Ladicí stroj](../../extensibility/debugger/debug-engine.md)   
- [Porty](../../extensibility/debugger/ports.md)   
- [Programy](../../extensibility/debugger/programs.md)   
- [Komponenty ladicího programu](../../extensibility/debugger/debugger-components.md)
+Správce ladění procesu (PDM) je součástí sady Visual Studio, která spravuje aplikace a procesy, díky kterým jsou k dispozici pro relaci ladění správce a ladicí stroj.
+
+ PDM spravuje všechny procesy, které lze ladit. Chcete-li být laděn, program, musí zaregistrovat PDM. Tuto registrace se provádí v době, kdy program se spustí, tak, že port nebo ladicí stroj.
+
+## <a name="see-also"></a>Viz také:
+- [Procesy](../../extensibility/debugger/processes.md)
+- [Ladicí stroj](../../extensibility/debugger/debug-engine.md)
+- [Porty](../../extensibility/debugger/ports.md)
+- [Programy](../../extensibility/debugger/programs.md)
+- [Komponenty ladicího programu](../../extensibility/debugger/debugger-components.md)

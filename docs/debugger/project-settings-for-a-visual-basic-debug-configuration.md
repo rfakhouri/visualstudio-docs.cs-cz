@@ -23,21 +23,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f8315717b91a257d09b5de671698796f732543
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a2c4a2cb44e2e93f4a09f26a7aa53623542567e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004731"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720871"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Nastavení projektu pro konfiguraci ladění jazyka Visual Basic
-Můžete změnit nastavení projektu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] konfiguraci ladění v **stránky vlastností** okna, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** okna.  
-  
+Můžete změnit nastavení projektu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] konfiguraci ladění v **stránky vlastností** okna, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** okna.
+
 > [!WARNING]
->  Toto téma se nevztahuje na aplikacích pro UPW. Zobrazit [spustíte relaci ladění (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
-  
-### <a name="debug-tab"></a>Ladění kartu  
-  
+>  Toto téma se nevztahuje na aplikacích pro UPW. Zobrazit [spustíte relaci ladění (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+
+### <a name="debug-tab"></a>Ladění kartu
+
 | Nastavení | Popis |
 |------------------------------| - |
 | **Konfigurace** | Nastaví režim pro kompilaci aplikace. Zvolte mezi **aktivní (ladění)**, **ladění**, **vydání**, **všechny konfigurace**. |
@@ -47,15 +47,15 @@ Můžete změnit nastavení projektu [!INCLUDE[vbprvb](../code-quality/includes/
 | **Použití vzdáleného počítače** | Když je políčko zaškrtnuto, vzdálené ladění je povolen. Do textového pole, můžete zadat název vzdáleného počítače kde bude aplikace spuštěna, pro účely ladění nebo [název serveru Msvsmon](../debugger/remote-debugging.md). Umístění souboru exe ve vzdáleném počítači, je určené vlastností výstupní cestu na kartě sestavení. Umístění musí být sdíleném adresáři na vzdáleném počítači. |
 | **Ladění nespravovaného kódu** | Umožňuje ladit volání nativního (nespravovaného) kódu Win32 z vaší spravované aplikace. To má stejný účinek jako výběr smíšený typ ladicího programu v [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektu. |
 | **Ladění SQL serveru** | Umožňuje ladění objektů databáze systému SQL Server. |
-  
-### <a name="compile-tab-press-advanced-compile-options-button"></a>Kompilace kartě: tlačítko Upřesnit možnosti kompilace  
-  
+
+### <a name="compile-tab-press-advanced-compile-options-button"></a>Kompilace kartě: tlačítko Upřesnit možnosti kompilace
+
 | Nastavení | Popis |
 |---------------------------| - |
 | **Povolit optimalizace** | Tato možnost by měla nezaškrtnuté. Optimalizace způsobí, že kód, který je odlišný od zdrojového kódu v skutečně proveden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a proto znesnadňuje ladění. Pokud je kód zoptimalizovaný, nejsou symboly načíst ve výchozím nastavení při ladění s jen můj kód. |
 | **Generovat ladicí informace** | Definované ve výchozím nastavení ladění a vydání verze, toto nastavení (odpovídá možnosti kompilátoru/Debug) vytvoří informace o ladění v okamžiku sestavení. Ladicí program používá tyto informace zobrazit názvy proměnných a další informace ve formě užitečné při ladění. Pokud kompilujete aplikace bez těchto informací, bude omezené funkce ladicího programu. Další informace najdete v tématu [/debug](/dotnet/visual-basic/reference/command-line-compiler/debug). |
 | **Definovat konstantu DEBUG** | Definování tento symbol umožňuje podmíněné kompilace výstup funkcí z [Debug – třída](/dotnet/api/system.diagnostics.debug). Tento symbol definovaný, ladění metody třídy generovat výstup do [okno výstup](../ide/reference/output-window.md). Bez tento symbol nejsou zkompilovány metody třídy ladění a nebude vygenerován žádný výstup. Tento symbol by měl definované v ladicí verzi a není definovaný ve vydané verzi. Definování tento symbol v prodejní verzi vytvoří nepotřebný kód, který může zpomalit vaši aplikaci. |
 | **Definovat konstantu TRACE** | Definování tento symbol umožňuje podmíněné kompilace výstup funkcí z [Trasovací třída](/dotnet/api/system.diagnostics.trace). Tento symbol definovaný, metody třídy trasování generovat výstup do [okno výstup](../ide/reference/output-window.md). Bez tento symbol nejsou zkompilovány metody třídy trasování a nebude vygenerován žádný výstup trasování. Tento symbol je definované ve výchozím nastavení pro ladění a vydání verze. |
-  
-## <a name="see-also"></a>Viz také  
- [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>Viz také
+- [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)

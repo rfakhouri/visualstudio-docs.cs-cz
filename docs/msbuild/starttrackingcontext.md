@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd0033e189706ee999876a5554e61b1c85eb48ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618806"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690510"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 Začněte kontext sledování.
@@ -32,9 +32,13 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```
 
 #### <a name="parameters"></a>Parametry
-- [in] `intermediateDirectory` Adresáře, ve kterém k uložení protokolu sledování.
+[in] `intermediateDirectory`
 
-- [in] `taskName` Identifikuje kontext sledování. Tento název se používá k vytvoření názvu souboru protokolu.
+ Adresáře, ve kterém k uložení protokolu sledování.
+
+[in] `taskName`
+
+ Určuje kontext sledování. Tento název se používá k vytvoření názvu souboru protokolu.
 
 ## <a name="return-value"></a>Návratová hodnota
  **HRESULT** s **SUCCEEDED** sadu bitů, pokud byl vytvořen kontext sledování.

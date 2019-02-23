@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessEx2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2
 helpviewer_keywords:
@@ -12,54 +12,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e4218e18772e581af1651c354c717002fee19d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef8fd848ed1a8298cc4ea8a5ce9d2c0463a2b779
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996022"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693597"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Toto rozhraní umožňuje relace ladění správci upozornění procesu, který je k připojení nebo odpojení od procesu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugProcessEx2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Dodavatel port. Tento vlastní port implementuje toto rozhraní na stejný objekt jako [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) rozhraní za účelem:  
-  
-- Podpora sledování relací, které jsou připojené k procesu  
-  
-- Podpora automatické připojení napříč více ladicími stroji  
-  
-  Pokud zvolí dodavatele port. Tento vlastní port toto rozhraní implementovat.  
-  
-## <a name="notes-for-callers"></a>Poznámky pro volající  
-  
--   Volání SDM [QueryInterface](/cpp/atl/queryinterface) na `IDebugProcess2` rozhraní k získání tohoto rozhraní.  
-  
-## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- V následující tabulce jsou uvedeny metody objektu `IDebugProcessEx2`.  
-  
-|Metoda|Popis|  
-|------------|-----------------|  
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje o procesu relace je nyní ladění procesu.|  
-|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje o procesu relace je již ladění procesu.|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Přidá uzly programů seznam ladicí stroj.|  
-  
-## <a name="remarks"></a>Poznámky  
- Toto rozhraní je privátní mezi SDM a procesu.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: Portpriv.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
+Toto rozhraní umožňuje relace ladění správci upozornění procesu, který je k připojení nebo odpojení od procesu.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugProcessEx2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Poznámky pro implementátory
+ Dodavatel port. Tento vlastní port implementuje toto rozhraní na stejný objekt jako [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) rozhraní za účelem:
+
+- Podpora sledování relací, které jsou připojené k procesu
+
+- Podpora automatické připojení napříč více ladicími stroji
+
+  Pokud zvolí dodavatele port. Tento vlastní port toto rozhraní implementovat.
+
+## <a name="notes-for-callers"></a>Poznámky pro volající
+
+-   Volání SDM [QueryInterface](/cpp/atl/queryinterface) na `IDebugProcess2` rozhraní k získání tohoto rozhraní.
+
+## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí
+ V následující tabulce jsou uvedeny metody objektu `IDebugProcessEx2`.
+
+|Metoda|Popis|
+|------------|-----------------|
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje o procesu relace je nyní ladění procesu.|
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje o procesu relace je již ladění procesu.|
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Přidá uzly programů seznam ladicí stroj.|
+
+## <a name="remarks"></a>Poznámky
+ Toto rozhraní je privátní mezi SDM a procesu.
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: Portpriv.h
+
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+- [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

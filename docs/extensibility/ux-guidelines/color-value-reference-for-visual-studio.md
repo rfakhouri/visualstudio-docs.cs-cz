@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016236"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722275"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odkaz na hodnotu barvy pro sadu Visual Studio
 
-Toto téma obsahuje referenční informace pro vytváření nových tokenů barvu. Při vytváření nové uživatelské rozhraní, můžete použít podobné barvy z existující uživatelského rozhraní pro výběr barvy pro každou hlavní motivu a název barvy systému pro daný element vysoký kontrast – motivy. 
+Toto téma obsahuje referenční informace pro vytváření nových tokenů barvu. Při vytváření nové uživatelské rozhraní, můžete použít podobné barvy z existující uživatelského rozhraní pro výběr barvy pro každou hlavní motivu a název barvy systému pro daný element vysoký kontrast – motivy.
 
 Další informace o vytváření nových tokenů barva implementaci, najdete v článku [barevné motivy nástroje](../../extensibility/internals/color-theming-tools.md).
 
@@ -26,11 +26,11 @@ Barva tokeny pro použití s existující uživatelské rozhraní, naleznete v t
 
 Při použití této referenční příručce, mějte na paměti:
 
--   **Vždy kopírovat popředí a pozadí bubliny společně.** Neklikejte popředí z jednoho prvku uživatelského rozhraní a na pozadí z jiného to, že chcete odstíny.  
+-   **Vždy kopírovat popředí a pozadí bubliny společně.** Neklikejte popředí z jednoho prvku uživatelského rozhraní a na pozadí z jiného to, že chcete odstíny.
 
 -   **Jedná se o šestnáctkových kódů, nikoli barva tokeny.** Vlastní barva token názvy tyto prvky uživatelského rozhraní nelze použít, protože nelze určit, jak může v budoucnu změnit tokeny. Místo toho vytvářet tokeny v rámci vlastní kategorie a použít hue hodnoty uvedené v tabulkách. Barva tokeny pro existující uživatelského rozhraní lze nalézt v [sdílené barvy pro sadu Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
-- **Vysoký kontrast vzorník jsou uvedeny pouze porovnání.** Použijte název barvy systému pro vysoký kontrast – uživatelské rozhraní a nepoužívejte kapátko nebo barvu výběr na tyto barvy. Vysoký kontrast vzorník v tomto tématu odpovídají motiv Vysoký kontrast 1 ve Windows. V jiných Vysokokontrastních motivech změní vzhled barvy. 
+- **Vysoký kontrast vzorník jsou uvedeny pouze porovnání.** Použijte název barvy systému pro vysoký kontrast – uživatelské rozhraní a nepoužívejte kapátko nebo barvu výběr na tyto barvy. Vysoký kontrast vzorník v tomto tématu odpovídají motiv Vysoký kontrast 1 ve Windows. V jiných Vysokokontrastních motivech změní vzhled barvy.
 
 -   **Nejlepších výsledků dosáhnete barva pár nastaví s uživatelským rozhraním podobně jako v příkladu.**
 
@@ -39,17 +39,17 @@ Při použití této referenční příručce, mějte na paměti:
 ![Okno vlastností v světla (vlevo), tmavé (System center) a modré (vpravo) motivy](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "okno vlastností v světla, tmavý a modrá motivy")<br />Okno vlastností v motivy světla, tmavý a modrá
 
 > [!NOTE]
-> **Vysoký kontrast vzorník jsou uvedeny pouze porovnání.** Použijte název barvy systému pro vysoký kontrast – uživatelské rozhraní a nepoužívejte kapátko nebo barvu výběr na tyto barvy. Vysoký kontrast vzorník v tomto tématu odpovídají motiv Vysoký kontrast 1 ve Windows. V jiných Vysokokontrastních motivech změní vzhled barvy. 
+> **Vysoký kontrast vzorník jsou uvedeny pouze porovnání.** Použijte název barvy systému pro vysoký kontrast – uživatelské rozhraní a nepoužívejte kapátko nebo barvu výběr na tyto barvy. Vysoký kontrast vzorník v tomto tématu odpovídají motiv Vysoký kontrast 1 ve Windows. V jiných Vysokokontrastních motivech změní vzhled barvy.
 
 ### <a name="divider-lines"></a>Oddělovač řádků
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Výchozí | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![Vzorník ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark vzorníku")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Piktogram rozbalení
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí |![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Okno vzorníku](../../extensibility/ux-guidelines/media/HCWindow.png "okno vzorníku")<br />`Window`|
@@ -60,7 +60,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="embedded-tab-control-body"></a>Vložit ovládací prvek karty: text
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Pozadí | ![#FFE7E8EC vzorníku](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC vzorníku")<br />`#FFE7E8EC` | ![#FF1B1B1C vzorníku](../../extensibility/ux-guidelines/media/1B1B1C.png "#FF1B1B1C vzorníku")<br />`#FF1B1B1C` | ![#FFE7E8EC vzorníku](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC vzorníku")<br />`#FFE7E8EC` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
@@ -68,7 +68,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="embedded-tab-control-active-tab"></a>Vložit ovládací prvek karty: aktivní kartě
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` |![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Pozadí | ![## FFE7E8EC vzorníku](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC vzorníku")<br />`#FFE7E8EC` | ![#FF1B1B1C vzorníku](../../extensibility/ux-guidelines/media/1B1B1C.png "## FF1B1B1C vzorníku")<br />`#FF1B1B1C` | ![#FFE7E8EC vzorníku](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC vzorníku")<br />`#FFE7E8EC` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
@@ -76,7 +76,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="embedded-tab-control-inactive-tab"></a>Vložit ovládací prvek karty: Neaktivní kartu
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
@@ -85,12 +85,12 @@ Při použití této referenční příručce, mějte na paměti:
 | Popředí: zakázáno | ![#FFA2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 vzorníku")<br />`#FFA2A4A5` | ![#FF656565 vzorníku](../../extensibility/ux-guidelines/media/656565.png "#FF656565 vzorníku")<br />`#FF656565` | ![#FFA2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 vzorníku")<br />`#FFA2A4A5` | ![Vzorník GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText vzorníku")<br />`GrayText` |
 | Na pozadí: zakázáno | ![## FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "## FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
 | Ohraničení | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Vzorník WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame vzorníku")<br />`WindowFrame` |
-| Ohraničení: při najetí myší | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5` | ![#FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 vzorníku")<br />`#FF3E3E40` | ![Vzorník #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE vzorníku")<br />`#FFFEFEFE` | ![Vzorník WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame vzorníku")<br />`WindowFrame` | 
+| Ohraničení: při najetí myší | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5` | ![#FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 vzorníku")<br />`#FF3E3E40` | ![Vzorník #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE vzorníku")<br />`#FFFEFEFE` | ![Vzorník WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame vzorníku")<br />`WindowFrame` |
 | Ohraničení: zakázáno | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Vzorník WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame vzorníku")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>Hlavičku oddílu
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![## FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Popředí: při najetí myší | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -101,7 +101,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="category-group"></a>Skupiny kategorií
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Text popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Text na pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![Vzorník FF252526](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
@@ -110,7 +110,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="toggle-buttons"></a>Přepínací tlačítka
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText vzorníku")<br />`WindowText` |
 | Pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Okno vzorníku](../../extensibility/ux-guidelines/media/HCWindow.png "okno vzorníku")<br />`Window` |
@@ -127,7 +127,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="input-fields"></a>Vstupní pole
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Pozadí | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![#FF333337 vzorníku](../../extensibility/ux-guidelines/media/333337.png "#FF333337 vzorníku")<br />`#FF333337` | ![Vzorník #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC vzorníku")<br />`#FFFCFCFC` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
@@ -138,7 +138,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="list-items"></a>Položky seznamu
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Popředí: při najetí myší | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -151,7 +151,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="command-buttons"></a>Příkazová tlačítka
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Na pozadí: při najetí myší | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5` | ![#FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 vzorníku")<br />`#FF3E3E40` | ![Vzorník #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE vzorníku")<br />`#FFFEFEFE` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
@@ -172,7 +172,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="content"></a>Obsah
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF000000 vzorníku](../../extensibility/ux-guidelines/media/000000.png "#FF000000 vzorníku")<br />`#FF000000` | ![Vzorník WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText vzorníku")<br />`WindowText` |
 | Pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
@@ -184,7 +184,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="header"></a>Záhlaví
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF000000 vzorníku](../../extensibility/ux-guidelines/media/000000.png "#FF000000 vzorníku")<br />`#FF000000` | ![Vzorník WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText vzorníku")<br />`WindowText` |
 | Pozadí | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![Vzorník ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark vzorníku")<br />`ControlDark` |
@@ -193,7 +193,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ![Uživatelského CodeLens](../../extensibility/ux-guidelines/media/codelens.png "uživatelského CodeLens")
 
-> [!NOTE] 
+> [!NOTE]
 > Barvy uživatelského CodeLens rozhraní je stejný pro motivy světla, tmavý a modrá.
 
 > [!NOTE]
@@ -201,7 +201,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="body"></a>Tělo
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText vzorníku")<br />`WindowText` |
 | Pozadí | ![Vzorník #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC vzorníku")<br />`#FFFCFCFC` | ![Vzorník #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC vzorníku")<br />`#FFFCFCFC` | ![Vzorník #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC vzorníku")<br />`#FFFCFCFC` | ![Okno vzorníku](../../extensibility/ux-guidelines/media/HCWindow.png "okno vzorníku")<br />`Window` |
@@ -212,7 +212,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="hyperlink-and-separator"></a>Hypertextový odkaz a oddělovač
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí hypertextový odkaz | ![#FF0E70C0 vzorníku](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 vzorníku")<br />`#FF0E70C0` | ![#FF0E70C0 vzorníku](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 vzorníku")<br />`#FF0E70C0` | ![#FF0E70C0 vzorníku](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 vzorníku")<br />`#FF0E70C0` | ![Vzorník HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack vzorníku")<br />`HotTrack` |
 | Oddělovač popředí | ![#FF9C9C9C vzorníku](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C vzorníku")<br />`#FF9C9C9C` | ![#FF9C9C9C vzorníku](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C vzorníku")<br />`#FF9C9C9C` | ![#FF9C9C9C vzorníku](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C vzorníku")<br />`#FF9C9C9C` | ![Vzorník HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack vzorníku")<br />`HotTrack` |
@@ -226,14 +226,14 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="body"></a>Tělo
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF000000 vzorníku](../../extensibility/ux-guidelines/media/000000.png "#FF000000 vzorníku")<br />`#FF000000` | ![Vzorník WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText vzorníku")<br />`WindowText` |
 | Popředí: vybrané | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>Dílčí část záhlaví
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF717171 vzorníku](../../extensibility/ux-guidelines/media/717171.png "#FF717171 vzorníku")<br />`#FF717171` | ![#FF999999 vzorníku](../../extensibility/ux-guidelines/media/999999.png "#FF999999 vzorníku")<br />`#FF999999` | ![#FF717171 vzorníku](../../extensibility/ux-guidelines/media/717171.png "#FF717171 vzorníku")<br />`#FF717171` | ![Vzorník GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText vzorníku")<br />`GrayText` |
 | Pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Okno vzorníku](../../extensibility/ux-guidelines/media/HCWindow.png "okno vzorníku")<br />`Window` |
@@ -241,7 +241,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="grid-lines"></a>Čáry mřížky
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Položky (popředí) | ![#FFF0F0F0 vzorníku](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 vzorníku")<br />`#FFF0F0F0` | ![#FF000000 vzorníku](../../extensibility/ux-guidelines/media/000000.png "#FF000000 vzorníku")<br />`#FF000000` | ![#FFF0F0F0 vzorníku](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 vzorníku")<br />`#FFF0F0F0` | ![Posuvník vzorníku](../../extensibility/ux-guidelines/media/HCScrollBar.png "posuvník vzorníku")<br />`ScrollBar` |
 | Záhlaví (popředí) | ![#FFE0E3E6 vzorníku](../../extensibility/ux-guidelines/media/E0E3E6.png "#FFE0E3E6 vzorníku")<br />`#FFE0E3E6` | ![#FF333337 vzorníku](../../extensibility/ux-guidelines/media/333337.png "#FF333337 vzorníku")<br />`#FF333337` | ![#FFBEC3CB vzorníku](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB vzorníku")<br />`#FFBEC3CB` | ![Vzorník ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark vzorníku")<br />`ControlDark` |
@@ -255,21 +255,21 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="body"></a>Tělo
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
 
 ### <a name="active-tab"></a>Aktivní kartě
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText vzorníku")<br />`ActiveCaptionText` |
 | Pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` |![Vzorník ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption vzorníku")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>Neaktivní kartu
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText vzorníku")<br />`InactiveCaptionText` |
 | Pozadí | ![Vzorník #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE vzorníku")<br />`#FFFEFEFE` | ![#FF333337 vzorníku](../../extensibility/ux-guidelines/media/333337.png "#FF333337 vzorníku")<br />`#FF333337` | ![Vzorník #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE vzorníku")<br />`#FFFEFEFE` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -278,14 +278,14 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="watermark-text"></a>Vodoznakového textu
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF717171 vzorníku](../../extensibility/ux-guidelines/media/717171.png "#FF717171 vzorníku")<br />`#FF999999` | ![#FF999999 vzorníku](../../extensibility/ux-guidelines/media/717171.png "999999 vzorníku")<br />`#FF999999` | ![#FF717171 vzorníku](../../extensibility/ux-guidelines/media/717171.png "#FF717171 vzorníku")<br />`#FF717171` | ![Vzorník GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText vzorníku")<br />`GrayText` |
 | Pozadí | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
 
 ### <a name="description-pane"></a>Podokno s popisem
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Pozadí | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
@@ -299,7 +299,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="tags"></a>Značky
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Popředí (text) | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText vzorníku")<br />`ActiveCaptionText` |
 | Pozadí | ![#FFE1E6F1 vzorníku](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 vzorníku")<br />`#FFE1E6F1` | ![#FF424242 vzorníku](../../extensibility/ux-guidelines/media/424242.png "#FF424242 vzorníku")<br />`#FF424242` | ![#FFE9ECEE vzorníku](../../extensibility/ux-guidelines/media/E9ECEE.png "#FFE9ECEE vzorníku")<br />`#FFE9ECEE` | ![Vzorník ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption vzorníku")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="glyph-on-hover"></a>Piktogram při najetí myší
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Piktogram | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
 | Pozadí | ![#FFF7F7F9 vzorníku](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 vzorníku")<br />`#FFF7F7F9` | ![#FF393939 vzorníku](../../extensibility/ux-guidelines/media/393939.png "#FF393939 vzorníku")<br />`#FF393939` | ![#FFFFFCF4 vzorníku](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 vzorníku")<br />`#FFFFFCF4` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -323,7 +323,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="selected-glyph"></a>Vybrané glyfů
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Piktogram | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
 | Pozadí | ![#FF52B0EF vzorníku](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF vzorníku")<br />`#FF52B0EF` | ![#FF52B0EF vzorníku](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF vzorníku")<br />`#FF52B0EF` | ![#FF52B0EF vzorníku](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF vzorníku")<br />`#FF52B0EF` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -339,7 +339,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="default"></a>Výchozí
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Výchozí tlačítko v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "výchozí tlačítko v světlý motiv") | ![Výchozí tlačítko v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "výchozí tlačítko v tmavém motivu") | ![Výchozí tlačítko v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "výchozí tlačítko v modrý motiv") | ![Výchozí tlačítko v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "výchozí tlačítko v motiv s vysokým kontrastem") |
 | Popředí | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 vzorníku")<br />`#F1F1F1` | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
@@ -348,7 +348,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="disabled"></a>Zakázáno
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Zakázané tlačítko v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "zakázáno tlačítko světlý motiv") | ![Zakázané tlačítko v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "zakázáno tlačítko v tmavém motivu") | ![Zakázané tlačítko v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "zakázáno tlačítko modrý motiv") | ![Zakázané tlačítko v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "zakázáno tlačítko motiv s vysokým kontrastem") |
 | Popředí | ![#A2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 vzorníku")<br />`#A2A4A5` | ![#656565 vzorníku](../../extensibility/ux-guidelines/media/656565.png "#656565 vzorníku")<br />`#656565` | ![#A2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 vzorníku")<br />`#A2A4A5` | ![Vzorník InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText vzorníku")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="hover"></a>Při najetí myší
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Stav tlačítka při najetí myší světlý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "stav tlačítka při najetí myší světlý motiv") | ![Stav tlačítka při najetí myší v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "stav tlačítka při najetí myší v tmavém motivu") | ![Stav tlačítka při najetí myší modrý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "stav tlačítka při najetí myší modrý motiv") | ![Stav tlačítka při najetí myší motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "stav tlačítka při najetí myší motiv s vysokým kontrastem") |
 | Popředí | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 vzorníku")<br />`#F1F1F1` | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![Vzorník ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText vzorníku")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="pressed"></a>Stisknutí
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Při stisknutí tlačítka světlý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "stisknutého tlačítka v světlý motiv") | ![Při stisknutí tlačítka v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "stisknutého tlačítka v tmavém motivu") | ![Při stisknutí tlačítka modrý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "stisknutého tlačítka v modrý motiv") | ![Při stisknutí tlačítka motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "stisknutého tlačítka v motiv s vysokým kontrastem") |
 | Popředí | ![#FFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF vzorníku")<br />`#FFFFFF` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 vzorníku")<br />`#F1F1F1` | ![#FFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF vzorníku")<br />`#FFFFFF` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -375,7 +375,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="focused"></a>Fokus
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Focused tlačítko v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "Focused tlačítko v světlý motiv") | ![Focused tlačítko v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "Focused tlačítko v tmavém motivu") | ![Focused tlačítko v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "Focused tlačítko v modrý motiv") | ![Focused tlačítko v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "Focused tlačítko v motiv s vysokým kontrastem") |
 | Popředí | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 vzorníku")<br />`#F1F1F1` | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -389,7 +389,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="default"></a>Výchozí
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Zaškrtávací políčko výchozí motiv světlý](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "výchozí zaškrtávací políčko světlý motiv") | ![Výchozí zaškrtávací políčko v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "výchozí zaškrtávací políčko v tmavém motivu") | ![Zaškrtávací políčko výchozí motiv modrý](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "výchozí zaškrtávací políčko modrý motiv") | ![Zaškrtávací políčko výchozí motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "zaškrtávací políčko výchozí motiv s vysokým kontrastem") |
 | Pozadí | ![Vzorník #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE vzorníku")<br />`#FEFEFE` | ![#252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#252526 vzorníku")<br />`#252526` | ![Vzorník #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE vzorníku")<br />`#FEFEFE` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
@@ -399,7 +399,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="disabled"></a>Zakázáno
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Zrušené zaškrtávací políčko v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "zakázané zaškrtávací políčko světlý motiv") | ![Zrušené zaškrtávací políčko v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "zakázané zaškrtávací políčko v tmavém motivu") | ![Zrušené zaškrtávací políčko v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "zakázané zaškrtávací políčko modrý motiv") | ![Zrušené zaškrtávací políčko v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "zakázané zaškrtávací políčko motiv s vysokým kontrastem") |
 | Pozadí | ![#F6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 vzorníku")<br />`#F6F6F6` | ![#2D2D30 vzorníku](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 vzorníku")<br />`#2D2D30` | ![#F6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 vzorníku")<br />`#F6F6F6` | ![Vzorník InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption vzorníku")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="hover"></a>Při najetí myší
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Zaškrtávací políčko se stavem při najetí myší v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "přechodu stavu zaškrtnutí políčka v světlý motiv") | ![Zaškrtávací políčko se stavem při najetí myší v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "přechodu stavu zaškrtnutí políčka v tmavém motivu") | ![Zaškrtávací políčko se stavem při najetí myší v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "přechodu stavu zaškrtnutí políčka v modrý motiv") | ![Zaškrtávací políčko se stavem při najetí myší v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "přechodu stavu zaškrtnutí políčka v motiv s vysokým kontrastem") |
 | Pozadí | ![#F3F9FF vzorníku](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF vzorníku")<br />`#F3F9FF` | ![#1F1F20 vzorníku](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 vzorníku")<br />`#1F1F20` | ![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
@@ -419,7 +419,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="pressed"></a>Stisknutí
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Při stisknutí zaškrtávací políčko světlý motiv](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "při stisknutí zaškrtávací políčko světlý motiv") | ![Při stisknutí zaškrtávací políčko v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "při stisknutí zaškrtávací políčko v tmavém motivu") | ![Při stisknutí zaškrtávací políčko modrý motiv](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "při stisknutí zaškrtávací políčko modrý motiv") | ![Při stisknutí zaškrtávací políčko motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "při stisknutí zaškrtávací políčko motiv s vysokým kontrastem") |
 | Pozadí | ![#007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC vzorníku")<br />`#007ACC` | ![#007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC vzorníku")<br />`#007ACC` | ![#E5C365 vzorníku](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 vzorníku")<br />`#E5C365` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
@@ -429,7 +429,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="focused"></a>Fokus
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Focused zaškrtávací políčko světlý motiv](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "Focused zaškrtávací políčko světlý motiv") | ![Focused zaškrtávací políčko v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "Focused zaškrtávací políčko v tmavém motivu") | ![Focused zaškrtávací políčko modrý motiv](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "Focused zaškrtávací políčko modrý motiv") | ![Focused zaškrtávací políčko motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "Focused zaškrtávací políčko motiv s vysokým kontrastem") |
 | Pozadí | ![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![#1F1F20 vzorníku](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 vzorníku")<br />`#1F1F20` | ![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
@@ -446,7 +446,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 #### <a name="default"></a>Výchozí
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Výchozí odkládací – dolů nebo seznamem v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "výchozí odkládací – dolů nebo seznamem v světlý motiv") | ![Výchozí odkládací dolů nebo seznamem v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "výchozí odkládací dolů nebo seznamem v tmavém motivu") | ![Výchozí odkládací dolů/seznamem v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "výchozí odkládací dolů/seznamem v modrý motiv") | ![Výchozí odkládací dolů nebo seznamem v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "výchozí odkládací dolů nebo seznamem v motiv s vysokým kontrastem") |
 | Pozadí | ![## 007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "## 007ACC vzorníku")<br />`##007ACC` | ![#333337 vzorníku](../../extensibility/ux-guidelines/media/333337.png "#333337 vzorníku")<br />`#333337` | ![Vzorník #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC vzorníku")<br />`#FCFCFC` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
@@ -457,19 +457,19 @@ Při použití této referenční příručce, mějte na paměti:
 
 #### <a name="disabled"></a>Zakázáno
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Zakázané rozevírací – dolů nebo seznamem v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "zakázané rozevírací dolů nebo seznamem v světlý motiv") | ![Zakázané rozevírací dolů nebo seznamem v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "zakázané rozevírací dolů nebo seznamem v tmavém motivu") | ![Zakázané rozevírací dolů/seznamem v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "zakázané rozevírací dolů nebo seznamem v modrý motiv") | ![Zakázané rozevírací dolů nebo seznamem v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "zakázané rozevírací dolů nebo seznamem v motiv s vysokým kontrastem") |
 | Pozadí | ![#EEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 vzorníku")<br />`#EEEEF2` | ![#2D2D30 vzorníku](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 vzorníku")<br />`#2D2D30` | ![#DFE7F3 vzorníku](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 vzorníku")<br />`#DFE7F3` | ![Vzorník InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption vzorníku")<br />`InactiveCaption` |
 | Ohraničení | ![Vzorník #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB vzorníku")<br />`#CCCEDB` | ![#434346 vzorníku](../../extensibility/ux-guidelines/media/434346.png "#434346 vzorníku")<br />`#434346` | ![#A4ADBA vzorníku](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA vzorníku")<br />`#A4ADBA` | ![Vzorník InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder vzorníku")<br />`InactiveBorder` |
 | Text | ![#A2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 vzorníku")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 vzorníku")<br />`#656565` | ![#A2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 vzorníku")<br />`#A2A4A5` | ![Vzorník InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText vzorníku")<br />`InactiveCaptionText` |
-| Oddělovač | ![#EEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 vzorníku")<br />`#EEEEF2` | ![#2D2D30 vzorníku](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 vzorníku")<br />`#2D2D30` | ![#D5DCE8 vzorníku](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 vzorníku")<br />`#D5DCE8` | ![Vzorník InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder vzorníku")<br />`InactiveBorder` | 
+| Oddělovač | ![#EEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 vzorníku")<br />`#EEEEF2` | ![#2D2D30 vzorníku](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 vzorníku")<br />`#2D2D30` | ![#D5DCE8 vzorníku](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 vzorníku")<br />`#D5DCE8` | ![Vzorník InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder vzorníku")<br />`InactiveBorder` |
 | Piktogram | ![Vzorník #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB vzorníku")<br />`#CCCEDB` | ![#656565 vzorníku](../../extensibility/ux-guidelines/media/656565.png "#656565 vzorníku")<br />`#656565` | ![#A2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 vzorníku")<br />`#A2A4A5` | ![Vzorník InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText vzorníku")<br />`InactiveCaptionText` |
 | Piktogram na pozadí | ![#EEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 vzorníku")<br />`#EEEEF2` | ![#2D2D30 vzorníku](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 vzorníku")<br />`#2D2D30` | ![#D5DCE8 vzorníku](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 vzorníku")<br />`#D5DCE8` | ![Vzorník InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption vzorníku")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>Při najetí myší
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Při najetí myší stavu rozevírací seznamu nebo pole se seznamem v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "při najetí myší stavu rozevírací seznamu nebo pole se seznamem v světlý motiv") | ![Při najetí myší stavu rozevírací seznamu nebo pole se seznamem v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "při najetí myší stavu rozevírací seznamu nebo pole se seznamem v tmavém motivu") | ![Při najetí myší stavu rozevírací seznamu nebo pole se seznamem v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "při najetí myší stavu rozevírací seznamu nebo pole se seznamem v modrý motiv") | ![Při najetí myší stavu rozevírací seznamu nebo pole se seznamem v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "při najetí myší stavu rozevírací seznamu nebo pole se seznamem v motiv s vysokým kontrastem") |
 | Pozadí | ![#007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC vzorníku")<br />`#007ACC` | ![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![Vzorník #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC vzorníku")<br />`#FCFCFC` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
@@ -481,7 +481,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 #### <a name="pressed"></a>Stisknutí
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Při stisknutí rozevírací dolů nebo seznamem v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "při stisknutí rozevírací dolů nebo seznamem v světlý motiv") | ![Při stisknutí rozevírací dolů nebo seznamem v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "při stisknutí rozevírací dolů nebo seznamem v tmavém motivu") | ![Při stisknutí rozevírací dolů nebo seznamem v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "při stisknutí rozevírací dolů nebo seznamem v modrý motiv") | ![Při stisknutí rozevírací dolů nebo seznamem v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "při stisknutí rozevírací dolů nebo seznamem v motiv s vysokým kontrastem") |
 | Pozadí | ![#FFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF vzorníku")<br />`#FFFFFF` | ![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![Vzorník #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC vzorníku")<br />`#FCFCFC` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
@@ -493,7 +493,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 #### <a name="focused"></a>Fokus
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Focused rozevírací dolů nebo seznamem v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "Focused rozevírací dolů nebo seznamem v světlý motiv") | ![Focused rozevírací dolů nebo seznamem v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "Focused rozevírací dolů nebo seznamem v tmavém motivu") | ![Focused rozevírací dolů nebo seznamem v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "Focused rozevírací dolů nebo seznamem v modrý motiv") | ![Focused rozevírací dolů nebo seznamem v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "Focused rozevírací dolů nebo seznamem v motiv s vysokým kontrastem") |
 | Pozadí | ![#FFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF vzorníku")<br />`#FFFFFF` | ![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![Vzorník #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC vzorníku")<br />`#FCFCFC` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
@@ -511,7 +511,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 #### <a name="default"></a>Výchozí
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pozadí | ![#F6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 vzorníku")<br />`#F6F6F6` | ![#1B1B1C vzorníku](../../extensibility/ux-guidelines/media/1B1B1C.png "#1B1B1C vzorníku")<br />`#1B1B1C` | ![Vzorník #EFEFEF](../../extensibility/ux-guidelines/media/EFEFEF.png "#EFEFEF vzorníku")<br />`#EFEFEF` | ![Nabídka vzorníku](../../extensibility/ux-guidelines/media/HCMenu.png "nabídky vzorníku")<br />`Menu` |
 | Ohraničení | ![Vzorník #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB vzorníku")<br />`#CCCEDB` | ![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![#98A7B7 vzorníku](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 vzorníku")<br />`#98A7B7`| ![Vzorník MenuText](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText vzorníku")<br />`MenuText` |
@@ -520,7 +520,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 #### <a name="hover"></a>Při najetí myší
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pozadí | ![#C9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 vzorníku")<br />`#C9DEF5` | ![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
 | Ohraničení | ![Vzorník #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB vzorníku")<br />`#CCCEDB` |![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -528,7 +528,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 #### <a name="pressed"></a>Stisknutí
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pozadí |![#C9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 vzorníku")<br />`#C9DEF5` |![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
 | Ohraničení | ![Vzorník #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB vzorníku")<br />`#CCCEDB` |![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -536,7 +536,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 #### <a name="focused"></a>Fokus
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pozadí | ![#F6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 vzorníku")<br />`#F6F6F6` |![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
 | Ohraničení | ![#C9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 vzorníku")<br />`#C9DEF5` |![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` |![#FDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF vzorníku")<br />`#FDF4BF` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
@@ -544,14 +544,14 @@ Při použití této referenční příručce, mějte na paměti:
 
 ### <a name="text-input-selection"></a>Výběr vstupního textu
 
-| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
+| | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Vzhled | ![Přetažení seznamu nebo pole se seznamem textového zadání výběru v světlý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "rozevíracího seznamu/kombinovaný pole textového zadání výběru v světlý motiv") | ![Přetažení seznamu nebo pole se seznamem textového zadání výběru v tmavém motivu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "rozevíracího seznamu/kombinovaný pole textového zadání výběru v tmavém motivu") | ![Přetažení seznamu nebo pole se seznamem textového zadání výběru v modrý motiv](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "rozevíracího seznamu/kombinovaný pole textového zadání výběru v modrý motiv") | ![Přetažení seznamu nebo pole se seznamem textového zadání výběru v motiv s vysokým kontrastem](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "rozevíracího seznamu/kombinovaný pole textového zadání výběru v motiv s vysokým kontrastem") |
 | Výběr vstupního textu | ![#66007ACC vzorníku](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC vzorníku")<br />`#66007ACC` | ![#66007ACC vzorníku](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC vzorníku")<br />`#66007ACC` | ![#66007ACC vzorníku](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC vzorníku")<br />`#66007ACC` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>Vzorník barev podle funkce
 
-| Světlý | Tmavý | Modrá | Používá pro... | 
+| Světlý | Tmavý | Modrá | Používá pro... |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![#FFFDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF vzorníku")<br />`#FFFDF4BF` | Akce tlačítka, položky pole se seznamem, tlačítka panelu příkazů, rozevíracích tlačítek a položky nabídky: pozadí |
 | ![Vzorník #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB vzorníku")<br />`#FFCCCEDB` | ![#FF3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 vzorníku")<br />`#FF3F3F46` | ![#FF465A7D vzorníku](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D vzorníku")<br />`#FF465A7D` | Automaticky skrýt ohraničení karty |

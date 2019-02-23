@@ -11,54 +11,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b62df361a965028240316c14da4c8c9ee8e578c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de2ed5d9c757d9082cd06c2aae5a8e51b0865714
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997699"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699402"
 ---
 # <a name="strings-element"></a>Strings – element
-Řetězce element musí obsahovat alespoň **ButtonText** podřízený element. Všechny ostatní podřízené prvky jsou volitelné. Neplatný kód XML znaky, jako 'a' a ' <' musí být zakódovaný jako entity ("&amp;"a"&lt;" a tak dále).  
-  
- Znak ampersand v textovém řetězci Určuje klávesovou zkratku pro příkaz.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-<Strings>  
-  <ButtonText>... </ButtonText>  
-  <CommandName>... </CommandName>  
-</Strings>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributy a elementy  
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
-  
-### <a name="attributes"></a>Atributy  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|jazyk|Volitelné. Jazyk = ".".|  
-  
-### <a name="child-elements"></a>Podřízené elementy  
-  
-|Prvek|Popis|  
-|-------------|-----------------|  
-|ButtonText –|Toto pole a pět následujících textová pole v definici příkazu umožňují zadat text, který se zobrazí v různých nabídkách. Ve výchozím nastavení `ButtonText` pole se zobrazí v nabídce řadiče. `ButtonText` Pole stane výchozí hodnota je-li další textová pole jsou prázdné. `ButtonText` Pole nemůže být prázdný, i když nejsou určeny další textová pole.|  
-|ToolTipText|`ToolTipText` Pole určuje text zobrazený v popisku tooltip položky nabídky.<br /><br /> Pokud `ToolTipText` je pole prázdné, `ButtonText` pole se používá.|  
-|MenuText|`MenuText` Pole určuje text, který se zobrazí pro příkaz, pokud je v hlavní nabídce nástrojů, v místní nabídce nebo podnabídky. Pokud `MenuText` je pole prázdné, integrované vývojové prostředí (IDE) používá `ButtonText` pole. `MenuText` Pole můžete také použít pro lokalizaci.<br /><br /> Pro místní nabídky `MenuText` pole je název, který se zobrazí na panelu nástrojů místní nabídky, který umožňuje vlastní nastavení z místní nabídky v integrovaném vývojovém prostředí. Proto se konkrétní v pojmenujete vaší nabídky; například použijte "Widget balíček místní nabídka" místo "Místní".<br /><br /> Pokud `MenuText` pole není zadán, `ButtonText` pole se používá.|  
-|commandName|`CommandName` Pole určuje text, který se zobrazí v kategorii klávesnice v **příkazy** kartu **vlastní** dialogové okno (k dispozici kliknutím **vlastní**na **nástroje** nabídky).|  
-|CanonicalName|Angličtina `CanonicalName` pole určuje název příkazu v anglický text, který je možné zadat v **příkaz** okna k provedení položky nabídky. Integrované vývojové prostředí odstraní všechny znaky, které nejsou písmena, číslice, podtržítka nebo vložený období. Tento text je pak zřetězeny do `ButtonText` pole k definování příkazu. Například **nový projekt** na **souboru** nabídce stane příkaz File.NewProject.<br /><br /> Pokud Angličtina `CanonicalName` pole není zadaný, použije integrovaného vývojového prostředí `ButtonText` pole a všechny s výjimkou písmena, číslice, podtržítka a tečky vložené pásky. Například Text tlačítka "& definovat příkazy..." stane DefineCommands, kde se odeberou ampersand, prostor a na tři tečky.<br /><br /> Pokud `TextChanges` označen příznakem a text příkazu se změní, odpovídající příkaz rozpoznávaných **příkaz** okno nemění; zůstane kanonický tvar původní `ButtonText` nebo Angličtina `CanonicalName` pole.|  
-|LocCanonicalName|`LocCanonicalName` Pole chová stejně jako Angličtina `CanonicalName` pole ale umožňuje lokalizované příkaz text, který má být zadán. Můžete zadat i canonical pole. Protože parsovat text zadaný do integrovaného vývojového prostředí **příkaz** okno a přidruží ji příkazem, angličtina a jiné než anglické jazykové text lze přidružit ten samý příkaz.|  
-  
-### <a name="parent-elements"></a>Nadřazené elementy  
-  
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Button – element](../extensibility/button-element.md)|Definuje element, který může uživatel zasahovat.|  
-|[Menu – element](../extensibility/menu-element.md)|Definuje jednu položku.|  
-|[Combo – element](../extensibility/combo-element.md)|Definuje příkazy, které se zobrazí v poli se seznamem.|  
-  
-## <a name="see-also"></a>Viz také  
- [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Řetězce element musí obsahovat alespoň **ButtonText** podřízený element. Všechny ostatní podřízené prvky jsou volitelné. Neplatný kód XML znaky, jako 'a' a ' <' musí být zakódovaný jako entity ("&amp;"a"&lt;" a tak dále).
+
+ Znak ampersand v textovém řetězci Určuje klávesovou zkratku pro příkaz.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+<Strings>
+  <ButtonText>... </ButtonText>
+  <CommandName>... </CommandName>
+</Strings>
+```
+
+## <a name="attributes-and-elements"></a>Atributy a elementy
+ Následující části popisují atributy, podřízené prvky a nadřazené prvky.
+
+### <a name="attributes"></a>Atributy
+
+|Atribut|Popis|
+|---------------|-----------------|
+|jazyk|Volitelné. Jazyk = ".".|
+
+### <a name="child-elements"></a>Podřízené elementy
+
+|Prvek|Popis|
+|-------------|-----------------|
+|ButtonText –|Toto pole a pět následujících textová pole v definici příkazu umožňují zadat text, který se zobrazí v různých nabídkách. Ve výchozím nastavení `ButtonText` pole se zobrazí v nabídce řadiče. `ButtonText` Pole stane výchozí hodnota je-li další textová pole jsou prázdné. `ButtonText` Pole nemůže být prázdný, i když nejsou určeny další textová pole.|
+|ToolTipText|`ToolTipText` Pole určuje text zobrazený v popisku tooltip položky nabídky.<br /><br /> Pokud `ToolTipText` je pole prázdné, `ButtonText` pole se používá.|
+|MenuText|`MenuText` Pole určuje text, který se zobrazí pro příkaz, pokud je v hlavní nabídce nástrojů, v místní nabídce nebo podnabídky. Pokud `MenuText` je pole prázdné, integrované vývojové prostředí (IDE) používá `ButtonText` pole. `MenuText` Pole můžete také použít pro lokalizaci.<br /><br /> Pro místní nabídky `MenuText` pole je název, který se zobrazí na panelu nástrojů místní nabídky, který umožňuje vlastní nastavení z místní nabídky v integrovaném vývojovém prostředí. Proto se konkrétní v pojmenujete vaší nabídky; například použijte "Widget balíček místní nabídka" místo "Místní".<br /><br /> Pokud `MenuText` pole není zadán, `ButtonText` pole se používá.|
+|commandName|`CommandName` Pole určuje text, který se zobrazí v kategorii klávesnice v **příkazy** kartu **vlastní** dialogové okno (k dispozici kliknutím **vlastní**na **nástroje** nabídky).|
+|CanonicalName|Angličtina `CanonicalName` pole určuje název příkazu v anglický text, který je možné zadat v **příkaz** okna k provedení položky nabídky. Integrované vývojové prostředí odstraní všechny znaky, které nejsou písmena, číslice, podtržítka nebo vložený období. Tento text je pak zřetězeny do `ButtonText` pole k definování příkazu. Například **nový projekt** na **souboru** nabídce stane příkaz File.NewProject.<br /><br /> Pokud Angličtina `CanonicalName` pole není zadaný, použije integrovaného vývojového prostředí `ButtonText` pole a všechny s výjimkou písmena, číslice, podtržítka a tečky vložené pásky. Například Text tlačítka "& definovat příkazy..." stane DefineCommands, kde se odeberou ampersand, prostor a na tři tečky.<br /><br /> Pokud `TextChanges` označen příznakem a text příkazu se změní, odpovídající příkaz rozpoznávaných **příkaz** okno nemění; zůstane kanonický tvar původní `ButtonText` nebo Angličtina `CanonicalName` pole.|
+|LocCanonicalName|`LocCanonicalName` Pole chová stejně jako Angličtina `CanonicalName` pole ale umožňuje lokalizované příkaz text, který má být zadán. Můžete zadat i canonical pole. Protože parsovat text zadaný do integrovaného vývojového prostředí **příkaz** okno a přidruží ji příkazem, angličtina a jiné než anglické jazykové text lze přidružit ten samý příkaz.|
+
+### <a name="parent-elements"></a>Nadřazené elementy
+
+|Prvek|Popis|
+|-------------|-----------------|
+|[Button – element](../extensibility/button-element.md)|Definuje element, který může uživatel zasahovat.|
+|[Menu – element](../extensibility/menu-element.md)|Definuje jednu položku.|
+|[Combo – element](../extensibility/combo-element.md)|Definuje příkazy, které se zobrazí v poli se seznamem.|
+
+## <a name="see-also"></a>Viz také
+- [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c355ba523bd16cce9d352d483af8c142f0ee439c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318235"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705635"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Přidání kontroleru nabídky do panelu nástrojů
 Tento návod vychází [přidat panel nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md) návod a ukazuje, jak přidat kontroleru nabídky do panelu nástrojů okno nástrojů. Zde uvedených kroků můžete použít také na panel nástrojů, který je vytvořen v [přidat panel nástrojů](../extensibility/adding-a-toolbar.md) návodu.
@@ -223,5 +223,5 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     Zobrazí se dialogové okno se zprávou **vyberete kontroleru nabídky 3 položky**. Všimněte si, že zpráva odpovídá text na tlačítku kontroleru nabídky. Tlačítko nabídky řadiče se teď zobrazují **3 položky MC**.
 
 ## <a name="see-also"></a>Viz také:
-[Přidání panelu nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
-[Přidání panelu nástrojů](../extensibility/adding-a-toolbar.md)
+- [Přidání panelu nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [Přidání panelu nástrojů](../extensibility/adding-a-toolbar.md)

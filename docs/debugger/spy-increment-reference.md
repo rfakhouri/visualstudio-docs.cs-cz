@@ -11,47 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407c161c700f4dd24eb8d123f0ef015398051caa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925610"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686584"
 ---
 # <a name="spy-reference"></a>Referenční dokumentace nástroje Spy++
-Najdete v částech níže uvedené popisy jednotlivých nástroje Spy ++ nabídky a dialogové okno pole:  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Příkazy nabídky](../debugger/menu-commands.md)  
- Popisuje příkazy, které jsou k dispozici pro jednotlivé nabídky Nástroje Spy ++.  
-  
- [Dialogové okno písem](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
- Slouží ke konfiguraci znak písmo použité v okně zobrazení nástroje Spy ++.  
-  
- [Vyhledávací nástroje pro zobrazení nástroje Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Dialogová okna použit k vyhledání specifické uzlu v okně zobrazení nástroje Spy ++.  
-  
- [Dialogové okno vlastností oken](../debugger/window-properties-dialog-box.md)  
- Slouží k zobrazení vlastností okna vybrána v zobrazení Windows.  
-  
- [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md)  
- Slouží k výběru zprávy, které jsou uvedené v zobrazení zpráv.  
-  
- [Dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md)  
- Slouží k zobrazení vlastnosti zprávy vybrána v zobrazení zpráv.  
-  
- [Dialogové okno vlastností procesů](../debugger/process-properties-dialog-box.md)  
- Slouží k zobrazení vlastností procesu vybrána v zobrazení procesy.  
-  
- [Dialogové okno vlastností vláken](../debugger/thread-properties-dialog-box.md)  
- Slouží k zobrazení vlastností vlákna vybrána v zobrazení vláken.  
-  
- [Jiná dialogová okna](../debugger/other-dialog-boxes.md)  
- Slouží k zobrazení informací o programu nástroje Spy ++.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
- Seznámíte se nástroje Spy ++, jak je možné.  
-  
- [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.
+Najdete v částech níže uvedené popisy jednotlivých nástroje Spy ++ nabídky a dialogové okno pole:
+
+## <a name="in-this-section"></a>V tomto oddílu
+ [Příkazy nabídky](../debugger/menu-commands.md) popisuje příkazy, které jsou k dispozici pro jednotlivé nabídky Nástroje Spy ++.
+
+ [Dialogové okno Písmo](../debugger/font-dialog-box-microsoft-spy-increment-help.md) slouží ke konfiguraci znak písmo použité v okně zobrazení nástroje Spy ++.
+
+ [Nástroje pro hledání pro zobrazení nástroje Spy ++](../debugger/search-tools-for-spy-increment-views.md) použit k vyhledání specifické uzlu v okně zobrazení nástroje Spy ++ dialogových oknech.
+
+ [Dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md) slouží k zobrazení vlastností okna vybrána v zobrazení Windows.
+
+ [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md) použity k výběru zprávy, které jsou uvedené v zobrazení zpráv.
+
+ [Dialogové okno Vlastnosti zprávy](../debugger/message-properties-dialog-box.md) slouží k zobrazení vlastnosti zprávy vybrána v zobrazení zpráv.
+
+ [Dialogové okno vlastností procesů](../debugger/process-properties-dialog-box.md) slouží k zobrazení vlastností procesu vybrána v zobrazení procesy.
+
+ [Dialogové okno vlastností vláken](../debugger/thread-properties-dialog-box.md) slouží k zobrazení vlastností vlákna vybrána v zobrazení vláken.
+
+ [Jiná dialogová okna](../debugger/other-dialog-boxes.md) slouží k zobrazení informací o programu nástroje Spy ++.
+
+## <a name="related-sections"></a>Související oddíly
+ [Použití nástroje Spy ++](../debugger/using-spy-increment.md) zavádí nástroje Spy ++ a vysvětluje, jak je možné.
+
+ [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md) vysvětluje zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.

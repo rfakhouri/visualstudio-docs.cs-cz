@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::SetLocale | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::SetLocale
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e736211dd4256b2a2d85a8b2f23e2474e1e4da30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28eb188ed5b388ac642399630b1891e165d6c9a2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934783"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703393"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
-Nastaví národní prostředí ladicího stroje (DE).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT SetLocale(   
-   WORD wLangID  
-);  
-```  
-  
-```csharp  
-int SetLocale(   
-   ushort wLangID  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `wLangID`  
- [in] Určuje jazyk národního prostředí. Například 1033 pro angličtinu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato metoda je volána pomocí Správce ladění relace (SDM) tak, aby se správně lokalizovaných řetězců vracených DE šíření nastavení národního prostředí IDE.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+Nastaví národní prostředí ladicího stroje (DE).
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT SetLocale( 
+   WORD wLangID
+);
+```
+
+```csharp
+int SetLocale( 
+   ushort wLangID
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `wLangID`
+
+ [in] Určuje jazyk národního prostředí. Například 1033 pro angličtinu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Tato metoda je volána pomocí Správce ladění relace (SDM) tak, aby se správně lokalizovaných řetězců vracených DE šíření nastavení národního prostředí IDE.
+
+## <a name="see-also"></a>Viz také
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

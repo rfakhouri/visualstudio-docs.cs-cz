@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227058"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714969"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Postupy: Ladění metody OnStart
 Služba Windows můžete ladit spuštění služby a připojování ladicího programu k procesu služby. Další informace najdete v tématu [jak: Ladění aplikace služby Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Ale chcete-li ladit <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> metody služby Windows, musíte spustit ladicí program z uvnitř metody.
@@ -53,5 +53,5 @@ Služba Windows můžete ladit spuštění služby a připojování ladicího pr
 5. Novou instanci třídy spustí aplikace Visual Studio a provedení je zastaveno `Debugger.Launch()` metody.
 
 ## <a name="see-also"></a>Viz také
-[Zabezpečení ladicího programu](../debugger/debugger-security.md)  
-[Ladění spravovaného kódu](../debugger/debugging-managed-code.md)
+- [Zabezpečení ladicího programu](../debugger/debugger-security.md)
+- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)

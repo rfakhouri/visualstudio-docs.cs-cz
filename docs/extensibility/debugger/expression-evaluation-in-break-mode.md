@@ -12,32 +12,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852b4284bbbf59ce8f3964d98f0464e583f1444f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f04f6b94c0f5b50c464067141c071404fd13bcff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028670"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711212"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Vyhodnocení výrazu v režimu pozastavení
-Následující část popisuje proces, který nastane, pokud je v režimu přerušení ladicího programu a musí provést vyhodnocení výrazu.  
-  
-## <a name="expression-evaluation-process"></a>Proces vyhodnocení výrazu  
- Toto jsou základní kroky při vyhodnocení výrazu:  
-  
-1.  Správce ladění relace (SDM) volá [IDebugStackFrame2::GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) získat rozhraní kontextu výrazu [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md).  
-  
-2.  Pak zavolá SDM [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) s řetězcem, který se má analyzovat.  
-  
-3.  Pokud ParseText nevrací hodnotu S_OK, vrátí se z důvodu chyby.  
-  
-     -otherwise-  
-  
-     Pokud ParseText nevrátí hodnotu S_OK, SDM pak můžete volat buď [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) nebo [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) zobrazíte konečnou hodnotu z analyzovaného výrazu.  
-  
-    -   Při použití `IDebugExpression2::EvaluateSync`, daného zpětného volání rozhraní komunikuje probíhající proces hodnocení. Konečná hodnota se vrátí v [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) rozhraní.  
-  
-    -   Při použití `IDebugExpression2::EvaluateAsync`, daného zpětného volání rozhraní komunikuje probíhající proces hodnocení. Po dokončení hodnocení EvaluateAsync odešle [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) rozhraní zpětného volání. S tímto rozhraním události konečná hodnota výsledky s [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).  
-  
-## <a name="see-also"></a>Viz také:  
- [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)
+Následující část popisuje proces, který nastane, pokud je v režimu přerušení ladicího programu a musí provést vyhodnocení výrazu.
+
+## <a name="expression-evaluation-process"></a>Proces vyhodnocení výrazu
+ Toto jsou základní kroky při vyhodnocení výrazu:
+
+1.  Správce ladění relace (SDM) volá [IDebugStackFrame2::GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) získat rozhraní kontextu výrazu [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md).
+
+2.  Pak zavolá SDM [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) s řetězcem, který se má analyzovat.
+
+3.  Pokud ParseText nevrací hodnotu S_OK, vrátí se z důvodu chyby.
+
+     -otherwise-
+
+     Pokud ParseText nevrátí hodnotu S_OK, SDM pak můžete volat buď [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) nebo [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) zobrazíte konečnou hodnotu z analyzovaného výrazu.
+
+    -   Při použití `IDebugExpression2::EvaluateSync`, daného zpětného volání rozhraní komunikuje probíhající proces hodnocení. Konečná hodnota se vrátí v [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) rozhraní.
+
+    -   Při použití `IDebugExpression2::EvaluateAsync`, daného zpětného volání rozhraní komunikuje probíhající proces hodnocení. Po dokončení hodnocení EvaluateAsync odešle [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) rozhraní zpětného volání. S tímto rozhraním události konečná hodnota výsledky s [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).
+
+## <a name="see-also"></a>Viz také:
+- [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

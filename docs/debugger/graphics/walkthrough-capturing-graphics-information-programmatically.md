@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7652f05bf6028dd7d5b14d207fdd0b83a73ef5ad
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227628"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722912"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Průvodce: Zaznamenání grafických informací prostřednictvím kódu programu
 Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky k programově zachytit informace grafiky z aplikace Direct3D.
@@ -115,6 +115,6 @@ Tento názorný postup ukázal, jak k zaznamenání grafických informací prost
 - Zjistěte, jak analyzovat zachycené informace grafiky pomocí nástrojů diagnostiky grafiky. Zobrazit [přehled](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Viz také
-[Návod: Záznam grafických informací](walkthrough-capturing-graphics-information.md)  
-[Zaznamenání grafických informací](capturing-graphics-information.md)  
-[Nástroj příkazového řádku pro zachytávání](command-line-capture-tool.md)
+- [Návod: Záznam grafických informací](walkthrough-capturing-graphics-information.md)
+- [Zaznamenání grafických informací](capturing-graphics-information.md)
+- [Nástroj příkazového řádku pro zachytávání](command-line-capture-tool.md)

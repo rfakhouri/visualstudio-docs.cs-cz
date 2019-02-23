@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::EnumCodeContexts | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::EnumCodeContexts
 helpviewer_keywords:
@@ -12,46 +12,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3439791fbefaced7238af815beef4fa07b379cb3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77d92a65b77cbec94a6c74852393627af6763bad
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027942"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685388"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-Načte seznam kontexty kód pro danou pozici ve zdrojovém souboru.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT EnumCodeContexts(   
-   IDebugDocumentPosition2*  pDocPos,  
-   IEnumDebugCodeContexts2** ppEnum  
-);  
-```  
-  
-```csharp  
-int EnumCodeContexts(   
-   IDebugDocumentPosition2     pDocPos,  
-   out IEnumDebugCodeContexts2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pDocPos`  
- [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objekt představující abstraktní pozice ve zdrojovém souboru ví, rozhraní IDE.  
-  
- `ppEnum`  
- [out] Vrátí [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objekt, který obsahuje seznam kontext kódu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato metoda umožňuje ladicí relace správci nebo integrované vývojové prostředí pro mapování pozici zdrojového souboru na pozici kódu. Více než jeden kontext kódu je vrácena, pokud zdroj generuje více bloků kódu (například šablony jazyka C++).  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
- [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
+Načte seznam kontexty kód pro danou pozici ve zdrojovém souboru.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT EnumCodeContexts( 
+   IDebugDocumentPosition2*  pDocPos,
+   IEnumDebugCodeContexts2** ppEnum
+);
+```
+
+```csharp
+int EnumCodeContexts( 
+   IDebugDocumentPosition2     pDocPos,
+   out IEnumDebugCodeContexts2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pDocPos`
+
+ [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objekt představující abstraktní pozice ve zdrojovém souboru ví, rozhraní IDE.
+
+ `ppEnum`
+
+ [out] Vrátí [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objekt, který obsahuje seznam kontext kódu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Tato metoda umožňuje ladicí relace správci nebo integrované vývojové prostředí pro mapování pozici zdrojového souboru na pozici kódu. Více než jeden kontext kódu je vrácena, pokud zdroj generuje více bloků kódu (například šablony jazyka C++).
+
+## <a name="see-also"></a>Viz také
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
+- [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_PARAM | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_PARAM
 helpviewer_keywords:
@@ -12,55 +12,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f91e8ddf00b191bd2574c3a360328fb00cb50960
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938065"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700286"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
-Tato struktura reprezentuje parametr metody nebo funkce.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-typedef struct _tagMETADATA_ADDRESS_PARAM {  
-   _mdToken tokMethod;  
-   _mdToken tokParam;  
-   DWORD    dwIndex;  
-} METADATA_ADDRESS_PARAM;  
-```  
-  
-```csharp  
-public struct METADATA_ADDRESS_PARAM {  
-   public int  tokMethod;  
-   public int  tokParam;  
-   public uint dwIndex;  
-}  
-```  
-  
-## <a name="terms"></a>Podmínky  
- tokMethod  
- ID metody parametru je součástí.  
-  
- tokParam  
- ID parametru.  
-  
- dwIndex  
- Index parametru v seznamu parametrů.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato struktura je součástí sjednocení v [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) strukturu, kdy `dwKind` pole `DEBUG_ADDRESS_UNION` struktura je nastavena na `ADDRESS_KIND_PARAM` (hodnotu z [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) výčet).  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: sh.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+Tato struktura reprezentuje parametr metody nebo funkce.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+typedef struct _tagMETADATA_ADDRESS_PARAM {
+   _mdToken tokMethod;
+   _mdToken tokParam;
+   DWORD    dwIndex;
+} METADATA_ADDRESS_PARAM;
+```
+
+```csharp
+public struct METADATA_ADDRESS_PARAM {
+   public int  tokMethod;
+   public int  tokParam;
+   public uint dwIndex;
+}
+```
+
+## <a name="terms"></a>Podmínky
+ tokMethod ID metody parametru je součástí.
+
+ tokParam ID parametru.
+
+ dwIndex index parametru v seznamu parametrů.
+
+## <a name="remarks"></a>Poznámky
+ Tato struktura je součástí sjednocení v [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) strukturu, kdy `dwKind` pole `DEBUG_ADDRESS_UNION` struktura je nastavena na `ADDRESS_KIND_PARAM` (hodnotu z [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) výčet).
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: sh.h
+
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+- [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

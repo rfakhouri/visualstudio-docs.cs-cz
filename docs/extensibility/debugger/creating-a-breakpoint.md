@@ -11,31 +11,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16fc85090b59909add7ae228a795c6396ca61a3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a5c2769b4d2b194923ce0ba5ca5d6e644a8c5f0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967229"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704758"
 ---
 # <a name="create-a-breakpoint"></a>Vytvořit zarážku
-Následující část popisuje proces vytváření zarážku.  
-  
-## <a name="methods-in-breakpoint-creation"></a>Metody k vytvoření zarážky  
- Při načtení modulu, který je potřeba vytvořit vazbu zarážky správce ladění relace (SDM) volání těchto metod:  
-  
-1.  [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)  
-  
-2.  [IDebugPendingBreakpoint2::Virtualize](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)  
-  
-3.  [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)  
-  
+Následující část popisuje proces vytváření zarážku.
+
+## <a name="methods-in-breakpoint-creation"></a>Metody k vytvoření zarážky
+ Při načtení modulu, který je potřeba vytvořit vazbu zarážky správce ladění relace (SDM) volání těchto metod:
+
+1.  [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)
+
+2.  [IDebugPendingBreakpoint2::Virtualize](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)
+
+3.  [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
+
     > [!NOTE]
-    >  **CanBind** je volána pouze v případě, že uživatel provede zarážku z **zarážky** okna.  
-  
-4.  [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)  
-  
-5.  [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)  
-  
-## <a name="see-also"></a>Viz také:  
- [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)
+    >  **CanBind** je volána pouze v případě, že uživatel provede zarážku z **zarážky** okna.
+
+4.  [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+
+5.  [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
+
+## <a name="see-also"></a>Viz také:
+- [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

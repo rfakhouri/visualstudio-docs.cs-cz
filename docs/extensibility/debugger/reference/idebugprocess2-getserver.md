@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::GetServer | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2::GetServer
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 855f7f4035c8711fabac21d83831b8847f25b44b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33f9b513bcf336cac68af7d915880af0652b0954
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934436"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719320"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
-Získá serveru, na kterém je spuštěn tento proces.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetServer(   
-   IDebugCoreServer2** ppServer  
-);  
-```  
-  
-```csharp  
-int GetServer(   
-   out IDebugCoreServer2 ppServer  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppServer`  
- [out] Vrátí [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objekt, který představuje server, na kterém je spuštěný tento proces.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Více než jeden server může běžet na jednom počítači.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+Získá serveru, na kterém je spuštěn tento proces.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetServer( 
+   IDebugCoreServer2** ppServer
+);
+```
+
+```csharp
+int GetServer( 
+   out IDebugCoreServer2 ppServer
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppServer`
+
+ [out] Vrátí [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objekt, který představuje server, na kterém je spuštěný tento proces.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Více než jeden server může běžet na jednom počítači.
+
+## <a name="see-also"></a>Viz také
+- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

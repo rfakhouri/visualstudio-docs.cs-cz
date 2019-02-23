@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0878f4224d024e353c2c7ab798450a65e9677178
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d5d6e06a30d6c76cc36bf7a7d64f97016bc60803
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413342"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712733"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 Načte zadejte informace o zadané pole na základě daných jeho adresa pro ladění.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
-[C++]
+```cpp
 HRESULT GetArrayTypeFromAddress(
     IDebugAddress* pAddress,
     BYTE*          pSig,
@@ -33,8 +32,7 @@ HRESULT GetArrayTypeFromAddress(
 );
 ```
 
-```
-[C#]
+```csharp
 int GetArrayTypeFromAddress(
     IDebugAddress   pAddress,
     int[]           pSig,
@@ -44,17 +42,21 @@ int GetArrayTypeFromAddress(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pAddress`  
-[in] Adresa pro ladění reprezentována [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní.
+`pAddress`
 
-`pSig`  
-[in] Pole, které chcete prozkoumat.
+ [in] Adresa pro ladění reprezentována [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní.
 
-`dwSigLength`  
-[in] Délka v bajtech `pSig` pole.
+`pSig`
 
-`ppField`  
-[out] Vrátí typ pole reprezentovaná [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) rozhraní.
+ [in] Pole, které chcete prozkoumat.
+
+`dwSigLength`
+
+ [in] Délka v bajtech `pSig` pole.
+
+`ppField`
+
+ [out] Vrátí typ pole reprezentovaná [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) rozhraní.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -96,4 +98,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

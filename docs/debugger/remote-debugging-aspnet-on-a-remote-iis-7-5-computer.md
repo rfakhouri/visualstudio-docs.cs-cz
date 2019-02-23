@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023951"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720028"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
@@ -47,7 +47,7 @@ Tento článek obsahuje kroky k nastavení základní konfiguraci služby IIS na
 * Pokud potřebujete pomoc, abyste měli jistotu, že vaše aplikace je nastavené, nasazení a fungování ve službě IIS, takže můžete ladit, postupujte podle všech kroků v tomto tématu.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Vytvoření projektu ASP.NET 4.5.2 aplikace na počítači aplikace Visual Studio
-  
+
 1. Vytvoření nové aplikace MVC ASP.NET. (**Soubor > Nový > projekt**a pak vyberte <strong>Visual C# > Web > Webová aplikace ASP.NET. V **ASP.NET 4.5.2</strong> části šablony vyberte **MVC**. Ujistěte se, že **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.)
 
 2. Otevření souboru HomeController.cs a nastavte zarážku `About()` metody.
@@ -147,7 +147,7 @@ Tuto možnost můžete použít k nasazení své aplikace, pokud chcete zkopíro
 Můžete také publikovat a nasazení aplikace pomocí systému souborů nebo jiných nástrojů.
 
 1. (ASP.NET 4.5.2) Ujistěte se, že soubor web.config obsahuje správnou verzi rozhraní .NET Framework.  Například pokud se zaměřujete na ASP.NET 4.5.2, ujistěte se, že tato verze je uveden v souboru web.config.
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -156,7 +156,7 @@ Můžete také publikovat a nasazení aplikace pomocí systému souborů nebo ji
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     Například verze by měla být 4.0, při instalaci ASP.NET 4 namísto 4.5.2.
@@ -168,7 +168,7 @@ Můžete také publikovat a nasazení aplikace pomocí systému souborů nebo ji
 V tomto kurzu se používá Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Nastavení vzdáleného ladicího programu v systému Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -184,7 +184,7 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
 2. V sadě Visual Studio, klikněte na tlačítko **ladit > připojit k procesu** (Ctrl + Alt + P).
 
     > [!TIP]
-    > V sadě Visual Studio 2017, můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P). 
+    > V sadě Visual Studio 2017, můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
 
 3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: 4022**.
 4. Klikněte na tlačítko **aktualizovat**.
@@ -200,7 +200,7 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
 7. Klikněte na tlačítko **připojení**
 
 8. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >**.
-    
+
     Zobrazí se webová stránka ASP.NET.
 9. Ve spuštěné aplikaci ASP.NET, kliknutím na odkaz **o** stránky.
 
@@ -211,7 +211,7 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
 Ve většině nastavení jsou otevřené požadované porty instalace technologie ASP.NET a vzdálený ladicí program. Ale budete muset ověřit, že jsou otevřené porty.
 
 > [!NOTE]
-> Na Virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+> Na Virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Požadované porty:
 

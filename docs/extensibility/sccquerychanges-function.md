@@ -12,58 +12,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b2f1fff6bff9130bc337a4636aea3127d85514b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d21dfe4418d033776431f4864f46412a798be204
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993506"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711706"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges – funkce
-Tato funkce vytvoří výčet daný seznam files a poskytuje informace o změnách název pro každý soubor prostřednictvím funkce zpětného volání.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-SCCRTN SccQueryChanges(  
-   LPVOID           pContext,  
-   LONG             nFiles,  
-   LPCSTR*          lpFileNames,  
-   QUERYCHANGESFUNC pfnCallback,  
-   LPVOID           pvCallerData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pContext  
- [in] Ukazatel kontext modulu plug-in zdroje ovládacího prvku.  
-  
- %{nfiles/  
- [in] Počet souborů v `lpFileNames` pole.  
-  
- lpFileNames  
- [in] Pole názvy souborů, chcete-li získat informace.  
-  
- pfnCallback  
- [in] Funkce zpětného volání, která se zavolá k názvu každého souboru v seznamu (viz [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) podrobnosti).  
-  
- pvCallerData  
- [in] Hodnota, která se předají beze změny funkci zpětného volání.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:  
-  
-|Hodnota|Popis|  
-|-----------|-----------------|  
-|SCC_OK|Dotaz proces úspěšně dokončil.|  
-|SCC_E_PROJNOTOPEN|Projekt nebyl otevřen ve správě zdrojového kódu.|  
-|SCC_E_ACCESSFAILURE|Došlo k problému, přístup k systému správy zdrojového kódu, pravděpodobně kvůli problémům se síti nebo kolize.|  
-|SCC_E_NONSPECIFICERROR|Došlo k neurčené nebo obecné chybě.|  
-  
-## <a name="remarks"></a>Poznámky  
- Změny, která je dotazována pro mají obor názvů: konkrétně, přejmenování, přidávání a odebírání souboru.  
-  
-## <a name="see-also"></a>Viz také  
- [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
- [Chybové kódy](../extensibility/error-codes.md)
+Tato funkce vytvoří výčet daný seznam files a poskytuje informace o změnách název pro každý soubor prostřednictvím funkce zpětného volání.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+SCCRTN SccQueryChanges(
+   LPVOID           pContext,
+   LONG             nFiles,
+   LPCSTR*          lpFileNames,
+   QUERYCHANGESFUNC pfnCallback,
+   LPVOID           pvCallerData
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pContext
+
+[in] Ukazatel kontext modulu plug-in zdroje ovládacího prvku.
+
+ %{nfiles/
+
+[in] Počet souborů v `lpFileNames` pole.
+
+ lpFileNames
+
+[in] Pole názvy souborů, chcete-li získat informace.
+
+ pfnCallback
+
+[in] Funkce zpětného volání, která se zavolá k názvu každého souboru v seznamu (viz [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) podrobnosti).
+
+ pvCallerData
+
+[in] Hodnota, která se předají beze změny funkci zpětného volání.
+
+## <a name="return-value"></a>Návratová hodnota
+ Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
+
+|Hodnota|Popis|
+|-----------|-----------------|
+|SCC_OK|Dotaz proces úspěšně dokončil.|
+|SCC_E_PROJNOTOPEN|Projekt nebyl otevřen ve správě zdrojového kódu.|
+|SCC_E_ACCESSFAILURE|Došlo k problému, přístup k systému správy zdrojového kódu, pravděpodobně kvůli problémům se síti nebo kolize.|
+|SCC_E_NONSPECIFICERROR|Došlo k neurčené nebo obecné chybě.|
+
+## <a name="remarks"></a>Poznámky
+ Změny, která je dotazována pro mají obor názvů: konkrétně, přejmenování, přidávání a odebírání souboru.
+
+## <a name="see-also"></a>Viz také
+- [Funkce modulu plug-in správy zdrojového kódu v rozhraní API](../extensibility/source-control-plug-in-api-functions.md)
+- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
+- [Chybové kódy](../extensibility/error-codes.md)

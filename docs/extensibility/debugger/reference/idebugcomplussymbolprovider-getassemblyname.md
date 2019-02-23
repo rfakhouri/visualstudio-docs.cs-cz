@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAssemblyName | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAssemblyName
 - GetAssemblyName
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60ea9a6f498a776bc8db0b7ee0fe12aa3c23e19f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 491e3cbb2003dc293f41a207ab7ae13a7e76cc68
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412926"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692304"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
 Načte název sestavení zadané jeho modulu a aplikační domény.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
-[C++]
+```cpp
 HRESULT GetAssemblyName(
     ULONG32 ulAppDomainID,
     GUID    guidModule,
@@ -32,8 +31,7 @@ HRESULT GetAssemblyName(
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAssemblyName(
     uint   ulAppDomainID,
     Guid   guidModule,
@@ -42,14 +40,17 @@ int GetAssemblyName(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identifikátor pro doménu aplikace.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Jedinečný identifikátor pro modul.
+ [in] Identifikátor pro doménu aplikace.
 
-`pbstrName`  
-[out] Vrátí název sestavení.
+`guidModule`
+
+ [in] Jedinečný identifikátor pro modul.
+
+`pbstrName`
+
+ [out] Vrátí název sestavení.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -84,4 +85,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

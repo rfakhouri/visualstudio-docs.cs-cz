@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa1d17b31a75945392dd5bc49f5a1979e265180
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924857"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701690"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Karta Proces, dialogové okno vlastnosti okna
-Použití **procesu** kartu k identifikaci procesu vybrané okno. Zobrazíte [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md), přesuňte fokus [zobrazení Windows](../debugger/windows-view.md) okna. Vyberte jakékoli okno uzel ve stromu a pak zvolte **vlastnosti** z **zobrazení** nabídky.  
-  
- Následující nastavení jsou k dispozici na **procesu** kartu:  
-  
-|Položka|Popis|  
-|-----------|-----------------|  
-|**ID procesu**|ID procesu, který vlastní vlákno, které vytvoří toto okno. Zvolte tuto hodnotu a zobrazte vlastnosti tohoto procesu.|  
+Použití **procesu** kartu k identifikaci procesu vybrané okno. Zobrazíte [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md), přesuňte fokus [zobrazení Windows](../debugger/windows-view.md) okna. Vyberte jakékoli okno uzel ve stromu a pak zvolte **vlastnosti** z **zobrazení** nabídky.
+
+ Následující nastavení jsou k dispozici na **procesu** kartu:
+
+|Položka|Popis|
+|-----------|-----------------|
+|**ID procesu**|ID procesu, který vlastní vlákno, které vytvoří toto okno. Zvolte tuto hodnotu a zobrazte vlastnosti tohoto procesu.|
 |**ID vlákna**|ID podprocesu, který vytvoří toto okno. Zvolte tuto hodnotu a zobrazte vlastnosti tohoto vlákna.|

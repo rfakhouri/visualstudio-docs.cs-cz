@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c05e19b3bbd5078b29628101e90ca33592cda31
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014039"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721001"
 ---
 # <a name="view-menu-commands"></a>Zobrazení příkazů nabídky
-**Zobrazení** nabídka obsahuje příkazy pro řízení nástroje Spy ++ uživatelské rozhraní.  
-  
- **Písma**  
- Otevře **písmo** dialogové okno, kde můžete vybrat písmo pro použití v aktuálním zobrazení nástroje Spy ++.  
-  
- **Panel nástrojů**  
- Skryje nebo zobrazí panel nástrojů.  
-  
- **Stavový řádek**  
- Skryje nebo zobrazí stavový řádek.  
-  
- **Vlastnosti**  
- Otevře **vlastnosti** dialogové okno pro aktivní zobrazení.
+**Zobrazení** nabídka obsahuje příkazy pro řízení nástroje Spy ++ uživatelské rozhraní.
+
+ **Písmo** otevře **písmo** dialogové okno, kde můžete vybrat písmo pro použití v aktuálním zobrazení nástroje Spy ++.
+
+ **Panel nástrojů** skryje nebo zobrazí panel nástrojů.
+
+ **Stavový řádek** skryje nebo zobrazí stavový řádek.
+
+ **Vlastnosti** otevře **vlastnosti** dialogové okno pro aktivní zobrazení.

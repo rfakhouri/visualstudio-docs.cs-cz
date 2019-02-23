@@ -1,7 +1,7 @@
 ---
 title: IDebugBeforeSymbolSearchEvent2::GetModuleName | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetModuleName
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4edeb41acadd34046497412dde5c61eb249a0bfc
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d30b9559ab26e4634b82332de538cfe181bb106b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315934"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713565"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 Načte název modulu, která se právě ladí.
@@ -36,8 +36,9 @@ public int GetModuleName (
 ```
 
 #### <a name="parameters"></a>Parametry
-`pbstrModuleName`  
-[out] Název modulu.
+`pbstrModuleName`
+
+ [out] Název modulu.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -66,4 +67,4 @@ STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleN
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)
+- [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)

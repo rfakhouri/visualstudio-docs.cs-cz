@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_FLAGS | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ac3a43f64e4284cd14741acde390c930ffbb69
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413277"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682424"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 Určuje příznaky pro převod do strojového jazyka.
@@ -48,23 +48,17 @@ public enum enum_DISASSEMBLY_FLAGS {
 ```
 
 ## <a name="members"></a>Členové
-DF_DOCUMENTCHANGE  
-Označuje, že tento pokyn je v jiném dokumentu než ta předchozí.
+DF_DOCUMENTCHANGE znamená, že toto je v jiném dokumentu než ta předchozí.
 
-DF_DISABLED  
-Označuje, že tento pokyn nebude provedeno.
+DF_DISABLED označuje, že tento pokyn nebude provedeno.
 
-DF_INSTRUCTION_ACTIVE  
-Označuje, že je tento pokyn jeden další pokyny, který se spustí (může existovat více než jeden).
+DF_INSTRUCTION_ACTIVE znamená, že tento pokyn je jedním z další pokyny, který se spustí (může existovat více než jeden).
 
-DF_DATA  
-Označuje, že tento pokyn je ve skutečnosti data (ne kódu).
+DF_DATA znamená, že tento pokyn skutečně data (ne kódu).
 
-DF_HASSOURCE  
-Označuje, že tento pokyn má zdroj. Některé pokyny, jako je například profilace nebo uvolňování paměti kolekce kód, mít žádný odpovídající zdroj.
+DF_HASSOURCE znamená, že má tento pokyn zdroje. Některé pokyny, jako je například profilace nebo uvolňování paměti kolekce kód, mít žádný odpovídající zdroj.
 
-DF_DOCUMENT_CHECKSUM  
-Označuje, že `bstrDocumentUrl` pole obsahovat data kontrolních součtů za adresu URL dokumentu. V části poznámky [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) strukturu pro způsob uložení dat kontrolního součtu.
+DF_DOCUMENT_CHECKSUM znamená, že `bstrDocumentUrl` pole obsahovat data kontrolních součtů za adresu URL dokumentu. V části poznámky [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) strukturu pro způsob uložení dat kontrolního součtu.
 
 ## <a name="remarks"></a>Poznámky
 Použít jako `dwFlags` člena [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury.
@@ -79,5 +73,5 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947403"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722288"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Průvodce: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)
 Můžete rozšířit editoru textu nebo kódu sady Visual Studio s příkazy a zobrazit důsledky. V tomto článku se dozvíte, jak začít pracovat s funkcí oblíbené rozšíření, vodítka sloupců. Vodítka sloupců jsou vizuálně světla čáry dekorace pro zobrazení textového editoru vám pomohou při správě kód do určitého sloupce šířky. Konkrétně formátovaný kódu může být důležité pro ukázky zahrnout do dokumentů, blogy, nebo zpráv o chybách.
@@ -24,10 +24,10 @@ V tomto podrobném návodu můžete:
 - Přidání podpory pro ukládání a načítání nastavení (Pokud k vodítka sloupců příkazu pro vykreslení a jejich barva)
 - Přidání příkazů (Přidání nebo odebrání vodítka sloupců, změna jejich barvy)
 - Umístit příkazy na textový dokument kontextové nabídky a nabídky Upravit
-- Přidání podpory pro vyvolávání příkazů v příkazovém okně Visual Studio  
-  
-  Budete moct vyzkoušet verzi funkce vodítka sloupců s této galerie sady Visual Studio[rozšíření](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
-  
+- Přidání podpory pro vyvolávání příkazů v příkazovém okně Visual Studio
+
+  Budete moct vyzkoušet verzi funkce vodítka sloupců s této galerie sady Visual Studio[rozšíření](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
+
   **POZNÁMKA:**: V tomto podrobném návodu vložte velké množství kódu do několika soubory generované záznamem šablony pro rozšíření sady Visual Studio. Ale brzy bude odkazovat Tento názorný postup dokončené řešení na Githubu s příklady dalších rozšíření. Dokončený kód se mírně liší v tom, že má skutečné příkaz ikony namísto použití generictemplate ikony.
 
 ## <a name="get-started"></a>Začínáme
@@ -38,14 +38,14 @@ Nejprve je vytvořte projekt VSIX, přidejte grafického doplňku zobrazení edi
 - Máte textové zobrazení vytvořit naslouchací proces, který vytvoří `ColumnGuideAdornment` objektu na zobrazení. Tento objekt naslouchá událostem o změně zobrazení nebo změna nastavení, aktualizace nebo překreslování sloupec provede podle potřeby.
 - Je `GuidesSettingsManager` , která zpracovává čtení a zápis z úložiště nastavení sady Visual Studio. Správce nastavení také obsahuje operace pro aktualizaci nastavení, které podporují uživatelských příkazů (Přidat sloupec, odeberte sloupce, změňte barvu).
 - Je VSIP balíček, který je nutné v případě, že máte uživatelské příkazy, ale je stejně často používaný kód, který inicializuje objekt implementace příkazy.
-- Je `ColumnGuideCommands` objekt, který uživatel spustí příkazy a zavěšení do obslužné rutiny příkazů pro příkazy deklarované v *.vsct* souboru.  
-  
-  **VSIX**. Použití **souboru &#124; nové...**  příkaz pro vytvoření projektu. Zvolte **rozšiřitelnost** pod uzlem **jazyka C#** v levém navigačním podokně a zvolte **projekt VSIX** v pravém podokně. Zadejte název **ColumnGuides** a zvolte **OK** pro vytvoření projektu.  
-  
-  **Zobrazení dalších úprav**. Stisknutím tlačítka správný ukazatel myši na uzel projektu v Průzkumníku řešení. Zvolte **přidat &#124; novou položku...**  příkaz pro přidání nové položky grafického doplňku zobrazení. Zvolte **rozšiřitelnost &#124; Editor** v levém navigačním podokně a zvolte **grafického doplňku zobrazení editoru** v pravém podokně. Zadejte název **ColumnGuideAdornment** jako položka název a zvolte **přidat** a přidejte ji.  
-  
-  Uvidíte, že tato šablona položky přidány dva soubory projektu (a odkazy, a tak dále): **ColumnGuideAdornment.cs** a **ColumnGuideAdornmentTextViewCreationListener.cs**. Šablony nakreslit obdélník fialové pro zobrazení. V následující části změnit několik řádků v naslouchacím procesu vytváření zobrazení a nahraďte obsah **ColumnGuideAdornment.cs**.  
-  
+- Je `ColumnGuideCommands` objekt, který uživatel spustí příkazy a zavěšení do obslužné rutiny příkazů pro příkazy deklarované v *.vsct* souboru.
+
+  **VSIX**. Použití **souboru &#124; nové...**  příkaz pro vytvoření projektu. Zvolte **rozšiřitelnost** pod uzlem **jazyka C#** v levém navigačním podokně a zvolte **projekt VSIX** v pravém podokně. Zadejte název **ColumnGuides** a zvolte **OK** pro vytvoření projektu.
+
+  **Zobrazení dalších úprav**. Stisknutím tlačítka správný ukazatel myši na uzel projektu v Průzkumníku řešení. Zvolte **přidat &#124; novou položku...**  příkaz pro přidání nové položky grafického doplňku zobrazení. Zvolte **rozšiřitelnost &#124; Editor** v levém navigačním podokně a zvolte **grafického doplňku zobrazení editoru** v pravém podokně. Zadejte název **ColumnGuideAdornment** jako položka název a zvolte **přidat** a přidejte ji.
+
+  Uvidíte, že tato šablona položky přidány dva soubory projektu (a odkazy, a tak dále): **ColumnGuideAdornment.cs** a **ColumnGuideAdornmentTextViewCreationListener.cs**. Šablony nakreslit obdélník fialové pro zobrazení. V následující části změnit několik řádků v naslouchacím procesu vytváření zobrazení a nahraďte obsah **ColumnGuideAdornment.cs**.
+
   **Příkazy**. V **Průzkumníka řešení**, stiskněte tlačítko vpravo ukazatel myši na uzel projektu. Zvolte **přidat &#124; novou položku...**  příkaz pro přidání nové položky grafického doplňku zobrazení. Zvolte **rozšiřitelnost &#124; VSPackage** v levém navigačním podokně a zvolte **vlastního příkazu** v pravém podokně. Zadejte název **ColumnGuideCommands** jako položka název a zvolte **přidat**. Kromě několik odkazů, přidávání příkazů a také přidat balíček **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, a **ColumnGuideCommandsPackage.vsct** . V následující části nahraďte obsah první a poslední soubory musel definovat a implementovat příkazy.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Nastavit naslouchací proces vytváření zobrazení textu
@@ -370,7 +370,7 @@ namespace ColumnGuides
         /// <summary>
         /// Creates editor column guidelines
         /// </summary>
-        /// <param name="view">The <see cref="IWpfTextView"/> upon 
+        /// <param name="view">The <see cref="IWpfTextView"/> upon
         /// which the adornment will be drawn</param>
         public ColumnGuideAdornment(IWpfTextView view)
         {
@@ -378,7 +378,7 @@ namespace ColumnGuides
             _guidelines = CreateGuidelines();
             GuidesSettingsManager.SettingsChanged +=
                 new GuidesSettingsManager.SettingsChangedHandler(SettingsChanged);
-            view.LayoutChanged += 
+            view.LayoutChanged +=
                 new EventHandler<TextViewLayoutChangedEventArgs>(OnViewLayoutChanged);
             _view.Closed += new EventHandler(OnViewClosed);
         }
@@ -466,7 +466,7 @@ namespace ColumnGuides
 
         void AddGuidelinesToAdornmentLayer()
         {
-            // Grab a reference to the adornment layer that this adornment 
+            // Grab a reference to the adornment layer that this adornment
             // should be added to
             // Must match exported name in ColumnGuideAdornmentTextViewCreationListener
             IAdornmentLayer adornmentLayer =
@@ -710,7 +710,7 @@ Jako součást běžný vzor rozšíření vodítka sloupců vytvoří druhé sk
                 value="{e914e5de-0851-4904-b361-1a3a9d449704}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidColumnGuidesCommandSet" 
+    <GuidSymbol name="guidColumnGuidesCommandSet"
                 value="{c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e}">
       <IDSymbol name="GuidesContextMenuGroup" value="0x1020" />
       <IDSymbol name="GuidesMenuItemsGroup" value="0x1021" />
@@ -843,7 +843,7 @@ namespace ColumnGuides
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        static readonly Guid CommandSet = 
+        static readonly Guid CommandSet =
             new Guid("c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e");
 
         /// <summary>
@@ -1143,7 +1143,7 @@ namespace ColumnGuides
                                                              color.B);
                 if (picker.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    GuidesSettingsManager.GuidelinesColor = 
+                    GuidesSettingsManager.GuidelinesColor =
                         System.Windows.Media.Color.FromRgb(picker.Color.R,
                                                            picker.Color.G,
                                                            picker.Color.B);
@@ -1204,7 +1204,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```csharp
    IVsMonitorSelection selection =
-       this.ServiceProvider.GetService(typeof(IVsMonitorSelection)) 
+       this.ServiceProvider.GetService(typeof(IVsMonitorSelection))
            as IVsMonitorSelection;
    object frameObj = null;
 
@@ -1339,9 +1339,9 @@ Brzy bude projekt Githubu ukázky rozšiřitelnosti sady Visual Studio a dokonč
 Budete moct vyzkoušet verzi funkce vodítka sloupců s této galerie sady Visual Studio[rozšíření](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
 
 ## <a name="see-also"></a>Viz také:
-[V editoru](../extensibility/inside-the-editor.md)
-[rozšířit jazyk a editor služby](../extensibility/extending-the-editor-and-language-services.md) 
-[Rozšiřovací body služby a editoru jazyka](../extensibility/language-service-and-editor-extension-points.md)  
- [Rozšířit nabídek a příkazů](../extensibility/extending-menus-and-commands.md)
-[přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md)
-[vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [V editoru](../extensibility/inside-the-editor.md)
+- [Rozšíření služby jazyk a editor](../extensibility/extending-the-editor-and-language-services.md)
+- [Jazykové služby a editor Rozšiřovací body](../extensibility/language-service-and-editor-extension-points.md)
+- [Rozšíření nabídek a příkazů](../extensibility/extending-menus-and-commands.md)
+- [Přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md)
+- [Vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md)

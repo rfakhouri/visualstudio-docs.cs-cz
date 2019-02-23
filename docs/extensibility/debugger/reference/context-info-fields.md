@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO_FIELDS | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da34a7b5e2c111f7e9385d729f6c3739d1ada285
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 13501c86eabd249e0e47137099862cd6db654415
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317520"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706090"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 Určuje, jaké informace se mají načíst informace o kontextu paměti.
@@ -50,23 +50,17 @@ public enum enum_CONTEXT_INFO_FIELDS {
 ```
 
 ## <a name="members"></a>Členové
-CIF_MODULEURL  
-Inicializace/použít `bstrModuleUrl` pole [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury.
+CIF_MODULEURL inicializace/použít `bstrModuleUrl` pole [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury.
 
-CIF_FUNCTION  
-Inicializace/použít `bstrFunction` pole `CONTEXT_INFO` struktury.
+CIF_FUNCTION inicializace/použít `bstrFunction` pole `CONTEXT_INFO` struktury.
 
-CIF_FUNCTIONOFFSET  
-Inicializace/použít `posFunctionOffset` pole `CONTEXT_INFO` struktury.
+CIF_FUNCTIONOFFSET inicializace/použít `posFunctionOffset` pole `CONTEXT_INFO` struktury.
 
-CIF_ADDRESS  
-Inicializace/použít `bstrAddress` pole `CONTEXT_INFO` struktury.
+CIF_ADDRESS inicializace/použít `bstrAddress` pole `CONTEXT_INFO` struktury.
 
-CIF_ADDRESSOFFSET  
-Inicializace/použít `bstrAddressOffset` pole `CONTEXT_INFO` struktury.
+CIF_ADDRESSOFFSET inicializace/použít `bstrAddressOffset` pole `CONTEXT_INFO` struktury.
 
-CIF_ALLFIELDS  
-Inicializace/použít všechna pole `CONTEXT_INFO` struktury.
+CIF_ALLFIELDS inicializace/použít všechna pole `CONTEXT_INFO` struktury.
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou předány parametr [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) indikace které pole [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury mají být inicializovány.
@@ -83,6 +77,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952824"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703250"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogové okno Možnosti prostředí
 
@@ -35,7 +35,7 @@ Můžete použít na stránkách **prostředí** složky **možnosti** dialogov�
 |Chcete-li nastavit možnosti mapování klávesnice.|[Klávesnice, Prostředí, dialogové okno Možnosti](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Chcete-li určit, zda jsou povolena oznámení.|[Oznámení, Prostředí, dialogové okno Možnosti](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Zadejte možnosti pro snadné spuštění okna.|[Snadné spuštění, Prostředí, dialogové okno Možnosti](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Můžete zadat možnosti úvodní stránky.|[Po spuštění, Prostředí, dialogové okno Možnosti](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Můžete zadat možnosti spuštění.|[Po spuštění, Prostředí, dialogové okno Možnosti](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Chcete-li určit, jestli se má nastavení roamingu v různých počítačích.|[Synchronizovaná nastavení, Prostředí, dialogové okno Možnosti](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Zjistit, jak nastavit možnosti pro úkoly a seznamy úkolů|[Seznam úkolů, Prostředí, dialogové okno Možnosti](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Změnit výchozí domovskou a vyhledávací stránku, změnit systémový editor zdrojového kódu a nakonfigurovat možnosti aplikace Internet Explorer|[Webový prohlížeč, Prostředí, dialogové okno Možnosti](../../ide/reference/web-browser-environment-options-dialog-box.md)|

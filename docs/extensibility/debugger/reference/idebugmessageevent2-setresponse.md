@@ -1,7 +1,7 @@
 ---
 title: IDebugMessageEvent2::SetResponse | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMessageEvent2::SetResponse
 helpviewer_keywords:
@@ -13,37 +13,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fab851d7d2ec7a248e56b522f13c9dc7e9457e11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b54c84c5f5c13424354c65201d290fbef83e055
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996555"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701053"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-Nastaví odpověď, a pokud některý z okna se zprávou.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT SetResponse(   
-   DWORD dwResponse  
-);  
-```  
-  
-```csharp  
-int SetResponse(   
-   uint dwResponse  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `dwResponse`  
- [in] Určuje odpověď, a to pomocí konvencí Win32 `MessageBox` funkce. Zobrazit [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) funkce podrobnosti.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
- [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)
+Nastaví odpověď, a pokud některý z okna se zprávou.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT SetResponse( 
+   DWORD dwResponse
+);
+```
+
+```csharp
+int SetResponse( 
+   uint dwResponse
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `dwResponse`
+
+ [in] Určuje odpověď, a to pomocí konvencí Win32 `MessageBox` funkce. Zobrazit [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) funkce podrobnosti.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
+- [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

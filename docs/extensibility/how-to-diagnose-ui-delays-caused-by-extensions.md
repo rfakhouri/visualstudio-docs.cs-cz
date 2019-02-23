@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317117"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719480"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Postupy: Diagnostika zpoždění uživatelského rozhraní způsobených rozšířeními
 
@@ -21,7 +21,7 @@ Když přestane reagovat uživatelské rozhraní, sady Visual Studio prozkoumá 
 
 Oznámení informuje uživatele, že zpoždění uživatelského rozhraní (to znamená, sekundový výpadek reakce v uživatelském rozhraní) mohly být výsledek kódu z rozšíření. Poskytuje také uživatel s možnostmi zakázání rozšíření nebo budoucí oznámení pro toto rozšíření.
 
-Tento dokument popisuje, jak můžete diagnostikovat, co ve vašem kódu rozšíření je příčinou oznámení zpoždění uživatelského rozhraní. 
+Tento dokument popisuje, jak můžete diagnostikovat, co ve vašem kódu rozšíření je příčinou oznámení zpoždění uživatelského rozhraní.
 
 > [!NOTE]
 > Nepoužívejte experimentální instanci sady Visual Studio k diagnostikování zpoždění uživatelského rozhraní. Některé části zásobníku volání analýzy, vyžaduje se pro oznámení zpoždění uživatelského rozhraní jsou vypnuté, při použití experimentální instance, což znamená, že se nemusí zobrazit oznámení zpoždění uživatelského rozhraní.
@@ -102,7 +102,7 @@ Trasovací soubor otevřete v dalším kroku. Můžete provést pomocí stejné 
 Potom vyberte soubor trasování v levém podokně a otevřete výběrem **otevřete** z nabídky klikněte pravým tlačítkem nebo kontext.
 
 > [!NOTE]
-> Ve výchozím nastavení výstupy PerfView archiv Zip. Když otevřete *trace.zip*, automaticky dekomprimuje archivu a otevře trasování. To můžete přeskočit zrušením **Zip** pole během kolekce trasování. Ale pokud máte v úmyslu přenosu a použít trasování na různých počítačích, důrazně doporučujeme před zrušením zaškrtnutí **Zip** pole. Bez této možnosti požadované soubory PDB pro Ngen sestavení nebude doprovázet trasování a proto nebudou symbolů ze sestavení Ngen přeloženy na cílovém počítači. (Viz [tento příspěvek na blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) pro další informace o soubory PDB pro Ngen sestavení.) 
+> Ve výchozím nastavení výstupy PerfView archiv Zip. Když otevřete *trace.zip*, automaticky dekomprimuje archivu a otevře trasování. To můžete přeskočit zrušením **Zip** pole během kolekce trasování. Ale pokud máte v úmyslu přenosu a použít trasování na různých počítačích, důrazně doporučujeme před zrušením zaškrtnutí **Zip** pole. Bez této možnosti požadované soubory PDB pro Ngen sestavení nebude doprovázet trasování a proto nebudou symbolů ze sestavení Ngen přeloženy na cílovém počítači. (Viz [tento příspěvek na blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) pro další informace o soubory PDB pro Ngen sestavení.)
 
 Může trvat několik minut, než PerfView pro zpracování a otevřít trasování. Po otevřít trasování se zobrazí pod ním seznam různých "zobrazení".
 

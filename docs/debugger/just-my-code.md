@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6630f277ef24a6e84e8dc8d6b0fbfa58d720626f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335516"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722483"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Ladit jenom uživatelský kód pomocí funkce pouze můj kód
 
@@ -80,7 +80,7 @@ Pokud dojde k neošetřené výjimce v neuživatelském kódu, ladicí program p
 Pokud první příležitosti výjimky jsou povolené pro výjimku, řádku volání uživatelského kódu je zvýrazněn zeleně ve zdrojovém kódu. **Zásobník volání** zobrazí okno rámce s poznámkami, které jsou označené jako **[externí kód]**.
 
 ## <a name="BKMK_C___Just_My_Code"></a> Pouze můj kód C++
-  
+
 Spouští se v sadě Visual Studio 2017 verze 15.8 pouze můj kód pro kód krokování je také podporována. Tato funkce vyžaduje také použití [/JMC (pouze můj kód ladění)](/cpp/build/reference/jmc) přepínač kompilátoru. Přepínač je povolené ve výchozím nastavení v projektech C++. Pro **zásobník volání** okno a volání zásobníku podpory v pouze můj kód, přepínač /JMC se nevyžaduje.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Klasifikovat jako uživatelského kódu, musí být načten soubor PDB pro binární soubor, který obsahuje uživatelský kód pomocí ladicího programu (použít **moduly** okno zaškrtnutím tohoto políčka).
@@ -90,9 +90,9 @@ Pro chování zásobníku volání, jako **zásobník volání** okně volbu pou
 - Funkce s odstraněnými příslušnými daty zdroj informací v jejich soubor symbolů.
 - Funkce, kde soubory symbolů znamenat, že neexistuje žádný zdrojový soubor odpovídá rámce zásobníku.
 - Funkcí zadaných v  *\*.natjmc* soubory *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* složky.
-  
+
 Pro chování kódu, volbu pouze vlastní kód v jazyce C++ bere v úvahu pouze tyto funkce bude *neuživatelský kód*:
-  
+
 - Funkce, které se nenačetl odpovídající soubor PDB v ladicím programu.
 - Funkcí zadaných v  *\*.natjmc* soubory *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* složky.
 
@@ -108,117 +108,117 @@ Pokud není žádný další kód uživatele, ladění pokračuje, dokud ho ukon
 
 Pokud ladicí program přeruší v neuživatelském kódu (například použít **ladění** > **příkaz Pozastavit vše** nebo pozastavit během neuživatelském kódu), krokování pokračuje v neuživatelském kódu.
 
-Pokud ladicí program narazí na výjimku, přestane na výjimku, ať už v uživatele nebo neuživatelský kód. **Uživatelem neošetřené** možnosti **nastavení výjimek** dialogové okno se ignorují.   
-  
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Přizpůsobení C++ zásobník volání a kódu, krokování chování  
+Pokud ladicí program narazí na výjimku, přestane na výjimku, ať už v uživatele nebo neuživatelský kód. **Uživatelem neošetřené** možnosti **nastavení výjimek** dialogové okno se ignorují.
+
+###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Přizpůsobení C++ zásobník volání a kódu, krokování chování
 
 Pro projekty C++, můžete zadat moduly, zdrojové soubory a funkce **zásobník volání** okno považuje za neuživatelský kód tak, že zadáte v  *\*.natjmc* soubory. Toto přizpůsobení platí i pro kód, pokud používáte nejnovější kompilátor (viz [pouze můj kód C++](#BKMK_CPP_User_and_non_user_code)).
-  
-- Chcete-li zadat jiný než uživatelský kód pro všechny uživatele počítače Visual Studio, přidejte *.natjmc* do souboru *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* složky.  
-- Chcete-li zadat jiný než uživatelský kód pro jednotlivé uživatele, přidejte *.natjmc* do souboru *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* složky.  
 
-A *.natjmc* soubor je soubor XML s následující syntaxí:  
+- Chcete-li zadat jiný než uživatelský kód pro všechny uživatele počítače Visual Studio, přidejte *.natjmc* do souboru *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* složky.
+- Chcete-li zadat jiný než uživatelský kód pro jednotlivé uživatele, přidejte *.natjmc* do souboru *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* složky.
 
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">  
-  
-  <!-- Modules -->  
-  <Module Name="ModuleSpec" />  
-  <Module Name="ModuleSpec" Company="CompanyName" />  
-  
-  <!-- Files -->  
-  <File Name="FileSpec"/>  
-  
-  <!-- Functions -->  
-  <Function Name="FunctionSpec" />  
-  <Function Name="FunctionSpec" Module ="ModuleSpec" />  
-  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />  
-  
-</NonUserCode>  
-  
-```  
+A *.natjmc* soubor je soubor XML s následující syntaxí:
 
- **Atributy modulu**  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`Name`|Povinný parametr. Úplná cesta modulu nebo modulech. Můžete použít zástupné znaky Windows `?` (žádný nebo jeden znak) a `*` (nula nebo více znaků). Například<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> sdělí ladicímu programu, aby považoval všechny moduly v *\3rdParty\UtilLibs* v jakékoli jednotce jako externí kód.|  
-|`Company`|Volitelné. Název společnosti, která publikuje modul, který je vložen do spustitelného souboru. Tento atribut slouží k rozlišení moduly.|  
-  
- **Atributy souboru**  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`Name`|Povinný parametr. Úplná cesta ke zdrojovému souboru nebo souborů považovat za externí kód. Můžete použít zástupné znaky Windows `?` a `*` při zadání cesty.|  
-  
- **Atributy prvků – funkce**  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`Name`|Povinný parametr. Plně kvalifikovaný název funkce, který má zpracovávat jako externí kód.|  
-|`Module`|Volitelné. Název nebo úplná cesta k modulu, který obsahuje funkci. Tento atribut slouží k rozlišení funkce se stejným názvem.|  
-|`ExceptionImplementation`|Pokud je nastavena na `true`, zásobník volání se zobrazí funkce, která vyvolala výjimku, spíše než tuto funkci.|  
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">
+
+  <!-- Modules -->
+  <Module Name="ModuleSpec" />
+  <Module Name="ModuleSpec" Company="CompanyName" />
+
+  <!-- Files -->
+  <File Name="FileSpec"/>
+
+  <!-- Functions -->
+  <Function Name="FunctionSpec" />
+  <Function Name="FunctionSpec" Module ="ModuleSpec" />
+  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />
+
+</NonUserCode>
+
+```
+
+ **Atributy modulu**
+
+|Atribut|Popis|
+|---------------|-----------------|
+|`Name`|Povinný parametr. Úplná cesta modulu nebo modulech. Můžete použít zástupné znaky Windows `?` (žádný nebo jeden znak) a `*` (nula nebo více znaků). Například<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> sdělí ladicímu programu, aby považoval všechny moduly v *\3rdParty\UtilLibs* v jakékoli jednotce jako externí kód.|
+|`Company`|Volitelné. Název společnosti, která publikuje modul, který je vložen do spustitelného souboru. Tento atribut slouží k rozlišení moduly.|
+
+ **Atributy souboru**
+
+|Atribut|Popis|
+|---------------|-----------------|
+|`Name`|Povinný parametr. Úplná cesta ke zdrojovému souboru nebo souborů považovat za externí kód. Můžete použít zástupné znaky Windows `?` a `*` při zadání cesty.|
+
+ **Atributy prvků – funkce**
+
+|Atribut|Popis|
+|---------------|-----------------|
+|`Name`|Povinný parametr. Plně kvalifikovaný název funkce, který má zpracovávat jako externí kód.|
+|`Module`|Volitelné. Název nebo úplná cesta k modulu, který obsahuje funkci. Tento atribut slouží k rozlišení funkce se stejným názvem.|
+|`ExceptionImplementation`|Pokud je nastavena na `true`, zásobník volání se zobrazí funkce, která vyvolala výjimku, spíše než tuto funkci.|
 
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Přizpůsobení jazyka C++ chování nezávisle na nastavení funkce pouze můj kód
 
 V projektech C++, můžete zadat funkce převezme seznam jako neuživatelský kód v kroku  *\*.natstepfilter* soubory. Funkce uvedené v  *\*.natstepfilter* soubory nejsou závislé na nastavení funkce pouze můj kód.
-  
-- Chcete-li zadat jiný než uživatelský kód pro všechny místní uživatele sady Visual Studio, přidejte *.natstepfilter* do souboru *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* složky.  
-- Chcete-li zadat jiný než uživatelský kód pro jednotlivé uživatele, přidejte *.natstepfilter* do souboru *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* složky.  
-  
-A *.natstepfilter* soubor je soubor XML s následující syntaxí:  
-  
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">  
-    <Function>  
-        <Name>FunctionSpec</Name>  
-        <Action>StepAction</Action>  
-    </Function>  
-    <Function>  
-        <Name>FunctionSpec</Name>  
-        <Module>ModuleSpec</Module>  
-        <Action>StepAction</Action>  
-    </Function>  
-</StepFilter>  
-  
-```  
-  
-|Prvek|Popis|  
-|-------------|-----------------|  
-|`Function`|Povinný parametr. Určuje jednu nebo více funkcí jako funkcí nedefinovaných uživatelem.|  
-|`Name`|Povinný parametr. ECMA 262 ve formátu regulárních výrazů zadáním názvu plná funkčnost tak, aby odpovídaly. Příklad:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> sdělí ladicímu programu, že všechny metody v `MyNS::MyClass` mají být považovány za neuživatelský kód. Shoda rozlišuje velká a malá písmena.|  
-|`Module`|Volitelné. ECMA 262 ve formátu regulárních výrazů zadáním úplná cesta k modulu, který obsahuje funkci. Shoda nerozlišuje malá a velká písmena.|  
-|`Action`|Povinný parametr. Jedna z těchto hodnot malá a velká písmena:<br /><br /> `NoStepInto`  -sdělí ladicímu programu, aby přešel přes funkci.<br /> `StepInto`  -dává pokyn ladicímu programu vstup do funkce přepsání jiného `NoStepInto` pro odpovídající funkce.| 
-  
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Pouze můj kód jazyka JavaScript  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> Funkce pouze můj kód jazyka JavaScript – ovládací prvky krokování a volání Zobrazit zásobník zařazením do testovacích kód v jednom z těchto klasifikací:  
+- Chcete-li zadat jiný než uživatelský kód pro všechny místní uživatele sady Visual Studio, přidejte *.natstepfilter* do souboru *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* složky.
+- Chcete-li zadat jiný než uživatelský kód pro jednotlivé uživatele, přidejte *.natstepfilter* do souboru *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* složky.
 
-|||  
-|-|-|  
-|**MyCode**|Uživatelský kód, který vlastníte a řídíte vy.|  
-|**LibraryCode**|Neuživatelský kód z knihovny, které používáte, pravidelně a vaše aplikace závisí na fungovat správně (třeba WinJS nebo knihovny jQuery).|  
-|**UnrelatedCode**|Neuživatelský kód v aplikaci, kterou nevlastníte a vaše aplikace nemusí spoléhat na správné fungování. Například advertising SDK, která zobrazuje služby Active Directory může být UnrelatedCode. V projektech UPW se veškerý kód, který je načten do vaší aplikace z HTTPS URI nebo HTTP také považuje za UnrelatedCode.|  
+A *.natstepfilter* soubor je soubor XML s následující syntaxí:
 
-Ladicí program jazyka JavaScript klasifikuje kód jako uživatel, nebo bez uživatelem v tomto pořadí:  
-  
-1. Výchozí klasifikace.  
-   -   Skript spustit předáním řetězce hostitelské `eval` funkce je **MyCode**.  
-   -   Skript spustit tím, že předáte řetězec `Function` konstruktor je **LibraryCode**.  
-   -   Skript v odkaz na rozhraní, jako je například WinJS nebo sady Azure SDK, je **LibraryCode**.  
-   -   Skript spustit tím, že předáte řetězec `setTimeout`, `setImmediate`, nebo `setInterval` je funkce **UnrelatedCode**.  
-   
-2. Klasifikace pro všechny projekty aplikace Visual Studio JavaScript v *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* souboru.  
-   
-3. Klasifikacích v *mycode.json* souboru aktuálního projektu.  
-  
-Každý krok klasifikace přepíše předchozí kroky. 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">
+    <Function>
+        <Name>FunctionSpec</Name>
+        <Action>StepAction</Action>
+    </Function>
+    <Function>
+        <Name>FunctionSpec</Name>
+        <Module>ModuleSpec</Module>
+        <Action>StepAction</Action>
+    </Function>
+</StepFilter>
 
-Jiný kód je klasifikován tak **MyCode**.  
+```
 
-Můžete upravit výchozí klasifikace a klasifikovat určité soubory a adresy URL jako uživatele nebo neuživatelský kód tak, že přidáte *.json* soubor s názvem *mycode.json* ke kořenové složce projektu JavaScript. Zobrazit [přizpůsobení JavaScript volbu pouze vlastní kód](#BKMK_JS_Customize_Just_My_Code). 
+|Prvek|Popis|
+|-------------|-----------------|
+|`Function`|Povinný parametr. Určuje jednu nebo více funkcí jako funkcí nedefinovaných uživatelem.|
+|`Name`|Povinný parametr. ECMA 262 ve formátu regulárních výrazů zadáním názvu plná funkčnost tak, aby odpovídaly. Příklad:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> sdělí ladicímu programu, že všechny metody v `MyNS::MyClass` mají být považovány za neuživatelský kód. Shoda rozlišuje velká a malá písmena.|
+|`Module`|Volitelné. ECMA 262 ve formátu regulárních výrazů zadáním úplná cesta k modulu, který obsahuje funkci. Shoda nerozlišuje malá a velká písmena.|
+|`Action`|Povinný parametr. Jedna z těchto hodnot malá a velká písmena:<br /><br /> `NoStepInto`  -sdělí ladicímu programu, aby přešel přes funkci.<br /> `StepInto`  -dává pokyn ladicímu programu vstup do funkce přepsání jiného `NoStepInto` pro odpovídající funkce.|
+
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> Pouze můj kód jazyka JavaScript
+
+<a name="BKMK_JS_User_and_non_user_code"></a> Funkce pouze můj kód jazyka JavaScript – ovládací prvky krokování a volání Zobrazit zásobník zařazením do testovacích kód v jednom z těchto klasifikací:
+
+|||
+|-|-|
+|**MyCode**|Uživatelský kód, který vlastníte a řídíte vy.|
+|**LibraryCode**|Neuživatelský kód z knihovny, které používáte, pravidelně a vaše aplikace závisí na fungovat správně (třeba WinJS nebo knihovny jQuery).|
+|**UnrelatedCode**|Neuživatelský kód v aplikaci, kterou nevlastníte a vaše aplikace nemusí spoléhat na správné fungování. Například advertising SDK, která zobrazuje služby Active Directory může být UnrelatedCode. V projektech UPW se veškerý kód, který je načten do vaší aplikace z HTTPS URI nebo HTTP také považuje za UnrelatedCode.|
+
+Ladicí program jazyka JavaScript klasifikuje kód jako uživatel, nebo bez uživatelem v tomto pořadí:
+
+1. Výchozí klasifikace.
+   -   Skript spustit předáním řetězce hostitelské `eval` funkce je **MyCode**.
+   -   Skript spustit tím, že předáte řetězec `Function` konstruktor je **LibraryCode**.
+   -   Skript v odkaz na rozhraní, jako je například WinJS nebo sady Azure SDK, je **LibraryCode**.
+   -   Skript spustit tím, že předáte řetězec `setTimeout`, `setImmediate`, nebo `setInterval` je funkce **UnrelatedCode**.
+
+2. Klasifikace pro všechny projekty aplikace Visual Studio JavaScript v *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* souboru.
+
+3. Klasifikacích v *mycode.json* souboru aktuálního projektu.
+
+Každý krok klasifikace přepíše předchozí kroky.
+
+Jiný kód je klasifikován tak **MyCode**.
+
+Můžete upravit výchozí klasifikace a klasifikovat určité soubory a adresy URL jako uživatele nebo neuživatelský kód tak, že přidáte *.json* soubor s názvem *mycode.json* ke kořenové složce projektu JavaScript. Zobrazit [přizpůsobení JavaScript volbu pouze vlastní kód](#BKMK_JS_Customize_Just_My_Code).
 
 <a name="BKMK_JS_Stepping_behavior"></a> Během ladění jazyka JavaScript:
 

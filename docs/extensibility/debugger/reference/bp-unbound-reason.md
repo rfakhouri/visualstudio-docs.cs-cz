@@ -1,7 +1,7 @@
 ---
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_UNBOUND_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab701ef9886dddc0c2e32aa79092f22ad91d4630
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316064"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717660"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Poskytuje z důvodů, proč nevázaná zarážku.
@@ -44,17 +44,13 @@ public enum enum_BP_UNBOUND_REASON {
 ```
 
 ## <a name="members"></a>Členové
-BPUR_UNKNOWN  
-Důvodem neznámý.
+BPUR_UNKNOWN důvod není znám.
 
-BPUR_CODE_UNLOADED  
-Kód, který obsahuje zarážku byl uvolněn.
+BPUR_CODE_UNLOADED kód, který obsahuje zarážku byl uvolněn.
 
-BPUR_BREAKPOINT_REBIND  
-Zarážku bylo znovu připojeno, do jiného umístění. To může dojít po úpravě a pokračovat v operacích přesun zarážku nebo zarážku je vázán na soubor s cestou, která již není platný.
+BPUR_BREAKPOINT_REBIND zarážku bylo znovu připojeno, do jiného umístění. To může dojít po úpravě a pokračovat v operacích přesun zarážku nebo zarážku je vázán na soubor s cestou, která již není platný.
 
-BPUR_ BREAKPOINT_ERROR  
-Zarážka je určena jako chybu po je vázán. K tomu dochází na spravovaných zarážky, jejíž podmínky už nejsou platné.
+Potom, co je svázána se omylem vyhodnotí BPUR_ BREAKPOINT_ERROR zarážku. K tomu dochází na spravovaných zarážky, jejíž podmínky už nejsou platné.
 
 ## <a name="remarks"></a>Poznámky
 Vrácené [getreason –](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metody.
@@ -67,5 +63,5 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

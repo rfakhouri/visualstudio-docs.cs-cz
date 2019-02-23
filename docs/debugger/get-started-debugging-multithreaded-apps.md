@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 704605ed2d4eb3d69b988da59ba443790ffa138d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155783"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709847"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Začínáme s laděním vícevláknových aplikací (C#, Visual Basic, C++)
 
@@ -33,25 +33,25 @@ Tyto dvě témata obsahují další informace o použití jiných vícevláknov�
 - Použít **umístění ladění** nástrojů a **vlákna** okna, naleznete v tématu [názorný postup: Ladění aplikace s více vlákny](../debugger/how-to-use-the-threads-window.md).
 
 - Příklad, který používá <xref:System.Threading.Tasks.Task> (spravovaný kód) a modulu runtime souběžnosti (C++), najdete v článku [názorný postup: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md). Obecné ladění tipy, které se vztahují na typy nejvíce vícevláknové aplikace přečtěte si toto téma a tohoto objektu.
-  
-Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.  
-  
-## <a name="create-a-multithreaded-app-project"></a>Vytvořte projekt aplikace s více podprocesy  
-  
-1.  Na **souboru** nabídce vyberte možnost **nový** > **projektu**.  
-  
-     Zobrazí se dialogové okno **Nový projekt**.  
-  
-2.  Zvolte jazyk: **Vizuální C#** , **Visual C++**, nebo **jazyka Visual Basic**.  
-  
-3.  V části **Windows Desktop**, zvolte **konzolovou aplikaci**.  
-  
-4.  V **název** zadejte MyThreadWalkthroughApp.  
-  
-5.  Vyberte **OK**.  
-  
-     Zobrazí se nový projekt konzoly. Po vytvoření projektu se zobrazí zdrojový soubor. V závislosti na jazyku, kterou jste zvolili, může být názvem zdrojového souboru *Program.cs*, *MyThreadWalkthroughApp.cpp*, nebo *Module1.vb*.  
-  
+
+Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.
+
+## <a name="create-a-multithreaded-app-project"></a>Vytvořte projekt aplikace s více podprocesy
+
+1.  Na **souboru** nabídce vyberte možnost **nový** > **projektu**.
+
+     Zobrazí se dialogové okno **Nový projekt**.
+
+2.  Zvolte jazyk: **Vizuální C#** , **Visual C++**, nebo **jazyka Visual Basic**.
+
+3.  V části **Windows Desktop**, zvolte **konzolovou aplikaci**.
+
+4.  V **název** zadejte MyThreadWalkthroughApp.
+
+5.  Vyberte **OK**.
+
+     Zobrazí se nový projekt konzoly. Po vytvoření projektu se zobrazí zdrojový soubor. V závislosti na jazyku, kterou jste zvolili, může být názvem zdrojového souboru *Program.cs*, *MyThreadWalkthroughApp.cpp*, nebo *Module1.vb*.
+
 6.  Odstranit kód, který se zobrazí ve zdrojovém souboru a nahraďte ji metodou odpovídající ukázku kódu níže.
 
     ```csharp
@@ -186,54 +186,54 @@ Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.
         End Sub
     End Class
     ```
-  
-7.  Na **souboru** nabídce vyberte možnost **Uložit vše**.  
+
+7.  Na **souboru** nabídce vyberte možnost **Uložit vše**.
 
 8. (Pouze Visual Basic) V Průzkumníku řešení (pravé podokno) klikněte pravým tlačítkem myši na uzel projektu, zvolte **vlastnosti**. V části **aplikace** kartu, změnit **spouštěcí objekt** k **jednoduché**.
-  
-## <a name="debug-the-multithreaded-app"></a>Ladění vícevláknových aplikací  
-  
-1. V editoru zdrojového kódu vyhledejte jednu z následujících fragmentů kódu: 
-  
-    ```csharp  
-    Thread.Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-    ```C++  
+
+## <a name="debug-the-multithreaded-app"></a>Ladění vícevláknových aplikací
+
+1. V editoru zdrojového kódu vyhledejte jednu z následujících fragmentů kódu:
+
+    ```csharp
+    Thread.Sleep(3000);
+    Console.WriteLine();
+    ```
+
+    ```C++
     std::this_thread::sleep_for(std::chrono::seconds(3));
-    std::cout << "The function called by the worker thread has ended." << std::endl; 
-    ```  
+    std::cout << "The function called by the worker thread has ended." << std::endl;
+    ```
 
     ```VB
     Thread.Sleep(3000)
     Console.WriteLine()
     ```
 
-1. Klikněte v levém hřbetu z `Thread.Sleep` nebo `std::this_thread::sleep_for` příkazu k vložení novou zarážku.  
-  
-    Na ovládací prvek červené kolečko označuje, že na tomto místě byla nastavena zarážka. 
-  
-2. Na **ladění** nabídce vyberte možnost **spustit ladění** (**F5**).  
-  
-    Visual Studio vytvoří řešení, aplikace spustí s připojeným ladícím nástrojem a poté se aplikace zastaví u zarážky.  
-  
+1. Klikněte v levém hřbetu z `Thread.Sleep` nebo `std::this_thread::sleep_for` příkazu k vložení novou zarážku.
+
+    Na ovládací prvek červené kolečko označuje, že na tomto místě byla nastavena zarážka.
+
+2. Na **ladění** nabídce vyberte možnost **spustit ladění** (**F5**).
+
+    Visual Studio vytvoří řešení, aplikace spustí s připojeným ladícím nástrojem a poté se aplikace zastaví u zarážky.
+
 3. V editoru zdrojového kódu vyhledejte řádek, který obsahuje zarážku.
-  
+
 ### <a name="ShowThreadsInSource"></a>Zjišťovat značky vlákna  
 
 1.  Na panelu nástrojů ladění vyberte **zobrazit vlákna ve zdroji** tlačítko ![zobrazit vlákna ve zdroji](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Stisknutím klávesy **F11** jednou pro přechod na ladicí program jeden řádek kódu.
-  
+
 3.  Podívejte se na ovládací prvek na levé straně okna. Na tomto řádku se zobrazí *značky vlákna* ikonu ![značky vlákna](../debugger/media/dbg-thread-marker.png "ThreadMarker") , která připomíná dvě kroucená vlákna. Značky vlákna označuje, že je vlákno zastavené v tomto umístění.
 
-    Značky vlákna mohou být částečně zakryty podle zarážku. 
-  
-4.  Ukazatel myši značky vlákna. DataTip nezobrazí číslo ID názvu a vlákna pro každé vlákno zastavené. V tomto případě název je pravděpodobně `<noname>`. 
-  
+    Značky vlákna mohou být částečně zakryty podle zarážku.
+
+4.  Ukazatel myši značky vlákna. DataTip nezobrazí číslo ID názvu a vlákna pro každé vlákno zastavené. V tomto případě název je pravděpodobně `<noname>`.
+
 5.  Vyberte značku vlákno zobrazíte dostupné možnosti v místní nabídce.
-    
+
 ### <a name="ParallelStacks"></a>Zobrazit vlákna umístění
 
 V **paralelní zásobníky** okně můžete přepínat mezi zobrazení vláken a (pro programování založené na úlohách) zobrazení úloh kde můžete zobrazit informace v zásobníku volání pro každé vlákno. V této aplikaci používáme zobrazení vláken.
@@ -243,7 +243,7 @@ V **paralelní zásobníky** okně můžete přepínat mezi zobrazení vláken a
     ![Paralelních zásobníků okno](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     V tomto příkladu vidíme zleva doprava tyto informace pro spravovaný kód:
-    
+
     - Hlavní vlákno (levá strana) se zastavila na `Thread.Start`, kde je okamžik zastavení označená ikonou značky vlákna ![značky vlákna](../debugger/media/dbg-thread-marker.png "ThreadMarker").
     - Zadaná dvě vlákna `ServerClass.InstanceMethod`, z nichž jeden je aktuální vlákno (žlutá šipka), zatímco jiné vlákno se zastavila v `Thread.Sleep`.
     - Nové vlákno (napravo) se také spouští ale se zastaví na `ThreadHelper.ThreadStart`.
@@ -271,31 +271,31 @@ V **paralelní zásobníky** okně můžete přepínat mezi zobrazení vláken a
 
 4. Klikněte pravým tlačítkem na jednotlivé řádky v okně a zobrazí se dostupné možnosti.
 
-### <a name="flag-and-unflag-threads"></a>Označení a odstranění označení vlákna  
-Můžete označit příznakem vlákna a mějte přehled o důležitých vlákna ignorovat ostatní vlákna.  
-  
+### <a name="flag-and-unflag-threads"></a>Označení a odstranění označení vlákna
+Můžete označit příznakem vlákna a mějte přehled o důležitých vlákna ignorovat ostatní vlákna.
+
 1. V **paralelní sledování** okno, podržte stisknutou klávesu **Shift** klíče a výběr více řádků.
 
 2. Klikněte pravým tlačítkem a vyberte **příznak**.
 
     Vybraných vláken jsou označeny. Teď můžete filtrovat, chcete-li zobrazit pouze vlákna s příznakem.
-  
-3.  V **paralelní sledování** okna, vyberte **zobrazit pouze s příznakem vlákna** tlačítko ![zobrazit vlákna s příznakem](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
-  
+
+3.  V **paralelní sledování** okna, vyberte **zobrazit pouze s příznakem vlákna** tlačítko ![zobrazit vlákna s příznakem](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+
     V seznamu se zobrazí pouze vlákna s příznakem.
 
     > [!TIP]
     > Po označena příznakem některá vlákna mohou klikněte pravým tlačítkem na řádek kódu v editoru kódu a zvolte **spustit vlákna s příznakem do pozice kurzoru**. Nezapomeňte vybrat, že kód, že všechna vlákna příznakem dosáhne. Visual Studio se pozastaví vláken na vybraný řádek kódu, usnadňují určit pořadí provedení [zmrazení a uvolnění vláken](#bkmk_freeze).
 
 4.  Vyberte **zobrazit pouze s příznakem vlákna** tlačítko přepnete zpět do **zobrazit všechna vlákna** režimu.
-    
+
 5. Odstranění označení vlákna, kliknete pravým tlačítkem na jeden nebo více vlákna s příznakem v **paralelní sledování** okna a vyberte **Unflag**.
 
-### <a name="bkmk_freeze"></a> Zablokovat a odblokovat vlákna provádění 
+### <a name="bkmk_freeze"></a> Zablokovat a odblokovat vlákna provádění
 
 > [!TIP]
 > Můžete zablokovat a odblokovat (pozastavení a obnovení) určit pořadí, ve kterém provádění vlákna pracovních vláken. To může pomoct vyřešit potíže se souběžností například zablokování a konflikty časování.
-   
+
 1.  V **paralelní sledování** okna se všechny řádky vybraný, klikněte pravým tlačítkem a vyberte **ukotvit**.
 
     V druhém sloupci se zobrazí ikona pozastavení pro každý řádek. Ikona pozastavení označuje, že vlákno je zmrazen.
@@ -336,11 +336,11 @@ Můžete nastavit zarážky v různých podmínkách, jako je například název
     Tak dlouho, dokud podmínka zarážky jsou jedinečné pro vlákno, a ladicí program nebude stiskněte tlačítko žádné zarážky na jiných vláknech (budete muset zakázat), můžete krokovat přes kódu a s vnořením do kódu bez přepnutí ostatní vlákna.
 
     > [!NOTE]
-    > Při přechodu ladicí program se spustí všechna vlákna. Ladicí program však nebude proniknout do kódu v jiných vláknech, pokud jeden z jiných vláken narazí na zarážku. 
-  
+    > Při přechodu ladicí program se spustí všechna vlákna. Ladicí program však nebude proniknout do kódu v jiných vláknech, pokud jeden z jiných vláken narazí na zarážku.
+
 ## <a name="see-also"></a>Viz také:
 
-[Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Postupy: Přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Postupy: Použití okna paralelní zásobníku](../debugger/using-the-parallel-stacks-window.md)  
-[Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Postupy: Přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [Postupy: Použití okna paralelní zásobníku](../debugger/using-the-parallel-stacks-window.md)
+- [Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)

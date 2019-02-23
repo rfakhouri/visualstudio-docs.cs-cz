@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a162858431f319e4d56667c2c85b7b53d1d86ab
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c41a155fb3a85bcb9f0b0e5eae461f2ae172c7e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316025"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709977"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Tato struktura popisuje místní paměti nebo kontext kódu.
@@ -49,26 +49,19 @@ public struct CONTEXT_INFO {
 ```
 
 ## <a name="members"></a>Členové
-dwFields  
-Kombinace příznaků z mu [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) výčet, který určuje, která pole jsou vyplněna<strong>.</strong>
+dwFields kombinace příznaků z mu [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) výčet, který určuje, která pole jsou vyplněna<strong>.</strong>
 
-bstrModuleUrl  
-Název modulu, ve kterém se nachází kontextu.
+bstrModuleUrl název modulu, ve kterém se nachází kontextu.
 
-bstrFunction  
-Název funkce, kde se nachází kontextu.
+bstrFunction název funkce, kde se nachází kontextu.
 
-posFunctionOffset  
-A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturu, která identifikuje posun řádku a sloupci funkce přidružený kód kontextu.
+posFunctionOffset A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturu, která identifikuje posun řádku a sloupci funkce přidružený kód kontextu.
 
-bstrAddress  
-Adresa v kódu, kde se nachází daném kontextu.
+bstrAddress adresu v kódu, kde se nachází daném kontextu.
 
-bstrAddressOffset  
-Posun adresy v kódu, kde se nachází daném kontextu.
+bstrAddressOffset posun adresy v kódu, kde se nachází daném kontextu.
 
-bstrAddressAbsolute  
-Absolutní adresa v paměti, kde se nachází daném kontextu.
+bstrAddressAbsolute absolutní adresu v paměti, kde se nachází daném kontextu.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je vrácená z volání [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metody.
@@ -83,7 +76,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)  
-[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+- [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

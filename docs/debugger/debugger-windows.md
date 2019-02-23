@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbc1dd2eae7f5ef4048a1c6e92a34f7ad5aa3d9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916612"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701703"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Další informace o ladicím programu Windows v sadě Visual Studio
 
@@ -37,7 +37,7 @@ Můžete otevřít většinu oknech ladicího programu během ladění programu.
 |Vlákna|CTRL + ALT + H|[Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md)|
 |Moduly|CTRL + ALT + U|[Postupy: Použití okna Moduly](../debugger/how-to-use-the-modules-window.md)|
 |Vlákna GPU|-|[Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Úlohy|PEV.CENU: + SHIFT + D, K|[Použití okna úloh](../debugger/using-the-tasks-window.md)|
+|Úkoly|PEV.CENU: + SHIFT + D, K|[Použití okna úloh](../debugger/using-the-tasks-window.md)|
 |Interaktivní ladění Pythonu|SHIFT+ALT+I|[Interaktivní okno REPL Pythonu](../python/python-interactive-repl-in-visual-studio.md)|
 |Konzola jazyka JavaScript|CTRL + ALT + V, C|[Rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Průzkumník modelu DOM|CTRL + ALT + V, D|[Ladění rozložení pomocí průzkumníka modelu DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|

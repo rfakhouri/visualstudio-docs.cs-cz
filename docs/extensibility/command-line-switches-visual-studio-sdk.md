@@ -12,23 +12,20 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea2e34cc57825a337633e38736a3cf71afe64c2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af56a0ecda516fd7cf3e775d58459b08790f9148
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036868"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721599"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Přepínače příkazového řádku (Visual Studio SDK)
-*Devenv.exe*, spustitelný soubor, který se spustí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje integrované vývojové prostředí (IDE), přepínače příkazového řádku speciálně pro vývoj rozšíření VSPackages. Rozšíření VSPackages, můžete zpřístupnit svoje vlastní přepínače příkazového řádku nástroje Devenv. Následující témata obsahují informace o tom, jak pomocí přepínače příkazového řádku v integrovaném vývojovém prostředí.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Přepínače příkazového řádku nástroje DEVENV pro VSPackage Ddevelopment](../extensibility/devenv-command-line-switches-for-vspackage-development.md)  
- Popisuje přepínače příkazového řádku nástroje Devenv, která vám pomůže zjednodušit VSPackage vývoj, ladění a nasazení.  
-  
- [Přidání přepínačů příkazového řádku](../extensibility/adding-command-line-switches.md)  
- Popisuje, jak implementovat, Hledat a přečtěte si uživatel zadal přepínače příkazového řádku pro svůj balíček.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Přepínače příkazového řádku nástroje devenv](../ide/reference/devenv-command-line-switches.md)  
- Vysvětluje, jak Devenv umožňuje nastavit možnosti integrovaného vývojového prostředí a jak můžete zkompilovat, sestavení a ladění projektů z příkazového řádku. Kromě toho je informace o syntaxi nástroje Devenv přepínačů a tabulku přepínače.
+*Devenv.exe*, spustitelný soubor, který se spustí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje integrované vývojové prostředí (IDE), přepínače příkazového řádku speciálně pro vývoj rozšíření VSPackages. Rozšíření VSPackages, můžete zpřístupnit svoje vlastní přepínače příkazového řádku nástroje Devenv. Následující témata obsahují informace o tom, jak pomocí přepínače příkazového řádku v integrovaném vývojovém prostředí.
+
+## <a name="in-this-section"></a>V tomto oddílu
+- [Přepínače příkazového řádku nástroje DEVENV pro VSPackage Ddevelopment](../extensibility/devenv-command-line-switches-for-vspackage-development.md) popisuje přepínače příkazového řádku nástroje Devenv vám umožní zjednodušit vývoj rozšíření VSPackage, ladění a nasazení.
+
+- [Přidání přepínačů příkazového řádku](../extensibility/adding-command-line-switches.md) popisuje, jak implementovat, Hledat a přečtěte si uživatel zadal přepínače příkazového řádku pro svůj balíček.
+
+## <a name="related-sections"></a>Související oddíly
+- [Přepínače příkazového řádku nástroje DEVENV](../ide/reference/devenv-command-line-switches.md) vysvětluje, jak Devenv umožňuje nastavit možnosti integrovaného vývojového prostředí a jak můžete zkompilovat, sestavení a ladění projektů z příkazového řádku. Kromě toho je informace o syntaxi nástroje Devenv přepínačů a tabulku přepínače.

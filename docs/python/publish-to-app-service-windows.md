@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d6ff3f4d13e2182c5187bc80489115b8c351c194
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935326"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713539"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publikování do služby Azure App Service ve Windows
 
@@ -28,7 +28,7 @@ Visual Studio poskytuje možnost publikovat webovou aplikaci Python přímo do A
 Proces publikování se liší mezi Visual Studio 2017 a Visual Studio 2015. Konkrétně, Visual Studio 2015 automatizuje některé z kroků, včetně vytváření `web.config`, ale tato automatizace omezuje dlouhodobé flexibility a kontroly. Visual Studio 2017 vyžaduje další ruční kroky, ale zajišťuje přesnější kontrolu nad prostředí Pythonu. Obě možnosti jsou popsány zde.
 
 > [!Note]
-> Informace o změny mezi Visual Studio 2015 a Visual Studio 2017, najdete v blogovém příspěvku, [publikovat do Azure v sadě Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
+> Informace o změny mezi Visual Studio 2015 a Visual Studio 2017, najdete v blogovém příspěvku, [publikovat do Azure v sadě Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
 ## <a name="prerequisites"></a>Požadavky
 

@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer3::GetConnectionProtocol | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::GetConnectionProtocol
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649550446fb610ebab542fc927041f71c8af33a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 230712dddc3359ab69894bab15b919f997cf40a4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017757"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694878"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
-Vrátí hodnotu, která na protokol, který se používá ke komunikaci mezi serverem a ladit balíček.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetConnectionProtocol(  
-   CONNECTION_PROTOCOL* pProtocol  
-);  
-```  
-  
-```csharp  
-int GetConnectionProtocol(  
-   CONNECTION_PROTOCOL[] pProtocol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pProtocol`  
- [out] Vrátí jednu z hodnot [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) výčtu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
- [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)
+Vrátí hodnotu, která na protokol, který se používá ke komunikaci mezi serverem a ladit balíček.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetConnectionProtocol(
+   CONNECTION_PROTOCOL* pProtocol
+);
+```
+
+```csharp
+int GetConnectionProtocol(
+   CONNECTION_PROTOCOL[] pProtocol
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pProtocol`
+
+ [out] Vrátí jednu z hodnot [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) výčtu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+- [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)

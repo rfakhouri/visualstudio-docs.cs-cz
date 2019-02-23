@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e7aef1465ffe6e37a82fc3c685fef28bbf61e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978305"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705200"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-Tato metoda vytvoří čítač pro obory názvů, které jsou přidružené k adresám ladění.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetNamespacesUsedAtAddress(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```csharp  
-int GetNamespacesUsedAtAddress(  
-   IDebugAddress        pAddress,  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pAddress`  
- [in] Adresa pro ladění.  
-  
- `ppEnum`  
- [out] Vrátí [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerátor pro obory názvů.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Může existovat několik oborů názvů, které jsou přidružené k dané ladění adresu, například vnořené obory názvů nebo více `using` příkazy.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+Tato metoda vytvoří čítač pro obory názvů, které jsou přidružené k adresám ladění.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetNamespacesUsedAtAddress( 
+   IDebugAddress*     pAddress,
+   IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int GetNamespacesUsedAtAddress(
+   IDebugAddress        pAddress,
+   out IEnumDebugFields ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pAddress`
+
+ [in] Adresa pro ladění.
+
+ `ppEnum`
+
+ [out] Vrátí [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerátor pro obory názvů.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Může existovat několik oborů názvů, které jsou přidružené k dané ladění adresu, například vnořené obory názvů nebo více `using` příkazy.
+
+## <a name="see-also"></a>Viz také
+- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

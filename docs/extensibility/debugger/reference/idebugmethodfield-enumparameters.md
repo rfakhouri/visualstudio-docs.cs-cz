@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumParameters | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::EnumParameters
 helpviewer_keywords:
@@ -12,46 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eb2272aff9f02e4de85c5420bd687b059c0e839
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f9894d7076ef992854a2acc2ac7a7a519b26109
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035438"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723640"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
-Vytvoří čítač pro parametry metody.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT EnumParameters(   
-   IEnumDebugFields** ppParams  
-);  
-```  
-  
-```csharp  
-int EnumParameters(  
-   out IEnumDebugFields ppParams  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppParams`  
- [out] Vrátí [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objekt představující seznam parametrů metody; v opačném případě vrátí hodnotu null, pokud neexistují žádné parametry.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí hodnotu S_OK nebo vrátí S_FALSE v případě, že neexistují žádné parametry. V opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Každý prvek je [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objektu, který představuje různé typy parametrů. Volání [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metoda na každém objektu k určení přesně jaký druh parametr objekt představuje.  
-  
- Parametr zahrnuje jeho název proměnné a jeho typu. První parametr metody třídy je obvykle ukazatel "Tento".  
-  
- Pokud pouze typy parametrů je potřeba, zavolejte [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) metody.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)
+Vytvoří čítač pro parametry metody.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT EnumParameters( 
+   IEnumDebugFields** ppParams
+);
+```
+
+```csharp
+int EnumParameters(
+   out IEnumDebugFields ppParams
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppParams`
+
+ [out] Vrátí [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objekt představující seznam parametrů metody; v opačném případě vrátí hodnotu null, pokud neexistují žádné parametry.
+
+## <a name="return-value"></a>Návratová hodnota
+ V případě úspěchu vrátí hodnotu S_OK nebo vrátí S_FALSE v případě, že neexistují žádné parametry. V opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Každý prvek je [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objektu, který představuje různé typy parametrů. Volání [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metoda na každém objektu k určení přesně jaký druh parametr objekt představuje.
+
+ Parametr zahrnuje jeho název proměnné a jeho typu. První parametr metody třídy je obvykle ukazatel "Tento".
+
+ Pokud pouze typy parametrů je potřeba, zavolejte [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) metody.
+
+## <a name="see-also"></a>Viz také
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)

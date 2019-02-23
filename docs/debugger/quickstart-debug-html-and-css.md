@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227810"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721053"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Ladění kódu HTML a CSS v aplikacích pro UWP v sadě Visual Studio
 
@@ -254,10 +254,10 @@ Při ladění aplikace, můžete vybrat prvky modelu DOM třemi způsoby:
 > Zvýrazňování elementů podržením ukazatele nad nich je jenom částečně podporovány v emulátoru Windows Phone.
 
 ## <a name="see-also"></a>Viz také
-[Ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Ladění ovládacího prvku WebView](../debugger/debug-a-webview-control.md)  
-[Klávesové zkratky](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md)  
-[Ladění vzorového kódu HTML, CSS a JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Technická podpora a usnadnění přístupu](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Ladění ovládacího prvku WebView](../debugger/debug-a-webview-control.md)
+- [Klávesové zkratky](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md)
+- [Ladění vzorového kódu HTML, CSS a JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Technická podpora a usnadnění přístupu](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

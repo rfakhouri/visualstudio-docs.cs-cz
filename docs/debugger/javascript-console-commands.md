@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227404"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701950"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Příkazy konzoly jazyka JavaScript v sadě Visual Studio
 
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  Podporují se následující vzory pro nahrazení:
 
-- %s - string %i – celé číslo  
-  %d – celé číslo  
-  %f - plovoucí desetinnou čárkou  
-  %o – objekt  
-  %b - binární  
-  %x - šestnáctkové  
-  %e - exponentu  
+- %s - object - celé číslo %d – celé číslo %f - float %o – řetězec %i %b - binární %x - šestnáctkové %e - exponent
 
   Tady je několik příkladů použití vzorů pro nahrazení v `console.log`:
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Viz také
-[Rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)

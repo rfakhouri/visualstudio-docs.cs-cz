@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 713c6fb29b8fbce169139f498fc3bde4f3eea2bf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2f025ca2d73e98f8191969510f866cb7eb1d0eea
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991395"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695949"
 ---
 # <a name="document-position"></a>Pozice dokumentu
-V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění, *pozice dokumentu*:  
-  
--   Poskytuje abstrakci pozice ve zdrojovém souboru, jak ví, rozhraní IDE. Většina jazyků v současné době pozice dokumentu můžete představit jako pozici ve zdrojovém souboru.  
-  
--   Popisuje umístění ve zdrojovém dokumentu do ladicího stroje.  
-  
--   Je implementováno [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) rozhraní.  
-  
-## <a name="see-also"></a>Viz také:  
- [Kontext kódu](../../extensibility/debugger/code-context.md)   
- [Kontext dokumentu](../../extensibility/debugger/document-context.md)   
- [Poskytovatel symbolů](../../extensibility/debugger/symbol-provider.md)   
- [Rozhraní poskytovatele symbolů](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
- [Kontexty ladicího programu](../../extensibility/debugger/debugger-contexts.md)
+V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění, *pozice dokumentu*:
+
+-   Poskytuje abstrakci pozice ve zdrojovém souboru, jak ví, rozhraní IDE. Většina jazyků v současné době pozice dokumentu můžete představit jako pozici ve zdrojovém souboru.
+
+-   Popisuje umístění ve zdrojovém dokumentu do ladicího stroje.
+
+-   Je implementováno [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) rozhraní.
+
+## <a name="see-also"></a>Viz také:
+- [Kontext kódu](../../extensibility/debugger/code-context.md)
+- [Kontext dokumentu](../../extensibility/debugger/document-context.md)
+- [Poskytovatel symbolů](../../extensibility/debugger/symbol-provider.md)
+- [Rozhraní poskytovatele symbolů](../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Kontexty ladicího programu](../../extensibility/debugger/debugger-contexts.md)

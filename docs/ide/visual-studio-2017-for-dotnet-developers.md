@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920597"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708638"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
@@ -92,6 +92,8 @@ Visual Studio 2017 se dodává s velké množství refaktoringů, akcí generov�
   - *Přidat kontrolu hodnoty Null*
   - *Přidat parametr*
   - *Odebrat nepotřebné direktivy using*
+  - *Smyčka foreach dotaz LINQ a LINQ – metoda*
+  - *Členové dotyčného refaktoring dialogové okno Možnosti*
   - Zobrazit více v našich [dokumentace](https://aka.ms/refactorings)
 - Napsat vlastní kód nebo refaktoring opravy s [analyzátory Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Několik členů komunity napsali bezplatné rozšíření, které přidávají další kód kontroly:
@@ -108,7 +110,7 @@ Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a navigaci v
 
 | Funkce | Zástupce | Podrobnosti a vylepšení |
 |- | - | -|
-| Najít všechny odkazy | **Shift**+**F12**| Výsledky jsou zabarvené a lze seskupovat podle projektu, definice, atd. Je také možné "zamknout" výsledky. |
+| Najít všechny odkazy | **Shift**+**F12**| Výsledky jsou zabarvené a mohou být seskupeny podle projektu, definice a odkaz zadejte jako je čtení nebo zápisu. Je také možné "zamknout" výsledky. |
 | Přejít k implementaci | **Ctrl**+**F12** | Chcete-li přejít na přepsaného člena, můžete použít klíčové slovo `override` k přechodu na klíč |
 | Přejít k definici | **F12** nebo **Ctrl**+**Klikni**| Může obsahovat **Ctrl** při kliknutí na navgiate k definici |
 | Náhled definice | **Alt**+**F12** | Zobrazit vložené definice |

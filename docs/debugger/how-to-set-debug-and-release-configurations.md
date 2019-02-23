@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4c1c12409d89d88e683cd0e5b39a8d5a5459df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969769"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715424"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Nastavení ladění a vydání konfigurace v sadě Visual Studio
 
@@ -118,10 +118,10 @@ Podrobné informace o nastavení projektu pro konfiguraci ladění v jazyce C# n
    Kompilátor vytvoří soubory symbolů ve stejné složce jako spustitelný soubor nebo hlavního výstupního souboru.
 
 ## <a name="see-also"></a>Viz také
- 
-[Zadejte soubory symbolů (PDB) a zdrojových souborů v ladicím programu sady Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
-[Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)<br/>
-[Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-[Nastavení projektu pro konfiguraci ladění jazyka C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-[Nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[Postupy: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)
+
+- [Zadejte soubory symbolů (PDB) a zdrojových souborů v ladicím programu sady Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)<br/>
+- [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [Nastavení projektu pro konfiguraci ladění jazyka C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+- [Nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Postupy: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)
