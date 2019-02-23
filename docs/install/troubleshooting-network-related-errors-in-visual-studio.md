@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fe93791d60ea5cf398b71b44ec20a787455807
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a6c6996d01c46d832b051f8805bbe7f761c57ac5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928332"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692343"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
 
@@ -48,7 +48,7 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu 
 
 - V opačném případě můžete odebrat http:&#47;&#47;go.microsoft.com adresy, ze seznamu povolených, aby se zobrazí dialog ověřování proxy serveru pro obě http:&#47;&#47;go.microsoft.com adresy a koncové body serveru, když je aplikace Visual Studio restartovat.
 
-    NEBO
+  -OR-
 
 - Pokud chcete použít výchozí pověření s proxy serverem, můžete provádět následující akce:
 
@@ -58,13 +58,13 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu 
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
-          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
       </defaultProxy>
       ```
 
       Je třeba vložit adresu proxy serveru správná pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.
 
-     NEBO
+  -OR-
 
 - Také postupujte podle pokynů [jak se připojit přes ověřený proxy server webové](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) blogový příspěvek, který ukazuje, jak přidat kód, který vám umožní používat proxy server.
 

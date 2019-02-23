@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::UpdateSymbols | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c3c396dbea0e005012162080590a0b84ec9f5b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da13452e125e2cf6452a1e2e2ab617b38de7ee28
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413290"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678287"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 Aktualizuje symboly ladění do paměti ze zadaného datového proudu.
@@ -40,14 +40,17 @@ int UpdateSymbols (
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identifikátor domény aplikace.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Jedinečný identifikátor modulu.
+ [in] Identifikátor domény aplikace.
 
-`pUpdateStream`  
-[in] Datový proud, který obsahuje symboly ladění aktualizované.
+`guidModule`
+
+ [in] Jedinečný identifikátor modulu.
+
+`pUpdateStream`
+
+ [in] Datový proud, který obsahuje symboly ladění aktualizované.
 
 ## <a name="example"></a>Příklad
 Následující příklad ukazuje, jak pro tuto metodu implementovat **CDebugSymbolProvider** objekt, který zveřejňuje [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) rozhraní.
@@ -92,4 +95,4 @@ Error:
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
 ## <a name="see-also"></a>Viz také
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

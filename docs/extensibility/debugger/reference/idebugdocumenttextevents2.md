@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentTextEvents2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentTextEvents2
 helpviewer_keywords:
@@ -12,50 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 816bd32d8583bd235ddff13d00b63e77e1ae2d4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e24568d307db694d30a5e87630f47f764a036427
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942945"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681722"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
-Toto rozhraní se používá k upozornění na změny ve zdrojovém dokumentu, která se dodávají pomocí ladicího stroje sady Visual Studio.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugDocumentTextEvents2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- DE implementuje toto rozhraní pro podporu změn ke zdrojovému kódu. Toto rozhraní je implementováno obvykle na stejný objekt, který implementuje [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní.  
-  
-## <a name="notes-for-callers"></a>Poznámky pro volající  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] získá toto rozhraní přímo pomocí volání <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> metody. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Rozhraní se získá z volání <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> metody. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Rozhraní je získán voláním [QueryInterface](/cpp/atl/queryinterface) metodu [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní.  
-  
-## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- V následující tabulce jsou uvedeny metody objektu `IDebugDocumentTextEvents2`.  
-  
-|Metoda|Popis|  
-|------------|-----------------|  
-|[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|Označuje, že došlo ke zničení celý dokument.|  
-|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|Upozorní balíček ladění, že byl vložen text do dokumentu.|  
-|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|Upozorní balíček ladění, že text byl odebrán z dokumentu.|  
-|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|Upozorní balíček ladění, text se nahradil v dokumentu.|  
-|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|Upozorní balíček ladění, aby byly aktualizovány atributy textu v dokumentu.|  
-|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|Upozorní příjemce události, aby se aktualizovaly atributy dokumentu.|  
-  
-## <a name="remarks"></a>Poznámky  
- Pouze ladicími stroji, které poskytují své vlastní dokumenty by využít výhod `IDebugDocumentTextEvent2` rozhraní. Příklad tohoto by skriptovací stroj ladění. Právě interpretace skripty, nový zdrojový kód lze generovat se nenachází v žádném souboru disku, který znáte jenom DE.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: msdbg.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
- [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
+Toto rozhraní se používá k upozornění na změny ve zdrojovém dokumentu, která se dodávají pomocí ladicího stroje sady Visual Studio.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugDocumentTextEvents2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Poznámky pro implementátory
+ DE implementuje toto rozhraní pro podporu změn ke zdrojovému kódu. Toto rozhraní je implementováno obvykle na stejný objekt, který implementuje [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní.
+
+## <a name="notes-for-callers"></a>Poznámky pro volající
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] získá toto rozhraní přímo pomocí volání <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> metody. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Rozhraní se získá z volání <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> metody. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Rozhraní je získán voláním [QueryInterface](/cpp/atl/queryinterface) metodu [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní.
+
+## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí
+ V následující tabulce jsou uvedeny metody objektu `IDebugDocumentTextEvents2`.
+
+|Metoda|Popis|
+|------------|-----------------|
+|[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|Označuje, že došlo ke zničení celý dokument.|
+|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|Upozorní balíček ladění, že byl vložen text do dokumentu.|
+|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|Upozorní balíček ladění, že text byl odebrán z dokumentu.|
+|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|Upozorní balíček ladění, text se nahradil v dokumentu.|
+|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|Upozorní balíček ladění, aby byly aktualizovány atributy textu v dokumentu.|
+|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|Upozorní příjemce události, aby se aktualizovaly atributy dokumentu.|
+
+## <a name="remarks"></a>Poznámky
+ Pouze ladicími stroji, které poskytují své vlastní dokumenty by využít výhod `IDebugDocumentTextEvent2` rozhraní. Příklad tohoto by skriptovací stroj ladění. Právě interpretace skripty, nový zdrojový kód lze generovat se nenachází v žádném souboru disku, který znáte jenom DE.
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: msdbg.h
+
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+- [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
+- [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

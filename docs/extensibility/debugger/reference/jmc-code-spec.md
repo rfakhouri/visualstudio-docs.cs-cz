@@ -1,7 +1,7 @@
 ---
 title: JMC_CODE_SPEC | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - JMC_CODE_SPEC
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab69cdaa450ffd083aca25de1cab038a4b891baa
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 0fd27ee043e55b4dd43be956e41dd870be550562
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449592"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707741"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 Tato struktura se používá k nastavení JustMyCode informace pro modul.
@@ -54,5 +54,5 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)
+- [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::GetTypesByName | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23b88cbb9bc2c87ef42ba729d7b98359ac3a2a1
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: be32b39df6da618e38dc9e62264412fce8c29e20
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413446"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678849"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Načte typ jeho název.
@@ -40,14 +40,17 @@ int GetTypesByName(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pszClassName`  
-[in] Název typu.
+`pszClassName`
 
-`nameMatch`  
-[in] Vybere typ shody, například velká a malá písmena. Hodnota z [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) výčtu.
+ [in] Název typu.
 
-`ppEnum`  
-[out] Enumerátor, který obsahuje tento typ nebo typy s daným názvem.
+`nameMatch`
+
+ [in] Vybere typ shody, například velká a malá písmena. Hodnota z [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) výčtu.
+
+`ppEnum`
+
+ [out] Enumerátor, který obsahuje tento typ nebo typy s daným názvem.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -122,4 +125,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

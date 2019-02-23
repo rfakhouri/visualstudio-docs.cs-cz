@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject::Evaluate | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::Evaluate
 helpviewer_keywords:
@@ -12,54 +12,58 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d7de9a5a6d159987db5816341a048e74065c128
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9deaf32a88d476895feab006cbe3b818d11b97ca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954660"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685337"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Volá funkci a vrátí výslednou hodnotu jako objekt.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Evaluate(   
-   IDebugObject** ppParams,  
-   DWORD          dwParams,  
-   DWORD          dwTimeout,  
-   IDebugObject** ppResult  
-);  
-```  
-  
-```csharp  
-int Evaluate(  
-   IDebugObject[]   ppParams,   
-   IntPtr           dwParams,   
-   uint             dwTimeout,   
-   out IDebugObject ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppParams`  
- [in] Pole [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objekty, které představují vstupní parametry. Každý z těchto parametrů byl vytvořen pomocí jedné z `Create` metody v [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) rozhraní.  
-  
- `dwParams`  
- [in] Počet parametrů `ppParams` pole.  
-  
- `dwTimeout`  
- [in] Určuje maximální dobu (v milisekundách) čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.  
-  
- `ppResult`  
- [out] Vrátí [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) představující hodnotu funkce jako objekt.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Tato metoda vytvoří a spustí volání funkce představované [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objektu.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+Volá funkci a vrátí výslednou hodnotu jako objekt.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Evaluate( 
+   IDebugObject** ppParams,
+   DWORD          dwParams,
+   DWORD          dwTimeout,
+   IDebugObject** ppResult
+);
+```
+
+```csharp
+int Evaluate(
+   IDebugObject[]   ppParams,
+   IntPtr           dwParams,
+   uint             dwTimeout,
+   out IDebugObject ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppParams`
+
+ [in] Pole [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objekty, které představují vstupní parametry. Každý z těchto parametrů byl vytvořen pomocí jedné z `Create` metody v [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) rozhraní.
+
+ `dwParams`
+
+ [in] Počet parametrů `ppParams` pole.
+
+ `dwTimeout`
+
+ [in] Určuje maximální dobu (v milisekundách) čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
+
+ `ppResult`
+
+ [out] Vrátí [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) představující hodnotu funkce jako objekt.
+
+## <a name="return-value"></a>Návratová hodnota
+ V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Tato metoda vytvoří a spustí volání funkce představované [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objektu.
+
+## <a name="see-also"></a>Viz také
+- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981269"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710822"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core ve službě IIS v Azure v sadě Visual Studio 2017
 
@@ -47,7 +47,7 @@ Doporučeným způsobem, jak vzdálené ladění na Azure závisí na vašem sc�
 
 Ladění mezi dvěma počítači připojený prostřednictvím proxy serveru není podporováno. Ladění přes vysokou latencí nebo připojení s malou šířkou pásma, jako je například telefonického Internetu, nebo přes Internet napříč zeměmi se nedoporučuje a může selhat nebo být příliš pomalé. Úplný seznam požadavků, najdete v části [požadavky](../debugger/remote-debugging.md#requirements_msvsmon).
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Vytvoření aplikace ASP.NET Core v systému Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Vytvoření aplikace ASP.NET Core v systému Visual Studio 2017
 
 1. Vytvoření nové aplikace ASP.NET Core. (Zvolte **soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET Core**).
 
@@ -61,7 +61,7 @@ Ladění mezi dvěma počítači připojený prostřednictvím proxy serveru nen
 
 ## <a name="remote_debug_azure_app_service"></a> Vzdálené ladění ASP.NET Core do služby Azure App Service
 
-Ze sady Visual Studio můžete rychle publikovat a ladit aplikaci tak, aby plně zřízené instance služby IIS. Ale přednastavení konfiguraci služby IIS a nelze ho upravit. Podrobnější pokyny najdete v článku [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Pokud je nutné přizpůsobit služby IIS, zkuste ladění [virtuálního počítače Azure](#remote_debug_azure_vm).) 
+Ze sady Visual Studio můžete rychle publikovat a ladit aplikaci tak, aby plně zřízené instance služby IIS. Ale přednastavení konfiguraci služby IIS a nelze ho upravit. Podrobnější pokyny najdete v článku [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Pokud je nutné přizpůsobit služby IIS, zkuste ladění [virtuálního počítače Azure](#remote_debug_azure_vm).)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>K nasazení aplikace a vzdálené ladění pomocí Průzkumníka serveru
 
@@ -184,7 +184,7 @@ Pokud nepoužíváte nasazení webu, musíte publikovat a nasazení aplikace pom
 V tomto kurzu se používá Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> Nastavení vzdáleného ladicího programu v systému Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ V tomto kurzu se používá Visual Studio 2017.
 2. V sadě Visual Studio, klikněte na tlačítko **ladit > připojit k procesu** (Ctrl + Alt + P).
 
     > [!TIP]
-    > V sadě Visual Studio 2017, můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P). 
+    > V sadě Visual Studio 2017, můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
 
 3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: 4022**.
 4. Klikněte na tlačítko **aktualizovat**.
@@ -211,7 +211,7 @@ V tomto kurzu se používá Visual Studio 2017.
 5. Zkontrolujte **Zobrazit procesy všech uživatelů**.
 
 6. Zadejte první písmeno názvu procesu a rychle najít *dotnet.exe* (pro ASP.NET Core).
-   
+
    Pro aplikace ASP.NET Core, názvem předchozího procesu byla *dnx.exe*.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,7 +219,7 @@ V tomto kurzu se používá Visual Studio 2017.
 7. Klikněte na tlačítko **připojit**.
 
 8. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >**.
-    
+
     Zobrazí se webová stránka ASP.NET.
 9. Ve spuštěné aplikaci ASP.NET, kliknutím na odkaz **o** stránky.
 
@@ -229,7 +229,7 @@ V tomto kurzu se používá Visual Studio 2017.
 
 Ve většině nastavení jsou otevřené požadované porty instalace technologie ASP.NET a vzdálený ladicí program. Nicméně pokud řešíte potíže s nasazením a je hostovaná aplikace za bránou firewall, můžete ověřit, že jsou otevřené správné porty.
 
-Na Virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+Na Virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Požadované porty:
 

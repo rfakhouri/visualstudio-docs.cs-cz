@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumLocals | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::EnumLocals
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6cd5e65c54355ec21d22d101d94270b95018e8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 6e8c39adaca6c394b631542d57d74ed4818501b4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450409"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700559"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Vytvoří čítač pro vybrané místní proměnné metody.
@@ -39,11 +39,13 @@ int EnumLocals(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pAddress`  
-[in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objekt představující adresa pro ladění, který vybere kontextu nebo oboru, ze kterého se má získat oknech místní hodnoty.
+`pAddress`
 
-`ppLocals`  
-[out] Vrátí [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objekt představující seznam lokální; v opačném případě vrátí hodnotu null, pokud neexistují žádné místní hodnoty.
+ [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objekt představující adresa pro ladění, který vybere kontextu nebo oboru, ze kterého se má získat oknech místní hodnoty.
+
+`ppLocals`
+
+ [out] Vrátí [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objekt představující seznam lokální; v opačném případě vrátí hodnotu null, pokud neexistují žádné místní hodnoty.
 
 ## <a name="return-value"></a>Návratová hodnota
 V případě úspěchu vrátí hodnotu S_OK nebo vrátí S_FALSE v případě, že neexistují žádné místní hodnoty. V opačném případě vrátí kód chyby.
@@ -74,7 +76,7 @@ public void func(int index)
 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objekt představuje `func` metoda sama. Volání `EnumLocals` metodou [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) nastavena na `Inner Scope 1` vrátí adresu obsahující Výčet `temp1` proměnných, například.
 
 ## <a name="see-also"></a>Viz také
-[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)  
-[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)  
-[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)  
-[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+- [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)

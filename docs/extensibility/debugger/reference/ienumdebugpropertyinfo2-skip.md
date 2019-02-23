@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPropertyInfo2::Skip | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPropertyInfo2::Skip
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70185525ba92ec1632515a11ee28b6acbc46fa77
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ed1f49675a7c4b0a5836c8a58fe14a23bb9e5b62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009177"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692538"
 ---
 # <a name="ienumdebugpropertyinfo2skip"></a>IEnumDebugPropertyInfo2::Skip
-Přeskočí za zadaný počet prvků.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Skip(  
-   ULONG celt  
-);  
-```  
-  
-```csharp  
-int Skip(  
-   uint celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `celt`  
- [in] Počet prvků, které mají přeskočit.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` Pokud `celt` je větší než počet zbývajících prvků; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Pokud `celt` Určuje hodnotu větší než počet zbývajících prvků výčtu je nastavena na konci a `S_FALSE` je vrácena.  
-  
-## <a name="see-also"></a>Viz také  
- [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
+Přeskočí za zadaný počet prvků.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Skip(
+   ULONG celt
+);
+```
+
+```csharp
+int Skip(
+   uint celt
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `celt`
+
+ [in] Počet prvků, které mají přeskočit.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` Pokud `celt` je větší než počet zbývajících prvků; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Pokud `celt` Určuje hodnotu větší než počet zbývajících prvků výčtu je nastavena na konci a `S_FALSE` je vrácena.
+
+## <a name="see-also"></a>Viz také
+- [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

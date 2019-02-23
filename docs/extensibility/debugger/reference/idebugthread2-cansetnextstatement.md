@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::CanSetNextStatement | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::CanSetNextStatement
 helpviewer_keywords:
@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cee011efedff2cec442e386f32c66d1398b35d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933604"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703042"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Určuje, zda aktuální ukazatel příkazu může být nastaven na daném zásobníku.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT CanSetNextStatement (   
-   IDebugStackFrame2*  pStackFrame,  
-   IDebugCodeContext2* pCodeContext  
-);  
-```  
-  
-```csharp  
-int CanSetNextStatement (   
-   IDebugStackFrame2  pStackFrame,  
-   IDebugCodeContext2 pCodeContext  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pStackFrame`  
- Vyhrazeno pro budoucí použití; Nastavte na hodnotu null. Pokud je hodnota null, použijte aktuální rámec zásobníku.  
-  
- `pCodeContext`  
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objekt, který popisuje umístění se pokračovalo v kódu a jeho kontext.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Pokud tato metoda vrátí `S_OK`, zavolejte [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) metoda ve skutečnosti nastavení dalšího příkazu.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)
+Určuje, zda aktuální ukazatel příkazu může být nastaven na daném zásobníku.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT CanSetNextStatement ( 
+   IDebugStackFrame2*  pStackFrame,
+   IDebugCodeContext2* pCodeContext
+);
+```
+
+```csharp
+int CanSetNextStatement ( 
+   IDebugStackFrame2  pStackFrame,
+   IDebugCodeContext2 pCodeContext
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pStackFrame` Vyhrazeno pro budoucí použití; Nastavte na hodnotu null. Pokud je hodnota null, použijte aktuální rámec zásobníku.
+
+ `pCodeContext`
+
+ [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objekt, který popisuje umístění se pokračovalo v kódu a jeho kontext.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Pokud tato metoda vrátí `S_OK`, zavolejte [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) metoda ve skutečnosti nastavení dalšího příkazu.
+
+## <a name="see-also"></a>Viz také
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)

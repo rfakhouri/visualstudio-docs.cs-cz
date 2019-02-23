@@ -1,7 +1,7 @@
 ---
 title: CONSTRUCTOR_ENUM | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONSTRUCTOR_ENUM
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd5067591f4f296825db6362f4a7b91f1a7a37e8
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bb880516d13085af594bb639a15d76fca8262279
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412809"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680357"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 Vybere různé druhy konstruktory.
@@ -41,14 +41,11 @@ public enum ConstructorMatchOptions {
 ```
 
 ## <a name="members"></a>Členové
-crAll  
-Vybere všechny konstruktory.
+crAll vybere všechny konstruktory.
 
-crNonStatic  
-Vybere nestatické konstruktory.
+crNonStatic vybere nestatické konstruktory.
 
-crStatic  
-Vybere statické konstruktory.
+crStatic vybere statické konstruktory.
 
 ## <a name="remarks"></a>Poznámky
 Předán jako argument [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) metody.
@@ -61,5 +58,5 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

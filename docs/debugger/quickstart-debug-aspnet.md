@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027375"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683594"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Rychlý start: Ladění technologie ASP.NET v ladicím programu sady Visual Studio
 
 Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které vám pomůžou ladit vaše aplikace. Toto téma poskytuje rychlý způsob, jak Seznamte se s některými základními funkcemi.
 
-## <a name="create-a-new-project"></a>Vytvoření nového projektu 
+## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
 1. V sadě Visual Studio, zvolte **soubor > Nový projekt**.
 
@@ -110,7 +110,7 @@ Běžné klávesové příkazy používá k procházejte kódem po krocích zahr
 
     ![Zobrazit datatip](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    Datatip se dozvíte, aktuální hodnota `c2` proměnné a umožňuje vám umožní zkontrolovat její vlastnosti. Při ladění, pokud se zobrazí hodnotu, kterou nečekáte, pravděpodobně chyby v předchozích nebo volání řádků kódu. 
+    Datatip se dozvíte, aktuální hodnota `c2` proměnné a umožňuje vám umožní zkontrolovat její vlastnosti. Při ladění, pokud se zobrazí hodnotu, kterou nečekáte, pravděpodobně chyby v předchozích nebo volání řádků kódu.
 
 2. Rozbalení datového tipu se podívat na aktuální hodnoty vlastností `c2` objektu.
 

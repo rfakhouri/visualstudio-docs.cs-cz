@@ -1,7 +1,7 @@
 ---
 title: Usnadnění tipy a triky pro Visual Studio
 description: Další informace o tipy a triky, díky kterým integrovaného vývojového prostředí (IDE) sady Visual Studio pro každodenní použití, včetně osobám s postižením.
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318549"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680929"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Usnadnění tipy a triky pro Visual Studio
 
 > [!TIP]
-> Další informace o nedávných aktualizacích usnadnění přístupu, najdete v článku [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.
+> Další informace o aktualizacích pro usnadnění přístupu, najdete v článku [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.
 
 Visual Studio obsahuje vestavěných funkcí usnadnění, které jsou kompatibilní se čtečkami obrazovky a dalšími technologiemi přístupnosti. Toto téma obsahuje seznam běžných klávesových zkratek můžete použít k provádění úloh jen pomocí klávesnice a obsahuje informace o používání motivů vysoký kontrast – kvůli zlepšení viditelnosti. Také ukazuje způsob použití poznámek k odhalit užitečné informace o svém kódu a nastavení zvukové vodítek pro sestavení a zarážky události.
 
@@ -64,6 +64,7 @@ Některé další užitečné kombinace klávesových zkratek, patří.
 |Dialogové okno|Zaškrtněte nebo zrušte zaškrtnutí políčka zaškrtávací políčko v dialogovém okně. <br> <br> **POZNÁMKA:** Standardní místní Windows|**MEZERNÍK**|
 |Kontextové nabídky|Otevřete nabídku kontextu (klikněte pravým tlačítkem). <br> <br> **POZNÁMKA:** Standardní místní Windows|**SHIFT** + **F10**|
 |Nabídky|Rychlý přístup k položce nabídky pomocí jeho klíče akcelerátoru. Zvolte **ALT** klíč následovaný podtržené písmena v nabídce k aktivaci příkazu. Chcete-li zobrazit dialogové okno Otevřít projekt v sadě Visual Studio, například byste zvolili **ALT** + **F** + **O**  +  **P**.  <br><br> **POZNÁMKA:** Standardní místní Windows|**ALT** + **[písmeno]**|
+|Rychlé spuštění vyhledávacího pole| Použijte funkci hledání v sadě Visual Studio|**Ctrl** + **Q**|
 |Okno nástrojů|Přecházení mezi kartami sady nástrojů.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DOWNARROW**|
 |Okno nástrojů|Přidání ovládacího prvku z panelu nástrojů do formuláře nebo návrháře.|**ENTER**|
 |Klávesnice, prostředí, dialogové okno Možnosti|Odstranit kombinace klíče zadané v **stiskněte klávesovou zkratku** možnost.|**BACKSPACE**|

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::ReplaceSymbols | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ReplaceSymbols
 - IDebugComPlusSymbolProvider::ReplaceSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee202ec6462adffa3f4c21d518b18388bea2e072
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413485"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679965"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Nahradí aktuální symboly ladění programů v zadaného datového proudu.
@@ -40,14 +40,17 @@ int ReplaceSymbols(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identifikátor domény aplikace.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Jedinečný identifikátor modulu.
+ [in] Identifikátor domény aplikace.
 
-`pStream`  
-[in] Datový proud, který obsahuje nové symboly.
+`guidModule`
+
+ [in] Jedinečný identifikátor modulu.
+
+`pStream`
+
+ [in] Datový proud, který obsahuje nové symboly.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -79,4 +82,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

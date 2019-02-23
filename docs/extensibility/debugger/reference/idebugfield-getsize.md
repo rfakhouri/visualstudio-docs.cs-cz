@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetSize | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugField::GetSize
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77d58a3cd0a6dcf674c25861e1cff8d43c2cbce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fa10836b91306a99629e80b6869880f018878c38
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981217"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707988"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
-Tato metoda načte velikost pole, v bajtech.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetSize(   
-   DWORD* pdwSize  
-);  
-```  
-  
-```csharp  
-int GetSize(  
-   out uint pdwSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pdwSize`  
- [out] Vrátí velikost.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Všechna pole mít typ a všechny typy mají velikost. Pole typu byte má například velikost 1 bajt.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+Tato metoda načte velikost pole, v bajtech.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetSize( 
+   DWORD* pdwSize
+);
+```
+
+```csharp
+int GetSize(
+   out uint pdwSize
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pdwSize`
+
+ [out] Vrátí velikost.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Všechna pole mít typ a všechny typy mají velikost. Pole typu byte má například velikost 1 bajt.
+
+## <a name="see-also"></a>Viz také
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

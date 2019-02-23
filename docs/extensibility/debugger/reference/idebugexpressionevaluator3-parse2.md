@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba8f5f214c8100780bb703a0733854228dae097f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450539"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678602"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 Převede řetězec s výrazem na analyzovaný výrazem zadaným poskytovatel symbolů a adresu vyhodnocování rámce.
@@ -49,29 +49,37 @@ HRESULT Parse2 (
 ```
 
 #### <a name="parameters"></a>Parametry
-`upstrExpression`  
-[in] Řetězec výrazu, který má být analyzován.
+`upstrExpression`
 
-`dwFlags`  
-[in] Kolekce [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) konstanty, které určují, jak má být analyzován výraz.
+ [in] Řetězec výrazu, který má být analyzován.
 
-`nRadix`  
-[in] Základ, který se má použít pro interpretaci jakékoli číselné informace.
+`dwFlags`
 
-`pSymbolProvider`  
-[in] Rozhraní poskytovatele symbolů.
+ [in] Kolekce [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) konstanty, které určují, jak má být analyzován výraz.
 
-`pAddress`  
-[in] Adresa vyhodnocování rámce.
+`nRadix`
 
-`pbstrError`  
-[out] Vrátí chybu jako čitelný text.
+ [in] Základ, který se má použít pro interpretaci jakékoli číselné informace.
 
-`pichError`  
-[out] Vrátí pozici znaku start Chyba v řetězci výraz.
+`pSymbolProvider`
 
-`ppParsedExpression`  
-[out] Vrátí analyzovaný výrazu v [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objektu.
+ [in] Rozhraní poskytovatele symbolů.
+
+`pAddress`
+
+ [in] Adresa vyhodnocování rámce.
+
+`pbstrError`
+
+ [out] Vrátí chybu jako čitelný text.
+
+`pichError`
+
+ [out] Vrátí pozici znaku start Chyba v řetězci výraz.
+
+`ppParsedExpression`
+
+ [out] Vrátí analyzovaný výrazu v [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objektu.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -135,4 +143,4 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
+- [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

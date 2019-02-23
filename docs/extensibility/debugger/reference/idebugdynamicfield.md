@@ -1,7 +1,7 @@
 ---
 title: IDebugDynamicField | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDynamicField
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53e4bd31833ad5cf3441638c3735230b89a16cf7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d94a685b9c79069a047e32155234f9bf6a50d5c5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938451"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692015"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
-Toto rozhraní představuje typ proměnné.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugDynamicField : IDebugField  
-```  
-  
-## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní je implementováno poskytovateli symbol jako základní třída pro libovolný typ, který může být stanovena v době běhu. Toto je pouze pro spravovaný kód.  
-  
-## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní představuje základní třídu, ze kterého mohou být odvozeny více specializované rozhraní.  
-  
-## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Toto rozhraní neposkytuje všechny metody kromě těch zděděných z `IDebugField`.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: sh.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [Rozhraní poskytovatele symbolů](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+Toto rozhraní představuje typ proměnné.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugDynamicField : IDebugField
+```
+
+## <a name="notes-for-implementers"></a>Poznámky pro implementátory
+ Toto rozhraní je implementováno poskytovateli symbol jako základní třída pro libovolný typ, který může být stanovena v době běhu. Toto je pouze pro spravovaný kód.
+
+## <a name="notes-for-callers"></a>Poznámky pro volající
+ Toto rozhraní představuje základní třídu, ze kterého mohou být odvozeny více specializované rozhraní.
+
+## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí
+ Toto rozhraní neposkytuje všechny metody kromě těch zděděných z `IDebugField`.
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: sh.h
+
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+- [Rozhraní poskytovatele symbolů ](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

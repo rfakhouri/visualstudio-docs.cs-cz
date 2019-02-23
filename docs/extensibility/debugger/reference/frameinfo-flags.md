@@ -1,7 +1,7 @@
 ---
 title: FRAMEINFO_FLAGS | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FRAMEINFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10641f9af57f572b660e900161a450c69886ad5e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 54bb93fa6f88c02731691728bceacdd4a5fe2036
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316038"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694345"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Určuje informace, které se mají načíst informace o objektu rámce zásobníku.
@@ -98,98 +98,67 @@ public enum enum_FRAMEINFO_FLAGS {
 ```
 
 ## <a name="members"></a>Členové
-FIF_FUNCNAME  
-Inicializace/použít `m_bstrFuncName` pole.
+FIF_FUNCNAME inicializace/použít `m_bstrFuncName` pole.
 
-FIF_RETURNTYPE  
-Inicializace/použít `m_bstrReturnType` pole.
+FIF_RETURNTYPE inicializace/použít `m_bstrReturnType` pole.
 
-FIF_ARGS  
-Inicializace/použít `m_bstrArgs` pole.
+FIF_ARGS inicializace/použít `m_bstrArgs` pole.
 
-FIF_LANGUAGE  
-Inicializace/použít `m_bstrLanguage` pole.
+FIF_LANGUAGE inicializace/použít `m_bstrLanguage` pole.
 
-FIF_MODULE  
-Inicializace/použít `m_bstrModule` pole.
+FIF_MODULE inicializace/použít `m_bstrModule` pole.
 
-FIF_STACKRANGE  
-Inicializace/použít `m_addrMin` a `m_addrMax` (rozsah zásobníku) pole.
+FIF_STACKRANGE inicializace/použít `m_addrMin` a `m_addrMax` (rozsah zásobníku) pole.
 
-FIF_FRAME  
-Inicializace/použít `m_pFrame` pole.
+FIF_FRAME inicializace/použít `m_pFrame` pole.
 
-FIF_DEBUGINFO  
-Inicializace/použít `m_fHasDebugInfo` pole.
+FIF_DEBUGINFO inicializace/použít `m_fHasDebugInfo` pole.
 
-FIF_STALECODE  
-Inicializace/použít `m_fStaleCode` pole.
+FIF_STALECODE inicializace/použít `m_fStaleCode` pole.
 
-FIF_ANNOTATEDFRAME  
-Inicializace/použít `m_fAnnotatedFrame` pole.
+FIF_ANNOTATEDFRAME inicializace/použít `m_fAnnotatedFrame` pole.
 
-FIF_DEBUG_MODULEP  
-Inicializace/použít `m_pModule` pole.
+FIF_DEBUG_MODULEP inicializace/použít `m_pModule` pole.
 
-FIF_FUNCNAME_FORMAT  
-Naformátuje název funkce. Výsledek se vrátí v `m_bstrFunName` pole a žádná další pole jsou vyplněna.
+FIF_FUNCNAME_FORMAT naformátuje název funkce. Výsledek se vrátí v `m_bstrFunName` pole a žádná další pole jsou vyplněna.
 
-FIF_FUNCNAME_RETURNTYPE  
-Přidá návratový typ `m_bstrFuncName` pole.
+Přidá FIF_FUNCNAME_RETURNTYPE návratový typ `m_bstrFuncName` pole.
 
-FIF_FUNCNAME_ARGS  
-Přidá argumenty, které mají `m_bstrFuncName` pole.
+Přidá FIF_FUNCNAME_ARGS argumenty, které mají `m_bstrFuncName` pole.
 
-FIF_FUNCNAME_LANGUAGE  
-Přidá jazyk tak, aby `m_bstrFuncName` pole.
+Přidá FIF_FUNCNAME_LANGUAGE jazyk tak, aby `m_bstrFuncName` pole.
 
-FIF_FUNCNAME_MODULE  
-Přidá název modulu, který se má `m_bstrFuncName` pole.
+FIF_FUNCNAME_MODULE přidá název modulu, který se má `m_bstrFuncName` pole.
 
-FIF_FUNCNAME_LINES  
-Přidá počet řádků `m_bstrFuncName` pole.
+FIF_FUNCNAME_LINES přidá počet řádků `m_bstrFuncName` pole.
 
-FIF_FUNCNAME_OFFSET  
-Přidá `m_bstrFuncName` pole Posun v bajtech od začátku řádku, pokud `FIF_FUNCNAME_LINES` je zadán. Pokud `FIF_FUNCNAME_LINES` není zadán, nebo pokud čísla řádků nejsou k dispozici, přidá posun v bajtech od začátku funkci.
+Přidá FIF_FUNCNAME_OFFSET `m_bstrFuncName` pole Posun v bajtech od začátku řádku, pokud `FIF_FUNCNAME_LINES` je zadán. Pokud `FIF_FUNCNAME_LINES` není zadán, nebo pokud čísla řádků nejsou k dispozici, přidá posun v bajtech od začátku funkci.
 
-FIF_FUNCNAME_ARGS_TYPES  
-Přidá typ každého argumentu funkce `m_bstrFuncName` pole.
+FIF_FUNCNAME_ARGS_TYPES přidá typ každého argumentu funkce `m_bstrFuncName` pole.
 
-FIF_FUNCNAME_ARGS_NAMES  
-Přidá název každý argument funkce `m_bstrFuncName` pole.
+FIF_FUNCNAME_ARGS_NAMES přidá název každý argument funkce `m_bstrFuncName` pole.
 
-FIF_FUNCNAME_ARGS_VALUES  
-Přidá hodnotu každý argument funkce `m_bstrFuncName` pole.
+FIF_FUNCNAME_ARGS_VALUES přidá hodnotu každý argument funkce `m_bstrFuncName` pole.
 
-FIF_FUNCNAME_ARGS_ALL  
-Přidá typ, název a hodnotu všech argumentů `m_bstrFuncName` pole.
+FIF_FUNCNAME_ARGS_ALL přidá typ, název a hodnotu všech argumentů `m_bstrFuncName` pole.
 
-FIF_ARGS_TYPES  
-Typy argumentů se načte a ve formátu.
+FIF_ARGS_TYPES typy argumentů jsou načtena a ve formátu.
 
-FIF_ARGS_NAMES  
-Názvy argumentů se načte a ve formátu.
+FIF_ARGS_NAMES názvy argumentů se načte a ve formátu.
 
-FIF_ARGS_VALUES  
-Hodnoty argumentů se načte a ve formátu.
+FIF_ARGS_VALUES hodnoty argumentů se načte a ve formátu.
 
-FIF_ARGS_ALL  
-Načíst a formátování typu, názvu a hodnoty všech argumentů.
+Načíst FIF_ARGS_ALL a formát typ, název a hodnotu všech argumentů.
 
-FIF_ARGS_NOFORMAT  
-Určuje, že argumenty nejsou ve formátu (například není přidat otevírací a zavírací závorky seznamu argumentů ani přidat oddělovač mezi argumenty).
+FIF_ARGS_NOFORMAT Určuje, že jsou argumenty nesmí být ve formátu (například není přidat otevírací a zavírací závorky seznamu argumentů ani přidat oddělovač mezi argumenty).
 
-FIF_ARGS_NO_FUNC_EVAL  
-Určuje, že při načítání hodnoty argumentů by neměl používat vyhodnocení funkce (vlastnost).
+Při načítání hodnoty argumentů nesmí používat FIF_ARGS_NO_FUNC_EVAL Určuje, že funkce vyhodnocení (Vlastnosti).
 
-FIF_FILTER_NON_USER_CODE  
-Ladicí stroj je k filtrování rámce neuživatelský kód tak, že nejsou zahrnuty.
+FIF_FILTER_NON_USER_CODE ladicí stroj je k filtrování rámce neuživatelský kód tak, že nejsou zahrnuty.
 
-FIF_ARGS_NO_TOSTRING  
-Nepovolit `ToString()` funkce zkušební nebo formátování při vrácení argumenty funkce.
+FIF_ARGS_NO_TOSTRING neumožňují `ToString()` funkce zkušební nebo formátování při vrácení argumenty funkce.
 
-FIF_DESIGN_TIME_EXPR_EVAL  
-Informace o snímcích byste získali z hostovaná doména aplikace, nikoli hostitelský proces.
+Informace o snímcích FIF_DESIGN_TIME_EXPR_EVAL byste získali z hostovaná doména aplikace, nikoli hostitelský proces.
 
 ## <a name="remarks"></a>Poznámky
 Tyto příznaky jsou předány [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) a [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metody k označení pole, která mají být inicializovány v [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strukturou nebo strukturami.
@@ -204,7 +173,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)  
-[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
+- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

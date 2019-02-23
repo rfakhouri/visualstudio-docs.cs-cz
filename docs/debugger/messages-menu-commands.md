@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a4a6e65929e6c437481397e5aadb6bbe4d1f33
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978929"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692564"
 ---
 # <a name="messages-menu-commands"></a>Příkazy nabídky zpráv
-**Zprávy** nabídka obsahuje příkazy pro řízení zobrazení zpráv.  
-  
- **Spustit/zastavit protokolování**  
- Spuštění nebo zastavení zobrazení zpráv.  
-  
- **Možnosti protokolování**  
- Otevře **MessageOptions** dialogové okno, kde můžete určit kritéria vyhledávání zpráv.  
-  
- **Vymazat protokol**  
- Vymaže obsah aktivního zobrazení zprávy.
+**Zprávy** nabídka obsahuje příkazy pro řízení zobrazení zpráv.
+
+ **Spustit/zastavit protokolování** spustí nebo ukončí zprávu zobrazit.
+
+ **Možnosti protokolování** otevře **MessageOptions** dialogové okno, kde můžete určit kritéria vyhledávání zpráv.
+
+ **Vymazat protokol** vymaže obsah aktivního zobrazení zprávy.

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8f72f0d9b0c2d847ddb2c5e7e6c3c8d4ae4467
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932492"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717517"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -31,13 +31,19 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>Arguments
 
-- *CommandName*
+*CommandName*
 
-  Povinný parametr. Úplný název příkazu sady Visual Studio nebo jeho alias uzavřený v dvojitých uvozovkách. Další informace o syntaxi příkazů a aliasů naleznete v tématu [příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md).
+Povinný parametr. Úplný název příkazu sady Visual Studio nebo jeho alias uzavřený v dvojitých uvozovkách. Další informace o syntaxi příkazů a aliasů naleznete v tématu [příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Poznámky
 
-Po dokončení spuštění IDE spustí pojmenovaný příkaz. Pokud použijete tento přepínač, rozhraní IDE nezobrazí Visual Studio úvodní stránky při spuštění.
+Po dokončení spuštění IDE spustí pojmenovaný příkaz.
+
+::: moniker range="vs-2017"
+
+Pokud použijete tento přepínač, rozhraní IDE nezobrazí úvodní stránky při spuštění.
+
+::: moniker-end
 
 Pokud doplněk vystavuje příkaz, můžete použít tento přepínač se spustit doplněk z příkazového řádku. Další informace najdete v tématu [jak: Řízení doplňků pomocí Správce doplňků](/previous-versions/xwdatdwh(v=vs.140)).
 

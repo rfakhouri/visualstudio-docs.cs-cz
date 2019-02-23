@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a365ac32ad59d01ceff7bc29cbb223a8fd32e5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002717"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683997"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Vlastní ovládací prvky editoru a Mmenus pomocí starší verze rozhraní API
-Služba jazyka nebo v náhledu textu můžete řídit kontextové nabídky a ovládací prvky v editoru. Na stránkách v této části podrobně popisují, jak pracovat s těmito funkcemi.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Panel rozevíracího seznamu](../extensibility/drop-down-bar.md)  
- Popisuje na panelu rozevíracího seznamu a poskytuje pokyny pro jeho implementaci.  
-  
- [Zpracování příkazů](../extensibility/command-handling.md)  
- Příkaz details v editoru.  
-  
- [Kontextové nabídky](../extensibility/context-menus.md)  
- Popisuje kontextové nabídky editoru.  
-  
- [Postupy: Aktualizace stavového řádku](../extensibility/how-to-update-the-status-bar.md)  
- Poskytuje pokyny pro aktualizaci **stavový řádek**.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Jazyk a Editor rozšíření služeb](../extensibility/editor-and-language-service-extensions.md)  
- Zavádí různé typy editorů, které můžete použít v sadě Visual Studio.
+Služba jazyka nebo v náhledu textu můžete řídit kontextové nabídky a ovládací prvky v editoru. Na stránkách v této části podrobně popisují, jak pracovat s těmito funkcemi.
+
+## <a name="in-this-section"></a>V tomto oddílu
+- [Panel rozevíracího seznamu](../extensibility/drop-down-bar.md) popisuje na panelu rozevíracího seznamu a poskytuje pokyny pro jeho implementaci.
+
+- [Zpracování příkazu](../extensibility/command-handling.md) příkaz Details v editoru.
+
+- [Kontextové nabídky](../extensibility/context-menus.md) popisuje kontextové nabídky editoru.
+
+- [Postupy: Aktualizace stavového řádku](../extensibility/how-to-update-the-status-bar.md) poskytuje pokyny pro aktualizaci **stavový řádek**.
+
+## <a name="related-sections"></a>Související oddíly
+- [Jazyk a Editor rozšíření služeb](../extensibility/editor-and-language-service-extensions.md) zavádí různé typy editorů, můžete použít v sadě Visual Studio.

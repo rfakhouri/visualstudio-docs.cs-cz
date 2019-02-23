@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFields::Clone | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugFields::Clone
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9c3243c7e5f2cb0378772987917455c3a6d0a8c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 122b0d64c32f50287a8845cbd43a41834234a415
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928461"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692382"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
-Tato metoda vrátí kopii objektu do aktuálního výčtu jako samostatný objekt.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Clone(  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppEnum`  
- [out] Vrátí kopii objektu tento výčet jako samostatný objekt.  
-  
-## <a name="property-valuereturn-value"></a>Hodnota vlastnosti / návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Kopírování výčet má stejného stavu jako původní v době, kdy tato metoda je volána. Ale tuto kopii a původní stavy jsou oddělené a je možné změnit individuálně.  
-  
-## <a name="see-also"></a>Viz také  
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+Tato metoda vrátí kopii objektu do aktuálního výčtu jako samostatný objekt.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Clone(
+   IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumDebugFields ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppEnum`
+
+ [out] Vrátí kopii objektu tento výčet jako samostatný objekt.
+
+## <a name="property-valuereturn-value"></a>Hodnota vlastnosti / návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Kopírování výčet má stejného stavu jako původní v době, kdy tato metoda je volána. Ale tuto kopii a původní stavy jsou oddělené a je možné změnit individuálně.
+
+## <a name="see-also"></a>Viz také
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

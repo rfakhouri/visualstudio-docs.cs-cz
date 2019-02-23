@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetName | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::GetName
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b148b5bcbfe9f0f190713e49714d8caed4df8bbb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9ec8a234e46fade2b58454d3f4cf8c4ff669564
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938078"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698284"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
-Získá název programu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetName(   
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetName(   
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pbstrName`  
- [out] Vrátí název programu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="remarks"></a>Poznámky  
- Název vrácený touto metodou je vždy popisné a uživatel zobrazitelné název, který popisuje program.  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+Získá název programu.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetName( 
+   BSTR* pbstrName
+);
+```
+
+```csharp
+int GetName( 
+   out string pbstrName
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pbstrName`
+
+ [out] Vrátí název programu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="remarks"></a>Poznámky
+ Název vrácený touto metodou je vždy popisné a uživatel zobrazitelné název, který popisuje program.
+
+## <a name="see-also"></a>Viz také
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

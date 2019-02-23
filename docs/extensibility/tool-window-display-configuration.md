@@ -11,29 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973405"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707039"
 ---
 # <a name="tool-window-display-configuration"></a>Konfigurace zobrazení okna nástroje
-Pokud VSPackage zaregistruje panelu nástrojů, výchozí umístění, velikost, styl ukotvení a další informace o viditelnosti se zadává v volitelné hodnoty. Další informace o registraci okna nástroje, najdete v části [nástroj Windows v registru](../extensibility/tool-windows-in-the-registry.md)  
+Pokud VSPackage zaregistruje panelu nástrojů, výchozí umístění, velikost, styl ukotvení a další informace o viditelnosti se zadává v volitelné hodnoty. Další informace o registraci okna nástroje, najdete v části [nástroj Windows v registru](../extensibility/tool-windows-in-the-registry.md)
 
-## <a name="window-display-information"></a>Informace o zobrazení okna  
- Panel nástrojů zobrazení základní konfigurace je uložená v až šest volitelné hodnoty:  
+## <a name="window-display-information"></a>Informace o zobrazení okna
+ Panel nástrojů zobrazení základní konfigurace je uložená v až šest volitelné hodnoty:
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
+```
 
 
 | Název | Typ | Data | Popis |
@@ -45,67 +45,67 @@ HKEY_LOCAL_MACHINE\
 | Orientace | REG_SZ | "Left"<br /><br /> "Právo"<br /><br /> "Top"<br /><br /> "Dolů" | Najdete v oddílu pro komentáře. |
 | DontForceCreate | REG_DWORD | 0 nebo 1 | Pokud je tato položka a její hodnota není nula, v okně je načten, ale nikoliv okamžitě zobrazí. |
 
-### <a name="comments"></a>Komentáře  
- Orientace položka udává pozici, kde se panel nástrojů ukotvené při poklepání na záhlaví. Pozice je vzhledem k oknu zadané v položce okna. Pokud styl položka má nastavenou hodnotu "Propojené", orientace položka může být "Vlevo", "Vpravo", "Top" nebo "Dolů". Pokud položka Style je "Tabbed", orientace položka může být "vlevo" nebo "Vpravo" a určuje, kde se přidá na kartu. Pokud je položka styl "Float", panel nástrojů čísel s plovoucí čárkou nejprve. Při poklepání na záhlaví okna použít položky orientaci a okna a okna používá "Tabbed" style. Pokud je položka styl "AlwaysFloat", nelze ukotvit okno nástroje. Pokud je položka styl "MDI", panel nástrojů je propojený s oblasti MDI a okno Položka je ignorována.  
+### <a name="comments"></a>Komentáře
+ Orientace položka udává pozici, kde se panel nástrojů ukotvené při poklepání na záhlaví. Pozice je vzhledem k oknu zadané v položce okna. Pokud styl položka má nastavenou hodnotu "Propojené", orientace položka může být "Vlevo", "Vpravo", "Top" nebo "Dolů". Pokud položka Style je "Tabbed", orientace položka může být "vlevo" nebo "Vpravo" a určuje, kde se přidá na kartu. Pokud je položka styl "Float", panel nástrojů čísel s plovoucí čárkou nejprve. Při poklepání na záhlaví okna použít položky orientaci a okna a okna používá "Tabbed" style. Pokud je položka styl "AlwaysFloat", nelze ukotvit okno nástroje. Pokud je položka styl "MDI", panel nástrojů je propojený s oblasti MDI a okno Položka je ignorována.
 
-### <a name="example"></a>Příklad  
+### <a name="example"></a>Příklad
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\  
-              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}  
-              DontForceCreate = reg_dword: 0x00000000  
-              Float           = reg_sz: 100,100,450,300  
-              Name            = reg_sz: Bookmarks  
-              Orientation     = reg_sz: Left  
-              Style           = reg_sz: Tabbed  
-              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\
+              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}
+              DontForceCreate = reg_dword: 0x00000000
+              Float           = reg_sz: 100,100,450,300
+              Name            = reg_sz: Bookmarks
+              Orientation     = reg_sz: Left
+              Style           = reg_sz: Tabbed
+              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}
+```
 
-## <a name="tool-window-visibility"></a>Viditelnost okna nástroje  
- Hodnoty v podklíči volitelné viditelnost určují nastavení viditelnost panelu nástrojů. Názvy hodnoty se používají k ukládání GUID příkazy, které vyžadují viditelnost okna. Pokud je proveden příkaz, rozhraní IDE zaručuje, že panel nástrojů je vytvořena a nastavena jako viditelná.  
+## <a name="tool-window-visibility"></a>Viditelnost okna nástroje
+ Hodnoty v podklíči volitelné viditelnost určují nastavení viditelnost panelu nástrojů. Názvy hodnoty se používají k ukládání GUID příkazy, které vyžadují viditelnost okna. Pokud je proveden příkaz, rozhraní IDE zaručuje, že panel nástrojů je vytvořena a nastavena jako viditelná.
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              Visibility\  
-                (Default) = reg_sz:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_sz:  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              Visibility\
+                (Default) = reg_sz:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_sz:
+```
 
-|Název|Typ|Data|Popis|  
-|----------|----------|----------|-----------------|  
-|(Výchozí)|REG_SZ|Žádná|Nechte prázdné.|  
-|*\<GUID>*|REG_DWORD nebo REG_SZ|0 nebo popisný řetězec.|Volitelné. Název položky musí být identifikátor GUID příkaz vyžadující viditelnost. Hodnota obsahuje jenom informativní řetězec. Hodnota je obvykle `reg_dword` nastavena na hodnotu 0.|  
+|Název|Typ|Data|Popis|
+|----------|----------|----------|-----------------|
+|(Výchozí)|REG_SZ|Žádná|Nechte prázdné.|
+|*\<GUID>*|REG_DWORD nebo REG_SZ|0 nebo popisný řetězec.|Volitelné. Název položky musí být identifikátor GUID příkaz vyžadující viditelnost. Hodnota obsahuje jenom informativní řetězec. Hodnota je obvykle `reg_dword` nastavena na hodnotu 0.|
 
-### <a name="example"></a>Příklad  
+### <a name="example"></a>Příklad
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {EEFA5220-E298-11D0-8F78-00A0C9110057}\  
-              Visibility\  
-                (Default) = reg_sz:  
-                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
-                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {EEFA5220-E298-11D0-8F78-00A0C9110057}\
+              Visibility\
+                (Default) = reg_sz:
+                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000
+                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+```
 
-## <a name="see-also"></a>Viz také  
- [Balíčky VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>Viz také
+- [Balíčky VSPackage](../extensibility/internals/vspackages.md)

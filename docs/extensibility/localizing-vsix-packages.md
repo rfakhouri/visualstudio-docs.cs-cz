@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936642"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687078"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizace balíčků VSIX
 
@@ -27,7 +27,7 @@ Pokud obsah obsahuje VSIX balíček VSPackage, která přidá příkazy nabídky
 
 ## <a name="directory-structure"></a>Adresářová struktura
 
- Když uživatel nainstaluje rozšíření, **rozšíření a aktualizace** kontroluje nejvyšší úrovni balíčku VSIX pro složku, jejíž název odpovídá národní prostředí sady Visual Studio na cílovém počítači. Pokud **rozšíření a aktualizace** najde *.vsixlangpack* souboru ve složce, nahradí jej lokalizované hodnoty v tomto souboru pro odpovídající hodnoty v *.vsixmanifest*souboru. Tyto hodnoty se zobrazí, když se instaluje rozšíření. Následující příklad ukazuje strukturu adresáře pro balíček VSIX, který je lokalizován do Španělština (es-ES) a Francouzština (fr-FR).  
+ Když uživatel nainstaluje rozšíření, **rozšíření a aktualizace** kontroluje nejvyšší úrovni balíčku VSIX pro složku, jejíž název odpovídá národní prostředí sady Visual Studio na cílovém počítači. Pokud **rozšíření a aktualizace** najde *.vsixlangpack* souboru ve složce, nahradí jej lokalizované hodnoty v tomto souboru pro odpovídající hodnoty v *.vsixmanifest*souboru. Tyto hodnoty se zobrazí, když se instaluje rozšíření. Následující příklad ukazuje strukturu adresáře pro balíček VSIX, který je lokalizován do Španělština (es-ES) a Francouzština (fr-FR).
 
 ```text
 .
@@ -63,7 +63,7 @@ Následující příklad ukazuje příslušné části třídy *Extension.vsixma
 
 ### <a name="code"></a>Kód
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ Následující příklad ukazuje příslušné části třídy *Extension.vsixma
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

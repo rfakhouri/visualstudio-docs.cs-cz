@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a737c9b993a6ffa523cbaa19929821f7d3c2acaf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0fb2ffcb7d3cb14f4551f85b1bec702d56e94f92
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023168"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682775"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Chyba: Na vzdáleném počítači se nepodařilo připojit k SQL Serveru.
-Nelze se připojit k serveru SQL Server na vzdáleném počítači *název*. Přístup se odepřel. Ověřte, že máte nainstalovanou vzdáleného ladícího programu na vzdáleném počítači. Pokud vzdálený počítač není připojen k doméně, nebo pokud Visual Studio běží jako místní účet, vzdálený počítač musí mít účet se stejným uživatelským jménem a heslem jako místní účet.  
-  
-### <a name="to-correct-this-error"></a>Oprava této chyby  
-  
--   Zobrazit [vzdálené ladění](../debugger/remote-debugging.md).  
-  
-## <a name="see-also"></a>Viz také  
- [Ladění SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))
+Nelze se připojit k serveru SQL Server na vzdáleném počítači *název*. Přístup se odepřel. Ověřte, že máte nainstalovanou vzdáleného ladícího programu na vzdáleném počítači. Pokud vzdálený počítač není připojen k doméně, nebo pokud Visual Studio běží jako místní účet, vzdálený počítač musí mít účet se stejným uživatelským jménem a heslem jako místní účet.
+
+### <a name="to-correct-this-error"></a>Oprava této chyby
+
+-   Zobrazit [vzdálené ladění](../debugger/remote-debugging.md).
+
+## <a name="see-also"></a>Viz také
+- [Ladění SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

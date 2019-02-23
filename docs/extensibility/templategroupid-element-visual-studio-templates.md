@@ -14,63 +14,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9a74c4aedf49b9ff7f7d56c29f3281c2d4578f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9219b764125727509807cc6f2b9fdf6400e97f2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952805"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685245"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID – element (šablony sady Visual Studio)
-Určuje, jaký typ projektu šablony položek se zobrazí. Tento element je důležité, když [ShowByDefault (šablony sady Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) je nastavena na `false`. Když [ShowByDefault (šablony sady Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) je nastavena na `true`, bude k dispozici ve všech typech projektů, šablony položky.  
-  
- \<Vstemplate – >  
- \<TemplateData>  
- \<TemplateGroupID>  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-<TemplateGroupID> ... </TemplateGroupID>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atributy a elementy  
- Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
-  
-### <a name="attributes"></a>Atributy  
- Žádné  
-  
-### <a name="child-elements"></a>Podřízené elementy  
- Žádné  
-  
-### <a name="parent-elements"></a>Nadřazené elementy  
-  
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
-  
-## <a name="text-value"></a>Textová hodnota  
- Je vyžadována textová hodnota.  
-  
- Text určuje identifikátor pro kategorii šablony položek.  
-  
-## <a name="remarks"></a>Poznámky  
- `TemplateGroupID` představuje prvek.  
-  
- Hodnota `TemplateGroupID` element se používá spolu s registrace systému projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<číslo verze >* \Projects\\) do šablony filtrů, které se zobrazují v **přidat novou položku** dialogové okno.  
-  
-|Hodnota Visual C++|Význam|  
-|------------------------|-------------|  
-|VC-Native|Použít u nativních projektů. Také výchozí Pokud nelze určit typ projektu.|  
-|Spravované VC|Použít pro spravované (/ clr) projekty|  
-|VC-Windows|Používá pro všechny projekty, které cílí na platformu windows (nativní a spravovaná/úložiště)|  
-|WinRT-Native-UAP|Používá pro projekty pro Windows 10 store|  
-|CodeSharing-Native|Používá pro projekty sdílené položky|  
-|WinRT-Native-6.3|Používá pro projekty pro Windows 8.1 Store|  
-|WinRT-Native-Phone-6.3|Používá pro projekty pro Windows Phone 8.1|  
-|WinRT-Native|Používá pro projekty Windows Store 8.0|  
-|VC-Android|Použít pro projekty pro Android|  
-  
-## <a name="see-also"></a>Viz také  
- [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
+Určuje, jaký typ projektu šablony položek se zobrazí. Tento element je důležité, když [ShowByDefault (šablony sady Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) je nastavena na `false`. Když [ShowByDefault (šablony sady Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) je nastavena na `true`, bude k dispozici ve všech typech projektů, šablony položky.
+
+ \<VSTemplate> \<TemplateData> \<TemplateGroupID>
+
+## <a name="syntax"></a>Syntaxe
+
+```
+<TemplateGroupID> ... </TemplateGroupID>
+```
+
+## <a name="attributes-and-elements"></a>Atributy a elementy
+ Následující části popisují atributy, podřízené prvky a nadřazené prvky.
+
+### <a name="attributes"></a>Atributy
+ Žádné
+
+### <a name="child-elements"></a>Podřízené elementy
+ Žádné
+
+### <a name="parent-elements"></a>Nadřazené elementy
+
+|Prvek|Popis|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|
+
+## <a name="text-value"></a>Textová hodnota
+ Je vyžadována textová hodnota.
+
+ Text určuje identifikátor pro kategorii šablony položek.
+
+## <a name="remarks"></a>Poznámky
+ `TemplateGroupID` představuje prvek.
+
+ Hodnota `TemplateGroupID` element se používá spolu s registrace systému projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<číslo verze >* \Projects\\) do šablony filtrů, které se zobrazují v **přidat novou položku** dialogové okno.
+
+|Hodnota Visual C++|Význam|
+|------------------------|-------------|
+|VC-Native|Použít u nativních projektů. Také výchozí Pokud nelze určit typ projektu.|
+|Spravované VC|Použít pro spravované (/ clr) projekty|
+|VC-Windows|Používá pro všechny projekty, které cílí na platformu windows (nativní a spravovaná/úložiště)|
+|WinRT-Native-UAP|Používá pro projekty pro Windows 10 store|
+|CodeSharing-Native|Používá pro projekty sdílené položky|
+|WinRT-Native-6.3|Používá pro projekty pro Windows 8.1 Store|
+|WinRT-Native-Phone-6.3|Používá pro projekty pro Windows Phone 8.1|
+|WinRT-Native|Používá pro projekty Windows Store 8.0|
+|VC-Android|Použít pro projekty pro Android|
+
+## <a name="see-also"></a>Viz také
+- [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)

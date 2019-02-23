@@ -1,7 +1,7 @@
 ---
 title: PROCESS_INFO_FLAGS | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3541355da9ea144129e730efe9876b4e6d642f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009567"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696516"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -45,17 +45,13 @@ enum enum_PROCESS_INFO_FLAGS { 
 
 ## <a name="members"></a>Členové
 
-PIFLAG_SYSTEM_PROCESS  
-Označuje, že proces je systémový proces.
+PIFLAG_SYSTEM_PROCESS znamená, že proces systémový proces.
 
-PIFLAG_DEBUGGER_ATTACHED  
-Označuje, že proces je laděn ladicím programem. Může se jednat [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladicího programu, nebo mohou být některé další ladicího programu, například WinDbg.
+PIFLAG_DEBUGGER_ATTACHED označuje, že proces je laděn ladicím programem. Může se jednat [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladicího programu, nebo mohou být některé další ladicího programu, například WinDbg.
 
-PIFLAG_PROCESS_STOPPED  
-Označuje, že proces se ukončí. Platí, pouze pokud `PIFLAG_DEBUGGER_ATTACHED` taky. K dispozici v sadě Visual Studio 2005 a novějších.
+PIFLAG_PROCESS_STOPPED označuje, které proces se ukončí. Platí, pouze pokud `PIFLAG_DEBUGGER_ATTACHED` taky. K dispozici v sadě Visual Studio 2005 a novějších.
 
-PIFLAG_PROCESS_RUNNING  
-Označuje, že je proces spuštěn. Platí, pouze pokud `PIFLAG_DEBUGGER_ATTACHED` taky. K dispozici v sadě Visual Studio 2005 a novějších.
+PIFLAG_PROCESS_RUNNING označuje, že proces běží. Platí, pouze pokud `PIFLAG_DEBUGGER_ATTACHED` taky. K dispozici v sadě Visual Studio 2005 a novějších.
 
 ## <a name="remarks"></a>Poznámky
 
@@ -73,5 +69,5 @@ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
 
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

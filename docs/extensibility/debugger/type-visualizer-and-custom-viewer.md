@@ -11,28 +11,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b09dc2d578ade421d35bb17dfbdf01e93313bbdb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 219632bce50b6942d46e4061a3c7eaf8f70adfd5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926863"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685960"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Vizualizér typů a vlastní prohlížeč
-Typ vizualizéru je komponenta, která zobrazuje část dat v určitém formátu. Formát je zcela až který implementuje vizualizéru, už to koncového uživatele nebo jiného dodavatele vizualizéry.  
-  
- Vlastní prohlížeč je součástí Chyba při vyhodnocování vlastní výraz, který zobrazuje část dat v určitém formátu. Tento formát je zcela v kompetenci implementátora vlastní prohlížeč, což znamená, že formát až implementátora vyhodnocovací filtr výrazů (EE).  
-  
-## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>Podpora pro vizualizérů typů v vyhodnocovače výrazů  
- EE podporuje vizualizérů typů podporuje sadu rozhraní, které jsou přístupné pro vizualizátory: rozhraní, jako například [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) a [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Ale EE nezodpovídá za implementace vizualizér typů samotné: EE pouze umožňuje vizualizéry externí přístup k jeho informace o typu. Takové vizualizéry může dodávaná EE a nainstalovaný na příslušné místo v sadě Visual Studio, zadán pomocí jiného dodavatele třetích stran nebo dokonce koncovým uživatelem.  
-  
-## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Podpora vlastních prohlížečů v vyhodnocovače výrazů  
- EE může také podporovat vlastních prohlížečů, ve kterých EE samotné poskytuje kód pro zobrazení datového typu. Implementuje vlastní prohlížeč [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) požadované rozhraní, která zpracovává všechny úkoly zobrazovat data v libovolné formát; prohlížeč má plnou kontrolu nad zobrazením a dokonce můžete nechat data upravit. Žádné vlastních prohlížečů poskytovaných EE jsou dostupné EE při dodání produktu.  
-  
-## <a name="see-also"></a>Viz také:  
- [Komponenty ladicího programu](../../extensibility/debugger/debugger-components.md)   
- [Chyba při vyhodnocování výrazu](../../extensibility/debugger/expression-evaluator.md)   
- [Ladicí stroj](../../extensibility/debugger/debug-engine.md)   
- [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)   
- [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)   
- [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
+Typ vizualizéru je komponenta, která zobrazuje část dat v určitém formátu. Formát je zcela až který implementuje vizualizéru, už to koncového uživatele nebo jiného dodavatele vizualizéry.
+
+ Vlastní prohlížeč je součástí Chyba při vyhodnocování vlastní výraz, který zobrazuje část dat v určitém formátu. Tento formát je zcela v kompetenci implementátora vlastní prohlížeč, což znamená, že formát až implementátora vyhodnocovací filtr výrazů (EE).
+
+## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>Podpora pro vizualizérů typů v vyhodnocovače výrazů
+ EE podporuje vizualizérů typů podporuje sadu rozhraní, které jsou přístupné pro vizualizátory: rozhraní, jako například [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) a [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Ale EE nezodpovídá za implementace vizualizér typů samotné: EE pouze umožňuje vizualizéry externí přístup k jeho informace o typu. Takové vizualizéry může dodávaná EE a nainstalovaný na příslušné místo v sadě Visual Studio, zadán pomocí jiného dodavatele třetích stran nebo dokonce koncovým uživatelem.
+
+## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Podpora vlastních prohlížečů v vyhodnocovače výrazů
+ EE může také podporovat vlastních prohlížečů, ve kterých EE samotné poskytuje kód pro zobrazení datového typu. Implementuje vlastní prohlížeč [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) požadované rozhraní, která zpracovává všechny úkoly zobrazovat data v libovolné formát; prohlížeč má plnou kontrolu nad zobrazením a dokonce můžete nechat data upravit. Žádné vlastních prohlížečů poskytovaných EE jsou dostupné EE při dodání produktu.
+
+## <a name="see-also"></a>Viz také:
+- [Komponenty ladicího programu](../../extensibility/debugger/debugger-components.md)
+- [Chyba při vyhodnocování výrazu](../../extensibility/debugger/expression-evaluator.md)
+- [Ladicí stroj](../../extensibility/debugger/debug-engine.md)
+- [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)
+- [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)
+- [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

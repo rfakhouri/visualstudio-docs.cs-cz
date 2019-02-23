@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3967dc1b324c2dd73de4797588159d745ae24756
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315713"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695983"
 ---
 # <a name="get-a-port"></a>Získání portu
 Port představuje připojení k počítači, na kterém běží procesů. Tento počítač může být v místním počítači nebo vzdáleného počítače (který může potenciálně být bez Windows-based operační systém, najdete v článku [porty](../../extensibility/debugger/ports.md) Další informace).
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Registrace programu](../../extensibility/debugger/registering-the-program.md)  
-[Povolení ladění programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
-[Dodavatelé portů](../../extensibility/debugger/port-suppliers.md)  
-[Porty](../../extensibility/debugger/ports.md)
+- [Registrace programu](../../extensibility/debugger/registering-the-program.md)
+- [Povolení ladění programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Dodavatelé portů](../../extensibility/debugger/port-suppliers.md)
+- [Porty](../../extensibility/debugger/ports.md)

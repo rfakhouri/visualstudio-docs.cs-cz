@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adb7e86f2b14dd25fa333fe54cc5121bbc8c1f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012492"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693448"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Soubory s výpisem paměti v ladicím programu sady Visual Studio
 
-<a name="BKMK_What_is_a_dump_file_"></a> A *soubor s výpisem paměti* je snímek, který popisuje proces, která byla spuštěna a moduly, které byly načteny pro aplikace v bodě v čase. Výpis paměti s informacemi o haldě také obsahují i snímek paměti aplikace v daném okamžiku. 
+<a name="BKMK_What_is_a_dump_file_"></a> A *soubor s výpisem paměti* je snímek, který popisuje proces, která byla spuštěna a moduly, které byly načteny pro aplikace v bodě v čase. Výpis paměti s informacemi o haldě také obsahují i snímek paměti aplikace v daném okamžiku.
 
 Otevřete soubor s výpisem paměti s haldou v sadě Visual Studio je něco jako je zastavení na zarážce v ladicí relaci. Ačkoli nelze pokračovat v provádění, můžete zkoumat zásobníky, vlákna a proměnné hodnoty aplikace v okamžiku výpisu paměti.
 
-Výpisy paměti se nejčastěji používají pro ladění problémů z počítače, které vývojářům nemají přístup k. Soubor s výpisem paměti z počítače zákazníka můžete použít, když nelze reprodukovat zhroucení nebo zablokování, na svém počítači. Testerům vytvářet také výpisy stavu uložit zhroucení nebo zablokování, data se mají použít pro další testování. 
+Výpisy paměti se nejčastěji používají pro ladění problémů z počítače, které vývojářům nemají přístup k. Soubor s výpisem paměti z počítače zákazníka můžete použít, když nelze reprodukovat zhroucení nebo zablokování, na svém počítači. Testerům vytvářet také výpisy stavu uložit zhroucení nebo zablokování, data se mají použít pro další testování.
 
 Ladicí program Visual Studio může uložit soubory s výpisem paměti pro spravovaný nebo nativní kód. To můžete ladit soubory výpisu stavu systému vytvořené pomocí sady Visual Studio nebo jinými aplikacemi, které ukládají soubory ve *s minimálním výpisem* formátu.
 
@@ -55,23 +55,23 @@ Ladicí program Visual Studio může uložit soubory s výpisem paměti pro spra
 
 Soubory s výpisem paměti může nebo nemusí mít informace o haldě.
 
--   **Soubory s haldou výpisu paměti** obsahují snímek paměti aplikace, včetně hodnot proměnných, v okamžiku výpisu paměti. Visual Studio také ukládá binární verze načtených nativních modulů v souboru s výpisem paměti s haldou, což může být ladění mnohem snazší. Visual Studio můžete načíst symboly z soubor s výpisem paměti s haldou, i v případě, že aplikace nemůže najít binární. 
+-   **Soubory s haldou výpisu paměti** obsahují snímek paměti aplikace, včetně hodnot proměnných, v okamžiku výpisu paměti. Visual Studio také ukládá binární verze načtených nativních modulů v souboru s výpisem paměti s haldou, což může být ladění mnohem snazší. Visual Studio můžete načíst symboly z soubor s výpisem paměti s haldou, i v případě, že aplikace nemůže najít binární.
 
 -   **Výpis paměti bez haldy soubory** jsou mnohem menší než výpisů paměti s haldou, ale ladicí program musí načíst binární soubory aplikace k nalezení informací o symbolu. Načíst binární soubory musí přesně odpovídat těm, které jsou během vytváření s výpisem paměti. Soubory s výpisem paměti bez haldy uložit hodnoty proměnných zásobníku pouze.
 
 ##  <a name="BKMK_Create_a_dump_file"></a> Vytvoření souboru výpisu paměti
 
-Při ladění procesu v sadě Visual Studio, můžete uložit výpis paměti, když ladicí program zastaví na výjimce nebo zarážku. 
+Při ladění procesu v sadě Visual Studio, můžete uložit výpis paměti, když ladicí program zastaví na výjimce nebo zarážku.
 
 S [ladění za běhu](../debugger/just-in-time-debugging-in-visual-studio.md) povolená, můžete připojit ladicí program sady Visual Studio k neúspěšnému procesu mimo sadu Visual Studio a následně uložit soubor s výpisem paměti z ladicího programu. Zobrazit [připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 **Uložte soubor s výpisem paměti:**
 
-1. Při zastavení na chybu nebo zarážce při ladění, vyberte **ladění** > **uložit výpis paměti jako**. 
+1. Při zastavení na chybu nebo zarážce při ladění, vyberte **ladění** > **uložit výpis paměti jako**.
 
 1. V **uložit výpis paměti jako** dialogovém okně **uložit jako typ**vyberte **s minimálním výpisem** nebo **minimální výpis s haldou** (výchozí).
 
-1. Vyhledejte cestu a název souboru s výpisem paměti vyberte a pak vyberte **Uložit**. 
+1. Vyhledejte cestu a název souboru s výpisem paměti vyberte a pak vyberte **Uložit**.
 
 >[!NOTE]
 >Můžete vytvořit soubory s výpisem paměti pomocí libovolného programu, který podporuje formát minimálního výpisu Windows. Například **Procdump** nástroj příkazového řádku z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) můžete vytvořit soubory s výpisem paměti při selhání procesu na základě aktivační události nebo na vyžádání. Zobrazit [požadavky a omezení](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) informace o použití jiných nástrojů pro vytváření souborů s výpisem paměti.
@@ -99,7 +99,7 @@ Používat úplné funkce na soubor s výpisem paměti ladění sady Visual Stud
 - *.Exe* a *PDB* soubory, které přesně odpovídají verzi a sestavení soubory výpisu paměti vytváření.
 - Zdrojové soubory pro příslušné moduly. Pokud nemůžete najít zdrojové soubory, můžete použít zpětného překladu modulů.
 
-Pokud je výpis paměti haldy data, Visual Studio se může vypořádat s chybějícími binárními soubory pro některé moduly, ale musí mít binární soubory pro dostatek modulů, chcete-li vygenerovat platné zásobníky volání. 
+Pokud je výpis paměti haldy data, Visual Studio se může vypořádat s chybějícími binárními soubory pro některé moduly, ale musí mít binární soubory pro dostatek modulů, chcete-li vygenerovat platné zásobníky volání.
 
 ### <a name="search-paths-for-exe-files"></a>Cesty hledání pro soubory .exe
 

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318742"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680469"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Změny v rozšíření sady Visual Studio 2017
 
@@ -103,6 +103,6 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
 ### <a name="reacting-to-this-breaking-change"></a>Reakce na tento zásadní změna
 
 * Pro účely Bezregistrační aktivace komponent COM také mají být převedeny externí kód.
-* Externí komponenty můžete vyhledat umístění sady Visual Studio [podle pokynů tady](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
+* Externí komponenty můžete vyhledat umístění sady Visual Studio [podle pokynů tady](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Doporučujeme použít externí komponenty [externí prostřednictvím Správce nastavení](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) místo čtení/zápis přímo na klíče registru sady Visual Studio.
 * Zkontrolujte, jestli komponenty, které používá vaše rozšíření může implementovat další techniku pro registraci. Rozšíření ladicího programu může být například moct využívat nové [msvsmon registrace modelu COM soubor JSON](migrate-debugger-COM-registration.md).

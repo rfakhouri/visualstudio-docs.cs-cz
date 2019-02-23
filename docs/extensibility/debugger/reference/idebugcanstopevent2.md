@@ -1,7 +1,7 @@
 ---
 title: IDebugCanStopEvent2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCanStopEvent2
 helpviewer_keywords:
@@ -12,50 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2609ca6cdf06117da56572c3574426a6d68c9178
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 012440e03208fab6bc2cde8814781f7b3a64f79d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987944"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682099"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
-Toto rozhraní umožňuje požádat správce ladění relace (SDM), jestli se má zastavit na aktuální umístění v kódu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugCanStopEvent2 : IUknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Ladicí stroj (DE) implementuje toto rozhraní pro podporu procházení zdrojového kódu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musí implementovat rozhraní na stejný objekt jako toto rozhraní (SDM používá [QueryInterface](/cpp/atl/queryinterface) přístup `IDebugEvent2` rozhraní).  
-  
- Implementace tohoto rozhraní musí komunikovat SDM volání [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) k ladicímu stroji. Například to lze provést pomocí zprávy odeslané na zpracování vlákna zprávy ladicímu stroji nebo objekt implementující toto rozhraní může obsahovat odkaz na ladicí stroj a zpětné volání do ladicího stroje s příznakem předaná do `IDebugCanStopEvent2::CanStop`.  
-  
-## <a name="notes-for-callers"></a>Poznámky pro volající  
- DE odeslat, že tato metoda pokaždé, když je DE se zobrazí výzva, chcete-li pokračovat v provádění a DE je krokování kódu. Tato událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) poskytnutých SDM při připojení k laděnému programu funkce zpětného volání.  
-  
-## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- V následující tabulce jsou uvedeny metody objektu `IDebugCanStopEvent2`.  
-  
-|Metoda|Popis|  
-|------------|-----------------|  
-|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Získá důvod pro tuto událost.|  
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Určuje, zda by měl laděnému programu zastavit v umístění této události (a odeslat událost, která popisuje důvody, proč zastavení) nebo pouze pokračování v provádění.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Získá kontext dokumentu, který popisuje umístění této události.|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Získá kontext kódu, který popisuje umístění této události.|  
-  
-## <a name="remarks"></a>Poznámky  
- DE odešle toto rozhraní, pokud uživatel kroky do funkce a DE najde žádné ladicí informace nebo informace o ladění existuje, ale DE neví, pokud pro toto umístění můžete zobrazit zdrojový kód.  
-  
-## <a name="requirements"></a>Požadavky  
- Záhlaví: msdbg.h  
-  
- Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
-  
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+Toto rozhraní umožňuje požádat správce ladění relace (SDM), jestli se má zastavit na aktuální umístění v kódu.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugCanStopEvent2 : IUknown
+```
+
+## <a name="notes-for-implementers"></a>Poznámky pro implementátory
+ Ladicí stroj (DE) implementuje toto rozhraní pro podporu procházení zdrojového kódu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musí implementovat rozhraní na stejný objekt jako toto rozhraní (SDM používá [QueryInterface](/cpp/atl/queryinterface) přístup `IDebugEvent2` rozhraní).
+
+ Implementace tohoto rozhraní musí komunikovat SDM volání [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) k ladicímu stroji. Například to lze provést pomocí zprávy odeslané na zpracování vlákna zprávy ladicímu stroji nebo objekt implementující toto rozhraní může obsahovat odkaz na ladicí stroj a zpětné volání do ladicího stroje s příznakem předaná do `IDebugCanStopEvent2::CanStop`.
+
+## <a name="notes-for-callers"></a>Poznámky pro volající
+ DE odeslat, že tato metoda pokaždé, když je DE se zobrazí výzva, chcete-li pokračovat v provádění a DE je krokování kódu. Tato událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) poskytnutých SDM při připojení k laděnému programu funkce zpětného volání.
+
+## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí
+ V následující tabulce jsou uvedeny metody objektu `IDebugCanStopEvent2`.
+
+|Metoda|Popis|
+|------------|-----------------|
+|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Získá důvod pro tuto událost.|
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Určuje, zda by měl laděnému programu zastavit v umístění této události (a odeslat událost, která popisuje důvody, proč zastavení) nebo pouze pokračování v provádění.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Získá kontext dokumentu, který popisuje umístění této události.|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Získá kontext kódu, který popisuje umístění této události.|
+
+## <a name="remarks"></a>Poznámky
+ DE odešle toto rozhraní, pokud uživatel kroky do funkce a DE najde žádné ladicí informace nebo informace o ladění existuje, ale DE neví, pokud pro toto umístění můžete zobrazit zdrojový kód.
+
+## <a name="requirements"></a>Požadavky
+ Záhlaví: msdbg.h
+
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
+
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Viz také
+- [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 809e84981bc491a89f8e031f5ac8caf497c1a6e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001966"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690523"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Nastavení stránek vlastností pro webové projekty
-Můžete změnit nastavení vlastností pro konfiguraci ladění webu v **stránky vlastností** dialogové okno, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.  
-  
+Můžete změnit nastavení vlastností pro konfiguraci ladění webu v **stránky vlastností** dialogové okno, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.
+
 ### <a name="start-options-category"></a>Kategorie možností spuštění
-  
+
 | **Nastavení** | **Popis** |
 | - | - |
 | **Spustit akci** | Pod nadpisem, že možnosti skupiny vztahuje k spuštění aplikace. |
@@ -51,6 +51,6 @@ Můžete změnit nastavení vlastností pro konfiguraci ladění webu v **strán
 | **Ladění nativního kódu** | Umožňuje ladit volání nativního (nespravovaného) kódu Win32 z vaší spravované aplikace. |
 | **Ladění SQL serveru** | Umožňuje ladění objektů databáze systému SQL Server. |
 | **Ladění aplikací Silverlight** | Umožňuje ladit z komponent technologie Silverlight. |
-  
-## <a name="see-also"></a>Viz také  
- [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>Viz také
+- [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)

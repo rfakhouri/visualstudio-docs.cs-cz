@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970826"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700260"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 
-**Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **Nástroje / možnosti**a pak vyberete **prostředí / písma a barvy**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.
+**Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **nástroje** > **možnosti**a pak vyberete **prostředí** > **písma a Barvy**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.
 
 Barevné schéma změny se projeví během relace, ve kterém je provedete. Změny barev můžete vyhodnotit otevřením jiná instance sady Visual Studio a vytváření podmínky, za kterých očekáváte, že vaše změny se můžou použít.
 
@@ -63,7 +63,13 @@ Obsahuje seznam všech prvků uživatelského rozhraní, pro které můžete zm�
 
 -   **Písmo prostředí**
 
-     Mění styl písma a velikost pro všechny prvky uživatelského rozhraní IDE, které ještě nemají samostatnou možností v **zobrazit nastavení pro.** Například tato možnost se vztahuje na **úvodní stránka** ale nebude mít vliv **výstup** okna.
+     Mění styl písma a velikost pro všechny prvky uživatelského rozhraní IDE, které ještě nemají samostatnou možností v **zobrazit nastavení pro**.
+
+     ::: moniker range="vs-2017"
+
+     Například tato možnost se vztahuje na **úvodní stránka** , ale nemá vliv **výstup** okna.
+
+     ::: moniker-end
 
 -   **[Všechny textový nástroj Windows]**
 

@@ -1,18 +1,18 @@
 ---
 title: Tipy pro vyšší produktivitu
-ms.date: 11/04/2016
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860583dffd4076db9c4c4660928b75419bd36218
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913025"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702717"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu sady Visual Studio
 
@@ -66,11 +66,13 @@ Můžete hledat v prostředí IDE pro příkazy, soubory a možnosti, kromě fil
 
 - **Zobrazit pouze chyby, které chcete na adresu**. Pokud se rozhodnete **filtr** tlačítko **seznam chyb** nástrojů, můžete snížit počet chyb, které se zobrazují v **seznam chyb** okno. Můžete zobrazit pouze chyby v souborech, které jsou otevřeny v editoru, pouze chyby v aktuálním souboru, nebo pouze chyby v aktuálním projektu. Můžete také hledat v rámci **seznam chyb** okno najít konkrétní chyby.
 
-- **Vyhledejte dialogová okna, příkazy nabídky a možnosti**. V [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) zadejte klíčová slova nebo fráze pro položky, které se snažíte najít. Například se zobrazí následující možnosti, pokud zadáte `new project`:
+- **Vyhledejte dialogová okna, příkazy nabídky a možnosti**. V [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) vyhledávací pole, zadejte klíčová slova nebo fráze pro položky, které se snažíte najít. Například se zobrazí následující možnosti, pokud zadáte `new project`:
 
     ![Rychlé spuštění výsledky pro "nový projekt.](../ide/media/productivity_quicklaunch.png)
 
     **Snadné spuštění** zobrazuje odkazy na **nový projekt** dialogovém okně **přidat novou položku** dialogovém okně a **projekty a řešení** stránku **Možnosti** dialogové okno, mimo jiné. Rychlé výsledky spuštění můžete také obsahovat soubory projektů a okna nástrojů.
+
+  **Snadné spuštění** vyhledávacího pole se zobrazí v pravém horním rohu integrovaného vývojového prostředí. (Nebo stisknout **Ctrl**+**Q** k němu přistupovat.)
 
 ## <a name="debug-code"></a>Ladění kódu
 

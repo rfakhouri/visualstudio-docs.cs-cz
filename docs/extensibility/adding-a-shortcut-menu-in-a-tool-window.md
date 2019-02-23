@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316324"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681475"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Přidat místní nabídku v panelu nástrojů
 Tento názorný postup vloží nabídku v panelu nástrojů. Místní nabídka je nabídka, která se zobrazí, když uživatel klepne pravým tlačítkem na tlačítko, textového pole nebo pozadí okna. Příkazy v místní nabídce se chová stejně jako příkazy na jiné nabídky nebo panely nástrojů. Pro podporu místní nabídky, zadejte ho *.vsct* souborů a zobrazit je v reakci na klikněte pravým tlačítkem myši.
@@ -277,5 +277,5 @@ Místní nabídky, jako je uvedena v tomto návodu umožňuje uživateli vybrat 
 4. Klepněte na požadovanou barvu v místní nabídce. Na vybraném barevném změňte barvu pozadí okna nástrojů.
 
 ## <a name="see-also"></a>Viz také:
-[Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Používání a poskytování služeb](../extensibility/using-and-providing-services.md)
+- [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Používání a poskytování služeb](../extensibility/using-and-providing-services.md)

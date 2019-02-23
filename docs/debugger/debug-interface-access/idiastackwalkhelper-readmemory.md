@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc89ad289d27579a81e7bbe869aab14e152bd6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611019"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694462"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Čte blok dat z ke spustitelnému souboru bitové kopie v paměti.
@@ -52,7 +52,8 @@ HRESULT readMemory( 
 [out] Vrátí počet bajtů ve skutečnosti číst. Pokud `pbData` je `NULL`, pak toto je celkový počet bajtů dat, které jsou k dispozici.
 
  `pbData`
-- [out v] Vyrovnávací paměť je vyplní paměti čtení.
+
+[out v] Vyrovnávací paměť je vyplní paměti čtení.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6cef8a962e9622c5b1c1c3cc1513fb38c343000
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0007d1ad1e87b2e1f2d34b039b4105bb525578a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999220"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690055"
 ---
 # <a name="how-to-control-messages-view"></a>Postupy: Řízení zobrazení zpráv
-Pomocí nástroje Spy ++, budete mít významnou kontrolu nad obsah [zobrazení zpráv](../debugger/messages-view.md) okna. Je možné [spouští a zastavují](../debugger/how-to-start-and-stop-the-message-log-display.md) zobrazování zpráv v okamžiku a můžete zadat:  
-  
-- Typy zpráv, které chcete zobrazit.  
-  
-- Windows, které chcete monitorovat.  
-  
-- Formát zobrazení zpráv řádky.  
-  
-  Tato nastavení jsou k dispozici [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md), a použijí pouze na aktivním [zobrazení zpráv](../debugger/messages-view.md) okna. Chcete-li otevřít toto dialogové okno, zvolte **zprávy protokolu** z **Spy** nabídky.  
-  
+Pomocí nástroje Spy ++, budete mít významnou kontrolu nad obsah [zobrazení zpráv](../debugger/messages-view.md) okna. Je možné [spouští a zastavují](../debugger/how-to-start-and-stop-the-message-log-display.md) zobrazování zpráv v okamžiku a můžete zadat:
+
+- Typy zpráv, které chcete zobrazit.
+
+- Windows, které chcete monitorovat.
+
+- Formát zobrazení zpráv řádky.
+
+  Tato nastavení jsou k dispozici [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md), a použijí pouze na aktivním [zobrazení zpráv](../debugger/messages-view.md) okna. Chcete-li otevřít toto dialogové okno, zvolte **zprávy protokolu** z **Spy** nabídky.
+
   Jsou k dispozici tři podokna s kartami možností zprávy. Další informace najdete v tématu [karta Windows, dialogové okno možností zpráv](../debugger/windows-tab-message-options-dialog-box.md), [karta zprávy, dialogové okno možností zpráv](../debugger/messages-tab-message-options-dialog-box.md), a [karta výstup, dialogové okno možností zpráv](../debugger/output-tab-message-options-dialog-box.md).

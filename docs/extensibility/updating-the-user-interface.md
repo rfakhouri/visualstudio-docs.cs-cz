@@ -11,45 +11,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f492a7d5c42fc18ac2a5516d4549a024d37b7d1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a39c92e60cc1d7e2c7cb02b2e16c59d653db2c8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981828"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678212"
 ---
 # <a name="updating-the-user-interface"></a>Aktualizace uživatelského rozhraní
-Po implementaci příkazu můžete přidat kód pro aktualizaci uživatelského rozhraní se stavem nové příkazy.  
-  
- V typické aplikaci Win32 nepřetržitě testují sadu příkazů a stav jednotlivých příkazech je možné upravit, jak je uživatel zobrazit. Ale vzhledem k tomu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prostředí můžete hostovat neomezený počet rozšíření VSPackages, rozsáhlé dotazování může snížit rychlost odezvy, zejména dotazování napříč sestavení vzájemné spolupráce mezi spravovaným kódem a modelu COM.  
-  
-### <a name="to-update-the-ui"></a>Aktualizace uživatelského rozhraní  
-  
-1.  Proveďte jeden z následujících kroků:  
-  
-    -   Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> metody.  
-  
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Rozhraní můžete získat <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> služby následujícím způsobem.  
-  
-        ```csharp  
-        void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)  
-        {  
-            IVsUIShell vsShell = (IVsUIShell)sp.GetService(typeof(IVsUIShell));  
-            if (vsShell != null)  
-            {  
-                int hr = vsShell.UpdateCommandUI(0);  
-                Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(hr);  
-            }  
-        }  
-  
-        ```  
-  
-         Pokud parametr <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> zbývá nenulový (`TRUE`), pak aktualizace je provedena synchronně a okamžitě. Doporučujeme vám, že předáte nula (`FALSE`) pro tento parametr, který pomáhá zajistit dobrý výkon. Pokud chcete zabránit ukládání do mezipaměti, použijte `DontCache` příznak při vytváření příkazu v souboru .vsct. Nicméně, použijte příznak s rozvahou nebo se může snížit výkon. Další informace o příznaků příkazů najdete v článku [Command Flag – Element](../extensibility/command-flag-element.md) dokumentaci.  
-  
-    -   V balíčcích VSPackage, která hostování ovládacího prvku ActiveX s použitím modelu aktivace na místě v okně, může být vhodnější použít <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> metody. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> Metoda ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> rozhraní a <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> metodu <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> rozhraní jsou funkčně ekvivalentní. Oba způsobují prostředí tak, aby znovu odeslán dotaz na stav všech příkazů. Obvykle aktualizace nebude provedena okamžitě. Místo toho je aktualizace odložena až do doby nečinnosti. Prostředí ukládá do mezipaměti stav příkazu, který pomáhá zajistit dobrý výkon. Pokud chcete zabránit ukládání do mezipaměti, použijte `DontCache` příznak při vytváření příkazu v souboru .vsct. Však použijte příznak opatrně, protože může dojít ke snížení výkonu.  
-  
-         Všimněte si, že můžete získat <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> rozhraní voláním `QueryInterface` metodu <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> objektu nebo za získání rozhraní z <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> služby.  
-  
-## <a name="see-also"></a>Viz také  
- [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Implementace](../extensibility/internals/command-implementation.md)
+Po implementaci příkazu můžete přidat kód pro aktualizaci uživatelského rozhraní se stavem nové příkazy.
+
+ V typické aplikaci Win32 nepřetržitě testují sadu příkazů a stav jednotlivých příkazech je možné upravit, jak je uživatel zobrazit. Ale vzhledem k tomu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prostředí můžete hostovat neomezený počet rozšíření VSPackages, rozsáhlé dotazování může snížit rychlost odezvy, zejména dotazování napříč sestavení vzájemné spolupráce mezi spravovaným kódem a modelu COM.
+
+### <a name="to-update-the-ui"></a>Aktualizace uživatelského rozhraní
+
+1.  Proveďte jeden z následujících kroků:
+
+    -   Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> metody.
+
+         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Rozhraní můžete získat <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> služby následujícím způsobem.
+
+        ```csharp
+        void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)
+        {
+            IVsUIShell vsShell = (IVsUIShell)sp.GetService(typeof(IVsUIShell));
+            if (vsShell != null)
+            {
+                int hr = vsShell.UpdateCommandUI(0);
+                Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(hr);
+            }
+        }
+
+        ```
+
+         Pokud parametr <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> zbývá nenulový (`TRUE`), pak aktualizace je provedena synchronně a okamžitě. Doporučujeme vám, že předáte nula (`FALSE`) pro tento parametr, který pomáhá zajistit dobrý výkon. Pokud chcete zabránit ukládání do mezipaměti, použijte `DontCache` příznak při vytváření příkazu v souboru .vsct. Nicméně, použijte příznak s rozvahou nebo se může snížit výkon. Další informace o příznaků příkazů najdete v článku [Command Flag – Element](../extensibility/command-flag-element.md) dokumentaci.
+
+    -   V balíčcích VSPackage, která hostování ovládacího prvku ActiveX s použitím modelu aktivace na místě v okně, může být vhodnější použít <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> metody. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> Metoda ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> rozhraní a <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> metodu <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> rozhraní jsou funkčně ekvivalentní. Oba způsobují prostředí tak, aby znovu odeslán dotaz na stav všech příkazů. Obvykle aktualizace nebude provedena okamžitě. Místo toho je aktualizace odložena až do doby nečinnosti. Prostředí ukládá do mezipaměti stav příkazu, který pomáhá zajistit dobrý výkon. Pokud chcete zabránit ukládání do mezipaměti, použijte `DontCache` příznak při vytváření příkazu v souboru .vsct. Však použijte příznak opatrně, protože může dojít ke snížení výkonu.
+
+         Všimněte si, že můžete získat <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> rozhraní voláním `QueryInterface` metodu <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> objektu nebo za získání rozhraní z <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> služby.
+
+## <a name="see-also"></a>Viz také
+- [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Implementace](../extensibility/internals/command-implementation.md)

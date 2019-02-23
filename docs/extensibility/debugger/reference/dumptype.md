@@ -1,7 +1,7 @@
 ---
 title: DUMPTYPE | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DUMPTYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c81d9c9f3f5dc6b0a849e405133b7ecef1e4e59b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412965"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697127"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Určuje, jak velká část stavu programu (například běžící vlákna, rámce zásobníku a aktuální adresa instrukce) pro výpis.
@@ -40,11 +40,9 @@ public enum enum_DUMPTYPE {
 ```
 
 ## <a name="members"></a>Členové
-DUMP_MINIDUMP  
-Určuje malý, compact s výpisem paměti.
+DUMP_MINIDUMP určuje malý, compact s výpisem paměti.
 
-DUMP_FULLDUMP  
-Určuje velké a kompletní výpis paměti.
+DUMP_FULLDUMP určuje velké a kompletní výpis paměti.
 
 ## <a name="remarks"></a>Poznámky
 Předán jako argument [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) metody.
@@ -57,5 +55,5 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Viz také
-[Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
+- [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

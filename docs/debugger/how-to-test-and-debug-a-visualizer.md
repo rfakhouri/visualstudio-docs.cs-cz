@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227129"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700442"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Postupy: Testování a ladění Vizualizéru
 Jakmile jste napsali vizualizéru, budete muset ladění a testování.
@@ -54,6 +54,6 @@ Snadný způsob, jak ladit vizualizéru je spustit vizualizéru z testu ovladač
     Podrobnější příklad naleznete v tématu [názorný postup: Zápis Vizualizéru v C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
 ## <a name="see-also"></a>Viz také
-[Návod: Zápis vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
-[Postupy: Instalace vizualizéru](../debugger/how-to-install-a-visualizer.md)  
-[Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)
+- [Návod: Zápis vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Postupy: Instalace vizualizéru](../debugger/how-to-install-a-visualizer.md)
+- [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)

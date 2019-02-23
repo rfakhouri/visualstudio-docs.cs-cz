@@ -14,50 +14,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8d317b5633fe94cc5d3a9933a4a698705998d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb327ad703c744f94970162f493cb61dffb8fac3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930654"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701066"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Chyba: Ověřování protokolu Kerberos se nezdařilo.
-Při pokusu provést vzdálené ladění, může se zobrazit následující chybová zpráva:  
-  
+Při pokusu provést vzdálené ladění, může se zobrazit následující chybová zpráva:
+
 ```cmd
-Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos authentication failed.  
-```  
-  
- K této chybě dochází, když Visual Studio Remote Debugging Monitor běží pod účtem místního systému nebo síťové služby. V rámci jednoho z těchto účtů musí vzdálený ladicí program navázat připojení ověřování protokol Kerberos ke komunikaci zpět na hostitelském počítači ladicího programu sady Visual Studio.  
-  
- Ověřování pomocí protokolu Kerberos není k dispozici za těchto podmínek:  
-  
-- Cílový počítač nebo hostitelský počítač ladicí program je v pracovní skupině místo domény  
-  
-   \- nebo –  
-  
-- Na řadiči domény se zakázalo protokolu Kerberos.  
-  
-  Pokud ověřování protokolu Kerberos není k dispozici, změňte účet, který se používá ke spuštění Visual Studio Remote Debugging Monitor. Tento postup, naleznete v tématu [Chyba: Služba Visual Studio Remote Debugger na cílovém počítači se nemůže připojit zpět k tomuto počítači](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
-  
-  Pokud oba počítače jsou připojené ke stejné doméně a zachovat si tuto zprávu, ověřte, že DNS v cílovém počítači správně překládá název hostitelského počítače ladicího programu. Viz následující postup.  
-  
-### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Chcete-li ověřit, že DNS v cílovém počítači správně překládá název hostitelského počítače ladicího programu  
-  
-1.  V cílovém počítači, otevřete **Start** nabídky, přejděte k **Příslušenství** a potom klikněte na tlačítko **příkazového řádku**.  
-  
-2.  V **příkazového řádku** okno, zadejte:  
-  
+Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos authentication failed.
+```
+
+ K této chybě dochází, když Visual Studio Remote Debugging Monitor běží pod účtem místního systému nebo síťové služby. V rámci jednoho z těchto účtů musí vzdálený ladicí program navázat připojení ověřování protokol Kerberos ke komunikaci zpět na hostitelském počítači ladicího programu sady Visual Studio.
+
+ Ověřování pomocí protokolu Kerberos není k dispozici za těchto podmínek:
+
+- Cílový počítač nebo hostitelský počítač ladicí program je v pracovní skupině místo domény
+
+   \- nebo –
+
+- Na řadiči domény se zakázalo protokolu Kerberos.
+
+  Pokud ověřování protokolu Kerberos není k dispozici, změňte účet, který se používá ke spuštění Visual Studio Remote Debugging Monitor. Tento postup, naleznete v tématu [Chyba: Služba Visual Studio Remote Debugger na cílovém počítači se nemůže připojit zpět k tomuto počítači](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+
+  Pokud oba počítače jsou připojené ke stejné doméně a zachovat si tuto zprávu, ověřte, že DNS v cílovém počítači správně překládá název hostitelského počítače ladicího programu. Viz následující postup.
+
+### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Chcete-li ověřit, že DNS v cílovém počítači správně překládá název hostitelského počítače ladicího programu
+
+1.  V cílovém počítači, otevřete **Start** nabídky, přejděte k **Příslušenství** a potom klikněte na tlačítko **příkazového řádku**.
+
+2.  V **příkazového řádku** okno, zadejte:
+
     ```cmd
-    ping <debugger_host_computer_name>  
-    ```  
-  
-3.  První řádek `ping` odpověď ukazuje úplný název počítače a IP adresu vrácenou funkcí DNS pro zadaný počítač.  
-  
-4.  Otevřete na hostitelském počítači ladicího programu **příkazového řádku** okna a spusťte `ipconfig`.  
-  
-5.  Porovnejte hodnoty IP adres.  
-  
-## <a name="see-also"></a>Viz také  
- [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Vzdálené ladění](../debugger/remote-debugging.md)
+    ping <debugger_host_computer_name>
+    ```
+
+3.  První řádek `ping` odpověď ukazuje úplný název počítače a IP adresu vrácenou funkcí DNS pro zadaný počítač.
+
+4.  Otevřete na hostitelském počítači ladicího programu **příkazového řádku** okna a spusťte `ipconfig`.
+
+5.  Porovnejte hodnoty IP adres.
+
+## <a name="see-also"></a>Viz také
+- [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Vzdálené ladění](../debugger/remote-debugging.md)

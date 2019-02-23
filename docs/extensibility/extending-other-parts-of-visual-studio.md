@@ -10,31 +10,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e742e2432596b4b31ecfcfc666a913076050cf06
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927837"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683045"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Rozšíření dalších částí sady Visual Studio
-Existuje mnoho více částí rozhraní Visual Studia, které můžete rozšířit. Tady vám ukážeme, můžete jen některé.  
-  
-## <a name="create-a-vspackage"></a>Vytvoření VSPackage  
- Základní stavební bloky rozšiřitelnosti sady Visual Studio se rozšíření VSPackages.  Zjistěte, jak přidat VSPackage: [Vytvoření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
-  
-## <a name="extend-the-toolbox"></a>Rozšíření sady nástrojů  
- Zjistěte, jak přidat nové ovládací prvky a další položky na panelu nástrojů a o tom, jak pomocí sady nástrojů funkce:  
-  
--   [Vytvoření ovládacího prvku panel nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
-  
--   [Vytvoření ovládacího prvku Windows Forms panel nástrojů](../extensibility/creating-a-windows-forms-toolbox-control.md)  
-  
-## <a name="extend-the-status-bar"></a>Rozšíření stavového řádku  
- Zjistěte, jak číst a zapisovat do stavového řádku a indikátor průběhu a jak poskytnout animací a dalších uživatelského rozhraní: [Rozšíření stavového řádku](../extensibility/extending-the-status-bar.md).  
-  
-## <a name="create-custom-start-pages"></a>Vytvořit vlastní úvodní stránky  
- Zjistěte, jak vytvořit vlastní úvodní stránky, od začátku nebo z ukázky ke stažení úvodní stránka: [Vytvořit vlastní úvodní stránky](../extensibility/creating-a-custom-start-page.md).  
-  
-## <a name="write-to-the-activity-log"></a>Zápis do protokolu aktivit  
- Další informace o zápisu do protokolu aktivit: [Postupy: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).
+
+Existuje mnoho více částí rozhraní Visual Studia, které můžete rozšířit. Tady vám ukážeme, můžete jen některé.
+
+## <a name="create-a-vspackage"></a>Vytvoření VSPackage
+
+Základní stavební bloky rozšiřitelnosti sady Visual Studio se rozšíření VSPackages.  Zjistěte, jak přidat VSPackage: [Vytvoření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+
+## <a name="extend-the-toolbox"></a>Rozšíření sady nástrojů
+
+Zjistěte, jak přidat nové ovládací prvky a další položky na panelu nástrojů a o tom, jak pomocí sady nástrojů funkce:
+
+-   [Vytvoření ovládacího prvku panel nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+
+-   [Vytvoření ovládacího prvku Windows Forms panel nástrojů](../extensibility/creating-a-windows-forms-toolbox-control.md)
+
+## <a name="extend-the-status-bar"></a>Rozšíření stavového řádku
+
+Zjistěte, jak číst a zapisovat do stavového řádku a indikátor průběhu a jak poskytnout animací a dalších uživatelského rozhraní: [Rozšíření stavového řádku](../extensibility/extending-the-status-bar.md).
+
+::: moniker range="vs-2017"
+
+## <a name="create-custom-start-pages"></a>Vytvořit vlastní úvodní stránky
+
+Zjistěte, jak vytvořit vlastní úvodní stránky, od začátku nebo z ukázky ke stažení úvodní stránka: [Vytvořit vlastní úvodní stránky](../extensibility/creating-a-custom-start-page.md).
+
+::: moniker-end
+
+## <a name="write-to-the-activity-log"></a>Zápis do protokolu aktivit
+
+Další informace o zápisu do protokolu aktivit: [Postupy: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).

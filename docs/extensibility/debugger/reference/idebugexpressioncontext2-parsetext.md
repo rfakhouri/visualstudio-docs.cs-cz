@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionContext2::ParseText | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionContext2::ParseText
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e3a368f95354ad96b761658b78778e153b21adb
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449644"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56677953"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analyzuje výrazu v textové podobě pro pozdější vyhodnocení.
@@ -47,23 +47,29 @@ int ParseText(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pszCode`  
-[in] Výraz, který má být analyzován.
+`pszCode`
 
-`dwFlags`  
-[in] Kombinace příznaků z [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) výčet, který řídí, analýza kódu.
+ [in] Výraz, který má být analyzován.
 
-`nRadix`  
-[in] Základ číselné soustavy, který se má použít při analýze všechny informace numerické `pszCode`.
+`dwFlags`
 
-`ppExpr`  
-[out] Vrátí [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objekt, který reprezentuje analyzovaný výraz, který je připravený pro vazby a hodnocení.
+ [in] Kombinace příznaků z [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) výčet, který řídí, analýza kódu.
 
-`pbstrError`  
-[out] Vrátí chybovou zprávu, pokud výraz obsahuje chybu.
+`nRadix`
 
-`pichError`  
-[out] Vrátí znakový index chyby v `pszCode` Pokud výraz obsahuje chybu.
+ [in] Základ číselné soustavy, který se má použít při analýze všechny informace numerické `pszCode`.
+
+`ppExpr`
+
+ [out] Vrátí [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objekt, který reprezentuje analyzovaný výraz, který je připravený pro vazby a hodnocení.
+
+`pbstrError`
+
+ [out] Vrátí chybovou zprávu, pokud výraz obsahuje chybu.
+
+`pichError`
+
+ [out] Vrátí znakový index chyby v `pszCode` Pokud výraz obsahuje chybu.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -123,8 +129,8 @@ HRESULT CEnvBlock::ParseText(
 ```
 
 ## <a name="see-also"></a>Viz také
-[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)  
-[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)  
-[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)  
-[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)  
-[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
+- [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
+- [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)
+- [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
+- [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

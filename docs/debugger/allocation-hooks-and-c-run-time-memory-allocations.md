@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f7f81abd82857b3d9ed2161a6923a79b614bf5a
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 1840f6f5650b3491cf7898c1d8d6a6fcae19f906
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742398"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682840"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Háky přidělení a přidělení běhové paměti jazyka C
 Je velmi důležité omezení funkce háku přidělení, že se musí explicitně Ignorovat `_CRT_BLOCK` bloky. Tyto bloky jsou přidělení paměti provedené interně funkcemi knihovny run-time jazyka C, je-li využívají volání funkcí knihovny run-time jazyka C, které přidělit vnitřní paměti. Můžete ignorovat `_CRT_BLOCK` bloky zahrnutím následujícího kódu na začátku přidělení funkci připojení:
@@ -40,4 +40,4 @@ Pokud vaše háku přidělení nebude ignorovat `_CRT_BLOCK` blokuje, pak všech
 Když si zblízka zdrojové soubory knihovny run-time, uvidíte, že funkci, výchozí přidělení připojení **CrtDefaultAllocHook** (které jednoduše vrátí **TRUE**), se nachází v samostatném souboru své vlastní, DBGHOOK. C. Pokud chcete, aby vaše háku přidělení volat i pro přidělení provedených za běhu spouštěcí kód, který se spouští před vaší aplikace **hlavní** funkce, můžete nahradit výchozí funkci svůj vlastní místo pomocí [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
 
 ## <a name="see-also"></a>Viz také
-[Zápis funkce volání pro ladění](../debugger/debug-hook-function-writing.md)
+- [Zápis funkce volání pro ladění](../debugger/debug-hook-function-writing.md)
