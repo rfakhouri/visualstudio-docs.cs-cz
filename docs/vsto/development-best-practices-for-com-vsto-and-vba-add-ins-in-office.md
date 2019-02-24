@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e91cd3e976f2ce4a32b2657d7e3667dae4d80d7b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875781"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643571"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Osvědčené postupy při vývoji pro modelu COM, VSTO a VBA doplňky sady Office
   Pokud vyvíjíte modelu COM, VSTO nebo VBA doplňky pro Office, dodržujte doporučené postupy vývoje popsaných v tomto článku.   To vám pomůže zajistit:
@@ -25,25 +25,25 @@ ms.locfileid: "54875781"
 -  Menší složitost nasazení doplňku pro uživatele a správce IT.
 -  Nežádoucí selhání instalace nebo modulu runtime vašeho doplňku nedojde.
 
->Poznámka: Použití [přemostění na Desktop](/windows/uwp/porting/desktop-to-uwp-root) Příprava vašeho modelu COM, VSTO nebo VBA doplněk pro Windows Store se nepodporuje. Doplňky modelu COM, VSTO a VBA nelze distribuovat ve Windows Store nebo Office Store. 
-  
-## <a name="do-not-check-for-office-during-installation"></a>Nezaškrtávejte políčko pro Office v průběhu instalace  
- Nedoporučujeme s váš doplněk zjištění instalovaného Office během procesu instalace doplňku. Pokud není nainstalovaný Office, můžete nainstalovat doplněk a uživatel bude mít přístup k po dokončení instalace Office. 
-  
-## <a name="use-embedded-interop-types-nopia"></a>Použití vestavěné typy spolupráce (NoPIA)  
+>Poznámka: Použití [přemostění na Desktop](/windows/uwp/porting/desktop-to-uwp-root) Příprava vašeho modelu COM, VSTO nebo VBA doplněk pro Windows Store se nepodporuje. Doplňky modelu COM, VSTO a VBA nelze distribuovat ve Windows Store nebo Office Store.
+
+## <a name="do-not-check-for-office-during-installation"></a>Nezaškrtávejte políčko pro Office v průběhu instalace
+ Nedoporučujeme s váš doplněk zjištění instalovaného Office během procesu instalace doplňku. Pokud není nainstalovaný Office, můžete nainstalovat doplněk a uživatel bude mít přístup k po dokončení instalace Office.
+
+## <a name="use-embedded-interop-types-nopia"></a>Použití vestavěné typy spolupráce (NoPIA)
 Pokud vaše řešení používá rozhraní .NET 4.0 nebo novější, použijte vložené typy spolupráce (NoPIA) místo v závislosti na Office primární spolupráce sestavení (PIA) redistributable. Pomocí vkládání typ zmenší velikost instalaci vašeho řešení a zajišťuje budoucí kompatibilitu. Office 2010 byl poslední verzi Office, dodávané PIA redistributable. Další informace najdete v tématu [názorný postup: Vložení informací o typu ze sestavení Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) a [ekvivalence typů a vestavěné typy spolupráce](/windows/uwp/porting/desktop-to-uwp-root).
 
 Pokud vaše řešení používá starší verzi rozhraní .NET, doporučujeme aktualizovat vaše řešení, aby používalo rozhraní .NET 4.0 nebo novější. Pomocí rozhraní .NET 4.0 nebo novější snižuje požadavky na modul runtime na novější verze systému Windows.
-  
-## <a name="avoid-depending-on-specific-office-versions"></a>Vyhněte se v závislosti na konkrétní verze sady Office  
+
+## <a name="avoid-depending-on-specific-office-versions"></a>Vyhněte se v závislosti na konkrétní verze sady Office
 Pokud vaše řešení používá funkce, které jsou k dispozici v novějších verzích Office, ověřte, zda funkce existuje (Pokud je to možné, na úrovni funkcí) za běhu (například používání výjimek zpracování nebo kontrolou verze). Ověřit minimální verze, místo konkrétních verzí, pomocí rozhraní API podporované v objektovém modelu, jako [Application.Version vlastnost](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Nedoporučujeme, protože ty můžete změnit mezi instalací, prostředí a verzí spoléhat na Office binární metadat instalačními cestami a klíče registru.
 
-## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Povolit používání 32bitová verze a 64bitová verze Office   
+## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Povolit používání 32bitová verze a 64bitová verze Office
 Výchozí cíl sestavení by měly podporovat (x86) 32bitové a 64bitové (x64), pokud vaše řešení závisí na knihovny, které jsou dostupné jenom pro konkrétní bitové verze. Přijetí, zejména v prostředích velký objem dat roste 64bitovou verzi systému Office. Podporuje 32bitové i 64bitové usnadňuje uživatelům přechod mezi 32bitové a 64bitové verze systému Office.
 
 Když píšete kód VBA, použití 64-bit deklarovat příkazy a převod proměnné podle potřeby. Dále ověřte, že dokumenty lze sdílet mezi uživateli, kteří používají 32bitové nebo 64bitové verze Office tím, že poskytuje kód pro každý bitové verze. Další informace najdete v tématu [64bitovým kompilátorem jazyka Visual Basic for applications – přehled](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
-## <a name="support-restricted-environments"></a>Podporu prostředí s omezeným přístupem   
+## <a name="support-restricted-environments"></a>Podporu prostředí s omezeným přístupem
 Vaše řešení, neměli byste potřebovat oprávnění správce nebo uživatel účtu ke zvýšení úrovně oprávnění. Kromě toho řešení neměl záviset na nastavení nebo změna:
 
 - Aktuální pracovní adresář.
@@ -57,7 +57,7 @@ Pokud řešení obsahuje doplněk a proces, který je externí pro Office, nepou
 Nastavte číslo verze binárních souborů ve vašem řešení a zvýší při každé z nich. To vám usnadní to pro uživatele k identifikování změn mezi verzemi a vyhodnotit kompatibilitu.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Poskytuje příkazy podpory pro nejnovější verze sady Office
-Zákazníci žádáme, nezávislým výrobcům softwaru poskytují příkazy podpory pro jejich modelu COM, VSTO a VBA doplňky, které běží v Office. Výpis explicitní podporu příkazy pomáhá zákazníkům pomocí Office 365 ProPlus pochopit připravenosti nástroje podpory. 
+Zákazníci žádáme, nezávislým výrobcům softwaru poskytují příkazy podpory pro jejich modelu COM, VSTO a VBA doplňky, které běží v Office. Výpis explicitní podporu příkazy pomáhá zákazníkům pomocí Office 365 ProPlus pochopit připravenosti nástroje podpory.
 
 Pokud chcete zadat příkazy podpory pro klientské aplikace Office (například Word nebo Excel), nejdříve ověřte, že poběží v aktuální verzi Office doplňky a poté potvrďte k poskytování aktualizací, pokud doplněk přestane fungovat v budoucí verzi. Nemáte k testování doplňky, když společnost Microsoft vydává nové sestavení nebo aktualizace Office. Microsoft mění jen zřídka rozšiřitelnosti platformy modelu COM, VSTO a VBA v Office a tyto změny budou dobře zdokumentovat.
 

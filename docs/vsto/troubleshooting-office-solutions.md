@@ -14,38 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3361a5c424c4d67ea0d0e6141be27f4bb2cf3c52
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 901df0b15f26624ecf2e9fca217cdc074913ceae
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869538"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614295"
 ---
 # <a name="troubleshoot-office-solutions"></a>Řešení potíží s řešení pro systém Office
-  Tato část obsahuje tipy pro řešení běžných problémů, které se mohou vyskytnout při vytváření řešení pomocí nástroje pro vývoj pro Office v sadě Visual Studio.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
- Popisuje běžné problémy, které mohou nastat při navrhování, spuštění a testování vašeho řešení pro systém Office v sadě Visual Studio.  
-  
- [Postupy: Opětovné povolení VSTO doplňku, který byl zakázán](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
- Popisuje, jak znovu povolit doplňku VSTO, který je pevně nebo obnovitelné zakázané.  
-  
- [Další podpora pro chyby v řešeních pro systém Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
- Popisuje další zdroje informací pro řešení potíží s chybami a upozorněními v řešeních pro systém Office.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Řešení potíží se zabezpečením řešení pro systém Office](../vsto/troubleshooting-office-solution-security.md)  
- Popisuje běžné problémy, které můžete narazit při práci s zabezpečení řešení pro Office.  
-  
- [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)  
- Popisuje běžné problémy, které se mohou vyskytnout při nasazení řešení Office.  
-  
- [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
- Obsahuje odkazy na informace o nasazení řešení, včetně otázky zabezpečení, stejně jako problémy, které je třeba zvážit při výběru modelu nasazení.  
-  
- [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)  
- Obsahuje témata, která popisují, jak začlenit řešení pro systém Office zabezpečení funkce dostupné v rozhraní .NET Framework.  
-  
- [Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)  
- Seznamy často nejčastější dotazy k programování řešení pro systém Office a obsahuje odkazy na témata, které pomohou vyřešit běžné problémy.  
+  Tato část obsahuje tipy pro řešení běžných problémů, které se mohou vyskytnout při vytváření řešení pomocí nástroje pro vývoj pro Office v sadě Visual Studio.
+
+## <a name="in-this-section"></a>V tomto oddílu
+- [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)
+
+ Popisuje běžné problémy, které mohou nastat při navrhování, spuštění a testování vašeho řešení pro systém Office v sadě Visual Studio.
+
+- [Postupy: Opětovné povolení VSTO doplňku, který byl zakázán](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
+
+ Popisuje, jak znovu povolit doplňku VSTO, který je pevně nebo obnovitelné zakázané.
+
+- [Další podpora pro chyby v řešeních pro systém Office](../vsto/additional-support-for-errors-in-office-solutions.md)
+
+ Popisuje další zdroje informací pro řešení potíží s chybami a upozorněními v řešeních pro systém Office.
+
+## <a name="related-sections"></a>Související oddíly
+- [Řešení potíží se zabezpečením řešení pro systém Office](../vsto/troubleshooting-office-solution-security.md)
+
+ Popisuje běžné problémy, které můžete narazit při práci s zabezpečení řešení pro Office.
+
+- [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)
+
+ Popisuje běžné problémy, které se mohou vyskytnout při nasazení řešení Office.
+
+- [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)
+
+ Obsahuje odkazy na informace o nasazení řešení, včetně otázky zabezpečení, stejně jako problémy, které je třeba zvážit při výběru modelu nasazení.
+
+- [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)
+
+ Obsahuje témata, která popisují, jak začlenit řešení pro systém Office zabezpečení funkce dostupné v rozhraní .NET Framework.
+
+- [Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)
+
+ Seznamy často nejčastější dotazy k programování řešení pro systém Office a obsahuje odkazy na témata, které pomohou vyřešit běžné problémy.
