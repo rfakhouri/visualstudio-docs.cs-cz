@@ -1,7 +1,7 @@
 ---
 title: Aktualizace síťové instalace
 description: Zjistěte, jak aktualizovat síťové instalace sady Visual Studio pomocí příkazu--rozložení
-ms.date: 08/14/2017
+ms.date: 2/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ba86dcfb1fb98d9ba88c06a8df2ea3a104ea4d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617285"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796631"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Aktualizace síťové instalace sady Visual Studio 2017
 
@@ -57,6 +57,10 @@ Pojďme si projít pár příkladů, jak vytvořit a pak aktualizujte rozložen�
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
+
+    > [!IMPORTANT]
+    > Operace aktualizace neinstaluje nově přidané volitelné součásti, i v případě, že zahrnují tyto součásti v sekci "Přidání" [soubor odpovědí](automated-installation-with-response-file.md). K tomu dochází, protože operace přidání se během aktualizace nepoužívá.<br>
+    > **Alternativní řešení**: Spusťte samostatnou změnu operaci po upgradu na chybějící součásti nainstalovat.
 
 * A konečně, tady je postup přidejte další úlohy a lokalizovaných bez aktualizace na verzi. (Tento příkaz přidá ASP.NET a webových úloh).  Managed Desktop, Azure a ASP.NET a webové úlohy jsou teď součástí toto rozložení. Jazykové prostředky pro angličtinu, němčinu a francouzštinu jsou také zahrnuté pro všechny tyto úlohy.  Rozložení však nebyl aktualizován na nejnovější dostupnou verzi, při spuštění tohoto příkazu. Zůstane na existující verze.
 

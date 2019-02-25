@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721820"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796748"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Písma a formátování pro Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Písmo prostředí
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>Písmo prostředí 375 % + světla
- **Zobrazí se jako:** 34 pt Segoe UI Light **použít pro:** (vzácného) jedinečné značky uživatelského rozhraní, jako je třeba v aplikaci Visual Studio 2017 úvodní stránky
 
- **Kódu procedury:** Kde `textBlock` je dříve definovaný TextBlock a `label` je dříve definovaný popisek:
+**Zobrazí se jako:** 34 pt Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**Použití:** (vzácného) jedinečné značky uživatelského rozhraní, jako je třeba z úvodní obrazovky
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Použití:** (vzácného) jedinečné obchodní značku uživatelského rozhraní
+
+::: moniker-end
+
+**Kódu procedury:** Kde `textBlock` je dříve definovaný TextBlock a `label` je dříve definovaný popisek:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** Nastavte styl TextBlock nebo popisku, jak je znázorněno.
+**XAML:** Nastavte styl TextBlock nebo popisku, jak je znázorněno.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>Písmo prostředí 310 % + světla
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**Použití:**<br /><br /> -Větší záhlaví v dialogových oknech podpis<br />– Nadpis hlavní sestava<br /><br /> **Proveďte:**<br /><br /> -Používejte velká písmena<br />-Vždy používejte lehký<br /><br /> **Ne:**<br /><br /> – Použijte pro uživatelské rozhraní než podpis uživatelského rozhraní, jako je například úvodní stránka<br />-Tučného písma, kurzívy nebo tučné, kurzíva<br />-Použití textu<br />– Použijte v oknech nástrojů|**Zobrazí se jako:** 28 pt Segoe UI Light<br /><br /> **Vizuální příklad:**<br /><br /> ![Příklad písmo prostředí 310 % &#43; světla záhlaví](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**Použití:**<br /><br /> -Větší záhlaví v dialogových oknech podpis<br />– Nadpis hlavní sestava<br /><br /> **Proveďte:**<br /><br /> -Používejte velká písmena<br />-Vždy používejte lehký<br /><br /> **Ne:**<br /><br /> – Použijte pro uživatelské rozhraní než podpis uživatelského rozhraní<br />-Tučného písma, kurzívy nebo tučné, kurzíva<br />-Použití textu<br />– Použijte v oknech nástrojů|**Zobrazí se jako:** 28 pt Segoe UI Light<br /><br /> **Vizuální příklad:**<br /><br /> ![Příklad písmo prostředí 310 % &#43; světla záhlaví](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>Písmo prostředí 200 % + Semilight
 

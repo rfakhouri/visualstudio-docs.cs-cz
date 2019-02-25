@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 377b80b27a8e28da86f89f011bb7047b553d894a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 84fe30f4bddc410f580ccd94250591027e0f9887
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634640"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796137"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Postupy: Použití proměnných prostředí v sestavení
 Při sestavování projektů, je často nutné nastavit možnosti sestavení pomocí informací, které nejsou v souboru projektu nebo soubory, které tvoří vašeho projektu. Tyto informace jsou obvykle uložená v proměnné prostředí.
@@ -63,6 +63,6 @@ Při sestavování projektů, je často nutné nastavit možnosti sestavení pom
 ```
 
 ## <a name="see-also"></a>Viz také:
-- [MSBuild ](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [Vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md)
 - [Postupy: Sestavení stejných zdrojových souborů s různými možnostmi](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

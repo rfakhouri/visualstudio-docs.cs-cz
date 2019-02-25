@@ -17,12 +17,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a2d5b587bd64b7cc07aa2b542a8d646a8885f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b30dc8ed9d277d2b7f1cbe8622b1b555659f3b14
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907422"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796462"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>ID pracovního vytížení a komponenta Visual Studio 2017
 
@@ -39,7 +39,7 @@ Klikněte na názvy edition v následující tabulce se zobrazí dostupné úloh
 | [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Product.WDExpress | Vytvářejte nativní a spravované aplikace jako WPF, WinForms a Win32 pomocí úprav kódu podle syntaxe, správy zdrojového kódu a správy pracovních položek. Zahrnuje podporu pro C#, Visual Basic a Visual C++. |
 | [Vizuální&nbsp;Studio sestavení&nbsp;nástroje&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umožňuje sestavovat nativní a spravované aplikace založené na MSBuild bez potřeby Visual Studio IDE. Existují možnosti pro instalaci kompilátory jazyka Visual C++ a knihovny MFC, ATL a C + +/ CLI podpory. |
 | [Vizuální&nbsp;Studio testu&nbsp;agenta&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Podporuje vzdálené spouštění automatizovaných a zátěžových testů |
-| [Vizuální&nbsp;Studio testu&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Rozdělení automatizovaných testů mezi více počítačů |
+| [Visual&nbsp;Studio Test&nbsp;Controller 2017](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Rozdělení automatizovaných testů mezi více počítačů |
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Vizuální&nbsp;Studio Feedback&nbsp;klienta&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 

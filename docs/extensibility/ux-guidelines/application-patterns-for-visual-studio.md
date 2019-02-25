@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690458"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796878"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modely aplikací pro sadu Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Okno interakce
@@ -128,10 +128,22 @@ Příklady oken nástrojů lze procházet seznam: v Průzkumníku řešení a v 
 
 **Jiné nástroje systému windows**
 
+::: moniker range="vs-2017"
+
 | Panel nástrojů | Funkce |
 | --- | --- |
 | Sada nástrojů | Okno nástroje sloužící k ukládání prvků, které budou umístěny na návrhové ploše, poskytování konzistentního zdroji přetažení pro profesionální návrháře využívající všechny. |
-| Úvodní stránka | Uživatele portálu sady Visual Studio 2017, s přístupem k informačním kanálům Novinky pro vývojáře, sady Visual Studio nápovědy a posledních projektů. Uživatelé mohou také vytvářet vlastní úvodní stránky tak, že zkopírujete soubor StartPage.xaml z "Common7\IDE\StartPages\" adresář programových souborů sady Visual Studio ke složce StartPages v sadě Visual Studio dokumenty, adresáře a pak buď úpravy XAML ručně nebo ho otevřít v sadě Visual Studio nebo jiného editoru kódu. |
+| Úvodní stránka | Uživatele portálu sady Visual Studio, s přístupem k informačním kanálům Novinky pro vývojáře, sady Visual Studio nápovědy a posledních projektů. Uživatelé mohou také vytvářet vlastní úvodní stránky tak, že zkopírujete soubor StartPage.xaml z "Common7\IDE\StartPages\" adresář programových souborů sady Visual Studio ke složce StartPages v sadě Visual Studio dokumenty, adresáře a pak buď úpravy XAML ručně nebo ho otevřít v sadě Visual Studio nebo jiného editoru kódu. |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| Panel nástrojů | Funkce |
+| --- | --- |
+| Sada nástrojů | Okno nástroje sloužící k ukládání prvků, které budou umístěny na návrhové ploše, poskytování konzistentního zdroji přetažení pro profesionální návrháře využívající všechny. |
+
+::: moniker-end
 
 **Ladicího programu nástroje systému windows**
 

@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920480"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796644"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 
@@ -28,13 +28,25 @@ Nemusíte znát C++ Chcete-li dokončit tento quickstart, ale měli byste se sez
 
 Sledovat, potřebujete kopii Visual Studio 2017 verze 15.3 nebo novější s **vývoj pro klientské počítače s C++** instalaci pracovního vytížení. Rychlý průvodce instalací, naleznete v [podpory instalace jazyka C++ v sadě Visual Studio](/cpp/build/vscpp-step-0-installation).
 
-## <a name="create-a-console-app"></a>Vytvoření aplikace konzoly
+## <a name="create-a-console-app"></a>Vytvoření konzolové aplikace
 
-Pokud ještě není spuštěna, spusťte aplikaci Visual Studio.
+Pokud ještě není spuštěný, otevřete Visual Studio.
+
+::: moniker range="vs-2017"
 
 ![Rozhraní IDE s Visual C&#43; &#43; nastavení](../ide/media/get-started-cpp-ide-layout.png)
 
 Po otevření sady Visual Studio se zobrazí tři základní části rozhraní IDE: nástroj oken, nabídek a panelů nástrojů a prostor hlavního okna. Nástroje systému windows jsou ukotveny na levé a pravé straně okna aplikace. **Snadné spuštění** pole, panelu nabídek a panelu nástrojů Standardní se nachází v horní. Obsahuje středu okna **úvodní stránku**. Při otevření řešení nebo projektu, na tomto místě zobrazí editory a návrháře. Když vyvíjíte aplikaci, je strávil většinu času v této centrální oblasti.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Po otevření sady Visual Studio **Start** okno se zobrazí jako první. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí.
+
+Zobrazí se vám tyto tři základní části rozhraní IDE: nástroj oken, nabídek a panelů nástrojů a prostor hlavního okna. Nástroje systému windows jsou ukotveny na levé a pravé straně okna aplikace. **Snadné spuštění** pole, panelu nabídek a panelu nástrojů Standardní se nachází v horní. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
+
+::: moniker-end
 
 Visual Studio používá *projekty* organizaci kódu pro aplikace, a *řešení* k uspořádání vašich projektů. Projekt obsahuje všechny možnosti, konfigurace a pravidla používaná k vytváření aplikací. Spravuje také vztah mezi všechny projektové soubory a soubory s externí. K vytvoření vaší aplikace, nejprve je třeba vytvořit nový projekt a řešení.
 

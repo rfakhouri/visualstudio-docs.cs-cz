@@ -1,7 +1,7 @@
 ---
 title: Řešení potíží s chybami sítě nebo proxy serveru
 description: Řešení chyby související s sítě nebo proxy, které můžete narazit při instalaci nebo používání sady Visual Studio za bránou firewall nebo proxy server.
-ms.date: 02/12/2018
+ms.date: 02/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c6996d01c46d832b051f8805bbe7f761c57ac5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f33351245d35ef025d98b3dcf1c2c325fa1ca802
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692343"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796481"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
 
@@ -63,6 +63,9 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu 
       ```
 
       Je třeba vložit adresu proxy serveru správná pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.
+
+     > [!NOTE]
+     > Další informace najdete v tématu [ &lt;defaultProxy&gt; – Element (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) a [ &lt;proxy&gt; – Element (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stránky.
 
   -OR-
 

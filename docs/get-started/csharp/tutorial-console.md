@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: acb2dfd88f9726442837656c2cf3e60c5f47397a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156069"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796774"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Kurz: Vytvořit jednoduchou C# konzolovou aplikaci v sadě Visual Studio
 
@@ -80,6 +80,7 @@ Začněme procvičili matematiku celé číslo v C#.
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. Zvolte **Kalkulačka** ke spuštění programu, nebo stiskněte klávesu **F5**.
 
    ![Klikněte na tlačítko kalkulačky ke spuštění aplikace z panelu nástrojů](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ Můžeme pokračovat přidáním složitější sadu Kalkulačka kódu do projek
         }
     }
     ```
+
 1. Zvolte **Kalkulačka** ke spuštění programu, nebo stiskněte klávesu **F5**.
 
    ![Klikněte na tlačítko kalkulačky ke spuštění aplikace z panelu nástrojů](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ Pusťme se do práce.
         }
     }
     ```
+
 1. Zvolte **Kalkulačka** ke spuštění programu, nebo stiskněte klávesu **F5**.
 
 1. Postupujte podle zobrazených výzev a počet **42** číslem **119**. Vaše aplikace by měl vypadat nějak takto:
@@ -404,7 +407,7 @@ Pusťme se do práce.
 
 ## <a name="code-complete"></a>Kód je kompletní
 
-Během této tutortial jsme spoustu změny do aplikace kalkulačku. Aplikace efektivněji nyní zpracovává výpočetní prostředky a zpracovává většinu chyby vstupu uživatele.
+Během tohoto kurzu jsme spoustu změny do aplikace kalkulačku. Aplikace efektivněji nyní zpracovává výpočetní prostředky a zpracovává většinu chyby vstupu uživatele.
 
 Tady je kompletní kód vše na jednom místě:
 

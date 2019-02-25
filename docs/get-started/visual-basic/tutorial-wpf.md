@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eb1f0e404bf6815bc26e3c1a14aeff79cde40e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6dc096eebde5c47bfa74214b24b91a05511894d
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945377"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800555"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka Visual Basic
 
@@ -32,9 +32,19 @@ Při prvním spuštění aplikace Visual Studio, zobrazí se výzva k přihláš
 
 ![Zvolte dialogové okno nastavení](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 Po spuštění sady Visual Studio, zobrazí se vám okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace s **Snadné spuštění**, nabídek a běžný panel nástrojů v horní části. Ve střední části okna aplikace se nachází **úvodní stránka**. Při načítání řešení nebo projektu, v prostoru zobrazí editory a návrháře kde **úvodní stránka** je. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
 
-![Integrované vývojové prostředí s obecné nastavení](../media/exploreide-idewithgeneralsettings.png)
+![Visual Studio 2017 integrované vývojové prostředí s obecné nastavení](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Při spuštění sady Visual Studio **Start** nejprve se otevře okno. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí. Zobrazí se vám okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace s **Snadné spuštění**, nabídek a běžný panel nástrojů v horní části. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 

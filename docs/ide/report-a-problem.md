@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911192"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800528"
 ---
 # <a name="overview-report-a-problem"></a>Přehled: Nahlášení problému
 
@@ -52,7 +52,7 @@ Poté, co můžete nahlásit problém, stavy určují, kde vašim příspěvkům
 
 ![Potřebujete více informací o stavu pro problém vyvářet komunity vývojářů](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Potřebujete další informace o** označuje, že potřebujeme od vás další diagnostické informace tak, aby nám můžete pokračovat v šetření.  [Zjistěte, jak reagovat na požadavky nutné další informace.](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+**Potřebujete další informace o** označuje, že potřebujeme od vás další diagnostické informace tak, aby nám můžete pokračovat v šetření.  [Zjistěte, jak reagovat na požadavky nutné další informace.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -110,7 +110,7 @@ Poté, co můžete nahlásit problém, stavy určují, kde vašim příspěvkům
 
 Doporučujeme použít vyhledávání k zajištění, že byl neohlásil už problém, který se chystáte do sestavy. Pokud zjistíte existující položku odpovídající váš problém, postupujte podle a hlasovat pro tento lístek problém.
 
- Poskytují všechny informace, které můžete se k naší týmům, které reprodukovat, co se zobrazuje.  Tyto informace zahrnují nezbytné reprodukovat kroky, fragmenty kódu, snímky obrazovky, záznamy reprodukci, soubory protokolů a jiné artefakty.  Tady je [jak chcete nahlásit problém v sadě Visual Studio](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Poskytují všechny informace, které můžete se k naší týmům, které reprodukovat, co se zobrazuje.  Tyto informace zahrnují nezbytné reprodukovat kroky, fragmenty kódu, snímky obrazovky, záznamy reprodukci, soubory protokolů a jiné artefakty.  Tady je [jak chcete nahlásit problém v sadě Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Jak se mého názoru priority?
 

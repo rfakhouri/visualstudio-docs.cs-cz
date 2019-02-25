@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb765bebba4aaa3fe0cece4b64d33d2e810bdfb7
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755367"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796709"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ K testování různých podmínek, můžete spustit testy několikrát s různý
   
 4.  Přidat 1 a 2, pozastavit záznam a generovat zkušební metody. Později budete nahradíme hodnoty tento uživatelský vstup s hodnotami z datového souboru.  
   
-     ![Testovací metoda Genetate](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
+     ![Generovat zkušební metody](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Zavřete Tvůrce testu. Metoda je přidána do testu:  
   

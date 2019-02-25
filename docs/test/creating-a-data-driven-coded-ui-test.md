@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970917"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796657"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
 
@@ -50,7 +50,7 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
 
 4. Přidat 1 a 2, pozastavit záznam a generovat zkušební metody. Později budete nahradíme hodnoty tento uživatelský vstup s hodnotami z datového souboru.
 
-    ![Genetate testovací metody](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Generovat testovací metody](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     Zavřete Tvůrce testu. Metoda je přidána do testu:
 

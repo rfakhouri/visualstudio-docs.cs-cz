@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a002ca0696f18aa8c524b27be27047ed29b9b25
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720494"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796592"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Odesílání rozšíření sady Visual Studio
 Po dokončení vývoje rozšíření, nainstalujte ho na jiné počítače, sdílet s přáteli nebo kolegy nebo ji publikovat na webu Visual Studio Marketplace. V této části vám vysvětlíme, vše, co musíte udělat, aby bylo možné publikovat a spravovat vaše rozšíření: práce se soubory VSIX, publikování, lokalizace a aktualizace.
@@ -25,7 +25,7 @@ Po dokončení vývoje rozšíření, nainstalujte ho na jiné počítače, sdí
 ## <a name="working-with-vsix-extensions"></a>Práce s rozšíření VSIX
  Vytvoření prázdného projektu VSIX a následným přidáním jiná položka šablony do ní můžete vytvořit rozšíření VSIX. Další informace najdete v tématu [šablonou projektu VSIX](../extensibility/vsix-project-template.md).
 
- Balíček šablony projektů, položku šablony, balíčky VSPackages, součásti Managed Extensibility Framework (MEF), můžete použít formát VSIX **nástrojů** ovládací prvky, sestavení a vlastní typy (to zahrnuje vlastní úvodní stránky). Formát VSIX využívá nasazení založené na souboru. Další informace o balíčcích VSIX, naleznete v tématu [anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+ Balíček šablony projektů, položku šablony, balíčky VSPackages, součásti Managed Extensibility Framework (MEF), můžete použít formát VSIX **nástrojů** ovládací prvky, sestavení a vlastní typy (to zahrnuje vlastní úvodní stránky pro vizuál Studio 2017). Formát VSIX využívá nasazení založené na souboru. Další informace o balíčcích VSIX, naleznete v tématu [anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
  Formát VSIX nepodporuje instalaci fragmentů kódu. Také nepodporuje některých dalších scénářů, jako je například zápis do globální mezipaměti sestavení (GAC) nebo do systémového registru. Pokud budete potřebovat k zápisu do mezipaměti GAC nebo registru v instalaci, musíte použít instalační služby systému Windows. Další informace najdete v tématu [Příprava rozšíření pro Windows Installer nasazení](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 

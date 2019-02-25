@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956065"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796527"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1: Vytvořte projekt Formulářové aplikace Windows
 
@@ -37,20 +37,21 @@ Při vytváření prohlížeče obrázků, prvním krokem je vytvoření projekt
 
      Visual Studio vytvoří řešení pro vaši aplikaci. Řešení se chová jako kontejner pro všechny projekty a soubory požadované programem. Tyto pojmy budou podrobněji vysvětleny dále v tomto kurzu.
 
-4. Následující obrázek znázorňuje, co teď byste měli vidět v rozhraní sady Visual Studio.
-
-    > [!NOTE]
-    > Rozložení okna nemusí vypadat přesně jako na tomto obrázku. Přesné rozložení okna závisí na verzi sady Visual Studio, programovací jazyk, který používáte a dalších faktorů. Nicméně byste měli ověřit, že zobrazí všechna tři okna.
-
-     ![Okno integrovaného vývojového prostředí](../ide/media/express_ideoverview_visio.png)<br/>***Integrované vývojové prostředí** okna*
-
-     Rozhraní obsahuje tři okna: hlavní okno **Průzkumníka řešení**a **vlastnosti** okna.
+4. Vývojové prostředí obsahuje tři okna: hlavní okno **Průzkumníka řešení**a **vlastnosti** okna.
 
      Pokud chybí některé z těchto oken, obnovte výchozí rozložení okna, v řádku nabídek, výběrem **okno** > **resetovat rozložení okna**. Windows můžete zobrazit také pomocí příkazů nabídky. V panelu nabídky zvolte **zobrazení** > **okno vlastností** nebo **Průzkumníka řešení**. Pokud jsou všechny ostatní okna otevřená, zavřete je výběrem **zavřete** (tlačítko v jejich pravém horním rohu x).
 
-5. Na obrázku jsou znázorněna následující okna (přechod ve směru hodinových ručiček od levého horního rohu):
+    ::: moniker range="vs-2017"
 
-    - **Hlavní okno** v tomto okně budete provádět většinu práce, např. práce s formuláři a úpravy kódu. Na obrázku, v okně se zobrazí na formulář v nástrojích **Editor formulářů**. V horní části okna **úvodní stránka** kartu a **Form1.cs [Design]** karta se. (V jazyce Visual Basic, název karty koncovku *.vb* místo *.cs*.)
+    - **Hlavní okno** v tomto okně budete provádět většinu práce, např. práce s formuláři a úpravy kódu. V okně se zobrazí na formulář v nástrojích **Editor formulářů**. V horní části okna **úvodní stránka** kartu a **Form1.cs [Design]** karta se. (V jazyce Visual Basic, název karty koncovku *.vb* místo *.cs*.)
+
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+
+    - **Hlavní okno** v tomto okně budete provádět většinu práce, např. práce s formuláři a úpravy kódu. V okně se zobrazí na formulář v nástrojích **Editor formulářů**.
+
+    ::: moniker-end
 
     - **Okno Průzkumníka řešení** v tomto okně můžete zobrazit a procházet všechny položky ve vašem řešení. Pokud zvolíte soubor, obsah **vlastnosti** okna změny. Pokud otevřete soubor kódu (který končí na *.cs* ve Vizuálu C# a *.vb* v jazyce Visual Basic), souboru s kódem nebo Návrhář kódu souboru se zobrazí. Návrhář je vizuální povrch, na kterém můžete přidat ovládací prvky jako tlačítka a seznamy. Návrhář formulářů aplikace Visual Studio používá termín **Návrháře formulářů Windows**.
 

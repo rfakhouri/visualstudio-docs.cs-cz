@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978266"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796670"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
 Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, včetně architektury sady Visual Studio, komponenty, služby, schémata, nástroje a podobně.
@@ -55,13 +55,13 @@ Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, vč
 
  Okna nástrojů obvykle nabízejí různé ovládací prvky, se kterými se uživatelé můžou komunikovat. Například **vlastnosti** okno umožňuje uživateli nastavit vlastnosti objektů, které pro konkrétní účel. **Vlastnosti** okna je v tomto smyslu specializovaná, ale také obecné, protože je možné v mnoha různých situacích. Podobně **výstup** okna je specializovat, protože poskytuje textový výstup, ale Obecné, protože mnoho subsystémy v sadě Visual Studio můžete použít k poskytnutí výstup pro uživatele sady Visual Studio.
 
- Vezměte v úvahu následující obrázek sady Visual Studio, který obsahuje několika okny nástrojů.
+ Vezměte v úvahu sady Visual Studio, který obsahuje několika okny nástrojů na následujícím obrázku:
 
  ![Snímek obrazovky](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Některá okna nástrojů jsou ukotveny na jedno podokno, které zobrazí panel nástrojů Průzkumník řešení a skryje jiné nástroje systému windows, ale zpřístupňuje je kliknutím na karty. Na obrázku ukazuje dvě ostatním oknům nástrojů **seznam chyb** a **výstup** okno ukotvených dohromady na jedno podokno.
 
- Navíc zobrazí se podokno hlavní dokument, který ukazuje několik oken editoru. I když obvykle mají pouze jednu instanci okna nástrojů (například lze otevřít pouze jeden **Průzkumníka řešení**), editor windows může mít více instancí, z nichž každý se používá k úpravě samostatné dokumentu, ale všechny z nich jsou ukotveny v podokno. Obrázek ukazuje panel dokumentu, který má dvě okna editoru, jedno okno návrháře formulářů a okno prohlížeče zobrazující úvodní stránky. Kliknutím na karty jsou k dispozici všechna okna v podokně dokumentu, ale je okno editoru obsahující soubor EditorPane.cs viditelné a aktivní.
+ Navíc zobrazí se podokno hlavní dokument, který ukazuje několik oken editoru. I když obvykle mají pouze jednu instanci okna nástrojů (například lze otevřít pouze jeden **Průzkumníka řešení**), editor windows může mít více instancí, z nichž každý se používá k úpravě samostatné dokumentu, ale všechny z nich jsou ukotveny v podokno. Obrázek ukazuje panel dokumentu, který má dvě okna editoru, jedno okno návrháře formulářů. Kliknutím na karty jsou k dispozici všechna okna v podokně dokumentu, ale je okno editoru obsahující soubor EditorPane.cs viditelné a aktivní.
 
  Při rozšíření sady Visual Studio můžete vytvořit nástroj pro windows, které umožní uživatelům aplikace Visual Studio pracovat s rozšíření. Můžete také vytvořit vlastní editorů, které umožní uživatelům aplikace Visual Studio, úpravy dokumentů. Protože oken nástrojů a editory, bude se integrovat do sady Visual Studio, nemají programovat ukotvit nebo se zobrazí na kartě správně. Pokud jsou správně registrovány v sadě Visual Studio, mají se automaticky typické funkce nástrojů a oken dokumentu v sadě Visual Studio. Další informace najdete v tématu [rozšíření a přizpůsobení nástrojů Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 
