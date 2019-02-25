@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3cc898d989c345ba7691252562fac820eec1c18
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 91c230f641612c099495c54db67da9c7e755cbdc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924107"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607132"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
-Načte symbolu pomocí indexu.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Item (   
-   DWORD        index,  
-   IDiaSymbol** symbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- index  
- [in] Index o [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt, který se má načíst. Index je v rozsahu 0 až `count`-1, kde `count` je vrácený [idiaenumsymbols::get_count –](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) metody.  
-  
-  – symbol  
- [out] Vrátí [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt představující symbol požadované.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Načte symbolu pomocí indexu.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Item ( 
+   DWORD        index,
+   IDiaSymbol** symbol
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ index
+
+[in] Index o [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt, který se má načíst. Index je v rozsahu 0 až `count`-1, kde `count` je vrácený [idiaenumsymbols::get_count –](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) metody.
+
+  – symbol
+
+[out] Vrátí [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt představující symbol požadované.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
+
+## <a name="see-also"></a>Viz také
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

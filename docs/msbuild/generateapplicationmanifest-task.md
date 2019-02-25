@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854106"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626619"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest – úloha
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace nebo nativní manifest. Nativní manifest popisuje komponentu definováním jedinečné identity pro komponentu a identifikaci všech sestavení a souborů, které tvoří součást. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace rozšiřuje nativní manifest označením vstupního bodu aplikace a určením úrovně zabezpečení aplikace.
@@ -88,7 +88,7 @@ To ukazuje nejjednodušší možný scénář generování manifestu kde [!INCLU
 
 > [!NOTE]
 > V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.
-> 
+>
 > [!NOTE]
 > Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ Tento příklad je podobný jako předchozí příklad s výjimkou název a iden
 
 > [!NOTE]
 > V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.
-> 
+>
 > [!NOTE]
 > Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ V tomto příkladu `GenerateApplicationManifest` a `GenerateDeploymentManifest` 
 
 > [!NOTE]
 > V následujícím příkladu jsou všechny binární soubory aplikace předem připravené, abychom se mohli zaměřit na aspekty generování manifestu. Tento příklad vytvoří plně funkční [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.
-> 
+>
 > [!NOTE]
 > Další informace o `Thumbprint` vlastnosti používané `SignFile` úlohy v tomto příkladu najdete v tématu [signfile – úloha](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ Tento příklad vytvoří *Test.exe.manifest*, čímž aplikaci XCOPY nasaditeln
 ```
 
 ## <a name="see-also"></a>Viz také:
-[Úlohy](../msbuild/msbuild-tasks.md)  
-[Generatedeploymentmanifest – úloha](../msbuild/generatedeploymentmanifest-task.md)  
-[Signfile – úloha](../msbuild/signfile-task.md)  
-[Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Úlohy](../msbuild/msbuild-tasks.md)
+- [Generatedeploymentmanifest – úloha](../msbuild/generatedeploymentmanifest-task.md)
+- [Signfile – úloha](../msbuild/signfile-task.md)
+- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
