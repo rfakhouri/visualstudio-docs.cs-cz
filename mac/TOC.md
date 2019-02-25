@@ -41,6 +41,7 @@
 # [Kompilace a sestavení](compiling-and-building.md)
 ## [Sestavování a čištění projektů a řešení](building-and-cleaning-projects-and-solutions.md)
 ## [Akce sestavení](build-actions.md)
+## [Postupy: Nastavení více projektů po spuštění](set-startup-projects.md)
 ## [Přizpůsobení procesu sestavení](customizing-build-system.md)
 ## [Konfigurace](configurations.md)
 ### [Vytvoření a úprava konfigurací](create-and-edit-configurations.md)
