@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949470"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796813"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referenční dokumentace pro kontrolu požadovaných součástí C++ Core Guidelines
 
@@ -201,7 +201,7 @@ Zobrazit [GSL.view pokyny pro jádro C++: Zobrazení](https://github.com/isocpp/
 
 [C26446 USE_GSL_AT](c26446.md) dávají přednost používání `gsl::at()` místo Nekontrolovaná operátor dolního indexu. Zobrazit [C++ Core Guidelines:  Bounds.4: Nepoužívejte funkce standardní knihovny a typy, které nejsou zaškrtnuté políčko hranice](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) zvažte použití `gsl::finally` Pokud poslední akce. Zobrazit [C++ Core Guidelines:  GSL.util: Nástroje](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) zvažte použití `gsl::finally` Pokud poslední akce. Zobrazit [C++ Core Guidelines:  GSL.util: Nástroje](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` nebo `std::string_view` vytvořené z dočasného budou mít neplatná při dočasný zneplatněna. Zobrazit [C++ Core Guidelines: GSL.view: Zobrazení](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
