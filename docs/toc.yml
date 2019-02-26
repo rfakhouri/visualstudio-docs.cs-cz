@@ -282,7 +282,7 @@ items:
               href: ide/best-practices-for-using-code-snippets.md
           - name: Vytváření fragmentů kódu
             items:
-            - name: 'Průvodce: Vytvoření fragmentu kódu'
+            - name: 'Návod: Vytvoření fragmentu kódu'
               href: ide/walkthrough-creating-a-code-snippet.md
             - name: Distribuce fragmentů kódu
               href: ide/how-to-distribute-code-snippets.md
@@ -356,7 +356,7 @@ items:
             href: ide/reference/convert-var-to-explicit-type.md
           - name: Zabalení, odsazení a zarovnání parametrů
             href: ide/reference/wrap-align-indent-parameters.md
-        - name: 'Průvodce: Generování kódu z využití'
+        - name: 'Návod: Generování kódu z využití'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Tipy pro vyšší produktivitu
         href: ide/productivity-tips-for-visual-studio.md
@@ -599,7 +599,7 @@ items:
   - name: Kompilace a sestavení
     href: ide/compiling-and-building-in-visual-studio.md
     items:
-    - name: 'Průvodce: Vytvoření aplikace'
+    - name: 'Návod: Vytvoření aplikace'
       href: ide/walkthrough-building-an-application.md
     - name: Sestavení a vyčištění projektů a řešení
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
@@ -648,7 +648,7 @@ items:
       href: ide/how-to-specify-build-events-csharp.md
     - name: Konfigurace upozornění v jazyce Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 'Průvodce: Vytvoření prostředí pro sestavení s použitím více počítačů'
+    - name: 'Návod: Vytvoření prostředí pro sestavení s použitím více počítačů'
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: Ladění...
     href: debugger/index.md
@@ -1119,7 +1119,7 @@ items:
     - name: Ochrana osobních údajů komunity vývojářů
       href: ide/developer-community-privacy.md
   - name: Postup nahlášení problému v sadě Visual Studio
-    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+    href: ide/how-to-report-a-problem-with-visual-studio.md
     items:
     - name: Nahlášení problémových stavů a nejčastější dotazy
       href: ide/report-a-problem.md
@@ -1135,9 +1135,9 @@ items:
   - name: Kontaktujte nás
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 5145f3d07dc85e137bca0bbc605381d5347a624d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d89804036f0fd71a94a2d86c38b3d32a65c6c42
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722574"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796865"
