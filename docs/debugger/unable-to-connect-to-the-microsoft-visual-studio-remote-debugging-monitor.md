@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692863"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953648"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nepodařilo se připojit ke sledování Microsoft Visual Studio Remote Debugging Monitor.
 Tato zpráva může dojít, protože sledování vzdáleného ladění není správně nastavena na vzdáleném počítači nebo vzdálený počítač není dostupný kvůli potížím se sítí nebo přítomnost brány firewall.
 
 > [!IMPORTANT]
->  Pokud si myslíte, že tato zpráva zobrazila z důvodu chyby produktu, [tento problém nahlásit](../ide/how-to-report-a-problem-with-visual-studio-2017.md) do sady Visual Studio. Pokud potřebujete další pomoc, přečtěte si téma [kontaktujte nás](../ide/talk-to-us.md) způsoby, jak kontaktovat Microsoft.
+>  Pokud si myslíte, že tato zpráva zobrazila z důvodu chyby produktu, [tento problém nahlásit](../ide/how-to-report-a-problem-with-visual-studio.md) do sady Visual Studio. Pokud potřebujete další pomoc, přečtěte si téma [kontaktujte nás](../ide/talk-to-us.md) způsoby, jak kontaktovat Microsoft.
 
 ## <a name="specificerrors"></a>Co je Podrobná chybová zpráva?
 

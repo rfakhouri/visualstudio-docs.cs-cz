@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d163edf5e08df3b60bdf664da8048781927729ac
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317676"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953583"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimalizace výkonu sady Visual Studio
 
@@ -45,7 +45,7 @@ Kromě toho nespouštějte řešení z USB Flash disk. Zkopírujte ho do pevný 
 
 ## <a name="help-us-improve"></a>Pomozte nám zlepšovat kvalitu
 
-Vaše zpětná vazba pomůže nám se zdokonalovat. Použití **nahlásit problém** funkci pro trasování "záznam" a odeslat společnosti Microsoft. Vyberte ikonu zpětné vazby vedle **rychlé spuštění**, nebo vyberte **pomáhají** > **odeslat zpětnou vazbu** > **nahlásit problém** z řádku nabídek. Další informace najdete v tématu [postup ohlášení problému se sadou Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Vaše zpětná vazba pomůže nám se zdokonalovat. Použití **nahlásit problém** funkci pro trasování "záznam" a odeslat společnosti Microsoft. Vyberte ikonu zpětné vazby vedle **rychlé spuštění**, nebo vyberte **pomáhají** > **odeslat zpětnou vazbu** > **nahlásit problém** z řádku nabídek. Další informace najdete v tématu [postup ohlášení problému se sadou Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Viz také:
 

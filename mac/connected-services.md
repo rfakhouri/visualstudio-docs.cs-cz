@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 11/06/2018
-ms.openlocfilehash: ada47aa3d0cb0d9917404efc2775b843223c6e86
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948943"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953979"
 ---
 # <a name="connected-services-walkthrough"></a>Názorný postup připojené služby
 
@@ -65,10 +65,10 @@ Tento návod ukazuje, jak přidat službu back-endu Azure, která přináší da
 
 Nová služba vyžaduje následující parametry:
 
--   **Název služby App service** – jedinečný název nebo id plánu.
--   **Předplatné** – předplatné chcete použít k platbám za službu
--   **Skupina prostředků** – způsob, jak nebo uspořádání všech vašich prostředků Azure pro projekt. Možnost použít existující nebo vytvořte novou. Pokud je toto první služby Azure, vytvořte novou.
--   **Plánování služby** – Určuje umístění a náklady na všechny prostředky, které ji používají. Možnost použít existující nebo vytvořte novou. Pokud je toto první služby Azure, použijte výchozí hodnotu nebo vytvořte novou úroveň free (F1).
+- **Název služby App service** – jedinečný název nebo id plánu.
+- **Předplatné** – předplatné chcete použít k platbám za službu
+- **Skupina prostředků** – způsob, jak nebo uspořádání všech vašich prostředků Azure pro projekt. Možnost použít existující nebo vytvořte novou. Pokud je toto první služby Azure, vytvořte novou.
+- **Plánování služby** – Určuje umístění a náklady na všechny prostředky, které ji používají. Možnost použít existující nebo vytvořte novou. Pokud je toto první služby Azure, použijte výchozí hodnotu nebo vytvořte novou úroveň free (F1).
 
 Přejděte [dokumentace k Mobile apps](/azure/app-service-mobile/) Další informace.
 

@@ -16,12 +16,13 @@ ms.service: ''
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: d433ec3743c6b18c3241bf4b4c99c47ad620be62
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: 281b41da594e56af4e66751aec47718cf98f7fd6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932232"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953270"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Složka komponenty Visual Studio Test Professional 2017
 

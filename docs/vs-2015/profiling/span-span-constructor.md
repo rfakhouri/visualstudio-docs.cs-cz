@@ -13,64 +13,64 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd371fac572c347ae2b5299f085f5e063306fc1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df6df731de90a9aad9e6cc637b3f218e481b66b7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783040"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952611"
 ---
 # <a name="spanspan-constructor"></a>span::span – konstruktor
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Inicializuje novou instanci třídy `span` třídy.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-span(  
-   const marker_series& _Series,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   marker_importance _Importance,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   marker_importance _Importance,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `_Series`  
- Platné značky řady kontextu.  
-  
- `_Format`  
- Složený řetězec formátu, který obsahuje textu smíšeného s nula nebo více položek formátu, který odpovídá objektům v seznamu argumentů.  
-  
- `_Importance`  
- Úroveň důležitosti.  
-  
- `_Category`  
- Kategorie.  
-  
-## <a name="requirements"></a>Požadavky  
- **Záhlaví:** cvmarkersobj.h  
-  
- **Namespace:** Concurrency::diagnostic
- 
- ## <a name="see-also"></a>Viz také
- [span – třída](../profiling/span-class.md)
+Inicializuje novou instanci třídy `span` třídy.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+span(
+   const marker_series& _Series,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   marker_importance _Importance,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   marker_importance _Importance,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+```
+
+#### <a name="parameters"></a>Parametry
+
+`_Series` Platné značky řady kontextu.
+
+`_Format` Složený řetězec formátu, který obsahuje textu smíšeného s nula nebo více položek formátu, který odpovídá objektům v seznamu argumentů.
+
+`_Importance` Úroveň důležitosti.
+
+`_Category` Kategorie.
+
+## <a name="requirements"></a>Požadavky
+
+**Záhlaví:** cvmarkersobj.h
+
+**Namespace:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Viz také
+
+[span – třída](../profiling/span-class.md)

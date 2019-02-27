@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Časté otázky k migraci Volume License Service Center správce
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844097"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953940"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrace správy předplatných služby Visual Studio
 
@@ -44,21 +44,21 @@ Ano.  Existují dvě fáze v tomto procesu. Nastavení (nebo připojení) vaší
 ### <a name="what-is-the-onboarding-process"></a>Co je proces zařazení do systému?
 E-mail je odeslán na primární a informační kontakt vyzývající k dokončení procesu registrace.
 Níže jsou pokyny procesu.
-1.  **Vyhledáním čísla PCN a přihlášení:**
+1. **Vyhledáním čísla PCN a přihlášení:**
 
-    a.  V e-mailu, jsou poskytovány primární a informační kontakt s odkazem na jedinečný a poslední tři číslice z jejich veřejné zákaznické číslo (PCN). *
+    a. V e-mailu, jsou poskytovány primární a informační kontakt s odkazem na jedinečný a poslední tři číslice z jejich veřejné zákaznické číslo (PCN). *
 
-    b.  Aby bylo možné získat celé číslo PCN, třeba adresu primárního kontaktu pro přihlášení k webu VLSC (pokyny k vyhledání PCN najdete níže).
+    b. Aby bylo možné získat celé číslo PCN, třeba adresu primárního kontaktu pro přihlášení k webu VLSC (pokyny k vyhledání PCN najdete níže).
 
-    c.  Po získání PCN, budete potřebovat k výběru jejich jedinečného odkazu, která je vyzve k přihlášení. Budou moct přihlásit pomocí pracovní nebo školní účet (Pokud je vaše organizace v Azure AD) nebo účet Microsoft (MSA), pokud vaše organizace se nenachází ve službě Azure AD.
+    c. Po získání PCN, budete potřebovat k výběru jejich jedinečného odkazu, která je vyzve k přihlášení. Budou moct přihlásit pomocí pracovní nebo školní účet (Pokud je vaše organizace v Azure AD) nebo účet Microsoft (MSA), pokud vaše organizace se nenachází ve službě Azure AD.
 
-    d.  V dalším kroku se zobrazí výzva k zadáte PCN.
+    d. V dalším kroku se zobrazí výzva k zadáte PCN.
 
-2.  **Nastavte správce:**
+2. **Nastavte správce:**
 
     Jakmile zadáte PCN, že budete přesměrováni na stránku jsou-li přidat supersprávci a správci (dříve označovaní jako manažeři předplatného). V ideálním případě to by se měly dokončit ještě před datem migrace vaší organizace aby nedošlo k žádnému přerušení správy předplatných.
 
-3.  **Přístup k novému portálu pro správu předplatného:** Po migraci vaší organizace se pošle e-mailů supersprávci a správcům vyzývající k přístupu na novém portálu a zahájení správy předplatných.
+3. **Přístup k novému portálu pro správu předplatného:** Po migraci vaší organizace se pošle e-mailů supersprávci a správcům vyzývající k přístupu na novém portálu a zahájení správy předplatných.
 
 > [!NOTE]
 > Pokud primární nebo informační kontakt zobrazí více než jednu e-mailu, to znamená, že mají více než jedno číslo PCN. Bude nutné provést použitím jedinečného odkazu pro číslo PCN odkazuje v každém e-mailu.

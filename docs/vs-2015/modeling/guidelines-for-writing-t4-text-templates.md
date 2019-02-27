@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 542b43b5addad1bee59921bd2f4b593ea4676c59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795354"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952807"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Pokyny pro tvorbu textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Tyto obecné pokyny mohou být užitečné, pokud jsou generování programovéh
   Přesuňte běžné materiál do vkládané soubory nebo šablony běhu  
   Vyhněte se opakující se podobně jako bloky textu a kódu ve více šablonách, použijte `<#@ include #>` směrnice. Další informace najdete v tématu [T4 – direktiva zahrnují](../modeling/t4-include-directive.md).  
   
-  Můžete také vytvářet šablony textu za běhu v samostatném projektu a pak je volejte z šablony návrhu. Chcete-li to provést, použijte `<#@ assembly #>` směrnice pro přístup k samostatného projektu. Příklady najdete v tématu ["Dědičnosti v textových šablon" v blogu Garetha Jonese](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Můžete také vytvářet šablony textu za běhu v samostatném projektu a pak je volejte z šablony návrhu. Chcete-li to provést, použijte `<#@ assembly #>` směrnice pro přístup k samostatného projektu.
   
   Zvažte přesunutí velkých bloků kódu do samostatného sestavení.  
   Pokud máte velké kód bloky a bloky s funkcí třídy, může být užitečné k přesunutí některé tento kód do metody, které se kompilují do samostatného projektu. Můžete použít `<#@ assembly #>` směrnice získat přístup ke kódu v šabloně. Další informace najdete v tématu [T4 – Direktiva Assembly](../modeling/t4-assembly-directive.md).  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27624f4b5336d91b30410303c9fd3823cc00fb88
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620912"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954047"
 ---
 # <a name="author-vsct-files"></a>Vytváření souborů .vsct
 Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nabídky, panely nástrojů a jiných prvcích uživatelského rozhraní (UI) do integrovaného vývojového prostředí (IDE) sady Visual Studio. Pomocí těchto kroků při přidávání prvků uživatelského rozhraní do balíčku sady Visual Studio (balíček VSPackage správy kódu), který ještě není *.vsct* souboru.

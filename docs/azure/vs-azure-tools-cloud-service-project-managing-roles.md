@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 02ebd2be3fc7cbb1f0003b2f44023b99cbc0c603
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ddc50ba84a4fbe66cbcbaaff2e2eb847a8a8ced
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948040"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953236"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Správa rolí v cloudových službách Azure pomocí sady Visual Studio
 Po vytvoření cloudové služby Azure, můžete k němu přidat nové role nebo z něj odebrat existující role. Můžete také naimportovat existující projekt a převeďte jej na roli. Můžete například importovat webové aplikace ASP.NET a určit ji jako webová role.
@@ -28,7 +28,7 @@ Následující postup vás provede přidáním webové nebo pracovní role do pr
 
 1. Klikněte pravým tlačítkem myši **role** uzel k zobrazení v místní nabídce. V místní nabídce vyberte **přidat**, potom vyberte existující webové roli nebo roli pracovního procesu z aktuálního řešení nebo vytvořte projekt webové nebo pracovní role. Můžete také vybrat příslušný projekt, jako je například projektu webové aplikace ASP.NET a přidružte jej k projektu role.
 
-    ![Nabídka možností, jak přidat roli do projektu Azure cloud service](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
+   ![Nabídka možností, jak přidat roli do projektu Azure cloud service](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>Odebrání role v cloudové službě Azure
 Následující kroky vás provedou odebrání webové nebo pracovní role projekt cloudové služby Azure v sadě Visual Studio.
@@ -41,7 +41,7 @@ Následující kroky vás provedou odebrání webové nebo pracovní role projek
 
 1. Klikněte pravým tlačítkem na uzel, který chcete odebrat a v místní nabídce vyberte **odebrat**.
 
-    ![Možnosti nabídky přidat roli do cloudové služby Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
+   ![Možnosti nabídky přidat roli do cloudové služby Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Znovu přidat roli do projektu Azure cloud service
 Pokud odeberete roli z projektu cloudové služby, ale později se rozhodnete přidat do projektu role, se přidají pouze deklarace role a základní atributy, jako jsou koncové body a diagnostické informace. Žádné další zdroje informací nebo odkazů jsou přidány do `ServiceDefinition.csdef` souboru nebo `ServiceConfiguration.cscfg` souboru. Pokud chcete přidat tyto informace, budete muset ručně přidat do těchto souborů.

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 5a6ee6f8f74c21debb3f82df3781031597a02c12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 525b5fe8f2726ab1f7f2ff80abf7bc06937a7a0b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757671"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953021"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Zachování konstantní virtuální IP adresy cloudové služby Azure
 Když aktualizujete cloudovou službu, která je hostovaná v Azure, můžete potřebovat k zajištění, že nedojde ke změně virtuální IP adresa (VIP) služby. Většina služeb správu domény používá v systému DNS (Domain Name) pro registraci názvů domén. DNS funguje pouze v případě, že virtuální IP adresa zůstala stejná. Můžete použít **Průvodce publikováním** v nástroje Azure k zajištění, že virtuální IP adresa cloudové služby nedojde ke změně při ho aktualizujete. Další informace o tom, jak pomocí DNS domény správy pro cloudové služby, najdete v části [konfigurace vlastního názvu domény pro cloudovou službu Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -50,7 +50,7 @@ Můžete zadat nastavení nasazení **Průvodce publikováním**, která podporu
     ![Publikovat stránku nastavení nasazení aplikace Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-deployment-update-settings.png)
 
 7. V **publikování aplikaci Azure** dialogu **Další** až **Souhrn** zobrazí se stránka. Ověřte nastavení a pak vyberte **publikovat**.
-   
+
     ![Publikovat stránku Souhrn aplikací Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
 ## <a name="next-steps"></a>Další kroky

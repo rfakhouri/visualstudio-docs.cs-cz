@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349436"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953444"
 ---
 # <a name="data-visualizations"></a>Vizualizace dat
 
@@ -88,18 +88,18 @@ Některé typy, které zároveň mají své vlastní vizualizéry vložené jsou
 
 ![Ostatní vizualizace](media/data-visualizations-image23.png)
 
-*   **Primitiva**
-    *   Tím se zobrazí nezpracované hodnotě primitivního typu.
-*   **Výčet**
-    *   Zobrazí se hodnota pole bez kvalifikátoru typu výčtu.
-*   **Řazené kolekce členů**
-    *   Zobrazují ve formátu ()
-*   **Hodnotu Null**
-    *   Zobrazí hodnotu "null".
-*   **ADRESA URL**
-    *   Tím se zobrazí po kliknutí hypertextový odkaz.
-*   **IntPtr**
-    *   Tato akce zobrazí šestnáctkovou reprezentací IntPtr.
+* **Primitiva**
+  * Tím se zobrazí nezpracované hodnotě primitivního typu.
+* **Výčet**
+  * Zobrazí se hodnota pole bez kvalifikátoru typu výčtu.
+* **Řazené kolekce členů**
+  * Zobrazují ve formátu ()
+* **Hodnotu Null**
+  * Zobrazí hodnotu "null".
+* **Adresa URL**
+  * Tím se zobrazí po kliknutí hypertextový odkaz.
+* **IntPtr**
+  * Tato akce zobrazí šestnáctkovou reprezentací IntPtr.
 
 ## <a name="see-also"></a>Viz také:
 

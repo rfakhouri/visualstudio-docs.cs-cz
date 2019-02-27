@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 751ee5f414db3ee2ad944cd48503887bf5c65c2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942673"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953885"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurace rolí cloudové služby Azure v sadě Visual Studio
 Cloudové služby Azure může mít jednu nebo více pracovních procesů nebo webové role. Pro každou roli budete muset definovat, jak nastavit tuto roli a také nakonfigurovat tak, jak tuto roli běží. Další informace o rolích v cloudových službách, podívejte se na video [Úvod do služby Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -48,8 +48,6 @@ Cloudové služby Azure z Průzkumníka řešení v sadě Visual Studio, můžet
 
     > [!IMPORTANT]
     > Pokud se rozhodnete specifické konfigurace služby, některé vlastnosti jsou zakázané, protože jejich lze nastavit pouze u všech konfigurací. Pokud chcete upravit tyto vlastnosti, musíte vybrat **všechny konfigurace**.
-    >
-    >
 
     ![Seznam konfiguraci služby pro cloudové služby Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 

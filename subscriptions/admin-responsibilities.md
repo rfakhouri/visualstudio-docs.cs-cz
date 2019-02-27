@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Další informace o odpovědnosti správce předplatných.
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842348"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954477"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Přehled odpovědnosti správce
 Jako správce budete mít možnost ke správě předplatných pro vaši organizaci.  Role správce taky mají odpovědnost zajistit, že předplatná se spravují v souladu s licenčními podmínkami. Tento článek popisuje povinnosti, výhody a omezení role správce.
 
 ## <a name="roles--responsibilities"></a>Role a zodpovědnosti
 Správce sady Visual Studio obsahuje čtyři klíčové odpovědnosti:
-1.  **Pochopit výhody a omezení předplatných sady Visual Studio.** Správně porozumění výhodám můžete vám umožní snížit náklady na hardware pomocí cloudových služeb a snížit náklady na software s uživatelských licencí pro předprodukční prostředí.
-2.  **Přiřazení předplatných sady Visual Studio ke konkrétnímu, s názvem osoby a podporovat používání.** Kontrakt vyžaduje, že konkrétní, pojmenované jednotlivce přiřadit předplatná sady Visual Studio. Proveďte s vaší přiřazené uživatelům zajistit přístup k a plně využít výhod, které je součástí jejich předplatného sady Visual Studio.
-3.  **Přesně inventáře předprovozním prostředí.** To je nezbytné k zajištění, že všichni uživatelé, kteří pracují s Visual Studio licencovaný software jsou odpovídajícím způsobem licenci na své vlastní předplatné sady Visual Studio.
-4.  **Sledovat změny v přiřazení uživatele a získat další licence na plán.** Smlouvy Microsoft Volume Licensing (VL) a MPSA získáte flexibilitu v tom, jak používat a přiřazení předplatných sady Visual Studio. Na oplátku předpokládá, že ke sledování změn využití softwaru a přiřazení uživatelských a zpracovávat objednávky pro další licence na plán uvedené ve smlouvě.
+
+1. **Pochopit výhody a omezení předplatných sady Visual Studio.** Správně porozumění výhodám můžete vám umožní snížit náklady na hardware pomocí cloudových služeb a snížit náklady na software s uživatelských licencí pro předprodukční prostředí. 
+2. **Přiřazení předplatných sady Visual Studio ke konkrétnímu, s názvem osoby a podporovat používání.** Kontrakt vyžaduje, že konkrétní, pojmenované jednotlivce přiřadit předplatná sady Visual Studio. Proveďte s vaší přiřazené uživatelům zajistit přístup k a plně využít výhod, které je součástí jejich předplatného sady Visual Studio.
+3. **Přesně inventáře předprovozním prostředí.** To je nezbytné k zajištění, že všichni uživatelé, kteří pracují s Visual Studio licencovaný software jsou odpovídajícím způsobem licenci na své vlastní předplatné sady Visual Studio. 
+4. **Sledovat změny v přiřazení uživatele a získat další licence na plán.** Smlouvy Microsoft Volume Licensing (VL) a MPSA získáte flexibilitu v tom, jak používat a přiřazení předplatných sady Visual Studio. Na oplátku předpokládá, že ke sledování změn využití softwaru a přiřazení uživatelských a zpracovávat objednávky pro další licence na plán uvedené ve smlouvě.
 
 ## <a name="benefits-and-limitations"></a>Výhody a omezení
 Předplatná sady Visual Studio umožňují vývoj členům týmu. budou instalovat a používat software pro návrh, vývoj, testování, vyhodnocení a ukazují dalšího softwaru. Visual Studio odběrů softwaru nemá licenci pro produkční prostředí.
@@ -70,9 +71,10 @@ Správce předplatných Visual Studio se očekává sledování využití sady V
 - Uživatel komunikuje s software Visual Studio.
 
 Je vaší povinností dokončení nákupu určená **horní mez využití**. Tuto mez je vysoce bod v denní přiřazení uživatele nebo v uživatelů pracujících s Visual Studio software, podle toho, co je vyšší.
-1.  Správce předplatných Visual Studio mohou zvýšit horní mez využití přiřazování předplatných sady Visual Studio pro jednotlivce.
-2.  Správce předplatných Visual Studio může změnit přiřazení předplatných z jednoho odběratele, pokud uplynulo 90 dnů od doby původní přiřazení. Aby se zabránilo uměle horní mez, vždy k tomu nejdřív odebrat existující předplatné a následným přidáním nového.
-3.  Správce předplatných Visual Studio může změnit úroveň přiřazené předplatné pro jednotlivce, což by představovalo pokles v jedné úlohy a zvýšení v jiném. Při snížení předplatitel sady přiřadila se úroveň předplatného uživatele musíte okamžitě přestat používat a odinstalovat cokoli, co je pouze ve vyšší úrovně předplatného.
+
+1. Správce předplatných Visual Studio mohou zvýšit horní mez využití přiřazování předplatných sady Visual Studio pro jednotlivce.
+2. Správce předplatných Visual Studio může změnit přiřazení předplatných z jednoho odběratele, pokud uplynulo 90 dnů od doby původní přiřazení. Aby se zabránilo uměle horní mez, vždy k tomu nejdřív odebrat existující předplatné a následným přidáním nového.
+3. Správce předplatných Visual Studio může změnit úroveň přiřazené předplatné pro jednotlivce, což by představovalo pokles v jedné úlohy a zvýšení v jiném. Při snížení předplatitel sady přiřadila se úroveň předplatného uživatele musíte okamžitě přestat používat a odinstalovat cokoli, co je pouze ve vyšší úrovně předplatného. 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>Cloudová předplatná, Open License nebo Open Value
 Může přiřazovat předplatná prostřednictvím programu, jako je Microsoft Cloudová předplatná, Open License nebo Open Value. Pokud ano, musí zpracovat objednávku pro další uživatele v měsíci, ve kterém uživatelé (zaměstnanci nebo externí dodavatelé) komunikovat s Visual Studio licencovaný software.

@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Zjistěte, jak získat a spravovat kódy product key v předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843716"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953898"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Používání kódů product key v předplatných sady Visual Studio
 
@@ -104,10 +104,10 @@ Předplatitelé sady Visual Studio můžete zvýšit počet uživatelů, kteří
 Pět klíče každého typu jsou k dispozici pro Windows Server 2008 R2 a každý klíč podporuje 20 připojení. Pro Windows Server 2012 R2 čtyři kódy pro každý typ je poskytnout a nich podporuje 50 připojení.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Pokud chcete povolit další připojení ve Windows serveru:
-1.  Spusťte Správce serveru.
-2.  V levém navigačním podokně otevřete seznam servery.
-3.  Klikněte pravým tlačítkem na váš licenční server a zvolte možnost "Nainstalovat licence".
-4.  Postupujte podle kroků v průvodci.  Když vybíráte typ smlouvy, zvolte možnost "Balíček licencí (prodejní verze)" a zadejte kód product key, který jste získali z portálu MY.
+1. Spusťte Správce serveru.
+2. V levém navigačním podokně otevřete seznam servery.
+3. Klikněte pravým tlačítkem na váš licenční server a zvolte možnost "Nainstalovat licence".
+4. Postupujte podle kroků v průvodci.  Když vybíráte typ smlouvy, zvolte možnost "Balíček licencí (prodejní verze)" a zadejte kód product key, který jste získali z portálu MY.
 
 Koncoví uživatelé lze připojit k přístupu k aplikacím přes vzdálenou plochu, pokud jsou splněny následující podmínky:
 - Uživatelé musí být anonymní (v neověřeném stavu).

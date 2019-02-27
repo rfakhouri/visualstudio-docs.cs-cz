@@ -1,5 +1,5 @@
 ---
-title: Tisk – příkaz
+title: Debug.Print –
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,46 +14,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a3de1fba86c78f16703efd858448bc0f25e8d0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952291"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953554"
 ---
 # <a name="print-command"></a>Tisk – příkaz
-Vyhodnotí výraz a zobrazí zadaný text.
+
+Vyhodnotí výraz nebo zobrazí zadaný text.
 
 ## <a name="syntax"></a>Syntaxe
 
 ```cmd
-Debug.Print text
+>Debug.Print text
 ```
 
 ## <a name="arguments"></a>Arguments
- `text`
 
- Povinný parametr. Výraz k vyhodnocení nebo text k zobrazení.
+`text`
+
+Povinný parametr. Výraz k vyhodnocení nebo text k zobrazení.
 
 ## <a name="remarks"></a>Poznámky
- Otazník (?) můžete použít jako alias pro tento příkaz. Ano například příkaz
+
+Otazník (?) můžete použít jako alias pro tento příkaz. Ano například příkaz
 
 ```cmd
 >Debug.Print expA
 ```
 
- lze také zapsat
+lze také zapsat jako
 
 ```cmd
->? expA
+? expA
 ```
 
- Obě verze tohoto příkazu vrátí aktuální hodnotu výrazu `expA`.
+Obě verze tohoto příkazu vrátí aktuální hodnotu výrazu `expA`.
 
 ## <a name="example"></a>Příklad
 
 ```cmd
->Debug.Print varA
+>Debug.Print DateTime.Now.Day
 ```
 
 ## <a name="see-also"></a>Viz také

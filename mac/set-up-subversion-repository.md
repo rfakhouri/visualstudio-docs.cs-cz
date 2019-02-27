@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 3995db4ef4609f68512dede454855da1f770141f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7dfb5c645125afc1485c1422909e52741507b327
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295550"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953684"
 ---
 # <a name="set-up-a-subversion-repository"></a>Nastavení úložiště Subversion
 
@@ -54,7 +54,7 @@ Jakmile dílčí verze je nainstalovaná na počítači, použijte následujíc�
 
     ![Zadání přihlašovacích údajů úložiště subversion](media/version-control-subversion5.png)
 
-8.  Všechny příkazy správy verzí k dispozici, teď by se zobrazovat v nabídce Řízení verze.
+8. Všechny příkazy správy verzí k dispozici, teď by se zobrazovat v nabídce Řízení verze.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 0d0bf684f351c5b384f2d4a525c6b7f64dfbce99
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450591"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954397"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novinky v sadě Visual Studio 2017
 
@@ -377,7 +377,7 @@ Pokud chcete provést návrh, o jak jsme vylepšení sady Visual Studio, nebo Da
 
 ### <a name="report-a-problem"></a>Nahlášení problému
 
- V některých případech zprávy nestačí k předání celkový dopad problému, který jste se setkali. Pokud dochází k zablokování, při selhání nebo jiné problémy s výkonem, můžete jednoduše sdílet kroky pro reprodukci a podpůrné soubory (například snímky obrazovky a trasování a haldy soubory s výpisem paměti) s námi pomocí **nahlásit problém** nástroj. Další informace o tom, jak tento nástroj použít, najdete v článku [jak ohlásit problém](how-to-report-a-problem-with-visual-studio-2017.md) stránky.
+ V některých případech zprávy nestačí k předání celkový dopad problému, který jste se setkali. Pokud dochází k zablokování, při selhání nebo jiné problémy s výkonem, můžete jednoduše sdílet kroky pro reprodukci a podpůrné soubory (například snímky obrazovky a trasování a haldy soubory s výpisem paměti) s námi pomocí **nahlásit problém** nástroj. Další informace o tom, jak tento nástroj použít, najdete v článku [jak ohlásit problém](how-to-report-a-problem-with-visual-studio.md) stránky.
 
 ## <a name="see-also"></a>Viz také:
 

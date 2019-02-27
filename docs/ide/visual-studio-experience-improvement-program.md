@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 97733ab60a832c6a3563ae3ca1ed791f331399dc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927526"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953541"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio programu zlepšování zkušeností zákazníků
 
@@ -59,6 +59,6 @@ Další informace o údajích shromažďovaných, zpracovávaných a přenášen
 
 * [Diagnostické informace shromážděné funkcí sady Visual Studio](diagnostic-data-collection.md)
 * [Kontaktujte nás](../ide/talk-to-us.md)
-* [Postup ohlášení problému se sadou Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Postup ohlášení problému se sadou Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
 * [Prohlášení o ochraně osobních údajů společnosti Microsoft](https://privacy.microsoft.com/privacystatement)

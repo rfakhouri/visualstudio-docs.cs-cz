@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685128"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953379"
 ---
 # <a name="customize-startup"></a>Upravit spuštění
 
@@ -34,17 +34,17 @@ Můžete také zobrazit vlastní úvodní stránku, což je stránka XAML Window
 
 1. V panelu nabídky zvolte **nástroje** > **možnosti**.
 
-1. Rozbalte **prostředí**a klikněte na tlačítko **spuštění**.
+2. Rozbalte **prostředí**a klikněte na tlačítko **spuštění**.
 
 ::: moniker range="vs-2017"
 
-1. V **při spuštění** seznamu, vyberte položku, který se zobrazí po spuštění sady Visual Studio.
+3. V **při spuštění** seznamu, vyberte položku, který se zobrazí po spuštění sady Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. V **při spuštění, otevřete** klikněte na položku co byste chtěli po spuštění sady Visual Studio. Můžete si vybrat z **počáteční okno** (které vám umožní otevřít nového nebo existujícího projektu), **nejnovější řešení**, nebo **prázdné prostředí**.
+3. V **při spuštění, otevřete** klikněte na položku co byste chtěli po spuštění sady Visual Studio. Můžete si vybrat z **počáteční okno** (které vám umožní otevřít nového nebo existujícího projektu), **nejnovější řešení**, nebo **prázdné prostředí**.
 
 ::: moniker-end
 

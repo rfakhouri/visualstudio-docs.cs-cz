@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody technické podpory součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: e79af99783d9e7fb8c43f72245dab828fea1736d
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841699"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953834"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivovat výhody technické podpory v předplatných sady Visual Studio
 
@@ -82,9 +82,9 @@ Ujistěte se prosím, že máte ID smlouvy a přístupové ID, které jsou k dis
 
 Pokud chcete používat vaše výhoda Visual Studio předplatné technickou podporu pro problémy týkající se Azure, je potřeba propojit ID smlouvy a přístupové ID vašeho předplatného Azure.
 
-1.  Navštivte https://portal.azure.com a přihlaste se
-2.  V levém navigačním panelu klikněte na **Nápověda a podpora**
-3.  V části "Podpora" klikněte na **nová žádost o podporu**
+1. Navštivte https://portal.azure.com a přihlaste se
+2. V levém navigačním panelu klikněte na **Nápověda a podpora**
+3. V části "Podpora" klikněte na **nová žádost o podporu**
 
 ## <a name="eligibility"></a>Způsobilost
 

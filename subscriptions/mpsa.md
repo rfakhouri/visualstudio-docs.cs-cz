@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Předplatná sady Visual Studio produktů společnosti Microsoft a smlouvu o poskytování služeb (MPSA)
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841666"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953804"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Předplatná sady Visual Studio v Microsoft Products a smlouvu Services (MPSA)
 
@@ -29,21 +29,22 @@ Nespravovaného tenanta je tenant bez jakékoli správci v rámci a není použi
 Před dokončením přidružení tenanta tady je pár požadavky a kroky potřebné k stát se správcem předplatných sady Visual Studio.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Přidružení předběžné tenanta (spravovaného klienta)
--   Musí být registrovaný uživatel k centru pro firmy.
--   Uživatel správce (minimálně) nebo globální správce musí být v rámci tenanta, které jsou součástí. (To platí, pokud vaše společnost už používá cloudové služby). Kteroukoli z těchto rolí je potřeba mít oprávnění správce předplatných sady Visual Studio.
--   Musíte být globálním správcem tenanta, které jsou součástí budete moci přidružit zakoupení účtu pro vašeho tenanta.
--   Musí být účet správce nebo správce účtu v Centru pro firmy.
--   "Země nebo oblast" pole v rámci profilu uživatele (a žádný jiný uživatel) v [Azure](https://portal.azure.com/) musí být správně vyplní podle vaší oblasti (například USA, certifikační Autority, atd.).
+
+- Musí být registrovaný uživatel k centru pro firmy.
+- Uživatel správce (minimálně) nebo globální správce musí být v rámci tenanta, které jsou součástí. (To platí, pokud vaše společnost už používá cloudové služby). Kteroukoli z těchto rolí je potřeba mít oprávnění správce předplatných sady Visual Studio.
+- Musíte být globálním správcem tenanta, které jsou součástí budete moci přidružit zakoupení účtu pro vašeho tenanta.
+- Musí být účet správce nebo správce účtu v Centru pro firmy.
+- "Země nebo oblast" pole v rámci profilu uživatele (a žádný jiný uživatel) v [Azure](https://portal.azure.com/) musí být správně vyplní podle vaší oblasti (například USA, certifikační Autority, atd.). 
 
 > [!NOTE]
 > Všichni uživatelé, kteří mají být správce předplatných sady Visual Studio nejsou musí být uživatelé v Centru pro firmy, protože stačí splňují kritéria v krocích 2 a 5.
 
 Po splnění kritérií pro výše uvedené kroky 5 můžete pokračovat k přidružení účtu nákupu do svého tenanta níže uvedeného postupu.
-1.  Přihlaste se k [centra Business](https://businessaccount.microsoft.com/).
-2.  Klikněte na **účet** kartě a zvolte **přidružit domén**.
-3.  Vyberte vaše **nákupu účet** (Pokud máte více než jeden).
-4.  Vyberte vaše **tenanta** (například contoso.onmicrosoft.com).
-5.  Klikněte na tlačítko **přidružit domény**.
+1. Přihlaste se k [centra Business](https://businessaccount.microsoft.com/).
+2. Klikněte na **účet** kartě a zvolte **přidružit domén**.
+3. Vyberte vaše **nákupu účet** (Pokud máte více než jeden).
+4. Vyberte vaše **tenanta** (například contoso.onmicrosoft.com).
+5. Klikněte na tlačítko **přidružit domény**.
 
 Po přidružení všem uživatelům potřebné kritériím obvykle zřídí jako správce předplatných sady Visual Studio během několika minut. Nicméně v některých případech může trvat až 24 hodin. Jakmile zřídíte budete mít přístup k portálu správy předplatných Visual Studio. Pokud tento postup trvá déle než 24 hodin, kontaktujte prosím podporu MPSA.
 

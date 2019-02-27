@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8de3edf65b67463bb1678f23d71695bc4867b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206b14a1cdab61d64354e134449149b70a030683
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599165"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954490"
 ---
 # <a name="debug-64-bit-applications"></a>Ladění 64bitové aplikace
 Můžete ladit 64bitovou aplikaci, na kterém běží na místním počítači nebo ve vzdáleném počítači.
@@ -50,7 +50,7 @@ Můžete ladit 64bitovou aplikaci, na kterém běží na místním počítači n
 
 -   Máte síťové zabezpečení softwaru nainstalovaného v počítači, který způsobil síťového zásobníku je nespolehlivý, a klesla paketů prostřednictvím místního hostitele. Zkuste zakázat veškerého softwaru zabezpečení sítě a podívejte se, pokud to vyřeší. Pokud ano, sestavy pro dodavatele softwaru zabezpečení sítě, který software je v konfliktu s provozem localhost.
 
--   Spustíte na výkon nebo zablokování problém se sadou Visual Studio. Pokud tento problém nastává pravidelně, můžete shromažďovat výpisy sady Visual Studio (devenv.exe) a pracovním procesem (msvsmon.exe) a odesílat do Microsoftu. Informace o vytváření sestav problému najdete v tématu [postup ohlášení problému se sadou Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
+-   Spustíte na výkon nebo zablokování problém se sadou Visual Studio. Pokud tento problém nastává pravidelně, můžete shromažďovat výpisy sady Visual Studio (devenv.exe) a pracovním procesem (msvsmon.exe) a odesílat do Microsoftu. Informace o vytváření sestav problému najdete v tématu [postup ohlášení problému se sadou Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Viz také
 

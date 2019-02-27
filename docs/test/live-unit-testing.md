@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e631c5b4d9b02b38939e6a1aba6337f633f83fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3cf7b35edfad992096193a73f2b57d2c87292a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921533"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953632"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing pomocí sady Visual Studio 2017
 
@@ -178,8 +178,8 @@ Pro řešení s mnoha testovacích projektů můžete řídit, jaké projekty a 
 
 Chcete-li vybrat jednotlivé projekty při testech jednotek, proveďte následující po Live Unit Testing je spuštění:
 
-1.  Klikněte pravým tlačítkem na řešení v **Průzkumníka řešení** a zvolte **Live testy** > **vyloučit** vyloučit celé řešení.
-1.  Klikněte pravým tlačítkem na každý testovací projekt, který chcete zahrnout do testů a zvolte **Live testy** > **zahrnout**.
+1. Klikněte pravým tlačítkem na řešení v **Průzkumníka řešení** a zvolte **Live testy** > **vyloučit** vyloučit celé řešení.
+1. Klikněte pravým tlačítkem na každý testovací projekt, který chcete zahrnout do testů a zvolte **Live testy** > **zahrnout**.
 
 **Vyloučení jednotlivých testů z okna editoru kódu**
 

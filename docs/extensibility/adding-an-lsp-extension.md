@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318794"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954277"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Přidat příponu protokol jazyka serveru
 
@@ -129,7 +129,7 @@ LSP neobsahuje specifikaci o tom, jak poskytnout zabarvení textu pro jazyky. Po
 
 4. Vytvoření *.pkgdef* soubor a přidá řádek podobný tomuto:
 
-    ```xml
+    ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
@@ -313,13 +313,13 @@ Postupujte podle následujících kroků pro přidání podpory pro nastavení r
 
 4. Soubor .pkgdef přidejte do projektu (Přidat nový textový soubor a změňte příponu souboru .pkgdef). Soubor pkgdef by měl obsahovat tyto informace:
 
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
     ```
 
     Ukázka:
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
@@ -345,8 +345,10 @@ Postupujte podle následujících kroků pro přidání podpory pro nastavení r
         "foo.maxNumberOfProblems": 10
     }
     ```
-    ### <a name="enabling-diagnostics-tracing"></a>Povolení trasování diagnostiky
-    Diagnostické trasování je možné zapnout na výstup všech zpráv mezi klientem a serverem, který může být užitečné při ladění problémů. Pokud chcete povolit diagnostické trasování, postupujte takto:
+
+### <a name="enabling-diagnostics-tracing"></a>Povolení trasování diagnostiky
+
+Diagnostické trasování je možné zapnout na výstup všech zpráv mezi klientem a serverem, který může být užitečné při ladění problémů. Pokud chcete povolit diagnostické trasování, postupujte takto:
 
 4. Otevření nebo vytvoření souboru nastavení pracovního prostoru *VSWorkspaceSettings.json* (viz "Uživatel upravuje nastavení pro pracovní prostor").
 5. Přidejte následující řádek v souboru nastavení json:

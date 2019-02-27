@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155874"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954358"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -246,7 +246,7 @@ Následujícím postupem povolíte ladění v aktuální relaci aplikace Visual 
 1. Zadejte následující příkaz:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Spustit ladění a projít jakýchkoli kroků je potřebné k reprodukci problému. Během této doby, protokoly ladění joinkind **výstup** okně v části **protokol hostitele adaptéru ladění**. Pak můžete zkopírovat protokoly z tohoto okna a vložte do problém Githubu, e-mail atd.
@@ -256,7 +256,7 @@ Následujícím postupem povolíte ladění v aktuální relaci aplikace Visual 
 1. Pokud Visual Studio přestane reagovat nebo nejste jinak mít přístup **výstup** restartujte sadu Visual Studio, otevřete okno příkazového řádku a zadejte následující příkaz:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Spustit ladění a problém reprodukovat. znovu. Ladicí program protokoly pak najdete v `%temp%\DebugAdapterHostLog.txt`.

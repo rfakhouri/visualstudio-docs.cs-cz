@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Zjistěte, jak úspěšně připojit vaše organizace pro předplatná sady Visual Studio po migraci na portál pro správu.
 searchscope: VS Subscription
-ms.openlocfilehash: 1862361ec6ce38acc3376d972c29d56c5aa7bd51
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842153"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954225"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Připojení k portálu správy předplatných Visual Studio po vaší organizace migrována
 
@@ -24,9 +24,9 @@ Předplatná se teď spravují prostřednictvím nového portálu názvem portá
 
 Může dojít, jeden z několika situacích:
 
-1. [Primární kontakt nedokončil proces registrace. ](#Onboarding-not-completed-by-Primary-Contact) <sup>1</sup>
-2. [Primární kontakt registrace dokončena, ale neměli vás přidal jako správce. Vaše přihlašovací údaje byly uvedeny na webu VLSC.](#Primary-Contact-did-not-provide-you-administrator-access)
-3. [Primární kontakt registrace dokončena, ale neměli vás přidal jako správce. Vaše přihlašovací údaje nejsou uvedené ve VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+1. [Primární kontakt nedokončil proces registrace. ](#Onboarding-not-completed-by-Primary-Contact) <sup>1</sup> 
+2. [Primární kontakt registrace dokončena, ale neměli vás přidal jako správce. Vaše přihlašovací údaje byly uvedeny na webu VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
+3. [Primární kontakt registrace dokončena, ale neměli vás přidal jako správce. Vaše přihlašovací údaje nejsou uvedené ve VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
 
 <sup>1</sup> Pokud jsou primární nebo se obraťte se na oznámení a nedokončil proces registrace, budete muset podle kroků v scénář č. 1, aby bylo možné nastavit svou organizaci.
 

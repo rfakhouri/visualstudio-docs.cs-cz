@@ -1,7 +1,7 @@
 ---
 title: Vytvoření síťové instalace
 description: Zjistěte, jak vytvořit bod instalace sítě pro nasazení sady Visual Studio v rámci organizace.
-ms.date: 02/12/2019
+ms.date: 02/27/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e25bdc20393c0d3faff5faa72c89bd531972e5d4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796397"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954018"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvoření síťové instalace sady Visual Studio 2017
 
@@ -201,7 +201,7 @@ Pokud je potřeba vytvořit rozložení pro starší verze sady Visual Studio 20
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Jak získat podporu pro offline instalační program
 
-Pokud dochází k potížím s offline instalací chcete vědět o něm. Nejlepší způsob, jak Řekněte nám, je použít [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj. Při použití tohoto nástroje můžete nám odeslat telemetrii a protokoly, musíme pomáhají diagnostikovat a opravit problém.
+Pokud dochází k potížím s offline instalací chcete vědět o něm. Nejlepší způsob, jak Řekněte nám, je použít [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio.md) nástroj. Při použití tohoto nástroje můžete nám odeslat telemetrii a protokoly, musíme pomáhají diagnostikovat a opravit problém.
 
 Nabízíme také [ **živý chat** ](https://visualstudio.microsoft.com/vs/support/#talktous) (jenom v angličtině) možnost podpory pro problémy související s instalací.
 
@@ -210,6 +210,7 @@ Další možnosti podpory dostupné, máme příliš. Seznam najdete v tématu n
 ## <a name="see-also"></a>Viz také:
 
 * [Aktualizace síťové instalace sady Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
 * [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

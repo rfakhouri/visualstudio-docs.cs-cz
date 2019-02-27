@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295290"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953483"
 ---
 # <a name="debugging-with-xamarin"></a>Ladění s využitím kódu Xamarin
 
@@ -79,10 +79,10 @@ Když se dosáhne zarážky, nástroje pro ladění umožňují získat kontrolu
 
 Tady jsou čtyři tlačítka:
 
-*   **Přehrát** – zahájí se spouští kód, dokud k další zarážce.
-*   **Krokovat s přeskočením** – tím se spustí další řádek kódu. Pokud se na další řádek je volání funkce, Krokovat s přeskočením se spuštění funkce a se zastaví na další řádek kódu *po* funkce.
-*   **Krokovat s vnořením** – to také provede další řádek kódu. Pokud na další řádek je volání funkce, Krokovat s vnořením se zastaví na prvním řádku funkci, abyste mohli pokračovat v ladění řádek po řádku funkce. Pokud se na další řádek není funkce, budou chovat stejné jako Krokovat s přeskočením.
-*   **Krokovat s Vystoupením** – to se vrátí k řádku, kde byla volána aktuální funkce.
+* **Přehrát** – zahájí se spouští kód, dokud k další zarážce.
+* **Krokovat s přeskočením** – tím se spustí další řádek kódu. Pokud se na další řádek je volání funkce, Krokovat s přeskočením se spuštění funkce a se zastaví na další řádek kódu *po* funkce.
+* **Krokovat s vnořením** – to také provede další řádek kódu. Pokud na další řádek je volání funkce, Krokovat s vnořením se zastaví na prvním řádku funkci, abyste mohli pokračovat v ladění řádek po řádku funkce. Pokud se na další řádek není funkce, budou chovat stejné jako Krokovat s přeskočením.
+* **Krokovat s Vystoupením** – to se vrátí k řádku, kde byla volána aktuální funkce.
 
 ## <a name="debugging-monos-class-libraries"></a>Ladění knihoven tříd pro Mono
 

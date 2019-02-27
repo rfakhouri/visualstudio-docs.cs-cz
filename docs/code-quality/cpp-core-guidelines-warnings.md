@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957936"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954303"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 
@@ -161,27 +161,28 @@ Možnost příkazového řádku můžete dočasně zakázat všechny analýzy k�
 
 V některých případech může být užitečné pro analýzu kódu do, zaměřuje a stále využívat integrované vývojové prostředí sady Visual Studio. Následuje ukázkový scénář, který můžete použít pro velké projekty ušetřit čas sestavení a usnadňují tak výsledky filtrování.
 
-1.  V příkazovém prostředí služby nastaven `esp.extension` a `esp.annotationbuildlevel` proměnné prostředí.
-2.  Spusťte sadu Visual Studio z příkazového okna dědění tyto proměnné.
-3.  Načtení projektu a otevřete její vlastnosti.
-4.  Povolit analýzu kódu, vyberte příslušné pravidlo sady, ale není doporučeno zapínat rozšířeními pro analýzu kódu.
-5.  Přejděte k souboru, který chcete analyzovat pomocí kontrola C++ Core pokyny a otevřete její vlastnosti.
-6.  Zvolte **C / C ++ \Command možnosti řádku** a přidat `/analyze:plugin EspXEngine.dll`
-7.  Zakázat použití předkompilované hlavičky (**C / C ++ \Precompiled záhlaví**). To je nezbytné, protože modul rozšíření můžou snažit přečíst jeho interních informací z předkompilované hlavičky a ten byl kompilován s možností výchozí projekt, nesmí být kompatibilní.
-8.  Sestavte projekt znovu. Běžné PREFast kontroly by měl spustit na všechny soubory. Protože kontrola C++ Core pokyny není povolená ve výchozím nastavení, by měl spustit pouze v souboru, který je konfigurován pro použití.
+1. V příkazovém prostředí služby nastaven `esp.extension` a `esp.annotationbuildlevel` proměnné prostředí.
+2. Spusťte sadu Visual Studio z příkazového okna dědění tyto proměnné.
+3. Načtení projektu a otevřete její vlastnosti.
+4. Povolit analýzu kódu, vyberte příslušné pravidlo sady, ale není doporučeno zapínat rozšířeními pro analýzu kódu.
+5. Přejděte k souboru, který chcete analyzovat pomocí kontrola C++ Core pokyny a otevřete její vlastnosti.
+6. Zvolte **C / C ++ \Command možnosti řádku** a přidat `/analyze:plugin EspXEngine.dll`
+7. Zakázat použití předkompilované hlavičky (**C / C ++ \Precompiled záhlaví**). To je nezbytné, protože modul rozšíření můžou snažit přečíst jeho interních informací z předkompilované hlavičky a ten byl kompilován s možností výchozí projekt, nesmí být kompatibilní.
+8. Sestavte projekt znovu. Běžné PREFast kontroly by měl spustit na všechny soubory. Protože kontrola C++ Core pokyny není povolená ve výchozím nastavení, by měl spustit pouze v souboru, který je konfigurován pro použití.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Jak používat nástroj pro kontrolu jádra pokyny C++ mimo sadu Visual Studio
 Kontrola C++ Core Guidelines můžete použít v automatizovaných sestaveních.
 
 ### <a name="msbuild"></a>MSBuild
- Nástroj pro kontrolu nativní analýzu kódu (nástroj PREfast) je integrované do prostředí nástroje MSBuild soubory vlastní cíle. Můžete použít vlastnosti projektu, aby je a přidat kontrola C++ Core pokyny, (která je založena na nástroj PREfast):
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+Nástroj pro kontrolu nativní analýzu kódu (nástroj PREfast) je integrované do prostředí nástroje MSBuild soubory vlastní cíle. Můžete použít vlastnosti projektu, aby je a přidat kontrola C++ Core pokyny, (která je založena na nástroj PREfast):
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 Ujistěte se, že přidáte tyto vlastnosti před importem souboru Microsoft.Cpp.targets. Můžete vybrat konkrétní pravidlo sady nebo vytvořit vlastní sady pravidel nebo použít výchozí sadu pravidel, která obsahuje další PREfast kontroly.
@@ -221,14 +222,16 @@ Je potřeba nastavit několik proměnných prostředí a pomocí správné param
    - `/analyze:plugin EspXEngine.dll` Tato možnost načte modul rozšířeními pro analýzu kódu do nástroje PREfast. Tento modul, pak načte kontrola C++ Core pokyny.
 
 ## <a name="use-the-guideline-support-library"></a>Použití podpory knihovny obecných zásad
- Obecné zásady Support Library usnadňuje postupujte podle pokynů na jádro. GSL obsahuje definice, které umožňují náchylné konstrukce nahraďte bezpečnějších alternativ. Například můžete nahradit `T*, length` dvojice parametrů s `span<T>` typu. Je k dispozici na GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Knihovna je open source, můžete zobrazit zdroje, ujistěte se, komentáře nebo přispívat. Projekt lze nalézt v [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Postupujte podle pokynů C++ Core Check v projektech Visual Studio 2015
-  Pokud používáte Visual Studio 2015, se ve výchozím nastavení nenainstalují sad pravidel analýzy kódu C++ Core Check. Je nutné provést některé další kroky předtím, než můžete povolit C++ Core Check nástroje Analýza kódu v sadě Visual Studio 2015. Microsoft poskytuje podporu pro projekty Visual Studio 2015 s použitím balíčku Nuget. Balíček má název Microsoft.CppCoreCheck a je k dispozici na [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Tento balíček vyžaduje, že abyste měli aspoň nainstalovanou sadu Visual Studio 2015 s aktualizací Update 1.
+Obecné zásady Support Library usnadňuje postupujte podle pokynů na jádro. GSL obsahuje definice, které umožňují náchylné konstrukce nahraďte bezpečnějších alternativ. Například můžete nahradit `T*, length` dvojice parametrů s `span<T>` typu. Je k dispozici na GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Knihovna je open source, můžete zobrazit zdroje, ujistěte se, komentáře nebo přispívat. Projekt lze nalézt v [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- Tento balíček nainstaluje taky jiný balíček jako závislost, pouze záhlaví obecné zásady podpory knihovny (GSL). GSL je také k dispozici na Githubu v [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="vs2015_corecheck"></a> Postupujte podle pokynů C++ Core Check v projektech Visual Studio 2015
 
- Kvůli způsobu, jakým jsou načteny pravidel analýzy kódu musíte nainstalovat balíček Microsoft.CppCoreCheck NuGet do jednotlivých projektů C++, který chcete zkontrolovat v rámci sady Visual Studio 2015.
+Pokud používáte Visual Studio 2015, se ve výchozím nastavení nenainstalují sad pravidel analýzy kódu C++ Core Check. Je nutné provést některé další kroky předtím, než můžete povolit C++ Core Check nástroje Analýza kódu v sadě Visual Studio 2015. Microsoft poskytuje podporu pro projekty Visual Studio 2015 s použitím balíčku Nuget. Balíček má název Microsoft.CppCoreCheck a je k dispozici na [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Tento balíček vyžaduje, že abyste měli aspoň nainstalovanou sadu Visual Studio 2015 s aktualizací Update 1.
+
+Tento balíček nainstaluje taky jiný balíček jako závislost, pouze záhlaví obecné zásady podpory knihovny (GSL). GSL je také k dispozici na Githubu v [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+Kvůli způsobu, jakým jsou načteny pravidel analýzy kódu musíte nainstalovat balíček Microsoft.CppCoreCheck NuGet do jednotlivých projektů C++, který chcete zkontrolovat v rámci sady Visual Studio 2015.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Chcete-li přidat balíček Microsoft.CppCoreCheck do projektu v sadě Visual Studio 2015
 

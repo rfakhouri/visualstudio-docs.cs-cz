@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 71e73dd3b39616d9c1840db3ea26feb518a97e6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450253"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954410"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>Novinky v sadě Visual Studio 2019 Preview
+# <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
-**Aktualizováno pro [verzi Preview 3](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**Aktualizováno pro [Release Candidate (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Stáhněte si verzi Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[Stáhněte si verzi RC:](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
 
-Visual Studio 2019 Preview zahrnuje mnoho Obecná vylepšení spolu s novými funkcemi, které optimalizovat produktivitu a spolupráci mezi týmy. Ať už používáte Visual Studio poprvé nebo jste dosud používali ho let, budete moct využívat jeho funkce pro všechny aspekty životního cyklu vývoje&mdash;z zjednodušené vytváření a kód stavu řízení projektů, tým – a spolupráci pracovní postupy open source.<br/><br/>
+Visual Studio 2019 zahrnuje mnoho Obecná vylepšení spolu s novými funkcemi, které optimalizovat produktivitu a spolupráci mezi týmy. Ať už používáte Visual Studio poprvé nebo jste dosud používali ho let, budete moct využívat jeho funkce pro všechny aspekty životního cyklu vývoje&mdash;z zjednodušené vytváření a kód stavu řízení projektů, tým – a spolupráci pracovní postupy open source.<br/><br/>
 
 >[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
@@ -39,7 +39,7 @@ Tady je podrobný rekapitulace toho, co má Visual Studio nabízí:
 * **[Průběžné inovace](#continuous-innovation)**. Kód inteligentní s podporou inteligentní, s využitím cloudu.
 
 > [!NOTE]
-> Úplný seznam nových funkcí a funkcí v sadě Visual Studio. 2019 Preview, najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Úplný seznam nových funkcí a funkcí v sadě Visual Studio. 2019 RC najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="personal-and-team-productivity"></a>Osobní a produktivitu týmu
 
@@ -75,7 +75,7 @@ Spárovat s nový indikátor stavu dokumentu je nový příkaz vyčištění kó
 
 #### <a name="search-within-a-watch-window-and-format-watch-values"></a>Vyhledávání v rámci okna kukátka a formátování hodnot sledování
 
-Pravděpodobně jste došlo před, hledání v okně kukátko pro řetězec ze sady hodnot. Ve Visual Studiu 2019 Preview jsme přidali vyhledávání v oknech sledovat, místní hodnoty a automatické hodnoty a umožňují najít objekty a hodnoty, které hledáte.
+Pravděpodobně jste došlo před, hledání v okně kukátko pro řetězec ze sady hodnot. V aplikaci Visual Studio 2019 jsme přidali vyhledávání v oknech sledovat, místní hodnoty a automatické hodnoty a umožňují najít objekty a hodnoty, které hledáte.
 
 Můžete také formátovat, jak se zobrazí hodnota v oknech sledovat, místní hodnoty a automatické hodnoty.  Dvakrát klikněte na jednu z položek v některém z windows a přidejte čárku (",") pro přístup k seznamu rozevírací seznam specifikátorů formátu je to možné, z nichž každý obsahuje popis jeho zamýšlený efekt.
 
@@ -87,7 +87,7 @@ Další informace najdete v tématu [zdokonaleno ve Visual Studio 2019: Hledán�
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) je služba pro vývojáře, která umožňuje sdílet základ kódu a jeho kontextu s programujete a získat rychlé obousměrné spolupráci přímo z Visual Studia. S Live Share programujete můžete přečíst, přejděte, upravit a ladit projekt, který jste sdíleli s nimi a učinit snadno a bezpečně.
 
-A sadou Visual Studio 2019 Preview, tato služba nainstaluje ve výchozím nastavení.
+A s Visual Studio 2019, tato služba nainstaluje ve výchozím nastavení.
 
 ![Animovaný GIF, který zobrazuje spolupráci funkce Live Share v aplikaci Visual Studio 2019](media/live-share-collaboration.gif)
 
@@ -97,7 +97,7 @@ Další informace najdete v tématu [Visual Studio Live Share pro revize kódu v
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Správa žádostí o přijetí změn (žádosti o přijetí změn) v prostředí IDE
 
-Zavádíme nové rozšíření, které si můžete stáhnout pomocí Visual Studio 2019 Preview. Pomocí této nové rozšíření, můžete zkontrolovat, spustit a dokonce i ladění žádosti o přijetí změn od týmu, aniž byste museli opustit integrované vývojové prostředí sady Visual Studio [(integrované vývojové prostředí)](../get-started/visual-studio-ide.md). Jsme podporu kódu v úložišti Azure ještě dnes, ale rozšiřují podporu Githubu a zdokonalovat celkové prostředí.
+Zavádíme nové rozšíření, které si můžete stáhnout pomocí Visual Studio 2019. Pomocí této nové rozšíření, můžete zkontrolovat, spustit a dokonce i ladění žádosti o přijetí změn od týmu, aniž byste museli opustit integrované vývojové prostředí sady Visual Studio [(integrované vývojové prostředí)](../get-started/visual-studio-ide.md). Jsme podporu kódu v úložišti Azure ještě dnes, ale rozšiřují podporu Githubu a zdokonalovat celkové prostředí.
 
 Abyste mohli hned začít, stáhněte si [žádosti o přijetí změn pro sadu Visual Studio](https://aka.ms/pr4vs) rozšíření z Visual Studio Marketplace.
 
@@ -118,7 +118,7 @@ Další informace naleznete na následujících stránkách:
 
 Pokud používáte monitorování, které jsou nakonfigurovány s jiným zobrazením měřítko nebo vzdáleně připojit k počítači s použitím zobrazení škálování faktorů, které se liší od hlavní zařízení, můžete všimnout, že Visual Studio rozmazaný nebo vykreslí nesprávné měřítko.
 
-S vydáním sady Visual Studio 2019 Preview jsme se rozhodli první kroky k zabezpečení aplikace Visual Studio (PMA) aplikace pracující s za monitorování. Pokládáme základní práce, které vám umožní sadě Visual Studio správně vykreslit, bez ohledu na to, co zobrazí měřítko, které používáte.
+Ve verzi Visual Studio 2019 jsme se rozhodli první kroky k zabezpečení aplikace Visual Studio (PMA) aplikace pracující s za monitorování. Pokládáme základní práce, které vám umožní sadě Visual Studio správně vykreslit, bez ohledu na to, co zobrazí měřítko, které používáte.
 
    ![Clustery vykreslování (PMA) v aplikaci Visual Studio 2019 za monitorování](media/per-monitor-aware-dpi-scaling.png)
 
@@ -153,6 +153,7 @@ Proč odeslat zpětnou vazbu týmu sady Visual Studio? Protože jsme vážně tr
 
 ## <a name="see-also"></a>Viz také:
 
-* [Zpráva k vydání verze Visual Studio 2019](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Zpráva k vydání verze Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
+* [Co je nového ve Visual Studio SDK. 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
 * [Co je nového v sadě Visual Studio 2017](whats-new-visual-studio-2017.md)

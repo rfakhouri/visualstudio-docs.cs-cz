@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609433"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953516"
 ---
 # <a name="visual-studio-product-feedback"></a>Názor na produkt Visual Studio
 
@@ -24,7 +24,7 @@ Kontaktujte nás. Nás zajímá vylepšování našich produktů a dokumentaci v
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Chci ohlášení problému se sadou Visual Studio
 
-Pokud máte potíže s aplikací Visual Studio&mdash;například chyby, výkon pomalá nebo neočekávané chování&mdash;nám dejte vědět pomocí **nahlásit problém** nástroj. V sadě Visual Studio, zvolte ikonu zpětné vazby vedle **Snadné spuštění**, nebo zvolte **pomáhají** > **odeslat zpětnou vazbu** > **sestavy Problém** z řádku nabídek. V dalším kroku Visual Studio otevře [komunity vývojářů](https://developercommunity.visualstudio.com) stránku v prohlížeči, kde se můžete přihlásit nahlásit problém. Další informace najdete v tématu [postup ohlášení problému se sadou Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Pokud máte potíže s aplikací Visual Studio&mdash;například chyby, výkon pomalá nebo neočekávané chování&mdash;nám dejte vědět pomocí **nahlásit problém** nástroj. V sadě Visual Studio, zvolte ikonu zpětné vazby vedle **Snadné spuštění**, nebo zvolte **pomáhají** > **odeslat zpětnou vazbu** > **sestavy Problém** z řádku nabídek. V dalším kroku Visual Studio otevře [komunity vývojářů](https://developercommunity.visualstudio.com) stránku v prohlížeči, kde se můžete přihlásit nahlásit problém. Další informace najdete v tématu [postup ohlášení problému se sadou Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Chci, aby námět funkcemi sady Visual Studio
 
@@ -59,6 +59,6 @@ Použijte prosím **byla tato stránka užitečná?** tlačítka pro odeslání 
 
 ## <a name="see-also"></a>Viz také:
 
-* [Postup ohlášení problému se sadou Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+* [Postup ohlášení problému se sadou Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 * [Komunita vývojářů](https://developercommunity.visualstudio.com)
 * [Ochrana dat pro vývojáře komunity](developer-community-privacy.md)

@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Další informace o správě předplatných sady Visual Studio vaší organizace pomocí portálu pro správce.
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843708"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953948"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Pomocí portálu pro správce předplatných sady Visual Studio
 
@@ -38,13 +38,14 @@ Abyste mohli spravovat předplatná vaší organizace pomocí portálu správce,
 ### <a name="onboarding"></a>Registrace
 
 Pokud vaše organizace je připravené k odeslání zařazeni na portál pro správu předplatných Visual Studio se odešle e-mail primární a informační kontakt vyzývající k dokončení procesu registrace. Podrobnosti uvedené níže jsou uvedené kroky, které bude třeba provést pro připojení k novému portálu. Pokud byste o ni návod k technikám, najdete v tomto [správce registrace videa](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) nebo to [článek podpory](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio předplatná správce procesu migrace").
-1.  **Vyhledáním čísla PCN a přihlášení:**
-    - V e-mailu primární a informační kontakt jsou součástí jedinečného odkazu a poslední tři číslice z jejich veřejné zákaznické číslo (PCN). *
-    - K získání celého čísla PCN, třeba adresu primárního kontaktu pro přihlášení k webu VLSC (pokyny k vyhledání PCN najdete existuje).
-    - Po získání PCN, budete potřebovat k výběru jejich jedinečného odkazu, která je vyzve k přihlášení. Budou moct přihlásit pomocí pracovní nebo školní účet (Pokud je vaše organizace v AAD) nebo účet Microsoft (MSA), pokud vaše organizace není v AAD.
-    - V dalším kroku se potřebují zadáte PCN.
-2.  **Nastavení správce.** Jakmile zadáte PCN, že se zaregistruje jako supersprávce v novém systému a budete moct přidat další supersprávci a správci (dříve označovaní jako manažeři předplatného). Abyste neztratili přístup by se měly dokončit ještě před datem migrace vaší organizace.
-3.  **Přístup k novému portálu pro správu předplatného.**  Jakmile se vaše organizace migrována, se odešlou e-maily na nově přidaných supersprávci a správci vyzývající k přístupu na novém portálu a zahájení správy předplatných.
+
+1. **Vyhledáním čísla PCN a přihlášení:**
+    - V e-mailu primární a informační kontakt jsou součástí jedinečného odkazu a poslední tři číslice z jejich veřejné zákaznické číslo (PCN). * 
+    - K získání celého čísla PCN, třeba adresu primárního kontaktu pro přihlášení k webu VLSC (pokyny k vyhledání PCN najdete existuje). 
+    - Po získání PCN, budete potřebovat k výběru jejich jedinečného odkazu, která je vyzve k přihlášení. Budou moct přihlásit pomocí pracovní nebo školní účet (Pokud je vaše organizace v AAD) nebo účet Microsoft (MSA), pokud vaše organizace není v AAD. 
+    - V dalším kroku se potřebují zadáte PCN. 
+2. **Nastavení správce.** Jakmile zadáte PCN, že se zaregistruje jako supersprávce v novém systému a budete moct přidat další supersprávci a správci (dříve označovaní jako manažeři předplatného). Abyste neztratili přístup by se měly dokončit ještě před datem migrace vaší organizace. 
+3. **Přístup k novému portálu pro správu předplatného.**  Jakmile se vaše organizace migrována, se odešlou e-maily na nově přidaných supersprávci a správci vyzývající k přístupu na novém portálu a zahájení správy předplatných.  
 
 > [!NOTE]
 > Pokud primární nebo informační kontakt zobrazí více než jednu e-mailu, to znamená, že mají více než jedno číslo PCN. Bude potřeba provést použitím jedinečného odkazu pro číslo PCN odkazovat v každé email.*

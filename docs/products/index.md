@@ -2,15 +2,9 @@
 layout: HubPage
 hide_bc: true
 title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
-description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
+description: 'Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.'
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821354"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,7 +36,7 @@ ms.locfileid: "52821354"
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/mac" title="Visual Studio pro Mac">
+                                <a href="/visualstudio/mac" title="Visual Studio for Mac">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -128,7 +122,7 @@ ms.locfileid: "52821354"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Služby Azure DevOps</h3>
+                                                    <h3>Azure DevOps Services</h3>
                                                     <p>Zvyšte svou produktivitu týmu pomocí agilní nástroje a sestavy. Sestavení, testování a nasazení projektů ze správy zdrojového kódu pomocí moderních nástrojů CI/CD.</p>
                                                 </div>
                                             </div>

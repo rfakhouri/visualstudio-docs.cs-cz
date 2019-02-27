@@ -1,6 +1,6 @@
 ---
 title: Příkazové podokno
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931946"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954196"
 ---
 # <a name="immediate-window"></a>Příkazové podokno
 
-**Okamžité** okna slouží k ladění a vyhodnocení výrazů, spuštění příkazů, tisku hodnot proměnných a tak dále. Umožňuje zadat výrazy k vyhodnocování nebo provádění ve vývojovém jazyce během ladění.
+Použití **okamžité** okno pro ladění a vyhodnocujte výrazy, spusťte příkazy a tisku hodnot proměnných. **Okamžité** okno vyhodnotí výrazy sestavováním a pomocí aktuálně vybraného projektu.
 
 Pro zobrazení **okamžité** okno, otevřete projekt pro úpravy a pak zvolte **ladění** > **Windows** > **příkazového podokna**  nebo stiskněte klávesu **Ctrl**+**Alt**+**můžu**. Můžete také zadat **Debug.Immediate** v **příkaz** okna.
 
-Můžete použít **okamžité** okno k vydání jednotlivých příkazů sady Visual Studio. Dostupné příkazy zahrnují `EvaluateStatement`, který slouží k přiřazení hodnoty proměnné. **Okamžité** okna také podporuje technologii IntelliSense.
+**Okamžité** okna podporuje technologii IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Zobrazení hodnot proměnných
 
-**Okamžité** okno může být zvláště užitečné při ladění aplikace. Například pro kontrolu hodnoty proměnné `varA`, můžete použít [příkaz Tisk](../../ide/reference/print-command.md):
+**Okamžité** okna je zvlášť užitečné při ladění aplikace. Například pro kontrolu hodnoty proměnné `varA`, můžete použít [tisk – příkaz](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
@@ -42,13 +42,13 @@ Můžete použít **okamžité** okno k vydání jednotlivých příkazů sady V
 Otazník (?) je alias pro `Debug.Print`, takže tento příkaz lze také zapsat:
 
 ```cmd
->? varA
+? varA
 ```
 
 Obě verze tohoto příkazu vrátit hodnotu proměnné `varA`.
 
 > [!TIP]
-> Vydat příkaz v sadě Visual Studio **okamžité** okna, je nutné před příkaz s znaménko (>) větší než. Chcete-li zadat více příkazů, přepněte **příkaz** okna.
+> Vydat příkaz v sadě Visual Studio **okamžité** okna, je nutné před příkaz s znaménko (>) větší než. Chcete-li zadat více příkazů, přepněte [příkazové okno](command-window.md).
 
 ## <a name="design-time-expression-evaluation"></a>Vyhodnocení výrazu v době návrhu
 
@@ -56,7 +56,7 @@ Můžete použít **okamžité** okna spuštění funkce nebo podprogram v době
 
 ### <a name="execute-a-function-at-design-time"></a>Provedení funkce v době návrhu
 
-1. Zkopírujte následující kód do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] konzolové aplikace:
+1. Zkopírujte následující kód do konzolové aplikace jazyka Visual Basic:
 
    ```vb
    Module Module1
@@ -72,23 +72,23 @@ Můžete použít **okamžité** okna spuštění funkce nebo podprogram v době
    End Module
    ```
 
-2. Na **ladění** nabídky, klikněte na tlačítko **Windows**a potom klikněte na tlačítko **okamžité**.
+2. Na **ladění** nabídce zvolte **Windows** > **okamžité**.
 
 3. Typ `?MyFunction(2)` v **okamžité** podokna a stiskněte **Enter**.
 
     **Okamžité** okna ICT `MyFunction` a zobrazí `4`.
 
-Pokud funkce nebo podprogram obsahuje zarážku, sada Visual Studio přeruší provádění v odpovídajícím bodě. Potom můžete ladicí program windows prozkoumat stav vaší aplikace. Další informace najdete v části [názorný postup: Ladění v době návrhu](../../debugger/walkthrough-debugging-at-design-time.md).
+Pokud funkce nebo podprogram obsahuje zarážku, sada Visual Studio přeruší provádění v odpovídajícím bodě. Potom můžete ladicí program windows prozkoumat stav vaší aplikace. Další informace najdete v tématu [názorný postup: Ladění v době návrhu](../../debugger/walkthrough-debugging-at-design-time.md).
 
-Vyhodnocení výrazu času návrhu nelze použít v typech projektů, které vyžadují spuštění prostředí, včetně [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)] projekty, webových projektů, projektů Smart Device a projektů SQL.
+Vyhodnocení výrazu v době návrhu nelze použít v typech projektů, které vyžadují spuštění prostředí, včetně nástroje sady Visual Studio pro projekty pro Office, webové projekty, projektů Smart Device a projektů SQL.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Vyhodnocení výrazu v době návrhu v řešení vícenásobného projektu
 
-Při vytváření kontextu pro vyhodnocení výrazu pro dobu návrhu, odkazuje na aktuálně vybraný projekt v Průzkumníku řešení sady Visual Studio. Pokud není vybrán žádný projekt v Průzkumníku řešení, Visual Studio se pokusí zjistit hodnotu funkce podle projektu po spuštění. Pokud funkci nelze vyhodnotit v aktuálním kontextu, zobrazí se chybová zpráva. Pokud obdržíte chybu, kterou se pokoušíte vyhodnotit funkci v projektu, který není projektem po spuštění pro řešení vyberte projekt v Průzkumníku řešení a pokuste se o vyhodnocení znovu.
+Při vytváření kontextu pro vyhodnocení výrazu v době návrhu, odkazuje na aktuálně vybraný projekt v Průzkumníku řešení sady Visual Studio. Pokud není vybrán žádný projekt v Průzkumníku řešení, Visual Studio se pokusí zjistit hodnotu funkce podle projektu po spuštění. Pokud funkci nelze vyhodnotit v aktuálním kontextu, obdržíte chybovou zprávu. Pokud obdržíte chybu, kterou se pokoušíte vyhodnotit funkci v projektu, který není projektem po spuštění pro řešení vyberte projekt v Průzkumníku řešení a pokuste se o vyhodnocení znovu.
 
 ## <a name="enter-commands"></a>Zadejte příkazy
 
-Zadejte znak větší (>) při vydávání příkazů sady Visual Studio **okamžité** okna. Použití **šipka nahoru** a **šipka dolů** kláves procházejte dříve vydané příkazy.
+Zadejte znak větší (>) při vydávání příkazů sady Visual Studio **okamžité** okna. Použití **šipka nahoru** a **šipka dolů** kláves procházejte předchozích příkazů.
 
 |Úloha|Řešení|Příklad|
 |----------|--------------|-------------|
@@ -101,25 +101,23 @@ Zadejte znak větší (>) při vydávání příkazů sady Visual Studio **okam�
 
 Po kliknutí na libovolný předchozí řádek v **okamžité** okna, posunete automaticky do režimu označení. To vám umožňuje vybrat, upravit a zkopírujte text z předchozích příkazů, jako by v libovolném textovém editoru a vložte je do aktuálního řádku.
 
-## <a name="the-equals-sign-"></a>Znaménko rovná se (=)
+## <a name="examples"></a>Příklady
 
-V okně použité ke vstupu `EvaluateStatement` příkaz určuje, zda je znak rovná se (=) interpretován jako porovnávací operátor nebo jako operátor přiřazení.
-
-V **okamžité** okně znak rovná se (=) interpretován jako operátor přiřazení. Ano například příkaz
+Následující příklad ukazuje čtyři výrazy a jejich výsledkem **okamžité** okno pro projekt jazyka Visual Basic.
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
+j = 2
+Expression has been evaluated and has no value
+
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
 ```
-
-přiřadí hodnotu proměnné `varB` proměnné `varA`.
-
-V **příkaz** okna, naopak znak rovná se (=) interpretován jako operátor porovnání. Nelze použít operace přiřazení v **příkaz** okna. Tak například, pokud hodnoty proměnných `varA` a `varB` jsou odlišné, pak příkaz
-
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
-vrací hodnotu `False`.
 
 ## <a name="first-chance-exception-notifications"></a>Oznámení o první odpovídající výjimce
 

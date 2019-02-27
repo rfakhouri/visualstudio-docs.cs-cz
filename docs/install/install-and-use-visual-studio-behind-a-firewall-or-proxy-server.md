@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: feb115bb3fe7114b6379e27c09279165e6ca7a7e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796618"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954345"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
@@ -133,7 +133,7 @@ Nabízíme [ **živý chat** ](https://visualstudio.microsoft.com/vs/support/#ta
 
 Tady je několik dalších možností podpory:
 
-* Hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
+* Hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Navrhnout funkci sledování problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
 * Použití vaší [Githubu](https://github.com/) účet ke komunikaci s námi a dalších Visual Studio získávají vývojáři v [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio).
 

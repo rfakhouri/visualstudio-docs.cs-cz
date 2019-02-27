@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722275"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954426"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odkaz na hodnotu barvy pro sadu Visual Studio
 
@@ -553,7 +553,7 @@ Při použití této referenční příručce, mějte na paměti:
 
 | Světlý | Tmavý | Modrá | Používá pro... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![#FFFDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF vzorníku")<br />`#FFFDF4BF` | Akce tlačítka, položky pole se seznamem, tlačítka panelu příkazů, rozevíracích tlačítek a položky nabídky: pozadí |
+| ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFFDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF vzorníku")<br />`#FFFDF4BF` | Akce tlačítka, položky pole se seznamem, tlačítka panelu příkazů, rozevíracích tlačítek a položky nabídky: pozadí |
 | ![Vzorník #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB vzorníku")<br />`#FFCCCEDB` | ![#FF3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 vzorníku")<br />`#FF3F3F46` | ![#FF465A7D vzorníku](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D vzorníku")<br />`#FF465A7D` | Automaticky skrýt ohraničení karty |
 | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FF293955 vzorníku](../../extensibility/ux-guidelines/media/293955.png "#FF293955 vzorníku")<br />`#FF293955` | Automaticky Skrýt kartu výchozí a přechodu pozadí |
 | ![#FF444444 vzorníku](../../extensibility/ux-guidelines/media/444444.png "#FF444444 vzorníku")<br />`#FF444444` | ![#FFD0D0D0 vzorníku](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 vzorníku")<br />`#FFD0D0D0` | ![Vzorník #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | Automaticky skrýt textem karty, text záhlaví okna bez fokusu nástroje a kartu text z okna nástroje |

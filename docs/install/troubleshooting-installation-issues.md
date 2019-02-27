@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931569"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953966"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Řešení potíží s instalací sady Visual Studio 2017 a upgradovat problémy
 
@@ -84,7 +84,7 @@ Tady je tabulka znázorňující známé problémy a některé řešení, které
 
 ## <a name="how-to-get-visual-studio-installation-logs"></a>Jak získat protokoly instalace sady Visual Studio
 
-Protokoly instalace jsou potřeba k odstranění většiny potíží instalace. Po odeslání chyby pomocí [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) ve Visual Studio Installerem. Tyto protokoly jsou automaticky obsažené v sestavě.
+Protokoly instalace jsou potřeba k odstranění většiny potíží instalace. Po odeslání chyby pomocí [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio.md) ve Visual Studio Installerem. Tyto protokoly jsou automaticky obsažené v sestavě.
 
 Pokud budete kontaktovat Microsoft Support, možná budete muset poskytnout tyto protokoly instalace pomocí [sady Microsoft Visual Studio a nástroj pro shromažďování protokolů rozhraní .NET Framework](https://aka.ms/vscollect). Nástroj pro shromažďování protokolů shromažďuje protokoly instalace z všechny komponenty nainstalované Visual Studio 2017, například rozhraní .NET Framework, sady SDK Windows a SQL Server. Shromáždí se také informace o počítači inventář Instalační služby systému Windows a informace v protokolu událostí Windows pro instalační program sady Visual Studio, instalační služby systému Windows a nástroj Obnovení systému.
 
