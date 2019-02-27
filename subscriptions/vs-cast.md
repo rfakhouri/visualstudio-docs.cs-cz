@@ -6,21 +6,19 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech PŘETYPOVÁNÍ zvýrazněte k dispozici ve vybraných předplatných sady Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ac1d960ea16346de6d1ca12a2b0602eedf47f704
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379810"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840894"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Zvýrazněte PŘETYPOVÁNÍ výhoda v předplatných sady Visual Studio
 
-Vývojáři potřebují zásadních informací na svůj software při migraci do cloudu. Pomocí PŘETYPOVÁNÍ zvýraznit předplatitelé sady Visual Studio Enterprise rychle zkontrolovat svůj zdrojový kód aplikace k identifikaci připravenosti cloudových aplikací pro migraci do Azure a monitorovat průběh jejich aplikace během a po migraci.  
+Vývojáři potřebují zásadních informací na svůj software při migraci do cloudu. Pomocí PŘETYPOVÁNÍ zvýraznit předplatitelé sady Visual Studio Enterprise rychle zkontrolovat svůj zdrojový kód aplikace k identifikaci připravenosti cloudových aplikací pro migraci do Azure a monitorovat průběh jejich aplikace během a po migraci.
 
-Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jeden měsíc zadarmo si vyzkoušejte úplné funkce zvýrazněte PŘETYPOVÁNÍ pro až o pěti aplikace na předplatitele. 
+Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jeden měsíc zadarmo si vyzkoušejte úplné funkce zvýrazněte PŘETYPOVÁNÍ pro až o pěti aplikace na předplatitele.
 
 
 ## <a name="activation-steps"></a>Postup aktivace
@@ -32,7 +30,7 @@ Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jede
    > [!div class="mx-imgBorder"]
    > ![PŘETYPOVÁNÍ zvýraznění výhodu dlaždice](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-   
+
 0. Zobrazí se zpráva oznamující, váš kód byl úspěšně načten.  Klikněte na tlačítko **aktivovat**, v tomto okamžiku budete přesměrováni na stránku zvýrazněte PŘETYPOVÁNÍ, kde můžete pokračovat v procesu aktivace.  (Pokud nevyberete aktivovat, vždy se můžete vrátit zpět k dlaždici zvýrazněte PŘETYPOVÁNÍ na portálu předplatného.  Odkaz "Kopie kódu" se změní na "Aktivovat", a že na něj kliknete bude pokračovat, proces aktivace.)
 
 0. Budete přesměrováni na stránku zvýrazněte PŘETYPOVÁNÍ, kde můžete prozkoumat funkce vašeho předplatného.  Až budete připraveni k vytvoření účtu, jednoduše zadejte svoje kontaktní informace ve webovém formuláři a klikněte na **odeslat**.
@@ -43,16 +41,16 @@ Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jede
    > [!NOTE]
    > Počet aktivací výhody zvýrazněte PŘETYPOVÁNÍ jsou omezené na deset na organizaci.  Pokud jste už byl využitý vaší organizace desetkrát, nebude možné zvýraznit PŘETYPOVÁNÍ výhodou, aktivujte a obdržíte e-mail s další informace.
 
- 0. Po odeslání vašich informací, zobrazí se vám na stránce potvrzení přijetí vaší žádosti.    
+ 0. Po odeslání vašich informací, zobrazí se vám na stránce potvrzení přijetí vaší žádosti.
 
     > [!div class="mx-imgBorder"]
     > ![PŘETYPOVÁNÍ zvýraznění Děkujeme, že stránka](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  PŘETYPOVÁNÍ tým bude vyhodnocovat vaši žádost a bude vás kontaktovat a dokončit vytvoření vašeho účtu.  
+0.  PŘETYPOVÁNÍ tým bude vyhodnocovat vaši žádost a bude vás kontaktovat a dokončit vytvoření vašeho účtu.
 
 0.  Obdržíte také následující e-mailu z PŘETYPOVÁNÍ potvrzení přijetí vaší žádosti.
 
-   *Děkujeme vám za vaši žádost o aktivaci přístupu 30denní zvýrazněte PŘETYPOVÁNÍ – exkluzivní nabídka pro zákazníky Microsoft Visual Studio Enterprise!*  
+   *Děkujeme vám za vaši žádost o aktivaci přístupu 30denní zvýrazněte PŘETYPOVÁNÍ – exkluzivní nabídka pro zákazníky Microsoft Visual Studio Enterprise!*
 
    *Vaše žádost o aktivaci a přístup, abyste měli na očích PŘETYPOVÁNÍ aktuálně revizi. Z jiné mi uslyší ve více než 48 hodin.*
 
@@ -60,7 +58,7 @@ Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jede
    *Greg*
 
 
-Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšné vytvoření vašeho účtu a s výzvou, abyste na aktivační odkaz pro dokončení procesu aktivace. 
+Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšné vytvoření vašeho účtu a s výzvou, abyste na aktivační odkaz pro dokončení procesu aktivace.
 
    *Úspěšně jsme ověřit a ověřit vaši žádost o přístup k PŘETYPOVÁNÍ zvýraznění. Vítejte na palubě!*
 
@@ -76,7 +74,7 @@ Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšn�
     -   [Příručka Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
     -   Výukové video - [konfigurace vašeho portfolia](https://www.youtube.com/watch?v=MDm8ln4vuGE)
     -   Výukové video - [připojení vaší aplikace](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-    
+
    *Nejlepším řešením,*
    *Greg*
 
@@ -120,4 +118,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 Pokud jste ještě neaktivovali Azure benefit, který je součástí vašeho předplatného, navštivte [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na Azure dlaždici v kategorii nástroje pro nastavení vašeho předplatného Azure a jejího uplatnění kreditů Azure je zdarma.
 
-A nezapomeňte se podívat ukázku uživatele průvodce a uvedené v e-mailu společnosti Greg výukových videí. 
+A nezapomeňte se podívat ukázku uživatele průvodce a uvedené v e-mailu společnosti Greg výukových videí.

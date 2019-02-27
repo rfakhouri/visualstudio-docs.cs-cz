@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6f1d12e5735a0c285918c4621083bf6c1b6769
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31af6efb2021567b9eb4a5f5048b367c57971fee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949792"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841735"
 ---
 # <a name="upgrading-projects"></a>Upgrade projektů
 
@@ -64,7 +64,7 @@ Pokud změníte informací uchovávaných v souboru projektu mezi různými verz
 
 Staré mechanismus, který používá <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> rozhraní je stále podporovány, ale koncepčně upgraduje systém projektu jako součást po otevření projektu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Rozhraní je tedy volána prostředí sady Visual Studio, i když <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> je volána nebo implementované rozhraní. Tento přístup umožňuje používat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> implementovat kopii projektu pouze části upgradu a delegujte zbývající práce, která musí provést na místě (případně na nové umístění) pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> rozhraní.
 
-Pro ukázková implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, naleznete v tématu [VSSDK ukázky](http://aka.ms/vs2015sdksamples).
+Pro ukázková implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, naleznete v tématu [VSSDK ukázky](https://aka.ms/vs2015sdksamples).
 
 Následujících scénářích vznikají s upgradem projektu:
 

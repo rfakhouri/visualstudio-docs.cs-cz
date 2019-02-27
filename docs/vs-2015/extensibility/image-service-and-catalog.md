@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d1cd4b752bff98555159a751a04c1afbbd12a4bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768704"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844421"
 ---
 # <a name="image-service-and-catalog"></a>Služba vyhledávání a katalog obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -651,11 +651,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Aktualizujte kód Refaktorovat pro použití image služby k vyžádání monikery prostřednictvím aktualizované mapování. (To může znamenat aktualizace **CrispImages** pro spravovaného kódu, nebo si vyžádat HBITMAPs nebo HICONs od služba bitových kopií a prošly kolem pro nativní kód.)  
 
 ## <a name="testing-your-images"></a>Testování obrázků  
- Nástroj Prohlížeč knihovny obrázků můžete použít k testování vaše image manifesty, abyste měli jistotu, že všechno je správně nastavená oprávnění. Nástroj v [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Pro tento nástroj a další dokumentaci najdete [tady](http://aka.ms/VSImageThemeTools).  
+ Nástroj Prohlížeč knihovny obrázků můžete použít k testování vaše image manifesty, abyste měli jistotu, že všechno je správně nastavená oprávnění. Nástroj v [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Pro tento nástroj a další dokumentaci najdete [tady](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>Další zdroje  
 
-### <a name="samples"></a>Ukázky kódu  
+### <a name="samples"></a>Ukázky  
  Některé ukázky sady Visual Studio na Githubu byla aktualizována, aby ukazují, jak použít službu bitových kopií v rámci různých bodů rozšiřitelnosti sady Visual Studio.  
 
  Zkontrolujte [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) nejnovější ukázek.  

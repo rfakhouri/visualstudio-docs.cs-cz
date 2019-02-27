@@ -4,24 +4,22 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Další informace o Enterprise Mobility + Security výhodu součástí vašeho předplatného sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380058"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841192"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
 Roční cloudové služby Visual Studio Enterprise a standardních předplatných zahrnují Enterprise Mobility + Security (EMS).  Zabezpečení a Správa identit, zařízení, aplikací a dat s využitím EMS – Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics a Microsoft Cloud App Security.
 
 > [!NOTE]
-> Pokud si koupíte předplatné více rok prostřednictvím multilicenčních programů, EMS benefit je momentálně dostupný jenom v prvním roce.  
+> Pokud si koupíte předplatné více rok prostřednictvím multilicenčních programů, EMS benefit je momentálně dostupný jenom v prvním roce.
 
 ## <a name="activation-steps"></a>Postup aktivace
 

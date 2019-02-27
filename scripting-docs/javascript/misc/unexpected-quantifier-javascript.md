@@ -1,14 +1,9 @@
 ---
 title: Neočekávaný kvantifikátor (JavaScript) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5018
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 693fdf4091a6f6fdf63c701b63c4355a67ee6fbd
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f18195f344adca16fce7403d225c42826a2af544
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096743"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843400"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Neočekávaný kvantifikátor (JavaScript)
 Při vytváření vaší vyhledávací vzor regulárního výrazu, vytvoříte prvek modelu s faktorem neplatné opakování. Například vzor  
@@ -46,8 +40,8 @@ Při vytváření vaší vyhledávací vzor regulárního výrazu, vytvoříte p
 |+|Jeden nebo více opakování|  
 |?|Žádný nebo jeden opakování|  
 |{n}|n opakování|  
-|{n}|n nebo další opakování|  
-|{n, m}|Z n až m, včetně opakování|  
+|{n,}|n nebo další opakování|  
+|{n,m}|Z n až m, včetně opakování|  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   

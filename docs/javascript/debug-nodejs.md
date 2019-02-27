@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768402"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843790"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Ladění aplikací v jazyce JavaScript nebo TypeScript v sadě Visual Studio
 
@@ -168,7 +168,7 @@ Ladění dynamicky generované soubory není automatické. Nelze automaticky dos
    Pro Chrome, přejděte na **Průzkumníka řešení > dokumenty skriptu > YourPageName**.
 
     > [!NOTE]
-    > Pokud používáte Chrome, může se zobrazit zpráva `no source is available between `<script>` tags.`This is OK, just continue debugging.
+    > Pokud používáte Chrome, může se zobrazit zpráva **žádný zdroj není k dispozici mezi \<skript > značky**. To je v pořádku, stačí pokračovat v ladění.
 
    Internet Explorer, přejděte na **Průzkumníka řešení > dokumenty skriptu > Windows Internet Explorer > YourPageName**.
 

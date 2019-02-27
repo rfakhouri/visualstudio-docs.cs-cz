@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/25/2019
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Další informace o předplatné školení Pluralsight, který je součástí vybraných předplatných sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 197e162df314e039bbf748a7afc208c0639531d1
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089237"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841637"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -29,29 +27,29 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 1. Pokud chcete předplatné aktivovat, připojte se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na **získat kód** odkaz na dlaždici výhody Pluralsightu, umístěné v části vývoj Professional.
    > [!div class="mx-imgBorder"]
    > ![Výhody pro Pluralsight dlaždice](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
-   > 
+   >
    > [!IMPORTANT]
    > Po kliknutí na odkaz "Kopie kódu" na dlaždici výhody Pluralsightu, může se zobrazit následující zpráva:
-   > 
+   >
    > **"Mějte prosím na paměti:   Pokud jste dříve aktivovali jinou nabídku od Pluralsightu prostřednictvím předplatného sady Visual Studio, tento kód vám neumožní vytvořit nový účet Pluralsight."**
 
 2. Obdržíte oznámení, že kód kupónu se úspěšně načetl.  Klikněte na tlačítko **aktivovat**.
    > [!div class="mx-imgBorder"]
    > ![Aktivovat výhody pro Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Budete přesměrováni na stránku Pluralsight, která je zahrnutá ve prospěch s vaším předplatným sady Visual Studio.  
+3. Budete přesměrováni na stránku Pluralsight, která je zahrnutá ve prospěch s vaším předplatným sady Visual Studio.
    - Zadejte kontaktní údaje ve formuláři
    - Klikněte na zaškrtávací políčko pro přijetí podmínek použití a ochrana osobních údajů zásad
    - Klikněte na tlačítko **vyjadřuji souhlas výhodou, aktivujte**.
      > [!div class="mx-imgBorder"]
-     > ![Aktivace výhody pro Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
+     > ![Aktivace výhody pro Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
      > [!div class="mx-imgBorder"]
      > ![Výhody pro Pluralsight podmínky](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
 5. To může chvíli trvat, nastavení vašeho účtu.  Jakmile, která se dokončí, zobrazí na stránce potvrzení a dostanou e-mail s informacemi o přihlášení.  E-mailu bude odesílat na alias, že jste zadali při vytváření účtu.  Nezapomeňte si zkontrolovat vaše Nevyžádaná pošta nebo nevyžádané pošty složky e-mailu, pokud se vám nedaří najít zprávu.
    > [!div class="mx-imgBorder"]
    > ![Výhody pro Pluralsight potvrzení](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   > 
+   >
    > [!NOTE]
    > Pokud váš účet nemá oprávnění využívat nové nabídky, se popisují e-mailu, který jste dostali, že nastal problém s vytvořením účtu, protože nemá oprávnění.  Bude také obsahovat informace, které umožňují obraťte se na tým podpory od Pluralsight, kdo může odpověděli na všechny otázky, které jste uzavřeli o vašem účtu.
 
@@ -81,7 +79,7 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & služby pro vývojáře, MCT Software a služby, nejcennější Professional (MVP) Regional Director (RD), Microsoft Partner Network (MPN), FTE Imagine.*
 
-<sup>2</sup>*při prodloužení předplatného: Tato možnost obnoví výhody pro the Pluralsight ve vybraných předplatných sady Visual Studio.   Například pokud máte ročního předplatného se obnovit každý rok výhoda je k dispozici, každý rok po obnovení. Pokud máte více roční předplatné, jednou během období předplatného je k dispozici, výhody pro Pluralsight.  Pokud obnovíte více roční předplatné, výhody budou k dispozici znovu po obnovení.*
+<sup>2</sup>*při prodloužení předplatného: Tato možnost obnoví výhody pro the Pluralsight ve vybraných předplatných sady Visual Studio. Například pokud máte ročního předplatného se obnovit každý rok výhoda je k dispozici, každý rok po obnovení. Pokud máte více roční předplatné, jednou během období předplatného je k dispozici, výhody pro Pluralsight.  Pokud obnovíte více roční předplatné, výhody budou k dispozici znovu po obnovení.*
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
@@ -113,4 +111,4 @@ O:  Na konci platnosti vašeho bezplatného předplatného Pluralsight můžete 
 -  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Další kroky
-Po vytvoření účtu, jste připravení začít školení.  Navštivte [ https://www.pluralsight.com ](http://www.pluralsight.com) a klepněte na **přihlášení** v pravém horním rohu stránky a spusťte nový kurz nebo vraťte se do kurzu již probíhá. 
+Po vytvoření účtu, jste připravení začít školení.  Navštivte [ https://www.pluralsight.com ](http://www.pluralsight.com) a klepněte na **přihlášení** v pravém horním rohu stránky a spusťte nový kurz nebo vraťte se do kurzu již probíhá.

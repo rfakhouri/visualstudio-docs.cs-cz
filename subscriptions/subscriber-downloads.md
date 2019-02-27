@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Zjistěte, jak vyhledat a stáhnout produkty Microsoftu, které jsou součástí vašeho předplatného sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803211"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842997"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele soubory ke stažení v předplatných sady Visual Studio
 Jako součást vaší výhody pro předplatitele máte přístup k široké škále stažení softwaru.
@@ -58,9 +56,9 @@ Kliknutím na název produktu nebo na **informace** odkazu se zobrazí podrobnos
 
 V podokně podrobností, které můžete také kliknutím na **klíče** kartu a zkontrolujte stav kódy product key.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro kódy product key](_img/subscriber-downloads/vs2017-pro-keys.png)
+> ![Visual Studio 2017 Pro product keys](_img/subscriber-downloads/vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Získat kódy product key
 Získání produktu klíče ke stažení, můžete buď kliknout na modrý klíč s názvem **získat klíč** nebo pokud již prohlížíte v podokně podrobností, klikněte na **uplatnit kód** na **klíče** Karta.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro deklarace identity kódy product key](_img/subscriber-downloads/vs2017-pro-claim-keys.png)
+> ![Visual Studio 2017 Pro claim product keys](_img/subscriber-downloads/vs2017-pro-claim-keys.png)

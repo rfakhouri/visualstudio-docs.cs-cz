@@ -10,12 +10,12 @@ ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: 3f78476cc97cad90460d535f04759211540fc8aa
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 570ceba7936631563706ab78bd4671b6f7db07ae
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55701296"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844415"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Ladění aplikací v místním kontejneru Dockeru
 ## <a name="overview"></a>Přehled
@@ -85,9 +85,9 @@ Podpora pro Docker v sadě Visual Studio 2017 umožňuje získat produktivitu m�
 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Další informace o Dockeru pomocí sady Visual Studio, Windows a Azure
 * [Kontejner vývoj pomocí sady Visual Studio](/visualstudio/containers) – stránka centra vývoje kontejneru
-* [Integrace dockeru pro Azure kanály](http://aka.ms/dockertoolsforvsts) – sestavování a nasazování kontejnerů dockeru
-* [Nástroje dockeru pro Visual Studio Code](http://aka.ms/dockertoolsforvscode) – jazykové služby pro úpravy souborů dockeru ve více scénářích e2e už
-* [Informace o kontejneru Windows](http://aka.ms/containers)– informace o Windows serveru a Nano Server
+* [Integrace dockeru pro Azure kanály](https://aka.ms/dockertoolsforvsts) – sestavování a nasazování kontejnerů dockeru
+* [Nástroje dockeru pro Visual Studio Code](https://aka.ms/dockertoolsforvscode) – jazykové služby pro úpravy souborů dockeru ve více scénářích e2e už
+* [Informace o kontejneru Windows](https://aka.ms/containers)– informace o Windows serveru a Nano Server
 * [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) - [dokumentace ke službě Azure Kubernetes Service](/azure/aks)
 
 ## <a name="various-docker-tools"></a>Různé nástroje Dockeru

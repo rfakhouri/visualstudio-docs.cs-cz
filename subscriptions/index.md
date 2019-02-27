@@ -7,16 +7,9 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856824"
 ---
+
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 
 Předplatná sady Visual Studio je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat skvělé aplikace pro vaše preferované platformy a zařízení, včetně Windows, iOS, Androidu a Linuxu.  Výhody předplatná zahrnují přístup k nástrojům pro vývojáře, cloudových služeb a softwaru, školení a podporu pro vývoj a testování.
@@ -74,7 +67,7 @@ Předplatitelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visua
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Služby Azure DevOps</h3>
+                        <h3>Azure DevOps Services</h3>
                     </div>
                 </div>
             </div>
@@ -169,7 +162,7 @@ Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Cloud Services</h3>
+                        <h3>Cloudové služby</h3>
                         <p>S vaším předplatným sady Visual Studio můžete obdržet měsíční kredit Azure a bezplatný přístup ke službám Azure, zlevněné sazby pro vývoj a testování a exkluzivní přístup k imagi jenom pro předplatitele g alerie s předkonfigurovanými virtuálními počítači. V závislosti na vaše předplatné může zahrnovat cloudové služby:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
@@ -177,7 +170,7 @@ Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat
                             <li><a href="/visualstudio/subscriptions/vs-vsts">Služby Azure DevOps</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Předplatné pro vývojáře pro Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Vývojářský účet pro Windows</a></li>
-                            <li>Power BI Pro</li>
+                            <li>PowerBI Pro</li>
                         </ul>
                     </div>
                 </div>

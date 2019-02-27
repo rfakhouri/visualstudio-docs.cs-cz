@@ -4,19 +4,19 @@ description: Popisuje, jak nastavit průběžnou integraci služby Azure DevOps 
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: 01793705d5d89d31b82a84d1ccca192d043db5a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe4a7111088ca41534a487cb52872a210c35dbc9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775562"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844052"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Průběžná integrace služby Azure DevOps pomocí projekty nasazení skupiny prostředků Azure
+
 K nasazení šablony Azure, můžete provádět úlohy v různých fázích: Kopírovat sestavení, testování, do Azure (tzv. "Přípravného") a nasaďte šablonu. Existují dva různé způsoby nasazování šablon ke službám Azure DevOps. Obě metody poskytují stejné výsledky, proto zvolte ten, který nejlépe vyhovuje požadavkům vašeho pracovního postupu.
 
 1. Přidáte jednoho kroku do vašeho kanálu sestavení, který spustí skript prostředí PowerShell, který je součástí nasazení projektu skupiny prostředků Azure (Deploy-AzureResourceGroup.ps1). Tento skript zkopíruje artefakty a pak nasadí šablony.

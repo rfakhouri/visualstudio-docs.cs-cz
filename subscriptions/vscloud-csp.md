@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/15/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informace pro poskytovatele Cloud Solution Provider, jak zakoupit a spravovat předplatné cloudu Visual Studio pro vaše zákazníky.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b17c5bb663f364cda4a9a93d63f2583e59426bac
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270005"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842634"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 
@@ -34,7 +32,7 @@ Musíte nastavit vašeho tenanta zákazníka v partnerském centru a předplatn�
 [Víc se uč](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>Kdo může zakoupit předplatná sady Visual Studio?
-Každý, kdo má [přístup přispěvatele nebo vlastníka](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) do Azure můžete zakoupit předplatné předplatná sady Visual Studio. 
+Každý, kdo má [přístup přispěvatele nebo vlastníka](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) do Azure můžete zakoupit předplatné předplatná sady Visual Studio.
 
 ## <a name="how-to-buy"></a>Jak koupit
 
@@ -126,4 +124,4 @@ O:  Ne, se ceny pro předplatná sady Visual Studio bez stromové struktury. U n
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>DOTAZ: Existují Azure pro vývoj/testování cenové možnosti pro CSP?
 
-O: V tuto chvíli to není možné. Vaši zákazníci můžou využít výhod [ceny Azure pro vývoj/testování](http://aka.ms/azuredevtestpricing), ale nemáme nic speciálně pro poskytovatele CSP.
+O: V tuto chvíli to není možné. Vaši zákazníci můžou využít výhod [ceny Azure pro vývoj/testování](https://aka.ms/azuredevtestpricing), ale nemáme nic speciálně pro poskytovatele CSP.

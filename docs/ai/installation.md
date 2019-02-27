@@ -8,15 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231945"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842464"
 ---
 # <a name="installation"></a>Instalace
 
@@ -26,7 +25,7 @@ Visual Studio Tools for AI je nainstalovat v operačních systémech Windows 64-
 
 Toto rozšíření funguje s Visual Studio 2015 a Visual Studio 2017 Community edition nebo vyšší.
 
-Můžete si stáhnout nástroje od [Visual Studio Marketplace](http://aka.ms/vstoolsforai), nebo z v rámci sady Visual Studio:
+Můžete si stáhnout nástroje od [Visual Studio Marketplace](https://aka.ms/vstoolsforai), nebo z v rámci sady Visual Studio:
 
 1. Vyberte **nástroje** > **rozšíření a aktualizace**.
 

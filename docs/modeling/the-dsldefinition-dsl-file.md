@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 876868d8c2faf483f1033bab1ff8ac14f6e9ab10
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88c2198f0908e0ef8f7918d42f4ba256378e0e60
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956906"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841841"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 
@@ -78,7 +78,7 @@ Tato část popisuje **Průzkumník DSL** chování (definované v části XmlSe
 
 V celém souboru DslDefinition.dsl můžete provést křížové odkazy na konkrétní položky zástupných názvů. Například každá definice relace obsahuje dílčí část zdrojového a cílového dílčí část. Každý dílčí část obsahuje zástupný název třídy objektu, který může být propojený s relace:
 
-```
+```xml
 <DomainRelationship ...        Name="LibraryHasMembers" Namespace="ExampleNamespace" >    <Source>      <DomainRole ...>
        <RolePlayer>
          <DomainClassMoniker Name="Library" />
@@ -89,7 +89,7 @@ V celém souboru DslDefinition.dsl můžete provést křížové odkazy na konkr
 
 Obvykle, obor názvů odkazované položky (v tomto příkladu `Library` doménové třídy) je stejný jako odkazující položky (v tomto případě doménového vztahu LibraryHasMembers). V těchto případech se musí poskytnout monikeru jenom název třídy. V opačném případě byste měli používat /Namespace/Name úplný formát:
 
-```
+```xml
 <DomainClassMoniker Name="/ExampleNameSpace/Library" />
 ```
 
@@ -107,7 +107,7 @@ Příklad diagramu komponent obsahuje sadu standardních primitivních typů, i 
 
 Každá definice typu externího se skládá pouze název a obor názvů, jako je například řetězec a systému:
 
-```
+```xml
 <ExternalType Name="String" Namespace="System" />
 ```
 
@@ -119,7 +119,7 @@ Externí typy nejsou omezené na standardní typy knihoven.
 
 Typické specifikace výčet vypadá podobně jako v tomto příkladu:
 
-```
+```xml
 <DomainEnumeration IsFlags="true" Name="PageSort"          Namespace="Fabrikam.Wizard">
   <Literals>
     <EnumerationLiteral Name="Start" Value="1"/>
@@ -136,7 +136,7 @@ Většina prvků v jakékoli definice jazyka specifického pro doménu je přím
 
 Každá třída má sadu vlastností a může mít základní třídu. V příkladu Diagram komponent `NamedElement` je abstraktní třída, která má `Name` vlastnost, jejíž typ je řetězec:
 
-```
+```xml
 <DomainClass Id="ee3161ca-2818-42c8-b522-88f50fc72de8"  Name="NamedElement" Namespace="Fabrikam.CmptDsl5"      DisplayName="Named Element"  InheritanceModifier="Abstract">
   <Properties>
     <DomainProperty Id="ef553cf0-33b5-4e34-a30b-cfcfd86f2261"   Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
@@ -150,7 +150,7 @@ Každá třída má sadu vlastností a může mít základní třídu. V příkl
 
 `NamedElement` základ některé z jiné třídy, jako je `Component`, který má svou vlastní vlastnosti kromě `Name` vlastnost, která dědí z `NamedElement`. BaseClass podřízený uzel obsahuje odkaz na moniker. Vzhledem k tomu, že třída odkazovaná je ve stejném oboru názvů, je nutný pouze jeho název v monikeru:
 
-```
+```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
   <BaseClass>
     <DomainClassMoniker Name="NamedElement" />
@@ -194,7 +194,7 @@ Každá vlastnost domény má název a typ. Název musí být jedinečný v rám
 
 Typ musí odkazovat na jeden z uvedených v `Types` oddílu. Obecně platí zástupný název musí obsahovat obor názvů.
 
-```
+```xml
 <DomainProperty Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
   <Type>
     <ExternalTypeMoniker Name="/System/String" />
@@ -246,13 +246,13 @@ Každý vztah obsahuje zdrojové a cílové role, které mají následující at
 
 -   Role `Name` je název, který se používá v rámci třídy vztahu k odkazování za tímto účelem odkaz. Podle konvence názvu role je vždy jednotném čísle, protože každý odkaz má pouze jednu instanci na každém konci. Následující kód bude fungovat:
 
-    ```
+    ``` 
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
 -   Ve výchozím nastavení `IsPropertyGenerator` atribut je nastaven na hodnotu true. Pokud je nastavena na hodnotu false, žádná vlastnost je vytvořena na třídy aktéra Role. (V takovém případě `op.Targets`, například nebude fungovat). Je však stále možné použití vlastního kódu pro přechod relaci nebo získat přístup k odkazy sami, pokud vlastní kód explicitně používá relace:
 
-    ```
+    ``` 
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
     foreach (Connection link in Connection.GetLinksToTargets(op)) ...
     ```
@@ -287,7 +287,7 @@ Každý segment začíná název relace. V segmentu propojení objektu relace p�
 
 Příklad diagramu komponent obsahuje cestu ParentElementPath vizuál ShapeMap InPort. Tato cesta začínající následujícím způsobem:
 
-```
+``` 
     ComponentHasPorts.Component
 ```
 
@@ -295,13 +295,13 @@ V tomto příkladu InPort je podtřídou třídy ComponentPort a nemá vztah Com
 
 Při zápisu jazyka C# pro tento model, můžete přejít přes odkaz v jednom kroku pomocí vlastnost, která generuje relace na každém tříd, které se týká:
 
-```
+``` 
      InPort port; ...  Component c = port.Component;
 ```
 
 Ale je potřeba udělat i směrování explicitně v cestě syntaxi. Kvůli tomuto požadavku můžete snadněji přistupovat zprostředkující odkaz. Následující kód provede směrování z odkazu na komponentu:
 
-```
+``` 
     ComponentHasPorts.Component / ! Component
 ```
 
@@ -313,7 +313,7 @@ Pokud jazyk uživatel přetáhne položku ze **nástrojů** do diagramu, je vytv
 
 Potenciální třída hostitele, jako jsou komponenty, přijme nový prvek pouze v případě, že třída hostitele nemá direktivě sloučení pro třídu nového elementu. Například uzel doménová třída s názvem = "Součást" obsahuje:
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
     <ElementMergeDirective>
       <Index>
@@ -337,7 +337,7 @@ Můžete použít více než jeden segment v cestě k vytvoření propojení. Po
 
 Například můžete přidat tato direktiva sloučení elementů do třídy součásti:
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
   <ElementMergeDirective>
     <Index>
@@ -372,7 +372,7 @@ Každý `XmlClassData` uzel obsahuje tyto podřízené uzly a atributy:
 
 -   **Třída ElementName** řetězec, který určuje značky XML serializovaných instancí této třídy. Podle konvence ElementName je obvykle stejný jako název třídy s výjimkou první písmena jsou malá písmena. Například ukázkový soubor modelu začíná takto:
 
-    ```
+    ```xml
     <componentModel ...
     ```
 
@@ -380,7 +380,7 @@ Každý `XmlClassData` uzel obsahuje tyto podřízené uzly a atributy:
 
 -   **Název atributu Monikeru**, který identifikuje název atributu XML v monikeru. V tomto fragmentu serializovaný soubor uživatele Autor jazyka specifického pro doménu definované **název elementu Monikeru** jako "inPortMoniker" a **název atributu Monikeru** jako "cesty":
 
-    ```
+    ```xml
     <inPortMoniker path="//Component2/InPort1" />
     ```
 
@@ -400,7 +400,7 @@ Ve výchozím nastavení **reprezentace** atribut je nastaven na atribut. Pokud 
 
 Úplný zástupný název elementu v souboru serializovaný model je cestu z kořene modelu dolů strom vztahů citací klíčem monikeru v každém bodu vložení. Například InPorts jsou vložené v rámci komponenty, které jsou zase vložené v kořenovém modelu. Proto je platný zástupný název:
 
-```
+```xml
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
@@ -418,7 +418,7 @@ V rámci souboru serializovaný model odkazy (o vložení a odkaz relací) jsou 
 
 Soubor DslDefinition.dsl obsahuje například:
 
-```
+```xml
 <XmlClassData ElementName="component" ...>
   <DomainClassMoniker Name="Component" />
   <ElementData>
@@ -429,10 +429,10 @@ Soubor DslDefinition.dsl obsahuje například:
 
 Proto serializovaný soubor obsahuje:
 
-```
-<component name="Component1"> <!-- parent ->
-   <ports> <!-- role ->
-     <outPort name="OutPort1"> <!-- child element ->
+```xml
+<component name="Component1"> <!-- parent -->
+   <ports> <!-- role -->
+     <outPort name="OutPort1"> <!-- child element -->
        ...
      </outPort>
    </ports> ...
@@ -440,7 +440,7 @@ Proto serializovaný soubor obsahuje:
 
 Pokud **UseFullForm** atribut je nastaven na hodnotu true, byla zavedená další úrovně vnoření. Tato vrstva představuje vztah sama. Atribut musí být nastaven na hodnotu true, pokud tento vztah obsahuje vlastnosti.
 
-```
+```xml
 <XmlClassData ElementName="outPort">
    <DomainClassMoniker Name="OutPort" />
    <ElementData>
@@ -453,11 +453,11 @@ Pokud **UseFullForm** atribut je nastaven na hodnotu true, byla zavedená dalš�
 
 Serializovaný soubor obsahuje:
 
-```
-<outPort name="OutPort1">  <!-- Parent ->
-   <targets>  <!-- role ->
-     <connection sourceRoleName="X">  <!-- relationship link ->
-         <inPortMoniker name="//Component2/InPort1" /> <!-- child ->
+```xml
+<outPort name="OutPort1">  <!-- Parent -->
+   <targets>  <!-- role -->
+     <connection sourceRoleName="X">  <!-- relationship link -->
+         <inPortMoniker name="//Component2/InPort1" /> <!-- child -->
      </connection>
     </targets>
   </outPort>
@@ -467,9 +467,9 @@ Serializovaný soubor obsahuje:
 
 Pokud **možnost OmitElement** atribut je nastaven na hodnotu true, relace je vynechán název role, které zkrátí serializovaný soubor a je jednoznačný, pokud máte více než jeden vztah dvou tříd. Příklad:
 
-```
+```xml
 <component name="Component3">
-  <!-- only one relationship could get here: ->
+  <!-- only one relationship could get here: -->
   <outPort name="OutPort1">
      <targets> ...
 ```
@@ -482,7 +482,7 @@ Soubor DslDefinition.dsl je samotný soubor serializovaná a odpovídá do defin
 
 -   **Třídy** je **RoleElementName** vztahu mezi jazyka specifického pro doménu a doménovou třídou.
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...>
   <Classes>
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
@@ -490,7 +490,7 @@ Soubor DslDefinition.dsl je samotný soubor serializovaná a odpovídá do defin
 
 -   **XmlSerializationBehavior** atribut je vložený v části `Dsl` atribut, ale **možnost OmitElement** vztah obsažení byl nastaven atribut. Proto, ne `RoleElementName` zasahující atribut. Naopak **tříd** atribut je `RoleElementName` atribut vztah obsažení mezi **XmlSerializationBehavior** atribut a **XmlClassData** atribut.
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...> ...
   <XmlSerializationBehavior Name="ComponentsSerializationBehavior" >
     <ClassData>
@@ -500,7 +500,7 @@ Soubor DslDefinition.dsl je samotný soubor serializovaná a odpovídá do defin
 
 -   ConnectorHasDecorators je vztah obsažení mezi `Connector` a `Decorator`. `UseFullForm` je nastavená tak, aby zobrazil název relace s její seznam vlastností pro každý odkaz z objektu konektoru. Ale `OmitElement` má také nastavit tak, aby žádné `RoleElementName` obklopuje více odkazy, které jsou vložené v `Connector`:
 
-```
+```xml
 <Connector Name="AssociationLink" ...>
   <ConnectorHasDecorators Position="TargetTop" ...>
     <TextDecorator Name="TargetRoleName"   />
@@ -527,7 +527,7 @@ Mapy obrazců určují vzhled instancí třídy danou doménu na obrazovce, repr
 
 Stejně jako v následujícím příkladu `ShapeMap` elementy mají na minimum, moniker doménové třídy, moniker obrazce a `ParentElementPath` element:
 
-```
+```xml
 <ShapeMap>
   <DomainClassMoniker Name="InPort" />
   <ParentElementPath>
@@ -549,7 +549,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 Kořen modelu nemá mapa obrazce. Místo toho se kořenové odkazuje přímo z diagramu, který má `Class` element:
 
-```
+```xml
 <Diagram Name="ComponentDiagram" >
     <Class>
       <DomainClassMoniker Name="ComponentModel" />
@@ -568,7 +568,7 @@ Mapy obrazců oddílů jsou podtypy map obrazců.
 
 Mapa konektoru minimální odkazuje konektoru a relace:
 
-```
+```xml
 <ConnectorMap>
   <ConnectorMoniker Name="CommentLink" />
   <DomainRelationshipMoniker Name="CommentsReferenceComponents" />

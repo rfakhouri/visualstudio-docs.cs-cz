@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody technické podpory součástí vašeho předplatného sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089221"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841699"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivovat výhody technické podpory v předplatných sady Visual Studio
 
@@ -22,13 +20,13 @@ ms.locfileid: "55089221"
 
 > [!NOTE]
 > Ne všechny odběry na dané úrovni nárok na incidenty podpory. Odběry, které získali prostřednictvím FTE, NFR, MPN, MCT a dalších programů neobdrží incidenty podpory. Pokud vaše předplatné není způsobilá k přijímání incidenty technické podpory, dlaždice technické podpory se už nebude k dispozici jedna z jeho výhod.
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![Dlaždice výhody technické podpory](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Pokud chcete začít používat vaše výhody technické podpory, přejděte na https://my.visualstudio.com/Benefits, přejděte dolů k části Podpora a na dlaždici technické podpory, klikněte na tlačítko **chatu k aktivaci**. 
-2. Tím zahájíte Chat, pokud se zástupcem, kdo může vytvořit ID smlouvy a přístupové ID a ty se vám poskytují. 
+1. Pokud chcete začít používat vaše výhody technické podpory, přejděte na https://my.visualstudio.com/Benefits, přejděte dolů k části Podpora a na dlaždici technické podpory, klikněte na tlačítko **chatu k aktivaci**.
+2. Tím zahájíte Chat, pokud se zástupcem, kdo může vytvořit ID smlouvy a přístupové ID a ty se vám poskytují.
 3. K dokončení procesu budete muset poskytnout zástupce pomocí:
    - E-mailovou adresu, kterou používáte k přihlášení k vašemu předplatnému
    - ID předplatného, který se nachází na [předplatná](https://my.visualstudio.com/subscriptions) kartu.
@@ -38,7 +36,7 @@ ms.locfileid: "55089221"
 
 
 > [!NOTE]
-> K aktivaci účtu podpory v jiném jazyce než angličtině, vyberte svou zemi z [tento seznam](https://support.microsoft.com/help/14084/activate-support-contract).   
+> K aktivaci účtu podpory v jiném jazyce než angličtině, vyberte svou zemi z [tento seznam](https://support.microsoft.com/help/14084/activate-support-contract).
 
 
 ## <a name="how-to-submit-an-incident"></a>Jak odeslat incident
@@ -48,12 +46,12 @@ Jednou máte ID smlouvy a přístupové ID nastavení, když budete potřebovat 
 ### <a name="submit-an-incident-online"></a>Odeslání incidentu online
 
 1. K [odeslání incidentu online](http://support.microsoft.com/oas/), zadejte produkt, kterým potřebujete pomoci. Můžete vybrat z různých seznamů, nebo Hledat podle názvu. Incident můžete odeslat z pro Visual Studio Enterprise 2017, například klikněte na **sady Visual Studio** v **vývojářské nástroje** skupiny.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Technická podpora vyberte incidentu produktu](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. Vyberte produkt, pro který potřebujete podporu. (Například, klikněte na **Visual Studio Enterprise 2017** v seznamu produktů Visual Studio.)
 3. Na **vytvořit incident** stránce, z rozevíracího seznamu vyberte typ příslušný problém. V našem příkladu jsme vybrali **integrované vývojové prostředí (IDE)**.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Výhody technické podpory vytvořit Incident](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. Klikněte na tlačítko **kategorie** , který nejlépe vyhovuje svůj dotaz nebo problém. V našem příkladu jsme vybrali **navrhovat nástroje.**
@@ -64,7 +62,7 @@ Jednou máte ID smlouvy a přístupové ID nastavení, když budete potřebovat 
    - Zadejte ID a ID smlouvy přístup
    - Klikněte na tlačítko **přidat**
 7. Jakmile se přidala smlouva o podpoře, se zobrazí v seznamu smluv podpory Professional. Vyberte a klikněte na tlačítko **pokračovat**.
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![Platby výhody technické podpory](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. Zadejte své kontaktní informace a upřednostňovaný způsob kontaktování a klikněte na tlačítko **pokračovat**.

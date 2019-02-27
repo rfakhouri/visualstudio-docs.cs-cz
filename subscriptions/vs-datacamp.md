@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Další informace o předplatném školení Datacampu součástí vybraných předplatných sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380402"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841426"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -33,7 +31,7 @@ Doba trvání výhody Datacampu závisí na vaše předplatné sady Visual Studi
 3. Na stránce Datacampu můžete vytvořit nový účet.  Můžete nastavit zadejte e-mailovou adresu a heslo a přihlaste se pomocí existujících účtů z Facebooku, LinkedIn a Google.  Jakmile jste zadali přihlašovací údaje, klikněte na tlačítko **Začínáme**.
    > [!div class="mx-imgBorder"]
    > ![Vytvořit nový účet Datacampu](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > Když začnete vytvářet svůj účet, může se zobrazit následující chybová zpráva: "JEJDA!  Svůj propagační kód je neplatná nebo vypršela její platnost."  K tomu dochází, protože když se vytvoří svůj propagační kód, jeho platnost vyprší po několika minutách.  Pokud se zobrazí tato zpráva, jednoduše vrátit [výhody](https://my.visualstudio.com/benefits) stránky a klikněte na **aktivovat** odkaz na dlaždici Datacampu výhodu.
 
@@ -62,7 +60,7 @@ Doba trvání výhody Datacampu závisí na vaše předplatné sady Visual Studi
 
 Můžete kdykoli zastavit a obnovit trénování v příští relaci.  Stačí navštívit [ http://www.datacamp.com ](http://www.datacamp.com)a přihlaste se.  Zobrazí se řídicí panel a můžete pokračovat v vaše právo školení, kde pozastaveno. Stačí kliknout **dál sledovat**.
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Datacampu pokračovat školení](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Způsobilost

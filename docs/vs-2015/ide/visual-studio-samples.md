@@ -11,12 +11,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6a899de205fc22940aa0d48f897ea4ecd6f49ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9161420df2c45aae9ddc0c206a80002a0450710
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752335"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842871"
 ---
 # <a name="visual-studio-samples"></a>Ukázky sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Ukázky sady Visual Studio můžete najít na [galerie kódů MSDN](http://go.mi
 |[C++ – ukázky](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Ukazuje, jak používat různé funkce v jazyce C++.|
 |[Ukázky rozhraní DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Ukazuje, jak použít rozhraní DirectX.|
 |[Ukázky vývoje pro systém Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Ukazuje, jak používat vývojářské nástroje pro Office v sadě Visual Studio. Aktuální ukázky najdete v tématu [MSDN Developer Samples: Učení prostřednictvím kódu](http://go.microsoft.com/fwlink/?LinkID=248199).|
-|[Ukázky VSSDK](http://aka.ms/vs2015sdksamples)|Ukazuje, jak rozšíření sady Visual Studio.|
+|[Ukázky VSSDK](https://aka.ms/vs2015sdksamples)|Ukazuje, jak rozšíření sady Visual Studio.|
 
 ## <a name="see-also"></a>Viz také
  [Začínáme s jazykem Visual C# a Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

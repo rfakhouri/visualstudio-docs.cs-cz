@@ -1,7 +1,7 @@
 ---
 title: Rychlý start – vytvoření projektu Pythonu pomocí Cookiecutter
 description: V tomto rychlém startu vytvoříte projekt sady Visual Studio pro Python s pomocí šablon Cookiecutter.
-ms.date: 12/06/2018
+ms.date: 02/25/2019
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76aa53b88bc9c9ecd1fc95915204c070aaa7207b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920155"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843101"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Rychlý start: Vytvoření projektu ze šablony Cookiecutter
 
@@ -29,13 +29,13 @@ Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-p
 
     ![Nový projekt ze šablony Cookiecutter](media/projects-from-cookiecutter1.png)
 
-1. Vybrané **Microsoft/python-skriptu sklearn třídění cookiecutter** šablony, pak vyberte **Další**. (Procesu může trvat několik minut, než poprvé použijete Cookiecutter.)
+1. Vybrané **Microsoft/python-skriptu sklearn třídění cookiecutter** šablony, pak vyberte **Další**. (Proces se může trvat několik minut při prvním použití konkrétní šablonu, protože Visual Studio nainstaluje požadované balíčky Pythonu.)
 
-1. V dalším kroku, nastavit umístění nového projektu v **vytvořit do** pole a pak vyberte **vytvořit**.
+1. V dalším kroku, nastavit umístění nového projektu v **vytvořit do** pole a pak vyberte **vytvořit a otevřít projekt**.
 
     ![Druhý krok pomocí Cookiecutter, nastavení vlastností projektu](media/projects-from-cookiecutter2.png)
 
-1. Po dokončení procesu se zobrazí zpráva **soubory se úspěšně vytvořil.** Vyberte příkaz **v Průzkumníku řešení otevřete** pro otevření projektu.
+1. Po dokončení procesu se zobrazí zpráva **úspěšně vytvoření souborů pomocí šablony...** . Otevření projektu v Průzkumníku řešení automaticky.
 
 1. Stisknutím klávesy **Ctrl**+**F5** nebo vyberte **ladění** > **spustit bez ladění** ke spuštění programu.
 

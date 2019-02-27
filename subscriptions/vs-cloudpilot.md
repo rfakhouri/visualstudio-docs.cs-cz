@@ -6,19 +6,17 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech CloudPilot k dispozici ve vybraných předplatných sady Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380119"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842556"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot výhoda v předplatných sady Visual Studio
 
-Přesun aplikací do Microsoft Azure v několika snadných krocích. Během několika minut Identifikujte všechny změny kódu dolů na řádek kódu pro úspěšnou migraci na: Kontejnery, virtuálních počítačů, aplikační služby, SQL Azure a SQL MI. Potom migraci aplikací do Azure pomocí průvodců využívat Azure Site Recovery, přímý přístup do paměti a DMS. 
+Přesun aplikací do Microsoft Azure v několika snadných krocích. Během několika minut Identifikujte všechny změny kódu dolů na řádek kódu pro úspěšnou migraci na: Kontejnery, virtuálních počítačů, aplikační služby, SQL Azure a SQL MI. Potom migraci aplikací do Azure pomocí průvodců využívat Azure Site Recovery, přímý přístup do paměti a DMS.
 
 CloudPilot, podle UnifyCloud, slouží k což vývojářům umožňuje rychle a snadno přesouvat aplikace do Azure.  Za zlomek času, který padl ruční posouzení CloudPilot přesně určuje náklady na migraci Azure PaaS a IaaS a nabízí podrobné doporučení dolů na řádek kódu, na co třeba změny kódu je možné zavést pro aplikaci, aby běžela v cloudu. CloudPilot pomáhá úvodnímu posouzení migrace úsilí cloudu a vývoj plánování v procesu factoring znovu nabídkou podrobných změn na úrovni kódu pro Cloud a finální testování proti ovládací prvky technologie enterprise a zásady.
 
@@ -30,10 +28,10 @@ CloudPilot, podle UnifyCloud, slouží k což vývojářům umožňuje rychle a 
 
    > [!div class="mx-imgBorder"]
    > ![Výhoda CloudPilot dlaždice](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
-   
+
 0. Zobrazí se zpráva oznamující, váš kód byl úspěšně načten.  Klikněte na tlačítko **aktivovat**, v tomto okamžiku budete přesměrováni na stránku CloudPilot, kde můžete pokračovat v procesu aktivace.  (Pokud nevyberete aktivovat, vždy se můžete vrátit zpět k dlaždici CloudPilot portálu předplatného.  Odkaz "Kopie kódu" se změní na "Aktivovat", a kliknutím přejdete k dalšímu kroku v procesu aktivace.)
 
-0. Projděte si výhody CloudPilot pro vaše vývojové činnosti.  Jakmile budete připraveni, klikněte na tlačítko **aktivovat** tlačítko. 
+0. Projděte si výhody CloudPilot pro vaše vývojové činnosti.  Jakmile budete připraveni, klikněte na tlačítko **aktivovat** tlačítko.
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot cílová stránka](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
@@ -46,14 +44,14 @@ CloudPilot, podle UnifyCloud, slouží k což vývojářům umožňuje rychle a 
    > [!NOTE]
    > Počet aktivací výhody CloudPilot jsou omezené na deset na organizaci, uplatnit z libovolnou kombinací těchto předplatných sady Visual Studio Enterprise nebo Visual Studio Professional.  Pokud jste už byl využitý vaší organizace desetkrát, nebude možné CloudPilot výhodou, aktivujte a obdržíte e-mailu z UnifyCloud s další informace.
 
- 0. Dále uvidíte na stránce produktu navržené tak, aby vám seznámit se s CloudPilot.  Klikněte na tlačítko **přejít na CloudPilot** v pravém horním rohu přejdete na portál CloudPilot.  
+ 0. Dále uvidíte na stránce produktu navržené tak, aby vám seznámit se s CloudPilot.  Klikněte na tlačítko **přejít na CloudPilot** v pravém horním rohu přejdete na portál CloudPilot.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot stránky produktu](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  A to je vše!  Zobrazí se vám na portálu CloudPilot a budete mít začít využívat předplatného CloudPilot přesunout vaše aplikace do Microsoft Azure. 
+0.  A to je vše!  Zobrazí se vám na portálu CloudPilot a budete mít začít využívat předplatného CloudPilot přesunout vaše aplikace do Microsoft Azure.
 
-0.  Poté, co váš účet je úspěšně vytvořen, obdržíte e-mailu z podpory služby VSS UnifyCloud potvrzení úspěšné vytvoření vašeho účtu. 
+0.  Poté, co váš účet je úspěšně vytvořen, obdržíte e-mailu z podpory služby VSS UnifyCloud potvrzení úspěšné vytvoření vašeho účtu.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot Confirmation Email](_img/vs-cloudpilot/vs-cloudpilot-email.png)
@@ -84,7 +82,7 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s používáním CloudPilot?  Projděte si tyto prostředky:
-    - [Obraťte se na UnifyCloud](https://www.unifycloud.com/contacts/) pro dotazy týkající se produktů UnifyCloud. 
+    - [Obraťte se na UnifyCloud](https://www.unifycloud.com/contacts/) pro dotazy týkající se produktů UnifyCloud.
     - [CloudPilot uživatelská příručka](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Odeslat žádost o podporu](https://support.datacamp.com/hc/requests/new)
 

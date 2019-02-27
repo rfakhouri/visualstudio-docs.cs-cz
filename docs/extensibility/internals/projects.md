@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae786d3fa65bdf4ce591be1c8ec677a5ac757e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615530"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840901"
 ---
 # <a name="projects"></a>Projekty
 V sadě Visual Studio jsou projekty kontejnery, které vývojáři použít k uspořádání souborů zdrojového kódu a další prostředky, které se zobrazují v **Průzkumníka řešení**. Projekty jsou obvykle soubory (například soubor .csproj projektu v jazyce C#), které ukládají odkazy na soubory se zdrojovým kódem a prostředky jako rastrové soubory. Projekty umožňují organizovat, vytváření, ladění a nasazení zdrojového kódu, odkazy na webové služby a databáze a další prostředky. Rozšíření VSPackages můžete rozšířit systém projektu sady Visual Studio třemi hlavními způsoby: *typy projektů*, *podtypů projektu*, a *vlastních nástrojů*.
@@ -41,7 +41,7 @@ V sadě Visual Studio jsou projekty kontejnery, které vývojáři použít k us
 
  Vysvětluje, co se ve skutečnosti stane při vytvoření nového projektu.
 
-- [Ukázky VSSDK](http://aka.ms/vs2015sdksamples) obsahuje ukázky VSSDK, které pracují s projekty a řešení.
+- [Ukázky VSSDK](https://aka.ms/vs2015sdksamples) obsahuje ukázky VSSDK, které pracují s projekty a řešení.
 
 ## <a name="related-sections"></a>Související oddíly
 - [Práce se sadou Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)

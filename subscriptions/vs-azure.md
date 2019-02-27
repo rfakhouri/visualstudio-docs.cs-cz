@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho předplatného sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380130"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843205"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -28,7 +26,7 @@ Jako předplatitel sady Visual Studio můžete použít Microsoft Azure bez dal�
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     měsíční kredit 150 USD     |                             Ano                             ||
 |               Visual Studio Enterprise měsíční               |        Není k dispozici        |                                                             |
-|             Visual Studio Professional Standard              |     měsíční kredit ve výši 50 USD      |                             Ano                            
+|             Visual Studio Professional Standard              |     měsíční kredit ve výši 50 USD      |                             Ano
 |              Visual Studio Professional měsíčně              |        Není k dispozici        |                                                             |
 |                    Visual Studio Test Pro                    |     měsíční kredit ve výši 50 USD      |                             Ano                             |
 |                        Předplatné MSDN Platforms                        |     měsíční kredit 100 USD     |                             Ano                             |

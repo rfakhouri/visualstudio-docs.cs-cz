@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Přečtěte si o široké spektrum výhody, které jsou k dispozici na na portálu předplatných sady Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859017"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843798"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Pomocí portálu pro předplatitele - Moje. <span> </span>visualstudio<span></span>.com
 
@@ -22,10 +20,10 @@ Portál předplatných Visual Studio [ https://my.visualstudio.com ](https://my.
 
 Na portálu vyžaduje, abyste se přihlásili identita spojená s vaším předplatným.  Důvodem může být váš účet Microsoft (MSA) nebo e-mailovou adresu, které jste získali od organizace, jako je například zaměstnavatelem nebo školou.  Další informace o [přihlášení](signing-in.md).
 
-Na portálu je uspořádaný v šest stránek.  Každá stránka poskytuje přístup k jiné produkty nebo služby, které jsou součástí vašeho předplatného.  Šest stránek jsou výhody, soubory ke stažení, kódy Product Key, předplatná, podpory a Marketplace. 
+Na portálu je uspořádaný v šest stránek.  Každá stránka poskytuje přístup k jiné produkty nebo služby, které jsou součástí vašeho předplatného.  Šest stránek jsou výhody, soubory ke stažení, kódy Product Key, předplatná, podpory a Marketplace.
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Výhody](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Nástroje a služby, které jsou součástí vašeho předplatného se zobrazují jako "dlaždice" na stránce výhod.  Ne všechny výhody jsou součástí všech předplatných. Dlaždice jsou seskupené do tří kategorií: nástroje, Professional vývoj a podporu.  Pokud používáte Visual Studio Dev Essentials, také uvidíte, že kategorii s názvem doporučené, který může obsahovat vybrané dávky ze tří kategorií.
+Nástroje a služby, které jsou součástí vašeho předplatného se zobrazují jako "dlaždice" na stránce výhod.  Ne všechny výhody jsou součástí všech předplatných. Dlaždice jsou seskupené do tří kategorií:  Nástroje, profesní rozvoj a podporu.  Pokud používáte Visual Studio Dev Essentials, také uvidíte, že kategorii s názvem doporučené, který může obsahovat vybrané dávky ze tří kategorií.
 
 ### <a name="tools"></a>Nástroje
 Kategorie nástroje je, kde najdete základní vývojářských nástrojů, jako je například integrovaném vývojovém prostředí Visual Studio, Azure DevOps, jakož i nástroje poskytované systémem našich partnerů.  Uvidíte také služby, jako je Azure a Visual Studio App Center.

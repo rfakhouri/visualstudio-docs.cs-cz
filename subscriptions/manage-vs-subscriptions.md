@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Zjistěte, jak získat maximum z vašich předplatných sady Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822160"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842660"
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 
@@ -92,18 +90,18 @@ Na stránce výhod používanému předplatnému zřetelně zobrazí se v modrý
 **Standardní předplatná**
 
 - Microsoft Store: Pokud jste si koupili předplatné z [Microsoft Store](http://www.microsoft.com/store), můžete ho obnovíte existuje také.
-- Volume License: Pokud vaše společnost kupuje předplatná prostřednictvím multilicence, byste kontaktovat správce prodejce k obnovení vašich předplatných.
+- Multilicence:  Pokud vaše společnost kupuje předplatná prostřednictvím multilicence, Správce by měl obraťte se na prodejce k obnovení vašich předplatných.
 
-**Cloudová předplatná:** cloudovými předplatnými není potřeba obnovit. Tak dlouho, dokud se placené předplatné, zůstane aktivní.
+**Cloudová předplatná:**  Cloudová předplatná nemusí být obnoveno. Tak dlouho, dokud se placené předplatné, zůstane aktivní.
 
-**Odběry, které získali prostřednictvím programů:** Pokud se zobrazí vaše předplatné prostřednictvím programu, vaše předplatné se váže k vaší účasti v programu. Kontaktujte prosím program od svých kontaktů pro další informace.
+**Odběry, které získali prostřednictvím programů:**  Pokud se zobrazí vaše předplatné prostřednictvím programu, vaše předplatné se váže k vaší účasti v programu. Kontaktujte prosím program od svých kontaktů pro další informace.
 
 - [Představte si](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials:** Dev Essentials je bezplatný program a členství ve skupinách, nevyprší platnost.
+**Visual Studio Dev Essentials:**  Dev Essentials je bezplatný program a členství ve skupinách, nevyprší platnost.
 
 ## <a name="transferring-subscriptions"></a>Přenos předplatného
 
@@ -147,9 +145,9 @@ Po přidání alternativního účtu, můžete aktualizovat nebo odebrat kdykoli
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Otázka: Pokud mám předplatného neprodloužíte, jak dlouho Microsoft zachová Moje data?
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>DOTAZ: Pokud mám předplatného neprodloužíte, jak dlouho Microsoft zachová Moje data?
 
-Odpověď: v závislosti na nákupní kanál Microsoft udržuje zákaznická data rozdílné délky času.
+O: V závislosti na nákupní kanál Microsoft udržuje zákaznická data rozdílné délky času.
 
 | Kanál                                                | Doba trvání (ve dnech) |
 |--------------------------------------------------------|-----------------|

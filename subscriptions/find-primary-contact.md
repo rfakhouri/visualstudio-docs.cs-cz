@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/22/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Předplatná sady Visual Studio – vyhledání adresu primárního kontaktu
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2a9108009e497a4685659cdc904e77352f94365a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 46f36348c9275b47b885d9a7179885b4450502bd
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637978"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843348"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Vyhledání primární kontakt přidružené k předplatným sady Visual Studio
 
@@ -25,13 +23,11 @@ K dokončení registrace vaší organizace na portál pro správu předplatného
 2. Na kartě licence vyberte **Přehled vztahů** v rozevírací nabídce.
     > [!div class="mx-imgBorder"]
     > ![Vyberte vztah](_img/locate-primary-contact/vlsc-relationship.png)
-   
-3. Vyberte příslušnou smlouvou pro číslo. 
+
+3. Vyberte příslušnou smlouvou pro číslo.
     > [!div class="mx-imgBorder"]
     > ![Zvolit smlouvu](_img/locate-primary-contact/vlsc-agreement.png)
 
-4. Vyberte **kontakty** kartu.  Primární kontakt bude uveden v seznamu kontaktů přidružený ke smlouvě. 
+4. Vyberte **kontakty** kartu.  Primární kontakt bude uveden v seznamu kontaktů přidružený ke smlouvě.
     > [!div class="mx-imgBorder"]
     > ![Zvolte kontakty](_img/locate-primary-contact/vlsc-contacts.png)
-
-

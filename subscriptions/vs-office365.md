@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Další informace o benefitech služeb Office 365 součástí některá předplatná sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380146"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841065"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus v předplatných sady Visual Studio
 
@@ -23,9 +21,9 @@ Vytvořte optimální práci. Kdekoli práce s aplikacemi, které se aktualizuj�
 ## <a name="getting-started-with-office-365-pro-plus"></a>Začínáme s Office 365 Pro Plus
 
 Postupujte podle těchto kroků ke stažení a aktivace Office 365 Pro Plus:
-1. Přihlaste se k předplatnému sady Visual Studio Enterprise.  
+1. Přihlaste se k předplatnému sady Visual Studio Enterprise.
 2. Klikněte na **stáhne** kartu.
-3. Zobrazí se vám seznam vybrané soubory ke stažení. V seznamu Office zvolte **Office 365**. 
+3. Zobrazí se vám seznam vybrané soubory ke stažení. V seznamu Office zvolte **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Stažení sady Office 365](_img/vs-office365/vs-office365-downloads.png)
 0. Instalace Office 365, budete potřebovat kód product key.  Klikněte na **Get klíč** odkaz v seznamu služeb Office 365.
@@ -36,7 +34,7 @@ Postupujte podle těchto kroků ke stažení a aktivace Office 365 Pro Plus:
    > ![Kód Product Key Office 365 deklarace identity](_img/vs-office365/vs-office365-claim-key.png)
 0. Záznam na klíč, který jste právě nárokován. (Můžete se kdykoli vrátit do tohoto seznamu a znovu zobrazit.)
 0. Nabídka okno zavřete.
-0. Klikněte na tlačítko **Stáhnout** tlačítko. 
+0. Klikněte na tlačítko **Stáhnout** tlačítko.
    > [!div class="mx-imgBorder"]
    > ![Office 365 Start Download](_img/vs-office365/vs-office365-download-button.png)
 0. Přihlaste se pomocí svého účtu Microsoft. (Pokud už jste přihlášení, klikněte na tlačítko **Další**.)
@@ -44,7 +42,7 @@ Postupujte podle těchto kroků ke stažení a aktivace Office 365 Pro Plus:
    > [!div class="mx-imgBorder"]
    > ![Office 365 zadejte kód Product Key](_img/vs-office365/vs-office365-enter-key.png)
 0. Klikněte na tlačítko **Další** znovu.
-0. Klikněte na tlačítko **nainstalovat** k instalaci aplikací Office. 
+0. Klikněte na tlačítko **nainstalovat** k instalaci aplikací Office.
 
 ## <a name="next-steps"></a>Další kroky
 

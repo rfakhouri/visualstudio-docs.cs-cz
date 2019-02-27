@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Zjistěte, jak získat a spravovat kódy product key v předplatných sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803821"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843716"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Používání kódů product key v předplatných sady Visual Studio
 
@@ -47,9 +45,9 @@ Náš výzkum ukazuje, že většina předplatitelé jsou zahrnuté do počet k�
 
 ## <a name="locating-and-claiming-product-keys"></a>Vyhledávání a uplatňování kódů product key
 Chcete-li zobrazit kódy product key, musíte být přihlášeni k vašemu předplatnému sady Visual Studio. Jednotlivé kódy zobrazíte tak, že vyberete modrá **získat klíč** odkaz pro konkrétní produkt na [stáhne](https://my.visualstudio.com/downloads) stránce, jak je znázorněno níže.  Všechny klíče jsou dostupné v agregaci na [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) stránky. Pokud existuje více klíčů pro určitý produkt, poznámky se zobrazí ve sloupci poznámky ke stažení pro snazší identifikaci klávesy, která by měla sloužit.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Získání klíče ze stránky pro stažení](_img/product-keys/download-get-key.png)
-    
+
 Některých produktů je spojeno více edicí do jednoho souboru ke stažení. V těchto případech zadaný kód product key Určuje, která edice produktu je nainstalována.
 Některé kódy jsou poskytovány automaticky, jako jsou "statických" klíče, které můžete použít tolikrát, kolikrát podle potřeby, protože aktivace se nevyžaduje. Jiné je potřeba uplatnit tak, že vyberete **získat klíč** odkaz pro produkt.
 
@@ -65,7 +63,7 @@ Různé typy klíčů jsou k dispozici, v závislosti na produktu.
 |    Vícenásobná aktivace        |    Klíč k vícenásobné aktivaci (MAK) umožňuje aktivovat více instalací produktu se stejným klíčem. Klíče k vícenásobné aktivaci se obecně používají s multilicenčními verzemi produktů. Obvykle se poskytuje jenom jeden klíč k vícenásobné aktivaci na jedno předplatné.    |
 |    Statický aktivační kód    |    Statické aktivační kódy se poskytují k produktům, které nevyžadují aktivaci. Je možné použít pro libovolný počet instalací.                                                                                                                  |
 |    Vlastní klíč                 |    Vlastní kódy zajišťují speciální akce nebo informace k aktivaci nebo instalaci produktu.                                                                                                                                                                |
-|    AKTIVACE MULTILICENCE 1.0                     |    Toto jsou více aktivace klíče k vícenásobné aktivaci podobné.                                                                                                                                                                                                 |
+|    VA 1.0                     |    Toto jsou více aktivace klíče k vícenásobné aktivaci podobné.                                                                                                                                                                                                 |
 |    Klíče výrobce OEM                    |    Jde o klíče výrobce OEM, které umožňují více aktivací.                                                                                                                                                                       |
 |    DreamSpark maloobchodním klíčem    |    Tyto klíče maloobchodního prodeje jsou pro DreamSpark a umožňují jeden aktivace. DreamSpark maloobchodní kódy jsou vydávány v dávkách a jsou primárně určené pro využití studentů.                                                                                     |
 |    Klíč DreamSpark testovacího prostředí         |    Tyto testovací prostředí se pohybujte pomocí kláves jsou určené pro programy DreamSpark a umožňují více aktivací. DreamSpark Lab klíče jsou určeny k použití ve scénářích university počítače testovacího prostředí.                                                                                       |

@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790730"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844136"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;nového v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
  Visual Studio Tools for Apache Cordova je výsledkem úzké spolupráci mezi společnostmi Microsoft a open source Apache Cordova komunity. Povolit nástroje pro vývoj multiplatformních mobilních aplikací pomocí jazyka HTML, CSS a JavaScript (nebo Typescript). Můžete cílit na Android, iOS a Windows pomocí jediného základu kódu a bohatost Visual Studio IDE, včetně technologie IntelliSense jazyka JavaScript, Průzkumníka modelu DOM, konzoly jazyka JavaScript, zarážky, Watch, místní hodnoty, funkce pouze můj kód a dalších.  Visual Studio Tools for Apache Cordova, vaše aplikace mají přístup k nativním funkcím zařízení na všech platformách prostřednictvím modulů plug-in, které poskytují společného rozhraní JavaScript API. Abyste mohli začít, najdete v článku [Začínáme s Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Multiplatformní mobilní hry v jazyce C# pomocí Unity
- Unity je široce používaný platformu pro multiplatformní 2D a 3D her vývoj. Můžete napsat hry v jazyce C# a nativně běžet na Android, iOS, Windows Phone a mnoho dalších platforem. Visual Studio Tools for Unity je rozšíření, která se integruje s integrovaným vývojovým prostředím sady Visual Studio Unity. S touto příponou získáte všechny funkce verze Visual Studio IDE a ladicí program, kromě zvýšení produktivity, které jsou navržené pro vývojáře Unity. Visual Studio Tools pro Unity 2.0 Preview 2 přidá podporu pro sadu Visual Studio 2015, kromě řadu nových funkcí, jako je například lepší vizualizaci objektů v oknech místní hodnoty a sledování systému windows. Microsoft získal koupila SyntaxTree, nedávno autoři Visual Studio Tools for Unity. Stáhnout Visual Studio Tools pro Unity 2.0 ve verzi Preview 2 a další informace o Visual Studio Tools for Unity, najdete v článku [Visual Studio Tools for Unity 2.0](http://Aka.ms/vstu).
+ Unity je široce používaný platformu pro multiplatformní 2D a 3D her vývoj. Můžete napsat hry v jazyce C# a nativně běžet na Android, iOS, Windows Phone a mnoho dalších platforem. Visual Studio Tools for Unity je rozšíření, která se integruje s integrovaným vývojovým prostředím sady Visual Studio Unity. S touto příponou získáte všechny funkce verze Visual Studio IDE a ladicí program, kromě zvýšení produktivity, které jsou navržené pro vývojáře Unity. Visual Studio Tools pro Unity 2.0 Preview 2 přidá podporu pro sadu Visual Studio 2015, kromě řadu nových funkcí, jako je například lepší vizualizaci objektů v oknech místní hodnoty a sledování systému windows. Microsoft získal koupila SyntaxTree, nedávno autoři Visual Studio Tools for Unity. Stáhnout Visual Studio Tools pro Unity 2.0 ve verzi Preview 2 a další informace o Visual Studio Tools for Unity, najdete v článku [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Aplikace pro různé platformy a knihovny pro nativní kód C++
  C++ je k dispozici jazyk nativně na většině mobilních zařízeních. Můžete ho zapsat knihovny sdíleného kódu napříč platformami, které mohou být vytvořeny pro několik cílů mobilní platformu. Můžete dokonce vytvořit zcela mobilních aplikací v jazyce C++. Visual C++ poskytuje nástroje pro úpravy, sestavení, nasazení a ladění kódu napříč platformami. Kromě šablon pro aplikace Windows můžete vytvářet projekty ze šablon pro aplikace, aplikace pro iOS nebo projektů knihovny sdíleného kódu pro různé platformy, které zahrnují hybridní aplikace pro Xamarin Android Native Activity. IntelliSense pro konkrétní platformy můžete zkoumat API a generovat správný kód pro Android, iOS nebo Windows cíle. Můžete nakonfigurovat sestavení pro nativní platformy ARM, nebo x86 a nasazení kódu simulátoru iOS nebo zařízení s iOS na Macu připojeného k síti, a přímo připojených zařízení s Androidem nebo pomocí výkonného emulátoru sady Microsoft Visual Studio pro Android pro testování. Můžete nastavit zarážky, sledujte proměnné, zobrazení zásobníku a krokovat kód C++ v ladicím programu sady Visual Studio. Můžete všechny s výjimkou specifik kódu sdílet mezi více aplikačních platformách a sestavení pro ně vše s jedním z řešení v sadě Visual Studio.

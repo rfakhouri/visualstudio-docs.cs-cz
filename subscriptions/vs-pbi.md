@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Další informace o předplatné Power BI Pro, které jsou součástí vybraných předplatných sady Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380188"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843867"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v předplatných sady Visual Studio
 
@@ -94,14 +92,14 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>DOTAZ:  Pokud je bezplatné výhody, Proč musím zadat číslo platební karty?
-O:  Výhodu je zdarma, ale aktivace používá stejný systém používá ke zpracování placené objednávky.  K dispozici jsou dva typy platby. 
-- Platební karty.  Pokud zadáte číslo kreditní karty, vaše karta žádné poplatky. 
-- Faktury.  Pokud vyberete jako typ platby "Faktury", není nutné zadat číslo platební karty.  Můžete také nastavit interval na "roční".  Tímto způsobem, dostanete e-mail oznamující, pro vás připravený fakturu.  Fakturovaná částka bude být 0.00 $.  
+O:  Výhodu je zdarma, ale aktivace používá stejný systém používá ke zpracování placené objednávky.  K dispozici jsou dva typy platby.
+- Platební karty.  Pokud zadáte číslo kreditní karty, vaše karta žádné poplatky.
+- Faktury.  Pokud vyberete jako typ platby "Faktury", není nutné zadat číslo platební karty.  Můžete také nastavit interval na "roční".  Tímto způsobem, dostanete e-mail oznamující, pro vás připravený fakturu.  Fakturovaná částka bude být 0.00 $.
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>DOTAZ:  Je Power BI Pro benefit zahrnuté v předplatném licencovaná pro použití v produkčním prostředí?
 O:  Ano, můžete použít v produkčním prostředí pomocí dvou důležitá upozornění:
-- V rámci této nabídky musí se nainstalovat na svůj vlastní tenanta.  Pokud potřebujete mít licenci Power BI, který je přidružený k vaší podnikové přihlašovací údaje ve vašem tenantovi společnosti prosím spolupráci s vaším správcem společnosti nákup a přiřadit licenci. 
-- Nejde tuto výhodu Power BI Pro v tenantech pro státní správu.  
+- V rámci této nabídky musí se nainstalovat na svůj vlastní tenanta.  Pokud potřebujete mít licenci Power BI, který je přidružený k vaší podnikové přihlašovací údaje ve vašem tenantovi společnosti prosím spolupráci s vaším správcem společnosti nákup a přiřadit licenci.
+- Nejde tuto výhodu Power BI Pro v tenantech pro státní správu.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>DOTAZ:  Při pokusu o aktivaci Power BI Pro, zobrazí se zpráva, "Už máte účet prostřednictvím práce".  Použití výhody
 O:  Ano.  Zpráva označuje, že jste přihlášení k doméně, která už má aktivní klienty Office 365, na kterých nejste správcem.  Chcete-li přidat do tenanta Power BI Pro, musíte být správcem tohoto tenanta.  Chcete-li vyřešit tento problém, postupujte podle těchto kroků můžete vytvořit vlastního tenanta.
@@ -112,12 +110,12 @@ O:  Ano.  Zpráva označuje, že jste přihlášení k doméně, která už má 
 3.  Vytvořte ID uživatele a heslo.  Abyste mohli využívat bezplatné nabídky, ujistěte se, že vyberete **. onmicrosoft.com** jako doména. Klikněte na tlačítko **vytvořit Můj účet**.
     > [!div class="mx-imgBorder"]
     > ![Výhoda Pro Power BI vytvořit ID uživatele v soukromé tenanta](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  Zbývající kroky v procesu jsou shodné s hodnotami uvedenými v těle článku, počínaje krokem 6.
 
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>DOTAZ:  Jsem v tenantu pro státní správu.  Můžete použít výhody? 
-O:  Ne.  Power BI Pro benefit nelze přidat do tenantech pro státní správu. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>DOTAZ:  Jsem v tenantu pro státní správu.  Můžete použít výhody?
+O:  Ne.  Power BI Pro benefit nelze přidat do tenantech pro státní správu.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s Power BI Pro?

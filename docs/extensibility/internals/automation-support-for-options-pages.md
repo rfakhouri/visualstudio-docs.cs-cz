@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d59fbfe6213bbcec1311cf9ad6216b3d8c86c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629142"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840455"
 ---
 # <a name="automation-support-for-options-pages"></a>Podpora automatizace pro stránky Možnosti
 Rozšíření VSPackages můžete zadat vlastní **možnosti** dialogová okna pro **nástroje** nabídky (**možnosti nástrojů** stránek) v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a můžete zpřístupnit je automatizace model.
@@ -34,7 +34,7 @@ Rozšíření VSPackages můžete zadat vlastní **možnosti** dialogová okna p
 
 4. Objekt automatizace sady VSPackage je pak sloužit ke každé <xref:EnvDTE.Property> vrácený <xref:EnvDTE._DTE.Properties%2A>.
 
-   Pro ukázku implementace vlastní **možnosti nástrojů** stránky, přečtěte si téma [VSSDK ukázky](http://aka.ms/vs2015sdksamples).
+   Pro ukázku implementace vlastní **možnosti nástrojů** stránky, přečtěte si téma [VSSDK ukázky](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Viz také:
 - [Vystavení objektů projektu](../../extensibility/internals/exposing-project-objects.md)

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/28/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Nastavení správců cloudových předplatných
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 861862d964d5ccd8e926730f648a41bc790bc64d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283441"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841441"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Nastavte správce pro předplatné cloudu Visual Studio
 
@@ -42,7 +40,7 @@ Přidat správce:
 6. Klikněte na tlačítko **přidat** kartě v horní části stránky.
 7. V podokně nabídka na pravé straně klikněte na název odběratele, které chcete provést správce.
 8. Klikněte na **Role** rozevíracího seznamu v horní části podokna, posuňte se dolů a vyberte **správce uživatelských přístupů**.
-9. Klikněte na tlačítko **Uložit**.
+9. Klikněte na **Uložit**.
 
 Odběrateli, kterou jste určili se zobrazí v Centru pro stránky a jejich role se zobrazí jako "Správce uživatelských přístupů".
 

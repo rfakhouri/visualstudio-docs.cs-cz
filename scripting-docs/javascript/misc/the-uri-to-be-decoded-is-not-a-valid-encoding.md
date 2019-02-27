@@ -1,14 +1,9 @@
 ---
 title: Dekódovaný identifikátor URI nemá platné kódování | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5025
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 792403a9a53f11431e87115d7a95345e316dc2ac
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344379"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844292"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>Dekódovaný identifikátor URI nemá platné kódování
 Pokoušíte se o dekódování nesprávně formátovaný URI (Uniform Resource Identifier). Identifikátory URI mají zvláštní syntaxi; Většina jiných než alfanumerických znaků musí kódováním předtím, než je možné v identifikátoru URI. Můžete použít `encodeURI` a `encodeURIComponent` metody vytvořit identifikátor URI z normální [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] řetězec.  

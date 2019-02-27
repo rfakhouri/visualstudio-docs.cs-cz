@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf49998d2aecdce37992cf51337a4d96201c9111
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692694"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843958"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Vytvoření systému základního projektu, část 1
 Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k uspořádání souborů se zdrojovým kódem a dalších zdrojů. Projekty se zobrazují jako podřízené objekty daného řešení **Průzkumníka řešení**. Projekty umožňují organizovat, sestavovat, ladit a nasadit zdrojový kód a vytvořit odkazy na webové služby, databáze a další prostředky.
@@ -35,7 +35,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
  Tento návod ukazuje, jak vytvořit typ projektu, který má příponu názvu souboru projektu *.myproj*. Tento názorný postup vypůjčí z existující systém projektu Visual C#.
 
 > [!NOTE]
->  Další příklady rozšíření projektů, naleznete v tématu [VSSDK ukázky](http://aka.ms/vs2015sdksamples).
+>  Další příklady rozšíření projektů, naleznete v tématu [VSSDK ukázky](https://aka.ms/vs2015sdksamples).
 
  Tento návod se naučíte k provedení následujících úkolů:
 

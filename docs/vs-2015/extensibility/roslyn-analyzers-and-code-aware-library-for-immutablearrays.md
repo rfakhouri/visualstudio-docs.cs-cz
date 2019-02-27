@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec3304ca0da49e5a72d97e4b04b3fd4aff6b13dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799645"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842952"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny rozlišující kódy pro řešení ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Budete potřebovat následující sestavení tohoto příkladu:
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Můžete také při instalaci sady Visual Studio, zkontrolovat Visual Studio Extensibility Tools v části Common Tools do instalace sady SDK ve stejnou dobu. Pokud jste již nainstalovali Visual Studio, můžete také nainstalovat tuto sadu SDK tak, že přejdete do hlavní nabídky **souboru &#124; nový &#124;projektu...** , výběr jazyka C# v levém navigačním podokně a následným výběrem rozšiřitelnosti. Pokud zvolíte "**nainstalovat Visual Studio Extensibility Tools**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalaci sadu SDK.
 
-- [.NET compiler Platform ("Roslyn") SDK](http://aka.ms/roslynsdktemplates). Můžete také nainstalovat tuto sadu SDK tak, že přejdete do hlavní nabídky **souboru &#124; nový &#124; projektu...** zvolíte možnost **jazyka C#** v levém navigačním podokně a pak výběrem **rozšiřitelnost**. Při výběru možnosti "**stáhnout sadu SDK platformy kompilátoru .NET**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalaci sadu SDK. Tato sada SDK zahrnuje [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Tato velmi užitečným nástrojem pomůže zjistit, jaké typy kódu modelu je vhodné vyhledat ve vaší analyzátor. Analyzátor infrastruktury volání do kódu pro typy modelu konkrétního kódu, tak, aby váš kód pouze provede v případě potřeby a soustředit se jenom na analýzu příslušný kód.
+- [.NET compiler Platform ("Roslyn") SDK](https://aka.ms/roslynsdktemplates). Můžete také nainstalovat tuto sadu SDK tak, že přejdete do hlavní nabídky **souboru &#124; nový &#124; projektu...** zvolíte možnost **jazyka C#** v levém navigačním podokně a pak výběrem **rozšiřitelnost**. Při výběru možnosti "**stáhnout sadu SDK platformy kompilátoru .NET**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalaci sadu SDK. Tato sada SDK zahrnuje [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Tato velmi užitečným nástrojem pomůže zjistit, jaké typy kódu modelu je vhodné vyhledat ve vaší analyzátor. Analyzátor infrastruktury volání do kódu pro typy modelu konkrétního kódu, tak, aby váš kód pouze provede v případě potřeby a soustředit se jenom na analýzu příslušný kód.
 
 ## <a name="whats-the-problem"></a>V čem je problém?
 Představte si ImmutableArray je poskytnout knihovny (například <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) podporují. C# vývojářům k dispozici spoustu zkušeností s poli .NET. Ale vzhledem k povaze řešení ImmutableArrays a optimalizace techniky, které využívají v implementaci intuitions pro vývojáře v C# uživatelům způsobit knihovny zápisu poškozený kód, jak je popsáno níže. Uživatelé navíc nezobrazí jejich chyby až do spuštění, který není kvalitu prostředí, na které se používají v sadě Visual Studio pomocí rozhraní .NET.

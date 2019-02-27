@@ -6,15 +6,13 @@ manager: lank
 ms.date: 10/31/2018
 ms.topic: conceptual
 description: Zjistěte, jak předplatitelská data jsou anonymní, když se ztratí přístup k předplatným.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4570ff43f946c25c50d298e22de3b0c8a261f870
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810588"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842543"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymizace informace předplatitele sady Visual Studio
 
@@ -36,11 +34,11 @@ Anonymizace se aktivuje události, které nepoužitelná odběr pro odběratele.
 
 ## <a name="faq"></a>Nejčastější dotazy
 
-### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>Otázka: anonymizace účastníka osobních údajů způsobí, že je přijít o přístup k předplatnému?
-Odpověď: Ne.  Je anonymizace v reakci na událost, která způsobí, že dojde ke ztrátě přístupu k předplatnému, ale nezpůsobí zamezení přístupu.
+### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>DOTAZ:  Anonymizace osobní údaje účastníka nevyvolá ztrátu přístupu k předplatnému?
+O:  Ne.  Je anonymizace v reakci na událost, která způsobí, že dojde ke ztrátě přístupu k předplatnému, ale nezpůsobí zamezení přístupu.
 
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Otázka: jsem správce předplatného mojí organizace.  Pokud jeden z Moje předplatitele informace jsou anonymní, můžete toto předplatné přiřadit jiný uživatel?
-Odpověď: Ano – za předpokladu, nevypršela platnost předplatného, ji můžete přiřadit na jiného předplatitele.
+### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>DOTAZ:  Jsem správce předplatného mojí organizace.  Pokud jeden z Moje předplatitele informace jsou anonymní, můžete toto předplatné přiřadit jiný uživatel?
+O:  Ano – za předpokladu, nevypršela platnost předplatného, ji můžete přiřadit na jiného předplatitele.
 
 ## <a name="next-steps"></a>Další kroky
 

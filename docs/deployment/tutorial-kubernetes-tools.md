@@ -7,18 +7,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965456"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843231"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
 Visual Studio Kubernetes Tools zjednodušit vývoj kontejnerizovaných aplikací, které cílí na Kubernetes. Visual Studio může automaticky vytvořit konfigurace jako kódu soubory potřebné pro podporu nasazení Kubernetes, jako jsou soubory Dockerfile a Helm grafy. Ladění kódu v aktivní cluster Azure Kubernetes Service (AKS) pomocí Azure Dev mezery nebo publikovat přímo do clusteru AKS z v sadě Visual Studio.
 
-Tento kurz se zabývá použitím sady Visual Studio, přidejte do projektu podpora pro Kubernetes a publikuje do AKS. Pokud vás zajímají hlavně pomocí [Azure Dev prostory](http://aka.ms/get-azds) pro ladění a testování projektu spuštěná ve službě AKS, můžete přejít na [Azure Dev prostory kurzu](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) místo toho.
+Tento kurz se zabývá použitím sady Visual Studio, přidejte do projektu podpora pro Kubernetes a publikuje do AKS. Pokud vás zajímají hlavně pomocí [Azure Dev prostory](https://aka.ms/get-azds) pro ladění a testování projektu spuštěná ve službě AKS, můžete přejít na [Azure Dev prostory kurzu](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) místo toho.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -78,7 +78,7 @@ Přidání souborů jsou:
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikování do služby Azure Kubernetes Service (AKS)
 
-Všechny tyto soubory na místě můžete použít integrovaném vývojovém prostředí sady Visual Studio k psaní a ladění kódu aplikace stejně, jako je navíc vždy nutné. Můžete také použít [Azure Dev prostory](http://aka.ms/get-azds) rychlé spuštění a ladění kódu živě běžet v clusteru AKS. Další informace najdete [kurzu prostory vývoj Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+Všechny tyto soubory na místě můžete použít integrovaném vývojovém prostředí sady Visual Studio k psaní a ladění kódu aplikace stejně, jako je navíc vždy nutné. Můžete také použít [Azure Dev prostory](https://aka.ms/get-azds) rychlé spuštění a ladění kódu živě běžet v clusteru AKS. Další informace najdete [kurzu prostory vývoj Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Jakmile budete mít kód fungovat způsobem, který chcete, můžete publikovat přímo ze sady Visual Studio do clusteru AKS.
 
@@ -120,4 +120,4 @@ Blahopřejeme! Teď můžete výkon sady Visual Studio pro všechny vývoje apli
 
 Další informace o vývoji Kubernetes v Azure najdete [dokumentaci ke službě AKS](/azure/aks).
 
-Další informace o Azure Dev prostory načtením [dokumentace ke službě Azure Dev mezery](http://aka.ms/get-azds)
+Další informace o Azure Dev prostory načtením [dokumentace ke službě Azure Dev mezery](https://aka.ms/get-azds)

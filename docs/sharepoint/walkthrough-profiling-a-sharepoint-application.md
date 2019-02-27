@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Profilace aplikace SharePoint | Dokumentace Microsoftu'
+title: 'Návod: Profilace aplikace SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602036"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841720"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Průvodce: Profil aplikace služby SharePoint
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Návod: Profil aplikace služby SharePoint
   Tento návod ukazuje, jak pomocí nástrojů pro profilaci v sadě Visual Studio za účelem optimalizace výkonu aplikace SharePoint. Ukázková aplikace je příjemce událostí funkce Sharepointu, který obsahuje nečinné smyčky, která snižuje výkon příjemce událostí funkce. Profiler sady Visual Studio umožňuje vyhledat a odstranit nejdražší (nejpomalejší provádění) součást projektu, označované také jako *kritickou cestu*.
 
  Tento návod demonstruje následující úkoly:
@@ -47,7 +47,7 @@ ms.locfileid: "56602036"
 ## <a name="create-a-sharepoint-project"></a>Vytvoření projektu služby SharePoint
  Nejprve vytvořte projekt služby SharePoint.
 
-#### <a name="to-create-a-sharepoint-project"></a>Vytvoření projektu služby SharePoint
+### <a name="to-create-a-sharepoint-project"></a>Vytvoření projektu služby SharePoint
 
 1. V panelu nabídky zvolte **souboru** > **nový** > **projektu** zobrazíte **nový projekt** dialogové okno.
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602036"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Přidání funkcí a příjemce událostí funkce
  V dalším kroku přidejte funkce do projektu spolu s přijímače událostí pro funkci. Tento příjemce událostí bude obsahovat kód, který má být profilována.
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>Chcete-li přidat funkci a příjemce událostí funkce
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>Chcete-li přidat funkci a příjemce událostí funkce
 
 1.  V **Průzkumníku řešení**, otevřete místní nabídku **funkce** uzlu, zvolte **přidat funkci**a název ponechte výchozí hodnotu **Feature1**.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602036"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Nakonfigurujte a nasaďte aplikace služby SharePoint
  Teď, když je projekt SharePoint připravený, nakonfigurovat a nasadit na server SharePoint.
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Ke konfiguraci a nasazení aplikace služby SharePoint
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Ke konfiguraci a nasazení aplikace služby SharePoint
 
 1.  Na **analyzovat** nabídce zvolte **spustit Průvodce výkonem**.
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602036"
 ## <a name="run-the-sharepoint-application"></a>Spuštění aplikace SharePoint
  Aktivovat funkci v Sharepointu, aktivuje `FeatureActivation` události kód ke spuštění.
 
-#### <a name="to-run-the-sharepoint-application"></a>Ke spuštění aplikace SharePoint
+### <a name="to-run-the-sharepoint-application"></a>Ke spuštění aplikace SharePoint
 
 1.  V Sharepointu, otevřete **Akce webu** nabídky a klikněte na tlačítko **nastavení webu**.
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602036"
 ## <a name="view-and-interpret-the-profile-results"></a>Zobrazení a interpretace výsledků profilu
  Teď, když máte spouštění a profilované aplikace služby SharePoint, prohlédněte si výsledky testu.
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>K zobrazení a interpretace výsledků profilu
+### <a name="to-view-and-interpret-the-profile-results"></a>K zobrazení a interpretace výsledků profilu
 
 1.  V **funkce provádějící nejvíce individuální práce** části ukázkové sestavy profilování, Všimněte si, že `TimeCounter` je v horní části seznamu.
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602036"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>Opravit kód a reprofile aplikace
  Teď, když byla zjištěna hotspot funkce v aplikaci SharePoint, opravte ji.
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>Chcete-li opravit kód a reprofile aplikace
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>Chcete-li opravit kód a reprofile aplikace
 
 1.  V kódu příjemce událostí funkce, okomentujte `TimeCounter` volání metody `FeatureActivated` tak, aby volána.
 

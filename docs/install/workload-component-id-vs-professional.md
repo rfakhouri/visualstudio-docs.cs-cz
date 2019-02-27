@@ -13,17 +13,16 @@ helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 8aadc038028f31a1454e5f8e0923a55fc3f4dcac
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3b8a9e313810eed2e8439def1f0fe442e2c40218
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796943"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844188"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Složka komponenty Visual Studio Professional 2017
 

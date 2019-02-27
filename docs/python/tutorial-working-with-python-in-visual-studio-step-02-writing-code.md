@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918101"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843088"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2: Psání a spouštění kódu
 
@@ -53,7 +53,7 @@ I když **Průzkumníku řešení** je, kde budete spravovat soubory projektu, *
 
     ![Výstup pro první spuštění programu](media/vs-getting-started-python-07-output.png)
 
-1. Kromě dokončování příkazů a funkce, technologie IntelliSense poskytne dokončování Python `import` a `from` příkazy. Tyto dokončování vám snadno zjistit, jaké moduly jsou k dispozici ve vašem prostředí a členy těchto modulů. V editoru, odstraňte `print` řádku a začněte psát `import `. Seznam modulů, které se zobrazí, když zadáte pole:
+1. Kromě dokončování příkazů a funkce, technologie IntelliSense poskytne dokončování Python `import` a `from` příkazy. Tyto dokončování vám snadno zjistit, jaké moduly jsou k dispozici ve vašem prostředí a členy těchto modulů. V editoru, odstraňte `print` řádku a začněte psát `import`. Seznam modulů, které se zobrazí, když zadáte pole:
 
     ![IntellSense zobrazení dostupných modulů pro příkaz importu](media/vs-getting-started-python-08-import1.png)
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 82231756568c8b8139443a168ed22c28528c385c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920013"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840880"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Nástroje R pro Visual Studio ukázkových projektů
 
@@ -65,7 +65,7 @@ S všechny příklady, otevřete soubor, umístěte kurzor na slovo v horní č�
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Co je speciální informace o Microsoft R Open a Microsoft ML Server?
 
-[Microsoft R Open](http://aka.ms/rtvs-r-open), což je distribuce Microsoftu jazyka R se liší od [CRAN r.](https://cran.r-project.org/) dvěma důležitými způsoby:
+[Microsoft R Open](https://aka.ms/rtvs-r-open), což je distribuce Microsoftu jazyka R se liší od [CRAN r.](https://cran.r-project.org/) dvěma důležitými způsoby:
 
 1. [Vyšší výpočetní výkon](https://mran.revolutionanalytics.com/rro/#intelmkl1) při použití s [Intel matematické jádra knihovny](https://software.intel.com/intel-mkl). Tyto knihovny jsou k dispozici jako bezplatná položka ke stažení od společnosti Microsoft pro použití s Microsoft R Open.
 
@@ -81,7 +81,7 @@ Toto porovnání ukazuje, že MLS a MRO s MKL jsou výrazně vyšší výpočetn
 
 ![Porovnání MLS a MRO s MKL r a MRO bez MKL](media/samples-speed-comparison.png)
 
-Technické porovnání jazyka R s MRO a MLS, projděte si [Lixun Potokar podrobné diskuze](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) v tomto tématu.
+Technické porovnání jazyka R s MRO a MLS, projděte si [Lixun Potokar podrobné diskuze](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) v tomto tématu.
 
 Na následujícím obrázku pak porovná uplynulý čas v sekundách použít při vytváření logistické regresní modely k předpovědi zpoždění letů delší než 15 minut.  Uplynulý čas při CRAN r. zvýší výrazně při zvýšení malý počet řádků, zatímco MLS zvyšuje úroveň pouze přibližně dvakrát. Podrobnosti o tomto srovnávacího testu, podívejte se *srovnávací testy/rxGlm_benchmark. R* příklad.
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c6f37c26dac231bbfab38b6370786bd9bbe6b17c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 107e39e147c62f73c5656f3a398fbca231620c67
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956399"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840403"
 ---
 # <a name="rtvs-current-version"></a>Aktuální verze RTVS
 
@@ -27,4 +27,4 @@ Pro sadu Visual Studio 2015 je k dispozici nejnovější instalační program [a
 
 Zobrazit [instalace](installing-r-tools-for-visual-studio.md) požadavky sady Visual Studio a Windows.
 
-Aktualizace na Server Microsoft Machine Learning (dříve Microsoft R Server) a Microsoft R Open naleznete v tématu: [Produkty Microsoft R.](http://aka.ms/rtvs-msft-r)
+Aktualizace na Server Microsoft Machine Learning (dříve Microsoft R Server) a Microsoft R Open naleznete v tématu: [Produkty Microsoft R.](https://aka.ms/rtvs-msft-r)

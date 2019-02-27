@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 682461df50999f14d3f8ca1f3acbee7c69559c8d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908579"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840828"
 ---
 # <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
@@ -30,7 +30,7 @@ Když se přihlásí, Obohaťte vaše prostředí sady Visual Studio. Napříkla
 
 Tady je úplný seznam co můžou očekávat a co můžete dělat po přihlášení:
 
-- **Přístup k programu Visual Studio Dev Essentials** – tento program zahrnuje nabídky bezplatného softwaru, školení, podpory a další. Zobrazit [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) Další informace.
+- **Přístup k programu Visual Studio Dev Essentials** – tento program zahrnuje nabídky bezplatného softwaru, školení, podpory a další. Zobrazit [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) Další informace.
 
 - **Synchronizovat nastavení sady Visual Studio** – nastavení, které přizpůsobíte, například vazby klíčů, rozložení oken a barevný motiv, se použije ihned při přihlášení k sadě Visual Studio na libovolném zařízení. Zobrazit [synchronizovaná nastavení v sadě Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
