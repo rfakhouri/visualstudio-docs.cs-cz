@@ -1,6 +1,5 @@
 ---
-title: Pokročilých funkcích sady Visual Studio 2017
-titleSuffix: ''
+title: Pokročilé funkce
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: gewarren
@@ -8,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48dc5aad18aba1537a801081bd45e2cfd97fcfd2
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007342"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221772"
 ---
-# <a name="features-of-visual-studio-2017"></a>Funkce sady Visual Studio 2017
+# <a name="features-of-visual-studio"></a>Funkce sady Visual Studio
 
 [Přehled Visual Studio IDE](../get-started/visual-studio-ide.md) článek obsahuje základní informace o sadě Visual Studio. Tento článek popisuje funkce, které může být vhodnější pro zkušené vývojáře nebo tyto vývojáře, kteří jsou již znáte Visual Studio.
 
@@ -23,9 +22,19 @@ ms.locfileid: "57007342"
 
 Modulární instalačního programu sady Visual Studio vám umožní vybrat a nainstalovat *úlohy*. Úlohy jsou skupiny funkce potřebné pro programovací jazyk a platformu, kterému dáváte přednost. Tato strategie pomáhá, aby nárokům na místo instalace sady Visual Studio, která je menší, což znamená, že instalace a aktualizace moc rychlejší.
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+::: moniker range="vs-2017"
 
-Další informace o nastavení sady Visual Studio na systém najdete v tématu [instalace sady Visual Studio 2017](../install/install-visual-studio.md).
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+
+::: moniker-end
+
+Další informace o nastavení sady Visual Studio na systém najdete v tématu [instalace sady Visual Studio](../install/install-visual-studio.md).
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>Vytvářejte aplikace s povolenou podporu cloudu pro Azure
 
@@ -99,7 +108,7 @@ Pokud vaše aplikace je připraven k nasazení uživatelům nebo zákazníkům, 
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Spravovat zdrojový kód a spolupracovat s ostatními
 
-Můžete spravovat zdrojový kód v úložištích Git, jejichž hostitelem je libovolný poskytovatel, včetně Githubu. Nebo použijte [Azure DevOps služby](/azure/devops/index) ke správě kódu společně s chybami a pracovními položkami pro celý projekt. Zobrazit [Začínáme s Git a úložiště Azure](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) Další informace o správě úložiště Git v sadě Visual Studio pomocí Průzkumníka týmových projektů. Visual Studio také poskytuje jiné funkce správy vestavěné zdrojového kódu. Další informace o nich najdete v tématu [funkce Gitu v sadě Visual Studio 2017 (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
+Můžete spravovat zdrojový kód v úložištích Git, jejichž hostitelem je libovolný poskytovatel, včetně Githubu. Nebo použijte [Azure DevOps služby](/azure/devops/index) ke správě kódu společně s chybami a pracovními položkami pro celý projekt. Zobrazit [Začínáme s Git a úložiště Azure](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) Další informace o správě úložiště Git v sadě Visual Studio pomocí Průzkumníka týmových projektů. Visual Studio také poskytuje jiné funkce správy vestavěné zdrojového kódu. Další informace o nich najdete v tématu [funkce Gitu v sadě Visual Studio (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
 Služby Azure DevOps jsou cloudové služby pro plánování, hostování, automatizovat a nasazení softwaru a umožněte spolupráci v týmech. Služby Azure DevOps podporu úložiště Git (distribuovanou správu verzí) a Team Foundation Version Control (centralizované správy verzí). Podporují taky kanály pro nepřetržité sestavení a vydaná verze (CI/CD) kód uložený ve systémy správy verzí. Služby Azure DevOps také podporu metodologie Scrum, CMMI a agilní vývoj.
 

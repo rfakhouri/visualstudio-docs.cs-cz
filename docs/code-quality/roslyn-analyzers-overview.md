@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948274"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221941"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Přehled analyzátory pro .NET Compiler Platform
 
-Visual Studio 2017 obsahuje integrovanou sadu .NET Compiler Platform analyzátory, které analýza kódu C# nebo Visual Basic během psaní. Podívejte se na styl kódu, kvalitu kódu a udržovatelnosti, návrh kódu a další problémy analyzátory. Jako balíček NuGet můžete nainstalovat další analyzátory jako rozšíření sady Visual Studio nebo na základě jednotlivých projektů.
+Visual Studio obsahuje integrované sada .NET Compiler Platform analyzátory, které analyzují vaše C# nebo kódu jazyka Visual Basic jako vy, zadejte. Podívejte se na styl kódu, kvalitu kódu a udržovatelnosti, návrh kódu a další problémy analyzátory. Jako balíček NuGet můžete nainstalovat další analyzátory jako rozšíření sady Visual Studio nebo na základě jednotlivých projektů.
 
 Pokud analyzátor se objevila porušení pravidel, jsou hlášeny v editoru kódu jako *podtržení* problematického kódu a v **seznam chyb**.
 

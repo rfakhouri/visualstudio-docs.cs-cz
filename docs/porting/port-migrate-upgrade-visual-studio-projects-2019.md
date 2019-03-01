@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ed1d6ef42ebe0e9b9fd39f8f6da0d18ed2f35832
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 628f9210568298d7779a494002fe3c599acb45ff
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007316"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223205"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2019
 
@@ -76,7 +76,7 @@ Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najde
 | Rozšiřitelnost sady Visual Studio/souboru VSIX | Projekty s MinimumVersion 14.0 nebo méně aktualizují deklarovat MinimumVersion 15.0, což zabrání projektu se otevře v dřívějších verzích sady Visual Studio. Povolit projekt otevřít ve starších verzích, nastavte na MinimumVersion `$(VisualStudioVersion)`. Viz také [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Můžete použít nástroje Microsoft Test Manager nebo Visual Studio 2010 SP1 a novější k otevření prostředí, které jsou vytvořeny v některé z těchto verzí. Ale pro Visual Studio 2010 SP1 verze nástroje Microsoft Test Manager musí odpovídat verzi serveru Team Foundation Server než budete moct vytvořit prostředí. |
 | Visual Studio Tools pro Apache Cordova | Podpora pro Apache Cordova byla odebrána v aplikaci Visual Studio 2019. Protože neexistuje žádný ekvivalent v aplikaci Visual Studio 2019, neexistuje žádná cesta Automatická migrace pro tyto projekty.<br/><br/>Můžete použít nástroje Cordova pro Visual Studio Code příponou (které poskytuje podporu pro nejnovější verzi Cordova) nebo pokračovat v používání sady Visual Studio 2017. |
-| Nasazení webu (wdproj) | Podpora pro nasazení webu byla odebrána projekty v sadě Visual Studio 2012 a uveďte podpora profilů publikování. Protože neexistuje žádný ekvivalent v aplikaci Visual Studio 2019, neexistuje žádná cesta Automatická migrace pro tyto projekty. Místo toho v textovém editoru otevřete soubor wdproj a jakékoli vlastní nastavení do pubxml kopírování a vkládání (profil publikování) souboru, jak je popsáno na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Viz také [plány týkající se webu a webové projekty nasazení](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Nasazení webu (wdproj) | Podpora pro nasazení webu byla odebrána projekty v sadě Visual Studio 2012 a uveďte podpora profilů publikování. Protože neexistuje žádný ekvivalent v aplikaci Visual Studio 2019, neexistuje žádná cesta Automatická migrace pro tyto projekty. Místo toho v textovém editoru otevřete soubor wdproj a jakékoli vlastní nastavení do pubxml kopírování a vkládání (profil publikování) souboru, jak je popsáno na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Tento projekt lze otevřít v Visual Studio 2019, Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 a Visual Studio 2012. |
 | Windows Presentation Foundation | Tento projekt lze otevřít v sadě Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 a Visual Studio 2010 SP1. |
 | Aplikace Windows Phone | Projekty pro Windows Phone nejsou podporovány v aplikaci Visual Studio 2019. <br/><br/>Na údržbu ve Windows Phone 8.x aplikací pomocí sady Visual Studio 2015. Chcete-li udržovat projekty pro Windows Phone 7.x, používejte Visual Studio 2012. |

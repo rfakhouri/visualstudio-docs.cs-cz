@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702717"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223140"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu sady Visual Studio
 
@@ -24,7 +24,7 @@ Informace o běžných klávesových zkratkách naleznete v tématu [klávesnice
 
 Napište kód rychleji s využitím následující funkce.
 
-- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úprav rychleji. Například v **Visual Studio 2017 verze 15.6** a později, můžete použít příkaz jednoduše duplikovat jediného řádku kódu bez nutnosti ho zkopírovat, změnit umístění kurzoru a vložte ji. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo sbalit výběru textu výběrem **upravit** > **Upřesnit** > **Rozbalit výběr** nebo **Upravit** > **Upřesnit** > **výběr kontraktu**, nebo stisknutím klávesy **Shift** + **Alt** + **=** nebo **Shift**+**Alt** + **-** (k dispozici v **Visual Studio 2017 verze 15.5** a novější).
+- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úprav rychleji. Například můžete příkazu, který bude snadno duplicitní jediného řádku kódu bez nutnosti ho zkopírovat, změnit umístění kurzoru a vložte ji. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo sbalit výběru textu výběrem **upravit** > **Upřesnit** > **Rozbalit výběr** nebo **Upravit** > **Upřesnit** > **výběr kontraktu**, nebo stisknutím klávesy **Shift** + **Alt** + **=** nebo **Shift**+**Alt** +  **-**.
 
 - **Použijte technologii IntelliSense**. Při zadávání kódu v editoru, zobrazí se informace technologie IntelliSense, jako je například seznam členů, informace o parametrech, rychlé informace, pomoc při podpisu a dokončit slovo. Tyto funkce podporují fuzzy vyhledávání textu. například seznam výsledků pro seznam členů obsahuje nejen pouze položky, které začínají znaky, zda jste zadali, ale také záznamy, které obsahují kombinaci znaků kdekoli v jejich názvy. Další informace najdete v tématu [použití IntelliSense](../ide/using-intellisense.md).
 
@@ -102,9 +102,19 @@ Ladění může spotřebovat spoustu času, ale následující tipy vám pomůž
 
 Můžete rychle získat Developer Command Prompt nebo jiného nástroje Visual Studio, jej můžete připnout do nabídky Start nebo na hlavním panelu.
 
-1. V Průzkumníku Windows přejděte do `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Klikněte pravým tlačítkem myši nebo otevřete kontextovou nabídku pro **Developer Command Prompt**a klikněte na tlačítko **připnout na Start** nebo **připnout na hlavní panel**.
+1. V Průzkumníku Windows přejděte do *%ProgramData%\Microsoft\Windows\Start nástroje Studio 2017\Visual Menu\Programs\Visual Studio*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. V Průzkumníku Windows přejděte do *%ProgramData%\Microsoft\Windows\Start nástroje Studio 2019\Visual Menu\Programs\Visual Studio*.
+
+::: moniker-end
+
+2. Klikněte pravým tlačítkem myši nebo otevřete kontextovou nabídku pro **Developer Command Prompt**a klikněte na tlačítko **připnout na Start** nebo **připnout na hlavní panel**.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Správa souborů, panelů nástrojů a windows
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843790"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223387"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Ladění aplikací v jazyce JavaScript nebo TypeScript v sadě Visual Studio
 
@@ -172,4 +172,4 @@ Ladění dynamicky generované soubory není automatické. Nelze automaticky dos
 
    Internet Explorer, přejděte na **Průzkumníka řešení > dokumenty skriptu > Windows Internet Explorer > YourPageName**.
 
-Další informace najdete v tématu [Client-side ladění projektů ASP.NET v prohlížeči Google Chrome](https://blogs.msdn.microsoft.com/webdev/2016/11/21/client-side-debugging-of-asp-net-projects-in-google-chrome/).
+Další informace najdete v tématu [Client-side ladění projektů ASP.NET v prohlížeči Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).

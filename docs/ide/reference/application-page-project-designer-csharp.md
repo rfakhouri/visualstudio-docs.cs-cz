@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f287de1e756d20575e1c72775719b2c366534b6d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927552"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222529"
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 
@@ -71,7 +71,7 @@ Informace o tom, jak programově přístup k této vlastnosti naleznete v témat
 
 **Automaticky generovat přesměrování vazby**
 
-Přesměrování vazby jsou přidány do projektu, pokud vaše aplikace nebo její součásti odkazují na více verzí stejného sestavení. Pokud chcete ručně definovat přesměrování vazby v souboru projektu, zrušte zaškrtnutí možnosti **generovat automatické přesměrování vazby**. Toto zaškrtávací políčko byla zavedena v sadě Visual Studio 2017 verze 15.7.
+Přesměrování vazby jsou přidány do projektu, pokud vaše aplikace nebo její součásti odkazují na více verzí stejného sestavení. Pokud chcete ručně definovat přesměrování vazby v souboru projektu, zrušte zaškrtnutí možnosti **generovat automatické přesměrování vazby**.
 
 Další informace o přesměrování najdete v tématu [přesměrování verze sestavení](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

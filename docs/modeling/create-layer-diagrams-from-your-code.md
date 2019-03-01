@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52919bc65366afc3e0fef5d3dbca1e5a9e7e77e1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913012"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223231"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Vytváření diagramů závislostí z kódu
 
@@ -41,7 +41,7 @@ Než začnete vytvářet diagram závislostí, ujistěte se, že má vaše řeš
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>Přidat do projektu modelování nový diagram závislostí
 
 > [!NOTE]
-> Diagramy závislostí nejsou podporovány pro projekty .NET Core v sadě Visual Studio 2017.
+> Diagramy závislostí nejsou podporovány pro projekty .NET Core v sadě Visual Studio.
 
 1.  Na **architektura** nabídce zvolte **nový Diagram závislostí**.
 

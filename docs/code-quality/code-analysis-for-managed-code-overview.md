@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909138"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222594"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Přehled statické analýzy kódu pro spravovaný kód v sadě Visual Studio
 
-Visual Studio 2017 můžete provést analýzu kódu spravovaného kódu dvěma způsoby: pomocí *FxCop* statické analýzy spravovaných sestavení a s další moderní *analyzátory Roslyn*. Toto téma popisuje FxCop statickou analýzu kódu. Další informace o analýze kódu pomocí analyzátorů kódu, naleznete v tématu [analyzátory Roslyn přehled](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio můžete provést analýzu kódu spravovaného kódu dvěma způsoby: pomocí *FxCop* statické analýzy spravovaných sestavení a s další moderní *analyzátory Roslyn*. Toto téma popisuje FxCop statickou analýzu kódu. Další informace o analýze kódu pomocí analyzátorů kódu, naleznete v tématu [analyzátory Roslyn přehled](../code-quality/roslyn-analyzers-overview.md).
 
 Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí informace o sestaveních, jako jsou porušení programování a návrhu pravidel stanoví pokyny pro návrh rozhraní Microsoft .NET Framework.
 
@@ -59,7 +59,7 @@ Public class MyClass
 Další informace najdete v tématu [potlačit upozornění](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Pokud provádíte migraci projekt do sady Visual Studio 2017, může vás prudce potýkají s velký počet upozornění analýzy kódu. Pokud nejste připravení upozornění, a chcete být tak produktivní okamžitě, můžete si *směrného plánu* analýzu stavu projektu. Z **analyzovat** nabídce vyberte možnost **spustit analýzu kódu a potlačit aktivních problémů**.
+> Pokud provádíte migraci do projektu sady Visual Studio 2017 nebo Visual Studio 2019, může vás prudce potýkají s velký počet upozornění analýzy kódu. Pokud nejste připravení upozornění, a chcete být tak produktivní okamžitě, můžete si *směrného plánu* analýzu stavu projektu. Z **analyzovat** nabídce vyberte možnost **spustit analýzu kódu a potlačit aktivních problémů**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Spustit analýzu kódu jako součást zásady vrácení se změnami
 

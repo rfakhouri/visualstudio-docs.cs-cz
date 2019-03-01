@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29475ef3b5bf25c2fca67d6aa7f4708787350cb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914773"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222880"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Postupy: Definování a použití delegátů aktivit v návrháři postupu provádění
 
@@ -26,7 +26,7 @@ Rozhraní .NET framework 4.5 zahrnuje návrháře out-of-box <xref:System.Activi
 2. V **nový projekt** dialogové okno, vyberte **pracovního postupu** kategorii na levé straně a pak vyberte **Konzolová aplikace pracovního postupu** šablony projektu. Název projektu (v případě potřeby) a klikněte na tlačítko **Ok**.
 
    > [!NOTE]
-   > Pokud se nezobrazí **pracovního postupu** kategorie, nejdřív nainstalovali **Windows Workflow Foundation** komponentu sady Visual Studio 2017. Podrobné pokyny najdete v tématu [nainstalovat Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Pokud se nezobrazí **pracovního postupu** kategorie, nejdřív nainstalovali **Windows Workflow Foundation** komponentu sady Visual Studio. Podrobné pokyny najdete v tématu [nainstalovat Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **přidat** > **nová položka**. Vyberte **pracovního postupu** kategorie a pak vyberte **aktivity** šablony položky. Pojmenujte novou aktivitu **MyForEach.xaml** a pak vyberte **OK**.
 

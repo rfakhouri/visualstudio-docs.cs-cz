@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934065"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223036"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý start: Přizpůsobení integrovaného vývojového prostředí sady Visual Studio a Editor
 
@@ -22,7 +22,7 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ## <a name="set-the-color-theme"></a>Nastavit barevný motiv
 
-Výchozí barevný motiv uživatelského rozhraní Visual Studio 2017 se nazývá **modré**. Změňme ji na **tmavě**.
+Výchozí barevný motiv uživatelského rozhraní sady Visual Studio se nazývá **modré**. Změňme ji na **tmavě**.
 
 1. Na panelu nabídek, které, jako je na řádku nabídek **souboru** a **upravit**, zvolte **nástroje** > **možnosti**.
 

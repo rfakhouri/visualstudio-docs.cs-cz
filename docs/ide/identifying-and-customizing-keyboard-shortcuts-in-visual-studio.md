@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935716"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222058"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifikování a přizpůsobení klávesových zkratek v sadě Visual Studio
 
@@ -106,11 +106,21 @@ Vlastní klávesové zkratky je možné sdílet exportováním do souboru a pře
 
 4. Vyberte **klávesnice** zaškrtněte políčko a klikněte na tlačítko **Další** tlačítko.
 
-    ![Exportovat jenom vlastní klávesové zkratky](../ide/media/exportshortcuts.png)
+   ![Exportovat jenom vlastní klávesové zkratky](../ide/media/exportshortcuts.png)
 
-5. V **co chcete pojmenovat soubor nastavení?** a **Store Můj soubor nastavení v tomto adresáři** polí, buď ponechte výchozí hodnoty nebo zadejte jiné hodnoty a klikněte na tlačítko  **Dokončit** tlačítko.
+5. V **co chcete pojmenovat soubor nastavení** a **Store Můj soubor nastavení v tomto adresáři** polí, buď ponechte výchozí hodnoty nebo zadejte jiné hodnoty a klikněte na tlačítko  **Dokončit** tlačítko.
 
-    Ve výchozím nastavení, klávesové zkratky ukládány do souboru v *%USERPROFILE%\Documents\Visual Studio 2017\Settings* složky. Název souboru zobrazuje datum, kdy jste nastavení exportovali, a je rozšíření *.vssettings*.
+::: moniker range="vs-2017"
+
+Ve výchozím nastavení, klávesové zkratky ukládány do souboru v *%USERPROFILE%\Documents\Visual Studio 2017\Settings* složky. Název souboru zobrazuje datum, kdy jste nastavení exportovali, a je rozšíření *.vssettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Ve výchozím nastavení, klávesové zkratky ukládány do souboru v *%USERPROFILE%\Documents\Visual Studio 2019\Settings* složky. Název souboru zobrazuje datum, kdy jste nastavení exportovali, a je rozšíření *.vssettings*.
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Import pouze klávesových zkratek
 

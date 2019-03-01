@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950302"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223767"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live Unit Testing v sadě Visual Studio
 
@@ -34,13 +34,13 @@ Kompletní řešení jazyka Visual Basic si můžete stáhnout z [MicrosoftDocs/
 
 ## <a name="prerequisites"></a>Požadavky
 
-Tento kurz vyžaduje, že jste nainstalovali Visual Studio 2017 Enterprise Edition verze 15.3 se funkcí .NET Core 2.0.
+Tento kurz vyžaduje, že jste nainstalovali Visual Studio Enterprise Edition s úlohou .NET Core 2.0.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Vytvoření řešení a projekt knihovny tříd
 
 Začněte vytvořením řešení sady Visual Studio s názvem `UtilityLibraries` , který se skládá z jedné .NET Standard projekt knihovny tříd, `StringLibrary`. Můžete napsat `StringLibrary` v C# nebo Visual Basic.
 
-Řešením je kontejner pro jeden nebo více projektů. Pokud chcete vytvořit řešení, otevřete Visual Studio 2017 a postupujte takto:
+Řešením je kontejner pro jeden nebo více projektů. Pokud chcete vytvořit řešení, otevřete sadu Visual Studio a proveďte následující:
 
 1. Vyberte **souboru** > **nový** > **projektu** z nejvyšší úrovně nabídky sady Visual Studio.
 

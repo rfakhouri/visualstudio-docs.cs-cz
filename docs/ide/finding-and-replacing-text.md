@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d6ebef5b4f7850a23537ec3df3eb51a574fa7985
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937445"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222815"
 ---
 # <a name="find-and-replace-text"></a>Vyhledání a nahrazení textu
 
-Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) nebo [najít/nahradit v souborech](#find-in-files-and-replace-in-files). Nová funkce v sadě Visual Studio 2017 verze 15.8, můžete najít a nahradit *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)*.
+Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) nebo [najít/nahradit v souborech](#find-in-files-and-replace-in-files). Můžete také najít a nahradit pouze *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)*.
 
 > [!TIP]
 > Pokud se přejmenování symboly kódu, jako jsou proměnné a metody, je lepší *[Refaktorujte](../ide/reference/rename.md)* je než můžete najít a nahradit. Refaktoring je inteligentní a rozumí oboru, zatímco najít a nahradit slepě nahradí všechny instance.
@@ -93,7 +93,7 @@ Součást sady můžete definovat jako obor hledání výběrem **upravit sadu v
 > [!NOTE]
 > Tato část se týká sady Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [běr bloku](/visualstudio/mac/block-selection).
 
-**Novinka v sadě Visual Studio 2017 verze 15.8**
+**Zavedena v sadě Visual Studio 2017 verze 15.8**
 
 Použití *více blikající kurzor o výběr* provádět stejné úpravy ve dvou nebo více míst ve stejnou dobu. Například můžete vložit stejný text nebo změnit stávající text v několika umístěních ve stejnou dobu.
 

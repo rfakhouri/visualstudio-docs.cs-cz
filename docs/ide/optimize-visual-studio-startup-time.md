@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 22dcbcbf9a3506e3cd6c962b1f31ada24d5234e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315869"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223647"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimalizace spouštění sady Visual Studio
 
@@ -27,7 +27,7 @@ Visual Studio je navržena pro spuštění jako rychle a efektivně nejvíce. Al
 
 ## <a name="startup-behavior"></a>Chování při spuštění
 
-Aby se zabránilo rozšíření čas spuštění, načte Visual Studio 2017 rozšíření pomocí _na vyžádání_ přístup. Toto chování znamená, že rozšíření neotevírat okamžitě po spuštění sady Visual Studio, ale podle potřeby. Protože okna nástrojů ponechány otevřené v předchozí relaci sady Visual Studio může zhoršit dobu spuštění, Visual Studio otevře okna nástrojů inteligentnější způsobem, aby se zabránilo dopadu na dobu spuštění.
+Aby se zabránilo rozšíření čas spuštění, Visual Studio načte rozšíření pomocí _na vyžádání_ přístup. Toto chování znamená, že rozšíření neotevírat okamžitě po spuštění sady Visual Studio, ale podle potřeby. Protože okna nástrojů ponechány otevřené v předchozí relaci sady Visual Studio může zhoršit dobu spuštění, Visual Studio otevře okna nástrojů inteligentnější způsobem, aby se zabránilo dopadu na dobu spuštění.
 
 Pokud sada Visual Studio zjistí pomalé spouštění, zobrazí se místní zpráva, upozorní vás do okna rozšíření nebo nástroj, který je příčinou zpomalení. Zpráva obsahuje odkaz **spravovat výkon sady Visual Studio** dialogové okno. Můžete také přistupovat k dialogovému oknu výběrem **pomáhají** > **spravovat výkon sady Visual Studio** z řádku nabídek.
 
@@ -66,7 +66,7 @@ Vždy znovu povolíte rozšíření pro budoucí relace pomocí **Správce rozš
      ![Správa výkonu sady Visual Studio – zobrazení okna nástrojů](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> Některé starší verze sady Visual Studio 2017 má funkci zvanou **zjednodušené načtení řešení**. Tato funkce už nejsou k dispozici v sadě Visual Studio 2017 verze 15.5 nebo novější. V sadě Visual Studio 2017 verze 15.5 nebo novější spravované velká řešení obsahující kód zatížení mnohem rychleji než dřív, i bez zjednodušené načtení řešení.
+> Některé starší verze sady Visual Studio 2017 má funkci zvanou **zjednodušené načtení řešení**. V aktuální verze spravované velká řešení obsahující kód zatížení mnohem rychleji než dřív, i bez zjednodušené načtení řešení.
 
 ## <a name="see-also"></a>Viz také:
 

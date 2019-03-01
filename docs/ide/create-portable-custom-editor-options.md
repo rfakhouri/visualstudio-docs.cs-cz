@@ -7,16 +7,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 259d1c3ca0d86125e0b7c59c39851c2bb2f20b83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953045"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223755"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvoření nastavení přenosné vlastního editoru pomocí řešení EditorConfig
 
-V sadě Visual Studio 2017, můžete přidat [EditorConfig](http://editorconfig.org/) soubor do projektu nebo základ kódu k vynucení konzistentní kódování styly pro všechny uživatele, který funguje v základu kódu. EditorConfig nastavení přednost před globální sady Visual Studio text nastavení editoru. To znamená, že můžete každý základ kódu přizpůsobit tak, aby se používala nastavení textového editoru, která jsou specifická pro daný projekt. Stále můžete nastavit předvolby osobní editoru v sadě Visual Studio **možnosti** dialogové okno. Tato nastavení platí vždy, když pracujete v základu kódu bez *.editorconfig* souboru, nebo když *.editorconfig* souboru nepřepíše konkrétní nastavení. Příkladem takových předvoleb je styl odsazení&mdash;tabulátory nebo mezery.
+Můžete přidat [EditorConfig](http://editorconfig.org/) soubor do projektu nebo základ kódu k vynucení konzistentní kódování styly pro všechny uživatele, který funguje v základu kódu. EditorConfig nastavení přednost před globální sady Visual Studio text nastavení editoru. To znamená, že můžete každý základ kódu přizpůsobit tak, aby se používala nastavení textového editoru, která jsou specifická pro daný projekt. Stále můžete nastavit předvolby osobní editoru v sadě Visual Studio **možnosti** dialogové okno. Tato nastavení platí vždy, když pracujete v základu kódu bez *.editorconfig* souboru, nebo když *.editorconfig* souboru nepřepíše konkrétní nastavení. Příkladem takových předvoleb je styl odsazení&mdash;tabulátory nebo mezery.
 
 EditorConfig nastavení podporuje řadu editory kódu a prostředími IDE, jako je Visual Studio. Je přenosný komponentu, která se přenáší pomocí kódu a můžete vynutit kódování styly i mimo sadu Visual Studio.
 

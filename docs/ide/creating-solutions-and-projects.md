@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937518"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223244"
 ---
 # <a name="create-solutions-and-projects"></a>Vytváření řešení a projektů
 
@@ -53,7 +53,7 @@ Který říká, řešení a projekty není nutné pro vývoj aplikací v sadě V
    ![Dialogové okno Nový projekt](./media/vside-newproject-templates-list.png)
 
    > [!NOTE]
-   > Seznam dostupných jazyků a šablony projektů, které se zobrazí, závisí na verzi sady Visual Studio spustíte a úlohy, které jsou nainstalovány. Další informace o tom, jak nainstalovat další úlohy, naleznete v tématu [upravit Visual Studio 2017 přidáním nebo odebráním úlohy a komponenty](../install/modify-visual-studio.md).
+   > Seznam dostupných jazyků a šablony projektů, které se zobrazí, závisí na verzi sady Visual Studio spustíte a úlohy, které jsou nainstalovány. Další informace o tom, jak nainstalovat další úlohy, naleznete v tématu [upravit přidáním nebo odebráním úlohy a komponenty Visual Studio](../install/modify-visual-studio.md).
 
 2. Zobrazit seznam šablon pro programovací jazyk, který chcete použít výběrem trojúhelníku vedle názvu jazyka a pak zvolte typ projektu.
 

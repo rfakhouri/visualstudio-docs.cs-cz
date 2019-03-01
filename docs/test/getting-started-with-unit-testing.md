@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927981"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223517"
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testováním částí
 
@@ -74,7 +74,7 @@ Můžete také vytvořit test jednotky metoda zástupné procedury s **vytvořit
 Pokud používáte MSTest, xUnit a NUnit testovací rozhraní v sadě Visual Studio 2017 nebo později, zobrazí se živé výsledků testování částí.
 
 > [!NOTE]
-> Živé testování částí je pouze k dispozici v aplikaci Visual Studio 2017 Enterprise Edition.
+> Živé testování částí je k dispozici pouze v edici Visual Studio Enterprise.
 
 1. Zapnout z testování jednotek **Test** nabídky.
 
@@ -96,7 +96,7 @@ Při spuštění IntelliTest můžete snadno zobrazit, jaké testy se nedaří a
 
 ![Generování testů jednotek pomocí funkce IntelliTest](media/intellitest.png)
 
-## <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
+## <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů částí pomocí Průzkumníka testů
 
 Použití **Průzkumníka testů** spouštění testů jednotek sady Visual Studio nebo projektů testování jednotky třetí strany, seskupte testy do kategorií, filtrovat seznam testů a vytvořit, uložit, a spusťte seznamy stop testů. Můžete také ladit testy a analyzovat pokrytí testu výkonu a kódu. Další informace o postupu [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md).
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0450260d5d889c141607a281740bf06d255d5c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923418"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222451"
 ---
 # <a name="workflow-project-templates"></a>Šablony projektu pracovního postupu
 
@@ -34,7 +34,7 @@ Visual Studio poskytuje čtyři různé šablony projektu pracovního postupu:
 
 - Knihovna návrháře aktivit
 
-Pro přístup k tyto šablony, nejdřív nainstalovat **Windows Workflow Foundation** komponentu sady Visual Studio 2017. Podrobné pokyny najdete v tématu [nainstalovat Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Pro přístup k tyto šablony, nejdřív nainstalovat **Windows Workflow Foundation** komponentu sady Visual Studio. Podrobné pokyny najdete v tématu [nainstalovat Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Po instalaci **Windows Workflow Foundation** komponenty, otevřete **nový projekt** dialogové okno tak, že vyberete **souboru** > **nový**  >  **Projektu**.
 

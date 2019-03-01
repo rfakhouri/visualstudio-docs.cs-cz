@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření fragmentu kódu'
+title: 'Návod: Vytvoření fragmentu kódu'
 ms.date: 10/27/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,18 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8944117c7d4e47f36f504f9677074ad4f86e33de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d717619954981c6b8cdf900f8fb358272478264b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949054"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223426"
 ---
-# <a name="walkthrough-create-a-code-snippet"></a>Průvodce: Vytvoření fragmentu kódu
+# <a name="walkthrough-create-a-code-snippet"></a>Návod: Vytvoření fragmentu kódu
+
 Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je třeba provést je vytvořit soubor XML, vyplnit odpovídající prvky a přidejte svůj kód do něj. Můžete také přidat odkazy a náhradní parametry do vašeho kódu. Fragment kódu pro instalaci sady Visual Studio můžete přidat pomocí **Import** tlačítko **Správce fragmentů kódů** (**nástroje**  >   **Správce fragmentů kódu**).
 
 ## <a name="snippet-template"></a>Šablona fragmentu
- Šablona základního fragmentu je následující:
+
+Šablona základního fragmentu je následující:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,13 +50,13 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
 
 ### <a name="create-a-code-snippet"></a>Vytvoření fragmentu kódu
 
-1.  Vytvořte nový soubor XML v sadě Visual Studio a přidejte šablonu uvedenou výše.
+1. Vytvořte nový soubor XML v sadě Visual Studio a přidejte šablonu uvedenou výše.
 
-2.  Vyplňte název fragmentu kódu, například "Hello World VB" v **název** elementu.
+2. Vyplňte název fragmentu kódu, například "Hello World VB" v **název** elementu.
 
-3.  Vyplňte jazyk fragmentu kódu do **jazyk** atribut **kód** elementu. V tomto příkladu použijte "VB".
+3. Vyplňte jazyk fragmentu kódu do **jazyk** atribut **kód** elementu. V tomto příkladu použijte "VB".
 
-4.  Přidat nějaký kód ve službě **CDATA** sekci **kód** prvek, například:
+4. Přidat nějaký kód ve službě **CDATA** sekci **kód** prvek, například:
 
     ```xml
     <Code Language="VB">
@@ -62,33 +64,53 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </Code>
     ```
 
-5.  Uložte výstřižek jako *VBCodeSnippet.snippet*.
+5. Uložte výstřižek jako *VBCodeSnippet.snippet*.
 
 ### <a name="add-a-code-snippet-to-visual-studio"></a>Přidání fragmentu kódu do sady Visual Studio
 
-1.  Můžete přidat vlastní výstřižky do instalaci sady Visual Studio pomocí Správce fragmentů kódů. Otevřít **Správce fragmentů kódu** (**nástroje** > **Správce fragmentů kódu**).
+1. Můžete přidat vlastní výstřižky do instalaci sady Visual Studio pomocí Správce fragmentů kódů. Otevřít **Správce fragmentů kódu** (**nástroje** > **Správce fragmentů kódu**).
 
-2.  Klikněte na tlačítko **Import** tlačítko.
+2. Klikněte na tlačítko **Import** tlačítko.
 
-3.  Přejděte do umístění, kam jste uložili fragmentu kódu v předchozím postupu, vyberte ho a klikněte na tlačítko **otevřít**.
+3. Přejděte do umístění, kam jste uložili fragmentu kódu v předchozím postupu, vyberte ho a klikněte na tlačítko **otevřít**.
 
-4.  **Fragment kódu** otevře dialogové okno s výzvou, abyste se rozhodnete, jak přidat výstřižku z nabídky v pravém podokně. Jedna z možností by měla být **Moje fragmenty kódu**. Vyberte ho a klikněte na tlačítko **Dokončit**, pak **OK**.
+4. **Fragment kódu** otevře dialogové okno s výzvou, abyste se rozhodnete, jak přidat výstřižku z nabídky v pravém podokně. Jedna z možností by měla být **Moje fragmenty kódu**. Vyberte ho a klikněte na tlačítko **Dokončit**, pak **OK**.
 
-5.  Fragment je zkopírován do následujícího umístění:
+5. Fragment je zkopírován do následujícího umístění:
 
-     *%USERPROFILE%\Documents\Visual studio 2017\Code Snippets\Visual Basic\My fragmenty kódu*
+   ::: moniker range="vs-2017"
 
-6.  Otestujte fragment otevřením projektu jazyka Visual Basic a otevřete soubor s kódem. V souboru zvolte **fragmenty** > **Vložit fragment** v místní nabídce pak **Moje fragmenty kódu**. Měli byste vidět fragment kódu s názvem **Můj fragment kódu jazyka Visual Basic**. Poklepejte na něj.
+   *%USERPROFILE%\Documents\Visual studio 2017\Code Snippets\Visual Basic\My fragmenty kódu*
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   *%USERPROFILE%\Documents\Visual studio 2019\Code Snippets\Visual Basic\My fragmenty kódu*
+
+   ::: moniker-end
+
+6. Otestujte fragment otevřením projektu jazyka Visual Basic a otevřete soubor s kódem. V souboru zvolte **fragmenty** > **Vložit fragment** v místní nabídce pak **Moje fragmenty kódu**. Měli byste vidět fragment kódu s názvem **Můj fragment kódu jazyka Visual Basic**. Poklepejte na něj.
 
     `Console.WriteLine("Hello, World!")` je vložen do souboru kódu.
 
 ### <a name="add-description-and-shortcut-fields"></a>Přidání polí popis a zástupce
 
-1.  Popisná pole poskytují další informace o fragmentech kódů při zobrazení ve Správci fragmentů kódu. Zástupce je příznak, který mohou uživatelé zadat, aby vložili váš fragment. Upravte fragment kódu přidaný otevřením souboru *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
+::: moniker range="vs-2017"
 
-2.  Přidat **Autor** a **popis** prvků, které mají **záhlaví** prvek a vyplňte je.
+1. Popisná pole poskytují další informace o fragmentech kódů při zobrazení ve Správci fragmentů kódu. Zástupce je příznak, který mohou uživatelé zadat, aby vložili váš fragment. Upravte fragment kódu přidaný otevřením souboru *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
 
-3.  **Záhlaví** prvek by měl vypadat přibližně takto:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Popisná pole poskytují další informace o fragmentech kódů při zobrazení ve Správci fragmentů kódu. Zástupce je příznak, který mohou uživatelé zadat, aby vložili váš fragment. Upravte fragment kódu přidaný otevřením souboru *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
+
+::: moniker-end
+
+2. Přidat **Autor** a **popis** prvků, které mají **záhlaví** prvek a vyplňte je.
+
+3. **Záhlaví** prvek by měl vypadat přibližně takto:
 
     ```xml
     <Header>
@@ -98,9 +120,9 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </Header>
     ```
 
-4.  Otevřít **Správce fragmentů kódů** a vyberte váš fragment kódu. V pravém podokně byste měli vidět, který **popis** a **Autor** pole jsou nyní zaplněna.
+4. Otevřít **Správce fragmentů kódů** a vyberte váš fragment kódu. V pravém podokně byste měli vidět, který **popis** a **Autor** pole jsou nyní zaplněna.
 
-5.  Chcete-li přidat zástupce, přidejte **místní** element společně **Autor** a **popis** element:
+5. Chcete-li přidat zástupce, přidejte **místní** element společně **Autor** a **popis** element:
 
     ```xml
     <Header>
@@ -111,19 +133,19 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </Header>
     ```
 
-6.  Uložte soubor výstřižku znovu.
+6. Uložte soubor výstřižku znovu.
 
-7.  Chcete-li otestovat zástupce, otevřete projekt jazyka Visual Basic a otevřete soubor kódu. Typ `hello` v souboru a stiskněte klávesu **kartu** dvakrát.
+7. Chcete-li otestovat zástupce, otevřete projekt jazyka Visual Basic a otevřete soubor kódu. Typ `hello` v souboru a stiskněte klávesu **kartu** dvakrát.
 
     Fragment kódu vložen.
 
 ### <a name="add-references-and-imports"></a>Přidání odkazů a importů
 
-1.  Můžete přidat odkaz na projekt pomocí **odkazy** prvek a přidat deklaraci na importy pomocí **importy** elementu. (Tento postup funguje pro jazyk C# také.) Například, pokud změníte `Console.WriteLine` v příkladu kódu na `MessageBox.Show`, budete muset přidat *System.Windows.Forms.dll* sestavení do projektu.
+1. Můžete přidat odkaz na projekt pomocí **odkazy** prvek a přidat deklaraci na importy pomocí **importy** elementu. (Tento postup funguje pro jazyk C# také.) Například, pokud změníte `Console.WriteLine` v příkladu kódu na `MessageBox.Show`, budete muset přidat *System.Windows.Forms.dll* sestavení do projektu.
 
-2.  Otevřete fragment.
+2. Otevřete fragment.
 
-3.  Přidat **odkazy** element v rámci **fragment** element:
+3. Přidat **odkazy** element v rámci **fragment** element:
 
     ```xml
     <References>
@@ -133,7 +155,7 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </References>
     ```
 
-4.  Přidat **importy** element v rámci **fragment** element:
+4. Přidat **importy** element v rámci **fragment** element:
 
     ```xml
     <Imports>
@@ -143,17 +165,17 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </Imports>
     ```
 
-5.  Změnit **CDATA** části takto:
+5. Změnit **CDATA** části takto:
 
     ```xml
     <![CDATA[MessageBox.Show("Hello, World!")]]>
     ```
 
-6.  Uložte výstřižek.
+6. Uložte výstřižek.
 
-7.  Otevřete projekt jazyka Visual Basic a přidejte fragment kódu.
+7. Otevřete projekt jazyka Visual Basic a přidejte fragment kódu.
 
-8.  Zobrazí se `Imports` příkazu v horní části souboru kódu:
+8. Zobrazí se `Imports` příkazu v horní části souboru kódu:
 
     ```vb
     Imports System.Windows.Forms
@@ -163,11 +185,11 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
 
 ### <a name="add-replacements"></a>Přidání nahrazení
 
-1.  Můžete chtít, aby fragmenty kódu nahradil uživatel, například pokud přidáte proměnnou a má uživatel k nahrazení proměnné s jednou v aktuálním projektu. Můžete zadat dva druhy náhrad: literály a objekty. Literály jsou řetězce nějakého typu (řetězcové literály, názvy proměnných nebo řetězcové reprezentace číselných hodnot). Objekty jsou instancemi jiného typu než řetězce. V tomto postupu deklarovat náhradní literál a náhradní objekt a změníte kód, který na tyto náhrady odkazuje.
+1. Můžete chtít, aby fragmenty kódu nahradil uživatel, například pokud přidáte proměnnou a má uživatel k nahrazení proměnné s jednou v aktuálním projektu. Můžete zadat dva druhy náhrad: literály a objekty. Literály jsou řetězce nějakého typu (řetězcové literály, názvy proměnných nebo řetězcové reprezentace číselných hodnot). Objekty jsou instancemi jiného typu než řetězce. V tomto postupu deklarovat náhradní literál a náhradní objekt a změníte kód, který na tyto náhrady odkazuje.
 
-2.  Otevřete fragment.
+2. Otevřete fragment.
 
-3.  Tento příklad používá připojovací řetězec SQL, takže budete muset změnit **importy** a **odkazy** prvky pro přidání příslušných odkazů:
+3. Tento příklad používá připojovací řetězec SQL, takže budete muset změnit **importy** a **odkazy** prvky pro přidání příslušných odkazů:
 
     ```xml
     <References>
@@ -188,7 +210,7 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </Imports>
     ```
 
-4.  Chcete-li deklarovat literální nahrazení pro připojovací řetězec SQL, přidejte **deklarace** element v rámci **fragment** elementu a do něj přidejte **literálu** element s podprvky pro Identifikátor, popisek a výchozí hodnotu pro nahrazení:
+4. Chcete-li deklarovat literální nahrazení pro připojovací řetězec SQL, přidejte **deklarace** element v rámci **fragment** elementu a do něj přidejte **literálu** element s podprvky pro Identifikátor, popisek a výchozí hodnotu pro nahrazení:
 
     ```xml
     <Declarations>
@@ -200,7 +222,7 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </Declarations>
     ```
 
-5.  Chcete-li deklarovat nahrazení objektu pro připojení SQL, přidejte **objekt** element v rámci **deklarace** prvek a přidejte podprvky pro Identifikátor, typ objektu, popisek a výchozí hodnota hodnota. Výsledná **deklarace** prvek by měl vypadat takto:
+5. Chcete-li deklarovat nahrazení objektu pro připojení SQL, přidejte **objekt** element v rámci **deklarace** prvek a přidejte podprvky pro Identifikátor, typ objektu, popisek a výchozí hodnota hodnota. Výsledná **deklarace** prvek by měl vypadat takto:
 
     ```xml
     <Declarations>
@@ -218,7 +240,7 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </Declarations>
     ```
 
-6.  V části kódu se odkazujete obklopením znaky $, například `$replacement$`:
+6. V části kódu se odkazujete obklopením znaky $, například `$replacement$`:
 
     ```xml
     <Code Language="VB" Kind="method body">
@@ -232,9 +254,9 @@ Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je t�
     </Code>
     ```
 
-7.  Uložte výstřižek.
+7. Uložte výstřižek.
 
-8.  Otevřete projekt jazyka Visual Basic a přidejte fragment kódu.
+8. Otevřete projekt jazyka Visual Basic a přidejte fragment kódu.
 
 9. Kód by měl vypadat následovně, kde záměny `SQL connection string` a `dcConnection` jsou zvýrazněny světle oranžově. Zvolte **kartu** přejděte od jednoho na druhý.
 

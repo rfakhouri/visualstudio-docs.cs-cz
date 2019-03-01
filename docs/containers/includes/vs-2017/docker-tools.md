@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d4f29056d81ab926318b987c7197a37989af8b49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c33c53e16e8845031676c6b729767c781b4f8c80
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957644"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "57223826"
 ---
 Pomocí sady Visual Studio můžete snadno vytvářet, ladit a spouštění kontejnerizovaných aplikací ASP.NET Core a publikujte je na Azure Container Registry (ACR), Docker Hub, Azure App Service nebo vlastního registru kontejneru. V tomto článku budeme publikovat do služby ACR.
 
@@ -65,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Předchozí *soubor Dockerfile* vychází [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrázků a obsahuje pokyny pro úpravu základní image tak, že sestavení vašeho projektu a jeho přidání do tohoto kontejneru. 
+Předchozí *soubor Dockerfile* vychází [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrázků a obsahuje pokyny pro úpravu základní image tak, že sestavení vašeho projektu a jeho přidání do tohoto kontejneru.
 
 Při nové dialogu projekt **konfigurace pro protokol HTTPS** zaškrtávací políčko zaškrtnuto, *soubor Dockerfile* poskytuje dva porty. Jeden port se používá pro přenos HTTP; jiný port se používá pro protokol HTTPS. Pokud políčko není zaškrtnuto, jeden port (80) je přístupný pro přenosy pomocí protokolu HTTP.
 
@@ -99,7 +99,7 @@ baf9a678c88d        hellodockertools:dev   "C:\\remote_debugge..."   21 seconds 
 
 Po dokončení cyklu vývoje a ladění aplikace můžete vytvořit image produkční aplikace.
 
-1. Změna konfigurace rozevíracího seznamu **vydání** a sestavení aplikace. 
+1. Změna konfigurace rozevíracího seznamu **vydání** a sestavení aplikace.
 1. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a zvolte **publikovat**.
 1. V dialogovém okně Publikovat cíl, vyberte **Container Registry** kartu.
 1. Zvolte **vytvořit nový registr kontejneru Azure** a klikněte na tlačítko **publikovat**.

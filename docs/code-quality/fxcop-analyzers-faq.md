@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 319b9a5a63313535889a3396794c9481b6fe4965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949041"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222480"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Nejčastější dotazy ohledně FxCop a FxCop analyzátory
 
@@ -31,7 +31,7 @@ Analyzátory FxCop jsou založené na platformě .NET Compiler Platform ("Roslyn
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Příkaz spustit analýzu kódu spustit analyzátory FxCop?
 
-Ne. Když vyberete **analyzovat** > **spustit analýzu kódu** v sadě Visual Studio 2017, provádí statickou analýzu kódu nebo starší verzi FxCop. **Spustit analýzu kódu** nemá žádný vliv na roslynu analyzátory, včetně analyzátory FxCop založené na platformě Roslyn.
+Ne. Když vyberete **analyzovat** > **spustit analýzu kódu**, provádí statickou analýzu kódu nebo starší verzi FxCop. **Spustit analýzu kódu** nemá žádný vliv na roslynu analyzátory, včetně analyzátory FxCop založené na platformě Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Vlastnosti projektu nástroje msbuild RunCodeAnalysis spouští analyzátory?
 

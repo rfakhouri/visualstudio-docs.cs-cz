@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893383d8260a3b7904921e12175f81741a7978b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948905"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223465"
 ---
 # <a name="gpu-usage"></a>Využití GPU
 
@@ -155,7 +155,7 @@ Jsou podporovány následující hardwarové GPU a ovladače:
 
 - [Vyřešit Palčivé problémy s grafikou nástroje pro vaše hry pomocí DirectX (video)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)
 - [Nástroj využití GPU v sadě Visual Studio (video)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)
-- [Nástroj využití GPU ve Visual Studio 2013 Update 4 CTP1 (blog)](https://blogs.msdn.microsoft.com/vcblog/2014/09/04/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)
+- [Nástroj využití GPU ve Visual Studio 2013 Update 4 CTP1 (blog)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)
 - [Využití GPU pro DirectX v sadě Visual Studio (blog)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)
 - [GPUView](/windows-hardware/drivers/display/using-gpuview)
 - [Analyzátor výkonu Windows](/windows-hardware/test/wpt/windows-performance-analyzer)

@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923367"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223127"
 ---
 # <a name="code-style-preferences"></a>Předvolby stylu kódu
 
@@ -38,11 +38,11 @@ Nastavení stylu kódu pro .NET je také možné spravovat pomocí [EditorConfig
 
 ## <a name="format-document-command"></a>Formátovat dokument
 
-V sadě Visual Studio 2017 verze 15,8 a vyšší můžete nakonfigurovat **formátovat dokument** příkazu (**upravit** > **Upřesnit**  >  **Formátovat dokument**) v souboru provést čištění dalšího kódu, například odebrat a seřadit direktivy using nebo použít předvolby stylu kódu. Můžete definovat nastavení, které chcete, aby **formátovat dokument** použít [stránka možností formátování](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Můžete nakonfigurovat **formátovat dokument** příkazu (**upravit** > **Upřesnit** > **formátovat dokument**) do Vyčistěte další kód v souboru, například odebrat a seřadit direktivy using nebo použít předvolby stylu kódu. Můžete definovat nastavení, které chcete, aby **formátovat dokument** použít [stránka možností formátování](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 Kód čištění respektuje konfiguraci v nastavení *.editorconfig* souboru nebo ve kterém chybí dané pravidlo nebo soubor, nastavení **nástroje** > **možnosti**  >  **Textový Editor**  >  **C#** > [**styl kódu** nebo **formátování**].
 
-Poprvé spustíte **formátovat dokument** příkaz v sadě Visual Studio 2017, žlutý informační panel zobrazí výzvu, mohli konfigurovat svá nastavení vyčištění kódu.
+Poprvé spustíte **formátovat dokument** příkaz v sadě Visual Studio, žlutý informační panel zobrazí výzvu, mohli konfigurovat svá nastavení vyčištění kódu.
 
 > [!TIP]
 > Pravidla, které jsou nakonfigurované jako **žádný** v *.editorconfig* soubor není součástí vyčištění kódu však lze použít jednotlivě prostřednictvím **rychlé akce a Refaktoringy** nabídky.

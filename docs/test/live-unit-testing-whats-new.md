@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8101697ad225becb1fcddc5ee737fc4c6195cc7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796579"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221538"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Novinky funkce Live Unit Testing
 
-Toto téma obsahuje seznam nových funkcí pro Live Unit Testing v každé verzi sady Visual Studio od verze Visual Studio 2017 verze 15.3. Přehled o tom, jak používat Live Unit Testing, naleznete v tématu [Live Unit Testing v sadě Visual Studio 2017](live-unit-testing.md).
+Toto téma obsahuje seznam nových funkcí pro Live Unit Testing v každé verzi sady Visual Studio od verze Visual Studio 2017 verze 15.3. Přehled o tom, jak používat Live Unit Testing, naleznete v tématu [pomocí sady Visual Studio Live Unit Testing](live-unit-testing.md).
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Co je nového v Live Unit Testing pro Visual Studio 2017 verze 15.4
 
@@ -45,7 +45,7 @@ Od verze Visual Studio 2017 verze 15.3, Live Unit Testing vylepšení funkcí a 
 
 - Podpora .NET Core a .NET Standard. Live Unit Testing můžete použít na .NET Core a .NET Standard řešeními napsanými v jazyce C# nebo Visual Basic.
 
--  Byl vylepšen výkon. Můžete si všimnout, že výkon je výrazně rychlejší po první celé sestavení a spuštění testů v rámci Live Unit Testing. Všimněte si také významné výkonnostní zlepšení v následných spustí z Live Unit Testing ve stejném řešení. Jsme teď uchování dat vygenerovaných vašimi Live Unit Testing a znovu ji co nejlépe s aktuální kontroly použít.
+- Byl vylepšen výkon. Můžete si všimnout, že výkon je výrazně rychlejší po první celé sestavení a spuštění testů v rámci Live Unit Testing. Všimněte si také významné výkonnostní zlepšení v následných spustí z Live Unit Testing ve stejném řešení. Jsme teď uchování dat vygenerovaných vašimi Live Unit Testing a znovu ji co nejlépe s aktuální kontroly použít.
 
 Kromě těchto hlavními dodatky Live Unit Testing zahrnuje následující vylepšení:
 
@@ -58,10 +58,12 @@ Kromě těchto hlavními dodatky Live Unit Testing zahrnuje následující vylep
 - Bylo přidáno několik další položky nabídky v části do nabídky panelu z testu/Live Unit Testing. **Resetovat Vyčistit** trvalá data odstraní a znovu se generuje. **Možnost** přejde k nástroje/Možnosti/Live Unit Testing / Obecné.
 
 - Následující atributy můžete nyní použít k určení ve zdrojovém kódu, že chcete vyloučit z Live Unit Testing cílové testovací metody:
+
    - Pro xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
    - Pro NUnit: `[Category("SkipWhenLiveUnitTesting")]`
    - Pro MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Viz také:
+
 - [Představení funkce Live Unit Testing](live-unit-testing-intro.md)
-- [Live Unit Testing pomocí sady Visual Studio 2017](live-unit-testing.md)
+- [Live Unit Testing pomocí sady Visual Studio](live-unit-testing.md)

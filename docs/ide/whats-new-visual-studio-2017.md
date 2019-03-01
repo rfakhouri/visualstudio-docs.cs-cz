@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d0bf684f351c5b384f2d4a525c6b7f64dfbce99
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954397"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223309"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novinky v sadě Visual Studio 2017
 
@@ -266,7 +266,7 @@ Zvolte si jazyk oblíbeným vývojovým&mdash;z jazyka C#, Visual Basic, C++ neb
 
 **Nové ve verzi 15.5**: Visual Studio 2017 verze 15.5 poskytuje nejlepší podpora pro Windows 10 Fall Creators Update SDK (10.0.16299.0). Windows 10 Fall Creators Update přináší také celou řadu vylepšení pro vývojáře na UPW. Tady jsou některé z největších změn: 
 
-* **Podpora pro .NET Standard 2.0**<br/>Kromě zjednodušené aplikace nasazení Windows 10 Fall Creators Update je první verze Windows 10 k zajištění podpory .NET Standard 2.0. Efektivně [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) je referenční implementace v knihovně základních tříd, které můžete implementovat libovolnou platformu .NET. Cílem .NET Standard je k tomu, aby co nejrychleji pro vývojáře na platformě .NET a sdílejte kód na libovolné platformě .NET, kterou si pro práci na.
+* **Podpora pro .NET Standard 2.0**<br/>Kromě zjednodušené aplikace nasazení Windows 10 Fall Creators Update je první verze Windows 10 k zajištění podpory .NET Standard 2.0. Efektivně [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) je referenční implementace v knihovně základních tříd, které můžete implementovat libovolnou platformu .NET. Cílem .NET Standard je k tomu, aby co nejrychleji pro vývojáře na platformě .NET a sdílejte kód na libovolné platformě .NET, kterou si pro práci na.
 * **To nejlepší z UPW a prostředí Win32**<br/>Vylepšili jsme platformu Windows 10 s [přemostění na Desktop](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) Chcete vylepšit Windows 10 pro všechny vývojáře na platformě .NET, zda je jejich aktuální fokus na UPW, WPF, Windows Forms nebo Xamarin. Pomocí nového typu aplikace balení projektu v sadě Visual Studio 2017 verze 15.5 můžete vytvořit balíčky aplikací pro Windows pro projekty WPF nebo Windows Forms, stejně jako pro projekty UWP. Po aplikaci zabalit, všechny aplikace pro Windows 10, získáte výhody nasazení a mít možnost distribuovat přes Microsoft Store (pro zákaznické aplikace) nebo Microsoft Store pro firmy a vzdělávání. Protože zabalené aplikace mají přístup k úplné surface UPW rozhraní API a rozhraní API systému Win32 ve stolním počítači, můžete nyní modernizovat aplikace WPF a Windows Forms postupně pomocí funkcí rozhraní API pro UPW a Windows 10. Kromě toho může obsahovat vaše komponenty Win32 ve svých aplikacích UPW, které bylo možné ve stolním počítači se všemi funkcemi Win32.
 
 Další informace o UPW, najdete v článku [vývoj aplikací pro univerzální platformu Windows (UPW)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) stránky.

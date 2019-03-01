@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 6ccf9ebad32a82f88740e4f7dc0c920d348b6d48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796527"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222997"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1: Vytvořte projekt Formulářové aplikace Windows
 
@@ -33,7 +33,7 @@ Při vytváření prohlížeče obrázků, prvním krokem je vytvoření projekt
 3. V seznamu šablon vyberte **aplikace Windows Forms (.NET Framework)**. Zadejte název nového formuláře **PictureViewer**a klikněte na tlačítko **OK** tlačítko.
 
     >[!NOTE]
-    >Pokud se nezobrazí **aplikace Windows Forms (.NET Framework)** šablony, instalace pomocí instalačního programu sady Visual Studio **vývoj desktopových aplikací .NET** pracovního vytížení.<br/><br/>![Úloha vývoj desktopových aplikací .NET v instalačním programu sady Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Další informace najdete v tématu [instalace sady Visual Studio 2017](../install/install-visual-studio.md) stránky.
+    >Pokud se nezobrazí **aplikace Windows Forms (.NET Framework)** šablony, instalace pomocí instalačního programu sady Visual Studio **vývoj desktopových aplikací .NET** pracovního vytížení.<br/><br/>![Úloha vývoj desktopových aplikací .NET v instalačním programu sady Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Další informace najdete v tématu [instalace sady Visual Studio](../install/install-visual-studio.md) stránky.
 
      Visual Studio vytvoří řešení pro vaši aplikaci. Řešení se chová jako kontejner pro všechny projekty a soubory požadované programem. Tyto pojmy budou podrobněji vysvětleny dále v tomto kurzu.
 

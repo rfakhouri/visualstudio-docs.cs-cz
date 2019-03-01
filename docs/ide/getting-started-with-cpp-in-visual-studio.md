@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796644"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222516"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 
@@ -26,7 +26,17 @@ Dokončete tento quickstart se seznámit s mnoha nástrojů a dialogových oken,
 
 Nemusíte znát C++ Chcete-li dokončit tento quickstart, ale měli byste se seznámit s některé obecné programování a ladění koncepty. V dokumentaci sady Visual Studio nebude vás naučí, jak programovat v jazyce C++. Je dobré vodítko k C++ studijních materiálů [začít](https://isocpp.org/get-started) stránku na webu ISO C++.
 
-Sledovat, potřebujete kopii Visual Studio 2017 verze 15.3 nebo novější s **vývoj pro klientské počítače s C++** instalaci pracovního vytížení. Rychlý průvodce instalací, naleznete v [podpory instalace jazyka C++ v sadě Visual Studio](/cpp/build/vscpp-step-0-installation).
+::: moniker range="vs-2017"
+
+Pokud chcete postupovat s námi, budete potřebovat kopii sady Visual Studio 2017 s **vývoj desktopových aplikací pomocí C++** nainstalovaná úloha. Rychlý průvodce instalací, naleznete v [podpory instalace jazyka C++ v sadě Visual Studio](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Pokud chcete postupovat s námi, budete potřebovat kopii aplikace Visual Studio 2019 s **vývoj desktopových aplikací pomocí C++** nainstalovaná úloha. Rychlý průvodce instalací, naleznete v [podpory instalace jazyka C++ v sadě Visual Studio](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>Vytvoření konzolové aplikace
 

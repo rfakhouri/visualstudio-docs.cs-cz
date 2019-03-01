@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935573"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222084"
 ---
 # <a name="how-to-create-item-templates"></a>Postupy: Vytváření šablon položek
 
@@ -109,19 +109,29 @@ V některých případech můžete chtít vytvořit šablonu položky ručně, o
 
 1. Vytváření projektů a položek projektů.
 
-1. Upravte položku projektu, dokud nebude připravený uložit jako šablonu.
+2. Upravte položku projektu, dokud nebude připravený uložit jako šablonu.
 
-1. Upravte soubor kódu k označení, kde nahrazení parametru by měl nastat, pokud kdekoli. Další informace o nahrazení parametru najdete v tématu [jak: Nahrazení parametrů v šabloně.](../ide/how-to-substitute-parameters-in-a-template.md)
+3. Upravte soubor kódu k označení, kde nahrazení parametru by měl nastat, pokud kdekoli. Další informace o nahrazení parametru najdete v tématu [jak: Nahrazení parametrů v šabloně.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-1. Vytvořte soubor XML a uložit ji *.vstemplate* příponu souboru ve stejném adresáři jako soubor položky projektu.
+4. Vytvořte soubor XML a uložit ji *.vstemplate* příponu souboru ve stejném adresáři jako soubor položky projektu.
 
-1. Upravit *.vstemplate* soubor XML k poskytnutí metadat šablony položky. Další informace najdete v tématu [odkaz na schéma šablony (rozšiřitelnost)](../extensibility/visual-studio-template-schema-reference.md) a v příkladu v předchozí části.
+5. Upravit *.vstemplate* soubor XML k poskytnutí metadat šablony položky. Další informace najdete v tématu [odkaz na schéma šablony (rozšiřitelnost)](../extensibility/visual-studio-template-schema-reference.md) a v příkladu v předchozí části.
 
-1. Uložit *.vstemplate* soubor a zavřete ho.
+6. Uložit *.vstemplate* soubor a zavřete ho.
 
-1. V **Windows Explorer**, vyberte soubory, které chcete zahrnout do šablony. Klikněte pravým tlačítkem na výběr a zvolte **odeslat** > **komprimovanou složku (ZIP)**. Do jsou komprimované soubory, které jste vybrali *ZIP* souboru.
+7. V **Windows Explorer**, vyberte soubory, které chcete zahrnout do šablony. Klikněte pravým tlačítkem na výběr a zvolte **odeslat** > **komprimovanou složku (ZIP)**. Do jsou komprimované soubory, které jste vybrali *ZIP* souboru.
 
-1. Kopírovat *ZIP* soubor a vložte ho do umístění šablon položek uživatele. V sadě Visual Studio 2017, je výchozí adresář *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Další informace najdete v tématu [jak: Hledání a organizace šablon projektů a položek](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+::: moniker range="vs-2017"
+
+8. Kopírovat *ZIP* soubor a vložte ho do umístění šablon položek uživatele. Výchozí adresář je *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Další informace najdete v tématu [jak: Hledání a organizace šablon projektů a položek](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Kopírovat *ZIP* soubor a vložte ho do umístění šablon položek uživatele. Výchozí adresář je *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Další informace najdete v tématu [jak: Hledání a organizace šablon projektů a položek](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Viz také:
 

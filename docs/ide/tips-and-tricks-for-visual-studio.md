@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e420ed36168e45e067a78a1118b2199981aff3eb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927565"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223361"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Klávesové zkratky pro Visual Studio
 
@@ -72,7 +72,7 @@ Můžete přejít v sadě Visual Studio snadněji pomocí klávesové zkratky v 
 
 ##  <a name="BKMK_CodeEditor"></a> Editor kódu
 
-|Příkaz|Zástupce|Dostupnost verze|
+|Příkaz|Zástupce|Při zavedení|
 |-|-|-|
 |Přejít na vše|**Ctrl**+**T**|
 |Přejít na poslední soubory|**CTRL**+**T**,**R**|

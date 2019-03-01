@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928306"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223608"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kód pracovat v sadě Visual Studio
 
@@ -74,7 +74,7 @@ Analyzátorů kódu vyhledejte běžné problémy kódu, které můžou vést k 
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C#a analýza kódu jazyka Visual Basic
 
-Visual Studio 2017 obsahuje integrovanou sadu [analyzátory pro .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) , zkontrolujte C# a kód jazyka Visual Basic jako vy, zadejte. Jako rozšíření sady Visual Studio, nebo jako balíček NuGet můžete nainstalovat další analyzátory. Pokud se nenajdou porušení pravidel, jsou hlášeny v editoru kódu jako podtržení za problematický kód a **seznam chyb**.
+Visual Studio obsahuje integrované sady [analyzátory pro .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) , zkontrolujte C# a kód jazyka Visual Basic jako vy, zadejte. Jako rozšíření sady Visual Studio, nebo jako balíček NuGet můžete nainstalovat další analyzátory. Pokud se nenajdou porušení pravidel, jsou hlášeny v editoru kódu jako podtržení za problematický kód a **seznam chyb**.
 
 ### <a name="c-code-analysis"></a>Analýza kódu C++
 

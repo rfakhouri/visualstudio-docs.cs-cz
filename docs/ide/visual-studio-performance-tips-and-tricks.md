@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ef8cc5f1a203b5cb43b02a13f5b4e462f33892
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954092"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222984"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipy k výkonu sady Visual Studio a triky
 
@@ -41,9 +41,9 @@ Pokud zakážete automatické obnovení, přejděte k souborům, který chcete s
 
 - Obecnou **přejít na** funkce, vyberte **upravit** > **přejít na** > **přejít na vše**, nebo stiskněte klávesu  **CTRL**+**T**.
 
-- V sadě Visual Studio 2017 verze 15,8 a novější, můžete přeskočit na poslední úpravy umístění v řešení pomocí **upravit** > **přejít na** > **přejít na poslední upravit umístění**, nebo stisknutím klávesy **Ctrl**+**Shift**+**Backspace**.
+- Přejít na poslední úpravy umístění v řešení pomocí **upravit** > **přejít na** > **přejít na poslední upravit umístění**, nebo stisknutím klávesy **Ctrl**  + **Shift**+**Backspace**.
 
-- V sadě Visual Studio 2017 verze 15,8 a novější, použijte **přejít na poslední soubor** zobrazíte seznam naposledy navštívený souborů v řešení. Vyberte **upravit** > **přejít na** > **přejít na poslední soubor**, nebo stiskněte klávesu **Ctrl** + **1**, **Ctrl**+**R**.
+- Použití **přejít na poslední soubor** zobrazíte seznam naposledy navštívený souborů v řešení. Vyberte **upravit** > **přejít na** > **přejít na poslední soubor**, nebo stiskněte klávesu **Ctrl** + **1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Konfigurovat možnosti ladění
 

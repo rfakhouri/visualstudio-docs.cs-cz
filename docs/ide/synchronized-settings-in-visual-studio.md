@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926044"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221876"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizovat nastavení sady Visual Studio mezi několik počítačů
 
@@ -60,20 +60,30 @@ Nastavení se synchronizují napříč verze a edice sady Visual Studio nainstal
 
 ## <a name="side-by-side-synchronized-settings"></a>Synchronizovaná nastavení vedle sebe
 
-V sadě Visual Studio 2017 verze 15.3 nebo novější nejsou určitá nastavení, například rozložení okna nástroje sdílené mezi různé-souběžnými instalacemi sady Visual Studio 2017. *CurrentSettings.vssettings* ve *%userprofile%\Documents\Visual Studio 2017\Settings* je do složky specifické pro instalace, který je podobný *%localappdata%\ Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
+::: moniker range="vs-2017"
+
+Určitá nastavení, například rozložení okna nástroje nejsou sdíleny mezi různé-souběžnými instalacemi sady Visual Studio. *CurrentSettings.vssettings* ve *%userprofile%\Documents\Visual Studio 2017\Settings* je do složky specifické pro instalace, který je podobný *%localappdata%\ Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
 > [!NOTE]
-> Pokud chcete použít nové nastavení specifická pro instalace, proveďte novou instalací. Když upgradujete existující instalaci sady Visual Studio 2017 na nejaktuálnější aktualizaci, použije existující sdílené umístění.
+> Pokud chcete použít nové nastavení specifická pro instalace, proveďte novou instalací. Když upgradujete existující instalaci sady Visual Studio, použije se existující sdílené umístění.
 
-Pokud aktuálně máte – souběžnými instalacemi sady Visual Studio 2017 a chcete používat nové umístění souboru nastavení specifická pro instalace, postupujte podle těchto kroků:
+Pokud aktuálně máte – souběžnými instalacemi sady Visual Studio a chcete používat nové umístění souboru nastavení specifická pro instalace, postupujte podle těchto kroků:
 
 1. Upgrade na Visual Studio 2017 verze 15.3 nebo novější.
 
-1. Použití **importem nastavení** průvodce a vyexportujte všechna existující nastavení do umístění mimo *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* složky.
+2. Použití **importem nastavení** průvodce a vyexportujte všechna existující nastavení do umístění mimo *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* složky.
 
-1. Otevřít **Developer Command Prompt for VS 2017** upgradované instalace sady Visual Studio a spuštění `devenv /resetuserdata`.
+3. Otevřít **Developer Command Prompt for VS 2017** a spusťte `devenv /resetuserdata`.
 
 1. Spusťte sadu Visual Studio a naimportujte uložená nastavení ze souboru s vyexportovaným nastavením.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Určitá nastavení, například rozložení okna nástroje nejsou sdíleny mezi různé-souběžnými instalacemi sady Visual Studio. *CurrentSettings.vssettings* ve *%userprofile%\Documents\Visual Studio 2019\Settings* je do složky specifické pro instalace, který je podobný *%localappdata%\ Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Viz také:
 

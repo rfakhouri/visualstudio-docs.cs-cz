@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946061"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222855"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 
@@ -50,11 +50,25 @@ Pokud je potřeba spustit aplikaci Visual Studio jako správce, otevřete integr
 > [!NOTE]
 > Tyto pokyny jsou určené pro Windows 10. Když se podobají u jiných verzí Windows.
 
+::: moniker range="vs-2017"
+
 1. Otevřít **Start** nabídky a přejděte do sady Visual Studio 2017.
 
 1. Z nabídky klikněte pravým tlačítkem nebo kontext **Visual Studio 2017**vyberte **Další** > **spustit jako správce**.
 
    Při spuštění sady Visual Studio **(správce)** se zobrazí za názvem produktu v záhlaví programu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otevřít **Start** nabídky a přejděte k Visual Studio 2019.
+
+1. Z nabídky klikněte pravým tlačítkem nebo kontext **Visual Studio 2019**vyberte **Další** > **spustit jako správce**.
+
+   Při spuštění sady Visual Studio **(správce)** se zobrazí za názvem produktu v záhlaví programu.
+
+::: moniker-end
 
 Můžete také upravit zástupce sady tak aby se vždy spustila s oprávněními správce.
 

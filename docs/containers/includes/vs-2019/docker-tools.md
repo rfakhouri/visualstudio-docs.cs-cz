@@ -1,25 +1,25 @@
 ---
 title: Visual Studio Tools for Docker s ASP.NET Core
 author: ghogen
-description: Naučte se používat nástroje Visual Studio 2017 a Docker pro Windows
+description: Naučte se používat nástroje Visual Studio 2019 a Docker pro Windows
 ms.author: ghogen
 ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0d6e61fc4f41284b7ca9a551712542ad1e74af5d
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: b615207467222a061a5496b87ecb1929348c18fe
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702030"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223827"
 ---
 Pomocí sady Visual Studio můžete snadno vytvářet, ladit a spouštění kontejnerizovaných aplikací ASP.NET Core a publikujte je na Azure Container Registry (ACR), Docker Hub, Azure App Service nebo vlastního registru kontejneru. V tomto článku budeme publikovat do služby ACR.
 
 ## <a name="prerequisites"></a>Požadavky
 
 * [Desktop dockeru](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview) s **vývoj pro Web**, **nástroje Azure** úlohy, a/nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) s **vývoj pro Web**, **nástroje Azure** úlohy, a/nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
 * [Aktualizace 2.2 vývojové nástroje .NET core](https://dotnet.microsoft.com/download/dotnet-core/2.2) pro vývoj aplikací pomocí .NET Core 2.2
 * Chcete-li publikovat do služby Azure Container Registry, předplatné Azure. [Zaregistrujte si bezplatnou zkušební verzi](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/).
 
@@ -67,7 +67,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Předchozí *soubor Dockerfile* vychází [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrázků a obsahuje pokyny pro úpravu základní image tak, že sestavení vašeho projektu a jeho přidání do tohoto kontejneru. 
+Předchozí *soubor Dockerfile* vychází [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrázků a obsahuje pokyny pro úpravu základní image tak, že sestavení vašeho projektu a jeho přidání do tohoto kontejneru.
 
 Při nové dialogu projekt **konfigurace pro protokol HTTPS** zaškrtávací políčko zaškrtnuto, *soubor Dockerfile* poskytuje dva porty. Jeden port se používá pro přenos HTTP; jiný port se používá pro protokol HTTPS. Pokud políčko není zaškrtnuto, jeden port (80) je přístupný pro přenosy pomocí protokolu HTTP.
 
@@ -101,7 +101,7 @@ cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago  
 
 Po dokončení cyklu vývoje a ladění aplikace můžete vytvořit image produkční aplikace.
 
-1. Změna konfigurace rozevíracího seznamu **vydání** a sestavení aplikace. 
+1. Změna konfigurace rozevíracího seznamu **vydání** a sestavení aplikace.
 1. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a zvolte **publikovat**.
 1. V dialogovém okně Publikovat cíl, vyberte **Container Registry** kartu.
 1. Zvolte **vytvořit nový registr kontejneru Azure** a klikněte na tlačítko **publikovat**.

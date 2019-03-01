@@ -11,20 +11,26 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 535f67f7456f26d3f61820e909c3f7622eb71c85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954892"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221392"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Možnosti, textový Editor, C/C++, experimentální
 
-Změnou tyto možnosti můžete změnit chování související se technologie IntelliSense a procházení databází, když programujete v jazyce C nebo C++. Tyto funkce jsou skutečně experimentální a může být změněna nebo v budoucí verzi odebrána ze sady Visual Studio. Toto téma popisuje možnosti v sadě Visual Studio 2017. Visual Studio 2015, vyberte **2015** v modulu pro výběr nad obsahu.
+Změnou tyto možnosti můžete změnit chování související se technologie IntelliSense a procházení databází, když programujete v jazyce C nebo C++. Tyto funkce jsou skutečně experimentální a může změnit ani odebrat ze sady Visual Studio v budoucí verzi.
 
-Chcete-li získat přístup k této stránky vlastností, stiskněte **CTRL + Q** aktivovat `Quick Launch` a pak zadejte "experimentální". Snadné spuštění po prvních pár písmen najdete na stránce. Můžete také získáte k němu výběrem **nástroje | Možnosti** rozšiřuje **textový Editor**, pak **C/C++** a poté volbou **experimentální**.
+::: moniker range="vs-2017"
 
-Tyto funkce jsou dostupné v instalaci sady Visual Studio 2017.
+Tento článek popisuje možnosti v sadě Visual Studio 2017. Visual Studio 2015, vyberte **2015** v modulu pro výběr nad obsahu.
+
+::: moniker-end
+
+Chcete-li získat přístup k této stránky vlastností, stiskněte **ovládací prvek** + **Q** aktivovat `Quick Launch` a pak zadejte "experimentální". Snadné spuštění vyhledá stránky po prvních pár písmen. Můžete také získáte k němu výběrem **nástroje** > **možnosti** rozšiřuje **textový Editor**, pak **C/C++** a následným výběrem možnosti **Experimentální**.
+
+Tyto funkce jsou dostupné v instalaci sady Visual Studio.
 
 > [!NOTE]
 > Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Zobrazit [přizpůsobit prostředí IDE sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
@@ -33,10 +39,15 @@ Tyto funkce jsou dostupné v instalaci sady Visual Studio 2017.
 
 Prediktivní IntelliSense omezí počet výsledků zobrazuje v rozevíracím seznamu technologie IntelliSense tak, aby se zobrazí pouze výsledky, které jsou relevantní v kontextu. Pokud zadáte například <code>int x =</code> a vyvolání rozevíracího seznamu technologie IntelliSense, zobrazí se jen celá čísla nebo funkce, které vrací celá čísla. Prediktivní IntelliSense je vypnuto ve výchozím nastavení.
 
+::: moniker range="vs-2017"
+
 ## <a name="enable-faster-project-load"></a>Povolit rychlejší načítání projektů
 
-**Visual Studio 2017 verze 15.3 nebo novější**: Tato funkce se teď nazývá **povolit ukládání projektů do mezipaměti** a byla přesunuta do [nastavení projektu VC ++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) stránku vlastností.
+Od verze Visual Studio 2017 verze 15.3, tato funkce se nazývá **povolit ukládání projektů do mezipaměti** a byla přesunuta do [nastavení projektu VC ++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) stránku vlastností.
+
 Tato možnost umožňuje sadě Visual Studio projekt ukládání dat do mezipaměti tak, aby při příštím otevření projektu, je možné načíst, uložit do mezipaměti dat spíše než znovu computingu ze souborů projektu. Pomocí dat uložených v mezipaměti může výrazně zkracují čas načtení projektu.
+
+::: moniker-end
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Další funkce v aplikaci Visual Studio Marketplace
 
@@ -55,4 +66,5 @@ Můžete procházet další textové funkce editoru [Visual Studio Marketplace](
 ## <a name="see-also"></a>Viz také:
 
 - [Nastavení možností editoru pro konkrétní jazyk](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refaktoring v jazyce C++ (VC blogu)](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [Refaktoring v jazyce C++ (VC blogu)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+)

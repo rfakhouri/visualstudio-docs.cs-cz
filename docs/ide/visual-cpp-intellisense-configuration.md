@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864867"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222893"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurace projektu C++ pro IntelliSense
 
@@ -74,7 +74,7 @@ Existují dva běžné způsoby, ve kterých se tyto potíže projeví v sadě V
 
 Chcete-li tyto druhy problémů vyřešit, přidejte do ní soubor **cpp.hint** do kořenového adresáře řešení. Další informace najdete v tématu [soubory pokynů](/cpp/ide/hint-files).
 
-**Visual Studio 2017 verze 15.7** chyby analyzátoru značky se zobrazí v okně Seznam chyb.
+Chyby analyzátoru značek joinkind **seznam chyb** okna.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Ověření nastavení projektu pomocí protokolování diagnostiky
 
@@ -107,7 +107,7 @@ Nicméně v některých případech nemusí sady Visual Studio aktualizace datab
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Řešení potíží se selháním sestavení technologie IntelliSense
 
-Výsledkem sestavování technologie IntelliSense není binární soubory, ale stále může selhat. Jednou z možných příčin selhání je vlastní .props nebo .targets souborů. V sadě Visual Studio 2017 verze 15.6 pouze technologie IntelliSense sestavení chyby se Zaprotokolují v okně výstup. Chcete-li zobrazit, nastavte **zobrazit výstup z:** k **řešení**:
+Výsledkem sestavování technologie IntelliSense není binární soubory, ale stále může selhat. Jednou z možných příčin selhání je vlastní .props nebo .targets souborů. V sadě Visual Studio 2017 verze 15.6 a novější pouze technologie IntelliSense sestavení chyby se Zaprotokolují v okně výstup. Chcete-li zobrazit, nastavte **zobrazit výstup z:** k **řešení**:
 
 ![Řešení chyb v okně Výstup](media/vcpp-intellisense-output-window.png)
 

@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694995"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222354"
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C++)
 Můžete upravit a pokračovat v projektech Visual C++. Zobrazit [podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md) informace o omezení operace upravit a pokračovat.
 
-Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C++ upravit a pokračovat v sadě Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C++ upravit a pokračovat v sadě Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  [/Zo (vylepšit optimalizované ladění)](/cpp/build/reference/zo-enhance-optimized-debugging) – možnost kompilátoru, která byla zavedena v sadě Visual Studio 2013 Update 3 přidá do souborů s příponou .pdb (symbol) Další informace pro binární soubory zkompilovány bez volby [/Od (zakázat (ladění)) ](https://msdn.microsoft.com/library/aafb762y.aspx) možnost.
 
@@ -37,7 +37,7 @@ Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C
  Můžete chtít zakázat automatického volání operace upravit a pokračovat, pokud provádíte úpravy kódu, který nechcete, aby platily aktuální relace ladění. Můžete také znovu povolit automatické funkce upravit a pokračovat.
 
 > [!IMPORTANT]
-> Nastavení požadovaná sestavení a další informace o kompatibilitě funkce najdete v tématu [C++ upravit a pokračovat v sadě Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Nastavení požadovaná sestavení a další informace o kompatibilitě funkce najdete v tématu [C++ upravit a pokračovat v sadě Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
 1. Pokud jste v relaci ladění, zastavte ladění (**Shift + F5**).
 

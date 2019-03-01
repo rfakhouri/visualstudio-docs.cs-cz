@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 6bed8a6bc910b1a6878ccc089575abc624e6778f
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 1873cc68c33fca8912415a00e7c7dda9ded49695
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007329"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223660"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2017
 
@@ -69,7 +69,7 @@ Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najde
 | Rozšiřitelnost sady Visual Studio/souboru VSIX | Projekty s MinimumVersion 14.0 nebo méně aktualizují deklarovat MinimumVersion 15.0, což zabrání projektu se otevře v dřívějších verzích sady Visual Studio. Povolit projekt otevřít ve starších verzích, nastavte na MinimumVersion `$(VisualStudioVersion)`. Viz také [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Můžete použít nástroje Microsoft Test Manager nebo Visual Studio 2010 SP1 a novější k otevření prostředí, které jsou vytvořeny v některé z těchto verzí. Ale pro Visual Studio 2010 SP1 verze nástroje Microsoft Test Manager musí odpovídat verzi serveru Team Foundation Server než budete moct vytvořit prostředí. |
 | Visual Studio Tools pro Apache Cordova | Projekty lze otevřít v sadě Visual Studio 2017, ale nejsou zpětně kompatibilní. Při otevření projektu ze sady Visual Studio 2015, se zobrazí výzva k cílem umožnit úpravy do projektu. Tuto úpravu inovuje projekt na používání sady nástrojů místo `taco.json` souboru ke správě verzí Cordova knihovny, jeho platformy, jeho moduly plug-in a jeho závislosti uzlů/npm. Zobrazit [Průvodce migrací](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) Další informace. |
-| Nasazení webu (wdproj) | Podpora pro nasazení webu byla odebrána projekty v sadě Visual Studio 2012 a uveďte podpora profilů publikování. Protože neexistuje žádný ekvivalent v sadě Visual Studio 2017, neexistuje žádný způsob automatického migrace pro tyto projekty. Místo toho v textovém editoru otevřete soubor wdproj a jakékoli vlastní nastavení do pubxml kopírování a vkládání (profil publikování) souboru, jak je popsáno na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Viz také [plány týkající se webu a webové projekty nasazení](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Nasazení webu (wdproj) | Podpora pro nasazení webu byla odebrána projekty v sadě Visual Studio 2012 a uveďte podpora profilů publikování. Protože neexistuje žádný ekvivalent v sadě Visual Studio 2017, neexistuje žádný způsob automatického migrace pro tyto projekty. Místo toho v textovém editoru otevřete soubor wdproj a jakékoli vlastní nastavení do pubxml kopírování a vkládání (profil publikování) souboru, jak je popsáno na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Tento projekt lze otevřít v sadě Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 a Visual Studio 2012 |
 | Windows Presentation Foundation | Tento projekt lze otevřít v sadě Visual Studio 2013, Visual Studio 2012 a Visual Studio 2010 SP1. |
 | Aplikace pro Windows Store a Phone | Projekty pro Windows Store 8.1 a 8.0 a Windows Phone 8.1 a 8.0 se nepodporují v sadě Visual Studio 2017. Chcete-li tyto aplikace udržovat, používejte nadále Visual Studio 2015. Chcete-li udržovat projekty pro Windows Phone 7.x, používejte Visual Studio 2012. |

@@ -16,20 +16,20 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645482"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223218"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Možnosti, textový editor, C/C++, formátování
 
 Chcete-li změnit výchozí chování editoru kódu při programování v jazyce C nebo C++, použijte tyto stránky vlastností.
 
-[C++ formátování stránky vlastností](media/cpp-formatting.png)
+![C++ formátování stránky vlastností](media/cpp-formatting.png)
 
- Pro přístup k této stránce v **možnosti** dialogové okno, v levém podokně rozbalte **textový Editor**, rozbalte **C/C++** a potom klikněte na tlačítko **formátování** .
+Pro přístup k této stránce v **možnosti** dialogové okno, v levém podokně rozbalte **textový Editor**, rozbalte **C/C++** a potom klikněte na tlačítko **formátování** .
 
 > [!NOTE]
 > Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
@@ -38,20 +38,31 @@ Chcete-li změnit výchozí chování editoru kódu při programování v jazyce
 
 Tato stránka obsahuje možnosti formátování příkazů a bloků, jako je typu.
 
-**Visual Studio 2017 verze 15.7 nebo novější**: Stránka také obsahuje možnosti pro konfiguraci podpory pro [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) verze 5.0. ClangFormat je nástroj, který umožňuje snadno vytvořit styl a formátování kódu na základě sady pravidel, která se dá nakonfigurovat v souboru .clang-format nebo _clang-format.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 verze 15.7 nebo novější**:
+
+::: moniker-end
+
+Stránka také obsahuje možnosti pro konfiguraci podpory pro [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) verze 5.0. ClangFormat je nástroj, který umožňuje snadno vytvořit styl a formátování kódu na základě sady pravidel, která se dá nakonfigurovat v souboru .clang-format nebo _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Konfigurace možností ClangFormat
 
-V sadě Visual Studio 2017 verze 15.7 nebo novější je standardně povolená podporu pro ClangFormat. Můžete vybrat, které tyto běžné konvence formátování se mají použít na všechny projekty: Kompilátor LLVM, Google, chromu, Mozilla nebo komponenty WebKit. Můžete také vytvořit definici vlastního formátu souboru .clang-format nebo _clang-format. Pokud se tento soubor nachází ve složce projektu, Visual Studio používá k formátování všechny soubory zdrojového kódu v této složce a jejích podsložkách.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 verze 15.7 nebo novější**:
+
+::: moniker-end
+
+Podporu pro ClangFormat je standardně povolená. Můžete vybrat, které tyto běžné konvence formátování se mají použít na všechny projekty: Kompilátor LLVM, Google, chromu, Mozilla nebo komponenty WebKit. Můžete také vytvořit definici vlastního formátu souboru .clang-format nebo _clang-format. Pokud se tento soubor nachází ve složce projektu, Visual Studio používá k formátování všechny soubory zdrojového kódu v této složce a jejích podsložkách.
 
 Ve výchozím nastavení sady Visual Studio clangformat.exe běží na pozadí použije formátování při psaní. Můžete také zadat pouze pro ji spustit ručně vyvolat příkazy formátování **formátovat dokument (Ctrl + K, Ctrl + D)** nebo **formátovat výběr (Ctrl + K, Ctrl + F)**.
-
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Odsazení, nové řádky mezery obtékání stránky
 
 Tyto stránky umožňují provádět přizpůsobení různých formátování, ale jsou ignorovány, pokud je povolené ClangFormat.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
 - [Používání atributu IntelliSense](../../ide/using-intellisense.md)

@@ -12,22 +12,26 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: d163edf5e08df3b60bdf664da8048781927729ac
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953583"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223756"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimalizace výkonu sady Visual Studio
 
 Tento článek obsahuje několik návrhů vyzkoušet, pokud zjistíte, že Visual Studio běží pomalu. Můžete taky využít podívat [a tipy k výkonu sady Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md) další návrhy na vylepšení výkonu.
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Upgrade na Visual Studio 2017 verze 15.6 nebo novější
+## <a name="upgrade-visual-studio"></a>Upgrade Visual Studio
 
-Pokud aktuálně používáte Visual Studio 2015, stáhněte si [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) zdarma, podívejte se na jeho vylepšení výkonu. Řešení se načítají dvakrát až třikrát rychleji v sadě Visual Studio 2017 se vylepšení výkonu v jiných oblastech příliš. Visual Studio 2017 je vedle sebe kompatibilní s Visual Studiem 2015, takže nic nepřijdete a vyzkoušejte si.
+Pokud aktuálně používáte Visual Studio 2015, stáhněte si [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) nebo [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) zdarma, podívejte se na jeho vylepšení výkonu. Řešení načítání dvakrát až třikrát vyšší než v sadě Visual Studio 2015, vylepšení výkonu v jiných oblastech příliš. Visual Studio 2017 a Visual Studio 2019 jsou vedle sebe kompatibilní s Visual Studiem 2015, takže nic nepřijdete a vyzkoušejte si.
 
-Pokud aktuálně používáte Visual Studio 2017, ujistěte se, že používáte verzi 15.6 nebo novější. Dat udávají, že řešení se načtení do dvakrát nebo třikrát rychlejší ve verzi 15.6. Stáhněte si ho [tady](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+Pokud už používáte Visual Studio 2017, ujistěte se, že používáte verzi 15.6 nebo novější. Dat udávají, že řešení se načtení do dvakrát nebo třikrát rychlejší ve verzi 15.6. Stáhněte si ho [tady](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>Rozšíření a okna nástrojů
 

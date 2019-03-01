@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950224"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223699"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapování závislostí pomocí map kódu
 
@@ -47,7 +47,7 @@ Můžete namapovat závislostí pro kód v těchto jazycích:
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Mapa kódu instalace a ověření závislostí v reálném čase
 
-K vytvoření mapy kódu v sadě Visual Studio 2017, nejdřív nainstalovat **mapy kódu** a **ověřování závislostí v reálném** komponenty:
+K vytvoření mapy kódu v sadě Visual Studio, nejdřív nainstalovat **mapy kódu** a **ověřování závislostí v reálném** komponenty:
 
 1. Otevřít **instalační program sady Visual Studio**. Lze jej otevřít v nabídce Windows Start nebo v rámci sady Visual Studio tak, že vyberete **nástroje** > **stažení nástrojů a funkcí**.
 

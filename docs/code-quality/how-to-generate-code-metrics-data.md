@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007355"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223725"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Postupy: Vygenerování dat metrik kódu
 
@@ -206,7 +206,7 @@ Další informace najdete v tématu [povolit generování metriky kódu v režim
 
 ### <a name="previous-versions"></a>Předchozí verze
 
-Předchozí verze sady Visual Studio, včetně sady Visual Studio 2015, zahrnout metriky nástroj příkazového řádku kódu, který se také nazývá *Metrics.exe*. Tuto předchozí verzi nástroje nebylo binární analýzy, to znamená, analýzy založené na sestavení. Nový nástroj analyzuje zdrojový kód místo. Protože nové metriky nástroj příkazového řádku kódu je zdrojem založený na kódu, výsledky se liší na co je vygenerována v předchozích verzích nástroje *Metrics.exe* a integrovaného vývojového prostředí Visual Studio 2017.
+Visual Studio 2015 zahrnout metriky nástroj příkazového řádku kódu, který se také nazývá *Metrics.exe*. Tuto předchozí verzi nástroje nebylo binární analýzy, to znamená, analýzy založené na sestavení. Nové *Metrics.exe* nástroj analyzuje zdrojový kód místo. Protože nová *Metrics.exe* nástroj je zdrojový kód založený na kódu, příkazového řádku metriky výsledky se liší od těch, které generuje integrovaném vývojovém prostředí sady Visual Studio a v předchozích verzích nástroje *Metrics.exe*.
 
 Nový nástroj pro příkazový řádek kódu metriky vypočítá metriky i v případě výskytu chyby zdrojového kódu, za předpokladu, je možné načíst řešení a projektu.
 
@@ -214,7 +214,7 @@ Nový nástroj pro příkazový řádek kódu metriky vypočítá metriky i v p�
 
 `LinesOfCode` Metrika je více přesným a spolehlivým v nové metriky nástroj příkazového řádku kódu. Je nezávislý na případné rozdíly codegen a nezmění, pokud se změní sadu nástrojů nebo modulu runtime. Nový nástroj počítá skutečné řádky kódu, včetně prázdné řádky a komentáře.
 
-Jiné metriky, jako `CyclomaticComplexity` a `MaintainabilityIndex` stejné vzorce použít jako předchozí verze *Metrics.exe*, ale nový nástroj vypočítá počet `IOperations` (logické zdroj pokyny) namísto zprostředkující instrukcí jazyka (IL). Čísla budou mírně lišit od předchozích verzí *Metrics.exe* a z výsledků metrik kódu IDE sady Visual Studio 2017.
+Jiné metriky, jako `CyclomaticComplexity` a `MaintainabilityIndex` stejné vzorce použít jako předchozí verze *Metrics.exe*, ale nový nástroj vypočítá počet `IOperations` (logické zdroj pokyny) namísto zprostředkující instrukcí jazyka (IL). Čísla budou mírně odlišné těm, které jsou generovány v integrovaném vývojovém prostředí sady Visual Studio a v předchozích verzích nástroje *Metrics.exe*.
 
 ## <a name="see-also"></a>Viz také:
 

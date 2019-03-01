@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924445"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223595"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)
 
@@ -24,7 +24,7 @@ Můžete použít **definice operace Peek** s kódem jazyka C#, Visual Basic a C
 
 ### <a name="to-open-a-peek-definition-window"></a>Otevření okna Náhled definice
 
-1. Výběrem můžete prohlížet definici **funkce Náhled definice** v místní nabídce pro typ nebo člen, který chcete prozkoumat. V sadě Visual Studio 2017 verze 15.4 nebo novější, pokud je povolena možnost, je můžete také prohlížet definice pomocí myši, stisknutím klávesy **Ctrl** (nebo jiného modifikátoru) a kliknutím na název členu. Nebo z klávesnice, stiskněte klávesu **Alt**+**F12**.
+1. Výběrem můžete prohlížet definici **funkce Náhled definice** v místní nabídce pro typ nebo člen, který chcete prozkoumat. Pokud je povolena možnost, můžete také prohlížet definice pomocí myši, stisknutím klávesy **Ctrl** (nebo jiného modifikátoru) a kliknutím na název členu. Nebo z klávesnice, stiskněte klávesu **Alt**+**F12**.
 
      Tento obrázek ukazuje **definice operace Peek** okna pro metodu s názvem `Print()`:
 

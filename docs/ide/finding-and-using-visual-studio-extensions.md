@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919739"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222750"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Vyhledání a používání rozšíření sady Visual Studio
 
@@ -61,9 +61,9 @@ Pokud chcete zakázat automatické aktualizace, můžete zakázat funkci pro vš
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>Oznámení o chybách a sekundový výpadek reakce rozšíření
 
-Novinka v **Visual Studio 2017 verze 15.3**, Visual Studio vás upozorní, pokud má podezření, že rozšíření byl zahrnut v chybě během předchozí relace. Pokud dojde k chybě sady Visual Studio, ukládá zásobník výjimek. Při příštím spuštění Visual Studio zjistí zásobníku, počínaje listu a funguje směrem k základní třídě. Pokud Visual Studio zjistí, že blok patří do modulu, který je součástí rozšíření nainstalované a povolené, zobrazuje oznámení o.
+Visual Studio vás upozorní, pokud má podezření, že rozšíření byl zahrnut v chybě během předchozí relace. Pokud dojde k chybě sady Visual Studio, ukládá zásobník výjimek. Při příštím spuštění Visual Studio zjistí zásobníku, počínaje listu a funguje směrem k základní třídě. Pokud Visual Studio zjistí, že blok patří do modulu, který je součástí rozšíření nainstalované a povolené, zobrazuje oznámení o.
 
-Novinka v **Visual Studio 2017 verze 15.6**, Visual Studio také vás upozorní, pokud způsobuje, že rozšíření uživatelského rozhraní za nereagujícího.
+Visual Studio také vás upozorní, pokud ji má podezření, že rozšíření je příčinou uživatelského rozhraní za nereagujícího.
 
 Když tato oznámení jsou zobrazeny, můžete ignorovat oznámení nebo Absolvujte některou z následujících akcí:
 

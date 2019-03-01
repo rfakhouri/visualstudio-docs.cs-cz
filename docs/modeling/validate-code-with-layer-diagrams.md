@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317364"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223192"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -49,7 +49,7 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
 - Řešení, které má projekt modelování s diagramem závislostí. Tento diagram závislostí musí být spojen s artefakty v projektech C# nebo Visual Basic, které chcete ověřit. Zobrazit [vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
-> Diagramy závislostí nejsou podporovány pro projekty .NET Core v sadě Visual Studio 2017.
+> Diagramy závislostí nejsou podporovány pro projekty .NET Core v sadě Visual Studio.
 
 Chcete-li zjistit, jaké edice sady Visual Studio podporují tuto funkci, přečtěte si téma [podpora edice nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -235,6 +235,6 @@ Následující oddíl popisuje syntaxi, která se u těchto chyb používá, vy
 
 ## <a name="see-also"></a>Viz také:
 
-- [Živé ověření závislosti v sadě Visual Studio 2017](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Živé ověření závislosti v sadě Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)
 - [Video: Ověření závislostí architektury v reálném čase](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

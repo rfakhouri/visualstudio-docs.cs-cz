@@ -7,18 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914994"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223348"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
-Podle dokumentu C++ Core Guidelines jsou přenosná sadu pokynů, pravidla a osvědčenými postupy psaní kódu v jazyce C++ vytvořených odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu těchto pravidel jako součást své nástroje analýzy kódu pro jazyk C++. Tyto moduly pro kontrolu příručka core jsou nainstalované ve výchozím nastavení v sadě Visual Studio 2017 a jsou [k dispozici jako balíček NuGet pro Visual Studio 2015](#vs2015_corecheck).
+
+Podle dokumentu C++ Core Guidelines jsou přenosná sadu pokynů, pravidla a osvědčenými postupy psaní kódu v jazyce C++ vytvořených odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu těchto pravidel jako součást své nástroje analýzy kódu pro jazyk C++. Tyto moduly pro kontrolu příručka core jsou nainstalované ve výchozím nastavení v sadě Visual Studio 2017 a Visual Studio 2019 a jsou [k dispozici jako balíček NuGet pro Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>Projekt C++ Core Guidelines
- Podle dokumentu C++ Core Guidelines vytvořeného Bjarne Stroustrup a jinými uživateli, jsou návod k použití moderním jazyce C++, bezpečně a efektivně. Pokyny zvýraznit statického typu bezpečnosti a bezpečný přístup z více zdrojů. Najít způsoby, jak vyloučit nebo minimalizovat nejvíce náchylné částí jazyk a navrhnout jak byl kód jednodušší a výkonnější spolehlivě. Tyto pokyny jsou udržovány základ standardu C++. Další informace najdete v dokumentaci, [podle dokumentu C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)a přístup k souborům projektu podle dokumentu C++ Core Guidelines dokumentaci na [Githubu](https://github.com/isocpp/CppCoreGuidelines).
+
+Podle dokumentu C++ Core Guidelines vytvořeného Bjarne Stroustrup a jinými uživateli, jsou návod k použití moderním jazyce C++, bezpečně a efektivně. Pokyny zvýraznit statického typu bezpečnosti a bezpečný přístup z více zdrojů. Najít způsoby, jak vyloučit nebo minimalizovat nejvíce náchylné částí jazyk a navrhnout jak byl kód jednodušší a výkonnější spolehlivě. Tyto pokyny jsou udržovány základ standardu C++. Další informace najdete v dokumentaci, [podle dokumentu C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)a přístup k souborům projektu podle dokumentu C++ Core Guidelines dokumentaci na [Githubu](https://github.com/isocpp/CppCoreGuidelines).
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Povolit C++ Core Check pravidla analýzy kódu
  Můžete povolit analýzu kódu na projektu tak, že vyberete **povolit analýzu kódu na sestavení** zaškrtávací políčko ve **analýzy kódu** část **stránky vlastností** dialogové okno pro váš projekt.

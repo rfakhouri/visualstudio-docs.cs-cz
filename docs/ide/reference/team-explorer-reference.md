@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 7a44a46f1e3b03d5b2f583f0e480089d56295950
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007251"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222971"
 ---
 # <a name="team-explorer-reference"></a>Referenční dokumentace Team Explorer
 
@@ -33,7 +33,7 @@ Až [připojit se k projektu](../connect-team-project.md) v **Průzkumník týmo
 
 | **Domů** stránka s Git | **Domů** stránka s TFVC |
 | - | - |
-| ![Team Explorer Domovská stránka s Git ve službě Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Team Explorer Domovská stránka s TFVC v sadě Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Team Explorer Domovská stránka s Git ve službě Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Team Explorer Domovská stránka s TFVC v sadě Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Stránka změn (Git)
 

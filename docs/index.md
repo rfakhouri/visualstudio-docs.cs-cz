@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 titleSuffix: ''
-description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
+description: 'Další informace o použití sady Visual Studio pro vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.'
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316779"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -55,7 +49,7 @@ ms.locfileid: "56316779"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-in-visual-studio">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -65,7 +59,7 @@ ms.locfileid: "56316779"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Co&#39;nového v sadě Visual Studio 2017</h3>
+                                    <h3>Co&#39;nového v sadě Visual Studio</h3>
                                 </div>
                             </div>
                         </div>

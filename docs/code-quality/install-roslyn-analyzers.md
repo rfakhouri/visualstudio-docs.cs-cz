@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4818a57dc09825e6f41a635ea777a9e3f06e2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910508"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222932"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalace analyzátorů .NET Compiler Platform
 
-Visual Studio 2017 obsahuje základní sadu .NET Compiler Platform (*Roslyn*) analyzátory. Tyto analyzátory jsou vždy zapnuty. Můžete nainstalovat další analyzátory jako balíčky NuGet, nebo jako rozšíření sady Visual Studio v *VSIX* soubory.
+Visual Studio obsahuje základní sadu .NET Compiler Platform (*Roslyn*) analyzátory. Tyto analyzátory jsou vždy zapnuty. Můžete nainstalovat další analyzátory jako balíčky NuGet, nebo jako rozšíření sady Visual Studio v *VSIX* soubory.
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Instalace balíčků NuGet analyzátoru
 

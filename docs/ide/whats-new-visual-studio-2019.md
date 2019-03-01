@@ -14,19 +14,19 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdde6a34d3985c0e77cc9e84c58618a093ca365
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007271"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223543"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
 **Aktualizováno pro [Release Candidate (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Stáhněte si verzi RC:](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Stáhněte si verzi RC:](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 Visual Studio 2019 zahrnuje mnoho Obecná vylepšení spolu s novými funkcemi, které optimalizovat produktivitu a spolupráci mezi týmy. Ať už používáte Visual Studio poprvé nebo jste dosud používali ho let, budete moct využívat jeho funkce pro všechny aspekty životního cyklu vývoje&mdash;z zjednodušené vytváření a kód stavu řízení projektů, tým – a spolupráci pracovní postupy open source.<br/><br/>
 
@@ -110,7 +110,7 @@ Ve verzi preview verze sady Visual Studio 2019 podporuje vytváření [.NET Core
 Další informace naleznete na následujících stránkách:
 
 * [.NET core 3 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) a [.NET Core 3 ve verzi Preview 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) zpráva k vydání verze
-* [Ohlašujeme .NET Core 3 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) a [Ohlašujeme .NET Core 3 ve verzi Preview 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) blogové příspěvky
+* [Ohlašujeme .NET Core 3 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) a [Ohlašujeme .NET Core 3 ve verzi Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/) blogové příspěvky
 
 ## <a name="continuous-innovation"></a>Průběžné inovace
 

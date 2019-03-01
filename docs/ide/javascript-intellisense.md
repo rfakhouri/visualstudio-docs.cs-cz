@@ -19,31 +19,31 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91ea140ffef8d564cc1380d2fe3fd30a252fef14
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9eeb443684e769a119ae2e319351abc5a72b1417
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318452"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223686"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-Visual Studio 2017 poskytuje výkonné JavaScript předem připravené prostředí pro úpravy. Služba jazyka TypeScript, na základě, nabízí propracovanější IntelliSense, podpora pro moderní funkce JavaScript, sada Visual Studio a zvýšení produktivity, jako je přejít k definici, refaktoring, funkce a provádění dalších akcí.
+Visual Studio poskytuje výkonné JavaScript předem připravené prostředí pro úpravy. Služba jazyka TypeScript, na základě, nabízí propracovanější IntelliSense, podpora pro moderní funkce JavaScript, sada Visual Studio a zvýšení produktivity, jako je přejít k definici, refaktoring, funkce a provádění dalších akcí.
 
 > [!NOTE]
-> Služba jazyka JavaScript v sadě Visual Studio 2017 používá nový modul pro službu jazyka (označované jako "Salsa"). Podrobnosti jsou uvedené v tomto tématu, a můžete si také přečíst to [blogový příspěvek](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Nové možnosti úprav také většinou platí pro Visual Studio Code. Zobrazit [dokumentace VS Code](https://code.visualstudio.com/docs/languages/javascript) pro další informace.
+> Spouští se v sadě Visual Studio 2017, služba jazyka JavaScript používá nový modul pro službu jazyka (označované jako "Salsa"). Podrobnosti jsou uvedeny v tomto článku a můžete si také přečíst to [blogový příspěvek](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Nové možnosti úprav také většinou platí pro Visual Studio Code. Zobrazit [dokumentace VS Code](https://code.visualstudio.com/docs/languages/javascript) pro další informace.
 
 Další informace o funkcích technologie IntelliSense, které obecné sady Visual Studio najdete v tématu [pomocí technologie IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Co je nového ve službě jazyka JavaScript v sadě Visual Studio 2017
 
-Spouští se v sadě Visual Studio 2017, zobrazí technologie IntelliSense jazyka JavaScript mnohem víc informací v seznamech parametrů a člen.
-Služba jazyka TypeScript, který používá statickou analýzu na pozadí pro lepší pochopení kódu poskytuje tyto nové informace.
+Spouští se v sadě Visual Studio 2017, zobrazí technologie IntelliSense jazyka JavaScript mnohem víc informací v seznamech parametrů a člen. Služba jazyka TypeScript, který používá statickou analýzu na pozadí pro lepší pochopení kódu poskytuje tyto nové informace.
+
 TypeScript používá několik zdrojů k vytvoření těchto informací:
 
 - [Technologie IntelliSense podle odvození typu](#TypeInference)

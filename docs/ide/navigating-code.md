@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927604"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223530"
 ---
 # <a name="navigate-code"></a>Vyhledání kódu
 
@@ -82,7 +82,7 @@ Přejít na má následující příkazy, které jsou k dispozici v **upravit** 
 
 - **Go To File** (**Ctrl**+**1**, **Ctrl**+**F**): Přesunout do zadaného souboru v řešení.
 
-- **Přejděte na poslední soubor** (**Ctrl**+**1**, **Ctrl**+**R**): Přesuňte do souboru zadaného, naposledy navštívené v řešení (nové v sadě Visual Studio 2017 verze 15.8).
+- **Přejděte na poslední soubor** (**Ctrl**+**1**, **Ctrl**+**R**): Přesunout na zadaný, naposledy navštívené souboru v řešení.
 
 - **Přejděte na typ** (**Ctrl**+**1**, **Ctrl**+**T**): Přesunout na zadaný typ v řešení.
 
@@ -105,7 +105,7 @@ Přejít k definici přejdete na definici vybraného prvku. Další informace na
 Vstup | Funkce
 ------------ | ---
 **Klávesnice** | Umístit textový kurzor někam název typu a stiskněte klávesu **F12**
-**Myši** | Klikněte pravým tlačítkem na název typu a vyberte **přejít k definici** nebo stiskněte klávesu **Ctrl** a klikněte na název typu (nové sady Visual Studio 2017 verze 15.4)
+**Myši** | Klikněte pravým tlačítkem na název typu a vyberte **přejít k definici** nebo stiskněte klávesu **Ctrl** a klikněte na název typu
 
 ## <a name="peek-definition"></a>Náhled definice
 

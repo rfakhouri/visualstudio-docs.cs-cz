@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926785"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223049"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů jednotek pro C/C++ v sadě Visual Studio
 
@@ -30,11 +30,11 @@ Visual Studio obsahuje tyto testovací rozhraní C++ se žádné další soubory
 
 Kromě rozhraní nainstalované můžete napsat vlastní testovací adaptér pro libovolné framework, které chcete použít v sadě Visual Studio. Testovací adaptér můžete integrovat testů jednotek s **Průzkumníka testů** okna. Několik adaptérů třetích stran jsou k dispozici na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 verze 15.7 (Professional a Enterprise)**
+**Visual Studio 2017 verze 15.7 a novější (Professional a Enterprise)**
 
 Projekty testování částí C++ podporu [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017 verze 15.5**
+**Visual Studio 2017 verze 15.5 nebo novější**
 
 - **Google Test Adapter** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Obsahuje šablony projektů, můžete přidat do řešení prostřednictvím **přidat nový projekt** nabídky klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení**a možnosti, které můžete nakonfigurovat přes **nástroje**  >  **Možnosti**. Další informace najdete v tématu [postupy: použití Google testu v sadě Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -117,7 +117,9 @@ Osvědčené postupy související s testování částí, naleznete v tématu [
 
 ## <a name="use-codelens"></a>Použití CodeLens
 
-**Visual Studio 2017 verze 15.7 pouze edice Enterprise a Professional**: [Funkce CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) umožňuje rychle zobrazit stav jednotky testování bez opuštění editoru kódu. Inicializovat CodeLens pro projekt testování částí C++ v některém z těchto způsobů:
+**Visual Studio 2017 verze 15.7 a novější (edice Professional a Enterprise jenom)**
+
+[Funkce CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) umožňuje rychle zobrazit stav jednotky testování bez opuštění editoru kódu. Inicializovat CodeLens pro projekt testování částí C++ v některém z těchto způsobů:
 
 - Upravit a vytvořit testovací projekt nebo řešení.
 - Znovu sestavte projekt nebo řešení.
@@ -127,10 +129,10 @@ Po **CodeLens** je inicializována, zobrazí se test ikony stavu nad každý Jed
 
 ![Ikony C++ CodeLens](media/cpp-test-codelens-icons.png)
 
- Klikněte na ikonu pro další informace nebo chcete spustit nebo ladit testování částí:
+Klikněte na ikonu pro další informace nebo chcete spustit nebo ladit testování částí:
 
 ![C++ CodeLens spouštění a ladění](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Viz také:
 
-[Testování částí kódu](unit-test-your-code.md)
+- [Testování částí kódu](unit-test-your-code.md)

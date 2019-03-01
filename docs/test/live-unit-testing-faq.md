@@ -9,21 +9,23 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ac13299a8b727a3ef8e717e3d0a4c2c9f3738cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947390"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223057"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – nejčastější dotazy
 
 ## <a name="latest-features"></a>Nejnovější funkce
+
 **Live Unit Testing je vylepšená a rozšířeného pravidelně. Jak může najít informace o nejnovější nové funkce a vylepšení?**
 
-Další informace o nové funkce a vylepšení, které byly provedeny Live Unit Testing od verze Visual Studio 2017 verze 15.3, naleznete v tématu [co je nového ve službě Live Unit Testing](live-unit-testing-whats-new.md).
+Další informace o nové funkce a vylepšení, které byly provedeny Live Unit Testing, naleznete v tématu [co je nového ve službě Live Unit Testing](live-unit-testing-whats-new.md).
 
 ## <a name="supported-frameworks-and-versions"></a>Podporované architektury a verze
+
 **Jaká testovací rozhraní nemá podporu Live Unit Testing a jaké jsou minimální podporované verze?**
 
 Live Unit Testing spolupracuje s tři rozhraní testování částí oblíbených uvedené v následující tabulce. Minimální podporovaná verze jejich adaptéry a rozhraní je také uvedený v tabulce. Rozhraní testování částí jsou všechny dostupné z webu NuGet.org.
@@ -51,23 +53,25 @@ Live Unit Testing spolupracuje s tři rozhraní testování částí oblíbenýc
 </tr>
 </table>
 
-Pokud máte starší založené na MSTest testovací projekty tento odkaz `Microsoft.VisualStudio.QualityTools.UnitTestFramework` a nechcete přesunout na novější balíčky MSTest NuGet, proveďte upgrade na Visual Studio 2017 verze 15.4.
+Pokud máte starší založené na MSTest testovací projekty tento odkaz `Microsoft.VisualStudio.QualityTools.UnitTestFramework` a nechcete přesunout na novější balíčky MSTest NuGet, proveďte upgrade na Visual Studio 2017 verze 15.4 nebo novější.
 
 V některých případech budete muset explicitně obnovit balíčky NuGet odkazované projekty v řešení v pořadí pro Live Unit Testing pro práci. Balíčky můžete obnovit buď tímto způsobem vytvořte explicitní sestavení řešení (vyberte **sestavení**, **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio), nebo kliknutím pravým tlačítkem na řešení a Výběr **obnovit balíčky NuGet** před povolením živých Unit Testing.
 
 ## <a name="net-core-support"></a>Podpora .NET core
+
 **Live Unit Testing funguje s .NET Core?**
 
-Ano. Live Unit Testing spolupracuje s .NET Core a .NET Framework. Nedávno byla přidána podpora pro .NET Core v sadě Visual Studio 2017 verze 15.3. Upgradovat na tuto verzi sady Visual Studio, pokud chcete podporu Live Unit Testing pro .NET Core.
+Ano. Live Unit Testing spolupracuje s .NET Core a .NET Framework. Přidala se podpora pro .NET Core v sadě Visual Studio 2017 verze 15.3. Upgradovat na tuto verzi sady Visual Studio nebo novější, pokud chcete podporu Live Unit Testing pro .NET Core.
 
 ## <a name="configuration"></a>Konfigurace
+
 **Proč Live Unit Testing nefunguje, pokud můžu ho zapnout?**
 
-**Okno výstup** (když je vybraná Live Unit Testing rozevíracího seznamu) vám měl říct, proč Live Unit Testing nefunguje. Live Unit Testing nemusí fungovat pro jednu z následujících důvodů:
+**Výstup** okna (Pokud je vybrána Live Unit Testing rozevíracího seznamu) vám měl říct, proč Live Unit Testing nefunguje. Live Unit Testing nemusí fungovat pro jednu z následujících důvodů:
 
 - Pokud se balíčky NuGet odkazované projekty v řešení nebyly obnoveny, Live Unit Testing nebude fungovat. Způsobem vytvořte explicitní sestavení řešení nebo při obnovování balíčků NuGet v rámci řešení před zapnutím Live Unit Testing by měla tento problém vyřešit.
 
-- Pokud používáte testy založené na MSTest ve svých projektech, ujistěte se, že odkaz na odebrat `Microsoft.VisualStudio.QualityTools.UnitTestFramework`a přidejte odkazy na nejnovější balíčky MSTest NuGet `MSTest.TestAdapter` (minimálně verze 1.1.11 je vyžadována) a `MSTest.TestFramework` (minimální verze 1.1.11 je povinný). Další informace najdete v části "Podporované testovacích architektur" [pomocí Live Unit Testing v aplikaci Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks) článku.
+- Pokud používáte testy založené na MSTest ve svých projektech, ujistěte se, že odkaz na odebrat `Microsoft.VisualStudio.QualityTools.UnitTestFramework`a přidejte odkazy na nejnovější balíčky MSTest NuGet `MSTest.TestAdapter` (minimálně verze 1.1.11 je vyžadována) a `MSTest.TestFramework` (minimální verze 1.1.11 je povinný). Další informace najdete v části "Podporované testovacích architektur" [pomocí Live Unit Testing v sadě Visual Studio](live-unit-testing.md#supported-test-frameworks) článku.
 
 - Nejméně jeden projekt ve vašem řešení by měl mít odkaz na NuGet nebo přímý odkaz na xUnit, NUnit, nebo testovací rozhraní MSTest. Tento projekt by měly odkazovat také odpovídající balíček NuGet sady Visual Studio test adaptéry. Adaptér testu sady Visual Studio lze také odkazovat prostřednictvím *s příponou .runsettings* souboru. *s příponou .runsettings* souboru musí mít položku jako v následujícím příkladu:
 
@@ -80,6 +84,7 @@ Ano. Live Unit Testing spolupracuje s .NET Core a .NET Framework. Nedávno byla 
 ```
 
 ## <a name="incorrect-coverage-after-upgrade"></a>Nesprávný pokrytí po upgradu
+
 **Proč Live Unit Testing zobrazuje nesprávný pokrytí po upgradu testovací adaptér, který je odkazováno v projektech Visual Studio na podporovanou verzi?**
 
 - Pokud více projektů v řešení odkazu NuGet otestovat balíček adaptéru, každý z nich musí upgradovat na podporovanou verzi.
@@ -91,6 +96,7 @@ Ano. Live Unit Testing spolupracuje s .NET Core a .NET Framework. Nedávno byla 
    ```
 
 ## <a name="customize-builds"></a>Přizpůsobení sestavení
+
 **Můžete přizpůsobit Moje sestavení Live Unit Testing?**
 
 Pokud vaše řešení vyžaduje vlastní postup pro sestavení pro instrumentaci (Live Unit Testing), které nejsou povinné pro "regulárního" neinstrumentovaného sestavení, pak můžete přidat kód do projektu nebo *.targets* souborů, které kontroluje, `BuildingForLiveUnitTesting` vlastnost a provede vlastní předzálohovacího nebo pozálohovacího kroky sestavení. Můžete také odebrat určité kroky sestavení (třeba publikování nebo generování balíčků) nebo přidat kroky sestavení (jako je kopírování požadavky) Live Unit Testing sestavení na základě této vlastnosti projektu. Přizpůsobení sestavení na základě této vlastnosti regulárního sestavení nijak nezmění a ovlivní pouze Live Unit Testing sestavení.
@@ -104,6 +110,7 @@ Například může být cílem, který vytváří balíčky NuGet během regulá
 ```
 
 ## <a name="error-messages-with-ltoutputpathgt-or-ltoutdirgt"></a>Chybové zprávy s &lt;OutputPath&gt; nebo &lt;OutDir&gt;
+
 **Proč se při Live Unit Testing se pokusí vytvořit Moje řešení zobrazí následující chyba: ".. .se objeví bezpodmínečně nastavit `<OutputPath>` nebo `<OutDir>`. Live Unit Testing nebudou spouštět testy z výstupního sestavení"?**
 
 Této chybě může dojít, pokud proces sestavení pro vaše řešení bezpodmínečně přepíše `<OutputPath>` nebo `<OutDir>` tak, že se nejedná o podadresář `<BaseOutputPath>`. V takových případech Live Unit Testing nebude fungovat, protože Potlačí také tyto hodnoty k zajištění, že se zahodí artefakty sestavení do složky v `<BaseOutputPath>`. Pokud je nutné přepsat místo, kam chcete artefaktům sestavení zahodí v regulárního sestavení, přepsat `<OutputPath>` podmíněně na základě `<BaseOutputPath>`.
@@ -134,11 +141,13 @@ To zajistí, že `<OutputPath>` spočívá v rámci `<BaseOutputPath>` složky.
 Nesmí být přepsána `<OutDir>` přímo v procesu sestavení; přepsat `<OutputPath>` místo toho vyřadit artefakty sestavení do určitého umístění.
 
 ## <a name="set-the-location-of-build-artifacts"></a>Nastavit umístění artefaktů sestavení
+
 **Chci, aby artefakty sestavení Live Unit Testing pro přejít na konkrétní umístění, namísto výchozího umístění v rámci *.vs* složky. Jak lze změnit, který?**
 
 Nastavte `LiveUnitTesting_BuildRoot` proměnnou individuální prostředí pro cestu, kde chcete Live Unit Testing artefakty sestavení do vyřadit. 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Test Explorer vs. Live Unit Testing testovací běhy
+
 **Jak je spouštění testů z okna Průzkumníka testů liší od spuštění testů v Live Unit Testing?**
 
 Existuje několik rozdílů:
@@ -154,9 +163,10 @@ Existuje několik rozdílů:
 - **Průzkumník testů** aktuálně spustí testy v jednovláknový apartment (STA) ve výchozím nastavení, že Live Unit Testing spustí testy v apartmentu s více vlákny (MTA). Ke spuštění testů MSTest v STA v Live Unit Testing, uspořádání testovací metody nebo obsahující třídu `<STATestMethod>` nebo `<STATestClass>` atribut, který najdete v `MSTest.STAExtensions 1.0.3-beta` balíček NuGet. NUnit, uspořádání testovací metody s `<RequiresThread(ApartmentState.STA)>` atribut a pro xUnit, se `<STAFact>` atribut.
 
 ## <a name="exclude-tests"></a>Vyloučit testy
+
 **Jak vyloučit testy ze Live Unit Testing?**
 
-Najdete v části "zahrnutí a vyloučení projekty testů a testovací metody" [pomocí Live Unit Testing v aplikaci Visual Studio 2017 Enterprise Edition](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) článku pro uživatelská nastavení. Zahrnutí nebo vyloučení testů je užitečné, pokud chcete spustit konkrétní sadu testů pro konkrétní Upravit relaci nebo k uchování vašich vlastních předvoleb osobní.
+Najdete v části "zahrnutí a vyloučení projekty testů a testovací metody" [pomocí Live Unit Testing v sadě Visual Studio](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) článku pro uživatelská nastavení. Zahrnutí nebo vyloučení testů je užitečné, pokud chcete spustit konkrétní sadu testů pro konkrétní Upravit relaci nebo k uchování vašich vlastních předvoleb osobní.
 
 U nastavení specifická pro řešení, můžete použít <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> atribut prostřednictvím kódu programu k vyloučení je instrumentováno nástrojem Live Unit Testing metody, vlastnosti, třídy nebo struktury. Kromě toho můžete také nastavit `<ExcludeFromCodeCoverage>` vlastnost `true` v souboru projektu k vyloučení je instrumentováno celého projektu. Live Unit Testing stále poběží testy, které nebyly byla instrumentována, ale nebude možné vizualizovat jejich pokrytí.
 
@@ -182,9 +192,10 @@ public class Class1
 ```
 
 ## <a name="win32-pe-headers"></a>Záhlaví Win32 PE
+
 **Proč se liší v instrumentovaném sestavení vytvořená pomocí Live Unit testing záhlaví Win32 PE**
 
-Tento problém je vyřešený a neexistuje v sadě Visual Studio 2017 verze 15.3. Upgradovat na tuto verzi sady Visual Studio.
+Tento problém je vyřešený a neexistuje v sadě Visual Studio 2017 verze 15.3 nebo novější.
 
 Pro starší verze sady Visual Studio 2017 je známého problému, který může mít za následek Live Unit Testing sestavení neúspěšné k vložení dat následující záhlaví PE Win32:
 
@@ -197,6 +208,7 @@ Pro starší verze sady Visual Studio 2017 je známého problému, který může
 Testy, které využívají tyto hodnoty může selhat při spuštění metodou Live Unit testing.
 
 ## <a name="continuous-builds"></a>Průběžné vytváření sestavení
+
 **Proč Live Unit testing zachovat vytváření Moje řešení neustále i v případě, že mám mi provádění veškeré úpravy?**
 
 Vaše řešení můžete vytvářet i v případě, že nejsou provádění úprav, pokud proces sestavení vašeho řešení generuje zdrojový kód, který je součástí vlastním řešením a cílové soubory sestavení nemají odpovídající vstupy a výstupy zadán. Cíle by se měly provádět seznam vstupů a výstupů tak, aby MSBuild může provést příslušné kontroly aktuální a určit, jestli je potřeba nové sestavení.
@@ -204,6 +216,7 @@ Vaše řešení můžete vytvářet i v případě, že nejsou provádění úpr
 Live Unit Testing spustí sestavení pokaždé, když se zjistí, že došlo ke změně zdrojových souborů. Protože sestavení vašeho řešení generuje zdrojové soubory, Live Unit Testing dostane do sestavení nekonečné smyčky. Pokud však vstupy a výstupy cíle jsou kontrolovány při Live Unit Testing (po zjištění nově vytvořených zdrojových souborů z předchozího buildu) spuštění druhé sestavení, protože se vstupy a výstupy kontroly, ji budou přerušit ze smyčky sestavení Označuje, že všechno, co je aktuální.  
 
 ## <a name="lightweight-solution-load"></a>Zjednodušené načtení řešení
+
 **Live Unit testing práce s funkce zjednodušeného řešení načtení jak?**
 
 Live Unit Testing nyní nefunguje s funkce zjednodušeného načtení řešení. Funguje pouze po nejméně jeden z testovacích projektů načtení. Dokud to neuděláte, nebude fungovat, protože Live Unit Testing je závislá na alespoň jeden z testovacích projektů odkazující na adaptér testu (MSTest, xUnit a NUnit) načítán.
@@ -212,23 +225,27 @@ Live Unit Testing nyní nefunguje s funkce zjednodušeného načtení řešení.
 > Zjednodušené načtení řešení již není k dispozici v sadě Visual Studio 2017 verze 15.5 nebo novější. V sadě Visual Studio 2017 verze 15.5 nebo novější spravované velká řešení obsahující kód zatížení mnohem rychleji než dřív, i bez zjednodušené načtení řešení.
 
 ## <a name="new-process-coverage"></a>Nový proces pokrytí
+
 **Proč Live Unit Testing nezachytí pokrytí z nový proces vytvořil testu?**
 
-Jedná se o známý problém, by měl být stanovena v následné aktualizaci sady Visual Studio 2017.
+Jedná se o známý problém a stanovit následující verze.
 
-## <a name="including-or-excluding-tests-not-working"></a>Zahrnutí nebo vyloučení testů nefunguje
+## <a name="including-or-excluding-tests-doesnt-work"></a>Zahrnutí nebo vyloučení testů nefunguje
+
 **Proč k tomu nic dochází po můžu zahrnout nebo vyloučit testů ze sady Live Test?**
 
-Tento problém je vyřešený a neexistuje v sadě Visual Studio 2017 verze 15.3. Upgradovat na tuto verzi sady Visual Studio.
+Tento problém je vyřešený a neexistuje v sadě Visual Studio 2017 verze 15.3 nebo novější.
 
-Pro starší verze sady Visual Studio 2017 jde o známý problém. Chcete-li tento problém obejít, je potřeba upravte libovolný soubor po zahrnuty nebo vyloučeny testy. 
+Pro starší verze sady Visual Studio 2017 jde o známý problém. Chcete-li tento problém obejít, je potřeba upravte libovolný soubor po zahrnuty nebo vyloučeny testy.
 
 ## <a name="editor-icons"></a>Editor ikon
+
 **Proč se mi nezobrazují všechny ikony v editoru i v případě, že Live Unit Testing se zdá být spouštění testů na základě zpráv v okně Výstup?**
 
 Pokud z nějakého důvodu nejsou instrumentované sestavení, která Live Unit Testing pracuje na se nemusí zobrazovat ikony v editoru. Například není kompatibilní s projekty, nastavte Live Unit Testing `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. V takovém případě je potřeba aktualizovat buď odeberte toto nastavení, nebo změňte ho na váš proces sestavení `true` pro Live Unit Testing pro práci. 
 
 ## <a name="capture-logs"></a>Zachycení protokoly
+
 **Jak shromáždím podrobnější protokoly do souborů zpráv o chybách?**
 
 Máte několik možností, jak shromažďovat podrobné protokoly:

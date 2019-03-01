@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957910"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223010"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy závislostí: referenční dokumentace
 
@@ -34,7 +34,7 @@ V sadě Visual Studio, můžete použít *diagram závislostí* můžete vizuali
 Chcete-li zjistit, jaké edice sady Visual Studio podporují tuto funkci, přečtěte si téma [podpora edice nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Diagramy závislostí nejsou podporovány pro projekty .NET Core v sadě Visual Studio 2017.
+> Diagramy závislostí nejsou podporovány pro projekty .NET Core v sadě Visual Studio.
 
 Můžete určit zamýšlené nebo existující závislosti mezi vrstvami. Tyto závislosti, které jsou reprezentovány šipkami, označení, které vrstvy mohou použít nebo právě používají funkce představované ostatními vrstvami. Uspořádání vašeho systému do vrstev, které popisují různé role a funkce, diagram závislostí může pomoci bylo snazší porozumět, opakovaně používat a spravovat váš kód.
 

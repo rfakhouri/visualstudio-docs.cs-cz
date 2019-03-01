@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3cf7b35edfad992096193a73f2b57d2c87292a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953632"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223712"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing pomocí sady Visual Studio 2017
+# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing pomocí sady Visual Studio
 
 Vyvíjíte aplikaci, Live Unit Testing automaticky spustí všechny testy jednotek během toho na pozadí a představuje výsledky a pokrytí kódu za provozu v rozhraní IDE sady Visual Studio v reálném čase. Při úpravě kódu, na jaký vliv na existující testy změny Live Unit Testing poskytuje zpětnou vazbu a určuje, zda nový kód jste přidali se vztahuje na jeden nebo více existujících testů. To je pro psaní jednotkových testů při provádění oprav chyb a přidání nových funkcí jemně připomene.
 
 > [!NOTE]
-> Live Unit Testing je k dispozici pro projekty jazyka C# a Visual Basic, které cílí .NET Core nebo .NET Framework v Enterprise edici sady Visual Studio 2017.
+> Live Unit Testing je k dispozici pro C# a projekty Visual Basic, které cílí na .NET Core nebo .NET Framework v edici Visual Studio Enterprise.
 
 Pokud používáte Live Unit Testing pro testy, Live Unit Testing uchovává data o stavu vašich testů. Schopnost používat trvalých dat umožňuje Live Unit Testing nabízí špičkový výkon při spouštění testů dynamicky v reakci na změny kódu.
 
@@ -51,7 +51,7 @@ Live Unit Testing spolupracuje s tři rozhraní testování částí oblíbenýc
 </tr>
 </table>
 
-Pokud máte starší MSTest projektů založených na testu, které odkazují `Microsoft.VisualStudio.QualityTools.UnitTestFramework` a nechcete přesunout na novější balíčky MSTest NuGet, proveďte upgrade na Visual Studio 2017 verze 15.4.
+Pokud máte starší MSTest projektů založených na testu, které odkazují `Microsoft.VisualStudio.QualityTools.UnitTestFramework` a nechcete přesunout na novější balíčky MSTest NuGet, proveďte upgrade na Visual Studio 2017 verze 15.4 nebo novější.
 
 V některých případech budete muset explicitně obnovit balíčky NuGet odkazované projekty v řešení v pořadí pro Live Unit Testing pro práci. Uděláte to buď tímto způsobem vytvořte explicitní sestavení řešení (vyberte **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio) nebo obnovují se balíčky v řešení ( Klikněte pravým tlačítkem na řešení a vyberte **obnovit balíčky NuGet**) před povolením živých Unit Testing.
 
@@ -200,4 +200,4 @@ Také vám pomůže následující atributy z Live Unit Testing vyloučit jednot
 - [Kód testovací nástroje](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blogu Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Nejčastější dotazy k funkci Live Unit Testing](live-unit-testing-faq.md)
-- [Video pro kanál 9: Live Unit Testing v sadě Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Video pro kanál 9: Live Unit Testing v sadě Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

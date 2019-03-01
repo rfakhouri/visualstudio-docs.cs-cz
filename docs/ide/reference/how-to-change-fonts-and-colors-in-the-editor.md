@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6fefeac5ecdaf03f4e672ea6804b0c20c79136
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934611"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223179"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Postupy: Změna písma a barev v editoru v sadě Visual Studio 2017
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Postupy: Změna písma a barev v editoru v sadě Visual Studio
 
 Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy popředí a pozadí pro různé textové **zobrazení položek** v editoru kódu. Když změníte nastavení písma, mějte tyto informace:
 

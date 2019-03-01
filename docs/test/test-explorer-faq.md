@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318313"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221889"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Průzkumník testů sady Visual Studio – nejčastější dotazy
 
@@ -27,71 +27,71 @@ ms.locfileid: "56318313"
 
 **Průzkumník testů není zjišťování mých testů, které jsou definována dynamicky. (Například teorie, vlastní adaptéry, vlastní vlastnosti, #ifdefs atd.) Jak lze zjistit tyto testy?**
 
-  Sestavení projektu a ujistěte se, že je zapnuté zjišťování na základě sestavení **nástroje** > **možnosti** > **Test**.
+Sestavení projektu a ujistěte se, že je zapnuté zjišťování na základě sestavení **nástroje** > **možnosti** > **Test**.
 
-  [Zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) je založen zdroj testu zjišťování. Ho nelze zjistit testy, které používají teorie, vlastní adaptéry, vlastní vlastnosti `#ifdef` příkazy a další, protože máte definovaný v době běhu. Sestavení je vyžadován pro tyto testy na přesně najít. V sadě Visual Studio 2017 verze 15.6 a novější se spustí zjišťování na základě sestavení (tradiční prozkoumání) až po sestavení. Toto nastavení znamená, že v reálném čase testu zjišťování najde libovolný počet testů, jak jde při úpravách a zjišťování na základě sestavení umožňuje dynamicky definované testů se zobrazí po sestavení. Zjišťování testů v reálném čase zlepšuje odezvu, ale nepřesahuje umožňují získat úplné a přesné výsledky po sestavení.
+[Zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) je založen zdroj testu zjišťování. Ho nelze zjistit testy, které používají teorie, vlastní adaptéry, vlastní vlastnosti `#ifdef` příkazy a další, protože máte definovaný v době běhu. Sestavení je vyžadován pro tyto testy na přesně najít. V sadě Visual Studio 2017 verze 15.6 a novější se spustí zjišťování na základě sestavení (tradiční prozkoumání) až po sestavení. Toto nastavení znamená, že v reálném čase testu zjišťování najde libovolný počet testů, jak jde při úpravách a zjišťování na základě sestavení umožňuje dynamicky definované testů se zobrazí po sestavení. Zjišťování testů v reálném čase zlepšuje odezvu, ale nepřesahuje umožňují získat úplné a přesné výsledky po sestavení.
 
 ## <a name="test-explorer--plus-symbol"></a>Průzkumník testů "+" (plus) symbol
 
 **Co dělá "+" (plus) symbol, který se zobrazí v horní zobrazený řádek znamená Průzkumník testů?**
 
-  "+" (Plus) symbol označuje, že další testy mohou být zjištěny po sestavení, tak dlouho, dokud je zapnuté zjišťování na základě sestavení. Tento symbol se zobrazí dynamicky definované v případě, že testy se zjistí ve vašem projektu.
+"+" (Plus) symbol označuje, že další testy mohou být zjištěny po sestavení, tak dlouho, dokud je zapnuté zjišťování na základě sestavení. Tento symbol se zobrazí dynamicky definované v případě, že testy se zjistí ve vašem projektu.
 
-  ![Souhrn řádku znaménko plus](media/testex-plussymbol.png)
+![Souhrn řádku znaménko plus](media/testex-plussymbol.png)
 
 ## <a name="assembly-based-discovery"></a>Zjišťování na základě sestavení
 
 **Zjišťování na základě sestavení je už nefunguje pro svůj projekt. Jak můžu ho znova zapnout?**
 
-  Přejděte na **nástroje** > **možnosti** > **testovací** a zaškrtněte políčko u **můžete zjistit také ze zkompilovaných sestavení po testy sestavení.**
+Přejděte na **nástroje** > **možnosti** > **testovací** a zaškrtněte políčko u **můžete zjistit také ze zkompilovaných sestavení po testy sestavení.**
 
-  ![Možnosti založené na sestavení](media/testex-toolsoptions.png)
+![Možnosti založené na sestavení](media/testex-toolsoptions.png)
 
 ## <a name="real-time-test-discovery"></a>Zjišťování testů v reálném čase
 
 **Testy se teď zobrazují v Průzkumníku testů při psaní, aniž byste museli svůj projekt sestavovat. Co se změnilo?**
 
-  Tato funkce se nazývá [zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824). Roslyn analyzátor používá k vyhledání testů a naplnit Průzkumníka testů v reálném čase, aniž by bylo potřeba svůj projekt sestavit. Další informace o chování zjišťování testů pro dynamicky definované testy, jako je například teorie nebo vlastní vlastnosti naleznete v tématu Nejčastější dotazy k č. 1.
+Tato funkce se nazývá [zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824). Roslyn analyzátor používá k vyhledání testů a naplnit Průzkumníka testů v reálném čase, aniž by bylo potřeba svůj projekt sestavit. Další informace o chování zjišťování testů pro dynamicky definované testy, jako je například teorie nebo vlastní vlastnosti naleznete v tématu Nejčastější dotazy k č. 1.
 
 ## <a name="real-time-test-discovery-compatibility"></a>Kompatibilita zjišťování testů v reálném čase
 
 **Jaké jazyky a rozhraní pro testování můžete použít zjišťováním testů v reálném čase?**
 
-  [Zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) funguje jenom pro spravované jazyky (C# a Visual Basic), protože je vytvořen pomocí kompilátoru Roslyn. Prozatím se zjišťování testů v reálném čase funguje jenom pro xUnit, NUnit a MSTest architektur.
+[Zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) funguje jenom pro spravované jazyky (C# a Visual Basic), protože je vytvořen pomocí kompilátoru Roslyn. Prozatím se zjišťování testů v reálném čase funguje jenom pro xUnit, NUnit a MSTest architektur.
 
 ## <a name="test-explorer-logs"></a>Protokoly Průzkumníka testů
 
 **Jak můžu zapnout protokolování pro Průzkumník testů?**
 
-  Přejděte do **nástroje** > **možnosti** > **Test** a najdete v části protokolování existuje.
+Přejděte do **nástroje** > **možnosti** > **Test** a najdete v části protokolování existuje.
 
 ## <a name="uwp-test-discovery"></a>Zjišťování testů UPW
 
 **Proč jsou mé testy v projektech UPW nezjištěné dokud nasadit aplikaci?**
 
-  Testů UPW cílení různých běhových při nasazení aplikace. To znamená, že se nenašly testy přesně pro projekty UWP vám nejen na svůj projekt sestavit, ale také nasadit.
+Testů UPW cílení různých běhových při nasazení aplikace. To znamená, že se nenašly testy přesně pro projekty UWP vám nejen na svůj projekt sestavit, ale také nasadit.
 
 ## <a name="test-explorer-sorting"></a>Test Explorer řazení
 
 **Jak funguje řazení výsledků testů v zobrazení hierarchie?**
 
-  Hierarchické zobrazení seřadí testy podle abecedy jako a podle výsledku. Podle nastavení skupiny obvykle řazení výsledků testů podle výsledku a pak podle abecedy. Možnosti na následujícím obrázku pro porovnání najdete v jiné skupině. Můžete poskytnout zpětnou vazbu o návrhu [v tento problém Githubu](https://github.com/Microsoft/vstest/issues/1425).
+Hierarchické zobrazení seřadí testy podle abecedy jako a podle výsledku. Podle nastavení skupiny obvykle řazení výsledků testů podle výsledku a pak podle abecedy. Možnosti na následujícím obrázku pro porovnání najdete v jiné skupině. Můžete poskytnout zpětnou vazbu o návrhu [v tento problém Githubu](https://github.com/Microsoft/vstest/issues/1425).
 
-  ![SortingExamples](media/testex-sortingex.png)
+![SortingExamples](media/testex-sortingex.png)
 
 ## <a name="test-explorer-hierarchy-view"></a>Zobrazení hierarchie Průzkumníka testů
 
 **V okně hierarchie existuje jsou předány, se nezdařilo, přeskočené a nelze spustit ikonami vedle jejich seskupení projektu, Namespace a třídy. Co znamenají tyto ikony?**
 
-  Ikony vedle seskupení projektu, Namespace a třída zobrazení stavu testů v rámci tohoto seskupení. V následující tabulce.
+Ikony vedle seskupení projektu, Namespace a třída zobrazení stavu testů v rámci tohoto seskupení. V následující tabulce.
 
-  ![Ikony hierarchie Průzkumníka testů](media/testex-hierarchyicons.png)
+![Ikony hierarchie Průzkumníka testů](media/testex-hierarchyicons.png)
 
 ## <a name="search-by-file-path"></a>Hledat podle cesta k souboru
 
 **Do vyhledávacího pole Průzkumníka testů již není filtr "Cesta k souboru".**
 
-Filtr cesty souboru v **Průzkumník testů** vyhledávacího pole byla odebrána v sadě Visual Studio 2017 verze 15.7 preview 3. Tato funkce má málo využívaných a Průzkumník testů může načíst testovací metody rychlejší vynecháním tuto funkci. Pokud se tato změna přerušení tok vývoj, dejte nám vědět, zasláním svého názoru na [komunity vývojářů](https://developercommunity.visualstudio.com/).
+Filtr cesty souboru v **Průzkumník testů** vyhledávacího pole byla odebrána v sadě Visual Studio 2017 verze 15.7. Tato funkce má málo využívaných a Průzkumník testů může načíst testovací metody rychlejší vynecháním tuto funkci. Pokud se tato změna přerušení tok vývoj, dejte nám vědět, zasláním svého názoru na [komunity vývojářů](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Odebrání nedokumentované rozhraní
 
@@ -112,7 +112,7 @@ Namísto použití rozšíření adaptérů testů, jsou nutné k použití bal�
 > [!NOTE]
 > Pokud používáte NUnit 2 Test Adapter a jsou nelze provést migraci k NUnit 3 test adapter, můžete ji vypnout toto nové chování zjišťování v sadě Visual Studio verzi 15.8 v **nástroje** > **možnosti**  >  **Test**.
 
-  ![Test Explorer adaptér chování v možnostech nástrojů](media/testex-adapterbehavior.png)
+![Test Explorer adaptér chování v možnostech nástrojů](media/testex-adapterbehavior.png)
 
 ## <a name="uwp-testcontainer-was-not-found"></a>UPW TestContainer nebyl nalezen
 

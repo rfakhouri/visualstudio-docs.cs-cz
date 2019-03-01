@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927812"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223082"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
 
@@ -33,7 +33,7 @@ V jazyce C + +/ CLI, použijte makra certifikační Autority\_POTLAČIT\_zprávy
 > Potlačení v zdroj byste neměli používat u sestavení pro vydání, aby se zabránilo omylem přesouvání potlačení v zdroje metadat. Navíc vzhledem k zpracování potlačení-source, může být snížený výkon vaší aplikace.
 
 > [!NOTE]
-> Pokud provádíte migraci projekt do sady Visual Studio 2017, může vás prudce potýkají s velký počet upozornění analýzy kódu. Tato upozornění pocházejí z [analyzátory Roslyn](roslyn-analyzers-overview.md). Pokud vám ještě nejsou připravené k vyřešení upozornění, můžete je všechny potlačit výběrem **analyzovat** > **spustit analýzu kódu a potlačit aktivních problémů**.
+> Pokud provádíte migraci do projektu sady Visual Studio 2017 nebo Visual Studio 2019, může vás prudce potýkají s velký počet upozornění analýzy kódu. Tato upozornění pocházejí z [analyzátory Roslyn](roslyn-analyzers-overview.md). Pokud vám ještě nejsou připravené k vyřešení upozornění, můžete je všechny potlačit výběrem **analyzovat** > **spustit analýzu kódu a potlačit aktivních problémů**.
 >
 > ![Spustit analýzu kódu a potlačit problémy v sadě Visual Studio](media/suppress-active-issues.png)
 

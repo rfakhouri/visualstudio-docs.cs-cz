@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8464ecd96234511017953b6bc0dce7fabdef810b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796729"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222007"
 ---
 # <a name="introducing-live-unit-testing"></a>Představujeme Live Unit Testing
 
-Live Unit Testing je technologie, která je k dispozici v sadě Visual Studio 2017 verze 15.3, který se spustí testy jednotky automaticky v reálném čase při provádění změn kódu. Live Unit Testing:
+Live Unit Testing je technologie, která byla zavedena v sadě Visual Studio 2017. To spustí testy jednotky automaticky v reálném čase při provádění změn kódu. Live Unit Testing:
 
 - Umožňuje Refaktorujte a změna kódu s větší jistotou. Live Unit Testing automaticky spustí všechny ovlivněné testy, při úpravě kódu k zajištění, že vaše změny nenaruší testy.
 
@@ -31,7 +31,7 @@ Další informace o Live Unit Testing:
 
 - Projděte si úvodní kurz [začít pracovat s Live Unit Testing v sadě Visual Studio](live-unit-testing-start.md).
 
-- Přečtěte si podrobné dokumentaci [pomocí Live Unit Testing s Visual Studio 2017 Enterprise Edition](live-unit-testing.md).
+- Přečtěte si podrobné dokumentaci [pomocí Live Unit Testing s Visual Studio Enterprise Edition](live-unit-testing.md).
 
 - Přečtěte si [Live Unit Testing – nejčastější dotazy](live-unit-testing-faq.md) se dozvíte, co je nového v Live Unit Testing, jakož i informace o tipy a techniky pro pomocí Live Unit Testing.
 
@@ -40,5 +40,6 @@ Další informace o Live Unit Testing:
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>Související prostředky
+
 - [Kód testovací nástroje](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Testování částí kódu](unit-test-your-code.md)
