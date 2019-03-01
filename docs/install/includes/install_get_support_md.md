@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 19f9c5ea57fb6d7f9cf1de779a8c6e938b3757f8
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 836b3c2e351062474d398b67fb9c543e6512a75e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307801"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56963338"
 ---
 ## <a name="get-support"></a>Získat podporu
 
@@ -15,6 +15,6 @@ Nabízíme také [ **živý chat** ](https://visualstudio.microsoft.com/vs/suppo
 
 Tady je několik dalších možností podpory:
 
-* Hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
+* Hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../../ide/how-to-report-a-problem-with-visual-studio.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Navrhnout funkci sledování problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
 * Použití vaší [Githubu](https://github.com/) účet ke komunikaci s námi a dalších Visual Studio získávají vývojáři v [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio).

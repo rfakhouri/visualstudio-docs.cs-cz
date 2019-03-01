@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7a44a46f1e3b03d5b2f583f0e480089d56295950
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946272"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007251"
 ---
 # <a name="team-explorer-reference"></a>Referenční dokumentace Team Explorer
 
@@ -82,7 +82,7 @@ Zobrazit [Add/zobrazit soubory a složky](/azure/devops/repos/tfvc/add-files-ser
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> Je tu nový [prostředí pracovních položek](/azure/devops/boards/work-items/set-work-item-experience-vs) v sadě Visual Studio. 2019 ve verzi Preview 1. Informace o zobrazení pracovních položek v sadě Visual Studio. 2019 ve verzi Preview 1, naleznete v tématu [zobrazení a přidání pracovních položek](/azure/devops/boards/work-items/view-add-work-items).
+> Je tu nový [prostředí pracovních položek](/azure/devops/boards/work-items/set-work-item-experience-vs) v aplikaci Visual Studio 2019. Informace o zobrazení pracovních položek v aplikaci Visual Studio 2019 najdete v tématu [zobrazení a přidání pracovních položek](/azure/devops/boards/work-items/view-add-work-items).
 
 ::: moniker-end
 

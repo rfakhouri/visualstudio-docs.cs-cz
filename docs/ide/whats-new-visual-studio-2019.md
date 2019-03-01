@@ -2,7 +2,7 @@
 title: Novinky v sadě Visual Studio 2019
 titleSuffix: ''
 description: Další informace o nových funkcích sady Visual Studio 2019.
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,19 +14,19 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e73dd3b39616d9c1840db3ea26feb518a97e6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 5fdde6a34d3985c0e77cc9e84c58618a093ca365
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954410"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007271"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
 **Aktualizováno pro [Release Candidate (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Stáhněte si verzi RC:](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[Stáhněte si verzi RC:](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 Visual Studio 2019 zahrnuje mnoho Obecná vylepšení spolu s novými funkcemi, které optimalizovat produktivitu a spolupráci mezi týmy. Ať už používáte Visual Studio poprvé nebo jste dosud používali ho let, budete moct využívat jeho funkce pro všechny aspekty životního cyklu vývoje&mdash;z zjednodušené vytváření a kód stavu řízení projektů, tým – a spolupráci pracovní postupy open source.<br/><br/>
 
@@ -39,7 +39,7 @@ Tady je podrobný rekapitulace toho, co má Visual Studio nabízí:
 * **[Průběžné inovace](#continuous-innovation)**. Kód inteligentní s podporou inteligentní, s využitím cloudu.
 
 > [!NOTE]
-> Úplný seznam nových funkcí a funkcí v sadě Visual Studio. 2019 RC najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes/).
+> Úplný seznam nových funkcí a funkce v aplikaci Visual Studio 2019, najdete v článku [poznámky k verzi RC](/visualstudio/releases/2019/release-notes/) a [poznámky k verzi Preview 4](/visualstudio/releases/2019/release-notes-preview/). Další informace o obou těchto nedávno vydané aktualizace, najdete v článku [Visual Studio. 2019 Release Candidate nyní k dispozici](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/) blogový příspěvek.
 
 ## <a name="personal-and-team-productivity"></a>Osobní a produktivitu týmu
 

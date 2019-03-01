@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952915"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007173"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Filtrované řešení v sadě Visual Studio
 
-**Nové ve verzi Visual Studio. 2019 Preview 1**
+**Nová funkce v aplikaci Visual Studio 2019**
 
-Velké vývojářské týmy se často spolupracovat pomocí jediného velkých řešení s mnoha projektů. Jednotliví vývojáři však obvykle fungují na malou podmnožinu těchto projektů. Kvůli zvýšení výkonu při otevírání velkých řešení se Visual Studio. 2019 ve verzi Preview 1 představuje *filtrování řešení*. Filtrování umožňuje otevření řešení s pouze vybrané projekty řešení. Načítání dílčích projektů v řešení snižuje načtení řešení, sestavení a testování, čas spuštění a umožňuje víc zaměřené revize.
+Velké vývojářské týmy se často spolupracovat pomocí jediného velkých řešení s mnoha projektů. Jednotliví vývojáři však obvykle fungují na malou podmnožinu těchto projektů. Kvůli zvýšení výkonu při otevírání velkých řešení se Visual Studio 2019 zavádí *filtrování řešení*. Filtrování umožňuje otevření řešení s pouze vybrané projekty řešení. Načítání dílčích projektů v řešení snižuje načtení řešení, sestavení a testování, čas spuštění a umožňuje víc zaměřené revize.
 
 K dispozici jsou následující funkce:
 

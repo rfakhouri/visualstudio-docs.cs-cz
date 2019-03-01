@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909203"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007355"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Postupy: Vygenerování dat metrik kódu
 
@@ -25,6 +25,8 @@ Můžete generování výsledků metrik kódu pro jeden nebo více projektů neb
 Kromě toho můžete nainstalovat [balíček NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) , který obsahuje čtyři metriky kódu [analyzátor](roslyn-analyzers-overview.md) pravidla: CA1501 CA1502, CA1505 a CA1506. Tato pravidla jsou ve výchozím nastavení zakázané, ale můžete povolit jim **Průzkumníku řešení** nebo [sada pravidel, která](using-rule-sets-to-group-code-analysis-rules.md) souboru.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE metriky kódu
+
+Generovat metriky kódu pro jeden nebo více vašich projektů otevřených v integrovaném vývojovém prostředí pomocí **analyzovat** > **vypočítat metriky kódu** nabídky.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generování výsledků metrik kódu pro celé řešení
 
@@ -45,6 +47,16 @@ Výsledky jsou generovány a **výsledků metrik kódu** se zobrazí okno. Chcet
 1. Na panelu nabídek zvolte **analyzovat** > **vypočítat metriky kódu** > **pro vybrané projekty**.
 
 Výsledky jsou generovány a **výsledků metrik kódu** se zobrazí okno. Chcete-li zobrazit detaily výsledků, rozbalte stromovou strukturu v **hierarchie**.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> **Vypočítat metriky kódu** příkaz nefunguje pro projekty .NET Core a .NET Standard. Chcete-li vypočítat metriky kódu pro projekt .NET Core nebo .NET Standard, můžete:
+>
+> - Vypočítat metriky kódu z [příkazového řádku](#command-line-code-metrics) místo
+> - upgrade na Visual Studio 2019
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Metriky kódu příkazového řádku
 
