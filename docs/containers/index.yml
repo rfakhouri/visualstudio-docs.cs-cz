@@ -1,0 +1,130 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: b4f58ccc019571894c0f2b3eca4df0e59c6bdbbb
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223889"
+documentType: LandingData
+title: Nástroje kontejneru sady Visual Studio
+metadata:
+  title: Dokumentace k dockeru kontejneru vývojové nástroje
+  description: Zjistěte, jak k vytváření a správě kontejnerových aplikací a služeb. Získejte dokumentaci, ukázkový kód, kurzy a další.
+  author: ghogen
+  manager: jillfra
+  ms.prod: visual-studio-windows
+  ms.technology: vs-azure
+  ms.topic: landing-page
+  ms.date: 02/15/2019
+  ms.author: ghogen
+sections:
+- title: ''
+  items:
+  - type: paragraph
+    text: Prozkoumejte nástroje Docker a Kubernetes a služeb Azure ke správě kontejnerových vývojových projektů.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: docker-tools.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_docker.svg
+      title: 'Rychlý start: Docker v sadě Visual Studio'
+    - href: docker-tools.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_docker.svg
+      title: Vícekontejnerových aplikací pomocí Docker Compose
+    - href: /visualstudio/install/build-tools-container
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+      title: Spuštění nástroje pro vytváření v kontejneru
+    - href: /visualstudio/deployment/tutorial-kubernetes-tools
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
+      title: Visual Studio Tools for Kubernetes
+- title: .NET Core
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /dotnet/core/docker/intro-net-docker
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
+      title: Úvod k .NET a Dockeru
+    - href: /dotnet/core/docker/docker-basics-dotnet-core
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_docker.svg
+      title: Základy Dockeru
+    - href: /dotnet/core/docker/building-net-docker-images
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+      title: Sestavit Image Dockeru
+    - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_web.svg
+      title: Nástroje Dockeru technologie ASP.NET
+    - href: https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_azure.svg
+      title: Nasazení do služby Azure Container Registry
+    - href: /dotnet/standard/containerized-lifecycle-architecture/
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+      title: Průvodce architekturou Mikroslužeb
+- title: Azure
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /azure/aks
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/ContainerService.svg
+      title: Azure Kubernetes Service (AKS)
+    - href: /azure/dev-spaces
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg
+      title: Azure Dev mezery
+    - href: /azure/container-instances/container-instances-tutorial-prepare-app
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/ContainerInstances.svg
+      title: Azure Container Instances
+    - href: /azure/container-registry/
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/container-registry.svg
+      title: Azure Container Registry
+    - href: /azure/docker
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_docker.svg
+      title: Docker v Azure
+- title: Videa
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_video.svg
+      title: 'Kanál 9: Vývoj pro docker'
