@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692057"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223556"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -604,7 +604,7 @@ Chcete-li zakázat upgradem projektu, použijte `NoUpgrade` hodnotu:
 
 ## <a name="project-cache-and-extensibility"></a>Mezipaměť projektů a rozšíření
 
-Ke zlepšení výkonu při práci s velkými řešeními C++ v sadě Visual Studio 2017 [projektu mezipaměti](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/) byla zavedena. Se implementuje jako databáze SQLite naplněný daty projektu a pak použije k načtení projektů bez projekty MSBuild nebo CPS načtení do paměti.
+Ke zlepšení výkonu při práci s velkými řešeními C++ v sadě Visual Studio 2017 [projektu mezipaměti](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) byla zavedena. Se implementuje jako databáze SQLite naplněný daty projektu a pak použije k načtení projektů bez projekty MSBuild nebo CPS načtení do paměti.
 
 Vzhledem k tomu, že neexistují žádné objekty CPS k dispozici pro projekty .vcxproj načten z mezipaměti, komponent MEF rozšíření, který importovat `UnconfiguredProject` nebo `ConfiguredProject` nelze vytvořit. Pro podporu rozšiřitelnosti, mezipaměti projekt nepoužívá k sadě Visual Studio zjistí, zda projekt používá (nebo je pravděpodobně bude používat) MEF rozšíření.
 
