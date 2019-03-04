@@ -1,12 +1,12 @@
 ---
-title: ID pracovního vytížení a komponenta Visual Studio Test Professional 2017
+title: ID pracovního vytížení a komponenta Visual Studio Test Professional
 titleSuffix: ''
 description: Pomocí ID pracovního vytížení a komponenta Visual Studio poskytuje integrované testovací nástroje pro všeobecně testery
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,17 +14,17 @@ helpviewer_keywords:
 - install Visual Studio, administrator guide
 ms.service: ''
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.workload:
-- multiple
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 281b41da594e56af4e66751aec47718cf98f7fd6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e8235ac3d123f33add52934112f81f0be9772294
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953270"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323329"
 ---
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Složka komponenty Visual Studio Test Professional 2017
+# <a name="visual-studio-test-professional-component-directory"></a>Složka komponenty Visual Studio Test Professional
 
 Tabulky v tomto seznamu stránce ID, můžete použít k instalaci sady Visual Studio pomocí příkazového řádku nebo je můžete zadat jako závislost v manifestu VSIX. Všimněte si, že přidáme další součásti vydaných aktualizací sady Visual Studio.
 

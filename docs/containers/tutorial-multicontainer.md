@@ -8,12 +8,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 168afe9d5188b445260f9143967cc022771917d9
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 3bf7b25ccbcb964572c3ae302523cd5a540829c8
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223895"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323527"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Kurz: Vytvoření vícekontejnerové aplikace pomocí Docker Compose
 
@@ -23,13 +23,12 @@ V tomto kurzu se dozvíte, jak spravovat více než jednoho kontejneru a komunik
 
 ::: moniker range="vs-2017"
 * [Desktop dockeru](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/) s **vývoj pro Web**, **nástroje Azure** úlohy, nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
-
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) s **vývoj pro Web**, **nástroje Azure** úlohy, nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 * [Desktop dockeru](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview) s **vývoj pro Web**, **nástroje Azure** úlohy, a/nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) s **vývoj pro Web**, **nástroje Azure** úlohy, a/nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
 * [Aktualizace 2.2 vývojové nástroje .NET core](https://dotnet.microsoft.com/download/dotnet-core/2.2) pro vývoj aplikací pomocí .NET Core 2.2
 ::: moniker-end
 

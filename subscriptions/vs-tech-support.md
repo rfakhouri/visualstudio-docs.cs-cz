@@ -2,83 +2,104 @@
 title: Výhody technické podpory
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
-ms.topic: conceptual
+manager: lank
+ms.date: 2/13/2019
+ms.topic: Get-Started-Article
 description: Zjistěte, jak aktivovat výhody technické podpory součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e79af99783d9e7fb8c43f72245dab828fea1736d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 7b0968532a1feffb667bb0cd2f3e04f1deb02bb5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953834"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323475"
 ---
-# <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivovat výhody technické podpory v předplatných sady Visual Studio
+# <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivace a používání výhody technické podpory v předplatných sady Visual Studio
 
-Řešení problémů typu break-fix v neprodukčních prostředích. (Potřeba tuto výhodu aktivovat před odesláním žádosti o podporu.) Standardní a roční Cloudová předplatná sady Visual Studio Enterprise přijímat čtyři incidenty, zatímco standardní a roční Cloudová předplatná sady Visual Studio Professional zobrazí dva incidenty.
+Výhody technické podpory v předplatných sady Visual Studio je pro řešení problémů typu break-fix v **neprodukčních prostředích** produktů, které jsou stále ve fázi hlavní fáze technické podpory [cyklu podpory ](https://support.microsoft.com/lifecycle/search). Standardní a roční Cloudová předplatná sady Visual Studio Enterprise přijímat čtyři incidenty při Visual Studio Professional, standard a roční Cloudová předplatná přijímat dva incidenty, dobu až jednoho roku od aktivace výhodu. Výhoda aktivace musí nastat při aktuální předplatné. 
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na https://visualstudio.microsoft.com/vs/pricing/ a prozkoumejte různé možnosti pro nákup předplatných sady Visual Studio.
 
 > [!NOTE]
 > Ne všechny odběry na dané úrovni nárok na incidenty podpory. Odběry, které získali prostřednictvím FTE, NFR, MPN, MCT a dalších programů neobdrží incidenty podpory. Pokud vaše předplatné není způsobilá k přijímání incidenty technické podpory, dlaždice technické podpory se už nebude k dispozici jedna z jeho výhod.
->
-> [!div class="mx-imgBorder"]
-> ![Dlaždice výhody technické podpory](_img/vs-tech-support/vs-tech-support-tile.png)
 
+**Odeslat žádost o podporu používání benefitu, je nutné ji nejprve aktivovat.  Postupujte podle kroků v další části a dokončete aktivaci.**
 
-1. Pokud chcete začít používat vaše výhody technické podpory, přejděte na https://my.visualstudio.com/Benefits, přejděte dolů k části Podpora a na dlaždici technické podpory, klikněte na tlačítko **chatu k aktivaci**.
-2. Tím zahájíte Chat, pokud se zástupcem, kdo může vytvořit ID smlouvy a přístupové ID a ty se vám poskytují.
+## <a name="how-to-activate-the-benefit"></a>Jak aktivovat výhody
+1. Přejděte na https://my.visualstudio.com/Benefits, přejděte dolů k části Podpora a na dlaždici technické podpory, klikněte na tlačítko **chatu k aktivaci**. 
+    > [!div class="mx-imgBorder"]
+    > ![Dlaždice výhody technické podpory](_img/vs-tech-support/vs-tech-support-tile.png)
+2. Tím zahájíte Chat, pokud se zástupce, který může vytvářet vaše **ID smlouvy** a **přístupové ID** a ty se vám poskytují e-mailem, takže je nutné pro svoje záznamy. 
+
 3. K dokončení procesu budete muset poskytnout zástupce pomocí:
+   - Vaše země
+   - Název společnosti 
+   - Celé jméno.
    - E-mailovou adresu, kterou používáte k přihlášení k vašemu předplatnému
+   - Vaše telefonní číslo
    - ID předplatného, který se nachází na [předplatná](https://my.visualstudio.com/subscriptions) kartu.
 
    > [!div class="mx-imgBorder"]
    > ![Výhody technické podpory najít ID předplatného](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
+4. Po dokončení procesu, obdržíte e-mail obsahující vaše **ID smlouvy** a **přístupové ID** budete používat při vytváření incidentu podpory. 
 
 > [!NOTE]
 > K aktivaci účtu podpory v jiném jazyce než angličtině, vyberte svou zemi z [tento seznam](https://support.microsoft.com/help/14084/activate-support-contract).
 
 
-## <a name="how-to-submit-an-incident"></a>Jak odeslat incident
+## <a name="how-to-submit-an-incident-using-your-benefit"></a>Postup pro odeslání incidentu s využitím vaše výhody
 
-Jednou máte ID smlouvy a přístupové ID nastavení, když budete potřebovat podporu, můžete volat na číslo technické podpory pro vaši zemi, odešlete incident podpory [online](http://support.microsoft.com/oas/), nebo odešlete incident prostřednictvím webu Azure portal. Pokud chcete získat podporu po telefonu, stále můžete odeslat incident online a odborné pomoci společnosti Microsoft se zpětné volání.
+Jakmile budete mít vaše **ID smlouvy** a **přístupové ID** nastavení, můžete ho odeslat incident technické podpory [online](http://support.microsoft.com/oas/) (přihlášení vyžaduje), nebo prostřednictvím [Azure portál](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) , nebo pomocí volání na číslo technické podpory pro vaši zemi. Pokud odešlete incident online, máte možnost odborné pomoci společnosti Microsoft pro volání zpět.
 
-### <a name="submit-an-incident-online"></a>Odeslání incidentu online
+### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Už máte ID smlouvy a přístupové ID přidružený účet použitý k přihlášení k odešlete incident technické podpory online?  
 
-1. K [odeslání incidentu online](http://support.microsoft.com/oas/), zadejte produkt, kterým potřebujete pomoci. Můžete vybrat z různých seznamů, nebo Hledat podle názvu. Incident můžete odeslat z pro Visual Studio Enterprise 2017, například klikněte na **sady Visual Studio** v **vývojářské nástroje** skupiny.
+Při odeslání incidentu online, budete nejprve vyzváni k přihlášení. Přihlaste se pomocí účtu, které už znáte, je spojen s ID smlouvy a přístupové ID. Váš stávající plán podpory prospěch přidružené k vašemu účtu se zobrazí v kroku 3 v pracovním postupu podpory. Jednoduše vyberte plán a pokračujte a odešlete váš případ. Můžete odesílat incidenty až do limitu uvedené v plánu nebo do data vypršení platnosti tohoto plán, podle toho, co nastane dřív. Jakmile zbývající incidenty zobrazit "0", nebo pokud vyprší platnost vašeho plánu, není už aktivní.  
+
    > [!div class="mx-imgBorder"]
-   > ![Technická podpora vyberte incidentu produktu](_img/vs-tech-support/vs-tech-support-select-product.png)
+   > ![Technická podpora výhodu odesílání incidentů na krok 3](_img/vs-tech-support/vs-tech-support-step3.png)
 
-2. Vyberte produkt, pro který potřebujete podporu. (Například, klikněte na **Visual Studio Enterprise 2017** v seznamu produktů Visual Studio.)
-3. Na **vytvořit incident** stránce, z rozevíracího seznamu vyberte typ příslušný problém. V našem příkladu jsme vybrali **integrované vývojové prostředí (IDE)**.
+### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Pomocí ID smlouvy a přístupové ID, při odesílání incidentu (počáteční použití)
+
+#### <a name="submitting-an-incident-online"></a>Odeslání incidentu online
+
+Při odeslání incidentu online, budete nejprve vyzváni k přihlášení. Pomocí rozevíracího seznamu vyberte produkt, který budete potřebovat pomoc s. Například pokud chcete odeslat vyberte incident pro Visual Studio Enterprise 2017 **vývojářské nástroje** řady a pak vyberte **Visual Studio 2017** produkt a klikněte na tlačítko **sady Visual Studio Enterprise 2017** jako verze.
+
+1. Po výběru produktů, pro který potřebujete podporu, klikněte na tlačítko **Další**.
+
    > [!div class="mx-imgBorder"]
-   > ![Výhody technické podpory vytvořit Incident](_img/vs-tech-support/vs-tech-support-create-incident.png)
+   > ![Technická podpora výhodu odesílání incidentů na krok 1 – produktu](_img/vs-tech-support/vs-tech-support-step1.png)
 
-4. Klikněte na tlačítko **kategorie** , který nejlépe vyhovuje svůj dotaz nebo problém. V našem příkladu jsme vybrali **navrhovat nástroje.**
-5. Klikněte na tlačítko **požadavek na spuštění**.
-6. Na další stránce budete vyzváni k výběru způsob platby.
-   - Zvolte **pomocí předplatného sady Visual Studio**.
-   - Klikněte na tlačítko **použít jiné smlouvy**
-   - Zadejte ID a ID smlouvy přístup
-   - Klikněte na tlačítko **přidat**
-7. Jakmile se přidala smlouva o podpoře, se zobrazí v seznamu smluv podpory Professional. Vyberte a klikněte na tlačítko **pokračovat**.
+2. Popište svůj problém a klikněte na tlačítko **Další**.
+
    > [!div class="mx-imgBorder"]
-   > ![Platby výhody technické podpory](_img/vs-tech-support/vs-tech-support-payment.png)
+   > ![Technická podpora výhodu odesílání incidentů na krok 2 – potíže](_img/vs-tech-support/vs-tech-support-step2.png)
 
-8. Zadejte své kontaktní informace a upřednostňovaný způsob kontaktování a klikněte na tlačítko **pokračovat**.
-9. Zadejte název pro incident technické podpory a potom popište svůj problém.
-10. Odpovězte na stručný několik otázek k určení závažnosti problému.
-11. Klikněte na zaškrtávací políčko a přijměte podmínky služby.
-12. Klikněte na tlačítko **odeslat** odeslat svůj problém.
-13. Uvidíte potvrzení, že incident se úspěšně odeslal. Agent se přiřadí incident a vás bude kontaktovat vás jeho použitím způsob kontaktování, který jste vybrali. Doba odezvy pro méně náročné problémy je 8 hodin. Zobrazí se číslo žádosti o služby a bude spolupracovat s vámi na váš problém vyřešit.
+3. Na stránce "Plán podpory" přejděte dolů k položce **přidat nebo nákupu plánu podpory**, rozbalte ho pomocí kláves Šipka vpravo a klikněte na tlačítko **přidat smlouvy**.
 
-### <a name="submit-an-incident-by-phone"></a>Odesláním případu prostřednictvím telefonu
+   > [!div class="mx-imgBorder"]
+   > ![Technická podpora výhody oznámení případu - přidat smlouvy](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-Pokud chcete vytvořit incident podpory po telefonu, vyhledejte [péče](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) telefonní číslo pro vaši zemi.
+4. Zadejte vaše **získat přístup k ID** a **smlouvy ID**.  Klikněte na **Přidat**.
 
-Ujistěte se prosím, že máte ID smlouvy a přístupové ID, které jsou k dispozici při volání.
 
-### <a name="submit-an-incident-within-the-azure-portal"></a>Odeslání incidentu na portálu Azure portal
+   > [!div class="mx-imgBorder"]
+   > ![Technická podpora výhody oznámení případu - přidat ID smlouvy](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
+
+5. Po přidání smlouvy, se zobrazí v části **vybrat plán podpory** v horní části. Termín "MSDN" v názvu bude obsahovat váš plán. Zvolte ho, posuňte se dolů a klikněte na tlačítko **Další**. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Technická podpora výhody předkládání incidentů – vyberte plán](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+6. Dokončete zbývající kroky (závažnost, kontaktní údaje, zkontrolujte).   Jakmile odešlete incident, uvidíte potvrzení, že byla úspěšně odeslána incident a mohou nahrávat soubory do případu. Podpora Professional se přiřadí incident a vás bude kontaktovat, chcete-li vyřešit váš problém pomocí způsob kontaktu, který jste vybrali. 
+
+#### <a name="submit-an-incident-by-phone"></a>Odesláním případu prostřednictvím telefonu
+
+Pokud chcete vytvořit incident podpory po telefonu, vyhledejte [péče](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) telefonní číslo pro vaši zemi. Ujistěte se prosím, že máte ID smlouvy a přístupové ID, které jsou k dispozici při volání.
+
+
+#### <a name="submit-an-incident-within-the-azure-portal"></a>Odeslání incidentu na portálu Azure portal
 
 Pokud chcete používat vaše výhoda Visual Studio předplatné technickou podporu pro problémy týkající se Azure, je potřeba propojit ID smlouvy a přístupové ID vašeho předplatného Azure.
 
@@ -101,7 +122,5 @@ Pokud chcete používat vaše výhoda Visual Studio předplatné technickou podp
 
 <sup>2</sup> *zahrnuje: Imagine Standard.*
 
-> [!NOTE]
-> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
-
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
+

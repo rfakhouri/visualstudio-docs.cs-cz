@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944257"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323462"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty příkazového řádku pro Help Content Manager
 
@@ -57,7 +57,7 @@ Následující tabulka definuje přepínače a argumenty, které můžete použ�
 |/Membership|Ne|-   **Minimální**– nainstaluje minimální sadu obsahu nápovědy na základě jednotky SKU, určíte pomocí přepínače/skuid. Mapování mezi SKU a sadou obsahu je přístupný v rozhraní API služby.<br />-   **Doporučené**– nainstaluje sadu Doporučené knihy pro skladovou Položku, kterou můžete určit pomocí argumentu/skuid. Zdroj instalace je rozhraní API služby nebo *. MSHA*.<br />-   **Úplné**– nainstaluje celou sadu knih pro skladovou Položku, kterou můžete určit pomocí argumentu/skuid. Zdroj instalace je rozhraní API služby nebo *. MSHA*.|
 |/ locationpath|Ne|Určuje výchozí složku pro místní obsah nápovědy. Tento přepínač musí používat jenom k instalaci nebo přesunutí obsahu. Pokud zadáte tento přepínač, musíte zadat také/silent přepnout.|
 |/silent|Ne|Nainstaluje nebo odebere obsah nápovědy bez výzvy pro uživatele nebo bez zobrazení uživatelského rozhraní, včetně ikonu v oznamovací oblasti. Výstup je zaznamenán v souboru *% Temp %* adresáře. **Důležité:**  Pro tichou instalaci obsahu, je nutné použít digitálně podepsané *.cab* soubory není *.mshc* soubory.|
-|/launchingApp|Ne|Definuje kontext aplikace a katalogu při spuštění programu Help viewer bez nadřazené aplikace. Argumenty pro tento přepínač jsou *CompanyName*, *ProductName*, a *číslo_verze* (například `/launchingApp Microsoft,VisualStudio,15.0`).<br /><br /> To je vyžadováno pro instalaci obsahu s/silent parametru.|
+|/launchingApp|Ne|Definuje kontext aplikace a katalogu při spuštění programu Help viewer bez nadřazené aplikace. Argumenty pro tento přepínač jsou *CompanyName*, *ProductName*, a *číslo_verze* (například `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> To je vyžadováno pro instalaci obsahu s/silent parametru.|
 |/ wait *sekund*|Ne|Pozastaví instalace, odinstalace a obnovení operací. Pokud pro katalog již probíhá operace, proces bude čekat zadaný počet sekund, abyste mohli pokračovat. Použijte hodnotu 0 pro nekonečně dlouhé čekání.|
 |/?|Ne|Obsahuje seznam přepínačů a jejich popisy pro nástroj příkazového řádku pro Help Content Manager.|
 

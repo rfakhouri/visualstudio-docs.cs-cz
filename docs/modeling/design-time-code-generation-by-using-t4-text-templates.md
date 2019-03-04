@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223071"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323420"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programového kódu a další soubory v projektu sady Visual Studio. Obvykle píšete šablony tak, aby se lišily kód, který se generují podle dat z *modelu*. Model je soubor nebo databázi, která obsahuje základní informace o podle požadavků vaší aplikace.
@@ -284,17 +284,20 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```
 
 > [!TIP]
->  Textové šablony běží ve vlastní doméně aplikace a služby jsou dostupné přes zařazování. V této situaci je spolehlivější než GetService() GetCOMService().
+> Textové šablony běží ve vlastní doméně aplikace a služby jsou dostupné přes zařazování. V této situaci je spolehlivější než GetService() GetCOMService().
 
 ## <a name="Regenerating"></a> Znova se generuje kód automaticky
- Několik souborů v řešení sady Visual Studio se obvykle generují s jeden vstupní model. Každý soubor se generuje z vlastní šablony, ale šablony, které všechny odkazovat do stejného modelu.
 
- Pokud se změní modelu zdroje, byste měli znovu spustit všechny šablony v řešení. Chcete-li to provést ručně, zvolte **Transformovat všechny šablony** na **sestavení** nabídky.
+Několik souborů v řešení sady Visual Studio se obvykle generují s jeden vstupní model. Každý soubor se generuje z vlastní šablony, ale šablony, které všechny odkazovat do stejného modelu.
 
- Pokud jste nainstalovali Visual Studio SDK modelování, může mít všechny šablony transformuje automaticky pokaždé, když provádíte sestavení. Provedete to úpravou souboru projektu (.csproj nebo .vbproj) v textovém editoru a přidejte následující řádky na konci souboru, za jakékoli jiné `<import>` příkazy:
+Pokud se změní modelu zdroje, byste měli znovu spustit všechny šablony v řešení. Chcete-li to provést ručně, zvolte **Transformovat všechny šablony** na **sestavení** nabídky.
+
+Pokud jste nainstalovali Visual Studio SDK modelování, může mít všechny šablony transformuje automaticky pokaždé, když provádíte sestavení. Provedete to úpravou souboru projektu (.csproj nebo .vbproj) v textovém editoru a přidejte následující řádky na konci souboru, za jakékoli jiné `<import>` příkazy:
 
 > [!NOTE]
 > SDK transformace textové šablony a Visual Studio SDK modelování jsou nainstalovány automaticky při instalaci konkrétní funkce sady Visual Studio. Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+
+::: moniker range="vs-2017"
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -304,10 +307,25 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>
 ```
 
- Další informace najdete v tématu [generování kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md).
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
+<PropertyGroup>
+   <TransformOnBuild>true</TransformOnBuild>
+   <!-- Other properties can be inserted here -->
+</PropertyGroup>
+```
+
+::: moniker-end
+
+Další informace najdete v tématu [generování kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Odesílání sestav chyb
- Umístit chybové zprávy a upozornění v okně chyb sady Visual Studio, můžete použít tyto metody:
+
+Umístit chybové zprávy a upozornění v okně chyb sady Visual Studio, můžete použít tyto metody:
 
 ```
 Error("An error message");

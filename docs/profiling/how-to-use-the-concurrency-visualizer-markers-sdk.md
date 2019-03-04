@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76cc490523325c8334ad7ada3273f101e0bbc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626125"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323533"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Postupy: Použití SDK značek Vizualizéru souběžnosti
 Toto téma ukazuje, jak použít sada Vizualizátor souběžnosti SDK k vytvoření rozsahy a napsat příznaky, zprávy a upozornění.
@@ -78,7 +78,7 @@ Toto téma ukazuje, jak použít sada Vizualizátor souběžnosti SDK k vytvoře
 
      ![Vizualizátor souběžnosti s 3 vlastní značky řady](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
-### <a name="to-use-visual-basic-or-c"></a>Použití jazyka Visual Basic nebo C# #
+### <a name="to-use-visual-basic-or-c"></a>Použití jazyka Visual Basic nebo C\#
 
 1.  Přidání podpory sada Vizualizátor souběžnosti SDK do vaší aplikace. Další informace najdete v tématu [sada Vizualizátor souběžnosti SDK](../profiling/concurrency-visualizer-sdk.md).
 

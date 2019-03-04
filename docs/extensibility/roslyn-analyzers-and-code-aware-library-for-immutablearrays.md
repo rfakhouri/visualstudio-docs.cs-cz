@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843309"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323637"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny pro řešení ImmutableArrays
 
@@ -298,7 +298,7 @@ V dalším kroku metodu načte kořen dokumentu, a protože to může zahrnovat 
 
 Nyní můžete stisknout **F5** pro spuštění vašeho analyzátor ve druhé instanci aplikace Visual Studio. Otevřete konzoly projekt, který jste použili dříve. Teď byste měli vidět žárovky objevit, ve kterém je váš nový výraz vytvoření objektu pro `ImmutableArray<int>`. Pokud stisknete **Ctrl**+**.** (interval) pak se zobrazí váš kód opravit, a zobrazí se v verzi preview rozdíl automaticky generovaného kódu v žárovky uživatelského rozhraní. To vytvoří Roslyn.
 
-**Tipu pro:** Pokud spustíte druhou instanci aplikace Visual Studio a nevidíte žárovka s kód opravit, budete muset vymazat mezipaměť komponenty Visual Studio. Vymazání mezipaměti vynutí Visual Studio a znovu zkontrolujte součásti, takže sady Visual Studio by měl pak nejnovější komponenty. Nejdřív vypněte druhou instanci aplikace Visual Studio. Potom v **Windows Explorer**, přejděte na *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. ("15.0" se změní na verzi pomocí sady Visual Studio). Odstranit podadresáři *ComponentModelCache*.
+**Tipu pro:** Pokud spustíte druhou instanci aplikace Visual Studio a nevidíte žárovka s kód opravit, budete muset vymazat mezipaměť komponenty Visual Studio. Vymazání mezipaměti vynutí Visual Studio a znovu zkontrolujte součásti, takže sady Visual Studio by měl pak nejnovější komponenty. Nejdřív vypněte druhou instanci aplikace Visual Studio. Potom v **Windows Explorer**, přejděte na *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. ("16.0" se změní na verzi pomocí sady Visual Studio.) Odstranit podadresáři *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Mluví videa a dokončení projektu kódu
 

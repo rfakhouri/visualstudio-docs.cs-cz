@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc10a43cc5834453e6c5e11e1c7b787903f24c06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0036bb9bf8ef6d0c09fddc2b8ac0a4977c3674c
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909177"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323429"
 ---
 # <a name="extract-an-interface-refactoring"></a>Rozhraní refaktoring extrahovat
 
@@ -29,13 +29,13 @@ Tento refaktoring platí pro:
 
 **Co:** Umožňuje vytvořit rozhraní pomocí stávajících členů ze třídy, struktury nebo rozhraní.
 
-**Kdy:** Máte několik třídy, struktury nebo rozhraní s metodami, které by mohly být provedeny běžné a používá jiné třídy, struktury nebo rozhraní.
+**Kdy:** Budete mít členové třídy, struktury nebo rozhraní, které by mohly být zděděny jiné třídy, struktury nebo rozhraní.
 
 **Proč:** Rozhraní jsou skvělé konstrukce pro objektově orientované vzory. Představte si tříd pro různé zvířata (Dog Cat, Bird), které by mohly běžné metody, jako je například Eat nápoje, přejít do režimu spánku. Použití rozhraní jako IAnimal by umožnilo pes, Cat a Bird mají společnou "podpis" pro tyto metody.
 
-## <a name="how-to"></a>Postupy
+## <a name="extract-an-interface-refactoring"></a>Rozhraní refaktoring extrahovat
 
-1. Zvýrazněte název třídy pro akci provést, nebo jenom někam umístit kurzor textu v názvu třídy.
+1. Umístěte kurzor na název třídy.
 
    - C#:
 
@@ -48,7 +48,7 @@ Tento refaktoring platí pro:
 2. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-      - Stisknutím klávesy **Ctrl + R**, pak **Ctrl + I**. (Všimněte si, že klávesová zkratka může být jiný platformě, na který profil vyberete.)
+      - Stisknutím klávesy **Ctrl + R**, pak **Ctrl + I**. (Klávesová zkratka může lišit na základě profilu, který jste vybrali.)
       - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky a vybereme **extrahování rozhraní** z automaticky otevíraného okna okno náhledu.
    - **Myši**
       - Vyberte **Upravit > Refaktorovat > extrahování rozhraní**.
@@ -56,13 +56,13 @@ Tento refaktoring platí pro:
 
 3. V **extrahování rozhraní** dialogové okno, která se otevře, zadejte informace o dotaz:
 
-   ![extrahování rozhraní](media/extractinterface-dialog-cs.png)
+   ![extrahování rozhraní](media/extractinterface-dialog-same-file.png)
 
 
    | Pole | Popis |
    | - | - |
-   | **Název nového rozhraní** | Název rozhraní, který se má vytvořit. To bude ve výchozím nastavení můžu*ClassName*, kde *ClassName* je název třídy, které vyberete nahoře. |
-   | **Nový název souboru** | Název souboru, který se vygeneruje, která bude obsahovat rozhraní. Jako název rozhraní, to budou ve výchozím nastavení můžu*ClassName*, kde *ClassName* je název třídy, které vyberete nahoře. |
+   | **Název nového rozhraní** | Název rozhraní, který se má vytvořit. Název bude ve výchozím nastavení můžu*ClassName*, kde *ClassName* je název třídy, které vyberete nahoře. |
+   | **Nový název souboru** | Název generovaného souboru, který bude obsahovat rozhraní. Jak je názvem rozhraní, tento název bude ve výchozím nastavení můžu*ClassName*, kde *ClassName* je název třídy, které vyberete nahoře. Můžete také vybrat možnost **přidat do aktuálního souboru**. |
    | **Vybrat veřejné členy rozhraní** | Položky, které chcete extrahovat do rozhraní. Můžete vybrat libovolný počet podle potřeby. |
 
 
@@ -81,3 +81,4 @@ Tento refaktoring platí pro:
 ## <a name="see-also"></a>Viz také:
 
 - [Refactoring](../refactoring-in-visual-studio.md)
+- [Tipy pro vývojáře .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
