@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926369"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323864"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Zobrazení struktury kódu pomocí různá okna nástrojů
 
@@ -126,7 +126,19 @@ V místní nabídce **hierarchie volání** okno obsahuje následující příka
 
 **Prohlížeče objektů** okno zobrazuje popisy kód ve vašich projektech.
 
-Můžete filtrovat komponenty, které chcete zobrazit pomocí rozevíracího seznamu v horní části okna. Vlastní komponenty mohou obsahovat spustitelné soubory spravovaného kódu, sestavení knihovny, knihovnách typů a *.ocx* soubory. Není možné přidat vlastní komponenty C++. Vlastní nastavení se ukládají do adresáře aplikace uživatele sady Visual Studio *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Můžete filtrovat komponenty, které chcete zobrazit pomocí rozevíracího seznamu v horní části okna. Vlastní komponenty mohou obsahovat spustitelné soubory spravovaného kódu, sestavení knihovny, knihovnách typů a *.ocx* soubory. Není možné přidat vlastní komponenty C++.
+
+::: moniker range="vs-2017"
+
+Vlastní nastavení se ukládají do adresáře aplikace uživatele sady Visual Studio *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Vlastní nastavení se ukládají do adresáře aplikace uživatele sady Visual Studio *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+
+::: moniker-end
 
 Levém podokně **prohlížeče objektů** ukazuje sestavení. Můžete rozbalit sestavení, které chcete zobrazit obory názvů, které obsahují a potom rozbalte obory názvů do zobrazení typů, které obsahují. Když vyberete typ, jeho členy (jako je například vlastnosti a metody) jsou uvedeny v pravém podokně. Pravém dolním podokně zobrazí podrobné informace o vybrané položce.
 

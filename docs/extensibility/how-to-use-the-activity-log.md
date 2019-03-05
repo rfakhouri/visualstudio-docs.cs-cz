@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719272"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324010"
 ---
 # <a name="how-to-use-the-activity-log"></a>Postupy: Použití protokolu aktivit
 Rozšíření VSPackages můžete zapisovat zprávy do protokolu aktivit. Tato funkce je zvláště užitečné pro ladění rozšíření VSPackages v prostředí maloobchodu.
@@ -46,7 +46,9 @@ Rozšíření VSPackages můžete zapisovat zprávy do protokolu aktivit. Tato f
 
 1. Spuštění sady Visual Studio s [/Log](../ide/reference/log-devenv-exe.md) přepínač příkazového řádku ActivityLog.xml zapsat na disk během vaší relace.
 
-2. Po zavření sady Visual Studio, vyhledejte protokol aktivit v podsložce pro Visual Studio data:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.
+2. Po zavření sady Visual Studio, vyhledejte v podsložce pro Visual Studio data protokolu aktivit:
+
+   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. Otevřete protokol aktivit pomocí libovolného textového editoru. Zde je typický položka:
 
@@ -55,11 +57,13 @@ Rozšíření VSPackages můžete zapisovat zprávy do protokolu aktivit. Tato f
    ```
 
 ## <a name="robust-programming"></a>Robustní programování
- Protože protokol aktivit je služba, není k dispozici v konstruktoru VSPackage protokolu aktivit.
 
- Protokol aktivit by si měly opatřit pouze před zápisem do něj. Ukládat do mezipaměti nebo uložení protokolu aktivit pro budoucí použití.
+Protože protokol aktivit je služba, není k dispozici v konstruktoru VSPackage protokolu aktivit.
+
+Protokol aktivit by si měly opatřit pouze před zápisem do něj. Ukládat do mezipaměti nebo uložení protokolu aktivit pro budoucí použití.
 
 ## <a name="see-also"></a>Viz také:
+
 - [/ Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>

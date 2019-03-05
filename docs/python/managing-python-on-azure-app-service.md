@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918920"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324179"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak nastavit prostředí Pythonu ve službě Azure App Service (Windows)
 
@@ -76,7 +76,7 @@ Například po přidání odkazu na `python361x64` (Python 3.6.1 x 64), vaše š
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Nastavení web.config tak, aby odkazoval na interpret Pythonu
 
-Po instalaci rozšíření webu (pomocí portálu nebo šablony Azure Resource Manageru), dále odkazovat vaše aplikace *web.config* soubor pro interpret Pythonu. *Web.config* souboru nastaví na webovém serveru IIS (7 +), o jak zpracovávat požadavky Python prostřednictvím FastCGI nebo HttpPlatform běžící na App Service.
+Po instalaci rozšíření webu (pomocí portálu nebo šablony Azure Resource Manageru), dále odkazovat vaše aplikace *web.config* soubor pro interpret Pythonu. *Web.config* souboru nastaví na webovém serveru IIS (7 +) běžící na App Service, o jak zpracovávat požadavky Python prostřednictvím HttpPlatform (doporučeno) nebo FastCGI.
 
 Začněte tím, že hledání úplnou cestu k rozšíření webu *python.exe*, vytvořte a upravte příslušné *web.config* souboru.
 
@@ -97,6 +97,33 @@ Pokud máte potíže s zobrazuje cestu k rozšíření, najdete ho ručně pomoc
 1. Na stránce služby App Service, vyberte **nástroje pro vývoj** > **konzoly**.
 1. Zadejte příkaz `ls ../home` nebo `dir ..\home` zobrazíte složky nejvyšší úrovně rozšíření *Python361x64*.
 1. Zadejte příkaz podobný `ls ../home/python361x64` nebo `dir ..\home\python361x64` k ověření, že obsahuje *python.exe* a další soubory překladač.
+
+### <a name="configure-the-httpplatform-handler"></a>Konfigurace HttpPlatform obslužné rutiny
+
+Modul HttpPlatform předá připojení soketu přímo do samostatného procesu Pythonu. Tato předávací umožňuje spouštět jakékoli webové servery, jako jsou, ale vyžaduje spouštěcí skript, který spustí místní webový server. Zadejte skript v `<httpPlatform>` prvek *web.config*, kde `processPath` atribut body k interpretu Pythonu rozšíření webu a `arguments` atribut odkazuje na skript a argumentů Chcete poskytnout:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+`HTTP_PLATFORM_PORT` Proměnná prostředí je vidět tady obsahuje port, který váš místní server naslouchat požadavkům na připojení z místního hostitele. Tento příklad také ukazuje, jak vytvořit další proměnné prostředí, v případě potřeby v tomto případě `SERVER_PORT`.
 
 ### <a name="configure-the-fastcgi-handler"></a>Konfigurace obslužná rutina FastCGI
 
@@ -128,33 +155,6 @@ FastCGI je rozhraní, které funguje na úrovni požadavků. Přijímá přícho
 - `WSGI_LOG` je volitelný, ale doporučený pro ladění vaší aplikace.
 
 V tématu [publikovat do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) najdete další podrobnosti o *web.config* obsah pro Bottle, Flask a Django webové aplikace.
-
-### <a name="configure-the-httpplatform-handler"></a>Konfigurace HttpPlatform obslužné rutiny
-
-Modul HttpPlatform předá připojení soketu přímo do samostatného procesu Pythonu. Tato předávací umožňuje spouštět jakékoli webové servery, jako jsou, ale vyžaduje spouštěcí skript, který spustí místní webový server. Zadejte skript v `<httpPlatform>` prvek *web.config*, kde `processPath` atribut body k interpretu Pythonu rozšíření webu a `arguments` atribut odkazuje na skript a argumentů Chcete poskytnout:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-`HTTP_PLATFORM_PORT` Proměnná prostředí je vidět tady obsahuje port, který váš místní server naslouchat požadavkům na připojení z místního hostitele. Tento příklad také ukazuje, jak vytvořit další proměnné prostředí, v případě potřeby v tomto případě `SERVER_PORT`.
 
 ## <a name="install-packages"></a>Instalace balíčků
 

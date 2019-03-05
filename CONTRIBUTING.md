@@ -25,3 +25,7 @@ Postupujte podle pokynů k [rychlé úpravy existujících dokumentů](https://d
 ### <a name="larger-edits"></a>Větší úpravy
 
 Přečtěte si pokyny pro [žádosti o přijetí změn](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing) do Průvodce pro přispěvatele.
+
+**POZNÁMKA:**
+
+Jsme nefungují aktivně na soubory v `docs/vs-2015` složky jako tyto jsou pro Visual Studio 2015, starší verzi našeho produktu. Nepřijímáme žádosti o přijetí změn pro jednoduché změny těchto souborů.

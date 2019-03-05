@@ -1,20 +1,15 @@
 ---
 title: R Tools for Visual Studio
-description: Nástroje R pro Visual Studio (RTVS) je zdarma, open source rozšíření, která poskytuje mnoho funkcí jazyka, včetně IntelliSense, ladění a vzdálené pracovní prostory.
+description: 'Nástroje R pro Visual Studio 2017 (RTVS) je zdarma, open source rozšíření, která poskytuje mnoho funkcí jazyka, včetně IntelliSense, ladění a vzdálené pracovní prostory.'
 ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
-- data-science
-ms.openlocfilehash: 3fa12091493bda23c7eae52377f93b45cfe4c6e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933558"
+  - data-science
 ---
+
 # <a name="work-with-r-in-visual-studio"></a>Práce s R v sadě Visual Studio
 
 R je vysoce rozšiřitelný jazyk a prostředí pro statistické výpočty a grafiku. Je distribuován zdarma v rámci licence GNU General Public, požívá silná podpora komunity a je známá schopnost vytvářet kvalitní publikace vykreslení včetně symboly matematické vzorce. Další informace o jazyce R na [r-project.org](https://www.r-project.org/about.html) a [Úvod do jazyka R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
@@ -22,7 +17,7 @@ R je vysoce rozšiřitelný jazyk a prostředí pro statistické výpočty a gra
 Nástroje R pro Visual Studio (RTVS) je bezplatná, [open source](https://github.com/microsoft/RTVS) rozšíření pro Visual Studio 2017 a Visual Studio 2015 s aktualizací Update 3 (nebo vyšší), vydáno v rámci licence MIT. (Druhý opensourcové komponenty volá [RHost](https://github.com/microsoft/R-Host), které odkazuje na binární soubory interpret R, je vydávaný v rámci licence V2 veřejné GNU.)
 
 > [!Note]
-> RTVS se v současné době podporuje pouze v sadě Visual Studio ve Windows a nikoli Visual Studio pro Mac.
+> RTVS se v současné době podporuje pouze v sadě Visual Studio 2017 na Windows a nikoli Visual Studio pro Mac. Není k dispozici pro Visual Studio 2019.
 
 Chcete-li prostředí R v sadě Visual Studio:
 

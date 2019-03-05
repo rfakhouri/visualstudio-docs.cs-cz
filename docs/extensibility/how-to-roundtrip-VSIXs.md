@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 07a9363eef7d350ddbc7ec55f9fab62f38dadc1d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710601"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323812"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Postupy: Ujistěte se, rozšíření kompatibilní s Visual Studio 2017 a Visual Studio 2015
 
@@ -51,7 +51,7 @@ Důrazně doporučujeme spustit tento upgrade pomocí sady Visual Studio 2015, m
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Ujistěte se, že neexistuje žádný odkaz na project.json
 
-Dále v tomto dokumentu jsme se vloží příkazy podmíněné importu v k vaší **.csproj* souboru.  To nebude fungovat, pokud vaše odkazy na NuGet se ukládají v *project.json*. V důsledku toho doporučujeme přesunout všechny odkazy NuGet *souboru packages.config* souboru.
+Dále v tomto dokumentu jsme se vloží příkazy podmíněné importu v k vaší **.csproj* souboru. To nebude fungovat, pokud vaše odkazy na NuGet se ukládají v *project.json*. V důsledku toho doporučujeme přesunout všechny odkazy NuGet *souboru packages.config* souboru.
 Pokud váš projekt obsahuje *project.json* souboru:
 
 * Poznamenejte si odkazy v *project.json*.
@@ -61,7 +61,7 @@ Pokud váš projekt obsahuje *project.json* souboru:
     * Visual Studio automaticky vytvoří *souboru packages.config* souboru za vás.
 
 > [!NOTE]
-> Pokud váš projekt obsahoval EnvDTE balíčky, může potřebovat přidat kliknutím pravým tlačítkem na **odkazy** výběr **přidat odkaz na** a přidejte příslušný odkaz.  Pomocí balíčků NuGet může vytvořit chyby při pokusu o svůj projekt sestavit.
+> Pokud váš projekt obsahoval EnvDTE balíčky, může potřebovat přidat kliknutím pravým tlačítkem na **odkazy** výběr **přidat odkaz na** a přidejte příslušný odkaz. Pomocí balíčků NuGet může vytvořit chyby při pokusu o svůj projekt sestavit.
 
 ## <a name="add-appropriate-build-tools"></a>Přidat nástroje pro sestavení
 
@@ -84,18 +84,18 @@ Postup:
 
 ### <a name="1-installation-targets"></a>1. Instalace cíle
 
-Je potřeba zjistit, jaké verze zacílené pro vytváření rozšíření VSIX sady Visual Studio.  Tyto odkazy jsou obvykle, verze 14.0 (Visual Studio 2015) nebo verze 15.0 (Visual Studio 2017).  V našem případě chceme sestavení VSIX, který bude instalovat rozšíření pro obě, takže potřebujeme mít obě verze.  Pokud chcete sestavit a nainstalovat do verze starší než 14.0 VSIX, to můžete udělat tak, že nastavíte číslo starší verze; verze 10.0 a starší se však již nejsou podporovány.
+Je potřeba zjistit, jaké verze zacílené pro vytváření rozšíření VSIX sady Visual Studio. Tyto odkazy jsou obvykle, verze 14.0 (Visual Studio 2015), verze 15.0 (Visual Studio 2017) nebo verze 16.0 (Visual Studio 2019). V našem případě chceme sestavení VSIX, který bude instalovat rozšíření pro obě, takže potřebujeme mít obě verze. Pokud chcete sestavit a nainstalovat do verze starší než 14.0 VSIX, to můžete udělat tak, že nastavíte číslo starší verze; verze 10.0 a starší se však již nejsou podporovány.
 
 * Otevřít *source.extension.vsixmanifest* souboru v sadě Visual Studio.
 * Otevřít **cíle instalace** kartu.
-* Změnit **rozsah verzí** k [14,0, 16,0).  ' [' Říká sady Visual Studio pro verze 14,0 a všechny minulé ho.  Tím ')' říká sady Visual Studio pro všechny verze 15.0 až, ale bez zahrnutí verze 16.0.
+* Změnit **rozsah verzí** k [14,0, úhlopříčka 17,0). ' [' Říká sady Visual Studio pro verze 14,0 a všechny minulé ho. Tím ')' říká sady Visual Studio pro všemi verzemi až, ale nezahrnuje, verze 17,0.
 * Uložte všechny změny a zavřete všechny instance sady Visual Studio.
 
 ![Obrázek cíle instalace](media/visual-studio-installation-targets-example.png)
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Požadavky pro přidání *extension.vsixmanifest* souboru
 
-Požadavky jsou novou funkcí sady Visual Studio 2017.  V tomto případě potřebujeme základním editoru sady Visual Studio jako předpoklad. Protože návrháře aplikace Visual Studio 2015 VSIX nezpracovává nové `Prerequisites` části, bude nutné upravit tuto část ručně v kódu XML.  Alternativně můžete otevřít Visual Studio 2017 a použijte aktualizované manifest designer k vložení požadavky.
+Požadavky jsou novou funkcí sady Visual Studio 2017. V tomto případě potřebujeme základním editoru sady Visual Studio jako předpoklad. Protože návrháře aplikace Visual Studio 2015 VSIX nezpracovává nové `Prerequisites` části, bude nutné upravit tuto část ručně v kódu XML. Alternativně můžete otevřít Visual Studio 2017 a použijte aktualizované manifest designer k vložení požadavky.
 
 Chcete-li to provést ručně:
 
@@ -112,7 +112,7 @@ Chcete-li to provést ručně:
 * Soubor uložte a zavřete.
 
 > [!NOTE]
-> Pokud budete chtít dosáhnout pomocí návrháře VSIX v sadě Visual Studio 2017, musíte ručně upravit požadované verze zajistit, že je kompatibilní se všemi verzemi sady Visual Studio 2017.  Je to proto, že návrhář vloží minimální verze jako aktuální verze sady Visual Studio (například 15.0.26208.0).  Ale protože jiní uživatelé mohou mít starší verzi, můžete ručně upravit na 15.0.
+> Pokud budete chtít dosáhnout pomocí návrháře VSIX v sadě Visual Studio 2017, musíte ručně upravit požadované verze zajistit, že je kompatibilní se všemi verzemi sady Visual Studio 2017. Je to proto, že návrhář vloží minimální verze jako aktuální verze sady Visual Studio (například 15.0.26208.0). Ale protože jiní uživatelé mohou mít starší verzi, můžete ručně upravit na 15.0.
 
 Váš soubor manifestu v tomto okamžiku by měl vypadat přibližně takto:
 
@@ -120,14 +120,14 @@ Váš soubor manifestu v tomto okamžiku by měl vypadat přibližně takto:
 
 ## <a name="modify-the-project-file-myprojectcsproj"></a>Úprava souboru projektu (myproject.csproj)
 
-Důrazně doporučujeme mít odkaz na upravenou .csproj otevřít v průběhu tohoto kroku.  Můžete najít několik příkladů [tady](https://github.com/Microsoft/VSSDK-Extensibility-Samples).  Vyberte libovolnou ukázku rozšiřitelnosti, vyhledejte *.csproj* pro odkaz na soubor a proveďte následující kroky:
+Důrazně doporučujeme mít odkaz na upravenou .csproj otevřít v průběhu tohoto kroku. Můžete najít několik příkladů [tady](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Vyberte libovolnou ukázku rozšiřitelnosti, vyhledejte *.csproj* pro odkaz na soubor a proveďte následující kroky:
 
 * Přejděte do adresáře projektu v **Průzkumníka souborů**.
 * Otevřít *myproject.csproj* souboru v textovém editoru.
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. Aktualizace MinimumVisualStudioVersion
 
-* Nastavte minimální sady visual studio verzi `$(VisualStudioVersion)` a přidejte podmíněný příkaz pro něj.  Pokud ještě neexistují, přidejte tyto značky.  Ujistěte se, že značky jsou nastavené, jak je uvedeno níže:
+* Nastavte minimální sady visual studio verzi `$(VisualStudioVersion)` a přidejte podmíněný příkaz pro něj. Pokud ještě neexistují, přidejte tyto značky. Ujistěte se, že značky jsou nastavené, jak je uvedeno níže:
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -163,7 +163,7 @@ Důrazně doporučujeme mít odkaz na upravenou .csproj otevřít v průběhu to
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. Přidání podmínky do importy nástroje sestavení
 
-* Přidávat další podmíněné příkazy `<import>` značky, které mají Microsoft.VSSDK.BuildTools odkaz.  Vložit `'$(VisualStudioVersion)' != '14.0' And` do přední části příkaz podmínky.  Tyto příkazy se zobrazí v záhlaví a zápatí souboru csproj.
+* Přidávat další podmíněné příkazy `<import>` značky, které mají Microsoft.VSSDK.BuildTools odkaz. Vložit `'$(VisualStudioVersion)' != '14.0' And` do přední části příkaz podmínky. Tyto příkazy se zobrazí v záhlaví a zápatí souboru csproj.
 
 Příklad:
 
@@ -179,7 +179,7 @@ Příklad:
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Přidávat další podmíněné příkazy `<Error>` značky, které mají Microsoft.VSSDK.BuildTools odkaz.  To provést vložením `'$(VisualStudioVersion)' != '14.0' And` do přední části příkaz podmínky. Tyto příkazy se zobrazí v zápatí souboru csproj.
+* Přidávat další podmíněné příkazy `<Error>` značky, které mají Microsoft.VSSDK.BuildTools odkaz. To provést vložením `'$(VisualStudioVersion)' != '14.0' And` do přední části příkaz podmínky. Tyto příkazy se zobrazí v zápatí souboru csproj.
 
 Příklad:
 
@@ -187,7 +187,7 @@ Příklad:
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Přidávat další podmíněné příkazy `<Error>` značky, které mají Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Vložit `'$(VisualStudioVersion)' == '14.0' And` do přední části příkaz podmínky. Tyto příkazy se zobrazí v zápatí souboru csproj.
+* Přidávat další podmíněné příkazy `<Error>` značky, které mají Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Vložit `'$(VisualStudioVersion)' == '14.0' And` do přední části příkaz podmínky. Tyto příkazy se zobrazí v zápatí souboru csproj.
 
 Příklad:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření aplikace'
+title: 'Návod: Vytvoření aplikace'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31806b05dc088da2e4cb5920f28a2e4cd04f0053
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcd805c420b636225bc12c31afd79d47c6732d28
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954124"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323942"
 ---
-# <a name="walkthrough-build-an-application"></a>Průvodce: Vytvoření aplikace
+# <a name="walkthrough-build-an-application"></a>Návod: Vytvoření aplikace
 
 V tomto návodu se seznámíte se podrobněji seznamujete s několik možností, které můžete konfigurovat při sestavování aplikací pomocí sady Visual Studio. Budete vytvářet vlastní proces sestavení, skryjete některé varovné zprávy a zvýšíte výstupní informace sestavení pro ukázkovou aplikaci.
 
@@ -192,7 +192,7 @@ Další informace najdete v tématu [jak: Změna výstupního adresáře sestave
 
      ![V nabídce sestavení sestavit řešení – příkaz](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>Určení verze sestavení proC# #
+### <a name="specify-a-release-build-for-c"></a>Určení verze sestavení pro jazyk C\#
 
 1. Otevřít **Návrhář projektu**.
 

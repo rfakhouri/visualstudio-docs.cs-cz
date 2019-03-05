@@ -1,64 +1,46 @@
 ---
-title: ID pracovního vytížení a komponenta Visual Studio Team Explorer 2017
+title: ID pracovního vytížení a komponenta Visual Studio Team Explorer
 titleSuffix: ''
 description: Pomocí ID pracovního vytížení a komponenta Visual Studio poskytuje integrované testovací nástroje pro všeobecně testery
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.workload:
-- multiple
-monikerRange: vs-2017
-ms.openlocfilehash: f5b9d6b449a2f551e96132e07c0997455388fa82
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 793c35a5b0de54f87b0ac21fa1810512f089d86f
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841504"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324049"
 ---
-# <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 součástí adresáře
+# <a name="visual-studio-team-explorer-component-directory"></a>Visual Studio Team Explorer součástí adresáře
 
-Tabulky v tomto seznamu stránce ID, můžete použít k instalaci sady Visual Studio pomocí příkazového řádku nebo je můžete zadat jako závislost v manifestu VSIX. Všimněte si, že přidáme další součásti vydaných aktualizací sady Visual Studio.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Všimněte si také následující stránka:
+::: moniker range="vs-2017"
 
-* Každá úloha má vlastní oddíl, za nímž následuje Identifikátor pracovního vytížení a tabulku komponent, které jsou k dispozici pro pracovní vytížení.
-* Ve výchozím nastavení **vyžaduje** součásti nainstaluje, když jste si nainstalovali úlohu.
-* Pokud budete chtít, můžete nainstalovat také **doporučená** a **volitelné** komponenty.
-* Přidali jsme také oddíl, který obsahuje další součásti, které nejsou pod něj nespadá u jakékoli úlohy.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Když nastavíte závislosti v manifestu VSIX, je nutné zadat ID součástí pouze. Určení závislostí naše minimální součástí pomocí tabulek na této stránce. V některých případech to může znamenat, že zadáváte pouze jednu komponentu z pracovního vytížení. V jiných scénářích může znamenat, že zadáte více komponent z jedné úlohy nebo více komponent z více úloh. Další informace najdete v tématu [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) stránky.
+[!include[Visual Studio Team Explorer 2017](includes/vs-2017/workload-component-id-vs-team-explorer.md)]
 
-Další informace o tom, jak pomocí těchto identifikátorů najdete v části [pomocí parametrů příkazového řádku instalace sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) stránky. A seznam pracovního vytížení a komponenta ID pro ostatní produkty, naleznete v tématu [funkcí sady Visual Studio 2017 a ID součástí](workload-and-component-ids.md) stránky.
+::: moniker-end
 
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Základní editor Visual Studio (je součástí sady Visual Studio Team Explorer 2017)
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Popis:** Visual Studio základní možnosti a prostředí, včetně úprav, správy zdrojového kódu podle syntaxe kódu a správy pracovních položek.
+[!include[Visual Studio Team Explorer 2019](includes/vs-2019/workload-component-id-vs-team-explorer.md)]
 
-### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
-
-ID součásti | Název | Version | Typ závislosti
---- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Základním editoru sady Visual Studio | 15.8.27729.1 | Požadováno
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio úvodní stránka pro uživatele jazyka C++ | 15.0.27128.1 | volitelná,
-
-## <a name="unaffiliated-components"></a>Nespojená komponenty
-
-Toto jsou komponenty, které nejsou zahrnuty u jakékoli úlohy, ale může vybrat jako jednotlivých komponent.
-
-ID součásti | Název | Version
---- | --- | ---
-není k dispozici | není k dispozici | není k dispozici
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

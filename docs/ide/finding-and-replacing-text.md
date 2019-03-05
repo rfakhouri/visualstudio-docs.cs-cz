@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ebef5b4f7850a23537ec3df3eb51a574fa7985
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222815"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323731"
 ---
 # <a name="find-and-replace-text"></a>Vyhledání a nahrazení textu
 
-Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) nebo [najít/nahradit v souborech](#find-in-files-and-replace-in-files). Můžete také najít a nahradit pouze *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)*.
+Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) (**Ctrl**+**F** nebo **Ctrl** + **H**) nebo [najít/nahradit v souborech](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  nebo **Ctrl**+**Shift**+**H**). Můžete také najít a nahradit pouze *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)*.
 
 > [!TIP]
 > Pokud se přejmenování symboly kódu, jako jsou proměnné a metody, je lepší *[Refaktorujte](../ide/reference/rename.md)* je než můžete najít a nahradit. Refaktoring je inteligentní a rozumí oboru, zatímco najít a nahradit slepě nahradí všechny instance.
@@ -53,7 +53,10 @@ Můžete nastavit obor hledání na aktuální dokument, aktuální řešení ne
 
 ## <a name="find-and-replace-control"></a>Najít a nahradit řídící prvek
 
-**Najít a nahradit** ovládací prvek se zobrazí v pravém horním rohu okna editoru kódu. **Najít a nahradit** ovládací prvek okamžitě zvýrazní všechny výskyty daného hledaného řetězce v aktuálním dokumentu. Můžete přecházet z jednoho výskytu na jiný výběrem **najít další** tlačítko nebo **najít předchozí** tlačítka na ovládacím prvku hledání.
+- Stisknutím klávesy **Ctrl**+**F** jako zástupce *najít* řetězce v aktuálním souboru.
+- Stisknutím klávesy **Ctrl**+**H** jako zástupce *najít a nahradit* řetězce v aktuálním souboru.
+
+**Najít a nahradit** ovládací prvek se zobrazí v pravém horním rohu okna editoru kódu. Okamžitě zvýrazní všechny výskyty daného hledaného řetězce v aktuálním dokumentu. Můžete přecházet z jednoho výskytu na jiný výběrem **najít další** tlačítko nebo **najít předchozí** tlačítka na ovládacím prvku hledání.
 
 ![Najít a nahradit v sadě Visual Studio](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ Verze **najít** ovládací prvek je k dispozici také v některých oknech nás
 
 ## <a name="find-in-files-and-replace-in-files"></a>Najít v souborech a nahradit v souborech
 
-**Najít/nahradit v souborech** funguje jako **najít a nahradit** řídit, s tím rozdílem, že můžete definovat rozsah hledání. Nejenže můžete vyhledávat v aktuálně otevřeném souboru v editoru, ale také všech otevřených dokumentech, celém řešení, aktuálního projektu a vybrané sadě složek. Můžete také vyhledat pomocí přípony názvu souboru. Přístup **najít/nahradit v souborech** dialogu **najít a nahradit** na **upravit** nabídky nebo stisknutím klávesy **Ctrl + Shift + F**.
+- Stisknutím klávesy **Ctrl**+**Shift**+**F** jako zástupce *najít* řetězec ve více souborech.
+- Stisknutím klávesy **Ctrl**+**Shift**+**H** jako zástupce *najít a nahradit* řetězec ve více souborech.
+
+**Najít/nahradit v souborech** funguje jako **najít a nahradit** řídit, s tím rozdílem, že můžete definovat rozsah hledání. Nejenže můžete vyhledávat v aktuálně otevřeném souboru v editoru, ale také všech otevřených dokumentech, celém řešení, aktuálního projektu a vybrané sadě složek. Můžete také vyhledat pomocí přípony názvu souboru. Přístup **najít/nahradit v souborech** dialogu **najít a nahradit** na **upravit** nabídky (nebo stiskněte klávesu **Ctrl** + **Shift**+**F**).
 
 ![Najít v souborech v sadě Visual Studio](media/find-in-files-box.png)
 

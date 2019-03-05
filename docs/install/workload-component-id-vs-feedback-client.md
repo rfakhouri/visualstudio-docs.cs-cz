@@ -1,5 +1,5 @@
 ---
-title: ID pracovního vytížení a komponenta Visual Studio 2017 klienta zpětné vazby
+title: ID pracovního vytížení a komponenta Visual Studio Feedback Client
 titleSuffix: ''
 description: ID pracovního vytížení a komponenta Visual Studio můžete zaslat podrobnou zpětnou vazbu pro Azure DevOps Services nebo Team Foundation Server
 keywords: ''
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: 7392a100-100c-458c-9394-828695109015
-ms.workload:
-- multiple
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 901eb94a0ca53e73dcd1df21241f20870de64e7c
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f23af12a79e1b04c193e85c6fa31ac225af68a6d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953192"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324075"
 ---
-# <a name="visual-studio-feedback-client-2017-component-directory"></a>Složka komponenty Visual Studio 2017 klienta zpětné vazby
+# <a name="visual-studio-feedback-client-component-directory"></a>Visual Studio Feedback Client součástí adresáře
 
 Tabulky v tomto seznamu stránce ID, můžete použít k instalaci sady Visual Studio pomocí příkazového řádku nebo je můžete zadat jako závislost v manifestu VSIX. Všimněte si, že přidáme další součásti vydaných aktualizací sady Visual Studio.
 

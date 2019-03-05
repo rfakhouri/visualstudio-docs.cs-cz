@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023912"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323929"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -29,7 +29,8 @@ Tento článek obsahuje následující úkoly pro Visual Studio Help Viewer inte
 
 -   Další prostředky
 
-### <a name="creating-a-topic-f1-support"></a>Vytváří se téma (podpora F1)
+## <a name="create-a-topic-f1-support"></a>Vytvoření tématu (podpora F1)
+
 Tato část obsahuje přehled komponent prezentované tématu, požadavky na téma, krátký popis vytvoření tématu (včetně požadavky na podporu F1) a nakonec tématu příklad s jeho vykreslené výsledek.
 
 **Přehled okna téma nápovědy**
@@ -91,17 +92,17 @@ Vytvořit nový dokument XHTML s názvem ContosoTopic4.htm a obsahovat název zn
 
 ```
 
-V dalším kroku přidejte data k definování, jak v tématu nastat ve třech (vlastní značky, nebo ne), jak odkazovat na toto téma pro F1, kde existuje v tomto tématu v obsahu, jeho ID (pro název odkazu v dalších tématech), atd.  Naleznete v tématu "Metadata obsahu" tabulce pro úplný seznam podporovaných metadat.
+V dalším kroku přidejte data k definování, jak v tématu nastat ve třech (vlastní značky, nebo ne), jak odkazovat na toto téma pro F1, kde existuje v tomto tématu v obsahu, jeho ID (pro název odkazu v dalších tématech), atd. Naleznete v tématu "Metadata obsahu" tabulce pro úplný seznam podporovaných metadat.
 
 -   V tomto případě použijeme vlastní značky balíčku hodnotu typu variant značky balíčku Visual Studio Help Viewer.
 
--   Přidat F1 meta název a hodnotu ("Microsoft.Help.F1" content = "ContosoTopic4"), která bude odpovídat hodnotě zadané F1 v kontejneru objektů a integrované vývojové prostředí.  (Viz část podporu F1 pro další informace.)   Jedná se o hodnotu, která je nalezena shoda F1 volání z integrovaného vývojového prostředí pro zobrazení v tomto tématu při výběru klávesy F1 v integrovaném vývojovém prostředí.
+-   Přidat F1 meta název a hodnotu ("Microsoft.Help.F1" content = "ContosoTopic4"), která bude odpovídat hodnotě zadané F1 v kontejneru objektů a integrované vývojové prostředí. (Viz část podporu F1 pro další informace.) Jedná se o hodnotu, která je nalezena shoda F1 volání z integrovaného vývojového prostředí pro zobrazení v tomto tématu při výběru klávesy F1 v integrovaném vývojovém prostředí.
 
--   Přidat ID tématu. Jedná se o řetězec, který používá další témata pro propojení k tomuto tématu.  Je Identifikátor Prohlížeč nápovědy pro toto téma.
+-   Přidat ID tématu. Jedná se o řetězec, který používá další témata pro propojení k tomuto tématu. Je Identifikátor Prohlížeč nápovědy pro toto téma.
 
 -   Pro obsah přidejte toto téma nadřazený uzel k definování, kde se zobrazí uzel obsahu tohoto tématu.
 
--   Pro obsah přidejte uzel pořadí v tomto tématu. Když nadřazený uzel nemá n počet podřízených uzlů, definujte v pořadí podřízené uzly umístění v tomto tématu. For example, toto téma je 4 témat podřízené číslo 4.)
+-   Pro obsah přidejte uzel pořadí v tomto tématu. Pokud má nadřazený uzel `n` počet podřízených uzlů, definujte v pořadí podřízené uzly umístění v tomto tématu. Toto téma je například číslo 4 4 podřízené témata.
 
 Vzorový oddíl metadat:
 
@@ -124,7 +125,6 @@ Vzorový oddíl metadat:
 
 </body>
 </html>
-
 ```
 
 **Text tématu**
@@ -141,10 +141,10 @@ Text tématu (nikoli včetně záhlaví a zápatí) bude obsahovat, odkazů na s
 
 5.  Přidáte kód specifický pro jazyk textu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Všimněte si, že `devLangnu=` můžete zadat jiné jazyky. Například `devLangnu="Fortran"` zobrazí až po Fortran při fragment kódu DisplayLanguage = až po Fortran
 
-6.  Přidání odkazů na stránky: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  Přidání odkazů na stránky: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Poznámka: pro nepodporované nové "Jazyk" (například F#, Cobol, až po Fortran) odlišení kódu ve fragmentu kódu bude Monochromatický.
+> Poznámka: pro nepodporované nové "Jazyk" (například F#, Cobol, až po Fortran) odlišení kódu ve fragmentu kódu bude Monochromatický.
 
 **Příklad tématu Prohlížeč nápovědy** kód ukazuje, jak definovat metadat, fragment kódu, sbalitelné oblasti a specifické pro jazyk textu.
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ Uživatel pak můžete zaregistrovat CustomLibrary jako obor názvů v části p
 
 Přidejte následující klíč registru a hodnoty:
 
-Klíč HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic nápovědy: Zobrazit výstup ladění maloobchodní hodnoty: ANO
+::: moniker range="vs-2017"
 
-V prostředí IDE v položce nabídky Nápověda zvolte "Ladit kontext nápovědy"
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
+
+::: moniker-end
+
+Hodnota: Zobrazení výstupu ladění v prodejní Data: ANO
+
+V prostředí IDE v položce nabídky Nápověda, vyberte **ladit kontext nápovědy**.
 
 **Metadata obsahu**
 
@@ -366,7 +378,8 @@ V následující tabulce je jakýkoli řetězec, který se zobrazí mezi hranat�
 | \< Meta name="Microsoft.Help.TopicVersion obsah ="[tématu číslo verze]"/ > | Určuje tuto verzi tématu, pokud existuje více verzí v katalogu. Protože Microsoft.Help.Id nemusí být jedinečný, tato značka se vyžaduje při více než jednu verzi tématu existuje v katalogu, například když katalog obsahuje téma pro rozhraní .NET Framework 3.5 a téma pro rozhraní .NET Framework 4 a obě mají stejné Micro obnovitelně. Help.Id. |
 | \< Meta name = "SelfBranded" content = "[hodnotu TRUE nebo FALSE]" / > | Určuje, zda toto téma používá balíček Správce knihovny nápovědy počáteční značky nebo vlastní balíček, který je specifický pro téma. Tato značka musí být buď TRUE nebo FALSE. Pokud je hodnota TRUE, pak balíček přizpůsobení prostředí značce pro související téma přepíše značky balíčku, který je nastaven při spuštění Správce knihovny nápovědy tak, aby tématu je vykreslen tak, jak má i v případě, že se liší od vykreslování jiný obsah. Pokud je FALSE, v aktuálním tématu je vykreslena podle značky balíčku, který je nastaven při spuštění Správce knihovny nápovědy. Ve výchozím nastavení předpokládá svým značky jako NEPRAVDA, pokud SelfBranded proměnná je deklarovaná jako TRUE; Správce knihovny nápovědy proto není nutné deklarovat \<meta name = "SelfBranded" content = "FALSE" / >. |
 
-### <a name="creating-a-branding-package"></a>Vytváří se balíček pro přizpůsobení prostředí značce
+## <a name="create-a-branding-package"></a>Vytvoření balíčku pro přizpůsobení prostředí značce
+
 Verze sady Visual Studio zahrnuje celou řadou různých produktů Visual Studio, včetně izolované a integrované prostředí pro partnerů pro Visual Studio.  Každá z těchto produktů vyžaduje určitý stupeň obsahu založeného na téma nápovědy branding podporu pro produkt jedinečné.  Například témat Visual Studio musí mít konzistentní Image značky prezentace, zatímco SQL Studio, která zabalí ISO prostředí vyžaduje svou vlastní jedinečnou nápovědu obsahu branding pro každého tématu.  Integrovaná partnerská prostředí může být vhodné jejich témata nápovědy, které se v rámci nadřazené obsahu nápovědy produktu Visual Studio při zachování jejich vlastní téma značky.
 
 Přizpůsobení prostředí značce balíčky se nainstalují podle produktu, který obsahuje aplikace Help Viewer.  Pro produkty Visual Studio:
@@ -432,7 +445,6 @@ Branding.xml soubor obsahuje seznam prvků, které slouží pro konzistentně vy
 Poznámka: proměnné, které jsou označeny "{n}" mít závislostí kódu – odebrání nebo změny těchto hodnot způsobí chyby a případně selhání aplikace. Lokalizace identifikátory (například _locID="codesnippet.n") jsou obsažené v balíčku Branding Visual Studio.
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Visual Studio obsahu zobrazuje logo sady Visual Studio, stejně jako jiné grafi
 |ccOn.png|Titulky grafiky||
 |ImageSprite.png|Použije k vykreslení sbalitelné oblasti|Rozbalit nebo sbalit grafiky|
 
-### <a name="deploying-a-set-of-topics"></a>Nasazení sady témata
+## <a name="deploy-a-set-of-topics"></a>Nasazení sady témat
+
 Toto je jednoduchý a rychlý kurz pro vytvoření sady obsahu nasazení aplikace Help Viewer MSHA soubor a sadu souborů CAB nebo MSHCs obsahující témata. MSHA je soubor XML, který popisuje sadu souborů CAB nebo MSHC soubory. Aplikace Help Viewer můžete přečíst MSHA získat seznam obsahu (). Soubor CAB nebo. Soubory MSHC) dostupná pro místní instalaci.
 
 Toto je pouze základy popisující velmi základní schéma XML pro MSHA Prohlížeč nápovědy.  Není pod tento stručný přehled a ukázka HelpContentSetup.msha příklad implementace.
@@ -677,14 +690,14 @@ Získat značku balíčku sady Visual Studio, zkopírujte soubor Branding_en US.
 </div>
 </body>
 </html>
-
 ```
 
 **Shrnutí**
 
 VSPs nasadit jejich obsahu sady Visual Studio Help Viewer vám umožní používání a rozšiřování výše uvedené kroky.
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Přidání Nápověda pro Visual Studio Shell (integrovaný režim a izolovaný režim)
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Přidat nápovědu k prostředí Visual Studio Shell (integrovaný režim a izolovaný režim)
+
 **Úvod**
 
 Tento návod ukazuje, jak zahrnout obsah nápovědy do aplikace Visual Studio Shell a potom ji nasadíte.
@@ -786,7 +799,7 @@ Abyste to mohli otestovat jakoby nasazení:
 
 6. Vytvořte CatalogType.xml a přidejte do obsahujícího obsahu úložiště (v předchozím kroku):
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -817,7 +830,7 @@ Abyste to mohli otestovat jakoby nasazení:
 
 12. Chcete-li otestovat funkci F1 integrovaného vývojového prostředí Contoso, stiskněte klávesu F1.
 
-### <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další zdroje
 
 Rozhraní API modulu Runtime naleznete v tématu [rozhraní API pomáhají Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 

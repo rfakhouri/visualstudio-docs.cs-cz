@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b3b9a8045fdda71df1f979aef09aa368e03749
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917802"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323050"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Postupy: Distribuce fragmentů kódu
 
@@ -67,7 +67,17 @@ V tomto postupu použijeme stejný Hello World fragmentu kódu, který je vytvo�
 
 ### <a name="add-the-pkgdef-file"></a>Přidejte soubor .pkgdef
 
+::: moniker range="vs-2017"
+
 1. Přidat textový soubor, který *HelloWorldVB* složku a pojmenujte ho *HelloWorldVB.pkgdef*. Tento soubor se používá k přidání určité klíče registru. V takovém případě přidá nový podklíč pro **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** klíč.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Přidat textový soubor, který *HelloWorldVB* složku a pojmenujte ho *HelloWorldVB.pkgdef*. Tento soubor se používá k přidání určité klíče registru. V takovém případě přidá nový podklíč pro **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** klíč.
+
+::: moniker-end
 
 2. Přidejte následující řádky do souboru.
 

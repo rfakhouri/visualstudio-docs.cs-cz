@@ -7,12 +7,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925433"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324231"
 ---
 # <a name="workspaces"></a>Pracovní prostory
 
@@ -175,7 +175,19 @@ Kontextu uživatelského rozhraní lze použít pro automatické načtení balí
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Balíček SourceExplorerPackage nebyla správně načtena.
 
-Rozšiřitelnost pracovní prostor využívá výraznou MEF a způsobí, že chyby složení hostování otevřít složku k selhání načtení balíčku. Například, pokud rozšíření exportuje typ s `ExportFileContextProviderAttribute`, ale tento typ implementuje pouze `IWorkspaceProviderFactory<IFileContextActionProvider>`, dojde k chybě při pokusu o otevření složky v sadě Visual Studio. Podrobnosti o chybě najdete v _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Vyřešte všechny chyby pro typy, které jsou implementované pomocí rozšíření.
+Rozšiřitelnost pracovní prostor využívá výraznou MEF a způsobí, že chyby složení hostování otevřít složku k selhání načtení balíčku. Například, pokud rozšíření exportuje typ s `ExportFileContextProviderAttribute`, ale tento typ implementuje pouze `IWorkspaceProviderFactory<IFileContextActionProvider>`, dojde k chybě při pokusu o otevření složky v sadě Visual Studio.
+
+::: moniker range="vs-2017"
+
+Podrobnosti o chybě najdete v _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Vyřešte všechny chyby pro typy, které jsou implementované pomocí rozšíření.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Podrobnosti o chybě najdete v _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Vyřešte všechny chyby pro typy, které jsou implementované pomocí rozšíření.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Další kroky
 

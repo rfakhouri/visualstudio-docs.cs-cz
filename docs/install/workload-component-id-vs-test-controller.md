@@ -1,62 +1,46 @@
 ---
-title: ID pracovního vytížení a komponenta Visual Studio Test Controller 2017
+title: ID pracovního vytížení a komponenta Visual Studio Test Controller
 titleSuffix: ''
 description: Rozdělení automatizovaných testů mezi více počítačů pomocí ID pracovního vytížení a komponenta Visual Studio
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
-ms.workload:
-- multiple
-monikerRange: vs-2017
-ms.openlocfilehash: 13db0095871a2c0b8308138b468f8eda78d66aa3
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 546ae0fe1660c6b04198f2b562d4358cebbdb192
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953619"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324101"
 ---
-# <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 součástí adresáře
+# <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller součástí adresáře
 
-Tabulky v tomto seznamu stránce ID, můžete použít k instalaci sady Visual Studio pomocí příkazového řádku nebo je můžete zadat jako závislost v manifestu VSIX. Všimněte si, že přidáme další součásti vydaných aktualizací sady Visual Studio.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Všimněte si také následující stránka:
+::: moniker range="vs-2017"
 
-* Každá úloha má vlastní oddíl, za nímž následuje Identifikátor pracovního vytížení a tabulku komponent, které jsou k dispozici pro pracovní vytížení.
-* Ve výchozím nastavení **vyžaduje** součásti nainstaluje, když jste si nainstalovali úlohu.
-* Pokud budete chtít, můžete nainstalovat také **doporučená** a **volitelné** komponenty.
-* Přidali jsme také oddíl, který obsahuje další součásti, které nejsou pod něj nespadá u jakékoli úlohy.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Když nastavíte závislosti v manifestu VSIX, je nutné zadat ID součástí pouze. Určení závislostí naše minimální součástí pomocí tabulek na této stránce. V některých případech to může znamenat, že zadáváte pouze jednu komponentu z pracovního vytížení. V jiných scénářích může znamenat, že zadáte více komponent z jedné úlohy nebo více komponent z více úloh. Další informace najdete v tématu [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) stránky.
+[!include[Visual Studio Test Controller 2017](includes/vs-2017/workload-component-id-vs-test-controller.md)]
 
-Další informace o tom, jak pomocí těchto identifikátorů najdete v části [pomocí parametrů příkazového řádku instalace sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) stránky. A seznam pracovního vytížení a komponenta ID pro ostatní produkty, naleznete v tématu [funkcí sady Visual Studio 2017 a ID součástí](workload-and-component-ids.md) stránky.
+::: moniker-end
 
-## <a name="test-controller"></a>Kontroler testů
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.TestController
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Popis:** Rozdělení automatizovaných testů mezi více počítačů
+[!include[Visual Studio Test Controller 2019](includes/vs-2019/workload-component-id-vs-test-controller.md)]
 
-### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
-
-ID součásti | Název | Version | Typ závislosti
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Základní funkce Kontroleru testů | 15.6.27309.0 | Požadováno
-
-## <a name="unaffiliated-components"></a>Nespojená komponenty
-
-Toto jsou komponenty, které nejsou zahrnuty u jakékoli úlohy, ale může vybrat jako jednotlivých komponent.
-
-ID součásti | Název | Version
---- | --- | ---
-není k dispozici | není k dispozici | není k dispozici
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97733ab60a832c6a3563ae3ca1ed791f331399dc
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953541"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323115"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio programu zlepšování zkušeností zákazníků
 
@@ -31,8 +31,7 @@ VSCEIP je ve výchozím nastavení zapnutá. Můžete ji vypnout nebo zpět na, 
 
    **Programu zlepšování zkušeností sady Visual Studio** zobrazí se dialogové okno.
 
-1. Chcete-li odhlásit, vyberte **Ne, nechci se zúčastnit**a pak vyberte **OK**.
-   Chcete-li vyjádřit výslovný souhlas, vyberte **Ano, chci se zúčastnit**a pak vyberte **OK**.
+1. Chcete-li odhlásit, vyberte **Ne, nechci se zúčastnit**a pak vyberte **OK**. Chcete-li vyjádřit výslovný souhlas, vyberte **Ano, chci se zúčastnit**a pak vyberte **OK**.
 
    ![Dialogové okno Visual Studio na základě zlepšení zkušeností](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ Pokud nainstalujete [Build Tools pro Visual Studio](https://visualstudio.microso
 
 Příslušný klíč registru a nastavení jsou následující:
 
-V operačním systému 64-bit, klíč = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** na 32bitovém operačním systému, klíč = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** zásad skupiny v případě je povoleno, klíč = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
+
+- V operačním systému 64-bit, klíč = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- V 32bitovém operačním systému, klíč = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Když je povolené zásady skupiny, klíč = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- V operačním systému 64-bit, klíč = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- V 32bitovém operačním systému, klíč = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Když je povolené zásady skupiny, klíč = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
 
 Položka = **OptIn**
 
 Hodnota = (DWORD)
+
 - **0** je vyjádřil se výslovný nesouhlas (vypnout VSCEIP)
 - **1** přihlášení (zapnout VSCEIP)
 

@@ -1,5 +1,5 @@
 ---
-title: ID pracovního vytížení a komponenta Visual Studio Desktop Express 2017
+title: Visual Studio Desktop Express ID úloh a komponent
 titleSuffix: ''
 description: Použití pracovního vytížení a komponenta ID pro instalaci sady Visual Studio pomocí příkazového řádku nebo v závislosti na VSIX manifest
 keywords: ''
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload:
-- multiple
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 85c59ea01a85877af51a94baac17a027f69147e2
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953661"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323773"
 ---
-# <a name="visual-studio-2017-desktop-express-component-directory"></a>Visual Studio 2017 Desktop Express součástí adresáře
+# <a name="visual-studio-desktop-express-component-directory"></a>Visual Studio Desktop Express součástí adresáře
 
 Tabulky v tomto seznamu stránce ID, můžete použít k instalaci sady Visual Studio pomocí příkazového řádku nebo je můžete zadat jako závislost v manifestu VSIX. Všimněte si, že přidáme další součásti vydaných aktualizací sady Visual Studio.
 

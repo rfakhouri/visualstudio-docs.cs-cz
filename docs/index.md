@@ -580,7 +580,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>Rozšiřitelné programovací jazyk, obvykle používá pro statické počítačové výpočty a grafiku.</p>
+                                                    <p>(Visual Studio 2017 jenom) Rozšiřitelné programovací jazyk, obvykle používá pro statické počítačové výpočty a grafiku.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +699,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +710,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Aplikace pro datové vědy a analýzy</h3>
-                                            <p>Jazyky a nástroje pro vytváření datových věd aplikací, včetně Python, R, a F#.</p>
+                                            <p>Jazyky a nástroje pro vytváření datových věd aplikací, včetně Pythonu a F# (a jazyka R v sadě Visual Studio 2017 pouze).</p>
                                         </div>
                                       </div>
                                     </div>

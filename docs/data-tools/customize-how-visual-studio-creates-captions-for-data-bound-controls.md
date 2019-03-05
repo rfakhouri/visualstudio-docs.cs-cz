@@ -13,16 +13,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939837"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323694"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty
 
-Při přetažení položky z [okna zdroje dat](add-new-data-sources.md#data-sources-window) do návrháře, zvláštní pozornost vstupu do play: názvy sloupců v popiscích titulek jsou přeformátována na řetězec čitelnější, pokud dvě nebo více slov nedodržují zřetězených dohromady. Můžete změnit způsob, ve kterém jsou tyto popisky vytvořené, tak, že nastavíte **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data návrháři** klíč registru.
+Při přetažení položky z [okna zdroje dat](add-new-data-sources.md#data-sources-window) do návrháře, zvláštní pozornost vstupu do play: názvy sloupců v popiscích titulek jsou přeformátována na řetězec čitelnější, pokud dvě nebo více slov nedodržují zřetězených dohromady.
+
+::: moniker range="vs-2017"
+
+Můžete změnit způsob, ve kterém jsou tyto popisky vytvořené tak, že nastavíte **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data návrháři** klíč registru.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Můžete změnit způsob, ve kterém jsou tyto popisky vytvořené tak, že nastavíte **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data návrháři** klíč registru.
+
+::: moniker-end
 
 > [!NOTE]
 > Tento klíč registru neexistuje, dokud ho vytvoříte.
@@ -46,21 +58,31 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 |**SmartCaptionSuffix**|**:**|Hodnota představuje znak připojenou k vráceného řetězce. Například, pokud je popisek `Company Name`, přípona umožňuje `Company Name:`|
 
 > [!CAUTION]
-> Měli byste být opatrní při teď zrovna nic nedělá v editoru registru. Registr zálohovali začnete upravovat. Pokud Editor registru používán správně, můžete způsobit vážné problémy, které mohou vyžadovat přeinstalaci operačního systému. Microsoft nezaručuje, že lze vyřešit problémy způsobující pomocí Editoru registru nesprávně. Pomocí Editoru registru na vlastní nebezpečí.
+> Buďte velmi opatrní při teď zrovna nic nedělá v editoru registru. Registr zálohovali začnete upravovat. Pokud Editor registru používán správně, můžete způsobit vážné problémy, které mohou vyžadovat přeinstalaci operačního systému. Microsoft nezaručuje, že lze vyřešit problémy způsobující pomocí Editoru registru nesprávně. Pomocí Editoru registru na vlastní nebezpečí.
 >
-> Následujícím článku znalostní báze obsahuje pokyny pro zálohování, úpravy a obnovení registru: [Popis registru Windows Microsoft](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Informace o zálohování, úpravy a obnovení registru, najdete v části [informací z registru Windows pro pokročilé uživatele](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Upravit inteligentní titulků chování okna zdroje dat
 
-1.  Otevřete okno příkazového řádku kliknutím **Start** a potom **spustit**.
+1. Otevřete okno příkazového řádku kliknutím **Start** a potom **spustit**.
 
-2.  Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
+2. Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
 
-3.  Rozbalte **HKEY_CURRENT_USER** > **softwaru** > **Microsoft** > **VisualStudio**uzlu.
+3. Rozbalte **HKEY_CURRENT_USER** > **softwaru** > **Microsoft** > **VisualStudio**uzlu.
 
-4.  Klikněte pravým tlačítkem myši **15.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte tři nové hodnoty řetězce:
+4. Klikněte pravým tlačítkem myši **15.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Klikněte pravým tlačítkem myši **16.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
+
+::: moniker-end
+
+5. Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte tři nové hodnoty řetězce:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -82,15 +104,25 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>Vypnout funkci inteligentního titulků
 
-1.  Otevřete okno příkazového řádku kliknutím **Start** a potom **spustit**.
+1. Otevřete okno příkazového řádku kliknutím **Start** a potom **spustit**.
 
-2.  Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
+2. Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
 
-3.  Rozbalte **HKEY_CURRENT_USER** > **softwaru** > **Microsoft** > **VisualStudio**uzlu.
+3. Rozbalte **HKEY_CURRENT_USER** > **softwaru** > **Microsoft** > **VisualStudio**uzlu.
 
-4.  Klikněte pravým tlačítkem myši **15.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte tři nové hodnoty řetězce:
+4. Klikněte pravým tlačítkem myši **15.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Klikněte pravým tlačítkem myši **16.0** uzel a vytvořte nový **klíč** s názvem `Data Designers`.
+
+::: moniker-end
+
+5. Klikněte pravým tlačítkem myši **návrháře dat** uzel a vytvořte tři nové hodnoty řetězce:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
