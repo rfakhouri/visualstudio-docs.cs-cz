@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713149"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526578"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -78,7 +78,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
 
 1. Musíte mít nainstalovanou sadu Visual Studio a buď **vývoj desktopových aplikací .NET** úlohy nebo **.NET Core pro vývoj napříč platformami** nainstalovaná úloha, v závislosti na typu aplikace, které chcete vytvořit.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
 
     Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **nástroje** > **stažení nástrojů a funkcí**. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** (nebo **.NET Core pro vývoj napříč platformami**) úloh, klikněte na tlačítko **změnit**.
 

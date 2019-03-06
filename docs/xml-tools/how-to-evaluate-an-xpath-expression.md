@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: Vyhodnocení výrazu XPath'
-ms.date: 11/04/2016
+title: Vyhodnocení výrazu XPath při ladění
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: gewarren
@@ -8,47 +8,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b43a82d476e4426b1428f072cc980dbc8631cff2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970397"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526319"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Postupy: Vyhodnocení výrazu XPath
+# <a name="evaluate-xpath-expressions"></a>Vyhodnocení výrazů XPath
 
-Můžete si vyzkoušet výrazy XPath s **QuickWatch** dialogové okno. Výraz XPath musí být platný podle doporučení W3C XPath 1.0. Aktuální kontext XSLT – to znamená, `self::node()` uzlu v **lokální** okno – poskytuje kontext vyhodnocení výrazu XPath.
+Pomocí můžete vyhodnotit výrazy XPath **QuickWatch** okno během ladění. Výraz XPath musí být platný podle doporučení W3C XPath 1.0. Aktuální kontext XSLT (to znamená, `self::node()` uzlu v **lokální** okno) poskytuje kontext vyhodnocení výrazu XPath.
 
- Následující seznam popisuje, jaké funkce jsou podporovány při vyhodnocování výrazu XPath:
+Při vyhodnocování výrazu XPath:
 
--   Podporují se předdefinované funkce XPath.
+- Podporují se předdefinované funkce XPath.
 
--   Integrované funkce XSLT nejsou podporovány.
-
--   Uživatelem definované funkce nejsou podporovány.
+- Předdefinované funkce XSLT a uživatelem definované funkce nejsou podporovány.
 
 > [!NOTE]
-> Následující postup používá *belowAvg.xsl* a *books.xml* souborů z doručené pošty [názorný postup: Ladění stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tématu.
+> Ladění XSLT je k dispozici pouze v edici Enterprise sady Visual Studio.
 
-## <a name="to-evaluate-an-xpath-expression"></a>Vyhodnocení výrazu XPath
+## <a name="evaluate-an-xpath-expression"></a>Vyhodnocení výrazu XPath
 
-1.  Vložit zarážku na `xsl:if` počáteční značka.
+Následující postup používá *níže average.xsl* a *books.xml* souborů z doručené pošty [názorný postup: Ladění stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) stránky.
 
-2.  Klikněte na tlačítko **ladění XSL** tlačítko na panelu nástrojů editoru XML.
+1. Vložit zarážku na `xsl:if` počáteční značka.
 
-     Ladicí program se spustí a dojde k porušení `xsl:if` značky.
+2. Chcete-li spustit ladění, zvolte **XML** > **spustit ladění XSLT** na řádku nabídek (nebo stiskněte klávesu **Alt**+**F5** ).
 
-3.  Klikněte pravým tlačítkem a vyberte **QuickWatch**.
+   Ladicí program se spustí a dojde k porušení `xsl:if` značky.
 
-     **QuickWatch** se zobrazí dialogové okno.
+3. Klikněte pravým tlačítkem a vyberte **QuickWatch**.
 
-4.  Zadejte `./price/text()` v **výraz** pole **QuickWatch** dialogové okno a klikněte na tlačítko **přehodnotit**.
+   **QuickWatch** otevře se okno.
 
-     Ceny pro aktuální uzel knihy se zobrazí v **hodnotu** pole.
+4. Zadejte `./price/text()` v **výraz** pole **QuickWatch** dialogové okno a potom vyberte **přehodnotit**.
 
-5.  Změnit výraz XPath, který má `./price/text() < $bookAverage` a klikněte na tlačítko **přehodnotit**.
+   Ceny pro aktuální uzel knihy se zobrazí v **hodnotu** pole.
 
-     **Hodnotu** poli se zobrazí, že vyhodnocení výrazu XPath má `true`.
+   ![Vyhodnocení výrazu XPath v okně Quickwatch](media/quickwatch-price.png)
+
+5. Změnit výraz XPath, který má `./price/text() < $bookAverage` a klikněte na tlačítko **přehodnotit**.
+
+   **Hodnotu** poli se zobrazí, že vyhodnocení výrazu XPath má `true`.
 
 ## <a name="see-also"></a>Viz také:
 

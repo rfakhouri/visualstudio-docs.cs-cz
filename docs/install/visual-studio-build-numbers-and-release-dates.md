@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/27/2019
+ms.date: 03/06/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b251a2eb53d37260cf44613c2cc0cf279f0041a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 3dc071535dee1d2f5405ab01af4fcefded1154c6
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954131"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526474"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -27,6 +27,7 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.8 | Vydaná verze | 5. března 2019 | 15.9.28307.481 |
 | 15.9.7 | Vydaná verze | 12. února 2019 | 15.9.28307.423 |
 | 15.0.21 | Vydaná verze | 12. února 2019 | 15.0.26228.73 |
 | 15.9.6 | Vydaná verze | 24. ledna 2019 | 15.9.28307.344 |
@@ -177,6 +178,8 @@ Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sest
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Verze Release Candidate 1 (RC.1) | 5. března 2019 | 16.0.28701.123 |
+| 16.0.0 | Ve verzi Preview 4.1 | 5. března 2019 | 16.0.28701.123 |
 | 16.0.0 | Verze Release Candidate (RC) | 27. února 2019 | 16.0.28625.133 |
 | 16.0.0 | Preview 4 | 27. února 2019 | 16.0.28625.133 |
 | 16.0.0 | Preview 3 | 13. února 2019 | 16.0.28608.199 |

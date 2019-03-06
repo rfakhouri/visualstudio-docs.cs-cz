@@ -8,17 +8,24 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 887d41805063f64c6b96a0375284928efd9321ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01ec01ad642333d9ee46296cbcb4a02526152e94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56741613"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526870"
 ---
 Na vzdáleném zařízení nebo serveru, na kterém chcete ladit na, spíše než počítač s Visual Studio stáhněte a nainstalujte správnou verzi nástrojů remote tools z odkazů v následující tabulce.
 
 - Stáhněte si nejnovější nástroje pro vzdálenou pro vaši verzi sady Visual Studio. Nejnovější verze nástrojů remote tools je kompatibilní s předchozími verzemi sady Visual Studio, ale dřívější verze nástrojů remote tools nejsou kompatibilní s novějšími verzemi sady Visual Studio.
 - Stáhněte nástroje remote tools se stejnou architekturu jako počítač už je nainstalujete na. Pokud chcete ladit 32bitovou aplikaci na vzdáleném počítači s 64bitovým operačním systémem, například nainstalujte nástroje pro vzdálenou 64-bit.
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Dokud samostatné Remote tools for Visual Studio 2019 jsou k dispozici, pokud je třeba použít vzdálený ladicí program s Visual Studio 2019 [vzdálený ladicí program najít](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2017#fileshare_msvsmon) ve vlastní instalaci sady Visual Studio 2019 a buď kopírovat a spustit ho v vaše vzdálené počítače nebo jej spustit z sdílené složky.
+
+::: moniker-end
 
 |Version|Odkaz|Poznámky|
 |-|-|-|

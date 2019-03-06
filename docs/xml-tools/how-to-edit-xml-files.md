@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931751"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525450"
 ---
 # <a name="how-to-edit-xml-files"></a>Postupy: Úprava souborů XML
 
-XML Editor je nový editor souborů XML. Můžete použít samostatný soubor XML nebo soubor přidružený k projektu sady Visual Studio. XML Editor souvisí s následujícími příponami: *.config*, *DTD*, *.xml*, *XSD*, *.xdr*, *XSL*, *.xslt*, a *.vssettings*. XML Editor je také přidružen jiný soubor typ, který nemá žádné konkrétní editor zaregistrovaný, a který obsahuje obsah XML nebo DTD.
+XML editor je nový editor souborů XML. Můžete použít samostatný soubor XML nebo soubor přidružený k projektu sady Visual Studio. XML editor souvisí s následujícími příponami: *.config*, *DTD*, *.xml*, *XSD*, *.xdr*, *XSL*, *.xslt*, a *.vssettings*. XML editor je také přidružen jiný soubor typ, který nemá žádné konkrétní editor zaregistrovaný, a který obsahuje obsah XML nebo DTD.
 
 > [!NOTE]
 > XHTML dokumenty jsou zpracovány pomocí editoru jazyka HTML.
@@ -34,7 +34,7 @@ XML Editor je nový editor souborů XML. Můžete použít samostatný soubor XM
 
 3.  Zadejte název souboru **název** pole a stiskněte klávesu **přidat**.
 
-     Soubor XML je přidán do projektu a otevřít v editoru XML. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8" ?>`.
+     Soubor XML je přidán do projektu a otevřené v editoru XML. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8" ?>`.
 
 ## <a name="to-add-an-existing-xml-file-to-a-project"></a>Chcete-li přidat k existujícímu souboru XML do projektu
 
@@ -64,10 +64,10 @@ XML Editor je nový editor souborů XML. Můžete použít samostatný soubor XM
 
 3.  Přidáte soubory XML do projektu.
 
-     XML Editor najde schémata, které přidáte do tohoto projektu a používá pro ověření a funkce IntelliSense v XML, schématu nebo soubory XSLT, které upravíte tento projekt je otevřený.
+     XML editor najde schémata, které přidáte do tohoto projektu a používá pro ověření a funkce IntelliSense v XML, schématu nebo soubory XSLT, které upravíte tento projekt je otevřený.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Editor XML](../xml-tools/xml-editor.md)
+- [XML editor](../xml-tools/xml-editor.md)
 - [Vlastnosti dokumentu XML, okno Vlastnosti](../xml-tools/xml-document-properties-properties-window.md)
 - [Postupy: Vytvoření schématu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

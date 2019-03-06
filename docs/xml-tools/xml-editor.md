@@ -7,16 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9126b16692e844ca6bb3dcdbd6aad250b1209011
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948157"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526188"
 ---
 # <a name="xml-editor"></a>XML editor
 
-XML editor je založený na textový editor sady Visual Studio a obsahuje další podporu jazyků XML. XML editor obsahuje následující funkce:
+Editor XML v sadě Visual Studio je založená na textovém editoru a obsahuje další podporu jazyků XML. Když otevřete soubor XML v sadě Visual Studio se otevře v editoru XML.
+
+XML editor obsahuje následující funkce:
 
 - Kontrola syntaxe XML 1.0.
 
@@ -32,13 +34,13 @@ XML editor je založený na textový editor sady Visual Studio a obsahuje dalš�
 
 - Převod DTD nebo XML-Data Reduced (XDR) schématu do schématu XML.
 
-- Kontrola syntaxe XSLT 1.0.
+- Kontrola syntaxe XSLT.
 
 - Zdokumentujte, osnovy, tak, aby prvky můžete rozbalit a sbalit.
 
 - Integrace s [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md). To poskytuje hierarchická zobrazení schémat XML.
 
-XML editor je vyvoláno pro dobře známé přípony, například *.xml*, *XSD*, *XSL*, a *.config*. Také vyvolá se v jakékoli neznámé příponu Pokud soubor je pravděpodobně obsahuje kód XML. Můžete také otevřít libovolný soubor v editoru XML pomocí **otevřít v programu** možnost a editor souborů XML výběrem ze seznamu.
+XML editor je vyvoláno pro dobře známé přípony, například *.xml*, *XSD*, *XSL*, a *.config*. Také vyvolá se v jakékoli neznámé příponu Pokud soubor je pravděpodobně obsahuje kód XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -46,7 +48,7 @@ XML editor je vyvoláno pro dobře známé přípony, například *.xml*, *XSD*,
 
 ## <a name="xslt-profiler"></a>XSLT profiler
 
-[XSLT profiler](../xml-tools/walkthrough-xslt-profiler.md) vytvoří podrobné XSLT výkon sestavy, které vám pomůže měřit, vyhodnotit a řešit problémy související s výkonem v kódu XSLT. Profiler XSLT je také užitečné rady pro XSL a XSLT optimalizace list stylu.
+[XSLT profiler](../xml-tools/xslt-profiler.md) vytvoří podrobné XSLT výkon sestavy, které vám pomůže měřit, vyhodnotit a řešit problémy související s výkonem v kódu XSLT. Profiler XSLT je také užitečné rady pro XSL a XSLT optimalizace list stylu.
 
 ## <a name="xslt-hierarchy"></a>Hierarchie XSLT
 
@@ -54,6 +56,8 @@ XML editor je vyvoláno pro dobře známé přípony, například *.xml*, *XSD*,
 
 ## <a name="see-also"></a>Viz také:
 
-- [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md) poskytuje informace o textový editor.
-- [Reference na standardy XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) poskytuje informace o XML technologií, včetně XML, dokumentu typ definice (DTD), jazyk definice schématu XML (XSD) a XSLT.
+- [Možnosti editoru XML – formátování](../ide/reference/options-text-editor-xml-formatting.md)
+- [Možnosti editoru XML – různé](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Reference na standardy XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 109bd4ee3c54e8d468714c2a955e349ec76db2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952090"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525827"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Ladění a proces hostování
 Hostující proces sady Visual Studio zlepšuje výkon ladicího programu a umožňuje nové funkce ladicího programu, jako je ladění částečným vztahem důvěryhodnosti a vyhodnocení výrazu v době návrhu. Pokud je potřeba, můžete zákaz procesu hostování. Následující části popisují některé rozdíly mezi ladění a nemusíte hostitelský proces.
 
 > [!NOTE]
-> V sadě Visual Studio 2017 možnost ladění pomocí hostitelský proces už je nepotřebujete a byl odebrán. Další informace najdete v tématu [ladění: Visual Studio 2017 cílem je urychlit nejméně oblíbené úlohy](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
+> Spouští se v sadě Visual Studio 2017, možnost ladění pomocí hostitelský proces už je nepotřebujete a byl odebrán. Další informace najdete v tématu [ladění: Visual Studio 2017 cílem je urychlit nejméně oblíbené úlohy](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Ladění částečným vztahem důvěryhodnosti a klikněte na tlačítko-jednou zabezpečení
  Ladění částečným vztahem důvěryhodnosti vyžaduje hostující proces. Pokud je hostitelský proces zakázat, částečným vztahem důvěryhodnosti ladění nebudou fungovat i v případě, že je zapnutá částečným vztahem důvěryhodnosti zabezpečení **zabezpečení** stránce **vlastnosti projektu**. Další informace najdete v tématu [jak: Ladění aplikace s částečnou důvěryhodností](/visualstudio/debugger/debugger-security).

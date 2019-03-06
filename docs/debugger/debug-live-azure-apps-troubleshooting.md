@@ -1,7 +1,7 @@
 ---
 title: Řešení potíží při ladění snímků | Dokumentace Microsoftu
 ms.custom: seodec18
-ms.date: 11/07/2017
+ms.date: 11/07/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb6e7332386e7dc22465eaffedd01a969673dc3c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9e2213c1e573efa1811d3b578c3d7bd92f1b77f2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607912"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526410"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro ladění snímků v sadě Visual Studio
 

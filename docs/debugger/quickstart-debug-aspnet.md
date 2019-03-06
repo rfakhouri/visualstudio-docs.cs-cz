@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683594"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525398"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Rychlý start: Ladění technologie ASP.NET v ladicím programu sady Visual Studio
 
@@ -94,7 +94,7 @@ A *zarážku* je značku, která určuje, kde by měl Visual Studio pozastavit s
 
 ## <a name="navigate-code"></a>Vyhledání kódu
 
-Existují různé příkazy dáte pokyn, aby ladicí program pokračovat. Ukážeme příkaz navigace užitečné kód, který je nového v sadě Visual Studio 2017.
+Existují různé příkazy dáte pokyn, aby ladicí program pokračovat. Ukážeme příkaz navigace užitečné kód, který je k dispozici od verze Visual Studio 2017.
 
 Během pozastavení na zarážce, najeďte myší příkaz `return c2` až do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png) se zobrazí a potom stiskněte klávesu **běžet do kliknutí** tlačítko.
 

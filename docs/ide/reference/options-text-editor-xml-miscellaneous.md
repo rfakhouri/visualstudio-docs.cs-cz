@@ -8,22 +8,22 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4300eaa751eb8ac24461f9aca11e75c07d78a94d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930282"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525079"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Možnosti, textový Editor, XML, různé
 
-Použití **různé** stránky vlastností, chcete-li změnit nastavení automatického doplňování spolu se schématem pro Editor XML. Chcete-li otevřít **možnosti** dialogovém okně klikněte na tlačítko **nástroje** nabídky a pak klikněte na tlačítko **možnosti**. Pro přístup **různé** vlastnost stránce, rozbalte **textový Editor** > **XML** > **různé**uzlu.
+Použití **různé** stránka Možnosti, chcete-li změnit nastavení automatického doplňování spolu se schématem pro Editor XML. Chcete-li získat přístup k různé možnosti XML, zvolte **nástroje** > **možnosti** > **textový Editor** > **XML**a klikněte na tlačítko **různé**.
 
 ## <a name="auto-insert"></a>Automatické vkládání
 
 **Zavřít značky**
 
-Textový Editor přidá zavřít značky při vytváření elementů XML. Pokud je vybrána počáteční značky elementu, editor vloží odpovídající uzavírací značka, včetně odpovídající Předpona oboru názvů. Toto zaškrtávací políčko je ve výchozím nastavení zaškrtnuto.
+Textový editor přidá zavřít značky při vytváření elementů XML. Pokud je vybrána počáteční značky elementu, editor vloží odpovídající uzavírací značka, včetně odpovídající Předpona oboru názvů. Toto zaškrtávací políčko je ve výchozím nastavení zaškrtnuto.
 
 **Uvozovky atributu**
 
@@ -53,9 +53,9 @@ Při otevření souboru se změní na funkci sbalování. Toto zaškrtávací po
 
 **Schémata**
 
-Určuje umístění mezipaměti schémat. Tlačítko Procházet (...) aktuální umístění mezipaměti schémat se otevře v novém okně. Výchozí umístění je  *\<Management Studio instalační_adresář >* \Xml\Schemas.
+Určuje umístění mezipaměti schémat. **Procházet** tlačítko otevře v novém okně aktuální umístění mezipaměti schémat. Výchozí umístění je *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Generování kódu](../code-generation-in-visual-studio.md)
+- [Možnosti XML – formátování](options-text-editor-xml-formatting.md)
+- [Nástroje XML v sadě Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

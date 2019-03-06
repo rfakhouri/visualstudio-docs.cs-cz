@@ -40,7 +40,7 @@ items:
     - name: Průběžné nasazování ASP.NET Core do Azure s Gitem
       href: /aspnet/core/publishing/azure-continuous-deployment
     - name: Publikování do Kubernetes pomocí rozšíření Visual Studio Kubernetes Tools
-      href: tutorial-kubernetes-tools.md
+      href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
   - name: C++
     items:
     - name: Nasazení aplikace v jazyce C/C++
@@ -49,7 +49,7 @@ items:
       href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
     - name: Nasazení aplikace v jazyce C/C++ pomocí technologie ClickOnce...
       href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
-  - name: UPW
+  - name: UWP
     items:
     - name: Balíček aplikace pro UPW pomocí sady Visual Studio
       href: /windows/uwp/packaging/packaging-uwp-apps
@@ -169,21 +169,21 @@ items:
         href: how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-dotnet-framework.md
       - name: Publikování aplikace WPF s povolenými vizuálními styly
         href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
-      - name: 'Průvodce: Stahování sestavení na vyžádání pomocí Návrháře'
+      - name: 'Návod: Stahování sestavení na vyžádání pomocí Návrháře'
         href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
         items:
-        - name: 'Průvodce: Stahování sestavení na vyžádání'
+        - name: 'Návod: Stahování sestavení na vyžádání'
           href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
-      - name: 'Průvodce: Stahování satelitních sestavení na vyžádání pomocí Návrháře'
+      - name: 'Návod: Stahování satelitních sestavení na vyžádání pomocí Návrháře'
         href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-      - name: 'Průvodce: Ruční nasazení aplikace ClickOnce'
+      - name: 'Návod: Ruční nasazení aplikace ClickOnce'
         href: walkthrough-manually-deploying-a-clickonce-application.md
         items:
-        - name: 'Průvodce: Ruční nasazení aplikace, která nevyžaduje opětovné podepsání'
+        - name: 'Návod: Ruční nasazení aplikace, která nevyžaduje opětovné podepsání'
           href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
-      - name: 'Průvodce: Stahování satelitních sestavení na vyžádání'
+      - name: 'Návod: Stahování satelitních sestavení na vyžádání'
         href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md
-      - name: 'Průvodce: Vytvoření vlastního instalačního programu'
+      - name: 'Návod: Vytvoření vlastního instalačního programu'
         href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
     - name: Výběr strategie aktualizace ClickOnce
       href: choosing-a-clickonce-update-strategy.md
@@ -224,7 +224,7 @@ items:
       href: how-to-create-a-package-manifest.md
     - name: Vytvoření lokalizovaného balíčku bootstrapperu
       href: how-to-create-a-localized-bootstrapper-package.md
-    - name: 'Průvodce: Vytvoření vlastního bootstrapperu s dotazem souvisejícím se soukromím'
+    - name: 'Návod: Vytvoření vlastního bootstrapperu s dotazem souvisejícím se soukromím'
       href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
     - name: Referenční schéma balíčku a produktu
       href: product-and-package-schema-reference.md
@@ -290,9 +290,9 @@ items:
         href: customerrorreporting-element-clickonce-deployment.md
     - name: Referenční dokumentace nespravovaného rozhraní API ClickOnce
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: a48576850789721b47c57183babcd3dd45d3e7e3
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: ea0d78149670c3b3d180104c25f5cffa3f3cb1fa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571119"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526448"

@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943542"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525066"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Options, Text Editor, XML, Formatting
 
-Použití **formátování** stránky vlastností k určení, jak jsou formátovány elementů a atributů v dokumentech XML. Chcete-li otevřít **možnosti** dialogovém okně klikněte na tlačítko **nástroje** nabídky a pak klikněte na tlačítko **možnosti**. Přístup **formátování** vlastnost stránce, rozbalte **textový Editor** > **XML** > **formátování** uzlu .
+Použití **formátování** stránky možnosti můžete zadat způsob formátování elementů a atributů v dokumentech XML. Chcete-li získat přístup k XML možnosti formátování, zvolte **nástroje** > **možnosti** > **textový Editor** > **XML**a klikněte na tlačítko **formátování**.
 
 ## <a name="attributes"></a>Atributy
 
@@ -30,7 +30,7 @@ Nelze přeformátovat atributy. Toto nastavení je výchozí hodnota.
 
 **Zarovnávat atributy na samostatné řádky**
 
-Zarovnejte atributy druhé a následné svisle tak, aby odpovídaly odsazení prvního atributu. Následující text XML je příkladem jak by mělo být zarovnáno atributy.
+Zarovnejte atributy druhé a následné svisle tak, aby odpovídaly odsazení prvního atributu. Následující text XML je příkladem jak by mělo být zarovnáno atributy:
 
 ```xml
 <item id = "123-A"
@@ -66,5 +66,5 @@ Pokud prvek obsahuje kombinaci textu a kódu, obsah jsou považovány za být sm
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Generování kódu](../code-generation-in-visual-studio.md)
+- [Možnosti XML – různé](options-text-editor-xml-miscellaneous.md)
+- [Nástroje XML v sadě Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

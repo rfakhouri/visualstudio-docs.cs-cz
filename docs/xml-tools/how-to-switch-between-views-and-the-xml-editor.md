@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přepínání mezi zobrazeními a editorem XML'
+title: 'Postupy: Přepnout mezi zobrazeními a editorem XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7d4964aa83e4db03c8f9d21297b88ba90b2078
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6ea8cd3b4dfe1d8e9732fab6467328d2528268d
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944140"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525492"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Postupy: Přepínání mezi zobrazeními a editorem XML
 
-Toto téma ukazuje, jak přepínat mezi zobrazeními Návrhář schématu XML (XSD Designer) a Editor souborů XML. V tomto příkladu [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md).
+Toto téma ukazuje, jak přepínat mezi zobrazeními Návrhář schématu XML (XSD Designer) a editor souborů XML. V tomto příkladu [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md).
 
 ## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Chcete-li přepnout mezi zobrazeními a editorem XML
 
@@ -35,4 +35,4 @@ Toto téma ukazuje, jak přepínat mezi zobrazeními Návrhář schématu XML (X
 
 6.  Chcete-li přepnout mezi zobrazeními pomocí klávesových zkratek, stiskněte **Ctrl**+**1** pro zobrazení Start **Ctrl**+**2** pro zobrazení grafu a **Ctrl**+**3** pro zobrazení modelu obsahu.
 
-7.  Přejděte do editoru XML ze zobrazení modelu obsahu, klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód** v místní nabídce.
+7.  Chcete-li přejít do editoru XML ze zobrazení modelu obsahu, klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód** v místní nabídce.

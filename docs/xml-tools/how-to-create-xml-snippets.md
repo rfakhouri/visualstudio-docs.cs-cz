@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907331"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526617"
 ---
 # <a name="how-to-create-xml-snippets"></a>Postupy: Vytváření fragmentů XML
 
-XML Editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsahuje fragmentu XML, s názvem "Fragmentu kódu", který je často používaný text fragment kódu pro vytvoření nových fragmentů kódu XML.
+XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsahuje fragmentu XML, s názvem "Fragmentu kódu", který je často používaný text fragment kódu pro vytvoření nových fragmentů kódu XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Chcete-li vytvořit nové fragment kódu XML
 
@@ -105,7 +105,7 @@ XML Editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 </Literal
 ```
 
- Literály najdete také na funkce. XML Editor obsahuje funkci s názvem **LookupPrefix**. **LookupPrefix** funkce vyhledá daného oboru názvů identifikátoru URI z umístění v dokumentu XML, že tento fragment kódu je vyvolána z a vrátí předponu oboru názvů, která je definována pro tento obor názvů, pokud existuje, a obsahuje dvojtečkou (:) v názvu. Následující je příklad `Literal` element, který se používá **LookupPrefix** funkce.
+ Literály najdete také na funkce. XML editor obsahuje funkci s názvem **LookupPrefix**. **LookupPrefix** funkce vyhledá daného oboru názvů identifikátoru URI z umístění v dokumentu XML, že tento fragment kódu je vyvolána z a vrátí předponu oboru názvů, která je definována pro tento obor názvů, pokud existuje, a obsahuje dvojtečkou (:) v názvu. Následující je příklad `Literal` element, který se používá **LookupPrefix** funkce.
 
 ```xml
 <Literal Editable="false">

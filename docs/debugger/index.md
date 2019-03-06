@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: Ladění aplikací | Dokumentace Microsoftu
-description: Zjistěte, jak používat Visual Studio 2017 k ladění aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
+description: 'Zjistěte, jak pomocí sady Visual Studio pro ladění aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.'
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 81ecddbfdb3f1b36a28156686e5d07ff4e6ee558
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156030"
 ---
 # <a name="debugging-in-visual-studio"></a>Ladění v sadě Visual Studio
 

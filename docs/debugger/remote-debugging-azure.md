@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710822"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526461"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core ve službě IIS v Azure v sadě Visual Studio 2017
 
@@ -198,7 +198,7 @@ V tomto kurzu se používá Visual Studio 2017.
 2. V sadě Visual Studio, klikněte na tlačítko **ladit > připojit k procesu** (Ctrl + Alt + P).
 
     > [!TIP]
-    > V sadě Visual Studio 2017, můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
+    > V sadě Visual Studio 2017 a novějších verzích, můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
 
 3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: 4022**.
 4. Klikněte na tlačítko **aktualizovat**.

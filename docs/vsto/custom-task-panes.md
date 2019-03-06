@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205b4739d152186415a811b934a210d5f9a38ac4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615400"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526699"
 ---
 # <a name="custom-task-panes"></a>Vlastní podokna úloh
   Panely uživatelského rozhraní, které jsou obvykle ukotven k okraji okna v aplikaci Microsoft Office jsou podokna úloh. Vlastní podokna úloh poskytují způsob, jak vytvořit vlastní podokna úloh a poskytuje uživatelům známou rozhraní pro přístup k funkcím vašeho řešení. Rozhraní může například obsahovat ovládací prvky, na kterých běží kód pro úpravy dokumentů a zobrazení dat ze zdroje dat.
@@ -136,8 +136,6 @@ ms.locfileid: "56615400"
 - [Outlook](#Outlook)
 
 - [Word, aplikace InfoPath a PowerPoint](#WordAndInfoPath)
-
-  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Spravovat podokna úloh v doplňcích VSTO pro Word? ](http://go.microsoft.com/fwlink/?LinkId=136781).
 
 ##  <a name="Outlook"></a> Aplikace Outlook
  Při vytváření vlastního podokna úloh pro aplikaci Outlook souvisí s konkrétní okno Průzkumníka nebo inspektoru vlastního podokna úloh. Průzkumníci jsou windows, které zobrazují obsah složky a kontroly jsou windows, které zobrazí položky jako je například e-mailovou zprávu nebo úkol.

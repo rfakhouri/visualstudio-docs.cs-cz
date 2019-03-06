@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933571"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525788"
 ---
 # <a name="content-model-view"></a>Zobrazení modelu obsahu
 
@@ -52,7 +52,7 @@ Když kliknete pravým tlačítkem na položku na návrhovou plochu nebo **praco
 |**Generovat ukázkový soubor XML**|K dispozici pouze pro globální prvky. Generuje ukázkový soubor XML pro prvek globální.|
 |**Zobrazit dokumentaci**|Zobrazí nebo skryje obsah uzlu poznámky a dokumentaci.|
 |**Exportovat Diagram jako obrázek**|Uloží soubor ve formátu XPS návrhové ploše.|
-|**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v **Průzkumníka schémat XML** , vybere se také v editoru XML.|
+|**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v **Průzkumníka schémat XML** je také vybraná v editoru XML.|
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|
 
 Následující tabulka popisuje možnosti, které jsou k dispozici pro **pracovní prostor** panelu.
@@ -66,7 +66,7 @@ Následující tabulka popisuje možnosti, které jsou k dispozici pro **pracovn
 |**Odeberte všechny kromě výběru z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu.|
 |**Generovat ukázkový soubor XML**|K dispozici pouze pro globální prvky. Generuje ukázkový soubor XML pro prvek globální.|
 |**Vybrat vše**|Vybere všechny uzly v **pracovní prostor** panelu.|
-|**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v **Průzkumníka schémat XML** , vybere se také v editoru XML.|
+|**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v **Průzkumníka schémat XML** je také vybraná v editoru XML.|
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|
 
 ## <a name="properties-window"></a>Vlastnosti – okno
@@ -119,9 +119,9 @@ Posuvník přiblížení je neprůhledný, když vyberte ho, najeďte myší nad
 
 ## <a name="xml-editor-integration"></a>Integrace editoru XML
 
-Můžete přepínat mezi **XSD návrháře** a Editor souborů XML pomocí nabídky klikněte pravým tlačítkem (objektu context).
+Můžete přepínat mezi **XSD návrháře** a editor souborů XML pomocí nabídky klikněte pravým tlačítkem (objektu context).
 
-Pokud provedete změny schématu, nastavte v editoru XML se změny synchronizují v zobrazení modelu obsahu. Další informace najdete v tématu [integrace s editorem XML](../xml-tools/integration-with-xml-editor.md).
+Pokud provedete změny ve schématu se nastavují v editoru XML změny jsou synchronizovány do zobrazení modelu obsahu. Další informace najdete v tématu [integrace s editorem XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Viz také:
 

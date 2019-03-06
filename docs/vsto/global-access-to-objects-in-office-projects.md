@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600386"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525194"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globální přístup k objektům v projektech pro systém Office
   Při vytváření projektu aplikace Office, Visual Studio automaticky vygeneruje třídu pojmenovanou `Globals` v projektu. Můžete použít `Globals` pro přístup k několika položek jiného projektu za běhu v žádném kódu v projektu.
@@ -74,7 +74,7 @@ ms.locfileid: "56600386"
  Kód, který se pokouší použít `Globals` třídy před inicializací dokumentu nebo doplňku VSTO může vyvolat výjimku běhu. Například použití `Globals` při deklarování proměnné úrovni třídy může selhat, protože `Globals` třída nebyla pravděpodobně inicializována s odkazy na všechny položky hostitele před vytvořením instance deklarovanému objektu.
 
 > [!NOTE]
->  `Globals` Třída je inicializována nikdy v době návrhu, ale v návrháři se vytvářejí instance ovládacího prvku. To znamená, že je-li vytvořit uživatelský ovládací prvek, který používá vlastnost `Globals` třídy z uvnitř třídy uživatelského ovládacího prvku, je nutné, zda vlastnost vrací **null** předtím, než se pokusíte použít vráceného objektu.
+>  `Globals` Třída je inicializována nikdy v době návrhu, ale v návrháři se vytvářejí instance ovládacího prvku. To znamená, že je-li vytvořit uživatelský ovládací prvek, který používá vlastnost `Globals` třídy z uvnitř třídy uživatelského ovládacího prvku, je nutné zkontrolovat, zda vlastnost vrací **null** předtím, než se pokusíte použít vráceného objektu.
 
 ## <a name="see-also"></a>Viz také:
 - [Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)

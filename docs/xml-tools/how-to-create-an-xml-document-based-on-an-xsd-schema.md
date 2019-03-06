@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2848fee32094ba9c79cc3190b48b8953a5f7e942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912882"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525115"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Postupy: Vytvoření dokumentu XML na základě schématu XSD
 
@@ -45,7 +45,7 @@ Všimněte si také, že `xs:base64Binary` obsah se bude generovat jenom v pří
 
 2.  V [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), klikněte pravým tlačítkem myši `PurchaseOrder` globální element. Vyberte **generovat ukázkový soubor XML**.
 
-     Když vyberete tuto možnost, PurchaseOrder. *xml* soubor s následujícím obsahem XML ukázky bude vygenerována a otevřený v editoru XML:
+     Když vyberete tuto možnost, PurchaseOrder. *xml* soubor s následujícím obsahem XML ukázky bude vygenerována a otevřené v editoru XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +73,3 @@ Všimněte si také, že `xs:base64Binary` obsah se bude generovat jenom v pří
       </BillTo>
     </PurchaseOrder>
     ```
-
-## <a name="see-also"></a>Viz také:
-
-- [Práce s daty XML](../xml-tools/working-with-xml-data.md)

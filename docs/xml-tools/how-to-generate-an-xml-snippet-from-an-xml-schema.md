@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913951"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526240"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: Generování fragmentu XML ze schématu XML
 
-XML Editor má schopnost generovat fragmentů XML ze schématu XML definice jazyk (XSD) schématu. Například při vytváření souboru XML, zatímco umístěný vedle názvu elementu, stisknutí klávesy **kartu** k naplnění element s daty XML generované informace o schématu pro daný element.
+XML editor má schopnost generovat fragmentů XML ze schématu XML definice jazyk (XSD) schématu. Například při vytváření souboru XML, zatímco umístěný vedle názvu elementu, stisknutí klávesy **kartu** k naplnění element s daty XML generované informace o schématu pro daný element.
 
 Tato funkce dostupná pouze na prvky. Také platí následující pravidla:
 
@@ -43,7 +43,7 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
 
 ## <a name="example"></a>Příklad
 
- Kroky v této části ukazují, jak funkci generované schématu XML fragmentu kódu v editoru XML.
+ Kroky v této části ukazují, jak používat funkci generované schématu XML fragmentu kódu editoru XML.
 
 > [!NOTE]
 > Než zahájíte tyto postupy, uložte soubor schématu do místního počítače.

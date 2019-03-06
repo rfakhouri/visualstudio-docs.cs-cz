@@ -1,5 +1,5 @@
 ---
-title: Uživatelské rozhraní ladicího programu (XSLT)
+title: Okna ladicího programu XSLT
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
@@ -8,35 +8,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb19167bd6d689d807f9eb910b8e9e1135819ab4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b25c47e6db79fe4b860b6e7c209f0fc8403d0fcd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919687"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526009"
 ---
 # <a name="debugger-user-interface-xslt"></a>Uživatelské rozhraní ladicího programu (XSLT)
 
-Toto téma popisuje oknech ladicího programu a dialogových oknech. Popisuje pouze uživatelské rozhraní části, ze kterých mají ladění chování specifické pro XSLT.
+Tento článek popisuje oknech ladicího programu a dialogových oknech. Popisuje pouze uživatelské rozhraní částí, které mají ladění chování specifické pro XSLT.
 
 Další informace najdete v tématu [ladění odkazu uživatelského rozhraní](../debugger/debugging-user-interface-reference.md).
 
 ## <a name="locals-window"></a>Místní hodnoty – okno
- V okně místních hodnot zobrazí informace o všechny proměnné definované v šabloně stylů. V okně místních hodnot obsahuje tři sloupce informací:
 
- **Název**
+V okně místních hodnot zobrazí informace o všechny proměnné definované v šabloně stylů. V okně místních hodnot obsahuje tři sloupce informací:
 
- Tento sloupec obsahuje názvy všech místních proměnných v aktuálním oboru. Uzel sady mají ovládacím prvkem strom, který je můžete přejít na najdete v jejích podsložkách.
+**Název**
 
- **Hodnota**
+Tento sloupec obsahuje názvy všech místních proměnných v aktuálním oboru. Uzel sady mají ovládacím prvkem strom, který můžete procházet hierarchii zobrazíte její podsložky.
 
- Tento sloupec zobrazuje hodnota obsažená v každé proměnné. Atribut zpracování instrukce, komentáře, text a CData uzlů zobrazovat textové hodnoty uzlu. Uzly Namespace zobrazit identifikátor URI oboru názvů.
+**Hodnota**
 
- **Typ**
+Tento sloupec zobrazuje hodnota obsažená v každé proměnné. Atribut zpracování instrukce, komentáře, text a CData uzlů zobrazovat textové hodnoty uzlu. Uzly Namespace zobrazit identifikátor URI oboru názvů.
 
- V tomto sloupci určuje datový typ uvedených v proměnných **název** sloupce.
+**Typ**
 
- V okně místních hodnot také zobrazí předdefinovaný kontextové proměnné, které sledují kontextu transformace XSLT. Následující tabulka popisuje předdefinované kontextové proměnné použít ladicí program XSLT.
+V tomto sloupci určuje datový typ uvedených v proměnných **název** sloupce.
+
+V okně místních hodnot také zobrazí předdefinovaný kontextové proměnné, které sledují kontextu transformace XSLT. Následující tabulka popisuje předdefinované kontextové proměnné použít ladicí program XSLT.
 
 |Název|Popis|
 |-|-----------------|
@@ -45,57 +46,59 @@ Další informace najdete v tématu [ladění odkazu uživatelského rozhraní](
 |`self::node()`|Hodnota kontextu uzlu.|
 
 ## <a name="output-window"></a>Výstup – okno
- V okně výstupu se zobrazí všechny chybové zprávy nebo zabezpečení, ke kterým dochází během ladění.
 
- Ladicí program XSLT používá samostatné okno k zobrazení výstupu ladicího programu. Toto je stejné okno sloužící k zobrazení výstupu z **zobrazení výstupu XSL** příkazu.
+V okně výstupu se zobrazí všechny chybové zprávy nebo zabezpečení, ke kterým dochází během ladění. Také ukazuje výstupem ladicího programu.
 
 ## <a name="task-list"></a>Seznam úkolů
- **Seznamu úkolů** zobrazí seznam všech chyb kompilace v šabloně stylů. Poklepáním chybu přesměruje kurzor na řádku s chybou.
 
- **Seznamu úkolů** zahrnuje všechny chyby, ke kterým dochází v blocích skriptu v souboru XSLT.
+**Seznamu úkolů** zobrazí seznam všech chyb kompilace v šabloně stylů. Poklepáním chybu přesměruje kurzor na řádku s chybou.
+
+**Seznamu úkolů** zahrnuje všechny chyby, ke kterým dochází v blocích skriptu v souboru XSLT.
 
 > [!NOTE]
 > Ladicí program XSLT nemá žádná varování, tak se nikdy objeví v **seznamu úkolů**.
 
 ## <a name="breakpoints-window"></a>Zarážky – okno
- V okně zarážek se zobrazí všechny zarážky nastavené v aktuálním projektu. Pokud přidáte zarážku v okně je v zobrazení, v okně automaticky aktualizuje a zobrazí novou zarážku.
 
- V okně zarážek by se měly chovat stejně jako ostatní ladicích programů sady Visual Studio.
+V okně zarážek se zobrazí všechny zarážky nastavené v aktuálním projektu. Pokud přidáte zarážku v okně je v zobrazení, v okně automaticky aktualizuje a zobrazí novou zarážku.
 
-## <a name="command-windowimmediate-window"></a>Příkazové okno a okamžité okno
- V této verzi ladicí program XSLT není implementováno.
+V okně zarážek by se měly chovat stejně jako ostatní ladicích programů sady Visual Studio.
 
 ## <a name="watch-window"></a>Kukátko – okno
- V okně kukátko se používá k vyhodnocení proměnné. Můžete také změnit hodnoty proměnných.
 
- Proměnné zobrazí v okně kukátka jsou pro aktuální kontext (položka úplně nahoře v zásobníku volání). Pokud změníte kontext, okna kukátka aktualizuje a zobrazí proměnné nastavené pro tento kontext.
+V okně kukátko se používá k vyhodnocení proměnné. Můžete také změnit hodnoty proměnných.
+
+Proměnné zobrazí v okně kukátka jsou pro aktuální kontext (položka úplně nahoře v zásobníku volání). Pokud změníte kontext, okna kukátka aktualizuje a zobrazí proměnné nastavené pro tento kontext.
 
 ## <a name="call-stack-window"></a>okno Zásobník volání
- **Zásobník volání** okno se používá k zobrazení názvy funkcí v zásobníku volání, typy parametrů a hodnot parametrů. Informace v zásobníku volání se zobrazí, pouze pokud laděnému programu je ve stavu přerušení.
 
- Zásobník volání představuje různé kontexty, které právě probíhá zpracování XSLT. Například, pokud je volání z šablony "a" do šablony "b", šablona "a" a zobrazí se v šabloně "b" **zásobník volání** okno s aktuálním kontextu na začátek seznamu. Uživatel se může zobrazit dotaz, který aktuálně spouští.
+**Zásobník volání** okno se používá k zobrazení názvy funkcí v zásobníku volání, typy parametrů a hodnot parametrů. Informace v zásobníku volání se zobrazí, pouze pokud laděnému programu je ve stavu přerušení.
 
- Pokud se šablony nemají název v souboru XSLT, se používají názvy generovaných procesoru XSLT.
+Zásobník volání představuje různé kontexty, které právě probíhá zpracování XSLT. Například, pokud je volání z šablony "a" do šablony "b", šablona "a" a zobrazí se v šabloně "b" **zásobník volání** okno s aktuálním kontextu v horní části seznamu. Uživatel se může zobrazit dotaz, který aktuálně spouští.
 
- Kliknutí na položku než v horní části seznamu označuje do prohlížeče, kde větev provedení transformace XSLT pomocí standardní zelené zvýraznění se stalo a zelené šipky.
+Pokud se šablony nemají název v souboru XSLT, se používají názvy generovaných procesoru XSLT.
+
+Kliknutí na položku než v horní části seznamu označuje do prohlížeče, kde větev provedení transformace XSLT pomocí standardní zelené zvýraznění se stalo a zelené šipky.
 
 ## <a name="quickwatch-dialog-box"></a>QuickWatch – dialogové okno
- **QuickWatch** dialogové okno se používá k vyhodnocení výrazů XPath 1.0. Kontextový uzel ( `self::node()` uzel v okně místní hodnoty) poskytuje kontext pro provádění výrazu XPath. Výsledek provedení výraz XPath se zobrazí v okně kukátko.
 
- Následující seznam popisuje některé omezení pro vyhodnocení výrazu XPath.
+**QuickWatch** dialogové okno se používá k vyhodnocení výrazů XPath 1.0. Kontextový uzel ( `self::node()` uzel v okně místní hodnoty) poskytuje kontext pro provádění výrazu XPath. Výsledek provedení výraz XPath se zobrazí v okně kukátko.
 
--   Jsou povoleny pouze integrované funkce XPath.
+Následující seznam popisuje omezení pro vyhodnocení výrazu XPath:
 
--   XSLT integrované funkce, jako například `document()`, `key()`, a tak dále, nejsou povoleny.
+- Jsou povoleny pouze integrované funkce XPath.
 
--   Uživatelem definované funkce nejsou povoleny.
+- XSLT integrované funkce, jako například `document()` a `key()` nejsou povoleny.
+
+- Uživatelem definované funkce nejsou povoleny.
 
 Další informace najdete v tématu [jak: Vyhodnocení výrazu XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>okno Zpětný překlad
- V okně zpětný překlad zobrazí kód sestavení generovaný kompilátorem XSLT. Toto okno lze použít stejně jako všechny ostatní okna zpětného překladu sady Visual Studio.
 
- Další informace najdete [jak: Použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md).
+V okně zpětný překlad zobrazí kód sestavení generovaný kompilátorem XSLT. Toto okno lze použít stejně jako všechny ostatní okna zpětného překladu sady Visual Studio.
+
+Další informace najdete [jak: Použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Viz také:
 

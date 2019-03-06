@@ -1,7 +1,7 @@
 ---
 title: Vzdálené ladění projektu ve Visual C++ | Dokumentace Microsoftu
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 08/14/2018
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca380bae4ae4fcca5f280eb00533ad8ed7763f9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709288"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526059"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Vzdálené ladění projektu ve Visual C++ v sadě Visual Studio
 Ladění aplikace Visual Studio na jiném počítači, nainstalovat a spustit nástroje remote tools v počítači, kde bude nasazovat aplikace, nakonfigurujte projekt tak, aby připojení ke vzdálenému počítači ze sady Visual Studio a pak nasaďte a spusťte aplikaci.

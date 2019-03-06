@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716516"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526513"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Rychlý start: Ladění v C++ pomocí ladicího programu sady Visual Studio
 
@@ -94,7 +94,7 @@ A *zarážku* je značku, která určuje, kde by měl Visual Studio pozastavit s
 
 ## <a name="navigate-code"></a>Vyhledání kódu
 
-Existují různé příkazy dáte pokyn, aby ladicí program pokračovat. Ukážeme příkaz navigace užitečné kód, který je nového v sadě Visual Studio 2017.
+Existují různé příkazy dáte pokyn, aby ladicí program pokračovat. Ukážeme příkaz navigace užitečné kód, který je k dispozici od verze Visual Studio 2017.
 
 Během pozastavení na zarážce, najeďte myší příkaz `c1.push_back(20)` až do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png "RunToClick") se zobrazí a potom stiskněte klávesu **Běžet do kliknutí** tlačítko.
 

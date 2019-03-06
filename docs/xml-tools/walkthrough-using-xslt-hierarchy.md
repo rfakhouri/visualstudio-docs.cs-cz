@@ -1,18 +1,18 @@
 ---
-title: 'Průvodce: Používání hierarchie XSLT'
+title: 'Návod: Používání hierarchie XSLT'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 83081b7fb03a4272622c25f783abbc7134fac12b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970384"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526305"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Průvodce: Používání hierarchie XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Návod: Používání hierarchie XSLT
 
 Nástroj XSLT Hierarchy zjednodušuje mnoho úloh vývoje XML. Šablony stylů XSLT se často používá `includes` a `imports` pokyny. Kompilace se spouští z hlavní šablony stylů, ale když se zobrazí chyba v důsledku kompilaci šablony stylů XSLT, chyba mohou pocházet z jiného zdroje než hlavní šablony stylů. Oprava chyby nebo úpravu šablony stylů může vyžadovat přístup k vkládaného nebo importovaného šablony stylů. Krokování stylů v ladicím programu může otevřít zahrnuté a importované šablony stylů a můžete chtít přidat zarážku v určitém okamžiku v jednom nebo více zahrnuty šablony stylů.
 
@@ -111,4 +111,4 @@ V příkladu v tomto tématu ukazuje ladění v odkazované šablony stylů.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Návod: XSLT profiler](../xml-tools/walkthrough-xslt-profiler.md)
+- [XSLT profiler](../xml-tools/xslt-profiler.md)

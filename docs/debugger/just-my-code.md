@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223673"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526773"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Ladit jenom uživatelský kód pomocí funkce pouze můj kód
 
@@ -115,7 +115,7 @@ Pokud ladicí program narazí na výjimku, přestane na výjimku, ať už v uži
 Pro projekty C++, můžete zadat moduly, zdrojové soubory a funkce **zásobník volání** okno považuje za neuživatelský kód tak, že zadáte v  *\*.natjmc* soubory. Toto přizpůsobení platí i pro kód, pokud používáte nejnovější kompilátor (viz [pouze můj kód C++](#BKMK_CPP_User_and_non_user_code)).
 
 - Chcete-li zadat jiný než uživatelský kód pro všechny uživatele počítače Visual Studio, přidejte *.natjmc* do souboru *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* složky.
-- Chcete-li zadat jiný než uživatelský kód pro jednotlivé uživatele, přidejte *.natjmc* do souboru *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* složky.
+- Chcete-li zadat jiný než uživatelský kód pro jednotlivé uživatele, přidejte *.natjmc* do souboru *%USERPROFILE%\My dokumenty\\<Visual Studio version>\Visualizers* složky.
 
 A *.natjmc* soubor je soubor XML s následující syntaxí:
 
@@ -165,7 +165,7 @@ A *.natjmc* soubor je soubor XML s následující syntaxí:
 V projektech C++, můžete zadat funkce převezme seznam jako neuživatelský kód v kroku  *\*.natstepfilter* soubory. Funkce uvedené v  *\*.natstepfilter* soubory nejsou závislé na nastavení funkce pouze můj kód.
 
 - Chcete-li zadat jiný než uživatelský kód pro všechny místní uživatele sady Visual Studio, přidejte *.natstepfilter* do souboru *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* složky.
-- Chcete-li zadat jiný než uživatelský kód pro jednotlivé uživatele, přidejte *.natstepfilter* do souboru *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* složky.
+- Chcete-li zadat jiný než uživatelský kód pro jednotlivé uživatele, přidejte *.natstepfilter* do souboru *%USERPROFILE%\My dokumenty\\<Visual Studio version>\Visualizers* složky.
 
 A *.natstepfilter* soubor je soubor XML s následující syntaxí:
 

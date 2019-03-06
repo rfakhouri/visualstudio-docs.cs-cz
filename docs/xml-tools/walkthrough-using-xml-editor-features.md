@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Používání funkcí editoru XML'
+title: 'Návod: Používání funkcí editoru XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954683"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525866"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Průvodce: Použití funkce editoru XML
+# <a name="walkthrough-use-xml-editor-features"></a>Návod: Použití funkce editoru XML
 
-Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Průvodce také používá některé funkce v editoru XML, které jí umožňují velmi cennou pomůckou pro vytváření XML.
+Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Průvodce také používá některé funkce editoru jazyka XML, které jí umožňují velmi cennou pomůckou pro vytváření XML.
 
 > [!NOTE]
 > Před zahájením návodu, uložte *hireDate.xsd* souboru (uvedené níže v tomto tématu) do místního počítače.
@@ -96,9 +96,11 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
 ## <a name="to-format-the-xml-document"></a>Formát dokumentu XML
 
-- Vyberte **formátovat dokument** tlačítko na panelu nástrojů editoru XML.
+- Vyberte **formátovat dokument** tlačítko na panelu nástrojů editoru XML nebo stisknete klávesu **Ctrl**+**E**,**D**.
 
-    Dokument XML je přeformátovali.
+   ![Tlačítko dokument formátu XML v sadě Visual Studio](media/format-xml-document.png)
+
+   Dokument XML je přeformátovali.
 
 ## <a name="to-save-the-xml-document"></a>Uložení dokumentu XML
 
@@ -109,7 +111,8 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 2.  Zadejte název souboru a umístění dokumentu XML a klikněte na tlačítko **Uložit**.
 
 ## <a name="hiredatexsd-file"></a>soubor hireDate.xsd
- Následující soubor schématu je používán návodu.
+
+V tomto názorném postupu se používá následující soubor schématu:
 
 ```xml
 <?xml version="1.0"?>
@@ -129,4 +132,4 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
 ## <a name="see-also"></a>Viz také:
 
-- [Editor XML](../xml-tools/xml-editor.md)
+- [XML editor](../xml-tools/xml-editor.md)

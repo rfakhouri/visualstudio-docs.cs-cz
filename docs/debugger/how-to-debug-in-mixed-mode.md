@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968528"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526721"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Postupy: Ladění ve smíšeném režimu (C#, C++, Visual Basic)
 
@@ -62,7 +62,7 @@ Pokud nemáte přístup k projektu volání aplikace, můžete ladit knihovnu DL
    ![Povolit ladění nativního kódu](../debugger/media/dbg-mixed-mode-from-csharp.png "povolit ladění nativního kódu")
 
 > [!NOTE]
-> Ve většině verzí sady Visual Studio 2017, je nutné použít *launchSettings.json* souboru místo vlastnosti projektu pro povolení ladění ve smíšeném režimu pro nativní kód v aplikaci .NET Core. Podrobnosti najdete v tématu [ladění spravovaného a nativního kódu](../debugger/how-to-debug-managed-and-native-code.md).
+> Ve většině verzí sady Visual Studio, počínaje verzí Visual Studio 2017, je nutné použít *launchSettings.json* souboru místo vlastnosti projektu pro povolení ladění ve smíšeném režimu pro nativní kód v aplikaci .NET Core. Podrobnosti najdete v tématu [ladění spravovaného a nativního kódu](../debugger/how-to-debug-managed-and-native-code.md).
 
 ## <a name="see-also"></a>Viz také:
 

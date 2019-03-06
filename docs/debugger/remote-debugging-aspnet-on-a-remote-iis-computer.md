@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b97808da917fcbeefcd849dae601fe7410d84b7
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702171"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526593"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v sadě Visual Studio 2017
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
@@ -163,7 +163,7 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
 2. V sadě Visual Studio, klikněte na tlačítko **ladit > připojit k procesu** (Ctrl + Alt + P).
 
     > [!TIP]
-    > V sadě Visual Studio 2017, můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
+    > V sadě Visual Studio 2017 a novějších verzích, se můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
 
 3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: 4022**.
 4. Klikněte na tlačítko **aktualizovat**.

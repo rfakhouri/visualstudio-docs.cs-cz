@@ -1,6 +1,6 @@
 ---
 title: Ladění aplikací ASP.NET nasazenou | Dokumentace Microsoftu
-ms.date: 06/30/2017
+ms.date: 06/30/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: bfbf5dc7421446c863bfd104f4247bb06411dfb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 57594775afe5d6708cd5d11b141f8cffc1b42e6c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717621"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525385"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Ladění aplikací nasazených ASP.NET
 Použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladění nasazených aplikací, je nutné se připojit k [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovních procesů zpracování a ujistěte se, že ladicí program má přístup k symbolům pro aplikaci. Musíte také najít a otevřít zdrojové soubory pro aplikaci. Další informace najdete v tématu [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [jak: Hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), a [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).

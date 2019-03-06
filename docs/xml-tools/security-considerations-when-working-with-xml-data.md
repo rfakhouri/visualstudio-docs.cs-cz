@@ -8,28 +8,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebcf5769c9ca59a0772530e3551517d14c1ec0c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af91f02b6cc34fcc05b83bb6c09cfd37e8a18ef
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955840"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525463"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Aspekty zabezpečení při práci s daty XML
 
 Toto téma popisuje problémy se zabezpečením, které je potřeba vědět o při práci s editorem XML nebo ladicí program XSLT.
 
-## <a name="xml-editor"></a>Editor XML
+## <a name="xml-editor"></a>XML editor
 
- XML Editor je založena na Visual Studio textovém editoru. Využívá <xref:System.Xml> a <xref:System.Xml.Xsl> třídy pro zpracování řadu procesů XML.
+ XML editor je založena na Visual Studio textovém editoru. Využívá <xref:System.Xml> a <xref:System.Xml.Xsl> třídy pro zpracování řadu procesů XML.
 
 -   Transformace XSLT jsou provedeny v nové doméně aplikace. Transformace XSLT jsou *v izolovaném prostoru*; to znamená, zásady zabezpečení přístupu kódu v počítači se používá k určení omezená oprávnění na základě na místě, kde šablony stylů XSLT. Například listů stylu z umístění v Internetu mít nejvíce omezená oprávnění, že šablony stylů zkopírovány na váš pevný disk, spusťte s úplnou důvěryhodností.
 
 -   <xref:System.Xml.Xsl.XslCompiledTransform> Třída se používá ke kompilaci XSLT pro jazyk Microsoft intermediate language pro dosažení vyššího výkonu během provádění.
 
--   Schémata, které odkazují na externím místě v souboru katalogu staženy automaticky při prvním načtení editoru XML. <xref:System.Xml.Schema.XmlSchemaSet> Třída se používá ke kompilaci schémata. Soubor katalogu, který se dodává s editorem XML neobsahuje odkazy na všechny externí schémata. Uživatel musí explicitně přidat odkaz na externí schéma před editoru XML, soubory ke stažení souboru schématu. Stahuje se protokol HTTP se dají zakázat pomocí **různé možnosti nástrojů** stránky pro Editor XML.
+-   Schémata, které odkazují na externím místě v souboru katalogu staženy automaticky při prvním načtení editoru XML. <xref:System.Xml.Schema.XmlSchemaSet> Třída se používá ke kompilaci schémata. Soubor katalogu, který se dodává s editorem XML neobsahuje odkazy na všechny externí schémata. Uživatel musí explicitně přidat odkaz na externí schéma před editoru XML, soubory ke stažení souboru schématu. Stahuje se protokol HTTP se dají zakázat pomocí **různé možnosti nástrojů** stránky editoru XML.
 
--   XML Editor používá <xref:System.Net> třídy ke stažení schémata
+-   XML editor používá <xref:System.Net> třídy ke stažení schémata
 
 ## <a name="xslt-debugger"></a>Ladicí program XSLT
 

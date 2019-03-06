@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952642"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526643"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 
@@ -27,7 +27,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 
  Na návrhovou plochu zobrazení grafu zobrazí obsah [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md). Pokud pracovní prostor obsahuje všechny globální uzly v sadě schémat, uzly se zobrazují na návrhové ploše zobrazení grafu a šipky se vykreslují mezi uzly, které mají relace.
 
- Dvojitým kliknutím na uzel v zobrazení grafu otevřete tak Editor XML.
+ Dvojitým kliknutím na uzel v zobrazení grafu se otevře XML editor.
 
  Pokud chcete odstranit vybrané uzly z pracovního prostoru, použijte panel nástrojů návrháře XSD nebo **odstranit** klíč.
 
@@ -55,7 +55,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
 |**Odeberte všechny kromě výběru z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu.|
 |**Exportovat Diagram jako obrázek**|Uloží soubor ve formátu XPS návrhové ploše.|
 |**Vybrat vše**|Vybere všechny uzly na návrhové ploše.|
-|**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v **Průzkumníka schémat XML** , vybere se také v editoru XML.|
+|**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v **Průzkumníka schémat XML** je také vybraná v editoru XML.|
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|
 
  Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální prvky také obsahuje následující možnosti:
@@ -140,9 +140,9 @@ Posuvník přiblížení je neprůhledný, když vyberte ho, najeďte myší nad
 
 ## <a name="xml-editor-integration"></a>Integrace editoru XML
 
- Můžete přepínat vpřed a zpět mezi zobrazení grafu a Editor souborů XML tak, že kliknete na uzel a z nabídky Zobrazit kód kontextu (klikněte pravým tlačítkem).
+ Můžete přepínat vpřed a zpět mezi zobrazení grafu a editor souborů XML tak, že kliknete na uzel a z nabídky Zobrazit kód kontextu (klikněte pravým tlačítkem).
 
- Pokud provedete změny schématu, nastavte v editoru XML, změny budou synchronizovány v zobrazení grafu. Další informace najdete v tématu [integrace s editorem XML](../xml-tools/integration-with-xml-editor.md).
+ Pokud provedete změny ve schématu se nastavují v editoru XML, změny budou synchronizovány v zobrazení grafu. Další informace najdete v tématu [integrace s editorem XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Viz také:
 

@@ -1,7 +1,7 @@
 ---
 title: Kód upravit a pokračovat v ladění | Dokumentace Microsoftu
 ms.custom: seodec18
-ms.date: 05/31/2017
+ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.enc
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bc71b37572d76632a0936f23386985c2e3a9dc1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 008dde8239c2b4b70220159275b12066b8cf70bb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696477"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525493"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Úprava kódu a pokračování ladění v sadě Visual Studio (C#, VB, C++)
 Upravit a pokračovat, je funkce ušetří čas, který umožní vám provádět změny zdrojového kódu, zatímco je v režimu pozastavení. Při obnovení provádění programu výběrem příkazu ke spuštění jako **pokračovat** nebo **krok**, upravit a pokračovat automaticky použije změny kódu s určitými omezeními. To umožňuje provést změny kódu během relace ladění, namísto nutnosti zastavit a znovu zkompilovat celý váš program, restartujte relaci ladění.

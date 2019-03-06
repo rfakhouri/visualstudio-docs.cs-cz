@@ -1,6 +1,6 @@
 ---
 title: Podporované změny kódu (C# a Visual Basic) | Dokumentace Microsoftu
-ms.date: 10/11/2017
+ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 753a3816b6432a58c5f79077c4e438db753297b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692222"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526176"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Podporované změny kódu (C# a Visual Basic)
 Upravit a pokračovat zpracovává většinu typů změn kódu uvnitř těla metody. Během ladění, ale nejde použít většinu změn mimo těl metod a několik změn v rámci těla metod. Nepodporované změny použít, musíte Zastavit ladění a znovu s novou verzi kódu.
@@ -36,7 +36,7 @@ Následující tabulka uvádí změny, které mohou být provedeny C# a kód jaz
 |Iterátory|Přidat nebo upravit|Ne|
 |Async/await výrazy|Přidat nebo upravit|[Ano](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Dynamické objekty|Přidat nebo upravit|Ne|
-|výrazy lambda|Přidat nebo upravit|[Ano](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|lambda – výrazy|Přidat nebo upravit|[Ano](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |LINQ – výrazy|Přidat nebo upravit|[Stejně jako výrazy lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]

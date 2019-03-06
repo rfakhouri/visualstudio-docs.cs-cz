@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922027"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525137"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Postupy: Získejte přehled o schéma, nastavte pomocí zobrazení grafu
 
@@ -23,7 +23,7 @@ Toto téma popisuje způsob použití [zobrazení grafu](../xml-tools/graph-view
 
 1.  Vytvořte nový soubor XML schéma a soubor uložte jako *Relationships.xsd*.
 
-2.  Klikněte na tlačítko **pomocí editoru XML k zobrazení a úpravě základního souboru schématu XML** odkaz na zobrazení spuštění.
+2.  Klikněte na tlačítko **editoru XML použijte k zobrazení a úpravě základního souboru schématu XML** odkaz na zobrazení spuštění.
 
 3.  Zkopírujte ukázkový kód XML schéma z [ukázky XML schématu: relace](../xml-tools/sample-xsd-file-relationships.md) a vložte ji nahradit kód, který byl přidán do nového souboru XSD ve výchozím nastavení.
 

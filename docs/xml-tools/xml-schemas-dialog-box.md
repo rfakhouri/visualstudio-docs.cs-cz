@@ -1,19 +1,21 @@
 ---
-title: Dialogové okno Schémata XML
+title: XML schémata
 ms.date: 11/04/2016
 ms.topic: reference
+f1_keywords:
+- vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed45f6444eb76d89488e8d9b27d1725c217d6fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930870"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524920"
 ---
 # <a name="xml-schemas-dialog-box"></a>Dialogové okno schémata XML
 
@@ -22,15 +24,16 @@ ms.locfileid: "55930870"
 Můžete přistupovat **schémat XML** dialogové okno kliknutím **schémata** tlačítka v okně Vlastnosti dokumentu, nebo výběrem **schémata** z **XML** nabídky.
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- **Použití**
 
- Vyberte, jak má být použita schématu XML.
+**Použití**
 
--   **Automatické**. Toto schéma není používán aktuální dokument, ale je k dispozici pro automatické přidružení. Pokud dokument XML deklaruje obor názvů, který odpovídá `targetNamespace` tohoto schématu schématu bude automaticky přiřazen a je zahrnuté v sadě schémat.
+Vyberte, jak má být použita schématu XML.
 
--   **Použít tohle schéma**. Toto schéma používá aktuální dokument. Uživatel má explicitně požadována, že kliknete na tomto sloupci používat toto schéma nebo schématu byl automaticky k podle odpovídající `targetNamespace`.
+- **Automatické**. Toto schéma není používán aktuální dokument, ale je k dispozici pro automatické přidružení. Pokud dokument XML deklaruje obor názvů, který odpovídá `targetNamespace` tohoto schématu schématu bude automaticky přiřazen a je zahrnuté v sadě schémat.
 
--   **Nepoužívat vybraná schémata**. Toto schéma není používán aktuální dokument i v případě schématu nemá odpovídající `targetNamespace`. Toto nastavení může být užitečné při řešení konfliktů, pokud existuje více než jedna verze stejného schématu v mezipaměti schémat nebo řešení.
+- **Použít tohle schéma**. Toto schéma používá aktuální dokument. Uživatel má explicitně požadována, že kliknete na tomto sloupci používat toto schéma nebo schématu byl automaticky k podle odpovídající `targetNamespace`.
+
+- **Nepoužívat vybraná schémata**. Toto schéma není používán aktuální dokument i v případě schématu nemá odpovídající `targetNamespace`. Toto nastavení může být užitečné při řešení konfliktů, pokud existuje více než jedna verze stejného schématu v mezipaměti schémat nebo řešení.
 
 **Target Namespace**
 
@@ -50,6 +53,5 @@ Odebere aktuálně vybrané schéma v sadě schémat. Tato operace odebere sché
 
 ## <a name="see-also"></a>Viz také:
 
-- [Součásti editoru XML](../xml-tools/xml-editor-components.md)
 - [Postupy: Výběr schémat XML pro použití](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Mezipaměti schémat](../xml-tools/schema-cache.md)

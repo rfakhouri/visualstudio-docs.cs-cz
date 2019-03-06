@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689301"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526536"
 ---
 # <a name="general-debugging-options"></a>Obecné možnosti ladění
 
@@ -54,7 +54,7 @@ V podmínkách 2 a 3, výjimka někdy zachycena spravovaným kódem v `mscorlib`
 
 **Povolit filtry zarážek**: Umožňuje nastavit filtry zarážky tak, že se ovlivní pouze specifické procesy, vlákna nebo počítače.
 
-**Pomocí nového pomocníka výjimka**: Umožňuje pomocníka výjimky (Visual Studio 2017), který nahrazuje Pomocníka pro výjimky.
+**Pomocí nového pomocníka výjimka**: Umožňuje pomocníka výjimky, která nahrazuje Pomocníka pro výjimky. (Pomocníka výjimky se podporuje od verze Visual Studio 2017)
 
 > [!NOTE]
 > Pro spravovaný kód, tato možnost nazývala dříve **Povolit Pomocníka pro výjimky** .
@@ -158,7 +158,7 @@ Chcete-li zjistit, jaké symboly jsou k dispozici v exportní tabulce knihovny D
 
 Pokud používáte starší verzi sady Visual Studio, může být k dispozici některé další možnosti.
 
-**Povolit Pomocníka pro výjimky**: Pro spravovaný kód umožňuje Pomocníka pro výjimky. V sadě Visual Studio 2017 nahrazuje pomocníka výjimky Pomocníka pro výjimky.
+**Povolit Pomocníka pro výjimky**: Pro spravovaný kód umožňuje Pomocníka pro výjimky. Spouští se v sadě Visual Studio 2017, pomocníka výjimky nahrazuje Pomocníka pro výjimky.
 
 **Vrátit zásobník volání v případě neošetřených výjimek**: Způsobí, že **zásobník volání** okno vrátit zásobník volání do bodu předtím, než došlo k neošetřené výjimce.
 

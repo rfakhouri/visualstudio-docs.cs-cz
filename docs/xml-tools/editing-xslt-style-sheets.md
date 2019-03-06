@@ -8,40 +8,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c212bcac1584a47f696f6ab90d4f616286a2ac5e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912560"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526201"
 ---
 # <a name="edit-xslt-style-sheets"></a>Úpravy šablon stylů XSLT
 
-XML Editor lze také upravit šablony stylů XSLT. Můžete využít výhod výchozí funkce editoru, jako je IntelliSense, osnovy, fragmenty kódu XML a tak dále. Kromě toho existují také nové funkce, které usnadňují vývoj v jazyce XSLT.
+XML editor lze také upravit šablony stylů XSLT. Můžete využít výhod výchozí funkce editoru, jako je IntelliSense, osnovy, fragmenty kódu XML a tak dále. Kromě toho existují také nové funkce, které usnadňují vývoj v jazyce XSLT.
 
 ## <a name="xslt-features"></a>Funkce XSLT
- Následující tabulka popisuje funkce specifické pro práci s šablon stylů XSLT.
 
- **Barevné zvýrazňování syntaxe**
+Následující tabulka popisuje funkce specifické pro práci s šablon stylů XSLT.
 
- XSLT klíčová slova, například `template`, `match`, a tak dále se zobrazují v barvu – klíčové slovo XSLT určené **písma a barvy** nastavení.
+**Barevné zvýrazňování syntaxe**
 
- **Podtržení vlnovkami**
+Klíčová slova XSLT, například `template` a `match`, jsou zobrazeny v barvu – klíčové slovo XSLT určené **písma a barvy** nastavení.
 
- XML Editor používá nainstalovaného *xslt.xsd* souboru ověření šablony stylů XSLT. Chyby ověřování se zobrazí jako modré podtržení vlnovkou. XML Editor také zkompiluje stylů v pozadí a chyby kompilátoru sestav nebo upozornění s odpovídající podtržení vlnovkou.
+**Podtržení vlnovkami**
 
- **Podpora pro bloky skriptu**
+XML editor používá nainstalovaného *xslt.xsd* souboru ověření šablony stylů XSLT. Chyby ověřování se zobrazí jako modré podtržení vlnovkou. XML editor také zkompiluje stylů v pozadí a chyby kompilátoru sestav nebo upozornění s odpovídající podtržení vlnovkou.
 
- Kód v blocích skriptu je podporováno v ladicím programu XSLT, můžete nastavit zarážky a krokovat kód bloku skriptu.
+**Podpora pro bloky skriptu**
 
- **Zobrazit výstup XSLT**
+Kód v blocích skriptu je podporováno v ladicím programu XSLT, můžete nastavit zarážky a krokovat kód bloku skriptu.
 
- Můžete provést transformaci XSL a zobrazit výstup z editoru XML. Další informace najdete v tématu [jak: Provedení transformace XSLT z editoru XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+**Zobrazit výstup XSLT**
 
- **Ladění XSLT**
+Můžete provést transformaci XSL a zobrazit výstup z editoru XML. Další informace najdete v tématu [jak: Provedení transformace XSLT z editoru XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
- Můžete spustit ladicí program XSLT ze souboru XSLT v editoru XML. Ladicí program podporuje nastavení zarážky v souboru XSLT, zobrazení stavu provedení transformace XSLT a tak dále. Proměnná XSLT ukazatel myši zobrazí popisek s hodnotou proměnné. Ladicí program lze použít k ladění šablony stylů nebo chcete-li ladit kompilované transformace XSL vyvolána z jiné aplikace. Další informace najdete v tématu [ladění XSLT](../xml-tools/debugging-xslt.md).
+**Ladění XSLT**
+
+Můžete spustit ladicí program XSLT ze souboru XSLT v editoru XML. Ladicí program podporuje nastavení zarážky v souboru XSLT, zobrazení stavu provedení transformace XSLT a tak dále. Proměnná XSLT ukazatel myši zobrazí popisek s hodnotou proměnné. Ladicí program lze použít k ladění šablony stylů nebo chcete-li ladit kompilované transformace XSL vyvolána z jiné aplikace. Další informace najdete v tématu [ladění XSLT](../xml-tools/debugging-xslt.md).
 
 ## <a name="see-also"></a>Viz také:
 
-- [Editor XML](../xml-tools/xml-editor.md)
+- [XML editor](../xml-tools/xml-editor.md)

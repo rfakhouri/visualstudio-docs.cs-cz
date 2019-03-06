@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63edeb597c3c085df3c9c9eb15f6c051e524a476
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920909"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525996"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Postupy: Prozkoumání modelu obsahu uzlů pomocí zobrazení modelu obsahu
 
@@ -23,11 +23,11 @@ Toto téma popisuje, jak prozkoumat uzly pomocí [zobrazení modelu obsahu](../x
 
 1.  Vytvořte nový soubor schématu XML.
 
-2.  Klikněte na tlačítko **pomocí editoru XML k zobrazení a úpravě základního souboru schématu XML** na zobrazení spuštění.
+2.  Klikněte na tlačítko **editoru XML použijte k zobrazení a úpravě základního souboru schématu XML** na zobrazení spuštění.
 
 3.  Zkopírujte ukázkový kód XML schéma z [ukázky XML schématu: nákupní pořadí schématu](../xml-tools/sample-xsd-file-purchase-order-schema.md) a vložte ji nahradit kód, který byl přidán do nového souboru XSD ve výchozím nastavení.
 
-4.  Vyberte `purchaseOrder` element ve schématu Explorer kliknutím pravým tlačítkem myši `purchaseOrder` element v editoru XML a vyberete **zobrazit v Průzkumníkovi XML**.
+4.  Vyberte `purchaseOrder` element ve schématu Explorer kliknutím pravým tlačítkem myši `purchaseOrder` element v XML editor a vyberete **zobrazit v Průzkumníkovi XML**.
 
 5.  Klikněte pravým tlačítkem myši `purchaseOrder` v Průzkumníku XML a vyberte **zobrazit v zobrazení modelu obsahu**.
 

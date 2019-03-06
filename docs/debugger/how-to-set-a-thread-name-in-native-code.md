@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715177"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526227"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Postupy: Nastavení názvu vlákna v nativním kódu
 Pojmenování vlákna je možné v jakékoli edici sady Visual Studio. Pojmenování vláken je užitečné pro identifikaci vlákna podíl **vlákna** okno při ladění spuštěného procesu. S zřejmou názvem vláken může být také užitečné při ladění a dodatečně prostřednictvím kontroly výpisu při selhání a analýza výkonu zachycuje pomocí různých nástrojů.
@@ -40,7 +40,7 @@ Výhody:
 * Názvy vláken jsou také viditelné při použití jiných nástrojů, jako [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) ladicího programu a [Analyzátor výkonu Windows](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Analyzátor výkonu.
 
 Upozornění:
-* Názvy vláken jsou pouze v sadě Visual Studio 2017 verze 15.6 a vyšší.
+* Názvy vláken jsou viditelné pouze v sadě Visual Studio 2017 verze 15.6 a novějších verzích.
 * Pokud soubor výpisu následné chybovému ukončení ladění, názvy vláken viditelné pouze pokud selhání byl vytvořen v systému Windows 10 verze 1607, Windows Server 2016 nebo novější verze systému Windows.
 
 *Příklad:*

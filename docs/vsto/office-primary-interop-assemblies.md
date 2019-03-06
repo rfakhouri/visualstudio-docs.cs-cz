@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602283"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525896"
 ---
 # <a name="office-primary-interop-assemblies"></a>primární spolupracující sestavení sady Office
 
@@ -57,15 +57,15 @@ Při instalaci sady Visual Studio se PIA instalují automaticky do umístění v
 
 Tyto kopie PIA pomáhají aplikaci Visual Studio zabránit několika vývojovým problémům, které může dojít, když různé verze PIA jsou registrovány v globální mezipaměti sestavení.
 
-Visual Studio nainstaluje tyto kopie PIA do následujících umístění na vývojovém počítači:
+Od verze Visual Studio 2017, jsou nainstalované tyto kopie PIA do následujících sdílené umístění na vývojovém počítači:
 
-- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
 
-  (nebo *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14* v 64bitových operačních systémech)
+- (nebo * % ProgramFiles (x86) %\Microsoft Visual Studio Tools Studio\Shared\Visual pro Office\PIA\* v 64bitových operačních systémech)
 
-- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*
-
-  (nebo *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15* v 64bitových operačních systémech)
+> [!NOTE]
+> Pro starší verze sady Visual Studio, se nainstalují tyto sestavení PIA sady Visual Studio Tools for Office\PIA ve složce * složce % ProgramFiles % pro tuto verzi sady Visual Studio.  
+> Příklad: * % ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Primární spolupracující sestavení v globální mezipaměti sestavení
 
@@ -79,7 +79,7 @@ Sestavení PIA sady Office nejsou vyžadovány v počítačích koncových uživ
 
 Každá šablona projektu Office v sadě Visual Studio je navržena pro práci s jedinou aplikací Microsoft Office. Pokud chcete používat funkce ve více aplikacích Microsoft Office nebo použít funkce v aplikace nebo komponenty, který nemá projekt v sadě Visual Studio, musíte přidat odkaz na požadovaná PIA.
 
-Ve většině případů byste měli přidat odkazy na PIA, které jsou nainstalované ve Visual Studio v části `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` adresáře. Tyto verze sestavení jsou uvedeny na **Framework** karty **správce odkazů** dialogové okno. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+Ve většině případů byste měli přidat odkazy na PIA, které jsou nainstalované ve Visual Studio v části `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` adresáře. Tyto verze sestavení jsou uvedeny na **Framework** karty **správce odkazů** dialogové okno. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Pokud máte nainstalována a registrována sestavení PIA v globální mezipaměti sestavení, tyto verze sestavení jsou uvedeny na **COM** karty **správce odkazů** dialogové okno. Můžete byste se vyhnout přidávání odkazů na tyto verze sestavení, protože existují některé problémy rozvoje, které může dojít, když je používáte. Například Pokud zaregistrujete různé verze PIA v globální mezipaměti sestavení, váš projekt bude automaticky svázán s verzí sestavení, která byla zaregistrována jako poslední – i v případě, že zadáte jinou verzi sestavení  **COM** karty **správce odkazů** dialogové okno.
 
@@ -90,7 +90,7 @@ Pokud máte nainstalována a registrována sestavení PIA v globální mezipamě
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Primární spolupracující sestavení pro aplikace Microsoft Office
 
-V následující tabulce jsou uvedeny sestavení primární spolupráce, které jsou k dispozici pro [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+V následující tabulce jsou uvedeny sestavení primární spolupráce, které jsou k dispozici pro [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 

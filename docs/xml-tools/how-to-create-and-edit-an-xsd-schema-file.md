@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937913"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525355"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Postupy: Vytvoření a úprava souboru schématu XSD
 
@@ -29,14 +29,10 @@ Toto téma popisuje, jak vytvořit nový soubor schématu XML (XSD) a pak přide
 
 ## <a name="to-edit-a-file"></a>Chcete-li upravit soubor
 
-1. Vyberte **pomocí editoru XML k zobrazení a úpravě základního souboru schématu XML** odkaz na zobrazení spuštění.
+1. Vyberte **editoru XML použijte k zobrazení a úpravě základního souboru schématu XML** odkaz na zobrazení spuštění.
 
-   XML Editor se zobrazí se nový soubor otevřít.
+   XML editor se zobrazí se nový soubor otevřít.
 
 2. Zkopírujte ukázkový kód XML schéma z [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md) a vložte ji nahradit kód, který byl přidán do nového souboru XSD ve výchozím nastavení.
 
    **Průzkumníka schémat XML** je aktualizován o nové sadě schémat.
-
-## <a name="see-also"></a>Viz také:
-
-- [Práce s daty XML](../xml-tools/working-with-xml-data.md)
