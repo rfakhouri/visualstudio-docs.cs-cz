@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700910"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428697"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Správa výjimek pomocí ladicího programu v sadě Visual Studio
 
@@ -204,7 +204,7 @@ Můžete přidat výjimku **nastavení výjimek** pomocí předchozího postupu:
 Použití **nastavení výjimek** okno Nastavení podmínek v výjimky. Aktuálně se podporují příkladem podmínek může být její název modulu pro zahrnutí nebo vyloučení pro výjimku. Nastavením názvů modulů jako podmínky můžete přerušit pro výjimku pouze na určité moduly kódu. Také můžete vyhnout rozdělení na konkrétní moduly.
 
 > [!NOTE]
-> Přidání podmínky do výjimky je novinkou systémů [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Přidání podmínky k výjimce, je podporované počínaje [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Přidat podmíněné výjimky:
 

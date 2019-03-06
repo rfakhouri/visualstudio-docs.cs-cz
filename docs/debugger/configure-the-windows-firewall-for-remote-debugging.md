@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa7667c26e2394e86833f6d0ce633ea9a4a168
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637331"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428723"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurace brány Windows Firewall pro vzdálené ladění
 
@@ -52,11 +52,25 @@ Visual Studio a vzdálený ladicí program se pokusí otevřít správné porty 
 
 Pro vzdálené ladění, je třeba otevřít na vzdáleném počítači následující porty:
 
+::: moniker range="vs-2017"
+
 |**Porty**|**Příchozí/odchozí**|**Protokol**|**Popis**|
 |-|-|-|-|
 |4022|příchozí|TCP|Pro sady VS 2017. Port číslo zvýší o 2 pro každou verzi sady Visual Studio. Další informace najdete v tématu [přiřazení portů vzdáleného ladicího programu sady Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |4023|příchozí|TCP|Pro sady VS 2017. Port číslo zvýší o 2 pro každou verzi sady Visual Studio. Toto je pouze použité pro vzdálené ladění 32bitový proces z 64bitovou verzi vzdáleného ladicího programu. Další informace najdete v tématu [přiřazení portů vzdáleného ladicího programu sady Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|Odchozí|UDP|(Volitelné) Vyžaduje se pro zjišťování vzdálený ladicí program.|
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+|**Porty**|**Příchozí/odchozí**|**Protokol**|**Popis**|
+|-|-|-|-|
+|4024|příchozí|TCP|Pro VS 2019. Port číslo zvýší o 2 pro každou verzi sady Visual Studio. Další informace najdete v tématu [přiřazení portů vzdáleného ladicího programu sady Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4025|příchozí|TCP|Pro VS 2019. Port číslo zvýší o 2 pro každou verzi sady Visual Studio. Toto je pouze použité pro vzdálené ladění 32bitový proces z 64bitovou verzi vzdáleného ladicího programu. Další informace najdete v tématu [přiřazení portů vzdáleného ladicího programu sady Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|3702|Odchozí|UDP|(Volitelné) Vyžaduje se pro zjišťování vzdálený ladicí program.|
+
+::: moniker-end
 
 Pokud vyberete **použít spravovaný režim kompatibility** pod **nástroje** > **možnosti** > **ladění**Open Tyto porty další vzdálený ladicí program. Spravovaný režim kompatibility ladicí program umožňuje starší verze, Visual Studio 2010 verze ladicího programu.
 

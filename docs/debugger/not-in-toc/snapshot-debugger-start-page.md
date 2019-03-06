@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703705"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428645"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Začínáme s Snapshot Debugger
 
@@ -69,6 +69,6 @@ Další informace o ladicím programu snímků můžete najít na [stránky doku
 
 ## <a name="dont-show-me-this-again"></a>Není "zprávu již nezobrazovat
 
-Chcete-li již nezobrazovat úvodní stránku ladicího programu snímků při připojování ladicího programu snímků, změňte **Show "Začínáme" stránku při spuštění relace** možnost **nástroje**  >   **Možnosti** > **Snapshot Debugger**.
+Chcete-li již nezobrazovat Snapshot Debugger úvodní stránky při připojování ladicího programu snímků, změňte **Show "Začínáme" stránku při spuštění relace** možnost **nástroje**  >   **Možnosti** > **Snapshot Debugger**.
 
 ![Stránka – možnost nástroje ladicího programu snímků](../media/snapshot-startpage-tools-options.png)

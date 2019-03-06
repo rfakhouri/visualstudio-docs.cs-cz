@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatném školení Datacampu součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841426"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428632"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -69,8 +69,8 @@ Můžete kdykoli zastavit a obnovit trénování v příští relaci.  Stačí n
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, maloobchodní prodej | 3 měsíce       |  Ne.  K dispozici pro nové předplatitele pouze          |
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |  Ne.  K dispozici pro nové předplatitele pouze           |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | K dispozici                                             |  Ne.  K dispozici pro nové předplatitele pouze           |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | K dispozici                                              |  Ne.  K dispozici pro nové předplatitele pouze           |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 3 měsíců                                             |  Ne.  K dispozici pro nové předplatitele pouze           |
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 3 měsíců                                              |  Ne.  K dispozici pro nové předplatitele pouze           |
 | Visual Studio Dev Essentials | Není k dispozici  | 2 měsíce | Ne. K dispozici pro nové předplatitele pouze |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |

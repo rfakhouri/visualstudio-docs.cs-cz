@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637500"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428762"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ladicího programu sady Visual Studio ke spuštěným procesům
 Ladicí program sady Visual Studio můžete připojit ke spuštěnému procesu na místním nebo vzdáleném počítači. Poté, co je proces spuštěn, vybrat **ladění** > **připojit k procesu** nebo stiskněte klávesu **Ctrl**+**Alt** + **P** ve Visual Studiu a použít **připojit k procesu** dialogové okno připojit ladicí program k procesu.
@@ -95,9 +95,20 @@ Podrobnější pokyny k ladění aplikací ASP.NET, které jsou nasazené do slu
 
    - Vyberte šipku rozevíracího seznamu vedle **cíl připojení**a z rozevíracího seznamu vyberte název počítače.
    - Zadejte název počítače **cíl připojení** pole.
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > Pokud se nemůžete připojit pomocí názvu vzdáleného počítače, zkuste použít IP adresu a port adresu (například `123.45.678.9:4022`). 4022 je výchozím portem pro vzdálený ladicí program sady Visual Studio 2017 x64. Ostatní přiřazení portů vzdáleného ladicího programu, najdete v části [přiřazení portů vzdáleného ladicího programu](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > Pokud se nemůžete připojit pomocí názvu vzdáleného počítače, zkuste použít IP adresu a port adresu (například `123.45.678.9:4022`). 4024 je výchozím portem pro vzdálený ladicí program Visual Studio 2019 x64. Ostatní přiřazení portů vzdáleného ladicího programu, najdete v části [přiřazení portů vzdáleného ladicího programu](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
 
    - Vyberte **najít** vedle **cíl připojení** otevřete okno **vzdálená připojení** dialogové okno. **Vzdálená připojení** dialogové okno obsahuje všechna zařízení, které jsou v místní podsíti, nebo přímo připojené k vašemu počítači. Možná budete muset [otevřete UDP port 3702](../debugger/remote-debugger-port-assignments.md) na serveru ke zjištění vzdáleného zařízení. Vyberte počítač nebo zařízení a potom klikněte na tlačítko **vyberte**.
 
@@ -142,7 +153,7 @@ Pokud ani jeden z těchto řešení je možné, třetí možnost je připojit k 
 Můžete rychle znovu připojit k procesům, které byly dříve přiřazená výběrem **ladění** > **znovu připojit k procesu** (**Shift** + **Alt**+**P**). Název procesu, když zvolíte tento příkaz, ladicí program se okamžitě pokusí připojit k naposledy procesy, které jste připojili při prvním pokusu odpovídat ID předchozího procesu a pokud se nezdaří, to provede spárováním odpovídajících na předchozí. Pokud nejsou nalezeny žádné shody, nebo pokud několik procesů mají stejný název, **připojit k procesu** dialogové okno se otevře, takže můžete vybrat správný proces.
 
 > [!NOTE]
-> **Znovu připojit k procesu** příkaz Novinky v sadě Visual Studio 2017.
+> **Znovu připojit k procesu** příkaz je k dispozici od verze Visual Studio 2017.
 
 ## <a name="BKMK_Scenarios"></a> Běžné scénáře ladění
 

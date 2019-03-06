@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb86929a050a61a50a7aa1dd41220f4e087ad767
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607041"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428541"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump – ukázka
 
@@ -64,7 +64,7 @@ Ve výchozím nastavení je v instalačním adresáři chráněném adresáři. 
 
 ## <a name="run-the-dia2dump-sample"></a>Spustit dia2dump – ukázka
 
-Dia2Dump.exe se může spolehnout msdia*verze*server DLL modelu COM pro poskytování jeho služeb. V sadě Visual Studio 2015 a Visual Studio 2017 verze je knihovnu msdia140.dll. Pokud msdia*verze*server DLL modelu COM není inicializován, je třeba jej zaregistrovat před dia2dump.exe můžete pracovat. Adresář sady DIA SDK má bin podadresář, který obsahuje x86 verzi knihovny DLL. Verze pro x64 architektura počítače je v bin\amd64 a verze pro ARM je v bin\arm. Zaregistruje knihovnu dll, otevřete okno příkazového řádku pro vývojáře se zvýšenými oprávněními a přejděte do adresáře, který obsahuje verzi pro architekturu vašeho počítače. Zadejte příkaz `regsvr32 msdia140.dll` registrace modelu COM serveru.
+Dia2Dump.exe se může spolehnout msdia*verze*server DLL modelu COM pro poskytování jeho služeb. Spouští se v sadě Visual Studio 2015, verze je knihovnu msdia140.dll. Pokud msdia*verze*server DLL modelu COM není inicializován, je třeba jej zaregistrovat před dia2dump.exe můžete pracovat. Adresář sady DIA SDK má bin podadresář, který obsahuje x86 verzi knihovny DLL. Verze pro x64 architektura počítače je v bin\amd64 a verze pro ARM je v bin\arm. Zaregistruje knihovnu dll, otevřete okno příkazového řádku pro vývojáře se zvýšenými oprávněními a přejděte do adresáře, který obsahuje verzi pro architekturu vašeho počítače. Zadejte příkaz `regsvr32 msdia140.dll` registrace modelu COM serveru.
 
 ### <a name="to-run-the-sample"></a>Chcete-li spustit ukázku
 

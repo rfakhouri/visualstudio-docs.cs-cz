@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319447"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428567"
 ---
 # <a name="xamarin-mobile-app-development"></a>Vývoj mobilních aplikací pro Xamarin
 
@@ -28,7 +28,7 @@ Další informace o návrháři s Androidem, najdete v článku [přehled návrh
 
 ## <a name="ios"></a>iOS
 
-IOS Designer je plně integrovaná se službou Visual Studio pro Mac a umožňuje úpravy s náhledem .xib a scénáře souborů vytvářet iOS, tvOS a WatchOS uživatelská rozhraní a přechody. Celé uživatelské rozhraní může být sestavena pomocí funkcí a přetažení mezi nástrojů a návrhovou plochu, při použití intuitivní prostředí pro zpracování událostí. IOS Designer také podporuje [vlastní ovládací prvky/xamarin/ios /-přehled uživatelského rozhraní/Návrhář/ios navrhovatelé – ovládací prvky –) s její Další výhodou vykreslování v době návrhu.
+IOS Designer je plně integrovaná se službou Visual Studio pro Mac a umožňuje úpravy s náhledem .xib a scénáře souborů vytvářet iOS, tvOS a WatchOS uživatelská rozhraní a přechody. Celé uživatelské rozhraní může být sestavena pomocí funkcí a přetažení mezi nástrojů a návrhovou plochu, při použití intuitivní prostředí pro zpracování událostí. IOS Designer také podporuje [vlastní ovládací prvky](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) s její Další výhodou vykreslování v době návrhu.
 
 ![iOS designer scénáře](media/intro-image30.png)
 

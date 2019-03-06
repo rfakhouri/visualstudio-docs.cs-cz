@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696737"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428684"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>První pohled na ladicí program sady Visual Studio
 
@@ -77,7 +77,7 @@ V ladicím programu, najeďte myší na řádek kódu až **běžet do kliknutí
 ![Běžet do kliknutí](../debugger/media/dbg-tour-run-to-click-2.png "běžet do kliknutí")
 
 > [!NOTE]
-> **Běžet do kliknutí** tlačítko (běžet do tohoto místa) je novinkou [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **Běžet do kliknutí** (běžet do tohoto místa) tlačítko je k dispozici od [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Klikněte na tlačítko **běžet do kliknutí** tlačítko (běžet do tohoto místa). Ladicí program přejde na řádek kódu, které jste klepnuli na.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954426"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428827"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odkaz na hodnotu barvy pro sadu Visual Studio
 
@@ -134,7 +134,7 @@ Při použití této referenční příručce, mějte na paměti:
 | Popředí: zakázáno | ![#FFA2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 vzorníku")<br />`#FFA2A4A5` | ![#FF656565 vzorníku](../../extensibility/ux-guidelines/media/656565.png "#FF656565 vzorníku")<br />`#FF656565` | ![#FFA2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 vzorníku")<br />`#FFA2A4A5` | ![Vzorník GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText vzorníku")<br />`GrayText` |
 | Na pozadí: zakázáno | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 vzorníku")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "#FF252526 vzorníku")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 vzorníku")<br />`#FFF6F6F6` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
 | Ohraničení | ![Vzorník #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB vzorníku")<br />`#FFCCCEDB` | ![#FF434346 vzorníku](../../extensibility/ux-guidelines/media/434346.png "#FF434346 vzorníku")<br />`#FF434346` | ![Vzorník #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB vzorníku")<br />`#FFCCCEDB` | ![Vzorník ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark vzorníku")<br />`ControlDark` |
-| Ohraničení: zakázáno | ![Vzorník #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB vzorníku")<br />`#FFCCCEDB` | ![#FF434346 vzorníku](../../extensibility/ux-guidelines/media/434346.png "#FF434346 vzorníku")<br />`#FF434346` | ![#FFC6C6C6 vzorníku](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 vzorníku")<br />`#FFC6C6C6` | ![Vzorník ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark vzorníku")<br />`ControlDark ` |
+| Ohraničení: zakázáno | ![Vzorník #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB vzorníku")<br />`#FFCCCEDB` | ![#FF434346 vzorníku](../../extensibility/ux-guidelines/media/434346.png "#FF434346 vzorníku")<br />`#FF434346` | ![#FFC6C6C6 vzorníku](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 vzorníku")<br />`#FFC6C6C6` | ![Vzorník ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark vzorníku")<br />`ControlDark` |
 
 ### <a name="list-items"></a>Položky seznamu
 

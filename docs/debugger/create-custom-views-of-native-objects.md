@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931200e6f921c26d23fddde4a8420f042240e32f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637851"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428801"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Vytváření vlastních zobrazení nativních objektů v ladicím programu
 
@@ -99,11 +99,21 @@ Můžete přidat *.natvis* soubory do svého adresáře uživatel nebo systémov
 
 1. Všechny *.natvis* soubory, které jsou vložené *PDB* ladění, pokud existuje soubor stejného názvu v načtený projekt.
 
-1. Žádné *.natvis* soubory, které jsou v načtený projekt C++ nebo nejvyšší úrovně řešení. Tato skupina obsahuje všechny načtené projekty C++, včetně knihoven tříd, ale ne projekty v jiných jazycích.
+2. Žádné *.natvis* soubory, které jsou v načtený projekt C++ nebo nejvyšší úrovně řešení. Tato skupina obsahuje všechny načtené projekty C++, včetně knihoven tříd, ale ne projekty v jiných jazycích.
 
-1.  Adresář Natvis konkrétního uživatele (například *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+::: moniker range="vs-2017"
 
-1.  Adresář systémová Natvis (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Tento adresář je *.natvis* soubory, které jsou nainstalované s Visual Studio. Pokud máte oprávnění správce, můžete přidat soubory do tohoto adresáře.
+3.  Adresář Natvis konkrétního uživatele (například *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+3.  Adresář Natvis konkrétního uživatele (například *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*).
+
+::: moniker-end
+
+4.  Adresář systémová Natvis (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Tento adresář je *.natvis* soubory, které jsou nainstalované s Visual Studio. Pokud máte oprávnění správce, můžete přidat soubory do tohoto adresáře.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Upravte soubory .natvis při ladění
 

@@ -8,18 +8,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920038"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428658"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>První seznámení s integrovaným vývojovým prostředím sady Visual Studio
 
 V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio provedeme si některé z okna, nabídek a další funkce uživatelského rozhraní.
 
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Časový interval pro spuštění
+
+První věc, který se zobrazí po spuštění sady Visual Studio je okno start. V okně start usnadňuje "kód" rychleji získat. Obsahuje možnosti, jak zavřít nebo podívejte se na kód, otevřete existující projekt nebo řešení, vytvořte nový projekt nebo stačí otevřít místní složku, která obsahuje některé soubory s kódem.
+
+[![](media/vs-2019/start-window.png "Časový interval pro spuštění v aplikaci Visual Studio 2019")](media/vs-2019/start-window.png)
+
+Pokud je to Visual Studio používáte poprvé, bude váš seznam posledních projektů prázdný.
+
+Pokud pracujete s typu než MSBuild na základě základů kódu, budete používat **otevřít místní složku** možnost otevření kódu v sadě Visual Studio. Další informace najdete v tématu [vývoj kódu v sadě Visual Studio bez projektů nebo řešení](develop-javascript-code-without-solutions-projects.md). V opačném případě můžete vytvořit nový projekt nebo klonování projektu z poskytovatele zdroj jako GitHub nebo Azure DevOps.
+
+**Pokračovat bez kódu** možnost jednoduše otevře vývojové prostředí sady Visual Studio bez jakýchkoli konkrétních projektu nebo kód načtený. Můžete zvolit tuto možnost připojit [Live Share](/visualstudio/liveshare/) relace nebo se připojit k procesu pro ladění. Můžete také stisknout klávesu **Esc** zavřete okno start a otevření rozhraní IDE.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>Úvodní stránka
 
@@ -31,9 +49,27 @@ Pokud zavřete **úvodní stránka** a chcete ho znovu zobrazit, můžete znovu 
 
 ![Nabídka soubor v sadě Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
 ## <a name="create-a-project"></a>Vytvoření projektu
 
 Pokračujte ve zkoumání funkcí sady Visual Studio, vytvoříme nový projekt.
+
+::: moniker range=">=vs-2019"
+
+1. Na **spusťte okno**vyberte **vytvořte nový projekt**a potom do vyhledávacího pole zadejte **javascript** pro filtrování seznamu typů projektů na ty, které obsahují "javascript" v názvu nebo jazyk typu.
+
+   Visual Studio poskytuje různé druhy šablony projektů, které vám pomůžou začít pracovat rychle kódování. (Případně, pokud jste vývojář, TypeScript, můžete vytvořit projekt v daném jazyce. Uživatelské rozhraní, které jsme vám pomyslného je podobné pro všechny programovací jazyky.)
+
+   ![Hledat v šablonách projektů v okně spuštění sady Visual Studio](media/vs-2019/create-new-project.png)
+
+1. Zvolte **prázdná webová aplikace Node.js** šablony projektu a klikněte na tlačítko **Další**. 
+
+1. V **konfigurovat nový projekt** dialogové okno, které se zobrazí, přijměte výchozí název projektu a zvolte možnost **vytvořit**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 1. Na **úvodní stránka**, do vyhledávacího pole v rámci **nový projekt**, zadejte v **javascript** pro filtrování seznamu typů projektů na ty, které obsahují "javascript" v názvu nebo typ jazyka.
 
@@ -42,6 +78,7 @@ Pokračujte ve zkoumání funkcí sady Visual Studio, vytvoříme nový projekt.
    Visual Studio poskytuje různé druhy šablony projektů, které vám pomůžou začít pracovat rychle kódování. Zvolte **prázdná webová aplikace Node.js** šablony projektu. (Případně, pokud jste vývojář, TypeScript, můžete vytvořit projekt v daném jazyce. Uživatelské rozhraní, které jsme vám pomyslného je podobné pro všechny programovací jazyky.)
 
 1. V **nový projekt** dialogové okno, které se zobrazí, přijměte výchozí název projektu a zvolte možnost **OK**.
+::: moniker-end
 
    Vytvoření projektu a soubor s názvem *server.cs* se otevře v **Editor** okna. **Editor** zobrazuje obsah souborů a je, ve kterém budete provádět většinu práce psaní kódu v sadě Visual Studio.
 
