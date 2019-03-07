@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 47957ac5ceac1d5b1be8da3b9625631a4617f61b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 22c4f24c8e97d98bb0bbe88fb998deb5929c6b7b
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526941"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567122"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalace sady Visual Studio verze vedle sebe
 
@@ -61,7 +61,7 @@ Informace specifické pro jazyk najdete v příslušném tématu v následujíc�
 | Visual Basic | [Stránka Aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Stránka Aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Vývoj s Vizuálem F# v sadě Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Postupy: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset.md?view=vs-2017) |
+|C++ | [Postupy: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -69,7 +69,7 @@ Informace specifické pro jazyk najdete v příslušném tématu v následujíc�
 
 * [Instalace sady Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Přenos, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
-* [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assembiles.md?view=vs-2017)
+* [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Informace specifické pro jazyk najdete v příslušném tématu v následujíc�
 | Visual Basic | [Stránka Aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
 | Visual C# | [Stránka Aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
 | Visual F# | [Vývoj s Vizuálem F# v sadě Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2019) |
-| C++ | [Postupy: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset.md?view=vs-2019) |
+| C++ | [Postupy: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -88,6 +88,6 @@ Informace specifické pro jazyk najdete v příslušném tématu v následujíc�
 
 * [Instalace sady Visual Studio](install-visual-studio.md?view=vs-2019)
 * [Přenos, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
-* [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assembiles.md?view=vs-2019)
+* [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
 
 ::: moniker-end

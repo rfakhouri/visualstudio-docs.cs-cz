@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 9da83c8c2e3b3cd86022b8fcc54f1c90a417cada
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e05d00bc01620f71b0fb6d97a3a7b4e78732f365
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766884"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567222"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurace projektu Azure v sadě Visual Studio za účelem použití více konfigurací služby
 
@@ -29,7 +29,7 @@ Nastavení konfigurace jsou spravovaná a upravit v sadě Visual Studio pomocí 
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
-Informace o základní schémata pro definici služby a služby konfigurační soubory, najdete v článku [.csdef XML schématu](/azure/cloud-services/schema-csdef-file.md) a [.cscfg XML schématu](/azure/cloud-services/schema-cscfg-file.md) článků. Další informace o konfiguraci služby najdete v tématu [jak konfigurovat Cloud Services](/azure/cloud-services/cloud-services-how-to-configure-portal).
+Informace o základní schémata pro definici služby a služby konfigurační soubory, najdete v článku [.csdef XML schématu](/azure/cloud-services/schema-csdef-file) a [.cscfg XML schématu](/azure/cloud-services/schema-cscfg-file) článků. Další informace o konfiguraci služby najdete v tématu [jak konfigurovat Cloud Services](/azure/cloud-services/cloud-services-how-to-configure-portal).
 
 
 ## <a name="configuration-page"></a>Stránka Konfigurace

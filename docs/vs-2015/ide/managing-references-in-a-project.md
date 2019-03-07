@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763647"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567212"
 ---
 # <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
 ## <a name="project-to-project-references"></a>Odkazy typu projekt projekt  
  Odkazy typu projekt projekt jsou odkazy na projekty obsahující sestavení; Vytvoření s použitím **projektu** kartu. Sada Visual Studio můžete najít sestavení při zadané cestě do projektu.  
   
- Pokud máte projekt, který vytváří sestavení, by měla odkazovat na projekt a nepoužívat odkaz na soubor (viz níže). Výhodou odkazu typu projekt projekt je, že vytvoří závislost mezi projekty v systému sestavení. Závislý projekt bude vytvořen, pokud se změnil od posledního odkazujícího projektu. Odkaz na soubor nevytváří závislost sestavení, takže je možné sestavit odkazující projekt bez vytváření závislého projektu a odkaz se může stát zastaralým. (To znamená, že projekt může odkazovat na dřívější sestavené verze projektu.) Výsledkem může být několik verzí jednoho souboru knihovny DLL požadovaným v adresáři bin, což není možné. Pokud dojde k tomuto konfliktu, zobrazí se zpráva, jako [upozornění: závislost 'file' v projektu 'project' nelze zkopírovat do běhového adresáře, protože by přepsala odkaz 'file'. ](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md) a [jak: Vytváření a odebrání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Pokud máte projekt, který vytváří sestavení, by měla odkazovat na projekt a nepoužívat odkaz na soubor (viz níže). Výhodou odkazu typu projekt projekt je, že vytvoří závislost mezi projekty v systému sestavení. Závislý projekt bude vytvořen, pokud se změnil od posledního odkazujícího projektu. Odkaz na soubor nevytváří závislost sestavení, takže je možné sestavit odkazující projekt bez vytváření závislého projektu a odkaz se může stát zastaralým. (To znamená, že projekt může odkazovat na dřívější sestavené verze projektu.) Výsledkem může být několik verzí jednoho souboru knihovny DLL požadovaným v adresáři bin, což není možné. Pokud dojde k tomuto konfliktu, zobrazí se zpráva, jako [upozornění: závislost 'file' v projektu 'project' nelze zkopírovat do běhového adresáře, protože by přepsala odkaz 'file'. ](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md) a [jak: Vytváření a odebrání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Odkaz na soubor místo odkazu typu projekt projekt je vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.  

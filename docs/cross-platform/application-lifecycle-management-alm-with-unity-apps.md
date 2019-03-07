@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802563"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567299"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps s aplikacemi Unity
 
@@ -26,7 +26,7 @@ Následující tabulky Identifikujte jak DevOps funkce v sadě Visual Studio pou
 
 ## <a name="agile-tools"></a>Agilní nástroje
 
-Referenční odkaz: [Agilní nástroje a agilní projektu správy](/azure/devops/boards/backlogs/overview?view=vsts) (s použitím Azure tabulí nebo TFS, včetně Team Explorer Everywhere)
+Referenční odkaz: [Agilní nástroje a agilní projektu správy](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (s použitím Azure tabulí nebo TFS, včetně Team Explorer Everywhere)
 
 Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé na typu projektu a kódování jazyky.
 

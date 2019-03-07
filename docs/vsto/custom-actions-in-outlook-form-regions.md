@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638033"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567180"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Vlastní akce v oblastech formulářů aplikace Outlook
   Akce zobrazení tlačítek, které umožní uživatelům na položku Microsoft Office Outlook. Například reakce na položky pošty, uživatelé kliknou **odpověď**, **Odpovědět všem**, nebo **vpřed** akční tlačítka. Všechny tyto akce vytvoří novou položku e-mailu a vyplnit položky pole pomocí informací z původní položky.
@@ -28,7 +28,7 @@ ms.locfileid: "56638033"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Přidat vlastní akce pro oblasti formuláře
- Chcete-li přidat vlastní akci pro oblasti formuláře, použijte **vlastní akce** dialogové okno. Můžete otevřít **vlastní akce** dialogové okno v **Průzkumníku řešení** tak, že rozbalíte **Manifest** uzlu, vyberte **CustomActions**vlastnost a potom kliknutím na tlačítko se třemi tečkami (![ASP.NET Mobilní návrháře Elipsa](../sharepoint/media/mwellipsis.gif "ASP.NET – Návrhář mobilních řešení Elipsa")).
+ Chcete-li přidat vlastní akci pro oblasti formuláře, použijte **vlastní akce** dialogové okno. Můžete otevřít **vlastní akce** dialogové okno výběrem oblasti formuláře v **Průzkumníka řešení**, se zvětšující **Manifest** uzlu v **vlastnosti Okno**, vyberete **CustomActions** vlastnost a potom kliknutím na tlačítko se třemi tečkami (![ASP.NET Mobilní návrháře Elipsa](../sharepoint/media/mwellipsis.gif "technologie ASP.NET Mobile Návrhář Elipsa")).
 
  Můžete použít **vlastní akce** dialogové okno k zadání *cílit na formulář*. Formulář Cíl je formulář, který se zobrazí, když uživatel provede vlastní akci.
 

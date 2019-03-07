@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f320c992f3bb82ee29829d8d0a8dccc230ee6eb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41ca66c796b352113973dcf8d8158f385f49a8ec
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951602"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567367"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -214,7 +214,7 @@ Jak jejich práce postupuje, týmy aktualizují své pracovní položky tak, aby
 
 Další informace:
 
-- [Informace o Agilních nástrojů a Agilního řízení projektů](/azure/devops/boards/backlogs/overview?view=vsts)
+- [Informace o Agilních nástrojů a Agilního řízení projektů](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [Grafů, řídicích panelů a widgetů (služby Azure DevOps)](/azure/devops/report/dashboards/overview?view=vsts)
 

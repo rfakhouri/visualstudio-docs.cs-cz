@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 962657d19026f85e98b1f1d22241aa57013d7df6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834069"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567380"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript ve Visual Studiu 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jaz
 
 - Vytvoření aplikace pro různé platformy pomocí Apache Cordova, [získat Visual Studio Tools pro Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Chcete-li vytvořit [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)a univerzálních aplikací pro (, které podporují obě platformy), [získat potřebné nástroje](http://dev.windows.com/develop/downloads).
+- Chcete-li vytvořit [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)a univerzálních aplikací pro (, které podporují obě platformy), [získat potřebné nástroje](https://developer.microsoft.com/windows/downloads).
 
 - Vytvoření cloudové služby, najdete v tématu [webu Microsoft Azure](http://azure.microsoft.com/documentation/).
 
@@ -44,15 +44,15 @@ JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jaz
 |Funkce|Popis|
 |-------------|-----------------|
 |Třídy|Podporuje novou syntaxi deklarace [třídy](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
-|Co|[Co](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) umožňují snadněji a čisticí asynchronní programování. Promise konstruktory jsou podporovány, spolu s `all` a `race` pomocné metody.|
+|Co|[Co](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) umožňují snadněji a čisticí asynchronní programování. Promise konstruktory jsou podporovány, spolu s `all` a `race` pomocné metody.|
 |Iterátory|Nyní můžete iterovat iterable objekty (včetně polí, jako pole objektů a iterátory), vyvolání hook vlastní iterace pomocí příkazů ke spuštění pro hodnotu každé různé vlastnosti. Další informace najdete v tématu [iterátory a generátory](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Poznámka:**  Generátory se zatím nepodporují.|
 |Funkce šipky|Funkce šipky (= >) poskytuje syntaxi ve zkráceném tvaru pro `function` – klíčové slovo, které funkce lexikální `this` vazby.|
-|Nové metody pro předdefinované objekty|[Objekt Array](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Math – objekt](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [číslo objektu](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [objekt objektu](/visualstudio/scripting-docs/javascript/reference/object-object-javascript), a [řetězec objektu](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) předdefinované objekty zahrnují mnoho nových funkcí nástroje a vlastnosti pro manipulaci a prohledávaní údaje.|
+|Nové metody pro předdefinované objekty|[Objekt Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math – objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [číslo objektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [objekt objektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object), a [řetězec objektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) předdefinované objekty zahrnují mnoho nových funkcí nástroje a vlastnosti pro manipulaci a prohledávaní údaje.|
 |Vylepšení literálu objektu|Objektů teď podporují vypočítané vlastnosti, definice stručné metod a syntaxi ve zkráceném tvaru pro vlastnosti, jehož hodnota je inicializována na proměnnou se stejným názvem. Další informace najdete v tématu [vytváření objektů](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
-|Proxy servery|[Proxy servery](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) povolit vlastní chování pro objekty.|
+|Proxy servery|[Proxy servery](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) povolit vlastní chování pro objekty.|
 |Parametry REST|Zbývající parametry umožňují zapnout po sobě jdoucí argumenty ve volání funkce na pole. Další informace najdete v tématu [funkce](/visualstudio/scripting-docs/javascript/functions-javascript).|
-|Spread – operátor|[Operátor rozšíření](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) rozšiřuje iterable výrazů do jednotlivé argumenty. Například `a.b(…array)` je přibližně stejná jako `a.b.apply(a, array)`.|
-|Symboly|[Symbol](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) objekty povolit vlastnosti, které chcete přidat do stávající objekty se žádná možnost rušení s existujícími vlastnostmi objektu, žádné nežádoucí viditelnost a bez dalších dodatcích nekoordinovaná jiným kódem.|
-|Řetězce šablon|[Řetězce šablon](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) jsou řetězcové literály, které umožňují výrazů má být vyhodnocen a zřetězená s řetězcový literál.|
-|Vylepšení kódování Unicode|Vylepšili jsme podporu kódování Unicode. Nový formát sekvence escape například podporuje astral kódových bodů (body kódu obsahující více než čtyři šestnáctkové číslice). Další informace najdete v tématu [speciální znaky](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
-|WeakSet|A [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) je kolekce objektů, které mají být uvolněn z paměti Pokud nejsou odkazovat jinde.|
+|Spread – operátor|[Operátor rozšíření](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) rozšiřuje iterable výrazů do jednotlivé argumenty. Například `a.b(…array)` je přibližně stejná jako `a.b.apply(a, array)`.|
+|Symboly|[Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) objekty povolit vlastnosti, které chcete přidat do stávající objekty se žádná možnost rušení s existujícími vlastnostmi objektu, žádné nežádoucí viditelnost a bez dalších dodatcích nekoordinovaná jiným kódem.|
+|Řetězce šablon|[Řetězce šablon](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) jsou řetězcové literály, které umožňují výrazů má být vyhodnocen a zřetězená s řetězcový literál.|
+|Vylepšení kódování Unicode|Vylepšili jsme podporu kódování Unicode. Nový formát sekvence escape například podporuje astral kódových bodů (body kódu obsahující více než čtyři šestnáctkové číslice). Další informace najdete v tématu [speciální znaky](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters).|
+|WeakSet|A [WeakSet](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) je kolekce objektů, které mají být uvolněn z paměti Pokud nejsou odkazovat jinde.|

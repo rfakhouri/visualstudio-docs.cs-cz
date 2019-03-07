@@ -18,12 +18,12 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b54f788c77488ba780a0b52d4d6b332a974748af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8818774994e73db2cadfca679d3ee71bcb059ae2
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763849"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567161"
 ---
 # <a name="debugging-in-visual-studio"></a>Ladění v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a 
 
  Rychlý úvod k ladění a diagnostiku v sadě Visual Studio, naleznete v tématu [ladění, profilování a Diagnostika](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
--   [Co je nového v ladicím programu sady Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015) popisuje nové funkce v sadě Visual Studio 2015.
+-   [Co je nového v ladicím programu sady Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md) popisuje nové funkce v sadě Visual Studio 2015.
 
--   [Ladicí program Windows](../debugger/debugger-windows.md)obsahuje jiný ladicí program systému windows.
+-   [Ladicí program Windows](../debugger/debugger-windows.md) obsahuje jiný ladicí program systému windows.
 
 -   [Základy ladicího programu](../debugger/debugger-basics.md) popisuje základní informace o použití ladicího programu sady Visual Studio. Mezi témata patří ladění základy, řízení provádění, připojení ke spuštěnému programu, Just-In-Time ladění, spouštění ladicího programu automaticky, výpisy stavu systému, zarážky, kontrola programu, zpracování výjimek, upravit a pokračovat a použití výrazů v ladicí program.
 
--   [Další funkce ladění](../debugger/more-debugging-features.md)popisuje různé funkce ladění.
+-   [Další funkce ladění](../debugger/more-debugging-features.md) popisuje různé funkce ladění.
 
 -   [Vzdálené ladění](../debugger/remote-debugging.md) popisuje, jak nastavit a používat vzdálené ladění.
 

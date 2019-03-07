@@ -8,12 +8,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: fe4a7111088ca41534a487cb52872a210c35dbc9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b1ce9c317bb05e242f8bdc89d3e294858ba0ce21
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844052"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567267"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Průběžná integrace služby Azure DevOps pomocí projekty nasazení skupiny prostředků Azure
 
@@ -177,4 +177,4 @@ Následující postup vás provede kroky potřebnými ke konfiguraci průběžn�
 
 ## <a name="next-steps"></a>Další kroky
 
-Čtení [přehled Azure Resource Manageru](/azure-resource-manager/resource-group-overview) získat další informace o Azure Resource Manageru a skupin prostředků Azure.
+Čtení [přehled Azure Resource Manageru](/azure/azure-resource-manager/resource-group-overview) získat další informace o Azure Resource Manageru a skupin prostředků Azure.

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c85146ea6e884acab0402c9bf4b19d80d1bdec86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c874505ebff1ca50a8e35bb46ad26d096b6145e
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765599"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567206"
 ---
 # <a name="view-dom-event-listeners"></a>Zobrazení naslouchacích procesů událostí DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
 -   Pokud se liší od naslouchací proces související události životního cyklu od prvku modelu DOM nebo objektu, budete muset volat `removeEventListener` metody. Například, pokud použijete `window.onresize` událost, možná budete muset odebrat naslouchací proces událostí, jestliže opustíte na stránce, kde zpracování události.
 
--   Pokud `removeEventListener` nepodaří odeberte zadaný naslouchací proces by může být získání volána na jinou instanci objektu. Můžete použít [bind – metoda (Function)](/visualstudio/scripting-docs/javascript/reference/bind-method-function-javascript) metoda k vyřešení tohoto problému, když přidáte naslouchací proces.
+-   Pokud `removeEventListener` nepodaří odeberte zadaný naslouchací proces by může být získání volána na jinou instanci objektu. Můžete použít [bind – metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) metoda k vyřešení tohoto problému, když přidáte naslouchací proces.
 
 -   Chcete-li odebrat naslouchací proces událostí, která byla přidána pomocí [bind – metoda (Function)](/visualstudio/scripting-docs/javascript/reference/bind-method-function-javascript) nebo pomocí anonymní funkce uložit instance funkci tehdy, když přidejte naslouchací proces. Tady je jeden způsob, jak bezpečně tento model použijte:
 
