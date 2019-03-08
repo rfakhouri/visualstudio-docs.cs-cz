@@ -2,7 +2,7 @@
 title: Přenos, migrace a upgrade projektů v sadě Visual Studio 2019
 titleSuffix: ''
 description: Referenční informace pro podporu projektů vytvořených v dřívějších verzích sady Visual Studio a jak Visual Studio Určuje, kdy migrovat projekt v aplikaci Visual Studio 2019.
-ms.date: 12/06/2018
+ms.date: 02/26/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9c5bf46f3626f5929f615437781495cd766f6ff4
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 7447dff5d8855fb141ab66f23ab9bd9b272c3d0d
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428788"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683356"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2019
 
@@ -71,7 +71,7 @@ Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najde
 | Silverlight | Projekty technologie Silverlight v sadě Visual Studio. 2019 Preview nepodporuje. Chcete-li udržovat aplikace Silverlight, používejte nadále Visual Studio 2015. |
 | SQL – Redgate | V instalačním programu sady Visual Studio už dodanými SQL změnu automatizace Core (dříve označované jako ReadyRoll Core), SQL Prompt Core a SQL Search od společnosti Redgate.<br/><br/>Můžete pokračovat v používání sady Visual Studio 2017 pro tyto funkce. V sadě Visual Studio. 2019 Preview můžete upgradovat na placené automatizace změnu SQL a SQL Prompt produkty, které jsou k dispozici v Toolbelt od společnosti Redgate SQL.|
 | SQL Server Reporting Services a SQL Server Analysis Services (SSRS, rozšíření SSDT, SSAS, účty spravované služby) | Podpora pro tyto typy projektů je poskytována prostřednictvím dvě rozšíření v Galerii Visual Studio:  [Microsoft Analysis Services projekty modelování](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) a [služby Microsoft Reporting Services projekty](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Podpora rozšíření SSDT je také součástí úloze ukládání a zpracování v sadě Visual Studio Preview 2019. |
-| SQL Server Integration Services (SSIS) | Podpora pro Visual Studio. 2019 Preview je k dispozici prostřednictvím SQL Server Data Tools (SSDT). Další informace najdete v tématu [blog služby SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
+| SQL Server Integration Services (SSIS) | Podpora pro Visual Studio. 2019 Preview Připravujeme. Získejte nejnovější zprávy z [oficiální Blog prostředí SSIS](https://blogs.msdn.microsoft.com/ssis/). |
 | Rozšíření testovacího okna | V sadě Visual Studio 2019 jsme odebrali některá rozhraní API testovacích oken, která byla dříve označena jako veřejná, ale nikdy nebyla oficiálně zdokumentována. Široce viditelné rozhraní API se označily zastaralé v sadě Visual Studio 2017 poskytnout programu rozšíření včasného varování. Naši znalostní bázi trvalo několik rozšíření závislost na tato rozhraní API. Další informace a aktualizace zobrazení [úplný seznam zastaralé rozhraní API související s](https://github.com/Microsoft/vstest/issues/1830). Pokud tato akce ovlivní váš scénář, dejte nám prosím vědět o [komunity vývojářů](https://developercommunity.visualstudio.com). |
 | Visual C++ | Visual Studio. 2019 Preview můžete použít pro práci v projektech, které byly vytvořeny v dřívějších verzích sady Visual Studio zpět do sady Visual Studio 2010. Při prvním otevření projektu, máte možnost upgradu na nejnovější kompilátoru a nástrojů, nebo pokračovat v používání původního. Pokud budete chtít používat i nadále původního, Visual Studio 2019 Preview neprovede žádné změny souboru projektu a svůj projekt sestavit pomocí sady nástrojů z dřívější instalace sady Visual Studio. Zachovat původní možnosti prostředky můžete i nadále otevřít projekt v původní verzi sady Visual Studio v případě potřeby. Další informace najdete v tématu [pomocí nativního cílení na více platforem v sadě Visual Studio sestavení starých projektů](/cpp/porting/use-native-multi-targeting). |
 | Rozšiřitelnost sady Visual Studio/souboru VSIX | Projekty s MinimumVersion 14.0 nebo méně aktualizují deklarovat MinimumVersion 15.0, což zabrání projektu se otevře v dřívějších verzích sady Visual Studio. Povolit projekt otevřít ve starších verzích, nastavte na MinimumVersion `$(VisualStudioVersion)`. Viz také [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |

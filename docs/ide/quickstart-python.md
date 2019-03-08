@@ -1,7 +1,7 @@
 ---
 title: 'Rychlý start: vytvoření webové aplikace v Pythonu pomocí sady Visual Studio'
 description: V tomto rychlém startu pomocí sady Visual Studio a rozhraní Flask k vytvoření jednoduché webové aplikace v Pythonu.
-ms.date: 02/11/2019
+ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 826e0134d4798526a3ba3ae8055500808eb922a1
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987428"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683382"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý start: Vytvoření první webové aplikace v Pythonu pomocí sady Visual Studio
 
@@ -27,21 +27,43 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte na [soubor
 
 Následujícím postupem se vytvoří prázdný projekt, který slouží jako kontejner pro aplikace:
 
+::: moniker range="vs-2017"
 1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce zvolte **soubor > Nový > projekt**.
+2. V horní nabídce zvolte **soubor > Nový > projekt**.
 
-1. V **nový projekt** dialogové okno pole, zadejte "Python webový projekt" do vyhledávacího pole v pravém horním rohu, zvolte **webový projekt** v seznamu v prostředním projekt pojmenujte například "HelloPython" a pak zvolte **OK**.
+3. V **nový projekt** dialogové okno pole, zadejte "Python webový projekt" do vyhledávacího pole v pravém horním rohu, zvolte **webový projekt** v seznamu v prostředním projekt pojmenujte například "HelloPython" a pak zvolte **OK**.
 
     ![Dialogové okno nového projektu s vybraným webovým projektem Python](media/quickstart-python-00-web-project.png)
 
-    Pokud nevidíte šablony projektů Python, zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje > Získejte nástroje a funkce** otevřít **sady Visual Studio Instalační program**. Zvolte **vývoj v jazyce Python** úloh, klikněte na tlačítko **změnit**.
+    Pokud nevidíte šablony projektů Python, spusťte **instalační program sady Visual Studio**vyberte **Další** > **změnit**, vyberte **Python vývoj** úloh, klikněte na tlačítko **změnit**.
 
     ![Úloha vývoj v jazyce Python v instalačním programu sady Visual Studio](../python/media/installation-python-workload.png)
 
-1. Otevře se nový projekt v **Průzkumníka řešení** v pravém podokně. Projekt je v tuto chvíli prázdná, protože neobsahuje žádné soubory.
+4. Otevře se nový projekt v **Průzkumníka řešení** v pravém podokně. Projekt je v tuto chvíli prázdná, protože neobsahuje žádné soubory.
 
     ![Průzkumník řešení zobrazující nově vytvořený prázdný projekt](media/quickstart-python-01-empty-project.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+1. Open Visual Studio 2019.
+2. Na úvodní obrazovce vyberte **vytvořte nový projekt**.
+3. V **vytvořte nový projekt** dialogové okno pole, do vyhledávacího pole v horní části zadejte "Python web", zvolte **webový projekt** střední vyberte v seznamu, pak **Další**:
+
+    ![Vytvoření nového projektu obrazovky s vybraným webovým projektem Python](media/quickstart-python-00-web-project-2019a.png)
+
+    Pokud nevidíte šablony projektů Python, spusťte **instalační program sady Visual Studio**vyberte **Další** > **změnit**, vyberte **Python vývoj** úloh, klikněte na tlačítko **změnit**.
+
+    ![Úloha vývoj v jazyce Python v instalačním programu sady Visual Studio](../python/media/installation-python-workload.png)
+
+4. V **konfigurovat nový projekt** dialog, který následuje, zadejte "HelloPython" **název projektu**zadejte umístění a pak vyberte **vytvořit**. ( **Název řešení** se automaticky nastaví tak, aby odpovídaly **název projektu**.)
+
+    ![Konfigurace nové dialogové okno projektu](media/quickstart-python-00-web-project-2019b.png)
+
+5. Otevře se nový projekt v **Průzkumníka řešení** v pravém podokně. Projekt je v tuto chvíli prázdná, protože neobsahuje žádné soubory.
+
+    ![Průzkumník řešení zobrazující nově vytvořený prázdný projekt](media/quickstart-python-01-empty-project-2019.png)
+::: moniker-end
 
 **Otázka: Co je výhodou vytvoření projektu aplikace v Pythonu v sadě Visual Studio?**
 
@@ -57,19 +79,37 @@ Webové aplikace v Pythonu téměř vždy používat jeden z mnoha dostupných k
 
 Tady můžete následujícím postupem ji nainstalovat do výchozí "globálního prostředí", který používá Visual Studio pro tento projekt Flask.
 
+::: moniker range="vs-2017"
 1. Rozbalte **prostředí Pythonu** uzlu projektu zobrazíte výchozí prostředí pro projekt.
 
     ![Průzkumník řešení zobrazující výchozího prostředí](media/quickstart-python-02-default-environment.png)
 
-1. Klikněte pravým tlačítkem na prostředí a vyberte **instalovat balíček Pythonu**. Tento příkaz otevře **prostředí Pythonu** na okno **balíčky** kartu.
+2. Klikněte pravým tlačítkem na prostředí a vyberte **instalovat balíček Pythonu**. Tento příkaz otevře **prostředí Pythonu** na okno **balíčky** kartu.
 
-1. Do vyhledávacího pole zadejte "flask" a vyberte **flask instalace pip z PyPI**. Přijměte všechny vyzve k zadání oprávnění správce a podívejte se **výstup** okna v sadě Visual Studio pro průběh. (Výzva pro zvýšení oprávnění se stane, když se nachází v rámci chráněnou oblast složce balíčků pro globální prostředí, jako jsou *C:\Program Files*.)
+3. Do vyhledávacího pole zadejte "flask" a vyberte **flask instalace pip z PyPI**. Přijměte všechny vyzve k zadání oprávnění správce a podívejte se **výstup** okna v sadě Visual Studio pro průběh. (Výzva pro zvýšení oprávnění se stane, když se nachází v rámci chráněnou oblast složce balíčků pro globální prostředí, jako jsou *C:\Program Files*.)
 
     ![Instalace knihovny Flask pomocí pip install](media/quickstart-python-03-install-package.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Rozbalte **prostředí Pythonu** uzlu projektu zobrazíte výchozí prostředí pro projekt.
 
-1. Po instalaci, zobrazí se v prostředí v knihovně **Průzkumníka řešení**, což znamená, že, které lze využít v kódu Pythonu.
+    ![Průzkumník řešení zobrazující výchozího prostředí](media/quickstart-python-02-default-environment-2019.png)
 
+2. Klikněte pravým tlačítkem na prostředí a vyberte **spravovat balíčky Pythonu...** . Tento příkaz otevře **prostředí Pythonu** na okno **balíčky (PyPI)** kartu.
+
+3. Do vyhledávacího pole zadejte "flask". Pokud **Flask** se zobrazí pod vyhledávacím polem, můžete tento krok přeskočit. V opačném případě vyberte **spusťte příkaz: pip nainstalovat flask**. Přijměte všechny vyzve k zadání oprávnění správce a podívejte se **výstup** okna v sadě Visual Studio pro průběh. (Výzva pro zvýšení oprávnění se stane, když se nachází v rámci chráněnou oblast složce balíčků pro globální prostředí, jako jsou *C:\Program Files*.)
+
+    ![Instalace knihovny Flask pomocí pip install](media/quickstart-python-03-install-package-2019.png)
+::: moniker-end
+
+4. Po instalaci, zobrazí se v prostředí v knihovně **Průzkumníka řešení**, což znamená, že, které lze využít v kódu Pythonu.
+
+    ::: moniker range="vs-2017"
     ![Nainstalovanou knihovnu Flask a zobrazení v Průzkumníku řešení](media/quickstart-python-04-package-installed.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![Nainstalovanou knihovnu Flask a zobrazení v Průzkumníku řešení](media/quickstart-python-04-package-installed-2019.png)
+    ::: moniker-end
 
 > [!Note]
 > Místo instalace knihovny do globálního prostředí, vývojáři obvykle "virtuální prostředí vytvořte" ve kterém k instalaci knihoven pro konkrétní projekt. Šablony sady Visual Studio obvykle nabízejí tuto možnost, jak je popsáno v [rychlý start – vytvoření projektu Pythonu pomocí šablony](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
@@ -121,7 +161,14 @@ Nyní jste připraveni přidat bitového kódu implementovat minimální webové
 
 1. Klikněte pravým tlačítkem na *app.py* v **Průzkumníka řešení** a vyberte **nastavit jako spouštěcí soubor**. Tento příkaz určuje soubor kód ke spuštění pythonu při spuštění aplikace.
 
+    ::: moniker range="vs-2017"
     ![Nastavení spouštěcího souboru pro projekt v Průzkumníku řešení](media/quickstart-python-05-set-as-startup-file.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![Nastavení spouštěcího souboru pro projekt v Průzkumníku řešení](media/quickstart-python-05-set-as-startup-file-2019.png)
+    ::: moniker-end
+
+1. Klikněte pravým tlačítkem na *app.py* v **Průzkumníka řešení** a vyberte **nastavit jako spouštěcí soubor**. Tento příkaz určuje soubor kód ke spuštění pythonu při spuštění aplikace.
 
 2. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**. Vyberte **ladění** kartu a nastavit **číslo portu** vlastnost `4449`. Tento krok zajistí, že Visual Studio spustí prohlížeč s `localhost:4449` tak, aby odpovídaly `app.run` argumenty v kódu.
 

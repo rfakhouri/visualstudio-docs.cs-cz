@@ -1,5 +1,5 @@
 ---
-title: Instalace sady Visual Studio verze vedle sebe
+title: Souběžná instalace různých verzí sady Visual Studio
 ms.date: 03/05/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-isntallation
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 22c4f24c8e97d98bb0bbe88fb998deb5929c6b7b
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: b7b1eb1808fadf3bc7639662419f7d176909412c
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567122"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683369"
 ---
-# <a name="install-visual-studio-versions-side-by-side"></a>Instalace sady Visual Studio verze vedle sebe
+# <a name="install-visual-studio-versions-side-by-side"></a>Souběžná instalace různých verzí sady Visual Studio
 
 Visual Studio můžete nainstalovat na počítač, který má dřívější nebo pozdější verzi sady Visual Studio již nainstalována.
 
@@ -69,7 +69,7 @@ Informace specifické pro jazyk najdete v příslušném tématu v následujíc�
 
 * [Instalace sady Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Přenos, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
-* [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
+* [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end
 
@@ -88,6 +88,6 @@ Informace specifické pro jazyk najdete v příslušném tématu v následujíc�
 
 * [Instalace sady Visual Studio](install-visual-studio.md?view=vs-2019)
 * [Přenos, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
-* [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
+* [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end
