@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b615207467222a061a5496b87ecb1929348c18fe
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: db11e23f56f6c7442768e84a731b28b095807220
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223827"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57686046"
 ---
 Pomocí sady Visual Studio můžete snadno vytvářet, ladit a spouštění kontejnerizovaných aplikací ASP.NET Core a publikujte je na Azure Container Registry (ACR), Docker Hub, Azure App Service nebo vlastního registru kontejneru. V tomto článku budeme publikovat do služby ACR.
 
@@ -29,16 +29,12 @@ Pro instalaci Dockeru, nejprve zkontrolujte informace na [Desktop Docker pro Win
 
 ## <a name="add-a-project-to-a-docker-container"></a>Přidat projekt do kontejneru Dockeru
 
-1. V nabídce sady Visual Studio vyberte **soubor > Nový > projekt**.
-1. V části **šablony** část **nový projekt** dialogu **Visual C# > Web**.
-1. Vyberte **webová aplikace ASP.NET Core**.
-1. Pojmenujte novou aplikaci (nebo přijmout výchozí nastavení) a vyberte **OK**.
-1. Vyberte **webovou aplikaci**.
-1. Zkontrolujte, **povolit podporu Dockeru** zaškrtávací políčko.
+1. Vytvořte nový projekt pomocí **webové aplikace ASP.NET Core** šablony.
+1. Vyberte **webovou aplikaci**a ujistěte se, že **povolit podporu Dockeru** zaškrtávací políčko zaškrtnuto.
 
-   ![Povolit podporu Dockeru zaškrtávací políčko](../../media/docker-tools/enable-docker-support.PNG)
+   ![Povolit podporu Dockeru zaškrtávací políčko](../../media/docker-tools/vs-2019/create-new-web-application.PNG)
 
-1. Vyberte typ kontejneru (Windows nebo Linux) a klikněte na **OK**.
+1. Vyberte typ kontejneru (Windows nebo Linux) a klikněte na **vytvořit**.
 
 ## <a name="dockerfile-overview"></a>Přehled souboru Dockerfile
 
