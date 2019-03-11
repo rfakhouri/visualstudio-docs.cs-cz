@@ -116,6 +116,8 @@ items:
       items:
       - name: Použití úprav v režimu pozastavení operace Upravit a pokračovat
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: Psaní a ladění spuštěného kódu XAML
+      href: xaml-edit-and-continue.md
     - name: Nepodporovaná operace Upravit a pokračovat v F#
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: Zobrazení dat ladicího programu
@@ -217,9 +219,9 @@ items:
         items:
         - name: Architektura vizualizéru
           href: visualizer-architecture.md
-        - name: 'Průvodce: Zápis vizualizéru v jazyce C#'
+        - name: 'Návod: Zápis vizualizéru v jazyce C#'
           href: walkthrough-writing-a-visualizer-in-csharp.md
-        - name: 'Průvodce: Zápis vizualizéru v jazyce Visual Basic'
+        - name: 'Návod: Zápis vizualizéru v jazyce Visual Basic'
           href: walkthrough-writing-a-visualizer-in-visual-basic.md
         - name: Instalace vizualizéru
           href: how-to-install-a-visualizer.md
@@ -317,9 +319,9 @@ items:
         href: how-to-use-the-gpu-threads-window.md
     - name: Ladění více procesů
       href: debug-multiple-processes.md
-    - name: 'Průvodce: Ladění pomocí okna Vlákna'
+    - name: 'Návod: Ladění pomocí okna Vlákna'
       href: how-to-use-the-threads-window.md
-    - name: 'Průvodce: Ladění paralelní aplikace'
+    - name: 'Návod: Ladění paralelní aplikace'
       href: walkthrough-debugging-a-parallel-application.md
     - name: Přepnutí na jiné vlákno během ladění
       href: how-to-switch-to-another-thread-while-debugging.md
@@ -419,7 +421,7 @@ items:
         items:
         - name: 'Spravované ladění: Doporučené nastavení vlastností'
           href: managed-debugging-recommended-property-settings.md
-        - name: 'Příprava ladění: Windows Forms – aplikace'
+        - name: 'Příprava ladění: Aplikace modelu Windows Forms'
           href: debugging-preparation-windows-forms-applications.md
         - name: 'Příprava ladění: služby systému Windows'
           href: debugging-preparation-windows-services.md
@@ -429,7 +431,7 @@ items:
         href: assertions-in-managed-code.md
       - name: Příkazy Stop v jazyce Visual Basic
         href: stop-statements-in-visual-basic.md
-      - name: 'Průvodce: Ladění formuláře systému Windows'
+      - name: 'Návod: Ladění formuláře systému Windows'
         href: walkthrough-debugging-a-windows-form.md
       - name: Ladění metody OnStart
         href: how-to-debug-the-onstart-method.md
@@ -547,7 +549,7 @@ items:
         href: how-to-find-the-name-of-the-aspnet-process.md
       - name: Ladění nasazených webových aplikací
         href: debugging-deployed-web-applications.md
-      - name: 'Průvodce: Ladění webového formuláře'
+      - name: 'Návod: Ladění webového formuláře'
         href: walkthrough-debugging-a-web-form.md
       - name: Ladění výjimek ASP.NET
         href: how-to-debug-aspnet-exceptions.md
@@ -841,9 +843,9 @@ items:
   items:
   - name: Novinky v ladicím programu sady Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335464"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699652"
