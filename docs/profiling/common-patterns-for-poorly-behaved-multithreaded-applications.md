@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634263"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737019"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 
@@ -30,7 +30,7 @@ Někdy aplikace paralelizované stubbornly pokračuje v provádění sériově i
 
 Jak je znázorněno na následujícím obrázku, Concurrency Visualizer můžete také zveřejnit tento příznak v zobrazení využití procesoru, kde, bez ohledu na přítomnost více vláken aplikace spotřebuje pouze jednoho logického jádra.
 
-Další informace najdete v tématu "výkonu vzor 1: Identifikace kolize zámků"v Hazim Shafi [paralelní nástroje pro měření výkonu pro Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu na webu MSDN blogu.
+Další informace najdete v tématu "Start s oddílem problém" v článku MSDN Magazine [vlákna - prostředku kolize souběžnosti využívat profilaci výkonu v sadě Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
 
 ![Lock Contention](../profiling/media/lockcontention_2.png "LockContention_2")
 

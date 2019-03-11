@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Analýza defektů v kódu C/C++'
+title: 'Návod: Analýza defektů v kódu C/C++'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919674"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736924"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Průvodce: Analýza defektů v kódu C/C++
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Návod: Analýza defektů v kódu C/C++
 
 Tento návod ukazuje, jak analýza kódu C/C++ pro potenciální závady kódu pomocí nástroje Analýza kódu pro kód C/C++.
 
@@ -67,7 +67,7 @@ Tento návod ukazuje, jak analýza kódu C/C++ pro potenciální závady kódu p
 
      upozornění C6230: Implicitní přetypování mezi sémanticky odlišnými typy: použití HRESULT v kontextu logické hodnoty.
 
-     Editor kódu zobrazí řádek, který způsobil toto upozornění ve funkci `bool``ProcessDomain()`. Toto upozornění signalizuje, že hodnotu HRESULT se používá v příkazu "if" kde se očekává výsledek s logickou hodnotu.
+     Editor kódu zobrazí řádek, který způsobil toto upozornění ve funkci `bool ProcessDomain()`. Toto upozornění signalizuje, že hodnotu HRESULT se používá v příkazu "if" kde se očekává výsledek s logickou hodnotu.
 
 3. Použití makra SUCCEEDED opravte toto upozornění. Váš kód by měl vypadat následovně:
 

@@ -2,7 +2,7 @@
 title: 'Kurz: Vytvořit jednoduchou C# Konzolová aplikace'
 description: Zjistěte, jak vytvořit konzolovou aplikaci C# v sadě Visual Studio, krok za krokem.
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841171"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736910"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Kurz: Vytvořit jednoduchou C# konzolovou aplikaci v sadě Visual Studio
 
@@ -34,8 +34,9 @@ Pokud chcete začít, vytvoříme C# projekt aplikace. Typ projektu obsahuje vš
 1. Otevřete Visual Studio 2017.
 
 2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
+   (Nebo stisknout **Ctrl**+**Shift**+**N**).
 
-3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka C#** a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **Konzolová aplikace (.NET Core)**. Potom zadejte název souboru *Kalkulačka*.
+3. V levém podokně **nový projekt** dialogového okna rozbalte **C#** a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **Konzolová aplikace (.NET Core)**. Potom zadejte název souboru ***Kalkulačka***.
 
    ![Konzole šablonu projektu aplikace (.NET Core) v dialogovém okně Nový projekt v integrovaném vývojovém prostředí sady Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
@@ -61,9 +62,11 @@ Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můž
 
 ## <a name="create-the-app"></a>Vytvoření aplikace
 
-Nejprve se podíváme procvičili matematiku základními celočíselnými v C#. Potom přidáme kód pro vytvoření základní kalkulačky. Dále jsme budete upravit kód pro přidání funkce. Potom jsme budeme ladit aplikaci vyhledat a opravit chyby. A nakonec jsme upřesníte kód, který efektivnější.
+Nejprve se podíváme procvičili matematiku základními celočíselnými v C#. Potom přidáme kód pro vytvoření základní kalkulačky. Další. Potom jsme budeme ladit aplikaci vyhledat a opravit chyby. A nakonec jsme upřesníte kód, který efektivnější.
 
-Začněme procvičili matematiku celé číslo v C#.
+### <a name="explore-integer-math"></a>Prozkoumejte matematikou celých čísel
+
+Začněme procvičili matematiku základními celočíselnými v C#.
 
 1. V editoru kódu odstraňte výchozí kód "Hello World".
 
@@ -81,15 +84,23 @@ Začněme procvičili matematiku celé číslo v C#.
             Console.ReadKey();
     ```
 
+    Všimněte si, že pokud tak učiníte, funkcí IntelliSense v sadě Visual Studio nabízí možnost pro automatické dokončování položka.
+
+    ![Animace dvojice v celé číslo matematické kód, který ukazuje funkci automatického dokončování IntelliSense v integrovaném vývojovém prostředí sady Visual Studio](./media/integer-math-intellisense.gif)
+
 1. Zvolte **Kalkulačka** ke spuštění programu, nebo stiskněte klávesu **F5**.
 
    ![Klikněte na tlačítko kalkulačky ke spuštění aplikace z panelu nástrojů](./media/csharp-console-calculator-button.png)
 
-   Otevře se okno konzoly, který zjistí součet 42 + 119.
+   Otevře se okno konzoly, které zjistí součet 42 + 119, což je **161**.
 
-1. Nyní, zkuste změnit `int c = a + b;` řádek kódu pomocí jiný operátor `-` pro odčítání, `*` pro násobení, nebo */* pro dělení.
+    ![Okna konzoly zobrazuje výsledky matematikou celých čísel](./media/csharp-console-integer-math.png)
 
-    Všimněte si, že pokud změníte operátor a spusťte program, výsledek se změní, příliš.
+1. **(Volitelné)**  Změníte operátor Chcete-li změnit výsledek. Například můžete změnit `+` operátor `int c = a + b;` řádku kódu `-` pro odčítání, `*` pro násobení, nebo `/` pro dělení. Poté při spuštění programu, výsledek změny příliš.
+
+1. Zavřete okno konzoly.
+
+### <a name="add-code-to-create-a-calculator"></a>Přidejte kód k vytvoření Kalkulačka
 
 Můžeme pokračovat přidáním složitější sadu Kalkulačka kódu do projektu.
 
@@ -165,6 +176,10 @@ Můžeme pokračovat přidáním složitější sadu Kalkulačka kódu do projek
 
     ![Konzoly okno aplikace kalkulačky a zahrnuje dotazování na akce, které se má provést](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>Přidání funkce do kalkulačky
+
+Pojďme upravit kód pro přidání dalších funkcí.
+
 ### <a name="add-decimals"></a>Přidat desetinná místa
 
 Kalkulačka aplikace nyní přijímá a vrací celá čísla. Ale bude přesnější, můžeme přidat kód, který umožňuje desetinná čísla.
@@ -178,6 +193,8 @@ Opravíme kód tak, aby zpracovává desetinná čísla.
 1. Stisknutím klávesy **Ctrl** + **F** otevřít **najít a nahradit** ovládacího prvku.
 
 1. Změňte každou instanci `int` proměnnou `float`.
+
+   Ujistěte se, že přepnete **rozlišovat velikost písmen** (**Alt**+**C**) a **celá slova** (**Alt** + **W**) v **najít a nahradit** ovládacího prvku.
 
     ![Animace ovládacího prvku najít a nahradit ukazující, jak změnit proměnné int na plovoucí desetinnou čárkou](./media/find-replace-control-animation.gif)
 
@@ -536,4 +553,5 @@ Blahopřejeme k dokončení tohoto kurzu! Další ještě více, pokračujte v n
 
 ## <a name="see-also"></a>Viz také:
 
+* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Další informace k ladění C# kódu v sadě Visual Studio](tutorial-debugger.md)

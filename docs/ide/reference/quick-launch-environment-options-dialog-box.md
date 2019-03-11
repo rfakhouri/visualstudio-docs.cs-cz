@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949158"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737001"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Dialogové okno Snadné spuštění, Prostředí, Možnosti
 
@@ -36,9 +36,9 @@ Následující klávesové zkratky můžete použít k omezení hledání na kon
 |Kategorie|Zástupce|Popis místní|
 |--------------|--------------| - |
 |Naposledy použité|@mru<br /><br /> Třeba `@mru font`.|Zobrazí až pět položek, které jste **naposledy použitých**.|
-|Nabídky|@menu<br /><br /> Třeba `@menu font`.|Omezení vyhledávání a položkami nabídky.|
+|Nabídky|@menu<br /><br /> Třeba `@menu project`.|Omezení vyhledávání a položkami nabídky.|
 |Možnosti|@opt<br /><br /> Třeba `@opt font`.|Omezuje vyhledávání na nastavení v **možnosti** dialogové okno.|
-|Dokumenty|@doc<br /><br /> Třeba `@doc font`.|Omezuje vyhledávání na názvy souborů a cesty otevřené dokumenty pro kritéria vyhledávání, ale nebude hledat text mezi soubory sami.|
+|Dokumenty|@doc<br /><br /> Třeba `@doc program.cs`.|Omezuje vyhledávání na názvy souborů a cesty otevřené dokumenty pro kritéria vyhledávání, ale nebude hledat text mezi soubory sami.|
 
 > [!NOTE]
 > Můžete změnit klávesové zkratky na **Obecné**, **klávesnice** stránku **možnosti** dialogové okno.

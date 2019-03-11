@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623057"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737030"
 ---
 # <a name="property-functions"></a>Funkce vlastností
 
@@ -166,7 +166,7 @@ Tady je seznam funkcí vlastností MSBuild:
 |int BitwiseXor (int první, int sekundu)|Provedení bitové operace `XOR` prvního a druhého (první ^ druhé).|
 |int BitwiseNot(int first)|Provedení bitové operace `NOT` (~ první).|
 |BOOL IsOsPlatform (platformString řetězec)|Určete, zda je aktuální platforma operačního systému `platformString`. `platformString` musíte být členem skupiny <xref:System.Runtime.InteropServices.OSPlatform>.|
-|bool IsOSUnixLike|Hodnota TRUE, pokud aktuální operační systém je v systému Unix.|
+|bool IsOSUnixLike()|Hodnota TRUE, pokud aktuální operační systém je v systému Unix.|
 |řetězec NormalizePath (parametry string [] cesta)|Získá kanonizovaného úplnou cestu k zadané cestě a zajišťuje, že obsahuje znaky oddělovačů správný adresář pro aktuální operační systém.|
 |řetězec NormalizeDirectory (parametry string [] cesta)|Získá kanonizovaného úplnou cestu zadaný adresář a zajistí obsahuje znaky oddělovačů správný adresář pro aktuální operační systém přitom zajistit jeho má koncové lomítko.|
 |řetězec EnsureTrailingSlash(string path)|Pokud zadaná cesta neobsahuje koncové lomítko ho přidat. Pokud cesta je prázdný řetězec, nemohou jej měnit.|

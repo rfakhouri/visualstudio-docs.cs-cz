@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603258"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737057"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Postupy: Rozšíření procesu sestavení sady Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Procesu sestavení je definován pomocí posloupnosti [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* soubory, které jsou importovány do souboru projektu. Jeden z nich importovat soubory, *cílů Microsoft.Common.targets*, je možné rozšířit, aby bylo možné spouštět vlastní úlohy na několika místech v procesu sestavení. Tento článek vysvětluje, dvě metody, které vám umožní rozšířit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] procesu sestavení:
@@ -60,7 +60,7 @@ V následující tabulce jsou uvedeny všechny cíle v *cílů Microsoft.Common.
 |`BeforeRebuild`, `AfterRebuild`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po základní znovu sestavit funkcí je vyvolána. Pořadí provádění cílů v *cílů Microsoft.Common.targets* je: `BeforeRebuild`, `Clean`, `Build`a potom `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po základní vyčištění funkce vyvolána.|
 |`BeforePublish`, `AfterPublish`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po základní publikování funkcí je vyvolána.|
-|`BeforeResolveReference`, `AfterResolveReferences`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po odkazy na sestavení se vyřeší.|
+|`BeforeResolveReferences`, `AfterResolveReferences`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po odkazy na sestavení se vyřeší.|
 |`BeforeResGen`, `AfterResGen`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po generování prostředků.|
 
 ## <a name="override-dependson-properties"></a>Přepsání vlastností DependsOn
