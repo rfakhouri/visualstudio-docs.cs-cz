@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526760"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873120"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace for Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -52,7 +52,7 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 
 | | |
 |---------------------| - |
-| **Plná podpora** | -Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br/>Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br/>Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Plná podpora** | -Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br/>Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br/>Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Omezená podpora** | – C++ aplikace určené pro podporu Windows zobrazení snímků pomocí zpětného kroku IntelliTrace. Podporují se jenom události ladicího programu a výjimek.<br />– .NET core a ASP.NET Core aplikace podporované pro určité události pouze (kontroler MVC, ADO.NET a HTTPClient události) v místní ladění. Samostatný kolektor není podporována pro aplikace .NET Core nebo ASP.NET Core.<br />- F# aplikace na experimentální bázi<br />– Aplikace UWP podporované pouze pro události |
 | **Nepodporuje se** | -Ostatní jazyky a skript<br />– Windows Services, Silverlight, Xbox nebo [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikace |
 
@@ -91,7 +91,7 @@ Můžete ukládat data IntelliTrace z těchto zdrojů:
 
 - K chybě nebo selhání dochází v nasazené aplikaci.
 
-     Pro aplikace Microsoftu založené na Azure můžete nakonfigurovat shromažďování dat IntelliTrace před publikováním aplikace. Zatímco je vaše aplikace spuštěná, IntelliTrace ukládá data do souboru .iTrace. Zobrazit [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).
+     Pro aplikace Microsoftu založené na Azure můžete nakonfigurovat shromažďování dat IntelliTrace před publikováním aplikace. Zatímco je vaše aplikace spuštěná, IntelliTrace ukládá data do souboru .iTrace. Zobrazit [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
      V případě webových aplikací ASP.NET hostovaných ve službě IIS 7.0, 7.5 a 8.0 a aplikací služby SharePoint 2010 a SharePoint 2013 použijte nástroj Microsoft Monitoring Agent samotný nebo s nástrojem System Center 2012 k ukládání dat nástroje IntelliTrace do souboru .iTrace.
 
