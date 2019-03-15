@@ -1,6 +1,6 @@
 ---
 title: 'CA1819: Vlastnosti by neměly vracet pole'
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919206"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872740"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Vlastnosti by neměly vracet pole
 
@@ -35,7 +35,9 @@ ms.locfileid: "55919206"
 
 ## <a name="cause"></a>příčina
 
-Veřejné nebo chráněné vlastnosti veřejného typu vrací pole.
+Vlastnost vrací pole.
+
+Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné vlastnosti a typy, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -52,6 +54,16 @@ Můžete potlačit upozornění, která se vyvolá pro vlastnost, která je odvo
 Upozornění můžete potlačit, pokud vlastnost je součástí [objekt pro přenos dat (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) třídy.
 
 V opačném případě nepotlačujte upozornění tohoto pravidla.
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (výkon). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Příklad porušení
 

@@ -13,17 +13,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309c02abb29b599a5753a39c28d9b95314088550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696711"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867279"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation – element (šablony sady Visual Studio)
-Určuje, zda je uživatel vyzván k uložení umístění prostřednictvím projektu **nový projekt** dialogové okno při vytváření projektu. Pokud tento prvek je nastaven na `true`, pak bude uživatel vyzván k uložení umístění; Pokud `false`, tak se výzva nezobrazí. (To znamená, je vytvořen dočasný projekt.)
 
- \<VSTemplate> \<TemplateData> \<PromptForSaveOnCreation>
+Určuje, zda je uživatel vyzván k uložení umístění prostřednictvím projektu **nový projekt** dialogové okno při vytváření projektu. Pokud tento prvek je nastaven na `true`, pak bude uživatel vyzván k uložení umístění. Pokud `false`, tak se výzva nezobrazí (to znamená, je vytvořen dočasný projekt).
+
+```xml
+\<VSTemplate>
+\<TemplateData>
+\<PromptForSaveOnCreation>
+```
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -59,7 +65,7 @@ Určuje, zda je uživatel vyzván k uložení umístění prostřednictvím proj
 ## <a name="example"></a>Příklad
  Následující příklad nastaví hodnotu `PromptForSaveOnCreation` rovna `false`, což umožní vytvoření podobě dočasného projektu projektu.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +91,6 @@ Určuje, zda je uživatel vyzván k uložení umístění prostřednictvím proj
 ```
 
 ## <a name="see-also"></a>Viz také:
+
 - [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)
 - [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)

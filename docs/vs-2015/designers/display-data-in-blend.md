@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ea768a1f93b6d2b806adf85496eb1080cc3e2b1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 168e136f3a50c5055a9b9fb6d05925dac3586a23
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834388"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869054"
 ---
 # <a name="display-data-in-blend"></a>Zobrazení dat v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,8 +56,6 @@ Při úpravách rozložení stránek, můžete zobrazit ukázkových dat do náv
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [kombinování si některé datové vazby pomocí programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
 ##  <a name="LiveWPF"></a> Zobrazit živá data v aplikaci WPF  
- **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytvořit objektový zdroj dat](http://www.bing.com/videos/watch/video/using-an-objectdatasource-in-expression-blend/qmavx0xg).  
-  
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytvořit zdroj dat XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ##  <a name="LiveStore"></a> Zobrazit živá data v aplikaci Store nebo telefon  

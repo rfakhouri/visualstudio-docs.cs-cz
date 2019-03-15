@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223491"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872431"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 
@@ -187,7 +187,7 @@ Nástroj pro kontrolu nativní analýzu kódu (nástroj PREfast) je integrované
 
 Ujistěte se, že přidáte tyto vlastnosti před importem souboru Microsoft.Cpp.targets. Můžete vybrat konkrétní pravidlo sady nebo vytvořit vlastní sady pravidel nebo použít výchozí sadu pravidel, která obsahuje další PREfast kontroly.
 
-Nástroje C++ Core Checker lze použít pouze v zadané soubory s využitím stejným způsobem jako [bylo popsáno dříve](#coreckeck_per_file), ale pomocí nástroje MSBuild souborů. Proměnné prostředí můžete nastavit pomocí `BuildMacro` položky:
+Nástroje C++ Core Checker lze použít pouze v zadané soubory s využitím stejným způsobem jako [bylo popsáno dříve](#corecheck_per_file), ale pomocí nástroje MSBuild souborů. Proměnné prostředí můžete nastavit pomocí `BuildMacro` položky:
 
 ```xml
 <ItemGroup>

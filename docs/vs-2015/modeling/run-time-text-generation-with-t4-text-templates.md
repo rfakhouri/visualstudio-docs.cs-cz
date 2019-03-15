@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fabefec48ee44e58754f360364491df1a14961d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777424"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867668"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -428,4 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Viz také  
  [Generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md)   
- [Principy T4: Oleg Sych Předzpracované textové šablony](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
+ [Principy T4: Oleg Sych Předzpracované textové šablony](https://github.com/olegsych/T4Toolbox)

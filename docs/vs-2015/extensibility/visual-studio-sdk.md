@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5ae83be9e2013a8aef1f9e17f4ba35cde4f7d9bb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8184ae3085c6366256f37b3e5a034b70fcc3cd7a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753735"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869338"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo syst
   
 - Přidat do vlastního typu projektu  
   
-- Oslovení miliónů vývojářů prostřednictvím Galerie sady Visual Studio  
+- Oslovení miliónů vývojářů prostřednictvím Visual Studio Marketplace  
   
   Pokud jste nikdy napsali před rozšíření sady Visual Studio, byste měli najít další informace o těchto funkcích a na [spuštění pro vývoj rozšíření sady Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
@@ -56,7 +56,7 @@ Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo syst
  Využijte výhod [služba bitových kopií a katalog](../extensibility/image-service-and-catalog.md) Správa skvělé imagí a podpora vysokého nastavení DPI a motivů.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Vyhledání a instalace rozšíření existující sady Visual Studio  
- S rozšířeními Visual Studia můžete najít **rozšíření a aktualizace** dialogového okna na **nástroje** nabídky. Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Rozšíření můžete také vyhledat [Galerie sady Visual Studio](https://visualstudiogallery.msdn.microsoft.com/)  
+ S rozšířeními Visual Studia můžete najít **rozšíření a aktualizace** dialogového okna na **nástroje** nabídky. Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Rozšíření můžete také vyhledat [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Referenční dokumentace sady Visual Studio SDK  
  Můžete najít referenční dokumentace rozhraní API sady Visual Studio SDK na [referenční dokumentace jazyka Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  

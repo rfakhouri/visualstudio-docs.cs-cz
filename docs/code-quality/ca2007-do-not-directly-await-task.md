@@ -1,5 +1,5 @@
 ---
-title: 'CA2007: Není await přímo úkolu'
+title: 'CA2007: Nečekejte přímo na úlohu'
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699695"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869286"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Není await přímo úkolu
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Nečekejte přímo na úlohu
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Můžete nakonfigurovat, zda mají být vyloučeny asynchronní metody, které nevracejí hodnotu z tohoto pravidla. K vyloučení těchto druzích metod, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+Můžete také nakonfigurovat, které výstupní typy sestavení použít toto pravidlo. Například tohoto pravidla lze použít pouze pro kód, který vytvoří aplikace konzoly nebo dynamicky propojené knihovny (to znamená, ne aplikace uživatelského rozhraní), přidejte do souboru .editorconfig ve vašem projektu následující dvojice klíč hodnota:
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Viz také:
 

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932011"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866994"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Sady pravidel pro analyzátory Roslyn
 
-Sady předdefinovaných pravidel jsou zahrnuty některé balíčky NuGet analyzátor. Například sady pravidel, které jsou součástí [balíček Microsoft.CodeAnalysis.FxCopAnalyzers NuGet analyzátor](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (počínaje verzí 2.6.2) povolení nebo zakázání pravidla na základě jejich kategorie, jako je zabezpečení, názvy, nebo výkon. Použití sad pravidel usnadňuje se krátce zobrazit pouze těchto porušení pravidel, které se vztahují k určité kategorie pravidla.
+Sady předdefinovaných pravidel jsou zahrnuty některé balíčky NuGet analyzátor. Například sady pravidel, které jsou součástí [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) balíček NuGet analyzer (počínaje verzí 2.6.2) povolení nebo zakázání pravidla na základě jejich kategorie, jako je zabezpečení, názvy, nebo výkon. Použití sad pravidel usnadňuje se krátce zobrazit pouze těchto porušení pravidel, které se vztahují k určité kategorie pravidla.
 
 Pokud migrujete ze starší verze "FxCop" statické analýzy kódu pro analyzátory Roslyn, povolte tyto sady pravidel můžete nadále používat stejnou konfiguraci pravidlo, které jste použili dříve.
 
@@ -41,7 +41,7 @@ Analyzátor předdefinované sady pravidel patří tři sady pravidel, které ov
 
 Kromě toho existují dvě sady pravidel pro každou kategorii pravidla v balíčku, například výkon a zabezpečení. Jedna sada pravidel povolí všechna pravidla pro kategorii a jedna sada pravidel respektuje výchozí nastavení závažnosti a povolení pro každé pravidlo v dané kategorii.
 
- [Balíček Microsoft.CodeAnalysis.FxCopAnalyzers NuGet analyzátor](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) zahrnuje sady pravidel v těchto kategoriích, tak, aby odpovídaly sady pravidel, která je k dispozici pro starší verze "FxCop" statické analýzy kódu:
+[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) zahrnuje analyzátor balíček NuGet sady pravidel v těchto kategoriích, které shoda sady pravidel pro analýzu statického kódu starší verze "FxCop" k dispozici:
 
 - návrh
 - dokumentace
@@ -54,7 +54,8 @@ Kromě toho existují dvě sady pravidel pro každou kategorii pravidla v balí�
 
 ## <a name="see-also"></a>Viz také:
 
+- [Analyzátory – nejčastější dotazy](analyzers-faq.md)
 - [Přehled analyzátory pro .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Instalace analyzátorů .NET Compiler Platform](install-roslyn-analyzers.md)
-- [Konfigurovat a používat pravidla analyzátoru Roslyn](use-roslyn-analyzers.md)
+- [Instalace analyzátorů](install-roslyn-analyzers.md)
+- [Použití analyzátory](use-roslyn-analyzers.md)
 - [Použití sady pravidel k seskupování pravidel analýzy kódu](using-rule-sets-to-group-code-analysis-rules.md)

@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841720"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867703"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Návod: Profil aplikace služby SharePoint
   Tento návod ukazuje, jak pomocí nástrojů pro profilaci v sadě Visual Studio za účelem optimalizace výkonu aplikace SharePoint. Ukázková aplikace je příjemce událostí funkce Sharepointu, který obsahuje nečinné smyčky, která snižuje výkon příjemce událostí funkce. Profiler sady Visual Studio umožňuje vyhledat a odstranit nejdražší (nejpomalejší provádění) součást projektu, označované také jako *kritickou cestu*.
 
  Tento návod demonstruje následující úkoly:
 
-- [Přidání funkcí a příjemce událostí funkce](#BKMK_AddFtrandFtrEvntReceiver).
+- [Addg funkce a příjemce událostí funkce](#add-a-feature-and-feature-event-receiver).
 
-- [Konfigurace a nasazení aplikace služby SharePoint](#BKMK_ConfigSharePointApp).
+- [Nakonfigurujte a nasaďte aplikace služby SharePoint](#configure-and-deploy-the-sharepoint-application).
 
-- [Spuštění aplikace SharePoint](#BKMK_RunSPApp).
+- [Spuštění aplikace SharePoint](#run-the-sharepoint-application).
 
-- [Zobrazení a interpretace výsledků profilace](#BKMK_ViewResults).
+- [Zobrazení a interpretace výsledků profilu](#view-and-interpret-the-profile-results).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

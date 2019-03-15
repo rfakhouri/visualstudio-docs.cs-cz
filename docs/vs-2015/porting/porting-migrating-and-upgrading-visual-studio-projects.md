@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: acf8ab0a1425e531839cb8de9229a7c6b1ac1b96
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805550"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873344"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Přenosy, migrace a upgrade projektů sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
 |Sada Office 2007 VSTO|Pokud upgradujete projekt tak, aby cílil na Office 2013 a rozhraní .NET Framework 4, můžete otevřít tento projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo Visual Studio 2010 SP1.|
 |Office 2010 VSTO|Pokud je projekt zaměřen na rozhraní .NET Framework 4, můžete ji otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1. Všechny ostatní projekty vyžadují jednosměrnou aktualizaci.|
 |Bohaté internetové aplikace|Pokud upgradujete projekt, můžete ji otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1.|
-|SharePoint 2007|Tento projekt nelze otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Nicméně pokud provedete ruční upgrade projektu na verzi SharePoint 2010, lze jej otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1. Další informace o tom, jak upgradovat SharePoint 2007, naleznete v tématu [migrace ze služby SharePoint 2007 na SharePoint 2010 pro profesionály IT](http://go.microsoft.com/fwlink/?LinkId=238224), [migrace pracovního postupu verze 2007 do sady Visual Studio & SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225), a [Nástroj pro migraci SharePoint Enterprise vyhledávání pro SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226).|
+|SharePoint 2007|Tento projekt nelze otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Nicméně pokud provedete ruční upgrade projektu na verzi SharePoint 2010, lze jej otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1. Další informace o tom, jak upgradovat SharePoint 2007, naleznete v tématu [migrace ze služby SharePoint 2007 na SharePoint 2010 pro profesionály IT](http://go.microsoft.com/fwlink/?LinkId=238224), [migrace pracovního postupu verze 2007 do sady Visual Studio & SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225), a [Nástroj pro migraci SharePoint Enterprise vyhledávání pro SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|Můžete otevřít projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1.|
 |SketchFlow|Pokud umožníte softwaru Visual Studio upgradovat projekt na WPF 4.5/Silverlight 5, můžete ji otevřít v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] Databáze|Můžete otevřít projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1. Pokud máte soubor databáze (MDF), který byl vytvořen v dřívější verzi serveru SQL Server, je nutné upgradovat na [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] předtím, než ho můžete použít s verzí SQL serveru Express LocalDB, ale databáze již není kompatibilní s předchozími verzemi serveru SQL Server. Pokud neprovedete upgrade, můžete nadále pracovat s databází v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] po instalaci a použití [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] ve stejném počítači. Další informace najdete v tématu [Upgrade souborů .mdf](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,7 +91,7 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
 
 - Pokud se pokusíte otevřít projekt aplikace klasické pracovní plochy v [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], dojde k chybě a zobrazí se jedna z následujících zpráv: "Tato verze sady Visual Studio podporuje pouze [!INCLUDE[win81](../includes/win81-md.md)] aplikace" nebo "Tento projekt není kompatibilní s aktuální verzí sady Visual Studio." [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] je omezen na vývoj, testování a nasazení aplikací pro Windows Store pro Windows 8.1. K otevření projektu aplikace klasické pracovní plochy je nutné použít edici systému Visual Studio, která tento typ projektu podporuje.
 
-   Další informace o vydáních sady Visual Studio najdete v tématu [produkty Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332)
+   Další informace o vydáních sady Visual Studio najdete v tématu [produkty Microsoft Visual Studio](https://visualstudio.microsoft.com/products/)
 
 - Pokud se pokusíte otevřít projekt aplikace Windows Store v [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, dojde k chybě. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop nelze použít k vytváření aplikací pro Windows Store. Pokud chcete vytvářet aplikace pro Windows Store, můžete také nainstalovat [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Nebo pokud chcete vyvíjet aplikace pro všechny platformy Microsoft a web, vyzkoušejte sadu Visual Studio Professional 2013.
 

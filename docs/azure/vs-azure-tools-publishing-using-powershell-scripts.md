@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6d1e485e89c3455c61b1050575398cae17b4aaa1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b29cdb878e2d90844ebf08f6591a05378e62e24b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941904"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868199"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Použití skriptů PowerShellu k publikování do vývojových a testovacích prostředí
 
@@ -154,7 +154,7 @@ Pokud jste nikdy spustit skript prostředí Windows PowerShell před, musíte ne
 
    ![Vytvoření webové nasazení balíčku](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Další informace najdete v tématu [jak: Vytvoření balíčku pro nasazení webu v sadě Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Můžete také automatizovat vytváření balíčku Webdeploy, jak je popsáno v [přizpůsobení a rozšíření skriptů publikování](#customizing-and-extending-publish-scripts).
+   Další informace najdete v tématu [jak: Vytvoření balíčku pro nasazení webu v sadě Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Můžete také automatizovat vytváření balíčku Webdeploy, jak je popsáno v [přizpůsobení a rozšíření skriptů publikování](#customizing-and-extending-the-publish-scripts).
 
 1. V **Průzkumníka řešení**, otevřete kontextovou nabídku pro skript a klikněte na tlačítko **otevřít v PowerShell ISE**.
 1. Pokud se spouštění skriptů prostředí Windows PowerShell na tomto počítači poprvé, otevřete okno příkazového řádku s oprávněními správce a zadejte následující příkaz:

@@ -1,6 +1,6 @@
 ---
 title: Analýza využití paměti jazyka JavaScript v aplikacích pro UWP | Dokumentace Microsoftu
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e2d5b1e8682656e7f0c2557b300b5429859014
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613112"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867962"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analýza využití paměti jazyka JavaScript v aplikacích pro UWP
 Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, které vám pomohou porozumět využití paměti a najít nevracení paměti v aplikacích UPW vytvořené pro Windows pomocí jazyka JavaScript. Podporované aplikace patří aplikace pro univerzální aplikace pro Windows.

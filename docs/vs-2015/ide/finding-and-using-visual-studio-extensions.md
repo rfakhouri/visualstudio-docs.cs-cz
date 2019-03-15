@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798477"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867758"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Hledání a používání rozšíření Visual Studia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Rozšíření sady Visual Studio jsou balíčky kódu, které v prostředí Visu
 >  Spouští se v sadě Visual Studio 2015, rozšíření hostované ve Galerii Visual Studio se automaticky aktualizují.  Toto nastavení můžete změnit **rozšíření a aktualizace** dialogového okna.  Naleznete v části **automatické aktualizace rozšíření** níže podrobnosti.
 
 ## <a name="finding-visual-studio-extensions"></a>Vyhledání rozšíření sady Visual Studio
- Můžete nainstalovat rozšíření z [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=178891) nebo [Galerie ukázek](http://go.microsoft.com/fwlink/?LinkId=245175) na webu společnosti Microsoft. Rozšíření mohou být ovládací prvky, ukázky, šablony, nástroje nebo jiné součásti, které přidávají funkcionalitu do aplikace Visual Studio. Visual Studio podporuje rozšíření ve formátu balíčku VSIX – to zahrnuje šablony projektu, šablony položek, položky **nástrojů** položky, komponenty spravovaných rozšíření Framework (MEF) a rozšíření VSPackages. Můžete také stáhnout a nainstalovat rozšíření založená na Instalační služby MSI, ale **rozšíření a aktualizace** dialogové okno nelze povolit ani zakázat. Galerie Visual Studio obsahuje rozšíření VSIX a instalační služby MSI.
+ Můžete nainstalovat rozšíření z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) nebo [Galerie ukázek](https://code.msdn.microsoft.com/vstudio) na webu společnosti Microsoft. Rozšíření mohou být ovládací prvky, ukázky, šablony, nástroje nebo jiné součásti, které přidávají funkcionalitu do aplikace Visual Studio. Visual Studio podporuje rozšíření ve formátu balíčku VSIX – to zahrnuje šablony projektu, šablony položek, položky **nástrojů** položky, komponenty spravovaných rozšíření Framework (MEF) a rozšíření VSPackages. Můžete také stáhnout a nainstalovat rozšíření založená na Instalační služby MSI, ale **rozšíření a aktualizace** dialogové okno nelze povolit ani zakázat. Galerie Visual Studio obsahuje rozšíření VSIX a instalační služby MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalace nebo odinstalace rozšíření sady Visual Studio
  V **rozšíření a aktualizace**, najít rozšíření, které chcete nainstalovat. (Pokud znáte název nebo část názvu rozšíření, je možné hledat **Prohledat Galerii Visual Studio** okna.) Klikněte na tlačítko **Stáhnout**, pak **nainstalovat**. Aby bylo možné načíst rozšíření je nutné restartovat Visual Studio.

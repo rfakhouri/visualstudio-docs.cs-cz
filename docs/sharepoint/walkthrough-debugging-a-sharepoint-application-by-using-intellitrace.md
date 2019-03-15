@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Ladění aplikace SharePoint s použitím technologie IntelliTrace | Dokumentace Microsoftu'
+title: 'Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875365"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868256"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Průvodce: Ladění aplikace SharePoint s použitím technologie IntelliTrace
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace
 
 S použitím technologie IntelliTrace, můžete snadněji ladit řešení služby SharePoint. Tradiční ladicí programy poskytují pouze snímek řešení v tuto chvíli aktuální. Můžete však použít IntelliTrace ke kontrole minulých událostech, ke kterým došlo ve vašem řešení a kontext, ve kterém došlo k chybě a přejde na kód.
 
@@ -33,15 +33,15 @@ S použitím technologie IntelliTrace, můžete snadněji ladit řešení služb
 
  Tento návod znázorňuje následující úlohy:
 
-- [Vytvoření příjemce funkce](#BKMK_CreateReceiver)
+- [Vytvoření příjemce funkce](#create-a-feature-receiver)
 
-- [Přidání kódu do příjemce funkce](#BKMK_AddCode)
+- [Přidání kódu do příjemce funkce](#add-code-to-the-feature-receiver)
 
-- [Testování projektu](#BKMK_Test1)
+- [Testování projektu](#test-the-project)
 
-- [Shromažďování dat IntelliTrace pomocí agenta Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+- [Shromažďování dat IntelliTrace pomocí agenta Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [Ladění a opravy řešení SharePoint](#BKMK_DebugSolution)
+- [Ladění a opravy řešení SharePoint](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

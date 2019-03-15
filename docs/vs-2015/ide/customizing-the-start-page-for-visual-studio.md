@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 895129fae06dbed8e6c0d53ac423a15adfd42365
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f043e3cfbc6d81306abfb68276f2e32cce63ed45
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760331"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869028"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Přizpůsobení úvodní stránky pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Můžete přizpůsobit úvodní stránku pro Visual Studio několika výchozími
 
 1.  Vlastní úvodní stránku nainstalujte jedním z následujících způsobů:
 
-    -   Nainstalujte ji z [Galerie sady Visual Studio](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page), jiného webu nebo stránku na místním intranetu.
+    -   Nainstalujte ji z [Visual Studio Marketplace](https://marketplace.visualstudio.com/), jiného webu nebo stránku na místním intranetu.
 
         > [!NOTE]
         >  Pokud se vám líbí stránka, která je určena pro starší verzi sady Visual Studio, můžete stránku upgradovat pomocí sady Visual Studio SDK. Zobrazit [jak: Vlastní úvodní stránku sady Visual Studio upgradovat](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).

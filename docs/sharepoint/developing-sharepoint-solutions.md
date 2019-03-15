@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618143"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870425"
 ---
 # <a name="develop-sharepoint-solutions"></a>Vývoj řešení služby SharePoint
   Několik šablon typu projektu služby SharePoint jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytváření webů služby SharePoint a prvků na webu. Seznam dostupných typů projektu naleznete v tématu [SharePoint šablony položek projektu a projekt](../sharepoint/sharepoint-project-and-project-item-templates.md). Následuje popis prvků a vlastností projektu služby SharePoint.
 
- Informace o SharePoint 2013 a doplňky pro SharePoint, naleznete v tématu [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) a [vytváření Sharepointových doplňků](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Informace o SharePoint 2013 a doplňky pro SharePoint, naleznete v tématu [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) a [vytváření Sharepointových doplňků](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Prvky projektu služby SharePoint
  Uzly v rámci projektu služby SharePoint jsou označovány jako *položek Sharepointového*. Položky služby SharePoint mohou obsahovat také jeden nebo více podsouborů, označované jako *soubory položek Sharepointového*, jako například [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] konfigurační soubory, formuláře .aspx a další.

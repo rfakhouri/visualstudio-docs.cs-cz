@@ -6,7 +6,7 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
+Description: Vítá vás Visual Studio předplatná
 Searchscope: VS Subscription
 ---
 
@@ -150,7 +150,7 @@ Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li>Team Foundation Server a licence TFS CAL</li>
+                            <li>Azure DevOps Server a licence CAL</li>
                         </ul>
                     </div>
                 </div>

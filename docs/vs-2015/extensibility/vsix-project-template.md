@@ -11,17 +11,17 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cb702b719679a4aad239376d90fe1ad56b493f5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774712"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872731"
 ---
 # <a name="vsix-project-template"></a>Šablona projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Použijte šablonu projektu VSIX zabalit jeden nebo více rozšíření sady Visual Studio v projektu VSIX a potom publikujete balíček na [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webu.  
+Použijte šablonu projektu VSIX zabalit jeden nebo více rozšíření sady Visual Studio v projektu VSIX a potom publikujete balíček na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webu.  
   
  VSIX instalace podporuje rozšíření VSPackages, sestavení, MEF komponenty, šablony projektů, šablony položek, ovládací prvky panelu nástrojů a rozšíření vlastních typů.  
   

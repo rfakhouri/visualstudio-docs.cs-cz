@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634822"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869315"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Povolit přístup pro jazyk VBA vytvořit nebo otevřít Visual Studio Tools pro projekt systému Microsoft Office
 
@@ -40,8 +40,6 @@ Předtím, než můžete vytvořit nebo otevřít Visual Studio Tools pro Micros
  Je důležité si uvědomit, že zakázání přístupu do jazyka Visual Basic pro systém projektu aplikace na svůj vlastní nechrání při před viry, jednoduše pomáhá zastavit některé viry rozšířilo do jiných dokumentů, pokud se počítač stane někdy nakažená hrozbou makra virů. Tato možnost je vypnuta ve výchozím nastavení jako další úroveň ochrany pro počítače, ale jeho povolení Nedovolte, aby byly v počítači více náchylné k viry pokud nedodržíte následující osvědčené postupy zabezpečení.
 
  Nejlepší ochranu před viry, se na spuštění při vysoké nebo velmi vysokou úroveň zabezpečení, pouze důvěřovat makrům Office ověření známých zdrojů, Office a udržovat si aktuální opravy zabezpečení a antivirové programy.
-
- Další informace o ochraně počítače před viry a další škodlivý kód, naleznete v tématu [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
 
  Můžete povolit nebo zakázat možnost **důvěřovat přístup k projektu jazyka Visual Basic** ručně.
 

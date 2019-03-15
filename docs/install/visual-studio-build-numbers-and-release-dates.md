@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/07/2019
+ms.date: 03/13/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: eb2d86c7f1b7801da0bc4281848b602e60fa6e00
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567406"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870257"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -27,6 +27,8 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.9 | Vydaná verze | 12. března 2019 | 15.9.28307.518 |
+| 15.0.21 | Vydaná verze | 12. března 2019 | 15.0.26228.76 |
 | 15.9.8 | Vydaná verze | 5. března 2019 | 15.9.28307.481 |
 | 15.9.7 | Vydaná verze | 12. února 2019 | 15.9.28307.423 |
 | 15.0.21 | Vydaná verze | 12. února 2019 | 15.0.26228.73 |
@@ -178,6 +180,8 @@ Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sest
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Verze Release Candidate 2 (RC.2) | 12. března 2019 | 16.0.28711.60 |
+| 16.0.0 | Ve verzi Preview 4.2 | 12. března 2019 | 16.0.28711.60 |
 | 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6. března 2019 | 16.0.28705.295 |
 | 16.0.0 | Ve verzi Preview 4.1 Svc1 | 6. března 2019 | 16.0.28705.295 |
 | 16.0.0 | Verze Release Candidate 1 (RC.1) | 5. března 2019 | 16.0.28701.123 |
@@ -195,7 +199,7 @@ Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sest
 
 ## <a name="see-also"></a>Viz také:
 
-* [Visual Studio vydávání nových verzí](/visualstudio/productinfo/release-rhythm)
-* [Příručka pro správce aplikace Visual Studio 2017](visual-studio-administrator-guide.md)
-* [Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio vydávání nových verzí](/visualstudio/productinfo/release-rhythm/)
+* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
+* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [Nástroje pro zjišťování a správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)

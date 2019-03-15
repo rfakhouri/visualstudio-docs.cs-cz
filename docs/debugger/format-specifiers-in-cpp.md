@@ -1,13 +1,10 @@
 ---
 title: Formát specifikátorů v ladicím programu (C++) | Dokumentace Microsoftu
-ms.date: 11/20/2018
+ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - QuickWatch dialog box, format specifiers in C++
@@ -27,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ad821c15ee8b405982d36c6b1c62d038bb11633
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227719"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870590"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specifikátory formátu pro C++ v ladicím programu sady Visual Studio
-Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomocí specifikátorů formátu.
+Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch**, **automatické hodnoty**, a **lokální** windows pomocí specifikátorů formátu.
 
 Můžete také použít specifikátory formátu v **okamžité** okně **příkaz** okno v [zarážky s trasováním](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)a dokonce i ve zdrojových oknech. Pokud pozastavíte výraz v těchto oknech, výsledek se zobrazí v [datového tipu](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Zobrazení datového tipu odráží specifikátor formátu.
 
@@ -57,8 +54,55 @@ Přidat `my_var1` proměnnou **Watch** okno při ladění, **ladění** > **Wind
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
+::: moniker range=">= vs-2019" 
+Můžete zobrazit a vybrat ze seznamu dostupných specifikátory přidáním čárky (,) s hodnotou v **Watch** okna. 
+
+![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
+
+::: moniker-end
+
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Specifikátory formátu
 Následující tabulky popisují specifikátory formátu, které můžete použít v sadě Visual Studio. Specifikátory tučným písmem jsou podporovány pouze pro nové ladicí program a ne pro definiční ladění v jazyce C + +/ CLI.
+
+::: moniker range=">= vs-2019" 
+
+|Specifikátor|Formát|Původní hodnota Watch|Zobrazená hodnota|
+|---------------|------------|--------------------------|---------------------|
+|d|Desítkové celé číslo|0x00000066|102|
+|o|osmičkové celé číslo bez znaménka|0x00000066|000000000146|
+|x<br /><br /> **h**|Šestnáctkové celé číslo|102|0xcccccccc|
+|X<br /><br /> **H**|Šestnáctkové celé číslo|102|0xCCCCCCCC|
+|xb<br /><br /> **hb**|šestnáctkové celé číslo (bez počátečních 0 x)|102|cccccccc|
+|Xb<br /><br /> **Hb**|šestnáctkové celé číslo (bez počátečních 0 x)|102|CCCCCCCC|
+|b|binární celé číslo bez znaménka|25|0b00000000000000000000000000011001|
+|bb|celé číslo bez znaménka binární (bez úvodní 0b)|25|00000000000000000000000000011001|
+|e|vědecká notace|25000000|2.500000e + 07|
+|G|kratší s plovoucí desetinnou čárkou nebo vědecký bodu|25000000|2.5e + 07|
+|c|jeden znak|0x0065, c|101 "e"|
+|s|const char * string (v uvozovkách)|\<umístění > "hello world"|"hello world"|
+|**sb**|const char * řetězec (bez uvozovek)|\<umístění > "hello world"|Ahoj světe|
+|s8|Řetězec UTF-8|\<umístění > "Toto je â˜• Šálek kávy UTF-8"|"Toto je ☕ Šálek kávy UTF-8"|
+|**s8b**|Řetězec UTF-8 (bez uvozovek)|\<umístění > "hello world"|Ahoj světe|
+|su|Řetězec znaků Unicode (UTF-16 kódování) (v uvozovkách)|\<umístění > L "hello world"|L "hello world"<br /><br /> u "hello world"|
+|Sub|Řetězec znaků Unicode (UTF-16 kódování) (bez uvozovek)|\<umístění > L "hello world"|Ahoj světe|
+|bstr|Řetězec BSTR binární (v uvozovkách)|\<umístění > L "hello world"|L "hello world"|
+|env|Blok prostředí (double null ukončenou string)|\<location> L"=::=::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|**s32**|Řetězec UTF-32 (v uvozovkách)|\<umístění > U "hello world"|u "hello world"|
+|**s32b**|Řetězec UTF-32 (bez uvozovek)|\<umístění > U "hello world"|Ahoj světe|
+|**cs**|enum|Saturday(6)|Sobota|
+|**hv**|Typ ukazatele – označuje, že hodnota ukazatele kontrolován je výsledek přidělení haldy pole, například `new int[3]`.|\<umístění > {\<prvního člena >}|\<umístění > {\<prvního člena >, \<second – člen >,...}|
+|**na**|Potlačí adresa paměti ukazatele na objekt.|\<umístění >, {člen = hodnota...}|{člen = hodnota...}|
+|**ND.**|Zobrazí pouze základní informace o třídě, ignoruje odvozené třídy|`(Shape*) square` zahrnuje základní třída a odvozené informace o třídě|Zobrazí pouze základní informace o třídě|
+|hr|Kód chyby HRESULT nebo Win32. Tento specifikátor je už je nepotřebujete pro HRESULT jako ladicí program dekóduje je automaticky.|S_OK|S_OK|
+|wc|Příznak třídy okna|0x0010|WC_DEFAULTCHAR|
+|wm|Čísla zpráv Windows|16|WM_CLOSE|
+|nr|Potlačit "Surová data" položky|
+|NVO|Zobrazit položku "Nezpracované zobrazení" pro jenom numerické hodnoty.|
+|!|Formát RAW ignorující přizpůsobení zobrazení typu všech dat|\<přizpůsobit reprezentace >|4|
+
+::: moniker-end
+
+::: moniker range="vs-2017" 
 
 |Specifikátor|Formát|Původní hodnota Watch|Zobrazená hodnota|
 |---------------|------------|--------------------------|---------------------|
@@ -86,8 +130,10 @@ Následující tabulky popisují specifikátory formátu, které můžete použ�
 |wm|Čísla zpráv Windows|16|WM_CLOSE|
 |!|Formát RAW ignorující přizpůsobení zobrazení typu všech dat|\<přizpůsobit reprezentace >|4|
 
+::: moniker-end
+
 > [!NOTE]
-> Když **hv** je k dispozici specifikátor formátu, ladicí program se pokusí zjistit délku vyrovnávací paměti a zobrazit tento počet prvků. Protože není vždy možné pro ladicí program najít přesnou vyrovnávací paměti velikost pole, měli byste používat specifikátor velikosti `(pBuffer,[bufferSize])` kdykoli je to možné. **Hv** specifikátor formátu je užitečné, když velikost vyrovnávací paměti není snadno k dispozici
+> Když **hv** je k dispozici specifikátor formátu, ladicí program se pokusí zjistit délku vyrovnávací paměti a zobrazit tento počet prvků. Protože není vždy možné pro ladicí program najít přesnou vyrovnávací paměti velikost pole, měli byste používat specifikátor velikosti `(pBuffer,[bufferSize])` kdykoli je to možné. **Hv** specifikátor formátu je užitečné, když velikost vyrovnávací paměti není snadno k dispozici.
 
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Velikost specifikátoru pro ukazatele jako pole
 Pokud máte ukazatel na objekt, který chcete zobrazit v poli, můžete použít k zadání počtu elementů pole celé číslo nebo výraz.

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: dc01d4d635d297f1597d900687673dd4d35d049f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761549"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869309"
 ---
 # <a name="creating-your-own-start-page"></a>Vytvoření vlastní úvodní stránky
 Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou stránku spuštění můžete vytvořit vlastní úvodní stránky.  
@@ -97,7 +97,7 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
   
     Zobrazí se pracovní úvodní stránku. Musí Ukončete experimentální instanci, znovu zkopírujte všechny změněné soubory a poté znovu otevřete experimentální instanci zobrazíte nové změny.  
   
-   Můžete sdílet vaše vlastní úvodní stránky tak, že nahrajete soubor VSIX do adresáře bin\debug [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webový server nebo do jiného webu nebo intranetu sdílet. Další informace najdete v tématu [nasazení vlastní úvodní stránky](../extensibility/deploying-custom-start-pages.md).  
+   Můžete sdílet vaše vlastní úvodní stránky tak, že nahrajete soubor VSIX do adresáře bin\debug [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webový server nebo do jiného webu nebo intranetu sdílet. Další informace najdete v tématu [nasazení vlastní úvodní stránky](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md)   

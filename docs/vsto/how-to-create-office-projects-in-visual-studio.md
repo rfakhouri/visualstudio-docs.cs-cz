@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614308"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868169"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: Vytvářet projekty pro Office v sadě Visual Studio
   Můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytvoření doplňku VSTO a na úrovni dokumentu přizpůsobení pro aplikace Microsoft Office. Další informace o těchto typech projektů naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -85,17 +85,18 @@ ms.locfileid: "56614308"
 
 7. Zvolte **OK** tlačítko.
 
-    > [!NOTE]
-    >  Doplňkové projekty jsou vždy uloženy při jejich vytváření. Nemůže být vytvořeny jako dočasné projekty. Další informace o dočasných projektech naleznete v tématu [dočasné projekty](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Doplňkové projekty jsou vždy uloženy při jejich vytváření. Nemůže být vytvořeny jako dočasné projekty. Další informace o dočasných projektech naleznete v tématu [dočasné projekty](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Chcete-li vytvořit projekt přizpůsobení na úrovni dokumentu
 
 1. Na **souboru** nabídce zvolte **nový** > **projektu**. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, na **souboru** nabídce zvolte **nový** > **projektu**.
 
     Zobrazí se dialogové okno **Nový projekt**.
-
-   > [!NOTE]
-   >  Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení.  Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. V podokně šablon, pod uzlem jazyka, které chcete použít, rozbalte **Office/SharePoint**.
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614308"
 4. V seznamu šablon projektu vyberte šablonu projektu na úrovni dokumentu. Seznam dostupných projektů na úrovni dokumentu šablony najdete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Pokud šablony projektů nejsou zobrazeny po výběru **Office Add-ins** uzlu, ujistěte se, že **rozhraní .NET Framework 4** nebo novější je vybrané v poli se seznamem v horní části dialogového okna. Šablony projektů pro Office jsou zobrazeny pro obě verze rozhraní .NET Framework.
+   > Pokud šablony projektů nejsou zobrazeny po výběru **Office Add-ins** uzlu, ujistěte se, že **rozhraní .NET Framework 4** nebo novější je vybrána.
 
 5. V **název** zadejte název projektu. Ve výchozím nastavení tento název se používá také pro dokument. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual C# nebo obecného vývojového nastavení, také zadejte umístění a název řešení.
 
    > [!NOTE]
-   >  Náhradní znaky nelze použít v cestě umístění projektu nebo v názvu projektu. Také pokud plánujete nasadit řešení pro použití v režimu offline, znaky v názvu projektu se musí vejít specifikacím protokolu HTTP.
+   > Náhradní znaky nelze použít v cestě umístění projektu nebo v názvu projektu. Také pokud plánujete nasadit řešení pro použití v režimu offline, znaky v názvu projektu se musí vejít specifikacím protokolu HTTP.
 
 6. Zvolte **OK** tlačítko.
 

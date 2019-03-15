@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913181"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872385"
 ---
 # <a name="improve-performance-for-code-maps"></a>Zvýšení výkonu pro mapy kódu
 
 Při prvním generování mapu, Visual Studio indexuje všechny závislosti, které nalezne. Tento proces může trvat nějakou dobu, zvláště pro velká řešení, ale vyšší výkon. Pokud se změní kód, sada Visual Studio přeindexuje pouze aktualizovaný kód. Chcete-li minimalizovat čas potřebný pro mapování na dokončení vykreslování, zvažte následující návrhy:
 
-- [Mapování závislostí, které vás zajímají.](#create-a-code-map-to-see-specific-dependencies)
+- Mapování závislostí, které vás zajímají.
 
 - Před generováním mapy pro kompletní řešení snižte Rozsah řešení.
 

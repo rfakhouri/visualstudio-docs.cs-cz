@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223036"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869328"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý start: Přizpůsobení integrovaného vývojového prostředí sady Visual Studio a Editor
 
@@ -33,7 +33,7 @@ Výchozí barevný motiv uživatelského rozhraní sady Visual Studio se nazýv�
    ![VS v tmavém motivu](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Můžete nainstalovat další předdefinované motivy nainstalováním **Editor motivů sady Visual Studio** z [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje, další barevné motivy joinkind **barevný motiv** rozevíracího seznamu.
+> Můžete nainstalovat další předdefinované motivy nainstalováním **Editor motivů sady Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje, další barevné motivy joinkind **barevný motiv** rozevíracího seznamu.
 
 ## <a name="change-text-color"></a>Změna barvy textu
 

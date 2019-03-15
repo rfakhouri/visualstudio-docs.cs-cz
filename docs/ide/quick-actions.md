@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee5e9c9872074d43e418dcbc33d11347c53ef02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952564"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867034"
 ---
 # <a name="quick-actions"></a>Rychlé akce
 
@@ -24,8 +24,11 @@ Rychlé akce vám umožní snadno Refaktorujte, generovat nebo jinak upravit kó
 Rychlé akce umožňuje:
 
 - Použít opravu kódu [code analyzer](../code-quality/roslyn-analyzers-overview.md) porušení pravidla
-- [Potlačit](../code-quality/use-roslyn-analyzers.md) porušení pravidla analyzátor kódu
+
+- [Potlačit](../code-quality/use-roslyn-analyzers.md#suppress-violations) porušení pravidla analyzátor kódu
+
 - Použít refaktoring (například [vložená dočasná proměnná](../ide/reference/inline-temporary-variable.md))
+
 - Generování kódu (například [zavést lokální proměnnou](../ide/reference/introduce-local-variable.md))
 
 > [!NOTE]
@@ -33,7 +36,7 @@ Rychlé akce umožňuje:
 
 Rychlé akce lze použít pomocí žárovky ![ikonou žárovky](media/light-bulb-icon.png) nebo šroubovák ![šroubovák ikonu](media/screwdriver-icon.png) ikony, nebo stisknutím klávesy **Ctrl** + **.** Když je kurzor na řádek kódu, pro který je k dispozici akci. Zobrazí se žárovka chyba ![ikonu žárovky chyby](media/error-light-bulb-icon.png) pokud existuje červená vlnovka udávající chybu a sady Visual Studio je k dispozici pro tuto chybu opravu.
 
-Pro libovolný jazyk třetím stranám poskytnete vlastní Diagnostika a návrhy, například jako součást sady SDK a sady Visual Studio návrhy bylo možné na základě těchto pravidel.
+Pro libovolný jazyk třetím stranám poskytnete vlastní Diagnostika a návrhy, například jako součást sady SDK a návrhy sady Visual Studio se zobrazí podle těchto pravidel.
 
 ## <a name="icons"></a>Ikony
 
@@ -41,17 +44,17 @@ Ikona, která se zobrazí, když je k dispozici je rychlá akce obsahuje údaj o
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Pokud chcete zobrazit návrhy nebo šroubovák
 
-- Pokud je k dispozici oprava, návrhy samovolně se zobrazí při najetí myší na umístění k chybě.
+Pokud opravu je dostupná, zobrazí se návrhy:
+
+- Při přesunutí ukazatele myši v místě chybu
 
    ![Žárovka s najede myší](../ide/media/vs2015_lightbulb_hover.png)
 
-- Ikony žárovky šroubováky zobrazí a do levého okraje editoru při přesunutí blikající kurzor do jediného řádku kódu, pro který je k dispozici rychle reagovat.
+- Do levého okraje editoru při přesunutí blikající kurzor (ukazatel) na příslušný řádek kódu
 
-- Stisknutím klávesy **Ctrl**+**.** kdekoli v řádku zobrazíte seznam dostupných rychlé akce a refaktoringy.
+Můžete také stisknout klávesu **Ctrl**+**.** kdekoli v řádku zobrazíte seznam dostupných rychlé akce a refaktoringy.
 
-## <a name="to-see-potential-fixes"></a>Chcete-li zobrazit možné opravy
-
-Vyberte buď na šipku dolů vedle žárovky nebo **ukazují možné opravy** odkaz zobrazíte seznam rychlé akce, které jsou k dispozici.
+Pokud chcete zobrazit možné opravy, vyberte buď na šipku dolů vedle žárovky nebo **ukazují možné opravy** odkaz. Zobrazí se seznam dostupné rychlé akce.
 
 ![Žárovka rozšířit](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

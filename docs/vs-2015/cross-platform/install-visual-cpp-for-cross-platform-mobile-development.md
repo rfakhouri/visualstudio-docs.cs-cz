@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 47285fe9fb57b9c4d5d80c60f9e626f394e11934
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762856"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869119"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalace komponenty Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Visual C++ pro vývoj mobilních řešení napříč platformami] (http://go.mic
   
    Ve výchozím nastavení instalační program umístí Apache Ant C:\Program Files (x86) \Microsoft 14.0\Apps sady Visual Studio.  
   
-- [Microsoft Visual Studio Emulator for Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Microsoft Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/)  
   
    Můžete nainstalovat a aktualizovat Microsoft Visual Studio Emulator for Android z Galerie sady Visual Studio.  
   

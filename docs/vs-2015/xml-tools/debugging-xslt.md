@@ -9,21 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7775743e69dcd9fa6bca9ce33d6e5c618d1baffd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799350"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873325"
 ---
-# <a name="debugging-xslt"></a>Ladění XSLT
+# <a name="debug-xslt"></a>Ladění XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ladicí program sady Visual Studio můžete použít k ladění XSLT. Ladicí program podporuje můžete nastavovat zarážky, zobrazení stavů provedení transformace XSLT, a tak dále. Ladění XSLT je k dispozici v aplikaci Visual Studio Team System a edici Professional.  
+Ladicí program sady Visual Studio můžete použít k ladění XSLT. Ladicí program podporuje můžete nastavovat zarážky, zobrazení stavů provedení transformace XSLT, a tak dále. Ladění XSLT je k dispozici v edici Visual Studio Professional.  
   
-## <a name="in-this-section"></a>V tomto oddílu  
- [Novinky v ladicím programu XSLT](../xml-tools/what-s-new-in-the-xslt-debugger.md)  
- Popisuje funkce, které jsou v této verzi ladicím programu XSLT.  
+## <a name="in-this-section"></a>V tomto oddílu
   
  [Postupy: Spuštění ladění XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
  Popisuje způsob spuštění ladicí program XSLT.  

@@ -11,12 +11,12 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6eef832ae8b8bc912b79185cbc9cc6271ccb9924
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768353"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868340"
 ---
 # <a name="list-of-available-services"></a>Seznam dostupných služeb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,5 +160,5 @@ ms.locfileid: "54768353"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Ano|Ano|Poskytuje přístup k souborům ve formátu XML dokumentace přidružené k určité metadata souboru.|  
   
 ## <a name="see-also"></a>Viz také  
- [COM a spravované služby](http://msdn.microsoft.com/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM a spravované služby](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [Používání a poskytování služeb](../../extensibility/using-and-providing-services.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da9041c4fb54b37bfe585d2bbf0b88fdfe9264c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a5b4b3c73dede1a25f9c104ff85534623691002e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784429"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873781"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "54784429"
 
  Další informace a ukázky kódu najdete v tématu:
 
--   [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)
+-   [Postupy: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Sada Modeling SDK pro Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)
+-   [Sada Modeling SDK pro Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 ##  <a name="provide"></a> Zajištění přístupu k DSL
  Před vytvořením ModelBus odkazy na model nebo jeho prvky, je nutné definovat objekt ModelBusAdapter pro DSL. Nejjednodušší způsob je použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření modelu Service Bus, které přidá příkazy do návrháře DSL.

@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ddc63faae9a23485badb57f0e50ae8d46dd94b91
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799174"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873691"
 ---
 # <a name="install-visual-studio-2015"></a>Nainstalovat sadu Visual Studio 2015
 
@@ -143,7 +143,7 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
    Další informace o tom, jak nainstalovat nebo nasadit offline nápovědu najdete v článku [pomáhají Příručka pro správce prohlížeč](../ide/help-viewer-administrator-guide.md).
 
 ##  <a name="serviceReleases"></a> Kontrola aktualizací Service Release a aktualizací produktů
- Vzhledem k tomu, že ne všechna rozšíření jsou kompatibilní, Visual Studio neprovádí automatický upgrade rozšíření při upgradu z předchozí verze. Je třeba přeinstalovat rozšíření od [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) nebo od vydavatele softwaru.
+ Vzhledem k tomu, že ne všechna rozšíření jsou kompatibilní, Visual Studio neprovádí automatický upgrade rozšíření při upgradu z předchozí verze. Je třeba přeinstalovat rozšíření od [Visual Studio Marketplace](https://marketplace.visualstudio.com/) nebo od vydavatele softwaru.
 
 #### <a name="to-automatically-check-for-service-releases"></a>Automatické zjišťování aktualizací Service Release
 

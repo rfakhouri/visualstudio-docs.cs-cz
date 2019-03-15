@@ -1,6 +1,6 @@
 ---
 title: 'CA1003: Použijte instance obecných obslužných rutin události'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UseGenericEventHandlerInstances
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ee70694d81253c66fc83062c9736ba63f7e6e6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eff7b4b880526909c293e16aa32ae7045bcdf297
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907305"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867771"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Použijte instance obecných obslužných rutin události
 
@@ -34,42 +34,55 @@ ms.locfileid: "55907305"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Typ obsahuje delegát vracející hodnotu void, jehož předpis obsahuje dva parametry (první je objekt a druhý typ přiřaditelný do typu EventArgs) a obsahující cíle sestavení [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+
+Typ obsahuje delegát vracející hodnotu void a jehož předpis obsahuje dva parametry (první je objekt a druhý typ přiřaditelný do typu EventArgs) a .NET obsahující cíle sestavení.
+
+Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
- Před [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], chcete-li předat informace o vlastním obslužné rutiny události Nový delegát museli použít deklaraci, která je určena třída, která byla odvozena z <xref:System.EventArgs?displayProperty=fullName> třídy. To platí už v [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], který zavedl <xref:System.EventHandler%601?displayProperty=fullName> delegovat. Tento obecný delegát umožňuje jakoukoli třídu, která je odvozena od <xref:System.EventArgs> se použije spolu s obslužnou rutinu události.
+
+Než .NET, chcete-li předat informace o vlastním obslužné rutiny události nového delegáta musí deklarovat, která je určena třída, která byla odvozena z <xref:System.EventArgs?displayProperty=fullName> třídy. To platí už v rozhraní .NET. Rozhraní .NET Framework zavedené <xref:System.EventHandler%601?displayProperty=fullName> delegáta, obecného delegáta, který umožňuje jakoukoli třídu, která je odvozena od <xref:System.EventArgs> se použije spolu s obslužnou rutinu události.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, odeberte delegáta a nahraďte jeho použití pomocí <xref:System.EventHandler%601?displayProperty=fullName> delegovat. Pokud delegát je automaticky generována podle [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilátoru, změníte syntaxi deklarace události použití <xref:System.EventHandler%601?displayProperty=fullName> delegovat.
+
+Chcete-li opravit porušení tohoto pravidla, odeberte delegáta a nahraďte jeho použití pomocí <xref:System.EventHandler%601?displayProperty=fullName> delegovat.
+
+Pokud delegát je automaticky generované kompilátorem jazyka Visual Basic, změňte syntaxe deklarace události použití <xref:System.EventHandler%601?displayProperty=fullName> delegovat.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+
+Nepotlačujte upozornění na toto pravidlo.
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca1003.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje delegáta, který porušuje pravidla. V [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] například komentáře popisují, jak upravte příklad tak, že splňují pravidla. Pro příklad jazyka C# následuje příklad, který ukazuje změny kódu.
 
- [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
- [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
+Následující příklad ukazuje delegáta, který porušuje pravidla. Komentáře v jazyce Visual Basic příkladu popisují, jak upravte příklad tak, že splňují pravidla. Pro příklad jazyka C# následuje příklad, který ukazuje změny kódu.
 
-## <a name="example"></a>Příklad
- Následující příklad odebere z předchozího příkladu, který splňuje pravidlo a nahradí jeho použití v deklaraci delegáta `ClassThatRaisesEvent` a `ClassThatHandlesEvent` metody pomocí <xref:System.EventHandler%601?displayProperty=fullName> delegovat.
+[!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
+[!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
- [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
+Následující fragment kódu odstraní z předchozího příkladu, který splňuje pravidlo deklarace delegáta. Nahradí jeho použití v `ClassThatRaisesEvent` a `ClassThatHandlesEvent` metody pomocí <xref:System.EventHandler%601?displayProperty=fullName> delegovat.
+
+[!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1005: Vyhněte se nadbytečným parametrům na obecných typech](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010: Kolekce musí implementovat obecné rozhraní](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-
- [CA1000: Nedeklarujte statické členy v obecných typech](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-
- [CA1002: Nezveřejňujte obecné seznamy](../code-quality/ca1002-do-not-expose-generic-lists.md)
-
- [CA1006: Nevnořujte obecné typy v signaturách členu](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-
- [CA1004: Obecné metody by měly poskytnout parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-
- [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005: Vyhněte se nadbytečným parametrům na obecných typech](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010: Kolekce musí implementovat obecné rozhraní](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1000: Nedeklarujte statické členy v obecných typech](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002: Nezveřejňujte obecné seznamy](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006: Nevnořujte obecné typy v signaturách členu](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004: Obecné metody by měly poskytnout parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Viz také:
 

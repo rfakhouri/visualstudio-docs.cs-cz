@@ -1,6 +1,6 @@
 ---
 title: Analýza odezvy uživatelského rozhraní HTML v aplikacích pro UWP | Dokumentace Microsoftu
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 310185cec6fec2c72582d59f47f4ae767193d06d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640503"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868153"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro univerzální aplikace pro Windows.
@@ -340,8 +340,8 @@ if (performance.mark && performance.measure) {
 |Funkce zpětného volání pro asynchronní modulu Windows Runtime|Skriptování|Asynchronní operace, která aktivuje `Promise` objekt prostředí Windows Runtime dokončil funkce zpětného volání.|
 |Událost prostředí Windows Runtime|Skriptování|Událost, která na objekt prostředí Windows Runtime došlo k aktivaci zaregistrovaný naslouchací proces.|
 |Uvolnění paměti|Uvolňování paměti|Byl stráven čas shromažďování paměti pro objekty, které již byly použity.|
-|Výpočet šablon stylů CSS|Práce se styly|Byly provedeny změny v modelu DOM, který vyžaduje všech ovlivněných elementů proto bylo nutné přepočítat vlastnosti stylu.|
-|Rozložení|Práce se styly|Byly provedeny změny v modelu DOM, které vyžadovaly velikost nebo pozice všech ovlivněných elementů proto bylo nutné přepočítat.|
+|Výpočet šablon stylů CSS|Použití stylů|Byly provedeny změny v modelu DOM, který vyžaduje všech ovlivněných elementů proto bylo nutné přepočítat vlastnosti stylu.|
+|Rozložení|Použití stylů|Byly provedeny změny v modelu DOM, které vyžadovaly velikost nebo pozice všech ovlivněných elementů proto bylo nutné přepočítat.|
 |Malování|Vykreslování|V modelu DOM byly provedeny vizuální změny a byl proveden pokus o opětovné vykreslování části stránky.|
 |Vykreslit vrstvu|Vykreslování|Byly provedeny vizuální změny nezávisle vykreslovaného fragmentu modelu DOM (označovaného jako vrstva) a změny potřebné část stránky k vykreslení.|
 |Dekódování obrázku|Dekódování obrázku|Image byla zahrnuta v modelu DOM a byl proveden pokus o pro dekompresi a dekódování obrázku z původního formátu na rastrový obrázek.|

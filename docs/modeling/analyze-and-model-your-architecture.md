@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924460"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873665"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analýza a modelování vaší architektury
 
@@ -109,5 +109,5 @@ DSL je zápis, který návrh pro konkrétní účel. V sadě Visual Studio má o
 
 ## <a name="see-also"></a>Viz také:
 
-- [Co je nového](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [Co je nového pro modelování v sadě Visual Studio 2017](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps a správa životního cyklu aplikací](/azure/devops/user-guide/devops-alm-overview)

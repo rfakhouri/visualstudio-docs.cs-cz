@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 ms.date: 01/15/2019
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-ms.openlocfilehash: faee8d414f324adce2a3e732ace301d45b13f3df
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c0eabc286cbeafc3d9b2651e5f6f2ec6c61d7e04
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844084"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870302"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript v sadě Visual Studio 2017
 
@@ -32,7 +32,7 @@ Visual Studio teď podporuje syntaxi pro aktualizace jazyka ECMAScript napříkl
 
 ### <a name="what-is-ecmascript-2015"></a>Co je ECMAScript 2015?
 
-JavaScript se dál vyvíjejí jako programovací jazyk a [TC39](http://www.ecma-international.org/memento/TC39.htm) zodpovídá výbor pro provedení aktualizací.
+JavaScript se dál vyvíjejí jako programovací jazyk a [TC39](https://www.ecma-international.org/memento/tc39-m.htm) zodpovídá výbor pro provedení aktualizací.
 ECMAScript 2015 je aktualizace, která přináší užitečné novou syntaxi a funkce jazyka JavaScript. Podrobné informace o funkcích ES6, projděte si [to](http://es6-features.org) referenční webový server.
 
 Kromě podporu pro ECMAScript 2015 Visual Studio také podporuje ECMAScript 2016 a bude zahrnovat podporu pro budoucí verze ECMAScript při jejich vydání. Jak držet krok s TC39 a nejnovější změny v ECMAScript, sledujte práci na [githubu](https://github.com/tc39).

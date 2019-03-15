@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316766"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867978"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku panel nástrojů WPF
 Šablony ovládacího prvku panelu nástrojů WPF (Windows Presentation Framework) umožňuje vytvořit ovládací prvky WPF, které jsou automaticky přidány do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření **nástrojů** ovládacího prvku, které můžete distribuovat ostatním uživatelům.
@@ -97,4 +97,4 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 
 3. Nahrát *VSIX* soubor k síti nebo na web.
 
-    Pokud nahrajete soubor, který má [galerii sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webové stránky, další uživatelé můžou používat **nástroje** > **rozšíření a aktualizace** v sadě Visual Studio najít ovládací prvek online a nainstalujte ho.
+    Pokud nahrajete soubor, který má [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webové stránky, další uživatelé můžou používat **nástroje** > **rozšíření a aktualizace** v sadě Visual Studio najít ovládací prvek online a nainstalujte ho.

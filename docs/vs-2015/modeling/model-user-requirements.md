@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03f1fe9f2cb159e4a6d6db5ded46907b5944471e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758435"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870600"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -182,7 +182,6 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
 |Další informace o|Číst|  
 |--------------------|----------|  
-|Podrobnější informace o nahrávání kvality požadavků na služby|[Pokyny pro definování kvality požadavků na služby](http://msdn.microsoft.com/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Připojení dalších dokumentů s případy použití|[Propojení případu použití s dokumenty a diagramy](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Postupy při vývoji kódu, který dodržuje kvality požadavků na služby|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   

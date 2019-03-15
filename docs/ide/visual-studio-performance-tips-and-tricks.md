@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 9c6af35b4532b14adc914ab2358745df53f68804
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222984"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868227"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipy k výkonu sady Visual Studio a triky
 
@@ -25,7 +25,7 @@ Doporučení ohledně výkonu pro Visual Studio jsou určeny pro situace nedosta
 
 Pokud upgradujete váš systém z 32bitové verze Windows na 64bitovou verzi, rozbalte velikost virtuální paměti, které jsou k dispozici se sadou Visual Studio z 2 GB až 4 GB. Díky sadě Visual Studio pro zpracování výrazně větší úlohy, i když je 32bitový proces.
 
-Další informace najdete v tématu [limity paměti](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) a [použijte parametr/LARGEADDRESSAWARE na Windows 64-bit](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Další informace najdete v tématu [limity paměti](/windows/desktop/Memory/memory-limits-for-windows-releases) a [použijte parametr/LARGEADDRESSAWARE na Windows 64-bit](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Zakázat automatické obnovení
 

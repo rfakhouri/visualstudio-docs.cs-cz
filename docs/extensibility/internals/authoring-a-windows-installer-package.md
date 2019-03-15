@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946dcfecb43aa5a0390f752b5e40cb5869bb1b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635199"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871601"
 ---
 # <a name="author-a-windows-installer-package"></a>Autor balíčku Instalační služby systému Windows
 Datové jednotky modelu Instalační služby systému Windows. Místo psaní skriptu procedury kopírování souborů a zápis položky registru, například vytváříte řádků a sloupců do tabulek databáze, které obsahují data souborů a registru.
@@ -47,7 +47,7 @@ Různé nástroje třetích stran instalace nabízejí vývojové prostředí pr
 
    Sada nástrojů XML Instalační služby systému Windows (WiX) sestaví balíčky Instalační služby systému Windows ze zdrojových souborů XML. Sada nástrojů WiX je projekt open source Microsoftu. Stáhněte si zdrojový kód a spustitelné soubory z [sadu nástrojů Wix toolset](http://sourceforge.net/projects/wix).
 
-   Pro komerční produkty, které se integrují do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pomocí [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], naleznete v tématu [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).
+   Pro komerční produkty, které se integrují do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pomocí [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], naleznete v tématu [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ## <a name="see-also"></a>Viz také:
 - [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

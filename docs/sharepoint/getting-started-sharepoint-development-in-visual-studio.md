@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873207"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869015"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Získejte Začínáme (vývoj pro SharePoint v sadě Visual Studio)
   Tato část pomůže je začít využívat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vývoj řešení služby SharePoint, které budou využívat [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] a [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Informace o SharePoint 2013 a doplňky pro SharePoint, naleznete v tématu [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) a [vytváření Sharepointových doplňků](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Informace o SharePoint 2013 a doplňky pro SharePoint, naleznete v tématu [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) a [vytváření Sharepointových doplňků](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint nabízí platforma pro webové spolupráci. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje že mnoho šablon projektu pro vytváření webů služby SharePoint a obsah, včetně definic seznamu, pracovních postupů, modelů připojení obchodních dat a definic webu. Kromě toho můžete vytvořit rozšíření pro projekty SharePoint a nástroje v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 

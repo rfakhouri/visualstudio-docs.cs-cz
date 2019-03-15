@@ -1,6 +1,6 @@
 ---
 title: 'CA1008: Výčty by měly mít nulovou hodnotu'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1008
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d7646ddb294cef27b58b5b5e212c33b11fb46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4bb79d2944bdb49c59fd53fb30e1497c57c5c516
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955294"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868282"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Výčty by měly mít nulovou hodnotu
 
@@ -34,9 +34,11 @@ ms.locfileid: "55955294"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Bez konce – po zobrazení výzvy k přidání **žádný** hodnotu výčtu bez příznaku. Zásadní – po zobrazení výzvy k přejmenujte nebo odeberte všechny hodnoty výčtu.|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Výčet bez použité <xref:System.FlagsAttribute?displayProperty=fullName> nedefinuje člena, který má hodnotu nula; nebo výčet, který má použité <xref:System.FlagsAttribute> definuje člen s hodnotou nula, ale jeho název není 'None' nebo výčet definuje více s nulovou hodnotou členy.
+Výčet bez použité <xref:System.FlagsAttribute?displayProperty=fullName> nedefinuje člena, který má hodnotu nula. Nebo výčet, který má použité <xref:System.FlagsAttribute> definuje člen s hodnotou nula, ale jeho název není 'None'. Nebo výčet definuje víc členů s hodnotou nula.
+
+Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné výčtů, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -51,6 +53,16 @@ Chcete-li opravit porušení tohoto pravidla pro výčty bez příznaků atribut
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
 Nepotlačujte upozornění tohoto pravidla s výjimkou s atributy příznaky výčty, které byly dříve součástí.
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca1008.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
 

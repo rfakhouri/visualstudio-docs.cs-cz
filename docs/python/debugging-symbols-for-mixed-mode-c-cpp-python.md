@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951339"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869360"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalace interpretů Pythonu symboly pro ladění
 
@@ -54,7 +54,7 @@ Pokud jste si stáhli samostatně symboly, podle následujících pokynů sada V
 
     ![Možnosti symbolů ladění ve smíšeném režimu](media/mixed-mode-debugging-symbols.png)
 
-1. Během relace ladění Visual Studio mohou také vyžadovat zadání umístění zdrojového souboru pro interpret Pythonu. Pokud jste stáhli zdrojové soubory (z [python.org/downloads](https://www.python.org/downloads), například), pak samozřejmě pak můžete jim také.
+1. Během relace ladění Visual Studio mohou také vyžadovat zadání umístění zdrojového souboru pro interpret Pythonu. Pokud jste stáhli zdrojové soubory (z [python.org/downloads/](https://www.python.org/downloads/), například), pak samozřejmě pak můžete jim také.
 
 > [!Note]
 > Funkce ukládání do mezipaměti symbolů zobrazené v dialogovém okně umožňují vytvořit místní mezipaměť symbolů získaných z online zdroje. Tyto funkce nejsou potřeba se symboly interpret Pythonu, protože symboly jsou už k dispozici místně. V každém případě najdete [zadejte symboly a zdrojové soubory v ladicím programu sady Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) podrobnosti.

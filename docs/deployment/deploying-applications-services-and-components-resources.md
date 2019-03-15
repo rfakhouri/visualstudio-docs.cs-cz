@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628985"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870289"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Přehled nasazení v sadě Visual Studio
 
@@ -35,7 +35,7 @@ Z Visual Studia aplikace lze publikovat přímo do těchto cílů:
 - [Azure App Service](#azure-app-service)
 - [Azure Virtual Machines](#azure-virtual-machines)
 - [Systém souborů](#file-system)
-- [Vlastní cíle (služba IIS, FTP atd.) ](#custom-targets), což zahrnuje všechny libovolné webové servery.
+- [Vlastní cíle (služba IIS, FTP atd.) ](#custom-targets-iis-ftp), což zahrnuje všechny libovolné webové servery.
 
 Na **publikovat** kartu, vyberte existující profil publikování, importovat existující nebo vytvořte novou pomocí možnosti uvedené tady. Prohlídka možnosti publikování v integrovaném vývojovém prostředí pro různých typů aplikací, najdete v části [první seznámení s nasazováním](../deployment/deploying-applications-services-and-components.md).
 

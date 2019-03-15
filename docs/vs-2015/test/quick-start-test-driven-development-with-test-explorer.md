@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797962"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868921"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý start: Vývoj řízený testy s použitím Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
 >  Výsledky, které se zobrazují se poslední spuštění. Obarvený panel výsledků zobrazuje pouze výsledky testů, které byly spuštěny. Například pokud spuštění více testů a některé z nich selhání a poté spustíte pouze úspěšné testy, pak na panelu výsledků bude celý zelený.  
   
 > [!NOTE]
->  Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [použití různých testovacích rozhraní s Průzkumníkem testů](#frameworks).  
+>  Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [použití různých testovacích rozhraní](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ##  <a name="walkthrough"></a> Návod: Použití jednotkových testů pro vývoj metody  
- Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [použití různých testovacích rozhraní](#frameworks).  
+ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [Usa různých testovacích rozhraní](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Vytvoření testu a – metoda  
   

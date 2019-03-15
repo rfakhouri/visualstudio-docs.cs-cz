@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: de09da6a68e00ee66e04ae9523729c88232e78a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779816"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871595"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -288,7 +288,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
   
  Informace o ladění v Azure najdete v jednom z těchto témat:  
   
--   [Ladění cloudové služby nebo virtuálního počítače v sadě Visual Studio](http://msdn.microsoft.com/library/azure/ff683670.aspx)  
+-   [Ladění cloudové služby nebo virtuálního počítače v sadě Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
 -   [Ladění v rozhraní .NET back-end v sadě Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   

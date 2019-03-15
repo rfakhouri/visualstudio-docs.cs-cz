@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ec56cd7d94556f1bd3c64e1746e7cd4899c7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8128f5b77b723ee231b2ec7029b84fa1b4a7ee97
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908592"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872092"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -60,9 +60,16 @@ Seznam úloh a součástí, které můžete nainstalovat pomocí příkazového 
    --includeRecommended --quiet --wait
   ```
 
-  > [!NOTE]
-  > `--wait` Parametr je určený pro použití v dávkovém souboru. V dávkovém souboru nebude pokračovat provádění dalšího příkazu až do dokončení instalace. `%ERRORLEVEL%` Proměnné prostředí bude obsahovat vrácenou hodnotu příkazu, jak je uvedeno v [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky.
+## <a name="using---wait"></a>Pomocí parametru--čekání
 
+* Čekání na instalační program sady Visual Studio a dokončete před provedením dalšího příkazu pomocí v dávkové soubory nebo skripty. Pro dávkové soubory`%ERRORLEVEL%` proměnné prostředí bude obsahovat vrácenou hodnotu příkazu, jak je uvedeno v [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky. Některé nástroje příkazového vyžadují další parametry, které chcete počkat na dokončení a k získání vrácené hodnoty instalačního programu. Následuje příklad další parametry pro příkaz skriptu prostředí PowerShell spuštění procesu:
+
+  ```cmd
+  $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+  ```
+  
+* První "– Počkejte" se používá tak, že instalační program sady Visual Studio a druhá ' – počkejte "je používán procesem' Start-" Čekání na dokončení. "-PassThru' parametr je používán procesem' Start-" použití instalačního programu ukončovací kód pro jeho návratovou hodnotu.
+  
 ## <a name="using---layout"></a>Pomocí parametru--rozložení
 
 * Stáhněte si základní editor sady Visual Studio (nejvíce minimální konfigurace sady Visual Studio). Zahrnout pouze anglické jazykové sady:

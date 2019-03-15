@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dee4518b6bc0015ec67978637d5696a25c4e04e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92d59e722b78e389bf355eeac8a1aa267979fc5b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767952"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873855"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Automatizované testy, které ovládají aplikaci prostřednictvím jejího uži
 
  Vytvoření programového testu uživatelského rozhraní je jednoduché. Můžete jednoduše ručním prováděním testu při testování Tvůrce CUIT běží na pozadí. Můžete také určit, jaké hodnoty by se zobrazit v konkrétních polích. Tvůrce testu CUIT zaznamená vaše akce a generuje kód z nich. Po vytvoření testu, můžete ho upravit v začínáte se speciálním editorem, který umožňuje upravit posloupnost akcí.
 
- Případně pokud máte testovací případ, která byla zaznamenána v nástroji Microsoft Test Manager, může generovat kód od. Další informace najdete v tématu [záznam a přehrávání zpět manuálních testů](http://msdn.microsoft.com/library/9792e72f-600e-441f-9d4e-6510e5965665).
+ Případně pokud máte testovací případ, která byla zaznamenána v nástroji Microsoft Test Manager, může generovat kód od. Další informace najdete v tématu [záznam a přehrávání zpět manuálních testů](/azure/devops/test/mtm/record-play-back-manual-tests).
 
  Specializované Tvůrce CUIT testu a editor umožňují snadno vytvářet a upravovat programové testy uživatelského rozhraní, i když jsou hlavní dovednosti koncentrované testování místo psaní kódu. Ale pokud jste vývojář a chcete rozšířit test pokročilejší způsobem, kód je strukturována tak, aby se snadno kopírovat a upravit. Například může zaznamenat test koupit na webu a pak upravte generovaný kód pro přidání smyčku, která koupí mnoho položek.
 
@@ -297,7 +297,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 -   **Editor kódu:**
 
-    -   Ručně přidejte kód pro ovládací prvky v testu, jak je popsáno v [akce ovládacího prvku uživatelského rozhraní kódování a vlastnosti](#VerifyingCodeCUITActionsandProperties) v tomto tématu.
+    -   Ručně přidejte kód pro ovládací prvky v testu, jak je popsáno v [akce ovládacího prvku uživatelského rozhraní kódování a vlastnosti](#actions) v tomto tématu.
 
     -   Po vytvoření programového testu UI můžete upravit tak být řízený daty. Další informace najdete v tématu [vytváření data-Driven programový Test uživatelského rozhraní](../test/creating-a-data-driven-coded-ui-test.md).
 

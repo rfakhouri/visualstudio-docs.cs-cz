@@ -1,6 +1,6 @@
 ---
 title: 'CA1710: Identifikátory by měly mít správnou příponu'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c602c249c7507d516e74c32f2d4db8447b645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944452"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868072"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identifikátory by měly mít správnou příponu
 
@@ -33,6 +33,8 @@ ms.locfileid: "55944452"
 ## <a name="cause"></a>příčina
 
 Identifikátor nemá správnou příponu.
+
+Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné identifikátory, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -90,6 +92,16 @@ Přejmenujte typ tak, aby příponu správný výraz.
 Je bezpečné potlačit upozornění použít příponu "Kolekce", pokud typ je zobecněný datová struktura, která může rozšířit nebo, který bude obsahovat libovolné sadu různých položek. Název, který poskytuje důležité informace o implementaci, výkon nebo dalších vlastností datové struktury v takovém případě může mít smysl (například BinaryTree). V případech, kde typ představuje kolekci určitého typu (například třída StringCollection), nepotlačujte upozornění tohoto pravidla vzhledem k tomu, že přípona označuje, že můžete vytvořit výčet typu pomocí `foreach` příkazu.
 
 Pro další přípony nepotlačujte upozornění tohoto pravidla. Přípona umožňuje zamýšlené použití bude zřejmé z názvu typu.
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Související pravidla
 

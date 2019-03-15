@@ -1,6 +1,6 @@
 ---
 title: Předvolby stylu kódu
-ms.date: 03/10/2017
+ms.date: 03/12/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -10,31 +10,31 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a7a478e8d3575e70a11ec776d59337ae93e7a677
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223127"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873357"
 ---
 # <a name="code-style-preferences"></a>Předvolby stylu kódu
 
-Pro projekty jazyka C# a Visual Basic lze nastavit předvolby stylu kódu tak, že otevřete **možnosti** dialogové **nástroje** nabídky. V **možnosti** dialogu **textový Editor** > [**C#** nebo **základní**] > **styl kódu**  >  **Obecné**. Možnostmi nastavenými v tomto okně platí pouze v místním počítači.
-
-Každá položka v seznamu zobrazí náhled předvoleb při výběru:
+Pro projekty jazyka C# a Visual Basic lze nastavit předvolby stylu kódu tak, že otevřete **možnosti** dialogové **nástroje** nabídky. V **možnosti** dialogu **textový Editor** > [**C#** nebo **základní**] > **styl kódu**  >  **Obecné**. Každá položka v seznamu zobrazí náhled předvoleb při výběru:
 
 ![Možnosti stylu kódu](media/code-style-quick-actions-dialog.png)
+
+Možnostmi nastavenými v tomto okně se vztahují na váš účet přizpůsobení sady Visual Studio a nejsou spojeny s konkrétní projekt nebo základ kódu. Kromě toho nejsou vynucená v okamžiku sestavení, včetně v sestaveních nepřetržité integrace (CI). Pokud chcete přidružit předvolby stylu kódu vašeho projektu a styly vynucují v průběhu sestavení, zadejte předvolby v [souboru .editorconfig](#editorconfig-files).
 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [chování editoru v sadě Visual Studio pro Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="preference-and-severity"></a>Priority a závažnosti
 
-Pro každou položku, můžete nastavit **předvoleb** a **závažnost** hodnoty pomocí rozevíracích na každém řádku. Je možné nastavit závažnost **žádný**, **návrh**, **upozornění**, nebo **chyba**. Pokud chcete povolit [rychlé akce](../ide/quick-actions.md) pro styl kódu, ujistěte se, že **závažnost** nastavená na něco jiného než **žádný**. **Rychlé akce** žárovky ![žárovky](media/vs2015_lightbulbsmall.png), chyba žárovky ![chyba žárovky](media/error-bulb.png), nebo šroubovák ![šroubovák](media/screwdriver.png) ikona se zobrazuje, kdy jiný než upřednostňovaný styl se používá, a zvolíte možnost na **rychlé akce** seznamu automaticky přepište kód upřednostňované stylu.
+Pro každou položku, můžete nastavit **předvoleb** a **závažnost** hodnoty pomocí rozevíracích na každém řádku. Je možné nastavit závažnost **žádný**, **návrh**, **upozornění**, nebo **chyba**. Pokud chcete povolit [rychlé akce](../ide/quick-actions.md) pro styl kódu, ujistěte se, že **závažnost** nastavená na něco jiného než **žádný**. **Rychlé akce** žárovky ![žárovky](media/light-bulb-dropdown.png), chyba žárovky ![chyba žárovky](media/error-bulb.png), nebo šroubovák ![šroubovák](media/screwdriver.png) ikona se zobrazuje, kdy jiný než upřednostňovaný styl se používá, a zvolíte možnost na **rychlé akce** seznamu automaticky přepište kód upřednostňované stylu.
 
 ## <a name="editorconfig-files"></a>EditorConfig soubory
 
-Nastavení stylu kódu pro .NET je také možné spravovat pomocí [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) souboru. Nastavení v souboru EditorConfig přednost možnosti vybrané v **možnosti** dialogové okno. Soubor s příponou EditorConfig slouží k vynucení a konfigurujte typ kódování pro celé úložiště nebo projektu.
+Nastavení stylu kódu pro .NET je taky možné specifikovat tak, že přidáte [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) soubor do projektu. Tyto soubory jsou spojeny se základ kódu, spíše než účtem přizpůsobení sady Visual Studio. Nastavení v souboru EditorConfig přednost možnosti vybrané v **možnosti** dialogové okno. Používejte soubor EditorConfig, pokud chcete vynutit kódování styly pro všechny uživatele k projektu nebo úložiště.
 
 ## <a name="format-document-command"></a>Formátovat dokument
 
@@ -45,7 +45,7 @@ Kód čištění respektuje konfiguraci v nastavení *.editorconfig* souboru neb
 Poprvé spustíte **formátovat dokument** příkaz v sadě Visual Studio, žlutý informační panel zobrazí výzvu, mohli konfigurovat svá nastavení vyčištění kódu.
 
 > [!TIP]
-> Pravidla, které jsou nakonfigurované jako **žádný** v *.editorconfig* soubor není součástí vyčištění kódu však lze použít jednotlivě prostřednictvím **rychlé akce a Refaktoringy** nabídky.
+> Se závažností z nakonfigurovaných pravidel **žádný** nehrají roli, v vyčištění kódu však lze použít jednotlivě prostřednictvím **rychlé akce a Refaktoringy** nabídky.
 
 ## <a name="see-also"></a>Viz také:
 

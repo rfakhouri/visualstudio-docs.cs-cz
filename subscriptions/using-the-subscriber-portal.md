@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Přečtěte si o široké spektrum výhody, které jsou k dispozici na na portálu předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843798"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867587"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Pomocí portálu pro předplatitele - Moje. <span> </span>visualstudio<span></span>.com
 
@@ -51,4 +51,4 @@ Stránku podpory kromě jednotlivé dávky v kategorii podpory na stránce výho
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-Je potřeba obnovit cloudové předplatné sady Visual Studio?  Chcete stáhnout nejnovější rozšíření pro rodinu produktů Visual Studio?  Na webu Marketplace pomáhá uživatelům vyhledávat rozšíření, nástroje a službách, které usnadňují ještě lepší Azure DevOps, Team Foundation Server a Visual Studio Code. Můžete dokonce stát vydavatelem a publikovat svá vlastní rozšíření na webu Marketplace.
+Je potřeba obnovit cloudové předplatné sady Visual Studio?  Chcete stáhnout nejnovější rozšíření pro rodinu produktů Visual Studio?  Na webu Marketplace pomáhá uživatelům vyhledávat rozšíření, nástroje a službách, které usnadňují ještě lepší Azure DevOps, Azure DevOps Server a Visual Studio Code. Můžete dokonce stát vydavatelem a publikovat svá vlastní rozšíření na webu Marketplace.

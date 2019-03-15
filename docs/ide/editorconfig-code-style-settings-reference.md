@@ -16,18 +16,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911868"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868375"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
-V sadě Visual Studio 2017 můžete definovat a udržovat konzistentní kódu styl v vašeho základu kódu s použitím [EditorConfig](../ide/create-portable-custom-editor-options.md) souboru. EditorConfig obsahuje několik vlastností formátování core, jako například `indent_style` a `indent_size`. V sadě Visual Studio nastavení konvence psaní kódu .NET můžete také konfigurovat pomocí souboru EditorConfig. EditorConfig soubory umožňují povolit nebo zakázat jednotlivé konvence kódování .NET a nakonfigurovat míru, do kterého má být konvence vynucuje prostřednictvím úroveň závažnosti. Další informace o tom, jak můžete vynutit konzistenci ve vašem základu kódu EditorConfig, [vytvoření přenosné vlastní editor možnosti](../ide/create-portable-custom-editor-options.md).
+Můžete definovat a udržovat konzistentní kódu styl v vašeho základu kódu s použitím [EditorConfig](../ide/create-portable-custom-editor-options.md) souboru. EditorConfig obsahuje několik vlastností formátování core, jako například `indent_style` a `indent_size`. V sadě Visual Studio je nastavení konvence psaní kódu .NET nakonfigurovat také pomocí souboru EditorConfig. Můžete povolit nebo zakázat jednotlivé konvence kódování .NET a nakonfigurovat míru, do kterého má být každé pravidlo vynucuje prostřednictvím úrovní závažnosti.
 
-Najdete na konci tohoto článku [souboru .editorconfig příklad](#example-editorconfig-file).
+> [!TIP]
+> - Při definování konvence psaní kódu v souboru .editorconfig konfigurujete způsob [analyzátory stylu kódu](../code-quality/roslyn-analyzers-overview.md) , které jsou součástí Visual Studia pro analýzu kódu. Souboru .editorconfig se konfigurační soubor pro tyto analyzátory.
+> - Předvolby stylu kódu pro Visual Studio lze také nastavit [Možnosti textového editoru](code-styles-and-quick-actions.md) dialogového okna. Vezměte ale v .editorconfig nastavení priority a předvoleb nastavíte v **možnosti** nejsou spojeny s konkrétní projekt.
+
+Konci tohoto článku obsahuje [souboru .editorconfig příklad](#example-editorconfig-file).
 
 ## <a name="convention-categories"></a>Vytváření kategorie
 

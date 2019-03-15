@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0db008584f07aab9c3d70047ac5cb4f99b645cf3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fd1387e02b96c9a5a4781e014641a49bbb5280ba
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779969"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867245"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referenční dokumentace k rozhraní API pro rozšiřitelnost technologie IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,5 +32,5 @@ Rozšiřitelnost technologie IntelliTrace rozhraní API podle informací uveden�
  [IntelliTrace](../debugger/intellitrace.md)  
  Poskytuje informace o tom, jak ladit pomocí nástroje IntelliTrace.  
   
- [Galerie kódu na webu MSDN](http://go.microsoft.com/fwlink/?LinkId=166091)  
+ [Galerie kódu na webu MSDN](https://code.msdn.microsoft.com/)  
  Hostuje ukázkovou aplikaci ukazující způsob použití rozšiřitelnost technologie IntelliTrace.

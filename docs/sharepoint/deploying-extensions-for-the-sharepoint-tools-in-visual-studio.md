@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876262"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868056"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio
 
 Pokud chcete nasadit rozšíření nástrojů služby SharePoint, vytvořit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] balíček extension (VSIX), který obsahuje sestavení rozšíření a další soubory, které chcete distribuovat s příponou. Balíček VSIX je komprimovaný soubor, který dodržuje standardní konvence Open Packaging (OPC). Balíčků VSIX *VSIX* rozšíření.
 
-Po vytvoření balíčku VSIX ostatní uživatelé mohou spouštět souboru .vsix, chcete-li nainstalovat rozšíření. Když uživatel nainstaluje rozšíření, nainstaluje se všechny soubory ke složce %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. K nasazení rozšíření, můžete nahrát balíčku VSIX k [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webové stránky, nebo můžete distribuovat balíček vašim zákazníkům jiným způsobem, jako je například hostování balíčku ve sdílené síťové složce nebo jiný webový server.
+Po vytvoření balíčku VSIX ostatní uživatelé mohou spouštět souboru .vsix, chcete-li nainstalovat rozšíření. Když uživatel nainstaluje rozšíření, nainstaluje se všechny soubory ke složce %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. K nasazení rozšíření, můžete nahrát balíček VSIX [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webové stránky, nebo můžete distribuovat balíček vašim zákazníkům jiným způsobem, jako je například hostování balíčku ve sdílené síťové složce nebo některé webové lokalita.
 
-Další informace o vytváření balíčků VSIX a jejich nasazení [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847), naleznete v tématu [přesouvání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
+Další informace o vytváření balíčků VSIX a jejich nasazení [Visual Studio Marketplace](https://marketplace.visualstudio.com/), naleznete v tématu [přesouvání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
  Můžete vytvořit pomocí balíčku VSIX **projekt VSIX** balíčku VSIX šablony v sadě Visual Studio, nebo můžete vytvořit ručně.
 

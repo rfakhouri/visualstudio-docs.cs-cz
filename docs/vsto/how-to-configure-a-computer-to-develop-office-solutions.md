@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff441de5d3643a1c8c4e9b57a98c7a5563d1ea62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ab7ffdf6e9323b3d4ee67b2bf237b271abb1a7d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653967"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869344"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Postupy: Konfigurace počítače pro vývoj řešení pro systém Office
   Ke konfiguraci vývojovém počítači, aby mohli používat Microsoft Office developer tools v sadě Visual Studio, postupujte podle pokynů v tomto tématu. Ve vývojovém počítači tyto kroky mohli provést, musíte mít oprávnění správce.
@@ -34,7 +34,7 @@ ms.locfileid: "56653967"
 3.  Pokud máte anglickou verzi sady Visual Studio, ale chcete použít jiné než anglické jazykové nastavení pro Windows, můžete nainstalovat [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jazyková sada zobrazíte [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zprávy ve stejném jazyce jako Windows. Jiných než anglických verzích sady Visual Studio automaticky nainstalujte jazykovou sadu. Sada language pack je k dispozici [webu služby Stažení softwaru](http://go.microsoft.com/fwlink/?LinkId=140386).
 
 ## <a name="see-also"></a>Viz také:
-- [Co je nového ve vývoji Office](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)
+
 - [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Postupy: Instalace primárních sestavení vzájemné spolupráce Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

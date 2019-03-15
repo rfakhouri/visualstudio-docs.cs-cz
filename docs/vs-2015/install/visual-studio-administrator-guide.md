@@ -13,19 +13,19 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834874"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868879"
 ---
 # <a name="visual-studio-administrator-guide"></a>Příručka administrátora sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nejnovější dokumentaci pro sadu Visual Studio 2017, najdete v článku [příručce pro správce sady Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-Visual Studio 2015 můžete nasadit v síti, tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Sdílené síťové složky můžete vytvořit spuštěním instalační soubor s přepínačem/Layout (jak je popsáno na [vytvoření v režimu Offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) stránky) a následným kopírováním z místního počítače do sdílené síťové složky. Pokud použijete Image ISO, můžete připojit bitovou kopii ISO a sdílet ho nebo zkopírovat bitovou kopii ISO do sdílené síťové složky.  
+Visual Studio 2015 můžete nasadit v síti, tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](https://visualstudio.microsoft.com/vs/older-downloads/). Sdílené síťové složky můžete vytvořit spuštěním instalační soubor s přepínačem/Layout (jak je popsáno na [vytvoření v režimu Offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) stránky) a následným kopírováním z místního počítače do sdílené síťové složky. Pokud použijete Image ISO, můžete připojit bitovou kopii ISO a sdílet ho nebo zkopírovat bitovou kopii ISO do sdílené síťové složky.  
   
  Všimněte si, že instalace ze sdílené síťové složky "nezapomeňte" umístění zdroje, které pocházejí. To znamená, že oprava klientského počítače může být nutné se vraťte do sdílené síťové složky, které klient původně nainstalovali. Pečlivě vašemu umístění v síti tak, aby se budou přizpůsobovat dostupnému prostoru životního cyklu, které plánujete mít Visual Studio 2015 klientů se systémy ve vaší organizaci.  
   

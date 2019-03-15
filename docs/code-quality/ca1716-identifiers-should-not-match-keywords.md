@@ -1,6 +1,6 @@
 ---
 title: 'CA1716: Identifikátory by se neměly shodovat s klíčovými slovy'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb483206ba13f89f0a23667039bf5f1a9d740b73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910192"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867729"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identifikátory by se neměly shodovat s klíčovými slovy
 
@@ -32,7 +32,9 @@ ms.locfileid: "55910192"
 
 ## <a name="cause"></a>příčina
 
-Název oboru názvů, typ nebo člen viritual nebo rozhraní odpovídá vyhrazenému klíčovému slovu programovacího jazyka.
+Název oboru názvů, typ, nebo virtuální nebo člen rozhraní odpovídá vyhrazenému klíčovému slovu programovacího jazyka.
+
+Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné obory názvů, typy a členy, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -41,12 +43,10 @@ Identifikátory pro obory názvů, typy a virtuální a interface členy by nem�
 Toto pravidlo zkontroluje proti klíčových slov v těchto jazycích:
 
 - Visual Basic
-
 - C#
-
 - C++/CLI
 
-Porovnávání se používá pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] klíčová slova a porovnání velká a malá písmena se používá pro jiné jazyky.
+Malá a velká písmena malá a velká písmena porovnání se používá pro ostatní jazyky a porovnání slouží pro klíčová slova jazyka Visual Basic.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
@@ -54,4 +54,14 @@ Vyberte název, který se nezobrazí v seznamu klíčových slov.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Pokud jste se přesvědčili, že identifikátor nesmí být pro uživatele matoucí rozhraní API a, že je možné použít ve všech jazycích k dispozici v rozhraní .NET Framework knihovnu můžete potlačit upozornění tohoto pravidla.
+Pokud už přesvědčili, že identifikátor nesmí být pro uživatele matoucí rozhraní API a, že je možné použít ve všech jazycích k dispozici v rozhraní .NET knihovnu můžete potlačit upozornění tohoto pravidla.
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca1716.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).

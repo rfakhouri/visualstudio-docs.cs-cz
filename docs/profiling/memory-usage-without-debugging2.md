@@ -1,6 +1,6 @@
 ---
 title: Analýza využití paměti bez ladění | Dokumentace Microsoftu
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615911"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873451"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analýza využití paměti bez ladicího programu
 
@@ -72,7 +72,7 @@ Poté, co zastavíte shromažďování dat **využití paměti** nástroj aplika
 
 Čísla v **snímku** podokna zobrazení bajtů a objektů v paměti při pořízení jednotlivých snímků a rozdíl mezi předchozí a snímku.
 
-Čísla jsou odkazy, které otevřete podrobné **využití paměti** sestavy zobrazení v nových oknech sady Visual Studio. A [podrobnosti sestavu snímku](#snapshot-details-report) ukazuje typy a instance v jeden snímek. A [rozdíl (rozdíl) sestavu snímku](#snapshot-difference-diff-reports) porovnává typy a instance v dvěma snímky.
+Čísla jsou odkazy, které otevřete podrobné **využití paměti** sestavy zobrazení v nových oknech sady Visual Studio. A [podrobnosti sestavu snímku](#snapshot-details-reports) ukazuje typy a instance v jeden snímek. A [rozdíl (rozdíl) sestavu snímku](#snapshot-difference-diff-reports) porovnává typy a instance v dvěma snímky.
 
   ![Zobrazit odkazy na pořízení snímku](../profiling/media/memuse__snapshotview_numbered.png "snímku zobrazit odkazy")
 

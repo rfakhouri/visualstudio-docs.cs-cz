@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 1a303e18f573ab806687bf238fa5557ecd6e91fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787492"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868179"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Postupy: Vytvoření ovládacího prvku panel nástrojů, který používá Windows Forms
 Šablony ovládacího prvku Windows Forms panel nástrojů, který je součástí [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umožňuje vytvořit ovládací prvky Windows Forms, které jsou automaticky přidány do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření **nástrojů** ovládacího prvku, které můžete distribuovat ostatním uživatelům...  
@@ -87,7 +87,7 @@ ms.locfileid: "54787492"
   
 2.  Nahrajte soubor .vsix k síti nebo na web.  
   
-     Pokud nahrajete soubor, který má [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webové stránky, další uživatelé můžou používat **Správce rozšíření** v sadě Visual Studio najít ovládací prvek a nainstalujte ho.  
+     Pokud nahrajete soubor, který má [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webové stránky, další uživatelé můžou používat **Správce rozšíření** v sadě Visual Studio najít ovládací prvek a nainstalujte ho.  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření ovládacího prvku panelu nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)

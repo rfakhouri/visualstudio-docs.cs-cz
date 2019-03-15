@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 90e98f22cabcc15287a5bfffc07ff1a3538835b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bd574fe6a3a75a46d827f459bbbdf0f3c4f807e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805541"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868163"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: Migrace a publikování webové aplikace do cloudové služby Azure ze sady Visual Studio
 
@@ -32,7 +32,7 @@ Pokud chcete využít výhod hostitelských služeb a schopnost škálování Az
 1. Visual Studio také nastaví **Kopírovat místně** vlastnost na hodnotu true pro všechna sestavení, které jsou požadovány pro MVC 2, MVC 3, MVC 4 a obchodní aplikace Silverlight. Tato vlastnost přidá do balíčku služby, který se používá pro nasazení těchto sestavení.
 
    > [!Important]
-   > Pokud máte jiné sestavení nebo soubory, které jsou požadovány pro tuto webovou aplikaci, musíte ručně nastavit vlastnosti těchto souborů. Informace o nastavení těchto vlastností najdete v tématu [vložených souborů v balíčku služby](#include-files-in-the-service-package).
+   > Pokud máte jiné sestavení nebo soubory, které jsou požadovány pro tuto webovou aplikaci, musíte ručně nastavit vlastnosti těchto souborů. Informace o nastavení těchto vlastností najdete v tématu [vložených souborů v balíčku služby](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
 
 ### <a name="errors-and-warnings"></a>Chyby a upozornění
 

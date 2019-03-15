@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96a3a9fc38d82a2eaeb1adfbcfdd59f9ae503275
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775009"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873541"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ uiGridKeyboardInputEdit.Text=value;
   
 3. Nainstalujte [Fiddler](http://www.fiddler2.com/fiddler2/). Toto je jednoduše nástroj, který zachytí a protokoly přenos pomocí protokolu HTTP.  
   
-4. Stáhněte si [fiddlerXap projektu](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Ji rozbalte, sestavte ho a spusťte skript "CopySLHelper.bat" instalace pomocné rutiny knihovny DLL, která se vyžaduje k testování webové části Silverlight, když použijete nástroj Fiddler.  
+4. Stáhněte si [fiddlerXap projektu](https://40jajy3iyl373v772m19fybm-wpengine.netdna-ssl.com/wp-content/uploads/sites/6/2019/02/FiddlerXapProxy.zip). Ji rozbalte, sestavte ho a spusťte skript "CopySLHelper.bat" instalace pomocné rutiny knihovny DLL, která se vyžaduje k testování webové části Silverlight, když použijete nástroj Fiddler.  
   
    Po nastavení vašeho počítače ke spuštění testování vaší aplikace SharePoint 2010 pomocí webové části Silverlight, postupujte podle těchto kroků:  
   

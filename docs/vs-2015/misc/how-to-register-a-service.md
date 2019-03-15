@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 14124e84ad7f49326bb9e5346868c177e9d32087
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761618"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872849"
 ---
 # <a name="how-to-register-a-service"></a>Postupy: Registrace služby
 Rozhraní spravovaného balíčku (MPF) poskytuje atributy pro řízení registrace spravovaných služeb. Nástroj RegPkg používá tyto atributy pro registraci služby s [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -41,5 +41,5 @@ Rozhraní spravovaného balíčku (MPF) poskytuje atributy pro řízení registr
 >  I když můžete použít stejný typ nebo identifikátor GUID pro služby a rozhraní, doporučujeme oddělit dva, protože služba může vystavit různá rozhraní.  
   
 ## <a name="see-also"></a>Viz také  
- [Registrace balíčků VSPackage](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Registrace balíčků VSPackage](../extensibility/internals/registering-vspackages.md)   
  [Základy služeb](../extensibility/internals/service-essentials.md)

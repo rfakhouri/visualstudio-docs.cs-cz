@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2be60979298de7a4c10e55285f1cdedc01ba9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954462"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867745"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace podporující přetahování
 
@@ -70,7 +70,7 @@ V novém souboru definujte částečnou třídu pro obrazec ani diagram třídy,
 
      Další informace najdete v tématu [jak: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
-Definování `IsAcceptableDropItem(e)` k určení, zda je přijatelné přetaženou položku a ProcessDragDropItem(e) aktualizovat váš model, když položka byla vynechána. Tyto metody musí nejprve extrahovat položky z argumentů událostí. Informace o tom, jak to udělat, najdete v části [jak získat odkaz na přetaženou položku](#extracting).
+Definování `IsAcceptableDropItem(e)` k určení, zda je přijatelné přetaženou položku a ProcessDragDropItem(e) aktualizovat váš model, když položka byla vynechána. Tyto metody musí nejprve extrahovat položky z argumentů událostí. Informace o tom, jak to udělat, najdete v části [jak získat odkaz na přetaženou položku](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>Definování obslužné rutiny gesta pomocí MEF
 
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) umožňuje definovat součásti, které mo
 
      Můžete vytvořit více než jedna komponenta obslužné rutiny gesta, například pokud máte různé typy přetažených objektů.
 
-3.  Přidat definicí částečné třídy pro tvar target, konektoru nebo diagramu třídy a definujte metody `IsAcceptableDropItem()` a `ProcessDragDropItem()`. Tyto metody musí začínat extrahováním přetaženou položku z argumentů události. Další informace najdete v tématu [jak získat odkaz na přetaženou položku](#extracting).
+3.  Přidat definicí částečné třídy pro tvar target, konektoru nebo diagramu třídy a definujte metody `IsAcceptableDropItem()` a `ProcessDragDropItem()`. Tyto metody musí začínat extrahováním přetaženou položku z argumentů události. Další informace najdete v tématu [jak získat odkaz na přetaženou položku](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="how-to-decode-the-dragged-item"></a>Dekódování přetaženou položku
 
@@ -132,7 +132,7 @@ Ke zjištění formátů, v nichž je k dispozici vaše informace o zdroji přet
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Objekty, jako jsou odkazy na Service bus model ze zdroje může taky přenášet v vlastní formát. Další informace najdete v tématu [jak odeslat odkazy na Model Service Bus v operace přetažení](#mbr).
+         Objekty, jako jsou odkazy na Service bus model ze zdroje může taky přenášet v vlastní formát. Další informace najdete v tématu [jak odeslat odkazy na Model Service Bus v operace přetažení](#to-send-an-object-from-a-source-dsl).
 
 -   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` – Pomocí této vlastnosti, pokud chcete uživatelům přetáhněte položky z DSL nebo modelu UML. Prvku skupiny prototyp obsahuje jeden nebo více objektů, odkazy a jejich hodnot vlastností. Používá se také operace vložení a jsou při přidávání prvku z panelu nástrojů. V prototypu objektů a jejich typy jsou označeny identifikátorem Guid. Tento kód například umožňuje uživateli prvky třídu přetáhnout z Průzkumníku modelů UML nebo diagramu UML:
 

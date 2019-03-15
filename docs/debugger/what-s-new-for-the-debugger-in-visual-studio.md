@@ -1,5 +1,6 @@
 ---
 title: Co je nového v ladicím programu sady Visual Studio 2017 | Dokumentace Microsoftu
+titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff14414415f86aeb704920f722eb221a2530a35c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993231"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867616"
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového v ladicím programu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Co je nového v ladicím programu sady Visual Studio 2017
 
 Ladicí program obsahuje tyto nové funkce:
 
-- Nové ve verzi 15.5, **Snapshot Debugger** pořídí snímek vaší aplikace do produkčního prostředí, když spustí kód, který vás zajímá. Dáte pokyn, aby ladicí program k vytvoření snímku, můžete nastavit snímkovací a protokolovací body ve vašem kódu. Ladicí program umožňuje zobrazit přesně toho, co nefunguje, aniž by to ovlivnilo provozu aplikace v produkčním prostředí. Snapshot Debugger můžete výrazně zkrátit čas potřebný k vyřešení problémů, ke kterým dochází v produkčním prostředí.
+- Novinka ve verzi 15.5, **Snapshot Debugger** pořídí snímek vaší aplikace do produkčního prostředí, když spustí kód, který vás zajímá. Dáte pokyn, aby ladicí program k vytvoření snímku, můžete nastavit snímkovací a protokolovací body ve vašem kódu. Ladicí program umožňuje zobrazit přesně toho, co nefunguje, aniž by to ovlivnilo provozu aplikace v produkčním prostředí. Snapshot Debugger můžete výrazně zkrátit čas potřebný k vyřešení problémů, ke kterým dochází v produkčním prostředí.
 
     Shromažďování snímků je k dispozici pro následující web apps ve službě Azure App Service:
 
@@ -38,7 +40,7 @@ Ladicí program obsahuje tyto nové funkce:
 
     Další informace najdete v tématu [ladit živé aplikace ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md).
 
-- Nové ve verzi 15.5 v sadě Visual Studio Enterprise, **zpětného kroku IntelliTrace** automaticky vytvoří snímek vaší aplikace v každé zarážce a ladicí program krok události. Zaznamenané snímky umožňují snadno vrátit k předchozím zarážkám nebo krokům a zobrazit stav aplikace jako v minulosti. IntelliTrace zpětným krokem vám může ušetřit čas při chcete zobrazit předchozí stav aplikace, ale nebudete chtít znovu spusťte ladění nebo znovu vytvořit stav požadované aplikace.
+- Novinka ve verzi 15.5 v sadě Visual Studio Enterprise, **zpětného kroku IntelliTrace** automaticky vytvoří snímek vaší aplikace v každé zarážce a ladicí program krok události. Zaznamenané snímky umožňují snadno vrátit k předchozím zarážkám nebo krokům a zobrazit stav aplikace jako v minulosti. IntelliTrace zpětným krokem vám může ušetřit čas při chcete zobrazit předchozí stav aplikace, ale nebudete chtít znovu spusťte ladění nebo znovu vytvořit stav požadované aplikace.
 
     Můžete procházet a zobrazit snímky pomocí **krok zpět** a **krok vpřed** tlačítka na panelu nástrojů ladění. Tato tlačítka Procházet události, které se zobrazují v **události** kartu **diagnostické nástroje** okna.
 
@@ -66,7 +68,7 @@ Ladicí program obsahuje tyto nové funkce:
 
     ![Hledání v připojení k procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Další informace o těchto nových funkcích najdete v článku [zpráva k vydání verze pro [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+Další informace o těchto nových funkcích najdete v článku [zpráva k vydání verze pro [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Viz také:
 

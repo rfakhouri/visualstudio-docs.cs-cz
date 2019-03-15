@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0237555a3e1aceb6a444300c5470f1c83a52d94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774468"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870406"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace s použitím WPF a Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Tento názorný ukazuje, jak vytvořit základní "formy nad daty" aplikace v sa
 ## <a name="install-and-connect-to-northwind"></a>Nainstalujte a připojte se k Northwind  
  Tento příklad používá SQL Server Express LocalDB a ukázkové databáze Northwind. Ji by měl fungovat s jinými produkty SQL database stejně, pokud zprostředkovatel dat ADO.NET pro tento produkt podporuje rozhraní Entity Framework.  
   
-1.  Pokud jste tak dosud neučinili, nainstalujte SQL Server 2014 LocalDB Express 32 bit z [stránce pro stažení SQL serveru edice](https://www.microsoft.com/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Pokud jste tak dosud neučinili, nainstalujte SQL Server 2014 LocalDB Express 32 bit z [stránce pro stažení SQL serveru edice](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
 2.  Instalace ukázkové databáze Northwind podle zde uvedených pokynů: [Instalace ukázkových databází systému SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a869b2589429d790a2a74b07823c333a5235826f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad0a794126467b82fa27ed865933bdfd7c913398
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756894"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867362"
 ---
 # <a name="deploying-applications-services-and-components"></a>Nasazení aplikací, služeb a komponent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Nasazením aplikace, služby nebo komponenty ji budete distribuovat pro instalac
   
 |Scénář nasazení|Podpůrný obsah|  
 |-------------------------|------------------------|  
-|**Publikujte do cloudu:** Můžete zpřístupnit aplikací, služeb a dat z odkudkoli pomocí sady Visual Studio nasadit do Microsoft Azure.|[Publikování aplikací do Microsoft Azure](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx)|  
+|**Publikujte do cloudu:** Můžete zpřístupnit aplikací, služeb a dat z odkudkoli pomocí sady Visual Studio nasadit do Microsoft Azure.|[Publikování aplikací do Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**Publikování aplikace pro Windows Store:** Můžete snadno vytvářet, odeslání a prodávat svoje aplikace z Windows Store, aby zákazníci po celém světě.|[Balení, nasazování a dotazování aplikací pro Windows Store](http://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Publikovat Windows Phone app:** Můžete odeslat novou aplikaci nebo aktualizaci stávající aplikace pro certifikaci v na Windows Phone Dev Center.|[Publikování aplikace pro Windows Phone](http://dev.windowsphone.com/publish)|  
 |**Nasazení aplikace ASP.NET nebo služby:** Nasadit aplikace ASP.NET a služby v několika různými způsoby.|[Nasazení webové aplikace ASP.NET a služby](http://www.asp.net/aspnet/overview/deployment)|  

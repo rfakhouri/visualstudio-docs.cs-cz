@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698986"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870517"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory ve formátu C# v ladicím programu sady Visual Studio
 Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomocí specifikátorů formátu. Můžete také použít specifikátory formátu v **okamžité** okně **příkaz** okno v [zarážky s trasováním](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)a ve zdrojových oknech. Pokud pozastavíte výraz v těchto oknech, výsledek se zobrazí v [datového tipu](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) v zadaném formátu zobrazení.
@@ -51,6 +51,14 @@ Použijeme následující příklad kódu:
 Přidat `my_var1` proměnnou **Watch** okno při ladění, **ladění** > **Windows** > **sledovat**  >  **Sledovat 1**. V dalším kroku klikněte pravým tlačítkem na proměnnou a vyberte **hexadecimální zobrazení**. Nyní **Watch** okno zobrazuje hodnota 0x0065. Chcete-li zobrazit tuto hodnotu jako desítkové celé číslo, spíše než šestnáctkové celé číslo, přidejte specifikátor formátu desítkové soustavy **, d** v **název** sloupec za název proměnné. **Hodnotu** sloupec teď zobrazuje **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+Můžete zobrazit a vybrat ze seznamu dostupných specifikátory přidáním čárky (,) s hodnotou v **Watch** okna. 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>Specifikátory formátu
 V následující tabulce jsou popsány C# formát specifikátoru v ladicím programu sady Visual Studio.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57874487"
+---
 
 1. Zavřete a znovu otevřete konzolu pro správu služby IIS na zobrazit aktualizovanou konfiguraci možností v uživatelském rozhraní.
 
@@ -34,6 +42,6 @@
    * Pokud se nemůžete připojit ke vzdálenému hostiteli v sadě Visual Studio pomocí názvu hostitele (v následujících krocích), otestujte adresu IP místo názvu hostitele.
 
      > [!NOTE]
-     > Pokud publikujete do IIS a běžící na Virtuálním počítači Azure, je nutné otevřít nasazení webu a portů služby IIS ve skupině zabezpečení sítě. Podrobné informace najdete v tématu [instalace a spuštění služby IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > Pokud publikujete do IIS a běžící na Virtuálním počítači Azure, je nutné otevřít nasazení webu a portů služby IIS ve skupině zabezpečení sítě. Podrobné informace najdete v tématu [instalace a spuštění služby IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server).
 
 5. Zkopírujte tento soubor do počítače, ve kterém běží sady Visual Studio.

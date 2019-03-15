@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 8afcf73c827976f01bbc71abf5eaddb4713c47a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4e17ed6ac15dbaee08c596b67a70b53f440a1e1e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764877"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866988"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Postupy: Upgrade vlastní úvodní stránku sady Visual Studio
 Můžete upgradovat Visual Studio 2010 nebo Visual Studio 2012 vlastní úvodní stránku do sady Visual Studio 2015 podle pokynů uvedených níže.
@@ -22,7 +22,7 @@ Můžete upgradovat Visual Studio 2010 nebo Visual Studio 2012 vlastní úvodní
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Vlastní úvodní stránku upgradovat na Visual Studio 2015
 
-1.  Ujistěte se, že jsou nainstalované Visual Studio 2015 a Visual Studio 2015 SDK. Můžete si stáhnout VSSDK z [Microsoft Visual Studio 2013 SDK](http://go.microsoft.com/?linkid=9863867).
+1.  Ujistěte se, že jsou nainstalované Visual Studio 2015 a Visual Studio 2015 SDK. Můžete si stáhnout VSSDK z [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
 
 2.  Otevřete svůj projekt vlastní šablony. Zobrazí se zpráva s upozorněním, že projekt je třeba upgradovat. Klikněte na tlačítko **OK** a počkat na dokončení.
 

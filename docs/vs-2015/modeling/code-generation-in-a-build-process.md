@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c30ef435cde80053d1f7760a57acac2bca8532
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766273"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867739"
 ---
 # <a name="code-generation-in-a-build-process"></a>Vytvoření kódu v procesu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ To znamená, že k různým položkám (například k názvům projektů) nelz
 
 ##  <a name="buildserver"></a> Konfigurace počítačů
 
-Pokud chcete povolit úlohy sestavení na vašem vývojovém počítači, nainstalujte [sada Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Pokud chcete povolit úlohy sestavení na vašem vývojovém počítači, nainstalujte [sada Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Pokud [váš server sestavení](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) se spustí na počítači, na kterém není nainstalována sada Visual Studio, zkopírujte následující soubory do počítače sestavení z vývojového počítače. Nahraďte nejnovější čísla verzí pro "*".
 
@@ -285,4 +285,4 @@ Dobrý návod poskytuje šablona T4 nástroje MSbuild, $(VSToolsPath)\TextTempla
 
 - [Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg Sych: Principy integrace T4:](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Oleg Sych: Principy integrace T4:](https://github.com/olegsych/T4Toolbox)

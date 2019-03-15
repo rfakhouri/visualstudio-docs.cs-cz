@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 003f17ad34219a21b69578902e5f48716c917789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797782"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867684"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Postupy: Použití diagnostiky grafiky se zařízením ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Diagnostika grafiky podporuje vzdálené ladění aplikací rozhraní Direct3D n
   
 1.  Nainstalujte [zásady sad ARM](http://msdn.microsoft.com/windows/desktop/dn469188) na vašem zařízení založené na ARM.  
   
-2.  Nainstalujte [nástroje pro vzdálené ladění](http://go.microsoft.com/fwlink/?LinkId=393086) na vašem zařízení založené na ARM.  
+2.  Nainstalujte [nástroje pro vzdálené ladění](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) na vašem zařízení založené na ARM.  
   
 > [!IMPORTANT]
 >  Pro zařízení s Windows Phone 8.1 budete muset zaregistrovat svůj telefon pro vývoj. Uděláte to tak, musí být registrovaný vývojář. Další informace najdete v tématu [o nasazení a spuštění aplikace pro Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  

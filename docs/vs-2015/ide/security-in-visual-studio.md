@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e751fa3edb74df01a9b8a2b0aa4643304f17dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f89e9a58d1ea501b9d92a44eead5e343cc7c014b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771008"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866934"
 ---
 # <a name="security-in-visual-studio"></a>Zabezpečení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +28,6 @@ Zabezpečení byste měli věnovat pozornost ve všech aspektech vývoje aplikac
 
 ## <a name="understanding-security"></a>Princip zabezpečení
  [Zabezpečení](http://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6) zabezpečení přístupu kódu popisuje rozhraní .NET Framework, na základě rolí zabezpečení, zásady zabezpečení a nástroje pro zabezpečení.
-
- [Chránit svůj kód pomocí Top deseti zabezpečení tipy každých Developer musíte znát](http://go.microsoft.com/fwlink/?LinkId=72877) popisuje problémy, které jste měli dávejte pozor na tak, aby abyste neohrozili svá data nebo systému.
 
 ## <a name="coding-for-security"></a>Kódování pro zabezpečení
  Většina chyb kódování, které mají za následek ohrožení zabezpečení, je způsobena nesprávnými úvahami vývojářů při práci s uživatelským vstupem nebo tím, že vývojáři plně nerozumí platformě, pro kterou vyvíjejí.

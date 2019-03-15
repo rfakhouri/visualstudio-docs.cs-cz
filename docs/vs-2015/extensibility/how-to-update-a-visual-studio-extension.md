@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47fbe9f6e28b7bafdfd46013c0f68fc7f068f005
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 321dca309476ecba80c0293f100ed64e7bb1cc4e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789435"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868689"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Postupy: Aktualizace rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Rozšíření sady Visual Studio můžete aktualizovat v systému s použitím *
 
 4.  Uložte řešení a sestavte ho.
 
-5.  Nahrát nový soubor .vsix (ve složce \bin\Debug\ projektu) do [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webu.
+5.  Nahrát nový soubor .vsix (ve složce \bin\Debug\ projektu) do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webu.
 
      Když se otevře uživatel, který má starší verzi rozšíření **rozšíření a aktualizace**, nová verze zobrazí v **aktualizace** seznamu, za předpokladu, že nástroj je nastavena automaticky vyhledat aktualizace.
 

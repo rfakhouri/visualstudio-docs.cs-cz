@@ -11,14 +11,14 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27a581175fd0cb63a598006ea2519058bdd8fcbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781517"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867555"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Průvodce: Publikování rozšíření sady Visual Studio
+# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Návod: Publikování rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Poznámka:**: Galerie Visual Studio teď nahrazuje Visual Studio Marketplace. Zobrazte nejnovější verzi tohoto tématu podrobnosti.
@@ -48,7 +48,7 @@ Tento návod ukazuje, jak publikovat rozšíření sady Visual Studio do Galerie
 
 1.  Ujistěte se, že jste vytvořili na prodejní verzi produktu rozšíření a zda je aktuální.
 
-2.  Ve webovém prohlížeči otevřete [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=194329) webu.
+2.  Ve webovém prohlížeči otevřete [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webu.
 
 3.  V pravém horním rohu klikněte na tlačítko **SIGN IN**.
 
@@ -86,7 +86,7 @@ Tento návod ukazuje, jak publikovat rozšíření sady Visual Studio do Galerie
 
 #### <a name="to-remove-the-extension-from-the-visual-studio-gallery"></a>Odebrat rozšíření z Galerie sady Visual Studio
 
-1.  Otevřít [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=194329) webu.
+1.  Otevřít [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webu.
 
 2.  V pravém horním rohu klikněte na tlačítko **Moje Extenions**. Zobrazí se seznam u možnosti TestPublish.
 

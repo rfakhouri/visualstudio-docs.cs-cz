@@ -17,12 +17,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a68a674eb8bec0558d430c87bf5590781e1e19c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797785"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873640"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Instalace systémů databází, nástroje a ukázky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Samotné sady Visual Studio nezahrnuje žádné databáze systémů než ty, kte
  Následující seznam zahrnuje některé další oblíbené systémů databáze, které lze použít v projektech Visual Studio. Seznam není úplný. Seznam externích dodavatelů, které nabízí zprostředkovatelé dat ADO.NET, které umožňují těsně integrovaná se sadou nástrojů sady Visual Studio najdete v tématu [zprostředkovatele dat ADO.NET](https://msdn.microsoft.com/library/dd363565.aspx).  
   
 ### <a name="microsoft-sql-server"></a>Microsoft SQL Server  
- Je nejdůležitější databáze Microsoft SQL Server nabízí. SQL Server 2016 přináší přelomový výkon, pokročilé zabezpečení a bohatě vybavené, integrované vytváření sestav a analýzy. Je dodáván v různých edicích, které jsou určeny pro různé účely: z vysoce škálovatelné a vysoce výkonnou obchodní analýzy, používat v jednom počítači. SQL Server Express je plně funkční edice SQL serveru, který je vytvořený na míru pro automatické distribuce signatur a vkládání.  LocalDB je zjednodušenou verzi systému SQL Server Express, která není nutné nic konfigurovat a běží v procesu vaší aplikace. Můžete si stáhnout nebo oba produkty [stránce pro stažení SQL Server Express](https://www.microsoft.com/server-cloud/Products/sql-server-editions/sql-server-express.aspx).    Mnoho příkladů SQL v této části použijte SQL Server LocalDB. SQL Server Management Studio (SSMS) je aplikace pro řízení samostatné databáze, která má více funkcí, než co je k dispozici v Průzkumníku objektů serveru SQL sady Visual Studio. SSMS můžete získat z předchozího propojení.  
+ Je nejdůležitější databáze Microsoft SQL Server nabízí. SQL Server 2016 přináší přelomový výkon, pokročilé zabezpečení a bohatě vybavené, integrované vytváření sestav a analýzy. Je dodáván v různých edicích, které jsou určeny pro různé účely: z vysoce škálovatelné a vysoce výkonnou obchodní analýzy, používat v jednom počítači. SQL Server Express je plně funkční edice SQL serveru, který je vytvořený na míru pro automatické distribuce signatur a vkládání.  LocalDB je zjednodušenou verzi systému SQL Server Express, která není nutné nic konfigurovat a běží v procesu vaší aplikace. Můžete si stáhnout nebo oba produkty [stránce pro stažení SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Mnoho příkladů SQL v této části použijte SQL Server LocalDB. SQL Server Management Studio (SSMS) je aplikace pro řízení samostatné databáze, která má více funkcí, než co je k dispozici v Průzkumníku objektů serveru SQL sady Visual Studio. SSMS můžete získat z předchozího propojení.  
   
 ### <a name="oracle"></a>Oracle  
  Můžete stáhnout placené nebo bezplatné edice databáze Oracle [síťové technologie Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) stránky. Pro podporu návrhu pro Entity Framework a objekty TableAdapter, budete potřebovat [Oracle Developer Tools for Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Další oficiální produkty Oracle, včetně klienta Oracle rychlého, jsou k dispozici prostřednictvím Správce balíčků NuGet.  Ukázka schémat Oracle si můžete stáhnout podle pokynů v [Online dokumentaci Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).  

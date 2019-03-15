@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de1843891779c3663d11910c3ae87720d7196e17
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869892"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868031"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Vytváření šablon položek a projektů pro položky projektu SharePoint
   Při definování vlastního typu položky projektu služby SharePoint můžete přidružit ho šabloně položky nebo šablony projektu. Toto přidružení umožňuje ostatním vývojářům použít položku projektu v sadě Visual Studio. Můžete také vytvořit průvodce pro šablony.
@@ -72,7 +72,7 @@ ms.locfileid: "54869892"
 
 |Volitelný soubor|Popis|
 |-------------------|-----------------|
-|SharePoint – položky projektu|Může obsahovat jeden nebo více souborů .spdata, které definují typů položek projektu služby SharePoint. Každý *.spdata* soubor musí mít odpovídající <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> provádění v rozšíření sestavení, který je zahrnutý v balíčku souboru VSIX pomocí šablony projektu. Další informace najdete v tématu [vytváření šablon položek](#creatingitemtemplates).<br /><br /> Projekty SharePoint obvykle zahrnují aspoň jedna položka Sharepointového projektu. To však není povinné.|
+|SharePoint – položky projektu|Může obsahovat jeden nebo více souborů .spdata, které definují typů položek projektu služby SharePoint. Každý *.spdata* soubor musí mít odpovídající <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> provádění v rozšíření sestavení, který je zahrnutý v balíčku souboru VSIX pomocí šablony projektu. Další informace najdete v tématu [Tvorba šablon položek s](#createitemtemplates).<br /><br /> Projekty SharePoint obvykle zahrnují aspoň jedna položka Sharepointového projektu. To však není povinné.|
 |*\<featureName>.feature*|Tento soubor definuje funkce služby SharePoint, který slouží k seskupení několik položek projektu pro nasazení. Při použití návrháře funkcí k přizpůsobení funkce ve vašem projektu, Visual Studio ukládá data o funkci v tomto souboru. Pokud chcete seskupit položky projektu do jiné funkce, může obsahovat více *.feature* soubory.<br /><br /> Když vytvoříte vlastní šablona projektu služby SharePoint, doporučujeme zahrnout pouze minimální požadovaný obsah v každém *.feature* souboru a konfiguraci funkcí s použitím rozhraní API v <xref:Microsoft.VisualStudio.SharePoint.Features> obor názvů v rozšíření, který je spojen se šablonou projektu. Pokud to uděláte, šablony projektu je chráněný před budoucí změny struktury *.feature* souboru. Příklad, který ukazuje, jak vytvořit *.feature* obsah souboru s pouze minimálním předpokladem naleznete v tématu [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Pokud chcete upravit *.feature* souboru přímo, můžete ověřit obsah pomocí schématu v *% Program Files (x86)%\Microsoft sady Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*.|
 |*\<featureName >. Template.XML*|Tento soubor poskytuje základ pro soubor manifestu funkce (*Feature.xml*) pro jednotlivé funkce, který je generován z projektu. Pokud chcete zadat některé rysy chování sady, který není určený k jejich změně uživatelé typu projektu, můžete přidat obsah do tohoto souboru. Další informace najdete v tématu [stavebních bloků: Funkce](http://go.microsoft.com/fwlink/?LinkId=169183) a [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) soubory.<br /><br /> Při vytváření balíčku řešení z projektu sady Visual Studio slučuje obsah každý pár  *\<featureName > .feature* souboru a  *\<featureName >. Template.xml* soubory do funkce soubor manifestu. Další informace o vytváření balíčků řešení najdete v tématu [jak: Vytvoření balíčku řešení SharePoint pomocí úloh nástroje MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d28825d03c6deeeaa0ee33ccf62620398e1d52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1f69e73274429a0da032760ab563d5aadf71a655
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612774"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867253"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Postupy: Instalace samostatného profileru
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje příkazový řádek na základě samostatného profileru, který můžete spustit bez nutnosti instalace [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí. Tato situace nastane, pokud počítač není nebo nemůže mít nainstalované prostředí pro vývoj. Například byste neměli instalovat prostředí pro vývoj na produkčním webovém serveru.
@@ -26,7 +26,7 @@ ms.locfileid: "56612774"
 
 ### <a name="to-install-the-stand-alone-profiler"></a>Instalace samostatného profileru
 
-1. Stáhněte si [Performance Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017).
+1. Stáhněte si [Performance Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio).
 
 1. Vyhledejte instalační program samostatné profilu (*vs_standaloneprofiler.exe*) které jste stáhli nástroje Sledování výkonu a spustíme ji.
 

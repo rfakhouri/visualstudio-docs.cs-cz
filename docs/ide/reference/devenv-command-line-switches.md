@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908462"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868906"
 ---
 # <a name="devenv-command-line-switches"></a>Přepínače příkazového řádku nástroje devenv
 
@@ -67,6 +67,7 @@ Následující přepínače příkazového řádku zobrazí rozhraní IDE a prov
 |[/Command](command-devenv-exe.md)|Spustí rozhraní IDE a provede zadaný příkaz.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Načte spustitelný C++ pod kontrolu ladicího programu. Tento přepínač není k dispozici v jazyce Visual Basic nebo C# spustitelné soubory. Další informace najdete v tématu [automaticky spustit proces v ladicím programu](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|Porovná dva soubory. Používá čtyři parametry: *Zdrojový soubor*, *Cílovýsoubor*, *SourceDisplayName* (volitelné), a *TargetDisplayName* (volitelné).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|Otevře zadaný řešení bez načtení jakýchkoli projektů.<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|Otevře dané soubory v běžící instanci této aplikace. Pokud neexistují žádné spuštěné instance, spustí novou instanci se zjednodušeným rozložením okna.<br /><br /> `devenv /edit File1 File2`|
 |[/ LCID nebo/l](lcid-devenv-exe.md)|Nastaví výchozí jazyk, rozhraní IDE. Pokud zadaný jazyk není součástí instalace sady Visual Studio, toto nastavení je ignorováno.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Spuštění sady Visual Studio a zaznamená veškerou aktivitu do souboru protokolu.<br /><br /> `devenv /log mylogfile.xml`|

@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 1b860739b82ddf64b07e1c154170e3992ec9ad81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d362ca2b9117eb215fbc73bb09dd7ee948dc19a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785134"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869354"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testování výkonu cloudové služby
 ## <a name="overview"></a>Přehled
@@ -108,6 +108,6 @@ Relace profilování se vytvoří pro každou instanci role v cloudové službě
 4. K zobrazení různých zobrazení sestavy v seznamu aktuální zobrazení, zvolte typ zobrazení, které chcete. Další informace najdete v tématu [zobrazeních sestav nástrojů pro profilaci](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Další kroky
-[Ladění cloudové služby](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Ladění cloudové služby](vs-azure-tools-debugging-cloud-services-overview.md)
 
-[Publikování do cloudové služby Azure ze sady Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx)
+[Publikování do cloudové služby Azure ze sady Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)

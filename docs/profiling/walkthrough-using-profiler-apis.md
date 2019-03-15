@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Pomocí rozhraní API Profiler | Dokumentace Microsoftu'
+title: 'Návod: Pomocí rozhraní API Profiler | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 260510c918bc38a2555ff04e711c4a5c728066dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637786"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868204"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Průvodce: Použití rozhraní API profileru
+# <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
 
 Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilování rozhraní API nástroje. Chcete-li omezit množství dat shromážděných během profilace instrumentace použijete rozhraní API profileru.
 
@@ -30,7 +30,12 @@ Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vspr
 
  Profiler sady Visual Studio umožňuje omezit shromažďování dat o. Tento návod poskytuje příklad toho, jak omezit shromažďování dat pomocí rozhraní API profileru. Profiler sady Visual Studio poskytuje rozhraní API pro řízení shromažďování dat z v rámci aplikace.
 
+ ::: moniker range=">=vs-2019"
+ Pro nativní kód profileru sady Visual Studio rozhraní API jsou v *VSPerf.dll*. Soubor hlaviček *VSPerf.h*a knihovnu importu *VSPerf.lib*, jsou umístěny v *Microsoft Visual Studio\2019\Team nástroje Tools\PerfSDK* adresář.  Pro 64bitové aplikace, je složka zadaná *Microsoft Visual Studio\2019\Team nástroje Tools\x64\PerfSDK*
+ ::: moniker-end
+ ::: moniker range="vs-2017"
  Pro nativní kód profileru sady Visual Studio rozhraní API jsou v *VSPerf.dll*. Soubor hlaviček *VSPerf.h*a knihovnu importu *VSPerf.lib*, jsou umístěny v *Microsoft Visual Studio\2017\Team nástroje Tools\PerfSDK* adresář.  Pro 64bitové aplikace, je složka zadaná *Microsoft Visual Studio\2017\Team nástroje Tools\x64\PerfSDK*
+ ::: moniker-end
 
  Pro spravovaný kód, okna profilování rozhraní API jsou v *Microsoft.VisualStudio.Profiler.dll*. Tato knihovna DLL se nachází v *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* adresáře. Pro 64bitové aplikace, je složka zadaná *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Profiler>.
 

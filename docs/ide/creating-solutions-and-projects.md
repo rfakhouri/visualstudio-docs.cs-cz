@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223244"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867884"
 ---
 # <a name="create-solutions-and-projects"></a>Vytváření řešení a projektů
 
@@ -113,11 +113,17 @@ Po vytvoření prázdného řešení můžete přidat nové nebo existující pr
 
 Jak už bylo zmíněno dříve, můžete také otevřít soubory kódu bez nutnosti projekt nebo řešení. Další informace o vývoji kódu tímto způsobem, najdete v článku [vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>Vytvoření dočasného projektu (C# a Visual Basic)
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>Vytvořit dočasný projekt
+
+(C# a pouze Visual Basic)
 
 Pokud vytvoříte. Na základě NET projektu bez zadání umístění na disku, je dočasný projekt. Dočasné projekty umožňují snadno experimentovat s projekty .NET. Kdykoli při práci s projektem dočasné můžete uložit nebo zahodit.
 
 Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje** > **možnosti** > **projekty a řešení**  >   **Obecné**a zrušte zaškrtnutí políčka **uložit nové projekty při vytvoření** zaškrtávací políčko. Otevřete **nový projekt** dialogovém jako obvykle.
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>Odstranění řešení, projektu nebo položky
 

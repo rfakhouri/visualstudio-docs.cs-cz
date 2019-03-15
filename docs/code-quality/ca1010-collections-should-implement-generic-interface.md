@@ -1,6 +1,6 @@
 ---
 title: 'CA1010: Kolekce musí implementovat obecné rozhraní'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1010
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9998f54298107ce7a6fb31cf6eb8481998ddfbae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c71912fdd70226e1b4be3c14be7c4e0bac26259d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955859"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871899"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Kolekce musí implementovat obecné rozhraní
 
@@ -31,73 +31,76 @@ ms.locfileid: "55955859"
 |Narušující změna|Nenarušující|
 
 ## <a name="cause"></a>příčina
- Externě viditelný typ implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> rozhraní, ale neimplementuje <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> rozhraní a obsahující cíle sestavení [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Toto pravidlo ignoruje typy, které implementují <xref:System.Collections.IDictionary?displayProperty=fullName>.
+
+Typ implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> rozhraní, ale neimplementuje <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> rozhraní a obsahující .NET cíle sestavení. Toto pravidlo ignoruje typy, které implementují <xref:System.Collections.IDictionary?displayProperty=fullName>.
+
+Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
- Použitelnost kolekce lze rozšířit implementací jednoho z rozhraní obecné kolekce. Potom kolekci lze použít k zaplnění typů obecných kolekcí, jako je následující:
+
+Použitelnost kolekce lze rozšířit implementací jednoho z rozhraní obecné kolekce. Potom kolekci lze použít k zaplnění typů obecných kolekcí, jako je následující:
 
 - <xref:System.Collections.Generic.List%601?displayProperty=fullName>
-
 - <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
-
 - <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, implementujte jednu z následujících rozhraní obecné kolekce:
+
+Chcete-li opravit porušení tohoto pravidla, implementujte jednu z následujících rozhraní obecné kolekce:
 
 - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
-
 - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
-
 - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla; kolekci však mají omezenější použití.
+
+Je bezpečné potlačit upozornění tohoto pravidla; použijte kolekci však budou omezenější.
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca1010.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Příklad porušení
 
-### <a name="description"></a>Popis
- Následující příklad ukazuje třídu (odkaz), která je odvozena z neobecné `CollectionBase` třídu, která poruší toto pravidlo.
+Následující příklad ukazuje třídu (odkaz), která je odvozena z neobecné `CollectionBase` třídu, která poruší toto pravidlo.
 
-### <a name="code"></a>Kód
- [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
+[!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
-### <a name="comments"></a>Komentáře
- Chcete-li opravit porušení toto porušení, by měla buď implementovat obecné rozhraní nebo změňte základní třídy na typ, který již implementuje oba obecných a neobecných rozhraní, jako například `Collection<T>` třídy.
+Chcete-li opravit porušení tohoto pravidla, proveďte jednu z následujících akcí:
+
+- Implementujte obecné rozhraní.
+- Změňte základní třídy na typ, který již implementuje oba obecných a neobecných rozhraní, jako `Collection<T>` třídy.
 
 ## <a name="fix-by-base-class-change"></a>Opravit změnou základní třídy
 
-### <a name="description"></a>Popis
- V následujícím příkladu řeší porušení změnou základní třídy kolekce z neobecné `CollectionBase` třídy obecného `Collection<T>` (`Collection(Of T)` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) třídy.
+V následujícím příkladu řeší porušení změnou základní třídy kolekce z neobecné `CollectionBase` třídy obecného `Collection<T>` (`Collection(Of T)` v jazyce Visual Basic) třídy.
 
-### <a name="code"></a>Kód
- [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
+[!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
-### <a name="comments"></a>Komentáře
- Změna základní třídy již vydané třídy se považuje za rozbíjející změny stávajícím příjemcům.
+Změna základní třídy již vydané třídy se považuje za rozbíjející změny stávajícím příjemcům.
 
 ## <a name="fix-by-interface-implementation"></a>Vyřešit tím, že implementace rozhraní
 
-### <a name="description"></a>Popis
- V následujícím příkladu řeší porušení implementací těmito obecnými rozhraními: `IEnumerable<T>`, `ICollection<T>`, a `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, a `IList(Of T)` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+V následujícím příkladu řeší porušení implementací těmito obecnými rozhraními: `IEnumerable<T>`, `ICollection<T>`, a `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, a `IList(Of T)` v jazyce Visual Basic).
 
-### <a name="code"></a>Kód
- [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
+[!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1005: Vyhněte se nadbytečným parametrům na obecných typech](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1000: Nedeklarujte statické členy v obecných typech](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-
- [CA1002: Nezveřejňujte obecné seznamy](../code-quality/ca1002-do-not-expose-generic-lists.md)
-
- [CA1006: Nevnořujte obecné typy v signaturách členu](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-
- [CA1004: Obecné metody by měly poskytnout parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-
- [CA1003: Použijte instance obecných události obslužné rutiny](../code-quality/ca1003-use-generic-event-handler-instances.md)
-
- [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005: Vyhněte se nadbytečným parametrům na obecných typech](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1000: Nedeklarujte statické členy v obecných typech](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002: Nezveřejňujte obecné seznamy](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006: Nevnořujte obecné typy v signaturách členu](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004: Obecné metody by měly poskytnout parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003: Použijte instance obecných události obslužné rutiny](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Viz také:
- [Obecné typy](/dotnet/csharp/programming-guide/generics/index)
+
+- [Obecné typy](/dotnet/csharp/programming-guide/generics/index)

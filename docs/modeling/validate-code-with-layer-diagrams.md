@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223192"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870357"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -102,14 +102,14 @@ Pokud máte diagramu otevřete závislostí, který je propojen s položkami ře
     > [!NOTE]
     > Ve výchozím nastavení **akce sestavení** vlastnost na závislost soubor diagramu (.layerdiagram) nastavena na **ověřit** tak, aby diagram je součástí procesu ověřování.
 
-     **Seznam chyb** okno hlásí chyby, ke kterým dochází. Další informace o chybách ověřování najdete v části [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors).
+     **Seznam chyb** okno hlásí chyby, ke kterým dochází. Další informace o chybách ověřování najdete v části [řešit problémy s ověřením vrstvy](#troubleshoot-layer-validation-issues).
 
 2.  Chcete-li zobrazit zdroje každé chyby, klikněte dvakrát na chybu v **seznam chyb** okna.
 
     > [!NOTE]
     > Visual Studio může namísto zdroje chyby zobrazit mapu kódu. K tomu dojde, pokud kód obsahuje závislost na sestavení, které není specifikováno diagram závislostí nebo kód chybí závislost, která je zadána diagram závislostí. Projděte si mapu kódu nebo kód určující, zda by měla závislost existovat. Další informace o mapách kódu najdete v tématu [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Ke správě chyb, naleznete v tématu [spravovat chyby ověřování](#ManageErrors).
+3.  Ke správě chyb, naleznete v tématu [vyřešení chyb ověření vrstvy](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Ověřování kódu v příkazovém řádku
 
@@ -147,7 +147,7 @@ Pokud máte diagramu otevřete závislostí, který je propojen s položkami ře
 
      Zobrazí se všechny chyby, ke kterým dochází. Další informace o nástroji MSBuild naleznete v tématu [MSBuild](../msbuild/msbuild.md) a [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).
 
-   Další informace o chybách ověřování najdete v části [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors).
+   Další informace o chybách ověřování najdete v části [řešit problémy s ověřením vrstvy](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Správa chyb ověřování
 
@@ -195,11 +195,11 @@ K otevření souboru projektu modelování (.modelproj) použijte textový edito
 
     To zahrnuje diagram závislostí do ověřovacího procesu.
 
-Ke správě chyb v okně Seznam chyb, naleznete v tématu [spravovat chyby ověřování](#ManageErrors).
+Ke správě chyb v okně Seznam chyb, naleznete v tématu [vyřešení chyb ověření vrstvy](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Poradce při potížích s ověřením vrstvy
 
-Následující tabulka popisuje problémy s ověřením vrstvy a jejich řešení. Tyto problémy se liší od chyb, které vzniknou z konfliktů mezi kódem a návrhem. Další informace o těchto chybách naleznete v tématu [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors).
+Následující tabulka popisuje problémy s ověřením vrstvy a jejich řešení. Tyto problémy se liší od chyb, které vzniknou z konfliktů mezi kódem a návrhem. Další informace o těchto chybách naleznete v tématu [řešit problémy s ověřením vrstvy](#troubleshoot-layer-validation-issues).
 
 |**Problém**|**Možná příčina**|**Řešení**|
 |-|-|-|

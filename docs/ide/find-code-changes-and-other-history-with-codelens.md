@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941046"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867852"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
 CodeLens vám umožňuje soustředit se na svou práci při můžete zjistit, co se stalo se váš kód&ndash;bez opuštění editoru. Můžete najít odkazy na část kódu, změny kódu, propojené chyby, pracovní položky, revize kódu a testy jednotek.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens je k dispozici pouze v edicích sady Visual Studio Enterprise a Visual Studio Professional. Není k dispozici v aplikaci Visual Studio Community edition.
+
+::: moniker-end
 
 V tématu, kde a jak se ve vašem řešení používají jednotlivé části kódu:
 
@@ -62,7 +66,7 @@ Prozkoumejte historii vašeho kódu a zjistěte, co se stalo se váš kód. Nebo
 
 Potřebuješ:
 
-- Visual Studio Enterprise nebo Professional sady Visual Studio
+- Visual Studio 2019 (nebo sady Visual Studio 2017 Enterprise nebo Professional edition)
 
 - Team Foundation Server 2013 nebo novější, Azure DevOps Services nebo Git
 

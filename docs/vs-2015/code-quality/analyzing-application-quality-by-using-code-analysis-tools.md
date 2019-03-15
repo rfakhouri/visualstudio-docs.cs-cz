@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7230de07c5aa1472332dbbddc094629fd1cdf257
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775544"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867439"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analýza kvality aplikace pomocí nástrojů pro analýzu kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,8 +44,8 @@ V tomto oddílu
 ### <a name="code-analysis-for-drivers"></a>Analýza kódu pro ovladače  
  Nástroji pro analýzu kódu může pomoci vylepšení stability a spolehlivosti ovladač systematicky analýzou ovladač zdrojový kód.  
   
- [Analýza kvality ovladač pomocí nástrojů pro analýzu kódu](http://go.microsoft.com/fwlink/?LinkId=227618)  
- Analýza kódu pro ovladače statické ověření za kompilace nástroj, který zjistí základní chyby v programech jazyka C a C++ kódování a zahrnuje specializovaná modul, který slouží ke zjištění chyby v kódu ovladače režimu jádra (primárně)... Statické ovladač ověřovatel (SDV) je nástroj statické ověření systematicky analyzuje zdrojový kód ovladače režimu jádra Windows. SDV Určuje, zda ovladač správně komunikuje jádra operačního systému Windows.  
+ [Analýza kvality ovladač pomocí nástrojů pro analýzu kódu](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
+ Analýza kódu pro ovladače statické ověření za kompilace nástroj, který zjistí základní chyby v programech jazyka C a C++ kódování a zahrnuje specializovaná modul, který slouží ke zjištění chyby v kódu ovladače režimu jádra (primárně). Statické ovladač ověřovatel (SDV) je nástroj statické ověření systematicky analyzuje zdrojový kód ovladače režimu jádra Windows. SDV Určuje, zda ovladač správně komunikuje jádra operačního systému Windows.  
   
  [Ovladače upozornění analýzy kódu pro](http://go.microsoft.com/fwlink/?LinkId=225920)  
  Popisuje upozornění, která hlásí analýzy kódu pro ovladače, pokud zjistí možnou chybu v kódu ovladače.  

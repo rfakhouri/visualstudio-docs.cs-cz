@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 85b3ab45da52bc246e42927c463f3a1037418480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf4fb43148a4746d821b415391c0b69bdd7028e9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783735"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871558"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Ladění Azure cloudové služby nebo virtuálního počítače v sadě Visual Studio
 
@@ -104,7 +104,7 @@ Z Azure SDK 2.3 vzdálené ladění má následující omezení:
 Můžete ladit programy, které běží na virtuálních počítačích Azure s použitím Průzkumníka serveru v sadě Visual Studio. Když povolíte vzdálené ladění na virtuálním počítači Azure, Azure nainstaluje vzdáleného ladění rozšíření na virtuálním počítači. Pak můžete připojit k procesům ve virtuálním počítači a ladit běžným způsobem.
 
 > [!NOTE]
-> Virtuálních počítačích vytvořených pomocí zásobníku správce prostředků Azure můžete vzdáleně ladit pomocí Průzkumníku cloudu v sadě Visual Studio 2015. Další informace najdete v tématu [Správa prostředků Azure pomocí Průzkumníka cloudu](http://go.microsoft.com/fwlink/?LinkId=623031).
+> Virtuálních počítačích vytvořených pomocí zásobníku správce prostředků Azure můžete vzdáleně ladit pomocí Průzkumníku cloudu v sadě Visual Studio 2015. Další informace najdete v tématu [Správa prostředků Azure pomocí Průzkumníka cloudu](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
 ### <a name="to-debug-an-azure-virtual-machine"></a>Chcete-li ladit virtuálního počítače Azure
 

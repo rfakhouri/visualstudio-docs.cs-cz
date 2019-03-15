@@ -1,5 +1,5 @@
 ---
-title: Použití a konfiguraci analyzátory Roslyn
+title: Závažnost pravidla analyzátoru a potlačení
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924601"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873499"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurovat a používat pravidla analyzátoru Roslyn
+# <a name="use-roslyn-analyzers"></a>Používání analyzátorů Roslyn
 
 Pravidla analyzátoru .NET compiler Platform ("Roslyn"), nebo *diagnostiky*, analýza kódu C# nebo Visual Basic během psaní. Každý diagnostiky má výchozí závažnost a potlačení stavu, ve kterém můžete přepsat pro váš projekt. Tento článek se týká nastavení závažnost pravidla, použití sad pravidel a potlačení porušení.
 
@@ -91,7 +91,7 @@ Můžete změnit závažnost pravidla z **Průzkumníka řešení**, nebo v rám
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Chcete-li nastavit pravidlo závažnost v pravidle nastavit soubor
 
-1. Otevřete soubor pravidlo nastaví poklepáním v **Průzkumníku řešení**, kde vyberou **otevřít aktivní sadu pravidel** v nabídce klikněte pravým tlačítkem **analyzátory** uzlu, nebo výběrem **Otevřít** na **analýzy kódu** stránku vlastností pro projekt.
+1. Otevřít [sada pravidel, která](analyzer-rule-sets.md) souboru poklepáním v **Průzkumníku řešení**, kde vyberou **otevřít aktivní sadu pravidel** v nabídce klepněte pravým tlačítkem myši **analyzátory** uzlu, nebo výběrem **otevřít** na **analýzy kódu** stránku vlastností pro projekt.
 
 1. Vyhledejte pravidlo tak, že rozbalíte její obsahující sestavení.
 

@@ -2,7 +2,7 @@
 description: Vytvoření aplikace pro UPW v sadě Visual Studio pomocí XAML aC#
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 04/04/2018
+ms.date: 03/11/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -13,26 +13,33 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bf52b39023209f54835d9753f4bb7a0df1e413
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 854b6b1652385887a6df4580c3eb31229d809860
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934546"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868979"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Kurz: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio pomocí XAML a C&#35;
 
 V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte aplikaci "Hello World", který běží na všechna zařízení s Windows 10. V takovém případě budete používat šablonu projektu univerzální platformu Windows (UPW), Extensible Application Markup Language (XAML) a C# programovací jazyk.
 
+::: moniker range="vs-2017"
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+::: moniker-end
+::: moniker range="vs-2019"
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) stránku a nainstalovat zdarma.
+::: moniker-end
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
 Nejprve vytvořte projekt univerzální platformy Windows. Typ projektu obsahuje všechny soubory šablon, které potřebujete, než jste přidali ještě nic!
 
-1. Otevřete Visual Studio 2017.
+1. Otevřít Visual Studio.
 
-2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
+::: moniker range="vs-2017"
+
+2. V horní nabídce zvolte **souboru** > **nový** > **projektu**.
 
 3. V levém podokně **nový projekt** dialogového okna rozbalte **Visual C#** a klikněte na tlačítko **Windows Universal**. V prostředním podokně vyberte **prázdná aplikace (Universal Windows)**. Pojmenujte projekt *HelloWorld* a zvolte **OK**.
 
@@ -41,9 +48,24 @@ Nejprve vytvořte projekt univerzální platformy Windows. Typ projektu obsahuje
    > [!NOTE]
    > Pokud se nezobrazí **prázdná aplikace (Universal Windows)** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.<br><br>![Klikněte na odkaz otevřít instalační program Visual Studio z dialogového okna Nový projekt](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro univerzální platformu Windows** úlohy a klikněte na tlačítko **změnit**.<br><br>![Úlohu vývoje univerzální platformy Windows v instalačním programu sady Visual Studio](media/uwp-dev-workload.png)
 
-4. Když **nový projekt univerzální platformy Windows** dialogového okna zvolte **OK**.
+4. Přijměte výchozí nastavení **cílovou verzi** a **minimální verze** nastavení **nový projekt univerzální platformy Windows** dialogové okno.
 
-   ![Přijměte výchozí cílová verze a minimální verzi nastavení v dialogovém okně Nový projekt univerzální platformy Windows](media/new-uwp-project-target-minver-dialog.png)
+![Přijměte výchozí cílová verze a minimální verzi nastavení v dialogovém okně Nový projekt univerzální platformy Windows](media/new-uwp-project-target-minver-dialog.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Spusťte sadu Visual Studio a na **spusťte okno**, zvolte **vytvořte nový projekt**.
+
+3. Na **vytvořte nový projekt** obrazovky, zadejte *Universal Windows* do vyhledávacího pole, zvolte C# šablony pro **prázdná aplikace (Universal Windows)** a klikněte na tlačítko **Další**.
+
+![Snímek obrazovky vytvoření nového projektu obrazovky](media/vs-2019/uwp-create-new-project.png)
+
+4. Přijměte výchozí nastavení **cílovou verzi** a **minimální verze** nastavení **nový projekt univerzální platformy Windows** dialogové okno.
+
+![Přijměte výchozí cílová verze a minimální verzi nastavení v dialogovém okně Nový projekt univerzální platformy Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+::: moniker-end
+   
 
    > [!NOTE]
    > Pokud je to první sady Visual Studio jste použili k vytvoření aplikace pro UPW, **nastavení** může otevřít dialogové okno. Zvolte **vývojářský režim**a klikněte na tlačítko **Ano**.<br><br>
@@ -57,7 +79,12 @@ Je čas začít s vývojem. Budete přidejte ovládací prvek tlačítko, přid�
 
 1. V **Průzkumníka řešení**, dvakrát klikněte na panel *MainPage.xaml* otevřete rozdělené zobrazení.
 
+   ::: moniker range="vs-2017"
    ![V Průzkumníku řešení otevřete MainPage.xaml ](media/uwp-solution-explorer-MainPage-xaml.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![V Průzkumníku řešení otevřete MainPage.xaml](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
+   ::: moniker-end
 
    Existují dvě podokna: **Návrháře XAML**, což zahrnuje návrh plátna a **editoru XAML**, ve kterém můžete přidat nebo změnit kód.
 
@@ -105,7 +132,7 @@ Je čas začít s vývojem. Budete přidejte ovládací prvek tlačítko, přid�
 
    Pojďme ho změnit tak, aby vypadala takto:
 
-    ![Obslužná rutina události Button_Click na asynchronní ](media/uwp-add-hello-world-async-code.png)
+   ![Obslužná rutina události Button_Click na asynchronní ](media/uwp-add-hello-world-async-code.png)
 
    Tady je kód zkopírovat a vložit:
 
@@ -128,11 +155,11 @@ Tento kód používá některá rozhraní Windows API k vytvoření objektu synt
 
 Je čas vytvořit, nasadit a spustit aplikaci UPW "Hello World", vypadá a snaha. Tady je způsob.
 
-1. Zvolte **místního počítače** ke spuštění aplikace.
+1. Použijte tlačítko Přehrát (obsahuje text **místního počítače**) a spusťte tak aplikaci na místním počítači.
 
    ![Klikněte na místním počítači spustit a ladit aplikace pro UPW](media/uwp-start-or-debug.png)
 
-   (Alternativně můžete zvolit **ladění** > **spustit ladění** z panelu nabídek nebo stisknete klávesu **F5** ke spuštění vaší aplikace.)
+   (Alternativně můžete zvolit **ladění** > **spustit ladění** z řádku nabídek nebo stisknutím klávesy F5 pro spuštění vaší aplikace.)
 
 2. Zobrazení vaší aplikace, které se zobrazí krátce po úvodní obrazovka zmizí. Aplikace by měla vypadat nějak takto:
 
@@ -142,11 +169,11 @@ Je čas vytvořit, nasadit a spustit aplikaci UPW "Hello World", vypadá a snaha
 
    Zařízení bude sdělení doslova Windows 10, "Hello, World!"
 
-4. Pokud chcete aplikaci zavřít, klikněte na tlačítko **Zastavit ladění** tlačítko na panelu nástrojů. (Další možností je zvolit **ladění** > **Zastavit ladění** z panelu nabídek nebo stisknete klávesu **Shift**+**F5**.)
+4. Pokud chcete aplikaci zavřít, klikněte na tlačítko **Zastavit ladění** tlačítko na panelu nástrojů. (Další možností je zvolit **ladění** > **Zastavit ladění** z řádku nabídek nebo stisknutím klávesy Shift + F5.)
 
 ## <a name="next-steps"></a>Další kroky
 
-Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se naučili základy o UPW a integrovaném vývojovém prostředí sady Visual Studio. Další informace najdete v následujícím kurzu:
+Blahopřejeme k dokončení tohoto kurzu! Doufáme, že jste se naučili základy o UPW a integrovaném vývojovém prostředí sady Visual Studio. Další informace najdete v následujícím kurzu:
 
 > [!div class="nextstepaction"]
 > [Vytvoření uživatelského rozhraní](/windows/uwp/design/basics/xaml-basics-ui)

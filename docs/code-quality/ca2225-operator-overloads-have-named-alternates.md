@@ -1,6 +1,6 @@
 ---
 title: 'CA2225: Přetížení operátoru mají pojmenované alternativy'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c12d7ed3fbfdfa5c61171061b9411db442341cdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a8a1c7015421b686d47bfea4c3341ec76748f8ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953110"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873065"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Přetížení operátoru mají pojmenované alternativy
 
@@ -31,12 +31,16 @@ ms.locfileid: "55953110"
 |Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
- Bylo zjištěno přetížení operátoru a alternativní metoda s očekávaným názvem nebyla nalezena.
+
+Bylo zjištěno přetížení operátoru a očekávané pojmenovaný alternativní metoda nebyla nalezena.
+
+Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
- Přetížení operátoru umožňuje používat symboly pro vyjádření výpočty typu. Například typ, který přetížení na symbol plus (+) pro přidání by obvykle mít jiný člen s názvem "Přidat". Pojmenovaný alternativní člen poskytuje přístup ke stejným funkcím jako operátor a je k dispozici pro vývojáře, kteří programují v jazycích nepodporujících přetížené operátory.
 
- Toto pravidlo zkontroluje operátorů uvedených v následující tabulce.
+Přetížení operátoru umožňuje používat symboly pro vyjádření výpočty typu. Například typ, který přetížení na symbol plus (+) pro přidání by obvykle mít jiný člen s názvem "Přidat". Pojmenovaný alternativní člen poskytuje přístup ke stejným funkcím jako operátor a je k dispozici pro vývojáře, kteří programují v jazycích nepodporujících přetížené operátory.
+
+Toto pravidlo zkontroluje operátorů uvedených v následující tabulce.
 
 |C#|Visual Basic|C++|Alternativní název|
 |---------|------------------|-----------|--------------------|
@@ -77,30 +81,40 @@ ms.locfileid: "55953110"
 |+ (unární)|Není k dispozici|+|Plus|
 |false|IsFalse|False|IsTrue (vlastnost)|
 
- Není k dispozici == nemůže být přetížená ve vybraném jazyce.
+Není k dispozici == nemůže být přetížená ve vybraném jazyce.
 
- Pravidlo zkontroluje také operátory implicitní a explicitní přetypování typu (`SomeType`) tak, že zkontrolujete pro metody s názvem `ToSomeType` a `FromSomeType`.
+Pravidlo zkontroluje také operátory implicitní a explicitní přetypování typu (`SomeType`) tak, že zkontrolujete pro metody s názvem `ToSomeType` a `FromSomeType`.
 
- V jazyce C# Pokud je binární operátor přetížen, odpovídající operátor přiřazení pokud existuje, je také implicitně přetížené.
+V jazyce C# Pokud je binární operátor přetížen, odpovídající operátor přiřazení pokud existuje, je také implicitně přetížené.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, implementujte alternativní metoda pro operátor; pojmenujte ho pomocí doporučená alternativní název.
+
+Chcete-li opravit porušení tohoto pravidla, implementujte alternativní metoda pro operátor; pojmenujte ho pomocí doporučená alternativní název.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění tohoto pravidla, Pokud implementujete sdílené knihovny. Aplikace můžete ignorovat upozornění tohoto pravidla.
+
+Nepotlačujte upozornění tohoto pravidla, Pokud implementujete sdílené knihovny. Aplikace můžete ignorovat upozornění tohoto pravidla.
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca2225.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (využití). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu definuje strukturu, která poruší toto pravidlo. Chcete-li v příkladu, přidejte veřejnou `Add(int x, int y)` metoda do struktury.
 
- [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
+V následujícím příkladu definuje strukturu, která poruší toto pravidlo. Chcete-li v příkladu, přidejte veřejnou `Add(int x, int y)` metoda do struktury.
+
+[!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1046: Nepřetěžujte operátory rovnosti na odkazových typech](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226: Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
-
- [CA2224: Přepište equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-
- [CA2218: Přepište GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
-
- [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+- [CA1046: Nepřetěžujte operátory rovnosti na odkazových typech](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2226: Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+- [CA2224: Přepište equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218: Přepište GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752879"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872826"
 ---
 # <a name="maintaining-security"></a>Správa zabezpečení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ ms.locfileid: "54752879"
  [Zabezpečení, ochrany osobních údajů a účty](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Získejte nápovědu k zabezpečení, ochraně osobních údajů a uživatelským účtům, včetně informací o virech, heslech, rodičovské kontrole, branách firewall a šifrování disku...  
   
- [Microsoft Security Bulletin Search](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Microsoft Security Bulletin Search](/security-updates/)  
  Na této stránce můžete snadno najít dříve vydané bulletiny. Bulletiny zabezpečení jsou určeny pro odborníky v oblasti IT a poskytují podrobné informace o aktualizacích zabezpečení.  
   
- [Příručka zabezpečení systému Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Obsahuje pokyny nezbytné pro odborníky v oblasti IT pro bezpečné provozování prostředí systému Windows Server 2003 a zajištění práva na přístup ke správnému obsahu pro správné uživatele.  
+ [Příručka zabezpečení systému Windows Server 2003] (/previous-versions/tn-archive/cc163140(v=technet.10) poskytuje pokyny, které jsou nezbytné pro odborníky v oblasti IT pro bezpečné provozování prostředí systému Windows Server 2003 při zajištění práva na přístup ke správnému obsahu pro správné uživatele.  
   
- [Osvědčené postupy pro podnikové zabezpečení](http://go.microsoft.com/fwlink/?LinkId=72879)  
+ [Osvědčené postupy pro podnikové zabezpečení](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
  Kolekce dokumentů white paper zaměřených na různé aspekty zabezpečení v podnikových sítích.  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  Microsoft Baseline Security Analyzer (MBSA) je nástroj, který umožňuje individuálním domácím uživatelům, podnikovým uživatelům nebo správci vyhledat v jednom nebo více počítačích se systémem Windows běžné chyby konfigurace zabezpečení.

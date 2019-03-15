@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd18443e36a48967b4eb9fdf24f8d5e7869c323
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700143"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870577"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData – element (šablony sady Visual Studio)
 Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.
@@ -58,7 +58,7 @@ Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přida
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | Volitelný element.<br /><br /> Určuje, zda nadřazené složky se vytvoří při vytváření instance projektu. |
 | [Defaultname –](../extensibility/defaultname-element-visual-studio-templates.md) | Volitelný element.<br /><br /> Určuje název, který vygeneruje systém projektu sady Visual Studio pro projekt nebo položku při jeho vytvoření. |
 | [Providedefaultname –](../extensibility/providedefaultname-element-visual-studio-templates.md) | Volitelný element.<br /><br /> Určuje, zda systém projektu sady Visual Studio vygeneruje výchozí název pro projekt nebo položku při jeho vytvoření. |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Volitelný element.<br /><br /> Určuje, zda je možné vytvořit projekt jako dočasný projekt. |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Volitelný element.<br /><br /> Určuje, zda projekt můžete vytvořit podobě dočasného projektu (Visual Studio 2017 pouze). |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Volitelný element.<br /><br /> Určuje, zda **Procházet** tlačítko je k dispozici v **nový projekt** dialogovém okně tak, aby uživatelé mohli snadno upravovat výchozí adresář, ve kterém je uložený nový projekt. |
 | [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | Volitelný element.<br /><br /> Určuje, jestli se šablona zobrazuje v buď **nový projekt** nebo **přidat novou položku** dialogové okno. |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Volitelný element.<br /><br /> Určuje počet nadřazených kategoriích, které se zobrazí v šabloně **nový projekt** dialogové okno. |

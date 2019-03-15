@@ -1,6 +1,6 @@
 ---
 title: 'CA2217: Neoznačujte výčty pomocí FlagsAttribute'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4036ef3c0c9ea177ea4225ed10ca7cfe128697
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94666390cc49f365b9f036b076bcd97d68d4edb9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926811"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872285"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Neoznačujte výčty pomocí FlagsAttribute
 
@@ -36,7 +36,9 @@ ms.locfileid: "55926811"
 
 ## <a name="cause"></a>příčina
 
-Externě viditelný výčet je označen pomocí <xref:System.FlagsAttribute>a má jednu nebo více hodnot, které nejsou mocninami dvou nebo kombinací druhé definované hodnoty výčtu.
+Výčet je označen <xref:System.FlagsAttribute> a má jednu nebo více hodnot, které nejsou mocninami dvou nebo kombinací druhé definované hodnoty výčtu.
+
+Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné výčtů, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -50,17 +52,25 @@ Chcete-li opravit porušení tohoto pravidla, odeberte <xref:System.FlagsAttribu
 
 Nepotlačujte upozornění na toto pravidlo.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Příklad, který by neměl mít atribut
+## <a name="configurability"></a>Možnosti konfigurace:
 
-Následující příklad ukazuje výčet, `Color`, který obsahuje hodnotu 3. 3 není mocninou dvou nebo kombinací jiných definovaných hodnot. `Color` Výčtu by neměly být označeny atributem <xref:System.FlagsAttribute>.
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca2217.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (využití). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+
+## <a name="examples"></a>Příklady
+
+Následující kód ukazuje výčet, `Color`, který obsahuje hodnotu 3. 3 není mocninou dvou nebo kombinací jiných definovaných hodnot. `Color` Výčtu by neměly být označeny atributem <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Příklad, který by měl mít atribut
-
-Následující příklad ukazuje výčet, `Days`, který splňuje požadavky na právě označené <xref:System.FlagsAttribute>.
+Následující kód ukazuje výčet, `Days`, který splňuje požadavky na právě označené <xref:System.FlagsAttribute>:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]

@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d4e2fa9c05aab6bd3a70edd2eb3d4b1d447056e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792121"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867833"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku panelu nástrojů modelu Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "54792121"
   
 5.  V **vlastnosti** okno, nastavte následující hodnoty pro ovládací prvky na návrhové ploše.  
   
-    |Ovládací prvek|Vlastnost|Hodnota|  
+    |Control|Vlastnost|Hodnota|  
     |-------------|--------------|-----------|  
     |`Label1`|**Text**|""|  
     |`Button1`|**Název**|btnReset|  
@@ -208,7 +208,7 @@ ms.locfileid: "54792121"
      Čítač obnoví **0**.  
   
 ## <a name="next-steps"></a>Další kroky  
- Při sestavení **nástrojů** ovládací prvek, Visual Studio vytvoří soubor s názvem *ProjectName*VSIX \bin\debug\ složky vašeho projektu. Ovládací prvek můžete nasadit tak, že nahrajete soubor VSIX k síti nebo na web. Když uživatel otevře soubor .vsix, ovládací prvek je nainstalována a přidat do sady Visual Studio **nástrojů** na počítači uživatele. Alternativně můžete nahrát soubor .vsix, který má [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webová stránka, aby uživatelé mohli najít tak, že přejdete v **nástrojů / rozšíření a aktualizace** dialogového okna.  
+ Při sestavení **nástrojů** ovládací prvek, Visual Studio vytvoří soubor s názvem *ProjectName*VSIX \bin\debug\ složky vašeho projektu. Ovládací prvek můžete nasadit tak, že nahrajete soubor VSIX k síti nebo na web. Když uživatel otevře soubor .vsix, ovládací prvek je nainstalována a přidat do sady Visual Studio **nástrojů** na počítači uživatele. Alternativně můžete nahrát soubor .vsix, který má [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webová stránka, aby uživatelé mohli najít tak, že přejdete v **nástrojů / rozšíření a aktualizace** dialogového okna.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšíření sady nástrojů](../misc/extending-the-toolbox.md)   

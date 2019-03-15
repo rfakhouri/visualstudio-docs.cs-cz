@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Přidání XAML vlastní úvodní stránku | Dokumentace Microsoftu'
+title: 'Návod: Přidání XAML vlastní úvodní stránku | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 992937ea0c90e3734a38ba6f2e56b19918fd7375
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709171"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867323"
 ---
-# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Průvodce: Přidat vlastní XAML na úvodní stránku
+# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Návod: Přidat vlastní XAML na úvodní stránku
 
 Tento návod ukazuje, jak vytvořit vlastní úvodní stránku sady Visual Studio, která obsahuje webový prohlížeč.
 
@@ -85,7 +85,7 @@ Chcete-li použít vlastní úvodní stránky v **nástroje** > **možnosti** > 
 
 ## <a name="next-steps"></a>Další kroky
 
-Úvodní stránku sady Visual Studio teď obsahuje kartu, která se zobrazí na kartě webového prohlížeče a MyButton kartu. Můžete vytvořit vlastní úvodní stránky, které mají další funkce pomocí *použití modelu code-behind* modelu Chcete-li přidat vlastní .dll, jak je znázorněno v [přidání uživatelského ovládacího prvku na úvodní stránku](../extensibility/adding-user-control-to-the-start-page.md). Vlastní úvodní stránky můžete sdílet s ostatními uživateli publikováním výsledný soubor .vsix [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webový server nebo do jiného webu nebo síťové sdílené složky. Další informace najdete v tématu [nasazení vlastní úvodní stránky](../extensibility/deploying-custom-start-pages.md).
+Úvodní stránku sady Visual Studio teď obsahuje kartu, která se zobrazí na kartě webového prohlížeče a MyButton kartu. Můžete vytvořit vlastní úvodní stránky, které mají další funkce pomocí *použití modelu code-behind* modelu Chcete-li přidat vlastní .dll, jak je znázorněno v [přidání uživatelského ovládacího prvku na úvodní stránku](../extensibility/adding-user-control-to-the-start-page.md). Vlastní úvodní stránky můžete sdílet s ostatními uživateli publikováním výsledný soubor .vsix [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webový server nebo do jiného webu nebo síťové sdílené složky. Další informace najdete v tématu [nasazení vlastní úvodní stránky](../extensibility/deploying-custom-start-pages.md).
 
 ## <a name="see-also"></a>Viz také:
 

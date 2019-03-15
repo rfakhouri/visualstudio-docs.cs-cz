@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6440dabdc1252440e68e424e94aa6534d63173e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7676202d491b5a74f7a20a80c84ee5ca16a67cd2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784203"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872372"
 ---
 # <a name="security-bibliography"></a>Bibliografie k zabezpečení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ Toto jsou vybrané prostředky, které jsou k dispozici online a tisku na předm
  [Microsoft Security](http://go.microsoft.com/fwlink/?LinkId=55529)  
  Zjistěte, jak funguje, Microsoft vám pomůže ochránit vaše aplikace a systémy zabezpečené, z plochy na úrovni sítě systémy s odkazy na zdroje informací o zabezpečení pro IT specialisty, vývojáře a domácí uživatelé.  
   
- [Zabezpečení prostředků na webu MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
+ [Zabezpečení prostředků na webu MSDN](https://www.microsoft.com/msrc?rtc=1)  
  Provede vás k orientovaných na vývojáře dokumentaci, ukázky kódu, technické články a další zdroje informací pro vývoj zabezpečených aplikací.  
   
- [Microsoft TechNet Security](http://go.microsoft.com/fwlink/?LinkId=67991)  
+ [Microsoft TechNet Security](https://www.microsoft.com/securityengineering)  
  Obsahuje odkazy na nejdůležitější technické informace o zabezpečení pro profesionálům a "Power Users".

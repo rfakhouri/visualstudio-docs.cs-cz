@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,27 +19,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d30567186cd1f96d0df9af9493c87cbea4edd0b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607379"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870396"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Průvodce: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
   Následující postupy ukazují, jak vytvořit vlastní sloupce webu služby SharePoint, nebo *pole*– stejně jako typ obsahu, který používá sloupce webu. Také ukazuje, jak vytvořit seznam, který používá nového typu obsahu.
 
  Tento návod zahrnuje následující úlohy:
 
-- [Vytváření sloupců webu vlastní](#BKMK_CreatingCustSiteCols).
+- [Vytvoření vlastní stránky sloupců](#create-custom-site-columns).
 
-- [Vytváří se vlastní typ obsahu](#BKMK_CreateCustContType).
+- [Vytvořit vlastní typ obsahu](#create-a-custom-content-type).
 
-- [Vytvoření seznamu](#BKMK_CreateList).
+- [Vytvoření seznamu](#create-a-list).
 
-- [Vytvoření seznamu](#BKMK_CreateList).
-
-- [Testování aplikace](#BKMK_TestApp).
+- [Testování aplikace](#test-the-application).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

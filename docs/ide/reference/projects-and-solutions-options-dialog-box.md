@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223439"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867810"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Stránku projekty a řešení, dialogové okno Možnosti
 
@@ -49,9 +49,13 @@ Při zrušení výběru, příkazy na **sestavení** nabídky, jako například 
 
 Při výběru řešení a všechny příkazy, které fungují v řešení jsou vždy zobrazen v integrovaném vývojovém prostředí. Není-li zaškrtnuto, všechny projekty byly vytvořeny jako samostatné projekty a nevidíte řešení v Průzkumníku řešení nebo příkazy, které fungují v řešení v integrovaném vývojovém prostředí Pokud řešení obsahuje pouze jeden projekt.
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>Uložit nové projekty při vytvoření
 
 Pokud je vybráno, můžete zadat umístění pro váš projekt v **nový projekt** dialogové okno. Není-li zaškrtnuto, všechny nové projekty jsou vytvořeny jako dočasné projekty. Při práci s dočasné projekty, můžete vytvořit a experimentovat s projektem, aniž byste museli zadat umístění na disku.
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Upozornit uživatele, pokud umístění projektu není důvěryhodné
 

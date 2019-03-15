@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 436cb6cd803eb351113ddfc9ca39934e8557c573
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786131"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868191"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Ladění za běhu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-advanced-users"></a>Pokud chcete opravit nebo ladění chyby (pokročilým uživatelům)
 
-- Musíte mít [nainstalovanou sadu Visual Studio](https://www.microsoft.com/download/details.aspx?id=48146) Chcete-li zobrazit podrobné informace o této chybě a zkuste ho ladit. Zobrazit [pomocí JIT](#BKMK_Using_JIT) podrobné pokyny. Pokud nelze vyřešit chyby a opravit aplikaci, obraťte se na vlastníka aplikace tuto chybu napravíme.
+- Musíte mít [nainstalovanou sadu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) Chcete-li zobrazit podrobné informace o této chybě a zkuste ho ladit. Zobrazit [pomocí JIT](#BKMK_Using_JIT) podrobné pokyny. Pokud nelze vyřešit chyby a opravit aplikaci, obraťte se na vlastníka aplikace tuto chybu napravíme.
 
 ##  <a name="BKMK_Enabling"></a> Povolení nebo zakázání Just-In-Time ladění
  Můžete povolit nebo zakázat Just-In-Time ladění ze sady Visual Studio **Nástroje / možnosti** dialogové okno.
@@ -121,7 +121,7 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
 ## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Použijte ladění Just-In-Time
  Tato část popisuje, co se stane, když se vyvolá výjimku, spustitelný soubor.
 
- Musíte mít Visual Studio nainstalovali postupovat podle následujících kroků. Pokud nemáte Visual Studio, si můžete stáhnout bezplatnou [Visual Studio 2015 Community Edition](https://www.microsoft.com/download/details.aspx?id=48146).
+ Musíte mít Visual Studio nainstalovali postupovat podle následujících kroků. Pokud nemáte Visual Studio, si můžete stáhnout bezplatnou [Visual Studio 2015 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/).
 
  Při instalaci sady Visual Studio Just-In-Time ve výchozím nastavení je povoleno ladění.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0cbf7582c5089d99a71b2354878b03c265755e65
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318729"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869080"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 
@@ -25,7 +25,7 @@ Visual Studio Emulator for Android je desktopová aplikace, které emuluje zař�
 > Ve většině scénářů si emulátor Google Android se doporučuje namísto emulátor Visual Studia pro Android:
 > - Visual Studio Emulator for Android není podporována po sadu Visual Studio 2015.
 > - – Image emulátorů novější než verze systému Android 6.0 nejsou k dispozici pro Visual Studio Emulator for Android.
-> - Emulátor Google Android teď podporuje [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - Emulátor Google Android teď podporuje [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
 > - Visual Studio Tools for Apache Cordova spolupracuje s emulátor Google Android. Další informace najdete v tématu [spuštění aplikace Apache Cordova v Androidu](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (Všimněte si, že už máte zakázat Hyper-V, jak je popsáno v tomto článku).
 >
 > Další informace o konfiguraci a použití emulátoru Google Android najdete v tématu [instalace emulátoru Androidu](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).

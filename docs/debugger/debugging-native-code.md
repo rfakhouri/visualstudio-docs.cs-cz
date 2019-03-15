@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685492"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870412"
 ---
 # <a name="debugging-native-code"></a>Ladění nativního kódu
 Část popisuje některé běžné problémy ladění a techniky pro nativní aplikace. Techniky popsané v této části jsou techniky vysoké úrovně. Mechanismy pomocí ladicího programu sady Visual Studio, naleznete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md)).
@@ -59,4 +59,6 @@ ms.locfileid: "56685492"
  [Nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md) obsahuje odkazy na větší části dokumentace ladění. Obsahuje informace, co je nového v ladicím programu, nastavení a příprava, zarážky, zpracování výjimek, upravit a pokračovat, ladění spravovaného kódu, ladění nativního kódu, ladění SQL a odkazy na uživatelské rozhraní.
 
 ## <a name="see-also"></a>Viz také
- [Zabezpečení ladicího programu](../debugger/debugger-security.md) [ladění v sadě Visual Studio](../debugger/index.md)
+
+- [Zabezpečení ladicího programu](../debugger/debugger-security.md)
+- [Ladění v sadě Visual Studio](../debugger/index.md)

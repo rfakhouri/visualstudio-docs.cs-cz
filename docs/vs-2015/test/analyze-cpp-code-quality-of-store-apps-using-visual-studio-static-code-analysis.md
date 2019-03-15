@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805563"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873240"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,6 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                       [C6516](../code-quality/c6516.md)                        |                                          Atribut nemá žádné vlastnosti                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Platná velikost pro vyrovnávací paměť bez možnosti čtení                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Zapisovatelná velikost pro vyrovnávací paměť, Nezapisovatelný                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Neplatná Poznámka: hodnota vlastnosti 'NeedsRelease' musí být Ano nebo ne                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Typ řetězec neplatné velikosti                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Neplatná velikost parametru řetězce                                         |
@@ -194,7 +193,6 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                      [C28254](../code-quality/c28254.md)                       |                               (dynamic_cast <>) není v anotacích podporována                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Chyba syntaxe v poznámce byl nalezen ve funkci pro anotaci                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Byla nalezena chyba syntaxe v podmíněné poznámce pro vnitřní anotaci                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Výsledné hodnoty seznamů musí být konstanty.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Poznámky v funkce byla nalezena chyba syntaxe v poznámkách.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      Poznámka pro funkci, je parametr při zkoumání nekonzistentní s deklarací funkce      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Pro funkci nejsou konzistentní s deklarací funkce                     |

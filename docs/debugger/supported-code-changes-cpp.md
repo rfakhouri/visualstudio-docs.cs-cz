@@ -3,19 +3,16 @@ title: Podporované změny kódu (C++) | Dokumentace Microsoftu
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 author: mikejo5000
@@ -23,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d96819f7dd2cbc2909a5d327a3183e58d91ce01f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c41b589ed19e547d03e0ce7336d6a2f2c5efedb7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685037"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873528"
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C++)
 Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu. Nicméně některé změny nejde použít při provádění programu. Pokud chcete tyto změny použít, musíte zastavit provádění a vytvářet nové verze kódu.

@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752287"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868120"
 ---
 # <a name="general-environment-options-dialog-box"></a>Obecné, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Pomocí této stránky můžete změnit barevné motivy, nastavení panelu stavu
  **Barevný motiv**  
  Zvolte **modré**, **světla** nebo **tmavě** barvy motivu rozhraní IDE.  
   
- Můžete nainstalovat další předdefinované motivy a vytvářet vlastní motivy stažením a instalací **Visual Studio 2015 Editor motivů sady** z [Galerie sady Visual Studio](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Po instalaci tohoto nástroje se zobrazí v seznamu Barva motivu další barevné motivy.  
+ Můžete nainstalovat další předdefinované motivy a vytvářet vlastní motivy stažením a instalací **Visual Studio 2015 Editor motivů sady** z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Po instalaci tohoto nástroje se zobrazí v seznamu Barva motivu další barevné motivy.  
   
  Použít název velká a malá písmena v řádku nabídek  
  Nabídky jsou v **malých a velkých písmen názvu** ve výchozím nastavení v sadě Visual Studio 2015. Zrušte zaškrtnutí políčka tuto možnost nastavíte **všechna velká mají standardní**.  

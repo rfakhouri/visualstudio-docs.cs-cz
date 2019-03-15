@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a19962a3e403246d2c68648c3be20a4a0b126a61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761399"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868848"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 3.  Zkontrolujte položky registru VSPackage.  
   
-     Další informace najdete v tématu [registrace rozšíření VSPackages](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd) a [Správa balíčky VSPackages](../extensibility/managing-vspackages.md).  
+     Další informace najdete v tématu [registrace rozšíření VSPackages](internals/registering-vspackages.md) a [Správa balíčky VSPackages](../extensibility/managing-vspackages.md).  
   
 4.  Otevřít **výstup** okno instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , které se nedaří načíst sady VSPackage. Informace o proč sady VSPackage nedaří se načíst může být zobrazen v tomto okně.  
   

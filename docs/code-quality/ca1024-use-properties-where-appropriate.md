@@ -1,6 +1,6 @@
 ---
 title: 'CA1024: Použijte vlastnosti, kde je to vhodné'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922300"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869254"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Použijte vlastnosti, kde je to vhodné
 
@@ -35,7 +35,9 @@ ms.locfileid: "55922300"
 
 ## <a name="cause"></a>příčina
 
-Veřejná nebo chráněná metoda má název, který začíná `Get`, nepřijímá žádné parametry a vrátí hodnotu, která není pole.
+Metoda má název, který začíná `Get`, nepřijímá žádné parametry a vrátí hodnotu, která není pole.
+
+Ve výchozím nastavení, toto pravidlo pouze prohledá veřejné a chráněné metody, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -69,11 +71,21 @@ Chcete-li opravit porušení tohoto pravidla, změňte metodu na vlastnost.
 
 Potlačit upozornění tohoto pravidla, pokud metoda splňuje splnit aspoň jednu z výše uvedených kritérií.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Řízení vlastnosti rozšíření v ladicím programu
+## <a name="configurability"></a>Možnosti konfigurace:
 
-Jedním z důvodů, programátoři Vyhněte se použití vlastnosti je vzhledem k tomu, že nechtějí ladicí program automaticky-rozbalte ho. Například vlastnost může zahrnovat přidělování velkého objektu nebo volání P/Invoke, ale nemusí mít ve skutečnosti všechny pozorovatelný vedlejší účinky.
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
 
-Ladicí program může zabránit automatické rozšiřování vlastnosti použitím <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Následující příklad ukazuje tento atribut použity pro vlastnost instance.
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+
+## <a name="control-property-expansion-in-the-debugger"></a>Ovládací prvek vlastnosti rozšíření v ladicím programu
+
+Jedním z důvodů programátoři Vyhněte se použití vlastnosti je vzhledem k tomu, že nechcete, aby ladicí program automaticky doplnit jej. Například vlastnost může zahrnovat přidělování velkého objektu nebo volání P/Invoke, ale nemusí mít ve skutečnosti všechny pozorovatelný vedlejší účinky.
+
+Ladicí program z vlastností autoexpanding můžete zabránit použitím <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Následující příklad ukazuje tento atribut použity pro vlastnost instance.
 
 ```vb
 Imports System

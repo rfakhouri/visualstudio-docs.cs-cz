@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783258"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869861"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zdroje pro řešení potíží obsahovaly chyby vývojového prostředí.
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Ne všechny chybové zprávy mají konkrétní související téma nápovědy. I
 ## <a name="the-developer-community"></a>Komunita vývojářů  
  Fóra umožňují interakci s dalšími vývojáři a také zaměstnanci společnosti Microsoft. Pokud narazíte na chybu, pro kterou nelze nalézt řešení, je možné poslat otázky týkající se problému na fórum. Také je možné prohledat diskusní skupiny a zjistit, zda někdo z ostatních psal o stejném problému.  
   
- Fóra, blogy, chaty a ostatní prostředky je k dispozici na [technické komunity společnosti Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922) webu.  
+ Fóra, blogy, chaty a ostatní prostředky je k dispozici na [technické komunity společnosti Microsoft](https://techcommunity.microsoft.com/) webu.  
   
 ## <a name="product-support"></a>Podpora produktu  
  Pokud jste ještě další dotazy po vyzkoušení jiných zdrojů, můžete kontaktujte služby podpory společnosti Microsoft najdete [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) webu. Informace o podpoře produktu ve vaší oblasti najdete v tématu [kontaktujte nás](../../ide/talk-to-us.md).

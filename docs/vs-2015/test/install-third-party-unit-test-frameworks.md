@@ -8,14 +8,14 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787878"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868705"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Instalace systémů testů jednotek od třetích stran
+# <a name="install-third-party-unit-test-frameworks"></a>Instalace systémů testování částí od třetích stran
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Test Explorer můžete spustit libovolné jednotky rozhraní testování, který byl vyvinut rozhraní adaptér pro Průzkumníka. Instalační program rozhraní Framework nainstalují binární soubory a přidá šablony projektů Visual Studio pro jazyky, které podporuje. Při vytváření projektu se šablonou rozhraní zaregistrován pomocí Průzkumníka testů. Řešení sady Visual Studio může obsahovat projektů testů jednotek, které používají různá rozhraní a, který cílí na různé jazyky. Průzkumník testů provádí s nimi všechny.  
@@ -42,7 +42,7 @@ Visual Studio Test Explorer můžete spustit libovolné jednotky rozhraní testo
 ### <a name="installing-from-the-web"></a>Instalace z webu  
  Pokud znáte rozhraní, které vás zajímají:  
   
-1. Otevřít [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) na webu MSDN.  
+1. Otevřít [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 2. Zadejte název rozhraní v **najít** pole.  
   
@@ -50,7 +50,7 @@ Visual Studio Test Explorer můžete spustit libovolné jednotky rozhraní testo
   
    Můžete procházet seznam architektur společně s další testovací nástroje:  
   
-4. Otevřít [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) na webu MSDN.  
+4. Otevřít [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 5. Zvolte **Procházet**.  
   

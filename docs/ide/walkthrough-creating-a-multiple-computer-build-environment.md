@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: afe5ff877f83d9aae9b1da52b7836fb07afacf44
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324218"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870503"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Návod: Vytvoření prostředí pro sestavení s použitím více počítačů
 
@@ -298,7 +298,7 @@ Nástroj MSBuild vyžaduje některých dalších sestavení nainstalovaná v GAC
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. Chcete-li nainstalovat sestavení do mezipaměti GAC, vyhledejte *gacutil.exe* v počítači sestavení – obvykle je to v %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 nástroje\\. Pokud tuto složku nemůžete najít, opakujte kroky v [kopírování souborů z hostitelského počítače do počítače sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) části tohoto názorného postupu.
+2. Chcete-li nainstalovat sestavení do mezipaměti GAC, vyhledejte *gacutil.exe* v počítači sestavení – obvykle je to v %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 nástroje\\. Pokud tuto složku nemůžete najít, opakujte kroky v [kopírování souborů z hostitelského počítače do počítače sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) části tohoto názorného postupu.
 
      Otevřít **příkazového řádku** okna, který má práva správce a spusťte tento příkaz u každého souboru:
 
@@ -330,7 +330,7 @@ Můžete vytvořit prostředí sestavení, který je možné nasadit na různýc
 
      Tyto kroky odkazují na adresář jako % Depot %.
 
-2. Kopírování adresářů a souborů, jak je popsáno v [kopírování souborů z hostitelského počítače do počítače sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) části tohoto názorného postupu, s výjimkou jejich pod vložení *% Depot %* adresář, který jste právě vytvořit. Například zkopírujte z *%ProgramFiles%\Windows Kits\8.0\bin* k *%Depot%\Windows Kits\8.0\bin*.
+2. Kopírování adresářů a souborů, jak je popsáno v [kopírování souborů z hostitelského počítače do počítače sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) části tohoto názorného postupu, s výjimkou jejich pod vložení *% Depot %* adresář, který jste právě vytvořit. Například zkopírujte z *%ProgramFiles%\Windows Kits\8.0\bin* k *%Depot%\Windows Kits\8.0\bin*.
 
 3. Když jsou soubory vloženy do *% Depot %*, proveďte tyto změny:
 

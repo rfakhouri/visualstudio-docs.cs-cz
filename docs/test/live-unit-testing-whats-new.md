@@ -1,27 +1,28 @@
 ---
-title: Co je nového v Live Unit Testing
+title: Co je nového v Live Unit Testing v sadě Visual Studio 2017
+titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221538"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872415"
 ---
-# <a name="whats-new-in-live-unit-testing"></a>Novinky funkce Live Unit Testing
+# <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Co je nového v Live Unit Testing pro Visual Studio 2017
 
 Toto téma obsahuje seznam nových funkcí pro Live Unit Testing v každé verzi sady Visual Studio od verze Visual Studio 2017 verze 15.3. Přehled o tom, jak používat Live Unit Testing, naleznete v tématu [pomocí sady Visual Studio Live Unit Testing](live-unit-testing.md).
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Co je nového v Live Unit Testing pro Visual Studio 2017 verze 15.4
+## <a name="version-154"></a>Verze 15.4
 
 Od verze Visual Studio 2017 verze 15.4, Live Unit Testing obsahuje vylepšení v různých oblastech:
 
@@ -39,7 +40,7 @@ Od verze Visual Studio 2017 verze 15.4, Live Unit Testing obsahuje vylepšení v
 
 - **Různé uživatelské rozhraní upřesnění**:  Matoucí **Live nastavit Test – zahrnout/vyloučit** gesta kliknutí pravým tlačítkem na možnost byl přejmenován na **Live Unit Testing Include/Exclude**. **Resetování čištění** možnost **testovací** > **Live Unit Testing** nabídky se odebrala. Je teď dostupné tak, že vyberete **nástroje** > **možnosti** > **Live Unit Testing** a vyberete **odstranit trvalá Data** .
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Co je nového v Live Unit Testing pro Visual Studio 2017 verze 15.3
+## <a name="version-153"></a>Verze 15.3
 
 Od verze Visual Studio 2017 verze 15.3, Live Unit Testing vylepšení funkcí a vylepšení v dvě hlavní oblasti:
 

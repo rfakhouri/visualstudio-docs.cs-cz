@@ -8,20 +8,20 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 676b46c87fe9b6af6e0e1baed0ff5fcdc7e68b6e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909190"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873646"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Postup instalace nástroje R pro Visual Studio
 
 V tomto článku:
 
 - [Podporované verze sady Visual Studio](#supported-versions-of-visual-studio)
-- [Nainstalujte RTVS v sadě Visual Studio 2017](#installing-rtvs-in-visual-studio-2017)
-- [Nainstalujte RTVS v sadě Visual Studio 2015](#installing-rtvs-in-visual-studio-2015)
+- [Nainstalujte RTVS v sadě Visual Studio 2017](#install-rtvs-in-visual-studio-2017)
+- [Nainstalujte RTVS v sadě Visual Studio 2015](#install-rtvs-in-visual-studio-2015)
 - [Offline instalace](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -66,7 +66,7 @@ Microsoft R Open a CRAN r. oba umožňují více verzí vedle sebe. Microsoft R 
 Stáhněte si aktuální RTVS pro Visual Studio 2015 z [ https://aka.ms/rtvs-current ](https://aka.ms/rtvs-current). RTVS kontroluje vhodnou verzi sady Visual Studio a vám pomůže s instalací interpretu r. Pokud jste tak již neučinili.
 
 > [!Note]
-> Samostatný instalační program RTVS funguje pouze s Visual Studio 2015; pomocí sady Visual Studio 2017, instalaci R podpory prostřednictvím [úloze datové vědy a analytické aplikace](#installing-rtvs-in-visual-studio-2017) jak je popsáno výše.
+> Samostatný instalační program RTVS funguje pouze s Visual Studio 2015; pomocí sady Visual Studio 2017, instalaci R podpory prostřednictvím [úloze datové vědy a analytické aplikace](#install-rtvs-in-visual-studio-2017) jak je popsáno výše.
 
 RTVS pro Visual Studio 2015 je nainstalován v: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 

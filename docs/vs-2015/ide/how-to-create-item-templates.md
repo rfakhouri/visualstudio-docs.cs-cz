@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788245"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867919"
 ---
 # <a name="how-to-create-item-templates"></a>Postupy: Vytváření šablon položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kroky v [prvního postupu](../ide/how-to-create-item-templates.md#export_template) tohoto tématu ukazují, jak vytvořit šablonu položky pomocí **exportovat šablonu** průvodce. Pokud šablony se skládají z více souborů, přečtěte si téma [jak: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md).  
+Kroky v [prvního postupu](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) tohoto tématu ukazují, jak vytvořit šablonu položky pomocí **exportovat šablonu** průvodce. Pokud šablony se skládají z více souborů, přečtěte si téma [jak: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md).  
   
- Průvodce provede spoustu práce pro vytvoření základní šablony, ale v mnoha případech budete muset ručně upravit soubor .vstemplate poté, co jste exportovali šablonu. Například, pokud chcete, aby se zobrazí v položce **přidat novou položku** dialogové okno pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projekt aplikace, budete muset provést několik kroků navíc. [Druhý postup](../ide/how-to-create-item-templates.md#modify_template) v tomto tématu pomáhá tento úkol provést.  
+ Průvodce provede spoustu práce pro vytvoření základní šablony, ale v mnoha případech budete muset ručně upravit soubor .vstemplate poté, co jste exportovali šablonu. Například, pokud chcete, aby se zobrazí v položce **přidat novou položku** dialogové okno pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projekt aplikace, budete muset provést několik kroků navíc. [Druhý postup](#to-enable-the-item-template-to-be-used-in-a-store-project) v tomto tématu pomáhá tento úkol provést.  
  
- V některých případech může chcete nebo muset ručně vytvořit šablonu položky od začátku. [Třetí postup](../ide/how-to-create-item-templates.md#create_template) ukazuje, jak to provést.  
+ V některých případech může chcete nebo muset ručně vytvořit šablonu položky od začátku. [Třetí postup](#to-enable-templates-for-specific-project-sub-types) ukazuje, jak to provést.  
   
  Zobrazit [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md) informace o prvcích, které lze použít v souboru .vstemplate.  
   

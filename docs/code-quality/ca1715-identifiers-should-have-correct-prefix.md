@@ -1,6 +1,6 @@
 ---
 title: 'CA1715: Identifikátory by měly mít správnou předponu'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1715
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 871c97591ebbaea2087273d925613e12f0fe7529
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b794eb7c7a258a843763b2c68902000031c17eb3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923561"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873601"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identifikátory by měly mít správnou předponu
 
@@ -35,54 +35,90 @@ ms.locfileid: "55923561"
 |Narušující změna|Zásadní - při vyvolání na rozhraních.<br /><br /> Bez konce – při aktivaci pro parametry obecného typu.|
 
 ## <a name="cause"></a>příčina
- Název externě viditelného rozhraní nezačíná velké písmeno "I".
 
- -nebo-
+Název rozhraní nezačíná velké písmeno "I".
 
- Název parametru obecného typu na externě viditelný typ nebo metoda nezačíná velkým 'T'.
+-nebo-
+
+Název [parametr obecného typu](/dotnet/csharp/programming-guide/generics/generic-type-parameters) na typu nebo metody nezačíná velkým 'T'.
+
+Ve výchozím nastavení, toto pravidlo pouze prohledá externě viditelného rozhraní, typy a metody, ale je to [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
- Podle úmluvy názvy některé programovací prvky spustit s určitou předponou.
 
- Názvy rozhraní, které by měl začínat velkým, které "I" a další velké písmeno. Toto pravidlo oznámí porušení zásad pro názvy rozhraní, například "MyInterface" a "IsolatedInterface".
+Podle úmluvy názvy některé programovací prvky spustit s určitou předponou.
 
- Názvy parametrů obecného typu by měl začínat velkým 'T' a volitelně může být následován znakem jiný velké písmeno. Toto pravidlo oznámí porušení zásad pro názvy parametrů obecného typu, jako je například "V" a "Typ".
+Názvy rozhraní, které by měl začínat velkým, které "I" a další velké písmeno. Toto pravidlo oznámí porušení zásad pro názvy rozhraní, například "MyInterface" a "IsolatedInterface".
 
- Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+Názvy parametrů obecného typu by měl začínat velkým 'T' a volitelně může být následován znakem jiný velké písmeno. Toto pravidlo oznámí porušení zásad pro názvy parametrů obecného typu, jako je například "V" a "Typ".
+
+Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+
+## <a name="configurability"></a>Možnosti konfigurace:
+
+Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), můžete nakonfigurovat, které části kódu toto pravidlo analyzuje. Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+
+### <a name="single-character-type-parameters"></a>Parametry typu jedním znakem
+
+Můžete nakonfigurovat, jestli se mají vyloučit z tohoto pravidla parametry typu jedním znakem. Například chcete-li určit, že toto pravidlo *by neměla* analyzovat parametry typu jedním znakem, přidejte jeden z následujících páry klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
+```
+
+> [!NOTE]
+> Toto pravidlo je vyvoláno nikdy pro parametr typu s názvem `T`, například `Collection<T>`.
+
+### <a name="api-surface"></a>Rozhraní API
+
+Můžete nakonfigurovat, které části vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich dostupnosti. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+
+```
+dotnet_code_quality.ca1715.api_surface = private, internal
+```
+
+Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady).
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Přejmenujte identifikátor tak, že je správně předponou.
+
+Přejmenujte identifikátor tak, že je správně předponou.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
 
-## <a name="example"></a>Příklad
- **Následující příklad ukazuje, nesprávně pojmenované rozhraní.**
+Nepotlačujte upozornění na toto pravidlo.
 
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
- [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
+## <a name="interface-naming-example"></a>Příklad rozhraní pojmenování
 
-## <a name="example"></a>Příklad
- **Následující příklad opravuje předchozí porušení podle předpony rozhraní "I".**
+Následující fragment kódu ukazuje, nesprávně pojmenované rozhraní:
 
- [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
+[!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
+[!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
+[!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-## <a name="example"></a>Příklad
- **Následující příklad ukazuje parametr nesprávně pojmenované obecného typu.**
+Následující fragment kódu opravuje předchozí porušení vložením prefixu rozhraní s 'I':
 
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
- [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
+[!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
+[!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
+[!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
-## <a name="example"></a>Příklad
- **Následující příklad opravuje předchozí porušení vložením prefixu parametr obecného typu s 'T'.**
+## <a name="type-parameter-naming-example"></a>Příklad pojmenování parametru typu
 
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
- [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]
+Následující fragment kódu ukazuje parametr nesprávně pojmenované obecného typu:
+
+[!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
+[!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
+[!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
+
+Následující fragment kódu opravuje předchozí porušení vložením prefixu parametr obecného typu s 'T':
+
+[!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
+[!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
+[!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1722: Identifikátory by neměly mít nesprávnou předponu](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+
+- [CA1722: Identifikátory by neměly mít nesprávnou předponu](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

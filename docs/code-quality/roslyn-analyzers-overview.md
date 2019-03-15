@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221941"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869093"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Přehled analyzátory pro .NET Compiler Platform
 
-Visual Studio obsahuje integrované sada .NET Compiler Platform analyzátory, které analyzují vaše C# nebo kódu jazyka Visual Basic jako vy, zadejte. Podívejte se na styl kódu, kvalitu kódu a udržovatelnosti, návrh kódu a další problémy analyzátory. Jako balíček NuGet můžete nainstalovat další analyzátory jako rozšíření sady Visual Studio nebo na základě jednotlivých projektů.
+.NET compiler Platform ("Roslyn") analyzátory analyzovat svůj kód pro styl, kvality a udržovatelnosti, návrhu a další potíže. Visual Studio obsahuje integrované sady analyzátory, které analyzují vaše C# nebo kódu jazyka Visual Basic jako vy, zadejte. Konfigurace předvoleb pro tyto integrované analyzátorů na [textový editor možnosti](../ide/code-styles-and-quick-actions.md) stránky nebo [souboru .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Jako rozšíření sady Visual Studio nebo pomocí balíčku NuGet můžete nainstalovat další analyzátory.
 
-Pokud analyzátor se objevila porušení pravidel, jsou hlášeny v editoru kódu jako *podtržení* problematického kódu a v **seznam chyb**.
+Pokud analyzátor se objevila porušení pravidel, jsou hlášeny v editoru kódu (jako *podtržení* pod problematický kód) a **seznam chyb** okno.
 
-Mnoho pravidla analyzátoru nebo *diagnostiky*, mají jednu nebo více přidružené *opravy kódu* , můžete použít k opravě problému. Diagnostika analyzátoru, které jsou součástí sady Visual Studio máte to napravit přidružený kód. Opravy kódu se zobrazují v nabídce ikonu žárovky společně s další typy *rychlé akce*. Informace o těchto opravy kódu, naleznete v tématu [běžné rychlé akce](../ide/common-quick-actions.md).
+Mnoho pravidla analyzátoru nebo *diagnostiky*, mají jednu nebo více přidružené *opravy kódu* , můžete použít k opravě problému. Diagnostika analyzátoru, které jsou součástí sady Visual Studio máte to napravit přidružený kód. Opravy kódu se zobrazují v nabídce ikonu žárovky společně s další typy [rychlé akce](../ide/quick-actions.md). Informace o těchto opravy kódu, naleznete v tématu [běžné rychlé akce](../ide/common-quick-actions.md).
 
 ![Analýza porušení a opravu kódu rychlé akce](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -36,7 +36,7 @@ Jako je porušení pravidel pro analýzu statického kódu, porušení analyzát
 
 ![Squigglies v editoru kódu](media/diagnostics-severity-colors.png)
 
-Analyzátory Roslyn analýza kódu v okamžiku sestavení, jako je analýza statického kódu, pokud je povoleno, ale také na live při psaní! Analyzátory Roslyn můžete také zadat návrhu analýzy kódu souborů, které nejsou otevřené v editoru, pokud povolíte [úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis).
+Analyzátory Roslyn analýza kódu v okamžiku sestavení, jako je analýza statického kódu, pokud je povoleno, ale také na live při psaní. Pokud povolíte [úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), analyzátorů Roslyn také poskytují analýzu návrhu soubory kódu, které nejsou otevřené v editoru.
 
 > [!NOTE]
 > Čas sestavení chyby a upozornění z analyzátory Roslyn se zobrazí, jenom Pokud jsou nainstalované analyzátory jako balíček NuGet.
@@ -80,6 +80,6 @@ Závažnost pravidla nelze nastavit v analyzátory, které byly nainstalovány j
 
 ## <a name="see-also"></a>Viz také:
 
-- [Rychlé akce v sadě Visual Studio](../ide/quick-actions.md)
+- [Analyzátory – nejčastější dotazy](analyzers-faq.md)
 - [Napsat vlastní analyzátor Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)

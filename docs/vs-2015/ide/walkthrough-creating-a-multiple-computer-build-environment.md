@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření více počítačů vytvořit prostředí | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření více počítačů vytvořit prostředí | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d7a7ee6b8dec07284e35ff6807859136a1223fb7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769071"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868038"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Průvodce: Vytvoření prostředí více počítačů sestavení
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Návod: Vytvoření prostředí více počítačů sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním sady Visual Studio v hostitelském počítači a následným kopírováním různých souborů a nastavení do jiného počítače tak, aby se mohl podílet na sestavení. Není nutné k instalaci sady Visual Studio na jiném počítači.  
@@ -70,7 +70,7 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
 -   Licencovanou kopii systému Visual Studio Ultimate, Visual Studio Premium nebo Visual Studio Professional  
   
--   Kopie rozhraní .NET Framework 4.5.1, kterou si můžete stáhnout z [sady Visual Studio](http://www.microsoft.com/visualstudio/eng/downloads#d-additional-software) webu.  
+-   Kopie rozhraní .NET Framework 4.5.1, kterou si můžete stáhnout z [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) webu.  
   
 ##  <a name="InstallingSoftware"></a> Instalace softwaru v počítačích  
  Nejprve nastavte hostitelský počítač a pak znovu nainstalovat na počítač sestavení.  

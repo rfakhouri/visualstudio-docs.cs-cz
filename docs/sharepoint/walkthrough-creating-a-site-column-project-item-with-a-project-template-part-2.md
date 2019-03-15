@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2 | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2 | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604859"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868101"
 ---
-# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Průvodce: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružení šablony projektu v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony k vytvoření nového projektu, který obsahuje položky projektu. Informace, které slouží k inicializaci položky projektu.
 
  V tomto názorném postupu přidáte průvodce v šabloně projektu sloupce webu, který je znázorněn v [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Když uživatel vytvoří projektu sloupce webu, Průvodce shromažďuje informace o sloupci webu (jako je základním typem a skupiny) a přidá tyto informace *Elements.xml* souboru v novém projektu.
@@ -195,7 +195,7 @@ ms.locfileid: "56604859"
 
 - Podepisování vedoucí projektu.
 
-  Další informace o těchto součástech naleznete v tématu [seznámení se s komponentami průvodce](#wizardcomponents).
+  Další informace o těchto součástech naleznete v tématu [seznámení s komponentami průvodce](#understand-the-wizard-components).
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>Chcete-li definovat ID příkazů služby SharePoint
 

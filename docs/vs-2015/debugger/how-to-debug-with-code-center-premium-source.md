@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dee51306c0c83f365d5c837fd2321c435df2055
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2af674f00c3e6aa1fd50919158cfcdfce379287e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765139"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868957"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Postupy: Ladění se zdrojem webu Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,4 +142,4 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
 ## <a name="see-also"></a>Viz také  
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Code Center Premium](http://www.microsoft.com/resources/sharedsource/ccp.mspx)
+ [Code Center Premium](https://www.microsoft.com/sharedsource/code-center-premium.aspx)

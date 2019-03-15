@@ -8,12 +8,12 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 89f04f48c7afc031637c1c85e871b5b8e3d325be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802020"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869880"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Pravidla pro práci s uživatelským prostředím sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,6 +26,6 @@ Visual Studio uživatelské prostředí pokyny jsou určeny pro ty, kteří náv
   
 - Tyto sady Visual Studio pokyny, které jsou specifické pro platformu pokyny, které mají přednost před obecné pokyny pro Windows, ať jsou vhodné pro naše prostředí.  
   
-- [Modely a pokyny pro Windows Store apps](https://dev.windows.com/design/interaction-ux) jsou referenční informace pro nově vznikající vzory, které mohou být použity v některých případech v rámci sady Visual Studio.  
+- [Ovládací prvky a vzorce pro aplikace pro UPW](/windows/uwp/design/controls-and-patterns) jsou referenční informace pro nově vznikající vzory, které mohou být použity v některých případech v rámci sady Visual Studio.  
   
   Tyto pokyny vám poskytnou informace o tom, co udělat při návrhu pro sadu Visual Studio a v některých případech ohledně toho, jak to udělat jsou také zahrnuty informace. Podrobnější informace o implementaci a další informace o konkrétní aplikačního programovacího rozhraní (API), které umožňují napsat kód pro řešení, které se integrují do integrovaného vývojového prostředí (IDE) sady Visual Studio, použijte [Sady visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).

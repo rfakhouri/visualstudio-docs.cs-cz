@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12f5c759e921ca1659e2821961e6295e096d19b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783547"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868238"
 ---
 # <a name="using-dump-files"></a>Použití souborů výpisu paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Soubory s výpisem paměti s nebo bez haldy –vytvořte soubor s výpisem, otev
   
 - Chcete-li ladit [režimu jádra](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) vypsat soubory v sadě Visual Studio 2013, stáhněte si [Windows 8.1 verze z ladění nástroje pro Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Zobrazit [ladění jádra v aplikaci Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
-- Visual Studio nemůže ladit soubory s výpisem paměti uložené ve starším formátu výpisu, známé jako [úplným uživatelským režimem výpisu](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Pamatujte, že výpis paměti s úplným uživatelským režimem není stejný jako výpis s daty haldy.  
+- Visual Studio nemůže ladit soubory s výpisem paměti uložené ve starším formátu výpisu, známé jako [úplným uživatelským režimem výpisu](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Pamatujte, že výpis paměti s úplným uživatelským režimem není stejný jako výpis s daty haldy.  
   
 - Chcete-li ladit s [SOS.dll (SOS Debugging Extension)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) v sadě Visual Studio, je nutné nainstalovat ladění nástroje pro Windows, který je součástí sad Windows Driver Kit (WDK). Zobrazit [Windows 8.1 Preview: Stažení sad, bitů a nástrojů](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c50ba5ecd8ef8e7eda9bbf2df9fdfa43fac0b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928943"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869106"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operace by neměly přetéct
 
@@ -33,7 +33,7 @@ ms.locfileid: "55928943"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Metoda provádí aritmetické operace a neověřuje operandy předem, aby zabránil přetečení.
 

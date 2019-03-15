@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Měření výkonu aplikace pomocí profilace | Dokumentace Microsoftu
-description: 'Zjistěte, jak pomocí sady Visual Studio 2017 Profilovat jejich výkon aplikací, služeb a nástrojů v jazyce podle vašeho výběru.'
+description: 'Zjistěte, jak pomocí sady Visual Studio na profil výkonu vaší aplikace, služby a nástroje v jazyce podle vašeho výběru.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000

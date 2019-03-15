@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84a264aee56a179934f0ad7ad2b8a26fd69b697b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 656ebd6f8b1e720afd129bca3d53712526fc914f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800002"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869196"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Chyba: Webový Server nenalezl požadovaný prostředek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ Kvůli požadavky na zabezpečení služby IIS vrátilo Obecná chyba.
  Další informace o řešení potíží s IIS najdete v tématu [správu služby IIS a správu](http://go.microsoft.com/fwlink/?LinkId=255872).  
   
 ## <a name="see-also"></a>Viz také  
- [Nástroj UrlScan zabezpečení](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
+ [Nástroj UrlScan zabezpečení](https://www.iis.net/downloads/microsoft/urlscan)   
  [Chyba: Webový server je zamčený, a proto blokuje příkaz DEBUG.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

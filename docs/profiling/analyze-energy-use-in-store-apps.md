@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ecd06b2c340640db082c5d0a6bbdb6a30596748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624409"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872047"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UWP
+
 Visual Studio **spotřeba energie** profileru pomáhá analyzovat spotřebu energie v aplikacích pro UWP v s nízkou spotřebou, na kterých běží všechny nebo část času, na vlastní baterie. Na zařízení napájeném z baterie může aplikace s příliš vysokou spotřebou energie způsobit tak velkou nespokojenost zákazníka, že ji může dokonce i odinstalovat. Optimalizace využití energie můžete rozšířit uživatelskou základnu vaší aplikace a používat zákazníky.
 
 ## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>Co je profiler Spotřeba energie, jak funguje a co měří
- Profiler Spotřeba energie shromažďuje údaje o činnosti displeje, procesoru a síťových připojení zařízení během relace profilování. Poté vygeneruje odhady množství energie použité pro tyto činnosti a celkové množství energie použité pro relaci profilování.
+
+Profiler Spotřeba energie shromažďuje údaje o činnosti displeje, procesoru a síťových připojení zařízení během relace profilování. Poté vygeneruje odhady množství energie použité pro tyto činnosti a celkové množství energie použité pro relaci profilování.
 
 > [!NOTE]
 > Energetický profiler provádí odhad výkonu a spotřeby energie pomocí softwarového modelu standardního hardwaru referenčního zařízení, jež reprezentuje tablety s nízkou spotřebou, na kterých by vaše aplikace mohla běžet. Pro dosažení co nejlepšího odhadu doporučujeme shromáždit profilová data u tabletů s nízkou spotřebou.
 >
 > Ačkoliv model poskytuje dobré odhady pro řadu zařízení s nízkou spotřebou, skutečné hodnoty zařízení, která profilujete, budou pravděpodobně odlišné. Použijte tyto hodnoty pro nalezení aktivit displeje, procesoru a sítě, které jsou v porovnání s využitím jiných prostředků náročné, takže by mohly představovat vhodné kandidáty na optimalizaci.
 
- Profiler spotřeba energie používá tyto definice *power* a *energie*:
+Profiler spotřeba energie používá tyto definice *power* a *energie*:
 
 - *Napájení* opatření množství síly potřebné se používá k provedení práce, která se provádí v časovém intervalu. Elektrické věd, je standardní jednotkou výkonu *watt*, který je definován jako rychlost, jakou práce provádí, když jeden Ampér – měrná aktuální toků prostřednictvím rozdílem v elektrickém potenciálu o velikosti jednoho voltu. V **spotřeby energie** grafu, jsou jednotky zobrazeny v miliwattech **mW** jsou 1/1 000 wattu.
 
@@ -39,9 +41,9 @@ Visual Studio **spotřeba energie** profileru pomáhá analyzovat spotřebu ener
 
 - *Energie* opatření dosáhl celkové množství výkonu, smyslu kapacity nebo potenciálu, jako v případě kapacity baterií, nebo smyslu celkového množství výkonu vynaloženého za určitou dobu. Jednotkou energie je watthodina, tedy výkon jednoho wattu konstantně působící po jednu hodinu. V **souhrn energie**, jsou jednotky zobrazeny v miliwatthodinách **MWh**.
 
-  ![Kapacita energie výkon použít, celkového množství energie použité](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")
+![Kapacita energie, výkon, celkového množství energie použité](../profiling/media/energyprof_capcitypowerused.png)
 
-  Například plně nabitá baterie v tabletu uchovává určité množství energie. Při využívání této energie pro provádění úloh, jako je například komunikace po síti, výpočty hodnot nebo zobrazování grafického obsahu, se výkon spotřebovává různou rychlostí. Pro libovolné časové období se celkové množství spotřebovaného výkonu poměřuje také energií.
+Například plně nabitá baterie v tabletu uchovává určité množství energie. Při využívání této energie pro provádění úloh, jako je například komunikace po síti, výpočty hodnot nebo zobrazování grafického obsahu, se výkon spotřebovává různou rychlostí. Pro libovolné časové období se celkové množství spotřebovaného výkonu poměřuje také energií.
 
 ## <a name="identify-scenarios-with-user-marks"></a>Scénáře s uživatelskými značkami
  Můžete přidat *uživatelské značky* do vlastních profilovacích dat. Chcete-li usnadníte identifikaci oblastí na časové ose.
@@ -57,14 +59,14 @@ Visual Studio **spotřeba energie** profileru pomáhá analyzovat spotřebu ener
  Jakmile se metoda spustí, uživatelská značka je spolu se zprávou přidána do profilových dat.
 
 > [!NOTE]
-> - Obor názvů Windows.Foundation.Diagnostics.loggingchannel implementuje [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) rozhraní (předpokládané podobě [rozhraní System.IDisposable](/dotnet/api/system.idisposable) v C# a VB). Aby se zabránilo nevrácení prostředků operačního systému, volejte [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) v C# a VB) po dokončení protokolování kanál.
->  - Každý otevřený protokolovací kanál musí mít jedinečný název. Pokus o vytvoření nového protokolovacího kanálu se stejným názvem, jaké má jiný kanál, způsobil výjimku.
+> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType> implementuje <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> rozhraní (předpokládané podobě <xref:System.IDisposable?displayProperty=nameWithType> v C# a VB). Aby se zabránilo nevrácení prostředků operačního systému, volejte <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> (<xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType> v C# a VB) po dokončení protokolovacího kanálu.
+> - Každý otevřený protokolovací kanál musí mít jedinečný název. Při pokusu o vytvoření nového protokolovacího kanálu s názvem, jaké má jiný kanál, je vyvolána výjimka.
 
- Viz ukázku Windows SDK [ukázka LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) příklady.
+Příklad kódu naleznete v tématu ukázku Windows SDK [ukázka LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).
 
- **Přidání značek do kódu jazyka JavaScript**
+**Přidání značek do kódu jazyka JavaScript**
 
- Chcete-li přidat uživatelské značky, přidejte do míst v kódu, které chcete označit, následující kód:
+Chcete-li přidat uživatelské značky, přidejte do míst v kódu, které chcete označit, následující kód:
 
 ```JavaScript
 if (performance && performance.mark) {
@@ -72,15 +74,15 @@ if (performance && performance.mark) {
 }
 ```
 
- *markDescription* je řetězec, který obsahuje zprávu zobrazíte v popisu uživatelské značky.
+*markDescription* je řetězec, který obsahuje zprávu zobrazíte v popisu uživatelské značky.
 
 ## <a name="configure-your-environment-for-profiling"></a>Konfigurace prostředí pro profilaci
  Pro získání kvalitních odhadů, bude potřeba profilaci využití energie aplikací na zařízení s nízkou spotřebou, které je napájeno bateriemi. Vzhledem k tomu, že Visual Studio se nespouští na většině z těchto zařízení, musíte připojit počítač Visual Studio k zařízení pomocí nástroje Visual Studio remote tools. Pro připojení ke vzdálenému zařízení je třeba nakonfigurovat jak projekt aplikace Visual Studio, tak vzdálené zařízení. Zobrazit [aplikací pro UWP spuštění na vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md) Další informace.
 
 > [!TIP]
 > - Nedoporučujeme provádět energetickou profilaci na simulátoru UPW nebo na počítači aplikace Visual Studio. Profilace přímo na příslušném zařízení poskytuje mnohem realističtější data.
->   -   Provádějte profilaci na cílovém zařízení v době, kdy je zařízení napájeno bateriemi.
->   -   Zavřete ostatní aplikace, které by mohly využívat stejné prostředky (síť, procesor nebo displej).
+> - Provádějte profilaci na cílovém zařízení v době, kdy je zařízení napájeno bateriemi.
+> - Zavřete ostatní aplikace, které by mohly využívat stejné prostředky (síť, procesor nebo displej).
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Shromažďování dat o energetickém profilu vaší aplikace
 
@@ -91,7 +93,7 @@ if (performance && performance.mark) {
 2.  Zvolte **spotřeba energie** a klikněte na tlačítko **Start**.
 
     > [!NOTE]
-    >  Při spuštění **spotřeba energie** profiler, může se zobrazit **řízení uživatelských účtů** okno ke spuštění *VsEtwCollector.exe*. Zvolte **Ano**.
+    > Při spuštění **spotřeba energie** profiler, může se zobrazit **řízení uživatelských účtů** okno ke spuštění *VsEtwCollector.exe*. Zvolte **Ano**.
 
 3.  Spusťte v aplikaci shromažďování dat.
 
@@ -145,11 +147,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Další zdroje
 
--   **Stav připojení a správa spotřeby** oddíly pro [jazyka C# / VB/C++ a XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) a [jazyka JavaScript a HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) Windows Dev Center popisují rozhraní Windows API, které poskytují informace o síťovém připojení, které vaše aplikace může používat minimalizovat náklady na síťový provoz.
+- **Stav připojení a správa spotřeby** oddíly pro [ C#/VB/C++ a XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) a [jazyka JavaScript a HTML](/previous-versions/windows/apps/hh452983(v=win.10)) popisují rozhraní Windows API, které poskytují sítě informace o připojení, které vaše aplikace může používat minimalizovat náklady na síťový provoz.
 
-     Simulátor aplikace Visual Studio pro aplikace pro UPW umožňuje simulovat vlastnosti datového připojení rozhraní API pro síťové informace. Zobrazit [aplikace spustit UWP v simulátoru](../debugger/run-windows-store-apps-in-the-simulator.md)
+   Simulátor aplikace Visual Studio pro aplikace pro UPW umožňuje simulovat vlastnosti datového připojení rozhraní API pro síťové informace. Zobrazit [aplikace spustit UWP v simulátoru](../debugger/run-windows-store-apps-in-the-simulator.md)
 
--   **Časování funkcí jazyka JavaScript** a **využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [využití procesoru analyzovat](/visualstudio/profiling/beginners-guide-to-performance-profiling).
+- **Časování funkcí jazyka JavaScript** a **využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [využití procesoru analyzovat](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Viz také:
 

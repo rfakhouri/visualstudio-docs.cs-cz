@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fd1d55b74997e855cbbc4a3cdfe9288f19806a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799407"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870498"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools for .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhraní API a podpora nástrojů pro připojení k databázím, modelování dat v paměti a zobrazení dat v uživatelském rozhraní.  Tříd rozhraní .NET Framework, které poskytují přístup k datům funkce jsou označovány jako [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, spolu s daty nástroje v sadě Visual Studio byla původně určena především pro podporu relačních databází a XML. V dnešních dnech mnoho dodavatelů databáze typu NoSQL nebo třetími stranami, nabízejí poskytovatele ADO.NET.  
   
- Visual Studio 2015 Update 2 zahrnuje nejnovější aktualizace [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), které zajišťují podporu pro nejnovější funkce v Azure [SQL Database](https://azure.microsoft.com/services/sql-database/) a [SQL serveru 2016](https://www.microsoft.com/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) podporuje technologie ADO.NET, s výjimkou datové sady a souvisejících typů. Pokud se zaměřujete na .NET Core a vyžadují vrstvu objektově relační mapování (ORM), použijte [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 Update 2 zahrnuje nejnovější aktualizace [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), které zajišťují podporu pro nejnovější funkce v Azure [SQL Database](https://azure.microsoft.com/services/sql-database/) a [SQL serveru 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) podporuje technologie ADO.NET, s výjimkou datové sady a souvisejících typů. Pokud se zaměřujete na .NET Core a vyžadují vrstvu objektově relační mapování (ORM), použijte [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  Následující diagram znázorňuje zjednodušenou zobrazení základní architektury:  
   

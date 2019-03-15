@@ -12,12 +12,12 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f98a58d78adc081ba574cab05edb29e1f42eabb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 84ab9dd82f6867135c136f903c6c0050132b1b05
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798328"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868844"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku panelu nástrojů WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,4 +99,4 @@ ms.locfileid: "54798328"
   
 3.  Nahrajte soubor .vsix k síti nebo na web.  
   
-     Pokud nahrajete soubor, který má [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webové stránky, další uživatelé můžou používat **nástrojů / rozšíření a aktualizace** v sadě Visual Studio online ovládacího prvku najít a nainstalovat ho.
+     Pokud nahrajete soubor, který má [Visual Studio Marketplace](https://marketplace.visualstudio.com/) webové stránky, další uživatelé můžou používat **nástrojů / rozšíření a aktualizace** v sadě Visual Studio online ovládacího prvku najít a nainstalovat ho.

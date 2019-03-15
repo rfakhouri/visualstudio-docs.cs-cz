@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8905470513f48bb284749a9fa0fb0e0fc73096f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914081"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869273"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generování a spuštění programového testu výkonnosti webu
 
@@ -29,7 +29,7 @@ Testy webového výkonu jsou zaznamenány procházením webové aplikace. Testy 
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generování programový test výkonnosti webu
 
-1.  Pokud jste ještě nevytvořili test výkonnosti webu, přečtěte si téma [zaznamenání testu výkonu webu](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
+1.  Pokud jste ještě nevytvořili test výkonnosti webu, přečtěte si téma [zaznamenání testu výkonu webu](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
 2.  Generovat kódovaný test.
 

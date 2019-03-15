@@ -12,12 +12,12 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ed8080b8e470276a38fbf300edbf801dc8e141fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 619cbaeee977f3ff850edf9d58d0790d5219dc36
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785266"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873432"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Odesílání rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Po dokončení vývoje rozšíření, nainstalujte ho na jiné počítače, sdí
  Formát VSIX nepodporuje instalaci fragmentů kódu. Také nepodporuje některých dalších scénářů, jako je například zápis do globální mezipaměti sestavení (GAC) nebo do systémového registru. Pokud budete potřebovat k zápisu do mezipaměti GAC nebo registru v instalaci, musíte použít instalační služby systému Windows. Další informace najdete v tématu [Příprava rozšíření pro Windows Installer nasazení](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
 ## <a name="publishing-your-extension-to-the-visual-studio-gallery"></a>Publikování rozšíření do Galerie Visual Studio
- Rozšíření ostatním uživatelům můžete distribuovat jednoduše tak, že jejich souboru .vsix poštovní nebo vložení na serveru. Ale nejlepší způsob, jak získat kód dostat do rukou velké množství lidí je umístit jej [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847). Rozšíření Galerie sady Visual Studio jsou k dispozici uživatelům aplikace Visual Studio prostřednictvím **rozšíření a aktualizace**. Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+ Rozšíření ostatním uživatelům můžete distribuovat jednoduše tak, že jejich souboru .vsix poštovní nebo vložení na serveru. Ale nejlepší způsob, jak získat kód dostat do rukou velké množství lidí je umístit jej [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Rozšíření Galerie sady Visual Studio jsou k dispozici uživatelům aplikace Visual Studio prostřednictvím **rozšíření a aktualizace**. Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
  Úplný příklad, který ukazuje, jak nahrát rozšíření do Galerie Visual Studio, naleznete v tématu [názorný postup: Publikování rozšíření sady Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 

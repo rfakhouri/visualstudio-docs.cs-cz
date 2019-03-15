@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921234"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868013"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Upravit kód R v sadě Visual Studio
 
@@ -97,7 +97,7 @@ Možnosti formátování (včetně vypnutí formátování), se konfigurují pom
 
 ## <a name="inserting-roxygen-comments"></a>Vkládání komentářů Roxygen
 
-RTVS poskytuje zástupce pro generování [Roxygen](http://roxygen.org/) komentáře pomocí názvy parametrů funkce. Stačí zadat `###` na prázdný řádek výše definice funkce:
+RTVS poskytuje zástupce pro generování [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html) komentáře pomocí názvy parametrů funkce. Stačí zadat `###` na prázdný řádek výše definice funkce:
 
 ![Animace vložení komentář Roxygen](media/editing-roxygen-comments.gif)
 
