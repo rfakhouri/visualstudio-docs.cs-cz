@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323585"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868140"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -55,7 +55,7 @@ Tyto soubory definují trochu samy o sobě. Místo toho importovat další soubo
 
 Hodnoty těchto vlastností zadat názvy složek v rámci `$(VCTargetsPath)` kořenové složky:
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Typ aplikace* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< c58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Platformy* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>platformy</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Typ aplikace* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Platformy* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;platformy\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Používá se, když je `$(ApplicationType)` prázdný, pro projekty Windows Desktop) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Přidat novou sadu nástrojů platformy
 
@@ -215,7 +215,7 @@ Bez ohledu na jeho název, který byl vytvořen před provedením sady Visual St
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>Úlohy nástroje MSBuild pro použití v cíle sady nástrojů
 
-Který má být vyvolán nástroj aplikace skutečný sestavení, je potřeba zavolat úlohu nástroje MSBuild cíl. Existuje základní [Exec – úloha](../msbuild/exec-task.md) , který umožňuje zadat příkazový řádek pro spuštění. Nástroje sestavení však obvykle mají mnoho možností, vstupy. a výstupy ke sledování pro přírůstkové sestavení, je vhodnější mít speciální úkoly pro ně. Například `CL` úloh výrazném CL.exe přepínače vlastnosti nástroje MSBuild, zapisuje je do souboru odpovědí a volá CL.exe. Také sleduje všechny vstupní a výstupní soubory pro později přírůstková sestavení. Další informace najdete v tématu [přírůstkového sestavení a Kontrola aktuálnosti](#incremental-build-and-up-to-date-check).
+Který má být vyvolán nástroj aplikace skutečný sestavení, je potřeba zavolat úlohu nástroje MSBuild cíl. Existuje základní [Exec – úloha](../msbuild/exec-task.md) , který umožňuje zadat příkazový řádek pro spuštění. Nástroje sestavení však obvykle mají mnoho možností, vstupy. a výstupy ke sledování pro přírůstkové sestavení, je vhodnější mít speciální úkoly pro ně. Například `CL` úloh výrazném CL.exe přepínače vlastnosti nástroje MSBuild, zapisuje je do souboru odpovědí a volá CL.exe. Také sleduje všechny vstupní a výstupní soubory pro později přírůstková sestavení. Další informace najdete v tématu [přírůstková sestavení a aktuální kontroly](#incremental-builds-and-up-to-date-checks).
 
 Microsoft.Cpp.Common.Tasks.dll implementuje tyto úlohy:
 
