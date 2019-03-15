@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 522acb66d5a5bd727ab7d8a0a95bc0d3c929d358
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f7044c44278410e1fc800e0e974847c090da0e3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768978"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869483"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procházení a správa prostředků úložiště pomocí Průzkumníka serveru
 
@@ -157,10 +157,10 @@ Následující obrázek znázorňuje frontu, která obsahuje dvě zprávy:
 
 ![Zobrazení fronty](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Další informace o službě storage services fronty, naleznete v tématu [Začínáme s Azure Queue storage pomocí .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Informace o webové službě storage services fronty, naleznete v tématu [koncepty služby front](http://go.microsoft.com/fwlink/?LinkId=264788). Informace o tom, jak odesílat zprávy do fronty služby storage s použitím sady Visual Studio najdete v tématu [odesílání zpráv do fronty služby Storage](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Další informace o službě storage services fronty, naleznete v tématu [Začínáme s Azure Queue storage pomocí .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Informace o webové službě storage services fronty, naleznete v tématu [koncepty služby front](http://go.microsoft.com/fwlink/?LinkId=264788). Informace o tom, jak odesílat zprávy do fronty služby storage s použitím sady Visual Studio najdete v tématu [odesílání zpráv do fronty služby Storage](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Fronty služby Storage se liší od fronty Azure Service Bus. Další informace o fronty služby Service Bus, najdete v části [fronty služby Service Bus, témat a odběrů](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Fronty služby Storage se liší od fronty Azure Service Bus. Další informace o fronty služby Service Bus, najdete v části [fronty služby Service Bus, témat a odběrů](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Pracovat s prostředky tabulky
 
@@ -219,7 +219,7 @@ Můžete přizpůsobit sadu entit, které se zobrazí v tabulce v případě, ž
 1. Po dokončení sestavení dotazu, zavřete dialogové okno. Výsledný text formulář dotazu se zobrazí v textovém poli jako filtr datových služeb WCF.
 1. Spusťte dotaz, vyberte ikonu zelený trojúhelník.
 
-Můžete také filtrovat data entity, které se zobrazí v Návrháři tabulek Pokud zadáte řetězec filtru služeb WCF Data Services přímo do textového pole filtru. Tento typ řetězce je podobná klauzuli WHERE příkazu SQL, ale je odeslána na server jako požadavek HTTP. Informace o tom, jak vytvářet řetězce filtru najdete v tématu [Constructing řetězce filtru pro návrháře tabulky](https://docs.microsoft.com/azure/vs-azure-tools-table-designer-construct-filter-strings).
+Můžete také filtrovat data entity, které se zobrazí v Návrháři tabulek Pokud zadáte řetězec filtru služeb WCF Data Services přímo do textového pole filtru. Tento typ řetězce je podobná klauzuli WHERE příkazu SQL, ale je odeslána na server jako požadavek HTTP. Informace o tom, jak vytvářet řetězce filtru najdete v tématu [Constructing řetězce filtru pro návrháře tabulky](/azure/vs-azure-tools-table-designer-construct-filter-strings).
 
 Následující obrázek znázorňuje příklad řetězce platný filtr:
 
@@ -295,4 +295,4 @@ Pokud odstraníte účet úložiště z Průzkumníka serveru, to nemá vliv na 
 
 ## <a name="next-steps"></a>Další kroky
 
-Další informace o tom, jak pomocí služby Azure storage najdete v tématu [přístup ke službám úložiště Azure](https://msdn.microsoft.com/library/azure/ee405490.aspx).
+Další informace o tom, jak pomocí služby Azure storage najdete v tématu [Úvod do služby Azure Storage](/azure/storage/common/storage-introduction).
