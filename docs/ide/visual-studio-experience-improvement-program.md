@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323115"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070019"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio programu zlepšování zkušeností zákazníků
 
@@ -25,9 +25,7 @@ Visual Studio zákazníka prostředí pro zlepšování programu (VSCEIP) je nav
 
 VSCEIP je ve výchozím nastavení zapnutá. Můžete ji vypnout nebo zpět na, podle těchto pokynů:
 
-1. Spusťte Visual Studio.
-
-1. Z **pomáhají** nabídky, přejděte k **odeslat zpětnou vazbu**a pak vyberte **nastavení**.
+1. V sadě Visual Studio, zvolte **pomáhají** > **odeslat zpětnou vazbu**a pak vyberte **nastavení**.
 
    **Programu zlepšování zkušeností sady Visual Studio** zobrazí se dialogové okno.
 

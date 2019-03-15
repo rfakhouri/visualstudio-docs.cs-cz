@@ -1,7 +1,7 @@
 ---
 title: Instalace podpory Pythonu
 description: Postup instalace nástroje Pythonu pro Visual Studio (PTVS) v sadě Visual Studio 2017, 2015, 2013, 2012 a 2010, včetně možnosti a umístění instalace.
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38cb805978396c8c1744a953a7b1ef7417f43483
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 5270d24bd98d9858b4133c1e05b5883b8b57f509
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323248"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983303"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalace podpory Pythonu v sadě Visual Studio ve Windows
 
 Instalace podpory Pythonu pro Visual Studio (označované také jako Python Tools for Visual Studio nebo PTVS), postupujte podle pokynů v části, která odpovídá verzi sady Visual Studio:
 
-- [Visual Studio 2017](#visual-studio-2017)
+- [Visual Studio 2017 and Visual Studio 2019](#visual-studio-2017-and-2019)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 a starší](#visual-studio-2013-and-earlier)
 
@@ -33,30 +33,27 @@ K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete
 > [!Note]
 > Podpora Pythonu není v současné době k dispozici v sadě Visual Studio pro Mac, ale je k dispozici na Mac a Linux přes Visual Studio Code. Zobrazit [otázek a odpovědí](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+<a name="visual-studio-2017"></a>
+## <a name="visual-studio-2019-and-visual-studio-2017"></a>Visual Studio 2019 and Visual Studio 2017
 
-1. Stáhněte si a spusťte nejnovější instalační program sady Visual Studio 2017. Pokud máte Visual Studio, už nainstalovali, spusťte instalační program sady Visual Studio, vyberte **změnit** možnost (naleznete v tématu [upravit Visual Studio](../install/modify-visual-studio.md)) a přejděte ke kroku 2.
+1. Stáhněte a spusťte nejnovější instalační program sady Visual Studio. Pokud máte Visual Studio, už nainstalovali, spusťte instalační program sady Visual Studio, vyberte **změnit** možnost (naleznete v tématu [upravit Visual Studio](../install/modify-visual-studio.md)) a přejděte ke kroku 2.
 
     > [!div class="nextstepaction"]
-    > [Nainstalovat sadu Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Nainstalujte sadu Visual Studio. 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Edice Community je pro jednotlivé vývojáře, školní výuka, vědecký výzkum a vývoj open source. Pro jiné účely, nainstalujte [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) nebo [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
+    > Edice Community je pro jednotlivé vývojáře, školní výuka, vědecký výzkum a vývoj open source. Pro jiné účely, nainstalujte [Visual Studio Professional. 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) nebo [Visual Studio Enterprise. 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. Instalační program vám nabídne seznam úloh, které jsou skupiny související možnosti jsou pro vývoj pro konkrétní oblasti. Pro Python, vyberte **vývoj v jazyce Python** pracovního vytížení.
 
     ![Úloha vývoj v jazyce Python v instalačním programu sady Visual Studio](media/installation-python-workload.png)
 
-   ::: moniker range="vs-2017"
-
+    ::: moniker range="vs-2017"
     Volitelné: Pokud pracujete s vědeckým zpracováním dat, zvažte také **pro datové vědy a analytické aplikace** pracovního vytížení. Tato úloha obsahuje podporu pro Python, R, a F# jazyky. Další informace najdete v tématu [pro datové vědy a analytické aplikace úlohy](data-science-and-analytical-applications-workload.md).
-    
     ::: moniker-end
-    
-   ::: moniker range=">=vs-2019"
 
+    ::: moniker range=">=vs-2019"
     Volitelné: Pokud pracujete s vědeckým zpracováním dat, zvažte také **pro datové vědy a analytické aplikace** pracovního vytížení. Tato úloha obsahuje podporu pro Python a F# jazyky. Další informace najdete v tématu [pro datové vědy a analytické aplikace úlohy](data-science-and-analytical-applications-workload.md).
-    
     ::: moniker-end
 
     > [!Note]
@@ -64,11 +61,17 @@ K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete
 
 1. Na pravé straně instalačního programu zvolte v případě potřeby další možnosti. Přeskočte tento krok přijměte výchozí možnosti.
 
+    ::: moniker range="vs-2017"
     ![Možnosti vývoje Python v instalačním programu sady Visual Studio](media/installation-python-options.png)
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    ![Možnosti vývoje Python v instalačním programu sady Visual Studio 2019](media/installation-python-options-2019.png)
+    ::: moniker-end
 
     | Možnost | Popis |
     | --- | --- |
-    | Distribuce Pythonu | Zvolte libovolnou kombinaci 32bitové a 64bitové varianty Python 2, Python 3, Anaconda2 a Anaconda3 distribuce, které máte v úmyslu pracovat. Každá obsahuje překladač distribuce, modul runtime a knihovny. Anaconda, je konkrétně open platforma pro datovou vědu, který obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit do instalačního programu sady Visual Studio kdykoli přidat nebo odebrat distribucí.)  **Poznámka:**: Pokud jste nainstalovali distribuce mimo instalačního programu sady Visual Studio, není nutné ke kontrole ekvivalentní možnost. Visual Studio automaticky rozpozná existující instalace Pythonu. Zobrazit [okno The prostředí Pythonu](managing-python-environments-in-visual-studio.md#the-python-environments-window). Navíc pokud novější verzi jazyka Python je k dispozici, než co se zobrazí v instalačním programu, tuto verzi můžete nainstalovat samostatně a Visual Studio zjistí. |
+    | Distribuce Pythonu | Zvolte libovolnou kombinaci dostupných možností, jako je například 32bitové a 64bitové varianty Python 2, Python 3, Miniconda, Anaconda2 a Anaconda3 distribucí, které máte v úmyslu pracovat. Každá obsahuje překladač distribuce, modul runtime a knihovny. Anaconda, je konkrétně open platforma pro datovou vědu, který obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit do instalačního programu sady Visual Studio kdykoli přidat nebo odebrat distribucí.)  **Poznámka:**: Pokud jste nainstalovali distribuce mimo instalačního programu sady Visual Studio, není nutné ke kontrole ekvivalentní možnost. Visual Studio automaticky rozpozná existující instalace Pythonu. Zobrazit [okno The prostředí Pythonu](managing-python-environments-in-visual-studio.md#the-python-environments-window). Navíc pokud novější verzi jazyka Python je k dispozici, než co se zobrazí v instalačním programu, tuto verzi můžete nainstalovat samostatně a Visual Studio zjistí. |
     | **Podpora šablon Cookiecutter** | Nainstaluje Cookiecutter grafického uživatelského rozhraní zjišťovat šablony, zadejte možnosti šablon a vytváření projektů a souborů. Zobrazit [pomocí rozšíření Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Podpora webů v Pythonu** | Nainstaluje nástroje pro vývoj webů, včetně HTML, CSS a JavaScriptu úpravy podporu spolu s šablony projektů s použitím rozhraní Bottle, Flask a Django. Zobrazit [webová šablony projektů v Pythonu](python-web-application-project-templates.md). |
     | **Podpory pro Python IoT** | Podporuje vývoj pro Windows IoT Core pomocí Pythonu. |
@@ -115,7 +118,7 @@ Pokud narazíte na problémy s instalací nebo spustit jazyk Python v sadě Visu
 
 Ve výchozím nastavení pro všechny uživatele v počítači je nainstalována podpora Pythonu.
 
-Pro Visual Studio 2017, je nainstalovaná úloha Pythonu ve *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\< VS_edition > Common7\IDE\Extensions\Microsoft\Python* kde &lt;VS_edition &gt; je Community, Professional nebo Enterprise.
+Visual Studio 2019 a Visual Studio 2017, je nainstalovaná úloha Pythonu ve *% ProgramFiles (x86) %\Microsoft Visual Studio\\< VS_version >\\< VS_edition > Common7\IDE\Extensions\Microsoft\ Python* kde &lt;VS_version&gt; 2019 nebo 2017 a &lt;VS_edition&gt; je Community, Professional nebo Enterprise.
 
 Pro Visual Studio 2015 a starší instalační cesty jsou následující:
 

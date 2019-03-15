@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae8ce7856249bafced5577030150c6910a86c34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8ebece0823c42c4dd1f2faaeb894e88c06ed0bef
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911491"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983439"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace Build Tools do kontejneru
 
@@ -199,4 +199,4 @@ Pokud chcete použít tuto bitovou kopii pro pracovní postup CI/CD, je možné 
 
 * [Rozšířený příklad pro kontejnery](advanced-build-tools-container.md)
 * [Známé problémy s kontejnery](build-tools-container-issues.md)
-* [ID pracovního vytížení a komponenta Visual Studio 2017 nástroje sestavení](workload-component-id-vs-build-tools.md)
+* [ID pracovního vytížení a komponenta Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

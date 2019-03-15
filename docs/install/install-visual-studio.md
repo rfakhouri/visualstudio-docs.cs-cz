@@ -18,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607021"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983543"
 ---
-# <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
+# <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
 Vítá vás nový způsob, jak nainstalovat sadu Visual Studio! V této verzi jsme jsme usnadnili si můžete vybrat a instalace jen těch funkcí, které potřebujete. Také jsme jste snížení nároků sady Visual Studio tak, aby nainstaloval rychleji a s menšími dopady na systém, než kdy dřív.
 
@@ -130,9 +130,9 @@ Další informace najdete v tématu [změnit umístění instalace v sadě Visua
 
 ## <a name="see-also"></a>Viz také:
 
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Úpravy sady Visual Studio 2017](modify-visual-studio.md)
-* [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
-* [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Aktualizace sady Visual Studio](update-visual-studio.md)
+* [Úpravy sady Visual Studio](modify-visual-studio.md)
+* [Odinstalace sady Visual Studio](uninstall-visual-studio.md)
+* [Vytvoření offline instalace sady Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [Instalace sady Visual Studio pro Mac](/visualstudio/mac/installation)

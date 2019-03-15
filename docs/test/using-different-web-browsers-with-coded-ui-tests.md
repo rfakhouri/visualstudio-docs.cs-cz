@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318430"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983026"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Používání jiných webových prohlížečů v programových testech uživatelského rozhraní
 
@@ -51,11 +51,23 @@ Při testování webové aplikace pomocí různých typů webových prohlížeč
 
 ### <a name="install-selenium-components"></a>Instalace součástí Selenium
 
-1.  Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.
+::: moniker range="vs-2017"
 
-2.  V **rozšíření a aktualizace** dialogovém okně vyhledejte `Selenium components for Cross Browser Testing`.
+1. Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.
 
-3.  Zvýrazněte rozšíření a zvolte možnost **Stáhnout**.
+2. V **rozšíření a aktualizace** dialogovém okně vyhledejte `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Na **rozšíření** nabídce zvolte **spravovat rozšíření**.
+
+2. V **spravovat rozšíření** dialogovém okně vyhledejte `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+3. Zvýrazněte rozšíření a zvolte možnost **Stáhnout**.
 
     > [!TIP]
     > Můžete také stáhnout součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče z [tady](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).

@@ -1,7 +1,7 @@
 ---
 title: Přehled sady Visual Studio pro vývojáře v Pythonu
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316610"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983504"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Vítá vás Visual Studio IDE | Python
 
@@ -28,6 +28,10 @@ Tento obrázek ukazuje Visual Studio s otevřeném projektu Pythonu a několika 
 
 - [**Průzkumník řešení** ](../ide/solutions-and-projects-in-visual-studio.md) (vpravo nahoře) umožňuje zobrazit, přejděte a spravovat soubory kódu. **Průzkumník řešení** pomáhá organizovat kód seskupením soubory do [řešení a projekty](/visualstudio/get-started/tutorial-projects-solutions).
     - Spolu s **Průzkumníka řešení** je [ **prostředí Pythonu**](managing-python-environments-in-visual-studio.md), kde budete spravovat různé interpretů Pythonu, které jsou nainstalovány ve vašem počítači.
+
+    ::: moniker range=">=vs-2019"
+    - Můžete také otevřít a spuštění kódu Pythonu ve složce bez vytvoření souborů projektu a řešení sady Visual Studio. Další informace najdete v tématu [rychlý start: Otevření a spuštění kódu Pythonu ve složce](quickstart-05-python-visual-studio-open-folder.md).
+    ::: moniker-end
 
 - [Okno editoru](../ide/writing-code-in-the-code-and-text-editor.md) (System center), kde budete pravděpodobně tráví většinu svého času zobrazí obsah souboru. Tady je [úpravy kódu v Pythonu](editing-python-code-in-visual-studio.md), navigace v rámci struktury kódu a nastavit zarážky během relace ladění. S využitím Pythonu, můžete také vybrat kód a stiskněte klávesy Ctrl + Enter pro spuštění tohoto kódu [interaktivního okna REPL](python-interactive-repl-in-visual-studio.md).
 
@@ -83,6 +87,12 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
    ![Příkazy pro navigaci kódu](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Výkonné funkce pro Python
+
+::: moniker range=">=vs-2019"
+- [Spustit kód bez projektu](quickstart-05-python-visual-studio-open-folder.md)
+
+    Od verze Visual Studio 2019, můžete otevřít složku obsahující kód Pythonu mohli využívat výhody funkcí, jako je IntelliSense a ladění bez nutnosti vytvářet projekt sady Visual Studio Code.
+::: moniker-end
 
 - [Interaktivní okno REPL Pythonu](python-interactive-repl-in-visual-studio.md)
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270573"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983452"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Nainstalujte analyzátory FxCop v sadě Visual Studio
 
@@ -54,12 +54,27 @@ Určení verze balíčku analyzátory FxCop instalace pro vaši verzi sady Visua
 
 V sadě Visual Studio 2017 verze 15.5 nebo novější, můžete nainstalovat [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) rozšíření, které obsahuje všechny analyzátory FxCop pro spravované projekty.
 
+::: moniker range="vs-2017"
+
 1. V sadě Visual Studio, vyberte **nástroje** > **rozšíření a aktualizace**.
 
    **Rozšíření a aktualizace** zobrazí se dialogové okno.
 
    > [!NOTE]
    > Můžete také stáhnout přímo z rozšíření [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. V sadě Visual Studio, vyberte **rozšíření** > **spravovat rozšíření**.
+
+   **Spravovat rozšíření** zobrazí se dialogové okno.
+
+   > [!NOTE]
+   > Můžete také stáhnout přímo z rozšíření [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
 
 1. Rozbalte **Online** v levém podokně a pak vyberte **Visual Studio Marketplace**.
 
@@ -83,7 +98,17 @@ V sadě Visual Studio 2017 verze 15.5 nebo novější, můžete nainstalovat [Mi
 
 1. Znovu otevřete Visual Studio.
 
+::: moniker range="vs-2017"
+
 Pokud chcete zkontrolovat, zda je rozšíření nainstalované, vyberte **nástroje** > **rozšíření a aktualizace**. V **rozšíření a aktualizace** dialogové okno, vyberte **nainstalováno** kategorie na levé straně a poté vyhledejte rozšíření podle názvu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Pokud chcete zkontrolovat, zda je rozšíření nainstalované, vyberte **rozšíření** > **spravovat rozšíření**. V **spravovat rozšíření** dialogové okno, vyberte **nainstalováno** kategorie na levé straně a poté vyhledejte rozšíření podle názvu.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Viz také:
 

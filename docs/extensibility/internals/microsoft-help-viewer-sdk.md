@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323929"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57868298"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -706,7 +706,7 @@ Tento návod ukazuje, jak zahrnout obsah nápovědy do aplikace Visual Studio Sh
 
 1.  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
-2.  [Izolované aplikace Visual Studio 2013 Shell Redist](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2.  [Izolované aplikace Visual Studio 2013 Shell Redist](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
 **Přehled**
 

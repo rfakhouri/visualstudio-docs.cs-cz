@@ -20,14 +20,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f996e5b284393be91d4e83e3e403bdbb1073e6ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909646"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982867"
 ---
-# <a name="remove-visual-studio-2017"></a>Odebrat sady Visual Studio 2017
+# <a name="remove-visual-studio"></a>Odebrání sady Visual Studio
 
 Pokud dojde k závažné chybě a nelze opravit nebo odinstalovat Visual Studio, můžete spustit `InstallCleanup.exe` nástroj pro odebrání instalační soubory a informace o produktu pro všechny nainstalované instance sady Visual Studio 2017 a novější. Spuštění tohoto nástroje je třeba udělat jako poslední možnost, pokud opravit nebo odinstalovat navrácení služeb po a odinstalovat funkce z jiné instalace sady Visual Studio nebo jiné produkty, které je potřeba opravit.
 
@@ -54,7 +54,7 @@ Pokud nenajdete `InstallCleanup.exe` v adresáři instalačního programu sady V
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Úpravy sady Visual Studio 2017](modify-visual-studio.md)
-* [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
+* [Instalace sady Visual Studio](install-visual-studio.md)
+* [Aktualizace sady Visual Studio](update-visual-studio.md)
+* [Úpravy sady Visual Studio](modify-visual-studio.md)
+* [Odinstalace sady Visual Studio](uninstall-visual-studio.md)

@@ -9,14 +9,14 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d64f104cd7d893b48fca5fdbd454fb380dafc6ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947286"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069941"
 ---
-# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Průvodce: Izolace problémů pomocí graf aktivity virtuálního uživatele
+# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele
 
 V tomto podrobném návodu se dozvíte, jak izolovat chyby, ke kterým došlo u jednotlivých virtuálních uživatelů, které byly spuštěny zátěžového testu pomocí graf aktivity virtuálního uživatele.
 
@@ -36,7 +36,7 @@ Graf aktivity virtuálního uživatele vám umožňuje vizualizovat aktivitu vir
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otevřete řešení ColorWebApp vytvořili v předchozí návody
 
-1.  Spusťte Visual Studio.
+1.  Otevřít Visual Studio.
 
 2.  Otevřít **ColorWebApp** řešení, které obsahuje *LoadTest1.loadtest*. Tento zátěžový test výsledky z provádění kroků ve třech návodech, které jsou uvedené na začátku tohoto tématu v části předpoklady.
 
@@ -79,7 +79,7 @@ Po spuštění zátěžového testu a shromažďují data aktivity virtuálního
 
 7.  Popis se zobrazí následující informace:
 
-    -   **Id uživatele**
+    -   **ID uživatele**
 
     -   **Scénář**
 

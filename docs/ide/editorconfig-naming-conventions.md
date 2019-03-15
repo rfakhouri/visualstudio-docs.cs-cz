@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908189"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983271"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
@@ -73,18 +73,19 @@ Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot
 - private
 - protected
 - chráněné\_interní nebo protected_friend
+- privátní\_chráněné
 - local
 
 > [!NOTE]
 > Nezadávejte úroveň dostupnosti jako součást svých zásad vytváření názvů, pokud usnadnění přístupu se nedá použít pro daný druh symbolu, který cílíte. Například parametry nemají úrovní přístupu. Pokud chcete zadat úroveň usnadnění pro zásady vytváření názvů parametrů, pravidlo pro pojmenování nebude fungovat správně.
 
-### <a name="symbol-modifiers"></a>Modifikátory symbol
+### <a name="symbol-modifiers-optional"></a>Symbol modifikátory (volitelné)
 
 K popisu modifikátory symboly chcete pravidlo pro pojmenování použít, zadejte název vlastnosti v následujícím formátu:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot oddělených čárkami. Pravidlo pro pojmenování bude porovnávat pouze podpisy, které mají všechny zadané v modifikátory `required_modifiers`. Pokud ji vynecháte, je použita výchozí hodnota je seznam prázdný, to znamená, jsou požadovány pro shodu bez konkrétních parametrů. To znamená, že symbolu modifikátory nemají žádný vliv na tom, zda toto pravidlo se použije.
+Následující seznam obsahuje povolené hodnoty (oddělte čárkou více hodnot):
 
 - `abstract` Nebo `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot
    > [!NOTE]
    > Pokud máte pravidlo pro pojmenování pro `static` nebo `shared` symboly, budou také použity na `const` symboly, protože jsou implicitně statické. Pokud nechcete, aby `static` pravidlo pro pojmenování vyrovnat `const` symboly, vytvořte samostatné pravidlo pro pojmenování pro `const` symboly.
 
-`required_modifiers` Vlastnost je volitelná. Pokud ji vynecháte, pravidlo pro pojmenování platit pro všechny modifikátory.
+Pravidlo pro pojmenování shoduje s podpisy, které mají *všechny* modifikátory podle `required_modifiers`. Pokud ji vynecháte, je použita výchozí hodnota je seznam prázdný, to znamená, jsou požadovány pro shodu bez konkrétních parametrů. To znamená, že symbolu modifikátory nemají žádný vliv na tom, zda toto pravidlo se použije.
+
+> [!TIP]
+> Nezadávejte hodnotu `*` pro `required_modifiers`. Místo toho jednoduše vynechejte `required_modifiers` vlastnost zcela a pravidlo pro pojmenování má platit pro jakýkoli druh modifikátor.
 
 ## <a name="style"></a>Styl
 

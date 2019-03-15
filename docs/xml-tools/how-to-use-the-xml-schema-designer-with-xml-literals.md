@@ -10,26 +10,26 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4da90db115e001f7f06ec2e7dd33d64ef20048
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927279"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070214"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Postupy: Používání návrháře schémat XML s literály XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Postupy: Používání Návrháře schémat XML s literály XML
 
 Toto téma popisuje postup zobrazení schématu přidružené k literálu v projektu jazyka Visual Basic XML.
 
-## <a name="to-create-a-new-visual-basic-console-application-project"></a>Chcete-li vytvořit nový projekt konzolové aplikace v jazyce Visual Basic
+## <a name="create-a-new-visual-basic-project"></a>Vytvoření nového projektu jazyka Visual Basic
 
-1.  Spusťte Visual Studio.
+1.  Otevřít Visual Studio.
 
-2.  Z **souboru** nabídce vyberte možnost **nový**a pak vyberte **projektu**. Zobrazí se dialogové okno **Nový projekt**. Pro **typy projektů**vyberte **jiné jazyky,** a pak vyberte **jazyka Visual Basic**. Pro **šablony**, vyberte konzolové aplikace. Zadejte `XMLLiterals` v **název** pole a umístění projektu v **umístění** pole. Klikněte na **OK**.
+2. Vytvořit nový jazyka Visual Basic **konzolovou aplikaci** projekt s názvem **XMLLiterals**.
 
-     Vytvoření nového projektu. Projekt XMLLiterals obsahuje jeden zdrojový soubor jazyka Visual Basic, *Module1.vb*.
+     Nový projekt obsahuje jeden zdrojový soubor jazyka Visual Basic, *Module1.vb*.
 
-## <a name="to-add-an-existing-xsd-file-to-the-project"></a>Chcete-li přidat existující soubor XSD do projektu
+## <a name="add-an-existing-xsd-file"></a>Přidání stávajícího souboru XSD
 
 1.  Otevřete nový textový soubor v poznámkovém bloku. Zkopírujte ukázkový kód XML schéma z [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md) a vložte ji do souboru.
 
@@ -39,7 +39,9 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
 
      Projekt XMLLiterals teď obsahuje dva soubory: *Module1.vb* a *PurchaseOrderSchema.xsd*.
 
-## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Přidání kódu jazyka Visual Basic s XML literál, na základě souboru XSD, které jsou součástí projektu
+## <a name="add-code"></a>Přidejte kód
+
+Přidání kódu jazyka Visual Basic s XML literál, na základě souboru XSD, které jsou součástí projektu:
 
 1. Nahraďte kód v *Module1.vb* souboru následujícím kódem:
 
@@ -72,4 +74,4 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
 
 2. Klikněte pravým tlačítkem na libovolný uzel XML literál XML nebo import oboru názvů XML a vyberte **zobrazit v Průzkumníkovi schémat**.
 
-    **Průzkumníka schémat XML** se zobrazí vedle souboru jazyka Visual Basic, který má literál XML, které jsou přidružené k sadě schémat XML.
+   **Průzkumníka schémat XML** se zobrazí vedle souboru jazyka Visual Basic, který má literál XML, které jsou přidružené k sadě schémat XML.

@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710107"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983816"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Příručka pro správce aplikace Visual Studio 2017
+# <a name="visual-studio-administrator-guide"></a>Příručka správce sady Visual Studio
 
 V podnikovém prostředí je běžné, že správce systému nasadit zařízení pro koncové uživatele ze sdílené síťové složce nebo s použitím softwaru pro správu systému. Jsme navrhli tak instalačního modulu Visual Studio pro podporu nasazení v podniku, že správci systému možnost vytvářet instalace umístění v síti, předem nakonfigurovat výchozí nastavení instalace, nasazení během procesu instalace kódy product key a po úspěšné zavedení spravovat aktualizace produktu. Tato příručka pro správce poskytuje pokyny založené na scénářích pro rozsáhlá nasazení v síťovém prostředí.
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Nasazení v podnikovém prostředí sady Visual Studio 2017
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Nasazení v podnikovém prostředí sady Visual Studio
 
-Visual Studio 2017 můžete nasadit do klientských pracovních stanic tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/productinfo/vs2017-system-requirements-vs). Jestli nasazujete prostřednictvím softwaru, jako je System Center nebo dávkového souboru, je obvykle vhodné kvůli tomu provádět následující kroky:
+Visual Studio lze nasadit do klientských pracovních stanic tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/productinfo/vs2017-system-requirements-vs). Jestli nasazujete prostřednictvím softwaru, jako je System Center nebo dávkového souboru, je obvykle vhodné kvůli tomu provádět následující kroky:
 
 1. [Vytvoření sdílené síťové složky, která obsahuje soubory produktu Visual Studio](create-a-network-installation-of-visual-studio.md) do umístění v síti.
 
@@ -47,14 +47,14 @@ Visual Studio 2017 můžete nasadit do klientských pracovních stanic tak dlouh
 8. [Aktualizujte vaše umístění v síti s nejnovějšími aktualizacemi](update-a-network-installation-of-visual-studio.md) do sady Visual Studio spuštěním příkazu, který jste použili v kroku 1 v pravidelných intervalech a přidejte aktualizované součásti.
 
 > [!IMPORTANT]
-> Všimněte si, že instalace ze sítě sdílené složky se "nezapomeňte" zdrojové umístění pocházejí. To znamená, že oprava klientského počítače může být nutné se vraťte do sdílené síťové složky, které klient původně nainstalovali. Pečlivě vašemu umístění v síti tak, aby se budou přizpůsobovat dostupnému prostoru životního cyklu, které plánujete mít Visual Studio 2017 klientů se systémy ve vaší organizaci.
+> Všimněte si, že instalace ze sítě sdílené složky se "nezapomeňte" zdrojové umístění pocházejí. To znamená, že oprava klientského počítače může být nutné se vraťte do sdílené síťové složky, které klient původně nainstalovali. Pečlivě vašemu umístění v síti tak, aby se budou přizpůsobovat dostupnému prostoru životního cyklu, které plánujete mít Visual Studio klientů se systémy ve vaší organizaci.
 
 ## <a name="use-visual-studio-tools"></a>Pomocí nástrojů sady Visual Studio
 
 Máme několik nástrojů, které vám pomůžou [zjišťovat a spravovat nainstalované instance sady Visual Studio](tools-for-managing-visual-studio-instances.md) na klientských počítačích.
 
 > [!TIP]
-> Kromě dokumentaci v příručce pro správce, je dobré zdroje informací o instalaci sady Visual Studio 2017 [archivy instalační program Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> Kromě dokumentaci v příručce pro správce, je dobré zdroje informací o instalaci sady Visual Studio [archivy instalační program Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="specify-customer-feedback-settings"></a>Určení nastavení zpětné vazby zákazníka
 
@@ -74,8 +74,8 @@ Další informace o nastavení zpětné vazby zákazníka, najdete v článku [p
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio 2017](install-visual-studio.md)
-* [Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalace sady Visual Studio](install-visual-studio.md)
+* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
   * [Příklady parametrů příkazového řádku](command-line-parameter-examples.md)
   * [Referenční dokumentace úlohy a ID komponenty](workload-and-component-ids.md)
 * [Vytvoření založené na síťové instalace sady Visual Studio](create-a-network-installation-of-visual-studio.md)

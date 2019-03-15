@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737010"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983972"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace na nejnovější verzi sady Visual Studio
 
@@ -82,7 +82,7 @@ Můžete si vyhledejte aktualizaci a potom nainstalovat na panelu nabídek v sad
 
 ### <a name="use-the-visual-studio-installer"></a>Použití instalačního programu sady Visual Studio
 
-Stejně jako v předchozích verzích sady Visual Studio 2017 slouží k instalaci aktualizace instalačního programu sady Visual Studio.
+Stejně jako v dřívějších verzích sady Visual Studio můžete použít instalační program sady Visual Studio pro instalaci aktualizace.
 
 1. Uložte si práci.
 
@@ -150,14 +150,14 @@ Pokud vyberete možnost Ignorovat upozornění, Visual Studio zastaví, abych ho
 
    Zvolte **aktualizace** tlačítko Instalovat aktualizace.
 
-     ![Aktualizace sady Visual Studio 2017 s použitím instalačního programu sady Visual Studio](media/update-visual-studio.png "aktualizace sady Visual Studio 2017 s použitím instalačního programu sady Visual Studio")
+     ![Aktualizace sady Visual Studio 2017 s použitím instalačního programu sady Visual Studio](media/update-visual-studio.png "aktualizace sady Visual Studio pomocí instalačního programu sady Visual Studio")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 
-* [Úpravy sady Visual Studio 2017](modify-visual-studio.md)
-* [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
+* [Úpravy sady Visual Studio](modify-visual-studio.md)
+* [Odinstalace sady Visual Studio](uninstall-visual-studio.md)
 * [Aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update)
 
 ::: moniker-end

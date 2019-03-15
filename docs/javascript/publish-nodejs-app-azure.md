@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f486d88ebac42ba0f9c9f338ee9fd81b56c820cf
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021868"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070305"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikování aplikace v Node.js do Azure (App Linux Service)
 
@@ -36,15 +36,44 @@ V tomto kurzu se naučíte:
 > * Vytvoření služby App Service Linuxu v Azure
 > * Nasazení do systému Linux
 
+## <a name="prerequisites"></a>Požadavky
+
+* Musíte mít nainstalovanou sadu Visual Studio a úlohy pro vývoj Node.js. 
+
+    ::: moniker range=">=vs-2019"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, pokračujte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
+
+    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+
+    ![Úloha Node.js v instalačním programu VS](../ide/media/quickstart-nodejs-workload.png)
+
+* Je nutné mít nainstalovaný modul runtime Node.js.
+
+    Pokud ho nemáte nainstalovaný, nainstalujte si verzi LTS z webu [Node.js](https://nodejs.org/en/download/). Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud se nainstalovaný modul runtime nerozpozná, můžete projekt nakonfigurovat na stránce vlastností pomocí odkazu na nainstalovaný modul runtime (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **Vlastnosti**).
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Vytvoření projektu Node.js ke spuštění v Azure
 
-1. Vytvořit nové TypeScript Express aplikace s použitím **souboru** > **nový projekt** dialogové okno.
+1. Otevřít Visual Studio.
 
-1. V části **TypeScript** uzlu, vyberte **aplikaci základní Node.js Express 4**.
+1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
+
+1. Vytvoření nové aplikace TypeScript Express.
+
+    ::: moniker range=">=vs-2019"
+    V **vytvořte nový projekt** dialogovém okně **javascript** do vyhledávacího pole filtrovat výsledky a pak zvolte **aplikace základní Azure Node.js Express 4**a klikněte na tlačítko **OK**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **aplikace základní Azure Node.js Express 4**, klikněte na tlačítko **OK**.
 
     ![Vytvoření nové aplikace TypeScript Express](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    Pokud se nezobrazí **aplikace základní Azure Node.js Express 4** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
 
-1. Klikněte na tlačítko **OK** pro vytvoření projektu v sadě Visual Studio.
+    Visual Studio vytvoří projekt a otevře jej v okně Průzkumník řešení (pravé podokno).
 
 1. Stisknutím klávesy **F5** k vytvoření a spuštění aplikace a ujistěte se, že všechno běží podle očekávání.
 
@@ -145,7 +174,7 @@ Chcete-li nastavte GitHub pro Visual Studio:
 
 * Pokud je node.exe zpracování zemře (to znamená, že dojde k neošetřené výjimce), se restartuje kontejner.
 * Při spuštění kontejneru spustí prostřednictvím různých heuristiky zjistit, jak spustit proces Node.js. Podrobnosti implementace, můžete zobrazit v [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
-* Můžete připojit ke spuštěnému kontejneru pomocí protokolu SSH pro šetření. To se snadno provádí pomocí webu Azure Portal. Vyberte službu App Service a přejděte dolů v seznamu nástrojů, dokud nebude dosaženo **SSH** pod **nástroje pro vývoj** oddílu.
+* Můžete připojit ke spuštěnému kontejneru pomocí protokolu SSH pro šetření. To se snadno provádí pomocí webu Azure portal. Vyberte službu App Service a přejděte dolů v seznamu nástrojů, dokud nebude dosaženo **SSH** pod **nástroje pro vývoj** oddílu.
 * Pokud chcete pomoci při řešení potíží, přejděte na **diagnostické protokoly** nastavení pro službu App Service a změnit **protokolování kontejneru Dockeru** nastavení z **vypnout** k  **Systém souborů**. Protokoly se vytvoří v kontejneru v rámci */home/LogFiles/*_docker.log* a je přístupný na pole pomocí SSH nebo FTP (S).
 * Název vlastní domény může být přiřazen k lokalitě, místo *. azurewebsites.net URL přiřazené ve výchozím nastavení. Další podrobnosti najdete v tématu [mapování vlastní domény](/azure/app-service/app-service-web-tutorial-custom-domain).
 * Nasazení do přípravného lokalitě k dalšímu testování před přesunutím do produkčního prostředí je osvědčeným postupem. Podrobnosti o tom, jak nastavit tuto konfiguraci najdete v tématu [vytvoření přípravných prostředí](/azure/app-service/web-sites-staged-publishing).

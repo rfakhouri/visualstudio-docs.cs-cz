@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c595465a9791f00036fb5358c49afae808dce13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932713"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983842"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Přidávání příkazů a gest do diagramů závislostí
 
@@ -54,7 +54,17 @@ Nejrychlejší způsob vytváření rozšíření je použití šablony projektu
 
     [Definování obslužné rutiny gesta](#gesture)
 
+::: moniker range="vs-2017"
+
 6. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte *VSIX* ve *bin* adresáře. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, zvolte **rozšíření a aktualizace** na **nástroje** nabídky.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte *VSIX* ve *bin* adresáře. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, zvolte **spravovat rozšíření** na **rozšíření** nabídky.
+
+::: moniker-end
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Přidání příkazu nebo gesta do samostatného souboru VSIX
 
@@ -104,11 +114,9 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje příkazy, validátory vrstvy
 
      Viz také [navigace a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
-6.  Chcete-li otestovat funkci, stiskněte kombinaci kláves CTRL + F5 nebo F5. Otevře se experimentální instanci sady Visual Studio. V takovém případě vytvořte nebo otevřete diagram závislostí.
+6.  Chcete-li otestovat funkci, stiskněte **Ctrl**+**F5** nebo **F5**. Otevře se experimentální instanci sady Visual Studio. V takovém případě vytvořte nebo otevřete diagram závislostí.
 
 7.  Chcete-li nainstalovat VSIX v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte **VSIX** soubor **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows.
-
-     Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.
 
 ##  <a name="command"></a> Definování příkazu nabídky
 

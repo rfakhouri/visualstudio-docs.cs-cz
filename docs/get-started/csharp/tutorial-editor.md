@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722496"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069668"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
@@ -35,9 +35,21 @@ Tento článek předpokládá, že jste již obeznámeni s C#. Pokud si nejste, 
 
 Začněte tím, že vytváří se nový soubor a přidat nějaký kód do něj.
 
-1. Otevřete sadu Visual Studio a od **souboru** nabídku v panelu nabídky zvolte **nový** > **souboru**.
+::: moniker range="vs-2017"
 
-1. V **nový soubor** dialogovém okně **Obecné** kategorie, zvolte **třídy Visual C#** a klikněte na tlačítko **otevřít**.
+1. Otevřít Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otevřít Visual Studio. Stisknutím klávesy **Esc** nebo klikněte na tlačítko **pokračovat bez kódu** v okně Start otevřete vývojové prostředí.
+
+::: moniker-end
+
+2. Z **souboru** nabídku v panelu nabídky zvolte **nový** > **souboru**.
+
+3. V **nový soubor** dialogovém okně **Obecné** kategorie, zvolte **třídy Visual C#** a klikněte na tlačítko **otevřít**.
 
    Nový soubor se otevře v editoru pomocí kostru třídy C#. (Všimněte si, že nemáme vytvořit úplný projekt aplikace Visual Studio získáte některé výhody, že nabízí editor kódu; vše, co potřebujete je soubor kódu.)
 

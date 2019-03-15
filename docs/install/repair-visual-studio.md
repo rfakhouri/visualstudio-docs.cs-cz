@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a047512b8f6434661193f088f981c52c0ad118
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d358d4f608437ad7ca004d4adef614632a123012
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939434"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983198"
 ---
-# <a name="repair-visual-studio-2017"></a>Opravte Visual Studio 2017
+# <a name="repair-visual-studio"></a>Oprava sady Visual Studio
 
 Někdy instalaci sady Visual Studio stává poškozené. Toto můžete opravit opravu.
 
@@ -39,7 +39,7 @@ Někdy instalaci sady Visual Studio stává poškozené. Toto můžete opravit o
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
-* [Odstraňování problémů instalace a upgradu sady Visual Studio 2017](troubleshooting-installation-issues.md)
+* [Instalace sady Visual Studio](install-visual-studio.md)
+* [Aktualizace sady Visual Studio](update-visual-studio.md)
+* [Odinstalace sady Visual Studio](uninstall-visual-studio.md)
+* [Odstraňování problémů instalace a upgradu sady Visual Studio](troubleshooting-installation-issues.md)

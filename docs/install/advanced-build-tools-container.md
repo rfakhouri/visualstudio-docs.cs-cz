@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90969307d328519c95997be2ff0e8fad87fdc0a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2db56b4957165a8608e0ed61f07ae0ff64c403ef
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939798"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983297"
 ---
 # <a name="advanced-example-for-containers"></a>Rozšířený příklad pro kontejnery
 
@@ -124,4 +124,4 @@ Po poslední řádek nedokončí, otevřete na svém počítači "% TEMP%\vslogs
 
 * [Instalace Build Tools do kontejneru](build-tools-container.md)
 * [Známé problémy s kontejnery](build-tools-container-issues.md)
-* [ID pracovního vytížení a komponenta Visual Studio 2017 nástroje sestavení](workload-component-id-vs-build-tools.md)
+* [ID pracovního vytížení a komponenta Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

@@ -1,6 +1,6 @@
 ---
 title: Známé problémy s kontejnery
-description: Další informace o známých problémech, které mohou nastat při instalaci sady Visual Studio vytvářet nástroje 2017 do kontejneru Windows.
+description: Další informace o známých problémech, které mohou nastat, když instalujete Visual Studio Build Tools do kontejneru Windows.
 ms.date: 04/18/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -10,16 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1fdfcc71f2bd17bf8ab4be0796350799af2c35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935014"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983699"
 ---
 # <a name="known-issues-for-containers"></a>Známé problémy s kontejnery
 
 Existuje několik problémů při instalaci sady Visual Studio do kontejneru Dockeru.
+
+::: moniker range="vs-2017"
 
 ## <a name="windows-container"></a>Kontejner Windows
 
@@ -36,6 +38,8 @@ Následující známé problémy při instalaci sady Visual Studio vytvářet n�
 
 * Nelze nainstalovat Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) na mcr<span></span>.microsoft.com/windows/servercore:1809 nebo novější. Další informace naleznete v tématu https://aka.ms/setup/containers/servercore1809.
 
+::: moniker-end
+
 ## <a name="build-tools-container"></a>Sestavení nástroje kontejneru
 
 Při použití nástroje pro sestavení kontejneru, může dojít k následující známé problémy. Zobrazit, zda byly vyřešeny problémy nebo pokud existují další známé problémy, navštivte https://developercommunity.visualstudio.com.
@@ -48,4 +52,4 @@ Při použití nástroje pro sestavení kontejneru, může dojít k následujíc
 
 * [Instalace Build Tools do kontejneru](build-tools-container.md)
 * [Rozšířený příklad pro kontejnery](advanced-build-tools-container.md)
-* [ID pracovního vytížení a komponenta Visual Studio 2017 nástroje sestavení](workload-component-id-vs-build-tools.md)
+* [ID pracovního vytížení a komponenta Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccf63c4b28b8181bc3d652067ac6bdef1020f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 05164cf426c8156000377d980a40ae9f54d13c4b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946886"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57873512"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 
@@ -25,9 +25,9 @@ ModelBus umožňuje vytvářet jedinečné odkazu na model nebo na konkrétní e
 
 Další informace a ukázky kódu najdete v tématu:
 
--   [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)
+-   [Postupy: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Sada Modeling SDK pro Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)
+-   [Sada Modeling SDK pro Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -519,5 +519,5 @@ Když kliknete pravým tlačítkem myši diagramem definice DSL, klikněte na tl
 ## <a name="see-also"></a>Viz také:
 
 - [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Postupy: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Použití prvku Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

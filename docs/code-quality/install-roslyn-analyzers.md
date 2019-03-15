@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222932"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982932"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalace analyzátorů .NET Compiler Platform
 
@@ -37,12 +37,27 @@ Visual Studio obsahuje základní sadu .NET Compiler Platform (*Roslyn*) analyz�
 
 ## <a name="to-install-vsix-analyzers"></a>Chcete-li nainstalovat VSIX analyzátory
 
+::: moniker range="vs-2017"
+
 1. V sadě Visual Studio, vyberte **nástroje** > **rozšíření a aktualizace**.
 
    **Rozšíření a aktualizace** zobrazí se dialogové okno.
 
    > [!NOTE]
    > Alternativně lze vyhledat a stáhnout přímo z rozšíření analyzátoru [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. V sadě Visual Studio, vyberte **rozšíření** > **spravovat rozšíření**.
+
+   **Spravovat rozšíření** zobrazí se dialogové okno.
+
+   > [!NOTE]
+   > Alternativně lze vyhledat a stáhnout přímo z rozšíření analyzátoru [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
 
 2. Rozbalte **Online** v levém podokně a pak vyberte **Visual Studio Marketplace**.
 
@@ -64,7 +79,17 @@ Visual Studio obsahuje základní sadu .NET Compiler Platform (*Roslyn*) analyz�
 
 8. Znovu otevřete Visual Studio.
 
+::: moniker range="vs-2017"
+
 Pokud chcete zkontrolovat, zda je rozšíření nainstalované, vyberte **nástroje** > **rozšíření a aktualizace**. V **rozšíření a aktualizace** dialogové okno, vyberte **nainstalováno** kategorie na levé straně a poté vyhledejte rozšíření podle názvu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Pokud chcete zkontrolovat, zda je rozšíření nainstalované, vyberte **rozšíření** > **spravovat rozšíření**. V **spravovat rozšíření** dialogové okno, vyberte **nainstalováno** kategorie na levé straně a poté vyhledejte rozšíření podle názvu.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Další kroky
 

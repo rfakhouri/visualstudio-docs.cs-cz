@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915618"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983101"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Nasazení rozšíření pro modelování vrstev
 
@@ -37,9 +37,19 @@ Rozšíření je kompilováno do souboru VSIX, který si můžete nainstalovat n
 
 ### <a name="to-uninstall-the-extension"></a>Chcete-li odinstalovat rozšíření
 
-1.  V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.
+::: moniker range="vs-2017"
 
-2.  Klikněte na název rozšíření a pak klikněte na tlačítko **odinstalovat**.
+1. V sadě Visual Studio, zvolte **nástroje** > **rozšíření a aktualizace**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. V sadě Visual Studio, zvolte **rozšíření** > **spravovat rozšíření**.
+
+::: moniker-end
+
+2. Klikněte na název rozšíření a pak klikněte na tlačítko **odinstalovat**.
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Nainstalovat rozšíření serveru Team Foundation Server
 

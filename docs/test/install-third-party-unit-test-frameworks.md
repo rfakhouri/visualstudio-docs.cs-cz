@@ -1,5 +1,5 @@
 ---
-title: Instalace systémů testů jednotek od třetích stran
+title: Instalace systémů testování částí od třetích stran
 ms.date: 06/07/2018
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316142"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982919"
 ---
 # <a name="install-unit-test-frameworks"></a>Nainstalujte rozhraní pro testování částí
 
@@ -26,9 +26,19 @@ Můžete stáhnout a nainstalovat rozhraní pro testování jednotky třetí str
 
 ### <a name="install-from-visual-studio"></a>Instalace ze sady Visual Studio
 
-1. Zvolte **nástroje** ve standardní nabídce a klikněte na tlačítko **rozšíření a aktualizace**.
+::: moniker range="vs-2017"
 
-2. Rozbalte **Online** > **Visual Studio Marketplace** > **nástroje**. Zvolte **testování**.
+1. Zvolte **nástroje** > **rozšíření a aktualizace**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Zvolte **rozšíření** > **spravovat rozšíření**.
+
+::: moniker-end
+
+2. Rozbalte **Online** > **Visual Studio Marketplace** > **nástroje**a klikněte na tlačítko **testování**.
 
 3. Procházejte seznamem a najít rozhraní framework.
 

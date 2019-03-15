@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0036bb9bf8ef6d0c09fddc2b8ac0a4977c3674c
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323429"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983194"
 ---
 # <a name="extract-an-interface-refactoring"></a>Rozhraní refaktoring extrahovat
 
@@ -72,11 +72,17 @@ Tento refaktoring platí pro:
 
    - C#:
 
-      ![Výsledné třídy – C# ](media/extractinterface-class-cs.png) ![výsledný rozhraní -C#](media/extractinterface-interface-cs.png)
+      ![Výsledné třídy –C#](media/extractinterface-class-cs.png)
+      
+      
+      ![Výsledný rozhraní-C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-      ![Výsledné třídy – Visual Basic](media/extractinterface-class-vb.png) ![výsledný rozhraní - jazyka Visual Basic](media/extractinterface-interface-vb.png)
+      ![Výsledné třídy – Visual Basic](media/extractinterface-class-vb.png)
+      
+      
+      ![Výsledný rozhraní - jazyka Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Viz také:
 

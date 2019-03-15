@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 6775f2fc24672c2bd7b798869085ea8e6170f21c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768382"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070318"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a Express aplikace v sadě Visual Studio
 
@@ -48,11 +48,18 @@ Express je architektura webových aplikací, použit jako architektura serveru p
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Je nutné mít nainstalovanou sadu Visual Studio 2017 a úlohu Vývoj aplikací Node.js.
+* Musíte mít nainstalovanou sadu Visual Studio a úlohy pro vývoj Node.js.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    ::: moniker range=">=vs-2019"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, pokračujte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
 
-    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **souboru**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+
+    ![Úloha Node.js v instalačním programu VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Je nutné mít nainstalovaný modul runtime Node.js.
 
@@ -66,13 +73,19 @@ Spravuje soubory pro jednu aplikaci v sadě Visual Studio *projektu*. Projekt ob
 
 V tomto kurzu začnete s Jednoduchý projekt obsahující kód pro Node.js a express aplikace.
 
-1. Otevřete Visual Studio 2017.
+1. Otevřít Visual Studio.
 
 1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
-1. V dialogovém okně **Nový projekt** v levém podokně rozbalte položku **JavaScript** a zvolte **Node.js**. V prostředním podokně vyberte **základní Azure aplikaci Node.js Express 4** a klikněte na tlačítko **OK**.
+1. Vytvořte nový projekt.
 
-     Pokud se nezobrazí **základní Azure aplikaci Node.js Express 4** šablony projektu, je nutné nainstalovat **vývoj v Node.js** úlohy první (viz požadavky na pokyny).
+    ::: moniker range=">=vs-2019"
+    V **vytvořte nový projekt** dialogovém okně **javascript** do vyhledávacího pole filtrovat výsledky a pak zvolte **aplikace základní Azure Node.js Express 4**a klikněte na tlačítko **OK**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **aplikace základní Azure Node.js Express 4**, klikněte na tlačítko **OK**.
+    ::: moniker-end
+    Pokud se nezobrazí **aplikace základní Azure Node.js Express 4** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
 
     Visual Studio vytvoří nové řešení a otevře projekt v pravém podokně. *App.js* soubor projektu se otevře v editoru (levé podokno).
 

@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936197"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069889"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Postupy: Vytvoření vlastního protokolu HTTP text editoru pro Editor testu výkonnosti webu
 
@@ -31,9 +31,7 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
 
 ## <a name="create-a-windows-control-library-project"></a>Vytvoření projektu knihovny ovládacích prvků Windows
 
-### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Vytvořte uživatelský ovládací prvek pomocí projektu knihovny ovládacích prvků Windows
-
-1. V sadě Visual Studio na **souboru** nabídce zvolte **nový** a pak vyberte **projektu**.
+1. V sadě Visual Studio na **souboru** nabídce zvolte **nový** > **projektu**.
 
     **Nový projekt** se zobrazí dialogové okno.
 
@@ -137,27 +135,27 @@ private MessageEditorControl messageEditorControl
 
  Po dokončení úprav textu řetězce a při kliknutí **OK** v dialogovém okně modulu plug-in <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> je volána k získání upraveného textu jako řetězce a aktualizaci **tělo řetězce** v požadavku na webu Editoru testování výkonu.
 
-### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Chcete-li vytvořit třídu a implementace kódu rozhraní IStringHttpBodyEditorPlugin
+### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Vytvoření třídy a implementovat rozhraní IStringHttpBodyEditorPlugin
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt Knihovna ovládacích prvků formulářů Windows a vyberte **přidat novou položku**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt Knihovna ovládacích prvků formulářů Windows a vyberte **přidat novou položku**.
 
-2.  **Přidat novou položku** se zobrazí dialogové okno.
+   **Přidat novou položku** se zobrazí dialogové okno.
 
-3.  Vyberte **třídy**.
+2. Vyberte **třídy**.
 
-4.  V **název** textové pole, zadejte smysluplný název pro třídu, například `MessageEditorPlugins`.
+3. V **název** textové pole, zadejte smysluplný název pro třídu, například `MessageEditorPlugins`.
 
-5.  Zvolte **přidat**.
+4. Zvolte **přidat**.
 
-     Class1 je přidána do projektu a zobrazí v editoru kódu.
+   Class1 je přidána do projektu a zobrazí v editoru kódu.
 
-6.  V editoru kódu přidejte následující příkaz using:
+5. V editoru kódu přidejte následující `using` – příkaz:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-7.  Napište nebo zkopírujte následující kód k vytvoření instance třídy XmlMessageEditor z <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> rozhraní a implementuje požadované metody:
+6. Vložte následující kód k implementaci rozhraní:
 
     ```csharp
     /// <summary>
@@ -185,7 +183,7 @@ private MessageEditorControl messageEditorControl
         /// plugin dialog which provides OK and Cancel buttons.
         /// </summary>
         /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-        /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+        /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
         /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
         public object CreateEditor(string contentType, string initialValue)
         {
@@ -252,11 +250,11 @@ Po dokončení úprav textu řetězce a při kliknutí **OK** v dialogovém okn�
             }
 
             /// <summary>
-            /// Create a UserControl to edit the specified bytes.  This control will be hosted in the
+            /// Create a UserControl to edit the specified bytes. This control will be hosted in the
             /// plugin dialog which provides OK and Cancel buttons.
             /// </summary>
             /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-            /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+            /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
             /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
             public object CreateEditor(string contentType, byte[] initialValue)
             {
@@ -280,36 +278,32 @@ Po dokončení úprav textu řetězce a při kliknutí **OK** v dialogovém okn�
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Vytvoření a nasazení modulů plug-in
 
-### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>K vytvoření a nasazení výsledné dll pro IStringHttpBodyEditorPlugin a IBinaryHttpBodyEditorPlugin
+1. Na **sestavení** nabídce zvolte **sestavení \<název projektu ovládacího prvku knihovny formulář Windows >**.
 
-1.  Na **sestavení** nabídce zvolte **sestavení \<název projektu ovládacího prvku knihovny formulář Windows >**.
+2. Zavřete všechny instance sady Visual Studio.
 
-2.  Zavřete všechny instance sady Visual Studio.
+   > [!NOTE]
+   > Zavření sady Visual Studio zajišťuje, že *.dll* souboru není uzamčen před pokusem o zkopírování.
 
-    > [!NOTE]
-    > Zavření sady Visual Studio zajišťuje, že *.dll* souboru není uzamčen před pokusem o zkopírování.
+3. Zkopírujte výsledný *.dll* soubor z projektu *bin\debug* složky (například *MessageEditors.dll*) k *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
-3.  Zkopírujte výsledný *.dll* soubor z projektů *bin\debug* složky (například *MessageEditors.dll*) k *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+4. Otevřít Visual Studio.
 
-4.  Otevřít Visual Studio.
-
-     *.Dll* je teď zaregistrované pomocí sady Visual Studio.
+   *.Dll* je teď zaregistrované pomocí sady Visual Studio.
 
 ## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Zkontrolujte moduly plug-in pomocí testu výkonnosti webu
 
-### <a name="to-test-your-plug-ins"></a>K otestování modulů plug-in
+1. Vytvoření testovacího projektu.
 
-1.  Vytvoření testovacího projektu.
+2. Vytvoření testu výkonnosti webu a zadejte adresu URL v prohlížeči na webovou službu.
 
-2.  Vytvoření testu výkonnosti webu a zadejte adresu URL v prohlížeči na webovou službu.
+3. Po dokončení nahrávání v editoru testu výkonnosti webu, rozbalte požadavek webové služby a vyberte buď **tělo řetězce** nebo **binární tělo**.
 
-3.  Po dokončení nahrávání v editoru testu výkonnosti webu, rozbalte požadavek webové služby a vyberte buď **tělo řetězce** nebo **binární tělo**.
+4. V **vlastnosti** okna, vyberte text řetězce nebo binární tělo a zvolte tři tečky **(...)** .
 
-4.  V okně Vlastnosti vyberte text řetězce nebo binární tělo a zvolte tři tečky **(...)** .
+   **Upravit Data těla protokolu HTTP** se zobrazí dialogové okno.
 
-     **Upravit Data těla protokolu HTTP** se zobrazí dialogové okno.
-
-5.  Teď můžete data upravit a zvolit **OK**. To vyvolá vhodnou metodu GetNewValue k aktualizaci obsahu v <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5. Teď můžete data upravit a zvolit **OK**. To vyvolá vhodnou metodu GetNewValue k aktualizaci obsahu v <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
 ## <a name="compile-the-code"></a>Kompilace kódu
 

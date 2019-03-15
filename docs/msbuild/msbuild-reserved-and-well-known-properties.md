@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eefff14fd2277f791b61677fb9a23894c974c353
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632391"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070136"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Nástroj MSBuild vyhrazené a dobře známé vlastnosti
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje sadu předdefinovaných vlastností, které ukládají informace o souboru projektu a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] binární soubory. Tyto vlastnosti jsou vyhodnocovány stejným způsobem jako ostatní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vlastnosti. Chcete-li například použít `MSBuildProjectFile` vlastnost, typ `$(MSBuildProjectFile)`.
@@ -57,6 +57,7 @@ ms.locfileid: "56632391"
 | `MSBuildThisFileName` | Vyhrazeno | Část názvu souboru `MSBuildThisFileFullPath`, bez přípony názvu souboru. |
 | `MSBuildToolsPath` | Vyhrazeno | Instalační cesta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verzi, která je přidružená hodnota `MSBuildToolsVersion`.<br /><br /> Nezahrnují v cestě konečné zpětné lomítko.<br /><br /> Tuto vlastnost nelze přepsat. |
 | `MSBuildToolsVersion` | Vyhrazeno | Verze [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nástrojů, která se používá k sestavení projektu.<br /><br /> Poznámka: [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Sada nástrojů obsahuje úkoly, cíle a nástroje, které slouží k sestavení aplikace. Mezi tyto nástroje patří kompilátory jako *csc.exe* a *vbc.exe*. Další informace najdete v tématu [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), a [standardní a vlastní konfigurace sady nástrojů](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildVersion` | Vyhrazeno | Verze [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sloužící k sestavení projektu. <br /><br/> Tato vlastnost nemůže být přepsáno, jinak se chybová zpráva `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` je vrácena. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Názvy, které jsou v konfliktu s elementy MSBuild
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909684"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069772"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 
@@ -50,7 +50,7 @@ K dokončení tohoto návodu budete potřebovat následující komponenty:
 
 Předchozí znalosti následujících konceptů je také užitečné, ale nejsou vyžadovány k dokončení návodu:
 
-- Služby WCF Data Services. Další informace najdete v tématu [přehled](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [Služby WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modely dat v [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,21 +60,9 @@ Předchozí znalosti následujících konceptů je také užitečné, ale nejsou
 
 ## <a name="create-the-service-project"></a>Vytvořte projekt služby
 
-Spuštěním tohoto průvodce vytvořením projektu pro službu WCF Data Service:
+1. Spuštěním tohoto průvodce vytvořením C# nebo Visual Basic **webová aplikace ASP.NET** projektu. Pojmenujte projekt **AdventureWorksService**.
 
-1. Spusťte Visual Studio.
-
-2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
-
-3. Rozbalte **Visual C#** nebo **jazyka Visual Basic**a pak vyberte **webové**.
-
-4. Vyberte **webová aplikace ASP.NET** šablony projektu.
-
-5. V **název** zadejte **AdventureWorksService** a klikněte na tlačítko **OK**.
-
-     Visual Studio vytvoří **AdventureWorksService** projektu.
-
-6. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Default.aspx** a vyberte **odstranit**. Tento soubor není nutné v tomto názorném postupu.
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Default.aspx** a vyberte **odstranit**. Tento soubor není nutné v tomto návodu.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Vytvoření datového modelu Entity pro službu
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907799"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983790"
 ---
 # <a name="manage-external-tools"></a>Správa externích nástrojů
 
@@ -24,13 +24,24 @@ Můžete volat z externích nástrojů v sadě Visual Studio s použitím **nás
 
 ## <a name="tools-available-on-the-tools-menu"></a>Nástroje, které jsou k dispozici v nabídce Nástroje
 
-**Nástroje** nabídka obsahuje několik předdefinovaných příkazů, jako například:
+**Nástroje** nabídka obsahuje několik předdefinovaných příkazů, včetně:
+
+::: moniker range="vs-2017"
 
 * **Rozšíření a aktualizace** k [spravovat rozšíření sady Visual Studio](finding-and-using-visual-studio-extensions.md)
 * **Správce fragmentů kódu** k [uspořádání fragmenty kódu](code-snippets.md)
-* **PreEmptive ochranu – řešení Dotfuscator** spustit [nástroj Dotfuscator Community Edition (CE)](dotfuscator/index.md) Pokud je [nainstalovaná](dotfuscator/install.md)
 * **Vlastní** k [přizpůsobení nabídek a panelů nástrojů](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Možnosti** k [nastavit širokou škálu různých možností pro rozhraní IDE sady Visual Studio a další nástroje](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Správce fragmentů kódu** k [uspořádání fragmenty kódu](code-snippets.md)
+* **Vlastní** k [přizpůsobení nabídek a panelů nástrojů](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Možnosti** k [nastavit širokou škálu různých možností pro rozhraní IDE sady Visual Studio a další nástroje](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Přidání nových nástrojů v nabídce Nástroje
 

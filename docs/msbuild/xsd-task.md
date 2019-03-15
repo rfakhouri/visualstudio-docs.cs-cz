@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e83f21ab05e298635c13f8e2bddb72520459ab1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631169"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982984"
 ---
 # <a name="xsd-task"></a>XSD – úloha
 Zabalí nástroj definici schématu XML (*xsd.exe*), který generuje schématu nebo třída soubory ze zdroje.
 
 > [!NOTE]
-> V sadě Visual Studio 2017, projekt C++ podpora *xsd.exe* je zastaralý. Můžete dál používat **Microsoft.VisualC.CppCodeProvider** rozhraní API tak, že ručně přidáte *CppCodeProvider.dll* do mezipaměti GAC.
+> Spouští se v sadě Visual Studio 2017, projekt C++ podporu pro *xsd.exe* je zastaralý. Můžete dál používat **Microsoft.VisualC.CppCodeProvider** rozhraní API tak, že ručně přidáte *CppCodeProvider.dll* do mezipaměti GAC.
 
 ## <a name="parameters"></a>Parametry
  Následující tabulka popisuje parametry **XSD** úloh.

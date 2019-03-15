@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9259b5a813dc09389c57288e13eafd5a3adb0064
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 426a3b57f7645cf0d0241ce0f382f2507351ec18
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55770567"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069980"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a React v sadě Visual Studio
 
@@ -57,11 +57,18 @@ webpacku sady Javascriptové soubory, můžete spustit v prohlížeči. Můžete
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Je nutné mít nainstalovanou sadu Visual Studio 2017 a úlohu Vývoj aplikací Node.js.
+* Musíte mít nainstalovanou sadu Visual Studio a úlohy pro vývoj Node.js.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    ::: moniker range=">=vs-2019"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, pokračujte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
 
-    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, vyberte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+
+    ![Úloha Node.js v instalačním programu VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Je nutné mít nainstalovaný modul runtime Node.js.
 
@@ -73,13 +80,19 @@ webpacku sady Javascriptové soubory, můžete spustit v prohlížeči. Můžete
 
 Nejprve vytvoříte projekt webové aplikace Node.js.
 
-1. Otevřete Visual Studio 2017.
+1. Otevřít Visual Studio.
 
 1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
-1. V dialogovém okně **Nový projekt** v levém podokně rozbalte položku **JavaScript** a zvolte **Node.js**. V prostředním podokně zvolte **Prázdná webová aplikace Node.js**, zadejte název **NodejsWebAppBlank** a zvolte **OK**.
+1. Vytvořte nový projekt.
 
-     Pokud se šablona projektu **Prázdná webová aplikace Node.js** nezobrazuje, je nutné nejprve nainstalovat úlohu Vývoj aplikací Node.js.
+    ::: moniker range=">=vs-2019"
+    V **vytvořte nový projekt** dialogovém okně **javascript** do vyhledávacího pole filtrovat výsledky a pak zvolte **prázdná webová aplikace Node.js**a klikněte na tlačítko **OK**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **prázdná webová aplikace Node.js**, zadejte název **NodejsWebAppBlank**, klikněte na tlačítko **OK**.
+    ::: moniker-end
+    Pokud se nezobrazí **prázdná webová aplikace Node.js** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
 
     Visual Studio vytvoří nové řešení a otevře příslušný projekt.
 
@@ -377,7 +390,7 @@ V předchozí části jste připojili ladicí program ke kódu Node.js na stran�
 
     ![Připojení k procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    Pokud se v sadě Visual Studio otevřely Průzkumník modelu DOM a konzola jazyka JavaScript, je ladicí program správně připojený. Tyto ladicí nástroje se podobají nástrojům Chrome Developer Tools a nástrojům F12 pro Edge.
+    Pokud se v sadě Visual Studio otevřely Průzkumník modelu DOM a konzola jazyka JavaScript, je ladicí program správně připojený. Tyto nástroje pro ladění jsou podobné Chrome vývojářské nástroje a nástrojích F12 Tools pro Microsoft Edge.
 
     > [!NOTE]
     > Pokud se ladicí program nepřipojí a zobrazí se zpráva „Nelze připojit k procesu. Operace není v aktuálním stavu platná“, zavřete před spuštěním Chromu v režimu ladění všechny instance Chromu pomocí Správce úloh. Můžou být spuštěná rozšíření Chromu, která brání plnému režimu ladění.

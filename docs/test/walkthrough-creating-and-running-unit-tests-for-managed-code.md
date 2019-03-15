@@ -1,5 +1,5 @@
 ---
-title: Vytváření a spouštění testů jednotek pro spravovaný kód
+title: Vytváření a spouštění testů jednotek pro spravovaný kód
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922287"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069655"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Průvodce: Vytváření a spouštění testů jednotek pro spravovaný kód
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 
 Tento článek vás provede vytvořením, spuštěný, a přizpůsobením série jednotky testů pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód a Visual Studio **Průzkumníka testů**. Spustit u projektu C#, která je ve vývoji, vytvoříte testy, které testují jeho kód, spusťte testy a podívejte se na výsledky. Můžete změnit kód projektu a znovu spusťte testy.
 
@@ -35,28 +35,38 @@ Informace o tom, ke spuštění testů z příkazového řádku najdete v témat
 
 ## <a name="create-a-project-to-test"></a>Vytvoření projektu pro testování
 
+::: moniker range="vs-2017"
+
 1. Otevřít Visual Studio.
 
 2. Na **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
    Zobrazí se dialogové okno **Nový projekt**.
 
-3. V části **nainstalované šablony**, klikněte na tlačítko **Visual C#**.
+::: moniker-end
 
-4. V seznamu typů aplikací, klikněte na tlačítko **knihovny tříd**.
+::: moniker range=">=vs-2019"
 
-5. V **název** zadejte **Bank** a potom klikněte na tlačítko **OK**.
+1. Otevřít Visual Studio.
 
-   Nový projekt banka se vytvoří a zobrazí v **Průzkumníka řešení** s *Class1.cs* soubor je otevřen v editoru kódu.
+2. V okně Start zvolte **vytvořte nový projekt**.
+
+::: moniker-end
+
+3. Zvolte C# šablona projektu knihovny tříd.
+
+4. Pojmenujte projekt **Bank**a potom klikněte na tlačítko **OK** nebo **vytvořit**.
+
+   Projekt banky se vytvoří a zobrazí v **Průzkumníka řešení** s *Class1.cs* soubor je otevřen v editoru kódu.
 
    > [!NOTE]
    > Pokud *Class1.cs* nelze otevřít v editoru kódu, dvakrát klikněte na soubor *Class1.cs* v **Průzkumníka řešení** ho otevřete.
 
-6. Zkopírujte zdrojový kód z [ukázkový projekt testování částí](../test/sample-project-for-creating-unit-tests.md)a nahraďte původní obsah *Class1.cs* zkopírovaný kód.
+5. Zkopírujte zdrojový kód z [ukázkový projekt testování částí](../test/sample-project-for-creating-unit-tests.md)a nahraďte původní obsah *Class1.cs* zkopírovaný kód.
 
-7. Uložte soubor jako *BankAccount.cs*.
+6. Uložte soubor jako *BankAccount.cs*.
 
-8. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
+7. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
 
 Nyní máte projekt s názvem banka. Obsahuje zdrojový kód pro testování a nástroje a otestovat ho s. Obor názvů pro banku, BankAccountNS, obsahuje veřejnou třídu BankAccount, jejíž metody budete testovat v následujících postupech.
 
@@ -78,7 +88,7 @@ public void Debit(double amount)
 }
 ```
 
-## <a name="create-a-unit-test-project"></a>Vytvoření projektu testů jednotek
+## <a name="create-a-unit-test-project"></a>Vytvoření projektu testování částí
 
 1. Na **souboru** nabídce vyberte možnost **přidat** > **nový projekt**.
 
@@ -346,7 +356,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Opětovné testování, revize a analýza
 
-Předpokládejme je chyba v metodě v rámci testu a `Debit` i metoda nevyvolá <xref:System.ArgumentOutOfRangeException>, nevermind výstup správné zprávy s výjimkou. Testovací metoda není v současné době zpracovávat tento případ. Pokud `debitAmount` je hodnota platná (to znamená menší než zůstatek, ale větší než nula), žádná výjimka je zachycena, takže assert nikdy aktivuje. Zatím testovací metoda skončí úspěchem. To není správné, protože chcete, aby testovací metoda selhat, pokud není vyvolána žádná výjimka.
+Předpokládejme je chyba v metodě v rámci testu a `Debit` i metoda nevyvolá <xref:System.ArgumentOutOfRangeException>, nikdy nezapomeňte výstup správné zprávy s výjimkou. Testovací metoda není v současné době zpracovávat tento případ. Pokud `debitAmount` je hodnota platná (to znamená menší než zůstatek, ale větší než nula), žádná výjimka je zachycena, takže assert nikdy aktivuje. Zatím testovací metoda skončí úspěchem. To není správné, protože chcete, aby testovací metoda selhat, pokud není vyvolána žádná výjimka.
 
 Jedná se o chybu v testovací metodě. Chcete-li problém vyřešit, přidejte <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> uplatnit na konci testovací metody pro zpracování případu, kdy není vyvolána žádná výjimka.
 

@@ -6,17 +6,17 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 238370c5f8de5efdb37a29fea9d3e91763a0aa18
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316727"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070032"
 ---
-# <a name="visual-studio-2017-for-mac-preview-tour"></a>Visual Studio 2017 for Mac Preview prohlídku
+# <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac tour
 
 > [!NOTE]
-> 2019 Visual Studio for Mac je [nyní k dispozici](installation.md) jako verze preview pro testování.
+> 2019 Visual Studio for Mac je [nyní k dispozici](installation.md?view=vsmac-2019) jako verze preview pro testování.
 
 Visual Studio for Mac je .NET _integrovaného vývojového prostředí_ na počítači Mac, který je možné upravit, ladit a vytvářet kód a pak publikujete aplikaci. Kromě očekávané funkce, jako je standardní editor a ladicí program Visual Studio for Mac obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a správy zdrojového kódu do úložiště ese proces vývoje softwaru.
 

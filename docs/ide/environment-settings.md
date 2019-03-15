@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49cbb49b6ee28e7bb184c22052a7bc4bee57d13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913272"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069824"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Nastavení prostředí pro Visual Studio
 
-Při prvním spuštění aplikace Visual Studio, můžete optimalizovat vývojové prostředí pro typ, který používáte nejvíce výběrem kolekce nastavení vývoje. Každá kolekce optimalizuje prvky, jako jsou klávesové zkratky, rozložení oken, projektu a šablon položek a příkaz viditelnost.
+Když poprvé otevřete Visual Studio, můžete optimalizovat vývojové prostředí pro typ, který používáte nejvíce výběrem kolekce nastavení vývoje. Každá kolekce optimalizuje prvky, jako jsou klávesové zkratky, rozložení oken, projektu a šablon položek a příkaz viditelnost.
 
 K dispozici jsou následující nastavení kolekce:
 
@@ -30,7 +30,7 @@ K dispozici jsou následující nastavení kolekce:
 
 ## <a name="reset-settings"></a>Resetovat nastavení
 
-Chcete-li změnit nastavení pro vývoj, po prvním spuštění sady Visual Studio, postupujte podle těchto kroků:
+Chcete-li změnit nastavení pro vývoj, po otevření sady Visual Studio poprvé, postupujte podle těchto kroků:
 
 1. Vyberte **nástroje** > **nastavení importu a exportu** z řádku nabídek otevřete **Průvodce importem a exportem nastavení**.
 

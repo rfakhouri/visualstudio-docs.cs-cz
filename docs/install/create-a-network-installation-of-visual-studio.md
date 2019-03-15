@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: bf78bc26a2eb0c0a217a48b7c663851447aa4f7f
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954018"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57871324"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvoření síťové instalace sady Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio"></a>Vytvoření síťové instalace sady Visual Studio
 
 Obvykle správce podnikové sítě vytvoří bod instalace sítě pro nasazení do klientských pracovních stanic. Jsme navrhli tak Visual Studio 2017 umožňuje soubory pro počáteční instalaci spolu se všechny aktualizace produktů do jedné složky do mezipaměti. (Tento proces se také označuje jako _vytvoření rozložení platného pro_.) 
 
@@ -48,7 +48,7 @@ Zahrnout další podporované bootstrapperů [vs_buildtools.exe](https://aka.ms/
 Musíte mít internetové připojení k dokončení tohoto kroku. K vytvoření offline instalace jazykům a všechny funkce, použijte jeden z příkazů z následujících příkladů.
 
    > [!IMPORTANT]
-   > Úplné rozložení sady Visual Studio 2017 vyžaduje minimálně 35 GB místa na disku a může trvat nějakou dobu ke stažení.  Zobrazit [přizpůsobení rozložení sítě](#customizing-the-network-layout) podrobné informace o tom, jak vytvořit rozložení s jenom ty komponenty, kterou chcete nainstalovat.
+   > Úplné rozložení sady Visual Studio 2017 vyžaduje minimálně 35 GB místa na disku a může trvat nějakou dobu ke stažení.  Zobrazit [přizpůsobení rozložení sítě](#customize-the-network-layout) podrobné informace o tom, jak vytvořit rozložení s jenom ty komponenty, kterou chcete nainstalovat.
    >
    > [!TIP]
    > Ujistěte se, spusťte příkaz z adresáře ke stažení. Obvykle to `C:\Users\<username>\Downloads` v počítači se systémem Windows 10.
@@ -127,7 +127,7 @@ Tady je několik příkladů toho, jak vytvořit vlastní částečné rozložen
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>Novinka v 15.3
+### <a name="new-in-version-153"></a>Novinka ve verzi 15.3
 
 Při spuštění příkazu rozložení se uloží možnosti, které zadáte (třeba úlohy a jazyky). Rozložení následné příkazy bude obsahovat všechny předchozí možnosti.  Tady je příklad rozložení se sadou jeden pro angličtinu pouze:
 
@@ -209,7 +209,7 @@ Další možnosti podpory dostupné, máme příliš. Seznam najdete v tématu n
 
 ## <a name="see-also"></a>Viz také:
 
-* [Aktualizace síťové instalace sady Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
 * [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)

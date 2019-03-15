@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 6b75c3c7a6a2c5496896949a48c2210bb1b5f170
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155861"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983465"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty v Pythonu v sadě Visual Studio
 
@@ -29,8 +29,13 @@ Visual Studio poskytuje celou řadu šablon projektů Python rychle nastavit po�
 
 <a name="lightweight-usage-project-free"></a>
 
+::: moniker range=">=vs-2019"
 > [!Tip]
-> I bez projektu Visual Studio pracuje s kódu Pythonu. Například můžete otevřít Python soubor samostatně a využívat automatické dokončování, technologie IntelliSense a ladění (kliknutím pravým tlačítkem v editoru a výběr **začínat ladění**). Protože takový kód vždy používá výchozího globálního prostředí, ale může se zobrazit chyby nebo nesprávný dokončování Pokud kód je určená pro jiné prostředí. Kromě toho sada Visual Studio analyzuje všech souborů a balíčků ve složce ze kterého je otevřít jeden soubor, který může spotřebovat významný čas procesoru.
+> Visual Studio 2019 podporuje otevření složky obsahující kód v Pythonu a spuštění tohoto kódu bez vytvoření souborů projektu a řešení sady Visual Studio. Další informace najdete v tématu [rychlý start: Otevření a spuštění kódu Pythonu ve složce](quickstart-05-python-visual-studio-open-folder.md). Existují však výhody použití souboru projektu, jak je popsáno v této části.
+::: moniker-end
+
+> [!Tip]
+> Bez projektu všechny verze sady Visual Studio pracovat s kódu Pythonu. Například můžete otevřít Python soubor samostatně a využívat automatické dokončování, technologie IntelliSense a ladění (kliknutím pravým tlačítkem v editoru a výběr **začínat ladění**). Protože takový kód vždy používá výchozího globálního prostředí, ale může se zobrazit chyby nebo nesprávný dokončování Pokud kód je určená pro jiné prostředí. Kromě toho sada Visual Studio analyzuje všech souborů a balíčků ve složce ze kterého je otevřít jeden soubor, který může spotřebovat významný čas procesoru.
 >
 > Je jednoduché, chcete-li vytvořit projekt sady Visual Studio z existujícího kódu, jak je popsáno v [vytvoření projektu z existujících souborů](#create-project-from-existing-files).
 
@@ -42,10 +47,10 @@ Visual Studio poskytuje celou řadu šablon projektů Python rychle nastavit po�
 
 Při vývoji vaší aplikace, je obvykle potřeba přidat do projektu nové soubory různých typů. Přidáním těchto souborů se provádí tak, že kliknete pravým tlačítkem projekt a vyberete **přidat** > **existující položku** pomocí které můžete procházet pro soubor, který chcete přidat, nebo **přidat**  >  **Nová položka**, která otevře dialogové okno s celou řadu šablon položek. Jak je popsáno na [šablon položek](python-item-templates.md) odkaz, možnosti zahrnují prázdné soubory Pythonu, třída Pythonu, testování částí a různé soubory související s webovými aplikacemi. Můžete prozkoumat tyto možnosti pomocí projektu testů se dozvíte, co je k dispozici ve vaší verzi sady Visual Studio.
 
-Každý projekt Python má jeden přiřazené spouštěcí soubor ukazuje tučné písmo v **Průzkumníka řešení**. Spouštěcí soubor je soubor, který je spuštěn při spuštění ladění (**F5** nebo **ladění** > **spustit ladění**) nebo při spuštění projektu v **Interaktivní** okno (**Shift**+**Alt**+**F5** nebo **ladění**  >  **Provést projekt v interaktivním okně Pythonu**). Chcete-li ji změnit, klikněte pravým tlačítkem na nový soubor a vyberte **nastavit jako spouštěcí soubor**.
+Každý projekt Python má jeden přiřazené spouštěcí soubor ukazuje tučné písmo v **Průzkumníka řešení**. Spouštěcí soubor je soubor, který je spuštěn při spuštění ladění (**F5** nebo **ladění** > **spustit ladění**) nebo při spuštění projektu v **Interaktivní** okno (**Shift**+**Alt**+**F5** nebo **ladění**  >  **Provést projekt v interaktivním okně Pythonu**). Chcete-li ji změnit, klikněte pravým tlačítkem na nový soubor a vyberte **nastavit jako položku při spuštění** (nebo **nastavit jako spouštěcí soubor** ve starších verzích sady Visual Studio).
 
 > [!Tip]
-> Když odeberete vybranou spouštěcí soubor z projektu a nevybírejte nový, Visual Studio nebude vědět, co Python souboru začít s při pokusu o spuštění projektu. V takovém případě ukazuje chybu; Visual Studio 2017 verze 15.6 a novější starší verze buď otevřít okno výstupu překladač Pythonu s, nebo se zobrazí v okně výstupu se zobrazí, ale zmizí téměř okamžitě. Pokud dojde k některé z těchto projevů, zkontrolujte, že máte přiřazenou spouštěcí soubor.
+> Když odeberete vybranou spouštěcí soubor z projektu a nevybírejte nové jeden, Visual Studio nebude vědět, jaké soubor Pythonu začít s při pokusu o spuštění projektu. V takovém případě ukazuje chybu; Visual Studio 2017 verze 15.6 a novější starší verze buď otevřít okno výstupu překladač Pythonu s, nebo se zobrazí v okně výstupu se zobrazí, ale zmizí téměř okamžitě. Pokud dojde k některé z těchto projevů, zkontrolujte, že máte přiřazenou spouštěcí soubor.
 >
 > Pokud chcete nechat otevřené okno výstup z jakéhokoli důvodu, klikněte pravým tlačítkem na projekt, vyberte **vlastnosti**, vyberte **ladění** kartu a pak přidejte `-i` k **argumenty pro interpret**  pole. Tento argument způsobí, že překladač přejde do interaktivního režimu po dokončení programu, a tím udržování okna otevřete dokud nezadáte **Ctrl**+**Z**  >  **Enter** ukončíte.
 

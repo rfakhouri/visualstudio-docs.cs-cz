@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703250"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983712"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogové okno Možnosti prostředí
 
@@ -27,7 +27,7 @@ Můžete použít na stránkách **prostředí** složky **možnosti** dialogov�
 |Přizpůsobit vzhled a chování oken, nabídek a dalších prvků integrovaného vývojového prostředí|[Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)|
 |Změnit nastavení automatického ukládání a obnovení souborů|[Automatická obnova, Prostředí, dialogové okno Možnosti](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Nastavit zobrazení a správu dokumentů, mimo jiné i chování ostatních souborů|[Dokumenty, Prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md)|
-|Přizpůsobte, jak dochází k aktualizacím a jak se spravují rozšíření.|[Rozšíření a aktualizace, Prostředí, dialogové okno Možnosti](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|Přizpůsobte, jak dochází k aktualizacím a jak se spravují rozšíření.|[Rozšíření prostředí, dialogové okno Možnosti](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |Přizpůsobení, jakmile se zobrazí okna se zprávou a jak **najít a nahradit** okna fungovat během rychlého hledání nebo rychlého nahrazení a také autopopulate najít.|[Najít a nahradit, Prostředí, dialogové okno Možnosti](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Nastavit písmo a barvy v některých editorech, dialogových oknech, oknech nástrojů a jiných prvcích uživatelského rozhraní|[Písma a barvy, Prostředí, dialogové okno Možnosti](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Upravte umístění souboru vssettings, které ukládají informace o nastavení uživatele.|[Nastavení importu a exportu, Prostředí, dialogové okno Možnosti](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

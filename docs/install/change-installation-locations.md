@@ -14,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947819"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983894"
 ---
-# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Vybrat umístění instalace v sadě Visual Studio 2017
+# <a name="select-the-installation-locations-in-visual-studio"></a>Vybrat umístění instalace v sadě Visual Studio
 
-**Nové ve verzi 15.7**: Můžete snížit nároky na instalaci sady Visual Studio na systémovou jednotku tak, že změníte umístění pro některé z jeho souborů. Konkrétně můžete použít jiné umístění pro mezipaměť pro stahování, sdílených komponent, sady SDK a soubory nástroje.
+**Novinka ve verzi 15.7**: Můžete snížit nároky na instalaci sady Visual Studio na systémovou jednotku tak, že změníte umístění pro některé z jeho souborů. Konkrétně můžete použít jiné umístění pro mezipaměť pro stahování, sdílených komponent, sady SDK a soubory nástroje.
 
    > [!NOTE]
    > Existují některé nástroje a sady SDK, které mají různá pravidla, na kterém lze nainstalovat. Tyto nástroje a sady SDK jsou nainstalovány na systémovou jednotku i v případě zvolte jiné umístění.
@@ -64,7 +64,7 @@ Jste připravení začít? Tady je způsob.
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Úpravy sady Visual Studio 2017](update-visual-studio.md)
-* [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
+* [Instalace sady Visual Studio](install-visual-studio.md)
+* [Aktualizace sady Visual Studio](update-visual-studio.md)
+* [Úpravy sady Visual Studio](update-visual-studio.md)
+* [Odinstalace sady Visual Studio](uninstall-visual-studio.md)

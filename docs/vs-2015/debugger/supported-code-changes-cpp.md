@@ -13,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02ba30fe6ad2fbc59822b6bdfb954db7c29e0eb3
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834430"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57872279"
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,8 @@ Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu
  Zobrazit [upravit a pokračovat (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) informace o práci s upravit a pokračovat jazyka C++ v sadě Visual Studio.  
   
 ##  <a name="BKMK_Unsupported_changes"></a> Nepodporované změny  
- Následující změny C/C++ nemohou být provedeny během relace ladění:  
+
+Následující změny C/C++ nemohou být provedeny během relace ladění:  
   
 - Většina změn globální nebo statická data.  
   
@@ -63,7 +64,7 @@ Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu
   
 - Změny kódu, který nemá žádný soubor objektu.  
   
-  Pokud jeden z těchto změn a pokuste se použít změny kódu, chyby nebo upozornění se zobrazí v **výstup** okna.  
+Pokud jeden z těchto změn a pokuste se použít změny kódu, chyby nebo upozornění se zobrazí v **výstup** okna.  
   
 - Upravit a pokračovat se neaktualizuje statických knihoven. Pokud provedete změny ve statické knihovně, provádění pokračuje ve starší verzi a žádné upozornění.  
   

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548a8a4ec05c0ee88e68095a5322a8831e77b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937248"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069603"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Nasazení DSL v MSI a VSIX
 Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači nebo v jiných počítačích. Visual Studio musí být nainstalována na cílovém počítači.
@@ -26,13 +26,14 @@ Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači 
 |MSI (instalačního programu soubor)|– Umožňuje uživateli otevřít Visual Studio poklikáním souboru DSL.<br />-Přidruží ikony typu souboru DSL v cílovém počítači.<br />– Tento typ souboru DSL přidruží XSD (XML schema). Tím se vyhnete upozornění při načítání souboru do sady Visual Studio.<br /><br /> Nastavení projektu musíte přidat do svého řešení Chcete-li vytvořit instalační služba MSI.<br /><br /> Další informace najdete v tématu [nasazení DSL s použitím souboru MSI](#msi).|
 
 ## <a name="Installing"></a> Instalace a odinstalace DSL pomocí VSX
- Při instalaci vašeho DSL pomocí této metody může uživatel otevřít souboru DSL ze sady Visual Studio, ale soubor nelze otevřít v Průzkumníku Windows.
 
-#### <a name="to-install-a-dsl-by-using-the-vsx"></a>Instalace DSL pomocí VSX
+Při instalaci vašeho DSL pomocí této metody může uživatel otevřít souboru DSL ze sady Visual Studio, ale soubor nelze otevřít v Průzkumníku Windows.
 
-1. V počítači, vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem DSL balíčku.
+### <a name="to-install-a-dsl-by-using-the-vsx"></a>Instalace DSL pomocí VSX
 
-   1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DslPackage** projektu a pak klikněte na tlačítko **otevřít složku v Průzkumníku Windows**.
+1. Vyhledejte **VSIX** soubor, který byl vytvořen vaším projektem DSL balíčku:
+
+   1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DslPackage** projektu a pak klikněte na tlačítko **otevřít složku v Průzkumníku souborů**.
 
    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**. DslPackage.vsix**
 
@@ -50,9 +51,9 @@ Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači 
 
 5. Pokud chcete otestovat DSL, vytvořte nový soubor, který má příponu, která jste definovali pro vašeho DSL pomocí sady Visual Studio.
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Chcete-li odinstalovat DSL, která byla nainstalována pomocí VSX
+### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Chcete-li odinstalovat DSL, která byla nainstalována pomocí VSX
 
-1. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
+1. Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.
 
 2. Rozbalte **nainstalovaná rozšíření**.
 
@@ -69,7 +70,7 @@ Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači 
 
  Pokud chcete vytvořit soubor MSI, přidat nastavení projektu do řešení sady Visual Studio. Nejjednodušší způsob vytváření projektu instalace je použití šablony CreateMsiSetupProject.tt, kterou si můžete stáhnout z [vmsdk následující položky lokality](http://go.microsoft.com/fwlink/?LinkID=186128).
 
-#### <a name="to-deploy-a-dsl-in-an-msi"></a>Nasazení DSL v MSI
+### <a name="to-deploy-a-dsl-in-an-msi"></a>Nasazení DSL v MSI
 
 1. Nastavte `InstalledByMsi` v manifestu rozšíření. To brání VSX nainstalovat a odinstalovat s výjimkou MSI. To je důležité, pokud bude obsahovat jiné komponenty v MSI.
 
@@ -127,7 +128,7 @@ Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači 
 
     Pokud dáváte přednost, můžete vytvořit projekt instalace ručně, namísto použití textové šablony. Návod, který zahrnuje tento postup najdete v kapitole 5 [Visualization and Modeling SDK Lab](http://go.microsoft.com/fwlink/?LinkId=208878).
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Chcete-li odinstalovat DSL, která byla nainstalovaná z MSI
+### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Chcete-li odinstalovat DSL, která byla nainstalovaná z MSI
 
 1.  Ve Windows, otevřete **programy a funkce** ovládacích panelech.
 

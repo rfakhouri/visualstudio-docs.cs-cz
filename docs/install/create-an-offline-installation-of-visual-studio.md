@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e08e8aa639540461216b057ae80d1eb7701f6
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 78feb97dc2d738636667df21db1327f968ae6f69
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796540"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983049"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Vytvoření offline instalace sady Visual Studio 2017
+# <a name="create-an-offline-installation-of-visual-studio"></a>Vytvoření offline instalace sady Visual Studio
 
 Jsme navrhovali Visual Studio 2017, aby dobře fungovaly v různých konfiguracích sítě a počítače. Přestože doporučujeme vám vyzkoušet [webovou Instalační službu sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;což je malý soubor a umožňuje aktuální nejnovější opravy a funkce&mdash;rozumí tomu, že nemusí být možné.
 
@@ -32,7 +32,7 @@ Například může mít nespolehlivé připojení k Internetu nebo, pokud má s 
 
 ## <a name="use-the-download-all-then-install-feature"></a>Používá "vše stáhnout, potom nainstalovat" funkce
 
-[**Novinka v 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Po stažení webovou Instalační službu vyberte novou **vše stáhnout, potom nainstalovat** možnost z instalačního programu sady Visual Studio. Pokračujte s instalací.
+[**Novinka ve verzi 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Po stažení webovou Instalační službu vyberte novou **vše stáhnout, potom nainstalovat** možnost z instalačního programu sady Visual Studio. Pokračujte s instalací.
 
    !["Vše stáhnout, potom nainstalovat" možnost](media/download-all-then-install.png)
 
@@ -143,7 +143,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vytvoření síťové instalace sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md)
+- [Vytvoření síťové instalace sady Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Instalace certifikátů vyžadovaných pro offline instalace sady Visual Studio](../install/install-certificates-for-visual-studio-offline.md)
 - [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
-- [ID pracovního vytížení a komponenta Visual Studio 2017](workload-and-component-ids.md)
+- [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

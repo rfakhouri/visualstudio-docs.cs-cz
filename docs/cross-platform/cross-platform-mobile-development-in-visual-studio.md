@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843806"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069681"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Vývoj multiplatformních mobilních řešení v sadě Visual Studio
 
@@ -96,7 +96,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 
  ![Multi-Device hybrid apps s použitím jazyka Javascript](../cross-platform/media/multidevicehybridapps.png "Multi-Device hybrid apps s použitím jazyka Javascript")
 
- Abyste mohli začít, nainstalujte sadu Visual Studio 2017 a zvolte **vývoj mobilních aplikací pomocí jazyka Javascript** funkce během instalace. Nástroje Cordova automaticky nainstalují veškerý software třetích stran, které je potřeba k sestavení aplikace pro víc platforem.
+ Abyste mohli začít, nainstalujte sadu Visual Studio a zvolte **vývoj mobilních aplikací pomocí jazyka Javascript** funkce během instalace. Nástroje Cordova automaticky nainstalují veškerý software třetích stran, které je potřeba k sestavení aplikace pro víc platforem.
 
  Po instalaci rozšíření, otevřete Visual Studio a vytvořte **prázdná aplikace (Apache Cordova)** projektu. Potom můžete vyvíjet aplikace s použitím jazyka JavaScript nebo Typescript. Můžete také přidat moduly plug-in k rozšíření funkčnosti vaší aplikace a rozhraní API z modulů plug-in se zobrazí v IntelliSense vám při psaní kódu.
 

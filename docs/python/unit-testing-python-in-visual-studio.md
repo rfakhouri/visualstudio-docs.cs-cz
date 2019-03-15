@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155978"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983803"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Nastavení testování jednotek pro kód v Pythonu
 
@@ -86,7 +86,7 @@ Spustit ladění, nastavte počáteční zarážky v kódu a pak klikněte prav�
 
 ![Ladění testu](media/unit-test-debugging.png)
 
-Můžete také použít **analyzovat pokrytí kódu pro vybrané testy** a **testovací profil** příkazů v závislosti na vaší verzi sady Visual Studio (najdete v článku [matice funkcí](overview-of-python-tools-for-visual-studio.md#features-matrix)).
+Můžete také použít **analyzovat pokrytí kódu pro vybrané testy** a **testovací profil** příkazy.
 
 ### <a name="known-issues"></a>Známé problémy
 

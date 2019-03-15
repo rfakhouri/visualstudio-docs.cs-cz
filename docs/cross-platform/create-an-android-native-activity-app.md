@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 60e2fccf4b26516e88b05b5fb8fc0f8d0eb20f85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983726"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069694"
 ---
 # <a name="create-an-android-native-activity-app"></a>Vytvoření aplikace s NativeActivity pro Android
 
@@ -31,9 +31,7 @@ Před vytvořením aplikace Android Native Activity, ujistěte se, jste splněny
 
 V tomto kurzu budete nejdřív vytvořte nový projekt Android Native Activity a začnete vytvářet a spusťte výchozí aplikaci v emulátoru Visual Studia pro Android.
 
-### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
-
-1. Otevřít Visual Studio. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
+1. V sadě Visual Studio, zvolte **souboru** > **nový** > **projektu**.
 
 2. V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++** > **různé platformy**a klikněte na tlačítko **Aplikace s Nativeactivity (Android)** šablony.
 

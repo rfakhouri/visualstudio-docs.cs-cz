@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951901"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069915"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Postupy: Postupy: Sestavení a spuštění příkladu LinqToXmlDataBinding
 
@@ -20,11 +20,9 @@ Toto téma ukazuje, jak vytvořit a sestavit projekt sady Visual Studio LinqToXm
 
 Další informace o sadě Visual Studio najdete v tématu [přehled Visual Studio IDE](../get-started/visual-studio-ide.md).
 
-## <a name="create-and-populate-the-project"></a>Vytvořit a naplnit projektu
+## <a name="create-the-project"></a>Vytvoření projektu
 
-### <a name="to-create-the-starting-project"></a>Chcete-li vytvořit počáteční projekt
-
-1. Spusťte sadu Visual Studio a vytvořte aplikaci WPF C# s názvem LinqToXmlDataBinding. Projekt musí používat rozhraní .NET Framework 3.5 (nebo novější).
+1. Otevřete Visual Studio a vytvořte C# **aplikace WPF** s názvem **LinqToXmlDataBinding**. Projekt musí cílit na rozhraní .NET Framework 3.5 (nebo novější).
 
 1. Pokud není již k dispozici, přidejte odkazy na projekt pro následující sestavení .NET:
 
@@ -38,9 +36,9 @@ Další informace o sadě Visual Studio najdete v tématu [přehled Visual Studi
 
 1. Sestavte řešení stisknutím kombinace kláves **Ctrl**+**Shift**+**B**, spusťte ji stisknutím klávesy **F5**. Projekt by měl kompilovat bez chyb a spustit jako obecná aplikace WPF.
 
-### <a name="to-add-custom-code-to-the-project"></a>Přidání vlastního kódu do projektu
+## <a name="add-code-to-the-project"></a>Přidání kódu do projektu
 
-1. V Průzkumníku řešení, přejmenujte zdrojový soubor **Window1.xaml** k **L2XDBForm.xaml**. Závislé zdrojový soubor **Window1.xaml.cs** by měl automaticky přejmenovat na **L2XDBForm.xaml.cs**.
+1. V **Průzkumníka řešení**, přejmenujte zdrojový soubor **Window1.xaml** k **L2XDBForm.xaml**. Závislé zdrojový soubor **Window1.xaml.cs** by měl automaticky přejmenovat na **L2XDBForm.xaml.cs**.
 
 1. Nahradit v souboru zdrojového kódu najít **L2XDBForm.xaml** s oddílem kód z tématu [zdrojový kód L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md). Použijte zobrazení zdroje XAML pro práci s tímto souborem.
 
@@ -56,9 +54,7 @@ LinqToXmlDataBinding program umožňuje uživateli zobrazit a pracovat s seznam 
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>Ke spuštění programu a zobrazení seznamu knihy
 
-- Spustit LinqToXmlDataBinding stisknutím klávesy **F5** (**spustit ladění**) nebo **Ctrl**+**F5** (**Start Bez ladění**).
-
-   Okno aplikace s názvem **WPF datové vazby pomocí LINQ to XML** se zobrazí.
+Spustit LinqToXmlDataBinding stisknutím klávesy **F5** (**spustit ladění**) nebo **Ctrl**+**F5** (**Start Bez ladění**). Okno aplikace s názvem **WPF datové vazby pomocí LINQ to XML** se zobrazí.
 
 - Všimněte si, že v horní části uživatelského rozhraní, které zobrazí nezpracovaný **XML** , která představuje seznam knihy. Zobrazí se pomocí WPF <xref:System.Windows.Controls.TextBlock> ovládací prvek, který neumožňuje interakce prostřednictvím klávesnice nebo myši.
 

@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 73e1616af5665fc7ae89a3aa1019f2600afc24fd
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953966"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984129"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Řešení potíží s instalací sady Visual Studio 2017 a upgradovat problémy
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Řešení potíží s instalací sady Visual Studio a upgradovat problémy
 
 > [!IMPORTANT]
 > Máte potíže s instalací? Můžeme pomoct. Nabízíme [ **živý chat** ](https://visualstudio.microsoft.com/vs/support/#talktous) možnost podpory (jenom v angličtině).
@@ -86,7 +86,7 @@ Tady je tabulka znázorňující známé problémy a některé řešení, které
 
 Protokoly instalace jsou potřeba k odstranění většiny potíží instalace. Po odeslání chyby pomocí [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio.md) ve Visual Studio Installerem. Tyto protokoly jsou automaticky obsažené v sestavě.
 
-Pokud budete kontaktovat Microsoft Support, možná budete muset poskytnout tyto protokoly instalace pomocí [sady Microsoft Visual Studio a nástroj pro shromažďování protokolů rozhraní .NET Framework](https://aka.ms/vscollect). Nástroj pro shromažďování protokolů shromažďuje protokoly instalace z všechny komponenty nainstalované Visual Studio 2017, například rozhraní .NET Framework, sady SDK Windows a SQL Server. Shromáždí se také informace o počítači inventář Instalační služby systému Windows a informace v protokolu událostí Windows pro instalační program sady Visual Studio, instalační služby systému Windows a nástroj Obnovení systému.
+Pokud budete kontaktovat Microsoft Support, možná budete muset poskytnout tyto protokoly instalace pomocí [sady Microsoft Visual Studio a nástroj pro shromažďování protokolů rozhraní .NET Framework](https://aka.ms/vscollect). Nástroj pro shromažďování protokolů shromažďuje protokoly instalace ze všech komponent nainstalovaná sada Visual Studio, včetně rozhraní .NET Framework, sady SDK Windows a SQL Server. Shromáždí se také informace o počítači inventář Instalační služby systému Windows a informace v protokolu událostí Windows pro instalační program sady Visual Studio, instalační služby systému Windows a nástroj Obnovení systému.
 
 Shromažďování protokolů:
 
@@ -104,7 +104,7 @@ Pokud řešení uvedené v této příručce pro řešení potíží vám jak ú
 
 ## <a name="see-also"></a>Viz také:
 
-* [Odebrat sady Visual Studio 2017](remove-visual-studio.md)
+* [Odebrání sady Visual Studio](remove-visual-studio.md)
 * [Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Nástroje pro zjišťování a správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)

@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b23b67ea2fe48bb3ba1bcf174d28938379fc1ad9
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323193"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070084"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Seznamte se s projekty a řešení s použitím jazyka C\#
 
@@ -38,9 +38,11 @@ Bez ohledu na jeho název řešení není "odpověď". Řešení je prostě kont
 
 Naše zkoumání začneme vytvořením prázdné řešení. Po získání znát sady Visual Studio, které pravděpodobně nenajdete sami velmi často vytvoření prázdných řešení. Při vytváření nového projektu sady Visual Studio automaticky vytvoří řešení k umístění projektu, pokud existuje řešení ještě není otevřený.
 
+::: moniker range="vs-2017"
+
 1. Otevřít Visual Studio.
 
-1. Na panelu nabídek, které, jako je na řádku nabídek **souboru** a **upravit**, zvolte **souboru** > **nový**  >   **Projekt**.
+1. V horní nabídce zvolte **souboru** > **nový** > **projektu**.
 
    **Nový projekt** zobrazí se dialogové okno.
 
@@ -49,6 +51,22 @@ Naše zkoumání začneme vytvořením prázdné řešení. Po získání znát 
    ![Šablonu prázdného řešení v sadě Visual Studio](../media/tutorial-projects-new-solution.png)
 
    **Úvodní stránka** zavře a řešení se zobrazí v **Průzkumníka řešení** na pravé straně okna nástroje Visual Studio. Je pravděpodobně použijete **Průzkumníka řešení** často, procházet obsah vašich projektů.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otevřít Visual Studio.
+
+2. V okně Start zvolte **vytvořte nový projekt**.
+
+3. Na **vytvořte nový projekt** zadejte **prázdné řešení** do vyhledávacího pole, vyberte **prázdné řešení** šablony a klikněte na tlačítko **Další**.
+
+4. Pojmenujte řešení **QuickSolution**a klikněte na tlačítko **vytvořit**.
+
+   Řešení se zobrazí v **Průzkumníka řešení** na pravé straně okna nástroje Visual Studio. Je pravděpodobně použijete **Průzkumníka řešení** často, procházet obsah vašich projektů.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Přidat do projektu
 

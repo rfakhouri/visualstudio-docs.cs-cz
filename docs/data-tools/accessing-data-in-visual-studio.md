@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 447c51193845e4cc558ed70bcd89b68ceef888fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919167"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983491"
 ---
 # <a name="access-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -65,10 +65,20 @@ Většinu ostatních SQL a NoSQL databáze produktů, které jsou zde uvedeny, j
 - VelocityDB
 - a další...
 
-Mnoho dodavatelů databáze a třetí strany nepodporují integraci s Visual Studio pomocí balíčků NuGet. Můžete prozkoumat nabídky na nuget.org nebo prostřednictvím aplikaci Správce balíčků NuGet v sadě Visual Studio (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet Balíčky pro řešení**). Produkty databáze můžete integrovat s aplikací Visual Studio jako rozšíření. Tyto nabídky v aplikaci Visual Studio Marketplace můžete procházet tak, že přejdete do **nástroje**, **rozšíření a aktualizace** a následným výběrem **Online** v levém podokně Dialogové okno. Další informace najdete v tématu [kompatibilní databázové systémy pro sadu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+::: moniker range="vs-2017"
+
+Mnoho dodavatelů databáze a třetí strany nepodporují integraci s Visual Studio pomocí balíčků NuGet. Můžete prozkoumat nabídky na nuget.org nebo prostřednictvím aplikaci Správce balíčků NuGet v sadě Visual Studio (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet Balíčky pro řešení**). Produkty databáze můžete integrovat s aplikací Visual Studio jako rozšíření. Tyto nabídky můžete procházet [Visual Studio Marketplace](https://marketplace.visualstudio.com/) nebo tak, že přejdete do **nástroje** > **rozšíření a aktualizace** a následným výběrem  **Online** v levém podokně dialogového okna. Další informace najdete v tématu [kompatibilní databázové systémy pro sadu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Mnoho dodavatelů databáze a třetí strany nepodporují integraci s Visual Studio pomocí balíčků NuGet. Můžete prozkoumat nabídky na nuget.org nebo prostřednictvím aplikaci Správce balíčků NuGet v sadě Visual Studio (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet Balíčky pro řešení**). Produkty databáze můžete integrovat s aplikací Visual Studio jako rozšíření. Tyto nabídky můžete procházet [Visual Studio Marketplace](https://marketplace.visualstudio.com/) nebo tak, že přejdete do **rozšíření** > **spravovat rozšíření** a následným výběrem  **Online** v levém podokně dialogového okna. Další informace najdete v tématu [kompatibilní databázové systémy pro sadu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
 
 > [!NOTE]
-> Rozšířená podpora pro SQL Server 2005 skončila 12. dubna 2016. Neexistuje žádná záruka, že data tools v sadě Visual Studio 2015 a novější budou fungovat s SQL Server 2005 po tomto datu. Další informace najdete v tématu [oznámení ukončení podpory pro SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Rozšířená podpora pro SQL Server 2005 skončila 12. dubna 2016. Neexistuje žádná záruka, že data tools v sadě Visual Studio 2015 a novější budou nadále fungovat s SQL Server 2005. Další informace najdete v tématu [oznámení ukončení podpory pro SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Jazyky rozhraní .NET
 

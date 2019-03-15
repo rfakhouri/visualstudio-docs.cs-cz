@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da6763cffedccb1dae296e2959732237cd126b25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b01af2aa269cbaddbd84d24827b1a77e97d52d8a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909917"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982802"
 ---
 # <a name="add-new-connections"></a>Přidat nové připojení
 
@@ -24,7 +24,7 @@ Můžete otestovat připojení k databázi nebo službu a prozkoumat obsah datab
 
 - Průzkumník cloudu
 
-   Ruční instalace tohoto okna jako rozšíření sady Visual Studio tak, že vyberete **nástroje** > **rozšíření a aktualizace** > **Online**  >  **Visual Studio Marketplace**. Poskytuje specializované funkce pro zkoumání a připojení ke službám Azure.
+   Ruční instalace tohoto okna jako rozšíření sady Visual Studio z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Poskytuje specializované funkce pro zkoumání a připojení ke službám Azure.
 
 - Průzkumník objektů systému SQL Server
 

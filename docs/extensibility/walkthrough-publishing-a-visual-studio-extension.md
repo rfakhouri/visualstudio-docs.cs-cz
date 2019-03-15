@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Publikování rozšíření sady Visual Studio | Dokumentace Microsoftu'
+title: 'Návod: Publikování rozšíření sady Visual Studio | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ebb82353b3137e03e559a3b60132f4c25a306ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716100"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983517"
 ---
-# <a name="walkthrough-publish-a-visual-studio-extension"></a>Průvodce: Publikování rozšíření sady Visual Studio
+# <a name="walkthrough-publish-a-visual-studio-extension"></a>Návod: Publikování rozšíření sady Visual Studio
 
 Tento návod ukazuje, jak publikovat rozšíření sady Visual Studio pro Visual Studio Marketplace. Když přidáte rozšíření na webu Marketplace, vývojáři mohou použít **rozšíření a aktualizace** a vyhledejte nové a aktualizované rozšíření.
 

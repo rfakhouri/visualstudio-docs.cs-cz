@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ca13af8cd6b1a144ee3202165908f1d282ca81
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924068"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070240"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -49,7 +49,7 @@ Zálohy jsou automaticky vytvořeny a zkopírován do adresáře s názvem Zálo
 
 Řešení se spravovanými zdroji nebo projekty musí být rezervován dříve, než je možné upgradovat.
 
-Použití `/Upgrade` přepínač nelze spustit aplikaci Visual Studio. Výsledky upgradu lze zobrazit v sestavě upgradu pro vývojový jazyk řešení nebo projektu. Vrátí se žádné informace o chybě nebo použití. Další informace o upgradu projektů v sadě Visual Studio najdete v tématu [Port, migrace a Upgrade projektů sady Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Použití `/Upgrade` neotevře přepínače sady Visual Studio. Výsledky upgradu lze zobrazit v sestavě upgradu pro vývojový jazyk řešení nebo projektu. Vrátí se žádné informace o chybě nebo použití. Další informace o upgradu projektů v sadě Visual Studio najdete v tématu [Port, migrace a Upgrade projektů sady Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ## <a name="example"></a>Příklad
 

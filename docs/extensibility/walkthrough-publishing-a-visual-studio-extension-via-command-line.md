@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Publikování rozšíření sady Visual Studio pomocí příkazového řádku | Dokumentace Microsoftu'
+title: 'Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695369"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983374"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Průvodce: Publikování rozšíření sady Visual Studio pomocí příkazového řádku
+# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku
 
 Tento návod ukazuje, jak publikování rozšíření sady Visual Studio na webu Visual Studio Marketplace pomocí příkazového řádku. Když přidáte rozšíření na webu Marketplace, vývojáři mohou použít [ **rozšíření a aktualizace** ](../ide/finding-and-using-visual-studio-extensions.md) dialogové okno pro procházení obsahuje nové a aktualizované rozšíření.
 
@@ -290,7 +290,7 @@ Rozšíření můžete odebrat z webu Visual Studio Marketplace a z vašeho poč
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Odebrat rozšíření z počítače
 
-1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace...** .
+1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.
 
 2. Vyberte "MyVsixExtension" a potom klikněte na tlačítko **odinstalovat**. Rozšíření se pak být naplánovaná odinstalace.
 

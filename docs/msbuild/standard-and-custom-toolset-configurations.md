@@ -11,17 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38d63de6c223d8a77bd2c1fa2e0a13b0e814ef8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620314"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983400"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardní a vlastní konfigurace sady nástrojů
 Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které můžete použít k sestavení projektu aplikace. Nástroj MSBuild obsahuje standardní sadu nástrojů, ale můžete také vytvořit vlastní sady nástrojů. Informace o tom, jak určit sadu nástrojů najdete v tématu [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
 
 ## <a name="standard-toolset-configurations"></a>Standardní konfigurace sady nástrojů
+
+::: moniker range=">=vs-2019"
+ Nástroj MSBuild 16.0 zahrnuje následující standardní sady nástrojů:
+
+|ToolsVersion|Cesta nástrojů (jak je uvedeno ve vlastnosti sestavení MSBuildToolsPath nebo MSBuildBinPath)|
+|------------------| - |
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|aktuální|*\<Visual Studio instalační_cesta > \MSBuild\Current\bin*|
+
+ `ToolsVersion` Hodnota určuje, které používají sady nástrojů projektu, který generuje sada Visual Studio. V aplikaci Visual Studio 2019, výchozí hodnota je "Current" (nezáleží na tom, jaké verze zadaná v souboru projektu), ale tento atribut lze přepsat pomocí **/toolsversion** přepínač příkazového řádku. Informace o tento atribut a další způsoby, jak určit `ToolsVersion`, naleznete v tématu [nastavení parametru ToolsVersion přepsání](../msbuild/overriding-toolsversion-settings.md).
+
+ ::: moniker-end
+
+::: moniker range="vs-2017"
  15.0 nástroje MSBuild zahrnuje následující standardní sady nástrojů:
 
 |ToolsVersion|Cesta nástrojů (jak je uvedeno ve vlastnosti sestavení MSBuildToolsPath nebo MSBuildBinPath)|
@@ -32,8 +48,9 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
 |15.0|*\<Visual Studio instalační_cesta > \MSBuild\15.0\bin*|
 
  `ToolsVersion` Hodnota určuje, které používají sady nástrojů projektu, který generuje sada Visual Studio. V sadě Visual Studio 2017, výchozí hodnota je "15.0" (nezáleží na tom, jaké verze zadaná v souboru projektu), ale tento atribut lze přepsat pomocí **/toolsversion** přepínač příkazového řádku. Informace o tento atribut a další způsoby, jak určit `ToolsVersion`, naleznete v tématu [nastavení parametru ToolsVersion přepsání](../msbuild/overriding-toolsversion-settings.md).
+ ::: moniker-end
 
- Visual Studio 2017 nepoužívá klíč registru pro cestu k MSBuild. Pro verze nástroje MSBuild starší než 15.0, které jsou nainstalovány se sadou Visual Studio 2017 zadejte následující klíče registru instalační cesty nástroje MSBuild.exe.
+Visual Studio 2017 a novějších verzích nepoužívejte klíč registru pro cestu k MSBuild. Pro verze nástroje MSBuild starší než 15.0, které jsou nainstalovány se sadou Visual Studio 2017 zadejte následující klíče registru instalační cesty nástroje MSBuild.exe.
 
 |Klíč registru|Název klíče|Řetězcovou hodnotu klíče|
 |------------------|--------------|----------------------|
@@ -56,11 +73,11 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
 ## <a name="custom-toolset-definitions"></a>Definice vlastní sady nástrojů
  Když standardní sadu nástrojů nesplňuje vaše požadavky na sestavení, můžete vytvořit vlastní sadu nástrojů. Například může mít scénáři sestavení testovacího prostředí, ve kterém musí mít samostatný systém pro vytváření [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty. Pomocí vlastních nástrojů můžete přiřadit vlastní hodnoty a `ToolsVersion` atribut při vytváření projektů nebo spustit *MSBuild.exe*. Tímto způsobem můžete také použít `$(MSBuildToolsPath)` vlastnost k importu *.targets* soubory z tohoto adresáře, jakož i definování vlastních nástrojů vlastností, které lze použít pro libovolný projekt, který používá tuto sadu nástrojů.
 
- Zadejte vlastní sady nástrojů v konfiguračním souboru pro *MSBuild.exe* (nebo pro vlastní nástroj, který je hostitelem MSBuild motoru, pokud je to, co používáte). Například konfigurační soubor pro *MSBuild.exe* může zahrnovat následující definici sady nástrojů, pokud jste si přáli přepsat výchozí chování ToolsVersion 15.0.
+ Zadejte vlastní sady nástrojů v konfiguračním souboru pro *MSBuild.exe* (nebo pro vlastní nástroj, který je hostitelem MSBuild motoru, pokud je to, co používáte). Například konfigurační soubor pro *MSBuild.exe* může zahrnovat následující definici sady nástrojů, pokud jste si přáli definovat sadu nástrojů s názvem *MyCustomToolset*.
 
 ```xml
-<msbuildToolsets default="15.0">
-   <toolset toolsVersion="15.0">
+<msbuildToolsets default="MyCustomToolset">
+   <toolset toolsVersion="MyCustomToolset">
       <property name="MSBuildToolsPath"
         value="C:\SpecialPath" />
    </toolset>

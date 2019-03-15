@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323274"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069759"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Rychlý start: Pomocí sady Visual Studio k vytvoření vaší první webové služby ASP.NET Core v F\#
 
@@ -28,9 +28,11 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 Nejprve vytvoříte projekt webového rozhraní API ASP.NET Core. Typ projektu je součástí souborů šablon, které tvoří funkční webovou službu, než jste přidali ještě nic!
 
+::: moniker range="vs-2017"
+
 1. Otevřít Visual Studio.
 
-2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
+2. V horní nabídce zvolte **souboru** > **nový** > **projektu**.
 
 3. V **nový projekt** dialogové okno, v levém podokně rozbalte **Visual F#** , klikněte na tlačítko **webové**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**, klikněte na tlačítko **OK**.
 
@@ -38,7 +40,23 @@ Nejprve vytvoříte projekt webového rozhraní API ASP.NET Core. Typ projektu j
 
      ![Úlohy technologie ASP.NET v instalačním programu VS](../ide/media/quickstart-aspnet-workload.png)
 
-4. V **nová webová aplikace ASP.NET Core** dialogu **ASP.NET Core 2.1** z hlavní nabídky rozevíracího seznamu. (Pokud se nezobrazí **ASP.NET Core 2.1** v seznamu, nainstalujte ji pomocí následujících **Stáhnout** odkaz, který by se měla objevit v žlutý pruh v horní části dialogu.) Zvolte **OK**.
+4 ve **nová webová aplikace ASP.NET Core** dialogu **ASP.NET Core 2.1** z hlavní nabídky rozevíracího seznamu. (Pokud se nezobrazí **ASP.NET Core 2.1** v seznamu, nainstalujte ji pomocí následujících **Stáhnout** odkaz, který by se měla objevit v žlutý pruh v horní části dialogu.) Zvolte **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otevřít Visual Studio.
+
+2. V okně Start zvolte **vytvořte nový projekt**.
+
+3. Na **vytvořte nový projekt** zadejte **f # webové** do vyhledávacího pole a klikněte na tlačítko **webové aplikace ASP.NET Core** šablony projektu. Zvolte **Další**.
+
+4. Na **konfigurovat nový projekt** stránky, zadejte název a klikněte na tlačítko **vytvořit**.
+
+5. Na **vytvořit novou webovou aplikaci ASP.NET Core** stránce **ASP.NET Core 2.1** z hlavní nabídky rozevíracího seznamu a klikněte na tlačítko **vytvořit**.
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>Prozkoumejte rozhraní IDE
 

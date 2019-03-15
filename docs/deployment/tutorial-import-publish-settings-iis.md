@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605401"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983907"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby IIS pomocí importu nastavení publikování v sadě Visual Studio
 
 Můžete použít **publikovat** nástroj k importu nastavení publikování a pak nasadíte aplikaci. V tomto článku používáme nastavení publikování pro službu IIS, ale můžete použít podobným způsobem k importu nastavení publikování pro [služby Azure App Service](../deployment/tutorial-import-publish-settings-azure.md). V některých scénářích použití publikování profilu nastavení může být rychlejší než ruční konfigurace nasazení do služby IIS pro každou instalaci sady Visual Studio.
 
-Tento postup platí pro aplikace ASP.NET, ASP.NET Core a .NET Core v sadě Visual Studio. Kroky odpovídají Visual Studio 2017 verze 15.6.
+Tento postup platí pro aplikace ASP.NET, ASP.NET Core a .NET Core v sadě Visual Studio.
 
 V tomto kurzu se naučíte:
 
@@ -38,9 +38,19 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Na svém vývojovém počítači, musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj pro ASP.NET a web** pracovního vytížení.
+::: moniker range=">=vs-2019"
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+* Musíte mít Visual Studio 2019 nainstalovaný a **vývoj pro ASP.NET a web** pracovního vytížení.
+
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj pro ASP.NET a web** pracovního vytížení.
+
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+::: moniker-end
 
 * Na serveru, musíte používat Windows Server 2012 nebo Windows Server 2016 a musí mít [role webového serveru IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) správně nainstalovaný (vyžadovaných ke generování souboru nastavení publikování (*\*. publishsettings*)). ASP.NET 4.5 nebo ASP.NET Core musí také nainstalovaná na serveru. Nastavení technologie ASP.NET 4.5, naleznete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core, naleznete v tématu [hostitele ASP.NET Core ve Windows se službou IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 

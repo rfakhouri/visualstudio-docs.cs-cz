@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 7f2a09d7f3eb0df05ae1ba3c05706746cb9d7eb9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8929a0b3bec64bbf2fc12bd84f6938463393a32c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013636"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070266"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Vytvoření aplikace OpenGL ES na Androidu a iOS
 
@@ -31,11 +31,9 @@ Před vytvořením aplikace OpenGL ES pro iOS a Android, musí se ujistěte, že
 
 V tomto kurzu nejprve vytvořte nový projekt aplikace OpenGL ES a následně vytvořit a spustit výchozí aplikaci v emulátoru Visual Studia pro Android. Dále vytvořte aplikaci pro iOS a spusťte aplikaci v simulátoru iOS.
 
-### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
+1. V sadě Visual Studio, zvolte **souboru** > **nový** > **projektu**.
 
-1. Otevřít Visual Studio. V panelu nabídky zvolte **souboru**, **nový**, **projektu**.
-
-2. V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++**, **různé platformy**a klikněte na tlačítko  **Aplikace OpenGLES (Android, iOS)** šablony.
+2. V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++** > **různé platformy**a klikněte na tlačítko **Aplikace OpenGLES (Android, iOS)** šablony.
 
 3. Dejte aplikaci s názvem jako `MyOpenGLESApp`a klikněte na tlačítko **OK**.
 

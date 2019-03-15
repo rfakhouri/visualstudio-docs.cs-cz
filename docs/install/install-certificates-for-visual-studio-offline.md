@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737042"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982997"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalace certifikátů vyžadovaných pro offline instalace sady Visual Studio
 
@@ -113,6 +113,7 @@ Při podpisu je ověřený v online prostředí, rozhraní API pro Windows se po
 ## <a name="checking-if-certificates-are-already-installed"></a>Kontroluje se, pokud jsou již nainstalovány certifikáty
 
 Jedním ze způsobů můžete zkontrolovat na instalaci systému je postupujte podle těchto kroků:
+
 1. Spustit **mmc.exe**.<br/>
   a. Klikněte na soubor a pak vyberte **Přidat/odebrat modul Snap-in**.<br/>
   b. Dvakrát klikněte na panel **certifikáty**vyberte **účet počítače**a potom klikněte na tlačítko **Další**.<br/>

@@ -13,19 +13,38 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac09fa17ea550df127660a56a04d315f8f1a788f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 869e60bf736f792255d36d83c9d9b06d20e67f02
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911166"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069590"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Rychlý start: Vytvoření první aplikace pro Vue.js pomocí sady Visual Studio
 
-V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte a spustí jednoduchou webovou aplikaci Vue.js. Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránku a nainstalovat zdarma.
+V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte a spustí jednoduchou webovou aplikaci Vue.js.
 
 > [!IMPORTANT]
 > Tento článek vyžaduje Vue.js šablonu, která je k dispozici od verze Visual Studio 2017 verze 15.8.
+
+## <a name="prerequisites"></a>Požadavky
+
+* Musíte mít nainstalovanou sadu Visual Studio a úlohy pro vývoj Node.js.
+
+    ::: moniker range=">=vs-2019"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, pokračujte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
+
+    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+
+    ![Úloha Node.js v instalačním programu VS](../ide/media/quickstart-nodejs-workload.png)
+
+* Je nutné mít nainstalovaný modul runtime Node.js.
+
+    Pokud ho nemáte nainstalovaný, nainstalujte si verzi LTS z webu [Node.js](https://nodejs.org/en/download/). Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud se nainstalovaný modul runtime nerozpozná, můžete projekt nakonfigurovat na stránce vlastností pomocí odkazu na nainstalovaný modul runtime (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **Vlastnosti**).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -35,21 +54,23 @@ Nejprve vytvoříte projekt Vue.js webové aplikace.
 
     Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud nezjistí nainstalovaný modul runtime, můžete nakonfigurovat tak, aby odkazovaly nainstalovaný modul runtime na stránce vlastností projektu (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **vlastnosti**).
 
-1. Otevřete Visual Studio 2017.
+1. Otevřít Visual Studio.
 
 1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
-1. V **nový projekt** dialogové okno, v části **JavaScript** > **Node.js** nebo **TypeScript**  >   **Node.js**, zvolte **základní webovou aplikaci Vue.js**. Zadejte název projektu a pak klikněte na tlačítko **OK**.
+1. Vytvořte nový projekt.
 
-     ![VUE.js šablony](../javascript/media/vuejs-template.png)
+    ::: moniker range=">=vs-2019"
+    V **vytvořte nový projekt** dialogovém okně **javascript** nebo **typescript** do vyhledávacího pole filtrovat výsledky a pak zvolte **základní Vue.js webu aplikace**a klikněte na tlačítko **OK**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **základní Vue.js webovou aplikaci**, klikněte na tlačítko **OK**.
+    ::: moniker-end
+    Pokud se nezobrazí **základní Vue.js webové aplikace** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
+
+    ![VUE.js šablony](../javascript/media/vuejs-template.png)
 
     Visual Studio vytvoří nový projekt. Otevře se nový projekt v Průzkumníku řešení (pravé podokno).
-
-     Pokud se nezobrazí **základní Vue.js webovou aplikaci** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
-
-     ![Úloha Node.js v instalačním programu VS](../ide/media/quickstart-nodejs-workload.png)
-
-    Visual Studio vytvoří a nového řešení a otevře projekt.
 
 1. Průběh instalace balíčků npm potřebnou pro aplikaci najdete v okně výstup (dolní podokno).
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953379"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070110"
 ---
 # <a name="customize-startup"></a>Upravit spuštění
 
@@ -65,7 +65,7 @@ Chcete-li nainstalovat vlastní úvodní stránku, otevřete *VSIX* souboru, neb
 1. V **přizpůsobit úvodní stránku** , zvolte na stránce, který chcete.
 
 > [!TIP]
-> Pokud chyba na vlastní úvodní stránce způsobí chybu sady Visual Studio, můžete sadu Visual Studio spustit v nouzovém režimu a pak ji nastavit tak, aby používala výchozí úvodní stránku. Zobrazit [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Pokud chyba na vlastní úvodní stránce způsobí, že Visual Studio selhání, můžete otevřít Visual Studio v nouzovém režimu a potom nastavte ho na použití výchozí úvodní stránku. Zobrazit [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Viz také:
 

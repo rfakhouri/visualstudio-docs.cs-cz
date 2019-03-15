@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223517"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984115"
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testováním částí
 
@@ -112,25 +112,39 @@ Můžete spustit testy jednotek v sadě Visual Studio s použitím rozhraní tes
 
 Postup povolení rozhraní pro testování třetích stran jsou následující:
 
+::: moniker range="vs-2017"
+
 1. Zvolte **nástroje** > **rozšíření a aktualizace** z řádku nabídek.
 
-1. V **rozšíření a aktualizace** dialogového okna rozbalte **Online** kategorie a potom **Visual Studio Marketplace**. Potom kliknutím na možnost **nástroje** > **testování**.
+2. V **rozšíření a aktualizace** dialogového okna rozbalte **Online** kategorie a potom **Visual Studio Marketplace**. Potom kliknutím na možnost **nástroje** > **testování**.
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. Vyberte rozhraní framework nebo adaptér, kterou chcete nainstalovat a klikněte na tlačítko **Stáhnout**.
+::: moniker-end
 
-1. Vytvořte projekt knihovny tříd a přidejte do svého řešení.
+::: moniker range=">=vs-2019"
+
+1. Zvolte **rozšíření** > **spravovat rozšíření** z řádku nabídek.
+
+2. V **spravovat rozšíření** dialogového okna rozbalte **Online** kategorie a potom **Visual Studio Marketplace**. Potom kliknutím na možnost **nástroje** > **testování**.
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. Vyberte rozhraní framework nebo adaptér, kterou chcete nainstalovat a klikněte na tlačítko **Stáhnout**.
+
+4. Vytvořte projekt knihovny tříd a přidejte do svého řešení.
 
    ![Pojmenujte projekt knihovny tříd a přidejte ji](media/create3rdpartyunittest3.png)
 
-1. Instalace modulu plug-in. V **Průzkumníka řešení**, vyberte projekt knihovny tříd a pak zvolte **spravovat balíčky NuGet** její nabídce klepněte pravým tlačítkem myši nebo kontext.
+5. Instalace modulu plug-in. V **Průzkumníka řešení**, vyberte projekt knihovny tříd a pak zvolte **spravovat balíčky NuGet** její nabídce klepněte pravým tlačítkem myši nebo kontext.
 
    ![Správa balíčků NuGet nainstalujte modul plug-in](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) je rozšíření sady Visual Studio, můžete přidávat a aktualizovat knihovny a nástroje pro vaše projekty.
 
-1. V **Správce balíčků NuGet** vyhledejte a vyberte modul plug-in a klikněte na tlačítko **nainstalovat**.
+6. V **Správce balíčků NuGet** vyhledejte a vyberte modul plug-in a klikněte na tlačítko **nainstalovat**.
 
    ![Nainstalujte rozhraní framework 3rd třetích stran](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Postup povolení rozhraní pro testování třetích stran jsou následující:
 
    ![Referenční dokumentace pro rozhraní pro testování částí od 3. stran se přidá do vašeho řešení](media/create3rdpartyunittest6.png)
 
-1. Z projektu knihovny tříd **odkazy** uzlu, vyberte **přidat odkaz**.
+7. Z projektu knihovny tříd **odkazy** uzlu, vyberte **přidat odkaz**.
 
    ![Přidejte odkaz na projekt](media/createunittest6.png)
 
-1. V **správce odkazů** dialogového okna, vyberte projekt, který obsahuje kód, který budete testovat.
+8. V **správce odkazů** dialogového okna, vyberte projekt, který obsahuje kód, který budete testovat.
 
    ![Vyberte projekt kódu k otestování](media/createunittest7.png)
 
-1. Kód pro testování částí.
+9. Kód pro testování částí.
 
    ![Přidejte kód do souboru kódu jednotkového testu](media/create3rdpartyunittest7.png)
 

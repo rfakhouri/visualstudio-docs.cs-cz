@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796839"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983072"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Instalace sady Visual Studio s použitím parametrů příkazového řádku
 
-Při instalaci sady Visual Studio 2017 z příkazového řádku, můžete použít různé parametry příkazového řádku řídit nebo přizpůsobení instalace. Z příkazového řádku můžete provést následující akce:
+Při instalaci sady Visual Studio z příkazového řádku, můžete použít různé parametry příkazového řádku řídit nebo přizpůsobení instalace. Z příkazového řádku můžete provést následující akce:
 
 - Spusťte instalaci s možnostmi předem vybrali.
 - Automatizujte proces instalace.
@@ -45,7 +45,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 (Nahradit `vs_enterprise.exe` odpovídajícím způsobem pro edici produktu instalujete.)
 
 >[!TIP]
-> Další příklady použití příkazového řádku pro instalaci sady Visual Studio 2017, najdete v článku [příklady parametrů příkazového řádku](command-line-parameter-examples.md) stránky.
+> Další příklady použití příkazového řádku instalace sady Visual Studio, najdete v článku [příklady parametrů příkazového řádku](command-line-parameter-examples.md) stránky.
 
 | **Příkaz** | **Popis** |
 | ----------------------- | --------------- |
@@ -54,7 +54,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `update` | Aktualizuje zobrazí nainstalovaný produkt. |
 | `repair` | Opraví zobrazí nainstalovaný produkt. |
 | `uninstall` | Odinstaluje zobrazí nainstalovaný produkt. |
-| `export` | **Novinka v 15.9**: Exportuje výběr instalace na konfigurační soubor instalace. **Poznámka:**: Jde použít jenom s vs_installer.exe. |
+| `export` | **Novinka ve verzi 15.9**: Exportuje výběr instalace na konfigurační soubor instalace. **Poznámka:**: Jde použít jenom s vs_installer.exe. |
 
 ## <a name="install-options"></a>Možnosti instalace
 
@@ -115,7 +115,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Seznam ID pracovního vytížení a komponenta ID
 
-Seznam pracovního vytížení a komponenta ID seřazené podle produktu Visual Studio, najdete v článku [funkcí sady Visual Studio 2017 a ID součástí](workload-and-component-ids.md) stránky.
+Seznam pracovního vytížení a komponenta ID seřazené podle produktu Visual Studio, najdete v článku [ID pracovního vytížení a komponenta Visual Studio](workload-and-component-ids.md) stránky.
 
 ## <a name="list-of-language-locales"></a>Seznam národních prostředí jazyka
 
@@ -155,7 +155,7 @@ Každá operace vygeneruje několik souborů protokolu v `%TEMP%` adresáře, kt
 
 ## <a name="see-also"></a>Viz také:
 
-- [Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017](command-line-parameter-examples.md)
-- [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Příklady parametrů příkazového řádku pro instalaci sady Visual Studio](command-line-parameter-examples.md)
+- [Vytvoření offline instalace sady Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Automatizace instalace sady Visual Studio souborem odpovědí](automated-installation-with-response-file.md)
-- [ID pracovního vytížení a komponenta Visual Studio 2017](workload-and-component-ids.md)
+- [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

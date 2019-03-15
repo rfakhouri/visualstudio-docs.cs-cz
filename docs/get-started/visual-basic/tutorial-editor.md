@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939473"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069629"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
@@ -35,9 +35,21 @@ Tento článek předpokládá, že jste již obeznámeni s jazykem Visual Basic.
 
 Začněte tím, že vytváří se nový soubor a přidat nějaký kód do něj.
 
-1. Otevřete sadu Visual Studio a od **souboru** nabídku v panelu nabídky zvolte **nový soubor**.
+::: moniker range="vs-2017"
 
-1. V **nový soubor** dialogovém okně **Obecné** kategorie, zvolte **třídy jazyka Visual Basic**a klikněte na tlačítko **otevřít**.
+1. Otevřít Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otevřít Visual Studio. Stisknutím klávesy **Esc** nebo klikněte na tlačítko **pokračovat bez kódu** v okně start otevřete vývojové prostředí.
+
+::: moniker-end
+
+2. Z **souboru** nabídku v panelu nabídky zvolte **nový soubor**.
+
+3. V **nový soubor** dialogovém okně **Obecné** kategorie, zvolte **třídy jazyka Visual Basic**a klikněte na tlačítko **otevřít**.
 
    Nový soubor se otevře v editoru pomocí kostru třídy jazyka Visual Basic. (Můžete už Všimněte si, že není nutné k vytvoření úplné projektu sady Visual Studio získáte některé výhody, které nabízí editor kódu, jako je například zvýraznění syntaxe. Vše, co potřebujete je soubor kódu.)
 

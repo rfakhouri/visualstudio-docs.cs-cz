@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 03dbfd8140249a93dfb649894dabab1c57b203c2
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957296"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983998"
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Upravit přidáním nebo odebráním úlohy a komponenty Visual Studio 2017
+# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Upravit sadu Visual Studio přidáním nebo odebráním úlohy a komponenty
 
 Nejenže jsme zjednodušili si můžete přizpůsobit Visual Studio tak, aby odpovídaly úkoly, které chcete dosáhnout, jsme také snadněji příliš přizpůsobení sady Visual Studio. Uděláte to tak, začněte nový instalační program sady Visual Studio a proveďte požadované změny.
 
@@ -69,6 +69,6 @@ Pokud už nechcete používat funkci po ruce úlohy k přizpůsobení instalace 
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
+* [Instalace sady Visual Studio](install-visual-studio.md)
+* [Aktualizace sady Visual Studio](update-visual-studio.md)
+* [Odinstalace sady Visual Studio](uninstall-visual-studio.md)

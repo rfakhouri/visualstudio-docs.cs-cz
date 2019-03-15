@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948469"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069967"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Rychlý start: Vytvoření projektu zátěžového testu
+# <a name="quickstart-create-a-load-test-project"></a>Rychlý start: Vytvoření projektu pro zátěžový test
 
 V tomto rychlém startu během 10 minut dozvíte, jak vytvořit a spustit webový výkon a projekt zátěžového testu v sadě Visual Studio. Zátěžové testy spustit webového výkonu nebo jednotkových testů ke simulace mnoha uživatelů přistupujících na server ve stejnou dobu.
 
@@ -42,15 +42,33 @@ Pokud nemáte již výkonu webu a načíst testování nainstalována součást 
 
 V této části vytvoříme C# projekt zátěžového testu. Můžete také vytvořit projektu jazyka Visual Basic zátěžového testu, pokud dáváte přednost.
 
-1. Otevřít Visual Studio a zvolte **souboru** > **nový** > **projektu** z řádku nabídek.
+::: moniker range="vs-2017"
+
+1. Otevřít Visual Studio.
+
+2. Zvolte **souboru** > **nový** > **projektu** z řádku nabídek.
 
    **Nový projekt** zobrazí se dialogové okno.
 
-1. V **nový projekt** dialogového okna rozbalte **nainstalováno** a **Visual C#** a pak vyberte **Test** kategorie. Zvolte **webový výkon a projekt zátěžového testu** šablony.
+3. V **nový projekt** dialogového okna rozbalte **nainstalováno** a **Visual C#** a pak vyberte **Test** kategorie. Zvolte **webový výkon a projekt zátěžového testu** šablony.
 
    ![Šablona projektu test webového výkonu a zatížení](media/web-perf-load-test-project-template.png)
 
-1. Zadejte název projektu, pokud nechcete použít výchozí název a klikněte na tlačítko **OK**.
+4. Zadejte název projektu, pokud nechcete použít výchozí název a klikněte na tlačítko **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otevřít Visual Studio.
+
+2. V okně Start zvolte **vytvořte nový projekt**.
+
+3. V **vytvořte nový projekt** dialogové okno, zadejte **webového testu** do vyhledávacího pole a pak vyberte **webový výkon a projekt zátěžového testu \[zastaralé]** Šablona pro C#. Zvolte **Další**.
+
+4. Zadejte název projektu, pokud nechcete použít výchozí název a klikněte na tlačítko **vytvořit**.
+
+::: moniker-end
 
    Visual Studio vytvoří projekt a zobrazí soubory v **Průzkumníka řešení**. Projekt zpočátku obsahuje jeden soubor webového testu s názvem *WebTest1.webtest*.
 

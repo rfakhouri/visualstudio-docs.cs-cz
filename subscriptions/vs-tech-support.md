@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: Get-Started-Article
 description: Zjistěte, jak aktivovat výhody technické podpory součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 7b0968532a1feffb667bb0cd2f3e04f1deb02bb5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: f4f633e076f2e1bd0fe84e2909e610663bd78256
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323475"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57867100"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivace a používání výhody technické podpory v předplatných sady Visual Studio
 
@@ -118,7 +118,7 @@ Pokud chcete používat vaše výhoda Visual Studio předplatné technickou podp
 | Visual Studio Dev Essentials | Není k dispozici | Není k dispozici |Není k dispozici|
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup> *zahrnuje: Imagine Premium. Vyloučí: Neprodejné (NFR) Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, představte si standardní, nejcennější Professional (MVP), Regional Director (RD), MCT Software & Services.*
+<sup>1</sup> *zahrnuje: Imagine Premium, BizSpark. Vyloučí: Neprodejné (NFR) Imagine Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Standard, nejcennější Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 <sup>2</sup> *zahrnuje: Imagine Standard.*
 

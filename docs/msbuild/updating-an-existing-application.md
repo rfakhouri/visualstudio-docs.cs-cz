@@ -7,18 +7,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596022"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984037"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizace existující aplikace pro MSBuild 15
 
 Ve verzích nástroje MSBuild před 15.0 nástroje MSBuild byl načten z globální mezipaměti sestavení (GAC) a rozšíření nástroje MSBuild byly nainstalovány v registru. To, že jsou splněné všechny aplikace používá stejnou verzi nástroje MSBuild a měl přístup ke stejné sady nástrojů IP adresu, ale vedle sebe instalace různých verzí sady Visual Studio.
 
-Kvůli podpoře rychlejší a menší a vedle sebe instalace sady Visual Studio 2017 už umístí MSBuild v mezipaměti GAC nebo upraví registru. Bohužel to znamená, že aplikace, které chcete použít rozhraní API nástroje MSBuild k vyhodnocování nebo sestavení projektů nelze implicitně spoléhat na instalaci sady Visual Studio.
+Kvůli podpoře rychlejší a menší a vedle sebe instalace sady Visual Studio 2017 a novějších verzích již umístit MSBuild v mezipaměti GAC nebo upraví registru. Bohužel to znamená, že aplikace, které chcete použít rozhraní API nástroje MSBuild k vyhodnocování nebo sestavení projektů nelze implicitně spoléhat na instalaci sady Visual Studio.
 
 ## <a name="use-msbuild-from-visual-studio"></a>Použití nástroje MSBuild v sadě Visual Studio
 
@@ -42,7 +42,7 @@ Tyto pokyny předpokládají, že používáte [odkazy na NuGet PackageReference
 
 Změňte soubory projektu MSBuild sestavení odkazovat z balíčků NuGet. Zadejte `ExcludeAssets=runtime` NuGet říct, že sestavení jsou potřeba pouze v době sestavení a by neměl být zkopírován do výstupního adresáře.
 
-Hlavní a dílčí verzi nástroje MSBuild balíčků musí být menší než nebo rovna hodnotě minimální verze sady Visual Studio, které chcete podporovat. Pokud chcete podporovat všechny verze sady Visual Studio 2017, verze balíčku odkazují `15.1.548`.
+Hlavní a dílčí verzi nástroje MSBuild balíčků musí být menší než nebo rovna hodnotě minimální verze sady Visual Studio, které chcete podporovat. Například pokud chcete podporu sady Visual Studio 2017 a novějších verzích, odkazovat verze balíčku `15.1.548`.
 
 Například můžete použít tohoto XML kódu:
 

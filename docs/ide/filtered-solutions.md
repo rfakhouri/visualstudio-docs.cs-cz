@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007173"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983881"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Filtrované řešení v sadě Visual Studio
 
@@ -37,7 +37,7 @@ Chcete-li otevřít řešení s jenom některé z jeho projektů, načíst, post
 
 1. Zvolte **souboru** > **otevřít** > **projekt či řešení** z řádku nabídek.
 
-2. V **nový projekt** dialogového okna, vyberte řešení a potom vyberte **projekty se nenačtou**.
+2. V **otevřít projekt** dialogového okna, vyberte řešení a potom vyberte **projekty se nenačtou**.
 
    ![Visual Studio otevřete projekt dialogové okno s nenačtou zaškrtnutých projektů](media/filtered-solutions/do-not-load-projects.png)
 

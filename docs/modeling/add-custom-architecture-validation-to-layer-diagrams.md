@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceb330756ea98961f420be6b148b7a295eee6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970683"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983361"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Přidání vlastního ověřování architektury do diagramů závislostí
 
@@ -59,7 +59,17 @@ Nejrychlejší způsob vytváření validátoru je použití šablony projektu. 
    > [!NOTE]
    > Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).
 
+::: moniker range="vs-2017"
+
 5. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte *VSIX* ve *bin* adresáře. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, zvolte **rozšíření a aktualizace** na **nástroje** nabídky.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte *VSIX* ve *bin* adresáře. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, zvolte **spravovat rozšíření** na **rozšíření** nabídky.
+
+::: moniker-end
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Přidání validátoru vrstvy do samostatného souboru VSIX
 
@@ -118,8 +128,6 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy
     > Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).
 
 8.  Chcete-li nainstalovat VSIX v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte **VSIX** soubor **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows.
-
-     Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.
 
 ##  <a name="programming"></a> Ověření programování
 

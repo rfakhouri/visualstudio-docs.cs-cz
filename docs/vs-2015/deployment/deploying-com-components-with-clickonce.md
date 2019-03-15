@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9422d1c2a185e223b35bc16ad892282ca1c2a420
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786161"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57871305"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] poskytuje snadné a bezpečné mechanismus pro nasazení aplikací .NET. Nicméně pokud vaše aplikace používá starší verzi komponenty modelu COM, je potřeba provést další kroky pro jejich nasazení. Toto téma popisuje, jak nasadit izolované součásti COM a odkazovat na nativní součásti (například z jazyka Visual Basic 6.0 nebo Visual C++).  
   
- Další informace o nasazení izolované komponenty modelu COM, najdete v části "zjednodušení nasazení aplikací s [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a modelu COM bez registrace" v [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Další informace o nasazení izolované komponenty modelu COM, najdete v části "zjednodušení nasazení aplikací s [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a modelu COM bez registrace" v [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx).  
   
 ## <a name="registration-free-com"></a>COM bez registrace  
  COM bez registrace je nová technologie pro nasazení a aktivace izolované komponenty modelu COM. Funguje tak, že vložíte všechny komponenty knihovny typů a registrační informace, které je obvykle nainstalován do systémového registru do souboru XML s názvem manifestu, uloženy ve stejné složce jako aplikace.  

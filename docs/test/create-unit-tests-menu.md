@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315102"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982763"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Metoda zástupné procedury s příkaz Vytvořit testy jednotek pro testování částí Create
 
@@ -38,17 +38,28 @@ Abyste mohli začít, vyberte metodu, typ nebo obor názvů v editoru kódu v pr
 
 ![Pomocí příkazu Vytvořit testy jednotek](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>Nastavení vlastností testu jednotek
+## <a name="set-unit-test-traits"></a>Nastavení vlastností testu jednotek
 
 Pokud budete chtít spustit tyto testy jako součást procesu automatizace testů, můžete zvážit s testů vytvořené v jiném projektu testu (druhá možnost v dialogovém okně výše) a vlastnosti pro test jednotek pro testování částí nastavení. To umožňuje snadněji zahrňte nebo vylučte tyto specifické testy jako součást průběžné integrace nebo průběžného nasazování kanálu. Rysy jsou nastavené tak, že přidáte metadat pro testování částí přímo, jak je znázorněno níže.
 
 ![Nastavení vlastností testu jednotek](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>Pomocí rozhraní pro testování jednotky třetí strany
+## <a name="use-third-party-unit-test-frameworks"></a>Použití rozhraní pro testování jednotky třetí strany
 
 Pomocí sady Visual Studio můžete snadno mít vytvořené pomocí libovolné rozhraní testování částí. Chcete-li nainstalovat další rozhraní pro testování:
 
+::: moniker range="vs-2017"
+
 1. Zvolte **nástroje** > **rozšíření a aktualizace**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Zvolte **rozšíření** > **spravovat rozšíření**.
+
+::: moniker-end
+
 2. Rozbalte **Online** > **Visual Studio Marketplace** > **nástroje**a klikněte na tlačítko **testování**.
 
 ![Pomocí rozhraní pro testování třetích stran](media/createunittestfx.png)

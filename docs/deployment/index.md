@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: Nasazení aplikací | Dokumentace Microsoftu
-description: Zjistěte, jak pomocí sady Visual Studio 2017 k nasazení aplikací, služeb a komponent.
+description: 'Zjistěte, jak pomocí sady Visual Studio k nasazení aplikací, služeb a komponent.'
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 4f6d81af23ba5763b89b19b29cb493e6cb59c8ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947118"
 ---
 # <a name="deployment-in-visual-studio"></a>Nasazení v sadě Visual Studio
 

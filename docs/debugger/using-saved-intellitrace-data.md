@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969717"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57873473"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Použití uložených dat řešení IntelliTrace (C#, Visual Basic, C++)
 
@@ -38,7 +38,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
     |----------------|-------------|
     |Relace IntelliTrace v sadě Visual Studio Enterprise (ale ne Professional nebo Community edice)|[Funkce IntelliTrace](../debugger/intellitrace-features.md)|
     |Testovací relace v nástroji Microsoft Test Manager. Tato možnost připojuje soubor .iTrace k pracovní položce serveru Team Foundation Server.|[Shromažďování více diagnostických dat v manuálních testů](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |Microsoft Monitoring Agent, buď samostatně nebo pomocí System Center 2012 R2 Operations Manager pro technologii ASP.NET webové aplikace a služby SharePoint spuštěnými v nasazení|-   [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co je nového pro System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
+    |Microsoft Monitoring Agent, buď samostatně nebo pomocí System Center 2012 R2 Operations Manager pro technologii ASP.NET webové aplikace a služby SharePoint spuštěnými v nasazení|-   [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co je nového pro System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ##  <a name="GetStarted"></a> Co chcete udělat?
 

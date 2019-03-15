@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413563"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983920"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
 Můžete použít **publikovat** nástroj k importu nastavení publikování a pak nasadíte aplikaci. V tomto článku používáme nastavení publikování pro Azure App Service, ale můžete použít podobným způsobem k importu nastavení publikování z [IIS](../deployment/tutorial-import-publish-settings-iis.md). V některých scénářích použití publikování profilu nastavení může být rychlejší než ruční konfigurace nasazení do služby pro každou instalaci sady Visual Studio.
 
-Tento postup platí pro aplikace ASP.NET, ASP.NET Core a .NET Core v sadě Visual Studio. Můžete také importovat nastavení publikování pro [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) aplikace. Kroky odpovídají Visual Studio 2017 verze 15.6.
+Tento postup platí pro aplikace ASP.NET, ASP.NET Core a .NET Core v sadě Visual Studio. Můžete také importovat nastavení publikování pro [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) aplikace.
 
 V tomto kurzu se naučíte:
 
@@ -37,9 +37,19 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 ## <a name="prerequisites"></a>Požadavky
 
+::: moniker range=">=vs-2019"
+
+* Musíte mít Visual Studio 2019 nainstalovaný a **vývoj pro ASP.NET a web** pracovního vytížení.
+
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 * Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj pro ASP.NET a web** pracovního vytížení.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+::: moniker-end
 
 * Vytvoření služby Azure App Service. Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 

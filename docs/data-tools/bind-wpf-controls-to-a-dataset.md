@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939161"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069863"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 
@@ -56,7 +56,9 @@ Předchozí znalosti následujících konceptů je také užitečné, ale nejsou
 
 Vytvořte nový projekt WPF pro zobrazení záznamů produktu.
 
-1. Spusťte Visual Studio.
+::: moniker range="vs-2017"
+
+1. Otevřít Visual Studio.
 
 2. Na **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
@@ -65,6 +67,18 @@ Vytvořte nový projekt WPF pro zobrazení záznamů produktu.
 4. Vyberte **aplikace WPF** šablony projektu.
 
 5. V **název** zadejte **AdventureWorksProductsEditor** a pak vyberte **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otevřít Visual Studio.
+
+2. V okně Start zvolte **vytvořte nový projekt**.
+
+3. Hledat C# **aplikace WPF** šablony projektů a postupujte podle kroků pro vytvoření projektu, pojmenování projektu **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    Visual Studio vytvoří projekt AdventureWorksProductsEditor.
 

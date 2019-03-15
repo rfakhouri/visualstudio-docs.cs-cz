@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe26bb7e0139c1521de17dab7cd7e8146aa780a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5188a46807eef84b942c3d551c938d97f372413e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907832"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982880"
 ---
-# <a name="uninstall-visual-studio-2017"></a>Odinstalace sady Visual Studio 2017
+# <a name="uninstall-visual-studio"></a>Odinstalace sady Visual Studio
 
 Tato stránka vás provede odinstalací sady Visual Studio, naší integrované sady nástrojů podporujících produktivitu pro vývojáře.
 
@@ -39,7 +39,7 @@ Tato stránka vás provede odinstalací sady Visual Studio, naší integrované 
 
 2. Klikněte na tlačítko spustit instalační program, klikněte na tlačítko ![ikonu podrobností](media/vs2017uninstall-UninstallIcon.png "vyberte ikonu Možnosti") ikonu a pak klikněte na tlačítko **odinstalovat**.
 
-     ![Úprava sady Visual Studio 2017; Změnit, spusťte opravu nebo odinstalovat](media/vs2017-uninstall.PNG "opravit nebo odinstalovat Visual Studio 2017")
+     ![Úprava sady Visual Studio; Změnit, spusťte opravu nebo odinstalovat](media/vs2017-uninstall.PNG "opravit nebo odinstalovat Visual Studio 2017")
 
 3. Klikněte na tlačítko **OK** potvrďte výběr.
 
@@ -59,6 +59,6 @@ Pokud později změníte své rozhodnutí a chcete znovu nainstalovat Visual Stu
 
 ## <a name="see-also"></a>Viz také:
 
-* [Úpravy sady Visual Studio 2017](modify-visual-studio.md)
+* [Úpravy sady Visual Studio](modify-visual-studio.md)
 * [Aktualizace sady Visual Studio](update-visual-studio.md)
 * [Odinstalace sady Visual Studio pro Mac](/visualstudio/mac/uninstall)

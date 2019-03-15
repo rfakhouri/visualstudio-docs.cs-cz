@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd95c248ecec057cfb602b7f2324d680f715ed68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946537"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983062"
 ---
 # <a name="options-page-debugging-node-properties"></a>Stránka Možnosti, vlastnosti uzlu ladění
 Následující tabulky popisují stránky (nebo kolekce vlastností), které jsou přidruženy **ladění** kategorie, `DTE.Properties("Debugging", <Property Page>)` z **možnosti** dialogové okno.
@@ -84,5 +84,5 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
 - [Stránka Možnosti, vlastnosti uzlu Písma a barvy](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Stránka Možnosti, vlastnosti uzlu Textový editor](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Obecné, Ladění, dialogové okno Možnosti](../../debugger/general-debugging-options-dialog-box.md)
-- [Upravit a pokračovat, ladění, dialogové okno Možnosti](../../debugger/edit-and-continue.md?view=vs-2015)
+- [Upravit a pokračovat ladění](../../debugger/edit-and-continue.md)
 - [Za běhu, Ladění, dialogové okno Možnosti](../../debugger/just-in-time-debugging-options-dialog-box.md)

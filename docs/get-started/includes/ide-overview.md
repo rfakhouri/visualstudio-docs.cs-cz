@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 16aa42df49ca7874015a1d012f3d6ce1688b18db
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57874176"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070331"
 ---
 Visual Studio *integrovaného vývojového prostředí* je creative odrazový, můžete použít k úpravám, ladit a sestavovat kód a pak publikujete aplikaci. Integrované vývojové prostředí (IDE) je plně funkční program, který lze použít pro mnoho aspektů vývoje softwaru. Kromě standardní editor a ladicího programu, že většina integrovanými vývojovými prostředími poskytnout, Visual Studio obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a mnoho dalších funkcí, které usnadňují proces vývoje softwaru.
 
@@ -156,7 +156,7 @@ Abyste mohli začít, [stáhněte si Visual Studio](https://visualstudio.microso
 
 ![Úlohy pro vývoj pro různé platformy .NET core v instalační program sady Visual Studio](../media/dotnet-core-cross-platform-workload.png)
 
-Při prvním spuštění aplikace Visual Studio, můžete volitelně [přihlášení](../../ide/signing-in-to-visual-studio.md) pomocí účtu Microsoft nebo pracovní nebo školní účet.
+Když poprvé otevřete Visual Studio, můžete volitelně [přihlášení](../../ide/signing-in-to-visual-studio.md) pomocí účtu Microsoft nebo pracovní nebo školní účet.
 
 ## <a name="create-a-program"></a>Vytvoření programu
 
@@ -236,7 +236,7 @@ Pojďme začít a vytvořit jednoduchý program.
 
 1. Zvolte **vytvořte nový projekt**.
 
-   ![Visual Studio spustit okno Vytvoření nového projektu](../media/vs-2019/start-window.png)
+   ![Visual Studio spustit okno Vytvoření nového projektu](../media/vs-2019/start-window-create-new-project.png)
 
    **Vytvořte nový projekt** okno otevře a zobrazí několik projektů *šablony*. Šablona obsahuje základní souborů a nastavení potřebných pro typ daného projektu.
 

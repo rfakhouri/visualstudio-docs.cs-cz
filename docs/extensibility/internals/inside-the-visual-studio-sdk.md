@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796670"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57870270"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
 Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, včetně architektury sady Visual Studio, komponenty, služby, schémata, nástroje a podobně.
@@ -90,7 +90,7 @@ Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, vč
  Další informace najdete v tématu [projekty](../../extensibility/internals/projects.md) a [řešení](../../extensibility/internals/solutions.md).
 
 ## <a name="project-and-item-templates"></a>Šablony projektů a položek
- Visual Studio obsahuje šablony projektů předdefinované a šablony položek projektu. Můžete také vytvořit vlastní šablony nebo získání šablony z komunity a integrovat je do sady Visual Studio. [Galerie kódů MSDN](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) je místo, kde lze získat šablony a rozšíření.
+ Visual Studio obsahuje šablony projektů předdefinované a šablony položek projektu. Můžete také vytvořit vlastní šablony nebo získání šablony z komunity a integrovat je do sady Visual Studio. [Galerie kódů MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) je místo, kde lze získat šablony a rozšíření.
 
  Šablony obsahují projekt strukturu a základní soubory, které jsou nutné k vytvoření určitého druhu aplikace, ovládací prvek, knihovny nebo třídy. Pokud chcete k vývoji softwaru, který se podobá některou ze šablon, vytvořit projekt, který je založen na šabloně a potom upravte soubory v daném projektu.
 

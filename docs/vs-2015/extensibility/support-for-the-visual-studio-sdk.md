@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0f937434cbad27a2268b0d8f0360d2db606f5d38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30d0dd9256a56d11bfa47ba9504817a07191c974
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760282"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57868721"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Podpora sady Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +37,8 @@ Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy 
 ### <a name="msdn-forums"></a>Fóra na webu MSDN  
  [DISKUZNÍ fóra MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) jiný způsob, jak popovídejte si na chatu s kolegy a odborníky. Grafické uživatelské rozhraní (UI) z fór je navržené tak, aby je jednodušší než diskusních skupin. [Visual Studio Extensibility fórum](http://go.microsoft.com/fwlink/?LinkID=121964) je dobrým začátkem a vyhledejte odpovědi na otázky rozšiřitelnosti. Vždy vyhledejte předtím, než položíte otázku, protože někdo jiný může již požádali stejnou otázku.  
   
-### <a name="visual-studio-gallery"></a>Galerie Visual Studio  
- [Galerie sady Visual Studio](http://visualstudiogallery.msdn.microsoft.com/) je určená pro rozšíření a ukázkový kód. Zjistíte, že nástroje, které zlepšují vaši produktivitu a uživatelského prostředí pomocí sady Visual Studio, ukázkové aplikace, které ukazují, jak použít rozšíření VSPackages a Managed Extensibility Framework (MEF) a jiné druhy ukázky.  
+### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
+ [Visual Studio Marketplace](https://marketplace.visualstudio.com/) je určená pro rozšíření a ukázkový kód. Zjistíte, že nástroje, které zlepšují vaši produktivitu a uživatelského prostředí pomocí sady Visual Studio, ukázkové aplikace, které ukazují, jak použít rozšíření VSPackages a Managed Extensibility Framework (MEF) a jiné druhy ukázky.  
   
 ### <a name="codeplex"></a>CodePlex  
  [CodePlex](http://go.microsoft.com/fwlink/?LinkId=76627) je na opensourcový projekt hostování webu společnosti Microsoft. CodePlex můžete vytvářet a sdílet nové projekty, přispívat do existujících projektů nebo používat aplikace na webu a poskytnout zpětnou vazbu. Všechny PowerToys (a jejich dokumentace), které byly součástí předchozích verzích [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] jsou teď dostupné na webu CodePlex.  
@@ -56,10 +56,10 @@ Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy 
 ### <a name="developer-tools-support"></a>Podpora nástrojů pro vývojáře  
  Podpora je také možné zakoupit. Jsou k dispozici v rámci kategorie Developer Tools v různé nabídky podpory [Microsoft Help and Support Center](http://go.microsoft.com/fwlink/?LinkID=82383).  
   
- Zákazníci, kteří chtějí používat [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] k vývoji komplexní balíčky můžete zvážit zakoupení smlouvu o podpoře Premier se společností Microsoft. Další informace najdete v tématu [programem Microsoft Premier Support](http://go.microsoft.com/fwlink/?LinkID=76660). Pro malé společnosti [partnerské výhody podpory](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) může být zajímavou alternativou k tradiční nabídky Premier Support.  
+ Zákazníci, kteří chtějí používat [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] k vývoji komplexní balíčky můžete zvážit zakoupení smlouvu o podpoře Premier se společností Microsoft. Další informace najdete v tématu [programem Microsoft Premier Support](https://support.microsoft.com/premier). Pro malé společnosti [partnerské výhody podpory](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) může být zajímavou alternativou k tradiční nabídky Premier Support.  
   
 > [!NOTE]
->  Standardní podpora nelze použít na konzultaci nebo pokud chcete získat doporučení.  
+> Standardní podpora nelze použít na konzultaci nebo pokud chcete získat doporučení.  
   
  Můžete odesílat dotazy týkající se nabídky Premier Support ve spojení s programem VSIP [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Dotazy týkající se nové partnerské výhody programu je možné odeslat [ advantg@microsoft.com ](mailto:advantg@microsoft.com).  
   

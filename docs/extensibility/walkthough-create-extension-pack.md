@@ -10,14 +10,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718355"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983010"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Průvodce: Vytvoření balíčku rozšíření
+# <a name="walkthrough-create-an-extension-pack"></a>Návod: Vytvoření balíčku rozšíření
 
 Balíček rozšíření pro je sada rozšíření, které mohou být nainstalovány společně. Balíčky rozšíření umožňují snadno sdílet vaše oblíbená rozšíření s ostatními uživateli nebo sady sadu rozšíření pro konkrétní scénář.
 
@@ -85,7 +85,7 @@ Teď, když se publikuje rozšíření, nainstalujte ho v sadě Visual Studio a 
 
 Odebrat rozšíření z počítače:
 
-1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace...** .
+1. V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.
 
 2. Vyberte `Test Extension Pack` a potom klikněte na tlačítko **odinstalovat**. Rozšíření a její seznam přípon, které jsou součástí balíčku rozšíření se pak být naplánovaná odinstalace.
 

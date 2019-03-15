@@ -1,8 +1,24 @@
+---
+ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58052147"
+---
 ## <a name="prerequisites"></a>Požadavky
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
+::: moniker range=">=vs-2019"
+
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
   * ASP.NET: **Vývoj pro ASP.NET a web**
   * Node.js: **Vývoj v Node.js**
+::: moniker-end
+::: moniker range="vs-2017"
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) nainstalované s odpovídající úlohy pro váš jazyk podle vlastní volby:
+  * ASP.NET: **Vývoj pro ASP.NET a web**
+  * Node.js: **Vývoj v Node.js**
+::: moniker-end
 
 * Předplatné Azure. Pokud ještě nemáte předplatné, [ZDARMA zaregistrovat](https://azure.microsoft.com/free/dotnet/), což zahrnuje 200 USD v kreditech na 30 dnů a 12 měsíců oblíbených služeb zdarma.
 

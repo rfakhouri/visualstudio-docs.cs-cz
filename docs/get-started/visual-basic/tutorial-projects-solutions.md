@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a91bf1a43a5cbb92713b1068f882bd6248c4f70a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 124d27b5dc139e57f9041694afe42d42eef03fb5
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955619"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069616"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Seznamte se s projekty a řešení s použitím jazyka Visual Basic
 
@@ -38,17 +38,35 @@ Bez ohledu na jeho název řešení není "odpověď". Řešení je prostě kont
 
 Naše zkoumání začneme vytvořením prázdné řešení. Po získání znát sady Visual Studio, které pravděpodobně nenajdete sami velmi často vytvoření prázdných řešení. Při vytváření nového projektu sady Visual Studio automaticky vytvoří řešení k umístění projektu, pokud existuje řešení ještě není otevřený.
 
+::: moniker range="vs-2017"
+
 1. Otevřít Visual Studio.
 
-1. Na panelu nabídek, které, jako je na řádku nabídek **souboru** a **upravit**, zvolte **souboru** > **nový**  >   **Projekt**.
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
    **Nový projekt** zobrazí se dialogové okno.
 
-1. V levém podokně rozbalte **ostatní typy projektů**, klikněte na tlačítko **řešení sady Visual Studio**. V prostředním podokně, vyberte **prázdné řešení** šablony. Název řešení **QuickSolution**, klikněte na tlačítko **OK** tlačítko.
+1. V levém podokně rozbalte **ostatní typy projektů**, klikněte na tlačítko **řešení sady Visual Studio**. V prostředním podokně, vyberte **prázdné řešení** šablony. Název řešení **QuickSolution**a klikněte na tlačítko **OK**.
 
    ![Šablonu prázdného řešení v sadě Visual Studio](../media/tutorial-projects-new-solution.png)
 
    **Úvodní stránka** zavře a řešení se zobrazí v **Průzkumníka řešení** na pravé straně okna nástroje Visual Studio. Je pravděpodobně použijete **Průzkumníka řešení** často, procházet obsah vašich projektů.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otevřít Visual Studio.
+
+2. V okně Start zvolte **vytvořte nový projekt**.
+
+3. Na **vytvořte nový projekt** zadejte **prázdné řešení** do vyhledávacího pole, vyberte **prázdné řešení** šablony a klikněte na tlačítko **Další**.
+
+4. Pojmenujte řešení **QuickSolution**a klikněte na tlačítko **vytvořit**.
+
+   Řešení se zobrazí v **Průzkumníka řešení** na pravé straně okna nástroje Visual Studio. Je pravděpodobně použijete **Průzkumníka řešení** často, procházet obsah vašich projektů.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Přidat do projektu
 

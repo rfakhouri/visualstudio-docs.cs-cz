@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742453"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983855"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>První pohled na nasazení v sadě Visual Studio
 
@@ -107,9 +107,9 @@ Pokud potřebujete více komplexní instalace aplikací pro stolní počítače 
 
 - Balíček MSI Instalační program je možné vytvořit [rozšíření Visual Studio 2017 WiX Toolset](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). To je sada nástrojů pro příkazový řádek.
 
-- Balíček Instalační služby MSI a EXE lze vytvořit pomocí [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera softwaru. InstallShield může být použit s Visual Studio 2017 (Community Edition nejsou podporovány). Všimněte si, že program InstallShield Limited Edition je již součástí sady Visual Studio a v sadě Visual Studio 2017; se nepodporuje Obraťte se na [Flexera softwaru](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o budoucí dostupnosti.
+- Balíček Instalační služby MSI a EXE lze vytvořit pomocí [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera softwaru. InstallShield může být použit s Visual Studio 2017 a novějších verzích (Community Edition nejsou podporovány). Všimněte si, že program InstallShield Limited Edition je již součástí sady Visual Studio a v sadě Visual Studio 2017 a novějších verzích; se nepodporuje Obraťte se na [Flexera softwaru](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o budoucí dostupnosti.
 
-- Balíček Instalační služby MSI a EXE lze vytvořit pomocí projektu instalace (vdproj). Chcete-li použít tuto možnost, nainstalujte [projekty instalačního programu Visual Studio 2017 rozšíření](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Balíček Instalační služby MSI a EXE lze vytvořit pomocí projektu instalace (vdproj). Chcete-li použít tuto možnost, nainstalujte [rozšíření projektů instalačního programu sady Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
 - Můžete také nainstalovat požadované součásti pro desktopové aplikace pomocí konfigurace obecného instalačního programu, který je označován jako zaváděcí nástroj. Další informace najdete v tématu [nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md).
 
@@ -127,7 +127,7 @@ Kanály Azure můžete povolit průběžné nasazování vašich aplikací. Dal�
 | --- | --- | --- |
 | **Aplikace Office** | Můžete publikovat doplněk pro Office v sadě Visual Studio. | [Nasazení a publikování vašeho doplňku Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Služby WCF nebo OData** | Když nasadíte na webový server služby WCF RIA můžete používat další aplikace. | [Vývoj a nasazení služeb WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **Aplikace LightSwitch** | Aplikace LightSwitch je již nejsou podporovány v sadě Visual Studio 2017, ale je stále možné nasadit ze sady Visual Studio 2015 a starší. | [Nasazení aplikací LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **Aplikace LightSwitch** | Aplikace LightSwitch se už nepodporuje spouštění v sadě Visual Studio 2017, ale je stále možné nasadit ze sady Visual Studio 2015 a starší. | [Nasazení aplikací LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Další kroky
 

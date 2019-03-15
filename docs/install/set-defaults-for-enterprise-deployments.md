@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910815"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984138"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio 2017
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio
 
 Můžete nastavit zásady registru, které ovlivňují nasazení sady Visual Studio. Tyto zásady jsou globální pro nový instalační program a ovlivnit:
 
@@ -62,6 +62,6 @@ Můžete nastavit následující hodnoty registru:
 
 ## <a name="see-also"></a>Viz také:
 
- * [Instalace sady Visual Studio](install-visual-studio.md)
- * [Zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md)
- * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
+- [Instalace sady Visual Studio](install-visual-studio.md)
+- [Zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md)
+- [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)

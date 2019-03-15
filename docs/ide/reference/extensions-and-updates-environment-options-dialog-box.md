@@ -1,5 +1,5 @@
 ---
-title: Dialogové okno Rozšíření a aktualizace, Prostředí, Možnosti
+title: Rozšíření prostředí, dialogové okno Možnosti
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8625d24be0e5bffa465cb2d5116cd021e99a017
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912856"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983933"
 ---
-# <a name="extensions-and-updates-environment-options-dialog-box"></a>Dialogové okno Rozšíření a aktualizace, Prostředí, Možnosti
+# <a name="extensions-environment-options-dialog-box"></a>Rozšíření prostředí, dialogové okno Možnosti
 
 Pomocí této stránky můžete nastavit možnosti pro jak Visual Studio provádí se aktualizace a jak se rozšíření aktualizovat a zjištění.
 
