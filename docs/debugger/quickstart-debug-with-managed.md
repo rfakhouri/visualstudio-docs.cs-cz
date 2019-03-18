@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c8616ffc9adeebe5fd2b224366d05cbf5c66a2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525372"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152925"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Rychlý start: Při ladění pomocí C# nebo Visual Basic pomocí ladicího programu sady Visual Studio
 
@@ -25,17 +25,20 @@ Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které v
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
-1. V sadě Visual Studio, zvolte **soubor > Nový projekt**.
+1. V sadě Visual Studio, zvolte **soubor > Nový > projekt**.
 
-2. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **.NET Core**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Core)**.
+    ::: moniker range=">=vs-2019"
+    **Vytvořte nový projekt** zobrazí se dialogové okno. Typ **.net** do vyhledávacího pole filtrovat výsledky, zvolte **Konzolová aplikace (.NET Core)** a potom klikněte na tlačítko **Další**. Zadejte název, například **MyDbgApp** a zvolte **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **Nový projekt** zobrazí se dialogové okno. V části **Visual C#** , zvolte **.NET Core**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Core)**. Zadejte název, například **MyDbgApp** a klikněte na tlačítko **OK**.
+    ::: moniker-end
 
-     Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** a **.NET Core** úloh, klikněte na tlačítko **změnit**.
-
-3. Zadejte název, například **MyDbgApp** a klikněte na tlačítko **OK**.
+     Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte **vývoj desktopových aplikací .NET** a **.NET Core** úloh, klikněte na tlačítko **změnit**.
 
     Visual Studio vytvoří projekt.
 
-4. V *Program.cs* nebo *Module1.vb*, nahraďte následující kód
+1. V *Program.cs* nebo *Module1.vb*, nahraďte následující kód
 
     ```csharp
     class Program

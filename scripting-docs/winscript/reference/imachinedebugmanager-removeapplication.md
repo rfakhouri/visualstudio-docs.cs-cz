@@ -2,7 +2,6 @@
 title: IMachineDebugManager::RemoveApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b9b4124429c1a303cd66f4ccbfad8aba46ef3ad
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 0ee70097ab87406d6ad39b244bdec61a72aea836
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097708"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151125"
 ---
 # <a name="imachinedebugmanagerremoveapplication"></a>IMachineDebugManager::RemoveApplication
 Odebere aplikaci ze spuštění seznam aplikací.  
@@ -52,5 +51,5 @@ HRESULT RemoveApplication(
   
 ## <a name="see-also"></a>Viz také  
  [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   
- [Imachinedebugmanager – rozhraní](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [IMachineDebugManager Interface](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

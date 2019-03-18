@@ -1,7 +1,7 @@
 ---
 title: Ladění kódu v Pythonu
 description: Visual Studio poskytují bohatá podpora ladění pro kód Python, včetně nastavení zarážek, krokování, kontrolu hodnoty, prohlížení výjimek a ladění v interaktivním okně.
-ms.date: 01/07/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954358"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151359"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -40,7 +40,7 @@ Také naleznete v následujících článcích ladění specifické pro scéná�
 
 Základní ladicí pracovní postup zahrnuje nastavení zarážek, krokování kódem, kontrolu hodnoty a zpracování výjimek, jak je popsáno v následujících částech.
 
-Ladicí relace začíná **ladění** > **spustit ladění** příkazu **Start** tlačítko na panelu nástrojů nebo **F5**klíč. Tyto akce spuštění po spuštění souboru projektu (ukazuje tučně v **Průzkumníku řešení**) s aktivní prostředí projektu a jakékoli argumenty příkazového řádku nebo vyhledávací cesty zadané v **projektu Vlastnosti** (viz [možnosti ladění projektu](#project-debugging-options)). **Visual Studio 2017 verze 15.6** a upozorní vás později, pokud není nutné nastavit spouštěcí soubor; starší verze může otevřít okno výstupu překladač Pythonu s nebo krátce se zobrazí v okně Výstup a zmizí. V každém případě klikněte pravým tlačítkem na příslušný soubor a vyberte **nastavit jako spouštěcí soubor**.
+Ladicí relace začíná **ladění** > **spustit ladění** příkazu **Start** tlačítko na panelu nástrojů nebo **F5**klíč. Tyto akce spuštění po spuštění souboru projektu (ukazuje tučně v **Průzkumníku řešení**) s aktivní prostředí projektu a jakékoli argumenty příkazového řádku nebo vyhledávací cesty zadané v **projektu Vlastnosti** (viz [možnosti ladění projektu](#project-debugging-options)). Visual Studio 2017 verze 15.6 a novější vás upozorní, pokud nemáte spouštěcí soubor nastavení; starší verze může otevřít okno výstupu překladač Pythonu s nebo krátce se zobrazí v okně Výstup a zmizí. V každém případě klikněte pravým tlačítkem na příslušný soubor a vyberte **nastavit jako spouštěcí soubor**.
 
 > [!Note]
 > Ladicí program vždy začíná na aktivní prostředí projektu Pythonu. Chcete-li změnit prostředí, ujistěte se, jiné jednu aktivní jak je popsáno na [vyberte prostředí Pythonu pro projekt](selecting-a-python-environment-for-a-project.md).
@@ -165,26 +165,22 @@ Existují dva interaktivních oken, můžete použít během relace ladění: st
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Spustí se program od aktuálního příkazu. |
 | `$down`, `$d` | Posune aktuální rámec o jednu úroveň dolů v trasování zásobníku. |
-| `$frame` | | Zobrazí aktuální id rámce.
-| `$frame` | id rámce | Přepne aktuální rámec na zadané id rámce.
+| `$frame` | | Zobrazí aktuální ID rámce.
+| `$frame` | ID rámce | Přepne aktuální rámec ID zadaného rámce.
 | `$load` | Načte příkazy ze souboru a spustí, až do dokončení |
-| `$proc` |  | Zobrazí aktuální id procesu. |
-| `$proc` | id procesu | Přepne aktuální proces na id určeného procesu. |
+| `$proc` |  | Zobrazí ID aktuálního procesu. |
+| `$proc` | ID procesu | Přepne aktuální proces ID určeného procesu. |
 | `$procs` | | Vypíše procesy, které jsou právě laděny. |
 | `$stepin`, `$step`, `$s` | Kroky v dalším volání funkce, pokud je to možné. |
 | `$stepout`, `$return`, `$r` | Vystoupí z aktuální funkce. |
 | `$stepover`, `$until`, `$unt` | Překročí volání další funkce. |
-| `$thread` | | Zobrazí aktuální id vlákna. |
-| `$thread` | id vlákna | Přepne aktuální vlákno na id zadaného vlákna. |
+| `$thread` | | Zobrazí aktuální ID vlákna. |
+| `$thread` | ID vlákna | Přepne aktuální vlákno ID zadaného vlákna. |
 | `$threads` | | Vypíše vlákna, která se právě ladí. |
 | `$up`, `$u` | | Posune aktuální rámec o jednu úroveň v trasování zásobníku. |
 | `$where`, `$w`, `$bt` | Vypíše rámce aktuálního vlákna. |
 
 Všimněte si, že standardní okna ladicího programu, jako například **procesy**, **vlákna**, a **zásobník volání** nejsou synchronizované s **interaktivní ladění** okna. Změna aktivního procesu, vlákna nebo snímek **interaktivní ladění** okno nemá vliv na ostatní okna ladicího programu. Naopak Změna aktivního procesu, vlákna nebo v jiných oknech ladicího programu snímků nemá vliv **interaktivní ladění** okna.
-
-**Interaktivní ladění** okno má vlastní sadu možností, které můžete přistupovat prostřednictvím **nástroje** > **možnosti**  >   **Nástroje Python Tools** > **interaktivní okno ladění**. Na rozdíl od standardní **interaktivní Python** okna, která má samostatné instance pro každé prostředí Pythonu, existuje pouze jeden **interaktivní ladění** okna a vždy používá překladač Pythonu pro proces je laděn. Zobrazit [možnosti – možnosti ladění](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Interaktivní okno Možnosti ladění](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 

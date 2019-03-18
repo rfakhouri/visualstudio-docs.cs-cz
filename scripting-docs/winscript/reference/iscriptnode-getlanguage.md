@@ -2,7 +2,6 @@
 title: IScriptNode::GetLanguage | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1639d1f956413545d82f79af3e6b310b20af564e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 36b7076bf7f261e462802174c6f9014403606ac8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089580"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152847"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
 Vrátí skriptovací jazyk, který používá aktuální uzel skriptu.  

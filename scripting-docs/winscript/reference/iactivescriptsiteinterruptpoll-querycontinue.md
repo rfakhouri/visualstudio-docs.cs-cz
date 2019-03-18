@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptSiteInterruptPoll::QueryContinue | Dokumentace Microsoftu
+title: IActiveScriptSiteInterruptPoll::QueryContinue | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b43211dca57a404d5625cfc2d7ede67a70a0a40
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 63ce45c0973d65d240136d7b42aef0c078b00c9a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087981"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154306"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
 Umožňuje hostiteli k určení, zda by měla ukončit skriptu.  
@@ -51,5 +50,5 @@ HRESULT QueryContinue();
  Použít s více vlákny hostitele `IActiveScript::InterruptScriptThread` metoda ukončení skriptu.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptsiteinterruptpoll – rozhraní](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
+ [IActiveScriptSiteInterruptPoll Interface](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

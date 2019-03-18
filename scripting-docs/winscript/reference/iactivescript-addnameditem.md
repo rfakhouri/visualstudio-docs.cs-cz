@@ -2,7 +2,6 @@
 title: IActiveScript::AddNamedItem | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ae4a84821d0db226cbecb01e329e4f2941a675d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: db0a97c01d948a0c26850ebd1c3f47c6e3900614
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095092"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151853"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
 Přidá do oboru názvů skriptovací stroj název položky kořenové úrovně. Kořenovou položku je objekt s vlastností a metod, zdroj událostí nebo všechny tři.  

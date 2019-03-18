@@ -3,18 +3,18 @@ title: Generovat deconstructor rychlá akce
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a609b16e0d1bc7e30dc26ef047228a6cacdb46b2
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325291"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58159176"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generování deconstructor v sadě Visual Studio
 
@@ -28,7 +28,7 @@ Tato generace kód platí pro:
 
 **Proč:** Deconstructor, můžete zadat ručně, ale tato funkce bude generovat zástupná procedura za vás se správnými výstupní parametry.
 
-## <a name="generate-deconstructor"></a>Generovat deconstructor
+## <a name="generate-deconstructor"></a>Generování dekonstruktorů
 
 1. Deklarujte nový typ s požadovanou si zadanými parametry. Tato deklarace způsobí chybu, pokud žádná instance deconstruct najdete odpovídající vaší deklarace.
 
@@ -42,7 +42,7 @@ Tato generace kód platí pro:
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
       - Klikněte na ![šroubovák](media/screwdriver.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na prázdný řádek ve třídě.
 
-      ![Generovat deconstructor oprava kódu](media/deconstruct-codefix.png)
+      ![Generovat deconstructor opravu kódu](media/deconstruct-codefix.png)
 
 3. Vyberte **generovat metodu "MyInternalClass.Deconstruct"** ke generování deconstructor.
 

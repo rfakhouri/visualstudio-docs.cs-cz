@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::AddTypeLib | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a14a6af9c69772c150164dd9ab49cd13a6a8884
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: b5967438c620a89df98c74c8824809b8fdaf739a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093792"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58153628"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
 Přidá knihovnu typů do oboru skriptu.  
@@ -63,6 +62,6 @@ HRESULT AddTypeLib(
  Tato metoda volá `LoadTypeLib` načtení knihovny typů. Po úspěšném nasazení, tato metoda volá `IActiveScriptAuthor::AddNamedItem` přidání informací o typu.  
   
 ## <a name="see-also"></a>Viz také  
- [Iactivescriptauthor – rozhraní](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [IActiveScriptAuthor Interface](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

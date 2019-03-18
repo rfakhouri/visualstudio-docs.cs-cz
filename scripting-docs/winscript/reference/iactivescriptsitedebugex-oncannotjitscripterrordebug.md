@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Dokumentace Microsoftu
+title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70dd250359d52ae0929fb5fb2c60087f66af2160
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4c643478da37b5a66c22b201ef8f8248df02e4ec
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095118"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154475"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
 Informuje o tom, že hostitel o Chyba za běhu skriptu při ladění procesu Správce JIT ladicí program nenajde.  

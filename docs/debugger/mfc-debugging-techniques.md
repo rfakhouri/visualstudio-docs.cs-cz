@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316870"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154803"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniky ladění MFC
 Pokud ladíte aplikace knihovny MFC, může být užitečné tyto techniky ladění.
@@ -230,7 +230,7 @@ Bloky non-object zahrnout pole a struktury alokována `new`. V tomto případě 
 V aplikaci knihovny MFC můžete použít [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) pro výpis popis všech objektů na haldě, které dosud bylo zrušeno. `DumpAllObjectsSince` Vypíše všechny objekty přidělené od minulého [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Pokud ne `Checkpoint` volání proběhla, `DumpAllObjectsSince` vypíše všechny objekty a nonobjects aktuálně v paměti.
 
 > [!NOTE]
-> Před použitím výpis objektu knihovny MFC, je nutné [povolit diagnostické trasování](#BKMK_Enabling_Memory_Diagnostics).
+> Před použitím výpis objektu knihovny MFC, je nutné [povolit diagnostické trasování](#BKMK_Enabling_memory_diagnostics).
 
 > [!NOTE]
 > MFC automaticky vypíše všechny uniklé objekty při ukončení programu, takže není potřeba vytvořit kód pro výpis objekty v daném okamžiku.

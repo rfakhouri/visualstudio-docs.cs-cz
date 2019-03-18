@@ -33,7 +33,7 @@
 ## [Blokový výběr](block-selection.md)
 ## [Motivy editoru](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Běžné klávesové zkratky](keyboard-shortcuts.md)
+## [Výchozí klávesové zkratky](keyboard-shortcuts.md)
 
 # [Ladění](debugging.md)
 ## [Vizualizace dat](data-visualizations.md)

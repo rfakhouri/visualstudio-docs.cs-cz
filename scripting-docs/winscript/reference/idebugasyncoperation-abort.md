@@ -2,7 +2,6 @@
 title: IDebugAsyncOperation::Abort | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af8b063f86bd08f293518b1494b41e4f01d61b2c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: be696f852f7038316141415494920c43580738c9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093311"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155443"
 ---
 # <a name="idebugasyncoperationabort"></a>IDebugAsyncOperation::Abort
 Slouží ke zrušení operace.  
@@ -49,6 +48,6 @@ HRESULT Abort();
  Tato metoda je obvykle volána z vlákna ladicího programu pro zrušení operace reagovat. Tato metoda způsobí, že `InProgressAbort` metodu `IDebugSyncOperation` objektu, která se má volat.  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugasyncoperation – rozhraní](../../winscript/reference/idebugasyncoperation-interface.md)   
+ [IDebugAsyncOperation Interface](../../winscript/reference/idebugasyncoperation-interface.md)   
  [IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)   
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

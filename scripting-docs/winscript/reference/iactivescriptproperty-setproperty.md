@@ -2,7 +2,6 @@
 title: IActiveScriptProperty::SetProperty | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 683041b50002cb926a36e4f10d6758246af91726
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090766"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58159384"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Nastaví vlastnost, která je určená parametru.  
@@ -103,5 +102,5 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
   
 ## <a name="see-also"></a>Viz také  
  [Určení kompatibility dokumentu](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))   
- [Iactivescriptproperty –](../../winscript/reference/iactivescriptproperty.md)   
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [Informace o verzích](../../javascript/reference/javascript-version-information.md)

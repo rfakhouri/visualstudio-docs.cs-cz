@@ -1,7 +1,7 @@
 ---
 title: Možnosti a nastavení pro Python
 description: Referenční informace pro různá nastavení v sadě Visual Studio, které se týkají kódu v Pythonu a projekty.
-ms.date: 02/11/2019
+ms.date: 03/13/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -17,18 +17,23 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702015"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151164"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Možnosti pro Python v sadě Visual Studio
 
-Chcete-li zobrazit možnosti Python, použijte **nástroje** > **možnosti** nabídce příkaz, ujistěte se, že **zobrazit všechna nastavení** je vybrána a potom přejděte na  **Nástroje Python Tools**:
+Chcete-li zobrazit možnosti Python, použijte **nástroje** > **možnosti** nabídce příkaz, ujistěte se, že **zobrazit všechna nastavení** je vybrána a potom přejděte na  **Python**:
 
+::: moniker range="vs-2017"
 ![Dialogové okno Možnosti Python, obecné](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Dialogové okno Možnosti Python, obecné](media/options-general-2019.png)
+::: moniker-end
 
 Existují také další možnosti specifické pro Python na **textový Editor** > **Python** > **Upřesnit** kartu a na  **Prostředí** > **písma a barvy** kartu v rámci **textový Editor** skupiny.
 
@@ -43,16 +48,36 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 | --- | --- | --- |
 | **Při vytváření virtuálních prostředí zobrazit okno výstupu**| On | Vymazat, aby se zabránilo **výstup** okno nezobrazovalo. |
 | **Zobrazit okno výstupu při instalaci nebo odebrání balíčků** | On | Vymazat, aby se zabránilo **výstup** okno nezobrazovalo. |
-| **Vždy spustit jako správce pip** | Off | Vždy ukládá `pip install` operace pro všechna prostředí. Při instalaci balíčků sady Visual Studio vyzve k zadání oprávnění správce, pokud se prostředí nachází v chráněné části systému souborů, jako *c:\Program Files*. V této výzvy můžete vždy zvýšit `pip install` pro právě jeden prostředí. Zobrazit [balíčky kartu](python-environments-window-tab-reference.md#packages-tab). |
+| **Zobrazit panel oznámení a vytvořte si prostředí** | On | *Visual Studio 2019 only.* Když je tato možnost nastavena a uživatel otevře projekt, který obsahuje *souboru requirements.txt* nebo *environment.yml* souboru, Visual Studio se zobrazí informační panel s návrhy pro vytvoření virtuální prostředí nebo prostředí conda, místo použití výchozího globálního prostředí. |
+| **Zobrazit panel oznámení se mají balíčky nainstalovat** | On | *Visual Studio 2019 only.* Když je tato možnost nastavena a uživatel otevře projekt, který obsahuje *souboru requirements.txt* souboru (a nepoužívá výchozí globální prostředí) sady Visual Studio s balíčky nainstalované v aktuálním porovnává tyto požadavky prostředí. Pokud všechny balíčky, které nebyly nalezeny, Visual Studio zobrazí výzvu k instalaci těchto závislostí. |
+| **Vždy spustit jako správce Správce balíčků** | Off | Vždy ukládá `pip install` a podobné operace správce balíčku pro všechna prostředí. Při instalaci balíčků sady Visual Studio vyzve k zadání oprávnění správce, pokud se prostředí nachází v chráněné části systému souborů, jako *c:\Program Files*. V této výzvy můžete vždy zvýšit oprávnění příkazu install pro právě jeden prostředí. Zobrazit [balíčky kartu](python-environments-window-tab-reference.md#packages-tab). |
 | **Automatické generování databáze pro dokončování při prvním použití** | On | *Platí pro Visual Studio 2017 verze 15.5 a starší a novějších verzí při použití databáze IntelliSense.* Dokončení databáze pro knihovnu upřednostňuje při psaní kódu, která ji používá. Další informace najdete v tématu [kartu technologie Intellisense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignorovat systémové proměnné PYTHONPATH** | On | PYTHONPATH ve výchozím nastavení se ignoruje, protože Visual Studio poskytuje přímější prostředky ke specifikaci cesty pro hledání v prostředí a projekty. Zobrazit [cesty hledání](search-paths.md) podrobnosti. |
 | **Po přidání propojených souborů aktualizovat cesty pro hledání** | On | Při nastavení, přidávání [propojený soubor](managing-python-projects-in-visual-studio.md#linked-files) do projektu aktualizace [cesty hledání](search-paths.md) tak, aby IntelliSense můžete zahrnout obsah složky propojený soubor databáze pro dokončování. Zrušte zaškrtnutí tohoto políčka vyloučit takový obsah z databáze pro dokončování. |
 | **Upozornění při importování modulu se nenašel.** | On | Zrušte tuto možnost, chcete-li potlačit upozornění, když víte, importovaného modulu není v současné době k dispozici, ale jinak nemá vliv na kód operace. |
 | **Sestava nekonzistentní odsazení jako** | **Upozornění** | Protože interpret Pythonu závisí do značné míry na správné odsazení k určení oboru, Visual Studio ve výchozím nastavení vydá upozornění při zjištění nekonzistentní odsazení, které mohou uvádět chyb kódování. Nastavte na **chyby** jako ještě přísnější, což způsobí, že program ukončíte v takových případech. Chcete-li toto chování úplně zakázat, vyberte **není**. |
-| **Kontrola zjišťování/zpráv** | **Jednou za týden** | Nastaví frekvenci, s jakou umožníte softwaru Visual Studio otevřete okno obsahující webovou stránku pomocí souvisejí s Pythonem zjišťování a příspěvky, pokud je k dispozici. Možnosti jsou **nikdy**, **jednou denně**, **jednou za týden**, a **jednou za měsíc**. |
+| **Kontrola zjišťování/zpráv** | **Jednou za týden** | *Visual Studio 2017 nebo starší.* Nastaví frekvenci, s jakou umožníte softwaru Visual Studio otevřete okno obsahující webovou stránku pomocí souvisejí s Pythonem zjišťování a příspěvky, pokud je k dispozici. Možnosti jsou **nikdy**, **jednou denně**, **jednou za týden**, a **jednou za měsíc**. |
 | **Resetovat všechna trvale skrytá dialogová okna** tlačítko | není k dispozici | Různé dialogových oknech, jako poskytují možnosti **tento dialog již příště nezobrazovat**. Pomocí tohoto tlačítka můžete vymazat těchto možností a způsobit, že dialogových oknech se zase objeví. |
 
+::: moniker range="vs-2017"
 ![Dialogové okno Možnosti Python, obecné](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Dialogové okno Možnosti Python, obecné](media/options-general-2019.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="conda-options"></a>Možnosti systému Conda
+
+(**Nástroje** > **možnosti** > **Python** > **Conda** tab.)
+
+| Možnost | Výchozí | Popis |
+| --- | --- | --- |
+| **Cesta ke spustitelnému souboru systému Conda** | (prázdné) | Určuje přesnou cestu k *conda.exe* spustitelný nespoléhat se na výchozí Miniconda instalace, která je součástí s úlohou Pythonu. Pokud zde není uveden jinou cestu, má přednost před za výchozí instalace a žádné další conda.exe spustitelné soubory uvedeny v registru. Toto nastavení může změnit, pokud jste ručně nainstalujte novější verzi programu Anaconda nebo Miniconda nebo chcete použít 32bitový distribuce spíše než 64-bit distribuce výchozí. |
+
+![Dialogové okno Možnosti Python, karta jazyk serveru](media/options-conda.png)
+
+::: moniker-end
 
 ## <a name="debugging-options"></a>Možnosti ladění
 
@@ -65,8 +90,15 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 | **TEE program výstup do okna výstup ladění** | On | V okně samostatné konzoly a sady Visual Studio se zobrazí výstup programu **výstup** okna. Zrušte zaškrtnutí tohoto políčka Zobrazit výstup pouze v okně samostatné konzoly. |
 | **Pozastavte běh při výjimce SystemExit s ukončovacím kódem 0** | Off | Pokud nastavení, ladicí program se zastaví na tuto výjimku. Když je jasné, že ladicí program se ukončí bez přerušení. |
 | **Povolit ladění standardní knihovny Pythonu** | Off | Umožňuje krokování s vnořením do standardní knihovny zdrojový kód při ladění, ale se prodlouží doba potřebná pro ladicí program ke spuštění.|
+| **Zobrazit návratovou hodnotu funkce** | On | *Visual Studio 2019 only.* Zobrazí návratové hodnoty funkce ve **lokální** okně pak krokování přes funkci volání v ladicím programu (F10) |
+| **Použití starší verze ladicího programu** | Off | *Visual Studio 2019 only.* Instruuje Visual Studio ve výchozím nastavení používají starší verze ladicího programu. Další informace najdete v tématu [ladění – použijte starší verze ladicího programu](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
 
+::: moniker range="vs-2017"
 ![Dialogové okno Možnosti Python, karta ladění](media/options-debugging.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Dialogové okno Možnosti Python, karta ladění](media/options-debugging-2019.png)
+::: moniker-end
 
 ## <a name="diagnostics-options"></a>Možnosti diagnostiky
 
@@ -92,6 +124,20 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 | **Skrýt návrhy statické analýzy** | Off | Pokud nastavíte, zobrazí pouze návrhy, které jsou získány vyhodnocením výrazu. Pokud v kombinaci s **Doplňovacím režimem** hodnotu **nikdy vyhodnocujte výrazy**, žádné užitečnou funkci dokončování joinkind **interaktivní** okna. |
 
 ![Možnosti dialogového okna, interaktivní Windows kartu Pythonu](media/options-interactive-windows.png)
+
+::: moniker range=">=vs-2019"
+## <a name="language-server-options"></a>Možnosti jazyka serveru
+
+(**Nástroje** > **možnosti** > **Python** > **jazyk serveru** tab.)
+
+| Možnost | Výchozí | Popis |
+| --- | --- | --- |
+| **Zakázat doplňování z Typeshed** | Off | IntelliSense ve Visual Studio se obvykle používá jako součást balíčku verze Typeshed (sadu *.pyi* soubory) k vyhledání typu standardní knihovnu a knihovny třetích stran pro Python 2 a Python 3. Nastavení této možnosti zakáže připojené TypeShed chování. |
+| **Vlastní cesta Typeshed** | (prázdné) | Pokud nastaveno, Visual Studio používá Typeshed soubory v této cestě místo jeho jako součást balíčku verze. Ignorovat, pokud **zakázat doplňování z Typeshed** nastavena. |
+
+![Dialogové okno Možnosti Python, karta jazyk serveru](media/options-language-server.png)
+
+::: moniker-end
 
 ## <a name="advanced-python-editor-options"></a>Rozšířené možnosti editoru Pythonu
 

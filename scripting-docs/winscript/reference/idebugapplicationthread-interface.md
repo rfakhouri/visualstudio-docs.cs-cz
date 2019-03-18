@@ -2,7 +2,6 @@
 title: Idebugapplicationthread – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 262174d0daecd2c37bafbecee13532ba62e9967f
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a464085eddbea4f5d29c684c0f1dabc6f853b6d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347785"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58158786"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread – rozhraní
 Umožňuje jazykové moduly a hostitelům poskytují synchronizaci vláken a spravovat informace o stavu ladění specifické pro vlákno. Toto rozhraní rozšiřuje `IRemoteDebugApplicationThread` rozhraní a zajistit tak přístup bez vzdálené do vlákna.  

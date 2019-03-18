@@ -2,7 +2,6 @@
 title: Skriptovací rozhraní Windows | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f98e60a82735ae561edf404763e0700f71b3a3d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905360"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154423"
 ---
 # <a name="windows-script-interfaces"></a>Skriptovací rozhraní systému Windows
 
@@ -87,7 +86,7 @@ Tento seznam obsahuje definice skriptování souvisejících termínů použitý
 |----------|----------------|
 |Objekt kódu|Instance vytvořené skriptovací stroj, který je přidružen s názvem položky, jako je například modul formuláře v jazyce Visual Basic nebo C++ třídu přidruženou položku s názvem. Pokud možno toto je objekt OLE modelu COM (Component Object), která podporuje automatizace OLE, proto hostitele nebo jiná entita není skriptu můžete upravit objekt kódu.|
 |Položka s názvem|Objekt OLE COM (nejlépe podporuje automatizace OLE), že hostitel považuje za zajímavé do skriptu. Mezi příklady patří stránka HTML a prohlížeče v webový prohlížeč, dokument a dialogová okna v aplikaci Microsoft Word.|
-|skript|Data, která tvoří program, který spouští skriptovací stroj. Skript může být souvislé spustitelný data, včetně částí textu, bloky `pcode`, nebo dokonce kódy spustitelný bajtů specifické pro počítač. Hostitel načte skript do skriptovací stroj prostřednictvím jednoho z `IPersist*` rozhraní nebo prostřednictvím [IActiveScriptParse –](../winscript/reference/iactivescriptparse.md) rozhraní.|
+|Skript|Data, která tvoří program, který spouští skriptovací stroj. Skript může být souvislé spustitelný data, včetně částí textu, bloky `pcode`, nebo dokonce kódy spustitelný bajtů specifické pro počítač. Hostitel načte skript do skriptovací stroj prostřednictvím jednoho z `IPersist*` rozhraní nebo prostřednictvím [IActiveScriptParse –](../winscript/reference/iactivescriptparse.md) rozhraní.|
 |Skriptovací stroj|Objekt OLE, který zpracovává skripty. Implementuje skriptovací stroj [IActiveScript –](../winscript/reference/iactivescript.md) a volitelně [IActiveScriptParse –](../winscript/reference/iactivescriptparse.md) rozhraní.|
 |Hostitelů skriptování|Aplikace nebo program, který vlastní modul skriptu Windows. Implementuje hostitele [iactivescriptsite –](../winscript/reference/iactivescriptsite.md) a volitelně [iactivescriptsitewindow –](../winscript/reference/iactivescriptsitewindow.md) rozhraní.|
 |Skriptlet|Část skriptu, který získá připojen k objektu skrz [IActiveScriptParse –](../winscript/reference/iactivescriptparse.md) rozhraní. Agregační kolekce skriptlety je skript.|

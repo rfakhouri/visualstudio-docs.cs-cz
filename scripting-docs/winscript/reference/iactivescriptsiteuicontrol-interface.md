@@ -2,7 +2,6 @@
 title: Iactivescriptsiteuicontrol – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39f763a4153671628dbdcf9867629309f7458b33
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 985ccfe2f3b46ea8317abb91b82aec252f626ec3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348331"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155409"
 ---
 # <a name="iactivescriptsiteuicontrol-interface"></a>IActiveScriptSiteUIControl – rozhraní
 Poskytuje metodu chování ovládacího prvku uživatelského rozhraní.  

@@ -2,7 +2,6 @@
 title: IProcessDebugManager::CreateApplication | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f182dd92d181067f930f415ec9332df2658c3ad
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 10d7f2246b327393a810170f5b133f2885186c3a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088631"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152821"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
 Vytvoří nový objekt ladění aplikací pro tuto aplikaci.  
@@ -51,5 +50,5 @@ HRESULT CreateApplication(
  Objekt vytvořený pomocí této metody nemá žádný název a není přidán do běhu seznamu aplikací. Použití `IProcessDebugManager::AddApplication` přidání ladění aplikace do seznamu aplikací.  
   
 ## <a name="see-also"></a>Viz také  
- [Iprocessdebugmanager – rozhraní](../../winscript/reference/iprocessdebugmanager-interface.md)   
+ [IProcessDebugManager Interface](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

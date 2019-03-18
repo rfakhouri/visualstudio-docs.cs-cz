@@ -2,7 +2,6 @@
 title: Iactivescriptprofilercallback3::setwebworkerid – metoda | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347213"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151294"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId – metoda
 Upozornění profileru o ID pracovního procesu má použít pro tuto relaci profilování. Pokud funkce není prováděna v kontextu stránky, není tato metoda vyvolána. Hodnota `webWorkerId` zvýší o 1 pro každý pracovního procesu začínající hodnotou 1. ID hodnoty nemají stabilní nad rámec relaci, a pouze odpovídají pořadí, ve kterém byly vytvořeny zaměstnanců.  

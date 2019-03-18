@@ -1,7 +1,7 @@
 ---
 title: Úprava kódu v Pythonu
 description: Visual Studio pro Python, poskytuje bohaté možnosti technologie IntelliSense, fragmenty kódu a navigačním funkcím, formátování, linting, a refaktoringu.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155393"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155521"
 ---
 # <a name="edit-python-code"></a>Úprava kódu v Pythonu
 
@@ -109,10 +109,20 @@ Použití **spustit Mypy** příkazu pro tento kód generuje následující chyb
 
 ![Příklad výsledku ověřování typu mypy](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Pro verze Pythonu, než 3.5, zobrazí Visual Studio také pomocné parametry typu, které zadáte pomocí *soubory zástupných procedur* (*.pyi*). Pokaždé, když nechcete zahrnout pomocné parametry typu přímo v kódu nebo pokud chcete vytvořit pomocných parametrů typu pro knihovnu, která nepoužívá je přímo, můžete použít soubory zástupných procedur. Další informace najdete v tématu [vytvoření zástupné procedury pro moduly Pythonu](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) Wiki mypy projektu.
+> Pro verze Pythonu, než 3.5, zobrazí Visual Studio také pomocné parametry typu, které zadáte pomocí Typeshed *soubory zástupných procedur* (*.pyi*). Pokaždé, když nechcete zahrnout pomocné parametry typu přímo v kódu nebo pokud chcete vytvořit pomocných parametrů typu pro knihovnu, která nepoužívá je přímo, můžete použít soubory zástupných procedur. Další informace najdete v tématu [vytvoření zástupné procedury pro moduly Pythonu](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) Wiki mypy projektu.
 >
 > V současné době nepodporuje sady Visual Studio pomocných parametrů typu v komentářích.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Pro verze Pythonu, než 3.5, zobrazí Visual Studio také pomocné parametry typu, které zadáte pomocí Typeshed *soubory zástupných procedur* (*.pyi*). Pokaždé, když nechcete zahrnout pomocné parametry typu přímo v kódu nebo pokud chcete vytvořit pomocných parametrů typu pro knihovnu, která nepoužívá je přímo, můžete použít soubory zástupných procedur. Další informace najdete v tématu [vytvoření zástupné procedury pro moduly Pythonu](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) Wiki mypy projektu.
+>
+> Visual Studio obsahuje sady sadu souborů Typeshed pro Python 2 a 3, proto nejsou potřebné další soubory ke stažení. Ale pokud chcete použít jinou sadu souborů, které lze zadat cestu v **nástroje** > **možnosti** > **Python**  >  **Jazyk serveru** možnosti. Zobrazit [možnosti - Language Server](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> V současné době nepodporuje sady Visual Studio pomocných parametrů typu v komentářích.
+::: moniker-end
 
 ### <a name="signature-help"></a>Nápověda k podpisu
 

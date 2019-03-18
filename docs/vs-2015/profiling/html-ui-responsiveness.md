@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752963"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151177"
 ---
 # <a name="html-ui-responsiveness"></a>Rychlost odezvy HTML UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
   
     -   Použití [zobrazit časovou osu relace diagnostiky](#Ruler) zobrazíte [označit kód pro analýzu](#ProfileMark), události životního cyklu aplikací a přidružených časovou osu pro tyto události a časová osa pro data v jiných grafech.  
   
-    -   Použití [graf využití procesoru](#CPUutilization) Chcete-li zobrazit obecné informace o aktivity procesoru a na typu práce je zpracování během konkrétního časového období. Období aktivity nadměrnému využití procesoru je větší pravděpodobnost dojít k problémům s rychlost odezvy a vyřadit snímků.  
+    -   Použití [graf využití procesoru](#CPUUtilization) Chcete-li zobrazit obecné informace o aktivity procesoru a na typu práce je zpracování během konkrétního časového období. Období aktivity nadměrnému využití procesoru je větší pravděpodobnost dojít k problémům s rychlost odezvy a vyřadit snímků.  
   
     -   Pokud vytváříte hru nebo bohatý mediální aplikace, použijte [zobrazení vizuální propustnost (FPS)](#VisualThroughput) k identifikaci období čas, ve kterém Snímková frekvence vyřadit.  
   
@@ -346,8 +346,8 @@ if (performance.mark && performance.measure) {
 |Funkce zpětného volání pro asynchronní modulu Windows Runtime|Skriptování|Asynchronní operace, která aktivuje `Promise` objekt prostředí Windows Runtime dokončil funkce zpětného volání.|  
 |Událost prostředí Windows Runtime|Skriptování|Událost, která na objekt prostředí Windows Runtime došlo k aktivaci zaregistrovaný naslouchací proces.|  
 |Uvolnění paměti|Uvolňování paměti|Byl stráven čas shromažďování paměti pro objekty, které již byly použity.|  
-|Výpočet šablon stylů CSS|Práce se styly|Byly provedeny změny v modelu DOM, který vyžaduje všech ovlivněných elementů proto bylo nutné přepočítat vlastnosti stylu.|  
-|Rozložení|Práce se styly|Byly provedeny změny v modelu DOM, které vyžadovaly velikost nebo pozice všech ovlivněných elementů proto bylo nutné přepočítat.|  
+|Výpočet šablon stylů CSS|Použití stylů|Byly provedeny změny v modelu DOM, který vyžaduje všech ovlivněných elementů proto bylo nutné přepočítat vlastnosti stylu.|  
+|Rozložení|Použití stylů|Byly provedeny změny v modelu DOM, které vyžadovaly velikost nebo pozice všech ovlivněných elementů proto bylo nutné přepočítat.|  
 |Malování|Vykreslování|V modelu DOM byly provedeny vizuální změny a byl proveden pokus o opětovné vykreslování části stránky.|  
 |Vykreslit vrstvu|Vykreslování|Byly provedeny vizuální změny nezávisle vykreslovaného fragmentu modelu DOM (označovaného jako vrstva) a změny potřebné část stránky k vykreslení.|  
 |Dekódování obrázku|Dekódování obrázku|Image byla zahrnuta v modelu DOM a byl proveden pokus o pro dekompresi a dekódování obrázku z původního formátu na rastrový obrázek.|  

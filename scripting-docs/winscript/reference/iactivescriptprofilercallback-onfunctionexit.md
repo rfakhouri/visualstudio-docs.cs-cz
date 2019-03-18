@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerCallback::OnFunctionExit | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb3f71e9a8a383e2362bacb17698f4eec58f464e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 9c84b64a12b1a6b61399f70b7209c86dd8d2a9a4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092197"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154332"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
 Profiler upozorní, že objekt, dokončení provádění funkce skriptovací stroj volání, které není volání do modelu Document Object Model (DOM).  
