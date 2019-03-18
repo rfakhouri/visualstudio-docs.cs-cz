@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222516"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070279"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 
