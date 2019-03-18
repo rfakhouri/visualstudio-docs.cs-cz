@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155133"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149624"
 ---
 # <a name="profile-python-code"></a>Profil kódu Pythonu
 
@@ -32,7 +32,7 @@ Když vyberete **OK**, profiler běží a otevře se sestava výkonu, pomocí kt
 ![Sestava profilace výkonu](media/profiling-results.png)
 
 > [!Note]
-> V současné době Visual Studio podporuje pouze tuto úroveň profilace celé aplikace, ale určitě chceme slyšet váš názor na budoucí funkce. Použití [ **názor na produkt** tlačítko](#feedback) v dolní části této stránky.
+> V současné době Visual Studio podporuje pouze tuto úroveň profilace celé aplikace, ale určitě chceme slyšet váš názor na budoucí funkce. Použití **názor na produkt** tlačítko v dolní části této stránky.
 
 ## <a name="profiling-for-ironpython"></a>Profilace pro IronPython
 

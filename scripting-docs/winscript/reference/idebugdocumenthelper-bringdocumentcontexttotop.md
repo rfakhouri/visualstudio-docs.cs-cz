@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper::BringDocumentContextToTop | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0dcdccd2b06059e376941808827a499f7a2d1e45
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 41452331d03fdca53c8c7048a24adfd349c128ad
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087851"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58144547"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
 Kontext tohoto dokumentu přináší do horní části v uživatelském rozhraní ladicího programu.  

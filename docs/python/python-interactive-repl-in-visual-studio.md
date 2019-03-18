@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155653"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151138"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Práce s interaktivní okno Pythonu
 
@@ -56,7 +56,7 @@ Nakonec můžete vybrat kód v souboru a použít [ **zaslat do Interactive** p�
 
 ## <a name="interactive-window-options"></a>Interaktivní okno Možnosti
 
-Můžete určit různé aspekty **interaktivní** okno prostřednictvím **nástroje** > **možnosti** > **nástroje Python Tools**  >  **Interaktivní Windows** (viz [možnosti](python-support-options-and-settings-in-visual-studio.md)):
+Můžete určit různé aspekty **interaktivní** okno prostřednictvím **nástroje** > **možnosti** > **Python**  >  **Interaktivní Windows** (viz [možnosti](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Možnosti interaktivního okna Pythonu](media/options-interactive-windows.png)
 
@@ -121,4 +121,4 @@ Visual Studio také detekuje buňky kódu počínaje komentáře jako `# In[1]:`
 
 **Interaktivní** okno obsahuje rozšíření IntelliSense na základě živých objektů, na rozdíl od editor kódu, ve kterém je IntelliSense podle pouze analýzu zdrojového kódu. Doporučení jsou uvedená ve více správná **interaktivní** okna, zejména v případě dynamicky generovaného kódu. Nevýhodou je, že funkce s vedlejšími účinky (například protokolování zpráv) může mít vliv na vaše zkušenosti s vývojem.
 
-Pokud toto chování je nějaký problém, změňte nastavení v části **nástroje** > **možnosti** > **nástroje Python Tools**  >   **Interaktivní Windows** v **Doplňovacím režimem** skupině, jak je popsáno na [možnosti - interaktivních oken](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Pokud toto chování je nějaký problém, změňte nastavení v části **nástroje** > **možnosti** > **Python**  >   **Interaktivní Windows** v **Doplňovacím režimem** skupině, jak je popsáno na [možnosti - interaktivních oken](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

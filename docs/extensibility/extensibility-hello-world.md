@@ -1,6 +1,6 @@
 ---
 title: Kurz Hello World rozšíření | Dokumentace Microsoftu
-ms.date: 07/10/2017
+ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688339"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58160703"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Vytvořte své první rozšíření: Hello World
 
@@ -42,45 +42,67 @@ Než začnete, ujistěte se, že jste nainstalovali **vývoj rozšíření sady 
 
 ## <a name="create-an-extensibility-project"></a>Vytvořit projekt rozšíření
 
-Krok 1. Z **souboru** nabídky, klikněte na tlačítko **nový projekt**. V dolní části obrazovky zadejte název vašeho projektu.
+::: moniker range="vs-2017"
 
-Krok 2. Z **šablony** nabídky, klikněte na tlačítko **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a potom klikněte na tlačítko **projekt VSIX**.
+Krok 1. Z **souboru** nabídce vyberte možnost **nový projekt**.
+
+Krok 2. Do vyhledávacího pole v pravém horním rohu, zadejte "vsix" a vyberte vizuál C# **projekt VSIX**. Zadejte "HelloWorld" **název** v dolní části dialogového okna a vyberte **OK**.
 
 ![Nový projekt](media/hello-world-new-project.png)
 
 Teď byste měli vidět stránku Začínáme a některé ukázkové prostředky.
 
-::: moniker range="vs-2017"
-
 Pokud potřebujete ponechat v tomto kurzu, vraťte se do něj, můžete najít váš nový projekt Hello World na **úvodní stránka** v **poslední** oddílu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Krok 1. Z **souboru** nabídce vyberte možnost **nový projekt**. Vyhledejte "vsix" a vyberte vizuál C# **projekt VSIX** a potom **Další**.
+
+Krok 2. Zadejte "HelloWorld" **název projektu** a vyberte **vytvořit**.
+
+![Nový projekt](media/hello-world-new-project-2019.png)
+
+Teď byste měli vidět projekt Hello World v **Průzkumníka řešení**.
 
 ::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Přidat vlastní příkaz.
 
-Krok 1. Pokud vyberete manifest, uvidíte, jaké možnosti jsou uvažovat instance, metadat, popis a verze.
+Krok 1. Pokud vyberete *.vsixmanifest* soubor manifestu, uvidíte, jaké možnosti jsou změnit, jako je verze, popis a Autor.
 
-Krok 2. Klikněte pravým tlačítkem na projekt (nikoli řešení). V místní nabídce klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.
+Krok 2. Klikněte pravým tlačítkem na projekt (nikoli řešení). V místní nabídce vyberte **přidat**a potom **nová položka**.
 
-Krok 3. Vyberte **rozšiřitelnost** části a potom klikněte na tlačítko **vlastního příkazu**.
+Krok 3. Vyberte **rozšiřitelnost** části a klikněte na tlačítko **vlastního příkazu**.
 
-Krok 4. V **název** pole v dolní části, pojmenujte ho, například *Command.cs*.
+Krok 4. V **název** pole v dolní části, zadejte název souboru, třeba *Command.cs*.
 
 ![vlastní příkaz.](media/hello-world-custom-command.png)
 
-Nový příkaz je uveden v **Průzkumníka řešení** pod **prostředky** větve. Toto je také kde najdete další soubory související s příkazu, jako jsou soubory PNG a ICO, pokud chcete změnit bitovou kopii.
+Váš nový příkaz Soubor je viditelný v **Průzkumníka řešení**. V části **prostředky** uzlu, najdete tu souborů souvisejících s svých rukou. Například pokud chcete změnit obrázek, soubor PNG je tady.
 
 ## <a name="modify-the-source-code"></a>Změnit zdrojový kód
 
-V tomto okamžiku je tlačítko, které přidáváte poměrně Obecné. Budete muset upravit VSCT soubor a soubor CS, pokud chcete provádět změny.
+Na tento bod, příkaz a tlačítko je text automaticky generované a velmi zajímavé. Pokud chcete provést změny, můžete upravit VSCT soubor a soubor CS.
 
-* Soubor VSCT je, kde je můžete přejmenovat příkazům, jakož i definují, kam obrátit příkaz systému Visual Studio. Při prohlížení souboru VSCT uvidíte velké množství komentářem kódu, který vysvětluje, co každý oddíl ovládacích prvků kódu.
+* Soubor VSCT je, kde je můžete přejmenovat příkazům, jakož i definují, kam obrátit příkaz systému Visual Studio. Při prohlížení souboru VSCT si povšimněte komentáře, které popisují, co každý oddíl VSCT ovládacích prvků kódu.
 
 * Soubor CS je, ve kterém můžete definovat akce, jako je například obslužné rutiny kliknutí.
+
+::: moniker range="vs-2017"
 
 Krok 1. V **Průzkumníka řešení**, najít soubor VSCT pro nový příkaz. V takovém případě bude volána *CommandPackage.vsct*.
 
 ![příkaz balíčku vsct](media/hello-world-command-package-vsct.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Krok 1. V **Průzkumníka řešení**, najít soubor VSCT pro váš balíček rozšíření VS. V takovém případě bude volána *HelloWorldPackage.vsct*.
+
+::: moniker-end
 
 Krok 2. Změnit `ButtonText` parametr `Say Hello World!`.
 
@@ -96,14 +118,15 @@ Krok 2. Změnit `ButtonText` parametr `Say Hello World!`.
   ...
 ```
 
-Krok 3. Přejděte zpět na **Průzkumníka řešení** a najít *Command.cs* souboru. Změňte řetězec `message` pro příkaz `string.Format(..)` k `Hello World!`.
+Krok 3. Přejděte zpět na **Průzkumníka řešení** a najít *Command.cs* souboru. V `Execute` metodu, změňte řetězec `message` z `string.Format(..)` k `Hello World!`.
 
 ```csharp
   ...
-  private void MenuItemCallback(object sender, EventArgs e)
+  private void Execute(object sender, EventArgs e)
   {
+    ThreadHelper.ThrowIfNotOnUIThread();
     string message = "Hello World!";
-    string title = "Command1";
+    string title = "Command";
 
     // Show a message box to prove we were here
     VsShellUtilities.ShowMessageBox(
@@ -123,11 +146,15 @@ Nezapomeňte si uložit změny do každého souboru.
 
 Nyní můžete spustit zdrojový kód v experimentální instanci aplikace Visual Studio.
 
-Krok 1. Klikněte na tlačítko **Start** na panelu nástrojů. Toto sestavení vašeho projektu a spustí ladicí program spouští novou instanci sady Visual Studio, volá se, **experimentální instanci**.
+Krok 1. Stisknutím klávesy **F5** ke spuštění **spustit ladění** příkazu. Tento příkaz sestaví váš projekt a spustí ladicí program spouští novou instanci sady Visual Studio, volá se, **experimentální instanci**.
+
+::: moniker range="vs-2017"
 
 Zobrazí se slova **experimentální instanci** v záhlaví programu sady Visual Studio.
 
 ![experimentální instanci záhlaví](media/hello-world-exp-instance.png)
+
+::: moniker-end
 
 Krok 2. Na **nástroje** nabídku **experimentální instanci**, klikněte na tlačítko **Say Hello World!**.
 
@@ -141,4 +168,5 @@ Teď, když znáte základy práce se rozšíření produktu Visual Studio, zde 
 
 * [Začněte vyvíjet rozšíření aplikace Visual Studio](starting-to-develop-visual-studio-extensions.md) – ukázky, kurzy. a publikování rozšíření
 * [Co je nového ve Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) – nové funkce rozšíření v sadě Visual Studio 2017
+* [Co je nového ve Visual Studio SDK. 2019](whats-new-visual-studio-2019-sdk.md) – nové funkce rozšíření v aplikaci Visual Studio 2019
 * [V sadě Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) – další podrobnosti o rozšíření produktu Visual Studio

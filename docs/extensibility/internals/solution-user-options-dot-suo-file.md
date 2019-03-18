@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f529a3861ed6061b428818140ad90d6ca79991af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fab823a9057c44eca9928b1b1f97ec446fb251c4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600864"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145080"
 ---
 # <a name="solution-user-options-suo-file"></a>Soubor uživatelských možností řešení (.Suo)
 Soubor řešení uživatelské možnosti (.suo) obsahuje možnosti řešení pro jednotlivé uživatele. Tento soubor by neměl být vráceny se změnami do správy zdrojového kódu.
@@ -38,4 +38,4 @@ Soubor řešení uživatelské možnosti (.suo) obsahuje možnosti řešení pro
 
 ## <a name="see-also"></a>Viz také
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
-- [Řešení](../../extensibility/internals/solutions.md)
+- [Řešení](../../extensibility/internals/solutions-overview.md)

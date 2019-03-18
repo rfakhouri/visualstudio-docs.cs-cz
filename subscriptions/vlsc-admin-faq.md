@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Časté otázky k migraci Volume License Service Center správce
 searchscope: VS Subscription
-ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953940"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145262"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrace správy předplatných služby Visual Studio
 
@@ -36,7 +36,7 @@ To je obrovská přechod a dokončí se ve fázích, dokud na nový portál pro 
 Vaše organizace není nutné se zaregistrovat do služby Azure AD, ale můžete to provést kdykoli. Pokud budete chtít připojit ke službě Azure AD, můžete tak provést bez poplatků pomocí na úrovni free pro službu Azure AD. S Azure Active Directory budete s vyšší zabezpečení, řízení a dlouhodobou spolehlivost chránit organizaci. Nicméně pokud nejste připraveno pro Azure AD, se budete moci pokračovat v používání Accounts Microsoft (MSA) stejně jako dnes.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>Jak poznám, kdy se budou migrovat Moje organizace?
-Primární nebo informační kontakt obdrží e-mail od nás vyzývající k dokončení procesu registrace jeden týden před migrací vaší organizace. Správci předplatného také obdrží e-mail s informacemi o tom, že jsme kontaktovali primární nebo informační kontakty a poskytuje podrobnosti o tom, jak zajistit úspěšnou registraci. Zjistěte, jak [vyhledejte vaší organizace primární nebo informační kontakty](#How-do-I-find-out-who-my-Primary-or-Notices-Contact-is?).
+Primární nebo informační kontakt obdrží e-mail od nás vyzývající k dokončení procesu registrace jeden týden před migrací vaší organizace. Správci předplatného také obdrží e-mail s informacemi o tom, že jsme kontaktovali primární nebo informační kontakty a poskytuje podrobnosti o tom, jak zajistit úspěšnou registraci. Zjistěte, jak [vyhledejte vaší organizace primární nebo informační kontakty](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
 
 ### <a name="is-onboarding-different-from-migration"></a>Připojení se liší od migrace?
 Ano.  Existují dvě fáze v tomto procesu. Nastavení (nebo připojení) vaší organizace před migrací se zajistí, že se nijak nepřeruší práce se změnami jako správce. Jakmile provedeme migraci informací vaší organizace, které pak budou moct spravovat předplatná sady Visual Studio na novém portálu. Pokud primární nebo informační kontakty nemáte připojení před migrací, správci předplatného se zablokuje a nebudete moct spravovat předplatná, dokud dokončit proces zařazení.

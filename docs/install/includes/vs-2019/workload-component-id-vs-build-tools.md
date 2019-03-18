@@ -5,16 +5,16 @@ description: Pomocí ID pracovního vytížení a komponenta Visual Studio můž
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/29/2019
+ms.date: 03/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 4a186885bd49fb5c374c65f1413fddfb22940174
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: f74b014efff346993dbebb1b605e8f6f194f1502
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324366"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58160984"
 ---
 ## <a name="azure-development-build-tools"></a>Nástroje sestavení pro vývoj pro Azure
 

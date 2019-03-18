@@ -11,19 +11,19 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3fbd593c32228545a0529f6bc938bd1dba77690f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794751"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152568"
 ---
 # <a name="project-persistence"></a>Trvalost projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Trvalost se v úvahu důležité pro váš projekt. Většina projektů pomocí položky projektu, které představují soubory. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] také podporuje projekty, jejichž data jsou v jiných souborech založené. Musíte nastavit jako trvalý, soubory vlastněné projektu a souboru projektu. Rozhraní IDE nastaví projekt tak, aby uložit samotné nebo položky projektu.  
   
- Šablony pro projekty se předají objekt pro vytváření projektu. Šablony by měly podporovat inicializace všechny položky projektu podle požadavků konkrétního typu projektu. Tyto šablony lze později uloženy jako soubory projektu a spravovat pomocí rozhraní IDE v řešení. Další informace najdete v tématu [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) a [řešení](../../extensibility/internals/solutions.md).  
+ Šablony pro projekty se předají objekt pro vytváření projektu. Šablony by měly podporovat inicializace všechny položky projektu podle požadavků konkrétního typu projektu. Tyto šablony lze později uloženy jako soubory projektu a spravovat pomocí rozhraní IDE v řešení. Další informace najdete v tématu [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) a [řešení](../../extensibility/internals/solutions-overview.md).  
   
  Položky projektu může být založené na souboru nebo jiné file-based:  
   

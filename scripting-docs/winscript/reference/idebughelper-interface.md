@@ -2,7 +2,6 @@
 title: Idebughelper – rozhraní | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba760dc15cc0a3d3f2f0d80f3a16c5621582bc11
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: d1708b742a484a2e7d6d48cf759f15c08711e13d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347473"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58148057"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper – rozhraní
 Slouží jako objekt pro vytváření pro objekt prohlížeče a jednoduché spojovací body. Správce ladění procesu (PDM) implementuje toto rozhraní, která je využívána skriptovací stroje.  

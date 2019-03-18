@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621003"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146341"
 ---
 # <a name="checklist-create-new-project-types"></a>Kontrolní seznam: Vytvoření nových typů projektů
 Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Následující kontrolní seznam obsahuje příručky s těmito úlohami:
@@ -37,7 +37,7 @@ Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Násl
 
     -   Správa položek projektů, včetně přidání projekt tak, aby **nový projekt** dialogové okno. Další informace najdete v tématu [přidat projekt a šablony položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md) a [registrace šablon projektů a položek](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    -   Trvalost stavu projektu a jednotlivé položky. Další informace najdete v tématu [otevřít a uložit položky projektu](../../extensibility/internals/opening-and-saving-project-items.md). Trvalost informace o řešení, najdete v části [řešení](../../extensibility/internals/solutions.md).
+    -   Trvalost stavu projektu a jednotlivé položky. Další informace najdete v tématu [otevřít a uložit položky projektu](../../extensibility/internals/opening-and-saving-project-items.md). Trvalost informace o řešení, najdete v části [řešení](../../extensibility/internals/solutions-overview.md).
 
     -   Nezávislé na konfiguraci vlastnosti k zobrazení v okně Vlastnosti. Další informace najdete v tématu [rozšířit vlastnosti](../../extensibility/internals/extending-properties.md).
 

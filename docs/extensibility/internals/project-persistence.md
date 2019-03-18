@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601020"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146523"
 ---
 # <a name="project-persistence"></a>Trvalost projektu
 Trvalost se v úvahu důležité pro váš projekt. Většina projektů pomocí položky projektu, které představují soubory. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] také podporuje projekty, jejichž data jsou v jiných souborech založené. Musíte nastavit jako trvalý, soubory vlastněné projektu a souboru projektu. Rozhraní IDE nastaví projekt tak, aby uložit samotné nebo položky projektu.
 
- Šablony pro projekty se předají objekt pro vytváření projektu. Šablony by měly podporovat inicializace všechny položky projektu podle požadavků konkrétního typu projektu. Tyto šablony lze později uloženy jako soubory projektu a spravovat pomocí rozhraní IDE v řešení. Další informace najdete v tématu [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) a [řešení](../../extensibility/internals/solutions.md).
+ Šablony pro projekty se předají objekt pro vytváření projektu. Šablony by měly podporovat inicializace všechny položky projektu podle požadavků konkrétního typu projektu. Tyto šablony lze později uloženy jako soubory projektu a spravovat pomocí rozhraní IDE v řešení. Další informace najdete v tématu [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) a [řešení](../../extensibility/internals/solutions-overview.md).
 
  Položky projektu může být založené na souboru nebo jiné file-based:
 

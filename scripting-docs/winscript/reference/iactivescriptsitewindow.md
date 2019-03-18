@@ -2,7 +2,6 @@
 title: Iactivescriptsitewindow – | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a160b17f4a46237ab78b378664a046fe8a0e7d4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345718"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149455"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
 Toto rozhraní je implementováno hostitele, kteří podporují uživatelského rozhraní na stejný objekt jako [iactivescriptsite –](../../winscript/reference/iactivescriptsite.md) . Hostitelé, kteří nepodporují uživatelské rozhraní, jako jsou třeba servery, by implementovat `IActiveScriptSiteWindow` rozhraní. Skriptovací stroj přistupuje k tomuto rozhraní voláním `QueryInterface` z `IActiveScriptSite`.  

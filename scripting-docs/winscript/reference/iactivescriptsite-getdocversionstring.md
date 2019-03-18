@@ -2,7 +2,6 @@
 title: IActiveScriptSite::GetDocVersionString | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349748"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58147953"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 Načte řetězec definované hostitele, který jednoznačně identifikuje aktuální verzi dokumentu. Pokud související dokument byl změněn mimo obor skript Windows (stejně jako v případě stránku HTML, který právě upravujete v aplikaci Poznámkový blok), můžete to spolu s jeho trvalého stavu, je vynucena Opětovná kompilace při příštím načtení skriptu uložit skriptovací stroj.  

@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper::DefineScriptBlock | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 2a320e4e43a983ace4decbaa68de0b1a7df7d457
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087994"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58144560"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
 Signalizuje možnost do pomocné rutiny určitého rozsahu znaků blok skriptu, který zařizuje služba dané skriptovací stroj.  
@@ -71,6 +70,6 @@ HRESULT DefineScriptBlock(
  `DefineScriptBlock` Metoda by měla být volána po přidání text (například pomocí `IDebugDocumentHelper::AddDBCSText` metoda), ale před skript má být blok (například pomocí `IActiveScriptParse ::ParseScriptText` – metoda).  
   
 ## <a name="see-also"></a>Viz také  
- [Idebugdocumenthelper – rozhraní](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper Interface](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

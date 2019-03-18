@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 93653851ffdbc642530a977436714faf85a50bda
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3d871f6e84dc96a1e1fd5c20a95c234f13a30ab2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326942"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "58161181"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2017"></a>Základní editor Visual Studio (je součástí sady Visual Studio Professional 2017)
 
@@ -55,16 +55,16 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Vývojové nástroje .NE
 Microsoft.Net.Core.Component.SDK.2.1 | Vývojové nástroje .NET core 2.1 | 15.8.27924.0 | Požadováno
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Vývojové nástroje .NET core 2.1 | 15.8.27924.0 | Požadováno
 Microsoft.NetCore.ComponentGroup.Web.2.1 | Vývojové nástroje .NET core 2.1 | 15.8.27924.0 | Požadováno
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.8.27825.0 | Požadováno
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.9.28307.421 | Požadováno
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Knihovny Azure pro .NET | 15.0.26208.0 | Požadováno
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.0.26621.2 | Požadováno
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.9.28307.421 | Požadováno
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulátor úložiště Azure | 15.9.28125.51 | Požadováno
 Microsoft.VisualStudio.Component.CloudExplorer | Průzkumník cloudu | 15.9.28230.55 | Požadováno
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Nástroje pro připojení a publikování | 15.9.28107.0 | Požadováno
 Microsoft.VisualStudio.Component.DockerTools | Kontejnerové vývojové nástroje | 15.8.27906.1 | Požadováno
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kontejnerové vývojové nástroje – Build Tools | 15.7.27617.1 | Požadováno
 Microsoft.VisualStudio.Component.FSharp | F#podpora jazyků | 15.8.27825.0 | Požadováno
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#podpora jazyků pro webové projekty | 15.8.27705.0 | Požadováno
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#podpora jazyků pro webové projekty | 15.9.28307.421 | Požadováno
 Microsoft.VisualStudio.Component.IISExpress | Služba IIS Express  | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostika jazyka JavaScript | 15.8.27729.1 | Požadováno
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Podpora jazyků JavaScript a TypeScript | 15.9.28125.51 | Požadováno
@@ -151,9 +151,9 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.6
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Vývojové nástroje .NET framework 4.6.1 | 15.8.27825.0 | Doporučeno
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 15.6.27406.0 | Doporučeno
 Microsoft.Net.Core.Component.SDK.2.1 | Vývojové nástroje .NET core 2.1 | 15.8.27924.0 | Doporučeno
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.8.27825.0 | Doporučeno
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.9.28307.421 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Knihovny Azure pro .NET | 15.0.26208.0 | Doporučeno
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.0.26621.2 | Doporučeno
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.9.28307.421 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulátor úložiště Azure | 15.9.28125.51 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.Waverton | Základní nástroje pro Azure Cloud Services | 15.9.28107.0 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Nástroje pro vytváření Azure Cloud Services | 15.7.27617.1 | Doporučeno
@@ -219,7 +219,7 @@ Component.Anaconda2.x64 | Anaconda2 64-bit (5.2.0) | 5.2.0 | volitelná,
 Component.Anaconda2.x86 | Anaconda2 32 bitů (5.2.0) | 5.2.0 | volitelná,
 Component.Anaconda3.x86 | Anaconda3 32 bitů (5.2.0) | 5.2.0 | volitelná,
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | volitelná,
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Nástroje Pythonu pro nativní vývoj | 15.8.27729.1 | volitelná,
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Nástroje Pythonu pro nativní vývoj | 15.9.28307.102 | volitelná,
 Microsoft.VisualStudio.Component.Graphics.Tools | Ladicí program grafiky a profiler GPU pro DirectX | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafické nástroje systému Windows 8.1 SDK | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.VC.140 | Nástrojů VC ++ 2015.3 v14.00 (v140) pro desktop | 15.7.27617.1 | volitelná,
@@ -227,7 +227,7 @@ Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ – základní f
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Nástroje pro profilaci v C++ | 15.0.26823.1 | volitelná,
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 verze 15.9 v14.16 nejnovější nástroje v141 pro | 15.9.28230.55 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | volitelná,
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | volitelná,
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | volitelná,
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | volitelná,
 
 ## <a name="net-desktop-development"></a>Vývoj desktopových aplikací .NET
@@ -322,7 +322,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basi
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# a Visual Basic | 15.8.27729.1 | Požadováno
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Nástroje statické analýzy | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.Component.Unity | Visual Studio Tools for Unity | 15.7.27617.1 | Požadováno
-Component.UnityEngine.x64 | 64bitový Editor Unity 2018.1 | 15.8.27924.0 | Doporučeno
+Component.UnityEngine.x64 | 64bitový Editor Unity 2018.3 | 15.9.28307.271 | Doporučeno
 Component.UnityEngine.x86 | 32bitový Editor Unity 5.6 | 15.6.27406.0 | Doporučeno
 
 ## <a name="linux-development-with-c"></a>Vývoj pro Linux v C++
@@ -338,10 +338,10 @@ ID součásti | Název | Version | Typ závislosti
 Component.MDD.Linux | Visual C++ for Linux Development | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ – základní funkce | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Požadováno
-Component.Linux.CMake | Nástroje Visual C++ pro CMake a Linux | 15.8.27906.1 | Doporučeno
+Component.Linux.CMake | Nástroje Visual C++ pro CMake a Linux | 15.9.28307.102 | Doporučeno
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Nástroje statické analýzy | 15.0.26208.0 | Doporučeno
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 verze 15.9 v14.16 nejnovější nástroje v141 pro | 15.9.28230.55 | Doporučeno
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Doporučeno
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Doporučeno
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Vývoj pro ASP.NET a web | 15.8.27825.0 | Doporučeno
 Component.MDD.Linux.GCC.arm | Vložené a IoT vývoj | 15.6.27309.0 | volitelná,
 
@@ -367,12 +367,12 @@ Microsoft.VisualStudio.Component.Graphics.Win81 | Grafické nástroje systému W
 Microsoft.VisualStudio.Component.NuGet | Správce balíčků NuGet | 15.9.28016.0 | Doporučeno
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Nástroje statické analýzy | 15.0.26208.0 | Doporučeno
 Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL pro x86 a x64 | 15.7.27625.0 | Doporučeno
-Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje Visual C++ pro CMake | 15.8.27906.1 | Doporučeno
+Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje Visual C++ pro CMake | 15.9.28307.102 | Doporučeno
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Nástroje pro profilaci v C++ | 15.0.26823.1 | Doporučeno
 Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest | Testovací adaptér pro Boost.Test | 15.8.27906.1 | Doporučeno
 Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | Testovací adaptér pro Google Test | 15.8.27906.1 | Doporučeno
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 verze 15.9 v14.16 nejnovější nástroje v141 pro | 15.9.28230.55 | Doporučeno
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Doporučeno
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Doporučeno
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Vývoj pro ASP.NET a web | 15.8.27825.0 | Doporučeno
 Component.Incredibuild | IncrediBuild – urychlení sestavení | 15.7.27617.1 | volitelná,
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | volitelná,
@@ -393,6 +393,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) pro Desktop C++ [ARM a ARM64] | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.6.27406.0 | volitelná,
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | volitelná,
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.WinXP | Podpora Windows XP pro C++ | 15.8.27924.0 | volitelná,
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK a UCRT SDK | 15.6.27406.0 | volitelná,
@@ -418,18 +419,17 @@ Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15
 Microsoft.VisualStudio.Component.Graphics.Tools | Ladicí program grafiky a profiler GPU pro DirectX | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafické nástroje systému Windows 8.1 SDK | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Nástroje pro profilaci v C++ | 15.0.26823.1 | Doporučeno
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Doporučeno
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Doporučeno
 Component.Android.NDK.R12B | Sada Android NDK (R12B) | 12.1.10 | volitelná,
 Component.Android.SDK23.Private | Instalace sady Android SDK (úroveň rozhraní API 23) (místní instalace pro vývoj pro mobilní zařízení pomocí JavaScriptu nebo C++) | 15.9.28016.0 | volitelná,
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | volitelná,
 Component.Cocos | Cocos | 15.0.26906.1 | volitelná,
 Component.Incredibuild | IncrediBuild – urychlení sestavení | 15.7.27617.1 | volitelná,
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | volitelná,
-Component.JavaJDK | Java SE Development Kit (8.0.1120.15) | 15.6.27406.0 | volitelná,
 Component.MDD.Android | Vývojové nástroje C++ pro Android | 15.0.26606.0 | volitelná,
 Component.OpenJDK | OpenJDK je distribuce Microsoftu | 15.9.28125.51 | volitelná,
 Component.Unreal | Instalační program Unreal Engine | 15.8.27729.1 | volitelná,
-Component.Unreal.Android | Podpora pro Unreal Engine Visual Studio pro Android | 15.0.27005.2 | volitelná,
+Component.Unreal.Android | Podpora pro Unreal Engine Visual Studio pro Android | 15.9.28307.341 | volitelná,
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | volitelná,
 Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 15.6.27406.0 | volitelná,
 Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 15.6.27406.0 | volitelná,
@@ -453,6 +453,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) pro Desktop C++ [ARM a ARM64] | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.6.27406.0 | volitelná,
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | volitelná,
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK a UCRT SDK | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | volitelná,
@@ -484,7 +485,7 @@ Component.Android.NDK.R13B | Sada Android NDK (R13B) | 13.1.7 | volitelná,
 Component.Android.NDK.R13B_3264 | Sada Android NDK (R13B) (32 bitů) | 13.1.8 | volitelná,
 Component.Android.NDK.R15C_3264 | Sada Android NDK (R15C) (32 bitů) | 15.2.1 | volitelná,
 Component.Google.Android.Emulator.API23.Private | Emulátor Google Android (úroveň rozhraní API 23) (místní instalace) | 15.6.27413.0 | volitelná,
-Component.HAXM.Private | Intel Hardware Accelerated provádění Manager (HAXM) (místní instalace) | 15.6.27413.0 | volitelná,
+Component.HAXM.Private | Intel Hardware Accelerated provádění Manager (HAXM) (místní instalace) | 15.9.28307.421 | volitelná,
 Component.Incredibuild | IncrediBuild – urychlení sestavení | 15.7.27617.1 | volitelná,
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | volitelná,
 Component.MDD.IOS | Nástroje pro vývoj iOS C++ | 15.0.26621.2 | volitelná,
@@ -516,7 +517,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Nástroje pro připojení 
 Microsoft.VisualStudio.Component.DockerTools | Kontejnerové vývojové nástroje | 15.8.27906.1 | Požadováno
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kontejnerové vývojové nástroje – Build Tools | 15.7.27617.1 | Požadováno
 Microsoft.VisualStudio.Component.FSharp | F#podpora jazyků | 15.8.27825.0 | Požadováno
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#podpora jazyků pro webové projekty | 15.8.27705.0 | Požadováno
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#podpora jazyků pro webové projekty | 15.9.28307.421 | Požadováno
 Microsoft.VisualStudio.Component.IISExpress | Služba IIS Express  | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostika jazyka JavaScript | 15.8.27729.1 | Požadováno
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Podpora jazyků JavaScript a TypeScript | 15.9.28125.51 | Požadováno
@@ -540,9 +541,9 @@ Microsoft.VisualStudio.ComponentGroup.Web | Vývoj pro ASP.NET a webové nástro
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Vývoj pro ASP.NET a web | 15.8.27825.0 | Požadováno
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Nástroje Microsoft Azure WebJobs | 15.7.27617.1 | Doporučeno
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics tools | 15.8.27825.0 | Doporučeno
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.8.27825.0 | Doporučeno
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.9.28307.421 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Knihovny Azure pro .NET | 15.0.26208.0 | Doporučeno
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.0.26621.2 | Doporučeno
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.9.28307.421 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulátor úložiště Azure | 15.9.28125.51 | Doporučeno
 Microsoft.VisualStudio.Component.CloudExplorer | Průzkumník cloudu | 15.9.28230.55 | Doporučeno
 Microsoft.VisualStudio.Component.DiagnosticTools | Nástroje pro profilaci .NET | 15.8.27729.1 | Doporučeno
@@ -585,8 +586,8 @@ Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# a Visual Basic | 1
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Nástroje statické analýzy | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | Modul šablon ASP.NET | 15.8.27729.1 | Požadováno
 Component.Android.SDK27 | Instalace sady Android SDK (úroveň rozhraní API 27) | 15.9.28016.0 | Doporučeno
-Component.Google.Android.Emulator.API27 | Emulátor Google Android (úroveň rozhraní API 27) | 15.9.28016.0 | Doporučeno
-Component.HAXM | Intel Hardware Accelerated provádění Manager (HAXM) (globální instalace) | 15.6.27413.0 | Doporučeno
+Component.Google.Android.Emulator.API27 | Emulátor Google Android (úroveň rozhraní API 27) | 15.9.28307.421 | Doporučeno
+Component.HAXM | Intel Hardware Accelerated provádění Manager (HAXM) (globální instalace) | 15.9.28307.421 | Doporučeno
 Component.OpenJDK | OpenJDK je distribuce Microsoftu | 15.9.28125.51 | Doporučeno
 Component.Xamarin.Inspector | Sešity ke Xamarinu | 15.0.26606.0 | volitelná,
 Microsoft.Component.ClickOnce | Publikování ClickOnce | 15.8.27825.0 | volitelná,
@@ -596,8 +597,8 @@ Microsoft.VisualStudio.Component.DiagnosticTools | Nástroje pro profilaci .NET 
 Microsoft.VisualStudio.Component.Graphics | Editory obrázků a 3D modelu | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.SQL.CLR | Datové typy CLR pro SQL Server | 15.0.26208.0 | volitelná,
 Microsoft.VisualStudio.Component.VisualStudioData | Zdroje dat a odkazy na služby | 15.6.27406.0 | volitelná,
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | volitelná,
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Nástroje pro univerzální platformu Windows pro Xamarin | 15.7.27617.1 | volitelná,
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | volitelná,
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Nástroje pro univerzální platformu Windows pro Xamarin | 15.9.28307.102 | volitelná,
 
 ## <a name="aspnet-and-web-development"></a>Vývoj pro ASP.NET a web
 
@@ -626,7 +627,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Nástroje pro připojení 
 Microsoft.VisualStudio.Component.DockerTools | Kontejnerové vývojové nástroje | 15.8.27906.1 | Požadováno
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kontejnerové vývojové nástroje – Build Tools | 15.7.27617.1 | Požadováno
 Microsoft.VisualStudio.Component.FSharp | F#podpora jazyků | 15.8.27825.0 | Požadováno
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#podpora jazyků pro webové projekty | 15.8.27705.0 | Požadováno
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#podpora jazyků pro webové projekty | 15.9.28307.421 | Požadováno
 Microsoft.VisualStudio.Component.IISExpress | Služba IIS Express  | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostika jazyka JavaScript | 15.8.27729.1 | Požadováno
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Podpora jazyků JavaScript a TypeScript | 15.9.28125.51 | Požadováno
@@ -656,9 +657,9 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.6
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics tools | 15.8.27825.0 | Doporučeno
 Microsoft.VisualStudio.Component.AspNet45 | Rozšířené funkce ASP.NET | 15.7.27625.0 | Doporučeno
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.8.27825.0 | Doporučeno
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.9.28307.421 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Knihovny Azure pro .NET | 15.0.26208.0 | Doporučeno
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.0.26621.2 | Doporučeno
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.9.28307.421 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulátor úložiště Azure | 15.9.28125.51 | Doporučeno
 Microsoft.VisualStudio.Component.CloudExplorer | Průzkumník cloudu | 15.9.28230.55 | Doporučeno
 Microsoft.VisualStudio.Component.DiagnosticTools | Nástroje pro profilaci .NET | 15.8.27729.1 | Doporučeno
@@ -691,7 +692,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Popis:** Sestavte škálovatelné síťové aplikace využívající Node.js, asynchronního runtime JavaScriptu založený na událostech.
+**Popis:** Sestavte škálovatelné síťové aplikace využívající Node.js, asynchronního runtime JavaScriptu založený na událostech. 
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -816,7 +817,7 @@ Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | volitelná,
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | volitelná,
 Microsoft.Component.PythonTools.UWP | Podpory pro Python IoT | 15.0.26606.0 | volitelná,
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | volitelná,
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Nástroje Pythonu pro nativní vývoj | 15.8.27729.1 | volitelná,
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Nástroje Pythonu pro nativní vývoj | 15.9.28307.102 | volitelná,
 Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 15.6.27406.0 | volitelná,
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 15.6.27406.0 | volitelná,
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 15.6.27406.0 | volitelná,
@@ -824,9 +825,9 @@ Microsoft.Net.Component.4.6.1.TargetingPack | Rozhraní .NET framework 4.6.1 tar
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Vývojové nástroje .NET framework 4.6.1 | 15.8.27825.0 | volitelná,
 Microsoft.Net.Core.Component.SDK.2.1 | Vývojové nástroje .NET core 2.1 | 15.8.27924.0 | volitelná,
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics tools | 15.8.27825.0 | volitelná,
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.8.27825.0 | volitelná,
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure – nástroje pro tvorbu | 15.9.28307.421 | volitelná,
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Knihovny Azure pro .NET | 15.0.26208.0 | volitelná,
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.0.26621.2 | volitelná,
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulátor výpočtů v Azure | 15.9.28307.421 | volitelná,
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulátor úložiště Azure | 15.9.28125.51 | volitelná,
 Microsoft.VisualStudio.Component.Azure.Waverton | Základní nástroje pro Azure Cloud Services | 15.9.28107.0 | volitelná,
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Nástroje pro vytváření Azure Cloud Services | 15.7.27617.1 | volitelná,
@@ -859,7 +860,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 verze 15.9 v14.16
 Microsoft.VisualStudio.Component.Web | Nástroje pro vývoj pro ASP.NET a web | 15.8.27825.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | volitelná,
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | volitelná,
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | volitelná,
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.ComponentGroup.Web | Vývoj pro ASP.NET a webové nástroje – požadavky | 15.9.28219.51 | volitelná,
 
@@ -894,13 +895,13 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Nástroje statické ana
 Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | Požadováno
 Microsoft.VisualStudio.Component.UWP.Support | Nástroje pro univerzální platformu Windows | 15.9.28119.51 | Požadováno
 Microsoft.VisualStudio.Component.VisualStudioData | Zdroje dat a odkazy na služby | 15.6.27406.0 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Požadováno
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Nástroje pro univerzální platformu Windows pro Cordova | 15.7.27617.1 | Požadováno
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Požadováno
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Nástroje pro univerzální platformu Windows pro Cordova | 15.9.28307.102 | Požadováno
 Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET native a .NET Standard | 15.8.27906.1 | Požadováno
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Nástroje pro univerzální platformu Windows pro Xamarin | 15.7.27617.1 | Požadováno
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Nástroje pro univerzální platformu Windows pro Xamarin | 15.9.28307.102 | Požadováno
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Vývoj pro ASP.NET a web | 15.8.27825.0 | Požadováno
 Microsoft.Component.VC.Runtime.OSSupport | Visual C++ runtime pro UPW | 15.6.27406.0 | volitelná,
-Microsoft.Net.Component.4.7.1.SDK | Rozhraní .NET framework 4.7.1 SDK | 15.6.27406.0 | volitelná,
+Microsoft.Net.Component.4.7.2.SDK | Rozhraní .NET framework 4.7.2 SDK | 15.8.27825.0 | volitelná,
 Microsoft.VisualStudio.Component.Graphics.Tools | Ladicí program grafiky a profiler GPU pro DirectX | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafické nástroje systému Windows 8.1 SDK | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Emulátor Windows 10 Mobile (Fall Creators Update) | 15.0.27406.0 | volitelná,
@@ -919,9 +920,9 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) pro Desktop C++ [ARM a ARM64] | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.6.27406.0 | volitelná,
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28218.60 | volitelná,
-Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | Připojení zařízení USB | 15.7.27625.0 | volitelná,
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | Nástroje pro univerzální platformu Windows C++ | 15.9.28107.0 | volitelná,
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | volitelná,
+Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | Připojení zařízení USB | 15.9.28307.102 | volitelná,
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | Nástroje pro univerzální platformu Windows C++ | 15.9.28307.102 | volitelná,
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | volitelná,
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | volitelná,
 
@@ -982,8 +983,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.2821
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Vývoj pro ASP.NET a web | 15.8.27825.0 | Požadováno
 Component.Android.SDK23.Private | Instalace sady Android SDK (úroveň rozhraní API 23) (místní instalace pro vývoj pro mobilní zařízení pomocí JavaScriptu nebo C++) | 15.9.28016.0 | volitelná,
 Component.Google.Android.Emulator.API23.Private | Emulátor Google Android (úroveň rozhraní API 23) (místní instalace) | 15.6.27413.0 | volitelná,
-Component.HAXM.Private | Intel Hardware Accelerated provádění Manager (HAXM) (místní instalace) | 15.6.27413.0 | volitelná,
-Component.JavaJDK | Java SE Development Kit (8.0.1120.15) | 15.6.27406.0 | volitelná,
+Component.HAXM.Private | Intel Hardware Accelerated provádění Manager (HAXM) (místní instalace) | 15.9.28307.421 | volitelná,
 Component.OpenJDK | OpenJDK je distribuce Microsoftu | 15.9.28125.51 | volitelná,
 Microsoft.Component.ClickOnce | Publikování ClickOnce | 15.8.27825.0 | volitelná,
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | volitelná,
@@ -994,8 +994,8 @@ Microsoft.VisualStudio.Component.Graphics | Editory obrázků a 3D modelu | 15.6
 Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Emulátor Windows 10 Mobile (Fall Creators Update) | 15.0.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.SQL.CLR | Datové typy CLR pro SQL Server | 15.0.26208.0 | volitelná,
 Microsoft.VisualStudio.Component.VisualStudioData | Zdroje dat a odkazy na služby | 15.6.27406.0 | volitelná,
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | volitelná,
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Nástroje pro univerzální platformu Windows pro Cordova | 15.7.27617.1 | volitelná,
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | volitelná,
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Nástroje pro univerzální platformu Windows pro Cordova | 15.9.28307.102 | volitelná,
 
 ## <a name="unaffiliated-components"></a>Nespojená komponenty
 
@@ -1012,7 +1012,7 @@ Component.GitHub.VisualStudio | Rozšíření GitHub pro Visual Studio | 2.5.2.2
 Component.Google.Android.Emulator.API23.V2 | Emulátor Google Android (úroveň rozhraní API 23) (globální instalace) | 15.6.27413.0
 Component.Google.Android.Emulator.API25 | Emulátor Google Android (úroveň rozhraní API 25) | 15.7.27604.0
 Microsoft.Component.Blend.SDK.WPF | Blend for Visual Studio SDK pro .NET | 15.6.27406.0
-Microsoft.Component.HelpViewer | Aplikaci Help Viewer | 15.6.27323.2
+Microsoft.Component.HelpViewer | Aplikaci Help Viewer | 15.9.28307.421
 Microsoft.VisualStudio.Component.DependencyValidation.Community | Ověřování závislostí | 15.0.26208.0
 Microsoft.VisualStudio.Component.GraphDocument | DGML editor | 15.0.27005.2
 Microsoft.VisualStudio.Component.LinqToSql | Nástroje LINQ to SQL | 15.6.27406.0

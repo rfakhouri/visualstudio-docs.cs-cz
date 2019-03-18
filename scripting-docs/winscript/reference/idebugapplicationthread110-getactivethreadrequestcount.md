@@ -2,7 +2,6 @@
 title: IDebugApplicationThread110::GetActiveThreadRequestCount | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8bd776aedd4df61797419795afb8dcc8afeb9318
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: d9bda0cc59560d90ebc0a382d858c881e7372c15
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348180"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145067"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
 Vrátí počet vláken požadavků z vlákna PDM přepínání mechanismy, které jsou právě zpracovávána. Toto číslo je obvykle 0 nebo 1. Nicméně číslo může být vyšší, pokud jedno vlákno volání spustil zpracování, ale které jsou aktivuje synchronní volání z vlákna, nebo v opačném případě se pozastaví vlákna a umožňuje příchozí volání na opětovné zpracování (například, že se budou spouštět [ Iremotedebugapplicationevents – rozhraní](../../winscript/reference/iremotedebugapplicationevents-interface.md) událost, která je vydané pro vlákno ladicího programu).  

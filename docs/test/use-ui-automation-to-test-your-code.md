@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223478"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145223"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
@@ -140,7 +140,7 @@ Chcete-li získat přístup k programové nástroje pro testování uživatelsk�
 
 8. Spusťte test.
 
-   Pomocí nástroje Test Explorer, nebo otevřete místní nabídku v testovací metodě a klikněte na tlačítko **spustit testy**. Další informace o tom, jak spustit testy, naleznete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md) a *dalších možností pro spouštění programových testů UI* v [co se chystá?](#what's-next?) části na konci tohoto tématu.
+   Pomocí nástroje Test Explorer, nebo otevřete místní nabídku v testovací metodě a klikněte na tlačítko **spustit testy**. Další informace o tom, jak spustit testy, naleznete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md) a *dalších možností pro spouštění programových testů UI* v [co se chystá?](#whats-next?) části na konci tohoto tématu.
 
 Zbývající části tohoto tématu poskytují další podrobnosti o postupu v tomto postupu.
 
