@@ -2,6 +2,8 @@ items:
 - name: MsBuild
   href: msbuild.md
   items:
+  - name: Novinky ve verzi 16.0 nástroje MSBuild
+    href: whats-new-msbuild-16-0.md
   - name: Novinky ve verzi 15.0 nástroje MSBuild
     href: what-s-new-in-msbuild-15-0.md
   - name: Koncepty nástroje MSBuild
@@ -62,7 +64,7 @@ items:
       - name: Vložené úlohy nástroje MSBuild
         href: msbuild-inline-tasks.md
         items:
-        - name: 'Průvodce: Vytvoření vložené úlohy'
+        - name: 'Návod: Vytvoření vložené úlohy'
           href: walkthrough-creating-an-inline-task.md
       - name: Vložené úlohy MSBuild s použitím RoslynCodeTaskFactory
         href: msbuild-roslyncodetaskfactory.md
@@ -162,9 +164,9 @@ items:
       href: writing-multi-processor-aware-loggers.md
     - name: Vytváření předávajících (sekundárních) protokolovacích nástrojů
       href: creating-forwarding-loggers.md
-  - name: 'Průvodce: Použití nástroje MSBuild'
+  - name: 'Návod: Použití nástroje MSBuild'
     href: walkthrough-using-msbuild.md
-  - name: 'Průvodce: Vytvoření souboru projektu MSBuild od začátku'
+  - name: 'Návod: Vytvoření souboru projektu MSBuild od začátku'
     href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
   - name: Referenční dokumentace nástroje MSBuild
     href: msbuild-reference.md
@@ -433,9 +435,9 @@ items:
       href: updating-an-existing-application.md
   - name: Slovníček nástroje MSBuild
     href: msbuild-glossary.md
-ms.openlocfilehash: d177a19b3fce1e7ebdd182dd09e9c8bbd05709c5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: f05970702d32b15fb27add1adf8dca28a25c4b13
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483741"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983027"
