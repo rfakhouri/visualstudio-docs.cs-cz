@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30d0dd9256a56d11bfa47ba9504817a07191c974
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57868721"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193845"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Podpora sady Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy 
 ## <a name="paid-support"></a>Placená odborná pomoc.  
   
 ### <a name="developer-tools-support"></a>Podpora nástrojů pro vývojáře  
- Podpora je také možné zakoupit. Jsou k dispozici v rámci kategorie Developer Tools v různé nabídky podpory [Microsoft Help and Support Center](http://go.microsoft.com/fwlink/?LinkID=82383).  
+ Podpora je také možné zakoupit. Jsou k dispozici v rámci kategorie Developer Tools v různé nabídky podpory [Microsoft Help and Support Center](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  
   
- Zákazníci, kteří chtějí používat [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] k vývoji komplexní balíčky můžete zvážit zakoupení smlouvu o podpoře Premier se společností Microsoft. Další informace najdete v tématu [programem Microsoft Premier Support](https://support.microsoft.com/premier). Pro malé společnosti [partnerské výhody podpory](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) může být zajímavou alternativou k tradiční nabídky Premier Support.  
+ Zákazníci, kteří chtějí používat [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] k vývoji komplexní balíčky můžete zvážit zakoupení smlouvu o podpoře Premier se společností Microsoft. Další informace najdete v tématu [programem Microsoft Premier Support](https://support.microsoft.com/premier). Pro malé společnosti [Rozšířená podpora pro partnery](https://partner.microsoft.com/support/advanced-cloud-support) může být zajímavou alternativou k tradiční nabídky Premier Support.  
   
 > [!NOTE]
 > Standardní podpora nelze použít na konzultaci nebo pokud chcete získat doporučení.  

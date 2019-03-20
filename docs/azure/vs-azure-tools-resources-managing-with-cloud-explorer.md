@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323799"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194690"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Správa prostředků přidružených k účtům Azure v Průzkumníkovi cloudu sady Visual Studio
 
@@ -24,17 +24,17 @@ Podobně jako [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=52504
 
 ## <a name="prerequisites"></a>Požadavky
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) s **úlohy Azure** vybrali, nebo starší verzi sady Visual Studio s [Microsoft Azure SDK pro .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 nebo novější (naleznete v tématu [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)) se **úlohy Azure** vybrané. Můžete také použít starší verzi sady Visual Studio s [Microsoft Azure SDK pro .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Účet Microsoft Azure – Pokud nemáte účet, můžete si [zaregistrujte si bezplatnou zkušební verzi](http://go.microsoft.com/fwlink/?LinkId=623901) nebo [aktivovat výhody pro předplatitele sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Chcete-li zobrazit Průzkumník cloudu, vyberte **zobrazení** > **Průzkumníka cloudu** na řádku nabídek.
+> Chcete-li zobrazit Průzkumník cloudu, stiskněte **Ctrl**+**Q** k vyvolání **Snadné spuštění**a zadejte **Průzkumníka cloudu**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Azure přidat účet Průzkumník cloudu
 
-Chcete-li zobrazit prostředky přidružené k účtu Azure, musíte nejprve přidat účet do Průzkumníka cloudu.
+Chcete-li zobrazit prostředky přidružené k účtu Azure, musíte nejprve přidat účet do **Průzkumníka cloudu**.
 
-1. V **Průzkumníka cloudu**vyberte **nastavení účtu Azure**.
+1. V **Průzkumníka cloudu**, zvolte **správu účtů** tlačítko.
 
    ![Ikona nastavení účtu Explorer Azure cloudu](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 

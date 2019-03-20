@@ -10,16 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbebaa0de1abebcffea59889a0f58d51d947247
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982893"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194175"
 ---
 # <a name="install-python-interpreters"></a>Instalace interpretů Pythonu
 
 Ve výchozím nastavení při instalaci úlohy vývoj pro Python v sadě Visual Studio 2017 nebo novější nainstaluje taky Python 3 (64 bitů). Volitelně můžete k instalaci 32bitové a 64bitové verze Python 2 a 3 Python, Miniconda (Visual Studio 2019) nebo 2/Anaconda Anaconda 3 (Visual Studio 2017), jak je popsáno v [instalace](installing-python-support-in-visual-studio.md).
+
+::: moniker range=">=vs-2019"
+Alternativně můžete nainstalovat interpretů pythonu standardní z **přidat prostředí** dialogového okna. Vyberte **přidat prostředí** v **prostředí Pythonu** okně nebo na panelu nástrojů Pythonu, vyberte **instalaci Pythonu** kartě označuje které interpretů do Nainstalujte a vyberte **nainstalovat**.
+::: moniker-end
 
 Můžete nainstalovat také ručně žádné interprety uvedené v následující tabulce mimo instalačního programu sady Visual Studio. Například pokud jste nainstalovali Anaconda 3 před instalací sady Visual Studio, není nutné znovu nainstalovat pomocí instalačního programu sady Visual Studio. Můžete také nainstalovat interpretu ručně pokud, třeba novější verzi k dispozici, který ještě se nezobrazí v instalačním programu sady Visual Studio.
 

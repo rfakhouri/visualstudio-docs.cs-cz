@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření sady SDK pomocí C# nebo Visual Basic | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření sady SDK pomocí C# nebo Visual Basic | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,14 +8,14 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f6ee9bb57b99978e720cc3fa0ab8a647f675a4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763146"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194605"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Průvodce: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic
+# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu SDK jednoduché matematické knihovny a pak balíček sady SDK jako Visual Studio Extension (VSIX). Dokončíte následující postupy:  
@@ -175,5 +175,5 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření sady SDK pomocí jazyka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Návod: Vytvoření sady SDK pomocí jazyka JavaScript](http://msdn.microsoft.com/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Návod: Vytvoření sady SDK pomocí jazyka JavaScript](walkthrough-creating-an-sdk-using-javascript.md)   
  [Vytvoření sady SDK (Software Development Kit)](../extensibility/creating-a-software-development-kit.md)

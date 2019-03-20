@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934754"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194895"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Pythonu
 
@@ -26,23 +26,23 @@ Komunita vývojářů Python vytvořil tisíce užitečné balíčky, které mů
 
 1. Vyberte **zobrazení** > **ostatní Windows** > **prostředí Pythonu** příkazu nabídky. **Prostředí Pythonu** jako partnera, který se otevře okno **Průzkumníka řešení** a zobrazí se vám různá prostředí, které jsou k dispozici. Seznam obsahuje i prostředí, které jste si nainstalovali pomocí instalačního programu sady Visual Studio a ty, které můžete nainstalovat samostatně. Prostředí tučným písmem je výchozí prostředí, který se používá pro nové projekty.
 
-   ![Okno prostředí Pythonu](media/environments-default-view-blue.png)
+   ![Okno prostředí Pythonu](media/environments/environments-default-view-blue.png)
 
 2. Prostředí **přehled** karta poskytuje rychlý přístup k **interaktivní** okna pro toto prostředí spolu s instalační složku a interpretů životní prostředí. Vyberte například **otevřít interaktivní okno** a **interaktivní** v sadě Visual Studio se zobrazí okno pro konkrétní prostředí.
 
 3. Vyberte **balíčky** kartě a můžete zobrazit seznam balíčků, které jsou aktuálně nainstalované ve prostředí.
 
-   ![Balíčky nainstalované ve prostředí](media/environments-installed-packages-blue.png)
+   ![Balíčky nainstalované ve prostředí](media/environments/environments-installed-packages-blue.png)
 
 4. Nainstalujte `matplotlib` tak, že do vyhledávacího pole zadáte její název, vyberte **instalace pip**
 
-   ![Instalace matplotlib v prostředí](media/environments-add-matplotlib1.png)
+   ![Instalace matplotlib v prostředí](media/environments/environments-add-matplotlib1.png)
 
 5. Pokud se zobrazí výzva k tomu vyjádřit souhlas ke zvýšení úrovně oprávnění.
 
 6. Po dokončení instalace balíčku se zobrazí v **prostředí Pythonu** okna. **X** napravo od balíček odinstaluje se.
 
-   ![Dokončení instalace matplotlib v prostředí](media/environments-add-matplotlib2.png)
+   ![Dokončení instalace matplotlib v prostředí](media/environments/environments-add-matplotlib2.png)
 
    Indikátor průběhu malé se můžou objevit pod prostředí k označení, že Visual Studio sestavuje své databáze IntelliSense pro nově nainstalovaný balíček. **IntelliSense** karta zobrazuje také podrobnější informace. Všimněte si, že než tuto databázi se dokončí, funkce technologie IntelliSense, jako je automatické dokončování a kontroly syntaxe nebudou aktivní v okně editor pro tento balíček.
 
@@ -65,7 +65,7 @@ Komunita vývojářů Python vytvořil tisíce užitečné balíčky, které mů
 
 8. Spusťte program s (**F5**) nebo bez ladicího programu (**Ctrl**+**F5**) k zobrazení výstupu:
 
-   ![Výstup příkladu matplotlib](media/environments-add-matplotlib3.png)
+   ![Výstup příkladu matplotlib](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Další krok
 

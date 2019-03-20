@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763281"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194454"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +122,7 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
  Technologie IntelliSense jazyka JavaScript poskytuje programovací odkazy pro elementy Dynamic HTML (DHTML) DOM, jako například `body`, `form`, a `div`. Technologie IntelliSense zobrazuje pouze prvky, které jsou obsaženy v aktuálním dokumentu a na hlavní stránce. Technologie IntelliSense jazyka JavaScript také podporuje `window` a `document` objekty a jejich členy.
 
 ###  <a name="IntrinsicObjects"></a> Vnitřní objekty
- Technologie IntelliSense jazyka JavaScript poskytuje programovací odkazy pro vnitřní objekty, jako `Array`, `String`, `Math`, `Date`, a `Number`. Další informace o vnitřních objektech naleznete v tématu [vnitřní objekty](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ Technologie IntelliSense jazyka JavaScript poskytuje programovací odkazy pro vnitřní objekty, jako `Array`, `String`, `Math`, `Date`, a `Number`. Další informace o vnitřních objektech naleznete v tématu [standardní předdefinované objekty](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a> Uživatelem definované proměnné, funkce a objekty
  Pokud změníte soubor jazyka JavaScript [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] prohledá otevřené a odkazované dokumenty k určení všech dostupných prostředků kódu. To zahrnuje proměnné, funkce a objekty, které jste vytvořili. Tyto prostředky jsou pak k dispozici technologii IntelliSense jazyka JavaScript.

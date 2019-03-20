@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 50baba2a5690e370dccd7f458ebfce2d0776d3cd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870977"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194202"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
@@ -211,7 +211,7 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
 Ve většině nastavení jsou otevřené požadované porty instalace technologie ASP.NET a vzdálený ladicí program. Ale budete muset ověřit, že jsou otevřené porty.
 
 > [!NOTE]
-> Na Virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role).
+> Na Virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Požadované porty:
 

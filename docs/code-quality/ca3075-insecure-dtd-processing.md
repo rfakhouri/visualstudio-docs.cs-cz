@@ -1,6 +1,6 @@
 ---
 title: 'CA3075: Zpracování nezabezpečené specifikace DTD'
-ms.date: 11/04/2016
+ms.date: 03/18/2019
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 author: gewarren
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4ea49b9b5563382786b5cf83f577e0b8e96386
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921403"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194616"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Zpracování nezabezpečené specifikace DTD
 
@@ -30,7 +30,7 @@ Pokud používáte nezabezpečené <xref:System.Xml.XmlReaderSettings.DtdProcess
 
 ## <a name="rule-description"></a>Popis pravidla
 
-A *dokumentu typ definice (DTD)* je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnosti dokumentu, podle definice [World Wide Web Consortium (W3C) značky XML (Extensible Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo vyhledá vlastnosti a instance, kde je nedůvěryhodná data přijat upozornit vývojáře o potenciál [informacím](/dotnet/framework/wcf/feature-details/information-disclosure) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:
+A *dokumentu typ definice (DTD)* je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnosti dokumentu, podle definice [World Wide Web Consortium (W3C) značky XML (Extensible Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo vyhledá vlastnosti a instance, kde je nedůvěryhodná data přijat upozornit vývojáře o potenciál [informacím](/dotnet/framework/wcf/feature-details/information-disclosure) hrozby nebo [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:
 
 - Je zapnutá DtdProcessing <xref:System.Xml.XmlReader> instanci, která přeloží externí entity XML pomocí <xref:System.Xml.XmlUrlResolver>.
 
@@ -38,13 +38,13 @@ A *dokumentu typ definice (DTD)* je jedním ze dvou způsobů analyzátor jazyka
 
 - <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> je nastavena na analýzy.
 
-- Nedůvěryhodný vstup zpracována pomocí <xref:System.Xml.XmlResolver> místo <xref:System.Xml.XmlSecureResolver> .
+- Nedůvěryhodný vstup zpracována pomocí <xref:System.Xml.XmlResolver> místo <xref:System.Xml.XmlSecureResolver>.
 
-- Objekt XmlReader.<xref:System.Xml.XmlReader.Create%2A> Metoda je volána s nezabezpečené <xref:System.Xml.XmlReaderSettings> instance nebo vůbec žádné instance.
+- <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> Metoda je volána s nezabezpečené <xref:System.Xml.XmlReaderSettings> instance nebo vůbec žádné instance.
 
 - <xref:System.Xml.XmlReader> je vytvořen s nezabezpečené výchozí nastavení nebo hodnoty.
 
-Ve všech těchto případech je výsledek stejný: obsah buď soubor systému nebo síťových sdílených složek z počítače, kde je zpracování souboru XML se zveřejní pro útočníka, který pak mohou být použity jako vektor DoS.
+Ve všech těchto případech je výsledek stejný: obsah buď soubor systému nebo síťových sdílených složek z počítače, kde je zpracování souboru XML se zveřejní pro útočníka nebo zpracování DTD může sloužit jako vektor DoS.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
@@ -54,11 +54,11 @@ Ve všech těchto případech je výsledek stejný: obsah buď soubor systému n
 
 - Nejsou povoleny <xref:System.Xml.XmlReader> otevřete všem externím prostředkům tak, že nastavíte <xref:System.Xml.XmlResolver> vlastnost **null**.
 
-- Ujistěte se, že <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> vlastnost <xref:System.Data.DataViewManager> přiřazena z důvěryhodného zdroje.
+- Ujistěte se, <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> je vlastnosti přiřazen z důvěryhodného zdroje.
 
 **Rozhraní .NET 3.5 a starší**
 
-- Zakázat zpracování DTD, pokud pracujete se sekvenčním nedůvěryhodných zdrojů tak, že nastavíte <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> vlastnost **true** .
+- Zakázat zpracování DTD, pokud pracujete se sekvenčním nedůvěryhodných zdrojů tak, že nastavíte <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> vlastnost **true**.
 
 - Pomocí třídy XmlTextReader má vyžádané dědičnosti úplný vztah důvěryhodnosti.
 
@@ -204,7 +204,7 @@ public static void TestMethod(string xml)
 {
     XmlDocument doc = new XmlDocument() { XmlResolver = null };
     System.IO.StringReader sreader = new System.IO.StringReader(xml);
-    XmlTextReader reader = new XmlTextReader(sreader) { DtdProcessing = DtdProcessing.Prohibit };
+    XmlReader reader = XmlReader.Create(sreader, new XmlReaderSettings() { XmlResolver = null });
     doc.Load(reader);
 }
 ```
@@ -243,7 +243,7 @@ namespace TestNamespace
         public void TestMethod(Stream stream)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(UseXmlReaderForDeserialize));
-            XmlTextReader reader = new XmlTextReader(stream) { DtdProcessing = DtdProcessing.Prohibit } ;
+            XmlReader reader = XmlReader.Create(stream, new XmlReaderSettings() { XmlResolver = null });
             serializer.Deserialize(reader );
         }
     }
@@ -280,7 +280,7 @@ namespace TestNamespace
     {
         public void TestMethod(string path)
         {
-            XmlTextReader reader = new XmlTextReader(path) { DtdProcessing = DtdProcessing.Prohibit };
+            XmlReader reader = XmlReader.Create(path, new XmlReaderSettings() { XmlResolver = null });
             XPathDocument doc = new XPathDocument(reader);
         }
     }
@@ -316,22 +316,6 @@ namespace TestNamespace
 ```
 
 ### <a name="violations"></a>Porušení
-
-```csharp
-using System.Xml;
-
-namespace TestNamespace
-{
-    public class TestClass
-    {
-        public void TestMethod(string path)
-        {
-            XmlReaderSettings settings = new XmlReaderSettings(){ DtdProcessing = DtdProcessing.Parse };
-            XmlReader reader = XmlReader.Create(path, settings); // warn
-        }
-    }
-}
-```
 
 ```csharp
 using System.Xml;
@@ -378,7 +362,7 @@ namespace TestNamespace
     {
         public void TestMethod(string path)
         {
-            XmlReaderSettings settings = new XmlReaderSettings(){ DtdProcessing = DtdProcessing.Prohibit };
+            XmlReaderSettings settings = new XmlReaderSettings() { XmlResolver = null };
             XmlReader reader = XmlReader.Create(path, settings);
         }
     }

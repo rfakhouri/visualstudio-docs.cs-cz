@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844136"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195161"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;nového v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
 
      [Ladění](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) a [ladění na zařízení](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) v [příručky pro vývojáře Xamarinu](http://developer.xamarin.com/guides) popisují možnosti ladění.
 
--   **C++ / Android**. Použití [Visual C++ pro vývoj mobilních řešení napříč platformami](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) šablony společně s nástroji třetích stran, jako jsou [sady Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) vytvářet nativní aplikace pro Windows a Android.
+-   **C++ / Android**. Použití [Visual C++ pro vývoj mobilních řešení napříč platformami](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) šablony společně s nástroji třetích stran, jako jsou [sady Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) vytvářet nativní aplikace pro Windows a Android.
 
 ## <a name="debugging-and-diagnostics"></a>Ladění a diagnostika
- Informace o tom, co je nového v ladění, naleznete v tématu [co je nového v ladicím programu sady Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Informace o novinkách v diagnostice najdete v tématu [co je nového v nástrojích pro profilaci](./profiling/what-s-new-in-profiling-tools.md).
+Informace o novinkách v diagnostice najdete v tématu [co je nového v nástrojích pro profilaci](./profiling/what-s-new-in-profiling-tools.md).
 
- Následující informace jsou nové nebo vylepšené nástroje, které provádí různé typy diagnostiky a analýzy kódu:
+Následující informace jsou nové nebo vylepšené nástroje, které provádí různé typy diagnostiky a analýzy kódu:
 
 ### <a name="perftips"></a>Tipy pro výkon
  Tipy pro výkon zobrazení doba provádění metod během ladění, umožňuje rychlé odhalení kritických bodů bez nutnosti vyvolání profileru. Abyste mohli začít, najdete v článku [tipy pro výkon: Výkon informace na přehledem při ladění se sadou Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)

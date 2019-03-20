@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 91f454bec6854d4450850f970cedb197ea005f25
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: caf4a90b55e53cb9e4887f32c0388d7b313486dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873370"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194934"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core ve službě IIS v Azure v sadě Visual Studio 2017
 
@@ -229,7 +229,7 @@ V tomto kurzu se používá Visual Studio 2017.
 
 Ve většině nastavení jsou otevřené požadované porty instalace technologie ASP.NET a vzdálený ladicí program. Nicméně pokud řešíte potíže s nasazením a je hostovaná aplikace za bránou firewall, můžete ověřit, že jsou otevřené správné porty.
 
-Na Virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role).
+Na Virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Požadované porty:
 

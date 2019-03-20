@@ -10,18 +10,18 @@ items:
     href: tutorial-multicontainer.md
   - name: 'Kurz: Kubernetes v sadě ‏Visual Studio'
     href: tutorial-kubernetes-tools.md
-  - name: Ladění aplikací v místním kontejneru Dockeru
+  - name: Ladění aplikace v místním kontejneru Dockeru
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Nasazení kontejneru ASP.NET do registru kontejneru pomocí sady Visual Studio
+  - name: Nasazení do registru kontejneru
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: Konfigurace hostitele Dockeru pomocí nástroje VirtualBox
-    href: vs-azure-tools-docker-setup.md
-  - name: Řešení potíží při vývoji v sadě Visual Studio 2017 pomocí Dockeru
+  - name: Nasazení do Azure App Service
+    href: docker-deploy-app-service.md
+  - name: Řešení potíží při vývoji v sadě Visual Studio pomocí Dockeru
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 9269e4b0f090b170f234433ff802f41d0dd8790a
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: af94841d54c8c045af72dfc4597bae047778a5a3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525903"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58160024"

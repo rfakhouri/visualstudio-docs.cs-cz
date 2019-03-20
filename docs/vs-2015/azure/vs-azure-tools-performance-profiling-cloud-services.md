@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 2d362ca2b9117eb215fbc73bb09dd7ee948dc19a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4d3d5de46006129f7609a990bf1a4cca5a881123
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869354"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193887"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testování výkonu cloudové služby
 ## <a name="overview"></a>Přehled
@@ -55,7 +55,7 @@ Při použití profiler může shromažďovat data, při spuštění cloudové s
 Obvykle simulovat zatížení pro test cloudových služeb v rámci normální nebo podmínek vysoké zátěže.
 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Profilace cloudové služby v Azure
-Při publikování cloudové služby v sadě Visual Studio můžete Profilovat službu a nastavení profilování, které vám poskytnou informace, které chcete. Pro každou instanci role spuštění relace profilování. Další informace o tom, jak publikovat službu ze sady Visual Studio najdete v tématu [publikování do cloudové služby Azure ze sady Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx).
+Při publikování cloudové služby v sadě Visual Studio můžete Profilovat službu a nastavení profilování, které vám poskytnou informace, které chcete. Pro každou instanci role spuštění relace profilování. Další informace o tom, jak publikovat službu ze sady Visual Studio najdete v tématu [publikování do cloudové služby Azure ze sady Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 Další informace o výkonu profilace v sadě Visual Studio najdete v tématu [Průvodce začátečníka profilací výkonu](https://msdn.microsoft.com/library/azure/ms182372.aspx) a [Analýza výkonu aplikace pomocí nástrojů pro profilaci](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
 

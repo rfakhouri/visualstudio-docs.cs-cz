@@ -1,6 +1,6 @@
 ---
 title: Vytváření Windows Forms ovládacího prvku panelu nástrojů | Dokumentace Microsoftu
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -12,31 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873000"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194574"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku Windows Forms panel nástrojů
-Šablona položky ovládacího prvku Windows Forms panel nástrojů, který je součástí aplikace Visual Studio Extensibility Tools (VS SDK) umožňuje vytvořit ovládací prvek, který je automaticky přidán do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření ovládacího prvku jednoduchého čítače, které můžete distribuovat ostatním uživatelům.
+
+Šablona položky ovládacího prvku Windows Forms panel nástrojů, který je součástí aplikace Visual Studio Extensibility Tools (VS SDK), která umožňuje vytvářet **nástrojů** ovládací prvek, který automaticky přidá v okamžiku, kdy nainstalovaná rozšíření. Tento návod ukazuje, jak použít šablonu k vytvoření ovládacího prvku jednoduchého čítače, které můžete distribuovat ostatním uživatelům.
 
 ## <a name="prerequisites"></a>Požadavky
+
 Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku Windows Forms panel nástrojů
+## <a name="create-the-toolbox-control"></a>Vytvoření ovládacího prvku panelu nástrojů
+
 Šablony ovládacího prvku Windows Forms panel nástrojů vytvoří nedefinované uživatelský ovládací prvek a poskytuje všechny funkce, které je povinné pro přidání ovládacího prvku, aby **nástrojů**.
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Vytvoření rozšíření pomocí ovládacího prvku Windows Forms panel nástrojů
 
-1. Vytvořte projekt VSIX s názvem `MyWinFormsControl`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C#** > **rozšiřitelnost**.
+1. Vytvořte projekt VSIX s názvem `MyWinFormsControl`. Šablona projektu VSIX v můžete najít **nový projekt** dialogové okno tak, že "vsix".
 
 2. Po otevření projektu, přidejte **ovládacího prvku Windows Forms panel nástrojů** šablony položky s názvem `Counter`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#** > **rozšiřitelnost** a vyberte **ovládacího prvku Windows Forms panelu nástrojů**
 
 3. Tento postup přidá uživatelský ovládací prvek, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> umístit ovládacího prvku **nástrojů**a **Microsoft.VisualStudio.ToolboxControl** položku prostředku v manifestu VSIX pro nasazení.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Vytvoření uživatelského rozhraní pro ovládací prvek
+
 `Counter` Ovládací prvek požaduje dva podřízené ovládací prvky: <xref:System.Windows.Forms.Label> zobrazíte aktuální počet a <xref:System.Windows.Forms.Button> obnovit počet na hodnotu 0. Žádné další podřízené ovládací prvky jsou povinné, protože volající, zvýší čítač prostřednictvím kódu programu.
 
 #### <a name="to-build-the-user-interface"></a>K vytvoření uživatelského rozhraní
@@ -58,6 +62,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     |`Button1`|**Text**|Resetovat|
 
 ### <a name="code-the-user-control"></a>Kód uživatelského ovládacího prvku
+
 `Counter` Ovládací prvek bude vystavovat metodu se zvýší čítač událost vyvolána pokaždé, když hodnota čítače se zvýší, **resetování** tlačítko a tři vlastnosti pro ukládání aktuální počet zobrazení textu a, jestli se má zobrazit nebo skrýt **resetování** tlačítko. `ProvideToolboxControl` Atribut určí, kde v **nástrojů** `Counter` ovládací prvek zobrazí.
 
 #### <a name="to-code-the-user-control"></a>Do kódu uživatelského ovládacího prvku
@@ -146,13 +151,14 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     ```
 
 ### <a name="test-the-control"></a>Testování ovládacího prvku
+
  K testování **nástrojů** řídit, nejprve ji otestovat ve vývojovém prostředí a pak ho otestujte v kompilované aplikace.
 
 #### <a name="to-test-the-control"></a>Testování ovládacího prvku
 
-1. Stisknutím klávesy **F5**.
+1. Stisknutím klávesy **F5** k **spustit ladění**.
 
-    To vytvoří projekt a otevře se druhá experimentální instanci sady Visual Studio, který má ovládací prvek nainstalovaný.
+    Tento příkaz vytvoří projekt a otevře se druhá experimentální instanci sady Visual Studio, který má ovládací prvek nainstalovaný.
 
 2. V experimentální instanci sady Visual Studio, vytvořit **formulářová aplikace Windows** projektu.
 
@@ -199,16 +205,18 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 
 16. Klikněte na tlačítko **testovací** dokud nedosáhne čítač **5** zavření zprávy pole pokaždé, když.
 
-    **Resetování** tlačítko se znovu zobrazí.
+    **Resetování** tlačítko zobrazí znovu.
 
 17. Klikněte na tlačítko **resetování**.
 
     Čítač obnoví **0**.
 
 ## <a name="next-steps"></a>Další kroky
+
 Při sestavení **nástrojů** ovládací prvek, Visual Studio vytvoří soubor s názvem *ProjectName.vsix* \bin\debug\ složky vašeho projektu. Ovládací prvek můžete nasadit tak, že nahrajete *VSIX* soubor k síti nebo na web. Když uživatel otevře *VSIX* soubor, ovládací prvek je nainstalován a přidali do sady Visual Studio **nástrojů** na počítači uživatele. Alternativně můžete nahrát *VSIX* do souboru [Visual Studio Marketplace](https://marketplace.visualstudio.com/) tak, aby uživatelé můžete najít tak, že přejdete v **nástroje**  >   **Rozšíření a aktualizace** dialogového okna.
 
 ## <a name="see-also"></a>Viz také:
+
 - [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Vytvoření ovládacího prvku panel nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 - [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)

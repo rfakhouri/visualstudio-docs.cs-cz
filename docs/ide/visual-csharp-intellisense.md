@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936860"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194600"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -94,7 +94,7 @@ Můžete nainstalovat experimentální [IntelliCode rozšíření](/visualstudio
 
 **Přidat direktivu using** operace IntelliSense automaticky přidá požadované `using` směrnici do souboru kódu. Tato funkce umožňuje spravovat vaše zaměřit se na kód zápisu nechcete vyžadující, abyste svou pozornost zaměřili na jiné části kódu.
 
-K zahájení **přidat direktivu using** operace, pozice kurzoru na typu odkaz, který nelze rozpoznat. Například když Vytvořte konzolovou aplikaci a pak přidejte `XmlTextReader` do těla `Main` metody červená vlnovka se zobrazí na daném řádku kódu, protože nelze rozpoznat odkaz na typ. Potom můžete vyvolat **přidat direktivu using** prostřednictvím **rychlé akce**. **Rychlé akce** je viditelná jen když se kurzor na nevázanému typu.
+K zahájení **přidat direktivu using** operace, pozice kurzoru na typu odkaz, který nelze rozpoznat. Například když Vytvořte konzolovou aplikaci a pak přidejte `XmlReader` do těla `Main` metody červená vlnovka se zobrazí na daném řádku kódu, protože nelze rozpoznat odkaz na typ. Potom můžete vyvolat **přidat direktivu using** prostřednictvím **rychlé akce**. **Rychlé akce** jsou viditelné pouze když se kurzor na nevázanému typu.
 
 ![Přidání pomocí, rychlá akce rozšířené bitové kopie](../ide/media/addusing-quickaction.png)
 

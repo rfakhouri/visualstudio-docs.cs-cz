@@ -1,7 +1,7 @@
 ---
 title: Spravovat závislosti balíčků s soubor requirements.txt
 description: Soubor requirements.txt, který popisuje závislosti projektu. Pokud se zobrazí projekt obsahující soubor requirements.txt, můžete snadno nainstalovat tyto závislosti v jednom kroku.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924341"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194837"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Správa požadované balíčky pomocí souboru requirements.txt
 
@@ -25,11 +25,13 @@ Technicky vzato některý název souboru může sloužit ke sledování požadav
 
 - Pokud jste načetli projekt, který obsahuje *souboru requirements.txt* a chcete nainstalovat všechny balíčky uvedené v tomto souboru, rozbalte **prostředí Pythonu** uzel v **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel prostředí a vyberte **instalovat z requirements.txt**:
 
-    ![Instalovat z requirements.txt](media/environments-requirements-txt-install.png)
+    ![Instalovat z requirements.txt](media/environments/environments-requirements-txt-install.png)
+
+- Pokud chcete nainstalovat závislosti ve virtuálním prostředí, nejprve aktivovat prostředí, vytvořte a použít **instalovat z requirements.txt** příkazu. Další informace o vytvoření virtuálního prostředí najdete v tématu [použít virtuální prostředí](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 - Pokud už máte všechny potřebné balíčky nainstalované ve prostředí, můžete kliknout pravým tlačítkem v daném prostředí **Průzkumníka řešení** a vyberte **generovat soubor requirements.txt** k vytvoření potřebných soubor. Pokud soubor již existuje, se zobrazí výzva pro jak ji aktualizovat:
 
-    ![Možnosti aktualizace souboru requirements.txt](media/environments-requirements-txt-replace.png)
+    ![Možnosti aktualizace souboru requirements.txt](media/environments/environments-requirements-txt-replace.png)
 
   - **Nahradí celý soubor** odebere všechny položky, poznámky a možnosti, které existují.
   - **Aktualizovat existující položky** zjistí požadavků balíčku a aktualizuje specifikátory verze tak, aby odpovídaly aktuálně nainstalovanou verzi.

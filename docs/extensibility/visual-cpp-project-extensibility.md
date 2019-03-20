@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868140"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195174"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -418,7 +418,7 @@ Systém projektu Visual C++ je založen na [systém projektu VS](https://github.
 
 Návrh obecné informace najdete v tématu [rozšiřitelnosti platformy – část 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) a [rozšiřitelnosti platformy – část 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-Jednoduše řečeno, stránky vlastností zobrazí ve **vlastnosti projektu** dialogové okno pro projekt jazyka C++, které jsou definovány pomocí *pravidlo* soubory. Soubor pravidel určuje sadu vlastností, které mají zobrazit na stránce vlastností je a jak a kde by měla být uložena v projektu soubor. Pravidlo soubory jsou soubory XML, které používají formát Xaml. Typy použité k serializaci je popsané v [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Další informace o použití pravidel soubory v projektech, naleznete v tématu [soubory XML stránky vlastností pravidla](/cpp/ide/property-page-xml-files).
+Jednoduše řečeno, stránky vlastností zobrazí ve **vlastnosti projektu** dialogové okno pro projekt jazyka C++, které jsou definovány pomocí *pravidlo* soubory. Soubor pravidel určuje sadu vlastností, které mají zobrazit na stránce vlastností je a jak a kde by měla být uložena v projektu soubor. Pravidlo soubory jsou soubory XML, které používají formát Xaml. Typy použité k serializaci je popsané v [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Další informace o použití pravidel soubory v projektech, naleznete v tématu [soubory XML stránky vlastností pravidla](/cpp/build/reference/property-page-xml-files).
 
 Pravidlo soubory musí být přidány do `PropertyPageSchema` skupiny položek:
 
@@ -636,8 +636,8 @@ Informace o tom, jak vytvořit soubory VSIX, naleznete v tématu [přesouvání 
 
 ## <a name="additional-resources"></a>Další zdroje
 
-Sestavovací systém Microsoft ([MSBuild](../msbuild/msbuild.md)) poskytuje modul sestavení a rozšiřitelné formát založený na formátu XML pro soubory projektu. Měli byste se seznámit s basic [koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md) a jak [MSBuild pro Visual C++](/cpp/build/msbuild-visual-cpp-overview) systém projektů funguje za účelem rozšíření Visual C++.
+Sestavovací systém Microsoft ([MSBuild](../msbuild/msbuild.md)) poskytuje modul sestavení a rozšiřitelné formát založený na formátu XML pro soubory projektu. Měli byste se seznámit s basic [koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md) a jak [MSBuild pro Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) systém projektů funguje za účelem rozšíření Visual C++.
 
 Rozhraní Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) poskytuje rozšíření rozhraní API, které jsou používány CPS a systém projektu Visual C++. Přehled jak CPS používá rozhraní MEF, naleznete v tématu [CPS a MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) v [VSProjectSystem přehled MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Můžete přizpůsobit existující systém sestavení pro přidání kroků sestavení nebo nové typy souborů. Další informace najdete v tématu [přehled nástroje MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) a [práce s vlastnostmi projektu](/cpp/ide/working-with-project-properties).
+Můžete přizpůsobit existující systém sestavení pro přidání kroků sestavení nebo nové typy souborů. Další informace najdete v tématu [přehled nástroje MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) a [práce s vlastnostmi projektu](/cpp/build/working-with-project-properties).

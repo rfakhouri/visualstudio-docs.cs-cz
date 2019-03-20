@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7676202d491b5a74f7a20a80c84ee5ca16a67cd2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 454e71026eeee3cbd76c95038ba59fb709b8d88f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872372"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193673"
 ---
 # <a name="security-bibliography"></a>Bibliografie k zabezpečení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "57872372"
 Toto jsou vybrané prostředky, které jsou k dispozici online a tisku na předmět vývoji bezpečných aplikací a konfigurace zabezpečení prostředí:  
   
 ## <a name="microsoft-web-sites"></a>Weby společnosti Microsoft  
- [Microsoft Security](http://go.microsoft.com/fwlink/?LinkId=55529)  
+ [Microsoft Security](https://www.microsoft.com/security)  
  Zjistěte, jak funguje, Microsoft vám pomůže ochránit vaše aplikace a systémy zabezpečené, z plochy na úrovni sítě systémy s odkazy na zdroje informací o zabezpečení pro IT specialisty, vývojáře a domácí uživatelé.  
   
  [Zabezpečení prostředků na webu MSDN](https://www.microsoft.com/msrc?rtc=1)  

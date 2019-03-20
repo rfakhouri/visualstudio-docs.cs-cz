@@ -1,6 +1,6 @@
 ---
 title: Vytvoření ovládacího prvku panel nástrojů WPF | Dokumentace Microsoftu
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867978"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194824"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku panel nástrojů WPF
-Šablony ovládacího prvku panelu nástrojů WPF (Windows Presentation Framework) umožňuje vytvořit ovládací prvky WPF, které jsou automaticky přidány do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření **nástrojů** ovládacího prvku, které můžete distribuovat ostatním uživatelům.
+
+Šablony ovládacího prvku panelu nástrojů WPF (Windows Presentation Framework) umožňuje vytvořit ovládací prvky WPF, které jsou automaticky přidány do **nástrojů** při instalaci rozšíření. Tento návod ukazuje, jak použít šablonu k vytvoření **nástrojů** ovládacího prvku, které můžete distribuovat ostatním uživatelům.
 
 Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku panel nástrojů WPF
+## <a name="create-the-toolbox-control"></a>Vytvoření ovládacího prvku panelu nástrojů
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Vytvoření rozšíření pomocí prvku sady nástrojů WPF
 
-1. Vytvořte projekt VSIX s názvem `MyToolboxControl`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C#** > **rozšiřitelnost**.
+1. Vytvořte projekt VSIX s názvem `MyToolboxControl`. Šablona projektu VSIX v můžete najít **nový projekt** dialogové okno tak, že "vsix".
 
 2. Po otevření projektu, přidejte **ovládacího prvku panelu nástrojů WPF** šablony položky s názvem `MyToolboxControl`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#** > **rozšiřitelnost** a vyberte **ovládacího prvku panelu nástrojů WPF**. V **název** pole v dolní části okna, změňte název souboru příkazu *MyToolboxControl.cs*.
 
@@ -53,6 +54,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     ```
 
 ## <a name="renaming-the-control"></a>Přejmenování ovládacího prvku
+
  Ve výchozím nastavení, zobrazí se váš ovládací prvek v **nástrojů** jako **MyToolboxControl** ve skupině s názvem **MyToolboxControl.MyToolboxControl**. Tyto názvy v můžete změnit *MyToolboxControl.xaml.cs* souboru.
 
 1. Otevřít *MyToolboxControl.xaml.cs* v zobrazení kódu.
@@ -75,6 +77,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
     ```
 
 ## <a name="build-test-and-deployment"></a>Sestavování, testování a nasazení
+
  Při ladění projektu byste měli najít ovládací prvek nainstalovaný v **nástrojů** experimentální instance sady Visual Studio.
 
 ### <a name="to-build-and-test-the-control"></a>Pro vytváření a testování ovládacího prvku

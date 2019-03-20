@@ -1,6 +1,6 @@
 ---
 title: 'Postupy: Použití průvodců se šablonami projektů'
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ad50d22641d6b52d688c685fbf0f50fd0c54b31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723705"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194668"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Postupy: Použití průvodců se šablonami projektů
 
@@ -33,12 +33,12 @@ Přizpůsobení šablony projektu umožňuje zobrazit vlastní uživatelské roz
 
 Můžete začít vytvářet vlastní šablonu pomocí projektu šablony projektu, který je součástí sady Visual Studio SDK. V tomto postupu použijeme C# projektu šablony projektu, ale je také projektu šablony projektů Visual Basic. Potom přidáte projekt VSIX do řešení, které obsahuje projekt šablony projektu.
 
-1. Vytvoření projektu jazyka C# projekt šablony (v sadě Visual Studio **souboru** > **nový** > **projektu** > **Visual C#**   >  **Rozšiřitelnost** > **šablonu projektu C#**). Pojmenujte ji **MyProjectTemplate**.
+1. Vytvoření C# projekt šablony projektu (v sadě Visual Studio, vyberte **souboru** > **nový** > **projektu** a vyhledejte položku "Šablona projektu" ). Pojmenujte ji **MyProjectTemplate**.
 
    > [!NOTE]
    > Můžete být vyzváni k instalaci sady Visual Studio SDK. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Přidat nový projekt VSIX (**souboru** > **nový** > **projektu** > **Visual C#**   >  **Rozšiřitelnost** > **projekt VSIX**) ve stejném řešení jako šablona projektu pro projekt (v **Průzkumníka řešení**, Vyberte uzel řešení, klikněte pravým tlačítkem a vyberte **přidat** > **nový projekt**). Pojmenujte ji **MyProjectWizard.**
+2. Přidat nový projekt VSIX ve stejném řešení jako šablona projektu pro projekt (v **Průzkumníka řešení**, vyberte uzel řešení, klikněte pravým tlačítkem a vyberte **přidat** > **nový projekt**  a vyhledejte položku "vsix"). Pojmenujte ji **MyProjectWizard.**
 
 3. Nastavte projekt VSIX jako projekt po spuštění. V **Průzkumníka řešení**, vyberte uzel projektu VSIX, klikněte pravým tlačítkem a vyberte **nastavit jako spouštěný projekt**.
 
@@ -50,7 +50,7 @@ Můžete začít vytvářet vlastní šablonu pomocí projektu šablony projektu
 
 7. Sestavte řešení a spusťte ladění. Zobrazí se druhé instanci aplikace Visual Studio. (To může trvat několik minut.)
 
-8. Ve druhé instanci aplikace Visual Studio, pokuste se vytvořit nový projekt s novou šablonu (**souboru** > **nový** > **Projekt > Visual C#**   >  **MyProject šablony**). Nový projekt by se měla objevit s třídou s názvem **Class1**. Nyní jste vytvořili vlastní šablonu projektu! Nyní Zastavte ladění.
+8. Ve druhé instanci aplikace Visual Studio, pokuste se vytvořit nový projekt s novou šablonu (**souboru** > **nový** > **projektu**, vyhledejte " MyProject"). Nový projekt by se měla objevit s třídou s názvem **Class1**. Nyní jste vytvořili vlastní šablonu projektu! Nyní Zastavte ladění.
 
 ## <a name="create-a-custom-template-wizard"></a>Vytvoření vlastního průvodce šablony
 
@@ -60,11 +60,11 @@ Tento postup ukazuje, jak vytvořit vlastního průvodce, který otevře formul�
 
 2. V **Průzkumníka řešení**, vyberte uzel projektu VSIX. Pod **Průzkumníka řešení**, měli byste vidět **vlastnosti** okna. Pokud ho nevidíte, vyberte **zobrazení** > **okno vlastností**, nebo stiskněte klávesu **F4**. V **vlastnosti** okna, vyberte následující pole do `true`:
 
-   -   **IncludeAssemblyInVSIXContainer**
+   - **IncludeAssemblyInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInVSIXContainer**
+   - **IncludeDebugSymbolsInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**
 
 3. Přidáte sestavení jako prostředek do projektu VSIX. Otevřít *source.extension.vsixmanifest* a vyberte možnost **prostředky** kartu. V **přidat nové aktivum** okně pro **typ** vyberte **Microsoft.VisualStudio.Assembly**, pro **zdroj** vyberte **A projekt v aktuálním řešení**a pro **projektu** vyberte **MyProjectWizard**.
 
@@ -157,7 +157,7 @@ Tento postup ukazuje, jak vytvořit vlastního průvodce, který otevře formul�
 
    - <xref:System.Object> Pole, které obsahuje sadu parametrů předaných průvodci pomocí sady Visual Studio.
 
-     V tomto příkladu přidá hodnotu parametru ze vstupního formuláře uživatele do <xref:System.Collections.Generic.Dictionary%602> parametru. Každá instance `$custommessage$` parametr v projektu bude nahrazena textem zadaným uživatelem. Do projektu musíte přidat následující sestavení: **Systém** a **System.Drawing**.
+     V tomto příkladu přidá hodnotu parametru ze vstupního formuláře uživatele do <xref:System.Collections.Generic.Dictionary%602> parametru. Každá instance `$custommessage$` parametr v projektu bude nahrazena textem zadaným uživatelem. Do projektu přidejte následující sestavení: **Systém** a **System.Drawing**.
 
 7. Teď vytvořte **UserInputForm**. V *WizardImplementation.cs* přidejte následující kód na konci `WizardImplementation` třídy.
 
@@ -228,7 +228,7 @@ Aby vaše vlastní šablonu projektu použít vlastního průvodce musíte podep
 
      *C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*
 
-     Pokud nemůžete najít nástroj, zkuste spustit **kde/r.  sn.exe** v příkazovém okně. Poznamenejte si cestu.
+     Pokud nemůžete najít nástroj, zkuste spustit **kde /R. sn.exe** v příkazovém okně. Poznamenejte si cestu.
 
 10. Extrahujte veřejný klíč z *klíč.snk* souboru. V příkazovém okně zadejte
 
@@ -297,19 +297,19 @@ namespace $safeprojectname$
 
 Nyní můžete vytvořit projekt ze šablony a použít vlastního průvodce.
 
-1.  Znovu sestavte řešení a spusťte ladění. Druhou instanci aplikace Visual Studio by se zobrazit.
+1. Znovu sestavte řešení a spusťte ladění. Druhou instanci aplikace Visual Studio by se zobrazit.
 
-2.  Vytvoření nového projektu MyProjectTemplate. (**Souboru** > **nové** > **projektu** > **Visual C#**  >  **MyProjectTemplate**)
+2. Vytvoření nového projektu MyProjectTemplate. (**Souboru** > **nové** > **projektu**).
 
-3.  V **nový projekt** dialogovém okně nalezněte vaši šablonu, zadejte název a klikněte na tlačítko **OK**.
+3. V **nový projekt** dialogové okno, vyhledejte "myproject" nalezněte vaši šablonu, zadejte název a klikněte na tlačítko **OK**.
 
      Otevře se formulář průvodce vstupu uživatele.
 
-4.  Zadejte hodnotu pro vlastní parametr a klikněte na tlačítko.
+4. Zadejte hodnotu pro vlastní parametr a klikněte na tlačítko.
 
      Formulář průvodce vstupu uživatele se zavře a projekt je vytvořen z šablony.
 
-5.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na souboru se zdrojovým kódem a klikněte na tlačítko **zobrazit kód**.
+5. V **Průzkumníka řešení**, klikněte pravým tlačítkem na souboru se zdrojovým kódem a klikněte na tlačítko **zobrazit kód**.
 
      Všimněte si, že `$custommessage$` byla nahrazena textem zadaným ve formuláři průvodce vstupu uživatele.
 

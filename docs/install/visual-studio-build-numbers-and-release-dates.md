@@ -12,14 +12,16 @@ helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2d86c7f1b7801da0bc4281848b602e60fa6e00
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870257"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194977"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
+
+::: moniker range="vs-2017"
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -174,6 +176,13 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 | 15.1 ve verzi preview 1 | Náhled | 7. března 2017 | 15.0.26304.0 |
 | 15.0.0 | Vydaná verze | 7. března 2017 | 15.0.26228.4 |
 
+> [!NOTE]
+> Další informace o čísla sestavení a vydání data pro další verze sady Visual Studio, najdete v článku [Visual Studio 2019 čísla sestavení a data vydání](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019) stránky.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
 ## <a name="visual-studio-2019"></a>Visual Studio 2019
 
 Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sestavení pro Visual Studio 2019 k datu.
@@ -194,6 +203,8 @@ Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sest
 | 16.0.0 | Preview 2 | 23. ledna 2019 | 16.0.28522.59 |
 | 16.0.0 | Ve verzi Preview 1.1 | 10. prosince 2018 | 16.0.28408.50 |
 | 16.0.0 | Ve verzi Preview 1 | 4. prosince 2018 | 16.0.28329.73 |
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: b29cdb878e2d90844ebf08f6591a05378e62e24b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dab9cd1600e77a480ca49c131aee2dbdcb8f0521
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868199"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194759"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Použití skriptů PowerShellu k publikování do vývojových a testovacích prostředí
 
@@ -24,7 +24,7 @@ Tyto skripty můžete zřídit vlastní verze (označované také jako. vývojov
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Azure SDK 2.3 nebo novější. Zobrazit [soubory ke stažení Visual Studio](http://go.microsoft.com/fwlink/?LinkID=624384). (Není nutné sadu Azure SDK se vygenerovat skripty pro webové projekty. Tato funkce je pro webové projekty nejsou webové role v cloudových službách.)
+* Visual Studio 2015 nebo novější s **úlohy Azure** nainstalována, nebo Visual Studio 2013 a Azure SDK 2.3 nebo novější. Zobrazit [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc). (Není nutné sadu Azure SDK se vygenerovat skripty pro webové projekty. Tato funkce je pro webové projekty nejsou webové role v cloudových službách.)
 * Prostředí Azure PowerShell 0.7.4 nebo novější. Zobrazit [instalace a konfigurace Azure Powershellu](/powershell/azure/overview).
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) nebo novější.
 
@@ -242,7 +242,7 @@ K automatizaci sestavení projektu, přidejte kód, který volá MSBuild `New-We
     }
     ```
 
-1. Nahraďte `New-WebDeployPackage` s následující kód a nahraďte zástupné symboly při konstrukci řádku `$msbuildCmd`. Tento kód je pro Visual Studio 2017. Pokud používáte Visual Studio 2015, změňte **VisualStudioVersion** vlastnost `14.0` (`12.0` pro Visual Studio 2013).
+1. Nahraďte `New-WebDeployPackage` s následující kód a nahraďte zástupné symboly při konstrukci řádku `$msbuildCmd`. Tento kód je pro Visual Studio 2019. Pokud používáte Visual Studio 2017, změňte **VisualStudioVersion** vlastnost `15.0`, "14.0' pro sadu Visual Studio 2015 nebo `12.0` pro Visual Studio 2013).
 
     ```powershell
     function New-WebDeployPackage
@@ -255,7 +255,7 @@ K automatizaci sestavení projektu, přidejte kód, který volá MSBuild `New-We
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=15.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```

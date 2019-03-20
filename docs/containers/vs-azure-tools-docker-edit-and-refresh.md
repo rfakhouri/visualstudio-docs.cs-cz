@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 8d8a7c0cd7422df937493fd046a74247ac9b53dd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 34f7e108b9eebfec2bb352a2997250a50ae51e66
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525889"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194970"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Ladění aplikací v místním kontejneru Dockeru
 
@@ -44,7 +44,7 @@ Musí být nainstalované následující nástroje.
 Pro spouštění kontejnerů Docker místně, musíte klienta místní docker.
 Můžete použít [nástrojů Dockeru](https://www.docker.com/products/docker-toolbox), což vyžaduje Hyper-V se deaktivuje, nebo můžete použít [Docker pro Windows](https://www.docker.com/get-docker), které používá technologie Hyper-V a vyžaduje Windows 10.
 
-Pokud pomocí nástrojů Dockeru, budete muset [konfigurace klienta Dockeru](vs-azure-tools-docker-setup.md)
+Pokud pomocí nástrojů Dockeru, musíte nakonfigurovat klienta Dockeru.
 
 ## <a name="1-create-a-web-app"></a>1. Vytvoření webové aplikace
 

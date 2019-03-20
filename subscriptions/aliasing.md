@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Přihlášení může selhat, pokud se používají aliasy nebo popisné názvy
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841624"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195148"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Přihlášení k předplatná sady Visual Studio může selhat, pokud aliasy using
 
@@ -28,7 +28,7 @@ Aliasy může dojít, když má společnost Microsoft Online Service pro adresá
 
 Jako správce, existují dvě možnosti, vaši předplatitelé měli prostředí úspěšné přihlášení [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - První možnost (doporučeno), je využít adresář účtu jako přiřazenou adresu v Volume Licensing Service Center (VLSC). Odkazovat na [přiřazení předplatitele adresář účtu](#assigning-subscribers-to-a-directory-account) části v tomto článku najdete další podrobnosti.
-- (Méně bezpečné), druhou možností je povolit vaši předplatitelé (označovaný také jako přidružení e-mailová adresa "Pracovní nebo školní" na "Osobní" účet Microsoft Account or MSA). Odkazovat na [definování pracovního nebo školního účtu jako osobní účet ](#defining-a-work-or-school-account-as-a-personal-account ) části v tomto článku najdete další podrobnosti.
+- (Méně bezpečné), druhou možností je povolit vaši předplatitelé (označovaný také jako přidružení e-mailová adresa "Pracovní nebo školní" na "Osobní" účet Microsoft Account or MSA). Odkazovat na [definování pracovního nebo školního účtu jako osobní účet](#defining-a-work-or-school-account-as-a-personal-account) části v tomto článku najdete další podrobnosti.
 
 > [!NOTE]
 > Jakmile se vaše společnost je migrovat na nová předplatná sady Visual Studio [portálu pro správu](https://manage.visualstudio.com), budete moci využít výhod tohoto nového prostředí správy, což umožní adresáře a e-mailové adresy poskytované v rámci profil účastníka. Další informace o [migrace](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).

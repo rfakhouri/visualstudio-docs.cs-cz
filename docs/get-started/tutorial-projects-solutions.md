@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bac0907f08db03e56b32a85e9d228c67d0aae724
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 487597c160a294c935f3f7670410e82927a86210
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069928"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194642"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Seznamte se s projekty a řešení
 
@@ -164,7 +164,7 @@ Chceme použít testovací projekt nové jednotky k otestování v metodě **Qui
    End Class
    ```
 
-   Zobrazí se vám červený "podtržení" v části některý kód. Opravíme tuto chybu tak, že projekt testů [sestavení typu friend](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) k **QuickDate** projektu.
+   Zobrazí se vám červený "podtržení" v části některý kód. Opravíme tuto chybu tak, že projekt testů [sestavení typu friend](/dotnet/standard/assembly/friend-assemblies) k **QuickDate** projektu.
 
 1. Zpátky **QuickDate** projekt, otevřete *Calendar.cs* souboru, pokud ještě není otevřený a přidejte následující [pomocí příkazu](/dotnet/csharp/language-reference/keywords/using-statement) a <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atribut do horní části souboru, chcete-li vyřešit chybu v testovém projektu.
 

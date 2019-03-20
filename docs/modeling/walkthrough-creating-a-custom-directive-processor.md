@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření vlastního procesoru direktiv'
+title: 'Návod: Vytvoření vlastního procesoru direktiv'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4b46937e8b30dec1f9e2a78d181cd53692b7d1b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910425"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195122"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Průvodce: Vytvoření vlastního procesoru direktiv
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Návod: Vytvoření vlastního procesoru direktiv
 
 *Procesory direktiv* fungují tak, že přidáte kód *vygenerované třídy transformace*. Při volání *směrnice* z *textové šablony*, zbytek kódu, který napíšete do textové šablony může záviset na funkčnosti, která poskytuje tato direktiva.
 
@@ -331,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -581,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718545"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194947"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Vývoj kódu v sadě Visual Studio bez projektů nebo řešení
 
@@ -103,7 +103,7 @@ Pokud vašeho základu kódu obsahuje kód Python nebo JavaScript, není nutné 
 
 ### <a name="codebases-that-contain-c-code"></a>Základů kódu, které obsahují kód jazyka C++
 
-Informace o otevření kódu jazyka C++ bez řešení nebo projektů v sadě Visual Studio najdete v tématu [projekty otevřít složku pro jazyk C++](/cpp/ide/non-msbuild-projects).
+Informace o otevření kódu jazyka C++ bez řešení nebo projektů v sadě Visual Studio najdete v tématu [projekty otevřít složku pro jazyk C++](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Základů kódu, které obsahují projekt sady Visual Studio
 
@@ -118,6 +118,6 @@ Pokud váš kód složka obsahuje projekt sady Visual Studio, můžete určit pr
 ## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení úloh sestavení a ladění](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Otevřete složku projekty jazyka C++](/cpp/ide/non-msbuild-projects)
-- [Projekty CMake v jazyce C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Otevřete složku projekty jazyka C++](/cpp/build/open-folder-projects-cpp)
+- [Projekty CMake v jazyce C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Psaní kódu v editoru kódu a text](../ide/writing-code-in-the-code-and-text-editor.md)

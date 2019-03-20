@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955372"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195083"
 ---
 # <a name="security-warnings"></a>Upozornění zabezpečení
 
@@ -77,5 +77,5 @@ Upozornění zabezpečení podporují bezpečnější knihovny a aplikace. Tato 
 |[CA2153: Vyhněte se zpracování výjimek v poškozeném stavu](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Poškozený stav výjimek (rozšíření na straně klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Toto zachycení nepovolí selhání procesu může vést k ohrožení zabezpečení, pokud útočník lze umístit do oblasti paměti poškozená zneužití.|
 |[CA3075: Zpracování nezabezpečené specifikace DTD](../code-quality/ca3075-insecure-dtd-processing.md)|Pokud používáte nezabezpečené DTDProcessing instance nebo odkazovat na externí entitu zdrojů, analyzátor může přijmout nedůvěryhodný vstup a zpřístupnit citlivé informace, které útočníci.|
 |[CA3076: Spuštění nezabezpečeného skriptu XSLT](../code-quality/ca3076-insecure-xslt-script-execution.md)|Pokud spuštění šablony stylů transformace XSLT (Extensible Language) v aplikacích .NET nezabezpečeným způsobem, procesor může vyřešit nedůvěryhodné identifikátor URI odkazy, které může odhalit citlivé informace, které útočníci, což vede k Denial of Service a webů útoky.|
-|[CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečce textu XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Při navrhování rozhraní API odvozený od XMLDocument a XMLTextReader, dávejte DtdProcessing.  Použití nezabezpečené DTDProcessing instancí, při odkazování na řešení externí entity zdroje nebo nastavení nezabezpečené hodnot v souboru XML může způsobit zpřístupnění informací.|
+|[CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečce textu XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Při navrhování rozhraní API odvozený od XMLDocument a XMLTextReader, dávejte DtdProcessing. Použití nezabezpečené DTDProcessing instancí, při odkazování na řešení externí entity zdroje nebo nastavení nezabezpečené hodnot v souboru XML může způsobit zpřístupnění informací.|
 |[CA3147: Označit obslužné rutiny operace s ValidateAntiForgeryToken](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|Při navrhování kontroler ASP.NET MVC, dávejte útoků proti padělání žádosti více webů. Útok proti padělání žádosti více webů odesílat škodlivé žádosti od ověřeného uživatele do vaší kontroler ASP.NET MVC.|

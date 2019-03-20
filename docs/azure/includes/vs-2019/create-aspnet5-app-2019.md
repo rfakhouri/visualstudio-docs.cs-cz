@@ -6,14 +6,14 @@ ms.technology: vs-azure
 ms.author: ghogen
 ms.topic: include
 ms.date: 03/05/2019
-ms.openlocfilehash: 8ce583c2be3bf27e66f741ab8261b4f8e42e4de2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 8d524719ec5edac3d8b8ec3105fa71e974f85642
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526862"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58177920"
 ---
-1. Z Visual Studio spusťte okno, vyberte **vytvořte nový projekt**.
+1. Ze sady Visual Studio **Start** okně zvolte **vytvořte nový projekt**.
 1. Zvolte **webové aplikace ASP.NET Core**a zvolte **Další**.
 1. Pojmenujte novou aplikaci (nebo přijmout výchozí nastavení) a zvolte **vytvořit**.
 1. Zvolte **webovou aplikaci**.

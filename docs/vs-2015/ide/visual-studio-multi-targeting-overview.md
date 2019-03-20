@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768877"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194558"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled cílení na více verzí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ V této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete určit verz
 >  V edicích Express sady Visual Studio, nelze nastavit cílové rozhraní **nový projekt** dialogové okno.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Řešení systému a odkazy na sestavení uživatele
- K cílení na určitou verzi rozhraní .NET Framework, musíte nejprve nainstalovat odpovídající odkazy na sestavení. Odkazy na sestavení pro rozhraní .NET Framework verze 2.0, 3.0 a 3.5 jsou zahrnuty v rozhraní .NET Framework 3.5 SP1, který si můžete stáhnout z [Microsoft Download Center, Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602) webu. Odkazy na sestavení pro rozhraní .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile a Silverlight jsou také k dispozici [stahování sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687) webu.
+ K cílení na určitou verzi rozhraní .NET Framework, musíte nejprve nainstalovat odpovídající odkazy na sestavení. Odkazy na sestavení pro rozhraní .NET Framework verze 2.0, 3.0 a 3.5 jsou zahrnuty v rozhraní .NET Framework 3.5 SP1, který si můžete stáhnout z [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) webu. Odkazy na sestavení pro rozhraní .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile a Silverlight jsou také k dispozici [stahování sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687) webu.
 
 > [!NOTE]
 >  Rozhraní .NET Framework client profile je podmnožinou rozhraní .NET Framework, která poskytuje omezenou sadu knihoven a funkcí. Další informace o profilech klienta naleznete v tématu [rozhraní .NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
@@ -79,4 +79,6 @@ V této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete určit verz
  Pokud je cílem rozhraní .NET Framework 3.5 nebo novější, odkaz na System.Core a import na úrovni projektu pro System.Linq (v pouze v jazyce Visual Basic) jsou přidány automaticky. Pokud chcete používat funkce LINQ, musíte také zapnout možnost Infer (v pouze v jazyce Visual Basic). Reference a import jsou automaticky odebrány při změně cíle na starší verzi rozhraní .NET Framework. Další informace najdete v tématu [jak: Vytvoření projektu LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Viz také
- [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md) [rozhraní .NET Framework Multi-Targeting pro webové projekty ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [platforma kompatibility a systémové požadavky](http://www.microsoft.com/visualstudio/eng/products/compatibility)
+[Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
+[rozhraní .NET Framework Multi-Targeting pro webové projekty ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[platforma kompatibility a systémové požadavky](/visualstudio/productinfo/vs2015-compatibility-vs)

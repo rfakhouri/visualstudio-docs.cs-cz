@@ -18,20 +18,18 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8818774994e73db2cadfca679d3ee71bcb059ae2
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 9c03764a4ad93a44f51bb130e0f160dbeaae4db7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567161"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194847"
 ---
 # <a name="debugging-in-visual-studio"></a>Ladění v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a najít problémy. Ladicí program pracuje s všechny programovací jazyky sady Visual Studio a jejich přidruženými knihovnami. Pomocí ladicího programu můžete přerušit běh programu a prozkoumat kód, prozkoumat a upravit proměnné, zobrazit registry, zobrazit pokyny vytvořené ze zdrojového kódu a zobrazit paměťový prostor používaný vaší aplikací.
 
  Rychlý úvod k ladění a diagnostiku v sadě Visual Studio, naleznete v tématu [ladění, profilování a Diagnostika](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
-
--   [Co je nového v ladicím programu sady Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md) popisuje nové funkce v sadě Visual Studio 2015.
 
 -   [Ladicí program Windows](../debugger/debugger-windows.md) obsahuje jiný ladicí program systému windows.
 

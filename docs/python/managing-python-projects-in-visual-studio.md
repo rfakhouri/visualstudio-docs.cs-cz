@@ -1,7 +1,7 @@
 ---
 title: Správa projektů aplikace v Pythonu
 description: Projekty v sadě Visual Studio Správa závislostí mezi soubory a složité vztahy v aplikaci.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b75c3c7a6a2c5496896949a48c2210bb1b5f170
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983465"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194338"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty v Pythonu v sadě Visual Studio
 
@@ -54,7 +54,16 @@ Každý projekt Python má jeden přiřazené spouštěcí soubor ukazuje tučn�
 >
 > Pokud chcete nechat otevřené okno výstup z jakéhokoli důvodu, klikněte pravým tlačítkem na projekt, vyberte **vlastnosti**, vyberte **ladění** kartu a pak přidejte `-i` k **argumenty pro interpret**  pole. Tento argument způsobí, že překladač přejde do interaktivního režimu po dokončení programu, a tím udržování okna otevřete dokud nezadáte **Ctrl**+**Z**  >  **Enter** ukončíte.
 
-Nový projekt je vždy přidružena výchozí globální prostředí Pythonu. Chcete-li projekt přidružit jiné prostředí (včetně virtuální prostředí), klikněte pravým tlačítkem na **prostředí Pythonu** uzlu v projektu, vyberte **přidat nebo odebrat prostředí Pythonu**, a Vyberte ty, které chcete. Chcete-li změnit na aktivní prostředí, klikněte pravým tlačítkem na požadované prostředí a vyberte **aktivovat prostředí** jak je znázorněno níže. Další informace najdete v tématu [vyberte prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
+::: moniker range="vs-2017"
+Nový projekt je vždy přidružena výchozí globální prostředí Pythonu. Chcete-li projekt přidružit jiné prostředí (včetně virtuální prostředí), klikněte pravým tlačítkem na **prostředí Pythonu** uzlu v projektu, vyberte **přidat nebo odebrat prostředí Pythonu**, a Vyberte ty, které chcete.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Nový projekt je vždy přidružena výchozí globální prostředí Pythonu. Chcete-li projekt přidružit jiné prostředí (včetně virtuální prostředí), klikněte pravým tlačítkem na **prostředí Pythonu** uzlu v projektu, vyberte **přidat prostředí...** a vyberte ty, které potřebujete. Můžete také použít ovládací prvek rozevírací seznam prostředí na panelu nástrojů vyberte a prostředí nebo přidat jiný do projektu.
+
+![Přidání příkazu prostředí na panelu nástrojů Pythonu](media/environments/environments-toolbar-2019.png)
+::: moniker-end
+
+Chcete-li změnit na aktivní prostředí, klikněte pravým tlačítkem na požadované prostředí v **Průzkumníka řešení** a vyberte **aktivovat prostředí** jak je znázorněno níže. Další informace najdete v tématu [vyberte prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
 
 ![Aktivace prostředí k projektu Pythonu](media/projects-activate-environment.png)
 

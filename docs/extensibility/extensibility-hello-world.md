@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160703"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194733"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Vytvořte své první rozšíření: Hello World
 
@@ -44,7 +44,7 @@ Než začnete, ujistěte se, že jste nainstalovali **vývoj rozšíření sady 
 
 ::: moniker range="vs-2017"
 
-Krok 1. Z **souboru** nabídce vyberte možnost **nový projekt**.
+Krok 1. Z **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
 Krok 2. Do vyhledávacího pole v pravém horním rohu, zadejte "vsix" a vyberte vizuál C# **projekt VSIX**. Zadejte "HelloWorld" **název** v dolní části dialogového okna a vyberte **OK**.
 
@@ -58,7 +58,7 @@ Pokud potřebujete ponechat v tomto kurzu, vraťte se do něj, můžete najít v
 
 ::: moniker range=">=vs-2019"
 
-Krok 1. Z **souboru** nabídce vyberte možnost **nový projekt**. Vyhledejte "vsix" a vyberte vizuál C# **projekt VSIX** a potom **Další**.
+Krok 1. Z **souboru** nabídce vyberte možnost **nový** > **projektu**. Vyhledejte "vsix" a vyberte vizuál C# **projekt VSIX** a potom **Další**.
 
 Krok 2. Zadejte "HelloWorld" **název projektu** a vyberte **vytvořit**.
 
@@ -84,7 +84,7 @@ Váš nový příkaz Soubor je viditelný v **Průzkumníka řešení**. V čás
 
 ## <a name="modify-the-source-code"></a>Změnit zdrojový kód
 
-Na tento bod, příkaz a tlačítko je text automaticky generované a velmi zajímavé. Pokud chcete provést změny, můžete upravit VSCT soubor a soubor CS.
+V tomto okamžiku příkaz i jeho text na tlačítku jsou automaticky generované a velmi zajímavé. Pokud chcete provést změny, můžete upravit VSCT soubor a soubor CS.
 
 * Soubor VSCT je, kde je můžete přejmenovat příkazům, jakož i definují, kam obrátit příkaz systému Visual Studio. Při prohlížení souboru VSCT si povšimněte komentáře, které popisují, co každý oddíl VSCT ovládacích prvků kódu.
 

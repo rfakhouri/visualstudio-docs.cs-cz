@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 277d02a64992d682d0d1f709c31c564f65cfac15
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069642"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195057"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novinky v sadě Visual Studio 2017
 
@@ -131,7 +131,7 @@ Automatizované testování je klíčovou součástí libovolného kanálu DevOp
 
 Další informace o automatických testů, najdete v článku [kanálu CI/CD pro automatizované testování v DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) blogový příspěvek.
 
-A další informace o tom, co je nového [nástrojů Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření devlabs s názvem, najdete v článku [potvrzení s jistotou: Potvrdit kvalitu kódu čas](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) blogový příspěvek.
+A další informace o tom, co je nového [nástrojů Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření devlabs s názvem, najdete v článku [potvrzení s jistotou: Potvrdit kvalitu kódu čas](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) blogový příspěvek.
 
 ### <a name="visual-studio-ide-enhancements"></a>Vylepšení Visual Studio IDE
 
@@ -188,7 +188,7 @@ Aktualizovali jsme navigační prostředí, se kterými získáte od A do B s v�
 
   ![Vizualizér struktur Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Další informace o nových funkcích produktivity, najdete v článku [produktivitu v sadě Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) blogový příspěvek označit Wilson-Thomase.
+Další informace o nových funkcích produktivity, najdete v článku [Visual Studio 2017: Zvýšení produktivity, výkonu a partneři](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) blogový příspěvek.
 
 ### <a name="visual-c"></a>Visual C++
 

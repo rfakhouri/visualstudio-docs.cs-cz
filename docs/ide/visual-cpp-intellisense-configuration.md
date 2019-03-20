@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca04769fb7f9767c1f3ab73aa5cc9052bf81c69b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872269"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194055"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurace projektu C++ pro IntelliSense
 
@@ -52,7 +52,7 @@ Další informace najdete v tématu [jak: Povolení technologie IntelliSense pro
 
 ### <a name="open-folder-projects"></a>Otevřete složku projekty
 
-Pro projekty CMake, ujistěte se, že #include cesty jsou správně zadané u všech konfigurací v soubor CMakeLists.txt. Ostatní typy projektů může vyžadovat souboru CppProperties.json. Další informace najdete v tématu [konfigurace technologie IntelliSense s CppProperties.json](/cpp/ide/non-msbuild-projects#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Zkontrolujte správnost cesty pro každou konfiguraci, která je definována v souboru.
+Pro projekty CMake, ujistěte se, že #include cesty jsou správně zadané u všech konfigurací v soubor CMakeLists.txt. Ostatní typy projektů může vyžadovat souboru CppProperties.json. Další informace najdete v tématu [konfigurace technologie IntelliSense s CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Zkontrolujte správnost cesty pro každou konfiguraci, která je definována v souboru.
 
 Pokud je v souboru CppProperties.json chybu syntaxe, IntelliSense v souborech ovlivněné bude nepřesná. Visual Studio se zobrazí chyby v okně výstup.
 
@@ -72,7 +72,7 @@ Existují dva běžné způsoby, ve kterých se tyto potíže projeví v sadě V
 
    ![Analyzátor značek nabízí k definování stávající – funkce](media/vcpp-intellisense-tag-parser-function.png)
 
-Chcete-li tyto druhy problémů vyřešit, přidejte do ní soubor **cpp.hint** do kořenového adresáře řešení. Další informace najdete v tématu [soubory pokynů](/cpp/ide/hint-files).
+Chcete-li tyto druhy problémů vyřešit, přidejte do ní soubor **cpp.hint** do kořenového adresáře řešení. Další informace najdete v tématu [soubory pokynů](/cpp/build/reference/hint-files).
 
 Chyby analyzátoru značek joinkind **seznam chyb** okna.
 

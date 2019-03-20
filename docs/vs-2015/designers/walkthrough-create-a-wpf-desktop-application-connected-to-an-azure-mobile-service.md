@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření aplikace WPF plochy připojené k mobilní službě Azure | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření aplikace WPF plochy připojené k mobilní službě Azure | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803728"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195070"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Průvodce: Vytvoření aplikace WPF plochy připojené k mobilní službě Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Návod: Vytvoření aplikace WPF plochy připojené k mobilní službě Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplikace, která používá Azure Mobile Service k ukládání a poskytují data.  
@@ -484,7 +484,7 @@ Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplika
     > [!NOTE]
     >  Budete muset změnit číselnou část adresy URL. Microsoft Azure vyžaduje jedinečnou adresu URL pro každou mobilní službu.  
   
-     Tím se nastaví adresu URL pro službu *https://wpfquickstart01.azure-mobile.net/*.  
+     Tím se nastaví adresu URL pro službu `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  V **databáze** seznamu, vyberte volbu databáze. Protože jde aplikaci, která pravděpodobně nebude obohatit o spoustu využití, můžete chtít vybrat **vytvořit zdarma 20MB databází SQL database** možnost, nebo vyberte bezplatnou databázi již spojen s vaším předplatným.  
   

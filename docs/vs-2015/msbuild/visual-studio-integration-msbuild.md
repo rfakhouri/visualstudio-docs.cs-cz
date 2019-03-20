@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763307"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194506"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio hostuje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] k
   
  Toto téma popisuje konkrétní aspekty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]společnosti [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] hostování, který by měl zvážit při přizpůsobení projektů a souborů TARGETS, které chcete načíst a vytvořit v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ty vám pomohou Ujistěte se, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] funkce jako IntelliSense a ladění práce pro váš vlastní projekt.  
   
- Informace o projektech C++, naleznete v tématu [soubory projektu](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401).  
+ Informace o projektech C++, naleznete v tématu [soubory projektu](/cpp/build/reference/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Přípony názvů souborů projektu  
  MSBuild.exe rozpozná všechny příponu názvu souboru projektu odpovídající vzoru. * proj. Ale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpozná pouze podmnožinu těchto přípon názvů souborů projektu, které určují projekt specifický pro jazyk systému, který načte projekt. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nemá jazykově neutrální [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] systém projektu.  

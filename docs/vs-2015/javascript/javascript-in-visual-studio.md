@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567380"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195018"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript ve Visual Studiu 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jaz
 
 |Funkce|Popis|
 |-------------|-----------------|
-|Třídy|Podporuje novou syntaxi deklarace [třídy](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Třídy|Podporuje novou syntaxi deklarace [třídy](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Co|[Co](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) umožňují snadněji a čisticí asynchronní programování. Promise konstruktory jsou podporovány, spolu s `all` a `race` pomocné metody.|
-|Iterátory|Nyní můžete iterovat iterable objekty (včetně polí, jako pole objektů a iterátory), vyvolání hook vlastní iterace pomocí příkazů ke spuštění pro hodnotu každé různé vlastnosti. Další informace najdete v tématu [iterátory a generátory](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Poznámka:**  Generátory se zatím nepodporují.|
+|Iterátory|Nyní můžete iterovat iterable objekty (včetně polí, jako pole objektů a iterátory), vyvolání hook vlastní iterace pomocí příkazů ke spuštění pro hodnotu každé různé vlastnosti. Další informace najdete v tématu [iterátory a generátory](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Poznámka:**  Generátory se zatím nepodporují.|
 |Funkce šipky|Funkce šipky (= >) poskytuje syntaxi ve zkráceném tvaru pro `function` – klíčové slovo, které funkce lexikální `this` vazby.|
 |Nové metody pro předdefinované objekty|[Objekt Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math – objekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [číslo objektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [objekt objektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object), a [řetězec objektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) předdefinované objekty zahrnují mnoho nových funkcí nástroje a vlastnosti pro manipulaci a prohledávaní údaje.|
-|Vylepšení literálu objektu|Objektů teď podporují vypočítané vlastnosti, definice stručné metod a syntaxi ve zkráceném tvaru pro vlastnosti, jehož hodnota je inicializována na proměnnou se stejným názvem. Další informace najdete v tématu [vytváření objektů](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Vylepšení literálu objektu|Objektů teď podporují vypočítané vlastnosti, definice stručné metod a syntaxi ve zkráceném tvaru pro vlastnosti, jehož hodnota je inicializována na proměnnou se stejným názvem. Další informace najdete v tématu [vytváření objektů](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|
 |Proxy servery|[Proxy servery](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) povolit vlastní chování pro objekty.|
-|Parametry REST|Zbývající parametry umožňují zapnout po sobě jdoucí argumenty ve volání funkce na pole. Další informace najdete v tématu [funkce](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|Parametry REST|Zbývající parametry umožňují zapnout po sobě jdoucí argumenty ve volání funkce na pole. Další informace najdete v tématu [funkce](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function).|
 |Spread – operátor|[Operátor rozšíření](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) rozšiřuje iterable výrazů do jednotlivé argumenty. Například `a.b(…array)` je přibližně stejná jako `a.b.apply(a, array)`.|
 |Symboly|[Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) objekty povolit vlastnosti, které chcete přidat do stávající objekty se žádná možnost rušení s existujícími vlastnostmi objektu, žádné nežádoucí viditelnost a bez dalších dodatcích nekoordinovaná jiným kódem.|
 |Řetězce šablon|[Řetězce šablon](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) jsou řetězcové literály, které umožňují výrazů má být vyhodnocen a zřetězená s řetězcový literál.|

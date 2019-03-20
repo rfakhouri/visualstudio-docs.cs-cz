@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5510090424480bb47ce5d03584e7926fa00a4dc4
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567225"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194568"
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,8 +82,6 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
   
  [Ladění skriptů a webových aplikací](../debugger/debugging-web-applications-and-script.md)  
  Popisuje běžné problémy ladění a postupy, které se můžete setkat při ladění skriptu a webové aplikace.  
-  
- [Novinky v ladicím programu sady Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md)  
  Popis nových funkcí ladění přidán v této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Ladění domovské stránky](../debugger/debugging-in-visual-studio.md)  
