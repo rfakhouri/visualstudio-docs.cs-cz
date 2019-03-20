@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934143"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268535"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Načtení dat XML do datové sady
 
@@ -33,17 +33,7 @@ ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvo
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
-V tomto kroku vytvoříte projekt jazyka Visual Basic nebo Visual C#.
-
-1. V sadě Visual Studio na **souboru** nabídce vyberte možnost **nový** > **projektu**.
-
-2. Rozbalte buď **Visual C#** nebo **jazyka Visual Basic** v levém podokně vyberte **Windows Desktop**.
-
-3. V prostředním podokně, vyberte **aplikace Windows Forms** typ projektu.
-
-4. Pojmenujte projekt **ReadingXML**a klikněte na tlačítko **OK**.
-
-   **ReadingXML** projekt je vytvořen a přidán do **Průzkumníka řešení**.
+Vytvořte nový **aplikace Windows Forms** projektu buď C# nebo Visual Basic. Pojmenujte projekt **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generovat soubor XML pro čtení do datové sady
 
@@ -123,15 +113,15 @@ Protože tento návod se zaměřuje na čtení dat XML do datové sady, je k dis
 
 Uživatelské rozhraní pro tuto aplikaci se skládá z následujících akcí:
 
--   A <xref:System.Windows.Forms.DataGridView> ovládací prvek, který zobrazí obsah souboru XML jako data.
+- A <xref:System.Windows.Forms.DataGridView> ovládací prvek, který zobrazí obsah souboru XML jako data.
 
--   A <xref:System.Windows.Forms.TextBox> ovládací prvek, který zobrazí schéma XML pro soubor XML.
+- A <xref:System.Windows.Forms.TextBox> ovládací prvek, který zobrazí schéma XML pro soubor XML.
 
--   Dvě <xref:System.Windows.Forms.Button> ovládacích prvků.
+- Dvě <xref:System.Windows.Forms.Button> ovládacích prvků.
 
-    -   Jedno tlačítko přečte soubor XML do datové sady a zobrazí ho v <xref:System.Windows.Forms.DataGridView> ovládacího prvku.
+    - Jedno tlačítko přečte soubor XML do datové sady a zobrazí ho v <xref:System.Windows.Forms.DataGridView> ovládacího prvku.
 
-    -   Druhé tlačítko extrahuje schéma z datové sady a prostřednictvím <xref:System.IO.StringWriter> zobrazí ho v <xref:System.Windows.Forms.TextBox> ovládacího prvku.
+    - Druhé tlačítko extrahuje schéma z datové sady a prostřednictvím <xref:System.IO.StringWriter> zobrazí ho v <xref:System.Windows.Forms.TextBox> ovládacího prvku.
 
 ### <a name="to-add-controls-to-the-form"></a>Chcete-li přidat ovládací prvky do formuláře
 
@@ -139,11 +129,11 @@ Uživatelské rozhraní pro tuto aplikaci se skládá z následujících akcí:
 
 2.  Z **nástrojů**, přetáhněte následující ovládací prvky na formuláři:
 
-    -   Jeden <xref:System.Windows.Forms.DataGridView> ovládacího prvku
+    - Jeden <xref:System.Windows.Forms.DataGridView> ovládacího prvku
 
-    -   Jeden <xref:System.Windows.Forms.TextBox> ovládacího prvku
+    - Jeden <xref:System.Windows.Forms.TextBox> ovládacího prvku
 
-    -   Dvě <xref:System.Windows.Forms.Button> ovládacích prvků
+    - Dvě <xref:System.Windows.Forms.Button> ovládacích prvků
 
 3.  Nastavte následující vlastnosti:
 
@@ -220,9 +210,9 @@ Teď můžete otestovat formulář, abyste měli jistotu, že se chová podle o�
 
 Tento návod vás naučí základy čtení souboru XML do datové sady, jakož i vytváření schématu na základě obsahu souboru XML. Tady jsou některé úlohy, které vám může dělat:
 
--   Úprava dat v datové sadě a zápis jej vrátit jako XML. Další informace naleznete v tématu <xref:System.Data.DataSet.WriteXml%2A>.
+- Úprava dat v datové sadě a zápis jej vrátit jako XML. Další informace naleznete v tématu <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Úprava dat v datové sadě a vypsat do databáze.
+- Úprava dat v datové sadě a vypsat do databáze.
 
 ## <a name="see-also"></a>Viz také:
 

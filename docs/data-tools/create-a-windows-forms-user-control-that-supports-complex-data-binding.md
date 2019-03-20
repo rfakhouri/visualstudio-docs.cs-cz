@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9e36363743ac1509fb37c9070085656c34b91f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936660"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268765"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje komplexní datovou vazbu
 
-Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z existujících ovládacích prvků **nástrojů**, nebo můžete vytvořit vlastní ovládací prvky, pokud vaše aplikace vyžaduje funkce, které nejsou k dispozici ve standardní ovládací prvky. Tento návod ukazuje, jak vytvořit ovládací prvek, který implementuje <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Ovládací prvky, které implementují <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> obsahovat `DataSource` a `DataMember` vlastnost, která může být vázaný na data. Tyto ovládací prvky jsou podobné <xref:System.Windows.Forms.DataGridView> nebo <xref:System.Windows.Forms.ListBox>.
+Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z existujících ovládacích prvků **nástrojů**. Nebo můžete vytvořit vlastní ovládací prvky, pokud vaše aplikace vyžaduje funkce, které nejsou k dispozici ve standardní ovládací prvky. Tento návod ukazuje, jak vytvořit ovládací prvek, který implementuje <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Ovládací prvky, které implementují <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> obsahovat `DataSource` a `DataMember` vlastnost, která může být vázaný na data. Tyto ovládací prvky jsou podobné <xref:System.Windows.Forms.DataGridView> nebo <xref:System.Windows.Forms.ListBox>.
 
 Další informace o vytváření ovládacího prvku, naleznete v tématu [řídí vývoj Windows Forms v době návrhu](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
@@ -38,8 +38,6 @@ Při vytváření ovládacích prvků pro použití ve scénářích datové vaz
 Tento návod vytvoří komplexní ovládací prvek, který zobrazuje řádky dat z tabulky. V tomto příkladu `Customers` tabulky z ukázkové databáze Northwind. Komplexní uživatelský ovládací prvek zobrazí tabulku customers v <xref:System.Windows.Forms.DataGridView> v vlastního ovládacího prvku.
 
 V tomto návodu se dozvíte, jak:
-
-- Vytvořte nový **formulářová aplikace Windows**.
 
 - Přidat nový **uživatelský ovládací prvek** do projektu.
 
@@ -71,19 +69,9 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
        Po chvilce dotaz doběhnutí a vytvořit databázi Northwind.
 
-## <a name="create-a-windows-forms-application"></a>Vytvoření aplikace Windows Forms
+## <a name="create-a-windows-forms-app-project"></a>Vytvoření projektu aplikace Windows Forms
 
-Prvním krokem je vytvoření **formulářová aplikace Windows**:
-
-1. V sadě Visual Studio na **souboru** nabídce vyberte možnost **nový** > **projektu**.
-
-1. Rozbalte buď **Visual C#** nebo **jazyka Visual Basic** v levém podokně vyberte **Windows Desktop**.
-
-1. V prostředním podokně, vyberte **aplikace Windows Forms** typ projektu.
-
-1. Pojmenujte projekt **ComplexControlWalkthrough**a klikněte na tlačítko **OK**.
-
-    **ComplexControlWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.
+Prvním krokem je vytvoření **aplikace Windows Forms** projektu buď C# nebo Visual Basic. Pojmenujte projekt **ComplexControlWalkthrough**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Přidat uživatelský ovládací prvek do projektu
 
@@ -116,27 +104,27 @@ Pro komplexní ovládací prvky, že vazba dat podpory, můžete implementovat <
 
 Použití **konfigurace zdroje dat** průvodce k vytvoření zdroje dat na základě `Customers` tabulky v ukázkové databázi Northwind:
 
-1.  Chcete-li otevřít **zdroje dat** okno na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
+1. Chcete-li otevřít **zdroje dat** okno na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
-2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.
+2. V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.
 
-3.  Vyberte **databáze** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.
+3. Vyberte **databáze** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.
 
-4.  Na **vyberte datové připojení** stránka provádění, jednu z následujících akcí:
+4. Na **vyberte datové připojení** stránka provádění, jednu z následujících akcí:
 
-    - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
+   - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
 
-    - Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.
+   - Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.
 
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak klikněte na tlačítko **Další**.
+5. Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak klikněte na tlačítko **Další**.
 
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.
+6. Na **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.
 
-7.  Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu.
+7. Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu.
 
-8.  Vyberte `Customers` tabulku a pak klikněte na tlačítko **Dokončit**.
+8. Vyberte `Customers` tabulku a pak klikněte na tlačítko **Dokončit**.
 
-    **NorthwindDataSet** se přidá do vašeho projektu a `Customers` se zobrazí v tabulce **zdroje dat** okna.
+   **NorthwindDataSet** se přidá do vašeho projektu a `Customers` se zobrazí v tabulce **zdroje dat** okna.
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Nastavit pomocí ovládacího prvku ComplexDataGridView tabulky Zákazníci
 

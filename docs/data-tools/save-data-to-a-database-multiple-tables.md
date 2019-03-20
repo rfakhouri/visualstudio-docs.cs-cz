@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936613"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268552"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 
@@ -31,17 +31,15 @@ Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Up
 
 Úlohy v tomto návodu zahrnují:
 
--   Vytvoření nového **formulářová aplikace Windows** projektu.
+-  Vytvoření a konfigurace zdroje dat ve vaší aplikaci se [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png).
 
--   Vytvoření a konfigurace zdroje dat ve vaší aplikaci se [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png).
+-  Ovládací prvky položek v nastavení [okna zdroje dat](add-new-data-sources.md#data-sources-window). Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Ovládací prvky položek v nastavení [okna zdroje dat](add-new-data-sources.md#data-sources-window). Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-  Vytváření ovládacích prvků vázaných na data přetažením položek z **zdroje dat** okna do formuláře.
 
--   Vytváření ovládacích prvků vázaných na data přetažením položek z **zdroje dat** okna do formuláře.
+-  Úprava několik záznamů ve všech tabulkách v datové sadě.
 
--   Úprava několik záznamů ve všech tabulkách v datové sadě.
-
--   Úprava kódu pro odesílání aktualizovaná data v datové sadě zpět do databáze.
+-  Úprava kódu pro odesílání aktualizovaná data v datové sadě zpět do databáze.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -63,17 +61,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 ## <a name="create-the-windows-forms-application"></a>Vytvoření aplikace Windows Forms
 
-Prvním krokem je vytvoření **formulářová aplikace Windows**. Přiřazení názvu projektu během tohoto kroku je volitelné, ale. poskytneme mu název protože uložíme také projekt později.
-
-1. V sadě Visual Studio na **souboru** nabídce vyberte možnost **nový** > **projektu**.
-
-2. Rozbalte buď **Visual C#** nebo **jazyka Visual Basic** v levém podokně vyberte **Windows Desktop**.
-
-3. V prostředním podokně, vyberte **aplikace Windows Forms** typ projektu.
-
-4. Pojmenujte projekt **UpdateMultipleTablesWalkthrough**a klikněte na tlačítko **OK**.
-
-     **UpdateMultipleTablesWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.
+Vytvořte nový **aplikace Windows Forms** projektu buď C# nebo Visual Basic. Pojmenujte projekt **UpdateMultipleTablesWalkthrough**.
 
 ## <a name="create-the-data-source"></a>Vytvoření zdroje dat
 
@@ -89,11 +77,11 @@ Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvo
 
 4. Na **vyberte datové připojení** obrazovky, proveďte jednu z následujících akcí:
 
-    -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
+    - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
 
          -nebo-
 
-    -   Vyberte **nové připojení** otevřít **přidat/změnit připojení** dialogové okno.
+    - Vyberte **nové připojení** otevřít **přidat/změnit připojení** dialogové okno.
 
 5. Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.
 

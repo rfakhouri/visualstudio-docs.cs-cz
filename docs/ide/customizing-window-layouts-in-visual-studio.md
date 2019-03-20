@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7719a355e95473e5a077fc935431c54fe1facdac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4904f7bb57430fc71ab6875d39a18c5bfb0c2fe0
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927539"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268629"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 
-V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systému windows vytvořit rozložení oken, které nejlépe vyhovují různých vývojových pracovních postupů. Při přizpůsobování rozložení prostředí IDE pamatuje ho. Například, pokud změníte umístění ukotvení **Průzkumníka řešení** a pak zavřete sadu Visual Studio, při příštím spuštění, i v případě, že pracujete v jiném počítači, **Průzkumníka řešení** bude ukotven na stejném místě. Můžete také pojmenujte vlastní rozložení a uložte ho a potom přepínejte mezi rozložení pomocí jediného příkazu. Například můžete vytvořit zobrazení pro úpravy a druhý pro ladění a přepínat mezi nimi technologií **okno** > **použít rozložení oken** příkazu nabídky.
+V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systému windows vytvořit rozložení oken, které nejlépe vyhovují různých vývojových pracovních postupů. Při přizpůsobování rozložení prostředí IDE pamatuje ho. Například, pokud změníte umístění ukotvení **Průzkumníka řešení** a pak zavřete sadu Visual Studio, při příštím otevření sady Visual Studio, i v případě, že pracujete v jiném počítači, **Průzkumníka řešení**bude ukotven na stejném místě.
+
+Můžete také pojmenovat a uložit vlastní rozložení a potom přepínejte mezi rozložení pomocí jediného příkazu. Například můžete vytvořit zobrazení pro úpravy a rozložení pro ladění a přepínat mezi nimi pomocí **okno** > **použít rozložení oken** příkazu nabídky.
 
 ## <a name="kinds-of-windows"></a>Druhy oken
 
@@ -64,27 +66,27 @@ Může být okno dokumentu nebo panel nástrojů *ukotvených*, tak, aby byly na
 
 Uspořádat okna následujícími způsoby:
 
--   Připnete také okna windows vlevo na kartu.
+- Připnete také okna windows vlevo na kartu.
 
--   Okna dokování karet pro úpravy snímků.
+- Okna dokování karet pro úpravy snímků.
 
--   Ukotvení oken nástrojů k okraji rámečku v rozhraní IDE.
+- Ukotvení oken nástrojů k okraji rámečku v rozhraní IDE.
 
--   Plovoucí dokument nebo nástroje okna přes nebo mimo rozhraní IDE.
+- Plovoucí dokument nebo nástroje okna přes nebo mimo rozhraní IDE.
 
--   Skryjte panel nástrojů k okraji rozhraní IDE.
+- Skryjte panel nástrojů k okraji rozhraní IDE.
 
--   Zobrazení oken na různých monitorech.
+- Zobrazení oken na různých monitorech.
 
--   Obnovení umístění okna do výchozího rozložení nebo uložené vlastní rozložení.
+- Obnovení umístění okna do výchozího rozložení nebo uložené vlastní rozložení.
 
-Okna nástroje dokument lze uspořádat přetažením pomocí příkazů na **okno** nabídky a kliknutím pravým tlačítkem myši záhlaví okna, které uspořádáváte.
+Uspořádat okna nástroje dokument, přetažením pomocí příkazů v **okno** nabídky, nebo kliknutím pravým tlačítkem myši záhlaví okna, které uspořádáváte.
 
 ### <a name="dock-windows"></a>Ukotvit panel
 
 Když klikněte a přetáhněte záhlaví panelu nástrojů nebo okna dokumentu na kartě, zobrazí se kosočtverce vodítka. Během operace přetažení když ukazatel myši je nad jednu ze šipek v kosočtverec, na vystínovanou oblast se zobrazí, který ukazuje, kde Ukotvit okno Pokud nyní uvolněte tlačítko myši.
 
-Chcete-li přesunout ukotvitelné okno bez přitahování na místě, zvolte **Ctrl** klíče při přetahování okna.
+Chcete-li přesunout ukotvitelné okno bez přitahování na místě, stiskněte **Ctrl** klíče při přetahování okna.
 
 Chcete-li vrátit okno nástroje nebo okno dokumentu na poslední ukotvené umístění, stiskněte **Ctrl** při poklepání na záhlaví okna nebo karty v okně.
 
@@ -92,19 +94,17 @@ Směrová růžice okna dokumentu, které může být ukotven pouze v editační
 
 ![Kosočtverce vodítka okna dokumentu](../ide/media/documentwindowguidediamonds.png)
 
-Okna nástrojů můžete připevnit na jedné straně rámu v integrovaném vývojovém prostředí nebo v editačním rámci. Kosočtverce vodítka se zobrazí při přetažení okna nástrojů do jiného umístění, aby vám usnadnily dokování okna.
-
-Směrová růžice v oknech nástrojů
+Okna nástrojů můžete připevnit na jedné straně rámu v integrovaném vývojovém prostředí nebo v editačním rámci. Kosočtverce vodítka se zobrazí při přetažení okna nástrojů do jiného umístění můžete snadno Zadokovat okna.
 
 ![Nástroj okno Průvodce kosočtverce](../ide/media/vs10guidediamond.png)
 
-Následující ilustrace ukazuje **Průzkumníka řešení** je ukotven na nové umístění, které se zobrazí modré vystínovanou oblast:
+Následující ilustrace ukazuje **Průzkumníka řešení** je ukotven na nové umístění, které je potřeba pomocí modré vystínovanou oblast:
 
 ![Průzkumník řešení na nové pozici ukotvení](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Zavření a automatického skrytí oken nástrojů
 
-Zavřít panel nástrojů kliknutím **X** v pravém horním rohu záhlaví; znovu do okna příkazem jeho klávesnice nebo v místní nabídce. Okna nástrojů podporují funkci s názvem *automaticky skrýt*, což způsobí, že okno snímku odjede stranou stranou při použití jiného okna. Když je okno skryto automaticky, zobrazí se jeho název na kartě na okraji rozhraní IDE. Pokud chcete znovu použít okno, přejděte na kartu tak, aby se okno zasunulo zpět do zobrazení.
+Zavřít panel nástrojů kliknutím **X** v pravém horním rohu záhlaví. Znovu otevřete okno, příkazem jeho klávesnice nebo v místní nabídce. Okna nástrojů podporují funkci s názvem *automaticky skrýt*, což způsobí, že okno snímku odjede stranou stranou při použití jiného okna. Když je okno automaticky skrytá, zobrazí se jeho název na kartě na okraji rozhraní IDE. Pokud chcete znovu použít okno, přejděte na kartu tak, aby se okno zasunulo zpět do zobrazení.
 
 ![Automatické skrývání](../ide/media/vs2015_auto_hide.png)
 
@@ -125,11 +125,11 @@ Pokud máte druhý monitor a váš operační systém jej podporuje, můžete zv
 
 Rozhraní IDE může vrátit do původního rozložení okna pro kolekci nastavení pomocí **resetovat rozložení okna** příkazu. Když spustíte tento příkaz, provedou se tyto akce:
 
--   Všechna okna jsou přesunuta do jejich výchozích poloh.
+- Všechna okna jsou přesunuta do jejich výchozích poloh.
 
--   Windows, které jsou uzavřeny ve výchozím rozložení okna, jsou zavřena.
+- Windows, které jsou uzavřeny ve výchozím rozložení okna, jsou zavřena.
 
--   Windows, které jsou otevřeny v výchozí rozložení okna jsou otevřené.
+- Windows, které jsou otevřeny v výchozí rozložení okna jsou otevřené.
 
 ### <a name="create-and-save-custom-layouts"></a>Vytvoření a uložení vlastní rozložení
 
@@ -139,25 +139,25 @@ Nejprve vytvořte řešení testu, který má dva projekty, každá má jiné op
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Vytvořte projekt uživatelského rozhraní a přizpůsobení rozložení
 
-1.  V **nový projekt** dialogové okno, vytvořte  **C# aplikace klasické pracovní plochy WPF** a volat libovolně. Předstírají, že je projekt kde budeme pracovat v uživatelském rozhraní, proto jsme pro maximalizaci místa pro okna návrháře a eliminuje přesunout jiné nástroje systému windows.
+1. Vytvořte nový C# **aplikace WPF** projektu. Představte si, že v tomto projektu, budete vývoj uživatelského rozhraní. Chcete maximalizovat místo pro okna návrháře a eliminuje přesunout jiné nástroje systému windows.
 
-2.  Pokud máte více monitorů, o přijetí změn **Průzkumníka řešení** okno a **vlastnosti** okna přes druhý monitor. V systému jednoho monitoru zavřete všechna okna s výjimkou návrháře.
+2. Pokud máte více monitorů, o přijetí změn **Průzkumníka řešení** okno a **vlastnosti** okna přes druhý monitor. V systému jednoho monitoru zavřete všechna okna s výjimkou návrháře.
 
-3.  Stisknutím klávesy **Ctrl + Alt + X** zobrazíte **nástrojů**. Pokud je toto okno ukotveno, přetáhněte ho tak, aby ho čísel s plovoucí čárkou někde, kde byste chtěli, umístěte na buď monitoru.
+3. Stisknutím klávesy **Ctrl**+**Alt**+**X** zobrazíte **nástrojů** okna. Pokud je toto okno ukotveno, přetáhněte ho tak, aby ho čísel s plovoucí čárkou někde ve kterém chcete ji umístit.
 
-4.  Stisknutím klávesy **F5** do sady Visual Studio v režimu ladění. Upravit polohu příkazu **automatické hodnoty**, **zásobník volání** a **výstup** ladění systému windows, jak je potřebujete. Rozložení, který se chystáte vytvořit, platit pro úpravy režimu i režimu ladění.
+4. Stisknutím klávesy **F5** do sady Visual Studio v režimu ladění. Upravit polohu příkazu **automatické hodnoty**, **zásobník volání**, a **výstup** ladění systému windows, jak je potřebujete. Rozložení, který se chystáte vytvořit má platit pro úpravy režimu i režimu ladění.
 
-5.  Když vašich rozložení v režimu ladění i v režimu úprav jsou, jak chcete, z hlavní nabídky zvolte **okno** > **uložit rozložení oken**. Volání toto rozložení "Designer".
+5. Když vašich rozložení v režimu ladění i v režimu úprav jsou, jak chcete, zvolte **okno** > **uložit rozložení oken**. Volání toto rozložení "Designer".
 
-     Všimněte si, že nové rozložení je přiřazena další klávesovou zkratku ze seznamu vyhrazené **Ctrl** + **Alt** + **1... 0**.
+     Všimněte si, že nové rozložení je přiřazena další klávesovou zkratku ze seznamu vyhrazené **Ctrl**+**Alt**+**1... 0**.
 
 #### <a name="create-a-database-project-and-layout"></a>Vytvořte projekt databáze a rozložení
 
-1.  Přidat nový **databázi systému SQL Server** projektu do řešení.
+1. Přidat nový **databázi systému SQL Server** projektu do řešení.
 
-2.  Klikněte pravým tlačítkem na nový projekt v **Průzkumníka řešení** a zvolte **zobrazení v Průzkumníku objektů**. Zobrazí se **Průzkumník objektů systému SQL Server** okna, která umožňuje přístup k tabulkám, zobrazení a dalších objektů v databázi. Můžete buď uvolnění toto okno nebo necháte ukotven. Jiné nástroje systému windows upravte požadovaným způsobem. Pro přidání realitu můžete přidat databázi aplikace skutečný, ale není nutné v tomto návodu.
+2. Klikněte pravým tlačítkem na nový projekt v **Průzkumníka řešení** a zvolte **zobrazení v Průzkumníku objektů**. Zobrazí se **Průzkumník objektů systému SQL Server** okna, která umožňuje přístup k tabulkám, zobrazení a dalších objektů v databázi. Můžete buď uvolnění toto okno nebo necháte ukotven. Jiné nástroje systému windows upravte požadovaným způsobem. Pro přidání realitu můžete přidat databázi aplikace skutečný, ale není nutné v tomto návodu.
 
-3.  Když rozložení je, jak chcete, z hlavní nabídky zvolte **okno** > **uložit rozložení oken**. Volání toto rozložení "DB projektu." (Budeme se zabývat rozložení režimu ladění pro tento projekt.)
+3. Když rozložení je, jak chcete, z hlavní nabídky zvolte **okno** > **uložit rozložení oken**. Volání toto rozložení "DB projektu." (Budeme se zabývat rozložení režimu ladění pro tento projekt.)
 
 #### <a name="switch-between-the-layouts"></a>Přepínání rozložení
 

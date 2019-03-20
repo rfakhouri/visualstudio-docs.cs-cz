@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928423"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268634"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Postupy: Vytvoření a úprava konfigurací
 
@@ -46,17 +46,13 @@ V **nástroje Configuration Manager** dialogové okno, můžete použít **konfi
 
  Po nastavení konfigurace, které chcete, můžete nastavit vlastnosti projektu, které jsou vhodné pro tuto konfiguraci.
 
-### <a name="to-set-properties-based-on-configurations"></a>Chcete-li nastavit vlastnosti konfigurace
+### <a name="set-properties-based-on-configurations"></a>Nastavit vlastnosti konfigurace
 
--   V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.
+Chcete-li nastavit vlastnosti podle konfigurace v **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**. Můžete nastavit vlastnosti pro konkrétní konfiguraci. Například pro konfiguraci vydané verze, můžete zadat, že je kód zoptimalizovaný při řešení je sestaveno a pro konfiguraci ladění, můžete určit, že `DEBUG` symbol podmíněné kompilace je součástí.
 
-     **Stránky vlastností** otevře se okno.
+Další informace o nastavení stránky vlastností naleznete v tématu [spravovat vlastnosti projektu a řešení](../ide/managing-project-and-solution-properties.md).
 
-     Můžete nastavit vlastnosti pro konkrétní konfiguraci. Například pro konfiguraci vydané verze, můžete zadat, že je kód zoptimalizovaný při řešení je sestaveno a pro konfiguraci ladění, můžete určit, že `DEBUG` symbol podmíněné kompilace je součástí. Další informace o nastavení stránky vlastností naleznete v tématu [spravovat vlastnosti projektu a řešení](../ide/managing-project-and-solution-properties.md).
-
-## <a name="create-and-modify-project-configurations"></a>Vytvoření a změny konfigurace projektu
-
-### <a name="to-create-a-project-configuration"></a>Pro vytvoření konfigurace projektu
+## <a name="create-a-project-configuration"></a>Vytvoření konfigurace projektu
 
 1.  Otevřít **nástroje Configuration Manager** dialogové okno.
 
@@ -72,7 +68,7 @@ V **nástroje Configuration Manager** dialogové okno, můžete použít **konfi
 
 6.  Chcete-li vytvořit konfiguraci celé řešení ve stejnou dobu, vyberte **vytvořit nová konfigurace řešení** zaškrtávací políčko.
 
-### <a name="to-rename-a-project-configuration"></a>Chcete-li přejmenovat konfigurace projektu
+## <a name="rename-a-project-configuration"></a>Přejmenovat konfigurace projektu
 
 1.  Otevřít **nástroje Configuration Manager** dialogové okno.
 

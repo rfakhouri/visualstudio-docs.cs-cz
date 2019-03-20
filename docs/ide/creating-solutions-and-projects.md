@@ -4,7 +4,6 @@ ms.date: 02/06/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
-- vs.newproject
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867884"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268571"
 ---
 # <a name="create-solutions-and-projects"></a>Vytváření řešení a projektů
 
@@ -39,35 +38,9 @@ Přestože lze vytvořit projekt sami tak, že přidáte soubory potřebné k n�
 
 Který říká, řešení a projekty není nutné pro vývoj aplikací v sadě Visual Studio. Můžete otevřít také pouze kód, který jste naklonovali z Gitu nebo stáhli jinde. Další informace najdete v tématu [vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-> [!NOTE]
-> Popisy v tomto tématu jsou založeny na Visual Studio Community edition. Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch zde popsaných v závislosti na vašem nastavení nebo verzi systému Visual Studio. Chcete-li změnit nastavení, například k **Obecné** nebo **Visual C++** nastavení, zvolte **nástroje** > **nastavení importu a exportu**a klikněte na tlačítko **obnovit všechna nastavení**.
+## <a name="create-a-project-from-a-project-template"></a>Vytvoření projektu ze šablony projektu
 
-## <a name="to-create-a-project-from-a-project-template"></a>Vytvoření projektu ze šablony projektu
-
-1. Vytvoření nového projektu v sadě Visual Studio několika způsoby. Na **úvodní stránka**, zadejte název šablony projektu v **Hledat šablony projektů** nebo klikněte **vytvořit nový projekt** odkaz k otevření **nový Projekt** dialogové okno. Můžete také zvolit **souboru** > **nový** > **projektu** v nabídce panelu, nebo zvolte **nový projekt** tlačítko na panelu nástrojů.
-
-   ![Úvodní stránka](./media/vside-newproject1.png)
-
-   V **nový projekt** dialogovém okně dostupných šablon projektu se zobrazí v seznamu v části **šablony** kategorie. Šablony jsou uspořádané podle programovacího jazyka a projekt typu, jako je vizuál C#, JavaScript a Azure Data Lake.
-
-   ![Dialogové okno Nový projekt](./media/vside-newproject-templates-list.png)
-
-   > [!NOTE]
-   > Seznam dostupných jazyků a šablony projektů, které se zobrazí, závisí na verzi sady Visual Studio spustíte a úlohy, které jsou nainstalovány. Další informace o tom, jak nainstalovat další úlohy, naleznete v tématu [upravit přidáním nebo odebráním úlohy a komponenty Visual Studio](../install/modify-visual-studio.md).
-
-2. Zobrazit seznam šablon pro programovací jazyk, který chcete použít výběrem trojúhelníku vedle názvu jazyka a pak zvolte typ projektu.
-
-   Následující příklad ukazuje dostupné šablony projektů pro vizuál C# projekty .NET Core.
-
-   ![Šablony projektů](./media/new-project-dialog-net-core.png)
-
-3. Zadejte název nového projektu v **název** pole. Můžete zvolit uložení projektu ve výchozím umístění ve vašem systému, nebo **Procházet** tlačítko a vyhledejte jiné umístění.
-
-   Také v případě potřeby můžete změnit název řešení nebo přidat nový projekt do úložiště Git výběrem **přidat do správy zdrojových kódů**.
-
-4. Zvolte **OK** pro vytvoření řešení a projektu.
-
-5. Pokud chcete přidat další projekt do řešení, vyberte uzel řešení v **Průzkumníka řešení**a pak na panelu nabídek zvolte **projektu** > **přidat novou položku**.
+Informace o vytvoření nového projektu z šablony najdete v tématu [vytvořte nový projekt v sadě Visual Studio](create-new-project.md).
 
 ## <a name="create-a-project-from-existing-code-files"></a>Vytvoření projektu z existujících souborů kódu
 
@@ -88,12 +61,26 @@ Pokud máte soubor, který platí pro více projektů, jako je například soubo
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Vytvořit projekt .NET, který cílí na konkrétní verzi rozhraní .NET Framework
 
-Když vytvoříte projekt, můžete zadat konkrétní verzi rozhraní .NET Framework, který chcete projekt, který používá. Chcete-li určit verzi rozhraní .NET framework, zvolte **Framework** v rozevírací nabídce **nový projekt** dialogové okno.
+Když vytvoříte projekt, můžete zadat konkrétní verzi rozhraní .NET Framework, který chcete projekt, který používá.
+
+::: moniker range="vs-2017"
+
+Chcete-li určit verzi rozhraní .NET framework, zvolte **Framework** v rozevírací nabídce **nový projekt** dialogové okno.
 
 ![Rozhraní Framework rozevírací seznam v dialogovém okně Nový projekt](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > Musíte mít rozhraní .NET Framework 3.5 v systému nainstalovány pro přístup k rozhraní .NET Framework verze starší než .NET Framework 4.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Chcete-li určit verzi rozhraní .NET framework, zvolte **Framework** rozevírací nabídky na **vytvořte nový projekt** stránky.
+
+![Selektor Framework v konfiguraci nového projektu](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
 
 ## <a name="create-empty-solutions"></a>Vytvoření prázdných řešení
 
@@ -101,13 +88,27 @@ Můžete také vytvořit prázdné řešení, které mají žádné projekty. To
 
 ### <a name="to-create-an-empty-solution"></a>Vytvoření prázdného řešení
 
-1. V nabídce zvolte **souboru** > **nový** > **projektu**.
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-1. V levém (**šablony**) podokně zvolte **ostatní typy projektů** > **řešení sady Visual Studio** z rozbaleného seznamu.
+::: moniker range="vs-2017"
 
-1. V prostředním podokně vyberte **prázdné řešení**.
+2. V levém (**šablony**) podokně zvolte **ostatní typy projektů** > **řešení sady Visual Studio** z rozbaleného seznamu.
 
-1. Zadejte **název** a **umístění** hodnoty pro vaše řešení, klikněte na tlačítko **OK**.
+3. V prostředním podokně vyberte **prázdné řešení**.
+
+4. Zadejte **název** a **umístění** hodnoty pro vaše řešení a pak vyberte možnost **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Na **vytvořte nový projekt** zadejte **řešení** do vyhledávacího pole.
+
+3. Vyberte **prázdné řešení** šablonu a pak klikněte na tlačítko **Další**.
+
+4. Zadejte **název** a **umístění** hodnoty pro vaše řešení a pak vyberte možnost **vytvořit**.
+
+::: moniker-end
 
 Po vytvoření prázdného řešení můžete přidat nové nebo existující projekty nebo položky k němu výběrem **přidat novou položku** nebo **přidat existující položku** na **projektu** nabídky.
 
@@ -132,13 +133,13 @@ Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje** > **m
 > [!NOTE]
 > *.Suo* souboru je skrytý soubor, který není zobrazen ve výchozím nastavení Průzkumníku souborů. Chcete-li zobrazit skryté soubory na **zobrazení** nabídky v Průzkumníku souborů vyberte **skryté položky** zaškrtávací políčko.
 
-### <a name="to-permanently-delete-a-solution"></a>Trvale odstranit řešení
+### <a name="permanently-delete-a-solution"></a>Trvale odstranit řešení
 
 1. V **Průzkumníka řešení**, v místní nabídce (kontextová nabídka) řešení, které chcete odstranit, zvolte **otevřít složku v Průzkumníku souborů**.
 
 1. V Průzkumníku souborů přejděte o jednu úroveň výše.
 
-1. Zvolte složku, která obsahuje řešení a klikněte na tlačítko **odstranit** klíč.
+1. Zvolte složku, která obsahuje řešení a potom stiskněte klávesu **odstranit** klíč.
 
 ## <a name="see-also"></a>Viz také:
 

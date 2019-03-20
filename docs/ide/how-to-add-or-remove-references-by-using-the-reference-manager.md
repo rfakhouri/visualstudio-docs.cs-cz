@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4810cd6b45df7b305ebc4c086d60d500ed83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca0d4dd8a61b6f968dcb51fc07f2f38497d07f53
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943464"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268676"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů
 
@@ -46,9 +46,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
 
 - **Procházet**, se **poslední** podskupiny.
 
-## <a name="add-and-remove-a-reference"></a>Přidání a odebrání odkazu
-
-### <a name="to-add-a-reference"></a>Přidání odkazu
+## <a name="add-a-reference"></a>Přidat odkaz
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** nebo **závislosti** uzlu a zvolte **přidat odkaz**. Můžete také kliknout pravým tlačítkem na uzel projektu a vyberte **přidat** > **odkaz**.
 
@@ -147,44 +145,27 @@ Odkaz na soubor místo odkazu na projekt je vytvořen, pokud jeden projekt cíl�
 
 Projekt, který cílí na [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] nelze přidat odkaz na projekt do projektu, který cílí na .NET Framework a naopak.
 
-## <a name="windows-tab"></a>Karta Windows
+## <a name="universal-windows-tab"></a>Karta Universal Windows
 
-**Windows** karta obsahuje seznam všech sad SDK, které jsou specifické pro platformy, na které operační systémy Windows spouštět.
-
-Soubor WinMD je možné v sadě Visual Studio vygenerovat dvěma způsoby:
-
-- **Spravované projekty aplikací Windows 8.x Store**: Projekty aplikací pro Windows 8.x Store můžete výstup binární soubory WinMD nastavením **vlastnosti projektu** > **typ výstupu na soubor WinMD**. Název souboru WinMD musí představovat nadřazený obor názvů všech oborů názvů, které existují jeho v rámci. Například, pokud projekt obsahuje obory názvů `A.B` a `A.B.C`, jsou možné názvy pro soubory WinMD na jeho *A.winmd* a *A.B.winmd*. Pokud uživatel zadá **vlastnosti projektu** > **název sestavení** nebo **vlastnosti projektu** > **Namespace**hodnotu, která je mimo sadu oborů názvů v projektu nebo není žádný nadřazený obor názvů v rámci projektu, vygeneruje se upozornění sestavení: "" A.winmd není platný název souboru .winmd pro toto sestavení." Všechny typy v rámci souboru metadat systému Windows musejí existovat v podřízeném oboru názvů daného názvu souboru. Typy, které neexistují v podřízeném oboru daného názvu souboru nebude moct za běhu nalézt. V tomto sestavení je nejmenší společný obor názvů `CSWSClassLibrary1`. Stolní počítač Visual Basic nebo C# projekt může využívat pouze soubory Winmd vygenerované pomocí sad SDK Windows 8, které jsou označovány jako soubory Winmd první strany, a nemůže generovat soubory Winmd.
-
-- **Nativní projekty aplikací pro Windows 8.x Store**: Nativní soubor WinMD obsahuje pouze metadata. Jeho implementace se nachází v samostatném souboru knihovny DLL. Výběrem šablonu projektu součásti prostředí Windows Runtime v je možné vytvořit nativní binární soubory **nový projekt** dialogové okno nebo spuštěním prázdným projektem a upravíte vlastnosti projektu pro vytvoření souboru WinMD. Pokud projekt obsahuje nesouvislé obory názvů, chyba sestavení oznámí uživateli, aby sloučit své obory názvů nebo spustit nástroj MSMerge.
-
-**Windows** karta se skládá ze dvou podskupin.
+**Universal Windows** karta obsahuje seznam všech sad SDK, které jsou specifické pro platformy, na které operační systémy Windows spouštět.
+Tato karta obsahuje dvou podskupin: **Základní** a **rozšíření**.
 
 ### <a name="core-subgroup"></a>Podskupina jádro
 
-**Core** podskupina obsahuje seznam všech souborů Winmd (pro elementy prostředí Windows Runtime) v sadě SDK pro cílenou verzi systému Windows.
-
-Projekty aplikací pro Windows 8.x Store obsahují odkazy na všechny soubory winmd v systému Windows 8 SDK ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení v rámci **odkazy** složky **Průzkumníka řešení** označuje odkaz na celou sadu SDK Windows 8. Odpovídajícím způsobem **Core** podskupiny v **správce odkazů** nezobrazí seznam všech sestavení ze sady SDK Windows 8 a místo toho zobrazí zpráva: "Windows SDK se už odkazuje. Použijte prohlížeč objektů pro prozkoumání odkazů v sadě Windows SDK."
-
-V desktopové projekty **Core** podskupiny nezobrazuje ve výchozím nastavení. Modul Windows Runtime můžete přidat tak, že otevřete místní nabídku uzlu projektu zvolíte **uvolnit projekt**, přidáte následující fragment kódu a znovu otevřete projekt (na uzel projektu, zvolte **znovu načíst projekt**). Při vyvolání **správce odkazů** dialogové okno, **Core** se zobrazí podskupina.
-
-```xml
-<PropertyGroup>
-  <TargetPlatformVersion>8.0</TargetPlatformVersion>
-</PropertyGroup>
-```
-
-Je nutné vybrat **Windows** v této podskupině zaškrtávací políčko. Poté budete moci používat elementy prostředí Windows Runtime. Však budete také chtít přidat <xref:System.Runtime>, ve které modulu Windows Runtime definuje některé standardní třídy a rozhraní, jako například <xref:System.Collections.IEnumerable>, která se používají v knihovnách prostředí Windows Runtime. Informace o tom, jak přidat <xref:System.Runtime>, naleznete v tématu [spravované aplikace klasické pracovní plochy a prostředí Windows Runtime](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types).
+Projekty univerzálních aplikací pro Windows obsahují odkaz na Windows Universal SDK ve výchozím nastavení. Proto **Core** podskupiny v **správce odkazů** nemá seznam všech sestavení ze sady Universal Windows SDK.
 
 ### <a name="extensions-subgroup"></a>Podskupina rozšíření
 
-**Rozšíření** obsahuje seznam uživatelských sad SDK, které rozšiřují cílovou platformu Windows. Na této kartě se zobrazí Windows 8.x Store aplikace pouze pro projekty. Desktopové projekty tuto kartu nezobrazují, protože používají pouze první strany *.winmd* soubory.
+**Rozšíření** obsahuje seznam uživatelských sad SDK, které rozšiřují cílovou platformu Windows.
 
-Sada SDK je kolekce souborů, které sada Visual Studio považuje za jedinou součást. V **rozšíření** kartu, sady SDK, které platí pro projekt, ze kterých **správce odkazů** bylo vyvoláno dialogové jsou uvedeny jako jedna položka. Když se přidá do projektu, veškerý obsah sady SDK je využívána sady Visual Studio tak, aby uživatel nemusí provádět žádné další akce za účelem využití obsahu sady SDK v technologii IntelliSense, sadě nástrojů, návrhářích, prohlížeči objektů, sestavení, nasazení, ladění a balení. Informace o tom, jak zobrazit vaši sadu SDK v **rozšíření** kartu, najdete v článku [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+Sada SDK je kolekce souborů, které sada Visual Studio považuje za jedinou součást. V **rozšíření** kartu, sady SDK, které platí pro projekt, ze kterých **správce odkazů** bylo vyvoláno dialogové jsou uvedeny jako jedna položka. Když se přidá do projektu, veškerý obsah sady SDK je využívána sady Visual Studio tak, aby uživatel nemusí provádět žádné další akce za účelem využití obsahu sady SDK v technologii IntelliSense, sadě nástrojů, návrhářích, prohlížeči objektů, sestavení, nasazení, ladění a balení.
+
+Informace o tom, jak zobrazit vaši sadu SDK v **rozšíření** kartu, najdete v článku [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Pokud se projekt odkazuje na sadu SDK, která závisí na jiné sady SDK, Visual Studio nebude využívat druhou sadu SDK, pokud uživatel ručně nepřidá odkaz na tuto druhou sadu SDK. Když uživatel vybere sadu SDK na **rozšíření** karta, **správce odkazů** dialogové okno pomáhá uživateli určit závislosti sady SDK uvedením nejen název a verzi sady SDK, ale také název všechny sady SDK závislosti v podokně podrobností. Pokud uživatel nevšimne závislostí a přidá pouze sadu SDK, nástroj MSBuild vyzve uživatele k přidání závislostí.
+> Pokud se projekt odkazuje na sadu SDK, která závisí na jiné sady SDK, Visual Studio nebude využívat druhou sadu SDK, pokud ručně přidáte odkaz na tuto druhou sadu SDK. Když uživatel vybere sadu SDK na **rozšíření** kartu, **správce odkazů** dialogové okno vám pomůže určit závislosti sady SDK uvedením všechny závislosti v podokně podrobností.
 
-Pokud typ projektu nepodporuje rozšíření, na kartě nezobrazí v **správce odkazů** dialogové okno.
+Pokud typ projektu nepodporuje rozšíření, na této kartě se už nebude na **správce odkazů** dialogové okno.
 
 ## <a name="com-tab"></a>Karta COM
 

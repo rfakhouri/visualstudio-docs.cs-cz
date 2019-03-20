@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983387"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268547"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Vyhledání a používání rozšíření sady Visual Studio
 
@@ -141,7 +141,7 @@ Když tato oznámení jsou zobrazeny, můžete ignorovat oznámení nebo Absolvu
 
 Při instalaci online ukázky je řešení uloženo na dvou místech:
 
-- Pracovní kopie je uložena v umístění, které jste zadali v **nový projekt** dialogové okno.
+- Pracovní kopie je uložena v umístění, které jste zadali při vytváření projektu.
 
 - Samostatná hlavní kopie je uložena v počítači.
 
@@ -163,7 +163,7 @@ Můžete použít **spravovat rozšíření** okna k provedení těchto úloh t�
 
 - Instalovat balíky ukázek, což jsou kolekce ukázek, které se týkají technologie nebo funkce.
 
-- Nainstalujte jednotlivé online ukázky. (Můžete to provést také v **nový projekt** dialogové okno.)
+- Nainstalujte jednotlivé online ukázky.
 
 - Zobrazit upozornění na aktualizace při zveřejnění změny zdrojového kódu nainstalovaných ukázek.
 

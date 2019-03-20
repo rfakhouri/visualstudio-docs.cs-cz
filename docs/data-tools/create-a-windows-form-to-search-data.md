@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c73ab24cd2b50efd26f9a5b3ac1105325345033
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945064"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268773"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 
@@ -31,27 +31,25 @@ Parametrizované dotazy můžete přidat všechny třídy TableAdapter (a ovlád
 
 Úlohy v tomto návodu zahrnují:
 
--   Vytvoření nového **formulářová aplikace Windows** projektu.
+- Vytvoření a konfigurace zdroje dat ve vaší aplikaci se **konfigurace zdroje dat** průvodce.
 
--   Vytvoření a konfigurace zdroje dat ve vaší aplikaci se **konfigurace zdroje dat** průvodce.
+- Typ rozevírací položky v nastavení **zdroje dat** okna.
 
--   Typ rozevírací položky v nastavení **zdroje dat** okna.
+- Vytváření ovládacích prvků, které data zobrazit přetažením položek z **zdroje dat** okna do formuláře.
 
--   Vytváření ovládacích prvků, které data zobrazit přetažením položek z **zdroje dat** okna do formuláře.
+- Přidání ovládacích prvků pro zobrazení dat ve formuláři.
 
--   Přidání ovládacích prvků pro zobrazení dat ve formuláři.
+- Dokončuje **Tvůrce kritérií vyhledávání** dialogové okno.
 
--   Dokončuje **Tvůrce kritérií vyhledávání** dialogové okno.
-
--   Zadat parametry do formuláře a provádění parametrický dotaz.
+- Zadat parametry do formuláře a provádění parametrický dotaz.
 
 ## <a name="prerequisites"></a>Požadavky
 
 Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northwind.
 
-1.  Pokud nemáte SQL Server Express LocalDB, nainstalujte ji z [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo prostřednictvím **instalační program sady Visual Studio**. V **instalační program sady Visual Studio**, jako součást můžete nainstalovat SQL Server Express LocalDB **ukládání a zpracování dat** úlohy, nebo jako jednotlivých komponent.
+1. Pokud nemáte SQL Server Express LocalDB, nainstalujte ji z [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo prostřednictvím **instalační program sady Visual Studio**. V **instalační program sady Visual Studio**, jako součást můžete nainstalovat SQL Server Express LocalDB **ukládání a zpracování dat** úlohy, nebo jako jednotlivých komponent.
 
-2.  Instalace ukázkové databáze Northwind pomocí následujících kroků:
+2. Instalace ukázkové databáze Northwind pomocí následujících kroků:
 
     1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okna. (Průzkumník objektů systému SQL Server je nainstalován jako součást **ukládání a zpracování dat** zatížení **instalační program sady Visual Studio**.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na instanci LocalDB a vyberte **nový dotaz**.
 
@@ -65,17 +63,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 ## <a name="create-the-windows-forms-application"></a>Vytvoření aplikace Windows Forms
 
-Prvním krokem je vytvoření aplikace Windows Forms. Přiřazení názvu projektu je volitelné v tomto kroku, ale budete jí přiřadit názvu na toto vzhledem k tomu budete později uložení projektu:
-
-1. V sadě Visual Studio na **souboru** nabídce vyberte možnost **nový** > **projektu**.
-
-2. Rozbalte buď **Visual C#** nebo **jazyka Visual Basic** v levém podokně vyberte **Windows Desktop**.
-
-3. V prostředním podokně, vyberte **aplikace Windows Forms** typ projektu.
-
-4. Pojmenujte projekt **WindowsSearchForm**a klikněte na tlačítko **OK**.
-
-     **WindowsSearchForm** projekt je vytvořen a přidán do **Průzkumníka řešení**.
+Vytvořte nový **aplikace Windows Forms** projektu buď C# nebo Visual Basic. Pojmenujte projekt **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Vytvoření zdroje dat
 
@@ -89,9 +77,9 @@ Tento krok vytváří zdroj dat z databáze pomocí **konfigurace zdroje dat** p
 
 4.  Na **vyberte datové připojení** stránka provádění, jednu z následujících akcí:
 
-    -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
+    - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
 
-    -   Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.
+    - Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.
 
 5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak klikněte na tlačítko **Další**.
 
@@ -153,9 +141,9 @@ Spuštění aplikace otevře formulář a zpřístupňuje je připraven přijmou
 
 V závislosti na požadavcích aplikace existuje několik kroků, které můžete provést po vytvoření parametrizovaného formuláře. Mezi vylepšení, která je možné pro tento návod provést, patří:
 
--   Přidání ovládacích prvků, které zobrazují související data. Další informace najdete v tématu [vztahy v datových sadách](relationships-in-datasets.md).
+- Přidání ovládacích prvků, které zobrazují související data. Další informace najdete v tématu [vztahy v datových sadách](relationships-in-datasets.md).
 
--   Úpravy datové sady pro přidání nebo odebrání databázové objekty. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Úpravy datové sady pro přidání nebo odebrání databázové objekty. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 ## <a name="see-also"></a>Viz také:
 
