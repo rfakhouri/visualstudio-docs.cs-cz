@@ -1,5 +1,4 @@
 # [Ladění v sadě Visual Studio](debugging-in-visual-studio.md)
-# [Novinky v ladicím programu sady Visual Studio 2015](what’s-new-for-the-debugger-in-visual-studio-2015.md)
 # [Základy ladicího programu](debugger-basics.md)
 ## [Začínáme s ladicím programem](getting-started-with-the-debugger.md)
 ## [Procházení kódu s ladicím programem](navigating-through-code-with-the-debugger.md)
