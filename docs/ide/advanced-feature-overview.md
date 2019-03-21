@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221772"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268604"
 ---
 # <a name="features-of-visual-studio"></a>Funkce sady Visual Studio
 
@@ -42,9 +42,13 @@ Visual Studio nabízí sadu nástrojů, které vám umožní snadno vytvářet a
 
 ![Úloha vývoj pro Azure](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 Po instalaci **vývoj pro Azure** pracovního vytížení, následující **cloudu** šablony pro jazyk C# jsou k dispozici v **nový projekt** dialogové okno:
 
 ![Cloud šablony projektů pro Visual Studio](media/cloud-project-templates.png)
+
+::: moniker-end
 
 Visual Studio [Průzkumníka cloudu](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) vám umožňuje zobrazit a spravovat prostředky založené na Azure cloud v rámci sady Visual Studio. Tyto prostředky mohou zahrnovat virtuální počítače, tabulek, databází SQL a další. **Cloud Explorer** ukazuje prostředky Azure ve všech účtech spravované v rámci předplatného Azure jste přihlášeni. A pokud se na webu Azure portal, vyžaduje určité operace **Průzkumníka cloudu** obsahuje odkazy, které vás zavedou na portálu na místě, kde budete muset přejít.
 

@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195174"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268730"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -416,7 +416,7 @@ Systém projektu Visual C++ je založen na [systém projektu VS](https://github.
 
 ### <a name="project-property-pages"></a>Stránky vlastností projektu
 
-Návrh obecné informace najdete v tématu [rozšiřitelnosti platformy – část 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) a [rozšiřitelnosti platformy – část 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Návrh obecné informace najdete v tématu [Framework Multi-Targeting pro projekty VC ++](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
 Jednoduše řečeno, stránky vlastností zobrazí ve **vlastnosti projektu** dialogové okno pro projekt jazyka C++, které jsou definovány pomocí *pravidlo* soubory. Soubor pravidel určuje sadu vlastností, které mají zobrazit na stránce vlastností je a jak a kde by měla být uložena v projektu soubor. Pravidlo soubory jsou soubory XML, které používají formát Xaml. Typy použité k serializaci je popsané v [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Další informace o použití pravidel soubory v projektech, naleznete v tématu [soubory XML stránky vlastností pravidla](/cpp/build/reference/property-page-xml-files).
 
