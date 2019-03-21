@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 124d27b5dc139e57f9041694afe42d42eef03fb5
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 568742f1ef59eeb282cdf167096310c658c01c50
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069616"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323263"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Seznamte se s projekty a řešení s použitím jazyka Visual Basic
 
@@ -58,7 +58,7 @@ Naše zkoumání začneme vytvořením prázdné řešení. Po získání znát 
 
 1. Otevřít Visual Studio.
 
-2. V okně Start zvolte **vytvořte nový projekt**.
+2. V okně start zvolte **vytvořte nový projekt**.
 
 3. Na **vytvořte nový projekt** zadejte **prázdné řešení** do vyhledávacího pole, vyberte **prázdné řešení** šablony a klikněte na tlačítko **Další**.
 

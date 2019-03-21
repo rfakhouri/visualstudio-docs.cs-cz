@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca0d4dd8a61b6f968dcb51fc07f2f38497d07f53
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268676"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322321"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů
 
@@ -183,11 +183,11 @@ Měli byste se vyhnout přidávání odkazů na soubory do výstupů jiného pro
 
 Nelze procházet k sadě SDK a přidat do projektu. Je možné přejít pouze k souboru (například sestavení nebo *.winmd*) a přidejte ho do projektu.
 
-Při provádění odkaz na soubor na o soubor WinMD je očekávané rozložení je, že  *<FileName>.winmd*,  *<FileName>.dll*, a  *<FileName>.pri* jsou soubory všechny umístěny spolu. Pokud odkazujete na soubor WinMD v následujících scénářích, do výstupního adresáře projektu budou zkopírovány neúplné sady souborů a v důsledku toho dojde k chybám při sestavení a za běhu.
+Při provádění odkaz na soubor na o soubor WinMD je očekávané rozložení je, že  *\<název souboru > .winmd*,  *\<název souboru > .dll*, a  *\< Název souboru > .pri* soubory jsou umístěny spolu. Pokud odkazujete na soubor WinMD v následujících scénářích, do výstupního adresáře projektu budou zkopírovány neúplné sady souborů a v důsledku toho dojde k chybám při sestavení a za běhu.
 
-- **Nativní součást**: nativní projekt vytvoří jeden soubor WinMD pro každou sadu nesouvislých oborů názvů a jednu knihovnu DLL, který se skládá z implementace. Soubory WinMDs budou mít nesouvislé názvy. Při odkazování na tento soubor nativní součásti, nástroj MSBuild nerozpozná, že tyto různě nazvané soubory Winmd tvoří jednu součást. V důsledku toho pouze identicky pojmenované  *<FileName>.dll* a  *<FileName>.winmd* budou zkopírovány, a dojde k chybám za běhu. Chcete-li tento problém obejít, vytvořte sady extension SDK. Další informace najdete v tématu [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Nativní součást**: nativní projekt vytvoří jeden soubor WinMD pro každou sadu nesouvislých oborů názvů a jednu knihovnu DLL, který se skládá z implementace. Soubory WinMDs budou mít nesouvislé názvy. Při odkazování na tento soubor nativní součásti, nástroj MSBuild nerozpozná, že tyto různě nazvané soubory Winmd tvoří jednu součást. V důsledku toho pouze identicky pojmenované  *\<název souboru > .dll* a  *\<název souboru > .winmd* budou zkopírovány, a dojde k chybám za běhu. Chcete-li tento problém obejít, vytvořte sady extension SDK. Další informace najdete v tématu [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Využívající ovládací prvky**:, ovládací prvek XAML přinejmenším z  *<FileName>.winmd*,  *<FileName>.dll*,  *<FileName>.pri*,  *<XamlName>.xaml*a  *<ImageName>.jpg*. Při sestavení projektu nebudou soubory prostředků, které jsou spojeny s odkaz na soubor získat zkopírovány do výstupního adresáře projektu a to jenom  *<FileName>.winmd*,  *<FileName>.dll*a  *<FileName>.pri* budou zkopírovány. Bude zaznamenána chyba sestavení informovat uživatele, který prostředky  *<XamlName>.xaml* a  *<ImageName>.jpg* chybí. Aby sestavení proběhlo úspěšně, bude uživatel muset ručně zkopírovat tyto soubory prostředků do výstupního adresáře projektu pro sestavení a ladění/dobu běhu. Tento problém obejít, buď vytvořte rozšiřující sadu SDK pomocí následujících kroků v [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md) nebo upravit soubor projektu a přidejte následující vlastnost:
+- **Využívající ovládací prvky**:, ovládací prvek XAML přinejmenším z  *\<název souboru > .winmd*,  *\<název souboru > .dll*,  *\<Název souboru > .pri*,  *\<XamlName > .xaml*a  *\<ImageName > .jpg*. Při sestavení projektu nebudou soubory prostředků, které jsou spojeny s odkaz na soubor získat zkopírovány do výstupního adresáře projektu a to jenom  *\<název souboru > .winmd*,  *\<název souboru > .dll* a  *\<název souboru > .pri* budou zkopírovány. Bude zaznamenána chyba sestavení informovat uživatele, který prostředky  *\<XamlName > .xaml* a  *\<ImageName > .jpg* chybí. Aby sestavení proběhlo úspěšně, bude uživatel muset ručně zkopírovat tyto soubory prostředků do výstupního adresáře projektu pro sestavení a ladění/dobu běhu. Tento problém obejít, buď vytvořte rozšiřující sadu SDK pomocí následujících kroků v [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md) nebo upravit soubor projektu a přidejte následující vlastnost:
 
     ```xml
     <PropertyGroup>

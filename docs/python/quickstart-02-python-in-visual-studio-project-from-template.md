@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3878c3817ef7df66f4e8d31562598389fd07bc29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c3f33544034a0444f85df47f0c3ab554407de79e
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927019"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325250"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Rychlý start: Vytvoření projektu Pythonu z šablony v sadě Visual Studio
 
 Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-python-support-in-visual-studio.md), je snadné vytvoření nového projektu Pythonu pomocí různých šablon. V tomto rychlém startu vytvoříte jednoduchou aplikaci Flask pomocí šablony. Výsledný projekt je podobný projekt můžete vytvořit ručně pomocí [rychlý start – vytvoření webové aplikace pomocí Flask](../ide/quickstart-python.md).
 
-1. Spusťte Visual Studio 2017.
+1. Otevřete Visual Studio 2017.
 
 1. V horní nabídce zvolte **souboru** > **nový** > **projektu**, pak v **nový projekt** dialogové okno hledání "prázdná flask", vyberte **prázdný webový projekt Flask** šablony v seznamu v prostředním pojmenujte projekt a vyberte **OK**:
 

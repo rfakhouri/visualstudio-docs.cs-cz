@@ -2,7 +2,7 @@
 layout: LandingPage
 title: Správa verzí
 description: Průvodce Začínáme se správou verzí v sadě Visual Studio
-keywords: VSTS, TFS, Version Control
+keywords: 'VSTS, TFS, Version Control'
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,13 +11,7 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-- multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998921"
+  - multiple
 ---
 # <a name="version-control-in-visual-studio"></a>Správa verzí v sadě Visual Studio
 
@@ -27,6 +21,7 @@ Systémy správy verzí můžete sledovat změny kódu v čase. Při prováděn�
 
 Git je systém správy verzí nejčastěji používané ještě dnes a se rychle mění na standard pro správu verzí. Git je distribuovaný systém správy verzí, což znamená, že vaše místní kopie kódu je úložiště úplnou verzi ovládacího prvku. Zkontrolujte tyto plně funkční místní úložiště, které usnadňují vzdálenou nebo offline práci. Potvrďte svou práci místně a pak sesynchronizujete své úložiště s kopií na serveru. Toto paradigma se liší od centralizované správy verzí ve kterém klienti musí provést synchronizaci kódu serveru před vytvořením nové verze kódu.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">

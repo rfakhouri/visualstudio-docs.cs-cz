@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634926"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324679"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud váš projekt obsahuje vlastní nastavení pásu karet, který byl vytvořen pomocí **pás karet (vizuální návrhář)** položku projektu, musíte proveďte následující změny do projektu kódu, pokud Cílová architektura, která se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později.
@@ -103,9 +103,9 @@ ms.locfileid: "56634926"
 
      Předpokládejme například, že soubor obsahuje následující řádek kódu, který zpracovává <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> události v projektu, který cílí na rozhraní .NET Framework 3.5.
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder> v projektu, který se zaměřuje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, je nutné použít následující kód místo.
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> v projektu, který se zaměřuje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, je nutné použít následující kód místo.
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder> úplný seznam delegátů pásu karet najdete v tématu [zpracování pás karet událostí](#ribbonevents).
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> úplný seznam delegátů pásu karet najdete v tématu [zpracování pás karet událostí](#ribbonevents).
 
 5.  V projektech Visual Basicu, vyhledejte `ThisRibbonCollection` třídy na konci souboru. Upravte deklaraci této třídy, aby už nebude dědit z `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634926"
 
   Následující příklad kódu ukazuje, jak vytvořit <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> ve třídě pásu karet v projektu, který se zaměřuje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder> následující tabulka uvádí můžete programově vytvořit ovládací prvky a metody pro použití k vytvoření ovládacích prvků v projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> následující tabulka uvádí můžete programově vytvořit ovládací prvky a metody pro použití k vytvoření ovládacích prvků v projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.
 
 |Control|Metoda RibbonFactory pro použití v [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a novější projekty|
 |-------------| - |

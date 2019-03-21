@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07081d8b02e4f884ae7ec983e4c97dcb8bfe672
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938732"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324718"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Postupy: Určení událostí sestavení (Visual Basic)
 
@@ -115,7 +115,7 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
    End Sub
    ```
 
-   Příkaz přebírá dva argumenty. První argument je cesta k manifestu aplikace (to znamená, složka, ve které proces sestavení vytvoří manifest, obvykle  *<Projectname>.publish*). Druhý argument je nová verze operačního systému.
+   Příkaz přebírá dva argumenty. První argument je cesta k manifestu aplikace (to znamená, složka, ve které proces sestavení vytvoří manifest, obvykle  *\<ProjectName > .publish*). Druhý argument je nová verze operačního systému.
 
 5. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
 

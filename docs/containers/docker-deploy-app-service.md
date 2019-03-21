@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 141bbb010a1c71e9089c4d800ca43c0d90dade5e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4f28494bcb15cc66d8563fdc371a33a15fde85a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160765"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322682"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Nasazení kontejneru ASP.NET Core do služby Azure App Service pomocí sady Visual Studio
 
@@ -47,7 +47,7 @@ Následující kroky vás provedou vytvořením základní aplikaci ASP.NET Core
 7. Vyberte **Linux** typ kontejneru a klikněte na tlačítko **OK**. Kontejnery Windows nejsou podporovány pro nasazení do služby Azure App Service jako kontejner.
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-1. Ze sady Visual Studio **Start** okně zvolte **vytvořte nový projekt**.
+1. V okně spuštění sady Visual Studio zvolte **vytvořte nový projekt**.
 1. Zvolte **webové aplikace ASP.NET Core**a zvolte **Další**.
 1. Pojmenujte novou aplikaci (nebo přijmout výchozí nastavení) a zvolte **vytvořit**.
 1. Zvolte **webovou aplikaci**.

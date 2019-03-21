@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: d9d5a6ad819859822121a03aee9990f94de031b3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681748"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325052"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Nástroje pro zjišťování a správu instancí sady Visual Studio
 
@@ -37,7 +39,7 @@ Kromě toho [rozhraní API pro konfiguraci nastavení](<xref:Microsoft.VisualStu
 
 ## <a name="using-vswhereexe"></a>Pomocí vswhere.exe
 
-`vswhere.exe` automaticky je součástí sady Visual Studio 2017 verze 15.2 nebo vyšší, nebo si můžete stáhnout z [stránky vydaných verzí](https://github.com/Microsoft/vswhere/releases). Použití `vswhere -?` zobrazíte informace nápovědy o tomto nástroji. Jako příklad tento příkaz zobrazí všechny verze sady Visual Studio, včetně starší verze produktu a předběžné verze a výsledky ve formátu JSON:
+`vswhere.exe` automaticky je součástí sady Visual Studio 2017 verze 15.2 nebo novější, nebo můžete sadu stáhnout z [stránky vydaných verzí](https://github.com/Microsoft/vswhere/releases). Použití `vswhere -?` zobrazíte informace nápovědy o tomto nástroji. Jako příklad tento příkaz zobrazí všechny verze sady Visual Studio, včetně starších verzí produktů a verzí a výsledky ve formátu JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json

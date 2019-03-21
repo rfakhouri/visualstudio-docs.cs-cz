@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b1fe0dababa77d2f52f98618a2ba5a54b6b0b728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221644"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324997"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Postupy: Hledání a organizace šablon projektů a položek
 
@@ -61,9 +61,9 @@ Například následující adresář má uživatel šablony projektů pro C#:
 
 Ve výchozím nastavení jsou součástí šablony, které instalace sady Visual Studio:
 
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\< programovací jazyk\>\\<Locale ID>*
+- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\< programovací jazyk\>\\< ID národního prostředí\>*
 
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\< programovací jazyk\>\\<Locale ID>*
+- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\< programovací jazyk\>\\< ID národního prostředí\>*
 
 Například následující adresář má položku šablony jazyka Visual Basic pro angličtinu (LCID 1033):
 

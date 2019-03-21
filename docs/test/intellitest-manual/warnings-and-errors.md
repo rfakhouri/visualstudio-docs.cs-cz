@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925402"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324731"
 ---
 # <a name="warnings-and-errors"></a>Upozornění a chyby
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925402"
   * [MaxCalls překročena](#maxcalls-exceeded)
   * [MaxStack překročena](#maxstack-exceeded)
   * [MaxRuns překročena](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests překročena](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests překročena](#maxrunswithoutnewtests-exceeded)
 
 * **Řešení omezení**
-  * [Nejde konkretizovat řešení](#cannot-concretize-solution)<p />
+  * [Nejde konkretizovat řešení](#cannot-concretize-solution)
 
 * **domény**
   * [Potřebuji nápovědu k vytvoření objektu](#help-construct)
   * [Potřebujete najít typy](#help-types)
-  * [Použitelný typ uhodnout](#usable-type-guessed)<p />
+  * [Použitelný typ uhodnout](#usable-type-guessed)
 
 * **Spuštění**
   * [Neočekávaná chyba při průzkumu](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **Instrumentace**
   * [Neinstrumentované metody, které volá](#uninstrumented-method-called)
   * [Externí metodu s názvem](#external-method-called)
   * [Neinstrumentovatelné metody, které volá](#uninstrumentable-method-called)
   * [Problém s testovatelností](#testability-issue)
-  * [Omezení](#limitation)<p />
+  * [Omezení](#limitation)
 
 * **Interpret**
   * [Pozorovaná neshoda volání](#observed-call-mismatch)

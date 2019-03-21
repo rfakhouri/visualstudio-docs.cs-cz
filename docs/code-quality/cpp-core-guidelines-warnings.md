@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872431"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323448"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 
@@ -84,7 +84,7 @@ Podle dokumentu C++ Core Guidelines existují k pomoci psát lepší a bezpečn�
 
 Nová pravidla přidávání na kontrola C++ Core pokyny, kdykoliv zvýšit počet upozornění, které jsou vytvářeny pro již existující kód. Sady předdefinovaných pravidel můžete použít k filtrování, které druhy pravidla povolit. Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou:
 
-  - **– Pravidla ukazatelů vlastníka** vynutit [kontroly správy prostředků související s owner<T> podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **– Pravidla ukazatelů vlastníka** vynutit [kontroly správy prostředků související s owner\<T > podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **– Pravidla konstant** vynutit [kontroly podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -162,7 +162,7 @@ Možnost příkazového řádku můžete dočasně zakázat všechny analýzy k�
 V některých případech může být užitečné pro analýzu kódu do, zaměřuje a stále využívat integrované vývojové prostředí sady Visual Studio. Následuje ukázkový scénář, který můžete použít pro velké projekty ušetřit čas sestavení a usnadňují tak výsledky filtrování.
 
 1. V příkazovém prostředí služby nastaven `esp.extension` a `esp.annotationbuildlevel` proměnné prostředí.
-2. Spusťte sadu Visual Studio z příkazového okna dědění tyto proměnné.
+2. Otevřít Visual Studio z příkazového okna dědění tyto proměnné.
 3. Načtení projektu a otevřete její vlastnosti.
 4. Povolit analýzu kódu, vyberte příslušné pravidlo sady, ale není doporučeno zapínat rozšířeními pro analýzu kódu.
 5. Přejděte k souboru, který chcete analyzovat pomocí kontrola C++ Core pokyny a otevřete její vlastnosti.

@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e828d5eaf090aa47e82ed41cf5c6acb9301dd142
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069668"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323341"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
@@ -43,7 +43,7 @@ Začněte tím, že vytváří se nový soubor a přidat nějaký kód do něj.
 
 ::: moniker range=">=vs-2019"
 
-1. Otevřít Visual Studio. Stisknutím klávesy **Esc** nebo klikněte na tlačítko **pokračovat bez kódu** v okně Start otevřete vývojové prostředí.
+1. Otevřít Visual Studio. Stisknutím klávesy **Esc** nebo klikněte na tlačítko **pokračovat bez kódu** v okně start otevřete vývojové prostředí.
 
 ::: moniker-end
 

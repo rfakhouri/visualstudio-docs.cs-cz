@@ -10,14 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8128f5b77b723ee231b2ec7029b84fa1b4a7ee97
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 6f7fe4a26da2c2b8d37215cd71e39eacf92eaa37
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872092"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324263"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017
+# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Příklady parametrů příkazového řádku pro instalaci sady Visual Studio
 
 Pro ilustraci jak [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md), tady je několik příkladů, které můžete přizpůsobit tak, aby odpovídala vašim potřebám.
 
@@ -178,5 +180,5 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 
 * [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
-* [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Vytvoření offline instalace sady Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

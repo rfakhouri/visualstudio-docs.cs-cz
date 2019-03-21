@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření sady SDK pomocí jazyka C++ | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření sady SDK pomocí jazyka C++ | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
@@ -8,14 +8,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689678"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325065"
 ---
-# <a name="walkthrough-create-an-sdk-using-c"></a>Průvodce: Vytvoření sady SDK pomocí jazyka C++
+# <a name="walkthrough-create-an-sdk-using-c"></a>Návod: Vytvoření sady SDK pomocí jazyka C++
 Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK, balíčku sady SDK jako Visual Studio Extension (VSIX) a použijte ji k vytvoření aplikace. Návod je rozdělen na tyto kroky:
 
 -   [Chcete-li vytvořit nativní a prostředí Windows Runtime knihovny](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
@@ -135,7 +135,7 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK,
 
 17. V **Průzkumníka souborů**, přejděte *$SolutionRoot$ \NativeMathVSIX\bin\Debug* složku a potom spusťte *NativeMathVSIX.vsix* a spusťte tak instalaci.
 
-18. Zvolte **nainstalovat** tlačítko, počkejte na dokončení instalace a poté spusťte Visual Studio.
+18. Zvolte **nainstalovat** tlačítko, počkejte na dokončení instalace a potom otevřete sadu Visual Studio.
 
 ##  <a name="createSample"></a> K vytvoření ukázkové aplikace, která používá knihovnu tříd
 

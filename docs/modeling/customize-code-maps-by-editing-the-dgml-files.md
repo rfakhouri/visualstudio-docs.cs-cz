@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937939"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323146"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 
@@ -286,29 +286,29 @@ Přizpůsobení map kódu, můžete upravit jeho soubor Directed Graph Markup La
 
     Tento výraz používá následující syntaxi BNF (Backus-Naur Form):
 
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>
 
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    \<UnaryExpression> ::= "!" \<Výraz > &#124; "+" \<výrazu > &#124; "-" \<výrazu >
 
-    <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "nebo" &#124; "a" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "nebo" &#124; "a" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "." \<MemberBinding >
 
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
 
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    \<MethodCall >:: = \<identifikátor > "(" \<MethodArgs > "")""
 
-    <PropertyGet> ::= Identifier
+    \<PropertyGet> ::= Identifier
 
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    <Identifier> ::= [^. ]*
+    \<Identifier> ::= [^. ]*
 
-    <Literal> :: = jedné nebo dvojitými uvozovkami řetězcový literál
+    \<Literal >:: = jedné nebo dvojitými uvozovkami řetězcový literál
 
-    <Number> :: = řetězec číslic s volitelnou desetinnou čárkou
+    \<Číslo >:: = řetězec číslic s volitelnou desetinnou čárkou
 
     Lze zadat více `<Condition/>` elementy, které musí být pravda, pokud chcete použít styl.
 

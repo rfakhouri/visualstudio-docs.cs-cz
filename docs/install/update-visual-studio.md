@@ -2,7 +2,7 @@
 title: Aktualizace sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak aktualizovat na nejnovější verzi, podrobné sady Visual Studio.
-ms.date: 03/09/2019
+ms.date: 03/21/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 945250660e80353ea536986e5149f8814d1fe563
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983972"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323591"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace na nejnovější verzi sady Visual Studio
 
@@ -172,9 +172,9 @@ Doporučujeme vám přejít na maximum [novější verzi](/visualstudio/releases
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update).
 
-## <a name="update-visual-studio-2019"></a>Update Visual Studio 2019
+Tady je postup, chcete-li aktualizovat vizuál&nbsp;Studio&nbsp;2019&nbsp;ve verzi Preview nebo Visual&nbsp;Studio&nbsp;2019&nbsp;RC.
 
-Zde uvádíme postup použití instalačního programu sady Visual Studio k aktualizaci Vizuálu&nbsp;Studio&nbsp;2019&nbsp;ve verzi Preview nebo Visual&nbsp;Studio&nbsp;2019&nbsp;RC.
+## <a name="use-the-visual-studio-installer"></a>Použití instalačního programu sady Visual Studio
 
 1. Spusťte instalační program.
 
@@ -188,13 +188,37 @@ Zde uvádíme postup použití instalačního programu sady Visual Studio k aktu
 
      ![Zvolte edici sady Visual Studio 2019, kterou chcete aktualizovat](media/vs2019-update-visual-studio-community-rc.png "zvolte edici sady Visual Studio 2019, kterou chcete aktualizovat")
 
-1. Zvolte **aktualizace** tlačítko Instalovat aktualizace.
+1. Zvolte **aktualizace** nainstalujte aktualizace.
 
     ![Klikněte na tlačítko aktualizace můžete nainstalovat aktualizace](media/vs2019-choose-update-visual-studio-community-rc.png "klikněte na tlačítko aktualizace můžete nainstalovat aktualizace")
 
-1. Po dokončení aktualizace, vyberte **spuštění** ke spuštění sady Visual Studio.
+1. Po dokončení aktualizace, zvolte **spuštění** ke spuštění sady Visual Studio.
 
     ![Vyberte tlačítko Spustit ke spuštění sady Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "vyberte na spouštěcí tlačítko ke spuštění sady Visual Studio")
+
+## <a name="use-the-ide"></a>Pomocí integrovaného vývojového prostředí
+
+1. Otevřít Visual Studio. 
+ 
+    ![Otevřít Visual Studio 2019 RC](media/vs2019-visual-studio-rc.png "otevřete Visual Studio 2019 z Windows")
+
+1. V části **Začínáme**, zvolte možnosti otevření rozhraní IDE.
+
+    ![Spusťte instalační program sady Visual Studio](media/vs2019-choose-option-from-get-started.png "spusťte instalační program sady Visual Studio")
+
+    Otevře se Visual Studio. V integrovaném vývojovém prostředí **aktualizace Visual Studio 2019** se zobrazí zpráva.
+
+    ![Zpráva 'aktualizace Visual Studio 2019' v integrovaném vývojovém prostředí](media/vs2019-update-visual-studio-ide-message.png "zpráva 'aktualizace Visual Studio 2019' v integrovaném vývojovém prostředí")
+ 
+1. V **aktualizace Visual Studio 2019** zprávu, zvolte **podrobnosti**.
+
+   ![Zvolte tlačítko Zobrazit podrobnosti o ve zprávě aktualizace Visual Studio IDE. 2019](media/vs2019-update-visual-studio-ide-view-details.png "klikněte na tlačítko Zobrazit podrobnosti zprávy aktualizace Visual Studio 2019")
+
+1. V **aktualizovat stažený a připravený k instalaci** dialogového okna zvolte **aktualizace**.
+
+     ![Klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci](media/vs2019-update-visual-studio-community-rc-from-ide.png "klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci")
+
+   Visual Studio ukončí a potom znovu otevře.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

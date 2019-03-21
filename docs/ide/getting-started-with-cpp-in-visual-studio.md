@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070279"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325091"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 
@@ -52,7 +52,7 @@ Po otevření sady Visual Studio se zobrazí tři základní části rozhraní I
 
 ::: moniker range=">=vs-2019"
 
-Po otevření sady Visual Studio **Start** okno se zobrazí jako první. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí.
+Po otevření sady Visual Studio, zobrazí se okno start první. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí.
 
 Zobrazí se vám tyto tři základní části rozhraní IDE: nástroj oken, nabídek a panelů nástrojů a prostor hlavního okna. Nástroje systému windows jsou ukotveny na levé a pravé straně okna aplikace. **Snadné spuštění** pole, panelu nabídek a panelu nástrojů Standardní se nachází v horní. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
 

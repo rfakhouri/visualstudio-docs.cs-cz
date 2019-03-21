@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221392"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325211"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Možnosti, textový Editor, C/C++, experimentální
 
@@ -37,7 +37,7 @@ Tyto funkce jsou dostupné v instalaci sady Visual Studio.
 
 ## <a name="enable-predictive-intellisense"></a>Povolit prediktivní IntelliSense
 
-Prediktivní IntelliSense omezí počet výsledků zobrazuje v rozevíracím seznamu technologie IntelliSense tak, aby se zobrazí pouze výsledky, které jsou relevantní v kontextu. Pokud zadáte například <code>int x =</code> a vyvolání rozevíracího seznamu technologie IntelliSense, zobrazí se jen celá čísla nebo funkce, které vrací celá čísla. Prediktivní IntelliSense je vypnuto ve výchozím nastavení.
+Prediktivní IntelliSense omezí počet výsledků zobrazuje v rozevíracím seznamu technologie IntelliSense tak, aby se zobrazí pouze výsledky, které jsou relevantní v kontextu. Pokud zadáte například `int x =` a vyvolání rozevíracího seznamu technologie IntelliSense, zobrazí se jen celá čísla nebo funkce, které vrací celá čísla. Prediktivní IntelliSense je vypnuto ve výchozím nastavení.
 
 ::: moniker range="vs-2017"
 

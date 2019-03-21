@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 9a5d1de55a5fa29ab6d9ae709bac6f88c8b9cafe
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 391cddd0214abf1eea9e4dc20f2222a46fff6f08
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953292"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323114"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Správa rolí v cloudových službách Azure pomocí sady Visual Studio
 Po vytvoření cloudové služby Azure, můžete k němu přidat nové role nebo z něj odebrat existující role. Můžete také naimportovat existující projekt a převeďte jej na roli. Můžete například importovat webové aplikace ASP.NET a určit ji jako webová role.
@@ -48,7 +48,7 @@ Následující kroky vás provedou odebrání webové nebo pracovní role projek
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Znovu přidat roli do projektu Azure cloud service
 Pokud odeberete roli z projektu cloudové služby, ale později se rozhodnete přidat do projektu role, se přidají pouze deklarace role a základní atributy, jako jsou koncové body a diagnostické informace. Žádné další zdroje informací nebo odkazů jsou přidány do `ServiceDefinition.csdef` souboru nebo `ServiceConfiguration.cscfg` souboru. Pokud chcete přidat tyto informace, budete muset ručně přidat do těchto souborů.
 
-Například je možné odebrat roli webové služby a později se rozhodnete přidat tuto roli zpět do vašeho řešení. Pokud to uděláte, dojde k chybě. K této chybě zabránit, budete muset přidat `<LocalResources>` uvedeného v následující kód XML do prvku `ServiceDefinition.csdef` souboru. Použijte název role webové služby, který jste přidali do projektu jako součást atribut name **<LocalStorage>** elementu. V tomto příkladu je název role webové služby **WCFServiceWebRole1**.
+Například je možné odebrat roli webové služby a později se rozhodnete přidat tuto roli zpět do vašeho řešení. Pokud to uděláte, dojde k chybě. K této chybě zabránit, budete muset přidat `<LocalResources>` uvedeného v následující kód XML do prvku `ServiceDefinition.csdef` souboru. Použijte název role webové služby, který jste přidali do projektu jako součást atribut name  **\<LocalStorage >** elementu. V tomto příkladu je název role webové služby **WCFServiceWebRole1**.
 
     <WebRole name="WCFServiceWebRole1">
         <Sites>

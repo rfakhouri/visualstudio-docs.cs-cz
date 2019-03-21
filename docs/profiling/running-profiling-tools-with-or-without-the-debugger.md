@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597528"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323721"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj
 
@@ -67,7 +67,7 @@ Další informace najdete v tématu [vyhledávání a filtrování na kartě ud�
 
 ## <a name="collect-profiling-data-without-debugging"></a>Shromažďování dat profilace bez ladění
 
-Pokud chcete shromažďovat data o výkonu bez ladění, můžete spustit **Profiler výkonu** nástroje. Některé z nástrojů pro profilaci vyžadují oprávnění správce pro spuštění. Visual Studio můžete spustit jako správce nebo nástroje můžete spustit jako správce, když spustíte diagnostické relace.
+Pokud chcete shromažďovat data o výkonu bez ladění, můžete spustit **Profiler výkonu** nástroje. Některé z nástrojů pro profilaci vyžadují oprávnění správce pro spuštění. Můžete otevřít sadu Visual Studio jako správce nebo nástroje můžete spustit jako správce, když spustíte diagnostické relace.
 
 1. Projekt otevřít v sadě Visual Studio, vyberte **ladění** > **Profiler výkonu**, nebo stiskněte klávesu **Alt**+**F2**.
 

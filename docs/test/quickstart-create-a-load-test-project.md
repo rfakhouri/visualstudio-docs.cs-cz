@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7c6f8a7ceb24e6108e5604d9e862527880431b5b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069967"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324827"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Rychlý start: Vytvoření projektu pro zátěžový test
 
@@ -62,7 +62,7 @@ V této části vytvoříme C# projekt zátěžového testu. Můžete také vytv
 
 1. Otevřít Visual Studio.
 
-2. V okně Start zvolte **vytvořte nový projekt**.
+2. V okně start zvolte **vytvořte nový projekt**.
 
 3. V **vytvořte nový projekt** dialogové okno, zadejte **webového testu** do vyhledávacího pole a pak vyberte **webový výkon a projekt zátěžového testu \[zastaralé]** Šablona pro C#. Zvolte **Další**.
 

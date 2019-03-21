@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223348"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323695"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
+# <a name="use-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 
 Podle dokumentu C++ Core Guidelines jsou přenosná sadu pokynů, pravidla a osvědčenými postupy psaní kódu v jazyce C++ vytvořených odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu těchto pravidel jako součást své nástroje analýzy kódu pro jazyk C++. Tyto moduly pro kontrolu příručka core jsou nainstalované ve výchozím nastavení v sadě Visual Studio 2017 a Visual Studio 2019 a jsou [k dispozici jako balíček NuGet pro Visual Studio 2015](#vs2015_corecheck).
 
@@ -80,7 +80,7 @@ Nová pravidla přidávání na kontrola C++ Core pokyny, kdykoliv zvýšit poč
 Referenční témata pro většinu pravidel jsou v rámci [Visual Studio C++ Core zkontrolujte Reference](code-analysis-for-cpp-corecheck.md).
 
 Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou:
-- **– Pravidla ukazatelů vlastníka** vynutit [kontroly správy prostředků související s owner<T> podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **– Pravidla ukazatelů vlastníka** vynutit [kontroly správy prostředků související s owner\<T > podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **– Pravidla konstant** vynutit [kontroly podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -153,7 +153,7 @@ Kompilátor jazyka Microsoft Visual C++ má omezenou podporu pro GSL potlačení
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>Potlačení analýzy pomocí možnosti příkazového řádku
+## <a name="suppress-analysis-by-using-command-line-options"></a>Potlačit analýzy pomocí možnosti příkazového řádku
 
 Místo #pragmas vám pomůže možnosti příkazového řádku na stránce vlastností v souboru potlačení upozornění pro projekt nebo jeden soubor. Například toto upozornění zakážete 26400 pro soubor:
 
@@ -165,12 +165,12 @@ Místo #pragmas vám pomůže možnosti příkazového řádku na stránce vlast
 
 Možnost příkazového řádku můžete dočasně zakázat všechny analýzy kódu pro soubor tak, že zadáte `/analyze-`. Tím dojde k upozornění *D9025 přepsání parametr / analyze' pomocí "/ analyze-"*, která upozorní, chcete-li znovu povolit analýzu kódu.
 
-## <a name="corecheck_per_file"></a> Povolení kontrola C++ Core pokyny na konkrétní projektových souborů
+## <a name="corecheck_per_file"></a> Povolit kontrolu pokyny pro jádro C++ na určitém projektu soubory
 
 V některých případech může být užitečné pro analýzu kódu do, zaměřuje a stále použití integrovaného vývojového prostředí sady Visual Studio. Následující ukázkový scénář lze použít pro velké projekty, můžete ušetřit čas sestavení a aby bylo snazší, abyste vyfiltrovali výsledky:
 
 1. V příkazovém prostředí služby nastaven `esp.extension` a `esp.annotationbuildlevel` proměnné prostředí.
-2. Dědí tyto proměnné, spusťte Visual Studio z příkazového řádku.
+2. Tyto proměnné dědění, otevřete Visual Studio z příkazového řádku.
 3. Načtení projektu a otevřete její vlastnosti.
 4. Povolit analýzu kódu, vyberte příslušné pravidlo sady, ale není doporučeno zapínat rozšířeními pro analýzu kódu.
 5. Přejděte k souboru, který chcete analyzovat pomocí kontrola C++ Core pokyny a otevřete její vlastnosti.

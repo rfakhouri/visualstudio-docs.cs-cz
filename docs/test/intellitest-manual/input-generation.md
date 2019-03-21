@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316896"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323539"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Vstupní generování pomocí dynamické symbolické spuštění
 
@@ -96,11 +96,11 @@ Pravidla jsou následující:
 
 * **Viditelnost vnitřní členy**
   * IntelliTest se předpokládá, že vygenerované testy budou mít přístup k interní členy, které byly viditelné pro nadřazený [PexClass](attribute-glossary.md#pexclass).
-  .NET má **InternalsVisibleToAttribute** rozšířit viditelnost členů interní pro jiná sestavení.<p />
+  .NET má **InternalsVisibleToAttribute** rozšířit viditelnost členů interní pro jiná sestavení.
 
 * **Viditelnost privátních a členové řady (chráněné v jazyce C#) [PexClass](attribute-glossary.md#pexclass)**
   * IntelliTest vždy umístí vygenerované testy přímo v [PexClass](attribute-glossary.md#pexclass) nebo do podtřídy. Proto se IntelliTest předpokládá, že ho může použít všechny viditelné členy rodiny (**chráněné** v jazyce C#).
-  * Pokud vygenerované testy se umístí do přímo [PexClass](attribute-glossary.md#pexclass) (obvykle s využitím částečné třídy), se IntelliTest předpokládá, že ji také používat všechny soukromým členům [PexClass](attribute-glossary.md#pexclass).<p />
+  * Pokud vygenerované testy se umístí do přímo [PexClass](attribute-glossary.md#pexclass) (obvykle s využitím částečné třídy), se IntelliTest předpokládá, že ji také používat všechny soukromým členům [PexClass](attribute-glossary.md#pexclass).
 
 * **Viditelnost veřejné členy**
   * IntelliTest se předpokládá, že ho může využívat všechny exportované členy viditelné v rámci [PexClass](attribute-glossary.md#pexclass).

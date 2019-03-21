@@ -3,18 +3,12 @@ title: IntelliTest referenčním manuálu | Nástroje pro testování Microsoft 
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+  - 'IntelliTest Reference Manual, IntelliTest'
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-- multiple
+  - multiple
 author: gewarren
-ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948942"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest referenčním manuálu
 
@@ -30,11 +24,11 @@ ms.locfileid: "55948942"
     * [Jazyk](introduction.md#language)
     * [Symbolického uvažování](introduction.md#symbolic-reasoning)
     * [Trasování zásobníku nesprávný](introduction.md#incorrect-stack-traces)
-  - [Další čtení](introduction.md#further-reading)<p>&nbsp;</p>
+  - [Další čtení](introduction.md#further-reading)
 
 * **[Začínáme s IntelliTest](getting-started.md)**
   - [Důležité atributy](getting-started.md#important-attributes)
-  - [Třídy statických pomocných rutin důležité](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [Třídy statických pomocných rutin důležité](getting-started.md#helper-classes)
 
 * **[Generování testu](test-generation.md)**
   - [Generátory testu](test-generation.md#test-generators)
@@ -47,7 +41,7 @@ ms.locfileid: "55948942"
   - [Neplatná následná](test-generation.md#postcondition)
   - [Neúspěšné testy](test-generation.md#test-failures)
   - [Nastavení a dovolí](test-generation.md#setup-teardown)
-  - [Další čtení](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [Další čtení](test-generation.md#further-reading)
 
 * **[Vstupní generování](input-generation.md)**
   - [Řešitel omezení](input-generation.md#constraint-solver)
@@ -60,7 +54,7 @@ ms.locfileid: "55948942"
   - [Struktury](input-generation.md#structs)
   - [Pole a řetězce](input-generation.md#arrays-and-strings)
   - [Získání další vstupy](input-generation.md#additional-inputs)
-  - [Další čtení](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [Další čtení](input-generation.md#further-reading)
 
 * **[Hranice průzkumu](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -75,7 +69,7 @@ ms.locfileid: "55948942"
   - [MaxExceptions](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[Glosář atributů](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -90,7 +84,7 @@ ms.locfileid: "55948942"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[Vodopádové nastavení](settings-waterfall.md)**
 
@@ -99,7 +93,7 @@ ms.locfileid: "55948942"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[Upozornění a chyby](warnings-and-errors.md)**
   - [MaxBranches překročena](warnings-and-errors.md#maxbranches-exceeded)
@@ -121,7 +115,7 @@ ms.locfileid: "55948942"
   - [Problém s testovatelností](warnings-and-errors.md#testability-issue)
   - [Omezení](warnings-and-errors.md#limitation)
   - [Pozorovaná neshoda volání](warnings-and-errors.md#observed-call-mismatch)
-  - [Hodnota uložená ve statické pole](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [Hodnota uložená ve statické pole](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>Máte nějakou zpětnou vazbu?
 

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875716"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324497"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio
   Můžete ladit rozšíření nástrojů SharePoint v experimentální instanci nebo pravidelné instanci aplikace Visual Studio. Pokud je potřeba Poradce při potížích s chováním rozšíření, můžete také změnit hodnoty registru, chcete-li zobrazit další informace o chybě a nakonfigurujte, jak Visual Studio provede příkazy serveru SharePoint.
@@ -56,7 +56,7 @@ ms.locfileid: "54875716"
 
 #### <a name="to-debug-the-extension"></a>Chcete-li ladit rozšíření
 
-1.  Spusťte sadu Visual Studio s oprávněními správce a otevřete projekt rozšíření. Následující kroky odkazují na tuto instanci sady Visual Studio, jako *první instance*.
+1.  Otevřít Visual Studio s oprávněními správce a otevřete projekt rozšíření. Následující kroky odkazují na tuto instanci sady Visual Studio, jako *první instance*.
 
 2.  Spusťte jinou instanci aplikace Visual Studio s oprávněními správce. Následující kroky odkazují na tuto instanci sady Visual Studio, jako *druhou instanci*.
 

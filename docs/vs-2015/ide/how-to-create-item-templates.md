@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867919"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324757"
 ---
 # <a name="how-to-create-item-templates"></a>Postupy: Vytváření šablon položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Kroky v [prvního postupu](#to-add-a-custom-project-item-template-to-the-add-new
   
     Úložiště projektu C++ Windows 8.1 používá hodnotu `WinRT-Native-6.3`. Windows 10 a jinými typy projektů naleznete v tématu [templategroupid – Element (šablony sady Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-    Následující příklad ukazuje celý obsah souboru .vstemplate po řádku kódu XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` do něj byl přidán. V tomto příkladu je specifické pro projekty jazyka C#. Můžete upravit <ProjectTpe> a \< [templategroupid –](../extensibility/templategroupid-element-visual-studio-templates.md)> prvků, které mají určit další typy jazyka a projektu.  
+    Následující příklad ukazuje celý obsah souboru .vstemplate po řádku kódu XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` do něj byl přidán. V tomto příkladu je specifické pro projekty jazyka C#. Můžete upravit \<ProjectType > a \< [templategroupid –](../extensibility/templategroupid-element-visual-studio-templates.md)> prvků, které mají určit další typy jazyka a projektu.  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  

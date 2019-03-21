@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722262"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324065"
 ---
 # <a name="create-a-software-development-kit"></a>Vytvořit sadu software development kit
 (SDK) software development kit je kolekce rozhraní API, která může odkazovat jako jedna položka v sadě Visual Studio. **Správce odkazů** dialogové okno obsahuje všechny sady SDK, které jsou relevantní pro projekt. Když přidáte sadu SDK do projektu, rozhraní API, jsou k dispozici v sadě Visual Studio.
@@ -65,17 +65,17 @@ ms.locfileid: "56722262"
 ### <a name="installation"></a>Instalace
  Rozšíření sady SDK můžete nainstalovat pro konkrétního uživatele nebo pro všechny uživatele bez udání klíče registru. Pokud chcete nainstalovat sadu SDK pro všechny uživatele, použijte následující cestu:
 
- *%Program Files%\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs*
+ *% Program Files%\Microsoft SDK\<cílovou platformu\>\v < číslo verze platformy\>\ExtensionSDKs*
 
  Pro instalaci konkrétního uživatele použijte následující cestu:
 
- *%USERPROFILE%\AppData\Local\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs*
+ *%USERPROFILE%\AppData\Local\Microsoft SDKs\<target platform\>\v<platform version number\>\ExtensionSDKs*
 
  Pokud chcete použít jiné umístění, musíte udělat jednu ze dvou kroků:
 
 1.  Zadejte ji v klíči registru:
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
 
      a přidejte podklíč (výchozí), který má hodnotu `<path to SDK><SDKName><SDKVersion>`.
 

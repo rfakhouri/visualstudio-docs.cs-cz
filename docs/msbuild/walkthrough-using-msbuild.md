@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Použití nástroje MSBuild | Dokumentace Microsoftu'
+title: 'Návod: Použití nástroje MSBuild | Dokumentace Microsoftu'
 ms.date: 12/18/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0abf64442c6a31758f3a3c24c4268b6aee5720a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947059"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324919"
 ---
-# <a name="walkthrough-use-msbuild"></a>Průvodce: Použití nástroje MSBuild
+# <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
 Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual Studio. Tento návod vás seznámí s stavební kameny nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild. Kurzu se naučíte:
 
 -   Vytváření a manipulaci se soubor projektu.
@@ -125,7 +125,7 @@ Nástroj MSBuild sleduje cíle sestavení a zaručuje, že každý cíl je vytvo
 
    (Windows 10) Do vyhledávacího pole na hlavním panelu, začněte psát název nástroje, jako například `dev` nebo `developer command prompt`. Tím se zobrazí seznam nainstalovaných aplikací, které odpovídají vaší vyhledávací vzory.
 
-   Pokud potřebujete vyhledat ručně, je soubor *LaunchDevCmd.bat* v  *<visualstudio installation folder> \<verze > \Common7\Tools* složky.
+   Pokud potřebujete vyhledat ručně, je soubor *LaunchDevCmd.bat* v *< Instalační složka nástroje visualstudio\>\<verze > \Common7\Tools* složky.
 
 2. V příkazovém řádku přejděte do složky obsahující soubor projektu, v tomto případě *D:\BuildApp\BuildApp*.
 

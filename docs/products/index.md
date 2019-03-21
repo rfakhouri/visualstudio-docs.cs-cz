@@ -6,6 +6,7 @@ description: 'Další informace o použití sady Visual Studio 2017 na vývoj ap
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Dokumentace pro produkty Visual Studio</h1>

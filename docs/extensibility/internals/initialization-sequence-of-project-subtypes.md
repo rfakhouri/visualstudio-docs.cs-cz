@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18a60e5589671101471bbb5f82877ce5234215d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15fc8d330de6b707d4747b9c297dffcbc78d5fec
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920186"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323704"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Inicializační sekvence podtypů projektů
 Prostředí vytvoří projekt zavoláním implementace objektu factory základního projektu z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Konstrukce podtyp projektu začne, když prostředí určuje, zda seznam identifikátor GUID typu projektu pro příponu souboru projektu není prázdný. Přípona souboru projektu a projekt GUID určete, jestli má projekt [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] nebo [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] typ projektu. Například rozšíření .vbproj a {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifikovat [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu.
@@ -31,7 +31,7 @@ Prostředí vytvoří projekt zavoláním implementace objektu factory základn�
 
     1.  Prostředí provádění <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> volání metod `HrCreateInnerProj` metody s deklarací následující funkce:
 
-         <CodeContentPlaceHolder>0</CodeContentPlaceHolder>
+         \<CodeContentPlaceHolder>0</CodeContentPlaceHolder>
 
          Když tato funkce je volána poprvé, to znamená, pro podtyp projektu nejkrajnější parametry `pOuter` a `pOwner` předaný jako `null` a funkce nastaví podtyp projektu nejkrajnější `IUnknown` k `pOuter`.
 

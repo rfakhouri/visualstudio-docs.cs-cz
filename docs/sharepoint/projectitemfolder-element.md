@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e179cd742d2fbf2f1fbff59610c4dda50f3f996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 124716f8c40a8adc0a0ae1a28cda21dcb5e00ddf
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598957"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322827"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder – element
   Představuje mapované složky.
@@ -29,7 +29,7 @@ ms.locfileid: "56598957"
     Type = "Type of deployment for the mapped folder" />
 ```
 
-## <a name="type"></a>Typ
+## <a name="type"></a>Type
  **ProjectItemFolderType**
 
 ## <a name="attributes-and-elements"></a>Atributy a elementy
@@ -58,7 +58,7 @@ ms.locfileid: "56598957"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
 |**Název schématu**|Schéma položky projektu služby SharePoint|
 |**Soubor ověření**|ProjectItemModelSchema.xsd|
 |**Může být prázdný**|Ne|

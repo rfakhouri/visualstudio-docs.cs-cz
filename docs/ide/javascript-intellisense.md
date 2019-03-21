@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868895"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324393"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -53,6 +53,7 @@ TypeScript používá několik zdrojů k vytvoření těchto informací:
 - [Automatické získání definic typů](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>Technologie IntelliSense podle odvození typu
 
 V jazyce JavaScript ve většině případů není žádná explicitní typ informace k dispozici. Naštěstí se obvykle poměrně snadné zjistit, typu okolního kontext kódu.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>Technologie IntelliSense podle JSDoc
 
 Kde odvození typu neposkytuje informace požadovaného typu (nebo pro podporu dokumentace), informace o typu může být poskytnuta prostřednictvím poznámky JSDoc explicitně.  Pokud chcete dát částečně deklarovanému objektu určitého typu, například můžete použít `@type` označit, jak je znázorněno níže:
@@ -123,7 +125,7 @@ Protože jazyk JavaScript a TypeScript jsou nyní založené na stejnou službu 
 
 Níže uvádíme jednoduchý příklad TypeScript definičního souboru, který poskytuje tyto informace o typu (prostřednictvím rozhraní) do souboru jazyka JavaScript ve stejném projektu (pomocí `JsDoc` značky).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![Soubor definice TypeScript](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Automatické získání definic typů

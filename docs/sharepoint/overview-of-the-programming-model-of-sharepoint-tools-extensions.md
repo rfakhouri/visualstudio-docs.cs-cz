@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639333"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325233"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Přehled programovacího modelu SharePoint rozšíření nástrojů
   Při vytváření rozšíření pro nástroje služby SharePoint v sadě Visual Studio, můžete začít implementací jeden nebo více rozhraní rozšíření, které jsou vystaveny nástroje služby SharePoint. Ve většině případů bude také použít jiné typy poskytované nástroje služby SharePoint k implementaci funkcí v rozšíření. V některých scénářích můžete také použít typy v jiné objektové modely, které poskytuje Visual Studio a SharePoint. Musí pochopit účel každé z těchto objektové modely a vědět, jak pomocí nich mezi sebou můžete vytvořit rozšíření pro nástroje služby SharePoint.
@@ -83,7 +83,7 @@ ms.locfileid: "56639333"
 ### <a name="visual-studio-automation-object-model"></a>Model objektu automatizace aplikace Visual Studio
  Model objektu automatizace sady Visual Studio poskytuje rozhraní API, která vám umožní automatizovat projektů sady Visual Studio a rozhraní IDE. Použijte model objektu sady Visual Studio, provádět úlohy související s projektem, které nejsou specifické pro projekty SharePoint nebo provádět další úlohy obecné automatizace v sadě Visual Studio. Tradičně tento objektový model se často používá v doplňky sady Visual Studio a makra, ale můžete ho použít také v rozšíření nástrojů služby SharePoint.
 
- Hlavní část objektového modelu automatizace sady Visual Studio je definován v *EnvDTE.dll* sestavení. *EnvDTE\\<version>.dll* sestavení poskytují další funkce, která byla zavedena v konkrétní verze sady Visual Studio. Tato sestavení jsou součástí sady Visual Studio.
+ Hlavní část objektového modelu automatizace sady Visual Studio je definován v *EnvDTE.dll* sestavení. *EnvDTE\\\<verze > .dll* sestavení poskytují další funkce, která byla zavedena v konkrétní verze sady Visual Studio. Tato sestavení jsou součástí sady Visual Studio.
 
  Další informace o modelu automatizačních objektů naleznete v tématu [referenční dokumentace jazyka Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 

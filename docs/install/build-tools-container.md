@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ebece0823c42c4dd1f2faaeb894e88c06ed0bef
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 855534ff340ce9b5bb76bf45d4bf496bd1c2dc17
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983439"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324302"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace Build Tools do kontejneru
 
@@ -166,7 +168,7 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    > [!WARNING]
    > Pokud vytváříte svou image přímo na microsoft/windowsservercore, nemusí správně nainstalovat rozhraní .NET Framework a je uvedena žádná chyba instalace. Po dokončení instalace se možná nespustí spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Také Upozorňujeme, že Image označené verze 4.7.1 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL` bude `RUN` a `ENTRYPOINT` pokyny k selhání.
    >
-   > Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) nenainstaluje správně mcr<span></span>.microsoft\.com\/windows\/servercore:1809 nebo novější. Se nezobrazí žádná chyba.
+   > Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) nenainstaluje správně mcr\.microsoft\.com\/windows\/servercore:1809 nebo novější. Se nezobrazí žádná chyba.
    >
    > Zobrazit [známé problémy pro kontejnery](build-tools-container-issues.md) Další informace.
 

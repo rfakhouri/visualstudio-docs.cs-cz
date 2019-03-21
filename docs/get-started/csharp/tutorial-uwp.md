@@ -1,4 +1,5 @@
 ---
+title: Vytvoření aplikace pro Universal Windows Platform (UWP) pomocí sady Visual Studio aC#
 description: Vytvoření aplikace pro UPW v sadě Visual Studio pomocí XAML aC#
 titleSuffix: ''
 ms.custom: seodec18, get-started
@@ -13,16 +14,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 854b6b1652385887a6df4580c3eb31229d809860
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 557a87253b2fefe90fa83a06666a196128f64360
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868979"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322555"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Kurz: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio pomocí XAML a C&#35;
 
-V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte aplikaci "Hello World", který běží na všechna zařízení s Windows 10. V takovém případě budete používat šablonu projektu univerzální platformu Windows (UPW), Extensible Application Markup Language (XAML) a C# programovací jazyk.
+V tomto úvodu do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte aplikaci "Hello World", který běží na všechna zařízení s Windows 10. V takovém případě budete používat šablonu projektu univerzální platformu Windows (UPW), Extensible Application Markup Language (XAML) a C# programovací jazyk.
 
 ::: moniker range="vs-2017"
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
@@ -50,22 +51,24 @@ Nejprve vytvořte projekt univerzální platformy Windows. Typ projektu obsahuje
 
 4. Přijměte výchozí nastavení **cílovou verzi** a **minimální verze** nastavení **nový projekt univerzální platformy Windows** dialogové okno.
 
-![Přijměte výchozí cílová verze a minimální verzi nastavení v dialogovém okně Nový projekt univerzální platformy Windows](media/new-uwp-project-target-minver-dialog.png)
+   ![Přijměte výchozí cílová verze a minimální verzi nastavení v dialogovém okně Nový projekt univerzální platformy Windows](media/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Spusťte sadu Visual Studio a na **spusťte okno**, zvolte **vytvořte nový projekt**.
+2. Otevřít Visual Studio a v okně start zvolte **vytvořte nový projekt**.
 
 3. Na **vytvořte nový projekt** obrazovky, zadejte *Universal Windows* do vyhledávacího pole, zvolte C# šablony pro **prázdná aplikace (Universal Windows)** a klikněte na tlačítko **Další**.
 
-![Snímek obrazovky vytvoření nového projektu obrazovky](media/vs-2019/uwp-create-new-project.png)
+   ![Snímek obrazovky vytvoření nového projektu obrazovky](media/vs-2019/uwp-create-new-project.png)
+
+   > [!NOTE]
+   > Pokud se nezobrazí **prázdná aplikace (Universal Windows)** šablony projektu, klikněte na tlačítko **nainstalovat další nástroje a funkce** odkaz.<br><br>![Klikněte na možnost instalace odkaz na další nástroje a funkce](media/vs-2019/uwp-not-finding.png)<br><br>Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro univerzální platformu Windows** úlohy a klikněte na tlačítko **změnit**.<br><br>![Úlohu vývoje univerzální platformy Windows v instalačním programu sady Visual Studio](media/uwp-dev-workload.png)
 
 4. Přijměte výchozí nastavení **cílovou verzi** a **minimální verze** nastavení **nový projekt univerzální platformy Windows** dialogové okno.
 
-![Přijměte výchozí cílová verze a minimální verzi nastavení v dialogovém okně Nový projekt univerzální platformy Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![Přijměte výchozí cílová verze a minimální verzi nastavení v dialogovém okně Nový projekt univerzální platformy Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
-   
 
    > [!NOTE]
    > Pokud je to první sady Visual Studio jste použili k vytvoření aplikace pro UPW, **nastavení** může otevřít dialogové okno. Zvolte **vývojářský režim**a klikněte na tlačítko **Ano**.<br><br>

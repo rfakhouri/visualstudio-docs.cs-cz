@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 151d45159c6c5dda42e138899a027adcc60774c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce943416bba84c46ce7b709c3d2bdb6ddb3e4447
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619534"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322490"
 ---
 # <a name="safecontrols-element"></a>SafeControls – element
   Určuje kolekci ASPX a webové části, které jsou určené jako zabezpečení pro všechny uživatele pro přístup na libovolné stránce ASPX na webu služby SharePoint.
@@ -55,7 +55,7 @@ ms.locfileid: "56619534"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Název schématu**|Schéma položky projektu služby SharePoint|
 |**Soubor ověření**|ProjectItemModelSchema.xsd|
 |**Může být prázdný**|Ne|

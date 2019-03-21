@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069863"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325078"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 
@@ -74,7 +74,7 @@ Vytvořte nový projekt WPF pro zobrazení záznamů produktu.
 
 1. Otevřít Visual Studio.
 
-2. V okně Start zvolte **vytvořte nový projekt**.
+2. V okně start zvolte **vytvořte nový projekt**.
 
 3. Hledat C# **aplikace WPF** šablony projektů a postupujte podle kroků pro vytvoření projektu, pojmenování projektu **AdventureWorksProductsEditor**.
 

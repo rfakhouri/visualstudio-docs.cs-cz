@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335269"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324744"
 ---
 # <a name="find-references-in-your-code"></a>Hledání odkazů v kódu
 
 Můžete použít **najít všechny odkazy** příkaz Najít, kde jsou prvky konkrétního kódu odkazovat v rámci vašeho základu kódu. **Najít všechny odkazy** příkaz je k dispozici v nabídce kontextu (klikněte pravým tlačítkem) elementu, který chcete vyhledat odkazy na. Nebo, pokud jste uživatelem klávesnice, stiskněte **Shift + F12**.
 
-Výsledky se zobrazí v okně nástroje s názvem  **<element> odkazy**, kde *element* je název položky, který hledáte. V panelu nástrojů **odkazy** okno umožňuje:
+Výsledky se zobrazí v okně nástroje s názvem  **\<element > odkazy**, kde *element* je název položky, který hledáte. V panelu nástrojů **odkazy** okno umožňuje:
 - Změňte rozsah vyhledávání v rozevíracím seznamu. Můžete hledat jenom v změněné dokumenty úplně až po celé řešení.
 - Kopírovat vybrané položky odkazované výběrem **kopírování** tlačítko.
 - Zvolte tlačítko Přejít na další nebo předchozí umístění v seznamu, nebo stisknutím klávesy **F8** a **Shift + F8** klíče Uděláte to tak.

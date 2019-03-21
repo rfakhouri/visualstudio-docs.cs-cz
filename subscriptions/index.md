@@ -19,6 +19,7 @@ Předplatná sady Visual Studio je komplexní sadu prostředků můžete vytvá�
 Správci přihlásit k [ https://manage.visualstudio.com ](https://manage.visualstudio.com) přiřazení předplatných pro váš tým.<br>
 Předplatitelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualstudio.com) pro přístup k výhodám vašeho předplatného.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

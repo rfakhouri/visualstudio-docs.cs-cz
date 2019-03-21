@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 2a9cd2bebb78fa79cc5c45f59407c5a7a62a3dc5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450396"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323422"
 ---
 # <a id="top"> </a> Visual Studio Image v Azure
 
@@ -38,7 +40,7 @@ Image pro aktuální hlavní verze, Visual Studio 2017 a Visual Studio 2015, naj
 | Visual Studio 2017: Nejnovější (verzi 15.9)                    |    Organizace, Community     |      Verze 15.9.7      |
 |         Visual Studio 2017: RTW                              |    Organizace, Community     |      Verze 15.0.20     |
 |   Visual Studio 2015: Nejnovější (aktualizace 3)                      |    Organizace, Community     |  Verze 14.0.25431.01   |
-|         Visual Studio 2015: RTW                              |             Žádná             | (Platnost pro obsluhu)  |
+|         Visual Studio 2015: RTW                              |             Žádné             | (Platnost pro obsluhu)  |
 
 > [!NOTE]
 > V souladu s Microsoft zásady obsluhy původně vydaná verze (RTW) sady Visual Studio 2015 vypršela pro obsluhu. Visual Studio 2015 Update 3 je jediný zbývající verze nabízí pro produktovou řadu Visual Studio 2015.
@@ -101,7 +103,9 @@ Celé spektrum od vývojových prostředích je obrovský a je skutečné nákla
 
 Rychlý souhrn: Použijte nástroj pro přípravu systému (Sysprep) a vypnout na spuštěný virtuální počítač a pak zachytíte *(obrázek 1)* virtuálního počítače jako bitovou kopii prostřednictvím uživatelského rozhraní na webu Azure Portal. Azure uloží `.vhd` soubor, který obsahuje bitovou kopii v účtu úložiště, které si vyberete. Nová bitová kopie se potom zobrazí jako prostředek obrázku v seznamu prostředků vašeho předplatného.
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(Obrázek 1) Zachycení image pomocí uživatelského rozhraní webu Azure portal.*</center>
+![Zachycení image pomocí uživatelského rozhraní webu Azure portal](media/capture-vm.png)
+
+*(Obrázek 1) Zachycení image pomocí uživatelského rozhraní webu Azure portal.*
 
 Další informace najdete v tématu [vytvoření spravované image zobecněného virtuálního počítače v Azure](/azure/virtual-machines/windows/capture-image-resource).
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ec12b302fd51b42e99df5838206bbbf497a03e8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145184"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325185"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Kurz: Vytvoření jednoduché aplikace s C\#
 
@@ -35,7 +35,7 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ::: moniker range="vs-2017"
 
-Při prvním spuštění aplikace Visual Studio, zobrazí se výzva k přihlášení. Tento krok je volitelný pro účely tohoto kurzu. Dále se může zobrazit dialogové okno, které vás požádá o zvolení nastavení pro vývoj a barevný motiv. Ponechte výchozí nastavení a zvolte **spusťte Visual Studio**.
+Při otevření sady Visual Studio poprvé, zobrazí se výzva k přihlášení. Tento krok je volitelný pro účely tohoto kurzu. Dále se může zobrazit dialogové okno, které vás požádá o zvolení nastavení pro vývoj a barevný motiv. Ponechte výchozí nastavení a zvolte **spusťte Visual Studio**.
 
 ![Zvolte dialogové okno nastavení](../media/exploreide-settings.png)
 
@@ -47,7 +47,7 @@ Po spuštění sady Visual Studio, zobrazí se vám okna nástrojů, nabídky a 
 
 ::: moniker range=">=vs-2019"
 
-Při spuštění sady Visual Studio **Start** nejprve se otevře okno. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí. Zobrazí se vám okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace s **Snadné spuštění**, nabídek a běžný panel nástrojů v horní části. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
+Při spuštění sady Visual Studio, otevře se okno start nejprve. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí. Zobrazí se vám okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace s **Snadné spuštění**, nabídek a běžný panel nástrojů v horní části. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
 
 ::: moniker-end
 

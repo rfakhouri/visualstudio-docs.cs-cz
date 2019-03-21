@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64d5ce818e44f3bf4b0844d4a6fbd25e922a33d7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268583"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325224"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Návod: Vytvoření jednoduché služby WCF v modelu Windows Forms
 
@@ -47,7 +47,7 @@ Tento návod ukazuje, jak vytvořit jednoduchou službu Windows Communication Fo
 
 ::: moniker range=">=vs-2019"
 
-2. V okně Start zvolte **vytvořte nový projekt**.
+2. V okně start zvolte **vytvořte nový projekt**.
 
 3. Typ **knihovny služby wcf** do vyhledávacího pole na **vytvořte nový projekt** stránky. Vyberte buď C# nebo šablony jazyka Visual Basic pro **knihovny služby WCF**a potom klikněte na tlačítko **Další**.
 

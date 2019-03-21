@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925225"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323867"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení
 
@@ -53,7 +53,7 @@ Pokud vytvoříte pomocí nástroje MSBuild jakýkoli druh projektu, můžete vy
      Další informace najdete v tématu [dialogové okno Možnosti, projekty a řešení, sestavení a spuštění](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) a <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Je nutné znovu sestavit projekt pro vaše změny se projeví **výstup** okno (všechny projekty) a  *<ProjectName>.txt* souboru (pouze C++ projekty).
+    > Je nutné znovu sestavit projekt pro vaše změny se projeví **výstup** okno (všechny projekty) a  *\<ProjectName > .txt* souboru (pouze C++ projekty).
 
 ## <a name="see-also"></a>Viz také:
 

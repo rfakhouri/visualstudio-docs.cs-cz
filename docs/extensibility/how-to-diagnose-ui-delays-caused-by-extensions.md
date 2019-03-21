@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719480"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324341"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Postupy: Diagnostika zpoždění uživatelského rozhraní způsobených rozšířeními
 
@@ -43,7 +43,7 @@ Diagnostikování zpoždění uživatelského rozhraní, musíte nejprve určit,
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Restartujte VS se aktivita přihlášení
 
-Visual Studio můžete generovat "protokol aktivita", který poskytuje informace, které jsou užitečné při ladění chyby. Chcete-li v aktivitě protokolování v sadě Visual Studio, spusťte sadu Visual Studio s `/log` možnost příkazového řádku. Po spuštění sady Visual Studio protokolu aktivit se ukládají v následujícím umístění:
+Visual Studio můžete generovat "protokol aktivita", který poskytuje informace, které jsou užitečné při ladění chyby. Chcete-li v aktivitě protokolování v sadě Visual Studio, otevřete sadu Visual Studio s `/log` možnost příkazového řádku. Po spuštění sady Visual Studio protokolu aktivit se ukládají v následujícím umístění:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml

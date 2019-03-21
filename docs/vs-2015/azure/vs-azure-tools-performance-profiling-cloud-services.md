@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 4d3d5de46006129f7609a990bf1a4cca5a881123
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 68e5ce85d9184b0e1e8b055f9d81d76b775fdef1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193887"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324858"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testování výkonu cloudové služby
 ## <a name="overview"></a>Přehled
@@ -104,7 +104,7 @@ Relace profilování se vytvoří pro každou instanci role v cloudové službě
 2. Vyberte uzel Azure Compute a pak vyberte uzel Azure nasazení pro cloudovou službu, kterou jste vybrali profil při publikování ze sady Visual Studio.
 3. Chcete-li zobrazit sestavy profilování pro instanci, zvolte roli ve službě, otevřete místní nabídku pro konkrétní instanci a klikněte na tlačítko **zobrazit sestavu profilace**.
    
-    Sestavu souboru .vsp se teď stáhne z Azure a stav souboru ke stažení se zobrazí v protokolu aktivit Azure. Po dokončení stahování sestavy profilování se zobrazí na kartě v editoru sady Visual Studio s názvem <Role name> *<Instance Number>* <identifier>.vsp. Souhrnná data pro sestavy se zobrazí.
+    Sestavu souboru .vsp se teď stáhne z Azure a stav souboru ke stažení se zobrazí v protokolu aktivit Azure. Po dokončení stahování sestavy profilování se zobrazí na kartě v editoru sady Visual Studio s názvem < název Role\>*< číslo Instance\>*< identifikátor\>.vsp. Souhrnná data pro sestavy se zobrazí.
 4. K zobrazení různých zobrazení sestavy v seznamu aktuální zobrazení, zvolte typ zobrazení, které chcete. Další informace najdete v tématu [zobrazeních sestav nástrojů pro profilaci](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Další kroky

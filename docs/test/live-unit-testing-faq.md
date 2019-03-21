@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ac13299a8b727a3ef8e717e3d0a4c2c9f3738cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223057"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325263"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – nejčastější dotazy
 
@@ -30,28 +30,11 @@ Další informace o nové funkce a vylepšení, které byly provedeny Live Unit 
 
 Live Unit Testing spolupracuje s tři rozhraní testování částí oblíbených uvedené v následující tabulce. Minimální podporovaná verze jejich adaptéry a rozhraní je také uvedený v tabulce. Rozhraní testování částí jsou všechny dostupné z webu NuGet.org.
 
-<table>
-<tr>
-   <th>Rozhraní pro testování</th>
-   <th>Minimální verze aplikace Visual Studio adaptéru</th>
-   <th>Minimální verze rozhraní Framework</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> verze 2.2.0-beta3-build1187 xunit.Runner.VisualStudio</td>
-   <td>1.9.2 xunit</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter verzí 3.5.1</td>
-   <td>NUnit verze 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
-</tr>
-</table>
+|Rozhraní pro testování  |Minimální verze aplikace Visual Studio adaptéru  |Minimální verze rozhraní Framework  |
+|---------|---------|---------|
+|xUnit.net |verze 2.2.0-beta3-build1187 xunit.Runner.VisualStudio |1.9.2 xunit |
+|NUnit |NUnit3TestAdapter verzí 3.5.1 |NUnit verze 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Pokud máte starší založené na MSTest testovací projekty tento odkaz `Microsoft.VisualStudio.QualityTools.UnitTestFramework` a nechcete přesunout na novější balíčky MSTest NuGet, proveďte upgrade na Visual Studio 2017 verze 15.4 nebo novější.
 

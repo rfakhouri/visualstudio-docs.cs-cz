@@ -13,6 +13,8 @@ ms.workload:
 
 Sada Visual Studio poskytuje mnoho možností rozšíření. Můžete rozšířit Visual Studio jako takové, přidejte zdrojový kód analyzátory pro kompilátor "Roslyn", nebo dokonce vytvářet vlastní sady SDK.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/visualstudio/extensibility/visual-studio-sdk">

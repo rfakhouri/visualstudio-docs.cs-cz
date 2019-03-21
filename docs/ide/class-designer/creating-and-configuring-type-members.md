@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956854"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324237"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Vytvoření a konfigurace členů typů v Návrháři tříd
 
@@ -205,7 +205,7 @@ Přidání parametrů do metody pomocí **podrobností třídy** okna. Parametry
 
 - **\<Přidat parametr >**
 
-     Poslední řádek parametru členu obsahuje text **<add parameter>** v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Poslední řádek parametru členu obsahuje text **< přidat parametr\>**  v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Vlastnosti** stejné vlastnosti parametru, který se zobrazí v okně se zobrazí **podrobností třídy** okno: **Název**, **typ**, **modifikátor**, **Souhrn**, jakož i **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.
 

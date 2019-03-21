@@ -1,23 +1,19 @@
 ---
 layout: LandingPage
 title: Vytváření aplikací jazyka JavaScript v sadě Visual Studio | Dokumentace Microsoftu
-description: Zjistěte, jak vytvářet aplikace pomocí sady Visual Studio 2017.
+description: 'Zjistěte, jak vytvářet aplikace pomocí sady Visual Studio 2017.'
 ms.topic: landing-page
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: c6987cfe4934933bc85680d7ae4d3b3cda8fa060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920855"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript ve Visual Studiu 2012
 
 Visual Studio poskytuje několik různých nástrojů, které vám pomůžou vytvořit aplikace s využitím jazyka JavaScript nebo TypeScript.
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>Zjistěte, jak pomocí jazyka JavaScript v sadě Visual Studio s zprovoznění během 5 minut</h2>
 
@@ -225,5 +221,4 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomůžou vyt
         </a>
     </li>
 </ul><p>
-
 ---

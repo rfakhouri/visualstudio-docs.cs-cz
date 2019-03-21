@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840828"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325104"
 ---
 # <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
@@ -44,7 +44,7 @@ Tady je úplný seznam co můžou očekávat a co můžete dělat po přihláše
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Jak se přihlásit k sadě Visual Studio
 
-Při prvním spuštění sady Visual studio budete vyzváni k přihlášení a poskytují základních informací pro registraci. Měli byste vybrat účet Microsoft nebo pracovní nebo školní účet, je nejlepší představuje. Pokud některý z těchto účtů nemáte, můžete zdarma vytvořit účet Microsoft. Zobrazit [jak se přihlásím k účtu Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+Při otevření sady Visual studio poprvé, budete vyzváni k přihlášení a poskytují základních informací pro registraci. Měli byste vybrat účet Microsoft nebo pracovní nebo školní účet, je nejlepší představuje. Pokud některý z těchto účtů nemáte, můžete zdarma vytvořit účet Microsoft. Zobrazit [jak se přihlásím k účtu Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 Dále zvolte nastavení uživatelského rozhraní a barevný motiv, který chcete použít v aplikaci Visual Studio. Visual Studio si pamatuje tato nastavení a provede jejich synchronizaci ve všech prostředích Visual Studio, které jste se přihlásili ke. Seznam nastavení, které jsou synchronizované, naleznete v tématu [synchronizovaná nastavení](../ide/synchronized-settings-in-visual-studio.md). Můžete změnit nastavení později spustíte **nástroje** > **možnosti** nabídky v sadě Visual Studio.
 

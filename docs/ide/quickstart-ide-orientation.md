@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 608f276946a8b4a377eb8d8934f3f7bdc23663ce
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fe3b78562b9fa7b5632e1ce60788c918e065d3dc
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867823"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325172"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: První seznámení s integrovaným vývojovým prostředím sady Visual Studio
 
@@ -41,7 +41,7 @@ Pokud zavřete **úvodní stránka** a chcete ho znovu zobrazit, můžete znovu 
 
 První věc, který se zobrazí po spuštění sady Visual Studio je okno start. V okně start usnadňuje "kód" rychleji získat. Obsahuje možnosti, jak klonovat nebo podívejte se na kód, otevřete existující projekt nebo řešení, vytvořte nový projekt nebo stačí otevřít místní složku, která obsahuje některé soubory s kódem.
 
-[![](media/vs-2019/start-window-labeled.png "Časový interval pro spuštění v aplikaci Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![](media/vs-2019/start-window-labeled.png "V okně spuštění v aplikaci Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
 
 Pokud je to Visual Studio používáte poprvé, bude váš seznam posledních projektů prázdný.
 

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: f0fab988185efef6baf7e39c0b4250ada88b5fbd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069759"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322240"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Rychlý start: Pomocí sady Visual Studio k vytvoření vaší první webové služby ASP.NET Core v F\#
 
@@ -48,7 +48,7 @@ Nejprve vytvoříte projekt webového rozhraní API ASP.NET Core. Typ projektu j
 
 1. Otevřít Visual Studio.
 
-2. V okně Start zvolte **vytvořte nový projekt**.
+2. V okně start zvolte **vytvořte nový projekt**.
 
 3. Na **vytvořte nový projekt** zadejte **f # webové** do vyhledávacího pole a klikněte na tlačítko **webové aplikace ASP.NET Core** šablony projektu. Zvolte **Další**.
 

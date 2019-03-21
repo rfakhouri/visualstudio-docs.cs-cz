@@ -5,14 +5,15 @@ ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
 manager: jillfra
+ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 0e9640547b9ab0020fcbfb6e82fb0df6a777618b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dbb372a042bc92421d1c7a60a5d0505a56ccbb00
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867359"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325166"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
@@ -55,7 +56,7 @@ Jakmile budete mít nainstalovány odpovídající nástroje, spusťte sadu Visu
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 
-V aplikaci Visual Studio spustit okno, vyhledejte *Kubernetes*a zvolte **aplikace typu kontejner pro Kubernetes**.
+V okně spuštění sady Visual Studio vyhledejte *Kubernetes*a zvolte **aplikace typu kontejner pro Kubernetes**.
 
 ![Snímek obrazovky vytváření nového projektu aplikace Kubernetes](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app1.png)
 
@@ -136,7 +137,7 @@ Chcete-li to provést, musíte nejprve zkontrolujte, že všechno, co jste nains
 
    ![Snímek obrazovky publikovat položku nabídky](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. V **publikovat** obrazovce **Container Registry** jako publikovat cílit a postupujte podle pokynů k výběru vašeho registru kontejneru. Pokud ještě nemáte registr kontejnerů, zvolte **vytvořit nový registr kontejneru Azure** si ji vytvořit v sadě Visual Studio. Další informace najdete v tématu [kterého chcete kontejner publikovat do služby Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md#2-publish-your-container-to-azure-container-registry).
+2. V **publikovat** obrazovce **Container Registry** jako publikovat cílit a postupujte podle pokynů k výběru vašeho registru kontejneru. Pokud ještě nemáte registr kontejnerů, zvolte **vytvořit nový registr kontejneru Azure** si ji vytvořit v sadě Visual Studio. Další informace najdete v tématu [kterého chcete kontejner publikovat do služby Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
 
    ![Snímek obrazovky výběru publikovat cílová obrazovka](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 
@@ -156,7 +157,7 @@ Chcete-li to provést, musíte nejprve zkontrolujte, že všechno, co jste nains
 
    Aktualizace příkazového řádku je užitečné, pokud existují argumenty vlastní příkazové řádky, které chcete zadat, jako je například jiný název kontextu nebo grafu Kubernetes.
 
-   ![Konfigurace snímek Helm obrazovka](media/tutorial-kubernetes-tools/k8s-tools-helm-configure-screen.png)
+   ![Snímek obrazovky Helm konfigurovat obrazovku](media/tutorial-kubernetes-tools/k8s-tools-helm-configure-screen.png)
 
 6. Až budete připravení nasadit, klikněte na tlačítko **publikovat** tlačítko pro publikování aplikace pro AKS.
 

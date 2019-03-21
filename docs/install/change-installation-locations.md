@@ -14,16 +14,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983894"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324971"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Vybrat umístění instalace v sadě Visual Studio
 
+::: moniker range="vs-2017"
+
 **Novinka ve verzi 15.7**: Můžete snížit nároky na instalaci sady Visual Studio na systémovou jednotku tak, že změníte umístění pro některé z jeho souborů. Konkrétně můžete použít jiné umístění pro mezipaměť pro stahování, sdílených komponent, sady SDK a soubory nástroje.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Můžete snížit nároky na instalaci sady Visual Studio na systémovou jednotku tak, že změníte umístění pro některé z jeho souborů. Konkrétně můžete použít jiné umístění pro mezipaměť pro stahování, sdílených komponent, sady SDK a soubory nástroje.
+
+::: moniker-end
 
    > [!NOTE]
    > Existují některé nástroje a sady SDK, které mají různá pravidla, na kterém lze nainstalovat. Tyto nástroje a sady SDK jsou nainstalovány na systémovou jednotku i v případě zvolte jiné umístění.

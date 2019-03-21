@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952356"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325276"
 ---
 # <a name="exploration-bounds"></a>Hranice průzkumu
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **Omezení řešení hranice**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) -počet sekund [Řešitel omezení](input-generation.md#constraint-solver) má ke zjištění vstupy, které způsobí, že cesta nová a také různé provedení postupovat.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) – velikost v megabajtech, který [Řešitel omezení](input-generation.md#constraint-solver) může použít ke zjištění vstupy.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) – velikost v megabajtech, který [Řešitel omezení](input-generation.md#constraint-solver) může použít ke zjištění vstupy.
 * **Cesta hranice průzkumu**
   * [MaxBranches](#maxbranches) – maximální počet větví, které mohou být přijata cestě jedno provedení.
   * [MaxCalls](#maxcalls) – maximální počet volání, které mohou být provedeny během spuštění jednu cestu.
   * [MaxStack](#maxstack) – maximální velikost zásobníku kdykoli během spuštění jednu cestu, měřeno jako počet rámců aktivního volání.
-  * [MaxConditions](#maxconditions) – maximální počet podmínek přes vstupy, které může kontrolován během spuštění jednu cestu.<p />
+  * [MaxConditions](#maxconditions) – maximální počet podmínek přes vstupy, které může kontrolován během spuštění jednu cestu.
 * **Hranice průzkumu**
   * [MaxRuns](#maxruns) – maximální počet běhů, které se provedou při vysvětlení.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) – maximální počet po sobě jdoucích spuštění bez nového testu probíhá emitovány.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) – maximální počet spuštění pomocí cesty jedinečný spuštění, které se provedou při vysvětlení.
-  * [MaxExceptions](#maxexceptions) – maximální počet výjimek nalezené pro kombinaci všechny zjištěné provádění cesty.<p />
+  * [MaxExceptions](#maxexceptions) – maximální počet výjimek nalezené pro kombinaci všechny zjištěné provádění cesty.
 * **Nastavení generování kódu sady testů**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) -případě hodnoty true, cesty spuštění, které žádné hranice cesty překročí ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [ MaxConditions](#maxconditions)) jsou ignorovány.
   * [TestEmissionFilter](#testemissionfilter) – Určuje, za jakých podmínek by měly vydávat IntelliTest testy.

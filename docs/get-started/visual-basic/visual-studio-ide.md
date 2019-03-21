@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 128f2f4a95ea1e8f92dda8c7771994a9e59a209e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873256"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324078"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Vítá vás Visual Studio IDE | Visual Basic
 
@@ -207,7 +207,7 @@ Abyste mohli začít, [stáhněte si Visual Studio](https://visualstudio.microso
 
 ![Úlohy pro vývoj pro různé platformy .NET core v instalační program sady Visual Studio](../media/dotnet-core-cross-platform-workload.png)
 
-Při prvním spuštění aplikace Visual Studio, můžete volitelně [přihlášení](../../ide/signing-in-to-visual-studio.md) pomocí účtu Microsoft nebo pracovní nebo školní účet.
+Když poprvé otevřete Visual Studio, můžete volitelně [přihlášení](../../ide/signing-in-to-visual-studio.md) pomocí účtu Microsoft nebo pracovní nebo školní účet.
 
 ## <a name="customize-visual-studio"></a>Přizpůsobení sady Visual Studio
 
@@ -225,9 +225,9 @@ Chcete-li změnit na **tmavě** motivu:
 
 ::: moniker range=">=vs-2019"
 
-1. Otevřít Visual Studio. V okně Start zvolte **pokračovat bez kódu**.
+1. Otevřít Visual Studio. V okně start zvolte **pokračovat bez kódu**.
 
-   ![Časový interval pro spuštění v aplikaci Visual Studio 2019](media/vs-2019/continue-without-code.png)
+   ![V okně spuštění v aplikaci Visual Studio 2019](media/vs-2019/continue-without-code.png)
 
    Rozhraní IDE otevře.
 

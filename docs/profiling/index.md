@@ -12,6 +12,8 @@ manager: jillfra
 
 Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití procesoru a dalších problémů na úrovni aplikací. Pomocí těchto nástrojů můžete shromažďování dat (třeba hodnoty proměnných, volání funkce a událostí) za čas, kdy spustíte svou aplikaci v ladicím programu. Můžete zobrazit stav vaší aplikace v různých fázích během provádění kódu.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour">

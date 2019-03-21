@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informace pro poskytovatele Cloud Solution Provider, jak zakoupit a spravovat předplatné cloudu Visual Studio pro vaše zákazníky.
 searchscope: VS Subscription
-ms.openlocfilehash: b17c5bb663f364cda4a9a93d63f2583e59426bac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842634"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323578"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 
@@ -32,11 +32,12 @@ Musíte nastavit vašeho tenanta zákazníka v partnerském centru a předplatn�
 [Víc se uč](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>Kdo může zakoupit předplatná sady Visual Studio?
+
 Každý, kdo má [přístup přispěvatele nebo vlastníka](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) do Azure můžete zakoupit předplatné předplatná sady Visual Studio.
 
 ## <a name="how-to-buy"></a>Jak koupit
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. Přihlaste se [Partnerské centrum Microsoftu](https://partnercenter.microsoft.com).
 0. Zvolte **zákazníkům** a vyberte si pro zákazníka.
@@ -57,7 +58,7 @@ Po potvrzení nákupu, můžete zvolit **spravovat** přiřazení předplatných
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. Přihlaste se k [Partnerské centrum Microsoftu](https://partnercenter.microsoft.com).
 0. Zvolte **zákazníkům** a jméno zákazníka.
@@ -79,7 +80,7 @@ Chcete-li zobrazit ceny sady Visual Studio pro partnery CSP, přihlaste se [part
 
 Tady je postup pro interpretaci, co vidíte na tuto tabulku:
 
-| Kategorie měřiče    |   Název                 |  Jednotky                                |           Toto je                          |
+| Kategorie měřiče    |   Name                 |  Jednotky                                |           Toto je                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Předplatné                         | Měsíční předplatné sady Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Předplatné                         | Měsíční předplatné sady Visual Studio Professional |

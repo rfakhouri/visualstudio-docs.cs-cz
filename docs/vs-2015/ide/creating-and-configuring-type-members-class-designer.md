@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c036680d540854eb3143875663aeac35a466884
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795300"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323604"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Vytváření a konfigurace členů typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -209,7 +209,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
 - **\<Přidat parametr >**  
   
-   Poslední řádek parametru členu obsahuje text **<add parameter>** v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   Poslední řádek parametru členu obsahuje text **< přidat parametr\>**  v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
   **Vlastnosti parametru v okně Vlastnosti**  
   

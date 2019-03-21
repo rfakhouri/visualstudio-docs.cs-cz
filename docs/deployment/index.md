@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio poskytuje několik různých nástrojů, které vám pomohou při nasazování vašich aplikací.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>Prostředí nasazení sady Visual Studio s zprovoznění během 5 minut</h2>
 
 <ul class="panelContent cardsFTitle">

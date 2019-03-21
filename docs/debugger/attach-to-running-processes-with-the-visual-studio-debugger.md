@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428762"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323091"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ladicího programu sady Visual Studio ke spuštěným procesům
 Ladicí program sady Visual Studio můžete připojit ke spuštěnému procesu na místním nebo vzdáleném počítači. Poté, co je proces spuštěn, vybrat **ladění** > **připojit k procesu** nebo stiskněte klávesu **Ctrl**+**Alt** + **P** ve Visual Studiu a použít **připojit k procesu** dialogové okno připojit ladicí program k procesu.
@@ -102,7 +102,7 @@ Podrobnější pokyny k ladění aplikací ASP.NET, které jsou nasazené do slu
      > Pokud se nemůžete připojit pomocí názvu vzdáleného počítače, zkuste použít IP adresu a port adresu (například `123.45.678.9:4022`). 4022 je výchozím portem pro vzdálený ladicí program sady Visual Studio 2017 x64. Ostatní přiřazení portů vzdáleného ladicího programu, najdete v části [přiřazení portů vzdáleného ladicího programu](remote-debugger-port-assignments.md).
 
      ::: moniker-end
-     
+
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]

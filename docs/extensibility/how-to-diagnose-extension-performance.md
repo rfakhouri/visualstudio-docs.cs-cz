@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707065"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323682"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Měření dopadu rozšíření v po spuštění
 
@@ -74,11 +74,11 @@ Pomocí balíčku asynchronní načítání a asynchronní vstupně-výstupní o
 
 Jednou z běžných vzorech v balíčku inicializace je inicializace služby používané nebo poskytované tento balíček v balíčku `constructor` nebo `initialize` metody. Přestože tím se zajistí, že služby jsou připravená k použití, můžete také přidat zbytečné náklady pro balíček načítání, pokud tyto služby nejsou okamžitě použity. Místo toho je třeba inicializovat tyto služby na vyžádání, abyste minimalizovali práci v balíčku inicializace.
 
-Pro zadaný balíček služeb global services, můžete použít `AddService` metody, které přebírají funkci laxně inicializovat službu pouze v případě, že je požadovaná komponenta. Pro služby používané v rámci balíčku, můžete použít opožděné<T> nebo AsyncLazy<T> abyste měli jistotu, že služby jsou inicializována nebo dotazovat při prvním použití.
+Pro zadaný balíček služeb global services, můžete použít `AddService` metody, které přebírají funkci laxně inicializovat službu pouze v případě, že je požadovaná komponenta. Pro služby používané v rámci balíčku, můžete použít opožděné\<T > nebo AsyncLazy\<T > aby se zajistilo, že služby jsou inicializována nebo dotazovat při prvním použití.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Měření dopadu automaticky načíst rozšíření pomocí protokolu aktivit
 
-Od Visual Studio 2017 Update 3, protokol aktivit v sadě Visual Studio nyní obsahovala položky dopad na výkon balíčků při načítání řešení a spuštění. Chcete-li zobrazit tyto rozměry, budete muset spustit aplikaci Visual Studio s přepínačem/log a otevřete *ActivityLog.xml* souboru.
+Od Visual Studio 2017 Update 3, protokol aktivit v sadě Visual Studio nyní obsahovala položky dopad na výkon balíčků při načítání řešení a spuštění. Chcete-li zobrazit tyto rozměry, budete muset otevřít Visual Studio s přepínačem/log a otevřete *ActivityLog.xml* souboru.
 
 V protokolu aktivit položky bude v části "Spravovat výkon sady Visual Studio" zdroj a bude vypadat jako v následujícím příkladu:
 
@@ -141,9 +141,9 @@ Po nastavení prostředí sady Visual Studio pomocí rozšíření nainstalován
 
 ![shromažďování nabídky Nástroje perfview](media/perfview-collect-menu.png)
 
-Výchozí možnosti poskytne zásobníky volání pro využití procesoru, ale od nás zajímají i času blokování, byste také měli povolit **vlákna čas** zásobníků. Jakmile jsou připravené nastavení můžete kliknout na **spustit shromažďování** a spuštění sady Visual Studio po zahájení nahrávání.
+Výchozí možnosti poskytne zásobníky volání pro využití procesoru, ale od nás zajímají i času blokování, byste také měli povolit **vlákna čas** zásobníků. Jakmile jsou připravené nastavení, můžete kliknout na **spustit shromažďování** a potom otevřete sadu Visual Studio po zaznamenání spustí.
 
-Před zastavením shromažďování, budete chtít Ujistěte se, že Visual Studio je plně inicializován, je zcela viditelné hlavní okno a pokud vaše rozšíření obsahuje všechny částí uživatelského rozhraní, které automaticky zobrazují, jsou také viditelné. Jakmile Visual Studio je zcela načten a inicializován rozšíření, můžete zastavit záznam analyzovat trasování.
+Před zastavením shromažďování, budete chtít Ujistěte se, že Visual Studio je plně inicializován, je zcela viditelné hlavní okno a pokud vaše rozšíření obsahuje všechny částí uživatelského rozhraní, které automaticky zobrazují, jsou také viditelné. Když Visual Studio je zcela načten a inicializován rozšíření, můžete zastavit záznam analyzovat trasování.
 
 **Analýza trasování pomocí nástroje PerfView:**
 

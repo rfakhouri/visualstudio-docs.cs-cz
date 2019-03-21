@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635186"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323383"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Postupy: Instalace modulu plug-in správy zdrojového kódu
 Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
@@ -78,7 +78,7 @@ Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
 
 4. Vytvořit podklíč s názvem **InstalledSCCProviders** pod **SourceCodeControlProvider** podklíče a umístěte jedna položka v tomto podklíči.
 
-    Název této položky je čitelný pro uživatele název zprostředkovatele (stejná jako hodnota zadaná pro položku SCCServerName) a hodnota je zase podklíč vytvořili v kroku 1. Vzor je **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *softwaru\\< název společnosti\> \\< název produktu\>*.
+    Název této položky je čitelný pro uživatele název zprostředkovatele (stejná jako hodnota zadaná pro položku SCCServerName) a hodnota je zase podklíč vytvořili v kroku 1. Vzor je **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< zobrazovaný název\>** = *softwaru\\< společnosti název\>\\< název produktu\>*.
 
     Příklad:
 
