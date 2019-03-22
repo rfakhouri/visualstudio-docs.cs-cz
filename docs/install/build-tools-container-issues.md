@@ -10,12 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: e5dc37eb38bf0d474e2a701bc79b8d4866be4aef
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983699"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323634"
 ---
 # <a name="known-issues-for-containers"></a>Známé problémy s kontejnery
 
@@ -36,7 +38,7 @@ Následující známé problémy při instalaci sady Visual Studio vytvářet n�
 
   > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.TARGETS(84,5): Chyba MSB6003: Spustitelný soubor "csc.exe" zadanou úlohu nejde spustit. Nelze načíst soubor nebo sestavení "System.IO.FileSystem, verze = 4.0.1.0, jazykové verze = neutrální, PublicKeyToken = b03f5f7f11d50a3a" nebo některá z jeho závislostí. Systém nemůže najít zadaný soubor.
 
-* Nelze nainstalovat Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) na mcr<span></span>.microsoft.com/windows/servercore:1809 nebo novější. Další informace naleznete v tématu https://aka.ms/setup/containers/servercore1809.
+* Nelze nainstalovat Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) mcr.microsoft.com/windows/servercore:1809 nebo novější. Další informace naleznete v tématu https://aka.ms/setup/containers/servercore1809.
 
 ::: moniker-end
 

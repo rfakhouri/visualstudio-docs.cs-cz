@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323971"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323461"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Postupy: Potlačení upozornění kompilátoru
 
@@ -63,7 +63,7 @@ Tento příklad ukazuje, jak upravit *.vbproj* souboru můžete potlačit upozor
 
 1. V panelu nabídky zvolte **projektu** > **uvolnit projekt**.
 
-1. V **Průzkumníka řešení**, otevřete kliknutím pravým tlačítkem nebo místní nabídku projektu a klikněte na tlačítko **upravit <ProjectName>.vbproj**.
+1. V **Průzkumníka řešení**, otevřete kliknutím pravým tlačítkem nebo místní nabídku projektu a klikněte na tlačítko **upravit \<ProjectName > .vbproj**.
 
     XML souboru projektu se otevře v editoru kódu.
 

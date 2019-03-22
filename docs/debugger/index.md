@@ -12,6 +12,8 @@ manager: jillfra
 
 Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a najít problémy. Ladicí program pracuje s všechny programovací jazyky sady Visual Studio a jejich přidruženými knihovnami. Pomocí ladicího programu můžete přerušit běh programu a prozkoumat kód, prozkoumat a upravit proměnné, zobrazit registry, zobrazit pokyny vytvořené ze zdrojového kódu a zobrazit paměťový prostor používaný vaší aplikací.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">
