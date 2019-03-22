@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8302c517f28e32c154f688bd9f282070013f812
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957828"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355141"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projekty v sadě Visual Studio
 
@@ -57,14 +57,14 @@ Je součástí projektu *řešení*. Bez ohledu na jeho název řešení není "
 
 Visual Studio používá dva typy souborů (*.sln* a *.suo*) k ukládání nastavení řešení:
 
-|Linka|Název|Popis|
+|Linka|Name|Popis|
 |---------------|----------|-----------------|
 |.sln|Řešení sady Visual Studio|Uspořádá projekty, položky projektu a řešení položky v řešení.|
 |.suo|Uživatelské možnosti řešení|Ukládají se nastavení na úrovni uživatele a vlastní nastavení, jako například zarážky.|
 
 ## <a name="create-new-projects"></a>Vytvořit nové projekty
 
-Nejjednodušší způsob, jak vytvořit nový projekt je začít z šablony projektu pro konkrétní typ aplikace nebo webu. Šablona projektu se skládá ze základní sady souborů předem generovaného kódu, konfigurační soubory, prostředky a nastavení. Tyto šablony se zobrazí v **nový projekt** dialogové okno při výběru **souboru** > **nový** > **projektu**. Další informace najdete v tématu [vytvářet řešení a projekty](../ide/creating-solutions-and-projects.md).
+Nejjednodušší způsob, jak vytvořit nový projekt je začít z šablony projektu pro konkrétní typ aplikace nebo webu. Šablona projektu se skládá ze základní sady souborů předem generovaného kódu, konfigurační soubory, prostředky a nastavení. Tyto šablony jsou k dispozici v dialogovém okně místo, kde můžete vytvořit nový projekt (**souboru** > **nový** > **projektu**). Další informace najdete v tématu [vytvářet řešení a projekty](../ide/creating-solutions-and-projects.md).
 
 Můžete také vytvořit vlastní šablony projektů a položek. Další informace najdete v tématu [vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md).
 

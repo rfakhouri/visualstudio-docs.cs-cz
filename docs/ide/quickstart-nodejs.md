@@ -13,16 +13,35 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8d306436f8948d6f1d22d02984b00c2e0bc8f38f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 79197d99ea04d95c369738af5832f70f4f7dc7e7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867009"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355296"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Rychlý start: Vytvořte svoji první aplikaci Node.js pomocí sady Visual Studio
 
-V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte jednoduchou webovou aplikaci Node.js. Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte jednoduchou webovou aplikaci Node.js.
+
+## <a name="prerequisites"></a>Požadavky
+
+* Musíte mít nainstalovanou sadu Visual Studio a úlohy pro vývoj Node.js.
+
+    ::: moniker range=">=vs-2019"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, pokračujte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+    ::: moniker-end
+
+    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+
+    ![Úloha Node.js v instalačním programu VS](../ide/media/quickstart-nodejs-workload.png)
+
+* Je nutné mít nainstalovaný modul runtime Node.js.
+
+    Pokud ho nemáte nainstalovaný, nainstalujte si verzi LTS z webu [Node.js](https://nodejs.org/en/download/). Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud se nainstalovaný modul runtime nerozpozná, můžete projekt nakonfigurovat na stránce vlastností pomocí odkazu na nainstalovaný modul runtime (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **Vlastnosti**).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -32,17 +51,19 @@ Nejprve vytvoříte projekt webové aplikace Node.js.
 
     Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud se nainstalovaný modul runtime nerozpozná, můžete projekt nakonfigurovat na stránce vlastností pomocí odkazu na nainstalovaný modul runtime (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **Vlastnosti**).
 
-1. Otevřete Visual Studio 2017.
+1. Otevřít Visual Studio.
 
-1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
+1. Vytvořte nový projekt.
 
-1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **prázdná webová aplikace Node.js**, klikněte na tlačítko **OK**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Node.js**, klikněte na tlačítko **vytvořit nový projekt aplikace prázdná webová Node.js** (JavaScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **prázdná webová aplikace Node.js**, klikněte na tlačítko **OK**.
+    ::: moniker-end
+    Pokud se nezobrazí **prázdná webová aplikace Node.js** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
 
-     Pokud se nezobrazí **prázdná webová aplikace Node.js** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
-
-     ![Úloha Node.js v instalačním programu VS](../ide/media/quickstart-nodejs-workload.png)
-
-    Po zvolení **prázdná webová aplikace Node.js** šablonu a klikněte na tlačítko **OK**, vytvoří Visual Studio a nové řešení a otevře projekt. *Server.js* otevře v editoru v levém podokně.
+    Visual Studio vytvoří a nového řešení a otevře projekt. *Server.js* otevře v editoru v levém podokně.
 
 ## <a name="explore-the-ide"></a>Prozkoumejte rozhraní IDE
 

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983504"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354740"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Vítá vás Visual Studio IDE | Python
 
@@ -44,7 +44,7 @@ Tento obrázek ukazuje Visual Studio s otevřeném projektu Pythonu a několika 
 
 Visual Studio je k dispozici pro Windows a Mac; Podpora Pythonu je ale dostupná jenom v aplikaci Visual Studio pro Windows.
 
-Existují 3 edicích sady Visual Studio 2017 na Windows: Community, Professional a Enterprise. V tématu [porovnání Visual Studio 2017 integrovanými vývojovými prostředími](https://visualstudio.microsoft.com/vs/compare/) Další informace o funkcích, které jsou podporované v každé edici.
+Existují 3 edicích sady Visual Studio ve Windows: Community, Professional a Enterprise. Zobrazit [porovnání prostředí IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/) Další informace o funkcích, které jsou podporované v každé edici.
 
 ## <a name="popular-productivity-features"></a>Oblíbené pro zvýšení produktivity
 

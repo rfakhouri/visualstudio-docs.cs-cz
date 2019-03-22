@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5270d24bd98d9858b4133c1e05b5883b8b57f509
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983303"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355536"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalace podpory Pythonu v sadě Visual Studio ve Windows
 
@@ -33,7 +33,7 @@ K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete
 > [!Note]
 > Podpora Pythonu není v současné době k dispozici v sadě Visual Studio pro Mac, ale je k dispozici na Mac a Linux přes Visual Studio Code. Zobrazit [otázek a odpovědí](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-<a name="visual-studio-2017"></a>
+<a name="visual-studio-2017-and-2019"></a>
 ## <a name="visual-studio-2019-and-visual-studio-2017"></a>Visual Studio 2019 and Visual Studio 2017
 
 1. Stáhněte a spusťte nejnovější instalační program sady Visual Studio. Pokud máte Visual Studio, už nainstalovali, spusťte instalační program sady Visual Studio, vyberte **změnit** možnost (naleznete v tématu [upravit Visual Studio](../install/modify-visual-studio.md)) a přejděte ke kroku 2.
@@ -50,14 +50,14 @@ K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete
 
     ::: moniker range="vs-2017"
     Volitelné: Pokud pracujete s vědeckým zpracováním dat, zvažte také **pro datové vědy a analytické aplikace** pracovního vytížení. Tato úloha obsahuje podporu pro Python, R, a F# jazyky. Další informace najdete v tématu [pro datové vědy a analytické aplikace úlohy](data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > Úlohy Python a datové vědy jsou k dispozici pouze s Visual Studio 2017 verze 15.2 nebo novější.
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
     Volitelné: Pokud pracujete s vědeckým zpracováním dat, zvažte také **pro datové vědy a analytické aplikace** pracovního vytížení. Tato úloha obsahuje podporu pro Python a F# jazyky. Další informace najdete v tématu [pro datové vědy a analytické aplikace úlohy](data-science-and-analytical-applications-workload.md).
     ::: moniker-end
-
-    > [!Note]
-    > Úlohy Python a datové vědy jsou k dispozici pouze s Visual Studio 2017 verze 15.2 nebo novější.
 
 1. Na pravé straně instalačního programu zvolte v případě potřeby další možnosti. Přeskočte tento krok přijměte výchozí možnosti.
 

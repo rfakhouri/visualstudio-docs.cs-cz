@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fe479fa21480ff9456990dc57c55e656933c3cd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1c80f1e6c7c11e61fcdd651ac924d8243298e82
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755832"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355154"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Názvy proměnných by neměly odpovídat názvům polí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1500: Názvy proměnných by neměly odpovídat názvům polí](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1500: Názvy proměnných by neměly odpovídat názvům polí](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1500:
 |Kategorie|Microsoft.Maintainability|  
 |Narušující změna|Při vyvolání na parametr, který má stejný název jako pole:<br /><br /> – Pevná – Pokud pole a metody, která deklaruje parametr je nemohou vidět mimo sestavení, bez ohledu na to, které provedete změnu.<br />-Zásadní - li změnit název pole a jsou viditelné mimo sestavení.<br />-Zásadní – Pokud změníte název parametru a metodu, která deklaruje ji lze zobrazit mimo sestavení.<br /><br /> Při vyvolání na lokální proměnné, která má stejný název jako pole:<br /><br /> – Pevná – Pokud pole nejsou viditelné mimo sestavení, bez ohledu na to, které provedete změnu.<br />– Pevná – Pokud změníte název místní proměnné a neměňte název pole.<br />-Dopadem na dřívější kód - li změnit název pole a jsou viditelné mimo sestavení.|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Metoda instance deklaruje parametr nebo místní proměnná, jejíž název odpovídá poli instance deklarovaného typu. K zachycení místní proměnné, které porušují pravidlo, musí být sestaveny testované sestavení s použitím informací o ladění a přidružené programového souboru databáze (PDB) musí být k dispozici.  
   
 ## <a name="rule-description"></a>Popis pravidla  

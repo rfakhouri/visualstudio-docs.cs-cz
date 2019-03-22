@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3b78562b9fa7b5632e1ce60788c918e065d3dc
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325172"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354723"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: První seznámení s integrovaným vývojovým prostředím sady Visual Studio
 
@@ -71,7 +71,7 @@ Pokračujte ve zkoumání funkcí sady Visual Studio, vytvoříme nový projekt.
 
 1. V okně start zvolte **vytvořte nový projekt**.
 
-   Otevře se okno, které říká **vytvořte nový projekt**. Toto okno se někdy označuje jako **nový projekt** dialogového okna a to je, kde můžete procházet a vyberte šablonu projektu. Také udržuje seznam naposledy použitých projektu šablony.
+   Otevře se dialogové okno, které se říká **vytvořte nový projekt**. Tady můžete vyhledávat, filtrovat a vybrat šablonu projektu. Zobrazuje také seznam naposledy použitých projektu šablony.
 
 1. Do vyhledávacího pole v horní části, zadejte v **konzoly** pro filtrování seznamu typů projektů na ty, které obsahují "console" v názvu. Dále zpřesnit výsledky hledání podle výběru **C#** (nebo jiném jazyce podle vašeho výběru) z **jazyk** výběr.
 

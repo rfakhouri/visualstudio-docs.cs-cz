@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949639"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355270"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled možností cílení na více Visual Studio
 
@@ -35,13 +35,13 @@ Cílení rozhraní zahrnuje následující funkce:
 
 - Když otevřete projekt, který se zaměřuje na starší verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio automaticky upgradovat nebo ponechat cíl jako-je.
 
-- Když vytvoříte projekt, můžete určit verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , kterou chcete cílit.
+- Při vytváření projektu můžete určit verzi rozhraní .NET Framework, kterou chcete cílit.
 
-- Můžete změnit verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] existující projekt cílí.
+- Můžete změnit verzi rozhraní .NET Framework, existující projekt cílí.
 
-- Můžete cílit na jinou verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] v různé projekty ve stejném řešení.
+- Můžete cílit jinou verzi rozhraní .NET Framework v různé projekty ve stejném řešení.
 
-- Při změně verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , který je projekt cílen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] provede všechny potřebné změny odkazů a konfiguračních souborů.
+- Pokud změníte verzi rozhraní .NET Framework, která je projekt cílen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] provede všechny potřebné změny odkazů a konfiguračních souborů.
 
 Když pracujete na projektu, který se zaměřuje na starší verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio dynamicky provádí následující změny vývojové prostředí, následujícím způsobem:
 
@@ -62,17 +62,27 @@ Když pracujete na projektu, který se zaměřuje na starší verzi [!INCLUDE[dn
 
 ## <a name="select-a-target-framework-version"></a>Vyberte cílovou verzi rozhraní framework
 
-Při vytváření projektu vyberte cílovou verzi rozhraní .NET Framework v **nový projekt** dialogové okno. Seznam dostupných rozhraní obsahuje nainstalované verze architektur, které se dají použít pro typ vybrané šablony. Pro typy šablon, které nevyžadují rozhraní .NET Framework, například šablony .NET Core **Framework** rozevíracího seznamu je skrytá.
+Při vytváření projektu vyberte cílovou verzi rozhraní .NET Framework po výběru šablony projektu. Seznam dostupných rozhraní obsahuje nainstalované verze architektur, které se dají použít pro typ vybrané šablony. Pro typy šablon, které nevyžadují rozhraní .NET Framework, například šablony .NET Core **Framework** rozevíracího seznamu je skrytá.
 
-![Rozhraní Framework rozevírací seznam v dialogovém okně Nový projekt](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-V existujícím projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+![Rozhraní Framework rozevírací seznam v sadě VS 2017](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Rozevírací seznam Framework v VS 2019](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+V existujícím projektu můžete změnit cílovou verzi rozhraní .NET Framework v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Přeložit odkazy na sestavení systémových a uživatelských
 
 K cílení na určitou verzi rozhraní .NET Framework, musíte nejprve nainstalovat odpovídající odkazy na sestavení. Můžete stáhnout balíčky pro vývojáře pro různé verze rozhraní .NET Framework [.NET stáhne](https://www.microsoft.com/net/download/windows) stránky.
 
-**Přidat odkaz** dialogové okno zakáže sestavení systému, které se netýkají cílové [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi tak, že není možné je přidat do projektu neúmyslně. (Systémová sestavení jsou *.dll* soubory, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze.) Odkazy, které patří do verze rozhraní, které je vyšší než cílová verze, neposkytne řešení a ovládací prvky, které jsou závislé na takovém odkazu nelze přidat. Pokud chcete povolit takový odkaz, resetuje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cíli projektu na takový, který obsahuje odkaz.  Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+**Přidat odkaz** dialogové okno zakáže sestavení systému, které se netýkají cílové verze rozhraní .NET tak, že není možné je přidat do projektu neúmyslně. (Systémová sestavení jsou *.dll* soubory, které jsou zahrnuty v rozhraní .NET Framework verze.) Odkazy, které patří do verze rozhraní, které je vyšší než cílová verze, neposkytne řešení a ovládací prvky, které jsou závislé na takovém odkazu nelze přidat. Pokud chcete povolit takový odkaz, obnovení, který obsahuje odkaz na cílové rozhraní .NET Framework projektu.  Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Další informace o odkazech na sestavení naleznete v tématu [přeložit sestavení v době návrhu](../msbuild/resolving-assemblies-at-design-time.md).
 

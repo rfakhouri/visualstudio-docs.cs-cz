@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323420"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355786"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programového kódu a další soubory v projektu sady Visual Studio. Obvykle píšete šablony tak, aby se lišily kód, který se generují podle dat z *modelu*. Model je soubor nebo databázi, která obsahuje základní informace o podle požadavků vaší aplikace.
@@ -32,7 +32,7 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 
  Pravděpodobně již máte zkušenosti s generování kódu. Při definování prostředků v **RESX** soubor v řešení sady Visual Studio, sadu tříd a metod se generuje automaticky. Soubor prostředků je mnohem jednodušší a spolehlivější upravit prostředky než by bylo, pokud jste museli upravovat třídy a metody. Kód lze generovat stejným způsobem ze zdroje vlastní návrhu pomocí textových šablon.
 
- Textová šablona obsahuje kombinaci text, který chcete generovat a programový kód, který generuje proměnné části textu. Kód programu a umožňuje opakujte nebo podmíněně vynechání části generovaného textu. Generovaný text může, samotné se programový kód, který bude součástí vaší aplikace.
+ Textová šablona obsahuje kombinaci text, který chcete generovat a programový kód, který generuje proměnné části textu. Kód program umožňuje opakujte nebo podmíněně vynechání části generovaného textu. Generovaný text může, samotné se programový kód, který bude součástí vaší aplikace.
 
 ## <a name="creating-a-design-time-t4-text-template"></a>Vytvoření textové šablony T4 návrhu
 
@@ -141,7 +141,7 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 >  Ale i v případě, že nejsou ladění můžete nechat v klauzuli v direktivě šablony. To způsobí, že jenom velmi malé pokles výkonu.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generování kódu nebo prostředky pro vaše řešení
- Můžete generovat programové soubory, které se liší v závislosti na modelu. Model je vstup například databáze, konfigurační soubor, modelu UML, modelu DSL nebo jiného zdroje. Několik obvykle generovat programové soubory pocházejí ze stejného modelu. Za tím účelem vytvořte soubor šablony pro každý soubor generovaného programu a přečetl(a) všechny šablony stejného modelu.
+ Můžete generovat programové soubory, které se liší v závislosti na modelu. Model je vstup například databáze, konfigurační soubor, modelu UML, modelu DSL nebo jiného zdroje. Ze stejného modelu vygenerujete obvykle několik souborů programu. Za tím účelem vytvořte soubor šablony pro každý soubor generovaného programu a přečetl(a) všechny šablony stejného modelu.
 
 #### <a name="to-generate-program-code-or-resources"></a>Ke generování programového kódu nebo prostředkům
 

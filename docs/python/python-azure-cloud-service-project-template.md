@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: aefb2ae530d5d48158faf1645b4d1eadd299aec6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 77da3ee8af0b14171e8cc525c2e6d95c6a38a205
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925966"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355708"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro Python
 
@@ -24,7 +24,7 @@ Visual Studio poskytuje šablony, které vám pomůžou začít s vytváření c
 
 A [Cloudová služba](https://docs.microsoft.com/azure/cloud-services/) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každý provádí koncepčně samostatné úlohy, ale můžete samostatně replikovat napříč podle potřeby škálování virtuálních počítačů. Webové role poskytují hostování pro front-endové webové aplikace. Pokud Python obavy, webová architektura, která podporuje s rozhraním WSGI můžete použít pro zapsání takové aplikace (podporuje [Šablona webového projektu](python-web-application-project-templates.md)). Role pracovního procesu jsou určené pro dlouho běžící procesy, které nemají možnost zasahovat přímo uživatelům. Obvykle využívají pomocí balíčků v rámci balíčku "azure", která se instaluje s [ `pip install azure` ](https://pypi.org/project/azure).
 
-Tento článek obsahuje podrobnosti o šabloně projektu a další podporu v sadě Visual Studio 2017 (starší verze se podobné, ale několik rozdílů). Další informace o práci s Azure v Pythonu, přejděte [středisko pro vývojáře Python](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python).
+Tento článek obsahuje podrobnosti o šabloně projektu a další podporu v sadě Visual Studio 2017 a novější (starší verze se podobné, ale několik rozdílů). Další informace o práci s Azure v Pythonu, přejděte [středisko pro vývojáře Python](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 

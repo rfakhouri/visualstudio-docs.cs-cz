@@ -15,17 +15,17 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8771c3bfa662b51138276cabd205ea2f7e7c37c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4f2fff418e8d791898a4e5db00fe639b5d524d95
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761860"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355306"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Malá a velká písmena identifikátorů by měla být použita správně
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1709: Identifikátory by měly být správně formátováno](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1709: Identifikátory by měly být správně formátováno](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1709:
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní – při aktivaci pro sestavení, oborů názvů, typy, členy a parametry.<br /><br /> Bez konce – při vyvolání v parametrech obecného typu.|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Název identifikátoru není správně formátováno.  
   
  \- nebo –  

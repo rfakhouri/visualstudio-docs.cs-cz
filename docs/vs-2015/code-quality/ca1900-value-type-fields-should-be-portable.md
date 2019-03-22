@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 73ffb5e9e0f46ac14742e4153c4cc21fa7af1da8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35bdef10d63f79c3d1ff649a486a708c34b28078
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779889"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355050"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Pole typů hodnot by měla být přenosná
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1900: Pole hodnot by měla být přenosná](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1900: Pole hodnot by měla být přenosná](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1900:
 |Kategorie|Microsoft.Portability|  
 |Narušující změna|Zásadní – Pokud je pole viditelné mimo sestavení.<br /><br /> Bez konce – Pokud pole není viditelné mimo sestavení.|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Toto pravidlo zkontroluje, že budou při zařazení na nespravovaný kód v 64bitových operačních systémech správně zarovnány struktury, které jsou deklarovány pomocí explicitního rozložení. Nezarovnané přístupy a proces se chybově ukončit, pokud toto porušení nebyl vyřešen IA-64 není povolena.  
   
 ## <a name="rule-description"></a>Popis pravidla  

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907682"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355669"
 ---
 # <a name="template-parameters"></a>Parametry šablony
 
@@ -54,11 +54,11 @@ Následující tabulka uvádí vyhrazené parametry šablon, které mohou využ�
 |identifikátor GUID [1-10]|GUID, který se používá k nahrazení identifikátoru GUID projektu v souboru projektu. Můžete zadat až 10 jedinečných identifikátorů GUID (například `guid1`).|
 |Název položky|Název zadaný uživatelem v **přidat novou položku** dialogové okno.|
 |MachineName|Aktuální název počítače (například Computer01).|
-|název projektu|Název zadaný uživatelem v **nový projekt** dialogové okno.|
+|název projektu|Název uživatelem zadané při vytváření projektu.|
 |RegisteredOrganization|Hodnotu klíče registru z HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |RootNamespace|Kořenový obor názvů aktuálního projektu. Tento parametr platí pouze pro šablony položek.|
 |safeitemname|Název zadaný uživatelem v **přidat novou položku** dialogovém okně se všemi problematické znaky a byly odebrány mezery.|
-|safeprojectname|Název zadaný uživatelem v **nový projekt** dialogovém okně se všemi problematické znaky a byly odebrány mezery.|
+|safeprojectname|Název zadaný uživatelem při vytvoření projektu, ale všechny problematické znaky a byly odebrány mezery.|
 |čas|Aktuální čas ve formátu DD/MM/RRRR 00:00:00.|
 |SpecificSolutionName|Název řešení. Pokud je zaškrtnuto políčko „vytvořit adresář řešení“, `SpecificSolutionName` obsahuje název řešení. Pokud není zaškrtnuto políčko „vytvořit adresář řešení“, `SpecificSolutionName` je prázdné.|
 |USERDOMAIN|Aktuální uživatel domény.|

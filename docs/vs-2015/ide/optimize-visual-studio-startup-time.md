@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780272"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355367"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimalizace spouštění sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ V ideálním případě sady Visual Studio by měl vždy spustit co nejrychleji.
 
 ## <a name="control-startup-behavior"></a>Řízení chování při spuštění
 
-Aby se zabránilo rozšíření čas spuštění, Visual Studio 2017 nevyužívá během spouštění, načítání rozšíření metodiky zatížení na vyžádání. To znamená, že rozšíření neotevírat ihned poté, co Visual Studio spustí, ale místo toho otevřít asynchronně účtujeme podle potřeby po spuštění. Protože okna nástrojů ponechány otevřené v předchozí relaci sady Visual Studio může zhoršit dobu spuštění, Visual Studio otevře okna nástrojů inteligentnější způsobem, aby se zabránilo dopadu na dobu spuštění.
+Pokud chcete zabránit rozšíření čas spuštění sady Visual Studio 2017 a novější vyhnout, načítají se rozšíření během spouštění pomocí zatížení na vyžádání přístup. To znamená, že rozšíření neotevírat ihned poté, co Visual Studio spustí, ale místo toho otevřít asynchronně účtujeme podle potřeby po spuštění. Protože okna nástrojů ponechány otevřené v předchozí relaci sady Visual Studio může zhoršit dobu spuštění, Visual Studio otevře okna nástrojů inteligentnější způsobem, aby se zabránilo dopadu na dobu spuštění.
 
 Pokud sada Visual Studio zjistí pomalé spouštění, zobrazí se místní zpráva, upozorní vás do okna rozšíření nebo nástroj, který je příčinou zpomalení. Zprávy také obsahuje odkaz **spravovat výkon sady Visual Studio** dialogové okno, které obsahuje nástroje a rozšíření windows, které mají vliv na výkon při spuštění. Toto dialogové okno umožňuje změnit nastavení okna nástroje a rozšíření pro zvýšení výkonu při spuštění.
 

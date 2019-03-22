@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb4d2ec524065a79150b35564dd526d0bf13779e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e1264bd590cc44a16470902372b05ff0e8c562b6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914276"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355643"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -38,7 +38,7 @@ Je hotová ukázka z tohoto návodu můžete najít na [python ukázky vs-cpp-ex
 
 ## <a name="prerequisites"></a>Požadavky
 
-- Visual Studio 2017 s oběma **Desktop Development with C++** a **vývoj v jazyce Python** úlohy, které jsou nainstalované s výchozími možnostmi.
+- Visual Studio 2017 nebo novější s oběma **Desktop Development with C++** a **vývoj v jazyce Python** úlohy, které jsou nainstalované s výchozími možnostmi.
 - V **vývoj v jazyce Python** pracovního vytížení, také vybrat pole na pravé straně pro **nástroje Pythonu pro nativní vývoj**. Tato možnost nastaví většinu konfiguraci popsané v tomto článku. (Tato možnost také zahrnuje úlohy pro C++ automaticky.)
 
     ![Výběr možnosti nástrojů nativního vývoje v Pythonu](media/cpp-install-native.png)
@@ -107,7 +107,7 @@ Postupujte podle pokynů v této části vytvořit dva shodné projekty C++ s n�
 1. Hledání na "C++", vyberte **prázdný projekt**, zadejte název "superfastcode" ("superfastcode2" pro druhý projekt) a vyberte **OK**.
 
     > [!Tip]
-    > S **nástroje Pythonu pro nativní vývoj** nainstalovaná v sadě Visual Studio 2017, můžete začít s **rozšiřující modul Pythonu** šablony místo toho, který má v podstatě co je popsáno níže již v místě. V tomto návodu, počínaje prázdný projekt ukazuje vytvoření rozšíření modulu krok za krokem. Jakmile pochopíte procesu šablony vám šetří čas při psaní vlastních rozšíření.
+    > S **nástroje Pythonu pro nativní vývoj** nainstalovaná v sadě Visual Studio, můžete začít s **rozšiřující modul Pythonu** šablony místo toho, který má v podstatě co je popsáno níže již v místě. V tomto návodu, počínaje prázdný projekt ukazuje vytvoření rozšíření modulu krok za krokem. Jakmile pochopíte procesu šablony vám šetří čas při psaní vlastních rozšíření.
 
 1. Vytvoření souboru jazyka C++ v novém projektu kliknutím pravým tlačítkem myši **zdrojové soubory** uzlu, pak vyberte **přidat** > **nová položka**vyberte **soubor C++**, pojmenujte ho `module.cpp`a vyberte **OK**.
 
@@ -284,7 +284,7 @@ První metoda funguje v případě Pythonu projekt a projekt C++ jsou ve stejné
 
 Alternativní metody popsané v následujících krocích, nainstaluje modul v globálním prostředí Pythonu ji dáte k dispozici i jiné projekty Pythonu. (To obvykle vyžaduje aktualizaci databáze pro dokončování IntelliSense pro toto prostředí v sadě Visual Studio 2017 verze 15.5 a starší. Aktualizace je také nutné při odebírání modulu z prostředí.)
 
-1. Pokud používáte Visual Studio 2017, spusťte instalační program sady Visual Studio, vyberte **změnit**vyberte **jednotlivé komponenty** > **sestavení kompilátory, nástroje a moduly runtime**  >  **Sadu nástrojů visual C++ 2015.3 v140**. Tento krok je nezbytný, protože Pythonu (pro Windows) sama o sobě sestavené pomocí sady Visual Studio 2015 (verze 14.0) a očekává, že tyto nástroje jsou k dispozici, při vytváření rozšíření pomocí metody popsané. (Všimněte si, že budete muset nainstalovat 32bitovou verzi jazyka Python a zaměřit knihovna DLL Win32 a ne x64.)
+1. Pokud používáte Visual Studio 2017 nebo později, spusťte instalační program sady Visual Studio, vyberte **změnit**vyberte **jednotlivé komponenty** > **sestavení kompilátory, nástroje a moduly runtime**   >  **Sadu nástrojů visual C++ 2015.3 v140**. Tento krok je nezbytný, protože Pythonu (pro Windows) sama o sobě sestavené pomocí sady Visual Studio 2015 (verze 14.0) a očekává, že tyto nástroje jsou k dispozici, při vytváření rozšíření pomocí metody popsané. (Všimněte si, že budete muset nainstalovat 32bitovou verzi jazyka Python a zaměřit knihovna DLL Win32 a ne x64.)
 
 1. Vytvořte soubor s názvem *setup.py* v projektu jazyka C++ tak, že kliknete pravým tlačítkem projekt a vyberete **přidat** > **nová položka**. Potom vyberte **soubor C++ (.cpp)**, pojmenujte soubor `setup.py`a vyberte **OK** (pojmenování souboru s *.py* rozšíření díky sadě Visual Studio nerozpozná jako Pythonu bez ohledu na pomocí souboru šablony C++). Když soubor se zobrazí v editoru, vložte následující kód do něj podle potřeby metody rozšíření:
 

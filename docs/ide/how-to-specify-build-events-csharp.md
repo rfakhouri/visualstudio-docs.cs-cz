@@ -1,6 +1,6 @@
 ---
 title: 'Postupy: Určení událostí sestavení (C#)'
-ms.date: 11/04/2016
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -14,42 +14,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: af2329789e5eea4c9b0875f2986181f6d672757c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930454"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355354"
 ---
 # <a name="how-to-specify-build-events-c"></a>Postupy: Určení událostí sestavení (C#)
 
-Použití událostí sestavení zadat příkazy, na kterých běží před začátkem sestavení nebo po dokončení sestavení. Události sestavení jsou spouštěny pouze v případě, že se sestavení úspěšně dosáhne těchto bodů v procesu sestavení.
+Použití událostí sestavení zadat příkazy, na kterých běží před začátkem sestavení nebo po dokončení sestavení. Události sestavení spustí pouze v případě, že se sestavení úspěšně dosáhne těchto bodů v procesu sestavení.
 
 Při vytváření projektu, události před sestavením jsou přidány do souboru s názvem *PreBuildEvent.bat* a události po sestavení jsou přidány do souboru s názvem *PostBuildEvent.bat*. Pokud chcete zajistit kontrolu chyb, přidejte vlastní příkazy kontroly chyb do kroků sestavení.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+## <a name="specify-a-build-event"></a>Určení událostí sestavení
 
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>Určení události před sestavením a po sestavení
+1. V **Průzkumníka řešení**, vyberte projekt, pro které chcete k určení událostí sestavení.
 
-### <a name="to-specify-a-build-event"></a>K určení událostí sestavení
+2. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-1.  V **Průzkumníka řešení**, vyberte projekt, pro které chcete k určení událostí sestavení.
+3. Vyberte **události sestavení** kartu.
 
-2.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
-
-3.  Vyberte **události sestavení** kartu.
-
-4.  V **příkazový řádek události před sestavením** zadejte syntaxe události sestavení.
+4. V **příkazový řádek události před sestavením** zadejte syntaxe události sestavení.
 
     > [!NOTE]
     > Události před sestavením nebudou spuštěny, pokud je aktuální projekt a není aktivováno žádné sestavení.
 
-5.  V **příkazový řádek události po sestavení** zadejte syntaxe události sestavení.
+5. V **příkazový řádek události po sestavení** zadejte syntaxe události sestavení.
 
     > [!NOTE]
     > Přidat `call` příkaz před vše post-build příkazy, které spouštějí *.bat* soubory. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.
 
-6.  V **spustit událost po sestavení** zadejte za jakých podmínek spustit událost po sestavení.
+6. V **spustit událost po sestavení** zadejte za jakých podmínek spustit událost po sestavení.
 
     > [!NOTE]
     > Přidejte zdlouhavé syntaxi, nebo vyberte některý makra ze sestavení [dialogové okno Příkazový řádek události před sestavením události/po sestavení](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), klikněte na tlačítko se třemi tečkami (**...** ) k zobrazení do textového pole.
@@ -59,7 +55,7 @@ Při vytváření projektu, události před sestavením jsou přidány do soubor
     > [!NOTE]
     > Pokud události před sestavením nebo po sestavení úspěšně nedokončí, můžete ukončit sestavení tak, že vaše akce události ukončení s kódem než nula (0), který označuje úspěšné akce.
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Příklad: Jak změnit informace o manifestu v události po sestavení
+## <a name="example"></a>Příklad
 
 Následující postup ukazuje, jak nastavit minimální verzi operačního systému v manifestu aplikace s použitím *.exe* příkaz, který je volána z události po sestavení ( *. exe.manifest* v souboru adresář projektu). Minimální verzi operačního systému je složené ze čtyř částí čísla, jako je například 4.10.0.0. K tomu příkaz změní `<dependentOS>` manifestu:
 
@@ -71,19 +67,17 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 </dependentOS>
 ```
 
-### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Chcete-li vytvořit příkaz .exe změna manifestu aplikace
+### <a name="create-an-exe-command-to-change-the-application-manifest"></a>Vytvoření příkazu .exe změna manifestu aplikace
 
-1. Vytvořte konzolovou aplikaci pro příkaz. Z **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
+1. Vytvořte nový **konzolovou aplikaci** projektu pro příkaz. Pojmenujte projekt **ChangeOSVersionCS**.
 
-2. V **nový projekt** dialogového okna rozbalte **Visual C#**, klikněte na tlačítko **Windows**a potom klikněte na tlačítko **konzolovou aplikaci** šablony. Pojmenujte projekt `ChangeOSVersionCS`.
-
-3. V *Program.cs*, přidejte následující řádek do jiné `using` příkazů v horní části souboru:
+2. V *Program.cs*, přidejte následující řádek do jiné `using` příkazů v horní části souboru:
 
    ```csharp
    using System.Xml;
    ```
 
-4. V `ChangeOSVersionCS` obor názvů, nahraďte `Program` implementace třídy následujícím kódem:
+3. V `ChangeOSVersionCS` obor názvů, nahraďte `Program` implementace třídy následujícím kódem:
 
    ```csharp
    class Program
@@ -135,27 +129,25 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
    }
    ```
 
-    Příkaz přebírá dva argumenty: cesta k manifestu aplikace (to znamená, složka, ve které proces sestavení vytvoří manifest, obvykle *Projectname.publish*) a nová verze operačního systému.
+   Příkaz přebírá dva argumenty: cesta k manifestu aplikace (to znamená, složka, ve které proces sestavení vytvoří manifest, obvykle *Projectname.publish*) a nová verze operačního systému.
 
-5. Sestavte projekt. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
+4. Sestavte projekt.
 
-6. Kopírovat *.exe* soubor do adresáře například *C:\TEMP\ChangeOSVersionVB.exe*.
+5. Kopírovat *.exe* soubor do adresáře například *C:\TEMP\ChangeOSVersionVB.exe*.
 
    V dalším kroku vyvolání tohoto příkazu v události po sestavení upravit manifest aplikace.
 
-### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Chcete-li vyvolat událost po sestavení upravit manifest aplikace
+### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>Vyvolat událost po sestavení upravit manifest aplikace
 
-1.  Vytvoření aplikace Windows pro projekt, který má být publikován. Z **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
+1. Vytvořte nový **aplikace Windows Forms** projektu a pojmenujte ho **CSWinApp**.
 
-2.  V **nový projekt** dialogového okna rozbalte **Visual C#** , klikněte na tlačítko **Windows Desktop**a potom klikněte na tlačítko **aplikace Windows Forms** Šablona. Pojmenujte projekt `CSWinApp`.
+2. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídce zvolte **vlastnosti**.
 
-3.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+3. V **Návrháře projektu**, vyhledejte **publikovat** stránku a nastavit **umístění pro publikování** k *C:\TEMP*.
 
-4.  V **Návrháře projektu**, vyhledejte **publikovat** stránku a nastavit **umístění pro publikování** k *C:\TEMP*.
+4. Publikování projektu kliknutím **publikovat**.
 
-5.  Publikování projektu kliknutím **publikovat**.
-
-     Soubor manifestu bude sestaven a vložit *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Pokud chcete zobrazit manifest, klikněte pravým tlačítkem na soubor, klikněte na tlačítko **otevřít v programu**vyberte **ze seznamu vyberte program**a potom klikněte na tlačítko **Poznámkový blok**.
+     Vytvoření a uloží do souboru manifestu *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Pokud chcete zobrazit manifest, klikněte pravým tlačítkem na soubor, klikněte na tlačítko **otevřít v programu**vyberte **ze seznamu vyberte program**a potom klikněte na tlačítko **Poznámkový blok**.
 
      Hledání v souboru `<osVersionInfo>` elementu. Například může být verze:
 
@@ -163,21 +155,19 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  V **Návrháře projektu**, klikněte na tlačítko **události sestavení** kartě a klikněte na tlačítko **upravit POST-Build** tlačítko.
+5. Zpátky **Návrhář projektu**, klikněte na tlačítko **události sestavení** kartu a potom klikněte na tlačítko **upravit POST-Build**.
 
-7.  V **příkazový řádek události po sestavení** pole, zadejte následující příkaz:
+6. V **příkazový řádek události po sestavení** pole, zadejte následující příkaz:
 
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Při sestavování projektu se tento příkaz změní 5.1.2600.0 minimální verzi operačního systému v manifestu aplikace.
+     Při sestavování projektu se tento příkaz změní na 5.1.2600.0 minimální verzi operačního systému v manifestu aplikace.
 
-     Protože `$(TargetPath)` – makro vyjadřuje úplnou cestu ke spustitelnému souboru se `$(TargetPath)` *.manifest* určí manifestem aplikace vytvořeným v *bin* adresáře. Publikování zkopíruje tento manifest na umístění pro publikování, který jste nastavili dříve.
+     Protože `$(TargetPath)` – makro vyjadřuje úplnou cestu ke spustitelnému souboru se `$(TargetPath)` *.manifest* určí manifestem aplikace vytvořeným v *bin* adresáře. Publikování zkopíruje tento manifest do umístění pro publikování, který jste nastavili dříve.
 
-8.  Znovu publikujte projekt. Přejděte **publikovat** stránky a klikněte na tlačítko **publikovat**.
+7. Znovu publikujte projekt.
 
-     Zobrazte manifest znovu. Zobrazit manifest, otevřete adresář publikovat, klikněte pravým tlačítkem na soubor, klikněte na tlačítko **otevřete s**vyberte **ze seznamu vyberte program**a potom klikněte na tlačítko **Poznámkový blok**.
-
-     Verze by nyní mělo:
+     Verze manifestu by nyní mělo:
 
     ```xml
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />

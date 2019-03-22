@@ -10,26 +10,26 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952148"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355380"
 ---
 # <a name="how-to-update-existing-templates"></a>Postupy: Aktualizace existujících šablon
 
 Po vytvoření šablony a soubory do komprimovat *ZIP* soubor, můžete upravit šablonu. Můžete to provést ručně změnou soubory v šabloně, nebo tak, že vyexportujete novou šablonu z projektu, který je založen na šabloně.
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Pomocí Průvodce exportem šablony, a aktualizovat existující šablony projektu
+## <a name="use-the-export-template-wizard"></a>Pomocí Průvodce exportem šablony
 
 Visual Studio poskytuje **Průvodce exportem šablony** , který slouží k aktualizaci existující šablony:
 
-1. Otevřít **nový projekt** dialogové okno výběrem **souboru** > **nový** > **projektu**.
+1. Zvolte **souboru** > **nový** > **projektu** z řádku nabídek.
 
-1. Vyberte šablonu, kterou chcete aktualizovat, zadejte název a umístění pro váš projekt a zvolte **OK**.
+1. Vyberte šablonu, kterou chcete aktualizovat a bude pokračovat až kroky k vytvoření nového projektu.
 
-1. Upravte projekt v sadě Visual Studio.
+1. Upravte projekt v sadě Visual Studio. Například změnit typ výstupu nebo přidání nového souboru do projektu.
 
 1. Na **projektu** nabídce zvolte **exportovat šablonu**.
 
@@ -37,7 +37,7 @@ Visual Studio poskytuje **Průvodce exportem šablony** , který slouží k aktu
 
 1. Postupujte podle pokynů v průvodci export šablony jako *ZIP* souboru.
 
-1. (Volitelné) Chcete-li přidat šablonu, kterou chcete **nový projekt** dialogové okno, místo *ZIP* soubor v následujícím adresáři: *%USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ProjectTemplates*. Bude potřeba tento krok proveďte, pokud jste nevybrali možnost **automaticky importovat šablonu do sady Visual Studio** v **Průvodce exportem šablony**.
+1. (Volitelné) Místo *ZIP* soubor v následujícím adresáři: *%USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ProjectTemplates* zpřístupnění pro výběr. Bude potřeba tento krok proveďte, pokud jste nevybrali možnost **automaticky importovat šablonu do sady Visual Studio** v **Průvodce exportem šablony**.
 
 1. Odstranit starou šablonu *ZIP* souboru.
 

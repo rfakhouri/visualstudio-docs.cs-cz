@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f486d88ebac42ba0f9c9f338ee9fd81b56c820cf
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070305"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355747"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikování aplikace v Node.js do Azure (App Linux Service)
 
@@ -59,15 +59,13 @@ V tomto kurzu se naučíte:
 
 1. Otevřít Visual Studio.
 
-1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
-
 1. Vytvoření nové aplikace TypeScript Express.
 
     ::: moniker range=">=vs-2019"
-    V **vytvořte nový projekt** dialogovém okně **javascript** do vyhledávacího pole filtrovat výsledky a pak zvolte **aplikace základní Azure Node.js Express 4**a klikněte na tlačítko **OK**.
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Node.js**, klikněte na tlačítko **vytvořit novou aplikaci základní Azure Node.js Express 4** (TypeScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **aplikace základní Azure Node.js Express 4**, klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **TypeScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **aplikace základní Azure Node.js Express 4**, klikněte na tlačítko **OK**.
 
     ![Vytvoření nové aplikace TypeScript Express](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end

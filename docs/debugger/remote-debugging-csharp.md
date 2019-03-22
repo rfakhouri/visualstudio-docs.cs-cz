@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526734"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355160"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Vzdálené ladění projektu C# nebo Visual Basic v sadě Visual Studio
 Ladění aplikace Visual Studio, který byl nasazen na jiný počítač, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci, nakonfigurujte projekt tak, aby připojení ke vzdálenému počítači ze sady Visual Studio a spusťte aplikaci.
@@ -71,7 +71,15 @@ Ladicí program nemůže nasadit Visual C# nebo Visual Basic desktopové aplikac
 
 5. Ujistěte se, **pracovní adresář** textové pole je prázdné.
 
-6. Zvolte **použít vzdálený počítač**a typ **MJO-DL:4022** v textovém poli. (4022 je číslo portu se zobrazují v okně vzdáleného ladicího programu. Číslo portu zvýší 2 v každé verzi sady Visual Studio).
+6. Zvolte **použít vzdálený počítač**a typ **yourmachinename:port** v textovém poli. (Číslo portu se zobrazují v okně vzdáleného ladicího programu. Číslo portu zvýší 2 v každé verzi sady Visual Studio).
+
+    V tomto příkladu použijte:
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** on Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** on Visual Studio 2017
+    ::: moniker-end
 
 7. Ujistěte se, že **povolit ladění nativního kódu** není vybraná.
 

@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57986940"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354905"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Rychlý start: Otevření a spuštění kódu Pythonu ve složce
 
 Jakmile [nainstalována podpora Pythonu v aplikaci Visual Studio 2019](installing-python-support-in-visual-studio.md), je snadné spuštění existujícího kódu Pythonu ve Visual Studio 2019 bez vytvoření projektu sady Visual Studio.
 
 > [!Note]
-> Visual Studio 2017 a starší je nutné vytvořit projekt sady Visual Studio ke spuštění kódu Pythonu, které můžete snadno proveďte pomocí předdefinovaných projektových šablon. Zobrazit [rychlý start: Vytvoření projektu Pythonu z existujícího kódu](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> Visual Studio 2017 a starší potřeba vytvořit projekt sady Visual Studio ke spuštění kódu Pythonu, které můžete snadno proveďte pomocí předdefinovaných projektových šablon. Zobrazit [rychlý start: Vytvoření projektu Pythonu z existujícího kódu](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. V tomto návodu můžete použít libovolnou složku s kódu v Pythonu, který vás zajímá. Pokud chcete postupovat z příkladu, naklonujte úložiště GitHub gregmalcolm/python_koans k počítači pomocí příkazu `git clone https://github.com/gregmalcolm/python_koans` v příslušné složce.
 
-1. Spusťte Visual Studio 2019 a na úvodní obrazovce vyberte **otevřít** v dolní části **Začínáme** sloupce. Případně, pokud již máte Visual Studio běží, vyberte **souboru** > **otevřít** > **složky** místo příkazu.
+1. Spusťte Visual Studio 2019 a v okně start vyberte **otevřít** v dolní části **Začínáme** sloupce. Případně, pokud již máte Visual Studio běží, vyberte **souboru** > **otevřít** > **složky** místo příkazu.
 
     ![Úvodní obrazovka aplikace Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 

@@ -14,17 +14,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06e723fc30bfde69344218beaca4e1c0b3c5d742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 281bdbb3ba974b3aacb9c349575727675bb59305
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804160"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354738"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: Náročná metoda CompareTo
+# <a name="da0011-expensive-compareto"></a>DA0011: Náročná funkce CompareTo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0011: Náročná metoda CompareTo](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0011: Náročná metoda CompareTo](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0011:
 |Zpráva|Funkce CompareTo by měly být levné a nepřidělovat paměti. Snižte složitost funkce CompareTo Pokud je to možné.|  
 |Typ pravidla|Upozornění|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Metoda CompareTo typu je nákladné nebo přidělí paměť.  
   
 ## <a name="rule-description"></a>Popis pravidla  

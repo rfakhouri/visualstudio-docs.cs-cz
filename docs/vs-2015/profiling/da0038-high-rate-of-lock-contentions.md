@@ -13,17 +13,17 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bdd325974a67075599df722bf994cc110f9dd69
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766199"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355115"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Vysoká míra kolizí zámků
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Vysoká míra konfliktů zámků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0038: Vysoká míra kolizí zámků](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0038: Vysoká míra kolizí zámků](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -35,7 +35,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0038:
   
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit alespoň 25 vzorky k aktivaci tohoto pravidla.  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Systém údaje o výkonu, která se shromažďují se data profilace označuje, že výrazně vysoké míře sporů zámků došlo k chybě při spuštění aplikace. Vezměte v úvahu profilaci znovu pomocí metody profilace souběžného zpracování najít příčinu sporů.  
   
 ## <a name="rule-description"></a>Popis pravidla  

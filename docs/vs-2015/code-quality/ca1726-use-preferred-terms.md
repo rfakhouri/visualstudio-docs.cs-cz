@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bf1050716bb38f8b43aa8be7d88c474960544b2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770538"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355209"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Použijte upřednostňované výrazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1726: Použijte upřednostňované výrazy](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1726: Použijte upřednostňované výrazy](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -33,7 +33,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1726:
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní - při vyvolání na sestavení<br /><br /> Bez konce – při vyvolání na parametry typu|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Název externě viditelného identifikátoru zahrnuje výraz, pro který existuje alternativní upřednostňovaný výraz. Název případně obsahuje také výraz příznak nebo příznaky.  
   
 ## <a name="rule-description"></a>Popis pravidla  

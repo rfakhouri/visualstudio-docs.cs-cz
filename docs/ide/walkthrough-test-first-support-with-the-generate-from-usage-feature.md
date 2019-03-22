@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vývoj včasného testování s funkcí generování před využitím'
+title: 'Návod: Vývoj včasného testování s funkcí generování před využitím'
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943035"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355627"
 ---
-# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Průvodce: Vývoj včasného testování s funkcí generování před využitím
+# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Návod: Vývoj včasného testování s funkcí generování před využitím
 
 Toto téma popisuje způsob použití [Generovat z využití](../ide/visual-csharp-intellisense.md#generate-from-usage) funkci, která podporuje vývoj s včasným testu.
 
@@ -34,15 +34,19 @@ Toto téma popisuje způsob použití [Generovat z využití](../ide/visual-csha
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Vytvořte projekt knihovny tříd Windows a projekt testů
 
-1. V [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nebo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], vytvořte nový **knihovny tříd Windows** projektu. Pojmenujte ji `GFUDemo_VB` nebo `GFUDemo_CS`podle toho, jaký jazyk používáte.
+1. V C# nebo Visual Basic, vytvořte nový **knihovny tříd Windows** projektu. Pojmenujte ji `GFUDemo_VB` nebo `GFUDemo_CS`podle toho, jaký jazyk používáte.
 
-2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na ikonu řešení v horní části, zvolte **přidat**a klikněte na tlačítko **nový projekt**. V levém podokně **nový projekt** dialogového okna zvolte **Test**.
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na ikonu řešení v horní části, zvolte **přidat** > **nový projekt**.
 
-3. V prostředním podokně vyberte **projekt testu jednotek** a přijměte výchozí název `UnitTestProject1`. Následující obrázek znázorňuje dialogových oken, když se objeví v [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. V [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], vypadá podobně jako dialogové okno.
+3. Vytvořte nový **projekt testu jednotek (.NET Framework)** projektu.
 
-    ![Dialogové okno Nový projekt testů](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. Zvolte **OK** zavřete **nový projekt** dialogové okno.
+   Je vidět na následujícím obrázku **nový projekt** dialogové okno pro C# šablony.
+
+   ![Šablona projektu testů jednotek](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Přidejte odkaz na projekt knihovny tříd
 

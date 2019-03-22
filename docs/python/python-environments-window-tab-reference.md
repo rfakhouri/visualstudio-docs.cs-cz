@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195203"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355773"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odkaz na kartách okno prostředí Pythonu
 
@@ -60,7 +60,7 @@ V pracovním postupu vaší každý den používáte interaktivních oken, pravd
 
 Spouštěcí skripty obsahovat kód, který **interaktivní** okno načte a spustí automaticky, včetně importy, definice funkcí a prakticky cokoli jiného. Tyto skripty jsou odkazovány dvěma způsoby:
 
-1. Při instalaci prostředí sady Visual Studio vytvoří složku *Documents\Visual Studio 2017\Python skripty\\\<prostředí >* kde &lt;prostředí&gt; odpovídá Název prostředí. Můžete snadno přejít do složky specifické pro prostředí s **prozkoumat interaktivní skripty** příkazu. Při spuštění **interaktivní** okna pro toto prostředí se načte a spustí cokoli, co *.py* zde nacházejí soubory v abecedním pořadí.
+1. Při instalaci prostředí sady Visual Studio vytvoří složku *Documents\Visual Studio <version>\Python skripty\\\<prostředí >* kde &lt;verze&gt; je verze sady Visual Studio (například 2017 nebo 2019) a &lt;prostředí&gt; odpovídá názvu prostředí. Můžete snadno přejít do složky specifické pro prostředí s **prozkoumat interaktivní skripty** příkazu. Při spuštění **interaktivní** okna pro toto prostředí se načte a spustí cokoli, co *.py* zde nacházejí soubory v abecedním pořadí.
 
 1. **Skripty** v ovládacím prvku **nástroje** > **možnosti** > **Python**  >  **Interaktivní Windows** kartu (viz [interaktivních oken možnosti](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) slouží k určení další složky pro spouštěcí skripty, které jsou načteny a spustit ve všech prostředích. Tato funkce se však nefunguje v současné době.
 
@@ -156,8 +156,8 @@ Zobrazí aktuální stav databáze pro dokončování IntelliSense:
 
 ![Karta IntelliSense prostředí Pythonu](media/environments/environments-intellisense-tab.png)
 
-- V **Visual Studio 2017 verze 15.5** a starší, dokončování IntelliSense závisí na databázi, která je kompilovaná pro danou knihovnu. Vytváření databáze se provádí na pozadí, když knihovně je nainstalovaná, ale může nějakou dobu trvat a nemusí být úplné, když začnete psát kód.
-- **Visual Studio 2017 verze 15.6** a později pomocí metody rychlejší poskytují dokončování, které nezávisí na databázi ve výchozím nastavení. Z tohoto důvodu označené na kartě **IntelliSense [databáze deaktivována]**. Databázi můžete povolit zrušením možnost **nástroje** > **možnosti** > **Python**  >   **Experimentální** > **používaly nový styl IntelliSense pro prostředí**.
+- V sadě Visual Studio 2017 verze 15.5 a starší, dokončování IntelliSense závisí na databázi, která je kompilovaná pro danou knihovnu. Vytváření databáze se provádí na pozadí, když knihovně je nainstalovaná, ale může nějakou dobu trvat a nemusí být úplné, když začnete psát kód.
+- Visual Studio 2017 verze 15.6 a dále používá rychlejší metodu k poskytují dokončování, které nezávisí na databázi ve výchozím nastavení. Z tohoto důvodu označené na kartě **IntelliSense [databáze deaktivována]**. Databázi můžete povolit zrušením možnost **nástroje** > **možnosti** > **Python**  >   **Experimentální** > **používaly nový styl IntelliSense pro prostředí**.
 
 Po zjišťuje nové prostředí sady Visual Studio (nebo přidejte jedno), automaticky se začne při kompilaci databáze díky analýze zdrojové soubory knihovny. Tento proces může trvat od minutu hodinu nebo déle v závislosti na tom, co je nainstalována. (Anaconda, například se dodává s mnoha knihoven a kompilaci databáze nějakou dobu trvá.) Jakmile budete hotovi, získáte podrobný IntelliSense a není potřeba znovu aktualizujte databázi (s **aktualizace DB** tlačítko) až po instalaci další knihovny.
 

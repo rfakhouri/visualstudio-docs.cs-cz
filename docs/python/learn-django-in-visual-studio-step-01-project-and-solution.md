@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14a365a85a446737982a6ec608c5935fc17ee408
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5a15b845db2733b208a765caf1a1307abeb19a49
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955255"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355734"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz: Začínáme s webového rozhraní Django v sadě Visual Studio
 
@@ -34,7 +34,7 @@ V tomto kurzu se naučíte:
 
 ## <a name="prerequisites"></a>Požadavky
 
-- Visual Studio 2017 na Windows s následujícími možnostmi:
+- Visual Studio 2017 nebo později ve Windows s těmito možnostmi:
   - **Vývoj v jazyce Python** pracovního vytížení (**úlohy** kartu v instalačním programu). Pokyny najdete v tématu [podpora instalace Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu **kódu nástroje**.
 
@@ -65,7 +65,7 @@ Při práci s Django z příkazového řádku, obvykle spusťte projekt spuště
     - **Řešení**: ponechte tento ovládací prvek nastavit na výchozí **vytvořit nové řešení** možnost.
     - **Název řešení**: nastavte na **LearningDjango**, která je vhodná pro řešení jako kontejner pro více projektů v tomto kurzu.
     - **Vytvořit adresář pro řešení**: Ponechte nastavení (výchozí).
-    - **Vytvoření nového úložiště Git**: Tuto možnost (což je vymazat ve výchozím nastavení) tak, aby Visual Studio vytvoří místní úložiště Git, při vytváření řešení. Pokud nevidíte tuto možnost, spusťte instalační program sady Visual Studio 2017 a přidejte **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu v části **kódu nástroje**.
+    - **Vytvoření nového úložiště Git**: Tuto možnost (což je vymazat ve výchozím nastavení) tak, aby Visual Studio vytvoří místní úložiště Git, při vytváření řešení. Pokud nevidíte tuto možnost, spusťte instalační program sady Visual Studio a přidejte **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu v části **kódu nástroje**.
 
 1. Za okamžik, Visual Studio zobrazí dialogové okno o tom, že **tento projekt vyžaduje externí balíčky** (viz dole). Tento dialog se zobrazuje, protože obsahuje šablony *souboru requirements.txt* souboru odkazující na nejnovější balíček 1.x Django. (Vyberte **zobrazit požadované balíčky** zobrazíte přesné závislosti.)
 

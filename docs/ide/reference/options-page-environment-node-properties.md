@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708326"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355601"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 
@@ -120,7 +120,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
 |OnRunOrPreview|Získá nebo nastaví (String)|Určuje, zda integrovaného vývojového prostředí všechno, co ukládat před náhledem nebo spuštěním sestavením projektu.|
-|ProjectsLocation|Získá nebo nastaví (String)|Určuje výchozí adresář kde **přidat projekt** dialogové okno uloží nové projekty.|
+|ProjectsLocation|Získá nebo nastaví (String)|Určuje výchozí adresář, ve kterém se uloží nové projekty.|
 |ShowOutputWindowBeforeBuild|Get/Set (Boolean)|Určuje, zda od sestavení se zobrazí **výstup** okna.|
 |ShowTaskListAfterBuild|Get/Set (Boolean)|Určuje, zda operace neúspěšné sestavení se zobrazí **seznamu úkolů** po dokončení sestavení.|
 |TrackFileSelectionInExplorer|Get/Set (Boolean)|Určuje, zda je aktuální položky sledována v **Průzkumníka řešení**.|

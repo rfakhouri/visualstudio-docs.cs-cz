@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc450217dc6b0055a14cccd02c471329870a74ac
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 9c1c05fa3d424d90bedbbd52ac66636dc1fc1dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155525"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355510"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Kurz: Další informace k ladění kódu jazyka Visual Basic pomocí sady Visual Studio
 
@@ -36,25 +36,37 @@ V tomto kurzu se naučíte:
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj desktopových aplikací .NET** pracovního vytížení.
+::: moniker range=">=vs-2019"
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Musíte mít Visual Studio 2019 nainstalovaný a **vývoj desktopových aplikací .NET** pracovního vytížení.
 
-    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **souboru**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
+::: moniker-end
+::: moniker range="vs-2017"
+
+Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj desktopových aplikací .NET** pracovního vytížení.
+
+::: moniker-end
+
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+
+Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-1. V sadě Visual Studio, zvolte **soubor > Nový projekt**.
+1. Otevřít Visual Studio.
 
-2. V části **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **konzolovou aplikaci**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **jazyka visual basic**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt Konzolová aplikace (.NET Framework)**. V dialogovém okně, které se zobrazí, zadejte název, například **get spuštění – ladění**a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **aplikace konzoly (.NET Rozhraní Framework)**. Zadejte název, například **get spuštění – ladění** a klikněte na tlačítko **OK**.
+    ::: moniker-end
 
-    Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte *vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
-
-3. Zadejte název, například **get spuštění – ladění** a klikněte na tlačítko **OK**.
+    Pokud se nezobrazí **Konzolová aplikace (.NET Framework)** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
 
     Visual Studio vytvoří projekt.
 
-4. V *Program.cs*, nahraďte následující kód
+1. V *Module1.vb*, nahraďte následující kód
 
     ```vb
     Module Module1

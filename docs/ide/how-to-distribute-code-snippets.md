@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: Distribuce fragmentů kódu'
-ms.date: 11/04/2016
+title: Distribuce fragmentů kódu jako rozšíření
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323050"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355419"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Postupy: Distribuce fragmentů kódu
 
-Můžete poskytnout fragmenty svého kódu přátelům a nainstalovat fragmenty kódu ve svých počítačích pomocí **Správce fragmentů kódů**. Pokud máte chcete distribuovat více fragmentů nebo chcete distribuovat více široce, je však zahrnout souboru fragmentu v rozšíření sady Visual Studio. Uživatelé sady Visual Studio můžete nainstalovat rozšíření.
+Můžete poskytnout fragmenty svého kódu přátelům a nainstalovat fragmenty kódu ve svých počítačích pomocí **Správce fragmentů kódů**. Ale pokud chcete distribuovat více fragmentů nebo chcete distribuovat více široce, můžete zahrnout soubory fragmentu kódu v rozšíření sady Visual Studio. Uživatelé sady Visual Studio můžete nainstalovat rozšíření k získání fragmenty kódu.
 
-Chcete-li vytvořit rozšíření sady Visual Studio je nutné nainstalovat sadu Visual Studio SDK. Najít verzi nástroje VSSDK, který odpovídá vaší instalaci sady Visual Studio na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+## <a name="prerequisites"></a>Požadavky
+
+Nainstalujte **vývoj rozšíření sady Visual Studio** úlohu chcete-li získat přístup k **projekt VSIX** šablony projektu.
+
+![Vývoj funkcí rozšíření sady Visual Studio](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Nastavit rozšíření
 
-V tomto postupu použijeme stejný Hello World fragmentu kódu, který je vytvořen v [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Můžeme vám poskytnout *.snippet* text, takže není nutné vrátit zpět a si ho.
+V tomto postupu budete používat stejný Hello World fragmentu kódu, který je vytvořen v [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Tento článek obsahuje fragment kódu XML, takže není nutné vrátit zpět a vytvořit fragment kódu.
 
-1. Vytvořte nový projekt VSIX s názvem **TestSnippet**. (**Souboru** > **nové** > **projektu** > **Visual C# (nebo Visual Basic)**  >  **Rozšiřitelnost**.)
+1. Vytvoření nového projektu z **prázdný projekt VSIX** šablony a názvu projektu **TestSnippet**.
 
 2. V **TestSnippet** projektu, přidejte nový soubor XML a jeho volání *VBCodeSnippet.snippet*. Nahraďte obsah následujícím XML:
 
@@ -111,7 +115,9 @@ V tomto postupu použijeme stejný Hello World fragmentu kódu, který je vytvo�
 
 4. Otestujte fragment kódu. V experimentální instanci aplikace otevřete projekt jazyka Visual Basic a otevřete jeden ze souborů kódu. Umístěte ukazatel myši kamkoli v kódu, klikněte pravým tlačítkem a v místní nabídce vyberte příkaz **Vložit fragment**.
 
-5. Měli byste vidět *HelloWorldVB* jako jedna ze složek. Poklepejte na něj. Zobrazí se automaticky otevírané okno **Vložit fragment kódu: HelloWorldVB >** , který má rozevíracího seznamu **HelloWorldVB**. Klikněte na tlačítko **HelloWorldVB** rozevíracího seznamu. Měli byste vidět následující řádek do souboru přidán:
+5. Měli byste vidět *HelloWorldVB* jako jedna ze složek. Poklepejte na něj. Zobrazí se automaticky otevírané okno **Vložit fragment kódu: HelloWorldVB >** , který má rozevíracího seznamu **HelloWorldVB**. Klikněte na tlačítko **HelloWorldVB** rozevíracího seznamu.
+
+   Následující řádek je přidána do souboru kódu:
 
     ```vb
     Console.WriteLine("Hello, World!")

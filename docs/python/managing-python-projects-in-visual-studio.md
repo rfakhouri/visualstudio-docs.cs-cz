@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 61d37adfdc74a5b2a9c22ba9f3e5a92622cbbab6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194338"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355523"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty v Pythonu v sadě Visual Studio
 
@@ -75,9 +75,9 @@ Sada Visual Studio poskytuje několik způsobů, jak nastavit projektu Pythonu, 
 
 ![Dialogové okno nového projektu s využitím Pythonu šablon](media/projects-new-project-dialog.png)
 
-V následující tabulce najdete souhrn šablony, které jsou k dispozici v sadě Visual Studio 2017 (ne všechny šablony jsou dostupné ve všech předchozích verzích):
+V následující tabulce najdete souhrn šablony k dispozici v sadě Visual Studio 2017 a novější (ne všechny šablony jsou dostupné ve všech předchozích verzích):
 
-| Šablony | Popis |
+| Šablona | Popis |
 | --- | --- |
 | [**Z existujícího kódu Pythonu**](#create-project-from-existing-files) | Vytvoří projekt aplikace Visual Studio z existujícího kódu Pythonu ve struktuře složek.  |
 | **Aplikace v Pythonu** | Struktura základního projektu pro novou aplikaci v Pythonu s jeden, prázdný zdrojový soubor. Ve výchozím nastavení, spustí se v konzole překladač výchozího globálního prostředí, které můžete změnit podle projekt [přiřazení do různých prostředí](selecting-a-python-environment-for-a-project.md). |
@@ -88,7 +88,7 @@ V následující tabulce najdete souhrn šablony, které jsou k dispozici v sad�
 | **IronPython Silverlight webové stránky** | IronPython projekt, který běží v prohlížeči pomocí technologie Silverlight. Kód aplikace Python je součástí webovou stránku jako skript. Často používaný text značky skriptu stáhne kódu jazyka JavaScript, která inicializuje Ironpythonu běžících v rámci programu Silverlight, ze kterého kódu Pythonu můžete pracovat s modelu DOM. |
 | **Formulářové aplikaci Windows Ironpythonu** | Struktura projektu pomocí uživatelského rozhraní, které jsou vytvořené pomocí kódu pomocí Windows Forms Ironpythonu. Aplikace se spouští bez zobrazení konzoly. |
 | **Aplikace běžící na pozadí (IoT)** | Podporuje nasazování projektů v Pythonu ke spuštění jako služby na pozadí na zařízeních. Přejděte [centru vývojářů pro Windows IoT](https://dev.windows.com/en-us/iot) Další informace. |
-| **Rozšiřující modul Pythonu** | Tato šablona se zobrazí pod Visual C++, pokud jste nainstalovali **nástroje Pythonu pro nativní vývoj** s úlohou Pythonu v sadě Visual Studio 2017 (naleznete v tématu [instalace](installing-python-support-in-visual-studio.md)). Poskytuje základní strukturu pro C++ rozšiřující knihovny DLL, podobně jako už uváděli [vytvoření rozšíření C++ pro Python](working-with-c-cpp-python-in-visual-studio.md). |
+| **Rozšiřující modul Pythonu** | Tato šablona se zobrazí pod Visual C++, pokud jste nainstalovali **nástroje Pythonu pro nativní vývoj** s úlohou Pythonu v sadě Visual Studio 2017 nebo novější (naleznete v tématu [instalace](installing-python-support-in-visual-studio.md)). Poskytuje základní strukturu pro C++ rozšiřující knihovny DLL, podobně jako už uváděli [vytvoření rozšíření C++ pro Python](working-with-c-cpp-python-in-visual-studio.md). |
 
 > [!Note]
 > Protože je interpretovaný jazyk Python, projekty v Pythonu v sadě Visual Studio nevytvářejí samostatný spustitelný soubor jako ostatní projekty kompilované jazyka (C#, například). Další informace najdete v tématu [otázek a odpovědí](overview-of-python-tools-for-visual-studio.md#questions-and-answers).

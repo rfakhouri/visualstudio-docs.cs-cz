@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342685"
+---
 Nástroj nasazení webu 3.6 pro servery hostující poskytuje další konfiguraci funkce, které umožňují vytváření souboru s nastavením publikování v uživatelském rozhraní.
 
 1. Pokud máte webové nasazení 3.6 už nainstalovaná v systému Windows Server, odinstalujte ji pomocí **ovládací panely** > **programy** > **odinstalační Program**.
@@ -18,4 +26,4 @@ Nástroj nasazení webu 3.6 pro servery hostující poskytuje další konfigurac
 
 4. (Volitelné) Ověřte, že nasazení webu běží správně tak, že otevřete **ovládací panely > systém a zabezpečení > Nástroje pro správu > služby** a ujistěte se, že **webová služba agenta nasazení** běží () název služby se liší ve starších verzích).
 
-    Pokud služba agent není spuštěna, spusťte ji. Pokud není k dispozici na všech, přejděte na **ovládací panely > programy > odinstalovat program**, Najít **Microsoft Web Deploy <version>** . Zvolit **změnu** instalace a ujistěte se, že jste zvolili **se nainstaluje na místní pevný disk** pro součásti nasazení webu. Dokončete instalaci změnit.
+    Pokud služba agent není spuštěna, spusťte ji. Pokud není k dispozici na všech, přejděte na **ovládací panely > programy > odinstalovat program**, Najít **Microsoft Web Deploy \<verze >**. Zvolit **změnu** instalace a ujistěte se, že jste zvolili **se nainstaluje na místní pevný disk** pro součásti nasazení webu. Dokončete instalaci změnit.

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155521"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355549"
 ---
 # <a name="edit-python-code"></a>Úprava kódu v Pythonu
 
@@ -31,9 +31,9 @@ Můžete také použít Visual Studio **prohlížeče objektů** (**zobrazení**
 
 Poskytuje IntelliSense [dokončování](#completions), [signaturám](#signature-help), [rychlé informace](#quick-info), a [barevné zvýraznění kódu](#code-coloring). Visual Studio 2017 verze 15.7 nebo novější podporují také [zadání pomocných parametrů](#type-hints).
 
-Kvůli zvýšení výkonu, technologie IntelliSense v **Visual Studio 2017 verze 15.5** a dříve závisí na dokončení databáze, který je generován pro každé prostředí Pythonu ve vašem projektu. Databáze může být nutné aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze je zobrazena ve **prostředí Pythonu** okno (na stejné úrovni **Průzkumníka řešení**) na **IntelliSense** kartu (naleznete v tématu [okno prostředí referenční dokumentace](python-environments-window-tab-reference.md#intellisense-tab)).
+Kvůli zvýšení výkonu se technologie IntelliSense v sadě Visual Studio 2017 verze 15.5 a starší závisí na dokončení databáze, který je generován pro každé prostředí Pythonu ve vašem projektu. Databáze může být nutné aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze je zobrazena ve **prostředí Pythonu** okno (na stejné úrovni **Průzkumníka řešení**) na **IntelliSense** kartu (naleznete v tématu [okno prostředí referenční dokumentace](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 verze 15.6** a později použije jiný způsob zajištění dokončování IntelliSense, které nejsou závislé na databázi.
+Visual Studio 2017 verze 15.6 a novější k zajištění dokončování IntelliSense, které nejsou závislé na databázi používá jiné prostředky.
 
 ### <a name="completions"></a>Dokončování
 

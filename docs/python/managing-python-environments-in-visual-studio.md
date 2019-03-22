@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80507633538e28650ed53e74794ddda173382878
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195135"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355682"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Pythonu v sadě Visual Studio
 
@@ -123,7 +123,7 @@ Visual Studio také poskytuje příkazu, který bude generovat *souboru requirem
 
 #### <a name="conda-environments"></a>Prostředí Conda
 
-Prostředí conda je vytvořené využitím `conda` nástroje, nebo pomocí integrovaného systému conda management v sadě Visual Studio 2017 verze 15.7 nebo novější. (Vyžaduje Anaconda nebo Miniconda; Anaconda je k dispozici prostřednictvím instalačního programu sady Visual Studio, naleznete v tématu [instalace](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017).)
+Prostředí conda je vytvořené využitím `conda` nástroje, nebo pomocí integrovaného systému conda management v sadě Visual Studio 2017 verze 15.7 nebo novější. (Vyžaduje Anaconda nebo Miniconda, které jsou k dispozici prostřednictvím instalačního programu sady Visual Studio, naleznete v tématu [instalace](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017).)
 
 ::: moniker range="vs-2017"
 
@@ -153,7 +153,7 @@ Prostředí conda je vytvořené využitím `conda` nástroje, nebo pomocí inte
     | Pole | Popis |
     | --- | --- |
     | Project | Projekt, ve kterém chcete vytvořit prostředí (Pokud máte více projektů ve stejném řešení sady Visual Studio). |
-    | Název | Název prostředí conda. |
+    | Name | Název prostředí conda. |
     | Přidání balíčků z | Zvolte **souborem prostředí** Pokud máte *environment.yml* soubor s popisem závislosti, nebo zvolte **jeden nebo více názvů balíčků Anaconda** a seznamu alespoň jeden Pythonu balíček nebo verzi Pythonu do následujícího pole. Seznam balíčků pokyn conda k vytvoření prostředí Pythonu. Chcete-li nainstalovat nejnovější verzi jazyka Python, použijte `python`; pokud ho chcete nainstalovat konkrétní verzi, použijte `python=,major>.<minor>` stejně jako v `python=3.7`. Tlačítko balíčku můžete použít také k výběru verze Pythonu a běžné balíčky z řady nabídky. |
     | Nastavit jako aktuální prostředí | Po vytvoření prostředí se aktivuje nové prostředí ve zvoleném projektu. |
     | Nastavit jako výchozí prostředí pro nové projekty | Automaticky nastaví a aktivuje prostředí conda v jakékoli nové projekty vytvořené v sadě Visual Studio. Tato možnost je stejné jako při použití **nastavit výchozí prostředí pro nové projekty** v **prostředí Pythonu** okna. |

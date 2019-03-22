@@ -11,27 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194202"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355721"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
 
 ![Vzdálený ladicí program komponenty](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Tato příručka vysvětluje, jak nastavit a nakonfigurovat aplikaci s Visual Studio 2017 ASP.NET MVC 4.5.2, nasaďte ji do služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio.
+Tato příručka vysvětluje, jak nastavit a nakonfigurovat aplikaci s Visual Studio ASP.NET MVC 4.5.2, nasaďte ji do služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio.
 
 > [!NOTE]
 > Vzdálené ladění ASP.NET Core místo, najdete v článku [vzdálené ladění ASP.NET Core na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Pro službu Azure App Service můžete snadno nasadit a ladění na předem nakonfigurované instance služby IIS pomocí [Snapshot Debugger](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 vyžaduje), nebo [připojování ladicího programu z Průzkumníka serveru](../debugger/remote-debugging-azure.md).
 
+## <a name="prerequisites"></a>Požadavky
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019 je nutné postupovat podle kroků uvedených v tomto článku.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 je nutné postupovat podle kroků uvedených v tomto článku.
+::: moniker-end
+
 Tyto postupy jsme otestovali na tyto konfigurace serveru:
 * Windows Server 2012 R2 a služby IIS 8 (pro Windows Server 2008 R2, server postup se liší)
 
-## <a name="requirements"></a>Požadavky
+## <a name="network-requirements"></a>Síťové požadavky
 
 Vzdálený ladicí program je podporován v systému Windows Server od verze Windows Server 2008 Service Pack 2. Úplný seznam požadavků, najdete v části [požadavky](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -48,7 +57,14 @@ Tento článek obsahuje kroky k nastavení základní konfiguraci služby IIS na
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Vytvoření projektu ASP.NET 4.5.2 aplikace na počítači aplikace Visual Studio
 
-1. Vytvoření nové aplikace MVC ASP.NET. (**Soubor > Nový > projekt**a pak vyberte <strong>Visual C# > Web > Webová aplikace ASP.NET. V **ASP.NET 4.5.2</strong> části šablony vyberte **MVC**. Ujistěte se, že **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.)
+1. Vytvoření nové aplikace MVC ASP.NET.
+
+    ::: moniker range=">=vs-2019"
+    V aplikaci Visual Studio 2019 zadejte **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, zvolte **šablony**, klikněte na tlačítko **vytvořit nové technologie ASP.NET webové aplikace (.NET Rozhraní Framework)**. V dialogovém okně, které se zobrazí, pojmenujte projekt **MyASPApp**a klikněte na tlačítko **vytvořit**. Vyberte **MVC** a zvolte **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Chcete-li to provést v sadě Visual Studio 2017, zvolte **soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET**. V **ASP.NET 4.5.2** části šablony vyberte **MVC**. Ujistěte se, že **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.)
+    ::: moniker-end
 
 2. Otevření souboru HomeController.cs a nastavte zarážku `About()` metody.
 
@@ -165,7 +181,7 @@ Můžete také publikovat a nasazení aplikace pomocí systému souborů nebo ji
 
 ## <a name="BKMK_msvsmon"></a> Stáhněte a nainstalujte nástroje remote tools v systému Windows Server
 
-V tomto kurzu se používá Visual Studio 2017.
+Stáhněte si verzi nástrojů remote tools, která odpovídá verzi sady Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -186,7 +202,14 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
     > [!TIP]
     > V sadě Visual Studio 2017 a novějších verzích, se můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
 
-3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: 4022**.
+3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: port**.
+
+    ::: moniker range=">=vs-2019"
+    **\<název vzdáleného počítače >: 4024** 2019 Visual Studio
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<název vzdáleného počítače >: 4022** v sadě Visual Studio 2017
+    ::: moniker-end
 4. Klikněte na tlačítko **aktualizovat**.
     Měli byste vidět některé procesy, které se zobrazí v **procesy k dispozici** okna.
 
@@ -215,10 +238,14 @@ Ve většině nastavení jsou otevřené požadované porty instalace technologi
 
 Požadované porty:
 
-- 80 – požadováno pro službu IIS
-- 8172 – (volitelné) požadované pro nasazení webu k nasazování aplikací ze sady Visual Studio
-- 4022 – požadováno pro vzdálené ladění ze sady Visual Studio 2017 (viz [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md) podrobné informace.
-- UDP 3702 – port (volitelné) zjišťování umožňuje **najít** tlačítko při připojování vzdáleného ladicího programu v sadě Visual Studio.
+* 80 – požadováno pro službu IIS
+::: moniker range=">=vs-2019"
+* 4024 – požadováno pro vzdálené ladění z Visual Studio 2019 (viz [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md) Další informace).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 – požadováno pro vzdálené ladění ze sady Visual Studio 2017 (viz [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md) Další informace).
+::: moniker-end
+* UDP 3702 – port (volitelné) zjišťování umožňuje **najít** tlačítko při připojování vzdáleného ladicího programu v sadě Visual Studio.
 
 1. Chcete-li otevřít port v systému Windows Server, otevřete **spustit** nabídky, vyhledejte **brány Windows Firewall s pokročilým zabezpečením**.
 

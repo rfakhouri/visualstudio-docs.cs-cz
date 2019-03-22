@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223140"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355760"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu sady Visual Studio
 
@@ -66,13 +66,23 @@ Můžete hledat v prostředí IDE pro příkazy, soubory a možnosti, kromě fil
 
 - **Zobrazit pouze chyby, které chcete na adresu**. Pokud se rozhodnete **filtr** tlačítko **seznam chyb** nástrojů, můžete snížit počet chyb, které se zobrazují v **seznam chyb** okno. Můžete zobrazit pouze chyby v souborech, které jsou otevřeny v editoru, pouze chyby v aktuálním souboru, nebo pouze chyby v aktuálním projektu. Můžete také hledat v rámci **seznam chyb** okno najít konkrétní chyby.
 
-- **Vyhledejte dialogová okna, příkazy nabídky a možnosti**. V [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) vyhledávací pole, zadejte klíčová slova nebo fráze pro položky, které se snažíte najít. Například se zobrazí následující možnosti, pokud zadáte `new project`:
+- **Vyhledejte dialogová okna, příkazy nabídky, možnosti a další materiály**. V [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) vyhledávací pole, zadejte klíčová slova nebo fráze pro položky, které se snažíte najít. Například se zobrazí následující možnosti, pokud zadáte **nový projekt**:
 
-    ![Rychlé spuštění výsledky pro "nový projekt.](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    **Snadné spuštění** zobrazuje odkazy na **nový projekt** dialogovém okně **přidat novou položku** dialogovém okně a **projekty a řešení** stránku **Možnosti** dialogové okno, mimo jiné. Rychlé výsledky spuštění můžete také obsahovat soubory projektů a okna nástrojů.
+   ![Rychlé spuštění výsledky pro "nový projekt.](../ide/media/productivity_quicklaunch.png)
 
-  **Snadné spuštění** vyhledávacího pole se zobrazí v pravém horním rohu integrovaného vývojového prostředí. (Nebo stisknout **Ctrl**+**Q** k němu přistupovat.)
+   **Snadné spuštění** zobrazuje odkazy na vytvoření nového projektu, chcete-li přidat novou položku do projektu a k **projekty a řešení** stránku **možnosti** dialogové okno, mimo jiné. Výsledky hledání mohou také obsahovat soubory projektů a okna nástrojů.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Rychlé spuštění výsledky hledání pro: nový projekt.](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   Stisknutím klávesy **Ctrl**+**Q** přejít přímo **Snadné spuštění** vyhledávacího pole.
 
 ## <a name="debug-code"></a>Ladění kódu
 

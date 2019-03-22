@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 137ffe6cc89c439de2fded337349310da865e3be
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920100"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355695"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Kurz: Začínáme s architektury Flask webů v sadě Visual Studio
 
@@ -40,7 +40,7 @@ V průběhu těchto kroků vytvořte jedno řešení sady Visual Studio, který 
 
 ## <a name="prerequisites"></a>Požadavky
 
-- Visual Studio 2017 na Windows s následujícími možnostmi:
+- Visual Studio 2017 nebo později ve Windows s těmito možnostmi:
   - **Vývoj v jazyce Python** pracovního vytížení (**úlohy** kartu v instalačním programu). Pokyny najdete v tématu [podpora instalace Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu **kódu nástroje**.
 
@@ -60,7 +60,7 @@ Vývoj v jazyce Python se nepodporuje v současné době v sadě Visual Studio p
     - **Umístění**: určení umístění, ve kterém chcete vytvořit řešení sady Visual Studio a projekt.
     - **Název řešení**: nastavte na **LearningFlask**, která je vhodná pro řešení jako kontejner pro více projektů v tomto kurzu.
     - **Vytvořit adresář pro řešení**: Ponechte nastavení (výchozí).
-    - **Vytvoření nového úložiště Git**: Tuto možnost (což je vymazat ve výchozím nastavení) tak, aby Visual Studio vytvoří místní úložiště Git, při vytváření řešení. Pokud nevidíte tuto možnost, spusťte instalační program sady Visual Studio 2017 a přidejte **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu v části **kódu nástroje**.
+    - **Vytvoření nového úložiště Git**: Tuto možnost (což je vymazat ve výchozím nastavení) tak, aby Visual Studio vytvoří místní úložiště Git, při vytváření řešení. Pokud nevidíte tuto možnost, spusťte instalační program sady Visual Studio a přidejte **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu v části **kódu nástroje**.
 
 1. Za okamžik, Visual Studio zobrazí dialogové okno o tom, že **tento projekt vyžaduje externí balíčky** (viz dole). Tento dialog se zobrazuje, protože obsahuje šablony *souboru requirements.txt* souboru odkazující na nejnovější balíček 1.x Flask. (Vyberte **zobrazit požadované balíčky** zobrazíte přesné závislosti.)
 

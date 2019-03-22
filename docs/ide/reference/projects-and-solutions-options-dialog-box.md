@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867810"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355471"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Stránku projekty a řešení, dialogové okno Možnosti
 
@@ -91,11 +91,11 @@ Určuje výchozí umístění, kde sada Visual Studio vytvoří nové projekty a
 
 ### <a name="user-project-templates-location"></a>Umístění šablon projektů uživatele
 
-Určuje výchozí umístění, která **nový projekt** dialogové okno používá k vytvoření seznamu **šablony**. Další informace najdete v tématu [jak: Hledání a organizace šablon](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Určuje výchozí umístění, která se používá k hledání pro šablony projektů vytvořené uživatelem. Další informace najdete v tématu [jak: Hledání a organizace šablon](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Umístění šablon položek uživatele
 
-Určuje výchozí umístění, která **přidat novou položku** dialogové okno používá k vytvoření seznamu **šablony**. Další informace najdete v tématu [jak: Hledání a organizace šablon](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Určuje výchozí umístění, která se používá k hledání pro šablony položek vytvořený uživatel. Další informace najdete v tématu [jak: Hledání a organizace šablon](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Viz také:
 

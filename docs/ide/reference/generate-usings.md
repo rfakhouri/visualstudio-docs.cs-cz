@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160638"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355181"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generovat direktivy using v sadě Visual Studio
 
@@ -22,7 +22,7 @@ Tato generace kód platí pro:
 
 - C#
 
-**Co:** **Co:** Umožňuje okamžitě přidat nezbytných importů nebo [příkazy using](/dotnet/csharp/language-reference/keywords/using-statement) kopírování a vložení kódu.
+**Co:** Umožňuje okamžitě přidat nezbytných importů nebo [příkazy using](/dotnet/csharp/language-reference/keywords/using-statement) kopírování a vložení kódu.
 
 **Kdy:** Je běžnou praxí zkopírujte a vložte kód z různých míst v projektu nebo jiných zdrojů kódu. Této rychlé akce analyzuje chybějící importy pro kopírování a vložení kódu a potom vás vyzve, abyste je přidat.
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 786b116d153eeea2ddb1c495f88ae0cd6ce135c6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194895"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354761"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Pythonu
 
@@ -46,7 +46,7 @@ Komunita vývojářů Python vytvořil tisíce užitečné balíčky, které mů
 
    Indikátor průběhu malé se můžou objevit pod prostředí k označení, že Visual Studio sestavuje své databáze IntelliSense pro nově nainstalovaný balíček. **IntelliSense** karta zobrazuje také podrobnější informace. Všimněte si, že než tuto databázi se dokončí, funkce technologie IntelliSense, jako je automatické dokončování a kontroly syntaxe nebudou aktivní v okně editor pro tento balíček.
 
-   Všimněte si, že **Visual Studio 2017 verze 15.6** později používá jiný a rychlejší způsob pro práci s podporou technologie IntelliSense a zobrazí zprávu o tom on **IntelliSense** kartu.
+   Mějte na paměti, že Visual Studio 2017 verze 15.6 a novější používá jiný a rychlejší způsob pro práci s podporou technologie IntelliSense a zobrazí zprávu o tom on **IntelliSense** kartu.
 
 7. Vytvoření nového projektu s **souboru** > **nový** > **projektu**, vyberete **aplikace v Pythonu** Šablona. V souboru kódu, který se zobrazí vložte následující kód, který vytvoří pouze v tomto případě promítají graficky kosinus wave jako předchozí kurz kroky:
 

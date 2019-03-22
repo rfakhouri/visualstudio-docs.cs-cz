@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1cac22ddf4d1f0b61ae176649d562306a4343df7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 156a839b015d8b8e16a7d047444ef01053400593
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774354"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355348"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Označte členy jako statické
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1822: Označte členy jako statické](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1822: Označte členy jako statické](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1822:
 |Kategorie|Microsoft.Performance|  
 |Narušující změna|Bez konce – Pokud člen není viditelný mimo sestavení, bez ohledu na změnu provedete. Pevné – Pokud stačí změnit na instanci členu s člena `this` – klíčové slovo.<br /><br /> Zásadní - li změnit člena z člena instance statického členu a je viditelný mimo sestavení.|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Člen, který není přístup k datům instance není označen jako statické (sdílené v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
   
 ## <a name="rule-description"></a>Popis pravidla  

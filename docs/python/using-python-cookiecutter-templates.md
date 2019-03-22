@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14482019ceb3e7d717592923b4e6b59eacc0eba2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957975"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354739"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Použití rozšíření Cookiecutter
 
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) poskytuje grafické uživatelské rozhraní pro zjišťování šablony, zadejte možnosti šablony a vytváření projektů a souborů. Je součástí sady Visual Studio 2017 a je možné nainstalovat odděleně v dřívějších verzích sady Visual Studio.
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) poskytuje grafické uživatelské rozhraní pro zjišťování šablony, zadejte možnosti šablony a vytváření projektů a souborů. Je součástí sady Visual Studio 2017 a novější a je možné nainstalovat odděleně v dřívějších verzích sady Visual Studio.
 
 Cookiecutter vyžaduje Python 3.3 nebo novější (32bitové nebo 64bitové) nebo pro platformu Anaconda 3 4.2 nebo novější (32bitová nebo 64bitová verze). Pokud není k dispozici vhodný interpret Pythonu, Visual Studio zobrazí upozornění. Pokud je spuštěna sada Visual Studio, nainstalujte interpret Pythonu, klikněte na tlačítko **Domů** tlačítko na panelu nástrojů Cookiecutter k detekci na nově nainstalovaný překladač. (Viz [prostředí Pythonu](managing-python-environments-in-visual-studio.md) pro další informace o prostředích obecně.)
 

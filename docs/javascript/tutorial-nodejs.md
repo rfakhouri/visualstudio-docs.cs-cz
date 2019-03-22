@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6775f2fc24672c2bd7b798869085ea8e6170f21c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070318"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355562"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a Express aplikace v sadě Visual Studio
 
@@ -75,15 +75,13 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující kód pro Node.js a exp
 
 1. Otevřít Visual Studio.
 
-1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
-
 1. Vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    V **vytvořte nový projekt** dialogovém okně **javascript** do vyhledávacího pole filtrovat výsledky a pak zvolte **aplikace základní Azure Node.js Express 4**a klikněte na tlačítko **OK**.
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Node.js**, klikněte na tlačítko **vytvořit novou aplikaci základní Azure Node.js Express 4** (JavaScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **aplikace základní Azure Node.js Express 4**, klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **aplikace základní Azure Node.js Express 4**, klikněte na tlačítko **OK**.
     ::: moniker-end
     Pokud se nezobrazí **aplikace základní Azure Node.js Express 4** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
 

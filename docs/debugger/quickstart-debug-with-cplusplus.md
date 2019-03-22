@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 97435248878fdb4c5f0b257f6a45155c58a62872
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151242"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354976"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Rychlý start: Ladění v C++ pomocí ladicího programu sady Visual Studio
 
@@ -25,13 +25,13 @@ Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které v
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
-1. V sadě Visual Studio, zvolte **soubor > Nový > projekt**.
+1. Otevřít Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    **Vytvořte nový projekt** zobrazí se dialogové okno. Typ **asp.net** do vyhledávacího pole filtrovat výsledky, zvolte **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **Další**. Zadejte název, například **MyDbgApp** a zvolte **vytvořit**.
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **c ++**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt konzolové aplikace**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **Nový projekt** zobrazí se dialogové okno. V části **Visual C++**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace Windows**. Zadejte název, například **MyDbgApp** a klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C++**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **konzoly Windows Aplikace**. Zadejte název, například **MyDbgApp** a klikněte na tlačítko **OK**.
     ::: moniker-end
 
     Pokud se nezobrazí **Konzolová aplikace Windows** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.

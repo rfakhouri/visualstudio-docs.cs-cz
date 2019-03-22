@@ -14,17 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4576806131572c3bb7875748fead51327d3d718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 111e3204224f1124476ab2a324df7be2b6ef2525
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804829"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354827"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: Náročná metoda GetHashCode
+# <a name="da0010-expensive-gethashcode"></a>DA0010: Náročná funkce GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0010: Náročná metoda GetHashCode](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0010: Náročná metoda GetHashCode](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode) na webu docs.microsoft.com.  
 
   
 
@@ -36,7 +36,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [DA0010:
 |Zpráva|Funkce GetHashCode by měly být levné a nepřidělovat paměti. Pokud je to možné snížit složitost funkce hodnoty hash.|  
 |Typ zprávy|Upozornění|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Volání metody GetHashCode typu jsou podstatnou část dat profilování nebo metodu přidělí paměť.  
   
 ## <a name="rule-description"></a>Popis pravidla  

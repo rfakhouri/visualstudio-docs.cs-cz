@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 869e60bf736f792255d36d83c9d9b06d20e67f02
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069590"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355257"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Rychlý start: Vytvoření první aplikace pro Vue.js pomocí sady Visual Studio
 
@@ -56,15 +56,13 @@ Nejprve vytvoříte projekt Vue.js webové aplikace.
 
 1. Otevřít Visual Studio.
 
-1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
-
 1. Vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    V **vytvořte nový projekt** dialogovém okně **javascript** nebo **typescript** do vyhledávacího pole filtrovat výsledky a pak zvolte **základní Vue.js webu aplikace**a klikněte na tlačítko **OK**.
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Vue.js**, klikněte na tlačítko **základní Vue.js webovou aplikaci** (JavaScript nebo TypeScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **základní Vue.js webovou aplikaci**, klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **JavaScript** nebo **TypeScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **základní Vue.js webovou aplikaci**, klikněte na tlačítko **OK**.
     ::: moniker-end
     Pokud se nezobrazí **základní Vue.js webové aplikace** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
 

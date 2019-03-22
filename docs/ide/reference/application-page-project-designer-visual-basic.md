@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223270"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355199"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Stránka Aplikace, návrhář projektu (Visual Basic)
 
@@ -59,7 +59,7 @@ Informace o tom, jak programově přístup k této vlastnosti naleznete v témat
 
 Určuje verzi rozhraní .NET Framework, který aplikace cílí. Tato možnost může mít různé hodnoty v závislosti na nainstalovaných verzí rozhraní .NET Framework v počítači.
 
-Výchozí hodnota se shoduje s cílovou architekturu, která jste zadali v **nový projekt** dialogové okno.
+Výchozí hodnota odpovídá cílovou architekturu, který jste zadali při vytváření projektu.
 
 > [!NOTE]
 > Požadované balíčky, které jsou uvedeny v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky, když otevřete dialogové okno poprvé. Pokud později změníte cílový rámec projektu, je nutné zadat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.

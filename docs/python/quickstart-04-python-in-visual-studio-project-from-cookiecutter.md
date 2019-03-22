@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8aaa1c3d4164946c43dbd40264838d84e4fd2dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843101"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355127"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Rychlý start: Vytvoření projektu ze šablony Cookiecutter
 
-Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-python-support-in-visual-studio.md), je snadné vytvořit nový projekt ze šablony Cookiecutter, včetně množství, které se publikují do Githubu. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) poskytuje grafické uživatelské rozhraní pro zjišťování šablony, zadejte možnosti šablony a vytváření projektů a souborů. Je součástí sady Visual Studio 2017 a je možné nainstalovat odděleně v dřívějších verzích sady Visual Studio.
+Jakmile [nainstalována podpora Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md), je snadné vytvořit nový projekt ze šablony Cookiecutter, včetně množství, které se publikují do Githubu. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) poskytuje grafické uživatelské rozhraní pro zjišťování šablony, zadejte možnosti šablony a vytváření projektů a souborů. Je součástí sady Visual Studio 2017 a novější a je možné nainstalovat odděleně v dřívějších verzích sady Visual Studio.
 
 1. Pro účely tohoto rychlého startu nejprve nainstalujte distribuční Anaconda3 Python, který obsahuje potřebné balíčky Pythonu pro šablony Cookiecutter je vidět tady. Spusťte instalační program sady Visual Studio, vyberte **změnit**, rozbalte možnosti pro **vývoj v jazyce Python** na pravé straně a vyberte **Anaconda3** (32bitová nebo 64bitová verze). Všimněte si, že instalace může trvat delší dobu v závislosti na rychlosti Internetu, ale toto je nejjednodušší způsob, jak nainstalovat potřebné balíčky.
 

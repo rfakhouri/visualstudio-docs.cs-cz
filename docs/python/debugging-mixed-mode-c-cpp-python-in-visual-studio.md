@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8bba4541f27a64f553c985f50dbe535b82440cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916827"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355231"
 ---
 # <a name="debug-python-and-c-together"></a>Společně ladění Pythonu a C++
 
@@ -57,13 +57,13 @@ Funkce ladění ve smíšeném režimu patří, jak je popsáno v tomto článku
 
     Je možné vybrat jiné typy kódu kromě nebo namísto něj **nativní**. Například pokud spravované aplikace hostuje CPython, které v důsledku využívá nativní rozšiřující moduly a chcete ladit všechny tři, můžete zkontrolovat **Python**, **nativní**, a **spravované**společně sjednocené prostředí pro ladění včetně kombinované volání zásobníků a krokování mezi všechny tři moduly runtime.
 
-1. Při zahájení ladění ve smíšeném režimu poprvé, může se zobrazit **vyžaduje symboly Pythonu** dialogového okna (naleznete v tématu [symboly pro ladění ve smíšeném režimu](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Je potřeba nainstalovat symboly pouze jednou pro jakékoli dané prostředí Pythonu. Symboly budou zahrnuty automaticky, pokud instalujete podporu Pythonu pomocí instalačního programu sady Visual Studio 2017.
+1. Při zahájení ladění ve smíšeném režimu poprvé, může se zobrazit **vyžaduje symboly Pythonu** dialogového okna (naleznete v tématu [symboly pro ladění ve smíšeném režimu](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Je potřeba nainstalovat symboly pouze jednou pro jakékoli dané prostředí Pythonu. Symboly budou zahrnuty automaticky, pokud instalujete podporu Pythonu pomocí instalačního programu sady Visual Studio (Visual Studio 2017 a novější).
 
 1. K dispozici zdrojový kód pro standardní Python samotné ladění, navštivte [ https://www.python.org/downloads/source/ ](https://www.python.org/downloads/source/), stáhněte archiv odpovídá vaší verzi a rozbalte ho do složky. Můžete pak bodu vás vyzve k sadě Visual Studio na konkrétní soubory v této složce na cokoli, co bod.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Povolit ladění ve smíšeném režimu v projektu jazyka C/C++
 
-Visual Studio 2017 (verze 15.5 a vyšší) podporuje kombinovaný režim ladění z projektu jazyka C/C++ (například když [vkládání Python v jiné aplikaci, jak je popsáno na webu python.org](https://docs.python.org/3/extending/embedding.html)). Pokud chcete povolit ladění ve smíšeném režimu, konfigurace projektu jazyka C/C++ ke spuštění **Python/nativní ladění**:
+Visual Studio (2017 verze 15.5 nebo novější) podporuje pracující v kombinovaném režimu ladění z projektu jazyka C/C++ (například když [vkládání Python v jiné aplikaci, jak je popsáno na webu python.org](https://docs.python.org/3/extending/embedding.html)). Pokud chcete povolit ladění ve smíšeném režimu, konfigurace projektu jazyka C/C++ ke spuštění **Python/nativní ladění**:
 
 1. Klikněte pravým tlačítkem na projekt C/C++ v **Průzkumníka řešení** a vyberte **vlastnosti**.
 1. Vyberte **ladění** kartu, vyberte možnost **Python/nativní ladění** z **ladicí program ke spuštění**a vyberte **OK**.

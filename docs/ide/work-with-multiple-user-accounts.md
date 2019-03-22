@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933389"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355325"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 
@@ -55,7 +55,7 @@ Při příštím otevření **Průzkumníka serveru**, se zobrazí prostředky p
 
 Azure Active Directory (AAD) umožňuje podporu pro koncového uživatele jednotné přihlašování do webové aplikace ASP.NET MVC nebo ověřování AD v rámci služeb webových rozhraní API. Ověření domény se liší od účtu ověřování jednotlivých uživatelů. Uživatelé, kteří mají přístup k vaší doméně služby Active Directory můžete použít své stávající účty AAD pro připojení k webovým aplikacím. Aplikace Office 365 můžete také použít ověřování domény.
 
-Tento údaj zobrazíte v akci, vytvořte webovou aplikaci (**souboru** > **nový projekt** > **jazyka C#** > **cloudu**  >  **Webové aplikace ASP.NET**). V **nový projekt ASP.NET** dialogovém okně zvolte **změna ověřování**. Průvodce ověřením se zobrazí a můžete zvolit jaký typ ověřování, který má použít v aplikaci.
+Chcete-li zobrazit toto v akci, vytvořte nový **webová aplikace ASP.NET** projektu. V **nový projekt ASP.NET** dialogovém okně zvolte **změna ověřování**. Průvodce ověřením se zobrazí a můžete zvolit jaký typ ověřování, který má použít v aplikaci.
 
 ![Změna ověřování dialogové okno pro ASP.NET](../ide/media/vs2015_change_authentication.png)
 

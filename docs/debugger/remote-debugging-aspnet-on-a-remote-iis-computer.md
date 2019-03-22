@@ -10,25 +10,34 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f84b7c461154443adcd099fa1d92c0b8fd6e9987
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d92ebc40fb61be5ddb6125799c07eee3d148551
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194856"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355497"
 ---
-# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v sadě Visual Studio 2017
+# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v sadě Visual Studio
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
 
 ![Vzdálený ladicí program komponenty](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Tato příručka vysvětluje, jak nastavit a konfigurovat Visual Studio 2017 ASP.NET Core, nasaďte ji do služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio. Vzdálené ladění ASP.NET 4.5.2, najdete v článku [vzdálené ladění ASP.NET na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Můžete také nasadit a ladit ve službě IIS pomocí Azure. Pro službu Azure App Service můžete snadno nasadit a ladění na předem nakonfigurované instance služby IIS a vzdálený ladicí program pomocí [Snapshot Debugger](../debugger/debug-live-azure-applications.md) nebo [připojování ladicího programu z Průzkumníka serveru](../debugger/remote-debugging-azure.md).
+Tato příručka vysvětluje, jak nastavit a konfigurovat Visual Studio ASP.NET Core, nasaďte ji do služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio. Vzdálené ladění ASP.NET 4.5.2, najdete v článku [vzdálené ladění ASP.NET na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Můžete také nasadit a ladit ve službě IIS pomocí Azure. Pro službu Azure App Service můžete snadno nasadit a ladění na předem nakonfigurované instance služby IIS a vzdálený ladicí program pomocí [Snapshot Debugger](../debugger/debug-live-azure-applications.md) nebo [připojování ladicího programu z Průzkumníka serveru](../debugger/remote-debugging-azure.md).
+
+## <a name="prerequisites"></a>Požadavky
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019 je nutné postupovat podle kroků uvedených v tomto článku.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 je nutné postupovat podle kroků uvedených v tomto článku.
+::: moniker-end
 
 Tyto postupy jsme otestovali na tyto konfigurace serveru:
 * Windows Server 2012 R2 a služby IIS 8
 * Windows Server 2016 a IIS 10
 
-## <a name="requirements"></a>Požadavky
+## <a name="network-requirements"></a>Síťové požadavky
 
 Ladění mezi dvěma počítači připojený prostřednictvím proxy serveru není podporováno. Ladění přes vysokou latencí nebo připojení s malou šířkou pásma, jako je například telefonického Internetu, nebo přes Internet napříč zeměmi se nedoporučuje a může selhat nebo být příliš pomalé. Úplný seznam požadavků, najdete v části [požadavky](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -40,15 +49,16 @@ Tento článek obsahuje kroky k nastavení základní konfiguraci služby IIS na
 
 * Pokud potřebujete pomoc, abyste měli jistotu, že vaše aplikace je nastavené, nasazení a fungování ve službě IIS, takže můžete ladit, postupujte podle všech kroků v tomto tématu.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Vytvoření aplikace ASP.NET Core v systému Visual Studio 2017
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Vytvoření aplikace ASP.NET Core na počítači aplikace Visual Studio
 
-1. Vytvoření nové aplikace ASP.NET Core. (**Soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET Core**).
+1. Vytvořte novou webovou aplikaci ASP.NET Core. 
 
-    V **ASP.NET Core** části šablony vyberte **webovou aplikaci**.
-
-2. Ujistěte se, že **ASP.NET Core 2.0** je vybrána, který **povolit podporu Dockeru** je **není** vybrané a že **ověřování** je nastavena na **Bez ověřování**.
-
-3. Pojmenujte projekt **MyASPApp** a klikněte na tlačítko **OK** k vytvoření nového řešení.
+    ::: moniker range=">=vs-2019"
+    V aplikaci Visual Studio 2019 zadejte **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, zvolte **šablony**, klikněte na tlačítko **vytvořit novou webovou aplikaci ASP.NET Core** . V dialogovém okně, které se zobrazí, pojmenujte projekt **MyASPApp**a klikněte na tlačítko **vytvořit**. Dále zvolte **webové aplikace (Model-View-Controller)** a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V sadě Visual Studio 2017, zvolte **soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET Core**. V části šablony ASP.NET Core, vyberte **webové aplikace (Model-View-Controller)**. Ujistěte se, že je vybraný ASP.NET Core 2.1, který **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.
+    ::: moniker-end
 
 4. Otevřete soubor About.cshtml.cs a nastavte zarážku v `OnGet` – metoda (ve starších šablonách HomeController.cs místo toho otevřít a nastavit zarážku v `About()` metoda).
 
@@ -144,7 +154,7 @@ Můžete také publikovat a nasazení aplikace pomocí systému souborů nebo ji
 
 ## <a name="BKMK_msvsmon"></a> Stáhněte a nainstalujte nástroje remote tools v systému Windows Server
 
-V tomto kurzu se používá Visual Studio 2017.
+Stáhněte si verzi nástrojů remote tools, která odpovídá verzi sady Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -165,7 +175,14 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
     > [!TIP]
     > V sadě Visual Studio 2017 a novějších verzích, se můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
 
-3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: 4022**.
+3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: port**.
+
+    ::: moniker range=">=vs-2019"
+    **\<název vzdáleného počítače >: 4024** 2019 Visual Studio
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<název vzdáleného počítače >: 4022** v sadě Visual Studio 2017
+    ::: moniker-end
 4. Klikněte na tlačítko **aktualizovat**.
     Měli byste vidět některé procesy, které se zobrazí v **procesy k dispozici** okna.
 
@@ -197,10 +214,14 @@ Ve většině nastavení jsou otevřené požadované porty instalace technologi
 
 Požadované porty:
 
-- 80 – požadováno pro službu IIS
-- 4022 – požadováno pro vzdálené ladění ze sady Visual Studio 2017 (viz [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md) podrobné informace.
-- 8172 – (volitelné) požadované pro nasazení webu k nasazování aplikací ze sady Visual Studio.
-- UDP 3702 – port (volitelné) zjišťování umožňuje **najít** tlačítko při připojování vzdáleného ladicího programu v sadě Visual Studio.
+* 80 – požadováno pro službu IIS
+::: moniker range=">=vs-2019"
+* 4024 – požadováno pro vzdálené ladění z Visual Studio 2019 (viz [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md) Další informace).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 – požadováno pro vzdálené ladění ze sady Visual Studio 2017 (viz [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md) Další informace).
+::: moniker-end
+* UDP 3702 – port (volitelné) zjišťování umožňuje **najít** tlačítko při připojování vzdáleného ladicího programu v sadě Visual Studio.
 
 1. Chcete-li otevřít port v systému Windows Server, otevřete **spustit** nabídky, vyhledejte **brány Windows Firewall s pokročilým zabezpečením**.
 

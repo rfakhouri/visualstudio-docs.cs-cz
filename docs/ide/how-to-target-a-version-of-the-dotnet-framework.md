@@ -1,6 +1,6 @@
 ---
 title: Cílení na určitou verzi rozhraní .NET Framework
-ms.date: 02/06/2018
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -10,41 +10,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc8a808ba3a5da46b4dbe3be3aa00921ea869cb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba8bdcade321c3660e89ab6b7cf6e0b79471b393
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954085"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355389"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: Cílení na verzi rozhraní .NET Framework
 
-Tento dokument popisuje, jak cílení na určitou verzi rozhraní .NET Framework, když vytvoříte projekt a jak změnit cílenou verzi v jazyce Visual Basic se existující C#, nebo Visual F# projektu.
+Tento článek popisuje, jak cílení na určitou verzi rozhraní .NET Framework při vytváření projektu. Také popisuje, jak změnit cílenou verzi v jazyce Visual Basic se existující C#, nebo F# projektu.
 
 > [!IMPORTANT]
 > Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-## <a name="to-target-a-version-when-you-create-a-project"></a>Cílení na určitou verzi při vytváření projektu
+## <a name="target-a-version-when-you-create-a-project"></a>Cílení na určitou verzi při vytváření projektu
 
-Když vytvoříte projekt, k dispozici verze rozhraní .NET Framework závisí na jaké verze jsou nainstalovány a vybrané šablony v **nový projekt** dialogové okno.
+Při vytváření projektu k dispozici verze rozhraní .NET Framework závisí na jaké verze jsou nainstalovány a v šabloně zvoleného projektu.
 
 1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-1. V seznamu nainstalovaných šablon zvolte typ projektu, který chcete vytvořit a zadejte název projektu.
+1. Vyberte šablonu pro typ projektu, který chcete vytvořit. Zadejte název projektu.
 
-1. Z **Framework** rozevírací seznam v dolní části **nový projekt** dialogového okna zvolte verzi rozhraní .NET Framework, který má váš projekt zaměřit.
+1. Z **Framework** rozevírací seznam v dolní části dialogového okna zvolte verzi rozhraní .NET Framework, který má váš projekt zaměřit.
 
-    Tento seznam rozhraní obsahuje pouze verze, které se vztahují na šablonu, kterou jste zvolili. Některé typy projektů, jako je .NET Core, nevyžadují, aby rozhraní .NET Framework. V takových případech **Framework** rozevíracího seznamu je skrytá.
+   Tento seznam rozhraní obsahuje pouze verze, které se vztahují na šablonu, kterou jste zvolili. Některé typy projektů, jako je .NET Core, nevyžadují, aby rozhraní .NET Framework. V takových případech **Framework** rozevíracího seznamu je skrytá.
 
-    ![Rozhraní Framework rozevírací seznam v dialogovém okně Nový projekt](media/vside-newproject-framework.png)
+   ::: moniker range="vs-2017"
 
-1. Zvolte **OK** tlačítko.
+   ![Rozhraní Framework rozevírací seznam v dialogovém okně Nový projekt](media/vside-newproject-framework.png)
 
-## <a name="to-change-the-targeted-version"></a>Změna cílené verze
+   ::: moniker-end
 
-Můžete změnit cílovou verzi rozhraní .NET Framework v jazyce Visual Basic C#, nebo Visual F# projekt pomocí tohoto postupu.
+   ::: moniker range=">=vs-2019"
 
-Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+   ![Selektor Framework v VS 2019](media/vs-2019/configure-new-project-framework.png)
+
+   ::: moniker-end
+
+1. Pokračujte [vytvořit projekt](create-new-project.md).
+
+## <a name="change-the-targeted-version"></a>Změnit cílovou verzi
+
+Můžete změnit cílovou verzi rozhraní .NET Framework v jazyce Visual Basic C#, nebo F# projekt pomocí tohoto postupu.
 
 1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete změnit a klikněte na tlačítko **vlastnosti**.
 

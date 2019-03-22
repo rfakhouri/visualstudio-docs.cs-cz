@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869360"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355432"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalace interpretů Pythonu symboly pro ladění
 
 Zajištění úplného ladicího prostředí [ladicí program Pythonu ve smíšeném režimu](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) v sadě Visual Studio potřebuje ladění symbolů pro interpret Pythonu se použije k parsování mnoha interních datových struktur. Pro *python27.dll*, je třeba odpovídající souboru symbolů *python27.pdb*; pro *python36.dll*, je soubor symbolů *python36.pdb*. Každou verzi interpreta také poskytuje soubory symbolů pro celou řadu modulů.
 
-Pomocí sady Visual Studio 2017 interpretů Pythonu 3 a 3 programu Anaconda automaticky instalovat jejich odpovídajících symbolů a sady Visual Studio automaticky vyhledá tyto symboly. Pro Visual Studio 2015 a starší nebo při použití jiných interprety, budete muset stáhnout symboly samostatně a pak k nim prostřednictvím sady Visual Studio **nástroje** > **možnosti** dialogového okna v **ladění** > **symboly** kartu. Tyto kroky jsou podrobně popsané v následujících částech.
+Pomocí sady Visual Studio 2017 nebo novější interpretů Pythonu 3 a 3 programu Anaconda automaticky instalovat jejich odpovídajících symbolů a sady Visual Studio automaticky vyhledá tyto symboly. Pro Visual Studio 2015 a starší nebo při použití jiných interprety, budete muset stáhnout symboly samostatně a pak k nim prostřednictvím sady Visual Studio **nástroje** > **možnosti** dialogového okna v **ladění** > **symboly** kartu. Tyto kroky jsou podrobně popsané v následujících částech.
 
 Visual Studio může výzvu, když je nutné symboly, obvykle při spuštění relace ladění ve smíšeném režimu. V takovém případě se zobrazí dialogové okno s dvě možnosti:
 

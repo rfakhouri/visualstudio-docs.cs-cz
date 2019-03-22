@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 88717998e22ffad028ce3fd7e0a2304de3e779d6
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 547c92cdb892c3a087301fb527d069dacfaccd8e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323560"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355450"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurace webové aplikace v Pythonu pro službu IIS
 
@@ -37,7 +37,7 @@ Při používání vyhrazeného hostitele, můžete použít globální prostře
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Nastavení web.config tak, aby odkazoval na interpret Pythonu
 
-Vaše aplikace *web.config* souboru nastaví na webovém serveru IIS (7 +), o jak zpracovávat požadavky Python prostřednictvím HttpPlatform (doporučeno) nebo rozhraní FastCGI a systémem Windows. Verzí sady Visual Studio 2015 a starší, proveďte tyto úpravy automaticky. Když pomocí sady Visual Studio 2017, je třeba upravit *web.config* ručně.
+Vaše aplikace *web.config* souboru nastaví na webovém serveru IIS (7 +), o jak zpracovávat požadavky Python prostřednictvím HttpPlatform (doporučeno) nebo rozhraní FastCGI a systémem Windows. Verzí sady Visual Studio 2015 a starší, proveďte tyto úpravy automaticky. Když pomocí sady Visual Studio 2017 nebo novější, je třeba upravit *web.config* ručně.
 
 ### <a name="configure-the-httpplatform-handler"></a>Konfigurace HttpPlatform obslužné rutiny
 

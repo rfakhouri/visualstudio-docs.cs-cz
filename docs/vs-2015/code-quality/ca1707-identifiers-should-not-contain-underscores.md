@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9a28e0defae3df035d69065337b35d56fcdba75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8ae59f396115f10a858c5bc31d8bcdbf967d1d80
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764698"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355101"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identifikátory by neměly obsahovat podtržítka
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1707: Identifikátory by neměly obsahovat podtržítka](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1707: Identifikátory by neměly obsahovat podtržítka](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA1707:
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní – při aktivaci pro sestavení<br /><br /> Bez konce – při aktivaci pro parametry typu|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Název identifikátoru obsahuje znak podtržítka (_).  
   
 ## <a name="rule-description"></a>Popis pravidla  

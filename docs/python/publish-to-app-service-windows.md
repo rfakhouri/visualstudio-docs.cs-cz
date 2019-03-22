@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 758f7549eeb1726b13da31a96b4c006194da6ee6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713539"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355312"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publikování do služby Azure App Service ve Windows
 
@@ -25,10 +25,10 @@ ms.locfileid: "56713539"
 
 Visual Studio poskytuje možnost publikovat webovou aplikaci Python přímo do Azure App Service na Windows. Publikování do služby Azure App Service na Windows znamená, že zkopírujete potřebné soubory na serveru a nastavení odpovídající `web.config` soubor, který se dá pokyn webového serveru, jak pro spuštění vaší aplikace.
 
-Proces publikování se liší mezi Visual Studio 2017 a Visual Studio 2015. Konkrétně, Visual Studio 2015 automatizuje některé z kroků, včetně vytváření `web.config`, ale tato automatizace omezuje dlouhodobé flexibility a kontroly. Visual Studio 2017 vyžaduje další ruční kroky, ale zajišťuje přesnější kontrolu nad prostředí Pythonu. Obě možnosti jsou popsány zde.
+Proces publikování se liší mezi Visual Studio 2017 a novější a Visual Studio 2015. Konkrétně, Visual Studio 2015 automatizuje některé z kroků, včetně vytváření `web.config`, ale tato automatizace omezuje dlouhodobé flexibility a kontroly. Visual Studio 2017 nebo novější vyžaduje další ruční kroky, ale zajišťuje přesnější kontrolu nad prostředí Pythonu. Obě možnosti jsou popsány zde.
 
 > [!Note]
-> Informace o změny mezi Visual Studio 2015 a Visual Studio 2017, najdete v blogovém příspěvku, [publikovat do Azure v sadě Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
+> Informace o změny mezi Visual Studio 2015 a Visual Studio 2017 nebo novější, najdete v blogovém příspěvku, [publikovat do Azure v sadě Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -71,13 +71,13 @@ Vytvořte dočasný službu App Service bez předplatného Azure následujícím
 
 ## <a name="configure-python-on-azure-app-service"></a>Konfigurace Pythonu ve službě Azure App Service
 
-Jakmile budete mít služby App Service s prázdnou webovou aplikací běžící (buď v rámci vašeho předplatného, nebo na bezplatné webu), nainstalujte zvolené verzi jazyka Python, jak je popsáno [Správa Pythonu ve službě Azure App Service](managing-python-on-azure-app-service.md). Publikování ze sady Visual Studio 2017, zaznamenejte přesnou cestu k interpretu Pythonu nainstalována s rozšířením webu, jak je popsáno v tomto článku.
+Jakmile budete mít služby App Service s prázdnou webovou aplikací běžící (buď v rámci vašeho předplatného, nebo na bezplatné webu), nainstalujte zvolené verzi jazyka Python, jak je popsáno [Správa Pythonu ve službě Azure App Service](managing-python-on-azure-app-service.md). Publikování ze sady Visual Studio 2017 a novějších verzích záznam přesnou cestu k interpretu Pythonu nainstalována s rozšířením webu, jak je popsáno v tomto článku.
 
 V případě potřeby můžete také nainstalovat `bottle` balíček pomocí procesu v těchto pokynech, protože tento balíček nainstaluje jako součást jiné kroky v tomto názorném postupu.
 
-## <a name="publish-to-app-service---visual-studio-2017"></a>Publikování do služby App Service – Visual Studio 2017
+## <a name="publish-to-app-service---visual-studio-2017-and-later"></a>Publikování do služby App Service – Visual Studio 2017 a novější
 
-Publikování do služby Azure App Service ze sady Visual Studio 2017 kopií pouze soubory v projektu na serveru. Je proto nutné, vytvořit soubory potřebné ke konfiguraci prostředí serveru.
+Publikování do služby Azure App Service ze sady Visual Studio 2017 a novější kopie pouze soubory v projektu na serveru. Je proto nutné, vytvořit soubory potřebné ke konfiguraci prostředí serveru.
 
 1. V **Průzkumníku řešení** sady Visual Studio klikněte pravým tlačítkem na projekt a vyberte **Přidat > Nová položka**. V zobrazeném dialogovém okně vyberete šablonu "Web.config pro Azure (Fast CGI)" a vyberte OK. Tím se vytvoří `web.config` souboru v kořenovém adresáři projektu.
 
@@ -143,11 +143,11 @@ Publikování do služby Azure App Service ze sady Visual Studio 2017 kopií pou
 
     a. Ve vlastním předplatném Azure: vyberte **Microsoft Azure App Service**, pak **vybrat existující** následovaný **publikovat**. Zobrazí se dialogové okno, ve kterém můžete vybrat odpovídající předplatné a služby app service. Pokud není zobrazená služby App Service, použijte stažený profil publikování, jak je popsáno níže pro dočasné službu APp Service.
 
-    ![Publikování do Azure – krok 1, Visual Studio 2017 na stávající předplatná](media/tutorials-common-publish-1a-2017.png)
+    ![Publikování do Azure – krok 1, Visual Studio 2017 a novější, stávající předplatné](media/tutorials-common-publish-1a-2017.png)
 
     b. Pokud používáte dočasné služby App Service na try.azurewebsites.net nebo jinak budete muset použít profil publikování, vyberte **>** ovládacího prvku najít **importovat profil**, vyberte tuto možnost, pak Vyberte **publikovat**. Tento parametr vyzve k zadání umístění `.publishsettings` soubor předtím stáhli.
 
-    ![Publikování do Azure – krok 1, Visual Studio 2017, dočasné app service](media/tutorials-common-publish-1b-2017.png)
+    ![Publikování do Azure – krok 1, Visual Studio 2017 a novější, dočasné app service](media/tutorials-common-publish-1b-2017.png)
 
 1. Visual Studio zobrazí stav publikování v okně "Web publikovat aktivity" a v okně Publikovat. Po dokončení publikování se otevře výchozí prohlížeč na adresu URL webu. Adresa URL se také zobrazí v okně Publikovat.
 

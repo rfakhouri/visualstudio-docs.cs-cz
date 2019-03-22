@@ -1,8 +1,8 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
-description: 'Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.'
+title: Produkty Visual Studio | Dokumentace Microsoftu
+description: Prozkoumejte rodiny produktů Visual Studio.
 ms.topic: landing-page
 searchScope: []
 ---

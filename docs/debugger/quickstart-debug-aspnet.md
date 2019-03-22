@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58153012"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354840"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Rychlý start: Ladění technologie ASP.NET v ladicím programu sady Visual Studio
 
@@ -25,13 +25,13 @@ Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které v
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
-1. V sadě Visual Studio, zvolte **soubor > Nový > projekt**.
+1. Otevřít Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    **Vytvořte nový projekt** zobrazí se dialogové okno. Typ **asp.net** do vyhledávacího pole filtrovat výsledky, zvolte **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **Další**. Zadejte název, například **MyDbgApp** a zvolte **vytvořit**.
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, zvolte **šablony**, klikněte na tlačítko **vytvořit novou webovou aplikaci ASP.NET Core**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **Nový projekt** zobrazí se dialogové okno. V části **Visual C#**, zvolte **webové**a potom v prostředním podokně vyberte **webové aplikace ASP.NET Core**. Zadejte název, například **MyDbgApp** a klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C#** , zvolte **webové**a potom v prostředním podokně vyberte **webové aplikace ASP.NET Core Aplikace**. Zadejte název, například **MyDbgApp** a klikněte na tlačítko **OK**.
 
     V dialogovém okně, které se zobrazí, zvolte **webovou aplikaci** v prostředním podokně a pak klikněte na tlačítko **OK**.
 

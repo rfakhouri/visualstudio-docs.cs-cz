@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 86900b525489c5f1ae487e89fdb6d848c4fc425a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428775"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355588"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Kurz: Další informace k ladění kódu jazyka C++ pomocí sady Visual Studio
 
@@ -37,32 +37,35 @@ V tomto kurzu se naučíte:
 
 ::: moniker range=">=vs-2019"
 
-* Musíte mít Visual Studio 2019 nainstalovaný a **vývoj desktopových aplikací pomocí C++** pracovního vytížení.
+Musíte mít Visual Studio 2019 nainstalovaný a **vývoj desktopových aplikací pomocí C++** pracovního vytížení.
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-* Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj desktopových aplikací pomocí C++** pracovního vytížení.
+Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj desktopových aplikací pomocí C++** pracovního vytížení.
 
 ::: moniker-end
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
 
-Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **souboru**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
+Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-1. V sadě Visual Studio, zvolte **soubor > Nový projekt**.
+1. Otevřít Visual Studio.
 
-2. V části **Visual C++**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace Windows**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **c ++**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt konzolové aplikace**. V dialogovém okně, které se zobrazí, zadejte název, například **get spuštění – ladění**a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C++**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **konzoly Windows Aplikace**. Zadejte název, například **MyDbgApp** a klikněte na tlačítko **OK**.
+    ::: moniker-end
 
-    Pokud se nezobrazí **Konzolová aplikace Windows** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
-
-3. Zadejte název, například **get spuštění – ladění** a klikněte na tlačítko **OK**.
+    Pokud se nezobrazí **Konzolová aplikace Windows** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
 
     Visual Studio vytvoří projekt.
 
-4. V *get spuštění debugging.cpp*, nahraďte následující kód
+1. V *get spuštění debugging.cpp*, nahraďte následující kód
 
     ```c++
     int main()

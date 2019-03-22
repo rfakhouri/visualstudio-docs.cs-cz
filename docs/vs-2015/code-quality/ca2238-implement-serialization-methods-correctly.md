@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c23402571cf8b35598d9da2601c3415c3768b862
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 26d9c23ef8da970a29057c0e299d5b8d12dda524
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776868"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354999"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementujte správně metody serializace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA2238: Implementujte správně metody serializace](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) na webu docs.microsoft.com.  
+Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA2238: Implementujte správně metody serializace](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) na webu docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA2238:
 |Kategorie|Microsoft.Usage|  
 |Narušující změna|Rozdělení - metoda je viditelná mimo sestavení.<br /><br /> Pevné – Pokud metoda není viditelná mimo sestavení.|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Metoda, která zpracovává událost serializace, nemá správný podpis, návratový typ nebo viditelnost.  
   
 ## <a name="rule-description"></a>Popis pravidla  
