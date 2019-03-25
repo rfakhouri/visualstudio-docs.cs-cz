@@ -50,7 +50,7 @@ items:
     href: run-a-unit-test-as-a-64-bit-process.md
   - name: Konfigurace testování částí s použitím souboru .runsettings
     href: configure-unit-tests-by-using-a-dot-runsettings-file.md
-  - name: Psaní testů jednotek pro spravovaný kód
+  - name: Zápis testů jednotek pro spravovaný kód
     items:
     - name: 'Návod: Vytváření a spouštění testů jednotek pro spravovaný kód'
       href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
@@ -80,7 +80,7 @@ items:
       href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: Ukázkový projekt pro vytvoření testů jednotek
       href: sample-project-for-creating-unit-tests.md
-  - name: Psaní testů jednotek pro kód C/C++
+  - name: Zápis testů jednotek pro kód C/C++
     href: writing-unit-tests-for-c-cpp.md
     items:
     - name: Použití architektury Microsoft pro testování jednotek pro jazyk C++
@@ -91,7 +91,7 @@ items:
       href: how-to-use-boost-test-for-cpp.md
     - name: Použití testu CTest
       href: how-to-use-ctest-for-cpp.md
-    - name: Psaní testů jednotek pro knihovny DLL jazyka C/C++
+    - name: Zápis testů jednotek pro knihovny DLL jazyka C/C++
       href: how-to-write-unit-tests-for-cpp-dlls.md
     - name: 'Návod: Psaní testů jednotek pro knihovny DLL v jazyce C++'
       href: walkthrough-writing-unit-tests-for-cpp-dlls.md
@@ -112,8 +112,6 @@ items:
       href: customizing-code-coverage-analysis.md
     - name: Řešení problémů s pokrytím kódu
       href: troubleshooting-code-coverage.md
-  - name: Izolace testů částí aplikací pro SharePoint 2010 pomocí emulátorů
-    href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
 - name: Live Unit Testing
   href: live-unit-testing-intro.md
   items:
@@ -339,8 +337,6 @@ items:
     href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
   - name: Použití ovládacích prvků HTML5 v programových testech uživatelského rozhraní
     href: using-html5-controls-in-coded-ui-tests.md
-  - name: Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní
-    href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
   - name: Vytvoření datově řízeného programového testu uživatelského rozhraní
     href: creating-a-data-driven-coded-ui-test.md
   - name: Čekání na konkrétní události při přehrávání
@@ -370,9 +366,9 @@ items:
     href: lab-management/use-build-or-rm-instead-of-lab-management.md
   - name: Instalace testovacích agentů a kontrolerů testů
     href: lab-management/install-configure-test-agents.md
-ms.openlocfilehash: c361abfb14ec9c89054b08d561c11e060d05a6af
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d63258d61d94ca52208b89267b92743e95d3664c
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223790"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416276"

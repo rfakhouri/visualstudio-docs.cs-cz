@@ -74,12 +74,6 @@ items:
       href: add-custom-architecture-validation-to-layer-diagrams.md
     - name: Přidání vlastních vlastností do diagramů závislostí
       href: add-custom-properties-to-layer-diagrams.md
-    - name: Procházení a aktualizace modelů závislostí v programovém kódu
-      href: navigate-and-update-layer-models-in-program-code.md
-    - name: Nasazení rozšíření pro modelování závislostí
-      href: deploy-a-layer-model-extension.md
-    - name: Řešení potíží s rozšířeními pro diagramy závislostí
-      href: troubleshoot-extensions-for-layer-diagrams.md
   - name: Sada Modeling SDK pro sadu Visual Studio – jazyky domény
     href: modeling-sdk-for-visual-studio-domain-specific-languages.md
     items:
@@ -115,8 +109,6 @@ items:
         href: customizing-element-creation-and-movement.md
       - name: Přizpůsobení chování kopírování
         href: customizing-copy-behavior.md
-      - name: Přizpůsobení chování odstranění
-        href: customizing-deletion-behavior.md
       - name: Přizpůsobení okna Vlastnosti
         href: customizing-the-properties-window.md
       - name: Přizpůsobení Průzkumníka modelů
@@ -177,8 +169,6 @@ items:
         href: adding-extensions-to-dsl-definitions.md
       - name: Přidání vlastnosti sledování do definice jazyka specifického pro doménu
         href: adding-a-tracking-property-to-a-domain-specific-language-definition.md
-      - name: Ladění pomocí Prohlížeče úložiště
-        href: debugging-by-using-the-store-viewer.md
       - name: Soubor DslDefinition.dsl
         href: the-dsldefinition-dsl-file.md
       - name: Vysvětlení kódu DSL
@@ -198,8 +188,6 @@ items:
         href: how-to-intercept-a-click-on-a-shape-or-decorator.md
       - name: Přístup k aktuálnímu výběru a jeho omezení
         href: how-to-access-and-constrain-the-current-selection.md
-      - name: Přizpůsobení nástrojů elementu
-        href: customizing-element-tools.md
     - name: Odpovědi na změny a jejich šíření
       href: responding-to-and-propagating-changes.md
       items:
@@ -211,8 +199,6 @@ items:
         href: rules-propagate-changes-within-the-model.md
       - name: Obslužné rutiny události šíří změny mimo model
         href: event-handlers-propagate-changes-outside-the-model.md
-      - name: Umístění a velikost obrazce omezení BoundsRules
-        href: boundsrules-constrain-shape-location-and-size.md
       - name: Aktualizace obrazců a konektorů k vyjádření modelu
         href: updating-shapes-and-connectors-to-reflect-the-model.md
     - name: Vytváření kódu z jazyka specifického pro doménu
@@ -344,9 +330,9 @@ items:
           href: walkthrough-creating-a-custom-text-template-host.md
     - name: Referenční dokumentace k rozhraní API pro textové šablony T4
       href: api-reference-for-t4-text-templates.md
-ms.openlocfilehash: 04587f1fed1b83cf8ebac8d42be9e1031c7dcf9d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 25393b9c38dc994f41d8f78dd7f8b901f4f298b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872046"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415706"
