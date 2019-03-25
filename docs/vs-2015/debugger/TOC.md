@@ -112,7 +112,7 @@
 ### [Chyba: Nemáte oprávnění ke kontrole identity procesu.](error-you-do-not-have-permission-to-inspect-the-process-s-identity.md)
 ### [Chyba: Služba Visual Studio Remote Debugger na cílovém počítači se nemůže znovu připojit k tomuto počítači.](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 ### [Chyba: Pracovní proces webu byl ukončen službou IIS.](error-web-site-worker-process-has-been-terminated-by-iis.md)
-### [Chyba: Není možné se připojit k počítači <name>. Počítač nebyl v síti nalezen.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+### [Chyba: Není možné se připojit k počítači \<název>. Počítač nebyl v síti nalezen.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 ### [Chyba: Ladění ve smíšeném režimu je podporované, jen pokud používáte rozhraní Microsoft .NET Framework 2.0 nebo vyšší.](error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md)
 ### [Chyba: Procesy IA64 nepodporují ladění ve smíšeném režimu.](error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md)
 ### [Chyba: Ladění procesů x64 ve smíšeném režimu je podporované, jen pokud používáte rozhraní Microsoft .NET Framework 4 nebo vyšší.](error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md)
