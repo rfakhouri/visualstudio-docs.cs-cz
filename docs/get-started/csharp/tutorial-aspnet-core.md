@@ -3,8 +3,9 @@ title: 'Kurz: Začínáme s C# a ASP.NET Core'
 titleSuffix: ''
 description: Zjistěte, jak vytvořit webovou aplikaci ASP.NET Core v sadě Visual Studio s C#, krok za krokem.
 ms.custom: seodec18, get-started
-ms.date: 10/29/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 7f123646ce3b702d6e76e92009eba2ef12da7626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb45386795077289e14e19ec9ad7e0071521db22
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928995"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475900"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Kurz: Začínáme s C# a ASP.NET Core v sadě Visual Studio
 
@@ -30,11 +31,21 @@ V tomto kurzu o vývoji C# s využitím ASP.NET Core pomocí sady Visual Studio 
 
 ### <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
+::: moniker range="vs-2017"
+
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) stránku a nainstalovat zdarma.
+
+::: moniker-end
 
 ### <a name="update-visual-studio"></a>Aktualizace sady Visual Studio
 
-Pokud jste již nainstalovali aplikaci Visual Studio, ujistěte se, že používáte nejnovější verzi. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizace Visual Studio 2017 na nejnovější verzi](../../install/update-visual-studio.md) stránky.
+Pokud jste již nainstalovali aplikaci Visual Studio, ujistěte se, že používáte nejnovější verzi. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizovat na nejnovější verzi aplikace Visual Studio](../../install/update-visual-studio.md) stránky.
 
 ### <a name="choose-your-theme-optional"></a>Zvolte motiv (volitelné)
 
@@ -44,9 +55,11 @@ V tomto kurzu zahrnuje snímky obrazovky, použít tmavý motiv. Pokud nepouží
 
 Nejprve vytvoříte projekt ASP.NET Core. Typ projektu obsahuje všechny soubory šablony, které budete potřebovat plně funkčním webem, než jste přidali ještě nic!
 
+::: moniker range="vs-2017"
+
 1. Otevřete Visual Studio 2017.
 
-2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
+2. V horní nabídce zvolte **souboru** > **nový** > **projektu**.
 
 3. V **nový projekt** dialogové okno v levém podokně rozbalte **Visual C#**, rozbalte **webové**a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**. Pojmenujte jej *MyCoreApp* a zvolte **OK**.
 
@@ -85,7 +98,44 @@ Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony projektu, můžet
    ![Dialogové okno nové webové aplikace ASP.NET Core](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Pokud nevidíte **ASP.NET Core 2.0** nebo později z hlavní nabídky rozevíracího seznamu, ujistěte se, že používáte nejnovější verzi sady Visual Studio. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizace Visual Studio 2017 na nejnovější verzi](../../install/update-visual-studio.md) stránky.
+   > Pokud nevidíte **ASP.NET Core 2.1** nebo později z hlavní nabídky rozevíracího seznamu, ujistěte se, že používáte nejnovější verzi sady Visual Studio. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizovat na nejnovější verzi aplikace Visual Studio](../../install/update-visual-studio.md) stránky.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. V okně start zvolte **vytvořte nový projekt**.
+
+   ![Zobrazit okno 'vytvořte nový projekt.](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na **vytvořte nový projekt** okno, zadejte nebo zadejte *ASP.NET* do vyhledávacího pole. Dále zvolte **C#** od jazyka seznamu a klikněte na tlačítko **Windows** ze seznamu platformy. 
+
+   Po použití filtrů jazyka a libovolné platformy, zvolte **webové aplikace ASP.NET Core** šablony a klikněte na tlačítko **Další**.
+
+   ![Zvolte C# šablony pro webové aplikace ASP.NET Core](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony, můžete jej nainstalovat z **vytvořte nový projekt** okna. V **nenašli, co hledáte?** zprávu, zvolte **nainstalovat další nástroje a funkce** odkaz.
+   >
+   > ![Odkaz "Nainstalovat další nástroje a funkce" z 'Nemůžete najít, co hledáte' zprávy v okně "vytvořit nový projekt.](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Pak ve Visual Studio Installer, zvolte **vývoj pro ASP.NET a web** pracovního vytížení.
+   >
+   > ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > Po tomto, zvolte **změnit** tlačítko v instalačním programu sady Visual Studio. Můžete být vyzváni k uložte svou práci; Pokud ano, udělejte to. Dále zvolte **pokračovat** instalace zatížení. Pak se vraťte ke kroku 2 v tomto "[vytvořte projekt](#create-a-project)" postup.
+
+1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *MyCoreApp* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
+
+   ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "MyCoreApp.](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+
+1. V **vytvořit novou webovou aplikaci ASP.NET Core** okna, ověřte, že **ASP.NET Core 2.1** nebo novějším se zobrazí v horní nabídce rozevíracího seznamu. Potom kliknutím na možnost **webovou aplikaci**, který obsahuje příklad stránky Razor. Dále zvolte **vytvořit**.
+
+   ![V okně "vytvořit novou webovou aplikaci ASP.NET Core.](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Visual Studio otevře nový projekt.
+
+::: moniker-end
 
 ### <a name="about-your-solution"></a>Informace o řešení
 
@@ -131,10 +181,15 @@ Toto řešení následuje **stránky Razor** vzoru návrhu. Se liší od [Model-
 
      > [!NOTE]
      > Pokud se zobrazí chybová zpráva s upozorněním **nelze se připojit k webovému serveru služby IIS Express**, zavřete sadu Visual Studio a otevřete jej pomocí **spustit jako správce** možnost v nabídce klikněte pravým tlačítkem nebo kontext. Spusťte aplikaci znovu.
+     >
+     > Může se také zobrazit zprávu s dotazem, jestli chcete přijmout certifikát SSL služby IIS Express. Chcete-li zobrazit kód ve webovém prohlížeči, zvolte **Ano**a klikněte na tlačítko **Ano** Pokud obdržíte zprávu s upozorněním zabezpečení zpracování. 
 
 1. Visual Studio otevře okno prohlížeče. Pak zobrazí **Domů**, **o**, a **kontakt** stránky v panelu nabídek. (Pokud ho nevidíte, vyberte položku "hamburgerové" nabídky si je chcete zobrazit.)
 
     ![Vyberte položku "hamburgerové" nabídky na řádku nabídek ve vaší webové aplikaci](media/csharp-aspnet-razor-browser-page.png)
+
+     > [!TIP]
+     > Pokud váš projekt je otevřen v okně prohlížeče se nedá upravit kód v editoru kódu sady Visual Studio. 
 
 1. Zvolte **o** z řádku nabídek.
 

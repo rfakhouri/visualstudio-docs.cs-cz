@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: df273b97541a0fc136346083c4d2249cfd67f3bc
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324692"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475978"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizace síťové instalace sady Visual Studio
 
@@ -102,6 +102,9 @@ Může být vyvolána vs_enterprise.exe uvnitř layoutDir.
 > Některé soubory důležitá metadata, které jsou vyžadované `--verify` možnost musí být v mezipaměti offline rozložení. Pokud tyto soubory metadat chybí, "– ověření" nelze spustit, a nabídne instalační program k chybě. Pokud k této chybě dochází, znovu vytvořte nové offline rozložení do jiné složky (nebo do stejné složky, offline mezipaměti. Provedete to tak, spusťte stejný příkaz rozložení, který jste použili k vytvoření počáteční offline rozložení. Například `Vs_enterprise.exe --layout <layoutDir>`.
 
 Microsoft pravidelně, dodává aktualizace sady Visual Studio tak nové rozložení, který vytvoříte nemusí mít stejnou verzi jako počáteční rozložení.
+
+> [!NOTE]
+> Ověření funguje pouze pro nejnovější verzi konkrétní dílčí verze sady Visual Studio. Co nejdříve po vydání nové verze, ověřování nebudou fungovat pro starší verze úrovni oprav stejné verze, podverze.
 
 ## <a name="how-to-fix-a-layout"></a>K vyřešení rozložení
 

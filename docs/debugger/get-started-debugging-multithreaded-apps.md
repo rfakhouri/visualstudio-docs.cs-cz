@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526035"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475991"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Začínáme s laděním vícevláknových aplikací (C#, Visual Basic, C++)
 
@@ -38,21 +38,33 @@ Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.
 
 ## <a name="create-a-multithreaded-app-project"></a>Vytvořte projekt aplikace s více podprocesy
 
-1.  Na **souboru** nabídce vyberte možnost **nový** > **projektu**.
+1. Otevřít Visual Studio a vytvořte nový projekt.
 
-     Zobrazí se dialogové okno **Nový projekt**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
+    
+    - Pro C# nebo Visual Basic, zvolte **vytvořit nový projekt Konzolová aplikace (.NET Framework)** buď C# nebo Visual Basic. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    - Pro jazyk C++, zvolte **vytvořit nový projekt konzolové aplikace** jazyka C++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
 
-2.  Zvolte jazyk: **Vizuální C#** , **Visual C++**, nebo **jazyka Visual Basic**.
+    Zadejte název, například **MyThreadWalkthroughApp** a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně zvolte následující:
 
-3.  V části **Windows Desktop**, zvolte **konzolovou aplikaci**.
+    - Pro C# aplikace v části **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
+    - Pro aplikace v jazyce Visual Basic v části **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
+    - Pro aplikace s C++ v rámci **Visual C++**, zvolte **Windows Desktop**a klikněte na tlačítko **Konzolová aplikace Windows**.
 
-4.  V **název** zadejte MyThreadWalkthroughApp.
+    Zadejte název, například **MyThreadWalkthroughApp** a klikněte na tlačítko **OK**.
+    ::: moniker-end
 
-5.  Vyberte **OK**.
+    Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte **vývoj desktopových aplikací .NET** nebo **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
 
-     Zobrazí se nový projekt konzoly. Po vytvoření projektu se zobrazí zdrojový soubor. V závislosti na jazyku, kterou jste zvolili, může být názvem zdrojového souboru *Program.cs*, *MyThreadWalkthroughApp.cpp*, nebo *Module1.vb*.
+1. Vyberte **OK**.
 
-6.  Odstranit kód, který se zobrazí ve zdrojovém souboru a nahraďte ji metodou odpovídající ukázku kódu níže.
+    Zobrazí se nový projekt konzoly. Po vytvoření projektu se zobrazí zdrojový soubor. V závislosti na jazyku, kterou jste zvolili, může být názvem zdrojového souboru *Program.cs*, *MyThreadWalkthroughApp.cpp*, nebo *Module1.vb*.
+
+1. Odstranit kód, který se zobrazí ve zdrojovém souboru a nahraďte ji metodou odpovídající ukázku kódu níže.
 
     ```csharp
     using System;
@@ -187,9 +199,9 @@ Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.
     End Class
     ```
 
-7.  Na **souboru** nabídce vyberte možnost **Uložit vše**.
+1. Na **souboru** nabídce vyberte možnost **Uložit vše**.
 
-8. (Pouze Visual Basic) V Průzkumníku řešení (pravé podokno) klikněte pravým tlačítkem myši na uzel projektu, zvolte **vlastnosti**. V části **aplikace** kartu, změnit **spouštěcí objekt** k **jednoduché**.
+1. (Pouze Visual Basic) V Průzkumníku řešení (pravé podokno) klikněte pravým tlačítkem myši na uzel projektu, zvolte **vlastnosti**. V části **aplikace** kartu, změnit **spouštěcí objekt** k **jednoduché**.
 
 ## <a name="debug-the-multithreaded-app"></a>Ladění vícevláknových aplikací
 

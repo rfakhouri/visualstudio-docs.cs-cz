@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 055e7d106611d23254f317bdbe29a1ac1e3d9ec9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953859"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476004"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Kurz: Ladění C# a C++ ve stejné relaci ladění
 
@@ -52,7 +52,18 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
 **Chcete-li vytvořit soubory pro projekt knihovny DLL:**
 
-1. V sadě Visual Studio, vyberte **souboru** > **nový** > **projektu**.
+1. Otevřít Visual Studio a vytvořte projekt.
+
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **prázdný projekt**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový prázdný projekt projekt** pro jazyk C ++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**. Zadejte název, například **Mixed_Mode_Debugging** a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C++**, zvolte **jiných**a potom v prostředním podokně vyberte **prázdný projekt**. Zadejte název, například **Mixed_Mode_Debugging** a klikněte na tlačítko **OK**.
+    ::: moniker-end
+
+    Pokud se nezobrazí **prázdný projekt** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
+
+    Visual Studio vytvoří projekt.
 
 1. V **nový projekt** dialogovém okně **Visual C++** vyberte **jiných**a pak vyberte **prázdný projekt** v prostředním podokně.
 
@@ -71,6 +82,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
     ```cpp
     #include "Mixed_Mode.h"
     ```
+
 1. V **Průzkumníka řešení**vyberte **hlavičkové soubory**a pak vyberte **projektu** > **přidat novou položku**. Nebo klikněte pravým tlačítkem na **hlavičkové soubory** a vyberte **přidat** > **nová položka**.
 
 1. V **nová položka** dialogového okna, vyberte **soubor hlaviček (.h)**. Typ **Mixed_Mode.h** v **název** pole a pak vyberte **přidat**.
@@ -117,18 +129,23 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
 ## <a name="create-a-simple-managed-app-to-call-the-dll"></a>Vytvoření jednoduché spravované aplikace pro volání knihovny DLL
 
-1. V sadě Visual Studio, zvolte **souboru** > **nový** > **projektu**.
+1. Otevřít Visual Studio a vytvořte nový projekt.
 
-   > [!NOTE]
-   > I když spravované nového projektu můžete také přidat do existujícího řešení C++, vytvoření nového řešení podporuje další scénáře ladění.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly**, zvolte **šablony**a klikněte na tlačítko **vytvořit nový projekt Konzolová aplikace (.NET Framework)** pro C#. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
 
-1. V **nový projekt** dialogu **Visual C#** a v prostředním podokně:
+    Zadejte název, například **Mixed_Mode_Calling_App** a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (. Rozhraní .NET Framework)** nebo **aplikace (.NET Core) konzoly**.
 
-   - Aplikace rozhraní .NET Framework, vyberte **Konzolová aplikace (.NET Framework)**.
+    Zadejte název, například **Mixed_Mode_Calling_App** a klikněte na tlačítko **OK**.
+    ::: moniker-end
 
-   - Pro aplikace .NET Core, vyberte **Konzolová aplikace (.NET Core)**.
+    Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
 
-1. V **název** zadejte **Mixed_Mode_Calling_App**a pak vyberte **OK**.
+    > [!NOTE]
+    > I když spravované nového projektu můžete také přidat do existujícího řešení C++, vytvoření nového řešení podporuje další scénáře ladění.
 
    Visual Studio vytvoří prázdný projekt a zobrazí ho v **Průzkumníka řešení**.
 

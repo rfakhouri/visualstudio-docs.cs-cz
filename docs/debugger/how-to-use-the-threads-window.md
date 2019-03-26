@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b205a92607d55b9999a846c860235c7deb5b13ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680214"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476030"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Průvodce: Ladění vícevláknových aplikací pomocí okna vlákna (C#, Visual Basic, C++)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Návod: Ladění vícevláknových aplikací pomocí okna vlákna (C#, Visual Basic, C++)
 
 Několik prvků uživatelského rozhraní sady Visual Studio můžete ladit aplikace s více vlákny. Tento článek představuje vícevláknové ladění funkcí v okně editoru kódu **umístění ladění** nástrojů a **vlákna** okna. Informace o ostatních nástrojích pro ladění vícevláknových aplikací najdete v tématu [Začínáme s laděním vícevláknových aplikací](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -34,15 +34,27 @@ Dokončení tohoto kurzu trvá jenom pár minut a vás seznámí se základními
 
 Vytvořte následující projekt aplikace s více podprocesy pro použití v tomto kurzu:
 
-1. V sadě Visual Studio, vyberte **souboru** > **nový** > **projektu**.
+1. Otevřít Visual Studio a vytvořte nový projekt.
 
-1. V **nový projekt** dialogové okno:
-   - Pro C# aplikaci, vyberte **Visual C#**    >  **Konzolová aplikace (.NET Framework)**.
-   - Aplikace s C++, vyberte **Visual C++** > **Konzolová aplikace Windows**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
+    
+    - Pro C#, zvolte **vytvořit nový projekt Konzolová aplikace (.NET Framework)** pro C#. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    - Pro jazyk C++, zvolte **vytvořit nový projekt konzolové aplikace**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
 
-1. Název aplikace MyThreadWalkthroughApp a potom vyberte **OK**.
+    Zadejte název, například **MyThreadWalkthroughApp** a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně zvolte následující:
+    - Pro C# aplikace v části **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
+    - Pro aplikace s C++ v rámci **Visual C++**, zvolte **Windows Desktop**a klikněte na tlačítko **Konzolová aplikace Windows**.
 
-   Nový projekt se zobrazí v **Průzkumníka řešení**, zdrojový soubor s názvem *Program.cs* nebo *MyThreadWalkthroughApp.cpp* se otevře v okně zdrojového kódu.
+    Zadejte název, například **MyThreadWalkthroughApp** a klikněte na tlačítko **OK**.
+    ::: moniker-end
+
+    Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte **vývoj desktopových aplikací .NET** nebo **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
+
+    Nový projekt se zobrazí v **Průzkumníka řešení**, zdrojový soubor s názvem *Program.cs* nebo *MyThreadWalkthroughApp.cpp* se otevře v okně zdrojového kódu.
 
 1. Nahraďte kód ve zdrojovém souboru se C# nebo C++ ukázkový kód z [Začínáme s laděním vícevláknových aplikací](../debugger/get-started-debugging-multithreaded-apps.md).
 

@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709405"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476056"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Průvodce: Ladění paralelní aplikace v sadě Visual Studio (C#, Visual Basic, C++)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Návod: Ladění paralelní aplikace v sadě Visual Studio (C#, Visual Basic, C++)
 
 Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásobníky** ladění paralelní aplikace systému windows. Tato okna vám pomůžou pochopit a chování za běhu kódu, který se používá ověření [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Poté, co kód přestane fungovat, návodu ukazuje způsob použití **paralelní úlohy** a **paralelní zásobníky** windows jej prozkoumat.
 
@@ -62,23 +62,39 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
 
 #### <a name="to-create-the-sample-project"></a>K vytvoření ukázkového projektu
 
-1. V sadě Visual Studio na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.
+1. Otevřít Visual Studio a vytvořte nový projekt.
 
-2. Vyberte buď **Visual C#**, **jazyka Visual Basic**, nebo **Visual C++**. Pro spravované jazyky, ujistěte se, že [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] se zobrazí v seznamu rozhraní.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
+    
+    - Pro C# nebo Visual Basic, zvolte **vytvořit nový projekt Konzolová aplikace (.NET Framework)** buď C# nebo Visual Basic. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    - Pro jazyk C++, zvolte **vytvořit nový projekt konzolové aplikace** jazyka C++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
 
-3. V části **Windows Desktop**, zvolte **konzolovou aplikaci** a potom klikněte na tlačítko **OK**. Zůstat v konfiguraci ladění, což je výchozí hodnota.
+    Potom zadejte název nebo použijte výchozí název a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně zvolte následující:
 
-4. Otevřete soubor kódu .cpp, .cs nebo .vb v projektu. Odstraňte její obsah, chcete-li vytvořit prázdný soubor kódu.
+    - Pro C# aplikace v části **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
+    - Pro aplikace v jazyce Visual Basic v části **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
+    - Pro aplikace s C++ v rámci **Visual C++**, zvolte **Windows Desktop**a klikněte na tlačítko **Konzolová aplikace Windows**.
 
-5. Vložte následující kód pro zvolený jazyk do souboru prázdný kód.
+    Potom zadejte název nebo použijte výchozí název a klikněte na tlačítko **OK**.
+    ::: moniker-end
+
+    Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte **vývoj desktopových aplikací .NET** nebo **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
+
+1. Otevřete soubor kódu .cpp, .cs nebo .vb v projektu. Odstraňte její obsah, chcete-li vytvořit prázdný soubor kódu.
+
+1. Vložte následující kód pro zvolený jazyk do souboru prázdný kód.
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. Na **souboru** nabídky, klikněte na tlačítko **Uložit vše**.
+1. Na **souboru** nabídky, klikněte na tlačítko **Uložit vše**.
 
-7. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.
+1. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.
 
     Všimněte si, že existují čtyři volání `Debugger.Break` (`DebugBreak` v C++ ukázce) proto není potřeba vložit zarážky; jednoduše spuštěním aplikace způsobí jeho přerušení v ladicím programu až čtyřikrát.
 

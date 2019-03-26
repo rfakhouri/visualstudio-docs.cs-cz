@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09546ae594ddc7653670c62f5a9186286eb52525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355218"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475965"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Rychlý start: Při ladění pomocí C# nebo Visual Basic pomocí ladicího programu sady Visual Studio
 
@@ -25,7 +25,7 @@ Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které v
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
-1. Otevřít Visual Studio.
+1. Otevřít Visual Studio a vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
     Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt Konzolová aplikace (.NET Core)**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.

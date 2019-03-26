@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526578"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476043"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -82,17 +82,16 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
 
     Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **nástroje** > **stažení nástrojů a funkcí**. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** (nebo **.NET Core pro vývoj napříč platformami**) úloh, klikněte na tlačítko **změnit**.
 
-1. Otevřít Visual Studio a klikněte na tlačítko **souboru** > **nový** > **projektu**.
+1. Otevřít Visual Studio.
 
-1. Vyberte šablonu pro kód aplikace.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly**, zvolte **šablony**, klikněte na tlačítko **vytvoření nové aplikace konzoly (.NET Framework)** nebo **Vytvoření nové aplikace konzoly (.NET Core)**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**. Zadejte název, například **ConsoleApp FirstApp** a klikněte na tlačítko **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C#** , zvolte **konzolovou aplikaci**a potom v prostředním podokně zvolte buď **Konzolová aplikace (.NET framework)**  nebo **aplikace (.NET Core) konzoly**. Zadejte název, například **ConsoleApp FirstApp** a klikněte na tlačítko **OK**.
+    ::: moniker-end
 
-    Pro rozhraní .NET Framework v **nový projekt** dialogového okna zvolte **Visual C#**, **Windows Desktop** z části nainstalovaných šablon a potom v prostředním podokně vyberte  **Aplikace konzoly (.NET Framework)**.
-
-    Pro .NET Core v **nový projekt** dialogového okna zvolte **Visual C#**, **.NET Core** z části nainstalovaných šablon a potom v prostředním podokně vyberte  **Aplikace (.NET Core) konzoly**.
-
-    Pokud nevidíte tyto šablony, je nutné nainstalovat příslušnou úlohu (viz předchozí kroky).
-
-1. V **název** zadejte **ConsoleApp FirstApp** a klikněte na tlačítko **OK**.
+    Pokud se nezobrazí **Konzolová aplikace (.NET Framework)** nebo **Konzolová aplikace (.NET Core)** šablony projektu, přejděte na **nástroje** > **stažení nástrojů a Funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úlohy nebo **.NET Core pro vývoj napříč platformami** úloh, klikněte na tlačítko **změnit**.
 
     Visual Studio vytvoří projekt konzoly, která se zobrazí v Průzkumníku řešení v pravém podokně.
 
