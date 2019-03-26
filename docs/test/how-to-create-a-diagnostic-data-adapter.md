@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914016"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416321"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: Vytvoření adaptéru diagnostických dat
 
@@ -48,21 +48,9 @@ Pomocí následujícího postupu vytvořte adaptér diagnostických dat, který 
 
 Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního konfiguračního editoru, najdete v části [ukázkový projekt pro vytvoření adaptéru diagnostických dat](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Vytvoření a instalace adaptéru diagnostických dat
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Vytvoření a instalace adaptéru diagnostických dat
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Vytvoření a instalace adaptéru diagnostických dat
-
-1. Vytvořte novou knihovnu tříd.
-
-   1.  Na **souboru** nabídce zvolte **nový**a pak na **nový projekt**.
-
-   2.  Z **typy projektů**, vyberte jazyk, který chcete použít.
-
-   3.  Z **instalované šablony sady Visual Studio**vyberte **knihovny tříd**.
-
-   4.  Zadejte název pro adaptér diagnostických dat.
-
-   5.  Zvolte **OK**.
+1. Vytvořte nový **knihovny tříd** projektu.
 
 2. Přidat sestavení **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 

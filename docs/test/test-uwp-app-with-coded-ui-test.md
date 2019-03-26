@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942255"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416120"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Vytvoření programového uživatelského rozhraní testu aplikace pro UPW
 
@@ -29,7 +29,11 @@ Prvním krokem je vytvoření jednoduché aplikace pro UPW pro spuštění testu
 
 1. V sadě Visual Studio vytvořte nový projekt pomocí **prázdná aplikace (Universal Windows)** šablony Visual C# nebo Visual Basic.
 
-     ![Šablona prázdná aplikace Universal Windows](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Šablona prázdná aplikace Universal Windows](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. V **nový projekt univerzální platformy Windows** dialogového okna, vyberte **OK** přijměte výchozí verze platformy.
 
@@ -61,16 +65,20 @@ Prvním krokem je vytvoření jednoduché aplikace pro UPW pro spuštění testu
 
 1. Přidat projekt testu k řešení, klikněte pravým tlačítkem na řešení v **Průzkumníka řešení** a zvolte **přidat** > **nový projekt**.
 
-1. V **nový projekt** dialogového okna, vyberte **projekt programového testu UI (Universal Windows)** šablony. Můžete najít v šabloně **Windows Universal** kategorie v části **Visual C#** nebo **jazyka Visual Basic**.
+1. Vyhledání a výběr **projekt programového testu UI (Universal Windows)** šablony.
 
-     ![Nový projekt programového testu UI](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Nový projekt programového testu UI](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Pokud se nezobrazí **projekt programového uživatelského rozhraní testu (Universal Windows)** šablony, budete muset [nainstalovat komponentu programového testu uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. V **generovat kód pro programový Test uživatelského rozhraní** dialogového okna, vyberte **upravit test ručně**.
 
-     ![Generovat kód pro programový test dialogové okno uživatelského rozhraní](../test/media/manually-edit-the-test.png)
+   ![Generovat kód pro programový test dialogové okno uživatelského rozhraní](../test/media/manually-edit-the-test.png)
 
 1. Pokud vaše aplikace pro UPW není spuštěná, spusťte ji stisknutím klávesy **Ctrl**+**F5**.
 

@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 83bf334aa7fa04b6dea9ec9181d602e40ba83d41
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325026"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415067"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Postupy: Vytvoření vlastního protokolu HTTP text editoru pro Editor testu výkonnosti webu
 
@@ -31,49 +31,35 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
 
 ## <a name="create-a-windows-control-library-project"></a>Vytvoření projektu knihovny ovládacích prvků Windows
 
-1. V sadě Visual Studio na **souboru** nabídce zvolte **nový** > **projektu**.
+1. V sadě Visual Studio vytvořte nový **Knihovna ovládacích prvků Windows Forms** projektu. Pojmenujte projekt **MessageEditors**.
 
-    **Nový projekt** se zobrazí dialogové okno.
+   Projekt je přidán do nového řešení a <xref:System.Windows.Forms.UserControl> s názvem *UserControl1.cs* je předložen v návrháři.
 
-2. V části **nainstalované šablony**, vyberte buď **jazyka Visual Basic** nebo **Visual C#** v závislosti na vašich preferencích programování a pak vyberte **Windows**.
+1. Z **nástrojů**v části **běžné ovládací prvky** kategorie, přetáhněte <xref:System.Windows.Forms.RichTextBox> na povrch UserControl1.
 
-   > [!NOTE]
-   > Tato ukázka používá Visual C#.
+1. Zvolte piktogram akce (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.RichTextBox> ovládací prvek a potom vyberte a **ukotvit v nadřazeném kontejneru**.
 
-3. V seznamu šablon vyberte **Knihovna ovládacích prvků Windows Forms**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt Windows Forms Library a vyberte **vlastnosti**.
 
-4. V **název** textového pole zadejte název, například `MessageEditors`a zvolte **OK**.
+1. V **vlastnosti**, vyberte **aplikace** kartu.
 
-   > [!NOTE]
-   > Tato ukázka používá MessageEditors.
+1. V **Cílová architektura** rozevíracího seznamu vyberte **rozhraní .NET Framework 4**.
 
-    Projekt je přidán do nového řešení a <xref:System.Windows.Forms.UserControl> s názvem *UserControl1.cs* je předložen v návrháři.
+1. **Změnit cílový rámec** se zobrazí dialogové okno.
 
-5. Z **nástrojů**v části **běžné ovládací prvky** kategorie, přetáhněte <xref:System.Windows.Forms.RichTextBox> na povrch UserControl1.
+1. Zvolte **Ano**.
 
-6. Zvolte piktogram akce (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.RichTextBox> ovládací prvek a potom vyberte a **ukotvit v nadřazeném kontejneru**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz**.
 
-7. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt Windows Forms Library a vyberte **vlastnosti**.
+1. **Přidat odkaz** se zobrazí dialogové okno.
 
-8. V **vlastnosti**, vyberte **aplikace** kartu.
+1. Vyberte. **NET** kartu, posuňte se dolů a vyberte **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**.
 
-9. V **Cílová architektura** rozevíracího seznamu vyberte **rozhraní .NET Framework 4**.
+1. Pokud **Návrhář zobrazení** není stále otevřen v **Průzkumníka řešení**, klikněte pravým tlačítkem na **UserControl1.cs** a pak vyberte **Návrhář zobrazení**.
 
-10. **Změnit cílový rámec** se zobrazí dialogové okno.
+1. Na návrhové ploše, klikněte pravým tlačítkem a vyberte **zobrazit kód**.
 
-11. Zvolte **Ano**.
-
-12. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz**.
-
-13. **Přidat odkaz** se zobrazí dialogové okno.
-
-14. Vyberte. **NET** kartu, posuňte se dolů a vyberte **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**.
-
-15. Pokud **Návrhář zobrazení** není stále otevřen v **Průzkumníka řešení**, klikněte pravým tlačítkem na **UserControl1.cs** a pak vyberte **Návrhář zobrazení**.
-
-16. Na návrhové ploše, klikněte pravým tlačítkem a vyberte **zobrazit kód**.
-
-17. (Volitelné) Změňte název třídy a konstruktoru z UserControl1 na smysluplný název, například MessageEditorControl:
+1. (Volitelné) Změňte název třídy a konstruktoru z UserControl1 na smysluplný název, například MessageEditorControl:
 
     > [!NOTE]
     > Ukázka používá MessageEditorControl.
@@ -91,7 +77,7 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
     }
     ```
 
-18. Přidejte následující vlastnosti umožňující získání a nastavení textu v RichTextBox1. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Rozhraní bude používat EditString a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> bude používat EditByteArray:
+1. Přidejte následující vlastnosti umožňující získání a nastavení textu v RichTextBox1. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Rozhraní bude používat EditString a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> bude používat EditByteArray:
 
     ```csharp
     public String EditString

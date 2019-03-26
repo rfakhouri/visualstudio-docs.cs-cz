@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983361"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415041"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Přidání vlastního ověřování architektury do diagramů závislostí
 
@@ -40,9 +40,7 @@ Nejrychlejší způsob vytváření validátoru je použití šablony projektu. 
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>Definování rozšíření pomocí šablony projektu
 
-1. Vytvoření projektu v novém řešení pomocí **nový projekt** příkaz **souboru** nabídky.
-
-2. V **nový projekt** dialogovém okně **projekty modelování**vyberte **rozšíření ověřování návrháře vrstev**.
+1. Vytvořte nový **rozšíření ověřování návrháře vrstev** projektu.
 
     Šablona vytvoří projekt, který obsahuje malý příklad.
 
@@ -52,22 +50,22 @@ Nejrychlejší způsob vytváření validátoru je použití šablony projektu. 
    > - Upravte volání `LogValidationError` odebrat volitelné argumenty `errorSourceNodes` a `errorTargetNodes`.
    > - Pokud používáte vlastní vlastnosti, použijte aktualizace uvedené v [přidání vlastních vlastností do diagramů závislostí](../modeling/add-custom-properties-to-layer-diagrams.md).
 
-3. Upravte kód, aby definoval vaše ověření. Další informace najdete v tématu [programování ověření](#programming).
+2. Upravte kód, aby definoval vaše ověření. Další informace najdete v tématu [programování ověření](#programming).
 
-4. Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).
+3. Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).
 
    > [!NOTE]
    > Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).
 
 ::: moniker range="vs-2017"
 
-5. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte *VSIX* ve *bin* adresáře. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, zvolte **rozšíření a aktualizace** na **nástroje** nabídky.
+4. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte *VSIX* ve *bin* adresáře. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, zvolte **rozšíření a aktualizace** na **nástroje** nabídky.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte *VSIX* ve *bin* adresáře. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, zvolte **spravovat rozšíření** na **rozšíření** nabídky.
+4. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte *VSIX* ve *bin* adresáře. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, zvolte **spravovat rozšíření** na **rozšíření** nabídky.
 
 ::: moniker-end
 
@@ -77,15 +75,13 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Přidání ověření vrstvy do samostatného souboru VSIX
 
-1.  Vytvořte projekt knihovny tříd v nové nebo existující řešení sady Visual Studio. V **nový projekt** dialogové okno, klikněte na tlačítko **Visual C#** a potom klikněte na tlačítko **knihovny tříd**. Tento projekt bude obsahovat třídu ověřování vrstvy.
+1. Vytvořte nový **knihovny tříd** projektu. Tento projekt bude obsahovat třídu ověřování vrstvy.
 
-2.  Určete nebo vytvořte VSIX projekt ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**. Pokud budete muset přidat projekt VSIX, postupujte podle těchto kroků:
+2. Vyhledat nebo vytvořit **projekt VSIX** ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**.
 
-    1.  V **nový projekt** dialogového okna zvolte **Visual C#**, **rozšiřitelnost**, **projekt VSIX**.
+3. V **Průzkumníka řešení**, v místní nabídce projektu VSIX, zvolte **nastavit jako spouštěný projekt**.
 
-    2.  V **Průzkumníka řešení**, v místní nabídce projektu VSIX **nastavit jako spouštěný projekt**.
-
-3.  V **source.extension.vsixmanifest**v části **prostředky**, přidejte vrstvu ověřování projektu jako komponentu MEF:
+4. V **source.extension.vsixmanifest**v části **prostředky**, přidejte vrstvu ověřování projektu jako komponentu MEF:
 
     1.  Zvolte **nové**.
 
@@ -97,7 +93,7 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy
 
          **Projekt** = *projektu program pro ověření*
 
-4.  Musíte taky přidat ji jako vrstvu ověřování:
+5. Musíte taky přidat ji jako vrstvu ověřování:
 
     1.  Zvolte **nové**.
 
@@ -109,7 +105,7 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy
 
          **Projekt** = *projektu program pro ověření*
 
-5.  Vraťte se do projektu ověření vrstvy a přidejte následující odkazy projektu:
+6. Vraťte se do projektu ověření vrstvy a přidejte následující odkazy projektu:
 
     |**Referenční informace**|**To umožňuje provést**|
     |-|-|
@@ -120,14 +116,14 @@ Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy
     |System.ComponentModel.Composition|Definovat součást ověřování pomocí Managed Extensibility Framework (MEF)|
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definovat rozšíření modelování|
 
-6.  Zkopírujte ukázkový kód na konci tohoto tématu do souboru třídy v projektu knihovny ověřování tak, aby obsahovala kód pro ověření. Další informace najdete v tématu [programování ověření](#programming).
+7. Zkopírujte ukázkový kód na konci tohoto tématu do souboru třídy v projektu knihovny ověřování tak, aby obsahovala kód pro ověření. Další informace najdete v tématu [programování ověření](#programming).
 
-7.  Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).
+8. Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).
 
     > [!NOTE]
     > Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).
 
-8.  Chcete-li nainstalovat VSIX v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte **VSIX** soubor **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows.
+9. Chcete-li nainstalovat VSIX v instanci hlavní aplikace Visual Studio nebo na jiném počítači, vyhledejte **VSIX** soubor **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows.
 
 ##  <a name="programming"></a> Ověření programování
 

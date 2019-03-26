@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946940"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416354"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Postupy: Vytvoření doplňku sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu
 
@@ -24,7 +24,7 @@ Můžete rozšířit uživatelské rozhraní pro **prohlížeče výsledků test
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Kromě toho budete muset přidat odkaz na knihovnu LoadTestPackage DLL, který je umístěn v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* složky.
+Kromě toho budete muset přidat odkaz na knihovnu LoadTestPackage DLL, který je umístěn v *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<verze > \Enterprise\Common7\IDE\PrivateAssemblies* složka.
 
 K rozšíření **prohlížeče výsledků testu výkonnosti webu**prvku uživatelského rozhraní, je nutné vytvořit doplněk sady Visual Studio a uživatelský ovládací prvek. Následující postupy vysvětlují, jak vytvořit doplněk, uživatelský ovládací prvek a jak implementovat třídy nezbytné pro rozšíření **prohlížeče výsledků testu výkonnosti webu**prvku uživatelského rozhraní.
 
@@ -51,46 +51,38 @@ Doplněk je zkompilovaná knihovna DLL, která běží v prostředí integrovan�
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat**a pak vyberte **nový projekt**.
 
-    **Nový projekt** se zobrazí dialogové okno.
-
-2. V části **nainstalované šablony**, rozbalte **ostatní typy projektů** a vyberte **rozšiřitelnost**.
-
-3. V seznamu šablon vyberte **Visual Studio Add-in**.
-
-4. V části **název**, zadejte název doplňku. Například **WebPerfTestResultsViewerAddin**.
-
-5. Zvolte **OK**.
+2. Vytvořte nový **Visual Studio Add-in** projektu.
 
     Visual Studio **Průvodce doplňkem** spustí.
 
-6. Zvolte **Další**.
+3. Zvolte **Další**.
 
-7. Na **zvolte programovací jazyk** vyberte programovací jazyk, který chcete použít k zápisu doplňku.
+4. Na **zvolte programovací jazyk** vyberte programovací jazyk, který chcete použít k zápisu doplňku.
 
    > [!NOTE]
    > Toto téma používá Visual C# pro ukázkový kód.
 
-8. Na **zvolte hostitele aplikace** stránce **sady Visual Studio** a zrušte zaškrtnutí **makra sady Visual Studio**.
+5. Na **zvolte hostitele aplikace** stránce **sady Visual Studio** a zrušte zaškrtnutí **makra sady Visual Studio**.
 
-9. Zvolte **Další**.
+6. Zvolte **Další**.
 
-10. Zadejte název a popis pro doplněk na **zadejte název a popis** stránky.
+7. Zadejte název a popis pro doplněk na **zadejte název a popis** stránky.
 
      Po doplněk se vytvoří, jeho název a popis se zobrazí v **dostupné doplňky** seznamu v **Add-In správce**. Přidáte dostatek podrobností do popisu doplňku tak, aby uživatelé zjistit, co doplněk dělá, jak to funguje a tak dále.
 
-11. Zvolte **Další**.
+8. Zvolte **Další**.
 
-12. Na **zvolte možnosti doplňku** stránce **chtěl bych tento doplněk načíst při spuštění aplikace hostitele**.
+9. Na **zvolte možnosti doplňku** stránce **chtěl bych tento doplněk načíst při spuštění aplikace hostitele**.
 
-13. Zrušte zaškrtnutí ostatních políček.
+10. Zrušte zaškrtnutí ostatních políček.
 
-14. Na **výběr nápovědy o informací** stránky, můžete zadat, jestli se mají informace o doplňku zobrazit v **o** dialogové okno. Pokud chcete zobrazit informace, vyberte **Ano, chtěl bych tento doplněk nabízel informace pole o** zaškrtávací políčko.
+11. Na **výběr nápovědy o informací** stránky, můžete zadat, jestli se mají informace o doplňku zobrazit v **o** dialogové okno. Pokud chcete zobrazit informace, vyberte **Ano, chtěl bych tento doplněk nabízel informace pole o** zaškrtávací políčko.
 
      Informace, které lze přidat do sady Visual Studio **o** dialogové okno obsahuje číslo verze, podrobnosti o odborné pomoci, údaje o licencích a tak dále.
 
-15. Zvolte **Další**.
+12. Zvolte **Další**.
 
-16. Vybrané možnosti se zobrazí na **Souhrn** stránky ke kontrole. Pokud jste spokojeni, vyberte **Dokončit** k vytvoření doplňku. Pokud chcete něco změnit, zvolte **zpět** tlačítko.
+13. Vybrané možnosti se zobrazí na **Souhrn** stránky ke kontrole. Pokud jste spokojeni, vyberte **Dokončit** k vytvoření doplňku. Pokud chcete něco změnit, zvolte **zpět** tlačítko.
 
      Vytvoří se nové řešení a projektu a *Connect.cs* soubor pro nový doplněk se zobrazí v **Editor kódu**.
 
@@ -119,24 +111,11 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat**a pak vyberte **nový projekt**.
 
-     **Nový projekt** se zobrazí dialogové okno.
+2. Vytvořte nový **Knihovna ovládacích prvků Windows Forms** projektu.
 
-2.  V části **nainstalované šablony**, rozbalte **Visual Basic** nebo **Visual C#** a vyberte **Windows**.
+3.  Z **nástrojů**, přetáhněte <xref:System.Windows.Forms.DataGridView> na povrch userControl1.
 
-    > [!NOTE]
-    > Toto téma používá Visual C# pro ukázkový kód.
-
-3.  V seznamu šablon vyberte **Knihovna ovládacích prvků Windows Forms**.
-
-4.  V části **název**, zadejte název doplňku. Například **WebPerfTestResultsViewerControl**.
-
-5.  Zvolte **OK**.
-
-     Windows forms ovládací prvek WebPerfTestResultsViewerControl bude přidána do projektu knihovny **Průzkumníka řešení** a *UserControl1.cs* se zobrazí v režimu návrhu.
-
-6.  Z **nástrojů**, přetáhněte <xref:System.Windows.Forms.DataGridView> na povrch userControl1.
-
-7.  Klikněte na akci označit piktogram (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.DataGridView> a postupujte podle těchto kroků:
+4. Klikněte na akci označit piktogram (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.DataGridView> a postupujte podle těchto kroků:
 
     1.  Zvolte **ukotvit v nadřazeném kontejneru**.
 
@@ -154,13 +133,13 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
     7.  Zvolte **Zavřít**.
 
-8.  V **vlastnosti** okno Změnit **(název)** vlastnost <xref:System.Windows.Forms.DataGridView> k **resultControlDataGridView**.
+5.  V **vlastnosti** okno Změnit **(název)** vlastnost <xref:System.Windows.Forms.DataGridView> k **resultControlDataGridView**.
 
-9. Klikněte pravým tlačítkem na návrhové ploše a vyberte **zobrazit kód**.
+6. Klikněte pravým tlačítkem na návrhové ploše a vyberte **zobrazit kód**.
 
      *UserControl1.cs* soubor se zobrazí v **Editor kódu**.
 
-10. Změna názvu instance <xref:System.Windows.Forms.UserControl> třídy z UserContro1 na resultControl:
+7. Změna názvu instance <xref:System.Windows.Forms.UserControl> třídy z UserContro1 na resultControl:
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
      Budete přidávat další kód pro *Connect.cs* souboru později.
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Přidejte kód do doplňku WebPerfTestResultsViewerAddin
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Přidání kódu do doplňku Visual Studio k rozšíření prohlížeče výsledků testu webu
 
 1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **odkazy** uzel projektu WebPerfTestResultsViewerAddin a vyberte **přidat odkaz**.
 
@@ -276,8 +253,6 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
      Teď, když kód dokončen pro doplněk Visual Studio, budete muset přidat metodu aktualizace do resultControl v projektu WebPerfTestResultsViewerControl.
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Přidejte kód do ovládacího prvku WebPerfTestResultsViewerControl
-
-### <a name="to-add-code-to-the-user-control"></a>Přidání kódu do uživatelského ovládacího prvku
 
 1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu WebPerfTestResultsViewerControl a vyberte **vlastnosti**.
 

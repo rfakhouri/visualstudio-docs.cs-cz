@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949418"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415678"
 ---
 # <a name="writing-user-commands-and-actions"></a>Zápis uživatelských příkazů a akcí
 Jazyka specifického pro doménu můžete přizpůsobit přidáním příkazy do diagramu a reakcí na gesta, jako například přetažení myší, klikněte na tlačítko a dvakrát klikněte na události.
@@ -27,9 +27,7 @@ Jazyka specifického pro doménu můžete přizpůsobit přidáním příkazy do
 
 -   [Postupy: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) – umožní kliknutím přejít z položky na jinou položku, která odkazuje na uživatele.
 
--   [Postupy: Přístup a jeho omezení aktuální výběr](../modeling/how-to-access-and-constrain-the-current-selection.md)
-
--   [Přizpůsobení nástrojů elementu](../modeling/customizing-element-tools.md)
+-   [Postupy: Přístup k aktuálnímu výběru a jeho omezení](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>Viz také
 

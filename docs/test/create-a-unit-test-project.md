@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949431"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416133"
 ---
 # <a name="create-a-unit-test-project"></a>Vytvoření projektu testů jednotek
 
@@ -23,11 +23,23 @@ Testy jednotek často zrcadlí struktury kódu v rámci testu. Pro každého kó
 
 ## <a name="to-create-a-unit-test-project"></a>Chcete-li vytvořit projekt testování částí
 
-1. Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **projektu**. Také můžete stisknout klávesu **Ctrl**+**Shift**+**N**.
+1. Na **souboru** nabídce zvolte **nový** > **projektu**, nebo stiskněte klávesu **Ctrl**+**Shift** + **N**.
+
+::: moniker range="vs-2017"
 
 2. V **nový projekt** dialogového okna rozbalte **nainstalováno** uzlu, vyberte jazyk, který chcete použít pro testovací projekt a pak zvolte **testování**.
 
 3. Chcete-li použít jeden z rozhraní pro testování částí Microsoft, zvolte **projekt testů jednotek** ze seznamu šablon projektu. V opačném případě vyberte šablonu projektu jednotky testů, který chcete použít. Pojmenujte projekt a pak vyberte **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Na **vytvořte nový projekt** zadejte **Jednotkový test** do vyhledávacího pole. Vyberte **projekt testu jednotek (.NET Framework)** šablony projektu a pak klikněte na tlačítko **Další**.
+
+3. Na **konfigurovat nový projekt** stránky, zadejte název pro váš projekt a potom klikněte na tlačítko **vytvořit**.
+
+::: moniker-end
 
 4. V projektu testování částí přidejte odkaz na testovaný kód. Přidání odkazu do projektu kódu ve stejném řešení:
 

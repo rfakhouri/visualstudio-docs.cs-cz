@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223767"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416294"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live Unit Testing v sadě Visual Studio
 
@@ -40,15 +40,19 @@ Tento kurz vyžaduje, že jste nainstalovali Visual Studio Enterprise Edition s 
 
 Začněte vytvořením řešení sady Visual Studio s názvem `UtilityLibraries` , který se skládá z jedné .NET Standard projekt knihovny tříd, `StringLibrary`. Můžete napsat `StringLibrary` v C# nebo Visual Basic.
 
-Řešením je kontejner pro jeden nebo více projektů. Pokud chcete vytvořit řešení, otevřete sadu Visual Studio a proveďte následující:
+Řešením je kontejner pro jeden nebo více projektů. Chcete-li vytvořit prázdné řešení, otevřete sadu Visual Studio a proveďte následující:
 
 1. Vyberte **souboru** > **nový** > **projektu** z nejvyšší úrovně nabídky sady Visual Studio.
 
-1. V **nový projekt** dialogového okna, rozbalte **ostatní typy projektů** uzel a vyberte možnost **řešení sady Visual Studio**. Vyberte **prázdné řešení** šablony v pravém podokně a zadejte `UtilityLibraries` v **název** textového pole, jak ukazuje následující obrázek:
+1. Typ **řešení** do pole Hledat šablony a pak vyberte **prázdné řešení** šablony.
+
+   ::: moniker range="vs-2017"
 
    ![** Dialogového okna Nový projekt **](./media/lut-start/new-solution.png)
 
-1. Vyberte **OK** k vytvoření řešení.
+   ::: moniker-end
+
+1. Vytvoření řešení.
 
 Teď, když jsme vytvořili řešení, vytvoříte knihovny tříd s názvem `StringLibrary` , který obsahuje řadu rozšiřující metody pro práci s řetězci.
 
@@ -56,18 +60,35 @@ Teď, když jsme vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
-1. V **přidat nový projekt** dialogového okna, vyberte jazyka C# uzlu, pak vyberte **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. V **přidat nový projekt** dialogového okna, vyberte jazyka C# uzlu, pak vyberte **.NET Standard**.
 
    > [!NOTE]
    > Vzhledem k tomu, zaměřuje na naše knihovny .NET Standard spíše než konkrétní implementace rozhraní .NET, můžete volat z jakékoli implementace .NET, která podporuje danou verzi .NET Standard. Další informace najdete v tématu [.NET Standard](/dotnet/standard/net-standard).
 
-1. Vyberte **knihovna tříd (.NET Standard)** šablony v pravém podokně a zadejte `StringLibrary` v **název** textového pole, jak ukazuje následující obrázek:
+3. Vyberte **knihovna tříd (.NET Standard)** šablony v pravém podokně a zadejte `StringLibrary` v **název** textového pole, jak ukazuje následující obrázek:
 
    ![** Přidat nový projekt ** dialogového okna](./media/lut-start/add-project-cs.png)
 
-1. Vyberte **OK** pro vytvoření projektu.
+4. Vyberte **OK** pro vytvoření projektu.
 
-1. Všechny existující kód v okně kódu nahraďte následujícím kódem:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Typ **knihovny tříd** do pole Hledat šablony a vybrat **knihovna tříd (.NET Standard)** šablony. Klikněte na **Další**.
+
+   > [!NOTE]
+   > Vzhledem k tomu, zaměřuje na naše knihovny .NET Standard spíše než konkrétní implementace rozhraní .NET, můžete volat z jakékoli implementace .NET, která podporuje danou verzi .NET Standard. Další informace najdete v tématu [.NET Standard](/dotnet/standard/net-standard).
+
+3. Pojmenujte projekt `StringLibrary`.
+
+4. Klikněte na tlačítko **vytvořit** pro vytvoření projektu.
+
+::: moniker-end
+
+5. Všechny existující kód v okně kódu nahraďte následujícím kódem:
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
@@ -79,24 +100,41 @@ Teď, když jsme vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 
       - `HasEmbeddedSpaces` Vrátí `true` řetězec obsahuje vložený prázdný znak; v opačném případě vrátí `false`.
 
-1. Vyberte **sestavení** > **sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio. Visual Studio by měl úspěšným sestavením své knihovny.
+6. Vyberte **sestavení** > **sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio. Visual Studio by měl úspěšným sestavením své knihovny.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
-1. V **přidat nový projekt** dialogového okna, vyberte uzel Visual Basic a pak vyberte **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. V **přidat nový projekt** dialogového okna, vyberte uzel Visual Basic a pak vyberte **.NET Standard**.
 
    > [!NOTE]
    > Vzhledem k tomu, zaměřuje na naše knihovny .NET Standard spíše než konkrétní implementace rozhraní .NET, můžete volat z jakékoli implementace .NET, která podporuje danou verzi .NET Standard. Další informace najdete v tématu [.NET Standard](/dotnet/standard/net-standard).
 
-1. Vyberte **knihovna tříd (.NET Standard)** šablony v pravém podokně a zadejte `StringLibrary` v **název** textového pole, jak ukazuje následující obrázek:
+3. Vyberte **knihovna tříd (.NET Standard)** šablony v pravém podokně a zadejte `StringLibrary` v **název** textového pole, jak ukazuje následující obrázek:
 
    ![** Přidat nový projekt ** dialogového okna](./media/lut-start/add-project-vb.png)
 
-1. Vyberte **OK** pro vytvoření projektu.
+4. Vyberte **OK** pro vytvoření projektu.
 
-1. Všechny existující kód v okně kódu nahraďte následujícím kódem:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Typ **knihovny tříd** do pole Hledat šablony a vybrat **knihovna tříd (.NET Standard)** šablony. Klikněte na **Další**.
+
+   > [!NOTE]
+   > Vzhledem k tomu, zaměřuje na naše knihovny .NET Standard spíše než konkrétní implementace rozhraní .NET, můžete volat z jakékoli implementace .NET, která podporuje danou verzi .NET Standard. Další informace najdete v tématu [.NET Standard](/dotnet/standard/net-standard).
+
+3. Pojmenujte projekt `StringLibrary`.
+
+4. Klikněte na tlačítko **vytvořit** pro vytvoření projektu.
+
+::: moniker-end
+
+5. Všechny existující kód v okně kódu nahraďte následujícím kódem:
 
    [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
 
@@ -108,11 +146,11 @@ Teď, když jsme vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 
       - `HasEmbeddedSpaces` Vrátí `true` řetězec obsahuje vložený prázdný znak; v opačném případě vrátí `false`.
 
-1. Klikněte pravým tlačítkem na projekt StringLibrary v **Průzkumníka řešení** a vyberte **vlastnosti**. V **aplikace** kartu, odstraníte tím stávající text v **kořenový obor názvů** textového pole, jak ukazuje následující obrázek. Kořenový obor názvů je definován [příkaz Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) ve zdrojovém kódu.
+6. Klikněte pravým tlačítkem na projekt StringLibrary v **Průzkumníka řešení** a vyberte **vlastnosti**. V **aplikace** kartu, odstraníte tím stávající text v **kořenový obor názvů** textového pole, jak ukazuje následující obrázek. Kořenový obor názvů je definován [příkaz Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) ve zdrojovém kódu.
 
    ![Dialogové okno Vlastnosti projektu pro projekt jazyka Visual Basic](./media/lut-start/vb-properties.png)
 
-1. Vyberte **sestavení** > **sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio. Visual Studio by měl úspěšným sestavením své knihovny.
+7. Vyberte **sestavení** > **sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio. Visual Studio by měl úspěšným sestavením své knihovny.
 
 ---
 
@@ -124,77 +162,105 @@ Dalším krokem je vytvoření projektu testování částí pro testování `St
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
-1. V **přidat nový projekt** dialogového okna, vyberte jazyka C# uzlu, pak vyberte **.NET Core**.
+::: moniker range="vs-2017"
+
+2. V **přidat nový projekt** dialogového okna, vyberte jazyka C# uzlu, pak vyberte **.NET Core**.
 
    > [!NOTE]
    > Není nutné pro psaní jednotkových testů ve stejném jazyce jako knihovnu tříd.
 
-1. Vyberte **projekt testu jednotek (.NET Core)** šablony v pravém podokně a zadejte `StringLibraryTests` v **název** textového pole, jak ukazuje následující obrázek:
+3. Vyberte **projekt testu jednotek (.NET Core)** šablony v pravém podokně a zadejte `StringLibraryTests` v **název** textového pole, jak ukazuje následující obrázek:
 
    ![** Dialogové okno Přidat nový projekt ** pro projekt testování částí](./media/lut-start/add-unit-test-cs.png)
 
-1. Vyberte **OK** pro vytvoření projektu.
+4. Vyberte **OK** pro vytvoření projektu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Typ **Jednotkový test** do pole Hledat šablony a vybrat **projekt testů jednotek (.NET Core)** šablony. Klikněte na **Další**.
+
+3. Pojmenujte projekt `StringLibraryTests`.
+
+4. Klikněte na tlačítko **vytvořit** pro vytvoření projektu.
+
+::: moniker-end
 
    > [!NOTE]
    > Tento úvodní kurz používá Live Unit Testing s testovací rozhraní MSTest. Můžete také použít xUnit a NUnit testovacích architektur.
 
-1. Projekt testu jednotek nelze přistoupit, automaticky knihovny tříd, který je testování. Udělit přístup ke knihovně testu tak, že přidáte odkaz na projekt knihovny tříd. Chcete-li to provést, klikněte pravým tlačítkem na `StringLibraryTests` projektu a vyberte **přidat** > **odkaz**. V **správce odkazů** dialogového okna, ujistěte se, že **řešení** karta je vybraný a vyberte `StringLibrary` projektu, jak je znázorněno na následujícím obrázku.
+5. Projekt testu jednotek nelze přistoupit, automaticky knihovny tříd, který je testování. Udělit přístup ke knihovně testu tak, že přidáte odkaz na projekt knihovny tříd. Chcete-li to provést, klikněte pravým tlačítkem na `StringLibraryTests` projektu a vyberte **přidat** > **odkaz**. V **správce odkazů** dialogového okna, ujistěte se, že **řešení** karta je vybraný a vyberte `StringLibrary` projektu, jak je znázorněno na následujícím obrázku.
 
    ![** Správce odkaz ** dialogového okna](./media/lut-start/add-reference.png)
 
-1. Nahraďte často používaný kód testu jednotek poskytovanou šablonou následujícím kódem:
+6. Nahraďte často používaný kód testu jednotek poskytovanou šablonou následujícím kódem:
 
    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest1.cs)]
 
-1. Uložte projekt tak, že vyberete **Uložit** ikonu na panelu nástrojů.
+7. Uložte projekt tak, že vyberete **Uložit** ikonu na panelu nástrojů.
 
-1. Testování jednotek kódu obsahuje některé jiné znaky než ASCII, Visual Studio zobrazí následující dialogové okno nás upozornit, že některé znaky budou ztraceny, pokud jsme soubor uložte ve formátu ASCII jeho výchozí. Zvolte **uložit s kódováním ostatní** tlačítko.
+8. Testování jednotek kódu obsahuje některé jiné znaky než ASCII, Visual Studio zobrazí následující dialogové okno nás upozornit, že některé znaky budou ztraceny, pokud jsme soubor uložte ve formátu ASCII jeho výchozí. Zvolte **uložit s kódováním ostatní** tlačítko.
 
    ![Zvolte kódování souboru](media/lut-start/ascii-encoding.png)
 
-1. V **kódování** rozevírací seznam **možnosti ukládání záloh** dialogovém okně zvolte **kódování Unicode (UTF-8 bez podpisu) - znaková stránka 65001**, jak je vidět na následujícím obrázku:
+9. V **kódování** rozevírací seznam **možnosti ukládání záloh** dialogovém okně zvolte **kódování Unicode (UTF-8 bez podpisu) - znaková stránka 65001**, jak je vidět na následujícím obrázku:
 
    ![Výběr kódování UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Zkompilujte projekt jednotkového testu výběrem **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio.
+10. Zkompilujte projekt jednotkového testu výběrem **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
-1. V **přidat nový projekt** dialogového okna, vyberte uzel Visual Basic a pak vyberte **.NET Core**.
+::: moniker range="vs-2017"
+
+2. V **přidat nový projekt** dialogového okna, vyberte uzel Visual Basic a pak vyberte **.NET Core**.
 
    > [!NOTE]
    > Není nutné pro psaní jednotkových testů ve stejném jazyce jako knihovnu tříd.
 
-1. Vyberte **projekt testu jednotek (.NET Core)** šablony v pravém podokně a zadejte `StringLibraryTests` v **název** textového pole, jak ukazuje následující obrázek:
+3. Vyberte **projekt testu jednotek (.NET Core)** šablony v pravém podokně a zadejte `StringLibraryTests` v **název** textového pole, jak ukazuje následující obrázek:
 
    ![** Dialogové okno Přidat nový projekt ** pro testování částí](./media/lut-start/add-unit-test-vb.png)
 
-1. Vyberte **OK** pro vytvoření projektu.
+4. Vyberte **OK** pro vytvoření projektu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Typ **Jednotkový test** do pole Hledat šablony a vybrat **projekt testů jednotek (.NET Core)** šablony. Klikněte na **Další**.
+
+3. Pojmenujte projekt `StringLibraryTests`.
+
+4. Klikněte na tlačítko **vytvořit** pro vytvoření projektu.
+
+::: moniker-end
 
    > [!NOTE]
    > Tento úvodní kurz používá Live Unit Testing s testovací rozhraní MSTest. Můžete také použít xUnit a NUnit testovacích architektur.
 
-1. Projekt testu jednotek nelze přistoupit, automaticky knihovny tříd, který je testování. Udělit přístup ke knihovně testu tak, že přidáte odkaz na projekt knihovny tříd. Chcete-li to provést, klikněte pravým tlačítkem na `StringLibraryTests` projektu a vyberte **přidat** > **odkaz**. V **správce odkazů** dialogového okna, ujistěte se, že **řešení** karta je vybraný a vyberte `StringLibrary` projektu, jak je znázorněno na následujícím obrázku.
+5. Projekt testu jednotek nelze přistoupit, automaticky knihovny tříd, který je testování. Udělit přístup ke knihovně testu tak, že přidáte odkaz na projekt knihovny tříd. Chcete-li to provést, klikněte pravým tlačítkem na `StringLibraryTests` projektu a vyberte **přidat** > **odkaz**. V **správce odkazů** dialogového okna, ujistěte se, že **řešení** karta je vybraný a vyberte `StringLibrary` projektu, jak je znázorněno na následujícím obrázku.
 
    ![** Správce odkaz ** dialogového okna](./media/lut-start/add-reference.png)
 
-1. Nahraďte často používaný kód testu jednotek poskytovanou šablonou následujícím kódem:
+6. Nahraďte často používaný kód testu jednotek poskytovanou šablonou následujícím kódem:
 
    [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest1.vb)]
 
-1. Uložte projekt tak, že vyberete **Uložit** ikonu na panelu nástrojů.
+7. Uložte projekt tak, že vyberete **Uložit** ikonu na panelu nástrojů.
 
-1. Testování jednotek kódu obsahuje některé jiné znaky než ASCII, Visual Studio zobrazí následující dialogové okno nás upozornit, že některé znaky budou ztraceny, pokud jsme soubor uložte ve formátu ASCII jeho výchozí. Zvolte **uložit s kódováním ostatní** tlačítko.
+8. Testování jednotek kódu obsahuje některé jiné znaky než ASCII, Visual Studio zobrazí následující dialogové okno nás upozornit, že některé znaky budou ztraceny, pokud jsme soubor uložte ve formátu ASCII jeho výchozí. Zvolte **uložit s kódováním ostatní** tlačítko.
 
    ![Zvolte kódování souboru](media/lut-start/ascii-encoding.png)
 
-1. V **kódování** rozevírací seznam **možnosti ukládání záloh** dialogovém okně zvolte **kódování Unicode (UTF-8 bez podpisu) - znaková stránka 65001**, jak je vidět na následujícím obrázku:
+9. V **kódování** rozevírací seznam **možnosti ukládání záloh** dialogovém okně zvolte **kódování Unicode (UTF-8 bez podpisu) - znaková stránka 65001**, jak je vidět na následujícím obrázku:
 
    ![Výběr kódování UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Kompilace projektu testování částí pomocí **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio.
+10. Kompilace projektu testování částí pomocí **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio.
 
 ---
 

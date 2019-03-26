@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936938"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416185"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 Jazyka specifického pro doménu (DSL) se vytvoří s použitím specializovaná řešení sady Visual Studio.
 
 ## <a name="prerequisites"></a>Požadavky
- Před zahájením tohoto postupu, je třeba nejprve nainstalovat tyto komponenty:
 
+Před zahájením tohoto postupu, tyto součásti nainstalujte:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Visual Studio SDK (instalují jako součást **vývoj rozšíření sady Visual Studio** úlohy)
+- Sada Modeling SDK (nainstalován jako součást sady Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>Vytváření řešení jazyka specifického pro doménu
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>K vytváření řešení jazyka specifického pro doménu
+1. Spusťte DSL Průvodce vytvořením nového **návrháře jazyka specifického pro doménu** projektu.
 
-1. Spusťte průvodce nástroje DSL.
+   > [!NOTE]
+   > Pokud možno název, který jste vybrali pro projekt by měl být platný Vizuálu C# identifikátor protože může být použit pro generování kódu.
 
-   1. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
+   ::: moniker range="vs-2017"
 
-   2. Zobrazí se dialogové okno **Nový projekt**.
+   ![Vytvoření dialogového okna DSL](../modeling/media/create_dsldialog.png)
 
-   3. V části **typy projektů**, rozbalte **ostatní typy projektů** uzel a klikněte na tlačítko **rozšiřitelnost**.
-
-   4. Klikněte na tlačítko **návrháře jazyka specifického pro doménu**.
-
-   5. V **název** zadejte název řešení. Klikněte na **OK**.
-
-       **Průvodce návrháře jazyka specifického pro doménu** se zobrazí.
-
-      > [!NOTE]
-      >  Název, který zadáte nejlépe, by měl být platný Visual C# identifikátor, protože může být použit pro generování kódu.
-
-      ![Vytvoření dialogového okna DSL](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. Zvolte šablonu DSL.
 

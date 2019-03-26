@@ -8,63 +8,77 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525450"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415054"
 ---
-# <a name="how-to-edit-xml-files"></a>Postupy: Úprava souborů XML
+# <a name="how-to-edit-xml-files"></a>Postupy: Úpravy souborů XML
 
 XML editor je nový editor souborů XML. Můžete použít samostatný soubor XML nebo soubor přidružený k projektu sady Visual Studio. XML editor souvisí s následujícími příponami: *.config*, *DTD*, *.xml*, *XSD*, *.xdr*, *XSL*, *.xslt*, a *.vssettings*. XML editor je také přidružen jiný soubor typ, který nemá žádné konkrétní editor zaregistrovaný, a který obsahuje obsah XML nebo DTD.
 
 > [!NOTE]
 > XHTML dokumenty jsou zpracovány pomocí editoru jazyka HTML.
 
-## <a name="to-edit-an-xml-file"></a>Chcete-li upravit soubor XML
+Chcete-li upravit soubor XML, poklikejte na soubor, který chcete upravit.
 
-1.  Poklikejte na soubor, který chcete upravit.
+## <a name="add-a-new-xml-file-to-a-project"></a>Přidejte nový soubor XML do projektu
 
-### <a name="to-add-a-new-xml-file-to-a-project"></a>Chcete-li přidat nový soubor XML do projektu
+1. Z **projektu** nabídce vyberte možnost **přidat novou položku**.
 
-1.  Z **projektu** nabídce vyberte možnost **přidat novou položku**.
+2. Vyberte **soubor XML** z **šablony** podokně.
 
-2.  Vyberte **soubor XML** z **šablony** podokně.
+3. Zadejte název souboru **název** pole a stiskněte klávesu **přidat**.
 
-3.  Zadejte název souboru **název** pole a stiskněte klávesu **přidat**.
+   Soubor XML přidán do projektu a otevře v editoru XML. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8" ?>`.
 
-     Soubor XML je přidán do projektu a otevřené v editoru XML. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8" ?>`.
+## <a name="add-an-existing-xml-file-to-a-project"></a>Přidání stávajícího souboru XML do projektu
 
-## <a name="to-add-an-existing-xml-file-to-a-project"></a>Chcete-li přidat k existujícímu souboru XML do projektu
+1. Z **projektu** nabídce vyberte možnost **přidat existující položku**.
 
-1.  Z **projektu** nabídce vyberte možnost **přidat existující položku**.
+   **Přidat existující položku** zobrazí se dialogové okno.
 
-     **Přidat existující položku** zobrazí se dialogové okno.
+2. Vyberte soubor XML a stisknutím klávesy **přidat**.
 
-2.  Vyberte soubor XML a stisknutím klávesy **přidat**.
+## <a name="create-a-new-xml-or-xslt-file"></a>Vytvořte nový soubor XML nebo XSLT
 
-## <a name="to-create-a-new-xml-or-xslt-file"></a>Chcete-li vytvořit nový soubor XML nebo XSLT
+1. Z **souboru** nabídce vyberte možnost **nový**.
 
-1.  Z **souboru** nabídce vyberte možnost **nový**.
+   **Nový soubor** zobrazí se dialogové okno.
 
-     **Nový soubor** zobrazí se dialogové okno.
+2. Vyberte **soubor XML** a vytvořte nový soubor XML, nebo vyberte **soubor XSLT** k vytvoření nové šablony stylů XSLT.
 
-2.  Vyberte **soubor XML** a vytvořte nový soubor XML, nebo vyberte **soubor XSLT** k vytvoření nové šablony stylů XSLT.
+3. Klikněte na tlačítko **otevřít**.
 
-3.  Klikněte na tlačítko **otevřít**.
+## <a name="create-an-empty-project-for-xml-files"></a>Vytvořit prázdný projekt pro soubory XML
 
-## <a name="to-create-a-project-for-xml-files"></a>Vytvoření projektu pro soubory XML
+::: moniker range="vs-2017"
 
-1.  Z **souboru** nabídce vyberte možnost **nový**a pak vyberte **projektu**.
+1. Z **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
-     Zobrazí se dialogové okno **Nový projekt**.
+   Zobrazí se dialogové okno **Nový projekt**.
 
-2.  Vyberte jazyk kódu podle vašeho výběru, vyberte **prázdný projekt**a klikněte na tlačítko **OK**.
+2. Vyberte jazyk kódu podle vašeho výběru, vyberte **prázdný projekt**.
 
-3.  Přidáte soubory XML do projektu.
+3. Klikněte na **OK**.
 
-     XML editor najde schémata, které přidáte do tohoto projektu a používá pro ověření a funkce IntelliSense v XML, schématu nebo soubory XSLT, které upravíte tento projekt je otevřený.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Z **souboru** nabídce vyberte možnost **nový** > **projektu**.
+
+2. Zadejte **prázdný projekt** do vyhledávacího pole šablony, vyberte **prázdný projekt (.NET Framework)** šablonu a pak klikněte na tlačítko **Další**.
+
+3. Klikněte na možnost **Vytvořit**.
+
+::: moniker-end
+
+4. Přidáte soubory XML do projektu.
+
+   XML editor najde schémata, které přidáte do tohoto projektu a používá pro ověření a funkce IntelliSense v XML, schématu nebo soubory XSLT, které upravíte tento projekt je otevřený.
 
 ## <a name="see-also"></a>Viz také:
 

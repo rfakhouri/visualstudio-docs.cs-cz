@@ -1,34 +1,66 @@
 ---
-title: Organizace šablon
+title: Vyhledání šablon
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-- Visual Studio templates, organizing
-- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1fe0dababa77d2f52f98618a2ba5a54b6b0b728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324997"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415457"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Postupy: Hledání a organizace šablon projektů a položek
 
-Soubory šablony musí být umístěn do umístění, které Visual Studio rozpozná pro šablony se zobrazí v **nový projekt** a **přidat novou položku** dialogových oknech. Můžete také vytvořit vlastní podkategorie v umístění uživatelské šablony a kategorie jsou uvedeny v **nový projekt** a **přidat novou položku** dialogových oknech.
+Soubory šablony musí být umístěn v zadaném umístění je zobrazený nový projekt a dialogová okna Nová položka...
+
+::: moniker range="vs-2017"
+
+Můžete také vytvořit vlastní podkategorie v umístění uživatelské šablony a kategorie jsou uvedeny v **nový projekt** a **přidat novou položku** dialogových oknech.
+
+::: moniker-end
 
 ## <a name="locate-templates"></a>Vyhledání šablon
 
 Nainstalované šablony a uživatelské šablony jsou uloženy ve dvou různých umístěních.
 
+### <a name="installed-templates"></a>Nainstalované šablony
+
+Ve výchozím nastavení jsou součástí šablony, které instalace sady Visual Studio:
+
+::: moniker range="vs-2017"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+Například následující adresář má položku šablony jazyka Visual Basic pro angličtinu (LCID 1033):
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+Například následující adresář má položku šablony jazyka Visual Basic pro angličtinu (LCID 1033):
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
 ### <a name="user-templates"></a>Uživatelské šablony
 
-Pokud chcete přidat komprimované (*ZIP*) soubor, který zahrnuje *.vstemplate* soubor do adresáře uživatele šablony, šablony se zobrazí v **nový projekt** nebo  **Přidat novou položku** dialogové okno. Ve výchozím nastavení uživatelské šablony jsou umístěny v:
+Pokud chcete přidat komprimované (*ZIP*) soubor, který obsahuje *.vstemplate* soubor do adresáře šablon, uživatele, se šablona zobrazuje v nový projekt a dialogová okna nové položky. Ve výchozím nastavení uživatelské šablony jsou umístěny v:
 
 ::: moniker range="vs-2017"
 
@@ -55,19 +87,9 @@ Například následující adresář má uživatel šablony projektů pro C#:
 ::: moniker-end
 
 > [!TIP]
-> Můžete nastavit umístění uživatele šablon v **nástroje** > **možnosti** > **projekty a řešení**  >   **Umístění**.
+> Můžete změnit umístění známé uživatelské šablony v **nástroje** > **možnosti** > **projekty a řešení**  >   **Umístění**.
 
-### <a name="installed-templates"></a>Nainstalované šablony
-
-Ve výchozím nastavení jsou součástí šablony, které instalace sady Visual Studio:
-
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\< programovací jazyk\>\\< ID národního prostředí\>*
-
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\< programovací jazyk\>\\< ID národního prostředí\>*
-
-Například následující adresář má položku šablony jazyka Visual Basic pro angličtinu (LCID 1033):
-
-- *C:\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
+::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>Organizace šablon
 
@@ -76,7 +98,7 @@ Kategorie v **nový projekt** a **přidat novou položku** dialogová okna, aby 
 > [!NOTE]
 > Nelze vytvořit novou kategorii na úrovni programovací jazyk. Nové kategorie lze vytvořit pouze v rámci jednotlivé jazyky.
 
-### <a name="to-create-new-user-project-template-categories"></a>Chcete-li vytvořit nového uživatele kategorií šablon projektu
+### <a name="create-new-user-project-template-categories"></a>Vytvoření nového projektu uživatele kategorií šablon
 
 1. Vytvořte složku ve složce programovací jazyk v adresáři projektu šablony uživatele. Například chcete navázat **HelloWorld** kategorii pro C# šablony projektů, vytvořte následující adresář:
 
@@ -88,7 +110,7 @@ Kategorie v **nový projekt** a **přidat novou položku** dialogová okna, aby 
 
    **HelloWorld** se zobrazí kategorie **nový projekt** dialogovém okně **nainstalováno** > **Visual C#** .
 
-### <a name="to-create-new-user-item-template-categories"></a>Chcete-li vytvořit nového uživatele kategorií šablon položek
+### <a name="create-new-user-item-template-categories"></a>Vytvořit novou položku uživatele kategorií šablon
 
 1. Vytvořte složku ve složce programovací jazyk v adresář šablon položek uživatele. Například chcete navázat **HelloWorld** kategorii pro C# šablon položek, vytvořte následující adresář:
 
@@ -103,8 +125,6 @@ Kategorie v **nový projekt** a **přidat novou položku** dialogová okna, aby 
 ### <a name="display-templates-in-parent-categories"></a>Zobrazení šablony v nadřazené kategorie
 
 Můžete povolit v podkategoriích, který se má zobrazit v jejich nadřazené kategorie pomocí šablony `NumberOfParentCategoriesToRollUp` prvek *.vstemplate* souboru. Tyto kroky jsou stejné pro šablony projektů a šablon položek.
-
-#### <a name="to-display-templates-in-parent-categories"></a>Chcete-li zobrazit šablony v nadřazené kategorie
 
 1. Vyhledejte *ZIP* soubor, který obsahuje šablonu.
 
@@ -133,6 +153,8 @@ Můžete povolit v podkategoriích, který se má zobrazit v jejich nadřazené 
 1. Odstranit extrahované soubory šablony a starou šablonu *ZIP* souboru.
 
 1. Vložit nový *ZIP* v adresáři, který měl na odstraněný soubor *ZIP* souboru.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Viz také:
 

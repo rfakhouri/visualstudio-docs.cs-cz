@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925238"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415600"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Testování vývoj řízený testy s použitím Průzkumníka testů
 
 Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně funguje napříč mnoha inkrementálními kroky vývoje. Existuje několik architektur, které můžete použít pro psaní jednotkových testů, včetně některých vyvinutých třetími stranami. Některá testovací rozhraní jsou zaměřena na testování v jiných jazycích či platformách. Průzkumník testů poskytuje tak jednotné rozhraní pro testování částí v některém z těchto rozhraní. Adaptéry jsou k dispozici pro nejčastěji používaná rozhraní a můžete napsat vlastní adaptér pro jiná rozhraní.
 
- Průzkumník testů nahrazuje okna jednotkových testů starších vydání sady Visual Studio. Mezi její výhody patří:
+Průzkumník testů nahrazuje okna jednotkových testů starších vydání sady Visual Studio. Mezi její výhody patří:
 
--   Spustit .NET, nespravovaných, databázových a jiných testů pomocí jednoho rozhraní.
+- Spustit .NET, nespravovaných, databázových a jiných testů pomocí jednoho rozhraní.
 
--   Použití jednotky testovacího rozhraní dle vlastního výběru, jako je například NUnit nebo rozhraní MSTest.
+- Použití jednotky testovacího rozhraní dle vlastního výběru, jako je například NUnit nebo rozhraní MSTest.
 
--   Zobrazit v jednom okně všechny informace, které potřebujete.
+- Zobrazit v jednom okně všechny informace, které potřebujete.
 
 ## <a name="use-test-explorer"></a>Pomocí Průzkumníka testů
- ![Spustit všechny tlačítko zobrazuje Průzkumník testů jednotek](../test/media/unittestexplorer-beta-.png)
+
+![Test Explorer zobrazující tlačítko Spustit vše](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Spuštění testů jednotek pomocí Průzkumníka testů
 
-1. Vytvořte jednotkové testy používající vybrané testovací rozhraní podle vlastního výběru.
+1. Vytvořte jednotkové testy používající vybrané testovací rozhraní podle vlastního výběru. Například vytvořit test používající rozhraní MSTest:
 
-    Například vytvořit test používající rozhraní MSTest:
+   1. Vytvoření **projekt testu jednotek** projektu pro C#, Visual Basic nebo C++.
 
-   1.  Vytvoření testovacího projektu.
-
-        V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#** nebo **Visual C++** a klikněte na tlačítko **Test**.
-
-        Vyberte **projekt testu jednotek**.
-
-   2.  Zapište každý Jednotkový test jako metodu. Předpona každou metodu testu `[TestMethod]` atribut.
+   2. Zapište každý Jednotkový test jako metodu. Předpona každou metodu testu `[TestMethod]` atribut.
 
 2. Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.
 
@@ -66,19 +61,17 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
 > [!NOTE]
 > Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Návod: Pomocí jednotky testů pro vývoj metody
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Průvodce: Pomocí jednotky testů pro vývoj metody
- Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
+Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Vytvoření testu a metody
 
-1. Vytvořte projekt knihovny tříd Visual C#. Tento projekt bude obsahovat kód, který chceme dodat. V tomto příkladu je pojmenována `MyMath`.
+1. Vytvoření C# **knihovny tříd** projektu. Tento projekt bude obsahovat kód, který chceme dodat. V tomto příkladu je pojmenována `MyMath`.
 
-2. Vytvoření testovacího projektu.
+2. Vytvořte nový **projekt testu jednotek** projektu.
 
-   -   V **nový projekt** dialogovém okně zvolte **Visual C#** > **testovací** a klikněte na tlačítko **projekt testu jednotek**.
-
-        ![Nové projekty kódu a testování](../test/media/unittestexplorerwalk1.png)
+   ![Nové projekty kódu a testování](../test/media/unittestexplorerwalk1.png)
 
 3. Napište základní testovací metodu. Ověřte výsledek pro určitý vstup:
 

@@ -1,5 +1,5 @@
 ---
-title: Dialogové okno Převést
+title: Převaděče projektu
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 570d0a5c6a3ff53b16b9975d40e78f59e5319ff7
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: f720e842bb1f13aa726773af0dec499d32bfcc2d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355018"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416068"
 ---
-# <a name="convert-dialog-box"></a>Dialogové okno Převést
+# <a name="convert-dialog-box"></a>Převést – dialogové okno
 
-**Převést** dialogové okno vám umožňuje vybrat převodní nástroj k vytvoření nového projektu z staré heslo. Například můžete vytvořit projekt jazyka Visual Basic 2005 z projektu jazyka Visual Basic 6.
+**Převést** dialogové okno byl použit v předchozích verzích sady Visual Studio a je nyní zastaralá.
 
-## <a name="open-the-convert-dialog-box"></a>Otevřete dialogové okno Převést
-
-1. V panelu nabídky zvolte **souboru** > **otevřít** > **převést**.
-
-   Zobrazí se seznam převodu kódu nástroje, které jsou aktuálně k dispozici.
-
-2. Vyberte nástroj, který je vhodný pro vaši aplikaci.
-
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přenosy, migrace a upgrade projektů sady Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

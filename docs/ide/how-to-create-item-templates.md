@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222084"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416384"
 ---
 # <a name="how-to-create-item-templates"></a>Postupy: Vytváření šablon položek
 
 V tomto článku se dozvíte, jak vytvořit šablonu položky pomocí **Průvodce exportem šablony**. Pokud šablony se skládají z více souborů, přečtěte si téma [jak: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md).
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Přidat šablonu položky uživatele do dialogového okna Přidat novou položku
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Přidat šablonu položky do dialogového okna Přidat novou položku
 
 1. Vytvořte nebo otevřete projekt v sadě Visual Studio.
 
@@ -46,7 +46,7 @@ V tomto článku se dozvíte, jak vytvořit šablonu položky pomocí **Průvodc
 
    Šablona položky se zobrazí v **přidat novou položku** dialogové okno. Pokud jste přidali popisu **Průvodce exportem šablony**, popis se zobrazí na pravé straně dialogového okna.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>K povolení šablony položky, který se má použít v projektu univerzální aplikace pro Windows
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Povolit šablony položky, který se má použít v projektu univerzální aplikace pro Windows
 
 Průvodce provádí velkou část práce, kterou vytvoření základní šablony, ale v mnoha případech budete muset ručně upravit *.vstemplate* souboru po exportu šablony. Například, pokud chcete, aby se zobrazí v položce **přidat novou položku** dialogové okno pro projekt univerzální aplikace pro Windows, je nutné provést několik kroků navíc.
 
@@ -68,7 +68,7 @@ Průvodce provádí velkou část práce, kterou vytvoření základní šablony
 
 Teď můžete přidat položku založenou na šabloně pro Universal Windows project z **přidat novou položku** dialogové okno.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>K povolení šablony pro podtypy konkrétním projektu
+## <a name="enable-templates-for-specific-project-subtypes"></a>Povolit šablony pro podtypy konkrétním projektu
 
 Můžete určit, že šablony objevit pouze pro pouze některé podtypů projektů, jako je například Windows, Office, databáze i na webu.
 
@@ -103,7 +103,7 @@ Následující příklad ukazuje šablonu položky pro **Office** projekty.
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Ruční vytvoření šablony položky bez použití průvodce Exportovat šablonu
+## <a name="manually-create-an-item-template"></a>Ručně vytvořit šablonu položky
 
 V některých případech můžete chtít vytvořit šablonu položky ručně, od začátku.
 

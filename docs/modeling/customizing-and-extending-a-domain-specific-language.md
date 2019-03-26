@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 001b0efc5beaa5f76f979070e8e73c2d59fb3e8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 140a79e3771e4097a58c6974c8e088006ae2105a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949795"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415652"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky) nabízí několik úrovní, ve kterém můžete definovat nástrojů pro modelování:
@@ -25,7 +25,7 @@ Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky
 
 2.  Vylaďte DSL pomocí pokročilejších funkcí definici DSL. Například můžete provést další odkazy zobrazí, když uživatel vytvoří element. Tyto postupy jsou většinou dosáhnout v definici DSL a některé vyžadují pár řádků kódu programu.
 
-3.  Rozšíření nástrojů pro modelování pomocí kódu programu. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3.  Rozšíření nástrojů pro modelování pomocí kódu programu. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
 >  Po aktualizaci souboru definic DSL, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před opětovné sestavování svého řešení.
@@ -51,14 +51,14 @@ Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky
 |Změňte název, ikonu a viditelnost uzly v Průzkumníku modelu vašeho kódu DSL.|Zobrazit [přizpůsobení Průzkumníka modelů](../modeling/customizing-the-model-explorer.md).|
 |Povolit kopírování, vyjmutí a vložení|Nastavte **povolit kopírování vkládání** vlastnost **Editor** uzel v Průzkumník DSL.|
 |Kopie referenčních odkazů a jejich cíle pokaždé, když se zkopíruje element. Například zkopírujte komentáře připojené k položce.|Nastavte **šíří kopírování** vlastnost zdrojové role (reprezentovaný identifikátorem řádek na jedné straně doménový vztah v diagramem definice DSL).<br /><br /> Napsání kódu pro přepsání ProcessOnCopy k dosažení složitějšího účinky.<br /><br /> Zobrazit [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).|
-|Odstranit, změnit nadřazenou položku nebo znovu propojit souvisejících prvků po odstranění prvku.|Nastavte **šíří odstranit** hodnotu role vztahu. Pro složitější efekty přepsat `ShouldVisitRelationship` a `ShouldVisitRolePlayer` metody v `MyDslDeleteClosure` třídy definované v **DomainModel.cs**<br /><br /> Zobrazit [přizpůsobení chování odstranění](../modeling/customizing-deletion-behavior.md)|
+|Odstranit, změnit nadřazenou položku nebo znovu propojit souvisejících prvků po odstranění prvku.|Nastavte **šíří odstranit** hodnotu role vztahu. Pro složitější efekty přepsat `ShouldVisitRelationship` a `ShouldVisitRolePlayer` metody v `MyDslDeleteClosure` třídy definované v **DomainModel.cs**.|
 |Zachovat obrazce rozložení a vzhled na kopírování a přetažení.|Přidání obrazců a konektorů k zkopírovaný `ElementGroupPrototype`. Je nejvhodnější metodu pro přepsání `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobrazit [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).|
 |Vkládání obrazců do zvoleného umístění, jako je aktuální pozice kurzoru.|Přepsat `ClipboardCommandSet.ProcessOnCopy()` použije umístění konkrétní verzi `ElementOperations.Merge().` naleznete v tématu [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).|
 |Vytvoření další odkazy na vložení|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|Povolit přetažení z diagramu, jiné DSL a Windows elementy|Zobrazit [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Povolit přetažení z diagramu, jiné DSL a Windows elementy|Zobrazit [jak: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Povolit tvar nebo nástroj přetahovat do podřízené obrazce, jako je port, jako kdyby byly přetahovat do nadřazené.|Definujte direktiva sloučení elementů na cílovou třídu objektu, předat přetažený objekt Nadřazený. Zobrazit [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).|
 |Povolit nástroj přetáhnout na obrazec a další odkazy tvaru nebo nebo objekty vytvořené. Chcete-li například povolit komentář, který má být přetaženy položku, ke kterému se chcete propojit.|Definování direktiva sloučení elementů ve třídě cílové domény a definování odkazů, které chcete vygenerovat. Ve složitých případech můžete přidat vlastní kód. Zobrazit [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).|
-|Vytvořte skupinu prvky pomocí jednoho nástroje. Například komponenta s pevnou sadu portů.|Potlačí metodu inicializace sady nástrojů v ToolboxHelper.cs. Vytvoření prvek skupiny prototypu (EGP) obsahující prvky a jejich vztahů odkazů. Zobrazit [přizpůsobení nástrojů a panelu nástrojů](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Zahrnout obrazce instančního objektu a port EGP nebo definovat BoundsRules umístit obrazce portu při vytváření instance EGP. Zobrazit [umístění a velikost obrazce omezení BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md).|
+|Vytvořte skupinu prvky pomocí jednoho nástroje. Například komponenta s pevnou sadu portů.|Potlačí metodu inicializace sady nástrojů v ToolboxHelper.cs. Vytvoření prvek skupiny prototypu (EGP) obsahující prvky a jejich vztahů odkazů. Zobrazit [přizpůsobení nástrojů a panelu nástrojů](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Zahrnout obrazce instančního objektu a port EGP nebo definovat BoundsRules umístit obrazce portu při vytváření instance EGP.|
 |Použijte jeden nástroj pro připojení k vytvoření instance několik typů vztahu.|Přidání direktivy odkazu připojení (LCD) do Tvůrce připojení, který je vyvolán nástroj. Monitorů LCD určit typ vztahu z typů dvou prvků. Chcete-li to závisí na stavy prvků, můžete přidat vlastní kód. Zobrazit [přizpůsobení nástrojů a panelu nástrojů](../modeling/customizing-tools-and-the-toolbox.md).|
 |Rychlé nástroje – uživateli můžete dvakrát kliknout na libovolný nástroj k vytvoření mnoha tvary a konektory v daný okamžik.|Průzkumník modelu DSL, vyberte `Editor` uzlu. V okně Vlastnosti nastavte **používá jako vždy navrchu položky panelu nástrojů**.|
 |Definujte příkazy nabídky|Zobrazit [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|

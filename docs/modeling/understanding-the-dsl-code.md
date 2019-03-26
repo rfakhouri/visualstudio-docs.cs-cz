@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928280"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416016"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
+
 Řešení jazyka specifického pro doménu (DSL), vygeneruje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v sadě Visual Studio. Toto rozhraní API je definováno v kódu, který je generován z definici DSL. Toto téma popisuje generovaného rozhraní API.
 
 ## <a name="the-example-solution-component-diagrams"></a>Příklad řešení: Diagramy komponent
- Při vytváření řešení, které je zdrojem většina příkladů v tomto tématu Vytvoření DSL z **komponenty modely** šablonu řešení. Toto je jeden standardní šablony, které se zobrazí, když vytvoříte nové řešení DSL.
+
+Při vytváření řešení, které je zdrojem většina příkladů v tomto tématu Vytvoření DSL z **komponenty modely** šablonu řešení. Toto je jeden standardní šablony, které se zobrazí, když vytvoříte nové řešení DSL.
 
 > [!NOTE]
->  Šablona DSL diagramy součástí nesouvisí s diagramy komponent UML, které můžete vytvořit pomocí nabídky architektury v sadě Visual Studio. V **nový projekt** dialogového okna rozbalte **jiný projekt Types\Extensibility** a potom klikněte na tlačítko **návrháře jazyka specifického pro doménu**.
+> Šablona DSL diagramy součástí se nazývá **návrháře jazyka specifického pro doménu**.
 
- Pokud nejste obeznámeni s touto šablonou řešení, stiskněte klávesu F5 a Experimentujte. Všimněte si zejména vytvořit porty přetažením nástroj portů do komponenty, a zda se můžete připojit porty.
+Stisknutím klávesy **F5** a experimentovat, pokud nejste obeznámeni s touto šablonou řešení. Všimněte si zejména vytvořit porty přetažením nástroj portů do komponenty, a zda se můžete připojit porty.
 
- ![Komponenty a propojených porty](../modeling/media/componentsample.png)
+![Komponenty a propojených porty](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktura řešení DSL
  **Dsl** projekt definuje rozhraní API pro vašeho DSL. **DslPackage** projektu definuje, jak se integruje s Visual Studio. Můžete také přidat svoje vlastní projekty, které mohou také obsahovat kód generovaný z modelu.

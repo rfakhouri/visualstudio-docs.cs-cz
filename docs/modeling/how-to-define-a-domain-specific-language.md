@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927877"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416419"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Do definice jazyka specifického pro doménu (DSL), vytvoříte ze šablony řešení sady Visual Studio. Klíčovou součástí řešení je diagramem definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a tvary DSL. Po úpravě a přidáte k těmto prvkům můžete přidat kód programu k přizpůsobení DSL podrobněji.
 
-Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Výběr šablony řešení
- Pokud chcete definovat DSL, musíte mít nainstalovaný následující komponenty:
 
+Pokud chcete definovat DSL, musíte mít nainstalovaný následující komponenty:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Rozšíření vývoj funkcí sady Visual Studio (včetně sady Visual Studio SDK)
+- Sada Modeling SDK (ji nainstalovat jako jednotlivých komponent v sadě Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové řešení sady Visual Studio pomocí šablony projektu jazyka specifického pro doménu.
 
- Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové řešení sady Visual Studio pomocí šablony projektu jazyka specifického pro doménu.
+### <a name="to-create-a-dsl-solution"></a>K vytvoření řešení DSL
 
-#### <a name="to-create-a-dsl-solution"></a>K vytvoření řešení DSL
+1. Vytvořte nový **jazyka specifického pro doménu** projektu.
 
-1. Vytvoření řešení se **jazyka specifického pro doménu** šablony, které najdete v části **ostatní typy/rozšíření projektu** v **nový projekt** dialogové okno.
+   ::: moniker range="vs-2017"
 
     ![Vytvoření dialogového okna DSL](../modeling/media/create_dsldialog.png)
 
-    Po kliknutí na **OK**, **Průvodce jazyka specifického pro doménu** otevře a zobrazí se seznam šablon řešení DSL.
+   ::: moniker-end
+
+    **Průvodce jazyka specifického pro doménu** otevře a zobrazí se seznam šablon řešení DSL.
 
 2. Klikněte na každou šablonu zobrazíte popis. Vyberte řešení, které nejlépe odpovídá co byste chtěli vytvořit.
 
@@ -594,7 +595,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
      Další informace najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-2.  Rozšíření nástrojů pro modelování pomocí kódu programu k dosažení pokročilejší účinky. Například můžete vytvořit příkazy nabídek, které můžete změnit model a vytvoříte nástroje, které se integrují nejmíň dva DSL. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+2.  Rozšíření nástrojů pro modelování pomocí kódu programu k dosažení pokročilejší účinky. Například můžete vytvořit příkazy nabídek, které můžete změnit model a vytvoříte nástroje, které se integrují nejmíň dva DSL. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ### <a name="changing-the-dsl-definition"></a>Změna definice DSL
  Při vytváření libovolnou položku v definici DSL mnoho výchozí hodnoty jsou nastaveny automaticky. Po nastavení, můžete je změnit. To zjednodušuje vývoj DSL, zároveň umožní výkonné úpravy.
@@ -606,7 +607,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
  Viz také [jak: Změnit Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Řešení potíží
- Následující tabulka uvádí některé z nejběžnějších problémů, které se vyskytují při návrhu DSL, společně s návrhy pro jejich řešení. Další Rady, jak je k dispozici na [vizualizace nástroje Extensibililty fórum](http://go.microsoft.com/fwlink/?LinkId=186074).
+ Následující tabulka uvádí některé z nejběžnějších problémů, které se vyskytují při návrhu DSL, společně s návrhy pro jejich řešení. Další Rady, jak je k dispozici na [fórum pro rozšiřitelnost nástroje vizualizace](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 
 | Problém | Doporučení |

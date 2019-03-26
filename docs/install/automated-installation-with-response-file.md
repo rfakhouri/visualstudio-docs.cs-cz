@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e127ca518a0c7befe3e9a2d14bc48f84ba54905e
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0fdd1560f4b32f6c0b555e1786a766d034184f91
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58321640"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415635"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Definování nastavení v souboru odpovědí.
 
@@ -50,6 +50,8 @@ Můžete aktualizovat `response.json` soubor, který je vytvořen ve složce apl
 
 Základní `response.json` soubor v rozložení by měl vypadat podobně jako v následujícím příkladu, s tím rozdílem, že by měl obsahovat hodnotu pro produkt a kanál, který chcete nainstalovat:
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -60,11 +62,29 @@ Základní `response.json` soubor v rozložení by měl vypadat podobně jako v 
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 Při vytvoření nebo aktualizaci rozložení, je také vytvoří soubor response.template.json.  Tento soubor obsahuje všechny úlohy, komponenty a jazyků, které lze použít.  Tento soubor je k dispozici jako šablona pro co může být součástí vlastní instalace.  Správci mohou používat tento soubor jako výchozí bod pro vlastní odpovědi souboru.  Odeberte ID pro takové věci, které nechcete k instalaci a uložit v souboru odpovědí.  Neupravujte soubor response.template.json nebo vaše změny budou ztraceny, jakmile dojde k aktualizaci rozložení.
 
 ## <a name="example-layout-response-file-content"></a>Obsah souboru odezvy příklad rozložení
 
 Následující příklad nainstaluje Visual Studio Enterprise s šest běžné úlohy a komponenty a jazyky angličtinu a francouzštinu uživatelského rozhraní. V tomto příkladu můžete použít jako šablonu; Stačí změňte úlohy a komponenty na ty, které chcete nainstalovat:
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -96,6 +116,43 @@ Následující příklad nainstaluje Visual Studio Enterprise s šest běžné �
     ]
 }
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

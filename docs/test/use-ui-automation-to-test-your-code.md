@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145223"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416263"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
@@ -62,9 +62,13 @@ Chcete-li získat přístup k programové nástroje pro testování uživatelsk�
 
 1. Vytvořte projekt programového testu UI.
 
-   Programové testy uživatelského rozhraní musí být součástí projektu programového testu UI. Pokud ještě nemáte projekt programového testu uživatelského rozhraní, vytvořte si ho. Zvolte **souboru** > **nový** > **projektu** otevřít **nový projekt** dialogové okno. V podokně kategorie na levé straně rozbalte **nainstalováno** > **jazyka Visual Basic** *nebo* **Visual C#**  >   **Test**. Vyberte **projekt programového testu UI** šablony a klikněte na tlačítko **OK**.
+   Programové testy uživatelského rozhraní musí být součástí projektu programového testu UI. Pokud ještě nemáte projekt programového testu uživatelského rozhraní, vytvořte si ho. Zvolte **souboru** > **nové** > **projektu**. Vyhledání a výběr **projekt programového testu UI** šablony projektu.
+
+   ::: moniker range="vs-2017"
 
    ![Programových testů UI v šabloně projektu v dialogovém okně Nový projekt](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Pokud se nezobrazí **projekt testu uživatelského rozhraní programového** šablony, budete muset [nainstalovat komponentu programového testu uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c6f8a7ceb24e6108e5604d9e862527880431b5b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324827"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415483"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Rychlý start: Vytvoření projektu pro zátěžový test
 
@@ -22,13 +22,13 @@ V tomto rychlém startu během 10 minut dozvíte, jak vytvořit a spustit webov�
 
 ## <a name="software-requirements"></a>Požadavky na software
 
-Projekty testů webového výkonu a zatížení jsou dostupné jenom v edici Enterprise systému Visual Studio.
+Projekty testů webového výkonu a zatížení jsou dostupné jen **Enterprise edition** sady Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Nainstalujte zátěžového testování součástí
 
 Pokud nemáte již výkonu webu a načíst testování nainstalována součást nástroje, bude nutné ji nainstalovat pomocí instalačního programu sady Visual Studio.
 
-1. Otevřít **instalační program sady Visual Studio** z **Start** nabídku Windows. Se dostanete také ho v sadě Visual Studio z **nový projekt** dialogové okno, nebo výběrem **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek.
+1. Otevřít **instalační program sady Visual Studio** z **Start** nabídku Windows. Dostanete se v sadě Visual Studio z dialogového okna Nový projekt nebo výběrem **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek.
 
 1. V **instalační program sady Visual Studio**, zvolte **jednotlivé komponenty** kartu a přejděte dolů k položce **ladění a testování** oddílu. Vyberte **výkonnosti webů a zátěžové testování nástroje**.
 
@@ -64,7 +64,7 @@ V této části vytvoříme C# projekt zátěžového testu. Můžete také vytv
 
 2. V okně start zvolte **vytvořte nový projekt**.
 
-3. V **vytvořte nový projekt** dialogové okno, zadejte **webového testu** do vyhledávacího pole a pak vyberte **webový výkon a projekt zátěžového testu \[zastaralé]** Šablona pro C#. Zvolte **Další**.
+3. Na **vytvořte nový projekt** zadejte **webového testu** do vyhledávacího pole a pak vyberte **webový výkon a projekt zátěžového testu \[zastaralé]** Šablona pro C#. Zvolte **Další**.
 
 4. Zadejte název projektu, pokud nechcete použít výchozí název a klikněte na tlačítko **vytvořit**.
 

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: c2702209d7a235d57ba1e1161675fe351d6a66e7
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323552"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415535"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 
@@ -43,6 +43,15 @@ Informace o tom, ke spuštění testů z příkazového řádku najdete v témat
 
    Zobrazí se dialogové okno **Nový projekt**.
 
+3. Zvolte C# **knihovny tříd** šablony projektu.
+
+4. Pojmenujte projekt **Bank**a potom klikněte na tlačítko **OK**.
+
+   Projekt banky se vytvoří a zobrazí v **Průzkumníka řešení** s *Class1.cs* soubor je otevřen v editoru kódu.
+
+   > [!NOTE]
+   > Pokud *Class1.cs* nelze otevřít v editoru kódu, dvakrát klikněte na soubor *Class1.cs* v **Průzkumníka řešení** ho otevřete.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -51,16 +60,16 @@ Informace o tom, ke spuštění testů z příkazového řádku najdete v témat
 
 2. V okně start zvolte **vytvořte nový projekt**.
 
-::: moniker-end
+3. Vyhledání a výběr C# **knihovny tříd** šablony projektu a pak klikněte na tlačítko **Další**.
 
-3. Zvolte C# šablona projektu knihovny tříd.
-
-4. Pojmenujte projekt **Bank**a potom klikněte na tlačítko **OK** nebo **vytvořit**.
+4. Pojmenujte projekt **Bank**a potom klikněte na tlačítko **vytvořit**.
 
    Projekt banky se vytvoří a zobrazí v **Průzkumníka řešení** s *Class1.cs* soubor je otevřen v editoru kódu.
 
    > [!NOTE]
    > Pokud *Class1.cs* nelze otevřít v editoru kódu, dvakrát klikněte na soubor *Class1.cs* v **Průzkumníka řešení** ho otevřete.
+
+::: moniker-end
 
 5. Zkopírujte zdrojový kód z [ukázkový projekt testování částí](../test/sample-project-for-creating-unit-tests.md)a nahraďte původní obsah *Class1.cs* zkopírovaný kód.
 
@@ -93,9 +102,9 @@ public void Debit(double amount)
 1. Na **souboru** nabídce vyberte možnost **přidat** > **nový projekt**.
 
    > [!TIP]
-   > Existuje několik způsobů přidání další projektu do existujícího řešení. Klepnutí pravým tlačítkem myši na řešení v **Průzkumníka řešení** a zvolte **přidat** > **nový projekt**. Nebo můžete vybrat **souboru** > **nový** > **projektu**a pak na **nový projekt** dialogového okna, vyberte **Přidat do řešení** možnost:
-   >
-   > ![Přidat do řešení možnost v dialogu Nový projekt](media/add-to-solution.png)
+   > Můžete také pravým tlačítkem na řešení v **Průzkumníka řešení** a zvolte **přidat** > **nový projekt**.
+
+::: moniker range="vs-2017"
 
 2. V **nový projekt** dialogového okna rozbalte **nainstalováno**, rozbalte **Visual C#** a klikněte na tlačítko **Test**.
 
@@ -104,6 +113,20 @@ public void Debit(double amount)
 4. V **název** zadejte `BankTests`a pak vyberte **OK**.
 
    **BankTests** projekt je přidán do **Bank** řešení.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Vyhledání a výběr C# **projekt testu jednotek** šablony projektu a pak klikněte na tlačítko **Další**.
+
+3. Pojmenujte projekt `BankTests`.
+
+4. Klikněte na možnost **Vytvořit**.
+
+   **BankTests** projekt je přidán do **Bank** řešení.
+
+::: moniker-end
 
 5. V **BankTests** projektu, přidejte odkaz na **Bank** projektu.
 

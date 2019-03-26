@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355786"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415693"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programového kódu a další soubory v projektu sady Visual Studio. Obvykle píšete šablony tak, aby se lišily kód, který se generují podle dat z *modelu*. Model je soubor nebo databázi, která obsahuje základní informace o podle požadavků vaší aplikace.
@@ -34,13 +34,9 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 
  Textová šablona obsahuje kombinaci text, který chcete generovat a programový kód, který generuje proměnné části textu. Kód program umožňuje opakujte nebo podmíněně vynechání části generovaného textu. Generovaný text může, samotné se programový kód, který bude součástí vaší aplikace.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Vytvoření textové šablony T4 návrhu
+## <a name="create-a-design-time-t4-text-template"></a>Vytvoření textové šablony T4 návrhu
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Chcete-li vytvořit šablonu T4 doby návrhu v sadě Visual Studio
-
-1. Vytvořit projekt sady Visual Studio, nebo otevřete existující.
-
-    Třeba na **souboru** nabídce zvolte **nový** > **projektu**.
+1. Vytvořte nový projekt sady Visual Studio, nebo otevřete existující.
 
 2. Přidejte do projektu soubor textové šablony a přiřaďte jí název, který má příponu **.tt**.
 
@@ -70,10 +66,11 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 6. V **Průzkumníka řešení**, rozbalte uzel soubor šablony a zjistíte, který má příponu souboru **.txt**. Tento soubor obsahuje text vytvořený ze šablony.
 
    > [!NOTE]
-   >  Pokud váš projekt je projekt jazyka Visual Basic, musíte kliknout na **zobrazit všechny soubory** Chcete-li zobrazit výstupní soubor.
+   > Pokud váš projekt je projekt jazyka Visual Basic, musíte kliknout na **zobrazit všechny soubory** Chcete-li zobrazit výstupní soubor.
 
-### <a name="regenerating-the-code"></a>Opětovné generování kódu
- Šablonu se spustí, generování pomocný soubor v některém z následujících případech:
+### <a name="regenerate-the-code"></a>Znovu vygenerovat kód
+
+Šablonu se spustí, generování pomocný soubor v některém z následujících případech:
 
 - Šablonu upravit a potom změňte fokus na jiné okno Visual Studio.
 
@@ -83,12 +80,11 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 
 - V **Průzkumníka řešení**, v místní nabídce libovolného souboru, zvolte **spustit vlastní nástroj**. Tuto metodu použijte k transformaci podmnožinu vybrané šablony.
 
-  Projekt sady Visual Studio můžete také nastavit tak, že šablony jsou spouštěny, když jste změnili datových souborů, které čtou. Další informace najdete v tématu [kód znovu se generuje automaticky](#Regenerating).
+Projekt sady Visual Studio můžete také nastavit tak, že šablony jsou spouštěny, když jste změnili datových souborů, které čtou. Další informace najdete v tématu [kód znovu se generuje automaticky](#Regenerating).
 
-## <a name="generating-variable-text"></a>Generování textu proměnlivé
- Textové šablony umožňují odlišit obsah generovaný soubor pomocí kódu programu.
+## <a name="generate-variable-text"></a>Generování textu proměnlivé
 
-#### <a name="to-generate-text-by-using-program-code"></a>Vygenerování textu pomocí kódu programu
+Textové šablony umožňují odlišit obsah generovaný soubor pomocí kódu programu.
 
 1. Změnit obsah `.tt` souboru:
 

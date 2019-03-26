@@ -18,17 +18,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0cd54f9cfb7f9df81f1eb4ac9f3ad43af226b1e
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324833"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414859"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Zakázání nebo přesunutí mezipaměti balíčku
 
-Mezipaměť balíčků poskytuje zdroj balíčků nainstalovaných v případě, že potřebujete opravit Visual Studio nebo další související produkty v případech, kdy mají bez připojení k Internetu. Některé disky nebo systém nastavit ups, ale možná chcete zachovat tyto balíčky kolem.
-Instalační program stáhne je podle potřeby, takže pokud chcete uložit nebo obnovení místo na disku můžete zakázat nebo přesunutí mezipaměti balíčku.
+Mezipaměť balíčků poskytuje zdroj balíčků nainstalovaných v případě, že potřebujete opravit Visual Studio nebo další související produkty v případech, kdy mají bez připojení k Internetu. Některé disky nebo systém nastavit ups, ale možná nebudete chtít zachovat všechny tyto balíčky kolem.
+Instalační program stáhne je podle potřeby, takže pokud chcete uložit nebo obnovení místo na disku, můžete zakázat nebo přesunutí mezipaměti balíčku.
 
 ## <a name="disable-the-package-cache"></a>Zakázat mezipaměť balíčku
 
@@ -40,7 +40,7 @@ Před instalací, upravit nebo opravte Visual Studio nebo jiné produkty s nový
 
 Všechny operace, které vám v žádném produktu odebere všechny existující balíčky pro tento produkt a vyhnete se ukládají všechny balíčky, které se po instalaci. Pokud upravíte nebo opravte Visual Studio a balíčky jsou požadovány, bude se automaticky se stáhne a odebrána po instalaci.
 
-Pokud chcete znovu povolit mezipaměť, předejte `--cache` místo. Pouze balíčky, které jsou požadovány se uloží do mezipaměti, takže pokud potřebujete obnovit všechny balíčky, měli byste opravit Visual Studio před odpojením z vaší sítě.
+Pokud chcete znovu povolit mezipaměť, předejte `--cache` místo. Pouze balíčky, které jsou požadovány se uloží do mezipaměti, takže pokud potřebujete k obnovení všech balíčků, měli byste opravit Visual Studio před odpojením z vaší sítě.
 
 ```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
@@ -50,9 +50,9 @@ Můžete také nastavit `KeepDownloadedPayloads` [zásad registru](set-defaults-
 
 ## <a name="move-the-package-cache"></a>Přesunutí mezipaměti balíčku
 
-Běžnou konfigurací systému je mít pro vývoj pro Windows nainstalované na SSD s větší pevného disku (nebo více) potřebuje, jako je zdrojový kód, binární soubory aplikace a další. Pokud chcete pracovat v režimu offline můžete místo toho přesunutí mezipaměti balíčku.
+Běžnou konfigurací systému je mít pro vývoj pro Windows nainstalované na SSD s větší pevného disku (nebo více) potřebuje, jako je zdrojový kód, binární soubory aplikace a další. Pokud chcete pracovat v režimu offline, přesunutí mezipaměti balíčku.
 
-V současné době můžete provést jen pokud jste nastavili `CachePath` [zásad registru](set-defaults-for-enterprise-deployments.md) před instalací, upravit nebo opravte Visual Studio.
+V současné době to lze provést pouze v případě, že nastavíte `CachePath` [zásad registru](set-defaults-for-enterprise-deployments.md) před instalací, upravit nebo opravte Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

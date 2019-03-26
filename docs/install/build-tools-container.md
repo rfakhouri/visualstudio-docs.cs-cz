@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 855534ff340ce9b5bb76bf45d4bf496bd1c2dc17
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324302"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415874"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace Build Tools do kontejneru
 
@@ -30,7 +30,7 @@ Pokud Visual Studio Build Tools neobsahuje nezbytné k sestavování zdrojového
 
 ## <a name="overview"></a>Přehled
 
-Pomocí [Docker](https://www.docker.com/what-docker) vytvořit image ze kterého můžete vytvořit kontejnery, které sestavení zdrojového kódu. Příklad souboru Dockerfile nainstaluje nejnovější sadu Visual Studio vytvářet nástroje 2017 a některé další užitečné programy často používají pro sestavování zdrojového kódu. Můžete dále upravit vlastní soubor Dockerfile zahrnout další nástroje a skripty pro spuštění testů, publikování výstupu sestavení a další.
+Pomocí [Docker](https://www.docker.com/what-docker), vytvořit image ze kterého můžete vytvořit kontejnery, které sestavení zdrojového kódu. Příklad souboru Dockerfile nainstaluje nejnovější sada Visual Studio Build Tools a některé další užitečné programy často používají pro sestavování zdrojového kódu. Můžete dále upravit vlastní soubor Dockerfile zahrnout další nástroje a skripty pro spuštění testů, publikování výstupu sestavení a další.
 
 Pokud jste již nainstalovali Docker pro Windows, můžete přeskočit ke kroku 3.
 
@@ -50,7 +50,7 @@ Pokud používáte Windows 10, můžete si [stáhnout a nainstalovat Docker Comm
 
 ## <a name="step-3-switch-to-windows-containers"></a>Krok 3. Přepnout na Windows kontejnery
 
-Sestavení nástroje 2017 můžete nainstalovat jenom na Windows, který vyžaduje, abyste [přepnout na kontejnery Windows](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Kontejnery Windows ve Windows 10 podporují pouze [izolace Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), ale kontejnerů Windows ve Windows serveru 2016 podporují Hyper-V a izolace procesů.
+Build Tools můžete nainstalovat jenom na Windows, který vyžaduje, abyste [přepnout na kontejnery Windows](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Kontejnery Windows ve Windows 10 podporují pouze [izolace Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), ale kontejnerů Windows ve Windows serveru 2016 podporují Hyper-V a izolace procesů.
 
 ## <a name="step-4-expand-maximum-container-disk-size"></a>Krok 4. Rozbalte kontejner maximální velikost disku
 
@@ -59,9 +59,12 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
 **Ve Windows 10**:
 
 1. [Klikněte pravým tlačítkem na ikonu Dockeru pro Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na hlavním panelu a klikněte na **nastavení**.
-2. [Klikněte na proces démon](https://docs.docker.com/docker-for-windows/#docker-daemon) oddílu.
-3. [Přepnout **základní** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) tlačítko **Upřesnit**.
-4. Přidejte následující pole vlastnost JSON zvětšete místo na disku na 120 GB (víc než dost pro Build Tools se místo pro růst).
+
+1. [Klikněte na proces démon](https://docs.docker.com/docker-for-windows/#docker-daemon) oddílu.
+
+1. [Přepnout **základní** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) tlačítko **Upřesnit**.
+
+1. Přidejte následující pole vlastnost JSON zvětšete místo na disku na 120 GB (víc než dost pro Build Tools se místo pro růst).
 
    ```json
    {
@@ -85,7 +88,7 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
    }
    ```
 
-5. Klikněte na tlačítko **použít**.
+1. Klikněte na tlačítko **použít**.
 
 **V systému Windows Server 2016**:
 
@@ -95,8 +98,9 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
    sc.exe stop docker
    ```
 
-2. Z příkazového řádku se zvýšenými oprávněními upravit "% ProgramData%\Docker\config\daemon.json" (nebo cokoli, co jste zadali pro `dockerd --config-file`).
-3. Přidejte následující pole vlastnost JSON zvětšete místo na disku na 120 GB (víc než dost pro Build Tools se místo pro růst).
+1. Z příkazového řádku se zvýšenými oprávněními upravit "% ProgramData%\Docker\config\daemon.json" (nebo cokoli, co jste zadali pro `dockerd --config-file`).
+
+1. Přidejte následující pole vlastnost JSON zvětšete místo na disku na 120 GB (víc než dost pro Build Tools se místo pro růst).
 
    ```json
    {
@@ -107,8 +111,10 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
    ```
 
    Tato vlastnost se přidá do všechno, co už máte.
-4. Soubor uložte a zavřete.
-5. Spusťte službu "docker":
+ 
+1. Soubor uložte a zavřete.
+
+1. Spusťte službu "docker":
 
    ```shell
    sc.exe start docker
@@ -119,22 +125,25 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
 Uložte soubor Dockerfile v následujícím příkladu do nového souboru na disku. Pokud je soubor nazván jednoduše soubor Dockerfile"", je rozpoznán ve výchozím nastavení.
 
 > [!WARNING]
-> V tomto příkladu soubor Dockerfile pouze vyloučí starší Windows SDK, kterou nejde instalovat do kontejnerů. Dřívější verze způsobit selhání příkazu sestavení.
+> V tomto příkladu soubor Dockerfile vyloučí pouze starší Windows sad SDK, kterou nejde instalovat do kontejnerů. Dřívější verze způsobit selhání příkazu sestavení.
 
 1. Otevřete příkazový řádek.
-2. Vytvořte nový adresář (doporučeno):
+
+1. Vytvořte nový adresář (doporučeno):
 
    ```shell
    mkdir C:\BuildTools
    ```
 
-3. Změňte adresář na tento nový adresář:
+1. Změňte adresář na tento nový adresář:
 
    ```shell
    cd C:\BuildTools
    ```
 
-3. Uložte C:\BuildTools\Dockerfile následujícím obsahem.
+1. Uložte C:\BuildTools\Dockerfile následujícím obsahem.
+ 
+   ::: moniker range="vs-2017"
 
    ```dockerfile
    # escape=`
@@ -142,7 +151,7 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    # Use the latest Windows Server Core image with .NET Framework 4.7.1.
    FROM microsoft/dotnet-framework:4.7.1
 
-   # Restore the default Windows shell for correct batch processing below.
+   # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
 
    # Download the Build Tools bootstrapper.
@@ -166,34 +175,103 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    ```
 
    > [!WARNING]
-   > Pokud vytváříte svou image přímo na microsoft/windowsservercore, nemusí správně nainstalovat rozhraní .NET Framework a je uvedena žádná chyba instalace. Po dokončení instalace se možná nespustí spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Také Upozorňujeme, že Image označené verze 4.7.1 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL` bude `RUN` a `ENTRYPOINT` pokyny k selhání.
+   > Pokud vytváříte svou image přímo na microsoft/windowsservercore, nemusí správně nainstalovat rozhraní .NET Framework a je uvedena žádná chyba instalace. Po dokončení instalace nemusí spouštět spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Všimněte si také, že Image, které jsou označené verzí 4.7.1 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL`, což způsobí, že `RUN` a `ENTRYPOINT` pokyny k selhání.
    >
    > Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) nenainstaluje správně mcr\.microsoft\.com\/windows\/servercore:1809 nebo novější. Se nezobrazí žádná chyba.
    >
    > Zobrazit [známé problémy pro kontejnery](build-tools-container-issues.md) Další informace.
 
-4. Spusťte následující příkaz v tomto adresáři.
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```dockerfile
+   # escape=`
+
+   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
+   FROM microsoft/dotnet-framework:4.7.1
+
+   # Restore the default Windows shell for correct batch processing.
+   SHELL ["cmd", "/S", "/C"]
+
+   # Download the Build Tools bootstrapper.
+   ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+
+   # Install Build Tools excluding workloads and components with known issues.
+   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+       --installPath C:\BuildTools `
+       --all `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+       --remove Microsoft.VisualStudio.Component.Windows81SDK `
+    || IF "%ERRORLEVEL%"=="3010" EXIT 0
+
+   # Start developer command prompt with any other commands specified.
+   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
+
+   # Default to PowerShell if no other command specified.
+   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   ```
+
+   > [!WARNING]
+   > Pokud vytváříte svou image přímo na microsoft/windowsservercore, nemusí správně nainstalovat rozhraní .NET Framework a je uvedena žádná chyba instalace. Po dokončení instalace nemusí spouštět spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Všimněte si také, že Image, které jsou označené verzí 4.7.1 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL`, což způsobí, že `RUN` a `ENTRYPOINT` pokyny k selhání.
+   >
+   > Zobrazit [známé problémy pro kontejnery](build-tools-container-issues.md) Další informace.
+
+   ::: moniker-end
+
+1. Spusťte následující příkaz v tomto adresáři.
+
+   ::: moniker range="vs-2017"
 
    ```shell
    docker build -t buildtools2017:latest -m 2GB .
    ```
 
-   Tento příkaz sestaví soubor Dockerfile v aktuálním adresáři pomocí 2 GB paměti. Výchozí hodnota 1 GB nestačí při instalaci některých úloh; však může být možné sestavit pouze 1 GB paměti, v závislosti na požadavcích sestavení.
+   Tento příkaz sestaví soubor Dockerfile v aktuálním adresáři pomocí 2 GB paměti. Výchozí hodnota 1 GB nestačí při instalaci některých úloh; Nicméně je možné vytvářet pouze 1 GB paměti, v závislosti na požadavcích sestavení.
 
    Finální image je označený "buildtools2017:latest", takže můžete snadno ji spustit v kontejneru jako "buildtools2017" od "posledního" značka je výchozí, pokud není zadána žádná značka. Pokud chcete použít konkrétní verzi sady Visual Studio vytvářet 2017 nástroje více [pokročilý scénář](advanced-build-tools-container.md), může být místo toho značku kontejneru s konkrétním Visual Studio build číslo stejně jako "posledního", tak kontejnery lze použít konkrétní verze konzistentně.
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```shell
+   docker build -t buildtools2019:latest -m 2GB .
+   ```
+
+   Tento příkaz sestaví soubor Dockerfile v aktuálním adresáři pomocí 2 GB paměti. Výchozí hodnota 1 GB nestačí při instalaci některých úloh; Nicméně je možné vytvářet pouze 1 GB paměti, v závislosti na požadavcích sestavení.
+
+   Finální image je označený "buildtools2019:latest", takže můžete snadno ji spustit v kontejneru jako "buildtools2019" od "posledního" značka je výchozí, pokud není zadána žádná značka. Pokud chcete použít konkrétní verzi sady Visual Studio vytvářet 2019 nástroje více [pokročilý scénář](advanced-build-tools-container.md), může být místo toho značku kontejneru s konkrétním Visual Studio build číslo stejně jako "posledního", tak kontejnery lze použít konkrétní verze konzistentně.
+
+   ::: moniker-end
 
 ## <a name="step-6-using-the-built-image"></a>Krok 6. Pomocí sestavenou image
 
 Teď, když jste vytvořili image, můžete ji spustit v kontejneru provádět interaktivní a automatizované sestavování. V příkladu se používá Developer Command Prompt, takže vaše cesta i ostatním proměnným prostředí jsou už nakonfigurovaná.
 
 1. Otevřete příkazový řádek.
-2. Spuštění kontejneru začínat prostředí PowerShell pro všechny vývojáře nastavení proměnné prostředí:
+
+1. Spuštění kontejneru začínat prostředí PowerShell pro všechny vývojáře nastavení proměnné prostředí:
+
+   ::: moniker range="vs-2017"
 
    ```shell
    docker run -it buildtools2017
    ```
 
-Pokud chcete použít tuto bitovou kopii pro pracovní postup CI/CD, je možné ji publikovat na vlastní [Azure Container Registry](https://azure.microsoft.com/services/container-registry) nebo jiných interní [registru Dockeru](https://docs.docker.com/registry/deploying) tak servery stačí stáhnout.
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```shell
+   docker run -it buildtools2019
+   ```
+
+   ::: moniker-end
+
+Pokud chcete použít tuto bitovou kopii pro pracovní postup CI/CD, je možné ji publikovat na vlastní [Azure Container Registry](https://azure.microsoft.com/services/container-registry) nebo jiných interní [registru Dockeru](https://docs.docker.com/registry/deploying) tak servery potřebují jenom chcete stáhnout.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

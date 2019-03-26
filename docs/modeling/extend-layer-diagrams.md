@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8888dfeef0a519aed66fc3c66be8c5bf6d215b02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 150621514f9153b1e9d67f8e9c85a00275c27b15
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955216"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416107"
 ---
 # <a name="extend-dependency-diagrams"></a>Rozšíření diagramů závislostí
+
 Můžete napsat kód k vytvoření a aktualizaci diagramů závislostí a k ověření struktury kód programu proti diagramů závislostí v sadě Visual Studio. Můžete přidat příkazy, které se zobrazují v nabídce místní (objektu context) diagramů, přizpůsobení gesta přetažení myší a přístup k modelu vrstvy z textových šablon. Můžete zabalit tato rozšíření do Visual Studio integrace rozšíření (VSIX) a distribuovat ostatním uživatelům aplikace Visual Studio.
 
  Další informace o diagramů závislostí naleznete v tématu:
@@ -31,7 +32,8 @@ Můžete napsat kód k vytvoření a aktualizaci diagramů závislostí a k ově
 -   [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)
 
 ##  <a name="prereqs"></a> Požadavky
- Musí být nainstalovaný na počítači, kde chcete vyvíjet rozšíření vrstvy:
+
+Musí být nainstalovaný na počítači, kde chcete vyvíjet rozšíření vrstvy:
 
 -   Visual Studio
 
@@ -39,13 +41,11 @@ Můžete napsat kód k vytvoření a aktualizaci diagramů závislostí a k ově
 
 -   Sada Modeling SDK pro Visual Studio
 
-
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+Musí mít vhodnou verzi sady Visual Studio nainstalované na počítači, ve kterém chcete spustit rozšíření vrstvy.
 
- Musí mít vhodnou verzi sady Visual Studio nainstalované na počítači, ve kterém chcete spustit rozšíření vrstvy. Další informace najdete v tématu [nasazení rozšíření pro modelování vrstev](../modeling/deploy-a-layer-model-extension.md).
-
- Které verze sady Visual Studio podporují diagramů závislostí najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Které verze sady Visual Studio podporují diagramů závislostí najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-section"></a>V tomto oddílu
  [Přidávání příkazů a gest do diagramů závislostí](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
@@ -53,12 +53,6 @@ Můžete napsat kód k vytvoření a aktualizaci diagramů závislostí a k ově
  [Přidání vlastního ověřování architektury do diagramů závislostí](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 
  [Přidání vlastních vlastností do diagramů závislostí](../modeling/add-custom-properties-to-layer-diagrams.md)
-
- [Procházení a aktualizace modelů vrstev v programovém kódu](../modeling/navigate-and-update-layer-models-in-program-code.md)
-
- [Nasazení rozšíření pro modelování vrstev](../modeling/deploy-a-layer-model-extension.md)
-
- [Řešení potíží s rozšířeními pro diagramy závislostí](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
 ## <a name="see-also"></a>Viz také
 

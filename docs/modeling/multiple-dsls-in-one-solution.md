@@ -7,39 +7,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a670c43d584fb65f014765874f23c42b5de71179
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942827"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416146"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Vícesouborové DSL v jediném řešení
+
 Jako součást jediného řešení můžete zabalit několik DSL, tak, že jsou nainstalovány společně.
 
- Můžete použít několik technik k integraci vícesouborové DSL. Další informace najdete v tématu [integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) a [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md) a [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).
+Můžete použít několik technik k integraci vícesouborové DSL. Další informace najdete v tématu [integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) a [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md) a [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).
 
-### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>K vytvoření více než jednom DSL ve stejném řešení
+## <a name="build-more-than-one-dsl-in-the-same-solution"></a>Sestavení více než jednom DSL ve stejném řešení
 
-1. Vytvořte dvě nebo více řešení DSL a projekt VSIX a přidejte všechny projekty do jediného řešení.
+1. Vytvořte nový **projekt VSIX** projektu.
 
-   -   Chcete-li vytvořit nový projekt VSIX: V **nový projekt** dialogového okna, vyberte **Visual C#** , **rozšiřitelnost**, **projekt VSIX**.
+2. Vytvoření dvou nebo více projektů DSL v adresáři řešení VSIX.
 
-   -   Vytvoření dvou nebo více řešení DSL v adresáři řešení VSIX.
+   - Pro každý DSL otevřete novou instanci sady Visual Studio. Vytvořte nový DSL a zadejte stejnou složku řešení jako řešení VSIX.
 
-        Pro každý DSL otevřete novou instanci sady Visual Studio. Vytvořte nový DSL a zadejte stejnou složku řešení jako řešení VSIX.
+   - Ujistěte se, že vytvoření každé DSL s příponou jiný název souboru.
 
-        Ujistěte se, že vytvoření každé DSL s příponou jiný název souboru.
+   - Změna názvů **Dsl** a **DslPackage** projekty tak, aby byly všechny různé. Příklad: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   -   Změna názvů **Dsl** a **DslPackage** projekty tak, aby byly všechny různé. Příklad: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+   - V každém **DslPackage\*\source.extension.tt**, aktualizujte tohoto řádku na správný název projektu Dsl:
 
-   -   V každém **DslPackage\*\source.extension.tt**, aktualizujte tohoto řádku na správný název projektu Dsl:
+      `string dslProjectName = "Dsl2";`
 
-        `string dslProjectName = "Dsl2";`
-
-   -   Do řešení VSIX, přidejte Dsl * a DslPackage\* projekty.
-
-        Můžete chtít umístit každý pár ve vlastní složce řešení.
+   - Do řešení VSIX, přidejte Dsl * a DslPackage\* projekty. Můžete chtít umístit každý pár ve vlastní složce řešení.
 
 2. Kombinovat manifestu VSIX DSL:
 
@@ -57,8 +54,8 @@ Jako součást jediného řešení můžete zabalit několik DSL, tak, že jsou 
 
    Výsledný VSIX nainstaluje i DSL. Můžete otestovat pomocí klávesy F5 nebo nasadit _YourVsixProject_**\bin\Debug\\\*VSIX**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
-- [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Postupy: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970514"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416341"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Postupy: Vytváření šablon položek s více soubory
 
@@ -28,11 +28,11 @@ ms.locfileid: "55970514"
 
 Šablony položek s více soubory vyžadují parametry k zajištění toho, že rozšíření správného souboru se používají při vytvoření položky. Pokud jste vytvořili pomocí šablon položek s více soubory **Průvodce exportem šablony**tyto parametry jsou automaticky generovány a žádné další úpravy je povinný.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Vytvoření šablony položek s více soubory s použitím Průvodce exportem šablony
+## <a name="use-the-export-template-wizard"></a>Pomocí Průvodce exportem šablony
 
 Stejným způsobem můžete vytvořit šablonu vícesouborové položce, stejně jako šablonu položky jedním souborem. Zobrazit [jak: Tvorba šablon položek s](../ide/how-to-create-item-templates.md). Na **vyberte položky, které chcete exportovat** stránku průvodce, vyberte soubor, který má závislé soubory (například soubor formuláře Windows Forms). Průvodce automaticky obsahuje všechny závislé soubory, jako je například návrháře a soubory prostředků v šabloně.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>Ruční vytvoření šablony položek s více soubory
+## <a name="manually-create-a-multi-file-item-template"></a>Ruční vytvoření šablony položek s více soubory
 
 1. Vytvořte šablonu položky, jako je by ručně vytvořit šablonu položky jeden soubor, ale zahrnout všechny soubory, které představuje vícesouborové položce.
 

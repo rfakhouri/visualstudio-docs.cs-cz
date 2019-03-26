@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d9d5a6ad819859822121a03aee9990f94de031b3
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325052"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415211"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Nástroje pro zjišťování a správu instancí sady Visual Studio
 
@@ -39,25 +39,31 @@ Kromě toho [rozhraní API pro konfiguraci nastavení](<xref:Microsoft.VisualStu
 
 ## <a name="using-vswhereexe"></a>Pomocí vswhere.exe
 
-`vswhere.exe` automaticky je součástí sady Visual Studio 2017 verze 15.2 nebo novější, nebo můžete sadu stáhnout z [stránky vydaných verzí](https://github.com/Microsoft/vswhere/releases). Použití `vswhere -?` zobrazíte informace nápovědy o tomto nástroji. Jako příklad tento příkaz zobrazí všechny verze sady Visual Studio, včetně starších verzí produktů a verzí a výsledky ve formátu JSON:
+`vswhere.exe` automaticky je součástí sady Visual Studio (od verze Visual Studio 2017 verze 15.2 a novějších verzí), nebo můžete sadu stáhnout z [stránky vydaných verzí VSWhere](https://github.com/Microsoft/vswhere/releases). Použití `vswhere -?` zobrazíte informace nápovědy o tomto nástroji. Jako příklad tento příkaz zobrazí všechny verze sady Visual Studio, včetně starších verzí produktů a verzí a výsledky ve formátu JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+::: moniker range="vs-2017"
 
->[!TIP]
->Další informace o instalaci sady Visual Studio 2017 najdete v tématu [archivy instalační program Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> [!TIP]
+> Další informace o instalaci sady Visual Studio 2017 najdete v tématu [archivy instalační program Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Úprava registr pro instanci aplikace Visual Studio
 
-V sadě Visual Studio 2017 jsou nastavení registru uložené v privátním umístění, která umožňuje více instancí vedle sebe k verzi sady Visual Studio na stejném počítači.
+V sadě Visual Studio nastavení registru jsou uložené v privátním umístění, která umožňuje více instancí vedle sebe k verzi sady Visual Studio na stejném počítači.
 
 Protože tyto položky nejsou uložené v registru globální, existují zvláštní pokyny pro použití Editoru registru provádět změny nastavení registru:
 
-1. Pokud máte otevřené instance sady Visual Studio 2017, zavřete ho.
-2. Spustit `regedit.exe`.
-3. Vyberte `HKEY_LOCAL_MACHINE` uzlu.
-4. V hlavní nabídce Regedit vyberte **soubor -> načíst Hive...**  a potom vyberte soubor privátního registru, který je uložený v **AppData\Local** složky. Příklad:
+1. Pokud máte otevřené instance sady Visual Studio, zavřete ho.
+
+1. Spustit `regedit.exe`.
+
+1. Vyberte `HKEY_LOCAL_MACHINE` uzlu.
+
+1. V hlavní nabídce Regedit vyberte **souboru** > **načíst Hive...**  a potom vyberte soubor privátního registru, který je uložený v **AppData\Local** složky. Příklad:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -68,7 +74,7 @@ Protože tyto položky nejsou uložené v registru globální, existují zvláš
 Zobrazí se výzva k zadání názvu hive, který se stane názvem izolované hive. Když tak učiníte, byste měli přejít registru v izolované hive, který jste vytvořili.
 
 > [!IMPORTANT]
-> Předtím, než znovu spustíte Visual Studio, musí uvolnit izolované hive, který jste vytvořili. Chcete-li to provést, vyberte soubor -> Uvolnit Hive v hlavní nabídce Regedit. (Pokud to neprovedete, pak soubor zůstane uzamčen a sady Visual Studio nebude možné spustit.)
+> Předtím, než znovu spustíte Visual Studio, musí uvolnit izolované hive, který jste vytvořili. Chcete-li to provést, vyberte **souboru** > **Uvolnit podregistr** v hlavní nabídce Regedit. (Pokud to neprovedete, pak soubor zůstane uzamčen a sady Visual Studio nebude možné spustit.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

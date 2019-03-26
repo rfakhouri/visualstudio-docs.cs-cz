@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926252"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415898"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Postupy: Vytvoření modulu plug-in rekordéru
 
@@ -35,34 +35,24 @@ Následující postupy popisují, jak vytvořit základní kód pro rekordér mo
 
 1.  Otevřete řešení, která obsahuje webový výkon a projekt zátěžového testu pomocí testu výkonnosti webu, pro kterou chcete vytvořit modul plug-in rekordéru.
 
-2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, vyberte **přidat**a klikněte na tlačítko **nový projekt**.
+2.  Přidat nový **knihovny tříd** projektu do řešení.
 
-     **Přidat nový projekt** se zobrazí dialogové okno.
-
-3.  V části **nainstalované šablony**vyberte **Visual C#**.
-
-4.  V seznamu šablon vyberte **knihovny tříd**.
-
-5.  V **název** textového pole zadejte název modulu plug-in rekordéru.
-
-     Knihovna tříd je přidána do **Průzkumníka řešení** a nová třída se otevře v **Editor kódu**.
-
-6.  V **Průzkumníku řešení**, v nová knihovně tříd projektové složky, klikněte pravým tlačítkem **odkazy** a pak zvolte položku **přidat odkaz**.
+3.  V **Průzkumníku řešení**, v nová knihovně tříd projektové složky, klikněte pravým tlačítkem **odkazy** a pak zvolte položku **přidat odkaz**.
 
     > [!TIP]
     > Příklad nové složky projektu knihovny třídy je **RecorderPlugins**.
 
      **Přidat odkaz** se zobrazí dialogové okno.
 
-7.  Vyberte **.NET** kartu.
+4.  Vyberte **.NET** kartu.
 
-8.  Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**.
+5.  Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá **odkazy** složky **Průzkumníku řešení**.
 
-9. Napište kód pro modul plug-in rekordéru. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
+6. Napište kód pro modul plug-in rekordéru. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Přepsat <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> metody.
+7. Přepsat <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> metody.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ Následující postupy popisují, jak vytvořit základní kód pro rekordér mo
     > [!NOTE]
     > Pokud změníte test webového výkonu, budete také muset nastavit <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> vlastnost na hodnotu true: `e.RecordedWebTestModified = true;`
 
-11. Přidejte další kód podle toho, co jste má modul plug-in rekordéru provést po výskytu nahrávání webu. Můžete například přidat kód pro zpracování vlastní korelace, jak je znázorněno v následující ukázce. Můžete také vytvořit rekordéru modulu plug-in pro takové věci jako převod komentářů k transakci nebo přidání pravidel ověřování do webového testu.
+8. Přidejte další kód podle toho, co jste má modul plug-in rekordéru provést po výskytu nahrávání webu. Můžete například přidat kód pro zpracování vlastní korelace, jak je znázorněno v následující ukázce. Můžete také vytvořit rekordéru modulu plug-in pro takové věci jako převod komentářů k transakci nebo přidání pravidel ověřování do webového testu.
 
-12. Na **sestavení** nabídce zvolte **sestavení \<název projektu knihovny tříd >**.
+9. Na **sestavení** nabídce zvolte **sestavení \<název projektu knihovny tříd >**.
 
-13. V dalším kroku je nutné nasadit postupně, aby se zaregistrovat pomocí sady Visual Studio modulu plug-in rekordéru.
+V dalším kroku nasaďte ji k registraci ve službě Visual Studio mohl modulu plug-in rekordéru.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Nasazení modulu plug-in rekordéru
 
@@ -96,7 +86,7 @@ Po kompilaci modulu plug-in rekordéru, umístěte výslednou knihovnu DLL jedn�
 > [!WARNING]
 > Po zkopírování modulu plug-in rekordéru do jednoho ze dvou umístění, musíte restartovat Visual Studio k registraci modulu plug-in rekordéru.
 
-### <a name="to-execute-the-recorder-plug-in"></a>Do spuštění modulu plug-in rekordéru
+### <a name="execute-the-recorder-plug-in"></a>Spuštění modulu plug-in rekordéru
 
 1.  Vytvoření nového testu výkonnosti webu.
 
@@ -123,9 +113,7 @@ Tento příklad ukazuje, jak vytvořit přizpůsobené záznamníku testu výkon
 > [!NOTE]
 > Úplný seznam vzorového kódu je umístěn v dolní části tohoto tématu.
 
-**Revize ukázkového kódu**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Procházením skrze výsledek vyhledáte první stránku s ReportSession
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Procházením skrze výsledek vyhledáte první stránku s ReportSession
 
 Tato část ukázkového kódu prochází každý zaznamenaný objekt a hledá tělo odpovědi pro ReportSession.
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>Přidání pravidla pro extrakci
+### <a name="add-an-extraction-rule"></a>Přidání pravidla pro extrakci
 
 Teď, když byla nalezena odpověď, musíte přidat pravidla pro extrakci. Tato část ukázkového kódu vytváří pravidlo extrakce používající <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> třídy a následně vyhledá správný požadavek v testu výkonnosti webu pro přidání pravidla extrakce. Každý objekt výsledku má přidánu novou vlastnost nazvanou DeclarativeWebTestItemId, která je, co se používá v kódu, chcete-li získat správnou žádost testu webového výkonu.
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>Nahraďte parametry řetězce dotazu
+### <a name="replace-query-string-parameters"></a>Nahraďte parametry řetězce dotazu
 
 Nyní kód najde všechny dotaz parametry řetězce, které mají název ReportSession a změňte hodnotu na {{Id_relace}}, jak je znázorněno v této části Ukázky kódu:
 

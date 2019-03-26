@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867745"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415665"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace podporující přetahování
 
@@ -158,13 +158,13 @@ Pokud přetaženou položku je prvek DSL, můžete otevřít zdrojový model a p
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Příprava sběrnice modelu projektu DSL
 
-1.  Zpřístupnění zdroje DSL pomocí sběrnice modelu Visual Studio:
+Zpřístupnění zdroje DSL pomocí sběrnice modelu Visual Studio:
 
-    1.  Stáhněte a nainstalujte rozšíření sběrnice modelu Visual Studio, pokud ještě není nainstalovaná. Další informace najdete v tématu [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Stáhněte a nainstalujte rozšíření sběrnice modelu Visual Studio, pokud ještě není nainstalovaná. Další informace najdete v tématu [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2.  Otevřete soubor definice DSL zdroje DSL v návrháře DSL. Klikněte pravým tlačítkem na návrhové ploše a potom klikněte na tlačítko **povolit Modelbus**. V dialogovém okně zvolte jednu nebo obě možnosti.  Klikněte na **OK**. Nový projekt "ModelBus" je přidán do řešení DSL.
+2. Otevřete soubor definice DSL zdroje DSL v návrháře DSL. Klikněte pravým tlačítkem na návrhové ploše a potom klikněte na tlačítko **povolit Modelbus**. V dialogovém okně zvolte jednu nebo obě možnosti.  Klikněte na **OK**. Nový projekt "ModelBus" je přidán do řešení DSL.
 
-    3.  Klikněte na tlačítko **Transformovat všechny šablony** a znovu sestavte řešení.
+3. Klikněte na tlačítko **Transformovat všechny šablony** a znovu sestavte řešení.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Odesílat objekt ze zdroje DSL
 

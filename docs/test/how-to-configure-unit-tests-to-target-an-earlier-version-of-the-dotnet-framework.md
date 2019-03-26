@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 0afa278bb7530905d4837ba06644731dcae52635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916697"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415938"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Postupy: Konfigurace testů jednotek pro cílení na dřívější verzi rozhraní .NET Framework
 
@@ -46,66 +46,48 @@ Když míříte znovu používat starší verze rozhraní .NET Framework testova
 
 - Nelze cílit testů jednotek pro starší verze klienta architektury.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Znovu cílení na konkrétní verzi rozhraní .NET Framework pro projekty testů částí Visual Basic
+## <a name="retargeting-for-visual-basic-unit-test-projects"></a>Mění se cílení projektů testů jednotek jazyka Visual Basic
 
-1.  Vytvořte nový projekt testování částí Visual Basic. Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **projektu**.
+1. Vytvořit nový jazyka Visual Basic **projekt testu jednotek** projektu.
 
-     **Nový projekt** se zobrazí dialogové okno.
-
-2.  V části **nainstalované šablony**, rozbalte **jazyka Visual Basic**. Vyberte **testovací** a pak vyberte **testovací projekt** šablony.
-
-3.  V **název** textového pole, zadejte název pro jazyk Visual Basic testovací projekt a klikněte na tlačítko **OK**.
-
-4.  V **Průzkumníka řešení**, zvolte **vlastnosti** z místní nabídky nový testovací projekt jazyka Visual Basic.
+2. V **Průzkumníka řešení**, zvolte **vlastnosti** v místní nabídce nový testovací projekt jazyka Visual Basic.
 
      Zobrazí se vlastnosti pro testovací projekt jazyka Visual Basic.
 
-5.  Na **kompilaci** kartě **Upřesnit možnosti kompilace** jak je znázorněno na následujícím obrázku.
+3. Na **kompilaci** kartě **Upřesnit možnosti kompilace** jak je znázorněno na následujícím obrázku.
 
      ![Možnosti rozšířené kompilace](../test/media/howtoconfigureunittest35frameworka.png)
 
-6.  Použití **cílového rozhraní (všechny konfigurace)** rozevíracího seznamu, chcete-li změnit cílovou architekturu na **rozhraní .NET Framework 3.5** nebo novější verze, jak je znázorněno na následujícím obrázku popisku B. Neměli zadejte verzi klienta.
+4. Použití **cílového rozhraní (všechny konfigurace)** rozevíracího seznamu, chcete-li změnit cílovou architekturu na **rozhraní .NET Framework 3.5** nebo novější verze, jak je znázorněno na následujícím obrázku popisku B. Neměli zadejte verzi klienta.
 
      ![Cílové rozhraní framework rozevírací&#45;seznamu dolů](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Znovu cílení na konkrétní verzi rozhraní .NET Framework pro jazyk Visual C# pomocí jednotek testování projektů
+## <a name="retargeting-for-c-unit-test-projects"></a>Mění se cílení pro C# projektů testů jednotek
 
-1.  Vytvořte nový projekt testování částí Visual C#. Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **projektu**.
+1. Vytvořte nový C# **projekt testu jednotek** projektu.
 
-     **Nový projekt** se zobrazí dialogové okno.
+2. V **Průzkumníka řešení**, zvolte **vlastnosti** v místní nabídce vašeho New C# testovacího projektu.
 
-2.  V části **nainstalované šablony**, rozbalte **Visual C#**. Vyberte **testovací** a pak vyberte **testovací projekt** šablony.
+   Vlastnosti pro vaše C# projekt testu se zobrazí.
 
-3.  V **název** textového pole, zadejte název pro váš jazyk Visual C# projekt testů a klikněte na tlačítko **OK**.
+3. Na **aplikace** kartě **Cílová architektura**. V rozevíracím seznamu zvolte **rozhraní .NET Framework 3.5** nebo novější verze, jak je znázorněno na následujícím obrázku. Neměli zadejte verzi klienta.
 
-4.  V **Průzkumníka řešení**, zvolte **vlastnosti** z místní nabídky Nový projekt testů Visual C#.
+   ![Cílové rozhraní framework rozevírací&#45;seznamu dolů](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-     Zobrazí se vlastnosti pro testovací projekt Visual C#.
+## <a name="retargeting-for-ccli-unit-test-projects"></a>Mění se cílení v C + +/ CLI projektů testů jednotek
 
-5.  Na **aplikace** kartě **Cílová architektura**. V rozevíracím seznamu zvolte **rozhraní .NET Framework 3.5** nebo novější verze, jak je znázorněno na následujícím obrázku. Neměli zadejte verzi klienta.
+1. Vytvořit nový C++ **projekt testu jednotek** projektu.
 
-     ![Cílové rozhraní framework rozevírací&#45;seznamu dolů](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   > [!WARNING]
+   > K sestavení C + +/ CLI částí pro předchozí verze rozhraní .NET Framework pro aplikaci Visual C++, je nutné použít odpovídající verzi sady Visual Studio.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Znovu cílení na konkrétní verzi rozhraní .NET Framework pro C + +/ CLI projektů testů jednotek
+2. V **Průzkumníka řešení**, zvolte **uvolnit projekt** z nový testovací projekt C++.
 
-1.  Vytvoření nového projektu testování částí C++. Na **souboru** nabídce vyberte možnost **nový** a potom klikněte na tlačítko **projektu**.
+3. V **Průzkumníka řešení**, zvolte uvolnit projekt testů C++ a pak zvolte **upravit \<název projektu > .vcxproj**.
 
-     **Nový projekt** se zobrazí dialogové okno.
+   *.Vcxproj* soubor se otevře v editoru.
 
-    > [!WARNING]
-    > K sestavení C + +/ CLI částí pro předchozí verze rozhraní .NET Framework pro aplikaci Visual C++, je nutné použít odpovídající verzi sady Visual Studio. Například cílit na rozhraní .NET Framework 3.5, nainstalujte Visual Studio 2008 a sadu Visual Studio 2008 Service Pack 1.
-
-2.  V části **nainstalované šablony**, rozbalte **Visual C ++**. Vyberte **testovací** a pak vyberte **testovací projekt** šablony.
-
-3.  V **název** textového pole, zadejte název pro Visual C++ testovací projekt a potom klikněte na **OK**.
-
-4.  V **Průzkumníka řešení**, zvolte **uvolnit projekt** z nového testovacího projektu Visual C++.
-
-5.  V **Průzkumníka řešení**, zvolte uvolnit projekt testů Visual C++ a klikněte na tlačítko **upravit \<název projektu > .vcxproj**.
-
-     *.Vcxproj* soubor se otevře v editoru.
-
-6.  Nastavte `TargetFrameworkVersion` verze 3.5 nebo novější verze v `PropertyGroup` označené `"Globals"`. Byste neměli zadávat jako verze klienta:
+4. Nastavte `TargetFrameworkVersion` verze 3.5 nebo novější verze v `PropertyGroup` označené `"Globals"`. Byste neměli zadávat jako verze klienta:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -118,9 +100,9 @@ Když míříte znovu používat starší verze rozhraní .NET Framework testova
       </PropertyGroup>
     ```
 
-7.  Uložte a zavřete *.vcxproj* souboru.
+5. Uložte a zavřete *.vcxproj* souboru.
 
-8.  V **Průzkumníka řešení**, zvolte **znovu načíst projekt** z místní nabídky pro nový testovací projekt Visual C++.
+6. V **Průzkumníka řešení**, zvolte **znovu načíst projekt** v místní nabídce pro nový testovací projekt C++.
 
 ## <a name="see-also"></a>Viz také:
 

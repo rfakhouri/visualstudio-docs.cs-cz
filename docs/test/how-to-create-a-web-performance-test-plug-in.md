@@ -11,12 +11,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a9b5ec7b0a4231297925ab8b487ec3f529ddaef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c107e6dcba9be92b738bb4756806d584b9abdb50
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955099"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416003"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Postupy: Vytvoření modulu Plugin pro test výkonnosti webu
 
@@ -33,43 +33,35 @@ Můžete použít vlastní web výkon testu moduly plug-in s testy výkonnosti w
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Můžete vytvořit modul plug-in testu výkonnosti webu vlastní
 
-1.  Otevřete webový výkon a projekt zátěžového testu, který obsahuje test výkonnosti webu.
+1. Otevřete webový výkon a projekt zátěžového testu, který obsahuje test výkonnosti webu.
 
-2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení a vyberte **přidat** a klikněte na tlačítko **nový projekt**.
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení a vyberte **přidat** a klikněte na tlačítko **nový projekt**.
 
-     **Přidat nový projekt** se zobrazí dialogové okno.
+3. Vytvořte nový **knihovny tříd** projektu.
 
-3.  V části **nainstalované šablony**vyberte **Visual C#**.
+   Nový projekt knihovny tříd je přidána do **Průzkumníka řešení** a nová třída se objeví v **Editor kódu**.
 
-4.  V seznamu šablon vyberte **knihovny tříd**.
+4. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** složku novou knihovnu tříd a vyberte **přidat odkaz**.
 
-5.  V **název** textového pole zadejte název vaší třídy.
+   **Přidat odkaz** se zobrazí dialogové okno.
 
-6.  Zvolte **OK**.
+5. Zvolte **.NET** kartu, posuňte se dolů a vyberte **Microsoft.VisualStudio.QualityTools.WebTestFramework**
 
-7.  Nový projekt knihovny tříd je přidána do **Průzkumníka řešení** a nová třída se objeví v **Editor kódu**.
-
-8.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** složku novou knihovnu tříd a vyberte **přidat odkaz**.
-
-9. **Přidat odkaz** se zobrazí dialogové okno.
-
-10. Zvolte **.NET** kartu, posuňte se dolů a vyberte **Microsoft.VisualStudio.QualityTools.WebTestFramework**
-
-11. Zvolte **OK**.
+6. Zvolte **OK**.
 
      Odkaz na **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá do **odkaz** složky **Průzkumníka řešení**.
 
-12. V **Průzkumníka řešení**, klikněte pravým tlačítkem na nejvyšší uzel webového výkonu a zatížení testovacího projektu, který obsahuje zátěžový test, ke kterému chcete přidat modul plug-in a vyberte test výkonnosti webu **přidat odkaz**.
+7. V **Průzkumníka řešení**, klikněte pravým tlačítkem na nejvyšší uzel webového výkonu a zatížení testovacího projektu, který obsahuje zátěžový test, ke kterému chcete přidat modul plug-in a vyberte test výkonnosti webu **přidat odkaz**.
 
-13. **Zobrazí se dialogové okno Přidat odkaz**.
+8. **Zobrazí se dialogové okno Přidat odkaz**.
 
-14. Zvolte **projekty** kartě a vyberte **projekt knihovny tříd**.
+9. Zvolte **projekty** kartě a vyberte **projekt knihovny tříd**.
 
-15. Zvolte **OK**.
+10. Zvolte **OK**.
 
-16. V **Editor kódu**, psát kód modul plug-in. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+11. V **Editor kódu**, psát kód modul plug-in. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-17. Implementujte kód uvnitř jednoho nebo více obslužných rutin událostí. V následujícím oddílu s příklady naleznete ukázku implementace.
+12. Implementujte kód uvnitř jednoho nebo více obslužných rutin událostí. V následujícím oddílu s příklady naleznete ukázku implementace.
 
     - <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs>
 
@@ -87,22 +79,22 @@ Můžete použít vlastní web výkon testu moduly plug-in s testy výkonnosti w
 
     - <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostTransactionEventArgs>
 
-18. Poté, co jste napsali kód, vytvořte nový projekt.
+13. Poté, co jste napsali kód, vytvořte nový projekt.
 
-19. Otevřete test výkonnosti webu.
+14. Otevřete test výkonnosti webu.
 
-20. Chcete-li přidat modul plug-in testu výkonnosti webu, zvolte **přidat modul Plug-in pro Test webové** na panelu nástrojů.
+15. Chcete-li přidat modul plug-in testu výkonnosti webu, zvolte **přidat modul Plug-in pro Test webové** na panelu nástrojů.
 
      **Přidat modul webového testu Plug-in** se zobrazí dialogové okno.
 
-21. V části **vyberte modul plug-in**vyberte modul plug-in třídu testu výkonu webu.
+16. V části **vyberte modul plug-in**vyberte modul plug-in třídu testu výkonu webu.
 
-22. V **vlastnosti pro vybraný modul plug-in** podokno, nastavte počáteční hodnoty pro modul plug-in pro použití v době běhu.
+17. V **vlastnosti pro vybraný modul plug-in** podokno, nastavte počáteční hodnoty pro modul plug-in pro použití v době běhu.
 
     > [!NOTE]
     > Z modulu plug-in lze vystavit libovolný počet vlastností, ale je třeba je nastavit jako veřejné a nastavitelné a musí mít základní typ, jako je například Integer, Boolean nebo String. Modul plug-in vlastností testu výkonnosti webu můžete změnit taky později pomocí okna Vlastnosti.
 
-23. Zvolte **OK**.
+18. Zvolte **OK**.
 
      Modul plug-in je přidán do **zásuvné moduly webového testu** složky.
 
@@ -113,8 +105,8 @@ Můžete použít vlastní web výkon testu moduly plug-in s testy výkonnosti w
     >
     > Důvodem je-li změnit kód na některý z modulů plug-in a vytvořit novou verzi knihovny DLL **(verze = 0.0.0.0)**, ale modul plug-in stále odkazuje původní verzi modulu plug-in. Chcete-li tento problém, postupujte podle těchto kroků:
     >
-    > 1.  Webový výkon a projekt zátěžového testu zobrazí se v odkazech zobrazí upozornění. Odeberte a znovu přidejte odkaz na knihovnu DLL Doplňku.
-    > 2.  Odeberte doplněk z vašeho testu nebo vhodného místa a znovu ho přidejte.
+    > 1. Webový výkon a projekt zátěžového testu zobrazí se v odkazech zobrazí upozornění. Odeberte a znovu přidejte odkaz na knihovnu DLL Doplňku.
+    > 2. Odeberte doplněk z vašeho testu nebo vhodného místa a znovu ho přidejte.
 
 ## <a name="example"></a>Příklad
 

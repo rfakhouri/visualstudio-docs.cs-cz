@@ -7,14 +7,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955060"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416398"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Průvodce: Vytváření, úpravy a správy programového testu uživatelského rozhraní
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Návod: Vytváření, úpravy a správy programového testu uživatelského rozhraní
 
 V tomto podrobném návodu se dozvíte, jak vytvářet, upravovat a udržovat programového uživatelského rozhraní testu aplikace Windows Presentation Framework (WPF). Návod poskytuje řešení pro opravu testů, které byly poškozeny různými problémy načasování a refaktoring ovládacích prvků.
 
@@ -22,41 +22,27 @@ V tomto podrobném návodu se dozvíte, jak vytvářet, upravovat a udržovat pr
 
 ## <a name="create-a-wpf-app"></a>Vytvoření aplikace WPF
 
-1.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.
+1. Vytvořte nový **aplikace WPF (.NET Framework)** projektu a pojmenujte ho **aplikaci SimpleWPFApp**.
 
-     Zobrazí se dialogové okno **Nový projekt**.
+     **Návrhář WPF** otevře a zobrazí hlavní okno MainWindow projektu.
 
-2.  V **nainstalováno** podokně rozbalte **Visual C#** a pak vyberte **Windows Desktop**.
+2. Pokud není panel nástrojů otevřen, otevřete jej. Zvolte **zobrazení** nabídky a klikněte na tlačítko **nástrojů**.
 
-3.  Nad prostředním podoknem ověřte, že cílové rozhraní framework rozevíracího seznamu je nastavena na **rozhraní .NET Framework 4.5**.
+3. V části **všechny ovládací prvky WPF** přetáhněte **tlačítko**, **zaškrtávací políčko** a **ProgressBar** ovládacího prvku do hlavního okna MainWindow v návrhu povrchu.
 
-4.  V prostředním podokně, vyberte **aplikace WPF** šablony.
+4. Vyberte **tlačítko** ovládacího prvku. V **vlastnosti** okna, změňte hodnotu **název** vlastnost z \<bez názvu > na button1. Změňte hodnotu **obsahu** vlastnost z tlačítka Start.
 
-5.  V **název** textového pole, typ **aplikaci SimpleWPFApp**.
+5. Vyberte **ProgressBar** ovládacího prvku. V **vlastnosti** okna, změňte hodnotu **název** vlastnost z \<bez názvu > na indikátor průběhu 1. Změňte hodnotu **maximální** vlastnost z **100** k **10000**.
 
-6.  Zvolte složku, do které bude projekt uložen. V **umístění** textové pole, zadejte název složky.
-
-7.  Zvolte **OK**.
-
-     **WPF Designer pro Visual Studio** otevře a zobrazí hlavní okno MainWindow projektu.
-
-8.  Pokud není panel nástrojů otevřen, otevřete jej. Zvolte **zobrazení** nabídky a klikněte na tlačítko **nástrojů**.
-
-9. V části **všechny ovládací prvky WPF** přetáhněte **tlačítko**, **zaškrtávací políčko** a **ProgressBar** ovládacího prvku do hlavního okna MainWindow v návrhu povrchu.
-
-10. Vyberte **tlačítko** ovládacího prvku. V **vlastnosti** okna, změňte hodnotu **název** vlastnost z \<bez názvu > na button1. Změňte hodnotu **obsahu** vlastnost z tlačítka Start.
-
-11. Vyberte **ProgressBar** ovládacího prvku. V **vlastnosti** okna, změňte hodnotu **název** vlastnost z \<bez názvu > na indikátor průběhu 1. Změňte hodnotu **maximální** vlastnost z **100** k **10000**.
-
-12. Vyberte **zaškrtávací políčko** ovládacího prvku. V **vlastnosti** okno, změňte hodnotu **název** vlastnost z \<bez názvu > na checkBox1 a zrušte **IsEnabled** vlastnost.
+6. Vyberte **zaškrtávací políčko** ovládacího prvku. V **vlastnosti** okno, změňte hodnotu **název** vlastnost z \<bez názvu > na checkBox1 a zrušte **IsEnabled** vlastnost.
 
      ![Jednoduché aplikace WPF](../test/media/codedui_wpfapp.png)
 
-13. Dvakrát klikněte na přidat obslužnou rutinu události click ovládacího prvku tlačítka.
+7. Dvakrát klikněte na přidat obslužnou rutinu události click ovládacího prvku tlačítka.
 
      *MainWindow.xmal.cs* se zobrazí v editoru kódu s kurzorem v nové metodě button1_Click.
 
-14. V horní části třídy hlavního okna MainWindow přidejte delegáta. Delegát bude použit pro indikátor průběhu. Chcete-li přidat delegáta, přidejte následující kód:
+8. V horní části třídy hlavního okna MainWindow přidejte delegáta. Delegát bude použit pro indikátor průběhu. Chcete-li přidat delegáta, přidejte následující kód:
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ V tomto podrobném návodu se dozvíte, jak vytvářet, upravovat a udržovat pr
         }
     ```
 
-15. V metodě button1_Click přidejte následující kód:
+9. V metodě button1_Click přidejte následující kód:
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ V tomto podrobném návodu se dozvíte, jak vytvářet, upravovat a udržovat pr
     }
     ```
 
-16. Uložte soubor.
+10. Uložte soubor.
 
 ### <a name="run-the-wpf-app"></a>Spuštění aplikace WPF
 
@@ -120,22 +106,14 @@ V tomto podrobném návodu se dozvíte, jak vytvářet, upravovat a udržovat pr
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Vytvoření programového testu uživatelského rozhraní pro aplikaci SimpleWPFApp
 
-1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat** a pak vyberte **nový projekt**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení a zvolte **přidat** > **nový projekt**.
 
-     **Přidat nový projekt** zobrazí se dialogové okno.
-
-1. V **nainstalováno** podokně rozbalte **Visual C#** a pak vyberte **Test**.
-
-1. V prostředním podokně, vyberte **projekt programového testu UI** šablony.
+2. Vyhledání a výběr **projekt programového testu UI** šablony projektů a pokračovat kroky, dokud se projekt vytvoří.
 
    > [!NOTE]
    > Pokud se nezobrazí **projekt testu uživatelského rozhraní programového** šablony, budete muset [nainstalovat komponentu programového testu uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. Zvolte **OK**.
-
-     Nový projekt programového testu UI s názvem **CodedUITestProject1** se přidá do vašeho řešení.
-
-     **Generovat kód pro programový Test uživatelského rozhraní** zobrazí se dialogové okno.
+     Nový projekt programového testu UI s názvem **CodedUITestProject1** se přidá do vašeho řešení a **generovat kód pro programový Test uživatelského rozhraní** zobrazí se dialogové okno.
 
 1. Vyberte **zaznamenat akce, upravit mapu uživatelského rozhraní nebo přidat kontrolní výrazy** možnost a vyberte **OK**.
 

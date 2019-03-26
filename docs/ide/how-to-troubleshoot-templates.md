@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b3a94ab9a44776b0c6716b99f594ec0fd840938
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943412"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415561"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Postupy: Řešení problémů se šablonami
 
@@ -20,7 +20,17 @@ Pokud šablonu se nepodaří načíst ve vývojovém prostředí, nalezení prob
 
 ## <a name="validate-the-vstemplate-file"></a>Ověřit soubor vstemplate
 
+::: moniker range="vs-2017"
+
 Pokud *vstemplate* soubor v šabloně neodpovídající schématu pro šablony sady Visual Studio, šablony se nemůže nacházet v **nový projekt** dialogové okno.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Pokud *vstemplate* soubor v šabloně neodpovídající schématu pro šablony sady Visual Studio, šablony se nemusí zobrazit v dialogovém okně místo, kde můžete vytvořit nové projekty.
+
+::: moniker-end
 
 ### <a name="to-validate-the-vstemplate-file"></a>Chcete-li ověřit soubor vstemplate
 

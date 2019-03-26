@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950146"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416233"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Procházení a aktualizace modelu v programovém kódu
 
@@ -226,27 +226,28 @@ using (Transaction t =
   Při vytváření elementu tímto způsobem je automaticky vytvořen konektor v diagramu, ale má výchozí tvar, barvu a další funkce. Pokud chcete řídit způsob vytvoření konektoru přidružené, naleznete v tématu [vytváření elementu a jeho tvar](#merge).
 
 ##  <a name="deleteelements"></a> Odstranění prvků
- Odstranit element voláním `Delete()`:
 
- `henry.Delete();`
+Odstranit element voláním `Delete()`:
 
- Tato operace odstraní také:
+`henry.Delete();`
+
+Tato operace odstraní také:
 
 - Vztah odkazy na a z elementu. Například `edward.Parents` bude již obsahovat `henry`.
 
 - Prvky v rolí, pro které `PropagatesDelete` příznak má hodnotu true. Například na tvar, který se zobrazí element se odstraní.
 
-  Ve výchozím nastavení, má každý vztah obsažení `PropagatesDelete` hodnotu true na cílová role. Odstraňuje se `henry` nedojde k odstranění `familyTree`, ale `familyTree.Delete()` by odstranit všechny `Persons`. Další informace najdete v tématu [přizpůsobení chování odstranění](../modeling/customizing-deletion-behavior.md).
+Ve výchozím nastavení, má každý vztah obsažení `PropagatesDelete` hodnotu true na cílová role. Odstraňuje se `henry` nedojde k odstranění `familyTree`, ale `familyTree.Delete()` by odstranit všechny `Persons`.
 
-  Ve výchozím nastavení `PropagatesDelete` neplatí pro role referenční stavy.
+Ve výchozím nastavení `PropagatesDelete` neplatí pro role referenční stavy.
 
-  Může způsobit odstranění pravidla chcete vynechat, nechte konkrétní šíření při odstranění objektu. To je užitečné, pokud jeden element jsou nahrazování pro jiné. Můžete zadat identifikátor GUID jednu nebo víc rolí, u kterých by neměly rozšířit odstranění. Identifikátor GUID můžete získat z třídy vztahu:
+Může způsobit odstranění pravidla chcete vynechat, nechte konkrétní šíření při odstranění objektu. To je užitečné, pokud jeden element jsou nahrazování pro jiné. Můžete zadat identifikátor GUID jednu nebo víc rolí, u kterých by neměly rozšířit odstranění. Identifikátor GUID můžete získat z třídy vztahu:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (V tomto konkrétním příkladu by neměl žádný vliv, protože `PropagatesDelete` je `false` pro role `ParentsHaveChildren` vztah.)
+(V tomto konkrétním příkladu by neměl žádný vliv, protože `PropagatesDelete` je `false` pro role `ParentsHaveChildren` vztah.)
 
-  V některých případech je odstranění bráněno existenci zámek, který je v elementu nebo na element, který se odstraní podle šíření. Můžete použít `element.CanDelete()` ke kontrole, jestli je možné odstranit prvek.
+V některých případech je odstranění bráněno existenci zámek, který je v elementu nebo na element, který se odstraní podle šíření. Můžete použít `element.CanDelete()` ke kontrole, jestli je možné odstranit prvek.
 
 ##  <a name="deletelinks"></a> Odstranění vztahů propojení
  Vztah odkazu můžete odstranit tak, že odeberete element z vlastnosti role:

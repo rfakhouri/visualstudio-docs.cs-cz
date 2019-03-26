@@ -2,8 +2,9 @@
 title: 'Kurz: Vytvořit jednoduchou C# Konzolová aplikace'
 description: Zjistěte, jak vytvořit konzolovou aplikaci C# v sadě Visual Studio, krok za krokem.
 ms.custom: seodec18, get-started
-ms.date: 03/12/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,22 +15,34 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736910"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416168"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Kurz: Vytvořit jednoduchou C# konzolovou aplikaci v sadě Visual Studio
 
 V tomto kurzu pro C#, Visual Studio budete používat k vytváření a spustíte aplikaci konzoly a prozkoumat některé funkce integrovaného vývojového prostředí (IDE) sady Visual Studio, když uděláte.
 
+::: moniker range="vs-2017"
+
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) stránku a nainstalovat zdarma.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
 Pokud chcete začít, vytvoříme C# projekt aplikace. Typ projektu obsahuje všechny soubory šablon, které potřebujete, než jste přidali ještě nic!
+
+::: moniker range="vs-2017"
 
 1. Otevřete Visual Studio 2017.
 
@@ -60,9 +73,44 @@ Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můž
 
 1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro různé platformy .NET Core** úlohy a klikněte na tlačítko **změnit**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. V okně start zvolte **vytvořte nový projekt**.
+
+   ![Zobrazit okno 'vytvořte nový projekt.](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na **vytvořte nový projekt** okno, zadejte nebo zadejte *konzoly* do vyhledávacího pole. Dále zvolte **C#** od jazyka seznamu a klikněte na tlačítko **Windows** ze seznamu platformy. 
+
+   Po použití filtrů jazyka a libovolné platformy, zvolte **Konzolová aplikace (.NET Core)** šablony a klikněte na tlačítko **Další**.
+
+   ![Zvolte C# šablonu Konzolová aplikace (.NET Framework)](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony, můžete jej nainstalovat z **vytvořte nový projekt** okna. V **nenašli, co hledáte?** zprávu, zvolte **nainstalovat další nástroje a funkce** odkaz.
+   >
+   > ![Odkaz "Nainstalovat další nástroje a funkce" z 'Nemůžete najít, co hledáte' zprávy v okně "vytvořit nový projekt.](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Pak ve Visual Studio Installer, zvolte **vývoj pro různé platformy .NET Core** pracovního vytížení.
+   >
+   > ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Po tomto, zvolte **změnit** tlačítko v instalačním programu sady Visual Studio. Můžete být vyzváni k uložte svou práci; Pokud ano, udělejte to. Dále zvolte **pokračovat** instalace zatížení. Pak se vraťte ke kroku 2 v tomto "[vytvořte projekt](#create-a-project)" postup.
+
+1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *Kalkulačka* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
+
+   ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "Kalkulačka"](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   Visual Studio otevře nový projekt, který obsahuje výchozí kód "Hello World".
+   
+::: moniker-end
+
 ## <a name="create-the-app"></a>Vytvoření aplikace
 
-Nejprve se podíváme procvičili matematiku základními celočíselnými v C#. Potom přidáme kód pro vytvoření základní kalkulačky. Další. Potom jsme budeme ladit aplikaci vyhledat a opravit chyby. A nakonec jsme upřesníte kód, který efektivnější.
+Nejprve se podíváme procvičili matematiku základními celočíselnými v C#. Potom přidáme kód pro vytvoření základní kalkulačky. Potom jsme budeme ladit aplikaci vyhledat a opravit chyby. A nakonec jsme upřesníte kód, který efektivnější.
 
 ### <a name="explore-integer-math"></a>Prozkoumejte matematikou celých čísel
 
@@ -218,7 +266,7 @@ Aplikace vytvoří však pouze desítkové výsledek. Vytvoříme několik dalš
 
 ## <a name="debug-the-app"></a>Ladění aplikace
 
-Vylepšili jsme v naší aplikaci základní kalkulačky, ale ještě nemá failsafes v místě pro zpracování výjimek, jako jsou chyby vstupu uživatele.
+Vylepšili jsme v naší aplikaci základní kalkulačky, ale ještě nemá selhání trezory v místě pro zpracování výjimek, jako jsou chyby vstupu uživatele.
 
 Například, pokud se pokusíte dělení čísla nulou nebo zadejte alfanumerického znaku při aplikace očekává, že číselný znak (nebo naopak), aplikace přestane fungovat a vrátí chybu.
 
@@ -404,7 +452,7 @@ Pusťme se do práce.
 
 1. Zvolte **Kalkulačka** ke spuštění programu, nebo stiskněte klávesu **F5**.
 
-1. Postupujte podle zobrazených výzev a počet **42** číslem **119**. Vaše aplikace by měl vypadat nějak takto:
+1. Postupujte podle zobrazených výzev a počet **42** číslem **119**. Vaše aplikace by měla vypadat podobně jako na následujícím snímku obrazovky:
 
     ![Okno konzoly refaktorovaný kalkulačky aplikaci, která zahrnuje výzvy, na které akcí a zpracování chyb pro nesprávný vstupy](./media/csharp-console-calculator-refactored.png)
 

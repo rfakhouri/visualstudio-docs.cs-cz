@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796826"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416367"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testování částí
 
@@ -38,7 +38,7 @@ Průzkumník testů také můžete spustit třetích stran a open source rozhran
 
 ## <a name="the-mybank-solution-example"></a>Příklad MyBank řešení
 
-V tomto tématu, používáme vývoj fiktivní aplikaci s názvem `MyBank` jako příklad. Není nutné skutečný kód a postupujte v tomto tématu vysvětlené v částech. Testovací metody jsou napsané v jazyce C# a zobrazí s použitím Microsoft Unit Testing Framework pro spravovaný kód. Koncepty se však snadno přenést do jiných jazyků a architektur.
+V tomto článku používáme vývoj fiktivní aplikaci s názvem `MyBank` jako příklad. Není nutné skutečný kód a postupujte v tomto tématu vysvětlené v částech. Testovací metody jsou napsané v jazyce C# a zobrazí s použitím Microsoft Unit Testing Framework pro spravovaný kód. Koncepty se však snadno přenést do jiných jazyků a architektur.
 
 ![MyBank řešení](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ Projekt testování částí obvykle zrcadlí strukturu projektu jeden kód. V t
 
 **Chcete-li přidat projekt do řešení pro testování částí:**
 
-1. Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **projektu** (klávesnice **Ctrl**+**Shift** + **N**).
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení a zvolte **přidat** > **nový** **projektu**.
 
-2. Na **nový projekt** dialogového okna rozbalte **nainstalováno** uzlu, vyberte jazyk, který chcete použít pro testovací projekt a pak zvolte **testování**.
+::: moniker range="vs-2017"
+
+2. V **nový projekt** dialogového okna rozbalte **nainstalováno** uzlu, vyberte jazyk, který chcete použít pro testovací projekt a pak zvolte **testování**.
 
 3. Chcete-li použít jeden z rozhraní pro testování částí Microsoft, zvolte **projekt testů jednotek** ze seznamu šablon projektu. V opačném případě vyberte šablonu projektu jednotky testů, který chcete použít. K testování `Accounts` projektu v našem příkladu by projekt pojmenujte `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > Ne všechna rozhraní pro testování částí třetích stran a open source poskytují šablony projektu sady Visual Studio. Informace o vytvoření projektu naleznete v dokumentu framework.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Použití vyhledávacího pole šablony projektu k vyhledání testování částí projektu šablony pro rozhraní pro testování, který chcete použít.
+
+3. Na další stránku zadejte název projektu. K testování `Accounts` projektu našeho příkladu mohla mít název projektu `AccountsTests`.
+
+::: moniker-end
 
 4. V projektu testování částí přidejte odkaz na projekt kódu v rámci testu v našem příkladu do projektu účty.
 

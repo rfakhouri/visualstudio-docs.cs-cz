@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222451"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414755"
 ---
 # <a name="workflow-project-templates"></a>Šablony projektu pracovního postupu
 
@@ -36,20 +36,14 @@ Visual Studio poskytuje čtyři různé šablony projektu pracovního postupu:
 
 Pro přístup k tyto šablony, nejdřív nainstalovat **Windows Workflow Foundation** komponentu sady Visual Studio. Podrobné pokyny najdete v tématu [nainstalovat Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Po instalaci **Windows Workflow Foundation** komponenty, otevřete **nový projekt** dialogové okno tak, že vyberete **souboru** > **nový**  >  **Projektu**.
+1. Po instalaci **Windows Workflow Foundation** komponenty, vyberte **souboru** > **nový** > **projektu**.
 
-1. V levém podokně, vyberte **Visual C#**   >  **pracovního postupu** kategorie (nebo **jazyka Visual Basic** > **pracovníhopostupu** Pokud dáváte přednost jazyka Visual Basic).
+1. Vyhledejte a vyberte šablonu projektu pracovního postupu, například, **Konzolová aplikace pracovního postupu** šablony.
 
-1. V prostředním podokně vyberte šablonu projektu **Konzolová aplikace pracovního postupu**.
-
-1. V **název** zadejte popisný název pro váš projekt, aby byl snadno identifikovat.
-
-1. V **umístění** zadejte adresář, ve kterém chcete projekt uložit, nebo vyberte **Procházet** přejít k němu.
-
-1. V **řešení** pole, zadejte název nového řešení. Vyberte **OK** k vytvoření aplikace.
+1. Pokračujte k vytvoření projektu.
 
    > [!NOTE]
-   > Pokud chcete přidat nový projekt do existujícího řešení, otevřete řešení v sadě Visual Studio, klikněte pravým tlačítkem na řešení v **Průzkumníka řešení**a vyberte **přidat** > **nový Projekt** otevřít **nový projekt** dialogové okno.
+   > Pokud chcete přidat nový projekt do existujícího řešení, otevřete řešení v sadě Visual Studio, klikněte pravým tlačítkem na řešení v **Průzkumníka řešení**a vyberte **přidat** > **nový Projekt**.
 
 ## <a name="workflow-console-app"></a>Konzolová aplikace pracovního postupu
 

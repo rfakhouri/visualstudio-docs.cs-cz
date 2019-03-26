@@ -10,33 +10,35 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: afcf85fff188853890b86cf7deb13b2457f5e0b8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2d0875f9a298af24575cc05008713cbb6c3e2ead
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157695"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414678"
 ---
-# <a name="unused-expression-values-and-parameters"></a>Nepoužité výraz hodnoty a parametry
+# <a name="unused-value-assignments-variables-and-parameters"></a>Přiřazení nepoužitých hodnot, proměnné a parametry
 
 Tento refaktoring platí pro:
 
 - C#
 - Visual Basic
 
-**Co:** Setmívá nepoužitých parametrů a vygeneruje upozornění pro nepoužívané výraz hodnoty.
+**Co:** Setmívá nepoužitých parametrů a vygeneruje upozornění pro nepoužívané výraz hodnoty. Kompilátor také provádí analýzu toku k vyhledání všech přiřazení nepoužitých hodnot. Nepoužité zesvětlit přiřazení hodnoty a zobrazí se žárovka s [rychlá akce](../quick-actions.md) odebrat redundantní přiřazení. Nepoužité proměnné s zobrazit neznámé hodnoty [rychlá akce](../quick-actions.md) návrhem na použití [zahodí](/dotnet/csharp/discards) místo. (Zahození jsou dočasné a fiktivní proměnné, které nejsou používány záměrně v kódu aplikace. Mohou snížit přidělení paměti a aby byl váš kód lépe čitelný.)
 
-**Kdy:** Máte parametry nebo výraz hodnoty, které se nikdy nepoužívá.
+**Kdy:** Máte přiřazení hodnoty, parametry nebo výraz hodnoty, které se nikdy nepoužívá.
 
-**Proč:** Někdy je obtížné určit, pokud hodnota nebo parametr je již nejsou déle používány. Tyto hodnoty mizení nebo pojmenováním upozornění, získáte vizuální upozornění jaké kódu můžete odstranit.
+**Proč:** Někdy je obtížné určit, pokud přiřazení hodnoty, proměnná nebo parametr je již nejsou déle používány. Tyto hodnoty mizení nebo generuje upozornění, získat vizuální upozornění jaké kódu můžete odstranit.
 
 ## <a name="unused-expression-values-and-parameters-diagnostic"></a>Nepoužité výraz hodnoty a parametry diagnostiky
 
-1. Máte všechny hodnoty výrazu nebo parametr, který se nepoužívá.
-2. Nepoužitý parametr se zobrazí vyblednout navýšení kapacity. Hodnota nevyužité výrazu se zobrazí upozornění.
+1. Máte žádné přiřazení hodnoty, proměnná nebo parametr, který se nepoužívá.
+2. Přiřazení nepoužitých hodnot nebo parametr, zobrazí se zašedlou navýšení kapacity. Hodnota výrazu nevyužité vygeneruje upozornění.
 
   ![Nepoužitý parametr](media/unused-parameter.png)
   ![nepoužitých hodnot](media/unused-value.png)
+  ![nepoužitých hodnot přiřazení](media/unused-value-assignment.png)
+  ![nepoužitých hodnot zahození](media/unused-value-discard.png)
 
 ## <a name="see-also"></a>Viz také:
 

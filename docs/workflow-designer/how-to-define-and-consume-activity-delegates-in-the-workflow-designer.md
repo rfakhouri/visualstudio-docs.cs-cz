@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222880"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415808"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Postupy: Definování a použití delegátů aktivit v návrháři postupu provádění
 
@@ -21,12 +21,10 @@ Rozhraní .NET framework 4.5 zahrnuje návrháře out-of-box <xref:System.Activi
 
 ## <a name="define-an-activity-delegate"></a>Definovat na delegáta aktivity
 
-1. V sadě Visual Studio, vyberte **souboru** > **nový** > **projektu**.
-
-2. V **nový projekt** dialogové okno, vyberte **pracovního postupu** kategorii na levé straně a pak vyberte **Konzolová aplikace pracovního postupu** šablony projektu. Název projektu (v případě potřeby) a klikněte na tlačítko **Ok**.
+1. Vytvořte nový **Konzolová aplikace pracovního postupu** projektu.
 
    > [!NOTE]
-   > Pokud se nezobrazí **pracovního postupu** kategorie, nejdřív nainstalovali **Windows Workflow Foundation** komponentu sady Visual Studio. Podrobné pokyny najdete v tématu [nainstalovat Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Pokud se nezobrazí **pracovního postupu** šablony projektu, nejprve nainstalujte **Windows Workflow Foundation** komponentu sady Visual Studio. Podrobné pokyny najdete v tématu [nainstalovat Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **přidat** > **nová položka**. Vyberte **pracovního postupu** kategorie a pak vyberte **aktivity** šablony položky. Pojmenujte novou aktivitu **MyForEach.xaml** a pak vyberte **OK**.
 

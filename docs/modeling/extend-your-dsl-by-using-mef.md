@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939616"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415574"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 
@@ -117,15 +117,15 @@ Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Fr
 
 Vaše DSL je nyní povoleno rozhraní MEF. Příkazy nabídky, obslužné rutiny gesta a omezení ověření můžete psát jako rozšíření MEF. Tato rozšíření můžete psát ve vašem řešení DSL společně s další vlastní kód. Kromě toho vy nebo jiní vývojáři psát samostatné rozšíření sady Visual Studio, které rozšíření vašeho DSL.
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Vytvoření rozšíření pro DSL povolené rozhraní MEF
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Vytvoření rozšíření pro DSL povolené rozhraní MEF
 
 Pokud máte přístup k DSL povolené MEF vytvořené sobě nebo někomu jinému, můžete psát rozšíření pro něj. Rozšíření lze použít k přidání příkazy, obslužné rutiny gesta nebo omezení ověření. K vytváření těchto rozšíření, použijte řešení sady Visual Studio extension (VSIX). Řešení se skládá ze dvou částí: projekt knihovny tříd, který vytváří sestavení kódu a projekt VSIX, která zabalí sestavení.
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>Vytvoření DSL rozšíření VSIX
+### <a name="to-create-a-dsl-extension-vsix"></a>Vytvoření DSL rozšíření VSIX
 
-1. Vytvořte nový projekt knihovny tříd. Chcete-li to provést, v **nový projekt** dialogu **jazyka Visual Basic** nebo **Visual C#** a pak vyberte **knihovny tříd**.
+1. Vytvořte nový **knihovny tříd** projektu.
 
-2. V nový projekt knihovny tříd přidejte odkaz na sestavení DSL.
+2. V novém projektu přidejte odkaz na sestavení DSL.
 
    - Toto sestavení obsahuje obvykle název, který končí na ". DSL.dll".
 
@@ -145,9 +145,9 @@ Pokud máte přístup k DSL povolené MEF vytvořené sobě nebo někomu jinému
 
    -   System.Windows.Forms.dll
 
-4. Vytvořte VSIX projekt ve stejném řešení. Chcete-li to provést, v **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a pak vyberte  **Projekt VSIX**.
+4. Vytvořte nový **projekt VSIX** projektu.
 
-5. V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.
+5. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt VSIX a zvolte **nastavit jako spouštěný projekt**.
 
 6. V novém projektu, otevřete **source.extension.vsixmanifest**.
 
@@ -376,5 +376,5 @@ namespace MefExtension
 
 - [Odesílání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [MEF (Managed Extensibility Framework)](/dotnet/framework/mef/index)
-- [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Postupy: Přidání obslužné rutiny operace podporující přetahování](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Ověřování v jazyce specifickém pro doménu](../modeling/validation-in-a-domain-specific-language.md)
