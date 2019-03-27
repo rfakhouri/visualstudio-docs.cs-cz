@@ -1,22 +1,20 @@
 ---
 title: Nasazení kontejneru Dockeru ASP.NET do Azure Container Registry (ACR) | Dokumentace Microsoftu
 description: Zjistěte, jak nasadit webovou aplikaci ASP.NET Core do registru kontejnerů pomocí Visual Studio Tools for Docker
-ms.prod: ''
-services: azure-container-service
 author: ghogen
 manager: jillfra
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
-ms.topic: article
+ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 346c26a4abe9fd3a28f7d9f711971386fbf1d815
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d287d26b9807876d99b4bed871c464a3130e627f
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149254"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515172"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Nasazení kontejneru ASP.NET do registru kontejneru pomocí sady Visual Studio
 

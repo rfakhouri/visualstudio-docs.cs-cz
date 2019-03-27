@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2ceb871dfc8c6c5a07a0a176b8344944edacd893
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 659f220936bd1a6273a27d63642534955a48c7aa
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325302"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515243"
 ---
 # <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
@@ -51,7 +51,7 @@ Dotazy týkající se spouštění předchozích verzí sady Visual Studio soub�
 
 ## <a name="step-2---download-visual-studio"></a>Krok 2: stažení sady Visual Studio
 
-Dále si stáhněte soubor zaváděcího nástroje sady Visual Studio. Uděláte to tak, klikněte na následující tlačítko, vyberte edici sady Visual Studio 2017, který chcete, klikněte na tlačítko **Uložit**a potom klikněte na tlačítko **otevřít složku**.
+Dále si stáhněte soubor zaváděcího nástroje sady Visual Studio. Uděláte to tak, klikněte na následující tlačítko, vyberte edici sady Visual Studio 2017, který chcete, zvolte **Uložit**a klikněte na tlačítko **otevřít složku**.
 
  > [!div class="button"]
  > [Stažení sady Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
@@ -67,9 +67,9 @@ Potom spusťte zaváděcího nástroje sloužící k instalaci instalačního pr
    * **vs_professional.exe** for Visual Studio Professional
    * **vs_community.exe** pro Visual Studio Community  <br><br>
 
-   Pokud se zobrazí oznámení o řízení uživatelských účtů, klikněte na tlačítko **Ano**.
+   Pokud se zobrazí oznámení o řízení uživatelských účtů, zvolte **Ano**.
 
-2. Požádáme vás potvrďte Microsoft [licenční podmínky](https://visualstudio.microsoft.com/license-terms/) a Microsoft [prohlášení o zásadách](https://privacy.microsoft.com/privacystatement). Klikněte na tlačítko **pokračovat**.
+2. Požádáme vás potvrďte Microsoft [licenční podmínky](https://visualstudio.microsoft.com/license-terms/) a Microsoft [prohlášení o zásadách](https://privacy.microsoft.com/privacystatement). Zvolte **pokračovat**.
 
    ![Licenční podmínky a prohlášení o zásadách](media/vs2017-privacy-and-license-terms.PNG "licenční podmínky společnosti Microsoft a prohlášení o ochraně osobních údajů")
 
@@ -83,24 +83,24 @@ Po dokončení instalace instalační program vám pomůže ho svou instalaci p�
 
      Například zvolte úlohu "Vývoj desktopových aplikací .NET". Obsahuje výchozí základní editor, který obsahuje základní podporu pro více než 20 jazycích, schopnost otevírat a upravovat kód z libovolné složky bez nutnosti vytvářet projekt, editaci kódu a integrované správy zdrojového kódu.
 
-2. Po výběru workload(s) Chcete kliknutím **nainstalovat**.
+2. Po výběru workload(s) chcete zvolit **nainstalovat**.
 
     V dalším kroku stav obrazovek, které zobrazí průběh instalace sady Visual Studio.
 
-3. Po instalaci nové úlohy a komponenty, klikněte na tlačítko **spuštění**.
+3. Po instalaci nové úlohy a komponenty, zvolte **spuštění**.
 
 > [!TIP]
-> Kdykoli po instalaci můžete nainstalovat úlohy nebo komponenty, které nenainstaloval původně. Pokud máte Visual Studio otevřete, přejděte na **nástroje** > **získat nástroje a funkce...**  tím se otevře instalačního programu sady Visual Studio. Nebo otevřete **instalační program sady Visual Studio** z nabídky Start. Odtud můžete vybrat úlohy nebo komponenty, které chcete nainstalovat a pak klikněte na **změnit**.
+> Kdykoli po instalaci můžete nainstalovat úlohy nebo komponenty, které nenainstaloval původně. Pokud máte Visual Studio otevřete, přejděte na **nástroje** > **získat nástroje a funkce...**  tím se otevře instalačního programu sady Visual Studio. Nebo otevřete **instalační program sady Visual Studio** z nabídky Start. Odtud můžete vybrat úlohy nebo komponenty, které chcete nainstalovat, a pak zvolte **změnit**.
 
 ## <a name="step-5---select-individual-components-optional"></a>Krok 5: vyberte jednotlivé komponenty (volitelné)
 
-Pokud už nechcete používat funkci úlohy k přizpůsobení instalace sady Visual Studio, můžete tak učiníte nainstalováním jednotlivé komponenty. Chcete-li vybrat jednotlivé komponenty, klikněte na tlačítko **jednotlivé komponenty** z instalačního programu sady Visual Studio, vyberte, co chcete a pak postupujte podle pokynů.
+Pokud už nechcete používat funkci úlohy k přizpůsobení instalace sady Visual Studio, můžete tak učiníte nainstalováním jednotlivé komponenty. Chcete-li vybrat jednotlivé komponenty, zvolte **jednotlivé komponenty** z instalačního programu sady Visual Studio, vyberte, co chcete a pak postupujte podle pokynů.
 
   ![Visual Studio 2017 – instalace jednotlivých součástí](media/vs2017-components.PNG "jednotlivých součástí instalace sady Visual Studio")
 
 ## <a name="step-6---install-language-packs-optional"></a>Krok 6 – instalace jazykových sad (volitelné)
 
-Ve výchozím nastavení instalační program pokusí tak, aby odpovídala jazyku operačního systému při prvním spuštění. Chcete-li nainstalovat Visual Studio 2017 v jazyce podle vašeho výběru, klikněte na tlačítko **jazykových sad** možnost z instalačního programu sady Visual Studio a postupujte podle zobrazených výzev.
+Ve výchozím nastavení instalační program pokusí tak, aby odpovídala jazyku operačního systému při prvním spuštění. Chcete-li nainstalovat Visual Studio 2017 v jazyce podle vašeho výběru, zvolte **jazykových sad** možnost z instalačního programu sady Visual Studio a postupujte podle zobrazených výzev.
 
   ![Visual Studio 2017 – instalace jazykových sad](media/vs2017-languages.PNG "jazykové sady Nainstalujte Visual Studio")
 
@@ -118,15 +118,34 @@ Další informace najdete v tématu [změnit umístění instalace v sadě Visua
 
 ## <a name="step-8---start-developing"></a>Krok 8: začít s vývojem
 
-1. Po dokončení instalace sady Visual Studio, klikněte na tlačítko **spuštění** tlačítko, abyste mohli začít vyvíjet pomocí sady Visual Studio.
+::: moniker range="vs-2017"
 
-2. Klikněte na tlačítko **souboru**a potom klikněte na tlačítko **nový projekt**.
+1. Po dokončení instalace sady Visual Studio, zvolte **spuštění** tlačítko, abyste mohli začít vyvíjet pomocí sady Visual Studio.
+
+2. Zvolte **souboru**a klikněte na tlačítko **nový projekt**.
 
 3. Vyberte typ projektu.
 
-   Například [sestavení aplikace v jazyce C++](../ide/getting-started-with-cpp-in-visual-studio.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C++** a pak vyberte typ projektu jazyka C++, který má být sestaveno.
+   Například [sestavení aplikace v jazyce C++](../ide/getting-started-with-cpp-in-visual-studio.md), zvolte **nainstalováno**, rozbalte **Visual C++** a pak vyberte typ projektu jazyka C++, který má být sestaveno.
 
-   K [sestavení C# aplikace](../get-started/csharp/tutorial-wpf.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C#** a pak vyberte C# typ, který chcete sestavit projekt.
+   K [sestavení C# aplikace](../get-started/csharp/tutorial-wpf.md), zvolte **nainstalováno**, rozbalte **Visual C#** a pak vyberte C# typ, který chcete sestavit projekt.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Po dokončení instalace sady Visual Studio, zvolte **spuštění** tlačítko, abyste mohli začít vyvíjet pomocí sady Visual Studio.
+
+1. V okně start zvolte **vytvořte nový projekt**.
+
+1. Do vyhledávacího pole zadejte aplikace, kterou chcete vytvořit seznam šablon. (Zadejte například *WFP*.)
+
+  > [!TIP]
+  > Můžete filtrovat hledání pro konkrétní programovací jazyk s využitím **jazyk** rozevíracího seznamu. Můžete také filtrovat pomocí **platformy** seznamu a **typ projektu** seznamu. 
+
+1. Visual Studio otevře nový projekt a jste připraveni kód!
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -1,6 +1,6 @@
 ---
 title: Závažnost pravidla analyzátoru a potlačení
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873499"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515334"
 ---
 # <a name="use-roslyn-analyzers"></a>Používání analyzátorů Roslyn
 
@@ -46,12 +46,17 @@ Ikony vedle každého Diagnostika v rámci **Průzkumníka řešení** odpovída
 
 ## <a name="rule-sets"></a>Sady pravidel
 
-A [sada pravidel, která](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) je soubor XML, který ukládá stav závažnosti a potlačení pro jednotlivé diagnostiky. Použití sad pravidel do jednoho projektu a projekt může obsahovat více sad pravidel. Chcete-li zobrazit aktivní sadu v editoru pravidel, klikněte pravým tlačítkem na **analyzátory** uzel v **Průzkumníka řešení** a vyberte **otevřít aktivní sadu pravidel**. Pokud je to poprvé při přístupu k pravidla nastavena, soubor s názvem  *\<projectname > Analýza* se přidá do projektu a zobrazí se v **Průzkumníka řešení**.
+A [sada pravidel, která](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) je soubor XML, který ukládá stav závažnosti a potlačení pro jednotlivé diagnostiky.
 
 > [!NOTE]
-> Sady pravidel patří analýza statického kódu (binární) a pravidla analyzátoru Roslyn.
+> Sady pravidel můžete zahrnout pravidla z analýza statického kódu (binární) a analyzátory Roslyn.
 
-Můžete změnit aktivní sadu pravidel pro projekt na **analýzy kódu** karta Vlastnosti projektu. Vyberte pravidlo, nastavte **spustit tuto sadu pravidel** rozevíracího seznamu. Můžete také otevřít sadu z pravidel **analýzy kódu** stránku vlastností tak, že vyberete **otevřete**.
+Upravit aktivní sadu pravidel v editoru sad pravidel, klikněte pravým tlačítkem na **odkazy** > **analyzátory** uzel v **Průzkumníka řešení** a vyberte **Otevřít aktivní sadu pravidel**. Pokud je to poprvé, při úpravě sady pravidel, Visual Studio vytvoří kopii výchozí pravidlo soubor sady, pojmenuje ho  *\<projectname > Analýza*a přidá jej do projektu. Tohoto vlastního pravidla i nastavení se změní aktivní sadu pravidel pro váš projekt.
+
+Chcete-li změnit aktivní sadu pravidel pro projekt, přejděte na **analýzy kódu** karta Vlastnosti projektu. Vyberte sadu ze seznamu pravidel **spustit tuto sadu pravidel**. Chcete-li otevřít sadu pravidel, vyberte **otevřete**.
+
+> [!NOTE]
+> Projekty .NET core a .NET Standard nepodporují příkazy nabídky pro sady pravidel **Průzkumníka řešení**, například **otevřít aktivní sadu pravidel**. Chcete-li určit jiné než výchozí sadu pravidel pro projekt .NET Core nebo .NET Standard ručně [přidat **CodeAnalysisRuleSet** vlastnosti do souboru projektu](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Můžete nakonfigurovat pravidla v rámci sadu pravidel v sadě Visual Studio, sada pravidel uživatelské rozhraní editoru.
 
 ## <a name="rule-severity"></a>Závažnost pravidla
 
@@ -63,7 +68,7 @@ Můžete nakonfigurovat závažnost pravidla analyzátoru nebo *diagnostiky*, po
 |Upozornění|Narušení se zobrazují jako *upozornění* v **seznam chyb** do příkazového řádku výstup sestavení, ale nezpůsobí sestavení selhala.|Poškozený kód je podtržený s zelenou vlnovkou a označené pomocí malé zeleného pole do oblasti posuvníku.|
 |Informace o|Narušení se zobrazují jako *zprávy* v **seznam chyb**a vůbec ne ve výstupu sestavení z příkazového řádku.|Poškozený kód je podtržený s šedá vlnovkou a označené pomocí malé šedé pole do oblasti posuvníku.|
 |Hidden|Non viditelné pro uživatele.|Non viditelné pro uživatele. Diagnostiky se hlásí k modulu diagnostiky integrovaného vývojového prostředí, ale.|
-|Žádná|Zcela potlačit.|Zcela potlačit.|
+|Žádné|Zcela potlačit.|Zcela potlačit.|
 
 Kromě toho můžete "obnovit" závažnost pravidla nastavením na **výchozí**. Každý diagnostiky má výchozí závažnost, která si můžete prohlédnout ve **vlastnosti** okna.
 
@@ -79,7 +84,7 @@ Můžete změnit závažnost pravidla z **Průzkumníka řešení**, nebo v rám
 
 ![Soubor sady pravidel v Průzkumníku řešení](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Chcete-li nastavit závažnost pravidla z Průzkumníka řešení
+### <a name="set-rule-severity-from-solution-explorer"></a>Nastavit závažnost pravidla z Průzkumníka řešení
 
 1. V **Průzkumníka řešení**, rozbalte **odkazy** > **analyzátory** (**závislosti**  >  **Analyzátory** pro projekty .NET Core).
 
@@ -89,7 +94,7 @@ Můžete změnit závažnost pravidla z **Průzkumníka řešení**, nebo v rám
 
    Závažnost pravidla je uložen v souboru sady pravidel aktivní.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Chcete-li nastavit pravidlo závažnost v pravidle nastavit soubor
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Nastavit závažnost pravidla v souboru sady pravidel
 
 1. Otevřít [sada pravidel, která](analyzer-rule-sets.md) souboru poklepáním v **Průzkumníku řešení**, kde vyberou **otevřít aktivní sadu pravidel** v nabídce klepněte pravým tlačítkem myši **analyzátory** uzlu, nebo výběrem **otevřít** na **analýzy kódu** stránku vlastností pro projekt.
 

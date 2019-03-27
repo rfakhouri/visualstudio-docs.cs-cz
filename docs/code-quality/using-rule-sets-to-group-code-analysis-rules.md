@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b178ea161884ef748008b1f933a53fc35a1cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914471"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515230"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Použití sady pravidel k seskupování pravidel analýzy kódu
 
-Při konfiguraci analýzy kódu v sadě Visual Studio, můžete zvolit ze seznamu předdefinovaných *sad pravidel*. Sada pravidel se vztahuje na projekt a je seskupení kódu pravidel analýzy, která vyhledávají cílené problémy a zvláštní podmínky pro tento projekt. Například můžete použít sadu pravidel, která slouží k vyhledání kódu veřejně dostupných rozhraní API, nebo pouze minimální doporučená pravidla. Můžete také použít sadu pravidel, která zahrnuje všechna pravidla.
+Při konfiguraci analýzy kódu v sadě Visual Studio, můžete zvolit ze seznamu předdefinovaných *sad pravidel*. Sada pravidel je seskupení pravidel analýzy kódu, které vyhledávají cílené problémy a zvláštní podmínky pro daný projekt. Například můžete použít sadu pravidel, která je navržená k vyhledání kódu veřejně dostupných rozhraní API. Můžete také použít sadu pravidel, která zahrnuje všechna dostupná pravidla.
 
 Můžete přizpůsobit sadu přidáním nebo odstraněním pravidel nebo změnou pravidel závažnosti jako upozornění nebo chyby v pravidel **seznam chyb**. Sada vlastních pravidel může splnit potřebu konkrétního vývojového prostředí. Při přizpůsobování sady pravidel obsahuje editor sad pravidel vyhledávání a filtrování nástroje, které vám proces usnadní.
 

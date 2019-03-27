@@ -864,7 +864,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Vývoj pro mobilní zařízení pomocí JavaScriptu</h3>
-                                                    <p>Vytvářejte multiplatformní aplikace pro iOS, Android nebo Windows pomocí architektury Apache Cordova.</p>
+                                                    <p>(Visual Studio 2017 a Visual Studio 2015 jenom) Vytvářejte multiplatformní aplikace pro iOS, Android nebo Windows pomocí architektury Apache Cordova.</p>
                                                 </div>
                                             </div>
                                         </div>

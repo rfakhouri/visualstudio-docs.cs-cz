@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 379f4ad2c4a5eb6df2dd2913104b9e2aa0139173
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323841"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515373"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
@@ -102,7 +102,7 @@ Pokud chcete mít jistotu, že máte přístup ke všemu, co potřebujete při p
 | Informace o úložišti Githubu | api.github.com | protokol HTTPS | 443 | Vyžaduje se pro získání dalších informací o balíčky bower |
 | Linterů Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>Průzkumník šablony<br>zjištění <br><br>Cookiecutter <br>Explorer project<br> Vytvoření | api.github.com <br>RAW.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | protokol HTTPS | 443<br> | Používá ke zjišťování online šablon z našich doporučených kanálu a z úložiště GitHub <br><br>Umožňuje vytvořit projekt z šablony cookiecutter, která vyžaduje jednorázovou podle potřeby instalaci Pythonu balíčku cookiecutteru z indexu balíčků Pythonu (PyPI) |
-| Balíček Pythonu <br>zjištění<br><br>Balíček Pythonu <br>management<br><br>Python <br>Nový projekt <br>šablony | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | protokol HTTPS | 443 | Umožňuje vyhledat balíčky pip<br><br>Umožňuje automaticky instalovat modul pip, pokud není nalezena <br><br> Umožňuje vytvořit <br><br>Použít k vyřešení že šablony v dialogovém okně Nový projekt na adresy URL šablony cookiecutter projektu následující Pythonu:<br> -Projekt klasifikace<br>-Projekt clusteringu <br> -Projekt regrese <br> -PyGame využívající PyKinect <br> -Projekt Pyvot |
+| Balíček Pythonu <br>zjištění<br><br>Balíček Pythonu <br>management<br><br>Nový <br>Python <br> projekt <br>šablony | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | protokol HTTPS | 443 | Umožňuje vyhledat balíčky pip<br><br>Umožňuje automaticky instalovat modul pip, pokud není nalezena <br><br>Použít k vyřešení že šablony na adresy URL šablony cookiecutter projektu následující nové Pythonu:<br> -Projekt klasifikace<br>-Projekt clusteringu <br> -Projekt regrese <br> -PyGame využívající PyKinect <br> -Projekt Pyvot |
 | Office web <br>doplněk <br> Manifest <br>Ověření <br>Služba | verificationservice.osi.office.net | protokol HTTPS | 443 | Používá se k ověření manifesty doplňků pro web Office |
 | SharePoint a <br>Doplňky pro Office | sharepoint.com | protokol HTTPS | 443 | Používá k publikování a testování Sharepointu a Office Add-ins k Sharepointu Online |
 | Správce pracovních postupů <br>Testování služby<br> Hostitel | | http | 12292 | Pravidlo brány firewall, která se automaticky vytvořily pro testování Sharepointových doplňků s pracovními postupy |
