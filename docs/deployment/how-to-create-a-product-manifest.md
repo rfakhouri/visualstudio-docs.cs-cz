@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622bf6f34b2644c028886184cf42e8f994a43f71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596917"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568098"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Postupy: Vytvoření manifestu produktu
 Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček zaváděcího nástroje. Balíček zaváděcího nástroje obsahuje jeden produkt soubor manifestu ale manifest balíčku pro každé národní prostředí. Manifest balíčku obsahuje lokalizace specifických aspektů vašeho balíčku. Jedná se o řetězce, licenční smlouvy s koncovým uživatelem a jazykových sad.
 
- Další informace o manifestech produktu najdete v tématu [jak: Vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md).
+ Další informace o manifestech balíčku najdete v tématu [jak: Vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md).
 
 ## <a name="create-the-product-manifest"></a>Vytvoření manifestu produktu
 

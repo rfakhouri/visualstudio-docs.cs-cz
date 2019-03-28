@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 57404553c8fe0afd03e575d77541980a03fdb9ae
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227758"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567994"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Vytvoření aplikace Vue.js pomocí Node.js Tools for Visual Studio
 
@@ -38,7 +38,7 @@ Následující nové funkce podporují Vue.js vývoj aplikací v sadě Visual St
 
     Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
-    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **souboru**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
 
 * Chcete-li vytvořit projekt ASP.NET Core, musí mít technologie ASP.NET a web development a instalaci úlohy vývoj pro různé platformy .NET Core.
 
@@ -63,9 +63,14 @@ V tomto příkladu použijete prázdnou aplikaci ASP.NET Core (jazyk C#). Ale m�
 
 #### <a name="create-an-empty-project"></a>Vytvořit prázdný projekt
 
-1. Otevřít Visual Studio a zvolte **souboru** > **nový** > **projektu** z hlavní nabídky.
+1. Otevřít Visual Studio a vytvořte nový projekt.
 
-1. V části **Visual C#** > **webové**, zvolte **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, klikněte na tlačítko **vytvořit novou webovou aplikaci ASP.NET Core**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **Visual C#** , klikněte na tlačítko **webové**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**, klikněte na tlačítko **OK**.
+    ::: moniker-end
 
     Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony projektu, je nutné nainstalovat **vývoj pro ASP.NET a web** pracovního vytížení a. **.NET Core** úlohy pro vývoj první. K instalaci workload(s), klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **souboru**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Vyberte požadované úlohy.
 

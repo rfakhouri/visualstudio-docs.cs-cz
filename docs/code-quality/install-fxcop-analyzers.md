@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 13818035d48c95fb78a841d41459ea2b48eb8630
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983452"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567812"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Nainstalujte analyzátory FxCop v sadě Visual Studio
 
@@ -43,12 +43,13 @@ Určení verze balíčku analyzátory FxCop instalace pro vaši verzi sady Visua
 
 | Verze Visual Studio | Verze balíčku analyzátor FxCop |
 | - | - |
-| Visual Studio 2017 verze 15.5 nebo novější | 2.6.3, například https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3 |
-| Visual Studio 2017 verze 15.3 k 15.4 | 2.3.0-Beta1, například https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
-| Visual Studio 2017 verze 15.0: 15.2 | 2.0.0-Beta2, například https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
-| Visual Studio 2015 update 2 a 3 | Verze 1.2.0-beta2, například https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
-| Visual Studio 2015 Update 1 | Verze 1.1.0, například https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1. |
-| Visual Studio 2015 RTW | Verze 1.0.1, například https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1 |
+| Visual Studio 2017 verze 15,8 a novější | [2.9.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.0) |
+| Visual Studio 2017 verze 15.5 na verzi 15.7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
+| Visual Studio 2017 verze 15.3 k 15.4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
+| Visual Studio 2017 verze 15.0: 15.2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
+| Visual Studio 2015 update 2 a 3 | [1.2.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
+| Visual Studio 2015 Update 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
+| Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Chcete-li nainstalovat analyzátory FxCop jako rozšíření VSIX
 

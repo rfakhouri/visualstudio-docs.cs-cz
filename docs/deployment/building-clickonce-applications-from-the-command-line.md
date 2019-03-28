@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636954"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567838"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Vytváření aplikací ClickOnce z příkazového řádku
 V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], můžete sestavovat projekty z příkazového řádku, i když jsou vytvořeny v integrovaném vývojovém prostředí (IDE). Ve skutečnosti můžete znovu sestavit projekt vytvořený s [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na jiném počítači, který má pouze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nainstalované. Díky tomu můžete pro reprodukci pomocí automatizovaného procesu sestavení, například v Centrální sestavení testovacího prostředí nebo pomocí pokročilé techniky nad rámec sestavení projektu, samotný skriptování.
@@ -41,21 +41,21 @@ V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Vytvoření a publikování ClickOnce projektu
 
-1. Klikněte na tlačítko **nový projekt** z **souboru** nabídky. Zobrazí se dialogové okno **Nový projekt**.
+1. Otevřít Visual Studio a vytvořte nový projekt.
 
-2. Vyberte **aplikace Windows** a pojmenujte ho `CmdLineDemo`.
+    Zvolte **aplikace klasické pracovní plochy Windows** šablony projektu a projekt pojmenujte `CmdLineDemo`.
 
-3. Z **sestavení** nabídky, klikněte na tlačítko **publikovat** příkazu.
+1. Z **sestavení** nabídky, klikněte na tlačítko **publikovat** příkazu.
 
     Tento krok zajistí, že projekt je správně nakonfigurované k vytvoření [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení aplikace.
 
     Zobrazí se Průvodce publikováním.
 
-4. V Průvodci publikování klikněte na tlačítko **Dokončit**.
+1. V Průvodci publikování klikněte na tlačítko **Dokončit**.
 
     Visual Studio vygeneruje a zobrazí výchozí webová stránka volá *Publish.htm*.
 
-5. Uložte projekt a poznamenejte si umístění složky, ve kterém jsou uložená.
+1. Uložte projekt a poznamenejte si umístění složky, ve kterém jsou uložená.
 
    Výše uvedených kroků vytvořte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projektu, která byla publikována poprvé. Nyní můžete reprodukovat sestavení mimo rozhraní IDE.
 

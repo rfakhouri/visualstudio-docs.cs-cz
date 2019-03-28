@@ -10,17 +10,17 @@ ms.assetid: 00bec66b-bcee-46f5-91d9-f73a2b469744
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev16
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: vs-2019
-ms.openlocfilehash: 0e770b385b385713c262347c62d10e1be0769b40
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 42f0420b1ea9d9ab789be9e61e7dec3c2fdba4fa
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475887"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567903"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
@@ -119,7 +119,7 @@ Další informace naleznete na následujících stránkách:
 
 Pokud používáte monitorování, které jsou nakonfigurovány s jiným zobrazením měřítko nebo vzdáleně připojit k počítači s použitím zobrazení škálování faktorů, které se liší od hlavní zařízení, můžete všimnout, že Visual Studio rozmazaný nebo vykreslí nesprávné měřítko.
 
-Ve verzi Visual Studio 2019 jsme se rozhodli první kroky k zabezpečení aplikace Visual Studio (PMA) aplikace pracující s za monitorování. Pokládáme základní práce, které vám umožní sadě Visual Studio správně vykreslit, bez ohledu na to, co zobrazí měřítko, které používáte.
+Ve verzi Visual Studio 2019 jsme se rozhodli první kroky k zabezpečení aplikace Visual Studio (PMA) aplikace pracující s za monitorování. Pokládáme základní práce, které vám umožní sadě Visual Studio správně vykreslit, bez ohledu na škálování faktorů zobrazení, které používáte.
 
    ![Clustery vykreslování (PMA) v aplikaci Visual Studio 2019 za monitorování](media/per-monitor-aware-dpi-scaling.png)
 

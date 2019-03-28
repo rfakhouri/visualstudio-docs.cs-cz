@@ -1,12 +1,12 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: b8f5921be45ead5ec97263c01b780c57cb1acb68
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 6b16d58a760b92d71eabcad95ffacc2aed9db94d
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319451"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568059"
 documentType: LandingData
-title: Visual Studio pro Mac dokumentace
+title: 2019 Visual Studio pro Mac dokumentace
 metadata:
   description: Tento článek obsahuje představení funkcí sady Visual Studio pro Mac.
   author: conceptdev
@@ -35,11 +35,6 @@ sections:
       image:
         src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
       title: Tour Visual Studio for Mac
-    - href: ~/installation.md?view=vsmac-2019
-      html: <p></p>
-      image:
-        src: ~/media/index-2019-preview.png
-      title: Zkuste 2019 ve verzi Preview!
 - title: Jaké aplikace lze vytvořit?
   items:
   - type: paragraph

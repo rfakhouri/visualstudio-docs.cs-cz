@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 84d137eea1107f4e3ce37ab013ed6770b8d93d11
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416367"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568007"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testování částí
 
@@ -78,7 +78,7 @@ Když teď máme nějaký kód, je čas pro testování.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Vytvoření projektů jednotkových testů a testovací metody
 
-Je často rychlejší generování projektu testování částí a zástupných procedur testu jednotek z vašeho kódu. Nebo můžete vytvořit projekt testů jednotek a testů ručně v závislosti na vašich požadavcích.
+Je často rychlejší generování projektu testování částí a zástupných procedur testu jednotek z vašeho kódu. Nebo můžete vytvořit projekt testů jednotek a testů ručně v závislosti na vašich požadavcích. Pokud chcete vytvořit testy jednotek s 3. stran framework budete potřebovat jeden z těchto rozšíření nainstalovat: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) nebo [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generovat projekt testování částí a zástupné procedury pro testování částí
 

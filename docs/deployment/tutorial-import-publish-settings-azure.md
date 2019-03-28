@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: febf742ca7a54a14d8de59c251bb8783cf76370a
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983920"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567877"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -55,9 +55,9 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Vytvoření nového projektu ASP.NET v sadě Visual Studio
 
-1. Na počítači se systémem Visual Studio, zvolte **souboru** > **nový projekt**.
+1. Na počítači se systémem Visual Studio vytvořte nový projekt.
 
-1. V části **Visual C#**  nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně zvolte buď **webová aplikace ASP.NET (.NET Framework)** nebo (pro C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
+    Výběr správné šablony. V tomto příkladu zvolte buď **webová aplikace ASP.NET (.NET Framework)** nebo (pro C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
 
     Pokud nevidíte zadaný projekt šablony, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Nainstalujte **vývoj pro ASP.NET a web** pracovního vytížení.
 
