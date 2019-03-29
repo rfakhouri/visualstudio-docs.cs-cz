@@ -7,19 +7,14 @@ ms.date: 11/03/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: afb542e60eeae34bbe7d05694b1ffc8330ed2958
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: b9afb8f651394e915d907a754b92dfe8dfd79d73
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379968"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567942"
 ---
 # <a name="install-a-preview-release"></a>Nainstalovat verzi preview
-
-> [!NOTE]
-> 2019 Visual Studio pro Mac ve verzi preview je [nyní k dispozici pro instalaci](/visualstudio/mac/installation/?view=vsmac-2019) a testování.
-
-## <a name="install-an-update-for-visual-studio-for-mac"></a>Instalace aktualizace pro sadu Visual Studio pro Mac
 
 Před oficiálním vydání nové verze sady Visual Studio pro Mac, je k dispozici ve verzi preview. Verze preview dává možnost vyzkoušet si nové funkce a získat nejnovější opravy chyb, než jsou plně součástí produktu.
 
