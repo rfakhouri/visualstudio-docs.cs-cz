@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227641"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647346"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojení k datům v databázi aplikace Access (Windows Forms)
 
@@ -95,7 +95,7 @@ Vytvořte datovou sadu spuštěním **Průvodce konfigurací zdroje dat**.
 
 8. V **název souboru databáze**, zadejte cestu a název *.mdb* souboru, kterou chcete připojit a pak vyberte **OK**.
 
-   ![Přidat připojení souboru databáze aplikace Access](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Přidat připojení souboru databáze aplikace Access](../data-tools/media/add-connection-access-db.png)
 
 9. Vyberte **Další** na **vyberte datové připojení** stránky.
 

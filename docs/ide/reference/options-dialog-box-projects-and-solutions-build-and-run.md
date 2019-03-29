@@ -14,36 +14,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2e62a0b9ece6052d222a8c228bbd7fe018b0a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3d0f24dc1afa875183f03e15e46cc2331f27cbf0
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954774"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647320"
 ---
-# <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Dialogové okno Možnosti, Projekty a řešení, Sestavit a spustit
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Dialogové okno Možnosti: Projekty a řešení \> sestavit a spustit
 
-V tomto dialogovém okně můžete zadat maximální počet Visual C++ nebo C# projekty, které můžete vytvářet ve stejnou dobu, určité výchozí chování, ale taky popustit některé nastavení protokolu sestavení. Zpřístupníte tyto možnosti, vyberte **nástroje > Možnosti** rozbalte **projekty a řešení**a vyberte **sestavíte a spustíte**.
+V tomto dialogovém okně můžete zadat maximální počet C++ nebo C# projekty, které můžete vytvářet ve stejnou dobu, určité výchozí chování, ale taky popustit některé nastavení protokolu sestavení. Zpřístupníte tyto možnosti, vyberte **nástroje** > **možnosti** rozbalte **projekty a řešení**a pak vyberte **sestavíte a spustíte**.
 
 **maximální počet paralelních projektu sestavení**
 
-Určuje maximální počet Visual C++ a C# projekty, které můžete vytvářet ve stejnou dobu. K optimalizaci procesu sestavení, je maximální číslo sestavení paralelního projektu automaticky nastaví počet procesorů počítače. Maximální počet je 32.
+Určuje maximální počet C++ a C# projekty, které můžete vytvářet ve stejnou dobu. K optimalizaci procesu sestavení, je maximální číslo sestavení paralelního projektu automaticky nastaví počet procesorů počítače. Maximální počet je 32.
 
 **Pouze při spuštění sestavit projekty a závislosti**
 
-Sestavení projektu po spuštění a jeho závislosti, při použití klíče, vyberte F5 **ladit > Spustit** příkaz nabídky nebo použít příkazy na **sestavení** nabídky. Pokud je prázdné, jsou všechny projekty a závislosti sestavení.
+Při použití sestavení spouštěný projekt a jeho závislosti **F5** klíč, **ladění** > **spustit ladění** příkaz nabídky nebo použít příkazy v **sestavení** nabídky. Pokud není zaškrtnuto, jsou vytvořeny všechny projekty a závislosti.
 
 **Spustit, pokud projekty jsou zastaralé**
 
-*Platí pro [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] pouze pro projekty.*
+*Platí pro projekty v jazyce C++.*
 
-Při spuštění projektu pomocí F5 nebo **ladit > Spustit** příkazu, ve výchozím nastavení **zobrazit výzvu k vytvoření** zobrazí zprávu, pokud konfigurace projektu je zastaralý. Vyberte **vždy sestavení** a sestavte projekt pokaždé, když je spuštěn. Vyberte **nikdy nesestavovat** potlačit všechny automatické sestavení při spuštění projektu.
+Při spuštění projektu s **F5** nebo **ladění** > **spustit ladění** příkazu, ve výchozím nastavení **zobrazit výzvu k vytvoření** Zobrazí zprávu, pokud konfigurace projektu je zastaralý. Vyberte **vždy sestavení** a sestavte projekt pokaždé, když je spuštěn. Vyberte **nikdy nesestavovat** potlačit všechny automatické sestavení při spuštění projektu.
 
 **Při spuštění, při sestavení nebo dojde k chybě nasazení**
 
-*Platí pro [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] pouze pro projekty.*
+*Platí pro projekty v jazyce C++.*
 
-Při spuštění projektu pomocí F5 nebo **ladit > Spustit** příkazu, ve výchozím nastavení **výzva ke spuštění** zobrazí zprávu, pokud projekt by měl spustit i v případě, že sestavení selhalo. Vyberte **spuštění starší verze** automaticky spustit poslední úspěšný build, což může způsobit neshody mezi spuštěním kódu a zdrojový kód. Vyberte **nespouštět** k potlačení zprávy.
+Při spuštění projektu s **F5** nebo **ladění** > **spustit ladění** příkazu, ve výchozím nastavení **výzva ke spuštění**zobrazí zprávu, pokud projekt by měl spustit i v případě, že sestavení selhalo. Vyberte **spuštění starší verze** automaticky spustit poslední úspěšný build, což může způsobit neshody mezi spuštěním kódu a zdrojový kód. Vyberte **nespouštět** k potlačení zprávy.
 
 **Nové řešení použít aktuálně zvolený projekt jako spouštěný projekt**
 
@@ -51,13 +51,13 @@ Když nastavíte tuto možnost, nová řešení použít aktuálně zvolený pro
 
 **Podrobnost výstupu sestavení projektu nástroje MSBuild**
 
-Určuje, kolik informací se zobrazí v **výstup** okna pro sestavení.
+Určuje, kolik informací z procesu sestavení je zobrazen v **výstup** okna.
 
 **Úroveň podrobností MSBuild projektu sestavení protokolu souborů**
 
-*Platí pro [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] pouze pro projekty.*
+*Platí pro projekty v jazyce C++.*
 
-Určuje, kolik informací je zapsána do souboru protokolu sestavení, které se nacházejí v \\... \\ *ProjectName*\Debug\\*ProjectName*. log.
+Určuje, kolik informací je zapsána do souboru protokolu sestavení, které se nacházejí v  *\\ \<ProjectName > \Debug\\\<ProjectName > .log*.
 
 ## <a name="see-also"></a>Viz také:
 

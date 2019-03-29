@@ -1,6 +1,6 @@
 ---
 title: Nastavení importu a exportu, prostředí, dialogové okno Možnosti
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Profiles
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8cd7766bf51190a0b925c66d49ffc04a23cff1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 312038f14da876fae91b8d65e47235adeb1d14ce
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921039"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647190"
 ---
-# <a name="import-and-export-settings-environment-options-dialog-box"></a>Nastavení importu a exportu, prostředí, dialogové okno Možnosti
+# <a name="options-dialog-box-environment--import-and-export-settings"></a>Dialogové okno Možnosti: Prostředí \> nastavení importu a exportu
 
-Tato stránka slouží k určení, kde je uložený soubor nastavení uživatele a jestli se má použít soubor týmového nastavení. Další informace o nastavení najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Tato stránka slouží k určení, kde je uložený soubor nastavení uživatele. Další informace o nastavení najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ### <a name="see-also"></a>Viz také:
 

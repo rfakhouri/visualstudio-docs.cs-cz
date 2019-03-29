@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f8fb7c864f484208eaa647131ac7a32c8da665f8
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 781eddb72c30197d4eeb04890c9dc4193060a17d
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355484"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647476"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a React v sadě Visual Studio
 
@@ -369,6 +369,11 @@ V předchozí části jste připojili ladicí program ke kódu Node.js na stran�
     `chrome.exe --remote-debugging-port=9222`
 
     Spustí se Chrome s povoleným laděním.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Můžete také nastavit `--remote-debugging-port` příznak při spuštění prohlížeče tak, že vyberete **procházet s...**  > z **ladění** nástrojů, výběrem **přidat**a pak nastavení příznaku **argumenty** pole. Použít jiný popisný název pro prohlížeč například **Chrome s ladění**. Podrobnosti najdete v tématu [zpráva k vydání verze](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Přepněte do sady Visual Studio a nastavte zarážku v kódu *app-bundle.js* na funkci `render()`, jak je znázorněno na následujícím obrázku:
 

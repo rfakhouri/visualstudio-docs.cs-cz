@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 7a32e25f8bf19a565ef86d130a7e61a0f3742580
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416159"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647372"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Kurz: Začínáme s jazykem Visual Basic v sadě Visual Studio
 
@@ -103,7 +103,7 @@ Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můž
 
 1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *WhatIsYourName* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
 
-   ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "WhatIsYourName.](./media/vs-2019/vb-name-your-project.-whatname.png)
+   ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "WhatIsYourName.](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio otevře nový projekt.
 

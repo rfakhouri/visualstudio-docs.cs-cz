@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d137eea1107f4e3ce37ab013ed6770b8d93d11
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568007"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647411"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testování částí
 
@@ -88,7 +88,7 @@ Je často rychlejší generování projektu testování částí a zástupných 
 
 2. Klikněte na tlačítko **OK** přijměte výchozí hodnoty pro vytváření testů jednotek nebo změnu hodnoty použité k vytvoření a pojmenujte projekt testování částí a testy jednotek. Můžete vybrat kód, který se ve výchozím nastavení přidá do metody jednotkového testu.
 
-    ![Pravé&#45;klikněte v editoru a zvolte Vytvořit testy jednotek](../test/media/createunittestsdialog.png)
+    ![Vytvoření dialogového okna testování částí v sadě Visual Studio](../test/media/create-unit-tests.png)
 
 3. Zástupné procedury testu jednotek se vytvoří v nový projekt testů jednotek pro všechny metody ve třídě.
 

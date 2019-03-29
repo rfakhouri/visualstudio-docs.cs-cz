@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700001"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647281"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Webový prohlížeč, prostředí, dialogové okno Možnosti
+# <a name="options-dialog-box-environment--web-browser"></a>Dialogové okno Možnosti: Prostředí \> webového prohlížeče
 
 Nastaví možnosti pro interní webový prohlížeč a aplikaci Internet Explorer. Chcete-li získat přístup k tomuto dialogovému oknu, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **prostředí** a pak zvolte položku **webový prohlížeč**.
 
@@ -50,11 +50,11 @@ Umožňuje určit stránku vyhledávání pro interní webový prohlížeč. Tot
 
 Nastaví editor používá k otevření webové stránky, když zvolíte **zobrazit zdroj** na stránce z interní webový prohlížeč.
 
--   **Editor zdrojového kódu** vyberte zobrazení zdroje v [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Editor zdrojového kódu** vyberte zobrazení zdroje v [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **HTML editor** vyberte zobrazení zdroje v [Návrháři HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: Zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.
+- **HTML editor** vyberte zobrazení zdroje v [Návrháři HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: Zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.
 
--   **Externí editor** vyberte zobrazení zdroje v jiném editoru. Zadejte cestu k libovolný editor, který si vyberete, například Notepad.exe.
+- **Externí editor** vyberte zobrazení zdroje v jiném editoru. Zadejte cestu k libovolný editor, který si vyberete, například Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Možnosti aplikace Internet Explorer
 

@@ -1,6 +1,6 @@
 ---
 title: Dokumenty, prostředí, dialogové okno Možnosti
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -31,28 +31,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc9e25d5e077ba4fa2b0c56de3dd3f05d87fdbc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912817"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647255"
 ---
-# <a name="documents-environment-options-dialog-box"></a>Dokumenty, prostředí, dialogové okno Možnosti
+# <a name="options-dialog-box-environment--documents"></a>Dialogové okno Možnosti: Prostředí \> dokumentů
 
-Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování dokumentů v integrovaném vývojovém prostředí (IDE) a spravovat externí změny dokumentů a souborů. Toto dialogové okno se zpřístupní po kliknutí **možnosti** na **nástroje** nabídky a následným výběrem **dokumenty** v **prostředí** uzlu. Pokud **dokumenty** se nezobrazují v seznamu vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.
-
-**Znovu použít aktuální okno dokumentu, je-li uložit**
-
-Pokud je vybráno, zavře aktuální dokument, pokud byla uložena a ve stejném okně se otevře nový dokument. Pokud vaše aktuální dokument nebyl uložen, zůstane otevřený a je otevřen nový dokument v samostatném okně. Tato možnost vybrána, nové dokumenty vždy otevře v samostatném systému windows.
-
-Tuto možnost použijte, pokud provádět více dokumentu vyjímání a operace vložení zřídka a chcete minimalizovat počet otevřené dokumenty a okna v váš pracovní prostor.
+Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování dokumentů v integrovaném vývojovém prostředí (IDE) a spravovat externí změny dokumentů a souborů. Toto dialogové okno se zpřístupní po kliknutí **možnosti** na **nástroje** nabídky a následným výběrem **prostředí** > **dokumenty**.
 
 **Rozpoznat, kdy soubor se změnil mimo prostředí**
 
 Pokud je vybraná tato možnost, zprávy o změnách otevřeného souboru, které byly provedeny pomocí editoru mimo rozhraní IDE ihned upozorní. Zpráva umožňuje znovu načíst soubor ze služby storage.
 
-**Automaticky načíst změny, je-li uložit**
+**Znovu načíst upravené soubory, pokud neobsahují neuložené změny**
 
 Pokud máte **rozpoznat změnu souboru mimo prostředí** vybrané a otevření souboru v integrovaném vývojovém prostředí změny mimo rozhraní IDE, upozornění je vygenerována ve výchozím nastavení. Pokud je tato možnost povolena, bez upozornění se zobrazí a dokument je znovu načten v integrovaném vývojovém prostředí, aby se získaly externích změn.
 
@@ -79,9 +73,9 @@ Výběr této možnosti se zobrazí **různé soubory** uzel v **Průzkumníka �
 > [!NOTE]
 > Vyberte tuto možnost **zobrazit v prohlížeči** příkaz **souboru** nabídku webové dokumenty, které nejsou součástí webovou aplikaci služby active.
 
-**\<** *n* **> položek uložených v ostatních souborech projektu**
+**Položek uložených v ostatních souborech projektu**
 
-Určuje počet souborů pro uchování v **MiscellaneousFiles** složky **Průzkumníka řešení**. Tyto soubory jsou uvedené i v případě, že už nejsou otevřená v editoru. Můžete zadat libovolný celé číslo od 0 do 256. Výchozí hodnota je 0.
+Určuje počet souborů pro uchování v **různé soubory** složky **Průzkumníka řešení**. Tyto soubory jsou uvedené i v případě, že už nejsou otevřená v editoru. Můžete zadat libovolný celé číslo od 0 do 256. Výchozí hodnota je 0.
 
 Například pokud se tato možnost nastavena na 5 a máte 10 různé soubory otevřené po zavření všech 10 souborů, první 5 stále v zobrazí **různé soubory** složky.
 

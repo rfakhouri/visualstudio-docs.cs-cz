@@ -2,6 +2,7 @@
 title: Vytvořte svoji první aplikaci konzoly pomocí jazyka Visual Basic
 description: Zjistěte, jak vytvořit jednoduchou konzolovou aplikaci Hello World v sadě Visual Studio pomocí jazyka Visual Basic, krok za krokem.
 ms.custom: seodec18
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -13,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b8f57df9f946987ae1378f6295526265952351c8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415834"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647164"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Rychlý start: Vytvoření první aplikace konzoly v sadě Visual Studio pomocí jazyka Visual Basic
 
@@ -90,7 +91,7 @@ Nejprve vytvoříte projekt aplikace Visual Basic. Typ projektu obsahuje všechn
 
 1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *WhatIsYourName* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
 
-   ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "WhatIsYourName.](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+   ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "WhatIsYourName.](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio otevře nový projekt.
 

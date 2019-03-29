@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1b7d9513bcb86dfdff814adddb35bdaf741ebe02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223387"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647424"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Ladění aplikací v jazyce JavaScript nebo TypeScript v sadě Visual Studio
 
@@ -60,6 +60,11 @@ Připojit ladicí program sady Visual Studio a dosažení zarážky v kódu na s
     `chrome.exe --remote-debugging-port=9222`
 
     Tento příkaz spustí Chrome s povoleným laděním.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Můžete také nastavit `--remote-debugging-port` příznak při spuštění prohlížeče tak, že vyberete **procházet s...**  > z **ladění** nástrojů, výběrem **přidat**a pak nastavení příznaku **argumenty** pole. Použít jiný popisný název pro prohlížeč například **Chrome s ladění**. Podrobnosti najdete v tématu [zpráva k vydání verze](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Přepněte do aplikace Visual Studio a nastavte zarážku ve zdrojovém kódu. (Nastavit zarážku do řádku kódu, který umožňuje zarážky, jako například `return` příkazu nebo `var` prohlášení).
 

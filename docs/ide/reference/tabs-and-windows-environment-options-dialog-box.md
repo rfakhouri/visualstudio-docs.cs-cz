@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fcc961a478d3e23c7a8dcf06805505b6c437ed9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924666"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647177"
 ---
-# <a name="tabs-and-windows-environment-options-dialog-box"></a>Dialogové okno Karty a okna, Prostředí, Možnosti
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Dialogové okno Možnosti: Prostředí \> karty a Windows
 
 Pomocí této stránky lze nastavit možnosti pro jak s kartami windows chovat do podokna editoru a chování oken nástrojů. Další informace najdete v tématu [přizpůsobení rozložení oken v sadě Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
 

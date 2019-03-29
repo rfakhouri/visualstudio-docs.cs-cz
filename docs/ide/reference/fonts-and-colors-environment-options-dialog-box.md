@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070253"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647463"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 
-**Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **nástroje** > **možnosti**a pak vyberete **prostředí** > **písma a Barvy**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.
+**Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **nástroje** > **možnosti**a pak vyberete **prostředí** > **písma a Barvy**.
 
 Barevné schéma změny se projeví během relace, ve kterém je provedete. Změny barev můžete vyhodnotit otevřením jiná instance sady Visual Studio a vytváření podmínky, za kterých očekáváte, že vaše změny se můžou použít.
 
@@ -255,4 +255,4 @@ Zobrazuje řez písma, velikosti a barevného schématu pro ukázku **zobrazit n
 
 - [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
 - [Dialogové okno Možnosti](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

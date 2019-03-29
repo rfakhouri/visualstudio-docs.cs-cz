@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941076"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647437"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend pro Visual Studio – přehled
 
@@ -30,11 +30,18 @@ Pokud začínáte blendu pro Visual Studio, věnujte chvíli seznámení s jedin
 > [!NOTE]
 > Prohlídka funkce sdílené návrh například návrhové ploše **Osnova dokumentu** okně a **zařízení** okna, naleznete v tématu [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="tour-of-the-tools-panel"></a>Přehled panelu nástrojů
+## <a name="tools-panel"></a>Panel Nástroje
 
-Můžete použít **nástroje** panelu v Blendu pro Visual Studio k vytvoření a úprava objektů ve vaší aplikaci. Vytvoření objektů výběrem nástroj a vykreslení na návrhovou plochu pomocí myši.
+Můžete použít **nástroje** panelu v Blendu pro Visual Studio k vytvoření a úprava objektů ve vaší aplikaci. **Nástroje** panelu se zobrazí na levé straně v Návrháři XAML, když máte *.xaml* otevřený soubor.
 
-![Panel Nástroje](../designers/media/blend5toolspanel.png)
+Vytvoření objektů výběrem nástroj a vykreslení na návrhovou plochu pomocí myši.
+
+![Panel nástrojů v programu Blend for Visual Studio](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> Některé nástroje v **nástroje** panel mají varianty (zobrazené na obrázku jako A až F). Pro přístup k tyto změny, klikněte pravým tlačítkem nebo klikněte a přidržte nástroj.
+>
+> ![Variace nástroj tvaru v Blendu pro Visual Studio](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -45,13 +52,11 @@ Můžete použít **nástroje** panelu v Blendu pro Visual Studio k vytvoření 
 |![Nástroje pro prostředek](../designers/media/b1_5.png)|**Asset nástroje** přístup **prostředky** panelu a chcete-li zobrazit naposledy použít prostředek z knihovny.|![Popisek E](../designers/media/b5_label_e.png)|**Textových ovládacích prvků**|
 |||![Popisek F](../designers/media/b5_label_f.png)|**Běžné ovládací prvky**|
 
-**Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [The nástrojů](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+## <a name="assets-window"></a>Okno prostředků
 
-## <a name="tour-of-the-assets-panel"></a>Přehled panelu aktiva
+**Prostředky** okno obsahuje všechny dostupné ovládací prvky a je podobné **nástrojů** v sadě Visual Studio. Kromě ovládací prvky, najdete všechno, co můžete přidat do vaší návrhovou plochu v **prostředky** okna, včetně styly, média, chování a efekty. Otevřete **prostředky** okně zvolte **zobrazení** > **prostředky okno** nebo stiskněte klávesu **Ctrl** + **Alt**+**X**.
 
-Můžete najít všechny ovládací prvky v **prostředky** panelu, podobně jako **nástrojů** v sadě Visual Studio. Kromě ovládací prvky, najdete všechno, co můžete přidat do vaší návrhovou plochu v **prostředky** panelu, včetně styly, média, chování a efekty.
-
-![Panel prostředků](../designers/media/blend5_assets_panel.png)
+![Okno prostředků v Blendu pro Visual Studio](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -61,11 +66,11 @@ Můžete najít všechny ovládací prvky v **prostředky** panelu, podobně jak
 |![Styly](../designers/media/b1_4.png)|**Styly** zobrazit všechny styly, které jsou obsaženy ve slovníku prostředků.|
 |![Popis](../designers/media/b1_5.png)|**Popis** zobrazení popisu vybrané kategorie nebo podkategorie prostředků.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>Prohlídka objekty a časová osa panel
+## <a name="objects-and-timeline-window"></a>Objekty a časová osa období
 
-Pomocí tohoto panelu uspořádání objektů na kreslicí ploše a, pokud chcete, animovat je.
+Toto okno slouží k uspořádání objektů na kreslicí ploše a, pokud chcete, animovat je. Chcete-li otevřít **objekty a časová osa** okně zvolte **zobrazení** > **objekty a časová osa** nebo stiskněte klávesu **Ctrl** + **W**, **U**.
 
-![Objekt a časová osa panel v režimu animace](../designers/media/b5_object_timeline_animation.png)
+![Okno objekt a časová osa v režimu animace](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -86,11 +91,11 @@ Pomocí tohoto panelu uspořádání objektů na kreslicí ploše a, pokud chcet
 |![Zvětšení časové osy](../designers/media/b1_15.png)|**Osy** nastavit rozlišení rozsahu časové osy. Přiblížení umožňuje upravovat animaci s více detaily a oddálení zobrazení ukáže větší přehled o tom, co se děje během delšího časového období. Pokud přiblížíte, ale nemůžete nastavit klíčový snímek na pozici v čase, který chcete, ověřte, zda je hodnota rozlišení intervalu klíčových snímků dostatečně vysoká.|
 |![Popisek 16](../designers/media/b5_label_16.png)|**Oblast kompozice časové osy** zobrazit časovou osu a přesouvat klíčové snímky nebo pomocí jejich místní nabídky.|
 
-## <a name="tour-of-the-properties-panel"></a>Průvodce panelu Vlastnosti
+## <a name="properties-window"></a>Vlastnosti – okno
 
-Pomocí tohoto panelu zobrazení a úprav vlastností objektu. Můžete je také nastavit přímo na návrhové ploše. Pokud tak učiníte, vlastnost změny se projeví v **vlastnosti** panelu.
+Toto okno k zobrazení a úprava vlastností objektu. Můžete je také nastavit přímo na návrhové ploše. Pokud tak učiníte, vlastnost změny se projeví v **vlastnosti** okna. Otevřete **vlastnosti** okně zvolte **zobrazení** > **okno vlastností**, nebo stiskněte klávesu **Ctrl** +  **W**, **P**.
 
-![Panel vlastností](../designers/media/blend5_properties_panel.png)
+![Okno vlastností v programu Blend for Visual Studio](../designers/media/blend5_properties_panel.png)
 
 **Kategorie** rozbalení a sbalení kategorie vlastnosti. Klikněte na tlačítko **Rozbalit** ![Rozbalit](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) a **sbalit** ![sbalit](../designers/media/b5_collapse_button.png) zobrazíte nebo skryjete kategorie Podrobnosti.
 
@@ -113,8 +118,6 @@ Pomocí tohoto panelu zobrazení a úprav vlastností objektu. Můžete je také
 |![](../designers/media/b1_15.png)|**Šestnáctková hodnota** zobrazení šestnáctkové hodnoty barev zobrazí.|
 |![Popisek 16](../designers/media/b5_label_16.png)|**Jezdcem přechodu** nabídnuta jen v případě, že je vybraná štětce přechodu.|
 |![Zobrazit upřesňující vlastnosti](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Zobrazit upřesňující vlastnosti** zobrazení kategorií vlastností, které jsou méně často používány.|
-
-**Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [panel vlastnosti](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Viz také:
 

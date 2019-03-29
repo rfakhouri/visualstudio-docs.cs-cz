@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f0420b1ea9d9ab789be9e61e7dec3c2fdba4fa
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 35bf42ea6c6cb3dfc14594ea5e6df83b9e97c1f2
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567903"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647333"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
@@ -121,7 +121,7 @@ Pokud používáte monitorování, které jsou nakonfigurovány s jiným zobraze
 
 Ve verzi Visual Studio 2019 jsme se rozhodli první kroky k zabezpečení aplikace Visual Studio (PMA) aplikace pracující s za monitorování. Pokládáme základní práce, které vám umožní sadě Visual Studio správně vykreslit, bez ohledu na škálování faktorů zobrazení, které používáte.
 
-   ![Clustery vykreslování (PMA) v aplikaci Visual Studio 2019 za monitorování](media/per-monitor-aware-dpi-scaling.png)
+   ![Clustery vykreslování (PMA) v aplikaci Visual Studio 2019 za monitorování](media/vs-2019/pma-dpi-scaling.png)
 
 Další informace najdete v tématu [lepší prostředí pro více monitorů s Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) blogový příspěvek.
 

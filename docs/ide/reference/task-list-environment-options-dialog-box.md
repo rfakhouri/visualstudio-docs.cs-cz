@@ -1,6 +1,6 @@
 ---
-title: Seznam úloh, prostředí, dialogové okno Možnosti
-ms.date: 11/04/2016
+title: Seznam úkolů, prostředí, dialogové okno Možnosti
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
@@ -22,66 +22,46 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda16e5939f34cbea29eb92e08ee7325b49301b5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8b2fc59a2f04dc30ef8b052e93fc6ffdf030e054
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912167"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647216"
 ---
-# <a name="task-list-environment-options-dialog-box"></a>Seznam úloh, prostředí, dialogové okno Možnosti
+# <a name="options-dialog-box-environment--task-list"></a>Dialogové okno Možnosti: Prostředí \> seznamu úloh
 
 Tato stránka možností umožňuje přidat, odstranit a změnit tokeny komentáře, které generují **seznamu úkolů** připomenutí. Chcete-li zobrazit tato nastavení, vyberte **možnosti** z **nástroje** nabídky, rozbalte **prostředí** složky a zvolte **seznamu úkolů**.
 
-## <a name="task-list-options"></a>Nastavení seznamu úkolů
- Potvrdit odstranění úlohy
+## <a name="task-list-tokens"></a>Tokeny seznamu úkolů
 
- Pokud je vybráno, pokaždé, když se odstranění uživatelského úkolu ze, zobrazí se okno se zprávou **seznamu úkolů**, umožňuje potvrďte odstranění. Ve výchozím nastavení je vybraná tato možnost.
+Při vložení komentář do svého kódu, jejichž text začíná s tokenem od **Token seznam**, **seznamu úkolů** komentáře jako nová položka se zobrazí pokaždé, když je soubor otevřen pro úpravy. Klikněte na tlačítko **seznamu úkolů** položky můžete přejít přímo na řádku komentáře v kódu. Další informace najdete v tématu [pomocí seznamu úkolů](../../ide/using-the-task-list.md).
 
-> [!NOTE]
-> Odstranit komentář k úkolu, použijte odkaz k nalezení komentář a pak ji odebrat z vašeho kódu.
-
-
- Zobrazovat pouze názvy souborů
-
- Při výběru, **souboru** sloupec **seznamu úkolů** zobrazuje pouze názvy souborů, které mají být upravena, není jejich úplné cesty.
-
-## <a name="tokens"></a>Tokeny
- Když vložíte komentář do svého kódu, jejichž text začíná s tokenem od **seznam tokenů**, **seznamu úkolů** komentáře jako nová položka se zobrazí pokaždé, když je soubor otevřen pro úpravy. Můžete kliknout na to **seznamu úkolů** položky můžete přejít přímo na řádku komentáře v kódu. Další informace najdete v tématu [pomocí seznamu úkolů](../../ide/using-the-task-list.md).
-
- seznam tokenů
-
- Zobrazí seznam tokenů a umožňuje přidat nebo odebrat vlastní tokeny. Tokeny komentáře jsou malá a velká písmena v C# a Visual C++, ale ne v jazyce Visual Basic.
+Token List\
+Zobrazí seznam tokenů a umožňuje přidat nebo odebrat vlastní tokeny. Tokeny komentáře jsou malá a velká písmena v C# a C++, ale ne v jazyce Visual Basic.
 
 > [!NOTE]
-> Pokud nezadáte požadovaný token, přesně tak, jak se zobrazuje v **seznam tokenů**, úkolu komentář se nezobrazí v **seznamu úkolů**.
+> Pokud nezadáte požadovaný token přesně tak, jak se zobrazí v seznamu tokenů, úkolu komentář se nezobrazí v **seznamu úkolů**.
 
+Priority\
+Nastaví prioritu úlohy, které používají vybraný token (nízká, normální nebo vysoká). Komentáře k úkolu, které začínají s tímto tokenem jsou automaticky přiřazeny určené priority v **seznamu úkolů**.
 
- Priorita
+Name\
+Zadejte řetězec tokenu tady a pak klikněte na tlačítko **přidat** přidat řetězec do seznam tokenů.
 
- Nastaví prioritu úlohy, které používají vybraný token. Komentáře k úkolu, které začínají s tímto tokenem jsou automaticky přiřazeny určené priority v **seznamu úkolů**.
+Add\
+Povolený při zadání nového **název**. Klikněte na tlačítko Přidat nový řetězec tokenu pomocí zadaných hodnot **název** a **Priority** pole.
 
- Název
+Delete\
+Kliknutím můžete odstranit vybraný token v seznamu tokenů. Nelze odstranit výchozí token komentář.
 
- Zadejte řetězec tokenu. Díky tomu **přidat** tlačítko. Na **přidat**, tento řetězec je součástí **seznam tokenů**, a komentáře, které začínají s tímto názvem se zobrazí v **seznamu úkolů**.
-
- Přidejte
-
- Povolený při zadání nového **název**. Klikněte na tlačítko Přidat nový řetězec tokenu pomocí zadaných hodnot **název** a **Priority** pole.
-
- Odstranit
-
- Chcete odstranit vybraný token z, klikněte **seznam tokenů**. Nelze odstranit výchozí token komentář.
-
- Změna
-
- Kliknutím provést změny existujícího tokenu pomocí zadaných hodnot **název** a **Priority** pole.
+Change\
+Kliknutím provést změny existujícího tokenu pomocí zadaných hodnot **název** a **Priority** pole.
 
 > [!NOTE]
 > Nelze přejmenovat nebo odstranit výchozí token komentář, ale můžete změnit jeho úroveň priority.
 
-
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Používání seznamu úkolů](../../ide/using-the-task-list.md)
 - [Nastavení záložek v kódu](../../ide/setting-bookmarks-in-code.md)

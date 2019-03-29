@@ -2,18 +2,20 @@
 title: 'Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917750"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647398"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky
 
@@ -24,23 +26,39 @@ Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Chcete-li vytvořit projekt a nastavit vlastnosti pro formulář
 
+::: moniker range="vs-2017"
+
 1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-2.  V **nainstalované šablony** , zvolte buď **jazyka C#** nebo **jazyka Visual Basic**.
+1.  V **nainstalované šablony** , zvolte buď **jazyka C#** nebo **jazyka Visual Basic**.
 
-3.  V seznamu šablon vyberte **formulářová aplikace Windows** šablony, pojmenujte ho **matematický kvíz**a klikněte na tlačítko **OK** tlačítko.
+1.  V seznamu šablon vyberte **formulářová aplikace Windows** šablony, pojmenujte ho **MathQuiz**a klikněte na tlačítko **OK** tlačítko.
 
      Formulář, který je pojmenován *Form1.cs* nebo *Form1.vb* v závislosti na programovacím jazyce, který jste zvolili.
 
-4.  Vyberte formulář a změňte jeho **Text** vlastnost **matematický kvíz**.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. V okně start zvolte **vytvořte nový projekt**.
+
+1. Do vyhledávacího pole zadejte "WPF", zvolte **aplikace WPF (.NET Framework)** a klikněte na tlačítko **Další**.
+
+   (Pokud se nezobrazí **aplikace WPF (.NET Framework)** šablony, instalace pomocí instalačního programu sady Visual Studio **vývoj desktopových aplikací .NET** úlohy.)
+
+1. Pojmenujte projekt, **MathQuiz**a zvolte **Create**
+
+::: moniker-end
+
+1.  Vyberte formulář a změňte jeho **Text** vlastnost **matematický kvíz**.
 
      **Vlastnosti** okno obsahuje vlastnosti pro formulář.
 
-5.  Změňte velikost formuláře na 500 pixelů na šířku a výšku 400 pixelů.
+1.  Změňte velikost formuláře na 500 pixelů na šířku a výšku 400 pixelů.
 
      Změnit velikost formuláře přetažením jeho okrajů, dokud se nezobrazí správná velikost v levém dolním rohu integrovaného vývojového prostředí (IDE). Jako alternativu můžete změnit hodnoty **velikost** vlastnost.
 
-6.  Změňte hodnotu **FormBorderStyle** vlastnost **Fixed3D**a nastavte **MaximizeBox** vlastnost **False**.
+1.  Změňte hodnotu **FormBorderStyle** vlastnost **Fixed3D**a nastavte **MaximizeBox** vlastnost **False**.
 
      Tyto hodnoty zabraňují uživatelům vyplňujícím kvíz ve změně velikosti formuláře.
 

@@ -2,7 +2,8 @@
 title: 'Kurz: Aplikace Hello World pomocí Windows Presentation Foundation (WPF) vC#'
 description: Vytvoření jednoduché aplikace Windows Desktop .NET v C# pomocí sady Visual Studio pomocí rozhraní Windows Presentation Foundation (WPF) uživatelského rozhraní.
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 03/28/2019
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ad5112313b57f4757c86a202cfdc711e9b478e1e
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325185"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647515"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Kurz: Vytvoření jednoduché aplikace s C\#
 
@@ -47,7 +48,7 @@ Po spuštění sady Visual Studio, zobrazí se vám okna nástrojů, nabídky a 
 
 ::: moniker range=">=vs-2019"
 
-Při spuštění sady Visual Studio, otevře se okno start nejprve. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí. Zobrazí se vám okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace s **Snadné spuštění**, nabídek a běžný panel nástrojů v horní části. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
+Při spuštění sady Visual Studio, otevře se okno start nejprve. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí. Zobrazí se vám okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace, pomocí vyhledávacího pole, nabídek a běžný panel nástrojů v horní části. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
 
 ::: moniker-end
 
@@ -55,41 +56,54 @@ Při spuštění sady Visual Studio, otevře se okno start nejprve. Vyberte **po
 
 Při vytváření aplikace v systému Visual Studio je třeba nejprve vytvořit projekt a řešení. V tomto příkladu vytvoříte projekt Windows Presentation Foundation (WPF).
 
+::: moniker range="vs-2017"
+
 1. Vytvořte nový projekt. Na panelu nabídek vyberte **souboru** > **nový** > **projektu**.
 
-     ::: moniker range="vs-2017"
      ![V panelu nabídky zvolte soubor, nový, projekt](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     [V panelu nabídky zvolte soubor, nový, projekt](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
-2. V **nový projekt** dialogového okna, vyberte **nainstalováno** > **Visual C#**   >  **Windows Desktop**kategorie a pak vyberte **aplikace WPF (.NET Framework)** šablony. Pojmenujte projekt **HelloWPFApp**a vyberte **OK**.
+1. V **nový projekt** dialogového okna, vyberte **nainstalováno** > **Visual C#**   >  **Windows Desktop**kategorie a pak vyberte **aplikace WPF (.NET Framework)** šablony. Pojmenujte projekt **HelloWPFApp**a vyberte **OK**.
 
      ![Šablona aplikace WPF v dialogovém okně Nový projekt sady Visual Studio](media/exploreide-newprojectcsharp.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-2. Na **vytvořte nový projekt** obrazovky, vyhledejte "WPF," zvolte **aplikace WPF (.NET Framework)** a klikněte na tlačítko **Další**.
-
-   ![Šablona aplikace WPF v dialogovém okně Nový projekt sady Visual Studio](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
-
-3. Na další obrazovce, pojmenujte projekt, **HelloWPFApp**a zvolte **vytvořit**.
-::: moniker-end
 
 Visual Studio vytvoří projekt aplikace HelloWPFApp a řešení, a **Průzkumníka řešení** zobrazuje různé soubory. **Návrhář WPF** ukazuje návrhové a XAML zobrazení *souboru MainWindow.xaml* v rozděleném zobrazení. Můžete snímků rozdělovač, abyste viděli víc nebo míň buď zobrazení. Můžete zobrazit pouze vizuální zobrazení nebo pouze zobrazení XAML. Následující položky se zobrazí v **Průzkumníka řešení**:
 
-::: moniker range="vs-2017"
 ![Průzkumník řešení se soubory HelloWPFApp načíst](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-![Průzkumník řešení se soubory HelloWPFApp načíst](../media/vs-2019/exploreide-hellowpfappfiles.png)
-::: moniker-end
 
 > [!NOTE]
 > Další informace o XAML (eXtensible Application Markup Language), najdete v článku [přehled XAML pro WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf) stránky.
 
 Poté, co jste projekt vytvořili, jej můžete upravit. S použitím **vlastnosti** okna (v **zobrazení** nabídky), můžete zobrazit a změnit možnosti položek projektu, ovládacích prvků a dalších položek v aplikaci.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. V okně start zvolte **vytvořit nový projekt**. 
+
+   ![Zobrazit okno 'vytvořte nový projekt.](../../get-started/media/vs-2019/start-window-create-new-project.png)
+
+
+2. Na **vytvořte nový projekt** obrazovky, vyhledejte "WPF," zvolte **aplikace WPF (.NET Framework)** a klikněte na tlačítko **Další**.
+
+   ![Šablona aplikace WPF v dialogovém okně "Vytvoření nového projektu.](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
+
+3. Na další obrazovce, pojmenujte projekt, **HelloWPFApp**a zvolte **vytvořit**.
+
+   ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "HelloWPFApp.](./media/vs-2019/exploreide-nameproject.png)
+ 
+Visual Studio vytvoří projekt aplikace HelloWPFApp a řešení, a **Průzkumníka řešení** zobrazuje různé soubory. **Návrhář WPF** ukazuje návrhové a XAML zobrazení *souboru MainWindow.xaml* v rozděleném zobrazení. Můžete snímků rozdělovač, abyste viděli víc nebo míň buď zobrazení. Můžete zobrazit pouze vizuální zobrazení nebo pouze zobrazení XAML. Následující položky se zobrazí v **Průzkumníka řešení**:
+
+![Průzkumník řešení se soubory HelloWPFApp načíst](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
+> [!NOTE]
+> Další informace o XAML (eXtensible Application Markup Language), najdete v článku [přehled XAML pro WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf) stránky.
+
+Poté, co jste projekt vytvořili, jej můžete upravit. Chcete-li to provést, zvolte **okno vlastností** z **zobrazení** nabídky. Pak můžete zobrazit a změnit možnosti položek projektu, ovládacích prvků a dalších položek v aplikaci.
+
+::: moniker-end
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Změna názvu souboru MainWindow.xaml
 

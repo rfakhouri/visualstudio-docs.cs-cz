@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ccb92fbe04d9a867cec308e1e4819fa96023ad4
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515217"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647359"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1: Vytvořte projekt Formulářové aplikace Windows
 
@@ -67,9 +67,7 @@ Při vytváření prohlížeče obrázků, prvním krokem je vytvoření projekt
    >
    > Po tomto, zvolte **změnit** tlačítko v instalačním programu sady Visual Studio. Můžete být vyzváni k uložte svou práci; Pokud ano, udělejte to. Dále zvolte **pokračovat** instalace zatížení. 
 
-1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *HelloWorld* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
-
-   ![v okně 'Konfigurace nového projektu' název projektu "Hello World"](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *PictureViewer* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
 
 ::: moniker-end
 

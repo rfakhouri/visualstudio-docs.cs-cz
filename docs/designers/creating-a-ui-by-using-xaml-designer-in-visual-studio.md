@@ -1,6 +1,6 @@
 ---
 title: Vytvoření uživatelského rozhraní pomocí návrháře XAML
-ms.date: 11/05/2018
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6c84017ac7cbeb33e4ce63297ade66d54dfa152b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0db8071e0943f1edde2091d173e4737214233dea
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955190"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647502"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio
 
@@ -104,56 +104,9 @@ Panel rozdělené zobrazení se zobrazí v horní části zobrazení XAML při e
 
 Přiblížení značky vám umožní na velikost **XAML** zobrazení. Můžete zvětšit z 20 % na 400 %.
 
-## <a name="device-window"></a>Okno zařízení
+## <a name="objects-and-timeline-window"></a>Objekty a časová osa období
 
-> [!NOTE]
-> Pokud verze cílové platformy (`TargetPlatformVersion`) aplikace UPW je 10.0.16299.0 nebo vyšší, **zařízení** okno není k dispozici.
-
-**Zařízení** okno v Návrháři XAML umožňuje simulovat v době návrhu různá zobrazení, zobrazení a zobrazení možností pro váš projekt. **Zařízení** okno je k dispozici na **návrhu** nabídky při práci v Návrháři XAML. Zde je, jak to funguje:
-
-![Okno zařízení](../designers/media/xaml_editor_device_panel.png)
-
-Jedná se o možnostech dostupných v okně zařízení:
-
-**Zobrazení**
-
-Určuje různé velikosti zobrazení a řešení pro aplikaci.
-
-**Orientace**
-
-Určuje různé orientace aplikace: **Na šířku** nebo **na výšku**.
-
-**Edge**
-
-Určuje zarovnání různých edge pro vaši aplikaci: **Obě**, **vlevo**, **vpravo**, nebo **žádný**.
-
-**High Contrast**
-
-Zobrazte si náhled aplikace podle vybraného nastavení kontrastu. Toto nastavení, při nastavení na hodnotu jiné než **výchozí**, přepíše `RequestedTheme` nastavenou *App.xaml*.
-
-**Přepsat škálování**
-
-Zapne zapnutí a vypnutí emulace škálování na návrhovou plochu dokumentu. To umožňuje škálování procento zvýšit jediný faktor. Zaškrtněte políčko Zapnout emulace. Například pokud vaše škálování procentuální hodnota je 100 %, dokumentu na návrhové ploše se bude škálovat 140 %. Tato možnost je zakázaná, pokud je aktuální procento škálování 180.
-
-**Minimální šířka**
-
-Určuje nastavení minimální šířky. Minimální šířka lze změnit v *App.xaml*.
-
-**Motiv**
-
-Určuje motivu aplikace. Například může přepínat mezi **tmavě** a **světla** motiv.
-
-**Zobrazit chrome**
-
-Zapne nebo vypne simulované tablet rámeček okolo vaší aplikace v návrhovém zobrazení. Zaškrtněte políčko Zobrazit rámce.
-
-**Oříznout přesahy displeje**
-
-Určuje režim zobrazení. Zaškrtněte políčko do Galerie velikost dokumentu na velikost zobrazení.
-
-## <a name="document-outline-window"></a>Osnova dokumentu – okno
-
-Okno osnovy dokumentu v Návrháři XAML umožňuje provádět tyto úkoly:
+Objekty a časová osa období v Návrháři XAML umožňuje provádět tyto úlohy:
 
 - Zobrazte hierarchickou strukturu všech prvků na návrhové ploše.
 
@@ -163,15 +116,15 @@ Okno osnovy dokumentu v Návrháři XAML umožňuje provádět tyto úkoly:
 
 - V místní nabídce (kontextová nabídka) použijte pro vybrané elementy. Stejnou nabídku je také k dispozici pro vybrané elementy na návrhovou plochu.
 
-Chcete-li zobrazit **Osnova dokumentu** okna na řádku nabídek zvolte **zobrazení** > **ostatní Windows** > **Osnova dokumentu**.
+Chcete-li zobrazit **objekty a časová osa** okna na řádku nabídek zvolte **zobrazení** > **objekty a časová osa**.
 
-![Osnova dokumentu – okno](../designers/media/xaml_editor_doc_outline.png)
+![Objekty a časová osa období](../designers/media/objects-and-timeline-window.png)
 
-Jedná se o možnostech dostupných v **Osnova dokumentu** okno:
+Jedná se o možnostech dostupných v **objekty a časová osa** okno:
 
 **Osnova dokumentu**
 
-Hlavní zobrazení v **Osnova dokumentu** okno zobrazuje hierarchii dokumentu ve stromové struktuře. Hierarchickou povahu Osnova dokumentu můžete použít k prozkoumání dokumentu na různých úrovních podrobností a k uzamčení nebo skrytí prvků jednotlivě nebo ve skupinách.
+Hlavní zobrazení v **objekty a časová osa** okno zobrazuje hierarchii dokumentu ve stromové struktuře. Hierarchickou povahu Osnova dokumentu můžete použít k prozkoumání dokumentu na různých úrovních podrobností a k uzamčení nebo skrytí prvků jednotlivě nebo ve skupinách.
 
 **Zobrazit/skrýt**
 
@@ -183,15 +136,19 @@ Uzamyká nebo odemyká prvky návrhové plochy, které odpovídají položkám v
 
 **Obnovit obor na pageRoot**
 
-Možnosti v horní části **Osnova dokumentu** okna, která zobrazuje symbol šipku nahoru, vrátí do předchozího oboru Osnova dokumentu. Přesouvání rozsahu směrem nahoru platí pouze v případě, že jste v rámci stylu nebo šablony.
+Možnosti v horní části **objekty a časová osa** okna, která zobrazuje symbol šipku nahoru, vrátí do předchozího oboru Osnova dokumentu. Přesouvání rozsahu směrem nahoru platí pouze v případě, že jste v rámci stylu nebo šablony.
 
 ## <a name="properties-window"></a>Vlastnosti – okno
 
 **Vlastnosti** okno umožňuje nastavit hodnoty vlastností v ovládacích prvcích. Zde je, jak to funguje:
 
-![Vlastnosti – okno](../designers/media/xaml_editor_prop_window.png)
+![Vlastnosti – okno](../designers/media/xaml-designer-properties-window.png)
 
-Existují různé možnosti v horní části **vlastnosti** okna. Můžete změnit název aktuálně vybraného prvku s použitím **název** pole. V levém horním rohu je ikona, která reprezentuje aktuálně vybraný element. Chcete-li seřadit vlastnosti podle kategorie nebo abecedy, klikněte na tlačítko **kategorie**, **název**, nebo **zdroje** v **uspořádat podle** seznamu. Pokud chcete zobrazit seznam událostí pro ovládací prvek, klikněte na tlačítko **události** tlačítko, které zobrazí symbol boltu blesku. Vyhledejte vlastnost, začněte zadáním názvu vlastnosti v **vlastnosti hledání** pole. **Vlastnosti** okně zobrazí vlastnosti, které odpovídají zadanému hledání během psaní. Některé vlastnosti umožňují nastavit upřesňující vlastnosti tak, že vyberete šipku dolů. Další informace o používání vlastnosti a zpracování událostí naleznete v tématu [Úvod do ovládací prvky a vzorce](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
+Existují různé možnosti v horní části **vlastnosti** okna. Můžete změnit název aktuálně vybraného prvku s použitím **název** pole. V levém horním rohu je ikona, která reprezentuje aktuálně vybraný element. Chcete-li seřadit vlastnosti podle kategorie nebo abecedy, klikněte na tlačítko **kategorie**, **název**, nebo **zdroje** v **uspořádat podle** seznamu. Pokud chcete zobrazit seznam událostí pro ovládací prvek, klikněte na tlačítko **události** tlačítko, které zobrazí symbol boltu blesku.
+
+Vyhledejte vlastnost, začnou do vyhledávacího pole zadejte název vlastnosti. **Vlastnosti** okně zobrazí vlastnosti, které odpovídají zadanému hledání během psaní. Některé vlastnosti umožňují nastavit upřesňující vlastnosti tak, že vyberete šipku dolů.
+
+Další informace o používání vlastnosti a zpracování událostí naleznete v tématu [Úvod do ovládací prvky a vzorce](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 Vpravo od každé vlastnosti je hodnota *značka vlastnosti* , který se zobrazí jako pole symbolu. Vzhled značky vlastnost označuje, zda je datové vazby nebo prostředek použitý pro vlastnost. Například symbol bílé pole určuje výchozí hodnotu, symbol černé skříňky obvykle označuje, že použití místního prostředku a oranžová pole se obvykle označuje, že byl použit datové vazby. Po kliknutí na značku vlastnosti, můžete přejít na definici stylu, otevřete Tvůrce vazeb dat nebo otevřít výběr prostředku.
 

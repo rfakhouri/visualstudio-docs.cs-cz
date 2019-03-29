@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943113"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647242"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Vytvoření databáze a přidání tabulek v sadě Visual Studio
 
@@ -26,11 +26,11 @@ Visual Studio můžete použít k vytvoření a aktualizaci souboru místní dat
 
 ## <a name="prerequisites"></a>Požadavky
 
-K dokončení tohoto návodu, musíte mít nepovinný **ukládání a zpracování dat** úlohy nainstalovaná v sadě Visual Studio. Ho Pokud chcete nainstalovat, otevřete **instalační program sady Visual Studio** a zvolte **úlohy** kartu. V části **Web a Cloud**, zvolte **ukládání a zpracování dat**. Zvolte **změnit** tlačítko pro přidání úlohy ke službě Visual Studio.
+K dokončení tohoto návodu, musíte mít nepovinný **ukládání a zpracování dat** úlohy nainstalovaná v sadě Visual Studio. Ho Pokud chcete nainstalovat, otevřete **instalační program sady Visual Studio** a zvolte **Další** > **změnit** vedle verze sady Visual Studio, kterou chcete upravit (Pokud máte více než jedna verze nainstalovaná). Na **úlohy** ve skupině **Web a Cloud**, zvolte **ukládání a zpracování dat**a potom klikněte na tlačítko **změnit** přidat úlohy Visual Studio.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Vytvoření projektu a lokálního databázového souboru
 
-1. Vytvoření projektu Windows Forms s názvem **SampleDatabaseWalkthrough**.
+1. Vytvořte nový **aplikace Windows Forms** projektu a pojmenujte ho **SampleDatabaseWalkthrough**.
 
 2. Na panelu nabídek vyberte **projektu** > **přidat novou položku**.
 
@@ -38,7 +38,7 @@ K dokončení tohoto návodu, musíte mít nepovinný **ukládání a zpracován
 
      ![Dialogové okno šablon položek](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Pojmenujte databázi **SampleDatabase**a pak vyberte **přidat** tlačítko.
+4. Pojmenujte databázi **SampleDatabase**a potom klikněte na tlačítko **přidat**.
 
 ### <a name="add-a-data-source"></a>Přidání zdroje dat
 
@@ -62,9 +62,9 @@ K dokončení tohoto návodu, musíte mít nepovinný **ukládání a zpracován
 
 Připojovací řetězec můžete zobrazit *SampleDatabase.mdf* souboru tak, že otevřete okno Vlastnosti datového připojení:
 
-- V sadě Visual Studio, vyberte **zobrazení** > **Průzkumník objektů systému SQL Server** Pokud toto okno ještě není otevřený. Otevřete okno vlastností rozbalením **datová připojení** uzel, otevřete místní nabídku pro *SampleDatabase.mdf*a pak vyberete **vlastnosti**.
+- Vyberte **zobrazení** > **Průzkumník objektů systému SQL Server** otevřít **Průzkumník objektů systému SQL Server** okna. Rozbalte **(localdb) \MSSQLLocalDB** > **databází**a potom klikněte pravým tlačítkem na *SampleDatabase.mdf* a vyberte **vlastnosti**.
 
-- Alternativně můžete vybrat **zobrazení** > **Průzkumníka serveru**, pokud toto okno ještě není otevřený. Otevřete okno vlastností rozbalením **datová připojení** uzlu. Otevřete místní nabídku pro *SampleDatabase.mdf*a pak vyberte **vlastnosti**.
+- Alternativně můžete vybrat **zobrazení** > **Průzkumníka serveru**, pokud toto okno ještě není otevřený. Otevřete okno vlastností rozbalením **datová připojení** uzel, otevřete místní nabídku pro *SampleDatabase.mdf*a pak vyberete **vlastnosti**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Vytvoření tabulky a klíče pomocí Návrháře tabulky
 
@@ -72,7 +72,7 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 
 ### <a name="create-the-customers-table"></a>Vytvoření tabulky Zákazníci
 
-1. V **Průzkumníka serveru** nebo **Průzkumník objektů systému SQL Server**, rozbalte **datová připojení** uzel a potom rozbalte **SampleDatabase.mdf**uzlu.
+1. V **Průzkumníka serveru**, rozbalte **datová připojení** uzel a potom rozbalte **SampleDatabase.mdf** uzlu.
 
 2. Otevřete místní nabídku pro **tabulky**a pak vyberte **přidat novou tabulku**.
 
@@ -101,9 +101,9 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 
     ![Návrhář tabulky](../data-tools/media/raddata-table-designer.png)
 
-7. V levém horním rohu **návrháře tabulky**, vyberte **aktualizace** tlačítko.
+7. V levém horním rohu **návrháře tabulky**vyberte **aktualizace**.
 
-8. V **náhled aktualizací databáze** dialogové okno, vyberte **aktualizace databáze** tlačítko.
+8. V **náhled aktualizací databáze** dialogu **aktualizace databáze**.
 
     Vaše změny jsou uloženy do lokálního databázového souboru.
 

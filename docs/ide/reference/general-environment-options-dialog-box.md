@@ -1,6 +1,6 @@
 ---
 title: Obecné, prostředí, dialogové okno Možnosti
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710835"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647268"
 ---
-# <a name="general-environment-options-dialog-box"></a>Obecné, prostředí, dialogové okno Možnosti
+# <a name="options-dialog-box-environment--general"></a>Dialogové okno Možnosti: Prostředí \> obecné
 
 Pomocí této stránky můžete změnit barevné motivy, nastavení panelu stavu a přidružení přípony souboru, mezi další možnosti pro integrované vývojové prostředí (IDE). Můžete přistupovat **možnosti** dialogové okno tak, že otevřete **nástroje** nabídku, zvolíte **možnosti**, otevřete **prostředí** složky a pak Výběr **Obecné** stránky. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** zaškrtávací políčko **možnosti** dialogové okno.
 
@@ -39,13 +39,21 @@ Pomocí této stránky můžete změnit barevné motivy, nastavení panelu stavu
 
 **Barevný motiv**
 
-Zvolte **modré**, **světla** nebo **tmavě** barvy motivu rozhraní IDE.
+Zvolte **modré**, **světla**, **tmavě**, nebo **modrý (zvláště kontrastní)** barvy motivu rozhraní IDE.
 
-Můžete nainstalovat další předdefinované motivy a vytvářet vlastní motivy stažením a instalací **Editor motivů sady Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje se zobrazí v seznamu Barva motivu další barevné motivy.
+Můžete nainstalovat další předdefinované motivy a vytvářet vlastní motivy stažením a instalací **Editor motivů sady Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje, další barevné motivy joinkind **barevný motiv** pole se seznamem.
 
-**Použít název velká a malá písmena v řádku nabídek**
+**Použít první velká písmena na řádku nabídek pro používání stylů**
 
-Nabídky jsou v **malých a velkých písmen názvu** ve výchozím nastavení. Zrušte zaškrtnutí políčka tuto možnost nastavíte **všechna velká mají standardní**.
+Nabídky použijte mena všech slov velká ve výchozím nastavení pro používání stylů. Tuto možnost používat všechna velká písmena používání stylů pro místo, zrušte zaškrtnutí.
+
+::: moniker range=">=vs-2019"
+
+**Optimalizace vykreslování pro obrazovky s jinou densities – (vyžaduje restart)**
+
+Tato možnost povolí nebo zakáže na monitorování bodů na palec (DPI) sledování (nebo *PMA*). Když je povolené PMA, uživatelské rozhraní sady Visual Studio se zobrazí zřetelný v jakékoli koeficient měřítka zobrazení monitorování a konfigurace DPI, včetně víc monitorů. Pokud chcete povolit PMA, je třeba Windows 10. dubna 2018 Update nebo novější a rozhraní .NET Framework 4,8 nebo novější. (Tato možnost se zobrazí šedě Pokud se nesplní tyto dva požadavky.)
+
+::: moniker-end
 
 **Automaticky upravit vzhled na základě výkonu klienta**
 
@@ -61,13 +69,13 @@ Používá hardwarovou akceleraci grafiky, pokud je k dispozici, nebo softwarov�
 
 ## <a name="other"></a>Ostatní
 
-**Položek zobrazených v nabídce okno**
+**Položky, které chcete zobrazit v nabídce okno**
 
-Přizpůsobí počet období, která se zobrazí v seznamu Windows **okno** nabídky. Zadejte číslo mezi 1 a 24. Ve výchozím nastavení počet je 10.
+Přizpůsobí počet období, která se zobrazí v seznamu Windows **okno** nabídky. Zadejte číslo mezi 1 a 24. Výchozí hodnota je 10.
 
 **Počet položek zobrazovaných v seznamech**
 
-Přizpůsobí počet naposledy použitých projekty a soubory, které se zobrazují na **souboru** nabídky. Zadejte číslo mezi 1 a 24. Ve výchozím nastavení počet je 10. Toto je snadný způsob, jak načíst nedávno použité projekty a soubory.
+Přizpůsobí počet naposledy použitých projekty a soubory, které se zobrazují na **souboru** nabídky. Zadejte číslo mezi 1 a 24. Výchozí hodnota je 10. Toto je snadný způsob, jak načíst nedávno použité projekty a soubory.
 
 **Zobrazit stavový řádek**
 
