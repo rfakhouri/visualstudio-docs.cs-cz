@@ -68,6 +68,7 @@
 #### [Hledání předplatného](search-license.md)
 #### [Export předplatných](exporting-subscriptions.md)
 #### [Nadměrná přidělení](handle-overclaimed-license.md)
+#### [Maximální využití](maximum-usage.md)
 #### [Předplatná po konci platnosti](handle-expired-license.md)
 #### [Předplatitelé s přihlášením pomocí osobního e-mailu](personal-email-sign-ins.md)
 ## Získání předplatných sady Visual Studio
