@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0db8071e0943f1edde2091d173e4737214233dea
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647502"
+ms.locfileid: "58658863"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio
 
@@ -104,9 +104,9 @@ Panel rozdělené zobrazení se zobrazí v horní části zobrazení XAML při e
 
 Přiblížení značky vám umožní na velikost **XAML** zobrazení. Můžete zvětšit z 20 % na 400 %.
 
-## <a name="objects-and-timeline-window"></a>Objekty a časová osa období
+## <a name="document-outline-window"></a>Osnova dokumentu – okno
 
-Objekty a časová osa období v Návrháři XAML umožňuje provádět tyto úlohy:
+Okno osnovy dokumentu v Návrháři XAML je podobný **objekty a časová osa** okna v Blendu pro Visual Studio. **Osnova dokumentu** umožňuje provádět tyto úkoly:
 
 - Zobrazte hierarchickou strukturu všech prvků na návrhové ploše.
 
@@ -116,15 +116,15 @@ Objekty a časová osa období v Návrháři XAML umožňuje provádět tyto úl
 
 - V místní nabídce (kontextová nabídka) použijte pro vybrané elementy. Stejnou nabídku je také k dispozici pro vybrané elementy na návrhovou plochu.
 
-Chcete-li zobrazit **objekty a časová osa** okna na řádku nabídek zvolte **zobrazení** > **objekty a časová osa**.
+Chcete-li zobrazit **Osnova dokumentu** okna na řádku nabídek zvolte **zobrazení** > **ostatní Windows** > **Osnova dokumentu**.
 
-![Objekty a časová osa období](../designers/media/objects-and-timeline-window.png)
+![Osnova dokumentu – okno v sadě Visual Studio](../designers/media/document-outline-window.png)
 
-Jedná se o možnostech dostupných v **objekty a časová osa** okno:
+Jedná se o možnostech dostupných v **Osnova dokumentu** okno:
 
 **Osnova dokumentu**
 
-Hlavní zobrazení v **objekty a časová osa** okno zobrazuje hierarchii dokumentu ve stromové struktuře. Hierarchickou povahu Osnova dokumentu můžete použít k prozkoumání dokumentu na různých úrovních podrobností a k uzamčení nebo skrytí prvků jednotlivě nebo ve skupinách.
+Hlavní zobrazení v **Osnova dokumentu** okno zobrazuje hierarchii dokumentu ve stromové struktuře. Hierarchickou povahu Osnova dokumentu můžete použít k prozkoumání dokumentu na různých úrovních podrobností a k uzamčení nebo skrytí prvků jednotlivě nebo ve skupinách.
 
 **Zobrazit/skrýt**
 
@@ -136,7 +136,7 @@ Uzamyká nebo odemyká prvky návrhové plochy, které odpovídají položkám v
 
 **Obnovit obor na pageRoot**
 
-Možnosti v horní části **objekty a časová osa** okna, která zobrazuje symbol šipku nahoru, vrátí do předchozího oboru Osnova dokumentu. Přesouvání rozsahu směrem nahoru platí pouze v případě, že jste v rámci stylu nebo šablony.
+Možnosti v horní části **Osnova dokumentu** okna, která zobrazuje symbol šipku nahoru, vrátí do předchozího oboru Osnova dokumentu. Přesouvání rozsahu směrem nahoru platí pouze v případě, že jste v rámci stylu nebo šablony.
 
 ## <a name="properties-window"></a>Vlastnosti – okno
 
