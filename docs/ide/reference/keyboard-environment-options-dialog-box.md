@@ -10,16 +10,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934637"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647112"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>Dialogové okno Klávesnice, Prostředí, Možnosti
+# <a name="options-dialog-box-environment--keyboard"></a>Dialogové okno Možnosti: Prostředí \> klávesnice
+
 Pomocí této stránky můžete nastavit mapování klávesnice. Další informace o mapování najdete v tématu [určení a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
