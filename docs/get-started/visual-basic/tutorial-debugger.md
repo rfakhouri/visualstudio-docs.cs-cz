@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1c05fa3d424d90bedbbd52ac66636dc1fc1dcb
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: fa9547aad720567e2f62d3fde1248504c4849e11
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355510"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790638"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Kurz: Další informace k ladění kódu jazyka Visual Basic pomocí sady Visual Studio
 
@@ -56,7 +56,7 @@ Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejd
 1. Otevřít Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **jazyka visual basic**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt Konzolová aplikace (.NET Framework)**. V dialogovém okně, které se zobrazí, zadejte název, například **get spuštění – ladění**a klikněte na tlačítko **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **jazyka visual basic**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt Konzolová aplikace (.NET Framework)**. V dialogovém okně, které se zobrazí, zadejte název, například **get spuštění – ladění**a klikněte na tlačítko **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **aplikace konzoly (.NET Rozhraní Framework)**. Zadejte název, například **get spuštění – ladění** a klikněte na tlačítko **OK**.

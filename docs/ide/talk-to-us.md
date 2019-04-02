@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 3df55c70c476288df7ae8f966adbad644971b27e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953516"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790690"
 ---
 # <a name="visual-studio-product-feedback"></a>Názor na produkt Visual Studio
 
@@ -24,7 +24,7 @@ Kontaktujte nás. Nás zajímá vylepšování našich produktů a dokumentaci v
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Chci ohlášení problému se sadou Visual Studio
 
-Pokud máte potíže s aplikací Visual Studio&mdash;například chyby, výkon pomalá nebo neočekávané chování&mdash;nám dejte vědět pomocí **nahlásit problém** nástroj. V sadě Visual Studio, zvolte ikonu zpětné vazby vedle **Snadné spuštění**, nebo zvolte **pomáhají** > **odeslat zpětnou vazbu** > **sestavy Problém** z řádku nabídek. V dalším kroku Visual Studio otevře [komunity vývojářů](https://developercommunity.visualstudio.com) stránku v prohlížeči, kde se můžete přihlásit nahlásit problém. Další informace najdete v tématu [postup ohlášení problému se sadou Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Pokud máte potíže s aplikací Visual Studio&mdash;například chyby, výkon pomalá nebo neočekávané chování&mdash;nám dejte vědět pomocí **nahlásit problém** nástroj. V sadě Visual Studio, zvolte ikonu zpětné vazby u vyhledávacího pole, nebo zvolte **pomáhají** > **odeslat zpětnou vazbu** > **nahlásit problém** z nabídky panel. V dalším kroku Visual Studio otevře [komunity vývojářů](https://developercommunity.visualstudio.com) stránku v prohlížeči, kde se můžete přihlásit nahlásit problém. Další informace najdete v tématu [postup ohlášení problému se sadou Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Chci, aby námět funkcemi sady Visual Studio
 

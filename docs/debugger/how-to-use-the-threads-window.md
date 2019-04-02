@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476030"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790794"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Návod: Ladění vícevláknových aplikací pomocí okna vlákna (C#, Visual Basic, C++)
 
@@ -37,8 +37,8 @@ Vytvořte následující projekt aplikace s více podprocesy pro použití v tom
 1. Otevřít Visual Studio a vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
-    
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
+
     - Pro C#, zvolte **vytvořit nový projekt Konzolová aplikace (.NET Framework)** pro C#. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     - Pro jazyk C++, zvolte **vytvořit nový projekt konzolové aplikace**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 781eddb72c30197d4eeb04890c9dc4193060a17d
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a93fc82ca8e4aa1f88de75d958bfea20fb85cd92
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647476"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790872"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a React v sadě Visual Studio
 
@@ -85,7 +85,7 @@ Nejprve vytvoříte projekt webové aplikace Node.js.
 1. Vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Node.js**, klikněte na tlačítko **prázdná webová aplikace Node.js** (JavaScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Node.js**, klikněte na tlačítko **prázdná webová aplikace Node.js** (JavaScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **prázdná webová aplikace Node.js**, zadejte název **NodejsWebAppBlank**, klikněte na tlačítko **OK**.

@@ -2,7 +2,7 @@
 title: Příručka správce sady Visual Studio
 titleSuffix: ''
 description: Další informace o tom, jak nasadit aplikaci Visual Studio v podnikovém prostředí.
-ms.date: 05/29/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324932"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790092"
 ---
 # <a name="visual-studio-administrator-guide"></a>Příručka správce sady Visual Studio
 
@@ -30,7 +30,17 @@ V podnikovém prostředí je běžné, že správce systému nasadit zařízení
 
 ## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Nasazení v podnikovém prostředí sady Visual Studio
 
-Visual Studio lze nasadit do klientských pracovních stanic tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/productinfo/vs2017-system-requirements-vs). Jestli nasazujete prostřednictvím softwaru, jako je System Center nebo dávkového souboru, je obvykle vhodné kvůli tomu provádět následující kroky:
+::: moniker range="vs-2017"
+
+Visual Studio lze nasadit do klientských pracovních stanic tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/productinfo/vs2017-system-requirements-vs/). Jestli nasazujete prostřednictvím softwaru, jako je System Center nebo dávkového souboru, je obvykle vhodné kvůli tomu provádět následující kroky:
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio lze nasadit do klientských pracovních stanic tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/releases/2019/system-requirements/). Jestli nasazujete prostřednictvím softwaru, jako je System Center nebo dávkového souboru, je obvykle vhodné kvůli tomu provádět následující kroky:
+
+::: moniker-end
 
 1. [Vytvoření sdílené síťové složky, která obsahuje soubory produktu Visual Studio](create-a-network-installation-of-visual-studio.md) do umístění v síti.
 

@@ -1,7 +1,7 @@
 ---
 title: Řešení potíží s chybami sítě nebo proxy serveru
 description: Řešení chyby související s sítě nebo proxy, které můžete narazit při instalaci nebo používání sady Visual Studio za bránou firewall nebo proxy server.
-ms.date: 02/23/2018
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4cd62e73d3a10eded5d74eaffc5486e237ca02ca
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324958"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790495"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
 
@@ -54,6 +54,8 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu 
 
 - Pokud chcete použít výchozí pověření s proxy serverem, můžete provádět následující akce:
 
+::: moniker range="vs-2017"
+
   1. Najít **devenv.exe.config** (konfigurační soubor devenv.exe) v: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** nebo **% ProgramFiles (x86) %\Microsoft Vizuální Studio\2017\Enterprise\Common7\IDE**.
 
   2. V konfiguračním souboru najít `<system.net>` blokovat a následně přidejte následující kód:
@@ -67,11 +69,28 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu 
       Je třeba vložit adresu proxy serveru správná pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Další informace najdete v tématu [ &lt;defaultProxy&gt; – Element (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) a [ &lt;proxy&gt; – Element (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stránky.
+     > Další informace najdete v tématu [ &lt;defaultProxy&gt; – Element (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) a [ &lt;proxy&gt; – Element (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stránky.
 
-  -OR-
+::: moniker-end
 
-- Také postupujte podle pokynů [jak se připojit přes ověřený proxy server webové](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) blogový příspěvek, který ukazuje, jak přidat kód, který vám umožní používat proxy server.
+::: moniker range="vs-2019"
+
+  1. Najít **devenv.exe.config** (konfigurační soubor devenv.exe) v: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** nebo **% ProgramFiles (x86) %\Microsoft Vizuální Studio\2019\Enterprise\Common7\IDE**.
+
+  2. V konfiguračním souboru najít `<system.net>` blokovat a následně přidejte následující kód:
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      Je třeba vložit adresu proxy serveru správná pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.
+
+     > [!NOTE]
+     > Další informace najdete v tématu [ &lt;defaultProxy&gt; – Element (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) a [ &lt;proxy&gt; – Element (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stránky.
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Chyba: "Nadřízené připojení bylo uzavřeno."
 

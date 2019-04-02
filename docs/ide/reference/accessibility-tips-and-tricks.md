@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680929"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789689"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Usnadnění tipy a triky pro Visual Studio
 
@@ -50,9 +50,9 @@ Integrované vývojové prostředí sady Visual Studio má panely nástrojů, st
 
 |Funkce|Popis|Kombinace kláves|
 |-------------|-----------------| - |
-|Panely nástrojů rozhraní IDE|Vyberte první tlačítko na panelu nástrojů Standardní.|**ALT**, **CTRL** + **TAB**|
-|Panelech nástrojů|Přesune fokus na panely nástrojů v panelu nástrojů. <br> <br> **POZNÁMKA:** Tento postup funguje pro většinu okna nástrojů, ale pouze v případě, že je aktivní v panelu nástrojů. Kromě toho musíte zvolit klávesu SHIFT před klávesu ALT. V některých oknech nástrojů, jako je například Průzkumník týmových projektů musí podržte stisknutou klávesu SHIFT na chvíli předtím, než zvolí klávesu ALT.|**SHIFT** + **ALT**|
-|Panely nástrojů|Přejdete na první položku v dalším panelu nástrojů (když je fokus panelu nástrojů).|**CTRL** + **TAB**|
+|Panely nástrojů rozhraní IDE|Vyberte první tlačítko na panelu nástrojů Standardní.|**ALT**, **Ctrl** + **kartu**|
+|Panelech nástrojů|Přesune fokus na panely nástrojů v panelu nástrojů. <br> <br> **POZNÁMKA:** Tento postup funguje pro většinu okna nástrojů, ale pouze v případě, že je aktivní v panelu nástrojů. Kromě toho musíte zvolit klávesu SHIFT před klávesu ALT. V některých oknech nástrojů, jako je například Průzkumník týmových projektů musí podržte stisknutou klávesu SHIFT na chvíli předtím, než zvolí klávesu ALT.|**SHIFT** + **Alt**|
+|Panely nástrojů|Přejdete na první položku v dalším panelu nástrojů (když je fokus panelu nástrojů).|**Ctrl** + **Tab**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>Další užitečné kombinace klávesových zkratek
 
@@ -60,14 +60,14 @@ Některé další užitečné kombinace klávesových zkratek, patří.
 
 |Funkce|Popis|Kombinace kláves|
 |-------------|-----------------| - |
-|IDE – integrované vývojové prostředí|Vysoký kontrast – zapnutí a vypnutí. <br> <br> **POZNÁMKA:** Standardní místní Windows|**LEVÝ ALT + LEVÝ SHIFT + PRINT SCREEN**|
+|IDE – integrované vývojové prostředí|Vysoký kontrast – zapnutí a vypnutí. <br> <br> **POZNÁMKA:** Standardní místní Windows|**Levý Alt + Levý Shift + PrtScn**|
 |Dialogové okno|Zaškrtněte nebo zrušte zaškrtnutí políčka zaškrtávací políčko v dialogovém okně. <br> <br> **POZNÁMKA:** Standardní místní Windows|**MEZERNÍK**|
-|Kontextové nabídky|Otevřete nabídku kontextu (klikněte pravým tlačítkem). <br> <br> **POZNÁMKA:** Standardní místní Windows|**SHIFT** + **F10**|
-|Nabídky|Rychlý přístup k položce nabídky pomocí jeho klíče akcelerátoru. Zvolte **ALT** klíč následovaný podtržené písmena v nabídce k aktivaci příkazu. Chcete-li zobrazit dialogové okno Otevřít projekt v sadě Visual Studio, například byste zvolili **ALT** + **F** + **O**  +  **P**.  <br><br> **POZNÁMKA:** Standardní místní Windows|**ALT** + **[písmeno]**|
-|Rychlé spuštění vyhledávacího pole| Použijte funkci hledání v sadě Visual Studio|**Ctrl** + **Q**|
-|Okno nástrojů|Přecházení mezi kartami sady nástrojů.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DOWNARROW**|
-|Okno nástrojů|Přidání ovládacího prvku z panelu nástrojů do formuláře nebo návrháře.|**ENTER**|
-|Klávesnice, prostředí, dialogové okno Možnosti|Odstranit kombinace klíče zadané v **stiskněte klávesovou zkratku** možnost.|**BACKSPACE**|
+|Místní nabídky|Otevřete nabídku kontextu (klikněte pravým tlačítkem). <br> <br> **POZNÁMKA:** Standardní místní Windows|**Shift** + **F10**|
+|Nabídky|Rychlý přístup k položce nabídky pomocí jeho klíče akcelerátoru. Zvolte **Alt** klíč následovaný podtržené písmena v nabídce k aktivaci příkazu. Chcete-li zobrazit dialogové okno Otevřít projekt v sadě Visual Studio, například byste zvolili **Alt** + **F** + **O**  +  **P**.  <br><br> **POZNÁMKA:** Standardní místní Windows|**ALT** + **[písmeno]**|
+|Vyhledávací pole|Použijte funkci hledání v sadě Visual Studio.|**Ctrl** + **Q**|
+|Okno nástrojů|Přecházení mezi kartami sady nástrojů.|**Ctrl** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **šipka dolů**|
+|Okno nástrojů|Přidání ovládacího prvku z panelu nástrojů do formuláře nebo návrháře.|**Zadejte**|
+|Dialogové okno Možnosti: Prostředí > klávesnice|Odstranit kombinace klíče zadané v **stiskněte klávesovou zkratku** možnost.|**BACKSPACE**|
 
 > [!NOTE]
 > Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici.
@@ -76,12 +76,12 @@ Některé další užitečné kombinace klávesových zkratek, patří.
 
 Zvukové aplet ve Windows můžete přiřadit zvuk na události programu sady Visual Studio. Konkrétně můžete přiřadit zvuky k následujícím událostem program:
 
- * Dosažení zarážky
- * Sestavení bylo zrušeno.
- * Sestavení selhalo
- * Sestavení proběhlo úspěšně.
+* Dosažení zarážky
+* Sestavení bylo zrušeno.
+* Sestavení selhalo
+* Sestavení proběhlo úspěšně.
 
-Tady je způsob.
+Tady je způsob:
 
 1. V **hledání** pole na počítači se systémem Windows 10, typ **změnit systémové zvuky**.
 

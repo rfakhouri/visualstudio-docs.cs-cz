@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 9ac39dc2458e2d1f0acbf73614b6345949a8d98d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354740"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790599"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Vítá vás Visual Studio IDE | Python
 
@@ -68,11 +68,11 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
    ![Příkaz Pylintu kontextové nabídky pro projekty v Pythonu](media/code-pylint-command.png)
 
-- [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Vyhledávací pole
 
-   Visual Studio, může to působit příliš složitě čas od času s tolika nabídky, možnosti a vlastnosti. **Snadné spuštění** vyhledávacího pole je skvělý způsob, jak rychle najít, co potřebujete, v sadě Visual Studio. Když začnete psát název něco, co hledáte, Visual Studio obsahuje výsledky, které dostanete, přesně, kde potřebujete přejít. Pokud chcete přidat funkce do sady Visual Studio, například pro přidání podpory pro další programovací jazyk, **Snadné spuštění** poskytuje výsledky, které otevřete instalační program sady Visual Studio k instalaci úloh nebo jednotlivých komponent.
+   Visual Studio, může to působit příliš složitě čas od času s tolika nabídky, možnosti a vlastnosti. Do vyhledávacího pole je skvělý způsob, jak rychle najít, co potřebujete, v sadě Visual Studio. Když začnete psát název něco, co hledáte, Visual Studio obsahuje výsledky, které dostanete, přesně, kde potřebujete přejít. Pokud je potřeba přidat funkce do sady Visual Studio, například pro přidání podpory pro další programovací jazyk, do vyhledávacího pole obsahuje výsledky, které otevřete instalační program sady Visual Studio k instalaci úloh nebo jednotlivých komponent.
 
-   ![Rychlé spuštění vyhledávacího pole v sadě Visual Studio](media/tour-ide-quick-launch.png)
+   ![Vyhledávací pole v sadě Visual Studio](media/tour-ide-quick-launch.png)
 
 - Podtržení vlnovkou a [rychlé akce](../ide/quick-actions.md)
 

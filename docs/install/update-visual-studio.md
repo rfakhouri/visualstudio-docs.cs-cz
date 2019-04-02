@@ -2,7 +2,7 @@
 title: Aktualizace sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak aktualizovat na nejnovější verzi, podrobné sady Visual Studio.
-ms.date: 03/21/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 945250660e80353ea536986e5149f8814d1fe563
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 7f23ad749fc2a1d71153fd3adf2503a0c3108bf6
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323591"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790196"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace na nejnovější verzi sady Visual Studio
 
@@ -40,7 +40,7 @@ A pokud chcete vyzkoušet další verze, vezměte v úvahu stahování [verze Re
 
 My jsme nově zjednodušili instalace a aktualizovat prostředí, aby bylo snazší pro použití přímo z integrovaného vývojového prostředí. Tady je postup k aktualizaci z verze 15.6 a novějším, která je novější verze sady Visual Studio.
 
-### <a name="use-the-notifications-hub"></a>Použití centra oznámení
+### <a name="using-the-notifications-hub"></a>Pomocí centra oznámení
 
 Při aktualizaci neexistuje odpovídající příznak oznámení v sadě Visual Studio.
 
@@ -49,6 +49,9 @@ Při aktualizaci neexistuje odpovídající příznak oznámení v sadě Visual 
 1. Zvolte na příznak oznámení a otevřete **oznámení** hub a klikněte na tlačítko aktualizace, ke které chcete nainstalovat.
 
    ![Aktualizace sady Visual Studio 2017 pomocí centra oznámení](media/vs-install-notifications-hub-15dot6.png "centru oznámení sadě Visual Studio 2017")
+
+      > [!TIP]
+      > Je kumulativní aktualizace pro edice Visual Studio 2019, takže vždy rozhodnout je nainstalovat jeden nejnovější číslo verze.
 
 1. Když **aktualizace** dialogové okno se otevře, zvolte **aktualizovat**.
 
@@ -63,7 +66,7 @@ Při aktualizaci neexistuje odpovídající příznak oznámení v sadě Visual 
      > [!NOTE]
      > Když spustíte Visual Studio v režimu správce, musíte ručně restartovat Visual Studio po aktualizaci.
 
-### <a name="use-the-ide"></a>Pomocí integrovaného vývojového prostředí
+### <a name="using-the-ide"></a>Používání prostředí IDE
 
 Můžete si vyhledejte aktualizaci a potom nainstalovat na panelu nabídek v sadě Visual Studio.
 
@@ -80,7 +83,7 @@ Můžete si vyhledejte aktualizaci a potom nainstalovat na panelu nabídek v sad
    > [!NOTE]
    > Když spustíte Visual Studio v režimu správce, musíte ručně restartovat Visual Studio po aktualizaci.
 
-### <a name="use-the-visual-studio-installer"></a>Použití instalačního programu sady Visual Studio
+### <a name="using-the-visual-studio-installer"></a>Pomocí instalačního programu sady Visual Studio
 
 Stejně jako v dřívějších verzích sady Visual Studio můžete použít instalační program sady Visual Studio pro instalaci aktualizace.
 
@@ -112,6 +115,9 @@ Pokud používáte starší verzi, tady je postup, chcete-li použít aktualizac
    Zvolte na příznak oznámení a otevřete **oznámení** rozbočovače.
 
    ![Aktualizace sady Visual Studio 2017 pomocí centra oznámení](media/notifications-hub.png "centru oznámení v sadě Visual Studio")
+
+      > [!TIP]
+      > Je kumulativní aktualizace pro edice Visual Studio 2017, takže vždy rozhodnout je nainstalovat jeden nejnovější číslo verze.
 
 1. Zvolte **"Visual Studio Update" je k dispozici**, které se otevře **rozšíření a aktualizace** dialogové okno.
 
@@ -152,14 +158,6 @@ Pokud vyberete možnost Ignorovat upozornění, Visual Studio zastaví, abych ho
 
      ![Aktualizace sady Visual Studio 2017 s použitím instalačního programu sady Visual Studio](media/update-visual-studio.png "aktualizace sady Visual Studio pomocí instalačního programu sady Visual Studio")
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
-
-## <a name="see-also"></a>Viz také:
-
-* [Úpravy sady Visual Studio](modify-visual-studio.md)
-* [Odinstalace sady Visual Studio](uninstall-visual-studio.md)
-* [Aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update)
-
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -198,8 +196,12 @@ Tady je postup, chcete-li aktualizovat vizuál&nbsp;Studio&nbsp;2019&nbsp;ve ver
 
 ## <a name="use-the-ide"></a>Pomocí integrovaného vývojového prostředí
 
-1. Otevřít Visual Studio. 
- 
+Můžete si vyhledejte aktualizaci a pak jej nainstalovat pomocí na řádku nabídek nebo vyhledávací pole v aplikaci Visual Studio 2019.
+
+### <a name="open-visual-studio"></a>Otevřít Visual Studio
+
+1. Z Windows **Start** nabídce zvolte **Visual Studio 2019**.
+
     ![Otevřít Visual Studio 2019 RC](media/vs2019-visual-studio-rc.png "otevřete Visual Studio 2019 z Windows")
 
 1. V části **Začínáme**, zvolte možnosti otevření rozhraní IDE.
@@ -209,7 +211,7 @@ Tady je postup, chcete-li aktualizovat vizuál&nbsp;Studio&nbsp;2019&nbsp;ve ver
     Otevře se Visual Studio. V integrovaném vývojovém prostředí **aktualizace Visual Studio 2019** se zobrazí zpráva.
 
     ![Zpráva 'aktualizace Visual Studio 2019' v integrovaném vývojovém prostředí](media/vs2019-update-visual-studio-ide-message.png "zpráva 'aktualizace Visual Studio 2019' v integrovaném vývojovém prostředí")
- 
+
 1. V **aktualizace Visual Studio 2019** zprávu, zvolte **podrobnosti**.
 
    ![Zvolte tlačítko Zobrazit podrobnosti o ve zprávě aktualizace Visual Studio IDE. 2019](media/vs2019-update-visual-studio-ide-view-details.png "klikněte na tlačítko Zobrazit podrobnosti zprávy aktualizace Visual Studio 2019")
@@ -220,10 +222,47 @@ Tady je postup, chcete-li aktualizovat vizuál&nbsp;Studio&nbsp;2019&nbsp;ve ver
 
    Visual Studio ukončí a potom znovu otevře.
 
+### <a name="in-visual-studio"></a>In Visual Studio
+
+1. Na panelu nabídek zvolte **pomáhají**a klikněte na tlačítko **vyhledávat aktualizace**.
+
+     ![Zvolte možnost "Vyhledat aktualizace z nabídky Nápověda](media/vs-2019/vs-ide-check-updates-help-menu.png "zvolit\"Kontrola aktualizací\"z nabídky Nápověda")
+
+    > [!NOTE]
+    > Do vyhledávacího pole v integrovaném vývojovém prostředí můžete také vyhledat aktualizace. Stisknutím klávesy **Ctrl**+**Q**, zadejte "Kontrola aktualizací" a vyberte výsledek hledání, který odpovídá.
+
+1. V **aktualizovat stažený a připravený k instalaci** dialogového okna zvolte **aktualizace**.
+
+     ![Klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci](media/vs2019-update-visual-studio-community-rc-from-ide.png "klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci")
+
+   Visual Studio ukončí a potom znovu otevře.
+
+## <a name="use-the-notifications-hub"></a>Použití centra oznámení
+
+1. V sadě Visual Studio uložte si práci.
+
+1. Vyberte ikonu oznámení v pravém horním rohu IDE sady Visual Studio otevřete **oznámení** rozbočovače.
+
+   ![Ikona oznámení v integrovaném vývojovém prostředí sady Visual Studio](media/vs-2019/notification-bar.png "ikonu oznámení v integrovaném vývojovém prostředí sady Visual Studio")
+
+1. V **centrem oznámení**, vyberte aktualizaci, kterou chcete nainstalovat a klikněte na tlačítko **podrobnosti**.
+
+     ![V centru oznámení v aplikaci Visual Studio 2019](media/vs-2019/notification-hub-update.png "centra oznámení v aplikaci Visual Studio 2019")
+
+      > [!TIP]
+      > Je kumulativní aktualizace pro edice Visual Studio 2019, takže vždy rozhodnout je nainstalovat jeden nejnovější číslo verze.
+
+1. V **aktualizovat stažený a připravený k instalaci** dialogového okna zvolte **aktualizace**.
+
+   Visual Studio aktualizuje, zavře a znovu neotevře.
+
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 
+* [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update)
-
-::: moniker-end
+* [Úpravy sady Visual Studio](modify-visual-studio.md)
+* [Odinstalace sady Visual Studio](uninstall-visual-studio.md)

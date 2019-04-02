@@ -1,6 +1,6 @@
 ---
 title: Klávesové zkratky (HTML a JavaScriptu) | Dokumentace Microsoftu
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,18 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe25da9dd687eba011bd8e3cc2701cf154e0358
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697260"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789805"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Klávesové zkratky (HTML a JavaScript)
 
+::: moniker range=">=vs-2019"
+ Klávesové zkratky v sadě Visual Studio pro ladění aplikací Node.js v sadě Visual Studio s **vývoj v Node.js** nainstalovaná úloha.
+::: moniker-end
+::: moniker range="vs-2017"
  Klávesové zkratky v sadě Visual Studio pro ladění aplikací pro UWP pomocí HTML a JavaScriptu.
+::: moniker-end
+
 
 ## <a name="general-shortcuts"></a>Obecné klávesové zkratky
+
  Tyto zkratky fungují všechny nástroje pro aplikace pro UPW pomocí HTML a JavaScriptu.
 
 |Akce|Zástupce|
@@ -35,6 +42,7 @@ ms.locfileid: "56697260"
 |Otevřete rozbočovači výkon a Diagnostika|Alt+F2|
 
 ## <a name="javascript-console-shortcuts"></a>Zástupce konzoly jazyka JavaScript
+
  Použijte tyto klávesové zkratky v okně konzoly jazyka JavaScript.
 
 |Akce|Zástupce|
@@ -44,6 +52,7 @@ ms.locfileid: "56697260"
 |Přepínání mezi režimem jedním řádkem a více řádky|Ctrl+Alt+M|
 
 ## <a name="dom-explorer-shortcuts"></a>Klávesové zkratky Průzkumníka modelu DOM
+
  V Průzkumníku modelu DOM použijte tyto klávesové zkratky.
 
 |Akce|Zástupce|
@@ -56,5 +65,6 @@ ms.locfileid: "56697260"
 |Zmenšit o 1 vybraná hodnota šablon stylů CSS|Šipka dolů|
 
 ## <a name="see-also"></a>Viz také
-- [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)
-- [Rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md)
+- [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

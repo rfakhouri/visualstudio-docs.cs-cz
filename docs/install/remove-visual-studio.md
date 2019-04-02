@@ -2,7 +2,7 @@
 title: Odebrání sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak úplně odebrat sady Visual Studio z vašeho počítače, krok za krokem.
-ms.date: 09/12/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -22,18 +22,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322714"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790118"
 ---
 # <a name="remove-visual-studio"></a>Odebrání sady Visual Studio
 
-Pokud dojde k závažné chybě a nelze opravit nebo odinstalovat Visual Studio, můžete spustit `InstallCleanup.exe` nástroj pro odebrání instalační soubory a informace o produktu pro všechny nainstalované instance sady Visual Studio 2017 a novějších verzích. Spuštění tohoto nástroje je třeba udělat jako poslední možnost, pokud opravit nebo odinstalovat navrácení služeb po a odinstalovat funkce z jiné instalace sady Visual Studio nebo jiné produkty, které je potřeba opravit.
+Pokud dojde k závažné chybě a nelze opravit nebo odinstalovat Visual Studio, můžete spustit `InstallCleanup.exe` nástroj pro odebrání instalační soubory a informace o produktu pro všechny nainstalované instance sady Visual Studio 2017 nebo Visual Studio 2019. Spuštění tohoto nástroje by mělo být provedeno pouze jako poslední možnost-li opravit nebo odinstalovat navrácení služeb po a odinstalovat funkce z jiné instalace sady Visual Studio nebo jiné produkty, které pak také potřebovat opravit.
 
-V níže uvedených pokynů můžete spustit nástroj pomocí přepínače příkazového řádku pomocí následujícího chování:
+V následujících pokynech můžete spustit nástroj pomocí přepínače příkazového řádku pomocí následujícího chování:
 
 | Přepínač | Chování |
 | ------ | -------- |
@@ -42,8 +42,7 @@ V níže uvedených pokynů můžete spustit nástroj pomocí přepínače pří
 
 1. Ukončete instalační program sady Visual Studio.
 2. Otevřete příkazový řádek správce. Chcete-li otevřít příkazový řádek správce, postupujte podle těchto kroků:
-   * Klikněte na tlačítko **Start** nabídky
-   * Typ **cmd**.
+   * Typ **cmd** v poli "Sem zadejte hledaný text".
    * Klikněte pravým tlačítkem na **příkazového řádku**a potom klikněte na tlačítko **spustit jako správce**.
 3. Zadejte úplnou cestu `InstallCleanup.exe` nástroj a předat podle toho, která přepínač příkazového řádku vyžadujete. Ve výchozím nastavení je cesta nástroje:
    ```

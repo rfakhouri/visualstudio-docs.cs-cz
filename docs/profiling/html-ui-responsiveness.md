@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f95daba8d1a7a8965be223ff2a9787101530edc1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868153"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790924"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro univerzální aplikace pro Windows.
@@ -178,7 +179,7 @@ if (performance.mark && performance.measure) {
 
  ![Diagnostic session ruler](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
 
- Ukazuje časové osy, pokud dojde k události lifecyle aplikace, jako je aktivační událost, a zobrazí značky uživatelů (uživatele označit trojúhelníky), který můžete přidat do vašeho kódu. Můžete vybrat události, které chcete zobrazit popisy tlačítek s dalšími informacemi. Další informace o uživatelské značky, naleznete v tématu [označit kód pro analýzu](#ProfileMark) v tomto tématu.
+ Ukazuje časové osy, pokud dojde k události životního cyklu aplikací, jako je aktivační událost, a zobrazí značky uživatelů (uživatele označit trojúhelníky), který můžete přidat do vašeho kódu. Můžete vybrat události, které chcete zobrazit popisy tlačítek s dalšími informacemi. Další informace o uživatelské značky, naleznete v tématu [označit kód pro analýzu](#ProfileMark) v tomto tématu.
 
  Události životního cyklu aplikace se zobrazí jako kosočtverce symboly. Toto jsou události modelu DOM, které zahrnují následující:
 

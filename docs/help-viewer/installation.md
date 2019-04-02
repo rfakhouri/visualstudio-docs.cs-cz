@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155666"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789676"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalace aplikace Microsoft Help Viewer
 
@@ -31,11 +31,11 @@ Aplikaci Help Viewer je volitelná instalace součástí sady Visual Studio. K j
 
 1. Zvolte **změnit** tlačítko pro spuštění instalace aplikace Microsoft Help Viewer.
 
-Dalším způsobem, jak snadno instalovat aplikace Microsoft Help Viewer je prostřednictvím **Snadné spuštění** pole:
+Dalším způsobem, jak snadno instalovat aplikace Microsoft Help Viewer je prostřednictvím vyhledávacího pole:
 
-1. Zadejte nebo vložte **aplikaci help viewer** v **Snadné spuštění** pole v záhlaví okna sady Visual Studio.
+1. Stisknutím klávesy **Ctrl**+**Q** a potom zadejte nebo vložte **aplikaci help viewer** do vyhledávacího pole.
 
-   ![Rychlé spuštění pole](media/installation/quick-launch.png)
+   ![Vyhledávací pole](media/installation/quick-launch.png)
 
 1. Vyberte výsledek názvem **aplikace Help Viewer (jednotlivých komponent)**.
 

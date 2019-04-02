@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476056"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790703"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Návod: Ladění paralelní aplikace v sadě Visual Studio (C#, Visual Basic, C++)
 
@@ -65,8 +65,8 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
 1. Otevřít Visual Studio a vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
-    
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
+
     - Pro C# nebo Visual Basic, zvolte **vytvořit nový projekt Konzolová aplikace (.NET Framework)** buď C# nebo Visual Basic. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     - Pro jazyk C++, zvolte **vytvořit nový projekt konzolové aplikace** jazyka C++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
 

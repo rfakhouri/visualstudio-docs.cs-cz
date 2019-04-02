@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 9ce4b1d90d0d252300d2d8f8ef614d67712e425f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355257"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789577"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Rychlý start: Vytvoření první aplikace pro Vue.js pomocí sady Visual Studio
 
@@ -59,7 +59,7 @@ Nejprve vytvoříte projekt Vue.js webové aplikace.
 1. Vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Vue.js**, klikněte na tlačítko **základní Vue.js webovou aplikaci** (JavaScript nebo TypeScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Vue.js**, klikněte na tlačítko **základní Vue.js webovou aplikaci** (JavaScript nebo TypeScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **JavaScript** nebo **TypeScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **základní Vue.js webovou aplikaci**, klikněte na tlačítko **OK**.

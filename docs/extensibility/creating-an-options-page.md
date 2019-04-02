@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194415"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790157"
 ---
 # <a name="create-an-options-page"></a>Vytvoření stránky Možnosti
 
@@ -101,7 +101,7 @@ Tento návod vytvoří jednoduchou stránku Nástroje/možnosti, které použív
 
      V levém podokně byste měli vidět **kategorie Mé**. (Možnosti kategorie jsou uvedeny v abecedním pořadí, měl by se zobrazit o uprostřed v seznamu dolů.) Otevřít **kategorie Mé** a potom klikněte na tlačítko **stránku mřížky**. Možnosti mřížky se zobrazí v pravém podokně. Vlastnosti kategorie je **Moje možnosti**, a název vlastnosti není **možnost Moje celé číslo**. Popis vlastnosti **možnost Moje celé číslo**, zobrazí se v dolní části podokna. Změňte hodnotu z její počáteční hodnotu 256 na něco jiného. Klikněte na tlačítko **OK**a poté ji znovu otevřete **stránku mřížky**. Uvidíte, že je nová hodnota přetrvává.
 
-     Možnosti stránky je dostupné také prostřednictvím snadného spuštění sady Visual Studio. Zadejte v okně Snadné spuštění v pravém horním rohu integrovaného vývojového prostředí **kategorie Mé** a zobrazí se **kategorie Mé -> stránku mřížky** uvedeny v rozevírací nabídce.
+     Možnosti stránky je dostupné také prostřednictvím vyhledávacího pole v sadě Visual Studio. Do vyhledávacího pole v horní části rozhraní IDE, zadejte **kategorie Mé** a zobrazí se vám **kategorie Mé -> stránku mřížky** ve výsledcích se objeví.
 
 ## <a name="create-a-tools-options-custom-page"></a>Vytvoření vlastní stránky Možnosti nástrojů
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268604"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790534"
 ---
 # <a name="features-of-visual-studio"></a>Funkce sady Visual Studio
 
@@ -118,7 +118,7 @@ Služby Azure DevOps jsou cloudové služby pro plánování, hostování, autom
 
 Team Foundation Server (TFS) je Centrum správy životního cyklu aplikace pro sadu Visual Studio. Umožňuje všem uživatelům zapojené do procesu vývoje se zúčastnit prostřednictvím jediného řešení. TFS je užitečné při správě heterogenních týmům a projektům, příliš.
 
-Pokud máte v síti organizace Azure DevOps nebo Team Foundation Server, k němu připojíte pomocí **Team Exploreru** okna v sadě Visual Studio. Z tohoto okna můžete zkontrolovat kód do nebo ze správy zdrojového kódu, správě pracovních položek, spusťte sestavení a přístup týmové místnosti a pracovní prostory. Můžete otevřít **Team Exploreru** z **Snadné spuštění** pole, nebo v hlavní nabídce z **zobrazení** > **Team Exploreru** nebo z **Týmu** > **spravovat připojení**.
+Pokud máte v síti organizace Azure DevOps nebo Team Foundation Server, k němu připojíte pomocí **Team Exploreru** okna v sadě Visual Studio. Z tohoto okna můžete zkontrolovat kód do nebo ze správy zdrojového kódu, správě pracovních položek, spusťte sestavení a přístup týmové místnosti a pracovní prostory. Můžete otevřít **Team Exploreru** z vyhledávacího pole nebo v hlavní nabídce z **zobrazení** > **Team Exploreru** nebo z **týmu**  >  **Spravovat připojení**.
 
 Na následujícím obrázku **Team Exploreru** okna pro řešení, které je hostované v Azure DevOps služby.
 

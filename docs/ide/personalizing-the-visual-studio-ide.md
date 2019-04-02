@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708768"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790235"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Přizpůsobení prostředí IDE sady Visual Studio
 
@@ -31,20 +31,20 @@ Mnoho možností přizpůsobení, které jsou vystaveny prostřednictvím [možn
 
 - V panelu nabídky zvolte **nástroje** > **možnosti**a pokud ještě není rozbalen, rozbalte **prostředí** uzlu.
 
-- Typ `environment` v **Snadné spuštění** pole a tlačítko **prostředí--> Obecné** ze seznamu výsledků.
+- Stisknutím klávesy **Ctrl**+**Q**, typ **prostředí** do vyhledávacího pole a klikněte na tlačítko **prostředí--> Obecné** z výsledky.
 
-   > [!TIP]
-   > Pokud se zobrazí dialogové okno, můžete stisknout **F1** o pomoc na různá nastavení na této stránce.
+> [!TIP]
+> Jakmile se zobrazí dialogové okno Možnosti, můžete stisknout **F1** o pomoc na různá nastavení na této stránce.
 
 ## <a name="environment-color-themes"></a>Barevné motivy prostředí
 
-Chcete-li změnit barevný motiv mezi světla a tmavě modrá, typ `environment` v **Snadné spuštění** pole a klikněte na tlačítko **prostředí--> Obecné**. V **možnosti** dialogovém okně Změnit **barevný motiv** možnost.
+Chcete-li změnit barevný motiv mezi světla a tmavě modrá, typ **prostředí** do vyhledávacího pole a klikněte na tlačítko **prostředí--> Obecné**. V **možnosti** dialogovém okně Změnit **barevný motiv** možnost.
 
-Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **Snadné spuštění** pole a klikněte na tlačítko **prostředí--> písma a barvy**. Zobrazit [jak: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Chcete-li změnit možnosti zabarvení v editoru, zadejte **prostředí** do vyhledávacího pole a klikněte na tlačítko **prostředí--> písma a barvy**. Zobrazit [jak: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Hlavní nabídka malých a velkých písmen
 
-Můžete změnit malých a velkých písmen hlavní nabídky mezi **Mena všech slov velká** ("File") a **všechna velká mají standardní** ("FILE"). Typ `environment` v **Snadné spuštění** vyberte **prostředí--> Obecné**a potom změňte **použít název případu stylů na řádku nabídek** možnost.
+Můžete změnit malých a velkých písmen hlavní nabídky mezi **Mena všech slov velká** ("File") a **všechna velká mají standardní** ("FILE"). Typ **prostředí** do vyhledávacího pole, vyberte **prostředí--> Obecné**a potom změňte **použít název případu stylů na řádku nabídek** možnost.
 
 ### <a name="customize-menus-and-toolbars"></a>Přizpůsobení nabídek a panelů nástrojů
 

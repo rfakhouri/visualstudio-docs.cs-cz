@@ -1,7 +1,7 @@
 ---
 title: Řešení potíží s instalací nebo upgradovat problémy
 description: V některých případech může něco selže. Pokud instalace sady Visual Studio nebo upgrade selže, může pomoct tuto stránku.
-ms.date: 08/01/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 464bd3a6e4c5ed8ade1f9174ff205e2eda5c4aff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e5f754c9d52bc5756021cd3fbf45321c150fc59e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325117"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790612"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Řešení potíží s instalací sady Visual Studio a upgradovat problémy
 
@@ -35,7 +35,17 @@ Následující kroky jsou optimalizované pro typické instalace online. Problé
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Krok 1 – Zkontrolujte, zda tento problém se o známý problém
 
+::: moniker range="vs-2017"
+
 Existuje několik známých problémů s nástrojem Visual Studio Installer, který společnost Microsoft pracuje na opravě. Pokud chcete zobrazit, pokud je alternativní řešení vašeho problému, zkontrolujte, [známé problémy v části poznámky k verzi](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Existuje několik známých problémů s nástrojem Visual Studio Installer, který společnost Microsoft pracuje na opravě. Pokud chcete zobrazit, pokud je alternativní řešení vašeho problému, zkontrolujte, [známé problémy v části poznámky k verzi](/visualstudio/releases/2019/release-notes#-known-issues).
+
+::: moniker-end
 
 ### <a name="step-2---check-with-the-developer-community"></a>Krok 2: Kontrola s komunitou vývojářů
 
@@ -48,20 +58,47 @@ Instalační program sady Visual Studio bootstrapper je minimální odlehčené 
 > [!NOTE]
 > Provedením následujících akcí přeinstaluje soubory instalačního programu sady Visual Studio a obnoví metadat instalace.
 
+::: moniker range="vs-2017"
+
 1. Ukončete instalační program sady Visual Studio.
 2. Odstraňte adresář instalační program sady Visual Studio. Adresář je obvykle `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
 3. Spusťte instalační program sady Visual Studio zaváděcí nástroj. Zaváděcí nástroj může najít ve složce stažené soubory s názvem souboru, který následuje `vs_[Visual Studio edition]__*.exe` vzor. Pokud tuto aplikaci se nepodařilo najít, zaváděcí nástroj můžete stáhnout tak, že přejdete [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a kliknutím na **Stáhnout** vaší verze sady Visual Studio. Spusťte spustitelný soubor resetovat vaše instalace metadata.
 4. Akci pro instalaci nebo aktualizaci sady Visual Studio znovu. Pokud instalační program ani potom nedaří, přejděte k dalšímu kroku.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Ukončete instalační program sady Visual Studio.
+2. Odstraňte adresář instalační program sady Visual Studio. Adresář je obvykle `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Spusťte instalační program sady Visual Studio zaváděcí nástroj. Zaváděcí nástroj může najít ve složce stažené soubory s názvem souboru, který následuje `vs_[Visual Studio edition]__*.exe` vzor. Pokud tuto aplikaci se nepodařilo najít, zaváděcí nástroj můžete stáhnout tak, že přejdete [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) stránku a kliknutím na **Stáhnout** vaší verze sady Visual Studio. Spusťte spustitelný soubor resetovat vaše instalace metadata.
+4. Akci pro instalaci nebo aktualizaci sady Visual Studio znovu. Pokud instalační program ani potom nedaří, přejděte k dalšímu kroku.
+
+::: moniker-end
+
 ### <a name="step-4---report-a-problem"></a>Krok 4 – ohlásit problém
 
 V některých situacích, jako je ta, která souvisí poškozené soubory možná muset problémy se podívali na případ od případu. Abychom pomohli nám umožňují, postupujte prosím takto:
+
+::: moniker range="vs-2017"
 
 1. Shromážděte vaše protokoly instalace. Zobrazit [jak získat protokoly instalace sady Visual Studio](#how-to-get-visual-studio-installation-logs) podrobnosti.
 2. Otevřete instalační program sady Visual Studio a pak klikněte na tlačítko **nahlásit problém** otevřete Nástroje pro zpětnou vazbu Visual Studio.
 ![Vytvořit kartu k tlačítku poskytnout zpětnou vazbu a otevřete nástroj pro zpětnou vazbu](media/report-a-problem.png)
 3. Pojmenujte hlášení o problému a poskytuje relevantní podrobnosti. Klikněte na tlačítko **Další** přejdete **přílohy** části a připojte soubor protokolu vygenerovaný (obvykle je soubor na `%TEMP%\vslogs.zip`).
 4. Klikněte na tlačítko **Další** zkontrolujte hlášení o problému, a potom klikněte na **odeslat**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Shromážděte vaše protokoly instalace. Zobrazit [jak získat protokoly instalace sady Visual Studio](#how-to-get-visual-studio-installation-logs) podrobnosti.
+2. Otevřete instalační program sady Visual Studio a pak klikněte na tlačítko **nahlásit problém** otevřete Nástroje pro zpětnou vazbu Visual Studio.
+![Vytvořit kartu k tlačítku poskytnout zpětnou vazbu a otevřete nástroj pro zpětnou vazbu](media/vs-2019/vs-installer-report-problem.png)
+3. Pojmenujte hlášení o problému a poskytuje relevantní podrobnosti. Klikněte na tlačítko **Další** přejdete **přílohy** části a připojte soubor protokolu vygenerovaný (obvykle je soubor na `%TEMP%\vslogs.zip`).
+4. Klikněte na tlačítko **Další** zkontrolujte hlášení o problému, a potom klikněte na **odeslat**.
+
+::: moniker-end
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Krok 5: spuštění InstallCleanup.exe odebrat instalační soubory
 

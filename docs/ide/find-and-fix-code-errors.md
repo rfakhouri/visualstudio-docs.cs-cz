@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223608"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790521"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kód pracovat v sadě Visual Studio
 
@@ -44,7 +44,7 @@ Pokud jste provedli žádné úpravy kódu, který jste dříve a úspěšně se
 
 ![Výstup Visual Studia a seznam chyb](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Klikněte na řádek s chybou v **seznam chyb** vyvolá se v okně můžete přejít na řádek chybu. (Nebo zapnout čísla řádků kliknutím **Snadné spuštění** řádku v pravém horním rohu, zadáním "čísla řádků" do něj a stisknutím klávesy **Enter**. Toto je nejrychlejší způsob, jak se **možnosti** dialogové okno, ve kterém můžete zapnout čísla řádků. Naučte se používat **Snadné spuštění** pruhové a ušetříte si mnoho uživatelského rozhraní kliknutí!)
+Klikněte na řádek s chybou v **seznam chyb** vyvolá se v okně můžete přejít na řádek chybu. (Nebo zapnout čísla řádků stisknutím kombinace kláves **Ctrl**+**Q**, zadáním **čísla řádků**a poté volbou **zapnout nebo vypnoutčíslařádků**ve výsledcích. Toto je nejrychlejší způsob, jak se **možnosti** dialogové okno, ve kterém můžete zapnout čísla řádků.)
 
 ![Editor sady Visual Studio s čísly řádků](../ide/media/vs_ide_gs_debug_line_numbers.png)
 

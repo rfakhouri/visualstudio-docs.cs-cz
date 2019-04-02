@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873175"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790807"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Rychlý start: Nejdřív se podívejte na nástroje pro profilaci
 
@@ -119,6 +119,7 @@ Když vyberete časové období na grafy a zvolte **podrobnosti**, podrobné zob
 
 V grafech můžete také použít k určení, zda jsou závislá na procesoru, nebo GPU vázán problémových míst výkonu.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Analýza výkonu (UPW v JavaScriptu)
 
 Pro aplikace pro UPW můžete použít nástroje paměti jazyka JavaScript a HTML rychlosti odezvy uživatelského rozhraní.
@@ -130,6 +131,7 @@ Nástroj paměti jazyka JavaScript je podobný nástroj využití paměti, kter�
 Diagnostikovat odezvu uživatelského rozhraní, pomalé načítání času a v aplikacích pro UPW, pomalé aktualizace sady visual použijte nástroj rychlost odezvy UI HTML. Využití je podobný nástroj časová osa aplikace pro další typy aplikací. Další informace najdete v tématu [rychlost odezvy HTML UI](../profiling/html-ui-responsiveness.md).
 
 ![Profilace nástroj rychlost odezvy UI HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Analýza využití sítě (UPW)
 

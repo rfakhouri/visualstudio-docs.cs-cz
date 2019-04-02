@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928033"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789702"
 ---
 # <a name="manage-project-and-solution-properties"></a>Správa vlastností projektu a řešení
 
-Projekty mají vlastnosti, které řídí mnoho aspektů kompilace, ladění, testování a nasazení. Některé vlastnosti jsou společné mezi všechny typy projektů a některé jsou jedinečné pro konkrétní jazyky a platformy. Přístup k vlastnosti projektu kliknutím pravým tlačítkem myši na uzel projektu v **Průzkumníka řešení** a zvolíte **vlastnosti**, nebo pomocí klávesové zkratky "properties" do **Snadné spuštění** vyhledávací pole v řádku nabídek.
+Projekty mají vlastnosti, které řídí mnoho aspektů kompilace, ladění, testování a nasazení. Některé vlastnosti jsou společné mezi všechny typy projektů a některé jsou jedinečné pro konkrétní jazyky a platformy. Přístup k vlastnosti projektu kliknutím pravým tlačítkem myši na uzel projektu v **Průzkumníka řešení** a zvolíte **vlastnosti** nebo pomocí klávesové zkratky **vlastnosti** do vyhledávacího pole na řádek nabídek a zvolíte **okno vlastností** ve výsledcích.
 
 ![Kontextové nabídky projektu](../ide/media/vs2015_proj_prop_menu.gif)
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354723"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790898"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: První seznámení s integrovaným vývojovým prostředím sady Visual Studio
 
@@ -125,15 +125,15 @@ Vytvořme projektu zobrazíte některé výstup sestavení. Z **sestavení** nab
 
 ![Okno výstup v sadě Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Snadné spuštění
+## <a name="search-box"></a>Vyhledávací pole
 
-**Snadné spuštění** vyhledávacího pole je rychlý a snadný způsob, jak přejít na prakticky cokoli v sadě Visual Studio. Můžete zadat nějaký text související s co chcete udělat, a ho budete zobrazit seznam možností, které se vztahují na text. Představte si například, že chcete zvýšit úroveň podrobností výstupu sestavení zobrazíte další podrobnosti o tom, co přesně sestavení dělá. Zde je, jak vám může provést:
+Do vyhledávacího pole je rychlý a snadný způsob, jak přejít na prakticky cokoli v sadě Visual Studio. Můžete zadat nějaký text související s co chcete udělat, a ho budete zobrazit seznam možností, které se vztahují na text. Představte si například, že chcete zvýšit úroveň podrobností výstupu sestavení zobrazíte další podrobnosti o tom, co přesně sestavení dělá. Zde je, jak vám může provést:
 
 ::: moniker range="vs-2017"
 
 1. Vyhledejte **Snadné spuštění** vyhledávacího pole v pravém horním rohu integrovaného vývojového prostředí. (Nebo stisknout **Ctrl**+**Q** k němu přistupovat.)
 
-2. Typ **podrobností** do **Snadné spuštění** vyhledávacího pole. V zobrazené výsledky, zvolte **projekty a řešení--> sestavení a spuštění** pod **možnosti** kategorie.
+2. Typ **podrobností** do vyhledávacího pole. V zobrazené výsledky, zvolte **projekty a řešení--> sestavení a spuštění** pod **možnosti** kategorie.
 
    ![Snadné spuštění vyhledávacího pole v sadě Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ Vytvořme projektu zobrazíte některé výstup sestavení. Z **sestavení** nab
 
 ::: moniker range=">=vs-2019"
 
-1. Vyhledejte **Snadné spuštění** vyhledávacího pole v horní části rozhraní IDE, stačí napravo od nabídky. (Nebo stisknout **Ctrl**+**Q** k němu přistupovat.)
+1. Stisknutím klávesy **Ctrl**+**Q** aktivovat do vyhledávacího pole v horní části rozhraní IDE.
 
-2. Typ **podrobností** do **Snadné spuštění** vyhledávacího pole. V zobrazené výsledky, zvolte **podrobnost nástroje MSBuild změnu**.
+2. Typ **podrobností** do vyhledávacího pole. V zobrazené výsledky, zvolte **podrobnost nástroje MSBuild změnu**.
 
-   ![Snadné spuštění vyhledávacího pole v aplikaci Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+   ![Vyhledávací pole v aplikaci Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
 
    **Možnosti** dialogové okno s **sestavíte a spustíte** stránka možností.
 
@@ -163,7 +163,7 @@ Vytvořme projektu zobrazíte některé výstup sestavení. Z **sestavení** nab
 
 ## <a name="send-feedback-menu"></a>Odeslat zpětnou vazbu nabídky
 
-By se vyskytnou potíže při použití sady Visual Studio, nebo pokud máte návrhy na vylepšení produktu, můžete použít **odeslat zpětnou vazbu** nabídce v horní části okna nástroje Visual Studio vedle **rychlé Spuštění** pole.
+Musí se vyskytnou potíže při použití sady Visual Studio, nebo pokud máte návrhy na vylepšení produktu, můžete použít **odeslat zpětnou vazbu** nabídce v horní části okna nástroje Visual Studio.
 
 ::: moniker range="vs-2017"
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ea8b7f378562d31cfcfde786664e227a3fec6b0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708859"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790352"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikací pro UWP v sadě Visual Studio
 Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) řídí stav spuštění aplikace – spuštění, pozastavení, pokračování a ukončení aplikace v reakci na akce uživatelů a stav zařízení. Při ladění, zakáže Windows tyto aktivační události. Toto téma popisuje, jak vyvolat tyto události v ladicím programu.
@@ -72,7 +72,7 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
 
 2.  Otevření stránky vlastnosti ladění pro počáteční projekt. V Průzkumníku řešení vyberte projekt. Na **ladění** nabídce zvolte **vlastnosti**.
 
-     Pro projekty jazyka C++ a JavaScript, rozbalte **vlastnosti konfigurace** a klikněte na tlačítko **ladění**.
+     Pro projekty C++, rozbalte **vlastnosti konfigurace** a klikněte na tlačítko **ladění**.
 
 3.  Proveďte jednu z těchto akcí:
 
@@ -80,7 +80,7 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
 
          ![C&#35;&#47;VB ladění spouštěcí aplikace vlastnost](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Pro projekty jazyka JavaScript a Visual C++, zvolte **ne** z **spuštění aplikace** seznamu.
+    -   Pro projekty Visual C++, zvolte **ne** z **spuštění aplikace** seznamu.
 
          ![C&#43;&#43;&#47;VB spuštění vlastnosti ladění aplikace](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

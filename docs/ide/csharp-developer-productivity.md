@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: d15bda52d4baca5e2aa6df47f0450f6947a340e8
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: e7b451cf18a461f94e1d8682652e16dac9ee8ab2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572811"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790456"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivita nástroje Visual Studio Příručka pro C# vývojáře
 
@@ -51,7 +51,7 @@ Tady jsou oblíbené klávesové zkratky sady Visual Studio:
 | **Ctrl**+**D** | Duplicitní řádek | Duplikuje řádku kódu, který se kurzor nachází (k dispozici v **Visual Studio 2017 verze 15.6** a novější) |
 | **SHIFT**+**Alt**+**+**/**-** | Rozbalit/Sbalit výběr | Rozbalíte nebo sbalíte aktuální výběr v editoru (k dispozici v **Visual Studio 2017 verze 15.5** a novější) |
 | **SHIFT** + **Alt** + **.** | Vložit další odpovídající blikajícího kurzoru | Přidá výběr a blikající kurzor na dalším místě, která odpovídá aktuální výběr (k dispozici v **Visual Studio 2017 verze 15.8** a novější) |
-| **Ctrl**+**Q** | Snadné spuštění | Hledat všechna nastavení sady Visual Studio |
+| **Ctrl**+**Q** | Hledat | Hledat všechna nastavení sady Visual Studio |
 | **F5** | Spustit ladění | Spuštění ladění aplikace |
 | **Ctrl**+**F5** | Spustit bez ladění | Místní spuštění aplikace bez ladění |
 | **CTRL**+**K**,**D** (výchozí profil) nebo **Ctrl**+**E**,**D**  (Profil jazyka C#) | [Formátovat dokument](code-styles-and-quick-actions.md#format-document-command) | Vyčistí formátování narušení v souboru na základě nového řádku, mezery a nastavení odsazení |

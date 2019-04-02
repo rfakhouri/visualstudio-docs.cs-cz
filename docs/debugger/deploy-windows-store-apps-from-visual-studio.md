@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043762"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790378"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Nasazení aplikací pro UPW ze sady Visual Studio
 
@@ -76,7 +76,7 @@ Nasazení používá síťový kanál. vzdálený ladicí program ke vzdáleném
 
     **Připojení ke vzdálené** dialogové okno zobrazí zařízení, na podsíti místní sítě a zařízení, která je přímo připojený k počítači Visual Studio pomocí kabelu Ethernet.
 
-   **Určení vzdáleného zařízení na stránce projektu JavaScript nebo Visual C++**
+   **Určení vzdáleného zařízení na stránce projektu Visual C++**
 
    ![C&#43; &#43; vlastnosti pro vzdálené ladění projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Chcete-li odebrat výjimku zpětnou smyčku sítě z ní:
 
 - Na C# a ladění jazyka Visual Basic stránka vlastností, zrušte **povolit zpětnou smyčku sítě** zaškrtávací políčko.
 
-- Na stránce vlastností jazyka JavaScript a ladění, nastavte **povolit zpětnou smyčku sítě** hodnota, která se **ne**.
+- Na stránce vlastností ladění jazyka C++, nastavte **povolit zpětnou smyčku sítě** hodnota, která se **ne**.
 
-**Nespouštět, ale ladit můj kód při spuštění (C# a Visual Basic) nebo spustit aplikaci (JavaScript a C++)**
+**Nespouštět, ale ladit můj kód při spuštění (C# a Visual Basic) nebo spusťte aplikaci (C++)**
 
 Ke konfiguraci nasazení na automatické spuštění relace ladění při spuštění aplikace:
 
 - Na C# a ladění jazyka Visual Basic vlastností, zkontrolujte **nespouštět, ale ladit můj kód při spuštění** zaškrtávací políčko.
 
-- Na stránce vlastností jazyka JavaScript a ladění, nastavte **spustit aplikaci** hodnota, která se **Ano**.
+- Na stránce vlastností ladění jazyka C++, nastavte **spustit aplikaci** hodnota, která se **Ano**.
 
 ## <a name="see-also"></a>Viz také
 

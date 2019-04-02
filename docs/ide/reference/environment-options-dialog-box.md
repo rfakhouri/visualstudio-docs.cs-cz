@@ -11,20 +11,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: c5550f844eaecf9cf7c98281421806ce37aad4f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983712"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790040"
 ---
-# <a name="environment-options-dialog-box"></a>Dialogové okno Možnosti prostředí
+# <a name="options-dialog-box-environment"></a>Dialogové okno Možnosti: Prostředí
 
-Můžete použít na stránkách **prostředí** složky **možnosti** dialogové okno nastavit jak některé prvky integrovaného vývojového prostředí (IDE), zobrazení a chování. Stránky prostředí, v řádku nabídek, výběrem dostanete **nástroje**, **možnosti**a pak vyberete **prostředí**.
+Můžete použít na stránkách **prostředí** složky **možnosti** dialogové okno nastavit jak některé prvky integrovaného vývojového prostředí (IDE), zobrazení a chování. Můžete stránky prostředí zpřístupníte výběrem **nástroje** > **možnosti**a pak vyberete **prostředí**.
 
 |Pokud chcete|Další informace naleznete v tématu|
 | - |---------|
 |Přizpůsobit vzhled a chování oken, nabídek a dalších prvků integrovaného vývojového prostředí|[Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)|
+|Chcete-li určit, jestli se má nastavení roamingu v různých počítačích.|[Účty, prostředí, dialogové okno Možnosti](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Změnit nastavení automatického ukládání a obnovení souborů|[Automatická obnova, Prostředí, dialogové okno Možnosti](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Nastavit zobrazení a správu dokumentů, mimo jiné i chování ostatních souborů|[Dokumenty, Prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md)|
 |Přizpůsobte, jak dochází k aktualizacím a jak se spravují rozšíření.|[Rozšíření prostředí, dialogové okno Možnosti](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
@@ -33,10 +34,7 @@ Můžete použít na stránkách **prostředí** složky **možnosti** dialogov�
 |Upravte umístění souboru vssettings, které ukládají informace o nastavení uživatele.|[Nastavení importu a exportu, Prostředí, dialogové okno Možnosti](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |Vybrat výchozí jazyk sady Visual Studio|[Mezinárodní nastavení, Prostředí, dialogové okno Možnosti](../../ide/reference/international-settings-environment-options-dialog-box.md)|
 |Chcete-li nastavit možnosti mapování klávesnice.|[Klávesnice, Prostředí, dialogové okno Možnosti](../../ide/reference/keyboard-environment-options-dialog-box.md)|
-|Chcete-li určit, zda jsou povolena oznámení.|[Oznámení, Prostředí, dialogové okno Možnosti](../../ide/reference/notifications-environment-options-dialog-box.md)|
-|Zadejte možnosti pro snadné spuštění okna.|[Snadné spuštění, Prostředí, dialogové okno Možnosti](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Můžete zadat možnosti spuštění.|[Po spuštění, Prostředí, dialogové okno Možnosti](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Chcete-li určit, jestli se má nastavení roamingu v různých počítačích.|[Synchronizovaná nastavení, Prostředí, dialogové okno Možnosti](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Zjistit, jak nastavit možnosti pro úkoly a seznamy úkolů|[Seznam úkolů, Prostředí, dialogové okno Možnosti](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Změnit výchozí domovskou a vyhledávací stránku, změnit systémový editor zdrojového kódu a nakonfigurovat možnosti aplikace Internet Explorer|[Webový prohlížeč, Prostředí, dialogové okno Možnosti](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 

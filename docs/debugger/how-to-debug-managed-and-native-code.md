@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a987904b099e9a463f33eb77980abd3fa2f32d16
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476004"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790313"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Kurz: Ladění C# a C++ ve stejné relaci ladění
 
@@ -55,7 +55,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 1. Otevřít Visual Studio a vytvořte projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **prázdný projekt**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový prázdný projekt projekt** pro jazyk C ++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**. Zadejte název, například **Mixed_Mode_Debugging** a klikněte na tlačítko **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **prázdný projekt**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový prázdný projekt projekt** pro jazyk C ++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**. Zadejte název, například **Mixed_Mode_Debugging** a klikněte na tlačítko **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C++**, zvolte **jiných**a potom v prostředním podokně vyberte **prázdný projekt**. Zadejte název, například **Mixed_Mode_Debugging** a klikněte na tlačítko **OK**.
@@ -132,7 +132,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 1. Otevřít Visual Studio a vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly**, zvolte **šablony**a klikněte na tlačítko **vytvořit nový projekt Konzolová aplikace (.NET Framework)** pro C#. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly**, zvolte **šablony**a klikněte na tlačítko **vytvořit nový projekt Konzolová aplikace (.NET Framework)** pro C#. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
 
     Zadejte název, například **Mixed_Mode_Calling_App** a klikněte na tlačítko **vytvořit**.
     ::: moniker-end

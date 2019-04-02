@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324078"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790677"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Vítá vás Visual Studio IDE | Visual Basic
 
@@ -102,22 +102,24 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
    ::: moniker-end
 
-- [Snadné spuštění](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Vyhledávací pole
 
-   Visual Studio, může to působit příliš složitě čas od času s tolika nabídky, možnosti a vlastnosti. **Snadné spuštění** vyhledávacího pole je skvělý způsob, jak rychle najít, co potřebujete, v sadě Visual Studio. Když začnete psát název něco, co hledáte, Visual Studio obsahuje výsledky, které dostanete, přesně, kde potřebujete přejít. Pokud chcete přidat funkce do sady Visual Studio, například pro přidání podpory pro další programovací jazyk, **Snadné spuštění** poskytuje výsledky, které otevřete instalační program sady Visual Studio k instalaci úloh nebo jednotlivých komponent.
+   Visual Studio, může to působit příliš složitě čas od času s tolika nabídky, možnosti a vlastnosti. Do vyhledávacího pole je skvělý způsob, jak rychle najít, co potřebujete, v sadě Visual Studio. Když začnete psát název něco, co hledáte, Visual Studio obsahuje výsledky, které dostanete, přesně, kde potřebujete přejít. Pokud je potřeba přidat funkce do sady Visual Studio, například pro přidání podpory pro další programovací jazyk, do vyhledávacího pole obsahuje výsledky, které otevřete instalační program sady Visual Studio k instalaci úloh nebo jednotlivých komponent.
 
    > [!TIP]
-   > Stisknutím klávesy **Ctrl**+**Q** jako zástupce **Snadné spuštění** vyhledávacího pole.
+   > Stisknutím klávesy **Ctrl**+**Q** jako zástupce do vyhledávacího pole.
 
    ::: moniker range="vs-2017"
 
    ![Rychlé spuštění vyhledávacího pole v sadě Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Další informace najdete v tématu [Snadné spuštění](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Rychlé spuštění vyhledávacího pole v aplikaci Visual Studio 2019](media/vs-2019/quick-launch.png)
+   ![Vyhledávací pole v aplikaci Visual Studio 2019](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 

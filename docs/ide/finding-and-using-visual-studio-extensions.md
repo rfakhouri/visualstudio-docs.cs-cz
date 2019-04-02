@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268547"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790755"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Vyhledání a používání rozšíření sady Visual Studio
 
@@ -33,7 +33,7 @@ Použití **rozšíření a aktualizace** dialogové okno pro instalaci a správ
 
 ::: moniker range=">=vs-2019"
 
-Použití **spravovat rozšíření** dialogové okno pro instalaci a správu rozšíření sady Visual Studio. Chcete-li otevřít **spravovat rozšíření** dialogovém okně zvolte **rozšíření** > **spravovat rozšíření**. Nebo zadejte **rozšíření** v **Snadné spuštění** vyhledávací pole a tlačítko **spravovat rozšíření**.
+Použití **spravovat rozšíření** dialogové okno pro instalaci a správu rozšíření sady Visual Studio. Chcete-li otevřít **spravovat rozšíření** dialogovém okně zvolte **rozšíření** > **spravovat rozšíření**. Nebo zadejte **rozšíření** do vyhledávacího pole a tlačítko **spravovat rozšíření**.
 
 ::: moniker-end
 

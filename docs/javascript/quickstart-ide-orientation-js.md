@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 94fff3c08d9bf6be7467e98a08d107b65928bd60
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325289"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790664"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>První seznámení s integrovaným vývojovým prostředím sady Visual Studio
 
@@ -112,13 +112,13 @@ Vytvořme projektu zobrazíte některé výstup sestavení. Z **sestavení** nab
 
 ![Okno výstup v sadě Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Snadné spuštění
+## <a name="search-box"></a>Vyhledávací pole
 
-**Snadné spuštění** pole je rychlý a snadný způsob, jak to je mnohem nic v sadě Visual Studio. Můžete zadat nějaký text související s co chcete udělat, a ho budete zobrazit seznam možností, které se vztahují na text. Představte si například, že chcete zvýšit úroveň podrobností výstupu sestavení zobrazíte další podrobnosti o tom, co přesně sestavení dělá. Zde je, jak vám může provést:
+Do vyhledávacího pole je rychlý a snadný způsob, jak to je mnohem nic v sadě Visual Studio. Můžete zadat nějaký text související s co chcete udělat, a ho budete zobrazit seznam možností, které se vztahují na text. Představte si například, že chcete zvýšit úroveň podrobností výstupu sestavení zobrazíte další podrobnosti o tom, co přesně sestavení dělá. Zde je, jak vám může provést:
 
-1. Typ **podrobností** do **Snadné spuštění** pole. V zobrazené výsledky, zvolte **projekty a řešení--> sestavení a spuštění** pod **možnosti** kategorie.
+1. Typ **podrobností** do vyhledávacího pole. V zobrazené výsledky, zvolte **projekty a řešení--> sestavení a spuštění** pod **možnosti** kategorie.
 
-   ![Snadné spuštění pole v sadě Visual Studio](media/quickstart-IDE-quick-launch.png)
+   ![Vyhledávací pole v sadě Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    **Možnosti** dialogové okno s **sestavíte a spustíte** stránka možností.
 
@@ -132,7 +132,7 @@ Vytvořme projektu zobrazíte některé výstup sestavení. Z **sestavení** nab
 
 ## <a name="send-feedback-menu"></a>Odeslat zpětnou vazbu nabídky
 
-By se vyskytnou potíže při použití sady Visual Studio, nebo pokud máte návrhy na vylepšení produktu, můžete použít **odeslat zpětnou vazbu** nabídce v horní části okna nástroje Visual Studio vedle **rychlé Spuštění** pole.
+Musí se vyskytnou potíže při použití sady Visual Studio, nebo pokud máte návrhy na vylepšení produktu, můžete použít **odeslat zpětnou vazbu** nabídce v horní části okna nástroje Visual Studio.
 
 ![Odeslat nabídku názoru v sadě Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 

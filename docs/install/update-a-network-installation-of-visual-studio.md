@@ -1,7 +1,7 @@
 ---
 title: Aktualizace síťové instalace
 description: Zjistěte, jak aktualizovat síťové instalace sady Visual Studio pomocí příkazu--rozložení
-ms.date: 2/22/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a92a20db8b24b83975ad5c25738fbc3af776a031
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475978"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790404"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizace síťové instalace sady Visual Studio
 
@@ -30,44 +30,55 @@ Je možné k aktualizaci rozložení síťové instalace sady Visual Studio s ne
 
 Chcete-li aktualizovat vaší síťové sdílené složky instalace tak, že obsahují nejnovější aktualizace, spusťte `--layout` příkaz, který přírůstkově stáhnout aktualizované balíčky.
 
-**Novinka v 15.3**: Pokud jste vybrali částečné rozložení, při prvním vytvoření rozložení sítě, se uloží.  Všechny příkazy budoucí rozložení použít předchozí možnosti plus všechny nové možnosti, které zadáte. Ale pokud použijete rozložení starší verzi, měli byste použít stejné parametry příkazového řádku, které jste použili při prvním vytvoření rozložení instalace sítě (jinými slovy, stejné úlohy a jazyky) a aktualizovat jeho obsah.
+::: moniker range="vs-2017"
 
-Pokud hostujete rozložení ve sdílené složce, by měl aktualizovat soukromou kopii rozložení (například c:\vs2017offline) a pak po stažení všechny aktualizace obsahu, zkopírujte ho do sdílené složky (například \\server\products\VS2017). Pokud to neuděláte, existuje větší riziko, že všichni uživatelé, kteří spusťte instalační program, když aktualizujete rozložení nebudou moct získat veškerý obsah z rozložení, protože není dosud aktualizovat úplně.
+**Novinka v 15.3**: Pokud jste vybrali částečné rozložení, při prvním vytvoření rozložení sítě, se uloží. Všechny příkazy budoucí rozložení použít předchozí možnosti plus všechny nové možnosti, které zadáte. Ale pokud použijete rozložení starší verzi, měli byste použít stejné parametry příkazového řádku, které jste použili při prvním vytvoření rozložení instalace sítě (jinými slovy, stejné úlohy a jazyky) a aktualizovat jeho obsah.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Pokud jste vybrali částečné rozložení, při prvním vytvoření rozložení sítě, se uloží. Všechny příkazy budoucí rozložení použít předchozí možnosti plus všechny nové možnosti, které zadáte.
+
+::: moniker-end
+
+Pokud hostujete rozložení ve sdílené složce, by měl aktualizovat soukromou kopii rozložení (například c:\vsoffline) a pak po stažení všechny aktualizace obsahu, zkopírujte ho do sdílené složky (například \\server\products\VS). Pokud to neuděláte, existuje větší riziko, že všichni uživatelé, kteří spusťte instalační program, když aktualizujete rozložení nebudou moct získat veškerý obsah z rozložení, protože není dosud aktualizovat úplně.
 
 Pojďme si projít pár příkladů, jak vytvořit a pak aktualizujte rozložení:
 
 * Nejprve tady je příklad toho, jak vytvořit rozložení se sadou jeden pro angličtinu pouze:
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * Tady je postup k aktualizaci této stejné rozložení na novější verzi. Není nutné specifikovat žádné další parametry příkazového řádku. Předchozí nastavení, které se uložily a budou používat všechny následné rozložení příkazy v této složce rozložení.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout
+  vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * Tady je postup k aktualizaci rozložení v bezobslužném na novější verzi. Operace rozložení spustí proces instalace v novém okně konzoly. V okně je otevřená, takže uživatelé uvidí na konečný výsledek a souhrnné informace o chybách, které mohly nastat. Pokud provádíte operaci rozložení v bezobslužném (například máte skript, který se spouští pravidelně aktualizovat na nejnovější verzi rozložení), použije `--passive` parametr a proces se automaticky zavře okno.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --passive
+  vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* Tady je postup pro přidání dalšímu zatížení a lokalizovaný jazyk.  (Tento příkaz přidá sady funkcí Azure.)  Teď Managed Desktop i Azure jsou zahrnuté v tomto rozvržení.  Jazykové prostředky pro angličtinu a němčina jsou také zahrnuté pro všechny tyto úlohy.  A rozložení se aktualizuje na nejnovější dostupnou verzi.
+* Tady je postup pro přidání dalšímu zatížení a lokalizovaný jazyk.  (Tento příkaz přidá *vývoj pro Azure* úlohy.)  Teď Managed Desktop i Azure jsou zahrnuté v tomto rozvržení.  Jazykové prostředky pro angličtinu a němčina jsou také zahrnuté pro všechny tyto úlohy.  A rozložení se aktualizuje na nejnovější dostupnou verzi.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > Operace aktualizace neinstaluje nově přidané volitelné součásti, i v případě, že zahrnují tyto součásti v sekci "Přidání" [soubor odpovědí](automated-installation-with-response-file.md). K tomu dochází, protože operace přidání se během aktualizace nepoužívá.<br>
+    > Operace aktualizace neinstaluje nově přidané volitelné součásti, i v případě, že zahrnují tyto součásti v sekci "Přidání" [soubor odpovědí](automated-installation-with-response-file.md). K tomu dochází, protože operace přidání se během aktualizace nepoužívá.
+    >
     > **Alternativní řešení**: Spusťte samostatnou změnu operaci po upgradu na chybějící součásti nainstalovat.
 
-* A konečně, tady je postup přidejte další úlohy a lokalizovaných bez aktualizace na verzi. (Tento příkaz přidá ASP.NET a webových úloh).  Managed Desktop, Azure a ASP.NET a webové úlohy jsou teď součástí toto rozložení. Jazykové prostředky pro angličtinu, němčinu a francouzštinu jsou také zahrnuté pro všechny tyto úlohy.  Rozložení však nebyl aktualizován na nejnovější dostupnou verzi, při spuštění tohoto příkazu. Zůstane na existující verze.
+* A konečně, tady je postup přidejte další úlohy a lokalizovaných bez aktualizace na verzi. (Tento příkaz přidá *vývoj pro ASP.NET a web* úlohy.)  Managed Desktop, Azure a ASP.NET a Web Development úlohy jsou teď součástí toto rozložení. Jazykové prostředky pro angličtinu, němčinu a francouzštinu jsou také zahrnuté pro všechny tyto úlohy.  Rozložení však nebyl aktualizován na nejnovější dostupnou verzi, při spuštění tohoto příkazu. Zůstane na existující verze.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
 ## <a name="how-to-deploy-an-update-to-client-machines"></a>Jak nasadit aktualizace do klientských počítačů
@@ -78,9 +89,22 @@ V závislosti na konfiguraci vašeho síťového prostředí aktualizace buď d�
   * Spusťte instalační program sady Visual Studio.
   * Potom klikněte na **aktualizace**.
 
+::: moniker range="vs-2017"
+
 * Správci mohou aktualizovat klienta nasazení sady Visual Studio bez nutnosti zásahu uživatele pomocí dvou samostatných příkazů:
   * Nejprve aktualizace instalačního programu sady Visual Studio: <br>```vs_enterprise.exe --quiet --update```
   * Potom aktualizujte vlastní aplikace Visual Studio: <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* Správci mohou aktualizovat klienta nasazení sady Visual Studio bez nutnosti zásahu uživatele pomocí dvou samostatných příkazů:
+  * Nejprve aktualizace instalačního programu sady Visual Studio: <br>```vs_enterprise.exe --quiet --update```
+  * Potom aktualizujte vlastní aplikace Visual Studio: <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 
 > [!NOTE]
 > Použití [vswhere.exe příkaz](tools-for-managing-visual-studio-instances.md) k identifikaci cesta pro instalaci stávající instance sady Visual Studio na klientském počítači.
@@ -99,7 +123,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 Může být vyvolána vs_enterprise.exe uvnitř layoutDir.
 
 > [!NOTE]
-> Některé soubory důležitá metadata, které jsou vyžadované `--verify` možnost musí být v mezipaměti offline rozložení. Pokud tyto soubory metadat chybí, "– ověření" nelze spustit, a nabídne instalační program k chybě. Pokud k této chybě dochází, znovu vytvořte nové offline rozložení do jiné složky (nebo do stejné složky, offline mezipaměti. Provedete to tak, spusťte stejný příkaz rozložení, který jste použili k vytvoření počáteční offline rozložení. Například `Vs_enterprise.exe --layout <layoutDir>`.
+> Některé soubory důležitá metadata, které jsou vyžadované `--verify` možnost musí být v mezipaměti offline rozložení. Pokud tyto soubory metadat chybí, "– ověření" nelze spustit, a nabídne instalační program k chybě. Pokud k této chybě dochází, znovu vytvořte nové offline rozložení do jiné složky (nebo do stejné složky, offline mezipaměti. Provedete to tak, spusťte stejný příkaz rozložení, který jste použili k vytvoření počáteční offline rozložení. Například `vs_enterprise.exe --layout <layoutDir>`.
 
 Microsoft pravidelně, dodává aktualizace sady Visual Studio tak nové rozložení, který vytvoříte nemusí mít stejnou verzi jako počáteční rozložení.
 
@@ -137,7 +161,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 Můžete také vyvolat vs_enterprise.exe uvnitř &lt;layoutDir&gt;. Tady je příklad:
 
 ```cmd
-c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
+c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
 Při spuštění tohoto příkazu analyzuje instalaci složky offline mezipaměti k nalezení seznamu souborů, které se odeberou. Potom budete mít příležitost zkontrolovat soubory, které se chystáte odstranit a potvrďte odstranění.

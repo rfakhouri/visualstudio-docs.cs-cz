@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b7d9c5b063b05698480f1cb193078a6af2a6749
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957465"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790885"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Správa podepsání sestavení a manifestu
 
@@ -57,7 +57,7 @@ Obecně platí neměli podepisovat spustitelné soubory. Silný název komponent
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Podepsání sestavení v sadě Visual Studio
 
-Podepsání aplikace nebo komponenty pomocí **podepisování** karty v okně Vlastnosti projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo typ **vlastnosti projektu** v **Snadné spuštění** okna, nebo stisknutím klávesy **Alt**+**Enter** uvnitř **Průzkumníka řešení**). Vyberte **podepisování** kartu a potom vyberte **podepsat sestavení** zaškrtávací políčko.
+Podepsání aplikace nebo komponenty pomocí **podepisování** karty v okně Vlastnosti projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**). Vyberte **podepisování** kartu a potom vyberte **podepsat sestavení** zaškrtávací políčko.
 
 Zadejte soubor klíče. Pokud budete chtít vytvořit nový soubor klíče, jsou vždy vytváří nové soubory klíčů v *.pfx* formátu. Budete potřebovat jméno a heslo pro nový soubor.
 

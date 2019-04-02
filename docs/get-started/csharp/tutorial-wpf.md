@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad5112313b57f4757c86a202cfdc711e9b478e1e
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 328224cd7ec55a51621805361d3b1af67aaa825c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647515"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790560"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Kurz: Vytvoření jednoduché aplikace s C\#
 
@@ -81,7 +81,7 @@ Poté, co jste projekt vytvořili, jej můžete upravit. S použitím **vlastnos
 
 1. Open Visual Studio 2019.
 
-1. V okně start zvolte **vytvořit nový projekt**. 
+1. V okně start zvolte **vytvořit nový projekt**.
 
    ![Zobrazit okno 'vytvořte nový projekt.](../../get-started/media/vs-2019/start-window-create-new-project.png)
 
@@ -93,7 +93,7 @@ Poté, co jste projekt vytvořili, jej můžete upravit. S použitím **vlastnos
 3. Na další obrazovce, pojmenujte projekt, **HelloWPFApp**a zvolte **vytvořit**.
 
    ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "HelloWPFApp.](./media/vs-2019/exploreide-nameproject.png)
- 
+
 Visual Studio vytvoří projekt aplikace HelloWPFApp a řešení, a **Průzkumníka řešení** zobrazuje různé soubory. **Návrhář WPF** ukazuje návrhové a XAML zobrazení *souboru MainWindow.xaml* v rozděleném zobrazení. Můžete snímků rozdělovač, abyste viděli víc nebo míň buď zobrazení. Můžete zobrazit pouze vizuální zobrazení nebo pouze zobrazení XAML. Následující položky se zobrazí v **Průzkumníka řešení**:
 
 ![Průzkumník řešení se soubory HelloWPFApp načíst](../media/vs-2019/exploreide-hellowpfappfiles.png)
@@ -123,7 +123,7 @@ Do této aplikace přidáme tři typy ovládacích prvků: <xref:System.Windows.
 
 ### <a name="add-a-textblock-control"></a>Přidejte ovládací prvek TextBlock
 
-1. Zadejte **Ctrl**+**Q** k vyvolání **Snadné spuštění** a typ **nástrojů**. Zvolte **zobrazení > Sada nástrojů** ze seznamu výsledků.
+1. Zadejte **Ctrl**+**Q** aktivovat vyhledávacího pole a typ **nástrojů**. Zvolte **zobrazení > Sada nástrojů** ze seznamu výsledků.
 
 2. V **nástrojů**, rozbalte **běžných ovládacích prvků WPF** uzel zobrazíte ovládací prvek TextBlock.
 

@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 725566a4bc09a7c787c5ffa96b9422d15fd197b1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867962"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790950"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analýza využití paměti jazyka JavaScript v aplikacích pro UWP
 Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, které vám pomohou porozumět využití paměti a najít nevracení paměti v aplikacích UPW vytvořené pro Windows pomocí jazyka JavaScript. Podporované aplikace patří aplikace pro univerzální aplikace pro Windows.
@@ -102,7 +103,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 
 1. Otevření aplikace v sadě Visual Studio.
 
-2. Spusťte analýzu paměti jazyka JavaScript. Další informace najdete v tématu [spustit analýzu paměti jazyka JavaScript](#run-the-JavaScript-memory-analyzer).
+2. Spustit analýzu paměti jazyka JavaScript (viz předchozí kroky).
 
 3. Spuštění vaší aplikace prostřednictvím scénář, který chcete testovat. Například scénář může zahrnovat velké mutace modelu DOM, při načtení konkrétní stránky, nebo při spuštění aplikace.
 

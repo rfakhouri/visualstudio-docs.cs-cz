@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e43c50dd006190935f8ce1eb3a17e3f268e14cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692824"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789527"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage
 Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio, je potřeba vytvořit rozšíření VSIX. Tady najdete odpovědi na některé nejčastější dotazy o tom, jak převést doplněk Visual Studio k rozšíření VSIX.
@@ -40,26 +40,27 @@ Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio
 ##  <a name="BKMK_StartDeveloping"></a> Jak můžu začít vyvíjet rozšíření VSIX?
  Zde je, jak vytvořit rozšíření VSIX, který obsahuje příkaz nabídky:
 
-#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Aby bylo rozšíření VSIX, který obsahuje příkaz nabídky
+### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Aby bylo rozšíření VSIX, který obsahuje příkaz nabídky
 
-1.  Vytvořte projekt VSIX. (**Souboru** > **nový** > **projektu**, nebo typ **projektu** v **snadnéhospuštění** okno). V **nový projekt** dialogového okna rozbalte **Visual C#** > **rozšiřitelnost** nebo **jazyka Visual Basic**  >   **Rozšiřitelnost** a vyberte **projekt VSIX**.) Pojmenujte projekt **TestExtension** a zadejte umístění pro něj.
+1. Vytvořte projekt VSIX. (**Souboru** > **nový** > **projektu**, nebo typ **projektu** do vyhledávacího pole). V **nový projekt** dialogového okna rozbalte **Visual C#**   >  **rozšiřitelnost** nebo **jazyka Visual Basic**  >  **Rozšiřitelnost** a vyberte **projekt VSIX**. Pojmenujte projekt **TestExtension** a zadejte umístění pro něj.
 
-2.  Přidat **vlastního příkazu** šablony položky projektu. (Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **přidat** > **nová položka**. V **nový projekt** dialogové okno pro Visual C# nebo Visual Basic, vyberte **rozšiřitelnost** uzel a vyberte možnost **vlastního příkazu**.)
+2. Přidat **vlastního příkazu** šablony položky. (Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno pro buď Visual C# nebo Visual Basic, vyberte **rozšiřitelnost** uzel a vyberte možnost **vlastního příkazu**.)
 
-3.  Stisknutím klávesy **F5** sestavte a spusťte projekt v režimu ladění.
+3. Stisknutím klávesy **F5** sestavte a spusťte projekt v režimu ladění.
 
-     Zobrazí se druhé instanci aplikace Visual Studio. Této druhé instance se nazývá experimentální instanci a nemusí mít stejné nastavení jako instanci aplikace Visual Studio, které používáte k psaní kódu. Při prvním spuštění experimentální instance, zobrazí se výzva k přihlášení k VS Online a určit motivu a profilu.
+   Zobrazí se druhé instanci aplikace Visual Studio. Této druhé instance se nazývá experimentální instanci a nemusí mít stejné nastavení jako instanci aplikace Visual Studio, které používáte k psaní kódu. Při prvním spuštění experimentální instance, zobrazí se výzva k přihlášení k VS Online a určit motivu a profilu.
 
-     Na **nástroje** nabídky (v experimentální instanci) byste měli vidět tlačítko s názvem **název mé příkazu**. Když vyberete toto tlačítko, by měla zobrazit zpráva: **Inside TestVSPackagePackage.MenuItemCallback()**.
+   Na **nástroje** nabídky (v experimentální instanci) byste měli vidět tlačítko s názvem **název mé příkazu**. Když vyberete toto tlačítko, by měla zobrazit zpráva: **Inside TestVSPackagePackage.MenuItemCallback()**.
 
 ##  <a name="BKMK_RunAddin"></a> Jak mohu spustit kód doplňku v sadě VSPackage?
- Přidejte kód se obvykle běží v jednom ze dvou způsobů:
+
+Přidejte kód se obvykle běží v jednom ze dvou způsobů:
 
 - Aktivované pomocí příkazu nabídky (kód je v `IDTCommandTarget.Exec` metoda.)
 
 - Automaticky při spuštění (kód je v `OnConnection` obslužné rutiny události.)
 
-  Můžete provádět stejné akce v sadě VSPackage. Tady je postup pro přidání kódu doplňku v metodě zpětného volání:
+Můžete provádět stejné akce v sadě VSPackage. Tady je postup pro přidání kódu doplňku v metodě zpětného volání:
 
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Implementace příkazu nabídky v sadě VSPackage
 

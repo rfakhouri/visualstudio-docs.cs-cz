@@ -9,16 +9,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e0185e8879718e068cd624559087db9369d7e190
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323867"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789923"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení
 
-Po sestavení projektu v integrovaném vývojovém prostředí sady Visual Studio můžete zobrazit informace o daném sestavení ve **výstup** okna. Pomocí těchto informací je možné, třeba řešit selhání sestavení. Pro projekty C++, můžete také zobrazit stejné informace *.txt* soubor, který má vytvořili a uložili automaticky. Pro projekty spravovaného kódu, můžete kopírovat a vkládat informace z **výstup** okno do *.txt* soubor a uložte ho sami. Můžete také integrovaného vývojového prostředí k určení, jaké typy informací, které chcete zobrazit informace o každém sestavení.
+Po sestavení projektu v integrovaném vývojovém prostředí sady Visual Studio můžete zobrazit informace o daném sestavení ve **výstup** okna. Pomocí těchto informací je možné, třeba řešit selhání sestavení. 
+
+  - Pro projekty C++, můžete také zobrazit stejné informace *.txt* soubor, který má vytvořili a uložili automaticky. 
+
+  - Pro projekty spravovaného kódu, můžete kliknout na v okně výstupu sestavení a stiskněte klávesu **Ctrl**+**S**. Visual Studio vás vyzve k zadání umístění, kam chcete uložit informace ze **výstup** okno do *.txt* souboru. 
+  
+Můžete také integrovaného vývojového prostředí k určení, jaké typy informací, které chcete zobrazit informace o každém sestavení.
 
 Pokud vytvoříte pomocí nástroje MSBuild jakýkoli druh projektu, můžete vytvořit *.txt* soubor se uloží informace o sestavení. Další informace najdete v tématu [získat protokoly o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -30,9 +36,11 @@ Pokud vytvoříte pomocí nástroje MSBuild jakýkoli druh projektu, můžete vy
 
 1.  V panelu nabídky zvolte **sestavení** > **sestavit řešení**.
 
-2.  V **výstup** okně měli na očích informace ze sestavení a potom ho zkopírujete do **schránky**.
+2.  V **výstup** okna, klikněte na tlačítko někde v textu.
 
-3.  Otevřete textový editor, například **Poznámkový blok**, vložte informace do souboru a pak ho uložte.
+3.  Stisknutím klávesy **Ctrl**+**S**.
+
+   Visual Studio vás vyzve k zadání umístění pro uložení výstupu sestavení.
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Chcete-li změnit množství informací o zahrnutých do protokolu sestavení
 

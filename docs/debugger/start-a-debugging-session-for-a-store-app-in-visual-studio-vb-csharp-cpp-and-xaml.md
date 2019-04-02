@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699467"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790508"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Spuštění ladicí relace aplikace pro UPW
 
-Tento článek popisuje způsob spuštění ladicí relace pro aplikace univerzální platformy Windows (UPW) sady Visual Studio. U aplikací pro UPW je možné psát v XAML, C++ a XAML a C#/Visual Basic, nebo HTML a JavaScript. Pro spuštění ladění aplikace pro UPW, nakonfigurujte relaci ladění a zvolte způsob, jak spustit aplikaci.
+Tento článek popisuje způsob spuštění ladicí relace pro aplikace univerzální platformy Windows (UPW) sady Visual Studio. U aplikací pro UPW je možné psát v XAML, C++ a XAML a C#/Visual Basic. Pro spuštění ladění aplikace pro UPW, nakonfigurujte relaci ladění a zvolte způsob, jak spustit aplikaci.
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Od verze Visual Studio 2019, aplikací pro UPW pro HTML a JavaScript již nejsou podporovány.
+::: moniker-end
+::: moniker range="vs-2017"
+V sadě Visual Studio 2017 většina příkazů a možností uvedených v tomto článku platí také pro aplikace UPW pro HTML a JavaScript. Příkazy se liší mezi spravovanými a aplikací v jazyce C++, JavaScript aplikace jsou obvykle stejné jako příkazy pro aplikace C++ UWP.
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Spuštění ladění z panelu nástrojů sady Visual Studio
 
@@ -90,7 +98,7 @@ Pokud chcete nakonfigurovat další možnosti ladění, použijte stránky vlast
 
      ![C#a stránky vlastnosti ladění projektu jazyka Visual Basic](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - U aplikací C++ a JavaScript, vyberte **vlastnosti konfigurace** > **ladění**.
+   - U aplikací C++, vyberte **vlastnosti konfigurace** > **ladění**.
 
      ![Stránka vlastností ladění aplikace C++ UWP](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ Pokud chcete nakonfigurovat další možnosti ladění, použijte stránky vlast
 
 Pro C# a aplikace Visual Basic, Visual Studio ladí spravovaného kódu ve výchozím nastavení. Můžete ladit kód jiné nebo další typy. Můžete také nastavit **typ ladicího programu** hodnoty pro všechny úlohy na pozadí, které jsou součástí projektu.
 
-V aplikacích jazyka C++ Visual Studio ladí nativního kódu ve výchozím nastavení. V aplikacích jazyka JavaScript sady Visual Studio ladí skript ve výchozím nastavení. Můžete ladit konkrétní typy kódu místo nebo kromě nativní kód.
+V aplikacích jazyka C++ Visual Studio ladí nativního kódu ve výchozím nastavení. Můžete ladit konkrétní typy kódu místo nebo kromě nativní kód.
 
 **Chcete-li určit typy kódu k ladění:**
 
 - Pro C# a Visual Basic aplikací, vyberte jednu z následujících ladicí programy z **typ aplikace** a **typ procesu na pozadí** rozevírací seznamy v části **typ ladicího programu** na **ladění** stránku vlastností.
 
-- Pro C + +/ aplikací jazyka JavaScript, vyberte jednu z následujících ladicí programy z **typ ladicího programu** rozevírací seznam pro **ladění** stránku vlastností.
+- Pro aplikace v C++, vyberte jednu z následujících ladicí programy z **typ ladicího programu** rozevírací seznam pro **ladění** stránku vlastností.
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ V aplikacích jazyka C++ Visual Studio ladí nativního kódu ve výchozím nast
 
 -   Pro C# a zrušte zaškrtnutí možnosti aplikace Visual Basic **povolit zpětnou smyčku místní sítě** zaškrtávací políčko v oblasti **možnosti spuštění** na **ladění** stránku vlastností.
 
--   U aplikací Visual C++ a JavaScript, vyberte **ne** z **povolit zpětnou smyčku místní sítě** rozevírací seznam pro **ladění** stránku vlastností.
+-   U aplikací v jazyce Visual C++, vyberte **ne** z **povolit zpětnou smyčku místní sítě** rozevírací seznam pro **ladění** stránku vlastností.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Nainstalujte aplikaci znovu při spuštění ladění (volitelné)
- Diagnostikovat problémy instalace s C# nebo na aplikaci Visual Basic, vyberte **odinstalovat a přeinstalovat Můj balíček** na **ladění** stránku vlastností. Tato možnost obnoví původní instalace při zahájení ladění. Tato možnost není k dispozici pro projekty jazyka C++ a JavaScript.
+ Diagnostikovat problémy instalace s C# nebo na aplikaci Visual Basic, vyberte **odinstalovat a přeinstalovat Můj balíček** na **ladění** stránku vlastností. Tato možnost obnoví původní instalace při zahájení ladění. Tato možnost není k dispozici pro projekty C++.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Nastavit možnosti ověřování pro vzdálené ladění
 
@@ -139,7 +147,7 @@ Ve výchozím nastavení, musíte zadat přihlašovací údaje Windows pro spuš
 
 - Pro C# a Visual Basic aplikací, na **ladění** stránky vlastností, vyberte **vzdálený počítač** jako **cílové zařízení**. Vyberte **žádný** nebo **univerzální (nešifrovaný protokol)** pro **režim ověřování**.
 
-- U aplikací C++ a JavaScript, vyberte **vzdálený počítač** pod **ladicí program ke spuštění** na **ladění** stránku vlastností. Vyberte **bez ověřování** nebo **univerzální (nešifrovaný protokol)** pro **typ ověřování**.
+- U aplikací C++, vyberte **vzdálený počítač** pod **ladicí program ke spuštění** na **ladění** stránku vlastností. Vyberte **bez ověřování** nebo **univerzální (nešifrovaný protokol)** pro **typ ověřování**.
 
 > [!CAUTION]
 > Neexistuje žádné zabezpečení sítě při spuštění vzdáleného ladicího programu v **žádný** nebo **univerzální (nešifrovaný protokol)** režimy. Zvolte těchto režimech jenom v důvěryhodných sítích, které jste jisti nejsou riziko zneužití škodlivým kódem nebo nebezpečný provoz.
@@ -156,7 +164,7 @@ Visual Studio ve výchozím nastavení spustí aplikaci hned po spuštění lad�
 
 - Pro C# a Visual Basic aplikací, vyberte **nespouštět, ale ladit můj kód při spuštění** pod **možnosti spuštění** na **ladění** stránku vlastností.
 
-- U aplikací C++ a JavaScript, vyberte **ne** z **spustit aplikaci** rozevírací seznam pro **ladění** stránku vlastností.
+- U aplikací C++, vyberte **ne** z **spustit aplikaci** rozevírací seznam pro **ladění** stránku vlastností.
 
 Další informace o ladění úlohy na pozadí, naleznete v tématu [aktivační události pozastavení, obnovení a událostí na pozadí pro aplikace UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
@@ -202,10 +210,12 @@ Připojit ladicí program [!INCLUDE[win8_appname_long](../debugger/includes/win8
 
  Visual Studio připojí ladicí program k procesu. Provádění pokračuje, dokud není dosaženo zarážky, můžete ručně pozastavení provádění, dojde k neošetřené výjimce nebo ukončení aplikace.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Spouštění aplikací jazyka JavaScript v instanci *wwahost.exe* procesu. Pokud je více než jeden JavaScript aplikace spuštěná, musíte znát id číselné procesu (PID) vaší aplikace *wwahost.exe* proces pro připojení k němu.
 >
 > Zavřete všechny ostatní aplikace jazyka JavaScript je nejjednodušší způsob, jak se připojit k vaší aplikaci pro JavaScript. Nebo jste si PID spuštění *wwahost.exe* procesy ve Windows Správce úloh před spuštěním vaší aplikace. Při spuštění aplikace, jeho *wwahost.exe* PID bude ten, který se liší od těch, které jste si předtím poznamenali.
+::: moniker-end
 
 ## <a name="see-also"></a>Viz také:
 - [Ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

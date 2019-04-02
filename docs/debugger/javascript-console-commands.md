@@ -1,7 +1,7 @@
 ---
 title: Příkazy konzoly jazyka JavaScript | Dokumentace Microsoftu
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701950"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790768"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Příkazy konzoly jazyka JavaScript v sadě Visual Studio
 
-Příkazy můžete použít k odesílání zpráv a provádění dalších úloh v okně konzoly jazyka JavaScript sady Visual Studio. Příklady, které ukazují, jak pomocí tohoto okna najdete v tématu [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md). Informace v tomto tématu se vztahují na aplikacích pro UWP a aplikací vytvořených pomocí Visual Studio Tools pro Apache Cordova. Informace o podporovaných konzole příkazy v aplikace Cordova, naleznete v tématu [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informace o použití konzoly v nástrojích Internet Explorer F12 najdete v tématu [v tomto tématu](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).
+::: moniker range=">=vs-2019"
+Příkazy můžete použít k odesílání zpráv a provádění dalších úloh v okně konzoly jazyka JavaScript sady Visual Studio. Informace v tomto tématu se vztahují na vytvořené pomocí sady Visual Studio s aplikací v Node.js **vývoj v Node.js** nainstalovaná úloha.
+::: moniker-end
+::: moniker range="vs-2017"
+Příkazy můžete použít k odesílání zpráv a provádění dalších úloh v okně konzoly jazyka JavaScript sady Visual Studio. Příklady, které ukazují, jak pomocí tohoto okna najdete v tématu [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Informace v tomto tématu se vztahují na aplikace v Node.js, UPW aplikace a aplikace vytvořené pomocí nástrojů Visual Studio pro Apache Cordova. Informace o podporovaných konzole příkazy v aplikace Cordova, naleznete v tématu [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
+::: moniker-end
 
 Pokud je zavření okna konzoly jazyka JavaScript, lze jej otevřít při ladění v sadě Visual Studio výběrem **ladění** > **Windows** > **jazyka JavaScript Konzola**.
 
 > [!NOTE]
 > Pokud okno není k dispozici během relace ladění, ujistěte se, že typ ladicího programu je nastaven na **skript** ve vlastnostech ladění pro projekt.
+
+Informace o použití konzoly v nástrojích pro vývojáře Microsoft Edge, najdete v části [v tomto tématu](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>příkazy konzoly objektu
 Tato tabulka ukazuje syntaxi `console` objekt příkazy, můžete použít v okně konzoly jazyka JavaScript nebo, že můžete použít k odesílání zpráv do konzoly z vašeho kódu. Tento objekt obsahuje počtem formulářů, aby mohl rozlišit mezi informační zprávy a chybové zprávy, pokud chcete.
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Viz také
-- [Rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

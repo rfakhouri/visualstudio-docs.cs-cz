@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355760"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789910"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu sady Visual Studio
 
@@ -66,7 +66,7 @@ Můžete hledat v prostředí IDE pro příkazy, soubory a možnosti, kromě fil
 
 - **Zobrazit pouze chyby, které chcete na adresu**. Pokud se rozhodnete **filtr** tlačítko **seznam chyb** nástrojů, můžete snížit počet chyb, které se zobrazují v **seznam chyb** okno. Můžete zobrazit pouze chyby v souborech, které jsou otevřeny v editoru, pouze chyby v aktuálním souboru, nebo pouze chyby v aktuálním projektu. Můžete také hledat v rámci **seznam chyb** okno najít konkrétní chyby.
 
-- **Vyhledejte dialogová okna, příkazy nabídky, možnosti a další materiály**. V [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) vyhledávací pole, zadejte klíčová slova nebo fráze pro položky, které se snažíte najít. Například se zobrazí následující možnosti, pokud zadáte **nový projekt**:
+- **Vyhledejte dialogová okna, příkazy nabídky, možnosti a další materiály**. Do vyhledávacího pole zadejte klíčová slova nebo fráze pro položky, které se snažíte najít. Například se zobrazí následující možnosti, pokud zadáte **nový projekt**:
 
    ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ Můžete hledat v prostředí IDE pro příkazy, soubory a možnosti, kromě fil
 
    ::: moniker range=">=vs-2019"
 
-   ![Rychlé spuštění výsledky hledání pro: nový projekt.](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Výsledky hledání pro: nový projekt.](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Stisknutím klávesy **Ctrl**+**Q** přejít přímo **Snadné spuštění** vyhledávacího pole.
+   Stisknutím klávesy **Ctrl**+**Q** můžete přejít rovnou do vyhledávacího pole.
 
 ## <a name="debug-code"></a>Ladění kódu
 

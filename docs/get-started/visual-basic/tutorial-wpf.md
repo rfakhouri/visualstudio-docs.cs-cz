@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26808d1f7bb2e140ee3d70a8d8917e0e31dc7f4b
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: c9744fe2597a6f3b29d0ce42f2a6267b03ea6783
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515386"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790300"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka Visual Basic
 
@@ -53,7 +53,7 @@ Po spuštění sady Visual Studio, zobrazí se vám okna nástrojů, nabídky a 
 
 ::: moniker range=">=vs-2019"
 
-Při spuštění sady Visual Studio, otevře se okno start nejprve. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí. Zobrazí se vám okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace s **Snadné spuštění**, nabídek a běžný panel nástrojů v horní části. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
+Při spuštění sady Visual Studio, otevře se okno start nejprve. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí. Zobrazí se vám okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotveny na levé a pravé straně okna aplikace, pomocí vyhledávacího pole, nabídek a běžný panel nástrojů v horní části. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Do této aplikace přidáme tři typy ovládacích prvků: <xref:System.Windows.
 
 ### <a name="add-a-textblock-control"></a>Přidejte ovládací prvek TextBlock
 
-1.  Zadejte **Ctrl**+**Q** k vyvolání **Snadné spuštění** a typ **nástrojů**. Zvolte **zobrazení > Sada nástrojů** ze seznamu výsledků.
+1.  Zadejte **Ctrl**+**Q** aktivovat vyhledávacího pole a typ **nástrojů**. Zvolte **zobrazení > Sada nástrojů** ze seznamu výsledků.
 
 2. V **nástrojů**, rozbalte **běžných ovládacích prvků WPF** uzel zobrazíte ovládací prvek TextBlock.
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872047"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790430"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UWP
 
@@ -64,6 +64,7 @@ Například plně nabitá baterie v tabletu uchovává určité množství energ
 
 Příklad kódu naleznete v tématu ukázku Windows SDK [ukázka LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).
 
+::: moniker range="vs-2017"
 **Přidání značek do kódu jazyka JavaScript**
 
 Chcete-li přidat uživatelské značky, přidejte do míst v kódu, které chcete označit, následující kód:
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* je řetězec, který obsahuje zprávu zobrazíte v popisu uživatelské značky.
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>Konfigurace prostředí pro profilaci
  Pro získání kvalitních odhadů, bude potřeba profilaci využití energie aplikací na zařízení s nízkou spotřebou, které je napájeno bateriemi. Vzhledem k tomu, že Visual Studio se nespouští na většině z těchto zařízení, musíte připojit počítač Visual Studio k zařízení pomocí nástroje Visual Studio remote tools. Pro připojení ke vzdálenému zařízení je třeba nakonfigurovat jak projekt aplikace Visual Studio, tak vzdálené zařízení. Zobrazit [aplikací pro UWP spuštění na vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md) Další informace.
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Další zdroje
 
-- **Stav připojení a správa spotřeby** oddíly pro [ C#/VB/C++ a XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) a [jazyka JavaScript a HTML](/previous-versions/windows/apps/hh452983(v=win.10)) popisují rozhraní Windows API, které poskytují sítě informace o připojení, které vaše aplikace může používat minimalizovat náklady na síťový provoz.
+- **Stav připojení a správa spotřeby** oddíly pro [ C#/VB/C++ a XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) popisují rozhraní Windows API, které poskytují informace o připojení k síti, vaše aplikace můžete minimalizovat náklady na síťový provoz.
 
    Simulátor aplikace Visual Studio pro aplikace pro UPW umožňuje simulovat vlastnosti datového připojení rozhraní API pro síťové informace. Zobrazit [aplikace spustit UWP v simulátoru](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- **Časování funkcí jazyka JavaScript** a **využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [využití procesoru analyzovat](../profiling/beginners-guide-to-performance-profiling.md).
+- **Využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [využití procesoru analyzovat](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Viz také:
 

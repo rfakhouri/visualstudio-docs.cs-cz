@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223361"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790365"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Klávesové zkratky pro Visual Studio
 
@@ -51,8 +51,8 @@ Můžete přejít v sadě Visual Studio snadněji pomocí klávesové zkratky v 
 |-|-|
 |Hledání v Průzkumníkovi řešení|**CTRL**+**;**|
 |Umístit fokus do vyhledávacího pole v okně libovolného nástroje|**ALT** + **`** když má okno nástroje fokus|
-|Snadné spuštění|**Ctrl**+**Q**|
-|Výsledky v rozsahu snadného spuštění|- @opt Možnosti<br />- @cmd Příkazy<br />- @mru Naposledy použitých<br />- @doc Otevřených dokumentech|
+|Vyhledávací pole|**Ctrl**+**Q**|
+|Výsledky v rozsahu pole hledání|- @opt Možnosti<br />- @cmd Příkazy<br />- @mru Naposledy použitých<br />- @doc Otevřených dokumentech|
 |Hledání v možnostech nástrojů|**CTRL**+**E**|
 
 ## <a name="editor-find"></a>Editor najít

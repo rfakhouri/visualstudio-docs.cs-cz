@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8793501df4e5ab90db5987332394b7420186b6c6
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: a7a9149498301e26d9b0155df6175693f5c3679e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567916"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790911"
 ---
 # <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
 
@@ -38,7 +38,7 @@ Můžete spustit nástroj MSBuild ze sady Visual Studio nebo z **příkazové ok
 1. Otevřít Visual Studio a vytvořte projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **winforms**, klikněte na tlačítko **vytvoření nové aplikace Windows Forms (.NET Framework)**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **winforms**, klikněte na tlačítko **vytvoření nové aplikace Windows Forms (.NET Framework)**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
 
     V **název** zadejte `BuildApp`. Zadejte **umístění** pro řešení, například *D:\\*. Přijměte výchozí hodnoty pro **řešení**, **název řešení** (**BuildApp**), a **Framework**.
     ::: moniker-end

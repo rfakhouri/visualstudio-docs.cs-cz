@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323812"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790417"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Postupy: Ujistěte se, rozšíření kompatibilní s Visual Studio 2017 a Visual Studio 2015
 
@@ -95,7 +95,7 @@ Je potřeba zjistit, jaké verze zacílené pro vytváření rozšíření VSIX 
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Požadavky pro přidání *extension.vsixmanifest* souboru
 
-Požadavky jsou novou funkcí sady Visual Studio 2017. V tomto případě potřebujeme základním editoru sady Visual Studio jako předpoklad. Protože návrháře aplikace Visual Studio 2015 VSIX nezpracovává nové `Prerequisites` části, bude nutné upravit tuto část ručně v kódu XML. Alternativně můžete otevřít Visual Studio 2017 a použijte aktualizované manifest designer k vložení požadavky.
+Jako předpoklad potřebujeme základním editoru sady Visual Studio. Otevřít Visual Studio a vložte požadavky pomocí aktualizovaný manifest designer.
 
 Chcete-li to provést ručně:
 
@@ -112,7 +112,7 @@ Chcete-li to provést ručně:
 * Soubor uložte a zavřete.
 
 > [!NOTE]
-> Pokud budete chtít dosáhnout pomocí návrháře VSIX v sadě Visual Studio 2017, musíte ručně upravit požadované verze zajistit, že je kompatibilní se všemi verzemi sady Visual Studio 2017. Je to proto, že návrhář vloží minimální verze jako aktuální verze sady Visual Studio (například 15.0.26208.0). Ale protože jiní uživatelé mohou mít starší verzi, můžete ručně upravit na 15.0.
+> Budete muset ručně upravit požadované verze zajistit, že je kompatibilní se všemi verzemi sady Visual Studio 2017. Je to proto, že návrhář vloží minimální verze jako aktuální verze sady Visual Studio (například 15.0.26208.0). Ale protože jiní uživatelé mohou mít starší verzi, můžete ručně upravit na 15.0.
 
 Váš soubor manifestu v tomto okamžiku by měl vypadat přibližně takto:
 

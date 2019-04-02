@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: c9e1540e782cb5423ffc82ccfb46b9376842762f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475952"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789540"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Rychlý start: Ladění v C++ pomocí ladicího programu sady Visual Studio
 
@@ -28,7 +28,7 @@ Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které v
 1. Otevřít Visual Studio a vytvořte projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **c ++**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt konzolové aplikace**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **c ++**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt konzolové aplikace**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C++**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **konzoly Windows Aplikace**. Zadejte název, například **MyDbgApp** a klikněte na tlačítko **OK**.

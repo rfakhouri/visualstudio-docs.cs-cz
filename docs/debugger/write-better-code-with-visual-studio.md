@@ -1,5 +1,5 @@
 ---
-title: Nástroje a techniky ladění
+title: Techniky ladění a související nástroje
 description: Vytvářejte lepší kód s využitím méně chyb pomocí sady Visual Studio Pokud chcete vyřešit výjimky, opravte chyby a zlepšování kódu
 ms.custom:
 - debug-experiment
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961712"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790326"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Ladění technik a nástrojů, který pomáhá psát lepší kód
 
@@ -42,7 +42,7 @@ Následující kód obsahuje chyby, které můžete vyřešit pomocí integrovan
 
 Pokud chcete vytvořit aplikaci:
 
-1. Otevřít Visual Studio a zvolte **soubor > Nový projekt**. V části **Visual C#** , zvolte **Windows Desktop** nebo **.NET Core**a potom v prostředním podokně vyberte **konzolovou aplikaci**.
+1. Otevřít Visual Studio a zvolte **souboru** > **nový** > **projektu**. V části **Visual C#** , zvolte **Windows Desktop** nebo **.NET Core**a potom v prostředním podokně vyberte **konzolovou aplikaci**.
 
     > [!NOTE]
     > Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** nebo **vývoj pro různé platformy .NET Core** úloh, klikněte na tlačítko **změnit**.

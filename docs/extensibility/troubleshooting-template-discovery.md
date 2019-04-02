@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: a1ea74d3c5f3fed961a956e9a55a4930d009d530
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323104"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790210"
 ---
 # <a name="troubleshooting-template-installation"></a>Řešení potíží s instalací šablony
 
@@ -49,7 +49,7 @@ Pokud narazíte na problémy, projekt nebo položku šablony nasazení, můžete
 
 ::: moniker range=">=vs-2019"
 
-4. Otevřít Visual Studio a spusťte dialogových oknech Nový projekt a nová položka inicializace obou stromech šablony.
+4. Otevřít Visual Studio a spustit **vytvořte nový projekt** a **nová položka** dialogových oknech inicializace obou stromech šablony.
 
    Protokol šablony se zobrazí v **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid odpovídá ID instalace instance sady Visual Studio). Inicializace stromu každý šablona přidá položky do tohoto protokolu.
 

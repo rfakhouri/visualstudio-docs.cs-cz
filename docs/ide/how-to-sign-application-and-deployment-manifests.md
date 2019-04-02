@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916880"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790846"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: Podepsání manifestů aplikace a nasazení
 
@@ -35,11 +35,11 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
  Informace o vytváření souborů klíčů naleznete v tématu [jak: Vytvoření páru veřejného a privátního klíče](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají *.pfx* rozšíření. Ale můžete vybrat jiné typy certifikátů z úložiště certifikátů Windows aktuálního uživatele klepnutím **vybírat Store** na **podepisování** stránky vlastností projektu.
+> Visual Studio podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají *.pfx* rozšíření. Ale můžete vybrat jiné typy certifikátů z úložiště certifikátů Windows aktuálního uživatele klepnutím **vybírat Store** na **podepisování** stránky vlastností projektu.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>K podepsání aplikace a nasazení manifesty pomocí certifikátu
+## <a name="sign-using-a-certificate"></a>Podepsat pomocí certifikátu
 
-1.  Přejděte na okno s vlastnostmi projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo typ **vlastnosti projektu** v **Snadné spuštění** okna, nebo stisknutím klávesy **Alt**+**Enter** uvnitř **Průzkumníka řešení**). Na **podepisování** kartu, vyberte **podepsat manifesty ClickOnce** zaškrtávací políčko.
+1.  Přejděte na okno s vlastnostmi projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**). Na **podepisování** kartu, vyberte **podepsat manifesty ClickOnce** zaškrtávací políčko.
 
 2.  Klikněte na tlačítko **vybírat Store** tlačítko.
 
@@ -52,7 +52,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
 
 4.  Kromě toho můžete zadat adresu serveru časového razítka v **adresa URL serveru časového razítka** textového pole. To je server, který obsahuje časové razítko určující, když byl manifest podepsán.
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Podepsání aplikace a nasazení manifestů pomocí existujícího souboru s klíčem
+## <a name="sign-using-an-existing-key-file"></a>Přihlaste se pomocí existujícího souboru s klíčem
 
 1.  Na **podepisování** stránky, vyberte **podepsat manifesty ClickOnce** zaškrtávací políčko.
 
@@ -69,7 +69,7 @@ Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace
 
 4.  Zadejte heslo pro přístup k souboru s klíčem a stiskněte klávesu **Enter**.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Podepsání aplikace a nasazení manifestů pomocí testovacího certifikátu
+## <a name="sign-using-a-test-certificate"></a>Přihlášení pomocí testovacího certifikátu
 
 1.  Na **podepisování** stránky, vyberte **podepsat manifesty ClickOnce** zaškrtávací políčko.
 

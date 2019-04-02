@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cba7cf4a402b92f05f12faa39b88ab03cd5bd03b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943009"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790859"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Vytvoření a konfigurace datových sad v sadě Visual Studio
 
@@ -70,7 +70,7 @@ Tento postup ukazuje, jak přidat tabulku ze stejné databáze, který jste pou�
 
 1. Klikněte na uzel datové sady v **Průzkumníka řešení** zpřístupnit **Návrhář DataSet** fokus.
 
-2. Klikněte na tlačítko **zdroje dat** kartu na levém okraji sady Visual Studio, nebo zadejte parametr **zdroje dat** v **Snadné spuštění** pole.
+2. Klikněte na tlačítko **zdroje dat** kartu na levém okraji sady Visual Studio, nebo zadejte parametr **zdroje dat** do vyhledávacího pole.
 
 3. Klikněte pravým tlačítkem na uzel datové sady a vyberte **konfigurace zdroje dat pomocí průvodce**.
 
