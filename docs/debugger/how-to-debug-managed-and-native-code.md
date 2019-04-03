@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: a987904b099e9a463f33eb77980abd3fa2f32d16
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790313"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856499"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Kurz: Ladění C# a C++ ve stejné relaci ladění
 
@@ -44,7 +44,7 @@ Musíte mít Visual Studio nainstalovaný, s následujícími sadami funkcí:
 - **Vývoj desktopových aplikací pomocí C++**
 - Buď **vývoj desktopových aplikací .NET** nebo **.NET Core pro vývoj napříč platformami**, v závislosti na typu aplikace, který chcete vytvořit.
 
-Pokud nemáte Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+Pokud nemáte Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
 
 Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potřebujete, vyberte **otevřít instalační program Visual Studio** v levém podokně sady Visual Studio **nový projekt** dialogové okno. Ve Visual Studio Installerem. Vyberte úlohy, které potřebujete a pak vyberte **změnit**.
 
@@ -193,7 +193,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Konfigurovat ladění ve smíšeném režimu pro aplikace .NET Core
 
-Ve většině verzí sady Visual Studio 2017, je nutné použít *launchSettings.json* souboru místo vlastnosti projektu pro povolení ladění ve smíšeném režimu pro nativní kód v aplikaci .NET Core. Pokud chcete sledovat aktualizace uživatelského rozhraní pro tuto funkci, najdete v tomto [problém Githubu](https://github.com/dotnet/project-system/issues/1125).
+Ve většině verzí sady Visual Studio, počínaje verzí Visual Studio 2017, je nutné použít *launchSettings.json* souboru místo vlastnosti projektu pro povolení ladění ve smíšeném režimu pro nativní kód v aplikaci .NET Core. Pokud chcete sledovat aktualizace uživatelského rozhraní pro tuto funkci, najdete v tomto [problém Githubu](https://github.com/dotnet/project-system/issues/1125).
 
 1. V **Průzkumníka řešení**, rozbalte **vlastnosti**a otevřete *launchSettings.json* souboru.
 

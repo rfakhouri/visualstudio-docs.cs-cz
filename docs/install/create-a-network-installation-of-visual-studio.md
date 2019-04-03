@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 791d9291367e9cca6acf7fbedc6164ddb52e7d82
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790391"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857422"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Vytvoření síťové instalace sady Visual Studio
 
@@ -52,8 +52,8 @@ Zahrnout další podporované bootstrapperů [vs_buildtools.exe](https://aka.ms/
 
 |Edice | Stáhnout|
 |-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019+rc) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019+rc) |
+|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 
 Zahrnout další podporované bootstrapperů [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe), [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe), a [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
@@ -222,7 +222,7 @@ Při instalaci z rozložení, je obsah, který je nainstalován získaných z ro
 
 Pokud jste použili `--wait` parametr a potom v závislosti na výsledek operace, `%ERRORLEVEL%` proměnnou prostředí je nastavená na jednu z následujících hodnot:
 
-  | **Hodnota** | **výsledek** |
+  | **Hodnota** | **Výsledek** |
   | --------- | ---------- |
   | 0 | Operace byla úspěšně dokončena |
   | 3010 | Operace byla úspěšně dokončena, ale instalace aktualizace vyžaduje restartování, než je možné |
@@ -248,7 +248,7 @@ Jakmile budou dostupné aktualizace produktu, můžete chtít [aktualizovat sí�
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Bootstrapperů sady Visual Studio, které jsou k dispozici na [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) stáhnout a nainstalovat nejnovější verzi sady Visual Studio, který je k dispozici pokaždé, když se jejich spuštění.
+> Bootstrapperů sady Visual Studio, které jsou k dispozici na [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stáhnout a nainstalovat nejnovější verzi sady Visual Studio, který je k dispozici pokaždé, když se jejich spuštění.
 > 
 > Pokud stahujete Visual Studio *zaváděcí nástroj* ještě dnes a spustit ho za šest měsíců od této chvíle, instaluje na vydání sady Visual Studio, které jsou aktuální v době spuštění zaváděcí nástroj.
 > 
@@ -270,6 +270,6 @@ Další možnosti podpory dostupné, máme příliš. Seznam najdete v tématu n
 
 * [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
-* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
+* [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

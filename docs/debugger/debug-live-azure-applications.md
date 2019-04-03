@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428736"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857473"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění živé aplikace ASP.NET Azure pomocí ladicího programu snímků
 
@@ -50,40 +50,29 @@ V tomto kurzu se naučíte:
 
     > [!IMPORTANT]
     > K ladění snímků, budete muset otevřít *stejnou verzi zdrojového kódu* , který je publikován do služby Azure App Service.
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2017"
 
 2. V Průzkumníku cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na projekt je nasazen na službě Azure App Service a vyberte **připojit Snapshot Debugger**.
 
    ![Spuštění ladicího programu snímků](../debugger/media/snapshot-launch.png)
 
-    Při prvním vyberete **připojit Snapshot Debugger**, budete vyzváni k instalaci rozšíření webu pro Snapshot Debugger ve službě Azure App Service. Tato instalace vyžaduje restartování služby Azure App Service.
-
 ::: moniker-end
-::: moniker range=">= vs-2019"
-2. Připojte Snapshot Debugger. Můžete použít jeden z několika různými způsoby:
-
-    * Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte váš projekt je nasazen na službě Azure App Service a účet úložiště Azure a pak klikněte na tlačítko **připojit**.
+::: moniker range=">=vs-2019"
+2. Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte váš projekt je nasazen na službě Azure App Service a účet úložiště Azure a pak klikněte na tlačítko **připojit**.
 
       ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Klikněte pravým tlačítkem myši na projekt a vyberte **publikovat**a pak na stránce klikněte na publikovat **připojit Snapshot Debugger**. Vyberte váš projekt je nasazen na službě Azure App Service a účet úložiště Azure a pak klikněte na tlačítko **připojit**.
-    ![Spuštění ladicího programu snímků ze stránky publikovat](../debugger/media/snapshot-publish-attach.png)
+      ![Vyberte prostředek Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
-    * V ladění cíl rozevírací nabídky vyberte možnost **Snapshot Debugger**, přístupů **F5** a v případě potřeby vyberte váš projekt je nasazen na službě Azure App Service a službu Azure storage account a pak klikněte na tlačítko  **Připojit**.
-    ![Spuštění ladicího programu snímků z rozevírací nabídky F5](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * Pomocí Průzkumníka cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na projekt je nasazen na službě Azure App Service a vyberte účet úložiště Azure a pak klikněte na tlačítko **připojit Snapshot Debugger**.
-
-      ![Spuštění ladicího programu snímků z Průzkumníka cloudu](../debugger/media/snapshot-launch.png)
-
-    Při prvním vyberete **připojit Snapshot Debugger**, budete vyzváni k instalaci rozšíření webu pro Snapshot Debugger ve službě Azure App Service. Tato instalace vyžaduje restartování služby Azure App Service.
 ::: moniker-end
 
-   Visual Studio je nyní v režimu ladění snímků.
+  > [!IMPORTANT]
+  > Při prvním vyberete **připojit Snapshot Debugger**, budete vyzváni k instalaci rozšíření webu pro Snapshot Debugger ve službě Azure App Service. Tato instalace vyžaduje restartování služby Azure App Service.
 
   > [!NOTE]
   > Rozšíření webu Application Insights podporuje také ladění snímků. Pokud narazíte na chybovou zprávu "aktuální rozšíření webu", přečtěte si téma [řešení potíží, tipy a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
 
+   Visual Studio je nyní v režimu ladění snímků.
    ![Režim ladění snímků](../debugger/media/snapshot-message.png)
 
    **Moduly** okno zobrazuje, když jste načetli všech modulů pro službu Azure App Service (zvolte **ladit > Windows > moduly** otevřete toto okno).
@@ -157,7 +146,7 @@ Kromě pořízení snímku při dosažení snímkovacího bodu, můžete také n
 
     Pokud se rozhodnete **odeslat do okna výstup**, když protokolovacích bodů: dosažení, zpráva se zobrazí v okně diagnostické nástroje.
 
-    ![V okně archivu diagsession data protokolovacích bodů:](../debugger/media/snapshot-logpoint-output.png)
+    ![Protokolovací bod dat v okně diagnostické nástroje](../debugger/media/snapshot-logpoint-output.png)
 
     Pokud se rozhodnete **odeslat do protokolu aplikace**, když protokolovacích bodů: dosažení, zpráva se zobrazí kdekoli, zobrazí se zprávy z `System.Diagnostics.Trace` (nebo `ILogger` v .NET Core), například [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
