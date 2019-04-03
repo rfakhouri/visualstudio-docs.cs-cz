@@ -36,7 +36,7 @@ Informace o verzi souboru, zadaný v manifestu nasazení aplikace ClickOnce vyu�
   
  Pokud používáte sadu Visual Studio ke kompilaci vaší aplikace, vygeneruje se nové podpisy hodnoty hash pro všechny soubory pokaždé, když se je znovu sestavit celý projekt. V takovém případě všechna sestavení se stáhne do klienta, i když možná změnily pouze několik sestavení.  
   
- Oprava souborů pro soubory, které jsou označeny jako data a uloženy v adresáři dat nefunguje. Tyto budou staženy vždy bez ohledu na hodnoty hash podpisu souboru. Další informace o do adresáře dat, naleznete v tématu [Accessing Local and Remote Data in ClickOnce Applications](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
+ Oprava souborů pro soubory, které jsou označeny jako data a uloženy v adresáři dat nefunguje. Tyto budou staženy vždy bez ohledu na hodnoty hash podpisu souboru. Další informace o do adresáře dat, naleznete v tématu [Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Výběr strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
