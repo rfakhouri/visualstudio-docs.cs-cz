@@ -6,20 +6,20 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295188"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856538"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio pro Mac za bránou firewall nebo proxy serverem
 
 Pokud vy nebo vaše organizace používá bezpečnostní opatření, jako je například Brána firewall nebo proxy server, pak používají domény adresy URL, které můžete chtít "seznamu povolených IP adres" a porty a protokoly, které můžete chtít otevřít, abyste měli co nejlepších výsledků při instalaci a použití samostatného Visual dio pro Mac a služby Azure.
 
-- [**Instalace sady Visual Studio pro Mac**](#install-visual-studio-for-mac): tyto tabulky obsahují adresy URL do seznamu povolených IP adres, abyste měli přístup ke všem funkcím a úlohy sady Visual Studio pro Mac.
+- [**Install Visual Studio for Mac**](#install-visual-studio-for-mac): Tyto tabulky obsahují adresy URL do seznamu povolených IP adres, abyste měli přístup ke všem funkcím a úlohy sady Visual Studio pro Mac.
 
-- [**Pomocí sady Visual Studio pro Mac**](#use-visual-studio-for-mac): tyto tabulky, abyste měli přístup ke všem službám a funkcím, které chcete zahrnout adresy URL do seznamu povolených IP adres.
+- [**Pomocí sady Visual Studio pro Mac**](#use-visual-studio-for-mac): Abyste měli přístup ke všem službám a funkcím, které mají tyto tabulky obsahují adresy URL do seznamu povolených IP adres.
 
 ## <a name="install-visual-studio-for-mac"></a>Instalace sady Visual Studio pro Mac
 
@@ -34,19 +34,19 @@ Vzhledem k tomu, že Visual Studio pro Mac – instalační program stáhne z r�
 | vortex.data.microsoft.com | O chybách a hlášení chyb |
 | az667904.vo.msecnd.net| O chybách a hlášení chyb |
 | xamarin.com | Instalační program metadat|
-| xampubdl.BLOB.Core.Windows.NET| Instalační balíčky|
+| xampubdl.blob.core.windows.net| Instalační balíčky|
 | download.visualstudio.microsoft.com | Instalační balíčky|
-| xamarin.azureedge.NET | Instalační balíčky|
-| Developer.xamarin.com | Instalační balíčky|
+| xamarin.azureedge.net | Instalační balíčky|
+| developer.xamarin.com | Instalační balíčky|
 | dc.services.visualstudio.com| Oznamování chyb |
 
 ### <a name="third-party-domains"></a>Domény třetí strany
 
-| Domény| Účel |
+| Doména| Účel |
 | --------------------------|-------------------------|
-| dl.google.com | Sada SDK pro Android |
+| dl.google.com | Android SDK |
 | download.oracle.com | Java SDK|
-| API.Apple cloudkit.com| Zabezpečení služeb Apple |
+| api.apple-cloudkit.com| Zabezpečení služeb Apple |
 
 ## <a name="use-visual-studio-for-mac"></a>Pomocí sady Visual Studio pro Mac
 
@@ -54,40 +54,40 @@ Pokud chcete mít jistotu, že máte přístup pro všechny funkce, které potř
 
 ### <a name="general"></a>Obecné
 
-| Domény | Port(y) pro|Účel|
+| Doména | Port(y) pro|Účel|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Adresa URL služby Microsoft řešení |
 | vsstartpage.blob.core.windows.net| 80/443| Data úvodní stránky|
 | software.xamarin.com |  80/443|Aktualizační službu|
-| AddIns.monodevelop.com | 80/443| Služby rozšíření |
+| addins.monodevelop.com | 80/443| Služby rozšíření |
 | visualstudio-devdiv-c2s.msedge.net | 80/443| Experimentální funkce a oznámení |
 | targetednotifications.azurewebsites.net|  80/443| Slouží k filtrování globální seznam oznámení do seznamu, který se vztahuje pouze na konkrétní typy počítačů nebo použití scénáře|
 
 ### <a name="identity"></a>Identita
 
-| Domény | Port(y) pro|Účel|
+| Doména | Port(y) pro|Účel|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| Zprostředkovatel identity|
 | secure.aadcdn.microsoftonline-p.com | 80/443|Zprostředkovatel identity|
 | dc.services.visualstudio.com| 80/443|Oznamování chyb|
-| management.azure.com|80/443| Rozhraní API služby Azure |
+| management.azure.com|80/443| Azure Services API |
 
 ### <a name="nuget"></a>NuGet
 
-| Domény | Port(y) pro|Účel|
+| Doména | Port(y) pro|Účel|
 | ----------------------|------------------|------------------|
-| API.nuget.org | 80/443|Rozhraní API Nugetu|
+| api.nuget.org | 80/443|NuGet API|
 | secure.aadcdn.microsoftonline-p.com |80/443| Zprostředkovatel identity|
 
 ### <a name="android-projects"></a>Projekty Android
 
-| Domény| Účel|
+| Doména| Účel|
 | ------------------------------------|------------------------------------|
-| Time.Android.com| Čas serveru pro emulátor Androidu |
+| time.android.com| Čas serveru pro emulátor Androidu |
 | connectivitycheck.gstatic.com | Připojení k emulátoru Androidu|
 | cloudconfig.googleapis.com| Rozhraní API a emulátor pro Android|
 
 ## <a name="see-also"></a>Viz také:
 
-- [Instalace a používání sady Visual Studio 2017 a služeb Azure za bránou firewall nebo proxy serverem](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
 - [Řešení potíží s obdobným problémům ve Windows](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

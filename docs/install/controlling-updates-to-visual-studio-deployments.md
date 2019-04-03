@@ -1,7 +1,7 @@
 ---
 title: Řízení aktualizací nasazení
 description: Zjistěte, jak změnit, kam sady Visual Studio vyhledá aktualizace při instalaci ze sítě.
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54adaf3cdcbb8e15ada46a660de59f9b578e15f8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323052"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856285"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Řízení aktualizací nasazení sady Visual Studio založené na síti
 
@@ -34,52 +34,77 @@ Pokud chcete přímou kontrolu nad kde sady Visual Studio vyhledá aktualizace, 
 
 1. Vytvořte offline rozložení:
    ```cmd
-   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
 2. Zkopírujte ho do sdílené složky, ve kterém chcete hostovat ho:
    ```cmd
-   xcopy /e C:\vs2017offline \\server\share\VS2017
+   xcopy /e C:\vsoffline \\server\share\VS
    ```
 3. Upravte soubor response.json v rozložení a změna `channelUri` hodnotu tak, aby odkazoval na kopii channelManifest.json, které řídí správce.
 
    Ujistěte se, že řídicí zpětná lomítka v hodnotě, jako v následujícím příkladu:
 
    ```json
-   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
    Koncoví uživatelé teď spustit instalaci z této sdílené složce instalace sady Visual Studio.
    ```cmd
-   \\server\share\VS2017\vs_enterprise.exe
+   \\server\share\VS\vs_enterprise.exe
    ```
 
 Když správce podnikové sítě zjistí, je čas pro jejich uživatelům aktualizovat na novější verzi sady Visual Studio, mohou [aktualizovat umístění rozložení](update-a-network-installation-of-visual-studio.md) začlenit aktualizované soubory, následujícím způsobem.
 
 1. Použijte příkaz, který se podobá následující příkaz:
    ```cmd
-   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 2. Ujistěte se, soubor response.json v aktualizované rozložení stále obsahuje úpravy, konkrétně změny parametr channelUri následujícím způsobem:
    ```json
-   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
-   Existující sady Visual Studio a instaluje se z rozložení vyhledání aktualizací na `\\server\share\VS2017\ChannelManifest.json`. Pokud channelManifest.json je novější než co uživatel nainstaloval, Visual Studio upozorní uživatele, že je k dispozici aktualizace.
+   Existující sady Visual Studio a instaluje se z rozložení vyhledání aktualizací na `\\server\share\VS\ChannelManifest.json`. Pokud channelManifest.json je novější než co uživatel nainstaloval, Visual Studio upozorní uživatele, že je k dispozici aktualizace.
 
    Nové instalace automaticky nainstalují aktualizovaná verze sady Visual Studio přímo z rozložení.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Řízení oznámení v integrovaném vývojovém prostředí sady Visual Studio
 
+::: moniker range="vs-2017"
+
 Jak je popsáno výše, zkontroluje sada Visual Studio umístění, ze kterého jeho instalaci, jako je například sdílené síťové složky nebo na internet, pokud chcete zobrazit, zda jsou k dispozici žádné aktualizace. Pokud je aktualizace dostupná, Visual Studio upozorní uživatele s příznaku oznámení v pravém horním rohu okna.
 
- ![Příznak oznámení pro aktualizace](media/notification-flag.png)
+   ![Příznak oznámení pro aktualizace](media/notification-flag.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Jak je popsáno výše, zkontroluje sada Visual Studio umístění, ze kterého jeho instalaci, jako je například sdílené síťové složky nebo na internet, pokud chcete zobrazit, zda jsou k dispozici žádné aktualizace. Pokud je aktualizace dostupná, Visual Studio upozorní uživatele s ikonou oznámení v pravém dolním rohu okna.
+
+   ![Ikona oznámení v integrovaném vývojovém prostředí sady Visual Studio](media/vs-2019/notification-bar.png "ikonu oznámení v integrovaném vývojovém prostředí sady Visual Studio")
+
+::: moniker-end
 
 Oznámení můžete zakázat, pokud nechcete koncovým uživatelům oznámeno aktualizací. (Například můžete chtít zakázat oznámení, pokud k doručování aktualizací mechanismem distribuce softwaru centrální.)
+
+::: moniker range="vs-2017"
 
 Protože Visual Studio 2017 [ukládá položky registru v privátním registru](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), které nelze přímo upravovat položky registru obvyklým způsobem. Však zahrnuje Visual Studio `vsregedit.exe` nástroj, který vám umožní změnit nastavení sady Visual Studio. Můžete ji vypnout oznámení pomocí následujícího příkazu:
 
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Protože Visual Studio 2019 [ukládá položky registru v privátním registru](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), které nelze přímo upravovat položky registru obvyklým způsobem. Však zahrnuje Visual Studio `vsregedit.exe` nástroj, který vám umožní změnit nastavení sady Visual Studio. Můžete ji vypnout oznámení pomocí následujícího příkazu:
+
+```cmd
+vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
+```
+
+::: moniker-end
 
 (Nezapomeňte nahradit adresáře tak, aby odpovídaly nainstalované instanci, kterou chcete upravit.)
 
@@ -91,6 +116,6 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 ## <a name="see-also"></a>Viz také:
 
 * [Instalace sady Visual Studio](install-visual-studio.md)
-* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
+* [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
 * [Nástroje pro správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)

@@ -1,70 +1,36 @@
 ---
 title: Instalace systémů testování částí od třetích stran
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982919"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857695"
 ---
 # <a name="install-unit-test-frameworks"></a>Nainstalujte rozhraní pro testování částí
 
-Visual Studio Test Explorer můžete spustit libovolné jednotky rozhraní testování, který byl vyvinut rozhraní adaptér pro Průzkumníka. Instalační program rozhraní Framework nainstalují binární soubory a přidá šablony projektů Visual Studio pro jazyky, které podporuje. Při vytváření projektu se šablonou rozhraní zaregistrován pomocí Průzkumníka testů. Řešení sady Visual Studio může obsahovat projektů testů jednotek, které používají různá rozhraní a, který cílí na různé jazyky. Průzkumník testů provádí s nimi všechny.
+Visual Studio Test Explorer můžete spouštět testy z libovolné jednotky rozhraní testování, který byl vyvinut adaptéru rozhraní pro něj. Instalace rozhraní framework kopíruje binární soubory a přidá šablony projektů Visual Studio pro jazyky, které podporuje. Při vytváření projektu se šablonou rozhraní zaregistrován pomocí Průzkumníka testů.
 
-[MSTest](getting-started-with-unit-testing.md) je rozhraní pro testování poskytovaný sadou Visual Studio a je ve výchozím nastavení nainstalované s Visual Studio.
+Řešení sady Visual Studio může obsahovat projektů testů jednotek, které používají různá rozhraní a, který cílí na různé jazyky.
+
+[MSTest](getting-started-with-unit-testing.md) je rozhraní pro testování poskytovaný sadou Visual Studio a je ve výchozím nastavení nainstalovaná.
 
 ## <a name="acquire-frameworks"></a>Získání rozhraní
 
-Můžete stáhnout a nainstalovat rozhraní pro testování jednotky třetí strany, pomocí Správce rozšíření sady Visual Studio nebo z [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Rozhraní můžete také stáhnout z jiných webů, jako je web rozhraní framework.
+Nainstalujte rozhraní pro testování jednotky třetí strany s použitím **Správce balíčků NuGet**.
 
-### <a name="install-from-visual-studio"></a>Instalace ze sady Visual Studio
+1. Klikněte pravým tlačítkem na projekt, který bude obsahovat váš testovací kód a vybrat **spravovat balíčky NuGet**.
 
-::: moniker range="vs-2017"
+2. V **Správce balíčků NuGet**, vyhledejte testovací rozhraní, kterou chcete nainstalovat a potom klikněte na **nainstalovat**.
 
-1. Zvolte **nástroje** > **rozšíření a aktualizace**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Zvolte **rozšíření** > **spravovat rozšíření**.
-
-::: moniker-end
-
-2. Rozbalte **Online** > **Visual Studio Marketplace** > **nástroje**a klikněte na tlačítko **testování**.
-
-3. Procházejte seznamem a najít rozhraní framework.
-
-4. Vyberte rozhraní a zvolte **Stáhnout**.
-
-Další informace najdete v části [vyhledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
-
-### <a name="install-from-the-web"></a>Instalace z webu
-
-Pokud znáte rozhraní, které vás zajímají:
-
-1. Otevřít [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
-
-2. Zadejte název rozhraní v **najít** pole.
-
-3. Zvolte v seznamu výsledků a přejděte do rozhraní **Visual Studio Marketplace** stránky pro nástroj.
-
-Můžete procházet seznam architektur společně s další testovací nástroje:
-
-1. Otevřít [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
-
-2. V **filtrovat podle kategorie / kolekce**, zvolte **zobrazit všechny**.
-
-3. V **kategorie** seznamu (označené jako **zobrazující**), rozbalte **nástroje** uzlu a pak zvolte **testování**.
-
-4. Výběr v seznamu výsledků a přejděte do architektury **Visual Studio Marketplace** stránky pro nástroj.
+   ![Správce balíčků NuGet v sadě Visual Studio](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>Aktualizovat na nejnovější adaptéry testu
 

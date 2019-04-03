@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a307221e4e585ab3cb8ee6f1ad3e71057afaf671
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605312"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866783"
 ---
 # <a name="secure-clickonce-applications"></a>Zabezpečení aplikací ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace jsou v souladu s omezením zabezpečení přístupu kódu v rozhraní .NET Framework pomáhají omezit přístupu k chráněným prostředkům a operacím. Z tohoto důvodu je důležité, že chápete důsledky zabezpečení přístupu kódu k zápisu vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace odpovídajícím způsobem. K omezení přístupu mohou vaše aplikace používat plnou důvěryhodnost nebo částečné zóny, jako jsou zóny pro Internet a Intranet.
@@ -74,7 +74,7 @@ ms.locfileid: "56605312"
 >  Argumenty řetězce dotazu jsou pouze způsobem předávání argumentů [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] při spuštění aplikace. Argumenty nelze předat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace z příkazového řádku.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Nasazení obfuskovaných sestavení
- Visual Studio zahrnuje bezplatnou [PreEmptive ochranu – nástroj Dotfuscator Community Edition](../ide/dotfuscator/index.md), který můžete použít k ochraně vašich aplikací ClickOnce pomocí obfuskace kódu a aktivní ochranná opatření.  Podrobnosti najdete v tématu [ClickOnce část uživatelské příručce nástroje Dotfuscator Community Edition](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
+ Visual Studio zahrnuje bezplatnou [PreEmptive ochranu – nástroj Dotfuscator Community](../ide/dotfuscator/index.md), který můžete použít k ochraně vašich aplikací ClickOnce pomocí obfuskace kódu a aktivní ochranná opatření.  Podrobnosti najdete v tématu [ClickOnce část v uživatelské příručce nástroje Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
 ## <a name="see-also"></a>Viz také:
 - [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)

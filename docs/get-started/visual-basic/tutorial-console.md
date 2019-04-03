@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a32e25f8bf19a565ef86d130a7e61a0f3742580
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647372"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857590"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Kurz: Začínáme s jazykem Visual Basic v sadě Visual Studio
 
@@ -33,7 +33,7 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ::: moniker range="vs-2019"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
@@ -267,5 +267,5 @@ Blahopřejeme k dokončení tohoto kurzu! Další ještě víc, najdete v násle
 ## <a name="see-also"></a>Viz také:
 
 * [Návody pro jazyk Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Referenční dokumentace jazyka Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Visual Basic – reference jazyka](/dotnet/visual-basic/language-reference/index)
 * [Technologie IntelliSense pro soubory kódu jazyka Visual Basic](../../ide/visual-basic-specific-intellisense.md)

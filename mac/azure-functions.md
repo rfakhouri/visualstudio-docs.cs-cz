@@ -3,16 +3,16 @@ title: Úvod do služby Azure Functions
 description: Pomocí Azure functions v sadě Visual Studio pro Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295940"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857240"
 ---
 # <a name="introduction-to-azure-functions"></a>Úvod do služby Azure Functions
 
@@ -20,7 +20,7 @@ Azure functions je způsob, jak vytvářet a spouštět založený na událostec
 
 ## <a name="requirements"></a>Požadavky
 
-Jsou součástí nástroje Azure Function **Visual Studio pro Mac 7.5**.
+Jsou součástí nástroje Azure Function **Visual Studio pro Mac 7.5** a novější.
 
 Vytvoření a nasazení služby functions budete potřebovat předplatné Azure, která je k dispozici bezplatně [ https://azure.com/free ](https://azure.com/free).
 
@@ -34,6 +34,10 @@ Vytvoření a nasazení služby functions budete potřebovat předplatné Azure,
 3. Vyberte počáteční šablonu Azure Functions, kterou chcete použít, zadejte název vaší funkce a klikněte na tlačítko **Další**.
 
     ![Dialogové okno Nový projekt zobrazuje šablony Azure functions](media/azure-functions-image2.png)
+
+    > [!TIP]
+    > Zatímco jako součást balíčku modulu runtime Azure Functions a šablony (rozhraní příkazového řádku) se neodstraní, datum nejdříve nevyhnutelně dostanou zastaralé. Při vytváření nového projektu Functions, Visual Studio pro Mac bude vyhledávat aktualizace rozhraní příkazového řádku a upozorní vás, jak je znázorněno na následujícím obrázku. Stačí klikněte na tlačítko a stáhněte si aktualizované šablony.
+    > ![Dialogové okno Nový projekt Azure functions aktualizací jsou k dispozici](media/azure-functions-update.png)
 
     V závislosti na typu funkce, do které jste vybrali na další stránku vás vyzve k zadejte podrobnosti, jako je například přístupová práva, jak je znázorněno na následujícím obrázku:
 
@@ -91,10 +95,10 @@ Výše uvedený postup slouží k přidání dalších funkcí pro váš projekt
 
 ## <a name="publish-to-azure"></a>Publikování do Azure
 
-1. Klikněte pravým tlačítkem na název projektu a vyberte **publikovat > Publikovat do Azure**: ![publikovat v nabídce azure možnost](media/azure-functions-image5.png)
+1. Klikněte pravým tlačítkem na název projektu a vyberte **publikovat > Publikovat do Azure**:  ![Publikování nabídky azure](media/azure-functions-image5.png)
 2. Pokud už jste připojili Azure účtu sady Visual Studio pro Mac seznam dostupných aplikací, služeb se zobrazují. Pokud jste ještě přihlášeni, budete vyzváni k tomu.
 3. Z **publikovat do služby Azure App Service** dialogového okna, můžete vybrat stávající službu app service nebo vytvořte novou kliknutím **nový**.
-4. V **vytvořit novou službu App Service** dialogovém okně nastavení: ![publikovat v nabídce azure možnost](media/azure-functions-image7.png)
+4. V **vytvořit novou službu App Service** dialogovém okně nastavení:  ![Publikování nabídky azure](media/azure-functions-image7.png)
 
     |Nastavení  |Popis  |
     |---------|---------|
@@ -102,9 +106,6 @@ Výše uvedený postup slouží k přidání dalších funkcí pro váš projekt
     |**Předplatné**|Předplatné Azure používat.|
     |**[Skupina prostředků](/azure/azure-resource-manager/resource-group-overview)**|Název skupiny prostředků, ve kterém chcete vytvořit aplikaci function app. Zvolte **+** vytvořit novou skupinu prostředků.|
     |**[Plán služby](/azure/azure-functions/functions-scale)**|Vybrat existující plán nebo vytvořte vlastní plán. Vyberte umístění v oblasti vaší blízkosti nebo v blízkosti jiných služeb vaší funkce přístupu.|
-
-    > [!CAUTION]
-    > Je chyba v 7.6 verzi sady Visual Studio for Mac, která způsobí, že publikování nezdaří s chybou zřizování při pokusu vytvořit plán s vlastní službu **ceny** nastavena na **spotřeby**. Tato chyba bude opravena v další vydané verzi služby.
 
 5. Klikněte na tlačítko **Další** k vytvoření účtu úložiště. Modul runtime služby Functions vyžaduje účet úložiště Azure. Klikněte na tlačítko **vlastní** vytvořit účet úložiště pro obecné účely, nebo použijte již existující:
 
@@ -116,14 +117,11 @@ Výše uvedený postup slouží k přidání dalších funkcí pro váš projekt
 
     ![Publikování nabídky azure](media/azure-functions-image12.png)
 
-> [!CAUTION]
-> Je chyba v 7.6 verzi sady Visual Studio for Mac ve kterém `FUNCTIONS_EXTENSION_VERSION` není správně nastavená na "Beta verze", což znamená, že vaše funkce se možná nespustí. Tento problém můžete přejít na vaše [fungovat nastavení aplikace](#function-app-settings) a nastavte `FUNCTIONS_EXTENSION_VERSION` z "-1" na "Beta verze".
-
 ## <a name="function-app-settings"></a>Nastavení aplikace Function app
 
 Všechna nastavení, které jste přidali v kroku local.settings.json musí být rovněž přidán do aplikace function app v Azure. Tato nastavení nejsou automaticky nahraje při publikování tohoto projektu.
 
-Pro přístup k nastavení aplikace, přejděte na webu azure portal na [ https://ms.portal.azure.com/ ](https://ms.portal.azure.com/). V části **aplikace Function App**vyberte **aplikace Function App** a upozornit na název vaší funkce:
+Pro přístup k nastavení aplikace, přejděte na webu Azure portal na [ https://ms.portal.azure.com/ ](https://ms.portal.azure.com/). V části **aplikace Function App**vyberte **aplikace Function App** a upozornit na název vaší funkce:
 
 ![nabídky Azure functions](media/azure-functions-image9.png)
 
@@ -133,7 +131,7 @@ Z **přehled** kartě vyberte **nastavení aplikace** pod **nakonfigurování fu
 
 Odsud můžete nastavit nastavení aplikace pro aplikaci function app, ve kterém můžete přidat nové nastavení aplikace nebo upravte stávající:
 
-![oblast nastavení aplikace pro web azure portal](media/azure-functions-image11.png)
+![oblast nastavení aplikace pro web Azure portal](media/azure-functions-image11.png)
 
 Je jedním z důležitých nastavení budete muset nastavit `FUNCTIONS_EXTENSION_VERSION`. Při publikování ze sady Visual Studio pro Mac, je třeba tuto hodnotu nastavit na **beta**.
 

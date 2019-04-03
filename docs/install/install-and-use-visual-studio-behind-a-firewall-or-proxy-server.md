@@ -1,7 +1,7 @@
 ---
 title: Nainstalovat a používat za bránou firewall nebo proxy serverem
 description: Projděte si adresy URL domén, porty a protokoly, které může být vhodné přidat na seznam povolených nebo otevřít, pokud vaše organizace používá Brána firewall nebo proxy server
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 379f4ad2c4a5eb6df2dd2913104b9e2aa0139173
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515373"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857525"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
@@ -141,7 +141,8 @@ Tady je několik dalších možností podpory:
 
 ## <a name="see-also"></a>Viz také:
 
+* [Požadavky na připojení pro Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Vytvoření síťové instalace sady Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Řešení potíží s chybami související se sítí v sadě Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
+* [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Nainstalovat za bránou firewall nebo proxy serverem (Visual Studio for Mac)](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

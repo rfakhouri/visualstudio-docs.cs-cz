@@ -1,6 +1,7 @@
 ---
 title: 'Postupy: Odemknout Visual Studio'
-ms.date: 07/20/2017
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943139"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856817"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Postupy: Odemknout Visual Studio
 
@@ -27,7 +30,7 @@ Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Přihlašován�
 
 K odemknutí sady Visual Studio pomocí předplatného sady Visual Studio nebo organizace Azure DevOps přidružené k účtu Microsoft nebo pracovní nebo školní účet:
 
-1. Klikněte na **přihlášení** tlačítko v pravém horním rohu integrovaného vývojového prostředí (nebo můžete přejít na **souboru** > **nastavení účtu** otevřít **nastavení účtu**  dialogové okno a klikněte na kartu **přihlášení** tlačítko).
+1. Zvolte **přihlášení** tlačítko v pravém horním rohu integrovaného vývojového prostředí (nebo můžete přejít na **souboru** > **nastavení účtu** otevřít **nastavení účtu**  dialogové okno a zvolte **přihlášení** tlačítko).
 
 1. Zadejte přihlašovací údaje pro účet Microsoft nebo pracovní nebo školní účet. Visual Studio vyhledá předplatné sady Visual Studio nebo spojené s vaším účtem organizace Azure DevOps.
 
@@ -36,9 +39,9 @@ K odemknutí sady Visual Studio pomocí předplatného sady Visual Studio nebo o
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>K odemknutí sady Visual Studio s kódem product key
 
-1. Vyberte **souboru** > **nastavení účtu** otevřít **nastavení účtu** dialogové okno a klikněte na kartu **licence s kódem Product Key**odkaz.
+1. Vyberte **souboru** > **nastavení účtu** otevřít **nastavení účtu** dialogového okna a klikněte na tlačítko **licence s kódem Product Key** odkaz.
 
-Zadejte kód product key v poskytnutém prostoru.
+1. Zadejte kód product key v poskytnutém prostoru.
 
 > [!TIP]
 > Předběžné verze sady Visual Studio nemají žádné kódy product key. Musíte se přihlásit k prostředí IDE použití předběžných verzí.
@@ -47,7 +50,7 @@ Zadejte kód product key v poskytnutém prostoru.
 
 ### <a name="update-stale-licenses"></a>Aktualizovat zastaralé licence
 
- Možná jste viděli následující zprávu, která vaše licence bude zastaralé v sadě Visual Studio, který čte, "vaše licence je prošlá a musí se aktualizovat."
+ Možná jste viděli následující zpráva, která říká, že vaše licence bude zastaralé v sadě Visual Studio. Načte, "vaše licence je prošlá a musí se aktualizovat."
 
  ![Zpráva zastaralé licence Visual Studio](../ide/media/vs2017_stale-license.png)
 
@@ -56,12 +59,12 @@ Zadejte kód product key v poskytnutém prostoru.
 - Nepoužili sady Visual Studio nebo měli bez připojení k Internetu pro delší dobu.
 - Odhlásili jste se od sady Visual Studio.
 
-Předtím, než půjde zastaralé token licence, sada Visual Studio nejprve zobrazí zprávu upozornění s výzvou, abyste znovu zadat přihlašovací údaje.
+Předtím, než půjde zastaralé token licence, sada Visual Studio nejprve zobrazí zpráva s dotazem, můžete znovu zadat přihlašovací údaje.
 
-Pokud není znovu zadat přihlašovací údaje, token se začne přejít zastaralé a **nastavení účtu** dialogové okno zjistíte, kolik dní zbývá před plně vyprší platnost tokenu. Po vypršení platnosti tokenu, je potřeba znovu zadat přihlašovací údaje pro tento účet nebo licenci s jinou metodu výše, než budete pokračovat, pomocí sady Visual Studio.
+Pokud není znovu zadat přihlašovací údaje, token se začne přejít zastaralé a **nastavení účtu** dialogové okno zjistíte, kolik dní zbývá před plně vyprší platnost tokenu. Po vypršení platnosti tokenu, je nutné znovu zadat své přihlašovací údaje pro účet předtím, než můžete pokračovat v používání sady Visual Studio.
 
 > [!Important]
-> Pokud používáte Visual Studio po delší dobu v prostředích s omezením nebo bez připojení k Internetu, by měl použít kód product key k odemknutí sady Visual Studio, aby se předešlo výpadkům.
+> Pokud používáte Visual Studio po delší dobu v prostředích s omezením nebo bez připojení k Internetu, by měl použít kód product key k odemknutí sady Visual Studio, aby se zabránilo přerušení.
 
 ### <a name="update-expired-licenses"></a>Aktualizovat vypršela platnost licence
 

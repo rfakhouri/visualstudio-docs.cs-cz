@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763320"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866757"
 ---
 # <a name="managing-external-tools"></a>Správa externích nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
   
 3.  Trasovací nástroj ATL/MFC: ve zdrojích ATL a MFC zobrazí zprávy trasování ladění.  
   
-4.  PreEmptive Dotfuscator a Analytics: Chrání programy .NET proti zpětné analýze.  
+4.  PreEmptive ochrana - Dotfuscator: Chrání programy .NET proti zpětné analýze.  
   
 5.  SPY ++: Zobrazí procesy, vlákna, windows a zprávy okna graficky.  
   
@@ -102,7 +102,7 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
 > [!NOTE]
 >  Stavový řádek IDE zobrazuje pro označení místa bodu vložení v aktivním editoru kódu proměnné Current Line a Current Column. Proměnná Current Text vrací text nebo kód vybraný v rámci tohoto místa.  
   
-|Název|Argument|Popis|  
+|Name|Argument|Popis|  
 |----------|--------------|-----------------|  
 |Cesta položky|$(ItemPath)|Celý název souboru aktuálního souboru (jednotka + cesta + název souboru).|  
 |Adresář položky|$(ItemDir)|Adresář aktuálního souboru (jednotka + cesta).|  

@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294016"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857499"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Vytváření a úpravy vlastního souboru EditorConfig
 
 V sadě Visual Studio pro Mac, můžete přidat [EditorConfig](http://editorconfig.org/) soubor do projektu nebo řešení, které vynucují konzistentní kódování styly pro všechny uživatele, který funguje v základu kódu. Nastavení deklarované v souboru EditorConfig přednost před globální sady Visual Studio pro Mac nastavení textového editoru. Pomocí EditorConfig souborů v rámci projektu nebo základ kódu vám umožní nastavit vaši kódování styl, předvoleb a upozornění pro váš projekt. Protože soubor je součástí vašeho základu kódu, usnadňuje pro všechny uživatele na dodržují kódování údajů projektu, bez ohledu na to, které používají editoru kódu nebo prostředí IDE.
 
-[EditorConfig](http://editorconfig.org/) souborů jsou podporovány v mnohé editory Integrovaná vývojová prostředí a kód, včetně sady Visual Studio 2017.
+[EditorConfig](http://editorconfig.org/) souborů jsou podporovány v mnohé editory Integrovaná vývojová prostředí a kód, včetně sady Visual Studio.
 
 ## <a name="supported-settings"></a>Podporovaná nastavení
 

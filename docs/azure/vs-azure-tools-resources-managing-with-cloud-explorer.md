@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 97b6d27c676af1fb5d4a81778c708a3ad036c601
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789247"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857161"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Správa prostředků přidružených k účtům Azure v Průzkumníkovi cloudu sady Visual Studio
 
@@ -24,7 +24,7 @@ Podobně jako [webu Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=52504
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Visual Studio 2017 nebo novější (naleznete v tématu [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)) se **úlohy Azure** vybrané. Můžete také použít starší verzi sady Visual Studio s [Microsoft Azure SDK pro .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 nebo novější (naleznete v tématu [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)) se **úlohy Azure** vybrané. Můžete také použít starší verzi sady Visual Studio s [Microsoft Azure SDK pro .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Účet Microsoft Azure – Pokud nemáte účet, můžete si [zaregistrujte si bezplatnou zkušební verzi](http://go.microsoft.com/fwlink/?LinkId=623901) nebo [aktivovat výhody pro předplatitele sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

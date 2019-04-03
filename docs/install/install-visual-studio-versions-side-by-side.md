@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1f2969fe93ab2623b1f8406f6eaa0ce35c454202
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160534"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856927"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Souběžná instalace různých verzí sady Visual Studio
 
@@ -38,7 +38,7 @@ Před instalací verzí vedle sebe, zkontrolujte následující podmínky:
 
 * Pokud používáte Visual Studio 2019 pro otevření řešení, který byl vytvořen v sadě Visual Studio 2017, můžete později otevřít a upravit toto řešení znovu ve starší verzi, dokud jste neimplementovali žádné funkce, které jsou specifické pro Visual Studio 2019.
 
-* Pokud se pokusíte použít Visual Studio 2019 otevřete řešení, který byl vytvořen v sadě Visual Studio 2017 nebo starší verzi, může být potřeba upravit projekty a soubory kompatibilní s Visual Studio 2019. Další informace najdete v tématu [Port, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md) stránky.
+* Pokud se pokusíte použít Visual Studio 2019 otevřete řešení, který byl vytvořen v sadě Visual Studio 2017 nebo starší verzi, může být potřeba upravit projekty a soubory kompatibilní s Visual Studio 2019. Další informace najdete v tématu [Port, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md) stránky.
 
 ::: moniker-end
 
@@ -58,8 +58,8 @@ Informace specifické pro jazyk najdete v příslušném tématu v následujíc�
 
 | Jazyk | Téma |
 |--------------|-----------|
-| Visual Basic | [Stránka Aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [Stránka Aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
+| Visual Basic | [Stránka Aplikace, návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual C# | [Stránka Aplikace, návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Vývoj s Vizuálem F# v sadě Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
 |C++ | [Postupy: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
@@ -77,17 +77,17 @@ Informace specifické pro jazyk najdete v příslušném tématu v následujíc�
 
 | Jazyk | Téma |
 |--------------|-----------|
-| Visual Basic | [Stránka Aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
-| Visual C# | [Stránka Aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
-| Visual F# | [Vývoj s Vizuálem F# v sadě Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2019) |
+| Visual Basic | [Stránka Aplikace, návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [Stránka Aplikace, návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual F# | [Vývoj s Vizuálem F# v sadě Visual Studio](../ide/fsharp-visual-studio.md) |
 | C++ | [Postupy: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio](install-visual-studio.md?view=vs-2019)
-* [Přenos, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
+* [Instalace sady Visual Studio](install-visual-studio.md)
+* [Přenos, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [Sestavení C/C++ izolovaných aplikací a sestavení vedle sebe](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

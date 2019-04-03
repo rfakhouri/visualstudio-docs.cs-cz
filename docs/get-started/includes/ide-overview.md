@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342653"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807475"
 ---
 Visual Studio *integrovaného vývojového prostředí* je creative odrazový, můžete použít k úpravám, ladit a sestavovat kód a pak publikujete aplikaci. Integrované vývojové prostředí (IDE) je plně funkční program, který lze použít pro mnoho aspektů vývoje softwaru. Kromě standardní editor a ladicího programu, že většina integrovanými vývojovými prostředími poskytnout, Visual Studio obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a mnoho dalších funkcí, které usnadňují proces vývoje softwaru.
 
@@ -91,22 +91,24 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
    ![Seznam členů sady Visual Studio](../media/intellisense-list-members.png)
 
-- [Snadné spuštění](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Vyhledávací pole
 
-   Visual Studio, může to působit příliš složitě čas od času s tolika nabídky, možnosti a vlastnosti. **Snadné spuštění** vyhledávacího pole je skvělý způsob, jak rychle najít, co potřebujete, v sadě Visual Studio. Když začnete psát název něco, co hledáte, Visual Studio obsahuje výsledky, které dostanete, přesně, kde potřebujete přejít. Pokud chcete přidat funkce do sady Visual Studio, například pro přidání podpory pro další programovací jazyk, **Snadné spuštění** poskytuje výsledky, které otevřete instalační program sady Visual Studio k instalaci úloh nebo jednotlivých komponent.
+   Visual Studio, může to působit příliš složitě čas od času s tolika nabídky, možnosti a vlastnosti. Do vyhledávacího pole je skvělý způsob, jak rychle najít, co potřebujete, v sadě Visual Studio. Když začnete psát název něco, co hledáte, Visual Studio obsahuje výsledky, které dostanete, přesně, kde potřebujete přejít. Pokud je potřeba přidat funkce do sady Visual Studio, například pro přidání podpory pro další programovací jazyk, do vyhledávacího pole obsahuje výsledky, které otevřete instalační program sady Visual Studio k instalaci úloh nebo jednotlivých komponent.
 
    > [!TIP]
-   > Stisknutím klávesy **Ctrl**+**Q** jako zástupce **Snadné spuštění** vyhledávacího pole.
+   > Stisknutím klávesy **Ctrl**+**Q** jako zástupce do vyhledávacího pole.
 
    ::: moniker range="vs-2017"
 
    ![Rychlé spuštění vyhledávacího pole v sadě Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Další informace najdete v tématu [Snadné spuštění](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Rychlé spuštění vyhledávacího pole v aplikaci Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
+   ![Vyhledávací pole v aplikaci Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

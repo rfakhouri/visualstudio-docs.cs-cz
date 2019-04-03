@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f23ad749fc2a1d71153fd3adf2503a0c3108bf6
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b1bcd64281cf8ad2ffb1a194652ccf2b10ebf470
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790196"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857733"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace na nejnovější verzi sady Visual Studio
 
@@ -51,7 +51,7 @@ Při aktualizaci neexistuje odpovídající příznak oznámení v sadě Visual 
    ![Aktualizace sady Visual Studio 2017 pomocí centra oznámení](media/vs-install-notifications-hub-15dot6.png "centru oznámení sadě Visual Studio 2017")
 
       > [!TIP]
-      > Je kumulativní aktualizace pro edice Visual Studio 2019, takže vždy rozhodnout je nainstalovat jeden nejnovější číslo verze.
+      > Je kumulativní aktualizace pro edice Visual Studio 2017, takže vždy rozhodnout je nainstalovat jeden nejnovější číslo verze.
 
 1. Když **aktualizace** dialogové okno se otevře, zvolte **aktualizovat**.
 
@@ -220,7 +220,7 @@ Můžete si vyhledejte aktualizaci a pak jej nainstalovat pomocí na řádku nab
 
      ![Klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci](media/vs2019-update-visual-studio-community-rc-from-ide.png "klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci")
 
-   Visual Studio ukončí a potom znovu otevře.
+   Visual Studio aktualizuje, zavře a znovu neotevře.
 
 ### <a name="in-visual-studio"></a>In Visual Studio
 
@@ -235,7 +235,7 @@ Můžete si vyhledejte aktualizaci a pak jej nainstalovat pomocí na řádku nab
 
      ![Klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci](media/vs2019-update-visual-studio-community-rc-from-ide.png "klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci")
 
-   Visual Studio ukončí a potom znovu otevře.
+   Visual Studio aktualizuje, zavře a znovu neotevře.
 
 ## <a name="use-the-notifications-hub"></a>Použití centra oznámení
 
@@ -263,6 +263,6 @@ Můžete si vyhledejte aktualizaci a pak jej nainstalovat pomocí na řádku nab
 ## <a name="see-also"></a>Viz také:
 
 * [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update)
+* [Update Visual Studio for Mac](/visualstudio/mac/update)
 * [Úpravy sady Visual Studio](modify-visual-studio.md)
 * [Odinstalace sady Visual Studio](uninstall-visual-studio.md)

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c9744fe2597a6f3b29d0ce42f2a6267b03ea6783
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790300"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857397"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka Visual Basic
 
@@ -33,7 +33,7 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ::: moniker range=">=vs-2019"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
@@ -302,5 +302,5 @@ Blahopřejeme k dokončení tohoto kurzu! Můžete najít *.exe* vytvořeným v 
 
 ## <a name="see-also"></a>Viz také:
 
-- [Co je nového v sadě Visual Studio 2017](../../ide/whats-new-visual-studio.md)
+- [Novinky v sadě Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Tipy pro vyšší produktivitu](../../ide/productivity-tips-for-visual-studio.md)

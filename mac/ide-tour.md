@@ -3,20 +3,17 @@ title: Visual Studio for Mac Tour
 description: Visual Studio for Mac obsahuje integrované vývojové prostředí pro vytváření aplikací .NET v systému macOS, včetně webů ASP.NET Core a projekty Xamarin pro iOS, Android, Mac a Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 02/07/2019
+ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: e192f75508173cd4014e391168ab27e9abe2bc9a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: a621faece8ed0cef3dd48d46fc41857af6e62c9e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573012"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856311"
 ---
-# <a name="visual-studio-2019-for-mac-preview-tour"></a>2019 Visual Studio pro Mac ve verzi Preview prohlídku
-
-> [!NOTE]
-> 2019 Visual Studio for Mac je [nyní k dispozici](installation.md) jako verze preview pro testování.
+# <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac tour
 
 Visual Studio for Mac je .NET _integrovaného vývojového prostředí_ na počítači Mac, který je možné upravit, ladit a vytvářet kód a pak publikujete aplikaci. Kromě očekávané funkce, jako je standardní editor a ladicí program Visual Studio for Mac obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a správy zdrojového kódu do úložiště ese proces vývoje softwaru.
 
@@ -39,9 +36,9 @@ Tento článek se věnuje různých oddílů sady Visual Studio pro Mac, poskytu
 
 Visual Studio for Mac je uspořádaný do několika oddílů pro správu souborů aplikace a nastavení, vytvoření kódu aplikace a ladění.
 
-## <a name="new-start-window"></a>Nový časový interval pro spuštění
+## <a name="start-window"></a>Časový interval pro spuštění
 
-Při spuštění. 2019 Visual Studio for Mac Preview nové uživatelům se zobrazí okno přihlášení. Přihlaste se pomocí svého účtu Microsoft k aktivaci placenou licenci (pokud nějakou máte) nebo odkaz na předplatná Azure. Stisknutím klávesy **přeskočit** a později přihlásit přes **sady Visual Studio > přihlaste** položky nabídky:
+Při spuštění. 2019 Visual Studio pro Mac nové uživatelům se zobrazí okno přihlášení. Přihlaste se pomocí svého účtu Microsoft k aktivaci placenou licenci (pokud nějakou máte) nebo odkaz na předplatná Azure. Stisknutím klávesy **přeskočit** a později přihlásit přes **sady Visual Studio > přihlaste** položky nabídky:
 
 ![Přihlaste se ke svému účtu Microsoft](media/ide-tour-2019-start-signin.png)
 
@@ -126,4 +123,4 @@ Další informace o používání správy verzí v sadě Visual Studio, najdete 
 
 ## <a name="see-also"></a>Viz také:
 
-- [Visual Studio IDE (on Windows)](/visualstudio/ide/visual-studio-ide)
+- [Visual Studio IDE (ve Windows)](/visualstudio/ide/visual-studio-ide)

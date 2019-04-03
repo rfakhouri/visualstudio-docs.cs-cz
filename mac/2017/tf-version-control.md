@@ -7,12 +7,12 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 1d560e3fd383e3db19c664bf027470c8da224fd2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573075"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857798"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí
 
@@ -42,8 +42,6 @@ Aktualizace rozšíření TFVC probíhají pravidelně. Přístup k aktualizace,
 ![Aktualizace zobrazení Správce rozšíření](media/tfvc-update.png)
 
 Stisknutím klávesy **nainstalovat** v dalším dialogovém okně starý balíček odinstalovat a nainstalovat nové.
-
-Informace o tom, co je nového v jednotlivých verzích, najdete v článku [poznámky k verzi](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Pomocí doplňku
 

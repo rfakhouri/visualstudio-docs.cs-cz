@@ -3,14 +3,14 @@ title: Instalační program sady Visual Studio for Mac Tools for Unity
 description: Nastavení a instalaci nástrojů Unity pro použití v sadě Visual Studio pro Mac
 author: therealjohn
 ms.author: johmil
-ms.date: 05/25/2018
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d490b4c1268beb4a5ad55263cb186d838005f718
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: b9e033b765df4ae4396c011fe37939b4fc63e372
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315524"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857551"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Instalace sady Visual Studio for Mac Tools for Unity
 
@@ -36,7 +36,7 @@ Během instalace Ujistěte se, že Visual Studio pro Mac se změnami seznam sou�
 
 Verze sady Visual Studio pro Mac součástí instalace Unity nemusí být na nejnovější verzi. Doporučujeme zkontrolovat aktualizace Ujistěte se, že máte přístup k nejnovější nástroje a funkce.
 
-* [Aktualizace sady Visual Studio pro Mac](update.md)
+* [Updating Visual Studio for Mac](update.md)
 
 ### <a name="manual-installation"></a>Ruční instalace
 
@@ -44,7 +44,7 @@ Pokud už máte Unity 5.6.1 nebo vyšší, ale nemáte Visual Studio pro Mac, Vi
 
 * Stáhněte si Visual Studio for Mac z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
 * Visual Studio for Mac Tools for Unity, se během procesu instalace automaticky nainstalují.
-* Postupujte podle pokynů [Průvodce instalací](/visualstudio/mac/installation/?view=vsmac-2017) nápovědu k další instalaci.
+* Postupujte podle pokynů [Průvodce instalací](/visualstudio/mac/installation) nápovědu k další instalaci.
 
 > [!NOTE]
 > Visual Studio for Mac Tools for Unity vyžaduje Unity verze 5.6.1 nebo vyšší. Chcete-li ověřit, že Visual Studio Tools for Unity jsou povoleny ve vaší verzi Unity, vyberte **o Unity** v nabídce Unity a hledejte text "Microsoft Visual Studio Tools for Unity povoleno" v levé dolní části dialogového okna.

@@ -3,103 +3,105 @@ title: Začínáme s ASP.NET Core
 description: Tento článek popisuje, jak začít pracovat s technologií ASP.NET v sadě Visual Studio pro Mac, včetně instalace a vytvoření nového projektu.
 author: conceptdev
 ms.author: crdun
-ms.date: 07/13/2017
+ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953755"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856791"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 
- Visual Studio pro Mac usnadňuje vývoj vaší aplikace služby s jeho podporu pro nejnovější platformy vývoj webové aplikace ASP.NET Core. ASP.NET Core běží na .NET Core, nejnovější vývoj rozhraní .NET Framework a modulu runtime. Má se vše vyladěno pro rychlý výkon, dostaneme pro malé instalace velikosti a znovu si představit ke spuštění na systému Linux a macOS i Windows.
+ Visual Studio pro Mac usnadňuje vývoj vaší aplikace služby s jeho podporu pro nejnovější platformy vývoj webové aplikace ASP.NET Core. ASP.NET Core běží na .NET Core, nejnovější vývoj rozhraní .NET Framework a modulu runtime. Má se vše vyladěno pro rychlý výkon, dostaneme pro malé instalace velikosti a směry ke spuštění na systému Linux a macOS i Windows.
 
 ## <a name="installing-net-core"></a>Instalace .NET Core
 
-.NET core 1.1 se automaticky nainstaluje při instalaci sady Visual Studio pro Mac.
+.NET core 2.1 je automaticky nainstalován při instalaci sady Visual Studio pro Mac.
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Vytvoření aplikace ASP.NET Core v sadě Visual Studio pro Mac
 
-Otevřít Visual Studio pro Mac. Na úvodní stránce vyberte **nový projekt...**
+Otevřít Visual Studio pro Mac. Na obrazovce Start vyberte **nový projekt...**
 
-![Dialogové okno nového projektu](media/asp-net-core-image1.png)
+![Dialogové okno nového projektu](media/asp-net-core-2019-new-asp-core.png)
 
 Zobrazí se dialogové okno Nový projekt, což vám umožní vybrat šablonu pro vytvoření vaší aplikace.
 
 Existuje mnoho projektů, které vám poskytne předem připravené šablony, abyste mohli začít vytvářet vaše aplikace ASP.NET Core. Toto jsou:
 
-- **.NET core > prázdná webová aplikace ASP.NET Core**
-- **.NET core > webové aplikace ASP.NET Core**
-- **.NET core > webového rozhraní API ASP.NET Core**
-- **Multiplatformní > aplikace > připojené aplikace**
+- **.NET core > prázdný**
+- **.NET Core > API**
+- **.NET core > Webová aplikace**
+- **.NET core > Webová aplikace (Model-View-Controller)**
 
-![Možnosti projektu ASP.NET](media/asp-net-core-image11.png)
+![Možnosti projektu ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
 Vyberte **prázdná webová aplikace ASP.NET Core** a stiskněte klávesu **Další**. Dejte projektu název a stiskněte klávesu **vytvořit**. Tím se vytvoří nové aplikace ASP.NET Core, který by měl vypadat podobně jako na následujícím obrázku:
 
-![Nové zobrazení prázdný projekt ASP.NET Core](media/asp-net-core-image4.png)
+![Nové zobrazení prázdný projekt ASP.NET Core](media/asp-net-core-2019-empty-project.png)
 
-ASP.NET Core prázdná webová aplikace vytvoří webovou aplikaci se dvěma výchozí soubory: **Soubor program.cs** a **Startup.cs**, což je vysvětleno níže. Také vytvoří složku, závislosti, která obsahuje závislosti balíčku NuGet projektu, jako je ASP.NET Core, .NET Core framework a cíle nástroje MSBuild, které se projekt sestavil:
+ASP.NET Core prázdné šablony vytvoří webovou aplikaci se dvěma výchozí soubory: **Soubor program.cs** a **Startup.cs**, což je vysvětleno níže. Také vytvoří složku, závislosti, která obsahuje závislosti balíčku NuGet projektu, jako je ASP.NET Core, .NET Core framework a cíle nástroje MSBuild, které se projekt sestavil:
 
-![Zobrazení závislostí oblasti řešení](media/asp-net-core-image12.png)
+![Zobrazení závislostí oblasti řešení](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
-Otevřít a zkontrolovat **Program.cs** souboru ve vašem projektu. Všimněte si, že se dějí dvě věci v `Main` metoda – záznam do vaší aplikace:
+Otevřít a zkontrolovat **Program.cs** souboru ve vašem projektu. Všimněte si, že několik věcí probíhají `Main` metoda – záznam do vaší aplikace:
 
 ```csharp
-public static void Main(string[] args)
-{
-    var host = new WebHostBuilder()
-        .UseKestrel()
-        .UseContentRoot(Directory.GetCurrentDirectory())
-        .UseIISIntegration()
-        .UseStartup<Startup>()
-        .Build();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateWebHostBuilder(args).Build().Run();
+        }
 
-    host.Run();
-}
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
+    }
 ```
 Aplikace ASP.NET Core vytvoří webový server v jeho hlavní metoda konfigurací a spuštění hostitele prostřednictvím instance [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Tato Tvůrce poskytuje metody, které umožňují hostitele nakonfigurovat. V aplikaci šablony jsou použité následující konfigurace:
+
+* `.UseStartup<Startup>()`: Určuje třídu pro spuštění.
+
+Ale můžete také přidat další konfigurace, jako například:
 
 * `UseKestrel`: Určuje, že Kestrel server budou používat aplikaci
 * `UseContentRoot(Directory.GetCurrentDirectory())`: Jako obsah kořenové aplikace používá kořenové složce webového projektu při spuštění aplikace z této složky
 * `.UseIISIntegration()`: Určuje, že aplikace by měla fungovat se službou IIS. Použití služby IIS s ASP.NET Core `UseKestrel` a `UseIISIntegration` musí být zadána.
-* `.UseStartup<Startup>()`: Určuje třídu pro spuštění.
-
-  Metody sestavení a spuštění sestavení IWebHost, který bude hostitelem aplikace a spusťte ji naslouchá příchozím požadavkům HTTP.
 
 ### <a name="startupcs"></a>Startup.cs
 
-Třída po spuštění pro vaše aplikace je určena `UseStartup()` metodu `WebHostBuilder`. Je v této třídě, kterou specifikujete požadavku zpracování kanálu, a kde konfigurovat všechny služby.
+Třída po spuštění pro vaše aplikace je určena `UseStartup()` metodu `CreateWebHostBuilder`. Je v této třídě, kterou specifikujete požadavku zpracování kanálu, a kde konfigurovat všechny služby.
 
 Otevřít a zkontrolovat **Startup.cs** soubor v projektu:
 
 ```csharp
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
+    public class Startup
     {
-    }
-
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-    {
-        loggerFactory.AddConsole();
-
-        if (env.IsDevelopment())
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
         {
-            app.UseDeveloperExceptionPage();
         }
 
-        app.Run(async (context) =>
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            await context.Response.WriteAsync("Hello World!");
-        });
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World!");
+            });
+        }
     }
-}
 ```
 
 Tato třída při spuštění musí vždycky dodržovat následující pravidla:
@@ -117,13 +119,13 @@ Delegáty lze nakonfigurovat pomocí `Run`,`Map`, a `Use` metody `IApplicationBu
 
 Tento jednoduchý text Hello, World projektu můžete nyní spustit bez jakékoli další přidávaný kód. Spusťte aplikaci a zobrazit v prohlížeči, kliknutím na tlačítko Přehrát (triangulace) na panelu nástrojů:
 
-![Spuštění aplikace](media/asp-net-core-image5.png)
+![Spuštění aplikace](media/asp-net-core-2019-run-debug.png)
 
 Visual Studio pro Mac používá náhodný port spustit webový projekt. Chcete-li zjistit, co je to port je, otevřete výstup aplikace, která je uvedená v části **zobrazení > panely**. Výstup by měl najít podobný tomu vidíte níže:
 
 ![Výstup aplikace zobrazení port pro naslouchání](media/asp-net-core-image6.png)
 
-Otevřete prohlížeč zvolíte a zadejte `http://localhost:5000/`a nahraďte `5000` s portem, který výstupu sady Visual Studio ve výstupu aplikace. Měli byste vidět text `Hello World!`:
+Po spuštění projektu by měl ve webovém prohlížeči výchozí spuštění a připojení k adrese URL uvedená ve výstupu aplikace. Alternativně můžete otevřít libovolného prohlížeče podle vašeho výběru a zadat `http://localhost:5000/`a nahraďte `5000` s portem, který výstupu sady Visual Studio ve výstupu aplikace. Měli byste vidět text `Hello World!`:
 
 ![prohlížeč zobrazující text](media/asp-net-core-image7.png)
 
@@ -222,13 +224,13 @@ Chcete-li přidat kontroler, postupujte takto:
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 
-Pokud je potřeba nainstalovat sadu .NET Core ručně v Mac OS 10.11 (El Capitan) a vyšší, postupujte takto:
+Pokud je potřeba nainstalovat sadu .NET Core ručně v Mac OS 10.12 (Sierra) a vyšší, postupujte takto:
 
 1. Před zahájením instalace .NET Core, ujistěte se, že jste aktualizovali všechny aktualizace operačního systému na nejnovější stabilní verzi. Můžete to zkontrolovat, že přejdete do aplikace pro App Store a vyberete kartu aktualizace.
 
 2. Postupujte podle kroků uvedených v [webu .NET Core](https://www.microsoft.com/net/core#macos).
 
-Ujistěte se, že všechny čtyři kroky úspěšně zajistit úspěšné instalaci .NET Core.
+Ujistěte se, že jste dokončili všechny kroky úspěšně zajistit úspěšné instalaci .NET Core.
 
 ## <a name="summary"></a>Souhrn
 

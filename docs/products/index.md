@@ -5,6 +5,12 @@ title: Produkty Visual Studio | Dokumentace Microsoftu
 description: Prozkoumejte rodiny produktů Visual Studio.
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: e7a895b95c6f357fcab8674ae87296fa191ea856
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857292"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -48,7 +54,7 @@ searchScope: []
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio for Mac</h3>
-                                                    <p>Vytvářejte aplikace a hry pomocí Mac, pro cloud, iOS, Android, macOS a přenosná zařízení.</p>
+                                                    <p>Vývoj aplikací a her pro iOS, Android, desktop a web pomocí rozhraní .NET.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,7 +119,7 @@ searchScope: []
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/devops/" title="Služby Azure DevOps">
+                                <a href="/azure/devops/" title="Azure DevOps Services">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

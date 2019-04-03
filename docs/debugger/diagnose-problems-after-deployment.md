@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316883"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857772"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostika problémů po nasazení pomocí nástroje IntelliTrace (C#, Visual Basic)
 
@@ -40,7 +40,7 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
 
 ####  <a name="TFS2017"></a> Azure DevOps a Team Foundation Server 2017
 
-Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaralý a potom se odeberou. Ladění webových aplikací ASP.NET po nasazení, použijte jednu z následujících metod:
+Visual Studio 2017 a novějších verzích nejsou zahrnuté *BuildInfo.config* soubor, který je zastaralý a potom se odeberou. Ladění webových aplikací ASP.NET po nasazení, použijte jednu z následujících metod:
 
 * Pro nasazení do Azure, použijte [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
@@ -168,7 +168,7 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
 1.  Otevřete protokol nástroje IntelliTrace (soubor .iTrace) z Visual Studio Enterprise. Nebo stačí dvakrát klikněte na soubor, pokud máte Visual Studio Enterprise ve stejném počítači.
 
-2.  Zvolte **otevřete řešení** mít Visual Studio automaticky otevřela odpovídající řešení nebo projekt, pokud projekt nebyl vytvořen jako součást řešení. [DOTAZ: Protokol nástroje IntelliTrace neobsahuje informace o mé nasazené aplikaci. Proč k tomu? Co mám dělat?](#InvalidConfigFile)
+2.  Zvolte **otevřete řešení** mít Visual Studio automaticky otevřela odpovídající řešení nebo projekt, pokud projekt nebyl vytvořen jako součást řešení. [DOTAZ: Protokol nástroje IntelliTrace neobsahuje informace o mé nasazené aplikaci. Proč k tomu? Co mám udělat?](#InvalidConfigFile)
 
      Automaticky odloží sada Visual Studio všechny čekající změny při otevření odpovídajícího řešení nebo projektu. Chcete-li získat další podrobnosti o této sadě odložených změn, podívejte **výstup** okno nebo **Team Exploreru**.
 
@@ -215,7 +215,7 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
      Nyní můžete zkontrolovat další zaznamenané hodnoty, zásobník volání, procházet kódem nebo použít **IntelliTrace** okno [přesune zpět nebo vpřed "v čase" mezi ostatními metodami](../debugger/intellitrace.md) , které byly volány během této události výkonu.
 
     - [Co je všechny tyto další události a informace v protokolu nástroje IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
-    - [Co dalšího můžete mohu ještě udělat?](#WhatElse)
+    - [Co víc mohu ještě udělat?](#WhatElse)
     - [Přečtěte si další informace o událostech výkonu?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Diagnostikování výjimky
@@ -270,7 +270,7 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
   ```
 
-- **SourceControl**
+- **Správa zdrojových kódů**
 
 - Informace o systému správy zdrojů a tyto požadované vlastnosti:
 

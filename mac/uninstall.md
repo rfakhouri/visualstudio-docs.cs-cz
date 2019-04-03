@@ -1,17 +1,17 @@
 ---
-title: Odinstalace sady Visual Studio pro Mac
+title: Uninstall Visual Studio for Mac
 description: Pokyny k odinstalaci sady Visual Studio pro Mac a související nástroje.
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204330"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856444"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalace sady Visual Studio pro Mac
 
@@ -76,7 +76,7 @@ Spusťte skript, proveďte následující kroky:
     ```
 4. Nakonec odstraňte skript pro odinstalaci .NET Core.
 
-## <a name="uninstall-visual-studio-for-mac"></a>Odinstalace sady Visual Studio pro Mac
+## <a name="uninstall-visual-studio-for-mac"></a>Uninstall Visual Studio for Mac
 
 Prvním krokem při odinstalaci sady Visual Studio na macu, je nalezení **Visual Studio.app** v **/Applications** adresáře a přetáhněte ji do **koše**. Alternativně klepněte pravým tlačítkem myši a vyberte **přesunout do koše** jak je znázorněno na následujícím obrázku:
 
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 Můžete také odebrat následující adresáře, který obsahuje různé Xamarin soubory a složky. Nicméně než se pustíte do byste měli vědět, že tento adresář obsahuje Android podpisových klíčů. Další informace najdete v části  **[odinstalaci sady Android SDK a sady Java SDK](#uninstall-android-sdk-and-java-sdk)**:
@@ -121,7 +122,7 @@ sudo pkgutil --forget com.xamarin.mono-MDK.pkg
 sudo rm -rf /etc/paths.d/mono-commands
 ```
 
-## <a name="uninstall-xamarinandroid"></a>Odinstalujte Xamarin.Android
+## <a name="uninstall-xamarinandroid"></a>Uninstall Xamarin.Android
 
 Existuje několik položek, které jsou potřebné pro instalaci a použití Xamarin.Android, jako jsou sady Android SDK a sady Java SDK.
 
@@ -160,7 +161,7 @@ Chcete-li odebrat jenom Android Avd použijte následující příkaz:
 rm -rf ~/.android/avd
 ```
 
-## <a name="uninstall-xamarinios"></a>Odinstalujte Xamarin.iOS
+## <a name="uninstall-xamarinios"></a>Uninstall Xamarin.iOS
 
 Xamarin.iOS umožňuje vývoj pro iOS aplikace s využitím C# nebo F# pomocí sady Visual Studio pro Mac.
 
@@ -216,6 +217,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Odinstalace Visual Studio 2019 for Mac Preview
+
+2019 Visual Studio for Mac Preview byl spuštěn jako samostatné verze preview, abyste mohli pokračovat v práci s Visual Studio 2017 for Mac nainstalovat vedle sebe.
+
+Teď, když vydala 2019 Visual Studio pro Mac teď můžete bezpečně odebrat Visual Studio 2019 aplikace Mac ve verzi Preview.
+
+Odinstalace sady prostředků aplikace ve verzi preview, vyberte **sady Visual Studio (Preview)** z vaší **aplikací** složky a klikněte na tlačítko **přesunout do koše**, jak je znázorněno v následujícím Obrázek:
+
+![Výběrem možnosti "přesunout do koše" ve Finderu.](media/uninstall-remove-vspreview.png)
+
+Můžete také odebrat náhled souboru plist pomocí následujícího příkazu:
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>Viz také:

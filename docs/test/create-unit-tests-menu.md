@@ -1,6 +1,6 @@
 ---
 title: Vytvoření zástupné procedury metodu testu jednotek
-ms.date: 05/02/2017
+ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,32 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982763"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857720"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Metoda zástupné procedury s příkaz Vytvořit testy jednotek pro testování částí Create
 
-Visual Studio **vytvořit testy jednotek** příkaz poskytuje možnost vytvořit jednotku zástupné procedury testovací metody. Tato funkce umožňuje snadno konfigurace testovacího projektu, testovací třídy a pahýl metody testu v rámci něj.
+**Vytvořit testy jednotek** příkaz vytvoří jednotku zástupné procedury testovací metody. Tato funkce umožňuje snadno konfigurace testovacího projektu, testovací třídy a pahýl metody testu v rámci něj.
 
-## <a name="availability-and-extensions"></a>Dostupnost a rozšíření
+> [!NOTE]
+> **Vytvořit testy jednotek** příkazu nabídky je dostupná pouze pro spravovaný kód, který cílí na rozhraní .NET Framework (ale ne .NET Core).
 
-**Vytvořit testy jednotek** příkazu nabídky:
-
-* Je k dispozici v Community, Professional a Enterprise edice sady Visual Studio 2015 a novější.
-
-* Podporuje pouze kód jazyka C#, který cílí na .NET Framework.
-
-* Je možné rozšířit a podporuje generování testů MSTest, nástroji MSTest V2, NUnit, xUnit formátu.
-
-* Ještě není k dispozici v projektech .NET Core.
+**Vytvořit testy jednotek** příkazu nabídky je možné rozšířit a může sloužit ke generování testů pro MSTest, nástroji MSTest V2, xUnit a NUnit.
 
 ## <a name="get-started"></a>Začínáme
 
-Abyste mohli začít, vyberte metodu, typ nebo obor názvů v editoru kódu v projektu, kterou chcete testovat, otevřete místní nabídku a zvolte **vytvořit testy jednotek**. **Vytvořit testy jednotek** otevře se dialogové okno, které je možné vybrat možnosti vytvoření nové jednotkové testy.
+Chcete-li začít, vyberte metodu, typ nebo obor názvů v editoru kódu v projektu, které chcete testovat, klikněte pravým tlačítkem a pak zvolte **vytvořit testy jednotek**. **Vytvořit testy jednotek** otevře dialogové okno, kde můžete nakonfigurovat způsob, jak mají být testy mají být vytvořeny.
 
 ![Pomocí příkazu Vytvořit testy jednotek](media/createunittestcommand.png)
 
@@ -46,34 +39,16 @@ Pokud budete chtít spustit tyto testy jako součást procesu automatizace test�
 
 ## <a name="use-third-party-unit-test-frameworks"></a>Použití rozhraní pro testování jednotky třetí strany
 
-Pomocí sady Visual Studio můžete snadno mít vytvořené pomocí libovolné rozhraní testování částí. Chcete-li nainstalovat další rozhraní pro testování:
+Automatické generování testů jednotek pro NUnit a xUnit, nainstalujte některou z následujících přípon framework testu z webu Visual Studio Marketplace:
 
-::: moniker range="vs-2017"
-
-1. Zvolte **nástroje** > **rozšíření a aktualizace**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Zvolte **rozšíření** > **spravovat rozšíření**.
-
-::: moniker-end
-
-2. Rozbalte **Online** > **Visual Studio Marketplace** > **nástroje**a klikněte na tlačítko **testování**.
-
-![Pomocí rozhraní pro testování třetích stran](media/createunittestfx.png)
-
-Testovací rozhraní framework rozšíření jsou k dispozici v aplikaci Visual Studio Marketplace:
-
-* [NUnit rozšíření pro generátory testu](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
-* [rozšíření xUnit.net pro generátory testu](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+* [NUnit rozšíření pro test generátory](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [xUnit.net rozšíření pro test generátory](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 ## <a name="when-should-i-use-this-feature"></a>Kdy použít tuto funkci?
 
-Tuto funkci použít vždy, když je potřeba vytvořit testy jednotek, ale specificky při testování existující kód, který má žádné nebo téměř žádné pokrytí testu a žádná dokumentace. Jinými slovy ve kterých je specifikace omezené nebo neexistující kódu. Efektivně implementuje podobný přístup [inteligentní testování částí](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) , které charakterizují zjištěnou chování kódu.
+Tuto funkci použít vždy, když je potřeba vytvořit testy jednotek, ale specificky při testování existující kód, který má žádné nebo téměř žádné pokrytí testu a žádná dokumentace. Jinými slovy ve kterých je specifikace omezené nebo neexistující kódu. Efektivně implementuje podobný přístup [inteligentní testování částí](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) , který charakterizuje zjištěnou chování kódu.
 
-Tato funkce je však vztahuje rovněž na situaci, kdy vývojář spustí napsáním nějakého kódu a, který používá ke spuštění testování disciplíny. Ve službě flow kódování může být vhodné Vývojář můžete rychle vytvořit jednotku testovací metoda zástupnou proceduru (s vhodné testovací třídy a vhodný testovacího projektu) pro konkrétní část kódu.
+Tato funkce je však vztahuje rovněž, když vývojář začíná napsáním nějakého kódu a pak, který používá ke spuštění testů jednotek. Ve službě flow kódování může být vhodné vývojáře k rychlému vytvoření jednotky testovací metoda zástupnou proceduru (s vhodné testovací třídy a vhodný testovacího projektu) pro konkrétní část kódu.
 
 ## <a name="see-also"></a>Viz také:
 

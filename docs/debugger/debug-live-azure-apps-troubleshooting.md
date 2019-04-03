@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2213c1e573efa1811d3b578c3d7bd92f1b77f2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526410"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857759"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro ladění snímků v sadě Visual Studio
 
@@ -60,8 +60,8 @@ Proveďte tyto kroky:
 - Ujistěte se, že se vaše aplikace podporuje:
   - Azure App Services - aplikací ASP.NET běžících na rozhraní .NET Framework 4.6.1 nebo novější.
   - Azure App Service – aplikace ASP.NET Core na .NET Core 2.0 nebo novější na Windows.
-  - Azure Virtual Machines (a VMSS) - aplikací ASP.NET běžících na rozhraní .NET Framework 4.6.1 nebo novější.
-  - Azure Virtual Machines (a VMSS) – aplikace ASP.NET Core na .NET Core 2.0 nebo novější na Windows.
+  - Virtuální počítače Azure (a škálovací sady virtuálních počítačů) - aplikací ASP.NET běžících na rozhraní .NET Framework 4.6.1 nebo novější.
+  - Virtuální počítače Azure (a škálovací sady virtuálních počítačů) - aplikací ASP.NET Core na .NET Core 2.0 nebo novější na Windows.
   - Služby Azure Kubernetes – aplikace ASP.NET Core spuštěné v .NET Core 2.2 nebo vyšší na Debian 9.
   - Služby Azure Kubernetes – aplikace ASP.NET Core spuštěné v .NET Core 2.2 nebo vyšší na Alpine 3.8.
   - Služby Azure Kubernetes – aplikace ASP.NET Core spuštěné v .NET Core 2.2 nebo vyšší na Ubuntu 18.04.
@@ -74,6 +74,51 @@ Proveďte tyto kroky:
 Proveďte tyto kroky:
 
 - Snímky spotřebovávat málo paměti, ale máte poplatek za potvrzení. Pokud ladicí program snímků zjistí, že je server v paměti v případě velkého zatížení, nepořizuje snímky. Zastavuje se relace ladicího programu snímků a zkusit to znovu, můžete odstranit již zachycené snímky.
+
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problém: Ladění snímků s více verzemi nástroje Visual Studio, mi dává pocit chyby
+
+VS 2019 vyžaduje novější verzi rozšíření pro Snapshot Debugger web ve službě Azure App Service.  Tato verze není kompatibilní s starší verze rozšíření pro Snapshot Debugger web používá sady VS 2017.  Pokud se pokusíte připojit Snapshot Debugger ve VS 2019 do služby Azure App Service, který byl dříve ladit pomocí ladicího programu snímků v sadě VS 2017 se zobrazí následující chyba:
+
+![Nekompatibilní rozšíření webu pro Snapshot Debugger VS 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "rozšíření webu nekompatibilní Snapshot Debugger VS 2019")
+
+Naopak pokud připojit Snapshot Debugger do Azure App Service, která byla dříve ladit pomocí ladicího programu snímků ve VS 2019 pomocí sady VS 2017, zobrazí se vám následující chybu:
+
+![Nekompatibilní rozšíření webu pro Snapshot Debugger sady VS 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "rozšíření webu nekompatibilní Snapshot Debugger VS2017")
+
+Chcete-li tento problém vyřešit, odstraňte následující nastavení aplikace na webu Azure Portal a znovu připojit Snapshot Debugger:
+
+- INSTRUMENTATIONENGINE_EXTENSION_VERSION
+- SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problém: Mám potíže s ladění snímků a je potřeba povolit další protokolování
+
+### <a name="enable-agent-logs"></a>Povolení protokolování agenta
+
+Povolení a zakázání agenta protokolování otevřít Visual Studio přejděte do *nástroje > Možnosti > Snapshot Debugger > Povolit agenta protokolování*. Poznámka: Pokud *odstranit starý agent zaznamená při spuštění relace* je také povolena, každý úspěšné sady Visual Studio připojit se odstranit protokoly předchozích agenta.
+
+Protokoly agenta najdete v následujících umístěních:
+
+- App Services:
+  - Přejděte na Web App Service Kudu (to znamená, yourappservice. **Správce řízení služeb**. azurewebsites.net) a přejděte do konzoly ladění.
+  - Protokoly agenta se ukládají v následujícím adresáři:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+- VM/VMSS:
+  - Přihlaste se ke svému virtuálnímu počítači agenta, které protokoly se ukládají následujícím způsobem:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+- AKS
+  - Přejděte na následující adresář: / tmp/diag/AgentLogs / *
+
+### <a name="enable-profilerinstrumentation-logs"></a>Povolení protokolů Profiler/instrumentace
+
+Instrumentace protokoly najdete v následujících umístěních:
+
+- App Services:
+  - Protokolování chyb je automaticky odeslán do D:\Home\LogFiles\eventlog.xml, události jsou označené << název zprostředkovatele = "Instrumentace modul" / / >> nebo "Produkční zarážky"
+- VM/VMSS:
+  - Přihlaste se ke svému virtuálnímu počítači a otevřete Prohlížeč událostí.
+  - Otevřete následujícím způsobem: *Protokoly Windows > aplikace*.
+  - *Filtrovat aktuální protokol* podle *zdroj události* buď pomocí *produkční zarážky* nebo *instrumentace modul*.
+- AKS
+  - Instrumentace modul protokolování na /tmp/diag/log.txt (nastavit MicrosoftInstrumentationEngine_FileLogPath v souboru DockerFile)
+  - Protokolování ProductionBreakpoint na /tmp/diag/shLog.txt
 
 ## <a name="known-issues"></a>Známé problémy
 

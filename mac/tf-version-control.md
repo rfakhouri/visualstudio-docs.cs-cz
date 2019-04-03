@@ -7,19 +7,19 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1d560e3fd383e3db19c664bf027470c8da224fd2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295927"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856700"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí
 
 > [!NOTE]
 > Podpora Team Foundation – správa verzí je aktuálně ve verzi preview a některé funkce není dosud plně funkční. Jsme rádi, zpětnou vazbu od vás na všechny problémy na [komunity vývojářů](https://developercommunity.visualstudio.com/spaces/41/index.html). Další změny jsou stále chystá!
 
-Úložiště Azure poskytuje dva modely správy verzí: Git, který je distribuován správy verzí a Team Foundation verze ovládacího prvku (TFVC), což je centralizovaná správa verzí. Tento článek obsahuje přehled a výchozí bod pro TFVC pomocí sady Visual Studio pro Mac.
+Úložiště Azure nabízí dva modely správy verzí: Git, který je distribuován správy verzí a Team Foundation verze ovládacího prvku (TFVC), což je centralizovaná správa verzí. Tento článek obsahuje přehled a výchozí bod pro TFVC pomocí sady Visual Studio pro Mac.
 
 ## <a name="requirements"></a>Požadavky
 
@@ -42,8 +42,6 @@ Aktualizace rozšíření TFVC probíhají pravidelně. Přístup k aktualizace,
 ![Aktualizace zobrazení Správce rozšíření](media/tfvc-update.png)
 
 Stisknutím klávesy **nainstalovat** v dalším dialogovém okně starý balíček odinstalovat a nainstalovat nové.
-
-Informace o tom, co je nového v jednotlivých verzích, najdete v článku [poznámky k verzi](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Pomocí doplňku
 
@@ -155,7 +153,7 @@ Tyto možnosti lze použít k ověření serveru:
 
 - OAuth
 - Základní
-- NTLM
+- Ntlm
 
 Základní ověřování je nutná pro povolení **přihlašovací údaje pro alternativní ověření** ve službách Azure DevOps, pomocí následujících kroků:
 

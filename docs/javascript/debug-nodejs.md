@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1b7d9513bcb86dfdff814adddb35bdaf741ebe02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647424"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856590"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Ladění aplikací v jazyce JavaScript nebo TypeScript v sadě Visual Studio
 
 Můžete ladit JavaScript a TypeScript kódu pomocí sady Visual Studio. Můžete nastavit a dosažení zarážky, připojení ladicího programu, kontrolovat proměnné, zobrazení zásobníku volání a používat další funkce ladění.
 
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Ladění skriptů na straně serveru
 
@@ -106,7 +106,7 @@ Připojit ladicí program sady Visual Studio a dosažení zarážky v kódu na s
     * Pokud potřebujete proniknout do kódu v souboru jazyka JavaScript transpiled (například *aplikace bundle.js*) a nemůžou to udělat, odeberte soubor zdrojového mapování *filename.js.map*.
 
      > [!TIP]
-     > Po prvním připojení k procesu podle tohoto postupu se v sadě Visual Studio 2017 můžete rychle znovu připojit ke stejnému procesu tak, že zvolíte **Ladit** > **Znovu připojit k procesu**.
+     > Po připojení k procesu první přihlášení pomocí následujících kroků, můžete rychle znovu připojit do stejného procesu výběrem **ladění** > **znovu připojit k procesu**.
 
 ## <a name="generate_sourcemaps"></a> Generovat zdrojová mapování pro ladění
 

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987653"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856403"
 ---
 # <a name="enable-subscription"></a>Povolit odběr
 
@@ -40,9 +40,9 @@ V současné době neexistuje žádný způsob, jak využít kód product key pr
 
 > [!NOTE]
 > Offline aktivace není k dispozici pro sadu Visual Studio pro Mac.
-> Visual Studio 2017 for Mac Professional nebo Enterprise předplatné aktivovat, musíte být připojeni k Internetu při přihlášení.
+> K aktivaci vaší. 2019 Visual Studio pro Mac Professional nebo Enterprise předplatné, musíte být připojeni k Internetu při přihlášení.
 
-Pokud jste si koupili Visual Studio Enterprise 2017 for Mac pro počítače bez připojení k Internetu, můžete dál používat Visual Studio pro Mac bez aktivace, ale Xamarin Inspector Xamarin Profiler a nesmí být funkce vložená sestavení k dispozici.
+Pokud jste si koupili Visual Studio Enterprise 2019 for Mac pro počítače bez připojení k Internetu, můžete dál používat Visual Studio pro Mac bez aktivace, ale Xamarin Inspector Xamarin Profiler a nesmí být funkce vložená sestavení k dispozici.
 
 ## <a name="see-also"></a>Viz také:
 

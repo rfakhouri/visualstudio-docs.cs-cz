@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 321135c8b6a0d560ed04dabf57bde5a525e16430
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766096"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866777"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrovaný režim)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Prostředí sady Visual Studio integrované zahrnuje integrované vývojové pro
   
 -   Návrhář tříd  
   
--   Preemptivní řešení DotFuscator  
+-   PreEmptive ochranu – řešení Dotfuscator  
   
 -   Jazykové funkce  
   

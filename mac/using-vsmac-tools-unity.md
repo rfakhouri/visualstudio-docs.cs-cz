@@ -1,16 +1,16 @@
 ---
 title: Pomocí sady Visual Studio for Mac Tools for Unity
 description: Tato příručka popisuje, jak pomocí sady Visual Studio for Mac Tools pro Unity rozšíření
-author: dantogno
-ms.author: v-davian
-ms.date: 07/17/2017
+author: therealjohn
+ms.author: johmil
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348927"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857005"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Pomocí sady Visual Studio for Mac Tools for Unity
 
@@ -103,6 +103,13 @@ Spuštění ladění:
 
 3. Neopravňují hry v Unity editoru připojeny k sadě Visual Studio budou všechny zarážky, došlo k pozastavení provádění hry a otevřete řádek kódu, kde hru zarážce v sadě Visual Studio pro Mac.
 
+
+### <a name="start-debugging-in-a-single-step"></a>Spuštění ladění jedním krokem.
+
+Počáteční ladění a přehrávání Unity editoru lze dokončit v jediném kroku přímo ze sady Visual Studio pro Mac výběrem **připojit k Unity a hrát** konfigurace.
+
+![Vyberte připojit k Unity a hrát](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>Zastavit ladění
 
 Chcete zastavit ladění:
@@ -110,5 +117,8 @@ Chcete zastavit ladění:
 1. Klikněte na tlačítko **Zastavit** v sadě Visual Studio pro Mac, nebo stiskněte tlačítko **Shift + příkaz + Return**.
 
    ![Klikněte na tlačítko Zastavit ve Visual Studiu](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> Pokud jste začali ladění pomocí **připojit k Unity a hrát** konfigurace, **Zastavit** tlačítka se zastaví také v Unity.
 
 Další informace o ladění v sadě Visual Studio for Mac najdete v tématu [pomocí ladicího programu](debugging.md).

@@ -3,14 +3,14 @@ title: Přihlášení k sadě Visual Studio pro Mac
 description: Jak se přihlásit k sadě Visual Studio pro Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: e34a1a65e168b92f5002fc52586cae8967b46d3a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953872"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857460"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Přihlaste se k sadě Visual Studio pro Mac
 
@@ -24,7 +24,7 @@ Ujistěte se, že jste připojeni k Internetu před přihlášením k aplikaci V
 
 Přihlásit se k sadě Visual Studio pro Mac, proveďte následující kroky:
 
-1. Klikněte na tlačítko **přihlášení** odkaz na úvodní stránce zobrazíte dialogové okno účty a stiskněte klávesu **Sign In** tlačítko:
+1. Klikněte na tlačítko **přihlásit se účtem Microsoft** tlačítko v přihlašovacím okně:
 
     ![Dialogové okno účty v sadě Visual Studio pro Mac](media/signing-in-image12.png)
 
@@ -34,7 +34,7 @@ Přihlásit se k sadě Visual Studio pro Mac, proveďte následující kroky:
 
     Xamarin pověření nelze použít k přihlášení do sady Visual Studio pro Mac.
 
-3. Poté, co jste přihlášeni, zobrazí se vám váš typ licence. Z tohoto dialogového okna můžete přidat další účty Microsoft, které je vhodné použít:
+3. Poté, co jste přihlášeni, zobrazí se vám Visual Studio 2019 pro Mac počáteční okno. Z tohoto místa můžete otevřít nebo vytvořit nový projekt:
 
     ![Úspěšné přihlášení.](media/signing-in-image14.png)
 
@@ -42,7 +42,9 @@ Přihlásit se k sadě Visual Studio pro Mac, proveďte následující kroky:
 
 Visual Studio for Mac podporuje přidání více účtů vaším účtem přizpůsobení. Tyto další účty vám umožní přístup k prostředkům, jako je Azure, z libovolného přidání účtu.
 
-Pokud chcete přidat další uživatelské účty, postupujte podle kroků v [postup přihlášení k sadě Visual Studio pro Mac](#how-to-sign-in-to-visual-studio-for-mac) oddílu.
+Chcete-li přidat další uživatelské účty, zvolte **sady Visual Studio > účet...**  nabídky ze sady Visual Studio pro Mac. Klikněte na tlačítko **přidat...**  tlačítko a zadejte přihlašovací údaje účtu Další.
+
+![Správa účtů](media/signing-in-image15.png)
 
 ## <a name="see-also"></a>Viz také:
 

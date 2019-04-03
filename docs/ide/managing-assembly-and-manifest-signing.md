@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7d9c5b063b05698480f1cb193078a6af2a6749
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790885"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866689"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Správa podepsání sestavení a manifestu
 
@@ -31,7 +31,7 @@ Informace o podepisování sestavení v projektech Visual Basic a C# najdete v t
 Informace o podepisování sestavení v projektech Visual C++, naleznete v tématu [sestavení se silným názvem (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> Podepisování silným názvem neposkytuje ochranu proti zpětné analýzy sestavení. K ochraně proti zpětné analýzy, najdete v článku [nástroj Dotfuscator Community Edition (CE)](dotfuscator/index.md).
+> Podepisování silným názvem neposkytuje ochranu proti zpětné analýzy sestavení. K ochraně proti zpětné analýzy, najdete v článku [nástroj Dotfuscator Community](dotfuscator/index.md).
 
 ## <a name="asset-types-and-signing"></a>Typy prostředků a podepisování
 

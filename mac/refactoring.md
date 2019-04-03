@@ -1,17 +1,17 @@
 ---
 title: Refaktoring kódu
-description: Opětovné uspořádání kódu v sadě Visual Studio for Mac je jednodušší prostřednictvím analýzy zdroje.
+description: Ladění kódu pomocí sady Visual Studio pro Mac a rychlé akce.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335386"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856512"
 ---
 # <a name="refactoring"></a>Refaktoring
 
@@ -23,25 +23,45 @@ Visual Studio pro Mac integrace roslyn společnosti Microsoft open-source platfo
 
 ## <a name="renaming"></a>Přejmenování
 
-*Přejmenovat* refaktoring příkaz lze použít na libovolný identifikátor kódu (například název třídy, název vlastnosti atd.) a vyhledejte všechny výskyty daného identifikátoru je změnit. Přejmenování symbolu, klepněte na něj pravým tlačítkem myši a zvolte **Refaktorovat > přejmenujte**, nebo **Cmd + R** vazba klíče:
+*Přejmenovat* refaktoring příkaz lze použít na libovolný identifikátor kódu (například název třídy, název vlastnosti atd.) a vyhledejte všechny výskyty daného identifikátoru je změnit. Přejmenování symbolu, klepněte na něj pravým tlačítkem myši a zvolte **přejmenování...** , nebo použijte **Cmd (⌘) + R** vazba klíče:
 
 ![Přejmenování položky nabídky](media/refactoring-renaming1.png)
 
-To klade důraz na symbol a všechny odkazy na něj. Když začnete psát název nové automaticky změní všechny odkazy ve vašem kódu a mohou signalizovat vaše dokončení přejmenování stisknutím kombinace kláves **Enter**:
+To klade důraz na symbol a všechny odkazy na něj. Když spustíte zadáním nového názvu se automaticky změní všechny odkazy ve vašem kódu a změny můžete potvrzovat stisknutím kombinace kláves **Enter**:
 
 ![Přejmenování a identifikátor](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>Kontext akce
+## <a name="quick-actions"></a>Rychlé akce
 
-Kontext akce umožňují kontrolovat veškerý kód jazyka C# a zobrazit všechny možnosti refaktoringu.
+Rychlé akce vám umožní snadno Refaktorujte, generovat nebo jinak upravit kód pomocí jedné akce.
 
-**Vyřešit** a **Refaktorovat** kontext položky jsou sloučeny do jediné *Rychlá oprava...*  položku, zobrazí se všechny dostupné akce kontextu:
+Rychlé akce umožňuje:
+
+* Použít opravu kódu pro porušení pravidel analyzátor kódu
+* Potlačit porušení pravidla analyzátor kódu
+* Použít refaktoring (například vložená dočasná proměnná)
+* Generování kódu (například přidání místní proměnné)
+
+Rychlé akce lze použít pomocí žárovky ![ikonou žárovky](media/quick-actions-light-bulb-icon.png) nebo šroubovák ![šroubovák ikonu](media/quick-actions-screwdriver-icon.png) ikony, nebo stisknutím klávesy **možnost (⌥)** +  **Zadejte** když je kurzor na řádek kódu, pro který je k dispozici akci. Zobrazí se žárovka chyba ![ikonu žárovky chyby](media/quick-actions-error-light-bulb-icon.png) pokud existuje červená vlnovka udávající chybu a sady Visual Studio je k dispozici pro tuto chybu opravu.
+
+Pro libovolný jazyk třetím stranám poskytnete vlastní Diagnostika a návrhy, například jako součást sady SDK a sady Visual Studio návrhy bylo možné na základě těchto pravidel.
+
+### <a name="quick-action-icons"></a>Rychlé akce ikony
+Ikona, která se zobrazí, když je k dispozici je rychlá akce obsahuje údaj o typu opravu, nebo refaktoring, který je k dispozici. *Šroubovák* ![šroubovák ikonu](media/quick-actions-screwdriver-icon.png) ikona značí pouze, že nejsou k dispozici pro kód změnit akce, ale byste je neměli používat nemusí. *Žlutá žárovka* ![ikonou žárovky](media/quick-actions-light-bulb-icon.png) ikona značí, že jsou k dispozici akce, které jste *by měl* proveďte ke zlepšení kódu. *Chyba žárovky* ![ikonou žárovky chyba](media/quick-actions-error-light-bulb-icon.png) ikona značí, že je k dispozici akci, která řeší chybu v kódu.
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>Pokud chcete zobrazit návrhy nebo šroubovák
+
+- Pokud je k dispozici oprava, návrhy samovolně se zobrazí při najetí myší na umístění k chybě.
+
+   ![Žárovka s najede myší](media/refactoring-lightbulb-hover.png)
+
+- Ikony žárovky šroubováky zobrazí a do levého okraje editoru při přesunutí blikající kurzor do jediného řádku kódu, pro který je k dispozici rychle reagovat.
+
+- Stisknutím klávesy **možnost (⌥)**+**Enter** kdekoli na řádek zobrazíte seznam dostupných rychlé akce a refaktoringy.
 
 ![Zobrazit kontext položky](media/refactoring-context-action.png)
 
 Najetí myší nad kontext akce, které poskytuje náhled co budou přidány nebo odstraněny z vašeho kódu.
-
-Alternativně můžete stisknout **Alt + Enter** kdekoli v kódu:
 
 ![Možnost zadat místní položky](media/refactoring-image2a.png)
 
@@ -53,47 +73,9 @@ Existuje více než 100 možných akcí, které mohou být navržena, které jso
 
 ![Zdrojová analýza C# akce](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>Běžné akce kontextu
+### <a name="common-quick-actions"></a>Běžné rychlé akce
 
-Některé z nejčastěji běžně používaných kontext akce, které jsou vysvětlené níže.
-
-#### <a name="extract-method"></a>Extrahování metody
-
-Operaci refaktoringu extrahovat metodu umožňuje vytvořit novou metodu extrahováním výběr kódu do existujícího člena. Tato akce provede dvě věci:
-
-* Vytvoří novou metodu obsahující vybraný kód
-* Na místě, kde byl vybraný kód volá novou metodu.
-
-##### <a name="example"></a>Příklad
-
-1. Přidejte následující kód:
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. Zvýrazněte řádek `double volume = (baseArea * height) / 3;`, klikněte na něj pravým tlačítkem myši a vyberte **Refaktorovat > extrahovat metodu**.
-
-3. Chcete-li vybrat novou metodu kterého mají být umístěny ve vašem kódu pomocí kláves se šipkami.
-
-#### <a name="encapsulate-field"></a>Zapouzdření pole
-
-Zapouzdřit pole operace umožňuje vytvoření vlastnosti z existujícího pole a aktualizuje váš kód tak, aby odkazovaly na nově vytvořený vlastnost. Vytvořením vlastnost, která zapouzdřuje pole jsou zákaz přímý přístup k veřejné pole, to znamená, že další objekty nelze změnit.
-
-Tato akce provede následující:
-
-* Modifikátor přístupu se změní na soukromý.
-* Generuje metodu getter a setter pro pole (Pokud je toto pole je jen pro čtení, v takovém případě se pouze vytvoří getter).
+Další informace o běžné rychlé akce v [běžné rychlé akce](/visualstudio/ide/common-quick-actions) článku.
 
 ## <a name="source-analysis"></a>Zdrojová analýza
 
