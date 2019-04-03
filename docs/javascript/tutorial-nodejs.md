@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d10f2827debf13b2fb63923e0e356032afbb8bcd
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790833"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897709"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a Express aplikace v sadě Visual Studio
 
@@ -204,7 +204,12 @@ Budete dále spusťte aplikaci v ladicím programu sady Visual Studio připojen�
 
 1. Vyberte cíl ladění na panelu nástrojů ladění, jako je například Microsoft Edge nebo Chrome.
 
+    ::: moniker range=">=vs-2019"
+    ![Vyberte cíl ladění](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Vyberte cíl ladění](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     Pokud je k dispozici na svém počítači Chrome, ale nezobrazí jako možnost, zvolte **procházet s** z rozevíracího seznamu cíl ladění a jako cíl výchozí prohlížeč vybrat Chrome (zvolte **nastavit jako výchozí**).
 

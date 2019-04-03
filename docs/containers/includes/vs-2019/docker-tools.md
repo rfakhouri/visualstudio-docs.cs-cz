@@ -7,19 +7,19 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: db11e23f56f6c7442768e84a731b28b095807220
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 0fb367256f818e4bfd6e73a226c9eea1edb8a6b6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57686046"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58872938"
 ---
 Pomocí sady Visual Studio můžete snadno vytvářet, ladit a spouštění kontejnerizovaných aplikací ASP.NET Core a publikujte je na Azure Container Registry (ACR), Docker Hub, Azure App Service nebo vlastního registru kontejneru. V tomto článku budeme publikovat do služby ACR.
 
 ## <a name="prerequisites"></a>Požadavky
 
 * [Desktop dockeru](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) s **vývoj pro Web**, **nástroje Azure** úlohy, a/nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) s **vývoj pro Web**, **nástroje Azure** úlohy, a/nebo **vývoj pro různé platformy .NET Core** nainstalovaná úloha
 * [Aktualizace 2.2 vývojové nástroje .NET core](https://dotnet.microsoft.com/download/dotnet-core/2.2) pro vývoj aplikací pomocí .NET Core 2.2
 * Chcete-li publikovat do služby Azure Container Registry, předplatné Azure. [Zaregistrujte si bezplatnou zkušební verzi](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/).
 
@@ -108,7 +108,7 @@ Po dokončení cyklu vývoje a ladění aplikace můžete vytvořit image produk
     | **DNS Prefix** | Globálně jedinečný název | Název, který jednoznačně identifikuje vašeho registru kontejneru. |
     | **Předplatné** | Vaše předplatné | Předplatné Azure používat. |
     | **[Skupina prostředků](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Název skupiny prostředků, ve kterém chcete vytvořit registr kontejnerů. Zvolte **nový** vytvořit novou skupinu prostředků.|
-    | **[SKLADOVÁ POLOŽKA](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Úrovně služby do registru kontejneru  |
+    | **[Skladová jednotka (SKU)](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Úrovně služby do registru kontejneru  |
     | **Umístění registru** | Vám nejbližším místě | Zvolte umístění, do [oblasti](https://azure.microsoft.com/regions/) vaší blízkosti nebo v blízkosti jiných služeb, které budou používat službu container registry. |
 
     ![Visual Studio vytvořit dialogové okno Azure Container Registry][0]
@@ -124,7 +124,7 @@ Můžete nyní využít kontejneru z registru na každém hostiteli podporuje sp
 ## <a name="additional-resources"></a>Další zdroje
 
 * [Kontejner vývoj pomocí sady Visual Studio](/visualstudio/containers)
-* [Řešení potíží s Visual Studio 2017 vývoj aplikací pomocí Dockeru](../../vs-azure-tools-docker-troubleshooting-docker-errors.md)
+* [Řešení potíží při vývoji v sadě Visual Studio 2017 pomocí Dockeru](../../vs-azure-tools-docker-troubleshooting-docker-errors.md)
 * [Visual Studio Tools pro úložiště GitHub Dockeru](https://github.com/Microsoft/DockerTools)
 
 [0]:../../media/vs-azure-tools-docker-hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png

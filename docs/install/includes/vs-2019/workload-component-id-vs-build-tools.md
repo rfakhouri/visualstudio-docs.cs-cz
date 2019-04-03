@@ -5,16 +5,16 @@ description: Pomocí ID pracovního vytížení a komponenta Visual Studio můž
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 04/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f74b014efff346993dbebb1b605e8f6f194f1502
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 333ecaa39fb0f3ea736b2b2a3efc6980b1ff8d87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160984"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58872937"
 ---
 ## <a name="azure-development-build-tools"></a>Nástroje sestavení pro vývoj pro Azure
 
@@ -37,14 +37,14 @@ Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cíle a úlohy sestave
 Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Nástroje pro vytváření Windows Communication Foundation | 16.0.28516.191 | Požadováno
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Sestavení nástrojů pro vývoj webů | 16.0.28516.191 | Požadováno
-Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 16.0.28516.191 | Doporučeno
-Microsoft.VisualStudio.Component.AspNet45 | Rozšířené funkce ASP.NET | 16.0.28315.86 | Doporučeno
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Doporučeno
+Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 16.0.28516.191 | Doporučené
+Microsoft.VisualStudio.Component.AspNet45 | Rozšířené funkce ASP.NET | 16.0.28315.86 | Doporučené
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Doporučené
 Microsoft.Net.Component.3.5.DeveloperTools | Vývojové nástroje .NET framework 3.5 | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.1.TargetingPack | Rozhraní .NET framework 4.6.1 targeting pack | 16.0.28517.75 | volitelná,
@@ -70,15 +70,15 @@ Microsoft.Net.Core.Component.SDK.2.2 | Vývojové nástroje .NET core 2.2 | 16.0
 
 ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
-Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 16.0.28516.191 | Doporučeno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28528.71 | Doporučeno
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# a Visual Basic | 16.0.28625.61 | Doporučeno
-Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | Nástroje SQL Server Data Tools – nástroje pro vytváření | 16.0.28315.86 | Doporučeno
+Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 16.0.28516.191 | Doporučené
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28714.129 | Doporučené
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# a Visual Basic | 16.0.28625.61 | Doporučené
+Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | Nástroje SQL Server Data Tools – nástroje pro vytváření | 16.0.28315.86 | Doporučené
 
 ## <a name="net-desktop-build-tools"></a>Nástroje pro vytváření desktopových .NET
 
@@ -94,17 +94,17 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Požadováno
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 16.0.28517.75 | Požadováno
 Microsoft.Net.Component.4.6.1.TargetingPack | Rozhraní .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Požadováno
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cíle a úlohy sestavení | 16.0.28625.61 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28528.71 | Požadováno
-Microsoft.Component.ClickOnce.MSBuild | Nástroje pro vytváření ClickOnce | 16.0.28625.61 | Doporučeno
-Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 16.0.28516.191 | Doporučeno
-Microsoft.Net.Core.Component.SDK.2.1 | Vývojové nástroje .NET core 2.1 | 16.0.28621.142 | Doporučeno
-Microsoft.VisualStudio.Component.TestTools.BuildTools | Základní funkce – Build Tools testovacích nástrojů | 16.0.28315.86 | Doporučeno
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Nástroje pro vytváření Windows Communication Foundation | 16.0.28516.191 | Doporučeno
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28714.129 | Požadováno
+Microsoft.Component.ClickOnce.MSBuild | Nástroje pro vytváření ClickOnce | 16.0.28625.61 | Doporučené
+Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 16.0.28516.191 | Doporučené
+Microsoft.Net.Core.Component.SDK.2.1 | Vývojové nástroje .NET core 2.1 | 16.0.28621.142 | Doporučené
+Microsoft.VisualStudio.Component.TestTools.BuildTools | Základní funkce – Build Tools testovacích nástrojů | 16.0.28315.86 | Doporučené
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Nástroje pro vytváření Windows Communication Foundation | 16.0.28516.191 | Doporučené
 Microsoft.Net.Component.3.5.DeveloperTools | Vývojové nástroje .NET framework 3.5 | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.2.SDK | Rozhraní .NET framework 4.6.2 SDK | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.2.TargetingPack | Rozhraní .NET framework 4.6.2 targeting pack | 16.0.28517.75 | volitelná,
@@ -131,7 +131,7 @@ ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Požadováno
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools Core | 16.0.28315.86 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28528.71 | Požadováno
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28714.129 | Požadováno
 
 ## <a name="net-core-build-tools"></a>Nástroje sestavení .NET core
 
@@ -181,13 +181,13 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Vývojové nástroje .NET framework 4.7.2 | 16.0.28516.191 | Požadováno
 Microsoft.VisualStudio.Component.NuGet | Správce balíčků NuGet | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cíle a úlohy sestavení | 16.0.28625.61 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28528.71 | Požadováno
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28714.129 | Požadováno
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Nástroje sestavení pro vývoj pro Office/SharePoint | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Nástroje sestavení aplikace Windows Workflow Foundation | 16.0.28315.86 | Požadováno
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Nástroje pro vytváření Windows Communication Foundation | 16.0.28516.191 | Požadováno
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Sestavení nástrojů pro vývoj webů | 16.0.28516.191 | Požadováno
-Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Nástroje sestavení Visual Studio Tools for Office (VSTO) | 16.0.28625.61 | Doporučeno
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Doporučeno
+Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Nástroje sestavení Visual Studio Tools for Office (VSTO) | 16.0.28625.61 | Doporučené
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Doporučené
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.2.SDK | Rozhraní .NET framework 4.6.2 SDK | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.2.TargetingPack | Rozhraní .NET framework 4.6.2 targeting pack | 16.0.28517.75 | volitelná,
@@ -216,11 +216,11 @@ Microsoft.Component.VC.Runtime.OSSupport | Modul runtime C++ Universal Windows P
 Microsoft.Net.Component.4.7.1.SDK | Rozhraní .NET framework 4.7.1 SDK | 16.0.28517.75 | Požadováno
 Microsoft.Net.Core.Component.SDK.2.1 | Vývojové nástroje .NET core 2.1 | 16.0.28621.142 | Požadováno
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cíle a úlohy sestavení | 16.0.28625.61 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28528.71 | Požadováno
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28714.129 | Požadováno
 Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019 C++ ARM (v14.20) nástroje pro vytváření | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – nástroje pro vytváření x64/x86 VS 2019 C++ (v14.20) | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Požadavky na sestavování univerzální platforma Windows | 16.0.28621.142 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Doporučeno
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Doporučené
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | volitelná,
 
@@ -237,15 +237,15 @@ ID součásti | Název | Version | Typ závislosti
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Základní funkce C++ Build Tools | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 Redistributable Update | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 16.0.28315.86 | Požadováno
-Microsoft.VisualStudio.Component.TestTools.BuildTools | Základní funkce – Build Tools testovacích nástrojů | 16.0.28315.86 | Doporučeno
-Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje C++ CMake pro Windows | 16.0.28625.61 | Doporučeno
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – nástroje pro vytváření x64/x86 VS 2019 C++ (v14.20) | 16.0.28625.61 | Doporučeno
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Doporučeno
+Microsoft.VisualStudio.Component.TestTools.BuildTools | Základní funkce – Build Tools testovacích nástrojů | 16.0.28315.86 | Doporučené
+Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje C++ CMake pro Windows | 16.0.28625.61 | Doporučené
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – nástroje pro vytváření x64/x86 VS 2019 C++ (v14.20) | 16.0.28625.61 | Doporučené
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Doporučené
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | volitelná,
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 16.0.28625.61 | volitelná,
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.1.TargetingPack | Rozhraní .NET framework 4.6.1 targeting pack | 16.0.28517.75 | volitelná,
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28528.71 | volitelná,
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28714.129 | volitelná,
 Microsoft.VisualStudio.Component.TextTemplating | Transformace textové šablony | 16.0.28625.61 | volitelná,
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ vytvářet nástroje (v14.00) | 16.0.28625.61 | volitelná,
 Microsoft.VisualStudio.Component.VC.ATL | C++ ATL pro nástroje pro vytváření v142 (x86 & x64) | 16.0.28625.61 | volitelná,
@@ -274,7 +274,7 @@ Microsoft.Net.Component.4.7.2.SDK | Rozhraní .NET framework 4.7.2 SDK | 16.0.28
 Microsoft.Net.Component.4.7.2.TargetingPack | Rozhraní .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Požadováno
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Vývojové nástroje .NET framework 4.7.2 | 16.0.28516.191 | Požadováno
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cíle a úlohy sestavení | 16.0.28625.61 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28528.71 | Požadováno
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28714.129 | Požadováno
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Základní nástroje pro sestavení sady Visual Studio SDK | 16.0.28315.86 | Požadováno
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio předpoklady pro vývoj rozšíření | 16.0.28528.71 | Požadováno
 Component.Dotfuscator | PreEmptive ochranu – řešení Dotfuscator | 16.0.28528.71 | volitelná,
@@ -299,19 +299,19 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Vývojové nástroje .NE
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cíle a úlohy sestavení | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK | 16.0.28625.61 | Požadováno
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Sestavení nástrojů pro vývoj webů | 16.0.28516.191 | Požadováno
-Microsoft.Component.ClickOnce.MSBuild | Nástroje pro vytváření ClickOnce | 16.0.28625.61 | Doporučeno
-Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Doporučeno
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 16.0.28516.191 | Doporučeno
-Microsoft.Net.Core.Component.SDK.2.1 | Vývojové nástroje .NET core 2.1 | 16.0.28621.142 | Doporučeno
-Microsoft.VisualStudio.Component.AspNet45 | Rozšířené funkce ASP.NET | 16.0.28315.86 | Doporučeno
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kontejnerové vývojové nástroje – Build Tools | 16.0.28625.61 | Doporučeno
-Microsoft.VisualStudio.Component.TestTools.BuildTools | Základní funkce – Build Tools testovacích nástrojů | 16.0.28315.86 | Doporučeno
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Doporučeno
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Nástroje pro vytváření Windows Communication Foundation | 16.0.28516.191 | Doporučeno
+Microsoft.Component.ClickOnce.MSBuild | Nástroje pro vytváření ClickOnce | 16.0.28625.61 | Doporučené
+Microsoft.Net.Component.4.5.1.TargetingPack | Rozhraní .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.5.2.TargetingPack | Rozhraní .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Doporučené
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Vývojové nástroje .NET framework 4 – 4.6 | 16.0.28516.191 | Doporučené
+Microsoft.Net.Core.Component.SDK.2.1 | Vývojové nástroje .NET core 2.1 | 16.0.28621.142 | Doporučené
+Microsoft.VisualStudio.Component.AspNet45 | Rozšířené funkce ASP.NET | 16.0.28315.86 | Doporučené
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kontejnerové vývojové nástroje – Build Tools | 16.0.28625.61 | Doporučené
+Microsoft.VisualStudio.Component.TestTools.BuildTools | Základní funkce – Build Tools testovacích nástrojů | 16.0.28315.86 | Doporučené
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Doporučené
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Nástroje pro vytváření Windows Communication Foundation | 16.0.28516.191 | Doporučené
 Microsoft.Net.Component.3.5.DeveloperTools | Vývojové nástroje .NET framework 3.5 | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 16.0.28517.75 | volitelná,
 Microsoft.Net.Component.4.6.1.TargetingPack | Rozhraní .NET framework 4.6.1 targeting pack | 16.0.28517.75 | volitelná,
@@ -341,7 +341,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Požadováno
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 16.0.28517.75 | Požadováno
 Microsoft.Net.Component.4.6.1.TargetingPack | Rozhraní .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Požadováno
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cíle a úlohy sestavení | 16.0.28625.61 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28528.71 | Požadováno
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory C# a Visual Basic Roslyn | 16.0.28714.129 | Požadováno
 Component.Android.SDK27 | Instalace sady Android SDK (úroveň rozhraní API 27) | 16.0.28517.75 | volitelná,
 Component.OpenJDK | OpenJDK (je distribuce Microsoftu) | 16.0.28625.61 | volitelná,
 

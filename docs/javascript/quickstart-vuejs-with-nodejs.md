@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9ce4b1d90d0d252300d2d8f8ef614d67712e425f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789577"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897592"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Rychlý start: Vytvoření první aplikace pro Vue.js pomocí sady Visual Studio
 
@@ -59,14 +59,16 @@ Nejprve vytvoříte projekt Vue.js webové aplikace.
 1. Vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Vue.js**, klikněte na tlačítko **základní Vue.js webovou aplikaci** (JavaScript nebo TypeScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **základní Vue.js**, klikněte na tlačítko **základní Vue.js webovou aplikaci** (JavaScript nebo TypeScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+
+    ![VUE.js šablony](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
     V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **JavaScript** nebo **TypeScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **základní Vue.js webovou aplikaci**, klikněte na tlačítko **OK**.
-    ::: moniker-end
-    Pokud se nezobrazí **základní Vue.js webové aplikace** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
 
     ![VUE.js šablony](../javascript/media/vuejs-template.png)
+    ::: moniker-end
+    Pokud se nezobrazí **základní Vue.js webové aplikace** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
 
     Visual Studio vytvoří nový projekt. Otevře se nový projekt v Průzkumníku řešení (pravé podokno).
 

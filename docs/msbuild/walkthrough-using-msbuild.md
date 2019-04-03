@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d613bbc75bfac14f17c2c50d0702ed89b744baac
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857824"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897735"
 ---
 # <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
 
@@ -221,16 +221,18 @@ $(PropertyName)
 
 4. Zkontrolujte výstup příkazu. Zobrazí se tyto dva řádky (.NET Framework verze se může lišit):
 
-    ```
     ::: moniker range=">=vs-2019"
+    ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
+    ```
     ::: moniker-end
     ::: moniker range="vs-2017"
+    ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
-    ::: moniker-end
     ```
+    ::: moniker-end
 
 > [!NOTE]
 >  Pokud se tyto řádky pak jste pravděpodobně zapomněli uložte soubor projektu v editoru kódu. Uložte soubor a zkuste to znovu.

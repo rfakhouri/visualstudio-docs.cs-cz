@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027286"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897696"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Řešení potíží a známé problémy (Visual Studio Tools for Unity)
 
@@ -62,7 +62,7 @@ Nejdřív zkontrolujte, že Visual Studio je nastavena jako externí skript edit
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Navíc opětovné načtení, nebo Visual Studio ztráty všechna otevřená okna.
 
-Ujistěte se, že nikdy touch soubory projektu přímo z procesor asset nebo jakýkoli jiný nástroj. Pokud opravdu potřebujete k práci s souboru projektu, jsme k tomu vystavit rozhraní API. Zkontrolujte, zda [sestavení odkazuje na část problémy](#Assembly-reference-issues).
+Ujistěte se, že nikdy touch soubory projektu přímo z procesor asset nebo jakýkoli jiný nástroj. Pokud opravdu potřebujete k práci s souboru projektu, jsme k tomu vystavit rozhraní API. Zkontrolujte, zda [sestavení odkazuje na část problémy](#assembly-reference-issues).
 
 Pokud máte navíc opětovné načtení, nebo pokud ztráty sady Visual Studio znovu načíst všechny otevřené Windows na, ujistěte se, že máte správné balíčky .NET targeting Pack. Zkontrolujte následující část o rozhraní pro další informace.
 
@@ -142,7 +142,7 @@ Zkuste ho upgradovat vaše Visual Studio 2015 update 3.
 
     Možná budete muset provést **příkaz** okno viditelné první. V sadě Visual Studio, zvolte v hlavní nabídce **zobrazení**, **ostatní Windows**, **příkazové okno**.
 
-*Na počítači Mac:*
+*On Mac:*
 
 1. Otevřete terminál a získejte identifikátor PID sady Visual Studio pro Mac:
 

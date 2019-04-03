@@ -1,48 +1,39 @@
 ---
 title: Postup ohlášení problému se sadou Visual Studio
-titleSuffix: ''
-description: Přečtěte si postup ohlášení problému se sadou Visual Studio do Microsoftu tak, aby nám můžete diagnostikovat a opravit ho.
+description: Přečtěte si postup ohlášení problému se sadou Visual Studio
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 1f1a3ccfe4081e3fa5287afc0299755a71f762f7
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953649"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897618"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>Postup ohlášení problému se sadou Visual Studio
-
-Pokud dochází k potížím s Visual Studio chcete vědět o něm. Tady je postup, chcete nahlásit problém, který chcete [komunity vývojářů](https://developercommunity.visualstudio.com/) tak, aby nám můžete diagnostikovat a opravit ho.
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Postup ohlášení problému se sadou Visual Studio nebo instalační program sady Visual Studio
 
 > [!NOTE]
-> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [jak chcete nahlásit problém v sadě Visual Studio pro Mac](/visualstudio/mac/report-a-problem).
+> Visual Studio pro Mac, najdete v části [jak chcete nahlásit problém v sadě Visual Studio pro Mac](/visualstudio/mac/report-a-problem).
 
-## <a name="report-a-problem-by-using-visual-studio"></a>Ohlásit problém s použitím sady Visual Studio
+Nahlásit problém z jeho instalačního programu nebo aplikace Visual Studio s použitím nástroje pro zpětnou vazbu v nich zahrnuty. Nástroje pro zpětnou vazbu umožňuje snadné zahrnutí diagnostických informací do vaší zpětné vazby a pomáhá diagnostikovat a opravovat problémy mnohem efektivněji v týmu sady Visual Studio. Tady jsou kroky, chcete nahlásit problém.
 
-Pokud chcete nahlásit problém pro sadu Visual Studio, je nutné inicializovat sestavy ze sady Visual Studio nebo instalační program sady Visual Studio. Nejde provádět přímo pomocí [komunity vývojářů](https://developercommunity.visualstudio.com/) webu. Vytváření sestav pomocí sady Visual Studio umožňuje získat diagnostické informace, které mají být automaticky zahrnuty do sestavy.
+1. **V sadě Visual Studio**, vyberte ikonu zpětné vazby v pravém horním rohu a vyberte možnost nahlásit problém. Nástroje pro zpětnou vazbu se můžete dostat taky z nabídky **pomáhají** > **odeslat zpětnou vazbu** > **nahlásit problém**.
+![Vytvoření sestavy automaticky otevírané okno problém komunity vývojářů v aplikaci Visual Studio](media/vsfeedbackentry.png) Alternativně nahlásit problém v **instalační program sady Visual Studio** Pokud nelze nainstalovat sadu Visual Studio nebo nemůžou využívat nástroj zpětné vazby v sadě Visual Studio .  V instalačním programu vyberte ikonu zpětné vazby v pravém horním rohu a vyberte nahlásit problém.
+![Vytvoření sestavy automaticky otevírané okno problém komunity vývojářů v aplikaci Visual Studio](media/installer.png)
 
-![Vytvoření sestavy automaticky otevírané okno problém komunity vývojářů v aplikaci Visual Studio](media/report-an-issue.png)
-
-1. V sadě Visual Studio, vyberte **pomáhají** > **odeslat zpětnou vazbu** > **nahlásit problém**.
-
-   > [!TIP]
-   > Pokud nemůžete dokončit instalaci sady Visual Studio nebo nelze využívat nástroj zpětné vazby v sadě Visual Studio, můžete ohlásit problém s použitím **instalační program sady Visual Studio**. Uděláte to tak, vyberte v pravém horním rohu ikonu zpětné vazby **instalační program sady Visual Studio**.
-
-1. Pokud nejste přihlášení, vyberte **Sign In**; je na pravé straně nástroj, jak je znázorněno na následujícím snímku obrazovky. Postupujte podle pokynů na obrazovce pro přihlášení.
+1. Pokud není přihlášení, vyberte **Sign In** jak je znázorněno na následujícím snímku obrazovky. Postupujte podle pokynů na obrazovce pro přihlášení.
 
    ![Přihlaste se k nahlášení problému](../ide/media/sign-in-new-ux.png)
 
-   Při přihlášení, můžete nahlásit problém, který se zobrazuje. Také můžete hlasovat nebo uvedené komentářů k tomuto jinému problému, který se zobrazí.
+   Nejenže můžete je ohlásit problém při přihlášení, ale také můžete hlasovat a komentáře k existující svůj názor.
 
-1. Jakmile se přihlásíte, budete moci zobrazit vaše **problémy** a **aktivity** v **položky, které sleduji** obrazovky
+1. Jakmile se přihlásíte, budete moci zobrazit vaše **problémy** a **aktivity** na **položky, které sleduji** obrazovky
 
     ![Položky, které sleduji](../ide/media/items-i-follow.png)
 
@@ -125,7 +116,7 @@ Od verze Visual Studio 2017 verze 15.5, je nový pracovní postup k poskytován�
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Vyhledejte řešení nebo poskytnout zpětnou vazbu
 
-Pokud nechcete nebo nemůžete použít Visual Studio Pokud chcete nahlásit problém, je pravděpodobné, že problém již oznámen a publikování řešení na [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/) stránky.
+Pokud nechcete nebo nemůžete použít Visual Studio Pokud chcete nahlásit problém, je příležitost problém již oznámen a řešení, pošle [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/) stránky.
 
 Pokud nemáte problém nahlásit, ale chcete navrhnout funkci, je místo, kde, příliš. Další informace najdete v tématu [navrhnout funkci](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) stránky.
 
@@ -135,4 +126,4 @@ Pokud nemáte problém nahlásit, ale chcete navrhnout funkci, je místo, kde, p
 * [Ohlášení problému se sadou Visual Studio pro Mac](/visualstudio/mac/report-a-problem)
 * [Ohlášení problému se sadou C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
-* [Ochrana dat pro vývojáře komunity](developer-community-privacy.md)
+* [Ochrana osobních údajů komunity vývojářů](developer-community-privacy.md)
