@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796761"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857837"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Vývoj kódu jazyka JavaScript a TypeScript v sadě Visual Studio bez řešení nebo projektů
 
-Visual Studio 2017 zavádí možnost [vývoj kódu bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), což vám umožní otevřít složku kódu a okamžitě začít pracovat s podporou bohaté editoru, například IntelliSense, vyhledávání, refaktoring, ladění a další. Kromě těchto funkcí Node.js Tools for Visual Studio přidává podporu pro vytváření souborů TypeScript, Správa balíčků npm a spouštění skriptů npm.
+Spouští se v sadě Visual Studio 2017, můžete [vývoj kódu bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), což vám umožní otevřít složku kódu a okamžitě začít pracovat s podporou bohaté editoru, například IntelliSense, vyhledávání, refaktoring, ladění a další. Kromě těchto funkcí Node.js Tools for Visual Studio přidává podporu pro vytváření souborů TypeScript, Správa balíčků npm a spouštění skriptů npm.
 
 Abyste mohli začít, vyberte **souboru** > **otevřít** > **složky** z panelu nástrojů. Průzkumník řešení zobrazí všechny soubory ve složce, a můžete otevřít libovolný soubory, které chcete zahájit úpravy. Na pozadí aplikace Visual Studio indexuje soubory, které chcete povolit npm, sestavení a ladění funkcí.
 
 > [!IMPORTANT]
-> Mnoho funkcí popsaných v tomto článku, včetně integrace npm vyžaduje Visual Studio 2017 verze 15.8.
+> Mnoho funkcí popsaných v tomto článku, včetně integrace npm, vyžadují Visual Studio 2017 verze 15,8 nebo novější verze.
 
 ## <a name="npm-integration"></a>integrace npm
 

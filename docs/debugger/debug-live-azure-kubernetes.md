@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 21142ada9b8a922e5a66a673eae1059a845f6231
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007290"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856687"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Ladění služby Azure Kubernetes za provozu technologie ASP.NET se pomocí ladicího programu snímků
 
@@ -54,24 +54,13 @@ V tomto kurzu se naučíte:
     > [!IMPORTANT]
     > K ladění snímků, budete muset otevřít *stejnou verzi zdrojového kódu* , který je publikován do služby Azure Kubernetes.
 
-1. Připojte Snapshot Debugger. Můžete použít jeden z několika různými způsoby:
-
-    * Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte prostředek AKS nasazuje se do vaší webové aplikace a účtu služby Azure storage a klikněte na **připojit**.
+1. Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte prostředek AKS nasazuje se do vaší webové aplikace a účtu služby Azure storage a klikněte na **připojit**.
 
       ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Klikněte pravým tlačítkem myši na projekt a vyberte **publikovat**a pak na stránce klikněte na publikovat **připojit Snapshot Debugger**. Vyberte prostředek AKS nasazuje se do vaší webové aplikace a účtu služby Azure storage a klikněte na **připojit**.
-    ![Spuštění ladicího programu snímků ze stránky publikovat](../debugger/media/snapshot-publish-attach.png)
+      ![Vyberte prostředek Azure](../debugger/media/snapshot-select-azure-resource-aks.png)
 
-    * V ladění cíl rozevírací nabídky vyberte možnost **Snapshot Debugger**, přístupů **F5** a v případě potřeby vyberte prostředek AKS nasazuje se do vaší webové aplikace a služby Azure storage account a pak klikněte na tlačítko  **Připojit**.
-    ![Spuštění ladicího programu snímků z rozevírací nabídky F5](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * Pomocí Průzkumníka cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na vaší webové aplikace se nasadí do prostředku AKS a účtu služby Azure storage a potom klikněte na tlačítko **připojit Snapshot Debugger**.
-
-      ![Spuštění ladicího programu snímků z Průzkumníka cloudu](../debugger/media/snapshot-launch.png)
-
-    > [!NOTE]
-    > Rozšíření webu Application Insights podporuje také ladění snímků. Pokud narazíte na chybovou zprávu "aktuální rozšíření webu", přečtěte si téma [řešení potíží, tipy a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
+Visual Studio je nyní v režimu ladění snímků.
 
    ![Režim ladění snímků](../debugger/media/snapshot-message.png)
 
@@ -146,7 +135,7 @@ Kromě pořízení snímku při dosažení snímkovacího bodu, můžete také n
 
     Pokud se rozhodnete **odeslat do okna výstup**, když protokolovacích bodů: dosažení, zpráva se zobrazí v okně diagnostické nástroje.
 
-    ![V okně archivu diagsession data protokolovacích bodů:](../debugger/media/snapshot-logpoint-output.png)
+    ![Protokolovací bod dat v okně diagnostické nástroje](../debugger/media/snapshot-logpoint-output.png)
 
     Pokud se rozhodnete **odeslat do protokolu aplikace**, když protokolovacích bodů: dosažení, zpráva se zobrazí kdekoli, zobrazí se zprávy z `System.Diagnostics.Trace` (nebo `ILogger` v .NET Core), například [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 

@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 608745fc2c96836163e1406abda6869d52b1da1b
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007265"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856953"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Ladit živé aplikace ASP.NET na virtuálních počítačích Azure a škálovací sady virtuálních počítačů Azure pomocí ladicího programu snímků
 
@@ -50,33 +50,23 @@ V tomto kurzu se naučíte:
     > [!IMPORTANT]
     > K ladění snímků, budete muset otevřít *stejnou verzi zdrojového kódu* , který je publikován do služby Azure VM/VMSS.
 
-1. Připojte Snapshot Debugger. Můžete použít jeden z několika různými způsoby:
-
-    * Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
+1. Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
 
       ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Klikněte pravým tlačítkem myši na projekt a vyberte **publikovat**a pak na stránce klikněte na publikovat **připojit Snapshot Debugger**. Vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a účet úložiště Azure a klikněte na **připojit**.
-    ![Spuštění ladicího programu snímků ze stránky publikovat](../debugger/media/snapshot-publish-attach.png)
-
-    * V ladění cíl rozevírací nabídky vyberte možnost **Snapshot Debugger**, přístupů **F5** a v případě potřeby vyberte Azure VM/VMSS nasazuje se do vaší webové aplikace a služby Azure storage account a pak klikněte na  **Připojit**.
-    ![Spuštění ladicího programu snímků z rozevírací nabídky F5](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * Pomocí Průzkumníka cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na Azure VM/VMSS webové aplikace je nasazená do a vyberte účet úložiště Azure a pak klikněte na tlačítko **připojit Snapshot Debugger**.
-
-      ![Spuštění ladicího programu snímků z Průzkumníka cloudu](../debugger/media/snapshot-launch.png)
+      ![Vyberte prostředek Azure](../debugger/media/snapshot-select-azure-resource-vm.png) 
 
     > [!IMPORTANT]
     > Při prvním vyberete **připojit Snapshot Debugger** pro váš virtuální počítač automaticky restartuje služba IIS.
-    > Při prvním vyberete **připojit Snapshot Debugger** VMSS, vyžadují ruční upgrade každé instance VMSS.
+    > Při prvním vyberete **připojit Snapshot Debugger** VMSS, vyžaduje ruční upgrade každé instance VMSS.
 
     Metadata pro **moduly** nebudou zpočátku aktivovat, přejděte do webové aplikace a **spustit shromažďování** tlačítko je aktivní. Visual Studio je nyní v režimu ladění snímků.
+
+   ![Režim ladění snímků](../debugger/media/snapshot-message.png)
 
     > [!NOTE]
     > Rozšíření webu Application Insights podporuje také ladění snímků. Pokud narazíte na chybovou zprávu "aktuální rozšíření webu", přečtěte si téma [řešení potíží, tipy a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
     > Pro VMSS je potřeba ručně upgradovat instance v jejich VMSS po prvním spuštění Snapshot Debugger připojit uživatele.
-
-   ![Režim ladění snímků](../debugger/media/snapshot-message.png)
 
    **Moduly** okno zobrazuje, když všechny moduly jste načetli pro Azure VM/VMSS (zvolte **ladit > Windows > moduly** otevřete toto okno).
 
@@ -149,7 +139,7 @@ Kromě pořízení snímku při dosažení snímkovacího bodu, můžete také n
 
     Pokud se rozhodnete **odeslat do okna výstup**, když protokolovacích bodů: dosažení, zpráva se zobrazí v okně diagnostické nástroje.
 
-    ![V okně archivu diagsession data protokolovacích bodů:](../debugger/media/snapshot-logpoint-output.png)
+    ![Protokolovací bod dat v okně diagnostické nástroje](../debugger/media/snapshot-logpoint-output.png)
 
     Pokud se rozhodnete **odeslat do protokolu aplikace**, když protokolovacích bodů: dosažení, zpráva se zobrazí kdekoli, zobrazí se zprávy z `System.Diagnostics.Trace` (nebo `ILogger` v .NET Core), například [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 

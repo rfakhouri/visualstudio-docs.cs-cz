@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957838"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856629"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
 V tomto stručný úvod do editoru kódu v sadě Visual Studio podíváme na některé ze způsobů, že sada Visual Studio provádí zápis, procházení a porozumění kódu jednodušší.
 
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
 
 Tento článek předpokládá, že jste již obeznámeni s vývojem pro JavaScript. Pokud si nejste, doporučujeme vám podívejte se na kurz jako [vytvoření aplikace Node.js a Express](../javascript/tutorial-nodejs.md) první.
 
@@ -120,7 +120,7 @@ Můžete si prohlédnout fragmenty kódu k dispozici pro váš jazyk výběrem *
 
 - [Fragmenty kódu](../ide/code-snippets.md)
 - [Vyhledání kódu](../ide/navigating-code.md)
-- [Sbalení](../ide/outlining.md)
-- [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)
-- [Refactoring](../ide/refactoring-in-visual-studio.md)
+- [Sbalování](../ide/outlining.md)
+- [Přejít k definici a náhled definice](../ide/go-to-and-peek-definition.md)
+- [Refaktoring](../ide/refactoring-in-visual-studio.md)
 - [Používání technologie IntelliSense](../ide/using-intellisense.md)
