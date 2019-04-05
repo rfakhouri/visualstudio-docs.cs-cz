@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 50f9fec9168c2a7aacfcca8d96501997e6db936d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859151"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018100"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Krok 5: Nasazení aplikace ASP.NET Core do Azure
 
@@ -33,7 +33,7 @@ _Podívejte se na video a můžete pokračovat k nasazení vaší první aplikac
 
 ## <a name="open-your-project"></a>Otevřete svůj projekt
 
-Otevřete aplikaci ASP.NET Core v aplikaci Visual Studio 2019. Aplikace musí již být pomocí sady s EF Core a pracovní webové rozhraní API, podle konfigurace v [kroku 4 v této sérii kurzů](tutorial-aspnet-core-ef-step-04.md)
+Otevřete aplikaci ASP.NET Core v aplikaci Visual Studio 2019. Aplikace musí již být pomocí sady s EF Core a pracovní webové rozhraní API, podle konfigurace v [kroku 4 v této sérii kurzů](tutorial-aspnet-core-ef-step-04.md).
 
 ## <a name="publish-to-azure-app-service"></a>Publikování do Azure App Service
 
