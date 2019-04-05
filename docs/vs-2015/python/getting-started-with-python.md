@@ -61,7 +61,7 @@ Následující prostředky vám pomůže začít pracovat:
 
 - [Průvodce instalací](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Získání krátkých videích Začínáme a deep dive](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Instalace a funkce ukázka (27 min)])https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Instalace a funkce ukázka (27 min)]( https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentace](https://github.com/Microsoft/PTVS/wiki)  
 
 

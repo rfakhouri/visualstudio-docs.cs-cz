@@ -180,8 +180,6 @@ items:
         href: get-started/tutorial-open-project-from-repo.md
       - name: Přenos, migrace a upgrade projektů
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-      - name: Přenos, migrace a upgrade projektů v sadě Visual Studio 2019
-        href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: Správa vlastností projektu a řešení
         href: ide/managing-project-and-solution-properties.md
       - name: Správa odkazů v projektu
@@ -1124,20 +1122,20 @@ items:
       items:
       - name: Klávesové zkratky
         href: help-viewer/shortcut-keys.md
-  - name: Dotfuscator Community Edition (CE)
+  - name: Dotfuscator Community
     href: ide/dotfuscator/index.md
     items:
     - name: Funkce Dotfuscatoru
       href: ide/dotfuscator/capabilities.md
-    - name: Instalace Dotfuscatoru CE
+    - name: Instalace Dotfuscatoru Community
       href: ide/dotfuscator/install.md
-    - name: Upgrade Dotfuscatoru CE
+    - name: Upgrade Dotfuscatoru Community
       href: ide/dotfuscator/upgrades.md
 - name: Prostředky
   items:
   - name: Novinky v sadě Visual Studio 2017
     href: ide/whats-new-visual-studio-2017.md
-  - name: Novinky v sadě Visual Studio 2019 RC
+  - name: Novinky v sadě Visual Studio 2019
     href: ide/whats-new-visual-studio-2019.md
   - name: Zpráva k vydání verze a požadavky na systém
     items:
@@ -1195,9 +1193,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 91a495ff1f48243244f4c68bb6a8a87a6acdd7ea
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 03c5222bdd1fccca2c8d158f466ff213ec25b1a1
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568020"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866809"

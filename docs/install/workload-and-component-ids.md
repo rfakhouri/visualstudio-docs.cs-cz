@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b96088a2107ae826067287aee9f306aa0f590329
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324036"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018295"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID úloh a komponent sady Visual Studio
 
@@ -36,11 +36,11 @@ Klikněte na názvy edition v následující tabulce se zobrazí dostupné úloh
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | Řešení Microsoft DevOps pro zvýšení produktivity a zajištění koordinace napříč týmy všech velikostí |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | Profesionální vývojářské nástroje a služby pro malé týmy |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Bezplatné, plně vybavené integrované vývojové prostředí pro studenty, open source a individuální vývojáře |
-| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md?vs-2017) | Microsoft.VisualStudio.Product.TeamExplorer | Interakce s Team Foundation Server a služby Azure DevOps bez vývojových nástrojů Visual Studio |
+| [Vizuální&nbsp;Studio týmu&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md?vs-2017) | Microsoft.VisualStudio.Product.TeamExplorer | Interakce s Team Foundation Server a služby Azure DevOps bez vývojových nástrojů Visual Studio |
 | [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md?vs-2017) | Microsoft.VisualStudio.Product.WDExpress | Vytvářejte nativní a spravované aplikace jako WPF, WinForms a Win32 pomocí úprav kódu podle syntaxe, správy zdrojového kódu a správy pracovních položek. Zahrnuje podporu pro C#, Visual Basic a Visual C++. |
-| [Vizuální&nbsp;Studio sestavení&nbsp;nástroje&nbsp;2017](workload-component-id-vs-build-tools.md?vs-2017) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umožňuje sestavovat nativní a spravované aplikace založené na MSBuild bez potřeby Visual Studio IDE. Existují možnosti pro instalaci kompilátory jazyka Visual C++ a knihovny MFC, ATL a C + +/ CLI podpory. |
-| [Vizuální&nbsp;Studio testu&nbsp;agenta&nbsp;2017](workload-component-id-vs-test-agent.md?vs-2017)  | Microsoft.VisualStudio.Product.TestAgent | Podporuje vzdálené spouštění automatizovaných a zátěžových testů |
-| [Visual&nbsp;Studio Test&nbsp;Controller 2017](workload-component-id-vs-test-controller.md?vs-2017) | Microsoft.VisualStudio.Product.TestController | Rozdělení automatizovaných testů mezi více počítačů |
+| [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md?vs-2017) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umožňuje sestavovat nativní a spravované aplikace založené na MSBuild bez potřeby Visual Studio IDE. Existují možnosti pro instalaci kompilátory jazyka Visual C++ a knihovny MFC, ATL a C + +/ CLI podpory. |
+| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md?vs-2017)  | Microsoft.VisualStudio.Product.TestAgent | Podporuje vzdálené spouštění automatizovaných a zátěžových testů |
+| [Vizuální&nbsp;Studio testu&nbsp;Controller 2017](workload-component-id-vs-test-controller.md?vs-2017) | Microsoft.VisualStudio.Product.TestController | Rozdělení automatizovaných testů mezi více počítačů |
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Vizuální&nbsp;Studio Feedback&nbsp;klienta&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
@@ -57,12 +57,15 @@ Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použ
 | [Visual&nbsp;Studio Enterprise&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | Řešení Microsoft DevOps pro zvýšení produktivity a zajištění koordinace napříč týmy všech velikostí |
 | [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | Profesionální vývojářské nástroje a služby pro malé týmy |
 | [Visual&nbsp;Studio Community&nbsp;2019](workload-component-id-vs-community.md?vs-2019) | Microsoft.VisualStudio.Product.Community | Bezplatné, plně vybavené integrované vývojové prostředí pro studenty, open source a individuální vývojáře |
-| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2019](workload-component-id-vs-team-explorer.md?vs-2019) | Microsoft.VisualStudio.Product.TeamExplorer | Interakce s Team Foundation Server a služby Azure DevOps bez vývojových nástrojů Visual Studio |
+| [Vizuální&nbsp;Studio týmu&nbsp;Explorer&nbsp;2019](workload-component-id-vs-team-explorer.md?vs-2019) | Microsoft.VisualStudio.Product.TeamExplorer | Interakce s Team Foundation Server a služby Azure DevOps bez vývojových nástrojů Visual Studio |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2019](workload-component-id-vs-build-tools.md?vs-2019) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umožňuje sestavovat nativní a spravované aplikace založené na MSBuild bez potřeby Visual Studio IDE. Existují možnosti pro instalaci kompilátory jazyka Visual C++ a knihovny MFC, ATL a C + +/ CLI podpory. |
-| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | Podporuje vzdálené spouštění automatizovaných a zátěžových testů |
-| [Visual&nbsp;Studio Load&nbsp;Test&nbsp;Controller 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Rozdělení automatizovaných testů mezi více počítačů |
+| [Vizuální&nbsp;Studio testu&nbsp;agenta&nbsp;2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | Podporuje vzdálené spouštění automatizovaných a zátěžových testů |
+| [Vizuální&nbsp;Studio zatížení&nbsp;Test&nbsp;2019 Kontroleru](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Rozdělení automatizovaných testů mezi více počítačů |
 
 Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) stránky a [jak: Migrace projektů rozšíření do sady Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) stránky.
+
+> [!NOTE]
+> Seznam pracovního vytížení a komponenta ID pro předchozí verze, najdete v části [ID pracovního vytížení a komponenta Visual Studio 2017](workload-and-component-ids.md?view=vs-2017)
 
 ::: moniker-end
 
