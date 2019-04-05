@@ -1,5 +1,5 @@
 ---
-title: 'Krok 4: Vystavení webového rozhraní API z aplikace ASP.NET Core'
+title: 'Krok 4: Vystavení webového rozhraní API z vaše aplikace ASP.NET Core'
 description: Přidání webového rozhraní API do webové aplikace ASP.NET Core s touto Výukové video a podrobné pokyny.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -16,16 +16,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 75fef03d82f95f4adc65bfab5495ba644ee5164a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859145"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018087"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Krok 4: Vystavení webového rozhraní API z aplikace ASP.NET Core
 
-Postupujte podle těchto kroků přidejte webové rozhraní API do stávající aplikace ASP.NET Core.
+Postupujte podle těchto kroků přidejte webového rozhraní API do stávající aplikace ASP.NET Core.
 
 _Podívejte se na video a můžete pokračovat k přidání podpory webového rozhraní API do vaší první aplikace ASP.NET Core._
 
@@ -33,7 +33,7 @@ _Podívejte se na video a můžete pokračovat k přidání podpory webového ro
 
 ## <a name="open-your-project"></a>Otevřete svůj projekt
 
-Otevřete aplikaci ASP.NET Core v aplikaci Visual Studio 2019. Aplikace by již být pomocí EF Core ke správě vašich typů modelu podle konfigurace v [kroku 3 v této sérii kurzů](tutorial-aspnet-core-ef-step-03.md)
+Otevřete aplikaci ASP.NET Core v aplikaci Visual Studio 2019. Aplikace by již být pomocí EF Core ke správě vašich typů modelu podle konfigurace v [kroku 3 v této sérii kurzů](tutorial-aspnet-core-ef-step-03.md).
 
 ## <a name="add-an-api-controller"></a>Přidat kontroler API
 

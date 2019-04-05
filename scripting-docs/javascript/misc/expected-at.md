@@ -14,14 +14,14 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05842c274c27165a7065cb90fda60dd75da2a659
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840335"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018308"
 ---
-# <a name="expected-"></a>Byl očekáván znak '@'
+# <a name="expected-"></a>Byl očekáván '\@.
 Pokus o vytvoření proměnné pro použití s příkazy podmíněné kompilace pomocí `@set` příkazu, ale vliv zavináč "**@**" před název proměnné.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
