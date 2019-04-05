@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415211"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018217"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Nástroje pro zjišťování a správu instancí sady Visual Studio
 
@@ -31,7 +31,7 @@ Existuje několik nástrojů, které můžete použít k detekci instalace sady 
 
 Vylepšili jsme k dispozici několik nástrojů, které vám pomohou zjistit a spravovat nainstalované instance sady Visual Studio na klientských počítačích:
 
-* [VSWhere](https://github.com/microsoft/vswhere): spustitelný soubor sestavení do sady Visual Studio nebo k dispozici pro samostatné distribuci, která vám pomůže najít umístění pro všechny instance sady Visual Studio na daném počítači.
+* [vswhere](https://github.com/microsoft/vswhere): spustitelný soubor sestavení do sady Visual Studio nebo k dispozici pro samostatné distribuci, která vám pomůže najít umístění pro všechny instance sady Visual Studio na daném počítači.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): Skripty prostředí PowerShell, které používají rozhraní API pro konfiguraci nastavení pro identifikaci nainstalované instance sady Visual Studio.
 * [Ukázky nastavení VS](https://github.com/microsoft/vs-setup-samples): C#a C++ – ukázky, které ukazují, jak použít rozhraní API pro konfiguraci nastavení k dotazování existující instalaci.
 
@@ -39,7 +39,7 @@ Kromě toho [rozhraní API pro konfiguraci nastavení](<xref:Microsoft.VisualStu
 
 ## <a name="using-vswhereexe"></a>Pomocí vswhere.exe
 
-`vswhere.exe` automaticky je součástí sady Visual Studio (od verze Visual Studio 2017 verze 15.2 a novějších verzí), nebo můžete sadu stáhnout z [stránky vydaných verzí VSWhere](https://github.com/Microsoft/vswhere/releases). Použití `vswhere -?` zobrazíte informace nápovědy o tomto nástroji. Jako příklad tento příkaz zobrazí všechny verze sady Visual Studio, včetně starších verzí produktů a verzí a výsledky ve formátu JSON:
+`vswhere.exe` automaticky je součástí sady Visual Studio (od verze Visual Studio 2017 verze 15.2 a novějších verzí), nebo můžete sadu stáhnout z [stránky vydaných verzí vswhere](https://github.com/Microsoft/vswhere/releases). Použití `vswhere -?` zobrazíte informace nápovědy o tomto nástroji. Jako příklad tento příkaz zobrazí všechny verze sady Visual Studio, včetně starších verzí produktů a verzí a výsledky ve formátu JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
