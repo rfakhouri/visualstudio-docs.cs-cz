@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
+ms.lasthandoff: 04/04/2019
 ms.locfileid: "57870270"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
+
 Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, včetně architektury sady Visual Studio, komponenty, služby, schémata, nástroje a podobně.
 
 ## <a name="extensibility-architecture"></a>Architektura rozšíření
@@ -83,11 +84,12 @@ Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, vč
  V srdci služba jazyka je analyzátor a skener. Skener (nebo lexeru) rozdělí do zdrojového souboru na prvky, které jsou označovány jako tokeny a analyzátor vytvoří vztahy mezi těchto tokenů. Při vytváření služby jazyka, musíte implementovat analyzátor a skener tak, aby Visual Studio by rozuměla tokeny a gramatiku jazyka. Můžete vytvořit spravované nebo nespravované jazykové služby. Další informace najdete v tématu [rozšíření služeb starší verze jazyka](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Projekty
- Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k uspořádání a vytvoření zdrojového kódu a další prostředky. Projekty umožňují organizovat, vytváření, ladění a nasazení zdrojového kódu, odkazy na webové služby a databáze a další prostředky. Rozšíření VSPackages můžete rozšířit systém projektu sady Visual Studio poskytnutím typy projektů, podtypů projektů a vlastních nástrojů.
 
- Projekty mohou také shromáždit do jediného řešení, což je seskupení jednoho nebo více projektů, které vzájemně spolupracují na vytvoření aplikace. Projekt a stavové informace, které se vztahují k řešení je uložené v dva soubory řešení, soubor založený na textu řešení (.sln) a soubor binární řešení uživatelské možnosti (.suo). Tyto soubory jsou podobné soubory skupiny (.vbg), které byly použity v dřívějších verzích [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], a pracovní prostor (.dsw) a uživatelské možnosti (.opt) soubory, které byly použity v dřívějších verzích [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k uspořádání a vytvoření zdrojového kódu a další prostředky. Projekty umožňují organizovat, vytváření, ladění a nasazení zdrojového kódu, odkazy na webové služby a databáze a další prostředky. Rozšíření VSPackages můžete rozšířit systém projektu sady Visual Studio poskytnutím typy projektů, podtypů projektů a vlastních nástrojů.
 
- Další informace najdete v tématu [projekty](../../extensibility/internals/projects.md) a [řešení](../../extensibility/internals/solutions.md).
+Projekty mohou také být shromážděny společně *řešení*, což je seskupení jednoho nebo více projektů, které vzájemně spolupracují na vytvoření aplikace. Projekt a stavové informace, které se vztahují k řešení je uložená ve dvou souborech řešení textový [soubor řešení (.sln)](solution-dot-sln-file.md) a binární soubor [řešení uživatelské možnosti (.suo) soubor](solution-user-options-dot-suo-file.md). Tyto soubory jsou podobné soubory skupiny (.vbg), které byly použity v předchozích verzích jazyka Visual Basic a pracovního prostoru (.dsw) a uživatelské možnosti (.opt) soubory, které byly použity v dřívějších verzích jazyka C++.
+
+Další informace najdete v tématu [projekty](../../extensibility/internals/projects.md) a [řešení](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Šablony projektů a položek
  Visual Studio obsahuje šablony projektů předdefinované a šablony položek projektu. Můžete také vytvořit vlastní šablony nebo získání šablony z komunity a integrovat je do sady Visual Studio. [Galerie kódů MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) je místo, kde lze získat šablony a rozšíření.

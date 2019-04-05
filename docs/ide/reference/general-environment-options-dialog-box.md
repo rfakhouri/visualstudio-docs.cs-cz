@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647268"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018191"
 ---
 # <a name="options-dialog-box-environment--general"></a>Dialogové okno Možnosti: Prostředí \> obecné
 
@@ -53,11 +53,22 @@ Nabídky použijte mena všech slov velká ve výchozím nastavení pro použív
 
 Tato možnost povolí nebo zakáže na monitorování bodů na palec (DPI) sledování (nebo *PMA*). Když je povolené PMA, uživatelské rozhraní sady Visual Studio se zobrazí zřetelný v jakékoli koeficient měřítka zobrazení monitorování a konfigurace DPI, včetně víc monitorů. Pokud chcete povolit PMA, je třeba Windows 10. dubna 2018 Update nebo novější a rozhraní .NET Framework 4,8 nebo novější. (Tato možnost se zobrazí šedě Pokud se nesplní tyto dva požadavky.)
 
+> [!TIP]
+> - Windows 10 obsahuje nastavení, které se říká **nechat Windows se pokusí opravit aplikace tak, že nejsou fuzzy**. Povolením tohoto nastavení Windows **na** nemá zanedbatelný vliv, pokud máte **optimalizace vykreslování pro obrazovky s jinou hustoty** zaškrtnutým políčkem.
+> - Windows 10 obsahuje také **při potížích s kompatibilitou programu**. Nedoporučujeme ale pokoušejí opravit vzhledu aplikace Visual Studio s použitím tohoto poradce při odstraňování potíží.
+
 ::: moniker-end
 
 **Automaticky upravit vzhled na základě výkonu klienta**
 
 Určuje, zda sady Visual Studio úpravy automaticky nastaví na vizuální prostředí nebo explicitně nastavit úpravy. Toto nastavení může změnit zobrazení barvy z přechody pro plochý barev, nebo to může omezit použití animací v nabídkách nebo automaticky otevíraného okna windows.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 obsahuje nastavení, které se říká **nechat Windows se pokusí opravit aplikace tak, že nejsou fuzzy**. Povolením tohoto nastavení **na** se doporučuje, pokud je na vaše monitorování rozmazané sady Visual Studio. Zvažte možnost upgradovat na [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), což výrazně se zvýšil přehlednost zobrazení vzhledem k tomu, že je na monitorování bodů na palec aplikace pracující s.
+
+::: moniker-end
 
 **Povolit vzhled plně funkčního klienta**
 
@@ -91,5 +102,5 @@ Určuje, kdy **automaticky skrýt** po kliknutí na tlačítko, pouze panel nás
 
 ## <a name="see-also"></a>Viz také:
 
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
+- [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)
 - [Přizpůsobení rozložení oken](../../ide/customizing-window-layouts-in-visual-studio.md)

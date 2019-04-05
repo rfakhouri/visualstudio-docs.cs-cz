@@ -8,8 +8,13 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Vítá vás Visual Studio předplatná
 Searchscope: VS Subscription
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322595"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 
 Předplatná sady Visual Studio je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat skvělé aplikace pro vaše preferované platformy a zařízení, včetně Windows, iOS, Androidu a Linuxu.  Výhody předplatná zahrnují přístup k nástrojům pro vývojáře, cloudových služeb a softwaru, školení a podporu pro vývoj a testování.

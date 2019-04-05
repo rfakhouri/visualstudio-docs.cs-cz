@@ -3,9 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 titleSuffix: ''
-description: 'Další informace o použití sady Visual Studio pro vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.'
+description: Další informace o použití sady Visual Studio pro vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515321"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

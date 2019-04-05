@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ea3a1fd74dfb3261dde47d9b0851954155534493
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859127"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018178"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Krok 3: Práce s daty pomocí Entity Frameworku
 
@@ -122,7 +122,7 @@ To je všechno, co trvalo začít pracovat s daty v aplikaci ASP.NET Core pomoc�
 
 V dalším videu se dozvíte, jak přidat podporu pro webové rozhraní API do vaší aplikace.
 
-[Krok 4: Vystavení webového rozhraní API z aplikace ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+[Krok 4: Vystavení webového rozhraní API z vaše aplikace ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>Viz také:
 

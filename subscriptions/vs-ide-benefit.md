@@ -1,20 +1,20 @@
 ---
 title: 'Výhody integrované vývojové prostředí sady Visual Studio v předplatných: Visual Studio | Dokumentace Microsoftu'
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Zjistěte, jak stáhnout a nainstalovat Visual Studio IDE, které jsou součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789884"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018139"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Používání benefitu Visual Studio 2017
+# <a name="using-the-visual-studio-2019-benefit"></a>Používání benefitu Visual Studio 2019
 
 Jako předplatitel sady Visual Studio budete mít přístup k sadě Visual Studio IDE.  Konkrétní verzi, bude záviset na úrovni předplatného.  Výhoda se zobrazí jako dlaždice v kategorii nástroje na [výhody](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) stránku portálu pro předplatitele.
 
@@ -29,7 +29,7 @@ Chcete-li stáhnout integrovaném vývojovém prostředí:
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise dlaždice](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Klikněte na budete přesměrováni na stránku pro stažení výsledků pro Visual Studio Enterprise, kde budete mít možnost stáhnout integrovaného vývojového prostředí a získat kód product key k její aktivaci. Může také deklarace identity kód product key kliknutím na modrý **získat klíč** propojení nebo deklarace identity klíč později [kódy Product Key](https://my.visualstudio.com/productkeys) stránky.
+3. Budete přesměrováni na stránku pro stažení výsledků pro sadu Visual Studio, kde budete mít možnost stáhnout integrovaného vývojového prostředí a získat kód product key k její aktivaci. Může také deklarace identity kód product key kliknutím na modrý **získat klíč** propojení nebo deklarace identity klíč později [kódy Product Key](https://my.visualstudio.com/productkeys) stránky.
 4. Na kartě Podrobnosti na stránce výsledky stahování:
    - Vyberte požadovanou architektury (x86, x64)
    - Vyberte preferovaný jazyk.
