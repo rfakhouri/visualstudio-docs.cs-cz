@@ -34,7 +34,7 @@ ms.locfileid: "55921546"
 |Narušující změna|Nenarušující|
 
 ## <a name="cause"></a>Příčina
- Je veřejný typ `sealed` (`NotInheritable` v jazyce Visual basic) a deklaruje chráněný člen nebo chráněné vnořeného typu. Toto pravidlo nevytváří sestavu porušení pro <xref:System.Object.Finalize%2A> metody, které musí postupovat podle tohoto vzoru.
+ Je veřejný typ `sealed` (`NotInheritable` v jazyce Visual Basic) a deklaruje chráněný člen nebo chráněné vnořeného typu. Toto pravidlo nevytváří sestavu porušení pro <xref:System.Object.Finalize%2A> metody, které musí postupovat podle tohoto vzoru.
 
 ## <a name="rule-description"></a>Popis pravidla
  Typy deklarují chráněné členy, aby k nim odvozené typy mohly přistupovat nebo je přepisovat. Podle definice nelze dědit ze zapečetěného typu, což znamená, že chráněné metody zapečetěných typů nelze volat.

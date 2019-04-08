@@ -63,7 +63,7 @@ Podporovaných řetězců jazyka (nerozlišuje velikost písmen):
 
 -   javascript
 
--   CSharp nebo c#
+-   CSharp nebo C#
 
 -   cplusplus nebo visualc ++ nebo c ++
 
