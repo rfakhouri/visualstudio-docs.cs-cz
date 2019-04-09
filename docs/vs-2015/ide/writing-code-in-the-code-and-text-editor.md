@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794238"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366611"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Psaní kódu v editoru kódu a textovém editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -174,7 +174,7 @@ Příkaz "Přejít na" Visual Studio nepodporuje cílené hledání kódu vám p
 
 ### <a name="filter-your-search"></a>Umožňuje filtrovat hledání
 
-Omezit hledání na pouze kód symboly, musí přejít na dotaz s "@" znak. Například, pokud hledáte `@application`, přejít na zobrazí například pouze třídy, které obsahují slovo "aplikace" v nich.
+Omezit hledání na pouze kód symboly, musí přejít na dotaz s "\@" znak. Například, pokud hledáte `@application`, přejít na zobrazí například pouze třídy, které obsahují slovo "aplikace" v nich.
 
 Pokud používáte camelCase ve vašem kódu, najdete prvky kódu rychleji tak, že zadáte pouze písmeny název prvku kódu. Například, pokud váš kód obsahuje komponenty s názvem `ViewSwitcher`, najdete ho tak, že zadáte jenom velká písmena názvu (`"VS"`) v okně Přejít na.
 
@@ -193,7 +193,7 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 -   [Použití vývojového prostředí sady Visual Studio pro jazyk C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Možnosti, Textový editor, JavaScript, Formátování](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Možnosti, textový editor, JavaScript, formátování](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>V tomto oddílu  
 
@@ -201,9 +201,9 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 -   [Šifrování a zalomení řádků](../ide/encodings-and-line-breaks.md)  
 
--   [Sbalení](../ide/outlining.md)  
+-   [Sbalování](../ide/outlining.md)  
 
--   [Refactoring](../ide/refactoring-in-visual-studio.md)  
+-   [Refaktoring](../ide/refactoring-in-visual-studio.md)  
 
 -   [Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)  
 
@@ -230,4 +230,4 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 -   [Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Viz také  
- [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+ [Visual Studio – sada IDE](../ide/visual-studio-ide.md)

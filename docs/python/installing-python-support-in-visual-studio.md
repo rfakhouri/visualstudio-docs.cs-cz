@@ -3,25 +3,25 @@ title: Instalace podpory Pythonu
 description: Postup instalace nástroje Pythonu pro Visual Studio (PTVS) v sadě Visual Studio 2017, 2015, 2013, 2012 a 2010, včetně možnosti a umístění instalace.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ce4963f753498ff4c43b92b0b59fbfae25a45315
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355536"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366235"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalace podpory Pythonu v sadě Visual Studio ve Windows
 
 Instalace podpory Pythonu pro Visual Studio (označované také jako Python Tools for Visual Studio nebo PTVS), postupujte podle pokynů v části, která odpovídá verzi sady Visual Studio:
 
-- [Visual Studio 2017 and Visual Studio 2019](#visual-studio-2017-and-2019)
+- [Visual Studio 2017 a Visual Studio 2019](#visual-studio-2017-and-2019)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 a starší](#visual-studio-2013-and-earlier)
 
@@ -71,7 +71,7 @@ K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete
 
     | Možnost | Popis |
     | --- | --- |
-    | Distribuce Pythonu | Zvolte libovolnou kombinaci dostupných možností, jako je například 32bitové a 64bitové varianty Python 2, Python 3, Miniconda, Anaconda2 a Anaconda3 distribucí, které máte v úmyslu pracovat. Každá obsahuje překladač distribuce, modul runtime a knihovny. Anaconda, je konkrétně open platforma pro datovou vědu, který obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit do instalačního programu sady Visual Studio kdykoli přidat nebo odebrat distribucí.)  **Poznámka:**: Pokud jste nainstalovali distribuce mimo instalačního programu sady Visual Studio, není nutné ke kontrole ekvivalentní možnost. Visual Studio automaticky rozpozná existující instalace Pythonu. Zobrazit [okno The prostředí Pythonu](managing-python-environments-in-visual-studio.md#the-python-environments-window). Navíc pokud novější verzi jazyka Python je k dispozici, než co se zobrazí v instalačním programu, tuto verzi můžete nainstalovat samostatně a Visual Studio zjistí. |
+    | Distribuce Pythonu | Zvolte libovolnou kombinaci dostupných možností, jako je například 32bitové a 64bitové varianty Python 2, Python 3, Miniconda, Anaconda2 a Anaconda3 distribucí, které máte v úmyslu pracovat. Každá obsahuje překladač distribuce, modul runtime a knihovny. Anaconda, je konkrétně open platforma pro datovou vědu, který obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit do instalačního programu sady Visual Studio kdykoli přidat nebo odebrat distribucí.)  **Poznámka:** Pokud jste nainstalovali distribuce mimo instalačního programu sady Visual Studio, není nutné ke kontrole ekvivalentní možnost. Visual Studio automaticky rozpozná existující instalace Pythonu. Zobrazit [okno The prostředí Pythonu](managing-python-environments-in-visual-studio.md#the-python-environments-window). Navíc pokud novější verzi jazyka Python je k dispozici, než co se zobrazí v instalačním programu, tuto verzi můžete nainstalovat samostatně a Visual Studio zjistí. |
     | **Podpora šablon Cookiecutter** | Nainstaluje Cookiecutter grafického uživatelského rozhraní zjišťovat šablony, zadejte možnosti šablon a vytváření projektů a souborů. Zobrazit [pomocí rozšíření Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Podpora webů v Pythonu** | Nainstaluje nástroje pro vývoj webů, včetně HTML, CSS a JavaScriptu úpravy podporu spolu s šablony projektů s použitím rozhraní Bottle, Flask a Django. Zobrazit [webová šablony projektů v Pythonu](python-web-application-project-templates.md). |
     | **Podpory pro Python IoT** | Podporuje vývoj pro Windows IoT Core pomocí Pythonu. |

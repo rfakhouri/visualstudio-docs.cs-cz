@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640789"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366754"
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 
@@ -56,6 +56,10 @@ Obvykle místní počítač nejlepší replikuje provádění nainstalované apl
 
 Diagnostické zprávy je seřazený podle **celkový čas procesoru**, od nejvyšší po nejnižší. Změníte pořadí řazení a řazení sloupců tak, že vyberete záhlaví sloupců. Použít **filtr** rozevírací nabídku a vyberte nebo zrušte výběr vláken k zobrazení a použití **hledání** políčka k vyhledání konkrétního vlákna nebo uzel.
 
+::: moniker range=">=vs-2019"
+Od verze Visual Studio 2019, můžete kliknout na **rozbalit kritickou cestu** a **zobrazit kritickou cestu** tlačítka zobrazíte volá funkci, která používají nejvyšší procento procesoru v zobrazení stromu volání.
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> Sloupce dat využití procesoru
 
 |||
@@ -70,7 +74,12 @@ Zobrazení stromu volání, vyberte nadřazený uzel v sestavě. **Využití pro
 
 ####  <a name="BKMK_Call_tree_structure"></a> Struktura stromu volání
 
- ![Volání stromovou strukturu](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "volání stromové struktury")
+::: moniker range=">=vs-2019"
+![Volání stromovou strukturu](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "volání stromové struktury")
+::: moniker-end
+::: moniker range="vs-2017"
+![Volání stromovou strukturu](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "volání stromové struktury")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ Zobrazení stromu volání, vyberte nadřazený uzel v sestavě. **Využití pro
 
 ####  <a name="BKMK_External_Code"></a> Externí kód
 
- Systém a o funkcích rozhraní, které jsou spouštěny ve vašem kódu, se nazývají *externí kód*. Externí kód funkce spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řízení práce s vlákny a poskytují další nižší úrovně služby do aplikace. Ve většině případů nepotřebujete externí kód, takže využití procesoru volání stromu shromáždí externí funkce metody uživatele do jednoho **[externí kód]** uzlu.
+Systém a o funkcích rozhraní, které jsou spouštěny ve vašem kódu, se nazývají *externí kód*. Externí kód funkce spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řízení práce s vlákny a poskytují další nižší úrovně služby do aplikace. Ve většině případů nepotřebujete externí kód, takže využití procesoru volání stromu shromáždí externí funkce metody uživatele do jednoho **[externí kód]** uzlu.
 
- Chcete-li zobrazit cesty volání externí kód, na stránce hlavní diagnostickou sestavu (pravé podokno), vyberte **zobrazit externí kód** z **filtr** rozevírací seznam a pak vyberte **použít**. **Stromu volání** zobrazení **využití procesoru** stránce poté rozbalí volání externí kód. ( **Filtr** ovládacího prvku dropdown je k dispozici na hlavní stránce diagnostiky, ne podrobné zobrazení.)
+Chcete-li zobrazit cesty volání externí kód, na stránce hlavní diagnostickou sestavu (pravé podokno), vyberte **zobrazit externí kód** z **filtr** rozevírací seznam a pak vyberte **použít**. **Stromu volání** zobrazení **využití procesoru** stránce poté rozbalí volání externí kód. ( **Filtr** ovládacího prvku dropdown je k dispozici na hlavní stránce diagnostiky, ne podrobné zobrazení.)
 
- ![Zobrazit externí kód](../profiling/media/cpu_use_wt_filterview.png "zobrazit externí kód")
+![Zobrazit externí kód](../profiling/media/cpu_use_wt_filterview.png "zobrazit externí kód")
 
- Mnoho řetězců volání externí kód jsou vnořeny hluboko, takže šířku řetězce může být delší než šířka zobrazení **název funkce** sloupce. Názvy funkcí se potom zobrazí jako **...** .
+Mnoho řetězců volání externí kód jsou vnořeny hluboko, takže šířku řetězce může být delší než šířka zobrazení **název funkce** sloupce. Názvy funkcí se potom zobrazí jako **...** .
 
- ![Vnořené externí kód ve stromu volání](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "vnořené externí kód ve stromu volání")
+![Vnořené externí kód ve stromu volání](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "vnořené externí kód ve stromu volání")
 
- Chcete-li najít název funkce, které hledáte, použijte vyhledávací pole. Najeďte myší vybraný řádek nebo zobrazení dat pomocí vodorovný posuvník.
+Chcete-li najít název funkce, které hledáte, použijte vyhledávací pole. Najeďte myší vybraný řádek nebo zobrazení dat pomocí vodorovný posuvník.
 
- ![Hledat vnořené externí kód](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "vyhledávání pro vnořené externí kód")
+::: moniker range=">=vs-2019"
+![Hledat vnořené externí kód](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "vyhledávání pro vnořené externí kód")
+::: moniker-end
+::: moniker range="vs-2017"
+![Hledat vnořené externí kód](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "vyhledávání pro vnořené externí kód")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchronní funkce ve stromu volání využití procesoru
 

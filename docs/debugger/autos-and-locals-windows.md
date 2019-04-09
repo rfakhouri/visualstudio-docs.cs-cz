@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636902"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366546"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Kontrolovat proměnné v okně Automatické hodnoty a místní hodnoty
 
@@ -59,6 +59,19 @@ V nativním kódu C++ může být potřeba kvalifikovat kontext názvu proměnn�
 >-   Hodnocení některých výrazů může změnit hodnotu proměnné nebo jinak ovlivnit stav programu. Například vyhodnocení `var1 = ++var2` změní hodnotu obou `var1` a `var2`. Tyto výrazy se říká, že mají [vedlejší účinky](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Vedlejší účinky, může způsobit neočekávané výsledky, pokud si nejste vědomi.
 >
 >-   Úpravy hodnot s plovoucí desetinnou čárkou mohou díky převodu komponenty zlomku z desítkové do binární soustavy způsobit drobné nepřesnosti. I zdánlivě neškodné úpravy mohou způsobit změny některých bitů v proměnné s plovoucí desetinnou čárkou.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Hledání v okně Automatické hodnoty a místní hodnoty
+
+Můžete hledat klíčová slova v název, hodnotu a typ sloupců **automatické hodnoty** nebo **lokální** okna pomocí panelu hledání nad každé okno. Stiskněte ENTER nebo vyberte jednu ze šipek provést hledání. Pokud chcete zrušit probíhající hledání, vyberte ikonu "x" na vyhledávacím panelu.
+
+Použijte šipku vlevo a vpravo (Shift + F3 a F3, v uvedeném pořadí) přecházet mezi nalezených shod.
+
+![Hledání v okně místních hodnot](../debugger/media/ee-search-locals.png "hledání v okně místních hodnot")
+
+Aby hledání víc nebo míň důkladné, použijte **hledání hlubší** rozevírací seznam v horní části **automatické hodnoty** nebo **lokální** okno a vybrat, kolik úrovní do hloubky, kterou chcete vyhledat do vnořené objekty. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Změna kontextu pro okno Automatické hodnoty nebo místních hodnot
 
@@ -151,6 +164,6 @@ Chcete-li zobrazit vrácené hodnoty `sumVars()` a `subtractVars()` volá metody
 ## <a name="see-also"></a>Viz také:
 
 - [Co je ladění?](../debugger/what-is-debugging.md)
-- [Nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md)
+- [Techniky ladění a související nástroje](../debugger/write-better-code-with-visual-studio.md)
 - [První pohled na ladění](../debugger/debugger-feature-tour.md)
-- [Okno ladicího programu](../debugger/debugger-windows.md)
+- [Ladicí program systému windows](../debugger/debugger-windows.md)

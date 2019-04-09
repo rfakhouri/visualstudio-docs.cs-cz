@@ -3,19 +3,19 @@ title: Ladění kódu v Pythonu na vzdálených Linuxových počítačích
 description: Ladění kódu v Pythonu běží na vzdálených Linuxových počítačích, včetně potřebný postup konfigurace, zabezpečení a řešení potíží pomocí sady Visual Studio.
 ms.date: 12/06/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb98a94e60d84fc48078be396e0fb48dd8952c55
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945739"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366741"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Vzdálené ladění kódu v Pythonu v Linuxu
 

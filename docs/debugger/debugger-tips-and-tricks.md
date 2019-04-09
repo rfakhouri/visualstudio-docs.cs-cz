@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526357"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366299"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Další tipy pro vyšší produktivitu a triky pro ladicí program v sadě Visual Studio
 
@@ -106,7 +106,7 @@ Vizualizér řetězce může vám pomůžou zjistit, jestli řetězec má chybn�
 
 ![Vizualizér řetězce JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-U několika jiných typů jako je například WPF objekty, které se zobrazují v oknech ladicího programu můžete také otevřít vizualizéry.
+U několika jiných typů jako je objekt DataSet a DataTable objekty, které se zobrazují v oknech ladicího programu můžete také otevřít integrované vizualizéru.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Přepnutí do kódu na zpracování výjimek
 

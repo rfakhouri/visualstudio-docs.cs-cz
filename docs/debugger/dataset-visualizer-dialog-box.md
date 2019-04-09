@@ -9,8 +9,6 @@ dev_langs:
 - VB
 - FSharp
 - C++
-- JScript
-- SQL
 helpviewer_keywords:
 - datasets [Visual Studio], Dataset Visualizer dialog box
 - visualizers, Dataset Visualizer dialog box
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 251e6ca5d1d9985defc8dff1dc6be95f3a088bbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626320"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366988"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dialogové okno Vizualizér DataSetu
 Vizualizér datasetu vám umožní zobrazit obsah objektu datové sady, datové tabulky, zobrazení dat nebo objekt DataViewManager. Tento vizualizér se zpřístupní po kliknutí na ikonu lupy, které se zobrazí vedle hodnoty pro jeden z těchto objektů v okně ladicího programu proměnné nebo v datovém tipu.
@@ -39,6 +37,6 @@ Vizualizér datasetu vám umožní zobrazit obsah objektu datové sady, datové 
 ## <a name="see-also"></a>Viz také
 
 - [Zabezpečení ladicího programu](../debugger/debugger-security.md)
-- [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)
-- [Okna ladicího programu](../debugger/debugger-windows.md)
+- [Vytváření vlastních Vizualizérů](../debugger/create-custom-visualizers-of-data.md)
+- [Ladicí program Windows](../debugger/debugger-windows.md)
 - [Zobrazení hodnot dat v datových tipech](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

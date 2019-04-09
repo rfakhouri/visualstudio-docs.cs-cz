@@ -3,19 +3,19 @@ title: Interaktivní okno Python (REPL)
 description: Použití interaktivního okna (REPL) pro rychlý vývoj kódu Python v sadě Visual Studio.
 ms.date: 02/11/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151138"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365924"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Práce s interaktivní okno Pythonu
 
@@ -77,7 +77,7 @@ Výjimkou je další řádky kódu, které jsou potřebné k tomu úplný přík
 | --- | --- |
 | `$$` | Vloží poznámku, což je užitečné komentáře kódu v průběhu relace. |
 | `$attach` | Ladicí program sady Visual Studio připojí k procesu okno REPL pro povolení ladění. |
-| `$cls`, `$clear` | Vymaže obsah okna editor uživatele zůstanou nedotčena historie a spuštění kontextu. |
+| `$cls`,  `$clear` | Vymaže obsah okna editor uživatele zůstanou nedotčena historie a spuštění kontextu. |
 | `$help` | Zobrazit seznam příkazů a nápovědy ke konkrétnímu příkazu. |
 | `$load` | Načte příkazy ze souboru a spustí, až do dokončení. |
 | `$mod` | Přepne aktuální obor na zadaný název modulu. |

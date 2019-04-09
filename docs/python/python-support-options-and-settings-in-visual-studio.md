@@ -11,18 +11,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151164"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365795"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Možnosti pro Python v sadě Visual Studio
 
@@ -48,8 +48,8 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 | --- | --- | --- |
 | **Při vytváření virtuálních prostředí zobrazit okno výstupu**| On | Vymazat, aby se zabránilo **výstup** okno nezobrazovalo. |
 | **Zobrazit okno výstupu při instalaci nebo odebrání balíčků** | On | Vymazat, aby se zabránilo **výstup** okno nezobrazovalo. |
-| **Zobrazit panel oznámení a vytvořte si prostředí** | On | *Visual Studio 2019 only.* Když je tato možnost nastavena a uživatel otevře projekt, který obsahuje *souboru requirements.txt* nebo *environment.yml* souboru, Visual Studio se zobrazí informační panel s návrhy pro vytvoření virtuální prostředí nebo prostředí conda, místo použití výchozího globálního prostředí. |
-| **Zobrazit panel oznámení se mají balíčky nainstalovat** | On | *Visual Studio 2019 only.* Když je tato možnost nastavena a uživatel otevře projekt, který obsahuje *souboru requirements.txt* souboru (a nepoužívá výchozí globální prostředí) sady Visual Studio s balíčky nainstalované v aktuálním porovnává tyto požadavky prostředí. Pokud všechny balíčky, které nebyly nalezeny, Visual Studio zobrazí výzvu k instalaci těchto závislostí. |
+| **Zobrazit panel oznámení a vytvořte si prostředí** | On | *Visual Studio. 2019 pouze.* Když je tato možnost nastavena a uživatel otevře projekt, který obsahuje *souboru requirements.txt* nebo *environment.yml* souboru, Visual Studio se zobrazí informační panel s návrhy pro vytvoření virtuální prostředí nebo prostředí conda, místo použití výchozího globálního prostředí. |
+| **Zobrazit panel oznámení se mají balíčky nainstalovat** | On | *Visual Studio. 2019 pouze.* Když je tato možnost nastavena a uživatel otevře projekt, který obsahuje *souboru requirements.txt* souboru (a nepoužívá výchozí globální prostředí) sady Visual Studio s balíčky nainstalované v aktuálním porovnává tyto požadavky prostředí. Pokud všechny balíčky, které nebyly nalezeny, Visual Studio zobrazí výzvu k instalaci těchto závislostí. |
 | **Vždy spustit jako správce Správce balíčků** | Off | Vždy ukládá `pip install` a podobné operace správce balíčku pro všechna prostředí. Při instalaci balíčků sady Visual Studio vyzve k zadání oprávnění správce, pokud se prostředí nachází v chráněné části systému souborů, jako *c:\Program Files*. V této výzvy můžete vždy zvýšit oprávnění příkazu install pro právě jeden prostředí. Zobrazit [balíčky kartu](python-environments-window-tab-reference.md#packages-tab). |
 | **Automatické generování databáze pro dokončování při prvním použití** | On | *Platí pro Visual Studio 2017 verze 15.5 a starší a novějších verzí při použití databáze IntelliSense.* Dokončení databáze pro knihovnu upřednostňuje při psaní kódu, která ji používá. Další informace najdete v tématu [kartu technologie Intellisense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignorovat systémové proměnné PYTHONPATH** | On | PYTHONPATH ve výchozím nastavení se ignoruje, protože Visual Studio poskytuje přímější prostředky ke specifikaci cesty pro hledání v prostředí a projekty. Zobrazit [cesty hledání](search-paths.md) podrobnosti. |
@@ -90,8 +90,8 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 | **TEE program výstup do okna výstup ladění** | On | V okně samostatné konzoly a sady Visual Studio se zobrazí výstup programu **výstup** okna. Zrušte zaškrtnutí tohoto políčka Zobrazit výstup pouze v okně samostatné konzoly. |
 | **Pozastavte běh při výjimce SystemExit s ukončovacím kódem 0** | Off | Pokud nastavení, ladicí program se zastaví na tuto výjimku. Když je jasné, že ladicí program se ukončí bez přerušení. |
 | **Povolit ladění standardní knihovny Pythonu** | Off | Umožňuje krokování s vnořením do standardní knihovny zdrojový kód při ladění, ale se prodlouží doba potřebná pro ladicí program ke spuštění.|
-| **Zobrazit návratovou hodnotu funkce** | On | *Visual Studio 2019 only.* Zobrazí návratové hodnoty funkce ve **lokální** okně pak krokování přes funkci volání v ladicím programu (F10) |
-| **Použití starší verze ladicího programu** | Off | *Visual Studio 2019 only.* Instruuje Visual Studio ve výchozím nastavení používají starší verze ladicího programu. Další informace najdete v tématu [ladění – použijte starší verze ladicího programu](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
+| **Zobrazit návratovou hodnotu funkce** | On | *Visual Studio. 2019 pouze.* Zobrazí návratové hodnoty funkce ve **lokální** okně pak krokování přes funkci volání v ladicím programu (F10) |
+| **Použití starší verze ladicího programu** | Off | *Visual Studio. 2019 pouze.* Instruuje Visual Studio ve výchozím nastavení používají starší verze ladicího programu. Další informace najdete v tématu [ladění – použijte starší verze ladicího programu](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
 
 ::: moniker range="vs-2017"
 ![Dialogové okno Možnosti Python, karta ladění](media/options-debugging.png)
@@ -118,7 +118,7 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
-| **Skripty** | není k dispozici | Určuje obecné složku pro spouštěcí skripty vyrovnat **interaktivní** windows pro všechna prostředí. Zobrazit [spouštěcí skripty](python-environments-window-tab-reference.md#startup-scripts). Upozorňujeme však, že tato funkce aktuálně nefunguje. |
+| **Scripts** | není k dispozici | Určuje obecné složku pro spouštěcí skripty vyrovnat **interaktivní** windows pro všechna prostředí. Zobrazit [spouštěcí skripty](python-environments-window-tab-reference.md#startup-scripts). Upozorňujeme však, že tato funkce aktuálně nefunguje. |
 | **Šipky nahoru/dolů přejděte historie** | On | Procházení historie v pomocí kláves se šipkami **interaktivní** okna. Zrušte zaškrtnutí tohoto nastavení můžete pomocí kláves se šipkami, chcete-li procházet **interaktivní** místo toho výstupního okna. |
 | **Režim dokončování** | **Jenom vyhodnotit výrazy bez volání funkcí** | Procesu, který určuje členy k dispozici na na výraz **interaktivní** okno může vyžadovat vyhodnocení aktuální nedokončené výraz, který může mít za následek vedlejší účinky nebo funkce volána více než jednou. Ve výchozím nastavení je **jenom vyhodnotit výrazy bez volání funkce** vyloučí výrazy, které se zobrazí volat funkci, ale vyhodnotí jiných výrazech. Například je vyhodnocen jako `a.b` , ale ne `a().b`.  **Nikdy vyhodnocujte výrazy** brání všechny vedlejší účinky pomocí jenom normální IntelliSense modulu pro návrhy. **Vyhodnotit všechny výrazy** vyhodnotí celý výraz získat návrhy, bez ohledu na to vedlejší účinky. |
 | **Skrýt návrhy statické analýzy** | Off | Pokud nastavíte, zobrazí pouze návrhy, které jsou získány vyhodnocením výrazu. Pokud v kombinaci s **Doplňovacím režimem** hodnotu **nikdy vyhodnocujte výrazy**, žádné užitečnou funkci dokončování joinkind **interaktivní** okna. |

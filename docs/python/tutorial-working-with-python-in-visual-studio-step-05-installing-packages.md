@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Krok 5 průvodce základní funkce Pythonu v sadě Visual Studio, ukázka funkce aplikace Visual Studio pro správu balíčků v prostředí Pythonu.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 786b116d153eeea2ddb1c495f88ae0cd6ce135c6
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: bf38def7be9607868df8f9c116266632ffcad710
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354761"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365194"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Pythonu
 

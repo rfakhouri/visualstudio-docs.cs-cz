@@ -3,26 +3,26 @@ title: Přehled sady Visual Studio pro vývojáře v Pythonu
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ac39dc2458e2d1f0acbf73614b6345949a8d98d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790599"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365727"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Vítá vás Visual Studio IDE | Python
 
 Visual Studio *integrovaného vývojového prostředí* je creative odrazový můstek pro Python (a další jazyky), který vám pomůže upravit, ladit, testovat kód a pak publikujete aplikaci. Integrované vývojové prostředí (IDE) je plně funkční program, který lze použít pro mnoho aspektů vývoje softwaru. Nad limit standardní editor a ladicího programu, že většina integrovanými vývojovými prostředími poskytnout, Visual Studio obsahuje doplňování kódu nástroje, interaktivní prostředí REPL, nebo využívat jiné funkce pro usnadnění proces vývoje softwaru.
 
-[![Visual Studio s projektem Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![VVisual Studio s projektu Pythonu](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Tento obrázek ukazuje Visual Studio s otevřeném projektu Pythonu a několika okny nástrojů klíče, které budete pravděpodobně používat:
 
@@ -56,7 +56,7 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
    ![Dokončování členů s IntelliSense ve Visual Studio](media/code-editing-completions-simple.png)
 
-- [Refactoring](refactoring-python-code.md)
+- [Refaktoring](refactoring-python-code.md)
 
    Kliknutím pravým tlačítkem na části kódu a výběr **rychlé akce a Refaktoringy**, Visual Studio vám poskytne operace, jako jsou inteligentní přejmenováním proměnné, extrahování jeden nebo více řádků kódu do nové metody, změna pořadí parametrů metod a dalších.
 
@@ -129,7 +129,7 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 Python v sadě Visual Studio dále prozkoumejte pomocí jednoho z následujících kurzů nebo rychlých startů:
 
 > [!div class="nextstepaction"]
-> [Rychlý start: Vytvoření webové aplikace pomocí Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Rychlý start: Vytvoření webové aplikace pomocí Flasku](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Práce s využitím Pythonu v sadě Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

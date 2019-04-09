@@ -3,19 +3,19 @@ title: Použití Pythonu cesty pro hledání
 description: Visual Studio nabízí že další specifické prostředky k určení vyhledávací cesty pro projekty do neměli používat proměnné celý systém a prostředí.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147732"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365337"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak sada Visual Studio používá Python cesty pro hledání
 

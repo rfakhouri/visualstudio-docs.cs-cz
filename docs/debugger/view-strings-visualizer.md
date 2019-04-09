@@ -1,10 +1,7 @@
 ---
-title: Dialogové okno Vizualizéru řetězce | Dokumentace Microsoftu
-ms.date: 10/10/2018
-ms.custom: seoapril2019
-ms.topic: reference
-f1_keywords:
-- vs.debug.stringviewer
+title: Zobrazit řetězců ve vizualizéru řetězce | Dokumentace Microsoftu
+ms.date: 04/08/2019
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -14,20 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - string visualizer
 - visualizers, string
-ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
+ms.openlocfilehash: ffd19dccb69d3ae05a84ae49a280ff49c14f2809
 ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366780"
+ms.locfileid: "59367366"
 ---
-# <a name="string-visualizer-dialog-box"></a>Dialogové okno Vizualizéru řetězce
+# <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Zobrazení řetězců ve vizualizéru řetězce v sadě Visual Studio
 
 Při ladění v sadě Visual Studio, můžete zobrazit řetězce pomocí vizualizéru integrované řetězec. Vizualizér řetězce zobrazí řetězce, které jsou příliš dlouhé pro okno datový tip nebo ladicí program. Může také pomoct identifikovat poškozený řetězce.
 
@@ -36,27 +32,33 @@ Vizualizér integrované řetězec obsahuje prostý text, XML, HTML a JSON možn
 > [!NOTE]
 > Pokud je potřeba zkontrolovat prvky XAML nebo rozhraní WPF ve vizualizéru, najdete v článku nebo [vlastnosti kontrolovat XAML při ladění](../debugger/inspect-xaml-properties-while-debugging.md) nebo [použití vizualizéru stromu WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md).
 
+## <a name="open-a-string-visualizer"></a>Otevřete vizualizéru řetězce
+
 Otevřete vizualizéru řetězce, musí být pozastaveno během ladění. Podržte ukazatel myši nad proměnnou, která obsahuje prostý text, XML, HTML nebo JSON řetězcová hodnota a vyberte ikonu lupy ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Vizualizéru ikonu").
 
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+![Otevřete vizualizéru řetězce](../debugger/media/dbg-tips-string-visualizers.png "řetězec pro otevření vizualizéru")
 
-**Výraz** poli se zobrazí proměnné nebo výrazu najedete.
+## <a name="view-string-visualizer-data"></a>Zobrazení data vizualizéru řetězce
 
-**Hodnota** pole zobrazí hodnotu řetězce. Prázdnou hodnotu **hodnotu** znamená, že nemůže rozpoznat zvolené vizualizéru řetězce. Například **XML vizualizér** zobrazí prázdnou hodnotu **hodnotu** pro textový řetězec s žádné značky XML nebo řetězec formátu JSON. K zobrazení řetězce, které nemůže rozpoznat zvolené vizualizéru, zvolte **Vizualizátor textu** místo. **Vizualizátor textu** zobrazuje prostý text.
+V okně vizualizéru řetězce **výraz** poli se zobrazí proměnné nebo výrazu najedete, a **hodnotu** pole zobrazí hodnotu řetězce.
 
-### <a name="json-string-data"></a>Data řetězce JSON
+Prázdnou hodnotu **hodnotu** znamená, že nemůže rozpoznat zvolené vizualizéru řetězce. Například **XML vizualizér** zobrazí prázdnou hodnotu **hodnotu** pro textový řetězec s žádné značky XML nebo řetězec formátu JSON.
+
+K zobrazení řetězce, které nemůže rozpoznat zvolené vizualizéru, zvolte **Vizualizátor textu**. **Vizualizátor textu** zobrazuje prostý text.
+
+### <a name="view-json-string-data"></a>Data řetězce JSON zobrazení
 
 Podobně jako na následujícím obrázku v JSON visualizér se zobrazí řetězec JSON ve správném formátu. Nesprávný formát JSON se může zobrazit ikona chyby (nebo prázdné, pokud nebyl rozpoznán). K identifikaci chyby JSON, zkopírujte a vložte řetězec do nástroje linting JSON, jako [JSLint](https://www.jslint.com/).
 
 ![Vizualizér řetězce JSON](../debugger/media/dbg-tips-string-visualizer-json.png "vizualizéru řetězce JSON")
 
-### <a name="xml-string-data"></a>Řetězcová data XML
+### <a name="view-xml-string-data"></a>Zobrazení dat řetězec XML
 
 Podobně jako na následujícím obrázku ve vizualizátoru XML se zobrazí řetězec XML ve správném formátu. Pokud nebyl rozpoznán se může zobrazit nesprávně vytvořeným kódem XML bez značek XML nebo prázdný.
 
 ![XML vizualizér řetězce](../debugger/media/dbg-string-visualizers-xml.png "XML vizualizér řetězce")
 
-### <a name="html-string-data"></a>Data řetězce ve formátu HTML
+### <a name="view-html-string-data"></a>Data řetězce zobrazení HTML
 
 Zobrazí se ve správném formátu řetězec ve formátu HTML jakoby vykreslení v prohlížeči, jak je znázorněno na následujícím obrázku. Poškozená HTML se může zobrazit jako prostý text.
 

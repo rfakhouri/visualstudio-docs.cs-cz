@@ -3,19 +3,19 @@ title: Úprava kódu v Pythonu
 description: Visual Studio pro Python, poskytuje bohaté možnosti technologie IntelliSense, fragmenty kódu a navigačním funkcím, formátování, linting, a refaktoringu.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355549"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366273"
 ---
 # <a name="edit-python-code"></a>Úprava kódu v Pythonu
 
@@ -228,5 +228,5 @@ Poklepáním na libovolný název, nebo jeho výběru pomocí šipkových kláve
 ## <a name="see-also"></a>Viz také:
 
 - [Formátování](formatting-python-code.md)
-- [Refactoring](refactoring-python-code.md)
+- [Refaktoring](refactoring-python-code.md)
 - [Použít linter](linting-python-code.md)

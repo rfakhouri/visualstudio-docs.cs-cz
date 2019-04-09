@@ -3,19 +3,19 @@ title: Šablony položek pro projekty v Pythonu
 description: Referenční seznam šablon položek pro projekt v Pythonu, které jsou k dispozici prostřednictvím Přidat > Nová položka dialogového okna v sadě Visual Studio.
 ms.date: 12/06/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924692"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366455"
 ---
 # <a name="python-item-templates"></a>Šablony položek Pythonu
 
@@ -38,7 +38,7 @@ Následující tabulka stručně popisuje efekt každé šablony položky v rám
 | **Šablona stylů** | A *.css* soubor, který obsahuje prázdný styl `body`. |
 | **Textový soubor** | Prázdná *.txt* souboru. |
 | **Aplikace Django 1.9**<br/>**Aplikace Django 1.4** | Složka s názvem aplikaci, která obsahuje soubory jádra pro aplikaci Django, jak je popsáno v [další Django v sadě Visual Studio, krok 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) pro Django 1.9. Pro Django 1.4 *migrace* složku, *admin.py* souboru a *apps.py* souboru nejsou zahrnuty. |
-| **Okno WPF v Ironpythonu** | Okno WPF obsahuje dva soubory vedle sebe: *.xaml* soubor, který definuje `<Window>` s prázdnou `<Grid>` elementu a přidružené *.py* soubor, který načte soubor XAML pomocí `wpf` knihovny. Obvykle se používá v rámci projektu vytvořeného pomocí jedné z šablon projektu Ironpythonu. Zobrazit [projektů v Pythonu spravovat – šablony projektů](managing-python-projects-in-visual-studio.md#project-templates). |
+| **IronPython WPF Window** | Okno WPF obsahuje dva soubory vedle sebe: *.xaml* soubor, který definuje `<Window>` s prázdnou `<Grid>` elementu a přidružené *.py* soubor, který načte soubor XAML pomocí `wpf` knihovny. Obvykle se používá v rámci projektu vytvořeného pomocí jedné z šablon projektu Ironpythonu. Zobrazit [projektů v Pythonu spravovat – šablony projektů](managing-python-projects-in-visual-studio.md#project-templates). |
 | **Soubory podpory webové Role** | A *bin* složky v kořenové složce projektu (bez ohledu na vybrané složky v projektu). Složka obsahuje výchozí skript nasazení a *web.config* soubor pro webové role Azure Cloud Service. Také obsahuje šablony *readme.html* soubor, který vysvětluje podrobnosti. |
 | **Podpůrné soubory pro Role pracovního procesu** | A *bin* složky v kořenové složce projektu (bez ohledu na vybrané složky v projektu). Složka obsahuje výchozí skript nasazení a spuštění, spolu s *web.config* soubor rolí pracovních procesů cloudových služeb Azure. Také obsahuje šablony *readme.html* soubor, který vysvětluje podrobnosti. |
 | **Web.config pro Azure (FastCGI)** | A *web.config* soubor, který obsahuje položky pro aplikace s využitím [s rozhraním WSGI](https://wsgi.readthedocs.io/en/latest/) objekt pro zpracování příchozích připojení. Tento soubor je obvykle nasazeni do kořenového adresáře webový server se službou IIS. Další informace najdete v tématu [konfigurace aplikace pro službu IIS](configure-web-apps-for-iis-windows.md). |

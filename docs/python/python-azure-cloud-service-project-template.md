@@ -3,20 +3,20 @@ title: Šablona projektu Azure cloud service pro Python
 description: Visual Studio poskytuje šablony pro Azure cloud services, které jsou napsané v Pythonu, včetně nasazení role, závislosti a řešení potíží.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 77da3ee8af0b14171e8cc525c2e6d95c6a38a205
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355708"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366533"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro Python
 
@@ -97,7 +97,7 @@ Pokud vaše webová nebo pracovní role nechoval správně po nasazení, zkontro
 
   - *ConfigureCloudService.ps1*
   - *Souboru LaunchWorker.ps1* (u rolí pracovního procesu)
-  - *PS.cmd*
+  - *ps.cmd*
 
 - Zahrnuje projektu v Pythonu *souboru requirements.txt* seznamu všechny závislosti (nebo případně kolekce souborů wheel) souborů.
 - Povolení vzdálené plochy na cloudové služby a prozkoumejte soubory protokolu.

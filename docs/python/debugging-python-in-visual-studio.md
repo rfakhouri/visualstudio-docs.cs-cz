@@ -3,19 +3,19 @@ title: Ladění kódu v Pythonu
 description: Visual Studio poskytují bohatá podpora ladění pro kód Python, včetně nastavení zarážek, krokování, kontrolu hodnoty, prohlížení výjimek a ladění v interaktivním okně.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151359"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366494"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -68,12 +68,12 @@ Po zastavení na zarážce, budete mít různé způsoby, jak procházet kód ne
 
 | Funkce | Stisknutí kláves | Popis |
 | --- | --- | --- |
-| **Continue** | **F5** | Spouští kód, dokud nebude dosaženo k další zarážce. |
+| **Pokračovat** | **F5** | Spouští kód, dokud nebude dosaženo k další zarážce. |
 | **Krokovat s vnořením** | **F11** | Následující příkaz spustí a zastaví. Pokud je volání funkce další příkaz, ladicí program se zastaví na prvním řádku volané funkce. |
 | **Krok přes** | **F10** | Spustí další příkaz, včetně volání na funkci (s jeho kód) a použití jakékoli návratovou hodnotu. Krokování přes umožňuje snadno přeskočit funkce, které není potřeba ladění. |
 | **Krokovat s Vystoupením** | **SHIFT**+**F11** | Spustí kód do konce aktuální funkci a pak kroky volání příkazu.  Tento příkaz je užitečné, když není nutné ladit zbytek aktuální funkce. |
 | **Spustit ke kurzoru** | **CTRL**+**F10** | Spustí kód do umístění blikající kurzor v editoru. Tento příkaz umožňuje snadno přeskočit část kódu, který není nutné k ladění. |
-| **Nastavení dalšího příkazu** | **CTRL**+**Shift**+**F10** | Změny aktuálního spuštění bodu do umístění blikajícího kurzoru v kódu. Tento příkaz umožňuje vynechat segment kódu na všech spuštění, jako když víte, kód je chybný nebo je výsledný nežádoucí vedlejší efekt. |
+| **Nastavit další příkaz** | **CTRL**+**Shift**+**F10** | Změny aktuálního spuštění bodu do umístění blikajícího kurzoru v kódu. Tento příkaz umožňuje vynechat segment kódu na všech spuštění, jako když víte, kód je chybný nebo je výsledný nežádoucí vedlejší efekt. |
 | **Zobrazit další příkaz** | **ALT**+**Num****&#42;**| Vrátíte se do dalšího příkazu ke spuštění. Tento příkaz je užitečné, pokud jste hledání ve vašem kódu a nepamatujete, kde je zastavený ladicím programu. |
 
 ### <a name="inspect-and-modify-values"></a>Kontrola a změny hodnot
@@ -164,7 +164,7 @@ Existují dva interaktivních oken, můžete použít během relace ladění: st
 | Příkaz | Arguments | Popis |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Spustí se program od aktuálního příkazu. |
-| `$down`, `$d` | Posune aktuální rámec o jednu úroveň dolů v trasování zásobníku. |
+| `$down`,  `$d` | Posune aktuální rámec o jednu úroveň dolů v trasování zásobníku. |
 | `$frame` | | Zobrazí aktuální ID rámce.
 | `$frame` | ID rámce | Přepne aktuální rámec ID zadaného rámce.
 | `$load` | Načte příkazy ze souboru a spustí, až do dokončení |
@@ -177,7 +177,7 @@ Existují dva interaktivních oken, můžete použít během relace ladění: st
 | `$thread` | | Zobrazí aktuální ID vlákna. |
 | `$thread` | ID vlákna | Přepne aktuální vlákno ID zadaného vlákna. |
 | `$threads` | | Vypíše vlákna, která se právě ladí. |
-| `$up`, `$u` | | Posune aktuální rámec o jednu úroveň v trasování zásobníku. |
+| `$up`,  `$u` | | Posune aktuální rámec o jednu úroveň v trasování zásobníku. |
 | `$where`, `$w`, `$bt` | Vypíše rámce aktuálního vlákna. |
 
 Všimněte si, že standardní okna ladicího programu, jako například **procesy**, **vlákna**, a **zásobník volání** nejsou synchronizované s **interaktivní ladění** okna. Změna aktivního procesu, vlákna nebo snímek **interaktivní ladění** okno nemá vliv na ostatní okna ladicího programu. Naopak Změna aktivního procesu, vlákna nebo v jiných oknech ladicího programu snímků nemá vliv **interaktivní ladění** okna.

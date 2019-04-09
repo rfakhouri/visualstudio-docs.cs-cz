@@ -3,19 +3,19 @@ title: Šablony webové aplikace Python
 description: Visual Studio poskytuje šablony pro webové aplikace Python pomocí rozhraní Bottle, Flask a Django; podpora zahrnuje konfigurace ladění a publikování do služby Azure App Service.
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81684f8069189f6ee3deed48d9f2a6718b01d7b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957897"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366585"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
@@ -113,7 +113,7 @@ Jakákoli proměnná vlastnost nebo prostředí projektu je možné zadat při M
 
 - **Příkaz ladicího serveru** skupiny:
   - **Příkaz**: `bottle` (modul)
-  - **argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Možnost se nedoporučuje používat při používání sady Visual Studio pro ladění.
 

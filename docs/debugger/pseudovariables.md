@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 336d177ec939ca0f7dfdc32535e2d2e92b0f04d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686506"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366845"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudoproměnné v ladicím programu sady Visual Studio
 Pseudoproměnné jsou podmínky, které slouží k zobrazení určitých informací v okně proměnné nebo **QuickWatch** dialogové okno. Pseudoproměnnou můžete zadat stejným způsobem, zadali byste jako běžné proměnné. Pseudoproměnné nejsou proměnné, ale a nemusí odpovídat názvům proměnných v programu.
@@ -32,7 +32,7 @@ Pseudoproměnné jsou podmínky, které slouží k zobrazení určitých informa
 
 `$handles`
 
- V nativním kódu můžete použít pseudoproměnné uvedené v této tabulce:
+ V nativním kódu můžete použít pseudoproměnné uvedené v následující tabulce:
 
 |Pseudoproměnnou|Funkce|
 |--------------------|--------------|
@@ -47,24 +47,26 @@ Pseudoproměnné jsou podmínky, které slouží k zobrazení určitých informa
 |`$clk`|Zobrazí čas v hodinových cyklech.|
 |`$user`|Zobrazí se struktura s informacemi o účtu pro účet, který spouští aplikaci. Z bezpečnostních důvodů nejsou informace heslu zobrazeny.|
 |`$exceptionstack`|Zobrazí trasování zásobníku aktuální výjimky prostředí Windows Runtime. `$ exceptionstack` funguje pouze v aplikacích pro UPW. `$ exceptionstack` není podporováno pro výjimky C++ a SEH|
-|`$ReturnValue`|Zobrazuje hodnotu vrácenou metody rozhraní .NET Framework.|
+|`$returnvalue`|Zobrazuje hodnotu vrácenou metody rozhraní .NET Framework.|
 
- V jazyce C# a Visual Basic můžete použít pseudoproměnné uvedené v této tabulce:
+ V C# můžete použít pseudoproměnné uvedené v následující tabulce:
 
 |Pseudoproměnnou|Funkce|
 |--------------------|--------------|
-|`$exception`|Zobrazí informace o poslední výjimce. Pokud k žádné výjimce, hodnocení `$exception` zobrazí chybovou zprávu.<br /><br /> V jazyce Visual C#, zakázán Pomocník pro výjimky, `$exception` se automaticky přidá do **lokální** okno, když dojde k výjimce.|
+|`$exception`|Zobrazí informace o poslední výjimce. Pokud k žádné výjimce, hodnocení `$exception` zobrazí chybovou zprávu.<br /><br /> Pokud je zakázán Pomocník pro výjimky, `$exception` se automaticky přidá do **lokální** okno, když dojde k výjimce.|
 |`$user`|Zobrazí se struktura s informacemi o účtu pro účet, který spouští aplikaci. Z bezpečnostních důvodů nejsou informace heslu zobrazeny.|
+|`$returnvalue`|Zobrazuje hodnotu vrácenou metody rozhraní .NET Framework.|
 
  V jazyce Visual Basic můžete použít pseudoproměnné uvedené v následující tabulce:
 
 |Pseudoproměnnou|Funkce|
 |--------------------|--------------|
-|`$delete` Nebo `$$delete`|Odstraní implicitní proměnné, který byl vytvořen v **okamžité** okna. Syntaxe je `$delete,` *proměnnou* nebo`$delete,` *proměnné*`.`|
-|`$objectids` Nebo `$listobjectids`|Zobrazí všechny aktivní ID objektů jako podřízené položky, z určeného výrazu. Syntaxe je `$objectid,` *výraz* nebo`$listobjectids,` *výraz*`.`|
+|`$exception`|Zobrazí informace o poslední výjimce. Pokud k žádné výjimce, hodnocení `$exception` zobrazí chybovou zprávu.|
+|`$delete` or `$$delete`|Odstraní implicitní proměnné, který byl vytvořen v **okamžité** okna. Syntaxe je `$delete,` *proměnnou* nebo`$delete,` *proměnné*`.`|
+|`$objectids` or `$listobjectids`|Zobrazí všechny aktivní ID objektů jako podřízené položky, z určeného výrazu. Syntaxe je `$objectid,` *výraz* nebo`$listobjectids,` *výraz*`.`|
 |`$` *N* `#`|Zobrazí objekt s ID objektu rovna *N*.|
 |`$dynamic`|Zobrazí zvláštní **dynamického zobrazení** uzlu pro objekt, který implementuje `IDynamicMetaObjectProvider`. rozhraní. Syntaxe je `$dynamic,` *objekt*. Tato funkce se vztahuje pouze na kód, který používá rozhraní .NET Framework verze 4.|
 
 ## <a name="see-also"></a>Viz také
-- [Okna Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)
-- [Proměnné Windows](../debugger/debugger-windows.md)
+- [Kukátko a Rychlé kukátko Windows](../debugger/watch-and-quickwatch-windows.md)
+- [Okna proměnných](../debugger/debugger-windows.md)

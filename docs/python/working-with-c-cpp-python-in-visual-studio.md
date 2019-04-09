@@ -3,19 +3,19 @@ title: Tvorba rozšíření C++ pro Python
 description: Návod k vytvoření rozšíření C++ pro Python s pomocí sady Visual Studio, CPython a PyBind11, včetně ladění ve smíšeném režimu.
 ms.date: 11/19/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64c200ffa0bb70b52f9e42d40daf3fd2a39df729
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416042"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366897"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -120,7 +120,7 @@ Postupujte podle pokynů v této části vytvořit dva shodné projekty C++ s n�
 
 1. Nastavit konkrétní vlastnosti, jak je popsáno v následující tabulce a pak vyberte **OK**.
 
-    | Tabulátor | Vlastnost | Hodnota |
+    | Tabulátor | Vlastnost | Value |
     | --- | --- | --- |
     | **Obecné** | **Obecné** > **název cílové** | Zadejte název modulu, jak chcete na něj odkazovat z Pythonu v `from...import` příkazy. Použijte tento stejný název v C++, při definování modulu pro Python. Pokud chcete použít název projektu jako název modulu, ponechte výchozí hodnotu **$(ProjectName)**. |
     | | **Obecné** > **cílit na rozšíření** | **.pyd** |

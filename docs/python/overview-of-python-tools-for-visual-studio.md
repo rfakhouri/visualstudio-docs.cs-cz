@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Přehled funkce Pythonu v sadě Visual Studio, takže nejlepší prostředí Python IDE ve Windows (označované také jako Python Tools for Visual Studio, PTVS).
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195005"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366871"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -83,7 +83,7 @@ Visual Studio také podporuje IPython/Jupyter v REPL, včetně vložené grafy, 
 Další informace:
 
 - [Interaktivní okno](python-interactive-repl-in-visual-studio.md)
-- [IPython in Visual Studio](interactive-repl-ipython.md)
+- [IPython v sadě Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Systém projektů a šablon projektů a položek
 
@@ -98,7 +98,7 @@ Visual Studio vám pomůže spravovat složitosti projektu roste v čase. A *pro
 
 Šablony projektů a položek automatizaci procesu nastavení různé typy projektů a souborů, šetří cenný čas a homogenního vám od správy podrobnosti složité a náchylné k chybě. Visual Studio poskytuje šablony pro web, Azure, datové vědy, konzoly a jiné typy projektů, spolu s šablony pro soubory, jako třídy, testy jednotek, konfigurace Azure web, HTML a dokonce i aplikace Django Python.
 
-[![Šablony projektů a položek Python v sadě Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![Pythonu šablony projektu a položky v sadě Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Další informace:
 
@@ -130,7 +130,7 @@ Další informace:
 
 Profilace zkoumá, jak je právě doba trvání v rámci vaší aplikace. Visual Studio podporuje profilace se na základě CPython interprety a nabízí možnost k porovnání výkonu mezi během různých spuštění profilování.
 
-[![Visual Studio profiler výsledy projektu Pythonu](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![VVisual Studio profiler výsledky projektu Pythonu](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Další informace:
 
@@ -156,15 +156,15 @@ Další informace najdete v tématu [sady Azure SDK for Python](/python/azure/?v
 
 ## <a name="questions-and-answers"></a>Otázky a odpovědi
 
-**Q. Nabízíme podporu Pythonu pomocí sady Visual Studio for Mac?**
+**Otázka: Nabízíme podporu Pythonu pomocí sady Visual Studio for Mac?**
 
 A. Není v tuto chvíli ale žádost až můžete hlasovat o [komunity vývojářů](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). [Visual Studio for Mac](/visualstudio/mac/) dokumentaci identifikuje aktuální typy vývoje, který podporuje. Do té doby, Visual Studio Code ve Windows, Mac a Linux [dobře funguje pro Python prostřednictvím rozšíření k dispozici](https://code.visualstudio.com/docs/languages/python).
 
-**Q. Co je můžete použít k vytvoření uživatelského rozhraní pomocí Pythonu?**
+**Otázka: Co je můžete použít k vytvoření uživatelského rozhraní pomocí Pythonu?**
 
 A. Hlavní nabídka v této oblasti je [Qt projektu](https://www.qt.io/qt-for-application-development/), s vazbami pro Python, označované jako [PySide (oficiální vazby)](https://wiki.qt.io/PySide) (také naleznete v tématu [PySide stáhne](https://download.qt.io/official_releases/pyside/.)) a [ PyQt](https://wiki.python.org/moin/PyQt). V současné době podpora Pythonu v sadě Visual Studio neobsahuje žádné konkrétní nástroje pro vývoj uživatelského rozhraní.
 
-**Q. Projektu Pythonu může vytvořit samostatný spustitelný soubor?**
+**Otázka: Projektu Pythonu může vytvořit samostatný spustitelný soubor?**
 
 A. Python je obecně interpretovaný jazyk, se kterým je kód spuštěn na vyžádání v vhodné podporující Python prostředí, jako je Visual Studio a webové servery. Samotné sady Visual Studio v současné době neposkytuje způsob, jak vytvořit samostatný spustitelný soubor, který v podstatě znamená, že program s vložený interpret Pythonu. Python komunity, však poskytnuty jiný způsob, jak vytvořit spustitelné soubory, jak je popsáno v [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython také podporuje se vložený do nativní aplikace, jak je popsáno v blogovém příspěvku [soubor zip Vložitelný pomocí CPython](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
 

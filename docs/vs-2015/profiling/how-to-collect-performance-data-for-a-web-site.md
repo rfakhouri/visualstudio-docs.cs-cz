@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766149"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366728"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: Shromažďování dat výkonu pro webovou stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!
   
    - Pro soubor založené na webu, zadejte umístění, například soubor / / / / /**c:\WebSites\MySite\default.aspx**. To způsobí, že [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace umístěné v c:\webSites\MySite určených k profilaci a na stránce http://localhost:nnnn/MySite/default.aspx ke spuštění v aplikaci Internet Explorer spustit relaci.  
   
-   - Pro externí servery, které chcete sbírat dat jazyka JavaScript, zadejte adresu URL, třeba http://www.contoso.com.  
+   - Pro externí servery, které chcete sbírat dat jazyka JavaScript, zadejte adresu URL, třeba http:\//www.contoso.com.  
   
      Další informace o zobrazení stránky vlastností [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] cílový binární soubor.  
   

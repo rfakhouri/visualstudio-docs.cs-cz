@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně postup vytvoření aplikace a používání zobrazení a šablony.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 696bb664cb7dd63e6b6964fca5d999652723d240
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955658"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366910"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony
 
@@ -52,12 +52,12 @@ Pomocí některé z metod, vytvořte aplikaci s názvem "HelloDjangoApp". Výsle
 | --- | --- |
 | **\_\_init\_\_.py** | Soubor, který identifikuje aplikaci jako balíček. |
 | **Migrace** | Složka, ve které ukládá Django skripty, které aktualizace databáze pro zarovnání se změnami na modely. Nástroje pro migraci na Django následně použít potřebné změny jakékoli předchozí verze databáze tak, aby odpovídalo aktuální modely. Pomocí migrace, zachovat fokus na modely a nechat Django zpracování základní schéma databáze. Migrace jsou popsané v kroku 6. Prozatím jednoduše složka obsahuje  *\_ \_init\_\_.py* souboru (to znamená, že složka definuje vlastní balíček Pythonu). |
-| **Šablony** | Složka pro stránku šablon Django, které obsahují jeden soubor *index.html* ve složce odpovídající název aplikace. (Ve verzi Visual Studio 2017 15.7 a dřívějších verzí souboru je obsažen přímo pod *šablony* a krok 2 – 4 dává pokyn k vytvoření podsložku.) Šablony jsou bloky jazyka HTML, do kterého zobrazení můžete přidat informace, které dynamicky vykreslení stránky. Například stránka šablony "proměnné" `{{ content }}` v *index.html*, jsou zástupné symboly pro dynamické hodnoty, jak je popsáno dále v tomto článku (krok 2). Aplikace Django obvykle vytvoříte obor názvů pro své šablony tak, že je umístíte do podsložky, která odpovídá názvu aplikace. |
-| **Admin.PY** | Soubor Pythonu, ve kterém je rozšíření aplikace s vaší správy rozhraní (podívejte se na krok 6), který se používá k naplnit a upravovat data v databázi. Na začátku tento soubor obsahuje pouze příkaz `from django.contrib import admin`. Ve výchozím nastavení, Django obsahuje standardní rozhraní pro správu prostřednictvím položky v projektu Django *settings.py* soubor, který můžete zapnout tak odstraňuje se komentování existující položky v *urls.py*. |
-| **Apps.PY** | Soubor Pythonu, který definuje třídu konfigurace pro aplikaci (viz následující za touto tabulkou). |
-| **models.PY** | Modely jsou datové objekty identifikovaný funkce, pomocí kterých zobrazení interakci s databází základní aplikace (podívejte se na krok 6). Django poskytuje úroveň připojení databáze tak, aby aplikace nemusíte starat tyto podrobnosti. *Models.py* souboru je výchozí místo, ve kterém chcete vytvořit vlastní modely a zpočátku obsahuje pouze příkaz `from django.db import models`. |
-| **Tests.PY** | Soubor Pythonu, který obsahuje základní struktura testů jednotek. |
-| **Views.PY** | Zobrazení se, co si obvykle představit jako webových stránek, které používají požadavek HTTP a vrací odpověď HTTP. Zobrazení se obvykle vykreslit jako kód HTML, který webových prohlížečů vědět, jak zobrazit, ale zobrazení nemusí nutně být viditelné (jako je dočasný formulář). Zobrazení je definované funkce Pythonu, jehož úkolem je k vykreslení kódu HTML k odeslání do prohlížeče. *Views.py* souboru je výchozí místo, ve kterém chcete vytvořit zobrazení a zpočátku obsahuje pouze příkaz `from django.shortcuts import render`. |
+| **šablony** | Složka pro stránku šablon Django, které obsahují jeden soubor *index.html* ve složce odpovídající název aplikace. (Ve verzi Visual Studio 2017 15.7 a dřívějších verzí souboru je obsažen přímo pod *šablony* a krok 2 – 4 dává pokyn k vytvoření podsložku.) Šablony jsou bloky jazyka HTML, do kterého zobrazení můžete přidat informace, které dynamicky vykreslení stránky. Například stránka šablony "proměnné" `{{ content }}` v *index.html*, jsou zástupné symboly pro dynamické hodnoty, jak je popsáno dále v tomto článku (krok 2). Aplikace Django obvykle vytvoříte obor názvů pro své šablony tak, že je umístíte do podsložky, která odpovídá názvu aplikace. |
+| **admin.py** | Soubor Pythonu, ve kterém je rozšíření aplikace s vaší správy rozhraní (podívejte se na krok 6), který se používá k naplnit a upravovat data v databázi. Na začátku tento soubor obsahuje pouze příkaz `from django.contrib import admin`. Ve výchozím nastavení, Django obsahuje standardní rozhraní pro správu prostřednictvím položky v projektu Django *settings.py* soubor, který můžete zapnout tak odstraňuje se komentování existující položky v *urls.py*. |
+| **apps.py** | Soubor Pythonu, který definuje třídu konfigurace pro aplikaci (viz následující za touto tabulkou). |
+| **models.py** | Modely jsou datové objekty identifikovaný funkce, pomocí kterých zobrazení interakci s databází základní aplikace (podívejte se na krok 6). Django poskytuje úroveň připojení databáze tak, aby aplikace nemusíte starat tyto podrobnosti. *Models.py* souboru je výchozí místo, ve kterém chcete vytvořit vlastní modely a zpočátku obsahuje pouze příkaz `from django.db import models`. |
+| **tests.py** | Soubor Pythonu, který obsahuje základní struktura testů jednotek. |
+| **views.py** | Zobrazení se, co si obvykle představit jako webových stránek, které používají požadavek HTTP a vrací odpověď HTTP. Zobrazení se obvykle vykreslit jako kód HTML, který webových prohlížečů vědět, jak zobrazit, ale zobrazení nemusí nutně být viditelné (jako je dočasný formulář). Zobrazení je definované funkce Pythonu, jehož úkolem je k vykreslení kódu HTML k odeslání do prohlížeče. *Views.py* souboru je výchozí místo, ve kterém chcete vytvořit zobrazení a zpočátku obsahuje pouze příkaz `from django.shortcuts import render`. |
 
 Obsah *app.py* při použití názvu "HelloDjangoApp" vypadat takto:
 

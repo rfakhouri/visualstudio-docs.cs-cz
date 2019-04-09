@@ -1,7 +1,7 @@
 ---
 title: Připojení ke spuštěným procesům pomocí ladicího programu | Dokumentace Microsoftu
 ms.custom: seodec18
-ms.date: 09/27/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,19 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323091"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366403"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ladicího programu sady Visual Studio ke spuštěným procesům
 Ladicí program sady Visual Studio můžete připojit ke spuštěnému procesu na místním nebo vzdáleném počítači. Poté, co je proces spuštěn, vybrat **ladění** > **připojit k procesu** nebo stiskněte klávesu **Ctrl**+**Alt** + **P** ve Visual Studiu a použít **připojit k procesu** dialogové okno připojit ladicí program k procesu.
 
 Můžete použít **připojit k procesu** k ladění aplikace běžící na místních nebo vzdálených počítačích, ladění více procesů současně, ladění aplikace, které nebyly vytvořené v sadě Visual Studio nebo ladění libovolnou aplikaci, můžete se nepovedlo spustit ze sady Visual Studio s ladicí program se připojil. Například pokud máte spuštěnou aplikaci bez ladicího programu a k výjimce, můžete potom připojit ladicí program k procesu spuštění aplikace a spusťte ladění.
-
-Informace o základní ladění v sadě Visual Studio najdete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Nejste si jistí, jestli se má použít **připojit k procesu** pro váš scénář ladění? Zobrazit [běžné scénáře ladění](#BKMK_Scenarios).
@@ -94,19 +92,20 @@ Podrobnější pokyny k ladění aplikací ASP.NET, které jsou nasazené do slu
 2. **Typ připojení** by měl být **výchozí** většině případů. V **cíl připojení** vyberte vzdáleného počítače pomocí jedné z následujících metod:
 
    - Vyberte šipku rozevíracího seznamu vedle **cíl připojení**a z rozevíracího seznamu vyberte název počítače.
-   - Zadejte název počítače **cíl připojení** pole.
-   
-     ::: moniker range="vs-2017"
+   - Zadejte název počítače **cíl připojení** pole a stiskněte klávesu **Enter**.
 
-     > [!NOTE]
-     > Pokud se nemůžete připojit pomocí názvu vzdáleného počítače, zkuste použít IP adresu a port adresu (například `123.45.678.9:4022`). 4022 je výchozím portem pro vzdálený ladicí program sady Visual Studio 2017 x64. Ostatní přiřazení portů vzdáleného ladicího programu, najdete v části [přiřazení portů vzdáleného ladicího programu](remote-debugger-port-assignments.md).
-
-     ::: moniker-end
+     Ověřte, že sada Visual Studio přidá požadovaný port pro název počítače, které se zobrazí ve formátu:  **\<název vzdáleného počítače >: port**
 
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]
      > Pokud se nemůžete připojit pomocí názvu vzdáleného počítače, zkuste použít IP adresu a port adresu (například `123.45.678.9:4022`). 4024 je výchozím portem pro vzdálený ladicí program Visual Studio 2019 x64. Ostatní přiřazení portů vzdáleného ladicího programu, najdete v části [přiřazení portů vzdáleného ladicího programu](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     ::: moniker range="vs-2017"
+
+     > [!NOTE]
+     > Pokud se nemůžete připojit pomocí názvu vzdáleného počítače, zkuste použít IP adresu a port adresu (například `123.45.678.9:4022`). 4022 je výchozím portem pro vzdálený ladicí program sady Visual Studio 2017 x64. Ostatní přiřazení portů vzdáleného ladicího programu, najdete v části [přiřazení portů vzdáleného ladicího programu](remote-debugger-port-assignments.md).
 
      ::: moniker-end
 
@@ -146,7 +145,7 @@ Podrobnější pokyny k ladění aplikací ASP.NET, které jsou nasazené do slu
 
 V některých případech při ladění v relaci vzdálené plochy (Terminálová služba) **procesy k dispozici** seznamu nezobrazí všechny procesy k dispozici. Pokud používáte Visual Studio jako uživatel, který má omezený uživatelský účet, **procesy k dispozici** seznamu nezobrazí procesy spuštěné v relaci 0. Relace 0 se používá pro služby a ostatních serverové procesy, včetně *w3wp.exe*. Problém můžete vyřešit spuštěním [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pod účtem správce nebo spuštěním [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] z konzoly serveru místo relace Terminálové služby.
 
-Pokud ani jeden z těchto řešení je možné, třetí možnost je připojit k procesu spuštěním `vsjitdebugger.exe -p <ProcessId>` z příkazového řádku Windows. Můžete určit pomocí id procesu *tlist.exe*. Chcete-li získat *tlist.exe*, stáhněte a nainstalujte ladění nástroje pro Windows, k dispozici na [soubory ke stažení sady WDK a WinDbg](/windows-hardware/drivers/download-the-wdk).
+Pokud ani jeden z těchto řešení je možné, třetí možnost je připojit k procesu spuštěním `vsjitdebugger.exe -p <ProcessId>` z příkazového řádku Windows. Můžete určit pomocí ID procesu *tlist.exe*. Chcete-li získat *tlist.exe*, stáhněte a nainstalujte ladění nástroje pro Windows, k dispozici na [soubory ke stažení sady WDK a WinDbg](/windows-hardware/drivers/download-the-wdk).
 
 ## <a name="BKMK_reattach"></a> Znovu připojit k procesu
 
@@ -163,7 +162,7 @@ Pro některé typy aplikací, jako jsou aplikace pro univerzální aplikace pro 
 
 Ladicí program připojil kód napsaný v jazyce C++, musí kód generovat `DebuggableAttribute`. Můžete přidat to do kódu automaticky díky propojení s [/assemblydebug](/cpp/build/reference/assemblydebug-add-debuggableattribute) – možnost linkeru.
 
-Pro ladění skriptů na straně klienta musí být ladění skriptů povoleno v prohlížeči. Pro ladění skriptů na straně klienta v Chrome, zvolte **komponenty Webkit** psaní kódu a v závislosti na typu aplikace, je nutné zavřít všechny instance chromu a spuštění prohlížeče v režimu ladění (typ `chrome.exe --remote-debugging-port=9222` z příkazového řádku).
+Pro ladění skriptů na straně klienta musí být ladění skriptů povoleno v prohlížeči. Pro ladění skriptů na straně klienta v Chrome, zvolte **webová sada** psaní kódu a v závislosti na typu aplikace, je nutné zavřít všechny instance chromu a spuštění prohlížeče v režimu ladění (typ `chrome.exe --remote-debugging-port=9222` z příkazového řádku).
 
 Chcete-li rychle vybrat běžící proces pro připojení, v sadě Visual Studio, zadejte **Ctrl**+**Alt**+**P**a pak zadejte první písmeno Název procesu.
 
@@ -172,7 +171,7 @@ Chcete-li rychle vybrat běžící proces pro připojení, v sadě Visual Studio
 |Vzdálené ladění ASP.NET 4 nebo 4.5 na serveru služby IIS|Pomocí nástrojů pro vzdálenou a **připojit k procesu**|*W3wp.exe*|Zobrazit [vzdálené ladění ASP.NET ve vzdáleném počítači služby IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Vzdálené ladění ASP.NET Core na server služby IIS|Pomocí nástrojů pro vzdálenou a **připojit k procesu**|*dotnet.exe*|Nasazení aplikace, najdete v tématu [publikovat do služby IIS](https://docs.asp.net/en/latest/publishing/iis.html). Ladění, naleznete v tématu [vzdálené ladění ASP.NET Core ve vzdáleném počítači služby IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Ladění skriptů na straně klienta na místním serveru IIS, pro typy podporovaných aplikací |Použití **připojit k procesu**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, nebo *iexplore.exe*|Musí být povoleno ladění skriptu. Pro Chrome, je nutné spustit také Chrome v režimu ladění a vyberte **komponenty Webkit kód** v **připojit k** pole.|
-|Ladění aplikací v jazyce C#, Visual Basic nebo C++ v místním počítači|Použijte buď [standardní ladění](../debugger/debugger-feature-tour.md) nebo **připojit k procesu**|*\<název_aplikace > .exe*|Ve většině případů použijte standardní ladění a ne **připojit k procesu**.|
+|Ladění aplikací v jazyce C#, Visual Basic nebo C++ v místním počítači|Použijte buď standardní ladění (**F5**) nebo **připojit k procesu**|*\<appname>.exe*|Ve většině případů použijte standardní ladění a ne **připojit k procesu**.|
 |Vzdálené ladění aplikace klasické pracovní plochy Windows|Vzdálené nástroje|Není k dispozici| Zobrazit [vzdáleného ladění aplikace v jazyce C# nebo Visual Basic](../debugger/remote-debugging-csharp.md) nebo [vzdálené ladění aplikací v C++](../debugger/remote-debugging-cpp.md)|
 |Ladění aplikace ASP.NET v místním počítači po spuštění aplikace bez ladicího programu|Použití **připojit k procesu**|*iiexpress.exe*|To může být užitečné k vytvoření aplikace načíst rychleji, například (třeba) při profilování. |
 |Ladit další typy aplikací podporované v procesu serveru|Pokud je vzdálený server, pomocí nástrojů pro vzdálenou, a **připojit k procesu**|*Chrome.exe*, *iexplore.exe*, nebo jiných procesů|V případě potřeby použijte k identifikaci procesu Sledování prostředků. Zobrazit [vzdálené ladění](../debugger/remote-debugging.md).|
@@ -219,5 +218,5 @@ V některých místní ladění scénářích můžete ladit v sadě Visual Stud
 ## <a name="see-also"></a>Viz také:
 
 - [Ladění více procesů](../debugger/debug-multiple-processes.md)
-- [Ladění Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [ladění za běhu](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Vzdálené ladění](../debugger/remote-debugging.md)

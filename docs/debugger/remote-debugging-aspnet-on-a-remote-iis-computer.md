@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9d92ebc40fb61be5ddb6125799c07eee3d148551
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 48c5d365c632deb4d654d5115a141ba9933d7a6f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355497"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366884"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v sadě Visual Studio
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
@@ -175,14 +175,18 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
     > [!TIP]
     > V sadě Visual Studio 2017 a novějších verzích, se můžete znovu připojit do stejného procesu dříve připojena k pomocí **ladit > znovu připojit k procesu...** (Shift + Alt + P).
 
-3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >: port**.
+3. Nastavit pole kvalifikátor  **\<název vzdáleného počítače >** a stiskněte klávesu **Enter**.
+
+    Ověřte, že sada Visual Studio přidá požadovaný port pro název počítače, které se zobrazí ve formátu:  **\<název vzdáleného počítače >: port**
 
     ::: moniker range=">=vs-2019"
-    **\<název vzdáleného počítače >: 4024** 2019 Visual Studio
+    Visual Studio 2019, měli byste vidět  **\<název vzdáleného počítače >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<název vzdáleného počítače >: 4022** v sadě Visual Studio 2017
+    Visual Studio 2017, měli byste vidět  **\<název vzdáleného počítače >: 4022**
     ::: moniker-end
+    Port je povinný. Pokud se nezobrazí číslo portu, přidejte ji ručně.
+
 4. Klikněte na tlačítko **aktualizovat**.
     Měli byste vidět některé procesy, které se zobrazí v **procesy k dispozici** okna.
 
@@ -191,9 +195,21 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
     Pokud chcete použít **najít** tlačítko, možná budete muset [otevřete UDP port 3702](#bkmk_openports) na serveru.
 
 5. Zkontrolujte **Zobrazit procesy všech uživatelů**.
-6. Zadejte první písmeno názvu procesu a rychle najít **dotnet.exe** (pro ASP.NET Core).
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+6. Zadejte první písmeno názvu procesu a rychle najít vaši aplikaci.
+
+    * Vyberte **dotnet.exe**.
+
+      Pokud máte více procesů zobrazující **dotnet.exe**, zkontrolujte **uživatelské jméno** sloupce. V některých případech **uživatelské jméno** sloupci se zobrazuje název fondu aplikací, jako například **IIS APPPOOL\DefaultAppPool**. Pokud se fond aplikací zobrazí snadný způsob, jak určit správný postup je vytvořit nový s názvem App Pool pro instanci aplikace, kterou chcete ladit a pak ho můžete snadno v Najít **uživatelské jméno** sloupce.
+
+    * V některých scénářích služby IIS možná název vaší aplikace v seznamu proces, jako například **MyASPApp.exe**. Můžete připojit k tomuto procesu místo.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Klikněte na tlačítko **připojit**.
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366806"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Podívejte se na proměnných s oknech kukátka a Rychlé kukátko
 
@@ -91,6 +91,19 @@ Pravidla pro vyhodnocování výrazů v **Watch** okna jsou obvykle stejné jako
 ![Podívejte se na Chyba výrazu](../debugger/media/watchexpressionerror.png "sledovat Chyba výrazu")
 
 Kruh s ikonou dvě vlnovky se může vyskytovat **Watch** okno. Tato ikona znamená, že ladicí program nevyhodnocuje výraz z důvodu možných závislosti mezi vlákny. Vyhodnocení kódu vyžaduje další vlákna ve vaší aplikaci dočasně spustit, ale vzhledem k tomu, že jste v režimu přerušení, jsou obvykle Zastavit všechna vlákna ve vaší aplikaci. Umožňuje spustit dočasně jiných vláken může mít neočekávané účinky na stav aplikace a ladicí program může ignorovat události, například zarážky a výjimky na tato vlákna.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>Hledání v okně kukátko
+
+Můžete hledat klíčová slova v název, hodnotu a typ sloupců **Watch** okna pomocí panelu hledání nad každé okno. Stiskněte ENTER nebo vyberte jednu ze šipek provést hledání. Pokud chcete zrušit probíhající hledání, vyberte ikonu "x" na vyhledávacím panelu.
+
+Použijte šipku vlevo a vpravo (Shift + F3 a F3, v uvedeném pořadí) přecházet mezi nalezených shod.
+
+![Hledání v okně kukátko](../debugger/media/ee-search-watch.png "hledání v okně kukátko")
+
+Aby hledání víc nebo míň důkladné, použijte **hledání hlubší** rozevírací seznam v horní části **Watch** okno a vybrat, kolik úrovní do hloubky, kterou chcete vyhledat do vnořené objekty. 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> Aktualizace hodnot sledování
 
@@ -218,8 +231,8 @@ Chcete-li aktualizovat **dynamického zobrazení** hodnot, vyberte [ikonu aktual
 
 K zobrazení pouze **dynamického zobrazení** objektu, přidejte **dynamické** specifikátor formátu za názvem dynamický objekt v **Watch** okno:
 
-- Pro jazyk C#: `ObjectName, dynamic`
-- V jazyce Visual Basic: `$dynamic, ObjectName`
+- Pro C#: `ObjectName, dynamic`
+- Pro Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
 >- C# Ladicí program nebude automaticky přehodnotit hodnoty **dynamického zobrazení** po kroku na další řádek kódu.
@@ -280,6 +293,6 @@ Sledovat `a` proměnné
 
 ## <a name="see-also"></a>Viz také:
 - [Co je ladění?](../debugger/what-is-debugging.md)
-- [Nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md)
+- [Techniky ladění a související nástroje](../debugger/write-better-code-with-visual-studio.md)
 - [První pohled na ladění](../debugger/debugger-feature-tour.md)
-- [Okno ladicího programu](../debugger/debugger-windows.md)
+- [Ladicí program systému windows](../debugger/debugger-windows.md)
